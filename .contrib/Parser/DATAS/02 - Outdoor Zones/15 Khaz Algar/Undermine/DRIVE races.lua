@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		skyriding(n(DRIVE_RACING, {
 			n(ACHIEVEMENTS, {
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						41075,	-- Sandy Scuttle: Bronze
 						41078,	-- Sandy Scuttle Reverse: Bronze
 					}},
-					["g"] = {
+					["groups"] = {
 						i(232982),	-- The Pozzik Standard
 					},
 				}),
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						41077,	-- Sandy Scuttle: Gold
 						41080,	-- Sandy Scuttle Reverse: Gold
 					}},
-					["g"] = {
+					["groups"] = {
 						title(597),	-- Breaknecker <Name>
 					},
 				}),
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						40920,	-- The Heaps Leap: Gold
 						40923,	-- The Heaps Leap Reverse: Gold
 					}},
-					["g"] = {
+					["groups"] = {
 						title(580),	-- Skyrocketer <Name>
 					},
 				}),
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85900, {	-- Breakneck Bolt
 					["provider"] = { "n", 233917 },	-- Grimy Timekeeper
 					["coord"] = { 26.2, 53.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41057),	-- Breakneck Bolt: Bronze
 						ach(41058),	-- Breakneck Bolt: Silver
 						ach(41059),	-- Breakneck Bolt: Gold
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85901, {	-- Breakneck Bolt - Reverse
 					["provider"] = { "n", 233917 },	-- Grimy Timekeeper
 					["coord"] = { 26.2, 53.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41060),	-- Breakneck Bolt Reverse: Bronze
 						ach(41061),	-- Breakneck Bolt Reverse: Silver
 						ach(41062),	-- Breakneck Bolt Reverse: Gold
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85904, {	-- Casino Cruise
 					["provider"] = { "n", 233919 },	-- Grimy Timekeeper
 					["coord"] = { 39.5, 53.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41069),	-- Casino Cruise: Bronze
 						ach(41070),	-- Casino Cruise: Silver
 						ach(41071),	-- Casino Cruise: Gold
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85905, {	-- Casino Cruise - Reverse
 					["provider"] = { "n", 233919 },	-- Grimy Timekeeper
 					["coord"] = { 39.5, 53.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41072),	-- Casino Cruise Reverse: Bronze
 						ach(41073),	-- Casino Cruise Reverse: Silver
 						ach(41074),	-- Casino Cruise Reverse: Gold
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85902, {	-- Junkyard Jaunt
 					["provider"] = { "n", 233918 },	-- Grimy Timekeeper
 					["coord"] = { 43.4, 78.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41063),	-- Junkyard Jaunt: Bronze
 						ach(41064),	-- Junkyard Jaunt: Silver
 						ach(41065),	-- Junkyard Jaunt: Gold
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85903, {	-- Junkyard Jaunt - Reverse
 					["provider"] = { "n", 233918 },	-- Grimy Timekeeper
 					["coord"] = { 43.4, 78.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41066),	-- Junkyard Jaunt Reverse: Bronze
 						ach(41067),	-- Junkyard Jaunt Reverse: Silver
 						ach(41068),	-- Junkyard Jaunt Reverse: Gold
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85101, {	-- Rags to Riches Rush
 					["provider"] = { "n", 231900 },	-- Grimy Timekeeper
 					["coord"] = { 25.5, 42.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40930),	-- Rags to Riches Rush: Bronze
 						ach(40931),	-- Rags to Riches Rush: Silver
 						ach(40932),	-- Rags to Riches Rush: Gold
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85102, {	-- Rags to Riches Rush - Reverse
 					["provider"] = { "n", 231900 },	-- Grimy Timekeeper
 					["coord"] = { 25.5, 42.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40933),	-- Rags to Riches Rush Reverse: Bronze
 						ach(40934),	-- Rags to Riches Rush Reverse: Silver
 						ach(40935),	-- Rags to Riches Rush Reverse: Gold
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85906, {	-- Sandy Scuttle
 					["provider"] = { "n", 233920 },	-- Grimy Timekeeper
 					["coord"] = { 47.6, 43.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41075),	-- Sandy Scuttle: Bronze
 						ach(41076),	-- Sandy Scuttle: Silver
 						ach(41077),	-- Sandy Scuttle: Gold
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85907, {	-- Sandy Scuttle - Reverse
 					["provider"] = { "n", 233920 },	-- Grimy Timekeeper
 					["coord"] = { 47.6, 43.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(41078),	-- Sandy Scuttle Reverse: Bronze
 						ach(41079),	-- Sandy Scuttle Reverse: Silver
 						ach(41080),	-- Sandy Scuttle Reverse: Gold
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85099, {	-- Scrapshop Shot
 					["provider"] = { "n", 231893 },	-- Grimy Timekeeper
 					["coord"] = { 39.2, 11.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40924),	-- Scrapshop Shot: Bronze
 						ach(40925),	-- Scrapshop Shot: Silver
 						ach(40926),	-- Scrapshop Shot: Gold
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85100, {	-- Scrapshop Shot - Reverse
 					["provider"] = { "n", 231893 },	-- Grimy Timekeeper
 					["coord"] = { 39.2, 11.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40927),	-- Scrapshop Shot Reverse: Bronze
 						ach(40928),	-- Scrapshop Shot Reverse: Silver
 						ach(40929),	-- Scrapshop Shot Reverse: Gold
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85071, {	-- Skyrocketing Sprint
 					["provider"] = { "n", 231793 },	-- Grimy Timekeeper
 					["coord"] = { 39.0, 28.7, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40912),	-- Skyrocketing Sprint: Bronze
 						ach(40913),	-- Skyrocketing Sprint: Silver
 						ach(40914),	-- Skyrocketing Sprint: Gold
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					--TODO: missing in-game/ptr, re-check questID in future
 					["provider"] = { "n", 231793 },	-- Grimy Timekeeper
 					["coord"] = { 39.0, 28.7, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40915),	-- Skyrocketing Sprint Reverse: Bronze
 						ach(40916),	-- Skyrocketing Sprint Reverse: Silver
 						ach(40917),	-- Skyrocketing Sprint Reverse: Gold
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85097, {	-- The Heaps Leap
 					["provider"] = { "n", 231879 },	-- Grimy Timekeeper
 					["coord"] = { 33.8, 76.2, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40918),	-- The Heaps Leap: Bronze
 						ach(40919),	-- The Heaps Leap: Silver
 						ach(40920),	-- The Heaps Leap: Gold
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				driverace(85098, {	-- The Heaps Leap - Reverse
 					["provider"] = { "n", 231879 },	-- Grimy Timekeeper
 					["coord"] = { 33.8, 76.2, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						ach(40921),	-- The Heaps Leap Reverse: Bronze
 						ach(40922),	-- The Heaps Leap Reverse: Silver
 						ach(40923),	-- The Heaps Leap Reverse: Gold
@@ -242,4 +242,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		})),
 	}),
-})));
+}));

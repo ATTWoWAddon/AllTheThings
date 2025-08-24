@@ -73,6 +73,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(76093),	-- Potion of the Jade Serpent
 			i(76090),	-- Potion of the Mountains
 			i(76089),	-- Virmen's Bite
+			-- #if ANYCLASSIC
+			i(247802, {["timeline"] = { ADDED_5_5_0 }}),	-- Venerable Potion of Invisibility
+			-- #endif
 		}),
 		filter(REAGENTS, {
 			i(87872),	-- Desecrated Oil
@@ -95,83 +98,109 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(79869),	-- Mogu Statue Piece
 		i(79868),	-- Pandaren Pottery Shard
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_MANTID, sharedData({
+		header(HEADERS.Currency, ARCH_CURRENCY_MANTID, {
+			["provider"] = { "o", 218950 },	-- Mantid Archaeology Find
+			["maps"] = { TOWNLONG_STEPPES, DREAD_WASTES },
 			["timeline"] = { ADDED_5_2_0 },
-			["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}, -- TODO: someone can add different fragment costs within as needed
-		},{
-			i(95376),	-- Ancient Sap Feeder
-			i(95375),	-- Banner of the Mantid Empire
-			i(95378),	-- Inert Sound Beacon
-			i(95382),	-- Kypari Sap Container
-			i(95380),	-- Mantid Lamp
-			i(95391),	-- Mantid Sky Reaver
-			i(95381),	-- Pollen Collector
-			i(95383),	-- Pristine Banner of the Mantid Empire
-			i(95384),	-- Pristine Ancient Sap Feeder
-			i(95385),	-- Pristine Praying Mantid
-			i(95386),	-- Pristine Sound Beacon
-			i(95387),	-- Pristine Remains of a Paragon
-			i(95388),	-- Pristine Mantid Lamp
-			i(95389),	-- Pristine Pollen Collector
-			i(95390),	-- Pristine Kypari Sap Container
-			i(95379),	-- Remains of a Paragon
-			i(95392),	-- Sonic Pulse Generator
-			i(95377),	-- The Praying Mantid
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_MOGU, sharedData({["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(89614),	-- Anatomical Dummy (TOY!)
-			i(79909),	-- Cracked Mogu Runestone
-			i(79913),	-- Edicts of the Thunder King
-			i(79914),	-- Iron Amulet
-			i(79908),	-- Manacles of Rebellion
-			i(79916),	-- Mogu Coin
-			i(79911),	-- Petrified Bone Whip
-			i(89176),	-- Pristine Branding Iron
-			i(89174),	-- Pristine Edicts of the Thunder King
-			i(89175),	-- Pristine Iron Amulet
-			i(89169),	-- Pristine Manacles of Rebellion
-			i(85477),	-- Pristine Mogu Coin
-			i(89170),	-- Pristine Mogu Runestone
-			i(89209),	-- Pristine Monument Ledger
-			i(89172),	-- Pristine Petrified Bone Whip
-			i(89171),	-- Pristine Terracotta Arm
-			i(89173),	-- Pristine Thunder King Insignia
-			i(89611),	-- Quilen Statuette
-			i(79910),	-- Terracotta Arm
-			i(79912),	-- Thunder King Insignia
-			i(79915),	-- Warlord's Branding Iron
-			i(79917),	-- Worn Monument Ledger
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_PANDAREN, sharedData({["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(79903),	-- Apothecary Tins
-			i(79901),	-- Carved Bronze Mirror
-			i(79900),	-- Empty Keg
-			i(79902),	-- Gold-Inlaid Figurine
-			i(79897),	-- Pandaren Game Board
-			i(79896),	-- Pandaren Tea Set
-			i(79904),	-- Pearl of Yu'lon
-			i(89183),	-- Pristine Apothecary Tins
-			i(89181),	-- Pristine Carved Brone Mirror
-			i(89180),	-- Pristine Empty Keg
-			i(85558),	-- Pristine Game Board
-			i(89182),	-- Pristine Gold-Inlaid Figurine
-			i(85557),	-- Pristine Pandaren Tea Set
-			i(89184),	-- Pristine Pearl of Yu'lon
-			i(89185),	-- Pristine Standard of Niuzao
-			i(89178),	-- Pristine Twin Stein Set
-			i(89179),	-- Pristine Walking Cane
-			i(89685),	-- Spear of Xuen
-			i(79905),	-- Standard of Niuzao
-			i(79898),	-- Twin Stein Set
-			i(89684),	-- Umbrella of Chi-Ji
-			i(79899),	-- Walking Cane
-		})),
+			["groups"] = {
+				i(95376, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Ancient Sap Feeder
+				i(95375, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Banner of the Mantid Empire
+				i(95378, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Inert Sound Beacon
+				i(95382, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Kypari Sap Container
+				i(95380, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Mantid Lamp
+				i(95391, {["cost"]={{"c",ARCH_CURRENCY_MANTID,180}}}),	-- Mantid Sky Reaver
+				i(95381, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pollen Collector
+				i(95383, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Banner of the Mantid Empire
+				i(95384, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Ancient Sap Feeder
+				i(95385, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Praying Mantid
+				i(95386, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Sound Beacon
+				i(95387, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Remains of a Paragon
+				i(95388, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Mantid Lamp
+				i(95389, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Pollen Collector
+				i(95390, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Pristine Kypari Sap Container
+				i(95379, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- Remains of a Paragon
+				i(95392, {["cost"]={{"c",ARCH_CURRENCY_MANTID,180}}}),	-- Sonic Pulse Generator
+				i(95377, {["cost"]={{"c",ARCH_CURRENCY_MANTID,50}}}),	-- The Praying Mantid
+			},
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_MOGU, {
+			["provider"] = { "o", 211174 },	-- Mogu Archaeology Find
+			["maps"] = {
+				DREAD_WASTES,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				THE_VEILED_STAIR,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+			["groups"] = {
+				i(89614, {["cost"]={{"c",ARCH_CURRENCY_MOGU,180}}}),	-- Anatomical Dummy (TOY!)
+				i(79909, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Cracked Mogu Runestone
+				i(79913, {["cost"]={{"c",ARCH_CURRENCY_MOGU,60}}}),	-- Edicts of the Thunder King
+				i(79914, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Iron Amulet
+				i(79908, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Manacles of Rebellion
+				i(79916, {["cost"]={{"c",ARCH_CURRENCY_MOGU,30}}}),	-- Mogu Coin
+				i(79911, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Petrified Bone Whip
+				i(89176, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Branding Iron
+				i(89174, {["cost"]={{"c",ARCH_CURRENCY_MOGU,60}}}),	-- Pristine Edicts of the Thunder King
+				i(89175, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Iron Amulet
+				i(89169, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Manacles of Rebellion
+				i(85477, {["cost"]={{"c",ARCH_CURRENCY_MOGU,30}}}),	-- Pristine Mogu Coin
+				i(89170, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Mogu Runestone
+				i(89209, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Monument Ledger
+				i(89172, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Petrified Bone Whip
+				i(89171, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Terracotta Arm
+				i(89173, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Pristine Thunder King Insignia
+				i(89611, {["cost"]={{"c",ARCH_CURRENCY_MOGU,180}}}),	-- Quilen Statuette
+				i(79910, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Terracotta Arm
+				i(79912, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Thunder King Insignia
+				i(79915, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Warlord's Branding Iron
+				i(79917, {["cost"]={{"c",ARCH_CURRENCY_MOGU,50}}}),	-- Worn Monument Ledger
+			},
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_PANDAREN, {
+			["provider"] = { "o", 211163 },	-- Pandaren Archaeology Find
+			["maps"] = {
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+			["groups"] = {
+				i(79903, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Apothecary Tins
+				i(79901, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Carved Bronze Mirror
+				i(79900, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Empty Keg
+				i(79902, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Gold-Inlaid Figurine
+				i(79897, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,40}}}),	-- Pandaren Game Board
+				i(79896, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pandaren Tea Set
+				i(79904, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,60}}}),	-- Pearl of Yu'lon
+				i(89183, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Apothecary Tins
+				i(89181, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Carved Brone Mirror
+				i(89180, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Empty Keg
+				i(85558, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Game Board
+				i(89182, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Gold-Inlaid Figurine
+				i(85557, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Pandaren Tea Set
+				i(89184, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,60}}}),	-- Pristine Pearl of Yu'lon
+				i(89185, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Standard of Niuzao
+				i(89178, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Twin Stein Set
+				i(89179, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Walking Cane
+				i(89685, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,180}}}),	-- Spear of Xuen
+				i(79905, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Standard of Niuzao
+				i(79898, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Twin Stein Set
+				i(89684, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,180}}}),	-- Umbrella of Chi-Ji
+				i(79899, {["cost"]={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Walking Cane
+			},
+		}),
 	}),
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
-			spell(143255, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Balanced Trillium Ingot
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, spell(143255, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Balanced Trillium Ingot
 				["cost"] = ClassicCost({{ "i", 72095, 1 }}),	-- 1x Trillium Bar
-				["g"] = {
+				["groups"] = {
 					r(142959),	-- Avenger's Trillium Legplates
 					r(142968),	-- Avenger's Trillium Waistplate
 					r(142963),	-- Blessed Trillium Belt
@@ -214,10 +243,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(142958),	-- Protector's Trillium Legguards
 					r(142967),	-- Protector's Trillium Waistguard
 				},
-			})),
-			spell(138646, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel Ingot
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138646, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel Ingot
 				["cost"] = ClassicCost({{ "i", 72096, 10 }}),	-- 10x Ghost Iron Bar
-				["g"] = {
+				["groups"] = {
 					r(137792),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
 					r(137791),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
 					r(137781),	-- Crafted Dreadful Gladiator's Bracers of Meditation
@@ -257,49 +286,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(137768),	-- Haunted Steel Treads
 					r(137770),	-- Haunted Steel Warboots
 				},
-			})),
-			spell(138888, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Fireguard, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138888, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Fireguard, Reborn
 				r(138890),	-- Blazeguard, Reborn
-			})),
-			spell(138890, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Blazeguard, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138890, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Blazeguard, Reborn
 				r(138892),	-- Blazefury, Reborn
-			})),
-			spell(138876, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- The Planar Edge, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138876, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- The Planar Edge, Reborn
 				r(138878),	-- Black Planar Edge, Reborn
-			})),
-			spell(138878, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Black Planar Edge, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138878, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Black Planar Edge, Reborn
 				r(138880),	-- Wicked Edge of the Planes, Reborn
-			})),
-			spell(138882, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Drakefist Hammer, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138882, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Drakefist Hammer, Reborn
 				r(138885),	-- Dragonmaw, Reborn
-			})),
-			spell(138885, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Dragonmaw, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138885, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Dragonmaw, Reborn
 				r(138886),	-- Dragonstrike, Reborn
-			})),
-			spell(138889, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lionheart Blade, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138889, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lionheart Blade, Reborn
 				r(138891),	-- Lionheart Champion, Reborn
-			})),
-			spell(138891, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lionheart Champion, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138891, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lionheart Champion, Reborn
 				r(138893),	-- Lionheart Executioner, Reborn
-			})),
-			spell(138877, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lunar Crescent, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138877, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lunar Crescent, Reborn
 				r(138879),	-- Mooncleaver, Reborn
-			})),
-			spell(138879, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Mooncleaver, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138879, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Mooncleaver, Reborn
 				r(138881),	-- Bloodmoon, Reborn
-			})),
-			spell(138883, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Thunder, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138883, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Thunder, Reborn
 				r(138884),	-- Deep Thunder, Reborn
-			})),
-			spell(138884, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Deep Thunder, Reborn
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, spell(138884, sharedDataSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Deep Thunder, Reborn
 				r(138887),	-- Stormherald, Reborn
-			})),
+			}))),
 		}),
 		n(ARMOR, {
-			i(98607, {["timeline"] = {ADDED_5_4_0}}),	-- Avenger's Trillium Legplates
-			i(98616, {["timeline"] = {ADDED_5_4_0}}),	-- Avenger's Trillium Waistplate
-			i(98611, {["timeline"] = {ADDED_5_4_0}}),	-- Blessed Trillium Belt
-			i(98602, {["timeline"] = {ADDED_5_4_0}}),	-- Blessed Trillium Greaves
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98607, {["timeline"] = {ADDED_5_4_0}})),	-- Avenger's Trillium Legplates
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98616, {["timeline"] = {ADDED_5_4_0}})),	-- Avenger's Trillium Waistplate
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98611, {["timeline"] = {ADDED_5_4_0}})),	-- Blessed Trillium Belt
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98602, {["timeline"] = {ADDED_5_4_0}})),	-- Blessed Trillium Greaves
 			i(87407),	-- Bloodforged Warfists
 			i(82979),	-- Breastplate of Ancient Steel
 			i(87403),	-- Chestplate of Limitless Faith
@@ -319,70 +348,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82951),	-- Contender's Spirit Helm
 			i(82955),	-- Contender's Spirit Legplates
 			i(82952),	-- Contender's Spirit Shoulders
-			i(93548, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
-			i(93547, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
-			i(93537, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Bracers of Meditation
-			i(93536, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Bracers of Prowess
-			i(93532, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
-			i(93533, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Clasp of Meditation
-			i(93453, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
-			i(93454, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
-			i(93455, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dreadplate Helm
-			i(93456, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
-			i(93457, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
-			i(93543, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
-			i(93544, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Girdle of Prowess
-			i(93534, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
-			i(93535, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Greaves of Meditation
-			i(93538, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
-			i(93539, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ornamented Gloves
-			i(93540, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ornamented Headcover
-			i(93541, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ornamented Legplates
-			i(93542, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
-			i(93620, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Plate Chestpiece
-			i(93621, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Plate Gauntlets
-			i(93622, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Plate Helm
-			i(93623, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Plate Legguards
-			i(93624, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Plate Shoulders
-			i(93527, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
-			i(93528, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
-			i(93529, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Scaled Helm
-			i(93530, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Scaled Legguards
-			i(93531, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Scaled Shoulders
-			i(93546, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
-			i(93545, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
-			i(98864, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armplates of Alacrity
-			i(98863, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armplates of Proficiency
-			i(98853, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Bracers of Meditation
-			i(98852, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Bracers of Prowess
-			i(98848, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Clasp of Cruelty
-			i(98849, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Clasp of Meditation
-			i(98784, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
-			i(98785, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
-			i(98786, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dreadplate Helm
-			i(98787, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dreadplate Legguards
-			i(98788, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
-			i(98859, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Girdle of Accuracy
-			i(98860, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Girdle of Prowess
-			i(98850, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Greaves of Alacrity
-			i(98851, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Greaves of Meditation
-			i(98854, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ornamented Chestguard
-			i(98856, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ornamented Headcover
-			i(98855, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ornamented Gloves
-			i(98857, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ornamented Legplates
-			i(98858, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ornamented Spaulders
-			i(98926, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Plate Chestpiece
-			i(98927, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Plate Gauntlets
-			i(98928, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Plate Helm
-			i(98929, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Plate Legguards
-			i(98930, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Plate Shoulders
-			i(98843, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Scaled Chestpiece
-			i(98844, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Scaled Gauntlets
-			i(98845, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Scaled Helm
-			i(98846, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Scaled Legguards
-			i(98847, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Scaled Shoulders
-			i(98862, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Warboots of Alacrity
-			i(98861, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Warboots of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93548, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93547, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93537, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Bracers of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93536, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Bracers of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93532, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93533, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Clasp of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93453, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93454, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93455, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dreadplate Helm
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93456, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93457, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93543, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93544, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Girdle of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93534, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93535, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Greaves of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93538, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93539, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ornamented Gloves
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93540, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ornamented Headcover
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93541, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ornamented Legplates
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93542, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93620, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Plate Chestpiece
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93621, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Plate Gauntlets
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93622, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Plate Helm
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93623, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Plate Legguards
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93624, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Plate Shoulders
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93527, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93528, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93529, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Scaled Helm
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93530, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Scaled Legguards
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93531, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Scaled Shoulders
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93546, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93545, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98864, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armplates of Alacrity
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98863, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armplates of Proficiency
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98853, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Bracers of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98852, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Bracers of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98848, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Clasp of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98849, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Clasp of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98784, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98785, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98786, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dreadplate Helm
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98787, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dreadplate Legguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98788, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dreadplate Shoulders
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98859, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Girdle of Accuracy
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98860, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Girdle of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98850, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Greaves of Alacrity
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98851, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Greaves of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98854, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ornamented Chestguard
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98856, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ornamented Headcover
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98855, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ornamented Gloves
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98857, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ornamented Legplates
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98858, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ornamented Spaulders
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98926, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Plate Chestpiece
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98927, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Plate Gauntlets
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98928, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Plate Helm
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98929, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Plate Legguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98930, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Plate Shoulders
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98843, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Scaled Chestpiece
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98844, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Scaled Gauntlets
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98845, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Scaled Helm
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98846, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Scaled Legguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98847, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Scaled Shoulders
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98862, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Warboots of Alacrity
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98861, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Warboots of Cruelty
 			i(82980),	-- Gauntlets of Ancient Steel
 			i(87406),	-- Gauntlets of Battle Command
 			i(87404),	-- Gauntlets of Unbound Devotion
@@ -404,13 +433,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82931),	-- Ghost-Forged Legplates
 			i(82904),	-- Ghost-Forged Shoulders
 			i(82928),	-- Ghost-Forged Shoulders
-			i(94263, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Greaves
-			i(94266, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Greathelm
-			i(94264, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Headcover
-			i(94268, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Headguard
-			i(94265, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Treads
-			i(94267, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Warboots
-			i(82916),	-- Lightsteel Bracers
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94263, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Greaves
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94266, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Greathelm
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94264, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Headcover
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94268, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Headguard
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94265, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Treads
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94267, {["timeline"] = {ADDED_5_2_0}})),	-- Haunted Steel Warboots
+			i(82916, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Lightsteel Bracers
 			i(82977),	-- Living Steel Breastplate
 			i(82978),	-- Living Steel Gauntlets
 			i(87402),	-- Ornate Battleplate of the Master
@@ -422,41 +451,41 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82919),	-- Masterwork Spiritguard Helm
 			i(82923),	-- Masterwork Spiritguard Legplates
 			i(82920),	-- Masterwork Spiritguard Shoulders
-			i(98606, {["timeline"] = {ADDED_5_4_0}}),	-- Protector's Trillium Legguards
-			i(98615, {["timeline"] = {ADDED_5_4_0}}),	-- Protector's Trillium Waistguard
-			i(82900),	-- Spiritguard Bracers
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98606, {["timeline"] = {ADDED_5_4_0}})),	-- Protector's Trillium Legguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98615, {["timeline"] = {ADDED_5_4_0}})),	-- Protector's Trillium Waistguard
+			i(82900, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Spiritguard Bracers
 			i(87405),	-- Unyielding Bloodplate
 		}),
 		filter(MISC, {
-			i(98717, {["timeline"] = {ADDED_5_4_0}}),	-- Balanced Trillium Ingot
-			i(80431, {["timeline"] = {REMOVED_10_0_2}}),	-- Folded Ghost Iron
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98717, {["timeline"] = {ADDED_5_4_0}})),	-- Balanced Trillium Ingot
+			i(80431, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Folded Ghost Iron
 			i(86599),	-- Ghost Iron Shield Spike
 			i(82960),	-- Ghostly Skeleton Key
-			i(94111, {["timeline"] = {ADDED_5_2_0}}),	-- Lightning Steel Ingot
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94111, {["timeline"] = {ADDED_5_2_0}})),	-- Lightning Steel Ingot
 			i(90046),	-- Living Steel Belt Buckle
 			i(86597),	-- Living Steel Weapon Chain
 		}),
 		n(WEAPONS, {
-			i(94577, {["timeline"] = {ADDED_5_2_0}}),	-- Black Planar Edge, Reborn
-			i(94591, {["timeline"] = {ADDED_5_2_0}}),	-- Blazefury, Reborn
-			i(94589, {["timeline"] = {ADDED_5_2_0}}),	-- Blazeguard, Reborn
-			i(94580, {["timeline"] = {ADDED_5_2_0}}),	-- Bloodmoon, Reborn
-			i(98776, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Barrier
-			i(98810, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Redoubt
-			i(98920, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Shield Wall
-			i(94583, {["timeline"] = {ADDED_5_2_0}}),	-- Deep Thunder, Reborn
-			i(94584, {["timeline"] = {ADDED_5_2_0}}),	-- Dragonmaw, Reborn
-			i(94585, {["timeline"] = {ADDED_5_2_0}}),	-- Dragonstrike, Reborn
-			i(94581, {["timeline"] = {ADDED_5_2_0}}),	-- Drakefist Hammer, Reborn
-			i(94587, {["timeline"] = {ADDED_5_2_0}}),	-- Fireguard, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94577, {["timeline"] = {ADDED_5_2_0}})),	-- Black Planar Edge, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94591, {["timeline"] = {ADDED_5_2_0}})),	-- Blazefury, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94589, {["timeline"] = {ADDED_5_2_0}})),	-- Blazeguard, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94580, {["timeline"] = {ADDED_5_2_0}})),	-- Bloodmoon, Reborn
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98776, {["timeline"] = {ADDED_5_4_0}})),	-- Crafted Malevolent Gladiator's Barrier
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98810, {["timeline"] = {ADDED_5_4_0}})),	-- Crafted Malevolent Gladiator's Redoubt
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98920, {["timeline"] = {ADDED_5_4_0}})),	-- Crafted Malevolent Gladiator's Shield Wall
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94583, {["timeline"] = {ADDED_5_2_0}})),	-- Deep Thunder, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94584, {["timeline"] = {ADDED_5_2_0}})),	-- Dragonmaw, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94585, {["timeline"] = {ADDED_5_2_0}})),	-- Dragonstrike, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94581, {["timeline"] = {ADDED_5_2_0}})),	-- Drakefist Hammer, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94587, {["timeline"] = {ADDED_5_2_0}})),	-- Fireguard, Reborn
 			i(82963),	-- Forgewire Axe
 			i(82967),	-- Ghost Shard
 			i(82964),	-- Ghost-Forged Blade
 			i(82961),	-- Lightsteel Shield
-			i(94588, {["timeline"] = {ADDED_5_2_0}}),	-- Lionheart Blade, Reborn
-			i(94590, {["timeline"] = {ADDED_5_2_0}}),	-- Lionheart Champion, Reborn
-			i(94592, {["timeline"] = {ADDED_5_2_0}}),	-- Lionheart Executioner, Reborn
-			i(94576, {["timeline"] = {ADDED_5_2_0}}),	-- Lunar Crescent, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94588, {["timeline"] = {ADDED_5_2_0}})),	-- Lionheart Blade, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94590, {["timeline"] = {ADDED_5_2_0}})),	-- Lionheart Champion, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94592, {["timeline"] = {ADDED_5_2_0}})),	-- Lionheart Executioner, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94576, {["timeline"] = {ADDED_5_2_0}})),	-- Lunar Crescent, Reborn
 			i(82970),	-- Masterwork Forgewire Axe
 			i(82974),	-- Masterwork Ghost Shard
 			i(82971),	-- Masterwork Ghost-Forged Blade
@@ -464,14 +493,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(82972),	-- Masterwork Phantasmal Hammer
 			i(82969),	-- Masterwork Spiritguard Shield
 			i(82973),	-- Masterwork Spiritblade Decimator
-			i(94578, {["timeline"] = {ADDED_5_2_0}}),	-- Mooncleaver, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94578, {["timeline"] = {ADDED_5_2_0}})),	-- Mooncleaver, Reborn
 			i(82965),	-- Phantasmal Hammer
 			i(82966),	-- Spiritblade Decimator
 			i(82962),	-- Spiritguard Shield
-			i(94586, {["timeline"] = {ADDED_5_2_0}}),	-- Stormherald, Reborn
-			i(94575, {["timeline"] = {ADDED_5_2_0}}),	-- The Planar Edge, Reborn
-			i(94582, {["timeline"] = {ADDED_5_2_0}}),	-- Thunder, Reborn
-			i(94579, {["timeline"] = {ADDED_5_2_0}}),	-- Wicked Edge of the Planes, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94586, {["timeline"] = {ADDED_5_2_0}})),	-- Stormherald, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94575, {["timeline"] = {ADDED_5_2_0}})),	-- The Planar Edge, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94582, {["timeline"] = {ADDED_5_2_0}})),	-- Thunder, Reborn
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94579, {["timeline"] = {ADDED_5_2_0}})),	-- Wicked Edge of the Planes, Reborn
 		}),
 	}),
 	prof(COOKING, {
@@ -488,14 +517,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(74649),	-- Braised Turtle
 		i(74642),	-- Charbroiled Tiger Steak
 		i(74656),	-- Chun Tian Spring Rolls
-		i(101661, {["timeline"] = {ADDED_5_4_0}}),	-- Deluxe Noodle Cart Kit
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101661, {["timeline"] = {ADDED_5_4_0}})),	-- Deluxe Noodle Cart Kit
 		i(81404),	-- Dried Needle Mushrooms
 		i(81403),	-- Dried Peaches
 		i(74645),	-- Eternal Blossom Fish
-		i(101747, {["timeline"] = {ADDED_5_4_0}}),	-- Farmer's Delight
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101747, {["timeline"] = {ADDED_5_4_0}})),	-- Farmer's Delight
 		i(74652),	-- Fire Spirit Salmon
 		i(74641),	-- Fish Cake
-		i(101750, {["timeline"] = {ADDED_5_4_0}}),	-- Fluffy Silkfeather Omelet
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101750, {["timeline"] = {ADDED_5_4_0}})),	-- Fluffy Silkfeather Omelet
 		i(87264),	-- Four Senses Brew
 		i(75026),	-- Ginseng Tea
 		i(74636),	-- Golden Carp Consomme
@@ -510,11 +539,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(75037),	-- Jade Witch Brew
 		i(85504),	-- Krasarang Fritters
 		i(75038),	-- Mad Brewer's Breakfast
-		i(101745, {["timeline"] = {ADDED_5_4_0}}),	-- Mango Ice
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101745, {["timeline"] = {ADDED_5_4_0}})),	-- Mango Ice
 		i(74650),	-- Mogu Fish Stew
-		i(101630, {["timeline"] = {ADDED_5_4_0}}),	-- Noodle Cart Kit
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101630, {["timeline"] = {ADDED_5_4_0}})),	-- Noodle Cart Kit
 		i(74919),	-- Pandaren Banquet
-		i(101662, {["timeline"] = {ADDED_5_4_0}}),	-- Pandaren Treasure Noodle Cart Kit
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101662, {["timeline"] = {ADDED_5_4_0}})),	-- Pandaren Treasure Noodle Cart Kit
 		i(81411),	-- Peach Pie
 		i(81414),	-- Pearl Milk Tea
 		i(86026),	-- Perfectly Cooked Instant Noodles
@@ -524,15 +553,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(81406),	-- Roasted Barley Tea
 		i(74643),	-- Sauteed Carrots
 		i(74648),	-- Sea Mist Rice Noodles
-		i(101746, {["timeline"] = {ADDED_5_4_0}}),	-- Seasoned Pomfruit Slices
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101746, {["timeline"] = {ADDED_5_4_0}})),	-- Seasoned Pomfruit Slices
 		i(74651),	-- Shrimp Dumplings
 		i(81413),	-- Skewered Peanut Chicken
 		i(86057),	-- Sliced Peaches
-		i(101748, {["timeline"] = {ADDED_5_4_0}}),	-- Spiced Blossom Soup
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101748, {["timeline"] = {ADDED_5_4_0}})),	-- Spiced Blossom Soup
 		i(86073),	-- Spicy Salmon
 		i(86074),	-- Spicy Vegetable Chips
 		i(74653),	-- Steamed Crab Surprise
-		i(101749, {["timeline"] = {ADDED_5_4_0}}),	-- Stuffed Lushrooms
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(101749, {["timeline"] = {ADDED_5_4_0}})),	-- Stuffed Lushrooms
 		i(74644),	-- Swirling Mist Soup
 		i(81409),	-- Tangy Yogurt
 		i(81402),	-- Toasted Fish Jerky
@@ -545,10 +574,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
+			i(80433, {	-- Blood Spirit
+				["description"] = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
+			}),
 			i(74247),	-- Ethereal Shard
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94289, {	-- Haunting Spirit
+				["description"] = "Can be obtained by disenchanting epics from Throne of Thunder",
+				["timeline"] = { ADDED_5_2_0 },
+			})),
 			i(74250),	-- Mysterious Essence
 			i(74248),	-- Sha Crystal
-			i(105718, {["timeline"] = {ADDED_5_4_0}}),	-- Sha Crystal Fragment
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(105718, {["timeline"] = {ADDED_5_4_0}})),	-- Sha Crystal Fragment
 			i(74252),	-- Small Ethereal Shard
 			i(74249),	-- Spirit Dust
 		}),
@@ -626,8 +662,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 		filter(BATTLE_PETS, {
 			i(87526),	-- Mechanical Pandaren Dragonling (PET!)
-			i(94903, {["timeline"] = {ADDED_5_4_0}}),	-- Pierre (PET!)
-			i(100905, {["timeline"] = {ADDED_5_4_0}}),	-- Rascal-Bot (PET!)
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(94903, {["timeline"] = {ADDED_5_4_0}})),	-- Pierre (PET!)
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(100905, {["timeline"] = {ADDED_5_4_0}})),	-- Rascal-Bot (PET!)
 		}),
 		filter(GEMS, {
 			i(77544),	-- Flashing Tinker's Gear
@@ -640,7 +676,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(77540),	-- Subtle Tinker's Gear
 		}),
 		filter(MISC, {
-			i(92747, {["timeline"] = {ADDED_5_4_0}}),	-- Advanced Refrigeration Unit
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(92747, {["timeline"] = {ADDED_5_4_0}})),	-- Advanced Refrigeration Unit
 			i(89893),	-- Autumn Flower Firework
 			i(88493),	-- Celestial Firework
 			i(77589),	-- G91 Landshark
@@ -652,19 +688,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(87216),	-- Thermal Anvil
 		}),
 		filter(MOUNTS, {
-			i(95416, {["timeline"] = {ADDED_5_4_0}}),	-- Sky Golem (MOUNT!)
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(95416, {["timeline"] = {ADDED_5_4_0}})),	-- Sky Golem (MOUNT!)
 		}),
 		i(89991, {  -- Pandaria Fireworks
-			i(89996),    -- Schematic: Autumn Flower Firework (RECIPE!)
-			i(89994),    -- Schematic: Celestial Firework (RECIPE!)
-			i(89993),    -- Schematic: Grand Celebration Firework (RECIPE!)
-			i(89997),    -- Schematic: Jade Blossom Firework (RECIPE!)
-			i(89992),    -- Schematic: Serpent's Heart Firework (RECIPE!)
+			i(89996),	-- Schematic: Autumn Flower Firework (RECIPE!)
+			i(89994),	-- Schematic: Celestial Firework (RECIPE!)
+			i(89993),	-- Schematic: Grand Celebration Firework (RECIPE!)
+			i(89997),	-- Schematic: Jade Blossom Firework (RECIPE!)
+			i(89992),	-- Schematic: Serpent's Heart Firework (RECIPE!)
 		}),
 		filter(REAGENTS, {
 			i(77467),	-- Ghost Iron Bolts
 			i(77468),	-- High-Explosive Gunpowder
-			i(94113, {["timeline"] = {ADDED_5_4_0}}),	-- Jard's Peculiar Energy Source
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(94113, {["timeline"] = {ADDED_5_4_0}})),	-- Jard's Peculiar Energy Source
 			i(90146),	-- Tinker's Kit
 		}),
 		filter(TOYS, {
@@ -683,7 +719,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(77531),	-- Mirror Scope
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(72986),	-- Heavy Windwool Bandage
 		i(72985),	-- Windwool Bandage
@@ -703,6 +739,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		i(46109),	-- Sea Turtle (MOUNT!)
 		i(86544),	-- Spinefish Alpha
 		i(74861),	-- Tiger Gourami
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94933, {	-- Tiny Blue Carp (PET!)
+			["timeline"] = { ADDED_5_2_0 },
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
+			["maps"] = {
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+			},
+		})),
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94934, {	-- Tiny Green Carp (PET!)
+			["timeline"] = { ADDED_5_2_0 },
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
+			["maps"] = {
+				KRASARANG_WILDS,
+				THE_JADE_FOREST,
+				TOWNLONG_STEPPES,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+		})),
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94932, {	-- Tiny Red Carp (PET!)
+			["timeline"] = { ADDED_5_2_0 },
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
+			["maps"] = {
+				DREAD_WASTES,
+				KUN_LAI_SUMMIT,
+				TOWNLONG_STEPPES,
+			},
+		})),
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94935, {	-- Tiny White Carp (PET!)
+			["timeline"] = { ADDED_5_2_0 },
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
+			["maps"] = {
+				DREAD_WASTES,
+				ISLE_OF_GIANTS,
+				ISLE_OF_THUNDER,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				THE_VEILED_STAIR,
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+			},
+		})),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -745,41 +824,41 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
-				i(79299),    -- Ace of Crane
-				i(79300),    -- Two of Cranes
-				i(79301),    -- Three of Cranes
-				i(79302),    -- Four of Cranes
-				i(79303),    -- Five of Cranes
-				i(79304),    -- Six of Cranes
-				i(79305),    -- Seven of Cranes
-				i(79306),    -- Eight of Cranes
+				i(79299),	-- Ace of Crane
+				i(79300),	-- Two of Cranes
+				i(79301),	-- Three of Cranes
+				i(79302),	-- Four of Cranes
+				i(79303),	-- Five of Cranes
+				i(79304),	-- Six of Cranes
+				i(79305),	-- Seven of Cranes
+				i(79306),	-- Eight of Cranes
 
-				i(79291),    -- Ace of Oxen
-				i(79292),    -- Two of Oxen
-				i(79293),    -- Three of Oxen
-				i(79294),    -- Four of Oxen
-				i(79295),    -- Five of Oxen
-				i(79296),    -- Six of Oxen
-				i(79297),    -- Seven of Oxen
-				i(79298),    -- Eight of Oxen
+				i(79291),	-- Ace of Oxen
+				i(79292),	-- Two of Oxen
+				i(79293),	-- Three of Oxen
+				i(79294),	-- Four of Oxen
+				i(79295),	-- Five of Oxen
+				i(79296),	-- Six of Oxen
+				i(79297),	-- Seven of Oxen
+				i(79298),	-- Eight of Oxen
 
-				i(79307),    -- Ace of Serpents
-				i(79308),    -- Two of Serpents
-				i(79309),    -- Three of Serpents
-				i(79310),    -- Four of Serpents
-				i(79311),    -- Five of Serpents
-				i(79312),    -- Six of Serpents
-				i(79313),    -- Seven of Serpents
-				i(79314),    -- Eight of Serpents
+				i(79307),	-- Ace of Serpents
+				i(79308),	-- Two of Serpents
+				i(79309),	-- Three of Serpents
+				i(79310),	-- Four of Serpents
+				i(79311),	-- Five of Serpents
+				i(79312),	-- Six of Serpents
+				i(79313),	-- Seven of Serpents
+				i(79314),	-- Eight of Serpents
 
-				i(79283),    -- Ace of Tigers
-				i(79284),    -- Two of Tigers
-				i(79285),    -- Three of Tigers
-				i(79286),    -- Four of Tigers
-				i(79287),    -- Five of Tigers
-				i(79288),    -- Six of Tigers
-				i(79289),    -- Seven of Tigers
-				i(79290),    -- Eight of Tigers
+				i(79283),	-- Ace of Tigers
+				i(79284),	-- Two of Tigers
+				i(79285),	-- Three of Tigers
+				i(79286),	-- Four of Tigers
+				i(79287),	-- Five of Tigers
+				i(79288),	-- Six of Tigers
+				i(79289),	-- Seven of Tigers
+				i(79290),	-- Eight of Tigers
 			}),
 		}),
 		filter(BATTLE_PETS, {
@@ -842,16 +921,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(90904),	-- Ornate Band
 			i(83798),	-- Roguestone Shadowband
 		}),
-		i(95469, {	-- Serpent's Heart
-			i(90470),	-- Design: Jade Owl
-			i(90471),	-- Design: Sapphire Cub
-		}),
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95469, {	-- Serpent's Heart
+			["timeline"] = { ADDED_5_2_0 },
+			["groups"] = {
+				i(90470),	-- Design: Jade Owl
+				i(90471),	-- Design: Sapphire Cub
+			},
+		})),
 	}),
 	prof(LEATHERWORKING, {
 		n(DISCOVERY, {
-			spell(142976, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Hardened Magnificent Hide
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, spell(142976, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Hardened Magnificent Hide
 				["cost"] = ClassicCost({{ "i", 72163, 2 }}),	-- 2x Magnificent Hide
-				["g"] = {
+				["groups"] = {
 					r(143146),	-- Crafted Malevolent Gladiator's Armbands of Meditation
 					r(143145),	-- Crafted Malevolent Gladiator's Armbands of Prowess
 					r(143112),	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
@@ -935,10 +1017,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(142965),	-- Snow Lily Belt
 					r(142956),	-- Snow Lily Britches
 				},
-			})),
+			}))),
 			spell(140040, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Magnificence of Leather
 				["cost"] = ClassicCost({{ "i", 72120, 20 }}),	-- 20x Mist-Touched Leather
-				["g"] = {
+				["groups"] = applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					r(137832),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
 					r(137845),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
 					r(137822),	-- Crafted Dreadful Gladiator's Belt of Cruelty
@@ -986,11 +1068,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(138590),	-- Quilen Hide Helm
 					r(138593),	-- Spirit Keeper Footguards
 					r(138594),	-- Spirit Keeper Helm
-				},
+				}),
 			})),
 			spell(140041, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Magnificence of Scales
 				["cost"] = ClassicCost({{ "i", 79101, 20 }}),	-- 20x Prismatic Scale
-				["g"] = {
+				["groups"] = applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					r(138596),	-- Cloud Serpent Helm
 					r(138595),	-- Cloud Serpent Sabatons
 					r(137866),	-- Crafted Dreadful Gladiator's Armbands of Meditation
@@ -1028,7 +1110,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(138592),	-- Dreadrunner Helm
 					r(138591),	-- Dreadrunner Sabatons
 					r(140185),	-- Magnificent Hide Pack
-				},
+				}),
 			})),
 		}),
 		n(ARMOR, {
@@ -1055,90 +1137,90 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(85818),	-- Contender's Wyrmhide Helm
 				i(85819),	-- Contender's Wyrmhide Leggings
 				i(85820),	-- Contender's Wyrmhide Shoulders
-				i(93506, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
-				i(93568, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
-				i(93472, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Belt of Cruelty
-				i(93463, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Belt of Meditation
-				i(93465, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Bindings of Meditation
-				i(93474, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Bindings of Prowess
-				i(93505, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Boots of Alacrity
-				i(93567, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Boots of Cruelty
-				i(93517, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Copperskin Gloves
-				i(93519, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Copperskin Helm
-				i(93521, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Copperskin Legguards
-				i(93523, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Copperskin Spaulders
-				i(93525, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Copperskin Tunic
-				i(93458, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dragonhide Gloves
-				i(93459, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dragonhide Helm
-				i(93460, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dragonhide Legguards
-				i(93461, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dragonhide Robes
-				i(93462, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
-				i(93507, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ironskin Gloves
-				i(93509, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ironskin Helm
-				i(93511, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ironskin Legguards
-				i(93513, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ironskin Spaulders
-				i(93515, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ironskin Tunic
-				i(93466, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Kodohide Gloves
-				i(93467, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Kodohide Helm
-				i(93468, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Kodohide Legguards
-				i(93469, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Kodohide Robes
-				i(93470, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Kodohide Spaulders
-				i(93473, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
-				i(93464, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
-				i(93570, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Gloves
-				i(93571, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Helm
-				i(93572, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Legguards
-				i(93573, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Spaulders
-				i(93569, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Leather Tunic
-				i(93566, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Waistband of Accuracy
-				i(93504, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Waistband of Cruelty
-				i(93475, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
-				i(93476, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wyrmhide Helm
-				i(93477, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
-				i(93478, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wyrmhide Robes
-				i(93479, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
-				i(98832, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
-				i(98883, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armwraps of Alacrity
-				i(98802, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Belt of Cruelty
-				i(98794, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Belt of Meditation
-				i(98796, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Bindings of Meditation
-				i(98804, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Bindings of Prowess
-				i(98831, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Boots of Alacrity
-				i(98882, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Boots of Cruelty
-				i(98838, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Copperskin Gloves
-				i(98839, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Copperskin Helm
-				i(98840, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Copperskin Legguards
-				i(98841, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Copperskin Spaulders
-				i(98842, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Copperskin Tunic
-				i(98789, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dragonhide Gloves
-				i(98790, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dragonhide Helm
-				i(98791, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dragonhide Legguards
-				i(98792, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dragonhide Robes
-				i(98793, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Dragonhide Spaulders
-				i(98803, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
-				i(98795, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Footguards of Meditation
-				i(98833, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ironskin Gloves
-				i(98834, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ironskin Helm
-				i(98835, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ironskin Legguards
-				i(98836, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ironskin Spaulders
-				i(98837, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ironskin Tunic
-				i(98797, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Kodohide Gloves
-				i(98798, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Kodohide Helm
-				i(98799, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Kodohide Legguards
-				i(98800, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Kodohide Robes
-				i(98801, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Kodohide Spaulders
-				i(98885, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Leather Gloves
-				i(98886, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Leather Helm
-				i(98887, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Leather Legguards
-				i(98888, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Leather Spaulders
-				i(98884, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Leather Tunic
-				i(98881, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Waistband of Accuracy
-				i(98830, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Waistband of Cruelty
-				i(98805, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wyrmhide Gloves
-				i(98806, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wyrmhide Helm
-				i(98807, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wyrmhide Legguards
-				i(98808, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wyrmhide Robes
-				i(98809, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93506, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93568, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93472, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Belt of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93463, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Belt of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93465, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Bindings of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93474, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Bindings of Prowess
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93505, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Boots of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93567, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Boots of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93517, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Copperskin Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93519, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Copperskin Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93521, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Copperskin Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93523, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Copperskin Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93525, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Copperskin Tunic
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93458, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dragonhide Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93459, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dragonhide Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93460, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dragonhide Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93461, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dragonhide Robes
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93462, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Dragonhide Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93507, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ironskin Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93509, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ironskin Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93511, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ironskin Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93513, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ironskin Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93515, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ironskin Tunic
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93466, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Kodohide Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93467, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Kodohide Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93468, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Kodohide Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93469, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Kodohide Robes
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93470, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Kodohide Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93473, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Footguards of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93464, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Footguards of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93570, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93571, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93572, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93573, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93569, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Leather Tunic
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93566, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Waistband of Accuracy
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93504, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Waistband of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93475, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wyrmhide Gloves
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93476, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wyrmhide Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93477, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wyrmhide Legguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93478, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wyrmhide Robes
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93479, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wyrmhide Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98832, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armwraps of Accuracy
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98883, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armwraps of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98802, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Belt of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98794, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Belt of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98796, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Bindings of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98804, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Bindings of Prowess
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98831, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Boots of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98882, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Boots of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98838, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Copperskin Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98839, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Copperskin Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98840, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Copperskin Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98841, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Copperskin Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98842, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Copperskin Tunic
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98789, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dragonhide Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98790, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dragonhide Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98791, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dragonhide Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98792, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dragonhide Robes
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98793, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Dragonhide Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98803, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Footguards of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98795, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Footguards of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98833, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ironskin Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98834, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ironskin Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98835, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ironskin Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98836, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ironskin Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98837, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ironskin Tunic
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98797, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Kodohide Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98798, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Kodohide Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98799, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Kodohide Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98800, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Kodohide Robes
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98801, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Kodohide Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98885, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Leather Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98886, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Leather Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98887, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Leather Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98888, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Leather Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98884, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Leather Tunic
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98881, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Waistband of Accuracy
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98830, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Waistband of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98805, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wyrmhide Gloves
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98806, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wyrmhide Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98807, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wyrmhide Legguards
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98808, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wyrmhide Robes
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98809, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wyrmhide Spaulders
 				i(85823),	-- Greyshadow Chestguard
 				i(85824),	-- Greyshadow Gloves
 				i(85827),	-- Liferuned Leather Gloves
@@ -1160,21 +1242,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(85839),	-- Misthide Shoulders
 				i(85828),	-- Murderer's Gloves
 				i(85829),	-- Nightfire Robe
-				i(98609, {["timeline"] = {ADDED_5_4_0}}),	-- Pennyroyal Belt
-				i(98600, {["timeline"] = {ADDED_5_4_0}}),	-- Pennyroyal Leggings
-				i(94269, {["timeline"] = {ADDED_5_2_0}}),	-- Quilen Hide Boots
-				i(94270, {["timeline"] = {ADDED_5_2_0}}),	-- Quilen Hide Helm
-				i(98613, {["timeline"] = {ADDED_5_4_0}}),	-- Snow Lily Belt
-				i(98604, {["timeline"] = {ADDED_5_4_0}}),	-- Snow Lily Britches
-				i(94273, {["timeline"] = {ADDED_5_2_0}}),	-- Spirit Keeper Footguards
-				i(94274, {["timeline"] = {ADDED_5_2_0}}),	-- Spirit Keeper Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98609, {["timeline"] = {ADDED_5_4_0}})),			-- Pennyroyal Belt
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98600, {["timeline"] = {ADDED_5_4_0}})),			-- Pennyroyal Leggings
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94269, {["timeline"] = {ADDED_5_2_0}})),	-- Quilen Hide Boots
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94270, {["timeline"] = {ADDED_5_2_0}})),	-- Quilen Hide Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98613, {["timeline"] = {ADDED_5_4_0}})),			-- Snow Lily Belt
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98604, {["timeline"] = {ADDED_5_4_0}})),			-- Snow Lily Britches
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94273, {["timeline"] = {ADDED_5_2_0}})),	-- Spirit Keeper Footguards
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94274, {["timeline"] = {ADDED_5_2_0}})),	-- Spirit Keeper Helm
 				i(85849),	-- Wildblood Gloves
 				i(85850),	-- Wildblood Vest
 			}),
 			filter(MAIL, {
 				i(85787),	-- Chestguard of Earthen Harmony
-				i(94276, {["timeline"] = {ADDED_5_2_0}}),	-- Cloud Serpent Helm
-				i(94275, {["timeline"] = {ADDED_5_2_0}}),	-- Cloud Serpent Sabatons
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94276, {["timeline"] = {ADDED_5_2_0}})),	-- Cloud Serpent Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94275, {["timeline"] = {ADDED_5_2_0}})),	-- Cloud Serpent Sabatons
 				i(85789),	-- Contender's Dragonscale Belt
 				i(85790),	-- Contender's Dragonscale Boots
 				i(85791),	-- Contender's Dragonscale Bracers
@@ -1191,78 +1273,78 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(85810),	-- Contender's Scale Helm
 				i(85811),	-- Contender's Scale Leggings
 				i(85812),	-- Contender's Scale Shoulders
-				i(93578, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armbands of Meditation
-				i(93577, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Armbands of Prowess
-				i(93494, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Chain Armor
-				i(93495, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Chain Gauntlets
-				i(93496, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Chain Helm
-				i(93497, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Chain Leggings
-				i(93498, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Chain Spaulders
-				i(93584, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Linked Armor
-				i(93585, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Linked Gauntlets
-				i(93586, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Linked Helm
-				i(93587, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Linked Leggings
-				i(93588, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Linked Spaulders
-				i(93489, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Links of Accuracy
-				i(93488, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Links of Cruelty
-				i(93590, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Armor
-				i(93575, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
-				i(93576, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
-				i(93591, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Gauntlets
-				i(93592, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Helm
-				i(93593, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Leggings
-				i(93594, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mail Spaulders
-				i(93579, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ringmail Armor
-				i(93580, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
-				i(93581, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ringmail Helm
-				i(93582, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ringmail Leggings
-				i(93583, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Ringmail Spaulders
-				i(93491, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
-				i(93490, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
-				i(93589, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
-				i(93574, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Waistguard of Meditation
-				i(93493, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
-				i(93492, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
-				i(98893, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armbands of Meditation
-				i(98892, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Armbands of Prowess
-				i(98820, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Chain Armor
-				i(98821, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Chain Gauntlets
-				i(98822, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Chain Helm
-				i(98823, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Chain Leggings
-				i(98824, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Chain Spaulders
-				i(98890, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Footguards of Alacrity
-				i(98891, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Footguards of Meditation
-				i(98899, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Linked Armor
-				i(98900, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Linked Gauntlets
-				i(98901, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Linked Helm
-				i(98902, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Linked Leggings
-				i(98903, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Linked Spaulders
-				i(98815, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Links of Accuracy
-				i(98814, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Links of Cruelty
-				i(98905, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mail Armor
-				i(98906, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mail Gauntlets
-				i(98907, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mail Helm
-				i(98908, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mail Leggings
-				i(98909, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mail Spaulders
-				i(98894, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ringmail Armor
-				i(98895, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ringmail Gauntlets
-				i(98896, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ringmail Helm
-				i(98897, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ringmail Leggings
-				i(98898, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Ringmail Spaulders
-				i(98817, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Sabatons of Alacrity
-				i(98816, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Sabatons of Cruelty
-				i(98904, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Waistguard of Cruelty
-				i(98889, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Waistguard of Meditation
-				i(98819, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wristguards of Accuracy
-				i(98818, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Wristguards of Alacrity
-				i(94272, {["timeline"] = {ADDED_5_2_0}}),	-- Dreadrunner Helm
-				i(94271, {["timeline"] = {ADDED_5_2_0}}),	-- Dreadrunner Sabatons
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93578, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armbands of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93577, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Armbands of Prowess
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93494, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Chain Armor
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93495, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Chain Gauntlets
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93496, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Chain Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93497, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Chain Leggings
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93498, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Chain Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93584, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Linked Armor
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93585, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Linked Gauntlets
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93586, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Linked Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93587, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Linked Leggings
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93588, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Linked Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93489, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Links of Accuracy
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93488, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Links of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93590, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Armor
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93575, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Footguards of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93576, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Footguards of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93591, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Gauntlets
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93592, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93593, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Leggings
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93594, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mail Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93579, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ringmail Armor
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93580, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ringmail Gauntlets
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93581, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ringmail Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93582, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ringmail Leggings
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93583, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Ringmail Spaulders
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93491, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Sabatons of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93490, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Sabatons of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93589, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Waistguard of Cruelty
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93574, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Waistguard of Meditation
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93493, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wristguards of Accuracy
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93492, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Wristguards of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98893, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armbands of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98892, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Armbands of Prowess
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98820, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Chain Armor
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98821, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Chain Gauntlets
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98822, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Chain Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98823, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Chain Leggings
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98824, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Chain Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98890, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Footguards of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98891, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Footguards of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98899, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Linked Armor
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98900, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Linked Gauntlets
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98901, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Linked Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98902, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Linked Leggings
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98903, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Linked Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98815, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Links of Accuracy
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98814, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Links of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98905, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mail Armor
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98906, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mail Gauntlets
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98907, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mail Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98908, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mail Leggings
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98909, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mail Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98894, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ringmail Armor
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98895, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ringmail Gauntlets
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98896, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ringmail Helm
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98897, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ringmail Leggings
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98898, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Ringmail Spaulders
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98817, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Sabatons of Alacrity
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98816, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Sabatons of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98904, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Waistguard of Cruelty
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98889, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Waistguard of Meditation
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98819, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wristguards of Accuracy
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98818, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Wristguards of Alacrity
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94272, {["timeline"] = {ADDED_5_2_0}})),	-- Dreadrunner Helm
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94271, {["timeline"] = {ADDED_5_2_0}})),	-- Dreadrunner Sabatons
 				i(85821),	-- Fists of Lightning
 				i(85822),	-- Gloves of Earthen Harmony
-				i(98614, {["timeline"] = {ADDED_5_4_0}}),	-- Gorge Stalker Belt
-				i(98605, {["timeline"] = {ADDED_5_4_0}}),	-- Gorge Stalker Legplates
-				i(98610, {["timeline"] = {ADDED_5_4_0}}),	-- Krasari Prowler Belt
-				i(98601, {["timeline"] = {ADDED_5_4_0}}),	-- Krasari Prowler Britches
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98614, {["timeline"] = {ADDED_5_4_0}})),	-- Gorge Stalker Belt
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98605, {["timeline"] = {ADDED_5_4_0}})),	-- Gorge Stalker Legplates
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98610, {["timeline"] = {ADDED_5_4_0}})),	-- Krasari Prowler Belt
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98601, {["timeline"] = {ADDED_5_4_0}})),	-- Krasari Prowler Britches
 				i(85825),	-- Lifekeeper's Gloves
 				i(85826),	-- Lifekeeper's Robe
 				i(85830),	-- Raiment of Blood and Bone
@@ -1289,9 +1371,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		filter(MISC, {
 			i(83765),	-- Angerhide Leg Armor
 			i(85568),	-- Brutal Leg Armor
-			i(102351, {["timeline"] = {ADDED_5_4_0}}),	-- Drums of Rage
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(102351, {["timeline"] = {ADDED_5_4_0}})),	-- Drums of Rage
 			i(83763),	-- Ironscale Leg Armor
-			i(95536, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide Pack
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95536, {["timeline"] = {ADDED_5_2_0}})),	-- Magnificent Hide Pack
 			i(85559),	-- Sha Armor Kit
 			i(85569),	-- Sha-Touched Leg Armor
 			i(83764),	-- Shadowleather Leg Armor
@@ -1328,153 +1410,245 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 	}),
 	prof(TAILORING, {
+		n(DISCOVERY, {
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, spell(143011, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Cloth
+				["cost"] = ClassicCost({{ "i", 82441, 10 }}),	-- 10x Bolt of Windwool Cloth
+				["groups"] = {
+					r(142964),	-- Belt of the Night Sky
+					r(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+					r(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
+					r(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+					r(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+					r(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+					r(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+					r(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
+					r(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+					r(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+					r(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+					r(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+					r(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
+					r(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
+					r(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
+					r(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
+					r(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
+					r(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
+					r(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
+					r(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+					r(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+					r(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+					r(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+					r(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+					r(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
+					r(143078),	-- Crafted Malevolent Gladiator's Satin Hood
+					r(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
+					r(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
+					r(143080),	-- Crafted Malevolent Gladiator's Satin Robe
+					r(143071),	-- Crafted Malevolent Gladiator's Silk Amice
+					r(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
+					r(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
+					r(143070),	-- Crafted Malevolent Gladiator's Silk Robe
+					r(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
+					r(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+					r(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+					r(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
+					r(142955),	-- Leggings of the Night Sky
+					r(142960),	-- White Cloud Belt
+					r(142951),	-- White Cloud Leggings
+				},
+			}))),
+			spell(125557, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Imperial Silk
+				["cost"] = ClassicCost({{ "i", 82441, 8 }}),	-- 8x Bolt of Windwool Cloth
+				["groups"] = applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
+					r(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+					r(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
+					r(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+					r(137937),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+					r(137910),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+					r(137909),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+					r(137911),	-- Crafted Dreadful Gladiator's Cord of Meditation
+					r(137915),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+					r(137917),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+					r(137916),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+					r(137918),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+					r(137920),	-- Crafted Dreadful Gladiator's Drape of Meditation
+					r(137919),	-- Crafted Dreadful Gladiator's Drape of Prowess
+					r(137942),	-- Crafted Dreadful Gladiator's Felweave Amice
+					r(137939),	-- Crafted Dreadful Gladiator's Felweave Cowl
+					r(137938),	-- Crafted Dreadful Gladiator's Felweave Handguards
+					r(137941),	-- Crafted Dreadful Gladiator's Felweave Raiment
+					r(137940),	-- Crafted Dreadful Gladiator's Felweave Trousers
+					r(137926),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+					r(137927),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+					r(137928),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+					r(137930),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+					r(137929),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+					r(137931),	-- Crafted Dreadful Gladiator's Satin Gloves
+					r(137932),	-- Crafted Dreadful Gladiator's Satin Hood
+					r(137933),	-- Crafted Dreadful Gladiator's Satin Leggings
+					r(137935),	-- Crafted Dreadful Gladiator's Satin Mantle
+					r(137934),	-- Crafted Dreadful Gladiator's Satin Robe
+					r(137925),	-- Crafted Dreadful Gladiator's Silk Amice
+					r(137922),	-- Crafted Dreadful Gladiator's Silk Cowl
+					r(137921),	-- Crafted Dreadful Gladiator's Silk Handguards
+					r(137924),	-- Crafted Dreadful Gladiator's Silk Robe
+					r(137923),	-- Crafted Dreadful Gladiator's Silk Trousers
+					r(137913),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+					r(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+					r(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
+					r(138598),	-- Falling Blossom Cowl
+					r(138600),	-- Falling Blossom Hood
+					r(138599),	-- Falling Blossom Sandals
+					r(138597),	-- Falling Blossom Treads
+				}),
+			})),
+		}),
+		n(ARMOR, {
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98612, {["timeline"] = {ADDED_5_4_0}})),	-- Belt of the Night Sky
+			i(92726),	-- Bipsi's Gloves
+			i(82430),	-- Contender's Satin Amice
+			i(82436),	-- Contender's Satin Belt
+			i(82429),	-- Contender's Satin Cowl
+			i(82434),	-- Contender's Satin Cuffs
+			i(82435),	-- Contender's Satin Footwraps
+			i(82432),	-- Contender's Satin Handwraps
+			i(82433),	-- Contender's Satin Pants
+			i(82431),	-- Contender's Satin Raiment
+			i(82422),	-- Contender's Silk Amice
+			i(82428),	-- Contender's Silk Belt
+			i(82421),	-- Contender's Silk Cowl
+			i(82426),	-- Contender's Silk Cuffs
+			i(82427),	-- Contender's Silk Footwraps
+			i(82424),	-- Contender's Silk Handwraps
+			i(82425),	-- Contender's Silk Pants
+			i(82423),	-- Contender's Silk Raiment
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93420, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93421, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cape of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93607, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93608, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93429, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93428, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93430, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cord of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93434, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93436, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93435, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93437, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93439, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Drape of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93438, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Drape of Prowess
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93619, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Felweave Amice
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93616, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Felweave Cowl
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93615, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Felweave Handguards
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93618, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Felweave Raiment
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93617, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Felweave Trousers
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93550, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93551, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93552, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93554, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93553, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93555, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Satin Gloves
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93556, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Satin Hood
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93557, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Satin Leggings
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93559, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Satin Mantle
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93558, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Satin Robe
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93503, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Silk Amice
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93500, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Silk Cowl
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93499, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Silk Handguards
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93502, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Silk Robe
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93501, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Silk Trousers
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93432, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93431, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93433, {["timeline"] = {ADDED_5_2_0}})),	-- Crafted Dreadful Gladiator's Treads of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98756, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cape of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98757, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cape of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98913, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cloak of Alacrity
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98914, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cloak of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98764, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cord of Accuracy
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98763, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cord of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98765, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cord of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98769, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98771, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cuffs of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98770, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Cuffs of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98772, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Drape of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98774, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Drape of Meditation
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98773, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Drape of Prowess
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98925, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Felweave Amice
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98922, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Felweave Cowl
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98921, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Felweave Handguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98924, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Felweave Raiment
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98923, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Felweave Trousers
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98865, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mooncloth Gloves
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98866, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mooncloth Helm
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98867, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mooncloth Leggings
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98869, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mooncloth Mantle
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98868, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Mooncloth Robe
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98870, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Satin Gloves
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98871, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Satin Hood
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98872, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Satin Leggings
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98874, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Satin Mantle
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98873, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Satin Robe
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98829, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Silk Amice
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98826, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Silk Cowl
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98825, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Silk Handguards
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98828, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Silk Robe
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98827, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Silk Trousers
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98767, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Treads of Alacrity
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98766, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Treads of Cruelty
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98768, {["timeline"] = {ADDED_5_4_0}})),			-- Crafted Malevolent Gladiator's Treads of Meditation
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94279, {["timeline"] = {ADDED_5_2_0}})),	-- Falling Blossom Sandals
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94277, {["timeline"] = {ADDED_5_2_0}})),	-- Falling Blossom Treads
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94278, {["timeline"] = {ADDED_5_2_0}})),	-- Falling Blossom Cowl
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94280, {["timeline"] = {ADDED_5_2_0}})),	-- Falling Blossom Hood
+			i(82440),	-- Gloves of Creation
+			i(86313),	-- Imperial Silk Gloves
+			i(86312),	-- Legacy of the Emperor
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98603, {["timeline"] = {ADDED_5_4_0}})),	-- Leggings of the Night Sky
+			i(86311),	-- Robe of Eternal Rule
+			i(82439),	-- Robes of Creation
+			i(82438),	-- Spelltwister's Gloves
+			i(82437),	-- Spelltwister's Grand Robe
+			i(86314),	-- Touch of the Light
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98608, {["timeline"] = {ADDED_5_4_0}})),	-- White Cloud Belt
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98599, {["timeline"] = {ADDED_5_4_0}})),	-- White Cloud Leggings
+			i(90472),	-- Windwool Belt [Rare]
+			i(82404),	-- Windwool Belt
+			i(90473),	-- Windwool Boots [Rare]
+			i(82403),	-- Windwool Boots
+			i(90474),	-- Windwool Bracers [Rare]
+			i(82402),	-- Windwool Bracers
+			i(90476),	-- Windwool Gloves [Rare]
+			i(82400),	-- Windwool Gloves
+			i(90479),	-- Windwool Hood [Rare]
+			i(82397),	-- Windwool Hood
+			i(90475),	-- Windwool Pants [Rare]
+			i(82401),	-- Windwool Pants
+			i(90478),	-- Windwool Shoulders [Rare]
+			i(82398),	-- Windwool Shoulders
+			i(90477),	-- Windwool Tunic [Rare]
+			i(82399),	-- Windwool Tunic
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(82443),	-- Cerulean Spellthread
+			i(82444),	-- Greater Pearlescent Spellthread
+			i(82445),	-- Greater Cerulean Spellthread
+			i(82442),	-- Pearlescent Spellthread
+		}),
+		filter(BAGS, {
+			i(82446),	-- Royal Satchel
+		}),
 		filter(BATTLE_PETS, {
 			i(92960, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- Silkworm Cocoon
 				i(90900),	-- Imperial Moth (PET!)
 				i(90902),	-- Imperial Silkworm (PET!)
 			})),
 		}),
-		filter(BAGS, {
-			i(82446),	-- Royal Satchel
+		-- #if AFTER BFA
+		filter(MISC, {
+			i(72986),	-- Heavy Windwool Bandage
+			i(72985),	-- Windwool Bandage
 		}),
-		n(CHEST, {
-			i(82431),	-- Contender's Satin Raiment
-			i(82423),	-- Contender's Silk Raiment
-			i(93618),	-- Crafted Dreadful Gladiator's Felweave Raiment
-			i(93553),	-- Crafted Dreadful Gladiator's Mooncloth Robe
-			i(93558),	-- Crafted Dreadful Gladiator's Satin Robe
-			i(93502),	-- Crafted Dreadful Gladiator's Silk Robe
-			i(98924),	-- Crafted Malevolent Gladiator's Felweave Raiment
-			i(98868),	-- Crafted Malevolent Gladiator's Mooncloth Robe
-			i(98873),	-- Crafted Malevolent Gladiator's Satin Robe
-			i(98828),	-- Crafted Malevolent Gladiator's Silk Robe
-			i(86312),	-- Legacy of the Emperor
-			i(86311),	-- Robe of Eternal Rule
-			i(82439),	-- Robes of Creation
-			i(82437),	-- Spelltwister's Grand Robe
-			i(90477),	-- Windwool Tunic
-			i(82399),	-- Windwool Tunic
-		}),
-		n(BACK, {
-			i(93420),	-- Crafted Dreadful Gladiator's Cape of Cruelty
-			i(93421),	-- Crafted Dreadful Gladiator's Cape of Prowess
-			i(93607),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
-			i(93608),	-- Crafted Dreadful Gladiator's Cloak of Prowess
-			i(93437),	-- Crafted Dreadful Gladiator's Drape of Cruelty
-			i(93439),	-- Crafted Dreadful Gladiator's Drape of Meditation
-			i(93438),	-- Crafted Dreadful Gladiator's Drape of Prowess
-			i(98756),	-- Crafted Malevolent Gladiator's Cape of Cruelty
-			i(98757),	-- Crafted Malevolent Gladiator's Cape of Prowess
-			i(98913),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
-			i(98914),	-- Crafted Malevolent Gladiator's Cloak of Prowess
-			i(98772),	-- Crafted Malevolent Gladiator's Drape of Cruelty
-			i(98774),	-- Crafted Malevolent Gladiator's Drape of Meditation
-			i(98773),	-- Crafted Malevolent Gladiator's Drape of Prowess
-		}),
-		n(FEET, {
-			i(82435),	-- Contender's Satin Footwraps
-			i(82427),	-- Contender's Silk Footwraps
-			i(93432),	-- Crafted Dreadful Gladiator's Treads of Alacrity
-			i(93431),	-- Crafted Dreadful Gladiator's Treads of Cruelty
-			i(93433),	-- Crafted Dreadful Gladiator's Treads of Meditation
-			i(98767),	-- Crafted Malevolent Gladiator's Treads of Alacrity
-			i(98766),	-- Crafted Malevolent Gladiator's Treads of Cruelty
-			i(98768),	-- Crafted Malevolent Gladiator's Treads of Meditation
-			i(94279),	-- Falling Blossom Sandals
-			i(94277),	-- Falling Blossom Treads
-			i(90473),	-- Windwool Boots
-			i(82403),	-- Windwool Boots
-		}),
-		n(HANDS, {
-			i(92726),	-- Bipsi's Gloves
-			i(82432),	-- Contender's Satin Handwraps
-			i(82424),	-- Contender's Silk Handwraps
-			i(93615),	-- Crafted Dreadful Gladiator's Felweave Handguards
-			i(93550),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
-			i(93555),	-- Crafted Dreadful Gladiator's Satin Gloves
-			i(93499),	-- Crafted Dreadful Gladiator's Silk Handguards
-			i(98921),	-- Crafted Malevolent Gladiator's Felweave Handguards
-			i(98865),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
-			i(98870),	-- Crafted Malevolent Gladiator's Satin Gloves
-			i(98825),	-- Crafted Malevolent Gladiator's Silk Handguards
-			i(82440),	-- Gloves of Creation
-			i(86313),	-- Imperial Silk Gloves
-			i(82438),	-- Spelltwister's Gloves
-			i(86314),	-- Touch of the Light
-			i(90476),	-- Windwool Gloves
-			i(82400),	-- Windwool Gloves
-		}),
-		n(HEAD, {
-			i(82429),	-- Contender's Satin Cowl
-			i(82421),	-- Contender's Silk Cowl
-			i(93616),	-- Crafted Dreadful Gladiator's Felweave Cowl
-			i(93551),	-- Crafted Dreadful Gladiator's Mooncloth Helm
-			i(93556),	-- Crafted Dreadful Gladiator's Satin Hood
-			i(93500),	-- Crafted Dreadful Gladiator's Silk Cowl
-			i(98922),	-- Crafted Malevolent Gladiator's Felweave Cowl
-			i(98866),	-- Crafted Malevolent Gladiator's Mooncloth Helm
-			i(98871),	-- Crafted Malevolent Gladiator's Satin Hood
-			i(98826),	-- Crafted Malevolent Gladiator's Silk Cowl
-			i(94278),	-- Falling Blossom Cowl
-			i(94280),	-- Falling Blossom Hood
-			i(90479),	-- Windwool Hood
-			i(82397),	-- Windwool Hood
-		}),
-		n(LEGS, {
-			i(82433),	-- Contender's Satin Pants
-			i(82425),	-- Contender's Silk Pants
-			i(93617),	-- Crafted Dreadful Gladiator's Felweave Trousers
-			i(93552),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
-			i(93557),	-- Crafted Dreadful Gladiator's Satin Leggings
-			i(93501),	-- Crafted Dreadful Gladiator's Silk Trousers
-			i(98923),	-- Crafted Malevolent Gladiator's Felweave Trousers
-			i(98867),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
-			i(98872),	-- Crafted Malevolent Gladiator's Satin Leggings
-			i(98827),	-- Crafted Malevolent Gladiator's Silk Trousers
-			i(98603),	-- Leggings of the Night Sky
-			i(98599),	-- White Cloud Leggings
-			i(90475),	-- Windwool Pants
-			i(82401),	-- Windwool Pants
-		}),
-		n(SHOULDER, {
-			i(82430),	-- Contender's Satin Amice
-			i(82422),	-- Contender's Silk Amice
-			i(93619),	-- Crafted Dreadful Gladiator's Felweave Amice
-			i(93554),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
-			i(93559),	-- Crafted Dreadful Gladiator's Satin Mantle
-			i(93503),	-- Crafted Dreadful Gladiator's Silk Amice
-			i(98925),	-- Crafted Malevolent Gladiator's Felweave Amice
-			i(98869),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
-			i(98874),	-- Crafted Malevolent Gladiator's Satin Mantle
-			i(98829),	-- Crafted Malevolent Gladiator's Silk Amice
-			i(90478),	-- Windwool Shoulders
-			i(82398),	-- Windwool Shoulders
-		}),
-		n(WAIST, {
-			i(98612),	-- Belt of the Night Sky
-			i(82436),	-- Contender's Satin Belt
-			i(82428),	-- Contender's Silk Belt
-			i(93429),	-- Crafted Dreadful Gladiator's Cord of Accuracy
-			i(93428),	-- Crafted Dreadful Gladiator's Cord of Cruelty
-			i(93430),	-- Crafted Dreadful Gladiator's Cord of Meditation
-			i(98764),	-- Crafted Malevolent Gladiator's Cord of Accuracy
-			i(98763),	-- Crafted Malevolent Gladiator's Cord of Cruelty
-			i(98765),	-- Crafted Malevolent Gladiator's Cord of Meditation
-			i(98608),	-- White Cloud Belt
-			i(90472),	-- Windwool Belt
-			i(82404),	-- Windwool Belt
-		}),
-		n(WRIST, {
-			i(82434),	-- Contender's Satin Cuffs
-			i(82426),	-- Contender's Silk Cuffs
-			i(93434),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
-			i(93436),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
-			i(93435),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
-			i(98769),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
-			i(98771),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
-			i(98770),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
-			i(90474),	-- Windwool Bracers
-			i(82402),	-- Windwool Bracers
+		-- #endif
+		filter(REAGENTS, {
+			i(82441),	-- Bolt of Windwool Cloth
+			i(82447),	-- Imperial Silk
 		}),
 	}),
 }))));

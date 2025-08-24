@@ -1,0 +1,20 @@
+4.0.1.12911
+r(75143),	--
+r(75183),	-- Unravel Embersilk Cloth
+r(75287),	--
+4.3.4.15595
+r(102171),	-- Black Silk Vest
+4.4.2.60142
+r(1224208),	-- Fireweave Belt
+r(1224209),	-- Emberfire Bracers
+r(1224210),	-- Fireweave Bracers
+r(1224211),	-- Emberfire Shoulders
+r(1224212),	-- Fireweave Shoulders
+r(1224213),	-- Emberfire Belt
+r(1224214),	-- Fireweave Boots
+r(1224215),	-- Emberfire Gloves
+r(1224216),	-- Fireweave Gloves
+r(1224217),	-- Emberfire Boots
+
+
+Nothing is Missing in Tailoring! Good Work!

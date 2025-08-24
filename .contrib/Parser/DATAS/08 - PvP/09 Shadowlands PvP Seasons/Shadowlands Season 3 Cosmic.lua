@@ -57,7 +57,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
@@ -80,7 +80,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					filter(BACK_F, {
 						honor(525, i(186944)),	-- Cosmic Aspirant's Cape
 						honor(525, i(186873)),	-- Cosmic Aspirant's Cloak
@@ -202,7 +202,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = sharedData({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
@@ -249,7 +250,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					filter(BACK_F, {
 						conquest(525, i(186780)),	-- Cosmic Gladiator's Cloak
 						conquest(525, i(186781)),	-- Cosmic Gladiator's Drape
@@ -379,7 +381,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["bonusID"] = 7897,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
@@ -520,7 +522,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 }, ["modID"] = 14, ["bonusID"] = 7551 }, {
 			n(CLASSES,{
 				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
+				["groups"] = bubbleDown({ ["bonusID"] = 7532 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon

@@ -1,0 +1,22 @@
+2.5.1.39399
+ach(15018),	-- Infernal Gladiator
+ach(15019),	-- Gladiator: Season 1
+ach(15020),	-- Duelist: Season 1
+ach(15021),	-- Rival: Season 1
+ach(15022),	-- Challenger: Season 1
+ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
+2.5.2.39570
+ach(15199),	-- Gladiator: Season 2
+ach(15200),	-- Gladiator: Season 4
+ach(15201),	-- Duelist: Season 4
+ach(15202),	-- Rival: Season 4
+ach(15203),	-- Challenger: Season 4
+ach(15204),	-- Gladiator: Season 3
+ach(15205),	-- Duelist: Season 3
+ach(15206),	-- Rival: Season 3
+ach(15207),	-- Challenger: Season 3
+ach(15208),	-- Duelist: Season 2
+ach(15209),	-- Rival: Season 2
+ach(15210),	-- Challenger: Season 2
+2.5.4.44833
+ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys

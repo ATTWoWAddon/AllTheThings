@@ -4,13 +4,13 @@
 
 -- Everything in this section should be common to both Vale and Uldum N'Zoth
 -- assault and tagged with location information
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	n(NZOTH_ASSAULTS, {
 		["maps"] = {
 			NZOTH_ASSAULT_ULDUM,
 			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40959, {	-- Black Empire State of Mind
 					["timeline"] = { ADDED_11_0_7 },
@@ -84,7 +84,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 					crit(47214,	{		-- Corrupted Bloodseeker slain
-						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.  It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
+						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum. It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
 						["cr"] = 162290,	-- Corrupted Bloodseeker
 						["coords"] = {
 							{ 13.8, 63.6, NZOTH_ASSAULT_ULDUM },
@@ -93,7 +93,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 					crit(47215,	{		-- Corrupted Bonestripper slain
-						["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
+						["description"] = "Shares a spawn with N'Zoth Bonestripper. Found in most water locations.",
 						["cr"] = 159087,	-- Corrupted Bonestripper
 						["coords"] = {
 							{ 55.7, 43.8, NZOTH_ASSAULT_ULDUM },
@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 					crit(47216,	{		-- Corrupted Despoiler slain
-						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
+						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater. Can also result in Corrupted Mind Eater spawning.",
 						["cr"] = 156709,	-- Corrupted Despoiler
 						["coords"] = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
@@ -214,7 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 					crit(47221, {		-- Corrupted Mind Eater slain
-						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
+						["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler. Can also result in Corrupted Despoiler spawning.",
 						["cr"] = 162243,	-- Corrupted Mind Eater
 						["coords"] = {
 							{ 59.5, 47.4, NZOTH_ASSAULT_ULDUM },
@@ -391,6 +391,101 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 				}),
 			}),
+			n(VISIONS_OF_NZOTH, {
+				n(QUESTS, sharedData({
+					["isDaily"] = true,
+				}, {
+					-- Lesser Visions dailies
+					q(58168, {	-- A Dark, Glaring Reality
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["groups"] = {
+							i(173810),	-- Darksight Potion (QI!)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58151, {	-- Minions of N'Zoth
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["groups"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58167, {	-- Preventative Measures
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["groups"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58156, {	-- Vanquishing the Darkness
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["groups"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58155, {	-- A Hand in the Dark
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["provider"] = { "n", 160252 },
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["groups"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+				})),
+				n(ZONE_DROPS, {
+					i(169294),	-- Resilient Soul
+					i(173888),	-- Shard of Self Sacrifice \\ Lingering Soul
+					i(173293),	-- Vial of Self Preservation
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(174456, {	-- Gloop (PET!)
@@ -398,94 +493,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			n(QUESTS, sharedData({
-				["isDaily"] = true,
-			}, {
-				-- Lesser Visions dailies
-				q(58168, {	-- A Dark, Glaring Reality
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(173810),	-- Darksight Potion (QI!)
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58151, {	-- Minions of N'Zoth
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58167, {	-- Preventative Measures
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58156, {	-- Vanquishing the Darkness
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58155, {	-- A Hand in the Dark
-					["provider"] = { "n", 160252 },
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-			})),
 			n(SPECIAL, {
 				i(175140, {	-- All-Seeing Eyes (TOY!)
 					["cost"] = {
@@ -716,4 +723,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 		},
 	}),
-}));
+})));

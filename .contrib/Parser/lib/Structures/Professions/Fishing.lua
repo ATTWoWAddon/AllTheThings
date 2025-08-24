@@ -81,7 +81,7 @@ CATA_FISHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-MOP_FISHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110410, {	-- Fishing (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -95,7 +95,7 @@ MOP_FISHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 }));
 DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "Rewarded for fishing",
-	["g"] = {
+	["groups"] = {
 		r(158743, {	-- Fishing (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -117,7 +117,7 @@ LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ ["timeline"] =
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-SL_FISHING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_FISHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310675),	-- Shadowlands Fishing
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
@@ -139,9 +139,11 @@ DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 }));
 TWW_FISHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423336),	-- Khaz Algar Fishing
+	r(471368, {["timeline"] = {ADDED_11_1_0}}),	-- Blair's "Gold" Fish Exchange
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 	r(454441),	-- Becoming an Algari Angler
 	r(456588),	-- Isle of Dorn
+	r(471365, {["timeline"] = {ADDED_11_1_0}}),	-- Undermine
 	r(456150),	-- What is an Algari Weaverline?
 });

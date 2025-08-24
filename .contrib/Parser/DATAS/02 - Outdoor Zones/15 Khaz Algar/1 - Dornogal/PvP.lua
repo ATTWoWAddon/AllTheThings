@@ -7,11 +7,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(QUESTS, {
 				q(83489, {	-- Gathering All Gladiators!
 					["provider"] = { "i", 225772 },	-- Artisan's Consortium Advertisement
-					["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 				}),
 				q(84925, {	-- Rallying All Rapscallions!
 					["provider"] = { "i", 229401 },	-- Artisan's Consortium Pamphlet
-					["timeline"] = { REMOVED_11_2_0_SEASONSTART },
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				}),
+				q(85229, {	-- Rallying All Rapscallions!
+					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 				}),
 				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_0_2 } }, {	-- Weapons of Conquest
 					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
@@ -44,11 +48,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(86853, {	-- Sparks of War: Undermine
 					["timeline"] = { ADDED_11_1_0 },
 				}),
+				q(90781, {	-- Sparks of War: K'aresh
+					["timeline"] = { ADDED_11_2_0 },
+				}),
 			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.5, 77.1, DORNOGAL },
-					["g"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
 						filter(RECIPES, {
 							i(225433),	-- Design: Algari Competitor's Amulet (RECIPE!)
 							i(225432),	-- Design: Algari Competitor's Signet (RECIPE!)
@@ -129,10 +136,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 									{"i", 215236, 3},	-- Vicious Bloodstone x3
 									{"c", HONOR, 5000},
 								},
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(230724, {	-- Astral Jeweler's Setting
+								["cost"] = {
+									{"i", 215236, 3},	-- Vicious Bloodstone x3
+									{"c", HONOR, 5000},
+								},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 						}),
 						filter(REAGENTS, {
+							i(230286, {	-- Astral Aspirant's Heraldry
+								["cost"] = {{"c", HONOR, 175}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
+							i(230285, {	-- Astral Combatant's Heraldry
+								["cost"] = {{"c", HONOR, 350}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
+							i(230287, {	-- Astral Gladiator's Heraldry
+								["cost"] = {{"c", CONQUEST, 175}},
+								["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+							}),
 							i(210232, {	-- Forged Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
@@ -147,15 +173,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(229389, {	-- Prized Aspirant's Heraldry
 								["cost"] = {{"c", HONOR, 175}},
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229388, {	-- Prized Combatant's Heraldry
 								["cost"] = {{"c", HONOR, 350}},
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(229390, {	-- Prized Gladiator's Heraldry
 								["cost"] = {{"c", CONQUEST, 175}},
-								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(215236, {	-- Vicious Bloodstone
 								["cost"] = {{"c", HONOR, 2500}},
@@ -165,7 +191,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(219212, {	-- Maara <War Mode Supplies>
 					["coord"] = { 60.3, 70.0, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(MISC, sharedData({
 							["cost"] = {{"c", HONOR, 500}},
 						}, {
@@ -183,10 +209,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(219217, {	-- Velerd <Honor Quartermaster>
 					["coord"] = { 55.0, 76.5, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(225739, {	-- Algari Distinguishment
 							["cost"] = {{"c", HONOR, 2000}},
-							["g"] = {
+							["groups"] = {
 								i(137642),	-- Mark of Honor
 							},
 						}),

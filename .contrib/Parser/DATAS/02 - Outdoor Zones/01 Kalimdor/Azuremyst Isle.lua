@@ -36,8 +36,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(2, 2, 1),
 						}),
 						q(9311, {	-- Blood Elf Spy
-							["qg"] = 16546,	-- Tolaan
 							["sourceQuest"] = 10303,	-- The Blood Elves
+							["qg"] = 16546,	-- Tolaan
 							-- #if AFTER MOP
 							["coord"] = { 33.8, 69.2, AMMEN_VALE },
 							-- #else
@@ -63,8 +63,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9799, {	-- Botanical Legwork
-							["qg"] = 20233,	-- Apprentice Vishael
 							["sourceQuest"] = 10302,	-- Volatile Mutations
+							["qg"] = 20233,	-- Apprentice Vishael
 							-- #if AFTER MOP
 							["coord"] = { 49.7, 37.5, AMMEN_VALE },
 							-- #else
@@ -81,8 +81,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9371, {	-- Botanist Taerix
-							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
+							["qg"] = 16477,	-- Proenitus
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -104,8 +104,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(4, 4, 1),
 						}),
 						q(9450, {	-- Call of Earth (2/3)
-							["qg"] = 17087,	-- Spirit of the Vale
 							["sourceQuest"] = 9449,	-- Call of Earth (1/3)
+							["qg"] = 17087,	-- Spirit of the Vale
 							-- #if AFTER MOP
 							["coord"] = { 33.6, 23.8, AMMEN_VALE },
 							-- #else
@@ -122,11 +122,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9451, {	-- Call of Earth (3/3)
+							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
 							["providers"] = {
 								{ "n", 17087 },	-- Spirit of the Vale
 								{ "i", 23671 },	-- Earth Crystal
 							},
-							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
 							-- #if AFTER MOP
 							["coord"] = { 33.6, 23.8, AMMEN_VALE },
 							-- #else
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
 							["lvl"] = 4,
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE CATA
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
@@ -146,21 +146,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							-- #endif
 						}),
-						q(26968, {	-- Frost Nova
-							["qg"] = 16500,	-- Valaatu
+						q(26968, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Draenei)
+							["qg"] = 16500,	-- Valaatu <Mage Trainer>
 							-- #if AFTER MOP
 							["coord"] = { 51.0, 43.0, AMMEN_VALE },
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["classes"] = { MAGE },
 							["races"] = { DRAENEI },
+							["classes"] = { MAGE },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9294, {	-- Healing the Lake
-							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuest"] = 9293,	-- What Must Be Done...
+							["qg"] = 16514,	-- Botanist Taerix
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else
@@ -195,14 +195,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9303, {	-- Inoculation [Original]
-							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
-							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
-							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
-							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 10304,	-- Vindicator Aldar
 							-- #if AFTER 6.0.2.18816
 							["altQuests"] = { 37444 },	-- Inoculation [Skipped Breadcrumb]
 							-- #endif
+							["qg"] = 16535,	-- Vindicator Aldar
 							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
 							-- #else
@@ -210,6 +207,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
+							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
+							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
+							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
 							["groups"] = {
 								objective(1, {	-- Nestlewood Owlkin inoculated
 									["provider"] = { "i", 22962 },	-- Inoculating Crystal
@@ -218,9 +218,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37444, {	-- Inoculation
-							["qg"] = 16535,	-- Vindicator Aldar
-							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
+							["sourceQuest"] = 10302,	-- Volatile Mutations
+							["qg"] = 16535,	-- Vindicator Aldar
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(26970, {	-- Learning the Word
+						q(26970, {	-- Aiding the Injured [Cata] / Learning the Word [MoP+]
 							["qg"] = 16502,	-- Zalduun
 							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },
@@ -256,9 +256,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(31172, {	-- Monk Training
-							["classes"] = { MONK },
-							["races"] = { DRAENEI },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+							["races"] = { DRAENEI },
+							["classes"] = { MONK },
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
@@ -297,9 +297,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9280, {	-- Replenishing the Healing Crystals
-							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9279,	-- You Survived!
 							["altQuests"] = { 9369 },	-- Replenishing the Healing Crystals [Non-Draenei Only]
+							["qg"] = 16477,	-- Proenitus
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -320,8 +320,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9369, {	-- Replenishing the Healing Crystals
-							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9279,	-- You Survived!
+							["qg"] = 16477,	-- Proenitus
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -342,8 +342,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9283, {	-- Rescue the Survivors!
-							["qg"] = 16502,	-- Zalduun
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
+							["qg"] = 16502,	-- Zalduun
 							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },
 							-- #else
@@ -371,11 +371,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9305, {	-- Spare Parts
-							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER WOD
 							["altQuests"] = { 37445 },	-- Spare Parts [New one that exists for no reason]
 							-- #endif
+							["qg"] = 17071,	-- Technician Zhanaa
 							-- #if AFTER MOP
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
 							-- #else
@@ -404,8 +404,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37445, {	-- Spare Parts
-							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
+							["qg"] = 17071,	-- Technician Zhanaa
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
@@ -438,8 +438,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(10303, {	-- The Blood Elves
-							["qg"] = 16546,	-- Tolaan
 							["sourceQuest"] = 9309,	-- The Missing Scout
+							["qg"] = 16546,	-- Tolaan
 							-- #if AFTER MOP
 							["coord"] = { 33.8, 69.2, AMMEN_VALE },
 							-- #else
@@ -465,8 +465,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(9312, {	-- The Emitter
-							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 9311,	-- Blood Elf Spy
+							["qg"] = 16535,	-- Vindicator Aldar
 							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
 							-- #else
@@ -488,8 +488,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9309, {	-- The Missing Scout
-							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 9303,	-- Inoculation [Original]
+							["qg"] = 16535,	-- Vindicator Aldar
 							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
 							-- #else
@@ -507,8 +507,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9313, {	-- Travel to Azure Watch
-							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 9312,	-- The Emitter
+							["qg"] = 17071,	-- Technician Zhanaa
 							-- #if AFTER MOP
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
 							-- #else
@@ -518,11 +518,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(4, 4, 1),
 						}),
 						q(9409, {	-- Urgent Delivery!
-							["qg"] = 16477,	-- Proenitus
 							["sourceQuests"] = {
 								9369,	-- Replenishing the Healing Crystal (All other ally races)
 								9280,	-- Replenishing the Healing Crystal (Draenei)
 							},
+							["qg"] = 16477,	-- Proenitus
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -534,8 +534,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10304, {	-- Vindicator Aldar
-							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuest"] = 9294,	-- Healing the Lake
+							["qg"] = 16514,	-- Botanist Taerix
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else
@@ -546,7 +546,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(10302, {	-- Volatile Mutations
-							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuests"] = {
 								-- #if AFTER MOP
 								-- TODO: Test this source quest list.
@@ -555,6 +554,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								-- #endif
 								9371,	-- Botanist Taerix (breadcrumb)
 							},
+							["qg"] = 16514,	-- Botanist Taerix
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else
@@ -580,8 +580,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9293, {	-- What Must Be Done...
-							["qg"] = 16514,	-- Botanist Taerix
 							["sourceQuest"] = 10302,	-- Volatile Mutations
+							["qg"] = 16514,	-- Botanist Taerix
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(860),	-- Explore Azuremyst Isle
+				ach(860),	-- Explore Azuremyst Isle
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -679,6 +679,41 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				q(31569, {	-- Got one! (Lehna)
+					["sourceQuest"] = 31825,	-- Level Up!
+					["qg"] = 63077,	-- Lehna
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31556, {	-- Learning the Ropes (Lehna)
+					["qg"] = 63077,	-- Lehna
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31825, {	-- Level Up! (Lehna)
+					["sourceQuest"] = 31568,	-- On The Mend
+					["qg"] = 63077,	-- Lehna
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31568, {	-- On The Mend (Lehna)
+					["sourceQuest"] = 31556,	-- Learning the Ropes
+					["qg"] = 63077,	-- Lehna
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 17485 },	-- Esbina <Stable Master>
+							["coord"] = { 49.0, 49.8, AZUREMYST_ISLE },
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(9528, {	-- A Cry For Help
 					["qg"] = 17312,	-- Magwin
@@ -690,8 +725,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9612, {	-- A Hearty Thanks!
-					["qg"] = 17587,	-- Draenei Youngling
 					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob\n.3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
+					["qg"] = 17587,	-- Draenei Youngling
 					["coords"] = {
 						{ 37.6, 18.6, AZUREMYST_ISLE },
 						{ 40.6, 71.0, AZUREMYST_ISLE },
@@ -707,8 +742,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9506, {	-- A Small Start
-					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9505,	-- The Prophecy of Velen (breadcrumb?)
+					["qg"] = 17240,	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -730,8 +765,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9527, {	-- All That Remains
-					["qg"] = 17311,	-- Cowlen
 					["sourceQuest"] = 10428,	-- The Missing Fisherman
+					["qg"] = 17311,	-- Cowlen
 					["coord"] = { 16.6, 94.4, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
@@ -746,8 +781,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9473, {	-- An Alternative Alternative
-					["qg"] = 17215,	-- Daedal
 					["sourceQuest"] = 9463,	-- Medicinal Purpose
+					["qg"] = 17215,	-- Daedal
 					["coord"] = { 48.4, 51.4, AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -774,7 +809,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9560, {	-- Beasts of the Apocalypse!
-					["qg"] = 17442,	-- Moordo
 					-- #if BEFORE MOP
 					["sourceQuest"] = 9544,	-- The Prophecy of Akida
 					-- #elseif AFTER 9.0.2
@@ -783,6 +817,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- This needs to be checked for accuracy each expansion.
 					["sourceQuest"] = 9559,	-- Stillpine Hold
 					-- #endif
+					["qg"] = 17442,	-- Moordo
 					["coord"] = { 44.8, 23.8, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -800,8 +835,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9675, {	-- Beast Training
-					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9593,	-- Taming the Beast (3/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 24.2, 54.4, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_EXODAR },
@@ -831,13 +866,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 				q(10350, {	-- Behomat
-					["qg"] = 17480,	-- Ruada
 					["sourceQuests"] = {
 						1638,	-- A Warrior's Training
 						1684,	-- Elanaria
 						1679,	-- Muren Stormpike
 						9582,	-- Strength of One
 					},
+					["qg"] = 17480,	-- Ruada
 					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["maps"] = { THE_EXODAR },
 					["classes"] = { WARRIOR },
@@ -856,8 +891,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9566, {	-- Blood Crystals
-					["provider"] = { "o", 181748 },	-- Blood Crystal
 					["sourceQuest"] = 9565,	-- Search Stillpine Hold
+					["provider"] = { "o", 181748 },	-- Blood Crystal
 					["coord"] = { 50.5, 11.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -872,8 +907,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9464, {	-- Call of Fire (2/7)
-					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["sourceQuest"] = 9462,	-- Call of Fire (1/4)
+					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -881,8 +916,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9465, {	-- Call of Fire (3/7)
-					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9464,	-- Call of Fire (2/4)
+					["qg"] = 17205,	-- Temper
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -896,8 +931,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9467, {	-- Call of Fire (4/7)
-					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9465,	-- Call of Fire (3/4)
+					["qg"] = 17205,	-- Temper
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -917,8 +952,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9468, {	-- Call of Fire (5/7)
-					["qg"] = 17205,	-- Temper
 					["sourceQuest"] = 9467,	-- Call of Fire (4/4)
+					["qg"] = 17205,	-- Temper
 					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 23688, 1 } },	-- Hauteur's Ashes
@@ -927,8 +962,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9461, {	-- Call of Fire (6/7)
-					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["sourceQuest"] = 9468,	-- Call of Fire (5/4)
+					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
 					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -936,8 +971,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9555, {	-- Call of Fire (7/7)
-					["qg"] = 17468,	-- Prophet Velen
 					["sourceQuest"] = 9461,	-- Call of Fire (6/4)
+					["qg"] = 17468,	-- Prophet Velen
 					["coord"] = { 32.9, 54.5, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -951,11 +986,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9573, {	-- Chieftain Oomooroo
-					["qg"] = 17445,	-- Stillpine the Younger
 					["sourceQuests"] = {
 						9560,	-- Beasts of the Apocalypse
 						9562,	-- Murlocs... Why Here? Why Now?
 					},
+					["qg"] = 17445,	-- Stillpine the Younger
 					["coord"] = { 46.8, 21.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -983,14 +1018,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9595, {	-- Control
-					-- TODO: verify, if possible?  i don't see any recent comments claiming to have picked this up, just questions about how to get it.
-					-- wowhead also doesn't have provider data for it, leading me to believe it has been culled/not seen in a long time
 					["qg"] = 17481,	-- Semid
 					["coord"] = { 49.9, 50.0, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Possibly added back the same time as the Ghostlands Mage quest was.
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
+					-- TODO: verify, if possible?  i don't see any recent comments claiming to have picked this up, just questions about how to get it.
+					-- wowhead also doesn't have provider data for it, leading me to believe it has been culled/not seen in a long time
 					["groups"] = {
 						objective(1, {	-- Quel'dorei Magewraith slain
 							["provider"] = { "n", 17612 },	-- Quel'dorei Magewraith
@@ -1017,24 +1052,24 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9602, {	-- Deliver Them From Evil...
-					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9537,	-- Show Gnomercy
+					["qg"] = 17240,	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["cost"] = { { "i", 23899, 1 } },	-- Traitor's Communication
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(9453, {	-- Find Acteon!
-					["qg"] = 17101,	-- Diktynna
 					["sourceQuest"] = 9452,	-- Red Snapper - Very Tasty!
+					["qg"] = 17101,	-- Diktynna
 					["coord"] = { 61.0, 54.2, AZUREMYST_ISLE },
 					["cost"] = { { "i", 23672, 1 } },	-- Crate of Red Snapper
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9564, {	-- Gurf's Dignity
-					["provider"] = { "i", 23850 },	-- Gurf's Dignity
 					["sourceQuest"] = 9562,	-- Murlocs... Why Here?  Why Now?
+					["provider"] = { "i", 23850 },	-- Gurf's Dignity
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -1065,8 +1100,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9530, {	-- I've Got a Plant
-					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9506,	-- A Small Start
+					["qg"] = 17240,	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
@@ -1109,13 +1144,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9562, {	-- Murlocs... Why Here? Why Now?
-					["qg"] = 17441,	-- Gurf
 					-- #if AFTER MOP
 					-- TODO: Confirm this is true or not.
 					["sourceQuest"] = 9544,	-- The Prophecy of Akida
 					-- #else
 					["sourceQuest"] = 9559,	-- Stillpine Hold
 					-- #endif
+					["qg"] = 17441,	-- Gurf
 					["coord"] = { 44.6, 23.4, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1135,8 +1170,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9456, {	-- Nightstalker Clean Up, Isle 2...
-					["qg"] = 17116,	-- Exarch Menelaous
 					["sourceQuest"] = 9455,	-- Strange Findings
+					["qg"] = 17116,	-- Exarch Menelaous
 					["coord"] = { 47.1, 50.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1155,8 +1190,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if AFTER CATA
 				-- This quest was moved from Bloodmyst Isle after Cataclysm.
 				q(9604, {	-- On the Wings of a Hippogryph
-					["qg"] = 43991,	-- Zaldaan
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
+					["qg"] = 43991,	-- Zaldaan
 					["coord"] = { 49.7, 49.1, AZUREMYST_ISLE },
 					["cost"] = { { "i", 23902, 1 } },	-- Chellan's List
 					["races"] = { DRAENEI },
@@ -1210,14 +1245,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9514, {	-- Rune Covered Tablet
-					["provider"] = { "i", 23759 },	-- Rune Covered Tablet
 					["sourceQuest"] = 9506,	-- A Small Start
+					["provider"] = { "i", 23759 },	-- Rune Covered Tablet
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(9565, {	-- Search Stillpine Hold
-					["qg"] = 17440,	-- High Chief Stillpine
 					["sourceQuest"] = 9562,	-- Murlocs... Why Here? Why Now?
+					["qg"] = 17440,	-- High Chief Stillpine
 					["coord"] = { 46.6, 20.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1231,8 +1266,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 10,
 				}),
 				q(9537, {	-- Show Gnomercy
-					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9531,	-- Tree's Company
+					["qg"] = 17240,	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1250,8 +1285,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9559, {	-- Stillpine Hold
-					["qg"] = 17114,	-- Arugoo of the Stillpine
 					["sourceQuest"] = 9544,	-- The Prophecy of Akida
+					["qg"] = 17114,	-- Arugoo of the Stillpine
 					["coord"] = { 49.4, 51.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1262,8 +1297,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(9582, {	-- Strength of One
-					["qg"] = 17480,	-- Ruada
-					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["altQuests"] = {
 						1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
@@ -1272,6 +1305,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
 					},
+					["qg"] = 17480,	-- Ruada
+					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1292,8 +1327,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9591, {	-- Taming the Beast (1/3)
-					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9757,	-- Seek Huntress Kella Nightbow
+					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -1309,8 +1344,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9592, {	-- Taming the Beast (2/3)
-					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9591,	-- Taming the Beast (1/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -1326,8 +1361,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9593, {	-- Taming the Beast (3/3)
-					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9592,	-- Taming the Beast (2/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -1360,8 +1395,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10324, {	-- The Great Moongraze Hunt (2/2)
-					["qg"] = 17110,	-- Acteon
 					["sourceQuest"] = 9454,	-- The Great Moongraze Hunt (1/2)
+					["qg"] = 17110,	-- Acteon
 					["coord"] = { 49.8, 51.8, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1378,7 +1413,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9570, {	-- The Kurken is Lurkin'
-					["qg"] = 17443,	-- Kurz the Revelator
 					-- #if AFTER MOP
 					-- TODO: Double check this when MOP comes out.
 					["sourceQuests"] = {
@@ -1388,6 +1422,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["sourceQuest"] = 9565,	-- Search Stillpine Hold
 					-- #endif
+					["qg"] = 17443,	-- Kurz the Revelator
 					["coord"] = { 46.8, 22.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1400,8 +1435,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9571, {	-- The Kurken's Hide
-					["qg"] = 17443,	-- Kurz the Revelator
 					["sourceQuest"] = 9570,	-- The Kurken is Lurkin'
+					["qg"] = 17443,	-- Kurz the Revelator
 					["coord"] = { 46.8, 22.2, AZUREMYST_ISLE },
 					["cost"] = { { "i", 23860, 1 } },	-- The Kurken's Hide
 					["races"] = ALLIANCE_ONLY,
@@ -1422,8 +1457,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(9544, {	-- The Prophecy of Akida
-					["qg"] = 17364,	-- Totem of Vark
 					["sourceQuest"] = 9542,	-- Totem of Vark
+					["qg"] = 17364,	-- Totem of Vark
 					["coord"] = { 28.2, 62.4, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1448,44 +1483,44 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9505, {	-- The Prophecy of Velen
-					["qg"] = 17215,	-- Daedal
 					["sourceQuest"] = 9473,	-- An Alternative Alternative
+					["qg"] = 17215,	-- Daedal
 					["coord"] = { 48.4, 51.4, AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(9539, {	-- Totem of Coo
-					["qg"] = 17360,	-- Totem of Akida
 					["sourceQuest"] = 9538,	-- Learning the Language
+					["qg"] = 17360,	-- Totem of Akida
 					["coord"] = { 49.4, 51.0, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9540, {	-- Totem of Tikti
-					["qg"] = 17361,	-- Totem of Coo
 					["sourceQuest"] = 9539,	-- Totem of Coo
+					["qg"] = 17361,	-- Totem of Coo
 					["coord"] = { 55.2, 41.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9542, {	-- Totem of Vark
-					["qg"] = 17363,	-- Totem of Yor
 					["sourceQuest"] = 9541,	-- Totem of Yor
+					["qg"] = 17363,	-- Totem of Yor
 					["coord"] = { 63.1, 67.9, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9541, {	-- Totem of Yor
-					["qg"] = 17362,	-- Totem of Tikti
 					["sourceQuest"] = 9540,	-- Totem of Tikti
+					["qg"] = 17362,	-- Totem of Tikti
 					["coord"] = { 64.5, 39.8, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9531, {	-- Tree's Company
-					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9530,	-- I've Got a Plant
+					["qg"] = 17240,	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1498,8 +1533,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9515, {	-- Warlord Sriss'tiz
-					["qg"] = 17241,	-- Priestess Kyleen Il'dinare
 					["sourceQuest"] = 9514,	-- Rune Covered Tablet
+					["qg"] = 17241,	-- Priestess Kyleen Il'dinare
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
@@ -1516,8 +1551,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9622, {	-- Warn Your People
-					["qg"] = 17440,	-- High Chief Stillpine
 					["sourceQuest"] = 9570,	-- The Kurken is Lurkin'
+					["qg"] = 17440,	-- High Chief Stillpine
 					["coord"] = { 46.6, 20.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1586,6 +1621,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						17201,	-- Moongraze Buck
 						17200,	-- Moongraze Stag
 					},
+					["description"] = "Only drops from stags on Azuremyst Isle.",
 				}),
 				i(23759, {	-- Rune Covered Tablet
 					["coords"] = {

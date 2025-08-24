@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				["groups"] = {
 					-- #if AFTER 10.1.7
-					spell(921, {	-- Pickpocketing
+					header(HEADERS.Spell, 921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
 							["timeline"] = { ADDED_10_1_7 },
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
@@ -46,8 +46,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					n(QUESTS, {
 						q(170, {	-- A New Threat
-							["qg"] = 713,	-- Balir Frosthammer
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["qg"] = 713,	-- Balir Frosthammer
 							["coord"] = { 29.6, 71.2, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -70,13 +70,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3361, {	-- A Refugee's Quandary
-							["qg"] = 8416,	-- Felix Whindlebolt
 							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
 							-- #endif
+							["qg"] = 8416,	-- Felix Whindlebolt
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 41.8, 63.7, COLDRIDGE_VALLEY },
+								{ 41.9, 63.7, COLDRIDGE_VALLEY },
 								-- #elseif AFTER CATA
 								{ 31.8, 74.4, DUN_MOROGH },
 								-- #else
@@ -88,12 +88,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Felix's Box
 									["providers"] = {
-										{ "i",  10438 },	-- Felix's Box
+										{ "i",  10438 },	-- Felix's Box (QI!)
 										{ "o", 148499 },	-- Felix's Box
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 21.5, 64.5, COLDRIDGE_VALLEY },
+										{ 21.4, 64.0, COLDRIDGE_VALLEY },
 										-- #else
 										{ 20.9, 76.1, DUN_MOROGH },
 										-- #endif
@@ -101,12 +101,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(2, {	-- 0/1 Felix's Chest
 									["providers"] = {
-										{ "i",  16313 },	-- Felix's Chest
+										{ "i",  16313 },	-- Felix's Chest (QI!)
 										{ "o", 178084 },	-- Felix's Chest
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 31.1, 83.8, COLDRIDGE_VALLEY },
+										{ 31.0, 84.1, COLDRIDGE_VALLEY },
 										-- #else
 										{ 22.8, 79.9, DUN_MOROGH },
 										-- #endif
@@ -114,12 +114,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(3, {	-- 0/1 Felix's Bucket of Bolts
 									["providers"] = {
-										{ "i",  16314 },	-- Felix's Bucket of Bolts
+										{ "i",  16314 },	-- Felix's Bucket of Bolts (QI!)
 										{ "o", 178085 },	-- Felix's Bucket of Bolts
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 49.5, 80.5, COLDRIDGE_VALLEY },
+										{ 49.1, 80.4, COLDRIDGE_VALLEY },
 										-- #else
 										{ 26.3, 79.3, DUN_MOROGH },
 										-- #endif
@@ -128,8 +128,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(24490, {	-- A Trip to Ironforge
-							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 218,	-- Ice and Fire
+							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
@@ -141,11 +141,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24471, {	-- Aid for the Wounded
-							["qg"] = 658,	-- Sten Stoutarm
 							["sourceQuest"] = 24469,	-- Hold the Line!
+							["providers"] = {
+								{ "n",   658 },	-- Sten Stoutarm
+								{ "i", 49743 },	-- Sten's First Aid Kit (PQI!)
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 65.5, 41.9, COLDRIDGE_VALLEY },
+								{ 65.6, 42.7, COLDRIDGE_VALLEY },
 								-- #else
 								{ 36.6, 70.2, DUN_MOROGH },
 								-- #endif
@@ -156,14 +159,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/4 Wounded Coldridge Mountaineers Aided
 									["providers"] = {
 										{ "n", 37080 },	-- Wounded Coldridge Mountaineer
-										{ "i", 49743 },	-- Sten's First Aid Kit
 									},
 								}),
 							},
 						}),
 						q(24475, {	-- All the Other Stuff
-							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24474,	-- First Things First: We're Gonna Need Some Beer
+							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -175,11 +177,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Boar Haunch
-									["provider"] = { "i", 49747 },	-- Boar Haunch
+									["provider"] = { "i", 49747 },	-- Boar Haunch (QI!)
 									["cr"] = 708,	-- Small Crag Boar
 								}),
 								objective(2, {	-- 0/4 Ragged Wolf Hide
-									["provider"] = { "i", 49748 },	-- Ragged Wolf Hide
+									["provider"] = { "i", 49748 },	-- Ragged Wolf Hide (QI!)
 									["crs"] = {
 										704,	-- Ragged Timber Wolf
 										705,	-- Ragged Young Wolf
@@ -190,7 +192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(24496, {	-- Arcane Rune
 							["providers"] = {
 								{ "n", 37087 },	-- Jona Ironstock
-								{ "i", 49759 },	-- Arcane Rune
+								{ "i", 49759 },	-- Arcane Rune (PQI!)
 							},
 							["coords"] = {
 								-- #if AFTER MOP
@@ -204,11 +206,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(24526, {	-- Filling Up the Spellbook
-							["qg"] = 37121,	-- Teegli Merrowith <Mage Trainer>
 							["sourceQuest"] = 24496,	-- Arcane Rune
+							["qg"] = 37121,	-- Teegli Merrowith <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.2, 14.8, COLDRIDGE_VALLEY },
+								{ 61.3, 14.5, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.7, 64.8, DUN_MOROGH },
 								-- #endif
@@ -216,18 +218,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MAGE },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/2 Practice Frost Nova [MoP+]
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(1599, {	-- Beginnings
+							["altQuests"] = { 1598 },	-- The Stolen Tome
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coord"] = { 28.6, 66.1, DUN_MOROGH },
-							["altQuests"] = { 1598 },	-- The Stolen Tome
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
 							-- #if BEFORE 3.3.0
 							["groups"] = {
 								objective(1, {	-- 0/3 Feather Charm
-									["provider"] = { "i", 6753 },	-- Feather Charm
+									["provider"] = { "i", 6753 },	-- Feather Charm (QI!)
 									["cr"] = 946,	-- Frostmane Novice
 								}),
 								recipe(688),	-- Summon Imp
@@ -235,46 +245,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(3365, {	-- Bring Back the Mug
+							["sourceQuest"] = 3364,	-- Scalding Mornbrew Delivery
 							["providers"] = {
-								{ "n", 836 },	-- Durnan Furcutter
+								{ "n",   836 },	-- Durnan Furcutter
 								{ "i", 10440 },	-- Nori's Mug
 							},
-							["sourceQuest"] = 3364,	-- Scalding Mornbrew Delivery
 							["coord"] = { 28.8, 66.4, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 4,
 						}),
 						q(233, {	-- Coldridge Valley Mail Delivery (1/2)
-							["providers"] = {
-								{ "n", 658 },	-- Sten Stoutarm
-								{ "i", 2187 },	-- A Stack of Letters
-							},
 							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["providers"] = {
+								{ "n",  658 },	-- Sten Stoutarm
+								{ "i", 2187 },	-- A Stack of Letters (PQI!)
+							},
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(234, {	-- Coldridge Valley Mail Delivery (2/2)
-							["providers"] = {
-								{ "n", 714 },	-- Talin Keeneye
-								{ "i", 2188 },	-- A Letter to Grelin Whitebeard
-							},
 							["sourceQuest"] = 233,	-- Coldridge Valley Mail Delivery (1/2)
+							["providers"] = {
+								{ "n",  714 },	-- Talin Keeneye
+								{ "i", 2188 },	-- A Letter to Grelin Whitebeard (PQI!)
+							},
 							["coord"] = { 22.6, 71.4, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(3107, {	-- Consecrated Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9563 },	-- Consecrated Rune
+								{ "i",  9563 },	-- Consecrated Rune (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -289,10 +299,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 						}),
 						q(24493, {	-- Don't Forget About Us
-							["qg"] = 37087,	-- Jona Ironstock
-							["altQuests"] = { 24492 },	-- Pack Your Bags
-							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
 							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
+							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
+							["altQuests"] = { 24492 },	-- Pack Your Bags
+							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -304,11 +314,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24477, {	-- Dwarven Artifacts
-							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
+							["qg"] = 1104,	-- Grundel Harkin
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.7, 22.0, COLDRIDGE_VALLEY },
+								{ 61.7, 22.1, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, DUN_MOROGH },
 								-- #endif
@@ -318,7 +328,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/5 Forgotten Dwarven Artifact
 									["providers"] = {
-										{ "i", 49749 },	-- Forgotten Dwarven Artifact
+										{ "i",  49749 },	-- Forgotten Dwarven Artifact (QI!)
 										{ "o", 201608 },	-- Forgotten Dwarven Artifact
 									},
 									["coords"] = {
@@ -338,7 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Tough Wolf Meat
-									["provider"] = { "i", 750 },
+									["provider"] = { "i", 750 },	-- Tough Wolf Meat (QI!)
 									["crs"] = {
 										705,	-- Ragged Young Wolf
 										704,	-- Ragged Timber Wolf
@@ -358,29 +368,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31150, {	-- Elegant Rune
 							["providers"] = {
 								{ "n", 37087 },	-- Jona Ironstock
-								{ "i", 85174 },	-- Elegant Rune
+								{ "i", 85174 },	-- Elegant Rune (PQI!)
 							},
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 60.6, 21.1, COLDRIDGE_VALLEY },
-								-- #else
-								{ 35.8, 66.2, DUN_MOROGH },
-								-- #endif
-							},
+							["coord"] = { 60.6, 21.1, COLDRIDGE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { MONK },
 						}),
 						q(3113, {	-- Encrypted Memorandum
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9558 },	-- Encrypted Memorandum
+								{ "i",  9558 },	-- Encrypted Memorandum (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -395,15 +399,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(3109, {	-- Encrypted Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9550 },	-- Encrypted Rune
+								{ "i",  9550 },	-- Encrypted Rune (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -418,15 +422,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(3108, {	-- Etched Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9566 },	-- Etched Rune
+								{ "i",  9566 },	-- Etched Rune (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -440,28 +444,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { HUNTER },
 						}),
+						q(24530, {	-- Oh, A Hunter's Life For Me
+							["sourceQuest"] = 3108,	-- Etched Rune
+							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 63.7, 20.1, COLDRIDGE_VALLEY},
+								-- #else
+								{ 36.2, 65.9, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { HUNTER },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice Steady Shot 
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
 						q(24532, {	-- Evisceratin' the Enemy
-							["qg"] = 916,	-- Solm Hargin
 							["sourceQuest"] = 3109,	-- Encrypted Rune
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 59.5, 20.4, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.3, 67.5, DUN_MOROGH },
+								{ 35.4, 65.9, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { ROGUE },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- 0/3 Practice Eviscerate
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/3 Practice Eviscerate
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(24474, {	-- First Things First: We're Gonna Need Some Beer
-							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuest"] = 24473,	-- Lockdown in Anvilmar
+							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -474,12 +506,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Cask of Stormhammer Stout
 									["providers"] = {
-										{ "i",  49744 },	-- Cask of Stormhammer Stout
+										{ "i",  49744 },	-- Cask of Stormhammer Stout (QI!)
 										{ "o", 201610 },	-- Keg of Stormhammer Stout
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 56.3, 27.4, COLDRIDGE_VALLEY },
+										{ 56.7, 27.8, COLDRIDGE_VALLEY },
 										-- #else
 										{ 34.8, 67.4, DUN_MOROGH },
 										-- #endif
@@ -487,12 +519,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(2, {	-- 0/1 Cask of Theramore Pale Ale
 									["providers"] = {
-										{ "i",  49745 },	-- Cask of Theramore Pale Ale
+										{ "i",  49745 },	-- Cask of Theramore Pale Ale (QI!)
 										{ "o", 201609 },	-- Keg of Theramore Pale Ale
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 40.0, 28.2, COLDRIDGE_VALLEY },
+										{ 39.7, 29.1, COLDRIDGE_VALLEY },
 										-- #else
 										{ 31.5, 67.6, DUN_MOROGH },
 										-- #endif
@@ -500,12 +532,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(3, {	-- 0/1 Cask of Gnomenbrau
 									["providers"] = {
-										{ "i",  49746 },	-- Cask of Gnomenbrau
+										{ "i",  49746 },	-- Cask of Gnomenbrau (QI!)
 										{ "o", 201611 },	-- Keg of Gnomenbrau
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 68.5, 28.2, COLDRIDGE_VALLEY },
+										{ 68.2, 27.9, COLDRIDGE_VALLEY },
 										-- #else
 										{ 37.1, 67.4, DUN_MOROGH },
 										-- #endif
@@ -514,8 +546,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(24491, {	-- Follow that Gyro-Copter!
-							["qg"] = 6782,	-- Hands Springsprocket
 							["sourceQuest"] = 24490,	-- A Trip to Ironforge
+							["qg"] = 6782,	-- Hands Springsprocket
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 87.5, 44.4, COLDRIDGE_VALLEY },
@@ -527,8 +559,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24470, {	-- Give 'em What-For
-							["qg"] = 37081,	-- Joren Ironstock
 							["sourceQuest"] = 24469,	-- Hold the Line!
+							["qg"] = 37081,	-- Joren Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
@@ -557,15 +589,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3114, {	-- Glyphic Memorandum
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9573 },	-- Glyphic Memorandum
+								{ "i",  9573 },	-- Glyphic Memorandum (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -580,15 +612,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(3110, {	-- Hallowed Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9556 },	-- Hallowed Rune
+								{ "i",  9556 },	-- Hallowed Rune (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -633,11 +665,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER CATA
 						q(218, {	-- Ice and Fire
-							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuests"] = {
 								182,	-- The Troll Menace
 								24489,	-- Trolling for Information
 							},
+							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
@@ -667,7 +699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(2, {	-- 0/10 Grik'nir's Servant slain
 									["providers"] = {
-										{ "n", 946 },	-- Frostmane Novice <Grik'nir's Servant>
+										{ "n",   946 },	-- Frostmane Novice <Grik'nir's Servant>
 										{ "n", 37507 },	-- Frostmane Blade <Grik'nir's Servant>
 									},
 								}),
@@ -709,27 +741,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(24473, {	-- Lockdown in Anvilmar
-							["qg"] = 37081,	-- Joren Ironstock
 							["sourceQuests"] = {
 								24471,	-- Aid for the Wounded
 								24470,	-- Give 'em What-For
 							},
+							["qg"] = 37081,	-- Joren Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 67.1, 41.3, COLDRIDGE_VALLEY },
 								-- #else
-								{ 29.8, 71.6, DUN_MOROGH },
+								{ 36.9, 70.0, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(24486, {	-- Make Hay While the Sun Shines
-							["qg"] = 1104,	-- Grundel Harkin
 							["sourceQuest"] = 24477,	-- Dwarven Artifacts
+							["qg"] = 1104,	-- Grundel Harkin
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.7, 22.0, COLDRIDGE_VALLEY },
+								{ 61.7, 22.1, COLDRIDGE_VALLEY },
 								-- #else
 								{ 35.8, 66.2, DUN_MOROGH },
 								-- #endif
@@ -738,7 +770,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/5 Priceless Rockjaw Artifact
-									["provider"] = { "i", 49751 },	-- Priceless Rockjaw Artifact
+									["provider"] = { "i", 49751 },	-- Priceless Rockjaw Artifact (QI!)
 									["cr"] = 37105,	-- Rockjaw Scavenger
 								}),
 								i(57530, {	-- Explorer's Robe
@@ -778,11 +810,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(24492, {	-- Pack Your Bags
-							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
+							["qg"] = 37113,	-- Milo Geartwinge
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 69.8, 43.9, COLDRIDGE_VALLEY },
+								{ 69.8, 44.1, COLDRIDGE_VALLEY },
 								-- #else
 								{ 37.4, 70.6, DUN_MOROGH },
 								-- #endif
@@ -792,13 +824,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Coldridge Beer Flagon
 									["providers"] = {
-										{ "i",  49754 },	-- Coldridge Beer Flagon
+										{ "i",  49754 },	-- Coldridge Beer Flagon (QI!)
 										{ "o", 201706 },	-- Beer Barrel
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.5, 23.8, COLDRIDGE_VALLEY },
-										{ 60.5, 16.5, COLDRIDGE_VALLEY },
+										{ 62.5, 23.4, COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.5, 65.1, DUN_MOROGH },
 										-- #endif
@@ -806,12 +837,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(2, {	-- 0/1 Ragged Wolf-Hide Cloak
 									["providers"] = {
-										{ "i",  49755 },	-- Ragged Wolf-Hide Cloak
+										{ "i",  49755 },	-- Ragged Wolf-Hide Cloak (QI!)
 										{ "o", 201705 },	-- Wolf-Hide Cloaks
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.5, 23.8, COLDRIDGE_VALLEY },
+										{ 62.2, 24.0, COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.8, 64.6, DUN_MOROGH },
 										-- #endif
@@ -819,12 +850,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								objective(3, {	-- 0/1 Leftover Boar Meat
 									["providers"] = {
-										{ "i",  49756 },	-- Leftover Boar Meat
+										{ "i",  49756 },	-- Leftover Boar Meat (QI!)
 										{ "o", 201704 },	-- Leftover Boar Meat
 									},
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 62.5, 23.8, COLDRIDGE_VALLEY },
+										{ 62.1, 23.7, COLDRIDGE_VALLEY },
 										-- #else
 										{ 35.4, 66.0, DUN_MOROGH },
 										-- #endif
@@ -864,7 +895,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(3364, {	-- Scalding Mornbrew Delivery
 							["providers"] = {
 								{ "n", 12738 },	-- Nori Pridedrift
-								{ "i", 10439 },	-- Durnan's Scalding Mornbrew
+								{ "i", 10439 },	-- Durnan's Scalding Mornbrew (PQI!)
 							},
 							["coord"] = { 25, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
@@ -872,37 +903,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 4,
 						}),
 						q(282, {	-- Senir's Observations (1/2)
-							["providers"] = {
-								{ "n", 786 },	-- Grelin Whitebeard
-								{ "i", 2619 },	-- Grelin's Report
-							},
-							["altQuests"] = { 287 },	-- Frostmane Hold
 							["sourceQuest"] = 218,	-- The Stolen Journal
+							["altQuests"] = { 287 },	-- Frostmane Hold
+							["providers"] = {
+								{ "n",  786 },	-- Grelin Whitebeard
+								{ "i", 2619 },	-- Grelin's Report (PQI!)
+							},
 							["coord"] = { 25, 75.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(420, {	-- Senir's Observations (2/2)
+							["sourceQuest"] = 282,	-- Senir's Observations (1/2)
+							["altQuests"] = { 287 },	-- Frostmane Hold
 							["providers"] = {
 								{ "n", 1965 },	-- Mountaineer Thalos
-								{ "i", 2619 },	-- Grelin's Report
+								{ "i", 2619 },	-- Grelin's Report (PQI!)
 							},
-							["altQuests"] = { 287 },	-- Frostmane Hold
-							["sourceQuest"] = 282,	-- Senir's Observations (1/2)
 							["coord"] = { 33.4, 71.8, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(3112, {	-- Simple Memorandum
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9544 },	-- Simple Memorandum
+								{ "i",  9544 },	-- Simple Memorandum (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -917,15 +948,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(3106, {	-- Simple Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 37087 },	-- Jona Ironstock
 								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
+								{ "n",   658 },	-- Sten Stoutarm
 								-- #endif
-								{ "i", 9543 },	-- Simple Rune
+								{ "i",  9543 },	-- Simple Rune (PQI!)
 							},
-							["sourceQuest"] = 179,	-- Dwarven Outfitters
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -939,10 +970,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF },
 							["classes"] = { WARRIOR },
 						}),
+						q(24531, {	-- Getting Battle-Ready
+							["sourceQuest"] = 3106,	-- Simple Rune
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.9, 19.0, COLDRIDGE_VALLEY },
+								-- #else
+								{ 35.8, 65.6, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Practice Charge
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
+						q(24494, {	-- Empowered Rune
+							["sourceQuest"] = 179,	-- Dwarven Outfitters
+							["providers"] = {
+								{ "n", 37087 },	-- Jona Ironstock
+								{ "i", 49758 },	-- Empowered Rune (PQI!)
+							},
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 60.6, 21.1, COLDRIDGE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 35.8, 66.2, DUN_MOROGH },
+								-- #else
+								{ 29.8, 71.2, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { SHAMAN },
+						}),
+						q(24527, {	-- Your Path Begins Here
+							["sourceQuest"] = 24494,	-- Empowered Rune
+							["qg"] = 37115,	-- Teo Hammerstorm <Shaman Trainer>
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.8, 13.6, COLDRIDGE_VALLEY },
+								-- #else
+								{ 35.8, 64.6, DUN_MOROGH },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { DWARF },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/2 Practice Primal Strike 
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77667, {	-- Spell Research
 							["providers"] = {
-								{ "n", 944 },	-- Marryk Nurribit <Mage Trainer>
+								{ "n",    944 },	-- Marryk Nurribit <Mage Trainer>
 								{ "i", 211809 },	-- Comprehension Primer
 							},
 							["coord"] = { 28.6, 66.4, DUN_MOROGH },
@@ -978,7 +1072,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(2160, {	-- Supplies to Tannok
 							["providers"] = {
 								{ "n", 6782 },	-- Hands Springsprocket
-								{ "i", 7646 },	-- Crate of Inn Supplies
+								{ "i", 7646 },	-- Crate of Inn Supplies (PQI!)
 							},
 							["coord"] = { 33.8, 72.2, DUN_MOROGH },
 							["timeline"] = { REMOVED_4_0_3 },
@@ -996,20 +1090,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3115, {	-- Tainted Memorandum
-							["providers"] = {
-								-- #if AFTER CATA
-								{ "n", 37087 },	-- Jona Ironstock
-								-- #else
-								{ "n", 658 },	-- Sten Stoutarm
-								-- #endif
-								{ "i", 9577 },	-- Tainted Memorandum
-							},
 							["sourceQuests"] = {
 								-- #if AFTER CATA
 								24473,	-- Lockdown in Anvilmar
 								-- #else
 								179,	-- Dwarven Outfitters
 								-- #endif
+							},
+							["providers"] = {
+								-- #if AFTER CATA
+								{ "n", 37087 },	-- Jona Ironstock
+								-- #else
+								{ "n",   658 },	-- Sten Stoutarm
+								-- #endif
+								{ "i",  9577 },	-- Tainted Memorandum (PQI!)
 							},
 							["coords"] = {
 								-- #if AFTER MOP
@@ -1031,12 +1125,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(26904, {	-- Harnessing the Flames
-							["qg"] = 43455,				-- Saripal Smolderbrew <Warlock Trainer>
 							["sourceQuest"] = 3115,		-- Tainted Memorandum
-							["coord"] = { 35.7, 65.3, DUN_MOROGH },
+							["qg"] = 43455,				-- Saripal Smolderbrew <Warlock Trainer>
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.2, 17.5, COLDRIDGE_VALLEY},
+								-- #else
+								{ 35.7, 65.3, DUN_MOROGH },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { WARLOCK },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice casting Corruption [MoP+]
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						q(183, {	-- The Boar Hunter
 							["qg"] = 714,	-- Talin Keeneye
@@ -1092,33 +1200,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(24528, {	-- The Power of the Light
-							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
 							["sourceQuest"] = 3107,	-- Consecrated Rune
+							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 61.8, 24.4, COLDRIDGE_VALLEY },
+								{ 61.9, 24.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.8, 68.3, DUN_MOROGH },
+								{ 35.8, 66.7, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PALADIN },
 							["groups"] = {
-								objective(2, {	-- Use Seal of Command and Hit a Training Dummy
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Use Seal of Command and Hit a Training Dummy [MoP+]
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #endif
 							},
 						}),
 						-- #if BEFORE CATA
 						q(218, {	-- The Stolen Journal
-							["qg"] = 786,	-- Grelin Whitebeard
 							["sourceQuest"] = 182,	-- The Troll Cave
+							["qg"] = 786,	-- Grelin Whitebeard
 							["coord"] = { 25, 75.8, DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
-									["provider"] = { "i", 2004 },	-- Grenlin Whitebeard's Journal
+									["provider"] = { "i", 2004 },	-- Grenlin Whitebeard's Journal (QI!)
 									["coord"] = { 30.4, 80.2, DUN_MOROGH },
 									["cr"] = 808,	-- Grik'nir the Cold
 								}),
@@ -1132,10 +1243,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						q(182, {	-- The Troll Cave / The Troll Menace [CATA+]
-							["qg"] = 786,	-- Grelin Whitebeard
 							-- #if AFTER CATA
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
 							-- #endif
+							["qg"] = 786,	-- Grelin Whitebeard
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 42.7, 62.2, COLDRIDGE_VALLEY },
@@ -1222,8 +1333,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(24489, {	-- Trolling for Information
-							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye
+							["qg"] = 1354,	-- Apprentice Soren
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 43.2, 63.1, COLDRIDGE_VALLEY },
@@ -1236,21 +1347,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- Soothsayer Shi'kala Scouted
 									["provider"] = { "n", 37108 },	-- Soothsayer Shi'kala
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 49.1, 81.6, COLDRIDGE_VALLEY },
+										-- #else
+										{ 33.2, 77.8, DUN_MOROGH },
+										-- #endif
+									},
 								}),
 								objective(2, {	-- Soothsayer Rikkari Scouted
 									["provider"] = { "n", 37173 },	-- Soothsayer Rikkari
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 30.2, 85.4, COLDRIDGE_VALLEY },
+										-- #else
+										{ 29.6, 78.6, DUN_MOROGH },
+										-- #endif
+									},
 								}),
 								objective(3, {	-- Soothsayer Mirim'koa Scouted
 									["provider"] = { "n", 37174 },	-- Soothsayer Mirim'koa
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 20.9, 67.4, COLDRIDGE_VALLEY },
+										-- #else
+										{ 27.8, 75.0, DUN_MOROGH },
+										-- #endif
+									},
 								}),
 							},
 						}),
 						q(24487, {	-- Whitebeard Needs Ye
-							["qg"] = 37087,	-- Jona Ironstock
 							["sourceQuests"] = {
 								24475,	-- All the Other Stuff
 								24486,	-- Make Hay While the Sun Shines
 							},
+							["qg"] = 37087,	-- Jona Ironstock
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -1267,16 +1399,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #if AFTER MOP
 								{ 60.7, 14.6, COLDRIDGE_VALLEY },
 								-- #else
-								{ 28.6, 66.4, DUN_MOROGH },
+								{ 35.6, 64.8, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { PRIEST },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- 0/5 Practice Shadow Word: Pain
 									["provider"] = { "n", 44389 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain
+									["provider"] = { "n", 44389 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 					}),
@@ -1375,7 +1513,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(2787, {	-- Trogg Dagger
 							["crs"] = {
-								-- #if AFTER 4.0.3
+								-- #if AFTER CATA
 								37073,	-- Rockjaw Goon
 								37105,	-- Rockjaw Scavenger
 								-- #else
@@ -1414,7 +1552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				},
 			}),
-			-- #if AFTER 4.0.3
+			-- #if AFTER CATA
 			m(NEW_TINKERTOWN, {
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
 				["icon"] = 236445,
@@ -1449,13 +1587,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 43, 59, NEW_TINKERTOWN },
 						}),
 					}),
+					petbattles({
+						n(124617, {	-- Environeer Bert <Leprous Pet Tamer>
+							["coord"] = { 42.9, 74.3, NEW_TINKERTOWN_LOWER },
+							["description"] = "This tamer's pets scale with the level of your pets. (They will be the same level as your highest pet in your party!) Meaning the easiest strategy is actually to bring 3 level 1 Elemental pets with an Elemental attack, spam, and win.",
+							["timeline"] = { ADDED_7_3_0 },
+							["groups"] = {
+								q(47895, {	-- Bert's Bots
+									["timeline"] = { ADDED_7_3_0 },
+									["isDaily"] = true,
+									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
+									["groups"] = {
+										i(151638, {	-- Leprous Sack of Pet Supplies
+											["timeline"] = { ADDED_7_3_0 },
+											["groups"] = {
+												i(151645, {	-- Dibbler (PET!)
+													["timeline"] = { ADDED_7_3_0 },
+												}),
+											},
+										}),
+									},
+								}),
+							},
+						}),
+					}),
 					n(QUESTS, {
 						q(26205, {	-- A Job for the Multi-Bot
-							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							["qg"] = 42553,	-- Engineer Grindspark
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 40.5, 28.0, NEW_TINKERTOWN },
+								{ 40.6, 28.1, NEW_TINKERTOWN },
 								-- #else
 								{ 27.3, 36.4, DUN_MOROGH },
 								-- #endif
@@ -1469,11 +1631,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26566, {	-- A Triumph of Gnomish Ingenuity
-							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26208,	-- The Fight Continues
+							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.7, 32.7, NEW_TINKERTOWN },
+								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
 								{ 26.7, 38.2, DUN_MOROGH },
 								-- #endif
@@ -1482,11 +1644,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26331, {	-- Crushcog's Minions
-							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuest"] = 26329,	-- One More Thing
+							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.7, 32.7, NEW_TINKERTOWN },
+								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
 								{ 26.7, 38.2, DUN_MOROGH },
 								-- #endif
@@ -1503,8 +1665,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26265, {	-- Dealing with the Fallout
-							["qg"] = 42630,	-- Corporal Fizzwhistle
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							["qg"] = 42630,	-- Corporal Fizzwhistle
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 38.2, 40.2, NEW_TINKERTOWN },
@@ -1530,11 +1692,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27635, {	-- Decontamination
-							["qg"] = 46274,	-- Gaffer Coilspring
 							["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
+							["qg"] = 46274,	-- Gaffer Coilspring
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 53.0, 82.3, NEW_TINKERTOWN_LOWER },
+								{ 53.1, 82.2, NEW_TINKERTOWN_LOWER },
 								-- #else
 								{ 21.0, 39.5, DUN_MOROGH },
 								-- #endif
@@ -1548,11 +1710,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26364, {	-- Down with Crushcog!
-							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26342,	-- Paint it Black
+							["providers"] = {
+								{ "n", 42353 },	-- Jarvi Shadowstep
+								{ "i", 58253 },	-- Orbital Targeting Device (PQI!)
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 48.7, 52.8, NEW_TINKERTOWN },
+								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
 								{ 37.4, 44.0, DUN_MOROGH },	-- WoWhead data
 								-- #endif
@@ -1563,11 +1728,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- Razlo Crushcog defeated
 									["providers"] = {
 										{ "n", 42839 },	-- Razlo Crushcog
-										{ "i", 58253 },	-- Orbital Targeting Device
 									},
 								}),
 								i(59052, {	-- Belt of Static Equilibrium
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59051, {	-- Bracers of Angular Momentum
 									["timeline"] = { ADDED_4_0_3 },
@@ -1581,14 +1748,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26318, {	-- Finishin' the Job
-							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuests"] = {
 								26285,	-- Get Me Explosives Back!
 								26284,	-- Missing in Action
 							},
+							["qg"] = 42708,	-- Jessup McCree
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 37.2, 65.1, NEW_TINKERTOWN },
+								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
 								{ 26.1, 50.38, DUN_MOROGH },
 								-- #endif
@@ -1600,7 +1767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "o", 204042 },	-- Detonator
 									["coords"] = {
 										-- #if AFTER MOP
-										{ 36.2, 43.0, 470 },
+										{ 36.1, 40.9, 470 },
 										-- #else
 										{ 22.2, 50.13, DUN_MOROGH },
 										-- #endif
@@ -1618,6 +1785,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59046, {	-- Friction Gloves
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59045, {	-- Acceleration Belt
 									["timeline"] = { ADDED_4_0_3 },
@@ -1631,11 +1801,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26285, {	-- Get Me Explosives Back!
-							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
+							["qg"] = 42708,	-- Jessup McCree
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 37.2, 65.1, NEW_TINKERTOWN },
+								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
 								{ 26.1, 50.38, DUN_MOROGH },
 								-- #endif
@@ -1644,7 +1814,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/7 Stolen Powder Keg
-									["provider"] = { "i", 58202 },	-- Stolen Powder Keg
+									["provider"] = { "i", 58202 },	-- Stolen Powder Keg (QI!)
 									["crs"] = {
 										42221,	-- Rockjaw Bonepicker
 										42222,	-- Rockjaw Marauder
@@ -1653,8 +1823,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26423, {	-- Meet the High Tinker
-							["qg"] = 42366,	-- Kelsey Steelspark
 							["sourceQuest"] = 26206,	-- The Future of Gnomeregan
+							["qg"] = 42366,	-- Kelsey Steelspark <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 38.0, 33.6, NEW_TINKERTOWN },
@@ -1667,16 +1837,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(31137, {	-- Meet the High Tinker
-							["qg"] = 63238,	-- Xi, Friend to the Small
 							["sourceQuest"] = 31135,	-- The Future of Gnomeregan
+							["qg"] = 63238,	-- Xi, Friend to the Small <Monk Trainer>
 							["coord"] = { 40.1, 35.6, NEW_TINKERTOWN },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
 						q(26422, {	-- Meet the High Tinker
-							["qg"] = 42323,	-- "Doc" Cogspin
 							["sourceQuest"] = 26199,	-- The Future of Gnomeregan
+							["qg"] = 42323,	-- "Doc" Cogspin <Priest Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 39.4, 28.4, NEW_TINKERTOWN },
@@ -1689,8 +1859,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 						q(26421, {	-- Meet the High Tinker
-							["qg"] = 42331,	-- Bipsi Frostflinger
 							["sourceQuest"] = 26197,	-- The Future of Gnomeregan
+							["qg"] = 42331,	-- Bipsi Frostflinger <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 41.1, 29.1, NEW_TINKERTOWN },
@@ -1703,11 +1873,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(26425, {	-- Meet the High Tinker
-							["qg"] = 42324,	-- Drill Sergeant Steamcrank <Warrior Trainer>
 							["sourceQuest"] = 26203,	-- The Future of Gnomeregan
+							["qg"] = 42324,	-- Drill Sergeant Steamcrank <Warrior Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 40.6, 36.1, NEW_TINKERTOWN },
+								{ 40.6, 35.5, NEW_TINKERTOWN },
 								-- #else
 								{ 27.3, 39.3, DUN_MOROGH },
 								-- #endif
@@ -1717,11 +1887,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(26424, {	-- Meet the High Tinker
-							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["sourceQuest"] = 26202,	-- The Future of Gnomeregan
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 37.7, 38.0, NEW_TINKERTOWN },
+								{ 37.7, 37.9, NEW_TINKERTOWN },
 								-- #else
 								{ 26.3, 40.1, DUN_MOROGH },
 								-- #endif
@@ -1731,19 +1901,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(41218, {	-- Meet the High Tinker
-							["qg"] = 103614,	-- Muffinus Chromebrew
 							["sourceQuest"] = 41217,	-- The Future of Gnomeregan
+							["qg"] = 103614,	-- Muffinus Chromebrew <Hunter Trainer>
 							["coord"] = { 41.9, 31.6, NEW_TINKERTOWN },
 							["timeline"] = { ADDED_7_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 						}),
 						q(26284, {	-- Missing in Action
-							["qg"] = 42708,	-- Jessup McCree
 							["sourceQuest"] = 26316,	-- What's Keeping jessup?
+							["qg"] = 42708,	-- Jessup McCree
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 37.2, 65.1, NEW_TINKERTOWN },
+								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
 								{ 26.1, 50.4, DUN_MOROGH },
 								-- #endif
@@ -1767,11 +1937,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26333, {	-- No Tanks!
-							["qg"] = 42491,	-- Hinkles Fastblast
 							["sourceQuest"] = 26329,	-- One More Thing
+							["providers"] = {
+								{ "n", 42491 },	-- Hinkles Fastblast
+								{ "i", 58200 },	-- Techno-Grenade (PQI!)
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.1, 33.6, NEW_TINKERTOWN },
+								{ 38.2, 33.7, NEW_TINKERTOWN },
 								-- #else
 								{ 26.5, 38.5, DUN_MOROGH },
 								-- #endif
@@ -1782,11 +1955,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/5 Repaired Mechano-Tanks destroyed
 									["providers"] = {
 										{ "n", 42224 },	-- Repaired Mechano-Tank
-										{ "i", 58200 },	-- Techno-Grenade
 									},
 								}),
 								i(59049, {	-- Inertial Bracers
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59048, {	-- Torque-Applying Gloves
 									["timeline"] = { ADDED_4_0_3 },
@@ -1800,11 +1975,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26373, {	-- On to Kharanos
-							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26364,	-- Down with Crushcog!
+							["qg"] = 42353,	-- Jarvi Shadowstep
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 48.7, 52.8, NEW_TINKERTOWN },
+								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
 								{ 30.4, 45.8, DUN_MOROGH },
 								-- #endif
@@ -1814,14 +1989,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isBreadcrumb"] = true,
 						}),
 						q(26329, {	-- One More Thing
+							["sourceQuest"] = 26318,	-- Finishin' the Job
 							["providers"] = {
 								{ "n", 42708 },	-- Jessup McCree
-								{ "i", 58178 },	-- Jessup's Report
+								{ "i", 58178 },	-- Jessup's Report / Kharmarn's Report [SL+] (PQI!)
 							},
-							["sourceQuest"] = 26318,	-- Finishin' the Job
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 37.2, 65.1, NEW_TINKERTOWN },
+								{ 37.3, 65.2, NEW_TINKERTOWN },
 								-- #else
 								{ 26.1, 50.4, DUN_MOROGH },
 								-- #endif
@@ -1830,11 +2005,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26342, {	-- Paint it Black
-							["qg"] = 42353,	-- Jarvi Shadowstep
 							["sourceQuest"] = 26339,	-- Staging in Brewnall
+							["providers"] = {
+								{ "n", 42353 },	-- Jarvi Shadowstep
+								{ "i", 58203 },	-- Paintinator (PQI!)
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 48.7, 52.8, NEW_TINKERTOWN },
+								{ 48.7, 52.9, NEW_TINKERTOWN },
 								-- #else
 								{ 30.4, 45.8, DUN_MOROGH },
 								-- #endif
@@ -1845,7 +2023,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/5 Crushcog Sentry-Bot blinded
 									["providers"] = {
 										{ "n", 42291 },	-- Crushcog Sentry-Bot
-										{ "i", 58203 },	-- Paintinator
 									},
 								}),
 							},
@@ -1871,11 +2048,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28167, {	-- Report to Carvo Blastbolt
-							["qg"] = 45966,	-- Nevin Twistwrench
 							["sourceQuest"] = 27670,	-- Pinned Down
+							["qg"] = 45966,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 34.0, 32.2, NEW_TINKERTOWN_LOWER },
+								{ 34.1, 32.2, NEW_TINKERTOWN_LOWER },
 								-- #else
 								{ 18.8, 33.7, DUN_MOROGH },
 								-- #endif
@@ -1884,11 +2061,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26222, {	-- Scrounging for Parts
-							["qg"] = 42553,	-- Engineer Grindspark
 							["sourceQuest"] = 26566,	-- A Triumph of Gnomish Ingenuity
+							["qg"] = 42553,	-- Engineer Grindspark
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 40.5, 28.0, NEW_TINKERTOWN },
+								{ 40.6, 28.1, NEW_TINKERTOWN },
 								-- #else
 								{ 27.3, 36.4, DUN_MOROGH },
 								-- #endif
@@ -1898,7 +2075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/7 Spare Part
 									["providers"] = {
-										{ "i",  57764 },	-- Spare Part
+										{ "i",  57764 },	-- Spare Part (QI!)
 										{ "o", 203964 },	-- Spare Part
 										{ "o", 203965 },	-- Spare Part
 										{ "o", 203966 },	-- Spare Part
@@ -1916,11 +2093,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27671, {	-- See to the Survivors
-							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 28167,	-- Report to Carvo Blastbolt
+							["providers"] = {
+								{ "n", 47250 },	-- Carvo Blastbolt
+								{ "i", 62057 },	-- Teleport Beacon (PQI!)
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 50.9, 31.9, NEW_TINKERTOWN_LOWER },
+								{ 50.9, 32.0, NEW_TINKERTOWN_LOWER },
 								-- #else
 								{ 20.7, 33.7, DUN_MOROGH },
 								-- #endif
@@ -1931,20 +2111,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Survivors Rescued
 									["providers"] = {
 										{ "n", 46268 },	-- Survivor
-										{ "i", 62057 },	-- Teleport Beacon
 									},
 								}),
 							},
 						}),
 						q(26339, {	-- Staging in Brewnall
-							["qg"] = 42366,	-- Kelsey Steelspark
 							["sourceQuests"] = {
 								26331,	-- Crushcog's Minions
 								26333,	-- No Tanks!
 							},
+							["qgs"] = {
+								42366,	-- Kelsey Steelspark
+								103614,	-- Muffinus Chromebrew
+							},
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.0, 33.5, NEW_TINKERTOWN },
+								{ 38.0, 33.6, NEW_TINKERTOWN },
 								-- #else
 								{ 26.4, 38.5, DUN_MOROGH },
 								-- #endif
@@ -2091,23 +2273,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(26208, {	-- The Fight Continues
-							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["sourceQuests"] = {
+								26421,	-- Meet the High Tinker (Mage)
+								26422,	-- Meet the High Tinker (Priest)
 								26423,	-- Meet the High Tinker (Rogue)
-								-- #if AFTER 5.0.4
+								26424,	-- Meet the High Tinker (Warlock)
+								26425,	-- Meet the High Tinker (Warrior)
+								-- #if AFTER MOP
 								31137,	-- Meet the High Tinker (Monk)
 								-- #endif
-								26422,	-- Meet the High Tinker (Priest)
-								26421,	-- Meet the High Tinker (Mage)
-								26425,	-- Meet the High Tinker (Warrior)
-								26424,	-- Meet the High Tinker (Warlock)
 								-- #if AFTER 7.0.3
 								41218,	-- Meet the High Tinker (Hunter)
 								-- #endif
 							},
+							["qg"] = 42317,	-- High Tinker Mekkatorque
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.7, 32.7, NEW_TINKERTOWN },
+								{ 38.8, 32.7, NEW_TINKERTOWN },
 								-- #else
 								{ 26.7, 38.2, DUN_MOROGH },
 								-- #endif
@@ -2116,11 +2298,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26197, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2137,11 +2319,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(26199, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2158,11 +2340,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(26202, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2179,11 +2361,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(26203, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2200,11 +2382,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(26206, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2224,25 +2406,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(31135, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
-							["coords"] = {
-								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
-								-- #else
-								{ 26.9, 40.3, DUN_MOROGH },
-								-- #endif
-							},
+							["qg"] = 42396,	-- Nevin Twistwrench
+							["coord"] = { 39.5, 38.4, NEW_TINKERTOWN },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { MONK },
 						}),
 						q(41217, {	-- The Future of Gnomeregan
-							["qg"] = 42396,	-- Nevin Twistwrench
 							["sourceQuest"] = 27674,	-- To the Surface
+							["qg"] = 42396,	-- Nevin Twistwrench
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.4, 38.3, NEW_TINKERTOWN },
+								{ 39.5, 38.4, NEW_TINKERTOWN },
 								-- #else
 								{ 26.9, 40.3, DUN_MOROGH },
 								-- #endif
@@ -2257,28 +2433,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27674, {	-- To the Surface
-							["qg"] = 46255,	-- Technician Braggle
 							["sourceQuest"] = 27635,	-- Decontamination
+							["qg"] = 46255,	-- Technician Braggle
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 66.3, 81.6, NEW_TINKERTOWN_LOWER },
+								{ 66.4, 81.7, NEW_TINKERTOWN_LOWER },
 								-- #else
 								{ 22.6, 39.5, DUN_MOROGH },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { GNOME, MECHAGNOME },
+							["groups"] = {
+								objective(1, {	-- 0/1 Speak to Torben Zapblast
+									["provider"] = { "n", 46293 },	-- Torben Zapblast
+								}),
+							},
 						}),
 						q(26316, {	-- What's Keeping Jessup?
-							["qg"] = 42489,	-- Captain Tread Sparknozzle
 							["sourceQuests"] = {
 								26205,	-- A Job for the Multi-Bot
 								26265,	-- Dealing with the Fallout
 								26264,	-- What's Left Behind
 							},
+							["qg"] = 42489,	-- Captain Tread Sparknozzle
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 38.3, 33.4, NEW_TINKERTOWN },
+								{ 38.4, 33.5, NEW_TINKERTOWN },
 								-- #else
 								{ 26.5, 38.5, DUN_MOROGH },
 								-- #endif
@@ -2287,11 +2468,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 						}),
 						q(26264, {	-- What's Left Behind
-							["qg"] = 42611,	-- Tock Sprysprocket
 							["sourceQuest"] = 26222,	-- Scrounging for Parts
+							["qg"] = 42611,	-- Tock Sprysprocket
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 39.2, 26.5, NEW_TINKERTOWN },
+								{ 39.3, 26.5, NEW_TINKERTOWN },
 								-- #else
 								{ 26.8, 35.9, DUN_MOROGH },
 								-- #endif
@@ -2300,17 +2481,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 							["groups"] = {
 								objective(1, {	-- 0/6 Recovered Possession
-									["provider"] = { "i", 57987 },	-- Recovered Possession
+									["provider"] = { "i", 57987 },	-- Recovered Possession (QI!)
 									["cr"] = 42184,	-- Toxic Sludge
 								}),
 							},
 						}),
 						q(28169, {	-- Withdraw to the Loading Room!
-							["qg"] = 47250,	-- Carvo Blastbolt
 							["sourceQuest"] = 27671,	-- See to the Survivors
+							["qg"] = 47250,	-- Carvo Blastbolt
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 50.9, 31.9, NEW_TINKERTOWN_LOWER },
+								{ 50.9, 32.0, NEW_TINKERTOWN_LOWER },
 								-- #else
 								{ 20.8, 33.7, DUN_MOROGH },
 								-- #endif
@@ -2323,7 +2504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				explorationAch(627),	-- Explore Dun Morogh
+				ach(627),	-- Explore Dun Morogh
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -2373,8 +2554,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(1537),	-- Ironforge
 				exploration(5115),	-- Ironforge Airfield
-				exploration(131),	-- Kharanos
 				-- #endif
+				exploration(131),	-- Kharanos
 				-- #if BEFORE CATA
 				exploration(138),	-- Misty Pine Refuge
 				-- #endif
@@ -2394,7 +2575,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(136),	-- The Grizzled Den
 				exploration(804),	-- The Tundrid Hills
 			}),
-			-- #if AFTER 4.0.3.13277
+			-- #if AFTER CATA
 			n(FLIGHT_PATHS, {
 				fp(620, {	-- Gol'Bolar Quarry, Dun Morogh
 					["cr"] = 43702,	-- Dominic Galebeard <Gryphon Master>
@@ -2404,28 +2585,66 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(619, {	-- Kharanos, Dun Morogh
 					["cr"] = 43701,	-- Brolan Galebeard <Gryphon Master>
-					["coord"] = { 53.8, 52.6, DUN_MOROGH },
+					["coord"] = { 53.8, 52.8, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			-- #endif
-			-- #if AFTER 10.1.7
-			spell(921, {	-- Pickpocketing
-				i(2109, {	-- Frostmane Chain Vest
-					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
-					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel creatures on Azeroth.",
-					--	["cr"] = 41122,	-- Frostmane Snowstrider
-					["coords"] = {
-						{ 49.0, 35.4, DUN_MOROGH },
+			petbattles({
+				q(31551, {	-- Got one! (Grady)
+					["sourceQuest"] = 31822,	-- Level Up!
+					["qg"] = 63075,	-- Grady Bannson
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31548, {	-- Learning the Ropes (Grady)
+					["qg"] = 63075,	-- Grady Bannson
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31822, {	-- Level Up! (Grady)
+					["sourceQuest"] = 31549,	-- On The Mend
+					["qg"] = 63075,	-- Grady Bannson
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31549, {	-- On The Mend (Grady)
+					["sourceQuest"] = 31548,	-- Learning the Ropes
+					["qg"] = 63075,	-- Grady Bannson
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["providers"] = {
+								{ "n",   9980 },	-- Shelby Stoneflint <Stable Master>
+								-- #if AFTER LEGION
+								{ "n", 109178 },	-- Shelby Stoneflint <Stable Master>
+								-- #endif
+							},
+							["coord"] = { 54.0, 51.0, DUN_MOROGH },
+						}),
 					},
 				}),
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					-- #if AFTER 10.1.7
+					i(2109, {	-- Frostmane Chain Vest
+						["timeline"] = { ADDED_10_1_7 },
+						["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other low level creatures on Azeroth.",
+						--	["cr"] = 41122,	-- Frostmane Snowstrider
+						["coords"] = {
+							{ 49.0, 35.4, DUN_MOROGH },
+						},
+					}),
+					-- #endif
+					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
 						["coord"] = { 78.2, 59.8, DUN_MOROGH },
 						["timeline"] = { REMOVED_2_0_1 },
@@ -2480,13 +2699,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							1121,	-- Frostmane Snowstrider
 						},
 					})),
+					-- #endif
 				},
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
-					["qg"] = 1374,	-- Rejold Barleybrew
 					["sourceQuest"] = 318,	-- Evershine
+					["qg"] = 1374,	-- Rejold Barleybrew
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2504,29 +2723,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25882, {	-- A Hand at the Ranch
-					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuests"] = {
 						25840,	-- Eliminate the Resistance
 						25841,	-- Strike From Above
 					},
+					["qg"] = 41298,	-- Slamp Wobblecog
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(5541, {	-- Ammo for Rumbleshot
+					["qg"] = 1694,	-- Loslor Rudge
+					["coord"] = { 50.0, 49.4, DUN_MOROGH },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rumbleshot's Ammo
+							["providers"] = {
+								{ "i",  13850 },	-- Rumbleshot's Ammo (QI!)
+								{ "o", 176785 },	-- Ammo Crate
+							},
+							["coord"] = { 44.13, 56.95, DUN_MOROGH },
+						}),
+						objective(2, {
+							["cr"] = 1243,	-- Hegnar Rumbleshot <Gunsmith>
+							["coord"] = { 40.7, 65.1, DUN_MOROGH },
+						}),
+					},
+				}),
 				q(417, {	-- A Pilot's Revenge
+					["sourceQuest"] = 419,	-- The Lost Pilot
 					["providers"] = {
 						{ "o", 2059 },	-- A Dwarven Corpse
-						{ "i", 3117 },	-- Hildelve's Journal
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
 					},
-					["sourceQuest"] = 419,	-- The Lost Pilot
 					["coord"] = { 79.7, 36.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
-							["provider"] = { "i", 3183 },	-- Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
 							["coord"] = { 78.34, 37.74, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
@@ -2539,18 +2778,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26855, {	-- A Pilot's Revenge
+					["sourceQuest"] = 26854,	-- The Lost Pilot
 					["providers"] = {
 						{ "o", 2059 },	-- A Dwarven Corpse
-						{ "i", 3117 },	-- Hildelve's Journal
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
 					},
-					["sourceQuest"] = 26854,	-- The Lost Pilot
 					["coord"] = { 87.6, 50.2, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
-							["provider"] = { "i", 3183 },	-- Mangy Claw
-							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
+							["coord"] = { 87.4, 49.2, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
 						i(57560, {	-- Mangy Claw Mitts
@@ -2570,49 +2810,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(5541, {	-- Ammo for Rumbleshot
-					["qg"] = 1694,	-- Loslor Rudge
-					["coord"] = { 50.0, 49.4, DUN_MOROGH },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 5,
-					["groups"] = {
-						objective(1, {	-- 0/1 Rumbleshot's Ammo
-							["providers"] = {
-								{ "i",  13850 },	-- Rumbleshot's Ammo
-								{ "o", 176785 },	-- Ammo Crate
-							},
-							["coord"] = { 44.13, 56.95, DUN_MOROGH },
-						}),
-					},
-				}),
 				q(384, {	-- Beer Basted Boar Ribs
 					["qg"] = 1267,	-- Ragnar Thunderbrew
-					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.9, 50.6, DUN_MOROGH },
+						{ 53.9, 50.7, DUN_MOROGH },
 						-- #else
 						{ 46.8, 52.4, DUN_MOROGH },
 						-- #endif
 					},
-					-- #if BEFORE CATA
-					["requireSkill"] = COOKING,
-					-- #endif
 					["cost"] = {
 						{ "i", 2894, 1 },	-- Rhapsody Malt
 						-- #if BEFORE CATA
 						{ "i", 2886, 6 },	-- Crag Boar Rib
 						-- #endif
 					},
+					-- #if BEFORE CATA
+					["requireSkill"] = COOKING,
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/4 Tender Boar Ribs
-							["provider"] = { "i", 60496 },	-- Tender Boar Ribs
+							["provider"] = { "i", 60496 },	-- Tender Boar Ribs (QI!)
 							["cr"] = 1125,	-- Crag Boar
 						}),
+						-- #else
+						objective(1, {	-- 0/6 Crag Boar Rib
+							["provider"] = { "i", 2886 },	-- Tender Boar Ribs
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						-- #endif
+						objective(2, {	-- 0/1 Rhapsody Malt
+							["provider"] = { "i", 2894 },	-- Rhapsody Malt
+							["cr"] = 1247,	-- Crag Boar
+						}),
 						i(2888),	-- Beer Basted Boar Ribs
 						i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 					},
@@ -2620,7 +2861,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(310, {	-- Bitter Rivals
 					["providers"] = {
 						{ "n", 1375 },	-- Marleth Barleybrew
-						{ "i", 2548 },	-- Barrel of Barleybrew Scalder
+						{ "i", 2548 },	-- Barrel of Barleybrew Scalder (PQI!)
 					},
 					["coord"] = { 30.2, 45.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2630,17 +2871,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(308, {	-- Distracting Jarven
 							["qg"] = 1373,	-- Jarven Thunderbrew
 							["coord"] = { 47.6, 52.6, DUN_MOROGH },
-							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["timeline"] = { REMOVED_4_0_3 },
+							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["groups"] = {
 								q(311, {	-- Return to Marleth
-									["providers"] = {
-										{ "o", 270 },	-- Unguarded Thunder Ale Barrel
-										{ "i", 2666 },	-- Barrel of Thunder Ale
-									},
 									["sourceQuest"] = 310,	-- Bitter Rivals
+									["providers"] = {
+										{ "o",  270 },	-- Unguarded Thunder Ale Barrel
+										{ "i", 2666 },	-- Barrel of Thunder Ale (QI!)
+									},
 									["coord"] = { 47.7, 52.7, DUN_MOROGH },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = ALLIANCE_ONLY,
@@ -2658,6 +2899,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7674, {	-- Black Ram Exchange
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2666,27 +2908,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.4, 50.6, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13328, 1 } },	-- Black Ram
-					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 				}),
 				q(26380, {	-- Bound for Kharanos
 					["providers"] = {
 						{ "n", 42933 },	-- Ciara Deepstone
-						{ "i", 58271 },	-- Sample Casks
+						{ "i", 58271 },	-- Sample Casks (PQI!)
 					},
-					["coord"] = { 49.9, 44.9, DUN_MOROGH },
+					["coord"] = { 49.9, 45.0, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25667, {	-- Culling the Wendigos
-					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.2, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2699,11 +2940,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25997, {	-- Dark Iron Scheming
-					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuests"] = {
 						25979,	-- Dealing With the Surge
 						25978,	-- Entombed in Ice
 					},
+					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2712,8 +2953,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 6123 },	-- Dark Iron Spy
 						}),
 						objective(2, {	-- 0/1 Dark Iron Attack Plans
-							["provider"] = { "i", 56264 },	-- Dark Iron Attack Plans
-							["coord"] = { 85.2, 61.0, DUN_MOROGH },
+							["provider"] = { "i", 56264 },	-- Dark Iron Attack Plans (QI!)
+							["coord"] = { 85.2, 60.6, DUN_MOROGH },
 							["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
 						}),
 						i(57575, {	-- Belt of Dark Schemes
@@ -2742,19 +2983,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26112, {	-- Demanding Answers
+					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["providers"] = {
 						{ "n", 41853 },	-- Commander Stonebreaker
-						{ "i", 56823 },	-- Stonebreaker's Report
+						{ "i", 56823 },	-- Stonebreaker's Report (PQI!)
 					},
-					["sourceQuest"] = 26102,	-- Grimaxe's Demise
-					["coord"] = { 78.2, 20.4, DUN_MOROGH },
+					["coord"] = { 78.3, 20.5, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5637, {	-- Desperate Prayer
-					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -2763,6 +3002,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -2778,14 +3019,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(25840, {	-- Eliminate the Resistance
-					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
+					["qg"] = 41298,	-- Slamp Wobblecog
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Battok the Berserker slain
 							["provider"] = { "n", 41284 },	-- Battok the Berserker
+							["coord"] = { 63.8, 55.7, DUN_MOROGH },
 						}),
 						objective(2, {	-- 0/5 Frostmane Warrior slain
 							["provider"] = { "n", 41258 },	-- Frostmane Warrior
@@ -2802,8 +3044,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25978, {	-- Entombed in Ice
-					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
+					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2817,48 +3059,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(318, {	-- Evershine
-					["qg"] = 1378,	-- Pilot Bellowfiz
 					["sourceQuest"] = 317,	-- Stocking Jetsteam
+					["qg"] = 1378,	-- Pilot Bellowfiz
 					["coord"] = { 49.4, 48.4, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 				}),
 				q(26078, {	-- Extinguish the Fires
-					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 25998,	-- Get to the Airfield
-					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["qg"] = 41853,	-- Commander Stonebreaker
+					["providers"] = {
+						{ "n", 41853 },	-- Commander Stonebreaker
+						{ "i", 56803 },	-- Firefighting Gear (PQI!)
+					},
+					["coord"] = { 78.3, 20.5, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Fires extinguished
-							["provider"] = { "i", 56803 },	-- Firefighting Gear
+							["provider"] = { "n", 42046 },	-- Burning Bomber Credit
 						}),
 					},
 				}),
 				-- #if AFTER CATA
 				q(313, {	-- Forced to Watch from Afar [CATA+] / The Grizzled Den
-					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Convey Orders to Mountaineer Dunstan
 							["provider"] = { "n", 40991 },	-- Mountaineer Dunstan
-							["coord"] = { 48.2, 47.0, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.8, 48.5, 29 },	-- The Grizzled Den
+								-- #endif
+								{ 48.2, 47.0, DUN_MOROGH },
+							},
 						}),
 						objective(2, {	-- Convey Orders to Mountaineer Lewin
 							["provider"] = { "n", 40994 },	-- Mountaineer Lewin
-							["coord"] = { 49.2, 47.8, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 60.3, 56.1, 29 },	-- The Grizzled Den
+								-- #endif
+								{ 49.2, 47.8, DUN_MOROGH },
+							},
 						}),
 						objective(3, {	-- Convey Orders to Mountaineer Valgrum
 							["provider"] = { "n", 41056 },	-- Mountaineer Valgrum
-							["coord"] = { 49.2, 44.4, DUN_MOROGH },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.5, 22.2, 29 },	-- The Grizzled Den
+								-- #endif
+								{ 49.2, 44.4, DUN_MOROGH },
+							},
 						}),
 					},
 				}),
 				-- #endif
 				q(7673, {	-- Frost Ram Exchange
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 1261,	-- Veron Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2867,18 +3129,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.4, 50.6, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13329, 1 } },	-- Frost Ram
-					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 				}),
 				q(25724, {	-- Frostmane Aggression
-					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuest"] = 26373,	-- On to Kharanos
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.2, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2892,8 +3153,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(287, {	-- Frostmane Hold
-					["qg"] = 1252,	-- Senir Whitebeard
 					["sourceQuest"] = 420,	-- Senir's Observations (2/2)
+					["qg"] = 1252,	-- Senir Whitebeard
 					["coord"] = { 46.6, 53.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2917,8 +3178,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5625, {	-- Garments of the Light
-					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
 					["sourceQuest"] = 5626,	-- In Favor of the Light
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
 					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -2935,22 +3196,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25998, {	-- Get to the Airfield
-					["qg"] = 41786,	-- Sergeant Bahrum
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
+					["qg"] = 41786,	-- Sergeant Bahrum
 					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
-					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26094,	-- Striking Back
-					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.3, 20.5, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 General Grimaxe slain
 							["provider"] = { "n", 42010 },	-- General Grimaxe
-							["coord"] = { 78.4, 34.6, DUN_MOROGH },
+							["coord"] = { 78.4, 34.9, DUN_MOROGH },
 						}),
 						i(57579, {	-- Airfield Defender's Garb
 							["timeline"] = { ADDED_4_0_3 },
@@ -2973,36 +3234,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25933, {	-- Help for the Quarry
-					["qg"] = 41578,	-- Sergeant Flinterhammer
 					["sourceQuests"] = {
-						314,	-- Protecting the Herd (TODO:: verify if needed)
+						314,	-- Protecting the Herd
 						25905,	-- Rams on the Lam
 					},
+					["qg"] = 41578,	-- Sergeant Flinterhammer
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25838, {	-- Help from Steelgrill's Depot
-					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuests"] = {
 						412,	-- Operation Recombobulation
 						25792,	-- Pushing Forward
 					},
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["qg"] = 40950,	-- Captain Tharran
+					["coord"] = { 53.7, 52.2, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if AFTER 4.0.3
 				q(6387, {	-- Honor Students
 					["providers"] = {
-						{ "n", 1699 },	-- Gremlock Stoneseeker
-						{ "i", 16310 },	-- Gremlock's List
+						{ "n",  1699 },	-- Gremlock Pilsnor
+						{ "i", 16310 },	-- Gremlock's List (PQI!)
 					},
 					["coord"] = { 54.7, 50.5, DUN_MOROGH },
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
 				q(7675, {	-- Icy Blue Mechanostrider Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3011,13 +3273,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.0, 48.0, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13327, 1 } },	-- Icy Blue Mechanostrider Mod A
-					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 				}),
 				q(5626, {	-- In Favor of the Light
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
@@ -3030,12 +3291,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 				}),
 				q(25932, {	-- It's Raid Night Every Night
-					["qg"] = 41578,	-- Sergeant Flinthammer
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
+					["qg"] = 41578,	-- Sergeant Flinthammer
 					["coord"] = { 70.4, 48.9, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Defend Amberstill Ranch
+							["provider"] = { "n", 41603 },	-- Frostmane Raider
+							["coord"] = { 70.4, 49.2, DUN_MOROGH },
+						}),
 						i(57558, {	-- Robes of Endless Raiding
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3051,11 +3316,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(32663, {	-- Learn To Ride
-					["races"] = { GNOME },
 					["description"] = "This quest is available to Gnomes upon reaching level 10.",
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { GNOME },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3063,14 +3326,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(32662, {	-- Learn To Ride
-					["races"] = { DWARF },
 					["description"] = "This quest is available to Dwarves upon reaching level 10.",
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { DWARF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3078,12 +3341,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
-					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet (QS!)
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
+					["races"] = { GNOME },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3091,13 +3357,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { GNOME },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
-					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet (QS!)
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
+					["races"] = { DWARF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3105,11 +3371,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { DWARF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(1679, {	-- Muren Stormpike
-					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>
 					["altQuests"] = {
 						1638,	-- A Warrior's Training
 						1684,	-- Elanaria
@@ -3118,6 +3382,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						9582,	-- Strength of One
 						-- #endif
 					},
+					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>
 					["coord"] = { 47.2, 52.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -3125,11 +3390,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(2239, {	-- Onin's Report
+					["sourceQuest"] = 2238,	-- Simple Subterfugin'
 					["providers"] = {
 						{ "n", 6886 },	-- Onin MacHammer
-						{ "i", 7715 },	-- Onin's Report
+						{ "i", 7715 },	-- Onin's Report (PQI!)
 					},
-					["sourceQuest"] = 2238,	-- Simple Subterfugin'
 					["coord"] = { 25.2, 44.4, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3142,17 +3407,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(412, {	-- Operation Recombobulation
-					["qg"] = 1269,	-- Razzle Sprysprocket
 					-- #if AFTER CATA
 					["sourceQuests"] = {
 						25667,	-- Culling the Wendigos
 						313,	-- Forced to Watch from Afar
-						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
 					},
 					-- #endif
+					["qg"] = 1269,	-- Razzle Sprysprocket
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 53.2, 51.9, DUN_MOROGH },
+						{ 53.3, 51.9, DUN_MOROGH },
 						-- #else
 						{ 45.8, 49.2, DUN_MOROGH },
 						-- #endif
@@ -3162,19 +3426,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/8 Gyromechanic Gear
-							["provider"] = { "i", 3084 },	-- Gyromechanic Gear
+							["provider"] = { "i", 3084 },	-- Gyromechanic Gear (QI!)
 							["cr"] = 41146,	-- Frostmane Scavenger
 						}),
 						-- #else
 						objective(1, {	-- 0/8 Restabilization Cog
-							["provider"] = { "i", 3083 },	-- Restabilization Cog
+							["provider"] = { "i", 3083 },	-- Restabilization Cog (QI!)
 							["crs"] = {
 								8503,	-- Gibblewilt
 								1211,	-- Leper Gnome
 							},
 						}),
 						objective(2, {	-- 0/8 Gyromechanic Gear
-							["provider"] = { "i", 3084 },	-- Gyromechanic Gear
+							["provider"] = { "i", 3084 },	-- Gyromechanic Gear (QI!)
 							["crs"] = {
 								8503,	-- Gibblewilt
 								1211,	-- Leper Gnome
@@ -3199,15 +3463,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25668, {	-- Pilfered Supplies
-					["qg"] = 40951,	-- Quartermaster Glynna
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
-					["coord"] = { 53.7, 52.0, DUN_MOROGH },
+					["qg"] = 40951,	-- Quartermaster Glynna
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Pilfered Supplies
 							["providers"] = {
-								{ "i",  55151 },	-- Pilfered Supplies
+								{ "i",  55151 },	-- Pilfered Supplies (QI!)
+								{ "o", 203129 },	-- Pilfered Supplies
 								{ "o", 203130 },	-- Pilfered Supplies
 							},
 							["coord"] = { 48.9, 46.8, DUN_MOROGH },
@@ -3224,16 +3489,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25937, {	-- Priceless Treasures
-					["qg"] = 50631,	-- Prospector Drugan
-					["coord"] = { 76.1, 53.0, DUN_MOROGH },
+					["providers"] = {
+						{ "n",  50631 },	-- Prospector Drugan
+						{ "i",  56226 },	-- Excavator's Pick (PQI!)
+					},
+					["coord"] = { 76.2, 53.1, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Frozen Artifact
 							["providers"] = {
-								{ "i",  56225 },	-- Frozen Artifact
+								{ "i",  56225 },	-- Frozen Artifact (QI!)
 								{ "o", 203385 },	-- Frozen Artifact
-								{ "i",  56226 },	-- Excavator's Pick
 							},
 							["coord"] = { 76.5, 58.0, DUN_MOROGH },
 						}),
@@ -3255,13 +3522,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(314, {	-- Protecting the Herd
-					["qg"] = 1265,	-- Rudra Amberstill
 					-- #if AFTER CATA
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					-- #endif
+					["qg"] = 1265,	-- Rudra Amberstill
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 70.2, 48.1, DUN_MOROGH },
+						{ 70.3, 48.2, DUN_MOROGH },
 						-- #else
 						{ 63.0, 49.8, DUN_MOROGH },
 						-- #endif
@@ -3270,8 +3537,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(6, 6, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Fang of Vagash
-							["provider"] = { "i", 3627 },	-- Fang of Vagash
-							["coord"] = { 62.65, 46.08, DUN_MOROGH },
+							["provider"] = { "i", 3627 },	-- Fang of Vagash (QI!)
+							["coord"] = { 69.8, 44.5, DUN_MOROGH },
 							["cr"] = 1388,	-- Vagash
 						}),
 						i(10549),	-- Rancher's Trousers
@@ -3288,20 +3555,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25792, {	-- Pushing Forward
-					["qg"] = 40950,	-- Captain Tharran
 					["sourceQuests"] = {
 						25667,	-- Culling the Wendigos
 						313,	-- Forced to Watch from Afar
-						25668,	-- Pilfered Supplies (TODO:: verify if this is needed)
 					},
-					["coord"] = { 53.7, 52.1, DUN_MOROGH },
+					["providers"] = {
+						{ "n", 40950 },	-- Captain Tharran
+						{ "i", 56009 },	-- Rune of Fire (PQI!)
+					},
+					["coord"] = { 53.7, 52.2, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Constriction Totems burned
 							["providers"] = {
 								{ "n", 41202 },	-- Constriction Totems
-								{ "i", 56009 },	-- Rune of Fire
 							},
 						}),
 						i(10547),	-- Camping Knife
@@ -3313,21 +3581,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26085, {	-- Rallying the Defenders
-					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
-					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["qg"] = 41853,	-- Commander Stonebreaker
+					["coord"] = { 78.3, 20.5, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Ironforge Banners planted
-							["provider"] = { "i", 56809 },	-- Ironforge Banner
+							["provider"] = { "i", 56809 },	-- Ironforge Banner (PQI!)
 						}),
 					},
 				}),
 				q(25905, {	-- Rams on the Lam
-					["qg"] = 1261,	-- Veron Amberstill
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
-					["coord"] = { 70.6, 48.9, DUN_MOROGH },
+					["qg"] = 1261,	-- Veron Amberstill
+					["coord"] = { 70.7, 48.9, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3337,17 +3605,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(415, {	-- Rejold's New Brew
+					-- #if BEFORE 4.0.3
+					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+					-- #endif
 					["qgs"] = {
 						1378,	-- Pilot Bellowfiz
 						1872,	-- Tharek Blackstone
 					},
 					["coords"] = {
 						{ 49.4, 48.4, DUN_MOROGH },
-						{ 46, 51.6, DUN_MOROGH },
+						{ 46.0, 51.6, DUN_MOROGH },
 					},
-					-- #if BEFORE 4.0.3
-					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3357,11 +3625,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(320, {	-- Return to Bellowfiz
+					["sourceQuest"] = 319,	-- A Favor for Evershine
 					["providers"] = {
 						{ "n", 1374 },	-- Rejold Barleybrew
-						{ "i", 2696 },	-- Cask of Evershine
+						{ "i", 2696 },	-- Cask of Evershine (PQI!)
 					},
-					["sourceQuest"] = 319,	-- A Favor for Evershine
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3374,8 +3642,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5630, {	-- Returning Home [Dun Morogh]
-					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5628,	-- Returning Home [Elwynn Forest]
@@ -3384,6 +3650,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -3398,23 +3666,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #endif
-				-- #if AFTER 4.0.3
+				-- #if AFTER CATA
 				q(6391, {	-- Ride to Ironforge
+					["sourceQuest"] = 6387,	-- Honor Students
 					["providers"] = {
 						{ "n", 43701 },	-- Brolan Galebeard
-						{ "i", 16310 },	-- Gremlock's List
+						{ "i", 16310 },	-- Gremlock's List (PQI!)
 					},
-					["sourceQuest"] = 6387,	-- Honor Students
-					["coord"] = { 53.8, 52.6, DUN_MOROGH },
+					["coord"] = { 53.8, 52.8, DUN_MOROGH },
 					["races"] = { DARKIRON, DWARF, GNOME },
 				}),
 				-- #endif
 				q(2218, {	-- Road to Salvation
-					["qg"] = 1234,	-- Hogral Bakkan
 					["altQuests"] = {
 						2205,	-- Seek out SI: 7
 						2241,	-- The Apple Falls
 					},
+					["qg"] = 1234,	-- Hogral Bakkan
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3422,12 +3690,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(466, {	-- Search for Incendicite
-					["qg"] = 1377,	-- Pilot Stonegear
 					["sourceQuest"] = 467,	-- Stonegear's Search
+					["qg"] = 1377,	-- Pilot Stonegear
 					["coord"] = { 49.6, 48.4, DUN_MOROGH },
-					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
+					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -3437,13 +3705,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(413, {	-- Shimmer Stout
-					["providers"] = {
-						{ "n", 1374 },	-- Rejold Barleybrew
-						{ "i", 3085 },	-- Barrel of Shimmer Stout
-					},
 					["sourceQuests"] = {
 						415,	-- Rejold's New Brew
 						315,	-- The Perfect Stout
+					},
+					["providers"] = {
+						{ "n", 1374 },	-- Rejold Barleybrew
+						{ "i", 3085 },	-- Barrel of Shimmer Stout (PQI!)
 					},
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3451,8 +3719,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 8,
 				}),
 				q(1879, {	-- Speak with Bink
-					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
 					["altQuests"] = { 1860 },	-- Speak with Jennea
+					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
 					["coord"] = { 47.4, 52, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3463,13 +3731,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(317, {	-- Stocking Jetsteam
 					["qg"] = 1378,	-- Pilot Bellowfiz
 					["coord"] = { 49.4, 48.4, DUN_MOROGH },
-					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
+						objective(1, {	-- 0/4 Chunk of Boar Meat
+							["provider"] = { "i", 769 },	-- Chunk of Boar Meat
+							["crs"] = {
+								1125,	-- Crag Boar
+								1126,	-- Large Crag Boar
+								1127,	-- Elder Crag Boar
+								1689,	-- Scarred Crag Boar
+								-- #if SEASON_OF_DISCOVERY
+								208638,	-- Fyodi
+								-- #endif
+							},
+						}),
 						objective(2, {	-- 0/2 Thick Bear Fur
-							["provider"] = { "i", 6952 },	-- Thick Bear Fur
+							["provider"] = { "i", 6952 },	-- Thick Bear Fur (QI!)
 							["crs"] = {
 								1128,	-- Young Black Bear
 								1196,	-- Ice Claw Bear
@@ -3492,19 +3772,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(414, {	-- Stout to Kadrell
+					["sourceQuest"] = 413,	-- Shimmer Stout
 					["providers"] = {
 						{ "n", 1959 },	-- Mountaineer Barleybrew
-						{ "i", 3086 },	-- Cask of Shimmer Stout
+						{ "i", 3086 },	-- Cask of Shimmer Stout (PQI!)
 					},
-					["sourceQuest"] = 413,	-- Shimmer Stout
 					["coord"] = { 86.2, 48.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 				}),
 				q(25841, {	-- Strike From Above
-					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
+					["providers"] = {
+						{ "n", 41298 },	-- Slamp Wobblecog
+						{ "i", 56048 },	-- Signal Flare (PQI!)
+					},
 					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3512,23 +3795,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Attack on Northern Frostmane Retreat
 							["providers"] = {
 								{ "n", 41372 },	-- Frostmane Retreat North
-								{ "i", 56048 },	-- Signal Flare
 							},
 							["coord"] = { 64, 54, DUN_MOROGH },
 						}),
 						objective(2, {	-- Attack on Southern Frostmane Retreat
 							["providers"] = {
 								{ "n", 41373 },	-- Frostmane Retreat South
-								{ "i", 56048 },	-- Signal Flare
 							},
 							["coord"] = { 63, 57, DUN_MOROGH },
 						}),
 					},
 				}),
 				q(26094, {	-- Striking Back
-					["qg"] = 41853,	-- Commander Stonebreaker
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
-					["coord"] = { 78.2, 20.5, DUN_MOROGH },
+					["providers"] = {
+						{ "n", 41853 },	-- Commander Stonebreaker
+						{ "i", 56814 },	-- Iron Hammer Bomb (PQI!)
+					},
+					["coord"] = { 78.3, 20.5, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3538,17 +3822,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 41924 },	-- Dark Iron Invader
 								{ "n", 42012 },	-- Dark Iron Invader
 								{ "n", 41902 },	-- Dark Iron Pyromancer
-								{ "i", 56814 },	-- Iron Hammer Bomb
+								{ "n", 42092 },	-- Repaired Bomber
 							},
 						}),
 					},
 				}),
 				q(6064, {	-- Taming the Beast (1/3)
-					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuests"] = {
 						6074,	-- The Hunter's Path [Ironforge]
 						6075,	-- The Hunter's Path [Dun Morogh]
 						6076,	-- The Hunter's Path [Stormwind City]
+					},
+					["providers"] = {
+						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
+						{ "i", 15911 },	-- Taming Rod (PQI!)
 					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3559,14 +3846,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Tame a Large Crag Boar
 							["providers"] = {
 								{ "n", 1126 },	-- Large Crag Boar
-								{ "i", 15911 },	-- Taming Rod
 							},
 						}),
 					},
 				}),
 				q(6084, {	-- Taming the Beast (2/3)
-					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6064,	-- Taming the Beast (1/3)
+					["providers"] = {
+						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
+						{ "i", 15913 },	-- Taming Rod (PQI!)
+					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -3576,14 +3865,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Tame a Snow Leopard
 							["providers"] = {
 								{ "n", 1201 },	-- Snow Leopard
-								{ "i", 15913 },	-- Taming Rod
 							},
 						}),
 					},
 				}),
 				q(6085, {	-- Taming the Beast (3/3)
-					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6084,	-- Taming the Beast (2/3)
+					["providers"] = {
+						{ "n",  1231 },	-- Grif Wildheart <Hunter Trainer>
+						{ "i", 15908 },	-- Taming Rod (PQI!)
+					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -3593,7 +3884,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Tame a Ice Claw Bear
 							["providers"] = {
 								{ "n", 1196 },	-- Ice Claw Bear
-								{ "i", 15908 },	-- Taming Rod
 							},
 						}),
 					},
@@ -3601,12 +3891,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				q(313, {	-- The Grizzled Den / Forced to Watch from Afar [CATA+]
 					["qg"] = 1377,	-- Pilot Stonegear
-					["coord"] = { 49.6, 48.4, DUN_MOROGH },
+					["coord"] = { 49.6, 48.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 					["groups"] = {
 						objective(1, {	-- 0/8 Wendigo Mane
-							["provider"] = { "i", 2671 },	-- Wendigo Mane
+							["provider"] = { "i", 2671 },	-- Wendigo Mane (QI!)
 							["crs"] = {
 								1134,	-- Young Wendigo
 								1137,	-- Edan the Howler
@@ -3656,11 +3946,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(26854, {	-- The Lost Pilot
+					["sourceQuests"] = {
+						26131,	-- Reinforcements for Loch Modan
+						28567,	-- Hero's Call: Loch Modan!
+					},
+					["qg"] = 1960,	-- Pilot Hammerfoot
+					["coord"] = { 14.0, 56.5, LOCH_MODAN },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(58970, {	-- Mori's Cloak
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(58971, {	-- Mori's Compass
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(58972, {	-- Mori's Gear Stick
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(156933, {	-- Mori's Pocketknife
+							["timeline"] = { ADDED_7_3_5 },
+						}),
+					},
+				}),
 				q(315, {	-- The Perfect Stout
 					["qg"] = 1374,	-- Rejold Barleybrew
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 54.1, 51.1, DUN_MOROGH },
+						{ 54.2, 51.2, DUN_MOROGH },
 						-- #else
 						{ 30.2, 45.8, DUN_MOROGH },
 						-- #endif
@@ -3670,8 +3984,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Shimmerweed (7 after CATA)
 							["providers"] = {
-								{ "i", 2676 },	-- Shimmerweed
-								{ "o", 276 },	-- Shimmerweed Basket
+								{ "i", 2676 },	-- Shimmerweed (QI!)
+								{ "o",  276 },	-- Shimmerweed Basket
 							},
 							["cr"] = 1397,	-- Frostmane Seer
 						}),
@@ -3691,9 +4005,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(433, {	-- The Public Servant
-					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
-					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
-					["qg"] = 1977,	-- Senator Mehr Stonehallow
+					-- #if ANYCLASSIC
+					["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
+					-- #endif
+					["providers"] = {
+						{ "n", 1977 },	-- Senator Mehr Stonehallow
+						-- #if AFTER CATA
+						{ "i", 56222 },	-- Runes of Return (PQI!)
+						-- #endif
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 75.9, 54.3, DUN_MOROGH },
@@ -3704,15 +4024,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["lvl"] = 6,
-					-- #if ANYCLASSIC
-					["description"] = "The quest 'A Public Servant' get flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
-					-- #endif
+					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/7 Trapped Miner
 							["providers"] = {
 								{ "n", 41671 },	-- Trapped Miner
-								{ "i", 56222 },	-- Runes of Return
 							},
 						}),
 						-- #else
@@ -3738,24 +4056,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						n(1977, {	-- Senator Mehr Stonehallow
 						-- #if AFTER 9.1.5
 						-- Danny Donkey: This have probably applied for all iterations of WoW, but oldest reports are from 9.1.5 and first iterations of Classic.
-						["description"] = "The quest 'A Public Servant' get flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
+						["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 						-- #endif
 						}),
 					},
 				}),
 				q(291, {	-- The Reports
+					["sourceQuest"] = 287,	-- Frostmane Hold
 					["providers"] = {
 						{ "n", 1252 },	-- Senir Whitebeard
-						{ "i", 2628 },	-- Senir's Report
+						{ "i", 2628 },	-- Senir's Report (PQI!)
 					},
-					["sourceQuest"] = 287,	-- Frostmane Hold
 					["coord"] = { 46.6, 53.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1653, {	-- The Test of Righteousness (1/3)
-					["qg"] = 6171,	-- Duthorian Rall
 					["sourceQuest"] = 1652,	-- The Tome of Valor (4/4)
+					["qg"] = 6171,	-- Duthorian Rall
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3763,11 +4081,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(1654, {	-- The Test of Righteousness (2/3)
+					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["providers"] = {
 						{ "n", 6181 },	-- Jordan Stilwell
-						{ "i", 6996 },	-- Jordan's Weapon Notes
+						{ "i", 6996 },	-- Jordan's Weapon Notes (PQI!)
 					},
-					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKFATHOM_DEEPS, DARKSHORE, DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP },
@@ -3776,12 +4094,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Whitestone Oak Lumber
-							["provider"] = { "i", 6994 },	-- Whitestone Oak Lumber
+							["provider"] = { "i", 6994 },	-- Whitestone Oak Lumber (QI!)
 							["cr"] = 641,	-- Goblin Woodcarver
 						}),
 						objective(3, {	-- 0/1 Jordan's Smithing Hammer
 							["providers"] = {
-								{ "i", 6895 },	-- Jordan's Smithing Hammer
+								{ "i",  6895 },	-- Jordan's Smithing Hammer (QI!)
 								{ "o", 91138 },	-- Jordan's Hammer
 							},
 						}),
@@ -3796,7 +4114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Jordan's Ore Shipment
 									["providers"] = {
-										{ "i", 6992 },	-- Jordan's Ore Shipment
+										{ "i",  6992 },	-- Jordan's Ore Shipment
 										{ "o", 92420 },	-- Bailor's Ore
 									},
 									["coord"] = { 71.6, 21.4, LOCH_MODAN },
@@ -3808,8 +4126,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(1442, {	-- Seeking the Kor Gem
-							["qg"] = 3649,	-- Thundris Windweaver
 							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
+							["qg"] = 3649,	-- Thundris Windweaver
 							["coord"] = { 37.4, 40.2, DARKSHORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -3837,8 +4155,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1806, {	-- The Test of Righteousness (3/3)
-					["qg"] = 6181,	-- Jordan Stilwell
 					["sourceQuest"] = 1654,	-- The Test of Righteousness (2/3)
+					["qg"] = 6181,	-- Jordan Stilwell
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3851,8 +4169,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(25839, {	-- The Ultrasafe Personnel Launcher
-					["qg"] = 41363,	-- Delber Cranktoggle
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
+					["qg"] = 41363,	-- Delber Cranktoggle
 					["coord"] = { 56.8, 47.1, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3864,8 +4182,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28868, {	-- The View from Down Here
-					["qg"] = 50601,	-- Snevik the Blade
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
+					["providers"] = {
+						{ "n", 50601 },	-- Snevik the Blade
+						{ "i", 67249 },	-- Viewpoint Equalizer (PQI!)
+					},
 					["coord"] = { 62.5, 53.8, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3873,7 +4194,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/5 Frostmane Builder shrunk
 							["providers"] = {
 								{ "n", 41251 },	-- Frostmane Builder
-								{ "i", 67249 },	-- Viewpoint Equalizer
 							},
 						}),
 					},
@@ -3882,7 +4202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1254,	-- Foreman Stonebrow
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 76.3, 54.6, DUN_MOROGH },
+						{ 76.3, 54.7, DUN_MOROGH },
 						-- #else
 						{ 69, 56.2, DUN_MOROGH },
 						-- #endif
@@ -3905,8 +4225,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2299, {	-- To Hulfdan!
-					["qg"] = 1234,	-- Hogral Bakkan
 					["sourceQuest"] = 2218,	-- Road to Salvation
+					["qg"] = 1234,	-- Hogral Bakkan
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3917,7 +4237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(400, {	-- Tools for Steelgrill
 					["providers"] = {
 						{ "n", 1872 },	-- Tharek Blackstone
-						{ "i", 2999 },	-- Steelgrill's Tools
+						{ "i", 2999 },	-- Steelgrill's Tools (PQI!)
 					},
 					["coord"] = { 46, 51.6, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3925,8 +4245,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 2,
 				}),
 				q(6086, {	-- Training the Beast
-					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6085,	-- Taming the Beast (3/3)
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -3941,13 +4261,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(25986, {	-- Trouble at the Lake
-					["qg"] = 1977,	-- Senator Mehr Stonehallow
 					["sourceQuests"] = {
 						25937,	-- Priceless Treasures
 						433,	-- The Public Servant
 						432,	-- Those Blasted Troggs!
 					},
-					["coord"] = { 75.8, 54.2, DUN_MOROGH },
+					["qg"] = 1977,	-- Senator Mehr Stonehallow
+					["coord"] = { 75.9, 54.3, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3961,8 +4281,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 MacGrann's Dried Meats
 							["providers"] = {
-								{ "i", 2667 },	-- MacGrann's Dried Meats
-								{ "o", 272 },	-- MacGrann's Meat Locker
+								{ "i", 2667 },	-- MacGrann's Dried Meats (QI!)
+								{ "o",  272 },	-- MacGrann's Meat Locker
 							},
 							["coord"] = { 38.5, 53.93, DUN_MOROGH },
 						}),
@@ -3975,6 +4295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7676, {	-- White Mechanostrider Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 7955,	-- Milli Featherwhistle
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3983,13 +4304,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.0, 48.0, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13326, 1 } },	-- White Mechanostrider Mod A
-					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 				}),
 			}),
 			n(RARES, {
@@ -4016,7 +4336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1137, {	-- Edan the Howler
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 32.3, 52.26, 29 },	-- Grizzled Den
+						{ 32.3, 52.26, 29 },	-- The Grizzled Den
 						-- #elseif AFTER CATA
 						{ 46.4, 47.6, DUN_MOROGH },
 						-- #else
@@ -4025,7 +4345,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.2, 46.4, DUN_MOROGH },
 						-- #endif
 					},
-					["description"] = "Located in the Grizzled Den.",
+					["description"] = "Located in The Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -4080,7 +4400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8503, {	-- Gibblewilt
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 40.8, 45.2, NEW_TINKERTOWN },
+						{ 40.3, 45.4, NEW_TINKERTOWN },
 						-- #else
 						{ 27.2, 36.6, DUN_MOROGH },
 						{ 25.0, 44.6, DUN_MOROGH },
@@ -4099,7 +4419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 29.8, 67.8, NEW_TINKERTOWN },
-						{ 49.07, 37.12, DUN_MOROGH },
+						{ 49.1, 37.1, DUN_MOROGH },
 						-- #else
 						{ 23.8, 53.4, DUN_MOROGH },
 						{ 22.0, 51.0, DUN_MOROGH },
@@ -4153,11 +4473,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(1271, {	-- Old Icebeard
 					-- #if AFTER 10.1.7
-					["description"] = "Located in the Grizzled Den.",
+					["description"] = "Located in The Grizzled Den.",
 					-- #endif
 					["coords"] = {
 						-- #if AFTER 10.1.7
-						{ 31.4, 27.2, 29 },	-- Grizzled Den
+						{ 31.4, 27.2, 29 },	-- The Grizzled Den
 						-- #else
 						{ 38.4, 54.0, DUN_MOROGH },
 						-- #endif
@@ -4350,6 +4670,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			-- #if AFTER CATA
+			n(TREASURES, {
+				o(207496, {	-- Dark Iron Treasure Chest
+					["coords"] = {
+						{ 46.5, 45.8, DUN_MOROGH },
+						{ 50.6, 47.7, DUN_MOROGH },
+						{ 85.1, 60.6, DUN_MOROGH },
+					},
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208886, {	-- Blackrat
@@ -4517,21 +4849,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if ANYCLASSIC
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 46.6, 59.8, DUN_MOROGH },
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
+				-- #endif
+				i(2886, {	-- Crag Boar Rib
+					["coords"] = {
+						{ 46.6, 59.8, DUN_MOROGH },
+					},
 					["crs"] = {
+						1125,	-- Crag Boar
 						1689,	-- Scarred Crag Boar
+						-- #if BEFORE 4.0.3
 						1127,	-- Elder Crag Boar
 						1126,	-- Large Crag Boar
-						1125,	-- Crag Boar
-						-- #if SEASON_OF_DISCOVERY
-						208638,	-- Fyodi
 						-- #endif
 					},
+					["description"] = "Only drops from Crag Boars in Dun Morogh."
 				}),
-				-- #endif
-				i(2886),	-- Crag Boar Rib
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
 					["timeline"] = { REMOVED_2_0_1 },
@@ -4636,7 +4970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-					["description"] = "This can also drop from any of the rare creatures in the zone.",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 78.6, 62.0, DUN_MOROGH },
 					["classes"] = { PRIEST },
 					["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>

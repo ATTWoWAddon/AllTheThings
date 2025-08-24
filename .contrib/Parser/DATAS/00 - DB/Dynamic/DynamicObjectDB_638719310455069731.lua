@@ -1,17 +1,19 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[452923] = {
 		readable = "Chillburst Canister",
 		model = 243384,
 		text = {
 			en = "Chillburst Canister",
-			es = "Chillburst Canister",
-			de = "Chillburst Canister",
-			fr = "Chillburst Canister",
-			it = "Chillburst Canister",
-			pt = "Chillburst Canister",
-			ru = "Chillburst Canister",
-			ko = "Chillburst Canister",
-			cn = "Chillburst Canister",
+			de = "Frostknallkanister",
+			es = "Bote de refrigerante",
+			fr = "Cartouche d’explogivre",
+			it = "Recipiente di Scoppiogelo",
+			mx = "Lata de gelibum",
+			pt = "Lata de Bomba Gelada",
+			ru = "Ледяная канистра",
+			ko = "냉각폭발 용기",
+			cn = "冰爆容器",
+			tw = "凍爆罐",
 		},
 	},
 })

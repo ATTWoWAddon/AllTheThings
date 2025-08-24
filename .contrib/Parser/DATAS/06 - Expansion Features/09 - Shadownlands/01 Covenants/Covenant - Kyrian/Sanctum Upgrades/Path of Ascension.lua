@@ -153,10 +153,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641395,
-			["g"] = {
+			["groups"] = {
 				n(PATH_OF_ASCENSION, {
 					["maps"] = { 1711 },	-- Path of Ascension Coliseum
-					["g"] = {
+					["groups"] = {
 						currency(MEDALLION_OF_SERVICE, {
 							["description"] = "This is granted from all types of activities in the Shadowlands.",
 						}),
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						prof(ASCENSION_CRAFTING, {
 							["description"] = "Blueprints teach Dactylis recipes that allow you to craft gear for your Aspirants to use in the Path of Ascension battles.",
 							["crs"] = { 168430 },	-- Dactylis
-							["g"] = {
+							["groups"] = {
 								n(QUESTS, {
 									q(62976, {	-- Artisan Tool Belt
 										["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
@@ -229,7 +229,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 60496 },	-- Into the Coliseum
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(180464),	-- Blueprint: Herald's Footpads
 										},
 									}),
@@ -584,13 +584,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_ONE, {
 							["icon"] = 3536186,
-							["g"] = {
+							["groups"] = {
 								n(QUESTS, {
 									q(62218, {	-- A Fountain for Fae
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181275),	-- Fountain of Rejuvenation (QI!)
 										},
 									}),
@@ -598,7 +598,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181782),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -615,8 +615,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
 									}),
 									q(62223, {	-- Ascension Calling: Mikanikos
-										["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
 										["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
+										["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
 									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
@@ -624,11 +624,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61362, {	-- Caretaker of Faeries
-										-- Rewards spell 340388 (Trial: Nuuminuuru)
 										["sourceQuests"] = { 62219 },	-- Fanciful Distractions
 										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
-										["g"] = {
+										-- Rewards spell 340388 (Trial: Nuuminuuru)
+										["groups"] = {
 											i(182969),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -649,22 +649,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181273, 1 },	-- 1xAnointment Oil
 										},
-
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
 										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
-										["g"] = {
+										["groups"] = {
 											i(182974),	-- Riverblossom's Flute (QI!)
 										},
 									}),
 									q(61357, {	-- Hatred Abated
-										-- Rewards spell 337133 "Trial: Echthra"
 										["sourceQuests"] = { 61490 },	-- War of Information
 										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, MALDRAXXUS },
-										["g"] = {
+										-- Rewards spell 337133 "Trial: Echthra"
+										["groups"] = {
 											i(181701),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -677,16 +676,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 60495 },	-- A Suitable Opponent
 										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(180481),	-- Curious Blueprint (QI!)
 										},
 									}),
 									q(61370, {	-- No Other Way
-										-- Rewards spell 340105 (Trial: Craven Corinth)
 										["sourceQuests"] = { 61369 },	-- Craven Corinth
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										-- Rewards spell 340105 (Trial: Craven Corinth)
+										["groups"] = {
 											i(182479),	-- Ashfallen Key (QI!)
 											i(182623),	-- Soul Mirror (QI!)
 										},
@@ -704,7 +703,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181706),	-- Anointment Oil (QI!)
 										},
 									}),
@@ -733,20 +732,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(61366, {	-- Tactical Operation
-										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
 										["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
+										["groups"] = {
 											i(182467),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(61360, {	-- The Hunt's Gratitude
-										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
 										["sourceQuests"] = { 61965 },	-- Piercing the Shell
 										["provider"] = { "n", 173403 },	-- Myn'ir
 										["coord"] = { 51.7, 78.8, ARDENWEALD },
-										["g"] = {
+										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
+										["groups"] = {
 											i(182580),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -763,7 +762,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											BASTION,
 											REVENDRETH
 										},
-										["g"] = {
+										["groups"] = {
 											i(181683),	-- Anointed Talisman (QI!)
 											i(181699),	-- Echthra's Notes (QI!)
 										},
@@ -781,13 +780,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								n(REWARDS, {
 									n(172408, {	-- Alderyn [& Myn'ir]
 										["crs"] = { 172409 },	-- Myn'ir
-										["g"] = {
+										["groups"] = {
 											n(COURAGE, {
 												i(182162),	-- Blueprint: Charm of Quickness
 											}),
 											n(LOYALTY, {
 												["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
-												["g"] = {
+												["groups"] = {
 													crit(51079, {	-- Defeat Alderyn and Myn'ir in a Trial of Loyalty as Mikanikos
 														["achievementID"] = 14852,	-- The Hoot of the Issue
 													}),
@@ -811,7 +810,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
-											["g"] = {
+											["groups"] = {
 												crit(48623, ach(14502)),	-- Pursuing Loyalty - Echthra
 												i(184445),	-- Blueprint: Medallion of Service
 											},
@@ -826,7 +825,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
-											["g"] = {
+											["groups"] = {
 												crit(48622, ach(14502)),	-- Pursuing Loyalty - Kalisthene
 												i(180495),	-- Blueprint: Phial of Serenity
 											},
@@ -838,7 +837,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
-											["g"] = {
+											["groups"] = {
 												crit(48625, ach(14502)),	-- Pursuing Loyalty - Nuuminuuru
 												BRIGHTSCALE_HATCHLING,	-- (PET!)
 											},
@@ -854,7 +853,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_TWO, {
 							["icon"] = 3196822,
-							["g"] = {
+							["groups"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
 										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
@@ -869,7 +868,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181795),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -877,7 +876,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61478 },	-- Humble Beginnings
 										["provider"] = { "n", 175295 },	-- Forgelite Sophone
 										["coord"] = { 51.6, 80.9, BASTION },
-										["g"] = {
+										["groups"] = {
 											i(181472),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -890,7 +889,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61363 },	-- Mad Mortimer
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181470),	-- Catalyst of Creation (QI!)
 										},
 									}),
@@ -898,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 62053 },	-- Necromantic Power
 										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["coord"] = { 59.7, 38.0, MALDRAXXUS },
-										["g"] = {
+										["groups"] = {
 											i(182965),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -906,7 +905,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61371 },	-- Athanos
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["g"] = {
+										["groups"] = {
 											i(181471),	-- Humility's Guard (QI!)
 										},
 									}),
@@ -928,7 +927,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61436 },	-- Field Trip
 										["provider"] = { "n", 172141 },	-- Mad Mortimer
 										["coord"] = { 59.2, 71.9, MALDRAXXUS },
-										["g"] = {
+										["groups"] = {
 											i(181460),	-- Soul Mirror (QI!)
 										},
 									}),
@@ -937,23 +936,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63175, {	-- Path of Ascension: Athanos
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63176, {	-- Path of Ascension: Azaruux
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
@@ -962,23 +961,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63168, {	-- Path of Ascension: Echthra
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(62954, {	-- Path of Ascension: Kalisthene
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
@@ -987,31 +986,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63174, {	-- Path of Ascension: Mad Mortimer
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(62953, {	-- Path of Ascension: Mikanikos
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63170, {	-- Path of Ascension: Nuuminuuru
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
@@ -1020,23 +1019,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63172, {	-- Path of Ascension: Splinterbark Nightmare
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
 									q(63173, {	-- Path of Ascension: Thran'tiok
 										["provider"] = { "n", 168485 },	-- Apolon
-										["isWeekly"] = true,
 										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184812),	-- Apolon's Bounty
 										},
 									}),
@@ -1064,7 +1063,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									n(172412, {	-- Craven Corinth
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
-											["g"] = {
+											["groups"] = {
 												crit(48626, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
 												i(184411),	-- Blueprint: Gilded Abacus
 											},
@@ -1076,7 +1075,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											172101,	-- Ortim
 											172102,	-- Imer
 										},
-										["g"] = {
+										["groups"] = {
 											ach(14853),	-- All The Colors of the Painbow
 											n(COURAGE, {
 												i(184414),	-- Blueprint: Artisan Tool Belt
@@ -1090,7 +1089,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									n(172682, {	-- Splinterbark Nightmare
 										n(LOYALTY, {
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
-											["g"] = {
+											["groups"] = {
 												crit(51080, {	-- Defeat Splinterbark Nightmare in a Trial of Loyalty as Mikanikos
 													["achievementID"] = 14852,	-- The Hoot of the Issue
 												}),
@@ -1105,7 +1104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires unlocking and defeating Azaruux.",
-											["g"] = {
+											["groups"] = {
 												crit(48628, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
 												i(181238),	-- Blueprint: Charm of Focus
 											},
@@ -1116,94 +1115,94 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_THREE, {
 							["icon"] = 3565450,
-							["g"] = {
+							["groups"] = {
 								n(QUESTS, {
 									q(63181, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63182, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63184, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63185, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63186, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63187, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63188, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63189, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63190, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63191, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
 									q(63192, {	-- Path of Ascension: Trial of Humility
-										-- TODO: verify the Tier requirement for this... one random quest per week... good luck!
 										["provider"] = { "n", 168427 },	-- Artemede
-										["isWeekly"] = true,
 										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
-										["g"] = {
+										["isWeekly"] = true,
+										-- TODO: verify the Tier requirement for this... one random quest per week... good luck!
+										["groups"] = {
 											i(184811),	-- Artemede's Bounty
 										},
 									}),
@@ -1211,7 +1210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								n(REWARDS, {
 									n(172408, {	-- Alderyn [& Myn'ir]
 										["crs"] = { 172409 },	-- Myn'ir
-										["g"] = {
+										["groups"] = {
 											n(WISDOM, {
 												i(180871),	-- Indigo (PET!)
 											}),
@@ -1263,7 +1262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_FOUR, {
 							["icon"] = 3565447,
-							["g"] = {
+							["groups"] = {
 								n(REWARDS, {
 									n(171873, {	-- Athanos
 										n(WISDOM, {
@@ -1292,7 +1291,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											172101,	-- Ortim
 											172102,	-- Imer
 										},
-										["g"] = {
+										["groups"] = {
 											n(WISDOM, {
 												PLAGUELOUSE_LARVA,	-- (PET!)
 											}),
@@ -1314,7 +1313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_FIVE, {
 							["icon"] = 3565449,
-							["g"] = {
+							["groups"] = {
 								n(REWARDS, {
 									title(439,	{	-- <Name> the Ascended (TITLE!)
 										["description"] = "Finish all fights on Humility Difficulty.",
@@ -1353,7 +1352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									}),
 									n(172408, {	-- Alderyn [& Myn'ir]
 										["crs"] = { 172409 },	-- Myn'ir
-										["g"] = {
+										["groups"] = {
 											n(HUMILITY, {
 												crit(51110, {	-- Defeat Alderyn and Myn'ir as Pelagos
 													["achievementID"] = 14865,	-- Disciple of Humility
@@ -1432,7 +1431,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 											172101,	-- Ortim
 											172102,	-- Imer
 										},
-										["g"] = {
+										["groups"] = {
 											n(HUMILITY, {
 												crit(51125, {	-- Defeat Mad Mortimer as Pelagos
 												["achievementID"] = 14865,	-- Disciple of Humility
@@ -1511,7 +1510,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						n(VENDORS, {
 							n(171973, {	-- Binkiros <Mount Vendor>
 								["coord"] = { 31.6, 48.0, ARCHONS_RISE },
-								["g"] = appendGroups(BINKIROS_GROUP, {
+								["groups"] = appendGroups(BINKIROS_GROUP, {
 									i(180768, {	-- Eternal Phalynx of Humility (MOUNT!)
 										["cost"] = { { "c", ANIMA, 2500 } },
 									}),
@@ -1522,11 +1521,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(174582, {	-- Caretaker Caryn
 								["coord"] = { 26.4, 33.8, ARCHONS_RISE },
-								["g"] = {
+								["groups"] = {
 									i(184444, {	-- Supplies for the Path
 										["description"] = "Contains around 15-20 of each rare-quality crafting material for Path of Ascension crafting.",
 										["cost"] = { { "c", 1819, 5 } },	-- 5x Medallion of Service
-										["g"] = {
+										["groups"] = {
 											i(CALLOUSED_BONE),
 											i(CHAMPIONS_PELT),
 											i(ELYSIAN_FEATHERS),
@@ -1537,7 +1536,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(171959, {	-- Orluna <Armor Vendor>
 								["coord"] = { 27.1, 40.9, ARCHONS_RISE },
-								["g"] = {
+								["groups"] = {
 									i(177222, {	-- Discordant Bearer's Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
 									}),
@@ -1685,7 +1684,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(171958, {	-- Phixin <Weapon Vendor>
 								["coord"] = { 30.4, 39.7, ARCHONS_RISE },
-								["g"] = appendGroups(PHIXIN_GROUP, {
+								["groups"] = appendGroups(PHIXIN_GROUP, {
 									i(177867, {	-- Doubt Tinged Beacon
 										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
@@ -1732,7 +1731,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(171981, {	-- Zeleskos <Pet Vendor>
 								["coord"] = { 31.1, 47.3, ARCHONS_RISE },
-								["g"] = appendGroups(ZELESKOS_GROUP, {
+								["groups"] = appendGroups(ZELESKOS_GROUP, {
 									i(184398, {	-- Steward Featherling (PET!)
 										["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 									}),

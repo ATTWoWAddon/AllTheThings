@@ -1,0 +1,53 @@
+3.4.2.49311
+mount(62048),	-- Illidari Doomhawk \\ Black Dragonhawk Mount
+3.4.3.57082
+mount(463045),	-- Lava Drake
+3.4.3.58528
+mount(473478),	-- Sha-Touched Riding Tiger
+mount(473487),	-- Sha-Touched Cloud Serpent
+3.4.4.60842
+mount(1239204),	-- Stormwind Skyseeker
+mount(1239240),	-- Orgrimmar Sentinel
+mount(1239372),	-- Celestial Steed
+3.4.4.61075
+mount(459486),	-- Golden Ashes of Al'ar
+mount(459538),	-- Harmonious Greetings Bear
+3.4.5.61815
+mount(88718),	-- Phosphorescent Stone Drake
+mount(88742),	-- Drake of the North Wind
+mount(88744),	-- Drake of the South Wind
+mount(88746),	-- Vitreous Stone Drake
+mount(88990),	-- Dark Phoenix
+mount(96491),	-- Armored Razzashi Raptor
+mount(96499),	-- Swift Zulian Panther
+mount(97493),	-- Pureblood Fire Hawk
+mount(98204),	-- Amani Battle Bear
+mount(98718),	-- Subdued Seahorse
+mount(101542),	-- Flametalon of Alysrazor
+mount(102488),	-- White Riding Camel
+mount(102514),	-- Corrupted Hippogryph
+mount(107203),	-- Tyrael's Charger
+mount(107516),	-- Spectral Gryphon
+mount(107517),	-- Spectral Wind Rider
+mount(107842),	-- Blazing Drake
+mount(107845),	-- Life-Binder's Handmaiden
+mount(110039),	-- Experiment 12-B
+mount(121820),	-- Obsidian Nightwing
+mount(1249659),	-- Moppy the Drake (FINAL NAME TBD)
+mount(1250045),	-- Obsidian Worldbreaker Utility (Final Name TBD)
+
+
+
+
+Missing in MountDB.lua
+
+3.4.4.60842
+mount(1239204),	-- Stormwind Skyseeker
+mount(1239240),	-- Orgrimmar Sentinel
+mount(1239372),	-- Celestial Steed
+3.4.4.61075
+mount(459486),	-- Golden Ashes of Al'ar
+mount(459538),	-- Harmonious Greetings Bear
+3.4.5.61815
+mount(1249659),	-- Moppy the Drake (FINAL NAME TBD)
+mount(1250045),	-- Obsidian Worldbreaker Utility (Final Name TBD)

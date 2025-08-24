@@ -62,7 +62,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["timeline"] = { ADDED_11_0_0 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_11_0_0 } }, {
 					moh(5, iensemble(224000)),	-- Arsenal: Hellbloom Axe
 					moh(5, iensemble(223996)),	-- Arsenal: Hellbloom Bow
 					moh(5, iensemble(224001)),	-- Arsenal: Hellbloom Branch
@@ -155,7 +155,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -178,7 +178,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
@@ -301,7 +301,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -351,7 +352,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
@@ -966,7 +968,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(209610, {	-- Verdant Gladiator's Tabard
 						["sourceAchievements"] = { 19090 },	-- Elite: Dragonflight Season 3
 						["bonusID"] = 0,
@@ -996,7 +998,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
@@ -1050,7 +1052,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(214682, { -- Mittzi Threadweave <Verdant Combatant Recipes>
 				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 				["coord"] = { 44.7, 42.7, VALDRAKKEN },
-				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(208289),	-- Design: Verdant Combatant's Jeweled Amulet (RECIPE!)
 					i(208290),	-- Design: Verdant Combatant's Jeweled Signet (RECIPE!)
@@ -1100,7 +1102,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}, {

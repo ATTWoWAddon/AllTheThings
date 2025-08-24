@@ -33,7 +33,7 @@ app:CreateWindow("Titles", {
 					if honorTitlesHeaderID and not headers[honorTitlesHeaderID] then
 						local searchResults = app.SearchForField("headerID", honorTitlesHeaderID);
 						if searchResults and #searchResults > 0 then
-							local header = app.CreateNPC(honorTitlesHeaderID);
+							local header = app.CreateCustomHeader(honorTitlesHeaderID);
 							headers[honorTitlesHeaderID] = header;
 							tinsert(g, header);
 							header.parent = self;
@@ -55,15 +55,5 @@ app:CreateWindow("Titles", {
 				end
 			end
 		};
-	end,
-	OnLoad = function(self, settings)
-		if settings.Progress then
-			self.data.progress = settings.Progress;
-			self.data.total = settings.Total;
-		end
-	end,
-	OnSave = function(self, settings)
-		settings.Progress = self.data.progress;
-		settings.Total = self.data.total;
 	end,
 });

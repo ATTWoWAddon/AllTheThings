@@ -84,7 +84,7 @@ local function CalculateModelRotation(number)
 	return number and ((number * pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
 end
 local function GetCreatureID(reference)
-	local creatureID = reference.creatureID or (reference.qgs and reference.qgs[1]);
+	local creatureID = reference.npcID or (reference.qgs and reference.qgs[1]);
 	if creatureID then return creatureID; end
 
 	if reference.providers then
@@ -249,8 +249,8 @@ ModelAssignmentFunctions = {
 
 ModelAssignmentFunctions.Add(TrySetDisplayInfos)
 ModelAssignmentFunctions.Add(TrySetRawModel)
--- Using DisplayID directly seems completely broken in Classic, so instead we have to set the creature itself
-if app.IsRetail then
+-- Using DisplayID directly seems completely broken pre-MOP, so instead we have to set the creature itself
+if app.GameBuildVersion >= 50000 then
 	ModelAssignmentFunctions.Add(TrySetDisplayID)
 else
 	ModelAssignmentFunctions.Add(TrySetCreature)

@@ -180,12 +180,15 @@ root(ROOTS.Zones, {
 				q(41692),	-- Shipwreck Scavengers
 				q(41242, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41549, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41550, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				petbattle(q(41687)),	-- Snail Fight!
 				q(44892),	-- Snowfeather Swarm!
@@ -208,7 +211,7 @@ root(ROOTS.Zones, {
 				q(41428),	-- Unstable Portal
 				q(41665, {	-- Vantus Rune Work Order: Ursoc
 					["requireSkill"] = INSCRIPTION,
-					["g"] = {
+					["groups"] = {
 						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3] (RECIPE!)
 					},
 				}),
@@ -260,19 +263,19 @@ root(ROOTS.Zones, {
 				q(46194),	-- Wolves of the Legion (Invasion WQ)
 				q(41677, {	-- Work Order: Auto-Hammer
 					["requireSkill"] = ENGINEERING,
-					["g"] = {
+					["groups"] = {
 						i(137723),	-- Schematic: Auto-Hammer [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41659, {	-- Work Order: Avalanche Elixirs
 					["requireSkill"] = ALCHEMY,
-					["g"] = {
+					["groups"] = {
 						i(127922),	-- Recipe: Avalanche Elixir [Rank 2] (RECIPE!)
 					},
 				}),
 				q(41641, {	-- Work Order: Battlebound Armbands
 					["requireSkill"] = LEATHERWORKING,
-					["g"] = {
+					["groups"] = {
 						i(137908),	-- Pattern: Battlebound Armbands [Rank 3] (RECIPE!)
 					},
 				}),
@@ -287,19 +290,19 @@ root(ROOTS.Zones, {
 				}),
 				q(41635, {	-- Work Order: Leystone Boots
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(137605),	-- Plans: Leystone Boots [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41647, {	-- Work Order: Silkweave Robe
 					["requireSkill"] = TAILORING,
-					["g"] = {
+					["groups"] = {
 						i(137964),	-- Pattern: Silkweave Robe [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41653, {	-- Work Order: Skystone Pendant
 					["requireSkill"] = JEWELCRAFTING,
-					["g"] = {
+					["groups"] = {
 						i(137842),	-- Design: Skystone Pendant [Rank 3] (RECIPE!)
 					},
 				}),
@@ -308,7 +311,7 @@ root(ROOTS.Zones, {
 				}),
 				q(41671, {	-- Work Order: Word of Strength
 					["requireSkill"] = ENCHANTING,
-					["g"] = {
+					["groups"] = {
 						i(128604),	-- Formula: Enchant Cloak - Word of Strength [Rank 3] (RECIPE!)
 					},
 				}),

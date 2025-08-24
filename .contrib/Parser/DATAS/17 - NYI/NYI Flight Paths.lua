@@ -679,7 +679,7 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			fp(2693, {["description"] = "Seamless Proto, Revendreth"}),
 			fp(2694, {["description"] = "Seamless Proto, Boralus"}),
 			fp(2717, {["description"] = "Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)"}),
@@ -729,7 +729,7 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			fp(2894, {["description"] = "11.0  - TEST - Dorn Batol, Khaz Algar - (LWB)"}),
 			fp(2938, {["description"] = "The Swaying Span \\ Weapon Master, Nerub'ar Palace"}),
 			fp(2955, {["description"] = "Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)"}),
@@ -741,6 +741,13 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 		-- 11.0.2
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
 			fp(2987, {["description"] = "The Congealing Pool (One-way)"}),
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			-- 11.1.7.60520
+			fp(3005, {["description"] = "Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)"}),
+			fp(3122, {["description"] = "Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)"}),
 		})),
 	}),
 }));

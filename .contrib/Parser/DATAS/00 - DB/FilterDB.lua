@@ -96,7 +96,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_BODY]],
 		},
 	},
-	
+
 	-- Special Weapon Types
 	[11] = {
 		readable = "Artifacts",
@@ -111,7 +111,7 @@ for filterID,filterData in pairs({
 			cn = "神器",
 		},
 	},
-	
+
 	-- Weapon Types
 	[20] = {
 		readable = "Daggers",
@@ -269,7 +269,7 @@ for filterID,filterData in pairs({
 			en = [[~INVTYPE_AMMO]],
 		},
 	},
-	
+
 	-- Accessories
 	[50] = {
 		readable = "Miscellaneous",
@@ -393,7 +393,7 @@ for filterID,filterData in pairs({
 			en = WOWAPI_GetItemClassInfo(3),
 		},
 	},
-	
+
 	-- Other Types
 	[100] = {
 		readable = "Mounts",
@@ -427,7 +427,7 @@ for filterID,filterData in pairs({
 			en = "Illusions",
 			de = "Waffenverzauberungen",
 			fr = "Illusions",
-			ru = "Иллюзии",
+			ru = "Чары для оружия",
 			cn = "幻象",
 			tw = "武器附魔外觀",
 		},

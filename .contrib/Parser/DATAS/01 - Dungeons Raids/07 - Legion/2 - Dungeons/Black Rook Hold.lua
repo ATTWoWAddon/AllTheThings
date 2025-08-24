@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(740, {	-- Black Rook Hold
 		["maps"] = { 751, 752, 753, 754, 755, 756 },
 		["coord"] = { 38.4, 50.8, VALSHARAH },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome (automated)
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(1518, {	-- Amalgam of Souls
 					["creatureID"] = 98542,	-- Amalgam of Souls
-					["g"] = {
+					["groups"] = {
 						i(211513, {	-- Howling Echoes
 							["timeline"] = { ADDED_11_0_2 },
 						}),
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1653, {	-- Illysanna Ravencrest
 					["creatureID"] = 98696,	-- Illysanna Ravencrest
-					["g"] = {
+					["groups"] = {
 						i(211470, {	-- Ravencrest's Wrath
 							["timeline"] = { ADDED_11_0_2 },
 						}),
@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						98970,	-- Dantalionax
 						98965,	-- Kur'talos Ravencrest
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10804),	-- Black Rook Hold
 					},
 				}),
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						98970,	-- Dantalionax
 						98965,	-- Kur'talos Ravencrest
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10805),	-- Heroic: Black Rook Hold
 						i(137858),	-- Design: Grim Furystone Gorget [Rank 3] (RECIPE!)
 						i(127930),	-- Recipe: Flask of the Whispered Pact [Rank 2] (RECIPE!)
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1518, {	-- Amalgam of Souls
 					["creatureID"] = 98542,	-- Amalgam of Souls
-					["g"] = {
+					["groups"] = {
 						i(136714),	-- Amalgam's Seventh Spine
 						i(136976),	-- Etheldrin's Breastplate
 						i(134437),	-- Harrowing Soulspun Bracers
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1653, {	-- Illysanna Ravencrest
 					["creatureID"] = 98696,	-- Illysanna Ravencrest
-					["g"] = {
+					["groups"] = {
 						i(134412),	-- Cloak of Unwavering Loyalty
 						i(136978),	-- Ember of Nullification
 						i(134519),	-- Ravencrest Bonecrush Gauntlets
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1664, {	-- Smashspite the Hateful
 					["creatureID"] = 98949,	-- Smashspite the Hateful
-					["g"] = {
+					["groups"] = {
 						i(134528),	-- Band of Callous Dominance
 						i(134426),	-- Collar of Raking Claws
 						i(134483),	-- Fel-Hammered Greaves
@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						98970,	-- Dantalionax
 						98965,	-- Kur'talos Ravencrest
 					},
-					["g"] = {
+					["groups"] = {
 						i(136716),	-- Caged Horror
 						i(136770),	-- Drape of the Raven Lord
 						i(134370),	-- Felbat Leather Leggings
@@ -174,10 +174,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					e(1518, {	-- Amalgam of Souls
 						["creatureID"] = 98542,	-- Amalgam of Souls
-						["g"] = {
+						["groups"] = {
 							i(136714),	-- Amalgam's Seventh Spine
 							i(136976),	-- Etheldrin's Breastplate
 							i(134437),	-- Harrowing Soulspun Bracers
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1653, {	-- Illysanna Ravencrest
 						["creatureID"] = 98696,	-- Illysanna Ravencrest
-						["g"] = {
+						["groups"] = {
 							i(134412),	-- Cloak of Unwavering Loyalty
 							i(136978),	-- Ember of Nullification
 							i(134519),	-- Ravencrest Bonecrush Gauntlets
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1664, {	-- Smashspite the Hateful
 						["creatureID"] = 98949,	-- Smashspite the Hateful
-						["g"] = {
+						["groups"] = {
 							i(134528),	-- Band of Callous Dominance
 							i(134426),	-- Collar of Raking Claws
 							i(134483),	-- Fel-Hammered Greaves
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							98970,	-- Dantalionax
 							98965,	-- Kur'talos Ravencrest
 						},
-						["g"] = {
+						["groups"] = {
 							i(136716),	-- Caged Horror
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
@@ -251,11 +251,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					e(1518, {	-- Amalgam of Souls
 						["creatureID"] = 98542,	-- Amalgam of Souls
-						["g"] = {
+						["groups"] = {
 							ach(10710, {	-- Black Rook Moan
 								["description"] = "Prevent a soul from touching the boss for 60 seconds during the intermission phase.",
 								["crs"] = { 99663 },	-- Frustrated Soul
@@ -276,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1653, {	-- Illysanna Ravencrest
 						["creatureID"] = 98696,	-- Illysanna Ravencrest
-						["g"] = {
+						["groups"] = {
 							ach(10711),	-- Adds? More Like Bads
 							i(134412),	-- Cloak of Unwavering Loyalty
 							i(136978),	-- Ember of Nullification
@@ -291,7 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1664, {	-- Smashspite the Hateful
 						["creatureID"] = 98949,	-- Smashspite the Hateful
-						["g"] = {
+						["groups"] = {
 							i(134528),	-- Band of Callous Dominance
 							i(134426),	-- Collar of Raking Claws
 							i(134483),	-- Fel-Hammered Greaves
@@ -310,7 +311,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							98970,	-- Dantalionax
 							98965,	-- Kur'talos Ravencrest
 						},
-						["g"] = {
+						["groups"] = {
 							ach(10806),	-- Mythic: Black Rook Hold
 							ach(10862),	-- Mythic: Black Rook Hold Guild Run
 							i(137931),	-- Pattern: Gravenscale Hauberk [Rank 3] (RECIPE!)

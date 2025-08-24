@@ -8,7 +8,7 @@ local ignoreTimeline = function(item)	-- Items applied with this were never actu
 	return item;
 end
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
 			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
@@ -22,14 +22,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["_npcs"] = { 10506 },
 			}),
 		})),
-		ach(645, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 } }, {	-- Scholomance
-			crit(548, {	-- Ras Frostwhisper
-				["_npcs"] = { 10508 },	-- Ras Frostwhisper
-			}),
-			crit(549, {	-- Darkmaster Gandling
-				["_npcs"] = { 1853 },	-- Darkmaster Gandling
-			}),
-		})),
+		-- #if BEFORE 5.0.4
+		ach(645),	-- Scholomance (automated)
+		-- #endif
 		ach(5054, {	-- Scholomance Guild Run
 			["timeline"] = { ADDED_4_0_3 },
 		}),
@@ -37,8 +32,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	n(QUESTS, {
 		-- #if BEFORE 5.0.4
 		q(28756, {	-- Aberrations of Bone
-			["qg"] = 49856,	-- Lord Raymond George
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
+			["qg"] = 49856,	-- Lord Raymond George
 			["coord"] = { 76.2, 50.9, EASTERN_PLAGUELANDS },
 			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
@@ -52,9 +47,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		-- #endif
 		applyclassicphase(PHASE_FOUR, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
-			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["altQuests"] = { 8258 },	-- The Darkreaver Menace (New)
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
@@ -107,13 +102,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		{	-- Araj's Scarab
 			["allianceQuestData"] = q(5803, {	-- Araj's Scarab [A]
-				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5801,	-- Fire Plume Forged [Alliance]
+				["qg"] = 11056,	-- Alchemist Arbington
 				["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5804, {	-- Araj's Scarab [H]
-				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5802,	-- Fire Plume Forged [Horde]
+				["qg"] = 11057,	-- Apothecary Dithers
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
@@ -212,11 +207,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5531, {	-- Betina Bigglezink
+			["sourceQuest"] = 5522,	-- Leonid Barthalomew
 			["providers"] = {
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				{ "i", 13761 },	-- Frozen Eggs
 			},
-			["sourceQuest"] = 5522,	-- Leonid Barthalomew
 			["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
@@ -224,16 +219,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(76257, {	-- Darkmaster's Scourgestone
 			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
 			["timeline"] = { ADDED_10_1_5 },
-			["g"] = {
+			["groups"] = {
 				i(12844),	-- Argent Dawn Valor Token
 			},
 		}),
 		q(4771, {	-- Dawn's Gambit
-			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
-			["sourceQuest"] = 5531,	-- Betina Bigglezink
 			-- #if BEFORE 4.0.3
 			["description"] = "After completing this quest, you can return to Betina to have her give you another Gambit.",
 			-- #endif
+			["sourceQuest"] = 5531,	-- Betina Bigglezink
+			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 			["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
@@ -254,8 +249,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
-			["qg"] = 11216,	-- Eva Sarkhoff
 			["description"] = "Talk to Eva until she offers the quest.",
+			["qg"] = 11216,	-- Eva Sarkhoff
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
@@ -311,8 +306,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		},
 		q(5582, {	-- Healthy Dragon Scale
-			["provider"] = { "i", 13920 },	-- Healthy Dragon Scale
 			["sourceQuest"] = 5529,	-- Plagued Hatchlings
+			["provider"] = { "i", 13920 },	-- Healthy Dragon Scale
 			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { REMOVED_4_0_3 },
 			["repeatable"] = true,
@@ -344,8 +339,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5515, {	-- Krastinov's Bag of Horrors
-			["qg"] = 11216,	-- Eva Sarkhoff
 			["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
+			["qg"] = 11216,	-- Eva Sarkhoff
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
@@ -386,11 +381,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		})),
 		q(5522, {	-- Leonid Barthalomew
+			["sourceQuest"] = 4735,	-- Egg Collection
 			["providers"] = {
 				{ "n", 10267 },	-- Tinkee Steamboil
 				{ "i", 13761 },	-- Frozen Eggs
 			},
-			["sourceQuest"] = 4735,	-- Egg Collection
 			["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
@@ -422,36 +417,36 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		})),
 		q(5463, {	-- Menethil's Gift (1/2)
+			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
+			["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 			["providers"] = {
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				{ "i", 13585 },	-- Keepsake of Remembrance
 			},
-			["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
-			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
 			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
 		}),
 		q(5464, {	-- Menethil's Gift (2/2)
+			["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
 			["providers"] = {
 				{ "o", 176631 },	-- Menethil's Gift
 				{ "i", 13624 },	-- Soulbound Keepsake
 			},
-			["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
 		}),
 		{	-- Mold Rhymes With...
 			["allianceQuestData"] = q(5538, {	-- Mold Rhymes With... [A]
-				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5537,	-- Skeletal Fragments [Alliance]
+				["qg"] = 11056,	-- Alchemist Arbington
 				["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5514, {	-- Mold Rhymes With... [H]
-				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 964,	-- Skeletal Fragments [Horde]
+				["qg"] = 11057,	-- Apothecary Dithers
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
@@ -487,16 +482,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5533, {	-- Scholomance [Alliance]
-			["qg"] = 10838,	-- Commander Ashlam Valorfist
 			["sourceQuest"] = 5097,	-- All Along the Watchtowers [Alliance]
+			["qg"] = 10838,	-- Commander Ashlam Valorfist
 			["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 55,
 		}),
 		q(838, {	-- Scholomance [Horde]
-			["qg"] = 10837,	-- High Executor Derrington
 			["sourceQuest"] = 5098,	-- All Along the Watchtowers [Horde]
+			["qg"] = 10837,	-- High Executor Derrington
 			["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
@@ -526,13 +521,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		{	-- Skeletal Fragments
 			["allianceQuestData"] = q(5537, {	-- Skeletal Fragments [A]
-				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5533,	-- Scholomance [Alliance]
+				["qg"] = 11056,	-- Alchemist Arbington
 				["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(964, {	-- Skeletal Fragments [H]
-				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 838,	-- Scholomance [Horde]
+				["qg"] = 11057,	-- Apothecary Dithers
 				["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
@@ -553,18 +548,18 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		},
 		q(5465, {	-- Soulbound Keepsake
+			["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 			["providers"] = {
 				{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				{ "i", 13624 },	-- Soulbound Keepsake
 			},
-			["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
-			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7667,	-- Material Assistance
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { REMOVED_1_7_0 },
 			["classes"] = { SHAMAN },
@@ -581,11 +576,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
-			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7667,	-- Material Assistance
 			["altQuests"] = {
 				7668,	-- The Darkreaver Menace (Original)
 			},
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
@@ -602,22 +597,22 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		})),
 		q(5462, {	-- The Dying, Ras Frostwhisper
+			["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 			["providers"] = {
 				{ "n", 11286 },	-- Magistrate Marduke
 				{ "i", 13544 },	-- Spectral Essence
 				{ "i", 13585 },	-- Keepsake of Remembrance
 			},
-			["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 		}),
 		q(5461, {	-- The Human, Ras Frostwhisper
+			["sourceQuest"] = 5384,	-- Kirtonos the Herald
 			["providers"] = {
 				{ "n", 11286 },	-- Magistrate Marduke
 				{ "i", 13544 },	-- Spectral Essence
 			},
-			["sourceQuest"] = 5384,	-- Kirtonos the Herald
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { ARATHI_HIGHLANDS },
@@ -634,13 +629,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		{	-- The Key to Scholomance
 			["allianceQuestData"] = q(5505, {	-- The Key to Scholomance [A]
-				["qg"] = 11056,	-- Alchemist Arbington
 				["sourceQuest"] = 5803,	-- Araj's Scarab
+				["qg"] = 11056,	-- Alchemist Arbington
 				["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
 			}),
 			["hordeQuestData"] = q(5511, {	-- The Key to Scholomance [H]
-				["qg"] = 11057,	-- Apothecary Dithers
 				["sourceQuest"] = 5804,	-- Araj's Scarab
+				["qg"] = 11057,	-- Apothecary Dithers
 				["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
@@ -653,8 +648,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		},
 		q(5344, {	-- The Last Barov [Alliance]
-			["qg"] = 11023,	-- Weldon Barov <House of Barov>
 			["sourceQuest"] = 5343,	-- Barov Family Fortune [Alliance]
+			["qg"] = 11023,	-- Weldon Barov <House of Barov>
 			["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { TIRISFAL_GLADES },
@@ -672,8 +667,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5342, {	-- The Last Barov [Horde]
-			["qg"] = 11022,	-- Alexi Barov <House of Barov>
 			["sourceQuest"] = 5341,	-- Barov Family Fortune [Horde]
+			["qg"] = 11022,	-- Alexi Barov <House of Barov>
 			["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { WESTERN_PLAGUELANDS },
@@ -691,11 +686,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(5466, {	-- The Lich, Ras Frostwhisper
+			["sourceQuest"] = 5465,	-- Soulbound Keepsake
 			["providers"] = {
 				{ "n", 11286 },	-- Magistrate Marduke
 				{ "i", 13544 },	-- Spectral Essence
 			},
-			["sourceQuest"] = 5465,	-- Soulbound Keepsake
 			["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
@@ -1742,7 +1737,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["description"] = "Drops only with equipped Argent Dawn Commission",
 				["timeline"] = { ADDED_10_1_5 },
 			}),
-			i(14514, {	-- Pattern: Robe of the Void
+			i(14514, {	-- Pattern: Robe of the Void (RECIPE!)
 				-- #if TBC
 				-- During TBC this was made exclusively usable by Warlocks, then that change was reverted with Wrath.
 				["classes"] = { WARLOCK },
@@ -2008,50 +2003,78 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 }));
 -- #endif
 
+-- #if AFTER 5.0.4
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-	n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-		o(403552, {	-- Eva's Femur
-			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
-			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+	["timeline"] = { ADDED_5_0_4 },
+	["groups"] = {
+		n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			o(403552, {	-- Eva's Femur
+				["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
+				["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+				["groups"] = {
+					i(206364),	-- Eva's Femur
+				},
+			}),
+			o(403498, {	-- Eva's Journal
+				["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeably brighter than other books in the shelf.\n\nLook at the back of the bookshelf.",
+				["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+				["groups"] = {
+					i(206346, {	-- Eva's Journal
+						["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+					}),
+				},
+			}),
+		})),
+		n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
+			["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (Upper level, South (center) room).\nAt the South-East area of the room, use the Krastinov's Bag of Horrors toy to spawn Eva, then click off the buff so you can talk with her.\nShe will give you the Inert Spectral Essence.",
+			["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
+			["questID"] = 76248,
 			["groups"] = {
-				i(206364),	-- Eva's Femur
+				i(206365),	-- Inert Spectral Essence
+				hqt(76250, name(HEADERS.Item, 13544, {	-- Spectral Essence
+					["cost"] = {
+						{ "i", 20520, 3 },	-- 3x Dark Rune
+						{ "i", 12808, 5 },	-- 5x Essence of Undeath
+						{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
+					},
+					-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
+					["groups"] = {
+						i(13544),	-- Spectral Essence
+					},
+				})),
 			},
+		})),
+		n(59613, {	-- Professor Slate <Potions Master>
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = bubbleDown({["ignoreBonus"] = true},{
+				i(85580, {	-- Empty Polyformic Acid Vial
+					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
+					["groups"] = {
+						i(85589),	-- Nearly Full Vial of Polyformic Acid
+						i(85592),	-- Half Full Vial of Polyformic Acid
+						i(85593),	-- Nearly Empty Vial of Polyformic Acid
+					},
+				}),
+			}),
 		}),
-		o(403498, {	-- Eva's Journal
-			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeably brighter than other books in the shelf.\n\nLook at the back of the bookshelf.",
-			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+		e(684, {	-- Darkmaster Gandling
+			["creatureID"] = 59080,	-- Darkmaster Gandling
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				i(206346, {	-- Eva's Journal
-					["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+				ach(645),	-- Scholomance
+				ach(5054, {	-- Scholomance Guild Run
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 			},
 		}),
-	})),
-	n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
-		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (Upper level, South (center) room).\nAt the South-East area of the room, use the Krastinov's Bag of Horrors toy to spawn Eva, then click off the buff so you can talk with her.\nShe will give you the Inert Spectral Essence.",
-		["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
-		["questID"] = 76248,
-		["groups"] = {
-			i(206365),	-- Inert Spectral Essence
-			hqt(76250, name(HEADERS.Item, 13544, {	-- Spectral Essence
-				["cost"] = {
-					{ "i", 20520, 3 },	-- 3x Dark Rune
-					{ "i", 12808, 5 },	-- 5x Essence of Undeath
-					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
-				},
-				-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
-				["g"] = {
-					i(13544),	-- Spectral Essence
-				},
-			})),
-		},
-	})),
-}))
+	},
+}));
+-- #endif
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
-			["qg"] = 49856,	-- Lord Raymond George
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
+			["qg"] = 49856,	-- Lord Raymond George
 			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
 			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
@@ -2146,27 +2169,10 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			i(88350),	-- Leggings of Unleashed Anguish
 		},
 	}),
-	n(59613, {	-- Professor Slate <Potions Master>
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = bubbleDown({["ignoreBonus"] = true},{
-			i(85580, {	-- Empty Polyformic Acid Vial
-				["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-				["groups"] = {
-					i(85589),	-- Nearly Full Vial of Polyformic Acid
-					i(85592),	-- Half Full Vial of Polyformic Acid
-					i(85593),	-- Nearly Empty Vial of Polyformic Acid
-				},
-			}),
-		}),
-	}),
 	e(684, {	-- Darkmaster Gandling
 		["creatureID"] = 59080,
 		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
-			ach(645),	-- Scholomance
-			ach(5054, {	-- Scholomance Guild Run
-				["timeline"] = { ADDED_5_0_4 },
-			}),
 			i(88362),	-- Shoulderguards of Painful Lessons
 			i(88357),	-- Vigorsteel Spaulders
 			i(88361),	-- Gloves of Explosive Pain
@@ -2182,6 +2188,40 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["timeline"] = { ADDED_5_0_4 },
 	["lvl"] = 90,
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(6715, {	-- Polyformic Acid Science
+				["timeline"] = { ADDED_5_0_4 },
+				["groups"] = sharedData({
+					["cost"] = {
+						{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
+						{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
+						{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
+					},
+				},{
+					crit(19603, {	-- Commander Ri'mok
+						["_encounter"] = { 676, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19605, {	-- Liu Flameheart
+						["_encounter"] = { 658, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19606, {	-- Gu Cloudstrike
+						["_encounter"] = { 673, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19609, {	-- Trial of the King
+						["_encounter"] = { 708, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19604, {	-- Vizier Jin'bak
+						["_encounter"] = { 693, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19608, {	-- Yan-Zhu the Uncasked
+						["_encounter"] = { 670, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+				}),
+			}),
+			ach(6396, {	-- Sanguinarian
+				["crs"] = { 59368 },	-- Krastinovian Carver
+			}),
+		}),
 		n(QUESTS, sharedData({["modID"] = 0},{
 			q(31448, {	-- An End to the Suffering
 				["qg"] = 64563,	-- Talking Skull
@@ -2280,7 +2320,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			},
 		}),
 		e(665, {	-- Rattlegore
-			["creatureID"] = 59153,
+			["creatureID"] = 59153,	-- Rattlegore
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6394),	-- Rattle No More
@@ -2324,14 +2364,13 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			["description"] = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				ach(6396),	-- Sanguinarian
 				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 			},
 		}),
 		e(666, {	-- Lilian Voss
-			["creatureID"] = 58722,
+			["creatureID"] = 58722,	-- Lilian Voss
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144030, {	-- Soulburner Crown
@@ -2367,19 +2406,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 			},
 		}),
-		n(59613, {	-- Professor Slate <Potions Master>
-			["timeline"] = { ADDED_5_0_4 },
-			["groups"] = bubbleDown({["ignoreBonus"] = true},{
-				i(85580, {	-- Empty Polyformic Acid Vial
-					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-					["groups"] = {
-						i(85589),	-- Nearly Full Vial of Polyformic Acid
-						i(85592),	-- Half Full Vial of Polyformic Acid
-						i(85593),	-- Nearly Empty Vial of Polyformic Acid
-					},
-				}),
-			}),
-		}),
 		e(684, {	-- Darkmaster Gandling
 			["creatureID"] = 59080,	-- Darkmaster Gandling
 			["timeline"] = { ADDED_5_0_4 },
@@ -2387,10 +2413,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				ach(6762),	-- Heroic: Scholomance
 				ach(6771),	-- Heroic: Scholomance Guild Run
 				ach(6821),	-- School's Out Forever
-				ach(645),	-- Scholomance
-				ach(5054, {	-- Scholomance Guild Run
-					["timeline"] = { ADDED_5_0_4 },
-				}),
 				i(144211, {	-- Headmaster's Will
 					["timeline"] = { ADDED_7_1_5 },
 				}),
@@ -2450,6 +2472,39 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 	},
 }));
+-- #if AFTER 5.0.4
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+	ach(8438, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
+		title(245),	-- Darkmaster <Name>
+	})),
+	ach(6897),	-- Scholomance Challenger
+	ach(6914),	-- Scholomance: Bronze
+	ach(6915),	-- Scholomance: Silver
+	ach(6916, {	-- Scholomance: Gold
+		spell(131232),	-- Path of the Necromancer
+	}),
+})));
+-- #endif
+-- #endif
+
+-- #if ANYCLASSIC
+-- #if AFTER MOP
+table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+		["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
+		["timeline"] = { ADDED_5_5_0 },
+		["groups"] = {
+			e(684, {	-- Darkmaster Gandling
+				["creatureID"] = 59080,	-- Darkmaster Gandling
+				["groups"] = {
+					ach(60899),	-- Celestial: Scholomance
+					i(86782),	-- Arrow Breaking Windcloak
+					i(89968),	-- Feng's Ring of Dreams
+					i(86802),	-- Lei Shen's Final Orders
+				},
+			}),
+		},
+})));
+-- #endif
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
@@ -2463,10 +2518,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["mapID"] = SCHOLOMANCE,
 		["maps"] = {
-			-- #if ANYCLASSIC
+			-- #if AFTER MOP
+			SCHOLOMANCE_CHAMBER_OF_SUMMONING, SCHOLOMANCE_THE_UPPER_STUDY, SCHOLOMANCE_HEADMASTERS_STUDY,
+			-- #else
 			306, 307, 308, 309,
 			-- #endif
-			477, 478, 479,
 		},
 		-- #if BEFORE 4.0.3
 		["sourceQuests"] = {

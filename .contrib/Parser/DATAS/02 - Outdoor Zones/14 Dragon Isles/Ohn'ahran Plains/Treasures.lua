@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380860, {	-- Centaur Horn
 				["coord"] = { 73.5, 56.2, OHNAHRAN_PLAINS },
 				["questID"] = 70402,
-				["g"] = {
+				["groups"] = {
 					i(200869),	-- Ohn Lite Branded Horn (TOY!)
 				},
 			}),
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 86.5, 53.3, OHNAHRAN_PLAINS },
 				},
 				-- ["questID"] = ,
-				["g"] = {
+				["groups"] = {
 					i(201028),	-- Nokhudon Boots
 					i(201027),	-- Nokhudon Breeches
 					i(201031),	-- Nokhudon Cloak
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 30.50, 45.96, OHNAHRAN_PLAINS },
 					{ 32.14, 46.93, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(195884, {	-- Crystalline Petals
 						i(195542, {	-- Slumber Incense
 						-- Cost?
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 70.6, 35.4, OHNAHRAN_PLAINS },
 				["questID"] = 67950,
 				["cost"] = { { "i", 195453, 1 }, },	-- 1x Ludo's Stash Map
-				["g"] = {
+				["groups"] = {
 					i(199171, {	-- Slightly Chewed Duck Egg
 						i(199172),	-- Viridescent Duck (PET!)
 					}),
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381575, {	-- Duck Trap Kit
 				["coord"] = { 70.0, 64.0, OHNAHRAN_PLAINS },
 				["description"] = "Found only when the Aylaag Camp is in this location. Used to summon Quackers the Terrible.",
-				["g"] = {
+				["groups"] = {
 					i(194740, {	-- Duck Trap Kit
 						i(194712, {	-- Empty Duck Trap
 							i(194739),	-- Trapped Duck
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["description"] = "Combine 5 Crystalline Petals into the Slumber Incense.\nTalk to the Ancient Stone (Northern Waypoint) to gain the Lucid Dreaming Buff for 20 seconds.\nWhen under the effect of this buff you can walk on water and see colorful flowers on the river near the Ancient Stone, walking over a flower will refresh the buff.\nYou need to reach the cave at the southern Waypoint before the buff expires to open the Emerald Chest, which contains the Everliving Wooden Key.\n|cFFFFFFFFYou should be mounted for this.|r",
 				["cost"] = { { "i", 195542, 1 }, },	-- Slumber Incense
-				["g"] = {
+				["groups"] = {
 					i(195041),	-- Everliving Wooden Key
 				},
 			}),
@@ -171,23 +171,38 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 33.2, 55.3, OHNAHRAN_PLAINS },
 				["questID"] = 70391,
 				["cost"] = { { "i", 198843, 1 }, },	-- 1x Emerald Gardens Explorer's Notes
-				["g"] = {
+				["groups"] = {
 					i(200865),	-- Glimmering Ysemerald Cluster
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
 				},
+			}),
+			o(377536, {	-- Enriched Soil Pile
+				["coords"] = {
+					{ 49.7, 68.7, OHNAHRAN_PLAINS },
+					{ 50.5, 70.2, OHNAHRAN_PLAINS },
+					{ 52.1, 70.6, OHNAHRAN_PLAINS },
+					{ 52.7, 65.8, OHNAHRAN_PLAINS },
+					{ 52.8, 69.9, OHNAHRAN_PLAINS },
+					{ 53.0, 72.0, OHNAHRAN_PLAINS },
+					{ 53.3, 68.1, OHNAHRAN_PLAINS },
+					{ 53.8, 67.4, OHNAHRAN_PLAINS },
+					{ 54.1, 71.5, OHNAHRAN_PLAINS },
+					{ 54.6, 69.4, OHNAHRAN_PLAINS },
+				},
+				["groups"] = { i(194426) },	-- Enriched Soil
 			}),
 			o(378010, {	-- Forgotten Dragon Treasure
 				["questID"] = 74399,
 				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 195041, 1 }, },	-- 1x Everliving Wooden Key
-				["g"] = {
+				["groups"] = {
 					i(197585),	-- Windborne Velocidrake: Maned Back (MM!)
 				}
 			}),
 			o(380842, {	-- Gold Coin
 				["coord"] = { 82.3, 73.4, OHNAHRAN_PLAINS },
 				["questID"] = 70379,
-				["g"] = {
+				["groups"] = {
 					i(199338),	-- Copper Coin of the Isles
 				},
 			}),
@@ -195,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 32.5, 38.2, OHNAHRAN_PLAINS },
 				["questID"] = 67049,
 				["cost"] = { { "i", 194540, 1 }, },	-- 1x Nokhud Armorer's Notes
-				["g"] = {
+				["groups"] = {
 					i(200861),	-- Stolen Shikaar Warspear
 				},
 			}),
@@ -208,14 +223,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380859, {	-- Tuskarr Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["questID"] = 70400,
-				["g"] = {
+				["groups"] = {
 					i(200876),	-- Yennu's Toy Boat
 				},
 			}),
 			o(380602, {	-- Wind-Blessed Hide
 				["coord"] = { 86.2, 53.6, OHNAHRAN_PLAINS },
 				-- ["questID"] = 70300,
-				["g"] = {
+				["groups"] = {
 					i(198696),	-- Wind-Blessed Hide
 				}
 			}),

@@ -16,8 +16,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10167, {	-- Auchindoun...
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10102,	-- A Secret Revealed
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 66, 15),
@@ -28,8 +28,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10164, {	-- Everything Will Be Alright
-					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
+					["qg"] = 19698,	-- Greatfather Aldrimus
 					["coord"] = { 35.1, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -44,8 +44,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29595, {	-- Everything Will Be Alright
-					["qg"] = 19698,	-- Greatfather Aldrimus
 					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
+					["qg"] = 19698,	-- Greatfather Aldrimus
 					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
 					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
@@ -78,8 +78,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29596, {	-- The End of the Exarch
-					["qg"] = 54725,	-- Draenei Spirit
 					["sourceQuest"] = 29595,	-- Everything Will Be Alright
+					["qg"] = 54725,	-- Draenei Spirit
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(63, 63, 15),
 					["groups"] = {
@@ -93,8 +93,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10168, {	-- What the Soul Sees
-					["qg"] = 19412,	-- D'ore
 					["sourceQuest"] = 10167,	-- Auchindoun...
+					["qg"] = 19412,	-- D'ore
 					["coord"] = { 73.8, 57.0, 257 },
 					["maps"] = { NAGRAND },
 					["races"] = HORDE_ONLY,
@@ -161,14 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(524, {	-- Exarch Maladaar
 					["creatureID"] = 18373,
 					["groups"] = {
-						ach(666, {	-- Auchenai Crypts
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10167,	-- Auchindoun...
-								10164,	-- Everything Will Be Alright
-							},
-							-- #endif
-						}),
+						ach(666),	-- Auchenai Crypts
 						i(27412),	-- Ironstaff of Regeneration
 						-- #if AFTER 7.3.5
 						i(27872),	-- The Harvester of Souls
@@ -241,9 +234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(524, {	-- Exarch Maladaar
 						["creatureID"] = 18373,
 						["groups"] = {
-							ach(672, {	-- Heroic: Auchenai Crypts
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(672),	-- Heroic: Auchenai Crypts
 							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

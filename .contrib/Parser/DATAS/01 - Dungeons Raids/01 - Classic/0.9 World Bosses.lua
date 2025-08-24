@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
+			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
 				["isRaid"] = true,
 				-- #if ANYCLASSIC
@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19131),	-- Snowblind Shoes
 				},
 			}))),
-			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
+			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_1_8_0, REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
 					{ 51.2, 10.9, FERALAS },
 					{ 63.3, 27.8, THE_HINTERLANDS },
@@ -51,8 +51,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						q(8447, {	-- Waking Legends
-							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
+							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {
@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}))),
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
+			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = {  ADDED_1_3_0, REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
 				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
 				["crs"] = { 18338 },	-- Highlord Kruul
 				["modelScale"] = 6.0,

@@ -3,30 +3,70 @@
 ---------------------------------------------------
 local ALGARI_TOKEN_OF_MERIT_S1 = 220769;
 local ALGARI_TOKEN_OF_MERIT_S2 = 230793;
---local ALGARI_TOKEN_OF_MERIT_S3 = xx;
+local ALGARI_TOKEN_OF_MERIT_S3 = 248242;
 --local ALGARI_TOKEN_OF_MERIT_S4 = xx;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
 			n(222561, {	-- Agmera <Dungeon Exploration Equipment>
 				["coord"] = { 53.8, 38.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(225948, {	-- Harbinger's Equipment Chest
 						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
 						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["sym"] = {
+							-- All TWW Season 1 dungeons (Normal+ difficulty)
+							{"select", "instanceID"
+								,1271			-- Ara-Kara, City of Echoes
+								,1274			-- City of Threads
+								,71				-- Grim Batol
+								,1184			-- Mists of Tirna Scithe
+								,1023			-- Siege of Boralus
+								,1270			-- The Dawnbreaker
+								,1182			-- The Necrotic Wake
+								,1269			-- The Stonevault
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
+					}),
+					i(229422, {	-- Undermine Equipment Chest
+						["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["sym"] = {
+							-- All TWW Season 2 dungeons (Normal+ difficulty)
+							{"select", "instanceID"
+								,1272			-- Cinderbrew Meadery
+								,1210			-- Darkflame Cleft
+								,1298			-- Operation: Floodgate
+								,1267			-- Priory of the Sacred Flame
+								,1268			-- The Rookery
+								,1187			-- Theater of Pain
+								,1012			-- The MOTHERLODE!!
+								,1178			-- TODO: Operation: Mechagon (does not work currently)
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
 					}),
 				},
 			}),
 			n(219036, {	-- Ardgaz <Token Exchange>
 				["coord"] = { 54.8, 42.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					-- All seasons
 					i(226814, {	-- Chest of Gold
 						["cost"] = {
-							-- #if BEFORE 11.1.0
-							{"i", ALGARI_TOKEN_OF_MERIT_S1, 2},
-							-- #else
+							-- #if AFTER 11.2.0
+							{"i", ALGARI_TOKEN_OF_MERIT_S3, 2},
+							-- #elseif AFTER 11.1
 							{"i", ALGARI_TOKEN_OF_MERIT_S2, 2},
+							-- #else
+							{"i", ALGARI_TOKEN_OF_MERIT_S1, 2},
 							-- #endif
 						},
 					}),
@@ -49,7 +89,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					-- Season 2
 					i(232382, {	-- Golden Valorstone
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 1}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231153, {	-- Triumphant Satchel of Carved Undermine Crests
@@ -61,14 +101,192 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(232386, {	-- S.A.D.
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 6}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
+					-- Season 3
+					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 1}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 2}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(248410, {	-- Technomancer's Gift
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S3, 6}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+				},
+			}),
+			n(240481, {	-- Consultant Wrexxle <Undermine Dealer>
+				["coord"] = { 52.0, 46.0, DORNOGAL },
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+				["groups"] = appendAllGroups(
+					sharedData({	-- Mythic
+						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+						["modID"] = 6,
+					},{
+						-- Vexie
+						i(231268),	-- Blastfurious Machete
+						i(230197),	-- Geargrinder's Spare Keys
+						i(228892),	-- Greasemonkey's Shift-Stick
+						i(230019),	-- Vexie's Pit Whistle
+						-- Cauldron
+						i(228904),	-- Crowd Favorite
+						i(230191),	-- Flarendo's Pilot Light
+						i(228890),	-- Superfan's Beater-Buzzer
+						i(230190),	-- Torq's Big Red Button
+						i(228900),	-- Tournament Arc
+						-- Rik
+						i(231311),	-- Frontman's Wondrous Wall
+						i(228897),	-- Pyrotechnic Needle-Dropper
+						i(228895),	-- Remixed Ignition Saber
+						i(230194),	-- Reverb Radio
+						-- Stix
+						i(228903),	-- Dumpster Diver
+						i(230189),	-- Junkmaestro's Mega Magnet
+						i(230026),	-- Scrapfield 9001
+						i(228896),	-- Stix's Metal Detector
+						-- Sprocket
+						i(228898),	-- Alphacoil Ba-Boom Stick
+						i(228894),	-- GIGADEATH Chainblade
+						i(230193),	-- Mister Lock-N-Stalk
+						i(230186),	-- Mister Pick-Me-Up
+						i(228844),	-- Test Pilot's Go-Pack
+						-- Bandit
+						i(232526),	-- Best-in-Slots
+						i(232805),	-- Best-in-Slots
+						i(230188),	-- Gallagio Bottle Service
+						i(228905),	-- Giga Bank-Breaker
+						i(230027),	-- House of Cards
+						i(228906),	-- Operator's Fraud Detector
+						i(231266),	-- Random Number Perforator
+						-- Mug'Zee
+						i(228893),	-- "Tiny Pal"
+						i(228901),	-- Big Earner's Bludgeon
+						i(232804),	-- Capo's Molten Knuckles
+						i(230192),	-- Mug's Moxie Jug
+						i(228902),	-- Wiseguy's Refused Offer
+						i(230199),	-- Zee's Thug Hotline
+						-- Gallywix
+						i(228891),	-- Capital Punisher
+						i(230029),	-- Chromebustible Bomb Suit
+						i(230198),	-- Eye of Kezan
+						i(228899),	-- Gallywix's Iron Thumb
+						i(231265),	-- The Jastor Diamond
+						i(228889),	-- Titan of Industry
+					}),
+					sharedData({	-- Heroic
+						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+						["modID"] = 5,
+					},{
+						-- Vexie
+						i(231268),	-- Blastfurious Machete
+						i(230197),	-- Geargrinder's Spare Keys
+						i(228892),	-- Greasemonkey's Shift-Stick
+						i(230019),	-- Vexie's Pit Whistle
+						-- Cauldron
+						i(228904),	-- Crowd Favorite
+						i(230191),	-- Flarendo's Pilot Light
+						i(228890),	-- Superfan's Beater-Buzzer
+						i(230190),	-- Torq's Big Red Button
+						i(228900),	-- Tournament Arc
+						-- Rik
+						i(231311),	-- Frontman's Wondrous Wall
+						i(228897),	-- Pyrotechnic Needle-Dropper
+						i(228895),	-- Remixed Ignition Saber
+						i(230194),	-- Reverb Radio
+						-- Stix
+						i(228903),	-- Dumpster Diver
+						i(230189),	-- Junkmaestro's Mega Magnet
+						i(230026),	-- Scrapfield 9001
+						i(228896),	-- Stix's Metal Detector
+						-- Sprocket
+						i(228898),	-- Alphacoil Ba-Boom Stick
+						i(228894),	-- GIGADEATH Chainblade
+						i(230193),	-- Mister Lock-N-Stalk
+						i(230186),	-- Mister Pick-Me-Up
+						-- Bandit
+						i(230188),	-- Gallagio Bottle Service
+						i(228905),	-- Giga Bank-Breaker
+						i(230027),	-- House of Cards
+						i(228906),	-- Operator's Fraud Detector
+						i(231266),	-- Random Number Perforator
+						-- Mug'Zee
+						i(228893),	-- "Tiny Pal"
+						i(228901),	-- Big Earner's Bludgeon
+						i(232804),	-- Capo's Molten Knuckles
+						i(230192),	-- Mug's Moxie Jug
+						i(228902),	-- Wiseguy's Refused Offer
+						i(230199),	-- Zee's Thug Hotline
+						-- Gallywix
+						i(228891),	-- Capital Punisher
+						i(230029),	-- Chromebustible Bomb Suit
+						i(230198),	-- Eye of Kezan
+						i(228899),	-- Gallywix's Iron Thumb
+						i(231265),	-- The Jastor Diamond
+						i(228889),	-- Titan of Industry
+					}),
+					sharedData({	-- M+ Stuff
+						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+					},{
+						-- Motherlode
+						i(159612),	-- Azerokk's Resonating Heart
+						i(159611),	-- Razdunk's Big Red Button
+						-- Operation: Mechagon
+						i(169344),	-- Ingenious Mana Battery
+						i(232546),	-- K.U.-J.0.'s Flame Vents
+						i(168965),	-- Modular Platinum Plating
+						-- Theater of Pain
+						i(178811),	-- Grim Codex
+						i(178809),	-- Soulletting Ruby
+						i(178810),	-- Vial of Vampiric Essence
+						i(178808),	-- Viscera of Coalesced Hatred
+						-- Cinderbrew Meadery
+						i(219297),	-- Cinderbrew Stein
+						i(219298),	-- Ravenous Honey Buzzer
+						i(219299),	-- Synergistic Brewterializer
+						-- Darkflame Cleft
+						i(219306),	-- Burin of the Candle King
+						i(219305),	-- Carved Blazikon Wax
+						i(219304),	-- Conductor's Wax Whistle
+						i(219307),	-- Remnant of Darkness
+						-- Priory
+						i(219310),	-- Bursting Lightshard
+						i(219308),	-- Signet of the Priory
+						i(219309),	-- Tome of Light's Devotion
+						-- The Rookery
+						i(219294),	-- Charged Stormrook Plume
+						i(219296),	-- Entropic Skardyn Core
+						i(219295),	-- Sigil of Algari Concordance
+						-- Operation: Floodgate
+						i(232542),	-- Darkfuse Medichopper
+						i(232545),	-- Gigazap's Zap-Cap
+						i(232541),	-- Improvised Seaforium Pacemaker
+						i(232543),	-- Ringing Ritual Mud
+					})
+				),
+			}),
+			n(248341, {	-- Dip Stickshift <Memories-R-Us>
+				["coord"] = { 48.1, 45.4, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0 },
+				["groups"] = {
+					i(247864),	-- Memory of Arthas
+					i(247865),	-- Memory of Garrosh
+					i(247866),	-- Memory of Guldan
+					i(247835),	-- Memory of Illidan
+					i(247869),	-- Memory of Putricide
+					i(247870),	-- Memory of Saurfang
+					i(247867),	-- Memory of Suramar
+					i(247871),	-- Memory of Sylvanas
+					i(247872),	-- Memory of Theotar
+					i(247873),	-- Memory of Thrall
 				},
 			}),
 			n(219230, {	-- Erani <Pet Charm Trader>
 				["coord"] = { 58.5, 64.9, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(224101, {	-- Brown Leafbug (PET!)
 						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
 					}),
@@ -88,14 +306,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219197, {	-- Griftah <Amazing Amulets>
 				["coord"] = { 62.5, 50.9, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
 					i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
+					i(202046),	-- Lucky Tortollan Charm
 				},
 			}),
 			n(219255, {	-- Karbath <Weapon Trader>
 				["coord"] = { 47.3, 64.8, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(227699, {	-- Earthen Ceremonial Chopper
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
 					}),
@@ -113,7 +332,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				["coord"] = { 59.8, 56.4, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(228379, {	-- Design: Captured Starlight (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
@@ -215,6 +434,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					i(223066, {	-- Technique: Algari Missive of Resourcefulness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(243052, {	-- Technique: Glyph of the Strix (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						["timeline"] = { ADDED_11_1_7 },
 					}),
 					-- Profession Books
 					i(227420, {	-- Exceptional Alchemist's Research (CI!)
@@ -370,7 +593,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(224294, {	-- Osidion <Ensemble Vendor>
 				["description"] = "Cost is based on if a Earth-Encrusted Gem is in your inventory. If none then the ensembles are available for Resonance Crystals.",
 				["coord"] = { 57.3, 60.8, DORNOGAL },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {
 						{"i", 223951, 1},	-- 1x Earth-Encrusted Gem
 						{"c", RESONANCE_CRYSTALS, 9750},
@@ -395,7 +618,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					iensemble(219118),	-- Peculiar Peddler's Trinkets
 					iensemble(219111),	-- Royal Patron's Elegance
 					iensemble(219130),	-- Saffron Cartographer's Orientation
-					-- iensemble(219105),	-- Sandy Quotidian Wear (this is from Lost and Found ach only...)
 					iensemble(219129),	-- Sooty Artisan's Talent
 					iensemble(219128),	-- Stained Artisan's Talent
 					iensemble(219109),	-- Taupe Quotidian Wear
@@ -412,15 +634,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(234906, {	-- Syenite
 				["coord"] = { 58.0, 56.8, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0 },
-				["g"] = {
+				["groups"] = {
+					-- Season 2
 					i(230937),	-- Enchanted Weathered Undermine Crest
 					i(230936),	-- Enchanted Runed Undermine Crest
 					i(230935),	-- Enchanted Gilded Undermine Crest
+					i(239146, {	-- Gilded Augmentation Matrix
+						["timeline"] = { ADDED_11_1_5 },
+					}),
+					i(239203, {	-- Runed Augmentation Matrix
+						["timeline"] = { ADDED_11_1_5 },
+					}),
+					-- Season 3
+					i(231768, {	-- Enchanted Gilded Ethereal Crest
+						["timeline"] = { ADDED_11_2_0 },
+					}),
+					i(231769, {	-- Enchanted Runed Ethereal Crest
+						["timeline"] = { ADDED_11_2_0 },
+					}),
+					i(231767, {	-- Enchanted Weathered Ethereal Crest
+						["timeline"] = { ADDED_11_2_0 },
+					}),
 				},
 			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					-- Season 1
 					-- Trade DOWN
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
@@ -488,6 +727,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
+					-- Trade DOWN
+					i(240928, {	-- Pouch of Weathered Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Normal Crest\nReceive: LFR Crest",
+						["cost"] = {{"c", CARVED_ETHEREAL_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240927, {	--  Satchel of Carved Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
+						["cost"] = {{"c", WEATHERED_ETHEREAL_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240926, {	--  Pack of Runed Ethereal Crests
+						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
+						["cost"] = {{"c", GILDED_ETHEREAL_CREST, 15}},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					-- Trade UP
+					i(240931, {	-- Triumphant Satchel of Carved Ethereal Crests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: LFR Crest\nReceive: Normal Crest",
+						["cost"] = {{ "c", WEATHERED_ETHEREAL_CREST, 45 }},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240930, {	-- Celebratory Pack of Runed Ethereal Crests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Normal Crest\nReceive: Heroic Crest",
+						["cost"] = {{ "c", CARVED_ETHEREAL_CREST, 45 }},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(240929, {	-- Glorious Cluster of Gilded Ethereal Crests
+						["description"] = "\n|cff4caf50 -- UPGRADE --|r\n\nCost: Heroic Crest\nReceive: Mythic Crest",
+						["cost"] = {{ "c", RUNED_ETHEREAL_CREST, 45 }},
+						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
 				},
 			}),
 		}),

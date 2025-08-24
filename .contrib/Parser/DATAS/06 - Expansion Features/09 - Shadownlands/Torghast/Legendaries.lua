@@ -5,7 +5,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	m(TORGHAST, {
 		n(LEGENDARIES, {
 			["description"] = "These memories only drop from Layer 3 or above, except for Phantasma Lure.",
-			["g"] = {
+			["groups"] = {
 				i(183247, {	-- Memory of a Stable Phantasma Lure
 					["description"] = "This memory is the only exception and will only drop from Layer 6 or above.",
 				}),

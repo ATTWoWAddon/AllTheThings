@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			["races"] = ALLIANCE_ONLY,
 		},{
 			["modelScale"] = 2,
-			["g"] = {
+			["groups"] = {
 				ach(12898, {	-- Azeroth at War: After Lordaron
 					["_doautomation"] = true,
 				}),
@@ -26,11 +26,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				mission(2121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 165944 },	-- A Shady Message [A]
-					["g"] = {
+					["groups"] = {
 						q(54424, {	-- A Shady Character
-							["pvp"] = true,
 							["pb"] = true,
-							["g"] = {
+							["pvp"] = true,
+							["groups"] = {
 								i(165946),	-- Token of Shadiness (QI!)
 							},
 						}),
@@ -84,7 +84,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(138704, {
-				-- q(54422),	-- Won PVP pet battle, [A Shady Character] has been added to your Mission Table. [A]
 				q(54423),	-- Completing A Shady Character (Mission), accepting A Shady Character (Quest) [A]
 			}),
 		}),

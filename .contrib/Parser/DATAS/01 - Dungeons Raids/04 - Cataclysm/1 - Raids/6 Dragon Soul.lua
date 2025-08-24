@@ -26,13 +26,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["lvl"] = 85,
 				["groups"] = {
 					q(29802, {	-- A Hidden Message
-						["qg"] = 55476,	-- Lord Afrasastrasz
+						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
 						["sourceQuest"] = 29801,	-- Proving Your Worth
+						["qg"] = 55476,	-- Lord Afrasastrasz
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
 						["cost"] = {
 							{ "i", 74752, 1 },	-- Solved Cipher
 						},
-						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
 						["groups"] = {
 							i(74749, {	-- Charging Decoder Ring
 								["description"] = "Just log out for 12 hours. Read a book or something!",
@@ -65,14 +65,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(30093, {	-- Assassinate Creed
+						["sourceQuest"] = 30092,	-- Our Man in Gilneas
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
-						["sourceQuest"] = 30092,	-- Our Man in Gilneas
 						["cr"] = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
 					}),
 					q(30109, {	-- Blood of the Betrayer
-						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30108,	-- Our Man in Karazhan
+						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Vial of Black Dragonsblood
@@ -83,26 +83,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(30107, {	-- Cluster Clutch
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30106,	-- The Deed is Done
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 77951, 333 },	-- Shadowy Gem
 						},
 					}),
 					q(30092, {	-- Our Man in Gilneas
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 29847,	-- To Catch a Thief
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 					}),
 					q(30108, {	-- Our Man in Karazhan
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30107,	-- Cluster Clutch
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 					}),
 					q(30118, {	-- Patricide
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["sourceQuest"] = 30116,	-- Sharpening Your Fangs
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["groups"] = {
 							ach(6181),	-- Fangs of the Father
@@ -115,35 +115,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
 					}),
 					q(30116, {	-- Sharpening Your Fangs
-						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuest"] = 30113,	-- Victory in the Depths
+						["qg"] = 57777,	-- Wrathion <The Black Prince>
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 77952, 60 },	-- Elementium Gem Cluster
 						},
 					}),
 					q(30106, {	-- The Deed is Done
+						["sourceQuest"] = 30093,	-- Assassinate Creed
 						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
-						["sourceQuest"] = 30093,	-- Assassinate Creed
 						["groups"] = {
 							i(77945),	-- Fear
 							i(77946),	-- Vengeance
 						},
 					}),
 					q(29847, {	-- To Catch a Thief
+						["sourceQuest"] = 29934,	-- To Ravenholdt
 						["qg"] = 56375,	-- Mostrasz
 						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
-						["sourceQuest"] = 29934,	-- To Ravenholdt
 					}),
 					q(29934, {	-- To Ravenholdt
-						["qg"] = 55488,	-- Corastrasza
 						["sourceQuest"] = 29802,	-- A Hidden Message
+						["qg"] = 55488,	-- Corastrasza
 						["coord"] = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
 					}),
 					q(30113, {	-- Victory in the Depths
-						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["sourceQuest"] = 30109,	-- Blood of the Betrayer
+						["qg"] = 57770,	-- Zazzo Twinklefingers
 						["coord"] = { 52.6, 77.6, DEADWIND_PASS },
 						["groups"] = {
 							i(77947),	-- The Sleeper
@@ -276,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			-----------------------------------------------------------------------------------------------------------------------------
 			-- CRIEVE TODO: After I add the vendor data for Protocol Twilight, this section can likely be excluded for Cataclysm Classic.
 			-----------------------------------------------------------------------------------------------------------------------------
-			d(DIFFICULTY.RAID.FINDER, {
+			d(DIFFICULTY.LEGACY_RAID.FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
 				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },
@@ -286,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["timeline"] = { CREATED_4_4_2 },
 				-- #endif
 				["ignoreBonus"] = true,
-				["groups"] = 
+				["groups"] =
 				-- #if ANYCLASSIC
 				bubbleDown({ ["timeline"] = { CREATED_4_4_2 }, },
 				-- #endif
@@ -309,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78874),	-- Shoulders of the Corrupted Vanquisher
 							i(78863, {	-- Chest of the Corrupted Conqueror
 								-- #if AFTER LEGION
-								["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want.  Right-clicking can award the Holy piece regardless of your spec.",
+								["description"] = "Paladin Completionists will want to take this item to the vendor to get the specific item they want. Right-clicking can award the Holy piece regardless of your spec.",
 								-- #endif
 							}),
 							i(78864),	-- Chest of the Corrupted Protector
@@ -470,7 +471,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							56427,	-- Warmaster Blackthorn
 						},
 						["groups"] = {
-							i(71998),	-- Essence of Destruction
+							i(71998, {	-- Essence of Destruction
+								["description"] = "Drops commonly from Dragon Soul bosses.",
+							}),
 							i(77952, {	-- Elementium Gem Cluster
 								i(77951),	-- Shadowy Gem
 							}),
@@ -481,14 +484,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
 						i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
 						i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
-						i(72004),	-- Pattern: Bracers of Unconquered Power
+						i(72004),	-- Pattern: Bracers of Unconquered Power (RECIPE!)
 						i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
-						i(72003),	-- Pattern: Dreamwraps of the Light
-						i(72002),	-- Pattern: Lavaquake Legwraps
+						i(72003),	-- Pattern: Dreamwraps of the Light (RECIPE!)
+						i(72002),	-- Pattern: Lavaquake Legwraps (RECIPE!)
 						i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
 						i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
 						i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
-						i(72000),	-- Pattern: World Mender's Pants
+						i(72000),	-- Pattern: World Mender's Pants (RECIPE!)
 						i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
 						i(72013),	-- Plans: Foundations of Courage (RECIPE!)
 						i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
@@ -640,10 +643,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78884),	-- Girdle of Fungal Dreams
 						i(78887),	-- Girdle of Soulful Mending
 						i(78882),	-- Nightblind Cinch
-						i(72004),	-- Pattern: Bracers of Unconquered Power
-						i(72003),	-- Pattern: Dreamwraps of the Light
-						i(72002),	-- Pattern: Lavaquake Legwraps
-						i(72000),	-- Pattern: World Mender's Pants
+						i(72004),	-- Pattern: Bracers of Unconquered Power (RECIPE!)
+						i(72003),	-- Pattern: Dreamwraps of the Light (RECIPE!)
+						i(72002),	-- Pattern: Lavaquake Legwraps (RECIPE!)
+						i(72000),	-- Pattern: World Mender's Pants (RECIPE!)
 						i(77192),	-- Ruinblaster Shotgun
 						i(78879),	-- Sash of Relentless Truth
 						i(78878),	-- Spine of the Thousand Cuts

@@ -282,8 +282,43 @@ app:CreateWindow("Debugger", {
 });
 ]]--
 
--- Retail ATT Debugger Logic
 -- TODO: eventually consolidate with above Classic-esque window implementation
+-- Retail ATT Debugger Logic
+local KeyMaps = setmetatable({
+	a = "achievementID",
+	achievement = "achievementID",
+	azessence = "azeriteessenceID",
+	battlepet = "speciesID",
+	c = "currencyID",
+	creature = "npcID",
+	currency = "currencyID",
+	enchant = "spellID",
+	fp = "flightpathID",
+	follower = "followerID",
+	gameobject = "objectID",
+	garrbuilding = "garrisonbuildingID",
+	garrfollower = "followerID",
+	i = "modItemID",
+	item = "modItemID",
+	itemid = "modItemID",
+	mount = "spellID",
+	mountid = "spellID",
+	n = "npcID",
+	npc = "npcID",
+	npcid = "npcID",
+	o = "objectID",
+	object = "objectID",
+	r = "spellID",
+	recipe = "spellID",
+	rfp = "runeforgepowerID",
+	s = "sourceID",
+	source = "sourceID",
+	species = "speciesID",
+	spell = "spellID",
+	talent = "spellID",
+	q = "questID",
+	quest = "questID",
+}, { __index = function(t,key) return key:gsub("id", "ID") end})
 app.LoadDebugger = function()
 	local debuggerWindow = app:GetWindow("Debugger", UIParent, function(self, force)
 		if not self.initialized then
@@ -315,10 +350,12 @@ app.LoadDebugger = function()
 				costTotal = 1,
 				upgradeTotal = 1,
 				icon = 1,
+				HasRetried = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
 				_coord = 1,
 				__merge = 1,
+				__canretry = 1,
 			};
 			local function CleanObject(obj)
 				if obj == nil then return end
@@ -376,16 +413,14 @@ app.LoadDebugger = function()
 				[32642] = 1,	-- Mojodishu (Mammoth)
 				[32641] = 1,	-- Drix Blackwrench (Mammoth)
 			};
-			self:SetData({
-				['text'] = "Session History",
+			self:SetData(app.CreateRawText("Session History", {
 				['icon'] = app.asset("WindowIcon_RaidAssistant"),
 				["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				['options'] = {
-					{
+					app.CreateRawText("Clear History", {
 						["hash"] = "clearHistory",
-						['text'] = "Clear History",
 						['icon'] = 132293,
 						["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
 						["OnUpdate"] = app.AlwaysShowUpdate,
@@ -403,22 +438,22 @@ app.LoadDebugger = function()
 								return true;
 							end
 							row.ref.count = row.ref.count + 1;
-							tinsert(self.data.options, {
-								["hash"] = "restore" .. row.ref.count,
-								['text'] = "Restore Button " .. row.ref.count,
-								['icon'] = app.asset("Button_Reroll"),
-								["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
-								["OnUpdate"] = app.AlwaysShowUpdate,
-								['data'] = copy,
-								['OnClick'] = function(row, button)
-									for i,info in ipairs(row.ref.data) do
-										app.NestObject(self.data, app.__CreateObject(info));
-									end
-									app.AssignChildren(self.data);
-									AfterCombatCallback(self.Update, self, true);
-									return true;
-								end,
-							});
+							tinsert(self.data.options,
+								app.CreateRawText("Restore Button " .. row.ref.count, {
+									["hash"] = "restore" .. row.ref.count,
+									['icon'] = app.asset("Button_Reroll"),
+									["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
+									["OnUpdate"] = app.AlwaysShowUpdate,
+									['data'] = copy,
+									['OnClick'] = function(row, button)
+										for i,info in ipairs(row.ref.data) do
+											app.NestObject(self.data, app.__CreateObject(info));
+										end
+										app.AssignChildren(self.data);
+										AfterCombatCallback(self.Update, self, true);
+										return true;
+									end,
+								}))
 							wipe(self.rawData);
 							wipe(self.data.g);
 							for i=#self.data.options,1,-1 do
@@ -428,26 +463,26 @@ app.LoadDebugger = function()
 							AfterCombatCallback(self.Update, self, true);
 							return true;
 						end,
-					},
+					}),
 				},
 				['g'] = {},
-			});
+			}));
 
 			local function CategorizeObject(info)
 				if info.isVendor then
-					return app.CreateNPC(app.HeaderConstants.VENDORS, { g = { info }})
+					return app.CreateCustomHeader(app.HeaderConstants.VENDORS, { g = { info }})
 				elseif info.questID then
 					if info.isWorldQuest then
-						return app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, { g = { info }})
+						return app.CreateCustomHeader(app.HeaderConstants.WORLD_QUESTS, { g = { info }})
 					else
-						return app.CreateNPC(app.HeaderConstants.QUESTS, { g = { info }})
+						return app.CreateCustomHeader(app.HeaderConstants.QUESTS, { g = { info }})
 					end
 				elseif info.npcID then
-					return app.CreateNPC(app.HeaderConstants.ZONE_DROPS, { g = { info }})
+					return app.CreateCustomHeader(app.HeaderConstants.ZONE_DROPS, { g = { info }})
 				elseif info.objectID then
-					return app.CreateNPC(app.HeaderConstants.TREASURES, { g = { info }})
+					return app.CreateCustomHeader(app.HeaderConstants.TREASURES, { g = { info }})
 				elseif info.unit then
-					return app.CreateNPC(app.HeaderConstants.DROPS, { g = { info }})
+					return app.CreateCustomHeader(app.HeaderConstants.DROPS, { g = { info }})
 				end
 				return info
 			end
@@ -464,7 +499,8 @@ app.LoadDebugger = function()
 						local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 						if pos then
 							local px, py = pos:GetXY();
-							info.coord = { math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID };
+							-- TODO: this would be nice for debugger to collect multiple coords
+							info.coord = { math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID }
 						end
 						info = CategorizeObject(info)
 					end
@@ -484,6 +520,7 @@ app.LoadDebugger = function()
 				end
 
 				if info then
+					-- TODO: assign children on the created object, assign parent directly, nest to data, DGU the group
 					app.NestObject(self.data, app.__CreateObject(info));
 					self:BuildData();
 					AfterCombatCallback(self.Update, self, true);
@@ -551,6 +588,7 @@ app.LoadDebugger = function()
 				end
 			end
 
+			local CleanLink = app.Modules.Item.CleanLink
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
 				-- app.PrintDebug(e, ...);
@@ -715,9 +753,12 @@ app.LoadDebugger = function()
 						info.name = app.GetQuestName(questID)
 						AddObject(info);
 					end
-				-- Capture various personal/party loot received
+				-- Capture various party loot received
 				elseif e == "CHAT_MSG_LOOT" then
 					local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
+					-- don't store loot for the player since that is captured by source
+					if j == app.GUID then return end
+
 					-- "You receive item: item:###" will break the match
 					-- this probably doesn't work in other locales
 					msg = msg:gsub("item: ", "");
@@ -728,53 +769,71 @@ app.LoadDebugger = function()
 						local itemID = GetItemID(itemString);
 						AddObject({ ["unit"] = j, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemString } } });
 					end
+				elseif e == "QUEST_LOOT_RECEIVED" then
+					local questID, itemLink = ...
+					local itemID = GetItemID(itemLink)
+					local info = { ["questID"] = questID, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemLink } } }
+					-- app.PrintDebug("Add Quest Loot from",questID,itemLink,itemID)
+					AddObject(info)
 				-- Capture personal loot sources
+				elseif e == "LOOT_CLOSED" then
+					self:RegisterEvent("LOOT_READY");
+					self:UnregisterEvent("LOOT_CLOSED");
 				elseif e == "LOOT_READY" then
+					-- Only register LOOT_READY once per opened loot
+					-- Need to use LOOT_READY since addons can receive loot before the LOOT_OPENED event
+					self:UnregisterEvent("LOOT_READY");
+					self:RegisterEvent("LOOT_CLOSED");
 					local slots = GetNumLootItems();
-					-- print("Loot Slots:",slots);
-					local loot, source, itemID, info;
+					-- app.PrintDebug("Loot Slots:",slots);
+					local loot, source, info, dropLink
 					local type, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 					local mapID = app.CurrentMapID;
 					if mapID then
 						local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 						if pos then
 							local px, py = pos:GetXY();
-							app.PrintDebug("Loot @ coord", math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID)
+							px = math.ceil(px * 10000) / 100
+							py = math.ceil(py * 10000) / 100
+							-- app.PrintDebug("Loot @ coord", px, py, mapID)
 						end
 					end
 					for i=1,slots,1 do
 						loot = GetLootSlotLink(i);
 						if loot then
-							itemID = GetItemID(loot);
-							if itemID then
+							-- app.PrintDebug("Loot @",i,":",loot)
+							loot = CleanLink(loot)
+							local kind, lootID = (":"):split(loot);
+							kind = KeyMaps[kind]
+							if lootID then lootID = tonumber(select(1, ("|["):split(lootID)) or lootID); end
+							-- app.PrintDebug("Loot @",i,kind,lootID)
+							if lootID and kind then
 								source = { GetLootSourceInfo(i) };
 								for j=1,#source,2 do
-									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(source[j]);
-									-- TODO: test this with Item containers
-									app.print("Add Loot",itemID,"from",type,id)
-									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
-									-- print("Add Loot")
-									-- app.PrintTable(info);
+									dropLink = CleanLink(source[j])
+									-- app.PrintDebug("droplink",dropLink)
+									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
+									-- get Item container link
+									if not id then
+										dropLink = CleanLink(C_Item.GetItemLinkByGUID(dropLink))
+										-- app.PrintDebug("item:droplink",dropLink)
+										type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(dropLink);
+									end
+									type = KeyMaps[type]
+									app.print("Add",kind,"Loot",loot,"from",type,id)
+									info = {
+										[type] = tonumber(id),
+										g = { { [kind] = lootID, rawlink = loot } }
+									}
+									-- try to save the GameTooltip name for objects
+									if info.objectID then
+										local text = GameTooltipTextLeft1:GetText()
+										app.print('ObjectID: '..info.objectID.. ' || ' .. 'Name: ' .. (text or UNKNOWN))
+										info.basename = text or UNKNOWN
+									end
 									AddObject(info);
 								end
-							else
-								app.PrintDebug("No ItemID!",loot)
 							end
-						end
-					end
-				elseif e == "QUEST_LOOT_RECEIVED" then
-					local questID, itemLink = ...
-					local itemID = GetItemID(itemLink)
-					local info = { ["questID"] = questID, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemLink } } }
-					app.PrintDebug("Add Quest Loot from",questID,itemLink,itemID)
-					AddObject(info)
-				elseif e == "LOOT_OPENED" then
-					local guid = GetLootSourceInfo(1)
-					if guid then
-						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = ("-"):split(guid);
-						if(type == "GameObject") then
-							local text = GameTooltipTextLeft1:GetText()
-							app.print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
 						end
 					end
 				end
@@ -789,7 +848,6 @@ app.LoadDebugger = function()
 			self:RegisterEvent("NEW_WMO_CHUNK");
 			self:RegisterEvent("MERCHANT_SHOW");
 			self:RegisterEvent("MERCHANT_UPDATE");
-			self:RegisterEvent("LOOT_OPENED");
 			self:RegisterEvent("LOOT_READY");
 			self:RegisterEvent("CHAT_MSG_LOOT");
 			--self:RegisterAllEvents();

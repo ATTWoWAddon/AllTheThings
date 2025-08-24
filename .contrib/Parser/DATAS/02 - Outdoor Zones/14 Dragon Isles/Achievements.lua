@@ -3,12 +3,12 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(17560, {    -- Ancient Stones of the Dragon Isles
+		ach(17560, {	-- Ancient Stones of the Dragon Isles
 			["sym"] = {{"meta_achievement",
-				17561,    -- Ancient Stones of the Waking Shores
-				17562,    -- Ancient Stones of the Ohn'ahran Plains
-				17563,    -- Ancient Stones of the Azure Span
-				17564,    -- Ancient Stones of Thaldraszus
+				17561,	-- Ancient Stones of the Waking Shores
+				17562,	-- Ancient Stones of the Ohn'ahran Plains
+				17563,	-- Ancient Stones of the Azure Span
+				17564,	-- Ancient Stones of Thaldraszus
 			}},
 			["timeline"] = { ADDED_10_1_0 },
 		}),
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				15924,	-- Thaldraszus: Bronze
 				15936,	-- Thaldraszus Advanced: Bronze
 			}},
-			["g"] = {
+			["groups"] = {
 				i(199669),	-- Spiked Crimson Spaulders
 			},
 		}),
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				15925,	-- Thaldraszus: Silver
 				15937,	-- Thaldraszus Advanced: Silver
 			}},
-			["g"] = {
+			["groups"] = {
 				i(199688),	-- Bronze Racing Enthusiast (PET!)
 			},
 		}),
@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				15926,	-- Thaldraszus: Gold
 				15938,	-- Thaldraszus Advanced: Gold
 			}},
-			["g"] = {
+			["groups"] = {
 				title(478),	-- Isles Racer <Name>
 			},
 		}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				18748,	-- Waking Shores Challenge: Bronze
 				18786,	-- Zaralek Cavern Challenge: Bronze
 			}},
-			["g"] = {
+			["groups"] = {
 				i(208433),	-- Bronze Racer's Pennant (TOY!)
 			},
 		})),
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				18750,	-- Waking Shores Challenge: Gold
 				18788,	-- Zaralek Cavern Challenge: Gold
 			}},
-			["g"] = {
+			["groups"] = {
 				title(523),	-- Isles Ace <Name>
 			}
 		})),
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					16510,	-- Mechanical Battler of the Dragon Isles
 					16511,	-- Undead Battler of the Dragon Isles
 				}},
-				["g"] = {
+				["groups"] = {
 					i(200874),	-- Lady Feathersworth (PET!)
 				},
 			})),
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 		ach(18559, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Boxes, Many Rockses
 			["cost"] = {{"i", 199216, 50 }},	-- 50x A Box of Rocks
-			["g"] = {
+			["groups"] = {
 				i(207099),	-- Tiny Box of Tiny Rocks (TOY!)
 			},
 		})),
@@ -723,7 +723,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				17206,	-- Thaldraszus Reverse: Gold
 				17197,	-- Waking Shores Reverse: Gold
 			}},
-			["g"] = {
+			["groups"] = {
 				title(490),	-- Reverse Racer <Name>
 			}
 		})),

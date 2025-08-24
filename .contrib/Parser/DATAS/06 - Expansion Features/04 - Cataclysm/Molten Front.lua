@@ -300,8 +300,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 			}),
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill
-					["qg"] = 53196,	-- Ricket
 					["sourceQuest"] = 29281,	-- Additional Armaments
+					["qg"] = 53196,	-- Ricket
 					["coord"] = { 47.0, 89.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -320,8 +320,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29195, {	-- A Ritual of Flame
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29145,	-- Opening the Door
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- Open the portal to the Firelands
@@ -331,11 +331,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29298, {	-- A Smoke-Stained Locket
+					["sourceAchievement"] = 5859,	-- Legacy of Leyara
 					["providers"] = {
 						{ "i", 69854 },	-- Smoke-Stained Locket
 						{ "n", 11801 },	-- Rabine Saturna
 					},
-					["sourceAchievement"] = 5859,	-- Legacy of Leyara
 					["maps"] = { MOONGLADE },
 					["groups"] = {
 						i(69854, { -- Smoke-Stained Locket
@@ -344,17 +344,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29281, {	-- Additional Armaments
-					["qg"] = 53214,	-- Damek Bloombeard
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 53214,	-- Damek Bloombeard
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 				}),
 				q(29139, {	-- Aggressive Growth
-					["qg"] = 52467,	-- Rayne Feathersong
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52467,	-- Rayne Feathersong
 					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -369,13 +369,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29284, {	-- Aid of the Ancients
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29283,	-- Calling the Ancients
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29125, {	-- Between the Trees
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -390,8 +390,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29137, {	-- Breach in the Defenses
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -407,8 +407,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29138, {	-- Burn Victims
-					["qg"] = 53080,	-- Captain Irontree
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 53080,	-- Captain Irontree
 					["coords"] = {
 						{ 45.6, 85.8, THE_MOLTEN_FRONT },
 						{ 46.8, 90.0, THE_MOLTEN_FRONT },
@@ -425,11 +425,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29297, {	-- Bye Bye Burdy
-					["qg"] = 54163,	-- Ricket
 					["sourceQuests"] = {
 						29281,	-- Additional Armaments
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 54163,	-- Ricket
 					["coord"] = { 66.2, 65.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -443,8 +443,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29147, {	-- Call the Flock
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -470,34 +470,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29199, {	-- Calling for Reinforcements
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
 				}),
 				q(29283, {	-- Calling the Ancients
-					["qg"] = 53882,	-- Varlan Highbough
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 53882,	-- Varlan Highbough
 					["coord"] = { 44.4, 88.4, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 				}),
 				q(29197, {	-- Caught Unawares
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29196,	-- To the Sanctuary!
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29181, {	-- Druids of the Talon
-					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["maps"] = { MOUNT_HYJAL },
+					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29160, {	-- Egg-stinction
-					["qg"] = 52921,	-- Deldren Ravenelm
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
+					["qg"] = 52921,	-- Deldren Ravenelm
 					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -513,8 +513,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29122, {	-- Echoes of Nemesis
-					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29101,	-- Punting Season
+					["qg"] = 52671,	-- Mylune
 					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_1_0 },
 					["isDaily"] = true,
@@ -527,8 +527,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29255, {	-- Embergris
-					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
+					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -543,12 +543,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29210, {	-- Enduring the Heat
-					["qg"] = 52494,	-- Marin Bladewing
 					["sourceQuests"] = {
 						29211,	-- Solar Core Destruction
 						29192,	-- The Wardens are Watching
 					},
 					["sourceQuestNumRequired"] = 1,
+					["qg"] = 52494,	-- Marin Bladewing
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -581,11 +581,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29275, {	-- Fandral's Methods
-					["qg"] = 52478,	-- Anren Shadowseeker
 					["sourceQuests"] = {
 						29272,	-- Need... Water... Badly...
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 52478,	-- Anren Shadowseeker
 					["coord"] = { 65.6, 66.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -623,17 +623,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29279, {	-- Filling the Moonwell
-					["qg"] = 53881,	-- Ayla Shadowstorm
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 53881,	-- Ayla Shadowstorm
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 				}),
 				q(29265, {	-- Fire Flowers
-					["qg"] = 52444,	-- Thisalee Crow
 					["sourceQuest"] = 29206,	-- Into the Fire
+					["qg"] = 52444,	-- Thisalee Crow
 					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -673,8 +673,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29264, {	-- Flamewakers of the Molten Flow
-					["qg"] = 52444,	-- Thisalee Crow
 					["sourceQuest"] = 29206,	-- Into the Fire
+					["qg"] = 52444,	-- Thisalee Crow
 					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -689,11 +689,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29182, {	-- Flight of the Storm Crows
-					["providers"] = {
-						{ "n", 50068 },	-- Isara Riverstride
-						{ "n", 52669 },	-- Matoclaw
-					},
 					["sourceQuest"] = 29181,	-- Druids of the Talon
+					["qgs"] = {
+						50068,	-- Isara Riverstride
+						52669,	-- Matoclaw
+					},
 					["coords"] = {
 						{ 27.1, 62.5, MOUNT_HYJAL },
 						{ 42.6, 45.6, MOUNT_HYJAL },
@@ -721,7 +721,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["lvl"] = lvlsquish(85, 85, 32),
 				})),
 				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuests"] = {
 						25372,	-- Aessina's Miracle
 						-- #if AFTER 4.2.0
@@ -729,12 +728,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						29390,	-- Guardians of Hyjal: Call of the Ancients (H)
 						-- #endif
 					},
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(29179, {	-- Hostile Elements
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -748,8 +748,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29274, {	-- Hounds of Shannox
-					["qg"] = 52478,	-- Anren Shadowseeker
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
+					["qg"] = 52478,	-- Anren Shadowseeker
 					["coord"] = { 42.0, 61.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -764,8 +764,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29273, {	-- How Hot
-					["qg"] = 52477,	-- Tholo Whitehoof
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
+					["qg"] = 52477,	-- Tholo Whitehoof
 					["coord"] = { 51.2, 85.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -785,8 +785,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29203, {	-- Into the Depths
-					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29280,	-- Nourishing Waters
+					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["groups"] = {
 						objective(1, {	-- Leyara slain
@@ -800,8 +800,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29206, {	-- Into the Fire
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29181,	-- Druids of the Talon
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.8, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -815,21 +815,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29200, {	-- Leyara
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29199,	-- Calling for Reinforcements
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
 				}),
 				q(29254, {	-- Little Lasher
-					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29249,	-- Planting Season
+					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
 					["groups"] = {
 						currency(416),	-- Mark of the World Tree (x5)
 					},
 				}),
 				q(29278, {	-- Living Obsidium
-					["qg"] = 53196,	-- Ricket
 					["sourceQuest"] = 29281,	-- Additional Armaments
+					["qg"] = 53196,	-- Ricket
 					["coord"] = { 47.0, 89.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -846,11 +846,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29289, {	-- Mother's Malice
-					["qg"] = 52491,	-- Morthis Whisperwing
 					["sourceQuests"] = {
 						29293,	-- Singed Wings
 						29296,	-- Territorial Birds
 					},
+					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -861,8 +861,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29162, {	-- Nature's Blessing
-					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29161,	-- Those Bears Up There
+					["qg"] = 52671,	-- Mylune
 					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_1_0 },
 					["isDaily"] = true,
@@ -877,10 +877,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29272, {	-- Need... Water... Badly...
-					["qg"] = 53233,	-- Anren Shadowseeker
-					["sourceQuest"] = 29181,	-- Druids of the Talon
-					["coord"] = { 51.8, 31.0, THE_MOLTEN_FRONT },
 					["description"] = "Anren Shadowseeker is found inside The Molten Flow, which requires you to pick 'Into the Fire' as the second stage of assault on the Molten Front.",
+					["sourceQuest"] = 29181,	-- Druids of the Talon
+					["qg"] = 53233,	-- Anren Shadowseeker
+					["coord"] = { 51.8, 31.0, THE_MOLTEN_FRONT },
 					["groups"] = {
 						objective(1, {	-- Escort Anren to the front of the cave
 							["provider"] = { "n", 53234 },	-- Anren Shadowseeker
@@ -889,12 +889,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29280, {	-- Nourishing Waters
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29279,	-- Filling the Moonwell
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29145, {	-- Opening the Door
-					["qg"] = 52669,	-- Matoclaw
 					-- #if AFTER 4.2.0
 					["sourceQuests"] = {
 						29387,	-- Guardians of Hyjal: Firelands Invasion! (A)
@@ -902,15 +901,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						29389,	-- Guardians of Hyjal: Firelands Invasion! (both)
 					},
 					-- #endif
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(29287, {	-- Peaked Interest
-					["qg"] = 52491,	-- Morthis Whisperwing
 					["sourceQuests"] = {
 						29265,	-- Fire Flowers
 						29264,	-- Flamewakers of the Molten Flow
 					},
+					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -925,8 +925,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29164, {	-- Perfecting Your Howl
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -956,8 +956,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29249, {	-- Planting Season
-					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29245,	-- The Mysterious Seed
+					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
 					["groups"] = {
 						objective(1, {	-- Acorn Planted
@@ -970,8 +970,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29101, {	-- Punting Season
-					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52671,	-- Mylune
 					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -985,8 +985,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29159, {	-- Pyrorachnophobia
-					["qg"] = 52921,	-- Deldren Ravenelm
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
+					["qg"] = 52921,	-- Deldren Ravenelm
 					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1001,8 +1001,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29123, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1031,8 +1031,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29127, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1061,8 +1061,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29149, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1091,8 +1091,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29163, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1121,8 +1121,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29248, {	-- Releasing the Pressure
-					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1134,8 +1134,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29246, {	-- Relieving the Pain
-					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1150,8 +1150,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29293, {	-- Singed Wings
-					["qg"] = 53259,	-- Arthorn Windsong
 					["sourceQuest"] = 29206,	-- Into the Fire
+					["qg"] = 53259,	-- Arthorn Windsong
 					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1166,8 +1166,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29211, {	-- Solar Core Destruction
-					["qg"] = 52494,	-- Marin Bladewing
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
+					["qg"] = 52494,	-- Marin Bladewing
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1179,8 +1179,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29299, {	-- Some Like It Hot
-					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
+					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1191,8 +1191,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29288, {	-- Starting Young
-					["qg"] = 52491,	-- Morthis Whisperwing
 					["sourceQuest"] = 29265,	-- Fire Flowers
+					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1207,8 +1207,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29257, {	-- Steal Magmolias
-					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
+					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1224,10 +1224,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29243, {	-- Strike at the Heart (Stage 2: The Forlorn Spire)
-					["qgs"] = {
-						53056,	-- Shalis Darkhunter
-						52495,	-- Shalis Darkhunter
-					},
 					["sourceQuests"] = {
 						29283,	-- Calling the Ancients
 						29160,	-- Egg-stinction
@@ -1237,6 +1233,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						29189,	-- Wicked Webs
 					},
 					["sourceQuestNumRequired"] = 4,
+					["qgs"] = {
+						53056,	-- Shalis Darkhunter
+						52495,	-- Shalis Darkhunter
+					},
 					["coords"] = {
 						{ 51.6, 82.6, THE_MOLTEN_FRONT },
 						{ 57.6, 49.6, THE_MOLTEN_FRONT },
@@ -1257,7 +1257,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29305, {	-- Strike at the Heart (Stage 2: Into the Fire)
-					["qg"] = 52492,	-- Choluna <Druid of the Talon>
 					["sourceQuests"] = {
 						29283,	-- Calling the Ancients
 						29290,	-- Fire in the Skies
@@ -1266,6 +1265,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						29288,	-- Starting Young
 					},
 					["sourceQuestNumRequired"] = 4,
+					["qg"] = 52492,	-- Choluna <Druid of the Talon>
 					["coord"] = { 36.1, 56.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1283,8 +1283,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29166, {	-- Supplies for the Other Side
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1298,8 +1298,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29296, {	-- Territorial Birds
-					["qg"] = 53259,	-- Arthorn Windsong
 					["sourceQuest"] = 29206,	-- Into the Fire
+					["qg"] = 53259,	-- Arthorn Windsong
 					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1314,11 +1314,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29295, {	-- The Bigger They Are
-					["qg"] = 53304,	-- Ricket
 					["sourceQuests"] = {
 						29281,	-- Additional Armaments
 						29181,	-- Druids of the Talon
 					},
+					["qg"] = 53304,	-- Ricket
 					["coord"] = { 36.0, 56.6, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1333,8 +1333,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29165, {	-- The Call of the Pack
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29164,	-- Perfecting Your Howl
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1349,8 +1349,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29304, {	-- The Dogs of War
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1365,16 +1365,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29202, {	-- The Fate of Runetotem
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29276, {	-- The Flame Spider Queen
-					["qg"] = 52477,	-- Tholo Whitehoof
 					["sourceQuests"] = {
 						29272,	-- Need... Water... Badly...
 						29214,	-- The Shadow Wardens
 					},
+					["qg"] = 52477,	-- Tholo Whitehoof
 					["coord"] = { 66.0, 65.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1396,8 +1396,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29205, {	-- The Forlorn Spire
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29204,	-- The Warden's Charge
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1405,8 +1405,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29141, {	-- The Harder They Fall
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1418,21 +1418,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29215, {	-- The Hunt Begins
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29245, {	-- The Mysterious Seed
+					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["providers"] = {
 						{ "o", 208535 },	-- Dried Acorn
 						{ "i",  69675 },	-- Dried Acorn
 					},
-					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["coord"] = { 70.1, 39.6, THE_MOLTEN_FRONT },
 				}),
 				q(29126, {	-- The Power of Malorne
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29125,	-- Between the Trees
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1447,8 +1447,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29128, {	-- The Protectors of Hyjal
-					["qg"] = 53073,	-- Captain Soren Moonclaw
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 53073,	-- Captain Soren Moonclaw
 					["coord"] = { 27.1, 61.6, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1466,31 +1466,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29311, {	-- The Rest is History
+					["sourceQuest"] = 29310,	-- The Tipping Point
 					["providers"] = {
 						{ "n", 11801 },	-- Rabine Saturna
 						{ "i", 69855 },	-- Smoke-Stained Locket
 					},
-					["sourceQuest"] = 29310,	-- The Tipping Point
 					["coord"] = { 7.6, 34.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(71259),	-- Leyara's Locket (TOY!)
 					},
 				}),
 				q(29198, {	-- The Sanctuary Must Not Fall
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29197,	-- Caught Unawares
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29214, {	-- The Shadow Wardens
-					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["maps"] = { MOUNT_HYJAL },
+					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29310, {	-- The Tipping Point
-					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29303,	-- Tragedy and Family
+					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 40.5, 53.5, ASHENVALE },
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
@@ -1504,8 +1504,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29192, {	-- The Wardens are Watching
-					["qg"] = 52494,	-- Marin Bladewing
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
+					["qg"] = 52494,	-- Marin Bladewing
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1516,16 +1516,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29204, {	-- The Warden's Charge
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isBreadcrumb"] = true,
 					["isDaily"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29161, {	-- Those Bears Up There
-					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52671,	-- Mylune
 					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1539,19 +1539,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29201, {	-- Through the Gates of Hell
-					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29200,	-- Leyara
+					["qg"] = 52845,	-- Malfurion Stormrage
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 				}),
 				q(29196, {	-- To the Sanctuary!
-					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29195,	-- A Ritual of Flame
+					["qg"] = 52845,	-- Malfurion Stormrage
 					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
 				}),
 				q(29142, {	-- Traitors Return
-					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52824,	-- General Taldris Moonfall
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1569,8 +1569,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29303, {	-- Tragedy and Family
-					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
+					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 					["maps"] = { ASHENVALE },
 					["groups"] = {
@@ -1584,8 +1584,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29247, {	-- Treating the Wounds
-					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["qg"] = 52986,	-- Dorda'en Nightweaver
 					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1597,21 +1597,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29302, {	-- Unlocking the Secrets Within
+					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 					["providers"] = {
 						{ "n", 11801 },	-- Rabine Saturna
 						{ "i", 69855 },	-- Smoke-Stained Locket
 					},
-					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 				}),
 				q(29282, {	-- Well Armed
-					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29281,	-- Additional Armaments
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 				}),
 				q(29189, {	-- Wicked Webs
-					["qg"] = 52921,	-- Deldren Ravenelm
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
+					["qg"] = 52921,	-- Deldren Ravenelm
 					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1629,11 +1629,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29148, {	-- Wings Aflame
-					["qg"] = 52669,	-- Matoclaw
+					["description"] = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
 					["sourceQuest"] = 29147,	-- Call the Flock
+					["qg"] = 52669,	-- Matoclaw
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["description"] = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
 					["groups"] = {
 						objective(1, {	-- 0/1 Millagazor slain
 							["providers"] = {
@@ -1646,8 +1646,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29143, {	-- Wisp Away
-					["qg"] = 52467,	-- Rayne Feathersong
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["qg"] = 52467,	-- Rayne Feathersong
 					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
@@ -1663,7 +1663,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				n(54338, {	-- Anthriss
 					["coord"] = { 54.8, 41.0, THE_MOLTEN_FRONT },
 				}),
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207507, {	-- Dark Iron Treasure Chest
 					--["modelScale"] = 1.5,
 					["coords"] = {
 						{ 34.3, 48.3, THE_MOLTEN_FRONT },	-- Floating rock on the way to Fireplume Peak?
@@ -1739,7 +1739,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						i(70113),	-- Moon Blessed Band
 						i(70142),	-- Moonwell Chalice
 						i(70143),	-- Moonwell Phial
-						i(70176),	-- Pattern: Luxurious Silk Gem Bag
+						i(70176),	-- Pattern: Luxurious Silk Gem Bag (RECIPE!)
 						i(70174),	-- Pattern: Royal Scribe's Satchel (RECIPE!)
 						i(70175),	-- Pattern: Triple-Reinforced Mining Bag (RECIPE!)
 						-- #if BEFORE MOP

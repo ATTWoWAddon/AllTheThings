@@ -1,10 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_VRYKUL, {
 			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
@@ -26,7 +23,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["provider"] = { "n", 229716 },	-- Stellin Verasa
 						["coord"] = { 71.0, 39.6, SIREN_ISLE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(227405),	-- Research Journal (QI!)
 							o(457181,{	-- Interesting Notes
 								i(227406),	-- Interesting Notes (QI!)
@@ -56,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 							{ 71.4, 44.1, SIREN_ISLE },
 						},
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(228988),	-- Rock Reviver (QI!)
 						},
 					}),
@@ -71,19 +68,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					n(230137, {	-- Asbjorn the Bloodsoaked
 						["coord"] = { 63.9, 87.3, SIREN_ISLE },
 						["questID"] = 84805,
-						["g"] = {
+						["groups"] = {
 							i(234972),	-- Bloodwake Missive [book]
 						},
 					}),
 				})),
 				n(TREASURES, {
+					o(493375, {	-- Rune-Sealed Coffer
+						["coord"] = { 67.8, 73.5, SIREN_ISLE },
+						["questID"] = 86171,
+						["isWeekly"] = true,
+					}),
 				}),
 				n(WORLD_QUESTS, {
 					["sourceQuests"] = {
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 						84725,	-- The Circlet Calls
 					},
-					["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+					["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 						q(84852, {	-- Legacy of the Vrykul
 							["groups"] = {
 								i(228648),	-- Roaring War-Queen's Citrine
@@ -92,7 +94,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(233494, {	-- Muddy Snapdragon Treat
+					i(233494, {	-- Muddy Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Vrykul.",
 						-- n: 232324 / n: 232323
 					}),
@@ -100,4 +102,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			},
 		}),
 	}),
-})));
+}));

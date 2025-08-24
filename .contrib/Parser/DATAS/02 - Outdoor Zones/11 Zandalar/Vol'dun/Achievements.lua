@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					12849,	-- Treasures of Vol'dun
 				}},
 			}),
-			explorationAch(12560),	-- Explore Vol'dun
+			ach(12560),	-- Explore Vol'dun
 			ach(13016, {	-- Scavenger of the Sands
 				crit(41342, {	-- Jason's Rusty Blade
 					["_quests"] = { 53132 },
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(13011),		-- Scourge of Zem'lan
 			ach(12478, {	-- Secrets in the Sands
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(40280, {	-- Unlikely Allies
 						["sourceQuest"] = 51364,	-- An Explosive Exit
 					}),

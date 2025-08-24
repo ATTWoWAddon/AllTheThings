@@ -7,6 +7,7 @@ SANCTUM_UPGRADES = createHeader({
 		de = "Sanktumaufwertungen",
 		fr = "Améliorations du sanctum",
 		it = "Potenziamenti al Santuario",
+		mx = "Mejoras del sagrario",
 		pt = "Aprimoramentos de Santuário",
 		ru = "Улучшения для Обители",
 		ko = "성소 강화",

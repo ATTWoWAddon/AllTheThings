@@ -18,9 +18,70 @@ NOBLEGARDEN_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
+		es = "Jardín noble",
+		mx = "Jardín noble",
 		-- #endif
 	},
 });
+local function BrightlyColoredEgg(groups)
+	local egg
+	-- #IF ANYCLASSIC
+	-- Classic uses either a raw item with an object provider, or pre-wotlk a direct object
+	if true then
+		egg = {
+			-- #if AFTER WRATH
+			["itemID"] = 45072,	-- Brightly Colored Egg
+			["providers"] = {
+				{ "o", 113768 },	-- Brightly Colored Egg
+				{ "o", 113769 },	-- Brightly Colored Egg
+				{ "o", 113770 },	-- Brightly Colored Egg
+				{ "o", 113771 },	-- Brightly Colored Egg
+			},
+			-- #else
+			["objectID"] = 113768,	-- Brightly Colored Egg
+			-- #endif
+			["groups"] = groups,
+		}
+	end
+	-- #ELSE
+	-- Retail has an Item looted from an Object. To be consistent with all other Items looted from Objects, we want to
+	-- explicitly show this relationship
+	if true then
+		egg =
+		o_repeated({	-- Brightly Colored Egg
+			-- Objects
+			o(113768),
+			o(113769),
+			o(113770),
+			o(113771),
+
+			-- Items
+			i(45072, groups),	-- Brightly Colored Egg
+		})
+	end
+	-- #ENDIF
+
+	egg.description = "These eggs can be found spread out in all of the starting zones."
+	egg.maps = {
+		DUROTAR,
+		MULGORE,
+		TIRISFAL_GLADES,
+		DUN_MOROGH,
+		ELWYNN_FOREST,
+		TELDRASSIL,
+		-- #if AFTER TBC
+		EVERSONG_WOODS,
+		AZUREMYST_ISLE,
+		-- #endif
+		-- #if AFTER DF
+		VALDRAKKEN,
+		-- #endif
+		-- #if AFTER TWW
+		DORNOGAL,
+		-- #endif
+	}
+	return egg
+end
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
@@ -43,9 +104,25 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
+	i(213073, {	-- Faded Floral Staff
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(213076, {	-- Orchid Bow-quet
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(213064, {	-- Paradise's Violet Axe
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
 	i(74283, {	-- Pink Spring Circlet
 		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+	}),
+	i(213070, {	-- Pristine Floral Stalk
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(44803, {	-- Spring Circlet
 		["timeline"] = { ADDED_3_1_0 },
@@ -57,6 +134,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 	i(6833, {	-- White Tuxedo Shirt
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
+	}),
+	i(213067, {	-- Violet Floral Edge
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(164924, {	-- Yellow Spring Circlet
 		["timeline"] = { ADDED_8_1_5 },
@@ -112,66 +193,48 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 };
 root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
-	{	-- Brightly Colored Egg
-		-- #if AFTER WRATH
-		["itemID"] = 45072,	-- Brightly Colored Egg
-		["provider"] = { "o", 113768 },	-- Brightly Colored Egg
-		-- #else
-		["objectID"] = 113768,	-- Brightly Colored Egg
-		-- #endif
-		["description"] = "These eggs can be found spread out in all of the starting zones.",
-		["maps"] = {
-			DUROTAR,
-			MULGORE,
-			TIRISFAL_GLADES,
-			DUN_MOROGH,
-			ELWYNN_FOREST,
-			TELDRASSIL,
-			-- #if AFTER TBC
-			EVERSONG_WOODS,
-			AZUREMYST_ISLE,
-			-- #endif
-		},
-		["groups"] = {
-			i(44791, {	-- Noblegarden Chocolate
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(44806, {	-- Brightly Colored Shell Fragment
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(44792, {	-- Blossoming Branch
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(44803, {	-- Spring Circlet
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(45073, {	-- Spring Flowers
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(44794, {	-- Spring Rabbit (PET!)
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(44800, {	-- Spring Robes
-				["timeline"] = { ADDED_3_1_0 },
-			}),
-			i(72145, {	-- Swift Springstrider (MOUNT!)
-				["timeline"] = { ADDED_4_3_0 },
-			}),
+	BrightlyColoredEgg({
+		i(44791, {	-- Noblegarden Chocolate
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(44806, {	-- Brightly Colored Shell Fragment
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(44792, {	-- Blossoming Branch
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(44803, {	-- Spring Circlet
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(45073, {	-- Spring Flowers
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(44794, {	-- Spring Rabbit (PET!)
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(44800, {	-- Spring Robes
+			["timeline"] = { ADDED_3_1_0 },
+		}),
+		i(72145, {	-- Swift Springstrider (MOUNT!)
+			["timeline"] = { ADDED_4_3_0 },
+		}),
 
-			i(19028, {	-- Elegant Dress
-				["timeline"] = { REMOVED_7_2_5 },
-			}),
-			i(6835, {	-- Black Tuxedo Pants
-				["timeline"] = { REMOVED_7_2_5 },
-			}),
-			i(6833),	-- White Tuxedo Shirt
-			-- #if BEFORE 3.1.0.9733
-			i(7807),	-- Candy Bar
-			i(7808),	-- Chocolate Square
-			i(7806),	-- Lollipop
-			-- #endif
-		},
-	},
+		i(19028, {	-- Elegant Dress
+			["timeline"] = { REMOVED_7_2_5 },
+		}),
+		i(6835, {	-- Black Tuxedo Pants
+			["timeline"] = { REMOVED_7_2_5 },
+		}),
+		i(6833),	-- White Tuxedo Shirt
+		-- #if BEFORE 3.1.0.9733
+		i(7807),	-- Candy Bar
+		i(7808),	-- Chocolate Square
+		i(7806),	-- Lollipop
+		-- #endif
+		i(155905, {	-- Cursed Rabbit's Foot
+			["timeline"] = { ADDED_7_3_5 },
+		}),
+	}),
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
 		ach(2797, {	-- Noble Gardener (A)
@@ -426,7 +489,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isYearly"] = true,
 		}),
 		q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket (A)
-			["qg"] = 32836,	-- Noblegarden Vendor
+			["qgs"] = {
+				32836,	-- Noblegarden Vendor
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
+				-- #endif
+			},
 			["coords"] = {
 				{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 				-- #if AFTER CATA
@@ -437,6 +505,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 56.0, 58.7, TELDRASSIL },	-- Dolanaar
 				{ 43.0, 65.3, ELWYNN_FOREST },	-- Goldshire
 				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
+				-- #endif
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -449,6 +520,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(44802, {	-- Borrowed Egg Basket
 					["timeline"] = { ADDED_3_1_0 },
+					-- #if BEFORE 10.0.5
+					-- #if NOT COMMON_QUALITY_TRANSMOGS
+					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
+					-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+					["ignoreSource"] = true,
+					-- #endif
+					-- #endif
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
@@ -459,7 +537,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket (H)
-			["qg"] = 32837,	-- Noblegarden Merchant
+			["qgs"] = {
+				32837,	-- Noblegarden Merchant
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
+				-- #endif
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 47.11, 59.89, MULGORE },	-- Bloodhoof Village
@@ -472,6 +555,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 47.6, 47.3, EVERSONG_WOODS },	-- Falconwing Square
 				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
 				-- #endif
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
+				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
@@ -483,6 +569,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(44802, {	-- Borrowed Egg Basket
 					["timeline"] = { ADDED_3_1_0 },
+					-- #if BEFORE 10.0.5
+					-- #if NOT COMMON_QUALITY_TRANSMOGS
+					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
+					-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+					["ignoreSource"] = true,
+					-- #endif
+					-- #endif
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
@@ -501,6 +594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				18927,	-- Human Commoner
 				19173,	-- Night Elf Commoner
 			},
+			["timeline"] = { ADDED_3_1_0 },
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
@@ -521,7 +615,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				THE_STORM_PEAKS,
 				WINTERSPRING,
 			},
-			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -535,6 +628,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				19176,	-- Tauren Commoner
 				19177,	-- Troll Commoner
 			},
+			["timeline"] = { ADDED_3_1_0 },
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
@@ -555,17 +649,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				UNDERCITY,
 				WINTERSPRING,
 			},
-			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 		q(13480, {	-- The Great Egg Hunt (A)
-			["qg"] = 32799,	-- Spring Collector
 			["sourceQuests"] = {
 				13484,	-- Spring Gathers (A)
 				-- #if AFTER DF
 				74120,	-- A Spring Awakening (A)
+				-- #endif
+			},
+			["qgs"] = {
+				32799,	-- Spring Collector
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
 				-- #endif
 			},
 			["coords"] = {
@@ -574,6 +672,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 55.59, 51.36, TELDRASSIL },	-- Dolanaar
 				{ 42.98, 65.40, ELWYNN_FOREST },	-- Goldshire
 				{ 53.99, 50.70, DUN_MOROGH },	-- Kharanos
+				-- #IF AFTER TWW
+				{ 46.0, 54.9, DORNOGAL },	-- Dornogal
+				-- #ENDIF
 				-- #else
 				{ 48.9, 50.0, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 				{ 55.9, 58.8, TELDRASSIL },	-- Dolanaar
@@ -594,12 +695,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(13479, {	-- The Great Egg Hunt (H)
-			["qg"] = 32798,	-- Spring Gatherer
 			["sourceQuests"] = {
 				13483,	-- Spring Gathers (H)
 				-- #if AFTER DF
 				74875,	-- A Spring Awakening (H)
 				-- #endif
+			},
+			["qgs"] = {
+				32798,	-- Spring Gatherer
+				-- #IF AFTER TWW
+				215033, -- Spring Sorter
+				-- #ENDIF
 			},
 			["coords"] = {
 				-- #if AFTER CATA
@@ -607,6 +713,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 61.63, 53.12, TIRISFAL_GLADES },	-- Brill
 				{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square
 				{ 51.82, 42.06, DUROTAR },	-- Razor Hill
+				-- #IF AFTER TWW
+				{ 46.0, 54.9, DORNOGAL },	-- Dornogal
+				-- #ENDIF
 				-- #else
 				{ 46.8, 60.3, MULGORE },	-- Bloodhoof Village
 				{ 61.7, 53.2, TIRISFAL_GLADES },	-- Brill
@@ -630,18 +739,43 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	-----------------
 	-- 2024 Update --
 	-----------------
-	n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6 }, }, {
+	n(QUESTS, bubbleDownFiltered({
+		["timeline"] = { ADDED_10_2_6 },
+		["isYearly"] = true,
+	},FILTERFUNC_questID,{
 		q(79134, {	-- A Spring Awakening (A)
-			["qg"] = 199261,	-- Holiday Enthusiast
-			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["qgs"] = {
+				199261,	-- Holiday Enthusiast
+				-- #if AFTER TWW
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
+			},
+			["coords"] = {
+				{ 31.6, 63.1, VALDRAKKEN },
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
+				{ 55.5, 61.2, DORNOGAL },
+				-- #endif
+			},
 			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
 		}),
 		q(79136, {	-- A Spring Awakening (H)
-			["qg"] = 199261,	-- Holiday Enthusiast
-			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["qgs"] = {
+				199261,	-- Holiday Enthusiast
+				-- #if AFTER TWW
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
+			},
+			["coords"] = {
+				{ 31.6, 63.1, VALDRAKKEN },
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
+				{ 55.5, 61.2, DORNOGAL },
+				-- #endif
+			},
 			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
 		}),
 		q(79322, {	-- What the Duck? (A)
 			["qg"] = 211646,	-- Zinnia Brooks
@@ -668,22 +802,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79323, {	-- A Fowl Concoction (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79322,	-- What the Duck? (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79576, {	-- A Fowl Concoction (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79575,	-- What the Duck? (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79330, {	-- Duck Tales (A)
-			["qg"] = 216129,	-- Emmery Fiske
 			["sourceQuest"] = 79323,	-- A Fowl Concoction (A)
+			["qg"] = 216129,	-- Emmery Fiske
 			["coord"] = { 42.0, 64.9, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -692,8 +826,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79577, {	-- Duck Tales (H)
-			["qg"] = 217147,	-- Tethris Dewgazer
 			["sourceQuest"] = 79576,	-- A Fowl Concoction (H)
+			["qg"] = 217147,	-- Tethris Dewgazer
 			["coord"] = { 52.6, 41.1, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -702,8 +836,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79331, {	-- Just a Waddle Away (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79330,	-- Duck Tales (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -717,13 +851,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
-					i(212643),	-- Golden Egg Heirloom (QI!)
+					["coord"] = { 30.4, 91.3, ELWYNN_FOREST },
+					["groups"] = { i(212643) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),
 		q(79578, {	-- Just a Waddle Away (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79577,	-- Duck Tales (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -737,31 +872,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
-					i(216489),	-- Golden Egg Heirloom (QI!)
+					["coord"] = { 44.5, 35.2, DUROTAR },
+					["groups"]  = { i(216489) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),
+	})),
+	n(QUESTS, bubbleDownFiltered({
+		["timeline"] = { ADDED_10_2_6 },
+		["isDaily"] = true,
+	},FILTERFUNC_questID,{
 		q(78274, {	-- Quacking Down (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79331,	-- Just a Waddle Away (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79135, {	-- Quacking Down (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79578,	-- Just a Waddle Away (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(73192, {	-- Feathered Fiend (A)
 			["provider"] = { "i", 210594 },	-- Noblegarden Trinket (QI!)
 			["maps"] = ELWYNN_FOREST,
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
@@ -793,7 +931,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["provider"] = { "i", 216932 },	-- Noblegarden Trinket (QI!)
 			["maps"] = DUROTAR,
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket

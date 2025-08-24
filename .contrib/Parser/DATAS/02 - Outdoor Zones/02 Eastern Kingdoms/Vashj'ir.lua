@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26193,	-- Defending the Rift (A)
 						-- TODO: There are a lot more source quests than just this, but no good info on what they are
 					},
+					["maps"] = { VASHJIR_ABYSSAL_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5319, {	-- 20,000 Leagues Under the Sea (H)
@@ -21,9 +22,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26194,	-- Defending the Rift (H)
 						-- TODO: There are a lot more source quests than just this, but no good info on what they are
 					},
+					["maps"] = { VASHJIR_ABYSSAL_DEPTHS },
 					["races"] = HORDE_ONLY,
 				}),
-				explorationAch(4825, {	-- Explore Vashj'ir
+				ach(4825, {	-- Explore Vashj'ir
 					["maps"] = {
 						VASHJIR_KELPTHAR_FOREST,
 						VASHJIR_ABYSSAL_DEPTHS,
@@ -40,47 +42,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4869, {	-- Sinking into Vashj'ir (A)
 					["races"] = ALLIANCE_ONLY,
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Defense of The Briny Cutter
-							["_quests"] = { 25558 },	-- All or Nothing
-						}),
-						crit(2, {	-- Smuggler's Scar
-							["_quests"] = { 25638 },	-- A Desperate Plea
-						}),
-						crit(3, {	-- A Budding Treasure Hunter
-							["_quests"] = { 25743 },	-- Decisions, Decisions
-						}),
-						crit(4, {	-- The Clutch
-							["sourceQuests"] = {
-								25888,	-- Decompression
-								27708,	-- The Warden's Time
-								25885,	-- What? What? In My Gut...?
-							},
-						}),
-						crit(5, {	-- Silver Tide Hollow
-							["_quests"] = { 25456 },	-- Back in One Piece
-						}),
-						crit(6, {	-- Nespirah
-							["_quests"] = { 25922 },	-- Waking the Beast
-						}),
-						crit(7, {	-- Visions of the Past
-							["_quests"] = { 25626 },	-- Visions of the Past: Rise from the Deep
-						}),
-						crit(8, {	-- The Merciless One
-							["_quests"] = { 25987 },	-- Put It On
-						}),
-						crit(9, {	-- L'ghorek
-							["_quests"] = { 26143 },	-- All That Rises
-						}),
-						crit(10, {	-- The Tidehunter
-							["_quests"] = { 26193 },	-- Defending the Rift
-						}),
-					},
 					-- #else
 					["sourceQuests"] = {
 						25558,	-- All or Nothing
@@ -97,48 +60,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26193,	-- Defending the Rift
 					},
 					-- #endif
-					-- #endif
 				}),
 				ach(4982, {	-- Sinking into Vashj'ir (H)
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Defense of The Immortal Coil
-							["_quests"] = { 25949 },	-- Blood and Thunder!
-						}),
-						crit(2, {	-- Smuggler's Scar
-							["_quests"] = { 25638 },	-- A Desperate Plea
-						}),
-						crit(3, {	-- A Budding Treasure Hunter
-							["_quests"] = { 25743 },	-- Decisions, Decisions
-						}),
-						crit(4, {	-- The Clutch
-							["sourceQuests"] = {
-								26008,	-- Decompression
-								27708,	-- The Warden's Time
-								26040,	-- What? What? In My Gut...?
-							},
-						}),
-						crit(5, {	-- Silver Tide Hollow
-							["_quests"] = { 25456 },	-- Back in One Piece
-						}),
-						crit(6, {	-- Nespirah
-							["_quests"] = { 25996 },	-- Waking the Beast
-						}),
-						crit(7, {	-- Visions of the Past
-							["_quests"] = { 26135 },	-- Visions of the Past: Rise from the Deep
-						}),
-						crit(8, {	-- The Merciless One
-							["_quests"] = { 25988 },	-- Put It On
-						}),
-						crit(9, {	-- L'ghorek
-							["_quests"] = { 26143 },	-- All That Rises
-						}),
-						crit(10, {	-- The Tidehunter
-							["_quests"] = { 26194 },	-- Defending the Rift
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						25949,	-- Blood and Thunder!
@@ -154,7 +80,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26143,	-- All That Rises
 						26194,	-- Defending the Rift
 					},
-					-- #endif
 					-- #endif
 				}),
 				achWithRep(4881, FACTION_THE_EARTHEN_RING, {	-- The Earthen Ring
@@ -203,8 +128,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(QUESTS, {
 						q(26017, {	-- A Lure
-							["qg"] = 41910,	-- Humphrey Digsong
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
+							["qg"] = 41910,	-- Humphrey Digsong
 							["coord"] = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -212,8 +137,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25977, {	-- A Standard Day for Azrajar (A)
-							["qg"] = 41667,	-- Lieutenant "Foxy" Topper
 							["sourceQuest"] = 26080,	-- One Last Favor
+							["qg"] = 41667,	-- Lieutenant "Foxy" Topper
 							["coord"] = { 55.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -233,8 +158,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25980, {	-- A Standard Day for Azrajar (H)
-							["qg"] = 41670,	-- Sergeant Gertrude
 							["sourceQuest"] = 26092,	-- Orako's Report
+							["qg"] = 41670,	-- Sergeant Gertrude
 							["coord"] = { 51.4, 60.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -254,8 +179,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26143, {	-- All that Rises
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuest"] = 26154,	-- Twilight Extermination
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/1 Hallazeal the Ascended slain
@@ -268,8 +193,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26142, {	-- Ascend No More!
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/5 Ancient Conduits destroyed
@@ -278,22 +203,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26181, {	-- Back to Darkbreak Cove
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuest"] = 26143,	-- All That Rises
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(26182, {	-- Back to Tenebrous Cavern
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuest"] = 26143,	-- All That Rises
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(26103, {	-- Bio-Fuel
-							["qg"] = 41666,	-- Engineer Hexascrub
 							["sourceQuest"] = 26219,	-- Full Circle (A)
+							["qg"] = 41666,	-- Engineer Hexascrub
 							["coord"] = { 55.5, 72.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -307,9 +232,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26121, {	-- Claim Korthun's End
+							["description"] = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
 							["qg"] = 41665,	-- Jorlan Trueblade
 							["coord"] = { 54.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
-							["description"] = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/7 Hellscream Seadog slain
@@ -318,11 +243,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26070, {	-- Clearing the Defiled (A)
-							["qg"] = 41598,	-- Captain Taylor
 							["sourceQuests"] = {
 								25983,	-- Promontory Point (breadcrumb)
 								25987,	-- Put It On
 							},
+							["qg"] = 41598,	-- Captain Taylor
 							["coord"] = { 42.7, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -339,11 +264,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26071, {	-- Clearing the Defiled (H)
-							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["sourceQuests"] = {
 								25984,	-- Promontory Point (breadcrumb)
 								25988,	-- Put It On
 							},
+							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["coord"] = { 42.6, 37.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -360,8 +285,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26018, {	-- Coldlights Out
-							["qg"] = 41910,	-- Humphrey Digsong
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
+							["qg"] = 41910,	-- Humphrey Digsong
 							["coord"] = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -374,16 +299,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26140, {	-- Communing with the Ancient
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuest"] = 26130,	-- Unplug L'ghorek
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 42.6, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 						}),
 						q(26193, {	-- Defending the Rift (A)
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
 								26181,	-- Back to Darkbreak Cave (breadcrumb)
 								-- 26143,	-- All That Rises (26193 appears on world map without completing this quest)
 							},
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 42.6, 37.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -393,11 +318,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26194, {	-- Defending the Rift (H)
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
 								26182,	-- Back to the Tenebrous Cavern (breadcrumb)
 								-- 26143,	-- All that Rises (26194 appears on world map without completing this quest)
 							},
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 51.5, 60.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -407,29 +332,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26089, {	-- Die Fisherman Die
-							["qg"] = 41908,	-- Orako
 							["sourceQuest"] = 26087,	-- "Glow-Juice"
+							["qg"] = 41908,	-- Orako
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(26019, {	-- Enormous Eel Egg (A)
-							["provider"] = { "i", 56571 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
+							["provider"] = { "i", 56571 },	-- Enormous Eel Egg
+							["races"] = ALLIANCE_ONLY,
 							["crs"] = {
 								41925,	-- Coldlight Hunters
 								41926,	-- Coldlight Oracles
 							},
-							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26122, {	-- Environmental Awareness
-							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 26221,	-- Full Circle
+							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(26132, {	-- Fiends from the Netherworld (A)
-							["qg"] = 41598,	-- Captain Taylor
 							["sourceQuest"] = 26111,	-- ... It Will Come
+							["qg"] = 41598,	-- Captain Taylor
 							["coord"] = { 42.7, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -439,8 +364,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26133, {	-- Fiends from the Netherworld (H)
-							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 26111,	-- ... It Will Come
+							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["coord"] = { 42.6, 37.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -450,13 +375,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26065, {	-- Free Wil'hai
-							["qg"] = 41640,	-- Wavespeaker Valoren
 							["sourceQuests"] = {
 								26219,	-- Full Circle (A)
 								26221,	-- Full Circle (H)
 								26056,	-- The Wavespeaker (A)
 								26057,	-- The Wavespeaker (H)
 							},
+							["qg"] = 41640,	-- Wavespeaker Valoren
 							["coord"] = { 52.6, 27.8, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/1 Free Wil'hai
@@ -473,10 +398,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26106, {	-- Fuel-ology 101
-							["qg"] = 41666,	-- Engineer Hexascrub
-							["sourceQuest"] = 26103,	-- Bio-Fuel
-							["coord"] = { 55.5, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["description"] = "2 Remora, 3 Hammerhead",
+							["sourceQuest"] = 26103,	-- Bio-Fuel
+							["qg"] = 41666,	-- Engineer Hexascrub
+							["coord"] = { 55.5, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(59646),	-- Gloves of Delicate Mixture
@@ -485,8 +410,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26087, {	-- "Glow-Juice"
-							["qg"] = 41908,	-- Orako
 							["sourceQuest"] = 26086,	-- Orako
+							["qg"] = 41908,	-- Orako
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -500,14 +425,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26088, {	-- Here Fishie Fishie
-							["qg"] = 41908,	-- Orako
 							["sourceQuest"] = 26087,	-- "Glow-Juice"
+							["qg"] = 41908,	-- Orako
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(26091, {	-- Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo
-							["qg"] = 41908,	-- Orako
 							["sourceQuest"] = 26090,	-- I Brought You This Egg
+							["qg"] = 41908,	-- Orako
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -517,20 +442,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26090, {	-- I Brought You This Egg
-							["provider"] = { "i", 56570 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26087,	-- "Glow-Juice"
+							["provider"] = { "i", 56570 },	-- Enormous Eel Egg
+							["races"] = HORDE_ONLY,
 							["crs"] = {
 								41925,	-- Coldlight Hunters
 								41926,	-- Coldlight Oracles
 							},
-							["races"] = HORDE_ONLY,
 						}),
 						q(26072, {	-- Into the Totem
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
 								25987,	-- Put It On (A)
 								25988,	-- Put It On (H)
 							},
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 42.6, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/5 Faceless Defilers energies confined
@@ -543,11 +468,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26111, {	-- ... It Will Come
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
 								26096,	-- Scalding Shrooms
 								26072,	-- Into the Totem
 							},
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 42.6, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/1 The Brain of the Unfathomable
@@ -560,11 +485,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26080, {	-- One Last Favor
-							["qg"] = 41910,	-- Humphrey Digsong
 							["sourceQuests"] = {
 								26017,	-- A Lure
 								26018,	-- Coldlights Out
 							},
+							["qg"] = 41910,	-- Humphrey Digsong
 							["coord"] = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -574,28 +499,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26086, {	-- Orako
-							["qg"] = 41663,	-- Captain "Jewels" Verne
 							["sourceQuest"] = 26126,	-- The Perfect Fuel
+							["qg"] = 41663,	-- Captain "Jewels" Verne
 							["coord"] = { 51.4, 61.5, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(26092, {	-- Orako's Report
-							["qg"] = 41908,	-- Orako
 							["sourceQuests"] = {
 								26089,	-- Die Fishman Die
 								26088,	-- Here Fishie Fishie
 							},
+							["qg"] = 41908,	-- Orako
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(59649),	-- Chum-Coated Robes
 								i(59648),	-- Handguards of the Severed Starfish
 								i(59647),	-- Captain Verne's Splitter
-							}
+							},
 						}),
 						q(26015, {	-- Phosphora Hunting
-							["qg"] = 41910,	-- Humphrey Digsong
 							["sourceQuest"] = 26014,	-- The Brothers Digsong
+							["qg"] = 41910,	-- Humphrey Digsong
 							["coord"] = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -609,11 +534,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26144, {	-- Prisoners (A)
-							["provider"] = { "i", 57102 },	-- Twilight Cage Key
-							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-							["crs"] = { 41652 },	-- Twilight Champion
+							["sourceQuest"] = 26140,	-- Communing with the Ancient
+							["provider"] = { "i", 57102 },	-- Twilight Cage Key
 							["races"] = ALLIANCE_ONLY,
+							["crs"] = { 41652 },	-- Twilight Champion
 							["groups"] = {
 								objective(1, {	-- 0/5 Alliance Prisoners rescued
 									["provider"] = { "o", 203705 },	-- Cage
@@ -624,11 +549,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26149, {	-- Prisoners (H)
-							["provider"] = { "i", 57118 },	-- Twilight Cage Key
-							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-							["crs"] = { 41652 },	-- Twilight Champion
+							["sourceQuest"] = 26140,	-- Communing with the Ancient
+							["provider"] = { "i", 57118 },	-- Twilight Cage Key
 							["races"] = HORDE_ONLY,
+							["crs"] = { 41652 },	-- Twilight Champion
 							["groups"] = {
 								objective(1, {	-- 0/5 Horde Prisoners rescued
 									["provider"] = { "o", 203709 },	-- Cage
@@ -639,22 +564,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25983, {	-- Promontory Point (A)
-							["qg"] = 41666,	-- Engineer Hexascrub
 							["sourceQuest"] = 25987,	-- Put It On (A)
+							["qg"] = 41666,	-- Engineer Hexascrub
 							["coord"] = { 55.5, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(25984, {	-- Promontory Point (H)
-							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25988,	-- Put It On (H)
+							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(25987, {	-- Put It On (A)
-							["qg"] = 41666,	-- Engineer Hexascrub
 							["sourceQuest"] = 25981,	-- Those Aren't Masks
+							["qg"] = 41666,	-- Engineer Hexascrub
 							["coord"] = { 55.5, 72.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -666,8 +591,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25988, {	-- Put It On (H)
-							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25982,	-- Those Aren't Masks
+							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -679,8 +604,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26141, {	-- Runestones of Binding
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/7 Runestone of Binding
@@ -690,11 +615,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26096, {	-- Scalding Shrooms
-							["qg"] = 41639,	-- Wavespeaker Tulra
 							["sourceQuests"] = {
 								25987,	-- Put It On (A)
 								25988,	-- Put It On (H)
 							},
+							["qg"] = 41639,	-- Wavespeaker Tulra
 							["coord"] = { 42.7, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/5 Scalding Shroom
@@ -715,11 +640,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26125, {	-- Secure Seabrush (Pickup)
+							["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
 							["qg"] = 41663,	-- Captain "Jewels" Verne
 							["coord"] = { 51.4, 61.5, VASHJIR_ABYSSAL_DEPTHS },
-							["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
-							-- Completed 26105,26121,26124 as well
 							["races"] = HORDE_ONLY,
+							-- Completed 26105,26121,26124 as well
 							["groups"] = {
 								objective(1, {	-- 0/7 Alliance Sea-Scout slain
 									["provider"] = { "n", 42114 },	-- Alliance Sea-Scout
@@ -727,8 +652,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25950, {	-- Sira'Kess Slaying (A)
-							["qg"] = 41667,	-- Lieutenant "Foxy" Topper
 							["sourceQuest"] = 26080,	-- One Last Favor
+							["qg"] = 41667,	-- Lieutenant "Foxy" Topper
 							["coord"] = { 55.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -743,8 +668,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25974, {	-- Sira'Kess Slaying (H)
-							["qg"] = 41670,	-- Sergeant Gertrude
 							["sourceQuest"] = 26092,	-- Orako's Report
+							["qg"] = 41670,	-- Sergeant Gertrude
 							["coord"] = { 51.4, 60.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -759,14 +684,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26014, {	-- The Brothers Digsong
-							["qg"] = 41662,	-- Captain Glovaal
 							["sourceQuest"] = 26106,	-- Fuel-ology 101
+							["qg"] = 41662,	-- Captain Glovaal
 							["coord"] = { 54.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
-							["qg"] = 41910,	-- Humphrey Digsong
 							["sourceQuest"] = 26019,	-- Enormous Eel Egg
+							["qg"] = 41910,	-- Humphrey Digsong
 							["coord"] = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -776,9 +701,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26126, {	-- The Perfect Fuel
-							["qg"] = 41669,	-- Fiasco Sizzlegrin
-							["sourceQuest"] = 26122,	-- Environmental Awareness
 							["description"] = "2 Remora, 3 Hammerhead",
+							["sourceQuest"] = 26122,	-- Environmental Awareness
+							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -788,22 +713,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26056, {	-- The Wavespeaker (A)
-							["qg"] = 41598,	-- Captain Taylor
 							["sourceQuest"] = 25987,	-- Put It On (A)
+							["qg"] = 41598,	-- Captain Taylor
 							["coord"] = { 42.7, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(26057, {	-- The Wavespeaker (H)
-							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25988,	-- Put It On (H)
+							["qg"] = 41636,	-- Legionnaire Nazgrim
 							["coord"] = { 42.6, 37.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(25981, {	-- Those Aren't Masks (A)
-							["qg"] = 41666,	-- Engineer Hexascrub
 							["sourceQuest"] = 26080,	-- One Last Favor
+							["qg"] = 41666,	-- Engineer Hexascrub
 							["coord"] = { 55.5, 72.8, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -814,8 +739,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25982, {	-- Those Aren't Masks (H)
-							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 26092,	-- Orako's Report
+							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -826,8 +751,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25975, {	-- Treasure Reclamation (A)
-							["qg"] = 41665,	-- Jorlan Trueblade
 							["sourceQuest"] = 26080,	-- One Last Favor
+							["qg"] = 41665,	-- Jorlan Trueblade
 							["coord"] = { 55.6, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -838,8 +763,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25976, {	-- Treasure Reclamation (H)
-							["qg"] = 41668,	-- Blood Guard Toldrek
 							["sourceQuest"] = 26092,	-- Orako's Report
+							["qg"] = 41668,	-- Blood Guard Toldrek
 							["coord"] = { 51.5, 60.7, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -850,11 +775,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26154, {	-- Twilight Extermination
-							["qg"] = 42197,	-- L'ghorek
 							["sourceQuests"] = {
 								26142,	-- Ascend No More!
 								26141,	-- Runestones of Binding
 							},
+							["qg"] = 42197,	-- L'ghorek
 							["coord"] = { 38.4, 45.3, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/1 Bound Torrent possessed
@@ -873,8 +798,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26130, {	-- Unplug L'ghorek
-							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuest"] = 26111,	-- ... It Will Come
+							["qg"] = 41600,	-- Erunak Stonespeaker
 							["coord"] = { 42.6, 37.9, VASHJIR_ABYSSAL_DEPTHS },
 							["groups"] = {
 								objective(1, {	-- 0/1 Ur'Goz slain
@@ -953,8 +878,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(QUESTS, {
 						q(25732, {	-- A Bone To Pick
-							["qg"] = 46458,	-- Budd
 							["sourceQuest"] = 25670,	-- DUN-dun-DUN-dun-DUN-dun
+							["qg"] = 46458,	-- Budd
 							["coord"] = { 58.3, 48.6, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								-- FIX_ME!!!
@@ -967,25 +892,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["coord"] = { 53.6, 57.6, VASHJIR_KELPTHAR_FOREST },
 									["cr"] = 41018,	-- King Gurboggle
 								}),
-							}
+							},
 						}),
 						q(25471, {	-- Across the Great Divide
-							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 27708,	-- The Warden's Time
+							["qg"] = 41341,	-- Erunak Stonespeaker
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["maps"] = { VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25638, {	-- A Desperate Plea
+							["sourceQuest"] = 25459,	-- Ophidophobia
 							["providers"] = {
 								{ "o", 203128 },	-- Broken Bottle
 								{ "i",  62137 },	-- Soggy Note
 							},
-							["sourceQuest"] = 25459,	-- Ophidophobia
 							["coord"] = { 56.4, 30.0, VASHJIR_KELPTHAR_FOREST },
 						}),
 						q(25390, {	-- A Girl's Best Friend
-							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
+							["qg"] = 39883,	-- Adarrah
 							["coord"] = { 57.1, 28.7, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/6 Adarrah's Keepsake
@@ -1001,8 +926,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25389, {	-- A Taste For Tail
-							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
+							["qg"] = 39883,	-- Adarrah
 							["coord"] = { 57.1, 28.7, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/4 Clacksnap Tail
@@ -1010,11 +935,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["coord"] = { 49.6, 43.0, VASHJIR_KELPTHAR_FOREST },
 									["cr"] = 39918,	-- Clacksnap Pincer
 								}),
-							}
+							},
 						}),
 						q(25598, {	-- Ain't Too Proud to Beg
-							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25587,	-- Gimme Shelter
+							["qg"] = 39883,	-- Adarrah
 							["coord"] = { 57.1, 28.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- Mack and Samir Rescued
@@ -1024,8 +949,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25558, {	-- All or Nothing
-							["qg"] = 40690,	-- Captain Taylor
 							["sourceQuest"] = 25547,	-- On Our Own Terms
+							["qg"] = 40690,	-- Captain Taylor
 							["coord"] = { 45.0, 23.5, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1035,8 +960,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27687, {	-- An Opened Can of Whoop Gnash
-							["provider"] = { "i", 62138 },	-- Gnash's Head
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
+							["provider"] = { "i", 62138 },	-- Gnash's Head
 							["coords"] = {	-- pats up and down
 								{ 51.6, 42.4, VASHJIR_KELPTHAR_FOREST },
 								{ 54.0, 49.0, VASHJIR_KELPTHAR_FOREST },
@@ -1045,11 +970,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 40987,	-- Gnash
 						}),
 						q(25477, {	-- Better Late Than Dead
-							["qg"] = 41248,	-- Moanah Stormhoof
 							["sourceQuests"] = {
 								25558,	-- All or Nothing (A)
 								25949,	-- Blood and Thunder! (H)
 							},
+							["qg"] = 41248,	-- Moanah Stormhoof
 							["coord"] = { 46.0, 46.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- Sea Turtle Mounted
@@ -1075,12 +1000,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25949, {	-- Blood and Thunder!
+							["sourceQuest"] = 25948,	-- Bring It On!
 							["qgs"] = {
 								41750,	-- Legionnaire Nazgrim
 								41769,	-- Legionnaire Nazgrim
 								41793,	-- Legionnaire Nazgrim
 							},
-							["sourceQuest"] = 25948,	-- Bring It On!
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1090,20 +1015,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25948, {	-- Bring It On!
-							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25947,	-- Finders, Keepers
+							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
 						{	-- Buy Us Some Time
 							["allianceQuestData"] = q(25357, {	-- Buy Us Some Time (A)
-								["qg"] = 39887,	-- Captain Taylor
 								["sourceQuest"] = 25405,	-- Rest For the Weary (A)
+								["qg"] = 39887,	-- Captain Taylor
 								["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
 							}),
 							["hordeQuestData"] = q(25942, {	-- Buy Us Some Time (A)
-								["qg"] = 41711,	-- Legionnaire Nazgrim
 								["sourceQuest"] = 25941,	-- Rest For the Weary (H)
+								["qg"] = 41711,	-- Legionnaire Nazgrim
 								["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							}),
 							["groups"] = {
@@ -1113,12 +1038,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						},
 						q(14482, {	-- Call of Duty (A)
-							["qg"] = 36799,	-- Recruiter Burns
 							["sourceQuests"] = {
 								14481,	-- Into The Abyss
 								27724,	-- Hero's Call: Vashj'ir!
 								28827,	-- To the Depths (A)
 							},
+							["qg"] = 36799,	-- Recruiter Burns
 							["coord"] = { 27.4, 24.2, STORMWIND_CITY },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -1131,18 +1056,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(25924, {	-- Call of Duty (H)
-							["qg"] = 41621,	-- Commander Thorak
 							["sourceQuests"] = {
 								28816,	-- To the Depths (H)
 								27718,	-- Warchief's Command: Vashj'ir!
 							},
+							["qg"] = 41621,	-- Commander Thorak
 							["coord"] = { 55.9, 12.3, DUROTAR },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25602, {	-- Can't Start a Fire Without a Spark
-							["qg"] = 39884,	-- Captain Samir
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
+							["qg"] = 39884,	-- Captain Samir
 							["coord"] = { 57.3, 28.9, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/1 Keg of Gunpowder
@@ -1155,8 +1080,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25884, {	-- Come Hell or High Water
-							["qg"] = 41344,	-- Rendel Firetongue
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["qg"] = 41344,	-- Rendel Firetongue
 							["coord"] = { 64.2, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/12 Zin'jatar Naga Slain
@@ -1173,11 +1098,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25388, {	-- Crate of Crab Meat
+							["sourceQuest"] = 25587,	-- Gimme Shelter
 							["providers"] = {
 								{ "o", 202871 },	-- Sunken Crate
 								{ "i",  53061 },	-- Crate of Crab Meat
 							},
-							["sourceQuest"] = 25587,	-- Gimme Shelter
 							["coord"] = { 49.6, 40.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								-- #if BEFORE MOP
@@ -1188,8 +1113,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25657, {	-- Dah, Nunt.. Dah, Nunt...
-							["qg"] = 46338,	-- Budd
 							["sourceQuest"] = 25651,	-- Oh, the Insanity!
+							["qg"] = 46338,	-- Budd
 							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- Explosive Grub fed to Gnaws
@@ -1199,8 +1124,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25824, {	-- Debriefing (A)
-							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25812,	-- Spelunking
+							["qg"] = 41341,	-- Erunak Stonespeaker
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1208,11 +1133,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 41340 },	-- Private Pollard
 									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
 								}),
-							}
+							},
 						}),
 						q(26007, {	-- Debriefing (H)
-							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 26000,	-- Spelunking
+							["qg"] = 41341,	-- Erunak Stonespeaker
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1220,11 +1145,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 41885 },	-- Gurrok
 									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
 								}),
-							}
+							},
 						}),
 						q(25743, {	-- Decisions, Decisions
-							["qg"] = 46458,	-- Budd
 							["sourceQuest"] = 25732,	-- A Bone To Pick
+							["qg"] = 46458,	-- Budd
 							["coord"] = { 58.3, 48.6, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- The Pewter Prophet Destroyed
@@ -1238,8 +1163,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25888, {	-- Decompression (A)
-							["qg"] = 41347,	-- Moanah Stormhoof
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["qg"] = 41347,	-- Moanah Stormhoof
 							["coord"] = { 63.8, 59.3, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1253,8 +1178,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26008, {	-- Decompression (H)
-							["qg"] = 41347,	-- Moanah Stormhoof
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["qg"] = 41347,	-- Moanah Stormhoof
 							["coord"] = { 63.8, 59.3, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1268,8 +1193,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25670, {	-- DUN-dun-DUN-dun-DUN-dun
-							["qg"] = 46338,	-- Budd
 							["sourceQuest"] = 27699,	-- Shark Weak
+							["qg"] = 46338,	-- Budd
 							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/1 Gnaws Slain
@@ -1278,11 +1203,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25947, {	-- Finders, Keepers
-							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["sourceQuests"] = {
 								25944,	-- Girding Our Loins
 								25946,	-- Helm's Deep
 							},
+							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1295,16 +1220,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25587, {	-- Gimme Shelter
-							["qg"] = 39667,	-- Adarrah
 							["sourceQuest"] = 27685,	-- Good Deed Left Undone
+							["qg"] = 39667,	-- Adarrah
 							["coord"] = { 53.4, 43.0, VASHJIR_KELPTHAR_FOREST },
 						}),
 						q(25944, {	-- Girding Our Loins
-							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["sourceQuests"] = {
 								25942,	-- Buy Us Some Time
 								25943,	-- Traveling on Our Stomachs
 							},
+							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1326,8 +1251,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27685, {	-- Good Deed Left Undone
-							["qg"] = 41252,	-- Rendel Firetongue
 							["sourceQuest"] = 25371,	-- The Abyssal Ride
+							["qg"] = 41252,	-- Rendel Firetongue
 							["coord"] = { 46.6, 46.6, VASHJIR_KELPTHAR_FOREST },
 							["isBreadcrumb"] = true,
 						}),
@@ -1347,8 +1272,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 80,
 						})),
 						q(25883, {	-- How Disarming
-							["provider"] = { "o", 203301 },	-- Naga Tridents
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["provider"] = { "o", 203301 },	-- Naga Tridents
 							["coord"] = { 60.3, 69.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/6 Naga Weapons Destroyed
@@ -1368,8 +1293,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25419, {	-- Lady La-La's Medallion
-							["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
 							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
+							["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
 							["crs"] = { 41017 },	-- Gilblin Collector
 							["groups"] = {
 								i(59784),	-- Dreamfrond Skirt
@@ -1378,8 +1303,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25358, {	-- Nerve Tonic
-							["qg"] = 40983,	-- Mack Fearsen
 							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
+							["qg"] = 40983,	-- Mack Fearsen
 							["coord"] = { 57.3, 29.2, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/5 Sunken Cargo
@@ -1391,10 +1316,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25651, {	-- Oh, the Insanity!
-							["qg"] = 46338,	-- Budd
-							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
-							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
 							["description"] = "Take the quest 'Oh, the Insanity!' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
+							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
+							["qg"] = 46338,	-- Budd
+							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/1 Barrel of Gunpowder
 									["providers"] = {
@@ -1407,19 +1332,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25547, {	-- On Our Own Terms
-							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuests"] = {
 								25564,	-- Stormwind Elite Aquatic and Land Forces
 								25545,	-- To Arms!
 							},
+							["qg"] = 39887,	-- Captain Taylor
 							["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(27729, {	-- Once More, With Eeling
 							["description"] = "Granted automatically from killing any eel.",
-							["providers"] = {
-								{ "n", 40855},	-- Slitherfin Eel
-								{ "n", 41002},	-- Slickskin Eel
+							["qgs"] = {
+								4085,	-- Slitherfin Eel
+								4100,	-- Slickskin Eel
 							},
 							["groups"] = {
 								objective(1, {	-- 0/8 Disgusting Eels Justifiably Slain
@@ -1431,8 +1356,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25459, {	-- Ophidophobia
-							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25602,	-- Can't Start a Fire Without a Spark
+							["qg"] = 39883,	-- Adarrah
 							["coord"] = { 57.1, 28.7, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/4 Brinescale Serpents Slain
@@ -1441,15 +1366,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27668, {	-- Pay Attention!
-							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25944,	-- Girding Our Loins
+							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(25281, {	-- Pay It Forward (A)
-							["qg"] = 36915,	-- Erunak Stonespeaker
 							["sourceQuest"] = 24432,	-- Sea Legs (A)
+							["qg"] = 36915,	-- Erunak Stonespeaker
 							["coord"] = { 45.2, 23.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1460,8 +1385,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25936, {	-- Pay It Forward (H)
-							["qg"] = 41618,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25929,	-- Sea Legs (H)
+							["qg"] = 41618,	-- Erunak Stonespeaker
 							["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1472,52 +1397,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25405, {	-- Rest For the Weary (A)
-							["qg"] = 36915,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25281,	-- Pay It Forward (A)
+							["qg"] = 36915,	-- Erunak Stonespeaker
 							["coord"] = { 45.2, 23.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25941, {	-- Rest For the Weary (H)
-							["qg"] = 41618,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25936,	-- Pay It Forward (H)
+							["qg"] = 41618,	-- Erunak Stonespeaker
 							["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
 						q(24432, {	-- Sea Legs (A)
-							["qg"] = 36915,	-- Erunak Stonespeaker
 							["sourceQuest"] = 14482,	-- Call of Duty (A)
+							["qg"] = 36915,	-- Erunak Stonespeaker
 							["coord"] = { 45.2, 23.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Saltwater Starfish
 									["providers"] = {
-										{ "i", 54828 },	-- Saltwater Starfish
+										{ "i",  54828 },	-- Saltwater Starfish
 										{ "o", 205989 },	-- Saltwater Star
-							},
+									},
 								}),
 								objective(2, {	-- 0/1 Conch Shell
 									["providers"] = {
-										{ "i", 52504 },	-- Conch Shell
+										{ "i",  52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
 									},
 								}),
 							},
 						}),
 						q(25929, {	-- Sea Legs (H)
-							["qg"] = 41618,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25924,	-- Call of Duty (H)
+							["qg"] = 41618,	-- Erunak Stonespeaker
 							["coord"] = { 38.7, 31.7, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Saltwater Starfish
 									["providers"] = {
-										{ "i", 54828 },	-- Saltwater Starfish
+										{ "i",  54828 },	-- Saltwater Starfish
 										{ "o", 205989 },	-- Saltwater Star
-							},
+									},
 								}),
 								objective(2, {	-- 0/1 Conch Shell
 									["providers"] = {
-										{ "i", 52504 },	-- Conch Shell
+										{ "i",  52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
 									},
 								}),
@@ -1537,23 +1462,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25812, {	-- Spelunking (A)
-							["qg"] = 40105,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25794,	-- Undersea Sanctuary
+							["qg"] = 40105,	-- Erunak Stonespeaker
 							["coord"] = { 46.3, 46.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26000, {	-- Spelunking (H)
-							["qg"] = 40105,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25794,	-- Undersea Sanctuary
+							["qg"] = 40105,	-- Erunak Stonespeaker
 							["coord"] = { 46.3, 46.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25564, {	-- Stormwind Elite Aquatic and Land Forces
-							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuests"] = {
 								25357,	-- Buy Us Some Time
 								25546,	-- Traveling on Our Stomachs
 							},
+							["qg"] = 39887,	-- Captain Taylor
 							["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1566,8 +1491,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25371, {	-- The Abyssal Ride
-							["qg"] = 41248,	-- Moanah Stormhoof
 							["sourceQuest"] = 25477,	-- Better Late Than Dead
+							["qg"] = 41248,	-- Moanah Stormhoof
 							["coord"] = { 46.0, 46.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								i(54465),	-- Vashj'ir Seahorse (MOUNT!)
@@ -1585,8 +1510,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27708, {	-- The Warden's Time
-							["qg"] = 41344,	-- Rendel Firetongue
 							["sourceQuest"] = 25884,	-- Come Hell or High Water
+							["qg"] = 41344,	-- Rendel Firetongue
 							["coord"] = { 64.2, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/1 Zin'jatar Warden Slain
@@ -1595,11 +1520,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25545, {	-- To Arms!
-							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuests"] = {
 								25357,	-- Buy Us Some Time
 								25546,	-- Traveling on Our Stomachs
 							},
+							["qg"] = 39887,	-- Captain Taylor
 							["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1629,16 +1554,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28827, {	-- To the Depths (A)
-							["qg"] = 45226,	-- Naraat the Earthspeaker
 							["sourceQuest"] = 28826,	-- The Eye of the Storm
+							["qg"] = 45226,	-- Naraat the Earthspeaker
 							["coord"] = { 74.4, 18.8, STORMWIND_CITY },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(28816, {	-- To the Depths (H)
-							["qg"] = 45244,	-- Farseer Krogar
 							["sourceQuest"] = 28805,	-- The Eye of the Storm
+							["qg"] = 45244,	-- Farseer Krogar
 							["coord"] = { 50.4, 38.2, ORGRIMMAR },
 							["timeline"] = { ADDED_4_0_3 },
 							["maps"] = { DUROTAR },
@@ -1646,8 +1571,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isBreadcrumb"] = true,
 						}),
 						q(25546, {	-- Traveling on Our Stomachs (A)
-							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuest"] = 25405,	-- Rest For the Weary
+							["qg"] = 39887,	-- Captain Taylor
 							["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1658,8 +1583,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25943, {	-- Traveling on Our Stomachs (H)
-							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25941,	-- Rest For the Weary
+							["qg"] = 41711,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1670,8 +1595,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25794, {	-- Undersea Sanctuary
-							["qg"] = 40105,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25638,	-- A Desperate Plea
+							["qg"] = 40105,	-- Erunak Stonespeaker
 							["coord"] = { 46.3, 46.8, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
 								objective(1, {	-- 0/1 Erunak's Scrying Orb Used
@@ -1680,11 +1605,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25887, {	-- Wake of Destruction
-							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
 								25824,	-- Debriefing (A)
 								26007,	-- Debriefing (H)
 							},
+							["qg"] = 41341,	-- Erunak Stonespeaker
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 						}),
 						warchiefscommand(q(27718, {	-- Warchief's Command: Vashj'ir!
@@ -1697,8 +1622,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						})),
 						q(25885, {	-- What? What? In My Gut...? (A)
-							["qg"] = 41340,	-- Private Pollard
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["qg"] = 41340,	-- Private Pollard
 							["coord"] = { 63.9, 59.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1714,8 +1639,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26040, {	-- What? What? In My Gut...? (H)
-							["qg"] = 41885,	-- Gurrok
 							["sourceQuest"] = 25887,	-- Wake of Destruction
+							["qg"] = 41885,	-- Gurrok
 							["coord"] = { 63.9, 59.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1756,7 +1681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 45.0, 23.2, VASHJIR_KELPTHAR_FOREST },
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = {
-									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
+									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster>
 									{ "pop" },						-- Pop the Headers
 								},
 							}),
@@ -1764,7 +1689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 								["races"] = HORDE_ONLY,
 								["sym"] = {
-									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
+									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster>
 									{ "pop" },						-- Pop the Headers
 								},
 							}),
@@ -1839,35 +1764,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(QUESTS, {
 						q(25582, {	-- A Better Vantage (A)
-							["qg"] = 40643,	-- Admiral Dvorek
 							["sourceQuest"] = 25540,	-- Bellies Await
+							["qg"] = 40643,	-- Admiral Dvorek
 							["coord"] = { 49.1, 56.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25955, {	-- A Better Vantage (H)
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuests"] = {
 								25595,	-- Something Edible
 								25593,	-- Shelled Salvation
 							},
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 51.1, 62.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(26005, {	-- A Breath of Fresh Air (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 49.4, 57.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26006, {	-- A Breath of Fresh Air (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25215, {	-- A Distracting Scent
-							["qg"] = 39876,	-- Felora Firewreath
 							["sourceQuest"] = 25222,	-- Silver Tide Hollow
+							["qg"] = 39876,	-- Felora Firewreath
 							["coord"] = { 49.3, 42.7, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								i(59764),	-- Cowl of the Leptochelae
@@ -1886,14 +1811,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25535, {	-- A Powerful Need To Eat
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25922,	-- Waking the Beast
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 49.5, 57.3, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25581, {	-- An Occupation of Time (A)
-							["qg"] = 40644,	-- Levia Dreamwalker
 							["sourceQuest"] = 25540,	-- Bellies Await
+							["qg"] = 40644,	-- Levia Dreamwalker
 							["coord"] = { 49.6, 57.1, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1915,12 +1840,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25954, {	-- An Occupation of Time (H)
-							["qg"] = 40920,	-- Elendri Goldenbrow
 							["sourceQuests"] = {
 								25595,	-- Something Edible (definitely required)
 								25593,	-- Shelled Salvation (probably required)
 								25592,	-- Deep Attraction (probably required)
 							},
+							["qg"] = 40920,	-- Elendri Goldenbrow
 							["coord"] = { 51.2, 62.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -1942,17 +1867,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25537, {	-- Art of Attraction
-							["qg"] = 40639,	-- Engineer Hexascrub
 							["sourceQuest"] = 25535,	-- A Powerful Need to Eat
+							["qg"] = 40639,	-- Engineer Hexascrub
 							["coord"] = { 48.9, 49.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25860, {	-- At All Costs
-							["qg"] = 41456,	-- Lady Sira'kess
 							["sourceQuests"] = {
 								25896,	-- Devout Assembly
 								25629,	-- Her Lady's Hands
 							},
+							["qg"] = 41456,	-- Lady Sira'kess
 							["coord"] = { 33.1, 77.9, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/20 Attacking Kvaldir slain
@@ -1965,8 +1890,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25164, {	-- Backed Into a Corner
-							["qg"] = 39226,	-- Farseer Gadra
 							["sourceQuest"] = 25334,	-- The Looming Threat
+							["qg"] = 39226,	-- Farseer Gadra
 							["coord"] = { 55.9, 13.6, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								i(59767),	-- Ostracod Sandals
@@ -1975,16 +1900,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25456, {	-- Back in One Piece
-							["qg"] = 39882,	-- The Great Sambino
 							["sourceQuest"] = 25217,	-- Totem Modification
+							["qg"] = 39882,	-- The Great Sambino
 							["coord"] = { 41.3, 34.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25540, {	-- Bellies Await
-							["qg"] = 40641,	-- Divemaster Birmingham
 							["sourceQuests"] = {
 								25538,	-- Odor Coater
 								25539,	-- Clamming Up
 							},
+							["qg"] = 40641,	-- Divemaster Birmingham
 							["coord"] = { 48.9, 49.1, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1994,8 +1919,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25919, {	-- Body Blows (A)
-							["qg"] = 41540,	-- Captain Taylor
 							["sourceQuest"] = 25917,	-- We Are Not Alone (A)
+							["qg"] = 41540,	-- Captain Taylor
 							["coord"] = { 62.6, 49.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2005,8 +1930,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25993, {	-- Body Blows (H)
-							["qg"] = 41810,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25991,	-- We Are Not Alone (H)
+							["qg"] = 41810,	-- Legionnaire Nazgrim
 							["coord"] = { 60.2, 63.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2016,20 +1941,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25916, {	-- Breaking Through (A)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25909,	-- Capture the Crab (A)
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25990, {	-- Breaking Through (H)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25989,	-- Capture the Crab (H)
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25658, {	-- Built to Last
-							["qg"] = 41050,	-- Sira'kess Tide Priestess
 							["sourceQuest"] = 25620,	-- The Revered Lady
+							["qg"] = 41050,	-- Sira'kess Tide Priestess
 							["coord"] = { 38.9, 58.5, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/6 Nar'shola Wards activated
@@ -2038,15 +1963,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25858, {	-- By Her Lady's Word
-							["qg"] = 42076,	-- Lady Naz'jar
+							["description"] = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
 							["sourceQuests"] = {
 								25753,	-- Fallen But Not Forgotten (A)
 								25964,	-- Fallen But Not Forgotten (H)
 								25754,	-- Gauging Success (A)
 								25965,	-- Gauging Success (H)
 							},
+							["qg"] = 42076,	-- Lady Naz'jar
 							["coord"] = { 29.0, 78.4, VASHJIR_SHIMMERING_EXPANSE },
-							["description"] = "Must be on |cFFFFD700Visions of the Past: The Slaughter of Biel'aran Ridge|r to accept this quest.",
 							["groups"] = {
 								objective(1, {	-- 0/1 Speak to Fathom-Lord Zin'jatar
 									["provider"] = { "n", 41049 },	-- Fathom-Lord Zin'jatar
@@ -2060,26 +1985,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25909, {	-- Capture the Crab (A)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuests"] = {
 								25907,	-- Slave Labor
 								25908,	-- Stick it to Them
 							},
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25989, {	-- Capture the Crab (H)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuests"] = {
 								25907,	-- Slave Labor
 								25908,	-- Stick it to Them
 							},
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25579, {	-- Caught Off-Guard (A)
-							["qg"] = 40643,	-- Admiral Dvorek
 							["sourceQuest"] = 25540,	-- Bellies Await
+							["qg"] = 40643,	-- Admiral Dvorek
 							["coord"] = { 49.1, 56.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2089,11 +2014,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25952, {	-- Caught Off-Guard (H)
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuests"] = {
 								25595,	-- Something Edible
 								25593,	-- Shelled Salvation
 							},
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 51.1, 62.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2103,13 +2028,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25863, {	-- Chosen Burden
-							["provider"] = { "o", 203305 },	-- Crucible of Nazsharin
 							["sourceQuest"] = 25862,	-- Stolen Property
+							["provider"] = { "o", 203305 },	-- Crucible of Nazsharin
 							["coord"] = { 57.2, 89.9, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25539, {	-- Clamming Up
-							["qg"] = 40641,	-- Divemaster Birmingham
 							["sourceQuest"] = 25535,	-- A Powerful Need to Eat
+							["qg"] = 40641,	-- Divemaster Birmingham
 							["coord"] = { 48.9, 49.1, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2122,8 +2047,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25748, {	-- Clear Goals (A)
-							["qg"] = 40643,	-- Admiral Dvorek
 							["sourceQuest"] = 25747,	-- Looking Forward
+							["qg"] = 40643,	-- Admiral Dvorek
 							["coord"] = { 32.9, 67.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2137,8 +2062,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25959, {	-- Clear Goals (H)
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuest"] = 25958,	-- Looking Forward
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 39.7, 54.1, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2152,8 +2077,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25536, {	-- Cold Welcome
-							["qg"] = 42411,	-- Captain Taylor
 							["sourceQuest"] = 25922,	-- Waking the Beast
+							["qg"] = 42411,	-- Captain Taylor
 							["coord"] = { 56.9, 75.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2163,8 +2088,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25895, {	-- Come Prepared (A)
-							["qg"] = 41535,	-- Engineer Hexascrub
 							["sourceQuest"] = 25893,	-- Desperate Plan
+							["qg"] = 41535,	-- Engineer Hexascrub
 							["coord"] = { 56.9, 80.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2180,8 +2105,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25970, {	-- Come Prepared (H)
-							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25968,	-- Desperate Plan
+							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["coord"] = { 50.3, 78.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2212,8 +2137,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25594, {	-- Crafty Crabs
-							["qg"] = 40918,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25996,	-- Waking the Beast
+							["qg"] = 40918,	-- Fiasco Sizzlegrin
 							["coord"] = { 51.7, 62.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2227,8 +2152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25750, {	-- Curious Distraction (A)
-							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {	-- rewards were moved to another quest so they're still collectible
 								objective(1, {	-- 0/1 Messy Rubbing
 									["provider"] = { "o", 203210 },	-- Highborne Tablet
@@ -2248,8 +2173,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25961, {	-- Curious Distraction (H)
-							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {	-- rewards were moved to another quest so they're still collectible
 								objective(1, {	-- 0/1 Messy Rubbing
 									["provider"] = { "o", 203210 },	-- Highborne Tablet
@@ -2269,8 +2194,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25592, {	-- Deep Attraction
-							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25996,	-- Waking the Beast
+							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["coord"] = { 51.2, 63.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2280,31 +2205,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25893, {	-- Desperate Plan (A)
-							["qg"] = 40642,	-- Captain Taylor
 							["sourceQuest"] = 25892,	-- Losing Ground
+							["qg"] = 40642,	-- Captain Taylor
 							["coord"] = { 49.1, 56.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25968, {	-- Desperate Plan (H)
-							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25967,	-- Losing Ground
+							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["coord"] = { 51.2, 62.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25896, {	-- Devout Assembly
-							["qg"] = 41456,	-- Lady Sira'kess
-							["sourceQuest"] = 25973,	-- Welcome News
-							["coord"] = { 33.1, 77.9, VASHJIR_SHIMMERING_EXPANSE },
 							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
+							["sourceQuest"] = 25973,	-- Welcome News
+							["qg"] = 41456,	-- Lady Sira'kess
+							["coord"] = { 33.1, 77.9, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25219, {	-- Don't be Shellfish
-							["qg"] = 39875,	-- Earthmender Duarn
 							["sourceQuest"] = 25222,	-- Silver Tide Hollow
+							["qg"] = 39875,	-- Earthmender Duarn
 							["coord"] = { 49.2, 42.5, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25753, {	-- Fallen But Not Forgotten (A)
-							["qg"] = 40642,	-- Captain Taylor
 							["sourceQuest"] = 25752,	-- Swift Action
+							["qg"] = 40642,	-- Captain Taylor
 							["coord"] = { 39.0, 78.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2314,8 +2239,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25964, {	-- Fallen But Not Forgotten (H)
-							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25963,	-- Swift Action
+							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["coord"] = { 39.0, 78.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2325,8 +2250,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25440, {	-- Fathom-Lord Zin'jatar
-							["qg"] = 40221,	-- Toshe Chaosrender
 							["sourceQuest"] = 25439,	-- Vengeful Heart
+							["qg"] = 40221,	-- Toshe Chaosrender
 							["coord"] = { 64.0, 42.2, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/1 Fathom-Lord Zin'jatar slain
@@ -2338,66 +2263,66 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25951, {	-- Final Judgment
-							["qg"] = 41456,	-- Lady Sira'kess
 							["sourceQuest"] = 25860,	-- At All Costs
+							["qg"] = 41456,	-- Lady Sira'kess
 							["coord"] = { 33.1, 77.9, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								ach(5452),	-- Visions of Vashj'ir Past
 							},
 						}),
 						q(26219, {	-- Full Circle (A)
-							["qg"] = 42411,	-- Captain Taylor
 							["sourceQuest"] = 26005,	-- A Breath of Fresh Air
+							["qg"] = 42411,	-- Captain Taylor
 							["coord"] = { 56.9, 75.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26221, {	-- Full Circle (H)
-							["qg"] = 42410,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 26006,	-- A Breath of Fresh Air
+							["qg"] = 42410,	-- Legionnaire Nazgrim
 							["coord"] = { 49.6, 66.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25754, {	-- Gauging Success (A)
-							["qg"] = 40643,	-- Admiral Dvorek
 							["sourceQuest"] = 25752,	-- Swift Action
+							["qg"] = 40643,	-- Admiral Dvorek
 							["coord"] = { 39.1, 78.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25965, {	-- Gauging Success (H)
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuest"] = 25963,	-- Swift Action
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 39.1, 78.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25629, {	-- Her Lady's Hand
-							["qg"] = 42077,	-- Lady Naz'jar
-							["sourceQuest"] = 25973,	-- Welcome News
 							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
+							["sourceQuest"] = 25973,	-- Welcome News
+							["qg"] = 42077,	-- Lady Naz'jar
 							["coord"] = { 33.1, 75.9, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25898, {	-- Honor and Privilege (A)
-							["qg"] = 41535,	-- Engineer Hexascrub
 							["sourceQuests"] = {
 								25895,	-- Come Prepared
 								25894,	-- Hostile Waters
 								25897,	-- Unfurling Plan
 							},
+							["qg"] = 41535,	-- Engineer Hexascrub
 							["coord"] = { 56.9, 80.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25972, {	-- Honor and Privilege (H)
-							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["sourceQuests"] = {
 								25970,	-- Come Prepared
 								25969,	-- Hostile Waters
 								25971,	-- Unfurling Plan
 							},
+							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["coord"] = { 50.3, 78.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25918, {	-- Hopelessly Gearless (A)
-							["qg"] = 41541,	-- Admiral Dvorek
 							["sourceQuest"] = 25917,	-- We Are Not Alone
+							["qg"] = 41541,	-- Admiral Dvorek
 							["coord"] = { 62.7, 49.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2413,8 +2338,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25992, {	-- Hopelessly Gearless (H)
-							["qg"] = 41811,	-- Captain Vilethorn
 							["sourceQuest"] = 25991,	-- We Are Not Alone
+							["qg"] = 41811,	-- Captain Vilethorn
 							["coord"] = { 60.1, 63.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2430,8 +2355,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25894, {	-- Hostile Waters (A)
-							["qg"] = 40645,	-- Jorlan Trueblade
 							["sourceQuest"] = 25893,	-- Desperate Plan
+							["qg"] = 40645,	-- Jorlan Trueblade
 							["coord"] = { 56.9, 80.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2441,8 +2366,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25969, {	-- Hostile Waters (H)
-							["qg"] = 40921,	-- Blood Guard Toldrek
 							["sourceQuest"] = 25968,	-- Desperate Plan
+							["qg"] = 40921,	-- Blood Guard Toldrek
 							["coord"] = { 50.4, 79.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2452,42 +2377,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25747, {	-- Looking Forward (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25760,	-- Visions of the Past: The Invasion of Vashj'ir
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 40.5, 75.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25958, {	-- Looking Forward (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25957,	-- Visions of the Past: The Invasion of Vashj'ir
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 40.6, 75.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25892, {	-- Losing Ground (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25755,	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 29.5, 78.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25967, {	-- Losing Ground (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25966,	-- Visions of the Past: The Slaughter of Biel'aran Ridge
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 29.5, 78.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25900, {	-- Making Contact
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25890,	-- Nespirah
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25890, {	-- Nespirah
-							["qg"] = 39875,	-- Earthmender Duarn
 							["sourceQuest"] = 25440,	-- Fathom-Lord Zin'jatar
+							["qg"] = 39875,	-- Earthmender Duarn
 							["coord"] = { 49.2, 42.5, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25859, {	-- No Trespass Forgiven
-							["qg"] = 42074,	-- Fathom-Stalker Azjentus
 							["sourceQuest"] = 25858,	-- By Her Lady's Word
+							["qg"] = 42074,	-- Fathom-Stalker Azjentus
 							["coord"] = { 46.1, 79.5, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/20 Vrykul Ledge Kvaldir slain
@@ -2500,8 +2425,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25749, {	-- Not Entirely Unprepared (A)
-							["qg"] = 40642,	-- Captain Taylor
 							["sourceQuest"] = 25747,	-- Looking Forward
+							["qg"] = 40642,	-- Captain Taylor
 							["coord"] = { 33.2, 68.3, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2515,8 +2440,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25960, {	-- Not Entirely Unprepared (H)
-							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["sourceQuest"] = 25958,	-- Looking Forward
+							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["coord"] = { 39.5, 54.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2530,11 +2455,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25659, {	-- Not Soon Forgotten
-							["qg"] = 41049,	-- Fathom-Lord Zin'jatar
 							["sourceQuests"] = {
 								25658,	-- Built to Last
 								25637,	-- To the Fathom-Lord's Call
 							},
+							["qg"] = 41049,	-- Fathom-Lord Zin'jatar
 							["coord"] = { 36.4, 78.6, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/1 Varkul the Unrelenting slain
@@ -2543,8 +2468,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25538, {	-- Odor Coater
-							["qg"] = 40639,	-- Engineer Hexascrub
 							["sourceQuest"] = 25537,	-- Art of Attraction
+							["qg"] = 40639,	-- Engineer Hexascrub
 							["coord"] = { 48.9, 49.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2558,12 +2483,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25921, {	-- Overseer Idra'kess (A)
-							["qg"] = 41540,	-- Captain Taylor
 							["sourceQuests"] = {
 								25919,	-- Body Blows
 								25918,	-- Hopelessly Gearless
 								25920,	-- Still Valuable
 							},
+							["qg"] = 41540,	-- Captain Taylor
 							["coord"] = { 62.6, 49.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2576,12 +2501,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25995, {	-- Overseer Idra'kess (H)
-							["qg"] = 41810,	-- Legionnaire Nazgrim
 							["sourceQuests"] = {
 								25993,	-- Body Blows
 								25992,	-- Hopelessly Gearless
 								25994,	-- Still Valuable
 							},
+							["qg"] = 41810,	-- Legionnaire Nazgrim
 							["coord"] = { 60.2, 63.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2594,8 +2519,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27716, {	-- Piece of the Past (A)
-							["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
 							["sourceQuest"] = 25540,	-- Bellies Await
+							["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
 							["races"] = ALLIANCE_ONLY,
 							["crs"] = {
 								41227,	-- Azsh'ir Infantry
@@ -2608,8 +2533,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27717, {	-- Piece of the Past (H)
-							["provider"] = { "i", 62282 },	-- Ancient Elven Etching (H)
 							["sourceQuest"] = 25958,	-- Looking Forward
+							["provider"] = { "i", 62282 },	-- Ancient Elven Etching (H)
 							["races"] = HORDE_ONLY,
 							["crs"] = {
 								41227,	-- Azsh'ir Infantry
@@ -2622,8 +2547,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25751, {	-- Properly Inspired (A)
-							["qg"] = 40639,	-- Engineer Hexascrub
 							["sourceQuest"] = 25747,	-- Looking Forward
+							["qg"] = 40639,	-- Engineer Hexascrub
 							["coord"] = { 32.9, 69.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2636,8 +2561,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25962, {	-- Properly Inspired (H)
-							["qg"] = 40918,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25958,	-- Looking Forward
+							["qg"] = 40918,	-- Fiasco Sizzlegrin
 							["coord"] = { 39.4, 54.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2650,13 +2575,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25619, {	-- Reoccupation (this shows up on the map after "Back in One Piece" but isn't actually available yet)
-							["qg"] = 40978,	-- Fathom-Stalker Azjentus
+							["description"] = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
 							["sourceQuests"] = {
 								27393,	-- The Call of the Blade (A)
 								27394,	-- The Call of the Blade (H)
 							},
+							["qg"] = 40978,	-- Fathom-Stalker Azjentus
 							["coord"] = { 40.4, 75.3, VASHJIR_SHIMMERING_EXPANSE },
-							["description"] = "Must be on |cFFFFD700Visions of the Past: The Invasion of Vashj'ir|r to get this quest.",
 							["groups"] = {
 								objective(1, {	-- 0/10 Kvaldir defenders
 									["providers"] = {
@@ -2667,8 +2592,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25221, {	-- Rundown
-							["qg"] = 39877,	-- Toshe Chaosrender
 							["sourceQuest"] = 25164,	-- Backed Into a Corner
+							["qg"] = 39877,	-- Toshe Chaosrender
 							["coord"] = { 55.5, 12.5, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/20 Fleeing Zin'jatar Fathom-Stalker slain
@@ -2677,29 +2602,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25861, {	-- Setting An Example
-							["qg"] = 41457,	-- Executioner Verathress
 							["sourceQuest"] = 25858,	-- By Her Lady's Word
+							["qg"] = 41457,	-- Executioner Verathress
 							["coord"] = { 57.1, 85.1, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25593, {	-- Shelled Salvation
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuest"] = 25996,	-- Waking the Beast
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 51.1, 62.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25222, {	-- Silver Tide Hollow
-							["qg"] = 39877,	-- Toshe Chaosrender
 							["sourceQuest"] = 25221,	-- Rundown
+							["qg"] = 39877,	-- Toshe Chaosrender
 							["coord"] = { 53.2, 33.1, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25907, {	-- Slave Labor
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25900,	-- Making Contact
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25220, {	-- Slippery Threat
-							["qg"] = 39878,	-- Caretaker Movra
 							["sourceQuest"] = 25222,	-- Silver Tide Hollow
+							["qg"] = 39878,	-- Caretaker Movra
 							["coord"] = { 49.1, 41.9, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/12 Spiketooth Eel slain
@@ -2711,8 +2636,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25595, {	-- Something Edible
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25996,	-- Waking the Beast
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2726,8 +2651,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25908, {	-- Stick it to Them
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25900,	-- Making Contact
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/7 Idra'kess Sentinel slain
@@ -2742,8 +2667,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25920, {	-- Still Valuable (A)
-							["qg"] = 41802,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25917,	-- We Are Not Alone
+							["qg"] = 41802,	-- Wavespeaker Valoren
 							["coord"] = { 62.5, 49.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2757,8 +2682,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25994, {	-- Still Valuable (H)
-							["qg"] = 41813,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25991,	-- We Are Not Alone
+							["qg"] = 41813,	-- Wavespeaker Tulra
 							["coord"] = { 60.2, 63.8, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2772,17 +2697,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25862, {	-- Stolen Property
-							["qg"] = 41476,	-- Naz'jar Honor Guard
 							["sourceQuest"] = 25858,	-- By Her Lady's Word
+							["qg"] = 41476,	-- Naz'jar Honor Guard
 							["coord"] = { 46.3, 78.5, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25752, {	-- Swift Action (A)
-							["qg"] = 40643,	-- Admiral Dvorek
 							["sourceQuests"] = {
 								25748,	-- Clear Goals
 								25749,	-- Not Entirely Unprepared
 								25751,	-- Properly Inspired
 							},
+							["qg"] = 40643,	-- Admiral Dvorek
 							["coord"] = { 49.1, 56.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2804,12 +2729,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25963, {	-- Swift Action (H)
-							["qg"] = 40916,	-- Captain Vilethorn
 							["sourceQuests"] = {
 								25959,	-- Clear Goals
 								25960,	-- Not Entirely Unprepared
 								25962,	-- Properly Inspired
 							},
+							["qg"] = 40916,	-- Captain Vilethorn
 							["coord"] = { 39.7, 53.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2831,8 +2756,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25580, {	-- Swift Approach (A)
-							["qg"] = 40642,	-- Captain Taylor
 							["sourceQuest"] = 25540,	-- Bellies Await
+							["qg"] = 40642,	-- Captain Taylor
 							["coord"] = { 49.1, 56.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2845,11 +2770,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25953, {	-- Swift Approach (H)
-							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["sourceQuests"] = {
 								25595,	-- Something Edible
 								25593,	-- Shelled Salvation
 							},
+							["qg"] = 40917,	-- Legionnaire Nazgrim
 							["coord"] = { 51.2, 63.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2862,54 +2787,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(27393, {	-- The Call of the Blade (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuests"] = {
 								25582,	-- A Better Vantage (probably required)
 								25579,	-- Caught Off-Guard (probably required)
 								25580,	-- Swift Approach (definitely required)
 							},
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 49.5, 57.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(27394, {	-- The Call of the Blade (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuests"] = {
 								25955,	-- A Better Vantage
 								25952,	-- Caught Off-Guard
 								25953,	-- Swift Approach (defintely required)
 							},
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(26191, {	-- The Culmination of Our Efforts
-							["qg"] = 42076,	-- Lady Naz'jar
 							["sourceQuests"] = {
 								25863,	-- Chosen Burden
 								25859,	-- No Trespass Forgiven
 								25861,	-- Setting An Example
 							},
+							["qg"] = 42076,	-- Lady Naz'jar
 							["coord"] = { 46.4, 79.0, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25216, {	-- The Great Sambino
-							["qg"] = 39876,	-- Felora Firewreath
 							["sourceQuest"] = 25222,	-- Silver Tide Hollow
+							["qg"] = 39876,	-- Felora Firewreath
 							["coord"] = { 49.3, 42.7, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25334, {	-- The Looming Threat
-							["qg"] = 39226,	-- Farseer Gadra
 							["sourceQuest"] = 25471,	-- Across the Great Divide
+							["qg"] = 39226,	-- Farseer Gadra
 							["coord"] = { 55.9, 13.6, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25620, {	-- The Revered Lady
-							["qg"] = 40978,	-- Fathom-Stalker Azjentus
 							["sourceQuest"] = 25619,	-- Reoccupation
+							["qg"] = 40978,	-- Fathom-Stalker Azjentus
 							["coord"] = { 40.5, 75.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25637, {	-- To the Fathom-Lord's Call
-							["qg"] = 40640,	-- Lady Naz'jar
 							["sourceQuest"] = 25620,	-- The Revered Lady
+							["qg"] = 40640,	-- Lady Naz'jar
 							["coord"] = { 39.4, 58.9, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/16 Kvaldir invaders on the terrace slain
@@ -2922,14 +2847,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25359, {	-- Toshe's Vengeance
-							["qg"] = 39876,	-- Felora Firewreath
 							["sourceQuest"] = 25456,	-- Back in One Piece (TODO:: does this require any other quest from Silver Tide Hollow?)
+							["qg"] = 39876,	-- Felora Firewreath
 							["coord"] = { 49.5, 42.3, VASHJIR_SHIMMERING_EXPANSE },
 							["isBreadcrumb"] = true,
 						}),
 						q(25217, {	-- Totem Modification
-							["qg"] = 39882,	-- The Great Sambino
 							["sourceQuest"] = 25218,	-- Undersea Inflation
+							["qg"] = 39882,	-- The Great Sambino
 							["coord"] = { 41.3, 34.2, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								i(59756),	-- Drill-Guide Belt
@@ -2938,13 +2863,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25218, {	-- Undersea Inflation
-							["qg"] = 39882,	-- The Great Sambino
 							["sourceQuest"] = 25216,	-- The Great Sambino
+							["qg"] = 39882,	-- The Great Sambino
 							["coord"] = { 41.3, 34.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25897, {	-- Unfurling Plan (A)
-							["qg"] = 41535,	-- Engineer Hexascrub
 							["sourceQuest"] = 25893,	-- Desperate Plan
+							["qg"] = 41535,	-- Engineer Hexascrub
 							["coord"] = { 56.9, 80.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -2958,8 +2883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25971, {	-- Unfurling Plan (H)
-							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 25968,	-- Desperate Plan
+							["qg"] = 41770,	-- Fiasco Sizzlegrin
 							["coord"] = { 50.3, 78.9, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -2973,26 +2898,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25583, {	-- Upon the Scene of Battle (A)
-							["provider"] = { "o", 203140 },	-- Broken Prong
 							["sourceQuests"] = {
 								25540,	-- Bellies Await
 								27393,	-- The Call of the Blade (breadcrumb)
 							},
+							["provider"] = { "o", 203140 },	-- Broken Prong
 							["coord"] = { 40.4, 75.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25956, {	-- Upon the Scene of Battle (H)
-							["provider"] = { "o", 203140 },	-- Broken Prong
 							["sourceQuests"] = {
 								25595,	-- Something Edible
 								27394,	-- The Call of the Blade (breadcrumb)
 							},
+							["provider"] = { "o", 203140 },	-- Broken Prong
 							["coord"] = { 40.4, 75.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25439, {	-- Vengeful Heart
-							["qg"] = 40221,	-- Toshe Chaosrender
 							["sourceQuest"] = 25359,	-- Toshe's Vengeance
+							["qg"] = 40221,	-- Toshe Chaosrender
 							["coord"] = { 64.0, 42.2, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
 								objective(1, {	-- 0/10 Zin'jatar Ravager slain
@@ -3001,8 +2926,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25626, {	-- Visions of the Past: Rise from the Deep (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25911,	-- Welcome News
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 49.4, 57.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -3013,8 +2938,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26135, {	-- Visions of the Past: Rise from the Deep (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25973,	-- Welcome News
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -3024,8 +2949,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25760, {	-- Visions of the Past: Invasion of Vashj'ir (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuest"] = 25583,	-- Upon the Scene of Battle
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 49.4, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -3035,8 +2960,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25957, {	-- Visions of the Past: Invasion of Vashj'ir (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuest"] = 25956,	-- Upon the Scene of Battle
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 51.6, 62.7, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -3046,11 +2971,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25755, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge (A)
-							["qg"] = 39881,	-- Wavespeaker Valoren
 							["sourceQuests"] = {
 								25753,	-- Fallen But Not Forgotten
 								25754,	-- Gauging Success
 							},
+							["qg"] = 39881,	-- Wavespeaker Valoren
 							["coord"] = { 39.2, 78.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -3061,11 +2986,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25966, {	-- Visions of the Past: The Slaughter of Biel'aran Ridge (H)
-							["qg"] = 40919,	-- Wavespeaker Tulra
 							["sourceQuests"] = {
 								25964,	-- Fallen But Not Forgotten
 								25965,	-- Gauging Success
 							},
+							["qg"] = 40919,	-- Wavespeaker Tulra
 							["coord"] = { 39.1, 78.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -3086,46 +3011,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25922, {	-- Waking the Beast (A)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25921,	-- Overseer Idra'kess
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25996, {	-- Waking the Beast (H)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25995,	-- Overseer Idra'kess
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(27443, {	-- The War Has Many Fronts (A)
-							["qg"] = 45462,	-- Toshe Chaosrender
 							["sourceQuest"] = 26005,	-- A Breath of Fresh Air
+							["qg"] = 45462,	-- Toshe Chaosrender
 							["coord"] = { 57.2, 75.5, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(27442, {	-- The War Has Many Fronts (H)
-							["qg"] = 45460,	-- Earthmender Duarn
 							["sourceQuest"] = 26006,	-- A Breath of Fresh Air
+							["qg"] = 45460,	-- Earthmender Duarn
 							["coord"] = { 64.4, 68.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(25917, {	-- We Are Not Alone (A)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25916,	-- Breaking Through
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(25991, {	-- We Are Not Alone (H)
-							["qg"] = 41531,	-- Earthmender Duarn
 							["sourceQuest"] = 25990,	-- Breaking Through
+							["qg"] = 41531,	-- Earthmender Duarn
 							["coord"] = { 51.6, 52.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						q(25911, {	-- Welcome News (A)
-							["qg"] = 40645,	-- Jorlan Trueblade
 							["sourceQuest"] = 25898,	-- Honor and Privilege
+							["qg"] = 40645,	-- Jorlan Trueblade
 							["coord"] = { 56.5, 80.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -3135,8 +3060,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25973, {	-- Welcome News (H)
-							["qg"] = 40921,	-- Blood Guard Toldrek
 							["sourceQuest"] = 25972,	-- Honor and Privilege
+							["qg"] = 40921,	-- Blood Guard Toldrek
 							["coord"] = { 50.4, 79.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -3173,7 +3098,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
 							["cost"] = {{"i",187662,1}},	-- Strange Goop
 							["timeline"] = { ADDED_9_2_5 },
-							["g"] = {
+							["groups"] = {
 								i(187916),	-- Coilclutch Vine
 							},
 						}),
@@ -3201,9 +3126,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62358),	-- Leggings of Clutching Roots
 									i(62366, {	-- Arcanum of the Earthen Ring
 										["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 									i(68764, {	-- Arcanum of the Earthen Ring
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 								},

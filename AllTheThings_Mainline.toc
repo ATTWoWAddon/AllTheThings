@@ -25,8 +25,8 @@
 ## Notes-zhCN: 追踪你所收藏的坐骑、宠物、玩具、幻化等。。|n按你的喜好筛选，或尝试收集所有物品！|n|n每晚构建，每周更新。
 ## Notes-zhTW: 追蹤你所收藏的坐騎、寵物、玩具、塑形等。。|n依你的喜好篩選，或試著收集所有物品！|n|n每晚構建，每週更新。
 ## Version: @project-version@
-## Interface: 110100, 110105
-## X-Interface: 110100, 110105
+## Interface: 110200, 110205
+## X-Interface: 110200, 110205
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
@@ -67,26 +67,16 @@ lib\Audio.lua
 
 # Load localization modules
 locales\Default Locale.lua
-locales\en.lua
-locales\de.lua
-locales\es.lua
-locales\mx.lua
-locales\fr.lua
-locales\it.lua
-locales\ko.lua
-locales\pt.lua
-locales\ru.lua
-locales\cn.lua
-locales\tw.lua
 
 # Search Cache
 src\Cache.lua
 
 # Helper Modules
+#src\Modules\Analyzers.lua
 src\Modules\RetrievingData.lua
+src\Modules\Catalyst.lua
 src\Modules\Collection.lua
 src\Modules\CustomCollect.lua
-src\Modules\ExtraCategories.lua
 src\Modules\FactionData.lua
 src\Modules\Fill.lua
 src\Modules\Color.lua
@@ -95,6 +85,8 @@ src\Modules\Events.lua
 src\Modules\Filter.lua
 src\Modules\Inventory.lua
 src\Modules\Model.lua
+#src\Modules\Reagent.lua
+src\Modules\Search.lua
 src\Modules\Social.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
@@ -107,15 +99,18 @@ db\Retail\LocalizationDB.lua
 
 # Load object class templates
 src\Classes\base.lua
+src\Classes\Achievement Categories.lua
+src\Classes\Achievement Data.lua
 src\Classes\Achievement.lua
-src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
 src\Classes\Currency.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
+src\Classes\Guild Achievements.lua
 src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
+src\Classes\BattlePet.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
@@ -158,6 +153,10 @@ src\Settings\Settings.xml
 
 # Load primary addon source files
 AllTheThings.lua
+
+# Classic Specific Modules
+# src\Classes\Classic\Mounts & Battle Pets.lua
+
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
@@ -168,11 +167,11 @@ src\UI\Shared Window Logic.lua
 src\UI\Retail Window Logic.lua
 
 # Load expansion specific category database.
-db\Retail\Categories.lua
+db\Retail\Categories.xml
 
 # Window Definitions
 # src\UI\Windows\Windows.xml
 src\UI\Windows\Debugger.lua
 
 # Finally, prepare the Data Cache
-# src\Root.lua
+src\Root.lua

@@ -6,14 +6,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641394,
-			["g"] = {
+			["groups"] = {
 				n(TRANSPORT_NETWORK, {
 					["icon"] = 3854017,
-					["g"] = sharedData({ ["icon"] = 3854017 }, {
+					["groups"] = sharedData({ ["icon"] = 3854017 }, {
 						n(ACHIEVEMENTS, {
 							ach(14775, {	-- Mush Appreciated
 								["maps"] = { 1819 },	-- Fungal Terminus
-								["g"] = {
+								["groups"] = {
 									title(435),	-- Fun Guy / Fun Gal
 								},
 							}),
@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 									["provider"] = { "n", 157710 },	-- Cortinarius
 									["coord"] = { 33.2, 36.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(171989),	-- Pouch of Spores (QI!)
 									},
 								}),
@@ -55,7 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 									["provider"] = { "n", 157710 },	-- Cortinarius
 									["coord"] = { 33.2, 36.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(172084),	-- Fungal Beacon (QI!)
 									},
 								}),
@@ -68,7 +68,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuests"] = { 57463 },	-- My Way or the Hyphae
 									["provider"] = { "n", 166982 },	-- Marasmius
 									["coord"] = { 29.5, 34.6, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(178033),	-- Talkative Spore (QI!)
 									},
 								}),
@@ -80,22 +80,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								["isDaily"] = true,
 							}, {
 								q(62606, {	-- A Blackthorn Blend
-									["g"] = {
+									["groups"] = {
 										i(183840),	-- Blackthorn Clay (QI!)
 									},
 								}),
 								q(62608, {	-- A Royal Treat
-									["g"] = {
+									["groups"] = {
 										i(183837),	-- Royal Peat (QI!)
 									},
 								}),
 								q(60175, {	-- A Taste of Tirna Noch
-									["g"] = {
+									["groups"] = {
 										i(178215),	-- Leafy Loam (QI!)
 									},
 								}),
 								q(62607, {	-- Glittering Gritty Goodness
-									["g"] = {
+									["groups"] = {
 										i(183836),	-- Shimmersilt (QI!)
 									},
 								}),
@@ -116,7 +116,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(60153),	-- Into the Unknown (2)
 								q(62382),	-- Into the Unknown (3)
 								q(62453, {	-- Into the Unknown (4)
-									["g"] = {
+									["groups"] = {
 										i(183961, {	-- Gorm "Juice" (QI!)
 											["description"] = "Speak to Mixy Mak to mix a drink using this for you to relax."
 										}),
@@ -134,24 +134,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(62466),	-- Go Beyond! (1)
 								q(62263),	-- Go Beyond! (2)
 								q(62459, {	-- Go Beyond! (3)
-									["g"] = {
+									["groups"] = {
 										i(183725),	-- Moth Net (QI!)
 									},
 								}),
 								q(62417, {	-- Go Beyond! (4)
-									["g"] = {
+									["groups"] = {
 										i(183697),	-- Night Lily (QI!)
 									},
 								}),
 								q(60188, {	-- Go Beyond! (5)
-									["g"] = {
+									["groups"] = {
 										i(178464),	-- Discarded Harp (QI!)
 										i(178465),	-- Giant Silk Bundle (QI!)
 									},
 								}),
 								q(62400),	-- Go Beyond! (6)
 								q(62465, {	-- Go Beyond! (7)
-									["g"] = {
+									["groups"] = {
 										i(183792),	-- Artisan's Implement (QI!)
 										i(183791),	-- Pilfered Materials (QI!)
 									},
@@ -160,10 +160,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(VENDORS, {
 							["icon"] = [[~_.asset("Interface_Vendor")]],
-							["g"] = {
+							["groups"] = {
 								n(174609, {	-- Zaki
 									["coord"] = { 51.8, 19.6, THE_ROOTS },
-									["g"] = {
+									["groups"] = {
 										i(184346),	-- Damp Portalbello
 										i(184345),	-- Glowing Portalbello
 										i(184343),	-- Healthy Portalbello
@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								n(174766, {	-- Cortinarius <Marasmius Quartermaster>
 									["coord"] = { 56.1, 51.3, 1819 },	-- The Ring
-									["g"] = {
+									["groups"] = {
 										i(180724, {	-- Enchanted Winterborn Runestag (MOUNT!)
 											["cost"] = { { "c", ANIMA, 5000 } },
 										}),

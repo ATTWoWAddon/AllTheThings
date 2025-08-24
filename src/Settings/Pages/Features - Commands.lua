@@ -1,22 +1,22 @@
 local _, app = ...;
 if app.IsClassic then return; end	-- Disable this in Classic
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Commands Page
-local child = settings:CreateOptionsPage("Commands", L.FEATURES_PAGE)
+local child = settings:CreateOptionsPage(L.COMMANDS_PAGE, L.FEATURES_PAGE)
 
 -- CONTENT
-local headerCommands = child:CreateHeaderLabel("Chat commands to view any thing")
+local headerCommands = child:CreateHeaderLabel(L.COMMANDS_HEADER_LABEL)
 if child.separator then
 	headerCommands:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
 	headerCommands:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
-local textCommands1 = child:CreateTextLabel("|cffFFFFFFIDs can be found by looking at the WoWHead address, or turning on the various IDs in the ATT settings.")
+local textCommands1 = child:CreateTextLabel(L.COMMANDS_PART_1)
 textCommands1:SetPoint("TOPLEFT", headerCommands, "BOTTOMLEFT", 0, -8)
 textCommands1:SetWidth(textCommands1:GetUnboundedStringWidth())
-local textCommands2 = child:CreateTextLabel("|cffFFFFFFAs an example, using |r|cff00FF98/att achievement:9547|r|cffFFFFFF will show you something awesome!")
+local textCommands2 = child:CreateTextLabel(L.COMMANDS_PART_2)
 textCommands2:SetPoint("TOPLEFT", headerCommands, "BOTTOMLEFT", 0, -28)
 textCommands2:SetWidth(textCommands2:GetUnboundedStringWidth())
 

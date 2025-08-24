@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(75611, {	-- Glimmerfish Before It's Gone
 					["coord"] = { 43.8, 69.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205179),	-- Glimmerfish Scale (QI!)
 					},
 				}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(74352, {	-- Whirling Zephyr
 					["coord"] = { 57.5, 65.5, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203706),	-- Hurricane Scepter
 					},
 				}),

@@ -236,8 +236,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 			["description"] = "The daily quests requires the following reagents:\nAutumnal Herbs - 60 (12 stacks) \nHoney - 100 (20 stacks)\nWild Turkey - 20\nPumpkin - 20 (4 stacks)\nPotato - 20 (4 stacks)\nCranberry - 20 (4 stacks)\nMild Spices - 20 (4 stacks)\nSimple Flour - 20 (4 stacks)\n\nThe most effective route is to start at Stormwind/Undercity and farm the Wild Turkeys from Elwynn/Tirisfal, then get every reagent from vendor. Then move on to the two other cities for their dailies. Order does not matter, but remember to buy Cranberries and Potatoes from the respective vendors! Then return to Stormwind/Undercity for the rest.",
 			["groups"] = {
 				q(14033, {	-- Candied Sweet Potatoes (Alliance)
-					["qg"] = 34676,	-- Isaac Allerton
 					["sourceQuest"] = 14030,	-- They're Ravenous In Darnassus (Alliance)
+					["qg"] = 34676,	-- Isaac Allerton
 					["coord"] = { 61.6, 49.1, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -253,8 +253,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 				}),
 				q(14043, {	-- Candied Sweet Potatoes (Horde)
-					["qg"] = 34678,	-- Dokin Farplain
 					["sourceQuest"] = 14041,	-- Cranberry Chutney (Horde)
+					["qg"] = 34678,	-- Dokin Farplain
 					["coord"] = { 30.9, 63.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -286,8 +286,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					["_drop"] = { "g" },
 				}),
 				q(14028, {	-- Cranberry Chutney (Alliance)
-					["qg"] = 34644,	-- Edward Winslow
 					["sourceQuest"] = 14024,	-- Pumpkin Pie (Alliance)
+					["qg"] = 34644,	-- Edward Winslow
 					["coord"] = { 59.8, 34.3, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -302,8 +302,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 				}),
 				q(14041, {	-- Cranberry Chutney (Horde)
-					["qg"] = 34679,	-- Francis Eaton
 					["sourceQuest"] = 14040,	-- Pumpkin Pie (Horde)
+					["qg"] = 34679,	-- Francis Eaton
 					["coord"] = { 46.6, 13.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -409,8 +409,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					["isYearly"] = true,
 				}),
 				q(14024, {	-- Pumpkin Pie (Alliance)
-					["qg"] = 34744,	-- Jasper Moore
 					["sourceQuest"] = 14023,	-- Spice Bread Stuffing (Alliance)
+					["qg"] = 34744,	-- Jasper Moore
 					["coord"] = { 33.9, 50.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -425,9 +425,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 				}),
 				q(14040, {	-- Pumpkin Pie (Horde)
+					["sourceQuest"] = 14037,	-- Spice Bread Stuffing (Horde)
 					["qg"] = 34768,	-- William Mullins
 					["coord"] = { 65.8, 13.2, UNDERCITY },
-					["sourceQuest"] = 14037,	-- Spice Bread Stuffing (Horde)
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -483,8 +483,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					["_drop"] = { "g" },
 				}),
 				q(14035, {	-- Slow-roasted Turkey (Alliance)
-					["qg"] = 34675,	-- Gregory Tabor
 					["sourceQuest"] = 14033,	-- Candied Sweet Potatoes (Alliance)
+					["qg"] = 34675,	-- Gregory Tabor
 					["coord"] = { 34, 51.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
@@ -500,8 +500,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 				}),
 				q(14047, {	-- Slow-roasted Turkey (Horde)
-					["qg"] = 34677,	-- Miles Standish
 					["sourceQuest"] = 14044,	-- Undersupplied in the Undercity (Horde)
+					["qg"] = 34677,	-- Miles Standish
 					["coord"] = { 64.2, 10.3, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
@@ -547,8 +547,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					},
 				}),
 				q(14030, {	-- They're Ravenous In Darnassus (Alliance)
-					["qg"] = 34744,	-- Jasper Moore
 					["sourceQuest"] = 14028,	-- Cranberry Chutney (Alliance)
+					["qg"] = 34744,	-- Jasper Moore
 					["coord"] = { 33.9, 50.8, ELWYNN_FOREST },
 					["cost"] = {
 						{ "i", 44837, 5 },	-- Spice Bread Stuffing
@@ -558,8 +558,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					["isYearly"] = true,
 				}),
 				q(14044, {	-- Undersupplied in the Undercity (Horde)
-					["qg"] = 34679,	-- Francis Eaton
 					["sourceQuest"] = 14043,	-- Candied Sweet Potatoes (Horde)
+					["qg"] = 34679,	-- Francis Eaton
 					["coord"] = { 46.6, 13.8, DUROTAR },
 					["cost"] = {
 						{ "i", 44837, 5 },	-- Spice Bread Stuffing
@@ -571,8 +571,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14053, {	-- We're Out of Cranberry Chutney Again? (Alliance)
 					["qg"] = 34710,	-- Ellen Moore
 					["coord"] = { 33.7, 50.6, ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 44840, 20 } },	-- Cranberry Chutney
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["_drop"] = { "g" },
 				}),

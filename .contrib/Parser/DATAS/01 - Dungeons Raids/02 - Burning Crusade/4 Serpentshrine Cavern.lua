@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 local COILFANG_ARMAMENTS = i(24368);	-- Coilfang Armaments
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(748, {	-- Serpentshrine Cavern
 		["lore"] = "Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",
 		-- #if BEFORE WRATH
@@ -22,24 +22,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10944, {	-- The Secret Compromised
-					["qg"] = 22820,	-- Seer Olum
-					["sourceQuest"] = 10708,	-- Akama's Promise
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
+					["sourceQuest"] = 10708,	-- Akama's Promise
+					["qg"] = 22820,	-- Seer Olum
 					["coord"] = { 48, 18.2, SERPENTSHRINE_CAVERN },
 					["maps"] = { SHADOWMOON_VALLEY },
 				}),
 			}),
 			n(ZONE_DROPS, {
 				COILFANG_ARMAMENTS,
-				i(30280),	-- Pattern: Belt of Blasting
+				i(30280),	-- Pattern: Belt of Blasting (RECIPE!)
 				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
 				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
 				i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
-				i(30281),	-- Pattern: Belt of the Long Road
-				i(30282),	-- Pattern: Boots of Blasting
+				i(30281),	-- Pattern: Belt of the Long Road (RECIPE!)
+				i(30282),	-- Pattern: Boots of Blasting (RECIPE!)
 				i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
 				i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
-				i(30283),	-- Pattern: Boots of the Long Road
+				i(30283),	-- Pattern: Boots of the Long Road (RECIPE!)
 				i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
 				i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
 				i(30304),	-- Pattern: Monsoon Belt (RECIPE!)
@@ -197,8 +197,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 21212,
 				["groups"] = {
 					ach(694, {	-- Serpentshrine Cavern
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 10445,	-- The Vials of Eternity
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Vials of Eternity'.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5088, {	-- Serpentshrine Cavern Guild Run
@@ -239,7 +240,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 			}),
 		},
 	}),
-})));
+}))));
 
 -- Remove the Phase from Coilfang Armaments
 COILFANG_ARMAMENTS.u = nil;

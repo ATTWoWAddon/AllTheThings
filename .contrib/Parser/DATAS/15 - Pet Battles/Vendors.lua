@@ -10,7 +10,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 			-- #if AFTER BFA
 			142065, -- Dana Pull
 			131734,	-- Zununu the Undefeated <Pet Supplies>
-			-- #if AFTER SHADOWLANDS
+			-- #if AFTER SL
 			156769, -- Keeper Ta'hult <Pet Vendor>
 			-- #if AFTER DF
 			193029, -- Lysindra <Pet Supplies>
@@ -24,7 +24,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 			-- #if AFTER BFA
 			{ 50.8, 46.0, BORALUS },
 			{ 56.8, 34.6, DAZARALOR },
-			-- #if AFTER SHADOWLANDS
+			-- #if AFTER SL
 			{ 64.8, 67.6, ORIBOS },
 			-- #if AFTER DF
 			{ 48.2, 82.6, VALDRAKKEN },
@@ -32,7 +32,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 			-- #endif
 			-- #endif
 		},
-		["g"] = {
+		["groups"] = {
 			i(86143, {	-- Battle Pet Bandage
 				["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
 			}),

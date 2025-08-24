@@ -26,7 +26,7 @@ local STORMRAGE_COVER = i(16900);	-- Stormrage Cover
 
 -- #if WRATH
 local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_ONE .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
@@ -102,17 +102,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7635, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- A Proper String
-					["qg"] = 14525,	-- Stoma the Ancient
 					["sourceQuest"] = 7633,	-- An Introduction
+					["qg"] = 14525,	-- Stoma the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
 					-- #if AFTER WRATH
 					["maps"] = { BURNING_STEPPES },
 					-- #endif
-					["classes"] = { HUNTER },
-					["lvl"] = lvlsquish(60, 60, 30),
 					-- #if BEFORE WRATH
 					["cost"] = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
 					-- #endif
+					["classes"] = { HUNTER },
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						-- #if AFTER WRATH
 						objective(1, {	-- 0/1 Mature Black Dragon Sinew
@@ -138,12 +138,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7634, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Ancient Sinew Wrapped Lamina
-					["qg"] = 14526,	-- Hastat the Ancient
 					["sourceQuest"] = 7633,	-- An Introduction
+					["qg"] = 14526,	-- Hastat the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { WINTERSPRING },
-					["classes"] = { HUNTER },
 					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
+					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18714),	-- Ancient Sinew Wrapped Lamina
@@ -151,8 +151,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84560, {	-- Celebrating Good Times
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -165,8 +165,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7496, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Celebrating Good Times
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
@@ -193,8 +193,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84561, {	-- For All To See
-					["qg"] = 4949,	-- Thrall
 					["sourceQuest"] = 7490,	-- Victory for the Horde
+					["qg"] = 4949,	-- Thrall
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { ADDED_1_15_3 },
 					["races"] = HORDE_ONLY,
@@ -207,8 +207,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7491, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- For All To See
-					["qg"] = 4949,	-- Thrall
 					["sourceQuest"] = 7490,	-- Victory for the Horde
+					["qg"] = 4949,	-- Thrall
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
@@ -235,11 +235,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84555, {	-- Nostro's Compendium
-					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
+					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(228695),	-- A Dull and Flat Elven Blade
@@ -247,13 +247,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
-					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-					["classes"] = { WARRIOR, PALADIN },
+					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
@@ -261,12 +261,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
+					["sourceQuest"] = 7633,	-- An Introduction
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["sourceQuest"] = 7633,	-- An Introduction
-					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
@@ -330,12 +330,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
+					["sourceQuest"] = 7633,	-- An Introduction
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
 					},
-					["sourceQuest"] = 7633,	-- An Introduction
-					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
@@ -404,23 +404,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84556, {	-- The Forging of Quel'Serrar
+					["sourceQuest"] = 84555,	-- Nostro's Compendium
 					["providers"] = {
 						{ "n",  14368 },	-- Lorekeeper Lydros
 						{ "i", 228695 },	-- A Dull and Flat Elven Blade
 					},
-					["sourceQuest"] = 84555,	-- Nostro's Compendium
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				-- #endif
 				q(7508, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
+					["sourceQuest"] = 7507,	-- Nostro's Compendium
 					["providers"] = {
 						{ "n", 14368 },	-- Lorekeeper Lydros
 						{ "i", 18513 },	-- A Dull and Flat Elven Blade
 					},
-					["sourceQuest"] = 7507,	-- Nostro's Compendium
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
@@ -430,11 +430,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84557, {	-- The Forging of Quel'Serrar
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 84556,	-- The Forging of Quel'Serrar
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
+					["qg"] = 14368,	-- Lorekeeper Lydros
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Treated Ancient Blade
@@ -462,8 +462,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7509, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
+					["qg"] = 14368,	-- Lorekeeper Lydros
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
@@ -497,13 +497,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7497, {	-- The Journey Has Just Begun (A)
-					["qg"] = 14394,	-- Major Mattingly
 					["sourceQuests"] = {
 						7496,	-- Celebrating Good Times
 						-- #if AFTER WRATH
 						24428,	-- A Most Puzzling Circumstance (A)
 						-- #endif
 					},
+					["qg"] = 14394,	-- Major Mattingly
 					["coord"] = { 67.0, 85.0, STORMWIND_CITY },
 					["requireSkill"] = LEATHERWORKING,
 					["learnedAt"] = 300,
@@ -519,13 +519,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7493, {	-- The Journey Has Just Begun (H)
-					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
 					["sourceQuests"] = {
 						7491,	-- For All To See
 						-- #if AFTER WRATH
 						24429,	-- A Most Puzzling Circumstance (H)
 						-- #endif
 					},
+					["qg"] = 14392,		-- Overlord Runthak / Overlord Natoj
 					["coord"] = { 52.2, 75.8, ORGRIMMAR },
 					["requireSkill"] = LEATHERWORKING,
 					["learnedAt"] = 300,
@@ -687,17 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 			-- #endif
 					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
-						ach(684, {	-- Onyxia's Lair (Level 60)
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								7635,	-- A Proper String
-								7509,	-- The Forging of Quel'Serrar
-								8620,	-- The Only Prescription
-								7495,	-- Victory for the Alliance
-								7490,	-- Victory for the Horde
-							},
-							-- #endif
-						}),
+						ach(684),	-- Onyxia's Lair (Level 60)
 						i(18423, {	-- Head of Onyxia (A)
 							["races"] = ALLIANCE_ONLY,
 						}),

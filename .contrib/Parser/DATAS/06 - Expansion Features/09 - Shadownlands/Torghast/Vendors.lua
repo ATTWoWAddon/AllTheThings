@@ -2,16 +2,16 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local PHANTASMA = 1728;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	m(TORGHAST, {
 		n(VENDORS, {
-			n(BROKER_VEKEN_BROKER_VENOTT, {
+			n(BROKER_VEKEN_BROKER_VENOTT, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 				["description"] = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
 				["crs"] = {
 					152594, -- Broker Ve'ken
 					170257,	-- Broker Ve'nott
 				},
-				["g"] = {
+				["groups"] = {
 					n(176761, {	-- Adamant Vault
 						i(187034, {	-- Gilded Agony Cage
 							["cost"] = { { "c", PHANTASMA, 1000 } },
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					i(186678),	-- Mawforged Weapons Cache
 					i(186679),	-- Scroll of Domination
 				},
-			}),
+			})),
 		}),
 	}),
-})));
+}));

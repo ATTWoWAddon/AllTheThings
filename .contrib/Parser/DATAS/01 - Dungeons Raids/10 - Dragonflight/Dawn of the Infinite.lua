@@ -456,12 +456,13 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
 		}),
+		i(68194),	-- Oggleflint's Inspirer				(Removed)
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
 			["name"] = "Quantum Greatsword (Two-Handed) completed.",
 		}),
-		ig(134746),	-- Covert Greatsword					(Removed)
+		ig(134746),	-- Covert Greatsword				(Removed)
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 2, -- Heroic raid
 		}),
@@ -500,6 +501,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(3222),	-- Wicked Dagger						(NYI)
 
 		ig(14151),	-- Chanting Blade						(Removed)
+		ig(134725),	-- Cold-Touched Mageblade				(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker					(Removed)
@@ -507,6 +509,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(49120),	-- Direbrew's Bloody Shanker			(Removed)
 		ig(93625),	-- Miniature Winter Veil Tree			(Removed)(MOP Version)
 		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
+		ig(117371),	-- Miniature Winter Veil Tree			(Removed)(WOD Version)
 		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
@@ -518,6 +521,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
+		ig(22317),	-- Lefty's Brass Knuckle				(Removed)
 		ig(134780),	-- Seasoned Ripper						(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
@@ -606,7 +610,6 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(68195),	-- Bazzalan's Blade						(Removed)
 		ig(19110),	-- Cold Forged Blade					(Removed)
-		ig(134725),	-- Cold-Touched Mageblade				(Removed)
 		ig(134726),	-- Cold-Touched Sword					(Removed)
 		ig(134758),	-- Covert Mageblade						(Removed)
 		ig(14145),	-- Cursed Felblade						(Removed)
@@ -617,8 +620,12 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
 		}),
+		ig(161926, {	-- Talanji's Salutary Scepter 		(NYI)
+			["description"] = "Likely possible to also get from completing Quests in Tirisgarde as Alliance and relogging. We dont know which quest",
+			["races"] = HORDE_ONLY,
+		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
-		ig(134590),	--Vanguard Baton of Light				(Removed)
+		ig(134590),	-- Vanguard Baton of Light				(Removed)
 	}),
 	i(208122, {	-- Quantum Warglaives
 		hqt(77608, {	-- when you learn everything from Quantum Warglaives
@@ -648,7 +655,7 @@ local QUANTUM_GROUP = sharedData({
 		},
 		{"prune","u","e"}	-- prune any unobtainable/event statuses from the selected monuts
 		},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
-		["g"] = {
+		["groups"] = {
 			i(133543),	-- Reins of the Infinite Timereaver
 		},
 	}),
@@ -667,7 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2197,	-- Immemorial Battlefield
 			2198,	-- Dawn of the Infinite
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
 					["provider"] = { "n", 187669 },	-- Nozdormu
@@ -682,7 +689,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 76140 },	-- Dawn of the Infinite
 					["provider"] = { "n", 205706 },	-- Future Chromie
 					["coord"] = { 52.3, 39.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206586),	-- Epoch Extractor (QI!)
 						i(206269),	-- Time-Lost Essence (QI!)
 					},
@@ -695,7 +702,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 					["provider"] = { "n", 205707 },	-- Chromie
 					["coord"] = { 61.4, 79.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206369),	-- Time Trap (QI!)
 					},
 				}),
@@ -713,7 +720,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 76145 },	-- Who's That Chromie?
 					["provider"] = { "n", 205710 },	-- Chromie
 					["coord"] = { 62.2, 83.2, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						-- Received if you already have the Toy
 						i(208417),	-- Chromie's Certificate of Temporal Tidiness
 						i(208415),	-- Stasis Sand (TOY!)
@@ -722,7 +729,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				q(76147, {	-- Rewind and Reconcile
 					["provider"] = { "i", 206145 },	-- Mysterious Time Relic (QI!)
 					--["coord"] = { ??, ??, 2194 },	-- No coords since it dungeon
-					["g"] = {
+					["groups"] = {
 						i(208390),	-- Bronze Archive Stone
 					},
 				}),
@@ -735,7 +742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2521, {	-- Chronikar
 					["crs"] = { 198995 },	-- Chronikar
-					["g"] = {
+					["groups"] = {
 						i(207828),	-- Bronze Defender's Vesture
 						i(207995),	-- Chronikar's Ceremonial Saber
 						i(207819),	-- Timeways Intruder's Greaves
@@ -748,7 +755,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2528, {	-- Manifested Timeways
 					["crs"] = { 198996 },	-- Manifested Timeways
-					["g"] = {
+					["groups"] = {
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
 						i(207903),	-- Fading Chronogrips
@@ -767,7 +774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["g"] = {
+					["groups"] = {
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
 						i(207921),	-- Dazhak's Desiccated Wingbones
@@ -783,7 +790,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18703),	-- Dawn of the Infinite: Galakrond's Fall
 						i(207820),	-- Galakrond's Voracious Hide
 						i(207920),	-- Incarnate's Perceptive Casque
@@ -797,7 +804,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
 					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["g"] = {
+					["groups"] = {
 						i(207927),	-- Crown of the Infinite Lord
 						i(207552),	-- Echoing Tyrstone
 						i(207950),	-- Marbled Oathstone Greatboots
@@ -810,7 +817,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2536, {	-- Morchie
 					["crs"] = { 198999 },	-- Morchie
-					["g"] = {
+					["groups"] = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
 						i(207824),	-- Greaves of Parallel Lives
@@ -827,7 +834,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
-					["g"] = {
+					["groups"] = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
@@ -841,7 +848,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 					["crs"] = { 199000 },	-- Chrono-Lord Deios
-					["g"] = appendGroups(QUANTUM_GROUP, {
+					["groups"] = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
@@ -908,13 +915,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2521, {	-- Chronikar
 					["crs"] = { 198995 },	-- Chronikar
-					["g"] = {
+					["groups"] = {
 						ach(18589),	-- Crunch Time
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
 					["crs"] = { 198996 },	-- Manifested Timeways
-					["g"] = {
+					["groups"] = {
 						ach(18556),	-- Chaotic Time
 					},
 				}),
@@ -925,7 +932,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18612),	-- A Slime in Need
 					},
 				}),
@@ -937,7 +944,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
 					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["g"] = {
+					["groups"] = {
 						ach(18539),	-- Back En-masse
 					},
 				}),
@@ -1002,7 +1009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2521, {	-- Chronikar
 					["crs"] = { 198995 },	-- Chronikar
-					["g"] = {
+					["groups"] = {
 						ach(18589),	-- Crunch Time
 						i(207828),	-- Bronze Defender's Vesture
 						i(207995),	-- Chronikar's Ceremonial Saber
@@ -1016,7 +1023,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2528, {	-- Manifested Timeways
 					["crs"] = { 198996 },	-- Manifested Timeways
-					["g"] = {
+					["groups"] = {
 						ach(18556),	-- Chaotic Time
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
@@ -1036,7 +1043,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18612),	-- A Slime in Need
 						i(207836),	-- Ahnzon's Corroded Carapace
 						i(207983),	-- Ancestor's Necromantic Focus
@@ -1053,7 +1060,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						204459,	-- Iridikron the Stonescaled
 						198933,	-- Iridikron the Stonescaled
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18703),	-- Dawn of the Infinite: Galakrond's Fall
 						i(207820),	-- Galakrond's Voracious Hide
 						i(207920),	-- Incarnate's Perceptive Casque
@@ -1067,7 +1074,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
 					["crs"] = { 198998 },	-- Tyr, the Infinite Keeper
-					["g"] = {
+					["groups"] = {
 						ach(18539),	-- Back En-masse
 						i(207927),	-- Crown of the Infinite Lord
 						i(207552),	-- Echoing Tyrstone
@@ -1081,7 +1088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2536, {	-- Morchie
 					["crs"] = { 198999 },	-- Morchie
-					["g"] = {
+					["groups"] = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
 						i(207824),	-- Greaves of Parallel Lives
@@ -1098,7 +1105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						209207,	-- Grommash Hellscream <Warlord with the Iron Will>
 						203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					},
-					["g"] = {
+					["groups"] = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
@@ -1113,7 +1120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				--[[	Dont seem to be any difference in loot. Might just use one?
 				e(2534, {	-- Time-Lost Battlefield [H]
 					["crs"] = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
-					["g"] = {
+					["groups"] = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
 						i(207878),	-- Grunt's Eternal Treads
@@ -1128,7 +1135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				--]]
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 					["crs"] = { 199000 },	-- Chrono-Lord Deios
-					["g"] = appendGroups(QUANTUM_GROUP, {
+					["groups"] = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)

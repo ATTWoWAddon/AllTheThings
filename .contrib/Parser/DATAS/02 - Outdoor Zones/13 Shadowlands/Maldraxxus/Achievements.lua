@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["_npcs"] = { 168147 },
 				}),
 			}),
-			explorationAch(14305),	-- Explore Maldraxxus
+			ach(14305),	-- Explore Maldraxxus
 			ach(14721, {	-- It's in the Mix
 				i(183903),	-- Smelly Jelly (TOY!)
 				crit(48854, {
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			ach(14634, {	-- Nine Afterlives
 				i(184449),		-- Jiggles's Favorite Toy (TOY!)
 				crit(49425, {	-- Hairball
-					["description"] = "Close to the top-left corner of the final boss's map.  On the left side of the slime pool, kill a green ooze and then turn left.  Hairball is in a tiny alcove filled with fish skeletons and candles.",
+					["description"] = "Close to the top-left corner of the final boss's map. On the left side of the slime pool, kill a green ooze and then turn left. Hairball is in a tiny alcove filled with fish skeletons and candles.",
 					["crs"] = { 174195 },	-- Hairball
 					["maps"] = {
 						1674,	-- Plaguefall
@@ -204,6 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58794 },	-- Stabbing Wasteward
 				}),
 			}),
+			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- The Undying Army
 			ach(14513, {	-- Tour of Duty: Maldraxxus
 				["pvp"] = true,
 			}),

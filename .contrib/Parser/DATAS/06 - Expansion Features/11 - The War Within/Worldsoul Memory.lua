@@ -11,14 +11,17 @@ WORLDSOUL_MEMORY = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
 		["providers"] = {
-			-- #if BEFORE 11.1.0.59490
-			{ "i", 220520 },	-- Radiant Echo
-			-- #else
+			-- TODO set preprocessor to season start timeline specifically
+			-- #if AFTER 11.2.0
+			{ "i", 246771 },	-- Radiant Echo
+			-- #elseif AFTER 11.1.0.59490
 			{ "i", 235897 },	-- Radiant Echo
+			-- #else
+			{ "i", 220520 },	-- Radiant Echo
 			-- #endif
 			{ "n", 222165 },	-- Worldsoul Memory
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40252),	-- A Series of Echoes (automated)
 				ach(40222, {	-- Echoes of Danger (automated)
@@ -41,16 +44,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			n(QUESTS, {
 				q(84542, {	-- A Radiant Echo
 					["provider"] = { "i", 228958 },	-- Radiant Echo
-					["timeline"] = { REMOVED_11_1_0 },
+					["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 				}),
 				q(87284, {	-- A Radiant Echo
 					["provider"] = { "i", 235896 },	-- Radiant Echo
-					["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				}),
+				q(91539, {	-- A Radiant Echo
+					["provider"] = { "i", 246772 },	-- Radiant Echo
+					["timeline"] = { ADDED_11_2_0_SEASONSTART },
 				}),
 				q(82285, {	-- Worldsoul Memory: A Wounded Soul
 					["coord"] = { 65.2, 56.1, AZJ_KAHET },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222670),	-- Azerite Manifistation
 						n(222658, {	-- Dregblood and Soulboil (Dregbile)
 							["crs"] = { 224282 },	-- Soulboil
@@ -65,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82321, {	-- Worldsoul Memory: Ancient Explorers
 					["coord"] = { 55.6, 77.7, ISLE_OF_DORN },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222733),	-- Stormlord Kao'dor
 						n(222723),	-- Conqueror Or'sosh
 						n(222659),	-- Toaka the Explorer
@@ -77,7 +84,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
 					["coord"] = { 46.8, 23.4, HALLOWFALL },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222637),	-- Ankoan Champion Utaari
 						n(222655),	-- Gurl The Feaster
 						n(222621),	-- Hand of Azshara
@@ -88,9 +95,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				q(86476, {	-- Worldsoul Memory: Early Cartel Wars
 					["coord"] = { 43.3, 14.4, UNDERMINE },
-					["repeatable"] = true,
 					["timeline"] = { ADDED_11_1_0 },
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						n(235071),	-- Peet the Wheedler
 						n(235072),	-- Vynnie Samophlangus
 						n(235073),	-- Madam Colada
@@ -101,7 +108,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82263, {	-- Worldsoul Memory: Elemental Fury
 					["coord"] = { 43.6, 10.7, THE_RINGING_DEEPS },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222791),	-- Crateron
 						n(222756),	-- Deepwalker Cavelord
 						n(222741),	-- Earthfury Cragshar
@@ -113,9 +120,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				q(86477, {	-- Worldsoul Memory: Kaja'mite Contact
 					["coord"] = { 58.2, 68.6, UNDERMINE },
-					["repeatable"] = true,
 					["timeline"] = { ADDED_11_1_0 },
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						n(235113),	-- Deep-King Grobrosh
 						n(235116),	-- Geomancer Keeri
 						n(235115),	-- Massive Kaja'mental
@@ -126,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82286, {	-- Worldsoul Memory: Old Gods Forsaken
 					["coord"] = { 21.1, 45.5, NERUBAR },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222654),	-- Spiz'na the Traitor
 						n(222616),	-- The Rebellious Queen
 						n(222626),	-- Vil'vim The Mindtwister
@@ -138,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82260, {	-- Worldsoul Memory: Primal Predators
 					["coord"] = { 59.5, 69.8, THE_RINGING_DEEPS },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222682),	-- Clawmother Tengi
 						n(222720),	-- Kiji the Stomper
 						n(222691),	-- Nalo'xic
@@ -150,7 +157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
 					["coord"] = { 60.7, 67.5, HALLOWFALL },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(222605),	-- Aqu'yinra
 						n(222611),	-- Bor'zal the Lurking
 						n(228901),	-- Dark Prophet Grshol
@@ -163,7 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81985, {	-- Worldsoul Memory: The Worldcarvers
 					["coord"] = { 51.2, 29.2, ISLE_OF_DORN },
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						n(221970),	-- First Blade Grimskarn
 						n(221974),	-- Gong'tze the Riverhewer
 						n(221972),	-- Talinhet

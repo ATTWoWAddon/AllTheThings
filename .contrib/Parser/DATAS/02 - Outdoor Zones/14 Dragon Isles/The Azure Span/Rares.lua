@@ -18,14 +18,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193116, {	-- Beogoka
 				["coord"] = { 73.0, 26.6, THE_AZURE_SPAN },
 				["questID"] = 73868,
-				["g"] = {
+				["groups"] = {
 					i(200673),	-- Beogoka's Tooth and Claw
 				},
 			}),
 			n(193178, {	-- Blightfur
 				["coord"] = { 13.4, 22.4, THE_AZURE_SPAN },
 				["questID"] = 74058,
-				["g"] = {
+				["groups"] = {
 					bo(69858, true),
 					i(197404),	-- Renewed Proto-Drake: Finned Tail (MM!)
 				},
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193259, {	-- Blue Terror
 				["coord"] = { 16.7, 28.4, THE_AZURE_SPAN },
 				["questID"] = 73870,
-				["g"] = {
+				["groups"] = {
 					i(197595),	-- Windborne Velocidrake: Finned Ears (MM!)
 				},
 			}),
@@ -51,9 +51,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193157, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_5, ADDED_11_0_7 } }, {	-- Dragonhunter Gorund
-				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
+				["coords"] = {
+					-- #if AFTER 11.0.7
+					{ 24.5, 47.3, THE_AZURE_SPAN },
+					-- #else
+					{ 27.8, 45.8, THE_AZURE_SPAN },
+					-- #endif
+				},
 				["questID"] = 73873,
-				["g"] = {
+				["groups"] = {
 					i(200302),	-- Magmaforged Scimitar
 				},
 			})),
@@ -63,7 +69,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.5, 36.1, THE_AZURE_SPAN },
 				["questID"] = 72730,
 				["isDaily"] = IGNORED_VALUE,
-				["g"] = {
+				["groups"] = {
 					i(198070),	-- Tattered Seavine (IF!)
 				},
 			}),
@@ -89,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 58.3, 69.0, THE_AZURE_SPAN },
 				["questID"] = 74532,
-				["g"] = {
+				["groups"] = {
 					bo(74459, true),
 					i(203658),	-- Graniteclaw's Vest
 				},
@@ -103,7 +109,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(190244, {	-- Mahg the Trampler
 				["coord"] = { 36.8, 35.8, THE_AZURE_SPAN },
 				["questID"] = 73883,
-				["g"] = {
+				["groups"] = {
 					i(200157),	-- Pathmaker
 				},
 			}),
@@ -111,7 +117,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 56.0, 67.6, THE_AZURE_SPAN },
 				["questID"] = 74531,
-				["g"] = {
+				["groups"] = {
 					bo(74461, true),
 					i(203660),	-- Rockknell's Groundpounders
 				},
@@ -129,14 +135,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["crs"] = { 198703 },	-- Gutrot Slime
 				["coord"] = { 20.6, 49.4, THE_AZURE_SPAN },
 				["questID"] = 73887,
-				["g"] = {
+				["groups"] = {
 					i(200160),	-- Notfar's Favorite Food (TOY!)
 				},
 			}),
 			n(193693, {	-- Rusthide
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- },
 			}),
 			n(192749, {	-- Sharpfang
@@ -148,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.9, 67.5, THE_AZURE_SPAN },
 				["questID"] = 74533,
-				["g"] = {
+				["groups"] = {
 					bo(74462, true),
 					i(203661),	-- Watercaller's Mantle
 				},
@@ -169,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					193255,	-- Archmage Cleary
 				},
 				["questID"] = 74082,
-				["g"] = {
+				["groups"] = {
 					bo(73064, true),
 					i(200211),	-- Snowman's Icy Gaze
 				},
@@ -182,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193167, {	-- Swagraal the Swollen
 				-- ["coord"] = { X, Y, THE_AZURE_SPAN },
 				-- ["questID"] = ,
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- },
 			}),
 			n(193196, {	-- Trilvarus Loreweaver
@@ -195,7 +201,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 70.2, 26.2, THE_AZURE_SPAN },	-- Crystal Spot
 				},
 				["questID"] = 74087,
-				["g"] = {
+				["groups"] = {
 					bo(69861, true),
 					i(200549),	-- Restored Titan Artifact
 				},
@@ -204,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 17.0, 41.3, THE_AZURE_SPAN },
 				["questID"] = 72853,
 				["isDaily"] = IGNORED_VALUE,
-				["g"] = {
+				["groups"] = {
 					i(201728),	-- Vakril's Strongbox
 				},
 			}),
@@ -212,7 +218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 57.2, 64.6, THE_AZURE_SPAN },
 				["questID"] = 74535,
-				["g"] = {
+				["groups"] = {
 					bo(74460, true),
 					i(203659),	-- Waterpot's Halfpot Deflector
 				},

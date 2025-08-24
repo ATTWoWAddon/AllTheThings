@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WOD, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	expansion(EXPANSION.WOD, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } }, {
 		header(HEADERS.Achievement, 6193, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
 			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]

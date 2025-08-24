@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=".config/classic/01 - Classic Era.config" config=".config/classic/Debug Mode.config"

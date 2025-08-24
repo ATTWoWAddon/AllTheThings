@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(RARES, {
 			n(COMMON_BOSS_DROPS, {
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					230946,	-- V.V. Goosworth
 					233472,	-- Volstrike the Charged
 				},
-				["g"] = {
+				["groups"] = {
 					i(234415),	-- Handcrank Casing
 					i(234386),	-- Handcrank Fuel Injector
 					i(234381),	-- Handcrank Fuel Tank
@@ -50,14 +50,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				q(85013, {	-- Darkfuse Precipitant
 					["provider"] = { "n", 231329 },	-- De-Pollution Station X1119
 					["coord"] = { 41.2, 91.4, UNDERMINE },
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
 				q(86414, {	-- Magno-Scrapper 9000
 					--["sourceQuests"] = { 84951 },	-- HQT: Bilgewater Cartel weekly contract
 					["provider"] = { "n", 234819 },	-- Ragzy Cashgrab
 					["coord"] = { 40.0, 22.4, UNDERMINE },
-					["isDaily"] = true,
-					["g"] = {
+					["isWeekly"] = true,
+					["groups"] = {
 						o(503440),	-- Discarded Goods
 					},
 				}),
@@ -65,14 +65,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					--["sourceQuests"] = { 84952 },	-- HQT: Steamwheedle Cartel weekly contract
 					["provider"] = { "n", 234751 },	-- Noggenfogger Recall Technician
 					["coord"] = { 32.0, 76.5, UNDERMINE },
-					["isDaily"] = true,
+					["isWeekly"] = true,
 				}),
 				q(86428, {	-- Voltstrike the Charged
 					--["sourceQuests"] = { 84954 },	-- HQT: Blackwater Cartel weekly contract
 					["provider"] = { "n", 234834 },	-- Boatwright Frankle
 					["coord"] = { 61.4, 25.2, UNDERMINE },
-					["isDaily"] = true,
-					["g"] = {
+					["isWeekly"] = true,
+					["groups"] = {
 						i(234971),	-- Chunk of Charged Glass (QI!)
 						o(503450),	-- Chunk of Charged Glass
 					},
@@ -81,8 +81,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					--["sourceQuests"] = { 84953 },	-- HQT: Venture Co. weekly contract
 					["provider"] = { "n", 236035 },	-- Scrapminer Krazzik
 					["coord"] = { 56.7, 79.0, UNDERMINE },
-					["isDaily"] = true,
-					["g"] = {
+					["isWeekly"] = true,
+					["groups"] = {
 						i(234970),	-- Partially-Drained Battery (QI!)
 						o(508727),	-- Partially-Drained Battery
 					},
@@ -91,8 +91,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231012, {	-- Candy Stickemup
 				["coord"] = { 42.2, 76.7, UNDERMINE },
 				["questID"] = 84927,	-- Candy Stickemup
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235348),	-- Back Alley Shank
 					i(235304),	-- Gutter Rat Mask
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 59.5, 84.7, UNDERMINE },
 				["questID"] = 84907,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235357),	-- Bulletscar Barricade
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
@@ -120,9 +120,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["cost"] = {{"i", 229823, 1}},	-- Canister of Darkfuse Solution
 				["coord"] = { 41.2, 91.4, UNDERMINE },
-				["questID"] = 85010,
+				["questID"] = 90492,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(229955),	-- Darkfuse Spy-Eye (MOUNT!)
 					i(235832),	-- Oil-Splattered Cloak
 					i(235467),	-- Ominous Oil Residue
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 26.5, 68.4, UNDERMINE },
 				["questID"] = 84877,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235309),	-- Gloomshroud Robe
 					i(235352),	-- Netherflare Wand
 					i(235350),	-- Void-forged Cudgel
@@ -144,22 +144,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 60.6, 9.6, UNDERMINE },
 				["questID"] = 84911,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
+					i(235315),	-- Rocketstep Boots
 					i(235312),	-- Snooty's Aviator Bindings
 					i(235316),	-- Whirly-Giggle Windwhir Wrap
 				},
 			}),
-			--n(234621, {	-- Gallagio Garbage <Luxury Trash>
-			-- Under Expansion Features => Scrap
 			n(234499, {	-- Giovante
 				["description"] = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
 				["coord"] = { 32.0, 76.5, UNDERMINE },
 				["crs"] = { 234751 },	-- Noggenfogger Recall Technician
-				["questID"] = 86307,
+				["questID"] = 90489,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235824),	-- Flame Sputterer
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235327),	-- Mend-and-Match Shoulderpads
@@ -170,8 +169,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231017, {	-- Grimewick
 				["coord"] = { 67.5, 33.5, UNDERMINE },
 				["questID"] = 84928,
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235323),	-- Blastshell Bracers
 					i(235303),	-- Seafused Brimstone Band
 					i(235319),	-- Tidebomb Chestpiece
@@ -183,9 +182,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = {
 					234819,	-- Magno-Scrapper 9000
 				},
-				["questID"] = 86298,
+				["questID"] = 90488,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235835),	-- Braided Wire Wrap
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
@@ -195,8 +194,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230995, {	-- Nitro
 				["coord"] = { 47.0, 55.7, UNDERMINE },
 				["questID"] = 84926,	-- Nitro
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235318),	-- Ironfang Plate Legguards
 					i(235325),	-- Rusthide Gloves
 					i(235324),	-- Scavenger's Lost Bind
@@ -209,8 +208,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["coord"] = { 25.3, 36.7, UNDERMINE },
 				["questID"] = 84918,	-- Court of Rats
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235308),	-- Filthtread Boots
 					i(235359),	-- Ratfang Toxin
 					i(235326),	-- Ratspit's Heirloom Wristwraps
@@ -219,8 +218,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230979, {	-- S.A.L.
 				["coord"] = { 41.8, 25.3, UNDERMINE },
 				["questID"] = 84922,
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
 					i(235322),	-- Junkyard Clawguards
@@ -232,8 +231,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230931, {	-- Scrapbeak
 				["coord"] = { 68.6, 81.2, UNDERMINE },
 				["questID"] = 84917,	-- Scrapbeak
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235301),	-- Drape of the Dazzling Feather
 					i(235321),	-- Feather-Spike Girdle
 					i(235305),	-- Golfer's Truestrike Gloves
@@ -246,9 +245,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					234911,	-- Vignette Bunny [DNT]
 					234832,	-- Krazzik's Drill Rig
 				},
-				["questID"] = 85778,
+				["questID"] = 90491,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235831),	-- Battery-Powered Longshank
 					i(235830),	-- Unstable Missilecaps
 					i(235829),	-- Welded Scrap Hood
@@ -262,7 +261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 52.3, 40.8, UNDERMINE },
 				["questID"] = 84895,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235327),	-- Mend-and-Match Shoulderpads
@@ -273,8 +272,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(231288, {	-- Swigs Farsight
 				["coord"] = { 41.3, 43.6, UNDERMINE },
 				["questID"] = 85004,	-- Swigs Farsight
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235314),	-- Knightrider's Steelfists
@@ -286,8 +285,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230940, {	-- Tally Doublespeak
 				["coord"] = { 36.2, 43.3, UNDERMINE },
 				["questID"] = 84919,	-- Tally Doublespeak
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235328),	-- Boots of the Silver Tongue
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235355),	-- Gossi-blin's Baton
@@ -299,7 +298,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 63.6, 50.3, UNDERMINE },
 				["questID"] = 84884,	-- Junk Wall
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
 					i(235315),	-- Rocketstep Boots
@@ -310,8 +309,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230951, {	-- Thwack
 				["coord"] = { 54.1, 50.3, UNDERMINE },
 				["questID"] = 84921,	-- Thwack
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235317),	-- Chestplate of the Ultimatum
 					i(235353),	-- Debtsmasher Axe
@@ -324,8 +323,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = { 230947 },	-- Slimesby
 				["coord"] = { 36.9, 78.2, UNDERMINE },
 				["questID"] = 84920,
-				["isWeekly"] = true,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235329),	-- Cowl of Acidic Mire
 					i(235310),	-- Flashy Patchwork Trousers
@@ -336,10 +335,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(233472, {	-- Voltstrike the Charged
 				["description"] = "Can be summoned by anyome who has a contract with the Blackwater Cartel.",
+				["crs"] = { 234889 },	-- Vignette Bunny
 				["coord"] = { 62.7, 26.1, UNDERMINE },
-				["questID"] = 85777,
+				["questID"] = 90490,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235373),	-- Abyssal Volt
 					i(235826),	-- Electric Wristrags
 					i(235828),	-- Electrocution Warning
@@ -348,18 +348,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(UNDERMINE, {
-			n(RARES, {
-				q(90492),	-- Triggers on killing Darkfuse Precipitant
-				q(90488),	-- Triggers on killing M.A.G.N.O.
-				q(90489),	-- Triggers on killing Giovante
-				q(90490),	-- Triggers on killing Voltstrike
-				q(90491),	-- Triggers on killing Scrapchewer
+			n(RARES, { -- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
+				q(85010),	-- Related to killing Darkfuse Precipitant
+				q(86298),	-- Related to killing M.A.G.N.O.
+				q(86307),	-- Related to killing Giovante
+				q(85777),	-- Related to killing Voltstrike
+				q(85778),	-- Related to killing Scrapchewer
 			}),
 		}),
 	}),
-})));
+}));

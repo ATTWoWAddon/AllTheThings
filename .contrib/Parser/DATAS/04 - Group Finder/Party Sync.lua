@@ -4,7 +4,7 @@
 
 root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	["description"] = "Rewarded from Quest while in Party Sync",
-	["g"] = {
+	["groups"] = {
 		i(171305, {	-- Salvaged Cache of Goods
 			cl(DEATHKNIGHT, {
 				i(173566),	-- Bloodcaked Runeblade
@@ -73,7 +73,9 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 
 				i(173595),	-- Trailseeker Greaves
 				i(173597),	-- Trailseeker Helm
 				i(173598),	-- Trailseeker Legguards
-				i(173599),	-- Trailseeker Spaulders
+				i(173599, {	-- Trailseeker Spaulders
+					["collectible"] = false,	-- Nothing works to collect it. June 20th 2025 -- Goldenshacal
+				}),
 				i(173594),	-- Trailseeker Vest
 			}),
 			cl(MAGE, {
@@ -97,7 +99,9 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 
 				i(173612),	-- Mistdancer Handguards
 				i(173613),	-- Mistdancer Helm
 				i(173614),	-- Mistdancer Legguards
-				i(173615),	-- Mistdancer Pauldrons
+				i(173615, {	-- Mistdancer Pauldrons
+					["collectible"] = false,	-- Nothing works to collect it. June 22th 2025 -- Darkal
+				}),
 				i(173610),	-- Mistdancer Vest
 				i(173547),	-- Staff of the Jade Mist
 				i(173548),	-- Sword of Singing Wind

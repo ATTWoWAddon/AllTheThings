@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11631, {["timeline"] = {ADDED_7_2_0}}),	-- Extreme Makeover: Fel Edition (Hellfire Citadel)
 				ach(10149, {	-- Glory of the Hellfire Raider
@@ -112,6 +112,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				})),
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 				})),
+				cr(91331, e(1438, {	-- Archimonde
+					i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
+						["timeline"] = { ADDED_10_2_5 },
+					}),
+				})),
 			}),
 			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
@@ -174,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							92144,	-- Dia Darkwhisper
 							92146,	-- Gurtogg Bloodboil
 						},
-						["g"] = {
+						["groups"] = {
 							i(128097),	-- Riverspike Cleaver
 							i(128100),	-- Spring-Loaded Jawstaff
 							i(128095),	-- Viscera-Stained Longsword
@@ -243,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128146),	-- Ensnared Orb of the Sky
 						ig(127749),	-- Corrupted Nest Guardian (PET!)
 						TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
-							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["requireSkill"] = JEWELCRAFTING,
 						})),
 					})),
@@ -320,9 +325,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				header(HEADERS.Achievement, 10019, {	-- The Black Gate
 					cr(91331, e(1438, {	-- Archimonde
-						i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(128199),	-- Fractured Soulgem Staff
 						i(128201),	-- Greatsword of Chaos
 						i(128044),	-- Voidsight Hood
@@ -365,14 +367,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10054),	-- Don't Fear the Reaper
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ach(9972, {	-- A Race Against Slime
 						["crs"] = { 90980 },	-- Ariok
-						["g"] = {
+						["groups"] = {
 							follower(474),	-- Ariok
 						},
 					}),
@@ -391,7 +393,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 					ig(127749),	-- Corrupted Nest Guardian (PET!)
 					TempForceMisc(ig(127771, {	-- Gemcutter Module: Critical Strike
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 				})),
@@ -421,32 +423,31 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(9680, {	-- Time is a Flat Circle
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
 					}),
-					i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
-						["timeline"] = { ADDED_10_2_5 },
-					}),
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
-					q(39502, {	-- The Fel Spire
+					q(39502, {	-- The Fel Spire (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["sourceQuests"] = { 39499 },	-- Well of Souls (Normal)
-						["altQuests"] = {
-							39504,	-- The Fel Spire (Heroic)
-							39505,	-- The Fel Spire (Mythic)
-						},
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128419) },	-- Fel Essence (QI!)
+						["lockCriteria"] = { 1,
+							"questID", 39504,	-- The Fel Spire (Heroic)
+							"questID", 39505,	-- The Fel Spire (Mythic)
+						},
+						["DisablePartySync"] = true,
+						["groups"] = { i(128419) },	-- Fel Essence (QI!)
 					}),
-					q(39499, {	-- Well of Souls
+					q(39499, {	-- Well of Souls (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
-						["altQuests"] = {
-							39500,	-- Well of Souls (Heroic)
-							39501,	-- Well of Souls (Mythic)
-						},
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128416) },	-- Soul Remnant (QI!)
+						["lockCriteria"] = { 1,
+							"questID", 39500,	-- Well of Souls (Heroic)
+							"questID", 39501,	-- Well of Souls (Mythic)
+						},
+						["DisablePartySync"] = true,
+						["groups"] = { i(128416) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -560,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword
 						i(124383),	-- Mindbender's Flameblade
@@ -928,8 +929,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(40962, {	-- Dark Waters
-						["qg"] = 102432,	-- Malfurion Stormrage
 						["sourceQuest"] = 40904,	-- Shadow of the Defiler
+						["qg"] = 102432,	-- Malfurion Stormrage
 						["coord"] = { 36.4, 41.6, MOONGLADE },
 						["timeline"] = { REMOVED_7_0_3 },
 						["lvl"] = 100,
@@ -947,15 +948,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					q(39504, {	-- The Fel Spire (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
-						["altQuests"] = { 39505 },	-- The Fel Spire (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128420) },	-- Fel Essence (QI!)
+						["lockCriteria"] = { 1, "questID", 39505 },	-- The Fel Spire (Mythic)
+						["DisablePartySync"] = true,
+						["groups"] = { i(128420) },	-- Fel Essence (QI!)
 					}),
 					q(39500, {	-- Well of Souls (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
-						["altQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128417) },	-- Soul Remnant (QI!)
+						["lockCriteria"] = { 1, "questID", 39501 },	-- Well of Souls (Mythic)
+						["DisablePartySync"] = true,
+						["groups"] = { i(128417) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1069,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword
 						i(124383),	-- Mindbender's Flameblade
@@ -1441,15 +1444,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
-						["g"] = { i(128421) },	-- Fel Essence (QI!)
+						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["groups"] = { i(128421) },	-- Fel Essence (QI!)
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
-						["g"] = { i(128418) },	-- Soul Remnant (QI!)
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["groups"] = { i(128418) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1566,7 +1569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10034),	-- Mythic: Hellfire High Council
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword

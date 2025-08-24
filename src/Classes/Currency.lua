@@ -1,5 +1,5 @@
 
--- BattlePet Class (maybe this should move to a MoP Expansion file?)
+-- Currency Class
 local _, app = ...
 
 -- Globals

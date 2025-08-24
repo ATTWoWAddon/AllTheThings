@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						181383,	-- Mawtouched Grazer
 						181260,	-- Native Cervid
 						182272,	-- Ravenous Cervid
-					}
+					},
 				}),
 				i(189146, {	-- Geomental Lattice
 					["crs"] = {

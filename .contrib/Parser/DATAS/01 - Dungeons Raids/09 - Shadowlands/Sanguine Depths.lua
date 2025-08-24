@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1675,	-- Depths of Despair
 			1676,	-- Amphitheater of Sorrow
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(60502,{	-- Sanguine Depths: An Ally Within
 					["provider"] = { "n", 166689 },	-- General Draven
@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2388, {	-- Kryxis the Voracious
 					["crs"] = { 162100 },	-- Kryxis the Voracious
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183234),	-- Memory of a Luffa-Infused Embrace
 						i(183297),	-- Memory of Xuen
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2415, {	-- Executor Tarvold
 					["crs"] = { 162103 },	-- Executor Tarvold
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(182755),	-- Ashen Remains
 						i(182203),	-- Debilitating Malady
@@ -56,7 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2421, {	-- Grand Proctor Beryllia
 					["crs"] = { 162102 },	-- Grand Proctor Beryllia
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183323),	-- Memory of Flash Concentration
 						i(183303),	-- Memory of Maraad's Dying Breath
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14197),	-- Sanguine Depths
 						-- Legendaries
 						i(183358),	-- Memory of an Earthen Harmony
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14198),	-- Heroic: Sanguine Depths
 					},
 				}),
@@ -119,13 +119,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2415, {	-- Executor Tarvold
 					["crs"] = { 162103 },	-- Executor Tarvold
-					["g"] = {
+					["groups"] = {
 						ach(14286),	-- Residue Evil
 					},
 				}),
 				e(2421, {	-- Grand Proctor Beryllia
 					["crs"] = { 162102 },	-- Grand Proctor Beryllia
-					["g"] = {
+					["groups"] = {
 						i(180591),	-- Raw Emotion (PET!)
 					},
 				}),
@@ -134,7 +134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						162133,	-- General Kaal (during gauntlet)
 						162099,	-- General Kaal
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14199),	-- Mythic: Sanguine Depths
 						ach(14200),	-- Mythic: Sanguine Depths Guild Run
 						ach(14289),	-- Kaal-ed Shot

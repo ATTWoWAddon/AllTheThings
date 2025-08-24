@@ -635,9 +635,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 							tolbaradcommendation(80, i(68773)),	-- Greater Inscription of Vicious Strength
 						},
 						{	-- Friendly
-							tolbaradcommendation(10, i(63518, {	-- Hellscream's Reach Commendation
-								["races"] = HORDE_ONLY,
-							})),
+							tolbaradcommendation(10, i(63518)),	-- Hellscream's Reach Commendation
 							tolbaradcommendation(5, i(64995)),	-- Hellscream's Reach Bandage
 							tolbaradcommendation(2, i(64994)),	-- Hellscream's Reach Healing Potion
 							tolbaradcommendation(2, i(64993)),	-- Hellscream's Reach Mana Potion
@@ -682,9 +680,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 							tolbaradcommendation(80, i(68773)),	-- Greater Inscription of Vicious Strength
 						},
 						{	-- Friendly
-							tolbaradcommendation(10, i(63517, {	-- Baradin's Wardens Commendation
-								["races"] = ALLIANCE_ONLY,
-							})),
+							tolbaradcommendation(10, i(63517)),	-- Baradin's Wardens Commendation
 							tolbaradcommendation(5, i(63391)),	-- Baradin's Wardens Bandage
 							tolbaradcommendation(2, i(63144)),	-- Baradin's Wardens Healing Potion
 							tolbaradcommendation(2, i(63145)),	-- Baradin's Wardens Mana Potion

@@ -6,6 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		explorationHeader({
 			exploration(13921),	-- Ancient Bough
 			exploration(13772),	-- Broadhoof Outpost
+			visit_exploration(14100,{coord={72.3,22.2,OHNAHRAN_PLAINS}}),	-- Clearwater Basin
 			visit_exploration(13771,{coord={51.4,27.9,OHNAHRAN_PLAINS}}),	-- Daruukhan
 			visit_exploration(14447,{coord={44.0,48.4,OHNAHRAN_PLAINS}}),	-- Deadsnare Caverns
 			exploration(13767),	-- Emberwatch

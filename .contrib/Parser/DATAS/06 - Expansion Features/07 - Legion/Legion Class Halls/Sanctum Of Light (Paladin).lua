@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	n(CLASS_HALL, {
 		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 			["maps"] = { SANCTUM_OF_LIGHT },
-			["g"] = {
+			["groups"] = {
 				n(ARTIFACTS, {
 					cl(PALADIN, HOLY, {
 						i(139564, {	-- Lost Edicts of the Watcher
@@ -43,7 +43,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["name"] = "Traveler Found",
 							["description"] = "After talking to Prince Tortheldrin, you can talk to her/him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 							["sourceQuest"] = 43682,	-- Book Presented
-							["timeline"] = { ADDED_7_0_3 },
 							["qgs"] = {
 								11609,	-- Alexia Ironknife
 								11608,	-- Bardu Sharpeye
@@ -52,6 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ 43.0, 84.2, WESTERN_PLAGUELANDS },
 								{ 83.2, 71.8, TIRISFAL_GLADES },
 							},
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						q(43684, {	-- Notes Read
 							["name"] = "Notes Read",
@@ -73,7 +73,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.2, SANCTUM_OF_LIGHT },
 							["cost"] = { { "i", 139624, 1 } },	-- 1xShard of Darkness
-							["g"] = {
+							["groups"] = {
 								i(139566, {	-- Heart of Corruption
 									artifact(865),	-- Retribution Hidden Artifact Appearance
 								}),
@@ -141,7 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42377 },	-- The Brother's Trail
 							["provider"] = { "n", 106337 },	-- Travard
 							["coord"] = { 72.0, 49.3, LEGION_DALARAN },
-							["g"] = {
+							["groups"] = {
 								i(173523),	-- Tirisfal Camp Scroll (QI!)
 							},
 						}),
@@ -154,9 +154,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44370,	-- Completing Your Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 90259 },	-- Lord Maxwell Tyrosus
-								{ "n", 90369 },	-- Lord Maxwell Tyrosus
+							["qgs"] = {
+								90259,	-- Lord Maxwell Tyrosus
+								90369,	-- Lord Maxwell Tyrosus
 							},
 							["coord"] = { 74.8, 48.2, LEGION_DALARAN },
 						}),
@@ -169,6 +169,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42002 },	-- To Northrend
 							["provider"] = { "n", 105724 },	-- Orik Trueheart
 							["coord"] = { 56.8, 78.7, HOWLING_FJORD },
+							["groups"] = {
+								i(136710),	-- Aura Stone (QI!)
+							},
 						}),
 						q(42017, {	-- Shrine of the Truthguard
 							["sourceQuests"] = { 42005 },	-- The End of the Saga
@@ -186,7 +189,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
-							["g"] = {
+							["groups"] = {
 								i(173537, {	-- Glowing Hearthstone (QI!)
 									["timeline"] = { ADDED_9_0_1 },
 								}),
@@ -211,7 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 42773 },	-- The Light Reveals
 							["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 							["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
-							["g"] = {
+							["groups"] = {
 								i(173538, {	-- Hippogryph Whistle (QI!)
 									["timeline"] = { ADDED_9_0_1 },
 								}),
@@ -225,9 +228,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(38576, {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
-						["providers"] = {
-							{ "n", 106209 },	-- Lord Maxwell Tyrosus
-							{ "n", 106834 },	-- Lord Maxwell Tyrosus
+						["qgs"] = {
+							106209,	-- Lord Maxwell Tyrosus
+							106834,	-- Lord Maxwell Tyrosus
 						},
 						["coord"] = { 71.7, 45.1, LEGION_DALARAN },
 					}),
@@ -250,7 +253,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 38566 },	-- A United Force
 						["provider"] = { "n", 100196 },	-- Eadric the Pure
 						["coord"] = { 41.4, 61.1, SANCTUM_OF_LIGHT },
-						["g"] = {
+						["groups"] = {
 							i(139693),	-- Crown of the Silver Hand
 						},
 					}),
@@ -273,7 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 72.4, SANCTUM_OF_LIGHT },
-						["g"] = {
+						["groups"] = {
 							follower(480),	-- Lord Maxwell Tyrosus
 						},
 					}),
@@ -286,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42846 },	-- The Blood Matriarch
 						["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
 						["coord"] = { 38.2, 64.6, SANCTUM_OF_LIGHT },
-						["g"] = {
+						["groups"] = {
 							follower(478),	-- Lady Liadrin
 						},
 					}),
@@ -377,13 +380,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
 						["maps"] = { AZSUNA },
-						["g"] = {},	-- First order campaign
+						["groups"] = {},	-- First order campaign
 					}),
 					q(42852, {	-- Champion: Justicar Julia Celeste
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
 						["provider"] = { "n", 99995 },	-- Justicar Julia Celeste
 						["coord"] = { 50.2, 72.8, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(755),	-- Justicar Julia Celeste
 						},
 					}),
@@ -391,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
 						["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
 						["coord"] = { 49.3, 71.5, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(479),	-- Vindicator Boros
 						},
 					}),
@@ -410,10 +413,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 					}),
 					q(49812, {	-- Delas in Dalaran
-						["provider"] = { "n", 90251 },	-- Aponi Brightmane
-						["sourceQuests"] = { 43486 },	-- Cracking the Codex
-						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 						["description"] = "Complete Cracking the Codex (43486) and don't accept the next quest. Go back to Aponi instead.",
+						["sourceQuests"] = { 43486 },	-- Cracking the Codex
+						["provider"] = { "n", 90251 },	-- Aponi Brightmane
+						["coord"] = { 48.4, 72.8, LIGHTS_HOPE_CHAPEL },
 						["isBreadcrumb"] = true,
 					}),
 					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
@@ -449,6 +452,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "o", 252232 },	-- Aponi's Libram
 						["coord"] = { 66.2, 26.1, AZSUNA },
 						["maps"] = { 748 },	-- Niskara (Scenario Map)
+						["groups"] = {
+							i(139540),	-- Aponi's Journal Page (QI!)
+						},
 					}),
 					q(43540, {	-- The Mind of the Enemy
 						["sourceQuests"] = { 43490 },	-- Aponi's Trail
@@ -467,7 +473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							i(139697),	-- Bindings of the Silver Hand
 						},
 					}),
@@ -475,7 +481,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43541 },	-- United As One
 						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
 						["coord"] = { 48.3, 72.4, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(757),	-- Aponi Brightmane
 						},
 					}),
@@ -488,7 +494,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43934 },	-- A New Path
 						["provider"] = { "n", 113299 },	-- Delas Moonfang
 						["coord"] = { 71.9, 24.4, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(756),	-- Delas Moonfang
 						},
 					}),
@@ -530,7 +536,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 72.6, 25.8, BROKEN_SHORE },
-						["g"] = {
+						["groups"] = {
 							i(139690),	-- Breastplate of the Silver Hand
 							title(345),	-- Highlord <Name>
 						},
@@ -539,7 +545,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["provider"] = { "n", 99997 },		-- Arator the Redeemer
 						["coord"] = { 71.6, 23.7, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(758),	-- Arator the Redeemer
 						},
 					}),
@@ -547,7 +553,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
 						["coord"] = { 73.1, 23.5, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							follower(759),	-- Lothraxion
 						},
 					}),
@@ -583,6 +589,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
 						["coord"] = { 66.8, 53.4, VALSHARAH },
+						["groups"] = {
+							i(143330),	-- Felstone Pendant (QI!)
+							i(143331),	-- Nerus' Journal (QI!)
+							i(143332),	-- Blank Scroll (QI!)
+						},
 					}),
 					q(45146, {	-- Runic Reading
 						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
@@ -610,7 +621,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							45148,	-- Oath Breaker
 						},
 						["provider"] = { "n", 119545 },	-- Nerus Moonfang
-						["g"] = {
+						["groups"] = {
 							follower(1000),	-- Nerus Moonfang
 						},
 					}),
@@ -645,20 +656,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45645, {	-- A Fool's Errand
 						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
 						["provider"] = { "n", 117438 },	-- Doloria
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 48.2, 41.0, LEGION_DALARAN },
-						["g"] = {
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
+						["groups"] = {
 							i(143845),	-- "Jewelry" (QI!)
 						},
 					}),
 					q(45566, {	-- A Knight's Belongings
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
-						["g"] = {
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
+						["groups"] = {
 							i(143890),	-- Boots of Kicking (QI!)
 							i(143891),	-- Gauntless of Huge Grapsing (QI!)
 							i(143777),	-- Helm of Greatness (QI!)
@@ -672,9 +683,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45565, {	-- Further Training
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(42844, {	-- Growing Power
 						["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
@@ -683,21 +694,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45562, {	-- Kneel and Be Squired!
 						["sourceQuests"] = { 45561 },	-- Seek Me Out
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(46074, {	-- Leather to Legendary
 						["sourceQuests"] = { 46083 },	-- A Few Things First
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["groups"] = {
+							i(144294),	-- Plated Barding (QI!)
+						},
 					}),
 					q(45567, {	-- My Kingdom for a Horse
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(45644, {	-- Oh Doloria, My Sweet Doloria
 						["sourceQuests"] = {
@@ -707,9 +721,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							45568,	-- They Stole Excaliberto!
 						},
 						["provider"] = { "n", 118009 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(45561, {	-- Seek Me Out
 						["description"] = "This quest will only trigger if you've already recruited |cffffff00Nerus Moonfang|r as a follower, as well as completing the Maximillian of Northshire quest chain in Un'Goro Crater starting with |cffffff00An Important Lesson|r. Once both of those criteria are met, you should receive mail the next time you enter your Order Hall which grants you the item to start this quest chain.",
@@ -718,14 +732,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							46045,	-- Champion: Nerus Moonfang
 						},
 						["provider"] = { "i", 143900 },	-- Letter from Maximillian
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 					}),
 					q(45770, {	-- Stirring in the Shadows
 						["sourceQuests"] = { 46074 },	-- Leather to Legendary
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, LIGHTS_HOPE_CHAPEL },
-						["g"] = {
+						["groups"] = {
 							mount(231435),	-- Highlord's Golden Charger (MOUNT!)
 						},
 					}),
@@ -737,10 +751,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(45568, {	-- They Stole Excaliberto!
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired
 						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
-						["classes"] = { PALADIN },
 						["coord"] = { 55.8, 16.2, HIGHMOUNTAIN },
-						["g"] = {
+						["classes"] = { PALADIN },
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
+						["groups"] = {
 							i(143840),	-- Excaliberto (QI!)
 						},
 					}),
@@ -748,9 +762,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45645 },	-- A Fool's Errand
 						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
 						["maps"] = { LEGION_DALARAN },
-						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
 						["classes"] = { PALADIN },
-						["g"] = {
+						["_drop"] = { "classes", "c" },	-- Hide classes Blizz API insists can get the quest
+						["groups"] = {
 							follower(1001),	-- Maximillian of Northshire
 						},
 					}),
@@ -767,16 +781,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL, {
 					gt(398, {	-- Holy Purpose
 						q(44219, {	-- Fate's Blessing
+							["description"] = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 							["provider"] = { "n", 112986 },	-- Librarian Lightmorne
 							["coord"] = { 48.9, 76.2, LIGHTS_HOPE_CHAPEL },
-							["description"] = "Only available if you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 						}),
 					}),
 					gt(400, {	-- Plowshares to Swords
 						q(44218, {	-- Champion Armaments
+							["description"] = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 							["provider"] = { "n", 110434 },	-- Kristoff
 							["coord"] = { 54.1, 49.8, LIGHTS_HOPE_CHAPEL },
-							["description"] = "Only available if you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 						}),
 					}),
 				}),
@@ -784,7 +798,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					n(99976, {	--  Crusader Lord Dalfors
 						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 						["sourceQuest"] = 45770,	-- Stirring in the Shadows
-						["g"] = {
+						["groups"] = {
 							i(153177, {	-- Golden Charger's Birdle
 								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
 							}),
@@ -810,7 +824,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					n(100196, {	-- Eadric the Pure <Quartermaster>
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(139697, {	-- Bindings of the Silver Hand
 								["cost"] = 5000000,	-- 500g
 							}),
@@ -853,7 +867,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 						["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
-						["g"] = {
+						["groups"] = {
 							i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 								["cost"] = {
 									{ "i", 18365, 1 },	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."

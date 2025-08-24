@@ -44,17 +44,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641397,
-			["g"] = {
+			["groups"] = {
 				n(TRANSPORT_NETWORK, {
 					["icon"] = 3854020,
-					["g"] = sharedData({ ["icon"] = 3854020 }, {
+					["groups"] = sharedData({ ["icon"] = 3854020 }, {
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(60051,{	-- A Master of Their Craft
 									["sourceQuests"] = { 63056 },	-- Sanctum Upgrade: Mirror Network
-									["isBreadcrumb"] = true,
 									["provider"] = { "n", 158653 },	-- Prince Renathal
 									["coord"] = { 51.1, 38.0, SINFALL_REACHES },
+									["isBreadcrumb"] = true,
 								}),
 								q(60060, {	-- Mirror Attunement: Pridefall Hamlet
 									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
@@ -88,8 +88,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(TIER_THREE, {
-							["description"] = "Each day, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two days in a row.  Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
-							["g"] = {
+							["description"] = "Each day, a set of 3 Broken Mirrors is active in Revendreth. They are not on a predictable cycle, so the same set may be up two days in a row. Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
+							["groups"] = {
 								n(MIRROR_RESTORATION, {
 									n(166133, {	-- Simone
 										i(181363, {	-- Handcrafted Mirror Repair Kit
@@ -99,13 +99,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									n(SET_A, {
 										["description"] = "Wowhead: |cffffffffGroup 2|r",
-										["g"] = {
+										["groups"] = {
 											n(BROKEN_MIRROR_A1, {
 												["questID"] = 61819,
 												["isDaily"] = true,
 												["coord"] = { 39.1, 52.2, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357236, {	-- Forgotten Chest
 														["questID"] = 61836,
 														["isDaily"] = true,
@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 58.8, 67.8, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357237, {	-- Forgotten Chest
 														["questID"] = 61837,
 														["isDaily"] = true,
@@ -129,7 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 70.9, 43.6, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357238, {	-- Forgotten Chest
 														["questID"] = 61838,
 														["isDaily"] = true,
@@ -140,14 +140,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									n(SET_B, {
 										["description"] = "Wowhead: |cffffffffGroup 3|r",
-										["g"] = {
+										["groups"] = {
 											n(BROKEN_MIRROR_B1, {
-												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the right.",
+												["description"] = "Coordinates are for a crypt entrance. The mirror is at the bottom of the crypt in the room on the right.",
 												["questID"] = 61817,
 												["isDaily"] = true,
 												["coord"] = { 73.1, 44.8, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357230, {	-- Forgotten Chest
 														["questID"] = 61830,
 														["isDaily"] = true,
@@ -159,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 40.3, 77.1, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357231, {	-- Forgotten Chest
 														["questID"] = 61831,
 														["isDaily"] = true,
@@ -167,12 +167,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												},
 											}),
 											n(BROKEN_MIRROR_B3, {
-												["description"] = "Inside a house near the top of the elevator.  There are elite mobs in the area.",
+												["description"] = "Inside a house near the top of the elevator. There are elite mobs in the area.",
 												["questID"] = 61825,
 												["isDaily"] = true,
 												["coord"] = { 77.2, 65.4, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357232, {	-- Forgotten Chest
 														["questID"] = 61832,
 														["isDaily"] = true,
@@ -183,14 +183,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									n(SET_C, {
 										["description"] = "Wowhead: |cffffffffGroup 1|r",
-										["g"] = {
+										["groups"] = {
 											n(BROKEN_MIRROR_C1, {
-												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall.  There is an elite spider in the room.",
+												["description"] = "Not up on the ramparts, but at the bottom level inside a crumbled wall. There is an elite spider in the room.",
 												["questID"] = 61826,
 												["isDaily"] = true,
 												["coord"] = { 27.1, 21.6, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357229, {	-- Forgotten Chest
 														["questID"] = 61835,
 														["isDaily"] = true,
@@ -203,7 +203,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 29.4, 37.3, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(351948, {	-- Forgotten Chest
 														["questID"] = 61833,
 														["isDaily"] = true,
@@ -215,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 40.4, 73.3, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357228, {	-- Forgotten Chest
 														["questID"] = 61834,
 														["isDaily"] = true,
@@ -226,13 +226,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									n(SET_D, {
 										["description"] = "Wowhead: |cffffffffGroup 4|r",
-										["g"] = {
+										["groups"] = {
 											n(BROKEN_MIRROR_D1, {
 												["questID"] = 59236,
 												["isDaily"] = true,
 												["coord"] = { 20.7, 54.2, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357233, {	-- Forgotten Chest
 														["questID"] = 60297,
 														["isDaily"] = true,
@@ -244,7 +244,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												["isDaily"] = true,
 												["coord"] = { 29.6, 25.8, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357235, {	-- Forgotten Chest
 														["questID"] = 61829,
 														["isDaily"] = true,
@@ -252,12 +252,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 												},
 											}),
 											n(BROKEN_MIRROR_D3, {
-												["description"] = "Coordinates are for a crypt entrance.  The mirror is at the bottom of the crypt in the room on the left.",
+												["description"] = "Coordinates are for a crypt entrance. The mirror is at the bottom of the crypt in the room on the left.",
 												["questID"] = 61820,
 												["isDaily"] = true,
 												["coord"] = { 55.1, 34.7, REVENDRETH },
 												["cost"] = { { "i", 181363, 1 } },	-- Handcrafted Mirror Repair Kit
-												["g"] = {
+												["groups"] = {
 													o(357234, {	-- Forgotten Chest
 														["questID"] = 61828,
 														["isDaily"] = true,
@@ -269,12 +269,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								n(QUESTS, {
 									q(60164, {	-- Mirror Attunement: Dominance Keep
-									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+										["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(60165, {	-- Mirror Attunement: Feeders' Thicket
-									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+										["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
@@ -290,14 +290,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
-										["g"] = {
+										["groups"] = {
 											i(182112),	-- Handcrafted Mirror Repair Kit (QI!)
 										},
 									}),
 								}),
 								n(REWARDS, {
 									["maps"] = { REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(183798),	-- Battle Gargon Silessa (MOUNT!)
 										i(183855),	-- Stony (PET!)
 										i(183707),	-- Mantle of Burnished Blades

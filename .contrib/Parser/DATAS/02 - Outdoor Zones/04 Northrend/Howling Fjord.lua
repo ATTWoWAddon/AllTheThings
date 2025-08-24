@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			["icon"] = 236781,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1263),	-- Explore Howling Fjord
+					ach(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
 							{ 69.6, 65.8, HOWLING_FJORD },
@@ -23,8 +23,9 @@ root(ROOTS.Zones, {
 					}),
 					ach(34, {	-- I've Toured the Fjord (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11291,	-- To Westguard Keep!
 							-- TODO:: confirm the quest below
@@ -46,75 +47,13 @@ root(ROOTS.Zones, {
 							11348,	-- The Rune of Command
 							11326,	-- Alpha Worg
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(38976, {	-- The Ill-Equipped Port
-								["sourceQuest"] = 11291,	-- To Westguard Keep!
-							}),
-							crit(38977, {	-- The Ill-Equipped Port
-								["sourceQuest"] = 11436,	-- Let's Go Surfing Now
-							}),
-							crit(38975, {	-- Descendants of the Vrykul
-								["sourceQuest"] = 11344,	-- Anguish of Nifflevar
-							}),
-							crit(38978, {	-- Iron Rune Constructs
-								["sourceQuest"] = 11501,	-- News From the East
-							}),
-							crit(38979, {	-- Doom Approaches
-								["sourceQuest"] = 11572,	-- Return to Atuik
-							}),
-							crit(38980, {	-- The End of Jonah Sterling
-								["sourceQuest"] = 11471,	-- The Jig is Up
-							}),
-							crit(38981, {	-- The Debt Collector
-								["sourceQuest"] = 11467,	-- Dead Man's Debt
-							}),
-							crit(38982, {	-- A New Plague
-								["sourceQuest"] = 11332,	-- Mission: Plague This!
-							}),
-							crit(38983, {	-- The Conqueror of Skorn
-								["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
-							}),
-							crit(38984, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11452,	-- The Slumbering King
-							}),
-							crit(38985, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11236,	-- Necro Overlord Mezhen
-							}),
-							crit(38986, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11239,	-- In Service of the Light
-							}),
-							crit(38987, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11432,	-- Sleeping Giants
-							}),
-							crit(38988, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11238,	-- The Frost Wyrm and its Master
-							}),
-							crit(38989, {	-- Sisters of the Fjord
-								["sourceQuest"] = 11428,	-- Keeper Witherleaf
-							}),
-							crit(38991, {	-- The Iron Dwarves
-								["sourceQuest"] = 11359,	-- Demolishing Megalith
-							}),
-							crit(38990, {	-- The Iron Dwarves
-								["sourceQuest"] = 11348,	-- The Rune of Command
-							}),
-							crit(38992, {	-- Alpha Worg
-								["sourceQuest"] = 11326,	-- Alpha Worg
-							}),
-						},
 						-- #endif
 					}),
 					ach(1356, {	-- I've Toured the Fjord (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11234,	-- Report to Anselm
 							12481,	-- Adding Injury to Insult
@@ -133,66 +72,6 @@ root(ROOTS.Zones, {
 							11453,	-- The Slumbering King
 							11268,	-- The Walking Dead
 							11324,	-- Alpha Worg
-						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 105,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(38993, {	-- Visitors from the Keep
-								["sourceQuest"] = 11234,	-- Report to Anselm
-							}),
-							crit(38994, {	-- Assassinating Bjorn Halgurdsson
-								["sourceQuest"] = 12481,	-- Adding Injury to Insult
-							}),
-							crit(38995, {	-- A New Plague
-								["sourceQuest"] = 11307,	-- Field Test
-							}),
-							crit(38979, {	-- Doom Approaches
-								["sourceQuest"] = 11572,	-- Return to Atuik
-							}),
-							crit(38980, {	-- The End of Jonah Sterling
-								["sourceQuest"] = 11471,	-- The Jig is Up
-							}),
-							crit(38981, {	-- The Debt Collector
-								["sourceQuest"] = 11467,	-- Dead Man's Debt
-							}),
-							crit(38996, {	-- Volatile Viscera
-								["sourceQuest"] = 11310,	-- Warning: Some Assembly Required
-							}),
-							crit(38989, {	-- Sisters of the Fjord
-								["sourceQuest"] = 11428,	-- Keeper Witherleaf
-							}),
-							crit(38997, {	-- The Iron Dwarves
-								["sourceQuest"] = 11352,	-- The Rune of Command
-							}),
-							crit(38998, {	-- The Iron Dwarves
-								["sourceQuest"] = 11367,	-- Demolishing Megalith
-							}),
-							crit(38999, {	-- The Conqueror of Skorn
-								["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
-							}),
-							crit(39001, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11264,	-- Necro Overlord Mezhen
-							}),
-							crit(39002, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11268,	-- The Walking Dead
-							}),
-							crit(39003, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11433,	-- Sleeping Giants
-							}),
-							crit(39004, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11453,	-- The Slumbering King
-							}),
-							crit(39005, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11267,	-- The Frost Wyrm and its Master
-							}),
-							crit(39000, {	-- Alpha Worg
-								["sourceQuest"] = 11324,	-- Alpha Worg
-							}),
 						},
 						-- #endif
 					}),
@@ -233,12 +112,6 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if AFTER 10.2.7
-				n(26540, {	-- Drenk Spannerspark <Tirisfal Glades Zeppelin Master>
-					["description"] = "Seems like blizzard neglected to actually provide a portal back to Tirisfal Glades."
-					-- This have probably been broken for multiple expansions.
-				}),
-				-- #endif
 				explorationHeader({
 					exploration(4062),	-- Apothecary Camp
 					exploration(3996),	-- Baelgun's Excavation Site
@@ -346,41 +219,53 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
 						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+						["description"] = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31931, {	-- Beegle Blastfuse
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
 					q(11476, {	-- A Carver and a Croaker
+						["sourceQuest"] = 11459,	-- Zeh'gehn Sez
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
-						["sourceQuest"] = 11459,	-- Zeh'gehn Sez
 					}),
 					q(11282, {	-- A Lesson in Fear
+						["sourceQuest"] = 11295,	-- The Offensive Begins
+						["qg"] = 24027,	-- Sergeant Gorth
 						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24027,	-- Sergeant Gorth
-						["sourceQuest"] = 11295,	-- The Offensive Begins
 						["groups"] = {
 							i(35868),	-- Grounded Pants
 							i(35869),	-- Hex-Linked Stronghelm
-							i(35870),	-- Stoneground Cleaver
 							i(35867),	-- Nimblefinger Band
+							i(35870),	-- Stoneground Cleaver
+							--
+							i(33563),	-- Forsaken Banner (QI!)
 						},
 					}),
 					q(11568, {	-- A Return to Resting
-						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
-						["qg"] = 23804,	-- Orfus of Kamagua
 						["sourceQuests"] = {
 							11511,	-- The Staff of Storm's Fury
 							11512,	-- The Frozen Heart of Isuldof
 							11530,	-- The Shield of the Aesirites
 							11567,	-- The Ancient Armor of the Kvaldir
 						},
+						["qg"] = 23804,	-- Orfus of Kamagua
+						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
 					}),
 					q(11305, {	-- A Tailor-Made Formula
+						["sourceQuest"] = 11304,	-- New Agamand
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
-						["sourceQuest"] = 11304,	-- New Agamand
 						["groups"] = {
 							objective(1, {	-- 0/1 Dragonflayer Patriarch's Blood
 								["provider"] = { "i", 38098 },	-- Dragonflayer Patriarch's Blood
@@ -393,32 +278,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11473, {	-- A Traitor Among Us
+						["sourceQuest"] = 11455,	-- The Fragrance of Money
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
-						["sourceQuest"] = 11455,	-- The Fragrance of Money
 					}),
 					q(11330, {	-- Absholutely... Thish Will Work!
+						["sourceQuest"] = 11328,	-- Mission: Forsaken Intel
+						["qg"] = 24283,	-- Peppy Wrongnozzle
 						["coord"] = { 30.7, 41.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24283,	-- Peppy Wrongnozzle
-						["sourceQuest"] = 11328,	-- Mission: Forsaken Intel
 					}),
 					q(12481, {	-- Adding Injury to Insult
+						["sourceQuest"] = 11303,	-- The Ambush
+						["qg"] = 24458,	-- Lydell
 						["coord"] = { 65.8, 36.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24458,	-- Lydell
-						["sourceQuest"] = 11303,	-- The Ambush
 						["groups"] = {
 							i(35889),	-- Bone-Inlaid Bracers
 							i(35888),	-- Embossed Ermine Girdle
 							i(35890),	-- Magdun Spaulders
 							i(35891),	-- Runeplate Helm
+							--
+							i(33581),	-- Vrykul Insult (QI!)
 						},
 					}),
 					q(12482, {	-- Against Nifflevar
+						["qg"] = 27922,	-- Ranger Captain Areiel
 						["coord"] = { 67.4, 60.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 27922,	-- Ranger Captain Areiel
 						["groups"] = {
 							objective(1, {	-- 0/5 Dragonflayer Warrior slain
 								["provider"] = { "n", 23654 },	-- Dragonflayer Warrior
@@ -432,13 +319,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11250, {	-- All Hail the Conqueror of Skorn!
-						["coord"] = { 44.8, 31.4, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							11245,	-- Towers of Certain Doom
 							11246,	-- Gruesome, But Necessary
 							11247,	-- Burn Skorn, Burn!
 						},
+						["coord"] = { 44.8, 31.4, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(35909),	-- Sun-Fired Striders
 							i(35910),	-- Shaleground Bracers
@@ -447,10 +334,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11326, {	-- Alpha Worg (A)
+						["sourceQuest"] = 11416,	-- Eyes of the Eagle
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11416,	-- Eyes of the Eagle
 						["groups"] = {
 							i(35913),	-- Gholamweave Leggings
 							i(35915),	-- Darksteel Ringmail Greaves
@@ -459,10 +346,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11324, {	-- Alpha Worg (H)
+						["sourceQuest"] = 11417,	-- Eyes of the Eagle
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11417,	-- Eyes of the Eagle
 						["groups"] = {
 							i(35913),	-- Gholamweave Leggings
 							i(35915),	-- Darksteel Ringmail Greaves
@@ -471,10 +358,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11230, {	-- Ambushed!
+						["sourceQuest"] = 11229,	-- The Windrunner Fleet
+						["qg"] = 24037,	-- Captain Harker
 						["coord"] = { 84.6, 36.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24037,	-- Captain Harker
-						["sourceQuest"] = 11229,	-- The Windrunner Fleet
 						["groups"] = {
 							objective(1, {	-- 0/15 North Fleet Marine slain
 								["provider"] = { "n", 23983 },	-- North Fleet Marine
@@ -485,16 +372,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11276, {	-- And Then There Were Two...
+						["sourceQuest"] = 11274,	-- Zedd's Probably Dead
+						["qg"] = 24145,	-- Zedd
 						["coord"] = { 56.6, 52.3, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24145,	-- Zedd
-						["sourceQuest"] = 11274,	-- Zedd's Probably Dead
 					}),
 					q(11394, {	-- And You Thought Murlocs Smelled Bad! (A)
+						["sourceQuest"] = 11393,	-- Where is Explorer Jaren?
 						["qg"] = 23833,	-- Explorer Jaren
 						["coord"] = { 24.2, 32.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11393,	-- Where is Explorer Jaren?
 						["groups"] = {
 							objective(1, {	-- 0/15 Chillmere Coast Scourge Killed
 								["providers"] = {
@@ -509,9 +396,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11397, {	-- And You Thought Murlocs Smelled Bad! (H)
+						["qg"] = 24359,	-- Apothecary Anastasia
 						["coord"] = { 26.2, 24.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24359,	-- Apothecary Anastasia
 						["groups"] = {
 							objective(1, {	-- 0/15 Chillmere Coast Scourge Killed
 								["providers"] = {
@@ -526,10 +413,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11344, {	-- Anguish of Nifflevar
+						["sourceQuest"] = 11343,	-- The Echo of Ymiron
+						["qg"] = 23975,	-- Thoralius the Wise
 						["coord"] = { 59.8, 61.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23975,	-- Thoralius the Wise
-						["sourceQuest"] = 11343,	-- The Echo of Ymiron
 						["groups"] = {
 							i(35832),	-- Blauvelt's Special Occasion Gloves
 							i(35834),	-- Nimblefinger Scaled Gloves
@@ -538,15 +425,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11306, {	-- Apply Heat and Stir
+						["sourceQuest"] = 11305,	-- A Tailor-Made Formula
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
-						["sourceQuest"] = 11305,	-- A Tailor-Made Formula
+						["groups"] = {
+							i(33617),	-- Balanced Concoction (QI!)
+							i(34023),	-- Empty Apothecary's Flask (QI!)
+							i(34024),	-- Flask of Vrykul Blood (QI!)
+						}
 					}),
 					q(11457, {	-- Arming Kamagua
-						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
-						["qg"] = 24755,	-- Elder Atuik
 						["sourceQuest"] = 11456,	-- Feeding the Survivors
+						["qg"] = 24755,	-- Elder Atuik
+						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/3 Chimaera Horn
 								["provider"] = { "i", 34101 },	-- Chimaera Horn
@@ -555,9 +447,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11458, {	-- Avenge Iskaal
-						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
-						["qg"] = 24755,	-- Elder Atuik
 						["sourceQuest"] = 11457,	-- Arming Kamagua
+						["qg"] = 24755,	-- Elder Atuik
+						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/8 Crazed Northsea Slaver slain
 								["provider"] = { "n", 24676 },	-- Crazed Northsea Slaver
@@ -565,10 +457,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11283, {	-- Baleheim Bodycount
+						["sourceQuest"] = 11282,	-- A Lesson in Fear
+						["qg"] = 24027,	-- Sergeant Gorth
 						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24027,	-- Sergeant Gorth
-						["sourceQuest"] = 11282,	-- A Lesson in Fear
 						["groups"] = {
 							objective(1, {	-- 0/16 Baleheim Bodycount
 								["providers"] = {
@@ -587,20 +479,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11285, {	-- Baleheim Must Burn!
+						["sourceQuest"] = 11282,	-- A Lesson in Fear
+						["qg"] = 24027,	-- Sergeant Gorth
 						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24027,	-- Sergeant Gorth
-						["sourceQuest"] = 11282,	-- A Lesson in Fear
+						["groups"] = { i(33472) },	-- Gorth's Torch (QI!)
 					}),
 					q(11301, {	-- Brains! Brains! Brains!
+						["qg"] = 24218,	-- Apothecary Grick
 						["coord"] = { 25.9, 24.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24218,	-- Apothecary Grick
 						["groups"] = {
-							i(35864),	-- Fizznik's Patented Earwarmer
-							i(35863),	-- Earth-Infused Leggings
-							i(35866),	-- Master Artilleryman Boots
 							i(35865),	-- Arcanum Shield
+							i(35863),	-- Earth-Infused Leggings
+							i(35864),	-- Fizznik's Patented Earwarmer
+							i(35866),	-- Master Artilleryman Boots
+							--
+							i(33558),	-- Deranged Explorer Brain (QI!)
+							i(33554),	-- Grick's Bonesaw (QI!)
 						},
 					}),
 					q(11153, {	-- Break the Blockade
@@ -622,40 +518,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11396, {	-- Bring Down Those Shields (A)
+						["sourceQuest"] = 11395,	-- It's a Scourge Device
+						["qg"] = 23833,	-- Explorer Jaren
 						["coord"] = { 24.2, 32.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23833,	-- Explorer Jaren
-						["sourceQuest"] = 11395,	-- It's a Scourge Device
 						["groups"] = {
 							objective(1, {	-- 0/3 Scourging Crystals Destroyed
 								["provider"] = { "n", 24464 },	-- Scourging Crystal
 							}),
 							i(35932),	-- Earthbinder's Regenerating Band
-							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
 							i(35935),	-- Infused Coldstone Rune
+							i(35933),	-- Ramshorn Greathelm
+							--
+							i(33960),	-- Scourging Crystal Controller (QI!)
 						},
 					}),
 					q(11399, {	-- Bring Down Those Shields (H)
+						["sourceQuest"] = 11398,	-- It's a Scourge Device
+						["qg"] = 24359,	-- Apothecary Anastasia
 						["coord"] = { 26.2, 24.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24359,	-- Apothecary Anastasia
-						["sourceQuest"] = 11398,	-- It's a Scourge Device
 						["groups"] = {
 							objective(1, {	-- 0/3 Scourging Crystals Destroyed
 								["provider"] = { "n", 24464 },	-- Scourging Crystal
 							}),
 							i(35932),	-- Earthbinder's Regenerating Band
-							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
 							i(35935),	-- Infused Coldstone Rune
+							i(35933),	-- Ramshorn Greathelm
+							--
+							i(33960),	-- Scourging Crystal Controller (QI!)
 						},
 					}),
 					q(11414, {	-- Brother Betrayers (A)
+						["sourceQuest"] = 11325,	-- In Worg's Clothing
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11325,	-- In Worg's Clothing
 						["groups"] = {
 							objective(1, {	-- 0/1 Bjomolf slain
 								["provider"] = { "n", 24516 },	-- Bjomolf
@@ -666,10 +566,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11415, {	-- Brother Betrayers (H)
+						["sourceQuest"] = 11323,	-- In Worg's Clothing
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11323,	-- In Worg's Clothing
 						["groups"] = {
 							objective(1, {	-- 0/1 Bjomolf slain
 								["provider"] = { "n", 24516 },	-- Bjomolf
@@ -680,50 +580,60 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11247, {	-- Burn Skorn, Burn! (A)
+						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
+						["qg"] = 24060,	-- Westguard Sergeant
 						["coord"] = { 44.8, 31.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24060,	-- Westguard Sergeant
-						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
 					}),
 					q(11258, {	-- Burn Skorn, Burn! (H)
+						["sourceQuest"] = 11256,	-- Skorn Must Fall!
+						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24130,	-- Winterhoof Brave
-						["sourceQuest"] = 11256,	-- Skorn Must Fall!
 					}),
 					q(11411, {	-- Camp Winterhoof
-						["qg"] = 24125,	-- Cormath the Courier
 						["sourceQuest"] = 11309,	-- Parts for the Job
+						["qg"] = 24125,	-- Cormath the Courier
 						["coord"] = { 53.0, 66.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["lockCriteria"] = {1, "questID", 12566},	-- Help for Camp Winterhoof
 					}),
 					q(13268, {	-- Cloth Scavenging (A)
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
-						["altQuests"] = {
-							13265,	-- Cloth Scavenging (A, Borean Tundra)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
-						["coord"] = { 58.6, 62.6, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26914,	-- Benjamin Clegg
+						["coord"] = { 58.6, 62.6, HOWLING_FJORD },
 						["requireSkill"] = TAILORING,
+						["races"] = ALLIANCE_ONLY,
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							-- "questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13269, {	-- Cloth Scavenging (H)
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
-						["altQuests"] = {
-							13270,	-- Cloth Scavenging (H, Borean Tundra)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
-						["coord"] = { 79.4, 30.8, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26964,	-- Alexandra McQueen
+						["coord"] = { 79.4, 30.8, HOWLING_FJORD },
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							-- "questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(11479, {	-- "Crowleg" Dan
+						["sourceQuest"] = 11476,	-- A Carver and a Croaker
 						["qg"] = 24525,	-- Zeh'gehn
 						["coord"] = { 35.5, 80.6, HOWLING_FJORD },
-						["sourceQuest"] = 11476,	-- A Carver and a Croaker
 						["groups"] = {
 							objective(1, {	-- 0/1 "Crowleg" Dan slain
 								["provider"] = { "n", 24713 },	-- "Crowleg" Dan
@@ -744,10 +654,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11218, {	-- Danger! Explosives!
+						["sourceQuest"] = 11188,	-- Two Wrongs...
+						["qg"] = 23976,	-- Sapper Steelring
 						["coord"] = { 29.1, 41.7, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23976,	-- Sapper Steelring
-						["sourceQuest"] = 11188,	-- Two Wrongs...
 						["groups"] = {
 							objective(1, {	-- 0/6 Whisper Gulch Ore Fragment
 								["providers"] = {
@@ -766,9 +676,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11467, {	-- Dead Man's Debt
+						["sourceQuest"] = 11466,	-- Jack Likes His Drink
 						["qg"] = 24541,	-- Taruk
 						["coord"] = { 36.3, 80.4, HOWLING_FJORD },
-						["sourceQuest"] = 11466,	-- Jack Likes His Drink
 						["groups"] = {
 							objective(1, {	-- 0/1 Black Conrad's Treasure
 								["provider"] = { "i", 34118 },	-- Black Conrad's Treasure
@@ -777,10 +687,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11235, {	-- Dealing With Gjalerbron (A)
+						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
-						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
 						["groups"] = {
 							objective(1, {	-- 0/15 Gjalerbron Warrior slain
 								["provider"] = { "n", 23991 },	-- Gjalerbron Warrior
@@ -794,10 +704,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11263, {	-- Dealing With Gjalerbron (H)
+						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
+						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24129,	-- Chieftain Ashtotem
-						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 						["groups"] = {
 							objective(1, {	-- 0/15 Gjalerbron Warrior slain
 								["provider"] = { "n", 23991 },	-- Gjalerbron Warrior
@@ -811,10 +721,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11359, {	-- Demolishing Megalith (A)
+						["sourceQuest"] = 11358,	-- The Lodestone
 						["qg"] = 24376,	-- Researcher Aderan
 						["coord"] = { 62.5, 16.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11358,	-- The Lodestone
 						["groups"] = {
 							objective(1, {	-- 0/1 Megalith slain
 								["provider"] = { "n", 24371 },	-- Megalith
@@ -822,10 +732,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11367, {	-- Demolishing Megalith (H)
+						["sourceQuest"] = 11366,	-- The Lodestone
+						["qg"] = 24390,	-- Sage Edan
 						["coord"] = { 48.0, 10.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24390,	-- Sage Edan
-						["sourceQuest"] = 11366,	-- The Lodestone
 						["groups"] = {
 							objective(1, {	-- 0/1 Megalith slain
 								["provider"] = { "n", 24371 },	-- Megalith
@@ -833,9 +743,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11269, {	-- Down to the Wire
+						["qg"] = 24139,	-- Gil Grisert
 						["coord"] = { 62.5, 16.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24139,	-- Gil Grisert
 						["groups"] = {
 							objective(1, {	-- 0/10 Spotted Hippogryph Down
 								["providers"] = {
@@ -844,28 +754,30 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(35926),	-- Artfully Tooled Leggings
-							i(35927),	-- Songscale Breastplate
 							i(35928),	-- Cold-Forged Bronze Legplates
 							i(35925),	-- Shimmering Cold Iron Band
+							i(35927),	-- Songscale Breastplate
 						},
 					}),
 					q(11280, {	-- Draconis Gastritis
+						["sourceQuest"] = 11279,	-- Green Eggs and Whelps
+						["qg"] = 24157,	-- Plaguebringer Tillinghast
 						["coord"] = { 53.0, 66.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24157,	-- Plaguebringer Tillinghast
-						["sourceQuest"] = 11279,	-- Green Eggs and Whelps
 						["groups"] = {
+							i(35875),	-- Beneficent Skullcap
 							i(35871),	-- Indigo Robe of Replenishment
 							i(35873),	-- Interlinked Chain Girdle
-							i(35875),	-- Beneficent Skullcap
 							i(35872),	-- Iron-Studded Leggings
+							--
+							i(33441),	-- Tillinghast's Plagued Meat (QI!)
 						},
 					}),
 					q(11290, {	-- Dragonflayer Battle Plans
+						["sourceQuest"] = 11255,	-- Prisoners of Wyrmskull
+						["qg"] = 23546,	-- Vice Admiral Kellar
 						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23546,	-- Vice Admiral Kellar
-						["sourceQuest"] = 11255,	-- Prisoners of Wyrmskull
 						["groups"] = {
 							objective(1, {	-- 0/1 Dragonflayer Battle Plans
 								["providers"] = {
@@ -880,27 +792,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11429, {	-- Drop It then Rock It!
+						["sourceQuest"] = 11427,	-- Meet Lieutenant Icehammer...
+						["qg"] = 24634,	-- Lieutenant Icehammer
 						["coord"] = { 64.4, 46.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24634,	-- Lieutenant Icehammer
-						["sourceQuest"] = 11427,	-- Meet Lieutenant Icehammer...
 					}),
 					q(11507, {	-- Elder Atuik and Kamagua
+						["sourceQuest"] = 11504,	-- The Dead Rise!
 						["qg"] = 23804,	-- Orfus of Kamagua
 						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
-						["sourceQuest"] = 11504,	-- The Dead Rise!
 					}),
 					q(11406, {	-- Everything Must Be Ready
+						["sourceQuest"] = 11332,	-- Mission: Plague This!
 						["qg"] = 24494,	-- Quartermaster Brevin
 						["coord"] = { 30.6, 42.7, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11332,	-- Mission: Plague This!
 					}),
 					q(11416, {	-- Eyes of the Eagle (A)
+						["sourceQuest"] = 11414,	-- Brother Betrayers
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11414,	-- Brother Betrayers
 						["groups"] = {
 							objective(1, {	-- 0/1 Eyes of the Eagle
 								["provider"] = { "i", 34027 },	-- Eyes of the Eagle
@@ -909,10 +821,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11417, {	-- Eyes of the Eagle (H)
+						["sourceQuest"] = 11415,	-- Brother Betrayers
+						["qg"] = 24261,	-- Ulfang
 						["coord"] = { 29.6, 5.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24261,	-- Ulfang
-						["sourceQuest"] = 11415,	-- Brother Betrayers
 						["groups"] = {
 							objective(1, {	-- 0/1 Eyes of the Eagle
 								["provider"] = { "i", 34027 },	-- Eyes of the Eagle
@@ -921,10 +833,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11468, {	-- Falcon Versus Hawk
+						["sourceQuest"] = 11465,	-- The Ransacked Caravan
+						["qg"] = 24750,	-- Hidalgo the Master Falconer
 						["coord"] = { 75.2, 64.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24750,	-- Hidalgo the Master Falconer
-						["sourceQuest"] = 11465,	-- The Ransacked Caravan
 					}),
 					q(11456, {	-- Feeding the Survivors
 						["qg"] = 24755,	-- Elder Atuik
@@ -937,26 +849,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11307, {	-- Field Test
+						["sourceQuest"] = 11306,	-- Apply Heat and Stir
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
-						["sourceQuest"] = 11306,	-- Apply Heat and Stir
 						["groups"] = {
 							i(35857),	-- Munificent Bulwark
 							i(35858),	-- Tome of Alacrity
+							--
+							i(33621),	-- Plague Spray (QI!)
 						},
 					}),
 					q(11287, {	-- Find Sage Mistwalker
+						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
+						["qg"] = 24135,	-- Greatmother Ankha
 						["coord"] = { 48.2, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24135,	-- Greatmother Ankha
-						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 						["isBreadcrumb"] = true,
 					}),
 					q(11434, {	-- Forgotten Treasure
+						["sourceQuest"] = 11509,	-- Street "Cred"
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
-						["sourceQuest"] = 11509,	-- Street "Cred"
 						["groups"] = {
 							objective(1, {	-- 0/1 Amani Vase
 								["providers"] = {
@@ -973,20 +887,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11464, {	-- Gambling Debt
+						["sourceQuest"] = 11434,	-- Forgotten Treasure
 						["qg"] = 24541,	-- Taruk
 						["coord"] = { 36.3, 80.4, HOWLING_FJORD },
-						["sourceQuest"] = 11434,	-- Forgotten Treasure
 					}),
 					q(12918, {	-- Gem Perfection (A)
 						["qg"] = 26915,	-- Ounhulo
 						["coord"] = { 59.8, 63.8, HOWLING_FJORD },
-						["requireSkill"] = JEWELCRAFTING,
 						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade
 							{ "i", 36926, 2 },	-- Shadow Crystal
 						},
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 4.0.3
 						["groups"] = {
@@ -1002,13 +916,13 @@ root(ROOTS.Zones, {
 					q(12952, {	-- Gem Perfection (H)
 						["qg"] = 26960,	-- Carter Tiffens
 						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
-						["requireSkill"] = JEWELCRAFTING,
 						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade
 							{ "i", 36926, 2 },	-- Shadow Crystal
 						},
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 4.0.3
 						["groups"] = {
@@ -1026,10 +940,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
 					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 33289 },	-- Gjalerbron Attack Plans
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							23990,	-- Gjalerbron Rune-Caster
 							23989,	-- Gjalerbron Sleep-Watcher
@@ -1038,8 +953,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11266, {	-- Gjalerbron Attack Plans (H) -- TODO: Verify if this drops all the time
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 33347 },	-- Gjalerbron Attack Plans
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							23990,	-- Gjalerbron Rune-Caster
 							23989,	-- Gjalerbron Sleep-Watcher
@@ -1048,54 +963,55 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11279, {	-- Green Eggs and Whelps
+						["qg"] = 24157,	-- Plaguebringer Tillinghast
 						["coord"] = { 53.0, 66.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24157,	-- Plaguebringer Tillinghast
 						["groups"] = {
 							objective(1, {	-- 0/10 Plagued Proto-Whelp Specimen
 								["provider"] = { "i", 33420 },	-- Plagued Proto-Whelp Specimen
 								["cr"] = 24160,	-- Plagued Proto-Whelp
 							}),
+							i(33418),	-- Tillinghast's Plague Canister (QI!)
 						},
 					}),
 					q(11508, {	-- Grezzix Spindlesnap
-						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
-						["qg"] = 24755,	-- Elder Atuik
 						["sourceQuest"] = 11507,	-- Elder Atuik and Kamagua
+						["qg"] = 24755,	-- Elder Atuik
+						["coord"] = { 25.0, 56.9, HOWLING_FJORD },
 					}),
 					q(11246, {	-- Gruesome, But Necessary (A)
+						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
+						["qg"] = 24060,	-- Westguard Sergeant
 						["coord"] = { 44.8, 31.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24060,	-- Westguard Sergeant
-						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
 					}),
 					q(11257, {	-- Gruesome, But Necessary (H)
+						["sourceQuest"] = 11256,	-- Skorn Must Fall!
+						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24130,	-- Winterhoof Brave
-						["sourceQuest"] = 11256,	-- Skorn Must Fall!
 					}),
 					q(11232, {	-- Guide Our Sights
+						["sourceQuest"] = 11230,	-- Ambushed!
+						["qg"] = 24037,	-- Captain Harker
 						["coord"] = { 84.6, 36.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24037,	-- Captain Harker
-						["sourceQuest"] = 11230,	-- Ambushed!
 					}),
 					q(11289, {	-- Guided by Honor
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24189,	-- Ares the Oathbound
 						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11288,	-- The Shining Light
+						["qg"] = 24189,	-- Ares the Oathbound
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 59.3, 55.4, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11430, {	-- Harpoon Master Yavus
+						["sourceQuest"] = 11429,	-- Drop it then Rock It!
+						["qg"] = 24634,	-- Lieutenant Icehammer
 						["coord"] = { 64.4, 46.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24634,	-- Lieutenant Icehammer
-						["sourceQuest"] = 11429,	-- Drop it then Rock It!
 						["groups"] = {
 							objective(1, {	-- 0/1 Harpoon Master Yavus slain
 								["provider"] = { "n", 24644 },	-- Harpoon Master Yavus
@@ -1103,9 +1019,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11271, {	-- Hasty Preparations
+						["qg"] = 24127,	-- Ahota Whitefrost
 						["coord"] = { 48.3, 11.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24127,	-- Ahota Whitefrost
 						["groups"] = {
 							objective(1, {	-- 0/10 Spotted Hippogryph Down
 								["providers"] = {
@@ -1120,17 +1036,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11228, {	-- Hell Has Frozen Over...
-						["qg"] = 23547,	-- Macalroy
 						-- #if AFTER 7.3.5
 						["sourceQuest"] = 49551,	-- Hero's Call: Howling Fjord!
 						-- #endif
+						["qg"] = 23547,	-- Macalroy
 						["coord"] = { 60.7, 62.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12566, {	-- Help for Camp Winterhoof
+						["qg"] = 28314,	-- Longrunner Nanik
 						["coord"] = { 71.4, 39.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 28314,	-- Longrunner Nanik
 						["lockCriteria"] = {1, "questID", 11411},	-- Camp Winterhoof
 					}),
 					heroscall(q(49551, {	-- Hero's Call: Howling Fjord!
@@ -1139,16 +1055,16 @@ root(ROOTS.Zones, {
 						["lvl"] = 58,
 					})),
 					q(12298, {	-- High Commander Halford Wyrmbane
-						["qg"] = 23859,	-- Greer Orehammer
 						["sourceQuest"] = 12297,	-- Of Traitors and Treason
+						["qg"] = 23859,	-- Greer Orehammer
 						["coord"] = { 31.2, 43.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(11329, {	-- I'll Try Anything!
+						["qg"] = 24056,	-- Christopher Sloan
 						["coord"] = { 60.2, 18.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24056,	-- Christopher Sloan
 						["groups"] = {
 							objective(1, {	-- 0/5 Northern Barbfish
 								["provider"] = { "i", 33628 },	-- Northern Barbfish
@@ -1157,10 +1073,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11390, {	-- I've Got a Flying Machine!
+						["sourceQuest"] = 11176,	-- See to the Operations
+						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["coord"] = { 30.8, 28.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
-						["sourceQuest"] = 11176,	-- See to the Operations
 						["groups"] = {
 							i(35912),	-- Crackling Cloak
 							i(35911),	-- Unsparing Band
@@ -1168,10 +1084,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11243, {	-- If Valgarde Falls...
+						["sourceQuest"] = 11228,	-- Hell Has Frozen Over...
+						["qg"] = 23546,	-- Vice Admiral Keller
 						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23546,	-- Vice Admiral Keller
-						["sourceQuest"] = 11228,	-- Hell Has Frozen Over...
 						["groups"] = {
 							objective(1, {	-- 0/12 Dragonflayer Invader slain
 								["providers"] = {
@@ -1189,10 +1105,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11239, {	-- In Service to the Light
+						["sourceQuest"] = 11231,	-- Of Keys and Cages
+						["qg"] = 24038,	-- Father Levariol
 						["coord"] = { 28.8, 43.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24038,	-- Father Levariol
-						["sourceQuest"] = 11231,	-- Of Keys and Cages
 						["groups"] = {
 							objective(1, {	-- 0/10 Deathless Watcher slain
 								["provider"] = { "n", 24013 },	-- Deathless Watcher
@@ -1210,22 +1126,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11325, {	-- In Worg's Clothing (A)
+						["sourceQuest"] = 11322,	-- The Cleansing
 						["qg"] = 24273,	-- Watcher Moonleaf
 						["coord"] = { 30.0, 28.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11322,	-- The Cleansing
 					}),
 					q(11323, {	-- In Worg's Clothing (H)
+						["sourceQuest"] = 11317,	-- The Cleansing
+						["qg"] = 24186,	-- Sage Mistwalker
 						["coord"] = { 31.1, 24.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24186,	-- Sage Mistwalker
-						["sourceQuest"] = 11317,	-- The Cleansing
 					}),
 					q(11333, {	-- Into the World of Spirits
+						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+						["qg"] = 23975,	-- Thoralius the Wise
 						["coord"] = { 59.8, 61.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23975,	-- Thoralius the Wise
-						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 						["groups"] = {
 							objective(1, {	-- 0/1 Reagent Pouch
 								["providers"] = {
@@ -1236,31 +1152,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11489, {	-- Iron Rune Constructs and You: Collecting Data
+						["sourceQuest"] = 11485,	-- Iron Rune Constructs and You: Rocket Jumping
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11485,	-- Iron Rune Constructs and You: Rocket Jumping
 					}),
 					q(11485, {	-- Iron Rune Constructs and You: Rocket Jumping
-						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
 						["sourceQuests"] = {
 							11483,	-- We Can Rebuild It
 							11484,	-- We Have the Technology
 						},
-					}),
-					q(11491, {	-- Iron Rune Constructs and You: The Bluff
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
+					}),
+					q(11491, {	-- Iron Rune Constructs and You: The Bluff
 						["sourceQuest"] = 11489,	-- Iron Rune Constructs and You: Collecting Data
+						["qg"] = 24807,	-- Walt
+						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11421, {	-- It Goes to 11...
+						["sourceQuest"] = 11430,	-- Harpoon Master Yavus
+						["qg"] = 24634,	-- Lieutenant Icehammer
 						["coord"] = { 64.4, 46.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24634,	-- Lieutenant Icehammer
-						["sourceQuest"] = 11430,	-- Harpoon Master Yavus
 						["groups"] = {
 							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35842),	-- Azure Chain Hauberk
@@ -1269,8 +1185,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11395, {	-- It's a Scourge Device (A)
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 33961 },	-- Scourge Device
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							23645,	-- Mur'ghoul Corrupter
 							23644,	-- Mur'ghoul Flesheater
@@ -1280,8 +1196,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11398, {	-- It's a Scourge Device (H)
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 33962 },	-- Scourge Device
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							23645,	-- Mur'ghoul Corrupter
 							23644,	-- Mur'ghoul Flesheater
@@ -1291,17 +1207,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11466, {	-- Jack Likes His Drink
+						["sourceQuest"] = 11464,	-- Gambling Debt
 						["qg"] = 24541,	-- Taruk
 						["coord"] = { 36.3, 80.4, HOWLING_FJORD },
-						["sourceQuest"] = 11464,	-- Gambling Debt
 					}),
 					q(11428, {	-- Keeper Witherleaf
-						["qg"] = 24117,	-- Lurielle
-						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["sourceQuests"] = {
 							11316,	-- Spawn of the Twisted Glade
 							11319,	-- Seeds of the Blacksouled Keepers
 						},
+						["qg"] = 24117,	-- Lurielle
+						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/1 Keeper Witherleaf slain
 								["provider"] = { "n", 24638 },	-- Keeper Witherleaf
@@ -1309,17 +1225,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11297, {	-- Keeping Watch on the Interlopers
+						["sourceQuest"] = 11275,	-- Making the Horn
+						["qg"] = 24234,	-- Junat the Wanderer
 						["coord"] = { 48.4, 10.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24234,	-- Junat the Wanderer
-						["sourceQuest"] = 11275,	-- Making the Horn
 						["isBreadcrumb"] = true,
 					}),
 					q(11233, {	-- Land the Killing Blow
+						["sourceQuest"] = 11232,	-- Guide Our Sights
+						["qg"] = 23778,	-- Dark Ranger Lyana
 						["coord"] = { 78.6, 37.1, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23778,	-- Dark Ranger Lyana
-						["sourceQuest"] = 11232,	-- Guide Our Sights
 						["groups"] = {
 							objective(1, {	-- 0/1 Captain Olster slain
 								["provider"] = { "n", 23962 },	-- Captain Olster
@@ -1339,10 +1255,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11240, {	-- Leader of the Deranged
+						["sourceQuest"] = 11218,	-- Danger! Explosives!
+						["qg"] = 23976,	-- Sapper Steelring
 						["coord"] = { 29.1, 41.7, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23976,	-- Sapper Steelring
-						["sourceQuest"] = 11218,	-- Danger! Explosives!
 						["groups"] = {
 							objective(1, {	-- 0/1 Squeeg Idolhunter slain
 								["provider"] = { "n", 24048 },	-- Squeeg Idolhunter
@@ -1354,21 +1270,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11227, {	-- Let Them Eat Crow
+						["qg"] = 23938,	-- Pontius
 						["coord"] = { 79.1, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23938,	-- Pontius
+						["groups"] = {
+							i(33238),	-- Crow Meat (QI!)
+							i(33221),	-- Plaguehound Cage (QI!)
+						},
 					}),
 					q(11436, {	-- Let's Go Surfing Now
+						["sourceQuest"] = 11421,	-- It Goes to 11...
+						["qg"] = 24634,	-- Lieutenant Icehammer
 						["coord"] = { 64.4, 46.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24634,	-- Lieutenant Icehammer
-						["sourceQuest"] = 11421,	-- It Goes to 11...
+						["groups"] = {
+							i(34078)	-- Icehammer's Harpoon Controller
+						},
 					}),
 					q(11494, {	-- Lightning Infused Relics
+						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
 						["groups"] = {
 							i(35844),	-- Shock-Resistant Hood
 							i(35846),	-- Banded Chain Gloves
@@ -1379,10 +1302,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11426, {	-- Locating the Mechanism
+						["sourceQuest"] = 11420,	-- The Path to Payback
+						["qg"] = 23728,	-- Guard Captain Zorek
 						["coord"] = { 60.1, 62.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23728,	-- Guard Captain Zorek
-						["sourceQuest"] = 11420,	-- The Path to Payback
 						["groups"] = {
 							objective(1, {	-- 0/1 Harpoon Control Mechanism
 								["provider"] = { "i", 34032 },	-- Harpoon Control Mechanism
@@ -1391,15 +1314,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11187, {	-- Mage-Lieutenant Malister
+						["sourceQuest"] = 11157,	-- The Clutches of Evil
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
-						["sourceQuest"] = 11157,	-- The Clutches of Evil
 					}),
 					q(11275, {	-- Making the Horn
+						["qg"] = 24123,	-- Nokoma Snowseer
 						["coord"] = { 49.3, 11.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24123,	-- Nokoma Snowseer
 						["groups"] = {
 							objective(1, {	-- 0/6 Undamaged Ram Horn
 								["provider"] = { "i", 33351 },	-- Undamaged Ram Horn
@@ -1408,22 +1331,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11355, {	-- March of the Giants (A)
+						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["qg"] = 24376,	-- Researcher Aderan
 						["coord"] = { 62.5, 16.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11329,	-- I'll Try Anything!
+						["groups"] = { i(33806) },	-- Runeseeking Pick (QI!)
 					}),
 					q(11365, {	-- March of the Giants (H)
+						["sourceQuest"] = 11275,	-- Making the Horn
+						["qg"] = 24390,	-- Sage Edan
 						["coord"] = { 48.0, 10.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24390,	-- Sage Edan
-						["sourceQuest"] = 11275,	-- Making the Horn
+						["groups"] = { i(33806) },	-- Runeseeking Pick (QI!)
 					}),
 					q(11349, {	-- Mastering the Runes (A)
+						["sourceQuest"] = 11346,	-- The Book of Runes
 						["qg"] = 24328,	-- Prospector Belvar
 						["coord"] = { 62.2, 17.2, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11346,	-- The Book of Runes
 						["groups"] = {
 							objective(1, {	-- 0/1 Iron Rune Carving Tools
 								["providers"] = {
@@ -1434,10 +1359,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11351, {	-- Mastering the Runes (H)
+						["sourceQuest"] = 11350,	-- The Book of Runes
+						["qg"] = 24362,	-- Longrunner Pembe
 						["coord"] = { 49.2, 12.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24362,	-- Longrunner Pembe
-						["sourceQuest"] = 11350,	-- The Book of Runes
 						["groups"] = {
 							objective(1, {	-- 0/1 Iron Rune Carving Tools
 								["providers"] = {
@@ -1448,32 +1373,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11427, {	-- Meet Lieutenant Icehammer...
+						["sourceQuest"] = 11426,	-- Locating the Mechanism
+						["qg"] = 23728,	-- Guard Captain Zorek
 						["coord"] = { 60.1, 62.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23728,	-- Guard Captain Zorek
-						["sourceQuest"] = 11426,	-- Locating the Mechanism
 					}),
 					q(11480, {	-- Meet Number Two
+						["sourceQuest"] = 11479,	-- "Crowleg" Dan
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
-						["sourceQuest"] = 11479,	-- "Crowleg" Dan
 					}),
 					q(11281, {	-- Mimicking Nature's Call
+						["sourceQuest"] = 11275,	-- Making the Horn
+						["qg"] = 24123,	-- Nokoma Snowseer
 						["coord"] = { 49.3, 11.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24123,	-- Nokoma Snowseer
-						["sourceQuest"] = 11275,	-- Making the Horn
 						["groups"] = {
+							i(35931),	-- Appointed Scalemail Leggings
 							i(35937),	-- Braxley's Backyard Moonshine
 							i(35929),	-- Gholamcloth Wrap
-							i(35931),	-- Appointed Scalemail Leggings
 							i(35930),	-- Inscribed Worghide Treads
+							--
+							i(33450),	-- Carved Horn (QI!)
 						},
 					}),
 					q(11202, {	-- Mission: Eternal Flame
+						["sourceQuest"] = 11199,	-- Report to Scout Knowles
 						["coord"] = { 44.4, 57.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11199,	-- Report to Scout Knowles
 						["groups"] = {
 							i(35889),	-- Bone-Inlaid Bracers
 							i(35888),	-- Embossed Ermine Girdle
@@ -1482,16 +1409,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11328, {	-- Mission: Forsaken Intel
+						["sourceQuest"] = 11327,	-- Mission: Package Retrieval
+						["qg"] = 23906,	-- Scout Knowles
 						["coord"] = { 44.4, 57.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23906,	-- Scout Knowles
-						["sourceQuest"] = 11327,	-- Mission: Package Retrieval
 					}),
 					q(11327, {	-- Mission: Package Retrieval
+						["sourceQuest"] = 11202,	-- Mission: Eternal Flame
+						["qg"] = 23906,	-- Scout Knowles
 						["coord"] = { 44.4, 57.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23906,	-- Scout Knowles
-						["sourceQuest"] = 11202,	-- Mission: Eternal Flame
 						["groups"] = {
 							objective(1, {	-- 0/1 Apothecary's Package
 								["providers"] = {
@@ -1502,9 +1429,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11332, {	-- Mission: Plague This!
+						["sourceQuest"] = 11331,	-- You Tell Him ...Hic!
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11331,	-- You Tell Him ...Hic!
 						["groups"] = {
 							i(35893),	-- Coldstone-Inlaid Waistguard
 							i(35892),	-- Flamebinder Handwraps
@@ -1513,8 +1440,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11527, {	-- Mutiny on the Mercy
-						["qg"] = 24910,	-- Captain Ellis
 						["sourceQuest"] = 11519,	-- The Lost Shield of the Aesirites
+						["qg"] = 24910,	-- Captain Ellis
 						["coords"] = {
 							{ 39.7, 74.4, HOWLING_FJORD },
 							{ 38.9, 72.1, HOWLING_FJORD },
@@ -1538,20 +1465,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11175, {	-- My Daughter
-						["coord"] = { 31.6, 42.0, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23831,	-- Old Man Stonemantle
-						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
 							11240,	-- Leader of the Deranged
 							11224,	-- Send Them Packing
 						},
+						["qg"] = 23831,	-- Old Man Stonemantle
+						["coord"] = { 31.6, 42.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(11236, {	-- Necro Overlord Mezhen (A)
+						["sourceQuest"] = 11235,	-- Dealing With Gjalerbron
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
-						["sourceQuest"] = 11235,	-- Dealing With Gjalerbron
 						["groups"] = {
 							objective(1, {	-- 0/1 Necro Overlord Mezhen slain
 								["provider"] = { "n", 24018 },	-- Necro Overlord Mezhen
@@ -1563,10 +1490,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11264, {	-- Necro Overlord Mezhen (H)
+						["sourceQuest"] = 11263,	-- Dealing With Gjalerbron
+						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24129,	-- Chieftain Ashtotem
-						["sourceQuest"] = 11263,	-- Dealing With Gjalerbron
 						["groups"] = {
 							objective(1, {	-- 0/1 Necro Overlord Mezhen slain
 								["provider"] = { "n", 24018 },	-- Necro Overlord Mezhen
@@ -1578,61 +1505,63 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11304, {	-- New Agamand
+						["sourceQuest"] = 11170,	-- Test at Sea
+						["qg"] = 24126,	-- Apothecary Lysander
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24126,	-- Apothecary Lysander
-						["sourceQuest"] = 11170,	-- Test at Sea
+						["groups"] = { i(33619) },	-- Lysander's Strain (QI!)
 					}),
 					q(11501, {	-- News From the East
-						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
 						["sourceQuests"] = {
 							11494,	-- Lightning Infused Relics
 							11495,	-- The Delicate Sound of Thunder
 						},
+						["qg"] = 24807,	-- Walt
+						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(35857),	-- Munificent Bulwark
 							i(35858),	-- Tome of Alacrity
 						},
 					}),
 					q(13087, {	-- Northern Cooking (A)
-						["coord"] = { 58.2, 62.0, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26905,	-- Brom Brewbaster
 						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
+						["qg"] = 26905,	-- Brom Brewbaster
+						["coord"] = { 58.2, 62.0, HOWLING_FJORD },
 						["requireSkill"] = COOKING,
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
 					q(13089, {	-- Northern Cooking (H)
-						["coord"] = { 78.6, 29.4, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["qg"] = 26953,	-- Thomas Kolichio
 						["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
+						["qg"] = 26953,	-- Thomas Kolichio
+						["coord"] = { 78.6, 29.4, HOWLING_FJORD },
 						["requireSkill"] = COOKING,
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
 					q(11231, {	-- Of Keys and Cages (A)
+						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+						["qg"] = 24038,	-- Father Levariol
 						["coord"] = { 28.8, 43.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24038,	-- Father Levariol
-						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
 					}),
 					q(11265, {	-- Of Keys and Cages (H)
+						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
+						["qg"] = 24135,	-- Greatmother Ankha
 						["coord"] = { 48.1, 10.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24135,	-- Greatmother Ankha
-						["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 					}),
 					q(12297, {	-- Of Traitors and Treason
+						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
 						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+						["isBreadcrumb"] = true,
 					}),
 					q(11190, {	-- One Size Does Not Fit All
 						["qg"] = 23770,	-- Cannoneer Ely
@@ -1648,10 +1577,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11248, {	-- Operation: Skornful Wrath
+						["sourceQuest"] = 11332,	-- Mission: Plague This!
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
-						["sourceQuest"] = 11332,	-- Mission: Plague This!
 					}),
 					q(11573, {	-- Orfus of Kamagua
 						["qg"] = 25233,	-- Lunk-tusk
@@ -1682,10 +1611,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(11309, {	-- Parts for the Job
+						["sourceQuest"] = 11308,	-- Time for Cleanup
+						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24252,	-- "Hacksaw" Jenny
-						["sourceQuest"] = 11308,	-- Time for Cleanup
 						["groups"] = {
 							objective(1, {	-- 0/6 Shoveltusk Ligament
 								["provider"] = { "i", 33611 },	-- Shoveltusk Ligament
@@ -1708,8 +1637,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11292, {	-- Preying Upon the Weak
-						["coord"] = { 62.6, 16.7, HOWLING_FJORD },
 						["qg"] = 24131,	-- Trapper Jethan
+						["coord"] = { 62.6, 16.7, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/8 Trapped Prey
@@ -1726,35 +1655,35 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11255, {	-- Prisoners of Wyrmskull
+						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+						["qg"] = 23546,	-- Vice Admiral Keller
 						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23546,	-- Vice Admiral Keller
-						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 					}),
 					q(11474, {	-- Problems on the High Bluff
+						["sourceQuest"] = 11448,	-- The Explorers' League Outpost
+						["qg"] = 24717,	-- Stanwad
 						["coord"] = { 74.8, 65.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24717,	-- Stanwad
 						["isBreadcrumb"] = true,
-						["sourceQuest"] = 11448,	-- The Explorers' League Outpost
 					}),
 					q(11234, {	-- Report to Anselm
+						["sourceQuest"] = 11233,	-- Landing the Killing Blow
+						["qg"] = 23778,	-- Dark Ranger Lyana
 						["coord"] = { 78.6, 37.1, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23778,	-- Dark Ranger Lyana
-						["sourceQuest"] = 11233,	-- Landing the Killing Blow
 					}),
 					q(11199, {	-- Report to Scout Knowles
+						["sourceQuest"] = 11188,	-- Two Wrongs...
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
-						["sourceQuest"] = 11188,	-- Two Wrongs...
 					}),
 					q(11221, {	-- Reports from the Field
+						["sourceQuest"] = 11270,	-- War is Hell
+						["qg"] = 23780,	-- High Executor Anselm
 						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23780,	-- High Executor Anselm
-						["sourceQuest"] = 11270,	-- War is Hell
 						["groups"] = {
 							objective(1, {	-- 0/1 Listen to Razael's Report
 								["provider"] = { "n", 23998 },	-- Deathstalker Razael
@@ -1765,10 +1694,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11244, {	-- Rescuing the Rescuers
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
-						["qg"] = 23546,	-- Vice Admiral Keller
 						["sourceQuest"] = 11243,	-- If Valgarde Falls...
+						["qg"] = 23546,	-- Vice Admiral Keller
+						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(35809),	-- Earthspike
 							i(35811),	-- Elekk-Horn Crossbow
@@ -1779,9 +1708,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11572, {	-- Return to Atuik
-						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
-						["qg"] = 23804,	-- Orfus of Kamagua
 						["sourceQuest"] = 11568,	-- A Return to Resting
+						["qg"] = 23804,	-- Orfus of Kamagua
+						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
 						["groups"] = {
 							i(36871),	-- Fury of the Encroaching Storm
 							i(36874),	-- Horn of the Herald
@@ -1789,13 +1718,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11278, {	-- Return to Valgarde
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24150,	-- Glorenfeld
 						["sourceQuest"] = 11300,	-- Stunning Defeat at the Ring
+						["qg"] = 24150,	-- Glorenfeld
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 56.9, 53.7, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(35820),	-- Deacon's Wraps
 							i(35818),	-- Stretch-Hide Spaulders
@@ -1804,9 +1733,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11296, {	-- Rivenwood Captives
+						["qg"] = 24209,	-- Longrunner Skycloud
 						["coord"] = { 31.2, 24.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24209,	-- Longrunner Skycloud
 						["groups"] = {
 							i(35896),	-- Icestriker Bands
 							i(35898),	-- Reinforced Tuskhide Hauberk
@@ -1815,8 +1744,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11182, {	-- Root Causes
-						["coord"] = { 41.2, 49.4, HOWLING_FJORD },
 						["qg"] = 23870,	-- Ember Clutch Ancient
+						["coord"] = { 41.2, 49.4, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/5 Dragonflayer Handler slain
 								["provider"] = { "n", 23871 },	-- Dragonflayer Handler
@@ -1848,9 +1777,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11510, {	-- "Scoodles"
+						["sourceQuest"] = 11509,	-- Street "Cred"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
-						["sourceQuest"] = 11509,	-- Street "Cred"
 						["groups"] = {
 							objective(1, {	-- 0/1 Sin'dorei Scrying Crystal
 								["provider"] = { "i", 34235 },	-- Sin'dorei Scrying Crystal
@@ -1859,18 +1788,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11176, {	-- See to the Operations
+						["sourceQuest"] = 11175,	-- My Daughter
 						["qg"] = 23891,	-- Overseer Irena Stonemantle
 						["coord"] = { 30.2, 28.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11175,	-- My Daughter
 					}),
 					q(11319, {	-- Seeds of the Blacksouled Keepers
-						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
-						["qg"] = 24117,	-- Lurielle
 						["sourceQuests"] = {
 							11314,	-- The Fallen Sisters
 							11315,	-- Wild Vines
 						},
+						["qg"] = 24117,	-- Lurielle
+						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["groups"] = {
 							i(39074),	-- Drape of Distilled Hatred
 							i(39072),	-- Blacksoul Protector's Hauberk
@@ -1878,20 +1807,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11224, {	-- Send Them Packing
+						["sourceQuest"] = 11188,	-- Two Wrongs...
+						["qg"] = 23978,	-- Explorer Abigail
 						["coord"] = { 31.6, 41.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23978,	-- Explorer Abigail
-						["sourceQuest"] = 11188,	-- Two Wrongs...
 					}),
 					q(11424, {	-- Shield Hill
+						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["groups"] = {
 							i(35893),	-- Coldstone-Inlaid Waistguard
+							i(35895),	-- Emeraldscale Pauldrons
 							i(35892),	-- Flamebinder Handwraps
 							i(35894),	-- Purestrike Bracers
-							i(35895),	-- Emeraldscale Pauldrons
+							--
+							i(34043),	-- Ancient Vrykul Bone (QI!)
 						},
 					}),
 					q(11155, {	-- Shoveltusk Soup Again?
@@ -1911,16 +1842,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11256, {	-- Skorn Must Fall!
+						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:: verify
+						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24129,	-- Chieftain Ashtotem
-						["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:: verify
+						["groups"] = { i(33340) },	-- Winterhoof Emblem (QI!)
 					}),
 					q(11432, {	-- Sleeping Giants (A)
+						["sourceQuest"] = 11231,	-- Of Keys and Cages
+						["qg"] = 23888,	-- Mage-Lieutenant Malister
 						["coord"] = { 28.9, 44.2, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23888,	-- Mage-Lieutenant Malister
-						["sourceQuest"] = 11231,	-- Of Keys and Cages
 						["groups"] = {
 							objective(1, {	-- 0/5 Dormant Vrykul slain
 								["provider"] = { "n", 24669 },	-- Dormant Vrykul
@@ -1928,10 +1860,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11433, {	-- Sleeping Giants (H)
+						["sourceQuest"] = 11265,	-- Of Keys and Cages
+						["qg"] = 24127,	-- Ahota Whitefrost
 						["coord"] = { 48.3, 11.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24127,	-- Ahota Whitefrost
-						["sourceQuest"] = 11265,	-- Of Keys and Cages
 						["groups"] = {
 							objective(1, {	-- 0/5 Dormant Vrykul slain
 								["provider"] = { "n", 24669 },	-- Dormant Vrykul
@@ -1939,14 +1871,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11253, {	-- Sniff Out the Enemy
+						["sourceQuest"] = 11227,	-- Let Them Eat Crow
+						["qg"] = 23938,	-- Pontius
 						["coord"] = { 79.1, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23938,	-- Pontius
-						["sourceQuest"] = 11227,	-- Let Them Eat Crow
 					}),
 					q(11529, {	-- Sorlof's Booty
-						["qg"] = 24910,	-- Captain Ellis
 						["sourceQuest"] = 11527,	-- Mutiny on the Mercy
+						["qg"] = 24910,	-- Captain Ellis
 						["coords"] = {
 							{ 39.7, 74.4, HOWLING_FJORD },
 							{ 38.9, 72.1, HOWLING_FJORD },
@@ -1972,12 +1904,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11316, {	-- Spawn of the Twisted Glade
-						["qg"] = 24117,	-- Lurielle
-						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["sourceQuests"] = {
 							11314,	-- The Fallen Sisters
 							11315,	-- Wild Vines
 						},
+						["qg"] = 24117,	-- Lurielle
+						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/10 Thornvine Creeper slain
 								["provider"] = { "n", 23874 },	-- Thornvine Creeper
@@ -1985,10 +1917,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11168, {	-- Spiking the Mix
+						["sourceQuest"] = 11167,	-- The New Plague
+						["qg"] = 24126,	-- Apothecary Lysander
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24126,	-- Apothecary Lysander
-						["sourceQuest"] = 11167,	-- The New Plague
 						["groups"] = {
 							objective(1, {	-- 0/3 Giant Toxin Gland
 								["provider"] = { "i", 33337 },	-- Giant Toxin Gland
@@ -1997,12 +1929,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11313, {	-- Spirits of the Ice
-						["qg"] = 24117,	-- Lurielle
-						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["sourceQuests"] = {
 							11302,	-- The Enigmatic Frost Nymphs (A)
 							11312,	-- The Frozen Glade (H)
 						},
+						["qg"] = 24117,	-- Lurielle
+						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/15 Icy Core
 								["provider"] = { "i", 33605 },	-- Icy Core
@@ -2011,8 +1943,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11391, {	-- Steel Gate Patrol
-						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["sourceQuest"] = 11390,	-- I've Got a Flying Machine!
+						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["coord"] = { 30.8, 28.5, HOWLING_FJORD },
 						["maxReputation"] = { FACTION_EXPLORERS_LEAGUE, EXALTED },	-- Explorer's League, Exalted.
 						["races"] = ALLIANCE_ONLY,
@@ -2024,8 +1956,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11249, {	-- Stop the Ascension! (A) -- TODO: Verify if this drops all the time
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 33314 },	-- Vrykul Scroll of Ascension
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							23662,	-- Winterskorn Woodsman
 							23661,	-- Winterskorn Tribesman
@@ -2049,8 +1981,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11260, {	-- Stop the Ascension! (H) -- TODO: Verify if this drops all the time
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 33345 },	-- Vrykul Scroll of Ascension
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							23662,	-- Winterskorn Woodsman
 							23661,	-- Winterskorn Tribesman
@@ -2074,18 +2006,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11509, {	-- Street "Cred"
+						["sourceQuest"] = 11508,	-- Grezzix Spindlesnap
 						["qg"] = 24643,	-- Grezzix Spindlesnap
 						["coord"] = { 23.0, 62.6, HOWLING_FJORD },
-						["sourceQuest"] = 11508,	-- Grezzix Spindlesnap
 					}),
 					q(11300, {	-- Stunning Defeat at the Ring
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24151,	-- Daegarn
 						["sourceQuest"] = 11299,	-- The Ring of Judgment
+						["qg"] = 24151,	-- Daegarn
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 55.6, 57.3, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Ancient Cipher
 								["providers"] = {
@@ -2096,9 +2028,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11311, {	-- Suppressing the Elements
+						["qg"] = 24256,	-- Wind Tamer Kagan
 						["coord"] = { 48.9, 11.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24256,	-- Wind Tamer Kagan
 						["groups"] = {
 							objective(1, {	-- 0/8 Mountain Elementals slain
 								["providers"] = {
@@ -2109,9 +2041,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11469, {	-- Swabbin' Soap
+						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
 						["qg"] = 24784,	-- Scuttle Frostprow
 						["coord"] = { 37.7, 79.5, HOWLING_FJORD },
-						["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
 						["groups"] = {
 							objective(1, {	-- 0/1 Big Roy's Blubber
 								["provider"] = { "i", 34122 },	-- Big Roy's Blubber
@@ -2120,30 +2052,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11170, {	-- Test at Sea
+						["sourceQuest"] = 11168,	-- Spiking the Mix
+						["qg"] = 24126,	-- Apothecary Lysander
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24126,	-- Apothecary Lysander
-						["sourceQuest"] = 11168,	-- Spiking the Mix
 						["groups"] = {
-							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35842),	-- Azure Chain Hauberk
+							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35843),	-- Ramshorn-Inlaid Shoulders
 							i(35839),	-- Runed Clamshell Choker
+							--
+							i(33349),	-- Plague Vials (QI!)
 						},
 					}),
 					q(11303, {	-- The Ambush
-						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["qg"] = 24027,	-- Sergeant Gorth
 						["sourceQuests"] = {
 							11283,	-- Baleheim Bodycount
 							11285,	-- Baleheim Must Burn!
 						},
+						["qg"] = 24027,	-- Sergeant Gorth
+						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11567, {	-- The Ancient Armor of the Kvaldir
+						["sourceQuest"] = 11510,	--	"Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
-						["sourceQuest"] = 11510,	--	"Scoodles"
 						["groups"] = {
 							objective(1, {	-- 0/1 The Ancient Armor of the Kvaldir
 								["providers"] = {
@@ -2154,10 +2088,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11286, {	-- The Artifacts of Steel Gate
+						["sourceQuest"] = 11287,	-- Find Sage Mistwalker
+						["qg"] = 24186,	-- Sage Mistwalker
 						["coord"] = { 31.1, 24.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24186,	-- Sage Mistwalker
-						["sourceQuest"] = 11287,	-- Find Sage Mistwalker
 						["groups"] = {
 							objective(1, {	-- 0/10 Steel Gate Artifact
 								["providers"] = {
@@ -2172,32 +2106,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11346, {	-- The Book of Runes (A)
+						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["qg"] = 24328,	-- Prospector Belvar
 						["coord"] = { 62.2, 17.2, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11329,	-- I'll Try Anything!
 					}),
 					q(11350, {	-- The Book of Runes (H)
+						["sourceQuest"] = 11275,	-- Making the Horn
+						["qg"] = 24362,	-- Longrunner Pembe
 						["coord"] = { 49.2, 12.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24362,	-- Longrunner Pembe
-						["sourceQuest"] = 11275,	-- Making the Horn
 					}),
 					q(11322, {	-- The Cleansing (A)
+						["qg"] = 24273,	-- Watcher Moonleaf
 						["coord"] = { 30.0, 28.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24273,	-- Watcher Moonleaf
 					}),
 					q(11317, {	-- The Cleansing (H)
+						["sourceQuest"] = 11286,	-- The Artifacts of Steel Gate
+						["qg"] = 24186,	-- Sage Mistwalker
 						["coord"] = { 31.1, 24.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24186,	-- Sage Mistwalker
-						["sourceQuest"] = 11286,	-- The Artifacts of Steel Gate
 					}),
 					q(11157, {	-- The Clutches of Evil
+						["qg"] = 23749,	-- Captain Adams
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23749,	-- Captain Adams
 						["groups"] = {
 							objective(1, {	-- 0/15 Proto-Drake Egg destroyed
 								["provider"] = { "n", 23777 },	-- Proto-Drake Egg
@@ -2208,14 +2142,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11261, {	-- The Conqueror of Skorn!
-						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["qg"] = 24130,	-- Winterhoof Brave
 						["sourceQuests"] = {
 							11258,	-- Burn Skorn, Burn!
 							11257,	-- Gruesome, But Necessary
 							11259,	-- Towers of Certain Doom
 						},
+						["qg"] = 24130,	-- Winterhoof Brave
+						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(35909),	-- Sun-Fired Striders
 							i(35910),	-- Shaleground Bracers
@@ -2224,9 +2158,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11504, {	-- The Dead Rise!
+						["sourceQuest"] = 11573,	-- Orfus of Kamagua
 						["qg"] = 23804,	-- Orfus of Kamagua
 						["coord"] = { 40.2, 60.2, HOWLING_FJORD },
-						["sourceQuest"] = 11573,	-- Orfus of Kamagua
 						["groups"] = {
 							objective(1, {	-- 0/1 Fengir's Clue
 								["providers"] = {
@@ -2255,10 +2189,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11495, {	-- The Delicate Sound of Thunder
+						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
 						["groups"] = {
 							i(35851),	-- Acid-Etched Knuckles
 							i(35849),	-- Featherweight Claymore
@@ -2267,14 +2201,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11277, {	-- The Depths of Depravity
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24150,	-- Glorenfeld
 						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11276,	-- And Then There Were Two...
+						["qg"] = 24150,	-- Glorenfeld
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 56.9, 53.7, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Wyrmskull Tablet
 								["providers"] = {
@@ -2286,21 +2220,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11254, {	-- The Dragonskin Map
+						["sourceQuest"] = 11253,	-- Sniff Out the Enemy
+						["provider"] = { "o", 186585 },	-- Dragonskin Scroll
 						["coord"] = { 75.9, 19.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "o", 186585 },	-- Dragonskin Scroll
-						["sourceQuest"] = 11253,	-- Sniff Out the Enemy
+						["groups"] = { i(33411) },	-- Dragonskin Map (QI!)
 					}),
 					q(11343, {	-- The Echo of Ymiron
+						["sourceQuest"] = 11333,	-- Into the World of Spirits
+						["qg"] = 23975,	-- Thoralius the Wise
 						["coord"] = { 59.8, 61.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23975,	-- Thoralius the Wise
-						["sourceQuest"] = 11333,	-- Into the World of Spirits
 					}),
 					q(11423, {	-- The Enemy's Legacy
+						["qg"] = 24548,	-- Scribe Seguine
 						["coord"] = { 67.3, 60.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24548,	-- Scribe Seguine
 						["groups"] = {
 							objective(1, {	-- 0/1 Saga of the Twins
 								["providers"] = {
@@ -2323,30 +2258,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11302, {	-- The Enigmatic Frost Nymphs
+						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["qg"] = 24282,	-- Lieutenant Maeve
 						["coord"] = { 61.8, 17.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["isBreadcrumb"] = true,
 					}),
 					q(11448, {	-- The Explorers' League Outpost
-						["coord"] = { 60.1, 61.0, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23548,	-- Beltrand McSorf
 						["sourceQuests"] = {
 							11278,	-- Return to Valgarde
 							11478,	-- Outpost Over Yonder...
 						},
+						["qg"] = 23548,	-- Beltrand McSorf
+						["coord"] = { 60.1, 61.0, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11314, {	-- The Fallen Sisters
+						["sourceQuest"] = 11313,	-- Spirits of the Ice
 						["qg"] = 24117,	-- Lurielle
 						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
-						["sourceQuest"] = 11313,	-- Spirits of the Ice
+						["groups"] = { i(33606) },	-- Lurielle's Pendant (QI!)
 					}),
 					q(11455, {	-- The Fragrance of Money
+						["sourceQuest"] = 11434,	-- Forgotten Treasure
 						["qg"] = 24537,	-- Handsome Terry
 						["coord"] = { 35.6, 80.2, HOWLING_FJORD },
-						["sourceQuest"] = 11434,	-- Forgotten Treasure
 						["groups"] = {
 							objective(1, {	-- 0/4 Bear Musk
 								["provider"] = { "i", 34084 },	-- Bear Musk
@@ -2355,10 +2291,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11238, {	-- The Frost Wyrm and its Master (A)
+						["sourceQuest"] = 11237,	-- Gjalerbron Attack Plans
+						["qg"] = 23888,	-- Mage-Lieutenant Malister
 						["coord"] = { 28.9, 44.2, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23888,	-- Mage-Lieutenant Malister
-						["sourceQuest"] = 11237,	-- Gjalerbron Attack Plans
 						["groups"] = {
 							objective(1, {	-- 0/1 Wyrmcaller Vile slain
 								["provider"] = { "n", 24029 },	-- Wyrmcaller Vile
@@ -2377,10 +2313,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11267, {	-- The Frost Wyrm and its Master (H)
+						["sourceQuest"] = 11266,	-- Gjalerbron Attack Plans
+						["qg"] = 24032,	-- Celea Frozenmane
 						["coord"] = { 49.5, 11.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24032,	-- Celea Frozenmane
-						["sourceQuest"] = 11266,	-- Gjalerbron Attack Plans
 						["groups"] = {
 							objective(1, {	-- 0/1 Wyrmcaller Vile slain
 								["provider"] = { "n", 24029 },	-- Wyrmcaller Vile
@@ -2399,16 +2335,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11312, {	-- The Frozen Glade
+						["sourceQuest"] = 11275,	-- Making the Horn
+						["qg"] = 24123,	-- Nokoma Snowseer
 						["coord"] = { 49.3, 12.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24123,	-- Nokoma Snowseer
 						["isBreadcrumb"] = true,
-						["sourceQuest"] = 11275,	-- Making the Horn
 					}),
 					q(11512, {	-- The Frozen Heart of Isuldof
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
-						["sourceQuest"] = 11510,	-- "Scoodles"
 						["groups"] = {
 							objective(1, {	-- 0/1 The Frozen Heart of Isuldof
 								["providers"] = {
@@ -2419,15 +2355,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11273, {	-- The Human League
+						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+						["qg"] = 23548,	-- Beltrand McSorf
 						["coord"] = { 60.1, 61.0, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23548,	-- Beltrand McSorf
-						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 					}),
 					q(11471, {	-- The Jig is Up
-						["coord"] = { 35.4, 79.4, HOWLING_FJORD },
-						["qg"] = 24741,	-- Annie Bonn
 						["sourceQuest"] = 11480,	-- Meet Number Two
+						["qg"] = 24741,	-- Annie Bonn
+						["coord"] = { 35.4, 79.4, HOWLING_FJORD },
 						["groups"] = {
 							objective(1, {	-- 0/1 Jonah Sterling's Spyglass
 								["provider"] = { "i", 34128 },	-- Jonah Sterling's Spyglass
@@ -2439,27 +2375,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11358, {	-- The Lodestone (A)
+						["sourceQuest"] = 11355,	-- March of the Giants
 						["qg"] = 24376,	-- Researcher Aderan
 						["coord"] = { 62.5, 16.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11355,	-- March of the Giants
 					}),
 					q(11366, {	-- The Lodestone (H)
+						["sourceQuest"] = 11365,	-- March of the Giants
+						["qg"] = 24390,	-- Sage Edan
 						["coord"] = { 48.0, 10.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24390,	-- Sage Edan
-						["sourceQuest"] = 11365,	-- March of the Giants
 					}),
 					q(11519, {	-- The Lost Shield of the Aesirites
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
-						["sourceQuest"] = 11510,	-- "Scoodles"
 					}),
 					q(11167, {	-- The New Plague
-						["qg"] = 24126,	-- Apothecary Lysander
 						-- #if AFTER 7.3.5
 						["sourceQuest"] = 49533,	-- Warchief's Command: Howling Fjord!
 						-- #endif
+						["qg"] = 24126,	-- Apothecary Lysander
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2476,16 +2412,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11295, {	-- The Offensive Begins
+						["sourceQuest"] = 11254,	-- The Dragonskin Map
+						["qg"] = 23780,	-- High Executor Anselm
 						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23780,	-- High Executor Anselm
-						["sourceQuest"] = 11254,	-- The Dragonskin Map
 					}),
 					q(11410, {	-- The One That Got Away
+						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["qg"] = 24056,	-- Christopher Sloan
 						["coord"] = { 60.2, 18.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11329,	-- I'll Try Anything!
 						["groups"] = {
 							objective(1, {	-- 0/1 Frostfin slain
 								["provider"] = { "n", 24500 },	-- Frostfin
@@ -2493,10 +2429,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11420, {	-- The Path to Payback
+						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+						["qg"] = 23728,	-- Guard Captain Zorek
 						["coord"] = { 60.1, 62.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23728,	-- Guard Captain Zorek
-						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
 						["groups"] = {
 							objective(1, {	-- 0/1 Harpoon Operation Manual
 								["providers"] = {
@@ -2507,36 +2443,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11465, {	-- The Ransacked Caravan
+						["sourceQuest"] = 11460,	-- Trust is Earned
+						["qg"] = 24750,	-- Hidalgo the Master Falconer
 						["coord"] = { 75.2, 64.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24750,	-- Hidalgo the Master Falconer
-						["sourceQuest"] = 11460,	-- Trust is Earned
 					}),
 					q(11299, {	-- The Ring of Judgment
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24150,	-- Glorenfeld
 						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r.",
 						["sourceQuest"] = 11277,	-- The Depths of Depravity
+						["qg"] = 24150,	-- Glorenfeld
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 56.9, 53.7, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11348, {	-- The Rune of Command (A)
+						["sourceQuest"] = 11349,	-- Mastering the Runes
 						["qg"] = 24328,	-- Prospector Belvar
 						["coord"] = { 62.2, 17.2, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 11349,	-- Mastering the Runes
 					}),
 					q(11352, {	-- The Rune of Command (H)
+						["sourceQuest"] = 11351,	-- Mastering the Runes
+						["qg"] = 24362,	-- Longrunner Pembe
 						["coord"] = { 49.2, 12.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24362,	-- Longrunner Pembe
-						["sourceQuest"] = 11351,	-- Mastering the Runes
 					}),
 					q(11530, {	-- The Shield of the Aesirites
-						["qg"] = 24910,	-- Captain Ellis
 						["sourceQuest"] = 11529,	-- Sorlof's Booty
+						["qg"] = 24910,	-- Captain Ellis
 						["coords"] = {
 							{ 39.7, 74.4, HOWLING_FJORD },
 							{ 38.9, 72.1, HOWLING_FJORD },
@@ -2554,14 +2490,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11288, {	-- The Shining Light
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24189,	-- Ares the Oathbound
 						["description"] = "Inside the |cFFFFD700Utgarde Catacombs|r. You need to pick up |cFFFFD700The Path to Payback|r first to see this quest.",
 						["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+						["qg"] = 24189,	-- Ares the Oathbound
 						["coords"] = {
 							{ 56.6, 49.5, HOWLING_FJORD },	-- Catacombs entrance
 							{ 59.3, 55.4, HOWLING_FJORD },	-- NPC
 						},
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Sacred Artifact
 								["providers"] = {
@@ -2578,9 +2514,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11452, {	-- The Slumbering King (A)
-						["crs"] = { 24018 },	-- Necro Overlord Mezhen
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 34090 },	-- Mezhen's Writings
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = { 24018 },	-- Necro Overlord Mezhen
 						["groups"] = {
 							objective(1, {	-- 0/1 Queen Angerboda slain
 								["provider"] = { "n", 24023 },	-- Queen Angerboda
@@ -2588,9 +2524,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11453, {	-- The Slumbering King (H)
-						["crs"] = { 24018 },	-- Necro Overlord Mezhen
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 34083 },	-- Awakening Rod
+						["races"] = HORDE_ONLY,
+						["crs"] = { 24018 },	-- Necro Overlord Mezhen
 						["groups"] = {
 							objective(1, {	-- 0/1 Queen Angerboda slain
 								["provider"] = { "n", 24023 },	-- Queen Angerboda
@@ -2598,9 +2534,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11511, {	-- The Staff of Storm's Fury
+						["sourceQuest"] = 11510,	-- "Scoodles"
 						["qg"] = 24539,	-- "Silvermoon" Harry
 						["coord"] = { 35.0, 80.9, HOWLING_FJORD },
-						["sourceQuest"] = 11510,	-- "Scoodles"
 						["groups"] = {
 							objective(1, {	-- 0/1 The Staff of Storm's Fury
 								["providers"] = {
@@ -2611,10 +2547,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11268, {	-- The Walking Dead
+						["sourceQuest"] = 11265,	-- Of Keys and Cages
+						["qg"] = 24135,	-- Greatmother Ankha
 						["coord"] = { 48.1, 10.6, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24135,	-- Greatmother Ankha
-						["sourceQuest"] = 11265,	-- Of Keys and Cages
 						["groups"] = {
 							objective(1, {	-- 0/10 Deathless Watcher slain
 								["provider"] = { "n", 24013 },	-- Deathless Watcher
@@ -2632,17 +2568,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11472, {	-- The Way to His Heart...
-						["qg"] = 24810,	-- Anuniaq
 						["sourceQuest"] = 11469,	-- Swabbin' Soap
+						["qg"] = 24810,	-- Anuniaq
 						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
 						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11229, {	-- The Windrunner Fleet
+						["sourceQuest"] = 11221,	-- Reports from the Field
+						["qg"] = 23780,	-- High Executor Anselm
 						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23780,	-- High Executor Anselm
-						["sourceQuest"] = 11221,	-- Reports from the Field
 					}),
 					q(11284, {	-- The Yeti Next Door
 						["qg"] = 24176,	-- Foreman Colbey
@@ -2659,10 +2595,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11470, {	-- There Exists No Honor Among Birds
+						["sourceQuest"] = 11468,	-- Falcon Versus Hawk
+						["qg"] = 24750,	-- Hidalgo the Master Falconer
 						["coord"] = { 75.2, 64.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24750,	-- Hidalgo the Master Falconer
-						["sourceQuest"] = 11468,	-- Falcon Versus Hawk
 						["groups"] = {
 							i(35860),	-- Flexible Leather Footwraps
 							i(35859),	-- Fire-Purifying Tunic
@@ -2671,29 +2607,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11308, {	-- Time for Cleanup
+						["sourceQuest"] = 11307,	-- Field Test
+						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24251,	-- Chief Plaguebringer Harris
-						["sourceQuest"] = 11307,	-- Field Test
 					}),
 					q(12182, {	-- To Venomspite!
-						["qg"] = 24155,	-- Tobias Sarkhoff
 						["sourceQuest"] = 12181,	-- Give it a Name
+						["qg"] = 24155,	-- Tobias Sarkhoff
 						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
 					q(11291, {	-- To Westguard Keep!
+						["sourceQuest"] = 11290,	-- Dragonflayer Battle Plans
+						["qg"] = 23546,	-- Vice Admiral Keller
 						["coord"] = { 60.4, 61.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23546,	-- Vice Admiral Keller
-						["sourceQuest"] = 11290,	-- Dragonflayer Battle Plans
 					}),
 					q(11475, {	-- Tools to Get the Job Done
+						["sourceQuest"] = 11474,	-- Problems on the High Bluff
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11474,	-- Problems on the High Bluff
 						["groups"] = {
 							objective(1, {	-- 0/1 Building Tools
 								["providers"] = {
@@ -2704,35 +2641,37 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11245, {	-- Towers of Certain Doom (A)
+						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
+						["qg"] = 24060,	-- Westguard Sergeant
 						["coord"] = { 44.8, 31.4, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24060,	-- Westguard Sergeant
-						["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
 					}),
 					q(11259, {	-- Towers of Certain Doom (H)
+						["sourceQuest"] = 11256,	-- Skorn Must Fall!
+						["qg"] = 24130,	-- Winterhoof Brave
 						["coord"] = { 44.7, 29.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24130,	-- Winterhoof Brave
-						["sourceQuest"] = 11256,	-- Skorn Must Fall!
 					}),
 					q(11241, {	-- Trail of Fire
+						["sourceQuest"] = 11232,	-- Guide Our Sights
+						["qg"] = 23784,	-- Apothecary Hanes
 						["coord"] = { 83.2, 43.1, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23784,	-- Apothecary Hanes
-						["sourceQuest"] = 11232,	-- Guide Our Sights
 						["groups"] = {
 							i(35829),	-- Coldspike Longbow
-							i(35827),	-- Regal Sceptre
-							i(35830),	-- Worn Vrykul Smasher
-							i(35826),	-- Whelpling-Skull Zapper
 							i(35823),	-- Ice-Rimed Dagger
+							i(35827),	-- Regal Sceptre
 							i(35824),	-- Stoneblade Slicer
+							i(35826),	-- Whelpling-Skull Zapper
+							i(35830),	-- Worn Vrykul Smasher
+							--
+							i(33335),	-- Cannoneer's Smoke Flare (QI!)
 						},
 					}),
 					q(12118, {	-- Travel to Moa'ki Harbor
-						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
-						["qg"] = 24810,	-- Anuniaq
 						["sourceQuest"] = 11458,	-- Avenge Iskaal
+						["qg"] = 24810,	-- Anuniaq
+						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
 						["isBreadcrumb"] = true,
 						["groups"] = {
 							i(37283),	-- Wandering Healer's Kilt
@@ -2757,10 +2696,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11188, {	-- Two Wrongs...
+						["sourceQuest"] = 11187,	-- Mage-Lieutenant Malister
+						["qg"] = 23888,	-- Mage-Lieutenant Malister
 						["coord"] = { 28.9, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23888,	-- Mage-Lieutenant Malister
-						["sourceQuest"] = 11187,	-- Mage-Lieutenant Malister
 						["groups"] = {
 							objective(1, {	-- 0/3 Proto-Drake slain
 								["provider"] = { "n", 23689 },	-- Proto-Drake
@@ -2772,9 +2711,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11270, {	-- War is Hell
+						["qg"] = 23780,	-- High Executor Anselm
 						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 23780,	-- High Executor Anselm
+						["groups"] = { i(33278) },	-- Burning Torch (QI!)
 					}),
 					warchiefscommand(q(49533, {	-- Warchief's Command: Howling Fjord!
 						["timeline"] = { ADDED_7_3_5 },
@@ -2782,28 +2722,30 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(11310, {	-- Warning: Some Assembly Required
+						["sourceQuest"] = 11309,	-- Parts for the Job
+						["qg"] = 24252,	-- "Hacksaw" Jenny
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24252,	-- "Hacksaw" Jenny
-						["sourceQuest"] = 11309,	-- Parts for the Job
 						["groups"] = {
 							i(35860),	-- Flexible Leather Footwraps
 							i(35859),	-- Fire-Purifying Tunic
 							i(35861),	-- Inescapable Girdle
 							i(35862),	-- Light-Bound Chestguard
+							--
+							i(33613),	-- Abomination Assembly Kit (QI!)
 						},
 					}),
 					q(11418, {	-- We Call Him Steelfeather
+						["sourceQuest"] = 11269,	-- Down to the Wire
+						["qg"] = 24139,	-- Gil Grisert
 						["coord"] = { 62.5, 16.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24139,	-- Gil Grisert
-						["sourceQuest"] = 11269,	-- Down to the Wire
 					}),
 					q(11483, {	-- We Can Rebuild It
+						["sourceQuest"] = 11475,	-- Tools to Get the Job Done
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11475,	-- Tools to Get the Job Done
 						["groups"] = {
 							objective(1, {	-- 0/1 Large Barrel
 								["providers"] = {
@@ -2820,10 +2762,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11484, {	-- We Have the Technology
+						["sourceQuest"] = 11475,	-- Tools to Get the Job Done
+						["qg"] = 24807,	-- Walt
 						["coord"] = { 75.0, 65.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24807,	-- Walt
-						["sourceQuest"] = 11475,	-- Tools to Get the Job Done
 						["groups"] = {
 							objective(1, {	-- 0/1 Pristine Shoveltusk Hide
 								["provider"] = { "i", 34136 },	-- Pristine Shoveltusk Hide
@@ -2847,10 +2789,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11298, {	-- What's in That Brew?
+						["sourceQuest"] = 11297,	-- Keeping Watch on the Interlopers
+						["qg"] = 24152,	-- Apothecary Malthus
 						["coord"] = { 26.4, 24.5, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24152,	-- Apothecary Malthus
-						["sourceQuest"] = 11297,	-- Keeping Watch on the Interlopers
 						["groups"] = {
 							objective(1, {	-- 0/5 Dwarven Keg
 								["providers"] = {
@@ -2867,9 +2809,9 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(11315, {	-- Wild Vines
+						["sourceQuest"] = 11313,	-- Spirits of the Ice
 						["qg"] = 24117,	-- Lurielle
 						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
-						["sourceQuest"] = 11313,	-- Spirits of the Ice
 						["groups"] = {
 							objective(1, {	-- 0/8 Scarlet Ivy slain
 								["provider"] = { "n", 23763 },	-- Scarlet Ivy
@@ -2877,21 +2819,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11331, {	-- You Tell Him ...Hic!
+						["sourceQuest"] = 11330,	-- Absholutely... Thish Will Work!
+						["qg"] = 24283,	-- Peppy Wrongnozzle
 						["coord"] = { 30.7, 41.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24283,	-- Peppy Wrongnozzle
-						["sourceQuest"] = 11330,	-- Absholutely... Thish Will Work!
 					}),
 					q(11274, {	-- Zedd's Probably Dead
+						["sourceQuest"] = 11273,	-- The Human League
+						["qg"] = 24122,	-- Pulroy the Archaeologist
 						["coord"] = { 59.1, 54.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 24122,	-- Pulroy the Archaeologist
-						["sourceQuest"] = 11273,	-- The Human League
 					}),
 					q(11459, {	-- Zeh'gehn Sez
+						["sourceQuest"] = 11473,	-- A Traitor Among Us
 						["qg"] = 24525,	-- Zeh'gehn
 						["coord"] = { 35.5, 80.6, HOWLING_FJORD },
-						["sourceQuest"] = 11473,	-- A Traitor Among Us
 					}),
 				}),
 				n(RARES, {
@@ -2968,6 +2910,15 @@ root(ROOTS.Zones, {
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
+					n(24341, {	-- Barnabas Frye <Trade Goods>
+						["coord"] = { 79.5, 30.47, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
+							},
+						},
+					}),
 					n(23735, {	-- Bartleby Armorfist
 						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
@@ -3025,6 +2976,16 @@ root(ROOTS.Zones, {
 					n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
 						["coord"] = { 25.4, 58.6, HOWLING_FJORD },
 						["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
+					}),
+					n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+						["coord"] = { 58.4, 62.75, HOWLING_FJORD },
+						["description"] = "Walks in a circle inside Valgarde Inn.",
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
+							},
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {

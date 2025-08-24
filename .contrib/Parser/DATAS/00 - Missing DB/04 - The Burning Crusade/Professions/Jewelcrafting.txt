@@ -1,0 +1,121 @@
+2.0.0.6080
+r(25229),	-- Jewelcrafting
+r(25230),	-- Jewelcrafting
+r(25614),	-- Silver Rose Pendant
+r(26918),	-- Arcanite Sword Pendant
+r(26920),	-- Blood Crown
+r(28894),	-- Jewelcrafting
+r(28895),	-- Jewelcrafting
+r(28897),	-- Jewelcrafting
+r(31252),	-- Prospecting
+r(32810),	-- Primal Stone Statue
+
+
+
+
+Missing in Jewelcrafting
+
+2.0.0.6080
+r(25255),	-- Delicate Copper Wire
+r(25278),	-- Bronze Setting
+r(25280),	-- Elegant Silver Ring
+r(25283),	-- Inlaid Malachite Ring
+r(25284),	-- Simple Pearl Ring
+r(25287),	-- Gloom Band
+r(25305),	-- Heavy Silver Ring
+r(25317),	-- Ring of Silver Might
+r(25318),	-- Ring of Twilight Shadows
+r(25321),	-- Moonsoul Crown
+r(25490),	-- Solid Bronze Ring
+r(25493),	-- Braided Copper Ring
+r(25498),	-- Barbaric Iron Collar
+r(25613),	-- Golden Dragon Ring
+r(25614),	-- Silver Rose Pendant
+r(25615),	-- Mithril Filigree
+r(25620),	-- Engraved Truesilver Ring
+r(25621),	-- Citrine Ring of Rapid Healing
+r(26872),	-- Figurine - Jade Owl
+r(26874),	-- Aquamarine Signet
+r(26876),	-- Aquamarine Pendant of the Warrior
+r(26880),	-- Thorium Setting
+r(26883),	-- Ruby Pendant of Fire
+r(26885),	-- Truesilver Healing Ring
+r(26902),	-- Simple Opal Ring
+r(26903),	-- Sapphire Signet
+r(26907),	-- Onslaught Ring
+r(26908),	-- Sapphire Pendant of Winter Night
+r(26911),	-- Living Emerald Pendant
+r(26916),	-- Band of Natural Fire
+r(26918),	-- Arcanite Sword Pendant
+r(26920),	-- Blood Crown
+r(26925),	-- Woven Copper Ring
+r(26926),	-- Heavy Copper Ring
+r(26927),	-- Thick Bronze Necklace
+r(26928),	-- Ornate Tigerseye Necklace
+r(28897),	-- Jewelcrafting
+r(28906),	-- Brilliant Blood Garnet \\ Runed Blood Garnet
+r(28907),	-- Delicate Blood Garnet
+r(28924),	-- Purified Shadow Draenite \\ Dazzling Deep Peridot
+r(28938),	-- Brilliant Blood Garnet \\ Brilliant Golden Draenite
+r(28957),	-- Sparkling Azure Moonstone \\ Lustrous Azure Moonstone
+r(31048),	-- Fel Iron Blood Ring
+r(31049),	-- Golden Draenite Ring
+r(31050),	-- Azure Moonstone Ring
+r(31051),	-- Thick Adamantite Necklace
+r(31052),	-- Heavy Adamantite Ring
+r(31087),	-- Brilliant Living Ruby \\ Teardrop Living Ruby
+r(31089),	-- Delicate Living Ruby \\ Bright Living Ruby
+r(31094),	-- Sparkling Star of Elune \\ Lustrous Star of Elune
+r(31096),	-- Brilliant Living Ruby \\ Brilliant Dawnstone
+r(31099),	-- Smooth Dawnstone \\ Gleaming Dawnstone
+r(31100),	-- Subtle Dawnstone \\ Thick Dawnstone
+r(31105),	-- Purified Nightseye \\ Royal Nightseye
+r(31110),	-- Regal Talasite \\ Enduring Talasite
+r(31252),	-- Prospecting
+r(32178),	-- Malachite Pendant
+r(32179),	-- Tigerseye Band
+r(32259),	-- Rough Stone Statue
+r(32801),	-- Coarse Stone Statue
+r(32807),	-- Heavy Stone Statue
+r(32808),	-- Solid Stone Statue
+r(32809),	-- Dense Stone Statue
+r(32810),	-- Primal Stone Statue
+r(34069),	-- Smooth Golden Draenite
+r(34955),	-- Golden Ring of Power
+r(34959),	-- Truesilver Commander's Ring
+r(34960),	-- Glowing Thorium Band
+r(34961),	-- Emerald Lion Ring
+2.4.3.8606
+r(36523),	-- Brilliant Necklace
+r(36524),	-- Heavy Jade Ring
+r(36525),	-- Red Ring of Destruction
+r(36526),	-- Diamond Focus Ring
+r(37818),	-- Bronze Band of Force
+r(38068),	-- Mercurial Adamantite
+r(38175),	-- Bronze Torc
+r(39451),	-- Rigid Azure Moonstone \\ Great Golden Draenite
+r(39452),	-- Rigid Star of Elune \\ Great Dawnstone
+r(39455),	-- Shifting Shadow Draenite \\ Balanced Shadow Draenite
+r(39458),	-- Shifting Shadow Draenite \\ Infused Shadow Draenite
+r(39462),	-- Glinting Nightseye \\ Infused Nightseye
+r(39463),	-- Shifting Nightseye \\ Balanced Nightseye
+r(39710),	-- Brilliant Crimson Spinel \\ Teardrop Crimson Spinel
+r(39712),	-- Delicate Crimson Spinel \\ Bright Crimson Spinel
+r(39717),	-- Sparkling Empyrean Sapphire \\ Lustrous Empyrean Sapphire
+r(39719),	-- Brilliant Crimson Spinel \\ Brilliant Lionseye
+r(39722),	-- Smooth Lionseye \\ Gleaming Lionseye
+r(39723),	-- Subtle Lionseye \\ Thick Lionseye
+r(39725),	-- Rigid Empyrean Sapphire \\ Great Lionseye
+r(39729),	-- Shifting Shadowsong Amethyst \\ Balanced Shadowsong Amethyst
+r(39730),	-- Glinting Shadowsong Amethyst \\ Infused Shadowsong Amethyst
+r(39732),	-- Purified Shadowsong Amethyst \\ Royal Shadowsong Amethyst
+r(39735),	-- Reckless Pyrestone \\ Luminous Pyrestone
+r(40514),	-- Necklace of the Deep
+r(41414),	-- Brilliant Pearl Band
+r(41415),	-- The Black Pearl
+r(41418),	-- Crown of the Sea Witch
+r(41420),	-- Purified Jaggal Pearl
+r(41429),	-- Purified Shadow Pearl
+r(46404),	-- Reckless Noble Topaz
+r(47280),	-- Brilliant Glass
+r(48789),	-- Purified Shadowsong Amethyst

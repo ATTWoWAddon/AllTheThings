@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = {
+			["groups"] = {
 				i(186580, {	-- A Tiny Sinstone (Pepe!)
 					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
-					["g"] = {
+					["groups"] = {
 						i(186567),	-- Memory of Insatiable Hunger
 						i(187105),	-- Memory of the Agonizing Gaze
 						i(186609),	-- Memory of Sinful Hysteria

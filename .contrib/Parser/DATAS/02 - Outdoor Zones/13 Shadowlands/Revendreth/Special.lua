@@ -8,19 +8,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Gather the |cFFFFFFFFSpectral Feed|r, located at |cFFFFFFFF63.75, 61.69|r in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use |cFFFFFFFF/chicken|r on the soul, then use the |cFFFFFFFFSpectral Feed|r from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
 				["coord"] = { 63.18, 42.76, REVENDRETH },
 				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
-				["g"] = {
+				["groups"] = {
 					i(187813),	-- Chicken Soul
 				},
 			})),
 			header(HEADERS.Item, 182614, sharedDataSelf({ ["lockCriteria"] = { 1, "spellID", 339588 }, ["DisablePartySync"] = true }, {	-- Sinrunner Blanchy
-				["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days.  On each day, you must have a specific item.  You can gather all the items in advance.  You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth.  Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
+				["description"] = "Enable quest tracking to see all the steps.\n\nTo get Blanchy's Reins, you must interact with Dead Blanchy once a day for 6 days. On each day, you must have a specific item. You can gather all the items in advance. You will need to visit Revendreth, Westfall, and take a detour to either Ardenweald or Bastion.\n\nBlanchy spawns around |cFFFFFFFF63.1, 43.1|r in Revendreth. Similar to the Friendly Alpaca in Uldum, anyone can interact with Blanchy for a small window, roughly 5 minutes, and then she will despawn for 1 to 2 hours.",
 				["crs"] = { 173468 },	-- Dead Blanchy
 				["coord"] = { 63.1, 43.1, REVENDRETH },
 				["questID"] = 62107,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					header(HEADERS.Item, 182581, {	-- Handful of Oats
-						["description"] = "Day 1: Collect 8 |cFFFFFFFFHandfuls of Oats|r.  They can be found in |cFFFFFFFFSacks of Oats|r in any of the farmland in the northern half of Westfall — Jansen Stead, Furlbrow's Pumpkin Farm, Saldean's Farm, and the Molsen Farm.\n\nThese can likely be found in more locations than are provided.  Check by fences, around the bases of trees, and near carts.  They do not sparkle, so they can be difficult to spot.",
+						["description"] = "Day 1: Collect 8 |cFFFFFFFFHandfuls of Oats|r. They can be found in |cFFFFFFFFSacks of Oats|r in any of the farmland in the northern half of Westfall — Jansen Stead, Furlbrow's Pumpkin Farm, Saldean's Farm, and the Molsen Farm.\n\nThese can likely be found in more locations than are provided. Check by fences, around the bases of trees, and near carts. They do not sparkle, so they can be difficult to spot.",
 						["coords"] = {
 							{ 43.1, 37.3, WESTFALL },
 							{ 44.9, 35.3, WESTFALL },
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["cost"] = { { "i", 182581, 1 }, },	-- 1x Grooming Brush
 					}),
 					header(HEADERS.Item, 182595, {	-- Sturdy Horseshoe
-						["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r.  They can be found scattered around roads in Revendreth.  Unlike the Sacks of Oats, these sparkle.",
+						["description"] = "Day 3: Collect 4 |cFFFFFFFFSturdy Horseshoes|r. They can be found scattered around roads in Revendreth. Unlike the Sacks of Oats, these sparkle.",
 						["sourceQuests"] = { 62042 },	-- Grooming Brush
 						["coords"] = {
 							{ 61.2, 69.4, REVENDRETH },
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			})),
 			o(370469, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Spectral Feed
 				["coord"] = { 63.75, 61.69, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(187811),	-- Spectral Feed
 				},
 			})),

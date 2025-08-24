@@ -3,7 +3,8 @@
 ---------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
-		faction(FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {
+		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 7 } }, {
+			faction(FACTION_GLIMMEROGG_RACER),
 			n(ACHIEVEMENTS, {
 				ach(17741, {	-- Slow and Steady Wins the Race
 					i(205231),	-- Roggy (PET!)
@@ -29,15 +30,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203708),	-- Conch Whistle
 					},
 				}),
 				q(75598, {	-- Snailed It
-					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["g"] = {
+					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
+					["groups"] = {
 						i(205155),	-- Big Slick in the City
 					},
 				}),
@@ -90,8 +91,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(74515),	-- Snail Mail
 				q(74514, {	-- The Slowest Fan Club
-					i(204178),	-- Snailcatcher Net
 					n(201875),	-- Aimless Snail
+					i(204178),	-- Snailcatcher Net
 				}),
 			})),
 			n(QUESTS, sharedData({
@@ -106,19 +107,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}, {
 				q(75662, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205119),	-- Bashful (PET!)
 					},
 				}),
 				q(75707, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205123),	-- Brulee (PET!)
 					},
 				}),
 				q(75706, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),

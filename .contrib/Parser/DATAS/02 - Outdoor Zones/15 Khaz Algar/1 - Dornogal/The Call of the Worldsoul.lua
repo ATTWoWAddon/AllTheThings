@@ -14,10 +14,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
-				["g"] = {
-					i(211297),	-- Fractured Spark of Omens
+				["groups"] = {
+					i(211297, {	-- Fractured Spark of Omens
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_2_0}
+					}),
+					i(230905, {	-- Fractured Spark of Fortunes
+						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0}
+					}),
+					i(231757, {	-- Fractured Spark of Starlight
+						["timeline"] = { ADDED_11_2_0 },
+					}),
 				},
 			},{
+				q(89492, {	-- Dastardly Duos in the Dome!
+					["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" },
+				}),
 				q(82449),	-- The Call of the Worldsoul
 				q(82491),	-- Worldsoul: Ara-Kara, City of Echoes [N]
 				q(82494),	-- Worldsoul: Ara-Kara, City of Echoes [H]
@@ -39,9 +50,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 				q(82453),	-- Worldsoul: Encore!
+				q(89514, {	-- Worldsoul: Horrific Visions Revisited
+					["timeline"] = { ADDED_11_1_5 },
+				}),
+				q(91855, {	-- Worldsoul: K'aresh World Quests
+					["timeline"] = { ADDED_11_2_0 },
+				}),
 				q(82509),	-- Worldsoul: Nerub-ar Palace [LFR]
 				q(82659),	-- Worldsoul: Nerub-ar Palace [N]
 				q(82510),	-- Worldsoul: Nerub-ar Palace [H]
+				q(89502, {	-- Worldsoul: Nightfall
+					["timeline"] = { ADDED_11_1_5 },
+				}),
+				q(91052, {	-- Worldsoul: Overcharged Delves
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 				q(82490),	-- Worldsoul: Priory of the Sacred Flame [N]
 				q(82499),	-- Worldsoul: Priory of the Sacred Flame [H]
 				q(82507),	-- Worldsoul: Priory of the Sacred Flame [M]
@@ -76,7 +99,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82515),	--
 				-- only for low level alts
 				q(84668),	-- when pick up any Worldsoul quest on <80s character // I got this on level 80 Char
-				--q(85395, {["timeline"] = { ADDED_11_1_0 }}),	-- after world soul weekly, could be fractured spark of fortune
 			})),
 		}),
 	}),

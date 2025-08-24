@@ -21,6 +21,8 @@ SERVICE_ENTRANCE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",
+		es = "Entrada de servicio",
+		mx = "Entrada de servicio",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
 		-- #endif
@@ -47,27 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(646, {	-- Stratholme
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 5263,	-- Above and Beyond
-					-- #endif
-					["groups"] = {
-						crit(550, {	-- Balnazzar
-							["_npcs"] = { 10813 },
-						}),
-						-- #if AFTER MOP
-						-- This was not readded into the achievement criteria list until 6.0.3... Double check in MOP.
-						crit(18471, {	-- Lord Aurius Rivendare
-							["_npcs"] = { 45412 },
-						}),
-						-- #elseif BEFORE 4.0.3
-						-- Prior to Cataclysm, Baron Rivendare was the last boss in UD side.
-						crit(18471, {	-- Baron Rivendare
-							["_npcs"] = { 10440 },
-						}),
-						-- #endif
-					},
-				}),
+				ach(646),	-- Stratholme
 				ach(5055, {	-- Stratholme Guild Run
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -80,8 +62,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(44, 44, 15),
 				}),
 				q(5263, {	-- Above and Beyond
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -92,8 +74,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28755, {	-- Annals of the Silver Hand
-					["qg"] = 49856,	-- Lord Raymond George
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
+					["qg"] = 49856,	-- Lord Raymond George
 					["coord"] = { 76.2, 50.9, EASTERN_PLAGUELANDS },
 					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
@@ -123,10 +105,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5125, {	-- Aurius' Reckoning
-					["qg"] = 10917,	-- Aurius
 					["sourceQuest"] = 5122,	-- The Medallion of Faith
-					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
+					["qg"] = 10917,	-- Aurius
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["groups"] = {
 						i(17044, {	-- Will of the Martyr
 							["timeline"] = { REMOVED_4_0_3 },
@@ -147,23 +129,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5861, {	-- Find Myranda
+					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["providers"] = {
 						{ "n", 1855 },	-- Tirion Fordring
 						{ "i", 14872 },	-- Tirion's Gift
 					},
-					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5243, {	-- Houses of the Holy
-					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 					-- #if BEFORE 4.0.3
 					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
 					-- #endif
+					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["lvl"] = 55,
 					["groups"] = {
 						i(13216, {	-- Crown of the Penitent
@@ -179,8 +161,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5944, {	-- In Dreams
-					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
+					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -223,8 +205,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5264, {	-- Lord Maxwell Tyrosus
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5263,	-- Above and Beyond
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -240,8 +222,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5781, {	-- Of Forgotten Memories
-					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5742,	-- Redemption
+					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -257,8 +239,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5845, {	-- Of Lost Honor
-					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5781,	-- Of Forgotten Memories
+					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -286,15 +268,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5846, {	-- Of Love and Family (1/2)
-					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5845,	-- Of Lost Honor
+					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5848, {	-- Of Love and Family (2/2)
-					["qg"] = 11936,	-- Artist Renfray
 					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
+					["qg"] = 11936,	-- Artist Renfray
 					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -327,12 +309,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5742, {	-- Redemption
-					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuests"] = {
 						5543,	-- Blood Tinged Skies
 						5544,	-- Carrion Grubbage
 						5542,	-- Demon Dogs
 					},
+					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -351,18 +333,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5862, {	-- Scarlet Subterfuge
+					["sourceQuest"] = 5861,	-- Find Myranda
 					["providers"] = {
 						{ "n", 11872 },	-- Myranda the Hag
 						{ "i", 14872 },	-- Tirion's Gift
 					},
-					["sourceQuest"] = 5861,	-- Find Myranda
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 				}),
 				q(5213, {	-- The Active Agent
-					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
+					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -396,11 +378,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5265, {	-- The Argent Hold
+					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["providers"] = {
 						{ "n",  11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
 						{ "o", 176317 },	-- The Argent Hold
 					},
-					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -480,8 +462,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5122, {	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
-					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["repeatable"] = true,
 				}),
 				q(5281, {	-- The Restless Souls (1/2)
@@ -491,8 +473,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 55,
 				}),
 				q(5282, {	-- The Restless Souls (2/2)
-					["qg"] = 11140,	-- Egan
 					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
+					["qg"] = 11140,	-- Egan
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -511,8 +493,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5262, {	-- The Truth Comes Crashing Down
-					["provider"] = { "i", 13250 },	-- Head of Balnazzar
 					["sourceQuest"] = 5251,	-- The Archivist
+					["provider"] = { "i", 13250 },	-- Head of Balnazzar
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 				}),
@@ -1280,7 +1262,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["crs"] = { 10812 },	-- Grand Crusader Dathrohan
 						["groups"] = {
 							i(13250),	-- Head of Balnazzar
-							i(14512),	-- Pattern: Truefaith Vestments (RECIPE!)
+							i(14512, {	-- Pattern: Truefaith Vestments (RECIPE!)
+								-- #if TBC
+								-- During TBC this was made exclusively usable by Priests, then that change was reverted with Wrath.
+								["classes"] = { PRIEST },
+								-- #endif
+							}),
 							i(13520),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
 							i(13348),	-- Demonshear
 							-- #if SEASON_OF_DISCOVERY
@@ -1725,7 +1712,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER 4.0.3
 						["creatureID"] = 45412,	-- Lord Aurius Rivendare
 						-- #else
-						["npcID"] = 10440,	-- Baron Rivendare
+						["creatureID"] = 10440,	-- Baron Rivendare
 						-- #endif
 						["groups"] = {
 							i(13251),	-- Head of Baron Rivendare

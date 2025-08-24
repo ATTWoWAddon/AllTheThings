@@ -11,6 +11,8 @@ WARCRAFT_RUMBLE = createHeader({
 	},
 	description = {
 		en = "Promotion for mobile game Warcraft Rumble.",
+		es = "Promoción del juego móvil Warcraft Rumble.",
+		mx = "Promoción del juego para celulares Warcraft Rumble.",
 		cn = "魔兽大作战手游的促销活动。",
 		tw = "手遊《魔獸兵團》的促銷活動",
 	},
@@ -132,8 +134,8 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			["coords"] = {
 				{ 28.6, 41.6, STORMWIND_CITY },
 			},
-			["races"] = ALLIANCE_ONLY,
 			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
 			["groups"] = {
 				i(202163, {	-- Rumble Prize Box
@@ -201,7 +203,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
         }),
         q(73390, {	-- Gain New Look: Whelp Egg
         }),
-        -- Gold Looks
+		-- Gold Looks
         q(73173, {	-- Gain Even Newer Look: Maiev
         }),
         q(73392, {	-- Gain Even Newer Look: Murloc

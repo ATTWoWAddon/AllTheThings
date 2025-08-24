@@ -1,0 +1,20 @@
+createLocalizationString({
+	readable = "[icon:logo_32x32] Author",
+	constant = "PLAYER_RANK_AUTHOR",
+	color = [[~_.DefaultColors.White]],
+	icon = [[~_.asset("logo_32x32")]],
+	export = true,
+	text = {
+		en = "Author",
+		de = "Autor",
+		es = "Autor",
+		mx = "Autor",
+		fr = "Auteur",
+		it = "Autore",
+		pt = "Autor",
+		ru = "Автор",
+		ko = "작가",
+		cn = "作者",
+		tw = "作者",
+	},
+})

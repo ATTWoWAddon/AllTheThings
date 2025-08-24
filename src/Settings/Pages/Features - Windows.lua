@@ -1,7 +1,7 @@
 local _, app = ...;
 if app.IsRetail then return; end
 
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Windows Page
 local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
@@ -20,9 +20,9 @@ local function OnClickForWindowButton(self)
 	HideUIPanel(SettingsPanel);
 	self.Window:Show();
 end
-local function UpdateButtonText(self)
-	local text = self.Window.SettingsName;
-	local data = self.Window.data;
+local function UpdateButtonText(self, window)
+	local text = window.SettingsName;
+	local data = window.data;
 	if data then
 		local icon = data.icon;
 		if icon then text = "|T" .. icon .. ":0|t " .. text; end
@@ -30,12 +30,20 @@ local function UpdateButtonText(self)
 	self:SetText(text);
 end
 local function OnTooltipForWindowButton(self, tooltipInfo)
-	UpdateButtonText(self);
+	local window = self.Window;
+	if window.forceFullDataRefresh and not window.CachedTotalsForSettings then
+		window.CachedTotalsForSettings = true;
+		if IsShiftKeyDown() then
+			window:ForceRebuild();
+		else
+			window:ForceUpdate();
+		end
+	end
+	UpdateButtonText(self, window);
 	tinsert(tooltipInfo, { left = self:GetText() });
 	tinsert(tooltipInfo, { left = " " });
 	
 	-- Assign the Text Label and Tooltip
-	local window = self.Window;
 	local data = window.data;
 	if data then
 		local progressText = app.GetProgressTextForTooltip(data);
@@ -50,6 +58,14 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 			commands = commands .. "\n  /" .. window.Commands[k];
 		end
 		tinsert(tooltipInfo, { left = "Commands: |cffcccccc" .. commands .. "|r" });
+	end
+	if window.forceFullDataRefresh then
+		tinsert(tooltipInfo, { left = " " });
+		tinsert(tooltipInfo, {
+			left = L["UPDATES_PAUSED"],
+			right = L["MAIN_LIST_REQUIRES_REFRESH"],
+			r = 1, g = 0.4, g = 0.4
+		});
 	end
 end
 
@@ -85,10 +101,10 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 			end
 			button.Window = window;
 			button.Suffix = window.Suffix;
-			UpdateButtonText(button);
+			UpdateButtonText(button, window);
 			
 			-- TODO: Preferred new style, once we get the window template designed
-			--settings:CreateOptionsPage("/" .. window.Commands[1], "Windows")
+			--settings:CreateOptionsPage("/" .. window.Commands[1], L.WINDOWS_PAGE)
 		end
 	end
 	local parent = child.separator or child;

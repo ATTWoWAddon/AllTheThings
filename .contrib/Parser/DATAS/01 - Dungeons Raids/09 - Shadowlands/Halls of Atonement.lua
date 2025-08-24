@@ -9,12 +9,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1664,	-- The Nave of Pain
 			1665,	-- Sanctury of Souls
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {}),	-- Do Not Remove
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183380),	-- Memory of a Seismic Reverberation
 						i(182629),	-- Memory of the Crimson Runes
@@ -25,15 +25,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(182681),	-- Vengeful Shock
 						-- Items
 						i(178818),	-- Halkias' Towering Pillars
+						-- #if BEFORE 11.2.0
 						i(178817),	-- Hood of Refracted Shadows
+						-- #endif
 						i(178830),	-- Shardskin Sabatons
-						i(178827),	-- Sin Stained Pendant
+						i(178827),	-- Sin Stained
+						-- #if BEFORE 11.2.0
 						i(178813),	-- Sinlight Shroud
+						-- #endif
 					},
 				}),
 				e(2387, {	-- Echelon
 					["crs"] = { 164185 },	-- Echelon
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183349),	-- Memory of the Deeptremor Stone
 						-- Conduits
@@ -43,7 +47,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(182127),	-- Shake the Foundations
 						i(183184),	-- Stinging Strike
 						-- Items
+						-- #if BEFORE 11.2.0
 						i(178825),	-- Pulsating Stoneheart
+						-- #endif
 						i(178819),	-- Skyterror's Stonehide Leggings
 						i(178815),	-- Soaring Decimator's Hauberk
 						i(178833),	-- Stonefiend Shaper's Mitts
@@ -53,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2411, {	-- High Adjudicator Aleez
 					["crs"] = { 165410 },	-- High Adjudicator Aleez
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183306),	-- Memory of the Righteous Bulwark
 						-- Conduits
@@ -66,13 +72,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(178822),	-- Cord of the Dark Word
 						i(178832),	-- Gloves of Haunting Fixation
 						i(178821),	-- Mantle of Ephemeral Visages
+						-- #if BEFORE 11.2.0
 						i(178828),	-- Nathrian Tabernacle
+						-- #endif
 						i(178826),	-- Sunblood Amethyst
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
 						ach(14370),	-- Halls of Atonement
 						-- Legendaries
 						i(183241),	-- Memory of the Dark Titan
@@ -86,37 +94,100 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						-- Items
 						i(178816),	-- Nathrian Usurper's Mask
 						i(178829),	-- Nathrian Ferula
+						-- #if BEFORE 11.2.0
 						i(178820),	-- Pauldrons of Unleashed Pride
+						-- #endif
 						i(178824),	-- Signet of the False Accuser
 						i(178831),	-- Slippers of Leavened Station
 						i(178823),	-- Waistcord of Dark Devotion
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+			-- #if AFTER 11.2.0
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				e(2406, {	-- Halkias
+					["crs"] = { 165408 },	-- Halkias
+					["groups"] = {
+						i(178817),	-- Hood of Refracted Shadows
+						i(178813),	-- Sinlight Shroud
+					},
+				}),
+				e(2387, {	-- Echelon
+					["crs"] = { 164185 },	-- Echelon
+					["groups"] = {
+						i(178825),	-- Pulsating Stoneheart
+					},
+				}),
+				e(2411, {	-- High Adjudicator Aleez
+					["crs"] = { 165410 },	-- High Adjudicator Aleez
+					["groups"] = {
+						i(178828),	-- Nathrian Tabernacle
+					},
+				}),
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
+						i(178820),	-- Pauldrons of Unleashed Pride
+					},
+				}),
+			}),
+			-- #endif
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				-- #if AFTER 11.2.0
+				e(2406, {	-- Halkias
+					["crs"] = { 165408 },	-- Halkias
+					["groups"] = {
+						i(246276, {	-- Sinlight Shoulderpads
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(246273, {	-- Vest of Refracted Shadows
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				e(2387, {	-- Echelon
+					["crs"] = { 164185 },	-- Echelon
+					["groups"] = {
+						i(246344, {	-- Cursed Stone Idol
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				e(2411, {	-- High Adjudicator Aleez
+					["crs"] = { 165410 },	-- High Adjudicator Aleez
+					["groups"] = {
+						i(246284, {	-- Nathrian Reliquary
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				-- #endif
+				e(2413, {	-- Lord Chamberlain
+					["crs"] = { 164218 },	--	Lord Chamberlain
+					["groups"] = {
 						ach(14410),	-- Heroic: Halls of Atonement
+						i(246286, {	-- Spaulders of Unleashed Pride
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
-					["g"] = {
+					["groups"] = {
 						ach(14567),	-- Picking Up the Pieces
 					},
 				}),
 				e(2387, {	-- Echelon
 					["crs"] = { 164185 },	-- Echelon
-					["g"] = {
+					["groups"] = {
 						ach(14284),	-- Breaking Bad
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
 						ach(14411),	-- Mythic: Halls of Atonement
 						ach(14380),	-- Mythic: Halls of Atonement Guild Run
 						ach(14352),	-- Nobody Puts Denathrius in a Corner

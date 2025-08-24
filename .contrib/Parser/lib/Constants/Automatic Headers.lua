@@ -4,6 +4,7 @@ HEADERS = {
 	Class = "c",
 	Currency = "cu",
 	Faction = "fa",
+	Encounter = "en",
 	Exploration = "e",
 	Global = "_G",
 	Item = "i",
@@ -15,8 +16,8 @@ HEADERS = {
 	Spell = "s",
 	AchCategory = "ac",
 	AchCriteria = "crit",
-	-- Provides name/icon using the GetLFGDungeonInfo API ref: https://wowpedia.fandom.com/wiki/LfgDungeonID
+	-- Provides name/icon using the GetLFGDungeonInfo API ref: https://warcraft.wiki.gg/wiki/LfgDungeonID
 	LFGDungeon = "d",
-	-- Provides name/icon using the GetLFGDungeonInfo API (split by Faction, i.e. 'AAAA.HHHH') ref: https://wowpedia.fandom.com/wiki/LfgDungeonID
+	-- Provides name/icon using the GetLFGDungeonInfo API (split by Faction, i.e. 'AAAA.HHHH') ref: https://warcraft.wiki.gg/wiki/LfgDungeonID
 	LFGDungeonByFaction = "df"
 };

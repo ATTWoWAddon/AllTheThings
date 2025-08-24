@@ -1,0 +1,19 @@
+4.0.1.12911
+r(73318),	-- Jewelcrafting
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl
+
+
+
+
+Missing in Jewelcrafting
+
+4.0.1.12911
+r(73639),	-- Figurine - King of Boars
+r(73640),	-- Figurine - Demon Panther
+r(73641),	-- Figurine - Earthen Guardian
+r(73642),	-- Figurine - Jeweled Serpent
+r(73643),	-- Figurine - Dream Owl

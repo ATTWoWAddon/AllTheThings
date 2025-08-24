@@ -43,7 +43,10 @@ local function SortByTextAndPriority(a, b)
 		return false;
 	end
 end
-local function IsRaidLeader()
+local IsRaidLeader = app.GameBuildVersion >= 50000 and function()
+	---@diagnostic disable-next-line: param-type-mismatch
+	return UnitIsGroupLeader("player");
+end or function()
 	---@diagnostic disable-next-line: param-type-mismatch
 	return UnitIsGroupLeader("player", "raid");
 end

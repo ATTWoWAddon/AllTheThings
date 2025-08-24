@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["skipFill"] = true,
 			}),
 			-- #endif
-			-- #if AFTER 4.0.1.12984
+			-- #if AFTER CATA
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
@@ -134,16 +134,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(7800, {	-- A Donation of Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -176,12 +176,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 12,
 				},
 				q(5647, {	-- A Lack of Fear
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5641,	-- A Lack of Fear [Ironforge]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
@@ -214,12 +214,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(7801, {	-- Additional Runecloth [Darnassus]
-					["qg"] = 14725,	-- Raedon Duskstriker
 					["sourceQuest"] = 7800,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
+					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -243,23 +243,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
+					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["providers"] = {
 						{ "n", 7316 },	-- Sister Aquinne
 						{ "i", 16262 },	-- Sister Aquinne's Note
 					},
-					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["coord"] = { 36.0, 53.4, DARNASSUS },
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5678, {	-- Arcane Feedback [Stormwind City]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 40.0, 80.0, DARNASSUS },
 					["altQuests"] = {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5677,	-- Arcane Feedback [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 40.0, 80.0, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
@@ -338,11 +338,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				})),
 				q(4510, {	-- Calm Before the Storm (2/2)
+					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["providers"] = {
 						{ "n", 7740 },	-- Gracina Spiritmight
 						{ "i", 11843 },	-- Bank Voucher
 					},
-					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -361,8 +361,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5640, {	-- Desperate Prayer
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.6, 80.8, DARNASSUS },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -371,6 +369,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5639,	-- Desperate Prayer [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.6, 80.8, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -386,8 +386,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(2242, {	-- Destiny Calls
-					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
+					["qg"] = 4163,	-- Syurna
 					["coord"] = { 37.0, 21.9, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
@@ -408,6 +408,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
+					["altQuests"] = {
+						5675,	-- Elune's Grace [Ironforge]
+						5673,	-- Elune's Grace [Stormwind City]
+					},
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
 						11406,	-- High Priest Rohan <Priest Trainer>
@@ -417,10 +421,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.2, 81, DARNASSUS },
 						{ 25, 8.2, IRONFORGE },
 						{ 38.8, 26.6, STORMWIND_CITY },
-					},
-					["altQuests"] = {
-						5675,	-- Elune's Grace [Ironforge]
-						5673,	-- Elune's Grace [Stormwind City]
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -438,12 +438,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -459,8 +459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(2260, {	-- Erion's Behest
-					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
+					["qg"] = 4214,	-- Erion Shadewhisper
 					["coord"] = { 34.6, 25.6, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -469,30 +469,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(7671, {	-- Frostsaber Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					-- #else
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 					["sym"] = { { "select", "itemID",
 						18766,
 						18767,
 						18902
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["_drop"] = { "g" },
 				}),
 				q(952, {	-- Grove of the Ancients
+					["sourceQuest"] = 940,	-- Teldrassil
 					["providers"] = {
 						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
 						{ "i", 5390 },	-- Fandral's Message
 					},
-					["sourceQuest"] = 940,	-- Teldrassil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -520,8 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
+					["races"] = { NIGHTELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -529,13 +528,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { NIGHTELF },
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = lvlsquish(10, 10, 10),
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
-					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { NIGHTELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -543,12 +544,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(4493, {	-- March of the Silithid (A)
-					["qg"] = 7740,	-- Gracina Spiritmight
 					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
+					["qg"] = 7740,	-- Gracina Spiritmight
 					["coord"] = { 42, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
@@ -556,8 +556,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(1711, {	-- Mathiel's Armor
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1710,	-- Sunscorched Shells
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -576,24 +576,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 64.4, 22.2, DARNASSUS },
 					-- #endif
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2309, 5 },	-- Embossed Leather Boots
 						{ "i", 2310, 5 },	-- Embossed Leather Cloak
 						{ "i", 4239, 1 },	-- Embossed Leather Gloves
 					},
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
 						i(6710),	-- Pattern: Moonglow Vest (RECIPE!)
 					},
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)
+					["sourceQuest"] = 3764,	-- Un'Goro Soil
 					["providers"] = {
 						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
 						{ "i", 11103 },	-- Seed Voucher
 					},
-					["sourceQuest"] = 3764,	-- Un'Goro Soil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -603,8 +603,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3785, {	-- Morrowgrain Research (2/2)
-					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3781,	-- Morrowgrain Research (1/2)
+					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -615,8 +615,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3803, {	-- Morrowgrain to Darnassus
-					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3785,	-- Morrowgrain Research (2/2)
+					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -638,23 +638,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(7672, {	-- Nightsaber Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					-- #else
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 					["sym"] = { { "select", "itemID",
 						18766,
 						18767,
 						18902
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["_drop"] = { "g" },
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(29314, {	-- Remembering the Ancestors
 					["providers"] = {
@@ -683,8 +683,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if AFTER CATA
 				q(6343, {	-- Return to Nyoma [CATA+] / Return to Nessa
-					["qg"] = 40552,	-- Leora
 					["sourceQuest"] = 6342,	-- An Unexpected Gift [CATA+] / Flight to Auberdine
+					["qg"] = 40552,	-- Leora
 					["coord"] = { 36.5, 47.8, DARNASSUS },
 					["maps"] = { TELDRASSIL },
 					["races"] = { NIGHTELF },
@@ -711,8 +711,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(2520, {	-- Sathrah's Sacrifice
-					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2518,	-- Tears of the Moon
+					["qg"] = 7313,	-- Priestess A'moora
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -750,10 +750,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
-					["qg"] = 211188,	-- Maethra Slagheart
-					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
-					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
+					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PRIEST },
@@ -781,11 +781,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1692, {	-- Smith Mathiel
+					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["providers"] = {
 						{ "n", 4088 },	-- Elanaria
 						{ "i", 6812 },	-- Case of Elunite
 					},
-					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["coord"] = { 57.4, 34.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -811,6 +811,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if ANYCLASSIC
 				q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
+					["altQuests"] = {
+						5629,	-- Returning Home [Teldrassil]
+						5630,	-- Returning Home [Dun Morogh]
+						5628,	-- Returning Home [Elwynn Forest]
+						5633,	-- Returning Home [Ironforge]
+						5631,	-- Returning Home [Stormwind City]
+						5632,	-- Returning Home [Stormwind City]
+						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
+					},
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
 						3600,	-- Laurna Morninglight <Priest Trainer>
@@ -829,15 +838,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.6, 26.8, STORMWIND_CITY },
 						{ 20.8, 50.2, STORMWIND_CITY },
 					},
-					["altQuests"] = {
-						5629,	-- Returning Home [Teldrassil]
-						5630,	-- Returning Home [Dun Morogh]
-						5628,	-- Returning Home [Elwynn Forest]
-						5633,	-- Returning Home [Ironforge]
-						5631,	-- Returning Home [Stormwind City]
-						5632,	-- Returning Home [Stormwind City]
-						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
-					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -854,8 +854,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5627, {	-- Returning Home [Darnassus]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5628,	-- Returning Home [Elwynn Forest]
 						5629,	-- Returning Home [Teldrassil]
@@ -864,6 +862,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -894,8 +894,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(1710, {	-- Sunscorched Shells
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1703,	-- Mathiel
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -914,8 +914,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE CATA
 				q(2518, {	-- Tears of the Moon
-					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
+					["qg"] = 7313,	-- Priestess A'moora
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -934,11 +934,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(942, {	-- The Absent Minded Prospector (4/5)
+					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["providers"] = {
 						{ "n", 2912 },	-- Chief Archaeologist Greywhisker
 						{ "i", 4654 },	-- Mysterious Fossil
 					},
-					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["coord"] = { 31.2, 84.2, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -946,8 +946,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 				}),
 				q(1039, {	-- The Barrens Port
-					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1038,	-- Velinde's Effects
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -974,8 +974,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(1686, {	-- The Shade of Elura
-					["qg"] = 4088,	-- Elanaria
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
+					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.8, 34.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
@@ -1032,7 +1032,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(3764, {	-- Un'Goro Soil
-					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuests"] = {
 						3763,	-- Assisting Arch Druid Staghelm [Darnassus]
 						3790,	-- Assisting Arch Druid Staghelm [Ironforge]
@@ -1041,6 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10520,	-- Assisting Arch Druid Staghelm [The Exodar]
 						-- #endif
 					},
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -1049,8 +1049,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(1038, {	-- Velinde's Effects
-					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1037,	-- Velinde Starsong (Ashenvale)
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1067,7 +1067,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1683, {	-- Vorlus Vilehoof
-					["qg"] = 4088,	-- Elanaria
 					["sourceQuests"] = {
 						1638,	-- A Warrior's Training
 						1684,	-- Elanaria
@@ -1084,6 +1083,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1678,	-- Vejrek
 						--1683,	-- Vorlus Vilehoof
 					},
+					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.3, 34.6, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
@@ -1104,8 +1104,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1693, {	-- Weapons of Elunite
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1692,	-- Smith Mathiel
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -1169,21 +1169,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 83.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2527,    -- Battle Staff
-						2535,    -- War Staff
+						2527,	-- Battle Staff
+						2535,	-- War Staff
 					}},
 				}),
 				n(4172, {	-- Anadyia
 					["coord"] = { 54.6, 83.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2617,    -- Burning Robes
-						2615,    -- Chromatic Robe
-						2613,    -- Double Stitched Robes
-						2612,    -- Plain Robe
-						2614,    -- Robe Of Apprenticeship
-						2616,    -- Shimmering Silk Robes
-						2618,    -- Silver Dress Robes
+						2617,	-- Burning Robes
+						2615,	-- Chromatic Robe
+						2613,	-- Double Stitched Robes
+						2612,	-- Plain Robe
+						2614,	-- Robe Of Apprenticeship
+						2616,	-- Shimmering Silk Robes
+						2618,	-- Silver Dress Robes
 					}},
 				}),
 				n(4203, {	-- Ariyell Skyshadow
@@ -1191,32 +1191,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 					-- all done
-						2025,    -- Bearded Axe
-						15905,    -- Brass Knuckles
-						1198,    -- Claymore
-						2029,    -- Cleaver
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						927,    -- Double Axe
-						15904,    -- Deadly Fist Blades
-						2024,    -- Espadon
-						925,    -- Flail
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						853,    -- Hatchet
-						2028,    -- Hammer
-						2207,    -- Jambiya
-						2209,    -- Kris
-						2507,    -- Laminated Recurve Bow
-						928,    -- Long Staff
-						924,    -- Maul
-						852,    -- Mace
-						854,    -- Quarter Staff
-						3026,    -- Reinforced Bow
-						2026,    -- Rock Hammer
-						2027,    -- Scimitar
-						15903,    -- Slicing Claw
-						1196,    -- Tabar
+						2025,	-- Bearded Axe
+						15905,	-- Brass Knuckles
+						1198,	-- Claymore
+						2029,	-- Cleaver
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						927,	-- Double Axe
+						15904,	-- Deadly Fist Blades
+						2024,	-- Espadon
+						925,	-- Flail
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						853,	-- Hatchet
+						2028,	-- Hammer
+						2207,	-- Jambiya
+						2209,	-- Kris
+						2507,	-- Laminated Recurve Bow
+						928,	-- Long Staff
+						924,	-- Maul
+						852,	-- Mace
+						854,	-- Quarter Staff
+						3026,	-- Reinforced Bow
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+						15903,	-- Slicing Claw
+						1196,	-- Tabar
 					}},
 					["groups"] = {
 						i(15906, {	-- Left-Handed Brass Knuckles
@@ -1255,106 +1255,130 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 74.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2451,    -- Crested Heater Shield
-						1201,    -- Dull Heater Shield
-						2448,    -- Heavy Pavise
-						2446,    -- Kite Shield
-						2445,    -- Large Metal Shield
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						17192,    -- Reinforced Targe
-						17188,    -- Ringed Buckler
-						17186,    -- Small Targe
+						2451,	-- Crested Heater Shield
+						1201,	-- Dull Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						2445,	-- Large Metal Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+						17188,	-- Ringed Buckler
+						17186,	-- Small Targe
 					}},
 					["groups"] = {
 						i(2129),	-- Large Round Shield
 						i(17184),	-- Small Shield
 					},
 				}),
+				n(4216, {	-- Chardryn <Herbalism Supplies>
+					["coord"] = { 49.55, 69.44, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(22250, {	-- Herb Pouch
+							["description"] = "Only select Herbalism Suppliers sells this pouch.",
+							["providers"] = {
+								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
+								{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
+								-- #if AFTER TBC
+								{ "n", 16367},	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+								-- #endif
+								-- #if AFTER CATA
+								{ "n", 46742},	-- Brunda <Herbalism Supplies>
+								-- #else
+								{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+								-- #endif
+							},
+						}),
+					},
+				}),
 				n(4164, {	-- Cylania
 					["coord"] = { 56.8, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						847,    -- Chainmail Armor
-						1845,    -- Chainmail Belt
-						849,    -- Chainmail Boots
-						1846,    -- Chainmail Bracers
-						850,    -- Chainmail Gloves
-						848,    -- Chainmail Pants
-						837,    -- Heavy Weave Armor
-						3589,    -- Heavy Weave Belt
-						3590,    -- Heavy Weave Bracers
-						839,    -- Heavy Weave Gloves
-						838,    -- Heavy Weave Pants
-						840,    -- Heavy Weave Shoes
-						3602,    -- Knitted Belt
-						3603,    -- Knitted Bracers
-						793,    -- Knitted Gloves
-						794,    -- Knitted Pants
-						792,    -- Knitted Sandals
-						795,    -- Knitted Tunic
-						2392,    -- Light Mail Armor
-						2393,    -- Light Mail Belt
-						2395,    -- Light Mail Boots
-						2396,    -- Light Mail Bracers
-						2397,    -- Light Mail Gloves
-						2394,    -- Light Mail Leggings
-						1839,    -- Rough Leather Belt
-						796,    -- Rough Leather Boots
-						1840,    -- Rough Leather Bracers
-						797,    -- Rough Leather Gloves
-						798,    -- Rough Leather Pants
-						799,    -- Rough Leather Vest
-						1843,    -- Tanned Leather Belt
-						843,    -- Tanned Leather Boots
-						1844,    -- Tanned Leather Bracers
-						844,    -- Tanned Leather Gloves
-						846,    -- Tanned Leather Jerkin
-						845,    -- Tanned Leather Pants
+						847,	-- Chainmail Armor
+						1845,	-- Chainmail Belt
+						849,	-- Chainmail Boots
+						1846,	-- Chainmail Bracers
+						850,	-- Chainmail Gloves
+						848,	-- Chainmail Pants
+						837,	-- Heavy Weave Armor
+						3589,	-- Heavy Weave Belt
+						3590,	-- Heavy Weave Bracers
+						839,	-- Heavy Weave Gloves
+						838,	-- Heavy Weave Pants
+						840,	-- Heavy Weave Shoes
+						3602,	-- Knitted Belt
+						3603,	-- Knitted Bracers
+						793,	-- Knitted Gloves
+						794,	-- Knitted Pants
+						792,	-- Knitted Sandals
+						795,	-- Knitted Tunic
+						2392,	-- Light Mail Armor
+						2393,	-- Light Mail Belt
+						2395,	-- Light Mail Boots
+						2396,	-- Light Mail Bracers
+						2397,	-- Light Mail Gloves
+						2394,	-- Light Mail Leggings
+						1839,	-- Rough Leather Belt
+						796,	-- Rough Leather Boots
+						1840,	-- Rough Leather Bracers
+						797,	-- Rough Leather Gloves
+						798,	-- Rough Leather Pants
+						799,	-- Rough Leather Vest
+						1843,	-- Tanned Leather Belt
+						843,	-- Tanned Leather Boots
+						1844,	-- Tanned Leather Bracers
+						844,	-- Tanned Leather Gloves
+						846,	-- Tanned Leather Jerkin
+						845,	-- Tanned Leather Pants
 					}},
 				}),
 				n(4236, {	-- Cyridan
 					["coord"] = { 52.6, 77.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2142,    -- Cuirboulli Belt
-						2143,    -- Cuirboulli Boots
-						2144,    -- Cuirboulli Bracers
-						2145,    -- Cuirboulli Gloves
-						2146,    -- Cuirboulli Pants
-						2141,    -- Cuirboulli Vest
-						236,    -- Cured Leather Armor
-						1849,    -- Cured Leather Belt
-						238,    -- Cured Leather Boots
-						1850,    -- Cured Leather Bracers
-						239,    -- Cured Leather Gloves
-						237,    -- Cured Leather Pants
-						2471,    -- Reinforced Leather Belt
-						2473,    -- Reinforced Leather Boots
-						2474,    -- Reinforced Leather Bracers
-						3893,    -- Reinforced Leather Cap
-						2475,    -- Reinforced Leather Gloves
-						2472,    -- Reinforced Leather Pants
-						2470,    -- Reinforced Leather Vest
-						1839,    -- Rough Leather Belt
-						796,    -- Rough Leather Boots
-						1840,    -- Rough Leather Bracers
-						797,    -- Rough Leather Gloves
-						798,    -- Rough Leather Pants
-						799,    -- Rough Leather Vest
-						2464,    -- Studded Belt
-						2467,    -- Studded Boots
-						2468,    -- Studded Bracers
-						2463,    -- Studded Doublet
-						2469,    -- Studded Gloves
-						3890,    -- Studded Hat
-						2465,    -- Studded Pants
-						1843,    -- Tanned Leather Belt
-						843,    -- Tanned Leather Boots
-						1844,    -- Tanned Leather Bracers
-						844,    -- Tanned Leather Gloves
-						846,    -- Tanned Leather Jerkin
-						845,    -- Tanned Leather Pants
+						2142,	-- Cuirboulli Belt
+						2143,	-- Cuirboulli Boots
+						2144,	-- Cuirboulli Bracers
+						2145,	-- Cuirboulli Gloves
+						2146,	-- Cuirboulli Pants
+						2141,	-- Cuirboulli Vest
+						236,	-- Cured Leather Armor
+						1849,	-- Cured Leather Belt
+						238,	-- Cured Leather Boots
+						1850,	-- Cured Leather Bracers
+						239,	-- Cured Leather Gloves
+						237,	-- Cured Leather Pants
+						2471,	-- Reinforced Leather Belt
+						2473,	-- Reinforced Leather Boots
+						2474,	-- Reinforced Leather Bracers
+						3893,	-- Reinforced Leather Cap
+						2475,	-- Reinforced Leather Gloves
+						2472,	-- Reinforced Leather Pants
+						2470,	-- Reinforced Leather Vest
+						1839,	-- Rough Leather Belt
+						796,	-- Rough Leather Boots
+						1840,	-- Rough Leather Bracers
+						797,	-- Rough Leather Gloves
+						798,	-- Rough Leather Pants
+						799,	-- Rough Leather Vest
+						2464,	-- Studded Belt
+						2467,	-- Studded Boots
+						2468,	-- Studded Bracers
+						2463,	-- Studded Doublet
+						2469,	-- Studded Gloves
+						3890,	-- Studded Hat
+						2465,	-- Studded Pants
+						1843,	-- Tanned Leather Belt
+						843,	-- Tanned Leather Boots
+						1844,	-- Tanned Leather Bracers
+						844,	-- Tanned Leather Gloves
+						846,	-- Tanned Leather Jerkin
+						845,	-- Tanned Leather Pants
 					}},
 					["groups"] = {
 						i(2122),	-- Cracked Leather Belt
@@ -1365,6 +1389,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2127),	-- Cracked Leather Vest
 					},
 				}),
+				n(4180, {	-- Ealyshia Dewwhisper
+					["coord"] = { 57.8, 71.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						2523,	-- Bullova
+						2521,	-- Flamberge
+						2531,	-- Great Axe
+						2525,	-- War Hammer
+						2533,	-- War Maul
+						2529,	-- Zweihander
+					}},
+				}),
 				n(4168, {	-- Elynna <Tailoring Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 60.4, 36.8, DARNASSUS },
@@ -1372,36 +1408,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.6, 21.6, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-					},
+					-- #if AFTER CATA
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					-- #endif
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6275, {	-- Pattern: Greater Adept's Robe
+						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
-						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
+						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
 						-- #endif
-						i(10311, {	-- Pattern: Orange Martial Shirt
+						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
-				}),
-				n(4180, {	-- Ealyshia Dewwhisper
-					["coord"] = { 57.8, 71.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
-						2523,    -- Bullova
-						2521,    -- Flamberge
-						2531,    -- Great Axe
-						2525,    -- War Hammer
-						2533,    -- War Maul
-						2529,    -- Zweihander
-					}},
 				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 					-- #if AFTER CATA
@@ -1411,7 +1435,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
+					["sym"] = {{"sub", "common_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -1426,17 +1450,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						926,    -- Battle Axe
-						2025,    -- Bearded Axe
-						2523,    -- Bullova
-						2029,    -- Cleaver
-						2522,    -- Crescent Axe
-						927,    -- Double Axe
-						2530,    -- Francisca
-						2531,    -- Great Axe
-						853,    -- Hatchet
-						12249,    -- Merciless Axe
-						1196,    -- Tabar
+						926,	-- Battle Axe
+						2025,	-- Bearded Axe
+						2523,	-- Bullova
+						2029,	-- Cleaver
+						2522,	-- Crescent Axe
+						927,	-- Double Axe
+						2530,	-- Francisca
+						2531,	-- Great Axe
+						853,	-- Hatchet
+						12249,	-- Merciless Axe
+						1196,	-- Tabar
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -1444,49 +1468,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(52637, {	-- Hugo Letner <Engineering Supplies>
+					["coord"] = { 50.0, 32.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+				n(6735, {	-- Innkeeper Saelienne <Innkeeper>
+					-- #if AFTER CATA
+					["coord"] = { 62.54, 32.8, DARNASSUS },	-- Craftsmen's Terrace
+					-- #else
+					["coord"] = { 67.2, 15.8, DARNASSUS },	-- Craftsmen's Terrace
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
 				n(4231, {	-- Kieran <Weapon Merchant>
 					["coord"] = { 61.0, 63.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						1194,    -- Bastard Sword
-						2025,    -- Bearded Axe
-						2479,    -- Broad Axe
-						1198,    -- Claymore
-						2029,    -- Cleaver
-						2130,    -- Club
-						2492,    -- Cudgel
-						851,    -- Cutlass
-						2139,    -- Dirk
-						2024,    -- Espadon
-						1197,    -- Giant Mace
-						2488,    -- Gladius
-						2030,    -- Gnarled Staff
-						2134,    -- Hand Axe
-						2028,    -- Hammer
-						853,    -- Hatchet
-						2207,    -- Jambiya
-						2491,    -- Large Axe
-						2480,    -- Large Club
-						852,    -- Mace
-						2208,    -- Poniard
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-						2027,    -- Scimitar
-						2131,    -- Shortsword
-						2132,    -- Short Staff
-						2494,    -- Stiletto
-						1196,    -- Tabar
-						2490,    -- Tomahawk
-						2495,    -- Walking Stick
-						2493,    -- Wooden Mallet
+						1194,	-- Bastard Sword
+						2025,	-- Bearded Axe
+						2479,	-- Broad Axe
+						1198,	-- Claymore
+						2029,	-- Cleaver
+						2130,	-- Club
+						2492,	-- Cudgel
+						851,	-- Cutlass
+						2139,	-- Dirk
+						2024,	-- Espadon
+						1197,	-- Giant Mace
+						2488,	-- Gladius
+						2030,	-- Gnarled Staff
+						2134,	-- Hand Axe
+						2028,	-- Hammer
+						853,	-- Hatchet
+						2207,	-- Jambiya
+						2491,	-- Large Axe
+						2480,	-- Large Club
+						852,	-- Mace
+						2208,	-- Poniard
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+						2131,	-- Shortsword
+						2132,	-- Short Staff
+						2494,	-- Stiletto
+						1196,	-- Tabar
+						2490,	-- Tomahawk
+						2495,	-- Walking Stick
+						2493,	-- Wooden Mallet
 					}},
 				}),
 				n(3561, {	-- Kyrai
 					["coord"] = { 38.8, 35.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(4173, {	-- Landria <Bow Merchant>
 					-- #if AFTER CATA
@@ -1496,8 +1535,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3027,    -- Heavy Recurve Bow
-						3026,    -- Reinforced Bow
+						3027,	-- Heavy Recurve Bow
+						3026,	-- Reinforced Bow
 					}},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -1587,55 +1626,55 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.6, 75.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2419,    -- Augmented Chain Belt
-						2420,    -- Augmented Chain Boots
-						2421,    -- Augmented Chain Bracers
-						2422,    -- Augmented Chain Gloves
-						3891,    -- Augmented Chain Helm
-						2418,    -- Augmented Chain Leggings
-						2417,    -- Augmented Chain Vest
-						2424,    -- Brigandine Belt
-						2426,    -- Brigandine Boots
-						2427,    -- Brigandine Bracers
-						2428,    -- Brigandine Gloves
-						3894,    -- Brigandine Helm
-						2425,    -- Brigandine Leggings
-						2423,    -- Brigandine Vest
-						847,    -- Chainmail Armor
-						1845,    -- Chainmail Belt
-						849,    -- Chainmail Boots
-						1846,    -- Chainmail Bracers
-						850,    -- Chainmail Gloves
-						848,    -- Chainmail Pants
-						2451,    -- Crested Heater Shield
-						2448,    -- Heavy Pavise
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						2392,    -- Light Mail Armor
-						2393,    -- Light Mail Belt
-						2395,    -- Light Mail Boots
-						2396,    -- Light Mail Bracers
-						2397,    -- Light Mail Gloves
-						2394,    -- Light Mail Leggings
-						2149,    -- Polished Scale Boots
-						2150,    -- Polished Scale Bracers
-						2151,    -- Polished Scale Gloves
-						2152,    -- Polished Scale Leggings
-						2153,    -- Polished Scale Vest
-						8094,    -- Platemail Armor
-						8088,    -- Platemail Belt
-						8089,    -- Platemail Boots
-						8090,    -- Platemail Bracers
-						8091,    -- Platemail Gloves
-						8092,    -- Platemail Helm
-						8093,    -- Platemail Leggings
-						2148,    -- Polished Scale Belt
-						1853,    -- Scalemail Belt
-						287,    -- Scalemail Boots
-						1852,    -- Scalemail Bracers
-						718,    -- Scalemail Gloves
-						286,    -- Scalemail Pants
-						285,    -- Scalemail Vest
+						2419,	-- Augmented Chain Belt
+						2420,	-- Augmented Chain Boots
+						2421,	-- Augmented Chain Bracers
+						2422,	-- Augmented Chain Gloves
+						3891,	-- Augmented Chain Helm
+						2418,	-- Augmented Chain Leggings
+						2417,	-- Augmented Chain Vest
+						2424,	-- Brigandine Belt
+						2426,	-- Brigandine Boots
+						2427,	-- Brigandine Bracers
+						2428,	-- Brigandine Gloves
+						3894,	-- Brigandine Helm
+						2425,	-- Brigandine Leggings
+						2423,	-- Brigandine Vest
+						847,	-- Chainmail Armor
+						1845,	-- Chainmail Belt
+						849,	-- Chainmail Boots
+						1846,	-- Chainmail Bracers
+						850,	-- Chainmail Gloves
+						848,	-- Chainmail Pants
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						2392,	-- Light Mail Armor
+						2393,	-- Light Mail Belt
+						2395,	-- Light Mail Boots
+						2396,	-- Light Mail Bracers
+						2397,	-- Light Mail Gloves
+						2394,	-- Light Mail Leggings
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						8094,	-- Platemail Armor
+						8088,	-- Platemail Belt
+						8089,	-- Platemail Boots
+						8090,	-- Platemail Bracers
+						8091,	-- Platemail Gloves
+						8092,	-- Platemail Helm
+						8093,	-- Platemail Leggings
+						2148,	-- Polished Scale Belt
+						1853,	-- Scalemail Belt
+						287,	-- Scalemail Boots
+						1852,	-- Scalemail Bracers
+						718,	-- Scalemail Gloves
+						286,	-- Scalemail Pants
+						285,	-- Scalemail Vest
 					}},
 					["groups"] = {
 						i(2380),	-- Tarnished Chain Belt
@@ -1651,19 +1690,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 					-- added all
-						2520,    -- Broadsword
-						1198,    -- Claymore
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						2024,    -- Espadon
-						2528,    -- Falchion
-						2207,    -- Jambiya
-						2209,    -- Kris
-						923,    -- Longsword
-						2526,    -- Main Gauche
-						2208,    -- Poniad
-						2534,    -- Rondel
-						2027,    -- Scimitar
+						2520,	-- Broadsword
+						1198,	-- Claymore
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						2024,	-- Espadon
+						2528,	-- Falchion
+						2207,	-- Jambiya
+						2209,	-- Kris
+						923,	-- Longsword
+						2526,	-- Main Gauche
+						2208,	-- Poniad
+						2534,	-- Rondel
+						2027,	-- Scimitar
 					}},
 				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
@@ -1692,6 +1731,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				n(4233, {	-- Mythidan
+					["coord"] = { 60.4, 63.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						925,	-- Flail
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						928,	-- Long Staff
+						852,	-- Mace
+						924,	-- Maul
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+					}},
+				}),
 				n(4229, {	-- Mythrin'dir <Trade Supplies> [TBC+] / Mythrin'dir <General Trade Supplier>
 					-- #if AFTER CATA
 					["coord"] = { 58.2, 35.0, DARNASSUS },
@@ -1700,11 +1754,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						-- #if AFTER TBC
 						i(20854, {	-- Design: Amulet of the Moon
 							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
 						}),
-						-- #endif
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection
 							["isLimited"] = true,
 						}),
@@ -1712,21 +1765,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 					},
-				}),
-				n(4233, {	-- Mythidan
-					["coord"] = { 60.4, 63.4, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{"select","itemID",
-						925,    -- Flail
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						2028,    -- Hammer
-						928,    -- Long Staff
-						852,    -- Mace
-						924,    -- Maul
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-					}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
@@ -1746,6 +1784,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
+				n(52643, {	-- Rissa Halding <Mining Supplies>
+					["coord"] = { 50.25, 32.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
+					["timeline"] = { ADDED_4_0_1 },
+				}),
 				n(4225, {	-- Saenorion <Leatherworking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 60.0, 37.2, DARNASSUS },
@@ -1753,9 +1797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.7, 22.3, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3366},	-- Tamar <Leatherworking Supplies>
-					},
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
 					["groups"] = {
 						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 							["isLimited"] = true,
@@ -1790,9 +1832,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 29.8, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
-					},
+					["sym"] = {{ "sub", "common_recipes_vendor", 50480 }},	-- Isabel Jones <Jewelcrafting Supplies>
 				}),
 				n(4235, {	-- Turian <Thrown Weapons Merchant>
 					-- #if AFTER CATA
@@ -1833,17 +1873,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 14.7, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
 						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						{ "select","itemID",
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #endif
+							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						},
 					},
 				}),
 				n(4175, {	-- Vinasia <Cloth Armor Merchant>
@@ -1854,44 +1896,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2435,    -- Embroidered Armor
-						3587,    -- Embroidered Belt
-						2438,    -- Embroidered Boots
-						3588,    -- Embroidered Bracers
-						2440,    -- Embroidered Gloves
-						3892,    -- Embroidered Hat
-						2437,    -- Embroidered Pants
-						837,    -- Heavy Weave Armor
-						3589,    -- Heavy Weave Belt
-						3590,    -- Heavy Weave Bracers
-						839,    -- Heavy Weave Gloves
-						838,    -- Heavy Weave Pants
-						840,    -- Heavy Weave Shoes
-						3602,    -- Knitted Belt
-						3603,    -- Knitted Bracers
-						793,    -- Knitted Gloves
-						794,    -- Knitted Pants
-						792,    -- Knitted Sandals
-						795,    -- Knitted Tunic
-						2160,    -- Padded Armor
-						3591,    -- Padded Belt
-						2156,    -- Padded Boots
-						3592,    -- Padded Bracers
-						2158,    -- Padded Gloves
-						2159,    -- Padded Pants
-						3593,    -- Russet Belt
-						2432,    -- Russet Boots
-						3594,    -- Russet Bracers
-						2434,    -- Russet Gloves
-						3889,    -- Russet Hat
-						2431,    -- Russet Pants
-						2429,    -- Russet Vest
-						3597,    -- Thick Cloth Belt
-						3598,    -- Thick Cloth Bracers
-						203,    -- Thick Cloth Gloves
-						201,    -- Thick Cloth Pants
-						202,    -- Thick Cloth Shoes
-						200,    -- Thick Cloth Vest
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						837,	-- Heavy Weave Armor
+						3589,	-- Heavy Weave Belt
+						3590,	-- Heavy Weave Bracers
+						839,	-- Heavy Weave Gloves
+						838,	-- Heavy Weave Pants
+						840,	-- Heavy Weave Shoes
+						3602,	-- Knitted Belt
+						3603,	-- Knitted Bracers
+						793,	-- Knitted Gloves
+						794,	-- Knitted Pants
+						792,	-- Knitted Sandals
+						795,	-- Knitted Tunic
+						2160,	-- Padded Armor
+						3591,	-- Padded Belt
+						2156,	-- Padded Boots
+						3592,	-- Padded Bracers
+						2158,	-- Padded Gloves
+						2159,	-- Padded Pants
+						3593,	-- Russet Belt
+						2432,	-- Russet Boots
+						3594,	-- Russet Bracers
+						2434,	-- Russet Gloves
+						3889,	-- Russet Hat
+						2431,	-- Russet Pants
+						2429,	-- Russet Vest
+						3597,	-- Thick Cloth Belt
+						3598,	-- Thick Cloth Bracers
+						203,	-- Thick Cloth Gloves
+						201,	-- Thick Cloth Pants
+						202,	-- Thick Cloth Shoes
+						200,	-- Thick Cloth Vest
 					}},
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings

@@ -14,11 +14,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 			n(QUESTS, {
 				q(30103, {	-- To Wyrmrest!
 					["sourceQuest"] = 30102,	-- The Hour of Twilight
-					["providers"] = {
-						{ "n", 54548 },	-- Thrall (4 versions, all different areas of the dungeon)
-						{ "n", 54634 },
-						{ "n", 54972 },
-						{ "n", 55779 },
+					["qgs"] = {
+						54548,	-- Thrall (4 versions, all different areas of the dungeon)
+						54634,
+						54972,
+						55779,
 					},
 					["groups"] = {
 						i(72858),	-- Safeguard Gloves

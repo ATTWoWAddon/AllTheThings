@@ -1,0 +1,88 @@
+Name_lang,ID,Parent,Ui_order
+Estatísticas,1,-1,1
+"Jogador x Jogador",21,1,10
+"Proezas Memoráveis",81,-1,11
+Geral,92,-1,2
+"Jogador x Jogador",95,-1,6
+Missões,96,-1,4
+Exploração,97,-1,5
+Mortes,122,1,4
+Arenas,123,122,1
+"Campos de Batalha",124,122,2
+Masmorras,125,122,3
+Mundo,126,122,4
+Ressurreição,127,122,5
+Abates,128,1,3
+Personagem,130,1,1
+Social,131,1,9
+Perícias,132,1,7
+Missões,133,1,5
+Viagem,134,1,8
+Criaturas,135,128,1
+"Jogadores Abatidos Honrosamente",136,128,2
+"Golpes Fatais",137,128,3
+Riqueza,140,130,1
+Combate,141,1,2
+Consumíveis,145,130,2
+Reputação,147,130,3
+"Arenas Ranqueadas",152,21,1
+"Campos de Batalha",153,21,2
+Mundo,154,21,3
+"Eventos Mundiais",155,-1,10
+"Véu de Inverno",156,155,9
+Noturnália,158,155,7
+Jardinova,159,155,3
+"Festival da Lua",160,155,1
+Solstício,161,155,5
+CervaFest,162,155,6
+"A Semana das Crianças",163,155,4
+Arena,165,95,1
+"Masmorras e Raides",168,-1,7
+Profissões,169,-1,8
+Culinária,170,169,1
+Pesca,171,169,2
+"Primeiros Socorros",172,169,3
+Profissões,173,132,2
+"Profissões secundárias",178,132,1
+"O Amor Está no Ar",187,155,2
+Equipamento,191,130,4
+Reputação,201,-1,9
+"Reinos do Leste",14777,97,1
+Kalimdor,14778,97,2
+Terralém,14779,97,3
+Nortúndria,14780,97,4
+"Vale Alterac",14801,95,2
+"Bacia Arathi",14802,95,3
+"Olho da Tormenta",14803,95,4
+"Ravina Brado Guerreiro",14804,95,5
+"The Burning Crusade",14805,168,2
+"Masmorra de Wrath of the Lich King",14806,168,3
+"Masmorras e Raides",14807,1,6
+Clássico,14808,168,1
+Clássico,14821,14807,1
+"The Burning Crusade",14822,14807,2
+"Wrath of the Lich King",14823,14807,3
+Clássico,14861,96,1
+"The Burning Crusade",14862,96,2
+"Wrath of the Lich King",14863,96,3
+Clássico,14864,201,1
+"The Burning Crusade",14865,201,2
+"Wrath of the Lich King",14866,201,3
+"Baía dos Ancestrais",14881,95,6
+Invérnia,14901,95,7
+"Lich Rei heroico",14921,168,4
+"Raide de 10 jogadores do Lich Rei",14922,168,5
+"Raide de 25 jogadores do Lich Rei",14923,168,6
+"Torneio Argênteo",14941,155,10
+"Raide de 10 jogadores dos Segredos de Ulduar",14961,168,7
+"Raide de 25 jogadores dos Segredos de Ulduar",14962,168,8
+"Segredos de Ulduar",14963,14807,4
+"Festa da Fartura",14981,155,8
+"Raide de 10 jogadores do Chamado da Cruzada",15001,168,9
+"Raide de 25 jogadores do Chamado da Cruzada",15002,168,10
+"Ilha da Conquista",15003,95,8
+"O Chamado da Cruzada",15021,14807,5
+"Raide de 10 jogadores da Queda do Lich Rei",15041,168,11
+"Raide de 25 jogadores da Queda do Lich Rei",15042,168,12
+"A Queda do Lich Rei",15062,14807,6
+BCC,15452,-1,3

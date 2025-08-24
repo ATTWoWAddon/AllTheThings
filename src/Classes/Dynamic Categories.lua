@@ -32,8 +32,10 @@ local onUpdateForDynamicCategory = function(data)
 		--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
 		local parent, total = data.parent, data.total;
 		if parent and total then
-			parent.progress = parent.progress + data.progress;
-			parent.total = parent.total + total;
+			if not data.sourceIgnored then
+				parent.progress = parent.progress + data.progress;
+				parent.total = parent.total + total;
+			end
 			data.visible = app.GroupVisibilityFilter(data);
 		else
 			data.visible = true;
@@ -46,14 +48,14 @@ end
 app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 	["dynamicWindow"] = function(t)
 		local window = app:GetWindow(t.suffix);
-		if window then return window; end
+		if window then t.dynamicWindow = window; return window; end
+		return app.EmptyTable;
 	end,
 	["dynamicWindowData"] = function(t)
-		local window = app:GetWindow(t.suffix);
-		if window and window.data then
-			return window.data;
-		end
-		return app.EmptyTable;
+		return t.dynamicWindow.data or app.EmptyTable;
+	end,
+	["IgnoreBuildRequests"] = function(t)
+		return true;
 	end,
 	["text"] = function(t)
 		return t.dynamicWindowData.text or ("Dynamic Category: " .. t.suffix);

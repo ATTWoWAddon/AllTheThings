@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				16343,	-- Vault of the Incarnates
 				17543,	-- You Know How to Reach Me
 			}},
-			["g"] = {
+			["groups"] = {
 				i(210142),	-- Taivan (MOUNT!)
 			},
 		})),
@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 				19479,	-- Wake Me Up
 			}},
-			["g"] = {
+			["groups"] = {
 				i(192751),	-- Stormtouched Bruffalon (MOUNT!)
 			},
 		})),
@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				15984,	-- Elite: Dragonflight Season 1
 			}},
 			["groups"] = {
-				i(202047, {	-- Gleaming Incarnate Thunderstone
+				i(202047, {	-- Gleaming Incarnate Thunderstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
@@ -379,7 +379,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17844,	-- Dragonflight Keystone Master: Season Two
 				17798,	-- Challenger II: Dragonflight Season 2
 			}},
-			["g"] = {
+			["groups"] = {
 				i(204843),	-- Draconic Mark of Mastery
 			},
 		})),
@@ -390,8 +390,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17845,	-- Dragonflight Keystone Hero: Season Two
 				17831,	-- Elite: Dragonflight Season 2
 			}},
-			["g"] = {
-				i(205878, {	-- Obsidian Aspectral Earthstone
+			["groups"] = {
+				i(205878, {	-- Obsidian Aspectral Earthstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
@@ -720,7 +720,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19011,	-- Dragonflight Keystone Master: Season Three
 				19160,	-- Challenger II: Dragonflight Season 3
 			}},
-			["g"] = {
+			["groups"] = {
 				i(210944),	-- Emerald Mark of Mastery
 			},
 		})),
@@ -731,8 +731,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19012,	-- Dragonflight Keystone Hero: Season Three
 				19090,	-- Elite: Dragonflight Season 3
 			}},
-			["g"] = {
-				i(210468, {	-- Emerald Blossom Dreamstone
+			["groups"] = {
+				i(210468, {	-- Emerald Blossom Dreamstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
@@ -1051,7 +1051,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19568,	-- Heroic: Awakened Shadows
 				19565,	-- Heroic: Awakened Storms
 			}},
-			["g"] = {
+			["groups"] = {
 				i(217410),	-- Awakened Mark of Mastery
 			},
 		})),
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 			}},
 			["groups"] = {
-				i(208551, {	-- Ambrosial Sporestone
+				i(208551, {	-- Ambrosial Sporestone (CI!)
 					filter(CLOTH, {
 						i(207927,{["bonusID"] = 6894,}),	-- Crown of the Infinite Lord
 						i(204786,{["bonusID"] = 6895,}),	-- Suffused Cowl
@@ -1212,7 +1212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(17977, { ["timeline"] = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Try To Fly!
 		ach(17830, {	-- Stones Can't Fly!
 			["timeline"] = { REMOVED_TWW_LAUNCH },
-			["g"] = {
+			["groups"] = {
 				i(204195, {	-- Drake's Shadowflame Crest
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}),
@@ -1226,12 +1226,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 	}),
 })));
-
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
--- 	n(ACHIEVEMENTS, {
--- 		q(72248),	-- Triggered when using 'Gleaming Incarnate Thunderstone' (itemID 202047) (spellID 396597)
--- 		q(75968, {["timeline"] = {ADDED_10_1_0}}),	-- Triggered when using 'Obsidian Aspectral Earthstone' (itemID 205878) (spellID 410792)
--- 		q(77678, {["timeline"] = {ADDED_10_1_7}}),	-- Triggered when using 'Ambrosial Sporestone' (itemID 208551) (spellID 420046)
--- 		q(78422, {["timeline"] = {ADDED_10_2_0}}),	-- Triggered when using 'Emerald Blossom Dreamstone' (itemID 210468) (spellID 425847)
--- 	}),
--- })));

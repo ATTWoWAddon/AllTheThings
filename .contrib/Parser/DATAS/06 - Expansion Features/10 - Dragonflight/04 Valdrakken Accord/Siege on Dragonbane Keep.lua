@@ -14,7 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			["questID"] = 70866,
 			["isWeekly"] = true,
 			["maps"] = { THE_WAKING_SHORES },
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(16412),	-- Siege on Dragonbane Keep: Chiseled Record
 					ach(16411),	-- Siege on Dragonbane Keep: Home Sweet Home
@@ -40,21 +40,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				n(TREASURES, {
-					o(376580, {	-- Djaradin Cache
-						["coords"] = {
-							{ 24.3, 69.5, THE_WAKING_SHORES },
-							{ 69.9, 45.3, THE_WAKING_SHORES },
-							{ 71.3, 46.8, THE_WAKING_SHORES },
-							{ 65.8, 35.1, THE_WAKING_SHORES },
-							{ 63.2, 34.6, THE_WAKING_SHORES },
-						},
-						["g"] = {
-							i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
-						},
-					}),
 					o(381357, {	-- Stone Tablet
 						["coord"] = { 27.8, 68.4, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							crit(55264, {	-- Complaint to Scalepiercer
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),
@@ -62,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					o(381358, {	-- Stone Tablet
 						["coord"] = { 28.8, 72.5, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							crit(55266, {	-- Wyrmeater's Recipe
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),
@@ -70,7 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					o(381359, {	-- Stone Tablet
 						["coord"] = { 24.1, 69.2, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							crit(55265, {	-- The Grand Flame's Journal
 								["achievementID"] = 16412,	-- Siege on Dragonbane Keep: Chiseled Record
 							}),

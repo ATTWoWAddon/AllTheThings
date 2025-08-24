@@ -22,7 +22,7 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		-- #endif
 		["rank"] = 2,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Leatherworking
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = { ADDED_8_0_1_LAUNCH }})),	-- Leatherworking
 	r(330180, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
 	r(330181, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
 	r(330183, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
@@ -77,14 +77,14 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		r(3817),	-- Cured Medium Hide
 		r(3780),	-- Heavy Armor Kit
 		r(20649),	-- Heavy Leather
-		r(9194, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Leather Ammo Pouch
-		r(9193, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Quiver
+		r(9194, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Leather Ammo Pouch
+		r(9193, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Quiver
 		r(2152),	-- Light Armor Kit
 		r(2881),	-- Light Leather
-		r(9060, {["timeline"] = {REMOVED_4_0_1}}),	-- Light Leather Quiver
+		r(9060, {["timeline"] = { REMOVED_4_0_1 }}),	-- Light Leather Quiver
 		r(2165),	-- Medium Armor Kit
 		r(20648),	-- Medium Leather
-		r(9062, {["timeline"] = {REMOVED_4_0_1}}),	-- Small Leather Ammo Pouch
+		r(9062, {["timeline"] = { REMOVED_4_0_1 }}),	-- Small Leather Ammo Pouch
 	}),
 };
 EXPERT_ARTISAN_LEATHERWORKING = {
@@ -157,12 +157,12 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(3818),	-- Cured Heavy Hide
 		r(19047),	-- Cured Rugged Hide
 		r(10482),	-- Cured Thick Hide
-		r(14930, {["timeline"] = {REMOVED_4_0_1}}),	-- Quickdraw Quiver
+		r(14930, {["timeline"] = { REMOVED_4_0_1 }}),	-- Quickdraw Quiver
 		r(19058),	-- Rugged Armor Kit
 		r(22331),	-- Rugged Leather
 		r(10487),	-- Thick Armor Kit
 		r(20650),	-- Thick Leather
-		r(14932, {["timeline"] = {REMOVED_4_0_1}}),	-- Thick Leather Ammo Pouch
+		r(14932, {["timeline"] = { REMOVED_4_0_1 }}),	-- Thick Leather Ammo Pouch
 	}),
 };
 CLASSIC_DRAGONSCALE = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
@@ -566,6 +566,10 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 	r(330199, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
 	r(330200, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
+		-- #if ANYCLASSIC
+		r(1216335, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Fur Cloak
+		r(1216336, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Hide Cloak
+		-- #endif
 		r(78438),	-- Cloak of Beasts
 		r(78439),	-- Cloak of War
 		r(78428),	-- Darkbrand Chestguard
@@ -766,7 +770,7 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = applyclassicphase(CATA_PHASE_ONE, shar
 	-- #endif
 	heavysavageleather(10, i(52980)),	-- Pristine Hide
 }));
-MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110423, {	-- Leatherworking (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -802,6 +806,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124580),	-- Stormscale Shoulders
 	}),
 	filter(MISC, {
+		r(124127),	-- Angerhide Leg Armor
 		r(124126),	-- Brutal Leg Armor
 		r(124569, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 1]
 		r(124566, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 2]
@@ -814,6 +819,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124568, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 1]
 		r(124565, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 2]
 		r(124563),	-- Heavy Leg Reinforcements [Rank 3]
+		r(124128),	-- Ironscale Leg Armor
 		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
 		r(124627),	-- Mist-Touched Leather
 		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
@@ -822,10 +828,11 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(163220, {["timeline"] = {ADDED_6_0_2}}),	-- Prismatic Scale
 		r(124628),	-- Sha Armor Kit
 		r(124124),	-- Sha-Touched Leg Armor
+		r(124129),	-- Shadowleather Leg Armor
 		r(124125),	-- Toughened Leg Armor
 	}),
 }));
-COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_LEATHERWORKING_RECIPES = sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(86240),	-- Pattern: Contender's Dragonscale Belt (RECIPE!)
 	i(86241),	-- Pattern: Contender's Dragonscale Boots (RECIPE!)
 	i(86242),	-- Pattern: Contender's Dragonscale Bracers (RECIPE!)
@@ -858,10 +865,10 @@ COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData(
 	i(86269),	-- Pattern: Contender's Wyrmhide Helm (RECIPE!)
 	i(86270),	-- Pattern: Contender's Wyrmhide Leggings (RECIPE!)
 	i(86271),	-- Pattern: Contender's Wyrmhide Shoulders (RECIPE!)
-}));
+});
 DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Leaterworking questline that can drop from any Draenor mob.",
-	["g"] = {
+	["groups"] = {
 		r(158752, {	-- Leatherworking (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -1139,7 +1146,7 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 		r(294826),	-- Notorious Combatant's Bow [Rank 1]
 	}),
 }));
-SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_LEATHERWORKING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
 		r(309213, {	-- Boneshatter Armguards [Rank 1]

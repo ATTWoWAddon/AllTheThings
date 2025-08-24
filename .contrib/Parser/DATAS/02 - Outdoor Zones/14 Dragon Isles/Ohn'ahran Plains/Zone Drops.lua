@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			i(201439, {	-- Renewed Dream
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
-				["g"] = {
+				["groups"] = {
 					i(201469),	-- Emerald Green Apple
 				},
 			}),

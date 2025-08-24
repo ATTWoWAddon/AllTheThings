@@ -1,0 +1,391 @@
+1.14.0.39802
+s(146735)/i(2101),	-- t Quiver \\ Light Quiver
+s(146736)/i(2662),	-- ly's Quiver \\ Ribbly's Quiver
+s(146737)/i(3573),	-- ing Quiver \\ Hunting Quiver
+s(146738)/i(3605),	-- er of the Night Watch \\ Quiver of the Night Watch
+s(146739)/i(5439),	-- l Quiver \\ Small Quiver
+s(146740)/i(7278),	-- t Leather Quiver \\ Light Leather Quiver
+s(146741)/i(7371),	-- y Quiver \\ Heavy Quiver
+s(146742)/i(8217),	-- kdraw Quiver \\ Quickdraw Quiver
+s(146743)/i(11362),	-- um Quiver \\ Medium Quiver
+s(146744)/i(18714),	-- ent Sinew Wrapped Lamina \\ Ancient Sinew Wrapped Lamina
+s(146745)/i(19319),	-- y Hide Quiver \\ Harpy Hide Quiver
+s(156043)/i(38),	-- uit's Shirt \\ Recruit's Shirt
+s(156048)/i(45),	-- re's Shirt \\ Squire's Shirt
+s(156089)/i(285),	-- email Vest \\ Scalemail Vest
+s(156090)/i(286),	-- email Pants \\ Scalemail Pants
+s(156091)/i(287),	-- email Boots \\ Scalemail Boots
+s(156096)/i(718),	-- email Gloves \\ Scalemail Gloves
+s(156141)/i(847),	-- nmail Armor \\ Chainmail Armor
+s(156142)/i(848),	-- nmail Pants \\ Chainmail Pants
+s(156143)/i(849),	-- nmail Boots \\ Chainmail Boots
+s(156144)/i(850),	-- nmail Gloves \\ Chainmail Gloves
+s(156171)/i(905),	-- Brown Leather Shoulderpads (Test)
+s(156172)/i(906),	-- Tan Leather Shoulderpads (Test)
+s(156173)/i(907),	-- Black Mail Shoulderpads of might (Test)
+s(156174)/i(908),	-- Plate Shoulderpad (Test)
+s(156175)/i(909),	-- Silver Mail Shoulderpads (Test)
+s(156210)/i(1162),	-- Pirates Patch (Test)
+s(156211)/i(1163),	-- Dwarven Explorer's Monocle (Test)
+s(156225)/i(1200),	-- e Wooden Shield \\ Large Wooden Shield
+s(156239)/i(1254),	-- Lesser Firestone (DEPRECATED) \\ Lesser Firestone
+s(156493)/i(1845),	-- nmail Belt \\ Chainmail Belt
+s(156494)/i(1846),	-- nmail Bracers \\ Chainmail Bracers
+s(156497)/i(1852),	-- email Bracers \\ Scalemail Bracers
+s(156498)/i(1853),	-- email Belt \\ Scalemail Belt
+s(156652)/i(2148),	-- shed Scale Belt \\ Polished Scale Belt
+s(156653)/i(2149),	-- shed Scale Boots \\ Polished Scale Boots
+s(156654)/i(2150),	-- shed Scale Bracers \\ Polished Scale Bracers
+s(156655)/i(2151),	-- shed Scale Gloves \\ Polished Scale Gloves
+s(156656)/i(2152),	-- shed Scale Leggings \\ Polished Scale Leggings
+s(156657)/i(2153),	-- shed Scale Vest \\ Polished Scale Vest
+s(156729)/i(2248),	--
+s(156758)/i(2301),	--
+s(156785)/i(2376),	-- Heater Shield \\ Worn Heater Shield
+s(156798)/i(2392),	-- t Mail Armor \\ Light Mail Armor
+s(156799)/i(2393),	-- t Mail Belt \\ Light Mail Belt
+s(156800)/i(2394),	-- t Mail Leggings \\ Light Mail Leggings
+s(156801)/i(2395),	-- t Mail Boots \\ Light Mail Boots
+s(156802)/i(2396),	-- t Mail Bracers \\ Light Mail Bracers
+s(156803)/i(2397),	-- t Mail Gloves \\ Light Mail Gloves
+s(156811)/i(2417),	-- ented Chain Vest \\ Augmented Chain Vest
+s(156812)/i(2418),	-- ented Chain Leggings \\ Augmented Chain Leggings
+s(156813)/i(2419),	-- ented Chain Belt \\ Augmented Chain Belt
+s(156814)/i(2420),	-- ented Chain Boots \\ Augmented Chain Boots
+s(156815)/i(2421),	-- ented Chain Bracers \\ Augmented Chain Bracers
+s(156816)/i(2422),	-- ented Chain Gloves \\ Augmented Chain Gloves
+s(156817)/i(2423),	-- andine Vest \\ Brigandine Vest
+s(156818)/i(2424),	-- andine Belt \\ Brigandine Belt
+s(156819)/i(2425),	-- andine Leggings \\ Brigandine Leggings
+s(156820)/i(2426),	-- andine Boots \\ Brigandine Boots
+s(156821)/i(2427),	-- andine Bracers \\ Brigandine Bracers
+s(156822)/i(2428),	-- andine Gloves \\ Brigandine Gloves
+s(156832)/i(2446),	-- Shield \\ Kite Shield
+s(156833)/i(2448),	-- y Pavise \\ Heavy Pavise
+s(156834)/i(2451),	-- ted Heater Shield \\ Crested Heater Shield
+s(156865)/i(2512),	-- h Arrow \\ Rough Arrow
+s(156866)/i(2515),	-- p Arrow \\ Sharp Arrow
+s(156867)/i(2516),	-- t Shot \\ Light Shot
+s(156868)/i(2519),	-- y Shot \\ Heavy Shot
+s(156885)/i(2543),	--
+s(156916)/i(2586),	-- master's Robe \\ Gamemaster's Robe
+s(156945)/i(2664),	-- ner Fang \\ Spinner Fang
+s(157041)/i(2944),	-- ed Eye of Paleth \\ Cursed Eye of Paleth
+s(157042)/i(2946),	-- en Balanced Throwing Dagger \\ Broken Balanced Throwing Dagger \\ Balanced Throwing Dagger
+s(157043)/i(2947),	-- en Small Throwing Knife \\ Broken Small Throwing Knife \\ Small Throwing Knife
+s(157046)/i(2952),	--
+s(157100)/i(3030),	-- r Arrow \\ Razor Arrow
+s(157101)/i(3033),	-- d Shot \\ Solid Shot
+s(157104)/i(3038),	--
+s(157109)/i(3043),	--
+s(157133)/i(3104),	--
+s(157134)/i(3105),	--
+s(157135)/i(3106),	--
+s(157136)/i(3107),	-- en Keen Throwing Knife \\ Broken Keen Throwing Knife \\ Keen Throwing Knife
+s(157137)/i(3108),	-- en Heavy Throwing Dagger \\ Broken Heavy Throwing Dagger \\ Heavy Throwing Dagger
+s(157138)/i(3111),	-- en Crude Throwing Axe \\ Broken Crude Throwing Axe \\ Crude Throwing Axe
+s(157139)/i(3131),	-- en Weighted Throwing Axe \\ Broken Weighted Throwing Axe \\ Weighted Throwing Axe
+s(157140)/i(3135),	-- en Sharp Throwing Axe \\ Broken Sharp Throwing Axe \\ Sharp Throwing Axe
+s(157141)/i(3137),	-- en Deadly Throwing Axe \\ Broken Deadly Throwing Axe \\ Deadly Throwing Axe
+s(157184)/i(3222),	-- ed Dagger \\ Wicked Dagger
+s(157241)/i(3320),	-- caster Sash \\ Bonecaster Sash
+s(157264)/i(3359),	--
+s(157285)/i(3398),	--
+s(157327)/i(3463),	-- en Silver Star \\ Broken Silver Star \\ Silver Star
+s(157328)/i(3464),	-- hered Arrow \\ Feathered Arrow
+s(157329)/i(3465),	-- oding Shot \\ Exploding Shot
+s(157336)/i(3479),	--
+s(157352)/i(3528),	-- Red Leather C03 Breastplate
+s(157353)/i(3532),	-- Unused Red Leather C03 Pants
+s(157354)/i(3533),	-- Red Leather C03 Boots
+s(157355)/i(3534),	-- Unused Red Leather C03 Gloves
+s(157356)/i(3535),	-- Red Leather C03 Bracers
+s(157357)/i(3537),	-- Black Leather D02 Breastplate
+s(157358)/i(3539),	-- Unused Black Leather D02 Pants
+s(157359)/i(3541),	-- Black Leather D02 Boots
+s(157360)/i(3543),	-- Unused Black Leather D02 Gloves
+s(157361)/i(3545),	-- Black Leather D02 Bracers
+s(157362)/i(3547),	-- White Leather D03 Breastplate
+s(157363)/i(3548),	-- Unused White Leather D03 Pants
+s(157364)/i(3549),	-- Unused White Leather D03 Gloves
+s(157382)/i(3579),	--
+s(157515)/i(3891),	-- ented Chain Helm \\ Augmented Chain Helm
+s(157518)/i(3894),	-- andine Helm \\ Brigandine Helm
+s(157520)/i(3896),	--
+s(157522)/i(3935),	-- ts' Cutlass \\ Smotts' Cutlass
+s(157543)/i(3956),	-- Gloves \\ Mesh Gloves
+s(157544)/i(3957),	-- Pants \\ Mesh Pants
+s(157545)/i(3958),	-- Mantle \\ Mesh Mantle
+s(157546)/i(3959),	-- Armor \\ Mesh Armor
+s(157567)/i(3981),	-- pped Gloves \\ Strapped Gloves
+s(157568)/i(3982),	-- pped Pants \\ Strapped Pants
+s(157569)/i(3983),	-- pped Shoulderpads \\ Strapped Shoulderpads
+s(157570)/i(3984),	-- pped Armor \\ Strapped Armor
+s(157571)/i(3985),	-- grammed Sash \\ Monogrammed Sash
+s(157574)/i(3988),	-- e Wall Shield \\ Plate Wall Shield
+s(157577)/i(3991),	-- ed Buckler \\ Plated Buckler
+s(157598)/i(4012),	-- ling Chain Gloves \\ Sterling Chain Gloves
+s(157599)/i(4013),	-- ling Chain Pants \\ Sterling Chain Pants
+s(157600)/i(4014),	-- ling Chain Shoulderpads \\ Sterling Chain Shoulderpads
+s(157601)/i(4015),	-- ling Chain Armor \\ Sterling Chain Armor
+s(157656)/i(4081),	--
+s(157695)/i(4190),	-- Feathered Armor
+s(157696)/i(4191),	-- Owlbeast Leggings \\ ed Feathered Leggings \\ Unused Feathered Leggings
+s(157697)/i(4192),	-- Unused Feathered Gauntlets
+s(157698)/i(4194),	-- Feathered Bracers
+s(157699)/i(4195),	-- Feathered Boots
+s(157792)/i(4491),	-- les of Gem Hunting \\ Goggles of Gem Hunting
+s(157816)/i(4574),	--
+s(157821)/i(4642),	--
+s(157883)/i(4728),	-- Twain's Shoulder
+s(157988)/i(4960),	-- h Pellet \\ Flash Pellet
+s(158020)/i(5031),	--
+s(158021)/i(5032),	--
+s(158022)/i(5033),	--
+s(158023)/i(5034),	--
+s(158024)/i(5035),	--
+s(158025)/i(5036),	--
+s(158026)/i(5037),	--
+s(158027)/i(5039),	--
+s(158030)/i(5070),	--
+s(158083)/i(5255),	-- boar Tomahawk \\ Quilboar Tomahawk
+s(158150)/i(5379),	-- en Boot Knife \\ Broken Boot Knife \\ Boot Knife
+s(158174)/i(5522),	-- Spellstone (DEPRECATED) \\ Spellstone
+s(158192)/i(5559),	-- Broken Fast Test Thrown \\ Fast Test Thrown
+s(158195)/i(5568),	-- th Pebble \\ Smooth Pebble
+s(158237)/i(5748),	-- aur Longbow \\ Centaur Longbow
+s(158268)/i(5856),	-- Monster - Throwing Axe
+s(158269)/i(5870),	-- Monster - Throwing Spear
+s(158308)/i(6088),	-- Monster - Torch, Ranged
+s(158313)/i(6096),	-- entice's Shirt \\ Apprentice's Shirt
+s(158314)/i(6097),	-- yte's Shirt \\ Acolyte's Shirt
+s(158316)/i(6116),	-- entice's Robe \\ Apprentice's Robe
+s(158328)/i(6128),	--
+s(158331)/i(6135),	-- itive Kilt \\ Primitive Kilt
+s(158337)/i(6141),	--
+s(158338)/i(6142),	--
+s(158339)/i(6143),	--
+s(158350)/i(6182),	-- Dim Torch
+s(158393)/i(6243),	-- n Woolen Robe \\ Green Woolen Robe
+s(158599)/i(6606),	--
+s(158623)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
+s(158624)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
+s(158707)/i(6836),	-- s Shoes \\ Dress Shoes
+s(158708)/i(6886),	-- Monster - Throwing Knife
+s(158774)/i(7066),	--
+s(158795)/i(7167),	--
+s(158796)/i(7169),	--
+s(158804)/i(7248),	-- Twain TEST Cloak
+s(158983)/i(7677),	--
+s(159060)/i(7940),	--
+s(159086)/i(8067),	-- ted Light Shot \\ Crafted Light Shot
+s(159087)/i(8068),	-- ted Heavy Shot \\ Crafted Heavy Shot
+s(159088)/i(8069),	-- ted Solid Shot \\ Crafted Solid Shot
+s(159097)/i(8088),	-- email Belt \\ Platemail Belt
+s(159098)/i(8089),	-- email Boots \\ Platemail Boots
+s(159099)/i(8090),	-- email Bracers \\ Platemail Bracers
+s(159100)/i(8091),	-- email Gloves \\ Platemail Gloves
+s(159101)/i(8092),	-- email Helm \\ Platemail Helm
+s(159102)/i(8093),	-- email Leggings \\ Platemail Leggings
+s(159103)/i(8094),	-- email Armor \\ Platemail Armor
+s(159293)/i(9042),	--
+s(159294)/i(9239),	--
+s(159307)/i(9376),	--
+s(159308)/i(9377),	--
+s(159329)/i(9399),	-- ision Arrow \\ Precision Arrow
+s(159721)/i(9978),	-- 'ridian Detector \\ Gahz'ridian Detector
+s(159728)/i(10006),	--
+s(159752)/i(10037),	--
+s(160048)/i(10422),	--
+s(160061)/i(10512),	-- mpact Mithril Slugs \\ Hi-Impact Mithril Slugs
+s(160062)/i(10513),	-- ril Gyro-Shot \\ Mithril Gyro-Shot
+s(160063)/i(10515),	-- h of Retribution \\ Torch of Retribution
+s(160082)/i(10579),	-- osive Arrow \\ Explosive Arrow
+s(160221)/i(11182),	--
+s(160222)/i(11183),	--
+s(160239)/i(11284),	-- rate Slugs \\ Accurate Slugs
+s(160240)/i(11285),	-- ed Arrow \\ Jagged Arrow
+s(160260)/i(11344),	--
+s(160261)/i(11345),	--
+s(160272)/i(11508),	-- master's Slippers \\ Gamemaster's Slippers
+s(160273)/i(11522),	-- er Totem of Aquementas \\ Silver Totem of Aquementas
+s(160294)/i(11630),	-- shard Pellets \\ Rockshard Pellets
+s(160431)/i(12064),	-- master Hood \\ Gamemaster Hood
+s(160451)/i(12187),	-- Test Defense Chest
+s(160452)/i(12188),	-- Test Armor Chest
+s(160453)/i(12189),	-- Test Strength Chest
+s(160454)/i(12221),	--
+s(160455)/i(12222),	--
+s(160458)/i(12244),	-- Test Agility Chest
+s(160459)/i(12245),	-- Test Spirit Chest
+s(160460)/i(12246),	--
+s(160490)/i(12333),	--
+s(160493)/i(12385),	-- test
+s(160497)/i(12407),	--
+s(160501)/i(12413),	--
+s(160511)/i(12423),	--
+s(160604)/i(12654),	-- shot \\ Doomshot
+s(160605)/i(12686),	--
+s(160623)/i(12767),	--
+s(160697)/i(12948),	--
+s(160706)/i(12962),	-- JEFF TEST GLOVES
+s(160881)/i(13173),	-- en Flightblade Throwing Axe \\ Broken Flightblade Throwing Axe \\ Flightblade Throwing Axe
+s(160914)/i(13256),	--
+s(160925)/i(13289),	-- 's Blaster \\ Egan's Blaster
+s(160930)/i(13294),	--
+s(160959)/i(13377),	-- ature Cannon Balls \\ Miniature Cannon Balls
+s(160989)/i(13472),	--
+s(160995)/i(13516),	--
+s(161012)/i(13602),	-- Greater Spellstone (DEPRECATED) \\ Greater Spellstone
+s(161013)/i(13603),	-- Major Spellstone (DEPRECATED) \\ Major Spellstone
+s(161033)/i(13699),	-- Firestone (DEPRECATED) \\ Firestone
+s(161034)/i(13700),	-- Greater Firestone (DEPRECATED) \\ Greater Firestone
+s(161035)/i(13701),	-- Major Firestone (DEPRECATED) \\ Major Firestone
+s(161043)/i(13712),	-- Test Sword Chest
+s(161046)/i(13715),	-- Test Block Chest
+s(161057)/i(13729),	-- [PH] Brilliant Dawn Mitts
+s(161060)/i(13735),	-- [PH] Shining Dawn Mitts
+s(161090)/i(13774),	-- [PH] Cloth Leggings of the Brilliant Dawn
+s(161102)/i(13786),	-- [PH] Brilliant Dawn Hat
+s(161104)/i(13789),	-- [PH] Brilliant Dawn Cap
+s(161106)/i(13792),	-- [PH] Brilliant Dawn Coif
+s(161108)/i(13795),	-- [PH] Brilliant Dawn Helm
+s(161111)/i(13799),	-- [PH] Cloth Boots of the Rising Dawn
+s(161112)/i(13800),	-- [PH] Cloth Boots of the Shining Dawn
+s(161182)/i(13919),	--
+s(161692)/i(14689),	--
+s(161693)/i(14690),	--
+s(161694)/i(14692),	--
+s(161695)/i(14693),	--
+s(161696)/i(14694),	--
+s(161697)/i(14695),	--
+s(161698)/i(14697),	--
+s(161699)/i(14698),	--
+s(161700)/i(14699),	--
+s(161701)/i(14700),	--
+s(161702)/i(14701),	--
+s(161703)/i(14702),	--
+s(161704)/i(14703),	--
+s(161705)/i(14704),	--
+s(161706)/i(14705),	--
+s(161795)/i(14819),	--
+s(162019)/i(15089),	--
+s(162233)/i(15326),	-- en Gleaming Throwing Axe \\ Broken Gleaming Throwing Axe \\ Gleaming Throwing Axe
+s(162234)/i(15327),	-- en Wicked Throwing Dagger \\ Broken Wicked Throwing Dagger \\ Wicked Throwing Dagger
+s(162700)/i(15997),	-- ium Shells \\ Thorium Shells
+s(162735)/i(16128),	--
+s(162737)/i(16130),	--
+s(162740)/i(16133),	--
+s(162774)/i(16211),	-- Test Quality Modifier Chest
+s(162776)/i(16213),	-- Test Quality Modifier Chest
+s(162784)/i(16369),	-- ht-Lieutenant's Silk Boots \\ Knight-Lieutenant's Silk Boots
+s(162786)/i(16391),	-- ht-Lieutenant's Silk Gloves \\ Knight-Lieutenant's Silk Gloves
+s(162787)/i(16392),	-- ht-Lieutenant's Leather Boots \\ Knight-Lieutenant's Leather Boots
+s(162788)/i(16393),	-- ht-Lieutenant's Dragonhide Footwraps \\ Knight-Lieutenant's Dragonhide Footwraps
+s(162791)/i(16396),	-- ht-Lieutenant's Leather Gauntlets \\ Knight-Lieutenant's Leather Gauntlets
+s(162792)/i(16397),	-- ht-Lieutenant's Dragonhide Gloves \\ Knight-Lieutenant's Dragonhide Gloves
+s(162796)/i(16401),	-- ht-Lieutenant's Chain Boots \\ Knight-Lieutenant's Chain Boots
+s(162798)/i(16403),	-- ht-Lieutenant's Chain Gauntlets \\ Knight-Lieutenant's Chain Gauntlets
+s(162799)/i(16405),	-- ht-Lieutenant's Plate Boots \\ Knight-Lieutenant's Plate Boots
+s(162800)/i(16406),	-- ht-Lieutenant's Plate Gauntlets \\ Knight-Lieutenant's Plate Gauntlets
+s(162801)/i(16409),	-- ht-Lieutenant's Lamellar Sabatons \\ Knight-Lieutenant's Lamellar Sabatons
+s(162802)/i(16410),	-- ht-Lieutenant's Lamellar Gauntlets \\ Knight-Lieutenant's Lamellar Gauntlets
+s(162805)/i(16413),	-- ht-Captain's Silk Raiment \\ Knight-Captain's Silk Raiment
+s(162806)/i(16414),	-- ht-Captain's Silk Leggings \\ Knight-Captain's Silk Leggings
+s(162807)/i(16415),	-- tenant Commander's Silk Spaulders \\ Lieutenant Commander's Silk Spaulders
+s(162808)/i(16416),	-- tenant Commander's Crown \\ Lieutenant Commander's Crown
+s(162809)/i(16417),	-- ht-Captain's Leather Armor \\ Knight-Captain's Leather Armor
+s(162810)/i(16418),	-- tenant Commander's Leather Veil \\ Lieutenant Commander's Leather Veil
+s(162811)/i(16419),	-- ht-Captain's Leather Legguards \\ Knight-Captain's Leather Legguards
+s(162812)/i(16420),	-- tenant Commander's Leather Spaulders \\ Lieutenant Commander's Leather Spaulders
+s(162813)/i(16421),	-- ht-Captain's Dragonhide Tunic \\ Knight-Captain's Dragonhide Tunic
+s(162814)/i(16422),	-- ht-Captain's Dragonhide Leggings \\ Knight-Captain's Dragonhide Leggings
+s(162815)/i(16423),	-- tenant Commander's Dragonhide Epaulets \\ Lieutenant Commander's Dragonhide Epaulets
+s(162816)/i(16424),	-- tenant Commander's Dragonhide Shroud \\ Lieutenant Commander's Dragonhide Shroud
+s(162817)/i(16425),	-- ht-Captain's Chain Hauberk \\ Knight-Captain's Chain Hauberk
+s(162818)/i(16426),	-- ht-Captain's Chain Leggings \\ Knight-Captain's Chain Leggings
+s(162819)/i(16427),	-- tenant Commander's Chain Pauldrons \\ Lieutenant Commander's Chain Pauldrons
+s(162820)/i(16428),	-- tenant Commander's Chain Helmet \\ Lieutenant Commander's Chain Helmet
+s(162821)/i(16429),	-- tenant Commander's Plate Helm \\ Lieutenant Commander's Plate Helm
+s(162822)/i(16430),	-- ht-Captain's Plate Chestguard \\ Knight-Captain's Plate Chestguard
+s(162823)/i(16431),	-- ht-Captain's Plate Leggings \\ Knight-Captain's Plate Leggings
+s(162824)/i(16432),	-- tenant Commander's Plate Pauldrons \\ Lieutenant Commander's Plate Pauldrons
+s(162825)/i(16433),	-- ht-Captain's Lamellar Breastplate \\ Knight-Captain's Lamellar Breastplate
+s(162826)/i(16434),	-- tenant Commander's Lamellar Headguard \\ Lieutenant Commander's Lamellar Headguard
+s(162827)/i(16435),	-- ht-Captain's Lamellar Leggings \\ Knight-Captain's Lamellar Leggings
+s(162828)/i(16436),	-- tenant Commander's Lamellar Shoulders \\ Lieutenant Commander's Lamellar Shoulders
+s(163283)/i(17183),	-- ed Buckler \\ Dented Buckler
+s(163285)/i(17185),	-- d Buckler \\ Round Buckler
+s(163289)/i(17189),	-- l Buckler \\ Metal Buckler
+s(163290)/i(17190),	-- te Buckler \\ Ornate Buckler
+s(163291)/i(17192),	-- forced Targe \\ Reinforced Targe
+s(163297)/i(17343),	-- Test Random Chest
+s(163305)/i(17562),	-- ht-Lieutenant's Dreadweave Boots \\ Knight-Lieutenant's Dreadweave Boots
+s(163307)/i(17564),	-- ht-Lieutenant's Dreadweave Gloves \\ Knight-Lieutenant's Dreadweave Gloves
+s(163309)/i(17566),	-- tenant Commander's Headguard \\ Lieutenant Commander's Headguard
+s(163310)/i(17567),	-- ht-Captain's Dreadweave Leggings \\ Knight-Captain's Dreadweave Leggings
+s(163311)/i(17568),	-- ht-Captain's Dreadweave Robe \\ Knight-Captain's Dreadweave Robe
+s(163312)/i(17569),	-- tenant Commander's Dreadweave Mantle \\ Lieutenant Commander's Dreadweave Mantle
+s(163337)/i(17594),	-- ht-Lieutenant's Satin Boots \\ Knight-Lieutenant's Satin Boots
+s(163339)/i(17596),	-- ht-Lieutenant's Satin Gloves \\ Knight-Lieutenant's Satin Gloves
+s(163341)/i(17598),	-- tenant Commander's Diadem \\ Lieutenant Commander's Diadem
+s(163342)/i(17599),	-- ht-Captain's Satin Leggings \\ Knight-Captain's Satin Leggings
+s(163343)/i(17600),	-- ht-Captain's Satin Robes \\ Knight-Captain's Satin Robes
+s(163344)/i(17601),	-- tenant Commander's Satin Amice \\ Lieutenant Commander's Satin Amice
+s(163419)/i(18042),	-- ium Headed Arrow \\ Thorium Headed Arrow
+s(163431)/i(18161),	-- 5% Test Speed Boots
+s(163432)/i(18162),	-- 8% Test Speed Boots
+s(163433)/i(18163),	-- 10% Test Speed Boots
+s(163434)/i(18164),	-- 13% Test Speed Boots
+s(163435)/i(18165),	-- 15% Test Speed Boots
+s(163452)/i(18303),	-- le Buckler \\ Nimble Buckler
+s(163463)/i(18316),	-- Obsidian Bauble
+s(163536)/i(18439),	--
+s(163661)/i(18732),	--
+s(163662)/i(18733),	--
+s(163770)/i(19082),	-- Monster - Fire Arrow
+s(163842)/i(19285),	--
+s(163843)/i(19286),	-- Fast Test Ammo
+s(163846)/i(19294),	--
+s(163854)/i(19316),	-- Threaded Arrow \\ Ice Threaded Arrow
+s(163855)/i(19317),	-- Threaded Bullet \\ Ice Threaded Bullet
+s(163874)/i(19359),	--
+s(164096)/i(19985),	--
+s(164139)/i(20086),	-- en Dusksteel Throwing Knife \\ Broken Dusksteel Throwing Knife \\ Dusksteel Throwing Knife
+s(164184)/i(20133),	--
+s(164268)/i(20294),	--
+s(164272)/i(20337),	-- Gnome Head on a Stick
+s(164279)/i(20386),	--
+s(164280)/i(20391),	-- e Male Mask \\ Gnome Male Mask \\ Flimsy Male Gnome Mask
+s(164281)/i(20392),	-- e Female Mask \\ Gnome Female Mask \\ Flimsy Female Gnome Mask
+s(164311)/i(20523),	--
+s(164313)/i(20529),	--
+s(164323)/i(20561),	-- f Male Mask \\ Dwarf Male Mask \\ Flimsy Male Dwarf Mask
+s(164324)/i(20562),	-- f Female Mask \\ Dwarf Female Mask \\ Flimsy Female Dwarf Mask
+s(164325)/i(20563),	-- t Elf Female Mask \\ Night Elf Female Mask \\ Flimsy Female Night Elf Mask \\ Flimsy Female Nightelf Mask
+s(164326)/i(20564),	-- t Elf Male Mask \\ Night Elf Male Mask \\ Flimsy Male Night Elf Mask \\ Flimsy Male Nightelf Mask
+s(164327)/i(20565),	-- n Female Mask \\ Human Female Mask \\ Flimsy Female Human Mask
+s(164328)/i(20566),	-- n Male Mask \\ Human Male Mask \\ Flimsy Male Human Mask
+s(164329)/i(20567),	-- l Female Mask \\ Troll Female Mask \\ Flimsy Female Troll Mask
+s(164330)/i(20568),	-- l Male Mask \\ Troll Male Mask \\ Flimsy Male Troll Mask
+s(164331)/i(20569),	-- Female Mask \\ Orc Female Mask \\ Flimsy Female Orc Mask
+s(164332)/i(20570),	-- Male Mask \\ Orc Male Mask \\ Flimsy Male Orc Mask
+s(164333)/i(20571),	-- en Female Mask \\ Tauren Female Mask \\ Flimsy Female Tauren Mask
+s(164334)/i(20572),	-- en Male Mask \\ Tauren Male Mask \\ Flimsy Male Tauren Mask
+s(164335)/i(20573),	-- ad Male Mask \\ Undead Male Mask \\ Flimsy Male Undead Mask
+s(164336)/i(20574),	-- ad Female Mask \\ Undead Female Mask \\ Flimsy Female Undead Mask
+s(164452)/i(20814),	-- Broken Master's Throwing Dagger \\ Master's Throwing Dagger
+s(164453)/i(20905),	--
+s(164467)/i(21135),	-- Broken Assassin's Throwing Axe \\ Assassin's Throwing Axe
+s(164470)/i(21169),	--
+s(164471)/i(21170),	--
+s(164472)/i(21172),	--
+s(164581)/i(21439),	-- AHNQIRAJ TEST ITEM D PLATE HELM
+s(164587)/i(21445),	-- AHNQIRAJ TEST ITEM D PLATE BRACER
+s(164750)/i(21797),	--
+s(164751)/i(21798),	--
+s(164752)/i(21799),	--
+s(164762)/i(21832),	--
+s(165061)/i(22743),	-- dsail Sash \\ Bloodsail Sash
+s(165068)/i(22751),	--
+s(165308)/i(171470),	--

@@ -81,4 +81,4 @@ i(0, 442655);	-- Supreme Beast Lure
 -- PATCH 11.0.5 --
 ------------------
 --- TRAINER ---
-i(0, 469989);   -- Toughened Tempest Pelt
+i(0, 469989);	-- Toughened Tempest Pelt

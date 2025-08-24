@@ -19,6 +19,8 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(160),
 		-- #else
 		en = "Lunar Festival",
+		es = "Festival Lunar",
+		mx = "Festival Lunar",
 		-- #endif
 	},
 });
@@ -194,9 +196,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			-- #endif
 		}),
 		q(56903, {	-- Crown of Courage
-			["qg"] = 155759,	-- Myrael Lunarbloom
-			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
+			["sourceQuest"] = 56842,	-- Lunar Preservation
+			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
@@ -209,9 +211,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		q(56905, {	-- Crown of Dark Blossoms
-			["qg"] = 155759,	-- Myrael Lunarbloom
-			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
+			["sourceQuest"] = 56842,	-- Lunar Preservation
+			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
@@ -224,9 +226,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		q(56906, {	-- Crown of Good Fortune
-			["qg"] = 155759,	-- Myrael Lunarbloom
-			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
+			["sourceQuest"] = 56842,	-- Lunar Preservation
+			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
@@ -257,9 +259,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		q(56904, {	-- Crown of Prosperity
-			["qg"] = 155759,	-- Myrael Lunarbloom
-			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
+			["sourceQuest"] = 56842,	-- Lunar Preservation
+			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
@@ -272,8 +274,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		q(8868, {	-- Elune's Blessing
-			["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
+			["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
 			["sourceQuest"] = 8883,	-- Valadar Starsong
+			["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(40, 40, 1),
@@ -285,13 +288,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21540),	-- Elune's Lantern (TOY!)
 				i(21640),	-- Lunar Festival Fireworks Pack
 			},
-			["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
 		}),
 		q(8862, {	-- Elune's Candle
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["isYearly"] = true,
 			["lvl"] = 10,
 			-- #if BEFORE 3.0.8.9464
@@ -304,8 +306,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8863, {	-- Festival Dumplings
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -316,8 +318,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8864, {	-- Festive Lunar Dresses
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -331,8 +333,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8865, {	-- Festive Lunar Pant Suits
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["isYearly"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -346,18 +348,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8878, {	-- Festive Recipes
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 50,
 			["groups"] = {
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21722, {	-- Pattern: Festival Dress
+				i(21722, {	-- Pattern: Festival Dress (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
-				i(21723, {	-- Pattern: Festival Suit
+				i(21723, {	-- Pattern: Festival Suit (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
@@ -365,8 +367,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8877, {	-- Firework Launcher
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 45,
 			["groups"] = {
@@ -381,8 +383,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8881, {	-- Large Cluster Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 55,
 			-- #if BEFORE 3.0.8.9464
@@ -399,8 +401,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8879, {	-- Large Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 35,
 			-- #if BEFORE 3.0.8.9464
@@ -415,7 +417,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			-- #endif
 		}),
 		q(8867, {	-- Lunar Fireworks
-			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["sourceQuests"] = {
 				8870,	-- The Lunar Festival (A)
 				8871,	-- The Lunar Festival (A)
@@ -428,6 +429,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				73170,	-- The Lunar Festival (H)
 				-- #endif
 			},
+			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["coords"] = {
 				{ 32.5, 53.0, ELWYNN_FOREST },
 				{ 28.8, 16.2, IRONFORGE },
@@ -455,20 +457,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			},
 		}),
 		q(56842, {	-- Lunar Preservation
+			["description"] = "Only a very few moonwells in faction-neutral locations counts for this quest. If you happen to lose the 'Blessing of the Moon'-buff due to death, you can continue as you still have the buff and turn in the quest without having to revisit moonwells.",
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
 			["timeline"] = { ADDED_8_3_0 },
-			["g"] = {
+			["groups"] = {
 				i(170084),	-- Blessed Staff of Moonflowers (QI!)
 				i(170083),	-- Staff of Moonflowers (QI!)
 			},
-			["description"] = "Only a very few moonwells in faction-neutral locations counts for this quest. If you happen to lose the 'Blessing of the Moon'-buff due to death, you can continue as you still have the buff and turn in the quest without having to revisit moonwells.",
 		}),
 		q(8876, {	-- Small Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 25,
 			-- #if BEFORE 3.0.8.9464
@@ -531,6 +533,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				220307,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_10_0_5 },
 			["maps"] = {
 				VALDRAKKEN,
 				-- #if AFTER TWW
@@ -540,7 +543,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
-			["timeline"] = { ADDED_10_0_5 },
 		}),
 		q(73170, {	-- The Lunar Festival (H)
 			["qgs"] = {
@@ -549,6 +551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				220307,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_10_0_5 },
 			["maps"] = {
 				VALDRAKKEN,
 				-- #if AFTER TWW
@@ -558,12 +561,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
-			["timeline"] = { ADDED_10_0_5 },
 		}),
 		q(8883, {	-- Valadar Starsong
-			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["description"] = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
 			["sourceQuest"] = 8867,	-- Lunar Fireworks
+			["qg"] = 15895,	-- Lunar Festival Harbinger
 			["coords"] = {
 				{ 32.5, 53.0, ELWYNN_FOREST },
 				{ 28.8, 16.2, IRONFORGE },
@@ -591,51 +593,51 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 
 		-- Elders of Khaz Algar
 		q(85929, {	-- Archivist Rubbleglint on The Isle of Dorn
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233971,	-- Archivist Rubbleglint
 			["coord"] = { 40.91, 87.35, ISLE_OF_DORN },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85930, {	-- Archivist Coppermoss on The Isle of Dorn
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233972,	-- Archivist Coppermoss
 			["coord"] = { 48.62, 13.95, ISLE_OF_DORN },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85931, {	-- Archivist Farolt in The Ringing Deeps
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233973,	-- Archivist Farolt
 			["coord"] = { 48.9, 67.3, THE_RINGING_DEEPS },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85932, {	-- Archivist Silsigra in The Ringing Deeps
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233974,	-- Archivist Silsigra
 			["coord"] = { 67.29, 52.98, THE_RINGING_DEEPS },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85933, {	-- Elder Knythall in Hallowfall
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233975,	-- Elder Knythall
 			["coord"] = { 25.88, 51.93, HALLOWFALL },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85934, {	-- Elder Swornvow in Hallowfall
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233976,	-- Elder Swornvow
 			["coord"] = { 66.27, 46.28, HALLOWFALL },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85935, {	-- Elder Ikk'zivan in Azj-Kahet
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233977,	-- Elder Ikk'zivan
 			["coord"] = { 66.91, 85.53, AZJ_KAHET },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85936, {	-- Elder Ikk'xataz in Azj-Kahet
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233978,	-- Elder Ikk'xataz
 			["coord"] = { 46.82, 57.21, AZJ_KAHET },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 
@@ -746,10 +748,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		-- Elders of Eastern Kingdoms
 		q(8647, {	-- Bellowrage the Elder
-			["qg"] = 15563,	-- Elder Bellowrage
 			-- #if AFTER WOD
 			["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
 			-- #endif
+			["qg"] = 15563,	-- Elder Bellowrage
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 54.2, 49.4, BLASTED_LANDS },
@@ -782,6 +784,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(8652, {	-- Graveborn the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.",
+			-- #endif
 			["qg"] = 15568,	-- Elder Graveborn
 			["coords"] = {
 				-- #if AFTER CATA
@@ -790,9 +795,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 61.9, 53.8, TIRISFAL_GLADES },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8643, {	-- Highpeak the Elder
@@ -812,13 +814,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(8722, {	-- Meadowrun the Elder
-			["qg"] = 15602,	-- Elder Meadowrun
 			-- #if AFTER CATA
 			["description"] = "Found inside the Weeping Cave.",
 			["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
 			-- #else
 			["coord"] = { 66.0, 47.8, WESTERN_PLAGUELANDS },
 			-- #endif
+			["qg"] = 15602,	-- Elder Meadowrun
 			["isYearly"] = true,
 		}),
 		q(8714, {	-- Moonstrike the Elder
@@ -921,6 +923,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		-- Elders of Kalimdor
 		q(8715, {	-- Bladeleaf the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil. The Elder is on the left side of the Cenarion Enclave.",
+			-- #endif
 			["qg"] = 15595,	-- Elder Bladeleaf
 			["coords"] = {
 				-- #if AFTER CATA
@@ -929,12 +934,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 56.9, 60.5, TELDRASSIL },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8719, {	-- Bladesing the Elder
+			-- #if BEFORE BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
+			-- #endif
 			["qg"] = 15599,	-- Elder Bladesing
 			["coords"] = {
 				-- #if AFTER CATA
@@ -943,9 +948,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 49.0, 37.7, SILITHUS },
 				-- #endif
 			},
-			-- #if BEFORE BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8673, {	-- Bloodhoof the Elder
@@ -1042,6 +1044,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(8654, {	-- Primestone the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
+			-- #endif
 			["qg"] = 15570,	-- Elder Primestone
 			["coords"] = {
 				-- #if AFTER CATA
@@ -1050,9 +1055,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 23.1, 11.8, SILITHUS },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8671, {	-- Ragetotem the Elder
@@ -1105,6 +1107,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(8721, {	-- Starweave the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
+			-- #endif
 			["qg"] = 15601,	-- Elder Starweave
 			["coords"] = {
 				-- #if AFTER CATA
@@ -1113,9 +1118,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 36.8, 46.7, DARKSHORE },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8672, {	-- Stonespire the Elder
@@ -1257,18 +1259,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		-- Elders of the Dungeons
 		q(13067, {	-- Chogan'gada the Elder
+			["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 			["qg"] = 30538,	-- Elder Chogan'gada
 			["coord"] = { 57.2, 46.6, HOWLING_FJORD },	-- Utgarde Pinnacle entrance
-			["description"] = "After defeating Skadi, the Elder is underneath the staircase before you enter the Ruined Court.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 			["isYearly"] = true,
 		}),
 		q(8727, {	-- Farwhisper the Elder
-			["qg"] = 15607,	-- Elder Farwhisper
 			-- #if AFTER 4.0.3
 			["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
-			["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
+			["description"] = "Enter Stratholme through the main gate. The Elder is in the northeast corner, east of The Unforgiven.",
 			-- #else
 			-- #if AFTER WRATH
 			["coord"] = { 43.7, 17.5, EASTERN_PLAGUELANDS },	-- Stratholme [Service Gate]
@@ -1277,87 +1278,88 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			-- #endif
 			["description"] = "Located inside of Stratholme in Festival Lane. Fastest route to him is from the Service Entrance and then head towards The Unforgiven on Live side.",
 			-- #endif
+			["qg"] = 15607,	-- Elder Farwhisper
 			["maps"] = { STRATHOLME },
 			["isYearly"] = true,
 		}),
 		q(13021, {	-- Igasho the Elder
+			["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove. The Elder is just before you reach Ormorok's platform.",
 			["qg"] = 30536,	-- Elder Igasho
 			["coord"] = { 27.5, 26.0, BOREAN_TUNDRA },	-- The Nexus entrance
-			["description"] = "When you enter the Nexus, turn right and loop around the Singing Grove.  The Elder is just before you reach Ormorok's platform.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { THE_NEXUS },
 			["isYearly"] = true,
 		}),
 		q(13017, {	-- Jarten the Elder
+			["description"] = "After defeating Keleseth, continue through the mining tunnel. Before heading up the stairs to the next boss, turn left to find the Elder.",
 			["qg"] = 30531,	-- Elder Jarten
 			["coord"] = { 57.9, 50.0, HOWLING_FJORD },	-- Utgarde Keep entrance path
-			["description"] = "After defeating Keleseth, continue through the mining tunnel.  Before heading up the stairs to the next boss, turn left to find the Elder.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 			["isYearly"] = true,
 		}),
 		q(13023, {	-- Kilias the Elder
+			["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
 			["qg"] = 30534,	-- Elder Kilias
 			["coord"] = { 28.5, 86.9, ZULDRAK },	-- Drak'Tharon Keep entrance
-			["description"] = "The Elder is just inside the Raptor Pens, near King Dred.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 			["isYearly"] = true,
 		}),
 		q(8619, {	-- Morndeep the Elder
+			["description"] = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
 			["qg"] = 15549,	-- Elder Morndeep
 			["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
-			["description"] = "Located inside Blackrock Depths at the Ring of Law, accessed through the Detention Block. From the entrance walk straight forward across the big central floor into the facing cave, and the Ring of Law can be accessed on the immediate left. \n\nWARNING: Approaching the Elder will also start the encounter, but you can escape the way you came before the gate closes.",
 			["maps"] = { BLACKROCK_DEPTHS },
 			["isYearly"] = true,
 		}),
 		q(13022, {	-- Nurgen the Elder
+			["description"] = "After defeating Hadronox, jump to the lower level of the dungeon. The Elder is on the north side of the room where you land.",
 			["qg"] = 30533,	-- Elder Nurgen
 			["coord"] = { 26.0, 50.7, DRAGONBLIGHT },	-- Azjol-Nerub entrance
-			["description"] = "After defeating Hadronox, jump to the lower level of the dungeon.  The Elder is on the north side of the room where you land.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 			["isYearly"] = true,
 		}),
 		q(13065, {	-- Ohanzee the Elder
+			["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
 			["qg"] = 30537,	-- Elder Ohanzee
 			["coord"] = { 76.2, 21.1, ZULDRAK },	-- Gundrak entrance
-			["description"] = "The Elder is on the platform behind the second boss in the dungeon, Drakkari Colossus.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 			["isYearly"] = true,
 		}),
 		q(8635, {	-- Splitrock the Elder
-			["qg"] = 15556,	-- Elder Splitrock
-			["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 			-- #if AFTER CATA
-			["description"] = "Take the central path to reach the Portal to Inner Maraudon.  Once inside the dungeon, jump down and follow the path to reach the Elder in the far southeast corner of the map.",
+			["description"] = "Take the central path to reach the Portal to Inner Maraudon. Once inside the dungeon, jump down and follow the path to reach the Elder in the far southeast corner of the map.",
 			-- #else
 			["description"] = "Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
 			-- #endif
+			["qg"] = 15556,	-- Elder Splitrock
+			["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 			["maps"] = { MARAUDON },
 			["isYearly"] = true,
 		}),
 		q(8713, {	-- Starsong the Elder
-			["qg"] = 15593,	-- Elder Starsong
 			-- #if AFTER CATA
 			["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
-			["description"] = "Once inside Sunken Temple, turn left.  Elder Starsong is in the small alcove to the northeast.",
+			["description"] = "Once inside Sunken Temple, turn left. Elder Starsong is in the small alcove to the northeast.",
 			-- #else
 			["coord"] = { 69.2, 54.8, SWAMP_OF_SORROWS },
 			["description"] = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
 			-- #endif
+			["qg"] = 15593,	-- Elder Starsong
 			["maps"] = { TEMPLE_OF_ATALHAKKAR },
 			["isYearly"] = true,
 		}),
 		q(8644, {	-- Stonefort the Elder
-			["qg"] = 15560,	-- Elder Stonefort
 			-- #if AFTER 6.0.1
 			["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
-			["description"] = "Once inside Lower Blackrock Spire, head down and to the left.  The Elder is just past the first bridge.",
+			["description"] = "Once inside Lower Blackrock Spire, head down and to the left. The Elder is just past the first bridge.",
 			-- #else
 			["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
 			-- #endif
+			["qg"] = 15560,	-- Elder Stonefort
 			["maps"] = {
 				BLACKROCK_SPIRE,
 				LBRS_TAZZALOR,
@@ -1370,6 +1372,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(8676, {	-- Wildmane the Elder
+			["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
 			["qg"] = 15578,	-- Elder Wildmane
 			["coords"] = {
 				-- #if AFTER CATA
@@ -1378,20 +1381,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 39.0, 19.0, TANARIS },
 				-- #endif
 			},
-			["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
 			["maps"] = { ZULFARRAK },
 			["isYearly"] = true,
 		}),
 		q(13066, {	-- Yurauk the Elder
+			["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
 			["qg"] = 30535,	-- Elder Yurauk
 			["coord"] = { 39.6, 26.9, THE_STORM_PEAKS },	-- Halls of Stone entrance
-			["description"] = "The Elder is on the western side of the Crystalline Quarry inside Halls of Stone.",
 			["timeline"] = { ADDED_3_0_8 },
 			["maps"] = { HALLS_OF_STONE },
 			["isYearly"] = true,
 		}),
 		-- Elders of the Alliance
 		q(8718, {	-- Bladeswift the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus. The Elder is on the left side of the Cenarion Enclave.",
+			-- #endif
 			["qg"] = 15598,	-- Elder Bladeswift
 			["coords"] = {
 				-- #if AFTER CATA
@@ -1400,20 +1405,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 33.5, 14.3, DARNASSUS },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8866, {	-- Bronzebeard the Elder
-			["qg"] = 15871,	-- Elder Bronzebeard
-			["isYearly"] = true,
 			-- #if BEFORE CATA
 			["coord"] = { 29.1, 17.0, IRONFORGE },	-- The Mystic Ward
 			-- #else
 			["coord"] = { 29.4, 17.1, IRONFORGE },	-- The Mystic Ward
 			["description"] = "Can be challenging for Horde players. Fly in and fly high without hesitation. Watch out for guard movements in The Mystic Ward.",
 			-- #endif
+			["qg"] = 15871,	-- Elder Bronzebeard
+			["isYearly"] = true,
 		}),
 		q(8646, {	-- Hammershout the Elder
 			["qg"] = 15562,	-- Elder Hammershout
@@ -1432,6 +1434,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		-- Elders of the Horde
 		q(8648, {	-- Darkcore the Elder
+			-- #if AFTER BFA
+			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",
+			-- #endif
 			["qg"] = 15564,	-- Elder Darkcore
 			["coords"] = {
 				-- #if AFTER CATA
@@ -1440,30 +1445,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 66.6, 38.2, UNDERCITY },
 				-- #endif
 			},
-			-- #if AFTER BFA
-			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron. If Zidormi does not offer any dialogue options, travel towards Western Plaguelands and see if you get phased into pre-BfA Tirisfal.\n\nThe Elder is just inside the front door of the city. Alliance players can fly through the broken roof in front of the room. There are no guards in this area.",
-			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8677, {	-- Darkhorn the Elder
-			["qg"] = 15579,	-- Elder Darkhorn
 			-- #if AFTER CATA
 			["coord"] = { 52.1, 59.8, ORGRIMMAR },
 			["description"] = "The Elder is on the southern end of the central upper platform in Orgrimmar near the flight master. A visual clue for flying Alliance players is to look for the towering gate seperating Valley of Strength and the Drag.",
 			-- #else
 			["coord"] = { 40.9, 33.9, ORGRIMMAR },
 			-- #endif
+			["qg"] = 15579,	-- Elder Darkhorn
 			["isYearly"] = true,
 		}),
 		q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
-			["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
-			["isYearly"] = true,
 			-- #if BEFORE CATA
 			["coord"] = { 73.0, 23.4, THUNDER_BLUFF },	-- The Elder Rise
 			-- #else
 			["coord"] = { 72.8, 22.8, THUNDER_BLUFF },	-- The Elder Rise
 			["description"] = "Found on the northern side of The Elder Rise, easily accessible for flying players.",
 			-- #endif
+			["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
+			["isYearly"] = true,
 		}),
 	}),
 	n(REWARDS, {
@@ -1475,37 +1477,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["timeline"] = { ADDED_8_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
-					["timeline"] = { ADDED_9_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["timeline"] = { ADDED_7_2_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_7_2_5 },
 				}),
-				i(44916, {	-- Pattern: Festival Dress
-					["timeline"] = { ADDED_3_0_8 },
+				i(44916, {	-- Pattern: Festival Dress (RECIPE!)
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
-				i(44917, {	-- Pattern: Festival Suit
-					["timeline"] = { ADDED_3_0_8 },
+				i(44917, {	-- Pattern: Festival Suit (RECIPE!)
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(21740, {	-- Small Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry

@@ -5,14 +5,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(REVENDRETH, {
 		n(ZONE_REWARDS, {
 			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-			["g"] = {
+			["groups"] = {
 				i(182728),	-- A Crate of Sinvyr Ore
 				i(182727),	-- A Leaking Package
 				i(173718),	-- Bottle of Redelav Wine
 				i(173715),	-- Dredger's Toolkit
 				i(173720),	-- Glittering Primrose Necklace
 				i(182704, {	-- Green Muck Dye
-					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r).  It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
+					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Muck Pool: Banewood area (|cFFFFFFFF53.8, 72.3|r). It's easiest to find when the |cFFFFD700Dirty Job: Demolition Detail|r WQ is up, but there may be leftover Bonemauler mobs after the WQ has ended.",
 					["crs"] = {
 						157695,	-- Lurking Bonemauler
 						172888,	-- Lurking Alpha

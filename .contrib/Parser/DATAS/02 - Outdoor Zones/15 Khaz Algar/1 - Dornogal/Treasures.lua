@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 212928 },
 				["coord"] = { 58.3, 30.3, DORNOGAL },
 				["questID"] = 82716,
-				["g"] = {
+				["groups"] = {
 					i(224549),	-- Dalaran Sewer Turtle (PET!)
 				},
 			}),

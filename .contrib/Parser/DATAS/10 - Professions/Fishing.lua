@@ -157,33 +157,24 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		ach(126, {	-- Journeyman Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7731,	-- Fishing (Journeyman)
 			-- #endif
-			["rank"] = 2,
 		}),
 		ach(127, {	-- Expert Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7732,	-- Fishing (Expert)
 			-- #endif
-			["rank"] = 3,
 		}),
 		ach(128, {	-- Artisan Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 18248,	-- Fishing (Artisan)
 			-- #endif
-			["rank"] = 4,
 		}),
 		ach(150, {	-- The Fishing Diplomat
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
-	expansion(EXPANSION.TBC, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
@@ -192,51 +183,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			-- #endif
 		},
 		["groups"] = {
-			applyclassicphase(TBC_PHASE_ONE, ach(129, {	-- Master Fisherman / Outland Fisherman
-				-- #if ANYCLASSIC
-				["spellID"] = 33095,	-- Fishing (Master)
-				-- #endif
-				["rank"] = 5,
-			})),
+			ach(129),	-- Master Fisherman / Outland Fisherman
 			ach(1225, {	-- Outland Angler
 				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 				["timeline"] = { ADDED_3_0_2 },
-				-- #if ANYCLASSIC
-				["sym"] = {{ "achievement_criteria" }},
-				-- #else
-				["g"] = {
-					crit(3623),	-- Brackish Mixed School
-					crit(3624),	-- Bluefish School
-					crit(3625),	-- Mudfish School
-					crit(3626),	-- School of Darter
-					crit(3627),	-- Highland Mixed School
-					crit(3628),	-- Sporefish School
-				},
-				-- #endif
 			}),
 		},
-	}),
+	})),
 	expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(130, {	-- Grand Master Fisherman
-			-- #if ANYCLASSIC
-			["spellID"] = 51294,	-- Fishing (Grand Master)
-			-- #endif
-			["rank"] = 6,
-		}),
+		ach(130),	-- Grand Master Fisherman
 		ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
-			["g"] = {
-				crit(5278),	-- Borean Man O' War School
-				crit(5279),	-- Deep Sea Monsterbelly School
-				crit(5280),	-- Dragonfin Angelfish School
-				crit(5281),	-- Fangtooth Herring School
-				crit(5282),	-- Glacial Salmon School
-				crit(5283),	-- Glassfin Minnow School
-				crit(5284),	-- Imperial Manta Ray School
-				crit(5285),	-- Moonglow Cuttlefish School
-				crit(5286),	-- Musselback Sculpin School
-				crit(5287),	-- Nettlefish School
-			}
 		}),
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
@@ -257,17 +214,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				-- #endif
 			}},
 		}),
+		-- #if BEFORE 5.0.4
 		ach(5852, {	-- Gone Fishin' (H)
 			["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
-			-- #if BEFORE 5.0.4
 			["sym"] = {{"meta_achievement",
 				5850,	-- Fish or Cut Bait: Undercity
 				5849,	-- Fish or Cut Bait: Thunder Bluff
 				5477,	-- Fish or Cut Bait: Orgrimmar
 			}},
-			-- #endif
 		}),
+		-- #endif
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6839),	-- Zen Master Fisherman
@@ -299,7 +256,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}),
 			ach(10596, {	-- Bigger Fish to Fry
 				["_noautomation"] = true,
-				["g"] = {
+				["groups"] = {
 					crit(29912, {	-- Ancient Black Barracuda
 						["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
 						["provider"] = { "i", 133742 },
@@ -375,9 +332,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			}),
 			ach(11725, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Fisherfriend of the Isles
-				["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
-				["g"] = {
-					i(152583),	-- Underlight Emerald
+				["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time. The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
+				["groups"] = {
+					i(152583),	-- Underlight Emerald (CI!)
 					crit(36343, {	-- Ilyssia of the Waters
 						["_npcs"] = { 120266 },
 					}),
@@ -405,18 +362,18 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133715, {	-- Ancient Vrykul Ring
 				["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
 				["maps"] = { STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					i(133734),	-- Oodelfjisk
 					i(139661),	-- Oodelfjisk [AP]
 				},
 			}),
 			i(133724, {	-- Decayed Whale Blubber
-				["description"] = "Using the item will place a whale blob in front of you, as the item describes. Cast your line, and shortly after a silithid wasp will fly down and hover over the whale blubber.  Click on the fly to add Ravenous Fly to your inventory.",
+				["description"] = "Using the item will place a whale blob in front of you, as the item describes. Cast your line, and shortly after a silithid wasp will fly down and hover over the whale blubber. Click on the fly to add Ravenous Fly to your inventory.",
 				["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
-				["g"] = {
+				["groups"] = {
 					i(133795, {	-- Ravenous Fly
 						["description"] = "You must be in |cffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
-						["g"] = {
+						["groups"] = {
 							i(133742),	-- Ancient Black Barracuda
 							i(139669),	-- Ancient Black Barracuda [AP]
 						},
@@ -426,7 +383,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133720, {	-- Demonic Detritus
 				["description"] = "This item will allow you to catch the rare fish Tainted Runescale Koi in Suramar.",
 				["maps"] = { SURAMAR },
-				["g"] = {
+				["groups"] = {
 					i(133739),	-- Tainted Runescale Koi
 					i(139666),	-- Tainted Runescale Koi [AP]
 				},
@@ -434,7 +391,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133708, {	-- Drowned Thistleleaf
 				["description"] = "This item will summon a Drowned Thistleleaf, which grants the buff Blessing of the Thistleleaf, increasing your chance to fish up Thorned Flounder.",
 				["maps"] = { VALSHARAH },
-				["g"] = {
+				["groups"] = {
 					i(133729),	-- Thorned Flounder
 					i(139656),	-- Thorned Flounder [AP]
 				},
@@ -442,7 +399,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133717, {	-- Enchanted Lure
 				["description"] = "This item will allow you to catch the rare fish Magic-Eater Frog in Suramar.",
 				["maps"] = { SURAMAR },
-				["g"] = {
+				["groups"] = {
 					i(133737),	-- Magic-Eater Frog
 					i(139664),	-- Magic-Eater Frog [AP]
 				},
@@ -450,19 +407,19 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133712, {	-- Frost Worm
 				["description"] = "This item will allow you to catch the rare fish Coldriver Carp in Highmountain.",
 				["maps"] = { HIGHMOUNTAIN },
-				["g"] = {
+				["groups"] = {
 					i(133732),	-- Coldriver Carp
 					i(139659),	-- Coldriver Carp [AP]
 				},
 			}),
 			i(133709, {	-- Funky Sea Snail
-				["description"] = "When the short buff expires, this item will disappear from your inventory and a Bitestone Fishbrul will spawn.  Kill it for the lure.",
+				["description"] = "When the short buff expires, this item will disappear from your inventory and a Bitestone Fishbrul will spawn. Kill it for the lure.",
 				["maps"] = { HIGHMOUNTAIN },
-				["g"] = {
+				["groups"] = {
 					n(102347, {	-- Bitestone Fishbrul
 						i(133710, {	-- Salmon Lure
 							["description"] = "This item will allow you to catch the rare fish Ancient Highmountain Salmon in Highmountain.",
-							["g"] = {
+							["groups"] = {
 								i(133733),	-- Ancient Highmountain Salmon
 								i(139660),	-- Ancient Highmountain Salmon [AP]
 							},
@@ -473,10 +430,10 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133721, {	-- Message in a Bottle
 				["description"] = "I hope that someone gets my...\nI hope that someone gets my...\nMESSAGE IN A BOOOOTTTLE, yeah.",
 				["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
-				["g"] = {
+				["groups"] = {
 					i(133722, {	-- Axefish Lure
 						["description"] = "You must be in |cffffffffThe Great Sea|r when you use this item to catch the respective rare fish.",
-						["g"] = {
+						["groups"] = {
 							i(133740),	-- Axefish
 							i(139667),	-- Axefish [AP]
 						},
@@ -484,12 +441,12 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			}),
 			i(133713, {	-- Moosehorn Hook
-				["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one.  As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
+				["description"] = "An important note - if you use this item with another bait active (or vice versa) the new buff WILL REPLACE the previous one. As such, it's best to wait until your bait buff expires before using this item. This does not apply to Arcane Lure, which can be used concurrently with any other bait/lure.",
 				["maps"] = { STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					i(133714, {	-- Silverscale Minnow
 						["description"] = "This item will allow you to catch the rare fish Thundering Stormray in Stormheim.",
-						["g"] = {
+						["groups"] = {
 							i(133736),	-- Thundering Stormray
 							i(139663),	-- Thundering Stormray [AP]
 						},
@@ -499,7 +456,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133707, {	-- Nightmare Nightcrawler
 				["description"] = "This item will allow you to catch the rare fish Terrorfin in Val'sharah.",
 				["maps"] = { VALSHARAH },
-				["g"] = {
+				["groups"] = {
 					i(133728),	-- Terrorfin
 					i(139655),	-- Terrorfin [AP]
 				},
@@ -507,7 +464,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133703, {	-- Pearlescent Conch
 				["description"] = "This item will allow you to catch the rare fish Nar'thalas Hermit in Azsuna.",
 				["maps"] = { AZSUNA },
-				["g"] = {
+				["groups"] = {
 					i(133726),	-- Nar'thalas Hermit
 					i(139653),	-- Nar'thalas Hermit [AP]
 				},
@@ -515,7 +472,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133705, {	-- Rotten Fishbone
 				["description"] = "This item will attract a Lorlathil Druid that will cast The Cat's Meow buff on you, increasing your chance to fish up Ancient Mossgill.",
 				["maps"] = { VALSHARAH },
-				["g"] = {
+				["groups"] = {
 					n(102349, {	-- Lorlathil Druid
 						i(133730),	-- Ancient Mossgill
 						i(139657),	-- Ancient Mossgill [AP]
@@ -525,7 +482,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133704, {	-- Rusty Queenfish Brooch
 				["description"] = "This item will give you a buff that will allow you to see and fish from Ghostly Queenfish schools.",
 				["maps"] = { AZSUNA },
-				["g"] = {
+				["groups"] = {
 					i(133727),	-- Ghostly Queenfish
 					i(139654),	-- Ghostly Queenfish [AP]
 				},
@@ -533,11 +490,11 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133701, {	-- Skrog Toenail
 				["description"] = "Upon expiration of the Skrog Toenail buff, a Murloc mob will appear. Kill it for the lure.",
 				["maps"] = { AZSUNA },
-				["g"] = {
+				["groups"] = {
 					n(102338, {	-- Salteye Skrog-Hunter
 						i(133702, {	-- Aromatic Murloc Slime
 							["description"] = "This item will allow you to catch the rare fish Leyshimmer Blenny in Azsuna.",
-							["g"] = {
+							["groups"] = {
 								i(133725),	-- Leyshimmer Blenny
 								i(139652),	-- Leyshimmer Blenny [AP]
 							},
@@ -546,9 +503,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				},
 			}),
 			i(133719, {	-- Sleeping Murloc
-				["description"] = "Using this item will awaken a Confused Seerspine Murloc, which will run around briefly and drop some Seerspine Puffers (as well as other fish) nearby.  Run over the fish to pick them up.\n\nIf you use this item on top of a pillar, the murloc won't have anywhere to run and it will be easier to pick up all the fish it drops.\n",
+				["description"] = "Using this item will awaken a Confused Seerspine Murloc, which will run around briefly and drop some Seerspine Puffers (as well as other fish) nearby. Run over the fish to pick them up.\n\nIf you use this item on top of a pillar, the murloc won't have anywhere to run and it will be easier to pick up all the fish it drops.\n",
 				["maps"] = { SURAMAR },
-				["g"] = {
+				["groups"] = {
 					n(102350, {	-- Confused Seerspine Murloc
 						i(133738),	-- Seerspine Puffer
 						i(139665),	-- Seerspine Puffer [AP]
@@ -558,15 +515,15 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133716, {	-- Soggy Drakescale
 				["description"] = "This item will allow you to catch the rare fish Graybelly Lobster in Stormheim.",
 				["maps"] = { STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					i(133735),	-- Graybelly Lobster
 					i(139662),	-- Graybelly Lobster [AP]
 				},
 			}),
 			i(133723, {	-- Stunned, Angry Shark
-				["description"] = "This item will spawn a Landlocked Shark, which will drop 7-9 Seabottom Squid when killed.  Note that this item only has a 1-minute duration in your bags, and it will disappear if you don't use it by then!\n\nYou must be in |cffffffffThe Great Sea|r to catch this.",
+				["description"] = "This item will spawn a Landlocked Shark, which will drop 7-9 Seabottom Squid when killed. Note that this item only has a 1-minute duration in your bags, and it will disappear if you don't use it by then!\n\nYou must be in |cffffffffThe Great Sea|r to catch this.",
 				["maps"] = { AZSUNA, VALSHARAH, HIGHMOUNTAIN, STORMHEIM, BROKEN_SHORE, SURAMAR, BROKEN_ISLES },
-				["g"] = {
+				["groups"] = {
 					n(102359, {	-- Landlocked Shark
 						i(133741),	-- Seabottom Squid
 						i(139668),	-- Seabottom Squid [AP]
@@ -576,10 +533,10 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(133711, {	-- Swollen Murloc Egg
 				["description"] = "This item will spawn a Swamprock Tadpole that grants the Blessing of the Murlocs buff, increasing your chance to fish up Mountain Puffer.",
 				["maps"] = { HIGHMOUNTAIN },
-				["g"] = {
+				["groups"] = {
 					n(102339, {	-- Swamprock Tadpole
 						["description"] = "Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",
-						["g"] = {
+						["groups"] = {
 							i(133731),	-- Mountain Puffer
 							i(139658),	-- Mountain Puffer [AP]
 						},
@@ -592,14 +549,14 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "i", 133887 },	-- Luminous Pearl
 			}),
 			q(40961, {	-- The Dalaran Fountain
-				["qg"] = 90417,	-- Archmage Khadgar
 				["sourceQuest"] = 40960,	-- Luminous Pearl
+				["qg"] = 90417,	-- Archmage Khadgar
 				["coord"] = { 28.8, 48.6, LEGION_DALARAN },
 			}),
 			q(41010, {	-- Fish Frenzy
-				["qg"] = 102639,	-- Nat Pagle
-				["sourceQuest"] = 40961,	-- The Dalaran Fountain
 				["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+				["sourceQuest"] = 40961,	-- The Dalaran Fountain
+				["qg"] = 102639,	-- Nat Pagle
 				["maps"] = { LEGION_DALARAN },	-- TODO replace with coord?
 				["groups"] = {
 					artifact(841),	-- Base Skin
@@ -624,7 +581,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(13502, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Secret Fish and Where to Find Them
 				["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1-hour buff that allows you to see Secret Fish, which appear in bubbles around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you fulfill the requirements for each fish).",
 				["provider"] = { "i", 167698 },	-- Secret Fish Goggles
-				["g"] = {
+				["groups"] = {
 					i(168016),	-- Hyper-Compressed Ocean (TOY!)
 					crit(44803, {	-- Ancient Mana Fin
 						["itemID"] = 167708,	-- Ancient Mana Fin
@@ -784,7 +741,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(16632),	-- Dragon Isles Fisherman
 			ach(17207, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Discombobberlated
 				["provider"] = { "i", 136377 },	-- Oversized Bobber
-				["g"] = {
+				["groups"] = {
 					i(202207),	-- Reusable Oversized Bobber (TOY!)
 				},
 			})),
@@ -894,7 +851,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(226385),	-- Oxidized Wrench	(COSMETIC!)
 		}),
 		filter(MISC, {
-			i(226392),	-- Careless Dasher's Treasure
+			i(226392, {	-- Careless Dasher's Treasure
+				currency(3055),
+			}),
 			i(225768),	-- Crusty Darkmoon Card
 		}),
 	})),

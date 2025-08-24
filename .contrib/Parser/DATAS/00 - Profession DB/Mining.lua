@@ -1,5 +1,12 @@
 local i = GetRecipeHelperForProfession(MINING);
 
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.5 --
+------------------
+--- ITEM ---
+i(234278, 1213638);	-- Smelt Obsidian-Infused Thorium Bar
+-- #endif
 -----------------
 --   CLASSIC   --
 -----------------
@@ -323,6 +330,13 @@ i(0, 421247);		-- Living Draconium Deposit
 i(0, 421244);		-- Living Serevite Deposit
 i(0, 422809);		-- Overload Living Deposit
 
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 423882);		-- Overload Test Deposit
+
 ------------------
 -- PATCH 11.0.2 --
 ------------------
@@ -367,6 +381,8 @@ i(0, 442332);		-- Refine Ironclaw Ore++
 i(0, 442333);		-- Refine Ironclaw Ore+++
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH 11.2.0 --
 ------------------
-i(0, 423882);		-- Overload Test Deposit
+--- DISCOVERY ---
+i(0, 1250351);		-- Desolate Deposit
+i(0, 1250356);		-- Rich Desolate Deposit

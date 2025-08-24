@@ -1,7 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ABOMINABLE_STITCHING, {
 		n(CRAFTABLES, {

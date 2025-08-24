@@ -208,7 +208,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	n(COMMON_VENDOR_ITEMS, {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
 		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		["OnInit"] = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
 		["groups"] = bubbleDownClassicRep(2586, {	-- ACA / DSL
 			{	-- Neutral
 
@@ -3242,7 +3242,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			},
 			["maps"] = { TIRISFAL_GLADES },
 		},
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
 		["classes"] = { WARLOCK },
 		["groups"] = {
 			i(205022, {	-- Rune of Soul Siphon
@@ -3285,7 +3284,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						1753,	-- Maggot Eye
 					},
 				},
-				["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
 			}),
 		},
 	}),
@@ -3489,7 +3487,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}), {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
 		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.maxReputation then child.maxReputation[1] = rep; end end return t; end]],
+		["OnInit"] = [[function(t) local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.maxReputation then child.maxReputation[1] = rep; end end return t; end]],
 		["groups"] = {
 			n(QUESTS, {
 				q(78612, {	-- A Full Shipment [iLvl 10 - Gathered]

@@ -127,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
 				ach(4078, {	-- Realm First! Grand Crusader
 					["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
-					["g"] = {
+					["groups"] = {
 						title(135, {	-- Grand Crusader <Name>
 							["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
 						}),
@@ -1239,8 +1239,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if BEFORE 4.0.1
 					currency(301),	-- Emblem of Triumph
 					-- #endif
-					a(i(47654)),	-- Pattern: Bejeweled Wizard's Bracers [Alliance]
-					h(i(47639)),	-- Pattern: Bejeweled Wizard's Bracers [Horde]
+					i(47654, {	-- Pattern: Bejeweled Wizard's Bracers [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47639, {	-- Pattern: Bejeweled Wizard's Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					i(47629, {	-- Pattern: Black Chitin Bracers [A] (RECIPE!)
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1283,18 +1287,30 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					i(47652, {	-- Pattern: Lunar Eclipse Robes [H] (RECIPE!)
 						["races"] = HORDE_ONLY,
 					}),
-					a(i(47655)),	-- Pattern: Merlin's Robe [Alliance]
-					h(i(47638)),	-- Pattern: Merlin's Robe [Horde]
+					i(47655, {	-- Pattern: Merlin's Robe [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47638, {	-- Pattern: Merlin's Robe [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					i(47633, {	-- Pattern: Moonshadow Armguards [A] (RECIPE!)
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(47653, {	-- Pattern: Moonshadow Armguards [H] (RECIPE!)
 						["races"] = HORDE_ONLY,
 					}),
-					a(i(47656)),	-- Pattern: Royal Moonshroud Bracers [Alliance]
-					h(i(47637)),	-- Pattern: Royal Moonshroud Bracers [Horde]
-					a(i(47657)),	-- Pattern: Royal Moonshroud Robe [Alliance]
-					h(i(47636)),	-- Pattern: Royal Moonshroud Robe [Horde]
+					i(47656, {	-- Pattern: Royal Moonshroud Bracers [H] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47637, {	-- Pattern: Royal Moonshroud Bracers [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
+					i(47657, {	-- Pattern: Royal Moonshroud Robe [A] (RECIPE!)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(47636, {	-- Pattern: Royal Moonshroud Robe [H] (RECIPE!)
+						["races"] = HORDE_ONLY,
+					}),
 					i(47622, {	-- Plans: Breastplate of the White Knight [A] (RECIPE!)
 						["races"] = ALLIANCE_ONLY,
 					}),

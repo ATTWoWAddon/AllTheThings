@@ -37,8 +37,10 @@ i(16085, 0);		-- Artisan First Aid - Heal Thyself
 -----------------
 --- ITEM ---
 i(22012, 27028);	-- First Aid (Master) [TRAINER: 3.1.0]
+-- #if BEFORE BFA
 i(21993, 27033);	-- Heavy Netherweave Bandage [TRAINER: 3.1.0]
 i(21992, 27032);	-- Netherweave Bandage [TRAINER: 3.1.0]
+-- #endif
 
 -----------------
 -- PATCH 3.0.2 --

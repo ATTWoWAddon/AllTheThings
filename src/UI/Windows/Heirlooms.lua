@@ -47,14 +47,4 @@ app:CreateWindow("Heirlooms", {
 			end
 		};
 	end,
-	OnLoad = function(self, settings)
-		if settings.Progress then
-			self.data.progress = settings.Progress;
-			self.data.total = settings.Total;
-		end
-	end,
-	OnSave = function(self, settings)
-		settings.Progress = self.data.progress;
-		settings.Total = self.data.total;
-	end,
 });

@@ -9,8 +9,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28746, {	-- Penetrating Their Defenses
-					["qg"] = 39908,	-- Brann Bronzebeard
 					["sourceQuest"] = 28654,	-- The Heart of the Matter
+					["qg"] = 39908,	-- Brann Bronzebeard
 					["groups"] = {
 						i(66913),	-- Repository Gauntlets
 						i(66911),	-- Offline Greaves
@@ -18,8 +18,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28753, {	-- Doing it the Hard Way
-					["qg"] = 39908,	-- Brann Bronzebeard
 					["sourceQuest"] = 28746,	-- Penetrating Their Defenses
+					["qg"] = 39908,	-- Brann Bronzebeard
 					["groups"] = {
 						i(66917),	-- True Archaeologist's Bracers
 						i(66921),	-- Helm of Reorigination

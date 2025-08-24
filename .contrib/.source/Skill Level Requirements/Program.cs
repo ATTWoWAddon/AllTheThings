@@ -83,6 +83,24 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
 }
 File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "04 - Cataclysm.lua"), sb.Append("-- #endif").ToString());
 
+// Mists of Pandaria Profession Data
+sb.Clear().AppendLine("-- #if AFTER 5.0.0").AppendLine(commonHeader);
+foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "mop-classic/").Result;
+    if (pageString == null) continue;
+    Console.Write("cata/");
+    Helper.Parse(pageString, sb, profession);
+}
+foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "mop-classic/").Result;
+    if (pageString == null) continue;
+    Console.Write("cata/");
+    Helper.Parse(pageString, sb, profession);
+}
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "05 - Mists of Pandaria.lua"), sb.Append("-- #endif").ToString());
+
 
 
 // Retail Profession Data

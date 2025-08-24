@@ -19,6 +19,7 @@ MIDSUMMER_FIRE_FESTIVAL_HEADER = createHeader({
 		es = "Festival del Fuego del Solsticio de Verano",
 		fr = "Fête du Feu du solstice d’été",
 		it = "Fuochi di Mezza Estate",
+		mx = "Festival del Fuego del Solsticio de Verano",
 		pt = "Festival do Fogo do Solstício",
 		ru = "Огненный Солнцеворот",
 		ko = "한여름 불꽃축제",
@@ -38,6 +39,7 @@ local ALLIANCE_BONFIRE_OBJECT_DATA = {
 		de = "Freudenfeuer der Allianz",
 		fr = "Feu de joie de l'Alliance",
 		it = "Falò dell'Alleanza",
+		mx = "Fogata de la Alianza",
 		pt = "Fogueira da Aliança",
 		ru = "Большой костер Альянса",
 		ko = "얼라이언스 화톳불",
@@ -56,6 +58,7 @@ local HORDE_BONFIRE_OBJECT_DATA = {
 		de = "Freudenfeuer der Horde",
 		fr = "Feu de joie de la Horde",
 		it = "Falò dell'Orda",
+		mx = "Fogata de la Horda",
 		pt = "Fogueira da Horda",
 		ru = "Большой костер Орды",
 		ko = "호드 화톳불",
@@ -68,11 +71,11 @@ function abonfire(questID, t)
 	t.races = ALLIANCE_ONLY;
 	t.isYearly = true;
 	if t.provider and t.provider[1] == "o" then
-		ObjectDB[t.provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
+		ObjectDB[t.provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
 	elseif t.providers then
 		for i,provider in ipairs(t.providers) do
 			if provider and provider[1] == "o" then
-				ObjectDB[provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
+				ObjectDB[provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
 			end
 		end
 	end
@@ -83,11 +86,11 @@ function hbonfire(questID, t)
 	t.races = HORDE_ONLY;
 	t.isYearly = true;
 	if t.provider and t.provider[1] == "o" then
-		ObjectDB[t.provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
+		ObjectDB[t.provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
 	elseif t.providers then
 		for i,provider in ipairs(t.providers) do
 			if provider and provider[1] == "o" then
-				ObjectDB[provider[2]] = HORDE_BONFIRE_OBJECT_DATA;
+				ObjectDB[provider[2]] = ALLIANCE_BONFIRE_OBJECT_DATA;
 			end
 		end
 	end
@@ -101,7 +104,11 @@ end
 
 local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
 local EARTHEN_RING_ELDER_COORDS = {
+	-- #if BEFORE DF
 	{ 49.4, 72.0, STORMWIND_CITY },
+	-- #else
+	{ 47.8, 72.1, STORMWIND_CITY },	-- Trading post moved vendor
+	-- #endif
 	{ 47.2, 37.6, ORGRIMMAR },
 	{ 64.8, 27.4, IRONFORGE },
 	{ 21.4, 24.4, THUNDER_BLUFF },
@@ -203,31 +210,25 @@ local FLAME_STEAL_REWARDS = {
 
 local MERCHANT_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 23247, 600 } },	-- Burning Blossom
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_7_2_5 },
 	}),
-
 	i(116439, {	-- Blazing Cindercrawler (PET!)
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_6_0_2 },
@@ -244,10 +245,6 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_6_0_2 },
 	}),
-	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
-		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
-		["timeline"] = { ADDED_10_1_0 },
-	}),
 	i(166746, {	-- Fire Eater's Hearthstone (TOY!)
 		["cost"] = { { "i", 23247, 300 } },	-- Burning Blossom
 		["timeline"] = { ADDED_8_1_5 },
@@ -255,6 +252,22 @@ local MERCHANT_GROUPS = {
 	i(188701, {	-- Fire Festival Batons (TOY!)
 		["cost"] = { { "i", 23247, 50 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
+	}),
+	i(206038, {	-- Flamin' Ring of Flashiness (TOY!)
+		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_1_0 },
+	}),
+	i(242742, {	-- Grand Belt of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
+	}),
+	i(242740, {	-- Grand Helm of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
+	}),
+	i(242741, {	-- Grand Mantle of the Fire Festival (COSMETIC!)
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_11_1_7 },
 	}),
 	i(74278, {	-- Helm of the Fire Festival
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
@@ -367,22 +380,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
-					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 					i(117373, {	-- Frostscythe of Lord Ahune
 						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
 					}),
-					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-						["timeline"] = { ADDED_10_2_7 },
+					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
 					}),
-					hqt(83134, {	-- Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)
-						["name"] = "Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)",
+					hqt(83134, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+						["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
+						["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
 						["timeline"] = { ADDED_10_2_7 },
 						["isDaily"] = true,
+						["groups"] = {
+							i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
+								["timeline"] = { ADDED_10_2_7 },
+							}),
+							i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+						},
 					}),
 				},
 			}),
@@ -392,8 +423,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(95426, {	-- Frostscythe of Lord Ahune [Level 90]
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
+
+					-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+					-- #if ANYCLASSIC
+					i(248747, {	-- Frostscythe of Lord Ahune [Level 85 - ilvl 403]
+						["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+					}),
+					-- #endif
+
 					i(69771, {	-- Frostscythe of Lord Ahune [Level 85]
-						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["timeline"] = {
+							ADDED_4_0_1,
+							-- #if ANYCLASSIC
+							REMOVED_4_4_2,
+							-- #else
+							REMOVED_5_0_4,
+							-- #endif
+						},
 					}),
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
@@ -452,21 +498,75 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 
+			-- WOUTER NOTE: Blizzard added 403 ilvl items specific to Cata Classic, probably because Midsummer happened a 2nd time in late Dragon Soul
+			-- #if ANYCLASSIC
+			i(248751, {	-- Cloak of the Frigid Winds [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248752, {	-- Icebound Cloak [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248750, {	-- Shroud of Winter's Chill [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248749, {	-- The Frost Lord's Battle Shroud [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			i(248748, {	-- The Frost Lord's War Cloak [Level 85]
+				["timeline"] = { ADDED_4_4_2, REMOVED_5_0_4 },
+			}),
+			-- #endif
+
 			-- Cataclysm Rewards
 			i(69769, {	-- Cloak of the Frigid Winds [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69770, {	-- Icebound Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69768, {	-- Shroud of Winter's Chill [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69767, {	-- The Frost Lord's Battle Shroud [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 			i(69766, {	-- The Frost Lord's War Cloak [Level 85]
-				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["timeline"] = {
+					ADDED_4_0_1,
+					-- #if ANYCLASSIC
+					REMOVED_4_4_2,
+					-- #else
+					REMOVED_5_0_4,
+					-- #endif
+				},
 			}),
 
 			i(54805, {	-- Cloak of the Frigid Winds [Level 80]
@@ -639,6 +739,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_10_1_0 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(41631, {	-- Flame Warden of Khaz Algar (A)
+				["timeline"] = { ADDED_11_1_7 },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 		})),
 		n(FACTION_HEADER_HORDE, bubbleDown({ ["races"] = HORDE_ONLY }, {
 			ach(1039, {	-- The Flame Keeper (Horde)
@@ -761,6 +865,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				["timeline"] = { ADDED_8_1_5 },
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(41632, {	-- Flame Keeper of Khaz Algar (A)
+				["timeline"] = { ADDED_11_1_7 },
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 		})),
 		ach(271, {	-- Burning Hot Pole Dance
 			["description"] = "You need the Mantle of the Fire Festival, Vestment of Summer, and the Sandals of Summer to complete the Midsummer set.",
@@ -816,6 +924,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9386, {	-- A Light in Dark Places
+			["sourceQuest"] = 9319,	-- A Light in Dark Places
 			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
@@ -832,7 +941,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SCHOLOMANCE,
 			},
 			-- #endif
-			["sourceQuest"] = 9319,	-- A Light in Dark Places
 			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -847,8 +955,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9365, {	-- A Thief's Reward (A)
-			["qg"] = FESTIVAL_LOREMASTER_ID,
-			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["sourceQuests"] = {
 				9324,	-- Stealing Orgrimmar's Flame
 				9325,	-- Stealing Thunder Bluff's Flame
@@ -857,6 +963,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #endif
 				9326,	-- Stealing the Undercity's Flame
 			},
+			["qg"] = FESTIVAL_LOREMASTER_ID,
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -865,8 +973,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9339, {	-- A Thief's Reward (H)
-			["qg"] = FESTIVAL_TALESPINNER_ID,
-			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["sourceQuests"] = {
 				9332,	-- Stealing Darnassus's Flame
 				9331,	-- Stealing Ironforge's Flame
@@ -875,6 +981,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				11933,	-- Stealing the Exodar's Flame
 				-- #endif
 			},
+			["qg"] = FESTIVAL_TALESPINNER_ID,
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -883,24 +991,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11696, {	-- Ahune is Here!
-			["qg"] = 25710,	-- Numa Cloudsister
 			["sourceQuest"] = 11955,	-- Ahune, the Frost Lord
+			["qg"] = 25710,	-- Numa Cloudsister
 			["timeline"] = { ADDED_2_4_0, REMOVED_4_0_1 },
 			["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 			["lvl"] = lvlsquish(65, 15, 15),
 		}),
 		q(11955, {	-- Ahune, the Frost Lord
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_4_0_1 },
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(65, 15, 15),
 		}),
 		q(11891, {	-- An Innocent Disguise
-			["qg"] = 25324,	-- Earthen Ring Guide
-			["sourceQuest"] = 11886,	-- Unusual Activity
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["sourceQuest"] = 11886,	-- Unusual Activity
+			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 10.2, 15.3, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
@@ -916,10 +1024,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9389, {	-- Flickering Flames in Eastern Kingdoms
-			["qgs"] = {
-				FESTIVAL_LOREMASTER_ID,
-				FESTIVAL_TALESPINNER_ID,
-			},
 			-- #if BEFORE TBC
 			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
 			["maps"] = {
@@ -930,6 +1034,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = 134467,
 			-- #endif
+			["qgs"] = {
+				FESTIVAL_LOREMASTER_ID,
+				FESTIVAL_TALESPINNER_ID,
+			},
 			["timeline"] = { REMOVED_2_4_0 },
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -954,10 +1062,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #endif
 		}),
 		q(9388, {	-- Flickering Flames in Kalimdor
-			["qgs"] = {
-				FESTIVAL_LOREMASTER_ID,
-				FESTIVAL_TALESPINNER_ID,
-			},
 			-- #if BEFORE TBC
 			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
 			["maps"] = {
@@ -968,6 +1072,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 			["icon"] = 134467,
 			-- #endif
+			["qgs"] = {
+				FESTIVAL_LOREMASTER_ID,
+				FESTIVAL_TALESPINNER_ID,
+			},
 			["timeline"] = { REMOVED_2_4_0 },
 			["lvl"] = 1,
 			-- #if BEFORE TBC
@@ -995,30 +1103,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_LOREMASTER_ID,
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35725, 1 },	-- Summer Incense (Provided)
-			},
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(23247),	-- Burning Blossom
+				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
 		q(11966, {	-- Incense for the Festival Scorchlings (H)
 			["qg"] = FESTIVAL_TALESPINNER_ID,
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
-			["cost"] = {
-				{ "i", 35725, 1 },	-- Summer Incense (Provided)
-			},
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(23247),	-- Burning Blossom
+				i(35725),	-- Summer Incense (QI!)
 			},
 		}),
 		q(29092, {	-- Inform the Elder (A)
-			["qg"] = 25324,	-- Earthen Ring Guide
-			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["sourceQuest"] = 11891,	-- An Innocent Disguise
+			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
@@ -1028,9 +1132,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["lvl"] = lvlsquish(16, 1, 1),
 		}),
 		q(12012, {	-- Inform the Elder (H)
-			["qg"] = 25324,	-- Earthen Ring Guide
-			["sourceQuest"] = 11891,	-- An Innocent Disguise
 			["description"] = "Use your Totemic Beacon to summon the quest giver.",
+			["sourceQuest"] = 11891,	-- An Innocent Disguise
+			["qg"] = 25324,	-- Earthen Ring Guide
 			["coord"] = { 16.0, 20.8, ASHENVALE },
 			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
@@ -1043,8 +1147,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["lvl"] = lvlsquish(16, 1, 1),
 		}),
 		q(11924, {	-- More Torch Catching (A)
-			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11657,	-- Torch Catching (A)
+			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -1057,8 +1161,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11925, {	-- More Torch Catching (H)
-			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11923,	-- Torch Catching (H)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
@@ -1071,8 +1175,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11921, {	-- More Torch Tossing (A)
-			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11657,	-- Torch Catching (A)
+			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
@@ -1085,8 +1189,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11926, {	-- More Torch Tossing (H)
-			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11923,	-- Torch Catching (H)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
@@ -1100,13 +1204,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		{	-- More Torch Tossing
 			["allianceQuestData"] = q(82080, {	-- More Torch Tossing (A)
-				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 				["sourceQuest"] = 11657,	-- Torch Catching (A)
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			}),
 			["hordeQuestData"] = q(82109, {	-- More Torch Tossing (H)
-				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 				["sourceQuest"] = 11923,	-- Torch Catching (H)
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			}),
 			["timeline"] = { ADDED_10_2_7 },
@@ -1119,18 +1223,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		},
 		q(11882, {	-- Playing with Fire (A)
-			["qg"] = 25962,	-- Fire Eater (A)
+			["qgs"] = {
+				25962,	-- Fire Eater (A)
+				-- #if AFTER 11.1.7
+				240483,	-- Flame Eater
+				-- #endif
+			},
+			-- #if AFTER 11.1.7
+			["coord"] = { 47.2, 53.6, DORNOGAL },
+			-- #endif
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(11915, {	-- Playing with Fire (H)
-			["qg"] = 25994,	-- Fire Eater (H)
+			["qgs"] = {
+				25994,	-- Fire Eater (H)
+				-- #if AFTER 11.1.7
+				240483,	-- Flame Eater
+				-- #endif
+			},
+			-- #if AFTER 11.1.7
+			["coord"] = { 47.2, 53.6, DORNOGAL },
+			-- #endif
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(11972, {	-- Shards of Ahune
-			["provider"] = { "i", 35723 },	-- Shards of Ahune
 			["altQuests"] = { 11976 },	-- Ice Shards (Never Implemented?)
+			["provider"] = { "i", 35723 },	-- Shards of Ahune
 			["timeline"] = { ADDED_2_4_0 },
 			-- #if BEFORE WRATH
 			["lvl"] = 65,
@@ -1250,13 +1370,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(11917, {	-- Striking Back [Level 22, Ashenvale]	-- The level requirement was removed in 9.0.5, all "Striking Back" quests could be completed daily.
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { ASHENVALE },
@@ -1273,13 +1393,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11947, {	-- Striking Back [Level 32, Desolace]
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { DESOLACE },
@@ -1296,13 +1416,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11948, {	-- Striking Back [Level 43, Stranglethorn Vale]
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
@@ -1331,13 +1451,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11952, {	-- Striking Back [Level 51, Burning Steppes]
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { BURNING_STEPPES },
@@ -1354,13 +1474,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11953, {	-- Striking Back [Level 60, Silithus]
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { SILITHUS },
@@ -1377,13 +1497,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11954, {	-- Striking Back [Level 67, Hellfire Peninsula]
-			["qg"] = EARTHEN_RING_ELDER_ID,
 			["sourceQuests"] = {
 				12012,	-- Inform the Elder (Both)
 				-- #if AFTER CATA
 				29092,	-- Inform the Elder (A)
 				-- #endif
 			},
+			["qg"] = EARTHEN_RING_ELDER_ID,
 			["coords"] = EARTHEN_RING_ELDER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = { HELLFIRE_PENINSULA },
@@ -1403,14 +1523,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9367, {	-- The Festival of Fire (A)
-			["qg"] = FESTIVAL_LOREMASTER_ID,
-			-- #if BEFORE TBC
-			["coords"] = FESTIVAL_LOREMASTER_COORDS,
-			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1427,16 +1539,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
-		}),
-		q(9368, {	-- The Festival of Fire (H)
-			["qg"] = FESTIVAL_TALESPINNER_ID,
+			["qg"] = FESTIVAL_LOREMASTER_ID,
 			-- #if BEFORE TBC
-			["coords"] = FESTIVAL_TALESPINNER_COORDS,
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			-- #endif
 			["timeline"] = { REMOVED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 1,
+		}),
+		q(9368, {	-- The Festival of Fire (H)
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1453,6 +1565,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
+			["qg"] = FESTIVAL_TALESPINNER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
+			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = 1,
 		}),
 		q(11970, {	-- The Master of Summer Lore (A)
 			["qgs"] = {
@@ -1462,7 +1582,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				19172,	-- Gnome Commoner
 				19173,	-- Night Elf Commoner
 				20102,	-- Goblin Commoner
+				-- #if AFTER 11.1.7
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
 			},
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				STORMWIND_CITY,
 				IRONFORGE,
@@ -1489,8 +1614,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER MOP
 				ISLE_OF_THUNDER,
 				-- #endif
+				-- #if AFTER TWW
+				DORNOGAL
+				-- #endif
 			},
-			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1505,7 +1632,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				19177,	-- Troll Commoner
 				19178,	-- Forsaken Commoner
 				20102,	-- Goblin Commoner
+				-- #if AFTER 11.1.7
+				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				-- #endif
 			},
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				ORGRIMMAR,
 				THUNDER_BLUFF,
@@ -1530,8 +1662,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #if AFTER MOP
 				ISLE_OF_THUNDER,
 				-- #endif
+				-- #if AFTER TWW
+				DORNOGAL
+				-- #endif
 			},
-			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1539,8 +1673,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11657, {	-- Torch Catching (A)
-			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11731,	-- Torch Tossing (A)
+			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -1553,8 +1687,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(11923, {	-- Torch Catching (H)
-			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11922,	-- Torch Tossing (H)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
@@ -1569,7 +1703,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11731, {	-- Torch Tossing (A)
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1581,7 +1715,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11922, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				objective(1, {	-- Hit 8 braziers.
@@ -1589,6 +1723,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				i(23247),	-- Burning Blossom
 			},
+		}),
+		q(82087, {	-- Torch Tossing (A)
+			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
+			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
+			["timeline"] = { ADDED_10_2_7 },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = { i(23247) },	-- Burning Blossom
+		}),
+		q(82105, {	-- Torch Tossing (H)
+			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
+			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
+			["timeline"] = { ADDED_10_2_7 },
+			["races"] = HORDE_ONLY,
+			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(11886, {	-- Unusual Activity
 			["qg"] = EARTHEN_RING_ELDER_ID,
@@ -1612,6 +1760,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9322, {	-- Wild Fires in Kalimdor
+			-- #if BEFORE TBC
+			["icon"] = 134467,
+			-- #endif
 			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
@@ -1625,9 +1776,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = 1,
-			-- #if BEFORE TBC
-			["icon"] = 134467,
-			-- #endif
 			["groups"] = {
 				-- #if BEFORE TBC
 				objective(1, {	-- Flame of Azshara
@@ -1652,19 +1800,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(9323, {	-- Wild Fires in the Eastern Kingdoms
-			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
-			-- #if BEFORE TBC
-			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
-			["maps"] = {
-				BLASTED_LANDS,
-				EASTERN_PLAGUELANDS,
-				THE_HINTERLANDS,
-				SEARING_GORGE,
-			},
-			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1686,6 +1821,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
+			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
+			["maps"] = {
+				BLASTED_LANDS,
+				EASTERN_PLAGUELANDS,
+				THE_HINTERLANDS,
+				SEARING_GORGE,
+			},
+			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["isYearly"] = true,
+			["lvl"] = 1,
 		}),
 
 		-- Bonfire Descecration Quests
@@ -2378,11 +2526,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(11809, {	-- Honor the Flame — Bloodmyst Isle
 					["qg"] = 25891,	-- Bloodmyst Isle Flame Warden
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.0, 69.0, BLOODMYST_ISLE },
-						-- #else
-							{ 55.8, 67.9, BLOODMYST_ISLE },
-						-- #endif
+						{ 55.8, 67.9, BLOODMYST_ISLE },
 					},
 				}),
 				honortheflame(13485, {	-- Honor the Flame — Borean Tundra
@@ -2536,7 +2680,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(13486, {	-- Honor the Flame — Sholazar Basin
 					["qg"] = 32802,	-- Sholazar Basin Flame Warden
-					["coord"] = { 47.0, 66.0, SHOLAZAR_BASIN },
+					["coord"] = { 48.1, 66.4, SHOLAZAR_BASIN },
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				honortheflame(11831, {	-- Honor the Flame — Silithus
@@ -2583,7 +2727,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25916,	-- Tanaris Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.0, 29.0, TANARIS },
+						{ 52.6, 30.3, TANARIS },
 						-- #else
 						{ 52.8, 29.4, TANARIS },
 						-- #endif
@@ -2603,6 +2747,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25907,	-- Terokkar Forest Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
+						-- Coords are 54.1, 55.5 in retail currently July 2025
 						{ 55.0, 55.0, TEROKKAR_FOREST },
 						-- #else
 						{ 54.1, 55.5, TEROKKAR_FOREST },
@@ -2630,7 +2775,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
-					["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
+					["coord"] = { 47.2, 29, TWILIGHT_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(28950, {	-- Honor the Flame — Uldum
@@ -3133,24 +3278,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["timeline"] = { ADDED_10_1_0 },
 				}),
 				honortheflame(87356, {	-- Honor the Flame - Azj-Kahet
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, AZJ_KAHET },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238339,	-- Azj-Kahet Flame Guardian
+					["coord"] = { 55.54, 43.43, AZJ_KAHET },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87355, {	-- Honor the Flame - Hallowfall
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, HALLOWFALL },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238338,	-- Hallowfall Guardian
+					["coord"] = { 42.45, 51.59, HALLOWFALL },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87342, {	-- Honor the Flame - Isle of Dorn
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, ISLE_OF_DORN },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238236,	-- Isle of Dorn Flame Guardian
+					["coord"] = { 48.52, 51.66, DORNOGAL },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				honortheflame(87357, {	-- Honor the Flame - The Ringing Deeps
-					--["qg"] = ?,	-- ?
-					--["coord"] = { ?, ?, THE_RINGING_DEEPS },
-					["timeline"] = { ADDED_11_1_5 },
+					["qg"] = 238340,	-- The Ringing Deeps Guardian
+					["coord"] = { 43.65, 32.59, THE_RINGING_DEEPS },
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 			},
 		}),

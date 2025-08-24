@@ -1,11 +1,17 @@
-
 -- There is not currently an automatic way to know whether an Item is BoA or BoP since in both
 -- situations [b] = 1
 -- Items listed in this file will be directly marked as BoE to allow ATT to properly
 -- treat them for their BoA status
 local Items = ItemDBConditional;
+-- Regular BoA/WuE Item
 local i = function(itemID)
 	local item = { ["b"] = 2 };
+	Items[itemID] = item;
+	return item;
+end
+-- BoA/WuE Item forcibly ignoring bonuses (i.e. within Difficulties etc.)
+local ib = function(itemID)
+	local item = { ["b"] = 2, ["ignoreBonus"] = true };
 	Items[itemID] = item;
 	return item;
 end
@@ -15,6 +21,23 @@ end
 -- #if SEASON_OF_DISCOVERY
 i(226500);	-- Chipped Drakefire Amulet
 -- #endif
+
+-- MOP 
+-- #if ANYCLASSIC
+i(247497);	-- Order of the Cloud Serpent Flight Log
+-- #endif
+i(93231);	-- Grand Commendation of Operation: Shieldwall
+i(93225);	-- Grand Commendation of the Anglers
+i(93224);	-- Grand Commendation of the August Celestials
+i(93232);	-- Grand Commendation of the Dominance Offensive
+i(93215);	-- Grand Commendation of the Golden Lotus
+i(95545);	-- Grand Commendation of the Kirin Tor Offensive
+i(92522);	-- Grand Commendation of the Klaxxi
+i(93230);	-- Grand Commendation of the Lorewalkers
+i(93229);	-- Grand Commendation of the Order of the Cloud Serpent
+i(93220);	-- Grand Commendation of the Shado-Pan
+i(95548);	-- Grand Commendation of the Sunreaver Onslaught
+i(93226);	-- Grand Commendation of the Tillers
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
@@ -250,9 +273,46 @@ i(42945);	-- Venerable Dal'Rend's Sacred Charge
 i(48716);	-- Venerable Mass of McGowan
 
 -----------------
---   CLASSIC   --
+-- PATCH 5.4.0 --
 -----------------
-i(12844);	-- Argent Dawn Valor Token
+-- Flexible
+i(105674);	-- Hellscream's Barrier
+i(105672);	-- Hellscream's Cleaver
+i(105679);	-- Hellscream's Decapitator
+i(105678);	-- Hellscream's Doomblade
+i(105673);	-- Hellscream's Pig Sticker
+i(105671);	-- Hellscream's Razor
+i(105680);	-- Hellscream's Shield Wall
+i(105676);	-- Hellscream's Tome of Destruction
+i(105677);	-- Hellscream's War Staff
+i(105670);	-- Hellscream's Warbow
+i(105675);	-- Hellscream's Warmace
+
+-- Normal
+i(104409);	-- Hellscream's Barrier
+i(104404);	-- Hellscream's Cleaver
+i(104405);	-- Hellscream's Decapitator
+i(104401);	-- Hellscream's Doomblade
+i(104403);	-- Hellscream's Pig Sticker
+i(104400);	-- Hellscream's Razor
+i(104407);	-- Hellscream's Shield Wall
+i(104408);	-- Hellscream's Tome of Destruction
+i(104406);	-- Hellscream's War Staff
+i(104399);	-- Hellscream's Warbow
+i(104402);	-- Hellscream's Warmace
+
+-- Heroic
+i(105687);	-- Hellscream's Barrier
+i(105685);	-- Hellscream's Cleaver
+i(105692);	-- Hellscream's Decapitator
+i(105691);	-- Hellscream's Doomblade
+i(105686);	-- Hellscream's Pig Sticker
+i(105684);	-- Hellscream's Razor
+i(105693);	-- Hellscream's Shield Wall
+i(105689);	-- Hellscream's Tome of Destruction
+i(105690);	-- Hellscream's War Staff
+i(105683);	-- Hellscream's Warbow
+i(105688);	-- Hellscream's Warmace
 
 -----------------
 -- PATCH 6.1.0 --
@@ -459,6 +519,9 @@ i(206270);	-- Volcanic Equipment Chest
 ------------------
 -- PATCH 10.1.5 --
 ------------------
+-- #if AFTER 10.1.5
+i(12844);	-- Argent Dawn Valor Token
+-- #endif
 i(206375);	-- Corruptor's Scourgestone
 i(208567);	-- Medal of Conquest (Season 2)
 i(206576);	-- Death's Bargaining Chip
@@ -574,528 +637,528 @@ i(225493);	-- Medal of Conquest (Season 1)
 -- #if AFTER TWW
 
 -- AQ40 Tokens
-i(20928)	-- Qiraji Bindings of Commands
-i(20932)	-- Qiraji Bindings of Dominance
-i(20930)	-- Vek'lor's Diadem
-i(20926)	-- Vek'nilash's Circlet
-i(20927)	-- Ouro's Intact Hide
-i(20931)	-- Skin of the Great Sandworm
-i(20929)	-- Carapace of the Old God
-i(20933)	-- Husk of the Old God
+ib(20928)	-- Qiraji Bindings of Commands
+ib(20932)	-- Qiraji Bindings of Dominance
+ib(20930)	-- Vek'lor's Diadem
+ib(20926)	-- Vek'nilash's Circlet
+ib(20927)	-- Ouro's Intact Hide
+ib(20931)	-- Skin of the Great Sandworm
+ib(20929)	-- Carapace of the Old God
+ib(20933)	-- Husk of the Old God
 
 -- Tier 4 Tokens [Kara / Gruul / Mag]
-i(29760);	-- Helm of the Fallen Champion
-i(29761);	-- Helm of the Fallen Defender
-i(29759);	-- Helm of the Fallen Hero
-i(29763);	-- Pauldrons of the Fallen Champion
-i(29764);	-- Pauldrons of the Fallen Defender
-i(29762);	-- Pauldrons of the Fallen Hero
-i(29754);	-- Chestguard of the Fallen
-i(29753);	-- Chestguard of the Fallen Defender
-i(29755);	-- Chestguard of the Fallen Hero
-i(29757);	-- Gloves of the Fallen Champion
-i(29758);	-- Gloves of the Fallen Defender
-i(29756);	-- Gloves of the Fallen Hero
-i(29766);	-- Leggings of the Fallen Champion
-i(29767);	-- Leggings of the Fallen Defender
-i(29765);	-- Leggings of the Fallen Hero
+ib(29760);	-- Helm of the Fallen Champion
+ib(29761);	-- Helm of the Fallen Defender
+ib(29759);	-- Helm of the Fallen Hero
+ib(29763);	-- Pauldrons of the Fallen Champion
+ib(29764);	-- Pauldrons of the Fallen Defender
+ib(29762);	-- Pauldrons of the Fallen Hero
+ib(29754);	-- Chestguard of the Fallen
+ib(29753);	-- Chestguard of the Fallen Defender
+ib(29755);	-- Chestguard of the Fallen Hero
+ib(29757);	-- Gloves of the Fallen Champion
+ib(29758);	-- Gloves of the Fallen Defender
+ib(29756);	-- Gloves of the Fallen Hero
+ib(29766);	-- Leggings of the Fallen Champion
+ib(29767);	-- Leggings of the Fallen Defender
+ib(29765);	-- Leggings of the Fallen Hero
 
 -- Tier 5 Tokens [TK / SSC]
-i(30242);	-- Helm of the Vanquished Champion
-i(30243);	-- Helm of the Vanquished Defender
-i(30244);	-- Helm of the Vanquished Hero
-i(30248);	-- Pauldrons of the Vanquished Champion
-i(30249);	-- Pauldrons of the Vanquished Defender
-i(30250);	-- Pauldrons of the Vanquished Hero
-i(30236);	-- Chestguard of the Vanquished Champion
-i(30237);	-- Chestguard of the Vanquished Defender
-i(30238);	-- Chestguard of the Vanquished Hero
-i(30239);	-- Gloves of the Vanquished Champion
-i(30240);	-- Gloves of the Vanquished Defender
-i(30241);	-- Gloves of the Vanquished Hero
-i(30245);	-- Leggings of the Vanquished Champion
-i(30246);	-- Leggings of the Vanquished Defender
-i(30247);	-- Leggings of the Vanquished Hero
+ib(30242);	-- Helm of the Vanquished Champion
+ib(30243);	-- Helm of the Vanquished Defender
+ib(30244);	-- Helm of the Vanquished Hero
+ib(30248);	-- Pauldrons of the Vanquished Champion
+ib(30249);	-- Pauldrons of the Vanquished Defender
+ib(30250);	-- Pauldrons of the Vanquished Hero
+ib(30236);	-- Chestguard of the Vanquished Champion
+ib(30237);	-- Chestguard of the Vanquished Defender
+ib(30238);	-- Chestguard of the Vanquished Hero
+ib(30239);	-- Gloves of the Vanquished Champion
+ib(30240);	-- Gloves of the Vanquished Defender
+ib(30241);	-- Gloves of the Vanquished Hero
+ib(30245);	-- Leggings of the Vanquished Champion
+ib(30246);	-- Leggings of the Vanquished Defender
+ib(30247);	-- Leggings of the Vanquished Hero
 
 -- Tier 6 Tokens [MH / BT / SWP]
-i(31097);	-- Helm of the Forgotten Conqueror
-i(31095);	-- Helm of the Forgotten Protector
-i(31096);	-- Helm of the Forgotten Vanquisher
-i(31101);	-- Pauldrons of the Forgotten Conqueror
-i(31103);	-- Pauldrons of the Forgotten Protector
-i(31102);	-- Pauldrons of the Forgotten Vanquisher
-i(31089);	-- Chestguard of the Forgotten Conqueror
-i(31091);	-- Chestguard of the Forgotten Protector
-i(31090);	-- Chestguard of the Forgotten Vanquisher
-i(34848);	-- Bracers of the Forgotten Conqueror
-i(34851);	-- Bracers of the Forgotten Protector
-i(34852);	-- Bracers of the Forgotten Vanquisher
-i(31092);	-- Gloves of the Forgotten Conqueror
-i(31094);	-- Gloves of the Forgotten Protector
-i(31093);	-- Gloves of the Forgotten Vanquisher
-i(34853);	-- Belt of the Forgotten Conqueror
-i(34854);	-- Belt of the Forgotten Protector
-i(34855);	-- Belt of the Forgotten Vanquisher
-i(31098);	-- Leggings of the Forgotten Conqueror
-i(31100);	-- Leggings of the Forgotten Protector
-i(31099);	-- Leggings of the Forgotten Vanquisher
-i(34856);	-- Boots of the Forgotten Conqueror
-i(34857);	-- Boots of the Forgotten Protector
-i(34858);	-- Boots of the Forgotten Vanquisher
+ib(31097);	-- Helm of the Forgotten Conqueror
+ib(31095);	-- Helm of the Forgotten Protector
+ib(31096);	-- Helm of the Forgotten Vanquisher
+ib(31101);	-- Pauldrons of the Forgotten Conqueror
+ib(31103);	-- Pauldrons of the Forgotten Protector
+ib(31102);	-- Pauldrons of the Forgotten Vanquisher
+ib(31089);	-- Chestguard of the Forgotten Conqueror
+ib(31091);	-- Chestguard of the Forgotten Protector
+ib(31090);	-- Chestguard of the Forgotten Vanquisher
+ib(34848);	-- Bracers of the Forgotten Conqueror
+ib(34851);	-- Bracers of the Forgotten Protector
+ib(34852);	-- Bracers of the Forgotten Vanquisher
+ib(31092);	-- Gloves of the Forgotten Conqueror
+ib(31094);	-- Gloves of the Forgotten Protector
+ib(31093);	-- Gloves of the Forgotten Vanquisher
+ib(34853);	-- Belt of the Forgotten Conqueror
+ib(34854);	-- Belt of the Forgotten Protector
+ib(34855);	-- Belt of the Forgotten Vanquisher
+ib(31098);	-- Leggings of the Forgotten Conqueror
+ib(31100);	-- Leggings of the Forgotten Protector
+ib(31099);	-- Leggings of the Forgotten Vanquisher
+ib(34856);	-- Boots of the Forgotten Conqueror
+ib(34857);	-- Boots of the Forgotten Protector
+ib(34858);	-- Boots of the Forgotten Vanquisher
 
 -- Tier 7 10 Man Tokens [Naxx / OS]
-i(40616);	-- Helm of the Lost Conqueror
-i(40617);	-- Helm of the Lost Protector
-i(40618);	-- Helm of the Lost Vanquisher
-i(40622);	-- Spaulders of the Lost Conqueror
-i(40623);	-- Spaulders of the Lost Protector
-i(40624);	-- Spaulders of the Lost Vanquisher
-i(40610);	-- Chestguard of the Lost Conqueror
-i(40611);	-- Chestguard of the Lost Protector
-i(40612);	-- Chestguard of the Lost Vanquisher
-i(40613);	-- Gloves of the Lost Conqueror
-i(40614);	-- Gloves of the Lost Protector
-i(40615);	-- Gloves of the Lost Vanquisher
-i(40619);	-- Leggings of the Lost Conqueror
-i(40620);	-- Leggings of the Lost Protector
-i(40621);	-- Leggings of the Lost Vanquisher
+ib(40616);	-- Helm of the Lost Conqueror
+ib(40617);	-- Helm of the Lost Protector
+ib(40618);	-- Helm of the Lost Vanquisher
+ib(40622);	-- Spaulders of the Lost Conqueror
+ib(40623);	-- Spaulders of the Lost Protector
+ib(40624);	-- Spaulders of the Lost Vanquisher
+ib(40610);	-- Chestguard of the Lost Conqueror
+ib(40611);	-- Chestguard of the Lost Protector
+ib(40612);	-- Chestguard of the Lost Vanquisher
+ib(40613);	-- Gloves of the Lost Conqueror
+ib(40614);	-- Gloves of the Lost Protector
+ib(40615);	-- Gloves of the Lost Vanquisher
+ib(40619);	-- Leggings of the Lost Conqueror
+ib(40620);	-- Leggings of the Lost Protector
+ib(40621);	-- Leggings of the Lost Vanquisher
 
 -- Tier 7 25 Man Tokens [Naxx / OS]
-i(40631);	-- Crown of the Lost Conqueror
-i(40632);	-- Crown of the Lost Protector
-i(40633);	-- Crown of the Lost Vanquisher
-i(40637);	-- Mantle of the Lost Conqueror
-i(40638);	-- Mantle of the Lost Protector
-i(40639);	-- Mantle of the Lost Vanquisher
-i(40625);	-- Breastplate of the Lost Conqueror
-i(40626);	-- Breastplate of the Lost Protector
-i(40627);	-- Breastplate of the Lost Vanquisher
-i(40628);	-- Gauntlets of the Lost Conqueror
-i(40629);	-- Gauntlets of the Lost Protector
-i(40630);	-- Gauntlets of the Lost Vanquisher
-i(40634);	-- Legplates of the Lost Conqueror
-i(40635);	-- Legplates of the Lost Protector
-i(40636);	-- Legplates of the Lost Vanquisher
+ib(40631);	-- Crown of the Lost Conqueror
+ib(40632);	-- Crown of the Lost Protector
+ib(40633);	-- Crown of the Lost Vanquisher
+ib(40637);	-- Mantle of the Lost Conqueror
+ib(40638);	-- Mantle of the Lost Protector
+ib(40639);	-- Mantle of the Lost Vanquisher
+ib(40625);	-- Breastplate of the Lost Conqueror
+ib(40626);	-- Breastplate of the Lost Protector
+ib(40627);	-- Breastplate of the Lost Vanquisher
+ib(40628);	-- Gauntlets of the Lost Conqueror
+ib(40629);	-- Gauntlets of the Lost Protector
+ib(40630);	-- Gauntlets of the Lost Vanquisher
+ib(40634);	-- Legplates of the Lost Conqueror
+ib(40635);	-- Legplates of the Lost Protector
+ib(40636);	-- Legplates of the Lost Vanquisher
 
 -- Tier 8 10 Man [Ulduar]
-i(45647);	-- Helm of the Wayward Conqueror
-i(45648);	-- Helm of the Wayward Protector
-i(45649);	-- Helm of the Wayward Vanquisher
-i(45659);	-- Spaulders of the Wayward Conqueror
-i(45660);	-- Spaulders of the Wayward Protector
-i(45661);	-- Spaulders of the Wayward Vanquisher
-i(45635);	-- Chestguard of the Wayward Conqueror
-i(45636);	-- Chestguard of the Wayward Protector
-i(45637);	-- Chestguard of the Wayward Vanquisher
-i(45644);	-- Gloves of the Wayward Conqueror
-i(45645);	-- Gloves of the Wayward Protector
-i(45646);	-- Gloves of the Wayward Vanquisher
-i(45650);	-- Leggings of the Wayward Conqueror
-i(45651);	-- Leggings of the Wayward Protector
-i(45652);	-- Leggings of the Wayward Vanquisher
+ib(45647);	-- Helm of the Wayward Conqueror
+ib(45648);	-- Helm of the Wayward Protector
+ib(45649);	-- Helm of the Wayward Vanquisher
+ib(45659);	-- Spaulders of the Wayward Conqueror
+ib(45660);	-- Spaulders of the Wayward Protector
+ib(45661);	-- Spaulders of the Wayward Vanquisher
+ib(45635);	-- Chestguard of the Wayward Conqueror
+ib(45636);	-- Chestguard of the Wayward Protector
+ib(45637);	-- Chestguard of the Wayward Vanquisher
+ib(45644);	-- Gloves of the Wayward Conqueror
+ib(45645);	-- Gloves of the Wayward Protector
+ib(45646);	-- Gloves of the Wayward Vanquisher
+ib(45650);	-- Leggings of the Wayward Conqueror
+ib(45651);	-- Leggings of the Wayward Protector
+ib(45652);	-- Leggings of the Wayward Vanquisher
 
 -- Tier 8 25 Man [Ulduar]
-i(45638);	-- Crown of the Wayward Conqueror
-i(45639);	-- Crown of the Wayward Protector
-i(45640);	-- Crown of the Wayward Vanquisher
-i(45656);	-- Mantle of the Wayward Conqueror
-i(45657);	-- Mantle of the Wayward Protector
-i(45658);	-- Mantle of the Wayward Vanquisher
-i(45632);	-- Breastplate of the Wayward Conqueror
-i(45633);	-- Breastplate of the Wayward Protector
-i(45634);	-- Breastplate of the Wayward Vanquisher
-i(45641);	-- Gauntlets of the Wayward Conqueror
-i(45642);	-- Gauntlets of the Wayward Protector
-i(45643);	-- Gauntlets of the Wayward Vanquisher
-i(45654);	-- Legplates of the Wayward Protector
-i(45655);	-- Legplates of the Wayward Vanquisher
+ib(45638);	-- Crown of the Wayward Conqueror
+ib(45639);	-- Crown of the Wayward Protector
+ib(45640);	-- Crown of the Wayward Vanquisher
+ib(45656);	-- Mantle of the Wayward Conqueror
+ib(45657);	-- Mantle of the Wayward Protector
+ib(45658);	-- Mantle of the Wayward Vanquisher
+ib(45632);	-- Breastplate of the Wayward Conqueror
+ib(45633);	-- Breastplate of the Wayward Protector
+ib(45634);	-- Breastplate of the Wayward Vanquisher
+ib(45641);	-- Gauntlets of the Wayward Conqueror
+ib(45642);	-- Gauntlets of the Wayward Protector
+ib(45643);	-- Gauntlets of the Wayward Vanquisher
+ib(45654);	-- Legplates of the Wayward Protector
+ib(45655);	-- Legplates of the Wayward Vanquisher
 
 -- Tier 9 Tier Tokens [ToC]
 
-i(47242);	-- Trophy of the Crusade
-i(47557);	-- Regalia of the Grand Conqueror [25H]
-i(47558);	-- Regalia of the Grand Protector [25H]
-i(47559);	-- Regalia of the Grand Vanquisher [25H]
+ib(47242);	-- Trophy of the Crusade
+ib(47557);	-- Regalia of the Grand Conqueror [25H]
+ib(47558);	-- Regalia of the Grand Protector [25H]
+ib(47559);	-- Regalia of the Grand Vanquisher [25H]
 
 -- Tier 10 Tier Tokens [ICC]
-i(52025);	-- Vanquisher's Mark of Sanctification [10H/25N]
-i(52026);	-- Protector's Mark of Sanctification [10H/25N]
-i(52027);	-- Conqueror's Mark of Sanctification [10H/25N]
-i(52028);	-- Vanquisher's Mark of Sanctification [25H]
-i(52029);	-- Protector's Mark of Sanctification [25H]
-i(52030);	-- Conqueror's Mark of Sanctification [25H]
+ib(52025);	-- Vanquisher's Mark of Sanctification [10H/25N]
+ib(52026);	-- Protector's Mark of Sanctification [10H/25N]
+ib(52027);	-- Conqueror's Mark of Sanctification [10H/25N]
+ib(52028);	-- Vanquisher's Mark of Sanctification [25H]
+ib(52029);	-- Protector's Mark of Sanctification [25H]
+ib(52030);	-- Conqueror's Mark of Sanctification [25H]
 
 -- Tier 11 10/25 Normal [BWD / TotFW /BoT]
-i(63683);	-- Helm of the Forlorn Conqueror
-i(63684);	-- Helm of the Forlorn Protector
-i(63682);	-- Helm of the Forlorn Vanquisher
-i(64315);	-- Mantle of the Forlorn Conqueror
-i(64316);	-- Mantle of the Forlorn Protector
-i(64314);	-- Mantle of the Forlorn Vanquisher
+ib(63683);	-- Helm of the Forlorn Conqueror
+ib(63684);	-- Helm of the Forlorn Protector
+ib(63682);	-- Helm of the Forlorn Vanquisher
+ib(64315);	-- Mantle of the Forlorn Conqueror
+ib(64316);	-- Mantle of the Forlorn Protector
+ib(64314);	-- Mantle of the Forlorn Vanquisher
 
 -- Tier 11 10/25 Heroic [BWD / TotFW /BoT]
-i(66998);	-- Essence of the Forlorn
-i(65001);	-- Crown of the Forlorn Conqueror
-i(65000);	-- Crown of the Forlorn Protector
-i(65002);	-- Crown of the Forlorn Vanquisher
-i(65088);	-- Shoulders of the Forlorn Conqueror
-i(65087);	-- Shoulders of the Forlorn Protector
-i(65089);	-- Shoulders of the Forlorn Vanquisher
-i(67423);	-- Chest of the Forlorn Conqueror
-i(67424);	-- Chest of the Forlorn Protector
-i(67425);	-- Chest of the Forlorn Vanquisher
-i(67429);	-- Gauntlets of the Forlorn Conqueror
-i(67430);	-- Gauntlets of the Forlorn Protector
-i(67431);	-- Gauntlets of the Forlorn Vanquisher
-i(67428);	-- Leggings of the Forlorn Conqueror
-i(67427);	-- Leggings of the Forlorn Protector
-i(67426);	-- Leggings of the Forlorn Vanquisher
+ib(66998);	-- Essence of the Forlorn
+ib(65001);	-- Crown of the Forlorn Conqueror
+ib(65000);	-- Crown of the Forlorn Protector
+ib(65002);	-- Crown of the Forlorn Vanquisher
+ib(65088);	-- Shoulders of the Forlorn Conqueror
+ib(65087);	-- Shoulders of the Forlorn Protector
+ib(65089);	-- Shoulders of the Forlorn Vanquisher
+ib(67423);	-- Chest of the Forlorn Conqueror
+ib(67424);	-- Chest of the Forlorn Protector
+ib(67425);	-- Chest of the Forlorn Vanquisher
+ib(67429);	-- Gauntlets of the Forlorn Conqueror
+ib(67430);	-- Gauntlets of the Forlorn Protector
+ib(67431);	-- Gauntlets of the Forlorn Vanquisher
+ib(67428);	-- Leggings of the Forlorn Conqueror
+ib(67427);	-- Leggings of the Forlorn Protector
+ib(67426);	-- Leggings of the Forlorn Vanquisher
 
 -- Tier 12 10/25 Normal [FL]
-i(71675);	-- Helm of the Fiery Conqueror
-i(71682);	-- Helm of the Fiery Protector
-i(71668);	-- Helm of the Fiery Vanquisher
-i(71681);	-- Mantle of the Fiery Conqueror
-i(71688);	-- Mantle of the Fiery Protector
-i(71674);	-- Mantle of the Fiery Vanquisher
+ib(71675);	-- Helm of the Fiery Conqueror
+ib(71682);	-- Helm of the Fiery Protector
+ib(71668);	-- Helm of the Fiery Vanquisher
+ib(71681);	-- Mantle of the Fiery Conqueror
+ib(71688);	-- Mantle of the Fiery Protector
+ib(71674);	-- Mantle of the Fiery Vanquisher
 
 -- Tier 12 10/25 Heroic [FL]
-i(71677);	-- Crown of the Fiery Conqueror
-i(71684);	-- Crown of the Fiery Protector
-i(71670);	-- Crown of the Fiery Vanquisher
-i(71680);	-- Shoulders of the Fiery Conqueror
-i(71687);	-- Shoulders of the Fiery Protector
-i(71673);	-- Shoulders of the Fiery Vanquisher
-i(71679);	-- Chest of the Fiery Conqueror
-i(71686);	-- Chest of the Fiery Protector
-i(71672);	-- Chest of the Fiery Vanquisher
-i(71676);	-- Gauntlets of the Fiery Conqueror
-i(71683);	-- Gauntlets of the Fiery Protector
-i(71669);	-- Gauntlets of the Fiery Vanquisher
-i(71678);	-- Leggings of the Fiery Conqueror
-i(71685);	-- Leggings of the Fiery Protector
-i(71671);	-- Leggings of the Fiery Vanquisher
+ib(71677);	-- Crown of the Fiery Conqueror
+ib(71684);	-- Crown of the Fiery Protector
+ib(71670);	-- Crown of the Fiery Vanquisher
+ib(71680);	-- Shoulders of the Fiery Conqueror
+ib(71687);	-- Shoulders of the Fiery Protector
+ib(71673);	-- Shoulders of the Fiery Vanquisher
+ib(71679);	-- Chest of the Fiery Conqueror
+ib(71686);	-- Chest of the Fiery Protector
+ib(71672);	-- Chest of the Fiery Vanquisher
+ib(71676);	-- Gauntlets of the Fiery Conqueror
+ib(71683);	-- Gauntlets of the Fiery Protector
+ib(71669);	-- Gauntlets of the Fiery Vanquisher
+ib(71678);	-- Leggings of the Fiery Conqueror
+ib(71685);	-- Leggings of the Fiery Protector
+ib(71671);	-- Leggings of the Fiery Vanquisher
 
 -- Tier 13 LFR [DS]
-i(78869);	-- Crown of the Corrupted Conqueror
-i(78870);	-- Crown of the Corrupted Protector
-i(78868);	-- Crown of the Corrupted Vanquisher
-i(78875);	-- Shoulders of the Corrupted Conqueror
-i(78876);	-- Shoulders of the Corrupted Protector
-i(78874);	-- Shoulders of the Corrupted Vanquisher
-i(78863);	-- Chest of the Corrupted Conqueror
-i(78864);	-- Chest of the Corrupted Protector
-i(78862);	-- Chest of the Corrupted Vanquisher
-i(78866);	-- Gauntlets of the Corrupted Conqueror
-i(78867);	-- Gauntlets of the Corrupted Protector
-i(78865);	-- Gauntlets of the Corrupted Vanquisher
-i(78872);	-- Leggings of the Corrupted Conqueror
-i(78873);	-- Leggings of the Corrupted Protector
-i(78871);	-- Leggings of the Corrupted Vanquisher
+ib(78869);	-- Crown of the Corrupted Conqueror
+ib(78870);	-- Crown of the Corrupted Protector
+ib(78868);	-- Crown of the Corrupted Vanquisher
+ib(78875);	-- Shoulders of the Corrupted Conqueror
+ib(78876);	-- Shoulders of the Corrupted Protector
+ib(78874);	-- Shoulders of the Corrupted Vanquisher
+ib(78863);	-- Chest of the Corrupted Conqueror
+ib(78864);	-- Chest of the Corrupted Protector
+ib(78862);	-- Chest of the Corrupted Vanquisher
+ib(78866);	-- Gauntlets of the Corrupted Conqueror
+ib(78867);	-- Gauntlets of the Corrupted Protector
+ib(78865);	-- Gauntlets of the Corrupted Vanquisher
+ib(78872);	-- Leggings of the Corrupted Conqueror
+ib(78873);	-- Leggings of the Corrupted Protector
+ib(78871);	-- Leggings of the Corrupted Vanquisher
 
 -- Tier 13 N [DS]
-i(78182);	-- Crown of the Corrupted Conqueror
-i(78177);	-- Crown of the Corrupted Protector
-i(78172);	-- Crown of the Corrupted Vanquisher
-i(78180);	-- Shoulders of the Corrupted Conqueror
-i(78175);	-- Shoulders of the Corrupted Protector
-i(78170);	-- Shoulders of the Corrupted Vanquisher
-i(78184);	-- Chest of the Corrupted Conqueror
-i(78179);	-- Chest of the Corrupted Protector
-i(78174);	-- Chest of the Corrupted Vanquisher
-i(78183);	-- Gauntlets of the Corrupted Conqueror
-i(78178);	-- Gauntlets of the Corrupted Protector
-i(78173);	-- Gauntlets of the Corrupted Vanquisher
-i(78181);	-- Leggings of the Corrupted Conqueror
-i(78176);	-- Leggings of the Corrupted Protector
-i(78171);	-- Leggings of the Corrupted Vanquisher
+ib(78182);	-- Crown of the Corrupted Conqueror
+ib(78177);	-- Crown of the Corrupted Protector
+ib(78172);	-- Crown of the Corrupted Vanquisher
+ib(78180);	-- Shoulders of the Corrupted Conqueror
+ib(78175);	-- Shoulders of the Corrupted Protector
+ib(78170);	-- Shoulders of the Corrupted Vanquisher
+ib(78184);	-- Chest of the Corrupted Conqueror
+ib(78179);	-- Chest of the Corrupted Protector
+ib(78174);	-- Chest of the Corrupted Vanquisher
+ib(78183);	-- Gauntlets of the Corrupted Conqueror
+ib(78178);	-- Gauntlets of the Corrupted Protector
+ib(78173);	-- Gauntlets of the Corrupted Vanquisher
+ib(78181);	-- Leggings of the Corrupted Conqueror
+ib(78176);	-- Leggings of the Corrupted Protector
+ib(78171);	-- Leggings of the Corrupted Vanquisher
 
 -- Tier 13 H [DS]
-i(78850);	-- Crown of the Corrupted Conqueror
-i(78851);	-- Crown of the Corrupted Protector
-i(78852);	-- Crown of the Corrupted Vanquisher
-i(78859);	-- Shoulders of the Corrupted Conqueror
-i(78860);	-- Shoulders of the Corrupted Protector
-i(78861);	-- Shoulders of the Corrupted Vanquisher
-i(78847);	-- Chest of the Corrupted Conqueror
-i(78848);	-- Chest of the Corrupted Protector
-i(78849);	-- Chest of the Corrupted Vanquisher
-i(78853);	-- Gauntlets of the Corrupted Conqueror
-i(78854);	-- Gauntlets of the Corrupted Protector
-i(78855);	-- Gauntlets of the Corrupted Vanquisher
-i(78856);	-- Leggings of the Corrupted Conqueror
-i(78857);	-- Leggings of the Corrupted Protector
-i(78858);	-- Leggings of the Corrupted Vanquisher
+ib(78850);	-- Crown of the Corrupted Conqueror
+ib(78851);	-- Crown of the Corrupted Protector
+ib(78852);	-- Crown of the Corrupted Vanquisher
+ib(78859);	-- Shoulders of the Corrupted Conqueror
+ib(78860);	-- Shoulders of the Corrupted Protector
+ib(78861);	-- Shoulders of the Corrupted Vanquisher
+ib(78847);	-- Chest of the Corrupted Conqueror
+ib(78848);	-- Chest of the Corrupted Protector
+ib(78849);	-- Chest of the Corrupted Vanquisher
+ib(78853);	-- Gauntlets of the Corrupted Conqueror
+ib(78854);	-- Gauntlets of the Corrupted Protector
+ib(78855);	-- Gauntlets of the Corrupted Vanquisher
+ib(78856);	-- Leggings of the Corrupted Conqueror
+ib(78857);	-- Leggings of the Corrupted Protector
+ib(78858);	-- Leggings of the Corrupted Vanquisher
 
 -- Tier 14 LFR [HoF/ToES]
-i(89274);	-- Helm of the Shadowy Conqueror
-i(89275);	-- Helm of the Shadowy Protector
-i(89273);	-- Helm of the Shadowy Vanquisher
-i(89277);	-- Shoulders of the Shadowy Conqueror
-i(89278);	-- Shoulders of the Shadowy Protector
-i(89276);	-- Shoulders of the Shadowy Vanquisher
-i(89265);	-- Chest of the Shadowy Conqueror
-i(89266);	-- Chest of the Shadowy Protector
-i(89264);	-- Chest of the Shadowy Vanquisher
-i(89271);	-- Gauntlets of the Shadowy Conqueror
-i(89272);	-- Gauntlets of the Shadowy Protector
-i(89270);	-- Gauntlets of the Shadowy Vanquisher
-i(89268);	-- Leggings of the Shadowy Conqueror
-i(89269);	-- Leggings of the Shadowy Protector
-i(89267);	-- Leggings of the Shadowy Vanquisher
+ib(89274);	-- Helm of the Shadowy Conqueror
+ib(89275);	-- Helm of the Shadowy Protector
+ib(89273);	-- Helm of the Shadowy Vanquisher
+ib(89277);	-- Shoulders of the Shadowy Conqueror
+ib(89278);	-- Shoulders of the Shadowy Protector
+ib(89276);	-- Shoulders of the Shadowy Vanquisher
+ib(89265);	-- Chest of the Shadowy Conqueror
+ib(89266);	-- Chest of the Shadowy Protector
+ib(89264);	-- Chest of the Shadowy Vanquisher
+ib(89271);	-- Gauntlets of the Shadowy Conqueror
+ib(89272);	-- Gauntlets of the Shadowy Protector
+ib(89270);	-- Gauntlets of the Shadowy Vanquisher
+ib(89268);	-- Leggings of the Shadowy Conqueror
+ib(89269);	-- Leggings of the Shadowy Protector
+ib(89267);	-- Leggings of the Shadowy Vanquisher
 
 -- Tier 14 N [HoF/ToES]
-i(89235);	-- Helm of the Shadowy Conqueror
-i(89236);	-- Helm of the Shadowy Protector
-i(89234);	-- Helm of the Shadowy Vanquisher
-i(89246);	-- Shoulders of the Shadowy Conqueror
-i(89247);	-- Shoulders of the Shadowy Protector
-i(89248);	-- Shoulders of the Shadowy Vanquisher
-i(89237);	-- Chest of the Shadowy Conqueror
-i(89238);	-- Chest of the Shadowy Protector
-i(89239);	-- Chest of the Shadowy Vanquisher
-i(89240);	-- Gauntlets of the Shadowy Conqueror
-i(89241);	-- Gauntlets of the Shadowy Protector
-i(89242);	-- Gauntlets of the Shadowy Vanquisher
-i(89243);	-- Leggings of the Shadowy Conqueror
-i(89244);	-- Leggings of the Shadowy Protector
-i(89245);	-- Leggings of the Shadowy Vanquisher
+ib(89235);	-- Helm of the Shadowy Conqueror
+ib(89236);	-- Helm of the Shadowy Protector
+ib(89234);	-- Helm of the Shadowy Vanquisher
+ib(89246);	-- Shoulders of the Shadowy Conqueror
+ib(89247);	-- Shoulders of the Shadowy Protector
+ib(89248);	-- Shoulders of the Shadowy Vanquisher
+ib(89237);	-- Chest of the Shadowy Conqueror
+ib(89238);	-- Chest of the Shadowy Protector
+ib(89239);	-- Chest of the Shadowy Vanquisher
+ib(89240);	-- Gauntlets of the Shadowy Conqueror
+ib(89241);	-- Gauntlets of the Shadowy Protector
+ib(89242);	-- Gauntlets of the Shadowy Vanquisher
+ib(89243);	-- Leggings of the Shadowy Conqueror
+ib(89244);	-- Leggings of the Shadowy Protector
+ib(89245);	-- Leggings of the Shadowy Vanquisher
 
 -- Tier 14 H [HoF/ToES]
-i(89259);	-- Helm of the Shadowy Conqueror
-i(89260);	-- Helm of the Shadowy Protector
-i(89258);	-- Helm of the Shadowy Vanquisher
-i(89262);	-- Shoulders of the Shadowy Conqueror
-i(89263);	-- Shoulders of the Shadowy Protector
-i(89261);	-- Shoulders of the Shadowy Vanquisher
-i(89250);	-- Chest of the Shadowy Conqueror
-i(89251);	-- Chest of the Shadowy Protector
-i(89249);	-- Chest of the Shadowy Vanquisher
-i(89256);	-- Gauntlets of the Shadowy Conqueror
-i(89257);	-- Gauntlets of the Shadowy Protector
-i(89255);	-- Gauntlets of the Shadowy Vanquisher
-i(89253);	-- Leggings of the Shadowy Conqueror
-i(89254);	-- Leggings of the Shadowy Protector
-i(89252);	-- Leggings of the Shadowy Vanquisher
+ib(89259);	-- Helm of the Shadowy Conqueror
+ib(89260);	-- Helm of the Shadowy Protector
+ib(89258);	-- Helm of the Shadowy Vanquisher
+ib(89262);	-- Shoulders of the Shadowy Conqueror
+ib(89263);	-- Shoulders of the Shadowy Protector
+ib(89261);	-- Shoulders of the Shadowy Vanquisher
+ib(89250);	-- Chest of the Shadowy Conqueror
+ib(89251);	-- Chest of the Shadowy Protector
+ib(89249);	-- Chest of the Shadowy Vanquisher
+ib(89256);	-- Gauntlets of the Shadowy Conqueror
+ib(89257);	-- Gauntlets of the Shadowy Protector
+ib(89255);	-- Gauntlets of the Shadowy Vanquisher
+ib(89253);	-- Leggings of the Shadowy Conqueror
+ib(89254);	-- Leggings of the Shadowy Protector
+ib(89252);	-- Leggings of the Shadowy Vanquisher
 
 -- Tier 15 LFR [ToT]
-i(95880);	-- Helm of the Crackling Conqueror
-i(95881);	-- Helm of the Crackling Protector
-i(95879);	-- Helm of the Crackling Vanquisher
-i(95956);	-- Shoulders of the Crackling Conqueror
-i(95957);	-- Shoulders of the Crackling Protector
-i(95955);	-- Shoulders of the Crackling Vanquisher
-i(95823);	-- Chest of the Crackling Conqueror
-i(95824);	-- Chest of the Crackling Protector
-i(95822);	-- Chest of the Crackling Vanquisher
-i(95856);	-- Gauntlets of the Crackling Conqueror
-i(95857);	-- Gauntlets of the Crackling Protector
-i(95855);	-- Gauntlets of the Crackling Vanquisher
-i(95888);	-- Leggings of the Crackling Conqueror
-i(95889);	-- Leggings of the Crackling Protector
-i(95887);	-- Leggings of the Crackling Vanquisher
+ib(95880);	-- Helm of the Crackling Conqueror
+ib(95881);	-- Helm of the Crackling Protector
+ib(95879);	-- Helm of the Crackling Vanquisher
+ib(95956);	-- Shoulders of the Crackling Conqueror
+ib(95957);	-- Shoulders of the Crackling Protector
+ib(95955);	-- Shoulders of the Crackling Vanquisher
+ib(95823);	-- Chest of the Crackling Conqueror
+ib(95824);	-- Chest of the Crackling Protector
+ib(95822);	-- Chest of the Crackling Vanquisher
+ib(95856);	-- Gauntlets of the Crackling Conqueror
+ib(95857);	-- Gauntlets of the Crackling Protector
+ib(95855);	-- Gauntlets of the Crackling Vanquisher
+ib(95888);	-- Leggings of the Crackling Conqueror
+ib(95889);	-- Leggings of the Crackling Protector
+ib(95887);	-- Leggings of the Crackling Vanquisher
 
 -- Tier 15 N [ToT]
-i(95577);	-- Helm of the Crackling Conqueror
-i(95582);	-- Helm of the Crackling Protector
-i(95571);	-- Helm of the Crackling Vanquisher
-i(95578);	-- Shoulders of the Crackling Conqueror
-i(95583);	-- Shoulders of the Crackling Protector
-i(95573);	-- Shoulders of the Crackling Vanquisher
-i(95574);	-- Chest of the Crackling Conqueror
-i(95579);	-- Chest of the Crackling Protector
-i(95569);	-- Chest of the Crackling Vanquisher
-i(95575);	-- Gauntlets of the Crackling Conqueror
-i(95580);	-- Gauntlets of the Crackling Protector
-i(95570);	-- Gauntlets of the Crackling Vanquisher
-i(95576);	-- Leggings of the Crackling Conqueror
-i(95581);	-- Leggings of the Crackling Protector
-i(95572);	-- Leggings of the Crackling Vanquisher
+ib(95577);	-- Helm of the Crackling Conqueror
+ib(95582);	-- Helm of the Crackling Protector
+ib(95571);	-- Helm of the Crackling Vanquisher
+ib(95578);	-- Shoulders of the Crackling Conqueror
+ib(95583);	-- Shoulders of the Crackling Protector
+ib(95573);	-- Shoulders of the Crackling Vanquisher
+ib(95574);	-- Chest of the Crackling Conqueror
+ib(95579);	-- Chest of the Crackling Protector
+ib(95569);	-- Chest of the Crackling Vanquisher
+ib(95575);	-- Gauntlets of the Crackling Conqueror
+ib(95580);	-- Gauntlets of the Crackling Protector
+ib(95570);	-- Gauntlets of the Crackling Vanquisher
+ib(95576);	-- Leggings of the Crackling Conqueror
+ib(95581);	-- Leggings of the Crackling Protector
+ib(95572);	-- Leggings of the Crackling Vanquisher
 
 -- Tier 15 H [ToT]
-i(96624);	-- Helm of the Crackling Conqueror
-i(96625);	-- Helm of the Crackling Protector
-i(96623);	-- Helm of the Crackling Vanquisher
-i(96700);	-- Shoulders of the Crackling Conqueror
-i(96701);	-- Shoulders of the Crackling Protector
-i(96699);	-- Shoulders of the Crackling Vanquisher
-i(96567);	-- Chest of the Crackling Conqueror
-i(96568);	-- Chest of the Crackling Protector
-i(96566);	-- Chest of the Crackling Vanquisher
-i(96600);	-- Gauntlets of the Crackling Conqueror
-i(96601);	-- Gauntlets of the Crackling Protector
-i(96599);	-- Gauntlets of the Crackling Vanquisher
-i(96632);	-- Leggings of the Crackling Conqueror
-i(96633);	-- Leggings of the Crackling Protector
-i(96631);	-- Leggings of the Crackling Vanquisher
+ib(96624);	-- Helm of the Crackling Conqueror
+ib(96625);	-- Helm of the Crackling Protector
+ib(96623);	-- Helm of the Crackling Vanquisher
+ib(96700);	-- Shoulders of the Crackling Conqueror
+ib(96701);	-- Shoulders of the Crackling Protector
+ib(96699);	-- Shoulders of the Crackling Vanquisher
+ib(96567);	-- Chest of the Crackling Conqueror
+ib(96568);	-- Chest of the Crackling Protector
+ib(96566);	-- Chest of the Crackling Vanquisher
+ib(96600);	-- Gauntlets of the Crackling Conqueror
+ib(96601);	-- Gauntlets of the Crackling Protector
+ib(96599);	-- Gauntlets of the Crackling Vanquisher
+ib(96632);	-- Leggings of the Crackling Conqueror
+ib(96633);	-- Leggings of the Crackling Protector
+ib(96631);	-- Leggings of the Crackling Vanquisher
 
 -- Tier 16 LFR [SoO]
-i(105861);	-- Essence of the Cursed Conqueror
-i(105860);	-- Essence of the Cursed Protector
-i(105862);	-- Essence of the Cursed Vanquisher
-i(99672);	-- Helm of the Cursed Conqueror
-i(99673);	-- Helm of the Cursed Protector
-i(99671);	-- Helm of the Cursed Vanquisher
-i(99669);	-- Shoulders of the Cursed Conqueror
-i(99670);	-- Shoulders of the Cursed Protector
-i(99668);	-- Shoulders of the Cursed Vanquisher
-i(99678);	-- Chest of the Cursed Conqueror
-i(99679);	-- Chest of the Cursed Protector
-i(99677);	-- Chest of the Cursed Vanquisher
-i(99681);	-- Gauntlets of the Cursed Conqueror
-i(99667);	-- Gauntlets of the Cursed Protector
-i(99680);	-- Gauntlets of the Cursed Vanquisher
-i(99675);	-- Leggings of the Cursed Conqueror
-i(99676);	-- Leggings of the Cursed Protector
-i(99674);	-- Leggings of the Cursed Vanquisher
+ib(105861);	-- Essence of the Cursed Conqueror
+ib(105860);	-- Essence of the Cursed Protector
+ib(105862);	-- Essence of the Cursed Vanquisher
+ib(99672);	-- Helm of the Cursed Conqueror
+ib(99673);	-- Helm of the Cursed Protector
+ib(99671);	-- Helm of the Cursed Vanquisher
+ib(99669);	-- Shoulders of the Cursed Conqueror
+ib(99670);	-- Shoulders of the Cursed Protector
+ib(99668);	-- Shoulders of the Cursed Vanquisher
+ib(99678);	-- Chest of the Cursed Conqueror
+ib(99679);	-- Chest of the Cursed Protector
+ib(99677);	-- Chest of the Cursed Vanquisher
+ib(99681);	-- Gauntlets of the Cursed Conqueror
+ib(99667);	-- Gauntlets of the Cursed Protector
+ib(99680);	-- Gauntlets of the Cursed Vanquisher
+ib(99675);	-- Leggings of the Cursed Conqueror
+ib(99676);	-- Leggings of the Cursed Protector
+ib(99674);	-- Leggings of the Cursed Vanquisher
 
 -- Tier 16 N [SoO]
-i(105864);	-- Essence of the Cursed Conqueror
-i(105863);	-- Essence of the Cursed Protector
-i(105865);	-- Essence of the Cursed Vanquisher
-i(99749);	-- Helm of the Cursed Conqueror
-i(99750);	-- Helm of the Cursed Protector
-i(99748);	-- Helm of the Cursed Vanquisher
-i(99755);	-- Shoulders of the Cursed Conqueror
-i(99756);	-- Shoulders of the Cursed Protector
-i(99754);	-- Shoulders of the Cursed Vanquisher
-i(99743);	-- Chest of the Cursed Conqueror
-i(99744);	-- Chest of the Cursed Protector
-i(99742);	-- Chest of the Cursed Vanquisher
-i(99746);	-- Gauntlets of the Cursed Conqueror
-i(99747);	-- Gauntlets of the Cursed Protector
-i(99745);	-- Gauntlets of the Cursed Vanquisher
-i(99752);	-- Leggings of the Cursed Conqueror
-i(99753);	-- Leggings of the Cursed Protector
-i(99751);	-- Leggings of the Cursed Vanquisher
+ib(105864);	-- Essence of the Cursed Conqueror
+ib(105863);	-- Essence of the Cursed Protector
+ib(105865);	-- Essence of the Cursed Vanquisher
+ib(99749);	-- Helm of the Cursed Conqueror
+ib(99750);	-- Helm of the Cursed Protector
+ib(99748);	-- Helm of the Cursed Vanquisher
+ib(99755);	-- Shoulders of the Cursed Conqueror
+ib(99756);	-- Shoulders of the Cursed Protector
+ib(99754);	-- Shoulders of the Cursed Vanquisher
+ib(99743);	-- Chest of the Cursed Conqueror
+ib(99744);	-- Chest of the Cursed Protector
+ib(99742);	-- Chest of the Cursed Vanquisher
+ib(99746);	-- Gauntlets of the Cursed Conqueror
+ib(99747);	-- Gauntlets of the Cursed Protector
+ib(99745);	-- Gauntlets of the Cursed Vanquisher
+ib(99752);	-- Leggings of the Cursed Conqueror
+ib(99753);	-- Leggings of the Cursed Protector
+ib(99751);	-- Leggings of the Cursed Vanquisher
 
 -- Tier 16 H [SoO]
-i(105858);	-- Essence of the Cursed Conqueror
-i(105857);	-- Essence of the Cursed Protector
-i(105859);	-- Essence of the Cursed Vanquisher
-i(99689);	-- Helm of the Cursed Conqueror
-i(99694);	-- Helm of the Cursed Protector
-i(99683);	-- Helm of the Cursed Vanquisher
-i(99690);	-- Shoulders of the Cursed Conqueror
-i(99695);	-- Shoulders of the Cursed Protector
-i(99685);	-- Shoulders of the Cursed Vanquisher
-i(99686);	-- Chest of the Cursed Conqueror
-i(99691);	-- Chest of the Cursed Protector
-i(99696);	-- Chest of the Cursed Vanquisher
-i(99687);	-- Gauntlets of the Cursed Conqueror
-i(99692);	-- Gauntlets of the Cursed Protector
-i(99682);	-- Gauntlets of the Cursed Vanquisher
-i(99688);	-- Leggings of the Cursed Conqueror
-i(99693);	-- Leggings of the Cursed Protector
-i(99684);	-- Leggings of the Cursed Vanquisher
+ib(105858);	-- Essence of the Cursed Conqueror
+ib(105857);	-- Essence of the Cursed Protector
+ib(105859);	-- Essence of the Cursed Vanquisher
+ib(99689);	-- Helm of the Cursed Conqueror
+ib(99694);	-- Helm of the Cursed Protector
+ib(99683);	-- Helm of the Cursed Vanquisher
+ib(99690);	-- Shoulders of the Cursed Conqueror
+ib(99695);	-- Shoulders of the Cursed Protector
+ib(99685);	-- Shoulders of the Cursed Vanquisher
+ib(99686);	-- Chest of the Cursed Conqueror
+ib(99691);	-- Chest of the Cursed Protector
+ib(99696);	-- Chest of the Cursed Vanquisher
+ib(99687);	-- Gauntlets of the Cursed Conqueror
+ib(99692);	-- Gauntlets of the Cursed Protector
+ib(99682);	-- Gauntlets of the Cursed Vanquisher
+ib(99688);	-- Leggings of the Cursed Conqueror
+ib(99693);	-- Leggings of the Cursed Protector
+ib(99684);	-- Leggings of the Cursed Vanquisher
 
 -- Tier 16 M [SoO]
-i(105867);	-- Essence of the Cursed Conqueror
-i(105866);	-- Essence of the Cursed Protector
-i(105868);	-- Essence of the Cursed Vanquisher
-i(99724);	-- Helm of the Cursed Conqueror
-i(99725);	-- Helm of the Cursed Protector
-i(99723);	-- Helm of the Cursed Vanquisher
-i(99718);	-- Shoulders of the Cursed Conqueror
-i(99719);	-- Shoulders of the Cursed Protector
-i(99717);	-- Shoulders of the Cursed Vanquisher
-i(99715);	-- Chest of the Cursed Conqueror
-i(99716);	-- Chest of the Cursed Protector
-i(99714);	-- Chest of the Cursed Vanquisher
-i(99721);	-- Gauntlets of the Cursed Conqueror
-i(99722);	-- Gauntlets of the Cursed Protector
-i(99720);	-- Gauntlets of the Cursed Vanquisher
-i(99712);	-- Leggings of the Cursed Conqueror
-i(99713);	-- Leggings of the Cursed Protector
-i(99726);	-- Leggings of the Cursed Vanquisher
+ib(105867);	-- Essence of the Cursed Conqueror
+ib(105866);	-- Essence of the Cursed Protector
+ib(105868);	-- Essence of the Cursed Vanquisher
+ib(99724);	-- Helm of the Cursed Conqueror
+ib(99725);	-- Helm of the Cursed Protector
+ib(99723);	-- Helm of the Cursed Vanquisher
+ib(99718);	-- Shoulders of the Cursed Conqueror
+ib(99719);	-- Shoulders of the Cursed Protector
+ib(99717);	-- Shoulders of the Cursed Vanquisher
+ib(99715);	-- Chest of the Cursed Conqueror
+ib(99716);	-- Chest of the Cursed Protector
+ib(99714);	-- Chest of the Cursed Vanquisher
+ib(99721);	-- Gauntlets of the Cursed Conqueror
+ib(99722);	-- Gauntlets of the Cursed Protector
+ib(99720);	-- Gauntlets of the Cursed Vanquisher
+ib(99712);	-- Leggings of the Cursed Conqueror
+ib(99713);	-- Leggings of the Cursed Protector
+ib(99726);	-- Leggings of the Cursed Vanquisher
 
 -- Tier 17 N [BRF]
-i(120277);	-- Essence of the Iron Conqueror [A]
-i(119310);	-- Essence of the Iron Conqueror [H]
-i(120279);	-- Essence of the Iron Protector [A]
-i(119323);	-- Essence of the Iron Protector [H]
-i(120278);	-- Essence of the Iron Vanquisher [A]
-i(119316);	-- Essence of the Iron Vanquisher [H]
+ib(120277);	-- Essence of the Iron Conqueror [A]
+ib(119310);	-- Essence of the Iron Conqueror [H]
+ib(120279);	-- Essence of the Iron Protector [A]
+ib(119323);	-- Essence of the Iron Protector [H]
+ib(120278);	-- Essence of the Iron Vanquisher [A]
+ib(119316);	-- Essence of the Iron Vanquisher [H]
 -- Bonus Roll Tokens (All Diffs)
-i(119308);	-- Helm of the Iron Conqueror
-i(119321);	-- Helm of the Iron Protector
-i(119312);	-- Helm of the Iron Vanquisher
-i(119309);	-- Shoulders of the Iron Conqueror
-i(119322);	-- Shoulders of the Iron Protector
-i(119314);	-- Shoulders of the Iron Vanquisher
-i(119305);	-- Chest of the Iron Conqueror
-i(119318);	-- Chest of the Iron Protector
-i(119315);	-- Chest of the Iron Vanquisher
-i(119306);	-- Gauntlets of the Iron Conqueror
-i(119319);	-- Gauntlets of the Iron Protector
-i(119311);	-- Gauntlets of the Iron Vanquisher
-i(119307);	-- Leggings of the Iron Conqueror
-i(119320);	-- Leggings of the Iron Protector
-i(119313);	-- Leggings of the Iron Vanquisher
+ib(119308);	-- Helm of the Iron Conqueror
+ib(119321);	-- Helm of the Iron Protector
+ib(119312);	-- Helm of the Iron Vanquisher
+ib(119309);	-- Shoulders of the Iron Conqueror
+ib(119322);	-- Shoulders of the Iron Protector
+ib(119314);	-- Shoulders of the Iron Vanquisher
+ib(119305);	-- Chest of the Iron Conqueror
+ib(119318);	-- Chest of the Iron Protector
+ib(119315);	-- Chest of the Iron Vanquisher
+ib(119306);	-- Gauntlets of the Iron Conqueror
+ib(119319);	-- Gauntlets of the Iron Protector
+ib(119311);	-- Gauntlets of the Iron Vanquisher
+ib(119307);	-- Leggings of the Iron Conqueror
+ib(119320);	-- Leggings of the Iron Protector
+ib(119313);	-- Leggings of the Iron Vanquisher
 -- Quest Reward Tokens
-i(120215);	-- Helm of the Iron Conqueror
-i(120216);	-- Shoulders of the Iron Conqueror
-i(120212);	-- Chest of the Iron Conqueror
-i(120213);	-- Gauntlets of the Iron Conqueror
-i(120214);	-- Leggings of the Iron Conqueror
-i(120225);	-- Helm of the Iron Protector
-i(120226);	-- Shoulders of the Iron Protector
-i(120222);	-- Chest of the Iron Protector
-i(120223);	-- Gauntlets of the Iron Protector
-i(120224);	-- Leggings of the Iron Protector
-i(120218);	-- Helm of the Iron Vanquisher
-i(120220);	-- Shoulders of the Iron Vanquisher
-i(120221);	-- Chest of the Iron Vanquisher
-i(120217);	-- Gauntlets of the Iron Vanquisher
-i(120219);	-- Leggings of the Iron Vanquisher
+ib(120215);	-- Helm of the Iron Conqueror
+ib(120216);	-- Shoulders of the Iron Conqueror
+ib(120212);	-- Chest of the Iron Conqueror
+ib(120213);	-- Gauntlets of the Iron Conqueror
+ib(120214);	-- Leggings of the Iron Conqueror
+ib(120225);	-- Helm of the Iron Protector
+ib(120226);	-- Shoulders of the Iron Protector
+ib(120222);	-- Chest of the Iron Protector
+ib(120223);	-- Gauntlets of the Iron Protector
+ib(120224);	-- Leggings of the Iron Protector
+ib(120218);	-- Helm of the Iron Vanquisher
+ib(120220);	-- Shoulders of the Iron Vanquisher
+ib(120221);	-- Chest of the Iron Vanquisher
+ib(120217);	-- Gauntlets of the Iron Vanquisher
+ib(120219);	-- Leggings of the Iron Vanquisher
 
 -- Tier 17 H [BRF]
-i(120280);	-- Essence of the Iron Conqueror [A]
-i(120206);	-- Essence of the Iron Conqueror [H]
-i(120281);	-- Essence of the Iron Protector [A]
-i(120207);	-- Essence of the Iron Protector [H]
-i(120282);	-- Essence of the Iron Vanquisher [A]
-i(120208);	-- Essence of the Iron Vanquisher [H]
+ib(120280);	-- Essence of the Iron Conqueror [A]
+ib(120206);	-- Essence of the Iron Conqueror [H]
+ib(120281);	-- Essence of the Iron Protector [A]
+ib(120207);	-- Essence of the Iron Protector [H]
+ib(120282);	-- Essence of the Iron Vanquisher [A]
+ib(120208);	-- Essence of the Iron Vanquisher [H]
 -- Quest Reward Tokens
-i(120230);	-- Helm of the Iron Conqueror
-i(120231);	-- Shoulders of the Iron Conqueror
-i(120227);	-- Chest of the Iron Conqueror
-i(120228);	-- Gauntlets of the Iron Conqueror
-i(120229);	-- Leggings of the Iron Conqueror
-i(120240);	-- Helm of the Iron Protector
-i(120241);	-- Shoulders of the Iron Protector
-i(120237);	-- Chest of the Iron Protector
-i(120238);	-- Gauntlets of the Iron Protector
-i(120239);	-- Leggings of the Iron Protector
-i(120233);	-- Helm of the Iron Vanquisher
-i(120235);	-- Shoulders of the Iron Vanquisher
-i(120236);	-- Chest of the Iron Vanquisher
-i(120232);	-- Gauntlets of the Iron Vanquisher
-i(120234);	-- Leggings of the Iron Vanquisher
+ib(120230);	-- Helm of the Iron Conqueror
+ib(120231);	-- Shoulders of the Iron Conqueror
+ib(120227);	-- Chest of the Iron Conqueror
+ib(120228);	-- Gauntlets of the Iron Conqueror
+ib(120229);	-- Leggings of the Iron Conqueror
+ib(120240);	-- Helm of the Iron Protector
+ib(120241);	-- Shoulders of the Iron Protector
+ib(120237);	-- Chest of the Iron Protector
+ib(120238);	-- Gauntlets of the Iron Protector
+ib(120239);	-- Leggings of the Iron Protector
+ib(120233);	-- Helm of the Iron Vanquisher
+ib(120235);	-- Shoulders of the Iron Vanquisher
+ib(120236);	-- Chest of the Iron Vanquisher
+ib(120232);	-- Gauntlets of the Iron Vanquisher
+ib(120234);	-- Leggings of the Iron Vanquisher
 
 -- Tier 17 M [BRF]
-i(120283);	-- Essence of the Iron Conqueror [A]
-i(120209);	-- Essence of the Iron Conqueror [H]
-i(120284);	-- Essence of the Iron Protector [A]
-i(120210);	-- Essence of the Iron Protector [H]
-i(120285);	-- Essence of the Iron Vanquisher [A]
-i(120211);	-- Essence of the Iron Vanquisher [H]
+ib(120283);	-- Essence of the Iron Conqueror [A]
+ib(120209);	-- Essence of the Iron Conqueror [H]
+ib(120284);	-- Essence of the Iron Protector [A]
+ib(120210);	-- Essence of the Iron Protector [H]
+ib(120285);	-- Essence of the Iron Vanquisher [A]
+ib(120211);	-- Essence of the Iron Vanquisher [H]
 -- Quest Reward Tokens
-i(120245);	-- Helm of the Iron Conqueror
-i(120246);	-- Shoulders of the Iron Conqueror
-i(120242);	-- Chest of the Iron Conqueror
-i(120243);	-- Gauntlets of the Iron Conqueror
-i(120244);	-- Leggings of the Iron Conqueror
-i(120255);	-- Helm of the Iron Protector
-i(120256);	-- Shoulders of the Iron Protector
-i(120252);	-- Chest of the Iron Protector
-i(120253);	-- Gauntlets of the Iron Protector
-i(120254);	-- Leggings of the Iron Protector
-i(120248);	-- Helm of the Iron Vanquisher
-i(120250);	-- Shoulders of the Iron Vanquisher
-i(120251);	-- Chest of the Iron Vanquisher
-i(120247);	-- Gauntlets of the Iron Vanquisher
-i(120249);	-- Leggings of the Iron Vanquisher
+ib(120245);	-- Helm of the Iron Conqueror
+ib(120246);	-- Shoulders of the Iron Conqueror
+ib(120242);	-- Chest of the Iron Conqueror
+ib(120243);	-- Gauntlets of the Iron Conqueror
+ib(120244);	-- Leggings of the Iron Conqueror
+ib(120255);	-- Helm of the Iron Protector
+ib(120256);	-- Shoulders of the Iron Protector
+ib(120252);	-- Chest of the Iron Protector
+ib(120253);	-- Gauntlets of the Iron Protector
+ib(120254);	-- Leggings of the Iron Protector
+ib(120248);	-- Helm of the Iron Vanquisher
+ib(120250);	-- Shoulders of the Iron Vanquisher
+ib(120251);	-- Chest of the Iron Vanquisher
+ib(120247);	-- Gauntlets of the Iron Vanquisher
+ib(120249);	-- Leggings of the Iron Vanquisher
 
 -- Castle Nathria Weapon Tokens
 i(183893);	-- Abominable Anima Spherule

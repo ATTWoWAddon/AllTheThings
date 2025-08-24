@@ -57,11 +57,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
 						["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
-						["description"] = "|Cffff0000This ensemble may or may not work.  Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
-						["g"] = {
+						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+						["groups"] = {
 							i(185128),	-- Unchained Aspirant's Cloak
 							i(185205),	-- Unchained Aspirant's Drape
 							i(185240),	-- Unchained Aspirant's Cape
@@ -74,7 +74,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						honor(525, i(192390)),	-- Eternal Aspirant's Cape
 						honor(525, i(192319)),	-- Eternal Aspirant's Cloak
@@ -196,16 +196,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = {
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = {
 					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
 						["cost"] = {{"i", MOH, 1}},
-						["description"] = "|Cffff0000This ensemble may or may not work.  Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
-						["g"] = {
+						["description"] = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+						["groups"] = {
 							-- Gladiator
-							i(175888),	-- Sinful Gladiator's Cloak
-							i(178353),	-- Sinful Gladiator's Drape
-							i(178414),	-- Sinful Gladiator's Shawl
-							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(175888, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Cloak
+							i(178353, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Drape
+							i(178414, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Shawl
+							i(184311, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Greatcloak
 							i(192209),	-- Eternal Gladiator's Cloak
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl
@@ -221,7 +222,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(192209)),	-- Eternal Gladiator's Cloak
 						conquest(525, i(192210)),	-- Eternal Gladiator's Drape
@@ -351,7 +353,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["bonusID"] = 7897,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
@@ -492,7 +494,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES,{
 				["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 rating.",
-				["g"] = {
+				["groups"] = {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
 						i(188866),	-- Chausses of the First Eidolon

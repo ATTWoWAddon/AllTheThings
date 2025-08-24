@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78911,
 				["coord"] = { 60.8, 44.9, EMERALD_DREAM },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(210737),	-- Ashwood Research Binder
 				},
 			}),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78833,
 				["coord"] = { 54.4, 24.6, EMERALD_DREAM },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(208649),	-- On the Nature of the Dream
 				},
 			}),
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78831,
 				["coord"] = { 49.8, 61.7, EMERALD_DREAM },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(210049),	-- The Legend of Elun'Ahir
 				},
 			}),
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78835,
 				["coord"] = { 53.7, 23.9, EMERALD_DREAM },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(208619),	-- The Tragedy of Erinethria
 				},
 			}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(407862, {	-- Hidden Moonkin Stash
 				["questID"] = 77858,
 				["coord"] = { 47.5, 34.9, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210725),	-- Owl Post (TOY!)
 				},
 			}),
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 62.9, 60.4, EMERALD_DREAM },
 					{ 61.6, 59.5, EMERALD_DREAM },
 				},
-				["g"] = {
+				["groups"] = {
 					o(408706, {	-- Magical Bloom
 						["coord"] = { 61.6, 59.5, EMERALD_DREAM },
 						["questID"] = 78005,
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(409440, {	-- Pineshrew Cache
 				["questID"] = 78120,
 				["coord"] = { 37.3, 30.7, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210411),	-- Fast Growing Seed (TOY!)
 				},
 			}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["classes"] = { DRUID },
 				["coord"] = { 63.7, 39.2, EMERALD_DREAM },
 				["sourceQuest"] = 78046,	-- Overseer Oversight
-				["g"] = {
+				["groups"] = {
 					i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
 				},
 			}),
@@ -98,10 +98,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78365,
 				["description"] = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
 				["coord"] = { 63.4, 72.9, EMERALD_DREAM },
-				["g"] = {
-					o(411065, {	--Reliquary of Ashamane
+				["groups"] = {
+					o(411065, {	-- Reliquary of Ashamane
 						["questID"] = 78359,
-						["g"] = {
+						["groups"] = {
 							i(210631),	-- Branch of Ashamane (COSMETIC!)
 						},
 					}),
@@ -111,10 +111,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78095,
 				["description"] = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
 				["coord"] = { 47.0, 53.1, EMERALD_DREAM },
-				["g"] = {
-					o(409222, {	--Reliquary of Ursol
+				["groups"] = {
+					o(409222, {	-- Reliquary of Ursol
 						["questID"] = 78107,
-						["g"] = {
+						["groups"] = {
 							i(210434),	-- Visage of Ursoc (COSMETIC!)
 						},
 					}),
@@ -124,10 +124,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78368,
 				["description"] = "Find a Mark of Goldrinn and return to the statute with the buff still active.",	-- possibly for shamans?
 				["coord"] = { 32.9, 83.1, EMERALD_DREAM },
-				["g"] = {
-					o(411067, {	--Reliquary of Goldrinn
+				["groups"] = {
+					o(411067, {	-- Reliquary of Goldrinn
 						["questID"] = 78361,
-						["g"] = {
+						["groups"] = {
 							i(210660),	-- Claw of Lo'Gosh (COSMETIC!)
 						},
 					}),
@@ -137,11 +137,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78367,
 				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in travel (fly) form.",
 				["coord"] = { 64.2, 19.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					o(411066, {	-- Reliquary of Aviana
 						["coord"] = { 64.1, 19.2, EMERALD_DREAM },
 						["questID"] = 78360,
-						["g"] = {
+						["groups"] = {
 							i(210659),	-- Branch of Aviana (COSMETIC!)
 						},
 					}),
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
 				["questID"] = 77872,
 				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					n(210060, {	-- Triflesnatcher
 						["description"] = "1st owl",
 						["questID"] = 77855,
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78547,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 55.7, 22.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210675),	-- Gardener's Lightstaff (COSMETIC!)
 				},
 			}),
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78550,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 69.6, 52.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210686),	-- Grovekeeper's Barrier (COSMETIC!)
 				},
 			}),
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78551,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 55.3, 45.4, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210678),	-- Verdant Gleaner's Scythe (COSMETIC!)
 				},
 			}),
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78552,
 				["description"] = "Use /sleep to loot the chest.",
 				["coord"] = { 46.3, 86.2, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210682),	-- Camper's Knife (COSMETIC!)
 				},
 			}),
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78477,
 				["coord"] = { 32.9, 83.1, EMERALD_DREAM },
 				["races"] = { ORC, MAGHAR },
-				["g"] = {
+				["groups"] = {
 					i(210552),	-- Cowl of the Wolf Ancient (COSMETIC!)
 				},
 			}),

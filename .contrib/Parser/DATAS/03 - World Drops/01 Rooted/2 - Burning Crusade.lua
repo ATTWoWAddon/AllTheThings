@@ -1136,202 +1136,441 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		i(31896),	-- Seven of Storms
 		i(31893),	-- Eight of Storms
 	})),
-	filter(REAGENTS, sharedData({	-- Air
-		["coords"] = {
-			{ 70.4, 21.2, NAGRAND },	-- Elemental Plateu, airy
-			{ 65.25, 22.5, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, north of.
-			{ 66.1, 30.0, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, east of.
-			{ 71.8, 30.0, SHADOWMOON_VALLEY },	-- Black Temple, north of.
-			{ 61.6, 65.9, SHADOWMOON_VALLEY },	-- Netherwing Pass proper
-			{ 57.2, 73.2, SHADOWMOON_VALLEY },	-- Southwestern Netherwing Pass
-		},
-		["crs"] = {
-			17158,	-- Dust Howler
-			21060,	-- Enraged Air Spirit
-			17160,	-- Living Cyclone
-			17159,	-- Storm Rager
-			22310,	-- Storming Wind-Ripper
-			24222,	-- Windy Cload (Gas cloud)
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-	}, {
-		i(22572),	-- Mote of Air
-		i(22451),	-- Primal Air
-	})),
-	filter(REAGENTS, sharedData({	-- Earth
-		["coords"] = {
-			{ 65.5, 23.7, NAGRAND },	-- Elemental Plateu, earthy
-			{ 67.1, 38.0, NAGRAND },	-- Garadar, east of
-			{ 54.4, 20.2, NAGRAND },	-- Kil'Sorrow Fortress, vest of.
-			{ 62.0, 80.0, NAGRAND },	-- Laughing Skull Ruins, east of.
-			{ 31.5, 80.4, NAGRAND },	-- Oshu'gun, south of.
-			{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
-		},
-		["crs"] = {
-			21060,	-- Enraged Earth Spirit
-			18062,	-- Enraged Crusher
-			22313,	-- Rumbling Earth-Heart
-			17157,	-- Shattered Rumbler
-			17156,	-- Tortured Earth Spirit
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-		["_allowObjectProvider"] = true,
-		["providers"] = {
-			{ "o", 181556 },	-- Adamantite Deposit
-			{ "o", 181555 },	-- Fel Iron Deposit
-			{ "o", 181557 },	-- Khorium Vein
-			{ "o", 181569 },	-- Rich Adamantite Deposit
-		},
-	}, {
-		i(22573),	-- Mote of Earth
-		i(22452),	-- Primal Earth
-	})),
-	filter(REAGENTS, sharedData({	-- Fire
-		["coords"] = {
-			{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
-			{ 72.4, 20.2, BLADES_EDGE_MOUNTAINS },	-- Skald
-			{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
-			{ 67.3, 21.2, NAGRAND },	-- Elemental Plateu, fiery
-			{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
-		},
-		["crs"] = {
-			21061,	-- Enraged Fire Spirit
-			22323,	-- Incandescent Fel Spark
-			22311,	-- Raging Fire-Soul
-			20514,	-- Searing Elemental
-			22298,	-- Vile Fire-Soul
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-		["_allowObjectProvider"] = true,
-		["providers"] = {
-			{ "o", 181555 },	-- Fel Iron Deposit
-			{ "o", 181557 },	-- Khorium Vein
-		},
-	}, {
-		i(22574),	-- Mote of Fire
-		i(21884),	-- Primal Fire
-	})),
-	filter(REAGENTS, sharedData({	-- Life
-		["crs"] = {
-			17723,	-- Bog Giant
-			17770,	-- Hungarfen
-			-- #if BEFORE 2.3.0
-			17378,	-- Swamp Gas (Gas cloud)
-			-- #endif
-			17734,	-- Underbog Lord
-			17725,	-- Underbog Lurker
-			17871,	-- Underbog Shambler
-		},
-		["description"] = "The given maps and sources applies for how to obtain this element's motes.",
-		["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
-		["_allowObjectProvider"] = true,
-		["providers"] = {
-			{ "o", 181278 },	-- Ancient Lichen
-			{ "o", 181271 },	-- Dreaming Glory
-			{ "o", 181270 },	-- Felweed
-			{ "o", 181281 },	-- Mana Thistle
-			{ "o", 181280 },	-- Nightmare Vine
-			{ "o", 181275 },	-- Ragveil
-			{ "o", 181277 },	-- Terocone
-		},
-	}, {
-		i(22575),	-- Mote of Life
-		i(21886),	-- Primal Life
-	})),
-	filter(REAGENTS, sharedData({	-- Mana
-		["coords"] = {
-			{ 51.5, 16.1, BLADES_EDGE_MOUNTAINS },	-- Bash'ir Landing
-			{ 67.5, 11.7, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine East
-			{ 61.0, 11.0, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine West
-			{ 32.1, 55.0, BLADES_EDGE_MOUNTAINS },	-- Vortex Summit North
-			{ 29.5, 67.0, BLADES_EDGE_MOUNTAINS },	-- Vortex Summit South
-			{ 35.2, 78.2, NETHERSTORM },	-- Arklon Ruins, south of
-			{ 33.4, 29.4, NETHERSTORM },	-- Forge Base Oblivion, west of
-			{ 25.5, 62.2, NETHERSTORM },	-- Manaforge B'naar, north of
-			{ 22.1, 78.2, NETHERSTORM },	-- Manaforge B'naar, south of
-			{ 30.0, 51.5, NETHERSTORM },	-- The Crumbling Waste
-			{ 56.0, 88.0, NETHERSTORM },	-- Wizard Row (Kirin'var Village)
-			{ 69.0, 67.3, SHADOWMOON_VALLEY },	-- Dragonmaw Fortress, south of
-			{ 70.0, 85.0, SHADOWMOON_VALLEY },	-- Netherwing Ledge
-		},
-		["crs"] = {
-			22181,	-- Aether Ray
-			17408,	-- Arcane Vortex (Gas cloud)
-			-- #if AFTER 2.4.0
-			24972, -- Erratic Sentry
-			-- #endif
-			18866,	-- Mageslayer
-			18867,	-- Mana Seeker
-			18880,	-- Nether Ray
-			18880,	-- Netherskate
-			18880,	-- Netherwing Ray
-			18879,	-- Phase Hunter
-			22244,	-- Unbound Ethereal
-			18865,	-- Warp Aberration
-			20516,	-- Warp Monstrosity
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-		["_allowObjectProvider"] = true,
-		["provider"] = { "o", 181279 },	-- Netherbloom
-	}, {
-		i(22576),	-- Mote of Mana
-		i(22457),	-- Primal Mana
-	})),
-	filter(REAGENTS, sharedData({	-- Shadow
-		["coords"] = {
-			{ 44.8, 83.2, HELLFIRE_PENINSULA },	-- The Warp Fields
-			{ 78.0, 71.6, HELLFIRE_PENINSULA },	-- Void Ridge
-			{ 36.0, 71.0, NAGRAND },	-- Oshu'gun
-			{ 62.3, 40.4, NETHERSTORM },	-- Manaforge Ultris
-		},
-		["crs"] = {
-			17014,	-- Collapsing Voidwalker
-			17407,	-- Felmist (Gas cloud)
-			16974,	-- Rogue Voidwalker
-			16975,	-- Uncontrolled Voidwalker
-			18869,	-- Unstable Voidwrath
-			19527,	-- Vacilliating Voidwalker
-			17981,	-- Voidspawn
-			18870,	-- Voidshrieker
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-	}, {
-		i(22577),	-- Mote of Shadow
-		i(22456),	-- Primal Shadow
-	})),
-	filter(REAGENTS, sharedData({	-- Water
-		["coords"] = {
-			{ 62.1, 16.1, NAGRAND },	-- Elemental Plateu, watery
-			{ 40.5, 44.9, NAGRAND },	-- Halaa Basin
-			{ 33.9, 50.0, NAGRAND },	-- Lake Sunspring
-			{ 58.6, 29.2, NAGRAND },	-- Skysong Lake
-			{ 48.6, 25.7, SHADOWMOON_VALLEY },	-- Coilskar Point, east of
-			{ 39.3, 9.7, TEROKKAR_FOREST },	-- Silmyr Lake
-			{ 65.4, 75.0, TEROKKAR_FOREST },	-- Blackwind Lake
-			{ 57.9, 63.7, ZANGARMARSH },	-- The Lagoon
-			{ 58.2, 54.1, ZANGARMARSH },	-- The Lagoon, north of
-		},
-		["crs"] = {
-			20196,	-- Bloodthirsty Marshfang
-			22309,	-- Crashing Wave-Spirit
-			21059,	-- Enraged Water Spirit
-			20290,	-- Lagoon Eel
-			17153,	-- Lake Spirit
-			17155,	-- Lake Surger
-			17154,	-- Muck spawn
-			18750,	-- Shimmerscale Eel
-			21728,	-- Skettis Surger
-			-- #if AFTER 2.3.0
-			17378,	-- Swamp Gas (Gas cloud)
-			-- #endif
-		},
-		["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
-		["_allowObjectProvider"] = true,
-		["provider"] = { "o", 182951 },	-- Pure Water (fishing school)
-	}, {
-		i(22578),	-- Mote of Water
-		i(21885),	-- Primal Water
-	})),
+	filter(REAGENTS, {
+		["groups"] = appendAllGroups(
+			-- Table of Content:
+			--	Cloth + Silk
+			--	Elemetal reagents
+			--	Clams
+			--	Cooking reagents
+			--	Other reagents
+			--_______________________________
+			--
+			--	Cloth + Silk:
+			{
+				i(21877, {	-- Netherweave Cloth
+					["description"] = "Netherweave Cloth is a very common drop from TBC humanoid and undead creatures.",
+				}),
+				i(21881, {	-- Netherweb Spider Silk
+					["crs"] = {
+						-- #if AFTER CATA
+						15170,	-- Coldmist Stalker
+						15171,	-- Coldmist Widow
+						-- #endif
+						18466,	-- Dreadfang Lurker
+						18467,	-- Dreadfang Widow
+					},
+					["coords"] = {
+						{ 52.3, 78.5, TEROKKAR_FOREST },	-- Netherweb Ridge
+						{ 54.8, 59.8, TEROKKAR_FOREST },	-- Allerian Stronghold, west of
+						{ 44.6, 34.3, TEROKKAR_FOREST },	-- Cenarion Thicket, south of
+					},
+					-- #if AFTER CATA
+					["description"] = "Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Karazhan and Terokkar Forest.",
+					["maps"] = { KARAZHAN },
+					-- #else
+					["description"] = "Netherweb Spider Silk is a common drop from TBC spiders, most viably farmed in Terokkar Forest.",
+					-- #endif
+				}),
+			},
+			--_________________________________
+			--
+			--	Elemental reagents:
+			sharedData({	-- Air
+				["coords"] = {
+					{ 70.4, 21.2, NAGRAND },	-- Elemental Plateu, airy
+					{ 65.25, 22.5, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, north of.
+					{ 66.1, 30.0, SHADOWMOON_VALLEY },	-- Altar of Sha'tar, east of.
+					{ 71.8, 30.0, SHADOWMOON_VALLEY },	-- Black Temple, north of.
+					{ 61.6, 65.9, SHADOWMOON_VALLEY },	-- Netherwing Pass proper
+					{ 57.2, 73.2, SHADOWMOON_VALLEY },	-- Southwestern Netherwing Pass
+				},
+				["crs"] = {
+					17158,	-- Dust Howler
+					21060,	-- Enraged Air Spirit
+					17160,	-- Living Cyclone
+					17159,	-- Storm Rager
+					22310,	-- Storming Wind-Ripper
+					24222,	-- Windy Cload (Gas cloud)
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+			}, {
+				i(22572),	-- Mote of Air
+				i(22451),	-- Primal Air
+			}),
+			sharedData({	-- Earth
+				["coords"] = {
+					{ 65.5, 23.7, NAGRAND },	-- Elemental Plateu, earthy
+					{ 67.1, 38.0, NAGRAND },	-- Garadar, east of
+					{ 54.4, 20.2, NAGRAND },	-- Kil'Sorrow Fortress, vest of.
+					{ 62.0, 80.0, NAGRAND },	-- Laughing Skull Ruins, east of.
+					{ 31.5, 80.4, NAGRAND },	-- Oshu'gun, south of.
+					{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
+				},
+				["crs"] = {
+					21060,	-- Enraged Earth Spirit
+					18062,	-- Enraged Crusher
+					22313,	-- Rumbling Earth-Heart
+					17157,	-- Shattered Rumbler
+					17156,	-- Tortured Earth Spirit
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				["_allowObjectProvider"] = true,
+				["providers"] = {
+					{ "o", 181556 },	-- Adamantite Deposit
+					{ "o", 181555 },	-- Fel Iron Deposit
+					{ "o", 181557 },	-- Khorium Vein
+					{ "o", 181569 },	-- Rich Adamantite Deposit
+				},
+			}, {
+				i(22573),	-- Mote of Earth
+				i(22452),	-- Primal Earth
+			}),
+			sharedData({	-- Fire
+				["coords"] = {
+					{ 29.2, 81.3, BLADES_EDGE_MOUNTAINS },	-- Forge Camp: Terror
+					{ 72.4, 20.2, BLADES_EDGE_MOUNTAINS },	-- Skald
+					{ 62.7, 19.5, HELLFIRE_PENINSULA },	-- Throne of Kil'jaeden
+					{ 67.3, 21.2, NAGRAND },	-- Elemental Plateu, fiery
+					{ 46.5, 46.0, SHADOWMOON_VALLEY },	-- The Fel Pits
+				},
+				["crs"] = {
+					21061,	-- Enraged Fire Spirit
+					22323,	-- Incandescent Fel Spark
+					22311,	-- Raging Fire-Soul
+					20514,	-- Searing Elemental
+					22298,	-- Vile Fire-Soul
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				["_allowObjectProvider"] = true,
+				["providers"] = {
+					{ "o", 181555 },	-- Fel Iron Deposit
+					{ "o", 181557 },	-- Khorium Vein
+				},
+			}, {
+				i(22574),	-- Mote of Fire
+				i(21884),	-- Primal Fire
+			}),
+			sharedData({	-- Life
+				["crs"] = {
+					17723,	-- Bog Giant
+					17770,	-- Hungarfen
+					-- #if BEFORE 2.3.0
+					17378,	-- Swamp Gas (Gas cloud)
+					-- #endif
+					17734,	-- Underbog Lord
+					17725,	-- Underbog Lurker
+					17871,	-- Underbog Shambler
+				},
+				["description"] = "The given maps and sources applies for how to obtain this element's motes.",
+				["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
+				["_allowObjectProvider"] = true,
+				["providers"] = {
+					{ "o", 181278 },	-- Ancient Lichen
+					{ "o", 181271 },	-- Dreaming Glory
+					{ "o", 181270 },	-- Felweed
+					{ "o", 181281 },	-- Mana Thistle
+					{ "o", 181280 },	-- Nightmare Vine
+					{ "o", 181275 },	-- Ragveil
+					{ "o", 181277 },	-- Terocone
+				},
+			}, {
+				i(22575),	-- Mote of Life
+				i(21886),	-- Primal Life
+			}),
+			sharedData({	-- Mana
+				["coords"] = {
+					{ 51.5, 16.1, BLADES_EDGE_MOUNTAINS },	-- Bash'ir Landing
+					{ 67.5, 11.7, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine East
+					{ 61.0, 11.0, BLADES_EDGE_MOUNTAINS },	-- Crystal Spine West
+					{ 32.1, 55.0, BLADES_EDGE_MOUNTAINS },	-- Vortex Summit North
+					{ 29.5, 67.0, BLADES_EDGE_MOUNTAINS },	-- Vortex Summit South
+					{ 35.2, 78.2, NETHERSTORM },	-- Arklon Ruins, south of
+					{ 33.4, 29.4, NETHERSTORM },	-- Forge Base Oblivion, west of
+					{ 25.5, 62.2, NETHERSTORM },	-- Manaforge B'naar, north of
+					{ 22.1, 78.2, NETHERSTORM },	-- Manaforge B'naar, south of
+					{ 30.0, 51.5, NETHERSTORM },	-- The Crumbling Waste
+					{ 56.0, 88.0, NETHERSTORM },	-- Wizard Row (Kirin'var Village)
+					{ 69.0, 67.3, SHADOWMOON_VALLEY },	-- Dragonmaw Fortress, south of
+					{ 70.0, 85.0, SHADOWMOON_VALLEY },	-- Netherwing Ledge
+				},
+				["crs"] = {
+					22181,	-- Aether Ray
+					17408,	-- Arcane Vortex (Gas cloud)
+					-- #if AFTER 2.4.0
+					24972, -- Erratic Sentry
+					-- #endif
+					18866,	-- Mageslayer
+					18867,	-- Mana Seeker
+					18880,	-- Nether Ray
+					18880,	-- Netherskate
+					18880,	-- Netherwing Ray
+					18879,	-- Phase Hunter
+					22244,	-- Unbound Ethereal
+					18865,	-- Warp Aberration
+					20516,	-- Warp Monstrosity
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				["_allowObjectProvider"] = true,
+				["provider"] = { "o", 181279 },	-- Netherbloom
+			}, {
+				i(22576),	-- Mote of Mana
+				i(22457),	-- Primal Mana
+			}),
+			sharedData({	-- Shadow
+				["coords"] = {
+					{ 44.8, 83.2, HELLFIRE_PENINSULA },	-- The Warp Fields
+					{ 78.0, 71.6, HELLFIRE_PENINSULA },	-- Void Ridge
+					{ 36.0, 71.0, NAGRAND },	-- Oshu'gun
+					{ 62.3, 40.4, NETHERSTORM },	-- Manaforge Ultris
+				},
+				["crs"] = {
+					17014,	-- Collapsing Voidwalker
+					17407,	-- Felmist (Gas cloud)
+					16974,	-- Rogue Voidwalker
+					16975,	-- Uncontrolled Voidwalker
+					18869,	-- Unstable Voidwrath
+					19527,	-- Vacilliating Voidwalker
+					17981,	-- Voidspawn
+					18870,	-- Voidshrieker
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+			}, {
+				i(22577),	-- Mote of Shadow
+				i(22456),	-- Primal Shadow
+			}),
+			sharedData({	-- Water
+				["coords"] = {
+					{ 62.1, 16.1, NAGRAND },	-- Elemental Plateu, watery
+					{ 40.5, 44.9, NAGRAND },	-- Halaa Basin
+					{ 33.9, 50.0, NAGRAND },	-- Lake Sunspring
+					{ 58.6, 29.2, NAGRAND },	-- Skysong Lake
+					{ 48.6, 25.7, SHADOWMOON_VALLEY },	-- Coilskar Point, east of
+					{ 39.3, 9.7, TEROKKAR_FOREST },	-- Silmyr Lake
+					{ 65.4, 75.0, TEROKKAR_FOREST },	-- Blackwind Lake
+					{ 57.9, 63.7, ZANGARMARSH },	-- The Lagoon
+					{ 58.2, 54.1, ZANGARMARSH },	-- The Lagoon, north of
+				},
+				["crs"] = {
+					20196,	-- Bloodthirsty Marshfang
+					22309,	-- Crashing Wave-Spirit
+					21059,	-- Enraged Water Spirit
+					20290,	-- Lagoon Eel
+					17153,	-- Lake Spirit
+					17155,	-- Lake Surger
+					17154,	-- Muck spawn
+					18750,	-- Shimmerscale Eel
+					21728,	-- Skettis Surger
+					-- #if AFTER 2.3.0
+					17378,	-- Swamp Gas (Gas cloud)
+					-- #endif
+				},
+				["description"] = "The given maps, coordinates and sources applies for how to obtain this element's motes.",
+				["_allowObjectProvider"] = true,
+				["provider"] = { "o", 182951 },	-- Pure Water (fishing school)
+			}, {
+				i(22578),	-- Mote of Water
+				i(21885),	-- Primal Water
+			}),
+			{
+			--_________________________________
+			--
+			--	Clams:
+				i(24476, {	-- Jaggal Clam
+					["coords"] = {
+						{ 46.2, 29.1, SHADOWMOON_VALLEY },	-- Coilskar Point
+						{ 53.1, 25.5, SHADOWMOON_VALLEY },	-- Coilskar Cistern
+					},
+					["maps"] = { ZANGARMARSH },
+					["description"] = "Drops commonly from humanoid- and beast water creatures like naga, dredgers and trashers.",
+					["groups"] = {
+						i(24477),	-- Jaggal Clam Meat
+						i(24478),	-- Jaggal Pearl
+						i(24479, {["timeline"] = { ADDED_2_1_0 }}),	-- Shadow Pearl
+					},
+				}),
+			--_________________________________
+			--
+			--	Cooking reagents:
+				i(27671, {	-- Buzzard Meat
+					["coords"] = {
+						{ 61.6, 67.7, HELLFIRE_PENINSULA },	-- Valley of Bones
+						{ 29.4, 54.8, HELLFIRE_PENINSULA },	-- Southeastern bonecage
+						{ 20.6, 52.5, HELLFIRE_PENINSULA },	-- Southwestern bonecages
+						{ 25.0, 45.5, HELLFIRE_PENINSULA },	-- Central bonecages
+						{ 31.5, 35.7, HELLFIRE_PENINSULA },	-- Northeastern skeleton
+						{ 34.0, 54.8, TEROKKAR_FOREST },	-- The Bone Wastes northwest
+						{ 42.8, 52.2, TEROKKAR_FOREST },	-- Carrion Hill
+						{ 45.7, 62.5, TEROKKAR_FOREST },	-- The Bone Wastes east
+					},
+					["crs"] = {
+						18470,	-- Bonelasher
+						16972,	-- Bonestripper Buzzard
+						16973,	-- Bonestripper Vulture
+					},
+				}),
+				i(27677, {	-- Chunk o' Basilisk
+					["coords"] = {
+						{ 64.5, 33.0, BLADES_EDGE_MOUNTAINS },	-- Veil Ruuan
+						{ 72.4, 20.2, BLADES_EDGE_MOUNTAINS },	-- Skald
+						{ 40.2, 18.4, BLADES_EDGE_MOUNTAINS },	-- Grishnath
+						{ 39.3, 9.7, TEROKKAR_FOREST },	-- Silmyr Lake
+						{ 44.6, 34.3, TEROKKAR_FOREST },	-- Cenarion Thicket, south of
+						{ 62.4, 49.0, TEROKKAR_FOREST },	-- Bonechewer Ruins, west of
+						{ 68.7, 30.5, TEROKKAR_FOREST },	-- Firewing Point, northwest of
+						{ 88.1, 33.6, ZANGARMARSH }, -- Dead Mire East
+						{ 78.1, 30.0, ZANGARMARSH }, -- Dead Mire North
+						{ 34.7, 18.0, ZANGARMARSH }, -- Hewn Bog, north of
+						{ 24.7, 19.1, ZANGARMARSH }, -- Daggerfen Village, north of
+						{ 14.9, 28.9, ZANGARMARSH }, -- Ango'rosh, west of
+						{ 8.3, 52.7, ZANGARMARSH }, -- Sporewind Lake, west of
+					},
+					["crs"] = {
+						18461,	-- Dampscale Basilisk
+						18463,	-- Dampscale Devourer
+						20924,	-- Grishnath Basilisk
+						21816,	-- Ironspine Chomper
+						19730,	-- Ironspine Gazer
+						21854,	-- Ironspine Petrifier
+						19729,	-- Ironspine Threshalisk
+						20283,	-- Marshrock Stomper
+						19706,	-- Marshrock Threshalisk
+						20279,	-- Ragestone Threshalisk
+						20280,	-- Ragestone Trampler
+						20987,	-- Ruuan Weald Basilisk
+						20925,	-- Scalded Basilisk
+					},
+				}),
+				i(27678, {	-- Clefthoof Meat
+					["description"] = "Clefthoofs can be found all over Nagrand.",
+					["crs"] = {
+						17133,	-- Aged Clefthoof
+						17132,	-- Clefthoof Bull
+						19183,	-- Clefthoof Calf
+						18205,	-- Clefthoof
+					},
+					["maps"] = { NAGRAND },
+				}),
+				-- i(24477),	-- Jaggal Clam Meat > Properly sourced under Jaggal Clam listed above.
+				i(31670, {	-- Raptor Ribs
+					["coords"] = {
+						{ 44.9, 54.8, BLADES_EDGE_MOUNTAINS },	-- Bladespire Grounds
+						{ 66.6, 57.0, BLADES_EDGE_MOUNTAINS },	-- Razor Ridge
+						{ 71.5, 30.1, BLADES_EDGE_MOUNTAINS },	-- Bladed Gulch
+						{ 66.0, 22.6, BLADES_EDGE_MOUNTAINS },	-- Gruul's Lair
+						{ 45.2, 11.3, NETHERSTORM },	-- Eco-Dome Farfield
+					},
+					["crs"] = {
+						20728,	-- Bladespire Raptor
+						20729,	-- Bladespire Ravager
+						22052,	-- Daggermaw Blackhide
+						22051,	-- Daggermaw Lashtail
+						21124,	-- Felsworn Daggermaw
+						20634,	-- Scythetooth Raptor
+					},
+				}),
+				i(27674, {	-- Ravager Flesh
+					["coords"] = {
+						{ 58.9, 69.3, BLADES_EDGE_MOUNTAINS }, -- Razor Ridge
+						{ 38.5, 88.3, HELLFIRE_PENINSULA }, -- Razorthorn Trail
+						{ 22.9, 67.2, HELLFIRE_PENINSULA }, -- Dustquill Ravine
+						{ 8.7, 50.8, HELLFIRE_PENINSULA }, -- Thornfang Hill
+					},
+					["crs"] = {
+						16934,	-- Quillfang Ravager
+						19189,	-- Quillfang Skitterer
+						16932,	-- Razorfang Hatchling
+						16933,	-- Razorfang Ravager
+						22123,	-- Rip-Blade Ravager
+						19349,	-- Thornfang Ravager
+					},
+				}),
+				i(31671, {	-- Serpent Flesh
+					["coords"] = {
+						{ 68.5, 70.55, BLADES_EDGE_MOUNTAINS },	-- Scalewing Shelf
+						{ 66.0, 52.6, BLADES_EDGE_MOUNTAINS },	-- Razor Ridge
+						{ 71.5, 30.1, BLADES_EDGE_MOUNTAINS },	-- Bladed Gulch
+						{ 56.4, 60.0, NETHERSTORM },	-- The Vortex Fields west
+						{ 66.3, 61.8, NETHERSTORM },	-- The Vortex Fields east
+					},
+					["crs"] = {
+						21123,	-- Felsworn Scalewing
+						20749,	-- Scalewing Serpent
+						20673,	-- Swiftwing Shredder
+					},
+				}),
+				i(27682, {	-- Talbuk Venison
+					["description"] = "Talbuks can be found all over Nagrand.",
+					["coord"] = { 41.8, 35.8, NETHERSTORM },	-- Eco-Dome Skyperch
+					["crs"] = {
+						18964,	-- Injured Talbuk
+						20610,	-- Talbuk Doe
+						20777,	-- Talbuk Sire
+						17130,	-- Talbuk Stag
+						17131,	-- Talbuk Thorngrazer
+					},
+					["maps"] = { NAGRAND },
+				}),
+				i(27681, {	-- Warped Flesh
+					["coords"] = {
+						{ 56.4, 60.0, NETHERSTORM },	-- The Vortex Fields west
+						{ 66.3, 61.8, NETHERSTORM },	-- The Vortex Fields east
+						{ 65.9, 85.0, TEROKKAR_FOREST },	-- Blackwind Lake Southside
+						{ 60.3, 38.7, TEROKKAR_FOREST },	-- Tuurem, southeast of
+						{ 20.6, 73.5, TEROKKAR_FOREST },	-- Veil Lithic, vest of
+					},
+					["crs"] = {
+						23219,	-- Blackwind Warp Chaser
+						18884,	-- Warp Chaser
+						18465,	-- Warp Hunter
+						18464,	-- Warp Stalker
+					},
+				}),
+			--_________________________________
+			--
+			--	Other reagents:
+				i(32428, {	-- Heart of Darkness
+					["description"] = "Can drop from most creatures within the given raids.",
+					["maps"] = {
+						THE_BATTLE_FOR_MOUNT_HYJAL,
+						THE_BLACK_TEMPLE,
+					},
+					["timeline"] = { ADDED_2_1_0 },
+				}),
+				i(30183, {	-- Nether Vortex
+					["description"] = "Can drop from most creatures within the given raids.",
+					["maps"] = {
+						SERPENTSHRINE_CAVERN,
+						TEMPEST_KEEP_THE_EYE,
+					},
+				}),
+				i(23572, {	-- Primal Nether
+					["description"] = "Is a guarranteed drop from TBC Heroic dungeon end bosses.",
+					-- Danny Donkey: Uncommenting this will create a Reagents header with Primal Nether in the given minilists on retail despite Primal Nether already being sourced on the bosses themselves.
+					--[[["maps"] = {
+						AUCHINDOUN_AUCHENAI_CRYPTS,
+						AUCHINDOUN_MANA_TOMBS,
+						AUCHINDOUN_SETHEKK_HALLS,
+						AUCHINDOUN_SHADOW_LABYRINTH,
+						CAVERNS_OF_TIME_BLACK_MORASS,
+						CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
+						COILFANG_RESERVOIR_SLAVE_PENS,
+						COILFANG_RESERVOIR_STEAMVAULT,
+						COILFANG_RESERVOIR_UNDERBOG,
+						HELLFIRE_CITADEL_BLOOD_FURNACE,
+						HELLFIRE_CITADEL_RAMPARTS,
+						HELLFIRE_CITADEL_SHATTERED_HALLS,
+						TEMPEST_KEEP_ARCATRAZ,
+						TEMPEST_KEEP_BOTANICA,
+						TEMPEST_KEEP_MECHANAR,
+						-- #if AFTER 4.3.0
+						MAGISTERS_TERRACE,
+						-- #endif
+					},]]
+				}),
+			}
+		),
+	}),
 	filter(RECIPES, {
 		-- #if BEFORE 4.0.1
 		cl(DRUID, {

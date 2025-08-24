@@ -8,13 +8,13 @@ root(ROOTS.Zones, {
 			n(VENDORS, {
 				n(115710, {	-- Chief Telemancer Oculeth
 					["coord"] = { 37.0, 46.6, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(140324),	-- Mobile Telemancy Beacon (TOY!)
 					},
 				}),
 				n(112064, {	-- Dolse Shimmersong <Souvenirs>
 					["coord"] = { 51.2, 49.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
 						i(141205),	-- Souvenir Murloc
@@ -27,7 +27,7 @@ root(ROOTS.Zones, {
 				}),
 				n(115736, {	-- First Arcanist Thalyssra
 					["coord"] = { 36.4, 46.8, SURAMAR },
-					["g"] = bubbleDownClassicRep(FACTION_THE_NIGHTFALLEN, {
+					["groups"] = bubbleDownClassicRep(FACTION_THE_NIGHTFALLEN, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(139979, {	-- Footpads of the Nightrunners
@@ -49,7 +49,7 @@ root(ROOTS.Zones, {
 							}),
 							i(140218, {	-- Boon of the Manaseeker
 								["cost"] = 1000000,	-- 100g
-								["g"] = {
+								["groups"] = {
 									i(140226),	-- Mana-Tinged Pack
 								},
 							}),
@@ -163,13 +163,13 @@ root(ROOTS.Zones, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140575),	-- Nightfallen Tabard
-							i(137973, {	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
+							i(137973, {	-- Pattern: Imbued Silkweave Bracers [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
-							i(137976, {	-- Pattern: Imbued Silkweave Pantaloons [Rank 2] (RECIPE!)
+							i(137976, {	-- Pattern: Imbued Silkweave Pantaloons [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
-							i(137979, {	-- Pattern: Imbued Silkweave Slippers [Rank 2] (RECIPE!)
+							i(137979, {	-- Pattern: Imbued Silkweave Slippers [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
 							i(139744, {	-- Shoulderblades of the Uncrowned
@@ -195,9 +195,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(107467, {	-- Jacin
+					["coord"] = { 49.0, 81.6, SURAMAR },
+					["groups"] = {
+						i(137467),	-- Shimmerfield Crystal
+					},
+				}),
 				n(113843, {	-- Kieule <Souvenirs>
 					["coord"] = { 50.4, 53.0, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
 						i(140671),	-- Souvenir Raptor
@@ -209,7 +215,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93971, {	-- Leyweaver Inondra
 					["coord"] = { 40.2, 69.6, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(127277, {	-- Imbued Silkweave Cover [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
@@ -226,7 +232,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93979, {	-- Leyweaver Jorjana
 					["coord"] = { 49.4, 75.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(127025, {	-- Imbued Silkweave Hood [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
@@ -234,13 +240,13 @@ root(ROOTS.Zones, {
 				}),
 				n(112226, {	-- Markus Hjolbruk
 					["coord"] = { 71.6, 48.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(133819),	-- Recipe: Koi-Scented Stormray [Rank 1] (RECIPE!)
 					},
 				}),
 				n(112059, {	-- Sasunne Dameuse <Souvenirs>
 					["coord"] = { 51.2, 50.0, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						--[[ No use yet, potential pets/toys?
 						i(140670),	-- Souvenir Elekk
 						i(141205),	-- Souvenir Murloc
@@ -253,7 +259,7 @@ root(ROOTS.Zones, {
 				}),
 				n(98969, {	-- Stalriss Dawnrunner <Leatherworking Trainer>
 					["coord"] = { 26.6, 71.6, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(140637, {	-- Pattern: Dreadleather Belt [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 124113, 20 },	-- 20x Stonehide Leather
@@ -340,8 +346,8 @@ root(ROOTS.Zones, {
 				n(109562, {	-- Sundries Merchant
 					["coord"] = { 50.0, 77.3, SURAMAR },
 					["description"] = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
-					["g"] = {
-						i(147768, {	-- Suramarian Sapphire
+					["groups"] = {
+						i(147768, {	-- Suramarian Sapphire (QI!)
 							["b"] = 1,	-- Force BoP since this is only available as a quest item
 							["classes"] = { PALADIN },
 							["cost"] = {
@@ -352,7 +358,7 @@ root(ROOTS.Zones, {
 				}),
 				n(92265, {	-- Urael <Nal'ryssa's Minion>
 					["coord"] = { 30.0, 53.2, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(123920, {	-- Plans: Demonsteel Armguards [Rank 1] (RECIPE!)
 							["cost"] = {
 								{ "i", 123919, 20 },	-- 20x Felslate

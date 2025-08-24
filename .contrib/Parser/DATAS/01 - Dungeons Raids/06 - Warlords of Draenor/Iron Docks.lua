@@ -1,219 +1,154 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
+------ Encounter Constants ------
+local NOKGAR = 1235
+local ENFORCERS = 1236
+local OSHIR = 1237
+local SKULLOC = 1238
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[NOKGAR] = {
+		81297,	-- Dreadfang
+		81305,	-- Fleshrender Nok'gar
+	},
+	[ENFORCERS] = {
+		80816,	-- Ahri'ok Dugru
+		80805,	-- Makogg Emberblade
+		80808,	-- Neesa Nox
+	},
+	[OSHIR] = { 79852 },	-- Oshir
+	[SKULLOC] = {
+		83613,	-- Koramar
+		83612,	-- Skulloc
+		83616,	-- Zoggosh
+	},
+}
+
+------ EncounterToLoot ------
+local EncounterToLoot = {
+	[NOKGAR] = {
+		i(110055),	-- Gutwrench Goreaxe
+		i(110002),	-- Fleshrender's Meathook
+	},
+	[ENFORCERS] = {
+		i(110056),	-- Black Iron Sniper Rifle
+		i(110017),	-- Enforcer's Stun Grenade
+	},
+	[OSHIR] = {
+		i(110057),	-- Mindbreaker Scepter
+		i(109997),	-- Kihra's Adrenaline Injector
+	},
+	[SKULLOC] = {
+		i(110059),	-- Chasmwrench Docking Hook
+		i(110058),	-- Bloodied Hand of Woe
+		i(110060),	-- Painbringer's Crystal
+	},
+}
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+}
+
+------ Common Drop Slots ----------
+local CommonDropSlots = {
+	[NOKGAR] = {CHEST,FINGER},
+	[ENFORCERS] = {HEAD,NECK},
+	[OSHIR] = {WAIST,WRIST},
+	[SKULLOC] = {SHOULDER,HANDS,LEGS},
+}
+
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, BossWithHeader =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(558, {	-- Iron Docks
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, GORGROND },
 		["lvl"] = 92,
-		["g"] = {
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(1235, {	-- Fleshrender Nok'gar
-					["crs"] = {
-						81297,	-- Dreadfang
-						81305,	-- Fleshrender Nok'gar
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, CHEST},
-						{"sub", "common_wod_dungeon_drop", 1, FINGER},
-					},
-					["g"] = {
-						i(110055),	-- Gutwrench Goreaxe
-						i(110002),	-- Fleshrender's Meathook
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110055),	-- Gutwrench Goreaxe
-							i(110002),	-- Fleshrender's Meathook
-						})),
-					},
-				}),
-				e(1236, {	-- Grimrail Enforcers
-					["crs"] = {
-						80816,	-- Ahri'ok Dugru
-						80805,	-- Makogg Emberblade
-						80808,	-- Neesa Nox
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, HEAD},
-						{"sub", "common_wod_dungeon_drop", 1, NECK},
-					},
-					["g"] = {
-						i(110056),	-- Black Iron Sniper Rifle
-						i(110017),	-- Enforcer's Stun Grenade
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110056),	-- Black Iron Sniper Rifle
-							i(110017),	-- Enforcer's Stun Grenade
-						})),
-					},
-				}),
-				e(1237, {	-- Oshir
-					["crs"] = { 79852 },	-- Oshir
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, WRIST},
-						{"sub", "common_wod_dungeon_drop", 1, WAIST},
-					},
-					["g"] = {
-						i(110057),	-- Mindbreaker Scepter
-						i(109997),	-- Kihra's Adrenaline Injector
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110057),	-- Mindbreaker Scepter
-							i(109997),	-- Kihra's Adrenaline Injector
-						})),
-					},
-				}),
-				e(1238, {	-- Skulloc
-					["crs"] = {
-						83613,	-- Koramar
-						83612,	-- Skulloc
-						83616,	-- Zoggosh
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 1, HANDS},
-						{"sub", "common_wod_dungeon_drop", 1, LEGS},
-					},
-					["g"] = {
-						ach(9038),	-- Iron Docks
-						i(110059),	-- Chasmwrench Docking Hook
-						i(110058),	-- Bloodied Hand of Woe
-						i(110060),	-- Painbringer's Crystal
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110059),	-- Chasmwrench Docking Hook
-							i(110058),	-- Bloodied Hand of Woe
-							i(110060),	-- Painbringer's Crystal
-						})),
-					},
+		["groups"] = {
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
+				BossOnly(NOKGAR),
+				BossOnly(ENFORCERS),
+				BossOnly(OSHIR),
+				BossOnly(SKULLOC, {
+					ach(9038),	-- Iron Docks
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
+				Boss(NOKGAR, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[NOKGAR])),
+				}),
+				Boss(ENFORCERS, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[ENFORCERS])),
+				}),
+				Boss(OSHIR, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[OSHIR])),
+				}),
+				Boss(SKULLOC, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[SKULLOC])),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossWithHeader(NOKGAR, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[NOKGAR])),
+				}),
+				BossWithHeader(ENFORCERS, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[ENFORCERS])),
+				}),
+				BossWithHeader(OSHIR, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[OSHIR])),
+				}),
+				BossWithHeader(SKULLOC, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[SKULLOC])),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(9081),	-- Expert Timing
 				}),
-				e(1235, {	-- Fleshrender Nok'gar
-					["crs"] = {
-						81297,	-- Dreadfang
-						81305,	-- Fleshrender Nok'gar
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, CHEST},
-						{"sub", "common_wod_dungeon_drop", 2, FINGER},
-					},
-					["g"] = {
-						ach(9083, {	-- Militaristic, Expansionist
-							["crs"] = {
-								83026,	-- Siegemaster Olugar
-								84520,	-- Pitwarden Gwarnok
-								81603,	-- Champion Druna
-							},
-						}),
-						i(110055),	-- Gutwrench Goreaxe
-						i(110002),	-- Fleshrender's Meathook
-					},
+				BossOnly(NOKGAR, {
+					ach(9083, {	-- Militaristic, Expansionist
+						["crs"] = {
+							83026,	-- Siegemaster Olugar
+							84520,	-- Pitwarden Gwarnok
+							81603,	-- Champion Druna
+						},
+					}),
 				}),
-				e(1236, {	-- Grimrail Enforcers
-					["crs"] = {
-						80816,	-- Ahri'ok Dugru
-						80805,	-- Makogg Emberblade
-						80808,	-- Neesa Nox
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, HEAD},
-						{"sub", "common_wod_dungeon_drop", 2, NECK},
-					},
-					["g"] = {
-						i(110056),	-- Black Iron Sniper Rifle
-						i(110017),	-- Enforcer's Stun Grenade
-					},
+				BossOnly(ENFORCERS, {
 				}),
-				e(1237, {	-- Oshir
-					["crs"] = { 79852 },	-- Oshir
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, WRIST},
-						{"sub", "common_wod_dungeon_drop", 2, WAIST},
-					},
-					["g"] = {
-						i(110057),	-- Mindbreaker Scepter
-						i(109997),	-- Kihra's Adrenaline Injector
-					},
+				BossOnly(OSHIR, {
 				}),
-				e(1238, {	-- Skulloc
-					["crs"] = {
-						83613,	-- Koramar
-						83612,	-- Skulloc
-						83616,	-- Zoggosh
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 2, HANDS},
-						{"sub", "common_wod_dungeon_drop", 2, LEGS},
-					},
-					["g"] = {
-						ach(9047),	-- Heroic: Iron Docks
-						ach(9370),	-- Heroic: Iron Docks Guild Run
-						ach(9082),	-- Take Cover!
-						i(110059),	-- Chasmwrench Docking Hook
-						i(110058),	-- Bloodied Hand of Woe
-						i(110060),	-- Painbringer's Crystal
-					},
+				BossOnly(SKULLOC, {
+					ach(9047),	-- Heroic: Iron Docks
+					ach(9370),	-- Heroic: Iron Docks Guild Run
+					ach(9082),	-- Take Cover!
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1235, {	-- Fleshrender Nok'gar
-					["crs"] = {
-						81297,	-- Dreadfang
-						81305,	-- Fleshrender Nok'gar
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						i(110055),	-- Gutwrench Goreaxe
-						i(110002),	-- Fleshrender's Meathook
-					},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				Boss(NOKGAR, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[NOKGAR])),
 				}),
-				e(1236, {	-- Grimrail Enforcers
-					["crs"] = {
-						80816,	-- Ahri'ok Dugru
-						80805,	-- Makogg Emberblade
-						80808,	-- Neesa Nox
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-					},
-					["g"] = {
-						i(110056),	-- Black Iron Sniper Rifle
-						i(110017),	-- Enforcer's Stun Grenade
-					},
+				Boss(ENFORCERS, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[ENFORCERS])),
 				}),
-				e(1237, {	-- Oshir
-					["crs"] = { 79852 },	-- Oshir
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-					},
-					["g"] = {
-						i(110057),	-- Mindbreaker Scepter
-						i(109997),	-- Kihra's Adrenaline Injector
-					},
+				Boss(OSHIR, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[OSHIR])),
 				}),
-				e(1238, {	-- Skulloc
-					["crs"] = {
-						83613,	-- Koramar
-						83612,	-- Skulloc
-						83616,	-- Zoggosh
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						ach(10079),	-- Mythic: Iron Docks
-						i(110059),	-- Chasmwrench Docking Hook
-						i(110058),	-- Bloodied Hand of Woe
-						i(110060),	-- Painbringer's Crystal
-					},
+				Boss(SKULLOC, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[SKULLOC])),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
+				BossOnly(NOKGAR),
+				BossOnly(ENFORCERS),
+				BossOnly(OSHIR),
+				BossOnly(SKULLOC, {
+					ach(10079),	-- Mythic: Iron Docks
 				}),
 			}),
 		},

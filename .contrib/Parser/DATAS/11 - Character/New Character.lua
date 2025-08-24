@@ -72,7 +72,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		ach(19489, {	-- Class Connoisseur
 			["timeline"] = { ADDED_11_0_2 },
-			["g"] = {
+			["groups"] = {
 				crit(55223),	-- Druid
 				crit(55224),	-- Hunter
 				crit(64623),	-- Mage
@@ -93,7 +93,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(7382, {	-- Dynamic Duo
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
 					["timeline"] = { ADDED_11_0_0 },
 				}),
@@ -137,26 +137,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_5_0_4 },
 			["rank"] = 200000,
 		}),
-		ach(891, {	-- Giddy Up!
-			-- #if AFTER TBC
-			["spellID"] = 33388,	-- Apprentice Riding
-			["rank"] = 1,
-			-- #else
-			["OnClick"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.KNOW_SPELLS_ANY_OnUpdate(t, 824, 18995, 10907, 826, 10861, 828, 10906, 825); end]],
-			--[[
-				824,	-- Horse Riding
-				18995,	-- Kodo Riding
-				10907,	-- Mechanostrider Piloting
-				826,	-- Ram Riding
-				10861,	-- Raptor Riding
-				828,	-- Tiger Riding
-				10906,	-- Undead Horsemanship
-				825,	-- Wolf Riding
-			]]--
-			-- #endif
-		}),
+		ach(891),	-- Giddy Up!
 		applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
 			["spellID"] = 34090,	-- Expert Riding
 			["timeline"] = { ADDED_2_0_1 },
@@ -178,13 +159,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 1,
 		}),
-		ach(546, {	-- Safe Deposit
-			-- #if BEFORE TBC
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 6); end]],
-			-- #elseif BEFORE WRATH
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 7); end]],
-			-- #endif
-		}),
+		ach(546),	-- Safe Deposit
 		ach(545, {	-- Shave and a Haircut
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
@@ -500,8 +475,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157622, {	-- Silverscope Longrifle
 				["description"] = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
 			}),
-			i(157650, {	-- Tracker's Spear
-				["description"] = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+			i(232631, {	-- Wrapped Spear
+				i(157650, {	-- Tracker's Spear
+					["description"] = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+				}),
 			}),
 		})),
 	}),
@@ -1279,6 +1256,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(50057, {	-- Sharp Dirk
+				["description"] = "New Blood Elves start with this weapon.",
 				["timeline"] = { ADDED_3_3_0 }
 			}),
 			i(2092),	-- Worn Dagger
@@ -1308,6 +1286,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(153, {	-- Primitive Kilt
 				["timeline"] = { REMOVED_4_0_3 }
+			}),
+			i(6135, {	-- Primitive Kilt
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 }	-- Unsure when it got added/removed
 			}),
 			i(52539, {	-- Primal Pants
 				--["races"] = { DWARF },
@@ -1415,46 +1396,46 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 				}),
 				q(65424, {	-- Whatever You Sayaad (H)
 					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 74.6, 47.4, ORGRIMMAR },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 				}),
 				q(76427, {	-- A Dark Summons (H)
 					["provider"] = { "i", 208227 },	-- Mysterious Letter (QI!)
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
 					-- ["coord"] = { X, Y, ORGRIMMAR },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(76410, {	-- A Dark Summons (A)
 					["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
 				q(75538, {	-- Beginning Impositions (A)
 					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
 					["provider"] = { "n", 204198 },	-- Assistant Phineas
 					["coord"] = { 43.6, 79.3, STORMWIND_CITY },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75539, {	-- Some Wicked Things This Way Come
 					["sourceQuests"] = {
@@ -1464,30 +1445,30 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75540, {	-- Hermetic Insurance
 					["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75541, {	-- Those Who Hesitate
 					["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(76155, {	-- A Wolf Among Sheep
 					["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 					["provider"] = { "n", 205276 },	-- Initiate Oman
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						i(206160),	-- Madam Shadow's Grimoire (QI!)
 						spell(412234),	-- Madam Shadow's Soulstone
 					},
@@ -1496,41 +1477,41 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75639, {	-- Fel Suspicions
 					["sourceQuests"] = { 75542 },	-- Curses & Cultists
 					["provider"] = { "n", 205433 },	-- Initiate Oman
 					["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75543, {	-- Last Rites By Accident
 					["sourceQuests"] = { 75639 },	-- Fel Suspicions
 					["provider"] = { "o", 402609 },	-- Demonic Gateway
 					["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75544, {	-- When Revenge Burns Green
 					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
 					["provider"] = { "n", 205575 },	-- Initiate Oman
 					["coord"] = { 8.4, 36.0, BURNING_STEPPES },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						spell(417884),	-- Fiendish Imps
 						i(208108),	-- Madam Shadow's Old Grimoire
 					},
 				}),
 				q(76163, {	-- A Lighter Shade of Fel
+					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
 					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
 					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
-					["classes"] = { WARLOCK },
-					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						i(207101),	-- Glyph of Banehollow's Soulstone
 					},
 				}),
@@ -1864,7 +1845,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	}),
 	-- #endif
-	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {
+	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {
 		ill(5387),	-- Agility (ILLUSION!)
 		ill(5861),	-- Beastslayer (ILLUSION!)
 		ill(5393),	-- Crusader (ILLUSION!)
@@ -1982,20 +1963,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		i(37, {	-- Worn Axe
 			-- #if BEFORE 10.1.7
+			-- #if AFTER 7.3.5
 			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
 			-- #endif
-			-- #if ANYCLASSIC
-			-- CRIEVE NOTE: This was not available in Wrath Classic.
-			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2 },
-			-- #else
-			["timeline"] = { ADDED_1_11_0, REMOVED_7_3_5 },
 			-- #endif
+			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_3_5 },
 		}),
 		i(52532, {	-- Worn Wood Chopper
 		--	["classes"] = { HUNTER },
 		--	["races"] = { GOBLIN, HUMAN, UNDEAD, WORGEN },
 			-- #if BEFORE 10.1.7
+			-- #if AFTER 5.0.4
 			["description"] = "Former Starter Weapon for Goblin, Human, Undead & Worgen Hunters.",
+			-- #endif
 			-- #endif
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 		}),
@@ -2004,7 +1984,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #if BEFORE 11.0.0
 	-- Fixed with TWW - you can collect any armor with any class
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["sharedDescription"] = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
@@ -2015,7 +1995,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	})),
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["sharedDescription"] = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
@@ -2040,7 +2020,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["sourceQuests"] = { 84423 },	-- Shaking the Dust Off
 			["provider"] = { "n", 229075 },	-- Scalecommander Emberthal
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
-			["g"] = {
+			["groups"] = {
 				o(467064, {	-- Quest Journal
 					i(229165),	-- Quest Journal (QI!)
 				}),

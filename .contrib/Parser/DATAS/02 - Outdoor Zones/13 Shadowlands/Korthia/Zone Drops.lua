@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					180032,	-- Wild Worldcracker
 					179859,	-- Xyraxz the Unknowable
 				},
-				["g"] = {
+				["groups"] = {
 					hqt(64280, {	-- Daily Drop #1
 						["name"] = "Daily Drop #1",
 						["isDaily"] = true,
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			i(187253),	-- Maw Guard's Spiked Spaulders
 			i(187252),	-- Ritualist's Spiked Mantle
 		--	Blues
-			i(186969, {["sym"]={{"select","headerID",354778}}}),	-- Collapsing Riftstone (symlink 'The Rift' header from Korthia)
+			i(186969),	-- Collapsing Riftstone
 		--	Greens
 			i(186153),	-- Forsworn Seal
 			i(186151),	-- Mawsworn Assasin's Twinblade

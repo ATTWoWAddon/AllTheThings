@@ -54,9 +54,22 @@ app.SetScript = function(self, ...)
 		frame:SetScript(scriptName, nil);
 	end
 end
+local ForceDebugPrint
 app.DebugEvents = function()
 	app.DebuggingEvents = not app.DebuggingEvents
 	frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent);
+	-- enable/disable Debugging for prints if not already enabled
+	if app.DebuggingEvents then
+		if not app.Debugging then
+			ForceDebugPrint = true
+			app.Debugging = true
+		end
+	else
+		if ForceDebugPrint and app.Debugging then
+			ForceDebugPrint = nil
+			app.Debugging = nil
+		end
+	end
 end
 
 -- Simple Events

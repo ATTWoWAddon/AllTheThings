@@ -180,13 +180,12 @@ namespace ATT
             fields.Sort(Framework.Compare);
 
             // Check if the body has OnInit, if so, rip it out and append it before the constructor
-            var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef) || data.TryGetValue("OnSourceInit", out OnInitRef);
+            var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef);
             if (hasOnInit)
             {
                 fields.Remove("OnInit");
-                fields.Remove("OnSourceInit");
                 var onInitBody = SimplifyLuaBody(OnInitRef);
-                if (!onInitBody.Contains("return"))
+                if (!onInitBody.Contains("return") && onInitBody.Contains("function("))
                 {
                     Console.WriteLine("Missing a return within an OnInit function body.");
                     Console.WriteLine(OnInitRef.ToString());
@@ -203,6 +202,10 @@ namespace ATT
             {
                 // Write a comma for the start of the data dictionary contents.
                 if (objectType != null && objectType.ShouldWriteObjectType) builder.Append(',');
+
+                // Check if the body has OnInit, if so, rip it out and append it before the constructor
+                var hasFactionSpecificData = data.ContainsKey("aqd") && fields.Contains("aqd") && !data.ContainsKey("otherQuestData");    // Quests in Retail split into two quests if they use AQD/HQD
+                if (hasFactionSpecificData) builder.Append("_.ResolveQuestData(");
 
                 // We don't need to write the "g" tag if that's the only field.
                 if (fields.Count == 1 && fields[0] == "g")
@@ -275,6 +278,14 @@ namespace ATT
                     // Close Bracket for the end of the Dictionary.
                     builder.Append('}');
                 }
+
+                // If we have faction specific data, append the finishing parenthesis.
+                if (hasFactionSpecificData) builder.Append(')');
+            }
+            else
+            {
+                // Uhh, that shouldn't happen.
+                if (hasOnInit) Framework.LogError("ERROR: OnInit in a place where it does not belong!");
             }
 
             // Close the Parenthesis for the end of the constructor.
@@ -405,6 +416,48 @@ namespace ATT
         {
             var builder = new StringBuilder();
             ExportCompressedLua(builder, list);
+            STRUCTURE_COUNTS.Clear();
+            FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
+            return builder;
+        }
+
+        /// <summary>
+        /// Export the category to a new string builder instance.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        public static StringBuilder ExportCompressedLuaCategory(string name, List<object> category)
+        {
+            // Export the Category
+            var builder = new StringBuilder();
+            builder.Append("_.Categories.").Append(name).AppendLine("={");
+            foreach (var group in category)
+            {
+                ExportCompressedLua(builder, group);
+                builder.Append(",");
+            }
+            builder.Remove(builder.Length - 1, 1).AppendLine("};");
+
+            // Simplify the structure of the string and then export to the builder.
+            if (!((string[])Framework.Config["PreProcessorTags"]).Contains("NOSIMPLIFY"))
+            {
+                var simplifyConfig = Framework.Config["SimplifyStructures"];
+                if (simplifyConfig.Defined)
+                {
+                    int[] simplify = simplifyConfig;
+                    SimplifyStructureForLua(builder, simplify[0], simplify[1]);
+                }
+                else
+                {
+                    SimplifyStructureForLua(builder);
+                }
+            }
+            ExportLocalVariablesForLua(builder);
+            builder.Insert(0, new StringBuilder()
+                .AppendLine("---@diagnostic disable: deprecated")
+                .AppendLine("local appName, _ = ...;"));
             STRUCTURE_COUNTS.Clear();
             FUNCTION_SHORTCUTS.Clear();
             AddTableNewLines = false;

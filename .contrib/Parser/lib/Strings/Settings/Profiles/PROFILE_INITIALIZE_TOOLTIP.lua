@@ -1,0 +1,14 @@
+createLocalizationString({
+	readable = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the 'Default' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!",
+	constant = "PROFILE_INITIALIZE_TOOLTIP",
+	export = true,
+	text = {
+		en = [[~"This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '" .. DEFAULT .. "' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!"]],
+		es = [[~"Esto permitirá que sus Variables Guardadas para ATT admitan y contengan datos de Perfil. Su configuración actual y la información de la Ventana se copiarán en el archivo '" .. DEFAULT .. "', Perfil que no se puede eliminar, pero se puede modificar y se usará como perfil inicial para todos los personajes.\n\n¡Asegúrate de informar cualquier comportamiento inusual o errores con los perfiles al Discord de ATT!"]],
+		mx = [[~"Esto permitirá que sus Variables Guardadas para ATT admitan y contengan datos de Perfil. Su configuración actual y la información de la Ventana se copiarán en el archivo '" .. DEFAULT .. "', Perfil que no se puede eliminar, pero se puede modificar y se usará como perfil inicial para todos los personajes.\n\n¡Asegúrate de informar cualquier comportamiento inusual o errores con los perfiles al Discord de ATT!"]],
+		fr = [[~"Cela permettra à vos variables sauvegardées pour ATT de supporter et de contenir des données de profil. Vos paramètres et informations de fenêtre actuels seront copiés dans le profil '" .. DEFAULT .. "'. Ce profil ne peut pas être supprimé, mais peut être modifié et sera utilisé comme profil initial pour tous les personnages. N’oubliez pas de signaler tout comportement inhabituel ou tout bogue lié aux profils sur le Discord d’ATT !"]],
+		ru = [[~"Включить поддержку Профилей. Ваши текущие Настройки и позиции окон будут скопированы в Профиль '" .. DEFAULT .. "', который нельзя будет удалить, но можно будет отредактировать, и который будет использован как начальный Профиль на всех персонажах.\n\nПожалуйста, сообщайте обо всех ошибках и необычном поведении Профилей на сервере ATT Discord!"]],
+		cn = [[~"这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '" .. DEFAULT .. "' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！"]],
+		tw = [[~"這將使您的 ATT 保存變數能夠支援和包含設定檔資料。您當前的設定和視窗資訊將被複製到 '" .. DEFAULT .. "' 設定檔中，該設定檔無法刪除，但可以修改並使用作為所有角色的初始設定檔。\n\n請務必必將設定檔的任何異常行為或錯誤回報給 ATT Discord！"]],
+	},
+})

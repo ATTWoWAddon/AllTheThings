@@ -6,12 +6,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
 		["description"] = "The best route for a fuil clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
-		-- #if BEFORE LEGION
+		-- #if BEFORE CATA
 		["zone-text-areaID"] = 2562,	-- Karazhan
 		-- #endif
 		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
 		["maps"] = {
-			KARAZHAN,	-- Servant's Quarters (350)
+			KARAZHAN,	-- Servant's Quarters
 			351,	-- Upper Livery Stables
 			352,	-- The Banquet Hall
 			353,	-- The Guest Chambers
@@ -45,11 +45,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				faction(FACTION_THE_VIOLET_EYE),	-- The Violet Eye
 			}),
 			n(QUESTS, bubbleDown({ ["timeline"] = REMOVED_WITH_RETURN_TO_KARAZHAN }, {
-				["g"] = bubbleDownClassicRep(FACTION_THE_VIOLET_EYE, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_VIOLET_EYE, {
 					{		-- Neutral
 						q(9844, {	-- A Demonic Presence
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 9843,	-- Keanna's Log
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
@@ -59,8 +59,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9824, {	-- Arcane Disturbances
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 11216,	-- Archmage Alturus
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 68,
 							["groups"] = {
@@ -82,26 +82,26 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["lvl"] = 68,
 						}),
 						q(9840, {	-- Assessing the Situation
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 9838,	-- The Violet Eye
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 69,
 						}),
 						q(9826, {	-- Contact from Dalaran
-							["providers"] = {
-								{ "n", 17613 },	-- Archmage Alturus
-								{ "i", 24482 },	-- Alturus's Report
-							},
 							["sourceQuests"] = {
 								9824,	-- Arcane Disturbances
 								9825,	-- Restless Activity
+							},
+							["providers"] = {
+								{ "n", 17613 },	-- Archmage Alturus
+								{ "i", 24482 },	-- Alturus's Report
 							},
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 68,
 						}),
 						q(9831, {	-- Entry Into Karazhan
-							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["sourceQuest"] = 9829,	-- Khadgar
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 							["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH },
 							["lvl"] = 68,
@@ -112,8 +112,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9843, {	-- Keanna's Log
-							["qg"] = 16388,	-- Koren <The Blacksmith>
 							["sourceQuest"] = 9840,	-- Assessing the Situation
+							["qg"] = 16388,	-- Koren <The Blacksmith>
 							["timeline"] = { REMOVED_7_1_0 },
 							["lvl"] = 70,
 							["groups"] = {
@@ -127,9 +127,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9829, {	-- Khadgar
-							["qg"] = 18165,	-- Archmage Cedric
 							["sourceQuest"] = 9826,	-- Contact from Dalaran
-							["coords"] = { 
+							["qg"] = 18165,	-- Archmage Cedric
+							["coords"] = {
 								-- #if AFTER CATA
 								{ 30.8, 30.8, ALTERAC_MOUNTAINS },
 								-- #else
@@ -139,8 +139,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["lvl"] = 68,
 						}),
 						q(9825, {	-- Restless Activity
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 11216,	-- Archmage Alturus
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 68,
 							["groups"] = {
@@ -157,8 +157,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9860, {	-- The New Directive
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 9844,	-- A Demonic Presence
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["maps"] = {
 								-- #if AFTER CATA
@@ -173,8 +173,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9832, {	-- The Second and Third Fragments
-							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["sourceQuest"] = 9831,	-- Entry Into Karazhan
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 							["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ },
 							["lvl"] = 68,
@@ -188,64 +188,64 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9838, {	-- The Violet Eye
-							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["sourceQuest"] = 9837,	-- Return to Khadgar
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
 							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 							["maps"] = { DEADWIND_PASS },
 							["lvl"] = 69,
 						}),
 					}, {	-- Friendly
 						q(10731, {	-- Path of the Violet Assassin
-							["qg"] = 18253,	-- Archmage Leryda
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								--10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								i(29280),	-- Violet Signet
 							},
 						}),
 						q(10729, {	-- Path of the Violet Mage
-							["qg"] = 18253,	-- Archmage Leryda
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10731,	-- Path of the Violet Assassin [Assassin]
 								--10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								i(29284),	-- Violet Signet
 							},
 						}),
 						q(10732, {	-- Path of the Violet Protector
-							["qg"] = 18253,	-- Archmage Leryda
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
 								--10732,	-- Path of the Violet Protector [Protector]
 								10730,	-- Path of the Violet Restorer [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								i(29276),	-- Violet Signet
 							},
 						}),
 						q(10730, {	-- Path of the Violet Restorer
-							["qg"] = 18253,	-- Archmage Leryda
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10731,	-- Path of the Violet Assassin [Assassin]
 								10729,	-- Path of the Violet Mage [Mage]
 								10732,	-- Path of the Violet Protector [Protector]
 								--10730,	-- Path of the Violet Restorer [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								i(29288),	-- Violet Signet
@@ -253,18 +253,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					}, {	-- Honored
 						q(9631, {	-- A Colleague's Aid
+							["sourceQuest"] = 9680,	-- Digging Up the Past
 							["providers"] = {
 								{ "n", 17613 },	-- Archmage Alturus
 								{ "i", 24152 },	-- Charred Bone Fragment
 							},
-							["sourceQuest"] = 9680,	-- Digging Up the Past
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["maps"] = { NETHERSTORM },
 							["lvl"] = 70,
 						}),
 						q(9680, {	-- Digging Up the Past
-							["qg"] = 17613,	-- Archmage Alturus
 							["sourceQuest"] = 9645,	-- The Master's Terrace
+							["qg"] = 17613,	-- Archmage Alturus
 							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
@@ -278,15 +278,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10735, {	-- Down the Violet Path [Assassin]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10731,	-- Path of the Violet Assassin
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								--10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -296,15 +296,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10733, {	-- Down the Violet Path [Mage]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10729,	-- Path of the Violet Mage
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10735,	-- Down the Violet Path [Assassin]
 								--10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -314,15 +314,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10736, {	-- Down the Violet Path [Protector]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10732,	-- Path of the Violet Protector
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
 								--10736,	-- Down the Violet Path [Protector]
 								10734,	-- Down the Violet Path [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -332,15 +332,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10734, {	-- Down the Violet Path [Restorer]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10730,	-- Path of the Violet Restorer
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10735,	-- Down the Violet Path [Assassin]
 								10733,	-- Down the Violet Path [Mage]
 								10736,	-- Down the Violet Path [Protector]
 								--10734,	-- Down the Violet Path [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -350,13 +350,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9638, {	-- In Good Hands
-							["qg"] = 16813,	-- Wravien <The Mage>
 							["sourceQuest"] = 9630,	-- Medivh's Journal
+							["qg"] = 16813,	-- Wravien <The Mage>
 							["lvl"] = 70,
 						}),
 						q(9637, {	-- Kalynna's Request
-							["qg"] = 17636,	-- Kalynna Lathred
 							["sourceQuest"] = 9631,	-- A Colleague's Aid
+							["qg"] = 17636,	-- Kalynna Lathred
 							["coord"] = { 32.2, 63.6, NETHERSTORM },
 							["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 							["lvl"] = 70,
@@ -370,8 +370,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9639, {	-- Kamsis
-							["qg"] = 16814,	-- Gradav <The Warlock>
 							["sourceQuest"] = 9638,	-- In Good Hands
+							["qg"] = 16814,	-- Gradav <The Warlock>
 							["lvl"] = 70,
 						}),
 						q(9630, {	-- Medivh's Journal
@@ -380,8 +380,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["lvl"] = 70,
 						}),
 						q(9644, {	-- Nightbane
-							["qg"] = 17636,	-- Kalynna Lathred
 							["sourceQuest"] = 9637,	-- Kalynna's Request
+							["qg"] = 17636,	-- Kalynna Lathred
 							["coord"] = { 32.2, 63.6, NETHERSTORM },
 							["lvl"] = 70,
 							["groups"] = {
@@ -394,8 +394,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9645, {	-- The Master's Terrace
-							["qg"] = 16815,	-- Kamsis <The Conjurer>
 							["sourceQuest"] = 9640,	-- The Shade of Aran
+							["qg"] = 16815,	-- Kamsis <The Conjurer>
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- Journal Entry Read
@@ -404,8 +404,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(9640, {	-- The Shade of Aran
-							["qg"] = 16815,	-- Kamsis <The Conjurer>
 							["sourceQuest"] = 9639,	-- Kamsis
+							["qg"] = 16815,	-- Kamsis <The Conjurer>
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Medivh's Journal
@@ -415,15 +415,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					}, {	-- Revered
 						q(10740, {	-- Distinguished Service [Assassin]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								--10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -433,15 +433,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10738, {	-- Distinguished Service [Mage]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10740,	-- Distinguished Service [Assassin]
 								--10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -451,15 +451,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10741, {	-- Distinguished Service [Protector]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10736,	-- Down the Violet Path [Protector]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
 								--10741,	-- Distinguished Service [Protector]
 								10739,	-- Distinguished Service [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -469,15 +469,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10739, {	-- Distinguished Service [Restorer]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10734,	-- Down the Violet Path [Restorer]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10740,	-- Distinguished Service [Assassin]
 								10738,	-- Distinguished Service [Mage]
 								10741,	-- Distinguished Service [Protector]
 								--10739,	-- Distinguished Service [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -488,13 +488,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					}, {	-- Exalted
 						q(11031, {	-- Archmage No More
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
+							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29287, 1 },	-- Violet Signet of the Archmage
 							},
+							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								--i(29287),	-- Violet Signet of the Archmage
@@ -504,13 +504,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(11033, {	-- Assassin No More
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
+							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
 							},
+							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								i(29287),	-- Violet Signet of the Archmage
@@ -519,15 +519,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10727, {	-- Eminence Among the Violet Eye [Assassin]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								--10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -537,15 +537,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10725, {	-- Eminence Among the Violet Eye [Mage]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10727,	-- Eminence Among the Violet Eye [Assassin]
 								--10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -555,15 +555,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10728, {	-- Eminence Among the Violet Eye [Protector]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10741,	-- Distinguished Service [Protector]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
 								--10728,	-- Eminence Among the Violet Eye [Protector]
 								10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -573,15 +573,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(10726, {	-- Eminence Among the Violet Eye [Restorer]
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10739,	-- Distinguished Service [Restorer]
-							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["altQuests"] = {
 								10727,	-- Eminence Among the Violet Eye [Assassin]
 								10725,	-- Eminence Among the Violet Eye [Mage]
 								10728,	-- Eminence Among the Violet Eye [Protector]
 								--10726,	-- Eminence Among the Violet Eye [Restorer]
 							},
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 							["lvl"] = 70,
 							["groups"] = {
 								objective(1, {	-- 0/1 Violet Signet
@@ -591,13 +591,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(11032, {	-- Protector No More
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
+							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
 							},
+							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								i(29287),	-- Violet Signet of the Archmage
@@ -607,13 +607,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							},
 						}),
 						q(11034, {	-- Restorer No More
-							["qg"] = 18253,	-- Archmage Leryda
 							["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
+							["qg"] = 18253,	-- Archmage Leryda
 							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
 							},
+							["repeatable"] = true,
 							["lvl"] = 70,
 							["groups"] = {
 								i(29287),	-- Violet Signet of the Archmage
@@ -625,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			})),
-			n(REAGENTS, {
+			filter(REAGENTS, {
 				i(21882, {	-- Soul Essence
 					["description"] = "Drops from Undead creatures in Karazhan."
 				}),
@@ -680,8 +680,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1552, {	-- Servant's Quarters
 				["description"] = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
-				-- #if BEFORE MOP
-				["npcID"] = RARES,
+				-- #if BEFORE WOD
+				["headerID"] = RARES,
 				-- #endif
 				["groups"] = {
 					prof(SKINNING, {
@@ -807,7 +807,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							18168,	-- The Crone
 						},
 						["groups"] = {
-							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House
+							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(122231, {	-- Music Roll: Karazhan Opera House
@@ -841,7 +841,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(17534, {	-- Julianne [Romulo and Julianne]
-						["lore"] = "Julianne will appear first alone.  After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
+						["lore"] = "Julianne will appear first alone. After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
 						["crs"] = {
 							17533,	-- Romulo
 						},
@@ -1011,7 +1011,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["provider"] = { "o", 185119 },	-- Dust Covered Chest
 				-- #if AFTER 9.0.2
-				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate. Or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this have a 50% success rate.",
+				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
 				-- #endif
 				["groups"] = {
 					i(28749),	-- King's Defender
@@ -1032,8 +1032,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690, {	-- Karazhan
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 9844,	-- A Demonic Presence
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'A Demonic Presence'
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5084, {	-- Karazhan Guild Run

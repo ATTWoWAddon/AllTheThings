@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		n(RARES, {
 			o(239828, {	-- Edge of Reality
-				["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
+				["description"] = "When you click on the Edge of Reality, it will teleport you. Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
 				["coords"] = {
 					{ 51.1, 19.86, FROSTFIRE_RIDGE },
 					{ 52.4, 18.18, FROSTFIRE_RIDGE },

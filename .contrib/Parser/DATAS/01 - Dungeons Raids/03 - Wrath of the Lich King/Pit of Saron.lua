@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ ["timeline"] = { ADDED_3_3_0 } }, {
 	inst(278, {	-- Pit of Saron
 		["mapID"] = PIT_OF_SARON,
 		["coord"] = { 52.3, 89.3, ICECROWN },
@@ -33,8 +33,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			n(QUESTS, {
 				q(24710, {	-- Deliverance from the Pit (A)
-					["qg"] = 37591,	-- Martin Victus
 					["sourceQuest"] = 24498,	-- The Path to the Citadel (A)
+					["qg"] = 37591,	-- Martin Victus
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
@@ -44,8 +44,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(24712, {	-- Deliverance from the Pit (H)
-					["qg"] = 24712,	-- Gorkun Ironskull
 					["sourceQuest"] = 24507,	-- The Path to the Citadel (H)
+					["qg"] = 24712,	-- Gorkun Ironskull
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
@@ -55,22 +55,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(24711, {	-- Frostmourne (A)
-					["qg"] = 38188,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 24710,	-- Deliverance from the Pit (A)
+					["qg"] = 38188,	-- Lady Jaina Proudmoore
 					["maps"] = { HALLS_OF_REFLECTION },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 				}),
 				q(24713, {	-- Frostmourne (H)
-					["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 24712,	-- Deliverance from the Pit (H)
+					["qg"] = 38189,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["maps"] = { HALLS_OF_REFLECTION },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 				}),
 				q(24498, {	-- The Path to the Citadel (A)
-					["qg"] = 36993,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 24683,	-- The Pit of Saron (A)
+					["qg"] = 36993,	-- Lady Jaina Proudmoore
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
@@ -83,8 +83,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(24507, {	-- The Path to the Citadel (H)
-					["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 24682,	-- The Pit of Saron (H)
+					["qg"] = 36990,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
@@ -204,8 +204,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						ach(4525),	-- Don't Look Up
 					}),
 					n(ZONE_DROPS, {
-						i(50379),	-- Battered Hilt (Alliance)
-						i(50380),	-- Battered Hilt (Horde)
+						a(i(50379)),	-- Battered Hilt [A]
+						h(i(50380)),	-- Battered Hilt [H]
 						i(50318),	-- Ghostly Wristwraps
 						i(50315),	-- Seven-Fingered Claws
 						i(50319),	-- Unsharpened Ice Razor
@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(278, {

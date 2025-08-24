@@ -1,17 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(216042, {	-- Cha'tak
 				["description"] = "Inside the cave, behind the waterfall.",
 				["coord"] = { 70.7, 21.4, AZJ_KAHET },
 				["questID"] = 81704,
-				["g"] = {
+				["groups"] = {
 					i(221212),	-- Death Burrower Handguards
 					i(221237),	-- Lamentable Vagrant's Lantern
 				},
@@ -19,7 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(222624, {	-- Deepcrawler Tx'kesh
 				["coord"] = { 64.5, 6.4, AZJ_KAHET },
 				["questID"] = 82077,
-				["g"] = {
+				["groups"] = {
 					i(223923),	-- Gilded Cryptlord's Sabatons
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
@@ -29,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216045, {	-- Enduring Gutterface
 				["coord"] = { 58.0, 62.3, AZJ_KAHET },
 				["questID"] = 81707,
-				["g"] = {
+				["groups"] = {
 					i(221248),	-- Deep Terror Carver
 					i(221243),	-- Slippers of Delirium (alpha data)
 				},
@@ -42,7 +39,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 64.3, 86.0, AZJ_KAHET_LOWER},	-- Mid
 					{ 65.5, 81.9, AZJ_KAHET_LOWER},	-- End
 				},
-				["g"] = {
+				["groups"] = {
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223941),	-- Nerubian Cultivator's Girdle
 					i(223916),	-- Nerubian Cutthroat's Reach
@@ -53,7 +50,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["description"] = "Can be at any blood pool in area?",
 				["questID"] = 82034,
 				["coord"] = { 65.1, 85.7, AZJ_KAHET_LOWER},
-				["g"] = {
+				["groups"] = {
 					i(223950),	-- Corruption Sifter's Treads
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
@@ -68,7 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 61.7, 29.8, AZJ_KAHET },	-- End
 				},
 				["questID"] = 81702,
-				["g"] = {
+				["groups"] = {
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221206),	-- Reinforced Chitin Chestpiece
 				},
@@ -77,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--TODO: need more coords, flying around
 				["coord"] = { 66.4, 56.4, AZJ_KAHET },
 				["questID"] = 81706,
-				["g"] = {
+				["groups"] = {
 					i(221217),	-- Nerubian Bomber's Leggings
 					i(221252),	-- Nerubian Slayer's Claymore
 					i(221263),	-- Nerubian Venom-Tipped Dart
@@ -86,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216043, {	-- Monstrous Lasharoth
 				["coord"] = { 68.9, 72.2, AZJ_KAHET },
 				["questID"] = 81705,
-				["g"] = {
+				["groups"] = {
 					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221227),	-- Monstrous Fungal Cord
@@ -99,7 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ 62.9, 4.8, AZJ_KAHET },
 				},
 				["questID"] = 82078,
-				["g"] = {
+				["groups"] = {
 					i(223939),	-- Esteemed Nerubian's Mantle
 					i(223917),	-- Nerubian Covert's Cloak
 					i(223916),	-- Nerubian Cutthroat's Reach
@@ -109,15 +106,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216038, {	-- The Groundskeeper
 				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,
-				["g"] = {
+				["groups"] = {
 					i(221214),	-- Chitin Chain Headpiece
+					i(221252),	-- Nerubian Slayer's Claymore
 				},
 			}),
 			n(216047, {	-- The One Left
 				["questID"] = 82290,
 				["coord"] = { 63.5, 95.2, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(221251),	-- Bestial Underground Cleaver
+					i(221247),	-- Cavernous Critter Shooter
 					i(221265),	-- Charm of the Underground Beast
 					i(225998),	-- Earthen Adventurer's Cloak
 					i(221246),	-- Fierce Beast Staff
@@ -126,14 +125,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216049, {	-- The Oozekhan
 				["questID"] = 82035,
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(223931),	-- Black Blood Cowl
 				},
 			}),
 			n(216046, {	-- Tka'ktath
 				["questID"] = 82289,
 				["coord"] = { 62.8, 66.7, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(221252),	-- Nerubian Slayer's Claymore
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221263),	-- Nerubian Venom-Tipped Dart
@@ -143,7 +142,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216051, {	-- Umbraclaw Matra
 				["coord"] = { 64.5, 3.4, AZJ_KAHET },
 				["questID"] = 82037,
-				["g"] = {
+				["groups"] = {
 					i(223930),	-- Monstrous Chain Pincers
 					i(221240),	-- Nerubian Stagshell Gouger
 				},
@@ -151,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216039, {	-- Xishorr
 				["coord"] = { 67.3, 58.4, NERUBAR_LOWER },
 				["questID"] = 81701,
-				["g"] = {
+				["groups"] = {
 					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221239),	-- Spider Blasting Blunderbuss
 					i(221221),	-- Venomous Lurker's Shoulderplates
@@ -160,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216034, {	-- XT-Minecrusher 8700
 				["coord"] = { 76.6, 57.8, AZJ_KAHET },
 				["questID"] = 81703,
-				["g"] = {
+				["groups"] = {
 					i(221232),	-- Polished Goblin Bling
 					i(221231),	-- Steam-Powered Wristwatch
 				},
@@ -170,7 +169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216031, {	-- Abyssal Devourer
 				["coord"] = { 47.4, 43.7, AZJ_KAHET },
 				["questID"] = 81695,
-				["g"] = {
+				["groups"] = {
 					i(223390),	-- Leggings of Dark Hunger
 					i(223391),	-- Legguards of Dark Hunger
 					i(223389),	-- Legplates of Dark Hunger
@@ -180,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
 				["questID"] = 78905,
-				["g"] = {
+				["groups"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},
 			}),
@@ -192,7 +191,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 45.5, 47.1, AZJ_KAHET },	-- End
 				},
 				["questID"] = 81694,
-				["g"] = {
+				["groups"] = {
 					i(223378),	-- Footguards of the Nerubian Twins
 					i(223407),	-- Sabatons of the Nerubian Twins
 					i(223406),	-- Slippers of the Nerubian Twins
@@ -203,7 +202,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Flies around the area.",
 				["coord"] = { 36.6, 44.3, AZJ_KAHET },
 				["questID"] = 81700,
-				["g"] = {
+				["groups"] = {
 					i(223388),	-- Vilewing Cap
 					i(223387),	-- Vilewing Chain Helm
 					i(223386),	-- Vilewing Crown
@@ -213,15 +212,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216041, {	-- Webspeaker Grik'ik
 				["coord"] = { 61.3, 27.3, AZJ_KAHET },
 				["questID"] = 81699,
-				["g"] = {
+				["groups"] = {
 					i(223369),	-- Webspeaker's Spiritual Cloak
 				},
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {
 			n(RARES, {
@@ -276,4 +275,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

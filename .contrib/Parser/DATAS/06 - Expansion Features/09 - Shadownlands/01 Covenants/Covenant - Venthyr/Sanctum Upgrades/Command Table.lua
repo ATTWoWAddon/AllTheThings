@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641397,
-			["g"] = {
+			["groups"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = 3675495,
-						["g"] = {
+						["groups"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,	-- Temporary troops
@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 38.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1253),	-- Bogdan
 									},
 								}),
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 44.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1345),	-- Chachi the Artists
 									},
 								}),
@@ -54,7 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 27.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1254),	-- Lost Sybille
 									},
 								}),
@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 71.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1347),	-- Lucia
 									},
 								}),
@@ -70,26 +70,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 62.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1346),	-- Madame Iza
 									},
 								}),
 								q(61729, {	-- Adventurer: Rahel
-									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["description"] = "Requires Renown 4.",
+									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1250),	-- Rahel
 									},
 								}),
 								q(61786, {	-- Adventurer: Stonehead
-								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
-									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["description"] = "Requires Renown 12.",
+									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
+									["groups"] = {
 										follower(1251),	-- Stonehead
 									},
 								}),
@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 17.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1252),	-- Simone
 									},
 								}),
@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 33.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["groups"] = {
 										follower(1255),	-- Vulca
 									},
 								}),

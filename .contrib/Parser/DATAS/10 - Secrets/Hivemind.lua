@@ -7,11 +7,11 @@ root(ROOTS.Secrets, {
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
 		["displayID"] = 88835,
-		["g"] = {
+		["groups"] = {
 			o(13000000, {	-- Step 1: Purchase Talisman of True Treasure Tracking
 				["description"] = "|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",
 				["coord"] = { 65.6, 69.3, 594 },	-- Shattrath City
-				["g"] = {
+				["groups"] = {
 					i(27944),	-- Talisman of True Treasure Tracking
 				},
 			}),
@@ -19,13 +19,13 @@ root(ROOTS.Secrets, {
 				["description"] = "|cFFFFFFFFSTEP 2:|r You must wear the talisman to see/interact with many objects in this secret.",
 			}),
 			o(13000032, {	-- Step 3: Pick a Monocle (Or Don't!)
-				["description"] = "|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group.  Four members must each collect a different monocle before the group can continue with the secret.",
-				["g"] = {
+				["description"] = "|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group. Four members must each collect a different monocle before the group can continue with the secret.",
+				["groups"] = {
 					hqt(50181,    {	-- Blue Crystal Monocle
 						["icon"] = 133146,
 						["name"] = "Blue Crystal Monocle",
 						["description"] = "Obtaining this monocle requires reading many letters spread around Azeroth.\n\n***You need to interact with all letters in the order listed to progress through the puzzle!***\n",
-						["g"] = {
+						["groups"] = {
 							o(280815, {	-- Letter 1: Shattrath City
 								["model"] = 1661948,
 								["questID"] = 40397,
@@ -51,14 +51,14 @@ root(ROOTS.Secrets, {
 								["questID"] = 40252,
 								["coord"] = { 45.7, 24.0, THOUSAND_NEEDLES },	-- Razorfen Downs
 								["sourceQuest"] = 40404,	-- Letter 3: Karazhan (Old)
-								["description"] = "|cFFFFFFFFLetter 4:|r Go to |cFFFFD700Razorfen Downs|r in |cFFFFD700Thousand Needles|r. The next |cFFFFD700Letter from Ms. Graham|r is located on a hay box behind the second-to-last boss, |cFFFFD700Death Speaker Blackthorn|r. will spawn on the table.  Click it.  The note reads...\r\r|cFFFFFFFFMs. Sin will accompany you down The longest Streets Of the underworld.|r\n",
+								["description"] = "|cFFFFFFFFLetter 4:|r Go to |cFFFFD700Razorfen Downs|r in |cFFFFD700Thousand Needles|r. The next |cFFFFD700Letter from Ms. Graham|r is located on a hay box behind the second-to-last boss, |cFFFFD700Death Speaker Blackthorn|r. will spawn on the table. Click it. The note reads...\r\r|cFFFFFFFFMs. Sin will accompany you down The longest Streets Of the underworld.|r\n",
 							}),
 							o(280842, {	-- Letter 5: Shrine of Aviana, Mount Hyjal
 								["model"] = 1661948,
 								["questID"] = 40293,
 								["coord"] = { 44.3, 47.3, MOUNT_HYJAL },
 								["sourceQuest"] = 40252,	-- Letter 4: Razorfen Downs
-								["description"] = "|cFFFFFFFFLetter 5:|r Go to |cFFFFFFFF44.3, 47.3|r in |cFFFFD700Mount Hyjal|r. The next |cFFFFD700Letter from Ms. Graham|r is on a table at the highest floor of the tree that serves as her shrine. Click it.  The note reads...\r\r|cFFFFFFFFThe Elite champions will rule the World with the mightiest F.C.|r\n",
+								["description"] = "|cFFFFFFFFLetter 5:|r Go to |cFFFFFFFF44.3, 47.3|r in |cFFFFD700Mount Hyjal|r. The next |cFFFFD700Letter from Ms. Graham|r is on a table at the highest floor of the tree that serves as her shrine. Click it. The note reads...\r\r|cFFFFFFFFThe Elite champions will rule the World with the mightiest F.C.|r\n",
 							}),
 							o(280843, {	-- Letter 6: Ironwall Dam, Icecrown
 								["model"] = 1661948,
@@ -79,7 +79,7 @@ root(ROOTS.Secrets, {
 								["coord"] = { 27.6, 27.1, BOREAN_TUNDRA },
 								["sourceQuest"] = 50187,	-- Letter 7: Niuzao Temple, Townlong Steppes
 								["description"] = "|cFFFFFFFFThe Gift:|r Go to |cFFFFFFFF27.6, 27.1|r in |cFFFFD700Coldarra, Borean Tundra|r. The |cFFFFFFFFBlue Crystal Monocle|r is in a container on the highest Nexus ring.\n",
-								["g"] = {
+								["groups"] = {
 									i(156724),	-- Blue Crystal Monocle
 								},
 							}),
@@ -90,10 +90,10 @@ root(ROOTS.Secrets, {
 						["name"] = "Green Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Skyreach|r in |cFFFFD700Spires of Arak|r. Behind the final boss of the instance, |cFFFFD700High Sage Viryx|r, you will find a console that you are able to interact with. Use the four glowing yellow balls to move the sun across the board (the north ball, for instance, makes the sun move up).\n\nThe directions and order in which you must move the sun are:\n\n|cFFFFFFFFRight -> Up -> Down -> Up -> Right -> Right -> Up -> Left -> Down -> Up -> Left -> Down|r\n\nLoot the chest that spawns to obtain the |cFFFFFFFFGreen Crystal Monocle|r\n",
 						["coord"] = { 35.3, 33.6, SPIRES_OF_ARAK },	-- Skyreach
-						["g"] = {
+						["groups"] = {
 							o(280883, {	-- Sun-Worn Chest
 								["questID"] = 50185,
-								["g"] = {
+								["groups"] = {
 									i(156727),	-- Green Crystal Monocle
 								},
 							}),
@@ -101,13 +101,13 @@ root(ROOTS.Secrets, {
 					}),
 					o(13000031, {	-- Red Crystal Monocle
 						["description"] = "Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",
-						["g"] = {
+						["groups"] = {
 							o(13000002, {	-- Scintillating Murloc Skin Lotion
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",
-								["g"] = {
+								["groups"] = {
 									o(13000003, {	-- Glittergill Glitter
 										["description"] = "Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",
-										["g"] = {
+										["groups"] = {
 											o(13000004, {	-- Step 1: Seashell
 												["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 1:|r Purchase 500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
@@ -136,7 +136,7 @@ root(ROOTS.Secrets, {
 									}),
 									o(13000010, {	-- Symbiotic Plankton
 										["description"] = "Exchange the following items with the NPC until you receive 40 |cFFFFD700Symbiotic Plankton|r.\n",
-										["g"] = {
+										["groups"] = {
 											o(13000011, {	-- Step 1: Seashell
 												["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 1:|r Purchase 80 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
@@ -172,7 +172,7 @@ root(ROOTS.Secrets, {
 							}),
 							o(13000018, {	-- Potent Gastropod Gloop
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Potent Gastropod Gloop|r.\n",
-								["g"] = {
+								["groups"] = {
 									o(13000019, {	-- Step 1: Seashell
 										["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 1:|r Purchase 300 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
@@ -197,7 +197,7 @@ root(ROOTS.Secrets, {
 							}),
 							o(13000024, {	-- Captured Cavitation Bubble
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Captured Cavitation Bubble|r.\n",
-								["g"] = {
+								["groups"] = {
 									o(13000025, {	-- Step 1: Seashell
 										["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 1:|r Purchase 1500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
@@ -223,7 +223,7 @@ root(ROOTS.Secrets, {
 							o(13000030, {	-- Buy the Red Crystal Monocle
 								["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 								["description"] = "Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
-								["g"] = {
+								["groups"] = {
 									i(156725),	-- Red Crystal Monocle
 								},
 							}),
@@ -234,10 +234,10 @@ root(ROOTS.Secrets, {
 						["name"] = "Yellow Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",
 						["provider"] = { "i", 27944 },	-- Talisman of True Treasure Tracking
-						["g"] = {
+						["groups"] = {
 							o(280886, {	-- Star-Touched Chest
 								["questID"] = 50183,
-								["g"] = {
+								["groups"] = {
 									i(156726),	-- Yellow Crystal Monocle
 								},
 							}),
@@ -247,7 +247,7 @@ root(ROOTS.Secrets, {
 			}),
 			o(13000033, {	-- Step 4: Suramar Beams
 				["description"] = "|cFFFFFFFFSTEP 3:|r Hivemind requires a five-man group. Four members must each collect a different monocle before the group can continue with the secret. You must be in a party and have the same warmode. Four party members with different monocles must go to four different withered in suramar while one stay in Dalaran",
-				["g"] = {
+				["groups"] = {
 					n(132595, {	-- Rikei
 						["description"] = "Red Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
@@ -275,7 +275,7 @@ root(ROOTS.Secrets, {
 			}),
 			o(13000034, {	-- Step 5: Cat Code
 				["description"] = "The damage the person took from taking the cat toy is the code. Each cat represent a one order of magnitude in the following order: Mrs. Fluffymuffins > Shadow > Mew > Ash > Bella and each pet counts as one.",
-				["g"] = {
+				["groups"] = {
 					n(132599, {	-- Lady Chaton
 						["coord"] = { 50.0, 69.0, 762 },
 					}),
@@ -289,7 +289,7 @@ root(ROOTS.Secrets, {
 			}),
 			o(13000037, {	-- Step 8: Hivemind
 				["description"] = "Each player needs to take one position each around the circle.",
-				["g"] = {
+				["groups"] = {
 					i(156798),	-- The Hivemind (MOUNT!)
 				},
 			}),

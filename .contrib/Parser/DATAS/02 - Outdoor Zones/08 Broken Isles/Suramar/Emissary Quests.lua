@@ -7,12 +7,12 @@ root(ROOTS.Zones, {
 		m(SURAMAR, {
 			n(EMISSARY_QUESTS, {
 				q(42421, {	-- The Nightfallen
-					["isWorldQuest"] = true,
-					["providers"] = {
-						{ "n", 97140 },	-- Thalyssra
-						{ "n", 115736 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- Thalyssra
+						115736,	-- First Arcanist Thalyssra
 					},
-					["g"] = {
+					["isWorldQuest"] = true,
+					["groups"] = {
 						i(157826, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
@@ -21,40 +21,40 @@ root(ROOTS.Zones, {
 								{"find", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
-							["g"] = {
+							["groups"] = {
 								i(140495),	-- Torn Invitation
 								i(140013),	-- Night Commander's Pauldrons
 							},
 						}),
 						un(REMOVED_FROM_GAME, i(154907, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151468, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146751, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(137564, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 					},
 				}),
 				q(46748, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_NIGHTFALLEN, EXALTED }}, {		-- Supplies From the Nightfallen
-					["repeatable"] = true,
-					["providers"] = {
-						{ "n", 97140 },	-- Thalyssra
-						{ "n", 115736 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- Thalyssra
+						115736,	-- First Arcanist Thalyssra
 					},
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(152105, {	-- Nightfallen Cache
 							i(143764),	-- Leywoven Flying Carpet (MOUNT!)
 							i(140495),	-- Torn Invitation [Fox Mount Quest]

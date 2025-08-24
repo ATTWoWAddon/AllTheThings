@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(65419, {	-- Protoform Synthesis
 					["description"] = "Require Dealic Understanding.",
 					["provider"] = { "n", 181059 },	-- Pocopoc
-					["g"] = {
+					["groups"] = {
 						recipe(364571),	-- Archetype of Animation
 						recipe(364580),	-- Archetype of Cunning
 						recipe(363894),	-- Archetype of Discovery
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64829 },	-- Finding Tahli
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 63.9, 40.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188798),	-- Stolen Artifact (QI!)
 					},
 				}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64745 },	-- Selfless Preservation
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187941),	-- Depleted Automa Core (QI!)
 					},
 				}),
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64762 },	-- Revival of the Fittest
 					["provider"] = { "n", 180610 },	-- Kodah
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189492),	-- Attunement Codex (QI!)
 					},
 				}),
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64762 },	-- Revival of the Fittest
 					["provider"] = { "n", 180610 },	-- Kodah
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187628),	-- Restoration Matrix (QI!)
 					},
 				}),
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65420 },	-- Judgment Call
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 61.5, 51.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189499),	-- Protoform Catalyst (QI!)
 					},
 				}),
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65426 },	-- The Lost Component
 					["provider"] = { "n", 181135 },	-- Servitor Interface
 					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189501),	-- Protoform Tool (QI!)
 						i(189500),	-- Cervid Lattice
 						i(189457),	-- Schematic: Deathrunner (RECIPE!)
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189418 },	-- Schematic: Ambystan Darter
 					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364527),	-- Ambystan Darter
 					},
 				}),
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189434 },	-- Schematic: Fierce Scarabid
 					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364665),	-- Fierce Scarabid
 					},
 				}),
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189444 },	-- Schematic: Leaping Leporid
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364703),	-- Leaping Leporid
 					},
 				}),
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189445 },	-- Schematic: Microlicid
 					["coord"] = { 28.1, 50, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364697),	-- Microlicid
 					},
 				}),
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189435 },	-- Schematic: Multichicken
 					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364679),	-- Multichicken
 					},
 				}),
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189440 },	-- Schematic: Omnipotential Core
 					["coord"] = { 42.8, 40.6, 2029 },
-					["g"] = {
+					["groups"] = {
 						recipe(364689),	-- Omnipotential Core
 					},
 				}),
@@ -193,14 +193,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189442 },	-- Schematic: Prototickles
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364691),	-- Prototickles
 					},
 				}),
 				q(65351, {	-- Schematic Reassimilation: Resonant Echo
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189441 },	-- Schematic: Resonant Echo
-					["g"] = {
+					["groups"] = {
 						recipe(364690),	-- Resonant Echo
 					},
 				}),
@@ -208,14 +208,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189446 },	-- Schematic: Shelly
 					["coord"] = { 57.9, 78, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364698),	-- Shelly
 					},
 				}),
 				q(65336, {	-- Schematic Reassimilation: Stabilized Geomental
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189437 },	-- Schematic: Stabilized Geomental
-					["g"] = {
+					["groups"] = {
 						recipe(364688),	-- Stabilized Geomental
 					},
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189443 },	-- Schematic: Terror Jelly
 					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364695),	-- Terror Jelly
 					},
 				}),
@@ -231,14 +231,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189448 },	-- Schematic: Tunneling Vombata
 					["coord"] = { 74.7, 50.5, 2028 },
-					["g"] = {
+					["groups"] = {
 						recipe(364700),	-- Tunneling Vombata
 					},
 				}),
 				q(65334, {	-- Schematic Reassimilation: Violent Poultrid
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189436 },	-- Schematic: Violent Poultrid
-					["g"] = {
+					["groups"] = {
 						recipe(364687),	-- Violent Poultrid
 					},
 				}),
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65419 },	-- Protoform Synthesis
 					["provider"] = { "i", 189447 },	-- Schematic: Viperid Menace
 					["coord"] = { 58.9, 77, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(364699),	-- Viperid Menace
 					},
 				}),
@@ -255,14 +255,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189478 },	-- Schematic: Adorned Vombata
 					["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365068),	-- Adorned Vombata
 					},
 				}),
 				q(65385, {	-- Schematic Reassimilation: Bronze Helicid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189462 },	-- Schematic: Bronze Helicid
-					["g"] = {
+					["groups"] = {
 						recipe(365073),	-- Bronze Helicid
 					},
 				}),
@@ -270,21 +270,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189473 },	-- Schematic: Bronzewing Vespoid
 					["coord"] = { 48.8, 40.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365047),	-- Bronzewing Vespoid
 					},
 				}),
 				q(65397, {	-- Schematic Reassimilation: Buzz
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189474 },	-- Schematic: Buzz
-					["g"] = {
+					["groups"] = {
 						recipe(365048),	-- Buzz
 					},
 				}),
 				q(65399, {	-- Schematic Reassimilation: Curious Crystalsniffer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189476 },	-- Schematic: Curious Crystalsniffer
-					["g"] = {
+					["groups"] = {
 						recipe(365064),	-- Curious Crystalsniffer
 					},
 				}),
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189477 },	-- Schematic: Darkened Vombata
 					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365065),	-- Darkened Vombata
 					},
 				}),
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189457 },	-- Schematic: Deathrunner
 					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365045),	-- Deathrunner
 					},
 				}),
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189458 },	-- Schematic: Desertwing Hunter
 					["coord"] = { 62, 43.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365050),	-- Desertwing Hunter
 					},
 				}),
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189475 },	-- Schematic: Forged Spiteflyer
 					["coord"] = { 53.3, 25.7, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365049),	-- Forged Spiteflyer
 					},
 				}),
@@ -324,14 +324,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189465 },	-- Schematic: Genesis Crawler
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365055),	-- Genesis Crawler
 					},
 				}),
 				q(65391, {	-- Schematic Reassimilation: Goldplate Bufonid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189468 },	-- Schematic: Goldplate Bufonid
-					["g"] = {
+					["groups"] = {
 						recipe(365058),	-- Goldplate Bufonid
 					},
 				}),
@@ -339,35 +339,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 190585 },	-- Schematic: Heartbond Lupine
 					["coord"] = { 52.8, 63.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(367704),	-- Heartbond Lupine
 					},
 				}),
 				q(65390, {	-- Schematic Reassimilation: Ineffable Skitterer
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189467 },	-- Schematic: Ineffable Skitterer
-					["g"] = {
+					["groups"] = {
 						recipe(365057),	-- Ineffable Skitterer
 					},
 				}),
 				q(65382, {	-- Schematic Reassimilation: Mawdapted Raptora
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189459 },	-- Schematic: Mawdapted Raptora
-					["g"] = {
+					["groups"] = {
 						recipe(365051),	-- Mawdapted Raptora
 					},
 				}),
 				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
-					-- Quest item is now buyable from the vendor after 11.0.7
+					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
+					["timeline"] = { ADDED_11_0_2 },	-- Added few years later as a fix for not auto-receiving the recipe
 					-- #if BEFORE 11.0.7
+					-- Quest item is now buyable from the vendor after 11.0.7
 					["lockCriteria"] = { 1,
 						"spellID", 365040,	-- Pale Regal Cervid (RECIPE!)
 						"achID", 15402,	-- Cyphers of the First Ones
 					},
 					-- #endif
-					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
-					["timeline"] = { ADDED_11_0_2 },	-- Added few years later as a fix for not auto-receiving the recipe
-					["g"] = {
+					["groups"] = {
 						recipe(365040),	-- Pale Regal Cervid
 					},
 				}),
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189469 },	-- Schematic: Prototype Leaper
 					["coord"] = { 67, 69.4, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365062),	-- Prototype Leaper
 					},
 				}),
@@ -383,14 +383,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189460 },	-- Schematic: Raptora Swooper
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365052),	-- Raptora Swooper
 					},
 				}),
 				q(65394, {	-- Schematic Reassimilation: Russet Bufonid
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189471 },	-- Schematic: Russet Bufonid
-					["g"] = {
+					["groups"] = {
 						recipe(365063),	-- Russet Bufonid
 					},
 				}),
@@ -398,14 +398,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189464 },	-- Schematic: Scarlet Helicid
 					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365076),	-- Scarlet Helicid
 					},
 				}),
 				q(65384	, {	-- Schematic Reassimilation: Serenade
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189461 },	-- Schematic: Serenade
-					["g"] = {
+					["groups"] = {
 						recipe(365072),	-- Serenade
 					},
 				}),
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189456 },	-- Schematic: Sundered Zerethsteed
 					["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365042),	-- Sundered Zerethsteed
 					},
 				}),
@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189466 },	-- Schematic: Tarachnid Creeper
 					["coord"] = { 62.9, 22, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365056),	-- Tarachnid Creeper
 					},
 				}),
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189463 },	-- Schematic: Unsuccessful Prototype Fleetpod
 					--["coord"] = { , , ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365074),	-- Unsuccessful Prototype Fleetpod
 					},
 				}),
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65427 },	-- A New Architect
 					["provider"] = { "i", 189472 },	-- Schematic: Vespoid Flutterer
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						recipe(365046),	-- Vespoid Flutterer
 					},
 				}),
@@ -446,145 +446,145 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				o(375391, {	-- Protoform Schematic
 					["description"] = "Hidden atop the ramp.",
 					["coord"] = { 48.93, 40.47, 2029 },
-					["g"] = {
+					["groups"] = {
 						i(189473),	-- Schematic: Bronzewing Vespoid
 					},
 				}),
 				o(375388, {	-- Protoform Schematic
 					["description"] = "Inside the top cage.",
 					["coord"] = { 64.2, 35.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189477),	-- Schematic: Darkened Vombata
 					},
 				}),
 				o(375393, {	-- Protoform Schematic
 					["description"] = "On top a pillar. Need door of shadows/flying.",
 					["coord"] = { 62, 43.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189458),	-- Schematic: Desertwing Hunter
 					},
 				}),
 				o(375748, {	-- Protoform Schematic
 					["description"] = "Under the platform.",
 					["coord"] = { 61.2, 42.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189434),	-- Schematic: Fierce Scarabid
 					},
 				}),
 				o(375389, {	-- Protoform Schematic
 					["description"] = "Inside the vespoid nest.",
 					["coord"] = { 62, 43.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189475),	-- Schematic: Forged Spiteflyer
 					},
 				}),
 				o(375694, {	-- Protoform Schematic
 					["description"] = "On top of the build and behind a pillar.",
 					["coord"] = { 31.5, 50.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189465),	-- Schematic: Genesis Crawler
 					},
 				}),
 				o(375900, {	-- Protoform Schematic
 					["description"] = "Inside a Cave.",
 					["coord"] = { 53.8, 72.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189435),	-- Schematic: Multichicken
 					},
 				}),
 				o(375383, {	-- Protoform Schematic
 					["description"] = "On top of the tree circle.",
 					["coord"] = { 58.3, 74.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189444),	-- Schematic: Leaping Leporid
 					},
 				}),
 				o(375498, {	-- Protoform Schematic
 					["description"] = "Mount or stand at precisely 52.3, 75.3. Behind the chain. Hard to spot.",
 					["coord"] = { 52.3, 75.4, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189442),	-- Schematic: Prototickles
 					},
 				}),
 				o(375903, {	-- Protoform Schematic
 					["coord"] = { 67, 69.4, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189469),	-- Schematic: Prototype Leaper
 					},
 				}),
 				o(375371, {	-- Protoform Schematic
 					["description"] = "Inside the building.",
 					["coord"] = { 67.4, 40.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189460),	-- Schematic: Raptora Swooper
 					},
 				}),
 				o(375486, {	-- Protoform Schematic
 					["description"] = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
 					["coord"] = { 57.9, 78, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189446),	-- Schematic: Shelly
 					},
 				}),
 				o(375889, {	-- Protoform Schematic
 					["coord"] = { 60.6, 30.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189456),	-- Schematic: Sundered Zerethsteed
 					},
 				}),
 				o(375370, {	-- Protoform Schematic
 					["description"] = "Inside the building.",
 					["coord"] = { 62.9, 22, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189466),	-- Schematic: Tarachnid Creeper
 					},
 				}),
 				o(375387, {	-- Protoform Schematic
 					["description"] = "On top of the pillar.",
 					["coord"] = { 67.2, 32.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189443),	-- Schematic: Terror Jelly
 					},
 				}),
 				o(375693, {	-- Protoform Schematic
 					["description"] = "Inside Locarian Esper, next to the rumble.",
 					["coord"] = { 74.7, 50.5, 2028 },
-					["g"] = {
+					["groups"] = {
 						i(189448),	-- Schematic: Tunneling Vombata
 					},
 				}),
 				o(375390, {	-- Protoform Schematic
 					["description"] = "On one of the first locus platforms in the sand.",
 					["coord"] = { 50.3, 27.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189472),	-- Schematic: Vespoid Flutterer
 					},
 				}),
 				o(375479, {	-- Protoform Schematic
 					["description"] = "Underwater left to Ancient Bufonid",
 					["coord"] = { 78.1, 53.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189418),	-- Schematic: Ambystan Darter
 					},
 				}),
 				o(375981, {	-- Protoform Schematic
 					["description"] = "Atop the arch.",
 					["coord"] = { 47.7, 9.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189464),	-- Schematic: Scarlet Helicid
 					},
 				}),
 				o(375502, {	-- Protoform Schematic
 					["description"] = "Hidden in tree leaves, on branch with small orb above water.",
 					["coord"] = { 28.1, 50, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189445),	-- Schematic: Microlicid
 					},
 				}),
 				o(375270, {	-- Protoform Schematic
 					["description"] = "Requires Aealic Understanding and Chapter 6.\nUnlock Rondure Locus Arrangement at 50.5, 27.6 (close to Tertius Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Rondure Alcove.\n\nHidden behind the top of the door frame near a large orb.\nDisappears when looted by another player recently.",
 					["coord"] = { 42.8, 40.6, 2029 },
-					["g"] = {
+					["groups"] = {
 						i(189440),	-- Schematic: Omnipotential Core
 					},
 				}),
@@ -592,17 +592,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["description"] = "Requires Sopranian Understanding and Chapter 6.\nUnlock Camber Locus Arrangement at 47.7 34.5, on the back side of the Vessel's room (accessible from flying or via the Ultimus Locus).\nGather 60 Cosmic energy and go to Interior Locus then use Arcae Locus to Camber Alcove.\n\nSuccefully completing this minigame will reward a schematic.",
 					["coord"] = { 49, 73.1, 2029 },
 					["questID"] = 65651,
-					["g"] = {
+					["groups"] = {
 						i(189463),	-- Schematic: Unsuccessful Prototype Fleetpod
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(181135, {	-- Servitor Interface
-					i(189455, {	-- Schematic: Pale Regal Cervid
-						["sourceAchievement"] = 15402,	-- Cyphers of the First Ones
-						["timeline"] = { ADDED_11_0_7 }
-					}),
+					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
+					["groups"] = {
+						i(189455, {	-- Schematic: Pale Regal Cervid
+							["sourceAchievement"] = 15402,	-- Cyphers of the First Ones
+							["timeline"] = { ADDED_11_0_7 },
+						}),
+					},
 				}),
 			}),
 			n(CRAFTABLES, {

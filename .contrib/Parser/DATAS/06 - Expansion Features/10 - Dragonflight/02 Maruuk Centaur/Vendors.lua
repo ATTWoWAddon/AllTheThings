@@ -53,7 +53,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(186650, {	-- Farrier Roscha
 				["coord"] = { 84.4, 25.0, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(198400),	-- Lucky Horseshoe
 					i(198436),	-- Hunting Horseshoe
 					i(198437),	-- Caravan Horseshoe
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(196707, {	-- Quartermaster Huseng
 				["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-				["g"] = bubbleDownRep(FACTION_MARUUK_CENTAUR, {
+				["groups"] = bubbleDownRep(FACTION_MARUUK_CENTAUR, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --

@@ -1,10 +1,14 @@
-﻿using System;
+﻿using ATT.DB;
+using ATT.DB.Types;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using static ATT.Export;
 
 namespace ATT
 {
@@ -27,6 +31,200 @@ namespace ATT
         {
             Exception ex = (Exception)e.ExceptionObject;
             Framework.LogException(ex);
+        }
+
+        static long UNIQUE_CRITERIA_ID = 0;
+        static Dictionary<string, object> ImportCriteriaData(CriteriaTree criteriaTree)
+        {
+            // If criteria is defined, then attach the data for the criteria directly on the data package.
+            if (criteriaTree.CriteriaID > 0 && WagoData.TryGetValue(criteriaTree.CriteriaID, out Criteria criteria))
+            {
+                // Cache the criteriaID. We will be overriding this for Type 5 criterias.
+                var criteriaID = criteria.ID;
+
+                // A handful of these criteria are semi-useless and can be merged with the logic of the achievement itself
+                Dictionary<string, object> criteriaData;
+                switch (criteria.Type)
+                {
+                    case 5:     // Reach level X.
+                    case 40:    // Reach x rank in a skill / profession.
+                    case 47:    // Raise X reputations to Exalted
+                    case 75:    // Obtain X mounts
+                    case 113:   // X Honorable Kills
+                        // We need to make a unique criteriaID for this.
+                        criteriaID = --UNIQUE_CRITERIA_ID;
+                        break;
+                    case 0:     // Kill an NPC
+                    case 8:     // Earn an Achievement
+                    case 27:    // Complete a Quest
+                    case 36:    // Physically Own an Item
+                    case 43:    // Exploration
+                        criteriaTree.Amount = 0;    // This gets assigned a value of 1 by default, no reason to keep it in the data.
+                        break;
+                    default: break;
+                }
+                // This type of achievement should be stored in its own container.
+                if (!Framework.AchievementCriteriaData.TryGetValue(criteriaID, out criteriaData))
+                {
+                    Framework.AchievementCriteriaData[criteriaID] = criteriaData = new Dictionary<string, object>();
+                }
+
+                criteriaData["criteriaID"] = criteriaID;
+                criteriaData["type"] = criteria.Type;
+                if (criteriaTree.Operator > 0) criteriaData["operator"] = criteriaTree.Operator;
+                if (criteriaTree.Amount > 0) criteriaData["amount"] = criteriaTree.Amount;
+                if (criteria.Asset > 0) criteriaData["asset"] = criteria.Asset;
+
+                // Criteria itself doesn't have localized data, but its criteria tree parent does.
+                // CRIEVE NOTE: I might consider NOT doing and simply do the calculation in the tooltip based on the type.
+                // Could free up a bunch of unnecessary locale files since the data doesn't look super useful rather than descriptive.
+                var localizedData = criteriaTree.GetLocalizedData();
+                if (localizedData.TryGetValue("Description_lang", out var text))
+                {
+                    criteriaData["text"] = text;
+                }
+                return criteriaData;
+            }
+            else
+            {
+                // This criteria belongs to a tree, it should be merged with the achievement itself.
+                var criteriaData = new Dictionary<string, object>();
+
+                // Attach the children of this criteria as criteria references
+                var subCriterias = new List<object>();
+                foreach (var criteriaChildRoot in criteriaTree.EnumerateChildren())
+                {
+                    // Determine if this criteria has its own criteriaID, if so, nest it.
+                    var subCriteriaData = ImportCriteriaData(criteriaChildRoot);
+                    if (subCriteriaData.TryGetValue("criteriaID", out var subCriteriaID))
+                    {
+                        subCriterias.Add(subCriteriaID);
+                    }
+                    else
+                    {
+                        // Merge the data from the criteria tree root into the achievement itself.
+                        foreach (var pair in subCriteriaData)
+                        {
+                            criteriaData[pair.Key] = pair.Value;
+                        }
+                    }
+                }
+                if (subCriterias.Count > 0) criteriaData["criteria"] = subCriterias;
+                if ((criteriaTree.Operator > 0 && criteriaTree.Operator != 4) || (criteriaTree.Operator == 0 && subCriterias.Count > 1)) criteriaData["operator"] = criteriaTree.Operator;
+                if (criteriaTree.Amount > 0) criteriaData["amount"] = criteriaTree.Amount;
+                return criteriaData;
+            }
+        }
+
+        static void ImportAchievementData(Achievement achievement)
+        {
+            if (!Framework.AchievementData.TryGetValue(achievement.ID, out var achievementData))
+            {
+                Framework.AchievementData[achievement.ID] = achievementData = new Dictionary<string, object>
+                {
+                    { "category", achievement.Category },
+                    { "icon", achievement.IconFileID },
+                };
+            }
+
+            if (WagoData.TryGetValue(achievement.Criteria_tree, out CriteriaTree criteriaTree))
+            {
+                // Determine if this criteria has its own criteriaID, if so, nest it.
+                var criteriaData = ImportCriteriaData(criteriaTree);
+                if (criteriaData.TryGetValue("criteriaID", out var criteriaID))
+                {
+                    achievementData["criteria"] = new List<object> { criteriaID };
+                }
+                else
+                {
+                    // Merge the data from the criteria tree root into the achievement itself.
+                    foreach (var pair in criteriaData)
+                    {
+                        achievementData[pair.Key] = pair.Value;
+                    }
+                }
+            }
+
+            // Now merge the localized data with it.
+            var localizedData = WagoData.GetLocalizedData(achievement);
+            if (localizedData.TryGetValue("Title_lang", out var text))
+            {
+                achievementData["text"] = text;
+            }
+            if (localizedData.TryGetValue("Description_lang", out var description))
+            {
+                achievementData["description"] = description;
+            }
+            /*
+            // CRIEVE NOTE: We don't use this in the addon itself (yet?)
+            if (localizedData.TryGetValue("Reward_lang", out var reward))
+            {
+                achievementData["reward"] = reward;
+            }
+            */
+
+            /*
+            // CRIEVE NOTE: Uncomment to debug data format
+            Console.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
+            if (localizedData != null)
+            {
+                foreach (var pair in achievementData)
+                {
+                    Console.Write("  ");
+                    Console.Write(pair.Key);
+                    Console.WriteLine(": ");
+                    foreach (var localeDataPair in pair.Value)
+                    {
+                        Console.Write("   ");
+                        Console.Write(localeDataPair.Key);
+                        Console.Write(": ");
+                        Console.WriteLine(localeDataPair.Value);
+                    }
+                }
+            }
+            else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+            */
+        }
+
+
+        static void ImportAchievementCategoryData(AchievementCategory achievementCategory)
+        {
+            if (!Framework.AchievementCategoryData.TryGetValue(achievementCategory.ID, out var achievementCategoryData))
+            {
+                Framework.AchievementCategoryData[achievementCategory.ID] = achievementCategoryData = new Dictionary<string, object>
+                {
+                    { "parent", achievementCategory.Parent },
+                };
+            }
+
+            // Now merge the localized data with it.
+            var localizedData = WagoData.GetLocalizedData(achievementCategory);
+            if (localizedData.TryGetValue("Name_lang", out var text))
+            {
+                achievementCategoryData["text"] = text;
+            }
+
+            /*
+            // CRIEVE NOTE: Uncomment to debug data format
+            Console.WriteLine($"LOCALIZED DATA [{achievementCategory.ID}]");
+            if (localizedData != null)
+            {
+                foreach (var pair in achievementCategoryData)
+                {
+                    Console.Write("  ");
+                    Console.Write(pair.Key);
+                    Console.WriteLine(": ");
+                    foreach (var localeDataPair in pair.Value)
+                    {
+                        Console.Write("   ");
+                        Console.Write(localeDataPair.Key);
+                        Console.Write(": ");
+                        Console.WriteLine(localeDataPair.Value);
+                    }
+                }
+            }
+            else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+            */
         }
 
         static int Main(string[] args)
@@ -61,9 +259,15 @@ namespace ATT
                     Framework.InitConfigSettings(".config/retail/retail.config");
 
 #if DEBUG
-                    Framework.InitConfigSettings("parser/retail/debug.config");
+                    Framework.InitConfigSettings(".config/retail/debug.config");
 #endif
                 }
+
+                Framework.InitConfigSettings(".config/root.config");
+
+                Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
+                Framework.Objects.NON_SORTED_FIELDS = Framework.Config["NON_SORTED_FIELDS"];
+                Framework.Objects.PASS_THRU_FIELDS = Framework.Config["PASS_THRU_FIELDS"];
             }
             catch (FormatException configException)
             {
@@ -112,24 +316,97 @@ namespace ATT
                 do
                 {
                     Errored = false;
+
                     // Load all of the RAW JSON Data into the database.
-                    if (!string.IsNullOrWhiteSpace(Framework.Config["wago-directory"]))
+                    var directories = Framework.Config["wago-directories"];
+                    if (directories != null)
                     {
-                        Trace.WriteLine($"Loading Wago DB CSV files from {Framework.Config["wago-directory"]}.");
-                    }
-                    var files = Directory.EnumerateFiles(databaseRootFolder + Framework.Config["wago-directory"], "*.csv", SearchOption.AllDirectories).ToList();
+                        var filenames = new List<string>();
+                        foreach (var wagoDirectory in (string[])directories)
+                        {
+                            if (!string.IsNullOrWhiteSpace(wagoDirectory))
+                            {
+                                Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
+                                filenames.AddRange(Directory.GetFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories));
+                            }
+                        }
+                        filenames.Sort(StringComparer.InvariantCulture);
+                        foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
 
-                    files.Sort(StringComparer.InvariantCulture);
-                    foreach (var f in files) ParseWagoDbCsvFile(f);
-
-                    if (Errored)
-                    {
-                        Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
-                        Trace.WriteLine("Press Enter once you have resolved the issue.");
-                        Framework.WaitForUser();
+                        if (Errored)
+                        {
+                            Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Framework.WaitForUser();
+                        }
                     }
                 }
                 while (Errored && !Framework.Automated);
+
+                /*
+                // Debug all Wago Data Modules
+                Console.WriteLine($"ALL WAGO DATA MODULES: ");
+                foreach (var modulePair in WagoData.GetAllDataModules())
+                {
+                    Console.Write("  ");
+                    Console.Write(modulePair.Key);
+                    Console.Write(": ");
+                    Console.Write(modulePair.Value.Count);
+                    Console.WriteLine(" total entries");
+                }
+
+                // Example of how to export localized data for a Wago Data Module
+                if (WagoData.TryGetValue(2336, out Achievement achievement))
+                {
+                    Console.WriteLine($"EXPORTED DATA [{achievement.ID}]:");
+                    var exportedData = achievement.GetExportableData();
+                    if (exportedData != null)
+                    {
+                        foreach (var pair in exportedData)
+                        {
+                            Console.Write("  ");
+                            Console.Write(pair.Key);
+                            Console.Write(": ");
+                            Console.WriteLine(pair.Value);
+                        }
+                    }
+                    else Console.WriteLine("  NO EXPORTED DATA FOUND");
+
+                    var localizedData = WagoData.GetLocalizedData<Achievement>(achievement.ID);
+
+                    Console.WriteLine($"LOCALIZED DATA [{achievement.ID}]");
+                    if (localizedData != null)
+                    {
+                        foreach (var pair in localizedData)
+                        {
+                            Console.Write("  ");
+                            Console.Write(pair.Key);
+                            Console.WriteLine(": ");
+                            foreach (var localeDataPair in pair.Value)
+                            {
+                                Console.Write("   ");
+                                Console.Write(localeDataPair.Key);
+                                Console.Write(": ");
+                                Console.WriteLine(localeDataPair.Value);
+                            }
+                        }
+                    }
+                    else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+                    Console.ReadLine();
+                }
+                */
+                if (Program.PreProcessorTags.ContainsKey("EXPORT_ACHIEVEMENTDB"))
+                {
+                    // Pre-Wrath we want all of the achievement data.
+                    foreach (var achievement in WagoData.GetAll<Achievement>().Values) ImportAchievementData(achievement);
+                    foreach (var achievementCategory in WagoData.GetAll<AchievementCategory>().Values) ImportAchievementCategoryData(achievementCategory);
+                }
+                else if (Program.PreProcessorTags.ContainsKey("EXPORT_ACHIEVEMENTDB_SHENDRALAR"))
+                {
+                    // Pre-Cata we only want Agent of Shendralar
+                    if (WagoData.TryGetValue(5788, out Achievement achievement)) ImportAchievementData(achievement);
+                }
+
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
@@ -146,11 +423,20 @@ namespace ATT
                 Framework.CurrentFileName = mainFileName;
                 luaFiles.Sort(StringComparer.InvariantCulture);
                 lua.State.Encoding = Encoding.UTF8;
-                // link the Lua 'print' function to instead perform a Trace print
-                lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
-                lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
+                string content = "";
+                try
+                {
+                    // link the Lua 'print' function to instead perform a Trace print
+                    lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                    lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                    lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
+                    lua.DoString(content = ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
+                }
+                catch
+                {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
+                    throw;
+                }
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
                 Framework.Validator = new DataValidator(lua, Framework.Config);
                 Framework.CurrentFileName = null;
@@ -225,6 +511,13 @@ namespace ATT
                         Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
 
+                    // Try to grab the contents of the global variable "LocalizationStrings".
+                    var localizationStrings = lua.GetTable("LocalizationStrings");
+                    if (localizationStrings != null)
+                    {
+                        Framework.AssignLocalizationStrings(Framework.ParseAsDictionary<string>(localizationStrings));
+                    }
+
                     // Try to grab the contents of the global variable "Phases".
                     var phases = lua.GetTable("Phases");
                     if (phases != null)
@@ -252,6 +545,10 @@ namespace ATT
                     Framework.FIRST_EXPANSION_PATCH =
                         Framework.ParseAsStringDictionary(lua.GetTable("FIRST_EXPANSION_PATCH") ?? throw new InvalidDataException("Missing 'FIRST_EXPANSION_PATCH' Global!"))
                          .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => int.Parse(o.ToString())).ToArray());
+
+                    Framework.MAPID_MERGE_REPLACEMENTS =
+                        Framework.ParseAsDictionary<long>(lua.GetTable("MAPID_MERGE_REPLACEMENTS") ?? throw new InvalidDataException("Missing 'MAPID_MERGE_REPLACEMENTS' Global!"))
+                        .ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);
                 }
                 catch (Exception e)
                 {
@@ -377,17 +674,6 @@ namespace ATT
                     Framework.Objects.MAPID_COORD_SHIFTS.Remove(key);
                 }
             }
-        }
-
-        private static void ParseWagoDbCsvFile(string f)
-        {
-            // Ignore Wago DB files if not on Retail... they're always latest so can't be used for older versions
-            //if (!((string[])Framework.Config["PreProcessorTags"]).Contains("RETAIL")) return;
-
-            string csv = File.ReadAllText(f);
-            string type = f.Substring(f.LastIndexOf('\\') + 1);
-            type = type.Substring(0, type.IndexOf('.'));
-            Framework.ParseWagoCsv(type, csv);
         }
 
         private static void HandleParserArgument(string name, string value)
@@ -720,6 +1006,7 @@ namespace ATT
                 }
                 catch (NLua.Exceptions.LuaScriptException e)
                 {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Framework.LogException(e);
                     if (e.Data != null)
                     {
@@ -752,6 +1039,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Framework.LogException(e);
                     var line = GetLineNumber(e);
                     if (line > -1)

@@ -1,0 +1,93 @@
+0.5.3.3368
+fp(1),	-- -- \\ Northshire Abbey
+fp(2),	-- -- \\ Stormwind, Elwynn
+fp(3),	-- -- \\ Programmer Isle
+fp(4),	-- -- \\ Sentinel Hill, Westfall
+fp(5),	-- -- \\ Lakeshire, Redridge
+fp(6),	-- -- \\ Ironforge, Dun Morogh
+fp(7),	-- -- \\ Menethil Harbor, Wetlands
+fp(8),	-- -- \\ Thelsamar, Loch Modan
+fp(9),	-- -- \\ Booty Bay, Stranglethorn
+fp(10),	-- -- \\ The Sepulcher, Silverpine Forest \\ Sepulcher, Silverpine
+fp(11),	-- -- \\ Undercity, Tirisfal
+fp(12),	-- -- \\ Darkshire, Duskwood
+fp(13),	-- -- \\ Tarren Mill, Hillsbrad
+fp(14),	-- -- \\ Southshore, Hillsbrad
+fp(15),	-- -- \\ Eastern Plaguelands
+fp(16),	-- -- \\ Refuge Pointe, Arathi \\ Refuge Pointe - Arathi \\ Arathi - Refuge Pointe
+fp(17),	-- -- \\ Hammerfall, Arathi \\ Hammerfall - Arathi \\ Arathi - Hammerfall
+fp(18),	-- -- \\ Booty Bay, Stranglethorn \\ Booty Bay - Stranglethorn \\ Stranglethorn - Booty Bay - Horde
+fp(19),	-- -- \\ Booty Bay, Stranglethorn \\ Booty Bay - Stranglethorn \\ Stranglethorn - Booty Bay - Alliance
+fp(20),	-- -- \\ Grom'gol, Stranglethorn \\ Grom'gol - Stranglethorn \\ Stranglethorn - Grom'gol
+fp(21),	-- -- \\ New Kargath, Badlands \\ Kargath, Badlands \\ Kargath - Badlands \\ Badlands - Kargath - Windrider
+fp(22),	-- -- \\ Thunder Bluff, Mulgore \\ Thunder Bluff - Mulgore \\ Mulgore - Thunder Bluff
+fp(23),	-- -- \\ Orgrimmar, Durotar \\ Orgrimmar - Durotar \\ Durotar - Orgrimmar
+fp(24),	-- -- \\ Generic, World Target 002 \\ Generic, World target for Zeppelin Paths \\ Badlands - Kargath - Bat - UNUSED \\ Badlands - Kargath - Bat
+fp(25),	-- -- \\ The Crossroads, Northern Barrens \\ Crossroads, Northern Barrens \\ Crossroads, The Barrens \\ Crossroads - The Barrens \\ The Barrens - Crossroads
+fp(26),	-- -- \\ Lor'danel, Darkshore \\ Auberdine, Darkshore \\ Teldrassil - Darnassus
+fp(27),	-- -- \\ Rut'theran Village, Teldrassil \\ Rut'theran Village - Teldrassil \\ Darkshore - Auberdeen
+fp(28),	-- -- \\ Astranaar, Ashenvale \\ Astranaar - Ashenvale \\ Ashenvale - Astranaar
+fp(29),	-- -- \\ Sun Rock Retreat, Stonetalon Mountains \\ Sun Rock Retreat - Stonetalon Mountains \\ Stonetalon Mtns. - Sun Rock
+fp(30),	-- -- \\ Westreach Summit, Thousand Needles \\ Freewind Post, Thousand Needles \\ Freewind Post - Thousand Needles \\ Thousand Needles - Freewind Post
+fp(31),	-- -- \\ Shadebough, Feralas \\ Thalanaar, Feralas \\ Thalanaar, Thousand Needles \\ Thalanaar - Thousand Needles \\ Thousand Needles - Thalanaar
+fp(32),	-- -- \\ Theramore, Dustwallow Marsh \\ Theramore - Dustwallow Marsh \\ Dustwallow - Theramore
+fp(33),	-- -- \\ Thal'darah Overlook, Stonetalon Mountains \\ Stonetalon Peak, Stonetalon Mountains \\ Stonetalon Peak - Stonetalon Mountains \\ Stonetalon Mtns. - Stonetalon Peak
+fp(34),	-- -- \\ Transport, Booty Bay \\ Transport, Booty Bay - Ratchet \\ The Barrens, Ratchet to Booty Bay Boat \\ The Barrens - Ratchet to Booty Bay Boat \\ The Barrens - Ratchet Boat Return TEST
+fp(35),	-- -- \\ Transport, Orgrimmar \\ Transport, Orgrimmar Zepplins \\ Durotar, Orgrimmar & Grom'Gol to Undercity Zeppelins \\ Durotar - Orgrimmar to Underzity Zepplin \\ The Barrens - Ratchet Boat TEST
+fp(36),	-- -- \\ Generic, World Target 001 \\ Generic, World target \\ TEST
+0.5.5.3494
+fp(56),	-- -- \\ Stonard, Swamp of Sorrows \\ Stonard - Swamp of Sorrows
+fp(57),	-- -- \\ Fishing Village, Teldrassil \\ FIshing Village, Teldrassil \\ FIshing Village - Teldrassil
+0.6.0.3592
+fp(37),	-- -- \\ Nijel's Point, Desolace \\ Nijel's Point - Desolace
+fp(38),	-- -- \\ Shadowprey Village, Desolace \\ Ghostwalker Post - Desolace
+0.7.0.3694
+fp(39),	-- -- \\ Gadgetzan, Tanaris
+fp(40),	-- -- \\ Gadgetzan, Tanaris
+fp(41),	-- -- \\ Feathermoon, Feralas
+fp(42),	-- -- \\ Camp Mojache, Feralas
+fp(43),	-- -- \\ Aerie Peak, The Hinterlands
+0.8.0.3734
+fp(44),	-- -- \\ Bilgewater Harbor, Azshara \\ Valormok, Azshara
+fp(45),	-- -- \\ Nethergarde Keep, Blasted Lands
+0.9.0.3807
+fp(46),	-- -- \\ Transport, Southshore \\ Southshore Ferry, Hillsbrad
+fp(47),	-- -- \\ Transport, Grom'gol \\ Transport, Grom'gol - Orgrimmar \\ Stranglethorn, Grom'Gol to Orgrimmar Zeppelin \\ Stranglethorn - Grom'Gol to Orgrimmar Zeppelin
+fp(48),	-- -- \\ Bloodvenom Post, Felwood [DISABLED in 4.x] \\ Bloodvenom Post, Felwood \\ Bloodvenom River, Felwood
+1.0.0.3980
+fp(49),	-- -- \\ Moonglade \\ Nighthaven, Moonglade
+fp(50),	-- -- \\ Transport, Menethil Harbor \\ Transport, Menethil Ships \\ Menethil to Theramore Boat Path
+fp(51),	-- -- \\ Transport, Auberdine \\ Transport, Rut'theran - Auberdine \\ Rut'theran to Auberdine Boat
+fp(52),	-- -- \\ Everlook, Winterspring
+fp(53),	-- -- \\ Everlook, Winterspring
+fp(54),	-- -- \\ Transport, Feathermoon \\ Transport, Feathermoon - Feralas \\ Feralas, Feathermoon Stronghold - Boat
+fp(55),	-- -- \\ Brackenwall Village, Dustwallow Marsh \\ Brackenwall VIllage, Dustwallow Marsh
+fp(58),	-- -- \\ Zoram'gar Outpost, Ashenvale \\ Coast of Ashenvale
+1.1.2.4125
+fp(59),	-- -- \\ Dun Baldar, Alterac Valley \\ Alliance Stronghold, Alterac Valley
+fp(60),	-- -- \\ Frostwolf Keep, Alterac Valley \\ Horde Stronghold, Alterac Valley
+fp(61),	-- -- \\ Splintertree Post, Ashenvale
+fp(62),	-- -- \\ Nighthaven, Moonglade
+fp(63),	-- -- \\ Nighthaven, Moonglade
+fp(64),	-- -- \\ Talrendis Point, Azshara (NEVER in 4.x) \\ Talrendis Point, Azshara
+fp(65),	-- -- \\ Talonbranch Glade, Felwood
+fp(66),	-- -- \\ Chillwind Camp, Western Plaguelands \\ Chillwind Point, Western Plaguelands
+fp(67),	-- -- \\ Light's Hope Chapel, Eastern Plaguelands
+fp(68),	-- -- \\ Light's Hope Chapel, Eastern Plaguelands
+fp(69),	-- -- \\ Moonglade
+1.13.0.28211
+fp(70),	-- -- \\ Flame Crest, Burning Steppes
+fp(71),	-- -- \\ Morgan's Vigil, Burning Steppes
+fp(72),	-- -- \\ Cenarion Hold, Silithus
+fp(73),	-- -- \\ Cenarion Hold, Silithus
+fp(74),	-- -- \\ Thorium Point, Searing Gorge
+fp(75),	-- -- \\ Thorium Point, Searing Gorge
+fp(76),	-- -- \\ Revantusk Village, The Hinterlands
+fp(77),	-- -- \\ Vendetta Point, Southern Barrens \\ AA Fields of Blood, The Barrens \\ Camp Taurajo, The Barrens
+fp(78),	-- -- \\ Naxxramas
+fp(79),	-- -- \\ Marshal's Stand, Un'Goro Crater \\ Marshal's Refuge, Un'Goro Crater
+fp(80),	-- -- \\ Ratchet, Northern Barrens \\ Ratchet, The Barrens
+fp(84),	-- -- \\ Plaguewood Tower, Eastern Plaguelands
+fp(85),	-- -- \\ Northpass Tower, Eastern Plaguelands
+fp(86),	-- -- \\ Eastwall Tower, Eastern Plaguelands
+fp(87),	-- -- \\ Crown Guard Tower, Eastern Plaguelands

@@ -1,11 +1,12 @@
-﻿using ATT.FieldTypes;
+﻿using ATT.DB;
+using ATT.DB.Types;
+using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -40,27 +41,6 @@ namespace ATT
             /// All of the specific ItemIDs and each corresponding SourceID value
             /// </summary>
             private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
-
-            /// <summary>
-            /// All of the specific ItemIDs and each corresponding SourceID value
-            /// </summary>
-            private static IDictionary<long, ConcurrentDictionary<decimal, long>> SOURCES_PER_ITEMID = new ConcurrentDictionary<long, ConcurrentDictionary<decimal, long>>();
-
-            /// <summary>
-            /// Get all of the sources available for a given itemID.
-            /// </summary>
-            /// <param name="itemID">The itemID.</param>
-            /// <returns>The sources dictionary.</returns>
-            private static ConcurrentDictionary<decimal, long> GetSourcesForItemID(long itemID)
-            {
-                if (SOURCES_PER_ITEMID.TryGetValue(itemID, out var sources)) return sources;
-                return SOURCES_PER_ITEMID[itemID] = new ConcurrentDictionary<decimal, long>();
-            }
-
-            /// <summary>
-            /// A list of fields that have already warned the programmer.
-            /// </summary>
-            private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
             /// Returns whether a specific ItemID has been referenced
@@ -409,6 +389,7 @@ namespace ATT
                     case "sourceID":
                     case "bonusID":
                     case "modID":
+                    case "ItemAppearanceModifierID":
                     case "rank":
                     case "gender":
                     case "artifactID":
@@ -423,15 +404,15 @@ namespace ATT
                     case "isFlying":
                     case "isGround":
                     case "isJumping":
-                    case "creatureID":
                     //case "ignoreBonus":
                     case "displayID":
                     case "sourceText":
+                    case "creatureID":
                     case "cr":
                     case "crs":
+                    case "npcID":
                     case "qg":
                     case "qgs":
-                    case "npcID":
                     case "modelRotation":
                     case "modelScale":
                     case "model":
@@ -469,10 +450,6 @@ namespace ATT
                     case "skipFill":
                     case "pvp":
                     case "pb":
-                        {
-                            item[field] = Convert.ToBoolean(value);
-                            break;
-                        }
                     case "sr":
                         {
                             item[field] = Convert.ToBoolean(value);
@@ -495,6 +472,7 @@ namespace ATT
                     case "subclass":
                     case "q":
                     case "learnedAt":
+                    case "petBattleLvl":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -678,7 +656,7 @@ namespace ATT
 
                             newListOfLists = new List<List<object>>();
 
-                            if (!( value is List<object> newList))
+                            if (!(value is List<object> newList))
                             {
                                 LogWarn($"Unable to merge 'sym' data: {ToJSON(value)}", item);
                                 return;
@@ -711,19 +689,31 @@ namespace ATT
 
                     case "_wipe":
                     case "_defaulttimeline":
-                    // Functions
-                    case "OnInit":
-                    case "OnClick":
-                    case "OnUpdate":
-                    case "OnTooltip":
                         item[field] = value;
                         break;
+                    // Functions
+                    // These seem rather problematic to shared between all sources of an Item, since the conditions of when to apply the
+                    // logic differ based on Source.
+                    // i.e. OnInit setting something to a certain 'u' value only makes sense in the context of the specific source
+                    //case "OnInit":
+                    //case "OnClick":
+                    //case "OnUpdate":
+                    //case "OnTooltip":
+                    //    item[field] = value;
+                    //    break;
 
                     default:
                         // for undefined parser-only fields, just use the base Object merge implementation for the Item
                         if (field.StartsWith("_"))
                         {
                             Objects.Merge(item, field, value);
+                            return;
+                        }
+                        // Config-defined fields
+                        if (Objects.SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                        {
+                            Objects.MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                            return;
                         }
                         break;
                 }
@@ -750,7 +740,6 @@ namespace ATT
                     Log($"-- Field Value Overwrite: s:{sourceID} => {newSourceID}");
                 }
                 SOURCES[specificItemID] = newSourceID;
-                GetSourcesForItemID(itemID)[specificItemID] = newSourceID;
             }
 
             public static void AddItemSourceID(KeyValuePair<decimal, object> itemSource)
@@ -758,7 +747,6 @@ namespace ATT
                 if (itemSource.Value.TryConvert(out long sourceID))
                 {
                     SOURCES[itemSource.Key] = sourceID;
-                    GetSourcesForItemID((long)Math.Floor(itemSource.Key))[itemSource.Key] = sourceID;
                 }
             }
 
@@ -767,7 +755,6 @@ namespace ATT
                 if (itemSource.Value.TryConvert(out long sourceID))
                 {
                     SOURCES[itemSource.Key] = sourceID;
-                    GetSourcesForItemID(itemSource.Key)[itemSource.Key] = sourceID;
                 }
             }
 
@@ -891,6 +878,7 @@ namespace ATT
                     case "learnedAt":
                     case "ilvl":
                     case "lvl":
+                    case "petBattleLvl":
                     case "q":
                     case "c":
                     case "e":
@@ -1028,7 +1016,7 @@ namespace ATT
                 // Any filter types which should specifically not have a SourceID attached even if Blizzard wants them to
                 if (data.TryGetValue("f", out long f))
                 {
-                    if (!((f > 0 && f < 36) || f == 57))
+                    if (!((f > 0 && f < 36) || f == 57) || f == 51 || f == 52)
                     {
 #pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
@@ -1045,82 +1033,126 @@ namespace ATT
                 }
 
                 // Attempt to get the Source ID for this variant of the item.
-                if (SOURCES.TryGetValue(sourceIDKey, out long sourceID))
+                long? sourceIDFromSourcesDB = null;
+                if (SOURCES.TryGetValue(sourceIDKey, out long s)) sourceIDFromSourcesDB = s;
+
+                // Firstly check to see if there's an ArtifactID associated with the data.
+                long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
+                long AssignedItemAppearanceModifierID = 0;
+                if (data.TryGetValue("artifactID", out var artifactIDObj)
+                    && WagoData.TryGetValue((long)artifactIDObj, out ArtifactAppearance artifactAppearance))
                 {
+                    ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
+                }
+                else
+                {
+                    data.TryGetValue("ItemAppearanceModifierID", out AssignedItemAppearanceModifierID);
+                }
+
+                // Attempt to get the SourceID from the ItemModifiedAppearanceDB
+                long? ItemModifiedAppearanceID = null;
+                ItemModifiedAppearance itemModifiedAppearance = null;
+                var itemModifiedAppearances = WagoData.EnumerateForItemID<ItemModifiedAppearance>((long)sourceIDKey).ToList();
+                if (itemModifiedAppearances.Count > 0)
+                {
+                    // Try to find the best match for the item appearance modifier ID.
+                    long bestItemAppearanceModifierID = 9999;
+                    foreach (ItemModifiedAppearance appearance in itemModifiedAppearances)
+                    {
+                        // Well, we found the sourceID in the database. Let's report it.
+                        if (AssignedItemAppearanceModifierID == 0 && appearance.ID == sourceIDFromSourcesDB)
+                        {
+                            itemModifiedAppearance = appearance;
+                            break;
+                        }
+                        if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
+                        {
+                            // Set the selected default one to the matched appearance, but don't forget about the exact match.
+                            itemModifiedAppearance = appearance;
+                            bestItemAppearanceModifierID = -1;
+                        }
+                        else if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
+                        {
+                            itemModifiedAppearance = appearance;
+                            bestItemAppearanceModifierID = appearance.ItemAppearanceModifierID;
+                        }
+                    }
+                    if (itemModifiedAppearance != null)
+                    {
+                        ItemModifiedAppearanceID = itemModifiedAppearance.ID;
+                        if (itemModifiedAppearances.Count == 1)
+                        {
+                            // If its the only one, ignore it. This is common for old items that don't conform to modID/bonusID.
+                            ItemAppearanceModifierID = itemModifiedAppearance.ItemAppearanceModifierID;
+                        }
+                    }
+                }
+
+                // Compare the appearance from the ItemModifiedAppearance database and the one from ours.
+                long? sourceID = sourceIDFromSourcesDB ?? ItemModifiedAppearanceID;
+                // If we've forced an ItemAppearanceModifierID, then use the matching ItemModifiedAppearanceID
+                if (AssignedItemAppearanceModifierID > 0)
+                {
+                    sourceID = ItemModifiedAppearanceID;
+                }
+                if (sourceID.HasValue && sourceID > 0)
+                {
+                    // Don't report if the ItemAppearanceModifierID was specifically assigned
+#pragma warning disable CS0162 // Unreachable code detected
+                    // Details regarding how the selected SourceID was reached.
+                    string message = ItemModifiedAppearanceID.ToString();
+                    if (NestedBonusID > 0) message = $"{message} [BonusID: {NestedBonusID}]";
+                    if (NestedModID > 0) message = $"{message} [ModID: {NestedModID}]";
+
+                    bool substituted = false;
+                    message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
+                    if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                    {
+                        message = $"{message} Assign: {{ [\"ItemAppearanceModifierID\"] = {itemModifiedAppearance.ItemAppearanceModifierID} }}";
+                        substituted = true;
+                    }
+
+                    if (sourceIDFromSourcesDB.HasValue)
+                    {
+                        if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
+                        {
+                            // If we found a modified appearance, then report the difference.
+                            if (itemModifiedAppearance != null)
+                            {
+                                LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
+                            }
+                        }
+                        else if (substituted)
+                        {
+                            // Report when we found a matching sourceID to the SourceID database, but
+                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
+                        }
+                        else if (DoSpammyDebugLogging)
+                        {
+                            LogDebug($"INFO: Item:{sourceIDKey} SourceID == {message}");
+                        }
+                    }
+                    else if (substituted)
+                    {
+                        if (!data.ContainsKey("_unsorted"))
+                        {
+                            LogWarn($"Item:{sourceIDKey} Using SourceID from {message}", data);
+                        }
+                        else
+                        {
+                            LogDebugWarn($"Item:{sourceIDKey} Using SourceID from {message}", data);
+                        }
+                    }
+                    else if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
+#pragma warning restore CS0162 // Unreachable code detected
+
                     // quite spammmmmy, only enable if needed
 #pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID} ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID})");
 #pragma warning restore CS0162 // Unreachable code detected
                     data["sourceID"] = sourceID;
                     CaptureForSOURCED(data, "sourceID", sourceID);
                     return;
-                }
-
-                // quite spammmmmy, only enable if needed
-                if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
-                    LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
-
-                // don't "guess" any SourceID's in Retail. This makes it more clear when the harvested data is actually accurate or not
-                if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-                {
-                    // the base itemID has a Source, but we didn't find one for this sourceIDKey...
-                    if (SOURCES_PER_ITEMID.ContainsKey((long)sourceIDKey) && !data.ContainsKey("_unsorted") && CurrentParseStage != ParseStage.UnsortedGeneration)
-                    {
-                        LogWarn($"Failed to match SourceID for Item {sourceIDKey}", data);
-                    }
-                    return;
-                }
-
-                // Find the best match sourceID for this item. (this is gonna be slow!)
-                if ((long)Math.Floor(sourceIDKey) is long itemID
-                    && itemID == (long)sourceIDKey  // This is only applicable in cases where no modID or bonusID are present.
-                    && SOURCES_PER_ITEMID.TryGetValue(itemID, out ConcurrentDictionary<decimal, long> sources))
-                {
-                    sourceID = sources[sources.Keys.First()];
-                    if (sources.Count == 1)
-                    {
-                        // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
-                        // quite spammmmmy, only enable if needed
-#pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-SINGLE) ==> s:{sourceID}");
-#pragma warning restore CS0162 // Unreachable code detected
-                        data["sourceID"] = sourceID;
-                        CaptureForSOURCED(data, "sourceID", sourceID);
-                        return;
-                    }
-
-                    // If there is more than one, but they're all the same, just grab the first one.
-                    bool theyAllMatch = true;
-                    foreach (var pair in sources)
-                    {
-                        if (pair.Value == sourceID) continue;
-                        theyAllMatch = false;
-                        break;
-                    }
-                    if (theyAllMatch)
-                    {
-                        // If there's only one unique sourceID, then assign it. Probably some dumb missing modID or something.
-                        // quite spammmmmy, only enable if needed
-#pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-MATCHING) ==> s:{sourceID}");
-#pragma warning restore CS0162 // Unreachable code detected
-                        data["sourceID"] = sourceID;
-                        CaptureForSOURCED(data, "sourceID", sourceID);
-                        return;
-                    }
-
-                    // Lastly, if there are no other matches, then the lowest modID version is the default value, use that.
-                    var keys = sources.Keys.ToList();
-                    keys.Sort();
-                    sourceID = sources[keys.First()];
-
-                    // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
-                    // Definitely report these assignments since they're likely wrong and require harvesting to fix
-#pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogWarn($"Item:{sourceIDKey} (WATERFALL-GUESS) ==> s:{sourceID}", data);
-#pragma warning restore CS0162 // Unreachable code detected
-                    data["sourceID"] = sourceID;
-                    CaptureForSOURCED(data, "sourceID", sourceID);
                 }
             }
 
@@ -1132,6 +1164,17 @@ namespace ATT
                 if (data.ContainsKey("itemID") || (!data.TryGetValue("sourceID", out long sourceID))) return;
 
                 decimal itemID = 0;
+                if (WagoData.TryGetItemModifiedAppearanceAssociations(sourceID, out List<ItemModifiedAppearance> itemModifiedAppearances))
+                {
+                    itemID = itemModifiedAppearances.First().ItemID;
+
+                    if (itemModifiedAppearances.Count == 1)
+                    {
+                        ApplyItemID(itemID, data);
+                        return;
+                    }
+                }
+
                 foreach (KeyValuePair<decimal, long> matchedItemID in SOURCES.GetAllKvps(s => s == sourceID))
                 {
                     // minimum itemID is typically the cleanest match

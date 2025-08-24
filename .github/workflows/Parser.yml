@@ -6,6 +6,10 @@ on:
   push:
     paths:
       - '.contrib/Parser/**'
+  # Triggers the workflow on each pull request event
+  pull_request:
+    paths:
+      - '.contrib/Parser/**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -14,7 +18,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Database Parser for Retail
         timeout-minutes: 5
@@ -56,6 +60,13 @@ jobs:
         run: |
           cd .contrib/Parser
           "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
+        shell: cmd
+
+      - name: Database Parser for Mists of Pandaria
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
       - uses: actions/upload-artifact@v4

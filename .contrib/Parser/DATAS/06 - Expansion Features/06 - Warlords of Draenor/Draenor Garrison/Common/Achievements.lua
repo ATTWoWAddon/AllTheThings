@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures,
 						9825,	-- Master Relic Hunter (A)
 					}},
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						follower(465),	-- Harrison Jones
 					},
 				}),
@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures,
 						9836,	-- Master Relic Hunter (H)
 					}},
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						follower(465),	-- Harrison Jones
 					},
 				}),
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures,
 				})),
 				ach(9129, {	-- Filling the Ranks
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-					["g"] = {
+					["groups"] = {
 						a(i(111967)),	-- Dwarven Bunker, Level 3 (Garrison Blueprint)
 						h(i(116186)),	-- War Mill, Level 3 (Garrison Blueprint)
 						ach(9111),	-- Raising the Bar
@@ -103,7 +103,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
 					["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-					["g"] = {
+					["groups"] = {
 						i(111983),	-- Storehouse, Level 3 (Garrison Blueprint)
 					},
 				}),
@@ -212,7 +212,7 @@ root(ROOTS.ExpansionFeatures,
 				ach(9265),		-- Master of Apexis
 				ach(9825, {	-- Master Relic Hunter
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(27579),		-- The Blessing of Beasts
 						crit(27580),		-- Breaching the Barrier
 						crit(27581),		-- The Apexis Device
@@ -223,7 +223,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				ach(9836, {	-- Master Relic Hunter
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(27600),	-- The Blessing of Beasts
 						crit(27601),	-- Breaching the Barrier
 						crit(27602),	-- The Apexis Device
@@ -266,7 +266,7 @@ root(ROOTS.ExpansionFeatures,
 				ach(8933),		-- Staying Regular
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25856, {	-- The Warlord's Council
 							["_quests"] = { 35841 },	-- Putting Down the Packleader
 						}),
@@ -307,7 +307,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				ach(9492, {	-- The Garrison Campaign
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25870, {	-- The Warlord's Council
 							["_quests"] = { 35842 },	-- Putting Down the Packleader
 						}),
@@ -349,7 +349,7 @@ root(ROOTS.ExpansionFeatures,
 				ach(9407, {	-- Working Many Orders (750)
 					ach(9406, {	-- Working More Orders (250)
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["g"] = {
+						["groups"] = {
 							i(111930),	-- Alchemy Lab, Level 3 (Garrison Blueprint)
 							i(111973),	-- Enchanter's Study, Level 3 (Garrison Blueprint)
 							i(109257),	-- Engineering Works, Level 3 (Garrison Blueprint)

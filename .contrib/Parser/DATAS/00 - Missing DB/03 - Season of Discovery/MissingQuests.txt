@@ -1,0 +1,657 @@
+1.15.0.52124
+q(77690),	-- CLASSIC:A Small Upgrade
+q(78023),	--
+q(78024),	--
+q(78242),	--
+q(78280),	--
+q(78295),	--
+q(78296),	--
+q(78306),	--
+q(78675),	--
+q(78676),	-- CLASSIC:The Eye of Bhossca
+q(78682),	--
+q(78699),	-- CLASSIC:The Eye of Bhossca
+q(78832),	--
+q(78910),	--
+q(78919),	--
+q(78924),	-- CLASSIC:In Search of Thaelrid
+q(78994),	-- CLASSIC:A Solid Foundation
+1.15.0.52610
+q(79482),	-- CLASSIC:Stolen Winter Veil Treats
+q(79483),	-- CLASSIC:Stolen Winter Veil Treats
+q(79484),	-- CLASSIC:You're a Mean One...
+q(79485),	-- CLASSIC:You're a Mean One...
+q(79486),	-- CLASSIC:A Smokywood Pastures' Thank You!
+q(79487),	-- CLASSIC:A Smokywood Pastures' Thank You!
+q(79492),	-- CLASSIC:Metzen the Reindeer
+q(79495),	-- CLASSIC:Metzen the Reindeer
+q(79501),	-- CLASSIC:The Hero of the Day
+q(79502),	-- CLASSIC:The Hero of the Day
+q(79637),	-- CLASSIC:A Ticking Present
+1.15.1.53009
+q(78823),	-- CLASSIC:Terror of the Desert Skies
+q(78830),	-- CLASSIC:Terror of the Desert Skies
+q(78914),	-- CLASSIC:Soul Vessel
+q(79298),	-- CLASSIC:Tempting Fate
+q(79348),	-- CLASSIC:The Lost Ancient
+q(79358),	-- CLASSIC:Tattered Note
+q(79360),	-- CLASSIC:Elemental Aid
+q(79361),	-- CLASSIC:Power of da Wind
+q(79362),	-- CLASSIC:Power of da Earth
+q(79363),	-- CLASSIC:Power of da Water
+q(79364),	-- CLASSIC:A Simple Container
+q(79365),	-- CLASSIC:With Wind Beneath Your Wings
+q(79366),	-- CLASSIC:Calm Before the Storm
+q(79377),	-- CLASSIC:The Lost Saplings
+q(79442),	-- CLASSIC:Catching Up
+q(79535),	-- CLASSIC:Basilisks: Should Petrification be Feared?
+q(79536),	-- CLASSIC:Greater Friend of the Library
+q(79614),	--
+q(79615),	--
+q(79687),	--
+q(79688),	--
+q(79689),	--
+q(79695),	--
+q(79700),	--
+q(79719),	--
+q(79731),	-- CLASSIC:The Troll Scroll
+q(79905),	-- CLASSIC:A Taste of Knowledge
+q(79942),	--
+q(79947),	-- CLASSIC:Geomancy: The Stone-Cold Truth
+q(79948),	-- CLASSIC:Defensive Magics 101
+q(79949),	-- CLASSIC:A Web of Lies: Debunking Myths and Legends
+q(79950),	-- CLASSIC:Demons and You
+q(79951),	-- CLASSIC:Mummies: A Guide to the Unsavory Undead
+q(79952),	-- CLASSIC:RwlRwlRwlRwl!
+q(79953),	-- CLASSIC:A Ludite's Guide to Caring for Your Demonic Pet
+q(79961),	--
+q(79973),	--
+q(79977),	--
+q(79978),	--
+q(79979),	--
+q(79983),	--
+q(80056),	--
+q(80142),	-- CLASSIC:Castpipe's Task
+q(80156),	-- CLASSIC:The Sparklematic 5200!
+q(80159),	--
+1.15.1.53247
+q(80393),	--
+1.15.2.53941
+q(80410),	--
+q(81573),	--
+q(81900),	-- CLASSIC:The Burning Beast
+q(81917),	-- CLASSIC:Chains That Bind
+q(81919),	-- CLASSIC:Brought to Heel
+q(81947),	-- CLASSIC:Sanguine Sorcery
+q(81949),	-- CLASSIC:Legends of the Tidesages
+q(81951),	-- CLASSIC:The Liminal and the Arcane
+q(81952),	-- CLASSIC:Everyday Etiquette
+q(81953),	-- CLASSIC:Stonewrought Design
+q(81954),	-- CLASSIC:Venomous Journeys
+q(81955),	-- CLASSIC:A Mind of Metal
+q(81956),	-- CLASSIC:Conjurer's Codex
+q(81960),	-- CLASSIC:Clarifying Air
+q(81961),	--
+q(81968),	-- CLASSIC:Answering Air's Call
+q(81973),	--
+q(81974),	-- CLASSIC:More Junk for Ziri
+q(81975),	-- CLASSIC:A Troubling Exchange
+q(81977),	-- CLASSIC:DNT
+q(81979),	-- CLASSIC:DNT
+q(81980),	-- CLASSIC:DNT
+q(81982),	-- CLASSIC:DNT
+q(81983),	-- CLASSIC:DNT
+q(81987),	-- CLASSIC:Goblin Solutions
+q(82001),	-- CLASSIC:Require Gnomish Problems
+q(82002),	-- CLASSIC:Whats Red and Smells like Paint?
+q(82003),	-- CLASSIC:Victory Lap For the Goblins!
+q(82004),	-- CLASSIC:Hush Money
+q(82008),	-- CLASSIC:Gnomish Solutions
+q(82009),	-- CLASSIC:Require Goblin Problems
+q(82010),	-- CLASSIC:Watering Down the Competition
+q(82011),	-- CLASSIC:Victory Lap for the Gnomes!
+q(82013),	-- CLASSIC:Hush Money
+q(82032),	--
+q(82060),	--
+q(82070),	--
+q(82071),	-- CLASSIC:Purifying Fire
+q(82072),	-- CLASSIC:Purging Earth
+q(82073),	-- CLASSIC:Cleansing Water
+q(82074),	-- CLASSIC:Answering Fire's Call
+q(82075),	-- CLASSIC:Answering Earth's Call
+q(82076),	-- CLASSIC:Answering Water's Call
+q(82089),	-- CLASSIC:Master of Transmutation
+q(82090),	-- CLASSIC:Mixology For Fun and Profit
+q(82091),	--
+q(82092),	--
+q(82101),	-- CLASSIC:Zapper Fuel
+q(82103),	--
+q(82132),	--
+q(82208),	-- CLASSIC:Greater Friend of the Library
+q(82304),	--
+q(82305),	--
+q(82306),	--
+q(82310),	--
+q(82311),	--
+q(82312),	--
+q(82313),	--
+q(82314),	--
+q(82315),	--
+q(82316),	-- CLASSIC:Seven Eyes I Seek...
+1.15.2.54332
+q(82656),	-- CLASSIC:Wild Leather Vest
+q(82657),	-- CLASSIC:Wild Leather Vest
+q(82850),	-- CLASSIC:Fish Oil
+q(82851),	-- CLASSIC:Dark Iron Ordinance
+q(82853),	-- CLASSIC:Shredder Turbochargers
+1.15.3.55112
+q(83183),	--
+q(83184),	--
+q(83185),	--
+q(83186),	--
+q(83187),	--
+q(83823),	-- CLASSIC:A Lesson in Violence
+q(83937),	--
+q(83938),	--
+q(83939),	--
+q(83940),	--
+q(83941),	--
+q(83942),	--
+q(83943),	--
+q(83944),	--
+q(83945),	--
+q(83946),	--
+q(83947),	--
+q(83948),	--
+q(83949),	--
+q(83950),	--
+q(83951),	--
+q(83952),	--
+q(83953),	--
+q(83954),	--
+q(83955),	--
+q(83956),	--
+q(83957),	--
+q(83958),	--
+q(83959),	--
+q(83960),	--
+q(83961),	--
+q(83962),	--
+q(83963),	--
+q(83964),	--
+q(83965),	--
+q(83966),	--
+q(83967),	--
+q(83968),	--
+q(83969),	--
+q(83970),	--
+q(83971),	--
+q(83972),	--
+q(83973),	--
+q(83974),	--
+q(83975),	--
+q(83976),	--
+q(83977),	--
+q(83978),	--
+q(83979),	--
+q(83980),	--
+q(83981),	--
+q(83982),	--
+q(83983),	--
+q(83984),	--
+q(83985),	--
+q(83986),	--
+q(83987),	--
+q(83988),	--
+q(83990),	--
+q(83991),	--
+q(83992),	--
+q(83993),	--
+q(83994),	--
+q(83995),	--
+q(83996),	--
+q(83997),	--
+q(83998),	--
+q(84124),	-- CLASSIC:Legacy of Valor
+q(84135),	-- CLASSIC:Beach Bot
+q(84136),	-- CLASSIC:The Beast Master of Moonglade
+q(84137),	-- CLASSIC:Mechanical Romance
+q(84138),	-- CLASSIC:Frosty Favors
+q(84146),	-- CLASSIC:Red Bag Blues
+q(84147),	-- CLASSIC:An Earnest Proposition
+q(84148),	-- CLASSIC:An Earnest Proposition
+q(84149),	-- CLASSIC:An Earnest Proposition
+q(84150),	-- CLASSIC:An Earnest Proposition
+q(84151),	-- CLASSIC:An Earnest Proposition
+q(84152),	-- CLASSIC:An Earnest Proposition
+q(84153),	-- CLASSIC:An Earnest Proposition
+q(84154),	-- CLASSIC:An Earnest Proposition
+q(84155),	-- CLASSIC:An Earnest Proposition
+q(84156),	-- CLASSIC:An Earnest Proposition
+q(84157),	-- CLASSIC:An Earnest Proposition
+q(84158),	-- CLASSIC:An Earnest Proposition
+q(84159),	-- CLASSIC:An Earnest Proposition
+q(84160),	-- CLASSIC:An Earnest Proposition
+q(84161),	-- CLASSIC:An Earnest Proposition
+q(84162),	-- CLASSIC:An Earnest Proposition
+q(84163),	-- CLASSIC:Just Compensation
+q(84164),	-- CLASSIC:Just Compensation
+q(84165),	-- CLASSIC:Just Compensation
+q(84166),	-- CLASSIC:Just Compensation
+q(84167),	-- CLASSIC:Just Compensation
+q(84168),	-- CLASSIC:Just Compensation
+q(84169),	-- CLASSIC:Just Compensation
+q(84170),	-- CLASSIC:Just Compensation
+q(84171),	-- CLASSIC:Just Compensation
+q(84172),	-- CLASSIC:Just Compensation
+q(84173),	-- CLASSIC:Just Compensation
+q(84174),	-- CLASSIC:Just Compensation
+q(84175),	-- CLASSIC:Just Compensation
+q(84176),	-- CLASSIC:Just Compensation
+q(84177),	-- CLASSIC:Just Compensation
+q(84178),	-- CLASSIC:Just Compensation
+q(84179),	-- CLASSIC:Anthion's Parting Words
+q(84180),	-- CLASSIC:Anthion's Parting Words
+q(84181),	-- CLASSIC:Anthion's Parting Words
+q(84182),	-- CLASSIC:Anthion's Parting Words
+q(84183),	-- CLASSIC:Anthion's Parting Words
+q(84184),	-- CLASSIC:Anthion's Parting Words
+q(84185),	-- CLASSIC:Anthion's Parting Words
+q(84186),	-- CLASSIC:Anthion's Parting Words
+q(84187),	-- CLASSIC:Anthion's Parting Words
+q(84188),	-- CLASSIC:Anthion's Parting Words
+q(84189),	-- CLASSIC:Anthion's Parting Words
+q(84190),	-- CLASSIC:Anthion's Parting Words
+q(84191),	-- CLASSIC:Anthion's Parting Words
+q(84192),	-- CLASSIC:Anthion's Parting Words
+q(84193),	-- CLASSIC:Anthion's Parting Words
+q(84194),	-- CLASSIC:Anthion's Parting Words
+q(84195),	-- CLASSIC:Saving the Best for Last
+q(84196),	-- CLASSIC:Saving the Best for Last
+q(84197),	-- CLASSIC:Saving the Best for Last
+q(84198),	-- CLASSIC:Saving the Best for Last
+q(84199),	-- CLASSIC:Saving the Best for Last
+q(84200),	-- CLASSIC:Saving the Best for Last
+q(84201),	-- CLASSIC:Saving the Best for Last
+q(84202),	-- CLASSIC:Saving the Best for Last
+q(84203),	-- CLASSIC:Saving the Best for Last
+q(84204),	-- CLASSIC:Saving the Best for Last
+q(84205),	-- CLASSIC:Saving the Best for Last
+q(84206),	-- CLASSIC:Saving the Best for Last
+q(84207),	-- CLASSIC:Saving the Best for Last
+q(84208),	-- CLASSIC:Saving the Best for Last
+q(84209),	-- CLASSIC:Saving the Best for Last
+q(84210),	-- CLASSIC:Saving the Best for Last
+q(84211),	-- CLASSIC:Poacher's Den
+q(84212),	-- CLASSIC:Bookin' it Back
+q(84213),	-- CLASSIC:Rift Away
+q(84235),	-- CLASSIC:Dive! Dive!
+q(84238),	--
+q(84317),	-- CLASSIC:Infinite Midnight
+q(84320),	-- CLASSIC:Lost Heirloom
+q(84321),	-- CLASSIC:Relic of Light
+q(84322),	-- CLASSIC:Scarlet Research
+q(84323),	-- CLASSIC:The Prize Within
+q(84324),	-- CLASSIC:Diplomatic Overtures
+q(84325),	-- CLASSIC:Shrine of Cooperation
+q(84326),	-- CLASSIC:Diplomat Ring
+q(84327),	-- CLASSIC:A Diplomatic Mission
+q(84328),	-- CLASSIC:Repairing the Shard
+q(84329),	-- CLASSIC:The Convocation Assembles
+q(84331),	-- CLASSIC:The Miracle
+1.15.3.55244
+q(84368),	--
+q(84369),	-- CLASSIC:Healing the Healer
+q(84374),	--
+q(84375),	--
+q(84383),	--
+q(84394),	-- CLASSIC:Greater Friend of the Library
+q(84395),	-- CLASSIC:Undead Potatoes
+q(84396),	-- CLASSIC:Magma or Lava?
+q(84397),	-- CLASSIC:Northern Kalimdor - A Comprehensive Guide
+q(84398),	-- CLASSIC:A Study of the Light
+q(84399),	-- CLASSIC:Ka-Boom!
+q(84400),	-- CLASSIC:The Knight and the Lady
+q(84401),	-- CLASSIC:Scourge: Undead Menace or Misunderstood?
+q(84402),	-- CLASSIC:Necromancy 101
+q(84405),	-- CLASSIC:Lost Heirloom
+q(84406),	-- CLASSIC:Relic of Light
+q(84407),	-- CLASSIC:The Prize Within
+q(84408),	-- CLASSIC:Diplomatic Overtures
+q(84410),	-- CLASSIC:Shrine of Cooperation
+q(84411),	-- CLASSIC:Diplomat Ring
+q(84412),	-- CLASSIC:A Diplomatic Mission
+q(84413),	-- CLASSIC:Repairing the Shard
+q(84415),	--
+1.15.3.55348
+q(84499),	--
+q(84500),	--
+q(84501),	--
+q(84502),	--
+q(84503),	--
+q(84504),	--
+q(84526),	--
+1.15.3.55391
+q(84558),	--
+1.15.4.56400
+q(84488),	--
+q(84636),	-- CLASSIC:Prowler
+q(84637),	--
+q(84853),	-- CLASSIC:Tracks in the Snow
+q(84870),	-- CLASSIC:The Dark Hoard
+q(84880),	-- CLASSIC:The Enemy of my Enemy
+q(84881),	-- CLASSIC:Into the Hold of Shadows
+q(84950),	-- CLASSIC:Out in the Cold
+q(84968),	--
+q(84969),	--
+q(85030),	-- CLASSIC:Uther's Tomb
+q(85031),	--
+q(85033),	--
+q(85034),	-- CLASSIC:The Ruins of Andorhal
+q(85056),	--
+q(85057),	--
+q(85058),	--
+q(85061),	-- CLASSIC:Bug Hunt
+q(85063),	-- CLASSIC:Culmination
+q(85064),	-- CLASSIC:Worst Case Scenario
+q(85065),	-- CLASSIC:A Most Curious Gnome
+q(85066),	-- CLASSIC:Making Ready
+q(85067),	-- CLASSIC:A Paladin of the Silver Hand
+q(85068),	-- CLASSIC:Who Says You Can Never Go Back?
+q(85069),	--
+q(85073),	--
+q(85074),	-- CLASSIC:The Burning of Andorhal
+q(85086),	--
+q(85087),	-- CLASSIC:A Desperate Escape
+q(85090),	-- CLASSIC:Back to the Future
+q(85091),	-- CLASSIC:The Cost of Victory
+q(85092),	-- CLASSIC:Truthbearer
+q(85093),	-- CLASSIC:UNUSED
+q(85140),	--
+q(85141),	--
+q(85142),	--
+q(85143),	--
+q(85144),	--
+q(85145),	--
+q(85146),	--
+q(85147),	--
+q(85148),	--
+q(85149),	--
+q(85150),	-- CLASSIC:The Only Good Bug is a Dead Bug
+q(85152),	--
+q(85248),	-- CLASSIC:Everyone Knows That Bugs Can't Fly
+q(85250),	-- CLASSIC:Meeting the Menagerie
+q(85251),	-- CLASSIC:Showdown at Un'Goro Crater
+q(85304),	-- CLASSIC:Essence of Fire
+q(85385),	-- CLASSIC:The Librarian's Apprentice
+q(85386),	-- CLASSIC:Essence of Frost
+q(85388),	-- CLASSIC:A Foul Interference
+q(85401),	-- CLASSIC:The Frigid Barrow
+q(85435),	-- CLASSIC:A Foul Interference
+q(85445),	-- CLASSIC:The Golden Disk
+q(85446),	-- CLASSIC:Scale of the Dragon Lord
+q(85447),	-- CLASSIC:Grim Batol
+q(85452),	--
+q(85453),	-- CLASSIC:No Good Deed Goes Unpunished
+q(85454),	-- CLASSIC:A Just Reward
+q(85455),	-- CLASSIC:The Blood of the Lightbringer
+q(85456),	--
+q(85457),	-- CLASSIC:Just What Was Needed
+q(85458),	-- CLASSIC:Darkwhisper Gorge
+q(85480),	-- CLASSIC:Procrastimond's Gratitude
+q(85501),	-- CLASSIC:The Heart of Chromaggus
+q(85504),	--
+q(85507),	-- CLASSIC:Our Wayward Friend
+q(85508),	-- CLASSIC:Our Wayward Friend
+q(85509),	-- CLASSIC:Grand Theft Echoing Orb
+q(85510),	-- CLASSIC:A Solid Lead
+q(85511),	-- CLASSIC:Plaguelands Rendezvous
+q(85521),	-- CLASSIC:Tracking the Trapper
+q(85522),	--
+q(85525),	-- CLASSIC:One Night in Winterspring
+q(85555),	-- CLASSIC:Heavy Metal
+q(85556),	-- CLASSIC:A Particular Set of Skills
+q(85557),	-- CLASSIC:Efficiency Is Priority One
+q(85558),	-- CLASSIC:Commit to Quality
+q(85559),	-- CLASSIC:Night Falls
+q(85576),	--
+q(85577),	--
+q(85578),	--
+q(85579),	--
+q(85583),	--
+q(85604),	-- CLASSIC:The Unmarred Vision of Voodress
+q(85605),	-- CLASSIC:Paragons of Power: The Augur's Bracers
+q(85606),	-- CLASSIC:Paragons of Power: The Augur's Belt
+q(85607),	-- CLASSIC:Paragons of Power: The Augur's Hauberk
+q(85608),	-- CLASSIC:Pristine Enchanted South Seas Kelp
+q(85609),	-- CLASSIC:Paragons of Power: The Haruspex's Bracers
+q(85610),	-- CLASSIC:Paragons of Power: The Haruspex's Belt
+q(85611),	-- CLASSIC:Paragons of Power: The Haruspex's Tunic
+q(85612),	-- CLASSIC:The Rage of Mugamba
+q(85613),	-- CLASSIC:Paragons of Power: The Vindicator's Armguards
+q(85614),	-- CLASSIC:Paragons of Power: The Vindicator's Belt
+q(85615),	-- CLASSIC:Paragons of Power: The Vindicator's Breastplate
+q(85616),	-- CLASSIC:The All-Seeing Eye of Zuldazar
+q(85617),	-- CLASSIC:The Hero's Brand
+q(85618),	-- CLASSIC:Paragons of Power: The Freethinker's Armguards
+q(85619),	-- CLASSIC:Paragons of Power: The Freethinker's Belt
+q(85620),	-- CLASSIC:Paragons of Power: The Freethinker's Breastplate
+q(85621),	--
+1.15.4.56493
+q(85622),	-- CLASSIC:Paragons of Power: The Confessor's Wraps
+q(85623),	-- CLASSIC:Paragons of Power: The Confessor's Bindings
+q(85624),	-- CLASSIC:Paragons of Power: The Confessor's Mantle
+q(85625),	-- CLASSIC:Kezan's Unstoppable Taint
+q(85626),	-- CLASSIC:Paragons of Power: The Demoniac's Wraps
+q(85627),	-- CLASSIC:Paragons of Power: The Demoniac's Mantle
+q(85628),	-- CLASSIC:Paragons of Power: The Demoniac's Robes
+q(85629),	-- CLASSIC:The Jewel of Kajaro
+q(85630),	-- CLASSIC:Paragons of Power: The Illusionist's Wraps
+q(85631),	-- CLASSIC:Paragons of Power: The Illusionist's Mantle
+q(85632),	-- CLASSIC:Paragons of Power: The Illusionist's Robes
+q(85633),	-- CLASSIC:Zandalarian Shadow Mastery Talisman
+q(85634),	-- CLASSIC:Paragons of Power: The Madcap's Bracers
+q(85635),	-- CLASSIC:Paragons of Power: The Madcap's Mantle
+q(85636),	-- CLASSIC:Paragons of Power: The Madcap's Tunic
+q(85637),	-- CLASSIC:Maelstrom's Wrath
+q(85638),	-- CLASSIC:Paragons of Power: The Predator's Bracers
+q(85639),	-- CLASSIC:Paragons of Power: The Predator's Belt
+q(85640),	-- CLASSIC:Paragons of Power: The Predator's Mantle
+q(85641),	--
+q(85658),	-- CLASSIC:For All To See
+q(85659),	-- CLASSIC:Celebrating Good Times
+q(85660),	-- CLASSIC:The Heart of Hakkar
+1.15.4.56573
+q(85699),	-- CLASSIC:Snakestone of the Shadow Huntress
+q(85700),	-- CLASSIC:Corruption
+q(85701),	-- CLASSIC:Dragonscale Leatherworking
+q(85702),	-- CLASSIC:Dragonscale Leatherworking
+q(85703),	-- CLASSIC:Elemental Leatherworking
+q(85704),	-- CLASSIC:Elemental Leatherworking
+q(85705),	-- CLASSIC:Tribal Leatherworking
+q(85706),	-- CLASSIC:Tribal Leatherworking
+q(85712),	-- CLASSIC:The Art of the Armorsmith
+q(85713),	-- CLASSIC:The Art of the Armorsmith
+q(85772),	-- CLASSIC:Elemental Distress
+1.15.5.57537
+q(85882),	-- CLASSIC:End of the Dark Horde
+q(85883),	-- CLASSIC:For The Horde!
+q(86181),	--
+q(86326),	-- CLASSIC:Desert Power
+q(86433),	--
+q(86434),	--
+q(86442),	-- CLASSIC:Nefarius's Corruption
+q(86443),	-- CLASSIC:The Nightmare Manifests
+q(86444),	-- CLASSIC:The Only Prescription
+q(86445),	-- CLASSIC:The Wrath of Neptulon
+q(86449),	-- CLASSIC:Treasure of the Timeless One
+q(86670),	-- CLASSIC:The Savior of Kalimdor
+q(86673),	-- CLASSIC:The Fall of Ossirian
+q(86674),	-- CLASSIC:The Perfect Poison
+q(86724),	-- CLASSIC:Dust to Dust
+q(86725),	-- CLASSIC:Dust to Dust
+1.15.6.58185
+q(86971),	-- CLASSIC:Curious Karazhan Curios!
+q(86972),	-- CLASSIC:Curious Karazhan Curios!
+q(87283),	-- CLASSIC:The Violet Satchel
+q(87360),	-- CLASSIC:The Fall of Kel'Thuzad
+q(87362),	-- CLASSIC:Hope Begins in the Dark
+q(87364),	-- CLASSIC:Seal the Deal
+q(87365),	-- CLASSIC:Valor Grows by Daring
+q(87366),	-- CLASSIC:Knight Time
+q(87367),	-- CLASSIC:A New Light
+q(87368),	-- CLASSIC:A Product of Faith
+q(87369),	-- CLASSIC:Cultivating Faith
+q(87370),	--
+q(87371),	--
+q(87372),	--
+q(87373),	--
+1.15.6.58658
+q(87441),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
+q(87442),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
+q(87443),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
+q(87444),	-- CLASSIC:Atiesh, Greatstaff of the Guardian
+q(87459),	-- CLASSIC:Scarlet Activities
+q(87493),	-- CLASSIC:Unrest at Tyr's Hand
+q(87497),	-- CLASSIC:The Schism
+q(87498),	-- CLASSIC:The Scarlet Reclamation
+q(87502),	-- CLASSIC:Gathering Intelligence
+q(87506),	-- CLASSIC:Weakening The Defenses
+q(87508),	-- CLASSIC:Report to Lord Tyrosus
+q(87509),	-- CLASSIC:The Wrath of the Dawn
+q(87516),	-- CLASSIC:Decapitation Strike
+q(87517),	-- CLASSIC:Red = Dead
+q(87518),	-- CLASSIC:Fall of the Grand Crusader
+q(87520),	-- CLASSIC:Antithesis of the Light
+1.15.6.58725
+q(87377),	-- CLASSIC:Never at Rest
+q(88713),	-- CLASSIC:Never at Rest
+q(88714),	-- CLASSIC:Never at Rest
+q(88715),	-- CLASSIC:Never at Rest
+q(88716),	-- CLASSIC:Never at Rest
+q(88717),	-- CLASSIC:Never at Rest
+q(88718),	-- CLASSIC:Never at Rest
+q(88729),	-- CLASSIC:Ramaladni's Icy Grasp
+q(88730),	-- CLASSIC:The Only Song I Know...
+q(88744),	-- CLASSIC:Under the Shadow
+q(88748),	-- CLASSIC:Cracked Necrotic Crystal
+q(88749),	-- CLASSIC:Faint Necrotic Crystal
+1.15.6.58866
+q(88940),	--
+q(88943),	--
+q(88944),	--
+q(88968),	-- CLASSIC:The Lord of Blackrock
+q(88969),	-- CLASSIC:The Lord of Blackrock
+1.15.6.59415
+q(89355),	--
+q(89356),	--
+q(89357),	--
+q(89358),	--
+q(89359),	--
+q(89360),	--
+q(89361),	--
+q(89362),	--
+q(89363),	--
+q(89364),	--
+q(89365),	--
+q(89366),	--
+q(89367),	--
+q(89368),	--
+q(89369),	--
+q(89370),	--
+q(89371),	--
+q(89372),	--
+q(89373),	--
+q(89374),	--
+q(89375),	--
+q(89376),	--
+1.15.7.59706
+q(89224),	-- CLASSIC:Food Shortage
+q(89226),	--
+q(89229),	-- CLASSIC:The Right Path
+q(89232),	--
+q(89234),	-- CLASSIC:A Personal Matter
+q(89235),	-- CLASSIC:The Culling
+q(89236),	-- CLASSIC:Wrangling Apples
+q(89237),	--
+q(89245),	-- CLASSIC:Fish in a Barrel
+q(89253),	-- CLASSIC:Main Course
+q(89255),	-- CLASSIC:Prove Your Worth: Headgear
+q(89256),	-- CLASSIC:Prove Your Worth: Shoulderpads
+q(89257),	-- CLASSIC:Prove Your Worth: Chestpiece
+q(89258),	-- CLASSIC:Prove Your Worth: Wristguards
+q(89259),	-- CLASSIC:Prove Your Worth: Gloves
+q(89260),	-- CLASSIC:Prove Your Worth: Belt
+q(89261),	-- CLASSIC:Prove Your Worth: Legguards
+q(89262),	-- CLASSIC:Prove Your Worth: Boots
+q(89298),	--
+q(89299),	--
+q(89300),	--
+q(89301),	--
+q(89303),	--
+q(89304),	--
+q(89310),	-- CLASSIC:Terrordale
+q(89328),	-- CLASSIC:Loss
+q(89329),	-- CLASSIC:Stomping Out The Infestation
+q(89340),	-- CLASSIC:Preposterously Prosed Postage
+q(89341),	-- CLASSIC:The Great Feast
+q(89342),	-- CLASSIC:VIP Haute Club Membership
+q(89381),	-- CLASSIC:Pin Cushion
+q(89421),	-- CLASSIC:Bullet Heaven
+q(89442),	--
+q(89443),	--
+q(89444),	-- CLASSIC:The Corrupted Emblem
+q(89445),	-- CLASSIC:Blades of Light
+q(89446),	-- CLASSIC:The Lost Craftsman
+q(89447),	-- CLASSIC:Extravagant Tastes
+q(89448),	-- CLASSIC:Gathering Light
+q(89449),	--
+q(89451),	--
+q(89462),	--
+q(89463),	-- CLASSIC:Nondisclosure Arguement
+q(89471),	-- CLASSIC:Goblin Tinkering
+q(89473),	--
+q(89474),	--
+q(89475),	--
+q(89485),	-- CLASSIC:Whimsical Horrors
+q(89486),	-- CLASSIC:A Pinch of Gunpowder
+q(89487),	-- CLASSIC:Much Ado About Magnets
+q(89488),	--
+q(89489),	-- CLASSIC:Increased Drop Rate
+q(89491),	-- CLASSIC:A Complicated Escape Plan
+q(89562),	-- CLASSIC:My Old Enemy
+q(89563),	-- CLASSIC:Leonid's Burden
+q(89567),	-- CLASSIC:The Wrecked Caravan
+q(89568),	-- CLASSIC:Something New
+q(89574),	-- CLASSIC:Servants of Death
+q(90106),	--
+q(90107),	-- CLASSIC:The Blade Reformed
+q(90506),	--
+q(90507),	--
+q(90508),	--
+q(90510),	-- CLASSIC:New Avalon
+q(90516),	--
+q(90518),	-- CLASSIC:An Apple a Day Keeps the Undead at Bay
+q(90519),	-- CLASSIC:Fish On Demand
+q(90520),	-- CLASSIC:Food Safety
+q(90539),	--
+q(90558),	--
+q(90559),	--
+q(90566),	-- CLASSIC:Oh, My Bleeding Hearts!
+q(90603),	--
+q(90604),	--
+q(90605),	--
+q(90606),	--
+q(90611),	--
+q(90612),	--
+q(90613),	--
+q(90624),	--
+q(90625),	-- CLASSIC:On Dreaded Wings
+q(90626),	-- CLASSIC:Sinew of Light
+q(90627),	-- CLASSIC:Crafty the Crafter
+q(90629),	--
+1.15.7.60932
+q(91354),	--
+1.15.7.61582
+q(91888),	--
+q(91889),	--

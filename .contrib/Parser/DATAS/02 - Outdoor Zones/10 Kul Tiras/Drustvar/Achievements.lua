@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			ach(12497, {	-- Drust Do It.
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					title(378),	-- Inquisitor <Name>
 					crit(40168),	-- The Final Effigy
 					crit(40169),	-- The Burden of Proof
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			ach(13064),		-- Drust the Facts, Ma'am (automated)
-			explorationAch(12557),	-- Explore Drustvar
+			ach(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Turn in all items at 44.90, 27.41.",
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			ach(13087, {	-- Sausage Sampler
 				["description"] = "Can be completed as Horde by purchasing items on the AH.",
-				["g"] = {
+				["groups"] = {
 					-- TODO: use provider instead for crits
 					i(163110, {	-- Fried Boar Sausage
 						["coord"] = { 26.7, 72.5, DRUSTVAR },
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 53472,
 					["icon"] = 1001977,
 					["coord"] = { 55.60, 51.80, DRUSTVAR },
-					["g"] = {
+					["groups"] = {
 						i(163790),	-- Spooky Incantation
 					},
 				}),
@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 53474,
 					["icon"] = 1001977,
 					["coord"] = { 25.50, 24.20, DRUSTVAR },
-					["g"] = {
+					["groups"] = {
 						i(163796),	-- Wolf Pup Spine
 					},
 				}),
@@ -331,7 +331,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 53473,
 					["icon"] = 1001977,
 					["coord"] = { 67.70, 73.70, DRUSTVAR },
-					["g"] = {
+					["groups"] = {
 						i(163791),	-- Miniature Stag Skull
 					},
 				}),
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 53471,
 					["icon"] = 1001977,
 					["coord"] = { 18.50, 51.30, DRUSTVAR },
-					["g"] = {
+					["groups"] = {
 						i(163789),	-- Bundle of Wicker Stick
 					},
 				}),
@@ -349,7 +349,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 25.69, 20.03, DRUSTVAR },
 					["icon"] = 1001977,
 					["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
-					["g"] = {
+					["groups"] = {
 						n(137468, {	-- Gorging Raven
 							i(163710),	-- Merchant's Key
 						}),
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 63.3, 65.8, DRUSTVAR },
 					["icon"] = 1001977,
 					["description"] = "Left. Down. Up. Right.",
-					["g"] = {
+					["groups"] = {
 						i(163743),	-- Drust Soulcatcher
 					},
 				}),
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 44.2, 27.8, DRUSTVAR },
 					["icon"] = 1001977,
 					["description"] = "Left. Right. Down. Up.",
-					["g"] = {
+					["groups"] = {
 						i(163742),	-- Heartsbane Grimoire (TOY!)
 					},
 				}),
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 33.68, 71.74, DRUSTVAR },
 					["icon"] = 1001977,
 					["description"] = "Right. Up. Left. Down.",
-					["g"] = {
+					["groups"] = {
 						i(163740),	-- Drust Ritual Knife (TOY!)
 					},
 				}),
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 53356,
 					["coord"] = { 33.7, 30.1, DRUSTVAR },
 					["icon"] = 1001977,
-					["g"] = {
+					["groups"] = {
 						i(160053),	-- Battle-Scarred Augment Rune
 					},
 				}),

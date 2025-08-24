@@ -1,0 +1,43 @@
+5.0.3.15882
+pet(115),	-- Baby Shark
+pet(382),	-- Sun Darter Hatchling \\ Raccoon Kit
+pet(666),	-- Micronax \\ Elayna
+5.5.0.60481
+pet(1243),	-- Living Fluid
+pet(1255),	-- Zeradar \\ Murkimus Tyrannicus
+pet(1259),	-- Widowling
+pet(1352),	-- Lord Piglet \\ Chubbs
+pet(1386),	-- Dread Hatchling
+pet(4172),	-- Cockatoo
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(4204),	-- Ravager Hatchling
+pet(4206),	-- Toy RC Mortar Tank
+pet(4211),	-- Lucky
+pet(4228),	-- Alarming Clockbot
+pet(4229),	-- XS-001 Constructor Bot
+pet(4683),	-- Reven
+pet(4734),	-- Joyous
+
+
+
+
+Missing in PetDB.lua
+
+5.5.0.60481
+pet(4172),	-- Cockatoo
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(4204),	-- Ravager Hatchling
+pet(4206),	-- Toy RC Mortar Tank
+pet(4211),	-- Lucky
+pet(4228),	-- Alarming Clockbot
+pet(4229),	-- XS-001 Constructor Bot
+pet(4683),	-- Reven
+pet(4734),	-- Joyous
+5.5.0.62044
+pet(4850),	-- Sa'bak's Favored

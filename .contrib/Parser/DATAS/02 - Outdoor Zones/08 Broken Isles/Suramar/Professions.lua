@@ -10,9 +10,9 @@ root(ROOTS.Zones, {
 					faction(FACTION_SHALETH, {	-- Sha'leth
 						["creatureID"] = 120459,
 						["coord"] = { 50.6, 49.3, SURAMAR },
-						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
+						["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.6, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time. You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							i(146962, {		-- Golden Minnow
 								-- extra info for the item can go here
 							}),
@@ -41,16 +41,6 @@ root(ROOTS.Zones, {
 					}),
 					i(137845),	-- Design: Maelstrom Band (Rank 3)
 					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode (RECIPE!)
-				}),
-				prof(TAILORING, {
-					q(44741, {	-- Return to Karazhan: The Big Bag Theory
-						["requireSkill"] = TAILORING,
-						["coord"] = { 40.4, 69.4, SURAMAR },
-						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
-						["g"] = {
-							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
-						},
-					}),
 				}),
 			}),
 		}),

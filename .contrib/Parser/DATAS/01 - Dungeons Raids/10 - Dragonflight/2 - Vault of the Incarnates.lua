@@ -298,10 +298,14 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+-- add the added patch here once blizzard stops clowning about old LFR content
+local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2 }
+
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
 		["maps"] = {
 			2119,	-- The Primal Bulwark
 			2120,	-- The Elemental Conclave
@@ -313,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2126,	-- The Clutchwarren
 			2135,	-- Valdrakken
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, {	-- Eranog
@@ -422,97 +426,131 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						16442,	-- Incubation Extermination
 						16451,	-- The Ol Raszle Daszle
 					}},
-					["g"] = {
+					["groups"] = {
 						i(192806),	-- Raging Magmammoth (MOUNT!)
 					},
 				}),
 				-- Awakened
-				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Storms
-					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-				})),
-				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Storms
-					crit(64937, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64938, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64939, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64940, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64941, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64942, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64943, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64944, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(19566, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Storms
-					crit(64945, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64946, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64947, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64948, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64949, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64950, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64951, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
-					}),
-					-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
-					-- crit(64952, {	-- Raszageth the Storm-Eater
-					-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
-					-- }),
-					crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(19564, {	-- Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64929, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64930, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64931, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64932, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64933, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64934, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64935, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64936, {	-- Raszageth the Storm-Eater
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+					},
+				}),
+				ach(19565, {	-- Heroic: Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64937, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64938, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64939, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64940, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64941, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64942, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64943, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64944, {	-- Raszageth the Storm-Eater
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(19566, {	-- Mythic: Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64945, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64946, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64947, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64948, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64949, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64950, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64951, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
+						}),
+						-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
+						-- crit(64952, {	-- Raszageth the Storm-Eater
+						-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+						-- }),
+						crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 				ach(16395),		-- Vaulternative Fashion
 				-- Guild Achievements
 				ach(16356),		-- Vault of the Incarnates Guild Run
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
+			}),
+			o(382621, {	-- Revival Catalyst Console
+				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["coord"] = { 60.6, 53.8, THALDRASZUS },
+				["modelScale"] = 4,
+				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1
+				["groups"] = {
+					Difficulty(DIFFICULTY.RAID.LFR, {
+						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
+						["timeline"] = TIMELINE_LFR}).AddGroups(
+						bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
+						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
+					),
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
+					),
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+						bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
+						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
+					),
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+						bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
+						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
+					),
+				},
 			}),
 			CommonBossDrops(sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(205962, {	-- Echoing Storm Flightstone
@@ -568,133 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { REMOVED_11_0_2 } }, {
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- LFR --
-					["description"] = "The Revival Catalyst is a system that lets you convert LFR Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["bonusID"] = 451 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200413),	-- Drape of the Haunted Frostbrood
-								i(200411),	-- Girdle of the Haunted Frostbrood
-								i(200406),	-- Sabatons of the Haunted Frostbrood
-								i(200412),	-- Vambraces of the Haunted Frostbrood
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200343),	-- Skybound Avenger's Boots
-								i(200350),	-- Skybound Avenger's Cape
-								i(200348),	-- Skybound Avenger's Waistwrap
-								i(200349),	-- Skybound Avenger's Wristbands
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200358),	-- Lost Landcaller's Bindings
-								i(200359),	-- Lost Landcaller's Laena
-								i(200352),	-- Lost Landcaller's Moccasins
-								i(200357),	-- Lost Landcaller's Sash
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200385),	-- Bracers of the Awakened
-								i(200384),	-- Chain of the Awakened
-								i(200386),	-- Shroud of the Awakened
-								i(200379),	-- Treads of the Awakened
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200393),	-- Stormwing Harrier's Belt
-								i(200395),	-- Stormwing Harrier's Plumage
-								i(200388),	-- Stormwing Harrier's Sabatons
-								i(200394),	-- Stormwing Harrier's Wristguards
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200323),	-- Crystal Scholar's Cape
-								i(200321),	-- Crystal Scholar's Cinch
-								i(200322),	-- Crystal Scholar's Cuffs
-								i(200316),	-- Crystal Scholar's Footwraps
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200367),	-- Cuffs of the Waking Fist
-								i(200368),	-- Drape of the Waking Fist
-								i(200361),	-- Gaiters of the Waking Fist
-								i(200366),	-- Girdle of the Waking Fist
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200421),	-- Virtuous Silver Bracers
-								i(200422),	-- Virtuous Silver Cloak
-								i(200420),	-- Virtuous Silver Faulds
-								i(200415),	-- Virtuous Silver Greatboots
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200332),	-- Draconic Hierophant's Drape
-								i(200330),	-- Draconic Hierophant's Sash
-								i(200325),	-- Draconic Hierophant's Slippers
-								i(200331),	-- Draconic Hierophant's Wristbands
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200377),	-- Vault Delver's Camouflage
-								i(200370),	-- Vault Delver's Shinguards
-								i(200376),	-- Vault Delver's Sweatbands
-								i(200375),	-- Vault Delver's Utility Belt
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200403),	-- Cuffs of Infused Earth
-								i(200402),	-- Faulds of Infused Earth
-								i(200404),	-- Greatcloak of Infused Earth
-								i(200397),	-- Treads of Infused Earth
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200339),	-- Scalesworn Cultist's Girdle
-								i(200341),	-- Scalesworn Cultist's Runedrape
-								i(200334),	-- Scalesworn Cultist's Sandals
-								i(200340),	-- Scalesworn Cultist's Wristwraps
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(200424),	-- Boots of the Walking Mountain
-								i(200430),	-- Bracers of the Walking Mountain
-								i(200429),	-- Core of the Walking Mountain
-								i(200431),	-- Drape of the Walking Mountain
-							},
-						}),
-					}),
-				}),
-				-- #endif
+			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -710,7 +622,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					Boss(DIURNA),
 					Boss(RASZAGETH),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
@@ -738,136 +650,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- NORMAL --
-					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 3 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200413),	-- Drape of the Haunted Frostbrood
-								i(200411),	-- Girdle of the Haunted Frostbrood
-								i(200406),	-- Sabatons of the Haunted Frostbrood
-								i(200412),	-- Vambraces of the Haunted Frostbrood
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200343),	-- Skybound Avenger's Boots
-								i(200350),	-- Skybound Avenger's Cape
-								i(200348),	-- Skybound Avenger's Waistwrap
-								i(200349),	-- Skybound Avenger's Wristbands
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200358),	-- Lost Landcaller's Bindings
-								i(200359),	-- Lost Landcaller's Laena
-								i(200352),	-- Lost Landcaller's Moccasins
-								i(200357),	-- Lost Landcaller's Sash
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200385),	-- Bracers of the Awakened
-								i(200384),	-- Chain of the Awakened
-								i(200386),	-- Shroud of the Awakened
-								i(200379),	-- Treads of the Awakened
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200393),	-- Stormwing Harrier's Belt
-								i(200395),	-- Stormwing Harrier's Plumage
-								i(200388),	-- Stormwing Harrier's Sabatons
-								i(200394),	-- Stormwing Harrier's Wristguards
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200323),	-- Crystal Scholar's Cape
-								i(200321),	-- Crystal Scholar's Cinch
-								i(200322),	-- Crystal Scholar's Cuffs
-								i(200316),	-- Crystal Scholar's Footwraps
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200367),	-- Cuffs of the Waking Fist
-								i(200368),	-- Drape of the Waking Fist
-								i(200361),	-- Gaiters of the Waking Fist
-								i(200366),	-- Girdle of the Waking Fist
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200421),	-- Virtuous Silver Bracers
-								i(200422),	-- Virtuous Silver Cloak
-								i(200420),	-- Virtuous Silver Faulds
-								i(200415),	-- Virtuous Silver Greatboots
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200332),	-- Draconic Hierophant's Drape
-								i(200330),	-- Draconic Hierophant's Sash
-								i(200325),	-- Draconic Hierophant's Slippers
-								i(200331),	-- Draconic Hierophant's Wristbands
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200377),	-- Vault Delver's Camouflage
-								i(200370),	-- Vault Delver's Shinguards
-								i(200376),	-- Vault Delver's Sweatbands
-								i(200375),	-- Vault Delver's Utility Belt
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200403),	-- Cuffs of Infused Earth
-								i(200402),	-- Faulds of Infused Earth
-								i(200404),	-- Greatcloak of Infused Earth
-								i(200397),	-- Treads of Infused Earth
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200339),	-- Scalesworn Cultist's Girdle
-								i(200341),	-- Scalesworn Cultist's Runedrape
-								i(200334),	-- Scalesworn Cultist's Sandals
-								i(200340),	-- Scalesworn Cultist's Wristwraps
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(200424),	-- Boots of the Walking Mountain
-								i(200430),	-- Bracers of the Walking Mountain
-								i(200429),	-- Core of the Walking Mountain
-								i(200431),	-- Drape of the Walking Mountain
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200225),	-- Shard of the Greatstaff
 						},
 					}),
@@ -901,139 +687,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- HEROIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Vault of the Incarnates Raid into your class' Heroic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["bonusID"] = 1 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200413),	-- Drape of the Haunted Frostbrood
-								i(200411),	-- Girdle of the Haunted Frostbrood
-								i(200406),	-- Sabatons of the Haunted Frostbrood
-								i(200412),	-- Vambraces of the Haunted Frostbrood
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200343),	-- Skybound Avenger's Boots
-								i(200350),	-- Skybound Avenger's Cape
-								i(200348),	-- Skybound Avenger's Waistwrap
-								i(200349),	-- Skybound Avenger's Wristbands
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200358),	-- Lost Landcaller's Bindings
-								i(200359),	-- Lost Landcaller's Laena
-								i(200352),	-- Lost Landcaller's Moccasins
-								i(200357),	-- Lost Landcaller's Sash
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200385),	-- Bracers of the Awakened
-								i(200384),	-- Chain of the Awakened
-								i(200386),	-- Shroud of the Awakened
-								i(200379),	-- Treads of the Awakened
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200393),	-- Stormwing Harrier's Belt
-								i(200395),	-- Stormwing Harrier's Plumage
-								i(200388),	-- Stormwing Harrier's Sabatons
-								i(200394),	-- Stormwing Harrier's Wristguards
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200323),	-- Crystal Scholar's Cape
-								i(200321),	-- Crystal Scholar's Cinch
-								i(200322),	-- Crystal Scholar's Cuffs
-								i(200316),	-- Crystal Scholar's Footwraps
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200367),	-- Cuffs of the Waking Fist
-								i(200368),	-- Drape of the Waking Fist
-								i(200361),	-- Gaiters of the Waking Fist
-								i(200366),	-- Girdle of the Waking Fist
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200421),	-- Virtuous Silver Bracers
-								i(200422),	-- Virtuous Silver Cloak
-								i(200420),	-- Virtuous Silver Faulds
-								i(200415),	-- Virtuous Silver Greatboots
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200332),	-- Draconic Hierophant's Drape
-								i(200330),	-- Draconic Hierophant's Sash
-								i(200325),	-- Draconic Hierophant's Slippers
-								i(200331),	-- Draconic Hierophant's Wristbands
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200377),	-- Vault Delver's Camouflage
-								i(200370),	-- Vault Delver's Shinguards
-								i(200376),	-- Vault Delver's Sweatbands
-								i(200375),	-- Vault Delver's Utility Belt
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200403),	-- Cuffs of Infused Earth
-								i(200402),	-- Faulds of Infused Earth
-								i(200404),	-- Greatcloak of Infused Earth
-								i(200397),	-- Treads of Infused Earth
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200339),	-- Scalesworn Cultist's Girdle
-								i(200341),	-- Scalesworn Cultist's Runedrape
-								i(200334),	-- Scalesworn Cultist's Sandals
-								i(200340),	-- Scalesworn Cultist's Wristwraps
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(200424),	-- Boots of the Walking Mountain
-								i(200430),	-- Bracers of the Walking Mountain
-								i(200429),	-- Core of the Walking Mountain
-								i(200431),	-- Drape of the Walking Mountain
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				CommonBossDrops({
 					ig(200686),	-- Primal Focus
 				}),
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200226),	-- Shard of the Greatstaff
 						},
 					}),
@@ -1049,139 +709,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				Boss(RASZAGETH),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- MYTHIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Vault of the Incarnates Raid into your class' Mythic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["bonusID"] = 450 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200413),	-- Drape of the Haunted Frostbrood
-								i(200411),	-- Girdle of the Haunted Frostbrood
-								i(200406),	-- Sabatons of the Haunted Frostbrood
-								i(200412),	-- Vambraces of the Haunted Frostbrood
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200343),	-- Skybound Avenger's Boots
-								i(200350),	-- Skybound Avenger's Cape
-								i(200348),	-- Skybound Avenger's Waistwrap
-								i(200349),	-- Skybound Avenger's Wristbands
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200358),	-- Lost Landcaller's Bindings
-								i(200359),	-- Lost Landcaller's Laena
-								i(200352),	-- Lost Landcaller's Moccasins
-								i(200357),	-- Lost Landcaller's Sash
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200385),	-- Bracers of the Awakened
-								i(200384),	-- Chain of the Awakened
-								i(200386),	-- Shroud of the Awakened
-								i(200379),	-- Treads of the Awakened
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200393),	-- Stormwing Harrier's Belt
-								i(200395),	-- Stormwing Harrier's Plumage
-								i(200388),	-- Stormwing Harrier's Sabatons
-								i(200394),	-- Stormwing Harrier's Wristguards
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200323),	-- Crystal Scholar's Cape
-								i(200321),	-- Crystal Scholar's Cinch
-								i(200322),	-- Crystal Scholar's Cuffs
-								i(200316),	-- Crystal Scholar's Footwraps
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200367),	-- Cuffs of the Waking Fist
-								i(200368),	-- Drape of the Waking Fist
-								i(200361),	-- Gaiters of the Waking Fist
-								i(200366),	-- Girdle of the Waking Fist
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200421),	-- Virtuous Silver Bracers
-								i(200422),	-- Virtuous Silver Cloak
-								i(200420),	-- Virtuous Silver Faulds
-								i(200415),	-- Virtuous Silver Greatboots
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200332),	-- Draconic Hierophant's Drape
-								i(200330),	-- Draconic Hierophant's Sash
-								i(200325),	-- Draconic Hierophant's Slippers
-								i(200331),	-- Draconic Hierophant's Wristbands
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200377),	-- Vault Delver's Camouflage
-								i(200370),	-- Vault Delver's Shinguards
-								i(200376),	-- Vault Delver's Sweatbands
-								i(200375),	-- Vault Delver's Utility Belt
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200403),	-- Cuffs of Infused Earth
-								i(200402),	-- Faulds of Infused Earth
-								i(200404),	-- Greatcloak of Infused Earth
-								i(200397),	-- Treads of Infused Earth
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200339),	-- Scalesworn Cultist's Girdle
-								i(200341),	-- Scalesworn Cultist's Runedrape
-								i(200334),	-- Scalesworn Cultist's Sandals
-								i(200340),	-- Scalesworn Cultist's Wristwraps
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(200424),	-- Boots of the Walking Mountain
-								i(200430),	-- Bracers of the Walking Mountain
-								i(200429),	-- Core of the Walking Mountain
-								i(200431),	-- Drape of the Walking Mountain
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				CommonBossDrops({
 					ig(190455),	-- Concentrated Primal Focus
 				}),
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200227),	-- Shard of the Greatstaff
 						},
 					}),
@@ -1226,73 +760,78 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					ach(16358),		-- Mythic: Raszageth the Storm-Eater Guild Run
 					ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
-					ach(17116, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
+					ach(17116, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
-					})),
-					ach(17118, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
+					}),
+					ach(17118, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
-					})),
+					}),
 				}),
 			}),
 		},
 	}),
-})));
+}))
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
-		q(72264),	-- 'Anicent Vault Artifact' first drop per week
-		q(72612),	-- Volcanius (trash)
-		q(70076),	-- Eranog (N)
-		q(70085),	-- Eranog (N)
-		q(72265),	-- Eranog (N)
-		q(70093),	-- Eranog (H)
-		q(70102),	-- Eranog (M)
-		q(72613),	-- Braekkas (trash)
-		q(72614),	-- Council Gauntlet (trash)
-		q(70080),	-- Terros (N)
-		q(70088),	-- Terros (N)
-		q(72273),	-- Terros (N)
-		q(70096),	-- Terros (H)
-		q(70105),	-- Terros (M)
-		q(70077),	-- The Primal Council (N)
-		q(70086),	-- The Primal Council (N)
-		q(72271),	-- The Primal Council (N)
-		q(70094),	-- The Primal Council (H)
-		q(70103),	-- The Primal Council (M)
-		q(72615),	-- Thondrozus (trash)
-		q(70078),	-- Dathea (N)
-		q(70087),	-- Dathea (N)
-		q(72272),	-- Dathea (N)
-		q(70095),	-- Dathea (H)
-		q(70104),	-- Dathea (M)
-		q(72616),	-- Iskakx (trash)
-		q(72617),	-- Kaurdyth (trash)
-		q(70081),	-- Sennarth (N)
-		q(70089),	-- Sennarth (N)
-		q(72274),	-- Sennarth (N)
-		q(70097),	-- Sennarth (H)
-		q(70106),	-- Sennarth (M)
-		q(70082),	-- Kurog Grimtotem (N)
-		q(70090),	-- Kurog Grimtotem (N)
-		q(72275),	-- Kurog Grimtotem (N)
-		q(70098),	-- Kurog Grimtotem (H)
-		q(70107),	-- Kurog Grimtotem (M)
-		q(72618),	-- Broodguardian Ziruss (trash)
-		q(70083),	-- Broodkeeper Diurna (N)
-		q(70091),	-- Broodkeeper Diurna (N)
-		q(72276),	-- Broodkeeper Diurna (N)
-		q(70099),	-- Broodkeeper Diurna (H)
-		q(70108),	-- Broodkeeper Diurna (M)
-		q(70084),	-- Raszageth the Storm-Eater (N)
-		q(70092),	-- Raszageth the Storm-Eater (N)
-		q(72277),	-- Raszageth the Storm-Eater (N)
-		q(70101),	-- Raszageth the Storm-Eater (H)
-		q(70109),	-- Raszageth the Storm-Eater (M)
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
+		["groups"] = {
+			q(72264),	-- 'Anicent Vault Artifact' first drop per week
+			q(72612),	-- Volcanius (trash)
+			q(70076),	-- Eranog (N)
+			q(70085),	-- Eranog (N)
+			q(72265),	-- Eranog (N)
+			q(70093),	-- Eranog (H)
+			q(70102),	-- Eranog (M)
+			q(72613),	-- Braekkas (trash)
+			q(72614),	-- Council Gauntlet (trash)
+			q(70080),	-- Terros (N)
+			q(70088),	-- Terros (N)
+			q(72273),	-- Terros (N)
+			q(70096),	-- Terros (H)
+			q(70105),	-- Terros (M)
+			q(70077),	-- The Primal Council (N)
+			q(70086),	-- The Primal Council (N)
+			q(72271),	-- The Primal Council (N)
+			q(70094),	-- The Primal Council (H)
+			q(70103),	-- The Primal Council (M)
+			q(72615),	-- Thondrozus (trash)
+			q(70078),	-- Dathea (N)
+			q(70087),	-- Dathea (N)
+			q(72272),	-- Dathea (N)
+			q(70095),	-- Dathea (H)
+			q(70104),	-- Dathea (M)
+			q(72616),	-- Iskakx (trash)
+			q(72617),	-- Kaurdyth (trash)
+			q(70081),	-- Sennarth (N)
+			q(70089),	-- Sennarth (N)
+			q(72274),	-- Sennarth (N)
+			q(70097),	-- Sennarth (H)
+			q(70106),	-- Sennarth (M)
+			q(70082),	-- Kurog Grimtotem (N)
+			q(70090),	-- Kurog Grimtotem (N)
+			q(72275),	-- Kurog Grimtotem (N)
+			q(70098),	-- Kurog Grimtotem (H)
+			q(70107),	-- Kurog Grimtotem (M)
+			q(72618),	-- Broodguardian Ziruss (trash)
+			q(70083),	-- Broodkeeper Diurna (N)
+			q(70091),	-- Broodkeeper Diurna (N)
+			q(72276),	-- Broodkeeper Diurna (N)
+			q(70099),	-- Broodkeeper Diurna (H)
+			q(70108),	-- Broodkeeper Diurna (M)
+			q(70084),	-- Raszageth the Storm-Eater (N)
+			q(70092),	-- Raszageth the Storm-Eater (N)
+			q(72277),	-- Raszageth the Storm-Eater (N)
+			q(70101),	-- Raszageth the Storm-Eater (H)
+			q(70109),	-- Raszageth the Storm-Eater (M)
+		},
 	}),
-})));
+}))

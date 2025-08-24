@@ -334,6 +334,10 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 		return ExplorationAreaPositionDB[t.explorationID];
 	end,
 });
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+end)
 
 -- Reporting
 local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
@@ -341,6 +345,7 @@ local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
 	local keyid = tonumber(key)
 	local name
 	while id < 25000 do
+		-- ref. https://wago.tools/db2/AreaTable
 		name = C_Map_GetAreaInfo(id)
 		if name then
 			t[name] = id
@@ -386,10 +391,16 @@ local function PrintDiscordInformationForExploration(o)
 		y = math_floor(y * 1000) / 10
 		coord = x .. ", " .. y;
 	end
-	if not x or not y then app.PrintDebug("Area has no valid coords on mapID",mapID) return end
+	if not x or not y then app.print("Area",areaID,"has no valid coords on mapID",mapID) end
 
-	local luaFormat = "visit_exploration(%d,{coord={%.1f,%.1f,%d}}),\t-- %s"
-	tinsert(info, luaFormat:format(areaID,x or 0,y or 0,mapID,text));
+	local luaFormat
+	if not IsInInstance() then
+		luaFormat = "visit_exploration(%d,{coord={%.1f,%.1f,%d}}),\t-- %s"
+		tinsert(info, luaFormat:format(areaID,x or 0,y or 0,mapID,text));
+	else
+		luaFormat = "visit_exploration(%d),\t-- %s"
+		tinsert(info, luaFormat:format(areaID,text));
+	end
 	tinsert(info, "");
 	tinsert(info, "areaID: " .. (areaID or "??"));
 	tinsert(info, "mapID: " .. (mapID or "??"));
@@ -425,10 +436,10 @@ local function CacheAndUpdateExploration(explorationIDTable)
 	end
 	RefreshExplorationData(rawAreaIDdata)
 end
-local function GetExplorationBySubzone()
+local function GetExplorationBySubzone(mapID)
 	local subzone = GetSubZoneText()
 	if subzone and subzone ~= "" then
-		local mapObject = app.SearchForObject("mapID",app.RealMapID,"key")
+		local mapObject = app.SearchForObject("mapID",mapID,"key")
 		if mapObject and mapObject.g then
 			for _,o in ipairs(mapObject.g) do
 				if o.headerID == app.HeaderConstants.EXPLORATION and o.g then
@@ -443,20 +454,47 @@ local function GetExplorationBySubzone()
 		end
 		if not app.Contributor then return end
 		local expectedAreaID = AreaIDNameMapper[subzone]
+		if not expectedAreaID then return end
 		-- don't report an area which is actually mapped in another zone already
-		if not app.SearchForObject("explorationID", expectedAreaID) then
-			local e = app.CreateExploration(expectedAreaID, { mapID = app.RealMapID, name = subzone})
+		local mappedExploration = app.SearchForObject("explorationID", expectedAreaID)
+		-- app.PrintDebug("mappedExploration",mappedExploration,mappedExploration and mappedExploration.__type)
+		-- not in ATT at all
+		if not mappedExploration then
+			local e = app.CreateExploration(expectedAreaID, { mapID = mapID, name = subzone})
 			PrintDiscordInformationForExploration(e);
 			return e
+		-- in ATT as NYI or Unsorted
+		elseif mappedExploration._missing or app.GetRelativeValue(mappedExploration, "_nyi") then
+			-- inject some data into the exploration object so we can report about it properly
+			mappedExploration.mapID = mapID
+			mappedExploration.name = subzone
+			PrintDiscordInformationForExploration(mappedExploration);
+		else
+			-- local explorationMapID = app.GetRelativeValue(mappedExploration, "mapID")
+			-- in ATT under a different map
+			-- dont want this... areas don't match maps in all cases
+			-- if explorationMapID and explorationMapID ~= mapID then
+			-- 	app.print("Found exploration area",
+			-- 		expectedAreaID,
+			-- 		app:SearchLink(mappedExploration),
+			-- 		"but it's linked to a different map!",
+			-- 		explorationMapID,
+			-- 		app:RawSearchLink("mapID",explorationMapID))
+			-- end
+			-- in ATT without coords, likely means it can't be detected in API since it would be populated
+			if C_Map_GetPlayerMapPosition(mapID, "player") and not mappedExploration.coords then
+				PrintDiscordInformationForExploration(mappedExploration);
+			end
 		end
+		return mappedExploration
 	end
 end
-local function CheckIfExplorationIsMissing()
+local function CheckIfExplorationIsMissing(mapID)
 	-- do a manual check by way of the sub-zone name (since this is what correlates to the exploration name players see in ATT)
 	-- we will provide a manual collection by way of exact player position having a specific subzone name when performing a check
-	local explorationForSubzone = GetExplorationBySubzone()
+	local explorationForSubzone = GetExplorationBySubzone(mapID)
 	if explorationForSubzone then
-		-- app.PrintDebug("SubzoneExplorationFind",mapID,pos.x,pos.y,app:SearchLink(explorationForSubzone))
+		-- app.PrintDebug("SubzoneExplorationFind",explorationForSubzone,app:SearchLink(explorationForSubzone))
 		local areaID = explorationForSubzone.explorationID
 		local characterExploration = app.CurrentCharacter.Exploration
 		-- don't know how areaID could be nil here...
@@ -472,13 +510,16 @@ end
 local function CheckExplorationForPlayerPosition()
 	local mapID = C_Map_GetBestMapForUnit("player");
 	if not mapID then return; end
-	-- instances don't contain areas
-	if IsInInstance() then return end
-	CheckIfExplorationIsMissing()
+	-- instances don't contain areas -- well technically they can, but they won't have coords
+	-- if IsInInstance() then return end
+	CheckIfExplorationIsMissing(mapID)
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 	if not pos then return; end
 	local areaIDs = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 	if not areaIDs then return end;
+
+	-- test manually:
+	-- /dump C_MapExplorationInfo.GetExploredAreaIDsAtPosition(ATTC.RealMapID, C_Map.GetPlayerMapPosition(ATTC.RealMapID, "player"))
 
 	local characterExploration = app.CurrentCharacter.Exploration
 	local newAreas = {};
@@ -516,9 +557,16 @@ else
 	app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
 end
 app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLocation)
+local MapExplorationEventIDs = {
+	[372] = true,
+	[396] = true,
+	[408] = true,
+}
 app.AddEventRegistration("UI_INFO_MESSAGE", function(messageID, ...)
-	-- app.PrintDebug("UI_INFO_MESSAGE", messageID, ...)
-	if messageID == 372 or messageID == 396 then CheckExplorationForCurrentLocation(); end
+	if MapExplorationEventIDs[messageID] then
+		-- app.PrintDebug("UI_INFO_MESSAGE", messageID, ...)
+		CheckExplorationForCurrentLocation()
+	end
 end)
 --
 app.ChatCommands.Add("realtime-exploration-check", function(args)
@@ -780,7 +828,7 @@ local function HarvestExploration()
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		-- only check exploration on Zone maps where we have a raw map listed in ATT
 		local mapInfo = C_Map_GetMapInfo(mapID)
-		if mapInfo and mapInfo.mapType == 3 and C_Map_GetMapArtID(mapID) and app.SearchForObject("mapID",mapID,"key") then
+		if mapInfo and (mapInfo.mapType == 3 or mapInfo.mapType == 6) and C_Map_GetMapArtID(mapID) and app.SearchForObject("mapID",mapID,"key") then
 			app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
 			local ok, any, hits = pcall(GenerateHitsForMap, grid, mapID);
@@ -820,7 +868,7 @@ local function HarvestExploration()
 							end
 						else
 							byExplorationID = {};
-							explorationHeader = app.CreateNPC(app.HeaderConstants.EXPLORATION);
+							explorationHeader = app.CreateCustomHeader(app.HeaderConstants.EXPLORATION);
 							explorationHeader.ByExplorationID = byExplorationID;
 							explorationHeader.g = {};
 							explorationHeader.u = object.u;
@@ -961,10 +1009,11 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		t.isMinilistHeader = isHeader
 		return isHeader
 	end,
+	SortType = function(t) return "MapClassSortType" end,
 },
 "WithHeader", {
 	["name"] = function(t)
-		return app.NPCNameFromID[t.headerID] or GetMapName(t.mapID);
+		return L.HEADER_NAMES[t.headerID] or GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
 		return L.HEADER_ICONS[t.headerID] or app.asset("Category_Zones");
@@ -975,11 +1024,11 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 	["description"] = function(t)
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
+	["ShouldShowEventSchedule"] = app.ReturnTrue,
 }, (function(t)
-	local creatureID = t.creatureID or t.npcID;
+	local creatureID = t.npcID
 	if creatureID and creatureID < 0 then
 		t.headerID = creatureID;
-		t.creatureID = nil;
 		t.npcID = nil;
 		return true;
 	elseif t.headerID then
@@ -1014,8 +1063,7 @@ local instanceFields = {
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		local mapID = t.mapID;
-		return mapID and GetMapName(mapID);
+		return GetMapName(t.mapID);
 	end,
 	["icon"] = function(t)
 		return app.asset("Category_Zones");
@@ -1066,21 +1114,23 @@ if EJ_GetInstanceInfo and app.GameBuildVersion >= 50000 then
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
 		local name, lore, _, _, _, icon, _, link = EJ_GetInstanceInfo(id);
-		_t.name = name;
-		_t.lore = lore;
-		_t.icon = icon;
-		_t.link = link;
+		if name then _t.name = name; end
+		if lore then _t.lore = lore; end
+		if icon then _t.icon = icon; end
+		if link then _t.link = link; end
 		if field then return _t[field]; end
 	end
-	instanceFields.icon = function(t) return cache.GetCachedField(t, "icon", CacheInfo); end;
-	instanceFields.name = function(t) return cache.GetCachedField(t, "name", CacheInfo); end;
+	local oldIconField = instanceFields.icon;
+	local oldNameField = instanceFields.name;
+	instanceFields.icon = function(t) return cache.GetCachedField(t, "icon", CacheInfo) or oldIconField(t); end;
+	instanceFields.name = function(t) return cache.GetCachedField(t, "name", CacheInfo) or oldNameField(t); end;
 	instanceFields.lore = function(t) return cache.GetCachedField(t, "lore", CacheInfo); end;
 	instanceFields.silentLink = function(t) return cache.GetCachedField(t, "link", CacheInfo); end;
 end
 app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 "WithHeader", {
 	["name"] = function(t)
-		return app.NPCNameFromID[t.headerID] or instanceFields.name(t);
+		return L.HEADER_NAMES[t.headerID] or instanceFields.name(t);
 	end,
 	["icon"] = function(t)
 		return L.HEADER_ICONS[t.headerID] or app.asset("Category_Zones");
@@ -1095,10 +1145,9 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 	if t.headerID then
 		return true;
 	else
-		local creatureID = t.creatureID or t.npcID;
+		local creatureID = t.npcID
 		if creatureID and creatureID < 0 then
 			t.headerID = creatureID;
-			t.creatureID = nil;
 			t.npcID = nil;
 			return true;
 		end

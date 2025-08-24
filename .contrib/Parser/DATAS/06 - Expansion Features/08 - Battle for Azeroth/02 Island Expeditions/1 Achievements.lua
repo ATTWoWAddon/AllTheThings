@@ -37,7 +37,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					13141,	-- Island Slayer
 				}},
 				--#endif
-				["g"] = {
+				["groups"] = {
 					title(382),	-- Expedition Leader
 				},
 			})),
@@ -508,7 +508,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 			ach(13133, {	-- Team Deathmatch (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(42069, {	-- Gazlowe
 						["crs"] = { 134997 },
 					}),
@@ -585,7 +585,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 			ach(13135, {	-- Team Deathmatch (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(42087, {	-- Briona the Bloodthirsty
 						["crs"] = { 135248 },
 					}),

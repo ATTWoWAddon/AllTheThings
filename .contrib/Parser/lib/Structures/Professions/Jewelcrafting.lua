@@ -536,6 +536,38 @@ COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 		["requireSkill"] = JEWELCRAFTING,
 	}),
 };
+MOP_EPIC_GEM_RECIPES = sharedData({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136274, {	-- Assassin's Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+	r(122675),	-- Bold Serpent's Eye
+	r(122676),	-- Brilliant Serpent's Eye
+	r(122674),	-- Delicate Serpent's Eye
+	r(122685),	-- Flashing Serpent's Eye
+	r(122684),	-- Fractured Serpent's Eye
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136270, {	-- Lucent Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136275, {	-- Mysterious Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+	r(122683),	-- Precise Serpent's Eye
+	r(122682),	-- Quick Serpent's Eye
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136269, {	-- Resplendent Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+	r(122681),	-- Rigid Serpent's Eye
+	r(122680),	-- Smooth Serpent's Eye
+	r(122678),	-- Solid Serpent's Eye
+	r(122677),	-- Sparkling Serpent's Eye
+	r(122679),	-- Subtle Serpent's Eye
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136273, {	-- Tense Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, r(136272, {	-- Willful Serpent's Eye
+		["timeline"] = { ADDED_5_2_0 },
+	})),
+});
 BFA_JEWELCRAFTING = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(382973, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Prospecting
 	r(287272, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Recalibration
@@ -608,7 +640,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timel
 		r(294793),	-- Notorious Combatant's Intuitive Staff
 	}),
 }));
-SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
 	r(325248),	-- Shadowlands Prospecting \\ Prospecting
 	r(311953),	-- Mass Prospect Elethium

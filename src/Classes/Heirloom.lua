@@ -6,10 +6,9 @@ local L = app.L
 local contains, SearchForObject, AssignChildren
 	= app.contains, app.SearchForObject, app.AssignChildren
 
-local NestObject, SearchForField
+local NestObject
 app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
-	SearchForField = app.SearchForField
 end)
 
 -- Global locals
@@ -18,7 +17,6 @@ local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tost
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
-local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- Class locals
@@ -29,7 +27,6 @@ local ATTAccountWideData
 -- Heirloom Lib
 do
 	local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
-	local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
 	local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
 	local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
 
@@ -51,9 +48,9 @@ do
 
 	--]]---------------------------------------------------
 	-- Some heirlooms unlock within a 'group' for a given heirloom unlock
-	local HigherTierUnlocks = {
+	-- local HigherTierUnlocks = {
 
-	}
+	-- }
 	local function HasHigherHeirloomUnlockIDSaved(itemID)
 	end
 	local CreateHeirloomUnlock = app.CreateClass("HeirloomUnlock", "heirloomUnlockID", {
@@ -140,10 +137,6 @@ do
 	local createHeirloom = app.ExtendClass("Item", "Heirloom", "itemID", {
 		IsClassIsolated = true,
 		heirloomID = function(t) return t.itemID; end,
-		-- TODO: use typical caching for this, inherit from Item cache somehow?
-		icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or GetItemIcon(t.itemID); end,
-		link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
-		name = function(t) return GetItemInfo(t.itemID); end,
 		b = function(t) return 2 end,
 		collectibleAsCost = app.ReturnFalse,
 		isWeapon = hierloomLevelFields.isWeapon,
@@ -251,27 +244,25 @@ do
 		-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
 		-- Kinda would rather us have the Heirloom as a cost/provider for the actual Unlock and list the raw Unlocks
 		-- under Character > Heirlooms... hmmmm
-		local heirloom, upgrades = nil, nil;
-		-- TODO: if Classic uses this Module there's not yet support to properly return a merged object based on multiple sources
-		local MergedObject = app.MergedObject or function(t) return t[1] or t end
+		local heirloom, upgrades = nil, nil
 		for itemID,_ in pairs(heirloomIDs) do
-			heirloom = MergedObject(SearchForObject("itemID", itemID, "field", true))
+			heirloom = SearchForObject("itemID", itemID, "field")
 			if heirloom then
 				upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
 				if upgrades and upgrades > 0 then
-					local meta = { __index = heirloom };
 					local tokenType = heirloom.isWeapon and weaponTokens or armorTokens;
 					for i=1,upgrades,1 do
 						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
 						tinsert(tokenType[upgrades + 1 - i].g,
-						setmetatable({ collectible = false, g = {
-							CreateHeirloomLevel(itemID, {
-								levelMax = upgrades,
-								level = i,
-								e = heirloom.e,
-								u = heirloom.u,
+							app.CreateNonCollectibleWithGroups(heirloom, {
+								CreateHeirloomLevel(itemID, {
+									levelMax = upgrades,
+									level = i,
+									e = heirloom.e,
+									u = heirloom.u,
+								})
 							})
-						}}, meta));
+						)
 					end
 				end
 			end
@@ -280,34 +271,36 @@ do
 		-- build groups for each upgrade token
 		-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 		-- where the sources of the upgrade tokens exist
+		local token
 		for i,item in ipairs(armorTokens) do
-			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-				-- ensure the tokens do not have a modID attached
-				token.modID = nil;
-				token.modItemID = nil;
-				if not token.sym then
-					for _,heirloom in ipairs(item.g) do
-						NestObject(token, heirloom, true);
-					end
-					AssignChildren(token);
-				end
+			token = SearchForObject("headerID", item.itemID, "field")
+			for _,heirloom in ipairs(item.g) do
+				NestObject(token, heirloom, true)
+			end
+			AssignChildren(token)
+
+			-- ensure the tokens do not have a modID attached
+			for _,token in ipairs(SearchForObject("itemID", item.itemID, "field", true)) do
+				token.modID = nil
+				token.modItemID = nil
 			end
 		end
 		for i,item in ipairs(weaponTokens) do
-			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-				-- ensure the tokens do not have a modID attached
-				token.modID = nil;
-				token.modItemID = nil;
-				if not token.sym then
-					for _,heirloom in ipairs(item.g) do
-						NestObject(token, heirloom, true);
-					end
-					AssignChildren(token);
-				end
+			token = SearchForObject("headerID", item.itemID, "field")
+			for _,heirloom in ipairs(item.g) do
+				NestObject(token, heirloom, true)
+			end
+			AssignChildren(token)
+
+			-- ensure the tokens do not have a modID attached
+			for _,token in ipairs(SearchForObject("itemID", item.itemID, "field", true)) do
+				token.modID = nil
+				token.modItemID = nil
 			end
 		end
 
 		heirloomIDs = nil
+		app.CreateHeirloom = createHeirloom
 	end
 
 	if C_Heirloom_GetHeirloomMaxUpgradeLevel then

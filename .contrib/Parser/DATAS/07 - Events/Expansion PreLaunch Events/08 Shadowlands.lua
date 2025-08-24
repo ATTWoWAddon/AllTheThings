@@ -22,211 +22,211 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["lvl"] = { 50 },
 			}),
 			q(60116, {	-- Cause for Distraction (A)
-				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
-				["qg"] = 167329,	-- Genn Greymane
 				["sourceQuest"] = 60113,	-- An Urgent Request (A)
+				["qg"] = 167329,	-- Genn Greymane
+				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
 				["lvl"] = { 50 },
 			}),
 			q(60669, {	-- Cause for Distraction (H)
-				["coord"] = { 49.2, 73.7, ORGRIMMAR },
-				["qg"] = 169928,	-- Lor'themar Theron
 				["sourceQuest"] = 60115,	-- An Urgent Request (H)
+				["qg"] = 169928,	-- Lor'themar Theron
+				["coord"] = { 49.2, 73.7, ORGRIMMAR },
 				["lvl"] = { 50 },
 			}),
 			q(60117, {	-- Return of the Crusade (A)
-				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
-				["qg"] = 167329,	-- Genn Greymane
 				["sourceQuest"] = 60116,	-- Cause for Distraction (A)
+				["qg"] = 167329,	-- Genn Greymane
+				["coord"] = { 39.4, 64.1, STORMWIND_CITY },
 				["lvl"] = { 50 },
 			}),
 			q(60670, {	-- Return of the Crusade (H)
-				["coord"] = { 49.2, 73.7, ORGRIMMAR },
-				["qg"] = 169928,	-- Lor'themar Theron
 				["sourceQuest"] = 60669,	-- Cause for Distraction (H)
+				["qg"] = 169928,	-- Lor'themar Theron
+				["coord"] = { 49.2, 73.7, ORGRIMMAR },
 				["lvl"] = { 50 },
 			}),
 			q(59876, {	-- Field Reports (A)
-				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["qg"] = 166383,	-- Commander Gregor
 				["sourceQuest"] = 60117,	-- Return of the Crusade (A)
+				["qg"] = 166383,	-- Commander Gregor
+				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(177958),	-- Duskwood Report (QI!)
 					i(177960),	-- Elwynn Report (QI!)
 					i(177959),	-- Redridge Report (QI!)
 				},
 			}),
 			q(60725, {	-- Field Reports (H)
-				["coord"] = { 52.9, 77.3, ORGRIMMAR },
-				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60670,	-- Return of the Crusade (H)
+				["qg"] = 169878,	-- Commander Throgg
+				["coord"] = { 52.9, 77.3, ORGRIMMAR },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(180232),	-- Dranosh'ar Blockade Report (QI!)
 					i(180233),	-- Far Watch Post Report (QI!)
 					i(180231),	-- Razor Hill Report (QI!)
 				},
 			}),
 			q(60766, {	-- Damned Intruders (A)
-				["coord"] = { 73.50, 47.20, DUSKWOOD },
-				["qg"] = 166184,	-- Lieutenant Vernon
 				["sourceQuest"] = 59876,	-- Field Reports (A)
+				["qg"] = 166184,	-- Lieutenant Vernon
+				["coord"] = { 73.50, 47.20, DUSKWOOD },
 				["lvl"] = { 50 },
 			}),
 			q(60759, {	-- Damned Intruders (H)
-				["coord"] = { 49.5, 59.4, NORTHERN_BARRENS },
-				["qg"] = 170084,	-- Lieutenant Althera
 				["sourceQuest"] = 60725,	-- Field Reports (H)
+				["qg"] = 170084,	-- Lieutenant Althera
+				["coord"] = { 49.5, 59.4, NORTHERN_BARRENS },
 				["lvl"] = { 50 },
 			}),
 			q(60767, {	-- Return of the Scourge (A)
-				["coord"] = { 73.50, 47.20, DUSKWOOD },
-				["qg"] = 166184,	-- Lieutenant Vernon
 				["sourceQuest"] = 60766,	-- Damned Intruders (A)
+				["qg"] = 166184,	-- Lieutenant Vernon
+				["coord"] = { 73.50, 47.20, DUSKWOOD },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(178170),	-- Vernon's Field Report (QI!)
 				},
 			}),
 			q(60761, {	-- Return of the Scourge (H)
-				["coord"] = { 49.4, 59.3, NORTHERN_BARRENS },
-				["qg"] = 170084,	-- Lieutenant Althera
 				["sourceQuest"] = 60759,	-- Damned Intruders (H)
+				["qg"] = 170084,	-- Lieutenant Althera
+				["coord"] = { 49.4, 59.3, NORTHERN_BARRENS },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(180269),	-- Althera's Field Report (QI!)
 				},
 			}),
 			q(61486, {	-- The Banshee's Champion (A)
-				["coord"] = { 65.55, 77.0, STORMWIND_CITY },
-				["qg"] = 172510,	-- Light's Hope Messenger
 				["sourceQuest"] = 60767,	-- Return of the Scourge (A)
+				["qg"] = 172510,	-- Light's Hope Messenger
+				["coord"] = { 65.55, 77.0, STORMWIND_CITY },
 				["lvl"] = { 50 },
 			}),
 			q(61488, {	-- The Banshee's Champion (H)
-				["coord"] = { 53.0, 77.0, ORGRIMMAR },
-				["qg"] = 172514,	-- Light's Hope Messenger
 				["sourceQuest"] = 60761,	-- Return of the Scourge (H)
+				["qg"] = 172514,	-- Light's Hope Messenger
+				["coord"] = { 53.0, 77.0, ORGRIMMAR },
 				["lvl"] = { 50 },
 			}),
 			q(59877, {	-- A Message from Icecrown (A)
-				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["qg"] = 166383,	-- Commander Gregor
 				["sourceQuest"] = 60767,	-- Return of the Scourge (A)
+				["qg"] = 166383,	-- Commander Gregor
+				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
 				["lvl"] = { 50 },
 			}),
 			q(60727, {	-- A Message from Icecrown (H)
-				["coord"] = { 52.9, 77.2, ORGRIMMAR },
-				["qg"] = 169878,	-- Commander Throgg
 				["sourceQuest"] = 60761,	-- Return of the Scourge (H)
+				["qg"] = 169878,	-- Commander Throgg
+				["coord"] = { 52.9, 77.2, ORGRIMMAR },
 				["lvl"] = { 50 },
 			}),
 			q(60169, {	-- Securing the Area
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuests"] = {
 					59877,	-- A Message from Icecrown (A)
 					60727,	-- A Message from Icecrown (H)
 				},
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60003, {	-- A Valiant Effort (A)
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 59877,	-- A Message from Icecrown (A)
+				["qg"] = 168123,	-- Crusader Renn
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183797),	-- Crusader's Dressing (A) (QI!)
 				},
 			}),
 			q(60004, {	-- A Valiant Effort (H)
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 60727,	-- A Message from Icecrown (H)
+				["qg"] = 168123,	-- Crusader Renn
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183689),	-- Crusader's Dressing (H) (QI!)
 				},
 			}),
 			q(62157, {	-- Scouting from a Safe Distance
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuests"] = {
 					60003,	-- A Valiant Effort (A)
 					60004,	-- A Valiant Effort (H)
 					60169,	-- Securing the Area
 				},
+				["qg"] = 168123,	-- Crusader Renn
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60827, {	-- Advancing the Effort
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 168123,	-- Crusader Renn
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Dailies --------------------------
 			q(59863, {	-- Combat Nullifier 07-X
-				["coord"] = { 73.1, 35.6, ICECROWN },
-				["qg"] = 173124,	-- Binkie Brightgear
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 173124,	-- Binkie Brightgear
+				["coord"] = { 73.1, 35.6, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(59783, {	-- Cultist Captors
-				["coord"] = { 66.0, 21.9, ICECROWN },
-				["qg"] = 168880,	-- Sentry Joren
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 168880,	-- Sentry Joren
+				["coord"] = { 66.0, 21.9, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(181497),	-- Interrogator's Key (QI!)
 				},
 			}),
 			q(62553, {	-- Delaying Their Efforts
-				["coord"] = { 71.0, 21.9, ICECROWN },
-				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
+				["coord"] = { 71.0, 21.9, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60841, {	-- Evacuation Effort
-				["coord"] = { 71.0, 21.9, ICECROWN },
-				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
+				["coord"] = { 71.0, 21.9, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(62262, {	-- Fungal Feeding
-				["coord"] = { 71.6, 21.0, ICECROWN },
-				["qg"] = 167572,	-- Crystal Brightspark
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 167572,	-- Crystal Brightspark
+				["coord"] = { 71.6, 21.0, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183139),	-- Mature Spore Sample (QI!)
 				},
 			}),
 			q(59782, {	-- The Deathspeaker's Devout
-				["coord"] = { 66.0, 21.9, ICECROWN },
-				["qg"] = 168880,	-- Sentry Joren
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 168880,	-- Sentry Joren
+				["coord"] = { 66.0, 21.9, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(59878, {	-- Too Many Whelps
-				["coord"] = { 71.0, 21.9, ICECROWN },
-				["qg"] = 167045,	-- Justicar Mariel Trueheart
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 167045,	-- Justicar Mariel Trueheart
+				["coord"] = { 71.0, 21.9, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(59839, {	-- WARNING: This is Only a Test!
-				["coord"] = { 66.0, 22.4, ICECROWN },
-				["qg"] = 172905,	-- Fizzix Blastbolt
 				["sourceQuest"] = 62157,	-- Scouting from a Safe Distance
+				["qg"] = 172905,	-- Fizzix Blastbolt
+				["coord"] = { 66.0, 22.4, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Week 2 --------------------------
 			q(62162, {	-- A Message from the Justicar (A)
-				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
-				["qg"] = 166383,	-- Commander Gregor
-				["isBreadcrumb"] = true,
+				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1.",
 				["sourceQuest"] = 60827,	-- Advancing the Effort
+				["qg"] = 166383,	-- Commander Gregor
+				["coord"] = { 65.7, 77.1, STORMWIND_CITY },
+				["isBreadcrumb"] = true,
 				["lvl"] = { 50 },
-				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
 			}),
 			q(61112, {	-- A Hunger for Flesh (A)
 				["provider"] = { "i", 180712 },	-- Partially Digested Cloth
@@ -238,12 +238,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["lvl"] = { 50 },
 			}),
 			q(62163, {	-- A Message from the Justicar (H)
-				["isBreadcrumb"] = true,
-				["coord"] = { 52.9, 77.3, ORGRIMMAR },
-				["qg"] = 169878,	-- Commander Throgg
+				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1.",
 				["sourceQuest"] = 60827,	-- Advancing the Effort
+				["qg"] = 169878,	-- Commander Throgg
+				["coord"] = { 52.9, 77.3, ORGRIMMAR },
+				["isBreadcrumb"] = true,
 				["lvl"] = { 50 },
-				["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
 			}),
 			q(61114, {	-- A Hunger for Flesh (H)
 				["provider"] = { "i", 180719 },	-- Partially Digested Leather
@@ -255,175 +255,175 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["lvl"] = { 50 },
 			}),
 			q(60828, {	-- A New Foothold
-				["coord"] = { 71.0, 22.0, ICECROWN },
-				["qg"] = 168123,	-- Crusader Renn
 				["sourceQuests"] = {
 					62162,	-- A Message from the Justicar (A)
 					62163,	-- A Message from the Justicar (H)
 					62157,	-- Scouting from a Safe Distance
 				},
+				["qg"] = 168123,	-- Crusader Renn
+				["coord"] = { 71.0, 22.0, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60843, {	-- Cult Couture
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(181253),	-- Collaborator's Hood (QI!)
 					i(181254),	-- Collaborator's Robe (QI!)
 				},
 			}),
 			q(62185, {	-- Fighting for Attention
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60828,	-- A New Foothold
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183698),	-- Torturer's Key (QI!)
 				},
 			}),
 			q(60861, {	-- Secrets in Shadows
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuests"] = {
 					60843,	-- Cult Couture
 					62185,	-- Fighting for Attention
 				},
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(62225, {	-- Bursting the Bubble
-				["coord"] = { 61.4, 63.8, ICECROWN },
-				["provider"] = { "o", 357758 },	-- Plague Barrel
 				["sourceQuest"] = 60861,	-- Secrets in Shadows
+				["provider"] = { "o", 357758 },	-- Plague Barrel
+				["coord"] = { 61.4, 63.8, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60867, {	-- A Message from Above
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 62225,	-- Bursting the Bubble
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60932, {	-- Only Shadows Remain
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60867,	-- A Message from Above
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60871, {	-- With Hope in Hand (A)
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(60869, {	-- With Hope in Hand (H)
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			-------------------------- Dailies --------------------------
 			q(62365, {	-- Careful Creations
-				["coord"] = { 35.3, 66.3, ICECROWN },
-				["qg"] = 173997,	-- Darkrider Arly
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 173997,	-- Darkrider Arly
+				["coord"] = { 35.3, 66.3, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183442),	-- Experimental Fluid (QI!)
 				},
 			}),
 			q(62295, {	-- Cleaning Out the Vault
-				["coord"] = { 42.8, 29.9, ICECROWN },
-				["qg"] = 173869,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 173869,	-- Crusader Renn
+				["coord"] = { 42.8, 29.9, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(59847, {	-- Defending the Rampart
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(62584, {	-- Frontline Resupply
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183832),	-- Salvaged Supplies (QI!)
 				},
 			}),
 			q(59851, {	-- Frozen Solid
-				["coord"] = { 44.9, 44.7, ICECROWN },
-				["qg"] = 170467,	-- Crusader Renn
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 170467,	-- Crusader Renn
+				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(182199),	-- Brightspark's Bottled Blaze (QI!)
 				},
 			}),
 			q(59772, {	-- Research Ruination
-				-- i know i picked it up in this area, but not sure about the provider.  didn't realize it wasn't added until i turned it in
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["qg"] = 170467,	-- Crusader Renn
 				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
+				-- i know i picked it up in this area, but not sure about the provider. didn't realize it wasn't added until i turned it in
 			}),
 			q(59838, {	-- Scourge War Machines
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
 				["qg"] = 170467,	-- Crusader Renn
 				["coord"] = { 44.9, 44.7, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(182313),	-- Satchel Charges (QI!)
 				},
 			}),
 			q(62484, {	-- Werk In Progress
-				["coord"] = { 35.3, 66.3, ICECROWN },
-				["qg"] = 173997,	-- Darkrider Arly
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 173997,	-- Darkrider Arly
+				["coord"] = { 35.3, 66.3, ICECROWN },
 				["lvl"] = { 50 },
 			}),
 			q(62473, {	-- What's Old is New
-				["coord"] = { 72.08, 20.72, ICECROWN },
-				["qg"] = 167577,	-- Brollen Wheatbeard
 				["sourceQuest"] = 60932,	-- Only Shadows Remain
+				["qg"] = 167577,	-- Brollen Wheatbeard
+				["coord"] = { 72.08, 20.72, ICECROWN },
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(183757),	-- Jagged Blade (QI!)
 					i(183758),	-- Battleworn Chainmail (QI!)
 				},
 			}),
 			-- repeatables below
 			q(62401, {	-- Strange Scourgestones
-				["coord"] = { 71.0, 21.6, ICECROWN },
 				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
+				["coord"] = { 71.0, 21.6, ICECROWN },
+				["lvl"] = { 50 },
 				["groups"] = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
-				["lvl"] = { 50 },
 			}),
 			q(62293, {	-- Darkened Scourgestones
-				["coord"] = { 71.0, 21.6, ICECROWN },
-				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
-				["repeatable"] = true,
 				["sourceQuest"] = 62401,	-- Strange Scourgestones
+				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
+				["coord"] = { 71.0, 21.6, ICECROWN },
 				["cost"] = { { "i", 180720, 25 } },	-- 25x Darkened Scourgestone
+				["repeatable"] = true,
+				["lvl"] = { 50 },
 				["groups"] = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
-				["lvl"] = { 50 },
 			}),
 			q(62292, {	-- Pitch Black Scourgestones
-				["coord"] = { 71.0, 21.6, ICECROWN },
-				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
-				["repeatable"] = true,
 				["sourceQuest"] = 62401,	-- Strange Scourgestones
+				["qg"] = 169718,	-- Veteran Crusader Aliocha Segard
+				["coord"] = { 71.0, 21.6, ICECROWN },
 				["cost"] = { { "i", 183200, 25 } },	-- 25x Pitch Black Scourgestone
+				["repeatable"] = true,
+				["lvl"] = { 50 },
 				["groups"] = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
-				["lvl"] = { 50 },
 			}),
 		}),
 		n(RARES, {
@@ -1012,10 +1012,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(60541),	--
 			q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
 			q(62808),	-- triggered when logging into a previously-120 character
-			q(62849),	-- \
-			q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
-			q(62851),	--  / nothing else done, quests were not there during week 1
-			q(62852),	-- /
 		}),
 		n(WORLD_QUESTS, {
 			q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)

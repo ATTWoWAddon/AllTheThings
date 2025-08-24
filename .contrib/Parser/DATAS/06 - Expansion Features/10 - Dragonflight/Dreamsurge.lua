@@ -22,8 +22,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			q(77423, {	-- Surging Dreams
 				["provider"] = { "n", 211031 },	-- Archdruid Hamuul Runetotem
 				["coord"] = { 50.6, 57.4, VALDRAKKEN },
-				["isBreadcrumb"] = true,
 				["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
+				["isBreadcrumb"] = true,
 			}),
 			q(77414, {	-- Dreamsurge Investigation
 				["sourceQuests"] = { 77423 },	-- Surging Dreams
@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(209833, {	-- Crate of Dreambound Armor
 						["sym"] = {{"select","itemID",
 							208918,	-- Dreambound Cloth Gloves
@@ -83,7 +83,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					ach(19008),	-- Dream Shaper
 					i(208153, {	-- Dreamsurge Chrysalis
 						["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(RARES, sharedData({
 			["provider"] = { "o", 406383 },	-- Firelands Portal (vignette), Thaldraszus
-			["g"] = {
+			["groups"] = {
 				i(209419),	-- Charred Elemental Remains
 			},
 		}, {
@@ -169,7 +169,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 64.2, 41.6, OHNAHRAN_PLAINS},
 					{ 45.6, 39.7, THE_AZURE_SPAN },
 				},
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "i", DREAMSURGE_COALESCENCE, 100 }},
 				},FILTERFUNC_itemID,{
 					filter(CLOTH, {
@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 64.1, 41.7, OHNAHRAN_PLAINS },
 					{ 45.6, 39.8, THE_AZURE_SPAN },
 				},
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "i", DREAMSURGE_CHRYSALIS, 1 }},
 				},FILTERFUNC_itemID,{
 					n(BACK, {

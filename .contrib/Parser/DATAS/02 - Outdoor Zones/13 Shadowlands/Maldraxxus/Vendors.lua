@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(166640, {	-- Au'larrynar <Enhancers>
 				["coord"] = { 53.6, 47.9, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(180706),	-- Caustic Muck
 					i(180657),	-- Crystallized Ichor
 					i(179613),	-- Extra Sticky Spidey Webs
@@ -24,20 +24,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(168429, {	-- Melody Madcap <Fungus and Drinks>
 				["coord"] = { 40.2, 41.2, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(184203),	-- Fungal Hair Tonic
 				},
 			}),
 			n(173003, {	-- Nalcorn Talsen <Undying Army Quartermaster>
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
-				["g"] = bubbleDownClassicRep(FACTION_THE_UNDYING_ARMY, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_UNDYING_ARMY, {
 					{		-- Neutral
 						i(183112, {	-- Animated Radius
 							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
-						i(190644, {	-- Vessel of Profound Possibilities
+						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
+							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -92,13 +93,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(169964, {	-- One-Eyed Joby <Unusual Wares>
 				["coord"] = { 53.2, 41.2, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(181798),	-- Stuffed Construct
 				},
 			}),
 			n(164588, {	-- Shinbone Slim <Food and Attire>
 				["coord"] = { 47.0, 48.8, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(184036),	-- Dundae's Hat
 				},
 			}),

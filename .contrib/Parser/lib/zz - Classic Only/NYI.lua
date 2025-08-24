@@ -18,12 +18,12 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 
 	q(8226, {	-- Rare Fish - Pale Ghoulfish
 		--["qg"] = 15079,	-- Fishbot 5000
-		["requireSkill"] = FISHING,
 		--["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
-		["repeatable"] = true,
 		["cost"] = {
 			{ "i", 19804, 1 },	-- Pale Ghoulfish
 		},
+		["requireSkill"] = FISHING,
+		["repeatable"] = true,
 		["groups"] = {
 			i(7996),	-- Worn Fishing Hat
 		},

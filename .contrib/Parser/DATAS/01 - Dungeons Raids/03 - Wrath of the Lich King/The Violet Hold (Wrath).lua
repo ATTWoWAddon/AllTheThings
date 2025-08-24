@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(283, {	-- The Violet Hold (Wrath)
 		["mapID"] = THE_VIOLET_HOLD_WRATH,
 		["coord"] = { 66.6, 67.9, NORTHREND_DALARAN },
@@ -31,8 +31,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(13159, {	-- Containment
-					["qg"] = 31080,	-- Warden Alturas
 					["sourceQuest"] = 13158,	-- Discretion is Key
+					["qg"] = 31080,	-- Warden Alturas
 					["coord"] = { 61.2, 63.2, NORTHREND_DALARAN },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 15),
@@ -52,8 +52,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29830, {	-- Containment
-					["qg"] = 30658,	-- Lieutenant Sinclari
 					["sourceQuest"] = 29829,	-- Discretion is Key
+					["qg"] = 30658,	-- Lieutenant Sinclari
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 15),
 					["groups"] = {
@@ -540,7 +540,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(283, {

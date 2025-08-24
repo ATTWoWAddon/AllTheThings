@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56279,
 			["isDaily"] = true,
 			["coord"] = { 52.4, 41.9, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170189, {	-- Blind Eye
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r (cave entrance at 38.6, 58.3) for a hefty sum of gold.",
 				}),
@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 70.7, 34.2, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(167786),	-- Germinating Seed
 			},
 		}),
@@ -43,13 +43,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 60.6, 33.9, NAZJATAR },
 				{ 72.2, 36.2, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(169363),	-- Amethyst Softshell (PET!)
 				i(170172),	-- Brightspine Shell
 			},
 		}),
 		n(152566, {	-- Anemonar
-			["description"] = "Kill a |cFFFFD700Colossal Sky Ray|r on top of Anemonar to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
+			["description"] = "Kill a |cFFFFD700Colossal Sky Ray|r on top of Anemonar to activate him. |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
 			["questID"] = 56281,
 			["isDaily"] = true,
 			["coord"] = { 58.6, 53.2, NAZJATAR },
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 36.9, 11.2, NAZJATAR },
 			["crs"] = { 150248 },	-- Brinestone Deposit
 			["description"] = "First complete the white item version of Brinestone Pickaxe (/att quest:55531), which can drop from any rare or treasure in Nazjatar.\n\nAfter you completed 'What Will It Mine?', you are now eligible to loot the green quality Brinestone Pickaxe from Chitterspine Encroachers around Avarius' location.\n\nOnce you obtained the green quality Brinestone Pickaxe, you can interact with the stone at the Rare's Location to start the summoning ritual.\n\nYou have to collect 5 different colored shards, which are mined from nearby untrackable Brinestone Deposits & put the correct shard into each pillar.\n\nThere are 7 Deposits, within max. 50-60 yards of the event, that can be mined without the mining profession & have 1 minute respawn timer.\n\nThe mining recipes are not bound to a daily lockout & can be farmed.\n\nRespawn timer of the Event is roughly 20 minutes.",
-			["g"] = {
+			["groups"] = {
 				i(169373),	-- Brinestone Algan (PET!)
 				i(169612),	-- Recipe: Osmenite Deposit [Rank 2] (RECIPE!)
 				i(169613),	-- Recipe: Osmenite Seam [Rank 2] (RECIPE!)
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56282,	-- also triggered 56601, not sure which is first kill ID
 			["isDaily"] = true,
 			["coord"] = { 73.4, 54.0, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170177),	-- Exposed Fish
 				i(170179),	-- Snapdragon Scent Gland
 			},
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 37.4, 82.6, NAZJATAR },	-- mob
 				{ 39.8, 77.2, NAZJATAR },	-- cave entrance
 			},
-			["g"] = {
+			["groups"] = {
 				i(169372),	-- Necrofin Tadpole (PET!)
 				i(170191, {	-- Skeletal Hand
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 55366,
 			["coord"] = { 54.7, 41.7, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169375),	-- Coral Lashling (PET!)
 				i(169611),	-- Recipe: Zin'anthid [Rank 2]
 			},
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56283,
 			["coord"] = { 42.3, 13.2, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169356),	-- Caverndark Nightmare (PET!)
 			},
 		}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 49.2, 88.8, NAZJATAR },
 			["isDaily"] = true,
 			["description"] = "Inside a hidden underwater cave beneath the waterfall.",
-			["g"] = {
+			["groups"] = {
 				i(170167),	-- Eel Filet
 			},
 		}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 71.9, 28.1, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169361),	-- Daggertooth Frenzy (PET!)
 			},
 		}),
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 52.9, 53.5, NAZJATAR },
 				{ 56.4, 43.5, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(170176),	-- Fathom Ray Wing
 			},
 		}),
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 65.6, 32.6, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170188),	-- Barnacled Bag of Goods
 			},
 		}),
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56285,
 			["coord"] = { 52.1, 75.4, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170167),	-- Eel Filet
 				i(169359),	-- Spawn of Nalaada (PET!)
 			},
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 39.0, 57.0, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170180),	-- Razorshell
 			},
 		}),
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 56.1, 56.3, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169352),	-- Pearlescent Glimmershell (PET!)
 			},
 		}),
@@ -221,11 +221,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			}},
 		}),
 		n(152323, {	-- King Gakula
-			["description"] = "Whenever a player shoos a |cFF00991aBloodfin Tadpole|r, it fills an invisible progress bar for Gakula's spawn.  He will yell a total of four times, spawning with the last one.\n\nGakula's yells:\n1. |cFFff4040Mgrlgl? Gmrgurgl?|r\n2. |cFFff4040Murrrglurg? Murgglugrg!|r\n3. |cFFff4040Mrrglgl! Murgglagk!|r\n4. |cFFff4040Gak! Mugllglgll Gak!|r",
+			["description"] = "Whenever a player shoos a |cFF00991aBloodfin Tadpole|r, it fills an invisible progress bar for Gakula's spawn. He will yell a total of four times, spawning with the last one.\n\nGakula's yells:\n1. |cFFff4040Mgrlgl? Gmrgurgl?|r\n2. |cFFff4040Murrrglurg? Murgglugrg!|r\n3. |cFFff4040Mrrglgl! Murgglagk!|r\n4. |cFFff4040Gak! Mugllglgll Gak!|r",
 			["questID"] = 55671,
 			["isDaily"] = true,
 			["coord"] = { 28.8, 29.0, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170190, {	-- Mardivas' Bag of Containing
 					i(169332),	-- Strange Mineralized Water
 					i(169334),	-- Strange Oceanic Sediment
@@ -235,12 +235,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		n(152549, {	-- Lost Algan -- not identified with an Elite/Vignette indicator, but drops very important currency once per day
-			["questID"] = 56916,	-- triggered upon looting.  can also trigger 55427 and 57082 upon looting.  possible separate manapearl + benthic trigger?
+			["questID"] = 56916,	-- triggered upon looting. can also trigger 55427 and 57082 upon looting. possible separate manapearl + benthic trigger?
 			-- 55427 & 56916 = manapearls only
 			-- 57082 = benthic only
 			["isDaily"] = true,
 			["description"] = "Wanders around Nazjatar. This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearl
 			},
 		}),
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 62.5, 15.3, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170172),	-- Brightspine Shell
 				i(169366),	-- Wriggler (PET!)
 			},
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 57.0, 20.8, NAZJATAR },
 				{ 70.6, 24.7, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(169355),	-- Chitterspine Needler (PET!)
 				i(170171),	-- Giant Crab Leg
 			},
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56289,
 			["coord"] = { 43.2, 88.0, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169367),	-- Seafury (PET!)
 				i(170193),	-- Sea Totem
 			},
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56290,
 			["coord"] = { 43.0, 75.6, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169368),	-- Stormwrath (PET!)
 			},
 		}),
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 69.5, 33.2, NAZJATAR },
 				{ 76.4, 24.4, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(169374),	-- Budding Algan (PET!)
 			},
 		}),
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "There is a chance for Sandcastle to spawn when you are using a Scrying Stone to find treasures in Nazjatar.",
 			["questID"] = 56276,	-- 57191 and 57192 triggered around the time sandcastle
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169369),	-- Sandkeep (PET!)
 			},
 		}),
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 64.3, 54.9, NAZJATAR },
 				{ 81.2, 39.8, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(170171),	-- Giant Crab Leg
 				i(169350),	-- Glittering Diamondshell (PET!)
 			},
@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["questID"] = 56295,
 			["coord"] = { 63.0, 12.0, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170167),	-- Eel Filet
 				i(170187),	-- Shadescale (TOY!)
 			},
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 38.9, 9.40, NAZJATAR },
 				{ 41.3, 15.9, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(170181),	-- Tidal Guard
 				i(170182),	-- Voltscale Shield
 			},
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56297,
 			["coord"] = { 71.6, 54.8, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170179),	-- Snapdragon Scent Gland
 			},
 		}),
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["isDaily"] = true,
 			["description"] = "On top of the coral reef. Requires Flying.",
-			["g"] = {
+			["groups"] = {
 				i(169163),	-- Silent Glider (MOUNT!)
 				i(170176),	-- Fathom Ray Wing
 			},
@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56122,
 			["isDaily"] = true,
 			["coord"] = { 62.4, 29.6, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170193),	-- Sea Totem
 				i(170502),	-- Waterlogged Toolbox
 			},
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 58.0, 26.5, NAZJATAR },
 			["isDaily"] = true,
 			["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
-			["g"] = {
+			["groups"] = {
 				i(170193),	-- Sea Totem
 				i(170502),	-- Waterlogged Toolbox
 			},
@@ -447,8 +447,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 56106,
 			["coord"] = { 65.9, 22.9, NAZJATAR },
 			["isDaily"] = true,
-			["description"] = "Clusters of purple, void-tinged sacs grow around the area where the rare spawns.  Look for ones you can interact with called |cFFFFD700Undisturbed Specimens|r — 5 of these need to be popped to spawn the rare, but they don't all have to be destroyed by one person.",
-			["g"] = {
+			["description"] = "Clusters of purple, void-tinged sacs grow around the area where the rare spawns. Look for ones you can interact with called |cFFFFD700Undisturbed Specimens|r — 5 of these need to be popped to spawn the rare, but they don't all have to be destroyed by one person.",
+			["groups"] = {
 				i(170196),	-- Shirakess Warning Sign (TOY!)
 			},
 		}),
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 65.5, 50.4, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170178),	-- Alpha Fin
 				i(170177),	-- Exposed Fish
 			},
@@ -471,18 +471,18 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 30.3, 35.9, NAZJATAR },
 			},
 			["isDaily"] = true,
-			["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him.  |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
+			["description"] = "Kill a |cFFFFD700Staghorn Reefwalker|r on top of Urduu to activate him. |cFFDD3333Before you start kiting make sure any followers are deactivated by right-clicking the buff to dismiss.",
 			["sym"] = {{"select","itemID",
 				170184,	-- Ancient Reefwalker Bark
 				170183,	-- Reefwalker Bark
 			}},
 		}),
 		n(151719, {	-- Voice in the Deeps
-			["description"] = "When the rare is available, you can see its nameplate while hovering over the rocks inside the small building at the coordinates listed.\n\nWhen you're sure it's up, find a |cFF1EFF00Molted Shell|r on the ground and ride it into the rocks to break them.  The rare will immediately attack, so be ready to click off the buff!",
+			["description"] = "When the rare is available, you can see its nameplate while hovering over the rocks inside the small building at the coordinates listed.\n\nWhen you're sure it's up, find a |cFF1EFF00Molted Shell|r on the ground and ride it into the rocks to break them. The rare will immediately attack, so be ready to click off the buff!",
 			["questID"] = 56300,	-- also 56583
 			["coord"] = { 67.5, 34.6, NAZJATAR },
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(170186),	-- Abyss Pearl
 			},
 		}),
@@ -491,7 +491,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 48.1, 24.3, NAZJATAR },
 			["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws.",
-			["g"] = {
+			["groups"] = {
 				i(169376),	-- Skittering Eel (PET!)
 				i(170181),	-- Tidal Guard
 				i(170066),	-- Skinning Technique: Dredged Leather (Rank 2)
@@ -499,10 +499,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 		}),
 		n(151166, {	-- Wayward Algan -- not identified with an Elite/Vignette indicator, but drops very important currency
-			["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
+			["description"] = "Wanders around Nazjatar. This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 			["questID"] = 56915,	-- triggered when looting manapearls; triggered 57083 when looting benthic gear
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearl
 			},
 		}),

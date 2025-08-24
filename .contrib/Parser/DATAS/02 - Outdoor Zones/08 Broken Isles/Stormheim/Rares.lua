@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					n(109083, {	-- Houndmaster Payne
 						["questID"] = 42858,
 						["coord"] = { 72, 59.8, STORMHEIM },
-						["crs"] = { 109089 },    -- Houndmaster Payne
+						["crs"] = { 109089 },	-- Houndmaster Payne
 						["description"] = "Patrols inside of Greywatch. Horde players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Batmaster Claud|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
 					}),
 					n(109133, {	-- Batmaster Claud
@@ -86,7 +86,7 @@ root(ROOTS.Zones, {
 						cn = "被遗忘者敢死队",
 					},
 					description = {
-						en = "There is an ongoing 4x4 battle.  Assist the Alliance by defeating the Forsaken Deathsquad.",
+						en = "There is an ongoing 4x4 battle. Assist the Alliance by defeating the Forsaken Deathsquad.",
 						es = "Hay una batalla 4x4 en curso. Ayuda a la Alianza derrotando al Forsaken Deathsquad.",
 						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Allianz, indem Sie die Todesschwadron der Forsaken besiegen.",
 						fr = "Il y a une bataille en 4x4 en cours. Aidez l'Alliance en battant l'escadron de la mort abandonné.",
@@ -278,7 +278,7 @@ root(ROOTS.Zones, {
 						cn = "狼人追猎者",
 					},
 					description = {
-						en = "There is an ongoing 4x4 battle.  Assist the Horde by defeating the Worgen Stalkers.",
+						en = "There is an ongoing 4x4 battle. Assist the Horde by defeating the Worgen Stalkers.",
 						es = "Hay una batalla 4x4 en curso. Ayuda a la Horda derrotando a los Worgen Stalkers.",
 						de = "Es gibt einen laufenden 4x4-Kampf. Unterstützen Sie die Horde, indem Sie die Worgenpirscher besiegen.",
 						fr = "Il y a une bataille en 4x4 en cours. Aidez la Horde en battant les Worgen Stalkers.",

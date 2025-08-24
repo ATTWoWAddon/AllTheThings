@@ -31,7 +31,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				221848,	-- Warpweaver Voxin <Transmogrifier> (Dornogal)
 			},
 			["coord"] = { 74.4, 56.2, VALDRAKKEN },	-- Add all Coords if you want to..
-			["g"] = {
+			["groups"] = {
 				-- SEASON 1 --
 				spell(245743, {	-- Stylish!
 					i(151116, {	-- Fashionable Undershirt
@@ -356,7 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 				i(233154, {	-- Banded Sepia War Wraps
-					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 15 }},
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 				i(237242, {	-- Banded Snowy War Legwraps
@@ -406,6 +406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			["isMonthly"] = true,
 		}, {
 			q(76308, {	-- The Trial of Style
+				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
 				["providers"] = {
 					{ "n", 206252 },	-- Primo
 					{ "n", 206383 },	-- Don'a
@@ -420,14 +421,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					{ 45.7, 52.7, DORNOGAL },
 					-- #endif
 				},
-				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
 				["isBreadcrumb"] = true,
 			}),
 			q(76361, {	-- Fashion Week
-				["provider"] = { "n", 199261 },	-- Holiday Enthusiast
-				["coord"] = { 31.5, 63.1, VALDRAKKEN },
-				["sourceQuest"] = 76308,	-- The Trial of Style
 				["description"] = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
+				["sourceQuest"] = 76308,	-- The Trial of Style
+				["qgs"] = {
+					199261,	-- Holiday Enthusiast
+					220307,	-- Holiday Enthusiast
+				},
+				["coords"] = {
+					{ 31.5, 63.1, VALDRAKKEN },
+					{ 46.0, 55.0, DORNOGAL },
+				},
 			}),
 			q(76214, {	-- Work It
 				["provider"] = { "n", 205914 },	-- Cataloger Alexia

@@ -1,22 +1,22 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(207802, {	-- Beledar's Spawn
 				["description"] = "Spawns immediately somewhere in the zone the moment Beledar shifts into its Void state.",
 				["questID"] = 81763,
+				["crs"] = {
+					225404,	-- Beledar's Spawn [Vignette]
+				},
 				["coords"] = {
 					{ 54.7, 36.9, HALLOWFALL },
 					{ 48.9, 32.0, HALLOWFALL },
 					{ 58.0, 49.2, HALLOWFALL },
 					{ 58.6, 28.7, HALLOWFALL },
 				},
-				["g"] = {
+				["groups"] = {
 					i(223006),	-- Signet of Dark Horizons (dupe from Coalesced Monstrosity - elementals rares share?)
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["provider"] = { "i", 220123 },	-- 1x Ominous Offering
 				["questID"] = 81880,
-				["g"] = {
+				["groups"] = {
 					i(225997),	-- Earthen Adventurer's Spaulders
 					i(223921),	-- Ever-Oozing Signet
 					i(223920),	-- Slime Deflecting Stopper
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 46.6, 7.2, HALLOWFALL },
 				},
 				["questID"] = 81836,
-				["g"] = {
+				["groups"] = {
 					i(221248),	-- Deep Terror Carver
 					i(221211),	-- Grasp of the Shallows
 					i(221255),	-- Sharpened Scalepiercer
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221534, {	-- Lytfang the Lost
 				["coord"] = { 23.0, 59.2, HALLOWFALL },
 				["questID"] = 81756,
-				["g"] = {
+				["groups"] = {
 					i(221207),	-- Den Mother's Chestpiece
 					i(221246),	-- Fierce Beast Staff
 				},
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221786, {	-- Pride of Beledar
 				["coord"] = { 57.3, 48.6, HALLOWFALL },
 				["questID"] = 81882,
-				["g"] = {
+				["groups"] = {
 					i(221247),	-- Cavernous Critter Shooter (dupe, from Plaguehart - horse-ish type rares?)
 					i(221225),	-- Benevolent Hornstag Cinch
 					i(221251),	-- Bestial Underground Cleaver
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221708, {	-- Sir Alastair Purefire
 				["coord"] = { 35.9, 35.5, HALLOWFALL },
 				["questID"] = 81853,
-				["g"] = {
+				["groups"] = {
 					i(221241),	-- Priestly Agent's Knife
 					i(221245),	-- Righteous Path Treads
 				},
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(215805, {	-- Sloshmuck
 				["coord"] = { 73.4, 52.4, HALLOWFALL },
 				["questID"] = 79271,
-				["g"] = {
+				["groups"] = {
 					i(221223),	-- Bog Beast Mantle
 					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221690, {	-- Strength of Beledar
 				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
-				["g"] = {
+				["groups"] = {
 					i(221251),	-- Bestial Underground Cleaver
 					i(221216),	-- Bruin Strength Legplates
 					i(221246),	-- Fierce Beast Staff
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221648, {	-- The Perchfather
 				["coord"] = { 44.0, 16.4, HALLOWFALL },
 				["questID"] = 81791,
-				["g"] = {
+				["groups"] = {
 					i(221246),	-- Fierce Beast Staff
 					i(221229),	-- Perchfather's Cuffs
 				},
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(218444, {	-- The Taskmaker
 				["coord"] = { 56.4, 69.0, HALLOWFALL },
 				["questID"] = 80009,
-				["g"] = {
+				["groups"] = {
 					i(221240),	-- Nerubian Stagshell Gouger
 					i(221215),	-- Taskmaster's Mining Cap
 				},
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(218458, {	-- Deepfiend Azellix
 				["coord"] = { 72.1, 64.3, HALLOWFALL },
 				["questID"] = 80011,
-				["g"] = {
+				["groups"] = {
 					i(223394),	-- Deepfiend Pauldrons
 					i(223396),	-- Deepfiend Shoulder Shells
 					i(223395),	-- Deepfiend Shoulderpads
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221767, {	-- Funglour
 				["coord"] = { 36.8, 71.8, HALLOWFALL },
 				["questID"] = 81881,
-				["g"] = {
+				["groups"] = {
 					i(223377),	-- Ancient Fungarian's Fingerwrap
 				},
 			}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 35.0, 50.4, HALLOWFALL },
 				},
 				["questID"] = 81761,
-				["g"] = {
+				["groups"] = {
 					i(223399),	-- Abyssal Hunter's Chain
 					i(223400),	-- Abyssal Hunter's Cinch
 					i(223397),	-- Abyssal Hunter's Girdle
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(218426, {	-- Ixlorb the Spinner
 				["coord"] = { 57.0, 64.4, HALLOWFALL },
 				["questID"] = 80006,
-				["g"] = {
+				["groups"] = {
 					i(223380),	-- Nerubian Weaver's Chainmail
 					i(223379),	-- Nerubian Weaver's Chestplate
 					i(223374),	-- Nerubian Weaver's Gown
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 218455 },	-- Lost Cache
 				["coord"] = { 52.3, 27.0, HALLOWFALL },
 				["questID"] = 80010,
-				["g"] = {
+				["groups"] = {
 					i(223385),	-- Murkshade Gauntlets
 					i(223384),	-- Murkshade Gloves
 					i(223382),	-- Murkshade Grips
@@ -173,9 +173,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {
@@ -212,4 +212,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

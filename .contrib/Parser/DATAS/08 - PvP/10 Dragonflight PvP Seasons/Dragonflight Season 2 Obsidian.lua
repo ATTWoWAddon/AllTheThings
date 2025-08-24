@@ -59,7 +59,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
 					-- #if AFTER TWW
 					moh(5, iensemble(211172)),	-- Arsenal: Scalewarden's Axe
 					moh(5, iensemble(211176)),	-- Arsenal: Scalewarden's Club
@@ -83,7 +83,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(196191, {	-- Malicia
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 					filter(BACK_F, {
 						bloody(200, i(206241)),	-- Scalewarden's Drape
 						bloody(200, i(206240)),	-- Scalewarden's Cloak
@@ -161,7 +161,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(213989, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					-- #if BEFORE TWW
 					bloody(500, iensemble(211172)),		-- Arsenal: Scalewarden's Axe
 					bloody(500, iensemble(211176)),		-- Arsenal: Scalewarden's Club
@@ -187,7 +187,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -210,7 +210,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
@@ -334,7 +334,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -384,7 +385,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
@@ -979,7 +981,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(205362, {	-- Obsidian Gladiator's Tabard
 						["sourceAchievements"] = { 17831 },	-- Elite: Dragonflight Season 2
 						["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
@@ -1002,7 +1004,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
@@ -1056,7 +1058,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(209377, {	-- Zaeka Steelbender
 				["timeline"] = { ADDED_10_2_0 },
 				["coord"] = { 44.8, 42.6, VALDRAKKEN },
-				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(204146),	-- Design: Obsidian Combatant's Jeweled Amulet (RECIPE!)
 					i(204147),	-- Design: Obsidian Combatant's Jeweled Signet (RECIPE!)
@@ -1106,7 +1108,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}, {

@@ -8,7 +8,7 @@ local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 -- Global locals
 local ipairs, pairs, tinsert, getmetatable, setmetatable, tostring =
 	  ipairs, pairs, tinsert, getmetatable, setmetatable, tostring;
-local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Local variables
 local SortTypeByHeaderID = setmetatable({
@@ -52,184 +52,225 @@ local function SortForMiniList(a,b)
 end
 local CachedMapData = setmetatable({}, {
 	__index = function(cachedMapData, mapID)
-		local results = SearchForField("mapID", mapID);
-		if #results > 0 then
-			-- Simplify the returned groups
-			local groups = {};
-			local headers = setmetatable({}, {
-				__index = function(t, headerID)
-					for i=1,#groups,1 do
-						local o = groups[i];
-						if o.headerID == headerID then
-							if not o.g then o.g = {}; end
-							t[headerID] = o;
-							return o;
-						end
-					end
-
-					local o = app.CreateNPC(headerID);
-					tinsert(groups, o);
-					t[headerID] = o;
-					o.g = {};
-					return o;
-				end
-			});
-			local function MergeIntoHeader(headerID, o)
-				MergeObject(headers[headerID].g, o);
-			end
-
-			-- If there's a timerunning event going on...
-			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
-			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
-				local refined = {};
-				for _,j in ipairs(results) do
-					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
-						tinsert(refined, j);
-					end
-				end
-				results = refined;
-			end
-
-			local header = {};
-			header.mapID = mapID;
-			header.g = groups;
-			for i, group in ipairs(results) do
-				local clone = {};
-				for key,value in pairs(group) do
-					if key == "maps" then
-						local maps = {};
-						for i,mapID in ipairs(value) do
-							tinsert(maps, mapID);
-						end
-						clone[key] = maps;
-					elseif key == "g" then
-						local g = {};
-						for i,o in ipairs(value) do
-							o = CloneReference(o);
-							ExpandGroupsRecursively(o, false);
-							tinsert(g, o);
-						end
-						clone[key] = g;
-					else
-						clone[key] = value;
-					end
-				end
-				local c = GetRelativeValue(group, "c");
-				if c then clone.c = c; end
-				local r = GetRelativeValue(group, "r");
-				if r then clone.r = r; end
-				local lvl = GetRelativeValue(group, "lvl");
-				if lvl then clone.lvl = lvl; end
-				setmetatable(clone, getmetatable(group));
-
-				local key = group.key;
-				if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
-					header.key = key;
-					header[key] = group[key];
-					MergeObject({header}, clone);
-				else
-					local headerConst = nil;
-					if key == "criteriaID" then
-						clone.achievementID = group.achievementID;
-						headerConst = app.HeaderConstants.ACHIEVEMENTS;
-					elseif key == "achievementID" then
-						headerConst = app.HeaderConstants.ACHIEVEMENTS;
-					elseif key == "questID" then
-						headerConst = app.HeaderConstants.QUESTS;
-					elseif key == "factionID" then
-						headerConst = app.HeaderConstants.FACTIONS;
-					elseif key == "explorationID" then
-						headerConst = app.HeaderConstants.EXPLORATION;
-					elseif key == "flightpathID" then
-						headerConst = app.HeaderConstants.FLIGHT_PATHS;
-					end
-					
-					-- Does this involve a profession?
-					local requireSkill = GetRelativeValue(group, "requireSkill");
-					if requireSkill then
-						clone = app.CreateProfession(requireSkill, { g = { clone } });
-						headerConst = app.HeaderConstants.PROFESSIONS;
-					end
-					
-					if headerConst then
-						MergeIntoHeader(headerConst, clone);
-					elseif key == "headerID" then
-						if clone.parent and clone.parent.headerID then
-							MergeIntoHeader(clone.parent.headerID, clone);
-						else
-							MergeObject(groups, clone);
-						end
-					else
-						local headerID = GetRelativeValue(group, "headerID");
-						if headerID then
-							MergeIntoHeader(headerID, clone);
-							if group.parent and group.parent.isRaid then
-								headers[headerID].isRaid = true;
+		if mapID then
+			local results = SearchForField("mapID", mapID);
+			if #results > 0 then
+				-- Simplify the returned groups
+				local groups = {};
+				local filters = setmetatable({}, {
+					__index = function(t, f)
+						for i=1,#groups,1 do
+							local o = groups[i];
+							if o.filterID == f then
+								if not o.g then o.g = {}; end
+								t[f] = o;
+								return o;
 							end
+						end
+
+						local o = app.CreateFilter(f);
+						tinsert(groups, o);
+						t[f] = o;
+						o.g = {};
+						return o;
+					end
+				});
+				local function MergeIntoFilter(f, o)
+					MergeObject(filters[f].g, o);
+				end
+				local headers = setmetatable({}, {
+					__index = function(t, headerID)
+						for i=1,#groups,1 do
+							local o = groups[i];
+							if o.headerID == headerID then
+								if not o.g then o.g = {}; end
+								t[headerID] = o;
+								return o;
+							end
+						end
+
+						local o = app.CreateCustomHeader(headerID);
+						tinsert(groups, o);
+						t[headerID] = o;
+						o.g = {};
+						return o;
+					end
+				});
+				local function MergeIntoHeader(headerID, o)
+					MergeObject(headers[headerID].g, o);
+				end
+
+				-- If there's a timerunning event going on...
+				local timerunningSeasonEventID = GetTimerunningSeasonEventID();
+				if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
+					local refined = {};
+					for _,j in ipairs(results) do
+						if GetRelativeValue(j, "e") == timerunningSeasonEventID then
+							tinsert(refined, j);
+						end
+					end
+					results = refined;
+				end
+
+				local header = {};
+				header.mapID = mapID;
+				header.g = groups;
+				for i, group in ipairs(results) do
+					local clone = {};
+					for key,value in pairs(group) do
+						if key == "maps" then
+							local maps = {};
+							for i,mapID in ipairs(value) do
+								tinsert(maps, mapID);
+							end
+							clone[key] = maps;
+						elseif key == "g" then
+							local g = {};
+							for i,o in ipairs(value) do
+								o = CloneReference(o);
+								ExpandGroupsRecursively(o, false);
+								tinsert(g, o);
+							end
+							clone[key] = g;
 						else
-							MergeObject(groups, clone);
+							clone[key] = value;
 						end
 					end
-				end
-			end
+					local c = GetRelativeValue(group, "c");
+					if c then clone.c = c; end
+					local r = GetRelativeValue(group, "r");
+					if r then clone.r = r; end
+					local lvl = GetRelativeValue(group, "lvl");
+					if lvl then clone.lvl = lvl; end
+					setmetatable(clone, getmetatable(group));
 
-			-- Swap out the map data for the header.
-			results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
-			ExpandGroupsRecursively(results, true);
-			results.visible = true;
-			results.expanded = true;
-			results.mapID = mapID;
-			results.back = 1;
-			results.indent = 0;
-
-			local difficultyID = app.GetCurrentDifficultyID();
-			if difficultyID ~= 0 then
-				for _,row in ipairs(header.g) do
-					if row.difficultyID or row.difficulties then
-						if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
-						elseif row.expanded then
-							ExpandGroupsRecursively(row, false, true);
-						end
-					end
-				end
-			end
-
-			for i,o in ipairs(header.g) do
-				if o.key == "headerID" then
-					o.SortType = SortTypeByHeaderID[o.headerID];
-				end
-			end
-
-			-- Sort the list, but not for instances.
-			if not results.instanceID then
-				app.Sort(groups, SortForMiniList);
-			end
-
-			-- Check to see completion...
-			AssignChildren(results);
-			cachedMapData[mapID] = results;
-			return results;
-		else
-			-- If we don't have any map data on this area, report it to the chat window.
-			print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
-
-			local mapInfo = C_Map_GetMapInfo(mapID);
-			if mapInfo then
-				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-				mapID = mapInfo.parentMapID;
-				while mapID do
-					mapInfo = C_Map_GetMapInfo(mapID);
-					if mapInfo then
-						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
-						mapID = mapInfo.parentMapID;
+					local key = group.key;
+					if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
+						header.key = key;
+						header[key] = group[key];
+						MergeObject({header}, clone);
 					else
-						break;
+						local headerConst = nil;
+						if key == "criteriaID" then
+							clone.achievementID = group.achievementID;
+							headerConst = group.pb and app.HeaderConstants.PET_BATTLES or app.HeaderConstants.ACHIEVEMENTS;
+						elseif key == "achievementID" then
+							headerConst = app.HeaderConstants.ACHIEVEMENTS;
+						elseif key == "questID" then
+							headerConst = group.pb and app.HeaderConstants.PET_BATTLES or app.HeaderConstants.QUESTS;
+						elseif key == "factionID" then
+							headerConst = app.HeaderConstants.FACTIONS;
+						elseif key == "explorationID" then
+							headerConst = app.HeaderConstants.EXPLORATION;
+						elseif key == "flightpathID" then
+							headerConst = app.HeaderConstants.FLIGHT_PATHS;
+						elseif key == "objectID" then
+							headerConst = app.HeaderConstants.TREASURES;
+						end
+						
+						-- Does this involve a profession?
+						local requireSkill = GetRelativeValue(group, "requireSkill");
+						if requireSkill then
+							clone = app.CreateProfession(requireSkill, { g = { clone } });
+							headerConst = app.HeaderConstants.PROFESSIONS;
+						end
+						
+						if headerConst then
+							MergeIntoHeader(headerConst, clone);
+						elseif key == "headerID" then
+							if clone.parent and clone.parent.headerID then
+								MergeIntoHeader(clone.parent.headerID, clone);
+							else
+								MergeObject(groups, clone);
+							end
+						elseif key == "speciesID" then
+							MergeIntoFilter(101, clone);	-- Pet Battles
+						else
+							local headerID = GetRelativeValue(group, "headerID");
+							if headerID then
+								-- Does this involve a holiday?
+								if group.e then headerID = app.HeaderConstants.HOLIDAYS; end
+								MergeIntoHeader(headerID, clone);
+								if group.parent and group.parent.isRaid then
+									headers[headerID].isRaid = true;
+								end
+							elseif clone.providers then
+								if clone.providers[1] == 'o' then
+									MergeIntoHeader(app.HeaderConstants.TREASURES, clone);
+								else
+									MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
+								end
+							elseif clone.crs or key == "itemID" then
+								MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
+							else
+								MergeObject(groups, clone);
+							end
+						end
 					end
 				end
-				print("Path: ", mapPath);
+
+				-- Swap out the map data for the header.
+				results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
+				results.visible = true;
+				results.mapID = mapID;
+				results.back = 1;
+				results.indent = 0;
+				
+				if app.Settings:GetTooltipSetting("Expand:MiniList") then
+					ExpandGroupsRecursively(results, true);
+					results.expanded = true;
+					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+						local difficultyID = app.GetCurrentDifficultyID();
+						if difficultyID ~= 0 then
+							for _,row in ipairs(header.g) do
+								if row.difficultyID or row.difficulties then
+									if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+									elseif row.expanded then
+										ExpandGroupsRecursively(row, false, true);
+									end
+								end
+							end
+						end
+					end
+				end
+
+				for i,o in ipairs(header.g) do
+					if o.key == "headerID" then
+						o.SortType = SortTypeByHeaderID[o.headerID];
+					end
+				end
+
+				-- Sort the list, but not for instances.
+				if not results.instanceID and not IsInInstance() then
+					app.Sort(groups, SortForMiniList);
+				end
+
+				-- Check to see completion...
+				AssignChildren(results);
+				cachedMapData[mapID] = results;
+				return results;
+			else
+				-- If we don't have any map data on this area, report it to the chat window.
+				print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
+
+				local mapInfo = C_Map_GetMapInfo(mapID);
+				if mapInfo then
+					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+					mapID = mapInfo.parentMapID;
+					while mapID do
+						mapInfo = C_Map_GetMapInfo(mapID);
+						if mapInfo then
+							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
+							mapID = mapInfo.parentMapID;
+						else
+							break;
+						end
+					end
+					print("Path: ", mapPath);
+				end
+				print("Please report this to the ATT Discord! Thanks! ", app.Version);
 			end
-			print("Please report this to the ATT Discord! Thanks! ", app.Version);
 		end
 	end
 });

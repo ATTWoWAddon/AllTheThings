@@ -18,7 +18,7 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 		en = [[~DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1]],
 	},
 	description = {
-		-- #if BEFORE 3.0.8
+		-- #if AFTER 3.0.8
 		en = "Also known as 'Upper' Blackrock Spire.",
 		-- #else
 		en = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance. Also known as 'Upper' Blackrock Spire.",
@@ -57,11 +57,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = lvlsquish(57, 57, 20),
 			}),
 			q(6601, {	-- Ascension...
+				["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
 				["providers"] = {
 					{ "n", 10321 },	-- Emberstrife
 					{ "i", 16888 },	-- Dull Drakefire Amulet
 				},
-				["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DESOLACE },
@@ -86,11 +86,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			},
 			q(4983, {	-- Bijou's Reconnaissance Report
+				["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
 				["providers"] = {
 					{ "n", 10257 },	-- Bijou
 					{ "i", 12652 },	-- Bijou's Reconnaissance Report
 				},
-				["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BADLANDS },
 				["races"] = HORDE_ONLY,
@@ -124,8 +124,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = lvlsquish(57, 57, 20),
 			}),
 			q(6602, {	-- Blood of the Black Dragon Champion
-				["qg"] = 10182,	-- Rexxar [Classic] / Rokaro [TBC+] <Champion of the Horde>
 				["sourceQuest"] = 6601,	-- Ascension...
+				["qg"] = 10182,	-- Rexxar [Classic] / Rokaro [TBC+] <Champion of the Horde>
 				-- #if AFTER TBC
 				["coord"] = { 25.6, 70.0, DESOLACE },
 				-- #else
@@ -154,11 +154,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5068, {	-- Breastplate of Bloodthirst
-				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
+				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61, 38.8, WINTERSPRING },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 10 },	-- Frayed Abomination Stitching
@@ -175,11 +175,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5166, {	-- Breastplate of the Chromatic Flight
-				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
+				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
-				["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -194,8 +194,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5063, {	-- Cap of the Scarlet Savant
-				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
+				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61, 38.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { STRATHOLME },
@@ -215,15 +215,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5164, {	-- Catalogue of the Wayward
-				["qg"] = 10976,	-- Jeziba
 				["sourceQuest"] = 5162,	-- Wrath of the Blue Flight (2/2)
+				["qg"] = 10976,	-- Jeziba
 				["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 			}),
 			q(8181, {	-- Confront Yeh'kinya
-				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 4788,	-- The Final Tablets
+				["qg"] = 10460,	-- Prospector Ironboot
 				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
@@ -237,11 +237,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4765, {	-- Delivery to Ridgewell
+				["sourceQuest"] = 4764,	-- Doomrigger's Clasp
 				["providers"] = {
 					{ "n", 9565 },	-- Mayara Brightwing
 					{ "i", 12437 },	-- Ridgewell's Crate
 				},
-				["sourceQuest"] = 4764,	-- Doomrigger's Clasp
 				["coord"] = { 84.8, 69, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -256,8 +256,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4764, {	-- Doomrigger's Clasp
-				["qg"] = 9565,	-- Mayara Brightwing
 				["sourceQuest"] = 4766,	-- Mayara Brightwing
+				["qg"] = 9565,	-- Mayara Brightwing
 				["coord"] = { 84.8, 69, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -272,8 +272,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6502, {	-- Drakefire Amulet
-				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 6501,	-- The Dragon's Eye
+				["qg"] = 10929,	-- Haleh
 				["coord"] = { 54.55, 51.2, WINTERSPRING },
 				["timeline"] = { REMOVED_3_0_2 },
 				["races"] = ALLIANCE_ONLY,
@@ -288,8 +288,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4735, {	-- Egg Collection
-				["qg"] = 10267,	-- Tinkee Steamboil
 				["sourceQuest"] = 4734,	-- Egg Freezing
+				["qg"] = 10267,	-- Tinkee Steamboil
 				["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
@@ -307,8 +307,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4734, {	-- Egg Freezing
-				["qg"] = 10267,	-- Tinkee Steamboil
 				["sourceQuest"] = 4907,	-- Tinkee Steamboil
+				["qg"] = 10267,	-- Tinkee Steamboil
 				["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
@@ -328,8 +328,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4941, {	-- Eitrigg's Wisdom
-				["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 				["sourceQuest"] = 4903,	-- Warlord's Command
+				["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 				["coord"] = { 5.8, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { ORGRIMMAR },
@@ -343,11 +343,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6570, {	-- Emberstrife
+				["sourceQuest"] = 6569,	-- Oculus Illusions
 				["providers"] = {
 					{ "n", 11872 },	-- Myranda the Hag
 					{ "i", 16787 },	-- Amulet of Draconic Subversion
 				},
-				["sourceQuest"] = 6569,	-- Oculus Illusions
 				["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DUSTWALLOW_MARSH },
@@ -391,14 +391,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, q(84495, {	-- Fiery Plate Gauntlets
-				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
-				["requireSkill"] =
-					-- #if AFTER TBC
-					BLACKSMITHING,
-					-- #else
-					9788,	-- Armorsmith
-					-- #endif
+				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { ADDED_1_15_3 },
 				["cost"] = {
@@ -407,6 +401,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 7078, 2 },	-- Essence of Fire
 					{ "i", 7910, 4 },	-- Star Ruby
 				},
+				["requireSkill"] =
+					-- #if AFTER TBC
+					BLACKSMITHING,
+					-- #else
+					9788,	-- Armorsmith
+					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
 					i(227909, {	-- Plans: Fiery Plate Gauntlets of the Hidden Technique (RECIPE!)
@@ -419,14 +419,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			})),
 			-- #endif
 			q(5124, {	-- Fiery Plate Gauntlets
-				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
-				["requireSkill"] =
-					-- #if AFTER TBC
-					BLACKSMITHING,
-					-- #else
-					9788,	-- Armorsmith
-					-- #endif
+				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -441,6 +435,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 7078, 2 },	-- Essence of Fire
 					{ "i", 7910, 4 },	-- Star Ruby
 				},
+				["requireSkill"] =
+					-- #if AFTER TBC
+					BLACKSMITHING,
+					-- #else
+					9788,	-- Armorsmith
+					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
 					i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
@@ -464,8 +464,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4974, {	-- For The Horde!
-				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 4941,	-- Eitrigg's Wisdom
+				["qg"] = 4949,	-- Thrall <Warchief>
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -499,8 +499,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 			}),
 			q(5102, {	-- General Drakkisath's Demise
-				["qg"] = 9560,	-- Marshal Maxwell
 				["sourceQuest"] = 5089,	-- General Drakkisath's Command
+				["qg"] = 9560,	-- Marshal Maxwell
 				["coord"] = { 84.6, 68.8, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -521,12 +521,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(27445, {	-- General Drakkisath, Hand of Nefarian
-				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["sourceQuests"] = {
 					27470,	-- A Potential Ally
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
+				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -548,15 +548,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5103, {	-- Hot Fiery Death
+				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
 				["provider"] = { "o", 176090 },	-- Human Remains
+				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
 					-- #if AFTER TBC
 					BLACKSMITHING,
 					-- #else
 					9788,	-- Armorsmith
 					-- #endif
-				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
-				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					i(12812, {	-- Unfired Plate Gauntlets
@@ -581,11 +581,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5067, {	-- Leggings of Arcana
-				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
+				["qg"] = 10637,	-- Malyfous Darkhammer
 				["coord"] = { 61, 38.8, WINTERSPRING },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
@@ -602,11 +602,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5167, {	-- Legplates of the Chromatic Defier
-				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
+				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
-				["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -624,11 +624,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5126, {	-- Lorax's Tale
+				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["providers"] = {
 					{ "n", 10918 },	-- Lorax
 					{ "i", 12806 },	-- Unforged Rune Covered Breastplate
 				},
-				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] = BLACKSMITHING,
@@ -636,8 +636,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 			}),
 			q(5081, {	-- Maxwell's Mission
-				["qg"] = 9560,	-- Marshal Maxwell
 				["sourceQuest"] = 5002,	-- Message to Maxwell
+				["qg"] = 9560,	-- Marshal Maxwell
 				["coord"] = { 84.6, 68.8, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -670,21 +670,21 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4766, {	-- Mayara Brightwing
-				["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
 				["altQuests"] = {
 					4764,	-- Doomrigger's Clasp [NOT SURE, but this quest constantly resets to Not Complete on Blizzard's Side.]
 				},
+				["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
 				["coord"] = { 74, 30, STORMWIND_CITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 			}),
 			q(5002, {	-- Message to Maxwell
+				["sourceQuest"] = 5001,	-- Bijou's Belongings (A)
 				["providers"] = {
 					{ "n", 10257 },	-- Bijou
 					{ "i", 12770 },	-- Bijou's Information
 				},
-				["sourceQuest"] = 5001,	-- Bijou's Belongings (A)
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
@@ -692,11 +692,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			-- #if AFTER TBC
 			q(6568, {	-- Mistress of Deception
+				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["providers"] = {
 					{ "n", 10182 },	-- Rokaro <Champion of the Horde>
 					{ "i", 16785 },	-- Rokaro's Letter
 				},
-				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["coord"] = { 25.6, 70.0, DESOLACE },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
@@ -705,10 +705,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			-- #endif
 			q(4866, {	-- Mother's Milk
-				["qg"] = 9563,	-- Ragged John
 				-- #if BEFORE 4.0.3
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
+				["qg"] = 9563,	-- Ragged John
 				["coord"] = { 65, 23.6, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
@@ -722,8 +722,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6569, {	-- Oculus Illusions
-				["qg"] = 11872,	-- Myranda the Hag
 				["sourceQuest"] = 6568,	-- The Testament of Rexxar
+				["qg"] = 11872,	-- Myranda the Hag
 				["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -742,13 +742,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 			}),
 			q(5047, {	-- Pip Quickwit, At Your Service!
+				-- #if BEFORE 4.0.3
+				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
+				-- #endif
 				["providers"] = {
 					{ "n", 10776 },	-- Pip Quickwit
 					{ "i", 12710 },	-- Glowing Hunk of the Beast's Flesh
 				},
-				-- #if BEFORE 4.0.3
-				["description"] = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
-				-- #endif
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["cr"] = 10430,	-- The Beast
@@ -776,10 +776,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4742, {	-- Seal of Ascension (1/2)
-				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 				-- #if BEFORE 4.0.3
 				["description"] = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
 				-- #endif
+				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 				["timeline"] = { REMOVED_4_0_3 },
 				["cost"] = {
 					{ "i", 12336, 1 },	-- Gemstone of Spirestone
@@ -790,11 +790,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 			}),
 			q(4743, {	-- Seal of Ascension (2/2)
-				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
-				["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
 				-- #if BEFORE 4.0.3
 				["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
 				-- #endif
+				["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
+				["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DUSTWALLOW_MARSH },
 				["lvl"] = 57,
@@ -824,8 +824,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6567, {	-- The Champion of the Horde
-				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 6566,	-- What the Wind Carries
+				["qg"] = 4949,	-- Thrall <Warchief>
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { DESOLACE },
@@ -833,8 +833,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 55,
 			}),
 			q(4768, {	-- The Darkstone Tablet
-				["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 				["sourceQuest"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
+				["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 				["coord"] = { 3, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -855,16 +855,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5127, {	-- The Demon Forge
-				["qg"] = 10918,	-- Lorax
 				["sourceQuest"] = 5126,	-- Lorax's Tale
+				["qg"] = 10918,	-- Lorax
+				["coord"] = { 63.8, 73.8, WINTERSPRING },
+				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
 					-- #if AFTER TBC
 					BLACKSMITHING,
 					-- #else
 					9788,	-- Armorsmith
 					-- #endif
-				["coord"] = { 63.8, 73.8, WINTERSPRING },
-				["timeline"] = { REMOVED_4_0_3 },
 				["learnedAt"] = 275,
 				["lvl"] = 55,
 				["groups"] = {
@@ -886,12 +886,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(27444, {	-- The False Warchief
-				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["sourceQuests"] = {
 					27470,	-- A Potential Ally
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
+				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -901,8 +901,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(4788, {	-- The Final Tablets
-				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 5065,	-- The Lost Tablets of Mosh'aru
+				["qg"] = 10460,	-- Prospector Ironboot
 				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
@@ -922,14 +922,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(8182, {	-- The Hand of Rastakhan
-				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuest"] = 8181,	-- Confront Yeh'kinya
+				["qg"] = 10460,	-- Prospector Ironboot
 				["coord"] = { 66.8, 24, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 			}),
 			q(5065, {	-- The Lost Tablets of Mosh'aru
-				["qg"] = 10460,	-- Prospector Ironboot
 				["sourceQuests"] = {
 					-- #if SEASON_OF_DISCOVERY
 					82095,	-- The God Hakkar
@@ -937,6 +936,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					3528,	-- The God Hakkar
 					-- #endif
 				},
+				["qg"] = 10460,	-- Prospector Ironboot
 				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { EASTERN_PLAGUELANDS },
@@ -971,13 +971,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5160, {	-- The Matron Protectorate
+				-- #if BEFORE 4.0.3
+				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
+				-- #endif
 				["providers"] = {
 					{ "n", 10740 },	-- Awbee
 					{ "i", 12923 },	-- Awbee's Scale
 				},
-				-- #if BEFORE 4.0.3
-				["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
-				-- #endif
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
 				["lvl"] = 57,
@@ -1004,12 +1004,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6585, {	-- The Test of Skulls, Axtroz
-				["qg"] = 10321,	-- Emberstrife
 				["sourceQuests"] = {
 					6584,	-- The Test of Skulls, Chronalis
 					6582,	-- The Test of Skulls, Scryer
 					6583,	-- The Test of Skulls, Somnus
 				},
+				["qg"] = 10321,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WETLANDS },
@@ -1024,8 +1024,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6584, {	-- The Test of Skulls, Chronalis
-				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
+				["qg"] = 10321,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { TANARIS },
@@ -1040,8 +1040,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6582, {	-- The Test of Skulls, Scryer
-				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
+				["qg"] = 10321,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WINTERSPRING },
@@ -1056,8 +1056,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6583, {	-- The Test of Skulls, Somnus
-				["qg"] = 10321,	-- Emberstrife
 				["sourceQuest"] = 6570,	-- Emberstrife
+				["qg"] = 10321,	-- Emberstrife
 				["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { SWAMP_OF_SORROWS },
@@ -1073,11 +1073,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			-- #if BEFORE TBC
 			q(6568, {	-- The Testament of Rexxar
+				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["providers"] = {
 					{ "n", 10182 },	-- Rexxar <Champion of the Horde>
 					{ "i", 16785 },	-- Rexxar's Testament
 				},
-				["sourceQuest"] = 6567,	-- The Champion of the Horde
 				["coords"] = {
 					{ 54.0, 3.2, DESOLACE },
 					{ 62.8, 22.6, DESOLACE },
@@ -1096,20 +1096,20 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			-- #endif
 			q(4907, {	-- Tinkee Steamboil
-				["qg"] = 10468,	-- Felnok Steelspring
 				["sourceQuest"] = 4810,	-- Return to Tinkee
+				["qg"] = 10468,	-- Felnok Steelspring
 				["coord"] = { 61.6, 38.6, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 57,
 			}),
 			q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
-				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["sourceQuests"] = {
 					27470,	-- A Potential Ally
 					27471,	-- Blackrock Anomaly
 					27469,	-- Friends on The Other Side
 				},
+				["qg"] = 10299,	-- Acride <Scarshield Legion>
 				["timeline"] = { ADDED_4_0_3 },
 				["lvl"] = lvlsquish(55, 55, 20),
 				["groups"] = {
@@ -1121,6 +1121,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
+					}),
+					i(66000, {  -- Band of the Spire
+						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(65933, {	-- Highlord's Chestpiece
 						["timeline"] = { ADDED_4_0_3 },
@@ -1158,13 +1161,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["lvl"] = 57,
 			}),
 			q(4903, {	-- Warlord's Command
+				-- #if BEFORE 4.0.3
+				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
+				-- #endif
 				["providers"] = {
 					{ "n", 9077 },	-- Warlord Goretooth <Kargath Expeditionary Force>
 					{ "i", 12563 },	-- Warlord Goretooth's Command
 				},
-				-- #if BEFORE 4.0.3
-				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
-				-- #endif
 				["coord"] = { 5.8, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
@@ -1204,23 +1207,23 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 			}),
 			q(6566, {	-- What the Wind Carries
-				["qg"] = 4949,	-- Thrall <Warchief>
 				["sourceQuest"] = 4974,	-- For The Horde!
+				["qg"] = 4949,	-- Thrall <Warchief>
 				["coord"] = { 32.0, 37.8, ORGRIMMAR },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 			}),
 			q(5161, {	-- Wrath of the Blue Flight (1/2)
-				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 5160,	-- The Matron Protectorate
+				["qg"] = 10929,	-- Haleh
 				["coord"] = { 54.4, 51.2, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 57,
 			}),
 			q(5162, {	-- Wrath of the Blue Flight (2/2)
-				["qg"] = 10929,	-- Haleh
 				["sourceQuest"] = 5161,	-- Wrath of the Blue Flight (1/2)
+				["qg"] = 10929,	-- Haleh
 				["coord"] = { 54.4, 51.2, WINTERSPRING },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { WESTERN_PLAGUELANDS },
@@ -1427,8 +1430,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
-				i(14513, {	-- Pattern: Robe of the Archmage
+				i(14513, {	-- Pattern: Robe of the Archmage (RECIPE!)
 					["cr"] = 9264,	-- Firebrand Pyromancer
+					-- #if TBC
+					-- During TBC this was made exclusively usable by Mages, then that change was reverted with Wrath.
+					["classes"] = { MAGE },
+					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)
@@ -2130,16 +2137,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(396, {	-- Overlord Wyrmthalak
 				["creatureID"] = 9568,	-- Overlord Wyrmthalak
 				["groups"] = {
-					ach(643, {	-- Lower Blackrock Spire
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							5089,	-- General Drakkisath's Command
-							5081,	-- Maxwell's Mission
-							4742,	-- Seal of Ascension
-							4903,	-- Warlord's Command
-						},
-						-- #endif
-					}),
+					ach(643),	-- Lower Blackrock Spire
 					ach(5052, {	-- Lower Blackrock Spire Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -2277,6 +2275,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				-- #endif
 				n(ZONE_DROPS, {
+					i(12607, {	-- Brilliant Chromatic Scale
+						-- Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.
+						["crs"] = {
+							10447,	-- Chromatic Dragonspawn
+							10814,	-- Chromatic Elite Guard
+							10442,	-- Chromatic Whelp
+						},
+					}),
 					i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
 						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
@@ -2308,16 +2314,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					}),
 					-- #endif
-				}),
-				prof(SKINNING, {
-					["crs"] = {
-						10447,	-- Chromatic Dragonspawn
-						10814,	-- Chromatic Elite Guard
-						10442,	-- Chromatic Whelp
-					},
-					["groups"] = {
-						i(12607),	-- Brilliant Chromatic Scale
-					},
 				}),
 				n(9816, {	-- Pyroguard Emberseer
 					["timeline"] = { REMOVED_6_0_2 },
@@ -3012,13 +3008,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["groups"] = {
 						ach(1307, {	-- Upper Blackrock Spire
 							["timeline"] = { REMOVED_6_0_2 },
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								6602,	-- Blood of the Black Dragon Champion
-								6502,	-- Drakefire Amulet
-								5102,	-- General Drakkisath's Demise
-							},
-							-- #endif
 						}),
 						i(16663, {	-- Blood of the Black Dragon Champion
 							["timeline"] = { REMOVED_4_0_3 },

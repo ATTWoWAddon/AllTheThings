@@ -86,7 +86,7 @@ is(22739, 28271, MAGE);				-- Tome of Polymorph: Turtle
 is(44714, 61316, MAGE);				-- Tome of Dalaran Brilliance [REMOVED]
 is(44602, 61024, MAGE);				-- Tome of Dalaran Intellect [REMOVED]
 is(44709, 61305, MAGE);				-- Tome of Polymorph: Black Cat
--- NYI --
+--- NYI ---
 is(44600, 61025, MAGE);				-- Tome of Polymorph: Serpent
 
 -----------------
@@ -97,7 +97,7 @@ is(44793, 61721, MAGE);				-- Tome of Polymorph: Rabbit
 -----------------
 -- PATCH 3.3.5 --
 -----------------
--- NYI --
+--- NYI ---
 is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 
 -----------------
@@ -105,9 +105,9 @@ is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 -----------------
 is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
--- iq(86125, 31304);					-- Kafa Press
--- iq(86529, 31432);					-- Manipulator's Talisman
-is(0, 131204);						-- Path of the Jade Serpent
+is(0, 119467);						-- Battle Pet Training
+--iq(86125, 31304);					-- Kafa Press
+--iq(86529, 31432);					-- Manipulator's Talisman
 
 -----------------
 -- PATCH 5.2.0 --
@@ -116,44 +116,79 @@ is(94232, 138430, HUNTER);			-- Ancient Tome of Dinomancy
 is(0, 101508, WARLOCK);				-- The Codex of Xerrath
 
 -----------------
+-- PATCH 5.4.0 --
+-----------------
+is(0, 131228);						-- Path of the Black Ox
+is(0, 131204);						-- Path of the Jade Serpent
+is(0, 131222);						-- Path of the Mogu King
+is(0, 131232);						-- Path of the Necromancer
+is(0, 131231);						-- Path of the Scarlet Blade
+is(0, 131229);						-- Path of the Scarlet Mitre
+is(0, 131225);						-- Path of the Setting Sun
+is(0, 131206);						-- Path of the Shado-Pan
+is(0, 131205);						-- Path of the Stout Brew
+
+-----------------
 -- PATCH 6.0.1 --
 -----------------
+is(0, 159895);						-- Path of the Bloodmaul
+is(0, 159902);						-- Path of the Burning Mountain
 is(0, 159899);						-- Path of the Crescent Moon
 is(0, 159900);						-- Path of the Dark Rail
 is(0, 159896);						-- Path of the Iron Prow
+is(0, 159898);						-- Path of the Skies
 is(0, 159901);						-- Path of the Verdant
+is(0, 159897);						-- Path of the Vigilant
 
 -----------------
 -- PATCH 6.0.2 --
 -----------------
+iq(139003, 43016);					-- Broken Pet Portal
+ihqt(118727, 34557);				-- Frostfire Treasure Map
+ihqt(118729, 36465);				-- Gorgrond Treasure Map
+ihqt(118732, 36468);				-- Nagrand Treasure Map
+ihqt(118730, 36466);				-- Talador Treasure Map
+ihqt(118728, 36464);				-- Shadowmoon Valley Treasure Map
+ihqt(118731, 36467);				-- Spires of Arak Treasure Map
 is(120138, 161354, MAGE);			-- Tome of Polymorph: Monkey
 is(120139, 161355, MAGE);			-- Tome of Polymorph: Penguin
 is(120137, 161353, MAGE);			-- Tome of Polymorph: Polar Bear Cub
 is(120140, 126819, MAGE);			-- Tome of Polymorph: Porcupine
-iq(139003, 43016);					-- Broken Pet Portal
-iq(118730, 36466);					-- Talador Treasure Map
-iq(118731, 36467);					-- Spires of Arak Treasure Map
-iq(118732, 36468);					-- Nagrand Treasure Map
-iq(118729, 36465);					-- Gorgrond Treasure Map
-iq(118727, 34557);					-- Frostfire Treasure Map
-iq(118728, 36464);					-- Shadowmoon Valley Treasure Map
 
 -----------------
 -- PATCH 6.2.0 --
 -----------------
-iq(128474, 39463);					-- Treasure Map: Tanaan Jungle
-iq(128294, 37485);					-- Trade Agreement: Arakkoa Outcasts
-iq(128250, 39358);					-- Equipment Blueprint: Unsinkable
-iq(128444, 39561);					-- Blueprint: Oil Rig
-iq(113212, 39463);					-- Treasure Map: Tanaan Jungle
+iq(128444, 39561);					-- Blueprint: Oil Rig [A]
+iq(128490, 39561);					-- Blueprint: Oil Rig [H]
 iq(128251, 39359);					-- Equipment Blueprint: Tuskarr Fishing Net
-iq(128490, 39561);					-- Blueprint: Oil Rig
+iq(128250, 39358);					-- Equipment Blueprint: Unsinkable
 iq(128446, 39564);					-- Saberstalker Teachings: Trailblazer
+iq(128294, 37485);					-- Trade Agreement: Arakkoa Outcasts
+ihqt(128474, 39463);				-- Treasure Map: Tanaan Jungle [A]
+ihqt(113212, 39463);				-- Treasure Map: Tanaan Jungle [H]
+
+-----------------
+-- PATCH 6.2.2 --
+-----------------
+-- Hallow's End --
+iq(128664, 39759);					-- Creepy Crawlers
+iq(128660, 39758);					-- Ghoulish Guises
+iq(128661, 39612);					-- Hallow's Glow
+iq(128662, 39613);					-- Seer's Invitation
+iq(128663, 39611);					-- Witch's Brew
+-- Feast of Winter Veil --
+iq(128665, 39615);					-- Ball of Tangled Lights
+iq(128666, 39616);					-- Imported Trees
+iq(128667, 39767);					-- Little Helpers
+iq(128669, 39712);					-- Old Box of Decorations
+--iq(128668, 39671);				-- Festive Outfits [this quest is not permanently completed, so it can't be a character unlock]
 
 -----------------
 -- PATCH 7.0.3 --
 -----------------
+-- Classes --
 is(136796, 127344, DEATHKNIGHT);	-- Necrophile Tome: Corpse Exploder
+ihqt(141409, 44455, DEMONHUNTER);	-- Candrael's Charm
 is(136795, 127757, DRUID);			-- Tome of the Wilds: Charm Woodland Creature
 is(136794, 164862, DRUID);			-- Tome of the Wilds: Flap
 is(136789, 210053, DRUID);			-- Tome of the Wilds: Mount Form
@@ -172,11 +207,13 @@ is(136803, 210108, ROGUE);			-- Dirty Tricks, Vol 1: Detection
 is(136972, 211015, SHAMAN);			-- Tome of Hex: Cockroach
 is(136938, 210873, SHAMAN);			-- Tome of Hex: Compy
 is(136969, 211004, SHAMAN);			-- Tome of Hex: Spider
-iq(140327, 43987);					-- Kyrtos's Research Notes
+-- Ancient Mana --
 iq(140326, 43986);					-- Enchanted Burial Urn
 iq(140329, 43989);					-- Infinite Stone
-iq(140328, 43988);					-- Volatile Leyline Crystal
 iq(136269, 42842);					-- Kel'danath's Manaflask
+iq(140327, 43987);					-- Kyrtos's Research Notes
+iq(140328, 43988);					-- Volatile Leyline Crystal
+-- Reaves Module --
 iq(132528, 40734);					-- Reaves Module: Fireworks Display Mode
 iq(132526, 40733);					-- Reaves Module: Failure Detection Mode
 iq(132529, 40735);					-- Reaves Module: Snack Distribution Mode
@@ -184,33 +221,55 @@ iq(132525, 40732);					-- Reaves Module: Repair Mode
 iq(132531, 40737);					-- Reaves Module: Piloted Combat Mode
 iq(132530, 40736);					-- Reaves Module: Bling Mode
 iq(132524, 40738);					-- Reaves Module: Wormhole Generator Mode
--- NYI
+-- Order Hall --
+ihqt(142522, 45315);				-- Rude Letter
+-- The Underbelly Portals --
+iq(138031, 42531);					-- Portal Key: Abandoned Shack
+iq(138030, 42530);					-- Portal Key: Alchemists' Lair
+iq(138028, 42528);					-- Portal Key: Black Market
+iq(138029, 42529);					-- Portal Key: Inn Entrance
+iq(138032, 42532);					-- Portal Key: Rear Entrance
+iq(138027, 42527);					-- Portal Key: Sewer Guard Station
+--- NYI ---
 is(136971, 211010, SHAMAN);			-- Tome of Hex: Snake
 
 -----------------
 -- PATCH 7.2.0 --
 -----------------
 is(147580, 242155, HUNTER);			-- Tome of the Hybrid Beast
--- NYI --
+--- NYI ---
 is(147770, nil, HUNTER);			-- Tome of the PTR Beast
 
 -----------------
 -- PATCH 7.3.0 --
 -----------------
 iq(152964, 49006);					-- Krokul Flute
+iq(152583, 48546);					-- Underlight Emerald
 
 -----------------
 -- PATCH 8.0.1 --
 -----------------
-is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
-is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
 is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel
 is(162623, 277778, SHAMAN);			-- Tome of Hex: Zandalari Tendonripper
+is(162626, 277792, MAGE);			-- Tome of Polymorph: Bumblebee
+is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
+-- Flight Path Maps --
+iq(166445, 54705);					-- 7th Legion Scouting Map
+iq(166444, 54704);					-- Honorbound Scouting Map
+-- Outpost Upgrades --
+ihqt(165880, 54304);				-- Outpost Upgrade: Arom's Stand
+ihqt(165836, 54261);				-- Outpost Upgrade: Brennadam
+ihqt(165873, 54283);				-- Outpost Upgrade: Castaway Point
+ihqt(165728, 54226);				-- Outpost Upgrade: The Great Seal
+ihqt(165804, 54259);				-- Outpost Upgrade: Vulpera Hideaway
+ihqt(165750, 54238);				-- Outpost Upgrade: Zul'jan Ruins
 
 -----------------
 -- PATCH 8.1.0 --
 -----------------
+ihqt(165944, 54422);				-- A Shady Message [A]
+ihqt(166242, 54445);				-- A Shady Message [H]
 iq(166502, 54753, HUNTER);			-- Blood-Soaked Tome of Dark Whispers
 iq(166749, 54859);					-- Lyrics: Song of the Sea
 
@@ -229,62 +288,123 @@ is(172405, 309328, SHAMAN);			-- Tome of Hex: Living Honey
 iq(175158, 59029, nil, VULPERA);	-- Flames of Fury
 iq(175160, 59035, nil, VULPERA);	-- Holy Relic
 iq(175159, 59032, nil, VULPERA);	-- Sinister Shadows
+ihqt(169693, 57063);				-- Zem'Lans Lost Treasure Map
 
 -----------------
 -- PATCH 9.0.1 --
 -----------------
+-- #if AFTER 9.0.1
+-- Many items were changed only after 9.0.1
+iq(183123, 62254, HUNTER);			-- How to School Your Serpent
 iq(89868, 62677, DRUID);			-- Mark of the Cheetah
 iq(140630, 62678, DRUID);			-- Mark of the Doe
 iq(162022, 62674, DRUID);			-- Mark of the Dolphin
 iq(162029, 62676, DRUID);			-- Mark of the Humble Flyer
--- #if AFTER 9.0.1
--- CRIEVE NOTE: This was appearing in Classic... Ya'll gotta be more careful.
 iq(40919, 62673, DRUID);			-- Mark of the Orca
--- #endif
 iq(129021, 62675, DRUID);			-- Mark of the Sentinel
 iq(162027, 62672, DRUID);			-- Mark of the Tideskipper
-iq(183123, 62254, HUNTER);			-- How to School Your Serpent
 iq(165840, 54264);					-- Shattered Pet Portal
+-- #endif
 
 -----------------
 -- PATCH 9.0.2 --
 -----------------
-iq(183124, 62255, HUNTER);			-- Simple Tome of Bone-Binding
-iq(180705, 61160, HUNTER);			-- Gargon Training Manual
-iq(184219, 62821);					-- Treatise on Sinstone Fragment Acquisition
-iq(184222, 62822);					-- Lemet's Requisition Orders
-iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
-iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(187923, 65039);					-- Aurelid Lure
---- NYI ---
-iq(181443, 61459);					-- The Party Herald's Party Hat
-iq(183957, 62657);					-- Invitation: Grandmaster Vole
+iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
+iq(180705, 61160, HUNTER);			-- Gargon Training Manual
+iq(184222, 62822);					-- Lemet's Requisition Orders
+iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
+iq(183124, 62255, HUNTER);			-- Simple Tome of Bone-Binding
+iq(184219, 62821);					-- Treatise on Sinstone Fragment Acquisition
+-- Ve'nari --
+iq(180949, 61600);					-- Animaflow Stabilizer
+iq(184653, 63217);					-- Animated Levitating Chain
+iq(184617, 63193);					-- Bangle of Seniority
+iq(184901, 63523);					-- Broker Traversal Enhancer
+iq(184613, 63177);					-- Encased Riftwalker Essence
+iq(184615, 63183);					-- Extradimensional Pockets
+iq(184619, 63201);					-- Loupe of Unusual Charm
+iq(180952, 61144);					-- Possibility Matrix
+iq(184618, 63200);					-- Rank Insignia: Acquisitionist
+iq(184621, 63204);					-- Ritual Prism of Fortune
+iq(184605, 63092);					-- Sigil of the Unseen
+iq(184588, 63091);					-- Soul-Stabilizing Talisman
+iq(184620, 63202);					-- Vessel of Unfortunate Spirits
+-- Ember Court --
+iq(181441, 61457);					-- Altar of Accomplishment
+iq(177230, 59681);					-- Anima-Infused Water
+iq(177232, 59683);					-- Bewitched Wardrobe
+iq(177233, 59684);					-- Bounding Shroom Seeds
+iq(181517, 61493);					-- Building: Dredger Pool
+iq(181518, 61494);					-- Building: Guardhouse
+iq(176130, 59494);					-- Contract: Atoning Rituals
+iq(176135, 59503);					-- Contract: Divine Desserts
+iq(176131, 59491);					-- Contract: Glimpse of the Wilds
+iq(176132, 59488);					-- Contract: Lost Chalice Band
+iq(176140, 59512);					-- Contract: Maldraxxian Army
+iq(176128, 59476);					-- Contract: Mortal Reminders
+iq(176136, 59500);					-- Contract: Mushroom Surprise!
+iq(176127, 59479);					-- Contract: Mystery Mirrors
+iq(176139, 59515);					-- Contract: Stoneborn Reserves
+iq(176126, 59473);					-- Contract: Traditional Theme
+iq(176134, 59506);					-- Contract: Tubbins's Tea Party
+iq(176138, 59518);					-- Contract: Venthyr Volunteers
+iq(177231, 59682);					-- Crown of Honor
+iq(177236, 59687);					-- Dog Bone's Bone
+iq(177237, 59688);					-- Dredger Party Supplies
+iq(181521, 61501);					-- Ember Court Ambassador
+iq(177238, 59689);					-- Generous Gift
+iq(181536, 61504);					-- Guest List Page
+iq(181537, 61505);					-- Guest List Page
+iq(181538, 61506);					-- Guest List Page
 iq(183956, 62656);					-- Invitation: Choofa
+iq(183957, 62657);					-- Invitation: Grandmaster Vole
+iq(177243, 59693);					-- Kyrian Arsenal
+iq(177245, 59695);					-- Maldraxxi Challenge Banner
+iq(177241, 59691);					-- Necrolord Arsenal
+iq(177244, 59694);					-- Night Fae Arsenal
+iq(181439, 61455);					-- Protective Braziers
+iq(177239, 59690);					-- Racing Permit
+iq(177234, 59685);					-- Rally Bell
+iq(181440, 61456);					-- Slippery Muck
+iq(181524, 61502);					-- Staff: Ambassador
+iq(182343, 61888);					-- Staff: Bastion Ambassador
+iq(181523, 59437);					-- Staff: Bouncers
+iq(181519, 59435);					-- Staff: Dredger Decorators
+iq(182342, 61887);					-- Staff: Maldraxxus Ambassador
+iq(181520, 59436);					-- Staff: Stage Crew
+iq(181522, 59433);					-- Staff: Waiters
+iq(181533, 61499);					-- Stock: Anima Samples
+iq(181532, 61498);					-- Stock: Appetizers
+iq(181535, 61500);					-- Stock: Comfy Chairs
+iq(181530, 61497);					-- Stock: Greeting Kits
+ihqt(181443, 61459);				-- The Party Herald's Party Hat
+iq(181438, 61454);					-- The Wild Drum
+iq(181437, 61453);					-- Training Dummies
+iq(177235, 59686);					-- Tubbins's Lucky Teapot
+iq(181436, 61452);					-- Vanity Mirror
+iq(177242, 59692);					-- Venthyr Arsenal
+iq(181442, 61458);					-- Visions of Sire Denathrius
 
 -----------------
 -- PATCH 9.0.5 --
 -----------------
-ihqt(185473, 63667);				-- Soulforger's Tools
 ihqt(185632, 63668);				-- Intact Rune Codex
 ihqt(185351, 63641);				-- Rune Codex Page: Forging
 ihqt(185352, 63642);				-- Rune Codex Page: Souls
 ihqt(185353, 63643);				-- Rune Codex Page: Binding
+ihqt(185473, 63667);				-- Soulforger's Tools
 
 -----------------
 -- PATCH 9.1.0 --
 -----------------
-iq(186453, 64061);					-- Vault Anima Tracker
-iq(186722, 64027);					-- Treatise: The Study of Anima and Harnessing Every Drop
-iq(186721, 64366);					-- Treatise: Relics Abound in the Shadowlands
-iq(187145, 64307);					-- Treatise: Recognizing Stygia and its Uses
-iq(187706, 64828);					-- Treatise: Bonds of Stygia in Mortals
+ihqt(186970, 62683);				-- Feeder's Hand and Key
+iq(185965, 63893);					-- Memories of Sunless Skies
 iq(187138, 64303);					-- Research Report: First Alloys
 iq(187136, 64367);					-- Research Report: Relic Examination Techniques
 iq(186716, 64348);					-- Research Report: Ancient Shrines
 iq(186714, 64339);					-- Research Report: All-Seeing Crystal
 iq(186717, 64300);					-- Research Report: Adaptive Alloys
-iq(185965, 63893);					-- Memories of Sunless Skies
-iq(181442, 61458);					-- Visions of Sire Denathrius
 is(0, 354466);						-- Path of the Ascendant
 is(0, 354462);						-- Path of the Courageous
 is(0, 354464);						-- Path of the Misty Forest
@@ -293,6 +413,11 @@ is(0, 354468);						-- Path of the Scheming Loa
 is(0, 354465);						-- Path of the Sinful Soul
 is(0, 354469);						-- Path of the Stone Warden
 is(0, 354467);						-- Path of the Undefeated
+iq(186722, 64027);					-- Treatise: The Study of Anima and Harnessing Every Drop
+iq(186721, 64366);					-- Treatise: Relics Abound in the Shadowlands
+iq(187145, 64307);					-- Treatise: Recognizing Stygia and its Uses
+iq(187706, 64828);					-- Treatise: Bonds of Stygia in Mortals
+iq(186453, 64061);					-- Vault Anima Tracker
 
 -----------------
 -- PATCH 9.1.5 --
@@ -304,16 +429,19 @@ iq(187931, 65059, DRUID);			-- Mark of the Regal Dredbat
 iq(187936, 65062, DRUID);			-- Mark of the Sable Ardenmoth
 iq(187888, 64987, DRUID);			-- Mark of the Shimmering Ardenmoth
 iq(187884, 64986, DRUID);			-- Mark of the Twilight Runestag
-iq(190184, 65623);					-- Incense of Infinity
+ihqt(190184, 65623);				-- Incense of Infinity
+iq(187560, 64628);					-- Rockin' Rollin' Racer Pack
 
 -----------------
 -- PATCH 9.2.0 --
 -----------------
-iq(190640, 65694);					-- Font of Ephemeral Power
-iq(190956, 70705);					-- Decanter of Untapped Potential
+ihqt(190640, 65694);				-- Font of Ephemeral Power
+ihqt(190956, 70705);				-- Decanter of Untapped Potential
 iq(190234, 65617);					-- Enlightened Portal Research
 iq(188793, 65282);					-- Improvised Cypher Analysis Tool
 is(0, 367416);						-- Path of the Streetwise Merchant
+iq(183693, 62409);					-- Plague Doctor's Mask
+ihqt(190644, 70704);				-- Vessel of Profound Possibilities
 
 -----------------
 -- PATCH 9.2.5 --
@@ -341,13 +469,7 @@ is(0, 393262);						-- Path of the Windswept Plains
 ------------------
 -- PATCH 10.0.2 --
 ------------------
-iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
-is(0, 390631, HUNTER);				-- Ottuk Taming
-is(200205 ,391622, MAGE);			-- Tome of Polymorph: Duck
-iq(205954, 76017);					-- Three-Dimensional Compass
-iq(198854, 70409);					-- Archeologist Artifact Notes
-iq(199069, 70538);					-- Yennu's Map
-iq(195453, 67718);					-- Ludo's Stash Map
+-- Profession Knowledge --
 ihqt(201282, 71925);				-- Ancient Tailor's Diagrams
 ihqt(201289, 71924);				-- Ancient Skinner's Notes
 ihqt(201280, 71920);				-- Ancient Scribe's Runic Drawings
@@ -381,17 +503,7 @@ ihqt(200977, 71896);				-- Dusty Engineer's Scribblings
 ihqt(200976, 71895);				-- Dusty Enchanter's Research
 ihqt(200972, 71894);				-- Dusty Blacksmith's Diagrams
 ihqt(200974, 71893);				-- Dusty Alchemist's Research
-iq(200738, 72021);					-- Onyx Gem Cluster Map
-iq(198083, 69996);					-- Expedition Supply Kit
-iq(199068, 70537);					-- Time-Lost Memo
-iq(199065, 70534);					-- Sorrowful Letter
-iq(199062, 70528);					-- Ruby Gem Cluster Map
-iq(199067, 70536);					-- Precious Plans
-iq(194540, 67046);					-- Nokhud Armorer's Notes
-iq(199066, 70535);					-- Letter of Caution
-iq(198843, 70392);					-- Emerald Gardens Explorer's Notes
-iq(198852, 70407);					-- Bear Termination Orders
-iq(199061, 70527);					-- A Guide to Rare Fish
+-- Grand Hunt --
 iq(194095, 71052);					-- Ohuna Companion Color: Sepia
 iq(194088, 71049);					-- Ohuna Companion Color: Dark
 iq(194087, 71051);					-- Ohuna Companion Color: Red
@@ -401,64 +513,95 @@ iq(194089, 71046);					-- Bakar Companion Color: Orange
 iq(194091, 71048);					-- Bakar Companion Color: Golden Brown
 iq(194093, 71045);					-- Bakar Companion Color: Brown
 iq(194094, 71044);					-- Bakar Companion Color: Black
-iq(199844, 70796);					-- Serevite Harpoon Head
-iq(199846, 70798);					-- Seavine Harpoon Rope
-iq(199697, 67140);					-- Polished Basalt Bracelet
-iq(199696, 67141);					-- Iskaaran Ice Axe
-iq(199698, 70794);					-- Irontree Harpoon Handle
-iq(199850, 70802);					-- Imbu Knot
-iq(199694, 75642);					-- Flying Fish Bone Charm
+-- Iskaara Fishing --
+iq(199847, 70799);					-- Braided Seavine Harpoon Rope
+iq(199849, 70801);					-- Dense Draconium Net Weight
+iq(199851, 70803);					-- Double Imbu Knot
 iq(199848, 70800);					-- Draconium Net Weights
+iq(199694, 75642);					-- Flying Fish Bone Charm
+iq(199850, 70802);					-- Imbu Knot
+iq(199698, 70794);					-- Irontree Harpoon Handle
+iq(199695, 70793);					-- Iskaaran Fishing Net
+iq(194510, 70792);					-- Iskaaran Harpoon
+iq(199696, 67141);					-- Iskaaran Ice Axe
+iq(199845, 70797);					-- Jagged Serevite Harpoon Head
+iq(199697, 67140);					-- Polished Basalt Bracelet
+iq(199641, 70795);					-- Reinforced Irontree Harpoon Handle
+iq(199846, 70798);					-- Seavine Harpoon Rope
+iq(199844, 70796);					-- Serevite Harpoon Head
+-- Treasures --
+ihqt(199061, 70527);				-- A Guide to Rare Fish
+ihqt(198854, 70409);				-- Archeologist Artifact Notes
+ihqt(198852, 70407);				-- Bear Termination Orders
+ihqt(198843, 70392);				-- Emerald Gardens Explorer's Notes
+ihqt(199066, 70535);				-- Letter of Caution
+ihqt(194540, 67046);				-- Nokhud Armorer's Notes
+ihqt(200738, 72021);				-- Onyx Gem Cluster Map
+ihqt(199067, 70536);				-- Precious Plans
+ihqt(199062, 70528);				-- Ruby Gem Cluster Map
+ihqt(199065, 70534);				-- Sorrowful Letter
+ihqt(199068, 70537);				-- Time-Lost Memo
+-- Various --
+iq(198083, 69996);					-- Expedition Supply Kit
+ihqt(202047, 72248);				-- Gleaming Incarnate Thunderstone
+iq(201791, 72094, HUNTER);			-- How to Train a Dragonkin
+iq(195453, 67718);					-- Ludo's Stash Map
+is(0, 390631, HUNTER);				-- Ottuk Taming
+is(200205 ,391622, MAGE);			-- Tome of Polymorph: Duck
+iq(199069, 70538);					-- Yennu's Map
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
-ihqt(205355, 75757);				-- Niffen Notebook of Tailoring Knowledge
-ihqt(205357, 75760);				-- Niffen Notebook of Skinning Knowledge
-ihqt(205356, 75758);				-- Niffen Notebook of Mining Knowledge
-ihqt(205350, 75751);				-- Niffen Notebook of Leatherworking Knowledge
-ihqt(205348, 75754);				-- Niffen Notebook of Jewelcrafting Knowledge
-ihqt(205354, 75761);				-- Niffen Notebook of Inscription Knowledge
-ihqt(205358, 75753);				-- Niffen Notebook of Herbalism Knowledge
-ihqt(205349, 75759);				-- Niffen Notebook of Engineering Knowledge
-ihqt(205351, 75752);				-- Niffen Notebook of Enchanting Knowledge
-ihqt(205352, 75755);				-- Niffen Notebook of Blacksmithing Knowledge
-ihqt(205353, 75756);				-- Niffen Notebook of Alchemy Knowledge
-ihqt(205431, 75837);				-- Bartered Tailoring Notes
-ihqt(205433, 75838);				-- Bartered Skinning Notes
-ihqt(205432, 75839);				-- Bartered Mining Notes
-ihqt(205426, 75840);				-- Bartered Leatherworking Notes
-ihqt(205424, 75841);				-- Bartered Jewelcrafting Notes
-ihqt(205430, 75842);				-- Bartered Inscription Notes
-ihqt(205434, 75843);				-- Bartered Herbalism Notes
-ihqt(205425, 75844);				-- Bartered Engineering Notes
-ihqt(205427, 75845);				-- Bartered Enchanting Notes
-ihqt(205428, 75846);				-- Bartered Blacksmithing Notes
-ihqt(205429, 75847);				-- Bartered Alchemy Notes
-ihqt(205442, 75858);				-- Bartered Tailoring Journal
-ihqt(205444, 75857);				-- Bartered Skinning Journal
-ihqt(205443, 75856);				-- Bartered Mining Journal
-ihqt(205437, 75855);				-- Bartered Leatherworking Journal
-ihqt(205435, 75854);				-- Bartered Jewelcrafting Journal
-ihqt(205441, 75853);				-- Bartered Inscription Journal
-ihqt(205445, 75852);				-- Bartered Herbalism Journal
-ihqt(205436, 75851);				-- Bartered Engineering Journal
-ihqt(205438, 75850);				-- Bartered Enchanting Journal
-ihqt(205439, 75849);				-- Bartered Blacksmithing Journal
 ihqt(205440, 75848);				-- Bartered Alchemy Journal
+ihqt(205429, 75847);				-- Bartered Alchemy Notes
+ihqt(205439, 75849);				-- Bartered Blacksmithing Journal
+ihqt(205428, 75846);				-- Bartered Blacksmithing Notes
+ihqt(205438, 75850);				-- Bartered Enchanting Journal
+ihqt(205427, 75845);				-- Bartered Enchanting Notes
+ihqt(205436, 75851);				-- Bartered Engineering Journal
+ihqt(205425, 75844);				-- Bartered Engineering Notes
+ihqt(205445, 75852);				-- Bartered Herbalism Journal
+ihqt(205434, 75843);				-- Bartered Herbalism Notes
+ihqt(205441, 75853);				-- Bartered Inscription Journal
+ihqt(205430, 75842);				-- Bartered Inscription Notes
+ihqt(205435, 75854);				-- Bartered Jewelcrafting Journal
+ihqt(205424, 75841);				-- Bartered Jewelcrafting Notes
+ihqt(205437, 75855);				-- Bartered Leatherworking Journal
+ihqt(205426, 75840);				-- Bartered Leatherworking Notes
+ihqt(205443, 75856);				-- Bartered Mining Journal
+ihqt(205432, 75839);				-- Bartered Mining Notes
+ihqt(205444, 75857);				-- Bartered Skinning Journal
+ihqt(205433, 75838);				-- Bartered Skinning Notes
+ihqt(205442, 75858);				-- Bartered Tailoring Journal
+ihqt(205431, 75837);				-- Bartered Tailoring Notes
 iq(205451, 75866);					-- Flawless Crystal Scale
+ihqt(205353, 75756);				-- Niffen Notebook of Alchemy Knowledge
+ihqt(205352, 75755);				-- Niffen Notebook of Blacksmithing Knowledge
+ihqt(205351, 75752);				-- Niffen Notebook of Enchanting Knowledge
+ihqt(205349, 75759);				-- Niffen Notebook of Engineering Knowledge
+ihqt(205358, 75753);				-- Niffen Notebook of Herbalism Knowledge
+ihqt(205354, 75761);				-- Niffen Notebook of Inscription Knowledge
+ihqt(205348, 75754);				-- Niffen Notebook of Jewelcrafting Knowledge
+ihqt(205350, 75751);				-- Niffen Notebook of Leatherworking Knowledge
+ihqt(205356, 75758);				-- Niffen Notebook of Mining Knowledge
+ihqt(205357, 75760);				-- Niffen Notebook of Skinning Knowledge
+ihqt(205355, 75757);				-- Niffen Notebook of Tailoring Knowledge
+ihqt(205878, 75968);				-- Obsidian Aspectral Earthstone
 is(0, 410074);						-- Path of Festering Rot
 is(0, 410071);						-- Path of the Freebooter
 is(0, 410078);						-- Path of the Earth-Warder
 is(0, 410080);						-- Path of Wind's Domain
+iq(205954, 76017);					-- Three-Dimensional Compass
 
 ------------------
 -- PATCH 10.1.5 --
 ------------------
--- #IF AFTER 10.1.5
+-- #if AFTER 10.1.5
+-- Many items were changed only after 10.1.5
 iq(206473, 76307);					-- Makeshift Grappling Hook
--- #ENDIF
---- Imp ---
+ihqt(208191, 77421);				-- Time Lost Fragment
+-- Imp --
 iq(207178, 76743, WARLOCK);			-- Grimoire of the Darkfire Imp
 iq(207295, 76744, WARLOCK);			-- Grimoire of the Dreadfire Imp
 iq(129018, 76369, WARLOCK);			-- Grimoire of the Fel Imp
@@ -469,24 +612,46 @@ iq(207111, 76737, WARLOCK);			-- Grimoire of the Hellfire Fel Imp
 iq(207296, 76745, WARLOCK);			-- Grimoire of the Netherbound Imp
 iq(207113, 76741, WARLOCK);			-- Grimoire of the Trickster Fel Imp
 iq(207112, 76740, WARLOCK);			-- Grimoire of the Void-Touched Fel Imp
---- Voidwalker ---
+-- Voidwalker --
 iq(139311, 76375, WARLOCK);			-- Grimoire of the Voidlord
---- Succubus ---
+-- Succubus --
 iq(147117, 76377, WARLOCK);			-- Orb of the Fel Temptress
 iq(147119, 76372, WARLOCK);			-- Grimoire of the Shadow Succubus
 iq(139310, 76373, WARLOCK);			-- Grimoire of the Shivarra
---- Felhunter ---
+-- Felhunter --
 iq(208051, 77180, WARLOCK);			-- Grimoire of the Antoran Felhunter
 iq(208052, 77181, WARLOCK);			-- Grimoire of the Voracious Felmaw
 iq(208050, 77183, WARLOCK);			-- Grimoire of the Xorothian Felhunter
 iq(208048, 77182, WARLOCK);			-- Ritual of the Voidmaw Felhunter
---- Felguard ---
+-- Felguard --
 iq(139315, 76376, WARLOCK);			-- Grimoire of the Wrathguard
---- Infernal ---
+-- Infernal --
 iq(139314, 76370, WARLOCK);			-- Grimoire of the Abyssal
--- 77184 Probably Normal Felhunter
+-- Naxxramas --
+ihqt(206450, 76291);				-- Omarion's Notes - Pages 1 & 2
+ihqt(206451, 76292);				-- Omarion's Notes - Pages 3 & 4
+ihqt(206452, 76293);				-- Omarion's Notes - Pages 5 & 6
+ihqt(206453, 76294);				-- Omarion's Notes - Pages 7 & 8
+ihqt(206454, 76295);				-- Omarion's Notes - Pages 9 & 10
+ihqt(206455, 76296);				-- Omarion's Notes - Pages 11 & 12
+ihqt(206456, 76297);				-- Omarion's Notes - Pages 13 & 14
+ihqt(206457, 76298);				-- Omarion's Notes - Pages 15 & 16
+ihqt(206458, 76299);				-- Omarion's Notes - Pages 17 & 18
+ihqt(206459, 76300);				-- Omarion's Notes - Pages 19 & 20
+ihqt(206460, 76301);				-- Omarion's Notes - Pages 21 & 22
+ihqt(206461, 76302);				-- Omarion's Notes - Pages 23 & 24
+ihqt(206462, 76303);				-- Omarion's Notes - Pages 25 & 26
+ihqt(206463, 76304);				-- Omarion's Notes - Pages 27 & 28
+ihqt(206464, 76305);				-- Omarion's Notes - Pages 29 & 30
+ihqt(206465, 76306);				-- Omarion's Notes - Pages 31 & 32
 --- NYI ---
 iq(139313, nil, WARLOCK);			-- Grimoire of the Terrorguard
+-- #endif
+
+------------------
+-- PATCH 10.1.7 --
+------------------
+ihqt(208551, 77678);				-- Ambrosial Sporestone
 
 ------------------
 -- PATCH 10.2.0 --
@@ -514,6 +679,7 @@ iq(210728, 78521, DRUID);			-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);			-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);			-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);			-- Cinder of Companionship
+ihqt(210468, 78422);				-- Emerald Blossom Dreamstone
 is(0, 424153);						-- Path of Ancient Horrors
 is(0, 424167);						-- Path of Heart's Bane
 is(0, 424187);						-- Path of the Golden Tomb
@@ -539,6 +705,27 @@ iq(212778, 79373, WARLOCK);			-- Grimoire of the Vile Tyrant
 iq(212995, 79450, WARLOCK);			-- Grimoire of the Whispering Observer
 iq(213014, 79455, WARLOCK);			-- Grimoire of the Xorothian Darkglare
 iq(212984, 79444, WARLOCK);			-- Grimoire of the Zealous Observer
+iq(212925, 79392);					-- Hearthstone Card: Abomination
+iq(212922, 79390);					-- Hearthstone Card: Alley Cat
+iq(212927, 79394);					-- Hearthstone Card: Ancient of Lore
+iq(212932, 79399);					-- Hearthstone Card: Arcane Explosion
+iq(212926, 79393);					-- Hearthstone Card: Arcane Golem
+iq(212933, 79401);					-- Hearthstone Card: Arcane Shot
+iq(212929, 79396);					-- Hearthstone Card: Baron Geddon
+iq(212930, 79397);					-- Hearthstone Card: Blessing of Kings
+iq(213019, 79460);					-- Hearthstone Card: Cairne Bloodhoof
+iq(212938, 79406);					-- Hearthstone Card: Charged Devilsaur
+iq(212921, 79389);					-- Hearthstone Card: Chillwind Yeti
+iq(212931, 79398);					-- Hearthstone Card: Forbidden Words
+iq(212923, 79391);					-- Hearthstone Card: Grove Tender
+iq(213224, 79582);					-- Hearthstone Card: Hand of Protection
+iq(212928, 79395);					-- Hearthstone Card: Hogger
+iq(212939, 79403);					-- Hearthstone Card: Jive, Insect!
+iq(212937, 79402);					-- Hearthstone Card: Preparation
+iq(212934, 79400);					-- Hearthstone Card: Pyroblast
+iq(212936, 79405);					-- Hearthstone Card: Righteousness
+iq(212871, 79384);					-- Hearthstone Card: Scarlet Crusader
+iq(212872, 79385);					-- Hearthstone Card: Shadow Word: Ruin
 
 ------------------
 -- PATCH 10.2.6 --
@@ -612,6 +799,7 @@ ihqt(224645, 83058);				-- Jewel-Etched Alchemy Notes
 ihqt(224647, 83059);				-- Jewel-Etched Blacksmithing Notes
 ihqt(224652, 83060);				-- Jewel-Etched Enchanting Notes
 ihqt(224648, 83061);				-- Jewel-Etched Tailoring Notes
+ihqt(226224, 83826);				-- Luminous Nerubian Catalyst Stone
 ihqt(224653, 83063);				-- Machine-Learned Engineering Notes
 ihqt(224654, 83064);				-- Machine-Learned Inscription Notes
 ihqt(224651, 83062);				-- Machine-Learned Mining Notes
@@ -640,6 +828,125 @@ ihqt(224657, 83067);				-- Void-Lit Skinning Notes
 iq(228946, 84693);					-- Weaver's Lair Profession Table
 ihqt(224050, 82635);				-- Web Sparkles: Pretty and Powerful
 
+------------------
+-- PATCH 11.0.5 --
+------------------
+ihqt(230264, 85224);				-- Bronze Celebration Titles: Broken Isles Enthusiast
+ihqt(230261, 85221);				-- Bronze Celebration Titles: Cataclysm Enthusiast
+ihqt(230258, 85218);				-- Bronze Celebration Titles: Classic Enthusiast
+ihqt(230263, 85223);				-- Bronze Celebration Titles: Draenor Enthusiast
+ihqt(230268, 85228);				-- Bronze Celebration Titles: Dragon Isles Enthusiast
+ihqt(229826, 85015);				-- Bronze Celebration Titles: Grizzly Hills Hiker
+ihqt(231833, 85517);				-- Bronze Celebration Titles: Karazhan Graduate
+ihqt(230266, 85226);				-- Bronze Celebration Titles: Kul Tiras Enthusiast
+ihqt(231832, 85516);				-- Bronze Celebration Titles: Molten Core Prospector
+ihqt(230260, 85220);				-- Bronze Celebration Titles: Northrend Enthusiast
+ihqt(230259, 85219);				-- Bronze Celebration Titles: Outland Enthusiast
+ihqt(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
+ihqt(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
+ihqt(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
+ihqt(230265, 85225);				-- Bronze Celebration Titles: Zuldazar Enthusiast
+ihqt(226241, 83824);				-- Shredded Green Hills of Stranglethorn
+
+------------------
+-- PATCH 11.0.7 --
+------------------
+iq(233500, 86379);					-- Crimson Snapdragon Treat
+iq(233495, 86375);					-- Inky Snapdragon Treat
+iq(233497, 86376);					-- Kaja'Cola-braised Snapdragon Treat
+iq(233494, 86374);					-- Muddy Snapdragon Treat
+iq(233499, 86378);					-- Royal Snapdragon Treat
+iq(233501, 86380);					-- Sandy Snapdragon Treat
+iq(233498, 86377);					-- Storminfused Snapdragon Treat
+iq(219291, 81619);					-- Puntable Baby Greench
+iq(219286, 81617);					-- Puntable Globe Yeti
+iq(234127, 86423);					-- Puntable Grumpling
+iq(219255, 81616);					-- Puntable Rotten Little Helper
+iq(219289, 81618);					-- Puntable Tiny Snowman
+
+------------------
+-- PATCH 11.1.0 --
+------------------
+ihqt(234745, 86598);				-- Bilgewater's Trove (Honored)
+ihqt(235258, 86748);				-- Bilgewater's Trove (Revered)
+ihqt(235259, 86749);				-- Bilgewater's Trove (Exalted)
+ihqt(234744, 86750);				-- Blackwater's Trove (Honored)
+ihqt(235260, 86751);				-- Blackwater's Trove (Revered)
+ihqt(235261, 86597);				-- Blackwater's Trove (Exalted)
+iq(235037, 86630);					-- Crumpled Schematic: Wormhole Generator: Undermine
+ihqt(236852, 87353);				-- Gallagio Highroller's Boomstone
+ihqt(235608, 86878);				-- Nightfall Sanctum Campsite
+is(0, 467553);						-- Path of the Azerite Refinery [A]
+is(0, 467555);						-- Path of the Azerite Refinery [H]
+is(0, 1216786);						-- Path of the Circuit Breaker
+is(0, 1226482);						-- Path of the Full House
+ihqt(235262, 86753);				-- Steamwheedle's Trove (Honored)
+ihqt(234743, 86754);				-- Steamwheedle's Trove (Revered)
+ihqt(235263, 86596);				-- Steamwheedle's Trove (Exalted)
+ihqt(232499, 85734);				-- Undermine Treatise on Alchemy
+ihqt(232500, 85735);				-- Undermine Treatise on Blacksmithing
+ihqt(232501, 85736);				-- Undermine Treatise on Enchanting
+ihqt(232507, 85737);				-- Undermine Treatise on Engineering
+ihqt(232503, 85738);				-- Undermine Treatise on Herbalism
+ihqt(232508, 85739);				-- Undermine Treatise on Inscription
+ihqt(232504, 85740);				-- Undermine Treatise on Jewelcrafting
+ihqt(232505, 85741);				-- Undermine Treatise on Leatherworking
+ihqt(232509, 85742);				-- Undermine Treatise on Mining
+ihqt(232506, 85744);				-- Undermine Treatise on Skinning
+ihqt(232502, 85745);				-- Undermine Treatise on Tailoring
+ihqt(234746, 86755);				-- Venture Co.'s Trove (Honored)
+ihqt(235264, 86756);				-- Venture Co.'s Trove (Revered)
+ihqt(235265, 86599);				-- Venture Co.'s Trove (Exalted)
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+iq(242623, 90710);					-- Enchanted Warbound Purifying Kit
+ihqt(242919, 90780);				-- Cracked Keystone
+iq(242622, 90709);					-- Warbound Purifying Kit
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+iq(244905, 90953);					-- Miniature Titan Disc: Charged Crystal
+iq(244903, 90951);					-- Miniature Titan Disc: Charged Touch
+iq(244899, 90947);					-- Miniature Titan Disc: Critical Chain
+iq(244902, 90950);					-- Miniature Titan Disc: Electric Current
+iq(244900, 90948);					-- Miniature Titan Disc: Spark Burst
+iq(244901, 90949);					-- Miniature Titan Disc: Statically Charged
+iq(240200, 90460);					-- Podium Upgrade: Longest Survival Run
+iq(240201, 90461);					-- Podium Upgrade: Longest Time in Spotlights
+iq(240202, 90462);					-- Podium Upgrade: Most Yards Traveled
+iq(240199, 90459);					-- Podium Upgrade: Scrappiest
+iq(240203, 90463);					-- Podium Upgrade: Scrappy
+iq(240204, 90464);					-- Podium Upgrade: Survival Run
+iq(240205, 90465);					-- Podium Upgrade: Time in Spotlights
+iq(240206, 90466);					-- Podium Upgrade: Yards Traveled
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+ihqt(235865, 87255);				-- Ethereal Tome of Alchemy Knowledge
+ihqt(235864, 87266);				-- Ethereal Tome of Blacksmithing Knowledge
+ihqt(235863, 87265);				-- Ethereal Tome of Enchanting Knowledge
+ihqt(235862, 87264);				-- Ethereal Tome of Engineering Knowledge
+ihqt(235861, 87263);				-- Ethereal Tome of Herbalism Knowledge
+ihqt(235860, 87262);				-- Ethereal Tome of Inscription Knowledge
+ihqt(235859, 87261);				-- Ethereal Tome of Jewelcrafting Knowledge
+ihqt(235858, 87260);				-- Ethereal Tome of Leatherworking Knowledge
+ihqt(235857, 87259);				-- Ethereal Tome of Mining Knowledge
+ihqt(235856, 87258);				-- Ethereal Tome of Skinning Knowledge
+ihqt(235855, 87257);				-- Ethereal Tome of Tailoring Knowledge
+--ihqt(246737, ???);					-- K'areshi Voidstone
+is(0, 1239155);						-- Path of the All-Devouring
+is(0, 1237215);						-- Path of the Eco-Dome
+
+
+
+------------
+-- UNUSED --
+------------
+-- 11.0.2
 -- Curio
 -- No longer considering these collectible in any way since the tracking was wonky and unreliable and they have related Achievements anyway
 -- is(modItemId(225903, nil, 11265), 446835);	-- Amorphous Relic [Rank 1]
@@ -698,69 +1005,3 @@ ihqt(224050, 82635);				-- Web Sparkles: Pretty and Powerful
 -- is(modItemId(225899, nil, 11246), 458943);	-- Unbreakable Iron Idol [Rank 2]
 -- is(modItemId(225899, nil, 11247), 458949);	-- Unbreakable Iron Idol [Rank 3]
 -- is(modItemId(225899, nil, 11248), 458955);	-- Unbreakable Iron Idol [Rank 4]
-
-------------------
--- PATCH 11.0.5 --
-------------------
-iq(230264, 85224);	-- Bronze Celebration Titles: Broken Isles Enthusiast
-iq(230261, 85221);	-- Bronze Celebration Titles: Cataclysm Enthusiast
-iq(230258, 85218);	-- Bronze Celebration Titles: Classic Enthusiast
-iq(230263, 85223);	-- Bronze Celebration Titles: Draenor Enthusiast
-iq(230268, 85228);	-- Bronze Celebration Titles: Dragon Isles Enthusiast
-iq(229826, 85015);	-- Bronze Celebration Titles: Grizzly Hills Hiker
-iq(231833, 85517);	-- Bronze Celebration Titles: Karazhan Graduate
-iq(230266, 85226);	-- Bronze Celebration Titles: Kul Tiras Enthusiast
-iq(231832, 85516);	-- Bronze Celebration Titles: Molten Core Prospector
-iq(230260, 85220);	-- Bronze Celebration Titles: Northrend Enthusiast
-iq(230259, 85219);	-- Bronze Celebration Titles: Outland Enthusiast
-iq(230262, 85222);	-- Bronze Celebration Titles: Pandaria Enthusiast
-iq(229827, 85014);	-- Bronze Celebration Titles: Plaguelands Survivor
-iq(230267, 85227);	-- Bronze Celebration Titles: Shadowlands Enthusiast
-iq(230265, 85225);	-- Bronze Celebration Titles: Zuldazar Enthusiast
-
-------------------
--- PATCH 11.0.7 --
-------------------
-iq(233500, 86379);	-- Crimson Snapdragon Treat
-iq(233495, 86375);	-- Inky Snapdragon Treat
-iq(233497, 86376);	-- Kaja'Cola-braised Snapdragon Treat
-iq(233494, 86374);	-- Muddy Snapdragon Treat
-iq(233499, 86378);	-- Royal Snapdragon Treat
-iq(233501, 86380);	-- Sandy Snapdragon Treat
-iq(233498, 86377);	-- Storminfused Snapdragon Treat
-iq(219291, 81619);	-- Puntable Baby Greench
-iq(219286, 81617);	-- Puntable Globe Yeti
-iq(234127, 86423);	-- Puntable Grumpling
-iq(219255, 81616);	-- Puntable Rotten Little Helper
-iq(219289, 81618);	-- Puntable Tiny Snowman
-
-------------------
--- PATCH 11.1.0 --
-------------------
-ihqt(234745, 86598);	-- Bilgewater's Trove (Honored)
---ihqt(235258, XXX);	-- Bilgewater's Trove (Revered)
---ihqt(235259, XXX);	-- Bilgewater's Trove (Exalted)
-ihqt(234744, 86750);	-- Blackwater's Trove (Honored)
---ihqt(235260, 86751?);	-- Blackwater's Trove (Revered)
---ihqt(235261, 86752?);	-- Blackwater's Trove (Exalted)
-iq(235037, 86630);		-- Crumpled Schematic: Wormhole Generator: Undermine
-is(0, 467553);			-- Path of the Azerite Refinery [A]
-is(0, 467555);			-- Path of the Azerite Refinery [H]
-is(0, 1216786);			-- Path of the Circuit Breaker
-ihqt(235262, 86753);	-- Steamwheedle's Trove (Honored)
---ihqt(234743, XXX);	-- Steamwheedle's Trove (Revered)
---ihqt(235263, XXX);	-- Steamwheedle's Trove (Exalted)
-ihqt(232499, 85734);	-- Undermine Treatise on Alchemy
-ihqt(232500, 85735);	-- Undermine Treatise on Blacksmithing
-ihqt(232501, 85736);	-- Undermine Treatise on Enchanting
-ihqt(232507, 85737);	-- Undermine Treatise on Engineering
-ihqt(232503, 85738);	-- Undermine Treatise on Herbalism
-ihqt(232508, 85739);	-- Undermine Treatise on Inscription
-ihqt(232504, 85740);	-- Undermine Treatise on Jewelcrafting
-ihqt(232505, 85741);	-- Undermine Treatise on Leatherworking
-ihqt(232509, 85742);	-- Undermine Treatise on Mining
-ihqt(232506, 85744);	-- Undermine Treatise on Skinning
-ihqt(232502, 85745);	-- Undermine Treatise on Tailoring
-ihqt(234746, 86755);	-- Venture Co.'s Trove (Honored)
-ihqt(235264, 86756);	-- Venture Co.'s Trove (Revered)
---ihqt(235265, 86757?);	-- Venture Co.'s Trove (Exalted)

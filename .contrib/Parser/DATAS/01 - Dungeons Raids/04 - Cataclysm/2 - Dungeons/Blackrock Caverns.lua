@@ -9,8 +9,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28741, {	-- Ascendant Lord Obsidius
-					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
+					["qg"] = 49476,	-- Pip Quickwit
 					["groups"] = {
 						i(66886),	-- Acid-Eaten Vest
 						i(66885),	-- Diamond-Studden Helm
@@ -18,8 +18,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28740, {	-- Do My Eyes Deceive Me?
-					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
+					["qg"] = 49476,	-- Pip Quickwit
 					["groups"] = {
 						i(66889),	-- Beauty's Cootie-Ridden Blankie
 						i(66887),	-- Beauty Jr.'s Collar
@@ -27,8 +27,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28738, {	-- The Twilight Forge
-					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28737,	-- What Is This Place?
+					["qg"] = 49476,	-- Pip Quickwit
 				}),
 				q(28732, {	-- This Can Only Mean One Thing...
 					["qg"] = 49444,	-- Pip Quickwit
@@ -41,12 +41,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28735, {	-- To the Chamber of Incineration!
-					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
+					["qg"] = 49476,	-- Pip Quickwit
 				}),
 				q(28737, {	-- What Is This Place?
-					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
+					["qg"] = 49476,	-- Pip Quickwit
 				}),
 				q(28804, {	-- Dark Iron Contingency Plan
 					["provider"] = { "o", 207412 },	-- Stone Tablet

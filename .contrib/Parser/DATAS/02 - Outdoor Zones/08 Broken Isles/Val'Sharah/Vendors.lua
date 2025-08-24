@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 		n(VENDORS, {
 			n(93974, {	-- Leyweaver Erenyi
 				["coord"] = { 70.4, 46.6, VALSHARAH },
-				["g"] = {
+				["groups"] = {
 					i(127022, {	-- Pattern: Imbued Silkweave Cinch [Rank 1] (RECIPE!)
 						["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 					}),
@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			n(106901, {	-- Sylvia Hartshorn <Dreamweaver Emissary>
 				["coord"] = { 54.6, 73.2, VALSHARAH },
-				["g"] = bubbleDownClassicRep(FACTION_THE_DREAMWEAVERS, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_DREAMWEAVERS, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(130158, {	-- Path of Elothir (TOY!)
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					}, {	-- Honored
 						i(140214, {	-- Boon of the Harvester
 							["cost"] = 800000,	-- 80
-							["g"] = {
+							["groups"] = {
 								i(140222),	-- Harvested Goods
 							},
 						}),

@@ -1,17 +1,17 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 	n(QUESTS, {
 		q(81930, {	-- The War Within [A]
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(227669),	-- Teleportation Scroll (QI!)
 			},
 		}),
 		q(78713, {	-- The War Within [H]
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(227669),	-- Teleportation Scroll (QI!)
 			},
 		}),
@@ -20,10 +20,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				81930,	-- The War Within [A]
 				78713,	-- The War Within [H]
 			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 213620 },	-- Thrall
 			["coord"] = { 41.9, 45.0, SILITHUS_THE_WOUND },
 			["maps"] = { 2321 },	-- Chamber of Heart
-			["sourceQuestNumRequired"] = 1,
 		}),
 		q(78715, {	-- Azeroth's Voice
 			["sourceQuests"] = { 78714 },	-- A Poor Reception
@@ -40,12 +40,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 			["provider"] = { "n", 214651 },	-- Moira Thaurissan
 			["coord"] = { 40.5, 57.7, AEGWYNNS_GALLERY },
 		}),
-		q(84446, {	-- Renown of Khaz Algar
-			["sourceQuests"] = { 79197 },	-- Surface Bound
-			["provider"] = { "n", 216149 },	-- Moira Thaurissan
-			["coord"] = { 36.1, 80.3, DORNOGAL },
-			["lockCriteria"] = { 1, "renownID", FACTION_COUNCIL_OF_DORNOGAL + 0.05 },    -- Council of Dornogal, Rank 5
-		}),
 		header(HEADERS.Achievement, 20597, {	-- The War Within
 			header(HEADERS.AchCriteria, 20597.01, {	-- Against the Current
 				------ Chapter 1 ------
@@ -53,9 +47,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 84022 },	-- Uniting Severed Threads
 					["provider"] = { "n", 219252 },	-- Alleria Windrunner
 					["coord"] = { 55.6, 44.2, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						hqt(79573, name(HEADERS.AchCriteria, 40725.02)),	-- War Within Delves: Endgame [Complete Campaign]
 					},
+				}),
+				q(84446, {	-- Renown of Khaz Algar
+					["sourceQuests"] = { 79197 },	-- Surface Bound
+					["provider"] = { "n", 216149 },	-- Moira Thaurissan
+					["coord"] = { 36.1, 80.3, DORNOGAL },
+					["lockCriteria"] = { 1, "renownID", FACTION_COUNCIL_OF_DORNOGAL + 0.05 },	-- Council of Dornogal, Rank 5
 				}),
 				q(79333, {	-- The Fleet Arrives
 					["sourceQuests"] = { 79197 },	-- Surface Bound
@@ -65,9 +65,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				q(82153, {	-- Embassies and Envoys [A]
 					["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 					["provider"] = { "n", 216168 },	-- Lady Jaina Proudmoore
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.9, 81.5, DORNOGAL },
-					["g"] = {
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
 						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
@@ -81,9 +81,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				q(79328, {	-- Embassies and Envoys [H]
 					["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 					["provider"] = { "n", 216167 },	-- Thrall
-					["races"] = HORDE_ONLY,
 					["coord"] = { 36.2, 81.5, DORNOGAL },
-					["g"] = {
+					["races"] = HORDE_ONLY,
+					["groups"] = {
 						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 81914 },	-- Dhar Oztan
 					["provider"] = { "n", 214995 },	-- Olbarig
 					["coord"] = { 28.5, 61.0, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(218455),	-- Conduit of the Southern Storm (QI!)
 					},
 				}),
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 					["coord"] = { 25.6, 57.2, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(223453),	-- Lightning-Scarred Coif
 						i(223427),	-- Lightning-Scarred Cowl
 						i(223465),	-- Lightning-Scarred Legguards
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79146 },	-- Ground Pounders
 					["provider"] = { "n", 223205 },	-- High Exarch Turalyon
 					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(223875),	-- Algari Censer
 						i(223874),	-- Algari Dagger
 						i(223877),	-- Algari Hatchet
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 81912 },	-- Flight Training 102
 					["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
 					["coord"] = { 61.7, 65.5, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(224161),	-- Stormrider Flight Badge
 					},
 				}),
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79156 },	-- The Edicts
 					["provider"] = { "n", 214916 },	-- Merrix
 					["coord"] = { 57.1, 50.5, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(223468),	-- Stormrider's Armplates
 						i(223446),	-- Stormrider's Bindings
 						i(223457),	-- Stormrider's Bracers
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
 					["provider"] = { "n", 215637 },	-- Y'tekhi
 					["coord"] = { 69.5, 72.2, NERUBAR },
-					["g"] = {
+					["groups"] = {
 						i(215457),	-- Loyalist Secretions (QI!)
 					},
 				}),
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 					["provider"] = { "n", 215628 },	-- Lilian Voss
 					["coord"] = { 56.7, 90.6, NERUBAR },
-					["g"] = {
+					["groups"] = {
 						i(223431),	-- The Fallen Queen's Band
 					},
 				}),
@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 					["provider"] = { "n", 215625 },	-- Lilian Voss
 					["coord"] = { 55.7, 44.1, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						i(223437),	-- Handwraps of the Weaver
 						i(223466),	-- Mantle of the Weaver
 						i(223445),	-- Sash of the Weaver
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79023 },	-- Small Friend, Big Plans
 					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
 					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(223448),	-- Epaulets of the Ringing Deeps
 						i(223452),	-- Grips of the Ringing Deeps
 						i(223436),	-- Light Boots of the Ringing Deeps
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79324 },	-- To the Waterworks
 					["provider"] = { "n", 216137 },	-- ZZ-01-47
 					["coord"] = { 47.3, 42.4, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(223435),	-- Element-Attuned Pendant
 					},
 				}),
@@ -450,7 +450,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 80517 },	-- Back to Where it Began
 					["provider"] = { "n", 214663 },	-- High Speaker Brinthe
 					["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(223467),	-- Saboteur's Girdle
 						i(223442),	-- Saboteur's Grips
 						i(223440),	-- Saboteur's Shoulderpads
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 79029 },	-- It's Sabotage
 					["provider"] = { "n", 220928 },	-- High Speaker Brinthe
 					["coord"] = { 56.1, 77.6, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						-- crit 'The Machines March to War'
 					},
 				}),
@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 78941 },	-- A Tide Needing Turned
 					["provider"] = { "n", 214271 },	-- General Steelstrike
 					["coord"] = { 71.6, 59.1, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(223454),	-- Algari Warden's Greaves
 						i(223461),	-- Algari Warden's Helm
 						i(223443),	-- Algari Warden's Hood
@@ -502,7 +502,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 214273 },	-- Anduin Wrynn
 					["coord"] = { 64.5, 61.8, HALLOWFALL },
 					["maps"] = { 2330 },	-- Piory of the Sacred Flame (Scenario)
-					["g"] = {
+					["groups"] = {
 						i(223472),	-- Drape of the Lamplighter
 					},
 				}),
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 78948 },	-- A Light in the Dark
 					["provider"] = { "n", 220688 },	-- Alleria Windrunner
 					["coord"] = { 35.9, 35.4, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						-- crit 'A Light in the Dark'
 					},
 				}),
@@ -574,10 +574,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["sourceQuest"] = 82696,	-- Ringing in the Deeps
 				["provider"] = { "n", 224857 },	-- Monte Gazlowe
 				["coord"] = { 58.4, 64.7, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					n(224864, {	-- Haxle Drillbit
 						["coord"] = { 62.4, 75.0, THE_RINGING_DEEPS },
-						["g"] = { i(225913) },	-- Opportunity Work Permit (QI!)
+						["groups"] = { i(225913) },	-- Opportunity Work Permit (QI!)
 					}),
 				},
 			}),
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				["sourceQuest"] = 82701,	-- Bat Versus World
 				["provider"] = { "n", 224874 },	-- Monte Gazlowe
 				["coord"] = { 64.5, 79.7, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					ach(41052, {	-- Lingering Shadows
 						i(232647),	-- Root Defender's Shield
 						i(232646),	-- Root Defender's Spear
@@ -630,7 +630,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 					["provider"] = { "n", 227436 },	-- Archmage Khadgar
 					["coord"] = { 42.5, 27.1, DORNOGAL },
-					--["g"] = {
+					--["groups"] = {
 					--	spell(458818),	-- Title: Witness of the Kirin Tor
 					--},
 				}),
@@ -643,7 +643,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 83031 },	-- The Hardest Part
 					["provider"] = { "n", 225355 },	-- Archmage Aethas Sunreaver
 					["coord"] = { 29.5, 58.1, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(225662),	-- Arcane Dust (QI!)
 						i(225895),	-- Frostfire Essence (QI!)
 						o(454205, { -- Radiant Prism Crystals
@@ -679,7 +679,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 83553 },	-- Magic-stealing Kobolds
 					["provider"] = { "n", 227063 },	-- Kalecgos
 					["coord"] = { 61.7, 41.5, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(225920),	-- Stolen Kirin Tor Artifacts (QI!)
 						o(454707, { -- Bag of Stolen Goods
 							["coords"] = {
@@ -689,7 +689,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 								{ 64.3, 43.0, ISLE_OF_DORN },
 								{ 63.2, 45.2, ISLE_OF_DORN },
 							},
-							["g"] = { i(226162), },	-- Arcane Manuscript (QI!)
+							["groups"] = { i(226162) },	-- Arcane Manuscript (QI!)
 						}),
 					},
 				}),
@@ -707,7 +707,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["coord"] = { 61.5, 42.8, ISLE_OF_DORN },
 				}),
 				q(83641, {	-- Trapped Between Life and Death
-					["sourceQuests"] = { 83553 },	-- Maybe You Shouldn't Touch That
+					["sourceQuests"] = {
+						83553,	-- Maybe You Shouldn't Touch That
+						83555,	-- Mysterious Necklace
+					},
 					["provider"] = { "n", 227208 },	-- Kalecgos
 					--["coord"] = { ??, ??, ISLE_OF_DORN },
 				}),
@@ -737,18 +740,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 83762 },	-- Critical Mass
 					["provider"] = { "n", 229763 },	-- Lady Jaina Proudmoore
 					["coord"] = { 35.5, 52.4, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						o(465294, { -- Antonidas' Introduction to Arcane Magic
 							["coord"] = { 35.7, 51.4, AZJ_KAHET },
-							["g"] = { i(228820), },	-- Antonidas' Introduction to Arcane Magic (QI!)
+							["groups"] = { i(228820) },	-- Antonidas' Introduction to Arcane Magic (QI!)
 						}),
 						o(465295, { -- Medivh's Karazhan Schematics
 							["coord"] = { 35.1, 51.2, AZJ_KAHET },
-							["g"] = { i(228821), },	-- Medivh's Karazhan Schematics (QI!)
+							["groups"] = { i(228821) },	-- Medivh's Karazhan Schematics (QI!)
 						}),
 						o(465300, { -- Thalen Songweaver's Notes
 							["coord"] = { 36.1, 52.6, AZJ_KAHET },
-							["g"] = { i(228823), },	-- Thalen Songweaver's Notes (QI!)
+							["groups"] = { i(228823) },	-- Thalen Songweaver's Notes (QI!)
 						}),
 					},
 				}),

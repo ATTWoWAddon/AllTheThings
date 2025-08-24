@@ -7,16 +7,14 @@ local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 	["cr"] = 14821,	-- Razzashi Raptor
 });
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
-	inst(76, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Zul'Gurub
+	inst(76, bubbleDownSelf({ ["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 } }, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 19,	-- Zul'Gurub
 		-- #endif
 		["maps"] = {
 			ZULGURUB,
-			-- #if ANYCLASSIC
-			233,
-			-- #endif
+			ZULGURUB_OUTDOORS,
 		},
 		["isRaid"] = true,
 		["lvl"] = 58,
@@ -36,19 +34,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID }, ["lvl"] = 58 }, {
 					q(8192, {	-- Animist's Caress [Druid]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19790),	-- Animist's Caress [Druid]
 						},
 					}),
 					q(8065, {	-- Paragons of Power: The Haruspex's Tunic [Revered]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -58,8 +56,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8057, {	-- Paragons of Power: The Haruspex's Bracers [Friendly]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -69,8 +67,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8064, {	-- Paragons of Power: The Haruspex's Belt [Honored]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -80,35 +78,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8110, {	-- Enchanted South Seas Kelp [Friendly]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19610),	-- Enchanted South Seas Kelp
 						},
 					}),
 					q(8111, {	-- Enchanted South Seas Kelp [Honored]
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8110,	-- Enchanted South Seas Kelp [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19611),	-- Enchanted South Seas Kelp
 						},
 					}),
 					q(8112, {	-- Enchanted South Seas Kelp [Revered]
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8111,	-- Enchanted South Seas Kelp [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19612),	-- Enchanted South Seas Kelp
 						},
 					}),
 					q(8113, {	-- Pristine Enchanted South Seas Kelp
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8112,	-- Enchanted South Seas Kelp [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19613),	-- Pristine Enchanted South Seas Kelp
 						},
@@ -117,19 +115,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER }, ["lvl"] = 58 }, {
 					q(8187, {	-- Falcon's Call [Hunter]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19785),	-- Falcon's Call [Hunter]
 						},
 					}),
 					q(8067, {	-- Paragons of Power: The Predator's Mantle [Revered]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -139,8 +137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8062, {	-- Paragons of Power: The Predator's Bracers [Friendly]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -150,8 +148,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8066, {	-- Paragons of Power: The Predator's Belt [Honored]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -161,35 +159,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8145, {	-- The Maelstrom's Tendril [Friendly]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19618),	-- Maelstrom's Tendril
 						},
 					}),
 					q(8146, {	-- The Maelstrom's Tendril [Honored]
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8145,	-- The Maelstrom's Tendril [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19619),	-- Maelstrom's Tendril
 						},
 					}),
 					q(8147, {	-- The Maelstrom's Tendril [Revered]
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8146,	-- The Maelstrom's Tendril [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19620),	-- Maelstrom's Tendril
 						},
 					}),
 					q(8148, {	-- The Maelstrom's Wrath
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8147,	-- The Maelstrom's Tendril [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19621),	-- Maelstrom's Wrath
 						},
@@ -198,19 +196,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(MAGE, bubbleDown({ ["classes"] = { MAGE }, ["lvl"] = 58 }, {
 					q(8189, {	-- Presence of Sight [Mage]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19787),	-- Presence of Sight [Mage]
 						},
 					}),
 					q(8068, {	-- Paragons of Power: The Illusionist's Mantle [Honored]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -220,8 +218,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8069, {	-- Paragons of Power: The Illusionist's Robes [Revered]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -231,8 +229,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8060, {	-- Paragons of Power: The Illusionist's Wraps [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -242,35 +240,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8101, {	-- The Pebble of Kajaro [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19598),	-- Pebble of Kajaro
 						},
 					}),
 					q(8102, {	-- The Pebble of Kajaro [Honored]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8101,	-- The Pebble of Kajaro [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19599),	-- Pebble of Kajaro
 						},
 					}),
 					q(8103, {	-- The Pebble of Kajaro [Revered]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8102,	-- The Pebble of Kajaro [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19600),	-- Pebble of Kajaro
 						},
 					}),
 					q(8104, {	-- The Jewel of Kajaro
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8103,	-- The Pebble of Kajaro [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19601),	-- Jewel of Kajaro
 						},
@@ -279,19 +277,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN }, ["lvl"] = 58 }, {
 					q(8185, {	-- Syncretist's Sigil [Paladin]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19783),	-- Syncretist's Sigil [Paladin]
 						},
 					}),
 					q(8055, {	-- Paragons of Power: The Freethinker's Breastplate [Revered]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -301,8 +299,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8053, {	-- Paragons of Power: The Freethinker's Armguards [Friendly]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19716, 1 },	-- Primal Hakkari Bindings
 						},
@@ -312,8 +310,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8054, {	-- Paragons of Power: The Freethinker's Belt [Honored]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19721, 1 },	-- Primal Hakkari Shawl
 						},
@@ -323,35 +321,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8045, {	-- The Heathen's Brand [Friendly]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19579),	-- Heathen's Brand
 						},
 					}),
 					q(8046, {	-- The Heathen's Brand [Honored]
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8045,	-- The Heathen's Brand [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19585),	-- Heathen's Brand
 						},
 					}),
 					q(8047, {	-- The Heathen's Brand [Revered]
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8046,	-- The Heathen's Brand [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19586),	-- Heathen's Brand
 						},
 					}),
 					q(8048, {	-- The Hero's Brand
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8047,	-- The Heathen's Brand [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19588),	-- Hero's Brand
 						},
@@ -360,19 +358,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST }, ["lvl"] = 58 }, {
 					q(8191, {	-- Prophetic Aura [Priest]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19789),	-- Prophetic Aura [Priest]
 						},
 					}),
 					q(8071, {	-- Paragons of Power: The Confessor's Mantle [Revered]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -382,8 +380,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8061, {	-- Paragons of Power: The Confessor's Wraps [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -393,8 +391,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8070, {	-- Paragons of Power: The Confessor's Bindings [Honored]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -404,35 +402,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8049, {	-- The Eye of Zuldazar [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19591),	-- The Eye of Zuldazar
 						},
 					}),
 					q(8050, {	-- The Eye of Zuldazar [Honored]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8049,	-- The Eye of Zuldazar [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19592),	-- The Eye of Zuldazar
 						},
 					}),
 					q(8051, {	-- The Eye of Zuldazar [Revered]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8050,	-- The Eye of Zuldazar [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19593),	-- The Eye of Zuldazar
 						},
 					}),
 					q(8052, {	-- The All-Seeing Eye of Zuldazar
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8051,	-- The Eye of Zuldazar [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19594),	-- The All-Seeing Eye of Zuldazar
 						},
@@ -441,19 +439,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE }, ["lvl"] = 58 }, {
 					q(8186, {	-- Death's Embrace [Rogue]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19784),	-- Death's Embrace [Rogue]
 						},
 					}),
 					q(8072, {	-- Paragons of Power: The Madcap's Mantle [Honored]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -463,8 +461,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8073, {	-- Paragons of Power: The Madcap's Tunic [Revered]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19724, 1 },	-- Primal Hakkari Aegis
 						},
@@ -474,8 +472,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8063, {	-- Paragons of Power: The Madcap's Bracers [Friendly]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -485,35 +483,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8141, {	-- Zandalrian Shadow Talisman [Friendly]
 						["qg"] = 14905,		-- Falthir the Sightless
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19614),	-- Zandalrian Shadow Talisman
 						},
 					}),
 					q(8142, {	-- Zandalrian Shadow Talisman [Honored]
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8141,	-- Zandalrian Shadow Talisman [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19615),	-- Zandalrian Shadow Talisman
 						},
 					}),
 					q(8143, {	-- Zandalrian Shadow Talisman [Revered]
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8142,	-- Zandalrian Shadow Talisman [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19616),	-- Zandalrian Shadow Talisman
 						},
 					}),
 					q(8144, {	-- Zandalrian Shadow Mastery Talisman
-						["qg"] = 14905,		-- Falthir the Sightless
 						["sourceQuest"] = 8143,	-- Zandalrian Shadow Talisman [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14905,		-- Falthir the Sightless
 						["coord"] = { 14.1, 13.7, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19617),	-- Zandalrian Shadow Mastery Talisman
 						},
@@ -522,19 +520,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN }, ["lvl"] = 58 }, {
 					q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19786),	-- Vodouisant's Vigilant Embrace [Shaman]
 						},
 					}),
 					q(8075, {	-- Paragons of Power: The Augur's Hauberk [Revered]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19722, 1 },	-- Primal Hakkari Tabard
 						},
@@ -544,8 +542,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8056, {	-- Paragons of Power: The Augur's Bracers [Friendly]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -555,8 +553,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8074, {	-- Paragons of Power: The Augur's Belt [Honored]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -566,35 +564,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8116, {	-- Vision of Voodress [Friendly]
 						["qg"] = 14904,		-- Maywiki of Zuldazar
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19606),	-- Vision of Voodress
 						},
 					}),
 					q(8117, {	-- Vision of Voodress [Honored]
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8116,	-- Vision of Voodress [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19607),	-- Vision of Voodress
 						},
 					}),
 					q(8118, {	-- Vision of Voodress [Revered]
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8117,	-- Vision of Voodress [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19608),	-- Vision of Voodress
 						},
 					}),
 					q(8119, {	-- The Unmarred Vision of Voodress
-						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["sourceQuest"] = 8118,	-- Vision of Voodress [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14904,		-- Maywiki of Zuldazar
 						["coord"] = { 15.3, 16.0, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19609),	-- Unmarred Vision of Voodress
 						},
@@ -603,19 +601,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK }, ["lvl"] = 58 }, {
 					q(8190, {	-- Hoodoo Hex [Warlock]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19788),	-- Hoodoo Hex [Warlock]
 						},
 					}),
 					q(8076, {	-- Paragons of Power: The Demoniac's Mantle [Honored]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19720, 1 },	-- Primal Hakkari Sash
 						},
@@ -625,8 +623,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8077, {	-- Paragons of Power: The Demoniac's Robes [Revered]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -636,8 +634,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8059, {	-- Paragons of Power: The Demoniac's Wraps [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19718, 1 },	-- Primal Hakkari Stanchion
 						},
@@ -647,35 +645,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8106, {	-- Kezan's Taint [Friendly]
 						["qg"] = 14903,		-- Al'tabim the All-Seeing
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19602),	-- Kezan's Taint
 						},
 					}),
 					q(8107, {	-- Kezan's Taint [Honored]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8106,	-- Kezan's Taint [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19603),	-- Kezan's Taint
 						},
 					}),
 					q(8108, {	-- Kezan's Taint [Revered]
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8107,	-- Kezan's Taint [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19604),	-- Kezan's Taint
 						},
 					}),
 					q(8109, {	-- Kezan's Unstoppable Taint
-						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["sourceQuest"] = 8108,	-- Kezan's Taint [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14903,		-- Al'tabim the All-Seeing
 						["coord"] = { 15.3, 16.1, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19605),	-- Kezan's Unstoppable Taint
 						},
@@ -684,19 +682,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR }, ["lvl"] = 58 }, {
 					q(8184, {	-- Presence of Might [Warrior]
 						["qg"] = 15042,		-- Zanza the Restless
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22637, 1 },	-- Primal Hakkari Idol
 							{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(19782),	-- Presence of Might [Warrior]
 						},
 					}),
 					q(8079, {	-- Paragons of Power: The Vindicator's Breastplate [Revered]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["cost"] = {
 							{ "i", 19723, 1 },	-- Primal Hakkari Kossack
 						},
@@ -706,8 +704,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8058, {	-- Paragons of Power: The Vindicator's Armguards [Friendly]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["cost"] = {
 							{ "i", 19717, 1 },	-- Primal Hakkari Armsplint
 						},
@@ -717,8 +715,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8078, {	-- Paragons of Power: The Vindicator's Belt [Honored]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["cost"] = {
 							{ "i", 19719, 1 },	-- Primal Hakkari Girdle
 						},
@@ -728,45 +726,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					}),
 					q(8041, {	-- Strength of Mount Mugamba [Friendly]
 						["qg"] = 14902,		-- Jin'rokh the Breaker
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, FRIENDLY },	-- Zandalari Tribe, Friendly.
 						["groups"] = {
 							i(19574),	-- Strength of Mugamba
 						},
 					}),
 					q(8042, {	-- Strength of Mount Mugamba [Honored]
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8041,	-- Strength of Mount Mugamba [Friendly]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 						["groups"] = {
 							i(19575),	-- Strength of Mugamba
 						},
 					}),
 					q(8043, {	-- Strength of Mount Mugamba [Revered]
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8042,	-- Strength of Mount Mugamba [Honored]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 						["groups"] = {
 							i(19576),	-- Strength of Mugamba
 						},
 					}),
 					q(8044, {	-- The Rage of Mount Mugamba
-						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["sourceQuest"] = 8043,	-- Strength of Mount Mugamba [Revered]
-						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
+						["qg"] = 14902,		-- Jin'rokh the Breaker
 						["coord"] = { 15.3, 14.4, STRANGLETHORN_VALE },
+						["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe, Exalted.
 						["groups"] = {
 							i(19577),	-- Rage of Mugamba
 						},
 					}),
 				})),
 				q(8240, {	-- A Bijou for Zanza
-					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["description"] = "Costs 1 bijou of any color per turn in. There are 9 colors and 8 (+1 for Shaman/Paladin) classes in the game, as such, some guilds assign specific classes specific color bijous and treat one as a wild card.",
+					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19708, 1 },	-- Blue Hakkari Bijou
 						{ "i", 19713, 1 },	-- Bronze Hakkari Bijou
@@ -778,10 +775,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						{ "i", 19714, 1 },	-- Silver Hakkari Bijou
 						{ "i", 19709, 1 },	-- Yellow Hakkari Bijou
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(19858),	-- Zandalar Honor Token
-					}
+					},
 				}),
 				q(8201, {	-- A Collection of Heads
 					["qg"] = 14910,	-- Exzhal <Servitor of Rastakhan>
@@ -802,14 +800,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8196, {	-- Essence Mangoes
-					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-					["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 					["description"] = "No. Stop. WHAT ARE YOU DOING! Do not waste your token on this FOR THE LOVE OF GOD!\n - Crieve",
+					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["repeatable"] = true,
+					["minReputation"] = { FACTION_ZANDALAR_TRIBE, HONORED },	-- Zandalari Tribe, Honored.
 					["cost"] = {
 						{ "i", 19858, 1 },	-- Zandalar Honor Token
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(20031),	-- Essence Mango
@@ -818,16 +816,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				q(8238, {	-- Gurubashi, Vilebranch, and Witherbark Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19701, 1 },	-- Gurubashi Coin
 						{ "i", 19702, 1 },	-- Vilebranch Coin
 						{ "i", 19703, 1 },	-- Witherbark Coin
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(19858),	-- Zandalar Honor Token
-					}
+					},
 				}),
 				q(8227, {	-- Nat's Measuring Tape
 					["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
@@ -837,25 +835,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				q(8239, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19704, 1 },	-- Sandfury Coin
 						{ "i", 19705, 1 },	-- Skullsplitter Coin
 						{ "i", 19706, 1 },	-- Bloodscalp Coin
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(19858),	-- Zandalar Honor Token
-					}
+					},
 				}),
 				q(8246, {	-- Signets of the Zandalar
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-					["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["repeatable"] = true,
+					["minReputation"] = { FACTION_ZANDALAR_TRIBE, EXALTED },	-- Zandalari Tribe
 					["cost"] = {
 						{ "i", 19858, 15 },	-- Zandalar Honor Token
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(20077),	-- Zandalar Signet of Might
@@ -864,8 +862,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					},
 				}),
 				q(8183, {	-- The Heart of Hakkar
-					["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 					["description"] = "Turning this head in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
+					["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 58,
 					["groups"] = {
@@ -876,10 +874,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				}),
 				applyclassicphase(PHASE_SIX, q(9210, {	-- The Savage Guard - Arcanum of Focus
 					["qg"] = 15042,		-- Zanza the Restless
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 18330, 1 },	-- Arcanum of Focus
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22635),	-- Savage Guard
@@ -887,10 +885,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				})),
 				applyclassicphase(PHASE_SIX, q(9208, {	-- The Savage Guard - Arcanum of Protection
 					["qg"] = 15042,		-- Zanza the Restless
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 18331, 1 },	-- Arcanum of Protection
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22635),	-- Savage Guard
@@ -898,10 +896,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				})),
 				applyclassicphase(PHASE_SIX, q(9209, {	-- The Savage Guard - Arcanum of Rapidity
 					["qg"] = 15042,	-- Zanza the Restless
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 18329, 1 },	-- Arcanum of Rapidity
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22635),	-- Savage Guard
@@ -909,12 +907,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				})),
 				q(8243, {	-- Zanza's Potent Potables
 					["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-					["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 					["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
-					["repeatable"] = true,
+					["minReputation"] = { FACTION_ZANDALAR_TRIBE, REVERED },	-- Zandalari Tribe, Revered.
 					["cost"] = {
 						{ "i", 19858, 1 },	-- Zandalar Honor Token
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(20080),	-- Sheen of Zanza
@@ -925,16 +923,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				q(8195, {	-- Zulian, Razzashi, and Hakkari Coins
 					["qg"] = 15070,		-- Vinchaxa <Servitor of Zanza>
 					["coord"] = { 14.5, 15.8, STRANGLETHORN_VALE },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19698, 1 },	-- Zulian Coin
 						{ "i", 19699, 1 },	-- Razzashi Coin
 						{ "i", 19700, 1 },	-- Hakkari Coin
 					},
+					["repeatable"] = true,
 					["lvl"] = 58,
 					["groups"] = {
 						i(19858),	-- Zandalar Honor Token
-					}
+					},
 				}),
 			}),
 			n(VENDORS, {
@@ -943,11 +941,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_SIX, i(232610, {	-- Formula: Magnificent Trollshine
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+						-- #endif
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
-						i(19766),	-- Pattern: Bloodvine Boots
-						i(19765),	-- Pattern: Bloodvine Leggings
-						i(19764),	-- Pattern: Bloodvine Vest
+						i(19766),	-- Pattern: Bloodvine Boots (RECIPE!)
+						i(19765),	-- Pattern: Bloodvine Leggings (RECIPE!)
+						i(19764),	-- Pattern: Bloodvine Vest (RECIPE!)
 						i(19771),	-- Pattern: Primal Batskin Bracers (RECIPE!)
 						i(19770),	-- Pattern: Primal Batskin Gloves (RECIPE!)
 						i(19769),	-- Pattern: Primal Batskin Jerkin (RECIPE!)
@@ -1498,11 +1501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
-				ach(688, {	-- Zul'Gurub
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					-- #endif
-				}),
+				ach(688),	-- Zul'Gurub
 				i(19802),	-- Heart of Hakkar
 				i(19862),	-- Aegis of the Blood God
 				i(19852),	-- Ancient Hakkari Manslayer

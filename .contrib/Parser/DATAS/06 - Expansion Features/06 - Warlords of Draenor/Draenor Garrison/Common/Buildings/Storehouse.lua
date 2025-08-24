@@ -8,14 +8,19 @@ root(ROOTS.ExpansionFeatures,
 			n(BUILDINGS, {
 				garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
 					n(QUESTS, {
-						q(37087, {	-- Lost in Transition
-							["provider"] = { "n", 84857 },	-- Kyra Goldhands
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(37060, {	-- Lost In Transition
-							["provider"] = { "n", 79862 },	-- Yorn Longhoof
-							["races"] = HORDE_ONLY,
-						}),
+						{	-- The Final Toy
+							["allianceQuestData"] = q(37087, {	-- Lost in Transition
+								["provider"] = { "n", 84857 },	-- Kyra Goldhands <Banker>
+							}),
+							["hordeQuestData"] = q(37060, {	-- Lost in Transition
+								["provider"] = { "n", 79862 },	-- Yorn Longhoof <Banker>
+							}),
+							["groups"] = {
+								o(237039, {	-- Crate of Surplus Material
+									i(118417),	-- Crate of Surplus Materials (QI!)
+								}),
+							},
+						},
 					}),
 				}),
 			}),

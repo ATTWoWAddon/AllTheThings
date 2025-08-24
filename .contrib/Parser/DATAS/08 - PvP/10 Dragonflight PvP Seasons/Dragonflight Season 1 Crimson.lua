@@ -61,7 +61,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
 					-- #if AFTER TWW
 					moh(5, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
 					moh(5, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
@@ -154,7 +154,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(213989, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					-- #if BEFORE TWW
 					bloody(500, iensemble(211148)),		-- Arsenal: Drakebreaker's Axe
 					bloody(500, iensemble(211144)),		-- Arsenal: Drakebreaker's Club
@@ -179,7 +179,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -202,7 +202,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
@@ -326,7 +326,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
 				}, {
@@ -376,7 +377,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = bubbleDownFiltered({
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 				},FILTERFUNC_itemID,{
 					n(CLASSES, {
@@ -987,7 +989,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(202090, {	-- Crimson Gladiator's Tabard
 						["sourceAchievements"] = { 15984 },	-- Elite: Dragonflight Season 1
 						["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
@@ -1017,7 +1019,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
@@ -1071,7 +1073,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(196661, {	-- Korganar Smolderforge
 				["coord"] = { 43.6, 42.7, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
 					i(194638),	-- Design: Crimson Combatant's Jeweled Signet (RECIPE!)
@@ -1117,7 +1119,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 				}, {

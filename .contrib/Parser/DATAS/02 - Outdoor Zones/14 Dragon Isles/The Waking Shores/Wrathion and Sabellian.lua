@@ -62,17 +62,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				ach(16495),	-- Obsidian Keymaster
 			}),
 			n(FACTIONS, {
-				faction(FACTION_SABELLIAN, {
-					ach(16532),	-- Friends with Sabellian
+				header(HEADERS.Faction, FACTION_SABELLIAN, {
+					faction(FACTION_SABELLIAN),
 					ach(16760, {	-- The Obsidian Bloodline
-						title(483),	-- <Name>, Paragon of the Obsidian Brood
+						["minReputation"] = { FACTION_SABELLIAN, 5 },
+						["groups"] = {
+							title(483),	-- <Name>, Paragon of the Obsidian Brood
+						},
+					}),
+					ach(16532, {	-- True Friends with Sabellian
+						["minReputation"] = { FACTION_SABELLIAN, 5 },
 					}),
 				}),
-				faction(FACTION_WRATHION, {
+				header(HEADERS.Faction, FACTION_WRATHION, {
+					faction(FACTION_WRATHION),
 					ach(16494, {	-- Loyalty to the Prince
-						title(484),	-- <Name>, Agent of the Black Prince
+						["minReputation"] = { FACTION_WRATHION, 5 },
+						["groups"] = {
+							title(484),	-- <Name>, Agent of the Black Prince
+						},
 					}),
-					ach(16536),	-- True Friends with Wrathion
+					ach(16536, {	-- True Friends with Wrathion
+						["minReputation"] = { FACTION_WRATHION, 5 },
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -81,7 +93,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(200070),	-- Obsidian Strongbox
 					},
 				}),
@@ -90,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 27.9, 58.8, THE_WAKING_SHORES },
 					["isWorldQuest"] = true,
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(200070),	-- Obsidian Strongbox
 					},
 				}),
@@ -113,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 24.9, 61.0, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(201755),	-- Obsidian Forgemaster's Strongbox
 						i(201754, {	-- Obsidian Forgemaster's Cache
 							["sym"] = {{"select","itemID",
@@ -128,10 +140,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 32.3,52.4, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(201818, {	-- Twilight Strongbox
 							["sym"] = {{"select","itemID",201817},{"pop"}},	-- Twilight Cache
-							["g"] = {
+							["groups"] = {
 								-- any loot from epic box which is only epic box
 							},
 						}),
@@ -148,7 +160,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 26.8, 62.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(200069, {	-- Obsidian Cache
 						}),
 					},
@@ -158,17 +170,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 27.6, 56.5, THE_WAKING_SHORES },
 					["cost"] = { { "i", 191264, 1 }, },	-- 1x Restored Obsidian Key
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(200069, {	-- Obsidian Cache
 						}),
 					},
 				}),
 				q(67221, {	-- A Head For Metal
 					["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
-					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
+					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194971),	-- Crystalized Draconium (QI!)
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
@@ -198,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191014 },	-- Becca Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(193625),	-- Neltharus Forge Crystal (QI!)
 						i(193627),	-- Obsidian Crafting Fork (QI!)
 						i(193626),	-- Precision Pennyweight (QI!)
@@ -209,7 +221,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191014 },	-- Becca Black
 					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(197946),	-- Dragonforged Poker (QI!)
 						i(197959),	-- Lavafused Armor (QI!)
 						i(197950),	-- Deepminted Coin (QI!)
@@ -220,7 +232,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(191057),	-- Worldbreaker Weapons (QI!)
 					},
 				}),
@@ -229,7 +241,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194546),	-- Baskilan Report (QI!)
 						i(194559),	-- Vazallia Report (QI!)
 						i(194561),	-- Zepharion Report (QI!)
@@ -240,7 +252,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194716),	-- Evorian Report (QI!)
 						i(194707),	-- Myridian Report (QI!)
 						i(194713),	-- Zepharion Report (QI!)
@@ -257,7 +269,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(191659),	-- Cindershard Coal (QI!)
 					},
 				}),
@@ -293,7 +305,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194519),	-- Osoria's Assistance (QI!)
 					},
 				}),
@@ -302,7 +314,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194544),	-- Earth-Warder's Flame Blade (QI!)
 						i(191902),	-- Fallen Defender's Ring (QI!)
 						i(191908),	-- Horn of Scorxia (QI!)
@@ -318,7 +330,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(193915),	-- Flag of the Black Dragon Flight
 					},
 				}),
@@ -326,9 +338,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191304 },	-- Aizir the Inflamed
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 186163 },	-- Doventhal the Chosen
 					["isWeekly"] = true,
-					["g"] = {
+					["crs"] = { 186163 },	-- Doventhal the Chosen
+					["groups"] = {
 						i(202173),	-- Magmote
 					},
 				}),
@@ -336,18 +348,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191307 },	-- Vyzos the Prophet
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 191306 },	-- Aizir the Inflamed
 					["isWeekly"] = true,
-					["g"] = {
+					["crs"] = { 191306 },	-- Aizir the Inflamed
+					["groups"] = {
 						i(202173),	-- Magmote
 					},
 				}),
 				q(66895, {	-- Same as the Old Boss
 					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 191308 },	-- Vyzos the Prophet
 					["isWeekly"] = true,
-					["g"] = {
+					["crs"] = { 191308 },	-- Vyzos the Prophet
+					["groups"] = {
 						i(202173),	-- Magmote
 					},
 				}),
@@ -368,7 +380,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(191684),	-- Blacksteel Tongs (QI!)
 						i(191686),	-- Dragonclaw Punch (QI!)
 						i(191683),	-- Obsidian Bickern (QI!)
@@ -377,10 +389,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuest"] = 66419,	-- Allegiance To One
-					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
-					["g"] = {
+					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
+					["groups"] = {
 						i(201925),	-- Obsidian Genealogy (QI!)
 					},
 				}),
@@ -389,7 +401,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194743),	-- Gulchak's Pointer (QI!)
 						i(194744),	-- Lava-Charred Flesh (QI!)
 					},
@@ -425,23 +437,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187275,	-- Igys the Believer
 						["isDaily"] = true,
+						["cr"] = 187275,	-- Igys the Believer
 					}),
 					q(66359, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187272,	-- Forgemaster Bazentus
 						["isDaily"] = true,
+						["cr"] = 187272,	-- Forgemaster Bazentus
 					}),
 					q(66360, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187447,	-- Sabellian
 						["isDaily"] = true,
+						["cr"] = 187447,	-- Sabellian
 					}),
 					q(66361, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187284,	-- Wrathion
 						["isDaily"] = true,
+						["cr"] = 187284,	-- Wrathion
 					}),
 				}),
 			}),
@@ -450,7 +462,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					71232,	-- Renown of the Dragon Isles
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+				["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(70984, {	-- Surge Breaker
 						["coord"] = { 28.4, 58.4, THE_WAKING_SHORES },
 					}),
@@ -478,7 +490,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 73074,
 					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 20 }, },	-- 20x Restored Obsidian Key
-					["g"] = {
+					["groups"] = {
 						i(200159),	-- Blaze Ring
 					},
 				}),
@@ -488,7 +500,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74067,
 					["isDaily"] = true,
 					["cost"] = { { "i", 191264, 10 }, },	-- 10x Restored Obsidian Key
-					["g"] = {
+					["groups"] = {
 						i(200207),	-- Petrified Fungal Spores
 					},
 				}),
@@ -502,7 +514,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 25.3, 60.3, THE_WAKING_SHORES },
 					["questID"] = 74052,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(194508),	-- Plans: Alvin the Anvil (RECIPE!)
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
 					},
@@ -526,7 +538,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(200213),	-- Lava-Splattered Breastplate
 					},
 				}),
@@ -544,7 +556,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(193310, {	-- Dealer Vexil <Food and Drink>
 					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(197738),	-- Flameslinger Rum
 						i(198356),	-- Honey Snack
 						i(201418, {	-- Orb of the Obsidian Scale
@@ -562,7 +574,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {
 								{ "i", 202173, 20 },		-- 20x Magmote
 							},
-							["g"] = {
+							["groups"] = {
 								title(469, {	-- <Name> the Worldbreaker
 									["collectible"] = false,
 								}),
@@ -572,7 +584,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188625, {	-- Lorena Belle
 					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
-					["g"] = bubbleDownRep(FACTION_WRATHION, {
+					["groups"] = bubbleDownRep(FACTION_WRATHION, {
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							i(200707, {	-- Armoire of Endless Cloaks (TOY!)
@@ -710,19 +722,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188349, {	-- Outfitter Tipech <Food and Drink>
 					["coord"] = { 25.6, 55.0, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198043),	-- Stealthy Elven Port
 					},
 				}),
 				n(189604, {	-- Provisioner Ojito <Supplies>
 					["coord"] = { 34.4, 61.2, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198043),	-- Stealthy Elven Port
 					},
 				}),
 				n(188623, {	-- Samia Inkling
 					["coord"] = { 24.7, 56.8, THE_WAKING_SHORES },
-					["g"] = bubbleDownRep(FACTION_SABELLIAN, {
+					["groups"] = bubbleDownRep(FACTION_SABELLIAN, {
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							iensemble(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor

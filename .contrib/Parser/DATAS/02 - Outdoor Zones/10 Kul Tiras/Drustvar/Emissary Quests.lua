@@ -7,10 +7,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(EMISSARY_QUESTS, {
 			q(50600, {	-- Order of Embers
 				["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
-				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["lvl"] = 120,
+				["groups"] = {
 					i(165870, {	-- Order of Embers Equipment Cache
 						["sym"] = {
 							{"select", "mapID", DRUSTVAR},
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135815 },	-- Quartermaster Alcorn
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166297, {	-- Order of Embers Supplies
 						i(166808),	-- Bewitching Tea Set (TOY!)
 						i(166718),	-- Cobalt Raven (PET!)

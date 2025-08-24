@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					n(BACK, {
 						bloody(120, i(217101)),	-- Draconic Warmonger's Cape
 						bloody(120, i(217103)),	-- Draconic Warmonger's Cloak
@@ -144,7 +144,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						honor(525, i(216381)),	-- Draconic Aspirant's Cape
 						honor(525, i(216379)),	-- Draconic Aspirant's Cloak
@@ -265,7 +265,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = {
+				["ItemAppearanceModifierID"] = 159,
+				["groups"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(216232)),	-- Draconic Gladiator's Cloak
@@ -698,7 +699,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(216037),	-- Draconic Gladiator's Silk Amice
 					i(216041),	-- Draconic Gladiator's Silk Armbands
 					i(216039),	-- Draconic Gladiator's Silk Belt
-					i(216027),	-- Draconic Gladiator's Silk Blouse
+					-- (changed in 11.0.2 when Blizzard deleted s:197334 and replaced with s:227796 and they didn't fix the Ensemble)
+					-- New: https://wago.tools/db2/ItemModifiedAppearance?build=11.0.2.56110&filter%5BItemAppearanceModifierID%5D=0&filter%5BItemID%5D=216027&page=1
+					-- Old: https://wago.tools/db2/ItemModifiedAppearance?build=11.0.2.56071&filter%5BItemAppearanceModifierID%5D=0&filter%5BItemID%5D=216027&page=1
+					-- #IF BEFORE 11.0.2
+					i(216027, {	-- Draconic Gladiator's Silk Blouse
+						["ItemAppearanceModifierID"] = 160,
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "deleted 11.0.2.56110" },
+					}),
+					-- #ELSE
+					i(216027, {	-- Draconic Gladiator's Silk Blouse
+						["bonusID"] = 1,
+						["ItemAppearanceModifierID"] = 1,
+						["timeline"] = { "created 11.0.2.56110" },	-- only obtainable via Ensemble, which is not currently accurate
+					}),
+					-- #ENDIF
 					i(216033),	-- Draconic Gladiator's Silk Cap
 					i(216038),	-- Draconic Gladiator's Silk Cord
 					i(216030),	-- Draconic Gladiator's Silk Gloves
@@ -879,7 +894,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(216667, {	-- Draconic Gladiator's Tabard
 						["sourceAchievements"] = { 19509 },	-- Elite: Dragonflight Season 4
 						["bonusID"] = 0,
@@ -911,7 +926,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(221421, { -- Eraneth <Draconic Combatant Recipes>
 				["timeline"] = { ADDED_11_0_0 },
 				["coord"] = { 43.6, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
 					i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
@@ -961,7 +976,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}, {

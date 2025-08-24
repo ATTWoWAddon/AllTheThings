@@ -8,29 +8,29 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(63199, {	-- Hunt: Alpha Devourers
 					["name"] = "Hunt: Alpha Devourers",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 175851 },	-- Alpha Anima Devourer
 					["isWeekly"] = true,
-					["g"] = {
+					["crs"] = { 175851 },	-- Alpha Anima Devourer
+					["groups"] = {
 						i(184586),	-- Sky Chain
 					},
 				}),
 				q(63198, {	-- Hunt: Death Elementals
 					["name"] = "Hunt: Death Elementals",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 172962 },	-- Tempered Stygia
 					["isWeekly"] = true,
+					["crs"] = { 172962 },	-- Tempered Stygia
 				}),
 				q(63180, {	-- Hunt: Shadehounds
 					["name"] = "Hunt: Shadehounds",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 174861 },	-- Gorged Shadehound
 					["isWeekly"] = true,
-					["g"] = {
+					["crs"] = { 174861 },	-- Gorged Shadehound
+					["groups"] = {
 						n(174861, {	-- Gorged Shadehound
 							["isWeekly"] = true,
 							["questID"] = 63433,
 							["coord"] = { 53.4, 79.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 								i(183057),	-- Shadehound Armor Plating
 							},
@@ -39,9 +39,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(63194, {	-- Hunt: Winged Soul Eaters
 					["name"] = "Hunt: Winged Soul Eaters",
-					["crs"] = { 173195 },	-- Undying Soulbinder
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["isWeekly"] = true,
+					["crs"] = { 173195 },	-- Undying Soulbinder
 				}),
 			}),
 			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["icon"] = 3257863,
 				["questID"] = 63854,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					ach(15054, {	-- Minions of the Cold Dark
 						crit(51655, {	-- Versya the Damned
 							["_npcs"] = { 177981 },
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							177981,	-- Versya the Damned <Tormentor of Torghast>
 							178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
 						},
-						["g"] = {
+						["groups"] = {
 							i(185972, {	-- Tormentor's Cache
 								i(185973),	-- Chain of Bahmethra (MOUNT!)
 								i(186977),	-- Beastcaller's Skull Crescent
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178897, {	-- Algel the Haunter
 						["questID"] = 64107,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186239),	-- Drape of the Phantasm
 							i(186227),	-- Jangling Chain Manacles
 						},
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178898, {	-- Golmak The Monstrosity
 						["questID"] = 64114,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186229),	-- Lavafused Breastplate
 							i(186221),	-- Seared-Link Sabatons
 						},
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177979, {	-- Gralebboih
 						["questID"] = 64113,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186237),	-- Gormhide Pauldrons
 							i(186449),	-- Amaranthine Stinger (PET!)
 						},
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177370, {	-- Grievous Soul Crusher
 						["description"] = "This tormentor can sometimes spawn instead of another tormentor ( which are on the achievement ). Shares loot table with Malleus Grakizz",
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
 						},
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177980, {	-- Gruukuuek the Elder
 						["questID"] = 64112,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186226),	-- Cinch of Petrified Vines
 							i(186009),	-- Corrupted Elder Branch
 						},
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178004, {	-- Intercessor Razzra
 						["questID"] = 64111,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186231),	-- Gloves of Fervent Intercession
 							i(186004),	-- Kris of Dark Temptation
 						},
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178882, {	-- Kazj The Sentinel
 						-- ["questID"] = 64110,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186450),	-- Crude Stygian Fastener
 							i(186006),	-- Kazj's Stygian Splitter
 						},
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177972, {	-- Malleus Grakizz
 						-- ["questID"] = 64119,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186218),	-- Fire-Tempered Armor Cinch
 							i(186012),	-- Inferno Blast Shield
 						},
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178899, {	-- Manifestation of Pain
 						-- ["questID"] = 64118,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186213),	-- Bindings of Manifest Pain
 							i(186005),	-- Stygian Pain Borer
 						},
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178002, {	-- Mugrem the Soul Devourer
 						-- ["questID"] = 64116,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186010),	-- Lost Attendant's Scepter
 							i(186560),	-- Semi-Permeable Gelatinous Storage Pouch
 						},
@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177330, {	-- Promathiz
 						-- ["questID"] = 64115,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186007),	-- Cudgel of the Tin Sentinel
 							i(186208),	-- Padded Insouls
 						},
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177331, {	-- Sentinel Pyrophus
 						["questID"] = 64127,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186241),	-- Insulated Thermal Leggings
 							i(186219),	-- Pyrophus' Wrist Ties
 						},
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178883, {	-- Sentinel Shakorzeth
 						["questID"] = 64121,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186244),	-- Shakorzeth's Gorget
 							i(186225),	-- Shoulder Joint Spindles
 						},
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177427, {	-- The Mass of Souls
 						-- ["questID"] = 64117,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186210),	-- Diabolic Soul Veil
 							i(186215),	-- Soul Stranglers
 						},
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(177981, {	-- Versya the Damned
 						-- ["questID"] = ,
 						-- ["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186233),	-- Spaulders of the Skyborn Damned
 							i(186003),	-- Versya's Stygian Longbow
 						},
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(178886, {	-- Zul'gath the Flayer
 						["questID"] = 64122,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186235),	-- Shadow-Wreathed Vambraces
 							i(186242),	-- Zul'gath's Chain Coif
 						},
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
 				["questID"] = 63414,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							175846,	-- Dathlane the Herald <Torghast Executioner>
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							175881,	-- Naelcrotix <Torghast Executioner>
 							176173,	-- Zograthos <Torghast Executioner>
 						},
-						["g"] = {
+						["groups"] = {
 							i(183228),	-- Memory of Arcane Pulsars
 							i(184657),	-- Armguard of the Unseen Assailant
 							i(184661),	-- Bracers of the Tenebrous Retinue
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 						["questID"] = 64126,
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186008),	-- Forsworn's Judgment
 							i(186207),	-- Mawsworn Herald's Vestments
 						},
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 						["questID"] = 64125,
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186011),	-- Lumisende's Twin-Blade
 							i(186230),	-- Mawsworn Warboots
 						},
@@ -307,7 +307,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 						["questID"] = 64124,
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186243),	-- Helm of Necrotic Sight
 							i(186013),	-- Vessel of Primordial Death
 						},
@@ -316,7 +316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 						["questID"] = 64123,
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(186232),	-- Phantom-Stalker's Legplates
 							i(186216),	-- Zograthos' Visage
 						},

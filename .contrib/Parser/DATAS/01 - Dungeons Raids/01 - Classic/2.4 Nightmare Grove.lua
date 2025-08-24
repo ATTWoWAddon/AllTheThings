@@ -4,18 +4,18 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_SIX, inst(2832, bubbleDownSelf({["timeline"] = { ADDED_1_15_5 }}, {	-- Nightmare Grove
-		["npcID"] = createHeader({
+		["headerID"] = createHeader({
 			readable = "Nightmare Grove",
 			text = {
 				en = "Nightmare Grove",
-				es = "Arboleda de la Pesadilla",
 				de = "Alptraumhain",
+				es = "Arboleda de la Pesadilla",
+				mx = "Arboleda de las Pesadillas",
 				fr = "Bosquet du cauchemar",
 				--it = "",
-				mx = "Arboleda de las Pesadillas",
+				ko = "악몽의 숲",
 				pt = "Bosque do Pesadelo",
 				ru = "Роща Кошмаров",
-				ko = "악몽의 숲",
 				cn = "梦魇林地",
 				tw = "夢魘林地",
 			},
@@ -52,8 +52,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						q(8447, {	-- Waking Legends
-							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
+							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {
@@ -134,8 +134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["maps"] = { MOONGLADE },
 				}),
 				q(86680, {	-- Waking Legends
-					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
+					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["groups"] = {
 						i(234155),	-- Malfurion's Signet Ring
@@ -163,6 +163,58 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					prof(SKINNING, {
 						i(20381),	-- Dreamscale
 					}),
+					applyclassicphase(SOD_PHASE_SEVEN, i(233997, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchant Chest - Living Stats
+					applyclassicphase(SOD_PHASE_SEVEN, i(233998, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchant Gloves - Holy Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(233999, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchant Gloves - Arcane Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(234266, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Speedstone
+					applyclassicphase(SOD_PHASE_SEVEN, i(234267, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Tear of the Dreamer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234268, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Lodestone of Retaliation
+					applyclassicphase(SOD_PHASE_SEVEN, i(234269, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchanted Stopwatch
+					applyclassicphase(SOD_PHASE_SEVEN, i(234270, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Ruby-Encrusted Broach
+					applyclassicphase(SOD_PHASE_SEVEN, i(234275, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchanted Prayer Tome
+					applyclassicphase(SOD_PHASE_SEVEN, i(234276, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchanted Totem
+					applyclassicphase(SOD_PHASE_SEVEN, i(234277, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchanted Mushroom
+					applyclassicphase(SOD_PHASE_SEVEN, i(234271, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Scroll: Wrath of the Swarm
+					applyclassicphase(SOD_PHASE_SEVEN, i(235526, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchant Bracer - Spell Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(235528, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Enchant Bracer - Agility
+					applyclassicphase(SOD_PHASE_SEVEN, i(235133, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Libram of Righteousness
+					applyclassicphase(SOD_PHASE_SEVEN, i(235134, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Libram of the Exorcist
+					applyclassicphase(SOD_PHASE_SEVEN, i(235135, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Libram of Sanctity
+					applyclassicphase(SOD_PHASE_SEVEN, i(235136, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Totem of Pyroclastic Thunder
+					applyclassicphase(SOD_PHASE_SEVEN, i(235137, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Totem of Thunderous Strikes
+					applyclassicphase(SOD_PHASE_SEVEN, i(235138, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Totem of Flowing Magma
+					applyclassicphase(SOD_PHASE_SEVEN, i(235139, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Sidereal Wrath
+					applyclassicphase(SOD_PHASE_SEVEN, i(235140, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Feline Ferocity
+					applyclassicphase(SOD_PHASE_SEVEN, i(235141, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Ursin Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(234483, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Dreamscale Bracers (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234486, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Dreamscale Mitts (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234235, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Glowing Chitin Armor Kit
+					applyclassicphase(SOD_PHASE_SEVEN, i(234236, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Sharpened Chitin Armor Kit
+					applyclassicphase(SOD_PHASE_SEVEN, i(234237, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Cowl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234239, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Leathers
+					applyclassicphase(SOD_PHASE_SEVEN, i(234238, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Shoulderpads
+					applyclassicphase(SOD_PHASE_SEVEN, i(234249, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234250, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cloak (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234251, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Drape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234244, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Scarf (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234240, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Cowl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234241, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Shawl
+					applyclassicphase(SOD_PHASE_SEVEN, i(234242, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Robe
+					applyclassicphase(SOD_PHASE_SEVEN, i(234223, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Reaver
+					applyclassicphase(SOD_PHASE_SEVEN, i(234224, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Champion
+					applyclassicphase(SOD_PHASE_SEVEN, i(234225, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Destroyer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234226, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Stormhammer
+					applyclassicphase(SOD_PHASE_SEVEN, i(234228, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Defender
+					applyclassicphase(SOD_PHASE_SEVEN, i(234227, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Sageblade
+					applyclassicphase(SOD_PHASE_SEVEN, i(234429, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Heartseeker
+					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Madness (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of the Old Gods (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234264, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: G00 DV-1B3 Generator
+					applyclassicphase(SOD_PHASE_SEVEN, i(234265, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Tuned Force Reactive Disk
+					applyclassicphase(SOD_PHASE_SEVEN, i(234435, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Obsidian Shotgun
+					applyclassicphase(SOD_PHASE_SEVEN, i(235530, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Obsidian Scope
 				},
 			}),
 			n(234880, {	-- Emeriss
@@ -170,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(234159, {	-- Polished Ironwood Crossbow
 					["description"] = "If you get this to drop, @crieve on Discord!",
 				}),
-				
+
 				-- Confirmed Drops:
 				i(234157),	-- Circlet of Restless Dreams
 				i(234158),	-- Dragonheart Necklace

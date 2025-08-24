@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				4498,	-- Ebon Ploughworm (PET!)
 				4510,	-- Winged Arachnoid (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(4471, {	-- Aubergine Scootlefish (PET!)
 					["coords"] = {
 						{ 59.7, 70.2, AZJ_KAHET },
@@ -45,4 +45,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 		})),
 	}),
-})));
+}));

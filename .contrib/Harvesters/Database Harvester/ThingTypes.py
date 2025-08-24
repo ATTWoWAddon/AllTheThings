@@ -2,10 +2,34 @@ import re
 from abc import ABC, abstractmethod
 from pathlib import Path
 from packaging import version
+from packaging.version import Version
+from typing import Optional
 
 DATAS_FOLDER = Path("..", "..", "Parser", "DATAS")
 DEBUGGING_FOLDER = Path("..", "..", "..", ".contrib", "Debugging")
 DELIMITER = "@@@"
+# Define patch version ranges per flavor
+FLAVOR_RANGES: dict[str, tuple[Version, Optional[Version]]] = {
+    "Classic": (version.parse("0.0.0.00000"), version.parse("1.14.1.00000")),
+    "SoM":     (version.parse("1.14.1.00000"), version.parse("1.15.0.00000")),
+    "SoD":     (version.parse("1.15.0.00000"), version.parse("1.16.0.00000")),
+    "TBC":     (version.parse("2.0.0.00000"), version.parse("3.0.0.00000")),
+    "WotLK":   (version.parse("3.0.0.00000"), version.parse("4.0.0.00000")),
+    "Cata":    (version.parse("4.0.0.00000"), version.parse("5.0.0.00000")),
+    "MoP":     (version.parse("5.0.0.00000"), version.parse("6.0.0.00000")),
+    "Retail":  (version.parse("6.0.0.00000"), None),
+}
+
+FLAVOR_FOLDERS: dict[str, str] = {
+    "Classic": "01 - Classic",
+    "SoM": "02 - Season of Mastery",
+    "SoD": "03 - Season of Discovery",
+    "TBC": "04 - The Burning Crusade",
+    "WotLK": "05 - Wrath of the Lich King",
+    "Cata": "06 - Cataclysm",
+    "MoP": "07 - Mists of Pandaria",
+    "Retail": "99 - The War Within",
+}
 
 
 def remove_non_digits(string: str) -> str:
@@ -42,6 +66,10 @@ class Thing(ABC):
     def extract_existing_info(line: str) -> str | None:
         raise NotImplementedError
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        raise NotImplementedError
+
 
 class Achievements(Thing):
     @staticmethod
@@ -66,6 +94,36 @@ class Achievements(Thing):
         title = "Title_lang" if "Title_lang" in row else "Title_lang[0]"
         return f"{row['ID']}{DELIMITER}{row[title]}"
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
+
+class Explorations(Thing):
+    @staticmethod
+    def table() -> str:
+        return "areatable"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "exploration"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return ("exp(",)
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "exploration("
+
+    @staticmethod
+    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
+        # Explorations have names in the same db
+        title = "AreaName_lang" if "AreaName_lang" in row else "AreaName_lang[0]"
+        return f"{row['ID']}{DELIMITER}{row[title]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 class Factions(Thing):
     @staticmethod
@@ -94,6 +152,10 @@ class Factions(Thing):
             name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
             id = "ID"
         return f"{row[id]}{DELIMITER}{row[name]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 
 class FlightPaths(Thing):
@@ -128,6 +190,10 @@ class FlightPaths(Thing):
         fp_line = remove_non_digits(fp_line)
         return fp_line
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
+
 
 class Followers(Thing):
     @staticmethod
@@ -153,6 +219,10 @@ class Followers(Thing):
         if build == "6.0.1.18179":  # Cursed build
             horde, alliance = "Field_6_0_1_18179_001", "Field_6_0_1_18179_002"
         return f"{row['ID']}{DELIMITER}{row[horde]}{DELIMITER}{row[alliance]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name_h", "name_a"]
 
 
 class Illusions(Thing):
@@ -186,6 +256,10 @@ class Illusions(Thing):
         else:
             return None
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id"]
+
 class Items(Thing):
     @staticmethod
     def table() -> str:
@@ -206,7 +280,14 @@ class Items(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Toys and Transmog
-        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
+        if build == "11.2.5.62554":
+            return f"{row['ID']}{DELIMITER}{row['Field_11_2_5_62554_005_lang'].strip()}"
+        else:
+            return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 class Mounts(Thing):
     db_path = Path(DATAS_FOLDER, "00 - DB", "MountDB.lua")
@@ -238,6 +319,10 @@ class Mounts(Thing):
             return match.group(1)
         else:
             return None
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 
 class Pets(Thing):
@@ -273,6 +358,10 @@ class Pets(Thing):
         else:
             return None
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "creature_id"]
+
 
 class Quests(Thing):
     @staticmethod
@@ -294,6 +383,10 @@ class Quests(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         return row["ID"]
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id"]
 
 
 class Recipes(Thing):
@@ -318,6 +411,10 @@ class Recipes(Thing):
         # Recipe names are in the SpellName db and Profession names are in SkillLine db
         return f"{row['Spell']}{DELIMITER}{row['SkillLine']}"
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id"]
+
 
 class Titles(Thing):
     @staticmethod
@@ -341,6 +438,10 @@ class Titles(Thing):
         # Titles have names in the same db
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
         return f"{row['Mask_ID']}{DELIMITER}{row[name]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 
 class Toys(Thing):
@@ -374,6 +475,10 @@ class Toys(Thing):
         else:
             return None
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id"]
+
 
 class Transmog(Thing):
     @staticmethod
@@ -400,6 +505,10 @@ class Transmog(Thing):
             sourceID, itemID = 'Field_10_2_7_54171_000', 'Field_10_2_7_54171_001'
         return f"{row[sourceID]}{DELIMITER}{row[itemID]}"
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "item_ID"]
+
 
 class Creatures(Thing):
     real_collectible = False
@@ -412,6 +521,10 @@ class Creatures(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Followers and Pets to get names
         return f"{row['ID']}{DELIMITER}{row['Name_lang']}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 
 class SpellItems(Thing):
@@ -427,6 +540,10 @@ class SpellItems(Thing):
         name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
         return f"{row['ID']}{DELIMITER}{row[name]}"
 
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
+
 
 class SpellNames(Thing):
     real_collectible = False
@@ -439,6 +556,10 @@ class SpellNames(Thing):
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Recipes
         return f"{row['ID']}{DELIMITER}{row['Name_lang']}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 
 class SkillLines(Thing):
@@ -455,3 +576,7 @@ class SkillLines(Thing):
             "DisplayName_lang" if "DisplayName_lang" in row else "DisplayName_lang[0]"
         )
         return f"{row['ID']}{DELIMITER}{row[name]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]

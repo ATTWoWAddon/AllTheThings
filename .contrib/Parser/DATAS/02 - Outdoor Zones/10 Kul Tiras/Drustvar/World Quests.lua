@@ -52,8 +52,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 ]]--
 			q(53701, {	-- A Drust Cause (Faction Assault WQ)
-				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(51616, {	-- A Final Rest
 				["races"] = ALLIANCE_ONLY,
@@ -66,13 +66,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51687, {	-- A Smelly Solution
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160557),	-- Pungent Onion (QI!)
 				},
 			}),
 			q(51745, {	-- A Smelly Solution
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160557),	-- Pungent Onion (QI!)
 				},
 			}),
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51512),	-- Bilefang Mother
 			q(54143, {	-- Bird's-Eye (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(165943),	-- Grizzek's Rocket Hop (QI!)
 					i(165656),	-- Spy Gear (QI!)
 				},
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50369, {	-- Bruin Potions (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157545),	-- Bear Heart (QI!)
 					i(160442),	-- Caustic Sap (QI!)
 					i(157546),	-- Hearthbloom Petals (QI!)
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51737, {	-- Bruin Potions (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157545),	-- Bear Heart (QI!)
 					i(160442),	-- Caustic Sap (QI!)
 					i(157546),	-- Hearthbloom Petals (QI!)
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53312, {	-- Burnished Platinum
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163624),	-- Burnished Platinum (QI!)
 				},
 			}),
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51461),	-- Deathcap
 			q(53317, {	-- Dense Storm Silver
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163629),	-- Dense Storm Silver (QI!)
 				},
 			}),
@@ -182,13 +182,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54449, {	-- Elemental Azerite (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164767),	-- Unrefined Azerite Shard (QI!)
 				},
 			}),
 			q(54448, {	-- Elemental Azerite (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164767),	-- Unrefined Azerite Shard (QI!)
 				},
 			}),
@@ -205,19 +205,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53270, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163595),	-- Flourishing Riverbud (QI!)
 				},
 			}),
 			q(53266, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163588),	-- Flourishing Sea Stalk (QI!)
 				},
 			}),
 			q(51658, {	-- Fly the Coop!
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(281326, {	-- Falcon Cage
 						["coords"] = {
 							{ 31.8, 25.5, DRUSTVAR },
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 31.4, 24.2, DRUSTVAR },
 							{ 31.3, 24.8, DRUSTVAR },
 						},
-						["g"] = { i(157840) },	-- Falconer's Key (QI!)
+						["groups"] = { i(157840) },	-- Falconer's Key (QI!)
 					}),
 				},
 			}),
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51887),	-- Fungi Trio
 			q(53311, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163623),	-- Gleaming Storm Silver (QI!)
 				},
 			}),
@@ -259,8 +259,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51740),	-- Hunting for Truffle Hunters
 			q(51467),	-- Hyo'gi
 			q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
-				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54689, {	-- Lights Out (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					ach(13435, {	-- Doomsoul Surprise
 						["races"] = HORDE_ONLY,
 					}),
@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51972),	-- Lost Goat
 			q(53308, {	-- Luminous Monelite
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163609),	-- Luminous Monelite (QI!)
 				},
 			}),
@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["hordeQuestData"] = q(51743, {	-- More Valuable Than Gold (Horde)
 					["races"] = HORDE_ONLY,
 				}),
-				["g"] = {
+				["groups"] = {
 					o(290975, {	-- Silver Nugget
 						i(160577),	-- Silver Nugget (QI!)
 					}),
@@ -313,12 +313,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53979, {	-- Naga Attack!
-				["g"] = {
+				["groups"] = {
 					i(165605),	-- Azsharan Medallion
 				},
 			}),
 			q(53963, {	-- Naga Attack!
-				["g"] = {
+				["groups"] = {
 					i(165605),	-- Azsharan Medallion
 				},
 			}),
@@ -339,12 +339,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53274, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
 				["races"] = ALLIANCE_ONLY,	-- probably?  reported as seen on an alliance character
-				["g"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
+				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(53282, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
 				["races"] = HORDE_ONLY,	-- probably?
-				["g"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
+				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(54666, {	-- Packmaster Swiftarrow (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
@@ -359,13 +359,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51897),	-- Rimestone
 			q(51710, {	-- Rise of the Yetis (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164309),	-- Lost Supplies (QI!)
 				},
 			}),
 			q(51739, {	-- Rise of the Yetis (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164309),	-- Lost Supplies (QI!)
 				},
 			}),
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51746),	-- The Shadows of Corlain
 			q(51667, {	-- This Bird You Cannot Change
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157845),	-- Falconer's Whistle (QI!)
 				},
 			}),
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51694, {	-- Which Witch?
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160571),	-- Lucille's Sewing Needle (QI!)
 				},
 			}),
@@ -459,74 +459,74 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["requireSkill"] = HERBALISM,
 			}),
 			q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162445),	-- Pattern: Battle Flag: Rallying Swiftness [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50991, {	-- Work Order: Blood-Stained Bone
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52390, {	-- Work Order: Contract: Order of Embers
 				["requireSkill"] = INSCRIPTION,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162362),	-- Technique: Contract: Order of Embers [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52414, {	-- Work Order: Drums of the Maelstrom
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52365, {	-- Work Order: F.R.I.E.D.
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52407, {	-- Work Order: Golden Beryl
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50987, {	-- Work Order: Monelite Ore
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = MINING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52334, {	-- Work Order: Potion of Concealment
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52406, {	-- Work Order: Rubellite
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50986, {	-- Work Order: Sea Stalk
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50985, {	-- Work Order: Siren's Pollen
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50994, {	-- Work Order: Tempest Hide
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52364, {	-- Work Order: Thermo-Accelerated Plague Spreader
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 				},
 			}),
@@ -545,9 +545,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 -- 		m(DRUSTVAR, {
 -- 			n(WORLD_QUESTS, {
 -- 				q(54772),	-- triggered when turning in #54137, "In Every Dark Corner".
--- 				q(52000),	-- Matron Morana killID
--- 				q(52002),	-- Soul Goliath killID
--- 				q(51999),	-- Stone Golem killID
 -- 			}),
 -- 		}),
 -- 	}),

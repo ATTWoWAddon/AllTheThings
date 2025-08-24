@@ -8,12 +8,33 @@ local function ClassicCost(cost)
 	-- #ENDIF
 end
 root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
-	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
-	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
-	i(180059, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV
-	i(180060, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V
+	i(180055, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past I
+	i(180057, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past II
+	i(180058, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past III
+	i(180059, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past IV
+	i(180060, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past V
 	prof(ALCHEMY, {
+		n(COMMON_VENDOR_ITEMS, {
+			i(40411, {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
+				["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+				--[[["providers"] = {
+					{ "n", 24341},	-- Barnabas Frye <Trade Goods>
+					{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>
+					{ "n", 26941},	-- Brokkan Bear-Arms <Trade Goods>
+					{ "n", 28714},	-- Patricia Egan <Alchemy Supplies>
+					{ "n", 23802},	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+				},
+				["coords"] = {
+					{ 57.7, 72.32, BOREAN_TUNDRA },
+					{ 41.34, 34.61, BOREAN_TUNDRA },
+					{ 79.5, 30.47, HOWLING_FJORD },
+					{ 58.4, 62.75, HOWLING_FJORD },
+					{ 41.54, 33.32, NORTHREND_DALARAN },
+				},]]
+				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+			}),
+		}),
 		n(DISCOVERY, {
 			spell(60893, {	-- Northrend Alchemy Research
 				-- #if AFTER WOD
@@ -93,10 +114,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40068),	-- Wrath Elixir
 		}),
 		filter(REAGENTS, {
-			applyclassicphase(WRATH_PHASE_THREE, i(36931, {["timeline"] = {ADDED_3_2_0}})),	-- Ametrine
-			applyclassicphase(WRATH_PHASE_THREE, i(36919, {["timeline"] = {ADDED_3_2_0}})),	-- Cardinal Ruby
-			applyclassicphase(WRATH_PHASE_THREE, i(36928, {["timeline"] = {ADDED_3_2_0}})),	-- Dreadstone
-			applyclassicphase(WRATH_PHASE_THREE, i(41334, {["timeline"] = {ADDED_3_2_0}})),	-- Earthsiege Diamond
+			applyclassicphase(WRATH_PHASE_THREE, i(36931, {["timeline"] = { ADDED_3_2_0 }})),	-- Ametrine
+			applyclassicphase(WRATH_PHASE_THREE, i(36919, {["timeline"] = { ADDED_3_2_0 }})),	-- Cardinal Ruby
+			applyclassicphase(WRATH_PHASE_THREE, i(36928, {["timeline"] = { ADDED_3_2_0 }})),	-- Dreadstone
+			applyclassicphase(WRATH_PHASE_THREE, i(41334, {["timeline"] = { ADDED_3_2_0 }})),	-- Earthsiege Diamond
 			convertItem(35623, 37700, 10, 1),	-- Eternal Air / Crystallized Air
 			convertItem(35624, 37701, 10, 1),	-- Eternal Earth / Crystallized Earth
 			convertItem(36860, 37702, 10, 1),	-- Eternal Fire / Crystallized Fire
@@ -104,9 +125,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			convertItem(35627, 37703, 10, 1),	-- Eternal Shadow / Crystallized Shadow
 			convertItem(35622, 37705, 10, 1),	-- Eternal Water / Crystallized Water
 			i(44958, {["timeline"] = {ADDED_3_0_8}}),	-- Ethereal Oil
-			applyclassicphase(WRATH_PHASE_THREE, i(36934, {["timeline"] = {ADDED_3_2_0}})),	-- Eye of Zul
-			applyclassicphase(WRATH_PHASE_THREE, i(36922, {["timeline"] = {ADDED_3_2_0}})),	-- King's Amber
-			applyclassicphase(WRATH_PHASE_THREE, i(36925, {["timeline"] = {ADDED_3_2_0}})),	-- Majestic Zircon
+			applyclassicphase(WRATH_PHASE_THREE, i(36934, {["timeline"] = { ADDED_3_2_0 }})),	-- Eye of Zul
+			applyclassicphase(WRATH_PHASE_THREE, i(36922, {["timeline"] = { ADDED_3_2_0 }})),	-- King's Amber
+			applyclassicphase(WRATH_PHASE_THREE, i(36925, {["timeline"] = { ADDED_3_2_0 }})),	-- Majestic Zircon
 			i(40195),	-- Pygmy Oil
 			i(41266),	-- Skyflare Diamond
 		}),
@@ -120,7 +141,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(64396),	-- Nerubian Obelisk
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64395),	-- Vrykul Rune Stick
-		header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, sharedData({["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, {
 			["provider"] = { "o", 203078 },	-- Nerubian Archaeology Find
 			["maps"] = {
 				BOREAN_TUNDRA,
@@ -130,18 +151,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				ZULDRAK,
 			},
 			["groups"] = {
-				i(64481),	-- Blessing of the Old God (TOY!)
-				i(64479),	-- Ewer of Jormungar Blood
-				i(64477),	-- Gruesome Heart Box
-				i(64476),	-- Infested Ruby Ring
-				i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
-				i(64475),	-- Scepter of Nezar'Azret
-				i(64478),	-- Six-Clawed Cornice
-				i(64474),	-- Spidery Sundial
-				i(64480),	-- Vizier's Scrawled Streamer
+				i(64481, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Blessing of the Old God (TOY!)
+				i(64479, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Ewer of Jormungar Blood
+				i(64477, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Gruesome Heart Box
+				i(64476, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Infested Ruby Ring
+				i(64482, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Puzzle Box of Yogg-Saron (TOY!)
+				i(64475, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Scepter of Nezar'Azret
+				i(64478, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Six-Clawed Cornice
+				i(64474, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Spidery Sundial
+				i(64480, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Vizier's Scrawled Streamer
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, sharedData({["cost"]={{"c",ARCH_CURRENCY_VRYKUL,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, {
 			["provider"] = { "o", 207189 },	-- Vrykul Archaeology Find
 			["maps"] = {
 				HOWLING_FJORD,
@@ -150,15 +171,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				THE_STORM_PEAKS,
 			},
 			["groups"] = {
-				i(64464),	-- Fanged Cloak Pin
-				i(64462),	-- Flint Striker
-				i(64459),	-- Intricate Treasure Chest Key
-				i(64460),	-- Nifflevar Bearded Axe
-				i(64461),	-- Scramseax
-				i(64467),	-- Thorned Necklace
-				i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+				i(64464, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Fanged Cloak Pin
+				i(64462, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Flint Striker
+				i(64459, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Intricate Treasure Chest Key
+				i(64460, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,130}}}),	-- Nifflevar Bearded Axe
+				i(64461, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Scramseax
+				i(64467, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Thorned Necklace
+				i(69775, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,100}},["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
@@ -401,13 +422,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(34750),	-- Worm Delight
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
-			i(34057),	-- Abyss Crystal
-			i(34052),	-- Dream Shard
-			i(34055),	-- Greater Cosmic Essence
-			i(34054),	-- Infinite Dust
-			i(34056),	-- Lesser Cosmic Essence
-			i(34053),	-- Small Dream Shard
+		header(HEADERS.Spell, 13262, {	-- Disenchant
+			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
+			-- Dust:
+			i(34054, {	-- Infinite Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 32-35.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills within the ilvl bracket 130-182.",
+				-- #endif
+			}),
+			-- Essences:
+			i(34055, {	-- Greater Cosmic Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 33-35, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 154-182, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(34056, {	-- Lesser Cosmic Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 32-33, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality WotLK weapons within the ilvl bracket 130-150, except shields and off-hand frills.",
+				-- #endif
+			}),
+			-- Shards and crystals:
+			i(34057, {	-- Abyss Crystal
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear at ilvl 35.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all epic (purple) quality WotLK gear within the ilvl bracket 200-225.",
+				-- #endif
+			}),
+			i(34052, {	-- Dream Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 34-35.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 167-200.",
+				-- #endif
+			}),
+			i(34053, {	-- Small Dream Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 32-34.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality WotLK gear within the ilvl bracket 130-166.",
+				-- #endif
+			}),
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(44449, {["timeline"] = {ADDED_3_1_0}}),	-- Enchant Boots - Assault
@@ -466,8 +527,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				ill(1894),	-- Icy Chill (ILLUSION!)
 			}),
 		})),
-		filter(MISC, {
-			i(44452, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Runed Titanium Rod
+		filter(PROFESSION_EQUIPMENT, {
+			i(44452, {["timeline"] = { REMOVED_5_0_4 }}),	-- Runed Titanium Rod
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(38954),	-- Enchant Shield - Dodge / WOTLK: Defense
@@ -494,6 +555,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(ENGINEERING, {
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			["coords"] = {
+				{ 39.0, 26.0, NORTHREND_DALARAN },
+				-- #if AFTER CATA
+				{ 56.0, 56.0, ORGRIMMAR },
+				{ 63.07, 31.97, STORMWIND_CITY },
+				-- #endif
+			},
+			["providers"] = {
+				{ "n", 28722},	-- Bryan Landers <Engineering Supplies>
+				-- #if AFTER CATA
+				{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
+				{ "n", 3413},	-- Sovik <Engineering Supplies>
+				-- #endif
+			},]]
+		}, {
+			i(39684),	-- Hair Trigger
+			i(40533),	-- Walnut Stock
+		})),
 		prof(GNOMISH_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
@@ -540,7 +623,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40771),	-- Cobalt Frag Bomb
 			i(40536),	-- Explosive Decoy
 			i(40772),	-- Gnomish Army Knife
-			i(47828, {["timeline"] = {ADDED_3_2_0}}),	-- Goblin Beam Welder
+			i(47828, {["timeline"] = { ADDED_3_2_0 }}),	-- Goblin Beam Welder
 			i(40892, {	-- Hammer Pick
 				-- #if AFTER 10.0
 				["description"] = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool, despite being recognised as a blacksmith hammer. Its mining skill bonus is no longer recognised.",
@@ -579,7 +662,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_THREE, i(49040)),	-- Jeeves [Why isn't this a toy?!]
 			-- #endif
-			i(48933, {["timeline"] = {ADDED_3_2_0}}),	-- Wormhole Generator: Northrend (TOY!)
+			i(48933, {["timeline"] = { ADDED_3_2_0 }}),	-- Wormhole Generator: Northrend (TOY!)
 		}),
 		filter(TRINKET_F, {
 			i(41121),	-- Gnomish Lightning Generator
@@ -619,7 +702,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(34721),	-- Frostweave Bandage
 		i(34722),	-- Heavy Frostweave Bandage
@@ -651,7 +734,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(41805, {	-- Borean Man O' War
 			["description"] = "Schools can be found on the seaside.",
 			["maps"] = { BOREAN_TUNDRA },
-			["provider"] = { "o", 182958 },	-- Borean Man O' War School
+			["provider"] = { "o", 192051 },	-- Borean Man O' War School
 		}),
 		i(41800, {	-- Deep Sea Monsterbelly
 			["coords"] = {
@@ -679,6 +762,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(44703, {	-- Dark Herring
 			["maps"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+			["description"] =
+				-- #if BEFORE LEGION
+				"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+				-- #elseif AFTER TWW
+				"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+				-- #else
+				nil,
+				-- #endif
+				-- #if AFTER TWW
+				["collectible"] = false,  -- remove when Blizzard fix fish collection
+				-- #endif
 		}),
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
@@ -703,6 +797,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(43646, {	-- Fountain Goldfish
 			["description"] = "Can be caught in the fountain.",
 			["coord"] = { 52.9, 65.9, NORTHREND_DALARAN },	-- Dalaran fountain
+		}),
+		i(45909, {	-- Giant Darkwater Clam
+			["maps"] = { WINTERGRASP },
+			["groups"] = {
+				i(36782),	-- Succulent Clam Meat
+				i(36783),	-- Northsea Pearl
+				i(36784),	-- Siren's Tear
+			},
 		}),
 		i(41809, {	-- Glacial Salmon
 			["description"] = "Schools can be found in inland waters.",
@@ -754,6 +856,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["description"] = "Eat this before it despawns!",
 			["maps"] = { SHOLAZAR_BASIN },
 			["_noautomation"] = true,
+		}),
+		i(40199, {	-- Pygmy Suckerfish
+			["maps"] = {
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DRAGONBLIGHT,
+				GRIZZLY_HILLS,
+				HOWLING_FJORD,
+				SHOLAZAR_BASIN,
+			},
+			["providers"] = {
+				{ "o", 192051 },	-- Borean Man O' War School
+				{ "o", 192053 },	-- Deep Sea Monsterbelly School
+				{ "o", 192048 },	-- Dragonfin Angelfish School
+				{ "o", 192049 },	-- Fangtooth Herring School
+				{ "o", 192050 },	-- Glacial Salmon School
+				{ "o", 192059 },	-- Glassfin Minnow School
+				{ "o", 192052 },	-- Imperial Manta Ray School
+				{ "o", 192054 },	-- Moonglow Cuttlefish School
+				{ "o", 192046 },	-- Musselback Sculpin School
+				{ "o", 192057 },	-- Nettlefish School
+			},
 		}),
 		i(44475, {	-- Reinforced Crate
 			["providers"] = {
@@ -1087,6 +1211,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- Inks and reagents:
+		header(HEADERS.Spell, 51005, {	-- Milling
+			i(39343, {	-- Azure Pigment
+				["providers"] = {
+					{ "i", 36903 }, -- Adder's Tongue
+					{ "i", 37921 }, -- Deadnettle
+					{ "i", 39970 }, -- Fire Leaf
+					{ "i", 36901 }, -- Goldclover
+					{ "i", 36906 }, -- Icethorn
+					{ "i", 36905 }, -- Lichbloom
+					{ "i", 36907 }, -- Talandra's Rose
+					{ "i", 36904 }, -- Tiger Lily
+				},
+			}),
+			i(43109, {	-- Icy Pigment
+				["providers"] = {
+					{ "i", 36903 }, -- Adder's Tongue
+					{ "i", 37921 }, -- Deadnettle
+					{ "i", 39970 }, -- Fire Leaf
+					{ "i", 36901 }, -- Goldclover
+					{ "i", 36906 }, -- Icethorn
+					{ "i", 36905 }, -- Lichbloom
+					{ "i", 36907 }, -- Talandra's Rose
+					{ "i", 36904 }, -- Tiger Lily
+				},
+			}),
+		}),
+		filter(REAGENTS, {
+			i(43126),	-- Ink of the Sea
+			i(43127),	-- Snowfall Ink
+		}),
+		-- Non-reagent crafts:
 		-- #if AFTER WOD
 		filter(GLYPHS, {
 			i(42736, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Explosion
@@ -1094,49 +1250,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ ADDED_3_0_2 },
 			}),
-
 			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance
-		}),
-		-- #endif
-		category(106, {	-- Tarot Cards
-			sp(59504, {	-- Darkmoon Card of the North
-				i(44277),    -- Ace of Chaos
-				i(44278),    -- 2 of Chaos
-				i(44279),    -- 3 of Chaos
-				i(44280),    -- 4 of Chaos
-				i(44281),    -- 5 of Chaos
-				i(44282),    -- 6 of Chaos
-				i(44284),    -- 7 of Chaos
-				i(44285),    -- 8 of Chaos
-
-				i(44268),    -- Ace of Nobles
-				i(44269),    -- 2 of Nobles
-				i(44270),    -- 3 of Nobles
-				i(44271),    -- 4 of Nobles
-				i(44272),    -- 5 of Nobles
-				i(44273),    -- 6 of Nobles
-				i(44274),    -- 7 of Nobles
-				i(44275),    -- 8 of Nobles
-
-				i(44260),    -- Ace of Prisms
-				i(44261),    -- 2 of Prisms
-				i(44262),    -- 3 of Prisms
-				i(44263),    -- 4 of Prisms
-				i(44264),    -- 5 of Prisms
-				i(44265),    -- 6 of Prisms
-				i(44266),    -- 7 of Prisms
-				i(44267),    -- 8 of Prisms
-
-				i(44286),    -- Ace of Undeath
-				i(44287),    -- 2 of Undeath
-				i(44288),    -- 3 of Undeath
-				i(44289),    -- 4 of Undeath
-				i(44290),    -- 5 of Undeath
-				i(44291),    -- 6 of Undeath
-				i(44292),    -- 7 of Undeath
-				i(44293),    -- 8 of Undeath
+			i(44922, {	-- Glyph of Typhoon / Glyph of Stars[WOD?+]
+				["timeline"]={ ADDED_3_0_2 },
 			}),
 		}),
+		-- #endif
 		filter(HELD_IN_OFF_HAND, {
 			i(44210),	-- Faces of Doom
 			i(38322),	-- Iron-Bound Tome
@@ -1153,12 +1272,100 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 			i(45849),	-- Twilight Tome
 		}),
+		category(106, {	-- Tarot Cards
+			sp(59504, {	-- Darkmoon Card of the North
+				i(44277),	-- Ace of Chaos
+				i(44278),	-- 2 of Chaos
+				i(44279),	-- 3 of Chaos
+				i(44280),	-- 4 of Chaos
+				i(44281),	-- 5 of Chaos
+				i(44282),	-- 6 of Chaos
+				i(44284),	-- 7 of Chaos
+				i(44285),	-- 8 of Chaos
+
+				i(44268),	-- Ace of Nobles
+				i(44269),	-- 2 of Nobles
+				i(44270),	-- 3 of Nobles
+				i(44271),	-- 4 of Nobles
+				i(44272),	-- 5 of Nobles
+				i(44273),	-- 6 of Nobles
+				i(44274),	-- 7 of Nobles
+				i(44275),	-- 8 of Nobles
+
+				i(44260),	-- Ace of Prisms
+				i(44261),	-- 2 of Prisms
+				i(44262),	-- 3 of Prisms
+				i(44263),	-- 4 of Prisms
+				i(44264),	-- 5 of Prisms
+				i(44265),	-- 6 of Prisms
+				i(44266),	-- 7 of Prisms
+				i(44267),	-- 8 of Prisms
+
+				i(44286),	-- Ace of Undeath
+				i(44287),	-- 2 of Undeath
+				i(44288),	-- 3 of Undeath
+				i(44289),	-- 4 of Undeath
+				i(44290),	-- 5 of Undeath
+				i(44291),	-- 6 of Undeath
+				i(44292),	-- 7 of Undeath
+				i(44293),	-- 8 of Undeath
+			}),
+		}),
 	}),
 	prof(JEWELCRAFTING, {
+		header(HEADERS.Spell, 31212, {	-- Prospecting
+			["groups"] = appendAllGroups(
+				sharedData({	-- Uncommon quality (green) gems:
+					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+					["providers"] = {
+						{ "i", 36909 },	-- Cobalt Ore
+						{ "i", 36912 },	-- Saronite Ore
+						{ "i", 36910 },	-- Titanium Ore
+					},
+				}, {
+					i(36917),	-- Bloodstone
+					i(36923),	-- Chalcedony
+					i(36932),	-- Dark Jade
+					i(36929),	-- Huge Citrine
+					i(36926),	-- Shadow Crystal
+					i(36920),	-- Sun Crystal
+				}),
+				sharedData({	-- Rare quality (blue) gems:
+					["description"] = "This gem is most reliably obtained from Icy Prism with Jewelcrafting, prospecting Saronite and Titanium Ores offering the second best drop rate.",
+					["providers"] = {
+						{ "i", 44946 },	-- Icy Prism
+						{ "i", 36912 },	-- Saronite Ore
+						{ "i", 36910 },	-- Titanium Ore
+					},
+				}, {
+					i(36921),	-- Autumn's Glow
+					i(36933),	-- Forest Emerald
+					i(36930),	-- Monarch Topaz
+					i(36918),	-- Scarlet Ruby
+					i(36924),	-- Sky Sapphire
+					i(36927),	-- Twilight Opal
+				}),
+				applyclassicphase(WRATH_PHASE_THREE, sharedData({	-- Epic quality (purple) gems:
+					["description"] = "This gem is most reliably obtained from transmutation with Alchemy, while prospecting Titanium Ores with Jewelcrafting offers the second best drop rate (5%).",
+					["provider"] = { "i", 36910 },	-- Titanium Ore
+					["timeline"] = { ADDED_3_2_0 },
+				}, {
+					i(36931),	-- Ametrine
+					i(36919),	-- Cardinal Ruby
+					i(36928),	-- Dreadstone
+					i(36934),	-- Eye of Zul
+					i(36922),	-- King's Amber
+					i(36925),	-- Majestic Zircon
+				}))
+			),
+		}),
 		category(168, {	-- Materials
 			applyclassicphase(WRATH_PHASE_THREE, i(46849, {	-- Titanium Powder
 				["cost"] = ClassicCost({{ "i", 36910, 5 }}),	-- Titanium Ore
 			})),
+		}),
+		filter(MISC, {
+			i(44943),	-- Icy Prism
 		}),
 		filter(NECK_F, {
 			i(42339),	-- Blood Sun Necklace
@@ -1222,8 +1429,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(49899, {["timeline"] = {ADDED_3_3_0}}),	-- Bladeborn Leggings
 				i(49894, {["timeline"] = {ADDED_3_3_0}}),	-- Blessed Cenarion Boots
 				i(45565, {["timeline"] = {ADDED_3_1_0}}),	-- Boots of Wintry Endurance
-				i(47581, {["timeline"] = {ADDED_3_2_0}}),	-- Bracers of Swift Death [A]
-				i(47582, {["timeline"] = {ADDED_3_2_0}}),	-- Bracers of Swift Death [H]
+				i(47581, {["timeline"] = { ADDED_3_2_0 }}),	-- Bracers of Swift Death [A]
+				i(47582, {["timeline"] = { ADDED_3_2_0 }}),	-- Bracers of Swift Death [H]
 				i(44442),	-- Bugsquashers
 				i(38592),	-- Dark Arctic Chestpiece
 				i(38591),	-- Dark Arctic Leggings
@@ -1251,14 +1458,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(38411),	-- Iceborne Shoulderpads
 				i(38434),	-- Iceborne Wristguards
 				i(43256),	-- Jormscale Footpads
-				i(47599, {["timeline"] = {ADDED_3_2_0}}),	-- Knightbane Carapace [A]
-				i(47600, {["timeline"] = {ADDED_3_2_0}}),	-- Knightbane Carapace [H]
+				i(47599, {["timeline"] = { ADDED_3_2_0 }}),	-- Knightbane Carapace [A]
+				i(47600, {["timeline"] = { ADDED_3_2_0 }}),	-- Knightbane Carapace [H]
 				i(42731),	-- Leggings of Visceral Strikes
 				i(49898, {["timeline"] = {ADDED_3_3_0}}),	-- Legwraps of Unleashed Nature
-				i(47602, {["timeline"] = {ADDED_3_2_0}}),	-- Lunar Eclipse Robes [A]
-				i(47601, {["timeline"] = {ADDED_3_2_0}}),	-- Lunar Eclipse Robes [H]
-				i(47583, {["timeline"] = {ADDED_3_2_0}}),	-- Moonshadow Armguards [A]
-				i(47584, {["timeline"] = {ADDED_3_2_0}}),	-- Moonshadow Armguards [H]
+				i(47602, {["timeline"] = { ADDED_3_2_0 }}),	-- Lunar Eclipse Robes [A]
+				i(47601, {["timeline"] = { ADDED_3_2_0 }}),	-- Lunar Eclipse Robes [H]
+				i(47583, {["timeline"] = { ADDED_3_2_0 }}),	-- Moonshadow Armguards [A]
+				i(47584, {["timeline"] = { ADDED_3_2_0 }}),	-- Moonshadow Armguards [H]
 				i(43266),	-- Overcast Belt
 				i(43273),	-- Overcast Boots
 				i(43264),	-- Overcast Bracers
@@ -1280,14 +1487,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			}),
 			filter(MAIL, {
 				i(45553, {["timeline"] = {ADDED_3_1_0}}),	-- Belt of Dragons
-				i(47579, {["timeline"] = {ADDED_3_2_0}}),	-- Black Chitin Bracers [A]
-				i(47580, {["timeline"] = {ADDED_3_2_0}}),	-- Black Chitin Bracers [H]
+				i(47579, {["timeline"] = { ADDED_3_2_0 }}),	-- Black Chitin Bracers [A]
+				i(47580, {["timeline"] = { ADDED_3_2_0 }}),	-- Black Chitin Bracers [H]
 				i(45554, {["timeline"] = {ADDED_3_1_0}}),	-- Blue Belt of Chaos
 				i(45562, {["timeline"] = {ADDED_3_1_0}}),	-- Boots of Living Scale
-				i(47576, {["timeline"] = {ADDED_3_2_0}}),	-- Crusader's Dragonscale Bracers [A]
-				i(47577, {["timeline"] = {ADDED_3_2_0}}),	-- Crusader's Dragonscale Bracers [H]
-				i(47595, {["timeline"] = {ADDED_3_2_0}}),	-- Crusader's Dragonscale Breastplate [A]
-				i(47596, {["timeline"] = {ADDED_3_2_0}}),	-- Crusader's Dragonscale Breastplate [H]
+				i(47576, {["timeline"] = { ADDED_3_2_0 }}),	-- Crusader's Dragonscale Bracers [A]
+				i(47577, {["timeline"] = { ADDED_3_2_0 }}),	-- Crusader's Dragonscale Bracers [H]
+				i(47595, {["timeline"] = { ADDED_3_2_0 }}),	-- Crusader's Dragonscale Breastplate [A]
+				i(47596, {["timeline"] = { ADDED_3_2_0 }}),	-- Crusader's Dragonscale Breastplate [H]
 				i(44437),	-- Dark Frostscale Breastplate
 				i(44436),	-- Dark Frostscale Leggings
 				i(44444),	-- Dark Nerubian Chestpiece
@@ -1296,8 +1503,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(44438),	-- Dragonstompers
 				i(43131),	-- Eaglebane Bracers
 				i(49896, {["timeline"] = {ADDED_3_3_0}}),	-- Earthsoul Boots
-				i(47597, {["timeline"] = {ADDED_3_2_0}}),	-- Ensorcelled Nerubian Breastplate [A]
-				i(47598, {["timeline"] = {ADDED_3_2_0}}),	-- Ensorcelled Nerubian Breastplate [H]
+				i(47597, {["timeline"] = { ADDED_3_2_0 }}),	-- Ensorcelled Nerubian Breastplate [A]
+				i(47598, {["timeline"] = { ADDED_3_2_0 }}),	-- Ensorcelled Nerubian Breastplate [H]
 				i(38412),	-- Frostscale Belt
 				i(38413),	-- Frostscale Boots
 				i(38436),	-- Frostscale Bracers
@@ -1367,7 +1574,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			-- Nodes
 			o(189978, {	-- Cobalt Deposit
 				["maps"] = {
@@ -1503,7 +1710,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(35627),	-- Eternal Shadow
 			--]]
 		}),
-		spell(2656, {	-- Smelting
+		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(36916, {	-- Cobalt Bar
 				["cost"] = ClassicCost({ { "i", 36909, 1 } }),	-- Cobalt Ore
 			}),
@@ -1525,130 +1732,212 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(SKINNING, {
-		["description"] = "The following items can be gathered by skinning creatures out in the world.",
+		["description"] = "The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
 		["groups"] = {
-			i(44128),	-- Arctic Fur
-			i(33568),	-- Borean Leather
-			i(33567),	-- Borean Leather Scraps
-			i(38425),	-- Heavy Borean Leather
-			i(38557),	-- Icy Dragonscale
-			i(38561),	-- Jormungar Scale
-			i(38558),	-- Nerubian Chitin
+			i(44128, {	-- Arctic Fur
+				["description"] = "Arctic Fur is a rare skinned drop from any skinnable creatures.",
+			}),
+			i(33568, {	-- Borean Leather
+				["description"] = "Can be skinned from any skinnable WotLK mobs.",
+			}),
+			i(33567, {	-- Borean Leather Scraps
+				["groups"] = {
+					i(33568),	-- Borean Leather
+				},
+			}),
+			i(38557, {	-- Icy Dragonscale
+				["coords"] = {
+					{ 23.9, 29.9, BOREAN_TUNDRA },	-- Coldarra
+					{ 28.5, 62.6, CRYSTALSONG_FOREST },	-- The Azure Front
+					{ 19.4, 61.1, DRAGONBLIGHT },	-- Moonrest Gardens
+					{ 46.5, 26.7, SHOLAZAR_BASIN },	-- The Savage Thicket
+				},
+				["crs"] = {
+					31402,	-- Azure Scalebane
+					31403,	-- Azure Spellweaver
+					25713,	-- Blue Drakonic Supplicant
+					32572,	-- Dragonblight Mage Hunter (dragonkin)
+					28378,	-- Primordial Drake
+				},
+				["maps"] = {
+					THE_OBSIDIAN_SANCTUM,
+					-- #if AFTER 3.3.5
+					THE_RUBY_SANCTUM
+					-- #endif
+				},
+			}),
+			i(38561, {	-- Jormungar Scale
+				["coords"] = {
+					{ 82.2, 31.3, BOREAN_TUNDRA },	-- Transborea
+					{ 57.3, 12.3, DRAGONBLIGHT },	-- The Crystal Vice
+					{ 51.3, 23.9, DRAGONBLIGHT },	-- The Dragon Wastes
+					{ 55.9, 64.2, THE_STORM_PEAKS },	-- Hibernal Cavern
+					{ 47.1, 54.9, THE_STORM_PEAKS },	-- Gimorek's Den
+					{ 27.6, 46.7, THE_STORM_PEAKS },	-- Snowdrift Plains
+				},
+				["crs"] = {
+					26293,	-- Hulking Jormungar
+					26358,	-- Ice Heart Jormungar Feeder
+					26359,	-- Ice Heart Jormungar Spawn
+					30148,	-- Infesting Jormungar
+					26467,	-- Jormungar Tunneler
+					30291,	-- Ravenous Jormungar
+					30422,	-- Roaming Jormungar
+					29390,	-- Snowdrift Jormungar
+					25454,	-- Tundra Crawler
+				},
+			}),
+			i(38558, {	-- Nerubian Chitin
+				["coords"] = {
+					{ 67.4, 32.0, BOREAN_TUNDRA },	-- The southern Geyser Fields
+					{ 54.9, 70.4, BOREAN_TUNDRA },	-- Valliance Keep, west of
+					{ 41.1, 58.2, BOREAN_TUNDRA },	-- Mightstone Quarry
+					{ 17.1, 49.5, DRAGONBLIGHT },	-- Westwind Refugee Camp, east of
+					{ 26.2, 49.5, DRAGONBLIGHT },	-- The Pit of Narjun
+					{ 79.1, 67.2, ICECROWN },	-- Scourgeholme
+					{ 53.4, 76.0, ICECROWN },	-- The Courth of Bones
+				},
+				["crs"] = {
+					26402,	-- Anub'ar Ambusher
+					26413,	-- Anub'ar Dreadweaver
+					26606,	-- Anub'ar Slayer
+					26605,	-- Anub'ar Underlord
+					31780,	-- Fallen Spiderlord
+					30205,	-- Forgotten Depths Acolyte
+					30204,	-- Forgotten Depths Ambusher
+					30543,	-- Forgotten Depths High Priest (intro phase)
+					31037,	-- Forgotten Depths High Priest (progressed phase)
+					30333,	-- Forgotten Depths Slayer
+					31039,	-- Forgotten Depths Underking (progressed phase)
+					30541,	-- Forgotten Depths Underking (intro phase)
+					31747,	-- Necrotic Webspinner
+					26445,	-- Nerub'ar Corpse Harvester
+					24562,	-- Nerub'ar Invader
+					24566,	-- Nerub'ar Skitterer
+					25622,	-- Nerub'ar Tunneler
+					24563,	-- Nerub'ar Venomspitter
+					25619,	-- Nerub'ar Warrior
+					25294,	-- Nerub'ar Web Lord
+					25582,	-- Scourged Flamespitter
+				},
+				["maps"] = {
+					AHNKAHET_THE_OLD_KINGDOM,
+					AZJOL_NERUB,
+				},
+			}),
 		},
 	}),
 	prof(TAILORING, {
+		n(ARMOR, {
+			i(42096),	-- Aurora Slippers
+			applyclassicphase(WRATH_PHASE_THREE, i(47585, {["timeline"] = { ADDED_3_2_0 }})),	-- Bejeweled Wizard's Bracers [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47586, {["timeline"] = { ADDED_3_2_0 }})),	-- Bejeweled Wizard's Bracers [H]
+			i(41553),	-- Black Duskweave Leggings
+			i(41554),	-- Black Duskweave Robe
+			i(41555),	-- Black Duskweave Wristwraps
+			i(41249),	-- Blue Lumberjack Shirt
+			i(41253),	-- Blue Workman's Shirt
+			i(45810, {["timeline"] = {ADDED_3_1_0}}),	-- Cloak of Crimson Snow
+			i(41608),	-- Cloak of Frozen Spirits
+			i(41607),	-- Cloak of the Moon
+			applyclassicphase(WRATH_PHASE_TWO, i(45558, {["timeline"] = {ADDED_3_1_0}})),	-- Cord of the White Dawn
+			i(41986),	-- Deep Frozen Cord
+			i(41610),	-- Deathchill Cloak
+			applyclassicphase(WRATH_PHASE_FOUR, i(49890, {["timeline"] = {ADDED_3_3_0}})),	-- Deathfrost Boots
+			i(41543),	-- Duskweave Belt
+			i(41544),	-- Duskweave Boots
+			i(41546),	-- Duskweave Cowl
+			i(41545),	-- Duskweave Gloves
+			i(41548),	-- Duskweave Leggings
+			i(41549),	-- Duskweave Robe
+			i(41550),	-- Duskweave Shoulders
+			i(41551),	-- Duskweave Wristwraps
+			i(42111),	-- Ebonweave Gloves
+			i(42101),	-- Ebonweave Robe
+			i(45811, {["timeline"] = {ADDED_3_1_0}}),	-- Frostguard Drape
+			i(42093),	-- Frostmoon Pants
+			i(43969),	-- Frostsavage Belt
+			i(43970),	-- Frostsavage Boots
+			i(43974),	-- Frostsavage Bracers
+			i(43971),	-- Frostsavage Cowl
+			i(41516),	-- Frostsavage Gloves
+			i(43975),	-- Frostsavage Leggings
+			i(43972),	-- Frostsavage Robe
+			i(43973),	-- Frostsavage Shoulders
+			i(41522),	-- Frostwoven Belt
+			i(41520),	-- Frostwoven Boots
+			i(41521),	-- Frostwoven Cowl
+			i(44211),	-- Frostwoven Gloves
+			i(41519),	-- Frostwoven Leggings
+			i(41515),	-- Frostwoven Robe
+			i(41513),	-- Frostwoven Shoulders
+			i(41512),	-- Frostwoven Wristwraps
+			i(43583),	-- Glacial Robe
+			i(43585),	-- Glacial Slippers
+			i(43584),	-- Glacial Waistband
+			i(41250),	-- Green Lumberjack Shirt
+			i(41255),	-- Green Workman's Shirt
+			i(41984),	-- Hat of Wintry Doom
+			applyclassicphase(WRATH_PHASE_FOUR, i(49891, {["timeline"] = {ADDED_3_3_0}})),	-- Leggings of Woven Death
+			i(42095),	-- Light Blessed Mittens
+			applyclassicphase(WRATH_PHASE_FOUR, i(49892, {["timeline"] = {ADDED_3_3_0}})),	-- Lightweave Leggings
+			applyclassicphase(WRATH_PHASE_THREE, i(47603, {["timeline"] = { ADDED_3_2_0 }})),	-- Merlin's Robe [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47604, {["timeline"] = { ADDED_3_2_0 }})),	-- Merlin's Robe [H]
+			i(42103),	-- Moonshroud Gloves
+			i(42100),	-- Moonshroud Robe
+			i(41525),	-- Mystic Frostwoven Robe
+			i(41523),	-- Mystic Frostwoven Shoulders
+			i(41528),	-- Mystic Frostwoven Wristwraps
+			i(41248),	-- Red Lumberjack Shirt
+			i(41252),	-- Red Workman's Shirt
+			applyclassicphase(WRATH_PHASE_THREE, i(47587, {["timeline"] = { ADDED_3_2_0 }})),	-- Royal Moonshroud Bracers [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47588, {["timeline"] = { ADDED_3_2_0 }})),	-- Royal Moonshroud Bracers [H]
+			applyclassicphase(WRATH_PHASE_THREE, i(47605, {["timeline"] = { ADDED_3_2_0 }})),	-- Royal Moonshroud Robe [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47606, {["timeline"] = { ADDED_3_2_0 }})),	-- Royal Moonshroud Robe [H]
+			i(41254),	-- Rustic Workman's Shirt
+			applyclassicphase(WRATH_PHASE_FOUR, i(49893, {["timeline"] = {ADDED_3_3_0}})),	-- Sandals of Consecration
+			applyclassicphase(WRATH_PHASE_TWO, i(45557, {["timeline"] = {ADDED_3_1_0}})),	-- Sash of Ancient Power
+			applyclassicphase(WRATH_PHASE_TWO, i(45567, {["timeline"] = {ADDED_3_1_0}})),	-- Savior's Slippers
+			i(41985),	-- Silky Iceshard Boots
+			applyclassicphase(WRATH_PHASE_TWO, i(45566, {["timeline"] = {ADDED_3_1_0}})),	-- Spellslinger's Slippers
+			i(42113),	-- Spellweave Gloves
+			i(42102),	-- Spellweave Robe
+			i(41609),	-- Wispcloak
+			i(41251),	-- Yellow Lumberjack Shirt
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(41603),	-- Azure Spellthread
+			i(41602),	-- Brilliant Spellthread
+			i(41604),	-- Sapphire Spellthread
+			i(41601),	-- Shining Spellthread
+		}),
 		filter(BAGS, {
 			i(41597),	-- Abyssal Bag
-			i(45773),	-- Emerald Bag
+			i(45773, {["timeline"] = {ADDED_3_1_0}}),	-- Emerald Bag
 			i(41599),	-- Frostweave Bag
 			i(41600),	-- Glacial Bag
 			i(41598),	-- Mysterious Bag
 		}),
-		filter(CONSUMABLES, {
-			i(41601),	-- Shining Spellthread
-			i(41602),	-- Brilliant Spellthread
-			i(41603),	-- Azure Spellthread
-			i(41604),	-- Sapphire Spellthread
-		}),
-		n(CHEST, {
-			i(41554),	-- Black Duskweave Robe
-			i(41549),	-- Duskweave Robe
-			i(42101),	-- Ebonweave Robe
-			i(43972),	-- Frostsavage Robe
-			i(41515),	-- Frostwoven Robe
-			i(43583),	-- Glacial Robe
-			i(47603),	-- Merlin's Robe (alliance)
-			i(47604),	-- Merlin's Robe (horde)
-			i(42100),	-- Moonshroud Robe
-			i(41525),	-- Mystic Frostwoven Robe
-			i(47605),	-- Royal Moonshroud Robe (alliance)
-			i(47606),	-- Royal Moonshroud Robe (horde)
-			i(42102),	-- Spellweave Robe
-		}),
-		n(BACK, {
-			i(45810),	-- Cloak of Crimson Snow
-			i(41608),	-- Cloak of Frozen Spirits
-			i(41607),	-- Cloak of the Moon
-			i(41610),	-- Deathchill Cloak
-			i(45811),	-- Frostguard Drape
-			i(41609),	-- Wispcloak
-		}),
-		n(FEET, {
-			i(42096),	-- Aurora Slippers
-			i(49890),	-- Deathfrost Boots
-			i(41544),	-- Duskweave Boots
-			i(43970),	-- Frostsavage Boots
-			i(41520),	-- Frostwoven Boots
-			i(43585),	-- Glacial Slippers
-			i(49893),	-- Sandals of Consecration
-			i(45567),	-- Savior's Slippers
-			i(41985),	-- Silky Iceshard Boots
-			i(45566),	-- Spellslinger's Slippers
-		}),
-		n(HANDS, {
-			i(41545),	-- Duskweave Gloves
-			i(42111),	-- Ebonweave Gloves
-			i(41516),	-- Frostsavage Gloves
-			i(44211),	-- Frostwoven Gloves
-			i(42095),	-- Light Blessed Mittens
-			i(42103),	-- Moonshroud Gloves
-			i(42113),	-- Spellweave Gloves
-		}),
-		n(HEAD, {
-			i(41546),	-- Duskweave Cowl
-			i(43971),	-- Frostsavage Cowl
-			i(41521),	-- Frostwoven Cowl
-			i(41984),	-- Hat of Wintry Doom
-		}),
-		n(LEGS, {
-			i(41553),	-- Black Duskweave Leggings
-			i(41548),	-- Duskweave Leggings
-			i(42093),	-- Frostmoon Pants
-			i(43975),	-- Frostsavage Leggings
-			i(41519),	-- Frostwoven Leggings
-			i(49891),	-- Leggings of Woven Death
-			i(49892),	-- Lightweave Leggings
+		filter(MISC, {
+			-- #if AFTER BFA
+			i(34721),	-- Frostweave Bandage
+			-- #endif
+			i(41509),	-- Frostweave Net
+			-- #if AFTER BFA
+			i(34722),	-- Heavy Frostweave Bandage
+			-- #endif
 		}),
 		filter(MOUNTS, {
 			i(44554),	-- Flying Carpet (MOUNT!)
-			applyclassicphase(WRATH_PHASE_FOUR, i(54797)),	-- Frosty Flying Carpet (MOUNT!)
+			applyclassicphase(WRATH_PHASE_FOUR, i(54797, {["timeline"] = {ADDED_3_3_3}})),	-- Frosty Flying Carpet (MOUNT!)
 			i(44558),	-- Magnificent Flying Carpet (MOUNT!)
 		}),
-		n(SHOULDER, {
-			i(41550),	-- Duskweave Shoulders
-			i(43973),	-- Frostsavage Shoulders
-			i(41513),	-- Frostwoven Shoulders
-			i(41523),	-- Mystic Frostwoven Shoulders
-		}),
-		filter(SHIRTS, {
-			i(41249),	-- Blue Lumberjack Shirt
-			i(41253),	-- Blue Workman's Shirt
-			i(41250),	-- Green Lumberjack Shirt
-			i(41255),	-- Green Workman's Shirt
-			i(41248),	-- Red Lumberjack Shirt
-			i(41252),	-- Red Workman's Shirt
-			i(41254),	-- Rustic Workman's Shirt
-			i(41251),	-- Yellow Lumberjack Shirt
-		}),
-		n(WAIST, {
-			i(45558),	-- Cord of the White Dawn
-			i(41986),	-- Deep Frozen Cord
-			i(41543),	-- Duskweave Belt
-			i(43969),	-- Frostsavage Belt
-			i(41522),	-- Frostwoven Belt
-			i(43584),	-- Glacial Waistband
-			i(45557),	-- Sash of Ancient Power
-		}),
-		n(WRIST, {
-			i(47585),	-- Bejeweled Wizard's Bracers (alliance)
-			i(47586),	-- Bejeweled Wizard's Bracers (horde)
-			i(41555),	-- Black Duskweave Wristwraps
-			i(41551),	-- Duskweave Wristwraps
-			i(43974),	-- Frostsavage Bracers
-			i(41512),	-- Frostwoven Wristwraps
-			i(41528),	-- Mystic Frostwoven Wristwraps
-			i(47587),	-- Royal Moonshroud Bracers (alliance)
-			i(47588),	-- Royal Moonshroud Bracers (horde)
+		filter(REAGENTS, {
+			i(41510),	-- Bolt of Frostweave
+			i(41511),	-- Bolt of Imbued Frostweave
+			i(41593),	-- Ebonweave
+			i(41594),	-- Moonshroud
+			i(41595),	-- Spellweave
 		}),
 	}),
 }))));

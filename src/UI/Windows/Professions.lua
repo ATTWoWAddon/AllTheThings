@@ -7,16 +7,6 @@ local ipairs, pairs, floor, tinsert, tremove =
 
 -- App locals
 local GetRelativeValue, GetDeepestRelativeFunc = app.GetRelativeValue, app.GetDeepestRelativeFunc;
-local function OnLoad(self, settings)
-	if settings.Progress then
-		self.data.progress = settings.Progress;
-		self.data.total = settings.Total;
-	end
-end
-local function OnSave(self, settings)
-	settings.Progress = self.data.progress;
-	settings.Total = self.data.total;
-end
 
 -- Implementation
 function app:CreateDynamicProfessionCategory(name, commands, professionID, specializationProfessionIDs)
@@ -29,7 +19,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 		OnInit = function(self, handlers)
 			local function ProfessionFilter(group)
 				local v = group.requireSkill;
-				if v and (v == professionID or app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == professionID) and group.spellID and not group.g and (not group.f or group.f == 200) then
+				if v and (v == professionID or app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == professionID) and group.spellID and not group.g and (not group.f or group.f == 200) then
 					return true;
 				end
 			end
@@ -106,10 +96,6 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											if r then recipe.r = r; end
 											local c = GetRelativeValue(mostAccessibleSource, "c");
 											if c then recipe.c = c; end
-											local nmr = GetRelativeValue(mostAccessibleSource, "nmr");
-											if nmr then recipe.nmr = nmr; end
-											local nmc = GetRelativeValue(mostAccessibleSource, "nmc");
-											if nmc then recipe.nmc = nmc; end
 											for key,value in pairs(mostAccessibleSource) do
 												recipe[key] = value;
 											end
@@ -144,7 +130,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 													if headerID then
 														local event = events[e];
 														if not event then
-															event = app.CreateNPC(headerID);
+															event = app.CreateCustomHeader(headerID);
 															events[e] = event;
 															event.SortType = "name";
 															event.parent = data;
@@ -176,8 +162,6 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 				end
 			});
 		end,
-		OnLoad = OnLoad,
-		OnSave = OnSave,
 	});
 end
 
@@ -189,8 +173,14 @@ app:CreateDynamicProfessionCategory("Engineering", { "atteng" }, 202, { 20222, 2
 app:CreateDynamicProfessionCategory("First Aid", { "attaid" }, 129);
 app:CreateDynamicProfessionCategory("Fishing", { "attfish" }, 356);
 app:CreateDynamicProfessionCategory("Herbalism", { "attherb" }, 182);
-app:CreateDynamicProfessionCategory("Inscription", { "attscribe" }, 773);
-app:CreateDynamicProfessionCategory("Jewelcrafting", { "attjc" }, 755);
+if app.GameBuildVersion > 30000 then
+	-- Inscription came out with Wrath
+	app:CreateDynamicProfessionCategory("Inscription", { "attscribe" }, 773);
+end
+if app.GameBuildVersion > 20000 then
+	-- Jewelcrafting came out with TBC
+	app:CreateDynamicProfessionCategory("Jewelcrafting", { "attjc" }, 755);
+end
 app:CreateDynamicProfessionCategory("Leatherworking", { "attlw" }, 165, { 10656, 10658, 10660 });
 app:CreateDynamicProfessionCategory("Mining", { "attmining" }, 186);
 app:CreateDynamicProfessionCategory("Skinning", { "attskinning" }, 393);

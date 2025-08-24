@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
 				["questID"] = 72986,
 				["cost"] = { { "i", 15138, 1 }, },	-- 1x Onyxia Scale Cloak
-				["g"] = {
+				["groups"] = {
 					i(205418),	-- Blazing Shadowflame Cinder (TOY!)
 				},
 			}),
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 36.4, 74.3, ZARALEK_CAVERN },	-- Chest
 				},
 				["questID"] = 74986,
-				["g"] = {
+				["groups"] = {
 					i(205192),	-- Volatile Crystal Shard
 				},
 			}),
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(401839, {	-- Dreamer's Bounty
 				["description"] = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
 				["questID"] = 75762,
-				["g"] = {
+				["groups"] = {
 					i(205194),	-- Fractured Crystalspine Quill
 				},
 			}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 48.4, 10.9, ZARALEK_CAVERN },	-- Chest
 				},
 				["questID"] = 75514,
-				["g"] = {
+				["groups"] = {
 					i(205195),	-- Drakeforged Magma Charm
 				},
 			}),
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "Under the whole structure and behind the metal gate. You can get there from wall hopping on the right side or other movement abilities.",
 				["coord"] = { 48.4, 16.4, ZARALEK_CAVERN },
 				["questID"] = 75515,
-				["g"] = {
+				["groups"] = {
 					i(205981),	-- Molten Primal Fang
 				},
 			}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["crs"] = { 203225 },
 				["coord"] = { 56.7, 48.7, ZARALEK_CAVERN },
 				["questID"] = 75320,
-				["g"] = {
+				["groups"] = {
 					i(205191),	-- Underlight Globe
 				},
 			}),
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 43.1, 82.6, ZARALEK_CAVERN },
 				["questID"] = 74995,
 				["cost"] = {{"i",204323,1}},	-- Old Trunk Key
-				["g"] = {
+				["groups"] = {
 					hqt(75526, {	-- First Rock Mouse
 						["name"] = "First Rock Mouse",
 						["provider"] = { "n", 203073 },
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["provider"] = { "n", 204289 },
 						["coord"] = { 43.7, 83.9, ZARALEK_CAVERN },
 						["sourceQuest"] = 75535,	-- Fourth Rock Mouse
-						["g"] = {
+						["groups"] = {
 							i(204323),	-- Old Trunk Key
 						},
 					}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",
 				["coord"] = { 32.3, 39.4, ZARALEK_CAVERN },
 				["questID"] = 73410,
-				["g"] = {
+				["groups"] = {
 					i(192779),	-- Seething Slug (MOUNT!)
 					o(386083, {	-- Seething Orb
 						["coords"] = {
@@ -169,14 +169,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(386080, {	-- Scorching Key
 				-- ["questID"] = ,	-- No questid triggered (Jan 5, 2025)
 				["coord"] = { 30.1, 40.8, ZARALEK_CAVERN },
-				["g"] = {
-					i(202869),    -- Scorching Key
+				["groups"] = {
+					i(202869),	-- Scorching Key
 				}
 			}),
 			n(200618, {	-- Sheridon Hastle
 				["coord"] = { 42.9, 60.3, ZARALEK_CAVERN },
 				["questID"] = 75231,
-				["g"] = {
+				["groups"] = {
 					i(204642),	-- Sheridon Hastle's Effects
 				},
 			}),
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{"select","mapID",ZARALEK_CAVERN},
 					{"find","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Obtained Weapons/Armor confirmed by Wowhead/Runaway
 				},
-				["g"] = appendAllGroups({
+				["groups"] = appendAllGroups({
 					-- Shared Drops
 					i(202275),	-- Renewed Proto-Drake: Plated Jaw (MM!)
 				},sharedData({
@@ -209,6 +209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 73548,
 						["coords"] = {
 							{ 41.7, 44.6, ZARALEK_CAVERN },
+							{ 41.9, 47.1, ZARALEK_CAVERN },
 							{ 40.0, 51.3, ZARALEK_CAVERN },
 							{ 38.1, 49.8, ZARALEK_CAVERN },
 							{ 40.8, 50.2, ZARALEK_CAVERN },
@@ -228,6 +229,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					o(386090, {	-- Ritual Offerings
 						["questID"] = 73552,
 						["coords"] = {
+							{ 29.0, 54.9, ZARALEK_CAVERN },
+							{ 30.1, 51.4, ZARALEK_CAVERN },
 							{ 36.4, 52.3, ZARALEK_CAVERN },
 							{ 35.1, 52.2, ZARALEK_CAVERN },
 							{ 32.0, 52.9, ZARALEK_CAVERN },
@@ -290,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 65.2, 55.3, ZARALEK_CAVERN },
 				},
 				["cost"] = {{"i",191304,1}},	-- Sturdy Expedition Shovel
-				["g"] = {
+				["groups"] = {
 					o(401846, {	-- Smelly Treasure Chest
 						["isRepeatable"] = true,
 						["sym"] = {
@@ -311,7 +314,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{"find","headerID",BACK},{"pop"},		-- Only Cloak/Ring drop from these it appears
 					{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (MM!)
 				},
-				["g"] = {
+				["groups"] = {
 					i(203313),	-- Winding Slitherdrake: Spiked Chin (MM!)
 				},
 			}),

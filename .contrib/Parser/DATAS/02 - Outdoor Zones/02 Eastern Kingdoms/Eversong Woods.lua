@@ -22,8 +22,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				["groups"] = {
 					n(QUESTS, {
 						q(8336, {	-- A Fistful of Slivers
-							["qg"] = 15296,	-- Arcanist Ithanas
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							["qg"] = 15296,	-- Arcanist Ithanas
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 61.8, 39.4, SUNSTRIDER_ISLE },
@@ -31,8 +31,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ 38.3, 19.1, EVERSONG_WOODS },
 								-- #endif
 							},
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -46,9 +46,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37440, {	-- A Fistful of Slivers
-							["qg"] = 15296,	-- Arcanist Ithanas
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
+							["qg"] = 15296,	-- Arcanist Ithanas
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 61.8, 39.4, SUNSTRIDER_ISLE },
@@ -56,8 +56,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ 38.3, 19.1, EVERSONG_WOODS },
 								-- #endif
 							},
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -71,8 +71,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(8334, {	-- Aggression
-							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8327,	-- Report to Lanthan Perilon
+							["qg"] = 15281,	-- Lanthan Perilon
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 52.8, 49.8, SUNSTRIDER_ISLE },
@@ -97,8 +97,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(8347, {	-- Aiding the Outrunners
-							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8335,	-- Felendren the Banished
+							["qg"] = 15281,	-- Lanthan Perilon
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 52.8, 49.8, SUNSTRIDER_ISLE },
@@ -113,8 +113,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						-- #if BEFORE MOP
 						q(10068, {	-- Arcane Missiles (TBC) / Frost Nova (MOP) / Well Watcher Solanian (TBC)
-							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
+							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 64.6, 46.4, SUNSTRIDER_ISLE },
@@ -134,8 +134,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #endif
 						q(27091, {	-- Charge! (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 43010,	-- Delios Silverblade
 							["sourceQuest"] = 8329,	-- Warrior Training
+							["qg"] = 43010,	-- Delios Silverblade
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 64.8, 42.6, SUNSTRIDER_ISLE },
@@ -155,8 +155,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if AFTER MOP
 						q(10073, {	-- Corruption (MOP) / Immolation (TBC) / Well Watcher Solanian (TBC)
-							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
+							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 63.8, 46.2, SUNSTRIDER_ISLE },
@@ -176,8 +176,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #endif
 						q(10071, {	-- Evisceration (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
+							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 63.8, 42.2, SUNSTRIDER_ISLE },
@@ -197,8 +197,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #endif
 						q(8335, {	-- Felendren the Banished
-							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8334,	-- Aggression
+							["qg"] = 15281,	-- Lanthan Perilon
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 52.8, 49.8, SUNSTRIDER_ISLE },
@@ -224,8 +224,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if AFTER MOP
 						q(10068, {	-- Frost Nova (MOP) / Arcane Missiles (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
+							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 64.6, 46.4, SUNSTRIDER_ISLE },
@@ -247,8 +247,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if AFTER CATA
 						-- #if BEFORE MOP
 						q(10072, {	-- Healing the Wounded (Cata+) / Learning the Word (MOP) / Well Watcher Solanian (TBC)
-							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							["sourceQuest"] = 8564,	-- Priest Training
+							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 65.6, 43.8, SUNSTRIDER_ISLE },	-- Matron Arena <Priest Trainer>
 							-- #else
@@ -285,8 +285,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #if BEFORE MOP
 						-- #if AFTER CATA
 						q(10073, {	-- Immolation (Cata+) / Corruption (MOP) / Well Watcher Solanian (TBC)
-							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
+							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 63.8, 46.2, SUNSTRIDER_ISLE },
@@ -308,8 +308,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						-- #endif
 						-- #if AFTER MOP
 						q(10072, {	-- Learning the Word (MOP) / Healing the Wounded (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							["sourceQuest"] = 8564,	-- Priest Training
+							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 65.6, 43.8, SUNSTRIDER_ISLE },	-- Matron Arena <Priest Trainer>
 							-- #else
@@ -345,9 +345,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(31170, {	-- Monk Training
 							["qg"] = 15278,	-- Magistrix Erona
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9676, {	-- Paladin Training
 							["qg"] = 15278,	-- Magistrix Erona
@@ -399,8 +399,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(8327, {	-- Report to Lanthan Perilon
-							["qg"] = 15278,	-- Magistrix Erona
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							["qg"] = 15278,	-- Magistrix Erona
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
@@ -427,7 +427,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						q(8330, {	-- Solanian's Belongings
-							["qg"] = 15295,	-- Well Watcher Solanian
 							["sourceQuests"] = {
 								10070,	-- Well Watcher Solanian (TBC) / Steady Shot (Cata+)
 								10068,	-- Well Watcher Solanian (TBC) / Frost Nova (MOP) / Arcane Missiles (Cata+)
@@ -439,13 +438,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								27091,	-- Well Watcher Solanian (TBC) / Charge! (Cata+)
 								-- #endif
 							},
+							["qg"] = 15295,	-- Well Watcher Solanian
 							-- #if AFTER LEGION
 							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -491,16 +491,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37443, {	-- Solanian's Belongings
-							["qg"] = 15295,	-- Well Watcher Solanian
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8330 },	-- Solanian's Belongings (original)
+							["qg"] = 15295,	-- Well Watcher Solanian
 							-- #if AFTER LEGION
 							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -546,8 +546,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if AFTER CATA
 						q(10070, {	-- Steady Shot (Cata+) / Well Watcher Solanian (TBC)
-							["qg"] = 15513,	-- Ranger Sallina <Hunter Trainer>
 							["sourceQuest"] = 9393,	-- Hunter Training
+							["qg"] = 15513,	-- Ranger Sallina <Hunter Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 64.2, 42.2, SUNSTRIDER_ISLE },
 							-- #else
@@ -572,8 +572,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -587,16 +587,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37442, {	-- The Shrine of Dath'Remar
-							["qg"] = 15295,	-- Well Watcher Solanian
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8345 },	-- The Shrine of Dath'Remar (original)
+							["qg"] = 15295,	-- Well Watcher Solanian
 							-- #if AFTER LEGION
 							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -610,15 +610,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(8346, {	-- Thirst Unending
-							["qg"] = 15297,	-- Arcanist Helion
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							["qg"] = 15297,	-- Arcanist Helion
 							-- #if AFTER LEGION
 							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								-- #if BEFORE CATA
@@ -636,16 +636,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 						}),
 						q(37439, {	-- Thirst Unending
-							["qg"] = 15297,	-- Arcanist Helion
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8346 },	-- Thirst Unending (original)
+							["qg"] = 15297,	-- Arcanist Helion
 							-- #if AFTER LEGION
 							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
@@ -659,13 +659,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(31171, {	-- Tiger Palm
 							["qg"] = 63332,	-- Pao
 							["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(8326, {	-- Unfortunate Measures
-							["qg"] = 15278,	-- Magistrix Erona
 							["sourceQuest"] = 8325,	-- Reclaiming Sunstrider Isle
+							["qg"] = 15278,	-- Magistrix Erona
 							-- #if AFTER MOP
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							-- #else
@@ -724,8 +724,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #endif
 						q(10069, {	-- Well Watcher Solanian (TBC) / Ways of the Light (Cata+)
-							["qg"] = 15280,	-- Jesthenis Sunstriker <Paladin Trainer>
 							["sourceQuest"] = 9676,	-- Paladin Training
+							["qg"] = 15280,	-- Jesthenis Sunstriker <Paladin Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 65.4, 43.8, SUNSTRIDER_ISLE },
 							-- #else
@@ -743,8 +743,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if BEFORE CATA
 						q(10071, {	-- Well Watcher Solanian (TBC) / Evisceration (Cata+)
-							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
+							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 63.8, 42.2, SUNSTRIDER_ISLE },
@@ -763,8 +763,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						q(10068, {	-- Well Watcher Solanian (TBC) / Frost Nova (MOP) / Arcane Missiles (Cata+)
-							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
+							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 64.6, 46.4, SUNSTRIDER_ISLE },
@@ -783,8 +783,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						q(10073, {	-- Well Watcher Solanian (TBC) / Immolation (Cata+) / Corruption (MOP)
-							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
+							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 63.8, 46.2, SUNSTRIDER_ISLE },
@@ -803,8 +803,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						q(10072, {	-- Well Watcher Solanian (TBC) / Learning the Word (MOP) / Healing the Wounded (Cata+)
-							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							["sourceQuest"] = 8564,	-- Priest Training
+							["qg"] = 15284,	-- Matron Arena <Priest Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 65.6, 43.8, SUNSTRIDER_ISLE },	-- Matron Arena <Priest Trainer>
 							-- #else
@@ -821,8 +821,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						q(10070, {	-- Well Watcher Solanian (TBC) / Steady Shot (Cata+)
-							["qg"] = 15513,	-- Ranger Sallina <Hunter Trainer>
 							["sourceQuest"] = 9393,	-- Hunter Training
+							["qg"] = 15513,	-- Ranger Sallina <Hunter Trainer>
 							-- #if AFTER LEGION
 							["coord"] = { 64.2, 42.2, SUNSTRIDER_ISLE },	-- Ranger Sallina <Hunter Trainer>
 							-- #else
@@ -887,41 +887,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					}),
 					n(ZONE_DROPS, {
-						i(20483, {	-- Tainted Arcane Sliver
-							["cr"] = 15298,	-- Tainted Arcane Wraith
-						}),
+						["sym"] = {
+							{ "select","itemID",
+								21002,	-- Unkempt Belt
+								21003,	-- Unkempt Bracers
+								21004,	-- Unkempt Cloak
+								21005,	-- Unkempt Gloves
+								21006,	-- Unkempt Pants
+								21007,	-- Unkempt Robe
+								21008,	-- Unkempt Shoes
+								21009,	-- Scraggy Leather Belt
+								21010,	-- Scraggy Leather Boots
+								21011,	-- Scraggy Leather Bracers
+								21012,	-- Scraggy Leather Gloves
+								21013,	-- Scraggy Leather Pants
+								21014,	-- Scraggy Leather Vest
+								21015,	-- Shoddy Chain Belt
+								21020,	-- Shoddy Chain Boots
+								21019,	-- Shoddy Chain Bracers
+								21018,	-- Shoddy Chain Gloves
+								21017,	-- Shoddy Chain Pants
+								21016,	-- Shoddy Chain Vest
+								21021,	-- Battered Shield
+								21022,	-- Weather Beaten Buckler
+							},
+						},
+						["groups"] = {
+							i(20483, {	-- Tainted Arcane Sliver
+								["cr"] = 15298,	-- Tainted Arcane Wraith
+							}),
+						},
 					}),
-					n(ZONE_DROPS, sharedData({
-						-- #if AFTER 9.0.3
-						["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
-						-- #endif
-					}, {
-						i(21002),	-- Unkempt Belt
-						i(21003),	-- Unkempt Bracers
-						i(21004),	-- Unkempt Cloak
-						i(21005),	-- Unkempt Gloves
-						i(21006),	-- Unkempt Pants
-						i(21007),	-- Unkempt Robe
-						i(21008),	-- Unkempt Shoes
-						i(21009),	-- Scraggy Leather Belt
-						i(21010),	-- Scraggy Leather Boots
-						i(21011),	-- Scraggy Leather Bracers
-						i(21012),	-- Scraggy Leather Gloves
-						i(21013),	-- Scraggy Leather Pants
-						i(21014),	-- Scraggy Leather Vest
-						i(21015),	-- Shoddy Chain Belt
-						i(21020),	-- Shoddy Chain Boots
-						i(21019),	-- Shoddy Chain Bracers
-						i(21018),	-- Shoddy Chain Gloves
-						i(21017),	-- Shoddy Chain Pants
-						i(21016),	-- Shoddy Chain Vest
-						i(21021),	-- Battered Shield
-						i(21022),	-- Weather Beaten Buckler
-					})),
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(859),	-- Explore Eversong Woods
+				ach(859),	-- Explore Eversong Woods
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -994,10 +994,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				q(31581, {	-- Got one! (Jarson)
+					["sourceQuest"] = 31830,	-- Level Up!
+					["qg"] = 63080,	-- Jarson Everlong
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31579, {	-- Learning the Ropes (Jarson)
+					["qg"] = 63080,	-- Jarson Everlong
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31824, {	-- Level Up! (Jarson)
+					["sourceQuest"] = 31572,	-- On The Mend
+					["qg"] = 63080,	-- Jarson Everlong
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31580, {	-- On The Mend (Jarson)
+					["sourceQuest"] = 31571,	-- Learning the Ropes
+					["qg"] = 63080,	-- Jarson Everlong
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 16185 },	-- Anathos <Stable Master>
+							["coord"] = { 47.6, 47.2, EVERSONG_WOODS },
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(8473, {	-- A Somber Task
-					["qg"] = 15398,	-- Larianna Riverwind
 					["sourceQuest"] = 9258,	-- The Scorched Grove
+					["qg"] = 15398,	-- Larianna Riverwind
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
@@ -1017,8 +1052,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(8476, {	-- Amani Encroachment
-					["qg"] = 15399,	-- Lieutenant Dawnrunner
 					["sourceQuest"] = 9359,	-- Farstrider Retreat
+					["qg"] = 15399,	-- Lieutenant Dawnrunner
 					["coord"] = { 60.3, 62.7, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1037,8 +1072,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(8486, {	-- Arcane Instability
-					["qg"] = 15401,	-- Ley-Keeper Velania
 					["sourceQuest"] = 9119,	-- Malfunction at the West Sanctum
+					["qg"] = 15401,	-- Ley-Keeper Velania
 					["coord"] = { 36.6, 57.4, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1054,8 +1089,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9673, {	-- Beast Training
-					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["sourceQuest"] = 9485,	-- Taming the Beast (3/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["coord"] = { 60.3, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
@@ -1078,8 +1113,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(8894, {	-- Cleaning up the Grounds
-					["qg"] = 15969,	-- Groundskeeper Wyllithen
 					["sourceQuest"] = 9394,	-- Where's Wyllithen?
+					["qg"] = 15969,	-- Groundskeeper Wyllithen
 					["coord"] = { 68.7, 46.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1109,18 +1144,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8350, {	-- Completing the Delivery
+					["sourceQuest"] = 9705,	-- Package Recovery
 					["providers"] = {
 						{ "n", 15301 },	-- Outrunner Alarion
 						{ "i", 20804 },	-- Erona's Package
 					},
-					["sourceQuest"] = 9705,	-- Package Recovery
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(8487, {	-- Corrupted Soil
-					["qg"] = 15402,	-- Apprentice Mirveda
 					["sourceQuest"] = 9254,	-- The Wayward Apprentice
+					["qg"] = 15402,	-- Apprentice Mirveda
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1134,11 +1169,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9352, {	-- Darnassian Intrusions
-					["qg"] = 15403,	-- Aeldon Sunbrand
 					["sourceQuest"] = 8463,	-- Unstable Mana Crystals
+					["qg"] = 15403,	-- Aeldon Sunbrand
 					["coord"] = { 48.1, 46.0, EVERSONG_WOODS },
-					["cr"] = 15968,	-- Darnassian Scout
 					["races"] = HORDE_ONLY,
+					["cr"] = 15968,	-- Darnassian Scout
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- Intruder Defeated
@@ -1147,8 +1182,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8889, {	-- Deactivating the Spire
-					["qg"] = 15924,	-- Apprentice Loralthalis
 					["sourceQuest"] = 8888,	-- The Magister's Apprentice
+					["qg"] = 15924,	-- Apprentice Loralthalis
 					["coord"] = { 67.8, 56.5, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1177,8 +1212,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9252, {	-- Defending Fairbreeze Village
-					["qg"] = 15942,	-- Ranger Sareyn
 					["sourceQuest"] = 9358,	-- Ranger Sareyn
+					["qg"] = 15942,	-- Ranger Sareyn
 					["coord"] = { 46.9, 71.7, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1192,21 +1227,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8895, {	-- Delivery to the North Sanctum
+					["sourceQuest"] = 8472,	-- Major Malfunction
 					["providers"] = {
 						{ "n", 15418 },	-- Magister Jaronis
 						{ "i", 21807 },	-- Unmarked Letter
 					},
-					["sourceQuest"] = 8472,	-- Major Malfunction
 					["coord"] = { 47.2, 46.3, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9148, {	-- Delivery to Tranquillien
+					["sourceQuest"] = 9147,	-- The Fallen Courier
 					["providers"] = {
 						{ "n", 16183 },	-- Courier Dawnstrider
 						{ "i", 22717 },	-- Letter from Silvermoon
 					},
-					["sourceQuest"] = 9147,	-- The Fallen Courier
 					["coord"] = { 48.9, 88.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1221,16 +1256,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9256, {	-- Fairbreeze Village
-					["qg"] = 15403,	-- Aeldon Sunbrand
 					["sourceQuest"] = 8483,	-- The Dwarven Spy
+					["qg"] = 15403,	-- Aeldon Sunbrand
 					["coord"] = { 48.1, 45.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(9359, {	-- Farstrider Retreat
-					["qg"] = 15939,	-- Ranger Degolien
 					["sourceQuest"] = 8892,	-- Situation at Sunsail Anchorage
+					["qg"] = 15939,	-- Ranger Degolien
 					["coord"] = { 43.3, 70.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1270,11 +1305,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if AFTER WRATH
 				-- Before Wrath, this quest was in the Ghostlands and has a higher level requirement.
 				q(9133, {	-- Fly to Silvermoon City
+					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["providers"] = {
 						{ "n", 44036 },	-- Skymaster Brightdawn
 						{ "i", 22549 },	-- Sathiel's Request
 					},
-					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 43.9, 69.9, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1316,14 +1351,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(32668, {	-- Learn To Ride
+					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
-					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 10),
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1331,11 +1363,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
-					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { BLOODELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1343,7 +1379,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(8480, {	-- Lost Armaments
@@ -1385,8 +1420,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9119, {	-- Malfunction at the West Sanctum
-					["qg"] = 15405,	-- Ley-Keeper Caidanis
 					["sourceQuest"] = 8895,	-- Delivery to the North Sanctum
+					["qg"] = 15405,	-- Ley-Keeper Caidanis
 					["coord"] = { 44.6, 53.1, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1404,11 +1439,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(9705, {	-- Package Recovery
+					["sourceQuest"] = 9704,	-- Slain by the Wretched
 					["providers"] = {
 						{ "n", 17849 },	-- Slain Outrunner
 						{ "i", 20804 },	-- Erona's Package
 					},
-					["sourceQuest"] = 9704,	-- Slain by the Wretched
 					["coord"] = { 42.0, 35.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1435,8 +1470,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8490, {	-- Powering our Defenses
-					["qg"] = 16362,	-- Runewarden Deryan
 					["sourceQuest"] = 9253,	-- Runewarden Deryan
+					["qg"] = 16362,	-- Runewarden Deryan
 					["coord"] = { 44.1, 85.4, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1456,8 +1491,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9404, {	-- Recently Living
-					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9403,	-- The Purest Water
+					["qg"] = 15970,	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, EVERSONG_WOODS },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -1473,11 +1508,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9255, {	-- Research Notes
+					["sourceQuest"] = 8488,	-- Unexpected Results
 					["providers"] = {
 						{ "n", 15402 },	-- Apprentice Mirveda
 						{ "i", 22735 },	-- Research Notes
 					},
-					["sourceQuest"] = 8488,	-- Unexpected Results
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1485,11 +1520,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9135, {	-- Return to Quartermaster Lymel
+					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["providers"] = {
 						{ "n", 16192 },	-- Skymistress Gloaming
 						{ "i", 22550 },	-- Quartermaster Lymel's Goods
 					},
-					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
 					["races"] = { BLOODELF },
@@ -1497,19 +1532,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #else
 				q(9135, {	-- Return to Sathiel
+					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["providers"] = {
 						{ "n", 16192 },	-- Skymistress Gloaming
 						{ "i", 22550 },	-- Sathiel's Goods
 					},
-					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				-- #endif
 				q(9691, {	-- Return to Silvermoon
-					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9686,	-- The Second Trial (2/2)
+					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["coord"] = { 42, 28, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1527,8 +1562,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9253, {	-- Runewarden Deryan
-					["qg"] = 15942,	-- Ranger Sareyn
 					["sourceQuest"] = 9252,	-- Defending Fairbreeze Village
+					["qg"] = 15942,	-- Ranger Sareyn
 					["coord"] = { 46.9, 71.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1556,8 +1591,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 10,
 				}),
 				q(8892, {	-- Situation at Sunsail Anchorage
-					["qg"] = 15939,	-- Ranger Degolien
 					["sourceQuest"] = 9256,	-- Fairbreeze Village
+					["qg"] = 15939,	-- Ranger Degolien
 					["coord"] = { 43.3, 70.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1571,15 +1606,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9704, {	-- Slain by the Wretched
-					["qg"] = 15301,	-- Outrunner Alarion
 					["sourceQuest"] = 8347,	-- Aiding the Outrunners
+					["qg"] = 15301,	-- Outrunner Alarion
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(3, 3, 1),
 				}),
 				q(9062, {	-- Soaked Pages
-					["qg"] = 15945,	-- Apprentice Meledor
 					["sourceQuest"] = 9035,	-- Roadside Ambush
+					["qg"] = 15945,	-- Apprentice Meledor
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1603,8 +1638,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(12, 12, 1),
 				}),
 				q(9066, {	-- Swift Discipline
-					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9064,	-- Taking the Fall
+					["qg"] = 15970,	-- Instructor Antheol
 					["coord"] = { 55.6, 54.5, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1623,18 +1658,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9064, {	-- Taking the Fall
+					["sourceQuest"] = 9062,	-- Soaked Pages
 					["providers"] = {
 						{ "n", 15945 },	-- Apprentice Meledor
 						{ "i", 22414 },	-- Antheol's Elemental Grimoire
 					},
-					["sourceQuest"] = 9062,	-- Soaked Pages
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(9484, {	-- Taming the Beast (1/3)
-					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["sourceQuest"] = 9617,	-- Seek the Farstriders
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
@@ -1650,8 +1685,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9486, {	-- Taming the Beast (2/3)
-					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["sourceQuest"] = 9484,	-- Taming the Beast (1/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
@@ -1667,8 +1702,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9485, {	-- Taming the Beast (3/3)
-					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["sourceQuest"] = 9486,	-- Taming the Beast (2/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
 					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
@@ -1706,8 +1741,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8483, {	-- The Dwarven Spy
-					["qg"] = 15403,	-- Aeldon Sunbrand
 					["sourceQuest"] = 8482,	-- Incriminating Documents
+					["qg"] = 15403,	-- Aeldon Sunbrand
 					["coord"] = { 48.1, 46.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -1725,8 +1760,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9147, {	-- The Fallen Courier
-					["qg"] = 16196,	-- Apothecary Thedra
 					["sourceQuest"] = 9144,	-- Missing in the Ghostlands
+					["qg"] = 16196,	-- Apothecary Thedra
 					["coord"] = { 49.0, 89.0, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
 					["races"] = HORDE_ONLY,
@@ -1749,8 +1784,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(9067, {	-- The Party Never Ends
-					["qg"] = 16144,	-- Lord Saltheril
 					["sourceQuest"] = 9395,	-- Saltheril's Haven
+					["qg"] = 16144,	-- Lord Saltheril
 					["coord"] = { 38.1, 73.5, EVERSONG_WOODS },
 					["maps"] = { SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
@@ -1775,8 +1810,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9403, {	-- The Purest Water
-					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9402,	-- Fetch!
+					["qg"] = 15970,	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, EVERSONG_WOODS },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
@@ -1792,8 +1827,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(8885, {	-- The Ring of Mmmrrrggglll
-					["qg"] = 15920,	-- Hathvelion Sungaze
 					["sourceQuest"] = 8884,	-- Fish Heads, Fish Heads...
+					["qg"] = 15920,	-- Hathvelion Sungaze
 					["coord"] = { 30.2, 58.3, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1820,8 +1855,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(9686, {	-- The Second Trial (2/2)
-					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["sourceQuest"] = 9690,	-- The Second Trial (1/2)
+					["qg"] = 17807,	-- Master Kelrun Bloodmourn
 					["coord"] = { 42, 28, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1852,8 +1887,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(8488, {	-- Unexpected Results
-					["qg"] = 15402,	-- Apprentice Mirveda
 					["sourceQuest"] = 8487,	-- Corrupted Soil
+					["qg"] = 15402,	-- Apprentice Mirveda
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -1891,8 +1926,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9363, {	-- Warning Fairbreeze Village
-					["qg"] = 15399,	-- Lieutenant Dawnrunner
 					["sourceQuest"] = 9360,	-- Amani Invasion
+					["qg"] = 15399,	-- Lieutenant Dawnrunner
 					["coord"] = { 60.3, 62.7, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1913,18 +1948,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
 				q(10166, {	-- Whitebark's Memory
+					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["providers"] = {
 						{ "n", 15398 },	-- Larianna Riverwind
 						{ "i", 28209 },	-- Old Whitebark's Pendant
 					},
-					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(8890, {	-- Word from the Spire
-					["qg"] = 15924,	-- Apprentice Loralthalis
 					["sourceQuest"] = 8889,	-- Deactivating the Spire
+					["qg"] = 15924,	-- Apprentice Loralthalis
 					["coord"] = { 67.8, 56.5, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -1933,8 +1968,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9076, {	-- Wretched Ringleader
-					["qg"] = 15404,	-- Velendris Whitemorn
 					["sourceQuest"] = 8480,	-- Lost Armaments
+					["qg"] = 15404,	-- Velendris Whitemorn
 					["coord"] = { 36.3, 66.7, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1942,7 +1977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Aldaron's Head
 							["provider"] = { "i", 22487 },	-- Aldaron's Head
 							["coord"] = { 32.8, 69.4, EVERSONG_WOODS },
-							["cr"] = 16294,	--Aldaron the Reckless
+							["cr"] = 16294,	-- Aldaron the Reckless
 						}),
 						i(22965),	-- Longshoreman's Bindings
 						i(131240, {	-- Longshoreman's Bracers
@@ -1995,6 +2030,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(16367, {	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+					["coord"] = { 37.4, 71.96, EVERSONG_WOODS },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+				}),
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
@@ -2120,8 +2160,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+				["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
 				-- #endif
+				["maps"] = {
+					EVERSONG_WOODS,
+					SUNSTRIDER_ISLE,
+				},
 			}, {
 				i(21002),	-- Unkempt Belt
 				i(21003),	-- Unkempt Bracers
@@ -2153,9 +2197,4 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 SENSE_UNDEAD.u = nil;
 
 -- Push the Enchanting Supplies goods on to his loot table. (this bypasses the phase)
-for i,o in ipairs({
-	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
-}) do table.insert(ENCHANTING_VENDOR_GROUPS, o); end
+for i,o in ipairs(VANILLA_ENCHANTING_COMMON_RECIPES, {}) do table.insert(ENCHANTING_VENDOR_GROUPS, o); end

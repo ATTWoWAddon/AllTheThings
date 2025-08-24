@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(158986, {	-- Absolooshun <Innkeeper>
 				["coord"] = { 72.2, 39.8, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180685, {	-- Soul Sliver
 						["cost"] = { { "c", 1820, 20 } },
 					}),
@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(156218, {	-- Deadfoot <General Goods, Repairs, & Boots>
 				["coord"] = { 48.6, 68.6, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(181298, {	-- Banewood Survival Kit
 						["cost"] = { { "c", 1820, 20 } },
 					}),
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(165859, {	-- Dimwiddle
 				["coord"] = { 60.8, 62.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180687, {	-- Anima Residue
 						["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
 					}),
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(165419, {	-- Grand Marshal Mudrag
 				["coord"] = { 40.6, 46.9, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(183989, {	-- Dredger Barrow Racer (TOY!)
 						["cost"] = { { "c", 1820, 50 } },	-- 50x Infused Ruby
 					}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(166076, {	-- Mats
 				["coord"] = { 32.6, 49.3, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180676, {	-- Discarded Commendation
 						["cost"] = { { "c", 1820, 10 } },	-- Infused Ruby
 					}),
@@ -109,18 +109,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(167815, {	-- Mims <Innkeeper>
 				["coord"] = { 32.6, 49.3, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(179271),	-- Dredhollow Apple
 				},
 			}),
 			n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 				["coord"] = { 61.4, 63.8, REVENDRETH },
 				["minReputation"] = { FACTION_COURT_OF_HARVESTERS, FRIENDLY },	-- Court of Harvesters, Friendly
-				["g"] = bubbleDownClassicRep(FACTION_COURT_OF_HARVESTERS, {
+				["groups"] = bubbleDownClassicRep(FACTION_COURT_OF_HARVESTERS, {
 					{		-- Neutral
-						i(190644, {	-- Vessel of Profound Possibilities
+						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
+							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -185,13 +186,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(173570, {	-- Snickersnee <Stable Dredger>
 				["coord"] = { 40.8, 46.6, REVENDRETH },	-- Mims <Innkeeper>
-				["g"] = {
+				["groups"] = {
 					i(182585),	-- Grooming Brush
 				},
 			}),
 			n(160084, {	-- Ta'rmoro <Purveyor of Arms>
 				["coord"] = { 50.4, 81.4, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(183977, {	-- House Renathal Ceremonial Dagger
 						["customCollect"] = "SL_COV_VEN",
 						["cost"] = { { "c", ANIMA, 1750 } },	-- 1,750x Reservoir Anima
@@ -224,13 +225,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(160091, {	-- Ta'ruca
 				["coord"] = { 51.1, 78.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180774),	-- Preserved Berries
 				},
 			}),
 			n(171808, {	-- Ta'tru
 				["coord"] = { 51.1, 78.8, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(182597, {	-- Comfortable Saddle Blanket
 						["cost"] = {
 							{ "i", 179314, 30 },	-- 30x Creeping Crawler Meat

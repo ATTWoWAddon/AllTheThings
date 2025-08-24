@@ -1,5 +1,4 @@
-
--- BattlePet Class (maybe this should move to a MoP Expansion file?)
+-- BattlePet Class
 local _, app = ...
 
 -- Globals
@@ -7,7 +6,6 @@ local wipe, setmetatable, rawget, select,pairs
 	= wipe, setmetatable, rawget, select,pairs
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Module
 
@@ -16,16 +14,9 @@ local GetItemInfo = app.WOWAPI.GetItemInfo;
 -- BattlePet Lib / Species Lib
 local KEY, CACHE = "speciesID", "BattlePets"
 local CLASSNAME = "BattlePet"
--- TODO: Classic implementation will need some heavily-modified functionality here
-if not C_PetBattles or not C_PetJournal then
-	app.CreateSpecies = app.CreateUnimplementedClass("BattlePet", KEY);
-	app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-	app.CreatePetType = app.CreateUnimplementedClass("PetType", "petTypeID");
-	return
-end
 
-local C_PetBattles_GetAbilityInfoByID,C_PetJournal_GetNumCollectedInfo,C_PetJournal_GetPetInfoByPetID,C_PetJournal_GetPetInfoBySpeciesID,C_PetJournal_GetPetInfoByIndex,C_PetJournal_GetNumPets
-	= C_PetBattles.GetAbilityInfoByID,C_PetJournal.GetNumCollectedInfo,C_PetJournal.GetPetInfoByPetID,C_PetJournal.GetPetInfoBySpeciesID,C_PetJournal.GetPetInfoByIndex,C_PetJournal.GetNumPets
+local C_PetJournal_GetNumCollectedInfo,C_PetJournal_GetPetInfoByPetID,C_PetJournal_GetPetInfoBySpeciesID,C_PetJournal_GetPetInfoByIndex,C_PetJournal_GetNumPets,C_PetJournal_GetPetStats
+	= C_PetJournal.GetNumCollectedInfo,C_PetJournal.GetPetInfoByPetID,C_PetJournal.GetPetInfoBySpeciesID,C_PetJournal.GetPetInfoByIndex,C_PetJournal.GetNumPets,C_PetJournal.GetPetStats
 
 -- Due to bad Blizzard data being returned from C_PetJournal.GetNumPets
 -- we can only use the method of scanning the players collected pets if this API returns the proper number of total
@@ -63,44 +54,6 @@ local function CacheInfo(t, field)
 	end
 	if field then return _t[field]; end
 end
-local function default_link(t)
-	if t.itemID then
-		local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(t.itemID);
-		if link then
-			--[[ -- Debug Prints
-			local _t, id = cache.GetCached(t);
-			print("rawset item info",id,link,name,quality,b)
-			--]]
-			t = cache.GetCached(t);
-			t.link = link;
-			t.q = quality;
-			if not t.name then
-				t.name = name
-			end
-			if not t.icon then
-				t.icon = icon
-			end
-			if quality > 6 then
-				-- heirlooms return as 1 but are technically BoE for our concern
-				t.b = 2;
-			else
-				t.b = b;
-			end
-			return link;
-		end
-	end
-end
-local function default_costCollectibles(t)
-	local id = t.itemID
-	if not id then return app.EmptyTable end
-	local results = app.GetRawField("itemIDAsCost", id);
-	if results and #results > 0 then
-		-- not sure we need to copy these into another table
-		-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
-		return results;
-	end
-	return app.EmptyTable;
-end
 -- Returns how many of a given speciesID are currently collected
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
@@ -130,6 +83,13 @@ local PetIDSpeciesIDHelper = setmetatable({}, {
 	end
 });
 
+local PerCharacterSpecies = {
+	[280] = true, 	-- Guild Page [A]
+	[281] = true, 	-- Guild Page [H]
+	[282] = true,	-- Guild Herald [A]
+	[283] = true,	-- Guild Herald [H]
+	-- ...etc
+}
 app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
 	collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
@@ -150,9 +110,6 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 			return 1
 		end
 	end,
-	costCollectibles = function(t)
-		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
-	end,
 	text = function(t)
 		return t.link or cache.GetCachedField(t, "text", CacheInfo);
 	end,
@@ -171,31 +128,32 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 	name = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
-	link = function(t)
-		return cache.GetCachedField(t, "link", default_link);
-	end,
 	b = function(t)
 		return cache.GetCachedField(t, "b");
 	end,
 	tsm = function(t)
 		return ("p:%d:1:3"):format(t.speciesID);
 	end,
-});
+	knownByID = function(t)
+		return t.speciesID
+	end,
+	perCharacter = function(t)
+		return PerCharacterSpecies[t.speciesID]
+	end,
+},
+"WithItem", {
+	ImportFrom = "Item",
+	ImportFields = app.IsRetail and { "name", "link", "tsm", "costCollectibles", "AsyncRefreshFunc" } or { "name", "link", "tsm" },
+},
+function(t) return t.itemID end);
 
-local PerCharacterSpecies = {
-	[280] = true, 	-- Guild Page [A]
-	[281] = true, 	-- Guild Page [H]
-	[282] = true,	-- Guild Herald [A]
-	[283] = true,	-- Guild Herald [H]
-	-- ...etc
-}
 local function RefreshBattlePets()
-	app.PrintDebug("RCBP",C_PetJournal_GetNumPets())
+	local totalPets, ownedPets = C_PetJournal_GetNumPets()
+	app.PrintDebug("RCBP",totalPets,ownedPets)
 	wipe(CollectedSpeciesHelper)
 	local acct, char, none = {}, {}, {}
 	local count = 0
 	local num
-	local totalPets, ownedPets = C_PetJournal_GetNumPets()
 	-- ownedPets may reflect accurately but the C_PetJournal_GetPetInfoByIndex data will be missing entirely regardless
 	ownedPets = (totalPets or 0) >= TOTAL_PETS_FOR_SCAN and ownedPets or 0
 
@@ -287,18 +245,57 @@ app.AddEventRegistration("PET_JOURNAL_PET_DELETED", function(petID, speciesID)
 	end
 end)
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
+if C_PetJournal_GetPetStats then
+	app.AddEventHandler("OnLoad", function()
+		app.Settings.CreateInformationType("Owned Pets", {
+			priority = 11000,
+			text = app.L.OWNED_PETS,
+			Process = function(t, data, tooltipInfo)
+				local speciesID = data.speciesID;
+				if speciesID then
+					local totalPets, ownedPets = C_PetJournal_GetNumPets()
+					if ownedPets > 0 then
+						local index = 0;
+						local petID, s, owned, customName, level, health, maxHealth, power, speed, rarity;
+						for i=1,ownedPets do
+							petID, s, owned, customName, level = C_PetJournal_GetPetInfoByIndex(i);
+							if petID and speciesID == s then
+								index = index + 1;
+								if index == 1 then
+									tinsert(tooltipInfo, { left = " " });
+									tinsert(tooltipInfo, { left = app.L.OWNED_PETS });
+								end
+								health, maxHealth, power, speed, rarity = C_PetJournal_GetPetStats(petID);
+								tinsert(tooltipInfo, {
+									left = LEVEL .. " " .. level .. " (" .. _G["BATTLE_PET_BREED_QUALITY" .. rarity] .. ")",
+									right = health .. " / " .. maxHealth .. " [" .. power .. " | " .. speed .. "]"
+								});
+							end
+						end
+					end
+				end
+			end
+		});
+	end);
+end
 
-app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
-	["text"] = function(t)
-		return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-	end,
-	["icon"] = function(t)
-		return select(3, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-	end,
-	["description"] = function(t)
-		return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
-	end,
-})
+local C_PetBattles_GetAbilityInfoByID
+	= C_PetBattles.GetAbilityInfoByID
+if C_PetBattles_GetAbilityInfoByID then
+	app.CreatePetAbility = app.CreateClass("PetAbility", "petAbilityID", {
+		["text"] = function(t)
+			return select(2, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
+		end,
+		["icon"] = function(t)
+			return select(3, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
+		end,
+		["description"] = function(t)
+			return select(5, C_PetBattles_GetAbilityInfoByID(t.petAbilityID));
+		end,
+	});
+else
+	app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
+end
 
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	["text"] = function(t)
@@ -306,8 +303,5 @@ app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	end,
 	["icon"] = function(t)
 		return app.asset("Icon_PetFamily_"..PET_TYPE_SUFFIX[t.petTypeID]);
-	end,
-	["filterID"] = function(t)
-		return 101;
 	end,
 })

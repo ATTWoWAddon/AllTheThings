@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15836,	-- Iskaara Tour: Silver
 							15819,	-- The Vakthros Ascent: Silver
 						}},
-						["g"] = {
+						["groups"] = {
 							i(197118),	-- Highland Drake: Brown Hair (MM!)
 						},
 					}),
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15839,	-- Iskaara Tour Advanced: Silver
 							15822,	-- The Vakthros Ascent Advanced: Silver
 						}},
-						["g"] = {
+						["groups"] = {
 							i(197094),	-- Highland Drake: Gold and Red Armor (MM!)
 						},
 					}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67741, {	-- Archive Ambit
 						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15847),	-- Archive Ambit: Bronze
 							ach(15848),	-- Archive Ambit: Silver
 							ach(15849),	-- Archive Ambit: Gold
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67742, {	-- Archive Ambit - Advanced
 						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15850),	-- Archive Ambit Advanced: Bronze
 							ach(15851),	-- Archive Ambit Advanced: Silver
 							ach(15852),	-- Archive Ambit Advanced: Gold
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67002, {	-- Azure Span Slalom
 						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15799),	-- The Azure Span Slalom: Bronze
 							ach(15800),	-- The Azure Span Slalom: Silver
 							ach(15801),	-- The Azure Span Slalom: Gold
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67003, {	-- Azure Span Slalom - Advanced
 						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15802),	-- The Azure Span Slalom Advanced: Bronze
 							ach(15803),	-- The Azure Span Slalom Advanced: Silver
 							ach(15804),	-- The Azure Span Slalom Advanced: Gold
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(66946, {	-- Azure Span Sprint
 						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15788),	-- The Azure Span Sprint: Bronze
 							ach(15789),	-- The Azure Span Sprint: Silver
 							ach(15790),	-- The Azure Span Sprint: Gold
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(66947, {	-- Azure Span Sprint - Advanced
 						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15791),	-- The Azure Span Sprint Advanced: Bronze
 							ach(15792),	-- The Azure Span Sprint Advanced: Silver
 							ach(15793),	-- The Azure Span Sprint Advanced: Gold
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67565, {	-- Frostland Flyover
 						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15841),	-- Frostland Flyover: Bronze
 							ach(15842),	-- Frostland Flyover: Silver
 							ach(15843),	-- Frostland Flyover: Gold
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67566, {	-- Frostland Flyover - Advanced
 						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15844),	-- Frostland Flyover Advanced: Bronze
 							ach(15845),	-- Frostland Flyover Advanced: Silver
 							ach(15846),	-- Frostland Flyover Advanced: Gold
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67296, {	-- Iskaara Tour
 						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15835),	-- Iskaara Tour: Bronze
 							ach(15836),	-- Iskaara Tour: Silver
 							ach(15837),	-- Iskaara Tour: Gold
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67297, {	-- Iskaara Tour - Advanced
 						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15838),	-- Iskaara Tour Advanced: Bronze
 							ach(15839),	-- Iskaara Tour Advanced: Silver
 							ach(15840),	-- Iskaara Tour Advanced: Gold
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67031, {	-- Vakthros Ascent
 						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15818),	-- The Vakthros Ascent: Bronze
 							ach(15819),	-- The Vakthros Ascent: Silver
 							ach(15820),	-- The Vakthros Ascent: Gold
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(67032, {	-- Vakthros Ascent - Advanced
 						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(15821),	-- The Vakthros Ascent Advanced: Bronze
 							ach(15822),	-- The Vakthros Ascent Advanced: Silver
 							ach(15823),	-- The Vakthros Ascent Advanced: Gold
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							17969,	-- The Vakthros Ascent Reverse Challenge: Silver
 						}},
 					}),
-					ach(18759, {	--Azure Span Challenge: Gold
+					ach(18759, {	-- Azure Span Challenge: Gold
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							17987,	-- Archive Ambit Challenge: Gold
@@ -248,7 +248,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75816, {	-- Archive Ambit - Challenge
 						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17985),	-- Archive Ambit Challenge: Bronze
 							ach(17986),	-- Archive Ambit Challenge: Silver
 							ach(17987),	-- Archive Ambit Challenge: Gold
@@ -257,7 +257,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75817, {	-- Archive Ambit - Reverse Challenge
 						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17988),	-- Archive Ambit Reverse Challenge: Bronze
 							ach(17989),	-- Archive Ambit Reverse Challenge: Silver
 							ach(17990),	-- Archive Ambit Reverse Challenge: Gold
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75807, {	-- Azure Span Slalom - Challenge
 						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17959),	-- The Azure Span Slalom Challenge: Bronze
 							ach(17960),	-- The Azure Span Slalom Challenge: Silver
 							ach(17961),	-- The Azure Span Slalom Challenge: Gold
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75808, {	-- Azure Span Slalom - Reverse Challenge
 						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17962),	-- The Azure Span Slalom Reverse Challenge: Bronze
 							ach(17963),	-- The Azure Span Slalom Reverse Challenge: Silver
 							ach(17964),	-- The Azure Span Slalom Reverse Challenge: Gold
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75805, {	-- Azure Span Sprint - Challenge
 						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17953),	-- The Azure Span Sprint Challenge: Bronze
 							ach(17954),	-- The Azure Span Sprint Challenge: Silver
 							ach(17955),	-- The Azure Span Sprint Challenge: Gold
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75806, {	-- Azure Span Sprint - Reverse Challenge
 						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17956),	-- The Azure Span Sprint Reverse Challenge: Bronze
 							ach(17957),	-- The Azure Span Sprint Reverse Challenge: Silver
 							ach(17958),	-- The Azure Span Sprint Reverse Challenge: Gold
@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75813, {	-- Frostland Flyover - Challenge
 						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17979),	-- Frostland Flyover Challenge: Bronze
 							ach(17980),	-- Frostland Flyover Challenge: Silver
 							ach(17981),	-- Frostland Flyover Challenge: Gold
@@ -311,7 +311,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75815, {	-- Frostland Flyover - Reverse Challenge
 						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17982),	-- Frostland Flyover Reverse Challenge: Bronze
 							ach(17983),	-- Frostland Flyover Reverse Challenge: Silver
 							ach(17984),	-- Frostland Flyover Reverse Challenge: Gold
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75811, {	-- Iskaara Tour - Challenge
 						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17971),	-- Iskaara Tour Challenge: Bronze
 							ach(17972),	-- Iskaara Tour Challenge: Silver
 							ach(17973),	-- Iskaara Tour Challenge: Gold
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75812, {	-- Iskaara Tour - Reverse Challenge
 						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17974),	-- Iskaara Tour Reverse Challenge: Bronze
 							ach(17975),	-- Iskaara Tour Reverse Challenge: Silver
 							ach(17976),	-- Iskaara Tour Reverse Challenge: Gold
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75809, {	-- Vakthros Ascent - Challenge
 						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17965),	-- The Vakthros Ascent Challenge: Bronze
 							ach(17966),	-- The Vakthros Ascent Challenge: Silver
 							ach(17967),	-- The Vakthros Ascent Challenge: Gold
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(75810, {	-- Vakthros Ascent - Reverse Challenge
 						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17968),	-- The Vakthros Ascent Reverse Challenge: Bronze
 							ach(17969),	-- The Vakthros Ascent Reverse Challenge: Silver
 							ach(17970),	-- The Vakthros Ascent Reverse Challenge: Gold
@@ -395,7 +395,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72797, {	-- Archive Ambit - Reverse
 						["provider"] = { "n", 193027 },	-- Bronze Timekeeper
 						["coord"] = { 42.3, 56.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17174),	-- Archive Ambit Reverse: Bronze
 							ach(17175),	-- Archive Ambit Reverse: Silver
 							ach(17176),	-- Archive Ambit Reverse: Gold
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72799, {	-- Azure Span Slalom - Reverse
 						["provider"] = { "n", 191947 },	-- Bronze Timekeeper
 						["coord"] = { 20.9, 22.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17162),	-- The Azure Span Slalom Reverse: Bronze
 							ach(17163),	-- The Azure Span Slalom Reverse: Silver
 							ach(17164),	-- The Azure Span Slalom Reverse: Gold
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72796, {	-- Azure Span Sprint - Reverse
 						["provider"] = { "n", 191572 },	-- Bronze Timekeeper
 						["coord"] = { 47.9, 40.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17159),	-- The Azure Span Sprint Reverse: Bronze
 							ach(17160),	-- The Azure Span Sprint Reverse: Silver
 							ach(17161),	-- The Azure Span Sprint Reverse: Gold
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72795, {	-- Frostland Flyover - Reverse
 						["provider"] = { "n", 192945 },	-- Bronze Timekeeper
 						["coord"] = { 48.5, 35.8, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17171),	-- Frostland Flyover Reverse: Bronze
 							ach(17172),	-- Frostland Flyover Reverse: Silver
 							ach(17173),	-- Frostland Flyover Reverse: Gold
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72800, {	-- Iskaara Tour - Reverse
 						["provider"] = { "n", 192886 },	-- Bronze Timekeeper
 						["coord"] = { 16.6, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17168),	-- Iskaara Tour Reverse: Bronze
 							ach(17169),	-- Iskaara Tour Reverse: Silver
 							ach(17170),	-- Iskaara Tour Reverse: Gold
@@ -440,7 +440,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					dragonridingrace(72794, {	-- Vakthros Ascent - Reverse
 						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							ach(17165),	-- The Vakthros Ascent Reverse: Bronze
 							ach(17166),	-- The Vakthros Ascent Reverse: Silver
 							ach(17167),	-- The Vakthros Ascent Reverse: Gold

@@ -9,9 +9,9 @@ WARBAND = createHeader({
 	},
 });
 
-WARBAND_SCENES = createHeader({
-	readable = "Warband Scenes",
-	icon = 6124644,
+CAMPSITES = createHeader({
+	readable = "Campsites",
+	icon = [[~_.asset("Category_Campsites")]],
 	text = {
 		en = [[~ACCOUNT_LEVEL_SCENE]],
 	},
@@ -33,7 +33,7 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 	}),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		q(83492, {	-- Warbanding Together
-			["g"] = {
+			["groups"] = {
 				i(228623),	-- Blue's Request (QS!/QI!)
 			},
 		}),
@@ -46,7 +46,7 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			["sourceQuest"] = 83492,	-- Warbanding Together
 			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 52.5, 26.9, TANARIS },
-			["g"] = {
+			["groups"] = {
 				i(225783),	-- Spetial Residue
 			},
 		}),
@@ -62,19 +62,19 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			["sourceQuest"] = 83495,	-- Twinsposition
 			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 48.5, 31.6, TANARIS },
-			["g"] = {
+			["groups"] = {
 				spell(465226),	-- Warband Bank Distance Inhibitor
 			},
 		}),
 	})),
-	n(WARBAND_SCENES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-		ws(1, {	-- Adventurer's Rest (WS!)
+	n(CAMPSITES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		campsite(1, {	-- Adventurer's Rest (CS!)
 			["description"] = "Granted to all warbands as default.",
 		}),
-		ws(4, {	-- Ohn'ahran Overlook (WS!)
+		campsite(4, {	-- Ohn'ahran Overlook (CS!)
 			["description"] = "Granted to all warbands.",
 		}),
-		ws(29, {	-- Randomize From Favorites (WS!)
+		campsite(29, {	-- Randomize From Favorites (CS!)
 			["description"] = "Granted to all warbands.",
 		}),
 	})),

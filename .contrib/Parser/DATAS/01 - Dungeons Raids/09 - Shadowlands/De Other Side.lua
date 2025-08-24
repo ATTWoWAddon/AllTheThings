@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1679,	-- Zul'Gurub
 			1680,	-- De Other Side
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(62458, {	-- De Other Side
 					["provider"] = { "n", 174341 },	-- Mask of Bwonsamdi
@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2408, {	-- Hakkar the Soulflayer
 					["crs"] = { 164558 },	-- Hakkar the Soulflayer
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(181737),	-- Nourishing Chi
 						i(182621),	-- One With the Beast
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164556,	-- Millhouse Manastorm
 						164555,	-- Millificent Manastorm
 					},
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183216),	-- Memory of a Burning Wound
 						i(183271),	-- Memory of the Infinite Arcane
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2398, {	-- Dealer Xy'exa
 					["crs"] = { 164450 },	-- Millificent Manastorm
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183265),	-- Memory of a Wildfire Cluster
 						-- Conduits
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2410, {	-- Mueh'zala
 					["crs"] = { 166608 },	--	Mueh'zala
-					["g"] = {
+					["groups"] = {
 						ach(14373),	-- De Other Side
 						-- Legendaries
 						i(183329),	-- Memory of a Prism of Shadow and Fire
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2410, {	-- Mueh'zala
 					["crs"] = { 166608 },	--	Mueh'zala
-					["g"] = {
+					["groups"] = {
 						ach(14408),	-- Heroic: De Other Side
 					},
 				}),
@@ -133,19 +133,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164556,	-- Millhouse Manastorm
 						164555,	-- Millificent Manastorm
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14374),	-- Couple's Therapy
 					},
 				}),
 				e(2398, {	-- Dealer Xy'exa
 					["crs"] = { 164450 },	-- Millificent Manastorm
-					["g"] = {
+					["groups"] = {
 						ach(14606),	-- Thinking with...
 					},
 				}),
 				e(2410, {	-- Mueh'zala
 					["crs"] = { 166608 },	--	Mueh'zala
-					["g"] = {
+					["groups"] = {
 						ach(14409),	-- Mythic: De Other Side
 						ach(14379),	-- Mythic: De Other Side Guild Run
 					},

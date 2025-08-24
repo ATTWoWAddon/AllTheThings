@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 				["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",
 				["coord"] = { 52.2, 31.6, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(163493, {	-- Frenzied Cottontail (PET!)
 						["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
 						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135815, {	-- Quartermaster Alcorn <Order of Embers Emissary>
 				["coord"] = { 37.8, 49.0, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_ORDER_OF_EMBERS, {
+				["groups"] = bubbleDownClassicRep(FACTION_ORDER_OF_EMBERS, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(138021, {	-- Sally Boltwrench <Repairs>
 				["coord"] = { 37.6, 25.8, DRUSTVAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(23596, {	-- Plans: Adamantite Breastplate (RECIPE!)
 						["isLimited"] = true,
 					}),

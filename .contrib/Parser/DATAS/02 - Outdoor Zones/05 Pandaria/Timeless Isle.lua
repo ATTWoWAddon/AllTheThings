@@ -12,6 +12,8 @@ BURDEN_OF_ETERNITY = createHeader({
 	-- e.g. auto = i:103982
 	lore = {
 		en = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
+		es = "Los siguientes objetos se pueden crear usando una Carga de la Eternidad en una Ficha de Armadura Atemporal para una dosis doble de RNG inútil.",
+		mx = "Los siguientes objetos se pueden crear usando una Carga de la Eternidad en una Ficha de Armadura Atemporal para una dosis doble de RNG inútil.",
 		fr = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
 		ru = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
 		cn = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",
@@ -19,7 +21,7 @@ BURDEN_OF_ETERNITY = createHeader({
 });
 root(ROOTS.Zones, {
 	m(PANDARIA, {
-		m(TIMELESS_ISLE, {
+		applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, m(TIMELESS_ISLE, {
 			["lore"] = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
 			["icon"] = 294481,
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
@@ -28,12 +30,33 @@ root(ROOTS.Zones, {
 				petbattle(m(571, {	-- Celestial Tournament
 					["icon"] = 645227,
 					["groups"] = {
-						n(PET_BATTLE, {
+						n(ACHIEVEMENTS, {
+							ach(8519, {	-- Celestial Family
+								crit(23600, {	-- Xu-Fu, Cub of Xuen
+									["provider"] = { "i", 101771 },
+								}),
+								crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
+									["provider"] = { "i", 102145 },
+								}),
+								crit(23720, {	-- Yu'la, Broodling of Yu'lon
+									["provider"] = { "i", 102147 },
+								}),
+								crit(23721, {	-- Zao, Calfling of Niuzao
+									["provider"] = { "i", 102146 },
+								}),
+							}),
+							petbattle(ach(8518)),	-- Master of the Master
+							ach(8410),	-- The Celestial Tournament
+						}),
+						petbattles({
 							n(71933, {	-- Blingtron 4000
 								["coord"] = { 34.8, 59.6, 571 },
 							}),
 							n(71927, {	-- Chen Stormstout
 								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(72285, {	-- Chi-Chi, Hatchling of Chi-Ji
+								["coord"] = { 38.0, 55.2, 571 },
 							}),
 							n(71934, {	-- Dr. Ion Goldbloom <Jurassic Expedition>
 								["coord"] = { 34.8, 59.6, 571 },
@@ -56,6 +79,15 @@ root(ROOTS.Zones, {
 							n(71924, {	-- Wrathion <The Black Prince>
 								["coord"] = { 37.8, 57.2, 571 },
 							}),
+							n(72009, {	-- Xu-Fu, Cub of Xuen
+								["coord"] = { 39.8, 55.2, 571 },
+							}),
+							n(72291, {	-- Yu'la, Broodling of Yu'lon
+								["coord"] = { 39.0, 56.4, 571 },
+							}),
+							n(72290, {	-- Zao, Calfling of Niuzao
+								["coord"] = { 39.0, 53.8, 571 },
+							}),
 						}),
 						n(QUESTS, {
 							q(33137, {	-- The Celestial Tournament
@@ -67,9 +99,9 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(33136, {	-- The Rainy Day is Here
-								["qg"] = 73082,	-- Master Li
-								["sourceQuest"] = 33137,	-- The Celestial Tournament
 								["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+								["sourceQuest"] = 33137,	-- The Celestial Tournament
+								["qg"] = 73082,	-- Master Li
 								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 								["groups"] = {
 									i(101529),	-- Celestial Coin
@@ -113,147 +145,15 @@ root(ROOTS.Zones, {
 					}),
 					ach(8721, {	-- Fire-Watcher
 						["cost"] = {{"c",789,2000}},	-- 2000x Bloody Coin
-						["g"] = {
+						["groups"] = {
 							title(251),	-- Fire-Watcher
 						},
 					}),
 					ach(8715),	-- Emperor Shaohao
 					ach(8726),	-- Extreme Treasure Hunter (automated)
-					ach(8725, {	-- Eyes On The Ground
-						crit(24011, {	-- Giant Clam
-							["provider"] = {"o",223193},
-							["coords"] = {
-								{ 16.8, 62.4, TIMELESS_ISLE },
-								{ 16.8, 62.5, TIMELESS_ISLE },
-								{ 18.4, 53.9, TIMELESS_ISLE },
-								{ 18.5, 53.8, TIMELESS_ISLE },
-								{ 18.7, 20.3, TIMELESS_ISLE },
-								{ 25.5, 14.7, TIMELESS_ISLE },
-								{ 25.6, 14.4, TIMELESS_ISLE },
-								{ 29.7, 21.8, TIMELESS_ISLE },
-								{ 47.8, 87.9, TIMELESS_ISLE },
-							},
-						}),
-						crit(24012, {	-- Glinting Sand
-							["provider"] = {"o",222684},
-						}),
-						crit(24013, {	-- Crane Nest
-							["provider"] = {"o",222685},
-						}),
-						crit(24014, {	-- Eerie Crystal
-							["provider"] = {"o",222686},
-						}),
-						crit(24015, {	-- Ordon Supplies
-							["provider"] = {"o",222687},
-						}),
-						crit(24016, {	-- Firestorm Egg
-							["provider"] = {"o",222688},
-						}),
-						crit(24017, {	-- Fiery Altar of Ordos
-							["provider"] = {"o",222689},
-						}),
-					}),
-					ach(8728, {	-- Going to Need a Bigger Bag
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(8712, {	-- Killing Time
-						crit(23940, {	-- Spotted Swarmer
-							["cr"] = 72908,	-- Spotted Swarmer
-						}),
-						crit(23941, {	-- Windfeather Chick
-							["cr"] = 71143,	-- Windfeather Chick
-						}),
-						crit(23942, {	-- Great Turtle Hatchling
-							["cr"] = 72763,	-- Great Turtle Hatchling
-						}),
-						crit(23943, {	-- Ironfur Herdling
-							["cr"] = 72842,	-- Ironfur Herdling
-						}),
-						crit(23938, {	-- Windfeather Nestkeeper
-							["cr"] = 72761,	-- Windfeather Nestkeeper
-						}),
-						crit(23939, {	-- Ironfur Grazer
-							["cr"] = 72843,	-- Ironfur Grazer
-						}),
-						crit(23935, {	-- Spectral Brewmaster
-							["cr"] = 73018,	-- Spectral Brewmaster
-						}),
-						crit(23936, {	-- Spectral Mistweaver
-							["cr"] = 73025,	-- Spectral Mistweaver
-						}),
-						crit(23937, {	-- Spectral Windwalker
-							["cr"] = 73021,	-- Spectral Windwalker
-						}),
-						crit(23944, {	-- Crag Stalker
-							["cr"] = 72807,	-- Crag Stalker
-						}),
-						crit(23945, {	-- Ashleaf Sprite
-							["cr"] = 72877,	-- Ashleaf Sprite
-						}),
-						crit(23966, {	-- Ordon Candlekeeper
-							["cr"] = 72875,	-- Ordon Candlekeeper
-						}),
-						crit(23946, {	-- Foreboding Flame
-							["cr"] = 73162,	-- Foreboding Flame
-						}),
-						crit(23947, {	-- Jademist Dancer
-							["cr"] = 72767,	-- Jademist Dancer
-						}),
-						crit(23948, {	-- Brilliant Windfeather
-							["cr"] = 72762,	-- Brilliant Windfeather
-						}),
-						crit(23949, {	-- Great Turtle
-							["cr"] = 72764,	-- Great Turtle
-						}),
-						crit(23950, {	-- Ironfur Great Bull
-							["cr"] = 72844,	-- Ironfur Great Bull
-						}),
-						crit(23951, {	-- Damp Shambler
-							["cr"] = 72771,	-- Damp Shambler
-						}),
-						crit(23952, {	-- Primal Stalker
-							["cr"] = 72805,	-- Primal Stalker
-						}),
-						crit(23953, {	-- Ancient Spineclaw
-							["cr"] = 72766,	-- Ancient Spineclaw
-						}),
-						crit(23954, {	-- Gulp Frog
-							["cr"] = 72777,	-- Gulp Frog
-						}),
-						crit(23955, {	-- Death Adder
-							["cr"] = 72841,	-- Death Adder
-						}),
-						crit(23956, {	-- Ordon Fire Watcher
-							["cr"] = 72894,	-- Ordon Fire Watcher
-						}),
-						crit(23957, {	-- Ordon Oathguard
-							["cr"] = 72892,	-- Ordon Oathguard
-						}),
-						crit(23958, {	-- Burning Berserker
-							["cr"] = 72895,	-- Burning Berserker
-						}),
-						crit(23959, {	-- Molten Guardian
-							["cr"] = 72888,	-- Molten Guardian
-						}),
-						crit(23960, {	-- Crimsonscale Firestorm
-							["cr"] = 72876,	-- Crimsonscale Firestorm
-						}),
-						crit(23961, {	-- Elder Great Turtle
-							["cr"] = 72765,	-- Elder Great Turtle
-						}),
-						crit(23962, {	-- Eroded Cliffdweller
-							["cr"] = 72809,	-- Eroded Cliffdweller
-						}),
-						crit(23696, {	-- Blazebound Chanter
-							["cr"] = 72897,	-- Blazebound Chanter
-						}),
-						crit(23964, {	-- Eternal Kilnmaster
-							["cr"] = 72896,	-- Eternal Kilnmaster
-						}),
-						crit(23965, {	-- High Priest of Ordos
-							["cr"] = 72898,	-- High Priest of Ordos
-						}),
-					}),
+					ach(8725),	-- Eyes On The Ground (automated)
+					ach(8728),	-- Going to Need a Bigger Bag (automated)
+					ach(8712),	-- Killing Time (automated)
 					ach(8724, {	-- Pilgrimage
 						["provider"] = { "o", 222776 },	-- Time-Lost Shrine
 						["coords"] = {
@@ -271,111 +171,16 @@ root(ROOTS.Zones, {
 							{ 63.9, 50.6, TIMELESS_ISLE },
 							{ 66.1, 72.3, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(24007),	-- Niuzao's Blessing Obtained
 							crit(24008),	-- Yu'lon's Blessing Obtained
 							crit(24009),	-- Chi-Ji's Blessing Obtained
 							crit(24010),	-- Xuen's Blessing Obtained
 						},
 					}),
-					ach(8714, {	-- Timeless Champion (Timeless Isle)
-						crit(23967, {	-- Emerald Gander
-							["_quests"] = { 33295 },
-						}),
-						crit(23968, {	-- Ironfur Steelhorn
-							["_quests"] = { 33296 },
-						}),
-						crit(23969, {	-- Great Turtle Furyshell
-							["_quests"] = { 33297 },
-						}),
-						crit(23970, {	-- Gu'chi the Swarmbringer
-							["_quests"] = { 33294 },
-						}),
-						crit(23971, {	-- Zesqua
-							["_quests"] = { 33316 },
-						}),
-						crit(23972, {	-- Zhu-Gon the Sour
-							["_quests"] = { 32959 },
-						}),
-						crit(23973, {	-- Karkanos
-							["_quests"] = { 33292 },
-						}),
-						crit(23974, {	-- Chelon
-							["_quests"] = { 32966 },
-						}),
-						crit(23975, {	-- Spelurk
-							["_quests"] = { 32960 },
-						}),
-						crit(23976, {	-- Cranegnasher
-							["_quests"] = { 32967 },
-						}),
-						crit(23977, {	-- Rattleskew
-							["_npcs"] = { 72048 },
-						}),
-						crit(23978, {	-- Spirit of Jadefire
-							["_quests"] = { 33293 },
-						}),
-						crit(23979, {	-- Leafmender
-							["_quests"] = { 33298 },
-						}),
-						crit(23986, {	-- Bufo
-							["_quests"] = { 33301 },
-						}),
-						crit(23982, {	-- Garnia
-							["_quests"] = { 33300 },
-						}),
-						crit(23983, {	-- Tsavo'ka
-							["_quests"] = { 33304 },
-						}),
-						crit(23985, {	-- Monstrous Spineclaw
-							["_quests"] = { 33302 },
-						}),
-						crit(23989, {	-- Imperial Python
-							["_quests"] = { 33303 },
-						}),
-						crit(24144, {	-- Stinkbraid
-							["_quests"] = { 33305 },
-						}),
-						crit(23980, {	-- Rock Moss
-							["_quests"] = { 33307 },
-						}),
-						crit(23992, {	-- Watcher Osu
-							["_quests"] = { 33322 },
-						}),
-						crit(23994, {	-- Jakur of Ordon
-							["_quests"] = { 33306 },
-						}),
-						crit(23996, {	-- Champion of the Black Flame
-							["_quests"] = { 33299 },
-						}),
-						crit(23981, {	-- Cinderfall
-							["_quests"] = { 33310 },
-						}),
-						crit(23993, {	-- Urdur the Cauterizer
-							["_quests"] = { 33308 },
-						}),
-						crit(23995, {	-- Flintlord Gairan
-							["_quests"] = { 33309 },
-						}),
-						crit(23984, {	-- Huolon
-							["_quests"] = { 33311 },
-						}),
-						crit(23988, {	-- Golganarr
-							["_quests"] = { 33315 },
-						}),
-						crit(23990, {	-- Evermaw
-							["_quests"] = { 33313 },
-						}),
-						crit(23987, {	-- Dread Ship Vazuvius
-							["_quests"] = { 33314 },
-						}),
-						crit(24139, {	-- Archiereus of Flame
-							["_quests"] = { 33312 },
-							["_npcs"] = { 73174 },
-						}),
-						crit(23991, {	-- Archiereus of Flame
-							["_npcs"] = { 73666 },
-						}),
+					ach(8714),	-- Timeless Champion (automated)
+					ach(8723, {	-- Legend of the Past
+						["sym"] = {{"partial_achievement",8784}},	-- Timeless Legends
 					}),
 					ach(8784, {	-- Timeless Legends
 						["coords"] = {
@@ -399,170 +204,17 @@ root(ROOTS.Zones, {
 							{ 65.4, 51.7, TIMELESS_ISLE },
 							{ 68.4, 60.4, TIMELESS_ISLE },
 						},
-						["g"] = {
-							crit(24006, {	-- Cloudstrike Family Helm
-								["provider"] = { "o", 222796 },	-- Cloudstrike Family Helm
-							}),
-							crit(24140, {	-- Flameheart Shawl
-								["provider"] = { "o", 223537 },	-- Flameheart Shawl
-							}),
-							crit(24141, {	-- Riverspeaker's Trident
-								["provider"] = { "o", 223538 },	-- Riverspeaker's Trident
-							}),
-							crit(24142, {	-- Snowdrift Tiger Talons
-								["provider"] = { "o", 223539 },	-- Snowdrift Tiger Talons
-							}),
-							ach(8723),	-- Legend of the Past
-						},
 					}),
-					ach(8722, {	-- Timeless Nutriment
-						crit(24000),	-- Ripe Crispfruit
-						crit(24001),	-- Sand-Covered Egg
-						crit(24002),	-- Charged Crystal
-						crit(24003),	-- Huge Yak Roast
-						crit(24005),	-- Roasted Seed
-						crit(24004),	-- Fire Poppy
-						crit(24129),	-- Southsea Firebrew
-					}),
-					ach(8729, {	-- Treasure, Treasure Everywhere
-						crit(24083, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223204 },
-						}),
-						crit(24084, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223115 },
-						}),
-						crit(24085, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223114 },
-						}),
-						crit(24086, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223113 },
-						}),
-						crit(24087, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223112 },
-						}),
-						crit(24088, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223111 },
-						}),
-						crit(24089, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223110 },
-						}),
-						crit(24090, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223109 },
-						}),
-						crit(24091, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223108 },
-						}),
-						crit(24092, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223107 },
-						}),
-						crit(24093, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223106 },
-						}),
-						crit(24094, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223105 },
-						}),
-						crit(24095, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223104 },
-						}),
-						crit(24096, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223103 },
-						}),
-						crit(24097, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223102 },
-						}),
-						crit(24098, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223101 },
-						}),
-						crit(24099, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223100 },
-						}),
-						crit(24100, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223099 },
-						}),
-						crit(24101, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223098 },
-						}),
-						crit(24102, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223097 },
-						}),
-						crit(24103, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223096 },
-						}),
-						crit(24104, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223095 },
-						}),
-						crit(24105, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223094 },
-						}),
-						crit(24106, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223093 },
-						}),
-						crit(24107, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223092 },
-						}),
-						crit(24108, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223091 },
-						}),
-						crit(24109, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223090 },
-						}),
-						crit(24110, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223089 },
-						}),
-						crit(24111, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223088 },
-						}),
-						crit(24112, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223087 },
-						}),
-						crit(24113, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223086 },
-						}),
-						crit(24114, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223085 },
-						}),
-						crit(24115, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223084 },
-						}),
-						crit(24116, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 221670 },
-						}),
-						crit(24117, {	-- 1/1 Skull-Covered Chest
-							["provider"] = { "o", 221617 },
-						}),
-						crit(24118, {	-- 1/1 Blazing Chest
-							["provider"] = { "o", 221673 },
-						}),
-						crit(24119, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223118 },
-						}),
-						crit(24120, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223117 },
-						}),
-						crit(24121, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223116 },
-						}),
-						crit(24122, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 221671 },
-						}),
-						crit(24123, {	-- 2/2 Smoldering Chests
-							["provider"] = { "o", 223119 },
-						}),
-						crit(24124, {	-- 2/2 Smoldering Chests
-							["provider"] = { "o", 221672 },
-						}),
-					}),
+					ach(8722),	-- Timeless Nutriment
+					ach(8729),	-- Treasure, Treasure Everywhere
 					ach(8727),	-- Where There's Pirates, There's Booty
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						417,	-- Rat (PET!)
-					}},
-					["groups"] = {
-						pet(1324),	-- Ashwing Moth (PET!)
-						pet(1325),	-- Flamering Moth (PET!)
-						pet(1326),	-- Skywisp Moth (PET!)
-					},
+					pet(1324),	-- Ashwing Moth (PET!)
+					pet(1325),	-- Flamering Moth (PET!)
+					pet(1326, {	-- Skywisp Moth (PET!)
+						["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+					}),
 				}),
 				n(BURDEN_OF_ETERNITY, {
 					-- Cloth
@@ -1289,11 +941,13 @@ root(ROOTS.Zones, {
 					faction(FACTION_THE_BLACK_PRINCE),	-- The Black Prince
 				}),
 				n(FLIGHT_PATHS, {
-					fp(1294, {	-- Huojin Landing
+					fp(1294, {	-- Huojin Landing, Timeless Isle
+						["cr"] = 71939,	-- Chi-Ro the Skytamer <Flight Master>
 						["coord"] = { 21.8, 39.8, TIMELESS_ISLE },
 						["races"] = HORDE_ONLY,
 					}),
-					fp(1293, {	-- Tushui Landing
+					fp(1293, {	-- Tushui Landing, Timeless Isle
+						["cr"] = 71940,	-- Michi Windblossom <Flight Master>
 						["coord"] = { 23.2, 71.0, TIMELESS_ISLE },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1306,8 +960,22 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
+					q(33229, {	-- A Flash of Bronze... (A)
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(33230, {	-- A Flash of Bronze... (H)
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(33211, {	-- A Timeless Question
-						["provider"] = { "n", 73570 },	-- Senior Historian Evelyna <The Timewalkers>
+						["qg"] = 73570,	-- Senior Historian Evelyna <The Timewalkers>
 						["isDaily"] = true,
 					}),
 					q(33161, {	-- A Timeless Tour
@@ -1315,29 +983,29 @@ root(ROOTS.Zones, {
 							33156,	-- Time Keeper Kairoz
 							33160,	-- Time Keeper Kairoz
 						},
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33337, {	-- A Vision in Time
 						["sourceQuests"] = { 33338 },	-- Empowering the Hourglass
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105930),	-- Vision of Time
 						},
 					}),
 					q(33378, {	-- Courting Destiny
 						["sourceQuests"] = { 33377 },	-- Hidden Threads
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105934),	-- Vision of Time
 						},
 					}),
 					q(33342, {	-- Drive Back The Flame
 						["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
-						["provider"] = { "n", 73303 },	-- Emperor Shaohao
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 					q(33338, {	-- Empowering the Hourglass
 						["sourceQuests"] = { 33336 },	-- The Essence of Time
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 						["isWeekly"] = true,
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
@@ -1345,31 +1013,54 @@ root(ROOTS.Zones, {
 					}),
 					q(33377, {	-- Hidden Threads
 						["sourceQuests"] = { 33376 },	-- Seeking Fate
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105933),	-- Vision of Time
 						},
 					}),
 					q(33332, {	-- Hints From The Past
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
+					}),
+					q(33231, {	-- Journey to the Timeless Isle (A)
+						["sourceQuests"] = {
+							33229,	-- A Flash of Bronze...	(Alliance)
+							33230,	-- A Flash of Bronze...	(Horde)
+						},
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
+					}),
+					q(33232, {	-- Journey to the Timeless Isle (H)
+						["sourceQuests"] = {
+							33229,	-- A Flash of Bronze...	(Alliance)
+							33230,	-- A Flash of Bronze...	(Horde)
+						},
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
+						["coord"] = { 80.6, 33, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
+						["groups"] = {
+							i(104110),	-- Curious Bronze Timepiece (QI!)
+						},
 					}),
 					q(33222, {	-- Little Tommy Newcomer
-						["provider"] = { "n", 73626 },			-- Little Tommy Newcomer
+						["qg"] = 73626,	-- Little Tommy Newcomer
 						["isDaily"] = true,
 					}),
 					q(33379, {	-- One Final Turn
 						["sourceQuests"] = { 33378 },	-- Courting Destiny
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105935),	-- Vision of Time
 						},
 					}),
 					q(33374, {	-- Path of the Mistwalker
 						["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
-						["provider"] = { "n", 73303 },	-- Emperor Shaohao
+						["qg"] = 73303,	-- Emperor Shaohao
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(103642),	-- Book of the Ages
 							i(103643),	-- Dew of Eternal Morning
 							i(103641),	-- Singing Crystal
@@ -1377,33 +1068,33 @@ root(ROOTS.Zones, {
 					}),
 					q(33375, {	-- Refining The Vision
 						["sourceQuests"] = { 33337 },	-- A Vision in Time
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105931),	-- Vision of Time
 						},
 					}),
 					q(32974, {	-- Rolo's Riddle #1
+						["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
 						["providers"] = {
 							{ "i", 102225 },	-- Rolo's Riddle
 							{ "o", 222684 },	-- Glinting Sand
 						},
-						["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
 					}),
 					q(32975, {	-- Rolo's Riddle #2
-						["qg"] = 72751,	-- Mound of Dirt
-						["sourceQuest"] = 32974,	-- Rolo's Riddle
 						["description"] = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
+						["sourceQuest"] = 32974,	-- Rolo's Riddle
+						["qg"] = 72751,	-- Mound of Dirt
 						["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 					}),
 					q(32976, {	-- Rolo's Riddle #3
-						["providers"] = {
-							{ "n", 72754 },	-- Mound of Dirt
-							{ "n", 72755 },	-- Rolo's Treasure
-						},
-						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
 						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
+						["qgs"] = {
+							72754,	-- Mound of Dirt
+							72755,	-- Rolo's Treasure
+						},
 						["coord"] = { 34.5, 26.5, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							ach(8730),	-- Rolo's Riddle
 							i(104013),	-- Timeless Cloth Armor Cache
 							i(104012),	-- Timeless Leather Armor Cache
@@ -1413,14 +1104,14 @@ root(ROOTS.Zones, {
 					}),
 					q(33376, {	-- Seeking Fate
 						["sourceQuests"] = { 33375 },	-- Refining The Vision
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(105932),	-- Vision of Time
 						},
 					}),
 					q(33334, {	-- Strong Enough To Survive
 						["sourceQuests"] = { 33333 },	-- Timeless Treasures
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 						["isWeekly"] = true,
 					}),
 					q(33343, {	-- The Archiereus Of Flame
@@ -1428,29 +1119,29 @@ root(ROOTS.Zones, {
 							33342,	-- Drive Back The Flame
 							33374,	-- Path of the Mistwalker
 						},
-						["provider"] = { "n", 73303 },	-- Emperor Shaohao
-						["g"] = {
+						["qg"] = 73303,	-- Emperor Shaohao
+						["groups"] = {
 							i(103982),	-- Burden of Eternity
 						},
 					}),
 					q(33336, {	-- The Essence of Time
 						["sourceQuests"] = { 33161 },	-- A Timeless Tour
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
 						},
 					}),
 					q(33335, {	-- The Last Emperor
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33228, {	-- Time In Your Hands
 						["sourceQuests"] = {
 							33156,	-- Time Keeper Kairoz
 							33160,	-- Time Keeper Kairoz
 						},
-						["provider"] = { "n", 72870 },	-- Kairoz
-						["g"] = {
+						["qg"] = 72870,	-- Kairoz
+						["groups"] = {
 							i(104013),	-- Timeless Cloth Armor Cache
 							i(104012),	-- Timeless Leather Armor Cache
 							i(104010),	-- Timeless Mail Armor Cache
@@ -1459,25 +1150,25 @@ root(ROOTS.Zones, {
 					}),
 					q(33160, {	-- Time Keeper Kairoz
 						["sourceQuests"] = { 33231 },	-- Journey to the Timeless Isle
-						["provider"] = { "n", 73348 },	-- Watcher Lara <The Timewalkers>
+						["qg"] = 73348,	-- Watcher Lara <The Timewalkers>
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33156, {	-- Time Keeper Kairoz
 						["sourceQuests"] = { 33232 },	-- Journey to the Timeless Isle
-						["provider"] = { "n", 73353 },	-- Watcher Alundra <The Timewalkers>
+						["qg"] = 73353,	-- Watcher Alundra <The Timewalkers>
 						["races"] = HORDE_ONLY,
 					}),
 					q(33340, {	-- Timeless Nutriment
 						["sourceQuests"] = { 33335 },	-- The Last Emperor
-						["provider"] = { "n", 73303 },	-- Emperor Shaohao
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 					q(33333, {	-- Timeless Treasures
 						["sourceQuests"] = { 33332 },	-- Hints From The Past
-						["provider"] = { "n", 72870 },	-- Kairoz
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33341, {	-- Wayshrines Of The Celestials
 						["sourceQuests"] = { 33340 },	-- Timeless Nutriment
-						["provider"] = { "n", 73303 },	-- Emperor Shaohao
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 				}),
 				n(RARES, {
@@ -1494,7 +1185,7 @@ root(ROOTS.Zones, {
 							{ 56.6, 35.9, TIMELESS_ISLE },
 							{ 48.4, 33.3, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86574, {	-- Elxir of Ancient Knowledge
 								["u"] = REMOVED_FROM_GAME,	-- removed around Legion prepatch
 							}),
@@ -1506,7 +1197,7 @@ root(ROOTS.Zones, {
 						["cost"] = {
 							{ "i", 103684, 1 },	-- Scroll of Challenge
 						},
-						["g"] = {
+						["groups"] = {
 							un(REMOVED_FROM_GAME, i(86574)),	-- Elixir of Ancient Knowledge
 						},
 					}),
@@ -1519,7 +1210,7 @@ root(ROOTS.Zones, {
 							{ 63.6, 72.6, TIMELESS_ISLE },
 							{ 62.1, 77.1, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104169),	-- Gulp Froglet (PET!)
 						},
 					}),
@@ -1531,7 +1222,7 @@ root(ROOTS.Zones, {
 							{ 60.6, 48.4, TIMELESS_ISLE },
 							{ 65.4, 60.2, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(106130),	-- Big Bag of Herbs
 							i(104302),	-- Blackflame Daggers (TOY!)
 							i(87219),	-- Huge Bag of Herbs
@@ -1543,7 +1234,7 @@ root(ROOTS.Zones, {
 						["description"] = "Click on Conspicuously Empty Shell to spawn Chelon.",
 						["coord"] = { 25.2, 35.8, TIMELESS_ISLE },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
@@ -1551,7 +1242,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33310,
 						["isDaily"] = true,
 						["coord"] = { 54.1, 52.9, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104299),	-- Falling Flame
 							i(104261),	-- Glowing Blue Ash
 						},
@@ -1562,12 +1253,12 @@ root(ROOTS.Zones, {
 						["questID"] = 32967,
 						["isDaily"] = true,
 						["coord"] = { 44.0, 70.0, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104268),	-- Pristine Stalker Hide
 						},
 					}),
 					n(73281, {	-- Dread Ship Vazuvius
-						["questID"] = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
+						["questID"] = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week. Need to check on another day if both fire off still
 						["providers"] = {
 							{ "i", 104115 },	-- Mist-Filled Spirit Lantern
 							{ "o", 223139 },	-- Cursed Gravestone
@@ -1575,7 +1266,7 @@ root(ROOTS.Zones, {
 						["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 						["coord"] = { 26.5, 27.8, TIMELESS_ISLE },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(104294),	-- Rime of the Time-Lost Mariner (TOY!)
 						},
 					}),
@@ -1590,14 +1281,14 @@ root(ROOTS.Zones, {
 							{ 36.4, 46.3, TIMELESS_ISLE },
 							{ 36.7, 84.0, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104287),	-- Windfeather Plume
 						},
 					}),
 					n(73279, {	-- Evermaw <Gnawing Hunger of the Deep>
 						["questID"] = 33313,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(104115, {	-- Mist-Filled Spirit Lantern
 								["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
 							}),
@@ -1613,7 +1304,7 @@ root(ROOTS.Zones, {
 							{ 44.2, 33.8, TIMELESS_ISLE },
 							{ 40.6, 27.2, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104298),	-- Ordon Death Chime
 						},
 					}),
@@ -1621,7 +1312,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33300,
 						["isDaily"] = true,
 						["coord"] = { 64.6, 28.6, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104159),	-- Ruby Droplet (PET!)
 						},
 					}),
@@ -1629,7 +1320,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33315,
 						["isDaily"] = true,
 						["coord"] = { 62.2, 63.2, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104262),	-- Odd Polished Stone (TOY!)
 							i(104263),	-- Glinting Pile of Stone
 						},
@@ -1642,7 +1333,7 @@ root(ROOTS.Zones, {
 							{ 20.6, 43.2, TIMELESS_ISLE },
 							{ 26.6, 72.4, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
@@ -1655,7 +1346,7 @@ root(ROOTS.Zones, {
 							{ 40.2, 82.8, TIMELESS_ISLE },
 							{ 32.4, 78.2, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104290),	-- Sticky Silkworm Goo
 							i(104291),	-- Gu'chi Swarmling (PET!)
 						},
@@ -1665,7 +1356,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33311,
 						["isDaily"] = true,
 						["coord"] = { 66.0, 58.8, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104286),	-- Quivering Firestorm Egg
 							i(104269),	-- Thundering Onyx Cloud Serpent (MOUNT!)
 						},
@@ -1689,7 +1380,7 @@ root(ROOTS.Zones, {
 							{ 53.0, 58.8, TIMELESS_ISLE },
 							{ 50.8, 46.2, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104161),	-- Death Adder Hatchling (PET!)
 							i(104292),	-- Partially-Digested Meal
 						},
@@ -1706,7 +1397,7 @@ root(ROOTS.Zones, {
 							{ 31.6, 58.8, TIMELESS_ISLE },
 							{ 34.2, 71.0, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(89770),	-- Tuft of Yak Fur
 						},
 					}),
@@ -1714,7 +1405,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33306,
 						["isDaily"] = true,
 						["coord"] = { 53.0, 82.4, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104331),	-- Warning Sign (TOY!)
 							i(104245),	-- Technique: Glyph of the Weaponmaster
 							i(104296),	-- Ordon Ceremonial Robes
@@ -1725,7 +1416,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["provider"] = { "n", 72151 },	-- Lin Longpaw
 						["coord"] = { 33.8, 85.8, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104035),	-- Giant Purse of Timeless Coins
 						},
 					}),
@@ -1733,7 +1424,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33298,
 						["isDaily"] = true,
 						["coord"] = { 67.2, 44.0, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104289),	-- Faintly-Glowing Herb
 							i(104156),	-- Ashleaf Spriteling (PET!)
 						},
@@ -1746,7 +1437,7 @@ root(ROOTS.Zones, {
 							{ 23.6, 28.6, TIMELESS_ISLE },
 							{ 68.8, 74.8, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(104293),	-- Scuttler's Shell
 							i(104168),	-- Spineclaw Crab (PET!)
 						},
@@ -1765,15 +1456,15 @@ root(ROOTS.Zones, {
 							71824,	-- Angry Sprite
 							71826,	-- Scary Sprite
 						},
-						["g"] = {
+						["groups"] = {
 							i(104160),	-- Dandelion Frolicker (PET!)
 						},
 					}),
 					n(72048, {	-- Rattleskew
-					--	no daily questID popped.  may have a one-time questID?
+					--	no daily questID popped. may have a one-time questID?
 						["provider"] = { "n", 55421 },	-- Ghost Pirate Battle Controller (note: this is more for linking it to the vignette than anything)
 						["coord"] = { 60.6, 87.8, TIMELESS_ISLE },	-- mapID needs verification
-						["g"] = {
+						["groups"] = {
 							i(104321),	-- Captain Zvezdan's Lost Leg
 							i(104219),	-- Technique: Glyph of Skeleton
 						},
@@ -1785,7 +1476,7 @@ root(ROOTS.Zones, {
 							{ 44.0, 30.9, 555 },	-- actual spawn, in Cavern of Lost Spirits
 							{ 43.1, 41.2, TIMELESS_ISLE },	-- entrance
 						},
-						["g"] = {
+						["groups"] = {
 							i(104312),	-- Strange Glowing Mushroom
 							i(104313),	-- Golden Moss
 						},
@@ -1800,7 +1491,7 @@ root(ROOTS.Zones, {
 						["description"] = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
 						["coord"] = { 59.5, 48.9, TIMELESS_ISLE },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(104320),	-- Cursed Talisman
 						},
 					}),
@@ -1812,7 +1503,7 @@ root(ROOTS.Zones, {
 					n(72769, {	-- Spirit of Jadefire
 						["questID"] = 33293,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(104258),	-- Glowing Green Ash
 							i(104307),	-- Jadefire Spirit (PET!)
 							i(104227),	-- Technique: Glyph of Pillar of Light
@@ -1822,7 +1513,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33304,
 						["isDaily"] = true,
 						["coord"] = { 54.2, 42.8, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104268),	-- Pristine Stalker Hide
 						},
 					}),
@@ -1830,7 +1521,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33308,
 						["isDaily"] = true,
 						["coord"] = { 43.6, 26.0, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104306),	-- Sunset Stone
 							i(104296),	-- Ordon Ceremonial Robes
 						},
@@ -1839,7 +1530,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33322,
 						["isDaily"] = true,
 						["coord"] = { 57.6, 76.6, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104296),	-- Ordon Ceremonial Robes
 							i(104305),	-- Ashen Stone
 						},
@@ -1849,7 +1540,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
 						["description"] = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
-						["g"] = {
+						["groups"] = {
 							ach(8743),	-- Zarhym Altogether
 						},
 					}),
@@ -1857,7 +1548,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33316,
 						["isDaily"] = true,
 						["coord"] = { 47.0, 87.4, TIMELESS_ISLE },	-- mapID needs verification
-						["g"] = {
+						["groups"] = {
 							i(104303),	-- Rain Stone
 						},
 					}),
@@ -1870,7 +1561,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32959,
 						["isDaily"] = true,
 						["coord"] = { 37.8, 77.2, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104167),	-- Skunky Alemental (PET!)
 						},
 					}),
@@ -1881,7 +1572,7 @@ root(ROOTS.Zones, {
 						["isWeekly"] = true,
 						["questID"] = 32956,
 						["coord"] = { 17.3, 57.0, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							crit(24022, {	-- Blackguard's Jetsam
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
@@ -1890,13 +1581,18 @@ root(ROOTS.Zones, {
 					o(221673, {	-- Blazing Chest
 						["questID"] = 33210,	-- One-Time Chest - Blazing Chest
 						["coord"] = { 47.3, 26.9, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(103982),	-- Burden of Eternity
 						},
 					}),
 					o(221725),	-- Charged Crystal
 					o(222796),	-- Cloudstrike Family Helm
-					o(222685),	-- Crane Nest
+					o(222685, {	-- Crane Nest
+						["modelScale"] = 2.3,
+						["groups"] = {
+							i(104157),	-- Azure Crane Chick (PET!)
+						},
+					}),
 					o(222686),	-- Eerie Crystal
 					o(222689),	-- Fiery Altar of Ordos
 					o(221763),	-- Fire Poppy
@@ -1916,7 +1612,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(220903, {	-- Gleaming Crane Statue
-						["description"] = "Click the statue, and you will be thrown up into the air and given a slow-fall buff.  Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
+						["description"] = "Click the statue, and you will be thrown up into the air and given a slow-fall buff. Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
 						["coord"] = { 58.4, 60.0, TIMELESS_ISLE },
 					}),
 					o(220901, {	-- Gleaming Treasure Chest
@@ -1926,11 +1622,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.5, 73.4, TIMELESS_ISLE },
 					}),
 					o(221036, {	-- Gleaming Treasure Satchel
-						["description"] = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform.  Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump.  Once you're on the beam, dismount and walk carefully toward the treasure.",
+						["description"] = "Starting at around |cFFFFFFFF71.5, 79.8|r, mount up and do a running jump off the corner of the back platform. Landing successfully on the beam may take a couple tries, depending on the angle and the point at which you jump. Once you're on the beam, dismount and walk carefully toward the treasure.",
 						["isWeekly"] = true,
 						["questID"] = 32970,
 						["coord"] = { 70.6, 80.9, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							crit(24023, {	-- Gleaming Treasure Satchel
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
@@ -2144,7 +1840,7 @@ root(ROOTS.Zones, {
 					o(223538),	-- Riverspeaker's Trident
 					o(221764),	-- Roasted Seed
 					o(220902, {	-- Rope-Bound Treasure Chest
-						["description"] = "Coordinates are for the beginning of the rope pathway.  You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
+						["description"] = "Coordinates are for the beginning of the rope pathway. You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
 						["isWeekly"] = true,
 						["questID"] = 32968,
 						["coord"] = { 60.1, 45.9, TIMELESS_ISLE },
@@ -2166,12 +1862,12 @@ root(ROOTS.Zones, {
 					o(223539),	-- Snowdrift Tiger Talons
 					o(223228),	-- Southsea Firebrew
 					o(221671, {	-- Sturdy Chest
-						["description"] = "On top of a plateau.  You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["description"] = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 						["questID"] = 33204,
 						["coord"] = { 28.1, 35.1, TIMELESS_ISLE },
 					}),
 					o(223116, {	-- Sturdy Chest
-						["description"] = "On top of a plateau.  You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["description"] = "On top of a plateau. You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 						["questID"] = 33205,
 						["coord"] = { 26.7, 64.9, TIMELESS_ISLE },
 					}),
@@ -2180,7 +1876,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.6, 70.5, TIMELESS_ISLE },
 					}),
 					o(223118, {	-- Sturdy Chest
-						["description"] = "The chest is inside Spelurk's cave.  Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave.  Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
+						["description"] = "The chest is inside Spelurk's cave. Classes that can snap/jump forward abruptly (like Mage Blink) can force their way into the cave. Using a toy like the Mushroom Chair or the Leather Love Seat may also work.",
 						["questID"] = 33207,
 						["coord"] = { 59.2, 49.5, TIMELESS_ISLE },
 					}),
@@ -2191,7 +1887,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.4, 92.9, TIMELESS_ISLE },
 						["cost"] = { { "i", 104015, 1 } },	-- Barnacle Encrusted Key
 						["cr"] = 71920,	-- Cursed Hozen Swabby
-						["g"] = {
+						["groups"] = {
 							crit(24021, {	-- Sunken Treasure
 								["achievementID"] = 8727,	-- Where There's Pirates, There's Booty
 							}),
@@ -2207,7 +1903,7 @@ root(ROOTS.Zones, {
 					n(73657, {	-- Great Chef Woo <Food & Drink>
 						["description"] = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
 						["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["repeatable"] = true,
 							["groups"] = {
 								currency(777),	-- Timeless Coins
@@ -2232,7 +1928,7 @@ root(ROOTS.Zones, {
 					}),
 					n(73819, {	-- Ku-Mo <Hand-Made Kites>
 						["coord"] = { 41.1, 63.8, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(104333, {	-- Flimsy Sky Lantern
 								["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
 							}),
@@ -2251,7 +1947,7 @@ root(ROOTS.Zones, {
 					}),
 					n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
 						["coord"] = { 42.6, 55.7, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(103989, {	-- Alacrity of Xuen
 								["cost"] = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
 							}),
@@ -2278,6 +1974,9 @@ root(ROOTS.Zones, {
 							}),
 							i(105924, {	-- Hozen Can Opener
 								["cost"] = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
+							}),
+							currency(752, {	-- Mogu Rune of Fate
+								["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
 							}),
 							i(105926, {	-- Ordon Sacrificial Dagger
 								["cost"] = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
@@ -2320,7 +2019,7 @@ root(ROOTS.Zones, {
 					}),
 					n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
 						["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
-						["g"] = bubbleDownClassicRep(FACTION_EMPEROR_SHAOHAO, {
+						["groups"] = bubbleDownClassicRep(FACTION_EMPEROR_SHAOHAO, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(103683, {	-- Mask of Anger
@@ -2353,7 +2052,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
 								}),
 							}, {	-- Exalted
-								i(87774, {	-- Reins of the Heavenly Golden Cloud Serpent (MOUNT!)
+								i(87774, {	-- Heavenly Golden Cloud Serpent (MOUNT!)
 									["cost"] = { { "c", 777, 100000 } },	-- 100,000x Timeless Coin
 								}),
 							},
@@ -2570,7 +2269,7 @@ root(ROOTS.Zones, {
 					}),
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 						["coord"] = { 74.9, 44.9, TIMELESS_ISLE },
-						["g"] = {
+						["groups"] = {
 							i(102467, {	-- Censer of Eternal Agony (TOY!)
 								["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
 							}),
@@ -2606,7 +2305,7 @@ root(ROOTS.Zones, {
 							{ 41.6, 47.2, TIMELESS_ISLE },
 							{ 35.0, 52.8, TIMELESS_ISLE },
 						},
-						["g"] = {
+						["groups"] = {
 							i(103786, {	-- "Dapper Gentleman" Costume
 								["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
 							}),
@@ -2643,12 +2342,6 @@ root(ROOTS.Zones, {
 					n(72895, {	-- Burning Berserker
 						i(86566),	-- Forager's Gloves
 						i(106130),	-- Big Bag of Herbs
-					}),
-					o(222685, {	-- Crane Nest
-						["modelScale"] = 2.3,
-						["g"] = {
-							i(104157),	-- Azure Crane Chick (PET!)
-						},
 					}),
 					n(72876, {	-- Crimsonscale Firestorm
 						i(104286),	-- Quivering Firestorm Egg
@@ -2795,7 +2488,7 @@ root(ROOTS.Zones, {
 					}),
 					i(104013, {	-- Timeless Cloth Armor Cache
 						["description"] = "The item created will be class- and spec-specific.|r",
-						["g"] = {
+						["groups"] = {
 							i(101801),	-- Amaranthine Cord
 							i(101802),	-- Amaranthine Cowl
 							i(101803),	-- Amaranthine Handwraps
@@ -2904,7 +2597,7 @@ root(ROOTS.Zones, {
 					}),
 					i(104012, {	-- Timeless Leather Armor Cache
 						["description"] = "The item created will be class- and spec-specific.|r",
-						["g"] = {
+						["groups"] = {
 							i(101862),	-- Cranefeather Bindings
 							i(101863),	-- Cranefeather Boots
 							i(101864),	-- Cranefeather Britches
@@ -3013,7 +2706,7 @@ root(ROOTS.Zones, {
 					}),
 					i(104010, {	-- Timeless Mail Armor Cache
 						["description"] = "The item created will be class- and spec-specific.|r",
-						["g"] = {
+						["groups"] = {
 							i(101838),	-- Crimsonscale Belt
 							i(101839),	-- Crimsonscale Bracers
 							i(101840),	-- Crimsonscale Gauntlets
@@ -3122,7 +2815,7 @@ root(ROOTS.Zones, {
 					}),
 					i(104009, {	-- Timeless Plate Armor Cache
 						["description"] = "The item created will be class- and spec-specific.|r",
-						["g"] = {
+						["groups"] = {
 							i(101789),	-- Cliffbreaker Breastplate
 							i(101791),	-- Cliffbreaker Gauntlets
 							i(101792),	-- Cliffbreaker Girdle
@@ -3295,7 +2988,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 			},
-		}),
+		})),
 	}),
 });
 
@@ -3339,7 +3032,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 				q(32997),	-- Tracking Quest - First - Zesqua
 				q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 				q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
-				q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
+				q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID. didn't pop from just interacting with shell.
 			}),
 			n(TREASURES, {
 				q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9), secondary trigger

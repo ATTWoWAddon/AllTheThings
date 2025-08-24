@@ -7,38 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236845,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(782),	-- Explore Swamp of Sorrows
+				ach(782),	-- Explore Swamp of Sorrows
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Bogpaddle
-							["sourceQuest"] = 27600,	-- In With a Bang
-						}),
-						crit(2, {	-- The Bloodmire (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								27849,	-- Assault on Stonard
-								27851,	-- Cutting Supply
-							},
-						}),
-						crit(2, {	-- The Bloodmire (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27857,	-- We're Under Attack!
-						}),
-						crit(3, {	-- The Shifting Mire (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 24913,	-- Remember the Light
-						}),
-						crit(3, {	-- The Shifting Mire (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27911,	-- With Dying Breath
-						}),
-						crit(4, {	-- The Sunken Temple
-							["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						27600,	-- In With a Bang
@@ -49,7 +22,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27911,	-- With Dying Breath
 						27914,	-- Blessing of the Green Dragonflight
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),
@@ -124,32 +96,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66518, {	-- Everessa <Master Pet Tamer>
+					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 16,
+					["groups"] = {
+						q(31913, {	-- Everessa
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>
 						["coord"] = { 49.8, 56.0, SWAMP_OF_SORROWS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_ALCHEMY,
+						["groups"] = EXPERT_ARTISAN_ALCHEMY,
 						-- #endif
-					}),
-				}),
-				prof(FISHING, {
-					-- #if AFTER CATA
-					o(180751),	-- Floating Wreckage
-					-- #endif
-					o(180712, {	-- Stonescale Eel Swarm
-						["maps"] ={
-							SWAMP_OF_SORROWS,
-							TANARIS,
-							BLASTED_LANDS,
-							THOUSAND_NEEDLES,
-						},
 					}),
 				}),
 				-- #if BEFORE CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale
+						["coord"] = { 15.0, 59.0, SWAMP_OF_SORROWS },
 						["crs"] = {
 							740,	-- Adolescent Whelp
 							741,	-- Dreaming Whelp
@@ -160,13 +136,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["allianceQuestData"] = {
 						["sourceQuest"] = 2783,	-- Petty Squabbles (A)
 					},
 					["hordeQuestData"] = {
 						["sourceQuest"] = 2623,	-- The Swamp Talker (H)
 					},
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -208,12 +184,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				})),
 				q(27849, {	-- Assault on Stonard
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
 						27845,	-- Marking the Fallen (A)
 						27843,	-- Reinforcements Denied (A)
 						27795,	-- Tides of Darkness (A)
 					},
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -239,14 +215,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27740, {	-- Baba Bogbrew
-					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27600,	-- In With a Bang
+					["qg"] = 45948,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27914, {	-- Blessing of the Green Dragonflight
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -263,11 +239,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27904, {	-- Breath of Mist
-					["qg"] = 17127,	-- Anchorite Avuun
 					["sourceQuests"] = {
 						27875,	-- Prayerblossom (A)
 						27876,	-- Secrets of the Mire (A)
 					},
+					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -279,8 +255,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27599, {	-- Can't Take It With Them
-					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27597,	-- Crazy Larry
+					["qg"] = 45948,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -303,8 +279,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1428, {	-- Continued Threat
-					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1427,	-- Threat From the Sea
+					["qg"] = 5593,	-- Katar
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -322,17 +298,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27597, {	-- Crazy Larry
-					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuests"] = {
 						27536,	-- Mostly Harmless
 						27656,	-- Croc-Out
 					},
+					["qg"] = 45786,	-- Trade Baron Silversnap
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27656, {	-- Croc-Out
-					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
+					["qg"] = 45786,	-- Trade Baron Silversnap
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -342,12 +318,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27851, {	-- Cutting Supply
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
 						27845,	-- Marking the Fallen (A)
 						27843,	-- Reinforcements Denied (A)
 						27795,	-- Tides of Darkness (A)
 					},
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -362,11 +338,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1425, {	-- Deliver the Shipment
+					["sourceQuest"] = 1398,	-- Driftwood
 					["providers"] = {
 						{ "n", 5476 },	-- Watcher Biggs
 						{ "i", 6178 },	-- Shipment to Nethergarde
 					},
-					["sourceQuest"] = 1398,	-- Driftwood
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -404,8 +380,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1398, {	-- Driftwood
-					["qg"] = 5476,	-- Watcher Biggs
 					["sourceQuest"] = 1421,	-- The Lost Caravan
+					["qg"] = 5476,	-- Watcher Biggs
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -450,10 +426,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1396, {	-- Encroaching Wildlife
-					["qg"] = 5476,	-- Watcher Biggs
 					-- #if AFTER TBC
 					["sourceQuest"] = 9609,	-- Help Watcher Biggs
 					-- #endif
+					["qg"] = 5476,	-- Watcher Biggs
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -532,18 +508,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(2702, {	-- Heroes of Old (1/2)
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(2701, {	-- Heroes of Old (2/2)
+					["sourceQuest"] = 2702,	-- Heroes of Old (1/2)
 					["providers"] = {
 						{ "n",   7750 },	-- Corporal Thund Splithoof
 						{ "o", 141980 },	-- Spectral Lockbox
 					},
-					["sourceQuest"] = 2702,	-- Heroes of Old (1/2)
 					["coord"] = { 33.5, 66.0, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -554,11 +530,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27600, {	-- In With a Bang
-					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuests"] = {
 						27598,	-- Kill Gil
 						27599,	-- Can't Take It With Them
 					},
+					["qg"] = 45948,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -598,8 +574,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27598, {	-- Kill Gil
-					["qg"] = 45948,	-- Crazy Larry
 					["sourceQuest"] = 27597,	-- Crazy Larry
+					["qg"] = 45948,	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -609,8 +585,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2721, {	-- Kirith
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old (2/2)
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -633,8 +609,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(699, {	-- Lack of Surplus (2/2)
-					["qg"] = 5592,	-- Tok'Kar
 					["sourceQuest"] = 698,	-- Lack of Surplus (1/2)
+					["qg"] = 5592,	-- Tok'Kar
 					["coord"] = { 81.4, 80.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -647,11 +623,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27910, {	-- Last Regrets
-					["qg"] = 47041,	-- Neeka Bloodscar
 					["sourceQuests"] = {
 						27907,	-- Prayerblossom (H)
 						27908,	-- Secrets of the Mire (H)
 					},
+					["qg"] = 47041,	-- Neeka Bloodscar
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -663,8 +639,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27704, {	-- Legends of the Sunken Temple
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27694,	-- Pool of Tears
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -734,15 +710,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27587, {	-- Maliciously Delicious
-					["providers"] = {
-						{ "n", 45786 },	-- Trade Baron Silversnap
-						{ "i", 62795 },	-- Silversnap Swim Tonic
-					},
 					["sourceQuests"] = {
 						28569,	-- The Bogpaddle Bullet (A)
 						28570,	-- The Bogpaddle Bullet (H)
 						28675,	-- Hero's Call: Swamp of Sorrows!
 						28677,	-- Warchief's Command: Swamp of Sorrows!
+					},
+					["providers"] = {
+						{ "n", 45786 },	-- Trade Baron Silversnap
+						{ "i", 62795 },	-- Silversnap Swim Tonic
 					},
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_1 },
@@ -754,11 +730,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27845, {	-- Marking the Fallen (A)
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans (A)
 						27822,	-- Lumbering Oafs (A)
 					},
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -772,11 +748,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27856, {	-- Marking the Fallen (H)
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs (H)
 						27852,	-- Orcs and Humans (H)
 					},
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -812,8 +788,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27536, {	-- Mostly Harmless
-					["qg"] = 45786,	-- Trade Baron Silversnap
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
+					["qg"] = 45786,	-- Trade Baron Silversnap
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -844,8 +820,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(27906, {	-- Neeka Bloodscar
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27857,	-- We're Under Attack!
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -858,25 +834,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 29,
 				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27916,	-- Ruag's Report
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27919, {	-- Onward to the Blasted Lands
-					["qg"] = 17127,	-- Anchorite Avuun
 					--["sourceQuest"] = 24913,	-- Remember the Light
+					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27821, {	-- Orcs and Humans (A)
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuest"] = 27870,	-- To Marshtide Watch
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -887,8 +863,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27852, {	-- Orcs and Humans (H)
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 27871,	-- To Stonard
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -944,8 +920,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(27694, {	-- Pool of Tears
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -967,8 +943,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27907, {	-- Prayerblossom (H)
-						["qg"] = 47041,	-- Neeka Bloodscar
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
+						["qg"] = 47041,	-- Neeka Bloodscar
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -983,11 +959,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27843, {	-- Reinforcements Denied (A)
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans (A)
 						27822,	-- Lumbering Oafs (A)
 					},
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -998,11 +974,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27855, {	-- Reinforcements Denied (H)
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs (H)
 						27852,	-- Orcs and Humans (H)
 					},
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1013,11 +989,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24913, {	-- Remember the Light
-					["qg"] = 17127,	-- Anchorite Avuun
 					["sourceQuests"] = {
 						27902,	-- The Purespring (A)
 						27904,	-- Breath of Mist
 					},
+					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1028,19 +1004,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1444, {	-- Return to Fel'Zerul
-					["qg"] = 5598,	-- Atal'ai Exile
 					["sourceQuest"] = 1429,	-- The Atal'ai Exile
+					["qg"] = 5598,	-- Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(27916, {	-- Ruag's Report
+					["sourceQuest"] = 27911,	-- With Dying Breath
 					["providers"] = {
 						{ "n", 47041 },	-- Neeka Bloodscar
 						{ "i", 62748 },	-- Splinterspear Report
 					},
-					["sourceQuest"] = 27911,	-- With Dying Breath
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1052,8 +1028,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27908, {	-- Secrets of the Mire (H)
-						["qg"] = 47041,	-- Neeka Bloodscar
 						["sourceQuest"] = 27906,	-- Neeka Bloodscar
+						["qg"] = 47041,	-- Neeka Bloodscar
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1065,8 +1041,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27818, {	-- Slithering Signs
-					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27757,	-- The Darkest Depths
+					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1077,8 +1053,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27705, {	-- Step One: The Priestess
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -1090,8 +1066,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27773, {	-- Step Three: Prophet
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -1103,8 +1079,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27768, {	-- Step Two: The Bloodletter
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -1116,8 +1092,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27663, {	-- Tastes Like Strider
-					["qg"] = 46182,	-- Pierre Fishflay
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
+					["qg"] = 46182,	-- Pierre Fishflay
 					["coord"] = { 74.2, 12.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1128,11 +1104,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1429, {	-- The Atal'ai Exile
+					["sourceQuest"] = 1424,	-- Pool of Tears [Horde]
 					["providers"] = {
 						{ "n", 1443 },	-- Fel'zerul
 						{ "i", 6193 },	-- Bundle of Atal'ai Artifacts
 					},
-					["sourceQuest"] = 1424,	-- Pool of Tears [Horde]
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
@@ -1156,8 +1132,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(27757, {	-- The Darkest Depths
-					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27691,	-- Marshfin Madness
+					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1180,52 +1156,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2744, {	-- The Demon Hunter
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
 					["lvl"] = 45,
 				}),
 				q(2621, {	-- The Disgraced One
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2784,	-- Fall From Grace
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(27869, {	-- The Dragon and the Temple
-					["qg"] = 46172,	-- Baba Bogbrew
 					["sourceQuest"] = 27818,	-- Slithering Signs
+					["qg"] = 46172,	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27918, {	-- The Harborage
-					["providers"] = {
-						{ "n", 18221 },	-- Holaaru
-						{ "i", 62750 },	-- Draenethyst Crystals
-					},
 					["sourceQuests"] = {
 						27840,	-- Draenethyst Crystals
 						27860,	-- The Lost Ones
+					},
+					["providers"] = {
+						{ "n", 18221 },	-- Holaaru
+						{ "i", 62750 },	-- Draenethyst Crystals
 					},
 					["coord"] = { 69.9, 36.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27915, {	-- The Heart of the Temple
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["isBreadcrumb"] = true,
 				}),
 				q(1421, {	-- The Lost Caravan
-					["qg"] = 5476,	-- Watcher Biggs
 					["sourceQuest"] = 1396,	-- Encroaching Wildlife
+					["qg"] = 5476,	-- Watcher Biggs
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1271,8 +1247,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2622, {	-- The Missing Orders
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuest"] = 2621,	-- The Disgraced One
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 47.8, 55, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1280,19 +1256,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- The Purespring
 					["allianceQuestData"] = q(27902, {	-- The Purespring (A)
-						["qg"] = 17127,	-- Anchorite Avuun
 						["sourceQuests"] = {
 							27875,	-- Prayerblossom (A)
 							27876,	-- Secrets of the Mire (A)
 						},
+						["qg"] = 17127,	-- Anchorite Avuun
 						["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					}),
 					["hordeQuestData"] = q(27909, {	-- The Purespring (H)
-						["qg"] = 47041,	-- Neeka Bloodscar
 						["sourceQuests"] = {
 							27907,	-- Prayerblossom (H)
 							27908,	-- Secrets of the Mire (H)
 						},
+						["qg"] = 47041,	-- Neeka Bloodscar
 						["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1304,8 +1280,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(2681, {	-- The Stones That Bind Us
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -1356,8 +1332,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2623, {	-- The Swamp Talker
-					["qg"] = 7643,	-- Bengor
 					["sourceQuest"] = 2622,	-- The Missing Orders
+					["qg"] = 7643,	-- Bengor
 					["coord"] = { 45, 57.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1371,16 +1347,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1422, {	-- Threat From the Sea (1/3)
-					["qg"] = 5592,	-- Tok'Kar
 					["sourceQuest"] = 699,	-- Lack of Surplus (2/2)
+					["qg"] = 5592,	-- Tok'Kar
 					["coord"] = { 81.3, 81.0, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1426, {	-- Threat From the Sea (2/3)
-					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1422,	-- Threat From the Sea (1/3)
+					["qg"] = 5593,	-- Katar
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1398,8 +1374,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1427, {	-- Threat From the Sea (3/3)
-					["qg"] = 5593,	-- Katar
 					["sourceQuest"] = 1426,	-- Threat From the Sea (2/3)
+					["qg"] = 5593,	-- Katar
 					["coord"] = { 83.8, 80.4, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1417,11 +1393,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27795, {	-- Tides of Darkness (A)
-					["qg"] = 46676,	-- Joanna Blueheart
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans (A)
 						27822,	-- Lumbering Oafs (A)
 					},
+					["qg"] = 46676,	-- Joanna Blueheart
 					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1447,11 +1423,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27854, {	-- Tides of Darkness (H)
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs (H)
 						27852,	-- Orcs and Humans (H)
 					},
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1477,8 +1453,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27870, {	-- To Marshtide Watch
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -1486,8 +1462,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27871, {	-- To Stonard
-					["qg"] = 46071,	-- Lord Itharius
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
+					["qg"] = 46071,	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
@@ -1495,8 +1471,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(3627, {	-- Uniting the Shattered Amulet
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -1520,8 +1496,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8424, {	-- War on the Shadowsworn
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -1550,8 +1526,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8423, {	-- Warrior Kinship
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLASTED_LANDS },
@@ -1564,12 +1540,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27857, {	-- We're Under Attack!
-					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["sourceQuests"] = {
 						27856,	-- Marking the Fallen (H)
 						27855,	-- Reinforcements Denied (H)
 						27854,	-- Tides of Darkness (H)
 					},
+					["qg"] = 7623,	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1595,11 +1571,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27911, {	-- With Dying Breath
-					["qg"] = 47041,	-- Neeka Bloodscar
 					["sourceQuests"] = {
 						27910,	-- Last Regrets
 						27909,	-- The Purespring (H)
 					},
+					["qg"] = 47041,	-- Neeka Bloodscar
 					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

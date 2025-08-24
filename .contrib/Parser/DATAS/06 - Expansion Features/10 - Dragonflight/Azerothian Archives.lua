@@ -15,7 +15,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			THALDRASZUS,
 			2262,	-- Traitor's Rest
 		},
-		["g"] = {
+		["groups"] = {
+			faction(FACTION_AZEROTHIAN_ARCHIVES),
 			n(ACHIEVEMENTS, {
 				ach(19790, {	-- The Archives Called, You Answered
 					["sym"] = {{"meta_achievement",
@@ -28,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						19793,	-- Finally At Rest
 						19792,	-- Just One More Thing
 					}},
-					["g"] = {
+					["groups"] = {
 						title(536),	-- Isles Archivist
 					},
 				}),
@@ -70,7 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				ach(19792, {	-- Just One More Thing
 					["description"] = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
-					["g"] = {
+					["groups"] = {
 						i(213133),	-- Reese (PET!)
 						crit(65408, {	-- Lost Atheneum
 							--["coord"] = {},
@@ -93,6 +94,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				ach(19789),	-- Relic Rescuer
+				ach(19685, {	-- Tenured Archiviest
+					["minReputation"] = { FACTION_AZEROTHIAN_ARCHIVES, 5 },
+				}),
 				ach(19788),	-- Tome Comber
 				ach(19786, {	-- When a Rock is Just a Rock
 					["description"] = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers."
@@ -157,13 +161,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(212762),	-- Tarnished Horn Signet
 				i(212769),	-- Tattered Wanted Poster
 			}),
-			n(FACTIONS, {
-				faction(FACTION_AZEROTHIAN_ARCHIVES, {
-					ach(19685, {	-- Tenured Archiviest
-						["minReputation"] = { FACTION_AZEROTHIAN_ARCHIVES, 5 },
-					}),
-				}),
-			}),
 			n(QUESTS, {
 				q(77325, {	-- To the Archives!
 					["provider"] = { "o", 405593 },	-- Azerothian Archives!
@@ -173,7 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.6, 31.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208084),	-- Technoscryers (QI!)
 					},
 				}),
@@ -181,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77231 },	-- Technoscrying 101
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.2, 30.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
@@ -189,7 +186,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77166 },	-- A Practical Test
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.7, 29.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
@@ -202,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77434 },	-- Technoscrying: Observatory
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
@@ -210,7 +207,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 75729 },	-- Attune to the Observer
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						--i(202247),	-- Technoscryers (QI!) (TODO: seems like qi didn't get removed from previous quest?)
 					},
 				}),
@@ -218,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 75867 },	-- A Link to the Past
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						o(404849, {	-- Dreadsquall Nest
 							i(205455),	-- Telescope Lens (QI!)
 						}),
@@ -228,7 +225,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(210956),	-- Archivist's Fire Totem (QI!)
 						i(205224),	-- Just a Rock
 					},
@@ -271,9 +268,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						75603,	-- Do Rites by Her
 						75868,	-- A Window into the Future
 					},
-					["providers"] = {
-						{ "n", 204643 },	-- Roska Rocktooth
-						{ "n", 204835 },	-- Zenata
+					["qgs"] = {
+						204643,	-- Roska Rocktooth
+						204835,	-- Zenata
 					},
 					["coords"] = {
 						{ 66.4, 46, OHNAHRAN_PLAINS },
@@ -304,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77328 },	-- Back to Headquarters!
 					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						--spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
 						i(208451, {	-- Archivist's Buckled Cap
 							["provider"] = { "i", 212371 },	-- Azerothian Archivist Initiation Token
@@ -331,7 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 76557 },	-- Without Honor
 					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						o(405943, {	-- Drakonid Scroll Case
 							i(208202),	-- Neltharion Agent Instructions (QI!)
 						}),
@@ -357,7 +354,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 76576 },	-- An Unlikely Proposal
 					["provider"] = { "n", 207763 },	-- Zenata
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						--spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
 						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
 							["coord"] = { 42, 35, ZARALEK_CAVERN },
@@ -376,7 +373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77486 },	-- Excavation: Gaze of Neltharion
 					["provider"] = { "n", 205413 },	-- Roska Rocktooth
 					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(210834),	-- Archivist's Earth Totem (QI!)
 					},
 				}),
@@ -389,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 76032 },	-- Hidden in the Midden
 					["provider"] = { "n", 205413 },	-- Roska Rocktooth (TODO: unsure, need to recheck npcID)
 					["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
-					--["g"] = {
+					--["groups"] = {
 					--	spell(431595),	-- Azerothian Archives: Gaze of Neltharion, Zaralek Cavern Site (WQ unlock)
 					--},
 				}),
@@ -402,7 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77487 },	-- Excavation: Winglord's Perch
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 17.2, 16.3, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(210778),	-- Archivist's Wind Totem (QI!)
 					},
 				}),
@@ -415,7 +412,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
-					--["g"] = {
+					--["groups"] = {
 					--	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
 					--},
 				}),
@@ -431,9 +428,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
-					["providers"] = {
-						{ "n", 206107 },	-- Eadweard Dalyngrigge
-						{ "n", 209134 },	-- Eadweard Dalyngrigge
+					["qgs"] = {
+						206107,	-- Eadweard Dalyngrigge
+						209134,	-- Eadweard Dalyngrigge
 					},
 					["coords"] = {
 						{ 61.6, 31.3, THALDRASZUS },
@@ -441,7 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 55.3, 51.4, 2262 },	-- Traitor's Rest
 					},
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						currency(2819),	-- Archivist Knowledge
 					},
 				}),
@@ -458,7 +455,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(RARES, {
 				n(208029, {	-- Doomshadow
 					["coord"] = { 27.75, 46.20, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(212645),	-- Clayscale Hornstrider (MOUNT!)
 						i(212642),	-- Excavator's Boots
 						i(212692),	-- Excavator's Dusky Fedora
@@ -480,7 +477,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(VENDORS, {
 				n(209192, {	-- Provisioner Aristta
 					["coord"] = { 61.4, 31.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(213536, {	-- Priceless Artifact
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } },
 						}),
@@ -566,40 +563,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					--79997,	-- Igira's Watch, Zaralek Cavern Site
 					--79994,	-- Gaze of Neltharion, Zaralek Cavern Site
 				},
-				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+				["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(78662, {	-- Excavation: A Cliffside Full of Caches
 						["coord"] = { 14.9, 18.2, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),
 					q(78663, {	-- Excavation: Scattered Around the Tower
 						["coord"] = { 47.9, 48.7, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),
 					q(78649, {	-- Excavation: Something Big Beneath the Riverbed
 						["coord"] = { 66.4, 46.1, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),
 					q(78661, {	-- Excavation: Treasures in the Cliffside
 						["coord"] = { 17.1, 16.4, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							i(205224),	-- Just a Rock
 						},
 					}),

@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
 				4533,	-- Meek Bloodlasher (PET!)
 				4521,	-- Subterranean Dartswog (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(4540, {	-- Alabaster Stonecharger (PET!)
 					["coord"] = { 47.0, 29.6, ISLE_OF_DORN },
 				}),
@@ -51,4 +51,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 		})),
 	}),
-})));
+}));

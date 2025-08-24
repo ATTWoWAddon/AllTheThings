@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9423, {	-- Goliaths of Gorgrond
 					crit(25767, {	-- Tarlna the Ageless
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				["questID"] = 37460,
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
 					i(120087),	-- Drov's Durable Gorget
@@ -52,13 +52,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				["questID"] = 37464,
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					ach(9424),	-- Rukhmar Guild Run
 					ach(9425),	-- So Grossly Incandescent
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					TempForceMisc(i(127775, {	-- Gemcutter Module: Stamina
 						["requireSkill"] = JEWELCRAFTING,
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 					})),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				["questID"] = 39380,
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					ach(10175),	-- Kazzak Guild Run
 					ach(10071),	-- The Legion Will NOT Conquer All
 					i(127976),	-- Choker of Reciprocity
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				["questID"] = 37462,
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
 					i(120091),	-- Robes of the Ageless

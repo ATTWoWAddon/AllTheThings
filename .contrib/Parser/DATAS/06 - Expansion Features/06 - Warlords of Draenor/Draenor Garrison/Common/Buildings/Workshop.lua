@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9527, {		-- Terrific Technology
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(26627),		-- Robo-Rooster

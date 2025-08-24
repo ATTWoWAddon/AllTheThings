@@ -71,32 +71,40 @@ root(ROOTS.Promotions, {
 
 		-- Desert Path
 		iensemble(173300, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Ensemble: Renowned Explorer's Attire
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 		})),
 		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173299, {	-- Explorer's Jungle Hopper (MOUNT!)
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173297, {	-- Explorer's Dunetrekker (MOUNT!)
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173298, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 } }, {	-- Explorer's Certification
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["groups"] = {
 				title(410),	-- Renowned Explorer <Name>
 			},
 		})),
 		i(171333, {	-- Renowned Explorer's Rucksack
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(171361, {	-- Renowned Explorer's Tabard
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 		i(173296, {	-- Rikki (PET!)
+			["description"] = "Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7",
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },
 		}),
 	})),

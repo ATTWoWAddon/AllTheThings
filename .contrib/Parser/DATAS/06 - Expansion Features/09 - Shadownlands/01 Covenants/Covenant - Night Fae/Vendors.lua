@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(VENDORS, {
 			n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
 				["coord"] = { 48.1, 53.5, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
+				["groups"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(174914, {	-- Elwyn <Renown Quartermaster>
 				["coord"] = { 60.2, 33.2, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					i(186494, {	-- Autumnal Wilderling (MOUNT!)
 						["cost"] = { { "c", ANIMA, 7500 } },
 					}),
@@ -576,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 				["coord"] = { 49.4, 54.4, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["groups"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
@@ -820,7 +820,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					181914,	-- Runewarden's Spaulders
 					181979,	-- Runewarden's Vestment
 				}},
-				["g"] = {
+				["groups"] = {
 					i(179602, {	-- Bulwark of the Wild Hunt
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -897,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 46.9, 54.3, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["groups"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
 				["coord"] = { 49.4, 54.4, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				["groups"] = bubbleDown({ ["modID"] = 6, }, {	-- Mythic
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226

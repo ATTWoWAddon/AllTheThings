@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(273, {	-- Drak'Tharon Keep
 		["mapID"] = DRAKTHARON_KEEP,
 		["coord"] = { 28.6, 86.9, ZULDRAK },
@@ -84,14 +84,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(12238, {	-- Cleansing Drak'Tharon
-					["providers"] = {
-						{ "n", 26787 },	-- Image of Drakuru
-						{ "i", 35797 },	-- Drakuru's Elixir
-					},
 					["sourceQuest"] = 12068,	-- Voices From the Dust
 					-- #if AFTER 4.3.0.14890
 					["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
 					-- #endif
+					["providers"] = {
+						{ "n", 26787 },	-- Image of Drakuru
+						{ "i", 35797 },	-- Drakuru's Elixir
+					},
 					["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),
@@ -103,11 +103,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(30120, {	-- Cleansing Drak'Tharon
+					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
 					["providers"] = {
 						{ "n", 58149 },	-- Image of Drakuru
 						{ "i", 35797 },	-- Drakuru's Elixir
 					},
-					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
 					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),
@@ -119,15 +119,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(13129, {	-- Head Games
+					-- #if BEFORE 4.3.0.15005
+					["sourceQuest"] = 12037,	-- Search and Rescue
+					-- #endif
 					["qgs"] = {
 						-- #if AFTER 4.3.0.15005
 						55677,	-- Kurzel
 						-- #endif
 						26664,	-- Kurzel
 					},
-					-- #if BEFORE 4.3.0.15005
-					["sourceQuest"] = 12037,	-- Search and Rescue
-					-- #endif
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ichor-Stained Cloth
@@ -496,7 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(273, {

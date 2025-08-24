@@ -1,17 +1,3 @@
-348459@@@Reawakened Phase-Hunter [Classic]
-372677@@@Kalu'ak Whalebone Glider [Classic]
-394209@@@Festering Emerald Drake [Classic]
-387308@@@Magic Rooster [Classic]
-387311@@@X-51 Nether-Rocket X-TREME [Classic]
-387319@@@Big Battle Bear [Classic]
-387320@@@Blazing Hippogryph [Classic]
-387321@@@Wooly White Rhino [Classic]
-387323@@@X-51 Nether-Rocket [Classic]
-388516@@@Hao-Yue, River Foreseer [Classic]
-416158@@@Nightmarish Emerald Drake [Classic]
-423869@@@Avatar of Flame [Classic]
-446902@@@Polly Roger [Classic]
-440915@@@Auspicious Arborwyrm [Classic]
 0@@@TEST
 25675@@@Reindeer [Holiday]
 25858@@@Reindeer [Holiday]
@@ -92,3 +78,5 @@
 431049@@@Grotto Netherwing Drake [Cup]
 431050@@@Flourishing Whimsydrake [Cup]
 441313@@@Soar [Dracthyr Abilities]
+466423@@@Unstable Rocket
+466464@@@Unstable Rocket

@@ -80,7 +80,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(583, {	-- Arathi Basin All-Star
 					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
-					["g"] = {
+					["groups"] = {
 						crit(426),	-- Assault 2 bases
 						crit(427),	-- Defend 2 bases
 					},
@@ -88,7 +88,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(584, {	-- Arathi Basin Assassin
 					["timeline"] = { ADDED_3_0_2 },
 					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
-					["g"] = {
+					["groups"] = {
 						crit(431),	-- Kill 5 people at the blacksmith
 						crit(432),	-- Kill 5 people at the farm
 						crit(433),	-- Kill 5 people at the gold mine
@@ -149,7 +149,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(QUESTS, {
 				q(8262, {	-- Arathor Advanced Care Package
 					["qg"] = 15127,	-- Samuel Hawke
-					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 46.4, ARATHI_HIGHLANDS },
@@ -157,10 +156,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
 						i(20231),	-- Arathor Advanced Care Package
@@ -168,7 +168,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8260, {	-- Arathor Basic Care Package
 					["qg"] = 15127,	-- Samuel Hawke
-					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 46.4, ARATHI_HIGHLANDS },
@@ -176,10 +175,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 25, 34 },
 					["groups"] = {
 						i(20233),	-- Arathor Basic Care Package
@@ -187,7 +187,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8261, {	-- Arathor Standard Care Package
 					["qg"] = 15127,	-- Samuel Hawke
-					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 46.4, ARATHI_HIGHLANDS },
@@ -195,17 +194,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.0, 45.2, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 35, 44 },
 					["groups"] = {
 						i(20236),	-- Arathor Standard Care Package
 					},
 				}),
 				q(8374, {	-- Claiming Arathi Basin [Level 20]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -218,6 +217,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -226,13 +226,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8384, {	-- Claiming Arathi Basin [Level 20]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -245,6 +244,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -253,13 +253,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8391, {	-- Claiming Arathi Basin [Level 30]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -272,6 +271,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -280,13 +280,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8393, {	-- Claiming Arathi Basin [Level 30]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -299,6 +298,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -307,13 +307,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8392, {	-- Claiming Arathi Basin [Level 40]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -326,6 +325,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -334,13 +334,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8394, {	-- Claiming Arathi Basin [Level 40]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -353,6 +352,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -361,13 +361,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8395, {	-- Claiming Arathi Basin [Level 50]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -380,6 +379,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -388,13 +388,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8397, {	-- Claiming Arathi Basin [Level 50]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -407,6 +406,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -415,13 +415,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8396, {	-- Claiming Arathi Basin [Level 60]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -434,6 +433,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -442,13 +442,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8398, {	-- Claiming Arathi Basin [Level 60]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -461,6 +460,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -469,13 +469,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 69.8, 90.6, IRONFORGE },
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8370, {	-- Conquering Arathi Basin [Level 20]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -488,6 +487,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -496,13 +496,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8390, {	-- Conquering Arathi Basin [Level 20]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -515,6 +514,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -523,13 +523,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8436, {	-- Conquering Arathi Basin [Level 30]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -542,6 +541,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -550,13 +550,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8440, {	-- Conquering Arathi Basin [Level 30]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -569,6 +568,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -577,13 +577,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8437, {	-- Conquering Arathi Basin [Level 40]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -596,6 +595,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -604,13 +604,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8441, {	-- Conquering Arathi Basin [Level 40]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -623,6 +622,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -631,13 +631,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8438, {	-- Conquering Arathi Basin [Level 50]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -650,6 +649,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -658,13 +658,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8442, {	-- Conquering Arathi Basin [Level 50]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -677,6 +676,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -685,13 +685,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8439, {	-- Conquering Arathi Basin [Level 60]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -704,6 +703,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -712,13 +712,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8443, {	-- Conquering Arathi Basin [Level 60]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -731,6 +730,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -739,15 +739,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 57.8, 76.8, THUNDER_BLUFF },
 						{ 58.2, 97.6, UNDERCITY },
 					},
-					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8115, {	-- Control Five Bases (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					["sourceQuest"] = 8114,	-- Control Four Bases (Alliance)
-					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -755,6 +754,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 45.8, 45.6, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -765,7 +765,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 				}),
 				q(8114, {	-- Control Four Bases (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -774,7 +773,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -782,13 +781,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 45.8, 45.6, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
 				q(8265, {	-- Defiler's Advanced Care Package
 					["qg"] = 15126,	-- Rutherford Twing
-					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.5, 30.4, ARATHI_HIGHLANDS },
@@ -796,10 +795,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
-					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
 						i(20228),	-- Defiler's Advanced Care Package
@@ -807,7 +807,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8263, {	-- Defiler's Basic Care Package
 					["qg"] = 15126,	-- Rutherford Twing
-					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.5, 30.4, ARATHI_HIGHLANDS },
@@ -815,10 +814,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
-					["races"] = HORDE_ONLY,
 					["lvl"] = { 25, 34 },
 					["groups"] = {
 						i(20229),	-- Defiler's Basic Care Package
@@ -826,7 +826,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8264, {	-- Defiler's Standard Care Package
 					["qg"] = 15126,	-- Rutherford Twing
-					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.5, 30.4, ARATHI_HIGHLANDS },
@@ -834,10 +833,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 73.4, 29.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+					["races"] = HORDE_ONLY,
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
-					["races"] = HORDE_ONLY,
 					["lvl"] = { 35, 44 },
 					["groups"] = {
 						i(20230),	-- Defiler's Standard Care Package
@@ -864,10 +864,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				})),
 				-- #endif
 				q(8122, {	-- Take Five Bases (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					["sourceQuest"] = 8121,	-- Take Four Bases (Horde)
-					["minReputation"] = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
+					["minReputation"] = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
@@ -878,7 +878,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 				}),
 				q(8121, {	-- Take Four Bases (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -887,14 +886,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
+					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 				}),
 				q(8168, {	-- The Battle for Arathi Basin! [Level 20] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -903,6 +902,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -915,7 +915,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8167, {	-- The Battle for Arathi Basin! [Level 30] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -924,6 +923,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -936,7 +936,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8166, {	-- The Battle for Arathi Basin! [Level 40] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -945,6 +944,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -957,7 +957,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8105, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -966,6 +965,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -978,7 +978,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = 50,
 				}),
 				q(10531, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
-					-- CRIEVE NOTE: This quest was added in TBC, not directly accessible to players. Might be a flag for both factions that this quest was completed. Originally we had to use altQuests to flag them correctly.
 					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
@@ -990,9 +989,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					-- CRIEVE NOTE: This quest was added in TBC, not directly accessible to players. Might be a flag for both factions that this quest was completed. Originally we had to use altQuests to flag them correctly.
 				}),
 				q(8171, {	-- The Battle for Arathi Basin! [Level 20] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1001,13 +1000,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8170, {	-- The Battle for Arathi Basin! [Level 30] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1016,13 +1015,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8169, {	-- The Battle for Arathi Basin! [Level 40] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1031,13 +1030,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8120, {	-- The Battle for Arathi Basin! [Level 50] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1046,6 +1045,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

@@ -11,7 +11,7 @@ app:CreateWindow("Bounty", {
 	Commands = { "attbounty" },
 	OnRebuild = function(self, ...)
 		if not self.data then
-			self.data = app.CreateNPC(app.HeaderConstants.UI_BOUNTY_WINDOW, {
+			self.data = app.CreateCustomHeader(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 				visible = true,
 				expanded = true,
 				back = 1,

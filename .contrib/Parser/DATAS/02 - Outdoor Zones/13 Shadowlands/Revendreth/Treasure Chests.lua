@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57159 },	-- A Reflection of Truth
 				["coord"] = { 51.8, 59.5, REVENDRETH },
 				["questID"] = 59888,
-				["g"] = {
+				["groups"] = {
 					i(182744, {	-- Ornate Belt Buckle
 						i(182741, {	-- Buckled Cloth Belt
 							["cost"] = { { "i", 182746, 1 } },	-- All-In-One Belt Repair Kit
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 60665,
 				["isDaily"] = true,	-- repeatable??
-				["g"] = {
+				["groups"] = {
 					i(180592),	-- Trapped Stonefiend (PET!)
 					i(180392),	-- Gargoyle Stone Fists
 					i(180391),	-- Leggings of the Skydarkeners
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 62.5, 35.8, REVENDRETH },
 					{ 63.5, 36.9, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(180397),	-- Crown of Decadent Desires
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(349565, {	-- Chest of Envious Dreams
 				["coord"] = { 69.3, 77.9, REVENDRETH },
 				["questID"] = 59833,
-				["g"] = {
+				["groups"] = {
 					i(179393),	-- Mirror of Envious Dreams (TOY!)
 				},
 			}),
@@ -133,13 +133,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 70.3, 59.0, REVENDRETH },
 					{ 74.5, 57.8, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(182595),	-- Sturdy Horseshoe
 				},
 			}),
 			o(357526, {	-- Empty Water Bucket
 				["coord"] = { 63.2, 61.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(182620),	-- Empty Water Bucket
 				},
 			}),
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 47.3, 55.3, REVENDRETH },
 				["questID"] = 62243,
-				["g"] = {
+				["groups"] = {
 					i(184075),	-- Stonewrought Sentry (TOY!)
 				},
 			}),
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 173449 },	-- Lost Quill
 				["coord"] = { 37.7, 69.2, REVENDRETH },
 				["questID"] = 61990,
-				["g"] = {
+				["groups"] = {
 					i(182475),	-- Forbidden Ink
 					i(182613),	-- Lost Quill (PET!)
 				},
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 173634 },	-- Muckribbon
 				["coord"] = { 73.7, 75.4, REVENDRETH },
 				["questID"] = 62196,
-				["g"] = {
+				["groups"] = {
 					i(180993),	-- Bat Visage Bobber (TOY!)
 				},
 			}),
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60949,
 				["isDaily"] = true,
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
-				["g"] = {
+				["groups"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(180401),	-- Noble Justice
@@ -198,11 +198,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(349796, {	-- Gilded Plum Chest
-				["description"] = "There is a Greedy Soul that wanders up and down the road.  Kill it, and it will drop the treasure.",
+				["description"] = "There is a Greedy Soul that wanders up and down the road. Kill it, and it will drop the treasure.",
 				["crs"] = { 166680 },	-- Greedy Soul
 				["coord"] = { 75.2, 56.1, REVENDRETH },
 				["questID"] = 59887,
-				["g"] = {
+				["groups"] = {
 					i(179390),	-- Tantalizingly Large Golden Plum (grey item but causes a permanent debuff while held)
 				},
 			}),
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 56.4, 74.4, REVENDRETH },
 					{ 56.8, 77.6, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(180389),	-- Banewood Treads
 					i(180390),	-- Belt of Many Trophies
 					i(180388),	-- Soulstalker Blunderbuss
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(358398, {	-- Lost Journal
 				["coord"] = { 28.5, 43.4, REVENDRETH },
 				["questID"] = 62478,
-				["g"] = {
+				["groups"] = {
 					i(183742),	-- Enemy Infiltration - Preface
 				},
 			}),
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				["coords"] = {{70.3, 54.6,REVENDRETH}},	-- one possible spawn, but all doors are in similar area
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
-				["g"] = {
+				["groups"] = {
 					i(180400),	-- Inquisitions Final Judgment
 					i(180395),	-- Nathrezim Crusader's Hauberk
 					i(180339),	-- Shadow-Lined Chalice
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 29.6, 37.1, REVENDRETH },
 				["questID"] = 62198,
 				["cost"] = { { "c", 1820, 30 } },	-- 30x Infused Ruby
-				["g"] = {
+				["groups"] = {
 					i(182780),	-- Muckpool Cookpot (TOY!)
 				},
 			}),
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 76.2, 52.4, REVENDRETH },
 					{ 76.5, 47.4, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(180400),	-- Inquisitions Final Judgment
 					i(180395),	-- Nathrezim Crusader's Hauberk
 					i(180339),	-- Shadow-Lined Chalice
@@ -397,19 +397,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			o(358318, {	-- R. Suavel Dredger Portrait
-				["description"] = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF58.8, 30.3|r.  Once inside Redelav Tower, head all the way to the top floor.  The portrait is on a small table at |cFFFFFFFF58.0, 27.8|r.",
+				["description"] = "Take the mirror portal in Thornhill Manor at |cFFFFFFFF58.8, 30.3|r. Once inside Redelav Tower, head all the way to the top floor. The portrait is on a small table at |cFFFFFFFF58.0, 27.8|r.",
 				["coords"] = {
 					{ 58.8, 30.3, REVENDRETH },	-- Mirror entrance
 					{ 58.0, 27.8, REVENDRETH },	-- Actual object
 				},
-				["g"] = {
+				["groups"] = {
 					i(182971),	-- Fabius's Portrait
 				},
 			}),
 			o(357572, {	-- Rapier of the Fearless
 				["coord"] = { 80.0, 37.1, REVENDRETH },
 				["questID"] = 62156,
-				["g"] = {
+				["groups"] = {
 					i(182689),	-- Rapier of the Fearless
 				},
 			}),
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 80.1, 37.1, REVENDRETH },
 					{ 80.4, 39.7, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(180402),	-- Barrier of the Forgotten
 					i(180396),	-- Vambraces of Fading Humanity
 					i(180403),	-- Vessel of Distilled Regret
@@ -461,11 +461,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 59885,
 			}),
 			o(351487, {	-- Secret Treasure
-				["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r.  On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r.  Click it to open up a secret passage beneath the rug.  To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
+				["description"] = "Find the small alcove at |cFFFFFFFF65.7, 42.9|r. On the wall behind a dark red oval rug is a single |cFFFFFFFFFlickering Candle|r. Click it to open up a secret passage beneath the rug. To exit after you collect the treasure, click the candle on the right-hand side of the stairs where you entered.",
 				["coord"] = { 66.5, 42.8, REVENDRETH },
 				["questID"] = 60197,
 				["isDaily"] = true,	-- repeatable??
-				["g"] = {
+				["groups"] = {
 					i(180589),	-- Burdened Soul (PET!)
 					i(180400),	-- Inquisitions Final Judgment
 					i(180395),	-- Nathrezim Crusader's Hauberk
@@ -478,18 +478,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 73.8, 46.3, REVENDRETH },
 				["questID"] = 60196,
 				["isDaily"] = true,	-- ?? repeatable?
-				["g"] = {
+				["groups"] = {
 					i(180395),	-- Nathrezim Crusader's Hauberk
 					i(180400),	-- Inquisitions Final Judgment
 					i(180339),	-- Shadow-Lined Chalice
 				},
 			}),
 			o(351541, {	-- Secret Treasure
-				["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r.  Downstairs, go through the right-hand door.  On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r.  Click the book, and the treasure will appear.",
+				["description"] = "Enter the crypt at |cFFFFFFFF41.9, 50.0|r. Downstairs, go through the right-hand door. On the left side of the room is a bookshelf with a |cFFFFFFFFNondescript Book|r. Click the book, and the treasure will appear.",
 				["coord"] = { 42.5, 50.3, REVENDRETH },
 				["questID"] = 60198,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(183826),	-- Big Floppy Hat
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
@@ -497,11 +497,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351542, {	-- Secret Treasure
-				["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r.  Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
+				["description"] = "Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r. Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",
 				["coord"] = { 74.0, 61.9, REVENDRETH },
 				["questID"] = 60199,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
 					i(180336),	-- Faintly Smoldering Torch
 					i(180394),	-- Envy-Laced Leggings
@@ -511,23 +511,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351543, {	-- Secret Treasure
-				["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r.  Clicking the chain will pull you up to the tiny alcove above the treasure.  Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
+				["description"] = "Do not take the mirror portal!  To the right of the mirror, there is a |cFFFFFFFFHanging Chain|r. Clicking the chain will pull you up to the tiny alcove above the treasure. Click the |cFFFFFFFFGrinchin Calligraphy Set|r on the desk to pick up the |cFFFFFFFFHouse Grinchin Ring|r, which will allow you to loot the treasure.",
 				["crs"] = { 169865 },	-- Treasure Guardian <House Grinchin>
 				["coord"] = { 50.2, 49.0, REVENDRETH },
 				["isDaily"] = true,
 				["questID"] = 60200,
-				["g"] = {
+				["groups"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(180401),	-- Noble Justice
 				},
 			}),
 			o(351544, {	-- Secret Treasure
-				["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r.  Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door.  The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure.  There are two more Venthyr guarding the chest.",
+				["description"] = "Enter the crypt at |cFFFFFFFF55.2, 34.7|r. Downstairs, go through the right-hand door and defeat Lord Darion.\n\nWhen you turn to leave the room, you will see a painting on either side of the door. The one on the right side is a |cFFFFFFFFFlickering Portrait|r, and it has a hidden lever behind it that will open the door to the treasure. There are two more Venthyr guarding the chest.",
 				["coord"] = { 55.3, 35.9, REVENDRETH },
 				["questID"] = 60201,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(182723),	-- Mail Courier's Shoulderguards
 					i(180401),	-- Noble Justice
@@ -540,13 +540,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(351545, {	-- Secret Treasure
-				["description"] = "Lord Scowl is imprisoned in a cage next to the treasure.  Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
+				["description"] = "Lord Scowl is imprisoned in a cage next to the treasure. Pick up a book from a nearby fallen cage, climb up the tree, give the book to Lord Scowl, and he will kick the treasure down to the ground for you.",
 				["crs"] = { 169993 },	-- Lord Scowl
 				["provider"] = { "i", 180220 },	-- Historical Treatise
 				["coord"] = { 27.7, 48.7, REVENDRETH },
 				["questID"] = 60202,	-- also triggered 60851
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180323),	-- Blackbale Neckpiece
 					i(182970, {	-- Burgleclipped Portrait
 						["customCollect"] = "SL_COV_VEN",
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(358399, {	-- Six-League Pack
 				["coord"] = { 58.6, 84.8, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(183789),	-- Six-League Pack
 				},
 			}),
@@ -568,7 +568,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Opening a Crypt Door with the Atonement Crypt Key has a chance to reveal this treasure.",
 				["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				["cost"] = { { "i", 172957, 1 } },	-- 1x Atonement Crypt Key
-				["g"] = {
+				["groups"] = {
 					i(180395),	-- Nathrezim Crusader's Hauberk
 					i(180400),	-- Inquisitions Final Judgment
 					i(180339),	-- Shadow-Lined Chalice
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(349798, {	-- Smuggled Cache
 				["coord"] = { 31.1, 55.0, REVENDRETH },
 				["questID"] = 59889,
-				["g"] = {
+				["groups"] = {
 					i(182738),	-- Bundle of Smuggled Parasol Components
 				},
 			}),
@@ -634,7 +634,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 37.0, 20.7, REVENDRETH },
 					{ 37.3, 25.1, REVENDRETH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(180392),	-- Gargoyle Stone Fists
 					i(180391),	-- Leggings of the Skydarkeners
 					i(182720),	-- Mail Courier's Tunic
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 43.8, 57.1, REVENDRETH },
 					["questID"] = 60938,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(182722),	-- Mail Courier's Cap
 					},
 				}),
@@ -665,7 +665,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 80.4, 70.8, REVENDRETH },
 					["questID"] = 60943,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(182722),	-- Mail Courier's Cap
 						i(182721),	-- Mail Courier's Grips
 					},
@@ -730,7 +730,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 36.5, 51.5, REVENDRETH },
 					["questID"] = 60985,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(182722),	-- Mail Courier's Cap
 					},
 				}),
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Go up the stairs that start at 41.3, 44.9.",
 				["coord"] = { 38.4, 44.2, REVENDRETH },
 				["questID"] = 61999,
-				["g"] = {
+				["groups"] = {
 					i(182694),	-- Stylish Black Parasol (TOY!)
 					i(182697),	-- Spare Stylish Parasol
 				},
@@ -751,7 +751,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 62.8, 75.3, REVENDRETH },
 				},
 				["questID"] = 62199,
-				["g"] = {
+				["groups"] = {
 					i(183986),	-- Bondable Sinstone (TOY!)
 				},
 			}),
@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 57.3, 43.3, REVENDRETH },
 				["questID"] = 62063,
 				["cost"] = { { "c", 1820, 99 } },	-- 99x Infused Ruby
-				["g"] = {
+				["groups"] = {
 					i(182612),	-- The Count (PET!)
 				},
 			}),
@@ -769,7 +769,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = {{"i",179823,1}},	-- The Harvest Key
 				["questID"] = 60579,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 78.1, 66.5, REVENDRETH },
 				},
 				["isDaily"] = true,	-- repeatable??
-				["g"] = {
+				["groups"] = {
 					i(180393),	-- Depraved Darkblade's Epaulets
 					i(180394),	-- Envy-Laced Leggings
 					i(180336),	-- Faintly Smoldering Torch
@@ -821,7 +821,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(357584, {	-- Vyrtha's Dredglaive
 				["coord"] = { 70.1, 60.0, REVENDRETH },
 				["questID"] = 62164,
-				["g"] = {
+				["groups"] = {
 					i(177807),	-- Vyrtha's Dredglaive
 				},
 			}),

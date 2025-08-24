@@ -9,13 +9,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1040,	-- Storm's End
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(51453, {	-- Shrine of the Storm: Behold, Pure Water
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["g"] = {
-						i(160253),	-- Mote of Pure Water (QI!)
+					["groups"] = {
+						o(289656, {	-- Mote of Pure Water
+							i(160253),	-- Mote of Pure Water (QI!)
+						}),
 					},
 				}),
 				q(51455, {	-- Shrine of the Storm: Cleansing Fonts
@@ -33,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						134056,	-- Aqu'sirr
 						134828,	-- Aqualing
 					},
-					["g"] = {
+					["groups"] = {
 						i(159321),	-- Gloves of Corrupted Water
 						i(159366),	-- Water Shapers
 						i(159239),	-- Aqu'sirr's Swirling Sash
@@ -47,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						134063,	-- Brother Ironhull
 						134058,	-- Galecaller Faye
 					},
-					["g"] = {
+					["groups"] = {
 						i(158371),	-- Seabreeze
 						i(159426),	-- Belt of the Unrelenting Gale
 						i(159419),	-- Ironhull's Reinforced Legplates
@@ -61,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						134060,	-- Lord Stormsong
 					},
-					["g"] = {
+					["groups"] = {
 						i(159646),	-- Aq'mar, the Tidecaller
 						i(159289),	-- Void-Drenched Cape
 						i(159364),	-- Bindings of the Calling Depths
@@ -74,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						134069,	-- Vol'zith the Whisperer
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12835),	-- Shrine of the Storm
 						i(159135),	-- Deep Fathom's Bite
 						i(159302),	-- Cowl of Fluid Machiantions
@@ -91,12 +93,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2153, {	-- Aqu'sirr
 						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
-						["g"] = {
+						["groups"] = {
 							i(159321),	-- Gloves of Corrupted Water
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
@@ -110,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							134063,	-- Brother Ironhull
 							134058,	-- Galecaller Faye
 						},
-						["g"] = {
+						["groups"] = {
 							i(158371),	-- Seabreeze
 							i(159426),	-- Belt of the Unrelenting Gale
 							i(159419),	-- Ironhull's Reinforced Legplates
@@ -124,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
-						["g"] = {
+						["groups"] = {
 							i(159646),	-- Aq'mar, the Tidecaller
 							i(159289),	-- Void-Drenched Cape
 							i(159364),	-- Bindings of the Calling Depths
@@ -137,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12837),	-- Heroic: Shrine of the Storm
 							i(159135),	-- Deep Fathom's Bite
 							i(159302),	-- Cowl of Fluid Machiantions
@@ -156,13 +158,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					ach(12600),	-- Breath of the Shrine
 					e(2153, {	-- Aqu'sirr
 						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
-						["g"] = {
+						["groups"] = {
 							i(159321),	-- Gloves of Corrupted Water
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
@@ -176,7 +178,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							134063,	-- Brother Ironhull
 							134058,	-- Galecaller Faye
 						},
-						["g"] = {
+						["groups"] = {
 							iensemble(162598),	-- Ensemble: Vestments of the Tidesages
 							i(158371),	-- Seabreeze
 							i(159426),	-- Belt of the Unrelenting Gale
@@ -191,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12601),	-- The Void Lies Sleeping
 							iensemble(162598),	-- Ensemble: Vestments of the Tidesages
 							i(159646),	-- Aq'mar, the Tidecaller
@@ -206,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12838),	-- Mythic: Shrine of the Storm
 							ach(13001),	-- Mythic: Shrine of the Storm Guild Run
 							ach(12602),	-- Trust No One

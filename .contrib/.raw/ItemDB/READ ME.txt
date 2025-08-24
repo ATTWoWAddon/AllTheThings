@@ -1,4 +1,5 @@
 This folder contains data harvested from in game and exported to SavedVariables.
+You can build this yourself by opening '/attfinditems' in ATT Classic. (not available in Retail!)
 
 Each file has a "DBContext", "DBFileName", and an "ItemDB" at bare minimum.
 

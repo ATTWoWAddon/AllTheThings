@@ -7,64 +7,64 @@
 
 local HELM_CONQ = i(71675, {	-- Helm of the Fiery Conqueror
 	["sym"] = {{"select","itemID",
-		71282,    -- Balespider's Hood
-		71272,    -- Cowl of the Cleansing Flame
-		71277,    -- Hood of the Cleansing Flame
-		70948,    -- Immolation Faceguard
-		71093,    -- Immolation Headguard
-		71065,    -- Immolation Helmet
+		71282,	-- Balespider's Hood
+		71272,	-- Cowl of the Cleansing Flame
+		71277,	-- Hood of the Cleansing Flame
+		70948,	-- Immolation Faceguard
+		71093,	-- Immolation Headguard
+		71065,	-- Immolation Helmet
 	}},
 });
 local HELM_PROT = i(71682, {	-- Helm of the Fiery Protector
 	["sym"] = {{"select","itemID",
-		71298,    -- Erupting Volcanic Faceguard
-		71293,    -- Erupting Volcanic Headpiece
-		71303,    -- Erupting Volcanic Helmet
-		70944,    -- Faceguard of the Molten Giant
-		71051,    -- Flamewaker's Headguard
-		71070,    -- Helmet of the Molten Giant
+		71298,	-- Erupting Volcanic Faceguard
+		71293,	-- Erupting Volcanic Headpiece
+		71303,	-- Erupting Volcanic Helmet
+		70944,	-- Faceguard of the Molten Giant
+		71051,	-- Flamewaker's Headguard
+		71070,	-- Helmet of the Molten Giant
 	}},
 });
 local HELM_VANQ = i(71668, {	-- Helm of the Fiery Vanquisher
 	["sym"] = {{"select","itemID",
-		71047,    -- Dark Phoenix Helmet
-		70954,    -- Elementium Deathplate Faceguard
-		71060,    -- Elementium Deathplate Helmet
-		71287,    -- Firehawk Hood
-		71108,    -- Obsidian Arborweave Cover
-		71098,    -- Obsidian Arborweave Headpiece
-		71103,    -- Obsidian Arborweave Helm
+		71047,	-- Dark Phoenix Helmet
+		70954,	-- Elementium Deathplate Faceguard
+		71060,	-- Elementium Deathplate Helmet
+		71287,	-- Firehawk Hood
+		71108,	-- Obsidian Arborweave Cover
+		71098,	-- Obsidian Arborweave Headpiece
+		71103,	-- Obsidian Arborweave Helm
 	}},
 });
 local SHOULDER_CONQ = i(71681, {	-- Mantle of the Fiery Conqueror
 	["sym"] = {{"select","itemID",
-		71285,    -- Balespider's Mantle
-		71095,    -- Immolation Mantle
-		71067,    -- Immolation Pauldrons
-		70946,    -- Immolation Shoulderguards
-		71275,    -- Mantle of the Cleansing Flame
-		71280,    -- Shoulderwraps of the Cleansing Flame
+		71285,	-- Balespider's Mantle
+		71095,	-- Immolation Mantle
+		71067,	-- Immolation Pauldrons
+		70946,	-- Immolation Shoulderguards
+		71275,	-- Mantle of the Cleansing Flame
+		71280,	-- Shoulderwraps of the Cleansing Flame
 	}},
 });
 local SHOULDER_PROT = i(71688, {	-- Mantle of the Fiery Protector
 	["sym"] = {{"select","itemID",
-		71300,    -- Erupting Volcanic Mantle
-		71295,    -- Erupting Volcanic Shoulderwraps
-		71305,    -- Erupting Volcanic Spaulders
-		71053,    -- Flamewaker's Spaulders
-		71072,    -- Pauldrons of the Molten Giant
-		70941,    -- Shoulderguards of the Molten Giant
+		71300,	-- Erupting Volcanic Mantle
+		71295,	-- Erupting Volcanic Shoulderwraps
+		71305,	-- Erupting Volcanic Spaulders
+		71053,	-- Flamewaker's Spaulders
+		71072,	-- Pauldrons of the Molten Giant
+		70941,	-- Shoulderguards of the Molten Giant
 	}},
 });
 local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 	["sym"] = {{"select","itemID",
-		71049,    -- Dark Phoenix Spaulders
-		71062,    -- Elementium Deathplate Pauldrons
-		70951,    -- Elementium Deathplate Shoulderguards
-		71290,    -- Firehawk Mantle
-		71106,    -- Obsidian Arborweave Mantle
-		71111,    -- Obsidian Arborweave Shoulderwraps
-		71101,    -- Obsidian Arborweave Spaulders
+		71049,	-- Dark Phoenix Spaulders
+		71062,	-- Elementium Deathplate Pauldrons
+		70951,	-- Elementium Deathplate Shoulderguards
+		71290,	-- Firehawk Mantle
+		71106,	-- Obsidian Arborweave Mantle
+		71111,	-- Obsidian Arborweave Shoulderwraps
+		71101,	-- Obsidian Arborweave Spaulders
 	}},
 });
 
@@ -91,41 +91,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["lvl"] = 85,
 				["groups"] = {
 					a(q(29453, {	-- Your Time Has Come [A]
-						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { STORMWIND_CITY },
+						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
-						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { ORGRIMMAR },
+						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
-						["qg"] = 52408,	-- Coridormi
-						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
 						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
+						["qg"] = 52408,	-- Coridormi
 						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
-						["qg"] = 52382,	-- Ziradormi
-						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
+						["qg"] = 52382,	-- Ziradormi
+						["coord"] = { 48.8, 70.1, ORGRIMMAR },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = {
 							29129,	-- A Legendary Engagement [H]
 							29132,	-- A Legendary Engagement [A]
 						},
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 					}),
 					q(29135, {	-- All-Seeing Eye
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29134,	-- A Wrinkle in Time
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						-- #if NOT OBJECTIVES
 						["cost"] = {
@@ -144,8 +145,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						-- #endif
 					}),
 					q(29193, {	-- On a Wing and a Prayer
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29135,	-- All-Seeing Eye
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						["groups"] = {
 							objective(1, {	-- Brought Timeless Eye to Coldarra
@@ -157,27 +158,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29194, {	-- Through a Glass, Darkly
-						["qg"] = 52835,	-- Tarecgosa
 						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
+						["qg"] = 52835,	-- Tarecgosa
+						["coord"] = { 34.5, 25.3, BOREAN_TUNDRA },
 						["maps"] = { 370 },		-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
-						["qg"] = 53567,	-- Tarecgosa
 						["sourceQuest"] = 29194,	-- Through a Glass, Darkly
+						["qg"] = 53567,	-- Tarecgosa
 						["maps"] = { 370, MOUNT_HYJAL },		-- The Nexus (Scenario Map)
 					}),
 					q(29234, {	-- Delegation
-						["qg"] = 52995,	-- Kalecgos
-						["providers"] = {
-							{ "o", 209098 },	-- Circle of Thorns Portal
-						},
-						["sourceQuests"] = {
-							29225,	-- Actionable Intelligence
-							-- #IF NOT ANYCLASSIC
-							29432,	-- Delegation Tracker HQT
-							-- #ENDIF
-						},
-						["coord"] = { 62.1, 23.1, MOUNT_HYJAL },
 						["description"] =
 							-- #IF ANYCLASSIC
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delgation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",
@@ -186,6 +177,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							-- but that is a very niche scenario that likely no one would actually perform on purpose so doesn't merit being in the description
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal.",
 							-- #ENDIF
+						["sourceQuests"] = {
+							29225,	-- Actionable Intelligence
+							-- #IF NOT ANYCLASSIC
+							29432,	-- Delegation Tracker HQT
+							-- #ENDIF
+						},
+						["qg"] = 52995,	-- Kalecgos
+						["providers"] = {
+							{ "o", 209098 },	-- Circle of Thorns Portal
+						},
+						["coord"] = { 62.1, 23.1, MOUNT_HYJAL },
 						["groups"] = {
 							objective(1, {	-- Branch of Nordrassil
 								["provider"] = { "i", 69646 },	-- Branch of Nordrassil
@@ -206,8 +208,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29239, {	-- Nordrassil's Bough
-						["qg"] = 53009,	-- Kalecgos
 						["sourceQuest"] = 29234,	-- Delegation
+						["qg"] = 53009,	-- Kalecgos
 						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
 						["groups"] = {
 							i(71084, {	-- Branch of Nordrassil
@@ -216,13 +218,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29240, {	-- Emergency Extraction
-						["qg"] = 53009,	-- Kalecgos
 						["sourceQuest"] = 29239,	-- Nordrassil's Bough
+						["qg"] = 53009,	-- Kalecgos
 						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
 					}),
 					q(29269, {	-- At One
-						["qg"] = 53149,	-- Kalecgos
 						["sourceQuest"] = 29240,	-- Emergency Extraction
+						["qg"] = 53149,	-- Kalecgos
 						["coord"] = { 31, 24, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Bonded with Tarecgosa's Essence
@@ -234,8 +236,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29270, {	-- Time Grows Short
-						["qg"] = 53210,	-- Kalecgos
 						["sourceQuest"] = 29269,	-- At One
+						["qg"] = 53210,	-- Kalecgos
 						["coord"] = { 31, 24, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/1000 Seething Cinder
@@ -244,8 +246,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29285, {	-- Alignment
-						["qg"] = 53215,	-- Kalecgos
 						["sourceQuest"] = 29270,	-- Time Grows Short
+						["qg"] = 53215,	-- Kalecgos
 						["coord"] = { 23, 30.8, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Witnessed Kalecgos's Ascension
@@ -309,6 +311,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 							ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
 								["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 							}),
 						},
 					},
@@ -396,10 +399,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(69976),	-- Pattern: Boots of the Black Flame
-				i(69966),	-- Pattern: Don Tayo's Inferno Mittens
-				i(69975),	-- Pattern: Endless Dream  Walkers
-				i(69965),	-- Pattern: Grips of Altered Reality
+				i(69976),	-- Pattern: Boots of the Black Flame (RECIPE!)
+				i(69966),	-- Pattern: Don Tayo's Inferno Mittens (RECIPE!)
+				i(69975),	-- Pattern: Endless Dream Walkers (RECIPE!)
+				i(69965),	-- Pattern: Grips of Altered Reality (RECIPE!)
 				i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
 				i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
 				i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)
@@ -630,7 +633,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71782),	-- Shatterskull Bonecrusher
 							i(71775),	-- Smoldering Censer of Purity
 							i(71780),	-- Zoid's Firelit Greatsword
-							ig(69237),	-- Living Ember
+							ig(69237, {	-- Living Ember
+								["description"] = "Drops commonly from Firelands bosses.",
+							}),
 						},
 					}),
 					e(192, {	-- Beth'tilac

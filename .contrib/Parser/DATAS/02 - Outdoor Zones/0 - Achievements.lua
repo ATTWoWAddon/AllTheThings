@@ -55,12 +55,12 @@ root(ROOTS.Zones, {
 		ach(32, {		-- 2000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(978, {		-- 3000 Quests Completed
+		applyclassicphase(WRATH_PHASE_ONE, ach(978, {		-- 3000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
-			["g"] = {
+			["groups"] = {
 				title(42),		-- <Name> the Seeker
 			},
-		}),
+		})),
 		ach(11126, {	-- 50 World Quests Completed
 			["timeline"] = { ADDED_7_0_3 },
 		}),
@@ -269,7 +269,7 @@ root(ROOTS.Zones, {
 		})),
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			["timeline"] = { ADDED_8_0_1 },
-			["g"] = {
+			["groups"] = {
 				i(163634),		-- Dreadtick Leecher (PET!)
 				crit(41273),		-- Shadowback Crawler
 				crit(41274),		-- River Frog
@@ -326,6 +326,9 @@ root(ROOTS.Zones, {
 					13275,	-- Magician's Secrets
 					13278,	-- Not Quite Dead Yet
 				}},
+				["groups"] = {
+					i(165907),	-- Wicker Wraith (PET!)
+				},
 			})),
 			petbattle(ach(13270, {	-- Beast Mode
 				crit(43620, {	-- Burly
@@ -1156,11 +1159,6 @@ root(ROOTS.Zones, {
 			crit(27864, { ["races"] = ALLIANCE_ONLY }),	-- Stormwind City
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
-			-- #if BEFORE WRATH
-			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
-			-- #else
 			["maps"] = {
 				NAGRAND,
 				-- #if AFTER CATA
@@ -1170,6 +1168,7 @@ root(ROOTS.Zones, {
 				-- #endif
 				SHOLAZAR_BASIN,
 			},
+			-- #if AFTER WRATH
 			["sym"] = {{"meta_achievement",
 				939,	-- Hills Like White Elekk
 				938,	-- The Snows of Northrend
@@ -1202,6 +1201,7 @@ root(ROOTS.Zones, {
 			["races"] = ALLIANCE_ONLY,
 			-- #endif
 		})),
+		-- #if BEFORE 5.0.4
 		applyclassicphase(CATA_PHASE_ONE, ach(4983, {	-- Loremaster of Cataclysm (H)
 			["sym"] = {{"meta_achievement",
 				4870,	-- Coming Down the Mountain
@@ -1213,6 +1213,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 		})),
+		-- #endif
 		ach(13512, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }, }, {	-- Master Calligrapher
 			crit(44853, {	-- Master of Calligraphy - Circle
 				["_quests"] = {
@@ -1256,7 +1257,7 @@ root(ROOTS.Zones, {
 				}),
 			},
 		}))),
-		ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control
+		applyclassicphase(WRATH_PHASE_ONE, ach(2556, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Pest Control
 			crit(9364),	-- Larva (Naxxramas, Ghostlands)
 			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
 			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
@@ -1275,122 +1276,7 @@ root(ROOTS.Zones, {
 			crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
 			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
-		})),
-		petbattle(ach(6607, {	-- Taming Azeroth
-			["sym"] = {{"meta_achievement",
-				6604,	-- Taming Outland
-				6605,	-- Taming Northrend
-				7525,	-- Taming Cataclysm
-				6606,	-- Taming Pandaria
-				6603,	-- Taming Eastern Kingdoms (A)
-				6602,	-- Taming Kalimdor (H)
-			}},
-			["timeline"] = { ADDED_5_0_4 },
-			["groups"] = {
-				title(207),	-- Tamer
-			},
-		})),
-		petbattle(ach(7525, {	-- Taming Cataclysm
-			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
-				crit(21858),	-- Brok [Mount Hyjal)
-				crit(21859),	-- Bordin Steadyfist [Deepholm)
-				crit(21860),	-- Goz Banefury [Twilight Highlands)
-				crit(21861),	-- Obalis [Uldum)
-			},
-		})),
-		petbattle(ach(6601, {	-- Taming the Wild [1)
-			["timeline"] = { ADDED_5_0_4 },
-		})),
-		petbattle(ach(7498, {	-- Taming the Great Outdoors [15)
-			["timeline"] = { ADDED_5_0_4 },
-		})),
-		petbattle(ach(7499, {	-- Taming the World (40)
-			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
-				i(92738),	-- Safari Hat (TOY!)
-			},
-		})),
-		petbattle(ach(13695, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Team Aquashock
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				13694,	-- Nazjatari Safari
-				13693,	-- Mecha-Safari
-				13626,	-- Nautical Nuisances of Nazjatar
-				13625,	-- Mighty Minions of Mechagon
-			}},
-			["g"] = {
-				i(169349),	-- Kelpfin (PET!)
-			},
 		}))),
-		ach(1182, {	-- The Bread Winner
-			["timeline"] = { ADDED_3_0_2 },
-		}),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { FACTION_KURENAI, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
-			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- <Name> the Diplomat
-			}),
-		})),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { FACTION_THE_MAGHAR, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
-			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
-			["races"] = HORDE_ONLY,
-			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- <Name> the Diplomat
-			}),
-		})),
-		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
-			["maps"] = { NAGRAND, ZULDRAK, TWILIGHT_HIGHLANDS },
-			["groups"] = {
-				crit(5798, {	-- Ring of Blood in Nagrand
-					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
-				}),
-				crit(5799, {	-- Amphitheater of Anguish in Zul'Drak
-					["_quests"] = { 12948 },	-- The Champion of Anguish
-				}),
-				crit(13918, {	-- Crucible of Carnage in Twilight Highlands
-					["_quests"] = { 27868 },	-- The Crucible of Carnage: The Twilight Terror!
-				}),
-			},
-		})),
-		ach(5794, {	-- Time Flies When You're Having Fun
-			["timeline"] = { ADDED_4_2_0 },
-		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
-			["sym"] = {{"meta_achievement",
-				1678,	-- Loremaster of Kalimdor (A)
-				1676,	-- Loremaster of Eastern Kingdoms (A)
-				1262,	-- Loremaster of Outland (A)
-				41,		-- Loremaster of Northrend (A)
-				-- #if AFTER CATA
-				4875,	-- Loremaster of Cataclysm (A)
-				-- #endif
-			}},
-			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				title(93),	-- Loremaster <Name>
-				i(43300),	-- Loremaster's Colors
-			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1682, {	-- The Loremaster (H)
-			["sym"] = {{"meta_achievement",
-				1680,	-- Loremaster of Kalimdor (H)
-				1677,	-- Loremaster of Eastern Kingdoms (H)
-				1274,	-- Loremaster of Outland (H)
-				1360,	-- Loremaster of Northrend (H)
-				-- #if AFTER CATA
-				4983,	-- Loremaster of Cataclysm (H)
-				-- #endif
-			}},
-			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-			["races"] = HORDE_ONLY,
-			["groups"] = {
-				title(93),	-- Loremaster <Name>
-				i(43300),	-- Loremaster's Colors
-			},
-		})),
 		ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire
 			-- #IF AFTER MOP
 			["description"] = "Achievement can be completed in Dragon Soul.",
@@ -1455,6 +1341,120 @@ root(ROOTS.Zones, {
 				-- ["coord"] = { X, Y, MAP },
 			}),
 		})),
+
+		petbattle(ach(6607, {	-- Taming Azeroth
+			["sym"] = {{"meta_achievement",
+				6604,	-- Taming Outland
+				6605,	-- Taming Northrend
+				7525,	-- Taming Cataclysm
+				6606,	-- Taming Pandaria
+				6603,	-- Taming Eastern Kingdoms (A)
+				6602,	-- Taming Kalimdor (H)
+			}},
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = {
+				title(207),	-- Tamer
+			},
+		})),
+		petbattle(ach(7525, {	-- Taming Cataclysm
+			["timeline"] = { ADDED_5_0_4 },
+		})),
+		petbattle(ach(6601, {	-- Taming the Wild [1)
+			["timeline"] = { ADDED_5_0_4 },
+			["_noautomation"] = true,		-- Taming the World does this already
+		})),
+		petbattle(ach(7498, {	-- Taming the Great Outdoors [15)
+			["timeline"] = { ADDED_5_0_4 },
+			["_noautomation"] = true,		-- Taming the World does this already
+		})),
+		petbattle(ach(7499, {	-- Taming the World (40)
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = {
+				i(92738),	-- Safari Hat (TOY!)
+			},
+		})),
+		petbattle(ach(13695, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Team Aquashock
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				13694,	-- Nazjatari Safari
+				13693,	-- Mecha-Safari
+				13626,	-- Nautical Nuisances of Nazjatar
+				13625,	-- Mighty Minions of Mechagon
+			}},
+			["groups"] = {
+				i(169349),	-- Kelpfin (PET!)
+			},
+		}))),
+		ach(1182, {	-- The Bread Winner
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { FACTION_KURENAI, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
+			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				title(48),	-- <Name> the Diplomat
+			}),
+		})),
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { FACTION_THE_MAGHAR, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
+			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
+			["races"] = HORDE_ONLY,
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				title(48),	-- <Name> the Diplomat
+			}),
+		})),
+		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+			["maps"] = { NAGRAND, ZULDRAK, TWILIGHT_HIGHLANDS },
+			["groups"] = {
+				crit(5798, {	-- Ring of Blood in Nagrand
+					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
+				}),
+				crit(5799, {	-- Amphitheater of Anguish in Zul'Drak
+					["_quests"] = { 12948 },	-- The Champion of Anguish
+				}),
+				crit(13918, {	-- Crucible of Carnage in Twilight Highlands
+					["_quests"] = { 27868 },	-- The Crucible of Carnage: The Twilight Terror!
+				}),
+			},
+		})),
+		ach(5794, {	-- Time Flies When You're Having Fun
+			["timeline"] = { ADDED_4_2_0 },
+		}),
+		-- #if BEFORE 5.0.4
+		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
+			["sym"] = {{"meta_achievement",
+				1678,	-- Loremaster of Kalimdor (A)
+				1676,	-- Loremaster of Eastern Kingdoms (A)
+				1262,	-- Loremaster of Outland (A)
+				41,		-- Loremaster of Northrend (A)
+				-- #if AFTER CATA
+				4875,	-- Loremaster of Cataclysm (A)
+				-- #endif
+			}},
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				title(93),	-- Loremaster <Name>
+				i(43300),	-- Loremaster's Colors
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1682, {	-- The Loremaster (H)
+			["sym"] = {{"meta_achievement",
+				1680,	-- Loremaster of Kalimdor (H)
+				1677,	-- Loremaster of Eastern Kingdoms (H)
+				1274,	-- Loremaster of Outland (H)
+				1360,	-- Loremaster of Northrend (H)
+				-- #if AFTER CATA
+				4983,	-- Loremaster of Cataclysm (H)
+				-- #endif
+			}},
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				title(93),	-- Loremaster <Name>
+				i(43300),	-- Loremaster's Colors
+			},
+		})),
+		-- #endif
 		ach(7520, {		-- The Loremaster
 			["sym"] = {{"meta_achievement",
 				1676,	-- Loremaster of Eastern Kingdoms
@@ -1463,12 +1463,20 @@ root(ROOTS.Zones, {
 				41,		-- Loremaster of Northrend
 				4875,	-- Loremaster of Cataclysm
 				6541,	-- Loremaster of Pandaria
+				-- #if AFTER WOD
 				9833,	-- Loremaster of Draenor (A)
 				9923,	-- Loremaster of Draenor (H)
+				-- #endif
+				-- #if AFTER LEGION
 				11157,	-- Loremaster of Legion
+				-- #endif
+				-- #if AFTER BFA
 				12593,	-- Loremaster of Kul Tiras (A)
 				13294,	-- Loremaster of Zandalar (H)
+				-- #endif
+				-- #if AFTER SL
 				14280,	-- Loremaster of Shadowlands
+				-- #endif
 			}},
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
@@ -1912,12 +1920,21 @@ root(ROOTS.Zones, {
 		})),
 		ach(13144, {	-- Wide World of Quests
 			["timeline"] = { ADDED_8_0_1 },
-			["g"] = {
-				crit(42566, {
-					["_quests"] = 50483,	-- Underlord Xerxiz
+			["groups"] = {
+				crit(42348, {
+					["_quests"] = 51433,	-- Matron Morana
 				}),
 				crit(42349, {
 					["_quests"] = 51431,	-- Soul Goliath
+				}),
+				crit(42350, {
+					["_quests"] = 51434,	-- Stone Golem
+				}),
+				crit(42566, {
+					["_quests"] = 50483,	-- Underlord Xerxiz
+				}),
+				crit(42561, {
+					["_quests"] = 50461,	-- Zujothgul
 				}),
 			},
 		}),
@@ -1931,7 +1948,7 @@ root(ROOTS.Zones, {
 				6589,	-- Pandaria Safari
 			}},
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				title(199),		-- Zookeeper <Name>
 			},
 		})),

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
 			o(446419, {	-- Concealed Contraband
@@ -14,11 +14,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 43.6, 39.8, AZJ_KAHET },
 				},
 				["questID"] = 83772,
+				["isWeekly"] = true,
 			}),
 			o(446097, {	-- Disturbed Soil
 				["coord"] = { 67.4, 90.7, AZJ_KAHET },
 				["questID"] = 82718,
-				["g"] = {
+				["groups"] = {
 					i(224816),	-- Nerubian Almanac
 				},
 			}),
@@ -27,7 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 62.7, 87.9, AZJ_KAHET_LOWER },
 				["questID"] = 82520,
 				["crs"] = { 223908 },	-- Corrupted Memory
-				["g"] = {
+				["groups"] = {
 					i(223870),	-- Cache Key
 					i(225544),	-- Mind Slurp (PET!)
 				},
@@ -45,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Above on a web, near the ceiling.",
 				["coord"] = { 49.5, 43.73, AZJ_KAHET },
 				["questID"] = 82529,
-				["g"] = {
+				["groups"] = {
 					i(221760),	-- Pillarnest Bonedrinker (PET!)
 				},
 			}),
@@ -88,7 +89,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82727,
 				-- INFO: This is the HQT that Blizzard currently has in the DB2 file, but it doesn't match what triggers when you loot it
 				-- ["questID"] = 82528,
-				["g"] = {
+				["groups"] = {
 					i(222966),	-- Spinner (PET!)
 				},
 			}),
@@ -99,9 +100,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 35.7, 39.2, AZJ_KAHET },
 					{ 50.1, 50.7, AZJ_KAHET },
 					{ 51.8, 29.9, AZJ_KAHET },
-				},
-				["g"] = {
-					i(220504),	-- Deep-Dweller's Orb of the Harmonious
 				},
 			}),
 			o(444797, {	-- Threadspun Cache
@@ -115,21 +113,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(446437, {	-- Crimson Thread
 				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 72.7, 39.7, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(223902),	-- Crimson Silk Scrap
 				},
 			}),
 			o(446438, {	-- Gold Thread
 				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 74.2, 37.7, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(223903),	-- Gold Silk Scrap
 				},
 			}),
 			o(446435, {	-- Violet Thread
 				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
 				["coord"] = { 74.8, 42.9, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(223901),	-- Violet Silk Scrap
 				},
 			}),
@@ -142,7 +140,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{"i", 223903, 1},	-- Gold Silk Scrap
 					{"i", 223901, 1},	-- Violet Silk Scrap
 				},
-				["g"] = {
+				["groups"] = {
 					i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				},
 			}),
@@ -244,4 +242,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

@@ -49,17 +49,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
-					["provider"] = { "i", 16790 },	-- Damp Note
-					["sourceQuest"] = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 					["description"] = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
+					["sourceQuest"] = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
+					["provider"] = { "i", 16790 },	-- Damp Note
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["cr"] = 4802,	-- Blackfathom Tide Priestess
 					["lvl"] = 17,
 				}),
 				q(6565, {	-- Allegiance to the Old Gods (2/2)
-					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods (1/2)
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -139,8 +139,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(22, 22, 10),
 				}),
 				q(1200, {	-- Blackfathom Villainy (A)
-					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["sourceQuest"] = 1198,	-- In Search of Thaelrid
+					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -159,8 +159,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26882, {	-- Blackfathom Villainy (A) [CATA]
-					["qg"] = 4787,	-- Scout Thaelrid
 					["sourceQuest"] = 26881,	-- In Search of Thaelrid
+					["qg"] = 4787,	-- Scout Thaelrid
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -214,13 +214,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1198, {	-- In Search of Thaelrid
-					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
-					["coord"] = { 28.7, 52.1, DARNASSUS },
 					-- #if AFTER TBC
 					["races"] = ALLIANCE_ONLY,
 					-- #else
 					["description"] = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 					-- #endif
+					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
+					["coord"] = { 28.7, 52.1, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
@@ -233,8 +233,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 				}),
 				q(971, {	-- Knowledge in the Deeps
-					["qg"] = 2786,	-- Gerrig Bonegrip
 					["sourceQuest"] = 968,	-- The Powers Below
+					["qg"] = 2786,	-- Gerrig Bonegrip
 					["coord"] = { 50.8, 5.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -299,8 +299,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1275, {	-- Researching the Corruption
-					["qg"] = 8997,	-- Gershala Nightwhisper
 					["sourceQuest"] = 3765,	-- The Corruption Abroad
+					["qg"] = 8997,	-- Gershala Nightwhisper
 					["coord"] = { 38.3, 43.0, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -382,8 +382,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6563, {	-- The Essence of Aku'Mai [Pre-CATA]
-					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -488,8 +488,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(56699, {	-- Aluwyn's Legguards
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
+						i(7000, {	-- Heartwood Girdle
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
+						i(6998, {	-- Nimbus Boots
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
 					},
 				}),
+			}),
+			n(TREASURES, {
+				o(19018),	-- Giant Clam
 			}),
 			n(4887, {	-- Ghamoo-ra
 				["timeline"] = { REMOVED_6_0_2 },
@@ -569,9 +578,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
-					ach(632, {	-- Blackfathom Deeps
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					ach(632),	-- Blackfathom Deeps
 					ach(5041, {	-- Blackfathom Deeps Guild Run
 						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
@@ -727,9 +734,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79099, {	-- Baron Aquanis (A)
+							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
 							["qg"] = 214876,	-- Davius Voidstar
 							["coord"] = { 36.8, 43.6, DARKSHORE },
-							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
@@ -801,8 +808,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(78926, {	-- Researching the Corruption
-							["qg"] = 8997,	-- Gershala Nightwhisper
 							["sourceQuest"] = 3765,	-- The Corruption Abroad
+							["qg"] = 8997,	-- Gershala Nightwhisper
 							["coord"] = { 38.3, 43.0, DARKSHORE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 25,
@@ -898,7 +905,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(PROFESSIONS, {
 						n(212159, {	-- Old Serra'kis <The Devoured>
 							["sourceQuest"] = 78907,	-- Speak to the Dead
-							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 							["groups"] = {
 								i(211419),	-- Handful of Shifting Scales
 							},
@@ -907,7 +914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
 							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
 							["timeline"] = { REMOVED_2_0_1 },
-							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 							["groups"] = {
 								i(211421),	-- The Box
 							},

@@ -12,22 +12,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236814,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(780),	-- Explore Redridge Mountains
+				ach(780),	-- Explore Redridge Mountains
 				ach(4902, {	-- Redridge Mountain Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38367, {	-- The Gnoll Offensive
-							["sourceQuest"] = 26545,	-- Yowler Must Die!
-						}),
-						crit(38368, {	-- Keeshan's Raiders
-							["sourceQuest"] = 26607,	-- They Drew First Blood
-						}),
-						crit(38369, {	-- First Blood
-							["sourceQuest"] = 26726,	-- Triumphant Return
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26545,	-- Yowler Must Die!
@@ -83,7 +73,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge
 					["cr"] = 43371,	-- Arlen Marsters <Gryphon Master>
-					["coord"] = { 52.8, 54.6, REDRIDGE_MOUNTAINS },
+					["coord"] = { 52.9, 54.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -100,11 +90,55 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(596, {	-- Shalewind Canyon, Redridge
 					["cr"] = 43072,	-- Nora Baldwin <Gryphon Master>
-					["coord"] = { 77.8, 65.8, REDRIDGE_MOUNTAINS },
+					["coord"] = { 77.9, 65.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65651, {	-- Lindsay <Master Pet Tamer>
+					["coord"] = { 33.3, 52.6, REDRIDGE_MOUNTAINS },
+					["description"] = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 5,
+					["groups"] = {
+						q(31781, {	-- Lindsay
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31726, {	-- Eric Davidson
+					["sourceQuest"] = 31725,	-- Lindsay
+					["qg"] = 65651,	-- Lindsay
+					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Eric Davidson
+							["provider"] = { "n", 65655 },	-- Eric Davidson
+							["coord"] = { 19.8, 44.8, DUSKWOOD },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
+			-- #if BEFORE CATA
+			n(PROFESSIONS, {
+				prof(SKINNING, {
+					i(7286, {	-- Black Whelp Scale
+						["crs"] = {
+							441,	-- Black Dragon Whelp
+							14272,	-- Snarlflare
+						},
+					}),
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood
@@ -123,8 +157,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(129, {	-- A Free Lunch
 					["providers"] = {
-						{ "n", 379 },	-- Darcy
-						{ "i", 5534 },	-- Parker's Lunch
+						{ "n",  379 },	-- Darcy
+						{ "i", 5534 },	-- Parker's Lunch (PQI!)
 					},
 					["coord"] = { 26.7, 44.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -133,8 +167,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(94, {	-- A Watchful Eye
 					["providers"] = {
-						{ "n", 313 },	-- Theocritus
-						{ "i", 1083 },	-- Glyph of Azora
+						{ "n",  313 },	-- Theocritus
+						{ "i", 1083 },	-- Glyph of Azora (PQI!)
 					},
 					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -142,8 +176,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-					["qg"] = 43733,	-- Colonel Troteman
 					["sourceQuest"] = 26694,	-- The Grand Magus Doane
+					["qg"] = 43733,	-- Colonel Troteman
 					["coord"] = { 77.2, 65.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -175,11 +209,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2282, {	-- Alther's Mill
+					["sourceQuest"] = 2281,	-- Redridge Rendezvous
 					["providers"] = {
 						{ "n", 6966 },	-- Lucius
-						{ "i", 5060 },	-- Thieves' Tools
+						{ "i", 5060 },	-- Thieves' Tools (PQI!)
 					},
-					["sourceQuest"] = 2281,	-- Redridge Rendezvous
 					["coord"] = { 28.2, 52.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -187,7 +221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Token of Thievery
-							["provider"] = { "i", 7871 },	-- Token of Thievery
+							["provider"] = { "i", 7871 },	-- Token of Thievery (QI!)
 							["coord"] = { 52.0, 44.8, REDRIDGE_MOUNTAINS },
 						}),
 						i(7907, {	-- Certificate of Thievery
@@ -204,7 +238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bellygrub's Tusk
-							["provider"] = { "i", 3631 },	-- Bellygrub's Tusk
+							["provider"] = { "i", 3631 },	-- Bellygrub's Tusk (QI!)
 							["coord"] = { 16.6, 49.8, REDRIDGE_MOUNTAINS },
 							["cr"] = 345,	-- Bellygrub
 						}),
@@ -218,36 +252,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bellygrub's Tusk
-							["provider"] = { "i", 3631 },	-- Bellygrub's Tusk
-							["coord"] = { 17.4, 45, REDRIDGE_MOUNTAINS },
+							["provider"] = { "i", 3631 },	-- Bellygrub's Tusk (QI!)
+							["coord"] = { 17.2, 45.1, REDRIDGE_MOUNTAINS },
 							["cr"] = 345,	-- Bellygrub
 						}),
 						i(2562),	-- Bouquet of Scarlet Begonias
 					},
 				}),
 				q(26562, {	-- And Last But Not Least... Danforth
-					["qg"] = 43303,	-- Krakauer
 					["sourceQuest"] = 26561,	-- Krakauer
+					["qg"] = 43303,	-- Krakauer (mobileNPC)
 					["coord"] = { 25.9, 10.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Overlord Barbarius slain
 							["provider"] = { "n", 43369 },	-- Overlord Barbarius
-							["coord"] = { 28.6, 17.8, REDRIDGE_MOUNTAINS },
+							["coord"] = { 27.6, 18.3, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Blackrock Lever Key
 							["providers"] = {
-								{ "i", 59033 },	-- Blackrock Lever Key
+								{ "i",  59033 },	-- Blackrock Lever Key (QI!)
 								{ "o", 204403 },	-- Chain Lever
 							},
-							["coord"] = { 27.8, 17.9, REDRIDGE_MOUNTAINS },
+							["coord"] = { 27.8, 18.0, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(246, {	-- Assessing the Threat
-					["qg"] = 1070,	-- Deputy Feldon
 					["sourceQuest"] = 244,	-- Encroaching Gnolls
+					["qg"] = 1070,	-- Deputy Feldon
 					["coord"] = { 30.8, 60, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -281,7 +315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/10 Battleworn Axe
-							["provider"] = { "i", 3014 },	-- Battleworn Axe
+							["provider"] = { "i", 3014 },	-- Battleworn Axe (QI!)
 							["crs"] = {
 								435,	-- Blackrock Champion
 								4464,	-- Blackrock Gladiator
@@ -299,22 +333,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26636, {	-- Bravo Company Field Kit: Camouflage
-					["qg"] = 43461,	-- Krakauer
 					["sourceQuest"] = 26616,	-- It's Never Over
+					["qg"] = 43461,	-- Krakauer
 					["coord"] = { 52.4, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Pile of Leaves
 							["providers"] = {
-								{ "i",  59152 },	-- Pile of Leaves
+								{ "i",  59152 },	-- Pile of Leaves (QI!)
 								{ "o", 204424 },	-- Pile of Leaves
 							},
 							["coord"] = { 48.5, 64.5, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/5 Fox Poop
 							["providers"] = {
-								{ "i",  59153 },	-- Fox Poop
+								{ "i",  59153 },	-- Fox Poop (QI!)
 								{ "o", 204425 },	-- Fox Poop
 							},
 							["coord"] = { 47.9, 67.8, REDRIDGE_MOUNTAINS },
@@ -322,14 +356,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26637, {	-- Bravo Company Field Kit: Chloroform
-					["qg"] = 43459,	-- Messner
 					["sourceQuest"] = 26616,	-- It's Never Over
+					["qg"] = 43459,	-- Messner
 					["coord"] = { 52.4, 55.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Muckdweller Gland
-							["provider"] = { "i", 59156 },	-- Muckdweller Gland
+							["provider"] = { "i", 59156 },	-- Muckdweller Gland (QI!)
 							["coord"] = { 42.0, 51.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 43532,	-- Muckdweller
 						}),
@@ -348,30 +382,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26587, {	-- Breaking Out is Hard to Do
-					["qg"] = 43270,	-- Messner
 					["sourceQuest"] = 26586,	-- In Search of Bravo Company
-					["coord"] = { 47.5, 41.8, REDRIDGE_MOUNTAINS },
+					["qg"] = 43270,	-- Messner
+					["coord"] = { 47.5, 41.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Messner's Cage Key
 							["providers"] = {
-								{ "i", 58950 },	-- Messner's Cage Key
+								{ "i",  58950 },	-- Messner's Cage Key (QI!)
 								{ "o", 204389 },	-- Blackrock Key Pouch
 							},
-							["coord"] = { 49.5, 38.2, REDRIDGE_MOUNTAINS },
+							["coord"] = { 49.2, 38.0, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26514, {	-- Canyon Romp
-					["qg"] = 344,	-- Magistrate Solomon
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
-					["coord"] = { 32.3, 39.5, REDRIDGE_MOUNTAINS },
+					["qg"] = 344,	-- Magistrate Solomon
+					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Redridge Gnoll Collar
-							["provider"] = { "i", 58897 },	-- Redridge Gnoll Collar
+							["provider"] = { "i", 58897 },	-- Redridge Gnoll Collar (QI!)
 							["coord"] = { 27.6, 31.4, REDRIDGE_MOUNTAINS },
 							["crs"] = {
 								430,	-- Redridge Mystic
@@ -383,24 +418,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
-					["qg"] = 43733,	-- Colonel Troteman
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
 					["sourceQuest"] = 26713,	-- Showdown at Stonewatch
+					["qg"] = 43733,	-- Colonel Troteman
 					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Darkblaze defeated
 							["provider"] = { "n", 43496 },	-- Darkblaze
-							["coord"] = { 58.2, 55.6, REDRIDGE_MOUNTAINS },
+							["coord"] = { 58.6, 55.5, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(131, {	-- Delivering Daffodils
-					["providers"] = {
-						{ "n", 342 },	-- Martie Jainrose
-						{ "i", 1325 },	-- Daffodil Bouquet
-					},
 					["sourceQuest"] = 130,	-- Visit the Herbalist
+					["providers"] = {
+						{ "n",  342 },	-- Martie Jainrose
+						{ "i", 1325 },	-- Daffodil Bouquet (PQI!)
+					},
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -410,9 +446,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26668, {	-- Detonation
-					["qg"] = 43611,	-- John J. Keeshan
 					["sourceQuest"] = 26651,	-- To Win a War, You Gotta Become War
-					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
+					["qg"] = 43611,	-- John J. Keeshan
+					["coord"] = { 77.7, 65.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -477,17 +513,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Tarantula Eyes
-							["provider"] = { "i", 58891 },	-- Tarantula Eyes
+							["provider"] = { "i", 58891 },	-- Tarantula Eyes (QI!)
 							["coord"] = { 14.6, 67.6, REDRIDGE_MOUNTAINS },
 							["cr"] = 442,	-- Tarantula
 						}),
 						objective(2, {	-- 0/4 Condor Giblets
-							["provider"] = { "i", 58892 },	-- Condor Giblets
+							["provider"] = { "i", 58892 },	-- Condor Giblets (QI!)
 							["coord"] = { 19.8, 66.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 428,	-- Dire Condor
 						}),
 						objective(3, {	-- 0/4 Goretusk Kidney
-							["provider"] = { "i", 58893 },	-- Goretusk Kidney
+							["provider"] = { "i", 58893 },	-- Goretusk Kidney (QI!)
 							["coord"] = { 23.0, 61.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 547,	-- Great Goretusk
 						}),
@@ -495,21 +531,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26519, {	-- He Who Controls the Ettins
 					["description"] = "Once obtained, the Quest has to be completed. It can't be abandoned.",
-					["provider"] = { "i", 58898 },	-- Dirt-Stained Scroll
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
+					["provider"] = { "i", 58898 },	-- Dirt-Stained Scroll (QS!)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						445,	-- Redridge Alpha
+						446,	-- Redridge Basher
+						580,	-- Redridge Drudger
+						430,	-- Redridge Mystic
+					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Ardo Dirtpaw slain
 							["provider"] = { "n", 711 },	-- Ardo Dirtpaw
-							["coord"] = { 18.2, 18.2, REDRIDGE_MOUNTAINS },
+							["coord"] = { 17.9, 18.6, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26365, {	-- Hero's Call: Redridge Mountains! (From NPCs)
+					-- #IF BEFORE 11.0.5
+					-- [Unsure prior to this]
+					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+					-- #ENDIF
 					["qgs"] = {
 						-- #if AFTER LEGION
-						107574,	-- Anduin Wrynn
+						107574,	-- Anduin Wrynn <King of Stormwind>
 						-- #else
 						29611,	-- King Varian Wrynn <King of Stormwind>
 						-- #endif
@@ -517,21 +563,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						821,	-- Captain Danuvin
 					},
 					["coords"] = {
-						-- #if AFTER 7.0.3
-						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
-						-- #else
-						{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+						-- #if AFTER LEGION
+						{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn / Anduin Wrynn <King of Stormwind>
 						-- #endif
-						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
-						{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
+						{ 85.9, 32.8, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+						{ 56.5, 47.6, WESTFALL },	-- Captain Danuvin
+						{ 56.4, 49.5, WESTFALL },	-- Captain Danuvin (after The Rise of the Brotherhood)
 					},
-					-- #IF BEFORE 11.0.5
-					-- [Unsure prior to this]
-					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
-					-- #ENDIF
 					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(14, 14, 11),
 					["groups"] = {
 						i(60689, {	-- Belt of Unsolvable Problems
@@ -586,7 +627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Hilary's Necklace
 							["providers"] = {
-								{ "i",  10958 },	-- Hilary's Necklace
+								{ "i",  10958 },	-- Hilary's Necklace (QI!)
 								{ "o", 154357 },	-- Glinting Mud
 							},
 							["coords"] = {
@@ -598,25 +639,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26573, {	-- His Heart Must Be In It
-					["qg"] = 43221,	-- Colonel Troteman
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26571,	-- Weapons of War
-					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
+					["qg"] = 43221,	-- Colonel Troteman
+					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Keeshan's Red Headband
 							["providers"] = {
-								{ "i", 58956 },	-- Keeshan's Red Headband
+								{ "i",  58956 },	-- Keeshan's Red Headband (QI!)
 								{ "o", 204388 },	-- Blackrock Coffer
 							},
-							["coord"] = { 26.4, 10.4, REDRIDGE_MOUNTAINS },
+							["coord"] = { 26.6, 10.5, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Keeshan's Jade Amulet
 							["providers"] = {
-								{ "i", 58957 },	-- Keeshan's Jade Amulet
+								{ "i",  58957 },	-- Keeshan's Jade Amulet (QI!)
 								{ "o", 204388 },	-- Blackrock Coffer
 							},
-							["coord"] = { 26.4, 10.4, REDRIDGE_MOUNTAINS },
+							["coord"] = { 26.6, 10.5, REDRIDGE_MOUNTAINS },
 						}),
 						i(131557, {	-- Hauberk of the Changing Heart
 							["timeline"] = { ADDED_7_0_3 },
@@ -638,7 +680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Horns of Nez'ra
-							["provider"] = { "i", 7906 },	-- Horns of Nez'ra
+							["provider"] = { "i", 7906 },	-- Horns of Nez'ra (QI!)
 							["coord"] = { 41.0, 38.8, REDRIDGE_MOUNTAINS },
 							["crs"] = {
 								485,	-- Blackrock Outrunner
@@ -659,7 +701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Yowler's Paw
-							["provider"] = { "i", 3614 },	-- Yowler's Paw
+							["provider"] = { "i", 3614 },	-- Yowler's Paw (QI!)
 							["coord"] = { 28.8, 23.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 518,	-- Yowler
 						}),
@@ -672,8 +714,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26638, {	-- Hunting the Hunters
-					["qg"] = 43462,	-- Danforth
 					["sourceQuest"] = 26616,	-- It's Never Over
+					["qg"] = 43462,	-- Danforth
 					["coord"] = { 52.5, 55.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -685,62 +727,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26586, {	-- In Search of Bravo Company
-					["qg"] = 43221,	-- Colonel Troteman
 					["sourceQuest"] = 26568,	-- This Ain't My War
-					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
+					["qg"] = 43221,	-- Colonel Troteman
+					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26616, {	-- It's Never Over
-					["qg"] = 43184,	-- John J. Keeshan
 					["sourceQuest"] = 26607,	-- They Drew First Blood
+					["qg"] = 43184,	-- John J. Keeshan
 					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Keeshan's Riverboat Ride Complete
 							["provider"] = { "n", 43443 },	-- Keeshan's Riverboat
-							["coord"] = { 34.2, 45.6, REDRIDGE_MOUNTAINS },
+							["coord"] = { 34.3, 45.7, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26567, {	-- John J. Keeshan
-					["qg"] = 43221,	-- Colonel Troteman
 					["sourceQuest"] = 26545,	-- Yowler Must Die!
-					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
+					["qg"] = 43221,	-- Colonel Troteman
+					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26560, {	-- Jorgensen
-					["qg"] = 43300,	-- Messner
 					["sourceQuest"] = 26587,	-- Breaking Out is Hard to Do
-					["coord"] = { 47.5, 41.6, REDRIDGE_MOUNTAINS },
+					["qg"] = 43300,	-- Messner (mobileNPC)
+					["coord"] = { 47.5, 41.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Jorgensen's Cage Key
-							["provider"] = { "i", 58969 },	-- Jorgensen's Cage Key
+							["provider"] = { "i", 58969 },	-- Jorgensen's Cage Key (QI!)
 							["coord"] = { 43.6, 10.8, REDRIDGE_MOUNTAINS },
 							["cr"] = 43350,	-- Utroka the Keymistress
 						}),
 					},
 				}),
 				q(26561, {	-- Krakauer
-					["qg"] = 43305,	-- Jorgensen
 					["sourceQuest"] = 26560,	-- Jorgensen
+					["qg"] = 43305,	-- Jorgensen (mobileNPC)
 					["coord"] = { 33.5, 11.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ritualist Tarak slain
 							["provider"] = { "n", 43363 },	-- Ritualist Tarak
-							["coord"] = { 26.6, 10.6, REDRIDGE_MOUNTAINS },
+							["coord"] = { 26.1, 10.5, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26511, {	-- Lake Everstill Clean Up
 					["qg"] = 900,	-- Bailiff Conacher
-					["coord"] = { 28.6, 40.9, REDRIDGE_MOUNTAINS },
+					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -776,15 +818,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26513, {	-- Like a Fart in the Wind
-					["qg"] = 382,	-- Marshal Marris
 					["sourceQuest"] = 26510,	-- We Must Prepare!
+					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 31.8, 44.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Redridge Supply Crate
 							["providers"] = {
-								{ "i", 58896 },	-- Redridge Supply Crate
+								{ "i",  58896 },	-- Redridge Supply Crate (QI!)
 								{ "o", 204352 },	-- Redridge Supply Crate
 							},
 							["coord"] = { 22.7, 36.5, REDRIDGE_MOUNTAINS },
@@ -810,34 +852,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(248, {	-- Looking Further
-					["providers"] = {
-						{ "o", 31 },	-- Old Lion Statue
-						{ "i", 1083 },	-- Glyph of Azora
-						{ "o", 76 },	-- An Empty Jar
-					},
 					["sourceQuest"] = 94,	-- A Watchful Eye
+					["providers"] = {
+						{ "o",   31 },	-- Old Lion Statue
+						{ "i", 1083 },	-- Glyph of Azora (QI!)
+						{ "o",   76 },	-- An Empty Jar
+					},
 					["coord"] = { 84.3, 46.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(145, {	-- Messenger to Darkshire (1/2)
-					["providers"] = {
-						{ "n", 344 },	-- Magistrate Solomon
-						{ "i", 1409 },	-- Solomon's Plea to Darkshire
-					},
 					["sourceQuest"] = 144,	-- Messenger to Westfall (2/2)
+					["providers"] = {
+						{ "n",  344 },	-- Magistrate Solomon
+						{ "i", 1409 },	-- Solomon's Plea to Darkshire (PQI!)
+					},
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
 				q(146, {	-- Messenger to Darkshire (2/2)
-					["providers"] = {
-						{ "n", 263 },	-- Lord Ello Ebonlocke
-						{ "i", 1410 },	-- Ebonlocke's Response to Solomon
-					},
 					["sourceQuest"] = 145,	-- Messenger to Darkshire (1/2)
+					["providers"] = {
+						{ "n",  263 },	-- Lord Ello Ebonlocke
+						{ "i", 1410 },	-- Ebonlocke's Response to Solomon (PQI!)
+					},
 					["coord"] = { 72.0, 46.6, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -845,8 +887,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(120, {	-- Messenger to Stormwind (1/2)
 					["providers"] = {
-						{ "n", 344 },	-- Magistrate Solomon
-						{ "i", 1293 },	-- The State of Lakeshire
+						{ "n",  344 },	-- Magistrate Solomon
+						{ "i", 1293 },	-- The State of Lakeshire (PQI!)
 					},
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -854,33 +896,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 14,
 				}),
 				q(121, {	-- Messenger to Stormwind (2/2)
-					["providers"] = {
-						{ "n", 466 },	-- General Marcus Jonathan
-						{ "i", 1294 },	-- The General's Response
-					},
 					["sourceQuest"] = 120,	-- Messenger to Stormwind (1/2)
+					["providers"] = {
+						{ "n",  466 },	-- General Marcus Jonathan
+						{ "i", 1294 },	-- The General's Response (PQI!)
+					},
 					["coord"] = { 63.8, 75.4, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(143, {	-- Messenger to Westfall (1/2)
-					["providers"] = {
-						{ "n", 344 },	-- Magistrate Solomon
-						{ "i", 1407 },	-- Solomon's Plea to Westfall
-					},
 					["sourceQuest"] = 121,	-- Messenger to Stormwind (2/2)
+					["providers"] = {
+						{ "n",  344 },	-- Magistrate Solomon
+						{ "i", 1407 },	-- Solomon's Plea to Westfall (PQI!)
+					},
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(144, {	-- Messenger to Westfall (2/2)
+					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
 					["providers"] = {
 						{ "n", 234 },	-- Gryan Stoutmantle
-						{ "i", 1408 },	-- Stoutmantle's Response to Solomon
+						{ "i", 1408 },	-- Stoutmantle's Response to Solomon (PQI!)
 					},
-					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
 					["coord"] = { 56.2, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -905,11 +947,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(249, {	-- Morganth
+					["sourceQuest"] = 248,	-- Looking Further
 					["providers"] = {
-						{ "o", 31 },	-- Old Lion Statue
+						{ "o",  31 },	-- Old Lion Statue
 						{ "n", 313 },	-- Theocritus <Mage of Tower Azora>
 					},
-					["sourceQuest"] = 248,	-- Looking Further
 					["coords"] = {
 						{ 84.5, 47.1, REDRIDGE_MOUNTAINS },
 						{ 65.2, 69.8, ELWYNN_FOREST },
@@ -919,7 +961,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Pendant of Shadow
-							["provider"] = { "i", 3617 },	-- Pendant of Shadow
+							["provider"] = { "i", 3617 },	-- Pendant of Shadow (QI!)
 							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },
 							["cr"] = 397,	-- Morganth
 						}),
@@ -945,13 +987,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26508, {	-- Nida's Necklace
 					["qg"] = 8965,	-- Shawn
-					["coord"] = { 28.3, 48.8, REDRIDGE_MOUNTAINS },
+					["coord"] = { 28.3, 48.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Nida's Necklace
 							["providers"] = {
-								{ "i", 10958 },	-- Nida's Necklace
+								{ "i",  10958 },	-- Nida's Necklace (QI!)
 								{ "o", 154357 },	-- Glinting Mud
 							},
 							["coords"] = {
@@ -963,29 +1005,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26505, {	-- Parker's Report
-					["providers"] = {
-						{ "n", 464 },	-- Watch Captain Parker
-						{ "i", 58890 },	-- Parker's Report
-					},
 					["sourceQuest"] = 26503,	-- Still Assessing the Threat
-					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
+					["providers"] = {
+						{ "n",   464 },	-- Watch Captain Parker
+						{ "i", 58890 },	-- Parker's Report (PQI!)
+					},
+					["coord"] = { 15.3, 64.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26639, {	-- Point of Contact: Brubaker
-					["qg"] = 43458,	-- John J. Keeshan
 					["sourceQuest"] = 26616,	-- It's Never Over
+					["qg"] = 43458,	-- John J. Keeshan
 					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26646, {	-- Prisoners of War
-					["qg"] = 43458,	-- John J. Keeshan
 					["sourceQuests"] = {
 						26637,	-- Bravo Company Field Kit: Chloroform
 						26636,	-- Bravo Company Field Kit: Camouflage
 						26638,	-- Hunting the Hunters
 						26640,	-- Unspeakable Atrocities
+					},
+					["providers"] = {
+						{ "n", 43458 },	-- John J. Keeshan
+						{ "i", 60384 },	-- Bravo Company Field Kit (PQI!)
 					},
 					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
@@ -993,20 +1038,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Prisoners of War Freed
 							["providers"] = {
-								{ "i",  60384 },	-- Bravo Company Field Kit
 								{ "o", 204441 },	-- Blackrock Holding Pen
 								{ "o", 204442 },	-- Blackrock Holding Pen
 								{ "o", 204435 },	-- Blackrock Holding Pen
 							},
 							["coords"] = {
-								{ 68.9, 58.8, REDRIDGE_MOUNTAINS },
+								{ 68.9, 58.7, REDRIDGE_MOUNTAINS },
 								{ 69.8, 59.1, REDRIDGE_MOUNTAINS },
-								{ 69.0, 60.1, REDRIDGE_MOUNTAINS },
+								{ 69.0, 60.2, REDRIDGE_MOUNTAINS },
 							},
 						}),
 						o(204437, {	-- Blackrock Key Pouch
-							["coord"] = { 69.5, 76.5, REDRIDGE_MOUNTAINS },
-							["group"] = { i(59261) },	-- Blackrock Holding Pen Key
+							["coord"] = { 69.5, 76.3, REDRIDGE_MOUNTAINS },
+							["groups"] = { i(59261) },	-- Blackrock Holding Pen Key (QI!)
 						}),
 					},
 				}),
@@ -1027,29 +1071,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26570, {	-- Render's Army
-					["qg"] = 382,	-- Marshal Marris
 					["sourceQuest"] = 26568,	-- This Ain't My War
+					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 29.7, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/25 Blackrock Orcs of Alther's Mill or Render's Camp slain
 							["providers"] = {
-								{ "n", 437 },	-- Blackrock Renegade
-								{ "n", 615 },	-- Blackrock Tracker
-								{ "n", 4064 },	-- Blackrock Scout
-								{ "n", 4463 },	-- Blackrock Summoner
-								{ "n", 43327},	-- Murdunk
-								{ "n", 43329},	-- Homurk
-								{ "n", 43350},	-- Utroka the Keymistress
+								{ "n",   437 },	-- Blackrock Renegade
+								{ "n",   615 },	-- Blackrock Tracker
+								{ "n",  4064 },	-- Blackrock Scout
+								{ "n",  4463 },	-- Blackrock Summoner
+								{ "n", 43327 },	-- Murdunk
+								{ "n", 43329 },	-- Homurk
+								{ "n", 43350 },	-- Utroka the Keymistress
 							},
 							["coord"] = { 28.2, 13, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(347, {	-- Rethban Ore
-					["qg"] = 341,	-- Foreman Oslow
 					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
+					["qg"] = 341,	-- Foreman Oslow
 					["coord"] = { 32.2, 48.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2798, 5 } },	-- Rethban Ore
@@ -1057,16 +1101,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26563, {	-- Return of the Bravo Company
-					["qg"] = 43302,	-- Danforth
 					["sourceQuest"] = 26562,	-- And Last But Not Least... Danforth
+					["qg"] = 43302,	-- Danforth (mobileNPC)
 					["coord"] = { 28.3, 17.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(119, {	-- Return to Verner
 					["providers"] = {
-						{ "n", 514 },	-- Smith Argus
-						{ "i", 1284 },	-- Crate of Horseshoes
+						{ "n",  514 },	-- Smith Argus
+						{ "i", 1284 },	-- Crate of Horseshoes (PQI!)
 					},
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1074,16 +1118,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 13,
 				}),
 				q(26520, {	-- Saving Foreman Oslow
-					["provider"] = { "o", 204351 },	-- Ettin Control Orb
 					["sourceQuest"] = 26519,	-- He Who Controls the Ettins
+					["provider"] = { "o", 204351 },	-- Ettin Control Orb
 					["coord"] = { 17.8, 18.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Foreman Oslow Saved
 							["providers"] = {
-								{ "n", 341 },	-- Foreman Oslow
-								{ "i", 58895 },	-- Ettin Control Orb
+								{ "n",   341 },	-- Foreman Oslow
+								{ "i", 58895 },	-- Ettin Control Orb (PQI!)
 							},
 							["coords"] = {
 								{ 31.6, 44.6, REDRIDGE_MOUNTAINS },
@@ -1113,7 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/10 Spotted Sunfish
-							["provider"] = { "i", 1467 },	-- Spotted Sunfish
+							["provider"] = { "i", 1467 },	-- Spotted Sunfish (QI!)
 							["crs"] = {
 								422,	-- Murloc Flesheater
 								548,	-- Murloc Minor Tidecaller
@@ -1139,15 +1183,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/3 Midnight Orb
-							["provider"] = { "i", 1261 },	-- Midnight Orb
+							["provider"] = { "i", 1261 },	-- Midnight Orb (QI!)
 							["coord"] = { 68.6, 57.6, REDRIDGE_MOUNTAINS },
 							["cr"] = 436,	-- Blackrock Shadowcaster
 						}),
 					},
 				}),
 				q(26692, {	-- Shadowhide Extinction
-					["qg"] = 43607,	-- Danforth
 					["sourceQuest"] = 26668,	-- Detonation
+					["qg"] = 43607,	-- Danforth
 					["coord"] = { 77.6, 65.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1176,19 +1220,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26713, {	-- Showdown at Stonewatch
-					["qg"] = 43733,	-- Colonel Troteman
 					["sourceQuest"] = 26708,	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
-					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
+					["qg"] = 43733,	-- Colonel Troteman
+					["coord"] = { 60.6, 36.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tharil'zun slain
 							["provider"] = { "n", 486 },	-- Tharil'zun
-							["coord"] = { 69.4, 59.8, REDRIDGE_MOUNTAINS },
+							["coord"] = { 69.3, 47.4, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Gath'Ilzogg slain
 							["provider"] = { "n", 334 },	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
-							["coord"] = { 58.6, 55.6, REDRIDGE_MOUNTAINS },
+							["coord"] = { 57.8, 56.2, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
@@ -1200,7 +1244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowhide Pendant
-							["provider"] = { "i", 1075 },	-- Shadowhide Pendant
+							["provider"] = { "i", 1075 },	-- Shadowhide Pendant (QI!)
 							["crs"] = {
 								703,	-- Lieutenant Fangore
 								434,	-- Rabid Shadowhide Gnoll
@@ -1216,35 +1260,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26503, {	-- Still Assessing the Threat
-					["qg"] = 464,	-- Watch Captain Parker
 					["sourceQuests"] = {
 						26365,	-- Hero's Call: Redridge Mountains! (From NPCs)
 						28563,	-- Hero's Call: Redridge Mountains!
 					},
-					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
+					["qg"] = 464,	-- Watch Captain Parker
+					["coord"] = { 15.3, 64.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gnoll Battle Plans
 							["providers"] = {
-								{ "i", 58887 },	-- Gnoll Battle Plans
+								{ "i",  58887 },	-- Gnoll Battle Plans (QI!)
 								{ "o", 204345 },	-- Gnoll Battle Plan
 							},
-							["coord"] = { 16.3, 55.5, REDRIDGE_MOUNTAINS },
+							["coord"] = { 16.2, 55.3, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/1 Gnoll Orders
 							["providers"] = {
-								{ "i", 58888 },	-- Gnoll Orders
+								{ "i",  58888 },	-- Gnoll Orders (QI!)
 								{ "o", 204346 },	-- Gnoll Orders
 							},
-							["coord"] = { 28.0, 74.8, REDRIDGE_MOUNTAINS },
+							["coord"] = { 28.0, 74.9, REDRIDGE_MOUNTAINS },
 						}),
 						objective(3, {	-- 0/1 Gnoll Strategy Guide
 							["providers"] = {
-								{ "i", 58889 },	-- Gnoll Strategy Guide
+								{ "i",  58889 },	-- Gnoll Strategy Guide (QI!)
 								{ "o", 204347 },	-- Gnoll Strategy Guide
 							},
-							["coord"] = { 30.5, 62.8, REDRIDGE_MOUNTAINS },
+							["coord"] = { 30.6, 62.7, REDRIDGE_MOUNTAINS },
 						}),
 						i(60687, {	-- Belt of the Sons
 							["timeline"] = { ADDED_4_0_3 },
@@ -1264,17 +1308,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26569, {	-- Surveying Equipment
-					["qg"] = 43194,	-- Foreman Oslow
 					["sourceQuests"] = {
 						26568,	-- This Ain't My War
 						26520,	-- Saving Foreman Oslow
 					},
+					["qg"] = 43194,	-- Foreman Oslow
 					["coord"] = { 29.6, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Blackrock Spyglass
-							["provider"] = { "i", 58952 },	-- Blackrock Spyglass
+							["provider"] = { "i", 58952 },	-- Blackrock Spyglass (QI!)
 							["coord"] = { 41.0, 17.6, REDRIDGE_MOUNTAINS },
 							["cr"] = 615,	-- Blackrock Tracker
 						}),
@@ -1300,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 18,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tharil'zun's Head
-							["provider"] = { "i", 1260 },	-- Tharil'zun's Head
+							["provider"] = { "i", 1260 },	-- Tharil'zun's Head (QI!)
 							["coord"] = { 68.4, 58.8, REDRIDGE_MOUNTAINS },
 							["cr"] = 486,	-- Tharil'zun
 						}),
@@ -1313,15 +1357,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26693, {	-- The Dark Tower
-					["qg"] = 43611,	-- John J. Keeshan
 					["sourceQuest"] = 26668,	-- Detonation
-					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
+					["qg"] = 43611,	-- John J. Keeshan
+					["coord"] = { 77.7, 65.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Key of Ilgalar
-							["provider"] = { "i", 59522 },	-- Key of Ilgalar
-							["coord"] = { 67.6, 29.6, REDRIDGE_MOUNTAINS },
+							["provider"] = { "i", 59522 },	-- Key of Ilgalar (QI!)
+							["coord"] = { 67.6, 28.9, REDRIDGE_MOUNTAINS },
 							["cr"] = 703,	-- General Fangore
 						}),
 					},
@@ -1334,7 +1378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/5 Iron Pike
-							["provider"] = { "i", 2856 },	-- Iron Pike
+							["provider"] = { "i", 2856 },	-- Iron Pike (QI!)
 							["crs"] = {
 								446,	-- Redridge Basher
 								426,	-- Redridge Brute
@@ -1344,7 +1388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						objective(2, {	-- 0/5 Iron Rivet
-							["provider"] = { "i", 1013 },	-- Iron Rivet
+							["provider"] = { "i", 1013 },	-- Iron Rivet (QI!)
 							["crs"] = {
 								446,	-- Redridge Basher
 								426,	-- Redridge Brute
@@ -1365,18 +1409,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26694, {	-- The Grand Magus Doane
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
+					["sourceQuest"] = 26693,	-- The Dark Tower
 					["providers"] = {
 						{ "n", 43611 },	-- John J. Keeshan
-						{ "i", 59522 },	-- Key of Ilgalar
+						{ "i", 59522 },	-- Key of Ilgalar (PQI!)
 					},
-					["sourceQuest"] = 26693,	-- The Dark Tower
-					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
+					["coord"] = { 77.7, 65.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grand Magus Doane slain
 							["provider"] = { "n", 397 },	-- Grand Magus Doane
-							["coord"] = { 71.4, 44.8, REDRIDGE_MOUNTAINS },
+							["coord"] = { 71.3, 45.4, REDRIDGE_MOUNTAINS },
 						}),
 						i(60721, {	-- Shalewind Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -1398,8 +1443,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Oslow's Toolbox
 							["providers"] = {
-								{ "i", 1309 },	-- Oslow's Toolbox
-								{ "o", 32 },	-- Sunken Chest
+								{ "i", 1309 },	-- Oslow's Toolbox (QI!)
+								{ "o",   32 },	-- Sunken Chest
 							},
 							["coord"] = { 41.5, 54.68, REDRIDGE_MOUNTAINS },
 						}),
@@ -1408,7 +1453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(118, {	-- The Price of Shoes
 					["providers"] = {
-						{ "n", 415 },	-- Verner Osgood
+						{ "n",  415 },	-- Verner Osgood
 						{ "i", 1283 },	-- Verner's Notes
 					},
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
@@ -1417,15 +1462,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 14,
 				}),
 				q(1699, {	-- The Rethban Gauntlet
-					["qg"] = 6166,	-- Yorus Barleybrew
-					-- #if AFTER TBC
 					["sourceQuests"] = {
+						-- #if AFTER TBC
 						1698,	-- Yorus Barleybrew
 						10371,	-- Yorus Barleybrew (Draenei)
+						-- #else
+						1698,	-- Yorus Barleybrew
+						-- #endif
 					},
-					-- #else
-					["sourceQuest"] = 1698,	-- Yorus Barleybrew
-					-- #endif
+					["qg"] = 6166,	-- Yorus Barleybrew
 					["coord"] = { 26.6, 44.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1433,11 +1478,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(1702, {	-- The Shieldsmith
+					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["providers"] = {
 						{ "n", 6166 },	-- Yorus Barleybrew
-						{ "i", 6843 },	-- Cask of Scalder
+						{ "i", 6843 },	-- Cask of Scalder (PQI!)
 					},
-					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["coord"] = { 26.6, 44.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -1451,8 +1496,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(178, {	-- Theocritus' Retrieval
 					["providers"] = {
-						{ "i", 1962 },	-- Glowing Shadowhide Pendant
-						{ "i", 1956 },	-- Faded Shadowhide Pendant
+						{ "i", 1962 },	-- Glowing Shadowhide Pendant (QS!)
+						{ "i", 1956 },	-- Faded Shadowhide Pendant (PQI!)
 					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
@@ -1463,60 +1508,65 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26607, {	-- They Drew First Blood
-					["providers"] = {
-						{ "n", 43221 },	-- Colonel Troteman
-						{ "i", 59061 },	-- Keeshan's Possessions
-					},
 					["sourceQuests"] = {
 						26573,	-- His Heart Must Be In It
 						26563,	-- Return of the Bravo Company
 					},
-					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
+					["providers"] = {
+						{ "n", 43221 },	-- Colonel Troteman
+						{ "i", 59061 },	-- Keeshan's Possessions (PQI!)
+					},
+					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26544, {	-- They've Wised Up...
-					["qg"] = 344,	-- Magistrate Solomon
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26514,	-- Canyon Romp
+					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Blackrock Orc Missive
-							["provider"] = { "i", 58936 },	-- Blackrock Orc Missive
-							["coord"] = { 19.2, 23.4, REDRIDGE_MOUNTAINS },
+							["provider"] = { "i", 58936 },	-- Blackrock Orc Missive (QI!)
+							["coord"] = { 20.9, 27.1, REDRIDGE_MOUNTAINS },
 							["cr"] = 43185,	-- Blackrock Overseer
 						}),
 					},
 				}),
 				q(26568, {	-- This Ain't My War
-					["qg"] = 43184,	-- John J. Keeshan
 					["sourceQuest"] = 26567,	-- John J. Keeshan
+					["qg"] = 43184,	-- John J. Keeshan
 					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26651, {	-- To Win a War, You Gotta Become War
-					["qg"] = 43458,	-- John J. Keeshan
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
 					["sourceQuest"] = 26646,	-- Prisoners of War
-					["coord"] = { 52.5, 55.3, REDRIDGE_MOUNTAINS },
+					["providers"] = {
+						{ "n", 43458 },	-- John J. Keeshan
+						{ "i", 60385 },	-- Bravo Company Field Kit (PQI!)
+					},
+					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Seaforium Planted at Munitions Hut
-							["provider"] = { "i", 60385 },	-- Bravo Company Field Kit
+							["provider"] = { "n", 43589 },	-- Munitions Dump
 							["coord"] = { 63.8, 70.5, REDRIDGE_MOUNTAINS },
 						}),
-						objective(2, {	-- Seaforium Planted at Munitions Hut
-							["provider"] = { "i", 60385 },	-- Bravo Company Field Kit
+						objective(2, {	-- Seaforium Planted at Blackrock Tower
+							["provider"] = { "n", 43590 },	-- Blackrock Tower
 							["coord"] = { 66.4, 71.5, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26726, {	-- Triumphant Return
-					["qg"] = 43733,	-- Colonel Troteman
 					["sourceQuest"] = 26714,	-- Darkblaze, Brood of the Worldbreaker
-					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
+					["qg"] = 43733,	-- Colonel Troteman
+					["coord"] = { 60.6, 36.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1535,8 +1585,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26512, {	-- Tuning the Gnomecorder
-					["qg"] = 344,	-- Magistrate Solomon
 					["sourceQuest"] = 26510,	-- We Must Prepare!
+					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1549,7 +1599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {	-- 0/6 Underbelly Whelp Scale
-							["provider"] = { "i", 1221 },	-- Underbelly Whelp Scale
+							["provider"] = { "i", 1221 },	-- Underbelly Whelp Scale (QI!)
 							["crs"] = {
 								14272,	-- Snarlflare
 								441,	-- Black Dragon Whelp
@@ -1564,18 +1614,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26640, {	-- Unspeakable Atrocities
+					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 					["providers"] = {
 						{ "n", 43508 },	-- Brubaker
-						{ "i", 59157 },	-- Brubaker's Report
+						{ "i", 59157 },	-- Brubaker's Report (PQI!)
 					},
-					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 					["coord"] = { 53.0, 67.8, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(130, {	-- Visit the Herbalist
-					["qg"] = 464,	-- Guard Parker
 					["sourceQuest"] = 129,	-- A Free Lunch
+					["qg"] = 464,	-- Guard Parker
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1589,7 +1639,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Gath'Ilzogg
-							["provider"] = { "i", 3633 },	-- Head of Gath'Ilzogg
+							["provider"] = { "i", 3633 },	-- Head of Gath'Ilzogg (QI!)
 							["coord"] = { 69.6, 55.8, REDRIDGE_MOUNTAINS },
 							["cr"] = 334,	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
 						}),
@@ -1603,7 +1653,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Fangore's Paw
-							["provider"] = { "i", 3632 },	-- Fangore's Paw
+							["provider"] = { "i", 3632 },	-- Fangore's Paw (QI!)
 							["coord"] = { 80.0, 39.0, REDRIDGE_MOUNTAINS },
 							["cr"] = 703,	-- Lieutenant Fangore
 						}),
@@ -1611,7 +1661,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26504, {	-- Wanted: Redridge Gnolls
 					["provider"] = { "o", 204344 },	-- Wanted!
-					["coord"] = { 16.0, 64.6, REDRIDGE_MOUNTAINS },
+					["coords"] = {
+						{ 16.0, 64.6, REDRIDGE_MOUNTAINS },
+						{ 16.2, 65.3, REDRIDGE_MOUNTAINS },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1621,7 +1674,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 426 },	-- Redridge Brute
 								{ "n", 712 },	-- Redridge Thrasher
 							},
-							["coord"] = { 17.2, 58.0, REDRIDGE_MOUNTAINS },
+							["coords"] = {
+								{ 17.2, 58.0, REDRIDGE_MOUNTAINS },
+								{ 29.2, 72.7, REDRIDGE_MOUNTAINS },
+								{ 32.3, 60.7, REDRIDGE_MOUNTAINS },
+							},
 						}),
 						i(60684, {	-- Royal Guard Breastplate
 							["timeline"] = { ADDED_4_0_3 },
@@ -1642,28 +1699,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Gnomecorder
 							["providers"] = {
-								{ "i", 58894 },	-- Gnomecorder
+								{ "i",  58894 },	-- Gnomecorder (QI!)
 								{ "o", 204350 },	-- Gnomecorder
 							},
-							["coord"] = { 37.8, 42.5, REDRIDGE_MOUNTAINS },
+							["coord"] = { 37.8, 42.2, REDRIDGE_MOUNTAINS },
 						}),
 					},
 				}),
 				q(26571, {	-- Weapons of War
-					["qg"] = 43221,	-- Colonel Troteman
 					["sourceQuest"] = 26568,	-- This Ain't My War
-					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
+					["qg"] = 43221,	-- Colonel Troteman
+					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Keeshan's Bow
-							["provider"] = { "i", 58953 },	-- Keeshan's Bow
-							["coord"] = { 51.6, 40.8, REDRIDGE_MOUNTAINS },
+							["provider"] = { "i", 58953 },	-- Keeshan's Bow (QI!)
+							["coord"] = { 51.6, 41.3, REDRIDGE_MOUNTAINS },
 							["cr"] = 43327,	-- Murdunk
 						}),
 						objective(2, {	-- 0/1 Keeshan's Survival Knife
-							["provider"] = { "i", 58954 },	-- Keeshan's Survival Knife
-							["coord"] = { 51.6, 41.2, REDRIDGE_MOUNTAINS },
+							["provider"] = { "i", 58954 },	-- Keeshan's Survival Knife (QI!)
+							["coord"] = { 51.5, 41.4, REDRIDGE_MOUNTAINS },
 							["cr"] = 43329,	-- Homurk
 						}),
 					},
@@ -1671,7 +1728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1698, {	-- Yorus Barleybrew
 					["qgs"] = {
 						5479,	-- Wu Shen <Warrior Trainer>
-						7315,	-- Darnath Bladesigner <Warrior Trainer>
+						7315,	-- Darnath Bladesinger <Warrior Trainer>
 					},
 					["coords"] = {
 						{ 48.6, 35.6, DARNASSUS },
@@ -1693,18 +1750,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 				}),
 				q(26545, {	-- Yowler Must Die!
-					["qg"] = 344,	-- Magistrate Solomon
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26544,	-- They've Wised Up...
+					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Yowler slain
 							["provider"] = { "n", 518 },	-- Yowler
-							["coord"] = { 27.0, 22.4, REDRIDGE_MOUNTAINS },
+							["coord"] = { 26.9, 22.0, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- Blackrock Invasion Plans
-							["provider"] = { "i", 58937 },	-- Blackrock Invasion Plans
+							["provider"] = { "i", 58937 },	-- Blackrock Invasion Plans (QI!)
 						}),
 						i(60703, {	-- Escalation Britchers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1764,7 +1822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214456, {	-- Dro'zem the Blasphemous
 					["coords"] = {
-						{ 34.8, 7.6, REDRIDGE_MOUNTAINS },
+						{ 34.8,  7.6, REDRIDGE_MOUNTAINS },
 						{ 63.6, 42.4, REDRIDGE_MOUNTAINS },
 						{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
 						{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
@@ -1794,8 +1852,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						{ 34.8, 12.2, REDRIDGE_MOUNTAINS },
 						-- #else
-						{ 33.0, 6.6, REDRIDGE_MOUNTAINS },
-						{ 36.0, 8.6, REDRIDGE_MOUNTAINS },
+						{ 33.0,  6.6, REDRIDGE_MOUNTAINS },
+						{ 36.0,  8.6, REDRIDGE_MOUNTAINS },
 						{ 36.6, 11.6, REDRIDGE_MOUNTAINS },
 						{ 38.4, 13.6, REDRIDGE_MOUNTAINS },
 						{ 42.4, 15.4, REDRIDGE_MOUNTAINS },
@@ -1848,7 +1906,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 68.0, 35.6, REDRIDGE_MOUNTAINS },
+						{ 68.3, 35.6, REDRIDGE_MOUNTAINS },
 						-- #else
 						{ 76.0, 29.4, REDRIDGE_MOUNTAINS },
 						{ 76.0, 34.2, REDRIDGE_MOUNTAINS },
@@ -1912,17 +1970,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if BEFORE 4.0.3
-			prof(SKINNING, {
-				["crs"] = {
-					441,	-- Black Dragon Whelp
-					14272,	-- Snarlflare
-				},
-				["groups"] = {
-					i(7286),	-- Black Whelp Scale
-				},
-			}),
-			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
@@ -1952,7 +1999,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE CATA
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 					["coord"] = { 88.2, 71.6, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2041,13 +2088,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if AFTER 4.0.3
+				-- #if AFTER CATA
 				n(3090, {	-- Gerald Crawley <Poison Supplies>
 					["coord"] = { 24.8, 38.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				-- #endif
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>
@@ -2103,7 +2152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if AFTER 4.0.3
+				-- #if AFTER CATA
 				n(789, {	-- Kimberly Hiett <Bowyer>
 					["coord"] = { 26.4, 42.0, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
@@ -2177,7 +2226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						4064,	-- Blackrock Scout
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE CATA
 						485,	-- Blackrock Outrunner
 						-- #endif
 					},
@@ -2217,25 +2266,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						{ 39.4, 14.8, REDRIDGE_MOUNTAINS },
-						{ 35.4, 8.6, REDRIDGE_MOUNTAINS },
+						{ 35.4,  8.6, REDRIDGE_MOUNTAINS },
 						{ 28.6, 14.4, REDRIDGE_MOUNTAINS },
 					},
 					["crs"] = {
 						615,	-- Blackrock Tracker
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE CATA
 						4462,	-- Blackrock Hunter
 						-- #endif
-					},
-				}),
-				i(58898, {	-- Dirt-Stained Scroll
-					["description"] = "Once obtained, Quest from this item has to be completed. It can't be abandoned.",
-					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
-					["timeline"] = { ADDED_4_0_3 },
-					["crs"] = {
-						445,	-- Redridge Alpha
-						446,	-- Redridge Basher
-						580,	-- Redridge Drudger
-						430,	-- Redridge Mystic
 					},
 				}),
 				i(1287, {	-- Giant Tarantula Fang
@@ -2261,13 +2299,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						568,	-- Shadowhide Warrior
 					},
 				}),
-				-- #if BEFORE 4.0.3
-				i(723, {	-- Goretusk Liver
-					["crs"] = {
-						345,	-- Bellygrub
-						547,	-- Great Goretusk
-					},
-				}),
+				-- #if BEFORE CATA
+				i(723),	-- Goretusk Liver
 				-- #endif
 				i(1213, {	-- Gnoll Kindred Bracers
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2320,7 +2353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 17.8, 57.8, REDRIDGE_MOUNTAINS },
 					},
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE CATA
 				i(2296, {	-- Great Goretusk Snout
 					["crs"] = {
 						345,	-- Bellygrub
@@ -2423,7 +2456,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-					["description"] = "Has a chance to drop from any creature in the zone.",
+					["description"] = "Has a chance to drop from any creature in Redridge Mountains.",
 				}),
 				i(1219, {	-- Redridge Machete
 					["cr"] = 424,	-- Redridge Poacher
@@ -2439,10 +2472,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2798, {	-- Rethban Ore
-					-- #if AFTER 4.0.3
-					["description"] = "Quest, for which this Ore was an objective, has been made obsolete at the release of Cataclysm expansion.\nAs it has no use, it is safe to be destroyed or sold to a vendor.",
+					-- #if AFTER CATA
+					["description"] = "Rethban Ore's only purpose was to be an objective to a quest that got removed with Cataclysm. Thus it is useless and safe to discard.",
 					-- #endif
-					["cr"] = 580,	-- Redridge Drudger
+					["providers"] = {
+						{ "n", 580 },	-- Redridge Drudger
+						-- #if BEFORE CATA
+						{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
+						-- #endif
+						-- #if ANYCLASSIC
+						{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
+						-- #endif
+					},
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -2495,14 +2536,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						578,	-- Murloc Scout
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE CATA
 						14270,	-- Squiddic
 						-- #endif
 					},
 					["coords"] = {
 						{ 37.8, 41.4, REDRIDGE_MOUNTAINS },
 						{ 36.4, 43.8, REDRIDGE_MOUNTAINS },
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE CATA
 						{ 57.8, 51.8, REDRIDGE_MOUNTAINS },
 						{ 41.8, 48.2, REDRIDGE_MOUNTAINS },
 						-- #endif
@@ -2596,7 +2637,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1080, {	-- Tough Condor Meat
-					["cr"] = 428,	-- Dire Condor
+					["coords"] = {
+						-- #if BEFORE 4.0.3
+						{ 52.0, 40.0, REDRIDGE_MOUNTAINS },	-- Northside
+						{ 55.0, 72.0, REDRIDGE_MOUNTAINS },	-- Southside
+						-- #else
+						{ 22.2, 64.5, REDRIDGE_MOUNTAINS },	-- Three Corners
+						-- #endif
+					},
+					["crs"] = {
+						428,	-- Dire Condor
+					},
+					["description"] = "Only drops from Dire Condors in Redridge Mountains."
 				}),
 			}),
 		},

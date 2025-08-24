@@ -18,7 +18,13 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	un(REAL_MONEY, i(49646, {	-- Core Hound Pup
 		["description"] = "Granted to players that attach an authenticator to their account.",
-		["timeline"] = { ADDED_3_3_0 },
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_3_0,
+			-- #else
+			ADDED_3_3_0,
+			-- #endif
+		},
 	})),
 	i(48527, {	-- Onyx Panther (PET!)
 		["description"] = "Reward from a Korean-exclusive World Event that mailed you this pet.",
@@ -91,7 +97,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { ADDED_6_0_2 },
-		["g"] = {
+		["groups"] = {
 			crit(25887, {
 				["provider"] = { "i", 116788 },
 				["_noautomation"] = true,

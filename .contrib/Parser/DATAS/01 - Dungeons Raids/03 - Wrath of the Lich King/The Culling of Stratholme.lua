@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(279, {	-- The Culling of Stratholme
 		["mapID"] = THE_CULLING_OF_STRATHOLME,
 		["coord"] = { 56.9, 82.4, CAVERNS_OF_TIME },
@@ -91,8 +91,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(13151, {	-- A Royal Escort
-					["qg"] = 26527,	-- Chromie
 					["sourceQuest"] = 13149,	-- Dispelling Illusions
+					["qg"] = 27915,	-- Chromie
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mal'Ganis Defeated
@@ -180,19 +180,39 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["creatureID"] = 26532,	-- Chrono-Lord Epoch
 					["groups"] = {
 						i(37099),	-- Sempiternal Staff
-						i(37096),	-- Necklace of the Chrono-Lord
+						i(37096, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238990, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						-- #if AFTER 7.3.5
-						i(37686),	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
-						i(37687),	-- Gloves of Distorted Time (7.3.5 - Used to be only Heroic Mode)
+						i(37686, {	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(37687, {	-- Gloves of Distorted Time (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
 						-- #endif
+						i(238993, {	-- Cracked Epoch Grasps
+							["timeline"] = { ADDED_11_1_5 },
+						}),
+						i(238991, {	-- Gloves of Distorted Time
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(37106),	-- Ouroboros Belt
 						-- #if AFTER 7.3.5
 						i(37688),	-- Legplates of the Infinite Drakonid (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(37105),	-- Treads of Altered History
 						-- #if AFTER 7.3.5
-						i(37685),	-- Mobius Band (7.3.5 - Used to be only Heroic Mode)
+						i(37685, {	-- Mobius Band (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
 						-- #endif
+						i(238992, {	-- Mobius Band
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 					},
 				}),
 				e(614, {	-- Mal'Ganis
@@ -292,8 +312,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37099),	-- Sempiternal Staff (7.3.5 - Used to be only Normal Mode)
 							i(37096),	-- Necklace of the Chrono-Lord (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							i(37686),	-- Cracked Epoch Grasps
-							i(37687),	-- Gloves of Distorted Time
+							i(37686, {	-- Cracked Epoch Grasps
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238993, {	-- Cracked Epoch Grasps
+								["timeline"] = { ADDED_11_1_5 },
+							}),
+							i(37687, {	-- Gloves of Distorted Time
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238991, {	-- Gloves of Distorted Time
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							-- #if AFTER 7.3.5
 							i(37106),	-- Ouroboros Belt (7.3.5 - Used to be only Normal Mode)
 							-- #endif
@@ -301,7 +331,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(37105),	-- Treads of Altered History (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							i(37685),	-- Mobius Band
+							i(37685, {	-- Mobius Band
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238992, {	-- Mobius Band
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 						},
 					}),
 					n(32273, {	-- Infinite Corruptor
@@ -468,7 +503,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(279, {

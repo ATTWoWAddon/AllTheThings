@@ -182,19 +182,6 @@ root(ROOTS.NeverImplemented, {
 					i(20984),	-- Recruit's Shield
 					i(23365),	-- Steel Rimmed Buckler
 				}),
-				filter(STAVES, {
-					i(31253),	-- (Action Figure) Night Elf Druid Staff
-					i(31257),	-- (Action Figure) Troll Priest Staff
-					i(28739),	-- Monster - Staff, Anathema
-					i(28738),	-- Monster - Staff, Benediction
-					i(23240),	-- Monster - Staff, Blood Elf A01 Blue
-					i(30423),	-- Monster - Staff, Blood Elf A01 Blue - Med Blue Glow
-					i(29715),	-- Monster - Staff, Blood Elf A01 Green
-					i(29716),	-- Monster - Staff, Blood Elf A01 Red
-					i(30424),	-- Monster - Staff, Blood Elf A01 Red - High Red Glow
-					i(30441),	-- Monster - Staff, Blood Elf A02 Red (Yellow Flame)
-					i(33983),	-- Monster - Zul'Aman - Staff, 2H - Amani'shi Flame Caster
-				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(31259),	-- (Action Figure) Human Warrior Sword
 					i(23741),	-- Monster - 1H Sword - Widow's Remore
@@ -258,16 +245,6 @@ root(ROOTS.NeverImplemented, {
 					i(33596),	-- Monster - Shield, Dragonflayer Gladiator (Jlarborn)
 					i(33294),	-- Monster, Shield - Dragonflayer Tribesman
 				}),
-				filter(STAVES, {
-					i(43223),	-- Monster - Shandaral - Staff
-					i(43220),	-- Monster - Staff, Blood Elf A01 Blue - High Yellow Glow
-					i(43093),	-- Monster - Staff, Dalaran
-					i(43617),	-- Monster - Staff, Dalaran Blue
-					i(43618),	-- Monster - Staff, Dalaran Green
-					i(43619),	-- Monster - Staff, Dalaran Red
-					i(35942),	-- Monster - Staff, Greatmother Icemist
-					i(41090),	-- Monster - Zul'Aman - Staff, 2H, Drakuru Prophet
-				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(50252),	-- Monster - 1H, Highlord Darion Mograine
 					i(49346),	-- Monster - Icecrown - 1H Axe - D01 - Blue
@@ -313,9 +290,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(WRIST, {
 						i(53356),	-- Beast Tracker's Bracers
-					}),
-					n(HANDS, {
-						i(53385),	-- Rockbitten Gloves
 					}),
 					n(WAIST, {
 						i(49534),	-- Goblin Primitive's Belt
@@ -371,14 +345,6 @@ root(ROOTS.NeverImplemented, {
 				filter(SHIELDS, {
 					i(57174),	-- Monster - Shield, Goblin B01
 				}),
-				filter(STAVES, {
-					i(49606),	-- Battlescarred Stave
-					i(76364),	-- Monster - Staff, Dalaran (Fire)
-					i(76363),	-- Monster - Staff, Dalaran Blue (Frost)
-					i(56063),	-- Monster, Grimtotem Alliance Weapon (Staff)
-					i(54301),	-- Promotion Prodder
-					i(49391),	-- Shattered Oar
-				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(49617),	-- Gob Squad Rifle, Back Mounted
 					i(49393),	-- Goblin Ripsaw
@@ -414,10 +380,6 @@ root(ROOTS.NeverImplemented, {
 					i(90145),	-- Fillet Knife
 					i(72036),	-- Placeholder Dagger 1
 					i(72037),	-- Placeholder Dagger 2
-				}),
-				filter(FIST_WEAPONS, {
-					i(77278),	-- Trainee's Handwrap
-					i(77279),	-- Trainee's Handwrap
 				}),
 				filter(HELD_IN_OFF_HAND, {
 					i(72034),	-- Placeholder Offhand 1

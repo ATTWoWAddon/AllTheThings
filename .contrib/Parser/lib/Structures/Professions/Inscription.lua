@@ -68,7 +68,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57119, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Evasion
 		r(57120, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
 		r(56974, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Evocation
-		r(57156, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Execution
+		r(57156, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
 		r(57025, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
 		r(57121, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Expose Armor
 		r(57262, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Fear
@@ -77,10 +77,10 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57241, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Frost Shock
 		r(57216, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
 		r(57125, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Gouge
-		r(57157, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3,ADDED_5_0_4,DELETED_6_0_2}}),	-- Glyph of Hamstring
+		r(57157, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
 		r(56945, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Healing Touch
 		r(57266, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Healthstone
-		r(57158, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Heroic Strike
+		r(57158, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
 		r(57029, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 		r(57004, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
 		r(56981, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Icy Veins
@@ -89,7 +89,8 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57244, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 		r(57245, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
 		r(57246, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-		r(56985, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3,ADDED_5_0_4,DELETED_6_0_2}}),	-- Glyph of Mana Gem
+		r(56984, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Mage Armor / Glyph of Mana Gem [MOP+]
+		r(56985, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Mana Gem (Deleted with Cata - re-added in MoP using Glyph of Mage Armor spell ID)
 		r(56961, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Maul
 		r(57200, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
 		r(56951, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
@@ -97,11 +98,11 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		r(57162, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
 		r(56953, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Rebirth
 		r(56955, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Rejuvenation
-		r(57163, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Rending
+		r(57163, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
 		r(57165, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
 		r(56956, {["timeline"]={ADDED_3_0_2,DELETED_6_0_2}}),	-- Glyph of Rip / Glyph of Prowl[MOP+]
 		r(56982, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Scorch
-		r(57270, {["timeline"]={ADDED_3_0_2,DELETED_4_0_3}}),	-- Glyph of Searing Pain
+		r(57270, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
 		r(57271, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Shadow Bolt
 		r(57272, {["timeline"]={ADDED_3_0_2,DELETED_5_0_4}}),	-- Glyph of Shadowburn
 		r(57131, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush[5.0.4-5.4.0] / Glyph of Redirect[5.4.0+]
@@ -128,7 +129,8 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #if BEFORE WOD
 		-- These Recipes changed from trainer to Research (and expansion) with WoD revamp
 		r(56994, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Aimed Shot / Glyph of Aspects[MOP+]
-		r(56968, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Arcane Explosion
+		r(56968, {["timeline"]={ADDED_3_0_2,DELETED_4_0_1}}),	-- Glyph of Arcane Explosion
+		r(115718,{["timeline"]={ADDED_5_0_4,DELETED_7_0_3}}),	-- Glyph of Arcane Explosion [MOP+]
 		r(56995, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
 		r(57210, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude[MOP+]
 		r(57000, {["timeline"]={ADDED_3_0_2,DELETED_7_0_3}}),	-- Glyph of Deterrence
@@ -255,7 +257,7 @@ NAZJATAR_INSCRIPTION = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timelin
 		r(294790),	-- Notorious Combatant's Etched Vessel [Rank 1]
 	}),
 }));
-SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_INSCRIPTION = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309805),	-- Shadowlands Inscription
 	r(382982, {["timeline"] = {ADDED_10_0_0}}),	-- Shadowlands Milling
 	r(311413),	-- Mass Mill Deathblossom

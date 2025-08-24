@@ -1,5 +1,5 @@
 local appName, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Features Page
 local child = settings:CreateOptionsPage(L.FEATURES_PAGE, appName)
@@ -16,27 +16,30 @@ local textChatCommands = child:CreateTextLabel(L.CHAT_COMMANDS_TEXT)
 textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
 textChatCommands:SetWidth(320)
 
-
--- Column 2
-local headerIconLegend = child:CreateHeaderLabel(L.ICON_LEGEND_LABEL)
-headerIconLegend:SetPoint("TOPLEFT", headerChatCommands, 320, 0)
-
-local textIconLegend = child:CreateTextLabel(L.ICON_LEGEND_TEXT)
-textIconLegend:SetPoint("TOPLEFT", headerIconLegend, "BOTTOMLEFT", 0, -4)
-textIconLegend:SetWidth(320)
-
 local headerKeybindings = child:CreateHeaderLabel(L.KEYBINDINGS)
-headerKeybindings:SetPoint("TOPLEFT", textIconLegend, "BOTTOMLEFT", 0, -15)
+headerKeybindings:SetPoint("TOPLEFT", textChatCommands, "BOTTOMLEFT", 0, -15)
 
 local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White))
 textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
 textKeybindings:SetWidth(320)
 
+-- Column 2
+local headerIconLegendStatus = child:CreateHeaderLabel(L.ICON_LEGEND_STATUS_LABEL)
+headerIconLegendStatus:SetPoint("TOPLEFT", headerChatCommands, 320, 0)
 
+local textIconLegendStatus = child:CreateTextLabel(L.ICON_LEGEND_STATUS_TEXT)
+textIconLegendStatus:SetPoint("TOPLEFT", headerIconLegendStatus, "BOTTOMLEFT", 0, -4)
+textIconLegendStatus:SetWidth(320)
 
+local headerIconLegendMisc = child:CreateHeaderLabel(L.ICON_LEGEND_MISC_LABEL)
+headerIconLegendMisc:SetPoint("TOPLEFT", textIconLegendStatus, "BOTTOMLEFT", 0, -15)
+
+local textIconLegendMisc = child:CreateTextLabel(L.ICON_LEGEND_MISC_TEXT)
+textIconLegendMisc:SetPoint("TOPLEFT", headerIconLegendMisc, "BOTTOMLEFT", 0, -4)
+textIconLegendMisc:SetWidth(320)
 
 local headerMinimapButton = child:CreateHeaderLabel(L.MINIMAP_LABEL)
-headerMinimapButton:SetPoint("TOPLEFT", textKeybindings, "BOTTOMLEFT", 0, -15)
+headerMinimapButton:SetPoint("TOPLEFT", textIconLegendMisc, "BOTTOMLEFT", 0, -15)
 
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L.MINIMAP_BUTTON_CHECKBOX,
@@ -163,6 +166,8 @@ if app.IsRetail then
 	checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
 	checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
 
+	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
+	-- in case someone isn't even using it
 	local function AddTimerunningToCurrentInstance()
 		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
 		app:GetWindow("CurrentInstance").Filters = active and { Timerunning = true } or nil
@@ -228,6 +233,8 @@ end)
 checkboxAutomaticallyOpenWorldQuestList:SetATTTooltip(L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenWorldQuestList:AlignBelow(checkboxAutomaticallyOpenRaidAssistant)
 
+-- AH Module is disabled in Retail currently
+--[[
 local checkboxShowAHModule = child:CreateCheckBox(L.AUCTION_TAB_CHECKBOX,
 function(self)
 	self:SetChecked(false)
@@ -252,6 +259,8 @@ function(self)
 end)
 checkboxShowAHModule:SetATTTooltip(L.AUCTION_TAB_CHECKBOX_TOOLTIP)
 checkboxShowAHModule:AlignBelow(checkboxAutomaticallyOpenWorldQuestList or checkboxAutomaticallyOpenProfessionList)
+]]--
+
 else
 local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
 function(self)

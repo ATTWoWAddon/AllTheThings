@@ -1,0 +1,18 @@
+createLocalizationString({
+	readable = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List",
+	constant = "AUTO_PROF_LIST_CHECKBOX_TOOLTIP",
+	export = true,
+	text = {
+		en = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List",
+		-- TODO: de = "",
+		es = "Activa esta opción si quieres que ATT abra y refresque la lista de profesiones cuando abres tus profesiones. Debido a limitaciones en la API impuestas por Blizzard, el único momento en el que un addon puede interactuar con los datos de profesión es cuando son abiertas. La lista cambia automáticamente cuando cambias a una profesión diferente.\n\nNo recomendamos desactivar esta opción porque pude que prevenir que se rastreen recetas correctamente.\n\nTambién puedes configurar este ajuste a un atajo. (sólo funciona cuando una profesión es abierta)\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Lista de Profesiones ATT",
+		es = "Activa esta opción si quieres que ATT abra y actualice la lista de profesiones cuando abres tus profesiones. Debido a limitaciones en la API impuestas por Blizzard, el único momento en el que un addon puede interactuar con los datos de profesión es cuando son abiertas. La lista cambia automáticamente cuando cambias a una profesión diferente.\n\nNo recomendamos desactivar esta opción porque pude que prevenir que se rastreen recetas correctamente.\n\nTambién puedes configurar este ajuste a un atajo. (sólo funciona cuando una profesión es abierta)\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Lista de Profesiones ATT",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		ru = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал и обновлял список профессии, когда Вы открываете Ваши профессии. Из-за навязанных ограничений API, аддоны могут взаимодействовать с профессиями только, когда они открыты. Этот список будет автоматически переключаться, когда Вы открываете другую профессию.\n\nМы не рекомедуем отключать данную опцию, поскольку она может предотватить некорректное отслеживание рецептов.\n\nВы также можете назначить клавишу для данной настройки (работает только при открытой профессии):\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Список Профессии",
+		-- TODO: ko = "",
+		cn = "如果你希望 ATT 在你打开专业时打开并刷新专业列表请启用此选项。由于暴雪 API 限制，只有在打开专业界面时，插件才能与专业数据进行交互。当你换成其他专业时列表会自动切换。\n\n我们不建议禁用此选项因为它可能会阻止图纸的正确追踪。\n\n你也可以将此设置绑定到一个键上。（仅在打开专业时工作）\n\n按键设置 -> 插件 -> ALL THE THINGS -> 打开/关闭专业技能列表",
+		tw = "如果你希望 ATT 在你打開專業技能時打開並刷新專業技能列表請啟用此選項。由於暴雪 API 限制，只有在打開專業技能介面時，插件才能與專業技能資料進行互動。當你換成其他專業技能時列表會自動切換。\n\n我們不建議停用此選項，因為它可能會阻止配方的正確追蹤。\n\n你也可以將此設定綁定到一個按鍵上。（僅在打開專業技能時工作）\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉專業技能列表",
+	},
+})

@@ -19,22 +19,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236852,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(802),	-- Explore Westfall
+				ach(802),	-- Explore Westfall
 				ach(4903, {	-- Westfall Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38343, {	-- Crime Scene Investigation
-							["sourceQuest"] = 26270,	-- You Have Our Thanks
-						}),
-						crit(39659, {	-- Investigating the Shadows
-							["sourceQuest"] = 26297,	-- The Dawning of a New Day
-						}),
-						crit(38342, {	-- The Defias Brotherhood Reborn
-							["sourceQuest"] = 26370,	-- Return to Sentinel Hill
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26270,	-- You Have Our Thanks
@@ -81,28 +71,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				visit_exploration(5290,{coord={35.3,45.3,WESTFALL}}),	-- The Raging Chasm
 				exploration(115),	-- Westfall Lighthouse
 			}),
-			-- #if AFTER 4.1.0.13726
-			prof(FISHING, {
-				i(68795, {	-- Stendel's Bane
-					["timeline"] = { ADDED_4_1_0 },
-					["groups"] = {
-						i(68797, {	-- Stendel's Wedding Band
-							["timeline"] = { ADDED_4_1_0 },
-						}),
-					},
-				}),
-			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(584, {	-- Furlbrow's Pumpkin Farm, Westfall
 					["cr"] = 42406,	-- Hoboair <Gryphon Master>
-					["coord"] = { 49.8, 18.8, WESTFALL },
+					["coord"] = { 49.8, 18.7, WESTFALL },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(583, {	-- Moonbrook, Westfall
 					["cr"] = 42426,	-- Tina Skyden <Gryphon Master>
-					["coord"] = { 42.0, 63.4, WESTFALL },
+					["coord"] = { 42.1, 63.3, WESTFALL },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -118,8 +96,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65648, {	-- Old MacDonald <Master Pet Tamer>
+					["coord"] = { 60.8, 18.6, WESTFALL },
+					["description"] = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 3,
+					["groups"] = {
+						q(31780, {	-- Old MacDonald
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31725, {	-- Lindsay
+					["sourceQuest"] = 31724,	-- Old MacDonald
+					["qg"] = 65648,	-- Old MacDonald
+					["coord"] = { 80.6, 18.4, WESTFALL },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Lindsay
+							["provider"] = { "n", 65651 },	-- Lindsay
+							["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
@@ -156,6 +166,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #endif
+			-- #if AFTER 4.1.0.13726
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					i(68795, {	-- Stendel's Bane
+						["timeline"] = { ADDED_4_1_0 },
+						["coord"] = { 46.3, 59.0, WESTFALL },
+						["groups"] = {
+							i(68797, {	-- Stendel's Wedding Band
+								["timeline"] = { ADDED_4_1_0 },
+							}),
+						},
+					}),
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ...and that note you found (A)
@@ -177,35 +202,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(6181, {	-- A Swift Message
+					-- #if AFTER CATA
+					["description"] = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
+					-- #endif
 					["providers"] = {
-						{ "n", 491 },	-- Quartermaster Lewis
-						{ "i", 15998 },	-- Lewis' Note
+						{ "n",   491 },	-- Quartermaster Lewis
+						{ "i", 15998 },	-- Lewis' Note (PQI!)
 					},
 					["coord"] = { 56.9, 47.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if AFTER 4.0.3
-					["description"] = "This quest gets marked as completed when you complete the quest 'A Swift Message' (26393) in Elwynn Forest.",
-					-- #endif
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
 				q(26320, {	-- A Vision of the Past
-					["qg"] = 42651,	-- Thoralius the Wise
 					["sourceQuest"] = 26319,	-- Secrets Revealed
-					["coord"] = { 42.8, 65.1, WESTFALL },
+					["providers"] = {
+						{ "n", 42651 },	-- Thoralius the Wise
+						{ "i", 58147 },	-- Incense Burner (PQI!)
+					},
+					["coord"] = { 43.0, 65.0, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Vision of the Past uncovered
-							["provider"] = { "i", 58147 },	-- Incense Burner
+							["provider"] = { "n", 42693 },	-- Vision of the Past
 							["coord"] = { 42.56, 71.71, WESTFALL },
 						}),
 					},
 				}),
 				q(26291, {	-- Big Trouble in Moonbrook
-					["qg"] = 7024,	-- Agent Kearnen
 					["sourceQuest"] = 26290,	-- Secrets of the Tower
-					["coord"] = { 68.2, 70.4, WESTFALL },
+					["qg"] = 7024,	-- Agent Kearnen
+					["coord"] = { 68.3, 70.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -224,37 +252,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
-					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
+					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map (QS!)
 					["timeline"] = { REMOVED_4_0_3 },
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
-					["providers"] = {
-						{ "o", 35 },	-- Captain's Footlocker
-						{ "i", 1358 },	-- A Clue to Sander's Treasure
-					},
 					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
+					["providers"] = {
+						{ "o",   35 },	-- Captain's Footlocker
+						{ "i", 1358 },	-- A Clue to Sander's Treasure (PQI!)
+					},
 					["coord"] = { 25.9, 47.77, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
-					["providers"] = {
-						{ "o", 36 },	-- Broken Barrel
-						{ "i", 1361 },	-- Another Clue to Sander's Treasure
-					},
 					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
+					["providers"] = {
+						{ "o",   36 },	-- Broken Barrel
+						{ "i", 1361 },	-- Another Clue to Sander's Treasure (PQI!)
+					},
 					["coord"] = { 40.50, 47.82, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
-					["providers"] = {
-						{ "o", 34 },	-- Old Jug
-						{ "i", 1362 },	-- Final Clue to Sander's Treasure
-						{ "o", 33 },	-- Locked Chest
-					},
 					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
+					["providers"] = {
+						{ "o",   34 },	-- Old Jug
+						{ "i", 1362 },	-- Final Clue to Sander's Treasure (PQI!)
+						{ "o",   33 },	-- Locked Chest
+					},
 					["coords"] = {
 						{ 40.62, 17.01, WESTFALL },
 						{ 25.97, 16.90, WESTFALL },
@@ -269,36 +309,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26353, {	-- Captain Sanders' Hidden Treasure (1/4)
-					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map
+					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map (QS!)
 					["coord"] = { 49.2, 9.80, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (2/4)
+					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
 					["providers"] = {
 						{ "o", 307330 },	-- Captain's Footlocker
-						{ "i", 1358 },	-- A Clue to Sander's Treasure
+						{ "i",   1358 },	-- A Clue to Sander's Treasure (PQI!)
 					},
-					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
-					["coord"] = { 25.9, 47.75, WESTFALL },
+					["coord"] = { 25.9, 47.8, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (3/4)
+					["sourceQuest"] = 26354,	-- Captain Sanders' Hidden Treasure (2/4)
 					["providers"] = {
 						{ "o", 307307 },	-- Broken Barrel
-						{ "i", 1361 },	-- Another Clue to Sander's Treasure
+						{ "i",   1361 },	-- Another Clue to Sander's Treasure (PQI!)
 					},
-					["sourceQuest"] = 26354,	-- Captain Sanders' Hidden Treasure (2/4)
-					["coord"] = { 40.6, 47.8, WESTFALL },
+					["coord"] = { 40.5, 47.8, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (4/4)
+					["sourceQuest"] = 26355,	-- Captain Sanders' Hidden Treasure (3/4)
 					["providers"] = {
 						{ "o", 307277 },	-- Old Jug
-						{ "i", 1362 },	-- Final Clue to Sander's Treasure
-						{ "o", 307340 },	-- Locked Chest
+						{ "i",   1362 },	-- Final Clue to Sander's Treasure (PQI!)
 					},
-					["sourceQuest"] = 26355,	-- Captain Sanders' Hidden Treasure (3/4)
-					["coord"] = { 40.5, 16.8, WESTFALL },
+					["coord"] = { 40.6, 17.0, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(3343),	-- Captain Sanders' Booty Bag
@@ -307,13 +358,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3861, {	-- CLUCK!
-					["qg"] = 620,	-- Chicken
 					["description"] =
 						-- #if AFTER 3.1.0
 						"Simply target any Chicken then spam |cFFFFD700/chicken|r at it until it emotes at you. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
 						-- #else
 						"Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
 						-- #endif
+					["qg"] = 620,	-- Chicken
 					["maps"] = {
 						-- #if AFTER TBC
 						AZUREMYST_ISLE,
@@ -328,10 +379,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						WESTFALL,
 					},
 					["cost"] = { { "i", 11109, 1 } },	-- Special Chicken Feed
-					["repeatable"] = true,
 					-- #if BEFORE 3.1.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["repeatable"] = true,
 					["groups"] = {
 						i(11110, {	-- Westfall Chicken (PET!)
 							-- #if BEFORE 3.1.0
@@ -341,30 +392,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6281, {	-- Continue to Stormwind
-					["providers"] = {
-						{ "n", 523 },	-- Thor
-						{ "i", 15998 },	-- Lewis' Note
-					},
-					["sourceQuest"] = 6181,	-- A Swift Message
-					["coord"] = { 56.4, 52.6, WESTFALL },
-					["timeline"] = { REMOVED_4_0_3 },
-					-- #if AFTER 4.0.3
+					-- #if AFTER CATA
 					["description"] = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
 					-- #endif
+					["sourceQuest"] = 6181,	-- A Swift Message
+					["providers"] = {
+						{ "n",   523 },	-- Thor
+						{ "i", 15998 },	-- Lewis' Note (PQI!)
+					},
+					["coord"] = { 56.4, 52.6, WESTFALL },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
 				q(1076, {	-- Devils in Westfall
-					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
+					["qg"] = 4078,	-- Collin Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Dust Devil Debris
-							["provider"] = { "i", 5669 },	-- Dust Devil Debris
+							["provider"] = { "i", 5669 },	-- Dust Devil Debris (QI!)
 							["coords"] = {
 								{ 40.8, 22.0, WESTFALL },
 								{ 35.8, 34.4, WESTFALL },
@@ -384,13 +435,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26296, {	-- Evidence Collection
-					["provider"] = { "i", 58117 },	-- Red Bandana
 					["sourceQuest"] = 26292,	-- To Moonbrook
+					["provider"] = { "i", 58117 },	-- Red Bandana (QS!)
+					["coord"] = { 42.6, 69.4, WESTFALL },	-- center of area where Moonbrook Thugs spawn
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 42677,	-- Moonbrook Thug
 					["groups"] = {
 						objective(1, {	-- 0/6 Red Bandana
-							["provider"] = { "i", 58118 },	-- Red Bandana
+							["provider"] = { "i", 58118 },	-- Red Bandana (QI!)
 							["cr"] = 42677,	-- Moonbrook Thug
 						}),
 						i(58921, {	-- Evidence Collection Gloves
@@ -408,14 +461,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26230, {	-- Feast or Famine
-					["qg"] = 42497,	-- Mama Celeste
 					["sourceQuest"] = 26215,	-- Meet Two-Shoed Lou
-					["coord"] = { 49.4, 19.2, WESTFALL },
+					["qg"] = 42497,	-- Mama Celeste
+					["coord"] = { 49.5, 19.1, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Coyote Tail
-							["provider"] = { "i", 57787 },	-- Coyote Tail
+							["provider"] = { "i", 57787 },	-- Coyote Tail (QI!)
 							["crs"] = {
 								834,	-- Coyote
 								833,	-- Coyote Packleader
@@ -423,7 +476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/5 Fresh Dirt
 							["providers"] = {
-								{ "i",  57789 },	-- Fresh Dirt
+								{ "i",  57789 },	-- Fresh Dirt (QI!)
 								{ "o", 203972 },	-- Fresh Dirt
 							},
 						}),
@@ -431,16 +484,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
-					["qg"] = 42575,	-- Hope Saldean
 					["sourceQuest"] = 26266,	-- Hope for the People
-					["coord"] = { 56.9, 47.1, WESTFALL },
+					["qg"] = 42575,	-- Hope Saldean
+					["coord"] = { 57.0, 47.1, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/20 Westfall Homeless fed
 							["providers"] = {
 								{ "n", 42617 },	-- Westfall Stew
-								{ "i", 57991 },	-- Westfall Stew
+								{ "i", 57991 },	-- Westfall Stew (PQI!)
 							},
 							["crs"] = {
 								42386,	-- Homeless Stormwind Citizen
@@ -450,31 +503,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26289, {	-- Find Agent Kearnen
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuests"] = {
 						26271,	-- Feeding the Hungry and the Hopeless
 						26286,	-- In Defense of Westfall
 					},
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["coord"] = { 56.3, 47.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(184, {	-- Furlbrow's Deed
 					["providers"] = {
-						{ "i", 1972 },	-- Westfall Deed
-						{ "i", 1971 },	-- Westfall Deed
-						-- #if AFTER 4.0.3
+						-- #if AFTER CATA
 						{ "o", 203734 },	-- Westfall Deed
+						-- #else
+						{ "i",   1972 },	-- Westfall Deed (QS!)
 						-- #endif
+						{ "i",   1971 },	-- Furlbrow's Deed (PQI!)
 					},
-					-- #if AFTER 4.0.3
-					["coord"] = { 24.7, 95.2, ELWYNN_FOREST },
+					-- #if AFTER CATA
+					["coord"] = { 24.8, 95.3, ELWYNN_FOREST },
 					-- #else
 					["maps"] = { ELWYNN_FOREST },
+					["crs"] = {
+						116,	-- Defias Bandit
+						6866,	-- Defias Bodyguard
+						6846,	-- Defias Dockmaster
+						6927,	-- Defias Dockworker
+						474,	-- Defias Rogue Wizard
+						880,	-- Erlan Drudgemoor
+					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE CATA
 					["groups"] = {
 						i(5057),	-- Ripe Watermelon
 						i(4656),	-- Small Pumpkin
@@ -494,11 +556,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26252, {	-- Heart of the Watcher
-					["provider"] = { "i", 57935 },	-- Harvest Watcher Heart
 					["sourceQuest"] = 26236,	-- Shakedown at the Saldean's
-				--	SQ needs verification.  might only be available when "Times are Tough" is in log, or might have 0 prereqs
+					["provider"] = { "i", 57935 },	-- Harvest Watcher Heart
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 114,	-- Harvest Watcher
 					["lvl"] = 10,
 				}),
 				q(26378, {	-- Hero's Call: Westfall! (Elwynn Forest)
@@ -510,11 +572,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						42256,	-- Marshal Patterson
 					},
 					["coords"] = {
-						{ 24.2, 74.6, ELWYNN_FOREST },
-						{ 42.2, 65.8, ELWYNN_FOREST },
-						{ 73.8, 72.2, ELWYNN_FOREST },
-						{ 84.6, 69.4, ELWYNN_FOREST },
-						{ 81.8, 66.0, ELWYNN_FOREST },
+						{ 24.2, 74.5, ELWYNN_FOREST },	-- Deputy Rainer
+						{ 42.1, 65.9, ELWYNN_FOREST },	-- Marshal Dughan
+						{ 74.0, 72.2, ELWYNN_FOREST },	-- Guard Thomas
+						{ 84.6, 69.4, ELWYNN_FOREST },	-- Marshal Haggard
+						{ 81.9, 66.0, ELWYNN_FOREST },	-- Marshal Patterson
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -532,24 +594,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(26266, {	-- Hope for the People
-					["providers"] = {
-						{ "n", 235 },	-- Salma Saldean
-						{ "i", 57988 },	-- Westfall Stew
-					},
 					["sourceQuest"] = 26270,	-- You Have Our Thanks
-					["coord"] = { 56.3, 30.5, WESTFALL },
+					["providers"] = {
+						{ "n",   235 },	-- Salma Saldean
+						{ "i", 57988 },	-- Westfall Stew (PQI!)
+					},
+					["coord"] = { 56.4, 30.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26214, {	-- Hot On the Trail: Murlocs
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
 					["sourceQuest"] = 26209,	-- Murder Was The Case That They Gave Me
-					["coord"] = { 60.1, 19.4, WESTFALL },
+					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["coord"] = { 60.1, 19.3, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Murloc Clue
-							["provider"] = { "i", 57756 },	-- Murloc Clue
+							["provider"] = { "i", 57756 },	-- Murloc Clue (QI!)
 							["coord"] = { 55.2, 11.0, WESTFALL },
 							["crs"] = {
 								515,	-- Murloc Raider
@@ -559,14 +621,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26213, {	-- Hot On the Trail: The Riverpaw Clan
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
 					["sourceQuest"] = 26209,	-- Murder Was The Case That They Gave Me
-					["coord"] = { 60.1, 19.4, WESTFALL },
+					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["coord"] = { 60.1, 19.3, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Riverpaw Gnoll Clue
-							["provider"] = { "i", 57755 },	-- Riverpaw Gnoll Clue
+							["provider"] = { "i", 57755 },	-- Riverpaw Gnoll Clue (QI!)
 							["coord"] = { 57.8, 14.2, WESTFALL },
 							["crs"] = {
 								500,	-- Riverpaw Scout
@@ -576,14 +638,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26286, {	-- In Defense of Westfall
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26266,	-- Hope for the People
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["coord"] = { 56.3, 47.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Gnoll Attack Orders
-							["provider"] = { "i", 58111 },	-- Gnoll Attack Orders
+							["provider"] = { "i", 58111 },	-- Gnoll Attack Orders (QI!)
 							["coord"] = { 52.6, 53.4, WESTFALL },
 							["crs"] = {
 								54372,	-- Riverpaw Brute
@@ -609,9 +671,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26229, {	-- "I TAKE Candle!"
-					["qg"] = 42498,	-- Jimb "Candles" McHannigan
 					["sourceQuest"] = 26215,	-- Meet Two-Shoed Lou
-					["coord"] = { 49.7, 19.5, WESTFALL },
+					["qg"] = 42498,	-- Jimb "Candles" McHannigan
+					["coord"] = { 49.6, 19.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -636,20 +698,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26257, {	-- It's Alive!
-					["qg"] = 233,	-- Farmer Saldean
 					["sourceQuest"] = 26252,	-- Heart of the Watcher
-					["coord"] = { 55.9, 31.3, WESTFALL },
+					["providers"] = {
+						{ "n",   233 },	-- Farmer Saldean
+						{ "i", 57954 },	-- Harvest Watcher Heart (PQI!)
+					},
+					["coord"] = { 56.0, 31.2, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Overloaded Harvest Golem enabled
 							["providers"] = {
-								{ "i", 57954 },	-- Harvest Watcher Heart
 								{ "n", 42381 },	-- Overloaded Harvest Golem
 								{ "n", 42601 },	-- Overloaded Harvest Golem
 							},
 						}),
-						objective(2, {	-- 0/25 Energized Harvest Reaper
+						objective(2, {	-- 0/25 Energized Harvest Reaper slain
 							["provider"] = { "n", 42342 },	-- Energized Harvest Reaper
 							["coord"] = { 45.0, 35.4, WESTFALL },
 						}),
@@ -668,9 +732,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26288, {	-- Jango Spothide
-					["qg"] = 821,	-- Captain Danuvin
 					["sourceQuest"] = 26287,	-- The Westfall Brigade
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["qg"] = 821,	-- Captain Danuvin
+					["coord"] = { 56.5, 47.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -682,9 +746,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 98 },	-- Riverpaw Taskmaster
 							["coord"] = { 60.6, 74.6, WESTFALL },
 						}),
-						objective(3, {	-- 0/5 Jango Spothide slain
+						objective(3, {	-- 0/1 Jango Spothide slain
 							["provider"] = { "n", 42653 },	-- Jango Spothide
-							["coord"] = { 62.2, 76.2, WESTFALL },
+							["coord"] = { 62.2, 76.4, WESTFALL },
 						}),
 						i(58920, {	-- Dust Plains Greaves
 							["timeline"] = { ADDED_4_0_3 },
@@ -709,23 +773,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26347, {	-- Keeper of the Flame
 					["qg"] = 392,	-- Captain Grayson
-					["coord"] = { 30.5, 85.4, WESTFALL },
+					["coord"] = { 30.5, 85.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Chasm Ooze
-							["provider"] = { "i", 58204 },	-- Chasm Ooze
+							["provider"] = { "i", 58204 },	-- Chasm Ooze (QI!)
 							["coord"] = { 38.8, 44.4, WESTFALL },
 							["cr"] = 42669,	-- Chasm Slime
 						}),
 					},
 				}),
 				q(2359, {	-- Klaven's Tower
+					["sourceQuest"] = 2360,	-- Mathias and the Defias
 					["providers"] = {
 						{ "n", 7024 },	-- Agent Kearnen
-						{ "i", 8046 },	-- Kearnen's Journal
+						{ "i", 8046 },	-- Kearnen's Journal (PQI!)
 					},
-					["sourceQuest"] = 2360,	-- Mathias and the Defias
 					["coord"] = { 68.5, 70.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -733,12 +797,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Klaven Mortwake's Journal
-							["provider"] = { "i", 7908 },	-- Klaven Mortwake's Journal
+							["provider"] = { "i", 7908 },	-- Klaven Mortwake's Journal (QI!)
 							["coord"] = { 71.0, 74.6, WESTFALL },
 							["cr"] = 7053,	-- Klaven Mortwake
 						}),
 						objective(2, {	-- 0/1 Defias Tower Key
-							["provider"] = { "i", 7923 },	-- Defias Tower Key
+							["provider"] = { "i", 7923 },	-- Defias Tower Key (QI!)
 							["coord"] = { 68.6, 72.2, WESTFALL },
 							["cr"] = 7051,	-- Malformed Defias Drone
 						}),
@@ -757,23 +821,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26228, {	-- Livin' the Life
-					["qg"] = 42405,	-- Two-Shoed Lou
 					["sourceQuest"] = 26215,	-- Meet Two-Shoed Lou
-					["coord"] = { 49.7, 19.5, WESTFALL },
+					["qg"] = 42405,	-- Two-Shoed Lou
+					["coord"] = { 49.7, 19.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Livin' the Life!
-							["provider"] = { "i", 57761 },	-- Two-Shoed Lou's Old House
-							--["coord"] = { 63.9, 26.2, 54 },	-- Jangolode Mine
-							["coord"] = { 46.5, 19.3, WESTFALL },
+							["provider"] = { "i", 57761 },	-- Two-Shoed Lou's Old House (PQI!)
+							["coords"] = {
+								{ 46.2, 19.1, WESTFALL },
+								{ 62.0, 26.4, 54 },	-- Jangolode Mine
+							},
 						}),
 					},
 				}),
 				q(26232, {	-- Lou's Parting Thoughts
-					["qg"] = 42405,	-- Two-Shoed Lou
 					["sourceQuest"] = 26228,	-- Livin' the Life
-					["coord"] = { 49.7, 19.5, WESTFALL },
+					["qg"] = 42405,	-- Two-Shoed Lou
+					["coord"] = { 49.7, 19.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -784,22 +850,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26215, {	-- Meet Two-Shoed Lou
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
 					["sourceQuests"] = {
 						26214,	-- Hot On the Trail: Murlocs
 						26213,	-- Hot On the Trail: The Riverpaw Clan
 					},
-					["coord"] = { 60.1, 19.4, WESTFALL },
+					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["coord"] = { 60.1, 19.3, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26209, {	-- Murder Was The Case That They Gave Me
-					["qg"] = 42308,	-- Lieutenant Horatio Laine
 					["sourceQuests"] = {
 						26378,	-- Hero's Call: Westfall! (Elwynn Forest)
 						28562,	-- Hero's Call: Westfall!
 					},
-					["coord"] = { 60.1, 19.4, WESTFALL },
+					["qg"] = 42308,	-- Lieutenant Horatio Laine
+					["coord"] = { 60.1, 19.3, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -854,7 +920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 8,
 					["groups"] = {
 						objective(1, {	-- 0/8 Gnoll Paw
-							["provider"] = { "i", 725 },	-- Gnoll Paw
+							["provider"] = { "i", 725 },	-- Gnoll Paw (QI!)
 							["crs"] = {
 								452,	-- Riverpaw Bandit
 								124,	-- Riverpaw Brute
@@ -887,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Handful of Oats
 							["providers"] = {
-								{ "i", 1528 },	-- Handful of Oats
+								{ "i", 1528 },	-- Handful of Oats (QI!)
 								{ "o", 2724 },	-- Sack of Oats
 							},
 						}),
@@ -900,39 +966,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26295, {	-- Propaganda
-					["qg"] = 42425,	-- Captain Alpert
 					["sourceQuest"] = 26292,	-- To Moonbrook!
-					["coord"] = { 42.2, 64.0, WESTFALL },
+					["qg"] = 42425,	-- Captain Alpert
+					["coord"] = { 42.1, 64.1, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Informational Pamphlet
 							["providers"] = {
-								{ "i", 58113 },	-- Informational Pamphlet
+								{ "i",  58113 },	-- Informational Pamphlet (QI!)
 								{ "o", 204014 },	-- Informational Pamphlet
 							},
-							["coord"] = { 41.5, 66.5, WESTFALL },
+							["coord"] = { 41.6, 66.4, WESTFALL },
 						}),
 						objective(2, {	-- 0/1 Issue of the Moonbrook Times
 							["providers"] = {
-								{ "i", 58114 },	-- Issue of the Moonbrook Times
+								{ "i",  58114 },	-- Issue of the Moonbrook Times (QI!)
 								{ "o", 204015 },	-- The Moonbrook Times
 							},
-							["coord"] = { 44.5, 68.3, WESTFALL },
+							["coords"] = {
+								{ 42.4, 69.6, WESTFALL },
+								{ 43.3, 69.9, WESTFALL },
+								{ 44.5, 68.3, WESTFALL },
+								{ 44.5, 70.6, WESTFALL },
+							},
 						}),
 						objective(3, {	-- 0/1 Secret Journal
 							["providers"] = {
-								{ "i", 58115 },	-- Secret Journal
+								{ "i",  58115 },	-- Secret Journal (QI!)
 								{ "o", 204016 },	-- Secret Journal
 							},
-							["coord"] = { 43.5, 66.7, WESTFALL },
+							["coord"] = { 43.5, 66.6, WESTFALL },
 						}),
 						objective(4, {	-- 0/1 Mysterious Propaganda
 							["providers"] = {
-								{ "i", 58116 },	-- Mysterious Propaganda
+								{ "i",  58116 },	-- Mysterious Propaganda (QI!)
 								{ "o", 204017 },	-- Mysterious Propaganda
 							},
-							["coord"] = { 42.5, 71.7, WESTFALL },
+							["coords"] = {
+								{ 41.3, 66.5, WESTFALL },
+								{ 42.6, 69.6, WESTFALL },
+								{ 42.5, 71.7, WESTFALL },
+								{ 43.6, 68.8, WESTFALL },
+							},
 						}),
 					},
 				}),
@@ -944,7 +1020,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/15 Red Leather Bandana
-							["provider"] = { "i", 829 },	-- Red Leather Bandana
+							["provider"] = { "i", 829 },	-- Red Leather Bandana (QI!)
 							["crs"] = {
 								502,	-- Benny Blaanco
 								481,	-- Defias Footpad
@@ -993,24 +1069,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 				}),
 				q(26370, {	-- Return to Sentinel Hill
+					["sourceQuest"] = 26322,	-- Rise of the Brotherhood
 					["qgs"] = {
 						-- #if AFTER 8.0.1
 						1750,	-- Grand Admiral Jes-Tereth
 						-- #elseif AFTER 7.0.3
-						107574,	-- Anduin Wrynn
+						107574,	-- Anduin Wrynn <King of Stormwind>
 						-- #else
-						29611,	-- King Varian Wrynn
+						29611,	-- King Varian Wrynn <King of Stormwind>
 						-- #endif
 					},
-					["sourceQuest"] = 26322,	-- Rise of the Brotherhood
-					["coord"] = { 85.6, 32.7, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER 8.0.1
+						{ 85.9, 32.8, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+						-- #else
+						{ 85.6, 32.7, STORMWIND_CITY },	-- King Varian Wrynn / Anduin Wrynn <King of Stormwind>
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26322, {	-- Rise of the Brotherhood
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26320,	-- A Vision of the Past
-					["coord"] = { 56.2, 47.6, WESTFALL },
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["coord"] = { 56.3, 47.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1035,29 +1117,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26290, {	-- Secrets of the Tower
-					["qg"] = 7024,	-- Agent Kearnen
 					["sourceQuest"] = 26289,	-- Find Agent Kearnen
-					["coord"] = { 68.2, 70.4, WESTFALL },
+					["providers"] = {
+						{ "n",  7024 },	-- Agent Kearnen
+						{ "i", 58112 },	-- Potion of Shrouding (PQI)
+					},
+					["coord"] = { 68.3, 70.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Helix's Secret Revealed
-							["provider"] = { "i", 58112 },	-- Potion of Shrouding
-							["coord"] = { 70.4, 74.2, WESTFALL },
-							["cr"] = 42753,	-- Helix Gearbreaker
+							["provider"] = { "n", 42655 },	-- Helix Gearbreaker
+							["coord"] = { 70.5, 74.1, WESTFALL },
 						}),
 					},
 				}),
 				q(26319, {	-- Secrets Revealed
-					["qg"] = 42425,	-- Captain Alpert
 					["sourceQuest"] = 26297,	-- The Dawning of a New Day
-					["coord"] = { 42.2, 64.0, WESTFALL },
+					["qg"] = 42425,	-- Captain Alpert
+					["coord"] = { 42.1, 64.1, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26236, {	-- Shakedown at the Saldean's
-					["qg"] = 42558,	-- Lieutenant Horatio Laine
 					["sourceQuest"] = 26232,	-- Lou's Parting Thoughts
+					["qg"] = 42558,	-- Lieutenant Horatio Laine
 					["coord"] = { 49.8, 19.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1072,7 +1156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Holy Spring Water
 							["providers"] = {
-								{ "i", 737 },	-- Holy Spring Water
+								{ "i", 737 },	-- Holy Spring Water (QI!)
 								{ "o", 759 },	-- The Holy Spring
 							},
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
@@ -1080,8 +1164,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(49, {		-- Sweet Amber (2/5)
-					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS, TANARIS, SWAMP_OF_SORROWS },
@@ -1090,21 +1174,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Sack of Barley
 							["providers"] = {
-								{ "i", 738 },	-- Sack of Barley
+								{ "i",   738 },	-- Sack of Barley (QI!)
 								{ "o", 50936 },	-- Sack of Barley
 							},
 							["coord"] = { 62.5, 23.3, SWAMP_OF_SORROWS },
 						}),
 						objective(2, {	-- 0/1 Sack of Corn
 							["providers"] = {
-								{ "i", 739 },	-- Sack of Corn
+								{ "i",   739 },	-- Sack of Corn (QI!)
 								{ "o", 50935 },	-- Sack of Corn
 							},
 							["coord"] = { 65.8, 36.7, TANARIS },
 						}),
 						objective(3, {	-- 0/1 Sack of Rye
 							["providers"] = {
-								{ "i", 740 },	-- Sack of Rye
+								{ "i",   740 },	-- Sack of Rye (QI!)
 								{ "o", 50937 },	-- Sack of Rye
 							},
 							["coord"] = { 39.9, 66.2, THE_HINTERLANDS },
@@ -1112,8 +1196,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(50, {		-- Sweet Amber (3/5)
-					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 6037, 1 } },	-- Truesilver Bar
@@ -1121,8 +1205,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(51, {		-- Sweet Amber (4/5)
-					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
@@ -1130,15 +1214,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- 0/1 A Sycamore Branch
-							["provider"] = { "i", 742 },	-- A Sycamore Branch
+							["provider"] = { "i", 742 },	-- A Sycamore Branch (QI!)
 							["coord"] = { 54.8, 70.4, FERALAS },
 							["cr"] = 5881,	-- Cursed Sycamore
 						}),
 					},
 				}),
 				q(53, {		-- Sweet Amber (5/5)
-					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SEARING_GORGE },
@@ -1147,7 +1231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Bundle of Charred Oak
 							["providers"] = {
-								{ "i", 743 },	-- Bundle of Charred Oak
+								{ "i",   743 },	-- Bundle of Charred Oak (QI!)
 								{ "o", 50982 },	-- The Charred Oak
 							},
 							["coord"] = { 54.6, 50.7, SEARING_GORGE },
@@ -1178,9 +1262,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26348, {	-- The Coast Isn't Clear
-					["qg"] = 392,	-- Captain Grayson
 					["sourceQuest"] = 26371,	-- The Legend of Captain Grayson
-					["coord"] = { 30.5, 85.4, WESTFALL },
+					["qg"] = 392,	-- Captain Grayson
+					["coord"] = { 30.5, 85.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1199,11 +1283,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scale of Old Murk-Eye
-							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye
+							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye (QI!)
 							["coord"] = { 34.4, 84.6, WESTFALL },
 							["cr"] = 391,	-- Old Murk-Eye
 						}),
-						-- #if BEFORE 4.0.3
+						-- #if BEFORE CATA
 						i(1557),	-- Buckler of the Seas
 						i(1172),	-- Grayson's Torch
 						i(5240),	-- Torchlight Wand
@@ -1212,12 +1296,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26349, {	-- The Coastal Menace
 					["qg"] = 392,	-- Captain Grayson
-					["coord"] = { 30.5, 85.4, WESTFALL },
+					["coord"] = { 30.5, 85.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Scale of Old Murk-Eye
-							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye
+							["provider"] = { "i", 3636 },	-- Scale of Old Murk-Eye (QI!)
 							["coord"] = { 34.4, 84.6, WESTFALL },
 							["cr"] = 391,	-- Old Murk-Eye
 						}),
@@ -1227,11 +1311,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26297, {	-- The Dawning of a New Day
-					["qg"] = 42425,	-- Captain Alpert
 					["sourceQuest"] = 26295,	-- Propaganda
-					["coord"] = { 42.2, 64.0, WESTFALL },
+					["qg"] = 42425,	-- Captain Alpert
+					["coord"] = { 42.1, 64.1, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Information from Moonbrook Rally gathered
+							["provider"] = { "n", 42680 },	-- Shadowy Figure
+							["coord"] = { 43.9, 69.3, WESTFALL },
+						}),
+					},
 				}),
 				q(65, {		-- The Defias Brotherhood (1/7)
 					["qg"] = 234,	-- Gryan Stoutmantle
@@ -1241,56 +1331,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 14,
 				}),
 				q(132, {	-- The Defias Brotherhood (2/7)
-					["providers"] = {
-						{ "n", 266 },	-- Wiley the Black
-						{ "i", 1327 },	-- Wiley's Note
-					},
 					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
+					["providers"] = {
+						{ "n",  266 },	-- Wiley the Black
+						{ "i", 1327 },	-- Wiley's Note (PQI!)
+					},
 					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(135, {	-- The Defias Brotherhood (3/7)
-					["providers"] = {
-						{ "n", 234 },	-- Gryan Stoutmantle
-						{ "i", 1327 },	-- Wiley's Note
-					},
 					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
+					["providers"] = {
+						{ "n",  234 },	-- Gryan Stoutmantle
+						{ "i", 1327 },	-- Wiley's Note (PQI!)
+					},
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
-					["providers"] = {
-						{ "n", 332 },	-- Master Mathias Shaw
-						{ "i", 1353 },	-- Shaw's Report
-					},
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
+					["providers"] = {
+						{ "n",  332 },	-- Master Mathias Shaw
+						{ "i", 1353 },	-- Shaw's Report (PQI!)
+					},
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(142, {	-- The Defias Brotherhood (5/7)
-					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 141,	-- The Defias Brotherhood (4/7)
+					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 					["groups"] = {
 						objective(1, {
-							["provider"] = { "i", 1381 },	-- A Mysterious Message
+							["provider"] = { "i", 1381 },	-- A Mysterious Message (QI!)
 							["coord"] = { 45.6, 68.6, WESTFALL },
 							["cr"] = 550,	-- Defias Messenger
 						}),
 					},
 				}),
 				q(155, {	-- The Defias Brotherhood (6/7)
-					["qg"] = 467,	-- The Defias Traitor
 					["sourceQuest"] = 142,	-- The Defias Brotherhood (5/7)
+					["qg"] = 467,	-- The Defias Traitor
 					["coord"] = { 55.6, 47.5, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1305,7 +1395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Furlbrow's Pocket Watch
 							["providers"] = {
-								{ "i", 841 },	-- Furlbrow's Pocket Watch
+								{ "i", 841 },	-- Furlbrow's Pocket Watch (PQI!)
 								{ "o", 290 },	-- Furlbrow's Wardrobe
 							},
 							["coord"] = { 49.3, 19.5, WESTFALL },
@@ -1332,7 +1422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26371, {	-- The Legend of Captain Grayson
 					["qg"] = 878,	-- Scout Galiaan
-					["coord"] = { 56.2, 47.4, WESTFALL },
+					["coord"] = { 56.4, 47.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1353,8 +1443,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(13, {		-- The People's Militia (2/3)
-					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 12,	-- The People's Militia (1/3)
+					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1369,8 +1459,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14, {		-- The People's Militia (3/3)
-					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 13,	-- The People's Militia (2/3)
+					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1397,31 +1487,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26287, {	-- The Westfall Brigade
-					["qg"] = 821,	-- Captain Danuvin
 					["sourceQuest"] = 26266,	-- Hope for the People
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["qg"] = 821,	-- Captain Danuvin
+					["coord"] = { 56.5, 47.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Attacking Riverpaw Gnoll slain
 							["providers"] = {
-								{ "n", 452 },	-- Riverpaw Bandit
+								{ "n",   452 },	-- Riverpaw Bandit
 								{ "n", 54371 },	-- Riverpaw Bandit
-								{ "n", 124 },	-- Riverpaw Brute
+								{ "n",   124 },	-- Riverpaw Brute
 								{ "n", 54372 },	-- Riverpaw Brute
-								{ "n", 501 },	-- Riverpaw Herbalist
+								{ "n",   501 },	-- Riverpaw Herbalist
 								{ "n", 54373 },	-- Riverpaw Herbalist
 							},
 						}),
 					},
 				}),
 				q(26761, {	-- Threat to the Kingdom
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26370,	-- Return to Sentinel Hill
-					["coord"] = { 56.3, 49.5, WESTFALL },
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["coord"] = { 56.4, 49.6, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					--["isBreadcrumb"] = true,	-- not sure!
 				}),
 				q(117, {	-- Thunderbrew
 					["qg"] = 239,	-- Grimbooze Thunderbrew
@@ -1437,9 +1526,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26237, {	-- Times are Tough
-					["qg"] = 233,	-- Farmer Saldean
 					["sourceQuest"] = 26236,	-- Shakedown at the Saldean's
-					["coord"] = { 55.9, 31.3, WESTFALL },
+					["qg"] = 233,	-- Farmer Saldean
+					["coord"] = { 56.0, 31.2, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1450,16 +1539,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26292, {	-- To Moonbrook!
-					["qg"] = 234,	-- Marshal Gryan Stoutmantle
 					["sourceQuest"] = 26291,	-- Big Trouble in Moonbrook
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["qg"] = 234,	-- Marshal Gryan Stoutmantle
+					["coord"] = { 56.3, 47.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36, {		-- Westfall Stew (1/2)
 					["providers"] = {
-						{ "n", 238 },	-- Verna Furlbrow
-						{ "i", 2832 },	-- Verna's Westfall Stew Recipe
+						{ "n",  238 },	-- Verna Furlbrow
+						{ "i", 2832 },	-- Verna's Westfall Stew Recipe (PQI!)
 					},
 					["coord"] = { 60.0, 19.4, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1467,17 +1556,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 				}),
 				q(38, {		-- Westfall Stew (2/2)
-					["qg"] = 235,	-- Salma Saldean
 					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
+					["qg"] = 235,	-- Salma Saldean
 					["coord"] = { 56.4, 30.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 729, 3 },	-- Stringy Vulture Meat
 						{ "i", 730, 3 },	-- Murloc Eye
 						{ "i", 731, 3 },	-- Goretusk Snout
 						{ "i", 732, 3 },	-- Okra
 					},
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						i(728),	-- Recipe: Westfall Stew (RECIPE!)
@@ -1491,21 +1580,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26241, {	-- Westfall Stew
-					["qg"] = 235,	-- Salma Saldean
 					["sourceQuest"] = 26236,	-- Shakedown at the Saldean's
-					["coord"] = { 56.3, 30.6, WESTFALL },
+					["qg"] = 235,	-- Salma Saldean
+					["coord"] = { 56.4, 30.5, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Okra
 							["providers"] = {
-								{ "i",  57911 },	-- Okra
+								{ "i",  57911 },	-- Okra (QI!)
 								{ "o", 203982 },	-- Okra
 							},
 							["coord"] = { 54.6, 33.6, WESTFALL },
 						}),
 						objective(2, {	-- 0/6 Goretusk Flank
-							["provider"] = { "i", 57788 },	-- Goretusk Flank
+							["provider"] = { "i", 57788 },	-- Goretusk Flank (QI!)
 							["coord"] = { 52.6, 22.2, WESTFALL },
 							["crs"] = {
 								157,	-- Goretusk
@@ -1514,7 +1603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						objective(3, {	-- 0/6 Stringy Fleshripper Meat
-							["provider"] = { "i", 57786 },	-- Stringy Fleshripper Meat
+							["provider"] = { "i", 57786 },	-- Stringy Fleshripper Meat (QI!)
 							["coord"] = { 49.0, 27.4, WESTFALL },
 							["crs"] = {
 								1109,	-- Fleshripper
@@ -1537,12 +1626,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26270, {	-- You Have Our Thanks
-					["qg"] = 233,	-- Farmer Saldean
 					["sourceQuests"] = {
 						26237,	-- Times are Tough
 						26241,	-- Westfall Stew
 					},
-					["coord"] = { 55.9, 31.3, WESTFALL },
+					["qg"] = 233,	-- Farmer Saldean
+					["coord"] = { 56.0, 31.2, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1915,7 +2004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.4, 66.8, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE CATA
 					["groups"] = {
 						i(4788, {	-- Agile Boots
 							["isLimited"] = true,
@@ -2000,62 +2089,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 124,	-- Riverpaw Brute
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 54.2, 62.0, WESTFALL },
-						{ 55.8, 68.4, WESTFALL },
-						{ 55.4, 69.4, WESTFALL },
-						{ 31.4, 70.4, WESTFALL },
-						{ 48.8, 62.6, WESTFALL },
-						-- #else
+						-- #if AFTER CATA
 						{ 65.4, 72.4, WESTFALL },
 						{ 50.8, 42.8, WESTFALL },
 						{ 46.8, 53.8, WESTFALL },
 						{ 49.4, 63.0, WESTFALL },
 						{ 32.4, 71.8, WESTFALL },
+						-- #else
+						{ 54.2, 62.0, WESTFALL },
+						{ 55.8, 68.4, WESTFALL },
+						{ 55.4, 69.4, WESTFALL },
+						{ 31.4, 70.4, WESTFALL },
+						{ 48.8, 62.6, WESTFALL },
 						-- #endif
 					},
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				i(1357, {	-- Captain Sander's Treasure Map
-					["coords"] = {
-						-- various common map locations where 'crs' may be found
-						{ 28.8, 72.8, WESTFALL },
-						{ 33.0, 83.6, WESTFALL },
-						{ 34.6, 85.4, WESTFALL },
-						{ 44.2, 9.6, WESTFALL },
-						{ 50.8, 10.6, WESTFALL },
-						{ 53.6, 11.6, WESTFALL },
-						{ 55.8, 8.0, WESTFALL },
-						{ 56.0, 9.8, WESTFALL },
-						{ 56.6, 9.2, WESTFALL },
-					},
-					["crs"] = {
-						126,	-- Murloc Coastrunner
-						458,	-- Murloc Hunter
-						456,	-- Murloc Minor Oracle
-						513,	-- Murloc Netter
-						517,	-- Murloc Oracle
-						515,	-- Murloc Raider
-						127,	-- Murloc Tidehunter
-						171,	-- Murloc Warrior
-						391,	-- Old Murk-Eye
-						519,	-- Slark
-					},
-				}),
-				-- #if ANYCLASSIC
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 54.2, 42.6, WESTFALL },
-					["maps"] = { REDRIDGE_MOUNTAINS },
-					["crs"] = {
-						157,	-- Goretusk
-						547,	-- Great Goretusk
-						454,	-- Young Goretusk
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
 				-- #endif
-				-- #if AFTER 4.0.3
+				i(2673, {	-- Coyote Meat
+					["coord"] = { 49.4, 24.5, WESTFALL },	-- Furlbrow's Pumpkin Farm
+					["crs"] = {
+						834,	-- Coyote
+						833,	-- Coyote Packleader
+					},
+					["description"] = "Only drops from coyotes in Westfall.",
+				}),
+				-- #if AFTER CATA
 				i(1927, {	-- Deadmines Cleaver
 					["cr"] = 594,	-- Defias Henchman
 				}),
@@ -2185,13 +2248,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if BEFORE 4.0.3
-				i(723, {	-- Goretusk Liver
-					["crs"] = {
-						157,	-- Goretusk
-						454,	-- Young Goretusk
-					},
-				}),
+				-- #if BEFORE CATA
+				i(723),	-- Goretusk Liver
 				i(731, {	-- Goretusk Snout
 					["crs"] = {
 						157,	-- Goretusk
@@ -2205,12 +2263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2087, {	-- Hard Crawler Carapace
 					["cr"] = 830,	-- Sand Crawler
 				}),
-				i(57935, {	-- Harvest Watcher Heart
-					["coord"] = { 54.4, 33.2, WESTFALL },	-- center of area where Harvest Watchers spawn
-					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 114,	-- Harvest Watcher
-				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE CATA
 				i(1274, {	-- Hops
 					["crs"] = {
 						573,	-- Foe Reaper 4000
@@ -2239,7 +2292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2091, {	-- Magic Dust
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE CATA
 					["cr"] = 832,	-- Dust Devil
 					["coords"] = {
 						{ 40.8, 22.0, WESTFALL },
@@ -2311,7 +2364,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						125,	-- Riverpaw Overseer
 						-- #endif
 					},
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE CATA
 					["coords"] = {
 						{ 63.8, 78.6, WESTFALL },
 						{ 60.2, 76.6, WESTFALL },
@@ -2323,7 +2376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 					["cr"] = 590,	-- Defias Looter
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE CATA
 				i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),
@@ -2336,19 +2389,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if AFTER 4.0.3
+				-- #if AFTER CATA
 				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
-					["description"] = "Can drop from any hostile creature in the zone.\nRecommended farming spot: Murlocs in the north area.",
+					["description"] = "Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",
 				}),
 				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
-					["description"] = "Can drop from any hostile creature in the zone.\nRecommended: farm the Riverpaw Gnolls.",
+					["description"] = "Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",
 				}),
 				-- #endif
-				i(58117, {	-- Red Bandana
-					["coord"] = { 42.6, 69.4, WESTFALL },	-- center of area where Moonbrook Thugs spawn
-					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 42677,	-- Moonbrook Thug
-				}),
 				i(821, {	-- Riverpaw Leather Vest
 					["cr"] = 123,	-- Riverpaw Mongrel
 				}),
@@ -2469,8 +2517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
-					-- Moved to Brainwashed Noble in 10.1.7
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },	-- Moved to Brainwashed Noble in 10.1.7
 					["cr"] = 619,	-- Defias Conjurer
 					["coords"] = {
 						{ 44.6, 69.4, WESTFALL },

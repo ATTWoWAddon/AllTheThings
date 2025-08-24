@@ -17,24 +17,24 @@ root(ROOTS.Zones, {
 				n(EXPLORATION, sharedData({
 					["races"] = { GOBLIN },
 				},{
-					exploration(4767),    -- Bilgewater Port
-					exploration(4771),    -- Drudgetown
-					exploration(4770),    -- First Bank of Kezan
-					exploration(4768),    -- Gallywix's Villa
-					exploration(4766),    -- Kaja'mine
-					exploration(4822),    -- Kajaro Field
-					exploration(4765),    -- KTC Headquarters
+					exploration(4767),	-- Bilgewater Port
+					exploration(4771),	-- Drudgetown
+					exploration(4770),	-- First Bank of Kezan
+					exploration(4768),	-- Gallywix's Villa
+					exploration(4766),	-- Kaja'mine
+					exploration(4822),	-- Kajaro Field
+					exploration(4765),	-- KTC Headquarters
 				})),
 				n(QUESTS, {
 					q(14125, {	-- 447
-						["coord"] = { 59.6, 77.0, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuests"] = {
 							14124,	-- Liberate the Kaja'mite
 							14121,	-- Robbing Hoods
 							14122,	-- The Great Bank Heist
 							14123,	-- Waltz Right In
 						},
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 59.6, 77.0, KEZAN },
 						["groups"] = {
 							i(54307),	-- Flame-Retardant Pajama Sleeves
 							i(54309),	-- Gas Soaked Boots
@@ -45,14 +45,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14120, {	-- A Bazillion Macaroons?!
-						["coord"] = { 56.7, 76.9, KEZAN },
-						["qg"] = 35222,	-- Trady Prince Gallywix
 						["sourceQuest"] = 14116,	-- The Uninvited Guest
+						["qg"] = 35222,	-- Trady Prince Gallywix
+						["coord"] = { 56.7, 76.9, KEZAN },
+					}),
+					q(14008, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Goblin)
+						["qg"] = 34689,	-- Fizz Lighter <Mage Trainer>
+						["coord"] = { 59.6, 73.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { MAGE },
+					}),
+					q(14013, {	-- Charge (Goblin)
+						["qg"] = 34697,	-- Warrior-Matic NX-01 <Warrior Trainer>
+						["coord"] = { 60.6, 77.4, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { WARRIOR },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
 					}),
 					q(14070, {	-- Do it Yourself
-						["coord"] = { 56.4, 76.9, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuest"] = 14071,	-- Rolling with my Homies
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 56.4, 76.9, KEZAN },
 						["groups"] = {
 							i(54297),	-- Cracking Whip
 							i(54296),	-- Debt Collector's Gloves
@@ -61,9 +76,17 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(14010, {	-- Eviscerate (Goblin)
+						["qg"] = 34693,	-- Slinky Sharpshiv <Rogue Trainer>
+						["coord"] = { 59.2, 76.2, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { ROGUE },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
+					}),
 					q(24503, {	-- Fourth and Goal [Auto-Given in Mech]
-						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24502,	-- Necessary Roughness
+						["qg"] = 37106,	-- Coach Crosscheck
 						["coord"] = { 47.7, 57.7, KEZAN },
 						["groups"] = {
 							i(54294),	-- Athlete's Robe
@@ -71,8 +94,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(28414, {	-- Fourth and Goal [Quest Giver]
-						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24502,	-- Necessary Roughness
+						["qg"] = 37106,	-- Coach Crosscheck
 						["coord"] = { 48.7, 57.7, KEZAN },
 						["groups"] = {
 							i(54294),	-- Athlete's Robe
@@ -80,27 +103,43 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24520, {	-- Give Sassy the News
-						["coord"] = { 48.7, 57.7, KEZAN },
-						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuests"] = { 28414, 24503 },	-- Necessary Roughness
+						["qg"] = 37106,	-- Coach Crosscheck
+						["coord"] = { 48.7, 57.7, KEZAN },
 					}),
 					q(14069, {	-- Good Help is Hard to Find
-						["coord"] = { 60.2, 74.5, KEZAN },
-						["qg"] = 34872,	-- Foreman Dampwick
 						["sourceQuest"] = 14138,	-- Taking Care of Business
+						["qg"] = 34872,	-- Foreman Dampwick
+						["coord"] = { 60.2, 74.5, KEZAN },
+					}),
+					q(14009, {	-- Flash Heal [Cata] / Learning the Word [MoP+] (Goblin)
+						["qg"] = 34692,	-- Sister Goldskimmer <Priest Trainer>
+						["coord"] = { 58.8, 76.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { PRIEST },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
+					}),
+					q(14012, {	-- Immolate [Cata] / Corruption [MoP+] (Goblin)
+						["qg"] = 34696,	-- Evol Fingers <Warlock Trainer>
+						["coord"] = { 58.2, 74.2, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { WARLOCK },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
 					}),
 					q(25473, {	-- Kaja'Cola
-						["coord"] = { 60.2, 74.5, KEZAN },
-						["qg"] = 34872,	-- Foreman Dampwick
 						["sourceQuests"] = {
 							14069,	-- Good Help is Hard to Find
 							14075,	-- Troublee in the Mines
 						},
+						["qg"] = 34872,	-- Foreman Dampwick
+						["coord"] = { 60.2, 74.5, KEZAN },
 					}),
 					q(14124, {	-- Liberate the Kaja'mite
-						["coord"] = { 62.9, 77.8, KEZAN },
-						["qg"] = 34872,	-- Foreman Dampwick
 						["sourceQuest"] = 14120,	-- A Bazillion Macaroons?!
+						["qg"] = 34872,	-- Foreman Dampwick
+						["coord"] = { 62.9, 77.8, KEZAN },
 						["groups"] = {
 							o(195492, {	-- Kaja'mite Chunk
 								i(48766),	-- Kaja'mite Chunk (QI!)
@@ -109,71 +148,78 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14113, {	-- Life of the Party [Male Version]
-						["coord"] = { 56.3, 77.1, KEZAN },
-						["qg"] = 35053,	-- Candy Cane
 						["sourceQuests"] = {
 							24520,	-- Give Sassy the News
 							14109,	-- The New You [Male]
 							14070,	-- Do It Yourself
 						},
+						["qg"] = 35053,	-- Candy Cane
+						["coord"] = { 56.3, 77.1, KEZAN },
 					}),
 					q(14153, {	-- Life of the Party [Female Version]
-						["coord"] = { 56.3, 76.8, KEZAN },
-						["qg"] = 35054,	-- Chip Endale
 						["sourceQuests"] = {
 							24520,	-- Give Sassy the News
 							14109,	-- The New You [Female]
 							14070,	-- Do It Yourself
 						},
+						["qg"] = 35054,	-- Chip Endale
+						["coord"] = { 56.3, 76.8, KEZAN },
 					}),
 					q(14126, {	-- Life Savings
-						["coord"] = { 59.6, 77.0, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuest"] = 14125,	-- 447
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 59.6, 77.0, KEZAN },
 					}),
 					q(28349, {	-- Megs in Marketing
-						["coord"] = { 56.4, 76.9, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuest"] = 25473,	-- Kaja'Cola
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 56.4, 76.9, KEZAN },
 					}),
 					q(24502, {	-- Necessary Roughness
-						["coord"] = { 48.7, 57.7, KEZAN },
-						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24488,	-- The Replacements
+						["qg"] = 37106,	-- Coach Crosscheck
+						["coord"] = { 48.7, 57.7, KEZAN },
 					}),
 					q(26712, {	-- Off to the Bank  [Male Version]
-						["coord"] = { 56.3, 77.1, KEZAN },
-						["qg"] = 35053,	-- Candy Cane
 						["sourceQuest"] = 14071,	-- Rolling with my Homies
+						["qg"] = 35053,	-- Candy Cane
+						["coord"] = { 56.3, 77.1, KEZAN },
 					}),
 					q(26711, {	-- Off to the Bank  [Female Version]
-						["coord"] = { 56.3, 76.8, KEZAN },
-						["qg"] = 35054,	-- Chip Endale
 						["sourceQuest"] = 14071,	-- Rolling with my Homies
+						["qg"] = 35054,	-- Chip Endale
+						["coord"] = { 56.3, 76.8, KEZAN },
 					}),
 					q(14115, {	-- Pirate Party Crashers
-						["coord"] = { 56.4, 76.9, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuests"] = { 14153, 14113 },	-- Life of the Party
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 56.4, 76.9, KEZAN },
 						["groups"] = {
 							i(54302),	-- Southsea Sash
 							i(54303),	-- Total Disaster Bracers
 						},
 					}),
+					q(14011, {	-- Primal Strike (Goblin)
+						["qg"] = 34695,	-- Maxx Avalanche <Shaman Trainer>
+						["coord"] = { 59.6, 77, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { SHAMAN },
+					}),
 					q(24567, {	-- Report for Tryouts
-						["coord"] = { 58.3, 76.4, KEZAN },
-						["qg"] = 34874,	-- Megs Dreadshredder
 						["sourceQuest"] = 14071,	-- Rolling with my Homies
+						["qg"] = 34874,	-- Megs Dreadshredder
+						["coord"] = { 58.3, 76.4, KEZAN },
 					}),
 					q(14121, {	-- Robbing Hoods
-						["coord"] = { 60.0, 78.1, KEZAN },
-						["qg"] = 34874,	-- Megs Dreadshredder
 						["sourceQuest"] = 14120,	-- A Bazillion Macaroons?!
+						["qg"] = 34874,	-- Megs Dreadshredder
+						["coord"] = { 60.0, 78.1, KEZAN },
 					}),
 					q(14071, {	-- Rolling with my Homies
-						["coord"] = { 58.3, 76.4, KEZAN },
-						["qg"] = 34874,	-- Megs Dreadshredder
 						["sourceQuest"] = 28349,	-- Megs in Marketing
+						["qg"] = 34874,	-- Megs Dreadshredder
+						["coord"] = { 58.3, 76.4, KEZAN },
 						["groups"] = {
 							i(131858, {	-- Clinking Chain Trousers
 								["timeline"] = { ADDED_7_0_3 },
@@ -183,14 +229,22 @@ root(ROOTS.Zones, {
 							i(54300),	-- Tight-Fitting Leather Leggings
 						},
 					}),
+					q(14007, {	-- Steady Shot (Goblin)
+						["qg"] = 34673,	-- Bamm Megabomb <Hunter Trainer>
+						["coord"] = { 60.6, 77.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { HUNTER },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
+					}),
 					q(14138, {	-- Taking Care of Business
-						["coord"] = { 56.4, 76.9, KEZAN },
 						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 56.4, 76.9, KEZAN },
 					}),
 					q(14122, {	-- The Great Bank Heist
-						["coord"] = { 59.6, 77.0, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuest"] = 14120,	-- A Bazillion Macaroons?!
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 59.6, 77.0, KEZAN },
 						["groups"] = {
 							i(56148),	-- Bank Robber's Bag
 							i(54304),	-- First Bank Knocker
@@ -202,34 +256,40 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(28607, {	-- The Keys to the Hot Rod
-						["coord"] = { 58.3, 76.4, KEZAN },
 						["qg"] = 34874,	-- Megs Dreadshredder
+						["coord"] = { 58.3, 76.4, KEZAN },
 						["repeatable"] = true,
 					}),
+					q(90869, {	-- It's All in the Image
+						--["sourceQuest"] = TODO,	-- TODO
+						["qg"] = 34874,	-- Megs Dreadshredder
+						["coord"] = { 58.3, 76.4, KEZAN },
+						["timeline"] = { ADDED_11_2_0 },
+					}),
 					q(14109, {	-- The New You [Male Version]
-						["coord"] = { 30.1, 71.9, KEZAN },
-						["qg"] = 35120,	-- FBoK Bank Teller
 						["sourceQuest"] = 26712,	-- Off to Bank [Male Version]
+						["qg"] = 35120,	-- FBoK Bank Teller
+						["coord"] = { 30.1, 71.9, KEZAN },
 					}),
 					q(14110, {	-- The New You [Female Version]
-						["coord"] = { 30.1, 71.9, KEZAN },
-						["qg"] = 35120,	-- FBoK Bank Teller
 						["sourceQuest"] = 26711,	-- Off to Bank [Female Version]
+						["qg"] = 35120,	-- FBoK Bank Teller
+						["coord"] = { 30.1, 71.9, KEZAN },
 					}),
 					q(24488, {	-- The Replacements
-						["coord"] = { 48.7, 57.7, KEZAN },
-						["qg"] = 37106,	-- Coach Crosscheck
 						["sourceQuest"] = 24567,	-- Report for Tryouts
+						["qg"] = 37106,	-- Coach Crosscheck
+						["coord"] = { 48.7, 57.7, KEZAN },
 					}),
 					q(14116, {	-- The Uninvited Guest
-						["coord"] = { 56.4, 76.9, KEZAN },
-						["qg"] = 34668,	-- Sassy Hardwrench
 						["sourceQuest"] = 14115,	-- Pirate Party Crashers
+						["qg"] = 34668,	-- Sassy Hardwrench
+						["coord"] = { 56.4, 76.9, KEZAN },
 					}),
 					q(14075, {	-- Trouble in the Mines
-						["coord"] = { 60.2, 74.5, KEZAN },
-						["qg"] = 34872,	-- Foreman Dampwick
 						["sourceQuest"] = 14138,	-- Taking Care of Business
+						["qg"] = 34872,	-- Foreman Dampwick
+						["coord"] = { 60.2, 74.5, KEZAN },
 						["groups"] = {
 							i(54292),	-- KTC Executive Slippers
 							i(131856, {	-- Tunnel Worm Chestguard
@@ -239,9 +299,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14123, {	-- Waltz Right In
-						["coord"] = { 58.7, 74.1, KEZAN },
-						["qg"] = 34693,	-- Slinky Sharpshiv
 						["sourceQuest"] = 14120,	-- A Bazillion Macaroons?!
+						["qg"] = 34693,	-- Slinky Sharpshiv
+						["coord"] = { 58.7, 74.1, KEZAN },
 					}),
 				}),
 				n(VENDORS, {
@@ -259,6 +319,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["tim
 	m(THE_MAELSTROM, {
 		m(KEZAN, {
 			n(QUESTS, {
+				q(14137, { ["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 } }),	-- Class Training (Tracking Event). Triggers after doing one of your class skill quests
 				q(14114),	-- Kezan - The New You tracking event. Triggers after you complete "The New You"
 				q(14139),	-- Kezan - Phase 1 complete. Triggers after turning in "Do it Yourself"
 				q(14158),	-- Kezan - Phase 6 complete. Triggers when quest "447" becomes available

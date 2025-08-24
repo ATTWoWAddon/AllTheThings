@@ -14,18 +14,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["questID"] = 64244,
 			}),
 			o(369183, {	-- Dislodged Nest
-				["description"] = "Find and click one of the sparkling |cFFFFFFFFNoxious Moths|r in Mauler's Outlook.  There is a |cFFFFFFFFPrecarious Silk Nest|r stuck in the branches of a tree.  Use the Extra Action Button ability granted by the moth to ride a Shardhide into the tree to dislodge the nest.",
+				["description"] = "Find and click one of the sparkling |cFFFFFFFFNoxious Moths|r in Mauler's Outlook. There is a |cFFFFFFFFPrecarious Silk Nest|r stuck in the branches of a tree. Use the Extra Action Button ability granted by the moth to ride a Shardhide into the tree to dislodge the nest.",
 				["coord"] = { 47.5, 29.2, KORTHIA },
 				["questID"] = 64241,
-				["g"] = {
+				["groups"] = {
 					i(187339),	-- Silver Shardhide Whistle (TOY!)
 				},
 			}),
 			o(369204, {	-- Displaced Relic
-				["description"] = "The coordinates provided are for the start of the path to the treasure.  Walk and jump along the floating debris until you reach it.",
+				["description"] = "The coordinates provided are for the start of the path to the treasure. Walk and jump along the floating debris until you reach it.",
 				["coord"] = { 47.4, 78.3, KORTHIA },
 				["questID"] = 64252,
-				["g"] = {
+				["groups"] = {
 					i(187350),	-- Displaced Relic
 				},
 			}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Use a |cFFFFFFFFGoblin Glider|r at |cFFFFFFFF63.8, 28.9|r to access the island.",
 				["coord"] = { 68.9, 29.9, KORTHIA },
 				["questID"] = 64234,
-				["g"] = {
+				["groups"] = {
 					i(187051),	-- Forgotten Feather (TOY!)
 				},
 			}),
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "At the back of the cave.",
 				["coord"] = { 40.1, 59.0, KORTHIA },
 				["questID"] = 64264,
-				["g"] = {
+				["groups"] = {
 					i(187354),	-- Abandoned Broker Satchel
 				},
 			}),
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "In the cave.",
 				["coord"] = { 41.2, 43.2, KORTHIA },
 				["cost"] = { { "i", 186984, 1 } },	-- Korthite Crystal Key
-				["g"] = {
+				["groups"] = {
 					i(187047),	-- Guise of the Changeling
 				},
 			}),
@@ -132,14 +132,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "On the edge of the lower cliff.",
 				["coord"] = { 33.0, 41.9, KORTHIA },
 				["cost"] = { { "i", 187612, 1 } },	-- Key of Flowing Waters
-				["g"] = {
+				["groups"] = {
 					i(187052),	-- The Netherstar
 				},
 			}),
 			o(369304, {	-- Korthian Relic Box
 				["coord"] = { 43.8, 76.9, KORTHIA },
 				["cost"] = { { "i", 187613, 1 } },	-- Key of the Inner Chambers
-				["g"] = {
+				["groups"] = {
 					i(187119),	-- Ring of Self Reflection
 				},
 			}),
@@ -147,14 +147,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "In the cave.",
 				["coord"] = { 43.5, 57.4, KORTHIA },
 				["cost"] = { { "i", 187614, 1 } },	-- Key of Many Thoughts
-				["g"] = {
+				["groups"] = {
 					i(187150),	-- Gorak Claw Fetish
 				},
 			}),
 			o(369172, {	-- Lost Memento
 				["coord"] = { 52.9, 14.7, KORTHIA },
 				["questID"] = 64238,
-				["g"] = {
+				["groups"] = {
 					i(187346),	-- Lost Memento
 				},
 			}),
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 45.3, 67.1, KORTHIA },
 				["questID"] = 64268,
 				["cost"] = { { "i", 187033, 1 } },	-- Small Offering Key
-				["g"] = {
+				["groups"] = {
 					i(187344, {	-- Offering Kit Maker (TOY!)
 						i(187342),	-- Offering Preparation Kit
 					});
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			o(369234, {	-- Offering Key
 				["coord"] = { 43.6, 67.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187033),	-- Small Offering Key
 				},
 			}),
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 44.6, 75.8, KORTHIA },
 					{ 49.2, 54.5, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(186999),	-- Pattern: Pallid Bone Flute (RECIPE!)
 					i(187007),	-- Recipe: Bonemeal Bread (RECIPE!)
 					i(187442),	-- Scholar's Ancient Pack
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 61.4, 38.1, KORTHIA },
 					{ 62.4, 37.5, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(186993),	-- Design: Porous Stone Statue (RECIPE!)
 				},
 			}),
@@ -357,12 +357,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 51.3, 29.7, KORTHIA },
 					{ 52.3, 27.0, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(187442),	-- Scholar's Ancient Pack
 				},
 			}),
 			o(369200, {	-- Spectral Bound Chest
-				["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.",
+				["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r. Use your preferred method of daily quest tracking to see the locations of the keys.",
 				["isDaily"] = true,
 				["questID"] = 64247,
 				["coord"] = { 62.1, 55.4, KORTHIA },
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					64249,	-- Spectral Key
 					64250,	-- Spectral Key
 				},
-				["g"] = {
+				["groups"] = {
 					o(369290, {	-- Spectral Key
 						["questID"] = 64249,
 						["isDaily"] = true,

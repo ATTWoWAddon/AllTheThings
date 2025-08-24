@@ -6,30 +6,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14334, {	-- Into the Maw
 				q(60545, {	-- A Chilling Summons [A]
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = {
-						1681,	-- Icecrown Citadel (Lower Acherus)
-						1682,	-- Icecrown Citadel (Upper Acherus)
-						1360,	-- Icecrown Citadel (The Frozen Throne)
-					},
 					-- #IF AFTER DF
 					-- was a push-quest during SL right?
 					["coord"] = { 76.3, 42.7, STORMWIND_CITY },
 					["provider"] = { "n", 176554 },	-- Highlord Darion Mograine
 					-- #ENDIF
-				}),
-				q(61874, {	-- A Chilling Summons [H]
-					["races"] = HORDE_ONLY,
 					["maps"] = {
 						1681,	-- Icecrown Citadel (Lower Acherus)
 						1682,	-- Icecrown Citadel (Upper Acherus)
 						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(61874, {	-- A Chilling Summons [H]
 					-- #IF AFTER DF
 					-- was a push-quest during SL right?
 					["coord"] = { 50.3, 76.9, ORGRIMMAR },
 					["provider"] = { "n", 176554 },	-- Highlord Darion Mograine
 					-- #ENDIF
+					["maps"] = {
+						1681,	-- Icecrown Citadel (Lower Acherus)
+						1682,	-- Icecrown Citadel (Upper Acherus)
+						1360,	-- Icecrown Citadel (The Frozen Throne)
+					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59756 },	-- A Moment's Respite
 					["provider"] = { "n", 165918 },	-- Highlord Darion Morgraine
 					["coord"] = { 24.4, 35.9, 1648 },	-- pre-SL scenario
-					["g"] = {
+					["groups"] = {
 						i(178495),	-- Shattered Helm of Domination (QI!)
 					},
 				}),
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["coord"] = { 27.4, 30.8, 1648 },	-- pre-SL scenario
-					["g"] = {
+					["groups"] = {
 						i(184313),	-- Shattered Helm of Domination (QI!)
 					},
 				}),
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
-					["g"] = {
+					["groups"] = {
 						i(178558),	-- Afflictor's Key (QI!)
 					},
 				}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
-					["g"] = {
+					["groups"] = {
 						i(178553),	-- Mawsworn Key (QI!)
 					},
 				}),
@@ -139,20 +139,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(59766, {	-- A Good Axe
 					["sourceQuests"] = { 59762 },	-- By and Down the River
-					["providers"] = {
-						{ "n", 166981 },	-- Thrall, pre-pickup
-						{ "n", 167827 },	-- Thrall, post-pickup
+					["qgs"] = {
+						166981,	-- Thrall, pre-pickup
+						167827,	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },	-- pre-SL scenario
 				}),
 				q(59765, {	-- Wounds Beyond Flesh
 					["sourceQuests"] = { 59762 },	-- By and Down the River
-					["providers"] = {
-						{ "n", 166981 },	-- Thrall, pre-pickup
-						{ "n", 167827 },	-- Thrall, post-pickup
+					["qgs"] = {
+						166981,	-- Thrall, pre-pickup
+						167827,	-- Thrall, post-pickup
 					},
 					["coord"] = { 29.6, 43.6, 1648 },	-- pre-SL scenario
-					["g"] = {
+					["groups"] = {
 						i(180050),	-- Wither Blade (QI!)
 					},
 				}),
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(184314),	-- Broker Device (QI!)
 					},
 				}),
@@ -274,10 +274,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						o(364498, {	-- Bloodhoof Warmace
 							["coord"] = { 33.5, 49.1, THE_MAW },
-							["g"] = { i(184284) },	-- Bloodhoof Warmace (QI!)
+							["groups"] = { i(184284) },	-- Bloodhoof Warmace (QI!)
 						}),
 					},
 				}),
@@ -294,16 +294,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 63051 },	-- Trust Issues
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						o(364872, {	-- Broker Cache
 							["coord"] = { 33.5, 14.6, THE_MAW },
-							["g"] = { i(184492) },	-- Pulsing Sphere (QI!)
+							["groups"] = { i(184492) },	-- Pulsing Sphere (QI!)
 						}),
 					},
 				}),
 				q(60284, {	-- Rule 5: Be Audacious
-					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["description"] = "Requires Tentative reputation with Ve'nari.",
+					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 					["groups"] = {
@@ -312,8 +312,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(60285, {	-- Rule 6: Concealment is Everything
-					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
+					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 					["groups"] = {
@@ -328,30 +328,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 46.8, 41.6, THE_MAW },
 				}),
 				q(63060, {	-- Rule 6 Footnote: Don't Forget Anything
-					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["description"] = "Requires Ambivalent reputation with Ve'nari.",
-					["isBreadcrumb"] = true,
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
-					["g"] = {
+					["isBreadcrumb"] = true,
+					["groups"] = {
 						i(182955),	-- Cypher of Dampening (QI!)
 					},
 				}),
 				q(63022, {	-- Rule 6 Addendum: Save Me At Any Cost
+					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["sourceQuests"] = {
 						60284,	-- Rule 5: Be Audacious
 						63060,	-- Rule 6 Footnote: Don't Forget Anything
 					},
-					["description"] = "Requires Ambivalent reputation with Ve'nari.",
 					["provider"] = { "n", 175703 },	-- Ve'brax <Asset Analyst>
 					["coord"] = { 56.9, 57.5, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(182955),	-- Cypher of Dampening (QI!)
 					},
 				}),
 				q(60158, {	-- Rule 7: Betrayal is Inevitable
-					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["description"] = "Requires Appreciative reputation with Ve'nari.",
+					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63039, {	-- A Monument to Vengeance
 				["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
 				["coord"] = { 22.1, 48.0, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184511),	-- Ebon Runeblade (QI!)
 				},
 			}),
@@ -372,28 +372,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63050, {	-- Acquisition: Blazing Ingots
 				["provider"] = { "o", 364932 },	-- Blazing Ingot
 				["coord"] = { 39.0, 39.9, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184556),	-- Blazing Ingot (QI!)
 				},
 			}),
 			q(63031, {	-- Acquisition: Crystallized Stygia
 				["provider"] = { "o", 364899 },	-- Crystallized Stygia
 				["coord"] = { 21.2, 34.1, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184510),	-- Crystallized Stygia (QI!)
 				},
 			}),
 			q(63047, {	-- Acquisition: Runeforged Shackles
 				["provider"] = { "o", 364926 },	-- Runeforged Shackles
 				["coord"] = { 25.6, 24.2, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184552),	-- Runeforged Shackles (QI!)
 				},
 			}),
 			q(63072, {	-- Acquisition: Stygic Ore
 				["provider"] = { "o", 364994 },	-- Spectral Pick
 				["coord"] = { 48.2, 81.9, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184585),	-- Stygic Ore (QI!)
 				},
 			}),
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 175797 },	-- Deceased Broker
 				["coord"] = { 30.7, 58.3, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184513),	-- Containment Orb (QI!)
 				},
 			}),
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 175797 },	-- Deceased Broker
 				["coord"] = { 30.7, 58.3, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184513),	-- Containment Orb (QI!)
 				},
 			}),
@@ -438,14 +438,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62239, {	-- Rodent Removal
 				["provider"] = { "o", 365084 },	-- Tormentor's Pike
 				["coord"] = { 60.3, 72.1, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(183105),	-- Tormentor's Rod (QI!)
 				},
 			}),
 			q(63206, {	-- Soulless Husks
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184622),	-- Stygian Hammer (QI!)
 				},
 			}),
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["provider"] = { "o", 364987 },	-- Broker Journal
 				["coord"] = { 46.4, 62.3, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(184579),	-- Torn Journal Page (QI!)
 				},
 			}),
@@ -474,7 +474,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(182303),	-- Assassin's Soulcloak (QI!)
 				},
 			}),
@@ -488,14 +488,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61075, {	-- A Spark of Light
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(180607),	-- Cypher of Blinding (QI!)
 				},
 			}),
 			q(60775, {	-- A Suitable Demise
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(180280),	-- Soulforged Core (QI!)
 				},
 			}),
@@ -506,7 +506,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60622, {	-- Eye of the Scryer
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(180035),	-- Eye of the Scryer (QI!)
 				},
 			}),
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60646, {	-- Misery Business
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(180129),	-- Anima Equalizer (QI!)
 					i(184614),	-- Essence of Misery (QI!)
 				},
@@ -539,15 +539,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62234, {	-- Power of the Colossus
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
-				["g"] = {
-					i(183042),    -- Colossal Power Core (QI!)
+				["groups"] = {
+					i(183042),	-- Colossal Power Core (QI!)
 				},
 			}),
 			q(64541, {	-- The Cost of Death
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.8, 41.7, THE_MAW },
-				["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
 				["timeline"] = { ADDED_9_1_0 },
+				["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
 			}),
 			q(61079, {	-- The Jailer's Share
 				["provider"] = { "n", 162804 },	-- Ve'nari

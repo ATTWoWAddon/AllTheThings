@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16678, {	-- Adventurer of The Azure Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17563, {    -- Ancient Stones of the Azure Span (automated)
+			ach(17563, {	-- Ancient Stones of the Azure Span (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16577, {	-- Azure Span Glyph Hunter
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
 				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },
 			}),
-			explorationAch(16460),	-- Explore the Azure Span
+			ach(16460),		-- Explore the Azure Span
 			ach(16580, {	-- Lend a Helping Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			ach(15889, {	-- River Rapids Wrangler
 				["coord"] = { 45.0, 54.0, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198428),	-- Tuskarr Dinghy (TOY!)
 				},
 			}),

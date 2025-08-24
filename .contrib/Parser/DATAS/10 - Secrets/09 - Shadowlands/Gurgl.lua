@@ -5,11 +5,11 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 	header(HEADERS.Item, 186553, {	-- Gurgl
 		["displayID"] = 100676,
 		["modelScale"] = 1.1,
-		["g"] = {
+		["groups"] = {
 			q(64167,{	-- Pets Detective
 				["provider"] = { "n", 96479 },	-- Breanni
 				["coord"] = { 58.5, 39.1, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					i(187128),	-- Find-A-Spy (QI!)
 				},
 			}),
@@ -17,7 +17,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 64167 },	-- Pets Detective
 				["provider"] = { "n", 96479 },	-- Breanni
 				["coord"] = { 58.5, 39.1, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					i(186695),	-- Lovely Pet Bandage (QI!)
 				},
 			}),
@@ -25,7 +25,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 64196 },	-- Pet Up
 				["provider"] = { "n", 179566 },	-- Zantini
 				["coord"] = { 73.2, 74.9, EYE_OF_AZSHARA },
-				["g"] = {
+				["groups"] = {
 					i(186730),	-- Pet Supplies (QI!)
 				},
 			}),
@@ -33,7 +33,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 64203 },	-- The Coast is Clear
 				["provider"] = { "n", 179566 },	-- Zantini
 				["coord"] = { 73.2, 74.9, EYE_OF_AZSHARA },
-				["g"] = {
+				["groups"] = {
 					i(186772),	-- Violetsail Pet Cage Key (QI!)
 				},
 			}),
@@ -41,7 +41,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 64215 },	-- Paw Patrol
 				["provider"] = { "n", 179566 },	-- Zantini
 				["coord"] = { 73.2, 74.9, EYE_OF_AZSHARA },
-				["g"] = {
+				["groups"] = {
 					i(186553),	-- Gurgl (PET!)
 				},
 			}),

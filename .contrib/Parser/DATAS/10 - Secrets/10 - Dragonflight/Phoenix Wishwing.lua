@@ -4,11 +4,11 @@
 root(ROOTS.Secrets, header(HEADERS.Item, 193373,	-- Phoenix Wishwing
 	bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 	["description"] = "Below is a detailed explanation on how to obtain the Phoenix Wishwing pet.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
-	["g"] = {
+	["groups"] = {
 		o(13000040, {	-- Step 1: Phoenix Ash Talisman
 			["description"] = "|cFFFFFFFFStep 1:|r Obtain the Phoenix Ash Talisman from Zektar in Spires of Arak.",
 			["provider"] = { "i", 199203 },	-- Phoenix Ash Talisman
-			["g"] = {
+			["groups"] = {
 				o(13000041, {	-- Step 1A: Glittering Phoenix Ember
 					["description"] = "|cFFFFFFFFStep 1A:|r Obtain the Glittering Phoenix Ember from Alysrazor in Firelands Timewalking.",
 					["provider"] = { "i", 199099 },	-- Glittering Phoenix Ember
@@ -40,7 +40,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 193373,	-- Phoenix Wishwing
 				{ "i", 199080, 15 },	-- Smoldering Phoenix Ash
 				{ "i", 199203, 1 },	-- Phoenix Ash Talisman
 			},
-			["g"] = {
+			["groups"] = {
 				i(193373),	-- Phoenix Wishwing
 			},
 		}),

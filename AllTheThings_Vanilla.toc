@@ -25,8 +25,8 @@
 ## Notes-zhCN: 追踪你所收藏的坐骑、宠物、玩具、幻化等。。|n按你的喜好筛选，或尝试收集所有物品！|n|n每晚构建，每周更新。
 ## Notes-zhTW: 追蹤你所收藏的坐騎、寵物、玩具、塑形等。。|n依你的喜好篩選，或試著收集所有物品！|n|n每晚構建，每週更新。
 ## Version: @project-version@
-## Interface: 11506, 11507
-## X-Interface: 11506, 11507
+## Interface: 11507
+## X-Interface: 11507
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
@@ -67,17 +67,6 @@ lib\Audio.lua
 
 # Load localization modules
 locales\Default Locale.lua
-# locales\en.lua
-locales\de.lua
-locales\es.lua
-locales\mx.lua
-locales\fr.lua
-locales\it.lua
-locales\ko.lua
-locales\pt.lua
-locales\ru.lua
-locales\cn.lua
-locales\tw.lua
 
 # Search Cache
 src\Cache.lua
@@ -93,27 +82,32 @@ src\Modules\Events.lua
 src\Modules\Filter.lua
 # src\Modules\Inventory.lua
 src\Modules\Model.lua
+# src\Modules\Search.lua
 src\Modules\Social.lua
 src\Modules\Tooltip.lua
 # src\Modules\Upgrade.lua
 src\Modules\Vignette.lua
-# src\Modules\Contributor.lua
+src\Modules\Contributor.lua
 
 # Expansion specific localization files
 db\Classic\LocalizationDB.lua
-db\Classic\Season of Discovery\LocalizationDB.lua
+db\Classic SOD\LocalizationDB.lua
 
 # Load object class templates
 src\Classes\base.lua
+src\Classes\Achievement Categories.lua
+src\Classes\Achievement Data.lua
+src\Classes\Achievement.Classic.lua
 # src\Classes\Achievement.lua
-# src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
 # src\Classes\Currency.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
+src\Classes\Guild Achievements.lua
 src\Classes\Quests.lua
 # src\Classes\Item.Retail.lua
 src\Classes\Item.Classic.lua
+# src\Classes\BattlePet.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
@@ -122,7 +116,7 @@ src\Classes\Maps.lua
 # src\Classes\Mount.lua
 src\Classes\NPC.lua
 src\Classes\Objects.lua
-# src\Classes\Profession.lua
+src\Classes\Profession.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
 src\Classes\Dynamic Categories.lua
@@ -156,6 +150,10 @@ src\Settings\Classic Settings.xml
 # Load primary addon source files
 # AllTheThings.lua
 classic\ATT-Classic.lua
+
+# Classic Specific Modules
+src\Classes\Classic\Mounts & Battle Pets.lua
+
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 src\UI\Waypoints.lua
@@ -166,8 +164,8 @@ src\UI\Shared Window Logic.lua
 src\UI\Classic Window Logic.lua
 
 # Load expansion specific category database.
-db\Classic\Categories.lua
-db\Classic\Season of Discovery\Categories.lua
+db\Classic\Categories.xml
+db\Classic SOD\Categories.xml
 
 # Window Definitions
 src\UI\Windows\Windows.xml

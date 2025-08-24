@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16679, {	-- Adventurer of Thaldraszus
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17564, {    -- Ancient Stones of Thaldraszus (automated)
+			ach(17564, {	-- Ancient Stones of Thaldraszus (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16104, {	-- Dragon Glyphs: Algeth'ar Academy
@@ -43,10 +43,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16105, {	-- Dragon Glyphs: Veiled Ossuary
 				["coord"] = { 67.1, 11.8, THALDRASZUS },
 			}),
-			explorationAch(16518),	-- Explore Thaldraszus
+			ach(16518),		-- Explore Thaldraszus
 			ach(16634, {	-- Framing a New Perspective
 				["description"] = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
-				["g"] = {
+				["groups"] = {
 					crit(55994, {	-- The Seat of the Aspects
 						["coord"] = { 56.1, 44.4, VALDRAKKEN },
 					}),
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16363, {	-- Just Don't Ask Me to Spell It
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(16621, {    -- One of Everything, Please
+			ach(16621, {	-- One of Everything, Please
 				["sym"] = {{ "achievement_criteria" }},
             }),
 			ach(16398, {	-- Sojourner of Thaldraszus

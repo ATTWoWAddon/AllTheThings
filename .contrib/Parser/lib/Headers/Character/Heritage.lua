@@ -7,6 +7,7 @@ HERITAGE = createHeader({
 		de = "Traditionsrüstung",
 		fr = "Armure ancestrale",
 		it = "Armatura Retaggio",
+		mx = "Armadura legada",
 		pt = "Armadura Tradicional",
 		ru = "Традиционные доспехи",
 		ko = "유산 방어구",

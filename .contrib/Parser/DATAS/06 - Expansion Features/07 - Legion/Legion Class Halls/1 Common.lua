@@ -147,7 +147,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			}),
 			ach(10749, {	-- Fighting with Style: War-torn (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(32105),	-- Honor Level 10
 					crit(32152),	-- Honor Level 30
 					crit(32150),	-- Honor Level 50
@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			}),
 			ach(11173, {	-- Fighting with Style: War-torn (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(32105),	-- Honor Level 10
 					crit(32152),	-- Honor Level 30
 					crit(32150),	-- Honor Level 50
@@ -180,7 +180,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				un(REMOVED_FROM_GAME, ach(11144)),		-- Power Realized
 			})),
 			ach(11610, {	-- Power Unleashed
-				ach(11609),	-- Power Unbound
+				ach(11609, {	-- Power Unbound
+					crit(35630, {
+						["_quests"] = 45849,	-- Tracking Quest - 3+ Targets Trait Complete - completed "A Gift From The Six" (questID 45862)
+					}),
+					crit(35632, {
+						["_quests"] = 45851,	-- Dual Boss Trait Complete - completed "A Gift From The Six" (questID 45842)
+					}),
+					crit(35820, {
+						["_quests"] = 45855,	-- Tank Trait Complete - completed "A Gift From The Six" (questID 45863)
+					}),
+					crit(35821, {
+						["_quests"] = 45853,	-- Melee DPS Trait Complete - completed "A Gift From The Six" (questID 45865)
+					}),
+					crit(35822, {
+						["_quests"] = 45852,	-- Healer Trait Complete - completed "A Gift From The Six" (questID 45864)
+					}),
+					crit(35823, {
+						["_quests"] = 45854,	-- Ranged DPS Trait Complete - completed "A Gift From The Six" (questID 45866)
+					}),
+					crit(35824, {
+						["_quests"] = 45850,	-- Tracking Quest - AoE Chosen - completed "A Gift From The Six" (questID 45861)
+					}),
+				}),
 			}),
 		}),
 		n(FOLLOWERS, bubbleDownSelf({
@@ -199,7 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		}),
 		n(93787, {	-- Scouting Map
 			["crs"] = CLASS_HALL_MISSION_TABLES,
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(11218, {	-- There's a Boss In There
 						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
@@ -208,9 +230,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				n(MISSIONS, {
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
-							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
 							["provider"] = { "i", 143328 },	-- Battle Report
-							["g"] = {
+							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
+							["groups"] = {
 								i(143606, {	-- Satchel of Battlefield Spoils
 									i(140413),	-- Grisly Souvenir
 									i(140414),	-- Fel-Loaded Dice
@@ -226,33 +248,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(152313),	-- Azeroth Invasion Plans [Raid Finder]
 							q(48288, {	-- Antoran High Command [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 								},
 							}),
 							i(152314),	-- Azeroth Invasion Plans (Normal)
 							q(48295, {	-- Antoran High Command (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 152314 },	-- Azeroth Invasion Plans [Normal]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures (Normal)
 								},
 							}),
 							i(152315),	-- Azeroth Invasion Plans (Heroic)
 							q(48299, {	-- Antoran High Command (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152315 },	-- Azeroth Invasion Plans [Heroic]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153501),	-- Cache of Antoran Treasures (Heroic)
 								},
 							}),
 							i(152316),	-- Azeroth Invasion Plans (Mythic)
 							q(48303, {	-- Antoran High Command (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152316 },	-- Azeroth Invasion Plans [Mythic]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153503),	-- Cache of Antoran Treasures (Mythic)
 								},
 							}),
@@ -282,33 +304,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(152317),	-- Discharged Shock Lance [Raid Finder]
 							q(48292, {	-- The Soulhunter [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 								},
 							}),
 							i(152318),	-- Discharged Shock Lance (Normal)
 							q(48296, {	-- The Soulhunter (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 152318 },	-- Discharged Shock Lance [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures (Normal)
 								},
 							}),
 							i(152319),	-- Discharged Shock Lance (Heroic)
 							q(48300, {	-- The Soulhunter (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152319 },	-- Discharged Shock Lance [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153501),	-- Cache of Antoran Treasures (Heroic)
 								},
 							}),
 							i(152320),	-- Discharged Shock Lance (Mythic)
 							q(48304, {	-- The Soulhunter (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152320 },	-- Discharged Shock Lance [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153503),	-- Cache of Antoran Treasures (Mythic)
 								},
 							}),
@@ -338,33 +360,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(152321),	-- Sargerei Manifesto [Raid Finder]
 							q(48293, {	-- The Burning Coven [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 								},
 							}),
 							i(152322),	-- Sargerei Manifesto (Normal)
 							q(48297, {	-- The Burning Coven (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 152322 },	-- Sargerei Manifesto [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures (Normal)
 								},
 							}),
 							i(152323),	-- Sargerei Manifesto (Heroic)
 							q(48301, {	-- The Burning Coven (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152323 },	-- Sargerei Manifesto [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153501),	-- Cache of Antoran Treasures (Heroic)
 								},
 							}),
 							i(152324),	-- Sargerei Manifesto (Mythic)
 							q(48305, {	-- The Burning Coven (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 152324 },	-- Sargerei Manifesto [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153503),	-- Cache of Antoran Treasures (Mythic)
 								},
 							}),
@@ -394,9 +416,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(152325),	-- Sanguine Argunite [Raid Finder]
 							q(48294, {	-- The Unmaker [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 								},
 							}),
@@ -404,7 +426,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							q(48298, {	-- The Unmaker (Normal)
 								["provider"] = { "i", 152326 },	-- Sanguine Argunite [Normal]
 								["repeatable"] = true,
-								["g"] = {
+								["groups"] = {
 									i(153504),	-- Cache of Antoran Treasures (Normal)
 								},
 							}),
@@ -412,7 +434,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							q(48302, {	-- The Unmaker (Heroic)
 								["provider"] = { "i", 152327 },	-- Sanguine Argunite [Heroic]
 								["repeatable"] = true,
-								["g"] = {
+								["groups"] = {
 									i(153501),	-- Cache of Antoran Treasures (Heroic)
 								},
 							}),
@@ -420,7 +442,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							q(48306, {	-- The Unmaker (Mythic)
 								["provider"] = { "i", 152328 },	-- Sanguine Argunite [Mythic]
 								["repeatable"] = true,
-								["g"] = {
+								["groups"] = {
 									i(153503),	-- Cache of Antoran Treasures (Mythic)
 								},
 							}),
@@ -448,15 +470,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					mission(1785, {	-- Assault on Felfire Armory
 						q(48601, {	-- Felfire Shattering
-							["g"] = {
+							["groups"] = {
 								i(153130),	-- Man'ari Training Amulet
 							},
 						}),
 					}),
 					mission(1503, {	-- Council of War
 						q(45162, {	-- We Brought the Hammer
-							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 						}),
 					}),
 					mission(1387, {	-- Friends, Not Food
@@ -467,17 +489,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					mission(1513, {	-- I've Got A Strange Feeling About This
 						q(45312, {	-- You Beat the Ball of Meat
-							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
+							["groups"] = {
 								follower(986),	-- Meatball
 							},
 						}),
 					}),
 					mission(1504, {	-- It's Clean Up Time
 						q(45163, {	-- Clearing Up
-							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 142554 },	-- Broken Handle
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 						}),
 					}),
 					mission(1386, {	-- It's so FLUFFY!
@@ -485,17 +507,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					mission(1512, {	-- Master of Shadows
 						q(45304, {	-- Attacking the Darkness
-							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 						}),
 					}),
 					mission(1506, {	-- Once More Into the Fray
 						q(45173, {	-- Desperate Times
 							["provider"] = { "i", 143329 },	-- Dire Summons
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["groups"] = {
 								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
 							},
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 					mission(931, {	-- Scouting Reports
@@ -504,28 +526,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1507, {	-- The Greatest Stage of All
 						q(45179, {	-- Win the Crowed
 							["provider"] = { "i", 143478 },	-- Arena Invitation
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["groups"] = {
 								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
 									un(REMOVED_FROM_GAME, i(140415)),	--	Blaze of Glory
 									i(140423),	-- Exhaustive Research
 								})),
 							},
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 					mission(1511, {	-- The Perils of Ashran
 						q(45180, {	-- An Island of War
 							["provider"] = { "i", 143479 },	-- Frayed Banner
-							["g"] = {
+							["u"] = REMOVED_FROM_GAME,
+							["groups"] = {
 								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
 							},
-							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 					mission(1502, {	-- There is no Brawlers Guild
 						q(45111, {	-- Everyone Loves a Good Fight
-							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 142522 },	-- Rude Letter
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 						}),
 					}),
 					mission(1296, {	-- The Emerald Nightfare: Facing Our Fears
@@ -540,37 +562,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(139480),	-- Corrupted Egg Fragment [Raid Finder]
 							q(43546, {	-- Il'gynoth [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 139480 },	-- Corrupted Egg Fragment [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 								},
 							}),
 							i(139481),	-- Corrupted Egg Fragment (Normal)
 							q(43547, {	-- Il'gynoth (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 139481 },	-- Corrupted Egg Fragment (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures (Normal)
 								},
 							}),
 							i(139482),	-- Corrupted Egg Fragment (Heroic)
 							q(43548, {	-- Il'gynoth (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 139482 },	-- Corrupted Egg Fragment (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures (Heroic)
 								},
 							}),
 							i(139483),	-- Corrupted Egg Fragment (Mythic)
 							q(43549, {	-- Il'gynoth (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 139483 },	-- Corrupted Egg Fragment (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures (Mythic)
 								},
 							}),
@@ -586,37 +608,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140163),	-- Tainted Moonglade Leaf [Raid Finder]
 							q(43902, {	-- Fall of Cenarius [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140163 },	-- Tainted Moonglade Leaf [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 								},
 							}),
 							i(140165),	-- Tainted Moonglade Leaf (Normal)
 							q(43904, {	-- Fall of Cenarius (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140165 },	-- Tainted Moonglade Leaf (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures (Normal)
 								},
 							}),
 							i(140167),	-- Tainted Moonglade Leaf (Heroic)
 							q(43906, {	-- Fall of Cenarius (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140167 },	-- Tainted Moonglade Leaf (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures (Heroic)
 								},
 							}),
 							i(140169),	-- Tainted Moonglade Leaf (Mythic)
 							q(43908, {	-- Fall of Cenarius (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140169 },	-- Tainted Moonglade Leaf (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures (Mythic)
 								},
 							}),
@@ -632,37 +654,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140164),	-- Vial of Swirling Shadow [Raid Finder]
 							q(43903, {	-- Xavius [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140164 },	-- Vial of Swirling Shadow [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 								},
 							}),
 							i(140166),	-- Vial of Swirling Shadow (Normal)
 							q(43905, {	-- Xavius (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140166 },	-- Vial of Swirling Shadow (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures (Normal)
 								},
 							}),
 							i(140168),	-- Vial of Swirling Shadow (Heroic)
 							q(43907, {	-- Xavius (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140168 },	-- Vial of Swirling Shadow (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures (Heroic)
 								},
 							}),
 							i(140170),	-- Vial of Swirling Shadow (Mythic)
 							q(43909, {	-- Xavius (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140170 },	-- Vial of Swirling Shadow (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures (Mythic)
 								},
 							}),
@@ -678,37 +700,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140147),	-- Pulsauron Bindings [Raid Finder]
 							q(43882, {	-- Vaults [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140147 },	-- Pulsauron Bindings [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 								},
 							}),
 							i(140149),	-- Pulsauron Bindings (Normal)
 							q(43889, {	-- Vaults (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140149 },	-- Pulsauron Bindings (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 								},
 							}),
 							i(140151),	-- Pulsauron Bindings (Heroic)
 							q(43890, {	-- Vaults (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140151 },	-- Pulsauron Bindings (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 								},
 							}),
 							i(140153),	-- Pulsauron Bindings (Mythic)
 							q(43891, {	-- Vaults (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140153 },	-- Pulsauron Bindings (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 								},
 							}),
@@ -724,37 +746,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140171),	-- Glowing Lily [Raid Finder]
 							q(43910, {	-- High Botanist Tel'arn [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140171 },	-- Glowing Lily [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 								},
 							}),
 							i(140174),	-- Glowing Lily (Normal)
 							q(43913, {	-- High Botanist Tel'arn (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140174 },	-- Glowing Lily (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 								},
 							}),
 							i(140178),	-- Glowing Lily (Heroic)
 							q(43916, {	-- High Botanist Tel'arn (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140178 },	-- Glowing Lily (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 								},
 							}),
 							i(140182),	-- Glowing Lily (Mythic)
 							q(43920, {	-- High Botanist Tel'arn (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140182 },	-- Glowing Lily (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 								},
 							}),
@@ -770,37 +792,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140172),	-- Ancient Nightborne Tome [Raid Finder]
 							q(43911, {	-- Elisande [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140172 },	-- Ancient Nightborne Tome [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 								},
 							}),
 							i(140175),	-- Ancient Nightborne Tome (Normal)
 							q(43914, {	-- Elisande (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140175 },	-- Ancient Nightborne Tome (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 								},
 							}),
 							i(140472),	-- Ancient Nightborne Tome (Heroic)
 							q(43917, {	-- Elisande (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140472 },	-- Ancient Nightborne Tome (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 								},
 							}),
 							i(140182),	-- Ancient Nightborne Tome (Mythic)
 							q(43920, {	-- Elisande (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140182 },	-- Ancient Nightborne Tome (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 								},
 							}),
@@ -816,37 +838,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(140173),	-- Shred of Tattered Robe [Raid Finder]
 							q(43912, {	-- Gul'dan [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 140173 },	-- Shred of Tattered Robe [Raid Finder]
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 								},
 							}),
 							i(140177),	-- Shred of Tattered Robe (Normal)
 							q(43915, {	-- Gul'dan (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 140177 },	-- Shred of Tattered Robe (Normal)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 								},
 							}),
 							i(140180),	-- Shred of Tattered Robe (Heroic)
 							q(43918, {	-- Gul'dan (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140180 },	-- Shred of Tattered Robe (Heroic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 								},
 							}),
 							i(140183),	-- Shred of Tattered Robe (Mythic)
 							q(43921, {	-- Gul'dan (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 140183 },	-- Shred of Tattered Robe (Mythic)
+								["repeatable"] = true,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
+								["groups"] = {
 									un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 								},
 							}),
@@ -862,33 +884,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(147497),	-- Encrusted Naga Scale [Raid Finder]
 							q(47114, {	-- The Tomb's Mistress [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 147497 },	-- Encrusted Naga Scale [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147518),	-- Cache of Fel Treasures [Raid Finder]
 								},
 							}),
 							i(147498),	-- Encrusted Naga Scale (Normal)
 							q(47115, {	-- The Tomb's Mistress (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 147498 },	-- Encrusted Naga Scale (Normal)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147519),	-- Cache of Fel Treasures (Normal)
 								},
 							}),
 							i(147499),	-- Encrusted Naga Scale (Heroic)
 							q(47116, {	-- The Tomb's Mistress (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147499 },	-- Encrusted Naga Scale (Heroic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147520),	-- Cache of Fel Treasures (Heroic)
 								},
 							}),
 							i(147500),	-- Encrusted Naga Scale (Mythic)
 							q(47117, {	-- The Tomb's Mistress (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147500 },	-- Encrusted Naga Scale (Mythic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147521),	-- Cache of Fel Treasures (Mythic)
 								},
 							}),
@@ -904,33 +926,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(147501),	-- Worshipper's Scrawlings [Raid Finder]
 							q(47118, {	-- Free The Tormented [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 147501 },	-- Worshipper's Scrawlings [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147518),	-- Cache of Fel Treasures [Raid Finder]
 								},
 							}),
 							i(147502),	-- Worshipper's Scrawlings (Normal)
 							q(47119, {	-- Free The Tormented (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 147502 },	-- Worshipper's Scrawlings (Normal)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147519),	-- Cache of Fel Treasures (Normal)
 								},
 							}),
 							i(147503),	-- Worshipper's Scrawlings (Heroic)
 							q(47120, {	-- Free The Tormented (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147503 },	-- Worshipper's Scrawlings (Heroic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147520),	-- Cache of Fel Treasures (Heroic)
 								},
 							}),
 							i(147504),	-- Worshipper's Scrawlings (Mythic)
 							q(47121, {	-- Free The Tormented (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147504 },	-- Worshipper's Scrawlings (Mythic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147521),	-- Cache of Fel Treasures (Mythic)
 								},
 							}),
@@ -946,33 +968,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(147505),	-- Wailing Soul [Raid Finder]
 							q(47122, {	-- The Fallen Avatar [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 147505 },	-- Wailing Soul [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147518),	-- Cache of Fel Treasures [Raid Finder]
 								},
 							}),
 							i(147506),	-- Wailing Soul (Normal)
 							q(47123, {	-- The Fallen Avatar (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 147506 },	-- Wailing Soul (Normal)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147519),	-- Cache of Fel Treasures (Normal)
 								},
 							}),
 							i(147507),	-- Wailing Soul (Heroic)
 							q(47124, {	-- The Fallen Avatar (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147507 },	-- Wailing Soul (Heroic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147520),	-- Cache of Fel Treasures (Heroic)
 								},
 							}),
 							i(147508),	-- Wailing Soul (Mythic)
 							q(47125, {	-- The Fallen Avatar (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147508 },	-- Wailing Soul (Mythic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147521),	-- Cache of Fel Treasures (Mythic)
 								},
 							}),
@@ -988,33 +1010,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["groups"] = {
 							i(147509),	-- Seal of the Deceiver [Raid Finder]
 							q(47126, {	-- The Deceiver [Raid Finder]
-								["repeatable"] = true,
 								["provider"] = { "i", 147509 },	-- Seal of the Deceiver [Raid Finder]
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147518),	-- Cache of Fel Treasures [Raid Finder]
 								},
 							}),
 							i(147510),	-- Seal of the Deceiver (Normal)
 							q(47127, {	-- The Deceiver (Normal)
-								["repeatable"] = true,
 								["provider"] = { "i", 147510 },	-- Seal of the Deceiver (Normal)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147519),	-- Cache of Fel Treasures (Normal)
 								},
 							}),
 							i(147511),	-- Seal of the Deceiver (Heroic)
 							q(47128, {	-- The Deceiver (Heroic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147511 },	-- Seal of the Deceiver (Heroic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147520),	-- Cache of Fel Treasures (Heroic)
 								},
 							}),
 							i(147512),	-- Seal of the Deceiver (Mythic)
 							q(47129, {	-- The Deceiver (Mythic)
-								["repeatable"] = true,
 								["provider"] = { "i", 147512 },	-- Seal of the Deceiver (Mythic)
-								["g"] = {
+								["repeatable"] = true,
+								["groups"] = {
 									i(147521),	-- Cache of Fel Treasures (Mythic)
 								},
 							}),
@@ -1035,33 +1057,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152957, { ["timeline"] = { ADDED_7_3_0 } }),	-- Army of the Light Insignia
 					i(152958, { ["timeline"] = { ADDED_7_3_0 } }),	-- Army of the Light Insignia
 					i(141340),	-- Court of Farondis Insignia
-					i(146937),	-- Court of Farondis Insignia
-					i(146943),	-- Court of Farondis Insignia
+					i(146937, { ["timeline"] = { ADDED_7_2_0 } }),	-- Court of Farondis Insignia
+					i(146943, { ["timeline"] = { ADDED_7_2_0 } }),	-- Court of Farondis Insignia
 					i(141339),	-- Dreamweaver Insignia
-					i(146936),	-- Dreamweaver Insignia
-					i(146942),	-- Dreamweaver Insignia
+					i(146936, { ["timeline"] = { ADDED_7_2_0 } }),	-- Dreamweaver Insignia
+					i(146942, { ["timeline"] = { ADDED_7_2_0 } }),	-- Dreamweaver Insignia
 					i(152954, { ["timeline"] = { ADDED_7_3_0 } }),	-- Greater Argussian Reach Insignia
 					i(152955, { ["timeline"] = { ADDED_7_3_0 } }),	-- Greater Army of the Light Insignia
-					i(150927),	-- Greater Court of Farondis Insignia
-					i(150926),	-- Greater Dreamweaver Insignia
-					i(150928),	-- Greater Highmountain Tribe Insignia
-					i(152464),	-- Greater Legionfall Insignia
-					i(150930),	-- Greater Nightfallen Insignia
-					i(150925),	-- Greater Valarjar Insignia
-					i(150929),	-- Greater Wardens Insignia
+					i(150927, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Court of Farondis Insignia
+					i(150926, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Dreamweaver Insignia
+					i(150928, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Highmountain Tribe Insignia
+					i(152464, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Legionfall Insignia
+					i(150930, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Nightfallen Insignia
+					i(150924, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Tribute of the Broken Isles
+					i(150925, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Valarjar Insignia
+					i(150929, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Wardens Insignia
 					i(141341),	-- Highmountain Tribe Insignia
-					i(146938),	-- Highmountain Tribe Insignia
-					i(146944),	-- Highmountain Tribe Insignia
+					i(146938, { ["timeline"] = { ADDED_7_2_0 } }),	-- Highmountain Tribe Insignia
+					i(146944, { ["timeline"] = { ADDED_7_2_0 } }),	-- Highmountain Tribe Insignia
 					i(146950, { ["timeline"] = { ADDED_7_2_0 } }),	-- Legionfall Insignia [BOA]
 					i(146949, { ["timeline"] = { ADDED_7_2_0 } }),	-- Legionfall Insignia [BOP]
 					i(141343),	-- Nightfallen Insignia
-					i(146946),	-- Nightfallen Insignia
+					i(146940, { ["timeline"] = { ADDED_7_2_0 } }),	-- Nightfallen Insignia
+					i(146946, { ["timeline"] = { ADDED_7_2_0 } }),	-- Nightfallen Insignia
 					i(141338),	-- Valarjar Insignia
-					i(146935),	-- Valarjar Insignia
-					i(146941),	-- Valarjar Insignia
+					i(146935, { ["timeline"] = { ADDED_7_2_0 } }),	-- Valarjar Insignia
+					i(146941, { ["timeline"] = { ADDED_7_2_0 } }),	-- Valarjar Insignia
 					i(141342),	-- Wardens Insignia
-					i(146939),	-- Wardens Insignia
-					i(146945),	-- Wardens Insignia
+					i(146939, { ["timeline"] = { ADDED_7_2_0 } }),	-- Wardens Insignia
+					i(146945, { ["timeline"] = { ADDED_7_2_0 } }),	-- Wardens Insignia
 					-- Misc
 					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
 					i(143328),	-- Battle Report
@@ -1069,7 +1093,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
 					i(140362),	-- Dust from the Shadowlands
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
+					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (CI!) (removed until Brawler's Guild comes back someday)
 					i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
@@ -1084,8 +1108,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 					-- Follower Equipments
+					i(147569, { ["timeline"] = { ADDED_7_2_0 } }),	-- Arcane Trap
 					i(152928, { ["timeline"] = { ADDED_7_3_0 } }),	-- Archaic Seerstone
 					i(139802),	-- Auspicious Fetish
+					i(152936, { ["timeline"] = { ADDED_7_3_0 } }),	-- Azurelight Sapphire
+					i(139845),	-- Band of Primordial Strength
 					i(139873),	-- Bottled Sanity
 					i(140582),	-- Bottomless Flask
 					i(139827),	-- Brooch of Endless Dreams
@@ -1107,7 +1134,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139804),	-- Glacial Fang
 					i(139419),	-- Golden Banana
 					i(147554, { ["timeline"] = { ADDED_7_2_0 } }),	-- Harpy Feather
+					i(152442, { ["timeline"] = { ADDED_7_3_0 } }),	-- Impervious Shadoweave Hood
 					i(147350, { ["timeline"] = { ADDED_7_2_0 } }),	-- Invincible Armor Set
+					i(151842, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Armor Set
 					i(152438, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Sledgehammer
 					i(139824),	-- Light's Haven
 					i(152447, { ["timeline"] = { ADDED_7_3_0 } }),	-- Lightburst Charge
@@ -1124,6 +1153,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139828),	-- Queen's Feathers
 					i(139878),	-- Relic of the Ebon Blade
 					i(139876),	-- Rune of Reckoning
+					i(152932, { ["timeline"] = { ADDED_7_3_0 } }),	-- Runewarded Lightblade
+					i(152443, { ["timeline"] = { ADDED_7_3_0 } }),	-- Sanctified Armaments of the Light
 					i(152441, { ["timeline"] = { ADDED_7_3_0 } }),	-- Satchel of Lucidity
 					i(139670),	-- Scream of the Dead
 					i(152934, { ["timeline"] = { ADDED_7_3_0 } }),	-- Shadow-Soaked Stalker Heart
@@ -1145,6 +1176,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152935, { ["timeline"] = { ADDED_7_3_0 } }),	-- Wakener's Bauble
 					i(147559, { ["timeline"] = { ADDED_7_2_0 } }),	-- Ward of Infinite Fury
 					i(139816),	-- Well-Worn Stone
+					i(139849),	-- Windrunner's Gift
 					i(152446, { ["timeline"] = { ADDED_7_3_0 } }),	-- Writ of Holy Orders
 					i(151844, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenedar Armor Set
 					i(152931, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenic Tincture
@@ -1179,10 +1211,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					})),
 					q(44865, {	-- Butler to the Great
 						["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
-						["lvl"] = 110,
 						["provider"] = { "n", 115551 },	-- Phantom Valet
-						["maps"] = { DEADWIND_PASS },
-						["g"] = {
+						["coord"] = { 39.9, 75.4, DEADWIND_PASS },
+						["timeline"] = { ADDED_7_1_0 },
+						["lvl"] = 110,
+						["groups"] = {
 							follower(733),	-- Moroes
 						},
 					}),
@@ -1214,8 +1247,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						un(REMOVED_FROM_GAME, i(141179)),	-- Watertight Salvage Bag (Mythic)
 					})),
 					q(44555, {	-- Khadgar's Discovery
-						["lvl"] = 110,
 						["isBreadcrumb"] = true,
+						["lvl"] = 110,
 					}),
 					un(REMOVED_FROM_GAME, q(43553, {	-- Maw of Souls: Into the Maw of Souls (Normal)
 						un(REMOVED_FROM_GAME, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)
@@ -1234,7 +1267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					})),
 					un(REMOVED_FROM_GAME, q(44265, {	-- Neltharion's Lair: Into Neltharion's Lair (Mythic)
 						["provider"] = { "i", 141192 },	-- Broken Dragon Scale
-						["g"] = {
+						["groups"] = {
 							un(REMOVED_FROM_GAME, i(141181)),	-- Cache of the Black Dragon (Mythic)
 						},
 					})),
@@ -1255,12 +1288,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						un(REMOVED_FROM_GAME, i(142342)),	-- Glittering Pack (No Tag but Mythic)
 					})),
 					q(39735, {	-- Stormheim (A)
-						["races"] = ALLIANCE_ONLY,
 						["altQuests"] = { 44700 },	-- Stormheim (A) from Archmage Landon in Stormheim
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(39864, {	-- Stormheim (H)
-						["races"] = HORDE_ONLY,
 						["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
+						["races"] = HORDE_ONLY,
 					}),
 					un(REMOVED_FROM_GAME, q(43555, {	-- The Arcway: Into the Arcway (Normal)
 						un(REMOVED_FROM_GAME, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
@@ -1281,6 +1314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 					})),
 					q(44058, {  -- Volpin the Elusive
+						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["qgs"] = {
 							96746,	-- Advisor Sevel <The Earthen Ring>
 							110564,	-- Alonsus Faol <Bishop of Secrets>
@@ -1294,15 +1328,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							103023,	-- Tactician Tinderfell <Unseen Path>
 							103732,	-- Tylos Darksight <Illidari Helmsman>
 						},
-						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["coord"] = { 17.4, 31.4, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							i(137573),	-- Llothien Prowler (MOUNT!)
 						},
 					}),
 					--[[q(45312, {	-- You Beat the Ball of Meat
 						["provider"] = { "i", 143590 },	-- Hunk of Meatball
-						["g"] = {
+						["groups"] = {
 							follower(986),	-- Meatball
 						},
 					}),--]] -- Linked with the Mission

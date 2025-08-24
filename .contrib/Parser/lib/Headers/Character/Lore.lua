@@ -3,13 +3,14 @@ LORE = createHeader({
 	icon = 2437241,
 	text = {
 		en = "Lore",
-		--	es = "TODO",
+		es = "Historia",
 		--	de = "TODO",
 		--	fr = "TODO",
 		--	it = "TODO",
+		mx = "Historia",
 		--	pt = "TODO",
-		--	ru = "TODO",
+		ru = "История",
 		--	ko = "TODO",
-		--	cn = "TODO",
+		cn = "剧情",
 	},
 });

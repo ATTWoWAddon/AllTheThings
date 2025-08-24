@@ -22,6 +22,25 @@ i(215163, 435971);	-- Mildly Irradiated Rejuvenation Potion
 i(0, 446226);		-- Flask of Everlasting Nightmares
 i(0, 446851);		-- Flask of Nightmarish Mojo
 i(0, 448085);		-- Flask of Restless Dreams
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+--- ITEM ---
+i(234257, 1213559);	-- Elixir of the Honey Badger
+i(234258, 1213563);	-- Elixir of the Mage-Lord
+i(234259, 1213565);	-- Elixir of the Ironside
+i(234260, 1213571);	-- Elixir of Alacrity
+i(234252, 1213544);	-- Flask of Unyielding Sorrow
+i(234253, 1213546);	-- Flask of Ancient Knowledge
+i(234255, 1213548);	-- Flask of the Old Gods
+i(234256, 1213552);	-- Flask of Madness
+
+------------------
+-- PATCH 1.15.7 --
+------------------
+--- QUEST ---
+i(241651, 1231583);	-- Major Discolored Healing Potion
 -- #endif
 
 -----------------
@@ -1239,3 +1258,10 @@ i(0, 449573);		-- Mercurial Coalescence
 i(0, 449574);		-- Ominous Coalescence
 i(0, 430315);		-- Thaumaturgy
 i(0, 449575);		-- Volatile Coalescence
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(244841, 1238010);	-- Invigorating Healing Potion
+i(248550, 1246966);	-- Umbral Essentia

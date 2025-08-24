@@ -13,13 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skill Level Requirements", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item Database Consolidator", "Item Database Consolidator\Item Database Consolidator.csproj", "{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glyph Database Builder", "Glyph Database Builder\Glyph Database Builder.csproj", "{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Achievement Database Consolidator", "Achievement Database Consolidator\Achievement Database Consolidator.csproj", "{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classic Achievement DB", "Classic Achievement DB\Classic Achievement DB.csproj", "{F0367937-03F0-47D0-BC66-02B61AD95FFF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconID Converter", "IconID Converter\IconID Converter.csproj", "{327F1D35-980F-46B7-8FB7-4754702CEC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization Converter", "Localization Converter\Localization Converter.csproj", "{C64289F2-448E-4369-8995-F1C18180569D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,48 +98,6 @@ Global
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Retail|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Retail|Any CPU.Build.0 = Release|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic Era|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic Era|Any CPU.Build.0 = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic TBC|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic TBC|Any CPU.Build.0 = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic Wrath|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic Wrath|Any CPU.Build.0 = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Classic|Any CPU.Build.0 = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Retail|Any CPU.ActiveCfg = Release|Any CPU
-		{2AA5533C-B01D-40CE-AFA5-FAC1BD200AE1}.Retail|Any CPU.Build.0 = Release|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic Era|Any CPU.ActiveCfg = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic Era|Any CPU.Build.0 = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic TBC|Any CPU.ActiveCfg = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic TBC|Any CPU.Build.0 = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic Wrath|Any CPU.ActiveCfg = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic Wrath|Any CPU.Build.0 = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic|Any CPU.ActiveCfg = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Classic|Any CPU.Build.0 = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Retail|Any CPU.ActiveCfg = Release|Any CPU
-		{02000C40-5A0F-4595-ADC1-7CC2A38ECF76}.Retail|Any CPU.Build.0 = Release|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic Era|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic Era|Any CPU.Build.0 = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic TBC|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic TBC|Any CPU.Build.0 = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic Wrath|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic Wrath|Any CPU.Build.0 = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Classic|Any CPU.Build.0 = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Retail|Any CPU.ActiveCfg = Release|Any CPU
-		{F0367937-03F0-47D0-BC66-02B61AD95FFF}.Retail|Any CPU.Build.0 = Release|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Classic Era|Any CPU.ActiveCfg = Debug|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Classic Era|Any CPU.Build.0 = Debug|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Classic TBC|Any CPU.ActiveCfg = Debug|Any CPU
@@ -158,6 +112,20 @@ Global
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Retail|Any CPU.ActiveCfg = Release|Any CPU
 		{327F1D35-980F-46B7-8FB7-4754702CEC92}.Retail|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Era|Any CPU.ActiveCfg = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Era|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic TBC|Any CPU.ActiveCfg = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic TBC|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Wrath|Any CPU.ActiveCfg = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic Wrath|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic|Any CPU.ActiveCfg = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Classic|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64289F2-448E-4369-8995-F1C18180569D}.Retail|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

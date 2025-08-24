@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236741,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(777),	-- Explore Deadwind Pass
+				ach(777),	-- Explore Deadwind Pass
 			}),
 			battlepets({
 				pet(1160, {	-- Arcane Eye (PET!)
@@ -41,11 +41,71 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
 			}),
+			petbattles({
+				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+					["description"] = "Lydia's pets are level 19 of the following consecutive pet classes:\n1. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Alpine Chipmunk and Alpine Hare.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 19,
+					["groups"] = {
+						q(31916, {	-- Grand Master Lydia Accoste
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
+				}),
+				q(31915, {	-- Grand Master Lydia Accoste
+					["sourceQuests"] = {
+						31917,	-- A Tamer's Homecoming (A)
+						31918,	-- A Tamer's Homecoming (H)
+					},
+					["qg"] = 66522,	-- Lydia Accoste
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						objective(1, {	-- Defeat Lydia Accoste
+							["provider"] = { "n", 66522 },	-- Lydia Accoste
+							["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31976, {	-- The Returning Champion (A)
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
+					["qg"] = 66522,	-- Lydia Accoste
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31980, {	-- The Returning Champion (H)
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
+					["qg"] = 66522,	-- Lydia Accoste
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {
 				q(44154, {	-- The Rite of the Executioner
-					["provider"] = { "o", 254007 },	-- Executioner's Altar
 					["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
+					["provider"] = { "o", 254007 },	-- Executioner's Altar
 					["coord"] = { 38.7, 73.9, DEADWIND_PASS },
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { WARLOCK },
@@ -66,7 +126,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if SEASON_OF_DISCOVERY
 			n(QUESTS, {
 				applyclassicphase(SOD_PHASE_TWO, q(80120, {	-- A Service to Dalaran
-					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
 					["sourceQuests"] = {
 						80148,	-- Curious Dalaran Relic [Arathi Highlands]
 						80152,	-- Curious Dalaran Relic [Badlands]
@@ -76,6 +135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						80149,	-- Curious Dalaran Relic [Swamp of Sorrows]
 						80150,	-- Curious Dalaran Relic [The Barrens]
 					},
+					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["groups"] = {
 						i(217014, {	-- Supply Bag
@@ -137,64 +197,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80148, {	-- Curious Dalaran Relic [Arathi Highlands]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216947 },	-- Whirring Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { ARATHI_HIGHLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80152, {	-- Curious Dalaran Relic [Badlands]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216951 },	-- Slippery Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { BADLANDS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80098, {	-- Curious Dalaran Relic [Deadwind Pass]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216945 },	-- Curious Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80151, {	-- Curious Dalaran Relic [Desolace]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216950 },	-- Creepy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { DESOLACE },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80147, {	-- Curious Dalaran Relic [Duskwood]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216946 },	-- Glittering Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80149, {	-- Curious Dalaran Relic [Swamp of Sorrows]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216948 },	-- Odd Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				})),
 				applyclassicphase(SOD_PHASE_TWO, q(80150, {	-- Curious Dalaran Relic [The Barrens]
+					--["sourceQuest"] = ,	--
 					["providers"] = {
 						{ "i", 216949 },	-- Heavy Dalaran Relic
 						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
 					},
-					--["sourceQuest"] = ,	--
 					["coord"] = { 52, 34.2, DEADWIND_PASS },
 					["maps"] = { THE_BARRENS },
 				})),
@@ -212,9 +272,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.2.5
 			n(TREASURES, {
 				o(421150, {	-- Carved Eye
+					["description"] = "Behind the wooden door",
 					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
 					["timeline"] = { ADDED_10_2_5 },
-					["g"] = {
+					["groups"] = {
 						i(212989),	-- Grimoire of the Mana-Gorged Observer (CI!)
 					},
 				}),

@@ -2801,6 +2801,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2163),	-- Shadowblade
 			i(2138),	-- Sharpened Letter Opener
 			i(3786),	-- Shiny Dirk
+			i(4565),	-- Simple Dagger
 			i(2764),	-- Small Dagger
 			i(13822),	-- Spiked Dagger
 			i(24222),	-- The Shadowfoot Stabber
@@ -3302,7 +3303,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(5765),	-- Black Silk Pack
 		i(856),		-- Blue Leather Bag
 		i(4498),	-- Brown Leather Satchel
+		i(5573),	-- Green Leather Bag
+		i(3914),	-- Journeyman's Backpack
+		i(804),	-- Large Blue Sack
+		i(5576),	-- Large Brown Sack
+		i(5575),	-- Large Green Sack
+		i(1725),	-- Large Knapsack
+		i(857),	-- Large Red Sack
+		i(2657),	-- Red Leather Bag
+		i(5571),	-- Small Black Pouch
+		i(828),	-- Small Blue Pouch
+		i(4496),	-- Small Brown Pouch
+		i(5572),	-- Small Green Pouch
+		i(805),	-- Small Red Pouch
 		i(4500),	-- Traveler's Backpack
+		i(1685),	-- Troll-Hide Bag
+		i(5574),	-- White Leather Bag
 	}),
 	filter(MISC, {
 		i(17962),	-- Blue Sack of Gems
@@ -3808,114 +3824,125 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			}),
 		}),
 		prof(TAILORING, {
-			i(7085),	-- Pattern: Azure Shoulders
+			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter
-			i(4352, {	-- Pattern: Boots of the Enchanter
+			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter (RECIPE!)
+			i(4352, {	-- Pattern: Boots of the Enchanter (RECIPE!)
 				["timeline"] = { REMOVED_1_15_1 },
 			}),
 			-- #else
-			i(4352),	-- Pattern: Boots of the Enchanter
+			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			-- #endif
-			i(14510),	-- Pattern: Bottomless Bag
-			i(14484, {	-- Pattern: Brightcloth Cloak
+			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
+			i(14484, {	-- Pattern: Brightcloth Cloak (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14479, {	-- Pattern: Brightcloth Gloves
+			i(14479, {	-- Pattern: Brightcloth Gloves (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14494),	-- Pattern: Brightcloth Pants
-			i(14478, {	-- Pattern: Brightcloth Robe
+			i(14494),	-- Pattern: Brightcloth Pants (RECIPE!)
+			i(14478, {	-- Pattern: Brightcloth Robe (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(10316),	-- Pattern: Colorful Kilt
+			i(10316),	-- Pattern: Colorful Kilt (RECIPE!)
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217251)),	-- Pattern: Crimson Silk Shoulders
-			i(7084, {	-- Pattern: Crimson Silk Shoulders
-				["timeline"] = { REMOVED_1_15_1 },
-			}),
+			applyclassicphase(SOD_PHASE_TWO, i(217251, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
+			i(7084, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #else
-			i(7084),	-- Pattern: Crimson Silk Shoulders
+			i(7084),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
 			-- #endif
-			i(7086),	-- Pattern: Earthen Silk Belt
-			i(14492, {	-- Pattern: Felcloth Boots
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217249, {["timeline"] = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			i(7086, {["timeline"] = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			-- #else
+			i(7086),	-- Pattern: Earthen Silk Belt (RECIPE!)
+			-- #endif
+			i(14492, {	-- Pattern: Felcloth Boots (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14496, {	-- Pattern: Felcloth Hood
+			i(14496, {	-- Pattern: Felcloth Hood (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14506, {	-- Pattern: Felcloth Robe
+			i(14506, {	-- Pattern: Felcloth Robe (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14508, {	-- Pattern: Felcloth Shoulders
+			i(14508, {	-- Pattern: Felcloth Shoulders (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14474, {	-- Pattern: Frostweave Gloves
+			i(14474, {	-- Pattern: Frostweave Gloves (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14489, {	-- Pattern: Frostweave Pants
+			i(14489, {	-- Pattern: Frostweave Pants (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14467),	-- Pattern: Frostweave Robe
-			i(14466, {	-- Pattern: Frostweave Tunic
+			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
+			i(14466, {	-- Pattern: Frostweave Tunic (RECIPE!)
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
-			i(14511),	-- Pattern: Gloves of Spell Mastery
-			i(2601),	-- Pattern: Gray Woolen Robe
-			i(7090),	-- Pattern: Green Silk Armor
-			i(5774),	-- Pattern: Green Silk Pack
-			i(4292),	-- Pattern: Green Woolen Bag
-			i(7092),	-- Pattern: Hands of Darkness
-			i(4346),	-- Pattern: Heavy Woolen Cloak
-			i(14499),	-- Pattern: Mooncloth Bag
-			i(14509),	-- Pattern: Mooncloth Circlet
-			i(14497),	-- Pattern: Mooncloth Leggings
-			i(14507),	-- Pattern: Mooncloth Shoulders
-			i(14501),	-- Pattern: Mooncloth Vest
-			i(4348),	-- Pattern: Phoenix Gloves
-			i(4349),	-- Pattern: Phoenix Pants
-			i(2598),	-- Pattern: Red Linen Robe
-			i(6271),	-- Pattern: Red Linen Vest
-			i(10312),	-- Pattern: Red Mageweave Gloves
-			i(10320),	-- Pattern: Red Mageweave Headband
-			i(10302),	-- Pattern: Red Mageweave Pants
-			i(10315),	-- Pattern: Red Mageweave Shoulders
-			i(10300),	-- Pattern: Red Mageweave Vest
-			i(4345),	-- Pattern: Red Woolen Boots
-			i(4347),	-- Pattern: Reinforced Woolen Shoulders
-			i(4354),	-- Pattern: Rich Purple Silk Shirt
-			i(14498, {	-- Pattern: Runecloth Headband
+			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
+			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
+			i(7090),	-- Pattern: Green Silk Armor (RECIPE!)
+			i(5774),	-- Pattern: Green Silk Pack (RECIPE!)
+			i(4292),	-- Pattern: Green Woolen Bag (RECIPE!)
+			i(7092),	-- Pattern: Hands of Darkness (RECIPE!)
+			i(4346),	-- Pattern: Heavy Woolen Cloak (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228318, {["timeline"] = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
+			-- #endif
+			i(14499),	-- Pattern: Mooncloth Bag (RECIPE!)
+			i(14509),	-- Pattern: Mooncloth Circlet (RECIPE!)
+			i(14497),	-- Pattern: Mooncloth Leggings (RECIPE!)
+			i(14507),	-- Pattern: Mooncloth Shoulders (RECIPE!)
+			i(14501),	-- Pattern: Mooncloth Vest (RECIPE!)
+			i(4348),	-- Pattern: Phoenix Gloves (RECIPE!)
+			i(4349),	-- Pattern: Phoenix Pants (RECIPE!)
+			i(2598),	-- Pattern: Red Linen Robe (RECIPE!)
+			i(6271),	-- Pattern: Red Linen Vest (RECIPE!)
+			i(10312),	-- Pattern: Red Mageweave Gloves (RECIPE!)
+			i(10320),	-- Pattern: Red Mageweave Headband (RECIPE!)
+			i(10302),	-- Pattern: Red Mageweave Pants (RECIPE!)
+			i(10315),	-- Pattern: Red Mageweave Shoulders (RECIPE!)
+			i(10300),	-- Pattern: Red Mageweave Vest (RECIPE!)
+			i(4345),	-- Pattern: Red Woolen Boots (RECIPE!)
+			i(4347),	-- Pattern: Reinforced Woolen Shoulders (RECIPE!)
+			i(4354),	-- Pattern: Rich Purple Silk Shirt (RECIPE!)
+			i(14498, {	-- Pattern: Runecloth Headband (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14491, {	-- Pattern: Runecloth Pants
+			i(14491, {	-- Pattern: Runecloth Pants (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14504, {	-- Pattern: Runecloth Shoulders
+			i(14504, {	-- Pattern: Runecloth Shoulders (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(14470, {	-- Pattern: Runecloth Tunic
+			i(14470, {	-- Pattern: Runecloth Tunic (RECIPE!)
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
-			i(4351),	-- Pattern: Shadow Hood
-			i(4353),	-- Pattern: Spider Belt
-			i(4350),	-- Pattern: Spider Silk Slippers
-			i(4356),	-- Pattern: Star Belt
-			i(6390),	-- Pattern: Stylish Blue Shirt
-			i(6391),	-- Pattern: Stylish Green Shirt
-			i(7091),	-- Pattern: Truefaith Gloves
-			i(10301),	-- Pattern: White Bandit Mask
+			i(4351),	-- Pattern: Shadow Hood (RECIPE!)
+			i(4353),	-- Pattern: Spider Belt (RECIPE!)
+			i(4350),	-- Pattern: Spider Silk Slippers (RECIPE!)
+			i(4356),	-- Pattern: Star Belt (RECIPE!)
+			i(6390),	-- Pattern: Stylish Blue Shirt (RECIPE!)
+			i(6391),	-- Pattern: Stylish Green Shirt (RECIPE!)
+			i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
 		}),
-		-- #if BEFORE 4.0.1
 		cl(DRUID, {
 			{
 				["itemID"] = 17682,		-- Book: Gift of the Wild
 				["spellID"] = 21849,	-- Gift of the Wild
 				["rank"] = 1,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			},
 			{
 				["itemID"] = 17683,		-- Book: Gift of the Wild II
 				["spellID"] = 21850,	-- Gift of the Wild II
 				["rank"] = 2,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			},
 		}),
 		cl(MAGE, {
@@ -3923,11 +3950,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["itemID"] = 18600,		-- Tome of Arcane Brilliance
 				["spellID"] = 23028,	-- Arcane Brilliance
 				["rank"] = 1,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			},
 			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
 				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
 				["spellID"] = 28609,	-- Frost Ward V
 				["rank"] = 5,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			}),
 		}),
 		cl(PRIEST, {
@@ -3935,16 +3968,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["itemID"] = 17413,		-- Codex: Prayer of Fortitude
 				["spellID"] = 21562,	-- Prayer of Fortitude
 				["rank"] = 1,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			},
 			{
 				["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
 				["spellID"] = 21564,	-- Prayer of Fortitude II
 				["rank"] = 2,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			},
 			applyclassicphase(PHASE_FIVE_RECIPES, {
 				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
 				["spellID"] = 27683,	-- Prayer of Shadow Protection
 				["rank"] = 1,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			}),
 		}),
 		cl(WARLOCK, {
@@ -3952,11 +3994,2040 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
 				["spellID"] = 28610,	-- Shadow Ward IV
 				["rank"] = 4,
+				-- #if AFTER CATA
+				["collectible"] = false,
+				-- #endif
 			}),
 		}),
-		-- #endif
 	}),
 	filter(REAGENTS, {
+		-- Table of Content:
+		--	Cloth + Silk
+		--	Elemetal reagents
+		--	Clams
+		--	Cooking reagents
+		--	Other reagents
+		--_______________________________
+		--
+		-- Cloth:
+		i(14256, {	-- Felcloth
+			-- #if AFTER CATA
+			["coords"] = {
+				{ 52.0, 70.15, WINTERSPRING },	-- Xorothian Imps (Mazthoril)
+				{ 52.3, 75.70, WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
+				{ 52.75, 64.65, WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 17.7, 37.7, FELWOOD },	-- Misty Valley
+				{ 37.7, 67.85, BLASTED_LANDS },	-- The Tainted Forest
+				{ 33.4, 46.8, BLASTED_LANDS },	-- The Tainted Scar
+				{ 45.9, 46.8, BLASTED_LANDS },	-- The Dark Portal, west of
+			},
+			["crs"] = {
+				50315,	-- Xorothian Eredar
+				50321,	-- Xorothian Imp
+				50318,	-- Xorothian Satyr
+				7136,	-- Infernal Sentry
+				46950,	-- Misty Grell
+				41253,	-- Oath-Chained Infernal
+				41470,	-- Doomguard Destroyer
+				41471,	-- Dreadlord Defiler
+				6011,	-- Felguard Sentry
+			},
+			-- #endif
+			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
+			["maps"] = {
+				DIRE_MAUL_WARPWOOD_QUARTER,
+				-- #if BEFORE CATA
+				FELWOOD,
+				-- #endif
+			},
+		}),
+		i(2589, {	-- Linen Cloth
+			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				DUN_MOROGH,
+				DUROTAR,
+				ELWYNN_FOREST,
+				LOCH_MODAN,
+				MULGORE,
+				RAGEFIRE_CHASM,
+				SILVERPINE_FOREST,
+				TIRISFAL_GLADES,
+				WESTFALL,
+			},
+		}),
+		i(4338, {	-- Mageweave Cloth
+			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				BADLANDS,
+				BURNING_STEPPES,
+				DIRE_MAUL_GORDOK_COMMONS,
+				FELWOOD,
+				SEARING_GORGE,
+				TANARIS,
+				ZULFARRAK,
+			},
+		}),
+		i(14047, {	-- Runecloth
+			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				BLASTED_LANDS,
+				LOWER_BLACKROCK_SPIRE,
+				SILITHUS,
+				STRATHOLME,
+				SWAMP_OF_SORROWS,
+				WINTERSPRING,
+			},
+		}),
+		i(4306, {	-- Silk Cloth
+			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				DESOLACE,
+				DIRE_MAUL_GORDOK_COMMONS,
+				FERALAS,
+				MARAUDON,
+				RAZORFEN_KRAUL,
+				THE_HINTERLANDS,
+				ULDAMAN,
+			},
+		}),
+		i(2592, {	-- Wool Cloth
+			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				ASHENVALE,
+				BLACKFATHOM_DEEPS,
+				DUSKWOOD,
+				THE_STOCKADE,
+				WETLANDS,
+			},
+		}),
+		-- Silk:
+		i(14227, {	-- Ironweb Spider Silk
+			-- #if AFTER 4.0.3
+			["crs"] = {
+				10376,	-- Crystal Fang
+				10596,	-- Mother Smolderweb
+				10374,	-- Spire Spider
+				10375,	-- Spire Spiderling
+			},
+			["description"] = "Drops from spiders in Lower Blackrock Spire.",
+			["maps"] = { LBRS_SKITTERWEB_TUNNELS },
+			-- #else
+			["crs"] = {
+				1821,	-- Carrion Lurker
+				5858,	-- Greater Lava Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in the level bracket 45-60.",
+			["maps"] = {
+				SEARING_GORGE,
+				WESTERN_PLAGUELANDS,
+			},
+			-- #endif
+		}),
+		i(10285, {	-- Shadow Silk
+			-- #if AFTER BFA
+			["crs"] = {
+				5856,	-- Glassweb Spider
+				5858,	-- Greater Lava Spider
+				5857,	-- Searing Lava Spider
+			},
+			["description"] = "Drops from spiders in Searing Gorge.",
+			["maps"] = { SEARING_GORGE },
+			-- #elseif AFTER 4.0.3
+			["crs"] = {
+				5856,	-- Glassweb Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in higher level vanilla zones.",
+			-- #else
+			["crs"] = {
+				1821,	-- Carrion Lurker
+				5856,	-- Glassweb Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in the level bracket 45-60.",
+			-- #endif
+		}),
+		i(3182, {	-- Spider's Silk
+			["crs"] = {
+				3821,	-- Wildthorn Lurker
+				3819,	-- Wildthorn Stalker
+				3820,	-- Wildthorn Venomspitter
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			-- #endif
+			["maps"] = { ASHENVALE, },
+		}),
+		i(4337, {	-- Thick Spider's Silk
+			-- Danny Donkey: Anyclassic here points to sources nerfed at an unknown point between MoP and TWW.
+			["crs"] = {
+				-- #if AFTER 4.0.3
+				-- #else
+				1821,	-- Carrion Lurker
+				4411,	-- Darkfang Lurker
+				4431,	-- Darkfang Spider
+				4377,	-- Darkmist Lurker
+				5856,	-- Glassweb Spider
+				5858,	-- Greater Lava Spider
+				5857,	-- Searing Lava Spider
+				-- #endif
+				4412,	-- Darkfang Creeper
+				4414,	-- Darkfang Venomspider
+				4378,	-- Darkmist Recluse
+				4379,	-- Darkmist Silkspinner
+				4376,	-- Darkmist Spider
+				4415,	-- Giant Darkfang Spiders
+				-- #if ANYCLASSIC
+				1824,	-- Plague Lurker
+				1822,	-- Venom Mist Lurker
+				-- #endif
+			},
+			["description"] = "Drops from spiders in the level bracket 32-60.",
+			["maps"] = {
+				DUSTWALLOW_MARSH,
+				-- #if BEFORE CATA
+				SEARING_GORGE,
+				-- #endif
+				-- #if ANYCLASSIC
+				WESTERN_PLAGUELANDS,
+				-- #endif
+			},
+		}),
+		--___________________________________
+		--
+		-- Elemental reagents:
+			-- Air:
+		i(7069, {	-- Elemental Air
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 52.0, 50.0, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 30.0, 78.0, DESOLACE },	-- Sar'theris Strand, east of
+				{ 53.0, 86.0, DESOLACE },	-- Mannoroc Coven, south of
+				{ 62.0, 73.0, DESOLACE },	-- Mannoroc Coven, east of
+				{ 61.0, 50.0, DESOLACE },	-- Kodo Graveyard, northeast of
+				{ 44.0, 52.0, DESOLACE },	-- Kodo Graveyard, northwest of
+				{ 50.0, 32.0, DESOLACE },	-- Northwestern Desolace
+				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				8667,	-- Gusting Vortex
+				2762,	-- Thundering Exile
+				11576,	-- Whirlwind Ripper
+				11578,	-- Whirlwind Shredder
+				11577,	-- Whirlwind Stormwalker
+				-- #if BEFORE 4.0.3
+				9397,	-- Living Storm
+				14455,	-- Whirling Invader
+				-- #endif
+			},
+		}),
+		i(7081, {	-- Breath of Wind
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 72.0, TANARIS },	-- Southwestern Tanaris
+				{ 46.0, 72.0, TANARIS },	-- Southern Tanaris
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 46.4, 52.1, ARATHI_HIGHLANDS },	-- Circle of Outer Binding
+				{ 44.7, 43.0, DESOLACE },	-- Cenarion Wildlands, west of
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+				{ 44.9, 44.8, TANARIS },	-- Abyssal Sands
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				8667,	-- Gusting Vortex
+				-- #if BEFORE 4.0.3
+				9397,	-- Living Storm
+				14455,	-- Whirling Invader
+				-- #else
+				2762,	-- Thundering Exile
+				11576,	-- Whirlwind Ripper
+				11578,	-- Whirlwind Shredder
+				11577,	-- Whirlwind Stormwalker
+				-- #endif
+			},
+			-- #if AFTER 4.0.3
+			["description"] = "Silithus is the best place to farm these in terms of mob density and drop rate.",
+			-- #endif
+		}),
+		i(7082, {	-- Essence of Air
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 16.0, SILITHUS },	-- The Crystal Vale, east of
+				{ 29.0, 25.0, SILITHUS },	-- The Crystal Vale, southeast of
+				{ 20.0, 25.0, SILITHUS },	-- The Crystal Vale, south of
+				-- #else
+				{ 37.7, 17.4, SILITHUS },	-- The Crystal Vale, east of
+				{ 27.9, 25.5, SILITHUS },	-- The Crystal Vale, south of
+				-- #endif
+			},
+			["crs"] = {
+				11745,	-- Cyclone Warrior
+				11744,	-- Dust Stormer
+				-- #if BEFORE 4.0.3
+				14455,	-- Whirling Invader
+				-- #endif
+				-- #if AFTER TBC
+				17158,	-- Dust Howler
+				17160,	-- Living Cyclone
+				17159,	-- Storm Rager
+				22310,	-- Storming Wind-Ripper
+				-- #endif
+			},
+			-- #if AFTER TBC
+			["description"] = "If there is competition about spawns in Silithus, Nagrand in the second best option where air elementals can be found almost everywhere.",
+			["maps"] = { NAGRAND },
+			-- #endif
+		}),
+			-- Earth:
+		i(7067, {	-- Elemental Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 36.0, 57.0, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 54.0, 82.0, BADLANDS },	-- Eastern shelf, southside
+				{ 42.0, 78.0, BADLANDS },	-- Middle shelf, southside
+				{ 9.0, 80.0, BADLANDS },	-- Southwest side
+				{ 18.0, 41.0, BADLANDS },	-- Northwest side
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				-- #else
+				{ 29.9, 59.7, ARATHI_HIGHLANDS },	-- Circle of Inner Binding
+				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 47.6, 81.0, SOUTHERN_BARRENS },	-- Bael Modan, north of
+				{ 72.1, 78.4, STONETALON_MOUNTAINS },	-- The Deep Reaches (Alliance entrance)
+				{ 66.4, 60.6, STONETALON_MOUNTAINS },	-- The Deep Reaches (Horde entrance)
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				92,	-- Rock Elemental
+				2592,	-- Rumbling Exile
+				-- #if BEFORE 4.0.3
+				2791,	-- Enraged Rock Elemental
+				2736,	-- Greater Rock Elemental
+				9396,	-- Ground Pounder
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				5465,	-- Land Rager
+				2735,	-- Lesser Rock Elemental
+				-- #else
+				37553,	-- Disturbed Earth elemental
+				48960,	-- Frostshard Rumbler
+				41993,	-- Raging Earth Elemental
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+		}),
+		i(7075, {	-- Core of Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 48.0, 48.0, TANARIS },	-- Tanaris Heights
+				{ 49.0, 25.0, TANARIS },	-- Tanaris North
+				-- #else
+				{ 32.5, 53.8, BADLANDS },	-- Scar of the Worldbreaker
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				-- #if BEFORE 4.0.3
+				9396,	-- Ground Pounder
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				5465,	-- Land Rager
+				-- #else
+				48960,	-- Frostshard Rumbler
+				92,	-- Rock Elemental
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+		}),
+		i(7076, {	-- Essence of Earth
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 65.0, 27.0, BURNING_STEPPES },	-- Flame Crest
+				{ 37.0, 60.0, BURNING_STEPPES },	-- Black Tooth Hovel, west of
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				-- #else
+				{ 18.2, 44.0, BURNING_STEPPES },	-- Flamestar Post, north of
+				{ 59.6, 59.3, WINTERSPRING },	-- Beryl Egress, north of
+				-- #endif
+				{ 62.3, 46.8, BURNING_STEPPES },	-- Valley of Ashes
+				{ 31.4, 14.0, SILITHUS },	-- The Crystal Vale
+			},
+			["crs"] = {
+				11747,	-- Desert Rager
+				11746,	-- Desert Rumbler
+				7032,	-- Greater Obsidian Elemental
+				7031,	-- Obsidian Elemental
+				-- #if BEFORE 4.0.3
+				7135,	-- Infernal Bodyguard
+				7136,	-- Infernal Sentry
+				-- #else
+				48960,	-- Frostshard Rumbler
+				-- #endif
+			},
+			["maps"] = {
+				MOLTEN_CORE,
+			},
+			["providers"] = {
+				{ "o", 181069 },	-- Large Obsidian Chunk
+				{ "o", 181068 },	-- Small Obsidian Chunk
+			},
+		}),
+			-- Fire:
+		i(7068, {	-- Elemental Fire
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 25.0, 30.0, ARATHI_HIGHLANDS },	-- Circle of West Binding
+				{ 34.0, 64.0, STONETALON_MOUNTAINS },	-- The Charred Vale
+				-- #else
+				{ 18.8, 30.7, ARATHI_HIGHLANDS },	-- Circle of West Binding
+				-- #endif
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				5850,	-- Blazing Elemental
+				2760,	-- Burning Exile
+				9879,	-- Entropic Horror
+				5852,	-- Inferno Elemental
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				4038,	-- Burning Destroyer
+				4037,	-- Burning Ravager
+				9878,	-- Entropic Beast
+				4036,	-- Rogue Flame Spirit
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+				SEARING_GORGE,
+			},
+		}),
+		i(7077, {	-- Hearth of Fire
+			["coords"] = {
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				5850,	-- Blazing Elemental
+				9879,	-- Entropic Horror
+				5852,	-- Inferno Elemental
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				9878,	-- Entropic Beast
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+				SEARING_GORGE,
+			},
+		}),
+		i(7078, {	-- Essence of Fire
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				-- #endif
+				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
+			},
+			["crs"] = {
+				6521,	-- Living Blaze
+				6520,	-- Scorching Elemental
+				-- #if BEFORE 4.0.3
+				9878,	-- Entropic Beast
+				9879,	-- Entropic Horror
+				-- #endif
+			},
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				MOLTEN_CORE,
+			},
+		}),
+			-- Life:
+		i(10286, {	-- Heart of the Wild
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
+				-- #else
+				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
+				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
+				-- #endif
+				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
+				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
+			},
+			["crs"] = {
+				6510,	-- Bloodpetal Flayer
+				6509,	-- Bloodpetal Lasher
+				6511,	-- Bloodpetal Thresher
+				6512,	-- Bloodpetal Trapper
+				7139,	-- Irontree Stomper
+				6517,	-- Tar Beast
+				6527,	-- Tar Creeper
+				6519,	-- Tar Lord
+				6518,	-- Tar Lurker
+				7100,	-- Warpwood Moss Flayer
+				7149,	-- Withered Protector
+				-- #if BEFORE 4.0.3
+				1813, 	-- Decaying Horror
+				7138,	-- Irontree Wanderer
+				7101,	-- Warpwood Shredder
+				1812, 	-- Rottin Behemoth
+				-- #else
+				45119,	-- Corrupted Darkwood Treant
+				45118,	-- Darkwood Treant
+				45125,	-- Felspore Bog Lord
+				48952,	-- Frostleaf Treant
+				49217,	-- Wintervine Lasher
+				-- #endif
+			},
+			["maps"] = {
+				DIRE_MAUL,
+				MARAUDON,
+				-- #if BEFORE 4.0.3
+				SWAMP_OF_SORROWS,
+				-- #endif
+			},
+		}),
+		i(12803, {	-- Living Essence
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 64.0, 36.0, WESTERN_PLAGUELANDS },	-- The Weeping Cave
+				-- #else
+				{ 44.8, 81.0, BLASTED_LANDS },	-- Surwich, north of
+				{ 33.7, 78.2, BLASTED_LANDS },	-- Western Tainted Forest
+				{ 40.3, 69.5, BLASTED_LANDS },	-- Central Tainted Forest
+				{ 37.5, 56.2, BLASTED_LANDS },	-- Northen Tainted Forest
+				{ 51.5, 25.0, FELWOOD },	-- Irontree Woods
+				{ 69.5, 36.7, UNGORO_CRATER },	-- The Roiling Gardens
+				{ 50.3, 48.9, WINTERSPRING },	-- Lake Kel'Theril, north of
+				-- #endif
+				{ 55.3, 21.6, UNGORO_CRATER },	-- Lakkari Tar Pits
+			},
+			["crs"] = {
+				7139,	-- Irontree Stomper
+				6517,	-- Tar Beast
+				6527,	-- Tar Creeper
+				6519,	-- Tar Lord
+				6518,	-- Tar Lurker
+				7100,	-- Warpwood Moss Flayer
+				7149,	-- Withered Protector
+				-- #if BEFORE 4.0.3
+				1813, 	-- Decaying Horror
+				7138,	-- Irontree Wanderer
+				7101,	-- Warpwood Shredder
+				1812, 	-- Rottin Behemoth
+				-- #else
+				6510,	-- Bloodpetal Flayer
+				6509,	-- Bloodpetal Lasher
+				6511,	-- Bloodpetal Thresher
+				6512,	-- Bloodpetal Trapper
+				45119,	-- Corrupted Darkwood Treant
+				45118,	-- Darkwood Treant
+				45125,	-- Felspore Bog Lord
+				48952,	-- Frostleaf Treant
+				49217,	-- Wintervine Lasher
+				-- #endif
+			},
+			["maps"] = {
+				DIRE_MAUL,
+			},
+		}),
+			-- Undeath:
+		i(7972, {	-- Ichor of Undeath
+			-- #if BEFORE 4.0.3
+			["coords"] = {
+				{ 16.0, 70.0, AZSHARA },	-- Talrendis Point, northeast of
+				{ 37.0, 54.0, AZSHARA },	-- Ruins of Eldarath
+				{ 46.0, 70.0, DEADWIND_PASS },	-- Around Karazhan
+				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+			},
+			["crs"] = {
+				7524,	-- Anghuished Highborne
+				12378,	-- Damned Soul
+				6116,	-- Highborne Apparition
+				6117,	-- Highborne Lichling
+				7864,	-- Lingering Highborne
+				7370,	-- Restless Shade
+				7523,	-- Suffering Highborne
+				12379,	-- Unliving Caretaker
+				12380,	-- Unliving Resident
+				12377,	-- Wailing Spectre
+			},
+			-- #endif
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from Undead creatures in the given zones.",
+			-- #else
+			["description"] = "Open world sources have been heavily nerfed, and this reagent will only reliably drop from Undead creatures in the given instances.",
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE 4.0.3
+				EASTERN_PLAGUELANDS,
+				WESTERN_PLAGUELANDS,
+				-- #endif
+				DIRE_MAUL_CAPITAL_GARDENS,
+				SCHOLOMANCE,
+				STRATHOLME,
+			},
+		}),
+		i(12808, {	-- Essence of Undeath
+			-- #if AFTER 4.0.3
+			["coord"] = { 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
+			["crs"] = {
+				7524,	-- Anguished Highborne
+				7523,	-- Suffering Highborne
+				48665,	-- Wretched Spectre
+				48664,	-- Wretched Spirit
+			},
+			["description"] = "Drops from Undead creatures in the given zones.",
+			-- #else
+			["description"] = "Drops from Undead creatures in the given instances.",
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE WRATH
+				NAXXRAMAS,
+				-- #elseif AFTER 4.0.3
+				EASTERN_PLAGUELANDS,
+				-- #endif
+				DIRE_MAUL,
+				SCHOLOMANCE,
+				STRATHOLME,
+			},
+		}),
+			-- Water:
+		i(7070, {	-- Elemental Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 66.0, 29.0, ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 61.6, 30.4, ARATHI_HIGHLANDS },	-- Circle of East Binding
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+				{ 49.1, 70.2, ASHENVALE },	-- Mystral Lake
+				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+			},
+			["crs"] = {
+				3917,	-- Befouled Water Elemental
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				2761,	-- Cresting Exile
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				5461,	-- Sea Elemental
+				5462,	-- Sea Spray
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
+				-- #endif
+			},
+		}),
+		i(7079, {	-- Globe of Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+				{ 38.5, 35.4, FERALAS },	-- The Forgotten Coast, north
+				{ 46.9, 55.9, FERALAS },	-- The Forgotten Coast, south
+			},
+			["crs"] = {
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				5461,	-- Sea Elemental
+				5462,	-- Sea Spray
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
+				-- #endif
+			},
+		}),
+		i(7080, {	-- Essence of Water
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 51.0, 50.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 62.0, 81.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 71.0, 34.0, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 56.0, 17.0, FELWOOD },	-- Irontree Woods
+				{ 54.0, 40.0, WINTERSPRING },	-- Lake Kal'Theril
+				-- #else
+				{ 46.5, 44.0, EASTERN_PLAGUELANDS },	-- Blackwood Lake
+				{ 56.4, 74.0, EASTERN_PLAGUELANDS },	-- Lake Mereldar
+				{ 66.3, 29.6, EASTERN_PLAGUELANDS },	-- Northdale
+				{ 18.3, 60.2, SWAMP_OF_SORROWS },	-- Purespring Cavern
+				{ 30.5, 53.2, UNGORO_CRATER },	-- Golakka Hot Springs
+				{ 33.0, 50.5, WINTERSPRING },	-- Frostfire Hot Springs
+				{ 60.0, 85.1, WINTERSPRING },	-- Frostwhisper Gorge
+				-- #endif
+			},
+			["crs"] = {
+				8521,	-- Blighted Horror
+				8519,	-- Blighted Surge
+				8522,	-- Plague Monstrosity
+				8520,	-- Plague Ravager
+				-- #if BEFORE 4.0.3
+				7132,	-- Toxic Horror
+				14458,	-- Watery Invader
+				-- #else
+				50250,	-- Ice Avatar
+				46953,	-- Purespring Elemental
+				48767,	-- Scalding Springsurge
+				38254,	-- Steaming Fury
+				-- #endif
+			},
+		}),
+		--___________________________________
+		--
+		-- Clams:
+		i(7973, {	-- Big-mouth Clam
+			-- #if AFTER 4.0.3
+			["coords"] = {
+				{ 66.0, 70.0, BLASTED_LANDS },	-- The Red Reaches
+			},
+			-- #endif
+			["maps"] = {
+				-- #if BEFORE 4.0.3
+				AZSHARA,
+				DUSTWALLOW_MARSH,
+				FERALAS,
+				STRANGLETHORN_VALE,
+				-- #else
+				THOUSAND_NEEDLES,
+				-- #endif
+				SWAMP_OF_SORROWS,
+				TANARIS,
+				THE_HINTERLANDS,
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 30-60.",
+			-- #else
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 40-60.",
+			-- #endif
+			["groups"] = {
+				i(7974),	-- Zesty Clam Meat
+				i(7971),	-- Black Pearl
+				i(13926),	-- Golden Pearl
+				i(5500),	-- Iridescent Pearl
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		o(2744),	-- Giant Clam (with Giant Clam Meat, found in STV)
+		o(19017, {	-- Giant Clam (with Clam Meat, found in Bloodmyst Isle and Ghostlands)
+			["description"] = "Can be found in the sea.",
+			["nomerge"] = true,
+			["groups"] = {
+				i(5503),	-- Clam Meat
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		o(19018, {	-- Giant Clam (with Tangy Clam Meat, found in BfD)
+			["nomerge"] = true,
+			["groups"] = {
+				i(2143),	-- Cuirboulli Boots (confirmed - Danny Donkey)
+				i(5500),	-- Iridescent Pearl
+				i(5504),	-- Tangy Clam Meat
+			},
+		}),
+		i(5523, {	-- Small Barnacled Clam
+			["maps"] = {
+				-- #if BEFORE 4.0.3
+				THE_BARRENS,
+				-- #else
+				AZSHARA,
+				DUROTAR,
+				ELWYNN_FOREST,
+				NORTHERN_BARRENS,
+				TIRISFAL_GLADES,
+				-- #endif
+				ASHENVALE,
+				DARKSHORE,
+				LOCH_MODAN,
+				REDRIDGE_MOUNTAINS,
+				SILVERPINE_FOREST,
+				WESTFALL,
+				-- #if AFTER TBC
+				AZUREMYST_ISLE,
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 1-20.",
+			-- #else
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",
+			-- #endif
+			["groups"] = {
+				i(5503),	-- Clam Meat
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		i(5524, {	-- Thick-Shelled Clam
+			["maps"] = {
+				-- #if AFTER 4.0.3
+				ASHENVALE,
+				DARKSHORE,
+				NORTHERN_STRANGLETHORN,
+				-- #endif
+				BLACKFATHOM_DEEPS,
+				HILLSBRAD_FOOTHILLS,
+				WETLANDS,
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",
+			-- #else
+			["description"] = "Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",
+			-- #endif
+			["groups"] = {
+				i(5500),	-- Iridescent Pearl
+				i(5504),	-- Tangy Clam Meat
+				i(5498),	-- Small Lustrous Pearl
+			},
+		}),
+		-- Cooking:
+		i(35562, {	-- Bear Flank
+			["coords"] = {
+				{ 39.0, 45.2, FELWOOD },	-- Shatter Scale Vale, west of
+				{ 43.5, 63.0, FELWOOD },	-- Wildhearth Point, west of
+				{ 46.1, 83.0, FELWOOD },	-- Dreadwood Village, north of
+				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border)
+			},
+			["crs"] = {
+				8956,	-- Angerclaw Bear
+				8958,	-- Angerclaw Mauler
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from bears in previously highlevel vanilla zones like Angerclaw bears in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in highlevel vanilla zones like Angerclaw bears in Felwood.",
+			-- #else
+			["description"] = "Drops from bears in the level bracket 45-60 like Angerclaw bears in Felwood.",
+			-- #endif
+			["timeline"] = { ADDED_2_4_0 },
+		}),
+		i(3173, {	-- Bear Meat
+			["coords"] = {
+				{ 73.7, 44.8, LOCH_MODAN },	-- Eastside bear valley
+				{ 35.4, 38.5, LOCH_MODAN },	-- Thelsamar, north of
+				-- #if BEFORE 4.0.3
+				{ 48.6, 31.8, DARKSHORE },
+				{ 29.2, 53.0, LOCH_MODAN },
+				-- #endif
+			},
+			["crs"] = {
+				1186,	-- Black Bear/Elder Black bear
+				1225,	-- Ol' Sooty
+				-- #if BEFORE 4.0.3
+				1189,	-- Black Bear Patriarch
+				1188,	-- Grizzled Black Bear
+				2165,	-- Grizzled Thistle Bear
+				2164,	-- Rabid Thistle Bear
+				2163,	-- Thistle Bear
+				-- #else
+				44638,	-- Hill grizzly
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from bears in previously lower level vanilla zones like bears in Loch Modan.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in lower level vanilla zones like bears in Loch Modan.",
+			-- #else
+			["description"] = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
+			-- #endif
+		}),
+		i(3730, {	-- Big Bear Meat
+			["coords"] = {
+				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
+				{ 67.5, 62.2, ASHENVALE },	-- The Shady Nook, east of
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				3809,	-- Ashenvale Bear
+				-- #endif
+				3810,	-- Elder Ashenvale Bear
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from bears in previously lower intermediate level vanilla zones like Elder bears in Ashenvale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from bears in lower intermediate level vanilla zones like Elder bears in Ashenvale.",
+			-- #else
+			["description"] = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
+			-- #endif
+		}),
+		i(2677, {	-- Boar Ribs
+			["coords"] = {
+				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+			},
+			["crs"] = {
+				157,	-- Goretusk
+				454,	-- Young Goretusk
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in lower level vanilla zones like Goretusks in Westfall.",
+			-- #else
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
+			-- #endif
+		}),
+		i(3404, {	-- Buzzard Wing
+			["coords"] = {
+				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+			},
+			["crs"] = {
+				5429,	-- Fire Roc
+				-- #if BEFORE 4.0.3
+				5428,	-- Roc
+				-- #endif
+				5430,	-- Searing Roc
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from carrion birds in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from carrion birds in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #else
+			["description"] = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #endif
+		}),
+		i(769, {	-- Chunk of Boar Meat
+			["coords"] = {
+				{ 46.6, 59.8, DUN_MOROGH },
+				{ 53.6, 59.6, DUROTAR },
+				{ 41.6, 88.0, ELWYNN_FOREST },	-- The Maclyre Vineyards
+				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				{ 54.2, 42.6, WESTFALL },
+				-- #if BEFORE 4.0.3
+				{ 37.0, 34.4, LOCH_MODAN },
+				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				-- #else
+				{ 56.3, 35.8, LOCH_MODAN },
+				-- #endif
+			},
+			["crs"] = {
+				1125,	-- Crag Boar
+				3099,	-- Dire Mottled Boar
+				3100,	-- Elder Mottled Boar
+				157,	-- Goretusk
+				547,	-- Great Goretusk
+				119,	-- Longsnout
+				330,	-- Princess
+				524,	-- Rockhide Boar
+				1689,	-- Scarred Crag Boar
+				113,	-- Stonetusk Boar
+				454,	-- Young Goretusk
+				-- #if BEFORE 4.0.3
+				3225,	-- Corrupted Mottled Boar
+				1127,	-- Elder Crag Boar
+				1192,	-- Elder Mountain Boar
+				1126,	-- Large Crag Boar
+				1191,	-- Mangy Mountain Boar
+				1190,	-- Mountain Boar
+				390,	-- Porcine Entourage
+				-- #else
+				42357,	-- Hulking Goretusk
+				44627,	-- Mudbelly Boar
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				208638,	-- Fyodi
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from boars in previously entry- and low level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",
+			-- #else
+			["description"] = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
+			-- #endif
+		}),
+		-- i(5503),	-- Clam Meat > Properly sourced under Giant Clam listed above.
+		i(2675, {	-- Crawler Claw
+			["maps"] = {
+				ASHENVALE,
+				-- #if BEFORE 4.0.3
+				DARKSHORE,
+				-- #endif
+				WESTFALL,
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #else
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
+			-- #endif
+		}),
+		i(2674, {	-- Crawler Meat
+			["maps"] = {
+				ASHENVALE,
+				-- #if BEFORE 4.0.3
+				DARKSHORE,
+				-- #endif
+				WESTFALL,
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from crawlers in previously lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in lower level vanilla zones like crawlers throughout the shoreline in Ashenvale and Westfall.",
+			-- #else
+			["description"] = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
+			-- #endif
+		}),
+		i(2924, {	-- Crocolisk Meat
+			["coord"] = { 54.3, 57.8, LOCH_MODAN },	-- The Loch (southern isle)
+			["cr"] = 1693,	-- Loch Crocolisk
+			-- #if AFTER BFA
+			["description"] = "Drops from crocolisks in previously lower level vanilla zones like crocolisks in Loch Modan.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crocolisks in lower level vanilla zones like crocolisks in Loch Modan.",
+			-- #else
+			["description"] = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
+			-- #endif
+		}),
+		i(22644, {	-- Crunchy Spider Leg
+			["coords"] = {
+				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+			},
+			["crs"] = {
+				930,	-- Black Widow Hatchling
+				217,	-- Venom Web Spider
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously lower intermediate level vanilla zones like spiders in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in lower intermediate level vanilla zones like spiders in Duskwood.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 10-35 like spiders in Duskwood.",
+			-- #endif
+			["timeline"] = { ADDED_2_0_1 },
+		}),
+		i(12207, {	-- Giant Egg
+			["coords"] = {
+				{ 47.1, 42.0, TANARIS },	-- Northen Abyssal Sands
+				{ 36.5, 61.2, TANARIS },	-- Southern Abyssal Sands
+			},
+			["crs"] = {
+				5429,	-- Fire Roc
+				-- #if BEFORE 4.0.3
+				5428,	-- Roc
+				-- #endif
+				5430,	-- Searing Roc
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from birds and owlbeasts in previously higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from birds and owlbeasts in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #else
+			["description"] = "Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
+			-- #endif
+		}),
+		i(2251, {	-- Gooey Spider Leg
+			["coords"] = {
+				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+			},
+			["crs"] = {
+				930,	-- Black Widow Hatchling
+				217,	-- Venom Web Spider
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously intermediate level vanilla zones like spiders in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in the intermediate level vanilla zones like spiders in Duskwood.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
+			-- #endif
+		}),
+		i(723, {	-- Goretusk Liver
+			["coords"] = {
+				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
+				-- #if BEFORE 4.0.3
+				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
+				-- #endif
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				345,	-- Bellygrub
+				547,	-- Great Goretusk
+				-- #else
+				42357,	-- Hulking Goretusk
+				-- #endif
+				157,	-- Goretusk
+				454,	-- Young Goretusk
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from boars in previously lower level vanilla zones like Goretusks in Westfall.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from boars in lower level vanilla zones like Goretusks in Westfall.",
+			-- #else
+			["description"] = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
+			-- #endif
+		}),
+		i(12204, {	-- Heavy Kodo Meat
+			["coords"] = {
+				{ 52.0, 59.0, DESOLACE },	-- Kodo Graveyard
+			},
+			["crs"] = {
+				4700,	-- Aged Kodo
+				4702,	-- Ancient Kodo
+				4701,	-- Dying Kodo
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from kodos in Desolace.",
+			-- #else
+			["description"] = "Drops from kodos in Desolace as well as other vanilla zones.",
+			-- #endif
+		}),
+		i(5467, {	-- Kodo Meat
+			["maps"] = {
+				MULGORE,
+				-- #if BEFORE 4.0.3
+				THE_BARRENS,
+				-- #endif
+			},
+			["crs"] = {
+				3236,	-- Barrens Kodo
+				2973,	-- Kodo Bull
+				2972,	-- Kodo Calf
+				2974,	-- Kodo Matriarch
+				3234,	-- Lost Barrens Kodo
+				-- #if BEFORE 4.0.3
+				3235,	-- Greater Barrens Kodo
+				3474,	-- Lakota'mani
+				3237,	-- Wooly Kodo
+				-- #endif
+			},
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from kodos in Mulgore and southern Barrens.",
+			-- #else
+			["description"] = "Most viably obtained from kodos in Mulgore.",
+			-- #endif
+		}),
+		i(1015, {	-- Lean Wolf Flank
+			["coords"] = {
+				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				565,	-- Rapid Dire Wolf
+				213,	-- Starving Dire Wolf
+				-- #else
+				43704,	-- Dire Wolf
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from wolves in previously lower intermediate level vanilla zones like Dire wolves in Duskwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in lower intermediate level vanilla zones like Dire wolves in Duskwood.",
+			-- #else
+			["description"] = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
+			-- #endif
+		}),
+		i(3731, {	-- Lion Meat
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 41.5, 37.5, HILLSBRAD_FOOTHILLS },	-- Hillsbrad Fields, east of
+				{ 50.0, 31.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
+				-- #else
+				{ 44.5, 57.5, HILLSBRAD_FOOTHILLS },	-- The Sludgefields, east of
+				{ 49.0, 56.3, HILLSBRAD_FOOTHILLS },	-- Darrow Hill
+				-- #endif
+			},
+			["crs"] = {
+				2385,	-- Foothill Stalker
+				-- #if BEFORE 4.0.3
+				2384,	-- Starving Mountain Lion
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from lions in previously lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from lions in lower intermediate level vanilla zones like lions in Hillsbrad Foothills.",
+			-- #else
+			["description"] = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
+			-- #endif
+		}),
+		i(27668, {	-- Lynx Meat
+			["maps"] = {
+				EVERSONG_WOODS,
+				GHOSTLANDS,
+			},
+			["crs"] = {
+				15652,	-- Elder Springpaw
+				16348,	-- Ghostclaw Lynx
+				16349,	-- Ghostclaw Ravager
+				15651,	-- Springpaw Stalker
+				16347,	-- Starving Ghostclaw
+			},
+			["description"] = "Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",
+			["timeline"] = { ADDED_2_0_1 },
+		}),
+		i(12223, {	-- Meaty Bat Wing
+			["maps"] = {
+				GHOSTLANDS,
+				TIRISFAL_GLADES,
+			},
+			["crs"] = {
+				1553,	-- Greater Duskbat
+				1554,	-- Vampiric Duskbat
+				-- #if AFTER TBC
+				16355,	-- Lesser Scourgebat
+				16353,	-- Mistbat
+				16354,	-- Vampiric Mistbat
+				-- #endif
+			},
+			-- #if AFTER TBC
+			["description"] = "Only drops from bats in Ghostlands and Tirisfal Glades.",
+			-- #else
+			["description"] = "Only drops from bats in Tirisfal Glades.",
+			-- #endif
+		}),
+		i(1468, {	-- Murloc Fin
+			["coords"] = {
+				{ 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				1026,	-- Bluegill Forager
+				1028,	-- Bluegill Muckdweller
+				1024,	-- Bluegill Murloc
+				1029,	-- Bluegill Oracle
+				1025,	-- Bluegill Puddlejumper
+				1418,	-- Bluegill Raider
+				1027,	-- Bluegill Warrior
+				-- #else
+				42111,	-- Bluegill Forager
+				41425,	-- Bluegill Murloc
+				41426,	-- Bluegill Oracle
+				42110,	-- Bluegill Puddlejumper
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from murlocs in previously lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from murlocs in lower intermediate level vanilla zones like Bluegill murlocs in Wetlands.",
+			-- #else
+			["description"] = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
+			-- #endif
+		}),
+		i(12037, {	-- Mystery Meat
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
+				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
+				-- #else
+				{ 43.3, 19.7, NORTHERN_STRANGLETHORN },	-- Nesingwary's Expedition, north of.
+				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
+				-- #endif
+			},
+			["crs"] = {
+				2635,	-- Elder Snapjaw Crocolisk
+				1150,	-- River Crocolisk
+				-- #if BEFORE 4.0.3
+				1151,	-- Saltwater Crocolisk
+				-- #endif
+				1152,	-- Snapjaw Crocolisk
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in previously higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in higher intermediate to highlevel vanilla zones like Crocolisks in Stranglethorn.",
+			-- #else
+			["description"] = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
+			-- #endif
+		}),
+		i(3685, {	-- Raptor Egg
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
+				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
+				-- #else
+				{ 53.5, 48.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, southwest of.
+				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
+				-- #endif
+			},
+			["crs"] = {
+				687,	-- Jungle Stalker
+				686,	-- Lashtail Raptor
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from raptors in previously intermediate level vanilla zones like raptors in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from raptors in intermediate level vanilla zones like raptors in Stranglethorn Vale.",
+			-- #else
+			["description"] = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
+			-- #endif
+		}),
+		i(12184, {	-- Raptor Flesh
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 32.0, 40.0, STRANGLETHORN_VALE },	-- Gurubashi Arena, nortwest of.
+				{ 32.0, 23.0, STRANGLETHORN_VALE },	-- Grom'gol Base Camp, north of.
+				-- #else
+				{ 53.5, 48.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, southwest of.
+				{ 39.0, 42.9, NORTHERN_STRANGLETHORN },	-- Grom'gol Base Camp, north of.
+				-- #endif
+			},
+			["crs"] = {
+				687,	-- Jungle Stalker
+				686,	-- Lashtail Raptor
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from raptors in previously higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from raptors in higher intermediate to highlevel vanilla zones like raptors in Stranglethorn Vale.",
+			-- #else
+			["description"] = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
+			-- #endif
+		}),
+		i(12203, {	-- Red Wolf Meat
+			["coords"] = {
+				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
+				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
+			},
+			["crs"] = {
+				8960,	-- Felpaw Scavenger
+				8959,	-- Felpaw Wolf
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #else
+			["description"] = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
+			-- #endif
+		}),
+		i(6889, {	-- Small Egg
+			-- #if BEFORE 4.0.3
+			["coord"] = { 44.0, 48.0, DARKSHORE },
+			-- #endif
+			-- #if AFTER TBC
+			["maps"] = {
+				AZUREMYST_ISLE,
+				EVERSONG_WOODS,
+			},
+			-- #endif
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				10158,	-- Moonkin
+				10157,	-- Moonkin Oracle
+				10160,	-- Raging Moonkin
+				10159,	-- Young Moonkin
+				-- #endif
+				-- #if AFTER TBC
+				17187,	-- Aberrant Owlbeast
+				17448,	-- Chieftain Oomooroo
+				15650,	-- Crazed Dragonhawk
+				17189,	-- Crazed Wildkin
+				17186,	-- Deranged Owlbeast
+				17374,	-- Greater Timberstrider
+				15649,	-- Feral Dragonhawk Hatchling
+				17188,	-- Raging Owlbeast
+				17373,	-- Timberstrider
+				17372,	-- Timberstrider Fledgling
+				-- #endif
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from birds, owlkin and striders in previously entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones, which can be found all over Azuremyst Isle and Eversong Woods except Ammen Vale and Sunstrider Isle.",
+			-- #else
+			["description"] = "Drops from birds, owlkin and striders in the level bracket 5-20 like Moonkin in Darkshore.",
+			-- #endif
+		}),
+		i(5465, {	-- Small Spider Leg
+			["coord"] = { 35.7, 13.7, SILVERPINE_FOREST },	-- The Skittering Dark
+			["maps"] = { TELDRASSIL },
+			["crs"] = {
+				2001,	-- Giant Webwood Spider
+				12433,	-- Krethis Shadowspinner
+				7319,	-- Lady Sathrah
+				1781,	-- Mist Creeper/Skitterweb Lurker
+				1780,	-- Moss Stalker/Skitterweb Striker
+				1998,	-- Webwood Lurker
+				2000,	-- Webwood Silkspinner
+				1999,	-- Webwood Venomfang
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in the entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
+			-- #endif
+		}),
+		i(5468, {	-- Soft Frenzy Flesh
+			-- #if BEFORE 4.0.3
+			["coords"] = {
+				{ 40.0, 20.0, DARKSHORE },
+				{ 33.0, 70.0, DARKSHORE },
+			},
+			-- #endif
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				2174,	-- Coastal Frenzy
+				-- #endif
+				6033,	-- Lake Frenzy
+				2173,	-- Reef Frenzy
+			},
+			["description"] = "Drops from frenzies found in bodies of water.",
+			["maps"] = { SILVERPINE_FOREST },
+		}),
+		i(67229, {	-- Stag Flank
+			["coords"] = {
+				{ 45.2, 40.8, DARKSHORE },	-- Withering Thicket
+				{ 47.4, 29.5, DARKSHORE },	-- Maw of the Void, west of
+				{ 26.2, 72.8, AZSHARA },	-- Mountainfoot Strip Mine, southeast of
+			},
+			["crs"] = {
+				37786,	-- Brown Stag
+				33311,	-- Darkshore Stag
+				35096,	-- Weakened Mosshoof Stag
+			},
+			["description"] = "Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters.",
+			["timeline"] = { ADDED_4_0_3 },	-- Danny Conkey: At earliest, possibly added in a later patch.
+		}),
+		i(5471, {	-- Stag Meat
+			["coords"] = {
+				{ 19.7, 29.9, ASHENVALE },	-- West way road cross
+				{ 39.5, 63.6, ASHENVALE },	-- Talondeep Vale
+				{ 69.9, 62.7, ASHENVALE },	-- Splintertree Post, west of
+			},
+			["crs"] = {
+				3818,	-- Elder Shadowhorn Stag
+				3817,	-- Shadowhorn Stag
+				3816,	-- Wild Buck
+			},
+			["description"] = "Drops from stags in Ashenvale as well as some other vanilla zones.",
+		}),
+		i(5469, {	-- Strider Meat
+			["coords"] = {
+				-- #if AFTER 4.0.3
+				{ 34.6, 44.6, DUROTAR },	-- Southfury riverside
+				{ 69.5, 55.9, NORTHERN_BARRENS },	-- Southfury southern riverside
+				{ 64.8, 41.1, NORTHERN_BARRENS },	-- Southfury northern riverside
+				-- #endif
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				2322,	-- Foreststrider
+				2323,	-- Giant Foreststrider
+				-- #else
+				39337,	-- Wayward Plainstrider
+				-- #endif
+				3246,	-- Fleeting Plainstrider
+				2321,	-- Foreststrider Fledgling
+				3244,	-- Greater Plainstrider
+				3245,	-- Ornery Plainstrider
+				2172,	-- Strider Clutchmother
+			},
+			-- #if AFTER 4.0.3
+			["description"] = "The only viable source is striders by River Southfury dividing Durotar and Northern Barrens.",
+			-- #else
+			["description"] = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
+			["maps"] = { DARKSHORE },
+			-- #endif
+		}),
+		i(2672, {	-- Stringy Wolf Meat
+			["maps"] = {
+				ELWYNN_FOREST,
+				MULGORE,
+			},
+			["crs"] = {
+				3056,	-- Ghost Howl
+				1922,	-- Grey Forest Wolf
+				525,	-- Mangy Wolf
+				2959,	-- Prairie Stalker
+				2958,	-- Prairie Wolf
+				2960,	-- Prairie Wolf Alpha
+				118,	-- Prowler
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from wolves in previously entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in the entry- and lower level vanilla zones like wolves in Elwynn Forest and Mulgore.",
+			-- #else
+			["description"] = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
+			-- #endif
+		}),
+		-- i(5504),	-- Tangy Clam Meat > Properly sourced under Giant Clam listed above.
+		i(12206, {	-- Tender Crab Meat
+			["coords"] = {
+				{ 81.9, 11.5, SWAMP_OF_SORROWS },	-- Bogpaddle, east of.
+				{ 88.6, 22.9, SWAMP_OF_SORROWS },	-- Misty Reed Strand, by Giblin settlement.
+			},
+			["crs"] = {
+				1088,	-- Monstrous Crawler
+				922,	-- Silt Crawler
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from crawlers in previously higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crawlers in higher intermediate level vanilla zones like Crawlers in Swamp of Sorrows.",
+			-- #else
+			["description"] = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
+			-- #endif
+		}),
+		i(3667, {	-- Tender Crocolisk Meat
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 35.0, 8.0, STRANGLETHORN_VALE },	-- Nesingwary's Expedition, north of.
+				{ 40.0, 22.0, STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
+				-- #else
+				{ 43.3, 19.7, NORTHERN_STRANGLETHORN },	-- Nesingwary's Expedition, north of.
+				{ 50.9, 40.6, NORTHERN_STRANGLETHORN },	-- Lake Nazieriti, south end.
+				-- #endif
+			},
+			["crs"] = {
+				2635,	-- Elder Snapjaw Crocolisk
+				1150,	-- River Crocolisk
+				-- #if BEFORE 4.0.3
+				1151,	-- Saltwater Crocolisk
+				-- #endif
+				1152,	-- Snapjaw Crocolisk
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from crocolisks in previously intermediate level vanilla zones like Crocolisks in Stranglethorn.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from crocolisks in intermediate level vanilla zones like Crocolisks in Stranglethorn.",
+			-- #else
+			["description"] = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
+			-- #endif
+		}),
+		i(12208, {	-- Tender Wolf Meat
+			["coords"] = {
+				{ 54.1, 86.7, FELWOOD },	-- Morlos'Aran, west of (by Ashenvale border).
+				{ 45.2, 69.0, FELWOOD },	-- Ruins of Constellas, east of.
+			},
+			["crs"] = {
+				8960,	-- Felpaw Scavenger
+				8959,	-- Felpaw Wolf
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from wolves in higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood.",
+			-- #else
+			["description"] = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
+			-- #endif
+		}),
+		i(5470, {	-- Thunder Lizard Tail
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 47.0, 48.0, THE_BARRENS },	-- Taurajo, north of.
+				-- #else
+				{ 43.7, 55.3, SOUTHERN_BARRENS },	-- Taurajo, south of.
+				-- #endif
+			},
+			["cr"] = 3240,	-- Stormsnout
+			-- #if AFTER BFA
+			["description"] = "Drops from lizards in previously lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from lizards in lower intermediate level vanilla zones like Stormsnouts in The Barrens.",
+			-- #else
+			["description"] = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
+			-- #endif
+		}),
+		i(12202, {	-- Tiger Meat
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 46.0, 12.0, STRANGLETHORN_VALE },	-- Venture Co. Base Camp, northeast of.
+				{ 33.0, 18.0, STRANGLETHORN_VALE },	-- Tkashi Ruins, southwest of.
+				-- #else
+				{ 59.5, 29.0, NORTHERN_STRANGLETHORN },	-- Venture Co. Base Camp, northeast of.
+				{ 38.3, 32.2, NORTHERN_STRANGLETHORN },	-- Tkashi Ruins, southwest of.
+				-- #endif
+			},
+			["crs"] = {
+				1085,	-- Elder Stranglethorn Tiger
+				682,	-- Stranglethorn Tiger
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from tigers in previously higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from tigers in higher intermediate to highlevel vanilla zones like tigers in Stranglethorn Vale.",
+			-- #else
+			["description"] = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
+			-- #endif
+		}),
+		i(3712, {	-- Turtle Meat
+			["coords"] = {
+				{ 62.5, 33.8, DUSTWALLOW_MARSH },	-- Southern Dreadmurk Shore
+				{ 61.5, 8.3, DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
+			},
+			["cr"] = 4397,	-- Mudrock Spikeshell
+			-- #if AFTER BFA
+			["description"] = "Drops from turtles in previously higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from turtles in higher intermediate to highlevel vanilla zones like Mudrock turtles in Dustwallow Marsh.",
+			-- #else
+			["description"] = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
+			-- #endif
+		}),
+		i(12205, {	-- White Spider Meat
+			["coords"] = {
+				{ 55.2, 54.8, DUSTWALLOW_MARSH },	-- Beezil's Wreck, northeast of
+				{ 34.1, 22.5, DUSTWALLOW_MARSH },	-- Darkmist Cavern
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				4377,	-- Darkmist Lurker
+				-- #endif
+				4378,	-- Darkmist Recluse
+				4379,	-- Darkmist Silkspinner
+				4376,	-- Darkmist Spider
+				4415,	-- Giant Darkfang Spiders
+			},
+			-- #if AFTER BFA
+			["description"] = "Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",
+			-- #elseif AFTER 4.0.3
+			["description"] = "Drops from spiders in higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh.",
+			-- #else
+			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
+			-- #endif
+		}),
+		-- i(7974),	-- Zesty Clam Meat > Properly sourced under Big-mouth Clam listed above.
+		--______________________________________
+		--
+		-- Other reagents:
+		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		i(7191),	-- Fused Wiring
+		i(19441, {	-- Huge Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other bests, so kill the hound or whatever if you cannot find scorpids and spiders.",
+			["maps"] = {
+				BURNING_STEPPES,
+				SILITHUS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",
+			["maps"] = {
+				NAXXRAMAS,
+				RUINS_OF_AHNQIRAJ,
+			},
+			-- #endif
+		}),
+		i(8168, {	-- Jet Black Feather
+			["coords"] = {
+				{ 58.0, 20.0, BLASTED_LANDS },
+				{ 60.0, 27.0, BLASTED_LANDS },
+				{ 55.0, 35.0, BLASTED_LANDS },
+				{ 60.0, 38.0, BLASTED_LANDS },
+				{ 55.0, 44.0, BLASTED_LANDS },
+			},
+			["crs"] = {
+				5982,	-- Black Slayer
+				8299,	-- Spiteflayer
+			},
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(5637, {	-- Large Fang
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
+			["maps"] = {
+				ASHENVALE,
+				BADLANDS,
+				DESOLACE,
+				DUSKWOOD,
+				DUSTWALLOW_MARSH,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_DOWNS,
+				RAZORFEN_KRAUL,
+				STONETALON_MOUNTAINS,
+				STRANGLETHORN_VALE,
+				SWAMP_OF_SORROWS,
+				THOUSAND_NEEDLES,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["cr"] = 2561,	-- Highland Fleshstalker
+			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			-- #endif
+		}),
+		i(1288, {	-- Large Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #elseif AFTER BFA
+			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #else
+			["coords"] = {
+				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+			},
+			["cr"] = 930,	-- Black Widow Hatchling
+			-- #endif
+		}),
+		i(17056, {	-- Light Feather
+			-- #if BEFORE 4.0.3
+			["coord"] = { 44.0, 48.0, DARKSHORE },
+			["crs"] = {
+				10158,	-- Moonkin
+				10157,	-- Moonkin Oracle
+				10160,	-- Raging Moonkin
+				10159,	-- Young Moonkin
+			},
+			-- #endif
+			-- #if AFTER 4.0.3
+			["description"] = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+			-- #else
+			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
+			-- #endif
+		}),
+		i(4589, {	-- Long Elegant Feather
+			["coords"] = {
+				{ 20.0, 57.0, AZSHARA },
+				{ 56.0, 62.8, FERALAS },
+				{ 84.0, 34.0, HILLSBRAD_FOOTHILLS },
+			},
+			["crs"] = {
+				5300,	-- Frayfeather Hippogryph
+				6375,	-- Thunderhead Hippogryph
+				2474,	-- Kurdros
+				2347,	-- Wild Gryphon
+				2473,	-- Granistad
+				2659,	-- Razorbeak Skylord
+				2657,	-- Trained Razorbeak
+				2658,	-- Razorbeak Gryphon
+				2651,	-- Witherbark Hideskinner
+			},
+			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
+			["maps"] = { THE_HINTERLANDS },
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(5116, {	-- Long Tail Feather
+			["coords"] = {
+				{ 32.4, 66.0, STONETALON_MOUNTAINS },
+				{ 79.0, 77.0, THOUSAND_NEEDLES },
+			},
+			["description"] = "Drops from birds and harpies in the given zones.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				BADLANDS,
+				DESOLACE,
+			},
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(7072, {	-- Naga Scale
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				DESOLACE,
+				HILLSBRAD_FOOTHILLS,
+			},
+			-- #else
+			["coord"] = { 29.0, 11.0, DESOLACE },
+			["cr"] = 4719,	-- Slitherblade Sea Witch
+			["description"] = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+			-- #endif
+		}),
+		i(12804, {	-- Powerful Mojo
+			-- #if BEFORE 4.0.3
+			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
+			-- #endif
+			["description"] = "Can drop from trolls.",
+			["maps"] = {
+				LBRS_TAZZALOR,
+				ZULGURUB,
+			},
+		}),
+		i(18335, {	-- Pristine Black Diamond
+			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+		}),
+		i(4461, {	-- Raptor Hide
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from raptors ranging from level 30 to 40.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				DUSTWALLOW_MARSH,
+				STRANGLETHORN_VALE,
+			},
+			-- #else
+			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["cr"] = 2561,	-- Highland Fleshstalker
+			["description"] = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			-- #endif
+		}),
+		i(5635, {	-- Sharp Claw
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
+			["maps"] = {
+				ASHENVALE,
+				DARKSHORE,
+				DUSKWOOD,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_KRAUL,
+				REDRIDGE_MOUNTAINS,
+				SHADOWFANG_KEEP,
+				SILVERPINE_FOREST,
+				STONETALON_MOUNTAINS,
+				THE_BARRENS,
+				THOUSAND_NEEDLES,
+				WAILING_CAVERNS,
+				WESTFALL,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coords"] = {
+				{ 27.0, 60.0, GHOSTLANDS },
+				{ 50.0, 60.0, GHOSTLANDS },
+				{ 70.0, 38.0, GHOSTLANDS },
+			},
+			["crs"] = {
+				16348,	-- Ghostclaw Lynx
+				16349,	-- Ghostclaw Ravager
+				16347,	-- Starving Ghostclaw
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+			-- #endif
+		}),
+		i(5784, {	-- Slimy Murloc Scale
+			-- #if AFTER 4.0.3
+			["description"] = "Drops from murlocs Blackfathom Deeps.",
+			["maps"] = { BLACKFATHOM_DEEPS },
+			-- #else
+			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
+			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["crs"] = {
+				1026,	-- Bluegill Forager
+				1028,	-- Bluegill Muckdweller
+				1024,	-- Bluegill Murloc
+				1029,	-- Bluegill Oracle
+				1025,	-- Bluegill Puddlejumper
+				1418,	-- Bluegill Raider
+				1027,	-- Bluegill Warrior
+			},
+			-- #endif
+		}),
+		i(4402, {	-- Small Flame Sac
+			-- #if AFTER 4.0.3
+			["cr"] = 14398,	-- Eldreth Darter
+			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			["maps"] = { DIRE_MAUL },
+			-- #else
+			["coords"] = {
+				{ 81.0, 48.0, BADLANDS },
+				{ 45.0, 68.0, DUSTWALLOW_MARSH },
+				{ 46.0, 24.0, FERALAS },
+				{ 36.0, 12.0, STONETALON_MOUNTAINS },
+				{ 15.0, 61.0, SWAMP_OF_SORROWS },
+				{ 62.0, 42.0, WETLANDS },
+			},
+			["description"] = "Drops from small dragonkin like darters and whelps.",
+			-- #endif
+		}),
+		i(1475, {	-- Small Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				LOCH_MODAN,
+				STONETALON_MOUNTAINS,
+			},
+			-- #else
+			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
+			["crs"] = {
+				17523,	-- Myst Leecher
+				17522,	-- Myst Spinner
+				17683,	-- Zarakh
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+			-- #endif
+		}),
+		i(5785, {	-- Thick Murloc Scale
+			-- Danny Donkey:	Blizzard devs fucked around with this reagent during retail Cataclysm which lead to it periodically only becoming obtainable from the rare Scargil in Hillsbrad and random mobs in Dustwallow.
+			-- 					At an unknown point got it added to Bluegill murlocs in Wetlands, as well as possibly dropping in StV and DwM. Seems like Cata Classic carried on without affecting this drop.
+			-- #if NOT ANYCLASSIC
+			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["crs"] = {
+				42111,	-- Bluegill Forager
+				41425,	-- Bluegill Murloc
+				41426,	-- Bluegill Oracle
+				42110,	-- Bluegill Puddlejumper
+			},
+			["description"] = "Drops from Bluegill murlocs in Wetlands.",
+			-- #elseif ANYCLASSIC
+			["maps"] = {
+				DUSTWALLOW_MARSH,
+				-- #if BEFORE 4.0.3
+				STRANGLETHORN_VALE,
+				-- #else
+				NORTHERN_STRANGLETHORN,
+				-- #endif
+			},
+			-- #endif
+			-- #if ANYCLASSIC
+				-- #if AFTER 4.0.3
+				["description"] = "Supposedly drops from murlocs in Northen Stranglethorn and Dustwallow Marsh. If you find any other reliable sources, please let us know in the ATT discord!",
+				-- #else
+				["description"] = "Drops from murlocs in Stranglethorn Vale and Dustwallow Marsh.",
+				-- #endif
+			-- #endif
+		}),
+		i(9260, {	-- Volatile Rum
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
+				-- #else
+				{ 77.0, 90.0, NORTHERN_BARRENS },	-- Fray Island
+				{ 69.4, 53.5, TANARIS },	-- Southbreak Shore
+				-- #endif
+				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				7857,	-- Southsea Dock Worker
+				7856,	-- Southsea Frebooter
+				15685,	-- Southsea Kidnapper
+				7902,	-- Treasure Hunting Buccaneer
+				7899,	-- Treasure Hunting Pirate
+				7901,	-- Treasure Hunting Swashbuckler
+				-- #else
+				3382,	-- Southsea Cannoneer
+				3383,	-- Southsea Cutthroat
+				40632,	-- Southsea Musketeer
+				3384,	-- Southsea Privateer
+				44168,	-- Southsea Recruit
+				40635,	-- Southsea Strongarm
+				40636,	-- Southsea Swabbie
+				-- #endif
+				7855,	-- Southsea Pirate
+				7858,	-- Southsea Swashbuckler
+			},
+		}),
+		i(8153, {	-- Wildvine
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from trolls ranging from level 40 to 50.",
+			["maps"] = {
+				STRANGLETHORN_VALE,
+				THE_HINTERLANDS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+			-- #endif
+		}),
 	}),
 }));

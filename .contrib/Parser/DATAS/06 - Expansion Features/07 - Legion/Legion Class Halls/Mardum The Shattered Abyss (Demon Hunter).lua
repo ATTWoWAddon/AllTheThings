@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	n(CLASS_HALL, {
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
 			["maps"] = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
-			["g"] = {
+			["groups"] = {
 				n(FOLLOWERS, bubbleDownSelf({
 					["collectible"] = false,
 					["u"] = UNLEARNABLE,	-- Temporary troops
@@ -37,12 +37,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				})),
 				n(QUESTS, {
 					q(39047, {	-- Call of the Illidari (Altruis)
-						["maps"] = { LEGION_DALARAN },
 						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(39261, {	-- Call of the Illidari (Kayn)
-						["maps"] = { LEGION_DALARAN },
 						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+						["maps"] = { LEGION_DALARAN },
 					}),
 					-- Artifact
 					q(40816, {	-- The Power to Survive (Altruis)
@@ -72,9 +72,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44379,	-- In Pursuit of Power (Altruis)
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 99254 },	-- Altruis the Sufferer
-								{ "n", 95237 },	-- Altruis the Sufferer
+							["qgs"] = {
+								99254,	-- Altruis the Sufferer
+								95237,	-- Altruis the Sufferer
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
@@ -87,9 +87,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44383,	-- In Pursuit of Power (Kayn)
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 99247 },	-- Kayn Sunfury
-								{ "n", 95240 },	-- Kayn Sunfury
+							["qgs"] = {
+								99247,	-- Kayn Sunfury
+								95240,	-- Kayn Sunfury
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
@@ -110,12 +110,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 41121,	-- By Any Means (Altruis)
 							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
 							["maps"] = { 723 },	-- Violet Hold
-							["g"] = {
+							["groups"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -123,12 +129,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuest"] = 39051,	-- By Any Means (Kayn)
 							["provider"] = { "n", 94902 },	-- Kayn Sunfury
 							["maps"] = { 723 },	-- Violet Hold
-							["g"] = {
+							["groups"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -140,9 +152,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44379,	-- In Pursuit of Power (Altruis)
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 99254 },	-- Altruis the Sufferer
-								{ "n", 95237 },	-- Altruis the Sufferer
+							["qgs"] = {
+								99254,	-- Altruis the Sufferer
+								95237,	-- Altruis the Sufferer
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
@@ -155,9 +167,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								44383,	-- In Pursuit of Power (Kayn)
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 99247 },	-- Kayn Sunfury
-								{ "n", 95240 },	-- Kayn Sunfury
+							["qgs"] = {
+								99247,	-- Kayn Sunfury
+								95240,	-- Kayn Sunfury
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
@@ -186,12 +198,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 41807 },	-- Establishing a Connection
 							["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
-							["g"] = {
+							["groups"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -199,12 +217,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 41807 },	-- Establishing a Connection
 							["provider"] = { "n", 99247 },	-- Kayn Sunfury
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
-							["g"] = {
+							["groups"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -256,11 +280,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 58.6, 58.9, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
 					}),
 					q(41064, {	-- Cursed Forge of the Nathrezim
-						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						["sourceQuests"] = {
 							41070,	-- Spoils of Victory (Altruis)
 							41062,	-- Spoils of Victory (Kayn)
 						},
+						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- confirmed/sourced
 					q(42810, {	-- A Final Offer
@@ -271,16 +295,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43412, {	-- A Hero's Weapon
 						["sourceQuests"] = { 44214 },	-- One More Thing
-						["providers"] = {
-							{ "n", 110485 },	-- Altruis the Sufferer
-							{ "n", 110482 },	-- Kayn Sunfury
+						["qgs"] = {
+							110485,	-- Altruis the Sufferer
+							110482,	-- Kayn Sunfury
 						},
 						["coord"] = { 57.7, 33.7, 721 },
 						["lvl"] = 110,
 					}),
 					q(42682, {	-- Additional Accoutrements
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["sourceQuests"] = { 42683 },	-- Demonic Improvements
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.9, 48.7, 720 },
 					}),
 					q(46159, {	-- An Urgent Message
@@ -312,19 +336,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["lvl"] = 101,
 					}),
 					q(44223, {	-- Champion Armaments
-						["coord"] = { 60.0, 43.8, 720 },
-						["provider"] = { "n", 110433 },	-- Slitesh
 						["description"] = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
+						["provider"] = { "n", 110433 },	-- Slitesh
+						["coord"] = { 60.0, 43.8, 720 },
 					}),
 					q(42653, {	-- Champion: Akama
+						["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
-						["coord"] = { 57.9, 57.4, 720 },
 						["provider"] = { "n", 108239 },	-- Akama
-						["description"] = "This follower is only available if you sided with |cFFFFD700Altruis the Sufferer|r.",
-						["g"] = {
+						["coord"] = { 57.9, 57.4, 720 },
+						["groups"] = {
 							follower(718),	-- Champion: Akama
 						},
 					}),
@@ -332,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 62.0, 49.2, 721 },
-						["g"] = {
+						["groups"] = {
 							follower(499),	-- Champion: Allari the Souleater
 						},
 					}),
@@ -341,7 +365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 						["coord"] = { 58.6, 57.7, 720 },
 						["lvl"] = 101,
-						["g"] = {
+						["groups"] = {
 							follower(498),	-- Champion: Altruis the Sufferer
 						},
 					}),
@@ -353,7 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108326 },	-- Asha Ravensong
 						["coord"] = { 56.2, 38.9, 720 },
 						["lvl"] = 101,
-						["g"] = {
+						["groups"] = {
 							follower(722),	-- Champion: Asha Ravensong
 						},
 					}),
@@ -362,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.2, 51.4, 720 },
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							follower(594),	-- Champion: Belath Dawnblade
 						},
 					}),
@@ -370,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 73.5, 721 },
-						["g"] = {
+						["groups"] = {
 							follower(807),	-- Champion: Jace Darkweaver
 						},
 					}),
@@ -379,7 +403,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["g"] = {
+						["groups"] = {
 							follower(595),	-- Champion: Kayn Sunfury
 						},
 					}),
@@ -391,7 +415,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["g"] = {
+						["groups"] = {
 							follower(721),	-- Champion: Kor'vas Bloodthorn
 						},
 					}),
@@ -400,7 +424,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117481 },	-- Lady S'theno
 						["coord"] = { 61.1, 55.4, 720 },
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							follower(990),	-- Champion: Lady S'theno
 						},
 					}),
@@ -409,11 +433,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.0, 49.3, 720 },
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							follower(720),	-- Champion: Matron Mother Malevolence
 						},
 					}),
 					q(42664, {	-- Champion: Shade of Akama
+						["description"] = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
 						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
@@ -421,8 +446,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 108246 },	-- Shade of Akama
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["description"] = "This follower is only available if you sided with |cFFFFD700Kayn Sunfury|r.",
-						["g"] = {
+						["groups"] = {
 							follower(719),	-- Champion: Shade of Akama
 						},
 					}),
@@ -480,9 +504,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 59.5, 58.0, 720 },
 					}),
 					q(44226, {	-- Fate Favors Us
+						["description"] = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
 						["provider"] = { "n", 112992 },	-- Seer Aleis
 						["coord"] = { 54.6, 59.4, 721 },
-						["description"] = "Requires the |cFFFFD700Focused War Effort|r order hall upgrade.",
 					}),
 					q(46780, {	-- Further Advancement
 						["sourceQuests"] = { 45391 },	-- Champion: Lady S'theno
@@ -507,13 +531,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43184,	-- Champion: Allari the Souleater
 							43185,	-- Champion: Jace Darkweaver
 						},
-						["providers"] = {
-							{ "n", 108571 },	-- Altruis the Sufferer
-							{ "n", 108572 },	-- Kayn Sunfury
+						["qgs"] = {
+							108571,	-- Altruis the Sufferer
+							108572,	-- Kayn Sunfury
 						},
 						["coord"] = { 58.5, 59.3, 720 },
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							i(142056),	-- Arcanum of the Order
 							i(142058),	-- Fel Ward of the Order
 							i(142061),	-- Iron Will of the Order
@@ -524,9 +548,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42510, {	-- Immortal Soul
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
-						["providers"] = {
-							{ "n", 107723 },	-- Altruis the Sufferer
-							{ "n", 107724 },	-- Kayn Sunfury
+						["qgs"] = {
+							107723,	-- Altruis the Sufferer
+							107724,	-- Kayn Sunfury
 						},
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
@@ -560,18 +584,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42132, {	-- Last, But Not Least
 						["sourceQuests"] = { 42920, 42809 },	-- The Invasion of Niskara (Altruis, Kayn)
-						["providers"] = {
-							{ "n", 108571 },	-- Altruis the Sufferer
-							{ "n", 108572 },	-- Kayn Sunfury
+						["qgs"] = {
+							108571,	-- Altruis the Sufferer
+							108572,	-- Kayn Sunfury
 						},
 						["coord"] = { 58.5, 59.3, 720 },
 						["lvl"] = 110,
 					}),
 					q(42522, {	-- Leader of the Illidari
 						["sourceQuests"] = { 42510 },	-- Immortal Soul
-						["providers"] = {
-							{ "n", 107724 },	-- Kayn Sunfury
-							{ "n", 107723 },	-- Altruis the Sufferer
+						["qgs"] = {
+							107724,	-- Kayn Sunfury
+							107723,	-- Altruis the Sufferer
 						},
 						["coord"] = { 58.3, 51.5, 721 },
 						["lvl"] = 103,
@@ -597,8 +621,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42594, {	-- Move Like No Other
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
-						["coord"] = { 26.0, 52.0, LEGION_DALARAN },
 						["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
+						["coord"] = { 26.0, 52.0, LEGION_DALARAN },
 					}),
 					q(44694, {	-- One Battle at a Time
 						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
@@ -608,9 +632,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(44214, {	-- One More Thing...
 						["sourceQuests"] = { 43186 },	-- I Am the Slayer!
-						["providers"] = {
-							{ "n", 108571 },	-- Altruis the Sufferer
-							{ "n", 108572 },	-- Kayn Sunfury
+						["qgs"] = {
+							108571,	-- Altruis the Sufferer
+							108572,	-- Kayn Sunfury
 						},
 						["coord"] = { 58.5, 59.3, 720 },
 						["lvl"] = 110,
@@ -636,6 +660,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 						["provider"] = { "n", 117709 },	-- Lady S'theno
 						["coord"] = { 52.1, 21.3, BROKEN_SHORE },
+						["groups"] = {
+							i(143918),	-- Stabilizing Crystal (QI!)
+						},
 					}),
 					q(46266, {	-- Return of the Slayer
 						["sourceQuests"] = {
@@ -648,33 +675,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42666, {	-- Return to the Fel Hammer (Altruis)
 						["sourceQuests"] = { 41069 },	-- Direct Our Wrath
+						["provider"] = { "n", 112666 },	-- Asha Ravensong
 						["isBreadcrumb"] = true,
 						["lvl"] = 101,
-						["provider"] = { "n", 112666 },	-- Asha Ravensong
 					}),
 					q(44087, {	-- Return to the Fel Hammer (Kayn)
 						["sourceQuests"] = { 41069 },	-- Direct Our Wrath
+						["provider"] = { "n", 112666 },	-- Asha Ravensong
 						["isBreadcrumb"] = true,
 						["lvl"] = 101,
-						["provider"] = { "n", 112666 },	-- Asha Ravensong
 					}),
 					q(42670, {	-- Rise, Champions (Altruis)
-						["lvl"] = 101,
-						["coord"] = { 56.1, 54.1, 720 },
-						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 						["sourceQuests"] = {
 							41099,	-- Direct Our Wrath
 							42666,	-- Return to the Fel Hammer
 						},
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
+						["coord"] = { 56.1, 54.1, 720 },
+						["lvl"] = 101,
 					}),
 					q(42671, {	-- Rise, Champions (Kayn)
-						["lvl"] = 101,
-						["coord"] = { 56.4, 55.1, 720 },
-						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 						["sourceQuests"] = {
 							41099,	-- Direct Our Wrath
 							44087,	-- Return to the Fel Hammer
 						},
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
+						["coord"] = { 56.4, 55.1, 720 },
+						["lvl"] = 101,
 					}),
 					q(42736, {	-- Rune Ruination
 						["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
@@ -692,8 +719,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 64.9, 58.9, STORMHEIM },
 					}),
 					q(42737, {	-- Rune Ruination: Runeskeld Rollo
-						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 						["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
+						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
 						["provider"] = { "o", 251218 },	-- Rollo's Runestone
 						["coord"] = { 64.9, 58.9, STORMHEIM },
 					}),
@@ -796,20 +823,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 60.1, 50.8, 720 },
 						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							mount(229417, {	-- Slayer's Felbroken Shrieker (MOUNT!)
 									}),
 						},
 					}),
 					q(42776, {	-- Two Worthies
 						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
-						["providers"] = {
-							{ "n", 108571 },	-- Altruis the Sufferer
-							{ "n", 108572 },	-- Kayn Sunfury
+						["qgs"] = {
+							108571,	-- Altruis the Sufferer
+							108572,	-- Kayn Sunfury
 						},
 						["coord"] = { 58.6, 58.8, 720 },
 						["lvl"] = 110,
-						["g"] = {
+						["groups"] = {
 							i(139722),	-- Wristwraps of the Shattered Abyss
 						},
 					}),
@@ -845,25 +872,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["lvl"] = 110,
 					}),
 					q(42731, {	-- Working With the Wardens
-					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 						["sourceQuests"] = { 42131 },	-- Unexpected Visitors
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.5, 51.6, 720 },
 						["lvl"] = 103,
+					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 					}),
 					q(44213, {	-- You Will Be Prepared!
-					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression.  i had done up through "working with the wardens."
 						["provider"] = { "n", 112407 },	-- Falara Nightsong
 						["coord"] = { 57.7, 44.2, 720 },
 						["lvl"] = 110,
-						["g"] = {
+					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression. i had done up through "working with the wardens."
+						["groups"] = {
 							i(139718),	-- Helm of the Shattered Abyss
 						},
 					}),
 				}),
 				n(SPECIAL, {
 					cl(DEMONHUNTER, HAVOC, {
-						i(141409, {	-- Candrael's Charm
+						i(141409, {	-- Candrael's Charm (CI!)
 							["description"] = "Find this item on mobs in Suramar.",
 							["maps"] = { SURAMAR },
 						}),
@@ -871,10 +898,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["description"] = "They will fling you up in the air to flying demon Downfall.",
 							["coord"] = { 28.2, 70.2, SURAMAR },
 							["cost"] = {{ "i", 141409, 1}},	-- 1xCandrael's Charm
-							["g"] = {
+							["groups"] = {
 								n(111110, {	-- Downfall
 									["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
-									["g"] = {
+									["groups"] = {
 										i(139549, {	-- Guise of the Deathwalker
 											artifact(982),	-- Twinblades of the Deceiver [Main Hand]
 											artifact(982),	-- Twinblades of the Deceiver [Off Hand]
@@ -908,7 +935,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							112388,	-- Thel'draz
 							112375,	-- Zaldrok
 						},
-						["g"] = {
+						["groups"] = {
 							i(139550, {	-- Bulwark of the Iron Warden
 								artifact(571),	-- Aldrachi Warblades [Main Hand]
 								artifact(571),	-- Aldrachi Warblades [Off Hand]
@@ -925,7 +952,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(VENDORS, {
 					n(116621, {	-- Demissya Gladestrider <Illidari Provisioner's Assistant>
 						["coord"] = { 59.3, 42.4, 720 },
-						["g"] = {
+						["groups"] = {
 							i(123960),	-- Charm of Demonic Fire
 							i(123959),	-- Demon Trophy
 							i(128950),	-- Demon-Rend Shoulderblades (A)
@@ -974,11 +1001,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
-						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 						["coord"] = { 57.8, 43.5, 720 },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
+								["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 								["cost"] = { { "c", 1220, 10000 }, },	-- 10,000x Order Resources
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss

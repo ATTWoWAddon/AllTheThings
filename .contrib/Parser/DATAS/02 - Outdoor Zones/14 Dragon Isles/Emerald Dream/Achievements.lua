@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["crs"] = { 212459 },
 				}),
 			})),
-			explorationAch(19309),	-- Explore the Emerald Dream
+			ach(19309),	-- Explore the Emerald Dream
 			pvp(ach(19294)),	-- Tour of Duty: Emerald Dream
 			ach(19317, {	-- Treasures of the Emerald Dream
 				i(210414),	-- Forest Lord's Antlers (COSMETIC!)

@@ -17,7 +17,7 @@
 -- 	["TRANSMOG"] = 69, -- Transmog came out sometime after WOD.
 -- 	["LEGION"] = 79,   -- LEGION_PHASE_SIX?
 -- 	["BFA"] = 89,      -- BFA_PHASE_SIX?
--- 	["SHADOWLANDS"] = 99,      -- SHADOWLANDS_PHASE_SIX?
+-- 	["SL"] = 99,      -- SL_PHASE_SIX?
 -- 	["DF"] = 99,      -- DF_PHASE_SIX?
 -- 	["TWW"] = 99,      -- TWW_PHASE_SIX?
 -- 	["MID"] = 99,      -- MID_PHASE_SIX?

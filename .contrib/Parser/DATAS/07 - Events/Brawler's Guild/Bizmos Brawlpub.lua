@@ -3,6 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo's Brawlpub
+	["timeline"] = { ADDED_5_1_0 },
 	["races"] = ALLIANCE_ONLY,
 	["lvl"] = 120,
 	["maps"] = { DEEPRUN_TRAM },
@@ -15,7 +16,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			ach(13191, {	-- Brawler for Azeroth
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					title(209, {	-- Brawler <Name>
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
 					}),
@@ -36,7 +37,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			ach(8340, {		-- Deck Your Collection (Season 1)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -45,7 +46,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			ach(9176, {		-- Deck Your Collection (Season 2)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -108,7 +109,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			ach(9169, {		-- The Second Rule of Brawler's Guild (Season 2)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -121,7 +122,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 			ach(13189, {	-- The Second Rule of Brawler's Guild
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -180,75 +181,75 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
-				["qg"] = 86272,	-- Meatball
 				["description"] = "Reach Rank 5 in the arena.",
+				["qg"] = 86272,	-- Meatball
 				["groups"] = {
 					follower(203),	-- Meatball
 				},
 			}),
 			q(55002, {	-- Murder at the Brawlpub
-				["qg"] = 68363,	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
+				["qg"] = 68363,	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 				["coord"] = { 50.2, 23.1, 500 },
 			}),
 			q(55003, {	-- Put Up Your Dukes
-				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55002,	-- Murder at the Brawlpub
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55004, {	-- Undercover Agent: Ann Dennyson
-				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55003,	-- Put Up Your Dukes
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55005, {	-- The Financial Participation Incentive
-				["qg"] = 150314,	-- Ann Dennyson
-				["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
 				["sourceQuest"] = 55004,	-- Undercover Agent: Ann Dennyson
+				["qg"] = 150314,	-- Ann Dennyson
 				["coord"] = { 69.7, 36.7, 500 },
+				["cost"] = { { "i", 143762, 1 }, },	-- High Roller's Contract
 			}),
 			q(55006, {	-- A Favor for Your Old Chum Winifred
-				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 				["sourceQuest"] = 55005,	-- The Financial Participation Incentive
+				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 				["coord"] = { 63.2, 40.9, 500 },
 			}),
 			q(55007, {	-- Lord Browne's Debts
-				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
-				["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
 				["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
+				["qg"] = 68365,	-- Lord Winifred Browne <Prediction Incentives>
 				["coord"] = { 63.3, 40.6, 500 },
-				["g"] = {
+				["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
+				["groups"] = {
 					i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 				},
 			}),
 			q(55008, {	-- Evidence Packet: Lord Winifred Browne
-				["qg"] = 150314,	-- Ann Dennyson
 				["sourceQuest"] = 55007,	-- Lord Browne's Debts
+				["qg"] = 150314,	-- Ann Dennyson
 				["coord"] = { 68.0, 36.6, 500 },
-				["g"] = {
+				["groups"] = {
 					i(167034),	-- Evidence Packet: Lord Winifred Browne (QI!)
 				},
 			}),
 			q(55009, {	-- Undercover Agent: Saralara Fizzlesprang
-				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55008,	-- Evidence Packet: Lord Winifred Browne
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55010, {	-- Soul Splinters
-				["qg"] = 150317,	-- Shadowmaster O'Flannerty
-				["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
-				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
-				["g"] = {
+				["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
+				["qg"] = 150317,	-- Shadowmaster O'Flannerty
+				["coord"] = { 68.0, 24.8, 500 },
+				["groups"] = {
 					i(164928),	-- Soul Splinter (QI!)
 				},
 			}),
 			q(55011, {	-- Super Soul Splinters
-				["qg"] = 150317,	-- Shadowmaster O'Flannerty
-				["sourceQuest"] = 55010,	-- Soul Splinters
-				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
-				["g"] = {
+				["sourceQuest"] = 55010,	-- Soul Splinters
+				["qg"] = 150317,	-- Shadowmaster O'Flannerty
+				["coord"] = { 68.0, 24.8, 500 },
+				["groups"] = {
 					i(164929),	-- Super Soul Splinter (QI!)
 				},
 			}),
@@ -256,77 +257,77 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["sourceQuest"] = 55011,	-- Super Soul Splinters
 			}),
 			q(55013, {	-- The Precious 13-Tooth Gogglegear
-				["qg"] = 150315,	-- Saralara Fizzlesprang
-				["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
 				["sourceQuest"] = 55012,	-- Cause for Concern
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["coord"] = { 44.4, 34.6, 500 },
-				["g"] = {
+				["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
+				["groups"] = {
 					i(164937),	-- 13-Tooth Gogglegear (QI!)
 				},
 			}),
 			q(55014, {	-- The Fizzlesprang Goggle Experiment
-				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55013,	-- The Precious 13-Tooth Gogglegear
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["coord"] = { 44.4, 34.6, 500 },
-				["g"] = {
+				["groups"] = {
 					i(167033),	-- Saralara's Goggles (QI!)
 				},
 			}),
 			q(55015, {	-- Evidence Packet: Shadowmaster O'Flannerty
-				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55014,	-- The Fizzlesprang Goggle Experiment
+				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["coord"] = { 44.4, 34.6, 500 },
-				["g"] = {
+				["groups"] = {
 					i(167035),	-- Evidence Packet: Shadowmaster O'Flannerty (QI!)
 				},
 			}),
 			q(55016, {	-- Undercover Agent: Silent Jussho
-				["qg"] = 150313,	-- Commander Daalo
-				["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
 				["sourceQuest"] = 55015,	-- Evidence Packet: Shadowmaster O'Flannerty
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
+				["cost"] = { { "i", 143759, 1 }, },	-- VIP Room Rental Form
 			}),
 			q(55017, {	-- Flaunt It If You Got It
+				["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
 				["qg"] = 70722,	-- Grant Lazarby
+				["coord"] = { 33.1, 64.3, 500 },
 				["cost"] = {
 					{ "i", 98121, 1, },		-- Amberseed Bun
 					{ "i", 98117, 1, },		-- Moneybrau
 					{ "i", 143758, 1, },	-- Free Drinks Voucher
 				},
-				["sourceQuest"] = 55016,	-- Undercover Agent: Silent Jussho
-				["coord"] = { 33.1, 64.3, 500 },
 			}),
 			q(55018, {	-- Simply Dying of Boredom
-				["qg"] = 70722,	-- Grant Lazarby
 				["sourceQuest"] = 55017,	-- Flaunt It If You Got It
+				["qg"] = 70722,	-- Grant Lazarby
 				["coord"] = { 33.1, 64.3, 500 },
-				["g"] = {
+				["groups"] = {
 					i(167038),	-- Bizmo's Brawlpub Sign (QI!)
 				},
 			}),
 			q(55019, {	-- Evidence Packet: Grant Lazarby
-				["qg"] = 150316,	-- Silent Jussho
 				["sourceQuest"] = 55018,	-- Simply Dying of Boredom
+				["qg"] = 150316,	-- Silent Jussho
 				["coord"] = { 30.3, 87.7, 500 },
-				["g"] = {
+				["groups"] = {
 					i(167036),	-- Evidence Packet: Grant Lazarby (QI!)
 				},
 			}),
 			q(55020, {	-- The Brawlpub Trial
-				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55019,	-- Evidence Packet: Grant Lazarby
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55021, {	-- A Clue from Area 52
-				["qg"] = 150313,	-- Commander Daalo
 				["sourceQuest"] = 55020,	-- The Brawlpub Trial
+				["qg"] = 150313,	-- Commander Daalo
 				["coord"] = { 72.7, 68.4, 500 },
 			}),
 			q(55022, {	-- Solving the Mystery
-				["qg"] = 150320,	-- Bizmo
-				["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
 				["sourceQuest"] = 55021,	-- A Clue from Area 52
+				["qg"] = 150320,	-- Bizmo
 				["coord"] = { 31.1, 66.5, NETHERSTORM },
+				["cost"] = { { "i", 164936, 1 }, },	-- Mysterious Challenge Card
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["groups"] = {
@@ -381,6 +382,16 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				}),
 			}),
 			n(151941, {	-- Dershway the Triggered <Bizmo's Brawlpub Quartermaster>
+				["sourceQuest"] = 55002,	-- Murder at the Brawlpub
+				["timeline"] = { ADDED_8_1_5 },
+				["sym"] = { {"sub", "common_vendor", 68363} },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
+			}),
+			n(70719, {	-- Mozzle Gearbeer
+				i(98117, {	-- Moneybrau
+					["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
+				}),
+			}),
+			n(68363, {	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				["groups"] = {
 					i(142403, {	-- Brawler's Burly Basilisk (MOUNT!) unobtainable as of BFA prepatch
@@ -394,17 +405,24 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98085),	-- Brucehide Jersey
 					i(93025),	-- Clock'em (PET!)
 					i(98092),	-- Digmaster's Bodysleeve
-					iensemble(167891),	-- Ensemble: Brawler's Garb
+					iensemble(167891, {	-- Ensemble: Brawler's Garb
+						["timeline"] = { ADDED_8_1_5 },
+					}),
 					i(98079),	-- Floot-Tooter's Tunic
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt
 					i(98084),	-- Ooze-Soaked Shirt
 					i(98087),	-- Paper Shirt
+					i(118907, {	-- Pit Fighter's Punching Ring
+						["timeline"] = { ADDED_6_0_2 },
+						["races"] = ALLIANCE_ONLY,
+					}),
 					i(144391, {	-- Pugilist's Powerful Punching Ring
+						["timeline"] = { ADDED_7_1_5 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(98083),	-- Sharkskin Tunic
@@ -418,208 +436,206 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},
 			}),
-			n(70719, {	-- Mozzle Gearbeer
-				i(98117, {	-- Moneybrau
-					["description"] = "Drink this while on the 'Flaunt It If You Got It' quest.",
-				}),
-			}),
 			n(118898, {	-- Ulaani
-				i(143763, {	-- Bag of Chipped Dice
-					["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
-					["groups"] = {
-						ach(9176, {	-- Deck Your Collection [Season 2]
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
-								i(98543),	-- Wraps of the Blood-Soaked Brawler
-							},
-						}),
-						ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
-						n(117208, {		-- a Seagull
-							i(144375, {		-- Feathered Brawler's Purse
-								i(144368),		-- Felfeather Jersey
+				["timeline"] = { ADDED_7_1_5 },
+				["groups"] = {
+					i(143763, {	-- Bag of Chipped Dice
+						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+						["groups"] = {
+							ach(9176, {	-- Deck Your Collection [Season 2]
+								["races"] = ALLIANCE_ONLY,
+								["groups"] = {
+									i(98543),	-- Wraps of the Blood-Soaked Brawler
+								},
 							}),
-						}),
-						n(70748, {		-- Argh
-							i(151222, {		-- Leather Brawler's Purse
-								i(98080),		-- Gorgeous Blouse
+							ach(13194),		-- I Am Thrall's Complete Lack Of Surprise
+							n(117208, {		-- a Seagull
+								i(144375, {		-- Feathered Brawler's Purse
+									i(144368),		-- Felfeather Jersey
+								}),
 							}),
-						}),
-						n(116855, {		-- Ash'katzuum
-							i(144373, {		-- Claw-Marked Brawler's Purse
-								i(144365),		-- The Very Best Shirt
+							n(70748, {		-- Argh
+								i(151222, {		-- Leather Brawler's Purse
+									i(98080),		-- Gorgeous Blouse
+								}),
 							}),
-						}),
-						n(115245, {		-- B3@7 B-0X
-							i(144374, {		-- Groovy Brawler's Purse
-								i(144366),		-- Dubvest
+							n(116855, {		-- Ash'katzuum
+								i(144373, {		-- Claw-Marked Brawler's Purse
+									i(144365),		-- The Very Best Shirt
+								}),
 							}),
-						}),
-						n(70694, {		-- Big Badda Boom
-							i(151223, {		-- Booming Brawler's Purse
-								i(98081),		-- The Boomshirt
+							n(115245, {		-- B3@7 B-0X
+								i(144374, {		-- Groovy Brawler's Purse
+									i(144366),		-- Dubvest
+								}),
 							}),
-						}),
-						n(70794, {		-- Blind Hero
-							i(151238, {		-- Dark Brawler's Purse
-								i(98093),		-- Sightless MAntle
+							n(70694, {		-- Big Badda Boom
+								i(151223, {		-- Booming Brawler's Purse
+									i(98081),		-- The Boomshirt
+								}),
 							}),
-						}),
-						n(70740, {		-- Blingtron 3000
-							i(151233, {		-- Blingin' Brawler's Bag
-								i(98091),		-- Last Seasons Shirt
+							n(70794, {		-- Blind Hero
+								i(151238, {		-- Dark Brawler's Purse
+									i(98093),		-- Sightless MAntle
+								}),
 							}),
-						}),
-						n(67262, {		-- Bruce
-							i(144377, {		-- Beginning Brawler's Purse
-								i(144370),		-- Croc-Tooth Harness
+							n(70740, {		-- Blingtron 3000
+								i(151233, {		-- Blingin' Brawler's Bag
+									i(98091),		-- Last Seasons Shirt
+								}),
 							}),
-						}),
-						n(68255, {		-- Dippy (and Doopy, but seriously I don't care about Doopy.)
-							i(151231, {		-- Brawler's Egg
-								i(98086),	-- Tuxedo-Like Shirt
+							n(67262, {		-- Bruce
+								i(144377, {		-- Beginning Brawler's Purse
+									i(144370),		-- Croc-Tooth Harness
+								}),
 							}),
-						}),
-						n(68257, {		-- Goredome
-							i(144378, {		-- Gorestained Brawler's Purse
-								i(144371),		-- Gorstained Tunic
+							n(68255, {		-- Dippy (and Doopy, but seriously I don't care about Doopy.)
+								i(151231, {		-- Brawler's Egg
+									i(98086),	-- Tuxedo-Like Shirt
+								}),
 							}),
-						}),
-						n(70678, {		-- Grandpa Grumplefloot
-							i(151229, {		-- Brawler's Music Box
-								i(98079),		-- Floot-Tooter's Tunic
+							n(68257, {		-- Goredome
+								i(144378, {		-- Gorestained Brawler's Purse
+									i(144371),		-- Gorstained Tunic
+								}),
 							}),
-						}),
-						n(70659, {		-- Hexos
-							i(144376, {		-- Agile Brawler's Purse
-								i(144367),		-- Observer's Shirt
+							n(70678, {		-- Grandpa Grumplefloot
+								i(151229, {		-- Brawler's Music Box
+									i(98079),		-- Floot-Tooter's Tunic
+								}),
 							}),
-						}),
-						n(119150, {		-- Klunk
-							i(151264, {		-- Clunky Brawler's Purse
-								i(151263),		-- Electrified Compression Shirt
+							n(70659, {		-- Hexos
+								i(144376, {		-- Agile Brawler's Purse
+									i(144367),		-- Observer's Shirt
+								}),
 							}),
-						}),
-						n(71081, {		-- Mecha-Bruce
-							i(151230, {		-- Croc-Skin Brawler's Purse
-								i(98085),		-- Brucehide Jersey
+							n(119150, {		-- Klunk
+								i(151264, {		-- Clunky Brawler's Purse
+									i(151263),		-- Electrified Compression Shirt
+								}),
 							}),
-						}),
-						n(70616, {		-- Mingus Diggs
-							i(151235, {		-- Filthy Brawler's Purse
-								i(98092),		-- Digmaster's Bodysleeve
+							n(71081, {		-- Mecha-Bruce
+								i(151230, {		-- Croc-Skin Brawler's Purse
+									i(98085),		-- Brucehide Jersey
+								}),
 							}),
-						}),
-						n(71085, {		-- Razorgrin <Terror of the High Seas>
-							i(151225, {		-- Wet Brawler's Purse
-								i(98083),		-- Sharkskin Tunic
+							n(70616, {		-- Mingus Diggs
+								i(151235, {		-- Filthy Brawler's Purse
+									i(98092),		-- Digmaster's Bodysleeve
+								}),
 							}),
-						}),
-						n(70749, {		-- Ro-Shambo
-							i(151232, {		-- Brawler's Package
-								i(98087),		-- Paper Shirt
+							n(71085, {		-- Razorgrin <Terror of the High Seas>
+								i(151225, {		-- Wet Brawler's Purse
+									i(98083),		-- Sharkskin Tunic
+								}),
 							}),
-						}),
-						n(70736, {		-- Splat
-							i(151221, {		-- Gooey Brawler's Purse
-								i(98084),		-- Ooze-Soaked Shirt
+							n(70749, {		-- Ro-Shambo
+								i(151232, {		-- Brawler's Package
+									i(98087),		-- Paper Shirt
+								}),
 							}),
-						}),
-						n(70666, {		-- Ty'Thar
-							i(151224, {		-- Bitten Brawler's Purse
-								i(98082),		-- Undisputed Champion's Shirt
+							n(70736, {		-- Splat
+								i(151221, {		-- Gooey Brawler's Purse
+									i(98084),		-- Ooze-Soaked Shirt
+								}),
 							}),
-						}),
-						n(68250, {		-- Unguloxx <The Murderaffe>
-							i(144379, {		-- Murderous Brawler's Purse
-								i(144372),		-- Hide of the Murderaffe
+							n(70666, {		-- Ty'Thar
+								i(151224, {		-- Bitten Brawler's Purse
+									i(98082),		-- Undisputed Champion's Shirt
+								}),
 							}),
-						}),
-					},
-				}),
-				i(143761, {	-- Blood-Soaked Angel Figurine
-					["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
-				}),
-				i(143760, {	-- Brawler's Potion Dispenser
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-				}),
-				i(143758, {	-- Free Drinks Voucher
-					["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
-					["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
-				}),
-				i(143762, {	-- High Roller's Contract
-					["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
-					["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
-				}),
-				i(142290, {	-- Rumble Card: Battle of the Brew
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						crit(35477, {	-- Battle of the Brew
-							["achievementID"] = 11573,	-- Rumble Club
-						}),
-					},
-				}),
-				i(142288, {	-- Rumble Card: Grief Warden
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						n(114943, {	-- Grief Warden <Enmity Moose>
-							crit(35472, {	-- Grief Warden
+							n(68250, {		-- Unguloxx <The Murderaffe>
+								i(144379, {		-- Murderous Brawler's Purse
+									i(144372),		-- Hide of the Murderaffe
+								}),
+							}),
+						},
+					}),
+					i(143761, {	-- Blood-Soaked Angel Figurine
+						["cost"] = { { "c", 1299, 250 }, },	-- 250x Brawler's Gold
+					}),
+					i(143760, {	-- Brawler's Potion Dispenser
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+					}),
+					i(143758, {	-- Free Drinks Voucher
+						["description"] = "Use this while on the 'Flaunt It If You Got It' quest.",
+						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+					}),
+					i(143762, {	-- High Roller's Contract
+						["description"] = "Use this while on the 'The Financial Participation Incentive' quest.",
+						["cost"] = { { "c", 1299, 100 }, },	-- 100x Brawler's Gold
+					}),
+					i(142290, {	-- Rumble Card: Battle of the Brew
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							crit(35477, {	-- Battle of the Brew
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
-						}),
-					},
-				}),
-				i(142294, {	-- Rumble Card: Mazhareen
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						n(68251, {	-- Mazhareen
-							crit(35473, {	-- Mazhareen
+						},
+					}),
+					i(142288, {	-- Rumble Card: Grief Warden
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							n(114943, {	-- Grief Warden <Enmity Moose>
+								crit(35472, {	-- Grief Warden
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142294, {	-- Rumble Card: Mazhareen
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							n(68251, {	-- Mazhareen
+								crit(35473, {	-- Mazhareen
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							n(117102, {	-- Mindbreaker Gzzaj
+								crit(35474, {	-- Mindbreaker Gzzaj
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142289, {	-- Rumble Card: Penguin Stampede
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							n(115185, {	-- Penguin Stampede
+								crit(35478, {	-- Penguin Stampede
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142291, {	-- Rumble Card: Senya
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							n(115357, {	-- Senya
+								crit(35476, {	-- Senya
+									["achievementID"] = 11573,	-- Rumble Club
+								}),
+							}),
+						},
+					}),
+					i(142292, {	-- Rumble Card: Stranglethorn Streak
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
+						["groups"] = {
+							crit(35475, {	-- Stranglethorn Streak
 								["achievementID"] = 11573,	-- Rumble Club
 							}),
-						}),
-					},
-				}),
-				i(142293, {	-- Rumble Card: Mindbreaker Gzzaj
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						n(117102, {	-- Mindbreaker Gzzaj
-							crit(35474, {	-- Mindbreaker Gzzaj
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						}),
-					},
-				}),
-				i(142289, {	-- Rumble Card: Penguin Stampede
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						n(115185, {	-- Penguin Stampede
-							crit(35478, {	-- Penguin Stampede
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						}),
-					},
-				}),
-				i(142291, {	-- Rumble Card: Senya
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						n(115357, {	-- Senya
-							crit(35476, {	-- Senya
-								["achievementID"] = 11573,	-- Rumble Club
-							}),
-						}),
-					},
-				}),
-				i(142292, {	-- Rumble Card: Stranglethorn Streak
-					["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					["groups"] = {
-						crit(35475, {	-- Stranglethorn Streak
-							["achievementID"] = 11573,	-- Rumble Club
-						}),
-					},
-				}),
-				i(143759, {	-- VIP Room Rental Form
-					["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
-					["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
-				}),
+						},
+					}),
+					i(143759, {	-- VIP Room Rental Form
+						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
+						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+					}),
+				},
 			}),
 		}),
 	},

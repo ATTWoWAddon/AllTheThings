@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KUN_LAI_SUMMIT, {
 		["icon"] = 617832,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19887, {	-- Campaign: Kun-Lai Summit [A]
 					["races"] = ALLIANCE_ONLY,
@@ -45,7 +45,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20011,	-- Looking For Group: Kun-Lai Summit
 						19965,	-- Tour Kun-Lai Summit
 					}},
-					["g"] = {
+					["groups"] = {
 						i(218247),	-- Chen Stormstout's Hat
 						i(218248),	-- Chen Stormstout's Hat
 					},

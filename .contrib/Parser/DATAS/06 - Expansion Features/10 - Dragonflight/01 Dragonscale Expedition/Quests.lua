@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200124),	-- Disoriented Wishtail (QI!)
 						},
 					}),
@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 46.7, 82.9, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200200),	-- Earthbound Primordial Core (QI!)
 						},
 					}),
@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200140),	-- Fragments of Fangfall (QI!)
 						},
 					}),
@@ -52,7 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["cost"] = {{ "i", 200143, 1 }},	--1xFenistrasza's Skull
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200143),	-- Fenistrasza's Skull (QI!)
 						},
 					}),
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200162),	-- Lost Tuskarr Kite (QI!)
 						},
 					}),
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.1, 82.8, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200134),	-- Ohuna Mass-Binding Totem (QI!)
 						},
 					}),
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200125),	-- Stoneheart's Stone Heart (QI!)
 						},
 					}),
@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 48.0, 83.7, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200122),	-- Temporal Spyglass (QI!)
 						},
 					}),
@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200123),	-- Torrential Lily (QI!)
 						},
 					}),
@@ -106,7 +106,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.5, 83.6, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200117),	-- Watcher's Golden Girdle (QI!)
 						},
 					}),
@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 47.9, 82.5, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200179),	-- Ruby Lifeband (QI!)
 						},
 					}),
@@ -128,7 +128,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"sourceID", 181773,	-- Excavator's Punch
 							"sourceID", 182255,	-- Excavator's Trowel
 						},
-						["g"] = {
+						["groups"] = {
 							i(198387),	-- Excavator's Mallet
 							i(198717),	-- Excavator's Punch
 							i(199746),	-- Excavator's Trowel
@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -204,7 +204,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["description"] = "Buying the Renowned cloaks will remove this quest from being available!",
 						["provider"] = { "n", 187700 },	-- Pathfinder Jab
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(199873),	-- Renowned Expeditioner's Cape
 							i(199874),	-- Renowned Expeditioner's Cloak
 							i(199876),	-- Renowned Expeditioner's Shawl
@@ -215,7 +215,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -223,7 +223,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70813, {	-- Digging Up Treasure
 						["provider"] = { "n", 187700 },	-- Pathfinder Jab
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(191294),	-- Small Expedition Shovel
 						},
 					}),
@@ -236,7 +236,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -245,7 +245,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -253,7 +253,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70807, {	-- Advanced Excavation Tools
 						["provider"] = { "n", 188265 },	-- Rae'ana
 						["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(194102),	-- Expedition Excavator
 							i(194326),	-- Trusty Sweeper
 							i(194325),	-- Researcher's Magnifier
@@ -263,7 +263,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -272,7 +272,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -280,7 +280,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70828, {	-- Wayfinder's Compass
 						["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(199902),	-- Wayfinder's Compass (TOY!)
 						},
 					}),
@@ -293,7 +293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69564,	-- Maned Crest
 							"questID", 69561,	-- Spined Brow
 						},
-						["g"] = {
+						["groups"] = {
 							i(197369, {	-- Renewed Proto-Drake: Brown Hair (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -305,11 +305,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72035, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -317,11 +317,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72036, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70820, {	-- The Basecamp 'Pets'
 						["provider"] = { "n", 187408 },	-- Granpap Whiskers
 						["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(198726),	-- Black Skitterbug (PET!)
 							i(198725),	-- Gray Marmoni (PET!)
 						},
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -367,7 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66013 },	-- Investigate the Door
 						["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 						["coord"] = { 54.5, 55.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(197958),	-- Watcher Log (QI!)
 						},
 					}),
@@ -390,7 +390,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66094 },	-- The Ruins of Szat Skeleth
 						["provider"] = { "n", 191159 },	-- Toddy Whiskers
 						["coord"] = { 40.0, 67.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(193070),	-- The Insight of Tyr (QI!)
 						},
 					}),
@@ -398,7 +398,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 70507 },	-- The Insight of Tyr
 						["provider"] = { "i", 199790 },	-- Makko's Journal Cover
 						["coord"] = { 44, 66, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(203598),	-- Makko's Journal Cover (QI!)
 							i(200295),	-- Makko's Complete Journal (QI!) [book]
 							i(199792),	-- Makko's Journal - Page One (QI!)
@@ -413,7 +413,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 70784 },	-- The Abandoned Outpost
 						["provider"] = { "n", 193350 },	-- Naleidea Rivergleam
 						["coord"] = { 53.9, 50.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(200473),	-- Agitated Fragment (QI!)
 							i(200478),	-- Far-Flung Fragment (QI!)
 							i(200480),	-- Half Swallowed Sliver (QI!)
@@ -425,7 +425,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 70785 },	-- The City of the Dead
 						["provider"] = { "n", 190855 },	-- Naleidea Rivergleam
 						["coord"] = { 62.2, 18.3, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(193072),	-- The Judgment of Tyr (QI!)
 						},
 					}),
@@ -435,9 +435,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							70503,	-- The Vigilance of Tyr
 							66814,	-- The Judgement of Tyr
 						},
-						["providers"] = {
-							{ "n", 191159 },	-- Toddy Whiskers
-							{ "n", 193350 },	-- Naleidea Rivergleam
+						["qgs"] = {
+							191159,	-- Toddy Whiskers
+							193350,	-- Naleidea Rivergleam
 						},
 						["coords"] = {
 							{ 40.0, 67.5, OHNAHRAN_PLAINS },
@@ -448,7 +448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -456,7 +456,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70819, {	-- Renowned Explorer's Armor
 						["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							iensemble(198775),	-- Ensemble: Renowned Expeditioner's Cloth Armor
 							iensemble(198776),	-- Ensemble: Renowned Expeditioner's Leather Armor
 							iensemble(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
@@ -467,7 +467,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = INSCRIPTION,
-						["g"] = {
+						["groups"] = {
 							i(201711),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -475,7 +475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = ENCHANTING,
-						["g"] = {
+						["groups"] = {
 							i(201709),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -483,7 +483,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
+						["groups"] = {
 							i(201710),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -491,7 +491,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							i(201712),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -499,7 +499,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = MINING,
-						["g"] = {
+						["groups"] = {
 							i(201700),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -507,7 +507,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = TAILORING,
-						["g"] = {
+						["groups"] = {
 							i(201715),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -515,7 +515,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
 					}),
@@ -529,7 +529,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69603,	-- Spiked Club Tail
 							"questID", 69575,	-- Swept Horns
 						},
-						["g"] = {
+						["groups"] = {
 							i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -542,7 +542,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -550,7 +550,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70814, {	-- Unlocking Magical Treasures
 						["provider"] = { "n", 188265 },	-- Rae'ana
 						["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							sp(388264),	-- Magical Chests of the Dragon Isles
 						},
 					}),
@@ -558,7 +558,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -566,7 +566,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70831, {	-- Researching in Comfort
 						["provider"] = { "n", 188265 },	-- Rae'ana
 						["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(198721),	-- Skinny Reliquary Pillow (TOY!)
 							i(198722),	-- Small Triangular Pillow (TOY!)
 							i(198720),	-- Soft Purple Pillow (TOY!)
@@ -576,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -589,7 +589,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70832, {	-- One of Us Now
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(198730),	-- Dragonscale Expedition Tabard
 						},
 					}),
@@ -597,7 +597,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70815, {	-- Demolitions Access
 						["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 						["coord"] = { 47.3, 83.3, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(198727),	-- Expedition Explosives
 						},
 					}),
@@ -613,7 +613,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -621,7 +621,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70833, {	-- Rumors of the Jeweled Whelplings
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(200738),	-- Onyx Gem Cluster Map
 						},
 					}),
@@ -629,7 +629,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -643,7 +643,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69818,	-- Windborne Velocidrake
 							"questID", 73844,	-- Winding Slitherdrake
 						},
-						["g"] = {
+						["groups"] = {
 							i(197144),	-- Highland Drake: Red Scales (MM!)
 							i(197010),	-- Cliffside Wylderdrake: Red Scales (MM!)
 							i(197614),	-- Windborne Velocidrake: Red Scales (MM!)
@@ -654,7 +654,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -663,7 +663,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = INSCRIPTION,
-						["g"] = {
+						["groups"] = {
 							i(201711),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -671,7 +671,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = ENCHANTING,
-						["g"] = {
+						["groups"] = {
 							i(201709),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -679,7 +679,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
+						["groups"] = {
 							i(201710),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -687,7 +687,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							i(201712),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -695,7 +695,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = MINING,
-						["g"] = {
+						["groups"] = {
 							i(201716),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -703,7 +703,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189065 },	-- Boss Magor
 						["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 						["requireSkill"] = TAILORING,
-						["g"] = {
+						["groups"] = {
 							i(201715),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -711,7 +711,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -723,9 +723,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["isBreadcrumb"] = true,	-- TODO: double check this
 					}),
 					q(67722, {	-- Break on Through
+						["sourceQuests"] = { 69097 },	-- A Vault Unsealed
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						["sourceQuests"] = { 69097 },	-- A Vault Unsealed
 					}),
 					q(66636, {	-- The Other Side
 						["sourceQuests"] = { 67722 },	-- Break on Through
@@ -747,9 +747,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							66173,	-- Hall of Samples
 							66174,	-- Hall of the Aspects
 						},
-						["providers"] = {
-							{ "n", 191853 },	-- Toddy Whiskers
-							{ "n", 193374 },	-- Toddy Whiskers
+						["qgs"] = {
+							191853,	-- Toddy Whiskers
+							193374,	-- Toddy Whiskers
 						},
 						["coords"] = {
 							{ 58.1, 53.0, THALDRASZUS },
@@ -760,7 +760,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 71152 },	-- Back to the Main Hall
 						["provider"] = { "n", 192820 },	-- Toddy Whiskers
 						["coord"] = { 55.1, 56.2, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(192768),	-- Titan Disk
 						},
 					}),
@@ -770,11 +770,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 54.4, 55.5, THALDRASZUS },
 					}),
 					q(69888, {	-- Unusual Suspects
+						["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
 						["sourceQuests"] = { 66547 },	-- It Belongs in a Museum... Eventually
 						["provider"] = { "n", 187276 },	-- Toddy Whiskers
 						["coord"] = { 47.2, 82.7, THE_WAKING_SHORES },
-						["description"] = "This quest will become available on the next weekly reset after completing |cffffff00It Belongs in a Museum... Eventually|r.",
-						["g"] = {
+						["groups"] = {
 							i(201782),	-- Tyr's Blessing
 							i(197805),	-- Suspicious Persons Scanner
 						},
@@ -783,7 +783,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
 					}),
@@ -791,7 +791,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70834, {	-- Titled Story
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							spell(388278),	-- Intrepid Explorer cast
 							title(475),	-- Intrepid Explorer <Name> (TITLE!)
 							i(197921),	-- Primal Infusion
@@ -804,7 +804,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"spellID", 374032,	-- Tamed Skitterfly
 							"spellID", 374034,	-- Azure Skitterfly
 						},
-						["g"] = {
+						["groups"] = {
 							i(192761),	-- Tamed Skitterfly (MOUNT!)
 							i(192762),	-- Azure Skitterfly (MOUNT!)
 						},
@@ -813,7 +813,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199472),	-- Overflowing Dragon Expedition Supply Pack
 						},
 					}),
@@ -822,7 +822,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(204378, {	-- Brimming Dragonscale Expedition Supply Pack
 								["timeline"] = { ADDED_10_0_7 },
 							}),

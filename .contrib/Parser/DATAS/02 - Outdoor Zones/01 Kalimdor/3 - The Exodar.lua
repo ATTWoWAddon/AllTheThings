@@ -61,17 +61,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(10357, {	-- A Donation of Runecloth
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -104,12 +104,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 12,
 				},
 				q(10358, {	-- Additional Runecloth
-					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 10357,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -142,12 +142,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9552, {	-- Call of Air (2/4)
-					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["sourceQuests"] = {
 						9551,	-- Call of Air (1/4) [The Exodar]
 						9547,	-- Call of Air (1/4) [Ironforge]
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
+					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["coord"] = { 31, 27.8, THE_EXODAR },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
@@ -156,8 +156,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9553, {	-- Call of Air (3/4)
-					["qg"] = 17431,	-- Velaada
 					["sourceQuest"] = 9552,	-- Call of Air (2/4)
+					["qg"] = 17431,	-- Velaada
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -165,11 +165,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9554, {	-- Call of Air (4/4)
+					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["providers"] = {
 						{ "n", 17435 },	-- Susurrus
 						{ "i", 23843 },	-- Whorl of Air
 					},
-					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -182,8 +182,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9605, {	-- Hippogryph Master Stephanos
-					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
+					["qg"] = 16768,	-- Nurguni
 					["coord"] = { 56.8, 49.8, THE_EXODAR },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -207,15 +207,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(32661, {	-- Learn To Ride
+					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
-					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 10),
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -223,11 +220,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14082, {	-- Learn to Ride at the Exodar
-					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { DRAENEI },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -235,24 +236,23 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(9598, {	-- Redemption (1/2)
-					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 10366,	-- Jol
+					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { PALADIN },
-					["races"] = { DRAENEI },
 					["cost"] = {
 						{ "i", 23926, 1 },	-- Tome of Divinity
 					},
+					["classes"] = { PALADIN },
+					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(9600, {	-- Redemption (2/2)
-					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 9598,	-- Redemption (1/2)
+					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLOODMYST_ISLE },
@@ -271,8 +271,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9606, {	-- Return to Caregiver Chellan
-					["qg"] = 17555,	-- Stephanos
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
+					["qg"] = 17555,	-- Stephanos
 					["coord"] = { 54.8, 35.8, THE_EXODAR },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16705, {	-- Altaa <Alchemy Supplies>
 					["coord"] = { 28.1, 61.9, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] =  {
 						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -325,9 +325,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
 					["coord"] = { 45.5, 25.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
-					-- #endif
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						{"select","itemID",
+							7341,	-- Cubic Zirconia Ring
+							7340,	-- Flawless Diamond Solitaire
+							7339,	-- Miniscule Diamond Ring
+							7338,	-- Mood Ring
+							7342,	-- Silver Piffeny Band
+							7337,	-- The Rock
+						},
+					},
 					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
 							["isLimited"] = true,
@@ -347,45 +355,65 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 48.6, 90.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						15808,    -- Fine Light Crossbow
-						15809,    -- Heavy Crossbow
-						3027,    -- Heavy Recurve Bow
-						2506,    -- Hornwood Recurve Bow
-						2507,    -- Laminated Recurve Bow
-						15807,    -- Light Crossbow
-						2505,    -- Polished Shortbow
-						3026,    -- Reinforced Bow
-						2504,    -- Worn Shortbow
+						15808,	-- Fine Light Crossbow
+						15809,	-- Heavy Crossbow
+						3027,	-- Heavy Recurve Bow
+						2506,	-- Hornwood Recurve Bow
+						2507,	-- Laminated Recurve Bow
+						15807,	-- Light Crossbow
+						2505,	-- Polished Shortbow
+						3026,	-- Reinforced Bow
+						2504,	-- Worn Shortbow
 					}},
 				}),
-				n(16722, {	-- Egomis <Enchanting Supplies>
-					["coord"] = { 39.9, 40.2, THE_EXODAR },
+				n(16739, {	-- Caregiver Breel <Innkeeper>
+					["coord"] = { 59.5, 18.76, THE_EXODAR },	-- The Exobar
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-					-- #endif
-					["groups"] = EGOMIS_GROUPS,
+				}),
+				n(20121, {	-- Dekin <Fishing Supplies>
+					["coord"] = { 29.5, 20.1, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
 				}),
 				n(16765, {	-- Ellomin
 					["coord"] = { 73.4, 84.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2527,    -- Battle Staff
-						925,    -- Flail
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						2028,    -- Hammer
-						928,    -- Long Staff
-						852,    -- Mace
-						924,    -- Maul
-						2532,    -- Morning Star
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-						2524,    -- Truncheon
-						2525,    -- War Hammer
-						2533,    -- War Maul
-						2535,    -- War Staff
+						2527,	-- Battle Staff
+						925,	-- Flail
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						928,	-- Long Staff
+						852,	-- Mace
+						924,	-- Maul
+						2532,	-- Morning Star
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2524,	-- Truncheon
+						2525,	-- War Hammer
+						2533,	-- War Maul
+						2535,	-- War Staff
 					}},
+				}),
+				n(16722, {	-- Egomis <Enchanting Supplies>
+					["coord"] = { 39.9, 40.2, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 1318},	-- Jessara Cordell <Enchanting Supplies>
+						-- #endif
+						{ "select","itemID",
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #endif
+							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						},
+					},
+					["groups"] = appendGroups(EGOMIS_GROUPS, {}),
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
@@ -409,9 +437,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(20121, {	-- Fingin
 					["coord"] = { 52.2, 84.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(221817, {	-- Gaal <Blacksmith>
 					["coord"] = { 56.6, 81.8, THE_EXODAR},
@@ -433,57 +463,55 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						16059,    -- Common Brown Shirt
-						3428,    -- Common Gray Shirt
-						16060,    -- Common White Shirt
-						837,    -- Heavy Weave Armor
-						3589,    -- Heavy Weave Belt
-						3590,    -- Heavy Weave Bracers
-						839,    -- Heavy Weave Gloves
-						838,    -- Heavy Weave Pants
-						840,    -- Heavy Weave Shoes
-						3602,    -- Knitted Belt
-						3603,    -- Knitted Bracers
-						793,    -- Knitted Gloves
-						794,    -- Knitted Pants
-						792,    -- Knitted Sandals
-						795,    -- Knitted Tunic
-						3597,    -- Thick Cloth Belt
-						3598,    -- Thick Cloth Bracers
-						203,    -- Thick Cloth Gloves
-						201,    -- Thick Cloth Pants
-						202,    -- Thick Cloth Shoes
-						200,    -- Thick Cloth Vest
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Gray Shirt
+						16060,	-- Common White Shirt
+						837,	-- Heavy Weave Armor
+						3589,	-- Heavy Weave Belt
+						3590,	-- Heavy Weave Bracers
+						839,	-- Heavy Weave Gloves
+						838,	-- Heavy Weave Pants
+						840,	-- Heavy Weave Shoes
+						3602,	-- Knitted Belt
+						3603,	-- Knitted Bracers
+						793,	-- Knitted Gloves
+						794,	-- Knitted Pants
+						792,	-- Knitted Sandals
+						795,	-- Knitted Tunic
+						3597,	-- Thick Cloth Belt
+						3598,	-- Thick Cloth Bracers
+						203,	-- Thick Cloth Gloves
+						201,	-- Thick Cloth Pants
+						202,	-- Thick Cloth Shoes
+						200,	-- Thick Cloth Vest
 					}},
 				}),
 				n(16753, {	-- Gotaan
 					["coord"] = { 67.6, 96.0, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2424,    -- Brigandine Belt
-						2426,    -- Brigandine Boots
-						2427,    -- Brigandine Bracers
-						2428,    -- Brigandine Gloves
-						3894,    -- Brigandine Helm
-						2425,    -- Brigandine Leggings
-						2423,    -- Brigandine Vest
-						2451,    -- Crested Heater Shield
-						17190,    -- Ornate Buckler
-						8094,    -- Platemail Armor
-						8088,    -- Platemail Belt
-						8089,    -- Platemail Boots
-						8090,    -- Platemail Bracers
-						8091,    -- Platemail Gloves
-						8092,    -- Platemail Helm
-						8093,    -- Platemail Leggings
+						2424,	-- Brigandine Belt
+						2426,	-- Brigandine Boots
+						2427,	-- Brigandine Bracers
+						2428,	-- Brigandine Gloves
+						3894,	-- Brigandine Helm
+						2425,	-- Brigandine Leggings
+						2423,	-- Brigandine Vest
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+						8094,	-- Platemail Armor
+						8088,	-- Platemail Belt
+						8089,	-- Platemail Boots
+						8090,	-- Platemail Bracers
+						8091,	-- Platemail Gloves
+						8092,	-- Platemail Helm
+						8093,	-- Platemail Leggings
 					}},
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
-					-- #endif
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
 					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
 							["isLimited"] = true,
@@ -531,41 +559,46 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 70.6, 92.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						236,    -- Cured Leather Armor
-						1849,    -- Cured Leather Belt
-						238,    -- Cured Leather Boots
-						1850,    -- Cured Leather Bracers
-						239,    -- Cured Leather Gloves
-						237,    -- Cured Leather Pants
-						1839,    -- Rough Leather Belt
-						796,    -- Rough Leather Boots
-						1840,    -- Rough Leather Bracers
-						797,    -- Rough Leather Gloves
-						798,    -- Rough Leather Pants
-						799,    -- Rough Leather Vest
-						1843,    -- Tanned Leather Belt
-						843,    -- Tanned Leather Boots
-						1844,    -- Tanned Leather Bracers
-						844,    -- Tanned Leather Gloves
-						846,    -- Tanned Leather Jerkin
-						845,    -- Tanned Leather Pants
+						236,	-- Cured Leather Armor
+						1849,	-- Cured Leather Belt
+						238,	-- Cured Leather Boots
+						1850,	-- Cured Leather Bracers
+						239,	-- Cured Leather Gloves
+						237,	-- Cured Leather Pants
+						1839,	-- Rough Leather Belt
+						796,	-- Rough Leather Boots
+						1840,	-- Rough Leather Bracers
+						797,	-- Rough Leather Gloves
+						798,	-- Rough Leather Pants
+						799,	-- Rough Leather Vest
+						1843,	-- Tanned Leather Belt
+						843,	-- Tanned Leather Boots
+						1844,	-- Tanned Leather Bracers
+						844,	-- Tanned Leather Gloves
+						846,	-- Tanned Leather Jerkin
+						845,	-- Tanned Leather Pants
 					}},
+				}),
+				n(16751, {	-- Merran <Mining Supplies>
+					["coord"] = { 59.9, 88.6, THE_EXODAR },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
 				}),
 				n(16735, {	-- Muhaa
 					["coord"] = { 45.8, 89.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3024,    -- Bkp 2700 Enforcer
-						3023,    -- Large Bore Blunderbuss
-						2509,    -- Ornate Blunderbuss
-						2511,    -- Hunter's Boomstick
+						3024,	-- Bkp 2700 Enforcer
+						3023,	-- Large Bore Blunderbuss
+						2509,	-- Ornate Blunderbuss
+						2511,	-- Hunter's Boomstick
 					}},
 				}),
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
 					-- #endif
 					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
@@ -580,20 +613,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 46.8, 60.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						5239,    -- Blackbone Wand
-						5210,    -- Burning Wand
-						5236,    -- Combustible Wand
-						5211,    -- Dusk Wand
-						5209,    -- Gloom Wand
-						5347,    -- Pestilent Wand
-						5238,    -- Pitchwood Wand
-						5208,    -- Smoldering Wand
+						5239,	-- Blackbone Wand
+						5210,	-- Burning Wand
+						5236,	-- Combustible Wand
+						5211,	-- Dusk Wand
+						5209,	-- Gloom Wand
+						5347,	-- Pestilent Wand
+						5238,	-- Pitchwood Wand
+						5208,	-- Smoldering Wand
 					}},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.4, 26.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = PHEA_GROUPS,
+					["groups"] = appendGroups(PHEA_GROUPS, {}),
 				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
@@ -606,8 +639,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(30716, {	-- Thoth <Inscription Trainer>
 					["coord"] = { 40.5, 39.8, THE_EXODAR },
-					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {
 						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
 							["timeline"] = { ADDED_7_0_3 },
@@ -638,16 +671,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 68.2, 96.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						17187,    -- Banded Buckler
-						1201,    -- Dull Heater Shield
-						2446,    -- Kite Shield
-						2445,    -- Large Metal Shield
-						2129,    -- Large Round Shield
-						17192,    -- Reinforced Targe
-						17188,    -- Ringed Buckler
-						17184,    -- Small Shield
-						17186,    -- Small Targe
-						1202,    -- Wall Shield
+						17187,	-- Banded Buckler
+						1201,	-- Dull Heater Shield
+						2446,	-- Kite Shield
+						2445,	-- Large Metal Shield
+						2129,	-- Large Round Shield
+						17192,	-- Reinforced Targe
+						17188,	-- Ringed Buckler
+						17184,	-- Small Shield
+						17186,	-- Small Targe
+						1202,	-- Wall Shield
 					}},
 				}),
 				n(16714, {	-- Ven
@@ -655,49 +688,49 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
-						926,    -- Battle Axe
-						2025,    -- Bearded Axe
-						2520,    -- Broadsword
-						1198,    -- Claymore
-						2029,    -- Cleaver
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						927,    -- Double Axe
-						2024,    -- Espadon
-						2528,    -- Falchion
-						852,    -- Hatched
-						2207,    -- Jambiya
-						2209,    -- Kris
-						923,    -- Longsword
-						2526,    -- Main Gauche
-						2208,    -- Poniad
-						2534,    -- Rondel
-						2027,    -- Scimitar
-						1196,    -- Tabar
+						926,	-- Battle Axe
+						2025,	-- Bearded Axe
+						2520,	-- Broadsword
+						1198,	-- Claymore
+						2029,	-- Cleaver
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						927,	-- Double Axe
+						2024,	-- Espadon
+						2528,	-- Falchion
+						852,	-- Hatched
+						2207,	-- Jambiya
+						2209,	-- Kris
+						923,	-- Longsword
+						2526,	-- Main Gauche
+						2208,	-- Poniad
+						2534,	-- Rondel
+						2027,	-- Scimitar
+						1196,	-- Tabar
 					}},
 				}),
 				n(16750, {	-- Yil
 					["coord"] = { 67.6, 94.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						847,    -- Chainmail Armor
-						1845,    -- Chainmail Belt
-						849,    -- Chainmail Boots
-						1846,    -- Chainmail Bracers
-						850,    -- Chainmail Gloves
-						848,    -- Chainmail Pants
-						2392,    -- Light Mail Armor
-						2393,    -- Light Mail Belt
-						2395,    -- Light Mail Boots
-						2396,    -- Light Mail Bracers
-						2397,    -- Light Mail Gloves
-						2394,    -- Light Mail Leggings
-						1853,    -- Scalemail Belt
-						287,    -- Scalemail Boots
-						1852,    -- Scalemail Bracers
-						718,    -- Scalemail Gloves
-						286,    -- Scalemail Pants
-						285,    -- Scalemail Vest
+						847,	-- Chainmail Armor
+						1845,	-- Chainmail Belt
+						849,	-- Chainmail Boots
+						1846,	-- Chainmail Bracers
+						850,	-- Chainmail Gloves
+						848,	-- Chainmail Pants
+						2392,	-- Light Mail Armor
+						2393,	-- Light Mail Belt
+						2395,	-- Light Mail Boots
+						2396,	-- Light Mail Bracers
+						2397,	-- Light Mail Gloves
+						2394,	-- Light Mail Leggings
+						1853,	-- Scalemail Belt
+						287,	-- Scalemail Boots
+						1852,	-- Scalemail Bracers
+						718,	-- Scalemail Gloves
+						286,	-- Scalemail Pants
+						285,	-- Scalemail Vest
 					}},
 				}),
 			}),
@@ -722,5 +755,5 @@ for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 }) do table.insert(EGOMIS_GROUPS, o); end

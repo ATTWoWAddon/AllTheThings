@@ -46,8 +46,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25480, {	-- Dance Of De Spirits
-				["qg"] = 40391,	-- Vol'jin
 				["sourceQuest"] = 25470,	-- Lady Of Da Tigers
+				["qg"] = 40391,	-- Vol'jin
 				["coord"] = { 57.4, 72.7, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -59,8 +59,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25446, {	-- Frogs Away!
-				["qg"] = 40184,	-- Vanira
 				["sourceQuest"] = 25444,	-- Da Perfect Spies
+				["qg"] = 40184,	-- Vanira
 				["coord"] = { 57.5, 72.5, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -74,8 +74,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25470, {	-- Lady Of Da Tigers
-				["qg"] = 40184,	-- Vanira
 				["sourceQuest"] = 25461,	-- Trollin' For Volunteers
+				["qg"] = 40184,	-- Vanira
 				["coord"] = { 57.5, 72.5, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -86,17 +86,17 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25495, {	-- Preparin' For Battle
-				["providers"] = {
-					{ "n", 40253 },	-- Champion Uru'zin
-					{ "n", 40204 },	-- Handler Marnlek
-				},
 				["sourceQuest"] = 25461,	-- Trollin' For Volunteers
+				["qgs"] = {
+					40253,	-- Champion Uru'zin
+					40204,	-- Handler Marnlek
+				},
 				["coord"] = { 57.8, 73.0, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(25461, {	-- Trollin' For Volunteers
-				["qg"] = 40253,	-- Champion Uru'zin
 				["sourceQuest"] = 25446,	-- Frogs Away!
+				["qg"] = 40253,	-- Champion Uru'zin
 				["coord"] = { 57.8, 73.0, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -116,8 +116,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25445, {	-- Zalazane's Fall
-				["qg"] = 40391,	-- Vol'jin
 				["sourceQuest"] = 25495,	-- Preparin' For Battle
+				["qg"] = 40391,	-- Vol'jin
 				["coord"] = { 57.4, 72.7, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {

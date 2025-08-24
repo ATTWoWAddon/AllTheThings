@@ -5,13 +5,31 @@ local contains, MergeClone = app.contains, app.MergeClone;
 -- Global locals
 local ipairs, pairs, select, tinsert =
 	  ipairs, pairs, select, tinsert;
-local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetCategoryNumAchievements =
-	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetCategoryNumAchievements;
+local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements =
+	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Module locals
+local AchievementPriority = setmetatable({
+	[92] = -100,		-- General / Character [Retail]
+	[96] = -99,			-- Quests
+	[97] = -98,			-- Exploration
+	[15522] = -97,		-- Delves
+	[95] = -96,			-- Player vs. Player
+	[168] = -95,		-- Dungeons & Raids
+	[169] = -94,		-- Professions
+	[201] = -93,		-- Reputations
+	[15165] = -92,		-- Scenarios
+	[155] = -91,		-- World Events
+	[15117] = -90,		-- Pet Battles
+	[15246] = -89,		-- Collections
+	[15301] = -88,		-- Expansion Features
+	[81] = 100000,		-- Feats of Strength
+	[15234] = 100001,	-- Legacy
+	[15076] = 100002,	-- Guild
+}, { __index = function(t, id) return id; end });
 local function cacheAchievementData(self, categories, g)
 	if g then
 		for i,o in ipairs(g) do
@@ -45,7 +63,7 @@ end
 local function achievementSort(a, b)
 	if a.achievementCategoryID then
 		if b.achievementCategoryID then
-			return a.achievementCategoryID < b.achievementCategoryID;
+			return AchievementPriority[a.achievementCategoryID] < AchievementPriority[b.achievementCategoryID];
 		end
 		return true;
 	elseif b.achievementCategoryID then
@@ -53,16 +71,16 @@ local function achievementSort(a, b)
 	end
 	if a.rank then
 		if b.rank then
-			if a.f then
-				if b.f then
-					if a.f == b.f then
+			if a.type then
+				if b.type then
+					if a.type == b.type then
 						return a.rank < b.rank;
 					else
-						return a.f < b.f;
+						return a.type < b.type;
 					end
 				end
 				return true;
-			elseif b.f then
+			elseif b.type then
 				return false;
 			end
 			return a.rank < b.rank;
@@ -83,46 +101,67 @@ app:CreateWindow("Achievements", {
 	OnInit = function(self, handlers)
 		self.data = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
 			description = "This list shows you all of the achievements that you can collect.",
+			IgnoreBuildRequests = true,
 			visible = true,
 			expanded = true,
 			back = 1,
-			g = app.Categories.Achievements or {},
+			g = {},
 			achievements = {},
 			OnUpdate = function(data)
 				local categories = {};
 				categories[-1] = data;
+				if GetCategoryList then
+					for _,categoryID in ipairs(GetCategoryList()) do
+						getAchievementCategory(categories, categoryID);
+					end
+				end
+				if GetGuildCategoryList then
+					for _,categoryID in ipairs(GetGuildCategoryList()) do
+						getAchievementCategory(categories, categoryID);
+					end
+				end
 				cacheAchievementData(data, categories, data.g);
 				for i,matches in pairs(app.SearchForFieldContainer("achievementID")) do
-					if not data.achievements[i] and not matches[1].isStatistic then
-						local achievement = (matches[1].isGuild and app.CreateGuildAchievement or app.CreateAchievement)(tonumber(i));
-						local sources = {};
+					if not data.achievements[i] then
+						local mostAccessibleSource;
 						for j,o in ipairs(matches) do
-							if not GetRelativeValue(o, "_hqt") and o.key == "achievementID" then
-								MergeClone(sources, o);
-								if o.parent then
-									achievement.sourceParent = o.parent;
-									if not o.sourceQuests then
-										local questID = GetRelativeValue(o, "questID");
-										if questID then
+							if o.key == "achievementID" or o.key == "guildAchievementID" then
+								if GetRelativeValue(o, "_hqt") or GetRelativeValue(o, "u") == 1 or o.isStatistic then
+									data.achievements[i] = true;
+								else
+									mostAccessibleSource = o;
+								end
+								break;
+							end
+						end
+						if mostAccessibleSource then
+							local achievement = (mostAccessibleSource.isGuild and app.CreateGuildAchievement or app.CreateAchievement)(tonumber(i));
+							for key,value in pairs(mostAccessibleSource) do
+								achievement[key] = value;
+							end
+							if mostAccessibleSource.parent then
+								achievement.sourceParent = mostAccessibleSource.parent;
+								if not mostAccessibleSource.sourceQuests then
+									local questID = GetRelativeValue(mostAccessibleSource, "questID");
+									if questID then
+										if not achievement.sourceQuests then
+											achievement.sourceQuests = {};
+										end
+										if not contains(achievement.sourceQuests, questID) then
+											tinsert(achievement.sourceQuests, questID);
+										end
+									else
+										local sourceQuests = GetRelativeValue(mostAccessibleSource, "sourceQuests");
+										if sourceQuests then
 											if not achievement.sourceQuests then
 												achievement.sourceQuests = {};
-											end
-											if not contains(achievement.sourceQuests, questID) then
-												tinsert(achievement.sourceQuests, questID);
-											end
-										else
-											local sourceQuests = GetRelativeValue(o, "sourceQuests");
-											if sourceQuests then
-												if not achievement.sourceQuests then
-													achievement.sourceQuests = {};
-													for k,questID in ipairs(sourceQuests) do
+												for k,questID in ipairs(sourceQuests) do
+													tinsert(achievement.sourceQuests, questID);
+												end
+											else
+												for k,questID in ipairs(sourceQuests) do
+													if not contains(achievement.sourceQuests, questID) then
 														tinsert(achievement.sourceQuests, questID);
-													end
-												else
-													for k,questID in ipairs(sourceQuests) do
-														if not contains(achievement.sourceQuests, questID) then
-															tinsert(achievement.sourceQuests, questID);
-														end
 													end
 												end
 											end
@@ -130,28 +169,12 @@ app:CreateWindow("Achievements", {
 									end
 								end
 							end
-						end
-						local count = #sources;
-						if count > 0 then
-							if count == 1 then
-								for key,value in pairs(sources[1]) do
-									achievement[key] = value;
-								end
-							elseif count > 1 then
-								-- Find the most accessible version of the thing.
-								app.Sort(sources, app.SortDefaults.Accessibility);
-								for key,value in pairs(sources[1]) do
-									achievement[key] = value;
-								end
-							end
-							data.achievements[i] = achievement;
 							achievement.progress = nil;
 							achievement.total = nil;
 							achievement.g = nil;
 							achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
-							if not achievement.u or achievement.u ~= 1 then
-								tinsert(achievement.parent.g, achievement);
-							end
+							tinsert(achievement.parent.g, achievement);
+							data.achievements[i] = achievement;
 						end
 					end
 				end
@@ -194,19 +217,8 @@ app:CreateWindow("Achievements", {
 				data.OnUpdate = nil;
 			end
 		});
-		app.CacheFields(self.data);
 		if not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
 			self.data.description = "This section isn't a thing until Wrath, but by popular demand and my own insanity, I've added this section so you can track your progress for at least one of the big ticket achievements if you have the stomach for it.";
 		end
-	end,
-	OnLoad = function(self, settings)
-		if settings.Progress then
-			self.data.progress = settings.Progress;
-			self.data.total = settings.Total;
-		end
-	end,
-	OnSave = function(self, settings)
-		settings.Progress = self.data.progress;
-		settings.Total = self.data.total;
 	end,
 });

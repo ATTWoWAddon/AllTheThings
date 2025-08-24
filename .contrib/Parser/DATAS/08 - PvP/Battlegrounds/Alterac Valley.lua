@@ -59,14 +59,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(ACHIEVEMENTS, {
 				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13928, {	-- Alterac Valley of Olde (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(172022),	-- Stormpike Battle Ram (MOUNT!)
 					},
 					["timeline"] = { ADDED_8_2_5 },
 				})),
 				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13930, {	-- Alterac Valley of Olde (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(172023),	-- Frostwolf Snarler (MOUNT!)
 					},
 					["timeline"] = { ADDED_8_2_5 },
@@ -360,11 +360,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7124, {	-- Capture a Mine (Horde)
+					["sourceQuest"] = 7123,	-- Speak with our Quartermaster
 					["qgs"] = {
 						12097,	-- Frostwolf Quartermaster
 						13776,	-- Corporal Teeka Bloodsnarl
 					},
-					["sourceQuest"] = 7123,	-- Speak with our Quartermaster
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 59.7, 31.2, HILLSBRAD_FOOTHILLS },
@@ -376,8 +376,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(6982, {	-- Coldtooth Supplies (Alliance)
-					["qg"] = 12096,	-- Stormpike Quartermaster
 					["sourceQuest"] = 7121,	-- The Quartermaster
+					["qg"] = 12096,	-- Stormpike Quartermaster
 					["coord"] = { 43.1, 17.6, ALTERAC_VALLEY },
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17542, 10 } },	-- Coldtooth Supplies
@@ -416,8 +416,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(7170, {	-- Earned Reverence (Alliance)
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7169,	-- Honored Amongst the Guard
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
@@ -435,8 +435,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7165, {	-- Earned Reverence (Horde)
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7164,	-- Honored Amongst the Clan
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
@@ -444,7 +444,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, REVERED },    -- Frostwolf Clan, Revered
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, REVERED },	-- Frostwolf Clan, Revered
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 3
@@ -508,8 +508,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8272, bubbleDown({ ["timeline"] = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 }}, {	-- Hero of the Frostwolf
-					["qg"] = 13817,	-- Voggah Deathgrip
 					["sourceQuest"] = 7142,	-- The Battle for Alterac (Horde)
+					["qg"] = 13817,	-- Voggah Deathgrip
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 58.6, 34.2, HILLSBRAD_FOOTHILLS },
@@ -526,8 +526,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				})),
 				q(8271, bubbleDown({ ["timeline"] = { ADDED_1_11_1, REMOVED_WITH_ANNIVERSARY_15, ADDED_11_0_5 }}, {	-- Hero of the Stormpike
-					["qg"] = 13816,	-- Prospector Stonehewer
 					["sourceQuest"] = 7141,	-- The Battle of Alterac (Alliance)
+					["qg"] = 13816,	-- Prospector Stonehewer
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 45.2, 45.2, HILLSBRAD_FOOTHILLS },
@@ -544,8 +544,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				})),
 				q(7164, {	-- Honored Amongst the Clan
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7163,	-- Rise and Be Recognized (Horde)
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
@@ -553,7 +553,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, HONORED },    -- Frostwolf Clan, Honored
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, HONORED },	-- Frostwolf Clan, Honored
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 2
@@ -563,8 +563,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7169, {	-- Honored Amongst the Guard
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7168,	-- Rise and Be Recognized (Alliance)
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
@@ -601,17 +601,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(8387, {	-- Invaders of Alterac Valley
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8369,	-- Invaders of Alterac Valley
+					["qg"] = 15350,	-- Horde Warbringer
 					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
-					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(5892, {	-- Irondeep Supplies (Alliance)
-					["qg"] = 12096,	-- Stormpike Quartermaster
 					["sourceQuest"] = 7121,	-- The Quartermaster
+					["qg"] = 12096,	-- Stormpike Quartermaster
 					["coord"] = { 43.1, 17.6, ALTERAC_VALLEY },
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17522, 10 } },	-- Irondeep Supplies
@@ -641,8 +641,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["_drop"] = { "g" },
 				}),
 				q(7382, {	-- Korrak the Everliving
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7202,	-- Korrak the Bloodrager
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["timeline"] = { ADDED_1_5_0, REMOVED_1_8_0 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -656,8 +656,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(7171, {	-- Legendary Heroes (Alliance)
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7170,	-- Earned Reverence (Alliance)
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
@@ -675,8 +675,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7166, {	-- Legendary Heroes (Horde)
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7165,	-- Earned Reverence (Horde)
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
@@ -684,7 +684,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },    -- Frostwolf Clan, Exalted
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 4
@@ -712,8 +712,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(6781, {	-- More Armor Scraps
-					["qg"] = 13257,	-- Murgot Deepforge
 					["sourceQuest"] = 7223,	-- Armor Scraps
+					["qg"] = 13257,	-- Murgot Deepforge
 					["coord"] = { 43.5, 15.5, ALTERAC_VALLEY },
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17422, 20 } },	-- Armor Scraps
@@ -721,8 +721,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["repeatable"] = true,
 				}),
 				q(6741, {	-- More Booty!
-					["qg"] = 13176,	-- Smith Regzar
 					["sourceQuest"] = 7224,	-- Enemy Booty
+					["qg"] = 13176,	-- Smith Regzar
 					["coord"] = { 49.5, 82.7, ALTERAC_VALLEY },
 					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17422, 20 } },	-- Armor Scraps
@@ -736,8 +736,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7162, {	-- Proving Grounds (Alliance)
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7261,	-- The Sovereign Imperative
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
@@ -756,8 +756,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7161, {	-- Proving Grounds (Horde)
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7241,	-- In Defense of Frostwolf
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
@@ -798,17 +798,17 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8383, {	-- Remember Alterac Valley!
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8375,	-- Remember Alterac Valley!
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
-					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(7168, {	-- Rise and Be Recognized (Alliance)
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7162,	-- Proving Grounds (Alliance)
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.6, 46.2, HILLSBRAD_FOOTHILLS },
@@ -826,8 +826,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7163, {	-- Rise and Be Recognized (Horde)
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7161,	-- Proving Grounds (Horde)
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 57.7, 33.3, HILLSBRAD_FOOTHILLS },
@@ -835,7 +835,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, FRIENDLY },    -- Frostwolf Clan, Friendly
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, FRIENDLY },	-- Frostwolf Clan, Friendly
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 1
@@ -903,13 +903,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7172, {	-- The Eye of Command (Alliance)
-					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7171,	-- Legendary Heroes
+					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted
 					-- #else
-					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },    -- Stormpike Guard, 999/1000 Exalted
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },	-- Stormpike Guard, 999/1000 Exalted
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -920,13 +920,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(7167, {	-- The Eye of Command (Horde)
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7166,	-- Legendary Heroes
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #if AFTER SHADOWLANDS
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },    -- Frostwolf Clan, Exalted
+					-- #if AFTER SL
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted
 					-- #else
-					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },    -- Frostwolf Clan, 999/1000 Exalted
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },	-- Frostwolf Clan, 999/1000 Exalted
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -967,8 +967,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(7381, {	-- The Return of Korrak
-					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7181,	-- The Legend of Korrak
+					["qg"] = 13840,	-- Warmaster Laggrond
 					["timeline"] = { ADDED_1_5_0, REMOVED_1_8_0 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,

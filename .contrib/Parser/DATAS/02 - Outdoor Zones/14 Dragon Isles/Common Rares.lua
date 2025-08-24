@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- Lunker (Fishing)
 				193634,	-- Swog'ranka <Lunker>
 			},
-			["g"] = {
+			["groups"] = {
 				i(200186),	-- Amberquill Shroud
 				i(200442),	-- Basilisk Hide Jerkin
 				i(200174),	-- Bonesigil Shoulderguards

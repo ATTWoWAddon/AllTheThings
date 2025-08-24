@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 58.1, 66.3, BORALUS },
 					{ 72.4, 73.3, BORALUS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(163702, {	-- Rosaline's Letter
 						["b"] = 1,	-- technically not BoP listed in-game, but can only obtain via yourself
 					}),
@@ -35,22 +35,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.8, 65.2, STORMSONG_VALLEY },
 			})),
 			q(53347, {	-- Bumbles the Bee
-				["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 				["sourceQuest"] = 53200,	-- Rosaline's Letter (looted)
+				["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 				["coord"] = { 68.8, 65.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163780),	-- Raimond's Secret Ingredient (QI!)
 				},
 			}),
 			q(53371, {	-- Let's Bee Friends
-				["sourceQuests"] = { 53347 },	-- Bumbles the Bee
 				["description"] = "Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",
+				["sourceQuests"] = { 53347 },	-- Bumbles the Bee
 				["provider"] = { "n", 132647 },	-- Ancel Mildenhall
-				["isDaily"] = true,
 				["coord"] = { 71.0, 69.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					ach(13062, {	-- Let's Bee Friends
 						["races"] = ALLIANCE_ONLY,
 					}),

@@ -118,8 +118,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				}),
 				-- Tiragarde Sound items = Zuldazar quest rewards
 				filter(CLOTH, {
-					i(155048),	-- Navigator's Cuffs
-					i(158231),	-- Navigator's Slippers
 					i(160066),	-- Navigator's Wrap
 					i(160067),	-- Navigator's Headpiece
 					i(160068),	-- Navigator's Shoulderpads
@@ -128,8 +126,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160854),	-- Navigator's Amice
 				}),
 				filter(LEATHER, {
-					i(155051),	-- Freebooter Bracers
-					i(158233),	-- Freebooter Treads
 					i(160069),	-- Freebooter Chestpiece
 					i(160070),	-- Freebooter Headcover
 					i(160071),	-- Freebooter Mantle
@@ -139,8 +135,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160892),	-- Freebooter Jerkin
 				}),
 				filter(MAIL, {
-					i(155050),	-- Outrigger Bracers
-					i(158232),	-- Outrigger Footguards
 					i(160072),	-- Outrigger Chestguard
 					i(160073),	-- Outrigger Skullguard
 					i(160074),	-- Outrigger Shoulderguards
@@ -149,8 +143,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160893),	-- Outrigger Breastplate
 				}),
 				filter(PLATE, {
-					i(155049),	-- Sea Raider's Bracers
-					i(158230),	-- Sea Raider's Warboots
 					i(160075),	-- Sea Raider's Warplate
 					i(160076),	-- Sea Raider's Headgear
 					i(160077),	-- Sea Raider's Shoulderplates
@@ -179,7 +171,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(159062),	-- Ritual Flayer's Mantle
 				}),
 				filter(MAIL, {
-					i(155317),	-- Death-Pledged Sabatons
 					i(159020),	-- Death-Pledged Handguards
 					i(159023),	-- Death-Pledged Helmet
 					i(159033),	-- Death-Pledged Mantle
@@ -253,7 +244,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				}),
 				filter(MAIL, {
 					i(158656),	-- Torcalin Striders
-					i(158662),	-- Torcalin Grasps
 					i(158673),	-- Torcalin Armguards
 					i(161146),	-- Torcalin Harness
 					i(161148),	-- Torcalin Shoulderguards
@@ -344,7 +334,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158510),	-- Repurposed Dinghy Anchor
 				i(158518),	-- Harbormaster's Lantern
 				i(159079),	-- Captivating Glowfly Lantern
-				i(161290),	-- Grimestone Greatmace
+
 				-- i(161292),	-- Grimestone Spellmaul
 				i(158579),	-- Scalawag's Warglaive
 				i(153400),	-- Scalawag's Bolt-Thrower
@@ -359,14 +349,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158509),	-- Tideshaper Staff
 				i(158506),	-- Scalawags Claymore
 				i(161924),	-- Seapriest's Wand (A) (never addedd)
-				i(161926),	-- Talanji's Salutary Scepter (A) (never added)
 
 				-- Nazmir items = Drustvar quest rewards
 
 				-- Vol'dun items = Stormsong Valley quest rewards
 				i(161295),	-- Scorching Sands Battleaxe
 				i(161302),	-- Scorching Sands Mace
-				i(161303),	-- Scorching Sands Bludgeon
+
 
 				-- Zuldazar items = Tiragarde Sound quest rewards
 				i(154985),	-- Golden Protectorate
@@ -384,7 +373,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158569),	-- Dinomancy Cudgel
 				i(158577),	-- Devilsaur Voodoo Figure
 				i(158565),	-- Tiki-Thumper
-				i(161311),	-- Crescent of Zak'rajan
 				i(161287),	-- Faithless Wingrider's Shield
 				i(158562),	-- Howdah-Rider's Bow
 				i(154971),	-- Howdah-Rider's Bow
@@ -396,7 +384,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(166887),	-- Pakura Priest Staff
 				i(158568),	-- Mojo-Drainer Staff
 				i(152871),	-- Seapriest's Wand
-				i(152873),	-- Talanji's Salutary Scepter
 				i(158580),	-- Loa-Claimer's Wariglaives
 			})),
 		}),
@@ -499,8 +486,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",
-					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(50768),	--
 				q(51692),	--
@@ -527,8 +514,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 				q(55023, {	-- Bizmo's Brawlpub Awaits!
 					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
-					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(55238),	--
 			})),
@@ -545,7 +532,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(54974),	--
 				q(56065),	--
 				q(56127),	--
-				q(56607),	--
+				q(56607),	-- Killed Sandcastle?
 				q(56618),	-- killed Tidelord Aquatus (153898)?
 				q(56667),	--
 				q(56742),	--
@@ -590,7 +577,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62578),	--
 				q(62687),	--
 				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
-				q(60693),	--
+				q(60693),	-- After q(59781)
 			})),
 
 			-- 9.0.2
@@ -620,7 +607,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
 				q(71054),	--
@@ -629,6 +616,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 10.0.2
 			expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 				q(72379),	--
+				q(72370),	-- "riding the airship to the dragon isles for the intro quest."
 				q(74047),	--
 				q(74064),	--
 			})),
@@ -676,6 +664,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
+				i(228580),	-- Brute Force Idol
 			})),
 		}),
 	}),

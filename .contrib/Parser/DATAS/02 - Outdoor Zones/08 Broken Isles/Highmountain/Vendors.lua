@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			n(VENDORS, {
 				n(93975, {	-- Leyweaver Yaphisteia
 					["coord"] = { 29.4, 26.2, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(127027, {	-- Pattern: Imbued Silkweave Slippers (Rank 1)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, {
 				}),
 				n(94100, {	-- Lucas Sigmund <Repairs>
 					["coord"] = { 39.9, 52.3, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(141044),	-- Technique: Glyph of Nesingwary's Nemeses (RECIPE!)
 						i(141048, {	-- Technique: Glyph of the Headhunter
 							["u"] = REMOVED_FROM_GAME,
@@ -26,14 +26,14 @@ root(ROOTS.Zones, {
 				}),
 				n(106902, {	-- Ransa Greyfeather <Highmountain Emissary>
 					["coord"] = { 38.3, 45.8, 750 },	-- Thunder Totem
-					["g"] = bubbleDownClassicRep(FACTION_HIGHMOUNTAIN_TRIBE, {
+					["groups"] = bubbleDownClassicRep(FACTION_HIGHMOUNTAIN_TRIBE, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(131814),	-- Whitewater Carp (TOY!)
 						}, {	-- Honored
 							i(140215, {	-- Boon of the Butcher
 								["cost"] = 800000,	-- 80g
-								["g"] = {
+								["groups"] = {
 									i(140224),	-- Butchered Meat
 								},
 							}),
@@ -92,7 +92,7 @@ root(ROOTS.Zones, {
 				}),
 				n(99574, {	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
 					["coord"] = { 60.9, 59.5, 750 },	-- Thunder Totem
-					["g"] = {
+					["groups"] = {
 						i(140336, {	-- Brulfist Idol (TOY!)
 							["cost"] = 5000000,	-- 500g
 						}),
@@ -101,10 +101,16 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				faction(FACTION_TALONS_VENGENCE, {	-- Talon's Vengeance
+				header(HEADERS.Faction, FACTION_TALONS_VENGENCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+					hqt(45029, {	-- Talon's Vengeance - Intro Complete
+						["description"] = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengence faction.",
+						["qg"] = 97925,	-- Aviana
+						["coord"] = { 32.2, 66.8, HIGHMOUNTAIN },
+					}),
 					n(115887, {	-- Trinket
 						["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
-						["g"] = pvp(bubbleDownClassicRep(FACTION_TALONS_VENGENCE, {
+						["sourceQuest"] = 45029,	-- Talon's Vengeance - Intro Complete
+						["groups"] = pvp(bubbleDownClassicRep(FACTION_TALONS_VENGENCE, {
 							{		-- Neutral
 								i(142366),	-- Regurgitated Leaf
 								i(142361, {	-- Ivory Talon
@@ -131,7 +137,7 @@ root(ROOTS.Zones, {
 							},
 						})),
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

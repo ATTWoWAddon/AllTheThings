@@ -75,28 +75,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				},
 				q(29100, {	-- Bwemba's Spirit (A)
-					["qg"] = 52654,	-- Bwemba
 					["sourceQuest"] = 29156,	-- The Troll Incursion
+					["qg"] = 52654,	-- Bwemba
 					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29219, {	-- Bwemba's Spirit (H)
-					["qg"] = 53081,	-- Bwemba
 					-- #if BEFORE 7.0.1
 					["sourceQuest"] = 29157,	-- The Zandalari Menace
 					-- #endif
+					["qg"] = 53081,	-- Bwemba
 					["coord"] = { 32.6, 68.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29235, {	-- Defend Grom'gol
-					["qg"] = 52996,	-- Commander Aggro'gosh
 					["sourceQuest"] = 29233,	-- Warn Grom'gol
+					["qg"] = 52996,	-- Commander Aggro'gosh
 					["coord"] = { 38.3, 50.2, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29131, {	-- Defend the Rebel Camp
-					["qg"] = 52410,	-- Lieutenant Doren
 					["sourceQuest"] = 29124,	-- Warn the Rebel Camp
+					["qg"] = 52410,	-- Lieutenant Doren
 					["coord"] = { 47.7, 12.0, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -146,23 +146,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					}),
 				},
 				q(29152, {	-- Making Contact (A)
-					["qg"] = 52646,	-- Colin Swifthammer
 					["sourceQuest"] = 29151,	-- Bad Supplies
+					["qg"] = 52646,	-- Colin Swifthammer
 					["coord"] = { 55.3, 41.9, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29250, {	-- Making Contact (H)
-					["qg"] = 53078,	-- Zombie Survivor
 					["sourceQuest"] = 29238,	-- Bad Supplies
+					["qg"] = 53078,	-- Zombie Survivor
 					["coord"] = { 33.5, 30.3, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29120, {	-- Mauti (A)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuests"] = {
 						29116,	-- Follow That Cat (automatically granted)
 						29118,	-- Follow That Cat (recently disturbed dirt mound)
 					},
+					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 77.9, 68.1, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -173,11 +173,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29230, {	-- Mauti (H)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuests"] = {
 						29228,	-- Follow That Cat (automatically granted)
 						29229,	-- Follow That Cat (recently disturbed dirt mound)
 					},
+					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 77.7, 68.3, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -188,20 +188,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29105, {	-- Nesingwary Will Know (A)
-					["qg"] = 52281,	-- Livingston Marshal
 					["sourceQuest"] = 29104,	-- Spirits Are With Us
+					["qg"] = 52281,	-- Livingston Marshal
 					["coord"] = { 52.5, 66.5, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29223, {	-- Nesingwary Will Know (H)
-					["qg"] = 52980,	-- Kil'karil
 					["sourceQuest"] = 29222,	-- Spirits Are With Us
+					["qg"] = 52980,	-- Kil'karil
 					["coord"] = { 63.3, 39.9, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29103, {	-- Serpents and Poison (A)
-					["qg"] = 52281,	-- Livingston Marshal
 					["sourceQuest"] = 29102,	-- To Fort Livingston
+					["qg"] = 52281,	-- Livingston Marshal
 					["coord"] = { 64.6, 40.4, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -221,8 +221,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29221, {	-- Serpents and Poison (H)
-					["qg"] = 52980,	-- Kil'karil
 					["sourceQuest"] = 29220,	-- To Bambala
+					["qg"] = 52980,	-- Kil'karil
 					["coord"] = { 63.3, 39.9, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -256,19 +256,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				},
 				q(29104, {	-- Spirits Are With Us (A)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29103,	-- Serpents and Poison
+					["qg"] = 52234,	-- Bwemba
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29222, {	-- Spirits Are With Us (H)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29221,	-- Serpents and Poison
+					["qg"] = 52234,	-- Bwemba
 					--["coord"] = {}	-- can be picked up anywhere on the map
 					["races"] = HORDE_ONLY,
 				}),
 				q(29115, {	-- The Hunter's Revenge (A)
-					["qg"] = 52346,	-- Grent Direhammer
 					["sourceQuest"] = 29114,	-- Track the Tracker
+					["qg"] = 52346,	-- Grent Direhammer
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -279,11 +279,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29227, {	-- The Hunter's Revenge (H)
+					["sourceQuest"] = 29226,	-- Track the Tracker
 					["qgs"] = {
 						52294,	-- Hemet Nesingwary Jr.
 						52346,	-- Grent Direhammer
 					},
-					["sourceQuest"] = 29226,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -321,38 +321,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["races"] = HORDE_ONLY,
 				}),
 				q(29102, {	-- To Fort Livingston
-					["qg"] = 52654,	-- Bwemba
 					["sourceQuest"] = 29100,	-- Bwemba's Spirit (A)
+					["qg"] = 52654,	-- Bwemba
 					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29236, {	-- To Hardwrench Hideaway
-					["qg"] = 53008,	-- Thysta
 					["sourceQuest"] = 29235,	-- Defend Grom'gol
+					["qg"] = 53008,	-- Thysta
 					["coord"] = { 39.0, 51.2, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29133, {	-- To the Digsite
-					["qg"] = 52753,	-- James Stillair
 					["sourceQuest"] = 29131,	-- Defend the Rebel Camp
+					["qg"] = 52753,	-- James Stillair
 					["coord"] = { 47.8, 11.8, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29114, {	-- Track the Tracker (A)
-					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["sourceQuest"] = 29105,	-- Nesingwary Will Know
+					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29226, {	-- Track the Tracker (H)
-					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["sourceQuest"] = 29223,	-- Nesingwary Will Know
+					["qg"] = 52294,	-- Hemet Nesingwary Jr.
 					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29150, {	-- Voodoo Zombies (A)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29133,	-- To the Digsite
+					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 55.1, 42.2, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -362,8 +362,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29237, {	-- Voodoo Zombies (H)
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29236,	-- To Hardwrench Hideaway
+					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 34.7, 29.4, THE_CAPE_OF_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -373,13 +373,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				q(29233, {	-- Warn Grom'gol
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
+					["qg"] = 52234,	-- Bwemba
 					["races"] = HORDE_ONLY,
 				}),
 				q(29124, {	-- Warn the Rebel Camp
-					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29121,	-- Bury Me With Me Boots...
+					["qg"] = 52234,	-- Bwemba
 					["coord"] = { 76.0, 66.6, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 				}),

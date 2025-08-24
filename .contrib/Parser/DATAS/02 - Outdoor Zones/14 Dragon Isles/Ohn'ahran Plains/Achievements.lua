@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16677, {	-- Adventurer of the Ohn'ahran Plains
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17562, {    -- Ancient Stones of the Ohn'ahran Plains (automated)
+			ach(17562, {	-- Ancient Stones of the Ohn'ahran Plains (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit
@@ -46,10 +46,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16063, {	-- Dragon Glyphs: Windsong Rise
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
-			explorationAch(16457),	-- Explore the Ohn'ahran Plains
+			ach(16457),	-- Explore the Ohn'ahran Plains
 			ach(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 },	-- 1x Essence of Awakening
-				["g"] = {
+				["groups"] = {
 					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
 					crit(55302, {	-- Maruukai Ancestor
 						["crs"] = { 197048 },	-- Mariq Dotur

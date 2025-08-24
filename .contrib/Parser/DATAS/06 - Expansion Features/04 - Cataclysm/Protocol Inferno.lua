@@ -101,7 +101,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				-- CRIEVE NOTE: This doesn't drop on Protocol Twilight mode.
 				currency(FISSURE_STONE_FRAGMENT, {
 					["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(
-						470595	-- Fury of the Firelord [Protocol Infero buff]
+						470595	-- Fury of the Firelord [Protocol Inferno buff]
 					),
 					["description"] = "Two Fissure Stone Fragments drop per boss in Protocol Inferno and the final boss of each dungeon will drop an extra three Fissure Stone Fragments if players have defeated all of the other bosses in the dungeon.",
 					["maps"] = PROTOCOL_MAPS,
@@ -116,7 +116,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["hqd"] = {
 						["coord"] = { 48.6, 71.4, ORGRIMMAR },
 					},
-					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return t; end]],
 					["groups"] = {
 						filter(MOUNTS, {
 							["providers"] = {

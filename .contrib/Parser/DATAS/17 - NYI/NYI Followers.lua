@@ -161,7 +161,7 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			follower(1371),	-- Brann Bronzebeard
 		})),
 	}),

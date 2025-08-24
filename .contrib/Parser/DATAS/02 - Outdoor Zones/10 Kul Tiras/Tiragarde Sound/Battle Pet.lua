@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				2399,	-- Hermit Crab (PET!)
 				2377,	-- Sandyback Crawler (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(2383, {	-- Giant Woodworm (PET!)
 					["description"] = "Best found around these coords. Spawns all around the N/NE area by Freehold.",
 					["coords"] = {

@@ -404,10 +404,10 @@ for spellID,learnedAt in pairs({
 	[58314] = 75,	-- Glyph of Blessing of Might
 	[58312] = 75,	-- Glyph of Blessing of Wisdom
 	[57209] = 75,	-- Glyph of Blood Tap
-	[58343] = 75,	-- Glyph of Bloodrage
+	[58343] = 75,	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA] / Glyph of Bloodcurdling Shout [MOP+]
 	[58323] = 75,	-- Glyph of Blurred Speed
 	[58287] = 75,	-- Glyph of Challenging Roar
-	[58344] = 75,	-- Glyph of Charge
+	[58344] = 75,	-- Glyph of Charge / Glyph of Long Charge [CATA+]
 	[68166] = 75,	-- Glyph of Command
 	[57229] = 75,	-- Glyph of Corpse Explosion
 	[58338] = 75,	-- Glyph of Curse of Exhaustion
@@ -429,7 +429,7 @@ for spellID,learnedAt in pairs({
 	[58313] = 75,	-- Glyph of Lay on Hands
 	[58319] = 75,	-- Glyph of Levitate
 	[58301] = 75,	-- Glyph of Mend Pet
-	[58345] = 75,	-- Glyph of Mocking Blow
+	[58345] = 75,	-- Glyph of Mocking Blow / Glyph of Demoralizing Shout [CATA] / Glyph of Gushing Wound [MOP+]
 	[57230] = 75,	-- Glyph of Pestilence
 	[58325] = 75,	-- Glyph of Pick Lock
 	[58326] = 75,	-- Glyph of Pick Pocket
@@ -485,7 +485,7 @@ for spellID,learnedAt in pairs({
 	[57009] = 90,	-- Glyph of Serpent Sting
 	[57119] = 95,	-- Glyph of Evasion
 	[57266] = 95,	-- Glyph of Healthstone
-	[57158] = 95,	-- Glyph of Heroic Strike
+	[57158] = 95,	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
 	[57246] = 95,	-- Glyph of Lightning Shield
 	[57196] = 95,	-- Glyph of Psychic Scream
 	[56968] = 100,	-- Glyph of Arcane Explosion
@@ -498,7 +498,7 @@ for spellID,learnedAt in pairs({
 	[57029] = 105,	-- Glyph of Holy Light
 	[57238] = 110,	-- Glyph of Fire Nova
 	[57265] = 110,	-- Glyph of Health Funnel
-	[57163] = 110,	-- Glyph of Rending
+	[57163] = 110,	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
 	[48247] = 110,	-- Mysterious Tarot
 	[58565] = 110,	-- Mystic Tome
 	[56971] = 115,	-- Glyph of Arcane Missiles
@@ -511,7 +511,7 @@ for spellID,learnedAt in pairs({
 	[57706] = 125,	-- Dawnstar Ink
 	[57262] = 125,	-- Glyph of Fear
 	[57240] = 125,	-- Glyph of Flametongue Weapon
-	[57157] = 125,	-- Glyph of Hamstring
+	[57157] = 125,	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
 	[45359] = 125,	-- Inscription
 	[59480] = 125,	-- Strange Tarot
 	[59475] = 125,	-- Tome of the Dawn
@@ -566,7 +566,7 @@ for spellID,learnedAt in pairs({
 	[57201] = 210,	-- Glyph of Smite
 	[50607] = 210,	-- Scroll of Spirit IV
 	[57242] = 215,	-- Glyph of Healing Stream Totem
-	[57270] = 215,	-- Glyph of Searing Pain
+	[57270] = 215,	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
 	[50600] = 215,	-- Scroll of Intellect IV
 	[57151] = 220,	-- Glyph of Barbaric Insults
 	[56959] = 220,	-- Glyph of Starfire
@@ -637,7 +637,7 @@ for spellID,learnedAt in pairs({
 	[57168] = 320,	-- Glyph of Sweeping Strikes
 	[59496] = 325,	-- Book of Clever Tricks
 	[57714] = 325,	-- Darkflame Ink
-	[56984] = 325,	-- Glyph of Mage Armor
+	[56984] = 325,	-- Glyph of Mage Armor / Glyph of Mana Gem [MOP+]
 	[57275] = 325,	-- Glyph of Succubus
 	[59503] = 325,	-- Greater Darkmoon Card
 	[59495] = 325,	-- Hellfire Tome

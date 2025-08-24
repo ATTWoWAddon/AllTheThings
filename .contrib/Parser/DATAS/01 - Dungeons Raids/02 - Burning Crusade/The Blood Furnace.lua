@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(256, {	-- The Blood Furnace
+	inst(256, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Blood Furnace
 		["lore"] = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3713,	-- The Blood Furnace
@@ -106,8 +106,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(9589, {	-- The Blood is Life [Alliance]
-					["qg"] = 17479,	-- Gunny
 					["sourceQuest"] = 9587,	-- Dark Tidings [Alliance]
+					["qg"] = 17479,	-- Gunny
 					["coord"] = { 56.4, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
@@ -125,8 +125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(9590, {	-- The Blood is Life [Horde]
-					["qg"] = 17558,	-- Caza'rez
 					["sourceQuest"] = 9588,	-- Dark Tidings [Horde]
+					["qg"] = 17558,	-- Caza'rez
 					["coord"] = { 54.9, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
@@ -218,9 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(557, {	-- Keli'dan the Breaker
 					["creatureID"] = 17377,
 					["groups"] = {
-						ach(648, {	-- The Blood Furnace
-							["timeline"] = { ADDED_3_0_2 },
-						}),
+						ach(648),	-- The Blood Furnace
 						i(24394),	-- Warsong Howling Axe
 						-- #if AFTER 7.3.5
 						i(27512),	-- The Willbreaker
@@ -333,9 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(557, {	-- Keli'dan the Breaker
 						["creatureID"] = 17377,
 						["groups"] = {
-							ach(668, {	-- Heroic: The Blood Furnace
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(668),	-- Heroic: The Blood Furnace
 							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -372,12 +368,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33814),	-- Keli'dan's Feathered Stave
-						}
+						},
 					}),
-				}
+				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

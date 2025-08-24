@@ -2,13 +2,13 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local DERBY_MARK = 3055;
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
 			["description"] = "This event is available every Saturday.",
 			["icon"] = 6012052,
 			["requireSkill"] = FISHING,
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(40539, {	-- The Derby Dash (automated)
 						i(223286),	-- Kah, Legend of the Deep (MOUNT!)
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							currency(DERBY_MARK),
 						},
 					}),
@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							currency(DERBY_MARK),
 						},
 					}),
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							currency(DERBY_MARK),
 						},
 					}),
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							currency(DERBY_MARK),
 						},
 					}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							currency(DERBY_MARK),
 						},
 					}),
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(VENDORS, {
 					n(226846, {	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							i(225770, {	-- Algari Anglerthread
 								["cost"] = {{"c", DERBY_MARK, 10}}
 							}),
@@ -176,4 +176,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 		}),
 	}),
-})));
+}));

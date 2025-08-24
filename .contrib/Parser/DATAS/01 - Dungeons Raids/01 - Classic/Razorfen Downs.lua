@@ -36,6 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6521, {	-- An Unholy Alliance (2/2) (Before Wrathgate)
+					["sourceQuest"] = 6522,	-- An Unholy Alliance (1/2) (Before Wrathgate)
 					["providers"] = {
 						-- #if AFTER 3.3.0
 						{ "n", 36273 },	-- Bragor Bloodfist <Hand of the Warchief>
@@ -43,7 +44,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 2425 },	-- Varimathras
 						-- #endif
 					},
-					["sourceQuest"] = 6522,	-- An Unholy Alliance (1/2) (Before Wrathgate)
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -67,8 +67,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(14353, {	-- An Unholy Alliance (2/2) (After Wrathgate)
-					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 					["sourceQuest"] = 14352,	-- An Unholy Alliance (1/2) (After Wrathgate)
+					["qg"] = 36273,	-- Bragor Bloodfist <Hand of the Warchief>
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -167,11 +167,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3525, {	-- Extinguishing the Idol
+					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
 					["providers"] = {
 						{ "n",   8516 },	-- Belnistrasz
 						{ "o", 152097 },	-- Belnistrasz's Brazier
 					},
-					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 32,
 					-- #if BEFORE 4.0.3
@@ -183,11 +183,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				q(27022, {	-- Extinguishing the Idol (After Cataclysm)
+					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
 					["providers"] = {
 						{ "n",   8516 },	-- Belnistrasz
 						{ "o", 152097 },	-- Belnistrasz's Brazier
 					},
-					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
@@ -213,6 +213,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(27024, {	-- Partners in Crime
+					-- #if AFTER 6.0.2
+					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
+					-- #endif
 					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(40, 40, 15),
@@ -245,11 +248,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(27009, {	-- The Coldbringer
-					["qg"] = 44837,	-- Koristrasza
+					-- #if AFTER 6.0.2
+					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
+					-- #endif
 					["sourceQuests"] = {
 						27063,	-- Looming Threat [Alliance]
 						27062,	-- Looming Threat [Horde]
 					},
+					["qg"] = 44837,	-- Koristrasza
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					-- #if BEFORE 6.0.1.18322
@@ -459,14 +465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7358, {	-- Amnennar the Coldbringer
 				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
-					ach(636, {	-- Razorfen Downs
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							3636,	-- Bring the Light
-							3341,	-- Bring the End
-						},
-						-- #endif
-					}),
+					ach(636),	-- Razorfen Downs
 					ach(5045, {	-- Razorfen Downs Guild Run
 						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),

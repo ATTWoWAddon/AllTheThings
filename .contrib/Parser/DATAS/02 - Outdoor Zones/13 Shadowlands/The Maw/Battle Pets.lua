@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			["sym"] = {{"select","speciesID",
 				3126,	-- Eye of Affliction (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(3115, {		-- Clinging Remains (PET!)
 					["coords"] = {
 						{ 33.0, 46.6, THE_MAW },

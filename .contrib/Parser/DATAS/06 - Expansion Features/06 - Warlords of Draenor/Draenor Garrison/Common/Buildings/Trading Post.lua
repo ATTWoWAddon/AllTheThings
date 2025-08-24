@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(ACHIEVEMENTS, {
 					ach(9475, {		-- Laughing Skull Orcs
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(287, {	-- Masked Chuckler <Name>
 								["races"] = HORDE_ONLY,
 							}),
@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					ach(9476, {		-- Sha'tari Defense
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(288, {	-- Peacekeeper <Name>
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -32,24 +32,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 						["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module
 							{ "i", 118379, 1 },	-- 1x Cyclical Power Module
 							{ "i", 118378, 1 },	-- 1x Super Cooling Module
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37014, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 						["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
-						["races"] = HORDE_ONLY,
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module
 							{ "i", 118379, 1 },	-- 1x Cyclical Power Module
 							{ "i", 118378, 1 },	-- 1x Super Cooling Module
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					i(118375, {	-- Arcane Crystal Module
 						["cost"] = {
@@ -83,45 +83,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						},
 					}),
 					q(37088, {	-- Tricks of the Trade
-						["races"] = ALLIANCE_ONLY,
-						["providers"] = {	-- @blizzard ANSWER FOR YOUR CRIMES
-							{ "n", 87207 },	-- Trader Joseph
-							{ "n", 87208 },	-- Trader Joseph
-							{ "n", 87209 },	-- Trader Joseph
-							{ "n", 87210 },	-- Trader Joseph
-							{ "n", 87211 },	-- Trader Joseph
-							{ "n", 87212 },	-- Trader Joseph
-							{ "n", 87213 },	-- Trader Joseph
-							{ "n", 87214 },	-- Trader Joseph
-							{ "n", 87215 },	-- Trader Joseph
-							{ "n", 87216 },	-- Trader Joseph
-							{ "n", 87217 },	-- Trader Joseph
-							{ "n", 91071 },	-- Trader Joseph
+						["qgs"] = {
+							87207,	-- Trader Joseph
+							87208,	-- Trader Joseph
+							87209,	-- Trader Joseph
+							87210,	-- Trader Joseph
+							87211,	-- Trader Joseph
+							87212,	-- Trader Joseph
+							87213,	-- Trader Joseph
+							87214,	-- Trader Joseph
+							87215,	-- Trader Joseph
+							87216,	-- Trader Joseph
+							87217,	-- Trader Joseph
+							91071,	-- Trader Joseph
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37062, {	-- Tricks of the Trade
-						["races"] = HORDE_ONLY,
-						["providers"] = {	-- @blizzard ANSWER FOR YOUR CRIMES
-							{ "n", 86803 },	-- Fayla Fairfeather
-							{ "n", 87112 },	-- Fayla Fairfeather
-							{ "n", 87113 },	-- Fayla Fairfeather
-							{ "n", 87114 },	-- Fayla Fairfeather
-							{ "n", 87115 },	-- Fayla Fairfeather
-							{ "n", 87116 },	-- Fayla Fairfeather
-							{ "n", 87117 },	-- Fayla Fairfeather
-							{ "n", 87118 },	-- Fayla Fairfeather
-							{ "n", 87119 },	-- Fayla Fairfeather
-							{ "n", 87120 },	-- Fayla Fairfeather
-							{ "n", 87121 },	-- Fayla Fairfeather
-							{ "n", 91070 },	-- Fayla Fairfeather
+						["qgs"] = {
+							86803,	-- Fayla Fairfeather
+							87112,	-- Fayla Fairfeather
+							87113,	-- Fayla Fairfeather
+							87114,	-- Fayla Fairfeather
+							87115,	-- Fayla Fairfeather
+							87116,	-- Fayla Fairfeather
+							87117,	-- Fayla Fairfeather
+							87118,	-- Fayla Fairfeather
+							87119,	-- Fayla Fairfeather
+							87120,	-- Fayla Fairfeather
+							87121,	-- Fayla Fairfeather
+							91070,	-- Fayla Fairfeather
 						},
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(VENDORS, {
 					n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 						["races"] = HORDE_ONLY,
 						["crs"] = { 86698 },	-- Kil'rip
-						["g"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
+						["groups"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(119159, {	-- Happy Fun Skull
@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								}),
 								i(119166, {	-- Contract: Cacklebone
 									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
+									["groups"] = {
 										follower(458),	-- Cacklebone
 									},
 								}),
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					n(85427, {	-- Maaria <Sha'tari Defense Quartermaster>
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_SHATARI_DEFENSE, {
+						["groups"] = bubbleDownClassicRep(FACTION_SHATARI_DEFENSE, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(118669),	-- Sha'tari Elixir
@@ -197,7 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}, {	-- Revered
 								i(119167, {	-- Contract: Vindicator Heluun
 									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
+									["groups"] = {
 										follower(458),	-- Vindicator Heluun
 									},
 								}),

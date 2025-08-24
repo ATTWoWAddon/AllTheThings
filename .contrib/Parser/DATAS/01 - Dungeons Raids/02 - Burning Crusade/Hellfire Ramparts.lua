@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(248, {	-- Hellfire Ramparts
 		["lore"] = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
 		-- #if BEFORE MOP
@@ -93,13 +93,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 				{	-- Weaken the Ramparts
 					["allianceQuestData"] = q(9575, {	-- Weaken the Ramparts (A)
-						["qg"] = 17557,	-- Lieutenant Chadwick
 						["sourceQuest"] = 10142,	-- The Path of Anguish
+						["qg"] = 17557,	-- Lieutenant Chadwick
 						["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
 					}),
 					["hordeQuestData"] = q(9572, {	-- Weaken the Ramparts (H)
-						["qg"] = 17493,	-- Stone Guard Stok'ton
 						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["qg"] = 17493,	-- Stone Guard Stok'ton
 						["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
 					}),
 					["timeline"] = { REMOVED_4_3_0 },
@@ -149,14 +149,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(528, {	-- Omor the Unscarred
 					["creatureID"] = 17308,
 					["groups"] = {
-						ach(647, {	-- Hellfire Ramparts
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								9575,	-- Weaken the Ramparts
-								9572,	-- Weaken the Ramparts
-							},
-							-- #endif
-						}),
+						ach(647),	-- Hellfire Ramparts
 						i(24069),	-- Crystalfire Staff
 						i(24094),	-- Heart Fire Warhammer
 						-- #if AFTER 7.3.5
@@ -253,14 +246,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				-- #endif
 				["lvl"] = lvlsquish(70, 70, 30),
 				["groups"] = {
-					ach(667, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Heroic: Hellfire Ramparts
+					ach(667, {	-- Heroic: Hellfire Ramparts
 						crit(3705, {	-- Omor the Unscarred
 							["_encounter"] = { 528, DIFFICULTY.DUNGEON.HEROIC },
 						}),
 						crit(3816, {	-- Vazruden
 							["_encounter"] = { 529, DIFFICULTY.DUNGEON.HEROIC },
 						}),
-					})),
+					}),
 					ach(5067, {	-- Heroic: Hellfire Ramparts Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -399,11 +392,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 						},
 					}),
-				}
+				},
 			}),
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(248, {

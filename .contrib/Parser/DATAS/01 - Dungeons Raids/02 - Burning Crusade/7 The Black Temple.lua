@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_2_1_0 } }, {
 	inst(751, {	-- The Black Temple
 		["lore"] = "When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",
 		["coord"] = { 71.0, 46.5, SHADOWMOON_VALLEY },	-- Black Temple, Shadowmoon Valley
@@ -31,8 +31,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			}),
 			n(QUESTS, {
 				q(10985, {	-- A Distraction for Akama (legacy version)
-					["qg"] = 18528,	-- Xi'ri
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
+					["qg"] = 18528,	-- Xi'ri
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -49,9 +49,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 				-- #if AFTER 3.0.1
 				q(13429, {	-- A Distraction for Akama
-					["qg"] = 18528,	-- Xi'ri
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
+					["qg"] = 18528,	-- Xi'ri
 					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
 					["timeline"] = { ADDED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -61,14 +61,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 				-- #endif
 				q(10949, {	-- Entry Into the Black Temple
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10948,	-- The Hostage Soul
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10957, {	-- Redemption of the Ashtongue
-					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10958,	-- Seek Out the Ashtongue
+					["qg"] = 23158,	-- Seer Kanai
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
@@ -78,8 +78,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					},
 				}),
 				q(10958, {	-- Seek Out the Ashtongue
-					["qg"] = 18528,	-- Xi'ri
-					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = {
 						10985,	-- A Distraction for Akama
 						-- #if AFTER 3.0.1
@@ -89,11 +87,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					-- #if AFTER 3.0.1
 					["sourceQuestNumRequired"] = 1,
 					-- #endif
+					["qg"] = 18528,	-- Xi'ri
+					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10959, {	-- The Fall of the Betrayer
-					["qg"] = 23158,	-- Seer Kanai
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
+					["qg"] = 23158,	-- Seer Kanai
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
@@ -104,8 +104,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					},
 				}),
 				q(10948, {	-- The Hostage Soul
-					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10947,	-- An Artifact From the Past
+					["qg"] = 21700,	-- Akama
 					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
@@ -169,12 +169,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(32754),	-- Pattern: Bracers of Nimble Thought
+				i(32754),	-- Pattern: Bracers of Nimble Thought (RECIPE!)
 				i(32744),	-- Pattern: Bracers of Renewed Life (RECIPE!)
 				i(32750),	-- Pattern: Living Earth Bindings (RECIPE!)
 				i(32749),	-- Pattern: Shoulders of Lightning Reflexes (RECIPE!)
 				i(32747),	-- Pattern: Swiftstrike Shoulders (RECIPE!)
-				i(32753),	-- Pattern: Swiftheal Mantle
+				i(32753),	-- Pattern: Swiftheal Mantle (RECIPE!)
 				i(32738),	-- Plans: Dawnsteel Bracers (RECIPE!)
 				i(32737),	-- Plans: Swiftsteel Shoulders (RECIPE!)
 				-- #if BEFORE WRATH
@@ -404,8 +404,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						["creatureID"] = 22917,
 						["groups"] = {
 							ach(697, {	-- The Black Temple
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10959,	-- The Fall of the Betrayer
+								-- #if NOT ANYCLASSIC
+								-- CRIEVE NOTE: This achievement can be earned ahead of time by completing 'The Fall of the Betrayer'.
+								["timeline"] = { ADDED_3_0_2 },
 								-- #endif
 							}),
 							ach(5091, {	-- The Black Temple Guild Run
@@ -416,27 +417,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 									{ "i", 32837 },	-- Warglaive of Azzinoth (LEGENDARY! MH)
 									{ "i", 32838 },	-- Warglaive of Azzinoth (LEGENDARY! OH)
 								},
-								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
-								-- #if BEFORE WRATH
-								["OnUpdate"] = [[function(t)
-									local collected = true;
-									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and ]] .. WOWAPI_GetItemCount("provider[2]") .. [[ == 0 then
-											collected = false;
-											break;
-										end
-									end
-									t:SetAchievementCollected(t.achievementID, collected);
-								end]],
-								-- #else
 								["description"] = "Once you have both, simply equip them for this achievement.",
-								-- #endif
+								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
 							})),
 							i(122196, {	-- Music Roll: The Burning Legion
 								["timeline"] = { ADDED_6_1_0 },
 							}),
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837)),	-- Warglaive of Azzinoth (LEGENDARY! MH)
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838)),	-- Warglaive of Azzinoth (LEGENDARY! OH)
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837, {	-- Warglaive of Azzinoth (LEGENDARY! MH)
+								-- #if AFTER 11.1.7
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
+								["collectible"]=false,
+								-- #endif
+							})),
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838, {	-- Warglaive of Azzinoth (LEGENDARY! OH)
+								-- #if AFTER 11.1.7
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
+								["collectible"]=false,
+								-- #endif
+							})),
 							i(31089, {	-- Chestguard of the Forgotten Conqueror
 								["classes"] = { PALADIN, PRIEST, WARLOCK },
 							}),
@@ -466,4 +464,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			-- #endif
 		},
 	}),
-})));
+}))));

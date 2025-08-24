@@ -1,0 +1,51 @@
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[469911] = {
+		readable = "Ways of the Priesthood",
+		text = {
+			en = "Ways of the Priesthood",
+			es = "Ways of the Priesthood",
+			mx = "Ways of the Priesthood",
+			de = "Ways of the Priesthood",
+			fr = "Ways of the Priesthood",
+			it = "Ways of the Priesthood",
+			pt = "Ways of the Priesthood",
+			ru = "Ways of the Priesthood",
+			ko = "Ways of the Priesthood",
+			cn = "Ways of the Priesthood",
+			tw = "Ways of the Priesthood",
+		},
+	},
+	[469979] = {
+		readable = "K'areshi Priest's Bowl",
+		text = {
+			en = "K'areshi Priest's Bowl",
+			es = "K'areshi Priest's Bowl",
+			mx = "K'areshi Priest's Bowl",
+			de = "K'areshi Priest's Bowl",
+			fr = "K'areshi Priest's Bowl",
+			it = "K'areshi Priest's Bowl",
+			pt = "K'areshi Priest's Bowl",
+			ru = "K'areshi Priest's Bowl",
+			ko = "K'areshi Priest's Bowl",
+			cn = "K'areshi Priest's Bowl",
+			tw = "K'areshi Priest's Bowl",
+		},
+	},
+	[473973] = {
+		readable = "Blood of K'aresh",
+		text = {
+			en = "Blood of K'aresh",
+			es = "Blood of K'aresh",
+			mx = "Blood of K'aresh",
+			de = "Blood of K'aresh",
+			fr = "Blood of K'aresh",
+			it = "Blood of K'aresh",
+			pt = "Blood of K'aresh",
+			ru = "Blood of K'aresh",
+			ko = "Blood of K'aresh",
+			cn = "Blood of K'aresh",
+			tw = "Blood of K'aresh",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

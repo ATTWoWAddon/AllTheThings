@@ -111,24 +111,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(1489, {	-- Hamuul Runetotem
+						["sourceQuest"] = 880,	-- Altered Beings
 						["providers"] = {
 							{ "n", 3448 },	-- Tonga Runetotem
 							{ "i", 10414 },	-- Sample Snapjaw Shell
 						},
-						["sourceQuest"] = 880,	-- Altered Beings
 						["coord"] = { 52.3, 31.9, THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					}),
 					q(3370, {	-- In Nightmares [A]
-						["qg"] = 8418,	-- Falla Sagewind
-						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
+						["sourceQuest"] = 6981,	-- The Glowing Shard
+						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
-						["lvl"] = 15,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 15,
 						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
@@ -142,13 +142,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(3369, {	-- In Nightmares [H]
-						["qg"] = 8418,	-- Falla Sagewind
-						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
+						["sourceQuest"] = 6981,	-- The Glowing Shard
+						["qg"] = 8418,	-- Falla Sagewind
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
-						["lvl"] = 15,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 15,
 						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
@@ -162,8 +162,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(914, {	-- Leaders of the Fang
-						["qg"] = 5770,	-- Nara Wildmane
 						["sourceQuest"] = 1490,	-- Nara Wildmane
+						["qg"] = 5770,	-- Nara Wildmane
 						["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -190,8 +190,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(1490, {	-- Nara Wildmane
-						["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 						["sourceQuest"] = 1489,	-- Hamuul Runetotem
+						["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 						["coord"] = { 74.7, 30.2, THUNDER_BLUFF },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -229,8 +229,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(1491, {	-- Smart Drinks
-						["qg"] = 3446,	-- Mebok Mizzyrix
 						["sourceQuest"] = 865,	-- Raptor Horns
+						["qg"] = 3446,	-- Mebok Mizzyrix
 						["coord"] = { 62.4, 37.6, THE_BARRENS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 13,
@@ -304,8 +304,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			prof(SKINNING, {
-				i(6470),	-- Deviate Scale
-				i(6471),	-- Perfect Deviate Scale
+				i(6470, {	-- Deviate Scale
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
+				}),
+				i(6471, {	-- Perfect Deviate Scale
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
+				}),
 			}),
 			e(474, {	-- Lady Anacondra
 				["creatureID"] = 3671,
@@ -405,11 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					ach(630, {	-- Wailing Caverns
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 6981,	-- The Glowing Shard
-						-- #endif
-					}),
+					ach(630),	-- Wailing Caverns
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

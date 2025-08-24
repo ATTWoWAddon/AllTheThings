@@ -123,75 +123,87 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(QUESTS, {
 					q(36171, {	-- Botani Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36653, {	-- Botani Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36376, {	-- Goren Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(35142, {	-- Goren Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36655, {	-- Iron Horde Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(35935, {	-- Iron Horde Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36650, {	-- Ogre Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36623, {	-- Ogre Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36830, {	-- Shadow Council Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36831, {	-- Shadow Council Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36412, {	-- Shadowmoon Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 					q(36414, {	-- Shadowmoon Invasion!
-						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 100,
 					}),
 				}),
@@ -200,7 +212,7 @@ root(ROOTS.ExpansionFeatures,
 						["questID"] = 37638,
 						["isWeekly"] = true,
 						["description"] = "Bronze Challenge",
-						["g"] = {
+						["groups"] = {
 							i(115418),	-- Blood Gutter Greatsword
 							i(115417),	-- Chadrik's Lost Axe
 							i(115422),	-- Grimthorn's Fearsome Halberd
@@ -240,7 +252,7 @@ root(ROOTS.ExpansionFeatures,
 							{ "select", "itemID", 120320 },	-- Select Invader's Abandoned Sack (Bronze Rewards)
 							{ "pop" },						-- pop the Item container
 						},
-						["g"] = {
+						["groups"] = {
 							i(116779),	-- Garn Steelmaw (MOUNT!)
 							i(116673),	-- Giant Coldsnout (MOUNT!)
 							i(116663),	-- Shadowhide Pearltusk (MOUNT!)
@@ -255,7 +267,7 @@ root(ROOTS.ExpansionFeatures,
 							{ "select", "itemID", 116980 },	-- Select Invader's Forgotten Treasure (Gold Rewards)
 							{ "pop" },						-- pop the Item container
 						},
-						["g"] = {
+						["groups"] = {
 							i(122186),	-- Blackrock Ironweave Cloak
 							i(122178),	-- Fire-Smothering Greatcloak
 							i(122181),	-- Gorian Strategy Map

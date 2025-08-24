@@ -3,8 +3,11 @@
 -----------------------------------------------------
 local CLOAK_OF_INFINITE_BONUSIDS = function()
 	local cloaks = {};
+	local ItemAppearanceModifierID = 160;
 	for bonusID=10973,11028,1 do
+		ItemAppearanceModifierID = ItemAppearanceModifierID + 1;
 		table.insert(cloaks, i(210333, {	-- Cloak of Infinite Potential
+			["ItemAppearanceModifierID"] = ItemAppearanceModifierID,
 			["bonusID"] = bonusID,
 		}));
 	end

@@ -8,6 +8,8 @@ DROPS = createHeader({
 	icon = [[~_.asset("Category_WorldDrops")]],
 	text = {
 		en = "Drops",
+		es = "Botín",
+		mx = "Botin",
 		ru = [[~BATTLE_PET_SOURCE_1]],	-- In English, this is "Drop"
 		cn = "掉落",
 	},

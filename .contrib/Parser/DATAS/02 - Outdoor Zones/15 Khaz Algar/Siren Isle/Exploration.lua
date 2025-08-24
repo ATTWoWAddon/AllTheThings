@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		explorationHeader({
 			visit_exploration(15538,{coord={49.1,77.1,SIREN_ISLE}}),	-- Deadfin Mire
@@ -19,4 +19,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			visit_exploration(15840,{coord={43.8,24.4,SIREN_ISLE}}),	-- The Sacred Hollow
 		}),
 	}),
-})));
+}));

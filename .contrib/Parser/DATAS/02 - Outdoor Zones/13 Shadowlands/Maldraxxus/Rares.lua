@@ -8,32 +8,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "The rare that is summoned is determined by the combination of Miscible Ooze (yellow), Mephitic Goo (blue), and Viscous Oil (red) thrown into the pool.",
 				["coord"] = { 58.6, 74.2, MALDRAXXUS },
 				["modelScale"] = 2,
-				["g"] = sharedData({ ["isDaily"] = true }, {
+				["groups"] = sharedData({ ["isDaily"] = true }, {
 					n(157310, {	-- Boneslurp
 						["description"] = "Requires an equal majority of Blue & Yellow slime.",
 						["questID"] = 61722,
-						["g"] = {
+						["groups"] = {
 							i(184185),	-- Grunge-Caked Collarbone
-						}
+						},
 					}),
 					n(157311, {	-- Burnblister
 						["description"] = "Requires an equal majority of Red & Yellow slime.",
 						["questID"] = 61723,
-						["g"] = {
+						["groups"] = {
 							i(184175),	-- Bone-Blistering Wand
 						},
 					}),
 					n(157308, {	-- Corrupted Sediment
 						["description"] = "Requires a majority of Blue slime.",
 						["questID"] = 61719,
-						["g"] = {
+						["groups"] = {
 							i(184302),	-- Residue-Coated Muck Waders
 						},
 					}),
 					n(157307, {	-- Gelloh
 						["description"] = "Requires a majority of Yellow slime.",
 						["questID"] = 61721,
-						["g"] = {
+						["groups"] = {
 							i(182287),	-- Eternally Preserved Scarab
 							i(183516),	-- Stained Bloodfused Mantle
 						},
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(157312, {	-- Oily Invertebrate
 						["description"] = "Requires an equal portion of Red, Blue, & Yellow slime.",
 						["questID"] = 61724,
-						["g"] = {
+						["groups"] = {
 							i(184300),	-- Fused Spineguard
 							i(181270),	-- Invertebrate Oil (PET!)
 							i(184155),	-- Recovered Containment Pack
@@ -50,14 +50,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(157294, {	-- Pulsing Leech
 						["description"] = "Requires a majority of Red slime.",
 						["questID"] = 61718,
-						["g"] = {
+						["groups"] = {
 							i(184279),	-- Siphoning Blood-Drinker
 						},
 					}),
 					n(157309, {	-- Violet Mistake
 						["description"] = "Requires an equal majority of Red & Blue slime.",
 						["questID"] = 61720,
-						["g"] = {
+						["groups"] = {
 							i(182079),	-- Hulking Deathroc (MOUNT!)
 							i(184301),	-- Twenty-Loop Violet Girdle
 						},
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.Achievement, 14372, {	-- Theater of Pain
 				["description"] = "These mobs all spawn in the Theater of Pain, a free-for-all arena in the middle of Maldraxxus.",
 				["questID"] = 62786,	-- seems to trigger on first ToP rare killed each day
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							162873,	-- Azmogal
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							162853,	-- Unbreakable Urtz
 							162872,	-- Xantuth the Blighted
 						},
-						["g"] = {
+						["groups"] = {
 							i(184062),	-- Battle-Bound Warhound (MOUNT!)
 						},
 					}),
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162727, {	-- Bubbleblood
 				["coord"] = { 52.2, 35.1, MALDRAXXUS },
 				["questID"] = 58870,
-				["g"] = {
+				["groups"] = {
 					i(184476),	-- Regenerating Slime Vial (TOY!)
 					i(184290),	-- Blood-Dyed Bonesaw
 					i(184154),	-- Grungy Containment Pack
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(159105, {	-- Collector Kash
 				["coord"] = { 49.8, 24.6, MALDRAXXUS },
 				["questID"] = 58005,
-				["g"] = {
+				["groups"] = {
 					i(184188),	-- Collector's Corpse Gambrel
 					i(183692, {	-- Jagged Bonesaw
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(157058, {	-- Corspecutter Moroc
 				["coord"] = { 26.6, 27.2, MALDRAXXUS },
 				["questID"] = 58335,
-				["g"] = {
+				["groups"] = {
 					i(184177),	-- Grotesque Goring Pick
 					i(183833),	-- Kash's Bag of Junk
 					i(184176),	-- Moroc's Boneslicing Warglaive
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162711, {	-- Deadly Dapperling
 				["coord"] = { 76.8, 57.0, MALDRAXXUS },
 				["questID"] = 58868,
-				["g"] = {
+				["groups"] = {
 					i(181263),	-- Shy Melvin (PET!)
 					i(184280),	-- Dapper Threads
 					i(184224),	-- Dapperling Seeds
@@ -143,14 +143,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 48.2, 51.6, MALDRAXXUS },
 				},
 				["questID"] = 58878,
-				["g"] = {
+				["groups"] = {
 					i(182191),	-- Slobber-Soaked Chew Toy
 				},
 			}),
 			n(162669, {	-- Devour'us
 				["coord"] = { 45.6, 28.4, MALDRAXXUS },
 				["questID"] = 58835,
-				["g"] = {
+				["groups"] = {
 					i(184178),	-- Worldrending Claymore
 				},
 			}),
@@ -162,14 +162,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 57.6, 51.6, MALDRAXXUS },
 				["questID"] = 58837,
-				["g"] = {
+				["groups"] = {
 					i(182196),	-- Arbalest of the Colossal Predator
 				},
 			}),
 			n(161105, {	-- Indomitable Schmitd
 				["coord"] = { 39.8, 43.4, MALDRAXXUS },
 				["questID"] = 58332,
-				["g"] = {
+				["groups"] = {
 					i(182192),	-- Knee-Obstructing Legguards
 					i(174070),	-- Indomitable Hide
 				},
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(174108, {	-- Necromantic Anomaly
 				["coord"] = { 73.0, 29.2, MALDRAXXUS },
 				["questID"] = 62369,
-				["g"] = {
+				["groups"] = {
 					i(184174),	-- Clasp of Death
 					i(181810, {	-- Phylactery of the Dead Conniver
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162690, {	-- Nerissa Heartless
 				["coord"] = { 65.8, 36.0, MALDRAXXUS },
 				["questID"] = 58851,
-				["g"] = {
+				["groups"] = {
 					i(182084),	-- Gorespine (MOUNT!)
 					i(184179),	-- Lichborn Commander's Boneblade
 					i(174076),	-- Necromantic Oil
@@ -196,17 +196,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162767, {	-- Pesticide
 				["coord"] = { 53.8, 61.0, MALDRAXXUS },
 				["questID"] = 58875,
-				["g"] = {
+				["groups"] = {
 					i(182205),	-- Scarab-Shell Faceguard
 				},
 			}),
 
 			n(159753, {	-- Ravenomous
-				["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
+				["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare. After flying around for a little while, it will land and be attackable.",
 				["coord"] = { 54.0, 18.4, MALDRAXXUS },
 				["crs"] = { 159901 },	-- Boneweave Spiderling
 				["questID"] = 58004,
-				["g"] = {
+				["groups"] = {
 					i(181283),	-- Foulwing Buzzer (PET!)
 					i(184184),	-- Ravenomous's Acid-Tipped Stinger
 				},
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(158406, {	-- Scunner
 				["coord"] = { 62.1, 75.8, MALDRAXXUS },
 				["questID"] = 58006,
-				["g"] = {
+				["groups"] = {
 					i(181267),	-- Writhing Spine (PET!)
 					i(183833),	-- Kash's Bag of Junk
 					i(184287),	-- Scum-Caked Epaulets
@@ -229,16 +229,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 55.5, 23.6, MALDRAXXUS },
 				["questID"] = 58003,
-				["g"] = {
+				["groups"] = {
 					i(181172),	-- Boneweave Hatchling (PET!)
 					i(184289),	-- Spindlefang Spellblade
 				},
 			}),
 			n(162528, {	-- Smorgas the Feaster
-				["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare.  Clicking the object will aggro all the Peaceful Bloodlice in the area.",
+				["description"] = "Click the |cFFFFFFFFBloody Lump|r for a chance to spawn the rare. Clicking the object will aggro all the Peaceful Bloodlice in the area.",
 				["coord"] = { 42.5, 53.4, MALDRAXXUS },
 				["questID"] = 58768,
-				["g"] = {
+				["groups"] = {
 					i(181265),	-- Corpselouse Larva (PET!)
 					i(181266),	-- Feasting Larva (PET!)
 					i(184299),	-- Goresoaked Carapace
@@ -252,7 +252,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 44.6, 52.0, MALDRAXXUS },
 				["questID"] = 58783,
 				["description"] = "You must be a Necrolord & have the Abomination building construct \"Neena\" with you otherwise the |cFFFFFFFFBonehoof Tauralus Mount|r can't drop. It's not required to use the extra action button to loot Tahonta.",
-				["g"] = {
+				["groups"] = {
 					i(182075, {	-- Bonehoof Tauralus (MOUNT!)
 						["description"] = "You must be a Necrolord & have the Abomination building construct \"Neena\" with you for this mount to have a chance of dropping. It's not required to use the extra action button to loot Tahonta.",
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 50.7, 20.1, MALDRAXXUS },
 				["questID"] = 58091,
-				["g"] = {
+				["groups"] = {
 					i(184193),	-- Callus-Forged Hook
 					i(184186),	-- Flesh-Fishing Hook
 					i(184192),	-- Pristine Alabaster Gorer
@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 162220 },	-- Razorthread Weaver
 				["coord"] = { 24.0, 43.1, MALDRAXXUS },
 				["questID"] = 58678,
-				["g"] = {
+				["groups"] = {
 					i(184180),	-- Leeda's Unrefined Mask
 				},
 			}),
@@ -290,17 +290,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 162818 },	-- Wartusk
 				["coord"] = { 34.4, 79.4, MALDRAXXUS },
 				["questID"] = 58889,
-				["g"] = {
+				["groups"] = {
 					i(182085),	-- Blisterback Bloodtusk (MOUNT!)
 					i(184288),	-- Ruthless Warlord's Barrier
 				},
 			}),
 			n(157125, {	-- Zargox the Reborn
-				["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him).  Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
+				["description"] = "Get an |cFFFFFFFFAni-Matter Orb|r from Synder Sixfold at |cFFFFFFFF26.3, 42.7|r (either while doing the weekly quest |cFF349cffAni-Matter Animator|r, or speak to Synder afterward to get another orb from him). Use it to reanimate soldiers near the rare's spawnpoint until a yellow dot appears on your minimap, indicating that Zargox is available to summon.",
 				["crs"] = { 157124 },	-- Bone Mass
 				["coord"] = { 29.0, 51.6, MALDRAXXUS },
 				["questID"] = 59290,
-				["g"] = {
+				["groups"] = {
 					i(183690, {	-- Ashen Ink
 						["description"] = "This may drop for any character on your account once the toy 'Acolyte's Guise' has been learned by a Necrolord character.",
 					}),

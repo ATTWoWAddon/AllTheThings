@@ -4,13 +4,85 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(QUESTS, {
+			------ Catalyst Related ------
+			q(82296, {	-- The Power of Creation
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.3, DORNOGAL },
+			}),
+			q(82651, {	-- Omens Unified
+				["providers"] = {
+					{ "n", 223533 },	-- Custodian Khubon
+					{ "i", 211297 },	-- Fractured Spark of Omens
+				},
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+				["groups"] = {
+					i(211297),	-- Fractured Spark of Omens
+				},
+			}),
+			q(86369, {	-- A Sparkling Fortune
+				["providers"] = {
+					{ "n", 223533 },	-- Custodian Khubon
+					{ "i", 230905 },	-- Fractured Spark of Fortunes
+				},
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+				["groups"] = {
+					i(230905),	-- Fractured Spark of Fortunes
+				},
+			}),
+			q(90660, {	-- A Golden Circumstance
+				["sourceQuest"] = 86369,	-- A Sparkling Fortune
+				["provider"] = { "n", 223533 },	-- Custodian Khubon
+				["coord"] = { 49.8, 54.1, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+				["groups"] = {
+					i(230905),	-- Fractured Spark of Fortunes
+				},
+			}),
+			q(91624, {	-- Spark of Starlight
+				["providers"] = {
+					{ "n", 223533 },	-- Custodian Khubon
+					{ "i", 231757 },	-- Fractured Spark of Starlight
+				},
+				["timeline"] = { ADDED_11_2_0 },
+				["groups"] = {
+					i(231757),	-- Fractured Spark of Starlight
+				},
+			}),
+			------ Crests ------
+			--- TODO: sort out in next push
+			q(86363, {	-- The Better Part of Valorstones
+				--["sourceQuests"] = { XX },	-- ??
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			}),
+			q(86364, {	-- Crests from the Ether
+				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["groups"] = {
+					i(236953),	-- Crimson Valorstone
+				},
+			}),
+			q(86365, {	-- Crest Transmutation
+				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+				["groups"] = {
+					i(236953),	-- Crimson Valorstone
+				},
+			}),
 			------ Miscellaneous ------
 			q(86401, {	-- Crests Transmutation
 				["sourceQuests"] = { 86399 },	-- Don't Undermine the Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
 				},
@@ -23,9 +95,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(86399, {	-- Don't Undermine the Crests
 				["sourceQuests"] = { 86396 },	-- The Best Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
 				},
@@ -34,50 +106,63 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 229128 },	-- Valeera Sanguinar
 				["coord"] = { 61.0, 5.4, DORNOGAL },
 				["classes"] = { MAGE },
-				["g"] = {
+				["groups"] = {
 					i(227710),	-- Tome of Polymorph: Mosswool (CI!)
 				},
 			}),
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(225652),	-- Enchant Ring - Glimmering Haste
 					i(226245),	-- Hollow Ring
 				},
 			}),
 			q(86396, {	-- The Best Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 			}),
 			q(82042, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { REMOVED_11_1_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { REMOVED_11_1_0 },
 			}),
 			q(84490, {	-- The Great Vault
 				["provider"] = { "n", 229336 },	-- Overseer Hyggred
 				["coord"] = { 52.1, 45.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(228378),	-- Pristine Council's Seal (QI!)
 				},
 			}),
-			q(82050, {	-- The Hardbringer of Crests
+			q(82050, {	-- The Harbinger of Crests
 				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
-					i(221269),	-- Crimson Valorstone
-				},
+				["timeline"] = { REMOVED_11_1_0 },
+				["groups"] = { i(221269) },	-- Crimson Valorstone
 			}),
 			q(82059, {	-- Transmutation Station
-				["sourceQuests"] = { 82050 },	-- The Hardbringer of Crests
+				["sourceQuests"] = { 82050 },	-- The Harbinger of Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
-					i(221269),	-- Crimson Valorstone
-				},
+				["timeline"] = { REMOVED_11_1_0 },
+				["groups"] = { i(221269) },	-- Crimson Valorstone
+			}),
+			-- Ultra Prime is likely one-time for the 3x chips, regular quest will follow other weeks
+			q(91205, {	-- Ultra Prime Deluxe Turbo-Boost: Powerhouse Challenges
+				["provider"] = { "o", 525434 },	-- Bounty: Liberation of Undermine
+				["coord"] = { 52.4, 45.9, DORNOGAL },
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+				["isWeekly"] = true,	-- this quest was also reset by blizz for some reason
+				["groups"] = { i(237502) },	-- Puzzling Cartel Chip x3
+			}),
+			q(89039, {	-- Turbo-Boost: Powerhouse Challenges
+				["provider"] = { "o", 525434 },	-- Bounty: Liberation of Undermine
+				["coord"] = { 52.4, 45.9, DORNOGAL },
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+				["isWeekly"] = true,
+				["groups"] = { i(237502) },	-- Puzzling Cartel Chip
 			}),
 		}),
 		------ Alts ------
@@ -170,7 +255,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["maps"] = { VAULT_OF_MEMORY },
-				["g"] = {
+				["groups"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},
 			}),
@@ -179,7 +264,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["maps"] = { VAULT_OF_MEMORY },
-				["g"] = {
+				["groups"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},
 			}),
@@ -205,6 +290,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
 				q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 				q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
+				q(91306, {["timeline"] = {ADDED_11_1_7}}),	-- Flags first entry to Dornogal, cause unknown
 				-- Alt intro skip
 				q(84366),	-- Skipping the leveling campaign from Brann in Dornogal
 				q(83621),	-- can be used right after turn in 81930 or 78713 (The War Within)
@@ -214,6 +300,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(85588),	-- provided ring + enchant (spellID 469629)
 				-- 86401 (Crests Transmutation)
 				q(86400, {["timeline"] = {ADDED_11_1_0}}),	-- provided 15x Carved Undermine Crest
+				-- 86365 (Crests Transmutation)
+				q(91744, {["timeline"] = {ADDED_11_2_0}}),	-- provided 15x Carved Ethereal Crest
 			}),
 		}),
 	}),

@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1029,	-- Waycrest Dimension
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(ZONE_DROPS, {
 				i(168143, {	-- Purposefully Potent Potion
 					["crs"] = {
@@ -30,8 +30,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			n(QUESTS, {
 				q(50990, {	-- Cutting Edge Poultry Science
-					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
-					["g"] = {
+					["description"] = "This quest pops up when killing mobs in the kitchen. It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
+					["groups"] = {
 						i(160940),	-- Vengeful Chicken (PET!)
 					},
 				}),
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						131823,	-- Sister Malady
 						131824,	-- Sister Malady
 					},
-					["g"] = {
+					["groups"] = {
 						i(159133),	-- Jagged Iris Sica
 						i(159669),	-- Solena's Watchful Collection
 						i(159340),	-- Bracers of Dreadful Maladies
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						131667,	-- Soulbound Goliath
 					},
-					["g"] = {
+					["groups"] = {
 						i(159659),	-- Sinister Wicker Talons
 						i(159282),	-- Drust-Thatched Wristwraps
 						i(159399),	-- Thornshaper Mitts
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						133361,	-- Wasting Servant
 						136541,	-- Bile Oozing
 					},
-					["g"] = {
+					["groups"] = {
 						i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 						i(159660),	-- Servant Splitter
 						i(159294),	-- Raal's Bib
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						131527,	-- Lord Waycrest
 						131545,	-- Lady Waycrest
 					},
-					["g"] = {
+					["groups"] = {
 						i(159661),	-- Soulcharmer's Bludgeon
 						i(159457),	-- Risen Lord's Oversized Gauntlets
 						i(159262),	-- Belt of Undying Devotion
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2129, {	-- Gorak Tul
 					["crs"] = { 131864 },	-- Gorak Tul
-					["g"] = {
+					["groups"] = {
 						ach(12483),	-- Waycrest Manor
 						i(159662),	-- Blightreaper
 						i(159279),	-- Soulfuel Headdress
@@ -134,14 +134,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2125, {	-- Heartsbane Triad
 						["crs"] = {
 							131825,	-- Sister Briar
 							131823,	-- Sister Malady
 							131824,	-- Sister Malady
 						},
-						["g"] = {
+						["groups"] = {
 							i(159133),	-- Jagged Iris Sica
 							i(159669),	-- Solena's Watchful Collection
 							i(159340),	-- Bracers of Dreadful Maladies
@@ -157,7 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							131667,	-- Soulbound Goliath
 						},
-						["g"] = {
+						["groups"] = {
 							i(159659),	-- Sinister Wicker Talons
 							i(159282),	-- Drust-Thatched Wristwraps
 							i(159399),	-- Thornshaper Mitts
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							133361,	-- Wasting Servant
 							136541,	-- Bile Oozing
 						},
-						["g"] = {
+						["groups"] = {
 							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
@@ -189,7 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							131527,	-- Lord Waycrest
 							131545,	-- Lady Waycrest
 						},
-						["g"] = {
+						["groups"] = {
 							i(159661),	-- Soulcharmer's Bludgeon
 							i(159457),	-- Risen Lord's Oversized Gauntlets
 							i(159262),	-- Belt of Undying Devotion
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2129, {	-- Gorak Tul
 						["crs"] = { 131864 },	-- Gorak Tul
-						["g"] = {
+						["groups"] = {
 							ach(12484),	-- Heroic: Waycrest Manor
 							i(159662),	-- Blightreaper
 							i(159279),	-- Soulfuel Headdress
@@ -220,14 +220,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2125, {	-- Heartsbane Triad
 						["crs"] = {
 							131825,	-- Sister Briar
 							131823,	-- Sister Malady
 							131824,	-- Sister Malady
 						},
-						["g"] = {
+						["groups"] = {
 							i(159133),	-- Jagged Iris Sica
 							i(159669),	-- Solena's Watchful Collection
 							i(159340),	-- Bracers of Dreadful Maladies
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2126, {	-- Soulbound Goliath
 						["crs"] = { 131667 },	-- Soulbound Goliath
-						["g"] = {
+						["groups"] = {
 							ach(12495),	-- Run Wild Like a Man On Fire
 							i(159659),	-- Sinister Wicker Talons
 							i(159282),	-- Drust-Thatched Wristwraps
@@ -258,7 +258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							133361,	-- Wasting Servant
 							136541,	-- Bile Oozing
 						},
-						["g"] = {
+						["groups"] = {
 							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
 							i(159660),	-- Servant Splitter
 							i(159294),	-- Raal's Bib
@@ -274,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							131527,	-- Lord Waycrest
 							131545,	-- Lady Waycrest
 						},
-						["g"] = {
+						["groups"] = {
 							i(159661),	-- Soulcharmer's Bludgeon
 							i(159457),	-- Risen Lord's Oversized Gauntlets
 							i(159262),	-- Belt of Undying Devotion
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2129, {	-- Gorak Tul
 						["crs"] = { 131864 },	-- Gorak Tul
-						["g"] = {
+						["groups"] = {
 							ach(12490),	-- Alchemical Romance
 							ach(12488),	-- Mythic: Waycrest Manor
 							ach(13000),	-- Mythic: Waycrest Manor Guild Run

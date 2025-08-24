@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(73148, {	-- Combustible Vegetation
 					["coord"] = { 13.6, 53.6, THE_FORBIDDEN_REACH },
 					["crs"] = {
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						200686,	-- Wildfire
 						200688,	-- Wildfire
 					},
-					["g"] = {
+					["groups"] = {
 						i(202412, {	-- Wildfire (PET!)
 							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
 						}),
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						200684,	-- Vortex
 						200682,	-- Vortex
 					},
-					["g"] = {
+					["groups"] = {
 						i(202413, {	-- Vortex (PET!)
 							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
 						}),
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						200694,	-- Flow
 						200696,	-- Flow
 					},
-					["g"] = {
+					["groups"] = {
 						i(202407, {	-- Flow (PET!)
 							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
 						}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					--	200690,	-- Tremblor
 					--	200692,	-- Tremblor (Epic!)
 					},
-					["g"] = {
+					["groups"] = {
 						i(202411, {	-- Tremblor (PET!)
 							["description"] = "Weaken the boss by defeating battle pets in the area around. Only Rare version of the boss gives this pet.",
 						}),

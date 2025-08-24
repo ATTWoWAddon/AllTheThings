@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures,
 					["questID"] = 34937,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 74.7, 56.8, FROSTWALL },
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures,
 					["questID"] = 35530,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 49.8, 43.6, LUNARFALL },
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
@@ -39,35 +39,35 @@ root(ROOTS.ExpansionFeatures,
 				o(232248, {	-- Pippers' Buried Supplies
 					["questID"] = 35381,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232250, {	-- Pippers' Buried Supplies
 					["questID"] = 35382,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232251, {	-- Pippers' Buried Supplies
 					["questID"] = 35383,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232252, {	-- Pippers' Buried Supplies
 					["questID"] = 35384,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232090, {	-- Spark's Stolen Supplies
 					["questID"] = 35289,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures,
 						{ 48.6, 31.3, FROSTWALL },
 						{ 58.7, 22.0, FROSTWALL },
 					},
-					["g"] = {
+					["groups"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),

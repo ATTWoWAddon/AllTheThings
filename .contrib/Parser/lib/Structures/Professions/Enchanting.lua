@@ -169,6 +169,17 @@ EXPERT_ARTISAN_ENCHANTING
 	{}
 -- #endif
 );
+VANILLA_ENCHANTING_COMMON_RECIPES = {
+	-- #if BEFORE CATA
+	i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+		["isLimited"] = true,
+	}),
+	-- #endif
+	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+};
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
@@ -377,7 +388,7 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDa
 		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 }));
-MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_ENCHANTING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110400, {	-- Enchanting (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -433,7 +444,7 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 }));
 DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
-	["g"] = {
+	["groups"] = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -649,7 +660,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline
 		r(298437),	-- Oceanic Restoration [Rank 2]
 	}),
 }));
-SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENCHANTING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309832),	-- Shadowlands Enchanting
 	r(324750, {["collectible"] = false}),	-- Disenchant
 	n(ARMOR_ENCHANTMENTS, {

@@ -5,11 +5,11 @@
 root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(ZONE_DROPS, {
-			["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here.  If we add more to Zuldazar then we'll look into adjusting this.
+			["maps"] = {	-- Note!! We can list this in these two zones due to them dropping here. If we add more to Zuldazar then we'll look into adjusting this.
 				NAZMIR,
 				VOLDUN,
 			},
-			["g"] = {
+			["groups"] = {
 				i(157782, {	-- Pterrordax Egg
 					["crs"] = {
 						126618,	-- Bloodrage Pterrordax

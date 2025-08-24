@@ -11,6 +11,7 @@ CLASS_TRIAL = createHeader({
 		de = "Klassenprozess",
 		fr = "Essai de Classe",
 		it = "Prova di Classe",
+		mx = "Prueba de Clase",
 		pt = "Teste de Classe",
 		ru = "Испытание класса",
 		ko = "학급 재판",

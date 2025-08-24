@@ -122,7 +122,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				-- Drops
 				i(170489),	-- Mardivas's Handmade Handbag
 				i(170475),	-- Mardivas's Retention Dimension Invention
-				i(170068),	-- Mardivas's Magnificent Desalinating Pouch
+				i(170068, {	-- Mardivas's Magnificent Desalinating Pouch
+					i(169763),	-- Mardivas's Magnificent Desalinating Pouch
+				}),
 				i(170477),	-- Mardivas's Universally Lauded Tote
 				i(169215),	-- Silver Knife (A)
 				i(169216),	-- Silver Knife (H)
@@ -191,7 +193,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				169484,	-- Benthic Spaulders
 				169483,	-- Benthic Treads
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169351),	-- Sandclaw Nestseeker (PET!)
 			},
 		}),

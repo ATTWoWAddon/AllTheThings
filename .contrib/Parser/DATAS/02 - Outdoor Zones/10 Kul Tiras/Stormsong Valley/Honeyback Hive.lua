@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
-			faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+			header(HEADERS.Faction, FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = 3066348,
 				-- Possible to use HQT's to track unlock
@@ -15,36 +15,49 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					{ 62.93, 26.58, STORMSONG_VALLEY },	-- The Hive
 					{ 63.2, 28.5, STORMSONG_VALLEY },	-- First Jelly
 				},
-				["g"] = {
+				["groups"] = {
 					n(FACTIONS, {
 						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
 							["races"] = ALLIANCE_ONLY,
+						}),
+						faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+							["races"] = ALLIANCE_ONLY,
+							["icon"] = 3066348,
 						}),
 					}),
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
+							["groups"] = {
+								i(172145),	-- Unremarkable Spider-Fang
+							},
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155171,	-- The Hivekiller
+							["groups"] = {
+								i(172144),	-- Glittering Stinger
+							},
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155055,	-- Gurg the Hivethief
+							["groups"] = {
+								i(172147),	-- Nugget Honey
+							},
 						}),
 						q(56108, {	-- Leaving the Hive
 							["provider"] = { "n", 155745 },	-- Honeyback Harvester
 							["coord"] = { 62.5, 26.3, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(170069, {	-- Honeyback Harvester (MOUNT!)
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -52,29 +65,38 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						q(56144, {	-- Old Nasha's Paw
 							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155176,	-- Old Nasha
+							["groups"] = {
+								i(172146),	-- Glazed Bear Meat
+							},
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
+							["groups"] = {
+								i(172143),	-- Perforated Spiral Horn
+							},
 						}),
 						q(57670, {	-- Unbeelievable Quality
 							["providers"] = {
 								{ "i", 173533 },	-- Collected Tidebloom Honey
 								{ "i", 172383 },	-- Collected Tidebloom Honey (changes to this version after you get your mount)
 							},
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						}),
 						q(56091, {	-- Usurper's Scent Gland
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155173,	-- Honeyback Usurper
+							["groups"] = {
+								i(172142),	-- Pilfered Beeswax
+							},
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
@@ -192,7 +214,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 61.18, 29.41, STORMSONG_VALLEY },
 						},
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
+							i(169152),	-- Empty Beehive
 							i(168822),	-- Thin Jelly
 						},
 					}),
@@ -200,7 +223,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						["description"] = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
 						["coord"] = { 63.2, 28.5, STORMSONG_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(169106),	-- Thin Jelly
 						},
 					}),
@@ -252,11 +275,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					n(VENDORS, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
-							["g"] = {
+							["groups"] = {
 								i(169109),	-- Beeholder's Goggles
 								i(169141),	-- Butterfly Net
 								i(169395),	-- Summit Zephyr
 							},
+						}),
+						n(155176, {	-- Honeyback Hivemother
+							i(169862, {	-- Alluring Bloom
+								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
+								["cost"] = {
+									{ "i", 168822, 5 },	-- Thin Jelly x5
+								},
+							}),
 						}),
 					}),
 				},
@@ -279,11 +310,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(56735),	-- triggers after going through Barry's initial dialogue after entering the cave
 						q(57528),	-- triggers after feeding first Thin Jelly to Nascent Harvester
 						q(57707),	-- triggered shortly after 57528
-						q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2.  so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER.  wtf is this quest!!!!!
+						q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2. so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER. wtf is this quest!!!!!
 						q(57726),	-- triggers on Honey Smasher kill together with 57674 so putting it here
 						--	( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
 						q(56170),	-- \
-						q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
+						q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event. appears to be repeatable
 						q(57702),	--	/
 						q(57703),	-- /
 						q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
@@ -292,10 +323,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(57699),	-- triggered after Honeyback Harvester event that completed round 29
 						q(56101),	-- triggered after Honeyback Harvester event that completed round 40
 						q(57698),	-- triggered after Honeyback Harvester event that completed round 40
-						q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
+						q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him. looted the jelly after the event, then ran to turn in since i was closeby. fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 						q(57701),	-- same as above
 						q(56107),	-- when nascent bee changed into Juvenile Harvester
 						q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
+						q(56169),	-- On finishing Harvester event
 					}),
 				}),
 			}),

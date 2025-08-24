@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(202713),	-- Scattered Supplies (QI!)
 					},
 				}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 73159 },	-- Exploring Our Past
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 29.2, 53.1, THE_FORBIDDEN_REACH },	-- TODO: old 25.8, 47.9
-					["g"] = {
+					["groups"] = {
 						-- Still available from the One-Time Quests, but since 10.2 its also buyable from a vendor
 						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72952 },	-- The Scary Vault of Ur
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						-- Still available from the One-Time Quests, but since 10.2 its also buyable from a vendor
 						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201517 },	-- Voxarian
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(203656),	-- Odd Device
 					},
 				}),
@@ -132,9 +132,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74282, {	-- Authentic Authorization
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Sealed Letter to Neltharion
-					["isWeekly"] = true,
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["isWeekly"] = true,
+					["groups"] = {
 						i(203381),	-- Sealed Letter to Neltharion
 					},
 				}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(204305),	-- Neltharion Signed Notes
 					},
 				}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 201180 },	-- Cataloger Wulferd
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(204305),	-- Neltharion Signed Notes
 					},
 				}),
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 201714 },	-- Prototype Tinker-Tron
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(203699),	-- Tattered Gift Package
 					},
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 24.7, 52.0, THE_FORBIDDEN_REACH },
 					["cost"] = { { "i", 203701, 1 }, },	-- 1x Neltharion Gift Token
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(203700, {	-- Tattered Gift Package
 							i(204079),	-- Gilded Mechafrog (PET!)
 						}),
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "n", 200456 },	-- Tapper Swindlekeg
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(202294),	-- Recipe Pages
 						-- Still available from Quest, but since 10.2 its also buyable from a vendor
 						-- #if BEFORE 10.2.0
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 202627 },	-- Earthcaller Yevaa
 					["coord"] = { 25.5, 53.2, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(204208),	-- Primordial Earth Core
 						i(204209),	-- Primordial Flame Core
 						i(204210),	-- Primordial Storm Core
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "o", 385952 },	-- Unusual Ring
 					["coord"] = { 29.7, 57.2, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(203460),	-- Onyx Annulet
 					}
 				}),
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 73155 },	-- The Forgotten Ring
 					["provider"] = { "n", 200724 },	-- Researcher Imareth
 					["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(204353),	-- Primordial Jeweler's Kit
 						i(204685),	-- Primordial Anvil
 					},
@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["description"] = "Interact with Recipe Rat. It will only continue negotiations with enough Fine Aged Cheddar. Beware the rat will keep eating even when not negotatiating.\nIt is also possible to continue picking up and using the rat every 5 minutes while within the Vault to obtain scraps without using cheese.",
 					["crs"] = { 202982 },	-- Recipe Rat
 					["cost"] = { { "i", 3927, 200 }, },	-- 200x Fine Aged Cheddar
-					["g"] = {
+					["groups"] = {
 						i(204340),	-- Torn Recipe Scrap
 					},
 				}),
@@ -322,23 +322,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["isWeekly"] = true,
 				},{
 					["icon"] = 4643990,
-					["g"] = {
+					["groups"] = {
 						o(387507, {	-- Azerite Powder Barrel
-							["g"] = {
+							["groups"] = {
 								i(204065),	-- Azerite Powder
 							},
 						}),
 						o(390009, {	-- Box of Rocks
 							["coord"] = { 29.6, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75118,
-							["g"] = {
+							["groups"] = {
 								i(199216),	-- A Box of Rocks
 							},
 						}),
 						o(398770, {	-- Box of Rocks
 							["coord"] = { 31.0, 56.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75484,
-							["g"] = {
+							["groups"] = {
 								i(199216),	-- A Box of Rocks
 							},
 						}),
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75057,
 						}),
 						o(387508, {	-- Igniter Torch
-							["g"] = {
+							["groups"] = {
 								i(204066),	-- Igniter Torch
 							},
 						}),
@@ -396,14 +396,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(385837, {	-- Journal Entry: Silence
 							["coord"] = { 28.5, 55.6, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(202337),	-- Journal Entry: Silence [A]
 								i(204246),	-- Journal Entry: Silence [H]
 							},
 						}),
 						o(390560, {	-- Locked Research Chest
 							["questID"] = 75153,
-							["g"] = {
+							["groups"] = {
 								i(204372),	-- Speck of Bronze Dust
 							},
 						}),
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(384980, {	-- Mysterious Chest
 							["coord"] = { 28.7, 57.8, THE_FORBIDDEN_REACH },
 							["questID"] = 72710,
-							["g"] = {
+							["groups"] = {
 								i(204371),	-- Drop of Blue Dragon Magic
 								i(204360),	-- Strange Petrified Orb
 							},
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(389545, {	-- Mysterious Chest
 							["coord"] = { 28.6, 57.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75051,
-							["g"] = {
+							["groups"] = {
 								i(204374),	-- Emerald Dragon Brooch
 								i(204369),	-- Scrap of Black Dragonscales
 							},
@@ -432,26 +432,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386581, {	-- Neltharion Gift
 							["coord"] = { 25.5, 52.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74507,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386580, {	-- Neltharion Gift Token
 							["coord"] = { 25.6, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74506,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(388905, {	-- Neltharion Toolkit
 							["questID"] = 74993,
-							["g"] = {
+							["groups"] = {
 								i(204278),	-- Nelthation's Toolkit
 							},
 						}),
 						o(386555, {	-- Odd Circular Object
 							["coord"] = { 30.9, 57.5, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(203686),	-- Odd Round Object
 							},
 						}),
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(385028, {	-- Powerful Flask of Renewal
 							["coord"] = { 24.6, 52.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74485,
-							["g"] = {
+							["groups"] = {
 								i(202088),	-- Powerful Flask of Renewal
 							},
 						}),
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(388895, {	-- Random Scribblings
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(204306),	-- Random Scribblings
 							},
 						}),
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(390257, {	-- Stuffed Bear
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75146,
-							["g"] = {
+							["groups"] = {
 								i(204405, {	-- Stuffed Bear (TOY!)
 									-- #if BEFORE TWW
 									["description"] = "This will be a Toy in The War Within.",
@@ -555,36 +555,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["isWeekly"] = true,
 				},{
 					["icon"] = 4643991,
-					["g"] = {
+					["groups"] = {
 						o(386687, {	-- Aged Journal
 							["questID"] = 74610,
-							["g"] = {
+							["groups"] = {
 								i(204814),	-- Aged Journal
 							},
 						}),
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74613,
-							["g"] = {
+							["groups"] = {
 								i(204815),	-- Ambiguous Compendium
 							},
 						}),
 						o(393282, {	-- Balloon Box
 							["questID"] = 75217,
-							["g"] = {
+							["groups"] = {
 								i(169673),	-- Blue Paint Filled Bladder
 								i(169675),	-- Orange Paint Filled Bladder
 							},
 						}),
 						o(393283, {	-- Balloon Box
 							["questID"] = 75218,
-							["g"] = {
+							["groups"] = {
 								i(169674),	-- Green Paint Filled Bladder
 							},
 						}),
 						o(386688, {	-- Blank Tome
 							["questID"] = 74612,
-							["g"] = {
+							["groups"] = {
 								i(204813),	-- Blank Tome
 							},
 						}),
@@ -615,12 +615,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 74512,
 						}),
 						o(386632, {	-- Experimental Dragon Pack
-							["g"] = {
+							["groups"] = {
 								i(203722),	-- Experimental Dragon Pack
 							},
 						}),
 						o(386585, {	-- Experimental Melder
-							["g"] = {
+							["groups"] = {
 								i(203702),	-- Experimental Melder
 							},
 						}),
@@ -654,14 +654,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386353, {	-- Hardened Chest
 							["coord"] = { 27.0, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74357,
-							["g"] = {
+							["groups"] = {
 								i(204369),	-- Scrap of Black Dragonscales
 							},
 						}),
 						o(385799, {	-- Hardened Strongbox
 							["coord"] = { 26.7, 48.8, THE_FORBIDDEN_REACH },
 							["questID"] = 73066,
-							["g"] = {
+							["groups"] = {
 								i(204375),	-- Everburning Ruby Coals
 							},
 						}),
@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						--]]
 						o(385836, {	-- Journal Entry: The Creches
 							["coord"] = { 25.1, 50.8, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(202336),	-- Journal Entry: The Creches [A]
 								i(204223),	-- Journal Entry: The Creches [H]
 							},
@@ -692,20 +692,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386680, {	-- Mysterious Almanac
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74589,
-							["g"] = {
+							["groups"] = {
 								i(204816),	-- Mysterious Almanac
 							},
 						}),
 						o(386582, {	-- Neltharion Gift Token
 							["coord"] = { 26.4, 49.4, THE_FORBIDDEN_REACH },
 							["questID"] = 74508,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386573, {	-- Ornate Key Box
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(203690, {	-- Pearlescent Bubble Key
 									["description"] = "This item is needed to unlock next floor",
 								}),
@@ -745,7 +745,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(393220, {	-- Primordial Paint Cache
 							["questID"] = 75214,
-							["g"] = {
+							["groups"] = {
 								i(204025),	-- Obscure Pastel Stone
 							},
 						}),
@@ -766,27 +766,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386586, {	-- Prismatic Fragment
 							["coord"] = { 25.8, 54.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75005,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(389102, {	-- Prismatic Fragment
 							["coord"] = { 25.3, 49.2, THE_FORBIDDEN_REACH },
 							["questID"] = 75006,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(389107, {	-- Prismatic Fragment
 							["questID"] = 75011,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(386587, {	-- Prismatic Fragment
 							["coord"] = { 25.1, 49.7, THE_FORBIDDEN_REACH },
 							["questID"] = 75004,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
@@ -795,14 +795,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(385940, {	-- Runic Wrench
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(202403),	-- Runic Wrench
 							},
 						}),
 						o(386683, {	-- Seared Book
 							["coord"] = { 29.2, 58.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74609,
-							["g"] = {
+							["groups"] = {
 								i(204812),	-- Seared Book
 							},
 						}),
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["description"] = "Use Restorative Water on an Overgrown Skeleton.",
 							["cost"] = {{"i",203720,1}},	-- Restorative Water
 							["cr"] = 202336,	-- Overgrown Skeleton
-							["g"] = {
+							["groups"] = {
 								i(203852),	-- Spore-bound Essence (TOY!)
 							},
 						}),
@@ -831,7 +831,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(387736, {	-- The Old Gods and the Ordering of Azeroth
 							["questID"] = 75392,
-							["g"] = {
+							["groups"] = {
 								i(204185),	-- The Old Gods and the Ordering of Azeroth (Annotated)
 							},
 						}),
@@ -847,7 +847,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(387493, {	-- Unique Fish
 							["questID"] = 74745,
-							["g"] = {
+							["groups"] = {
 								i(193851),	-- Patos (PET!)
 							},
 						}),
@@ -857,9 +857,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["isWeekly"] = true,
 				},{
 					["icon"] = 4643989,
-					["g"] = {
+					["groups"] = {
 						o(392030, {	-- Blacksteel Hammer
-							["g"] = {
+							["groups"] = {
 								i(204443),	-- Blacksteel Hammer
 							},
 						}),
@@ -885,14 +885,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(387500, {	-- Chilly Snowman
 							["questID"] = 74757,
-							["g"] = {
+							["groups"] = {
 							--	i(17202),	-- Snowball
 							--	Removed the snowball, otherwise we get 11 layers of currency tracking
 							},
 						}),
 						o(398778, {	-- Disgusting Vat
 							["description"] = "You must fish when interacting with this.",
-							["g"] = {
+							["groups"] = {
 								i(193853),	-- Emmah (PET!)
 								i(203701),	-- Neltharion Gift Token
 								i(204215),	-- Dormant Primordial Fragment
@@ -900,7 +900,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386591, {	-- Empty Vial
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(203705),	-- Empty Obsidian Vial
 							},
 						}),
@@ -923,14 +923,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(392025, {	-- Molded Coins
 							["coord"] = { 28.8, 57.9, THE_FORBIDDEN_REACH },
 							["questID"] = 75161,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386648, {	-- Mysterious Scroll
 							["questID"] = 74574,
 							["isWeekly"] = IGNORED_VALUE,
-							["g"] = {
+							["groups"] = {
 								i(204802),	-- Scroll of Teleport: Ziskara Vaults
 							},
 						}),
@@ -941,21 +941,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386578, {	-- Neltharion Gift Token
 							["coord"] = { 24.8, 50.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74504,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386583, {	-- Neltharion Gift Token
 							["coord"] = { 26.9, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74509,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(386579, {	-- Neltharion Gift Token
 							["coord"] = { 26.7, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 74505,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
@@ -989,20 +989,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(389108, {	-- Prismatic Fragment
 							["coord"] = { 26.5, 54.1, THE_FORBIDDEN_REACH },
 							["questID"] = 75012,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(389104, {	-- Prismatic Fragment
 							["coord"] = { 25.3, 53.8, THE_FORBIDDEN_REACH },
 							["questID"] = 75008,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(389106, {	-- Prismatic Fragment
 							["questID"] = 75010,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
@@ -1022,18 +1022,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["isWeekly"] = true,
 				},{
 					["icon"] = 4643988,
-					["g"] = {
+					["groups"] = {
 						o(387749, {	-- Animate Crystalspine
 							["coord"] = { 24.5, 51.0, THE_FORBIDDEN_REACH },
 							["questID"] = 74864,
-							["g"] = {
+							["groups"] = {
 								i(193908),	-- Kobaldt (PET!)
 							},
 						}),
 						o(390559, {	-- Box of Rocks (confirmed)
 							["coord"] = { 28.2, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75152,
-							["g"] = {
+							["groups"] = {
 								i(199216),	-- A Box of Rocks
 							},
 						}),
@@ -1046,13 +1046,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386556, {	-- Dusty Vase
 							["coord"] = { 28.3, 57.4, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(203687),	-- Dusty Vase
 							},
 						}),
 						o(398200, {	-- Forgotten Lockbox
 							["questID"] = 75436,
-							["g"] = {
+							["groups"] = {
 								i(204439),	-- Research Chest Key
 							},
 						}),
@@ -1070,21 +1070,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(387737, {	-- Living Book
 							["coord"] = { 29.8, 54.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75245,
-							["g"] = {
+							["groups"] = {
 								i(204691),	-- Living Book
 							},
 						}),
 						o(387501, {	-- Neltharion Gift Token
 							["coord"] = { 24.4, 51.0, THE_FORBIDDEN_REACH },
 							["questID"] = 74758,
-							["g"] = {
+							["groups"] = {
 								i(203701),	-- Neltharion Gift Token
 							},
 						}),
 						o(388712, {	-- Opera Chest
 							["coord"] = { 29.7, 54.2, THE_FORBIDDEN_REACH },
 							["questID"] = 74947,
-							["g"] = {
+							["groups"] = {
 								i(204256),	-- Holoviewer: The Scarlet Queen (TOY!)
 								i(204257),	-- Holoviewer: The Lady of Dreams (TOY!)
 								i(204262),	-- Holoviewer: The Timeless One (TOY!)
@@ -1093,7 +1093,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(387728, {	-- Opera of the Aspects
 							["coord"] = { 29.8, 54.2, THE_FORBIDDEN_REACH },
 							["questID"] = 75381,
-							["g"] = {
+							["groups"] = {
 								i(204181),	-- Opera of the Aspects
 							},
 						}),
@@ -1140,19 +1140,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(389103, {	-- Prismatic Fragment
 							["questID"] = 75007,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(389105, {	-- Prismatic Fragment
 							["questID"] = 75009,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 							},
 						}),
 						o(387503, {	-- Sealed Letter to Neltharion
 							-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(203381),	-- Sealed Letter to Neltharion
 							},
 						}),
@@ -1162,7 +1162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(385831, {	-- Sending Stone: The Prisoner
 							["coord"] = { 28.5, 57.6, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								i(202327),	-- Sending Stone: The Prisoner [A]
 								i(204253),	-- Sending Stone: The Prisoner [H]
 							},
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["description"] = "Use Stone Dissolver.",
 							["coord"] = { 27.0, 49.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74865,
-							["g"] = {
+							["groups"] = {
 								i(203703),	-- Prismatic Fragment
 								i(204199),	-- Ley-Infused Crystal
 							},
@@ -1187,11 +1187,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				})),
 				o(389471, {	-- Grand Obsidian Cache
+					["description"] = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
 					["questID"] = 75047,
 					["sourceQuest"] = 74978,	-- Broken Waygate (repaired)
 					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(202278),	-- Renewed Proto-Drake: Antlers (MM!)
 					},
 				}),

@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1154,	-- The Oblivion Door
 			1155,	-- The Festering Core
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(12537),	-- Uldir Guild Run
 				ach(12991),	-- New Mog, G'huun This?
@@ -36,32 +36,32 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				ach(12521, {	-- Halls of Containment
-                    crit(40246, {    -- Taloc
+                    crit(40246, {	-- Taloc
                         ["_encounter"] = { 2168, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(40247, {    -- MOTHER
+                    crit(40247, {	-- MOTHER
                         ["_encounter"] = { 2167, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(40223, {    -- Zek'voz, Herald of N'zoth
+                    crit(40223, {	-- Zek'voz, Herald of N'zoth
                         ["_encounter"] = { 2169, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(12522, {	-- Crimson Descent
-                    crit(40248, {    -- Vectis
+                    crit(40248, {	-- Vectis
                         ["_encounter"] = { 2166, DIFFICULTY.RAID.LFR },
                     }),
-					crit(40222, {    -- Fetid Devourer
+					crit(40222, {	-- Fetid Devourer
 						["_encounter"] = { 2146, DIFFICULTY.RAID.LFR },
 					}),
-                    crit(40224, {    -- Zul, Reborn
+                    crit(40224, {	-- Zul, Reborn
                         ["_encounter"] = { 2195, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(12523, {	-- Heart of Corruption
-                    crit(40220, {    -- Mythrax the Unraveler
+                    crit(40220, {	-- Mythrax the Unraveler
                         ["_encounter"] = { 2194, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(40221, {    -- G'huun
+                    crit(40221, {	-- G'huun
                         ["_encounter"] = { 2147, DIFFICULTY.RAID.LFR },
                     }),
                 }),
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					134546,	-- Mythrax the Unraveler
 					132998,	-- G'huun
 				},
-				["g"] = {
+				["groups"] = {
 					i(162521),	-- Recipe: Mystical Cauldron [Rank 3] (RECIPE!)
 					i(162461),	-- Sanguicell
 					i(162121),	-- Vantus Rune Technique: Uldir [Rank 1] (RECIPE!)
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
 					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
-					["g"] = {
+					["groups"] = {
 						q(53568, {	-- Kill Credit 1
 							["name"] = "Kill Credit 1",
 							["icon"] = 1392920,
@@ -121,49 +121,49 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							["icon"] = 2000859,
 						}),
 						q(53572, {	-- Power Increased to Level 2
-							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
 							["name"] = "Power Increased to Level 2",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
 						}),
 						q(53573, {	-- Power Increased to Level 3
-							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
 							["name"] = "Power Increased to Level 3",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
 						}),
 						q(53574, {	-- Power Increased to Level 4
-							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
 							["name"] = "Power Increased to Level 4",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
 						}),
 						q(53575, {	-- Power Increased to Level 5
-							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
 							["name"] = "Power Increased to Level 5",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
 						}),
 						q(53576, {	-- Power Increased to Level 6
-							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
 							["name"] = "Power Increased to Level 6",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
 						}),
 						q(53577, {	-- Power Increased to Level 7
-							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
 							["name"] = "Power Increased to Level 7",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
 						}),
 						q(53578, {	-- Power Increased to Level 8
-							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
 							["name"] = "Power Increased to Level 8",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
 						}),
 						q(53579, {	-- Power Increased to Level 9
-							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
 							["name"] = "Power Increased to Level 9",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
 						}),
 						q(53580, {	-- Power Increased to Level 10
-							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
 							["name"] = "Power Increased to Level 10",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
 						}),
 					},
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							138959,	-- Coalesced Blood
 							138530,	-- Volatile Droplet
 						},
-						["g"] = {
+						["groups"] = {
 							crit(40246, {	-- Taloc
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							137022,	-- Chamber 02 (MOTHER)
 							137023,	-- Chamber 03 (MOTHER)
 						},
-						["g"] = {
+						["groups"] = {
 							crit(40247, {	-- MOTHER
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							135824,	-- Nerubian Voidweaver
 							134503,	-- Silithid Warrior
 						},
-						["g"] = {
+						["groups"] = {
 							crit(40223, {	-- Zek'voz, Herald of N'zoth
 								["achievementID"] = 12521,	-- Halls of Containment
 							}),
@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							133298,	-- Fetid Devourer
 							133492,	-- Corruption Corpuscle
 						},
-						["g"] = {
+						["groups"] = {
 							crit(40222, {	-- Fetid Devourer
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
@@ -285,7 +285,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2166, {	-- Vectis
 						["crs"] = { 134442 },	-- Vectis
-						["g"] = {
+						["groups"] = {
 							crit(40248, {	-- Vectis
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
@@ -304,11 +304,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2195, {	-- Zul, Reborn
 						["crs"] = { 138967 },	-- Zul
-						["g"] = {
+						["groups"] = {
 							crit(40224, {	-- Zul, Reborn
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
-							i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+							i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 							i(160684),	-- Pursax, the Backborer
 							i(160691),	-- Tusk of the Reborn Prophet
 							i(160630),	-- Crest of the Undying Visionary
@@ -325,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				header(HEADERS.Achievement, 12523, {	-- Heart of Corruption
 					e(2194, {	-- Mythrax the Unraveler
 						["crs"] = { 134546 },	-- Mythrax the Unraveler
-						["g"] = {
+						["groups"] = {
 							crit(40220, {	-- Mythrax the Unraveler
 								["achievementID"] = 12523,	-- Heart of Corruption
 							}),
@@ -347,7 +347,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							132998,	-- G'huun
 							138529,	-- Dark Young
 						},
-						["g"] = {
+						["groups"] = {
 							crit(40221, {	-- G'huun
 								["achievementID"] = 12523,	-- Heart of Corruption
 							}),
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						138959,	-- Coalesced Blood
 						138530,	-- Volatile Droplet
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12937),	-- Elevator Music
 						i(163119),	-- Khor, Hammer of the Guardian (transmog item)
 					},
@@ -386,7 +386,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12938),	-- Parental Controls
 					},
 				}),
@@ -395,7 +395,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						133298,	-- Fetid Devourer
 						133492,	-- Corruption Corpuscle
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12823),	-- Thrash Mouth - All Stars
 					},
 				}),
@@ -405,27 +405,27 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						135824,	-- Nerubian Voidweaver
 						134503,	-- Silithid Warrior
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12828),	-- What's in the Box?
 					},
 				}),
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
-					["g"] = {
+					["groups"] = {
 						ach(12772),	--  Now We Got Bad Blood
 					},
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["g"] = {
+					["groups"] = {
 						ach(12830),	-- Edgelords
-						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+						i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 						i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					},
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
-					["g"] = {
+					["groups"] = {
 						ach(12836),	-- Existential Crisis
 					},
 				}),
@@ -434,7 +434,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						132998,	-- G'huun
 						138529,	-- Dark Young
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12551),	-- Double Dribble
 					},
 				}),
@@ -456,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						138959,	-- Coalesced Blood
 						138530,	-- Volatile Droplet
 					},
-					["g"] = {
+					["groups"] = {
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
 						i(160637),	-- Crimson Colossus Armguards
@@ -477,7 +477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
-					["g"] = {
+					["groups"] = {
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
 						i(160682),	-- Mother's Twin Gaze
@@ -496,7 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						133298,	-- Fetid Devourer
 						133492,	-- Corruption Corpuscle
 					},
-					["g"] = {
+					["groups"] = {
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
 						i(160616),	-- Horrific Amalgam's Hood
@@ -513,7 +513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						135824,	-- Nerubian Voidweaver
 						134503,	-- Silithid Warrior
 					},
-					["g"] = {
+					["groups"] = {
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
 						i(160613),	-- Mantle of Contained Corruption
@@ -530,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
-					["g"] = {
+					["groups"] = {
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
 						i(160623),	-- Hood of Pestilent Ichor
@@ -546,7 +546,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["g"] = {
+					["groups"] = {
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
 						i(160630),	-- Crest of the Undying Visionary
@@ -561,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
-					["g"] = {
+					["groups"] = {
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
 						i(160696),	-- Codex of Imminent Ruin
@@ -580,7 +580,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						132998,	-- G'huun
 						138529,	-- Dark Young
 					},
-					["g"] = {
+					["groups"] = {
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
 						i(160694),	-- Re-Origination Pulse Rifle
@@ -613,7 +613,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						138959,	-- Coalesced Blood
 						138530,	-- Volatile Droplet
 					},
-					["g"] = {
+					["groups"] = {
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
 						i(160637),	-- Crimson Colossus Armguards
@@ -634,7 +634,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
-					["g"] = {
+					["groups"] = {
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
 						i(160682),	-- Mother's Twin Gaze
@@ -653,7 +653,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						133298,	-- Fetid Devourer
 						133492,	-- Corruption Corpuscle
 					},
-					["g"] = {
+					["groups"] = {
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
 						i(160616),	-- Horrific Amalgam's Hood
@@ -670,7 +670,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						135824,	-- Nerubian Voidweaver
 						134503,	-- Silithid Warrior
 					},
-					["g"] = {
+					["groups"] = {
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
 						i(160613),	-- Mantle of Contained Corruption
@@ -687,7 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
-					["g"] = {
+					["groups"] = {
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
 						i(160623),	-- Hood of Pestilent Ichor
@@ -703,7 +703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["g"] = {
+					["groups"] = {
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
 						i(160630),	-- Crest of the Undying Visionary
@@ -718,7 +718,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
-					["g"] = {
+					["groups"] = {
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
 						i(160696),	-- Codex of Imminent Ruin
@@ -739,7 +739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						138531,	-- Cyclopean Terror
 						138529,	-- Dark Young
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12536, {	-- Ahead of the Curve: G'huun
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
 						}),
@@ -760,7 +760,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.RAID.MYTHIC, {
 				n(ZONE_DROPS, {
-					["g"] = {
+					["groups"] = {
 						i(161071),	-- Bloody Experimenter's Wraps
 						i(160612),	-- Spellbound Specimen Handlers
 						i(161075),	-- Antiseptic Specimen Handlers
@@ -777,7 +777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						138959,	-- Coalesced Blood
 						138530,	-- Volatile Droplet
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12524),	-- Mythic: Taloc
 						i(160679),	-- Khor, Hammer of the Corrupted
 						i(160680),	-- Titanspark Animator
@@ -799,7 +799,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						137022,	-- Chamber 02 (MOTHER)
 						137023,	-- Chamber 03 (MOTHER)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12526),	-- Mythic: MOTHER
 						i(160681),	-- Glaive of the Keepers
 						i(160683),	-- Latticework Scalpel
@@ -819,7 +819,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						133298,	-- Fetid Devourer
 						133492,	-- Corruption Corpuscle
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12530),	-- Mythic: Fetid Devourer
 						i(160689),	-- Regurgitated Purifier's Flamestaff
 						i(160685),	-- Biomelding Cleaver
@@ -837,7 +837,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						135824,	-- Nerubian Voidweaver
 						134503,	-- Silithid Warrior
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12527),	-- Mythic: Zek'voz, Herald of N'zoth
 						i(160688),	-- Void-Binder
 						i(160687),	-- Containment Analysis Baton
@@ -855,7 +855,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2166, {	-- Vectis
 					["crs"] = { 134442 },	-- Vectis
-					["g"] = {
+					["groups"] = {
 						ach(12529),	-- Mythic: Vectis
 						i(160678),	-- Bow of Virulent Infection
 						i(160698),	-- Vector Deflector
@@ -872,7 +872,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2195, {	-- Zul, Reborn
 					["crs"] = { 138967 },	-- Zul
-					["g"] = {
+					["groups"] = {
 						ach(12531),	-- Mythic: Zul, Reborn
 						i(160684),	-- Pursax, the Backborer
 						i(160691),	-- Tusk of the Reborn Prophet
@@ -888,7 +888,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2194, {	-- Mythrax the Unraveler
 					["crs"] = { 134546 },	-- Mythrax the Unraveler
-					["g"] = {
+					["groups"] = {
 						ach(12532),	-- Mythic: Mythrax the Unraveler
 						i(160686),	-- Voror, Gleaming Blade of the Stalwart
 						i(160692),	-- Luminous Edge of Virtue
@@ -908,7 +908,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						132998,	-- G'huun
 						138529,	-- Dark Young
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12535, {	-- Cutting Edge: G'huun
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 },
 						}),
@@ -918,13 +918,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						ach(13010),	-- Mythic: G'huun Guild Run
 						ach(12542, bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
 						ach(12543, bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_1_0 } }, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),

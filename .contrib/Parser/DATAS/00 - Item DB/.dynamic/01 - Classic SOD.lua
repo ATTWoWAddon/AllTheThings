@@ -1,4 +1,4 @@
-﻿-- #if SEASON_OF_DISCOVERY
+-- #if SEASON_OF_DISCOVERY
 _.ItemDB = {
 [25]={["class"]=2,["equippable"]=1,["iLvl"]=2,["inventoryType"]=21,["name"]="Worn Shortsword",["q"]=1,["subclass"]=7},
 [35]={["class"]=2,["equippable"]=1,["iLvl"]=2,["inventoryType"]=17,["name"]="Bent Staff",["q"]=1,["subclass"]=10},
@@ -22301,5 +22301,6 @@ _.ItemDB = {
 [232607]={["b"]=1,["class"]=2,["equippable"]=1,["iLvl"]=75,["inventoryType"]=15,["lvl"]=60,["name"]="Heartstriker",["q"]=4,["subclass"]=2},
 [232608]={["b"]=1,["class"]=2,["equippable"]=1,["iLvl"]=75,["inventoryType"]=26,["lvl"]=60,["name"]="Dragonbreath Hand Cannon",["q"]=4,["subclass"]=3},
 [232610]={["b"]=1,["class"]=9,["equippable"]=1,["iLvl"]=60,["minReputation"]={270,9000},["name"]="Formula: Magnificent Trollshine",["q"]=1,["requireSkill"]=333,["subclass"]=8},
-[232611]={["class"]=7,["equippable"]=1,["iLvl"]=55,["lvl"]=45,["name"]="Magnificent Trollshine",["q"]=1,["subclass"]=0},};
+[232611]={["class"]=7,["equippable"]=1,["iLvl"]=55,["lvl"]=45,["name"]="Magnificent Trollshine",["q"]=1,["subclass"]=0},
+};
 -- #endif

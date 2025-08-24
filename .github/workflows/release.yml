@@ -4,9 +4,10 @@ name: Release
 
 # Controls when the action will run.
 on:
-  # Package alpha version at 06:00 UTC everyday
+  # Package alpha version 
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * *'   #at 06:00 UTC everyday
+    - cron: '0 16 * * 0'  #at 16:00 UTC every sunday
   # Triggers the workflow on tag events
   push:
     tags: '*'
@@ -19,20 +20,55 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Database Parser for Retail
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser for Retail".bat
+          "Parser.exe" auto baseconfig=.config/retail/retail.config
         shell: cmd
 
-      - name: Database Parser for Classic
+      - name: Database Parser for Classic Era
         timeout-minutes: 5
         run: |
           cd .contrib/Parser
-          "Parser for Classic".bat
+          "Parser.exe" auto config=".config/classic/01 - Classic Era.config"
+        shell: cmd
+
+      - name: Database Parser for Season of Discovery
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/01 - Classic SOD.config"
+        shell: cmd
+
+      - name: Database Parser for The Burning Crusade
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/02 - TBC.config"
+        shell: cmd
+
+      - name: Database Parser for Wrath of the Lich King
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/03 - Wrath.config"
+        shell: cmd
+
+      - name: Database Parser for Cataclysm
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
+        shell: cmd
+
+      - name: Database Parser for Mists of Pandaria
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
       - uses: actions/upload-artifact@v4
@@ -46,14 +82,14 @@ jobs:
     needs: build-windows
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
            fetch-depth: 300
            fetch-tags: true
            ref: ${{ github.ref }}
 
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: db-output  # Name of the artifact to download
           path: db

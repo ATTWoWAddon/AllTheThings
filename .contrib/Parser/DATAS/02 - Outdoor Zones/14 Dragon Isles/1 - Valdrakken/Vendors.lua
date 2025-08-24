@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(VENDORS, {
 			n(198587, {	-- Andoris <Enchanting Supplies>
 				["coord"] = { 30.8, 60.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(211522, {	-- Nascent Aspect's Awakened Crest
 						["cost"] = {{"c", ASPECTS_AWAKENED_CREST, 45}},
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(195783, {	-- Clerk Nemora <General Goods>
 				["coord"] = { 31.2, 69.2, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(197752),	-- Conveniently Packaged Ingredients
 					i(200860),	-- Draconic Stopper
 					i(191474),	-- Draconic Vial+
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(197080, {	-- Cadrestrasz <Fallingwater Host>
 				["coord"] = { 39.87, 86.48, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(200476),	-- Fallingwater Overlook VIP Entry Pass
 					i(200477),	-- Stack of VIP Passes
 				},
@@ -75,10 +75,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(199605, {	-- Evantkis <Token Exchange>
 				["coord"] = { 58.6, 57.6, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(199197, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Bottled Essence
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 }},
-						["g"] = {
+						["groups"] = {
 							i(190453),	-- Spark of Ingenuity
 						},
 					})),
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(204195, {	-- Drake's Shadowflame Crest
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 					i(218114, {	-- Eye of Awakening
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 3 }},
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 }},
-						["g"] = {
+						["groups"] = {
 							i(190454),	-- Depleted Primal Chaos
 						},
 					})),
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(198441, {	-- Gardener Cereus <Garden Supplies>
 				["coord"] = { 57.8, 24.0, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(114980, {	-- Farmer's Broom
 						["cost"] = 67,	-- 67c
 					}),
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(196729, {	-- Gorgonzormu <Cheesemonger>
 				["coord"] = { 30.8, 60.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(201419),	-- Apexis Asiago
 					i(201416),	-- Black Empire Brunost
 					i(201417),	-- Curding of Stratholme
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(216231, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Dream Distribtuion>
 				["coord"] = { 73.7, 47.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
 					i(217700, {	-- Scale of Awakening
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(216226, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszinormi <Scale Associate>
 				["coord"] = { 73.7, 47.1, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
 					i(217698, {	-- Scale of Awakening
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(216224, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Iszy <Vault Vendor>
 				["coord"] = { 73.8, 46.7, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 2 }},
 				}, {
 					i(194306),	-- All-Totem of the Master
@@ -327,13 +327,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(192814, {	-- Kritha <Barkeep>
 				["coord"] = { 47.2, 41.6, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(201327),	-- Emerald Dreamtime
 				},
 			}),
 			n(187647, {	-- Libergo <Head Librarian>
 				["coord"] = { 33.8, 27.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(232521, {	-- Glyph of Arcane Familiar
 						["cost"] = 5000000,	-- 500g
 						["timeline"] = { ADDED_11_0_5 },
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(197711, {	-- Lindormi
 				["coord"] = { 53.2, 56.0, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(210595, {	-- Dreaming Equipment Chest
 						["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6_SEASON_FOUR },
 					}),
@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(193029, {	-- Lysindra
 				["coord"] = { 48.2, 82.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(203445, {	-- Stuffed Doll (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-------------
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 					["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 				}, {
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-------------
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 					["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 				}, {
@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-------------
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 					["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 				}, {
@@ -569,7 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			-------------
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 					["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 				}, {
@@ -634,7 +634,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
 				}, {
 					i(190170, {	-- Jigglesworth, Sr. (MOUNT!)
@@ -646,7 +646,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 } }, {	-- Think it was technically 1 week after 11.0.2 released but who cares
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 } }, {	-- Think it was technically 1 week after 11.0.2 released but who cares
 					iensemble(211300, {	-- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
 					}),
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(187783, {	-- Pakak
 				["coord"] = { 43.8, 75.0, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(193571, {	-- Mallard Duckling (PET!)
 						["cost"] = {
 							{ "i", 197788, 1 },	-- 1xBraised Bruffalon Brisked
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(106448, {	-- Tithris
 				["coord"] = { 47.3, 46.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(203443, {	-- Box of Leapmaize Crackers (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -701,48 +701,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(196640, {	-- Yzinia <Innkeeper>
 				["coord"] = { 22.6, 30.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(200099),	-- M.R.E.
 				},
 			}),
 			n(216449, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Vaskarn
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					-- Trade Up
 					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
 						["cost"] = {{ "c", 2807, 90 }},	-- Drake's Awakened Crests x90
-						["g"] = {
+						["groups"] = {
 							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
 					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
 						["cost"] = {{ "c", 2806, 90 }},	-- Whelpling's Awakened Crest x90
-						["g"] = {
+						["groups"] = {
 							currency(2807),	-- Drake's Awakened Crest
 						},
 					}),
 					i(212383, {	-- Yawning Basket of Aspect's Awakened Crests
 						["cost"] = {{ "c", 2809, 90 }},	-- Wyrm's Awakened Crests x90
-						["g"] = {
+						["groups"] = {
 							currency(2812),	-- Aspect's Awakened Crest
 						},
 					}),
 					-- Trade Down
 					i(212367, {	-- Clutch of Wyrm's Awakened Crests
 						["cost"] = {{ "c", 2812, 15 }},	-- Aspect's Awakened Crests x15
-						["g"] = {
+						["groups"] = {
 							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
 					i(211951, {	-- Pouch of Whelpling's Awakened Crests
 						["cost"] = {{ "c", 2807, 15 }},	-- Drake's Awakened Crests x15
-						["g"] = {
+						["groups"] = {
 							currency(2806),	-- Whelpling's Awakened Crest
 						},
 					}),
 					i(211952, {	-- Satchel of Drake's Awakened Crests
 						["cost"] = {{ "c", 2809, 15 }},	-- Wyrm's Awakened Crests x15
-						["g"] = {
+						["groups"] = {
 							currency(2807),	-- Drake's Awakened Crest
 						},
 					}),
@@ -750,7 +750,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(196975, {	-- Zinfandormu <Sommelier>
 				["coord"] = { 30.8, 60.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(197849),	-- Ancient Firewine
 					i(194684),	-- Azure Leywine
 					i(180409),	-- Crimson Altar Wine

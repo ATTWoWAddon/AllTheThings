@@ -21,17 +21,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["filterID"] = BATTLE_PETS,
 			})),
 			q(56139, {	-- Junkyard Treasures
-				["g"] = {
+				["groups"] = {
 					i(168832),	-- Galvanic Oscillator
 				},
 			}),
 			q(55901, {	-- Rustbolt Rebellion
-				["g"] = {
+				["groups"] = {
 					i(168832),	-- Galvanic Oscillator
 				},
 			}),
 			q(56141, {	-- Security First
-				["g"] = {
+				["groups"] = {
 					i(168832),	-- Galvanic Oscillator
 				},
 			}),

@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82292, {	-- Rock Collector
 					["provider"] = { "n", 223446 },	-- Collector Dyna
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
@@ -25,13 +25,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82470, {	-- Arcane Riddles
 					["coord"] = { 30.8, 52.2, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(218454),	-- Titan Artifact (QI!)
 					},
 				}),
 				q(81465, {	-- Artifacts Galore
 					["coord"] = { 78.4, 26.7, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						o(437195, {	-- Titan Artifacts
 							i(218454),	-- Titan Artifact (QI!)
 						}),
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82658, {	-- Drop and Go
 					--["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
-					["g"] = {
+					["groups"] = {
 						o(449528, {	-- Opal-Mining Tools
 							i(224074),	-- Opal-Mining Tools (QI!)
 						})
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(80395, {	-- Elemental Excavation
 					["coord"] = { 74.8, 55.1, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(218124),	-- Element Extractor (QI!)
 					}
 				}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81639, {	-- Honey Thieving Nerubians
 					["coord"] = { 78.9, 37.9, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						o(439463, {	-- Spilled Fire honey
 							["coords"] = {
 								{ 75.0, 36.5, ISLE_OF_DORN },
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 76.1, 36.3, ISLE_OF_DORN },
 								{ 76.4, 37.1, ISLE_OF_DORN },
 							},
-							["g"] = { i(211811) },	-- Small Glob of Fire Honey (QI!)
+							["groups"] = { i(211811) },	-- Small Glob of Fire Honey (QI!)
 						}),
 					},
 				}),
@@ -86,13 +86,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82451, {	-- Preserving Plush Pals
 					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(223952),	-- Singed Plush (QI!)
 					},
 				}),
 				q(81512, {	-- Props and Incense
 					["coord"] = { 66.2, 58.5, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(218740),	-- Ashenfold (QI!)
 						i(218739),	-- Pristine Horn (QI!)
 					},
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(80295, {	-- Rocks, Water and Elemental Fodder
 					--["coord"] = { 73.6, 55.1, ISLE_OF_DORN },	-- need proper coords from popup, cause wq area can be started @ 71.3, 46.4
-					["g"] = {
+					["groups"] = {
 						i(217343),	-- Living Coalesced Silt (QI!)
 					},
 				}),
@@ -126,13 +126,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81621, {	-- Tunnels Be Gone!
 					--["coord"] = { 63.9, 43.1, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
-					["g"] = {
+					["groups"] = {
 						i(219284),	-- Explosive Sticks (QI!)
 					},
 				}),
 				q(81675, {	-- Water the Sheep
 					["coord"] = { 58.4, 28.0, DORNOGAL },	-- probably gonna need to move out of here
-					["g"] = {
+					["groups"] = {
 						i(219525),	-- Globe of Nourishment (QI!)
 					},
 				}),
@@ -167,4 +167,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

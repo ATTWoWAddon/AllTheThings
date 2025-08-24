@@ -17,8 +17,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 			-- #endif
 				n(QUESTS, {
 					q(11165, {	-- A Troll Among Trolls
-						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11164,	-- Tuskin' Raiders
+						["qg"] = 23761,	-- Prigmon
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -32,8 +32,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						-- #endif
 					}),
 					q(11171, {	-- Hex Lord? Hah!
-						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11166,	-- X Marks... Your Doom!
+						["qg"] = 23559,	-- Budd
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -59,23 +59,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						-- #endif
 					}),
 					q(11195, {	-- Playin' With Dolls
-						["providers"] = {
-							{ "n", 23897 },	-- Zungam
-							{ "i", 33107 },	-- Tattered Voodoo Doll
-						},
-						["sourceQuest"] = 11165,	-- A Troll Among Trolls
-						["coord"] = { 59.3, 36.6, ZULAMAN },
 						-- #if BEFORE CATA
 						["description"] = "Located in the big hut just southeast of Halazzi's room.",
 						["lvl"] = 70,
 						-- #endif
+						["sourceQuest"] = 11165,	-- A Troll Among Trolls
+						["providers"] = {
+							{ "n", 23897 },	-- Zungam
+							{ "i", 33107 },	-- Tattered Voodoo Doll
+						},
+						["coord"] = { 59.3, 36.6, ZULAMAN },
 						["groups"] = {
 							i(34256),	-- Charmed Amani Jewel
 						},
 					}),
 					q(11132, {	-- Promises, Promises...
-						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
+						["qg"] = 23559,	-- Budd
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -92,8 +92,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						},
 					}),
 					q(11164, {	-- Tuskin' Raiders
-						["qg"] = 23761,	-- Prigmon
 						["sourceQuest"] = 11130,	-- Oooh, Shinies!
+						["qg"] = 23761,	-- Prigmon
 						["coord"] = { 71.0, 68.9, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -119,8 +119,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						},
 					}),
 					q(11163, {	-- Undercover Sister
-						["qg"] = 23858,	-- Donna Brascoe
 						["sourceQuest"] = 11178,	-- Blood of the Warlord
+						["qg"] = 23858,	-- Donna Brascoe
 						["coord"] = { 70.5, 68.3, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -130,8 +130,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 						-- #endif
 					}),
 					q(11166, {	-- X Marks... Your Doom!
-						["qg"] = 23559,	-- Budd
 						["sourceQuest"] = 11132,	-- Promises, Promises...
+						["qg"] = 23559,	-- Budd
 						["coord"] = { 70.3, 67.8, GHOSTLANDS },
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -305,11 +305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					-- #endif
 					["hideText"] = true,
 					["groups"] = {
-						ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 11178,	-- Blood of the Warlord
-							-- #endif
-						}),
+						ach(691),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 						i(33102),	-- Blood of Zul'jin
 						i(33474),	-- Ancient Amani Longbow
 						i(33467),	-- Blade of Twisted Visions

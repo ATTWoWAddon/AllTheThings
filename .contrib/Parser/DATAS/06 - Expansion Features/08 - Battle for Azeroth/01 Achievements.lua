@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				13712,	-- Explore Nazjatar
 				13776,	-- Explore Mechagon
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169162),	-- Wonderwing 2.0 (MOUNT!)
 				crit(45265, {	-- Rustbolt Resistance Revered
 					["_factions"] = { FACTION_RUSTBOLT_RESISTANCE },	-- Rustbolt Resistance
@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				12577,	-- Tour of Duty: Tiragarde Sound
 				12575,	-- Tour of Duty: Zuldazar
 			}},
-			["g"] = {
+			["groups"] = {
 				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				12577,	-- Tour of Duty: Tiragarde Sound
 				12575,	-- Tour of Duty: Zuldazar
 			}},
-			["g"] = {
+			["groups"] = {
 				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
@@ -175,7 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		pvp(h(ach(13403))),	-- Frontline Slayer (H)
 		pvp(ach(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,
-			["g"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
+			["groups"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
 				crit(44016, {		-- A Sound Defense
 					["_quests"] = { 53711 },	-- A Sound Defense (Faction Assault WQ)
 				}),
@@ -198,7 +198,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		})),
 		pvp(ach(13388, {	-- Frontline Veteran (H)
 			["races"] = HORDE_ONLY,
-			["g"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
+			["groups"] = bubbleDown({["sharedDescription"] = "Requires War Mode Active" }, {
 				crit(44022, {		-- Breaching Boralus
 					["_quests"] = { 53939 },	-- Breaching Boralus (Faction Assault WQ)
 				}),
@@ -226,14 +226,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				BORALUS,
 				DAZARALOR,
 			},
-			["g"] = {
+			["groups"] = {
 				ach(12739),	-- Scraptastic!
 				ach(12738),	-- Holy Scrap!
 			},
 		}),
 		ach(12482, {	-- Get Hek'd
 			["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
-			["g"] = {
+			["groups"] = {
 				crit(40037, {	-- Golden Ravasaur Egg
 					["itemID"] = 156963,	-- Golden Ravasaur Egg
 					["coord"] = { 71.6, 41.2, ZULDAZAR },	-- Trashpile turn-in
@@ -356,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				BORALUS,
 				ZULDAZAR,
 			},
-			["g"] = {
+			["groups"] = {
 				title(383),	-- Contender
 				ach(12863, {	-- Dueling Master
 					i(163055),	-- Dueler's Tabard
@@ -386,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			},
 		})),
 		ach(13027, {	-- Mushroom Harvest
-			["g"] = {
+			["groups"] = {
 				crit(41390, {	-- Skullcap
 					["_npcs"] = { 143316 },
 				}),
@@ -510,91 +510,91 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(TREASURES, {	-- Treasures that belong to the above achievements
 		o(297495, {	-- Tales of de Loa: Akunda
 			["coord"] = { 42.2, 62.1, VOLDUN },
-			["g"] = {
+			["groups"] = {
 				i(162628),	-- Tales of de Loa: Akunda
 			},
 		}),
 		o(297491, {	-- Tales of de Loa: Bwonsamdi
 			["coord"] = { 39.1, 38.6, NAZMIR },
-			["g"] = {
+			["groups"] = {
 				i(163330),	-- Tales of de Loa: Bwonsamdi
 			},
 		}),
 		o(297521, {	-- Tales of de Loa: Gonk
 			["coord"] = { 51.7, 28.3, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(162657),	-- Tales of de Loa: Gonk
 			},
 		}),
 		o(297074, {	-- Tales of de Loa: Gral
 			["coord"] = { 75.5, 67.6, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(163170),	-- Tales of de Loa: Gral
 			},
 		}),
 		o(297522, {	-- Tales of de Loa: Hir'eek
 			["coord"] = { 39.5, 54.6, NAZMIR },
-			["g"] = {
+			["groups"] = {
 				i(163199),	-- Tales of de Loa: Hir'eek
 			},
 		}),
 		o(297528, {	-- Tales of de Loa: Jani
 			["coord"] = { 48.5, 54.6, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(162656),	-- Tales of de Loa: Jani
 			},
 		}),
 		o(297494, {	-- Tales of de Loa: Kimbul
 			["coord"] = { 27.7, 62.1, VOLDUN },
-			["g"] = {
+			["groups"] = {
 				i(163198),	-- Tales of de Loa: Kimbul
 			},
 		}),
 		o(297489, {	-- Tales of de Loa: Krag'wa
 			["coord"] = { 58.9, 48.6, NAZMIR },
-			["g"] = {
+			["groups"] = {
 				i(163331),	-- Tales of de Loa: Krag'wa
 			},
 		}),
 		o(297524, {	-- Tales of de Loa: Pa'ku
 			["coord"] = { 49.0, 41.3, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(162658),	-- Tales of de Loa: Pa'ku
 			},
 		}),
 		o(297490, {	-- Tales of de Loa: Rezan
 			["coord"] = { 43.8, 76.7, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(163332),	-- Tales of de Loa: Rezan
 			},
 		}),
 		o(297485, {	-- Tales of de Loa: Sethraliss
 			["coord"] = { 49.5, 24.4, VOLDUN },
-			["g"] = {
+			["groups"] = {
 				i(163333),	-- Tales of de Loa: Sethraliss
 			},
 		}),
 		o(297493, {	-- Tales of de Loa: Shadra
 			["coord"] = { 47.7, 28.9, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(163221),	-- Tales of de Loa: Shadra
 			},
 		}),
 		o(297885, {	-- Tales of de Loa: Torcali
 			["coord"] = { 67.3, 17.6, ZULDAZAR },
-			["g"] = {
+			["groups"] = {
 				i(163739),	-- Tales of de Loa: Torcali
 			},
 		}),
 		o(297523, {	-- Tales of de Loa: Torga
 			["coord"] = { 72.8, 7.60, NAZMIR },
-			["g"] = {
+			["groups"] = {
 				i(163197),	-- Tales of de Loa: Torga
 			},
 		}),
 		o(297700, {	-- Tales of de Loa: Zandalar
 			["coord"] = { 53.2, 9.3, DAZARALOR },
-			["g"] = {
+			["groups"] = {
 				i(163682),	-- Tales of de Loa: Zandalar
 			},
 		}),

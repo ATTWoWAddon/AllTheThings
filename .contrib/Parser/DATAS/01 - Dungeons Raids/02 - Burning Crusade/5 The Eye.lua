@@ -10,7 +10,7 @@ local legendary = function(itemID, creatureID)
 		-- #endif
 	});
 end;
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(749, {	-- The Eye
 		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
@@ -33,8 +33,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					},
 				}),
 				q(10946, {	-- Ruse of the Ashtongue
-					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10944,	-- The Secret Compromised
+					["qg"] = 21700,	-- Akama
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
 					["groups"] = {
 						objective(1, {
@@ -45,15 +45,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(30280),	-- Pattern: Belt of Blasting
+				i(30280),	-- Pattern: Belt of Blasting (RECIPE!)
 				i(30302),	-- Pattern: Belt of Deep Shadow (RECIPE!)
 				i(30301),	-- Pattern: Belt of Natural Power (RECIPE!)
 				i(30303),	-- Pattern: Belt of the Black Eagle (RECIPE!)
-				i(30281),	-- Pattern: Belt of the Long Road
-				i(30282),	-- Pattern: Boots of Blasting
+				i(30281),	-- Pattern: Belt of the Long Road (RECIPE!)
+				i(30282),	-- Pattern: Boots of Blasting (RECIPE!)
 				i(30305),	-- Pattern: Boots of Natural Grace (RECIPE!)
 				i(30307),	-- Pattern: Boots of the Crimson Hawk (RECIPE!)
-				i(30283),	-- Pattern: Boots of the Long Road
+				i(30283),	-- Pattern: Boots of the Long Road (RECIPE!)
 				i(30306),	-- Pattern: Boots of Utter Darkness (RECIPE!)
 				i(30308),	-- Pattern: Hurricane Boots (RECIPE!)
 				i(30304),	-- Pattern: Monsoon Belt (RECIPE!)
@@ -149,11 +149,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 19622,
 				["groups"] = {
 					ach(696, {	-- Tempest Keep
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							10445,	-- The Vials of Eternity
-							11007,	-- Kael'thas and the Verdant Sphere
-						},
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'The Vials of Eternity'.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5089, {	-- Tempest Keep Guild Run
@@ -214,4 +212,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 			}),
 		},
 	}),
-})));
+}))));

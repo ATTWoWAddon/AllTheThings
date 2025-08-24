@@ -7,8 +7,8 @@ local setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
 	= setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
 
 -- WoW API Cache
-local GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory
-	= GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory
+local GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory,GetAchievementCriteriaInfoByID
+	= GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory,GetAchievementCriteriaInfoByID
 local GetItemInfo = app.WOWAPI.GetItemInfo
 
 -- Module
@@ -51,6 +51,12 @@ CollectionCache = setmetatable({}, { __index = function(t, key)
 		t[key] = val
 		return val
 	end
+end})
+local QuickAchievementCache = setmetatable({}, { __index = function(t,key)
+	if not key then return end
+	local achObj = SearchForObject("achievementID", key, "key")
+	t[key] = achObj
+	return achObj
 end})
 
 -- Achievement Lib
@@ -219,14 +225,6 @@ do
 		end,
 	})
 
-	app.CreateGuildAchievement = function(id, t)
-		-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
-		t = app.CreateAchievement(id, t);
-		t.collectible = false;
-		t.isGuild = true;
-		return t;
-	end
-
 	app.AddEventHandler("OnRefreshCollections", function()
 		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
@@ -288,7 +286,7 @@ do
 			priority = 1.5, HideCheckBox = true, ForceActive = true,
 			Process = function(t, reference, tooltipInfo)
 				if reference.criteriaID and reference.achievementID then
-					local achievement = SearchForObject("achievementID", reference.achievementID, "key")
+					local achievement = QuickAchievementCache[reference.achievementID]
 					tinsert(tooltipInfo, {
 						left = L.CRITERIA_FOR,
 						right = achievement.text or GetAchievementLink(reference.achievementID),
@@ -327,7 +325,7 @@ do
 						if #sas > 0 then
 							bestMatch = nil;
 							for j,sa in ipairs(sas) do
-								if sa.achievementID == sourceAchievementID then
+								if sa.achievementID == sourceAchievementID and sa.key == "achievementID" then
 									if isDebugMode or (not sa.saved and app.GroupFilter(sa)) then
 										bestMatch = sa;
 									end
@@ -362,65 +360,40 @@ local function BuildSourceAchievements(group)
 		OnUpdate = app.AlwaysShowUpdate,
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 		sourceIgnored = true,
-		skipFill = true,
+		skipFull = true,
 		SortPriority = -2.9,
 		g = sas,
 	})
 	for i,achID in ipairs(group.sourceAchievements) do
-		app.NestObject(sourceGroup, SearchForObject("achievementID", achID, "key") or app.CreateAchievement(achID), true)
+		app.NestObject(sourceGroup, QuickAchievementCache[achID] or app.CreateAchievement(achID), true)
 	end
 	app.NestObject(group, sourceGroup, nil, 1)
 end
 app.AddEventHandler("OnNewPopoutGroup", BuildSourceAchievements)
 
--- Achievement Category Lib
-do
-	local GetCategoryInfo
-		= GetCategoryInfo
-
-	app.CreateAchievementCategory = app.CreateClass("AchievementCategory", "achievementCategoryID", {
-		key = function(t)
-			return "achievementCategoryID";
-		end,
-		name = function(t)
-			return GetCategoryInfo(t.achievementCategoryID);
-		end,
-		icon = function(t)
-			return app.asset("Category_Achievements");
-		end,
-		parentCategoryID = function(t)
-			return select(2, GetCategoryInfo(t.achievementCategoryID)) or -1;
-		end,
-	})
-end
-
 -- Achievement Criteria Lib
 do
-	local GetAchievementCriteriaInfoByID
-		= GetAchievementCriteriaInfoByID
-
 	-- Returns expected criteria data for either criteriaIndex or criteriaID
-	local function GetCriteriaInfo(t, achievementID)
+	local function GetCriteriaInfo(t, achievementID, field)
 		-- prioritize the correct id
 		local critUID = t.uid or t.criteriaID
 		local critID = t.id or critUID
 		achievementID = achievementID or t.achievementID
+		if not achievementID or not critID then return end
+
 		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 			= GetAchievementCriteriaInfoByID(achievementID, critUID)
-		if IsRetrieving(criteriaString) and critID <= GetAchievementNumCriteria(achievementID) then
-			criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
-			---@diagnostic disable-next-line: redundant-parameter
-			= GetAchievementCriteriaInfo(achievementID, critID, true)
+		-- criteriaType will exist even when criteriaString is empty, so don't need to check retrieving and stuff
+		if (criteriaString and criteriaString ~= "")
+			or (criteriaType and field ~= "name") then
+			return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		end
-		return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
+		if critID <= GetAchievementNumCriteria(achievementID) then
+			---@diagnostic disable-next-line: redundant-parameter
+			return GetAchievementCriteriaInfo(achievementID, critID, true)
+		end
 	end
 
-	local QuickAchievementCache = setmetatable({}, { __index = function(t,key)
-		if not key then return end
-		local achObj = SearchForObject("achievementID", key, "key")
-		t[key] = achObj
-		return achObj
-	end})
 	-- Criteria field values which will use the value of the respective Achievement instead
 	local UseParentAchievementValueKeys = {
 		"c", "classID", "races", "r", "u", "e", "sr", "pb", "pvp", "requireSkill", "icon"
@@ -443,13 +416,14 @@ do
 	end
 	local function default_name(t)
 		if t.link then return t.link; end
+		app.DirectGroupRefresh(t, true)
 		local name
 		local achievementID = t.achievementID
 		if achievementID then
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				-- typical criteria name lookup
-				name = GetCriteriaInfo(t, achievementID)
+				name = GetCriteriaInfo(t, achievementID, "name")
 				if not IsRetrieving(name) then return name; end
 
 				-- app.PrintDebug("fallback crit name",achievementID,criteriaID,t.uid,t.id)
@@ -535,267 +509,6 @@ do
 			return cache.GetCachedField(t, key, GetParentAchievementInfo)
 		end
 	end
-	app.CreateAchievementCriteria = app.CreateClass("Criteria", "criteriaID", criteriaFields)
-	app.CreateGuildAchievementCriteria = function(id, t)
-		-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
-		t = app.CreateAchievementCriteria(id, t);
-		t.collectible = false;
-		t.isGuild = true;
-		return t;
-	end
-	app.AddSimpleCollectibleSwap("Criteria", "Achievements")
+	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", criteriaFields)
+	app.AddSimpleCollectibleSwap("AchievementCriteria", "Achievements")
 end
-
-
--- Achievement Harvesting
-local HarvestedAchievementDatabase = {};
-local harvesterFields = {}
-harvesterFields.visible = app.ReturnTrue;
-harvesterFields.collectible = app.ReturnTrue;
-harvesterFields.collected = app.ReturnFalse;
-harvesterFields.text = function(t)
-	local achievementID = t.achievementID;
-	if achievementID then
-		local IDNumber, Name, _, _, _, _, _, Description, _, Image, _, isGuildAch = GetAchievementInfo(achievementID);
-		if Name then
-			local info = {
-				name = Name,
-				achievementID = IDNumber,
-				parentCategoryID = GetAchievementCategory(achievementID) or -1,
-				icon = Image,
-				isGuild = isGuildAch and true or nil,
-			};
-			if Description ~= nil and Description ~= "" then
-				info.description = Description;
-			end
-			local totalCriteria = GetAchievementNumCriteria(achievementID);
-			if totalCriteria > 0 then
-				local criteria = {};
-				for criteriaID=totalCriteria,1,-1 do
-					---@diagnostic disable-next-line: redundant-parameter
-					local criteriaString, criteriaType, _, _, reqQuantity, _, _, assetID, _, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
-					local crit = { criteriaID = criteriaID, criteriaUID = criteriaUID };
-					if criteriaString ~= nil and criteriaString ~= "" then
-						crit.name = criteriaString;
-					end
-					if assetID and assetID ~= 0 then
-						crit.assetID = assetID;
-					end
-					if reqQuantity and reqQuantity > 0 then
-						crit.rank = reqQuantity;
-					end
-					if criteriaType then
-						-- Unknown type, not sure what to do with this.
-						crit.criteriaType = criteriaType;
-						if crit.assetID then
-							if criteriaType == 27 then	-- Quest Completion
-								crit._quests = { assetID };
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								if crit.rank and crit.rank == 1 then
-									crit.rank = nil;
-								end
-							elseif criteriaType == 36 or criteriaType == 41 or criteriaType == 42 then
-								-- 36: Items (Generic)
-								-- 41: Items (Use/Eat)
-								-- 42: Items (Loot)
-								if crit.rank and crit.rank < 2 then
-									crit.provider = { "i", crit.assetID };
-								else
-									crit.cost = { { "i", crit.assetID, crit.rank }};
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								crit.rank = nil;
-							elseif criteriaType == 43 then	-- Exploration?!
-								crit.explorationID = crit.assetID;
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								crit.rank = nil;
-							elseif criteriaType == 0 then	-- NPC Kills
-								crit._npcs = { crit.assetID };
-								if crit.rank and crit.rank < 2 then
-									crit.rank = nil;
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-							elseif criteriaType == 96 then	-- Collect Pets
-								crit._npcs = { crit.assetID };
-								if crit.rank and crit.rank < 2 then
-									crit.rank = nil;
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-							elseif criteriaType == 68 or criteriaType == 72 then	-- Interact with Object (68) / Fish from a School (72)
-								crit._objects = { crit.assetID };
-								if crit.rank and crit.rank < 2 then
-									crit.rank = nil;
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-							elseif criteriaType == 7 then	-- Skill ID, Rank is Requirement
-								crit.requireSkill = crit.assetID;
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-							elseif criteriaType == 40 then	-- Skill ID Learned
-								crit.requireSkill = crit.assetID;
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								crit.rank = nil;
-							elseif criteriaType == 8 then	-- Achievements as Children
-								crit._achievements = { crit.assetID };
-								if crit.rank and crit.rank < 2 then
-									crit.rank = nil;
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-							elseif criteriaType == 12 then	-- Currencies (Collected Total)
-								if crit.rank and crit.rank < 2 then
-									crit.cost = { { "c", crit.assetID, 1 }};
-								else
-									crit.cost = { { "c", crit.assetID, crit.rank }};
-								end
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								crit.rank = nil;
-							elseif criteriaType == 26 then
-								-- 26: Environmental Deaths
-								--  0: fatigue
-								--  1: drowning
-								--  2: falling
-								--  3/5: fire/lava
-								-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
-								if crit.rank and totalCriteria == 1 then
-									info.rank = crit.rank;
-								end
-							elseif criteriaType == 29 or criteriaType == 69 then	-- Cast X Spell Y Times
-								if crit.rank and totalCriteria == 1 then
-									info.rank = crit.rank;
-								else
-									crit.spellID = crit.assetID;
-									crit.criteriaType = nil;
-									crit.assetID = nil;
-								end
-							elseif criteriaType == 46 then	-- Minimum Faction Requirement
-								crit.minReputation = { crit.assetID, crit.rank };
-								crit.criteriaType = nil;
-								crit.assetID = nil;
-								crit.rank = nil;
-							end
-							-- 28: Something to do with event-based encounters, not sure what assetID is.
-							-- 49: Something to do with Equipment Slots, assetID is the equipSlotID. (useless maybe?)
-							-- 52: Honorable kill on a specific Class, assetID is the ClassID. (useless maybe? might be able to use a class icon?)
-							-- 53: Honorable kill on a specific Class at level 35+, assetID is the ClassID. (useless maybe? might be able to use a class icon?)
-							-- 54: Show a critter you /love them, assetID is useless or not present.
-							-- 70: Honorable Kill at a specific place.
-							-- 71: Instance Clears, assetID is of an unknown type... might be Saved Instance ID?
-							-- 73: Mal'Ganis? Complete Objective? (useless)
-							-- 74: No idea, tracking of some kind
-							-- 92: Encounter Kills, of non-NPC type. (Group of NPCs - IE: Lilian Voss)
-						elseif criteriaType == 0 or criteriaType == 3 or criteriaType == 5 or criteriaType == 6 or criteriaType == 9 or criteriaType == 10 or criteriaType == 14 or criteriaType == 15 or criteriaType == 17 or criteriaType == 19 or criteriaType == 26 or criteriaType == 37 or criteriaType == 45 or criteriaType == 75 or criteriaType == 78 or criteriaType == 79 or criteriaType == 81 or criteriaType == 90 or criteriaType == 91 or criteriaType == 109 or criteriaType == 124 or criteriaType == 126 or criteriaType == 130 or criteriaType == 134 or criteriaType == 135 or criteriaType == 136 or criteriaType == 138 or criteriaType == 139 or criteriaType == 151 or criteriaType == 156 or criteriaType == 157 or criteriaType == 158 or criteriaType == 200 or criteriaType == 203 or criteriaType == 207 then
-							-- 0: Some tracking statistic, generally X/Y format and simple enough to not justify a type if no assetID is present.
-							-- 3: Collect X of something that's generic for Archeology
-							-- 5: Level Requirement
-							-- 6: Digsites (Archeology)
-							-- 9: Total Quests Completed
-							-- 10: Daily Quests, every day for X days.
-							-- 14: Total Daily Quests Completed
-							-- 15: Battleground battles
-							-- 17: Total Deaths
-							-- 19: Instances Run
-							-- 26: Environmental Deaths
-							-- 37: Ranked Arena Wins
-							-- 45: Bank Slots Purchased
-							-- 75: Mounts (Total - on one Character)
-							-- 78: Kill NPCs
-							-- 79: Cook Food
-							-- 81: Pet battle achievement points
-							-- 90: Gathering (Nodes)
-							-- 91: Pet Charm Totals
-							-- 109: Catch Fish
-							-- 124: Guild Member Repairs
-							-- 126: Guild Crafting
-							-- 130: Rated Battleground Wins
-							-- 134: Complete Quests
-							-- 135: Honorable Kills (Total)
-							-- 136: Kill Critters
-							-- 138: Guild Scenario Challenges Completed
-							-- 139: Guild Challenges Completed
-							-- 151: Guild Scenario Completed
-							-- 156: Collect Pets (Total)
-							-- 157: Collect Pets (Rare)
-							-- 158: Pet Battles
-							-- 200: Recruit Troops
-							-- 203: World Quests (Total Complete)
-							-- 207: Honor Earned (Total)
-							-- https://wowwiki-archive.fandom.com/wiki/API_GetAchievementCriteriaInfo
-							if crit.rank and totalCriteria == 1 then
-								info.rank = crit.rank;
-							end
-						elseif criteriaType == 38 or criteriaType == 39 or criteriaType == 58 or criteriaType == 63 or criteriaType == 65 or criteriaType == 66 or criteriaType == 76 or criteriaType == 77 or criteriaType == 82 or criteriaType == 83 or criteriaType == 84 or criteriaType == 85 or criteriaType == 86 or criteriaType == 107 or criteriaType == 128 or criteriaType == 152 or criteriaType == 153 or criteriaType == 163 then	-- Ignored
-							-- 38: Team Rating, which is irrelevant.
-							-- 39: Personal Rating, which is irrelevant.
-							-- 58: Killing Blows, might specifically be PvP.
-							-- 63: Total Gold (Spent on Travel)
-							-- 65: Total Gold (Spent on Barber Shop)
-							-- 66: Total Gold (Spent on Mail)
-							-- 76: Duels Won
-							-- 77: Duels Lost
-							-- 82: Auctions (Total Posted)
-							-- 83: Auctions (Highest Bid)
-							-- 84: Auctions (Total Purchases)
-							-- 85: Auctions (Highest Sold)]
-							-- 86: Most Gold Ever Owned
-							-- 107: Quests Abandoned
-							-- 128: Guild Bank Tabs
-							-- 152: Defeat Scenarios
-							-- 153: Ride to Location?
-							-- 163: Also ride to location
-							break;
-						elseif criteriaType == 59 or criteriaType == 62 or criteriaType == 67 or criteriaType == 80 then	-- Gold Cost, if available.
-							-- 59: Total Gold (Vendors)
-							-- 62: Total Gold (Quest Rewards)
-							-- 67: Total Gold (Looted)
-							-- 80: Total Gold (Auctions)
-							if crit.rank and crit.rank > 1 then
-								if totalCriteria == 1 then
-									-- Generic, such as the Bread Winner
-									info.rank = crit.rank;
-								else
-									crit.cost = { { "g", crit.assetID, crit.rank } };
-									crit.criteriaType = nil;
-									crit.assetID = nil;
-									info.rank = nil;
-								end
-							else
-								-- nothing
-							end
-						end
-						-- 155: Collect Battle Pets from a Raid, no assetID though RIP
-						-- 158: Defeat Master Trainers
-						-- 161: Capture a Battle Pet in a Zone
-						-- 163: Defeat an Encounter of some kind? AssetID useless
-						-- 169: Construct a building, assetID might be the buildingID.
-					end
-					tinsert(criteria, 1, crit);
-				end
-				if #criteria > 0 then info.criteria = criteria; end
-			end
-
-			HarvestedAchievementDatabase[achievementID] = info;
-			setmetatable(t, app.BaseAchievement);
-			t.collected = true;
-			return Name;
-		end
-		-- Save an empty value just so the Saved Variable table is always in order for easier partial-replacements if needed
-		HarvestedAchievementDatabase[achievementID] = 0;
-	end
-
-	AllTheThingsHarvestItems = HarvestedAchievementDatabase;
-	local name = t.name;
-	-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
-	if name then t.collected = true; end
-	return name;
-end
-harvesterFields.IsClassIsolated = true
-app.CreateAchievementHarvester = app.ExtendClass("Achievement", "AchievementHarvester", "achievementID", harvesterFields)

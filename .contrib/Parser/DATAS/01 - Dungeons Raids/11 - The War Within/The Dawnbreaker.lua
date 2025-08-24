@@ -5,21 +5,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	inst(1270, {	-- The Dawnbreaker
 		["coord"] = { 54.8, 62.9, HALLOWFALL },
 		["maps"] = { 2359 },	-- The Dawnbreaker
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(83322, {	-- The Dawnbreaker: The Christening
 					-- ["sourceQuests"] = { xx },	-- TODO: figure out when they become available
 					["provider"] = { "n", 215335 },	-- General Steelstrike
 					["coord"] = { 40.5, 50.8, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(226141),	-- Airship Captain's Lost Pendant
-					}
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2580, {	-- Speaker Shadowcrown
 					["crs"] = { 211087 },	-- Speaker Shadowcrown
-					["g"] = {
+					["groups"] = {
 						i(221136),	-- Devout Zealot's Ring
 						i(221135),	-- Fanatic's Blackened Shoulderwraps
 						i(221133),	-- Girdle of Somber Ploys
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2581, {	-- Anub'ikkaj
 					["crs"] = { 211089 },	-- Anub'ikkaj
-					["g"] = {
+					["groups"] = {
 						i(221137),	-- Black Shepherd's Guisarme
 						i(221139),	-- Dark Priest's Carapace
 						i(221202),	-- Defiance Crusher's Sabatons
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2593, {	-- Rasha'nan
 					["crs"] = { 213937 },	-- Rasha'nan
-					["g"] = {
+					["groups"] = {
 						ach(40599),	-- The Dawnbreaker
 						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
 						i(223116),	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2593, {	-- Rasha'nan
 					["crs"] = { 213937 },	-- Rasha'nan
-					["g"] = {
+					["groups"] = {
 						ach(40601),	-- Heroic: The Dawnbreaker
 					},
 				}),
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2593, {	-- Rasha'nan
 					["crs"] = { 213937 },	-- Rasha'nan
-					["g"] = {
+					["groups"] = {
 						ach(40604),	-- Mythic: The Dawnbreaker
 					},
 				}),

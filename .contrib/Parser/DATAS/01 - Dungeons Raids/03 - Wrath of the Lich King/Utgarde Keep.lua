@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(285, {	-- Utgarde Keep
 		["mapID"] = UTGARDE_KEEP,
 		["coord"] = { 58.2, 48.9, HOWLING_FJORD },
@@ -91,8 +91,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(11272, {	-- A Score to Settle
-					["qg"] = 23780,	-- High Executor Anselm
 					["sourceQuest"] = 11234,	-- Report to Anselm
+					["qg"] = 23780,	-- High Executor Anselm
 					["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 67, 10),
@@ -123,8 +123,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13205, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {
@@ -182,8 +182,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(11251, {	-- Fresh Legs
-					["qg"] = 24106,	-- Scout Valory
 					["sourceQuest"] = 11244,	-- Rescuing the Rescuers
+					["qg"] = 24106,	-- Scout Valory
 					["coord"] = { 55.9, 55.7, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -202,8 +202,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(11252, {	-- Into Utgarde!
-					["qg"] = 24111,	-- Defender Mordun
 					["sourceQuest"] = 11251,	-- Fresh Legs
+					["qg"] = 24111,	-- Defender Mordun
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -218,8 +218,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29763, {	-- Stealing Their Thunder
-					["qg"] = 24111,	-- Defender Mordun
 					["sourceQuest"] = 11251,	-- Fresh Legs
+					["qg"] = 24111,	-- Defender Mordun
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -488,7 +488,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(285, {

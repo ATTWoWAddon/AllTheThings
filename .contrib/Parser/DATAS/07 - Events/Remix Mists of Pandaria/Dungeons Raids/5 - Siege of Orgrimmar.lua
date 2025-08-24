@@ -25,7 +25,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				569,
 				570,
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19958, {	-- Raid Finder: Siege of Orgrimmar
 						crit(65761, {	-- Immerseus
@@ -631,7 +631,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),
@@ -845,7 +845,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),
@@ -1158,7 +1158,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),

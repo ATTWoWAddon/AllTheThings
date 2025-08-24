@@ -10,13 +10,13 @@ local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
 	["questID"] = 59612,
 	["isDaily"] = true,
 	["coord"] = { 45.8, 79.0, REVENDRETH },
-	["g"] = {
+	["groups"] = {
 		q(59607, {	-- Takin' Down the Beast
 			["description"] = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
 			["provider"] = { "n", 165327 },	-- Wingsmash
-			["repeatable"] = true,
 			["coord"] = { 46.30, 77.7, REVENDRETH },
 			["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
+			["repeatable"] = true,
 		}),
 		o(348676, {	-- Ballista Bolt
 			["coords"] = {
@@ -31,7 +31,7 @@ local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
 				{ 43.3, 78.4, REVENDRETH },
 				{ 42.2, 80.6, REVENDRETH },
 			},
-			["g"] = { i(176397) },	-- Dredhollow Bolt (QI!)
+			["groups"] = { i(176397) },	-- Dredhollow Bolt (QI!)
 		}),
 		SHRIEKERS_VOICEBOX,
 		i(180461),	-- Horrid Dredwing (MOUNT!)
@@ -43,7 +43,7 @@ local FORGEMASTER_MADALAV = n(159496, {	-- Forgemaster Madalav
 	["questID"] = 61618,
 	["isDaily"] = true,
 	["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer
-	["g"] = {
+	["groups"] = {
 		FORGEMASTERS_MANYFOLD_RAPIER,
 		i(180939),	-- Mantle of the Forgemaster's Dark Blades
 	},
@@ -53,12 +53,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641397,
-			["g"] = {
+			["groups"] = {
 				n(ANIMA_CONDUCTOR, {
 					["icon"] = 3854016,
-					["g"] = sharedData({ ["icon"] = 3854016 }, {
+					["groups"] = sharedData({ ["icon"] = 3854016 }, {
 						n(REWARDS, {
-							["g"] = {
+							["groups"] = {
 								currency(GRATEFUL, {
 									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
 								}),
@@ -81,17 +81,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(TREASURES, {
 								o(356757, {	-- Greed's Desire
-									["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+									["description"] = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
 									["questID"] = 61646,
 									["isDaily"] = true,
 									["coord"] = { 71.9, 34.5, REVENDRETH },
 								}),
 								o(354211, {	-- Greed's Reward
-									["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
+									["description"] = "Part of the Greater Greedstone treasure. Requires focusing the Anima Conductor at Crypt of the Forgotten.",
 									["questID"] = 61045,
 									["isDaily"] = true,
 									["coord"] = { 46.0, 29.1, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182768, {	-- The Enchanted Dragon
 											i(182766),	-- Golden Egg
 										}),
@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["coord"] = { 71.5, 76.3, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182291),	-- Anima Cage (QI!)
 									},
 								}),
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173127 },	-- Thinman
 									["coord"] = { 71.4, 74.4, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182583),	-- Mire Creeper (QI!)
 									},
 								}),
@@ -124,7 +124,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(61707, {	-- Crumbled Reality
 									["provider"] = { "n", 173036 },	-- Thickman
 									["coord"] = { 71.3, 74.5, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182158),	-- Infused Rubble (QI!)
 									},
 								}),
@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(61849, {	-- Take the Bite Out of 'Em
 									["provider"] = { "n", 173630 },	-- Partially-eaten Iger
 									["coord"] = { 71.2, 74.4, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182692),	-- Venthyr Fang (QI!)
 									},
 								}),

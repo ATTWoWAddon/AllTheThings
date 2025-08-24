@@ -1,0 +1,3 @@
+11.2.0.61476
+fp(3026),	-- Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
+fp(3111),	-- Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC

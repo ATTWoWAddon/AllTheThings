@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57261 },	-- Walk the Path, Aspirant
 					["provider"] = { "n", 165107 },	-- Kleia
 					["coord"] = { 48.3, 72.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175626),	-- Courageous Aspirant's Breeches
 						i(175625),	-- Humble Aspirant's Leggings
 						i(175623),	-- Judicious Aspirant's Legguards
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57709 },	-- The Aspirant's Crucible
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 56.1, 81.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173797),	-- Amulet of Heroic Accomplishment
 						i(173344),	-- Band of Chronicled Deeds
 					},
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.5, 82.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(177954),	-- Condensed Anima Mote (QI!)
 					},
 				}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(172516),	-- Glowing Viscera (QI!)
 					},
 				}),
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(172518),	-- Adrima's Lily (QI!)
 					},
 				}),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59920 },	-- Light the Forge, Forgelite
 					["provider"] = { "n", 158807 },	-- Forgelite Sophone
 					["coord"] = { 52.9, 83.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173318),	-- Waylight Breastplate
 						i(173319),	-- Waylight Chainmail
 						i(173320),	-- Waylight Tunic
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158862 },	-- Kleia
 					["coord"] = { 81.6, 80.9, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173326),	-- Sparring Trainer's Gauntlets
 						i(173328),	-- Sparring Trainer's Gloves
 						i(173325),	-- Sparring Trainer's Grips
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57291 },	-- The Chamber of First Reflectiont
 					["provider"] = { "n", 159583 },	-- Kleia
 					["coord"] = { 57.2, 86.5, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173324),	-- Boots of Inner Calm
 						i(173323),	-- Contemplative Striders
 						i(173321),	-- Footguards of Self-Reflection
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 59.4, 78.0, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173343),	-- Belt of Uncertain Devotion
 						i(173342),	-- Cinch of Uncertain Devotion
 						i(173340),	-- Cincture of Uncertain Devotion
@@ -288,26 +288,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 59.3, 77.0, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(176335),	-- Chime of Melodic Reflection
 						i(176333),	-- Melody Defender's Bulwark
 					},
 				}),
 				q(57719, {	-- Dangerous Discourse
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["altQuests"] = { 60292 },	-- Dangerous Discourse
 					["provider"] = { "o", 344726  },	-- Dark Sermon
 					["coord"] = { 57.2, 71.8, BASTION },
-					["altQuests"] = { 60292 },	-- Dangerous Discourse
-					["g"] = {
+					["groups"] = {
 						i(171215),	-- Dark Sermon (QI!)
 					},
 				}),
 				q(60292, {	-- Dangerous Discourse
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["altQuests"] = { 57719 },	-- Dangerous Discourse
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
-					["altQuests"] = { 57719 },	-- Dangerous Discourse
-					["g"] = {
+					["groups"] = {
 						i(171215),	-- Dark Sermon (QI!)
 					},
 				}),
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57446 },	-- The Enemy You Know
 					["provider"] = { "n", 157673 },	-- Disciple Kosmas
 					["coord"] = { 64.2, 71.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(176337),	-- Skytone Quickblade
 						i(176388),	-- Guidenote Dagger
 						i(176390),	-- Silverchime Gavel
@@ -357,7 +357,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(178092),	-- Battered Scroll (QI!)
 						i(178046),	-- Locus Manual (QI!)
 					},
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(178094),	-- Centurion Core (QI!)
 					},
 				}),
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 57.1, 61.6, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175704),	-- Reverberating Silver Band
 					},
 				}),
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58800 },	-- The Mnemonic Locus
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 57.5, 61.8, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(183802),	-- Memory of the Forsworn (QI!)
 					},
 				}),
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58978 },	-- Lysonia's Truth
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 57.2, 55.3, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173331),	-- Courageous Aspirant's Helm
 						i(173330),	-- Humble Aspirant's Helm
 						i(173315),	-- Judicious Aspirant's Helm
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58979 },	-- I MADE You!
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 57.2, 55.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(178146),	-- Carved Kyrian Idol (QI!)
 						i(178145),	-- Ceremonial Offering (QI!)
 					},
@@ -453,7 +453,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59197 },	-- Steward at Work
 					["provider"] = { "n", 165048 },	-- Polemarch Adrestes
 					["coord"] = { 52.8, 45.6, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175703),	-- Silverspire Signet
 						i(173316),	-- Skyloom Cloak
 					},
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167269 },	-- Disciple Apolon
 					["coord"] = { 41.2, 54.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175718),	-- Ascended Defender's Crest
 					},
 				}),
@@ -495,7 +495,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167135 },	-- Mikanikos
 					["coord"] = { 40.7, 55.5, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(178043),	-- Anima Conflux (QI!)
 						i(178041),	-- Archonic Resonator (QI!)
 						i(178042),	-- Eternity Plating (QI!)
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						60007,	-- Stay Scrappy
 					},
 					["provider"] = { "n", 167164 },	-- Thanikos
-					["g"] = {
+					["groups"] = {
 						i(178140),	-- Archonic Resonator (QI!)
 					},
 				}),
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 167423 },	-- Thanikos
 					["coord"] = { 39.4, 55.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173338),	-- Waylight Shoulderpads
 						i(173336),	-- Waylight Epaulets
 						i(173339),	-- Waylight Shoulderguards
@@ -598,7 +598,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158181 },	-- Agthia
 					["coord"] = { 46.5, 63.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175719),	-- Agitha's Void-Tinged Speartip
 					},
 				}),
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175791),	-- Ariella's Wing (QI!)
 					},
 				}),
@@ -616,7 +616,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59262 },	-- Broken Wings
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175792),	-- Larion Flight Feather (QI!)
 					},
 				}),
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175968),	-- Animyllis Bloom (QI!)
 					},
 				}),
@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175967),	-- Etherwyrm Filament (QI!)
 					},
 				}),
@@ -648,7 +648,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(176812),	-- Animyllis Bloom (QI!)
 						i(180839),	-- Helpful Glimmerfly (PET!)
 					},
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59311 },	-- How to Catch a Glimmerfly
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.82, 42.73, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(177951),	-- Glimmerflies on Strings (TOY!)
 					},
 				}),
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57529 },	-- Garden in Turmoil
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.3, 59.6, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(172039),	-- Comfy Comfort Pillow (QI!)
 						i(172036),	-- Kala's Slobber Ball (QI!)
 						i(172037),	-- Mister Mikanikos (QI!)
@@ -696,7 +696,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57547 },	-- A Test of Courage
 					["provider"] = { "n", 158004 },	-- Zosime
 					["coord"] = { 51.2, 56.8, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(172141),	-- Korinna's Allaying Crook (QI!)
 						i(175616),	-- Courageous Aspirant's Gloves
 						i(175619),	-- Humble Aspirant's Gauntlets
@@ -709,7 +709,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(57860, {	-- How to Become Forsworn
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 36.6, 37.6, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175277),	-- Forsworn Uniform Piece (QI!)
 						i(173029),	-- Quartermaster's Insignia (QI!)
 					},
@@ -730,7 +730,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57861 },	-- Just Act Natural
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 42.7, 39.3, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175754),	-- Mark of Humility (QI!)
 					},
 				}),
@@ -738,7 +738,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57861 },	-- Just Act Natural
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 42.7, 39.3, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175755),	-- Mark of Knowledge (QI!)
 					},
 				}),
@@ -754,7 +754,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57966 },	-- You Go First
 					["provider"] = { "n", 159272 },	-- Artificer Ligiea
 					["coord"] = { 61.8, 50.3, 1714 },	-- Third Chamber of Kalliope
-					["g"] = {
+					["groups"] = {
 						i(173354),	-- Spear of Kalliope (QI!)
 					},
 				}),
@@ -762,7 +762,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57989 },	-- The Spear of Kalliope
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 43.2, 38.5, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(180452),	-- Spear of Kalliope (QI!)
 					},
 				}),
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 159248 },	-- Haetio
 					["coord"] = { 43.2, 38.5, BASTION },
 					["customCollect"] = "SL_COV_KYR",
-					["g"] = {
+					["groups"] = {
 						i(180452),	-- Spear of Kalliope (QI!)
 					},
 				}),
@@ -779,19 +779,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.AchCriteria, 14801.05, {	-- Pride or Unit
 				q(59674, {	-- A Friendly Rivalry
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["altQuests"] = { 63068 },	-- Settling Disputes
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 57.4, 54.2, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 63068 },	-- Settling Disputes
 				}),
 				-- Nemea
 				q(58184, {	-- Antiquated Methodology
 					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
 					["sourceQuests"] = { 57937 },	-- Tactical Formation
+					["altQuests"] = { 58185 },	-- Success Without Soul
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 58185 },	-- Success Without Soul
 				}),
 				q(58037, {	-- Part of the Pride
 					["sourceQuests"] = {
@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58037 },	-- Part of the Pride
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173690),	-- Cloudstrider Antler (QI!)
 					},
 				}),
@@ -822,7 +822,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173692),	-- Nemea's Javelin (QI!)
 					},
 				}),
@@ -833,7 +833,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173702),	-- Cloudfeather Essence (QI!)
 					},
 				}),
@@ -844,7 +844,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173335),	-- Courageous Aspirant's Breeches
 						i(173334),	-- Humble Aspirant's Leggings
 						i(173332),	-- Judicious Aspirant's Legguards
@@ -855,10 +855,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(58185, {	-- Success Without Soul
 					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
 					["sourceQuests"] = { 58042 },	-- On Larion Wings
+					["altQuests"] = { 58184 },	-- Antiquated Methodology
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 58184 },	-- Antiquated Methodology
 				}),
 				q(57931, {	-- Phalynx Malfunction
 					["sourceQuests"] = {
@@ -876,7 +876,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173691),	-- Anima Drainer (QI!)
 					},
 				}),
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173307),	-- Reinforced Armor (QI!)
 					},
 				}),
@@ -900,7 +900,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(173269),	-- Training Gem (QI!)
 					},
 				}),
@@ -908,7 +908,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57933 },	-- We Can Rebuild Him
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(175615),	-- Courageous Aspirant's Boots
 						i(175638),	-- Courageous Aspirant's Wristwraps
 						i(175614),	-- Humble Aspirant's Sabatons
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 54.7, 41.1, BASTION },
 				}),
 				q(60296, {	-- Pride or Unit (Nemea - Larion)
-					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+					["sourceQuests"] = {	-- requires completion of both chains. both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
 						58042,	-- On Larion Wings
 						57937,	-- Tactical Formation
 					},
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 57.2, 39.2, BASTION },
 				}),
 				q(58103, {	-- Pride or Unit (Pelodis - Phalynx)
-					["sourceQuests"] = {	-- requires completion of both chains.  both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
+					["sourceQuests"] = {	-- requires completion of both chains. both quests are available, it's just which NPC you want to pick it up from/which one you're nearest
 						58042,	-- On Larion Wings
 						57937,	-- Tactical Formation
 					},
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 160598 },	-- Klystere
 				["coord"] = { 47.8, 73.2, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(178885),	-- Cloudstrider Pelt (QI!)
 					i(178891),	-- Elysian Thread (QI!)
 					i(178890),	-- Larion Plume (QI!)
@@ -963,7 +963,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60466 },	-- The Old Ways
 				["provider"] = { "n", 160598 },	-- Klystere
 				["coord"] = { 47.8, 73.2, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(183966),	-- Klystere's Gift (QI!)
 				},
 			}),
@@ -971,7 +971,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 				["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 				["coord"] = { 47.8, 73.2, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(183967),	-- Cultivated Windblossom (QI!)
 				},
 			}),
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 				["provider"] = { "n", 157138 },	-- Aspirant Akimos
 				["coord"] = { 55.3, 83.4, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(173023),	-- Bear Witness: The Watcher's Code (QI!)
 					i(173025),	-- The Infinite Treatises (QI!)
 					i(173024),	-- Worlds Beyond Counting (QI!)
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "o", 352028 },	-- Wanted Scroll
 				["coord"] = { 49.1, 72.8, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(173349),	-- Misfiring Centurion Controller
 				},
 			}),
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 				["provider"] = { "o", 352027 },	-- Wanted Scroll
 				["coord"] = { 53.2, 46.4, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(178791),	-- Carved Cloudfeather Call (QI!)
 					i(178790),	-- Umbral Plume (QI!)
 					i(175762),	-- Larion Tamer's Cloak
@@ -1045,7 +1045,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60735 },	-- Trouble in Paradise
 				["provider"] = { "o", 352027 },	-- Wanted Scroll
 				["coord"] = { 53.2, 46.4, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(178683),	-- Gorgebeak's Bill (QI!)
 					i(173345),	-- Cranefeather Bracers
 					i(173346),	-- Beakblockers
@@ -1060,8 +1060,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62916, {	-- Your Next Best Friend
 				["sourceQuests"] = { 59196 },	-- Go in Service
 				["provider"] = { "n", 175426 },	-- Sika
-				["isWeekly"] = true,
 				["coord"] = { 53.0, 47.6, BASTION },
+				["isWeekly"] = true,
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(59015, {	-- Hostile Recollection
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}, {
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(172518),	-- Adrima's Lily (QI!)
 						i(181571),	-- Spiritmender's Handwraps
 						i(181580),	-- Soulbearer's Gloves
@@ -1088,13 +1088,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(62735, {	-- Hostile Recollection [Pre-60]
 					["coord"] = { 56.9, 59.9, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(181703),	-- Skychime Necklace
 					},
 				}),
 				q(62732, {	-- Locus Focus [Pre-60]
 					["coord"] = { 54.7, 64.1, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(181575),	-- Spiritmender's Cord
 						i(181587),	-- Soulbearer's Belt
 						i(181603),	-- Forgehand's Chain
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(62736, {	-- Maldraxxi Eviction Notice [Pre-60]
 					["coord"] = { 40.4, 53.6, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(181569),	-- Spiritmender's Robe
 						i(181577),	-- Soulbearer's Vest
 						i(181591),	-- Forgehand's Hauberk
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(62705, {	-- Scour the Temple [Pre-60]
 					["coord"] = { 58.4, 75.2, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(181721),	-- Ascendent Valor Signet
 					},
 				}),

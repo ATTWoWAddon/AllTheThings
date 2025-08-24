@@ -14,17 +14,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					77572/77887 were additional triggers, so one of them may be an account-wide unlock
 			},
 			]]--
-			["g"] = {
+			["groups"] = {
 				n(QUESTS, sharedData({ ["isWorldQuest"] = true, ["maxReputation"] = { FACTION_DREAM_WARDENS, 20 }, }, {
 					q(76520, {	-- A Shared Dream
 						["coord"] = { 63.7, 73.4, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(208983),	-- Yvelyn''s Assistance (QI!)
 						},
 					}),
 					q(76519, {	-- All The Children
 						["coord"] = { 58.2, 51.3, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(208738),	-- Ephemeral Pear (QI!)
 						},
 					}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					q(76992, {	-- Fickle Judgment
 						["coord"] = { 38.8, 68.6, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(210227),	-- Q'onzu's Faerie Feather (QI!)
 						},
 					}),
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					q(76518, {	-- Root Security
 						["coord"] = { 58.9, 49.5, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(208447),	-- Purifying Tangle (QI!)
 						},
 					}),
@@ -189,19 +189,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					q(76551, {	-- Treasure Diving
 						["coord"] = { 51.4, 34.6, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(208801),	-- Handful of Rubble (QI!)
 						},
 					}),
 					q(76550, {	-- True Sight
 						["coord"] = { 58.1, 49.6, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(208841),	-- True Sight (QI!)
 						},
 					}),
 					q(76993, {	-- Turtle Power
 						["coord"] = { 42.6, 81.6, EMERALD_DREAM },
-						["g"] = {
+						["groups"] = {
 							i(211302),	-- Slumberfruit (QI!)
 						},
 					}),

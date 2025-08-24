@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 40900, {	-- Undermined
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83139 },	-- Mixed Messages
 						["provider"] = { "n", 227691 },	-- Orweyna
 						["coord"] = { 65.9, 75.4, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(232752),	-- Suspiciously Stained Greaves
 							i(232747),	-- Suspiciously Stained Legguards
 							i(232741),	-- Suspiciously Stained Shoulderguards
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83143 },	-- Good Honest Work
 						["provider"] = { "n", 225596 },	-- Orweyna
 						["coord"] = { 71.9, 80.5, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(232417),	-- Circle of Cleansing
 							i(232418),	-- Ring of Purification
 						},
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 84683 },	-- Into the Gutter
 						["provider"] = { "n", 225772 },	-- Pamsy
 						["coord"] = { 71.5, 83.5, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(232353),	-- Silent Strike Chestguard
 							i(232398),	-- Silent Strike Gloves
 							i(232396),	-- Silent Strike Helmet
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 225599 },	-- Renzik "The Shiv"
 						["coord"] = { 70.5, 88.8, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(231089),	-- Correspondence from Zirdo (QI!)
 						},
 					}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 225598 },	-- Monte Gazlowe
 						["coord"] = { 70.5, 88.7, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							o(452923, {	-- Chillburst Canister
 								i(224846),	-- Chillburst Canister (QI!)
 							}),
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 225598 },	-- Monte Gazlowe
 						["coord"] = { 70.5, 88.7, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(232441),	-- Boreal Battleaxe
 							i(232442),	-- Boreal Blade
 							i(238250), 	-- Boreal Cleaver
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 229246 },	-- Grimla Fizzlecrank
 						["coord"] = { 45.2, 42.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(238251),	-- Grateful Goblin's Blade
 							i(232452),	-- Grateful Goblin's Cudgel
 							i(232449),	-- Grateful Goblin's Dagger
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83163 },	-- Split Venture
 						["provider"] = { "n", 225618 },	-- Pamsy
 						["coord"] = { 43.7, 61.0, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232902),	-- Spy-copter Footage Roll (QI!)
 						},
 					}),
@@ -204,10 +204,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83163 },	-- Split Venture
 						["provider"] = { "n", 225659 },	-- Orweyna
 						["coord"] = { 43.4, 61.0, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							o(500345, {	-- Ethereal Warning Letter
 								["coord"] = { 33.6, 48.6, UNDERMINE },
-								["g"] = { i(232944) },	-- Ethereal Warning Letter (QI!)
+								["groups"] = { i(232944) },	-- Ethereal Warning Letter (QI!)
 							}),
 						},
 					}),
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83169 },	-- Long Way from Booty Bay
 						["provider"] = { "n", 225686 },	-- Baron Revilgaz
 						["coord"] = { 30.7, 39.4, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232761),	-- Desperate Goblin's Belt
 							i(232750),	-- Desperate Goblin's Spaulders
 							i(232740),	-- Desperate Goblin's Gloves
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83172 },	-- Black Blood Baton Pass
 						["provider"] = { "n", 229235 },	-- Monte Gazlowe
 						["coord"] = { 61.7, 72.0, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232399),	-- Zirdo's Dirty Greaves
 							i(232393),	-- Zirdo's Dirty Grips
 							i(232395),	-- Zirdo's Dirty Headgear
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83172 },	-- Black Blood Baton Pass
 						["provider"] = { "o", 500619 },	-- Zirdo's Ledger
 						["coord"] = { 65.6, 80.8, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(224797),	-- Zirdo's Ledger (QI!)
 						},
 					}),
@@ -289,14 +289,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83115 },	-- In the Mix
 						["provider"] = { "n", 225624 },	-- Marin Noggenfogger
 						["coord"] = { 27.4, 70.8, UNDERMINE },
-						["g"] = {
-							o(452866, {	-- Semi-Deluxe Noggenfogger Elixirs
+						["groups"] = {
+							o_repeated({
 								["coord"] = { 27.6, 70.9, UNDERMINE },
-								["g"] = { i(226157) },	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
-							}),
-							o(495146, {	-- Semi-Deluxe Noggenfogger Elixirs
-								["coord"] = { 27.6, 70.8, UNDERMINE },
-								["g"] = { i(226157) },	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
+								["groups"] = {
+									o(452866),	-- Semi-Deluxe Noggenfogger Elixirs
+									o(495146),	-- Semi-Deluxe Noggenfogger Elixirs
+									i(226157),	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
+								},
 							}),
 						},
 					}),
@@ -309,14 +309,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83117 },	-- Chasing a Lead
 						["provider"] = { "n", 225635 },	-- Monte Gazlowe
 						["coord"] = { 46.0, 78.6, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							o(452867, {	-- Employee Schedule
 								["coords"] = {
 									{ 46.7, 86.1, UNDERMINE },
 									{ 48.0, 85.9, UNDERMINE },
 									{ 49.5, 87.9, UNDERMINE },
 								},
-								["g"] = { i(226380) },	-- Employee Schedule (QI!)
+								["groups"] = { i(226380) },	-- Employee Schedule (QI!)
 							}),
 						},
 					}),
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83117 },	-- Chasing a Lead
 						["provider"] = { "n", 225637 },	-- Grimla Fizzlecrank
 						["coord"] = { 45.9, 78.9, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(226358),	-- Spare Venture Co. Uniform (QI!)
 						},
 					}),
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 225638 },	-- Grimla Fizzlecrank
 						["coord"] = { 53.4, 71.0, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							o(456073, {	-- Sputtering Taserblade
 								i(226391),	-- Sputtering Taserblade (QI!)
 							}),
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83933 },	-- The Kaja'Coast
 						["provider"] = { "n", 225645 },	-- Monte Gazlowe
 						["coord"] = { 22.2, 54.4, ZULDAZAR },
-						["g"] = {
+						["groups"] = {
 							i(226823),	-- Bilgewater Auto-Grappler (QI!)
 							i(226824),	-- Handful of B.I.R.D. Parts (QI!)
 						},
@@ -372,7 +372,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 228132 },	-- Renzik "The Shiv"
 						["coord"] = { 22.0, 57.6, ZULDAZAR },
-						["g"] = {
+						["groups"] = {
 							n(225847, {	-- Venture Supervisor
 								i(226854),	-- Crumpled Paystub (QS!)
 							}),
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							84122,	-- Cut the Cameras
 						},
 						["provider"] = { "i", 226854 },	-- Crumpled Paystub (QS!)
-						["g"] = {
+						["groups"] = {
 							i(232464),	-- Crumpled Paystub (QI!)
 						},
 					}),
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83124 },	-- B.I.R.D. Watching
 						["provider"] = { "n", 225648 },	-- Monte Gazlowe
 						["coord"] = { 22.0, 57.7, ZULDAZAR },
-						["g"] = {
+						["groups"] = {
 							i(232883),	-- Turbo-Drain 5000
 						},
 					}),
@@ -418,17 +418,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				header(HEADERS.AchCriteria, 40900.04, {	-- Chapter 4: Breaking the Shackles
 					q(83126, {	-- Ethereal Invasion
 						["sourceQuests"] = { 83125 },	-- Price Hike
-						["providers"] = {
-							{ "n", 225669 },	-- Alleria Windrunner
-							{ "n", 232660 },	-- Alleria Windrunner (mobile)
+						["qgs"] = {
+							225669,	-- Alleria Windrunner
+							232660,	-- Alleria Windrunner (mobile)
 						},
 						["coord"] = { 29.4, 69.4, UNDERMINE },
 					}),
 					q(85449, {	-- Phase Shift
 						["sourceQuests"] = { 83125 },	-- Price Hike
-						["providers"] = {
-							{ "n", 225669 },	-- Alleria Windrunner
-							{ "n", 232660 },	-- Alleria Windrunner (mobile)
+						["qgs"] = {
+							225669,	-- Alleria Windrunner
+							232660,	-- Alleria Windrunner (mobile)
 						},
 						["coord"] = { 29.4, 69.4, UNDERMINE },
 					}),
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83127 },	-- Racing the Clock
 						["provider"] = { "n", 225719 },	-- Monte Gazlowe
 						["coord"] = { 55.6, 63.5, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232405),	-- Cinch of the Liberator
 							i(232403),	-- Sabatons of the Liberator
 							i(232401),	-- Shoulderguards of the Liberator
@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 85174 },	-- Get Out There
 						["provider"] = { "n", 226660 },	-- Dirk Greasedealer
 						["coord"] = { 48.6, 40.7, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(228196),	-- Anti-Darkfuse Pamphlets (QI!)
 						},
 					}),
@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 85174 },	-- Get Out There
 						["provider"] = { "n", 226660 },	-- Dirk Greasedealer
 						["coord"] = { 48.6, 40.7, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(228196),	-- Anti-Darkfuse Pamphlets (QI!)
 						},
 					}),
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83197 },	-- Who Owns the Streets?
 						["provider"] = { "n", 225868 },	-- Baron Revilgaz
 						["coord"] = { 58.4, 33.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							o(482270, {	-- Blackwater Ordinance
 								["coords"] = {
 									{ 60.2, 23.0, UNDERMINE },
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 									{ 61.8, 24.3, UNDERMINE },
 									{ 61.9, 17.6, UNDERMINE },
 								},
-								["g"] = { i(228975) },	-- Blackwater Cannonball (QI!)
+								["groups"] = { i(228975) },	-- Blackwater Cannonball (QI!)
 							}),
 						},
 					}),
@@ -526,7 +526,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83197 },	-- Who Owns the Streets?
 						["provider"] = { "n", 225867 },	-- Marin Noggenfogger
 						["coord"] = { 58.4, 33.2, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(226217),	-- Lime (QI!)
 							o(480708, {	-- Overpriced Tropical Punch
 								["coords"] = {
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 									{ 61.9, 20.1, UNDERMINE },
 									{ 64.9, 19.6, UNDERMINE },
 								},
-								["g"] = {
+								["groups"] = {
 									i(226219),	-- Kaja'mite Fragment (QI!)
 									i(226203),	-- Sliced Lime (QI!)
 								},
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 225870 },	-- Fleet Master Seahorn
 						["coord"] = { 63.9, 17.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(226372),	-- Noggenfogger Deluxe with Lime (QI!)
 						},
 					}),
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83200 },	-- A Vast, Ye Swabs
 						["provider"] = { "n", 233296 },	-- Fleet Master Seahorn
 						["coord"] = { 63.9, 17.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232486),	-- Noggenfogger Ultimate Deluxe
 						},
 					}),
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 						["provider"] = { "n", 233390 },	-- Pamsy
 						["coord"] = { 48.5, 77.6, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(233513),	-- Coolant Core (QI!)
 							i(234489),	-- Dented Bloodhose (QI!)
 							i(233512),	-- Kaja'fused Coupling (QI!)
@@ -622,7 +622,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 86417 },	-- Ready Check
 						["provider"] = { "n", 230268 },	-- Monte Gazlowe
 						["coord"] = { 56.3, 67.2, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(232356),	-- Chainmail of the Undermine Revolutionary
 							i(232406),	-- Headgear of the Undermine Revolutionary
 							i(232407),	-- Boots of the Undermine Revolutionary
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuests"] = { 83206 },	-- We Own the Streets
 						["provider"] = { "n", 225878 },	-- Monte Gazlowe
 						["coord"] = { 56.5, 44.7, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(235516),	-- The Severance Package (COSMETIC!)
 						},
 					}),
@@ -643,12 +643,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["coord"] = { 56.5, 44.7, UNDERMINE },
 					}),
 				}),
-				header(HEADERS.AchCriteria, 40900.06, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {	-- Chapter 6: Homecoming TODO
+				header(HEADERS.AchCriteria, 40900.06, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {	-- Chapter 6: Homecoming
 					q(86204, {	-- Liberation of Undermine: The House Loses
 						["sourceQuest"] = 85780,	-- Right Where We Want Him
 						["provider"] = { "n", 233482 },	-- Monte Gazlowe
 						["coord"] = { 43.6, 51.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(230936),	-- Enchanted Runed Undermine Crest
 							i(236954),	-- Void-Touched Valorstone
 						},
@@ -667,18 +667,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["sourceQuest"] = 85190,	-- Settled Dust
 						["provider"] = { "n", 234783 },	-- Master Mathias Shaw
 						["coord"] = { 30.0, 86.1, WESTFALL },
-						["g"] = {
+						["groups"] = {
 							o(503303, {	-- Old Copy of "Undermine Weekly"
 								["coord"] = { 30.5, 85.8, WESTFALL },
-								["g"] = { i(233657) },	-- Old Copy of "Undermine Weekly" (QI!)
+								["groups"] = { i(233657) },	-- Old Copy of "Undermine Weekly" (QI!)
 							}),
 							o(503302, {	-- Unused Fishing Gear
 								["coord"] = { 29.8, 85.5, WESTFALL },
-								["g"] = { i(233656) },	-- Pristine Fishing Gear (QI!)
+								["groups"] = { i(233656) },	-- Pristine Fishing Gear (QI!)
 							}),
 							o(503301, {
 								["coord"] = { 30.1, 86.4, WESTFALL },
-								["g"] = { i(233655) },	-- Well-Worn Throwing Knives (QI!)
+								["groups"] = { i(233655) },	-- Well-Worn Throwing Knives (QI!)
 							}),
 						},
 					}),
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["coord"] = { 30.7, 86.1, WESTFALL },
 						["questID"] = 86904,
 						["classes"] = ROGUE,
-						["g"] = {
+						["groups"] = {
 							i(235629),	-- Renzik's Journal
 							i(237267),	-- Spare Uncrowned Vest
 						},
@@ -744,7 +744,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84217 },	-- The Highst
 					["provider"] = { "n", 228341 },	-- Skedgit Cinderbangs
 					["coord"] = { 61.6, 32.3, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232734),	-- Enshrouded Cloak
 						i(232735),	-- Silent Veil
 					},
@@ -768,7 +768,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 228158 },	-- Ripsnoodle
 					["coord"] = { 65.2, 59.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232760),	-- Elite Golfer's Legguards
 						i(232742),	-- Elite Golfer's Armbands
 						i(232751),	-- Elite Golfer's Belt
@@ -781,7 +781,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83130 },	-- Sour Victory
 					["provider"] = { "n", 225481 },	-- Slimediver Kazzandra
 					["coord"] = { 40.6, 87.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(226223),	-- Stinging Residue (QI!)
 					},
 				}),
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 225481 },	-- Slimediver Kazzandra
 					["coord"] = { 40.6, 87.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232777),	-- Slimediver's Girdle
 						i(232772),	-- Slimediver's Trousers
 						i(232780),	-- Slimediver's Gloves
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83130 },	-- Sour Victory
 					["provider"] = { "n", 226728 },	-- Humphrey Shortswig
 					["coord"] = { 38.1, 88.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(228614),	-- Comprehend Rat Language Potion (QI!)
 					},
 				}),
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83484 },	-- Oh, Rats!
 					["provider"] = { "n", 226710 },	-- Alice Grillspark
 					["coord"] = { 33.0, 84.3, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(228614),	-- Comprehend Rat Language Potion (QI!)
 					},
 				}),
@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83485 },	-- Potent Potables
 					["provider"] = { "o", 454456 },	-- Note
 					["coord"] = { 32.4, 55.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232783),	-- Sewer Wanderer's Belt
 						i(232781),	-- Sewer Wanderer's Bracers
 						i(232776),	-- Sewer Wanderer's Gloves
@@ -837,7 +837,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83486 },	-- Remote Work
 					["provider"] = { "o", 466110 },	-- Getry's Pack
 					["coord"] = { 20.9, 58.8, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						o_repeated({
 							i(231369),	-- Redberry (QI!)
 							o(454311),	-- Redberry
@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83487 },	-- Occupational Hazard
 					["provider"] = { "n", 226728 },	-- Humphrey Shortswig
 					["coord"] = { 38.1, 88.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232895),	-- Spotty (PET!)
 					},
 				}),
@@ -874,7 +874,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83417 },	-- Out-laws
 					["provider"] = { "n", 226518 },	-- Papa Kraz Torquewrench
 					["coord"] = { 25.3, 41.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(225971),	-- Feathered Pelt (QI!)
 					},
 				}),
@@ -882,7 +882,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83419 },	-- The Perfect Guest List
 					["provider"] = { "n", 226522 },	-- Neenee Torquewrench
 					["coord"] = { 25.3, 41.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(226192),	-- Electric Eel Meat (QI!)
 					},
 				}),
@@ -893,7 +893,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 226518 },	-- Papa Kraz Torquewrench
 					["coord"] = { 25.3, 42.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232737),	-- Necklace of Eternal Love
 						i(232736),	-- Pendant of Enduring Promise
 					},
@@ -909,10 +909,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83176 },	-- Just a Hunch
 					["provider"] = { "n", 226569 },	-- Snap Vellumgrease
 					["coord"] = { 32.2, 31.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(454411, {	-- Taunting Note
 							["coord"] = { 31.5, 30.7, UNDERMINE },
-							["g"] = { i(230203) },	-- Taunting Note (QI!)
+							["groups"] = { i(230203) },	-- Taunting Note (QI!)
 						}),
 					},
 				}),
@@ -925,7 +925,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83445 },	-- Something Smells
 					["provider"] = { "n", 226703 },	-- Snap Vellumgrease
 					["coord"] = { 27.2, 35.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232755),	-- Chainmail of Lost Inspiration
 						i(232758),	-- Gauntlets of Lost Inspiration
 						i(232739),	-- Sash of Lost Inspiration
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 83130 },	-- Sour Victory
 					["provider"] = { "n", 230555 },	-- Pitz Lowe
 					["coord"] = { 27.6, 62.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(229824),	-- Banana Peel (QI!)
 						i(229825),	-- Dented Can of Kaja-Cola (QI!)
 						i(229805),	-- Last Week's Undermine Inquirer (QI!)
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84674 },	-- The G.O.L.E.M. Goes Berserk!
 					["provider"] = { "n", 232180 },	-- Old Man Lowe
 					["coord"] = { 39.7, 61.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(233202),	-- G.O.L.E.M Jr. (TOY!)
 						i(230731),	-- Pitz's Masterwork Invention (QI!)
 					},
@@ -982,7 +982,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 79559 },	-- The Verdigrease Knight
 					["provider"] = { "n", 218864 },	-- Gullhead
 					["coord"] = { 66.8, 78.6, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(465646, {	-- Draconic Trophy
 							["coord"] = { 67.0, 78.4, THE_RINGING_DEEPS },
 						}),
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84621 },	-- Squire's Spurs
 					["provider"] = { "n", 218866 },	-- Walkmay
 					["coord"] = { 66.8, 78.5, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(232759),	-- Apprentice Knight's Sabatons
 						i(232743),	-- Apprentice Knight's Shirt
 						i(232754),	-- Apprentice Knight's Wristguards
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 218878 },	-- Marline
 					["coord"] = { 66.8, 78.4, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(228771),	-- Holey Grail (QI!)
 					},
 				}),
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 218878 },	-- Marline
 					["coord"] = { 66.8, 78.4, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(216915),	-- Excavator (QI!)
 					},
 				}),
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 79564 },	-- The Verdigrease Knight Returns
 					["provider"] = { "n", 218837 },	-- Arfur
 					["coord"] = { 66.7, 78.5, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(232738),	-- Green Knight's Boots
 						i(232757),	-- Green Knight's Chestplate
 						i(232753),	-- Green Knight's Helm
@@ -1065,10 +1065,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83519,	-- But What About the Casino?
 					["provider"] = { "n", 226273 },	-- Monte Gazlowe
 					["coord"] = { 67.1, 44.5, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(453944, {	-- Marty's Bookcase
 							["coord"] = { 38.1, 33.4, UNDERMINE },
-							["g"] = { i(237268) },	-- How to Get Out of Parking Tickets More Than Once
+							["groups"] = { i(237268) },	-- How to Get Out of Parking Tickets More Than Once
 						}),
 					},
 				}),
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83569,	-- Death and Taxes
 					["provider"] = { "n", 228369 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 38.7, 33.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232764),	-- Pendant of Shrouded Secrets
 						i(232765),	-- Truthseeker's Necklace
 					},
@@ -1088,14 +1088,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(83522, {	-- Debting For A Living
 					["sourceQuest"] = 84242,	-- Diving into the Heaps
-					["provider"] = { "n", 226277 },	--Marty Zoomcart <Public Defender>
+					["provider"] = { "n", 226277 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 50.7, 70.2, UNDERMINE },
 				}),
 				q(83524, {	-- Gold In Them There Trash
 					["sourceQuest"] = 83522,	-- Debting For A Living
 					["provider"] = { "n", 228420 },	-- Tarbonara Fizzlecrank
 					["coord"] = { 52.7, 73.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232766),	-- Band of the Last Hope
 						i(232767),	-- Ring of the Last Gambit
 						i(234188),	-- Slot Chits (QI!)
@@ -1105,7 +1105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83524,	-- Gold In Them There Trash
 					["provider"] = { "n", 228474 },	-- Kayjay
 					["coord"] = { 55.7, 75.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(227548),	-- Fantastic Davey's Debt Marker (QI!)
 						i(227547),	-- Kayjay's Debt Marker (QI!)
 					},
@@ -1114,7 +1114,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83524,	-- Gold In Them There Trash
 					["provider"] = { "n", 228473 },	-- Fantastic Davey
 					["coord"] = { 55.8, 75.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(227541),	-- Miner's Debt Marker (QI!)
 					},
 				}),
@@ -1130,19 +1130,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 84249,	-- A Vat in the Pan
 					["provider"] = { "n", 226932 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 32.7, 80.3, UNDERMINE },
-					["g"] = { i(227663) },	-- Noggenfogger's Recommendation (QI!)
+					["groups"] = { i(227663) },	-- Noggenfogger's Recommendation (QI!)
 				}),
 				q(83541, {	-- Review Bombed
 					["sourceQuest"] = 83540,	-- Work the Line
 					["provider"] = { "n", 226934 },	-- Jojo Gobdre (wanders)
 					["coord"] = { 36.9, 88.1, UNDERMINE },
-					["g"] = { i(227666) },	-- Diner Review Cards (QI!)
+					["groups"] = { i(227666) },	-- Diner Review Cards (QI!)
 				}),
 				q(83542, {	-- Quick Gills for Gold Now
 					["sourceQuest"] = 83541,	-- Review Bombed
 					["provider"] = { "n", 226934 },	-- Jojo Gobdre (wanders)
 					["coord"] = { 36.9, 88.1, UNDERMINE },
-					["g"] = { i(227674) },	-- Gobdre's Prized Pan (QI!)
+					["groups"] = { i(227674) },	-- Gobdre's Prized Pan (QI!)
 				}),
 				q(84244, {	-- Blackwater Beach Blast
 					["sourceQuest"] = 83542,	-- Quick Gills for Gold Now
@@ -1158,7 +1158,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83534,	-- Ain't No Warm Up Act
 					["provider"] = { "n", 232005 },	-- Chancellor Gnome
 					["coord"] = { 71.0, 23.9, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232769),	-- Stagecrasher's Gloves
 						i(232784),	-- Stagecrasher's Legguards
 						i(232778),	-- Stagecrasher's Shoulderguards
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83546,	-- Responsibility
 					["provider"] = { "n", 227032 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 56.8, 44.3, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232782),	-- Trigger-Sniffer's Greaves
 						i(232786),	-- Trigger-Sniffer's Handwraps
 						i(232768),	-- Trigger-Sniffer's Hood
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuest"] = 83563,	-- Coffee is for Closers
 					["provider"] = { "n", 226894 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 56.8, 44.3, UNDERMINE },
-					["g"] = { i(234125) },	-- Public Defender's Coat
+					["groups"] = { i(234125) },	-- Public Defender's Coat
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40894.10, {	-- Property Devalued
@@ -1220,7 +1220,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84376 },	-- Property Devalued
 					["provider"] = { "o", 461492 },	-- Weapon Cache
 					["coord"] = { 44.7, 66.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(229392),	-- Crumpled Delivery Note (QI!)
 					},
 				}),
@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 228857 },	-- Mama Keara
 					["coord"] = { 39.5, 68.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(229419),	-- Barrelbottom Deed (QI!)
 						--
 						i(235146),	-- Maniac Biker's Wristguards
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84885 },	-- Working for G.E.T.A.
 					["provider"] = { "n", 228393 },	-- Bruxie Slyhook
 					["coord"] = { 32.9, 52.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(233113),	-- Crocodillian's Head (QI!)
 					},
 				}),
@@ -1268,7 +1268,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84885 },	-- Working for G.E.T.A.
 					["provider"] = { "n", 228393 },	-- Bruxie Slyhook
 					["coord"] = { 32.9, 52.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(233066),	-- Radioactive Rat's Head (QI!)
 					},
 				}),
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 228393 },	-- Bruxie Slyhook
 					["coord"] = { 32.9, 52.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(233114),	-- The Captain's Head (QI!)
 						--
 						i(232775),	-- Helm of the Certified Hunter
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84298 },	-- HELP WANTED: Kaja'Curiosity
 					["provider"] = { "n", 228566 },	-- Jazz Mokkitz
 					["coord"] = { 19.9, 56.4, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						i(227708),	-- Raw Kaja'mite Chunk (QI!)
 					},
 				}),
@@ -1313,9 +1313,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						84301,	-- Mineral Madness
 						84300,	-- Refine, Repair, Repeat
 					},
-					["providers"] = {
-						{ "n", 229204 },	-- Jazz Mokkitz	// TODO: PTR quest giver id is different?
-						{ "n", 228566 },	-- Jazz Mokkitz
+					["qgs"] = {
+						229204,	-- Jazz Mokkitz	// TODO: PTR quest giver id is different?
+						228566,	-- Jazz Mokkitz
 					},
 					["coord"] = { 22.5, 59.3, ZULDAZAR },
 				}),
@@ -1323,7 +1323,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84302 },	-- Creative Iteration
 					["provider"] = { "n", 228566 },	-- Jazz Mokkitz
 					["coord"] = { 22.5, 59.3, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						i(228948),	-- Jazz's Shrink Ray (QI!)
 						i(228549),	-- Massive Kaja'mite Chunk (QI!)
 						--
@@ -1335,7 +1335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 84300 },	-- Creative Iteration
 					["provider"] = { "n", 228566 },	-- Jazz Mokkitz
 					["coord"] = { 22.5, 59.3, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						i(228948),	-- Jazz's Shrink Ray (QI!)
 					},
 				}),
@@ -1346,7 +1346,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					},
 					["provider"] = { "n", 228566 },	-- Jazz Mokkitz
 					["coord"] = { 19.8, 56.4, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						i(228215),	-- Jazz's Report (QI!)
 					},
 				}),
@@ -1361,7 +1361,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 86271 },	-- Sanity's Rest
 					["provider"] = { "n", 234293 },	-- Stitchoaf
 					["coord"] = { 67.4, 96.9, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(504670, {	-- Leftover Food
 							["coord"] = { 67.4, 96.8, THE_RINGING_DEEPS },
 						}),
@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 86273 },	-- Visit to the Shop
 					["provider"] = { "n", 234294 },	-- Trixxie Boltcrank
 					["coord"] = { 67.3, 98.2, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(500640, {	-- Metal Scrap
 							i(233015),	-- Metal Scrap (QI!)
 						}),
@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["sourceQuests"] = { 86575 },	-- Rocket Roll
 					["provider"] = { "n", 233420 },	-- Benny Gooserocket
 					["coord"] = { 68.4, 96.5, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(235621),	-- Bug Exterminator's Belt
 						i(235619),	-- Bug Exterminator's Gloves
 						i(235620),	-- Bug Exterminator's Pants
@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			-- New dungeon
 			q(86728, {	-- Operation: Floodgate: Disposing of the Garbage
-				["sourceQuests"] = { 83151 },	-- Down Undermine (TODO: speculation (also up for alts without doing anything in zone))
+				--["sourceQuests"] = { 83151 },	-- Down Undermine
 				["provider"] = { "n", 231045 },	-- Paks Topskimmer
 				["coord"] = { 43.5, 51.7, UNDERMINE },
 			}),
@@ -1439,16 +1439,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["sourceQuests"] = { 83167 },	-- Eyes from Above (TODO: speculation)
 				["provider"] = { "n", 225531 },	-- Gas Grimeshank
 				["coord"] = { 42.6, 51.1, UNDERMINE },
-				["g"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // TODO: it is only spellID and not actually an item, does not go to mount journal
+				["groups"] = {
+					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(87581, {	-- No More Walkin' Here
 				["sourceQuests"] = { 83167 },	-- Eyes from Above
 				["provider"] = { "n", 238946 },	-- Gas Grimeshank
 				["coord"] = { 43.2, 59.4, UNDERMINE },
-				["g"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // TODO: it is only spellID and not actually an item, does not go to mount journal
+				["groups"] = {
+					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(86618, {	-- License Not Required
@@ -1465,7 +1465,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			-- Gorillon
 			q(87406, {	-- Inoperative Gorillion
 				["provider"] = { "i", 236961 },	-- Inoperative Gorillion
-				["g"] = {
+				["groups"] = {
 					i(232843),	-- Gorillion (PET!)
 				},
 			}),
@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(232863),	-- Darkfuse Research Notes (QI!)
 					o(499928),	-- Darkfuse Research Notes
 				},
@@ -1502,7 +1502,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(232897),	-- Blood-B-Gone (QI!)
 				},
 			}),
@@ -1529,7 +1529,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235339),	-- Powdery Crab Meat (QI!)
 				},
 			}),
@@ -1538,7 +1538,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231065 },	-- Freddi Powergrind
 				["coord"] = { 19.7, 53.0, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(236773),	-- Swallowed Kaja'mite (QI!)
 				},
 			}),
@@ -1547,7 +1547,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					o(506696, {	-- Buried Treasure
 						i(235346),	-- Shiny Treasure (QI!)
 					}),
@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231064 },	-- Captain Crudeshank
 				["coord"] = { 19.8, 52.9, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					o(506696, {	-- Buried Treasure
 						i(235346),	-- Shiny Treasure (QI!)
 					}),
@@ -1581,7 +1581,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 231062 },	-- Torky Greasepalm
 				["coord"] = { 16.7, 52.2, UNDERMINE },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(232907),	-- Unseemly Growth (QI!)
 					o(500096),	-- Unseemly Growth
 				},
@@ -1610,9 +1610,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(UNDERMINE, {
 			n(QUESTS, {
@@ -1632,4 +1632,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

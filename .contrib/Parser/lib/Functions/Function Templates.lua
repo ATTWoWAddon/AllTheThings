@@ -1,21 +1,21 @@
 -- WoW API Function Templates
 
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetItemCount = function(itemID) return "C_Item.GetItemCount(" .. itemID .. ", true)"; end
 -- #else
 WOWAPI_GetItemCount = function(itemID) return "GetItemCount(" .. itemID .. ", true)"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
 -- #else
 WOWAPI_GetSpellCooldown = function(spellID) return "GetSpellCooldown(" .. spellID .. ")"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetSpellName = function(spellID) return "C_Spell.GetSpellName(" .. spellID .. ")"; end
 -- #else
 WOWAPI_GetSpellName = function(spellID) return "GetSpellInfo(" .. spellID .. ")"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetItemClassInfo = function(a,b) return "C_Item.GetItemClassInfo(" .. a .. ")"; end
 -- #else
 WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; end
@@ -24,13 +24,13 @@ WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; 
 WOWAPI_GetItemSubClassInfo = function(a,b)
 	local ret
 	if a and b then
-		-- #if AFTER TWW
+		-- #if AFTER MOP
 		ret = "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #else
 		ret = "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #endif
 	else
-		-- #if AFTER TWW
+		-- #if AFTER MOP
 		ret = "C_Item.GetItemSubClassInfo(" .. a .. ")";
 		-- #else
 		ret = "GetItemSubClassInfo(" .. a .. ")";
@@ -88,6 +88,27 @@ FUNCTION_TEMPLATES = {
 			end]];
 			return [[_.OnInitDB.]]..OnInitName..[[]]
 		end,
+		ClassORRaceRequirements = [[function(t)
+			if _.indexOf(t.races, _.RaceIndex) then
+				t.c_disp = t.c
+				t.c = nil;
+			elseif _.indexOf(t.c, _.ClassIndex) then
+				t.r_disp = t.races
+				t.races = nil;
+			end
+			return t;
+		end]],
+		GenerateCompareOtherKey = function(itemID)
+			local OnInitName = "GenerateCompareOtherKey_" .. itemID;
+			ExportDB.OnInitDB[OnInitName] = [[~function(t)
+				t.otherItemID = ]] .. itemID .. [[;
+				t.GetItemCount = function(t)
+					return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[;
+				end
+				return t;
+			end]];
+			return [[_.OnInitDB.]]..OnInitName..[[]]
+		end
 	},
 	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
 	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a
@@ -114,6 +135,56 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]]
 	end,
+	GenerateOnUpdateForRepeatableQuestClassicReputationWithCost = function(repPerTurnIn, count)
+		local OnUpdateName = "OnUpdateRRQCR"..repPerTurnIn
+		if count then
+			OnUpdateName = OnUpdateName.."x"..count
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]), ]] .. repPerTurnIn .. [[, maxReputation[2]);
+					cost[1][3] = t.remainingTurnIns * ]] .. count .. [[;
+				end
+			end]];
+		else
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]), ]] .. repPerTurnIn .. [[, maxReputation[2]);
+					cost[1][3] = t.remainingTurnIns;
+				end
+			end]];
+		end
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
+	end,
+	GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost = function(repPerTurnIn, count)
+		local OnUpdateName = "OnUpdateRRQBR"..repPerTurnIn
+		if count then
+			OnUpdateName = OnUpdateName.."x"..count
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					local info = _.WOWAPI.GetFriendshipReputation(maxReputation[1]);
+					if info then
+						t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(info.standing, ]] .. repPerTurnIn .. [[, info.maxRep);
+						cost[1][3] = t.remainingTurnIns * ]] .. count .. [[;
+					end
+				end
+			end]];
+		else
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					local info = _.WOWAPI.GetFriendshipReputation(maxReputation[1]);
+					if info then
+						t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(info.standing, ]] .. repPerTurnIn .. [[, info.maxRep);
+						cost[1][3] = t.remainingTurnIns;
+					end
+				end
+			end]];
+		end
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
+	end,
 };
 ExportDB.OnTooltipDB = {
 	-- #if BEFORE CATA
@@ -132,11 +203,12 @@ ExportDB.OnTooltipDB = {
 				tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!", r = 1, g = 0.5, b = 0.5 });
 				_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Kill Arathi Syndicate", 5, 20999);
 			else
-			-- #endif
 				tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
 				_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 75, 42000, 5);
-			-- #if AFTER TBC
 			end
+			-- #else
+			tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
+			_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 50, 42000, 5);
 			-- #endif
 		end
 	end]],
@@ -170,6 +242,15 @@ ExportDB.OnTooltipDB = {
 	-- TODO: use of this OnTooltip function should be converted into 'sourceAchievements' for proper integration with other logic
 	WithRequiredAchievement = [[~function(t, tooltipInfo)
 		if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
+	end]],
+	ShowHonoredKeyComparison = [[~function(t, tooltipInfo)
+		local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+		if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+			tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+		else
+			tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+		end
+		tooltip:Show();
 	end]],
 }
 ExportDB.OnClickDB = {

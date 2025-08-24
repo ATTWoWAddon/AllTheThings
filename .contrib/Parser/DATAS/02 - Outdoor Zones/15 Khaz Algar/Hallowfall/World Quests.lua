@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82294, {	-- Miniature Army
 					["provider"] = { "n", 223442 },	-- Kyrie
 					["coord"] = { 57.4, 62.8, HALLOWFALL },
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82259, {	-- Honoring Our Fallen
 					["coord"] = { 71.8, 61.0, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(213191),	-- Arathi Tinderbox (QI!)
 					},
 				}),
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82584, {	-- Light's Gambit
 					["coord"] = { 48.6, 39.4, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						ach(40729),		-- Light's Gambit Champion
 					},
 				}),
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81620, {	-- Recovery Job
 					["coord"] = { 56.0, 67.1, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(219357),	-- Shipyard Tools (QI!)
 					},
 				}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82258, {	-- Sieging Siege Weapons
 					["coord"] = { 56.8, 66.2, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(213630),	-- Keg of Black Powder (QI!)
 					},
 				}),
@@ -101,19 +101,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82586, {	-- Spore Ender (previous questID 82588?)
 					["coord"] = { 60.2, 62.2, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(225655),	-- Fragrant Mirespores (QI!)
 					},
 				}),
 				q(82585, {	-- With Great Pyre
 					["coord"] = { 68.2, 35.0, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						i(225555),	-- Periapt of Pure Flame (QI!)
 					},
 				}),
 				q(82288, {	-- Work Hard, Play Hard
 					["coord"] = { 41.8, 55.3, HALLOWFALL },
-					["g"] = {
+					["groups"] = {
 						ach(40150),		-- Children's Entertainer
 					},
 				}),
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82157),	-- Special Assignment: Rise of the Colossals [Trigger]
 					q(82787, {	-- Special Assignment: Rise of the Colossals
 						-- ["coord"] = { x, y, HALLOWFALL },
-						["g"] = {
+						["groups"] = {
 							i(224183),	-- Bleak Chum (QI!)
 						},
 					}),
@@ -135,4 +135,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

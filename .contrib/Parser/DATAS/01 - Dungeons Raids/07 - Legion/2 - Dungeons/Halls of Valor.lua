@@ -5,13 +5,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(721, {	-- Halls of Valor
 		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 703, 704, 705 },
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(43349, {	-- The Aegis of Aggramar
 					["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
 					["provider"] = {"o",251991},	-- The Aegis of Aggramar
 					["modelScale"] = 3,
-					["g"] = {
+					["groups"] = {
 						i(130016),	-- Valor-Bound Legplates
 						i(129997),	-- Valor-Bound Legwraps
 						i(129989),	-- Valor-Bound Trousers
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				})),
 				e(1486, {	-- Hyrja
 					["creatureID"] = 95833,	-- Hyrja
-					["g"] = {
+					["groups"] = {
 						i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 					},
 				}),
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				})),
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
-					["g"] = {
+					["groups"] = {
 						ach(10786),	-- Halls of Valor
 					},
 				}),
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(1485, {	-- Hymdall
 					["creatureID"] = 94960,	-- Hymdall
-					["g"] = {
+					["groups"] = {
 						i(133621),	-- Adorned Guardian's Bracers
 						i(133628),	-- Battleborne Sentinel Gauntlets
 						i(134194),	-- Biornskin Leggings
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1486, {	-- Hyrja
 					["creatureID"] = 95833,	-- Hyrja
-					["g"] = {
+					["groups"] = {
 						i(133620),	-- Amice of the Enlightened
 						i(134196),	-- Biornskin Hood
 						i(134219),	-- Bonespeaker Robes
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1487, {	-- Fenryr
 					["creatureID"] = 99868,	-- Fenryr
-					["g"] = {
+					["groups"] = {
 						i(133633),	-- Wolfstride Pendant
 						i(133639),	-- Goldscar Pelt
 						i(136773),	-- Greatbelt of Alpha Dominance
@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1488, {	-- God-King Skovald
 					["creatureID"] = 95675,	-- God-King Skovald
-					["g"] = {
+					["groups"] = {
 						i(140660),	-- Haft of the God-King
 						i(134193),	-- Biornskin Moccasins
 						i(134222),	-- Bonespeaker Bracers
@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
-					["g"] = {
+					["groups"] = {
 						i(134192),	-- Biornskin Bracer
 						i(136776),	-- Bjorn's Hunting Strap
 						i(134217),	-- Bonespeaker Gloves
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
-					["g"] = {
+					["groups"] = {
 						ach(10788),	-- Heroic: Halls of Valor
 						i(137857),	-- Design: Raging Furystone Gorget (Rank 3)
 						i(127933),	-- Recipe: Flask of Ten Thousand Scars [Rank 2] (RECIPE!)
@@ -175,10 +175,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					e(1485, {	-- Hymdall
 						["creatureID"] = 94960,	-- Hymdall
-						["g"] = {
+						["groups"] = {
 							i(133621),	-- Adorned Guardian's Bracers
 							i(133628),	-- Battleborne Sentinel Gauntlets
 							i(134194),	-- Biornskin Leggings
@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1486, {	-- Hyrja
 						["creatureID"] = 95833,	-- Hyrja
-						["g"] = {
+						["groups"] = {
 							i(133620),	-- Amice of the Enlightened
 							i(134196),	-- Biornskin Hood
 							i(134219),	-- Bonespeaker Robes
@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1487, {	-- Fenryr
 						["creatureID"] = 99868,	-- Fenryr
-						["g"] = {
+						["groups"] = {
 							i(133633),	-- Wolfstride Pendant
 							i(133639),	-- Goldscar Pelt
 							i(136773),	-- Greatbelt of Alpha Dominance
@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1488, {	-- God-King Skovald
 						["creatureID"] = 95675,	-- God-King Skovald
-						["g"] = {
+						["groups"] = {
 							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
 							i(134222),	-- Bonespeaker Bracers
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1489, {	-- Odyn
 						["creatureID"] = 95676,	-- Odyn
-						["g"] = {
+						["groups"] = {
 							ach(10788),	-- Heroic: Halls of Valor
 							i(134192),	-- Biornskin Bracer
 							i(136776),	-- Bjorn's Hunting Strap
@@ -267,8 +267,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(10542, {	-- I Got What You Mead
 							["crs"] = { 102423 },	-- Mug of Mead
@@ -279,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1485, {	-- Hymdall
 						["creatureID"] = 94960,	-- Hymdall
-						["g"] = {
+						["groups"] = {
 							i(133621),	-- Adorned Guardian's Bracers
 							i(133628),	-- Battleborne Sentinel Gauntlets
 							i(134194),	-- Biornskin Leggings
@@ -295,7 +296,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1486, {	-- Hyrja
 						["creatureID"] = 95833,	-- Hyrja
-						["g"] = {
+						["groups"] = {
 							i(133620),	-- Amice of the Enlightened
 							i(134196),	-- Biornskin Hood
 							i(134219),	-- Bonespeaker Robes
@@ -312,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1487, {	-- Fenryr
 						["creatureID"] = 99868,	-- Fenryr
-						["g"] = {
+						["groups"] = {
 							i(133633),	-- Wolfstride Pendant
 							i(133639),	-- Goldscar Pelt
 							i(136773),	-- Greatbelt of Alpha Dominance
@@ -325,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1488, {	-- God-King Skovald
 						["creatureID"] = 95675,	-- God-King Skovald
-						["g"] = {
+						["groups"] = {
 							i(140660),	-- Haft of the God-King
 							i(134193),	-- Biornskin Moccasins
 							i(134222),	-- Bonespeaker Bracers
@@ -343,7 +344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					e(1489, {	-- Odyn
 						["creatureID"] = 95676,	-- Odyn
-						["g"] = {
+						["groups"] = {
 							ach(10789),	-- Mythic: Halls of Valor
 							ach(10858),	-- Mythic: Halls of Valor Guild Run
 							ach(10543, {	-- Surge Protector

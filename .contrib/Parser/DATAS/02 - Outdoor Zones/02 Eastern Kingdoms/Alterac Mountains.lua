@@ -9,8 +9,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236711,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(760, {	-- Explore Alterac Mountains
-					["timeline"] = { REMOVED_4_0_3 },
+				ach(760, {	-- Explore Alterac Mountains
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 			}),
 			explorationHeader({
@@ -52,10 +52,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
 					["groups"] = {
-						recipe(429351),	-- Extraplanar Spidersilk Boots
-						recipe(429348),	-- Shifting Silver Breastplate
-						recipe(429869),	-- Void-Touched Leather Gauntlets
-						recipe(429354),	-- Void-Touched Leather Gloves
+						r(429351, {	-- Extraplanar Spidersilk Boots (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
+						r(429348, {	-- Shifting Silver Breastplate (RECIPE!)
+							["requireSkill"] = BLACKSMITHING,
+						}),
+						r(429869, {	-- Void-Touched Leather Gauntlets (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						r(429354, {	-- Void-Touched Leather Gloves (RECIPE!)
+							["requireSkill"] = LEATHERWORKING,
+						}),
 						i(211422),	-- Shard of the Void
 					},
 				})),
@@ -99,13 +107,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 2434,	-- Shadowy Assassin
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2434,	-- Shadowy Assassin
 					["lvl"] = 30,
 				}),
 				q(523, {	-- Baron's Demise
-					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["sourceQuest"] = 522,	-- Assassin's Contract
+					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -120,19 +128,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80453, {	-- Best Laid Plans
+					["sourceQuest"] = 80411,	-- The Talisman of Kazdor
 					["providers"] = {
 						{ "n",   6707 },	-- Fahrad <Grand Master Rogue>
 						{ "i", 217609 },	-- Talisman of Kazdor
 					},
-					["sourceQuest"] = 80411,	-- The Talisman of Kazdor
 					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { ROGUE },
 					["lvl"] = 45,
 				})),
 				applyclassicphase(SOD_PHASE_THREE, q(80455, {	-- Biding Our Time
-					["provider"] = { "o", 410369 },	-- Dead Drop
 					["sourceQuest"] = 80454,	-- One Last Drop
+					["provider"] = { "o", 410369 },	-- Dead Drop
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { ALTERAC_MOUNTAINS },
@@ -150,8 +158,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(506, {	-- Blackmoore's Legacy
-					["qg"] = 2316,	-- Gol'dir
 					["sourceQuest"] = 503,	-- Gol'dir
+					["qg"] = 2316,	-- Gol'dir
 					["coord"] = { 59.96, 43.74, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -179,8 +187,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(504, {	-- Crushridge Warmongers
-					["qg"] = 2263,	-- Marshal Redpath
 					["sourceQuest"] = 500,	-- Crushridge Bounty
+					["qg"] = 2263,	-- Marshal Redpath
 					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -199,11 +207,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1712, {	-- Cyclonian
+					["sourceQuest"] = 1791,	-- The Windwatcher
 					["providers"] = {
 						{ "n", 6176 },	-- Bath'rah the Windwatcher
 						{ "i", 6929 },	-- Bath'rah's Parchment
 					},
-					["sourceQuest"] = 1791,	-- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ARATHI_HIGHLANDS, STRANGLETHORN_VALE },
@@ -228,8 +236,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(1714, {	-- Essence of the Exile
-							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["sourceQuest"] = 1791,	-- The Windwatcher
+							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
@@ -250,8 +258,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(537, {	-- Dark Council
-					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["sourceQuest"] = 525,	-- Further Mysteries
+					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -301,18 +309,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 7067, 1 },	-- Elemental Earth
 						{ "i", 7068, 1 },	-- Elemental Fire
 						{ "i", 7069, 1 },	-- Elemental Air
 						{ "i", 7070, 1 },	-- Elemental Water
 					},
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments
-					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
+					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -360,11 +368,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 26,
 				}),
 				q(525, {	-- Further Mysteries
+					["sourceQuest"] = 514,	-- Letter to Stormpike
 					["providers"] = {
 						{ "n", 1356 },	-- Prospector Stormpike
 						{ "i", 3518 },	-- Decrypted Letter
 					},
-					["sourceQuest"] = 514,	-- Letter to Stormpike
 					["coord"] = { 74.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -372,8 +380,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(503, {	-- Gol'dir
-					["qg"] = 2229,	-- Krusk
 					["sourceQuest"] = 533,	-- Infiltration
+					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -387,8 +395,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(533, {	-- Infiltration
-					["qg"] = 2229,	-- Krusk
 					["sourceQuest"] = 498,	-- The Rescue,
+					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -429,19 +437,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(514, {	-- Letter to Stormpike
+					["sourceQuest"] = 511,	-- Encrypted Letter
 					["providers"] = {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3521 },	-- Cleverly Encrypted Letter
 					},
-					["sourceQuest"] = 511,	-- Encrypted Letter
 					["coord"] = { 50.4, 57, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(507, {	-- Lord Aliden Perenolde
-					["qg"] = 2229,	-- Krusk
 					["sourceQuest"] = 506,	-- Blackmoore's Legacy
+					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -454,8 +462,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(512, {	-- Noble Deaths
-					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["sourceQuest"] = 510,	-- Foreboding Plans
+					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -477,11 +485,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80454, {	-- One Last Drop
+					["sourceQuest"] = 80453,	-- Best Laid Plans
 					["providers"] = {
 						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
 						{ "i", 217737 },	-- Modified Talisman
 					},
-					["sourceQuest"] = 80453,	-- Best Laid Plans
 					["coord"] = { 86, 80, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { SILVERPINE_FOREST },
@@ -490,8 +498,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag
-					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
+					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
@@ -506,8 +514,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8412, {	-- Spirit Totem
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8410,	-- Elemental Mastery
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WESTERN_PLAGUELANDS },
@@ -537,11 +545,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(554, {	-- Stormpike's Deciphering
+					["sourceQuest"] = 551,	-- The Ensorcelled Parchment
 					["providers"] = {
 						{ "n", 2277 },	-- Loremaster Dibbs
 						{ "i", 3706 },	-- Ensorcelled Parchment
 					},
-					["sourceQuest"] = 551,	-- The Ensorcelled Parchment
 					["coord"] = { 50.4, 57.0, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -569,22 +577,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6701, {	-- Syndicate Emblems
-					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
+					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
 					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
 					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
-					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["classes"] = { ROGUE },
 					["repeatable"] = true,
 					["lvl"] = 24,
 				}),
 				q(508, {	-- Taretha's Gift
+					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
 					["providers"] = {
 						{ "n", 2317 },	-- Elysa
 						{ "i", 3498 },	-- Taretha's Necklace
 					},
-					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
 					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -608,8 +616,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 34,
 				}),
 				q(518, {	-- The Crown of Will (2/5)
-					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 495,	-- The Crown of Will (1/5)
+					["qg"] = 2278,	-- Melisara
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -621,8 +629,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(519, {	-- The Crown of Will (3/5)
-					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 518,	-- The Crown of Will (2/5)
+					["qg"] = 2278,	-- Melisara
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -646,8 +654,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(520, {	-- The Crown of Will (4/5)
-					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 519,	-- The Crown of Will (3/5)
+					["qg"] = 2278,	-- Melisara
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -666,11 +674,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(521, {	-- The Crown of Will (5/5)
+					["sourceQuest"] = 520,	-- The Crown of Will (4/5)
 					["providers"] = {
 						{ "n", 2278 },	-- Melisara
 						{ "i", 3554 },	-- Crown of Will
 					},
-					["sourceQuest"] = 520,	-- The Crown of Will (4/5)
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -693,18 +701,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(6681, {	-- The Manor, Ravenholdt
+					["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 					["providers"] = {
 						{ "i", 17125 },	-- Seal of Ravenholdt
 						{ "i", 17126 },	-- Seal of Ravenholdt
 					},
-					["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["lvl"] = 24,
 				}),
 				q(1713, {	-- The Summoning
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 1712,	-- Cyclonian
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -719,10 +727,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(80411, {	-- The Talisman of Kazdor
-					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
-					["sourceQuest"] = 80526,	-- Fool Me Twice
-					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
 					["description"] = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
+					["sourceQuest"] = 80526,	-- Fool Me Twice
+					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
+					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_2 },
 					["maps"] = { ZULFARRAK },
 					["classes"] = { ROGUE },
@@ -738,11 +746,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(535, {	-- Valik
-					["qg"] = 2333,	-- Henchman Valik
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
+					["qg"] = 2333,	-- Henchman Valik
 					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
@@ -750,8 +758,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(566, {	-- WANTED: Baron Vardus
-					["provider"] = { "o", 1763 },	-- WANTED
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
+					["provider"] = { "o", 1763 },	-- WANTED
 					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -768,8 +776,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1792, {	-- Whirlwind Weapon
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 1713,	-- The Summoning
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coord"] = { 80.5, 66.9, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -890,10 +898,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(6779, {	-- Smudge Thunderwood <Poison Vendor>
 					["coord"] = { 86.0, 79.6, ALTERAC_MOUNTAINS },
-					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
+							["classes"] = { ROGUE },
 						}),
 					},
 				}),
@@ -947,7 +955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if BEFORE CATA
-				i(5775, {	-- Pattern: Black Silk Pack
+				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 2434,	-- Shadowy Assassin
 				}),

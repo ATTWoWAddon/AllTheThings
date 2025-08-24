@@ -45,8 +45,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(26905, {	-- Agamaggan's Charge
-					["qg"] = 44415,	-- Spirit of Agamaggan
 					["sourceQuest"] = 26906,	-- Agamaggan
+					["qg"] = 44415,	-- Spirit of Agamaggan
 					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
@@ -74,24 +74,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance (1/2) (Before Wrathgate?)
-					["provider"] = { "i", 17008 },	-- Small Scroll
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",
 					-- #endif
 					-- #endif
+					["provider"] = { "i", 17008 },	-- Small Scroll
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(14352, {	-- An Unholy Alliance (1/2) (After Wrathgate?)
-					["provider"] = { "i", 49205 },	-- Small Scroll
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is given to players that HAVE completed The Wrath Gate.",
 					-- #endif
 					-- #endif
+					["provider"] = { "i", 49205 },	-- Small Scroll
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -137,6 +137,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(6756),	-- Jewelry Box
 						}),
 					},
+				}),
+				q(26908, {	-- Feeling Thorny
+					["qg"] = 37812,	-- Mahka
+					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
+					["timeline"] = { ADDED_4_0_3 },
+					["lvl"] = 30,
 				}),
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
@@ -221,8 +227,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1101, {	-- The Crone of the Kraul
-					["qg"] = 4048,	-- Falfindel Waywarder
 					["sourceQuest"] = 1100,	-- Lonebrow's Journal
+					["qg"] = 4048,	-- Falfindel Waywarder
 					["coord"] = { 89.6, 46.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -490,15 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(901, {	-- Charlga Razorflank
 				["creatureID"] = 4421,	-- Charlga Razorflank
 				["groups"] = {
-					ach(635, {	-- Razorfen Kraul
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							1102,	-- A Vengeful Fate
-							6522,	-- An Unholy Alliance
-							1101,	-- The Crone of the Kraul
-						},
-						-- #endif
-					}),
+					ach(635),	-- Razorfen Kraul
 					ach(5043, {	-- Razorfen Kraul Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

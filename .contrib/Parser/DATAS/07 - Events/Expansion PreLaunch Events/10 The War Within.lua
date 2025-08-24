@@ -16,7 +16,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 				{"where","headerID",WEAPONS},
 			},
-			["g"] = bubbleDownFiltered({
+			["groups"] = bubbleDownFiltered({
 				["sharedDescription"] = "These items only drop if your character is below Level 70 and on the correct armor/weapon type.\nExample: A Rogue will receive leather items and 1-handed weapons, but not bows.",
 			},FILTERFUNC_itemID,{
 				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
@@ -224,26 +224,26 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 			}),
 			q(82689, {	-- Only Darkness
-				["isDaily"] = true,
 				["provider"] = { "n", 224373 },	-- Echo of the Silver Hand
 				["coord"] = { 59.5, 52.0, DRAGONBLIGHT },
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					currency(RESIDUAL_MEMORIES),
 				},
 			}),
 			q(78938, {	-- Champion of the Waterlords
-				["isDaily"] = true,
 				["provider"] = { "n", 214399 },	-- Memory of a Duke
 				["coord"] = { 43.6, 67.3, SEARING_GORGE },
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					currency(RESIDUAL_MEMORIES),
 				},
 			}),
 			q(82676, {	-- Broken Masquerade
-				["isDaily"] = true,
 				["provider"] = { "n", 224367 },	-- Forgotten Hero
 				["coord"] = { 45.5, 57.7, DUSTWALLOW_MARSH },
-				["g"] = {
+				["isDaily"] = true,
+				["groups"] = {
 					currency(RESIDUAL_MEMORIES),
 				},
 			}),
@@ -270,7 +270,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		n(VENDORS, {
 			n(223710, {	-- Rememberance Amuul
 				["coord"] = { 33.3, 84.6, 629 },	-- Legion Dalaran, Aegwynn's Gallery
-				["g"] = {
+				["groups"] = {
 					filter(MISC, {
 						i(218033, {	-- Defender's Hefty Satchel
 							["cost"] = {{"c", RESIDUAL_MEMORIES, 2000}},

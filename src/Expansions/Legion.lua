@@ -48,11 +48,8 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 		return app.TypicalCharacterCollected(CACHE, t[KEY], SETTING)
 	end,
 	name = function(t)
-		local id = t.parent;
-		id = id and id.headerID;
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
-		-- TODO: these will likely change to dynamic headers at some point, and need to check against HEADERS constants
-		if id and -5205 <= id and id <= -5200 then
+		if t.parent and t.parent.headerID then
 			return t.variantText;
 		end
 		return t.appearanceText;

@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(VENDORS, {
 			n(174937, {	-- Adjutant Galos <Renown Quartermaster>
 				["coord"] = { 63.3, 30.6, SANCTUM_OF_BINDING },
-				["g"] = {
+				["groups"] = {
 					i(186485, {	-- Ascendant's Aquilon (MOUNT!)
 						["cost"] = { { "c", ANIMA, 7500 } },
 					}),
@@ -362,7 +362,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
 				["coord"] = { 56.1, 84.5, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
+				["groups"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 82,
 						["cost"] = {
@@ -597,7 +597,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175524, {	-- Battlemaster Endios <Mythic Nathrian Weaponsmith>
 				["coord"] = { 58.0, 81.4, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				["groups"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 85,
 						["cost"] = {
@@ -865,7 +865,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					178158,	-- Selfless Watcher's Shoulders
 					178160,	-- Selfless Watcher's Wristwraps
 				}},
-				["g"] = {
+				["groups"] = {
 					i(175248, {	-- Selfless Bearer's Blade
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -975,7 +975,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 55.0, 82.9, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["groups"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 83,
 						["cost"] = {
@@ -1210,7 +1210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
 				["coord"] = { 57.0, 79.8, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["groups"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 84,
 						["cost"] = {

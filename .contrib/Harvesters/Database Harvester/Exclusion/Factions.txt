@@ -167,13 +167,8 @@
 1.14.2.41959
 2505@@@Dragonflight, Chromatic
 1.15.0.52124
-2586@@@Azeroth Commerce Authority
-2587@@@Durotar Supply and Logistics
 2588@@@S03 - Scarlet Crusade Disguise
-1.15.1.53009
-2634@@@Blood Moon
 1.15.2.53941
-2641@@@Emerald Wardens
 2646@@@S03 - 50 - Tanaris Arena Opponent
 2.0.0.6080
 914@@@PLAYER, Blood Elf
@@ -634,3 +629,5 @@
 2694@@@UNUSED - Brann Bronzebeard (Season 2)
 2695@@@Test Account Wide Stormwind (DNT)
 2697@@@Chase's test faction (DNT)
+11.1.5.59571
+2689@@@Flame's Radiance (Paragon)

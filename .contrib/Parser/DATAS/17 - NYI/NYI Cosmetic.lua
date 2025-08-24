@@ -86,7 +86,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
 			i(198385),	-- Draconian Garden Pick
@@ -293,20 +293,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206296),	-- Vagabond's Grassy Hood
 
-				------ Vagabond's Plum Threads ------
-				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
-				i(206279),	-- Vagabond's Plum Cape
-				i(206290),	-- Vagabond's Plum Hood
-
 				------ Wanderer's Grassy Trappings ------
 				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206307),	-- Wanderer's Grassy Scarf
-
-				------ Wanderer's Plum Trappings ------
-				iensemble(206334),	-- Ensemble: Wanderer's Plum Trappings
-				i(206312),	-- Wanderer's Plum Cloak
-				i(206301),	-- Wanderer's Plum Scarf
 			}),
 			n(WEAPONS, {
 				i(190561),	-- Crystalblade of Shifting Magic
@@ -319,7 +309,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
-				i(210859),	-- Trader's Plum Sarong
 			}),
 			n(WEAPONS, {
 				i(190875),	-- Chilled Touch of the Condemned
@@ -339,7 +328,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
 				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(190893),	-- Jeweled Valkyrion Cape
 				i(190688),	-- Silvered Helm of Righteousness
 				i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -363,15 +351,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190848),	-- [DNT] Do not use
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190908),	-- Devourer's Skullscythe
-				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
 				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
-				i(213076),	-- Orchid Bow-quet
 				i(213063),	-- Paradise's Ruby Axe
-				i(213064),	-- Paradise's Violet Axe
-				i(213070),	-- Pristine Floral Stalk
 				i(190900),	-- Prototype Farstrider Sniper Rifle
 				i(190820),	-- Restless Void Handaxe
 				i(213066),	-- Rosy Floral Edge
@@ -379,15 +363,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213072),	-- Ruby Floral Staff
 				i(190891),	-- Shabby Battleaxe
 				i(190903),	-- Soulburner Warscythe
-				i(213067),	-- Violet Floral Edge
 				i(190902),	-- Will of the Titanforged
 				i(190889),	-- Woodsman's Hatchet
 			}),
-		})),
-
-		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			i(213155),	-- Dark Ranger General's Quiver
 		})),
 
 		-- 10.2.6
@@ -407,7 +385,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 			------ Single Pieces ------
 			i(217373),	-- Frenzied Hat of the Dark Depths
-			i(217374),	-- Frenzied Hat of the Shallows
 		})),
 
 		-- 10.2.7
@@ -420,22 +397,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				q(82270),	-- Ensemble: Copper Diver Suit
 				i(222959),	-- Ensemble: Tropical Sunrise Swimwear
 				q(82231),	-- Ensemble: Tropical Sunrise Swimwear
-				------ Black Tropical Set ------
-				i(221540),	-- Ensemble: Black Tropical
-				q(82137),	-- Ensemble: Black Tropical
-				i(221847),	-- Ensemble: Black Tropical Swimwear
-				q(82198),	-- Ensemble: Black Tropical Swimwear
-				i(221826),	-- Black Tropical Airy Sandals
-				i(221825),	-- Black Tropical Beads
-				i(221524),	-- Black Tropical Floater
-				i(221822),	-- Black Tropical Halter Top
-				i(221523),	-- Black Tropical Sandals
-				i(221827),	-- Black Tropical Sash
-				i(221520),	-- Black Tropical Shirt
-				i(221824),	-- Black Tropical Skirt
-				i(221828),	-- Black Tropical Sunshade
-				i(221521),	-- Black Tropical Trunks
-				i(221522),	-- Black Tropical Wristwraps
 
 				------ Green Diver Set ------
 				i(223245),	-- Ensemble: Green Diver Suit
@@ -463,7 +424,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
 				i(224869),	-- Earthen Drape
 				i(224169),	-- Stonebound Tabard
@@ -547,19 +508,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			n(SETS, {
 				------ Prowler's Aquatic Set ------
 				i(230181),	-- Ensemble: Prowler's Aquatic Headgear
 				i(230071),	-- Prowler's Aquatic Cowl
 				i(230091),	-- Prowler's Aquatic Mask
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
-
-				------ Prowler's Brick Set ------
-				i(230171),	-- Ensemble: Prowler's Brick Headgear
-				i(230061),	-- Prowler's Brick Cowl
-				i(230081),	-- Prowler's Brick Mask
-				i(230039),	-- Prowler's Brick Shoulder Cape
 
 				------ Prowler's Cloudy Set ------
 				i(230168),	-- Ensemble: Prowler's Cloudy Headgear
@@ -578,12 +533,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230062),	-- Prowler's Lively Cowl
 				i(230082),	-- Prowler's Lively Mask
 				i(230041),	-- Prowler's Lively Shoulder Cape
-
-				------ Prowler's Midnight Set ------
-				i(230152),	-- Ensemble: Prowler's Midnight Headgear
-				i(230054),	-- Prowler's Midnight Cowl
-				i(230074),	-- Prowler's Midnight Mask
-				i(230033),	-- Prowler's Midnight Shoulder Cape
 
 				------ Prowler's Plum Set ------
 				i(230178),	-- Ensemble: Prowler's Plum Headgear
@@ -610,10 +559,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233238),	-- Azure Pack of Lunar Explosives
 				i(233183),	-- Banded Aquatic War Slippers
 				i(233166),	-- Banded Aquatic War Wraps
-				i(233170),	-- Banded Azure War Slippers
-				i(233153),	-- Banded Azure War Wraps
-				i(233176),	-- Banded Brick War Slippers
-				i(233159),	-- Banded Brick War Wraps
 				i(233179),	-- Banded Carrot War Slippers
 				i(233162),	-- Banded Carrot War Wraps
 				i(233173),	-- Banded Cloudy War Slippers
@@ -624,14 +569,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233155),	-- Banded Grassy War Wraps
 				i(233177),	-- Banded Lively War Slippers
 				i(233160),	-- Banded Lively War Wraps
-				i(233169),	-- Banded Midnight War Slippers
-				i(233152),	-- Banded Midnight War Wraps
 				i(233180),	-- Banded Rosy War Slippers
 				i(233163),	-- Banded Rosy War Wraps
-				i(233184),	-- Banded Snowy War Slippers
-				i(233167),	-- Banded Snowy War Wraps
-				i(233182),	-- Banded Violet War Slippers
-				i(233165),	-- Banded Violet War Wraps
 				i(234710),	-- Earthen Artisan Kilt
 				i(234712),	-- Earthen Explorer's Kilt
 				i(234711),	-- Earthen Peacekeeper Warkilt
@@ -640,10 +579,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233110),	-- Long Aquatic War Skirt
 				i(233149),	-- Long Aquatic War Skirt and Leg Wraps
-				i(233097),	-- Long Azure War Skirt
-				i(233136),	-- Long Azure War Skirt and Leg Wraps
-				i(233103),	-- Long Brick War Skirt
-				i(233142),	-- Long Brick War Skirt and Leg Wraps
 				i(233106),	-- Long Carrot War Skirt
 				i(233145),	-- Long Carrot War Skirt and Leg Wraps
 				i(233100),	-- Long Cloudy War Skirt
@@ -654,14 +589,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233138),	-- Long Grassy War Skirt and Leg Wraps
 				i(233104),	-- Long Lively War Skirt
 				i(233143),	-- Long Lively War Skirt and Leg Wraps
-				i(233096),	-- Long Midnight War Skirt
-				i(233135),	-- Long Midnight War Skirt and Leg Wraps
 				i(233107),	-- Long Rosy War Skirt
 				i(233146),	-- Long Rosy War Skirt and Leg Wraps
-				i(233111),	-- Long Snowy War Skirt
-				i(233150),	-- Long Snowy War Skirt and Leg Wraps
-				i(233109),	-- Long Violet War Skirt
-				i(233148),	-- Long Violet War Skirt and Leg Wraps
 				i(234059),	-- Lunar Festival Attire - Purple
 				i(234060),	-- Lunar Festival Attire - Teal
 				i(234043),	-- Lunar Festival Belt - Purple
@@ -677,10 +606,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232924),	-- Sailor's Belt
 				i(233093),	-- Short Aquatic War Skirt
 				i(233132),	-- Short Aquatic War Skirt and Leg Wraps
-				i(233080),	-- Short Azure War Skirt
-				i(233117),	-- Short Azure War Skirt and Leg Wraps
-				i(233086),	-- Short Brick War Skirt
-				i(233125),	-- Short Brick War Skirt and Leg Wraps
 				i(233089),	-- Short Carrot War Skirt
 				i(233128),	-- Short Carrot War Skirt and Leg Wraps
 				i(233083),	-- Short Cloudy War Skirt
@@ -691,14 +616,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233121),	-- Short Grassy War Skirt and Leg Wraps
 				i(233087),	-- Short Lively War Skirt
 				i(233126),	-- Short Lively War Skirt and Leg Wraps
-				i(233079),	-- Short Midnight War Skirt
-				i(233116),	-- Short Midnight War Skirt and Leg Wraps
 				i(233090),	-- Short Rosy War Skirt
 				i(233129),	-- Short Rosy War Skirt and Leg Wraps
-				i(233094),	-- Short Snowy War Skirt
-				i(233133),	-- Short Snowy War Skirt and Leg Wraps
-				i(233092),	-- Short Violet War Skirt
-				i(233131),	-- Short Violet War Skirt and Leg Wraps
 				i(234982),	-- Spare Sailor's Short-Sleeved Tunic
 				i(233272),	-- Steam-Powered Cobalt Clock Cloak
 				i(233275),	-- Steam-Powered Violet Clock Cloak
@@ -756,27 +675,92 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			n(ARMOR, {
 				i(231559),	-- [DNT] Experimental Gobbo-Flyer v3
 				i(235034),	-- Vigilante's Aquatic Mask
-				i(235020),	-- Vigilante's Azure Mask
-				i(235026),	-- Vigilante's Brick Mask
-				i(235029),	-- Vigilante's Carrot Mask
 				i(235023),	-- Vigilante's Cloudy Mask
-				i(235032),	-- Vigilante's Crimson Mask
 				i(235028),	-- Vigilante's Faded Mask
 				i(235022),	-- Vigilante's Grassy Mask
 				i(235027),	-- Vigilante's Lively Mask
-				i(235019),	-- Vigilante's Midnight Mask
 				i(235030),	-- Vigilante's Rosy Mask
-				i(235035),	-- Vigilante's Snowy Mask
 				i(235036),	-- Vigilante's Sunny Mask
-				i(235033),	-- Vigilante's Violet Mask
 				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
+			n(PVP, {
+				i(232890),	-- Arsenal: Algari Warmonger's Weapons
+				i(232866),	-- Arsenal: Elite Forged Gladiator's Weapons
+				i(232869),	-- Arsenal: Elite Prized Gladiator's Weapons
+				i(232864),	-- Arsenal: Forged Aspirant's Weapons
+				i(232865),	-- Arsenal: Forged Gladiator's Weapons
+				i(232867),	-- Arsenal: Prized Aspirant's Weapons
+				i(232868),	-- Arsenal: Prized Gladiator's Weapons
+				i(232886),	-- Ensemble: Algari Warmonger's Cloth Armor
+				i(232887),	-- Ensemble: Algari Warmonger's Leather Armor
+				i(232888),	-- Ensemble: Algari Warmonger's Mail Armor
+				i(232889),	-- Ensemble: Algari Warmonger's Plate Armor
+				i(232681),	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
+				i(232682),	-- Ensemble: Elite Forged Gladiator's Demon Hunter Armor
+				i(232683),	-- Ensemble: Elite Forged Gladiator's Druid Armor
+				i(232684),	-- Ensemble: Elite Forged Gladiator's Evoker Armor
+				i(232685),	-- Ensemble: Elite Forged Gladiator's Hunter Armor
+				i(232686),	-- Ensemble: Elite Forged Gladiator's Mage Armor
+				i(232687),	-- Ensemble: Elite Forged Gladiator's Monk Armor
+				i(232688),	-- Ensemble: Elite Forged Gladiator's Paladin Armor
+				i(232689),	-- Ensemble: Elite Forged Gladiator's Priest Armor
+				i(232690),	-- Ensemble: Elite Forged Gladiator's Rogue Armor
+				i(232691),	-- Ensemble: Elite Forged Gladiator's Shaman Armor
+				i(232692),	-- Ensemble: Elite Forged Gladiator's Warlock Armor
+				i(232693),	-- Ensemble: Elite Forged Gladiator's Warrior Armor
+				i(232712),	-- Ensemble: Elite Prized Gladiator's Death Knight Armor
+				i(232713),	-- Ensemble: Elite Prized Gladiator's Demon Hunter Armor
+				i(232714),	-- Ensemble: Elite Prized Gladiator's Druid Armor
+				i(232715),	-- Ensemble: Elite Prized Gladiator's Evoker Armor
+				i(232716),	-- Ensemble: Elite Prized Gladiator's Hunter Armor
+				i(232717),	-- Ensemble: Elite Prized Gladiator's Mage Armor
+				i(232718),	-- Ensemble: Elite Prized Gladiator's Monk Armor
+				i(232719),	-- Ensemble: Elite Prized Gladiator's Paladin Armor
+				i(232720),	-- Ensemble: Elite Prized Gladiator's Priest Armor
+				i(232721),	-- Ensemble: Elite Prized Gladiator's Rogue Armor
+				i(232722),	-- Ensemble: Elite Prized Gladiator's Shaman Armor
+				i(232723),	-- Ensemble: Elite Prized Gladiator's Warlock Armor
+				i(232724),	-- Ensemble: Elite Prized Gladiator's Warrior Armor
+				i(232664),	-- Ensemble: Forged Aspirant's Cloth Armor
+				i(232665),	-- Ensemble: Forged Aspirant's Leather Armor
+				i(232666),	-- Ensemble: Forged Aspirant's Mail Armor
+				i(232667),	-- Ensemble: Forged Aspirant's Plate Armor
+				i(232668),	-- Ensemble: Forged Gladiator's Death Knight Armor
+				i(232669),	-- Ensemble: Forged Gladiator's Demon Hunter Armor
+				i(232670),	-- Ensemble: Forged Gladiator's Druid Armor
+				i(232671),	-- Ensemble: Forged Gladiator's Evoker Armor
+				i(232672),	-- Ensemble: Forged Gladiator's Hunter Armor
+				i(232673),	-- Ensemble: Forged Gladiator's Mage Armor
+				i(232674),	-- Ensemble: Forged Gladiator's Monk Armor
+				i(232675),	-- Ensemble: Forged Gladiator's Paladin Armor
+				i(232676),	-- Ensemble: Forged Gladiator's Priest Armor
+				i(232677),	-- Ensemble: Forged Gladiator's Rogue Armor
+				i(232678),	-- Ensemble: Forged Gladiator's Shaman Armor
+				i(232679),	-- Ensemble: Forged Gladiator's Warlock Armor
+				i(232680),	-- Ensemble: Forged Gladiator's Warrior Armor
+				i(232695),	-- Ensemble: Prized Aspirant's Cloth Armor
+				i(232696),	-- Ensemble: Prized Aspirant's Leather Armor
+				i(232697),	-- Ensemble: Prized Aspirant's Mail Armor
+				i(232698),	-- Ensemble: Prized Aspirant's Plate Armor
+				i(232699),	-- Ensemble: Prized Gladiator's Death Knight Armor
+				i(232700),	-- Ensemble: Prized Gladiator's Demon Hunter Armor
+				i(232701),	-- Ensemble: Prized Gladiator's Druid Armor
+				i(232702),	-- Ensemble: Prized Gladiator's Evoker Armor
+				i(232703),	-- Ensemble: Prized Gladiator's Hunter Armor
+				i(232704),	-- Ensemble: Prized Gladiator's Mage Armor
+				i(232705),	-- Ensemble: Prized Gladiator's Monk Armor
+				i(232706),	-- Ensemble: Prized Gladiator's Paladin Armor
+				i(232707),	-- Ensemble: Prized Gladiator's Priest Armor
+				i(232708),	-- Ensemble: Prized Gladiator's Rogue Armor
+				i(232709),	-- Ensemble: Prized Gladiator's Shaman Armor
+				i(232710),	-- Ensemble: Prized Gladiator's Warlock Armor
+				i(232711),	-- Ensemble: Prized Gladiator's Warrior Armor
+			}),
 			n(SETS, {
-
 				------ Forest Dweller's Butterfly Set ------
 				i(235593),	-- Ensemble: Forest Dweller's Butterfly Attire
 				i(235589),	-- Forest Dweller's Butterfly Belt
@@ -889,6 +873,285 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(234376),	-- Vessel of Sacred Flame
 				i(234362),	-- Visage of Hidden Stars
 				i(234368),	-- Worshipper's Poniard
+			}),
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			n(ARMOR, {
+				i(239003),	-- Feathered Mantle of the Guardian
+				i(235986),	-- Evil King's Half Shell
+				i(238949),	-- Inferno Helm
+			}),
+			n(SETS, {
+				------ Lavaborn Citrine Set ------
+				i(238447),	-- Ensemble: Lavaborn Citrine Attire
+				i(238445),	-- Lavaborn Citrine Bracer
+				i(238444),	-- Lavaborn Citrine Chestguard
+				i(238439),	-- Lavaborn Citrine Cinch
+				i(238446),	-- Lavaborn Citrine Cloak
+				i(238443),	-- Lavaborn Citrine Glove
+				i(238442),	-- Lavaborn Citrine Helm
+				i(238440),	-- Lavaborn Citrine Mantle
+				i(238441),	-- Lavaborn Citrine Pants
+				i(238448),	-- Lavaborn Citrine Treads
+
+				------ Woodland Gilneas Fox Set ------
+				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
+				i(237220),	-- Woodland Belt of the Gilneas Fox
+				i(237198),	-- Woodland Boots of the Gilneas Fox
+				i(237229),	-- Woodland Cloak of the Gilneas Fox
+				i(237208),	-- Woodland Cowl of the Gilneas Fox
+				i(237203),	-- Woodland Gloves of the Gilneas Fox
+				i(237216),	-- Woodland Mantle of the Gilneas Fox
+				i(237212),	-- Woodland Pants of the Gilneas Fox
+				i(237193),	-- Woodland Vestments of the Gilneas Fox
+
+				------ Woodland Grey Wolf Set ------
+				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
+				i(237218),	-- Woodland Belt of the Grey Wolf
+				i(237195),	-- Woodland Boots of the Grey Wolf
+				i(237227),	-- Woodland Cloak of the Grey Wolf
+				i(237206),	-- Woodland Cowl of the Grey Wolf
+				i(237201),	-- Woodland Gloves of the Grey Wolf
+				i(237214),	-- Woodland Mantle of the Grey Wolf
+				i(237210),	-- Woodland Pants of the Grey Wolf
+				i(237191),	-- Woodland Vestments of the Grey Wolf
+
+				------ Stormstout's Set ------
+				i(237379),	-- Ensemble: Stormstout's Collection
+				i(237376),	-- Stormstout's Belt
+				i(237378),	-- Stormstout's Boots
+				i(237375),	-- Stormstout's Hat
+				i(237377),	-- Stormstout's Pants
+				i(237374),	-- Stormstout's Tunic
+			}),
+			n(WEAPONS, {
+				i(238621),	-- Blackwater Pinchzapper
+				i(238620),	-- Darkfuse Pinchzapper
+				i(238957),	-- Deathwarder's Great Grove Blade
+				i(238958),	-- Deathwarder's Great Twilight Blade
+				i(236628),	-- Deathwarder's Grove Blade
+				i(237181),	-- Deathwarder's Grove Fetish
+				i(237177),	-- Deathwarder's Grove Fist
+				i(236403),	-- Deathwarder's Grove Stave
+				i(236629),	-- Deathwarder's Twilight Blade
+				i(237182),	-- Deathwarder's Twilight Fetish
+				i(237178),	-- Deathwarder's Twilight Fist
+				i(236404),	-- Deathwarder's Twilight Stave
+				i(238952),	-- Green Flame Burner
+				i(238895),	-- Lavaborn Citrine Blade
+				i(238400),	-- Lavaborn Citrine Chopper
+				i(238893),	-- Lavaborn Emerald Blade
+				i(238398),	-- Lavaborn Emerald Chopper
+				i(237855),	-- Shadowmoon Flame's Bardiche
+				i(238622),	-- Steamweedle Pinchzapper
+				i(237857),	-- Sunwell Flame's Bardiche
+				i(238623),	-- Undermine City Pinchzapper
+				i(238955),	-- Yellow Flame Burner
+			}),
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			n(SETS, {
+				------ Aquatic Sweatsuit Set ------
+				i(242485),	-- Ensemble: Aquatic Sweatsuit
+				i(242451),	-- Aquatic Sweatpants
+				i(242422),	-- Aquatic Sweatshirt
+
+				------ Azure Sweatsuit Set ------
+				i(242456),	-- Ensemble: Azure Sweatsuit
+				i(242437),	-- Azure Sweatpants
+				i(242408),	-- Azure Sweatshirt
+
+				------ Banshee's Chilling Set ------
+				i(244223),	-- Ensemble: Banshee's Chilling Collection
+				i(244206),	-- Banshee's Chilling Chestplate
+				i(244198),	-- Banshee's Chilling Grip
+				i(244180),	-- Banshee's Chilling Veil
+				i(244202),	-- Banshee's Chilling Vestment
+				i(244215),	-- Chilling Banshee Boots
+				i(244219),	-- Chilling Banshee Cinch
+				i(244184),	-- Chilling Epaulets of the Banshee
+				i(244188),	-- Chilling Leggings of the Banshee
+				i(244210),	-- Chilling Shroud of the Banshee
+
+				------ Banshee's Sickly Set ------
+				i(244227),	-- Ensemble: Banshee's Sickly Collection
+				i(244209),	-- Banshee's Sickly Chestplate
+				i(244201),	-- Banshee's Sickly Grip
+				i(244183),	-- Banshee's Sickly Veil
+				i(244205),	-- Banshee's Sickly Vestment
+				i(244218),	-- Sickly Banshee Boots
+				i(244222),	-- Sickly Banshee Cinch
+				i(244187),	-- Sickly Epaulets of the Banshee
+				i(244191),	-- Sickly Leggings of the Banshee
+				i(244213),	-- Sickly Shroud of the Banshee
+
+				------ Brick Sweatsuit Set ------
+				i(242462),	-- Ensemble: Brick Sweatsuit
+				i(242443),	-- Brick Sweatpants
+				i(242414),	-- Brick Sweatshirt
+
+				------ Camo Sweatsuit Set ------
+				i(242461),	-- Ensemble: Camo Sweatsuit
+				i(242442),	-- Camo Sweatpants
+				i(242413),	-- Camo Sweatshirt
+
+				------ Carrot Sweatsuit Set ------
+				i(242469),	-- Ensemble: Carrot Sweatsuit
+				i(242446),	-- Carrot Sweatpants
+				i(242417),	-- Carrot Sweatshirt
+
+				------ Cloudy Sweatsuit Set ------
+				i(242459),	-- Ensemble: Cloudy Sweatsuit
+				i(242440),	-- Cloudy Sweatpants
+				i(242411),	-- Cloudy Sweatshirt
+
+				------ Crimson Sweatsuit Set ------
+				i(242478),	-- Ensemble: Crimson Sweatsuit
+				i(242449),	-- Crimson Sweatpants
+				i(242420),	-- Crimson Sweatshirt
+
+				------ Deep Sweatsuit Set ------
+				i(242460),	-- Ensemble: Deep Sweatsuit
+				i(242441),	-- Deep Sweatpants
+				i(242412),	-- Deep Sweatshirt
+
+				------ Faded Sweatsuit Set ------
+				i(242467),	-- Ensemble: Faded Sweatsuit
+				i(242445),	-- Faded Sweatpants
+				i(242416),	-- Faded Sweatshirt
+
+				------ Girded Mist Attire Set ------
+				i(242345),	-- Ensemble: Girded Mist Attire
+				i(242329),	-- Girded Mist Belt
+				i(242337),	-- Girded Mist Coat
+				i(242325),	-- Girded Mist Galoshes
+				i(242341),	-- Girded Mist Hood
+				i(242333),	-- Girded Mist Pants
+
+				------ Grandmaster's Deep Set ------
+				i(243268),	-- Ensemble: Grandmaster's Deep Attire
+				i(243260),	-- Grandmaster's Deep Belt
+				i(243259),	-- Grandmaster's Deep Cloak
+				i(243265),	-- Grandmaster's Deep Boots
+				i(243264),	-- Grandmaster's Deep Gloves
+				i(243263),	-- Grandmaster's Deep Helm
+				i(243261),	-- Grandmaster's Deep Mantle
+				i(243262),	-- Grandmaster's Deep Pants
+				i(243267),	-- Grandmaster's Deep Tunic
+
+				------ Grandmaster's Smoke Set ------
+				i(243286),	-- Ensemble: Grandmaster's Smoke Attire
+				i(243279),	-- Grandmaster's Smoke Belt
+				i(243278),	-- Grandmaster's Smoke Cloak
+				i(243284),	-- Grandmaster's Smoke Boots
+				i(243283),	-- Grandmaster's Smoke Gloves
+				i(243282),	-- Grandmaster's Smoke Helm
+				i(243280),	-- Grandmaster's Smoke Mantle
+				i(243281),	-- Grandmaster's Smoke Pants
+				i(243285),	-- Grandmaster's Smoke Tunic
+
+				------ Grassy Sweatsuit Set ------
+				i(242458),	-- Ensemble: Grassy Sweatsuit
+				i(242439),	-- Grassy Sweatpants
+				i(242410),	-- Grassy Sweatshirt
+
+				------ Midnight Sweatsuit Set ------
+				i(242455),	-- Ensemble: Midnight Sweatsuit
+				i(242407),	-- Midnight Sweatpants
+				i(242454),	-- Midnight Sweatshirt
+
+				------ Rainy Day Attire Set ------
+				i(242346),	-- Ensemble: Rainy Day Attire
+				i(242330),	-- Rainy Day Belt
+				i(242338),	-- Rainy Day Coat
+				i(242326),	-- Rainy Day Galoshes
+				i(242342),	-- Rainy Day Hood
+				i(242334),	-- Rainy Day Pants
+
+				------ Rosy Sweatsuit Set ------
+				i(242471),	-- Ensemble: Rosy Sweatsuit
+				i(242447),	-- Rosy Sweatpants
+				i(242418),	-- Rosy Sweatshirt
+
+				------ Sepia Sweatsuit Set ------
+				i(242457),	-- Ensemble: Sepia Sweatsuit
+				i(242438),	-- Sepia Sweatpants
+				i(242409),	-- Sepia Sweatshirt
+
+				------ Squall Braced Attire Set ------
+				i(242344),	-- Ensemble: Squall Braced Attire
+				i(242328),	-- Squall Braced Belt
+				i(242336),	-- Squall Braced Coat
+				i(242324),	-- Squall Braced Galoshes
+				i(242340),	-- Squall Braced Hood
+				i(242332),	-- Squall Braced Pants
+
+				------ Sunny Sweatsuit Set ------
+				i(242492),	-- Ensemble: Sunny Sweatsuit
+				i(242453),	-- Sunny Sweatpants
+				i(242424),	-- Sunny Sweatshirt
+
+				------ Violet Sweatsuit Set ------
+				i(242480),	-- Ensemble: Violet Sweatsuit
+				i(242450),	-- Violet Sweatpants
+				i(242421),	-- Violet Sweatshirt
+
+				------ Waterproof Attire Set ------
+				i(242347),	-- Ensemble: Waterproof Attire
+				i(242331),	-- Waterproof Belt
+				i(242339),	-- Waterproof Coat
+				i(242327),	-- Waterproof Galoshes
+				i(242343),	-- Waterproof Hood
+				i(242335),	-- Waterproof Pants
+			}),
+			n(WEAPONS, {
+				i(244540),	-- Charred Flamewake Sprout
+				i(242521),	-- Chiling Forsaken Cauldron
+				i(242627),	-- Chilling Forsaken Blade
+				i(242631),	-- Chilling Forsaken Great Blade
+				i(242376),	-- Chilling Forsaken Longbow
+				i(242348),	-- Chilling Forsaken Mace
+				i(242381),	-- Chilling Forsaken Quiver
+				i(242385),	-- Chilling Forsaken Wand
+				i(242352),	-- Chilling Forsaken Warglaives
+				i(244542),	-- Chronosmith's Temporal Safeguard
+				i(244647),	-- Crook of the White Flame
+				i(244651),	-- Forest Ranger's Buckler
+				i(244544),	-- Forest Watcher's Rune-Axe
+				i(244546),	-- Forgotten Bow of the Banshee
+				i(244650),	-- Fort Triumph Longbow
+				i(242526),	-- Grandmaster's Blue Axe
+				i(242373),	-- Grandmaster's Blue Bulwark
+				i(242540),	-- Grandmaster's Blue Mace
+				i(242358),	-- Grandmaster's Blue Stave
+				i(242528),	-- Grandmaster's White Axe
+				i(242375),	-- Grandmaster's White Bulwark
+				i(242542),	-- Grandmaster's White Mace
+				i(242360),	-- Grandmaster's White Stave
+				i(244549),	-- Light's Dawn Cryptblade
+				i(244680),	-- Morchie's Desynchronized Chime
+				i(244652),	-- Prayer Beacon of the Goddess
+				i(244681),	-- Pyrewood Silver Blade
+				i(244543),	-- Scimitar of the Crocolisk God
+				i(244648),	-- Scipture of the Scarlet High Priest
+				i(244646),	-- Seared Root of Regrowth
+				i(244649),	-- Shadowforge Senator's Ledger
+				i(244548),	-- Shattered Highvale Staff
+				i(242524),	-- Sickening Forsaken Cauldron
+				i(242630),	-- Sickly Forsaken Blade
+				i(242634),	-- Sickly Forsaken Great Blade
+				i(242379),	-- Sickly Forsaken Longbow
+				i(242351),	-- Sickly Forsaken Mace
+				i(242384),	-- Sickly Forsaken Quiver
+				i(242389),	-- Sickly Forsaken Wand
+				i(242355),	-- Sickly Forsaken Warglaives
+				i(244550),	-- Sunwalker's Ashen Warmaul
+				i(244551),	-- Time-Lost Worldbreaker
+				i(244541),	-- Zin-Azshari Court Scepter
 			}),
 		})),
 	}),

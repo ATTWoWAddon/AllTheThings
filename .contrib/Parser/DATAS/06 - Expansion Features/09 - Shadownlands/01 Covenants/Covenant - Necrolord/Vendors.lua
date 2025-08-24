@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(VENDORS, {
 			n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 				["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["groups"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -217,7 +217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
 				["coord"] = { 61.1, 45.7, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
+				["groups"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
@@ -419,7 +419,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
 				-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 				["coord"] = { 60.5, 48.6, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				["groups"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226
@@ -660,7 +660,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					182262,	-- Bladesworn Wraith's Stranglers
 					182259,	-- Bladesworn Wraith's Visage
 				}},
-				["g"] = {
+				["groups"] = {
 					CHRONICLE_OF_LOST_MEMORIES,
 					i(183451, {	-- Goreforged Barrier
 						["cost"] = {
@@ -738,7 +738,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(172176, {	-- Su Zettai <Renown Quartermaster>
 				["coord"] = { 52.5, 41.2, SEAT_OF_THE_PRIMUS },
-				["g"] = {
+				["groups"] = {
 					i(181815, {	-- Armored Bonehoof Tauralus (MOUNT!)
 						["cost"] = {
 							{ "c", ANIMA, 5000 },
@@ -1074,7 +1074,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
 				["coord"] = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["groups"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213

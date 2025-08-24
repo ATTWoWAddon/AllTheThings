@@ -8,11 +8,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236722,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1264),	-- Explore Borean Tundra
+					ach(1264),	-- Explore Borean Tundra
 					ach(33, {	-- Nothing Boring About Borean (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11794,	-- The Hunt is On
 							11965,	-- Call to Arms!
@@ -36,78 +37,13 @@ root(ROOTS.Zones, {
 							12088,	-- Thassarian, the Death Knight
 							12019,	-- Last Rites
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39025, {	-- Hiding in Plain Sight
-								["sourceQuest"] = 11794,	-- The Hunt is On
-							}),
-							crit(39026, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 11913,	-- Take No Chances
-							}),
-							crit(39027, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 12035,	-- Repurposed Technology
-							}),
-							crit(39028, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 11965,	-- Call to Arms!
-							}),
-							crit(347, {	-- D.E.H.T.A.
-								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-							}),
-							crit(39029, {	-- The Blue Dragonflight
-								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
-							}),
-							crit(39030, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11733,	-- Traversing the Rift
-							}),
-							crit(39031, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11969,	-- Springing the Trap
-							}),
-							crit(39032, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11931,	-- Cracking the Code
-							}),
-							crit(39033, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11914,	-- Keep the Secret Safe
-							}),
-							crit(39034, {	-- Friends from the Sea
-								["sourceQuest"] = 11626,	-- The Emissary
-							}),
-							crit(39035, {	-- Friends from the Sea
-								["sourceQuest"] = 11968,	-- The Tides Turn
-							}),
-							crit(39036, {	-- Participant Observation
-								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
-							}),
-							crit(39037, {	-- Participant Observation
-								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
-							}),
-							crit(39038, {	-- Participant Observation
-								["sourceQuest"] = 11566,	-- Surrender... Not!
-							}),
-							crit(39039, {	-- Participant Observation
-								["sourceQuest"] = 11564,	-- Succulent Orca Stew
-							}),
-							crit(39040, {	-- Participant Observation
-								["sourceQuest"] = 11561,	-- Them!
-							}),
-							crit(39041, {	-- A Family Reunion
-								["sourceQuest"] = 12088,	-- Thassarian, the Death Knight
-							}),
-							crit(39042, {	-- Last Rites
-								["sourceQuest"] = 12019,	-- Last Rites
-							}),
-						},
 						-- #endif
 					}),
 					ach(1358, {	-- Nothing Boring About Borean (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11638,	-- Return My Remains
 							11652,	-- The Plains of Nasam
@@ -136,84 +72,6 @@ root(ROOTS.Zones, {
 							11907,	-- The Sub-Chieftains
 							11930,	-- Across Transborea
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 150,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39043, {	-- The Fate of Farseer Grimwalker
-								["sourceQuest"] = 11638,	-- Return My Remains
-							}),
-							crit(39044, {	-- Return of the Dread Citadel
-								["sourceQuest"] = 11652,	-- The Plains of Nasam
-							}),
-							crit(39045, {	-- The Scourge Necrolord
-								["sourceQuest"] = 11705,	-- Foolish Endeavors
-							}),
-							crit(347, {	-- D.E.H.T.A.
-								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-							}),
-							crit(39029, {	-- The Blue Dragonflight
-								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
-							}),
-							crit(39030, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11733,	-- Traversing the Rift
-							}),
-							crit(39031, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11969,	-- Springing the Trap
-							}),
-							crit(39032, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11931,	-- Cracking the Code
-							}),
-							crit(39033, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11914,	-- Keep the Secret Safe
-							}),
-							crit(39034, {	-- Friends from the Sea
-								["sourceQuest"] = 11626,	-- The Emissary
-							}),
-							crit(39035, {	-- Friends from the Sea
-								["sourceQuest"] = 11968,	-- The Tides Turn
-							}),
-							crit(39036, {	-- Participant Observation
-								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
-							}),
-							crit(39037, {	-- Participant Observation
-								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
-							}),
-							crit(39038, {	-- Participant Observation
-								["sourceQuest"] = 11566,	-- Surrender... Not!
-							}),
-							crit(39039, {	-- Participant Observation
-								["sourceQuest"] = 11564,	-- Succulent Orca Stew
-							}),
-							crit(39040, {	-- Participant Observation
-								["sourceQuest"] = 11561,	-- Them!
-							}),
-							crit(39046, {	-- Hellscream's Champion
-								["sourceQuest"] = 11916,	-- Hellscream's Champion
-							}),
-							crit(39047, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11689,	-- Return with the Bad News
-							}),
-							crit(39048, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11906,	-- Cleaning Up the Pools
-							}),
-							crit(39049, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11907,	-- The Sub-Chieftains
-							}),
-							crit(39050, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11909,	-- Defeat the Gearmaster
-							}),
-							crit(39051, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11706,	-- The Collapse
-							}),
-							crit(39052, {	-- Somber Realization
-								["sourceQuest"] = 11930,	-- Across Transborea
-							}),
-						},
 						-- #endif
 					}),
 					achWithRep(1012, FACTION_ALLIANCE_VANGUARD, {	-- The Winds of the North (A)
@@ -227,7 +85,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						388,	-- Shore Crab (PET!)
 					}},
-					["g"] = {
+					["groups"] = {
 						pet(641),	-- Arctic Hare (PET!)
 						pet(639, {	-- Borean Marmot (PET!)
 							["description"] = "Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",
@@ -385,10 +243,10 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(11718, {	-- A Bot in Mammoth's Clothing
+						["sourceQuest"] = 11715,	-- Fueling the Project
+						["qg"] = 25780,	-- Abner Fizzletorque
 						["coord"] = { 57.0, 20.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25780,	-- Abner Fizzletorque
-						["sourceQuest"] = 11715,	-- Fueling the Project
 						["groups"] = {
 							objective(1, {	-- 0/6 Thick Mammoth Hide
 								["provider"] = { "i", 34977 },	-- Thick Mammoth Hide
@@ -401,10 +259,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11641, {	-- A Courageous Strike
+						["sourceQuest"] = 11633,	-- Blending In
 						["qg"] = 24706,	-- Durm Icehide
 						["coord"] = { 75.9, 37.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11633,	-- Blending In
 						["groups"] = {
 							objective(1, {	-- 0/15 En'kilah Ghoul slain
 								["provider"] = { "n", 25393 },	-- En'kilah Ghoul
@@ -415,28 +273,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11604, {	-- A Deserter
+						["sourceQuest"] = 11603,	-- In Wine, Truth
+						["qg"] = 25302,	-- Old Man Colburn
 						["coord"] = { 58.5, 68.0, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25302,	-- Old Man Colburn
-						["sourceQuest"] = 11603,	-- In Wine, Truth
 					}),
 					q(12141, {	-- A Diplomatic Mission
+						["sourceQuest"] = 11791,	-- Notify Arlos
+						["qg"] = 25301,	-- Counselor Talbot
 						["coord"] = { 56.7, 72.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25301,	-- Counselor Talbot
-						["sourceQuest"] = 11791,	-- Notify Arlos
 						["isBreadcrumb"] = true,
 					}),
 					q(11620, {	-- A Father's Words
+						["sourceQuest"] = 11619,	-- Gamel the Cruel
 						["qg"] = 25435,	-- Karuk
 						["coord"] = { 47.1, 75.4, BOREAN_TUNDRA },
-						["sourceQuest"] = 11619,	-- Gamel the Cruel
 					}),
 					q(11726, {	-- A Little Bit of Spice
+						["sourceQuest"] = 11725,	-- Finding Pilot Tailspin
+						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 						["coord"] = { 61.6, 35.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
-						["sourceQuest"] = 11725,	-- Finding Pilot Tailspin
 						["groups"] = {
 							objective(1, {	-- 0/4 Gorloc Spice Pouch
 								["provider"] = { "i", 34983 },	-- Gorloc Spice Pouch
@@ -456,10 +314,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 					}),
 					q(11675, {	-- A Proper Death
+						["sourceQuest"] = 11674,	-- Sage Highmesa is Missing
 						["qg"] = 25604,	-- Sage Highmesa
 						["coord"] = { 74.6, 23.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11674,	-- Sage Highmesa is Missing
 						["groups"] = {
 							objective(1, {	-- 0/10 Plagued Magnataur slain
 								["providers"] = {
@@ -470,9 +328,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11671, {	-- A Race Against Time
+						["sourceQuest"] = 11663,	-- Sharing Intelligence
 						["qg"] = 25262,	-- Librarian Donathan
 						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11663,	-- Sharing Intelligence
 						["groups"] = {
 							objective(1, {	-- 0/1 Salrand's Broken Key
 								["providers"] = {
@@ -483,10 +341,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11789, {	-- A Soldier in Need
+						["sourceQuest"] = 11797,	-- The Siege
+						["qg"] = 25825,	-- Medic Hawthorn
 						["coord"] = { 55.0, 68.9, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25825,	-- Medic Hawthorn
-						["sourceQuest"] = 11797,	-- The Siege
 						["groups"] = {
 							objective(1, {	-- 0/1 Hawthorn's Anti-Venom
 								["providers"] = {
@@ -497,21 +355,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11719, {	-- A Suitable Test Subject
+						["sourceQuest"] = 11717,	-- Pollen from the Source
 						["qg"] = 25381,	-- Bloodmage Laurith
 						["coord"] = { 52.0, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11717,	-- Pollen from the Source
 					}),
 					q(11727, {	-- A Time for Heroes
+						["sourceQuest"] = 11672,	-- Enlistment Day
+						["qg"] = 25250,	-- General Arlos
 						["coord"] = { 56.6, 72.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25250,	-- General Arlos
-						["sourceQuest"] = 11672,	-- Enlistment Day
 					}),
 					q(11623, {	-- A Visit to the Curator
+						["sourceQuest"] = 11617,	-- Hampering Their Escape
 						["qg"] = 25292,	-- Etaruk
 						["coord"] = { 54.2, 36.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11617,	-- Hampering Their Escape
 						["groups"] = {
 							objective(1, {	-- 0/1 Curator Insivius slain
 								["provider"] = { "n", 25448 },	-- Curator Insivius
@@ -523,14 +381,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11590, {	-- Abduction
+						["sourceQuest"] = 11587,	-- Prison Break
 						["qg"] = 25262,	-- Librarian Donathan
 						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11587,	-- Prison Break
 					}),
 					q(13413, {	-- Aces High!
+						["sourceQuest"] = 13412,	-- Corastrasza
 						["qg"] = 32548,	-- Corastrasza
 						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
-						["sourceQuest"] = 13412,	-- Corastrasza
 						["groups"] = {
 							objective(1, {	-- 0/5 Scalesworn Elites Killed
 								["provider"] = { "n", 32534 },	-- Scalesworn Elite
@@ -542,8 +400,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13414, {	-- Aces High!
-						["qg"] = 32548,	-- Corastrasza
 						["sourceQuest"] = 13413,	-- Aces High!
+						["qg"] = 32548,	-- Corastrasza
 						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
 						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
@@ -554,16 +412,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11930, {	-- Across Transborea
+						["sourceQuest"] = 11929,	-- The Fall of Taunka'le Village
 						["qg"] = 26158,	-- Mother Tauranook
 						["coord"] = { 78.3, 38.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11929,	-- The Fall of Taunka'le Village
 					}),
 					q(11701, {	-- Back to the Airstrip
+						["sourceQuest"] = 11700,	-- Let Bixie Know
+						["qg"] = 25705,	-- Bixie Wrenchshanker
 						["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25705,	-- Bixie Wrenchshanker
-						["sourceQuest"] = 11700,	-- Let Bixie Know
 						["groups"] = {
 							i(37519),	-- Amberplate Headguard
 							i(38214),	-- Hypergizmatic Energy Booster
@@ -573,8 +431,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11951, {	-- Bait and Switch
-						["qg"] = 26206,	-- Keristrasza
 						["sourceQuest"] = 11946,	-- Keristrasza
+						["qg"] = 26206,	-- Keristrasza
 						["groups"] = {
 							objective(1, {	-- 0/10 Crystallized Mana Shard
 								["providers"] = {
@@ -594,19 +452,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11633, {	-- Blending In
+						["sourceQuest"] = 11630,	-- The Bad Earth
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11630,	-- The Bad Earth
 						["groups"] = {
 							i(34782),	-- Imbued Scourge Shroud
 						},
 					}),
 					q(11898, {	-- Breaking Through
+						["sourceQuest"] = 11640,	-- Words of Power
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11640,	-- Words of Power
 						["groups"] = {
 							objective(1, {	-- 0/1 Prince Valanar slain
 								["provider"] = { "n", 25601 },	-- Prince Valanar
@@ -623,16 +481,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11627, {	-- Boiling Point
+						["sourceQuest"] = 11624,	-- The Sky Will Know
 						["qg"] = 25376,	-- Imperean
 						["coord"] = { 46.5, 9.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11624,	-- The Sky Will Know
 					}),
 					q(11690, {	-- Bring 'Em Back Alive
+						["sourceQuest"] = 11688,	-- Damned Filthy Swine
 						["qg"] = 25607,	-- Farmer Torp
 						["coord"] = { 37.9, 52.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11688,	-- Damned Filthy Swine
 						["groups"] = {
 							i(36885),	-- Marshwalker Chestpiece
 							i(36887),	-- Mightstone Pauldrons
@@ -641,10 +499,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11656, {	-- Burn in Effigy
+						["sourceQuest"] = 11655,	-- Into the Mist
 						["qg"] = 25476,	-- Waltor of Pal'ea
 						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11655,	-- Into the Mist
 						["groups"] = {
 							i(37483),	-- Seabone Heaume
 							i(37207),	-- Seafarer Boots
@@ -653,10 +511,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11608, {	-- Bury Those Cockroaches!
+						["sourceQuest"] = 11606,	-- Patience is a Virtue that We Don't Need
 						["qg"] = 25327,	-- Quartermaster Holgoth
 						["coord"] = { 43.3, 55.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11606,	-- Patience is a Virtue that We Don't Need
 						["groups"] = {
 							i(36888),	-- Marshwalker Legguards
 							i(36938),	-- Mightstone Breastplate
@@ -665,10 +523,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11938, {	-- Buying Some Time
+						["sourceQuest"] = 11956,	-- Finding the Phylactery
+						["qg"] = 26170,	-- Thassarian
 						["coord"] = { 84.7, 41.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26170,	-- Thassarian
-						["sourceQuest"] = 11956,	-- Finding the Phylactery
 						["groups"] = {
 							objective(1, {	-- 0/20 En'kilah Casualty
 								["providers"] = {
@@ -688,10 +546,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11965, {	-- Call to Arms!
+						["sourceQuest"] = 11963,	-- Weapons for Farshire
+						["qg"] = 26083,	-- Gerald Green
 						["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26083,	-- Gerald Green
-						["sourceQuest"] = 11963,	-- Weapons for Farshire
 						["groups"] = {
 							objective(1, {	-- 0/1 Farshire Bell Rung
 								["provider"] = { "o", 188163 },	-- Bell Rope
@@ -702,22 +560,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11867, {	-- Can't Get Ear-nough...
+						["sourceQuest"] = 11866,	-- Ears of Our Enemies
 						["qg"] = 25809,	-- Archdruid Lathorius
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 						["repeatable"] = true,
-						["sourceQuest"] = 11866,	-- Ears of Our Enemies
 					}),
 					q(11692, {	-- Check in With Bixie
+						["sourceQuest"] = 11710,	-- What's the Matter with the Transmatter?
+						["qg"] = 25702,	-- Mordle Cogspinner
 						["coord"] = { 57.5, 18.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25702,	-- Mordle Cogspinner
-						["sourceQuest"] = 11710,	-- What's the Matter with the Transmatter?
 					}),
 					q(11906, {	-- Cleaning Up the Pools
+						["sourceQuest"] = 11895,	-- Master the Storm
+						["qg"] = 26104,	-- Iron Eyes
 						["coord"] = { 76.9, 37.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26104,	-- Iron Eyes
-						["sourceQuest"] = 11895,	-- Master the Storm
 						["groups"] = {
 							objective(1, {	-- 0/15 Fizzcrank Spare Parts
 								["providers"] = {
@@ -736,47 +594,57 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13265, {	-- Cloth Scavenging (A)
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
-						["altQuests"] = {
-							13268,	-- Cloth Scavenging (A, Howling Fjord)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
-						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 						["qg"] = 27001,	-- Darin Goodstitch
-						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 						["requireSkill"] = TAILORING,
+						["races"] = ALLIANCE_ONLY,
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							-- "questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13270, {	-- Cloth Scavenging (H)
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
-						["altQuests"] = {
-							13269,	-- Cloth Scavenging (H, Howling Fjord)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
-						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26969,	-- Raenah
+						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							-- "questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13412, {	-- Corastrasza
 						["qg"] = 26110,	-- Librarian Serrah
 						["coord"] = { 33.4, 34.3, BOREAN_TUNDRA },
 					}),
 					q(11711, {	-- Coward Delivery... Under 30 Minutes or it's Free
+						["sourceQuest"] = 11709,	-- Nork Bloodfrenzy's Charge
 						["qg"] = 25379,	-- Warden Nork Bloodfrenzy
 						["coord"] = { 43.7, 54.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11709,	-- Nork Bloodfrenzy's Charge
 					}),
 					q(11932, {	-- Cowards and Fools
+						["sourceQuest"] = 11604,	-- A Deserter
+						["qg"] = 25395,	-- Private Brau
 						["coord"] = { 56.6, 71.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25395,	-- Private Brau
-						["sourceQuest"] = 11604,	-- A Deserter
 					}),
 					q(11931, {	-- Cracking the Code
+						["sourceQuest"] = 11919,	-- Drake Hunt
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["sourceQuest"] = 11919,	-- Drake Hunt
 						["groups"] = {
 							objective(1, {	-- 0/3 Shimmering Rune
 								["provider"] = { "i", 35629 },	-- Shimmering Rune
@@ -789,22 +657,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12471, {	-- Cruelty of the Kvaldir
+						["description"] = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
 						["qg"] = 25636,	-- Captured Tuskarr Prisoner
 						["coord"] = { 44.0, 77.8, BOREAN_TUNDRA },
-						["description"] = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
 					}),
 					q(11920, {	-- Cultists Among Us
-						["coord"] = { 57.5, 69.1, BOREAN_TUNDRA },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "o", 187851 },	-- Cultist Shrine
 						["description"] = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
 						["sourceQuest"] = 11789,	-- A Soldier In Need
+						["provider"] = { "o", 187851 },	-- Cultist Shrine
+						["coord"] = { 57.5, 69.1, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11602, {	-- Cutting Off the Source
+						["sourceQuest"] = 11598,	-- Taking Back Mightstone Quarry
 						["qg"] = 25279,	-- Overlord Razgor
 						["coord"] = { 43.1, 54.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11598,	-- Taking Back Mightstone Quarry
 						["groups"] = {
 							objective(1, {	-- 0/10 Nerub'ar Egg Sac Destroyed
 								["provider"] = { "o", 187655 },	-- Nerub'ar Egg Sac
@@ -828,10 +696,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11889, {	-- Death From Above
+						["sourceQuest"] = 11797,	-- The Siege
+						["qg"] = 25816,	-- Sergeant Hammerhill
 						["coord"] = { 56.3, 69.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25816,	-- Sergeant Hammerhill
-						["sourceQuest"] = 11797,	-- The Siege
 						["groups"] = {
 							objective(1, {	-- 0/6 Scourged Flamespitter slain
 								["provider"] = { "n", 25582 },	-- Scourged Flamespitter
@@ -839,10 +707,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11909, {	-- Defeat the Gearmaster
+						["sourceQuest"] = 11899,	-- Souls of the Decursed
 						["qg"] = 25602,	-- Greatmother Taiga
 						["coord"] = { 77.3, 36.8, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11899,	-- Souls of the Decursed
 						["groups"] = {
 							i(37522),	-- Earthborn Greaves
 							i(37547),	-- Fireborn Warhammer
@@ -852,10 +720,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11723, {	-- Deploy the Shake-n-Quake!
+						["sourceQuest"] = 11718,	-- A Bot in Mammoth's Clothing
+						["qg"] = 25780,	-- Abner Fizzletorque
 						["coord"] = { 57.0, 20.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25780,	-- Abner Fizzletorque
-						["sourceQuest"] = 11718,	-- A Bot in Mammoth's Clothing
 						["groups"] = {
 							i(37516),	-- Chilled Greaves
 							i(37437),	-- Plainhunter's Chestpiece
@@ -864,10 +732,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11645, {	-- Dirty, Stinkin' Snobolds!
+						["sourceQuest"] = 11708,	-- The Mechagnomes
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11708,	-- The Mechagnomes
 						["groups"] = {
 							objective(1, {	-- 0/10 Crafty's Stuff
 								["providers"] = {
@@ -878,21 +746,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11707, {	-- Distress Call
+						["sourceQuest"] = 11897,	-- Plug the Sinkholes	-- TODO: this doesn't appear to be correct but I didn't catch exactly when it became available
+						["qg"] = 25737,	-- Airman Skyhopper
 						["coord"] = { 58.8, 68.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25737,	-- Airman Skyhopper
-						["sourceQuest"] = 11897,	-- Plug the Sinkholes	-- TODO: this doesn't appear to be correct but I didn't catch exactly when it became available
 						["isBreadcrumb"] = true,
 					}),
 					q(11682, {	-- Dragonspeak
+						["sourceQuest"] = 11681,	-- Rescuing Evanor
 						["qg"] = 25785,	-- Archmage Evanor
 						["coord"] = { 46.3, 32.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11681,	-- Rescuing Evanor
 					}),
 					q(11919, {	-- Drake Hunt
+						["sourceQuest"] = 11936,	-- Hatching a Plan
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["sourceQuest"] = 11936,	-- Hatching a Plan
 						["groups"] = {
 							i(37382),	-- Charred Drakehide Belt
 							i(37435),	-- Flame-Infused Bindings
@@ -901,28 +769,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11940, {	-- Drake Hunt
-						["qg"] = 26117,	-- Raelorasz
 						["sourceQuest"] = 11919,	-- Drake Hunt
+						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
 						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11866, {	-- Ears of Our Enemies
+						["sourceQuest"] = 11864,	-- A Mission Statement
 						["qg"] = 25809,	-- Archdruid Lathorius
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11864,	-- A Mission Statement
 					}),
 					q(11795, {	-- Emergency Protocol: Section 8.2, Paragraph C
+						["sourceQuest"] = 11728,	-- Lupus Pupus
+						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 						["coord"] = { 61.6, 35.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
-						["sourceQuest"] = 11728,	-- Lupus Pupus
 					}),
 					q(11796, {	-- Emergency Protocol: Section 8.2, Paragraph D
+						["sourceQuest"] = 11795,	-- Emergency Protocol: Section 8.2, Paragraph C
+						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 						["coord"] = { 61.6, 35.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
-						["sourceQuest"] = 11795,	-- Emergency Protocol: Section 8.2, Paragraph C
 					}),
 					q(11887, {	-- Emergency Supplies
 						["qg"] = 25984,	-- Crashed Recon Pilot
@@ -930,10 +798,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11792, {	-- Enemies of the Light
+						["sourceQuest"] = 11791,	-- Notify Arlos
+						["qg"] = 25285,	-- Harbinger Vurenn
 						["coord"] = { 56.6, 72.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25285,	-- Harbinger Vurenn
-						["sourceQuest"] = 11791,	-- Notify Arlos
 						["groups"] = {
 							objective(1, {	-- 0/1 Cultist Communique
 								["provider"] = { "i", 35122 },	-- Cultist Communique
@@ -946,17 +814,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11672, {	-- Enlistment Day
-						["qg"] = 25307,	-- Recruitment Officer Blythe
 						-- #if AFTER 4.0.3.13277
 						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
 						-- #endif
+						["qg"] = 25307,	-- Recruitment Officer Blythe
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11570, {	-- Escape from the Winterfin Caverns
+						["sourceQuest"] = 11571,	-- Learning to Communicate
 						["qg"] = 25208,	-- Lurgglbr
 						["coord"] = { 37.7, 23.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11571,	-- Learning to Communicate
 						["groups"] = {
 							i(37044),	-- Amphibious Speargun
 							i(37036),	-- Fish-Eye Poker
@@ -980,10 +848,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11683, {	-- Fallen Necropolis
+						["sourceQuest"] = 11677,	-- Stop the Plague
 						["qg"] = 25604,	-- Sage Highmesa
 						["coord"] = { 74.6, 23.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11677,	-- Stop the Plague
 						["groups"] = {
 							objective(1, {	-- 0/20 Talramas Scourge Destroyed
 								["providers"] = {
@@ -1002,34 +870,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11635, {	-- Farseer Grimwalker's Spirit
+						["sourceQuest"] = 11631,	-- Vision of Air
 						["qg"] = 25339,	-- Spirit Talker Snarlfang
 						["coord"] = { 50.2, 9.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11631,	-- Vision of Air
 					}),
 					q(11928, {	-- Farshire
+						["sourceQuest"] = 11897,	-- Plug the Sinkholes
+						["qg"] = 25816,	-- Sergeant Hammerhill
 						["coord"] = { 56.3, 69.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25816,	-- Sergeant Hammerhill
-						["sourceQuest"] = 11897,	-- Plug the Sinkholes
 						["isBreadcrumb"] = true,
 					}),
 					q(11678, {	-- Find Bristlehorn
+						["sourceQuest"] = 11677,
 						["qg"] = 25604,	-- Sage Highmesa
 						["coord"] = { 74.6, 23.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11677,
 					}),
 					q(11725, {	-- Finding Pilot Tailspin
+						["sourceQuest"] = 11712,	-- Re-Cursive
+						["qg"] = 25590,	-- Fizzcrank Fullthrottle
 						["coord"] = { 56.9, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25590,	-- Fizzcrank Fullthrottle
-						["sourceQuest"] = 11712,	-- Re-Cursive
 					}),
 					q(11956, {	-- Finding the Phylactery	-- aa
+						["qg"] = 26170,	-- Thassarian
 						["coord"] = { 84.7, 41.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26170,	-- Thassarian
 						["groups"] = {
 							objective(1, {	-- 0/1 Tanathal's Phylactery
 								["provider"] = { "i", 35687 },	-- Tanathal's Phylactery
@@ -1038,15 +906,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11705, {	-- Foolish Endeavors
+						["sourceQuest"] = 11703,	-- Get to Getry
 						["qgs"] = {
 							25729,	-- Shadowstalker Getry
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							176304,	-- Shadowstalker Getry
 							-- #endif
 						},
 						["coord"] = { 34.5, 46.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11703,	-- Get to Getry
 						["groups"] = {
 							i(37475),	-- Benign Crusader's Plate
 							i(37277),	-- Ermine Ruff Cloak
@@ -1055,10 +923,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11904, {	-- Fruits of Our Labor
+						["sourceQuest"] = 11903,	-- It's Time for Action
+						["qg"] = 26083,	-- Gerald Green
 						["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26083,	-- Gerald Green
-						["sourceQuest"] = 11903,	-- It's Time for Action
 						["groups"] = {
 							objective(1, {	-- 0/1 Ore Cart released
 								["provider"] = { "o", 188104 },	-- Cart Release
@@ -1066,21 +934,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11715, {	-- Fueling the Project
+						["sourceQuest"] = 11713,	-- Scouting the Sinkholes
+						["qg"] = 25780,	-- Abner Fizzletorque
 						["coord"] = { 57.0, 20.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25780,	-- Abner Fizzletorque
-						["sourceQuest"] = 11713,	-- Scouting the Sinkholes
 					}),
 					q(11793, {	-- Further Investigation
+						["sourceQuest"] = 11792,	-- Enemies of the Light
+						["qg"] = 25285,	-- Harbinger Vurenn
 						["coord"] = { 56.6, 72.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25285,	-- Harbinger Vurenn
-						["sourceQuest"] = 11792,	-- Enemies of the Light
 					}),
 					q(11619, {	-- Gamel the Cruel
+						["sourceQuest"] = 11613,	-- Karuk's Oath
 						["qg"] = 25435,	-- Karuk
 						["coord"] = { 47.1, 75.4, BOREAN_TUNDRA },
-						["sourceQuest"] = 11613,	-- Karuk's Oath
 						["groups"] = {
 							objective(1, {	-- 0/1 Gamel the Cruel slain
 								["provider"] = { "n", 26449 },	-- Gamel the Cruel
@@ -1092,10 +960,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11721, {	-- Gammothra the Tormentor
+						["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 						["qg"] = 25380,	-- Primal Mighthorn
 						["coord"] = { 52.1, 52.8, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of Gammothra
 								["provider"] = { "i", 34980 },	-- Head of Gammothra
@@ -1109,13 +977,13 @@ root(ROOTS.Zones, {
 					q(13004, {	-- Gem Perfection (A)
 						["qg"] = 26997,	-- Alestos
 						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
-						["requireSkill"] = JEWELCRAFTING,
 						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade
 							{ "i", 36926, 2 },	-- Shadow Crystal
 						},
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 4.0.3
 						["groups"] = {
@@ -1131,13 +999,13 @@ root(ROOTS.Zones, {
 					q(13002, {	-- Gem Perfection (H)
 						["qg"] = 26982,	-- Geba'li
 						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
-						["requireSkill"] = JEWELCRAFTING,
 						["timeline"] = { REMOVED_4_0_3 },
 						["cost"] = {
 							{ "i", 36929, 2 },	-- Huge Citrine
 							{ "i", 36932, 2 },	-- Dark Jade
 							{ "i", 36926, 2 },	-- Shadow Crystal
 						},
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 4.0.3
 						["groups"] = {
@@ -1151,9 +1019,9 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(11673, {	-- Get Me Outa Here!
+						["qg"] = 25589,	-- Bonker Togglevolt
 						["coord"] = { 55.5, 12.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25589,	-- Bonker Togglevolt
 						["groups"] = {
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
@@ -1170,16 +1038,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11703, {	-- Get to Getry
+						["sourceQuest"] = 11686,	-- The Warsong Farms
 						["qg"] = 25437,	-- Shadowstalker Ickoris
 						["coord"] = { 38.0, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11686,	-- The Warsong Farms
 					}),
 					q(11873, {	-- Give Fizzcrank the News
+						["sourceQuest"] = 11796,	-- Emergency Protocol: Section 8.2, Paragraph D
+						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 						["coord"] = { 61.6, 35.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
-						["sourceQuest"] = 11796,	-- Emergency Protocol: Section 8.2, Paragraph D
 						["groups"] = {
 							i(37478),	-- Amberplate Grips
 							i(37275),	-- Mantle of Congealed Anger
@@ -1188,9 +1056,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11563, {	-- Grmmurggll Mrllggrl Glrggl!!!
+						["sourceQuest"] = 11562,	-- I'm Being Blackmailed By My Cleaner
 						["qg"] = 25205,	-- Mrmrglmr
 						["coord"] = { 41.9, 12.7, BOREAN_TUNDRA },
-						["sourceQuest"] = 11562,	-- I'm Being Blackmailed By My Cleaner
 						["groups"] = {
 							objective(1, {	-- 0/1 Glrggl's Head
 								["provider"] = { "i", 34617 },	-- Glrggl's Head
@@ -1199,10 +1067,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11653, {	-- Hah... You're Not So Big Now!
+						["sourceQuest"] = 11650,	-- Just a Few More Things...
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11650,	-- Just a Few More Things...
 						["groups"] = {
 							i(37388),	-- Reinforced Elastic Band
 							i(37428),	-- Ring-Ridden Wrist Protectors
@@ -1211,14 +1079,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11617, {	-- Hampering Their Escape
+						["sourceQuest"] = 11612,	-- Reclaiming the Quarry
 						["qg"] = 25292,	-- Etaruk
 						["coord"] = { 54.2, 36.1, BOREAN_TUNDRA },
-						["sourceQuest"] = 11612,	-- Reclaiming the Quarry
 					}),
 					q(11869, {	-- Happy as a Clam
+						["sourceQuest"] = 11864,	-- A Mission Statement
 						["qg"] = 25810,	-- Hierophant Cenius
 						["coord"] = { 57.3, 44.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11864,	-- A Mission Statement
 						["groups"] = {
 							objective(1, {	-- 0/10 Loot Crazed Diver slain
 								["provider"] = { "n", 25836 },	-- Loot Crazed Diver
@@ -1226,9 +1094,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11936, {	-- Hatching a Plan
+						["sourceQuest"] = 11918,	-- Basic Training
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["sourceQuest"] = 11918,	-- Basic Training
 						["groups"] = {
 							objective(1, {	-- 0/5 Dragon Eggs destroyed
 								["provider"] = { "o", 188133 },	-- Blue Dragon Egg
@@ -1236,6 +1104,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11916, {	-- Hellscream's Champion
+						["sourceQuests"] = {
+							11722,	-- Trophies of Gammoth
+							11705,	-- Foolish Endeavors
+							11652,	-- The Plains of Nasam
+						},
 						["qg"] = 25237,	-- Garrosh Hellscream
 						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
@@ -1247,41 +1120,40 @@ root(ROOTS.Zones, {
 							i(38240),	-- Staff of the Purposeful Mendicant
 							i(38239),	-- Tower of the Infinite Mind
 						},
-						["sourceQuests"] = {
-							11722,	-- Trophies of Gammoth
-							11705,	-- Foolish Endeavors
-							11652,	-- The Plains of Nasam
-						},
 					}),
 					q(11585, {	-- Hellscream's Vigil
-						["qg"] = 25273,	-- Warsong Recruitment Officer
-						["races"] = HORDE_ONLY,
-						["coords"] = {
-							{ 41.6, 53.9, BOREAN_TUNDRA },
-							{ 43.0, 55.6, BOREAN_TUNDRA },
-						},
-						["altQuests"] = { 11586 },	-- Hellscream's Vigil
 						["sourceQuests"] = {
+							-- #if AFTER CATA
 							28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+							-- #endif
 							10172,	-- There Is No Hope
 						},
-					}),
-					q(11586, {	-- Hellscream's Vigil
+						["altQuests"] = { 11586 },	-- Hellscream's Vigil
 						["qg"] = 25273,	-- Warsong Recruitment Officer
-						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 41.6, 53.9, BOREAN_TUNDRA },
 							{ 43.0, 55.6, BOREAN_TUNDRA },
 						},
-						["altQuests"] = { 11585 },	-- Hellscream's Vigil
-						["lockCriteria"] = { 1, "questID", 10172 },	-- There Is No Hope
+						["races"] = HORDE_ONLY,
+					}),
+					q(11586, {	-- Hellscream's Vigil
 						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+						-- #if AFTER CATA
 						["sourceQuest"] = 28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+						-- #endif
+						["altQuests"] = { 11585 },	-- Hellscream's Vigil
+						["qg"] = 25273,	-- Warsong Recruitment Officer
+						["coords"] = {
+							{ 41.6, 53.9, BOREAN_TUNDRA },
+							{ 43.0, 55.6, BOREAN_TUNDRA },
+						},
+						["races"] = HORDE_ONLY,
+						["lockCriteria"] = { 1, "questID", 10172 },	-- There Is No Hope
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
+						["sourceQuest"] = 11864,	-- A Mission Statement
 						["qg"] = 25809,	-- Archdruid Lathorius
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11864,	-- A Mission Statement
 					}),
 					heroscall(q(28709, {	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
 						["timeline"] = { ADDED_4_0_3 },
@@ -1304,15 +1176,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11562, {	-- I'm Being Blackmailed By My Cleaner
+						["sourceQuest"] = 11560,	-- Oh Noes, the Tadpoles!
 						["qg"] = 25197,	-- King Mrgl-Mrgl
 						["coord"] = { 43.4, 13.9, BOREAN_TUNDRA },
-						["sourceQuest"] = 11560,	-- Oh Noes, the Tadpoles!
 					}),
 					q(11699, {	-- I'm Stuck in this Damned Cage... But Not For Long!
+						["sourceQuest"] = 11697,	-- Rats, Tinky Went into the Necropolis!
+						["qg"] = 25714,	-- Tinky Wickwhistle
 						["coord"] = { 69.8, 14.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25714,	-- Tinky Wickwhistle
-						["sourceQuest"] = 11697,	-- Rats, Tinky Went into the Necropolis!
 						["groups"] = {
 							objective(1, {	-- 0/1 Engine-Core Crystal
 								["provider"] = { "i", 34957 },	-- Engine-Core Crystal
@@ -1329,10 +1201,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11603, {	-- In Wine, Truth
+						["sourceQuest"] = 11601,	-- Lost and Found
+						["qg"] = 25245,	-- James Deacon
 						["coord"] = { 58.2, 68.0, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25245,	-- James Deacon
-						["sourceQuest"] = 11601,	-- Lost and Found
 						["groups"] = {
 							objective(1, {	-- 0/1 Kul Tiras Wine
 								["providers"] = {
@@ -1359,10 +1231,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11670, {	-- It Was The Orcs, Honest!
+						["sourceQuest"] = 11658,	-- Plan B
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11658,	-- Plan B
 						["groups"] = {
 							i(37054),	-- Frostbiter
 							i(37231),	-- Frostspeaker Collar
@@ -1372,10 +1244,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11903, {	-- It's Time for Action
+						["sourceQuest"] = 11902,	-- Pernicious Evidence
+						["qg"] = 26083,	-- Gerald Green
 						["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26083,	-- Gerald Green
-						["sourceQuest"] = 11902,	-- Pernicious Evidence
 						["groups"] = {
 							objective(1, {	-- 0/14 Plagued Scavenger slain
 								["provider"] = { "n", 25650 },	-- Plagued Scavenger
@@ -1387,24 +1259,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11650, {	-- Just a Few More Things...
+						["sourceQuest"] = 11645,	-- Dirty, Stinkin' Snobolds!
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11645,	-- Dirty, Stinkin' Snobolds!
 					}),
 					q(11637, {	-- Kaganishu
+						["sourceQuest"] = 11635,	-- Farseer Grimwalker's Spirit
 						["qg"] = 25425,	-- Farseer Grimwalker's Spirit
 						["coord"] = { 56.1, 9.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11635,	-- Farseer Grimwalker's Spirit
 					}),
 					q(11613, {	-- Karuk's Oath
-						["coord"] = { 47.1, 75.4, BOREAN_TUNDRA },
-						["qg"] = 25435,	-- Karuk
 						["sourceQuests"] = {
 							12141,	-- A Diplomatic Mission
 							11662,	-- Seek Out Karuk!
 						},
+						["qg"] = 25435,	-- Karuk
+						["coord"] = { 47.1, 75.4, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/6 Skadir Raider slain
 								["provider"] = { "n", 25522 },	-- Skadir Raider
@@ -1421,9 +1293,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11879, {	-- Kaw the Mammoth Destroyer
+						["sourceQuest"] = 11878,	-- Khu'nok Will Know
 						["qg"] = 25862,	-- Khu'nok the Behemoth
 						["coord"] = { 59.4, 30.4, BOREAN_TUNDRA },
-						["sourceQuest"] = 11878,	-- Khu'nok Will Know
 						["groups"] = {
 							objective(1, {	-- 0/1 Kaw's War Halberd
 								["providers"] = {
@@ -1438,9 +1310,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11914, {	-- Keep the Secret Safe
+						["sourceQuest"] = 11912,	-- Nuts for Berries
 						["qg"] = 26110,	-- Librarian Serrah
 						["coord"] = { 33.4, 34.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11912,	-- Nuts for Berries
 						["groups"] = {
 							objective(1, {	-- 0/5 Nexus Mana Essence
 								["provider"] = { "i", 35493 },	-- Nexus Mana Essence
@@ -1453,15 +1325,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11946, {	-- Keristrasza
-						["qg"] = 26206,	-- Keristrasza
-						["coord"] = { 33.3, 34.1, BOREAN_TUNDRA },
 						["description"] = "Use the |cFFFFFFFFAugmented Arcane Prison|r in your bags to summon |cFFFFD700Keristrasza|r. If you do not have the item in your bags, talk to |cFFFFD700Raelorasz|r to get one.",
 						["sourceQuest"] = 11943,	-- The Cell
+						["qg"] = 26206,	-- Keristrasza
+						["coord"] = { 33.3, 34.1, BOREAN_TUNDRA },
 					}),
 					q(11569, {	-- Keymaster Urmgrgl
+						["sourceQuest"] = 11571,	-- Learning to Communicate
 						["qg"] = 28375,	-- Glrglrglr
 						["coord"] = { 37.8, 23.1, BOREAN_TUNDRA },
-						["sourceQuest"] = 11571,	-- Learning to Communicate
 						["groups"] = {
 							objective(1, {	-- 0/1 Urmgrgl's Key
 								["provider"] = { "i", 34600 },	-- Urmgrgl's Key
@@ -1470,15 +1342,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11878, {	-- Khu'nok Will Know
+						["sourceQuest"] = 11876,	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11876,	-- Help Those That Cannot Help Themselves
 					}),
 					q(11704, {	-- King Mrgl-Mrgl (A)
+						["sourceQuest"] = 11708,	-- The Mechagnomes
+						["qg"] = 25702,	-- Mordle Cogspinner
 						["coord"] = { 57.5, 18.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25702,	-- Mordle Cogspinner
-						["sourceQuest"] = 11708,	-- The Mechagnomes
 						["isBreadcrumb"] = true,
 					}),
 					q(11702, {	-- King Mrgl-Mrgl (H)
@@ -1488,10 +1360,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12019, {	-- Last Rites
+						["sourceQuest"] = 11942,	-- Words of Power
+						["qg"] = 26170,	-- Thassarian
 						["coord"] = { 84.7, 41.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26170,	-- Thassarian
-						["sourceQuest"] = 11942,	-- Words of Power
 						["groups"] = {
 							i(38237),	-- Axe of Frozen Death
 							i(38238),	-- Borean Smasher
@@ -1502,9 +1374,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11610, {	-- Leading the Ancestors Home
-						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
-						["provider"] = { "o", 187565 },	-- Elder Atkanok
 						["sourceQuest"] = 11609,	-- Picking Up the Pieces
+						["provider"] = { "o", 187565 },	-- Elder Atkanok
+						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 						["groups"] = {
 							i(37514),	-- Freed Shackles
 							i(37548),	-- Iceflow Collar
@@ -1513,18 +1385,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11571, {	-- Learning to Communicate
-						["qg"] = 25197,	-- King Mrgl-Mrgl
-						["coord"] = { 43.5, 13.9, BOREAN_TUNDRA },
 						["sourceQuests"] = {
 							11702,	-- King Mrgl-Mrgl
 							11704,	-- King Mrgl-Mrgl
 						},
+						["qg"] = 25197,	-- King Mrgl-Mrgl
+						["coord"] = { 43.5, 13.9, BOREAN_TUNDRA },
 					}),
 					q(11788, {	-- Lefty Loosey, Righty Tighty
+						["sourceQuest"] = 11712,	-- Re-Cursive
+						["qg"] = 25747,	-- Jinky Wingnut
 						["coord"] = { 57.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25747,	-- Jinky Wingnut
-						["sourceQuest"] = 11712,	-- Re-Cursive
 						["groups"] = {
 							objective(1, {	-- 0/1 Twonky slain
 								["provider"] = { "n", 25830 },	-- Twonky
@@ -1541,10 +1413,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11700, {	-- Let Bixie Know
+						["sourceQuest"] = 11699,	-- I'm Stuck in this Damned Cage... But Not For long!
+						["qg"] = 25714,	-- Tinky Wickwhistle
 						["coord"] = { 69.8, 14.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25714,	-- Tinky Wickwhistle
-						["sourceQuest"] = 11699,	-- I'm Stuck in this Damned Cage... But Not For long!
 					}),
 					q(11881, {	-- Load'er Up!
 						["qg"] = 25849,	-- Fezzix Geartwist
@@ -1552,16 +1424,16 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11601, {	-- Lost and Found
+						["sourceQuest"] = 11600,	-- The Late William Allerton
+						["qg"] = 25251,	-- Leryssa
 						["coord"] = { 58.7, 68.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25251,	-- Leryssa
-						["sourceQuest"] = 11600,	-- The Late William Allerton
 					}),
 					q(11728, {	-- Lupus Pupus
+						["sourceQuest"] = 11726,	-- A Little Bit of Spice
+						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
 						["coord"] = { 61.6, 35.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25807,	-- Iggy "Tailspin" Cogtoggle
-						["sourceQuest"] = 11726,	-- A Little Bit of Spice
 						["groups"] = {
 							objective(1, {	-- 0/8 Microfilm
 								["providers"] = {
@@ -1572,21 +1444,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11636, {	-- Magic Carpet Ride
+						["sourceQuest"] = 11634,	-- Wind Master To'bor
 						["qg"] = 25289,	-- Wind Master To'bor
 						["coord"] = { 42.0, 54.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11634,	-- Wind Master To'bor
 					}),
 					q(11724, {	-- Massive Moth Omelet?
+						["provider"] = { "o", 187905 },	-- Massive Glowing Egg
 						["coord"] = { 48.5, 59.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "o", 187905 },	-- Massive Glowing Egg
 					}),
 					q(11730, {	-- Master and Servant
+						["sourceQuest"] = 11729,	-- The Ultrasonic Screwdriver
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11729,	-- The Ultrasonic Screwdriver
 						["groups"] = {
 							i(37479),	-- Amberplate Legguards
 							i(37270),	-- Layered Frost Robes
@@ -1595,28 +1467,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11895, {	-- Master the Storm
+						["sourceQuest"] = 11890,	-- What Are They Up To?
 						["qg"] = 25982,	-- Sage Earth and Sky
 						["coord"] = { 77.2, 38.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11890,	-- What Are They Up To?
 					}),
 					q(11676, {	-- Merciful Freedom
+						["sourceQuest"] = 11618,
 						["qg"] = 25438,	-- Shadowstalker Canarius
 						["coord"] = { 37.9, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11618,
 					}),
 					q(11616, {	-- Message to Hellscream
+						["sourceQuest"] = 11615,	-- Nerub'ar Secrets
 						["qg"] = 25394,	-- Shadowstalker Barthus
 						["coord"] = { 43.2, 55.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11615,	-- Nerub'ar Secrets
 					}),
 					q(11698, {	-- Might As Well Wipe Out the Scourge
+						["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
+						["qg"] = 25705,	-- Bixie Wrenchshanker
 						["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25705,	-- Bixie Wrenchshanker
-						["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
 						["groups"] = {
 							objective(1, {	-- 0/20 Talramas Scourge Destroyed
 								["providers"] = {
@@ -1635,16 +1507,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11901, {	-- Military? What Military?
+						["sourceQuest"] = 11928,	-- Farshire
+						["qg"] = 26083,	-- Gerald Green
 						["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26083,	-- Gerald Green
-						["sourceQuest"] = 11928,	-- Farshire
 					}),
 					q(11643, {	-- Mobu's Pneumatic Tank Transjigamarig
+						["sourceQuest"] = 11642,	-- Tank Ain't Gonna Fix Itself
 						["qg"] = 25475,	-- Mobu
 						["coord"] = { 32.0, 54.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11642,	-- Tank Ain't Gonna Fix Itself
 						["groups"] = {
 							objective(1, {	-- 0/1 Pneumatic Tank Transjigamarig
 								["providers"] = {
@@ -1659,14 +1531,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.9, 33.3, BOREAN_TUNDRA },
 					}),
 					q(11582, {	-- Monitoring the Rift: Sundered Chasm
+						["sourceQuest"] = 11576,	-- Monitoring the Rift: Cleftcliff Anomaly
 						["qg"] = 25291,	-- Librarian Garren
 						["coord"] = { 44.9, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11576,	-- Monitoring the Rift: Cleftcliff Anomaly
 					}),
 					q(12728, {	-- Monitoring the Rift: Winterfin Cavern
+						["sourceQuest"] = 11582,	-- Monitoring the Rift: Sundered Chasm
 						["qg"] = 25291,	-- Librarian Garren
 						["coord"] = { 44.9, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11582,	-- Monitoring the Rift: Sundered Chasm
 						["groups"] = {
 							i(37282),	-- Cavernous Gauntlets
 							i(37471),	-- Girdle of Ripped Space
@@ -1675,10 +1547,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11649, {	-- Motes of the Enraged
+						["sourceQuest"] = 11627,	-- Boiling Point
 						["qg"] = 25376,	-- Imperean
 						["coord"] = { 46.5, 9.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11627,	-- Boiling Point
 						["groups"] = {
 							objective(1, {	-- 0/5 Tempest Mote
 								["provider"] = { "i", 34800 },	-- Tempest Mote
@@ -1687,18 +1559,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11950, {	-- Muahit's Wisdom
+						["sourceQuest"] = 11949,	-- Not Without a Fight!
 						["qg"] = 26169,	-- Ataika
 						["coord"] = { 63.7, 46.1, BOREAN_TUNDRA },
-						["sourceQuest"] = 11949,	-- Not Without a Fight!
 					}),
 					q(11967, {	-- Mustering the Reds
-						["qg"] = 26206,	-- Keristrasza
 						["sourceQuest"] = 11957,	-- Saragosa's End
+						["qg"] = 26206,	-- Keristrasza
 					}),
 					q(11884, {	-- Nedar, Lord of Rhinos...
+						["sourceQuest"] = 11864,	-- A Mission Statement
 						["qg"] = 25812,	-- Killinger the Den Watcher
 						["coord"] = { 57.1, 43.9, BOREAN_TUNDRA },
-						["sourceQuest"] = 11864,	-- A Mission Statement
 						["groups"] = {
 							objective(1, {	-- 0/1 Nedar, Lord of Rhinos slain
 								["provider"] = { "n", 25801 },	-- Nedar, Lord of Rhinos
@@ -1713,16 +1585,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11615, {	-- Nerub'ar Secrets
+						["sourceQuest"] = 11614,	-- Untold Truths
 						["qg"] = 25328,	-- Shadowstalker Luther
 						["coord"] = { 40.0, 52.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11614,	-- Untold Truths
 					}),
 					q(11647, {	-- Neutralizing the Cauldrons
+						["sourceQuest"] = 11633,	-- Blending In
 						["qg"] = 24709,	-- Sage Aeire
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11633,	-- Blending In
 						["groups"] = {
 							i(37517),	-- Chilled Pauldrons
 							i(37234),	-- Layered Frost Hood
@@ -1731,38 +1603,38 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11575, {	-- Nick of Time
+						["sourceQuest"] = 11897,	-- Plug the Sinkholes
+						["qg"] = 25249,	-- Midge
 						["coord"] = { 58.4, 67.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25249,	-- Midge
 						["isBreadcrumb"] = true,
-						["sourceQuest"] = 11897,	-- Plug the Sinkholes
 					}),
 					q(11709, {	-- Nork Bloodfrenzy's Charge
+						["sourceQuest"] = 11705,	-- Foolish Endeavors
 						["qg"] = 25237,	-- Garrosh Hellscream
 						["coord"] = { 41.3, 53.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11705,	-- Foolish Endeavors
 					}),
 					q(13088, {	-- Northern Cooking
+						["qg"] = 26989,	-- Quest Giver: Rollick MacKreel <Cooking Trainer>
 						["coord"] = { 57.93, 71.54, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26989,	-- Quest Giver: Rollick MacKreel <Cooking Trainer>
 						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
 					q(13090, {	-- Northern Cooking
+						["qg"] = 26972,	-- Orn Tenderhoof <Cooking Trainer>
 						["coord"] = { 42.0, 54.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26972,	-- Orn Tenderhoof <Cooking Trainer>
 						["groups"] = {
 							recipe(57421),	-- Northern Stew
 						},
 					}),
 					q(11871, {	-- Not On Our Watch
+						["sourceQuest"] = 11870,	-- The Abandoned Reach
 						["qg"] = 25838,	-- Hierophant Liandra
 						["coord"] = { 57.8, 55.1, BOREAN_TUNDRA },
-						["sourceQuest"] = 11870,	-- The Abandoned Reach
 						["groups"] = {
 							objective(1, {	-- 0/12 Shipment of Animal Parts
 								["providers"] = {
@@ -1789,10 +1661,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11791, {	-- Notify Arlos
+						["sourceQuest"] = 11920,	-- Cultists Among Us
+						["qg"] = 25299,	-- Admiral Cantlebree
 						["coord"] = { 57.7, 69.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25299,	-- Admiral Cantlebree
-						["sourceQuest"] = 11920,	-- Cultists Among Us
 					}),
 					q(11912, {	-- Nuts for Berries
 						["qg"] = 26110,	-- Librarian Serrah
@@ -1807,10 +1679,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11693, {	-- Oh Great... Plagued Magnataur!
+						["sourceQuest"] = 11692,	-- Check in With Bixie
+						["qg"] = 25705,	-- Bixie Wrenchshanker
 						["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25705,	-- Bixie Wrenchshanker
-						["sourceQuest"] = 11692,	-- Check in With Bixie
 						["groups"] = {
 							objective(1, {	-- 0/10 Plagued Magnataur slain
 								["providers"] = {
@@ -1821,9 +1693,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11560, {	-- Oh Noes, the Tadpoles!
+						["sourceQuest"] = 11559,	-- Winterfin Commerce
 						["qg"] = 25197,	-- King Mrgl-Mrgl
 						["coord"] = { 43.4, 13.9, BOREAN_TUNDRA },
-						["sourceQuest"] = 11559,	-- Winterfin Commerce
 						["groups"] = {
 							i(37034),	-- Lobstrock Slicer
 							i(37527),	-- Shimmering Band
@@ -1832,16 +1704,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11962, {	-- One Last Delivery
+						["sourceQuest"] = 11904,	-- Fruits of Our Labor
+						["qg"] = 26083,	-- Gerald Green
 						["coord"] = { 58.2, 62.8, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26083,	-- Gerald Green
-						["sourceQuest"] = 11904,	-- Fruits of Our Labor
 					}),
 					q(11661, {	-- Orabus the Helmsman
+						["sourceQuest"] = 11660,	-- Horn of the Ancient Mariner
 						["qg"] = 25476,	-- Waltor of Pal'ea
 						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11660,	-- Horn of the Ancient Mariner
 						["groups"] = {
 							objective(1, {	-- 0/1 Orabus the Helmsman slain
 								["provider"] = { "n", 32576 },	-- Orabus the Helmsman
@@ -1853,10 +1725,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11894, {	-- Patching Up
+						["sourceQuest"] = 11893,	-- The Power of the Elements
 						["qg"] = 25849,	-- Fezzix Geartwist
 						["coord"] = { 77.4, 36.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11893,	-- The Power of the Elements
 						["groups"] = {
 							i(37388),	-- Reinforced Elastic Band
 							i(37428),	-- Ring-Ridden Wrist Protectors
@@ -1865,14 +1737,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11606, {	-- Patience is a Virtue that We Don't Need
-						["qg"] = 25327,	-- Quartermaster Holgoth
-						["coord"] = { 43.3, 55.3, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							11595,	-- The Defense of Warsong Hold
 							11596,	-- The Defense of Warsong Hold
 							11597,	-- The Defense of Warsong Hold
 						},
+						["qg"] = 25327,	-- Quartermaster Holgoth
+						["coord"] = { 43.3, 55.3, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/15 Warsong Munitions
 								["providers"] = {
@@ -1885,15 +1757,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11902, {	-- Pernicious Evidence
+						["sourceQuest"] = 11901,	-- Military? What Military?
+						["provider"] = { "o", 188085 },	-- Plagued Grain
 						["coord"] = { 56.8, 55.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "o", 188085 },	-- Plagued Grain
-						["sourceQuest"] = 11901,	-- Military? What Military?
 					}),
 					q(11609, {	-- Picking Up the Pieces
-						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
-						["provider"] = { "o", 187565 },	-- Elder Atkanok
 						["sourceQuest"] = 11607,	-- The Lost Spirits
+						["provider"] = { "o", 187565 },	-- Elder Atkanok
+						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/6 Tuskarr Ritual Object
 								["providers"] = {
@@ -1905,10 +1777,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11658, {	-- Plan B
+						["sourceQuest"] = 11653,	-- Hah... You're Not So Big Now!
+						["qg"] = 25477,	-- Crafty Wobblesprocket
 						["coord"] = { 58.1, 18.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25477,	-- Crafty Wobblesprocket
-						["sourceQuest"] = 11653,	-- Hah... You're Not So Big Now!
 						["groups"] = {
 							objective(1, {	-- 0/10 Warsong Outfit
 								["provider"] = { "i", 34842 },	-- Warsong Outfit
@@ -1925,10 +1797,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11897, {	-- Plug the Sinkholes
+						["sourceQuest"] = 11889,	-- Death From Above
+						["qg"] = 25816,	-- Sergeant Hammerhill
 						["coord"] = { 56.3, 69.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25816,	-- Sergeant Hammerhill
-						["sourceQuest"] = 11889,	-- Death From Above
 						["groups"] = {
 							i(36885),	-- Marshwalker Chestpiece
 							i(36887),	-- Mightstone Pauldrons
@@ -1937,10 +1809,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11717, {	-- Pollen from the Source
+						["sourceQuest"] = 11716,	-- The Wondrous Bloodspore
 						["qg"] = 25381,	-- Bloodmage Laurith
 						["coord"] = { 52.0, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11716,	-- The Wondrous Bloodspore
 						["groups"] = {
 							objective(1, {	-- 0/5 Bloodspore Moth Pollen
 								["provider"] = { "i", 34976 },	-- Bloodspore Moth Pollen
@@ -1966,34 +1838,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11587, {	-- Prison Break
-						["qg"] = 25262,	-- Librarian Donathan
-						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
 						["sourceQuests"] = {
 							11574,	-- Too Close for Comfort
 							11575,	-- Nick of Time
 						},
+						["qg"] = 25262,	-- Librarian Donathan
+						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
 					}),
 					q(11594, {	-- Put Them to Rest
+						["sourceQuest"] = 11591,	-- Report to Steeljaw's Caravan
 						["qg"] = 25336,	-- Grunt Ragefist
 						["coord"] = { 48.3, 19.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11591,	-- Report to Steeljaw's Caravan
 					}),
 					q(11941, {	-- Puzzling...
-						["crs"] = { 25719 },	-- Coldarra Spellbinder
 						["provider"] = { "i", 35648 },	-- Scintillating Fragment
+						["crs"] = { 25719 },	-- Coldarra Spellbinder
 					}),
 					q(11697, {	-- Rats, Tinky Went into the Necropolis!
+						["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
+						["qg"] = 25705,	-- Bixie Wrenchshanker
 						["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25705,	-- Bixie Wrenchshanker
-						["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
 					}),
 					q(11712, {	-- Re-Cursive
+						["sourceQuest"] = 11708,	-- The Mechagnomes
+						["qg"] = 25747,	-- Jinky Wingnut
 						["coord"] = { 57.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25747,	-- Jinky Wingnut
-						["sourceQuest"] = 11708,	-- The Mechagnomes
 						["groups"] = {
 							i(37517),	-- Chilled Pauldrons
 							i(37234),	-- Layered Frost Hood
@@ -2029,10 +1901,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11908, {	-- Reference Material
+						["sourceQuest"] = 11902,	-- Pernicious Evidence
+						["qg"] = 26084,	-- Jeremiah Hawning
 						["coord"] = { 58.1, 62.9, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26084,	-- Jeremiah Hawning
-						["sourceQuest"] = 11902,	-- Pernicious Evidence
 						["groups"] = {
 							objective(1, {	-- 0/1 Fields, Factories and Workshops
 								["providers"] = {
@@ -2043,15 +1915,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11679, {	-- Reforging the Key
+						["sourceQuest"] = 11671,	-- A Race Against Time
 						["qg"] = 25262,	-- Librarian Donathan
 						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11671,	-- A Race Against Time
 					}),
 					q(11618, {	-- Reinforcements Incoming...
+						["sourceQuest"] = 11616,	-- Message to Hellscream
 						["qg"] = 25237,	-- Garrosh Hellscream
 						["coord"] = { 41.3, 53.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11616,	-- Message to Hellscream
 					}),
 					q(11591, {	-- Report to Steeljaw's Caravan
 						["qg"] = 25326,	-- Overlord Bor'gorok
@@ -2060,10 +1932,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12035, {	-- Repurposed Technology
+						["sourceQuest"] = 11908,	-- Reference Material
+						["qg"] = 26084,	-- Jeremiah Hawning
 						["coord"] = { 58.1, 62.9, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26084,	-- Jeremiah Hawning
-						["sourceQuest"] = 11908,	-- Reference Material
 						["groups"] = {
 							i(37403),	-- Marshwalker Boots
 							i(37482),	-- Mightstone Legplates
@@ -2072,9 +1944,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11681, {	-- Rescuing Evanor
+						["sourceQuest"] = 11680,	-- Taking Wing
 						["qg"] = 25356,	-- Warmage Anzim
 						["coord"] = { 46.3, 37.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11680,	-- Taking Wing
 						["groups"] = {
 							i(37387),	-- Charred Treads
 							i(37429),	-- Glimmering Ringmail Gloves
@@ -2083,10 +1955,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11638, {	-- Return My Remains
+						["sourceQuest"] = 11637,	-- Kaganishu
 						["qg"] = 25425,	-- Farseer Grimwalker's Spirit
 						["coord"] = { 56.1, 9.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11637,	-- Kaganishu
 						["groups"] = {
 							objective(1, {	-- 0/1 Farseer Grimwalker's Remains
 								["providers"] = {
@@ -2109,16 +1981,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11629, {	-- Return to the Spirit Talker
+						["sourceQuest"] = 11649,	-- Motes of the Enraged
 						["qg"] = 25376,	-- Imperean
 						["coord"] = { 46.5, 9.3, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11649,	-- Motes of the Enraged
 					}),
 					q(11689, {	-- Return with the Bad News
+						["sourceQuest"] = 11687,	-- The Doctor and the Lich-Lord
 						["qg"] = 25604,	-- Sage Highmesa
 						["coord"] = { 74.6, 23.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11687,	-- The Doctor and the Lich-Lord
 						["groups"] = {
 							i(37519),	-- Amberplate Headguard
 							i(37074),	-- Greatmother's Talisman of Cleansing
@@ -2128,10 +2000,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11639, {	-- Revenge Upon Magmoth
+						["sourceQuest"] = 11631,	-- Vision of Air
 						["qg"] = 25374,	-- Ortrosh
 						["coord"] = { 50.0, 10.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11631,	-- Vision of Air
 						["groups"] = {
 							objective(1, {	-- 0/10 Magmoth Shaman slain
 								["provider"] = { "n", 25428 },	-- Magmoth Shaman
@@ -2152,12 +2024,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11888, {	-- Ride to Taunka'le Village
-						["qg"] = 25978,	-- Ambassador Talonga
 						["sourceQuests"] = {
 							11595,	-- The Defense of Warsong Hold
 							11596,	-- The Defense of Warsong Hold
 							11597,	-- The Defense of Warsong Hold
 						},
+						["qg"] = 25978,	-- Ambassador Talonga
 						["coord"] = { 41.7, 54.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2168,8 +2040,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11957, {	-- Saragosa's End
-						["qg"] = 26206,	-- Keristrasza
 						["sourceQuest"] = 11951,	-- Bait and Switch
+						["qg"] = 26206,	-- Keristrasza
 						["groups"] = {
 							objective(1, {	-- 0/1 Saragosa's Corpse
 								["provider"] = { "i", 35709 },	-- Saragosa's Corpse
@@ -2182,15 +2054,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11713, {	-- Scouting the Sinkholes (A)
+						["sourceQuest"] = 11873,	-- Give Fizzcrank the News
+						["qg"] = 25780,	-- Abner Fizzletorque
 						["coord"] = { 57.0, 20.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25780,	-- Abner Fizzletorque
-						["sourceQuest"] = 11873,	-- Give Fizzcrank the News
 					}),
 					q(11684, {	-- Scouting the Sinkholes (H)
 						["qg"] = 24702,	-- Greatfather Mahan
-						["races"] = HORDE_ONLY,
 						["coord"] = { 77.0, 37.8, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11910, {	-- Secrets of the Ancients
 						["qg"] = 25314,	-- Archmage Berinand
@@ -2207,30 +2079,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11662, {	-- Seek Out Karuk!
-						["qg"] = 25476,	-- Waltor of Pal'ea
-						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							11656,	-- Burn in Effigy
 							11661,	-- Orabus the Helmsman
 						},
+						["qg"] = 25476,	-- Waltor of Pal'ea
+						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11663, {	-- Sharing Intelligence
+						["sourceQuest"] = 11648,	-- The Art of Persuasion
 						["qg"] = 25480,	-- Librarian Normantis
 						["coord"] = { 46.3, 32.8, BOREAN_TUNDRA },
-						["sourceQuest"] = 11648,	-- The Art of Persuasion
 					}),
 					q(11659, {	-- Shatter the Orbs!
+						["sourceQuest"] = 11654,	-- The Spire of Blood
 						["qg"] = 25516,	-- Snow Tracker Grumm
 						["coord"] = { 87.5, 19.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11654,	-- The Spire of Blood
 					}),
 					q(11628, {	-- Shrouds of the Scourge
+						["sourceQuest"] = 11894,	-- Patching Up
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11894,	-- Patching Up
 						["groups"] = {
 							objective(1, {	-- 0/5 Scourged Mammoth Pelt
 								["provider"] = { "i", 34775 },	-- Scourged Mammoth Pelt
@@ -2239,20 +2111,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11899, {	-- Souls of the Decursed
+						["sourceQuest"] = 11895,	-- Master the Storm
 						["qg"] = 25602,	-- Greatmother Taiga
 						["coord"] = { 77.3, 36.8, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11895,	-- Master the Storm
 					}),
 					q(11961, {	-- Spirits Watch Over Us
+						["sourceQuest"] = 11950,	-- Muahit's Wisdom
 						["qg"] = 26218,	-- Elder Muahit
 						["coord"] = { 67.2, 54.8, BOREAN_TUNDRA },
-						["sourceQuest"] = 11950,	-- Muahit's Wisdom
 					}),
 					q(11969, {	-- Springing the Trap
+						["sourceQuest"] = 11967,	-- Mustering the Reds
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["sourceQuest"] = 11967,	-- Mustering the Reds
 						["groups"] = {
 							i(37080),	-- Crimson Will
 							i(37076),	-- Fiery Prod
@@ -2263,10 +2135,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11677, {	-- Stop the Plague
+						["sourceQuest"] = 11675,	-- A Proper Death
 						["qg"] = 25604,	-- Sage Highmesa
 						["coord"] = { 74.6, 23.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11675,	-- A Proper Death
 						["groups"] = {
 							i(37507),	-- Chilled Shoulderplates
 							i(37427),	-- Plainhunter's Waistband
@@ -2275,8 +2147,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11564, {	-- Succulent Orca Stew
-						["qg"] = 25211,	-- Cleaver Bmurglbrm
 						["sourceQuest"] = 11562,	-- I'm Being Blackmailed By My Cleaner
+						["qg"] = 25211,	-- Cleaver Bmurglbrm
 						["coord"] = { 42.0, 13.1, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/7 Succulent Orca Blubber
@@ -2290,10 +2162,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11644, {	-- Super Strong Metal Plates!
+						["sourceQuest"] = 11642,	-- Tank Ain't Gonna Fix Itself
 						["qg"] = 25475,	-- Mobu
 						["coord"] = { 32.0, 54.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11642,	-- Tank Ain't Gonna Fix Itself
 						["groups"] = {
 							objective(1, {	-- 0/10 Super Strong Metal Plate
 								["providers"] = {
@@ -2307,9 +2179,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11566, {	-- Surrender... Not!
+						["sourceQuest"] = 11565,	-- The Spare Suit
 						["qg"] = 25197,	-- King Mrgl-Mrgl
 						["coord"] = { 43.4, 13.9, BOREAN_TUNDRA },
-						["sourceQuest"] = 11565,	-- The Spare Suit
 						["groups"] = {
 							objective(1, {	-- 0/1 Claw of Claximus
 								["provider"] = { "i", 34621 },	-- Claw of Claximus
@@ -2322,10 +2194,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11944, {	-- Surrounded!
+						["sourceQuest"] = 12086,	-- The Son of Karkut
+						["qg"] = 26187,	-- Corporal Venn
 						["coord"] = { 82.0, 46.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26187,	-- Corporal Venn
-						["sourceQuest"] = 12086,	-- The Son of Karkut
 						["groups"] = {
 							objective(1, {	-- 0/7 Ziggurat Defender slain
 								["provider"] = { "n", 26202 },	-- Ziggurat Defender
@@ -2337,10 +2209,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11913, {	-- Take No Chances
+						["sourceQuest"] = 11902,	-- Pernicious Evidence
+						["qg"] = 26085,	-- Wendy Darren
 						["coord"] = { 58.2, 62.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26085,	-- Wendy Darren
-						["sourceQuest"] = 11902,	-- Pernicious Evidence
 						["groups"] = {
 							i(37481),	-- Chestguard of Salved Wounds
 							i(37404),	-- Floodplain Cover
@@ -2349,6 +2221,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11611, {	-- Taken by the Scourge
+						["sourceQuests"] = {
+							11595,	-- The Defense of Warsong Hold
+							11596,	-- The Defense of Warsong Hold
+							11597,	-- The Defense of Warsong Hold
+						},
 						["qg"] = 25280,	-- Foreman Mortuus
 						["coord"] = { 42.0, 56.1, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
@@ -2358,21 +2235,16 @@ root(ROOTS.Zones, {
 							i(37206),	-- Weathered Worker Cloak
 							i(37417),	-- Westrift Handcovers
 						},
+					}),
+					q(11598, {	-- Taking Back Mightstone Quarry
 						["sourceQuests"] = {
 							11595,	-- The Defense of Warsong Hold
 							11596,	-- The Defense of Warsong Hold
 							11597,	-- The Defense of Warsong Hold
 						},
-					}),
-					q(11598, {	-- Taking Back Mightstone Quarry
 						["qg"] = 25279,	-- Overlord Razgor
 						["coord"] = { 43.1, 54.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							11595,	-- The Defense of Warsong Hold
-							11596,	-- The Defense of Warsong Hold
-							11597,	-- The Defense of Warsong Hold
-						},
 						["groups"] = {
 							objective(1, {	-- 0/15 Nerub'ar slain
 								["providers"] = {
@@ -2387,52 +2259,51 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11680, {	-- Taking Wing
+						["sourceQuest"] = 11679,	-- Reforging the Key
 						["qg"] = 24795,	-- Surristrasz
 						["coord"] = { 45.3, 34.4, BOREAN_TUNDRA },
-						["sourceQuest"] = 11679,	-- Reforging the Key
 					}),
 					q(11642, {	-- Tank Ain't Gonna Fix Itself
+						["sourceQuest"] = 11636,	-- Magic Carpet Ride
 						["qg"] = 25329,	-- Annihilator Grek'lor
 						["coord"] = { 32.2, 54.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11636,	-- Magic Carpet Ride
 					}),
 					q(11651, {	-- Tanks a lot...
-						["qg"] = 25475,	-- Mobu
-						["coord"] = { 32.0, 54.2, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							11643,	-- Mobu's Pneumatic Tank Transjigamarig
 							11644,	-- Super Strong Metal Plates!
 						},
+						["qg"] = 25475,	-- Mobu
+						["coord"] = { 32.0, 54.2, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11599, {	-- Thassarian, My Brother
-						["coord"] = { 58.7, 68.3, BOREAN_TUNDRA },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25251,	-- Leryssa
 						["sourceQuests"] = {
 							11897,	-- Plug the Sinkholes
 							11927,	-- Word on the Street
 						},
+						["qg"] = 25251,	-- Leryssa
+						["coord"] = { 58.7, 68.3, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12088, {	-- Thassarian, the Death Knight
+						["sourceQuest"] = 11944,	-- Surrounded!
+						["qg"] = 26187,	-- Corporal Venn
 						["coord"] = { 82.0, 46.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26187,	-- Corporal Venn
-						["sourceQuest"] = 11944,	-- Surrounded!
 					}),
 					q(11870, {	-- The Abandoned Reach
+						["sourceQuest"] = 11869,	-- Happy as a Clam
 						["qg"] = 25810,	-- Hierophant Cenius
 						["coord"] = { 57.3, 44.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11869,	-- Happy as a Clam
 					}),
 					q(11648, {	-- The Art of Persuasion
+						["sourceQuest"] = 11646,	-- The Borean Inquisition
 						["qg"] = 25480,	-- Librarian Normantis
 						["coord"] = { 46.3, 32.8, BOREAN_TUNDRA },
-						["sourceQuest"] = 11646,	-- The Borean Inquisition
 					}),
 					q(11892, {	-- The Assassination of Harold Lane
-						["qg"] = 25809,	-- Archdruid Lathorius
 						["sourceQuests"] = {
 							11866,	-- Ears of Our Enemies
 							11884,	-- Nedar, Lord of the Rhinos...
@@ -2440,6 +2311,7 @@ root(ROOTS.Zones, {
 							11868,	-- The Culler Cometh
 							11872,	-- The Nefarious Clam Master...
 						},
+						["qg"] = 25809,	-- Archdruid Lathorius
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/1 Harold Lane slain
@@ -2452,10 +2324,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11630, {	-- The Bad Earth
+						["sourceQuest"] = 11628,	-- Shrouds of the Scourge
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11628,	-- Shrouds of the Scourge
 						["groups"] = {
 							objective(1, {	-- 0/8 Scourged Earth
 								["providers"] = {
@@ -2466,14 +2338,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11646, {	-- The Borean Inquisition
+						["sourceQuest"] = 11590,	-- Abduction
 						["qg"] = 25262,	-- Librarian Donathan
 						["coord"] = { 45.2, 33.3, BOREAN_TUNDRA },
-						["sourceQuest"] = 11590,	-- Abduction
 					}),
 					q(11943, {	-- The Cell
+						["sourceQuest"] = 11941,	-- Puzzling...
 						["qg"] = 26117,	-- Raelorasz
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["sourceQuest"] = 11941,	-- Puzzling...
 						["groups"] = {
 							objective(1, {	-- 0/1 Energy Core
 								["provider"] = { "i", 35669 },	-- Energy Core
@@ -2489,9 +2361,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11868, {	-- The Culler Cometh
+						["sourceQuest"] = 11865,	-- Unfit for Death
 						["qg"] = 25811,	-- Zaza
 						["coord"] = { 56.7, 44.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11865,	-- Unfit for Death
 						["groups"] = {
 							objective(1, {	-- 0/1 Karen "I Don't Caribou" the Culler slain
 								["provider"] = { "n", 25803 },	-- Karen "I Don't Caribou" the Culler
@@ -2503,10 +2375,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11706, {	-- The Collapse
+						["sourceQuest"] = 11695,	-- The Horn of Elemental Fury
 						["qg"] = 24730,	-- Wind Tamer Barah
 						["coord"] = { 75.5, 35.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11695,	-- The Horn of Elemental Fury
 						["groups"] = {
 							i(37516),	-- Chilled Greaves
 							i(37437),	-- Plainhunter's Chestpiece
@@ -2515,40 +2387,40 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11595, {	-- The Defense of Warsong Hold
-						["qg"] = 25256,	-- High Overlord Saurfang
-						["coord"] = { 41.3, 53.6, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY,
 						["description"] = "This version of the quest is only available if you have completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
 						},
-					}),
-					q(11596, {	-- The Defense of Warsong Hold
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["coord"] = { 41.3, 53.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
+					}),
+					q(11596, {	-- The Defense of Warsong Hold
 						["description"] = "This version of the quest is only available if you have NOT completed the quest 'The Lord of Blackrock' from the Head of Nefarian and do NOT have the Scarab Lord title.",
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
 						},
-					}),
-					q(11597, {	-- The Defense of Warsong Hold
 						["qg"] = 25256,	-- High Overlord Saurfang
 						["coord"] = { 41.3, 53.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
+					}),
+					q(11597, {	-- The Defense of Warsong Hold
 						["description"] = "This version of the quest is only available if you have the Scarab Lord title.",
 						["sourceQuests"] = {
 							11585,	-- Hellscream's Vigil
 							11586,	-- Hellscream's Vigil
 						},
+						["qg"] = 25256,	-- High Overlord Saurfang
+						["coord"] = { 41.3, 53.6, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11687, {	-- The Doctor and the Lich-Lord
+						["sourceQuest"] = 11678,	-- Find Bristlehorn
 						["qg"] = 25658,	-- Longrunner Bristlehorn
 						["coord"] = { 69.7, 12.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11678,	-- Find Bristlehorn
 						["groups"] = {
 							objective(1, {	-- 0/1 Doctor Razorgrin slain
 								["provider"] = { "n", 25678 },	-- Doctor Razorgrin
@@ -2559,9 +2431,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11626, {	-- The Emissary
+						["sourceQuest"] = 11625,	-- The Tirdent of Naz'jan
 						["qg"] = 25450,	-- Veehja
 						["coord"] = { 43.6, 80.55, BOREAN_TUNDRA },
-						["sourceQuest"] = 11625,	-- The Tirdent of Naz'jan
 						["groups"] = {
 							objective(1, {	-- 0/1 Leviroth slain
 								["provider"] = { "n", 26452 },	-- Leviroth
@@ -2573,16 +2445,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11929, {	-- The Fall of Taunka'le Village
+						["sourceQuest"] = 11898,	-- Breaking Through
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11898,	-- Breaking Through
 					}),
 					q(11798, {	-- The Gearmaster
+						["sourceQuest"] = 11788,	-- Lefty Loosey, Righty Tighty
+						["qg"] = 25747,	-- Jinky Wingnut
 						["coord"] = { 57.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25747,	-- Jinky Wingnut
-						["sourceQuest"] = 11788,	-- Lefty Loosey, Righty Tighty
 						["groups"] = {
 							i(37442),	-- Chilled Mail Boots
 							i(37530),	-- Icy Ripper Fang
@@ -2591,10 +2463,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11685, {	-- The Heart of the Elements
+						["sourceQuest"] = 11684,	-- Scouting the Sinkholes
 						["qg"] = 24702,	-- Greatfather Mahan
 						["coord"] = { 77.0, 37.8, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11684,	-- Scouting the Sinkholes
 						["groups"] = {
 							objective(1, {	-- 0/5 Elemental Heart
 								["provider"] = { "i", 34956 },	-- Elemental Heart
@@ -2603,8 +2475,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11605, {	-- The Honored Ancestors
-						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 						["provider"] = { "o", 187565 },	-- Elder Atkanok
+						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 					}),
 					q(11593, {	-- The Honored Dead
 						["qg"] = 25336,	-- Grunt Ragefist
@@ -2612,10 +2484,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(11695, {	-- The Horn of Elemental Fury
+						["sourceQuest"] = 11685,	-- The Heart of the Elements
 						["qg"] = 24730,	-- Wind Tamer Barah
 						["coord"] = { 75.5, 35.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11685,	-- The Heart of the Elements
 						["groups"] = {
 							objective(1, {	-- 0/1 Upper Horn Half
 								["providers"] = {
@@ -2632,10 +2504,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11794, {	-- The Hunt is On
+						["sourceQuest"] = 11793,	-- Further Investigation
+						["qg"] = 25826,	-- Vindicator Yaala
 						["coord"] = { 58.5, 67.3, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25826,	-- Vindicator Yaala
-						["sourceQuest"] = 11793,	-- Further Investigation
 						["groups"] = {
 							objective(1, {	-- 0/1 Cultist in docks defeated
 								["provider"] = { "n", 25827 },	-- Tom Hegger
@@ -2653,16 +2525,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11720, {	-- The Invasion of Gammoth
+						["sourceQuest"] = 11719,	-- A Suitable Test Subject
 						["qg"] = 25381,	-- Bloodmage Laurith
 						["coord"] = { 52.0, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11719,	-- A Suitable Test Subject
 					}),
 					q(11600, {	-- The Late William Allerton
+						["sourceQuest"] = 11599,	-- Thassarian, My Brother
+						["qg"] = 25385,	-- William Allerton
 						["coord"] = { 56.0, 55.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25385,	-- William Allerton
-						["sourceQuest"] = 11599,	-- Thassarian, My Brother
 						["groups"] = {
 							i(37483),	-- Seabone Heaume
 							i(37207),	-- Seafarer Boots
@@ -2671,26 +2543,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12157, {	-- The Lost Courier
+						["qg"] = 26186,	-- Private Casey
 						["coord"] = { 82.0, 46.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26186,	-- Private Casey
 						["isBreadcrumb"] = true,
 					}),
 					q(11607, {	-- The Lost Spirits
-						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
-						["provider"] = { "o", 187565 },	-- Elder Atkanok
 						["sourceQuest"] = 11605,	-- The Honored Ancestors
+						["provider"] = { "o", 187565 },	-- Elder Atkanok
+						["coord"] = { 54.6, 35.7, BOREAN_TUNDRA },
 					}),
 					q(11708, {	-- The Mechagnomes
+						["sourceQuest"] = 11707,	-- Distress Call
+						["qg"] = 25590,	-- Fizzcrank Fullthrottle
 						["coord"] = { 56.9, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25590,	-- Fizzcrank Fullthrottle
-						["sourceQuest"] = 11707,	-- Distress Call
 					}),
 					q(11872, {	-- The Nefarious Clam Master...
+						["sourceQuest"] = 11871,	-- Not On Our Watch
 						["qg"] = 25838,	-- Hierophant Liandra
 						["coord"] = { 57.7, 55.1, BOREAN_TUNDRA },
-						["sourceQuest"] = 11871,	-- Not On Our Watch
 						["groups"] = {
 							objective(1, {	-- 0/1 Clam Master K slain
 								["provider"] = { "n", 25800 },	-- Clam Master K
@@ -2704,10 +2576,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11652, {	-- The Plains of Nasam
+						["sourceQuest"] = 11651,	-- Tanks a lot...
 						["qg"] = 25329,	-- Annihilator Grek'lor
 						["coord"] = { 32.2, 54.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11651,	-- Tanks a lot...
 						["groups"] = {
 							i(37476),	-- Grek'lor's Breastplate of Bloodrage
 							i(37276),	-- Grek'lor's Loungewear
@@ -2716,16 +2588,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11893, {	-- The Power of the Elements
+						["sourceQuest"] = 11881,	-- Load'er Up!
 						["qg"] = 25983,	-- Dorain Frosthoof
 						["coord"] = { 77.6, 36.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11881,	-- Load'er Up!
 					}),
 					q(11797, {	-- The Siege
+						["sourceQuest"] = 11727,	-- A Time for Heroes
+						["qg"] = 25816,	-- Sergeant Hammerhill
 						["coord"] = { 56.3, 69.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25816,	-- Sergeant Hammerhill
-						["sourceQuest"] = 11727,	-- A Time for Heroes
 						["groups"] = {
 							objective(1, {	-- 0/6 Crypt Crawler slain
 								["provider"] = { "n", 25227 },	-- Crypt Crawler
@@ -2739,27 +2611,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11624, {	-- The Sky Will Know
+						["sourceQuest"] = 12486,	-- To Bor'gorok Outpost, Quickly!
 						["qg"] = 25339,	-- Spirit Talker Snarlfang
 						["coord"] = { 50.2, 9.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 12486,	-- To Bor'gorok Outpost, Quickly!
 					}),
 					q(12086, {	-- The Son of Karkut
+						["sourceQuest"] = 11932,	-- Cowards and Fools
+						["qg"] = 26169,	-- Ataika
 						["coord"] = { 63.8, 46.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26169,	-- Ataika
-						["sourceQuest"] = 11932,	-- Cowards and Fools
 					}),
 					q(11565, {	-- The Spare Suit
+						["sourceQuest"] = 11563,	-- Grmmurggll Mrllggrl Glrggl!!!
 						["qg"] = 25205,	-- Mrmrglmr
 						["coord"] = { 41.9, 12.7, BOREAN_TUNDRA },
-						["sourceQuest"] = 11563,	-- Grmmurggll Mrllggrl Glrggl!!!
 					}),
 					q(11907, {	-- The Sub-Chieftains
+						["sourceQuest"] = 11896,	-- Weakness to Lightning
 						["qg"] = 25982,	-- Sage Earth and Sky
 						["coord"] = { 77.2, 38.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11896,	-- Weakness to Lightning
 						["groups"] = {
 							objective(1, {	-- 0/1 Twonky slain
 								["provider"] = { "n", 25830 },	-- Twonky
@@ -2781,9 +2653,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11968, {	-- The Tides Turn
+						["sourceQuest"] = 11961,	-- Spirits Watch Over Us
 						["qg"] = 26218,	-- Elder Muahit
 						["coord"] = { 67.2, 54.8, BOREAN_TUNDRA },
-						["sourceQuest"] = 11961,	-- Spirits Watch Over Us
 						["groups"] = {
 							objective(1, {	-- 0/1 Heigarr the Horrible slain
 								["provider"] = { "n", 26266 },	-- Heigarr the Horrible
@@ -2796,9 +2668,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11625, {	-- The Trident of Naz'jan
+						["sourceQuest"] = 11620,	-- A Father's Words
 						["qg"] = 25450,	-- Veehja
 						["coord"] = { 43.6, 80.55, BOREAN_TUNDRA },
-						["sourceQuest"] = 11620,	-- A Father's Words
 						["groups"] = {
 							objective(1, {	-- 0/1 Trident of Naz'jan
 								["provider"] = { "i", 35774 },	-- Trident of Naz'jan
@@ -2807,8 +2679,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11729, {	-- The Ultrasonic Screwdriver
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 34984 },	-- The Ultrasonic Screwdriver
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							25753,	-- Sentry-Bot 57-K
 							25752,	-- Scavenge-bot 004-A8
@@ -2817,10 +2689,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11686, {	-- The Warsong Farms
+						["sourceQuest"] = 11618,	-- Reinforcements Incoming...
 						["qg"] = 25437,	-- Shadowstalker Ickoris
 						["coord"] = { 38.0, 52.5, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11618,	-- Reinforcements Incoming...
 					}),
 					q(11716, {	-- The Wondrous Bloodspore
 						["qg"] = 25381,	-- Bloodmage Laurith
@@ -2836,9 +2708,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11561, {	-- Them!
+						["sourceQuest"] = 11559,	-- Winterfin Commerce
 						["qg"] = 25199,	-- Brglmurgl
 						["coord"] = { 42.8, 13.6, BOREAN_TUNDRA },
-						["sourceQuest"] = 11559,	-- Winterfin Commerce
 						["groups"] = {
 							objective(1, {	-- 0/15 Winterfin murlocs slain
 								["providers"] = {
@@ -2850,10 +2722,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11694, {	-- There's Something Going On In Those Caves
+						["sourceQuest"] = 11693,	-- Oh Great... Plagued Magnataur!
+						["qg"] = 25705,	-- Bixie Wrenchshanker
 						["coord"] = { 73.4, 18.7, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25705,	-- Bixie Wrenchshanker
-						["sourceQuest"] = 11693,	-- Oh Great... Plagued Magnataur!
 						["groups"] = {
 							i(37507),	-- Chilled Shoulderplates
 							i(37427),	-- Plainhunter's Waistband
@@ -2862,32 +2734,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12486, {	-- To Bor'gorok Outpost, Quickly!
+						["sourceQuests"] = {
+							11595,	-- The Defense of Warsong Hold
+							11596,	-- The Defense of Warsong Hold
+							11597,	-- The Defense of Warsong Hold
+						},
 						["qg"] = 25272,	-- Sauranok the Mystic
 						["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+					}),
+					q(11574, {	-- Too Close For Comfort
 						["sourceQuests"] = {
 							11595,	-- The Defense of Warsong Hold
 							11596,	-- The Defense of Warsong Hold
 							11597,	-- The Defense of Warsong Hold
 						},
-					}),
-					q(11574, {	-- Too Close For Comfort
 						["qg"] = 25247,	-- Endorah
 						["coord"] = { 41.7, 54.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						["sourceQuests"] = {
-							11595,	-- The Defense of Warsong Hold
-							11596,	-- The Defense of Warsong Hold
-							11597,	-- The Defense of Warsong Hold
-						},
 					}),
 					q(12117, {	-- Travel to Moa'ki Harbor
+						["sourceQuest"] = 11968,	-- The Tides Turn
 						["qg"] = 28382,	-- Hotawa
 						["coord"] = { 67.2, 54.8, BOREAN_TUNDRA },
 						["isBreadcrumb"] = true,
-						["sourceQuest"] = 11968,	-- The Tides Turn
 						["groups"] = {
 							i(37546),	-- Choker of the Northern Wind
 							i(37566),	-- Durable Worghide Cape
@@ -2896,15 +2768,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11733, {	-- Traversing the Rift
+						["sourceQuest"] = 11682,	-- Dragonspeak
 						["qg"] = 24795,	-- Surristrasz
 						["coord"] = { 45.3, 34.4, BOREAN_TUNDRA },
-						["sourceQuest"] = 11682,	-- Dragonspeak
 					}),
 					q(11722, {	-- Trophies of Gammoth
+						["sourceQuest"] = 11721,	-- Gammothra the Tormentor
 						["qg"] = 25380,	-- Primal Mighthorn
 						["coord"] = { 52.1, 52.8, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11721,	-- Gammothra the Tormentor
 						["groups"] = {
 							i(37405),	-- Marshwalker Pauldrons
 							i(37480),	-- Mightstone Helm
@@ -2913,21 +2785,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11865, {	-- Unfit for Death
+						["sourceQuest"] = 11864,	-- A Mission Statement
 						["qg"] = 25811,	-- Zaza
 						["coord"] = { 56.7, 44.0, BOREAN_TUNDRA },
-						["sourceQuest"] = 11864,	-- A Mission Statement
 					}),
 					q(11614, {	-- Untold Truths
+						["sourceQuest"] = 11598,	-- Taking Back Mightstone Quarry
 						["qg"] = 25394,	-- Shadowstalker Barthus
 						["coord"] = { 43.2, 55.0, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11598,	-- Taking Back Mightstone Quarry
 					}),
 					q(11714, {	-- Vermin Extermination
+						["sourceQuest"] = 11711,	--	Coward Delivery... Under 30 Minutes or it's Free
 						["qg"] = 25440,	-- Scout Tungok
 						["coord"] = { 52.9, 51.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11711,	--	Coward Delivery... Under 30 Minutes or it's Free
 						["groups"] = {
 							objective(1, {	-- 0/8 Bloodspore Harvester slain
 								["provider"] = { "n", 25467 },	-- Bloodspore Harvester
@@ -2945,15 +2817,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11654, {	-- The Spire of Blood
-						["crs"] = { 26115 },	-- Darkfallen Bloodbearer
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 34815 },	-- Vial of Fresh Blood
+						["races"] = HORDE_ONLY,
+						["crs"] = { 26115 },	-- Darkfallen Bloodbearer
 					}),
 					q(11631, {	-- Vision of Air
+						["sourceQuest"] = 11629,	-- Return to the Spirit Talker
 						["qg"] = 25339,	-- Spirit Talker Snarlfang
 						["coord"] = { 50.2, 9.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11629,	-- Return to the Spirit Talker
 						["groups"] = {
 							i(37442),	-- Chilled Mail Boots
 							i(37530),	-- Icy Ripper Fang
@@ -2982,28 +2854,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11896, {	-- Weakness to Lightning
+						["sourceQuest"] = 11895,	-- Master the Storm
 						["qg"] = 25982,	-- Sage Earth and Sky
 						["coord"] = { 77.2, 38.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11895,	-- Master the Storm
 					}),
 					q(11963, {	-- Weapons for Farshire
+						["sourceQuest"] = 11962,	-- One Last Delivery
+						["qg"] = 25235,	-- Hilda Stoneforge
 						["coord"] = { 57.3, 66.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25235,	-- Hilda Stoneforge
-						["sourceQuest"] = 11962,	-- One Last Delivery
 					}),
 					q(11890, {	-- What Are They Up To?
-						["qg"] = 25982,	-- Sage Earth and Sky
 						["sourceQuest"] = 11888,	-- Ride to Taunka'le Village
+						["qg"] = 25982,	-- Sage Earth and Sky
 						["coord"] = { 77.2, 38.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 					}),
 					q(11632, {	-- What the Cold Wind Brings...
+						["description"] = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
+						["provider"] = { "i", 34777 },	-- Ith'rix's Hardened Carapace
 						["coord"] = { 43.1, 56.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "i", 34777 },	-- Ith'rix's Hardened Carapace
-						["description"] = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
 						["groups"] = {
 							i(37505),	-- Battle Leader's Breastplate
 							i(37394),	-- Marshwalker Waistguard
@@ -3012,10 +2884,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11710, {	-- What's the Matter with the Transmatter?
+						["sourceQuest"] = 11708,	-- The Mechagnomes
+						["qg"] = 25702,	-- Mordle Cogspinner
 						["coord"] = { 57.5, 18.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 25702,	-- Mordle Cogspinner
-						["sourceQuest"] = 11708,	-- The Mechagnomes
 						["groups"] = {
 							objective(1, {	-- 0/15 Fizzcrank Spare Parts
 								["providers"] = {
@@ -3030,28 +2902,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11634, {	-- Wind Master To'bor
+						["sourceQuest"] = 11602,	-- Cutting Off the Source
 						["qg"] = 25279,	-- Overlord Razgor
 						["coord"] = { 43.1, 54.9, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11602,	-- Cutting Off the Source
 					}),
 					q(11559, {	-- Winterfin Commerce
+						["sourceQuest"] = 11571,	-- Learning to Communicate
 						["qg"] = 25197,	-- King Mrgl-Mrgl
 						["coord"] = { 43.5, 13.9, BOREAN_TUNDRA },
-						["sourceQuest"] = 11571,	-- Learning to Communicate
 					}),
 					q(11927, {	-- Word on the Street
+						["sourceQuest"] = 11897,	-- Plug the Sinkholes
+						["qg"] = 26155,	-- Mark Hanes
 						["coord"] = { 56.7, 69.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26155,	-- Mark Hanes
-						["sourceQuest"] = 11897,	-- Plug the Sinkholes
 						["isBreadcrumb"] = true,
 					}),
 					q(11942, {	-- Words of Power (A)
+						["sourceQuest"] = 11938,	-- Buying Some Time
+						["qg"] = 26170,	-- Thassarian
 						["coord"] = { 84.7, 41.6, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26170,	-- Thassarian
-						["sourceQuest"] = 11938,	-- Buying Some Time
 						["groups"] = {
 							objective(1, {	-- 0/1 High Priest Andorath's Scroll
 								["provider"] = { "i", 35355 },	-- High Priest Andorath's Scroll
@@ -3068,10 +2940,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11640, {	-- Words of Power (H)
+						["sourceQuest"] = 11633,	-- Blending In
 						["qg"] = 24703,	-- Chieftain Wintergale
 						["coord"] = { 75.8, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 11633,	-- Blending In
 						["groups"] = {
 							objective(1, {	-- 0/1 High Priest Naferset's Scroll
 								["provider"] = { "i", 35353 },	-- High Priest Naferset's Scroll
@@ -3153,6 +3025,24 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(27012, {	-- Beem Goldsprocket <Trade Goods>
+						["coord"] = { 57.7, 72.32, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
+							},
+						},
+					}),
+					n(26941, {	-- Brokkan Bear-Arms <Trade Goods>
+						["coord"] = { 41.34, 34.61, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
+							},
+						},
+					}),
 					n(35131, {	-- Durgan Thunderbeak <Gryphon Keeper>
 						["coord"] = { 58.9, 68.1, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
@@ -3169,7 +3059,7 @@ root(ROOTS.Zones, {
 					n(32565, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
 						["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_HORDE_EXPEDITION, {
+						["groups"] = bubbleDownClassicRep(FACTION_HORDE_EXPEDITION, {
 							{		-- Neutral
 							}, {	-- Friendly
 							}, {	-- Honored
@@ -3193,14 +3083,13 @@ root(ROOTS.Zones, {
 							},
 						}),
 					})),
+					-- #if AFTER CATA
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						},
+					}),
+					-- #endif
+					n(27142, {	-- Librarian Jeffers <Jewelcrafting Supplies>
+						["coord"] = { 46.26, 32.84, BOREAN_TUNDRA },
 					}),
 					n(27139, {	-- Librarian Whitley <Wands>
 						["coord"] = { 46.4, 32.6, BOREAN_TUNDRA },

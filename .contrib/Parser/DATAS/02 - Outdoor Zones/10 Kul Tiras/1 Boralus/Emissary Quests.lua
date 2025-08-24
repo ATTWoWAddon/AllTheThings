@@ -6,10 +6,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(EMISSARY_QUESTS, {
 			q(50605, {	-- Alliance War Effort [7th Legion]
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
-				["lvl"] = 120,
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["sym"] = { { "select", "itemID", 165872, 163857 } },		-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
 			q(54454, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 69.32, 24.94, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166300, {	-- 7th Legion Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
 						i(166279),	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
@@ -26,11 +26,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50599, {	-- Proudmoore Admiralty
 					["provider"] = { "n", 135808 },	-- Provisioner Fray
-					["lvl"] = 120,
 					["coord"] = { 67.52, 21.56, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isWorldQuest"] = true,
-					["g"] = {
+					["lvl"] = 120,
+					["groups"] = {
 						i(165869, {	-- Proudmoore Admiralty Equipment Cache
 							["sym"] = {
 								{"select", "itemID", 157996},	-- Harbormaster Pauldrons
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.52, 21.56, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166295, {	-- Proudmoore Admiralty Supplies
 						i(166714),	-- Albatross Hatchling (PET!)
 						i(166702),	-- Proudmoore Music Box (TOY!)

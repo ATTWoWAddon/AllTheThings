@@ -33,9 +33,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			ach(13757),	-- Battle-Scarred: Vim Brineheart
 		})),
 		ach(13763, {	-- Back to the Depths!
-			["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
+			["description"] = "This event takes place every 3 hours (3:00, 6:00, 9:00, and 12:00, based on realm time). A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
 		}),
-		explorationAch(13712),	-- Explore Nazjatar
+		ach(13712),	-- Explore Nazjatar
 		ach(13836, {	-- Feline Figurines Found
 			o(245286, {	-- Crystalline Cat Figurine
 				["questID"] = 56983,
@@ -225,7 +225,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		ach(13713),	-- Nothing to Scry About
 		ach(13699, {	-- Periodic Destruction
 			["coord"] = { 60.7, 32.1, NAZJATAR },
-			["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob.  Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
+			["description"] = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",
 		}),
 		ach(13764),	-- Puzzle Performer
 		ach(13765),		-- Subaquatic Support
@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				13709,	-- Unfathomable
 				13558,	-- Waveblade Ankoan (A)
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169194),		-- Snapback Scuttler (MOUNT!)
 				title(405),		-- of the Deeps
 			},

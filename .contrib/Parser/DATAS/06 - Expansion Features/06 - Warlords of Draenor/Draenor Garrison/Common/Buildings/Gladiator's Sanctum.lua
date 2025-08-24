@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(ACHIEVEMENTS, {
 					ach(9495, {		-- The Bone Collector
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-						["g"] = {
+						["groups"] = {
 							i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
 						},
 					}),
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9517,	-- Nemesis: Death Stalker
 							9516,	-- Nemesis: Slayer of Sin'dorei
 						}},
-						["g"] = {
+						["groups"] = {
 							title(269),	-- , Warlord of Draenor
 						},
 					}),
@@ -48,7 +48,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							9510,	-- Nemesis: Dwarfstalker
 							9509,	-- Nemesis: Draenei Destroyer
 						}},
-						["g"] = {
+						["groups"] = {
 							title(269),	-- , Warlord of Draenor
 						},
 					}),
@@ -57,7 +57,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(37082),	-- Call of the Gladiator
 					q(37083, {	-- Fight, Kill, Salute!
 						["sourceQuest"] = 37082,	-- Call of the Gladiator
-						["g"] = {
+						["qg"] = 87311,	-- Kharg
+						["coord"] = { 33.0, 38.6, DRAENOR_NAGRAND },
+						["groups"] = {
 							ach(9639),	-- Fight, Kill, Salute!
 							i(119219, {	-- Warlord's Flag of Victory (TOY!)
 								["description"] = "Requires being the last player alive in the coliseum.",
@@ -84,7 +86,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(36965),	-- Nemesis: Becoming Death (Troll)
 					q(36960, {	-- Nemesis: Death Stalker
 						["sourceQuest"] = 36959,	-- Nemesis: Becoming Death (Forsaken)
-						["g"] = {
+						["groups"] = {
 							ach(9517, {	-- Nemesis: Death Stalker
 								title(272),	-- the Death Stalker
 							}),
@@ -92,7 +94,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36968, {	-- Nemesis: Huojin's Fall
 						["sourceQuest"] = 36967,	-- Nemesis: Becoming Death (Pandaren)
-						["g"] = {
+						["groups"] = {
 							ach(9520, {	-- Nemesis: Huojin's Fall
 								title(276),	-- , Huojin's Fall
 							}),
@@ -100,7 +102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36970, {	-- Nemesis: Killer of Kezan
 						["sourceQuest"] = 36969,	-- Nemesis: Becoming Death (Goblin)
-						["g"] = {
+						["groups"] = {
 							ach(9518, {	-- Nemesis: Killer of Kezan
 								title(273),	-- , Killer of Kezan
 							}),
@@ -108,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36964, {	-- Nemesis: Orcslayer
 						["sourceQuest"] = 36963,	-- Nemesis: Becoming Death (Orc)
-						["g"] = {
+						["groups"] = {
 							ach(9519, {	-- Nemesis: Orcslayer
 								title(271),	-- Orcslayer
 							}),
@@ -116,7 +118,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36958, {	-- Nemesis: Slayer of Sin'dorei
 						["sourceQuest"] = 36957,	-- Nemesis: Becoming Death (Blood Elf)
-						["g"] = {
+						["groups"] = {
 							ach(9516, {	-- Nemesis: Slayer of Sin'dorei
 								title(275),	-- , Slayer of Sin'dorei
 							}),
@@ -124,7 +126,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36962, {	-- Nemesis: The Butcher
 						["sourceQuest"] = 36961,	-- Nemesis: Becoming Death (Tauren)
-						["g"] = {
+						["groups"] = {
 							ach(9521, {	-- Nemesis: The Butcher
 								title(270),	-- the Butcher
 							}),
@@ -132,7 +134,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36966, {	-- Nemesis: Troll Hunter
 						["sourceQuest"] = 36965,	-- Nemesis: Becoming Death (Troll)
-						["g"] = {
+						["groups"] = {
 							ach(9522, {	-- Nemesis: Troll Hunter
 								title(274),	-- Troll Hunter
 							}),
@@ -159,7 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(36927),	-- Nemesis: Becoming Death (Worgen)
 					q(36930, {	-- Nemesis: Draenei Destroyer
 						["sourceQuest"] = 36929,	-- Nemesis: Becoming Death (Draenei)
-						["g"] = {
+						["groups"] = {
 							ach(9509, {	-- Nemesis: Draenei Destroyer
 								title(267),	-- , Draenei Destroyer
 							}),
@@ -167,7 +169,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36924, {	-- Nemesis: Dwarfstalker
 						["sourceQuest"] = 36923,	-- Nemesis: Becoming Death (Dwarf)
-						["g"] = {
+						["groups"] = {
 							ach(9510, {	-- Nemesis: Dwarfstalker
 								title(264),	-- the Dwarfstalker
 							}),
@@ -175,7 +177,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36926, {	-- Nemesis: Gnomebane
 						["sourceQuest"] = 36925,	-- Nemesis: Becoming Death (Gnome)
-						["g"] = {
+						["groups"] = {
 							ach(9511, {	-- Nemesis: Gnomebane
 								title(263),	-- Gnomebane
 							}),
@@ -183,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36921, {	-- Nemesis: Manslayer
 						["sourceQuest"] = 36897,	-- Nemesis: Becoming Death (Human)
-						["g"] = {
+						["groups"] = {
 							ach(9512, {	-- Nemesis: Manslayer
 								title(262),	-- the Manslayer
 							}),
@@ -191,7 +193,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36932, {	-- Nemesis: Scourge of the Kaldorei
 						["sourceQuest"] = 36931,	-- Nemesis: Becoming Death (Night Elf)
-						["g"] = {
+						["groups"] = {
 							ach(9513, {	-- Nemesis: Scourge of the Kaldorei
 								title(266),	-- , Scourge of the Kaldorei
 							}),
@@ -199,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36934, {	-- Nemesis: Terror of the Tushui
 						["sourceQuest"] = 36933,	-- Nemesis: Becoming Death (Pandaren)
-						["g"] = {
+						["groups"] = {
 							ach(9514, {	-- Nemesis: Terror of the Tushui
 								title(268),	-- , Terror of the Tushui
 							}),
@@ -207,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36928, {	-- Nemesis: Worgen Hunter
 						["sourceQuest"] = 36927,	-- Nemesis: Becoming Death (Worgen)
-						["g"] = {
+						["groups"] = {
 							ach(9515, {	-- Nemesis: Worgen Hunter
 								title(265),	-- Worgen Hunter
 							}),

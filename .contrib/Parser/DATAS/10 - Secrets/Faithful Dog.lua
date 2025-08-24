@@ -6,21 +6,23 @@ FAITHFUL_DOG = createHeader({
 	icon = 133210,
 	text = {
 		en = "Faithful Dog Secret",
+		es = "Secreto del Perro fiel",
+		mx = "Secreto del Perro fiel",
 		cn = "忠诚的狗",
 		tw = "忠實的狗",
 	},
 });
 
 root(ROOTS.Secrets, n(FAITHFUL_DOG, {
-	["description"] = "Multi-expansion secret to obtaining Dog as a conpanion pet",
+	["description"] = "Multi-expansion secret to obtaining Dog as a companion pet",
 	["timeline"] = { ADDED_5_0_4 },
-	["g"] = {
+	["groups"] = {
 		q(30526, {	-- Step 1: Lost and Lonely
 			["provider"] = { "n", 59533 },	-- Lost Dog
 			["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
 			["minReputation"] = { FACTION_THE_TILLERS, REVERED+600 },	-- The Tillers, 12600 Rep
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				i(80144),	-- Tasty T-Bone (QI!)
 			},
 		}),
@@ -56,7 +58,7 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 			["provider"] = { "n", 225486 },	-- Dog
 			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 			["timeline"] = { ADDED_11_0_2 },
-			["g"] = {
+			["groups"] = {
 				i(224766),	-- Faithful Dog (PET!)
 			},
 		})),

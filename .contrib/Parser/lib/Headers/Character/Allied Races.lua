@@ -7,6 +7,7 @@ ALLIED_RACES = createHeader({
 		de = "Verbündete Völker",
 		fr = "Races alliées",
 		it = "Razze Alleate",
+		mx = "Razas aliadas",
 		pt = "Raças Aliadas",
 		ru = "Союзные расы",
 		ko = "동맹 종족",

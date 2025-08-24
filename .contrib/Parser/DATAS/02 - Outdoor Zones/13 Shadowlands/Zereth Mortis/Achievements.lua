@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ "i", 187684, 1 },	-- Containment Trap (quest item)
 				},
 			},FILTERFUNC_criteriaID,{
-				["g"] = {
+				["groups"] = {
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(52552, {
 						["crs"] = { 181221 },	-- Bygone Geomental
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["_npcs"] = { 182158 },	-- Reanimatrox Marzan
 				}),
 			}),
-			explorationAch(15224),	-- Explore Zereth Mortis
+			ach(15224),	-- Explore Zereth Mortis
 			ach(15336, {	-- From A to Zereth
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					15407,	-- Synthe-fived!
 					15220,	-- The Enlightened
 				}},
-				["g"] = {
+				["groups"] = {
 					i(187673),	-- Cryptic Aurelid (MOUNT!)
 				},
 			}),
@@ -169,6 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			ach(15259, {	-- Secrets of the First Ones
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			achWithRep(15220, FACTION_THE_ENLIGHTENED),	-- The Enlightened
 			ach(15229, {	-- Traversing the Spheres
 				["_noautomation"] = true,
 				["groups"] = {
@@ -227,7 +228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					15515,	-- Path to Enlightenment
 					15518,	-- A Means to an End
 				}},
-				["g"] = {
+				["groups"] = {
 					spell(366736),	-- Zereth Mortis Flying
 				},
 			}),

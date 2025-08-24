@@ -7,31 +7,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236830,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(769),	-- Explore Silverpine Forest
+				ach(769),	-- Explore Silverpine Forest
 				ach(4894, {	-- Silverpine Forest Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38361, {	-- Forsaken High Command
-							["sourceQuest"] = 27056,	-- Belmont's Report
-						}),
-						crit(38362, {	-- Forsaken Rear Guard
-							["sourceQuest"] = 27096,	-- Orcs are in Order
-						}),
-						crit(38363, {	-- The Sepulcher
-							["sourceQuest"] = 27290,	-- To Forsaken Forward Command
-						}),
-						crit(38364, {	-- The Ruins of Gilneas
-							["sourceQuest"] = 27438,	-- The Great Escape
-						}),
-						crit(38365, {	-- Ambermill
-							["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
-						}),
-						crit(38366, {	-- On the Battlefront
-							["sourceQuest"] = 27601,	-- Cities in Dust
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						27056,	-- Belmont's Report
@@ -142,12 +123,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(27577, {	-- 7th Legion Battle Plans
-					["qg"] = 45879,	-- Lord Walden
 					["sourceQuests"] = {
 						27548,	-- Lessons in Fear
 						27547,	-- Of No Consequence
 						27550,	-- Pyrewood's Fall
 					},
+					["qg"] = 45879,	-- Lord Walden
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -162,8 +143,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(530, {	-- A Husband's Revenge
-					["qg"] = 2050,	-- Raleigh Andrean
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity
+					["qg"] = 2050,	-- Raleigh Andrean
 					["coord"] = { 62, 43, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -208,8 +189,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(450, {	-- A Recipe For Death (2/3)
-					["qg"] = 2055,	-- Master Apothecary Faranell
 					["sourceQuest"] = 447,	-- A Recipe For Death (1/3)
+					["qg"] = 2055,	-- Master Apothecary Faranell
 					["coord"] = { 48.6, 69.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -225,8 +206,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(451, {	-- A Recipe For Death (3/3)
-					["qg"] = 1937,	-- Apothecary Renferrel
 					["sourceQuest"] = 450,	-- A Recipe For Death (2/3)
+					["qg"] = 1937,	-- Apothecary Renferrel
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -270,8 +251,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27510, {	-- A Wolf in Bear's Clothing
-					["qg"] = 45631,	-- High Warlord Cromush
 					["sourceQuest"] = 27484,	-- Only One May Enter
+					["qg"] = 45631,	-- High Warlord Cromush
 					["coord"] = { 52.2, 66.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -294,8 +275,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26992, {	-- Agony Abounds
-					["qg"] = 44778,	-- Apothecary Witherbloom
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
+					["qg"] = 44778,	-- Apothecary Witherbloom
 					["coord"] = { 56.7, 9.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -309,8 +290,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(479, {	-- Ambermill Investigations
-					["qg"] = 2121,	-- Shadow Priest Allister
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
+					["qg"] = 2121,	-- Shadow Priest Allister
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -327,8 +308,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(422, {	-- Arugal's Folly (1/4)
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 421,	-- Prove Your Worth
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -344,8 +325,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(423, {	-- Arugal's Folly (2/4)
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 422,	-- Arugal's Folly (1/4)
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -362,8 +343,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(424, {	-- Arugal's Folly (3/4)
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 423,	-- Arugal's Folly (2/4)
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -377,8 +358,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(99, {	-- Arugal's Folly (4/4)
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 424,	-- Arugal's Folly (3/4)
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -413,8 +394,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(442, {	-- Assault on Fenris Isle
-					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 448,	-- Report to Hadrec
+					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -434,8 +415,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27056, {	-- Belmont's Report
-					["qg"] = 44789,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27045,	-- Waiting to Exsanguinate
+					["qg"] = 44789,	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -469,8 +450,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(27474, {	-- Breaking the Barrier
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -484,8 +465,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27601, {	-- Cities in Dust
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27594,	-- On Her Majesty's Secret Service
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -505,54 +486,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27194, {	-- Cornered and Crushed!
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27193,	-- Seek and Destroy
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27476, {	-- Dalar Dawnweaver
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuests"] = {
 						27474,	-- Breaking the Barrier
 						27475,	-- Unyielding Servitors
 					},
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(481, {	-- Dalar's Analysis
+					["sourceQuest"] = 478,	-- Maps and Runes
 					["providers"] = {
 						{ "n", 2121 },	-- Shadow Priest Allister
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["sourceQuest"] = 478,	-- Maps and Runes
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(482, {	-- Dalaran's Intentions
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 481,	-- Dalar's Analysis
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(27039, {	-- Dangerous Intentions
-					["qg"] = 44789,	-- Deathstalker Commander Belmont
 					["sourceQuests"] = {
 						26998,	-- Iterating Upon Success
 						26989,	-- The Gilneas Liberation Front
 					},
+					["qg"] = 44789,	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27094, {	-- Deeper into Darkness
-					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27095,	-- Skitterweb Menace
+					["qg"] = 44917,	-- Warlord Torok
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -575,8 +556,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27746, {	-- Empire of Dirt
-					["qg"] = 46124,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27601,	-- Cities in Dust
+					["qg"] = 46124,	-- Lady Sylvanas Windrunner
 					["coord"] = { 45.3, 84.4, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -594,8 +575,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27181, {	-- Excising the Taint
-					["qg"] = 45195,	-- Bloodfang Stalker
 					["sourceQuest"] = 27098,	-- Lordaeron [Shifted back 1 quest... no history in report Discord 2023-07-29]
+					["qg"] = 45195,	-- Bloodfang Stalker
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -606,10 +587,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27575, {	-- From the Belly of the Beast
-					["qg"] = 45878,	-- Lord Godfrey
+					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
 					["sourceQuest"] = 27574,	-- I Never Forget a Face
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
-					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
+					["qg"] = 45878,	-- Lord Godfrey
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -640,8 +621,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27073, {	-- Give 'em Hell!
-					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
+					["qg"] = 44917,	-- Warlord Torok
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -655,8 +636,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26995, {	-- Guts and Gore
-					["qg"] = 44784,	-- High Apothecary Shana T'veen
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
+					["qg"] = 44784,	-- High Apothecary Shana T'veen
 					["coord"] = { 56.2, 8.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -671,8 +652,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27226, {	-- Hair of the Dog
-					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuest"] = 27098,	-- Lordaeron
+					["qg"] = 44917,	-- Warlord Torok
 					["coord"] = { 45.7, 41.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -695,26 +676,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27180, {	-- Honor the Dead
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27098,	-- Lordaeron
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(60862) },	-- Forsaken Insignia (QI!)
 				}),
 				q(27574, {	-- I Never Forget a Face
-					["provider"] = { "i", 61505 },	-- Partially Digested Head
-					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
+					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
+					["provider"] = { "i", 61505 },	-- Partially Digested Head
 					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 45896,	-- Marsh Crocolisk
 					["races"] = HORDE_ONLY,
+					["cr"] = 45896,	-- Marsh Crocolisk
 				}),
 				q(26998, {	-- Iterating Upon Success
-					["qg"] = 44784,	-- High Apothecary Shana T'veen
 					["sourceQuests"] = {
 						26992,	-- Agony Abounds
 						26995,	-- Guts and Gore
 					},
+					["qg"] = 44784,	-- High Apothecary Shana T'veen
 					["coord"] = { 56.2, 8.4, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -744,8 +726,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27088, {	-- It's Only Poisonous if You Ingest It
-					["qg"] = 44912,	-- Apothecary Wormcrud
 					["sourceQuest"] = 27082,	-- Playing Dirty
+					["qg"] = 44912,	-- Apothecary Wormcrud
 					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -765,8 +747,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(425, {	-- Ivar the Foul
-					["qg"] = 1950,	-- Rane Yorick
 					["sourceQuest"] = 430,	-- Return to Quinn
+					["qg"] = 1950,	-- Rane Yorick
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -796,8 +778,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 19,
 				}),
 				q(27548, {	-- Lessons in Fear
-					["qg"] = 45879,	-- Lord Walden
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
+					["qg"] = 45879,	-- Lord Walden
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -808,8 +790,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27098, {	-- Lordaeron
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27099,	-- No Escape
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -823,11 +805,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(27093, {	-- Lost in the Darkness
-					["qg"] = 44916,	-- Admiral Hatchet
 					["sourceQuests"] = {
 						27073,	-- Give 'em Hell!
 						27069,	-- Steel Thunder
 					},
+					["qg"] = 44916,	-- Admiral Hatchet
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -838,19 +820,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(478, {	-- Maps and Runes
+					["sourceQuest"] = 477,	-- Border Crossings
 					["providers"] = {
 						{ "o", 1627 },	-- Dalaran Crate
 						{ "i", 3353 },	-- Rune-inscribed Pendant
 					},
-					["sourceQuest"] = 477,	-- Border Crossings
 					["coord"] = { 49.9, 60.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(27099, {	-- No Escape
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27097,	-- Rise, Forsaken
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 65.7, 26.4, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -867,8 +849,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27195, {	-- Nowhere to Run
-					["qg"] = 45228,	-- Master Forteski
 					["sourceQuest"] = 27194,	-- Cornered and Crushed
+					["qg"] = 45228,	-- Master Forteski
 					["coord"] = { 55.8, 46.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -888,8 +870,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27547, {	-- Of No Consequence
-					["qg"] = 45880,	-- Baron Ashbury
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
+					["qg"] = 45880,	-- Baron Ashbury
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -900,11 +882,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
-					["qg"] = 45878,	-- Lord Godfrey
 					["sourceQuests"] = {
 						27577,	-- 7th Legion Battle Plans
 						27580,	-- Sowing Discord
 					},
+					["qg"] = 45878,	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -921,29 +903,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27484, {	-- Only One May Enter
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuests"] = {
 						27483,	-- Practical Vengeance
 						27478,	-- Relios the Relic Keeper
 					},
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27096, {	-- Orcs are in Order
-					["qg"] = 44916,	-- Admiral Hatchet
 					["sourceQuests"] = {
 						27094,	-- Deeper into Darkness
 						27088,	-- It's Only Poisonous if You Ingest It
 						27093,	-- Lost in the Darkness
 					},
+					["qg"] = 44916,	-- Admiral Hatchet
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27082, {	-- Playing Dirty
-					["qg"] = 44912,	-- Apothecary Wormcrud
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
+					["qg"] = 44912,	-- Apothecary Wormcrud
 					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -958,8 +940,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27483, {	-- Practical Vengeance
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1018,18 +1000,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27550, {	-- Pyrewood's Fall
-					["qg"] = 45878,	-- Lord Godfrey
 					["sourceQuest"] = 27542,	-- Taking the Battlefront
+					["qg"] = 45878,	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(441, {	-- Raleigh and the Undercity
+					["sourceQuest"] = 440,	-- The Engraved Ring
 					["providers"] = {
 						{ "n", 1499 },	-- Magistrate Sevren
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["sourceQuest"] = 440,	-- The Engraved Ring
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1037,8 +1019,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(27231, {	-- Reinforcements from Fenris
-					["qg"] = 44916,	-- Admiral Hatchet
 					["sourceQuest"] = 27098,	-- Lordaeron
+					["qg"] = 44916,	-- Admiral Hatchet
 					["coord"] = { 45.8, 41.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1052,8 +1034,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27478, {	-- Relios the Relic Keeper
-					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 27476,	-- Dalar Dawnweaver
+					["qg"] = 1938,	-- Dalar Dawnweaver
 					["coord"] = { 47.0, 43.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1077,8 +1059,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(448, {	-- Report to Hadrec
-					["qg"] = 1937,	-- Apothecary Renferrel
 					["sourceQuest"] = 446,	-- Thule Ravenclaw
+					["qg"] = 1937,	-- Apothecary Renferrel
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1102,11 +1084,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(430, {	-- Return to Quinn
+					["sourceQuest"] = 429,	-- Wild Hearts
 					["providers"] = {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 3165 },	-- Quinn's Potion
 					},
-					["sourceQuest"] = 429,	-- Wild Hearts
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1114,44 +1096,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				q(6323, {	-- Ride to the Undercity
+					["sourceQuest"] = 6321,	-- Supplying the Sepulcher / Supplying Brill [CATA+]
 					["providers"] = {
 						{ "n", 2226 },	-- Karos Razok
 						{ "i", 16209 },	-- Podrig's Order
 					},
-					["sourceQuest"] = 6321,	-- Supplying the Sepulcher / Supplying Brill [CATA+]
 					["coord"] = { 45.6, 42.4, SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				-- #endif
 				q(27097, {	-- Rise, Forsaken
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27096,	-- Orcs are in Order
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27472, {	-- Rise, Godfrey
-					["qg"] = 45525,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27438,	-- The Great Escape
+					["qg"] = 45525,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.7, 66.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(439, {	-- Rot Hide Clues
+					["sourceQuest"] = 438,	-- The Decrepit Ferry
 					["providers"] = {
 						{ "o", 1593 },	-- Corpse Laden Boat
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["sourceQuest"] = 438,	-- The Decrepit Ferry
 					["coord"] = { 58.4, 34.9, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(443, {	-- Rot Hide Ichor
-					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 439,	-- Rot Hide Clues
+					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1170,19 +1152,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(444, {	-- Rot Hide Origins
+					["sourceQuest"] = 443,	-- Rot Hide Ichor
 					["providers"] = {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 3237 },	-- Sample Ichor
 					},
-					["sourceQuest"] = 443,	-- Rot Hide Ichor
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(27193, {	-- Seek and Destroy
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27181,	-- Excising the Taint
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1194,11 +1176,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27095, {	-- Skitterweb Menace
-					["qg"] = 44917,	-- Warlord Torok
 					["sourceQuests"] = {
 						27073,	-- Give 'em Hell!
 						27069,	-- Steel Thunder
 					},
+					["qg"] = 44917,	-- Warlord Torok
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1213,12 +1195,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27580, {	-- Sowing Discord
-					["qg"] = 45878,	-- Lord Godfrey
 					["sourceQuests"] = {
 						27548,	-- Lessons in Fear
 						27547,	-- Of No Consequence
 						27550,	-- Pyrewood's Fall
 					},
+					["qg"] = 45878,	-- Lord Godfrey
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1229,16 +1211,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3221, {	-- Speak with Renferrel
-					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 449,	-- The Deathstalkers' Report
+					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(27069, {	-- Steel Thunder
-					["qg"] = 44916,	-- Admiral Hatcher
 					["sourceQuest"] = 27065,	-- The Warchief's Fleet
+					["qg"] = 44916,	-- Admiral Hatcher
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1269,8 +1251,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(27542, {	-- Taking the Battlefront
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1293,38 +1275,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(449, {	-- The Deathstalkers' Report
+					["sourceQuest"] = 435,	-- Escorting Erland
 					["providers"] = {
 						{ "n", 1950 },	-- Rane Yorick
 						{ "i", 3252 },	-- Deathstalker Report
 					},
-					["sourceQuest"] = 435,	-- Escorting Erland
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(438, {	-- The Decrepit Ferry
-					["qg"] = 1952,	-- High Executor Hadrec
 					["sourceQuest"] = 437,	-- The Dead Fields
+					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(440, {	-- The Engraved Ring
+					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["providers"] = {
 						{ "n", 1952 },	-- High Executor Hadrec
 						{ "i", 3234 },	-- Deliah's Ring
 					},
-					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(26989, {	-- The Gilneas Liberation Front
-					["qg"] = 44615,	-- Grand Executor Mortuus
 					["sourceQuest"] = 26965,	-- The Warchief Cometh
+					["qg"] = 44615,	-- Grand Executor Mortuus
 					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1344,36 +1326,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(461, {	-- The Hidden Niche
+					["sourceQuest"] = 460,	-- Resting in Pieces
 					["providers"] = {
 						{ "o", 1599 },	-- Shallow Grave
 						{ "i", 3318 },	-- Alaric's Remains
 					},
-					["sourceQuest"] = 460,	-- Resting in Pieces
 					["coord"] = { 67.8, 24.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(26965, {	-- The Warchief Cometh
-					["qg"] = 44615,	-- Grand Executor Mortuus
 					["sourceQuests"] = {
 						26964,	-- Warchief's Command: Silverpine Forest!
 						28568,	-- Warchief's Command: Silverpine Forest!
 					},
+					["qg"] = 44615,	-- Grand Executor Mortuus
 					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27065, {	-- The Warchief's Fleet
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27056,	-- Belmont's Report
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27232, {	-- The Waters Run Red...
-					["provider"] = { "o", 205350 },	-- Horde Communication Panel
 					["sourceQuest"] = 27231,	-- Reinforcements from Fenris
+					["provider"] = { "o", 205350 },	-- Horde Communication Panel
 					["coord"] = { 59.1, 34.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1393,8 +1375,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(480, {	-- The Weaver
-					["qg"] = 2121,	-- Shadow Priest Allister
 					["sourceQuest"] = 479,	-- Ambermill Investigations
+					["qg"] = 2121,	-- Shadow Priest Allister
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1419,11 +1401,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(446, {	-- Thule Ravenclaw
+					["sourceQuest"] = 444,	-- Rot Hide Origins
 					["providers"] = {
 						{ "n", 1498 },	-- Bethor Iceshard
 						{ "i", 3250 },	-- Bethor's Scroll
 					},
-					["sourceQuest"] = 444,	-- Rot Hide Origins
 					["coord"] = { 84.2, 17.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1435,28 +1417,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27290, {	-- To Forsaken Forward Command
-					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["sourceQuests"] = {
 						27226,	-- Hair of the Dog
 						27195,	-- Nowhere to Run
 						27231,	-- Reinforcements From Fenris
 						27232,	-- The Waters Run Red
 					},
+					["qg"] = 44365,	-- Lady Sylvanas Windrunner
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27484,	-- Only One May Enter
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27512,	-- Transdimensional Warfare: Chapter I
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["qg"] = 45752,	-- Ambermill Dimensional Portal
+					["coord"] = { 58.0, 69.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1477,8 +1459,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27513,	-- Transdimensional Warfare: Chapter II
+					["qg"] = 45617,	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1495,8 +1477,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27475, {	-- Unyielding Servitors
-					["qgs"] = { 45610, 45626 },	-- Daschla
 					["sourceQuest"] = 27472,	-- Rise, Godfrey
+					["qgs"] = { 45610, 45626 },	-- Daschla
 					["coord"] = { 51.8, 64.7, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1511,8 +1493,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27045, {	-- Waiting to Exsanguinate
-					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
 					["sourceQuest"] = 27039,	-- Dangerous Intentions
+					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
 					["coord"] = { 53.8, 12.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1532,11 +1514,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(491, {	-- Wand to Bethor
+					["sourceQuest"] = 461,	-- The Hidden Niche
 					["providers"] = {
 						{ "o", 112888 },	-- Dusty Shelf
 						{ "i", 3425 },	-- Woven Wand
 					},
-					["sourceQuest"] = 461,	-- The Hidden Niche
 					["coord"] = { 65.3, 24.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1573,11 +1555,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(429, {	-- Wild Hearts
-					["qg"] = 1950,	-- Rane Yorick
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
+					["qg"] = 1950,	-- Rane Yorick
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
-					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1591,11 +1573,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1359, {	-- Zinge's Delivery
+					["sourceQuest"] = 3221,	-- Speak with Renferrel
 					["providers"] = {
 						{ "n", 1937 },	-- Apothecary Renferrel
 						{ "i", 6016 },	-- Wolf Heart Sample
 					},
-					["sourceQuest"] = 3221,	-- Speak with Renferrel
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1955,7 +1937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
@@ -1964,7 +1946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5771, {	-- Pattern: Red Linen Bag
+						i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
@@ -1993,19 +1975,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #endif
+						},
+					},
 					["groups"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
@@ -2017,17 +2001,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #endif
+						},
+					},
 					["groups"] = {
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
@@ -2137,7 +2123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE CATA
-				i(5771, {	-- Pattern: Red Linen Bag
+				i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 					["crs"] = {
 						3531,	-- Moonrage Tailor
 						3530,	-- Pyrewood Tailor

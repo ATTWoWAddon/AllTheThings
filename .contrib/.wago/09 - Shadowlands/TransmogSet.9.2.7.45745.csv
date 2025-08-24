@@ -1,0 +1,2248 @@
+Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescriptionID,ParentTransmogSetID,CompleteWorldStateID,ExpansionID,PatchIntroduced,UiOrder,ConditionID
+,2,128,0,1,1,0,0,1,0,0,590,0
+,3,0,0,1,0,0,0,1,0,0,1591,0
+,4,4095,42729,1,0,0,0,1,0,60002,1000,0
+,5,68,0,3,0,0,0,1,0,0,360,0
+,6,35,0,3,0,0,0,1,0,0,390,0
+"Wild Combatant's Chain Armor",13,4,42975,20,12,13302,80,1,5,60100,6700,0
+"Wild Combatant's Chain Armor",14,4,42992,24,12,13302,79,1,5,60100,6700,0
+"Wild Combatant's Ringmail Armor",15,64,42993,20,12,13302,81,1,5,60100,6700,0
+"Wild Combatant's Ringmail Armor",16,64,42994,24,12,13302,82,1,5,60100,6700,0
+"Wild Combatant's Dreadplate Armor",17,32,43004,20,12,13302,90,1,5,60100,6700,0
+"Wild Combatant's Dreadplate Armor",18,32,43005,24,12,13302,89,1,5,60100,6700,0
+"Wild Combatant's Scaled Armor",19,2,43006,20,12,13302,94,1,5,60100,6700,0
+"Wild Combatant's Scaled Armor",20,2,43008,24,12,13302,93,1,5,60100,6700,0
+"Wild Combatant's Plate Armor",21,1,43010,24,12,13302,91,1,5,60100,6700,0
+"Wild Combatant's Plate Armor",22,1,43009,20,12,13302,92,1,5,60100,6700,0
+"Wild Combatant's Leather Armor",23,8,43011,20,12,13302,85,1,5,60100,6700,0
+"Wild Combatant's Leather Armor",24,8,43012,24,12,13302,86,1,5,60100,6700,0
+"Wild Combatant's Dragonhide Armor",25,1024,43018,24,12,13302,83,1,5,60100,6700,0
+"Wild Combatant's Dragonhide Armor",26,1024,43017,20,12,13302,84,1,5,60100,6700,0
+"Wild Combatant's Ironskin Armor",27,512,43020,24,12,13302,87,1,5,60100,6700,0
+"Wild Combatant's Ironskin Armor",28,512,43019,20,12,13302,88,1,5,60100,6700,0
+"Wild Combatant's Silk Armor",29,128,43021,20,12,13302,100,1,5,60100,6700,0
+"Wild Combatant's Silk Armor",30,128,43022,24,12,13302,99,1,5,60100,6700,0
+"Wild Combatant's Satin Armor",31,16,43023,20,12,13302,98,1,5,60100,6700,0
+"Wild Combatant's Satin Armor",32,16,43024,24,12,13302,97,1,5,60100,6700,0
+"Wild Combatant's Felweave Armor",33,256,43026,24,12,13302,95,1,5,60100,6700,0
+"Wild Combatant's Felweave Armor",34,256,43025,20,12,13302,96,1,5,60100,6700,0
+"Warmongering Combatant's Chain Armor",35,4,43028,20,13,13302,102,1,5,60200,7000,0
+"Warmongering Combatant's Chain Armor",36,4,43029,24,13,13302,101,1,5,60200,7000,0
+"Warmongering Combatant's Ringmail Armor",37,64,43030,20,13,13302,104,1,5,60200,7000,0
+"Warmongering Combatant's Ringmail Armor",38,64,43031,24,13,13302,103,1,5,60200,7000,0
+"Warmongering Combatant's Dragonhide Armor",39,1024,43032,20,13,13302,106,1,5,60200,7000,0
+"Warmongering Combatant's Dragonhide Armor",40,1024,43033,24,13,13302,105,1,5,60200,7000,0
+"Warmongering Combatant's Leather Armor",41,8,43034,20,13,13302,114,1,5,60200,7000,0
+"Warmongering Combatant's Leather Armor",42,8,43035,24,13,13302,113,1,5,60200,7000,0
+"Warmongering Combatant's Ironskin Armor",43,512,43037,24,13,13302,111,1,5,60200,7000,0
+"Warmongering Combatant's Ironskin Armor",44,512,43036,20,13,13302,112,1,5,60200,7000,0
+"Warmongering Combatant's Dreadplate Armor",45,32,43038,20,13,13302,108,1,5,60200,7000,0
+"Warmongering Combatant's Dreadplate Armor",46,32,43039,24,13,13302,107,1,5,60200,7000,0
+"Warmongering Combatant's Scaled Armor",47,2,43042,24,13,13302,119,1,5,60200,7000,0
+"Warmongering Combatant's Scaled Armor",48,2,43041,20,13,13302,120,1,5,60200,7000,0
+"Warmongering Combatant's Plate Armor",49,1,43044,24,13,13302,115,1,5,60200,7000,0
+"Warmongering Combatant's Plate Armor",50,1,43043,20,13,13302,116,1,5,60200,7000,0
+"Warmongering Combatant's Satin Armor",51,16,43046,24,13,13302,117,1,5,60200,7000,0
+"Warmongering Combatant's Satin Armor",52,16,43045,20,13,13302,118,1,5,60200,7000,0
+"Warmongering Combatant's Silk Armor",53,128,43047,20,13,13302,122,1,5,60200,7000,0
+"Warmongering Combatant's Silk Armor",54,128,43048,24,13,13302,121,1,5,60200,7000,0
+"Warmongering Combatant's Felweave Armor",55,256,43050,24,13,13302,109,1,5,60200,7000,0
+"Warmongering Combatant's Felweave Armor",56,256,43049,20,13,13302,110,1,5,60200,7000,0
+"Primal Combatant's Chain Armor",57,4,43074,24,11,13302,123,1,5,60001,6200,0
+"Primal Combatant's Chain Armor",58,4,43073,20,11,13302,124,1,5,60001,6200,0
+"Primal Combatant's Ringmail Armor",59,64,43076,24,11,13302,137,1,5,60001,6200,0
+"Primal Combatant's Ringmail Armor",60,64,43075,20,11,13302,138,1,5,60001,6200,0
+"Primal Combatant's Dragonhide Armor",61,1024,43078,24,11,13302,125,1,5,60001,6200,0
+"Primal Combatant's Dragonhide Armor",62,1024,43077,20,11,13302,126,1,5,60001,6200,0
+"Primal Combatant's Leather Armor",63,8,43080,24,11,13302,133,1,5,60001,6200,0
+"Primal Combatant's Leather Armor",64,8,43081,20,11,13302,134,1,5,60001,6200,0
+"Primal Combatant's Ironskin Armor",65,512,43083,24,11,13302,131,1,5,60001,6200,0
+"Primal Combatant's Ironskin Armor",66,512,43082,20,11,13302,132,1,5,60001,6200,0
+"Primal Combatant's Dreadplate Armor",67,32,43085,24,11,13302,127,1,5,60001,6200,0
+"Primal Combatant's Dreadplate Armor",68,32,43084,20,11,13302,128,1,5,60001,6200,0
+"Primal Combatant's Scaled Armor",69,2,43087,24,11,13302,141,1,5,60001,6200,0
+"Primal Combatant's Scaled Armor",70,2,43086,20,11,13302,142,1,5,60001,6200,0
+"Primal Combatant's Plate Armor",71,1,43089,24,11,13302,135,1,5,60001,6200,0
+"Primal Combatant's Plate Armor",72,1,43088,20,11,13302,136,1,5,60001,6200,0
+"Primal Combatant's Felweave Armor",73,256,43093,24,11,13302,129,1,5,60001,6200,0
+"Primal Combatant's Felweave Armor",74,256,43092,20,11,13302,130,1,5,60001,6200,0
+"Primal Combatant's Satin Armor",75,16,43095,24,11,13302,139,1,5,60001,6200,0
+"Primal Combatant's Satin Armor",76,16,43094,20,11,13302,140,1,5,60001,6200,0
+"Primal Combatant's Silk Armor",77,128,43097,24,11,13302,143,1,5,60001,6200,0
+"Primal Combatant's Silk Armor",78,128,43096,20,11,13302,144,1,5,60001,6200,0
+"Wild Gladiator's Chain Armor",79,4,43103,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Chain Armor",80,4,43102,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Ringmail Armor",81,64,43104,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Ringmail Armor",82,64,43105,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Dragonhide Armor",83,1024,43108,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Dragonhide Armor",84,1024,43107,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Leather Armor",85,8,43109,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Leather Armor",86,8,43110,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Ironskin Armor",87,512,43113,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Ironskin Armor",88,512,43112,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Dreadplate Armor",89,32,43005,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Dreadplate Armor",90,32,43114,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Plate Armor",91,1,43117,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Plate Armor",92,1,43116,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Scaled Armor",93,2,43119,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Scaled Paladin",94,2,43118,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Felweave Armor",95,256,43123,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Felweave Armor",96,256,43122,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Satin Armor",97,16,43125,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Satin Armor",98,16,43124,20,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Silk Armor",99,128,43127,24,12,13301,0,1,5,60100,7000,0
+"Wild Gladiator's Silk Armor",100,128,43126,20,12,13301,0,1,5,60100,7000,0
+"Warmongering Gladiator's Chain Armor",101,4,43137,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Chain Armor",102,4,43136,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Ringmail Armor",103,64,43139,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Ringmail Armor",104,64,43138,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Dragonhide Armor",105,1024,43155,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Dragonhide Armor",106,1024,43154,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Dreadplate Armor",107,32,43157,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Dreadplate Armor",108,32,43156,20,13,13301,0,1,5,60200,7100,0
+,162,4095,0,3,0,0,0,1,0,0,10,0
+"Warmongering Gladiator's Felweave Armor",109,256,43161,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Felweave Armor",110,256,43160,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Ironskin Armor",111,512,43164,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Ironskin Armor",112,512,43163,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Leather Armor",113,8,43166,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Leather Armor",114,8,43165,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Plate Armor",115,1,43168,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Plate Armor",116,1,43167,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Satin Armor",117,16,43170,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Satin Armor",118,16,43169,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Scaled Armor",119,2,43172,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Scaled Armor",120,2,43171,20,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Silk Armor",121,128,43174,24,13,13301,0,1,5,60200,7100,0
+"Warmongering Gladiator's Silk Armor",122,128,43173,20,13,13301,0,1,5,60200,7100,0
+"Primal Gladiator's Chain Armor",123,4,43198,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Chain Armor",124,4,43197,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Dragonhide Armor",125,1024,43200,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Dragonhide Armor",126,1024,43199,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Dreadplate Armor",127,32,43202,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Dreadplate Armor",128,32,43201,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Felweave Armor",129,256,43204,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Felweave Armor",130,256,43203,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Ironskin Armor",131,512,43210,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Ironskin Armor",132,512,43209,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Leather Armor",133,8,43212,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Leather Armor",134,8,43211,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Plate Armor",135,1,43089,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Plate Armor",136,1,43213,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Ringmail Armor",137,64,43217,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Ringmail Armor",138,64,43216,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Satin Armor",139,16,43219,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Satin Armor",140,16,43218,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Scaled Armor",141,2,43221,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Scaled Armor",142,2,43220,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Silk Armor",143,128,43223,24,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Silk Armor",144,128,43222,20,11,13301,0,1,5,60001,6600,0
+"Primal Gladiator's Arsenal",145,0,43225,25,0,0,0,1,5,60001,6600,0
+"Primal Gladiator's Arsenal",146,0,43224,21,0,0,0,1,5,60001,6600,0
+,147,0,43227,25,0,0,0,1,5,60100,7000,0
+,148,0,43226,21,0,0,0,1,5,60100,7000,0
+,149,0,43230,25,0,0,0,1,0,60200,7100,0
+,150,0,43229,21,0,0,0,1,0,60200,7100,0
+,151,0,43232,25,0,0,0,1,5,60200,7000,0
+,152,0,43231,21,0,0,0,1,5,60200,7000,0
+,153,0,43234,25,0,0,0,1,5,60100,6700,0
+,154,0,43233,21,0,0,0,1,5,60100,6700,0
+"Primal Combatant's Arsenal",155,0,43236,25,0,0,0,1,5,60001,6200,0
+"Primal Combatant's Arsenal",156,0,43235,21,0,0,0,1,5,60001,6200,0
+"Felforged Armor",157,35,43278,2,48,0,0,1,6,70001,100,0
+"Fel-Chain Armor",158,68,43279,2,48,0,0,1,6,70001,100,0
+"Felshroud Armor",159,3592,43280,2,48,0,0,1,6,70001,100,0
+"Fel-Infused Armor",160,400,43281,2,48,0,0,1,6,70001,100,0
+,163,4,0,3,0,0,0,1,0,0,750,0
+,164,16,0,3,0,0,0,1,0,0,750,0
+,167,0,42778,3,0,0,0,1,0,0,200,0
+,168,0,45129,3,0,0,0,1,0,0,6400,0
+,169,0,45130,3,0,0,0,1,0,0,2510,0
+,170,0,45131,3,0,0,0,1,0,0,490,0
+"Regalia of the Chosen Dead",171,400,45208,2,47,13193,0,1,6,70100,8551,0
+"Regalia of the Chosen Dead",172,400,45223,2,47,2015,171,1,6,70100,8552,0
+"Regalia of the Chosen Dead",173,400,45224,2,47,13145,171,1,6,70100,8553,0
+"Regalia of the Chosen Dead",174,400,45225,2,47,1641,171,1,6,70100,8550,0
+"Garb of the Chosen Dead",175,3592,45226,2,47,13193,0,1,6,70100,8551,0
+"Garb of the Chosen Dead",176,3592,45227,2,47,2015,175,1,6,70100,8552,0
+"Garb of the Chosen Dead",177,3592,45228,2,47,13145,175,1,6,70100,8553,0
+"Garb of the Chosen Dead",178,3592,45229,2,47,1641,175,1,6,70100,8550,0
+"Chains of the Chosen Dead",179,68,45230,2,47,13193,0,1,6,70100,8551,0
+"Chains of the Chosen Dead",180,68,45231,2,47,2015,179,1,6,70100,8552,0
+"Chains of the Chosen Dead",181,68,45232,2,47,13145,179,1,6,70100,8553,0
+"Chains of the Chosen Dead",182,68,45233,2,47,1641,179,1,6,70100,8550,0
+"Funerary Plate of the Chosen Dead",183,35,45234,2,47,13193,0,1,6,70100,8551,0
+"Funerary Plate of the Chosen Dead",184,35,45235,2,47,2015,183,1,6,70100,8552,0
+"Funerary Plate of the Chosen Dead",185,35,45236,2,47,13145,183,1,6,70100,8553,0
+"Funerary Plate of the Chosen Dead",186,35,45237,2,47,1641,183,1,6,70100,8550,0
+"Dreadful Gladiator's Chain Armor",187,4,45583,16,9,13304,286,1,4,50003,4580,0
+"Dreadful Gladiator's Dragonhide Armor",188,1024,45584,16,9,13304,281,1,4,50003,4580,0
+"Dreadful Gladiator's Dreadplate Armor",189,32,45585,16,9,13304,285,1,4,50003,4580,0
+"Dreadful Gladiator's Felweave Armor",190,256,45593,16,9,13304,283,1,4,50003,4580,0
+"Dreadful Gladiator's Ironskin Armor",191,512,45594,16,9,13304,1059,1,4,50003,4580,0
+"Dreadful Gladiator's Leather Armor",192,8,45595,16,9,13304,280,1,4,50003,4580,0
+"Dreadful Gladiator's Plate",193,1,45596,16,9,13304,278,1,4,50003,4580,0
+"Dreadful Gladiator's Ringmail Armor",194,64,45597,16,9,13304,284,1,4,50003,4580,0
+"Dreadful Gladiator's Satin Armor",195,16,45598,16,9,13304,282,1,4,50003,4580,0
+"Dreadful Gladiator's Scaled Armor",196,2,45599,16,9,13304,277,1,4,50003,4580,0
+"Dreadful Gladiator's Silk Armor",197,128,45600,16,9,13304,276,1,4,50003,4580,0
+"Grievous Gladiator's Chain Armor",198,4,45601,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Chain Armor",199,4,45602,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Dragonhide Armor",200,1024,45603,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Dreadplate Armor",201,32,45604,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Felweave Armor",202,256,45605,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Ironskin Armor",203,512,45607,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Leather Armor",204,8,45608,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Plate Armor",205,1,45609,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Ringmail Armor",206,64,45610,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Satin Armor",207,16,45611,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Scaled Armor",208,2,45612,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Silk Armor",209,128,45613,24,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Dragonhide Armor",210,1024,45617,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Dreadplate Armor",211,32,45616,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Felweave Armor",212,256,45618,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Ironskin Armor",213,512,45619,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Leather Armor",214,8,45620,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Plate Armor",215,1,45621,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Ringmail Armor",216,64,45622,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Satin Armor",217,16,45623,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Scaled Armor",218,2,45624,20,15,13301,0,1,4,50200,5220,0
+"Grievous Gladiator's Silk Armor",219,128,45625,20,15,13301,0,1,4,50200,5220,0
+"Serban Quick Set",228,144,42778,1,0,7434,0,1,4,0,200,0
+"Parent Chain Set",230,4,43136,3,7,8027,0,1,2,0,7100,0
+"Child Chain Set",231,4,43197,1,6,7906,230,1,2,0,6600,0
+"Prideful Gladiator's Chain Armor",232,4,45884,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Dragonhide Armor",233,1024,45885,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Dreadplate Armor",234,32,45886,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Felweave Armor",235,256,45887,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Ironskin Armor",236,512,45888,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Leather Armor",237,8,45889,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Plate Armor",238,1,45891,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Ringmail Armor",239,64,45892,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Satin Armor",240,16,45893,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Scaled Armor",241,2,45894,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Silk Armor",242,128,45895,20,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Chain Armor",243,4,45896,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Dragonhide Armor",244,1024,45897,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Dreadplate Armor",245,32,45898,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Felweave Armor",246,256,45899,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Ironskin Armor",247,512,45900,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Leather Armor",248,8,46315,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Plate Armor",249,1,45901,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Ringmail Armor",250,64,45903,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Satin Armor",251,16,45907,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Scaled Armor",252,2,45911,24,14,13301,0,1,4,50400,5500,0
+"Prideful Gladiator's Silk Armor",253,128,45912,24,14,13301,0,1,4,50400,5500,0
+"Tyrannical Gladiator's Chain Armor",254,4,45935,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Dragonhide Armor",255,1024,45936,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Dreadplate Armor",256,32,45937,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Felweave Armor",257,256,45938,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Satin Armor",258,16,45939,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Ironskin Armor",259,512,45940,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Leather Armor",260,8,45942,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Plate Armor",261,1,45943,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Ringmail Shaman",262,64,45944,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Scaled Armor",263,2,45945,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Silk Armor",264,128,45946,24,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Chain Armor",265,4,45947,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Dragonhide Armor",266,1024,45948,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Dreadplate Armor",267,32,45949,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Felweave Armor",268,256,45950,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Ironskin Armor",269,512,45951,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Leather Armor",270,8,45952,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Plate Armor",271,1,45953,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Ringmail Armor",272,64,45954,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Satin Armor",273,16,45955,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Scaled Armor",274,2,45956,20,16,13301,0,1,4,50100,4960,0
+"Tyrannical Gladiator's Silk Armor",275,128,45957,20,16,13301,0,1,4,50100,4960,0
+"Malevolent Gladiator's Silk Armor",276,128,45958,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Scaled Armor",277,2,45959,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Plate Armor",278,1,45960,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Ironskin Armor",279,512,0,18,9,3859,1059,1,4,50003,4762,0
+"Malevolent Gladiator's Leather Armor",280,8,45962,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Dragonhide Armor",281,1024,45963,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Satin Armor",282,16,45964,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Felweave Armor",283,256,45965,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Ringmail Armor",284,64,45966,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Dreadplate Armor",285,32,45967,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Chain Armor",286,4,45968,16,9,13301,0,1,4,50003,4760,0
+,287,0,46003,17,0,0,0,1,4,60001,4700,0
+,288,0,46004,25,0,0,0,1,4,50200,4980,0
+,289,0,46005,21,0,0,0,1,4,50200,4980,0
+,290,0,46007,21,0,0,0,1,4,50400,5500,0
+,291,0,46009,25,0,0,0,1,4,50400,4980,0
+,292,0,46018,25,0,0,0,1,4,50300,5220,0
+,293,0,46019,21,0,0,0,1,4,50300,5220,0
+"Sanctified Ymirjar Lord's Battlegear",298,1,0,0,35,13292,655,1,2,30300,2770,0
+"Vestments of the Purifier",308,16,0,0,8,13193,0,1,6,70001,8751,0
+"Vestments of the Purifier",309,16,0,0,8,2015,308,1,6,70001,8752,0
+"Regalia of the Exorcist",310,16,0,0,10,13193,0,1,4,50200,5220,0
+"Vestments of the Purifier",311,16,0,0,8,13145,308,1,6,70001,8753,0
+"Legacy of Azj'Aqir",315,256,0,0,8,13193,0,1,6,70001,8751,0
+"Legacy of Azj'Aqir",316,256,0,0,8,2015,315,1,6,70001,8752,0
+"Legacy of Azj'Aqir",321,256,0,0,8,13145,315,1,6,70001,8753,0
+"Vestments of the Purifier",322,16,0,0,8,1641,308,1,6,70001,8750,0
+"Attire of Piety",323,16,0,0,28,13193,0,1,5,60200,6950,0
+"Attire of Piety",324,16,0,0,28,2015,323,1,5,60200,7050,0
+"Attire of Piety",325,16,0,0,28,13145,323,1,5,60200,7200,0
+"Soul Priest's Raiment",327,16,0,0,29,13193,0,1,5,60001,6700,0
+"Windspeaker's Regalia",328,64,0,0,29,2015,418,1,5,60001,6850,0
+"Soul Priest's Raiment",329,16,0,0,29,13145,327,1,5,60001,7000,0
+"Regalia of the High Priest",330,16,0,0,49,0,0,1,6,70001,8400,0
+"Regalia of Ternion Glory",331,16,0,0,30,13193,0,1,4,50400,5400,0
+"Regalia of Ternion Glory",332,16,0,0,30,13145,331,1,4,50400,5660,0
+"Regalia of Ternion Glory",333,16,0,0,30,1641,331,1,4,50400,5280,0
+"Regalia of the Exorcist",334,16,0,0,10,2015,310,1,4,50200,5350,0
+"Regalia of the Exorcist",335,16,0,0,10,1641,310,1,4,50200,5020,0
+"Guardian Serpent Regalia",336,16,0,0,31,13193,0,1,4,50003,4960,0
+"Guardian Serpent Regalia",337,16,0,0,31,1641,336,1,4,50003,4830,0
+"Regalia of the Firebird",338,64,0,0,31,2015,427,1,4,50003,5090,0
+"Regalia of Dying Light",339,16,0,0,32,13193,0,1,3,40300,3970,0
+"Regalia of Dying Light",340,16,0,0,32,1641,339,1,3,40300,3840,0
+"Regalia of Dying Light",341,16,0,0,32,2015,339,1,3,40300,4100,0
+"Regalia of the Cleansing Flame",342,16,0,0,33,13193,0,1,3,40200,3780,0
+"Regalia of the Cleansing Flame",343,16,0,0,33,2015,342,1,3,40200,3910,0
+"Mercurial Regalia",344,16,0,0,34,13193,0,1,3,40000,3590,0
+"Mercurial Regalia",345,16,0,0,34,2015,344,1,3,40200,3720,0
+"Crimson Acolyte Regalia",346,16,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Crimson Acolyte Regalia",347,16,0,0,35,13291,346,1,2,30300,2640,0
+"Sanctified Crimson Acolyte Regalia",348,16,0,0,35,13292,346,1,2,30300,2770,0
+"Velen's Regalia",349,16,0,4,36,13293,0,1,2,30200,2320,0
+"Zabra's Regalia",350,16,0,8,36,13293,0,1,2,30200,2320,0
+"Absolution Regalia",351,16,0,0,39,13193,0,1,1,20100,1460,0
+"Vestments of Absolution",352,16,0,0,50,13305,0,1,1,20400,1540,0
+"Avatar Regalia",353,16,0,0,40,13193,0,1,1,20003,1330,0
+"Incarnate Regalia",354,16,0,0,41,13193,0,1,1,20000,1200,0
+"Vestments of Faith",355,16,0,2,42,13193,0,1,0,20000,920,0
+"Vestments of Transcendence",356,16,0,0,43,13193,0,1,0,10600,760,0
+"Vestments of Prophecy",357,16,0,0,44,13193,0,1,0,0,660,0
+"Garments of the Oracle",358,16,0,0,51,13193,0,1,0,10900,880,0
+"Vestments of the Devout",359,400,0,2,52,13193,0,1,0,0,600,0
+"Vestments of the Virtuous",360,16,0,2,53,13193,0,1,0,0,650,0
+"Heroes' Regalia of Faith",361,16,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Regalia of Faith",362,16,0,0,38,13291,361,1,2,30001,2130,0
+"Valorous Sanctification Regalia",363,16,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Sanctification Regalia",364,16,0,0,37,13291,363,1,2,30100,2260,0
+"Cataclysmic Gladiator's Satin Armor",365,16,46529,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Satin Armor",366,16,0,18,17,3859,365,1,3,40300,3902,0
+"Vicious Gladiator's Satin Armor",369,16,46540,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Satin Armor",370,16,0,18,19,3859,369,1,3,40000,3522,0
+"Bloodthirsty Gladiator's Satin Armor",371,16,46519,16,19,13304,369,1,3,40000,3390,0
+"Wrathful Gladiator's Satin Armor",372,16,46584,16,20,13301,0,1,2,30300,2700,0
+"Relentless Gladiator's Satin Armor",373,16,46617,16,21,13301,0,1,2,30200,2510,0
+"Furious Gladiator's Satin Armor",374,16,46606,16,22,13301,0,1,2,30100,2321,0
+"Deadly Gladiator's Satin Armor",375,16,46573,16,23,13301,0,1,2,30001,2131,0
+"Hateful Gladiator's Satin Armor",376,16,46595,16,23,13304,375,1,2,30001,2001,0
+"Savage Gladiator's Satin Armor",377,16,46562,16,23,13306,375,1,2,30001,2001,0
+"Brutal Gladiator's Satin Armor",378,16,46637,16,24,13301,0,1,1,20400,1591,0
+"Vengeful Gladiator's Satin Armor",379,16,46647,16,25,13301,0,1,1,20100,1461,0
+"Merciless Gladiator's Satin Armor",380,16,46657,16,26,13301,0,1,1,20003,1361,0
+"Gladiator's Plate Armor",381,1,46625,16,27,13301,0,1,1,20000,1231,0
+"Satin Battlegear",382,16,0,17,27,13306,973,1,1,20000,1150,0
+"Field Marshal's Raiment",383,16,0,23,0,13307,0,1,0,0,740,0
+"Warlord's Raiment",384,16,0,27,0,13307,0,1,0,0,740,0
+"Vindictive Gladiator's Satin Armor",388,16,46394,20,45,13301,0,1,6,70001,8401,0
+"Cruel Gladiator's Satin Armor",389,16,46464,20,46,13301,0,1,6,70200,8601,0
+"Vindictive Gladiator's Satin Armor",390,16,46393,24,45,13301,0,1,6,70001,8401,0
+"Cruel Gladiator's Satin Armor",391,16,46463,24,46,13301,0,1,6,70200,8601,0
+"Vindictive Gladiator's Satin Armor",392,16,46418,22,45,3859,388,1,6,70001,8712,0
+"Vindictive Gladiator's Satin Armor",393,16,46417,26,45,3859,390,1,6,70001,8712,0
+"Cruel Gladiator's Satin Armor",394,16,46487,26,46,3859,391,1,6,70200,8712,0
+"Cruel Gladiator's Satin Armor",395,16,46488,22,46,3859,389,1,6,70200,8712,0
+"Malevolent Gladiator's Satin Armor",396,16,0,18,9,3859,282,1,4,50003,4762,0
+"Tyrannical Gladiator's Satin Armor",397,16,0,22,16,3859,273,1,4,50100,4962,0
+"Tyrannical Gladiator's Satin Armor",398,16,0,26,16,3859,258,1,4,50100,4962,0
+"Prideful Gladiator's Satin Armor",399,16,0,22,14,3859,240,1,4,50400,5502,0
+"Prideful Gladiator's Satin Armor",400,16,0,26,14,3859,251,1,4,50400,5502,0
+"Grievous Gladiator's Satin Armor",401,16,0,22,15,3859,217,1,4,50200,5222,0
+"Grievous Gladiator's Satin Armor",402,16,0,26,15,3859,207,1,4,50200,5222,0
+"Primal Gladiator's Satin Armor",403,16,0,22,11,3859,140,1,5,60001,6602,0
+"Primal Gladiator's Satin Armor",404,16,0,26,11,3859,139,1,5,60001,6602,0
+"Wild Gladiator's Satin Armor",405,16,0,22,12,3859,98,1,5,60100,7002,0
+"Wild Gladiator's Satin Armor",406,16,0,26,12,3859,97,1,5,60100,7002,0
+"Warmongering Gladiator's Satin Armor",407,16,0,22,13,3859,118,1,5,60200,7102,0
+"Warmongering Gladiator's Satin Armor",408,16,0,26,13,3859,117,1,5,60200,7102,0
+"Vindictive Combatant's Chain Armor",409,4,46352,20,45,13302,1113,1,6,70001,8100,0
+"Vindictive Combatant's Chain Armor",410,4,46354,24,45,13302,1114,1,6,70001,8100,0
+"Sulfuron Hammer",413,0,46721,1,0,0,0,1,0,0,670,0
+"Embrace of the Living Mountain",415,64,0,0,28,13193,0,1,5,60200,6950,0
+"Embrace of the Living Mountain",416,64,0,0,28,2015,415,1,5,60200,7050,0
+"Embrace of the Living Mountain",417,64,0,0,28,13145,415,1,5,60200,7200,0
+"Windspeaker's Regalia",418,64,0,0,29,13193,0,1,5,60001,6700,0
+"Soul Priest's Raiment",419,16,0,0,29,2015,327,1,5,60001,6850,0
+"Windspeaker's Regalia",420,64,0,0,29,13145,418,1,5,60001,7000,0
+"Regalia of Celestial Harmony",421,64,0,0,30,13193,0,1,4,50400,5400,0
+"Regalia of Celestial Harmony",422,64,0,0,30,13145,421,1,4,50400,5660,0
+"Regalia of Celestial Harmony",423,64,0,0,30,1641,421,1,4,50400,5280,0
+"Regalia of the Witch Doctor",424,64,0,0,10,13193,0,1,4,50200,5220,0
+"Regalia of the Witch Doctor",425,64,0,0,10,2015,424,1,4,50200,5350,0
+"Regalia of the Witch Doctor",426,64,0,0,10,1641,424,1,4,50200,5020,0
+"Regalia of the Firebird",427,64,0,0,31,13193,0,1,4,50003,4960,0
+"Regalia of the Firebird",428,64,0,0,31,1641,427,1,4,50003,4830,0
+"Guardian Serpent Regalia",429,16,0,0,31,2015,336,1,4,50003,5090,0
+"Raiment of the Farseer",430,64,0,0,49,0,0,1,6,70001,8400,0
+"Battlegear of Iron Wrath",432,1,0,0,28,13193,0,1,5,60200,6950,0
+"Battlegear of Iron Wrath",433,1,0,0,28,2015,432,1,5,60200,7050,0
+"Battlegear of Iron Wrath",434,1,0,0,28,13145,432,1,5,60200,7200,0
+"Blackhand's Battlegear",435,1,0,0,29,13193,0,1,5,60001,6700,0
+"Blackhand's Battlegear",436,1,0,0,29,2015,435,1,5,60001,6850,0
+"Blackhand's Battlegear",437,1,0,0,29,13145,435,1,5,60001,7000,0
+"Battleplate of the Prehistoric Marauder",438,1,0,0,30,13193,0,1,4,50400,5400,0
+"Battleplate of the Prehistoric Marauder",439,1,0,0,30,13145,438,1,4,50400,5660,0
+"Battleplate of the Prehistoric Marauder",440,1,0,0,30,1641,438,1,4,50400,5280,0
+"Battleplate of the Last Mogu",441,1,0,0,10,13193,0,1,4,50200,5220,0
+"Battleplate of the Last Mogu",442,1,0,0,10,1641,441,1,4,50200,5020,0
+"Battleplate of the Last Mogu",443,1,0,0,10,2015,441,1,4,50200,5350,0
+"Battleplate of Resounding Rings",444,1,0,0,31,13193,0,1,4,50003,4960,0
+"Battleplate of Resounding Rings",445,1,0,0,31,2015,444,1,4,50003,5090,0
+"Battleplate of Resounding Rings",446,1,0,0,31,1641,444,1,4,50003,4830,0
+"Battlelord's Plate",447,1,0,0,49,0,0,1,6,70001,8400,0
+"Vestments of the Black Harvest",448,256,0,0,49,0,0,1,6,70001,8400,0
+"Deathrattle Regalia",449,256,0,0,28,13193,0,1,5,60200,6950,0
+"Deathrattle Regalia",450,256,0,0,28,13145,449,1,5,60200,7200,0
+"Deathrattle Regalia",451,256,0,0,28,2015,449,1,5,60200,7050,0
+"Shadow Council's Garb",452,256,0,0,29,13193,0,1,5,60001,6700,0
+"Shadow Council's Garb",453,256,0,0,29,13145,452,1,5,60001,7000,0
+"Shadow Council's Garb",454,256,0,0,29,2015,452,1,5,60001,6850,0
+"Regalia of the Horned Nightmare",455,256,0,0,30,13193,0,1,4,50400,5400,0
+"Regalia of the Horned Nightmare",456,256,0,0,30,13145,455,1,4,50400,5660,0
+"Regalia of the Horned Nightmare",457,256,0,0,30,1641,455,1,4,50400,5280,0
+"Regalia of the Thousandfold Hells",458,256,0,0,10,13193,0,1,4,50200,5220,0
+"Regalia of the Thousandfold Hells",459,256,0,0,10,1641,458,1,4,50200,5020,0
+"Regalia of the Thousandfold Hells",460,256,0,0,10,2015,458,1,4,50200,5350,0
+"Sha Skin Regalia",461,256,0,0,31,13193,0,1,4,50003,4960,0
+"Sha Skin Regalia",462,256,0,0,31,1641,461,1,4,50003,4830,0
+"Sha Skin Regalia",463,256,0,0,31,2015,461,1,4,50003,5090,0
+"Battlegear of the Uncrowned",464,8,0,0,49,0,0,1,6,70001,8400,0
+"Felblade Armor",465,8,0,0,28,13193,0,1,5,60200,6950,0
+"Felblade Armor",466,8,0,0,28,2015,465,1,5,60200,7050,0
+"Felblade Armor",467,8,0,0,28,13145,465,1,5,60200,7200,0
+"Poisoner's Battlegear",468,8,0,0,29,13193,0,1,5,60001,6700,0
+"Poisoner's Battlegear",469,8,0,0,29,2015,468,1,5,60001,6850,0
+"Poisoner's Battlegear",470,8,0,0,29,13145,468,1,5,60001,7000,0
+"Barbed Assassin Battlegear",471,8,0,0,30,13193,0,1,4,50400,5400,0
+"Barbed Assassin Battlegear",472,8,0,0,30,13145,471,1,4,50400,5660,0
+"Barbed Assassin Battlegear",473,8,0,0,30,1641,471,1,4,50400,5280,0
+"Nine-Tail Battlegear",474,8,0,0,10,13193,0,1,4,50200,5220,0
+"Nine-Tail Battlegear",475,8,0,0,10,2015,474,1,4,50200,5350,0
+"Nine-Tail Battlegear",476,8,0,0,10,1641,474,1,4,50200,5020,0
+"Battlegear of the Thousandfold Blades",477,8,0,0,31,2015,478,1,4,50003,5090,0
+"Battlegear of the Thousandfold Blades",478,8,0,0,31,13193,0,1,4,50003,4960,0
+"Battlegear of the Thousandfold Blades",479,8,0,0,31,1641,478,1,4,50003,4830,0
+"Watch of the Ceaseless Vigil",480,2,0,0,28,13193,0,1,5,60200,6950,0
+"Watch of the Ceaseless Vigil",481,2,0,0,28,2015,480,1,5,60200,7050,0
+"Watch of the Ceaseless Vigil",482,2,0,0,28,13145,480,1,5,60200,7200,0
+"Battlegear of Guiding Light",483,2,0,0,29,13193,0,1,5,60001,6700,0
+"Battlegear of Guiding Light",484,2,0,0,29,2015,483,1,5,60001,6850,0
+"Battlegear of Guiding Light",485,2,0,0,29,13145,483,1,5,60001,7000,0
+"Vestments of Winged Triumph",487,2,0,0,30,13193,0,1,4,50400,5400,0
+"Vestments of Winged Triumph",488,2,0,0,30,13145,487,1,4,50400,5660,0
+"Vestments of Winged Triumph",489,2,0,0,30,1641,487,1,4,50400,5280,0
+"Battlegear of the Lightning Emperor",490,2,0,0,10,13193,0,1,4,50200,5220,0
+"Battlegear of the Lightning Emperor",491,2,0,0,10,2015,490,1,4,50200,5350,0
+"Battlegear of the Lightning Emperor",492,2,0,0,10,1641,490,1,4,50200,5020,0
+"White Tiger Battlegear",493,2,0,0,31,13193,0,1,4,50003,4960,0
+"White Tiger Battlegear",494,2,0,0,31,2015,493,1,4,50003,5090,0
+"White Tiger Battlegear",495,2,0,0,31,1641,493,1,4,50003,4830,0
+"Battleplate of the Silver Hand",496,2,0,0,49,0,0,1,6,70001,8400,0
+"Grandmaster's Finery",497,512,0,0,49,0,0,1,6,70001,8400,0
+"Battlegear of the Somber Gaze",498,512,0,0,29,13193,0,1,5,60001,6700,0
+"Battlegear of the Somber Gaze",500,512,0,0,29,2015,498,1,5,60001,6850,0
+"Battlegear of the Somber Gaze",501,512,0,0,29,13145,498,1,5,60001,7000,0
+"Battlewrap of the Hurricane's Eye",502,512,0,0,28,13193,0,1,5,60200,6950,0
+"Battlewrap of the Hurricane's Eye",503,512,0,0,28,2015,502,1,5,60200,7050,0
+"Battlewrap of the Hurricane's Eye",505,512,0,0,28,13145,502,1,5,60200,7200,0
+"Vestments of the Seven Sacred Seals",506,512,0,0,30,13193,0,1,4,50400,5400,0
+"Vestments of the Seven Sacred Seals",507,512,0,0,30,13145,506,1,4,50400,5660,0
+"Vestments of the Seven Sacred Seals",508,512,0,0,30,1641,506,1,4,50400,5280,0
+"Fire-Charm Vestments",510,512,0,0,10,13193,0,1,4,50200,5220,0
+"Fire-Charm Vestments",511,512,0,0,10,2015,510,1,4,50200,5350,0
+"Fire-Charm Vestments",512,512,0,0,10,1641,510,1,4,50200,5020,0
+"Vestments of the Red Crane",513,512,0,0,31,13193,0,1,4,50003,4960,0
+"Vestments of the Red Crane",514,512,0,0,31,2015,513,1,4,50003,5090,0
+"Vestments of the Red Crane",515,512,0,0,31,1641,513,1,4,50003,4830,0
+"Vesture of Tirisgarde",516,128,0,0,49,0,0,1,6,70001,8400,0
+"Raiment of the Arcanic Conclave",517,128,0,0,28,13193,0,1,5,60200,6950,0
+"Raiment of the Arcanic Conclave",518,128,0,0,28,13145,517,1,5,60200,7200,0
+"Raiment of the Arcanic Conclave",519,128,0,0,28,2015,517,1,5,60200,7050,0
+"Arcanoshatter Regalia",520,128,0,0,29,13193,0,1,5,60001,6700,0
+"Arcanoshatter Regalia",521,128,0,0,29,2015,520,1,5,60001,6850,0
+"Arcanoshatter Regalia",522,128,0,0,29,13145,520,1,5,60001,7000,0
+"Chronomancer Regalia",523,128,0,0,30,13193,0,1,4,50400,5400,0
+"Chronomancer Regalia",524,128,0,0,30,13145,523,1,4,50400,5660,0
+"Chronomancer Regalia",525,128,0,0,30,1641,523,1,4,50400,5280,0
+"Regalia of the Chromatic Hydra",526,128,0,0,10,13193,0,1,4,50200,5220,0
+"Regalia of the Chromatic Hydra",527,128,0,0,10,2015,526,1,4,50200,5350,0
+"Regalia of the Chromatic Hydra",528,128,0,0,10,1641,526,1,4,50200,5020,0
+"Regalia of the Burning Scroll",529,128,0,0,31,13193,0,1,4,50003,4960,0
+"Regalia of the Burning Scroll",530,128,0,0,31,2015,529,1,4,50003,5090,0
+"Regalia of the Burning Scroll",531,128,0,0,31,1641,529,1,4,50003,4830,0
+"Guise of the Unseen Path",532,4,0,0,49,0,0,1,6,70001,8400,0
+"Battlegear of the Savage Hunt",533,4,0,0,28,13193,0,1,5,60200,6950,0
+"Battlegear of the Savage Hunt",534,4,0,0,28,2015,533,1,5,60200,7050,0
+"Battlegear of the Savage Hunt",535,4,0,0,28,13145,533,1,5,60200,7200,0
+"Rylakstalker's Battlegear",536,4,0,0,29,13193,0,1,5,60001,6700,0
+"Rylakstalker's Battlegear",537,4,0,0,29,2015,536,1,5,60001,6850,0
+"Rylakstalker's Battlegear",538,4,0,0,29,13145,536,1,5,60001,7000,0
+"Battlegear of the Unblinking Vigil",539,4,0,0,30,13193,0,1,4,50400,5400,0
+"Battlegear of the Unblinking Vigil",540,4,0,0,30,13145,539,1,4,50400,5660,0
+"Battlegear of the Unblinking Vigil",541,4,0,0,30,1641,539,1,4,50400,5280,0
+"Battlegear of the Saurok Stalker",542,4,0,0,10,13193,0,1,4,50200,5220,0
+"Battlegear of the Saurok Stalker",543,4,0,0,10,1641,542,1,4,50200,5020,0
+"Battlegear of the Saurok Stalker",544,4,0,0,10,2015,542,1,4,50200,5350,0
+"Yaungol Slayer Battlegear",545,4,0,0,31,13193,0,1,4,50003,4960,0
+"Yaungol Slayer Battlegear",546,4,0,0,31,1641,545,1,4,50003,4830,0
+"Yaungol Slayer Battlegear",547,4,0,0,31,2015,545,1,4,50003,5090,0
+"Battlegear of the Shattered Abyss",548,2048,0,0,49,0,0,1,6,70001,8400,0
+"Dreamgrove Raiment",549,1024,0,0,49,0,0,1,6,70001,8400,0
+"Deathlord's Battleplate",550,32,0,0,49,0,0,1,6,70001,8400,0
+"Oathclaw Wargarb",551,1024,0,0,28,13193,0,1,5,60200,6950,0
+"Oathclaw Wargarb",552,1024,0,0,28,2015,551,1,5,60200,7050,0
+"Oathclaw Wargarb",553,1024,0,0,28,13145,551,1,5,60200,7200,0
+"Living Wood Battlegear",554,1024,0,0,29,13193,0,1,5,60001,6700,0
+"Living Wood Battlegear",555,1024,0,0,29,2015,554,1,5,60001,6850,0
+"Living Wood Battlegear",556,1024,0,0,29,13145,554,1,5,60001,7000,0
+"Vestments of the Shattered Vale",557,1024,0,0,30,13193,0,1,4,50400,5400,0
+"Vestments of the Shattered Vale",558,1024,0,0,30,13145,557,1,4,50400,5660,0
+"Vestments of the Shattered Vale",559,1024,0,0,30,1641,557,1,4,50400,5280,0
+"Vestments of the Haunted Forest",560,1024,0,0,10,13193,0,1,4,50200,5220,0
+"Vestments of the Haunted Forest",561,1024,0,0,10,2015,560,1,4,50200,5350,0
+"Vestments of the Haunted Forest",562,1024,0,0,10,1641,560,1,4,50200,5020,0
+"Vestments of the Eternal Blossom",563,1024,0,0,31,13193,0,1,4,50003,4960,0
+"Vestments of the Eternal Blossom",564,1024,0,0,31,2015,563,1,4,50003,5090,0
+"Vestments of the Eternal Blossom",565,1024,0,0,31,1641,563,1,4,50003,4830,0
+"Demongaze Armor",566,32,0,0,28,13193,0,1,5,60200,6950,0
+"Demongaze Armor",567,32,0,0,28,2015,566,1,5,60200,7050,0
+"Demongaze Armor",568,32,0,0,28,13145,566,1,5,60200,7200,0
+"Ogreskull Boneplate Battlegear",569,32,0,0,29,13193,0,1,5,60001,6700,0
+"Ogreskull Boneplate Battlegear",570,32,0,0,29,2015,569,1,5,60001,6850,0
+"Ogreskull Boneplate Battlegear",571,32,0,0,29,13145,569,1,5,60001,7000,0
+"Battleplate of Cyclopean Dread",572,32,0,0,30,13193,0,1,4,50400,5400,0
+"Battleplate of Cyclopean Dread",573,32,0,0,30,13145,572,1,4,50400,5660,0
+"Battleplate of Cyclopean Dread",574,32,0,0,30,1641,572,1,4,50400,5280,0
+"Battleplate of the All-Consuming Maw",575,32,0,0,10,13193,0,1,4,50200,5220,0
+"Battleplate of the All-Consuming Maw",576,32,0,0,10,1641,575,1,4,50200,5020,0
+"Battleplate of the All-Consuming Maw",577,32,0,0,10,2015,575,1,4,50200,5350,0
+"Plate of the Lost Catacomb",578,32,0,0,31,13193,0,1,4,50003,4960,0
+"Plate of the Lost Catacomb",579,32,0,0,31,1641,578,1,4,50003,4830,0
+"Plate of the Lost Catacomb",580,32,0,0,31,2015,578,1,4,50003,5090,0
+"Felfume Raiment",581,400,0,0,54,1641,0,1,5,60200,6850,0
+"Ironpelt Garb",582,3592,0,0,54,1641,0,1,5,60200,6850,0
+"Rancorbite Armor",583,68,0,0,54,1641,0,1,5,60200,6850,0
+"Demonbreaker Battleplate",584,35,0,0,54,1641,0,1,5,60200,6850,0
+"Shadowstrike and Thunderstrike",586,4,46823,1,0,0,0,1,0,0,750,0
+"Shadowstrike and Thunderstrike",587,0,46824,1,0,0,0,1,0,0,2320,0
+"Cataclysmic Gladiator's Plate Armor",588,1,46527,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Plate Armor",589,1,0,18,17,3859,588,1,3,40300,3902,0
+"Cataclysmic Gladiator's Felweave Armor",590,256,46525,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Felweave Armor",591,256,0,18,17,3859,590,1,3,40300,3902,0
+"Cataclysmic Gladiator's Ringmail Armor",592,64,46528,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Ringmail Armor",593,64,0,18,17,3859,592,1,3,40300,3902,0
+"Cataclysmic Gladiator's Leather Armor",594,8,46526,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Leather Armor",595,8,0,18,17,3859,594,1,3,40300,3902,0
+"Cataclysmic Gladiator's Scaled Armor",596,2,46530,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Scaled Armor",597,2,0,18,17,3859,596,1,3,40300,3902,0
+"Cataclysmic Gladiator's Silk Armor",598,128,46531,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Silk Armor",599,128,0,18,17,3859,598,1,3,40300,3902,0
+"Cataclysmic Gladiator's Chain Armor",600,4,46355,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Chain Armor",601,4,0,18,17,3859,600,1,3,40300,3902,0
+"Cataclysmic Gladiator's Dragonhide Armor",602,1024,46523,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Dragonhide Armor",603,1024,0,18,17,3859,602,1,3,40300,3902,0
+"Cataclysmic Gladiator's Dreadplate Armor",604,32,46524,16,17,13301,0,1,3,40300,3900,0
+"Cataclysmic Gladiator's Dreadplate Armor",605,32,0,18,17,3859,604,1,3,40300,3902,0
+"Ruthless Gladiator's Plate Armor",606,1,46549,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Plate Armor",607,1,0,18,18,3859,606,1,3,40200,3712,0
+"Ruthless Gladiator's Felweave Armor",608,256,46547,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Felweave Armor",609,256,0,18,18,3859,608,1,3,40200,3712,0
+"Ruthless Gladiator's Ringmail Armor",610,64,46550,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Ringmail Armor",611,64,0,18,18,3859,610,1,3,40200,3712,0
+"Ruthless Gladiator's Satin Armor",612,16,46551,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Leather Armor",613,8,0,18,18,3859,615,1,3,40200,3712,0
+"Ruthless Gladiator's Satin Armor",614,16,0,18,18,3859,612,1,3,40200,3712,0
+"Ruthless Gladiator's Leather Armor",615,8,46548,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Scaled Armor",616,2,46552,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Scaled Armor",617,2,0,18,18,3859,616,1,3,40200,3712,0
+"Ruthless Gladiator's Silk Armor",618,128,46553,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Silk Armor",619,128,0,18,18,3859,618,1,3,40200,3712,0
+"Ruthless Gladiator's Chain Armor",620,4,46544,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Chain Armor",621,4,0,18,18,3859,620,1,3,40200,3712,0
+"Ruthless Gladiator's Dragonhide Armor",622,1024,46545,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Dragonhide Armor",623,1024,0,18,18,3859,622,1,3,40200,3712,0
+"Ruthless Gladiator's Dreadplate Armor",624,32,46546,16,18,13301,0,1,3,40200,3710,0
+"Ruthless Gladiator's Dreadplate Armor",625,32,0,18,18,3859,624,1,3,40200,3712,0
+"Vicious Gladiator's Plate Armor",626,1,46538,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Plate Armor",627,1,0,18,19,3859,626,1,3,40000,3522,0
+"Vicious Gladiator's Felweave Armor",628,256,46536,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Felweave Armor",629,256,0,18,19,3859,628,1,3,40000,3522,0
+"Spiritwalker's Regalia",630,64,0,0,32,13193,0,1,3,40300,3970,0
+"Colossal Dragonplate Battlegear",631,1,0,0,32,2015,649,1,3,40300,4100,0
+"Spiritwalker's Regalia",632,64,0,0,32,1641,630,1,3,40300,3840,0
+"Volcanic Regalia",633,64,0,0,33,13193,0,1,3,40200,3780,0
+"Volcanic Regalia",634,64,0,0,33,2015,633,1,3,40200,3910,0
+"Regalia of the Raging Elements",635,64,0,0,34,13193,0,1,3,40000,3590,0
+"Regalia of the Raging Elements",636,64,0,0,34,2015,635,1,3,40200,3720,0
+"Frost Witch's Regalia",637,64,0,0,35,13293,0,1,2,30300,2510,0
+"Frost Witch's Regalia",638,64,0,0,35,13291,637,1,2,30300,2640,0
+"Frost Witch's Regalia",639,64,0,0,35,13292,637,1,2,30300,2770,0
+"Nobundo's Garb",640,64,0,4,36,13293,0,1,2,30200,2320,0
+"Thrall's Garb",641,64,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Worldbreaker Regalia",642,64,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Worldbreaker Regalia",643,64,0,0,37,13291,642,1,2,30100,2260,0
+"Heroes' Earthshatter Regalia",644,64,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Earthshatter Regalia",645,64,0,0,38,13291,644,1,2,30001,2130,0
+"Colossal Dragonplate Battlegear",649,1,0,0,32,13193,0,1,3,40300,3970,0
+"Colossal Dragonplate Battlegear",650,1,0,0,32,1641,649,1,3,40300,3840,0
+"Molten Giant Battleplate",651,1,0,0,33,13193,0,1,3,40200,3780,0
+"Molten Giant Battleplate",652,1,0,0,33,2015,651,1,3,40200,3910,0
+"Earthen Battleplate",653,1,0,0,34,13193,0,1,3,40000,3590,0
+"Earthen Battleplate",654,1,0,0,34,2015,653,1,3,40200,3720,0
+"Ymirjar Lord's Battlegear",655,1,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Ymirjar Lord's Battlegear",656,1,0,0,35,13291,655,1,2,30300,2640,0
+"Hellscream's Battlegear",657,1,0,8,36,13293,0,1,2,30200,2320,0
+"Wrynn's Battlegear",658,1,0,4,36,13293,0,1,2,30200,2320,0
+"Valorous Siegebreaker Battlegear",659,1,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Siegebreaker Battlegear",660,1,0,0,37,13291,659,1,2,30100,2260,0
+"Heroes' Dreadnaught Battlegear",661,1,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Dreadnaught Battlegear",662,1,0,0,38,13291,661,1,2,30001,2130,0
+"Spiritwalker's Regalia",663,64,0,0,32,2015,630,1,3,40300,4100,0
+"Vestments of the Faceless Shroud",664,256,0,0,32,13193,0,1,3,40300,3970,0
+"Vestments of the Faceless Shroud",665,256,0,0,32,1641,664,1,3,40300,3840,0
+"Vestments of the Faceless Shroud",666,256,0,0,32,2015,664,1,3,40300,4100,0
+"Balespider's Burning Vestments",667,256,0,0,33,13193,0,1,3,40200,3780,0
+"Balespider's Burning Vestments",668,256,0,0,33,2015,667,1,3,40200,3910,0
+"Shadowflame Regalia",669,256,0,0,34,13193,0,1,3,40000,3590,0
+"Shadowflame Regalia",670,256,0,0,34,2015,669,1,3,40200,3720,0
+"Dark Coven's Regalia",671,256,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Dark Coven's Regalia",672,256,0,0,35,13291,671,1,2,30300,2640,0
+"Sanctified Dark Coven's Regalia",673,256,0,0,35,13292,671,1,2,30300,2770,0
+"Kel'Thuzad's Regalia",674,256,0,4,36,13293,0,1,2,30200,2320,0
+"Gul'dan's Regalia",675,256,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Deathbringer Garb",676,256,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Deathbringer Garb",677,256,0,0,37,13291,676,1,2,30100,2260,0
+"Heroes' Plagueheart Garb",678,256,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Plagueheart Garb",679,256,0,0,38,13291,678,1,2,30001,2130,0
+"Blackfang Battleweave",680,8,0,0,32,13193,0,1,3,40300,3970,0
+"Blackfang Battleweave",681,8,0,0,32,1641,680,1,3,40300,3840,0
+"Blackfang Battleweave",682,8,0,0,32,2015,680,1,3,40300,4100,0
+"Vestments of the Dark Phoenix",683,8,0,0,33,13193,0,1,3,40200,3780,0
+"Vestments of the Dark Phoenix",684,8,0,0,33,2015,683,1,3,40200,3910,0
+"Wind Dancer's Regalia",685,8,0,0,34,13193,0,1,3,40000,3590,0
+"Wind Dancer's Regalia",686,8,0,0,34,2015,685,1,3,40200,3720,0
+"Shadowblade's Battlegear",687,8,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Shadowblade's Battlegear",688,8,0,0,35,13291,687,1,2,30300,2640,0
+"Sanctified Shadowblade's Battlegear",689,8,0,0,35,13292,687,1,2,30300,2770,0
+"VanCleef's Battlegear",690,8,0,4,36,13293,0,1,2,30200,2320,0
+"Garona's Battlegear",691,8,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Terrorblade Battlegear",692,8,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Terrorblade Battlegear",693,8,0,0,37,13291,692,1,2,30100,2260,0
+"Heroes' Bonescythe Battlegear",694,8,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Bonescythe Battlegear",695,8,0,0,38,13291,694,1,2,30001,2130,0
+"Battleplate of Radiant Glory",696,2,0,0,32,13193,0,1,3,40300,3970,0
+"Battleplate of Radiant Glory",697,2,0,0,32,1641,696,1,3,40300,3840,0
+"Battleplate of Radiant Glory",698,2,0,0,32,2015,696,1,3,40300,4100,0
+"Battleplate of Immolation",699,2,0,0,33,13193,0,1,3,40200,3780,0
+"Battleplate of Immolation",700,2,0,0,33,2015,699,1,3,40200,3910,0
+"Reinforced Sapphirium Battleplate",701,2,0,0,34,13193,0,1,3,40000,3590,0
+"Reinforced Sapphirium Battleplate",702,2,0,0,34,2015,701,1,3,40200,3720,0
+"Lightsworn Plate",703,2,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Lightsworn Plate",704,2,0,0,35,13291,703,1,2,30300,2640,0
+"Sanctified Lightsworn Plate",705,2,0,0,35,13292,703,1,2,30300,2770,0
+"Turalyon's Plate",706,2,0,4,36,13293,0,1,2,30200,2320,0
+"Liadrin's Plate",707,2,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Aegis Plate",708,2,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Aegis Plate",709,2,0,0,37,13291,708,1,2,30100,2260,0
+"Heroes' Redemption Plate",710,2,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Redemption Plate",711,2,0,0,38,13291,710,1,2,30001,2130,0
+"Time Lord's Regalia",712,128,0,0,32,13193,0,1,3,40300,3970,0
+"Time Lord's Regalia",713,128,0,0,32,1641,712,1,3,40300,3840,0
+"Time Lord's Regalia",714,128,0,0,32,2015,712,1,3,40300,4100,0
+"Firehawk Robes of Conflagration",715,128,0,0,33,13193,0,1,3,40200,3780,0
+"Firehawk Robes of Conflagration",716,128,0,0,33,2015,715,1,3,40200,3910,0
+"Firelord's Vestments",717,128,0,0,34,13193,0,1,3,40000,3590,0
+"Firelord's Vestments",718,128,0,0,34,2015,717,1,3,40200,3720,0
+"Bloodmage's Regalia",719,128,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Bloodmage's Regalia",720,128,0,0,35,13291,719,1,2,30300,2640,0
+"Sanctified Bloodmage's Regalia",721,128,0,0,35,13292,719,1,2,30300,2770,0
+"Khadgar's Regalia",722,128,0,4,36,13293,0,1,2,30200,2320,0
+"Sunstrider's Regalia",723,128,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Kirin Tor Garb",724,128,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Kirin Tor Garb",725,128,0,0,37,13291,724,1,2,30100,2260,0
+"Heroes' Frostfire Garb",726,128,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Frostfire Garb",727,128,0,0,38,13291,726,1,2,30001,2130,0
+"Wyrmstalker Battlegear",728,4,0,0,32,13193,0,1,3,40300,3970,0
+"Wyrmstalker Battlegear",729,4,0,0,32,1641,728,1,3,40300,3840,0
+"Wyrmstalker Battlegear",730,4,0,0,32,2015,728,1,3,40300,4100,0
+"Flamewaker's Battlegear",731,4,0,0,33,13193,0,1,3,40200,3780,0
+"Flamewaker's Battlegear",732,4,0,0,33,2015,731,1,3,40200,3910,0
+"Lightning-Charged Battlegear",733,4,0,0,34,13193,0,1,3,40000,3590,0
+"Lightning-Charged Battlegear",734,4,0,0,34,2015,733,1,3,40200,3720,0
+"Ahn'Kahar Blood Hunter's Battlegear",735,4,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Ahn'Kahar Blood Hunter's Battlegear",736,4,0,0,35,13291,735,1,2,30300,2640,0
+"Sanctified Ahn'Kahar Blood Hunter's Battlegear",737,4,0,0,35,13292,735,1,2,30300,2770,0
+"Windrunner's Pursuit",738,4,0,8,36,13293,0,1,2,30200,2320,0
+"Windrunner's Battlegear",739,4,0,4,36,13293,0,1,2,30200,2320,0
+"Valorous Scourgestalker Battlegear",740,4,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Scourgestalker Battlegear",741,4,0,0,37,13291,740,1,2,30100,2260,0
+"Heroes' Cryptstalker Battlegear",742,4,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Cryptstalker Battlegear",743,4,0,0,38,13291,742,1,2,30001,2130,0
+"Vicious Gladiator's Ringmail Armor",747,64,46539,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Ringmail Armor",748,64,0,18,19,3859,747,1,3,40000,3522,0
+"Vicious Gladiator's Leather Armor",749,8,46537,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Leather Armor",750,8,0,18,19,3859,749,1,3,40000,3522,0
+"Vicious Gladiator's Scaled Armor",751,2,46541,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Scaled Armor",752,2,0,18,19,3859,751,1,3,40000,3522,0
+"Vicious Gladiator's Silk Armor",753,128,46542,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Silk Armor",754,128,0,18,19,3859,753,1,3,40000,3522,0
+"Vicious Gladiator's Chain Armor",755,4,46533,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Chain Armor",756,4,0,18,19,3859,755,1,3,40000,3522,0
+"Vicious Gladiator's Dragonhide Armor",757,1024,46534,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Dragonhide Armor",758,1024,0,18,19,3859,757,1,3,40000,3522,0
+"Vicious Gladiator's Dreadplate Armor",759,32,46535,16,19,13301,0,1,3,40000,3520,0
+"Vicious Gladiator's Dreadplate Armor",760,32,0,18,19,3859,759,1,3,40000,3522,0
+"Wrathful Gladiator's Plate Armor",761,1,46582,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Felweave Armor",762,256,46580,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Ringmail Armor",763,64,46583,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Leather Armor",764,8,46581,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Scaled Armor",765,2,46585,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Silk Armor",766,128,46586,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Chain Armor",767,4,46577,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Dragonhide Armor",768,1024,46578,16,20,13301,0,1,2,30300,2700,0
+"Wrathful Gladiator's Dreadplate Armor",769,32,46579,16,20,13301,0,1,2,30300,2700,0
+"Relentless Gladiator's Plate Armor",770,1,46615,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Felweave Armor",771,256,46613,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Ringmail Armor",772,64,46616,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Leather Armor",773,8,46614,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Scaled Armor",774,2,46618,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Silk Armor",775,128,46619,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Chain Armor",776,4,46610,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Dragonhide Armor",777,1024,46611,16,21,13301,0,1,2,30200,2510,0
+"Relentless Gladiator's Dreadplate Armor",778,32,46612,16,21,13301,0,1,2,30200,2510,0
+"Furious Gladiator's Plate Armor",779,1,46604,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Felweave Armor",780,256,46602,16,22,13301,0,1,2,30100,2320,0
+"Furious Gladiator's Ringmail Armor",781,64,46605,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Leather Armor",782,8,46603,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Scaled Armor",783,2,46607,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Silk Armor",784,128,46608,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Chain Armor",785,4,46599,16,22,13301,0,1,2,30100,2321,0
+"Furious Gladiator's Dragonhide Armor",786,1024,46600,16,22,13301,0,1,2,30100,2320,0
+"Furious Gladiator's Dreadplate Armor",787,32,46601,16,22,13301,0,1,2,30100,2321,0
+"Deadly Gladiator's Plate Armor",788,1,46571,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Felweave Armor",789,256,46569,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Ringmail Armor",790,64,46572,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Leather Armor",791,8,46570,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Scaled Armor",792,2,46574,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Silk Armor",793,128,46575,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Chain Armor",794,4,46566,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Dragonhide Armor",795,1024,46567,16,23,13301,0,1,2,30001,2131,0
+"Deadly Gladiator's Dreadplate Armor",796,32,46568,16,23,13301,0,1,2,30001,2131,0
+"Hateful Gladiator's Plate Armor",797,1,46593,16,23,13304,788,1,2,30001,2001,0
+"Hateful Gladiator's Felweave Armor",798,256,46591,16,23,13304,789,1,2,30001,2001,0
+"Hateful Gladiator's Ringmail Armor",799,64,46594,16,23,13304,790,1,2,30001,2001,0
+"Hateful Gladiator's Leather Armor",800,8,46592,16,23,13304,791,1,2,30001,2001,0
+"Hateful Gladiator's Scaled Armor",801,2,46596,16,23,13304,792,1,2,30001,2001,0
+"Hateful Gladiator's Silk Armor",802,128,46597,16,23,13304,793,1,2,30001,2001,0
+"Hateful Gladiator's Chain Armor",803,4,46588,16,23,13304,794,1,2,30001,2001,0
+"Hateful Gladiator's Dragonhide Armor",804,1024,46589,16,23,13304,795,1,2,30001,2001,0
+"Hateful Gladiator's Dreadplate Armor",805,32,46590,16,23,13304,796,1,2,30001,2001,0
+"Savage Gladiator's Plate Armor",806,1,46560,16,23,13306,788,1,2,30001,2001,0
+"Savage Gladiator's Felweave Armor",807,256,46558,16,23,13306,789,1,2,30001,2001,0
+"Savage Gladiator's Ringmail Armor",808,64,46561,16,23,13306,790,1,2,30001,2001,0
+"Savage Gladiator's Leather Armor",809,8,46559,16,23,13306,791,1,2,30001,2001,0
+"Savage Gladiator's Scaled Armor",810,2,46563,16,23,13306,792,1,2,30001,2001,0
+"Savage Gladiator's Silk Armor",811,128,46564,16,23,13306,793,1,2,30001,2001,0
+"Savage Gladiator's Chain Armor",812,4,46555,16,23,13306,794,1,2,30001,2001,0
+"Savage Gladiator's Dragonhide Armor",813,1024,46556,16,23,13306,795,1,2,30001,2001,0
+"Savage Gladiator's Dreadplate Armor",814,32,46557,16,23,13306,796,1,2,30001,2001,0
+"Deep Earth Vestments",815,1024,0,0,32,13193,0,1,3,40300,3970,0
+"Deep Earth Vestments",816,1024,0,0,32,1641,815,1,3,40300,3840,0
+"Deep Earth Vestments",817,1024,0,0,32,2015,815,1,3,40300,4100,0
+"Obsidian Arborweave Vestments",818,1024,0,0,33,13193,0,1,3,40200,3780,0
+"Obsidian Arborweave Vestments",819,1024,0,0,33,2015,818,1,3,40200,3910,0
+"Stormrider's Vestments",820,1024,0,0,34,13193,0,1,3,40000,3590,0
+"Stormrider's Vestments",821,1024,0,0,34,2015,820,1,3,40200,3720,0
+"Lasherweave Battlegear",822,1024,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Lasherweave Battlegear",823,1024,0,0,35,13291,822,1,2,30300,2640,0
+"Sanctified Lasherweave Battlegear",824,1024,0,0,35,13292,822,1,2,30300,2770,0
+"Malfurion's Battlegear",825,1024,0,4,36,13293,0,1,2,30200,2320,0
+"Runetotem's Battlegear",826,1024,0,8,36,13293,0,1,2,30200,2320,0
+"Valorous Nightsong Battlegear",827,1024,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Nightsong Battlegear",828,1024,0,0,37,13291,827,1,2,30100,2260,0
+"Heroes' Dreamwalker Battlegear",829,1024,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Dreamwalker Battlegear",830,1024,0,0,38,13291,829,1,2,30001,2130,0
+"Necrotic Boneplate Armor",831,32,0,0,32,13193,0,1,3,40300,3970,0
+"Necrotic Boneplate Armor",832,32,0,0,32,1641,831,1,3,40300,3840,0
+"Necrotic Boneplate Armor",833,32,0,0,32,2015,831,1,3,40300,4100,0
+"Elementium Deathplate Battlearmor",834,32,0,0,33,13193,0,1,3,40300,3780,0
+"Elementium Deathplate Battlearmor",835,32,0,0,33,2015,834,1,3,40200,3910,0
+"Magma Plated Battlearmor",836,32,0,0,34,13193,0,1,3,40000,3590,0
+"Magma Plated Battlearmor",837,32,0,0,34,2015,836,1,3,40200,3720,0
+"Scourgelord's Plate",838,32,0,0,35,13293,0,1,2,30300,2510,0
+"Sanctified Scourgelord's Plate",839,32,0,0,35,13291,838,1,2,30300,2640,0
+"Sanctified Scourgelord's Plate",840,32,0,0,35,13292,838,1,2,30300,2770,0
+"Koltira's Battlegear",841,32,0,8,36,13293,0,1,2,30200,2320,0
+"Thassarian's Battlegear",842,32,0,4,36,13293,0,1,2,30200,2320,0
+"Valorous Darkruned Plate",843,32,0,0,37,13293,0,1,2,30100,2190,0
+"Conqueror's Darkruned Plate",844,32,0,0,37,13291,843,1,2,30100,2260,0
+"Heroes' Scourgeborne Plate",845,32,0,0,38,13293,0,1,2,30001,2000,0
+"Valorous Scourgeborne Plate",846,32,0,0,38,13291,845,1,2,30001,2130,0
+"Onslaught Armor",847,1,0,0,39,13193,0,1,1,20100,1460,0
+"Destroyer Armor",848,1,0,0,40,13193,0,1,1,20003,1330,0
+"Warbringer Armor",849,1,0,0,41,13193,0,1,1,20000,1200,0
+"Dreadnaught's Battlegear",850,1,0,2,42,13193,0,1,0,20000,920,0
+"Conqueror's Battlegear",851,1,0,0,51,13193,0,1,0,10900,880,0
+"Battlegear of Wrath",852,1,0,0,43,13193,0,1,0,10600,760,0
+"Battlegear of Might",853,1,0,0,44,13193,0,1,0,0,660,0
+"Deathmist Raiment",854,256,0,2,53,13193,0,1,0,0,650,0
+"Sorcerer's Regalia",855,128,0,2,53,13193,0,1,0,0,650,0
+"Beastmaster Armor",856,4,0,2,53,13193,0,1,0,0,650,0
+"Darkmantle Armor",857,8,0,2,53,13193,0,1,0,0,650,0
+"Feralheart Raiment",858,1024,0,2,53,13193,0,1,0,0,650,0
+"Soulforge Armor",859,2,0,2,53,13193,0,1,0,0,650,0
+"The Five Thunders",860,64,0,2,53,13193,0,1,0,0,650,0
+"Battlegear of Heroism",861,1,0,2,53,13193,0,1,0,0,650,0
+"Malefic Raiment",862,256,0,0,39,13193,0,1,1,20100,1460,0
+"Corruptor Raiment",863,256,0,0,40,13193,0,1,1,20003,1330,0
+"Voidheart Raiment",864,256,0,0,41,13193,0,1,1,20000,1200,0
+"Plagueheart Raiment",865,256,0,2,42,13193,0,1,0,20000,920,0
+"Doomcaller's Attire",866,256,0,0,51,13193,0,1,0,10900,880,0
+"Nemesis Raiment",867,256,0,0,43,13193,0,1,0,10600,760,0
+"Felheart Raiment",868,256,0,0,44,13193,0,1,0,0,660,0
+"Skyshatter Raiment",869,64,0,0,50,13305,0,1,1,20400,1540,0
+"Skyshatter Regalia",870,64,0,0,39,13193,0,1,1,20100,1460,0
+"Cataclysm Regalia",871,64,0,0,40,13193,0,1,1,20003,1330,0
+"Cyclone Regalia",872,64,0,0,41,13193,0,1,1,20000,1200,0
+"The Earthshatterer",873,64,0,2,42,13193,0,1,0,20000,920,0
+"Stormcaller's Garb",874,64,0,0,51,13193,0,1,0,10900,880,0
+"The Ten Storms",875,64,0,0,43,13193,0,1,0,10600,760,0
+"The Earthfury",876,64,0,0,44,13193,0,1,0,0,660,0
+"Cataclysmic Gladiator's Arsenal",877,0,0,19,0,0,0,1,3,40300,4102,0
+"Cataclysmic Gladiator's Arsenal",878,0,46532,17,0,0,0,1,3,40300,3840,0
+"Ruthless Gladiator's Arsenal",879,0,46554,17,0,0,0,1,3,40200,3780,0
+"Ruthless Gladiator's Arsenal",880,0,0,19,0,0,0,1,3,40200,3912,0
+"Vicious Gladiator's Arsenal",881,0,46543,17,0,0,0,1,3,40000,3590,0
+"Vicious Gladiator's Arsenal",882,0,0,19,0,0,0,1,3,40000,3592,0
+"Wrathful Gladiator's Arsenal",883,0,46587,17,0,0,0,1,2,30300,2640,0
+"Wrathful Gladiator's Arsenal",884,0,0,19,0,0,0,1,2,30300,2642,0
+"Relentless Gladiator's Arsenal",885,0,46620,17,0,0,0,1,2,30200,2510,0
+"Relentless Gladiator's Arsenal",886,0,0,19,0,0,0,1,2,30200,2512,0
+"Slayer's Battlegear",887,8,0,0,50,13305,0,1,1,20400,1540,0
+"Slayer's Armor",888,8,0,0,39,13193,0,1,1,20100,1460,0
+Deathmantle,889,8,0,0,40,13193,0,1,1,20003,1330,0
+Netherblade,890,8,0,0,41,13193,0,1,1,20000,1200,0
+"Bonescythe Armor",891,8,0,2,42,13193,0,1,0,20000,920,0
+"Deathdealer's Embrace",892,8,0,0,51,13193,0,1,0,10900,880,0
+"Bloodfang Armor",893,8,0,0,43,13193,0,1,0,10600,760,0
+"Nightslayer Armor",894,8,0,0,44,13193,0,1,0,0,660,0
+"Lightbringer Battlegear",895,2,0,0,50,13305,0,1,1,20400,1540,0
+"Lightbringer Armor",896,2,0,0,39,13193,0,1,1,20100,1460,0
+"Crystalforge Armor",897,2,0,0,40,13193,0,1,1,20003,1330,0
+"Aldor Regalia",898,128,0,0,41,13193,0,1,1,20000,1200,0
+"Redemption Armor",899,2,0,2,42,13193,0,1,0,20000,920,0
+"Avenger's Battlegear",900,2,0,0,51,13193,0,1,0,10900,880,0
+"Judgment Armor",901,2,0,0,43,13193,0,1,0,10600,760,0
+"Lawbringer Armor",902,2,0,0,44,13193,0,1,0,0,660,0
+"Tempest Garb",903,128,0,0,50,13305,0,1,1,20400,1540,0
+"Tempest Regalia",904,128,0,0,39,13193,0,1,1,20100,1460,0
+"Tirisfal Regalia",905,128,0,0,40,13193,0,1,1,20003,1330,0
+"Justicar Armor",906,2,0,0,41,13193,0,1,1,20000,1200,0
+"Frostfire Regalia",907,128,0,2,42,13193,0,1,0,20000,920,0
+"Enigma Vestments",908,128,0,0,51,13193,0,1,0,10900,880,0
+"Netherwind Regalia",909,128,0,0,43,13193,0,1,0,10600,760,0
+"Arcanist Regalia",910,128,0,0,44,13193,0,1,0,0,660,0
+"Gronnstalker's Battlegear",911,4,0,0,50,13305,0,1,1,20400,1540,0
+"Gronnstalker's Armor",912,4,0,0,39,13193,0,1,1,20100,1460,0
+"Demon Stalker Armor",913,4,0,0,41,13193,0,1,1,20000,1200,0
+"Cryptstalker Armor",914,4,0,2,42,13193,0,1,0,20000,920,0
+"Striker's Garb",915,4,0,0,51,13193,0,1,0,10900,880,0
+"Dragonstalker Armor",916,4,0,0,43,13193,0,1,0,10600,760,0
+"Giantstalker Armor",917,4,0,0,44,13193,0,1,0,0,660,0
+"Rift Stalker Armor",918,4,0,0,40,13193,0,1,1,20003,1330,0
+"Thunderheart Regalia",919,1024,0,0,50,13305,0,1,1,20400,1540,0
+"Thunderheart Raiment",920,1024,0,0,39,13193,0,1,1,20100,1460,0
+"Nordrassil Raiment",921,1024,0,0,40,13193,0,1,1,20003,1330,0
+"Malorne Raiment",922,1024,0,0,41,13193,0,1,1,20000,1200,0
+"Furious Gladiator's Arsenal",923,0,46609,17,0,0,0,1,2,30100,2321,0
+"Dreamwalker Raiment",924,1024,0,2,42,13193,0,1,0,20000,920,0
+"Furious Gladiator's Arsenal",925,0,0,19,0,0,0,1,2,30100,2322,0
+"Genesis Raiment",926,1024,0,0,51,13193,0,1,0,10900,880,0
+"Stormrage Raiment",927,1024,0,0,43,13193,0,1,0,10600,760,0
+"Cenarion Raiment",928,1024,0,0,44,13193,0,1,0,0,660,0
+"Deadly Gladiator's Arsenal",929,0,46576,17,0,0,0,1,2,30001,2131,0
+"Savage Gladiator's Arsenal",930,0,46565,17,0,0,0,1,2,30001,2001,0
+"Onslaught Battlegear",931,1,0,0,50,13305,0,1,1,20400,1540,0
+"Malefic Regalia",932,256,0,0,50,13305,0,1,1,20400,1540,0
+"Regalia of Shackled Elements",933,64,0,0,8,13193,0,1,6,70001,8751,0
+"Regalia of Shackled Elements",934,64,0,0,8,2015,933,1,6,70001,8752,0
+"Regalia of Shackled Elements",935,64,0,0,8,13145,933,1,6,70001,8753,0
+"Regalia of Shackled Elements",936,64,0,0,8,1641,933,1,6,70001,8750,0
+"Warplate of the Obsidian Aspect",937,1,0,0,8,13193,0,1,6,70001,8751,0
+"Warplate of the Obsidian Aspect",938,1,0,0,8,2015,937,1,6,70001,8752,0
+"Warplate of the Obsidian Aspect",939,1,0,0,8,13145,937,1,6,70001,8753,0
+"Warplate of the Obsidian Aspect",940,1,0,0,8,1641,937,1,6,70001,8750,0
+"Legacy of Azj'aqir",941,256,0,0,8,1641,315,1,6,70001,8750,0
+"Doomblade Battlegear",942,8,0,0,8,13193,0,1,6,70001,8751,0
+"Doomblade Battlegear",943,8,0,0,8,2015,942,1,6,70001,8752,0
+"Doomblade Battlegear",944,8,0,0,8,13145,942,1,6,70001,8753,0
+"Doomblade Battlegear",945,8,0,0,8,1641,942,1,6,70001,8750,0
+"Brutal Gladiator's Plate Armor",946,1,46635,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Felweave Armor",947,256,46633,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Ringmail Armor",948,64,46636,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Leather Armor",949,8,46634,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Scaled Armor",950,2,46638,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Silk Armor",951,128,46639,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Chain Armor",952,4,46631,16,24,13301,0,1,1,20400,1591,0
+"Brutal Gladiator's Dragonhide Armor",953,1024,46632,16,24,13301,0,1,1,20400,1591,0
+"Vengeful Gladiator's Plate Armor",954,1,46645,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Felweave Armor",955,256,46643,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Ringmail Armor",956,64,46646,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Leather Armor",957,8,46644,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Scaled Armor",958,2,46648,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Silk Armor",959,128,46649,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Chain Armor",960,4,46641,16,25,13301,0,1,1,20100,1461,0
+"Vengeful Gladiator's Dragonhide Armor",961,1024,46642,16,25,13301,0,1,1,20100,1461,0
+"Merciless Gladiator's Plate Armor",962,1,46655,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Felweave Armor",963,256,46653,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Ringmail Armor",964,64,46656,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Leather Armor",965,8,46654,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Scaled Armor",966,2,46658,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Silk Armor",967,128,46659,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Chain Armor",968,4,46651,16,26,13301,0,1,1,20003,1361,0
+"Merciless Gladiator's Dragonhide Armor",969,1024,46652,16,26,13301,0,1,1,20003,1361,0
+"Gladiator's Felweave Armor",970,256,46623,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Ringmail Armor",971,64,46626,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Leather Armor",972,8,46624,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Satin Armor",973,16,46627,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Scaled Armor",974,2,46628,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Silk Armor",975,128,46629,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Chain Armor",976,4,46621,16,27,13301,0,1,1,20000,1231,0
+"Gladiator's Dragonhide Armor",977,1024,46622,16,27,13301,0,1,1,20000,1231,0
+"Battleplate of the Highlord",978,2,0,0,8,13193,0,1,6,70001,8751,0
+"Battleplate of the Highlord",979,2,0,0,8,2015,978,1,6,70001,8752,0
+"Battleplate of the Highlord",980,2,0,0,8,13145,978,1,6,70001,8753,0
+"Battleplate of the Highlord",981,2,0,0,8,1641,978,1,6,70001,8750,0
+"Vestments of Enveloped Dissonance",982,512,0,0,8,13193,0,1,6,70001,8751,0
+"Vestments of Enveloped Dissonance",983,512,0,0,8,2015,982,1,6,70001,8752,0
+"Vestments of Enveloped Dissonance",984,512,0,0,8,13145,982,1,6,70001,8753,0
+"Vestments of Enveloped Dissonance",985,512,0,0,8,1641,982,1,6,70001,8750,0
+"Regalia of Everburning Knowledge",986,128,0,0,8,13193,0,1,6,70001,8751,0
+"Regalia of Everburning Knowledge",987,128,0,0,8,2015,986,1,6,70001,8752,0
+"Regalia of Everburning Knowledge",988,128,0,0,8,13145,986,1,6,70001,8753,0
+"Regalia of Everburning Knowledge",989,128,0,0,8,1641,986,1,6,70001,8750,0
+"Eagletalon Battlegear",990,4,0,0,8,13193,0,1,6,70001,8751,0
+"Eagletalon Battlegear",991,4,0,0,8,2015,990,1,6,70001,8752,0
+"Eagletalon Battlegear",992,4,0,0,8,13145,990,1,6,70001,8753,0
+"Eagletalon Battlegear",993,4,0,0,8,1641,990,1,6,70001,8750,0
+"Garb of the Astral Warden",994,1024,0,0,8,13193,0,1,6,70001,8751,0
+"Garb of the Astral Warden",995,1024,0,0,8,2015,994,1,6,70001,8752,0
+"Garb of the Astral Warden",996,1024,0,0,8,13145,994,1,6,70001,8753,0
+"Garb of the Astral Warden",997,1024,0,0,8,1641,994,1,6,70001,8750,0
+"Vestment of Second Sight",998,2048,0,0,8,13193,0,1,6,70001,8751,0
+"Vestment of Second Sight",999,2048,0,0,8,2015,998,1,6,70001,8752,0
+"Vestment of Second Sight",1000,2048,0,0,8,13145,998,1,6,70001,8753,0
+"Vestment of Second Sight",1001,2048,0,0,8,1641,998,1,6,70001,8750,0
+"Dreadwyrm Battleplate",1002,32,0,0,8,13193,0,1,6,70001,8751,0
+"Dreadwyrm Battleplate",1003,32,0,0,8,2015,1002,1,6,70001,8752,0
+"Dreadwyrm Battleplate",1004,32,0,0,8,13145,1002,1,6,70001,8753,0
+"Dreadwyrm Battleplate",1005,32,0,0,8,1641,1002,1,6,70001,8750,0
+"Brutal Gladiator's Arsenal",1006,0,46640,17,0,0,0,1,1,20400,1541,0
+"Vengeful Gladiator's Arsenal",1007,0,46650,17,0,0,0,1,1,20100,1461,0
+"Merciless Gladiator's Arsenal",1008,0,46660,17,0,0,0,1,1,20003,1361,0
+"Gladiator's Arsenal",1009,0,46630,17,0,0,0,1,1,20000,1231,0
+"Tyrannical Gladiator's Dreadplate Armor",1010,32,0,22,16,3859,267,1,4,50100,4962,0
+"Tyrannical Gladiator's Dreadplate Armor",1011,32,0,26,16,3859,256,1,4,50100,4962,0
+"Tyrannical Gladiator's Dragonhide Armor",1012,1024,0,22,16,3859,266,1,4,50100,4962,0
+"Tyrannical Gladiator's Dragonhide Armor",1013,1024,0,26,16,3859,255,1,4,50100,4962,0
+"Tyrannical Gladiator's Chain Armor",1014,4,0,22,16,3859,265,1,4,50100,4962,0
+"Tyrannical Gladiator's Chain Armor",1015,4,0,26,16,3859,254,1,4,50100,4962,0
+"Tyrannical Gladiator's Silk Armor",1016,128,0,22,16,3859,275,1,4,50100,4962,0
+"Tyrannical Gladiator's Silk Armor",1017,128,0,26,16,3859,264,1,4,50100,4962,0
+"Tyrannical Gladiator's Ironskin Armor",1018,512,0,22,16,3859,269,1,4,50100,4962,0
+"Tyrannical Gladiator's Ironskin Armor",1019,512,0,26,16,3859,259,1,4,50100,4962,0
+"Tyrannical Gladiator's Scaled Armor",1020,2,0,22,16,3859,274,1,4,50100,4962,0
+"Tyrannical Gladiator's Scaled Armor",1021,2,0,26,16,3859,263,1,4,50100,4962,0
+"Tyrannical Gladiator's Leather Armor",1022,8,0,22,16,3859,270,1,4,50100,4962,0
+"Tyrannical Gladiator's Leather Armor",1023,8,0,26,16,3859,260,1,4,50100,4962,0
+"Tyrannical Gladiator's Ringmail Armor",1024,64,0,22,16,3859,272,1,4,50100,4962,0
+"Tyrannical Gladiator's Ringmail Armor",1025,64,0,26,16,3859,262,1,4,50100,4962,0
+"Tyrannical Gladiator's Felweave Armor",1026,256,0,22,16,3859,268,1,4,50100,4962,0
+"Tyrannical Gladiator's Felweave Armor",1027,256,0,26,16,3859,257,1,4,50100,4962,0
+"Tyrannical Gladiator's Plate Armor",1028,1,0,22,16,3859,271,1,4,50100,4962,0
+"Tyrannical Gladiator's Plate Armor",1029,1,0,26,16,3859,261,1,4,50100,4962,0
+"Grievous Gladiator's Dreadplate Armor",1030,32,0,22,15,3859,211,1,4,50200,5222,0
+"Grievous Gladiator's Dreadplate Armor",1031,32,0,26,15,3859,201,1,4,50200,5222,0
+"Grievous Gladiator's Dragonhide Armor",1032,1024,0,22,15,3859,210,1,4,50200,5222,0
+"Grievous Gladiator's Dragonhide Armor",1033,1024,0,26,15,3859,200,1,4,50200,5222,0
+"Grievous Gladiator's Chain Armor",1034,4,0,22,15,3859,199,1,4,50200,5222,0
+"Grievous Gladiator's Chain Armor",1035,4,0,26,15,3859,198,1,4,50200,5222,0
+"Grievous Gladiator's Silk Armor",1036,128,0,22,15,3859,219,1,4,50200,5220,0
+"Grievous Gladiator's Silk Armor",1037,128,0,26,15,3859,209,1,4,50200,5220,0
+"Grievous Gladiator's Ironskin Armor",1038,512,0,22,15,3859,213,1,4,50200,5220,0
+"Grievous Gladiator's Ironskin Armor",1039,512,0,26,15,3859,203,1,4,50200,5220,0
+"Grievous Gladiator's Scaled Armor",1040,2,0,22,15,3859,218,1,4,50200,5220,0
+"Grievous Gladiator's Scaled Armor",1041,2,0,26,15,3859,208,1,4,50200,5220,0
+"Grievous Gladiator's Leather Armor",1042,8,0,22,15,3859,214,1,4,50200,5220,0
+"Grievous Gladiator's Leather Armor",1043,8,0,26,15,3859,204,1,4,50200,5220,0
+"Grievous Gladiator's Ringmail Armor",1044,64,0,22,15,3859,216,1,4,50200,5220,0
+"Grievous Gladiator's Ringmail Armor",1045,64,0,26,15,3859,206,1,4,50200,5220,0
+"Grievous Gladiator's Felweave Armor",1046,256,0,22,15,3859,212,1,4,50200,5220,0
+"Grievous Gladiator's Felweave Armor",1047,256,0,26,15,3859,202,1,4,50200,5220,0
+"Grievous Gladiator's Plate Armor",1048,1,0,22,15,3859,215,1,4,50200,5222,0
+"Grievous Gladiator's Plate Armor",1049,1,0,26,15,3859,205,1,4,50200,5222,0
+,1050,0,0,27,0,0,0,1,4,50300,5220,0
+,1051,0,0,23,0,0,0,1,4,50300,5220,0
+,1052,0,0,23,0,0,0,1,4,50200,4980,0
+,1053,0,0,27,0,0,0,1,4,50200,4980,0
+"Malevolent Gladiator's Dreadplate Armor",1054,32,0,18,9,3859,285,1,4,50003,4760,0
+"Malevolent Gladiator's Dragonhide Armor",1055,1024,0,18,9,3859,281,1,4,50003,4760,0
+"Malevolent Gladiator's Chain Armor",1056,4,0,18,9,3859,286,1,4,50003,4760,0
+"Malevolent Gladiator's Silk Armor",1057,128,0,18,9,3859,276,1,4,50003,4760,0
+,1058,0,0,19,0,0,0,1,4,60001,4700,0
+"Malevolent Gladiator's Ironskin Armor",1059,512,45961,16,9,13301,0,1,4,50003,4760,0
+"Malevolent Gladiator's Scaled Armor",1060,2,0,18,9,3859,277,1,4,50003,4760,0
+"Malevolent Gladiator's Leather Armor",1061,8,0,18,9,3859,280,1,4,50003,4760,0
+"Malevolent Gladiator's Ringmail Armor",1062,64,0,18,9,3859,284,1,4,50003,4760,0
+"Malevolent Gladiator's Felweave Armor",1063,256,0,18,9,3859,283,1,4,50003,4760,0
+"Malevolent Gladiator's Plate Armor",1064,1,0,18,9,3859,278,1,4,50003,4760,0
+,1065,0,0,23,0,0,0,1,4,50400,5500,0
+,1066,0,0,27,0,0,0,1,4,50400,5500,0
+"Vindictive Combatant's Leather Armor",1067,8,46364,24,45,13302,1126,1,6,70001,8100,0
+"Vindictive Combatant's Leather Armor",1068,8,46363,20,45,13302,1125,1,6,70001,8100,0
+"Vindictive Combatant's Plate Armor",1069,1,46365,24,45,13302,1134,1,6,70001,8100,0
+"Vindictive Combatant's Plate Armor",1070,1,46366,20,45,13302,1133,1,6,70001,8100,0
+"Vindictive Combatant's Satin Armor",1071,16,46370,20,45,13302,388,1,6,70001,8100,0
+"Vindictive Combatant's Satin Armor",1072,16,46369,24,45,13302,390,1,6,70001,8100,0
+"Prideful Gladiator's Dreadplate Armor",1073,32,0,22,14,3859,234,1,4,50400,5500,0
+"Prideful Gladiator's Dreadplate Armor",1074,32,0,26,14,3859,245,1,4,50400,5500,0
+"Prideful Gladiator's Dragonhide Armor",1075,1024,0,22,14,3859,233,1,4,50400,5500,0
+"Prideful Gladiator's Dragonhide Armor",1076,1024,0,26,14,3859,244,1,4,50400,5500,0
+"Prideful Gladiator's Chain Armor",1077,4,0,22,14,3859,232,1,4,50400,5500,0
+"Prideful Gladiator's Chain Armor",1078,4,0,26,14,3859,243,1,4,50400,5500,0
+"Prideful Gladiator's Silk Armor",1079,128,0,22,14,3859,242,1,4,50400,5500,0
+"Prideful Gladiator's Silk Armor",1080,128,0,26,14,3859,253,1,4,50400,5500,0
+"Prideful Gladiator's Ironskin Armor",1081,512,0,22,14,3859,236,1,4,50400,5500,0
+"Prideful Gladiator's Ironskin Armor",1082,512,0,26,14,3859,247,1,4,50400,5500,0
+"Prideful Gladiator's Scaled Armor",1083,2,0,22,14,3859,241,1,4,50400,5500,0
+"Prideful Gladiator's Scaled Armor",1084,2,0,26,14,3859,252,1,4,50400,5500,0
+"Prideful Gladiator's Leather Armor",1085,8,0,22,14,3859,237,1,4,50400,5500,0
+"Prideful Gladiator's Leather Armor",1086,8,0,26,14,3859,248,1,4,50400,5500,0
+"Prideful Gladiator's Ringmail Armor",1087,64,0,22,14,3859,239,1,4,50400,5500,0
+"Prideful Gladiator's Ringmail Armor",1088,64,0,26,14,3859,250,1,4,50400,5500,0
+"Prideful Gladiator's Felweave Armor",1089,256,0,22,14,3859,235,1,4,50400,5500,0
+"Prideful Gladiator's Felweave Armor",1090,256,0,26,14,3859,246,1,4,50400,5500,0
+"Prideful Gladiator's Plate Armor",1091,1,0,22,14,3859,238,1,4,50400,5500,0
+"Prideful Gladiator's Plate Armor",1092,1,0,26,14,3859,249,1,4,50400,5500,0
+"Vindictive Gladiator's Silk Armor",1093,128,46397,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Silk Armor",1094,128,46398,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Silk Armor",1095,128,46421,26,45,3859,1093,1,6,70001,8710,0
+"Vindictive Gladiator's Silk Armor",1096,128,46422,22,45,3859,1094,1,6,70001,8710,0
+"Vindictive Gladiator's Dragonhide Armor",1097,1024,46379,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Dragonhide Armor",1098,1024,46380,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Dragonhide Armor",1099,1024,46403,26,45,3859,1097,1,6,70001,8710,0
+"Vindictive Gladiator's Dragonhide Armor",1100,1024,46404,22,45,3859,1098,1,6,70001,8710,0
+"Vindictive Gladiator's Felweave Armor",1101,256,46383,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Felweave Armor",1102,256,46384,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Felweave Armor",1103,256,46407,22,45,3859,1101,1,6,70001,8710,0
+"Vindictive Gladiator's Felweave Armor",1104,256,46408,26,45,3859,1102,1,6,70001,8710,0
+"Vindictive Gladiator's Dreadplate Armor",1105,32,46381,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Dreadplate Armor",1106,32,46382,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Dreadplate Armor",1107,32,46405,26,45,3859,1105,1,6,70001,8710,0
+"Vindictive Gladiator's Dreadplate Armor",1108,32,46406,22,45,3859,1106,1,6,70001,8710,0
+"Vindictive Gladiator's Felskin Armor",1109,2048,46400,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Felskin Armor",1110,2048,46399,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Felskin Armor",1111,2048,46424,26,45,3859,1109,1,6,70001,8710,0
+"Vindictive Gladiator's Felskin Armor",1112,2048,46423,22,45,3859,1110,1,6,70001,8710,0
+"Vindictive Gladiator's Chain Armor",1113,4,46378,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Chain Armor",1114,4,46377,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Chain Armor",1115,4,46402,22,45,3859,1113,1,6,70001,8710,0
+"Vindictive Gladiator's Chain Armor",1116,4,46401,26,45,3859,1114,1,6,70001,8710,0
+"Vindictive Gladiator's Ironskin Armor",1117,512,46386,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Ironskin Armor",1118,512,46385,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Ironskin Armor",1119,512,46410,22,45,3859,1117,1,6,70001,8710,0
+"Vindictive Gladiator's Ironskin Armor",1120,512,46409,26,45,3859,1118,1,6,70001,8710,0
+"Vindictive Gladiator's Scaled Armor",1121,2,46396,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Scaled Armor",1122,2,46395,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Scaled Armor",1123,2,46420,22,45,3859,1121,1,6,70001,8710,0
+"Vindictive Gladiator's Scaled Armor",1124,2,46419,26,45,3859,1122,1,6,70001,8710,0
+"Vindictive Gladiator's Leather Armor",1125,8,46387,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Leather Armor",1126,8,46388,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Leather Armor",1127,8,46411,22,45,3859,1125,1,6,70001,8710,0
+"Vindictive Gladiator's Leather Armor",1128,8,46412,26,45,3859,1126,1,6,70001,8710,0
+"Vindictive Gladiator's Ringmail Armor",1129,64,46392,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Ringmail Armor",1130,64,46391,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Ringmail Armor",1131,64,46416,22,45,3859,1129,1,6,70001,8710,0
+"Vindictive Gladiator's Ringmail Armor",1132,64,46415,26,45,3859,1130,1,6,70001,8710,0
+"Vindictive Gladiator's Plate Armor",1133,1,46389,20,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Plate Armor",1134,1,46390,24,45,13301,0,1,6,70001,8401,0
+"Vindictive Gladiator's Plate Armor",1135,1,46413,22,45,3859,1133,1,6,70001,8710,0
+"Vindictive Gladiator's Plate Armor",1136,1,46414,26,45,3859,1134,1,6,70001,8710,0
+"Vindictive Combatant's Silk Armor",1137,128,46374,20,45,13302,1094,1,6,70001,8100,0
+"Primal Gladiator's Dreadplate Armor",1138,32,0,22,11,3859,128,1,5,60001,6600,0
+"Primal Gladiator's Dreadplate Armor",1139,32,0,26,11,3859,127,1,5,60001,6600,0
+"Primal Gladiator's Dragonhide Armor",1140,1024,0,22,11,3859,126,1,5,60001,6600,0
+"Primal Gladiator's Dragonhide Armor",1141,1024,0,26,11,3859,125,1,5,60001,6600,0
+"Primal Gladiator's Chain Armor",1142,4,0,22,11,3859,124,1,5,60001,6600,0
+"Primal Gladiator's Chain Armor",1143,4,0,26,11,3859,123,1,5,60001,6600,0
+"Primal Gladiator's Silk Armor",1144,128,0,22,11,3859,144,1,5,60001,6600,0
+"Primal Gladiator's Silk Armor",1145,128,0,26,11,3859,143,1,5,60001,6600,0
+"Primal Gladiator's Ironskin Armor",1146,512,0,22,11,3859,132,1,5,60001,6600,0
+"Primal Gladiator's Ironskin Armor",1147,512,0,26,11,3859,131,1,5,60001,6600,0
+"Primal Gladiator's Scaled Armor",1148,2,0,22,11,3859,142,1,5,60001,6600,0
+"Primal Gladiator's Scaled Armor",1149,2,0,26,11,3859,141,1,5,60001,6600,0
+"Primal Gladiator's Leather Armor",1150,8,0,22,11,3859,134,1,5,60001,6600,0
+"Primal Gladiator's Leather Armor",1151,8,0,26,11,3859,133,1,5,60001,6600,0
+"Primal Gladiator's Ringmail Armor",1152,64,0,22,11,3859,138,1,5,60001,6600,0
+"Primal Gladiator's Ringmail Armor",1153,64,0,26,11,3859,137,1,5,60001,6600,0
+"Primal Gladiator's Felweave Armor",1154,256,0,22,11,3859,130,1,5,60001,6600,0
+"Primal Gladiator's Felweave Armor",1155,256,0,26,11,3859,129,1,5,60001,6600,0
+"Primal Gladiator's Plate Armor",1156,1,0,22,11,3859,136,1,5,60001,6600,0
+"Primal Gladiator's Plate Armor",1157,1,0,26,11,3859,135,1,5,60001,6600,0
+"Vindictive Combatant's Felweave Armor",1158,256,46495,20,45,13302,1101,1,6,70001,8100,0
+"Vindictive Combatant's Silk Armor",1159,128,46373,24,45,13302,1093,1,6,70001,8100,0
+"Vindictive Combatant's Felweave Armor",1160,256,46496,24,45,13302,1102,1,6,70001,8100,0
+"Vindictive Combatant's Ringmail Armor",1161,64,46367,20,45,13302,1129,1,6,70001,8100,0
+"Vindictive Combatant's Ringmail Armor",1162,64,46368,24,45,13302,1130,1,6,70001,8100,0
+"Vindictive Combatant's Dreadplate Armor",1163,32,46358,20,0,13302,1106,1,6,70001,8100,0
+"Vindictive Combatant's Scaled Armor",1164,2,46372,20,45,13302,1121,1,6,70001,8100,0
+"Vindictive Combatant's Dreadplate Armor",1165,32,46359,24,45,13302,1105,1,6,70001,8100,0
+"Vindictive Combatant's Scaled Armor",1166,2,46371,24,45,13302,1122,1,6,70001,8100,0
+"Vindictive Combatant's Felskin Armor",1167,2048,47444,20,45,13302,1110,1,6,70001,8100,0
+"Vindictive Combatant's Dragonhide Armor",1168,1024,46356,20,45,13302,1098,1,6,70001,8100,0
+"Vindictive Combatant's Ironskin Armor",1169,512,46361,20,45,13302,1117,1,6,70001,8100,0
+"Vindictive Combatant's Felskin Armor",1170,2048,47446,24,45,13302,1109,1,6,70001,8100,0
+"Vindictive Combatant's Dragonhide Armor",1171,1024,46357,24,45,13302,1097,1,6,70001,8100,0
+"Vindictive Combatant's Ironskin Armor",1172,512,46362,24,45,13302,1118,1,6,70001,8100,0
+"Wild Gladiator's Dreadplate Armor",1173,32,0,22,12,3859,90,1,5,60100,7000,0
+"Wild Gladiator's Dreadplate Armor",1174,32,0,26,12,3859,89,1,5,60100,7000,0
+"Wild Gladiator's Dragonhide Armor",1175,1024,0,22,12,3859,84,1,5,60100,7000,0
+"Wild Gladiator's Dragonhide Armor",1176,1024,0,26,12,3859,83,1,5,60100,7000,0
+"Wild Gladiator's Chain Armor",1177,4,0,22,12,3859,80,1,5,60100,7000,0
+"Wild Gladiator's Chain Armor",1178,4,0,26,12,3859,79,1,5,60100,7000,0
+"Wild Gladiator's Silk Armor",1179,128,0,22,12,3859,100,1,5,60100,7000,0
+"Wild Gladiator's Silk Armor",1180,128,0,26,12,3859,99,1,5,60100,7000,0
+"Wild Gladiator's Ironskin Armor",1181,512,0,22,12,3859,88,1,5,60100,7000,0
+"Wild Gladiator's Ironskin Armor",1182,512,0,26,12,3859,87,1,5,60100,7000,0
+"Wild Gladiator's Scaled Paladin",1183,2,0,22,12,3859,94,1,5,60100,7000,0
+"Wild Gladiator's Scaled Paladin",1184,2,0,26,12,3859,93,1,5,60100,7000,0
+"Wild Gladiator's Leather Armor",1185,8,0,22,12,3859,85,1,5,60100,7000,0
+"Wild Gladiator's Leather Armor",1186,8,0,26,12,3859,86,1,5,60100,7000,0
+"Wild Gladiator's Ringmail Armor",1187,64,0,22,12,3859,81,1,5,60100,7000,0
+"Wild Gladiator's Ringmail Armor",1188,64,0,26,12,3859,82,1,5,60100,7000,0
+"Wild Gladiator's Felweave Armor",1189,256,0,22,12,3859,96,1,5,60100,7000,0
+"Wild Gladiator's Felweave Armor",1190,256,0,26,12,3859,95,1,5,60100,7000,0
+"Wild Gladiator's Plate Armor",1191,1,0,22,12,3859,92,1,5,60100,7000,0
+"Wild Gladiator's Plate Armor",1192,1,0,26,12,3859,91,1,5,60100,7000,0
+"Bloodthirsty Gladiator's Plate Armor",1193,1,46517,16,19,13304,626,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Felweave Armor",1194,256,46515,16,19,13304,628,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Ringmail Armor",1195,64,46518,16,19,13304,747,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Leather Armor",1196,8,46516,16,19,13304,749,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Scaled Armor",1197,2,46520,16,19,13304,751,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Silk Armor",1198,128,46521,16,19,13304,753,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Chain Armor",1199,4,46512,16,19,13304,755,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Dragonhide Armor",1200,1024,46513,16,19,13304,757,1,3,40000,3390,0
+"Bloodthirsty Gladiator's Dreadplate Armor",1201,32,46514,16,19,13304,759,1,3,40000,3390,0
+"Brutal Gladiator's Dreadplate Armor",1202,32,47060,16,24,13301,0,1,1,20400,1591,0
+,1203,0,46598,17,0,0,0,1,2,30001,2320,0
+"Warmongering Gladiator's Dreadplate Armor",1204,32,0,22,13,3859,108,1,5,60200,7100,0
+"Warmongering Gladiator's Dreadplate Armor",1205,32,0,26,13,3859,107,1,5,60200,7100,0
+"Warmongering Gladiator's Dragonhide Armor",1206,1024,0,22,13,3859,106,1,5,60200,7100,0
+"Warmongering Gladiator's Dragonhide Armor",1207,1024,0,26,13,3859,105,1,5,60200,7100,0
+"Warmongering Gladiator's Chain Armor",1208,4,0,22,13,3859,102,1,5,60200,7100,0
+"Warmongering Gladiator's Chain Armor",1209,4,0,26,13,3859,101,1,5,60200,7100,0
+"Warmongering Gladiator's Silk Armor",1210,128,0,22,13,3859,122,1,5,60200,7100,0
+"Warmongering Gladiator's Silk Armor",1211,128,0,26,13,3859,121,1,5,60200,7100,0
+"Warmongering Gladiator's Ironskin Armor",1212,512,0,22,13,3859,112,1,5,60200,7100,0
+"Warmongering Gladiator's Ironskin Armor",1213,512,0,26,13,3859,111,1,5,60200,7100,0
+"Warmongering Gladiator's Scaled Armor",1214,2,0,22,13,3859,120,1,5,60200,7100,0
+"Warmongering Gladiator's Scaled Armor",1215,2,0,26,13,3859,119,1,5,60200,7100,0
+"Warmongering Gladiator's Leather Armor",1216,8,0,22,13,3859,114,1,5,60200,7100,0
+"Warmongering Gladiator's Leather Armor",1217,8,0,26,13,3859,113,1,5,60200,7100,0
+"Warmongering Gladiator's Ringmail Armor",1218,64,0,22,13,3859,104,1,5,60200,7100,0
+"Warmongering Gladiator's Ringmail Armor",1219,64,0,26,13,3859,103,1,5,60200,7100,0
+"Warmongering Gladiator's Felweave Armor",1220,256,0,22,13,3859,110,1,5,60200,7100,0
+"Warmongering Gladiator's Felweave Armor",1221,256,0,26,13,3859,109,1,5,60200,7100,0
+"Warmongering Gladiator's Plate Armor",1222,1,0,22,13,3859,116,1,5,60200,7100,0
+"Warmongering Gladiator's Plate Armor",1223,1,0,26,13,3859,115,1,5,60200,7100,0
+"Unused Set",1224,0,46459,1,46,13301,0,1,6,0,8601,0
+"Cruel Gladiator's Plate Armor",1225,1,46459,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Plate Armor",1226,1,46460,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Plate Armor",1227,1,46483,22,46,3859,1225,1,6,70200,8602,0
+"Cruel Gladiator's Plate Armor",1228,1,46484,26,46,3859,1226,1,6,70200,8602,0
+"Cruel Gladiator's Felweave Armor",1229,256,46453,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Felweave Armor",1230,256,46454,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Felweave Armor",1231,256,46477,22,46,3859,1229,1,6,70200,8602,0
+"Cruel Gladiator's Felweave Armor",1232,256,46478,26,46,3859,1230,1,6,70200,8602,0
+"Cruel Gladiator's Ringmail Armor",1233,64,46462,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Ringmail Armor",1234,64,46461,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Ringmail Armor",1235,64,46486,22,46,3859,1233,1,6,70200,8602,0
+"Cruel Gladiator's Ringmail Armor",1236,64,46485,26,46,3859,1234,1,6,70200,8602,0
+"Cruel Gladiator's Leather Armor",1237,8,46457,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Leather Armor",1238,8,46458,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Leather Armor",1239,8,46481,22,46,3859,1237,1,6,70200,8602,0
+"Cruel Gladiator's Leather Armor",1240,8,46482,26,46,3859,1238,1,6,70200,8602,0
+"Cruel Gladiator's Scaled Armor",1241,2,46466,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Scaled Armor",1242,2,46465,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Scaled Armor",1243,2,46490,22,46,3859,1241,1,6,70200,8602,0
+"Cruel Gladiator's Scaled Armor",1244,2,46489,26,46,3859,1242,1,6,70200,8602,0
+"Cruel Gladiator's Ironskin Armor",1245,512,46456,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Ironskin Armor",1246,512,46455,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Ironskin Armor",1247,512,46480,22,46,3859,1245,1,6,70200,8602,0
+"Cruel Gladiator's Ironskin Armor",1248,512,46479,26,46,3859,1246,1,6,70200,8602,0
+"Cruel Gladiator's Silk Armor",1249,128,46468,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Silk Armor",1250,128,46467,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Silk Armor",1251,128,46492,22,46,3859,1249,1,6,70200,8602,0
+"Cruel Gladiator's Silk Armor",1252,128,46491,26,46,3859,1250,1,6,70200,8602,0
+"Cruel Gladiator's Chain Armor",1253,4,46447,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Chain Armor",1254,4,46448,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Chain Armor",1255,4,46472,22,46,3859,1254,1,6,70200,8602,0
+"Cruel Gladiator's Chain Armor",1256,4,46471,26,46,3859,1253,1,6,70200,8602,0
+"Cruel Gladiator's Dragonhide Armor",1257,1024,46450,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Dragonhide Armor",1258,1024,46449,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Dragonhide Armor",1259,1024,46474,22,46,3859,1257,1,6,70200,8602,0
+"Cruel Gladiator's Dragonhide Armor",1260,1024,46473,26,46,3859,1258,1,6,70200,8602,0
+"Cruel Gladiator's Felskin Armor",1261,2048,47083,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Felskin Armor",1262,2048,47082,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Felskin Armor",1263,2048,47080,22,46,3859,1262,1,6,70200,8602,0
+"Cruel Gladiator's Felskin Armor",1264,2048,47081,26,46,3859,1261,1,6,70200,8602,0
+"Cruel Gladiator's Dreadplate Armor",1265,32,46452,20,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Dreadplate Armor",1266,32,46451,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Dreadplate Armor",1267,32,46476,22,46,3859,1265,1,6,70200,8602,0
+"Cruel Gladiator's Dreadplate Armor",1268,32,46475,26,46,3859,1266,1,6,70200,8602,0
+"Cruel Combatant's Plate Armor",1269,1,47158,24,46,13302,1226,1,6,70200,8600,0
+"Cruel Combatant's Plate Armor",1270,1,47159,20,46,13302,1225,1,6,70200,8600,0
+"Cruel Combatant's Felweave Armor",1271,256,47164,24,46,13302,1230,1,6,70200,8600,0
+"Cruel Combatant's Felweave Armor",1272,256,47165,20,46,13302,1229,1,6,70200,8600,0
+"Cruel Combatant's Ringmail Armor",1273,64,47157,24,46,13302,1234,1,6,70200,8600,0
+"Cruel Combatant's Ringmail Armor",1274,64,47156,20,46,13302,1233,1,6,70200,8600,0
+"Cruel Combatant's Leather Armor",1275,8,47161,24,46,13302,1238,1,6,70200,8600,0
+"Cruel Combatant's Leather Armor",1276,8,47160,20,46,13302,1237,1,6,70200,8600,0
+"Cruel Combatant's Satin Armor",1277,16,47155,24,46,13302,391,1,6,70200,8600,0
+"Cruel Combatant's Satin Armor",1278,16,47154,20,46,13302,389,1,6,70200,8600,0
+"Cruel Combatant's Scaled Armor",1279,2,47153,24,46,13302,1242,1,6,70200,8600,0
+"Cruel Combatant's Scaled Armor",1280,2,47152,20,46,13302,1241,1,6,70200,8600,0
+"Cruel Combatant's Ironskin Armor",1281,512,47162,24,46,13302,1246,1,6,70200,8600,0
+"Cruel Combatant's Ironskin Armor",1282,512,47163,20,46,13302,1245,1,6,70200,8600,0
+"Cruel Combatant's Silk Armor",1283,128,47151,24,46,13302,1250,1,6,70200,8600,0
+"Cruel Combatant's Silk Armor",1284,128,47150,20,46,13302,1249,1,6,70200,8600,0
+"Cruel Combatant's Chain Armor",1285,4,47173,24,46,13302,1253,1,6,70200,8600,0
+"Cruel Combatant's Chain Armor",1286,4,47172,20,46,13302,1254,1,6,70200,8600,0
+"Cruel Combatant's Dragonhide Armor",1287,1024,47171,24,46,13302,1258,1,6,70200,8600,0
+"Cruel Combatant's Dragonhide Armor",1288,1024,47170,20,46,13302,1257,1,6,70200,8600,0
+"Cruel Combatant's Felskin Armor",1289,2048,47167,24,46,13302,1261,1,6,70200,8600,0
+"Cruel Combatant's Felskin Armor",1290,2048,47166,20,46,13302,1262,1,6,70200,8600,0
+"Cruel Combatant's Dreadplate Armor",1291,32,47169,24,46,13302,1266,1,6,70200,8600,0
+"Cruel Combatant's Dreadplate Armor",1292,32,47168,20,46,13302,1265,1,6,70200,8600,0
+"Titanic Onslaught Armor",1293,1,0,0,56,13193,0,1,6,70200,8901,0
+"Titanic Onslaught Armor",1294,1,0,0,56,2015,1293,1,6,70200,8902,0
+"Titanic Onslaught Armor",1295,1,0,0,56,13145,1293,1,6,70200,8903,0
+"Titanic Onslaught Armor",1296,1,0,0,56,1641,1293,1,6,70200,8900,0
+"Diabolic Raiment",1297,256,0,0,56,13193,0,1,6,70200,8901,0
+"Diabolic Raiment",1298,256,0,0,56,2015,1297,1,6,70200,8902,0
+"Diabolic Raiment",1299,256,0,0,56,13145,1297,1,6,70200,8903,0
+"Diabolic Raiment",1300,256,0,0,56,1641,1297,1,6,70200,8900,0
+"Regalia of the Skybreaker",1301,64,0,0,56,13193,0,1,6,70200,8901,0
+"Regalia of the Skybreaker",1302,64,0,0,56,1641,1301,1,6,70200,8900,0
+"Regalia of the Skybreaker",1303,64,0,0,56,2015,1301,1,6,70200,8902,0
+"Regalia of the Skybreaker",1304,64,0,0,56,13145,1301,1,6,70200,8903,0
+"Fanged Slayer's Armor",1305,8,0,0,56,13193,0,1,6,70200,8901,0
+"Fanged Slayer's Armor",1306,8,0,0,56,1641,1305,1,6,70200,8900,0
+"Fanged Slayer's Armor",1307,8,0,0,56,2015,1305,1,6,70200,8902,0
+"Fanged Slayer's Armor",1308,8,0,0,56,13145,1305,1,6,70200,8903,0
+"Vestments of Blind Absolution",1309,16,0,0,56,13193,0,1,6,70200,8901,0
+"Vestments of Blind Absolution",1310,16,0,0,56,13145,1309,1,6,70200,8903,0
+"Vestments of Blind Absolution",1312,16,0,0,56,2015,1309,1,6,70200,8902,0
+"Radiant Lightbringer Armor",1313,2,0,0,56,13193,0,1,6,70200,8901,0
+"Radiant Lightbringer Armor",1314,2,0,0,56,13145,1313,1,6,70200,8903,0
+"Radiant Lightbringer Armor",1315,2,0,0,56,1641,1313,1,6,70200,8900,0
+"Radiant Lightbringer Armor",1316,2,0,0,56,2015,1313,1,6,70200,8902,0
+"Xuen's Battlegear",1317,512,0,0,56,13193,0,1,6,70200,8901,0
+"Xuen's Battlegear",1318,512,0,0,56,13145,1317,1,6,70200,8903,0
+"Xuen's Battlegear",1319,512,0,0,56,1641,1317,1,6,70200,8900,0
+"Xuen's Battlegear",1320,512,0,0,56,2015,1317,1,6,70200,8902,0
+"Regalia of the Arcane Tempest",1321,128,0,0,56,13193,0,1,6,70200,8901,0
+"Regalia of the Arcane Tempest",1322,128,0,0,56,13145,1321,1,6,70200,8903,0
+"Regalia of the Arcane Tempest",1323,128,0,0,56,1641,1321,1,6,70200,8900,0
+"Regalia of the Arcane Tempest",1324,128,0,0,56,2015,1321,1,6,70200,8902,0
+"Wildstalker Armor",1325,4,0,0,56,13193,0,1,6,70200,8901,0
+"Wildstalker Armor",1326,4,0,0,56,13145,1325,1,6,70200,8903,0
+"Wildstalker Armor",1327,4,0,0,56,1641,1325,1,6,70200,8900,0
+"Wildstalker Armor",1328,4,0,0,56,2015,1325,1,6,70200,8902,0
+"Stormheart Raiment",1329,1024,0,0,56,13193,0,1,6,70200,8901,0
+"Stormheart Raiment",1330,1024,0,0,56,13145,1329,1,6,70200,8903,0
+"Stormheart Raiment",1331,1024,0,0,56,1641,1329,1,6,70200,8900,0
+"Stormheart Raiment",1332,1024,0,0,56,2015,1329,1,6,70200,8902,0
+"Demonbane Armor",1333,2048,0,0,56,13193,0,1,6,70200,8901,0
+"Demonbane Armor",1334,2048,0,0,56,13145,1333,1,6,70200,8903,0
+"Demonbane Armor",1335,2048,0,0,56,1641,1333,1,6,70200,8900,0
+"Demonbane Armor",1336,2048,0,0,56,2015,1333,1,6,70200,8902,0
+"Gravewarden Armaments",1337,32,0,0,56,13193,0,1,6,70200,8901,0
+"Gravewarden Armaments",1338,32,0,0,56,13145,1337,1,6,70200,8903,0
+"Gravewarden Armaments",1339,32,0,0,56,1641,1337,1,6,70200,8900,0
+"Gravewarden Armaments",1340,32,0,0,56,2015,1337,1,6,70200,8902,0
+"Vestments of Blind Absolution",1342,16,0,0,56,1641,1309,1,6,70200,8900,0
+"Warmongering Gladiator's Satin Armor Boogaloo",1343,16,43170,25,13,13301,0,1,5,0,7100,0
+BT,1344,0,0,1,0,0,0,1,0,0,4630,0
+"Armaments of the Ebon Blade",1345,32,47255,1,0,0,0,1,0,70001,6800,0
+"Armaments of the Silver Hand",1346,2,47256,1,0,0,0,1,0,70001,6800,0
+"The Warglaives of Azzinoth",1347,2048,47331,3,0,0,0,1,0,20100,6800,0
+"Fierce Combatant's Dreadplate Armor",1348,32,47338,20,57,13302,1400,1,6,70300,8900,0
+"Fierce Combatant's Dreadplate Armor",1349,32,47337,24,57,13302,1401,1,6,70300,8900,0
+"Fierce Gladiator's Dreadplate Armor",1352,32,47403,22,57,3859,1400,1,6,70300,8902,0
+"Fierce Gladiator's Dreadplate Armor",1353,32,47404,26,57,3859,1401,1,6,70300,8902,0
+"Fierce Combatant's Felskin Armor",1354,2048,47340,20,57,13302,1402,1,6,70300,8900,0
+"Fierce Combatant's Felskin Armor",1355,2048,47339,24,57,13302,1403,1,6,70300,8900,0
+"Fierce Gladiator's Felskin Armor",1358,2048,47384,22,57,3859,1402,1,6,70300,8902,0
+"Fierce Gladiator's Felskin Armor",1359,2048,47383,26,57,3859,1403,1,6,70300,8902,0
+"Fierce Combatant's Dragonhide Armor",1360,1024,47336,20,57,13302,1404,1,6,70300,8900,0
+"Fierce Combatant's Dragonhide Armor",1361,1024,47335,24,57,13302,1405,1,6,70300,8900,0
+"Fierce Combatant's Chain Armor",1362,4,47334,20,57,13302,1406,1,6,70300,8900,0
+"Fierce Combatant's Chain Armor",1363,4,47333,24,57,13302,1407,1,6,70300,8900,0
+"Fierce Combatant's Silk Armor",1364,128,47356,20,57,13302,1408,1,6,70300,8900,0
+"Fierce Combatant's Silk Armor",1365,128,47355,24,57,13302,1409,1,6,70300,8900,0
+"Fierce Combatant's Ironskin Armor",1366,512,47343,20,57,13302,1410,1,6,70300,8900,0
+"Fierce Combatant's Ironskin Armor",1367,512,47344,24,57,13302,1411,1,6,70300,8900,0
+"Fierce Combatant's Scaled Armor",1368,2,47354,20,57,13302,1412,1,6,70300,8900,0
+"Fierce Combatant's Scaled Armor",1369,2,47353,24,57,13302,1413,1,6,70300,8900,0
+"Fierce Combatant's Satin Armor",1370,16,47352,20,57,13302,1414,1,6,70300,8900,0
+"Fierce Combatant's Satin Armor",1371,16,47351,24,57,13302,1415,1,6,70300,8900,0
+"Fierce Combatant's Leather Armor",1372,8,47346,20,57,13302,1416,1,6,70300,8900,0
+"Fierce Combatant's Leather Armor",1373,8,47345,24,57,13302,1417,1,6,70300,8900,0
+"Fierce Combatant's Ringmail Armor",1374,64,47350,20,57,13302,1418,1,6,70300,8900,0
+"Fierce Combatant's Ringmail Armor",1375,64,47349,24,57,13302,1419,1,6,70300,8900,0
+"Fierce Combatant's Felweave Armor",1376,256,47341,20,57,13302,1420,1,6,70300,8900,0
+"Fierce Combatant's Felweave Armor",1377,256,47342,24,57,13302,1421,1,6,70300,8900,0
+"Fierce Combatant's Plate Armor",1378,1,47347,20,57,13302,1422,1,6,70300,8900,0
+"Fierce Combatant's Plate Armor",1379,1,47348,24,57,13302,1423,1,6,70300,8900,0
+"Fierce Gladiator's Dragonhide Armor",1380,1024,47405,22,57,3859,1404,1,6,70300,8902,0
+"Fierce Gladiator's Dragonhide Armor",1381,1024,47406,26,57,3859,1405,1,6,70300,8902,0
+"Fierce Gladiator's Chain Armor",1382,4,47407,22,57,3859,1406,1,6,70300,8902,0
+"Fierce Gladiator's Chain Armor",1383,4,47408,26,57,3859,1407,1,6,70300,8902,0
+"Fierce Gladiator's Silk Armor",1384,128,47387,22,57,3859,1408,1,6,70300,8902,0
+"Fierce Gladiator's Silk Armor",1385,128,47388,26,57,3859,1409,1,6,70300,8902,0
+"Fierce Gladiator's Ironskin Armor",1386,512,47399,22,57,3859,1410,1,6,70300,8902,0
+"Fierce Gladiator's Ironskin Armor",1387,512,47400,26,57,3859,1411,1,6,70300,8902,0
+"Fierce Gladiator's Scaled Armor",1388,2,47389,22,57,3859,1412,1,6,70300,8902,0
+"Fierce Gladiator's Scaled Armor",1389,2,47390,26,57,3859,1413,1,6,70300,8902,0
+"Fierce Gladiator's Satin Armor",1390,16,47391,22,57,3859,1414,1,6,70300,8902,0
+"Fierce Gladiator's Satin Armor",1391,16,47392,26,57,3859,1415,1,6,70300,8902,0
+"Fierce Gladiator's Leather Armor",1392,8,47398,22,57,3859,1416,1,6,70300,8902,0
+"Fierce Gladiator's Leather Armor",1393,8,47397,26,57,3859,1417,1,6,70300,8902,0
+"Fierce Gladiator's Ringmail Armor",1394,64,47393,22,57,3859,1418,1,6,70300,8902,0
+"Fierce Gladiator's Ringmail Armor",1395,64,47394,26,57,3859,1419,1,6,70300,8902,0
+"Fierce Gladiator's Felweave Armor",1396,256,47402,22,57,3859,1420,1,6,70300,8902,0
+"Fierce Gladiator's Felweave Armor",1397,256,47401,26,57,3859,1421,1,6,70300,8902,0
+"Fierce Gladiator's Plate Armor",1398,1,47395,26,57,3859,1423,1,6,70300,8902,0
+"Fierce Gladiator's Plate Armor",1399,1,47396,22,57,3859,1422,1,6,70300,8902,0
+"Fierce Gladiator's Dreadplate Armor",1400,32,47377,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Dreadplate Armor",1401,32,47378,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Felskin Armor",1402,2048,47358,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Felskin Armor",1403,2048,47357,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Dragonhide Armor",1404,1024,47379,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Dragonhide Armor",1405,1024,47380,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Chain Armor",1406,4,47381,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Chain Armor",1407,4,47382,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Silk Armor",1408,128,47361,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Silk Armor",1409,128,47362,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Ironskin Armor",1410,512,47373,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Ironskin Armor",1411,512,47374,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Scaled Armor",1412,2,47363,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Scaled Armor",1413,2,47364,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Satin Armor",1414,16,47365,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Satin Armor",1415,16,47366,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Leather Armor",1416,8,47372,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Leather Armor",1417,8,47371,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Ringmail Armor",1418,64,47367,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Ringmail Armor",1419,64,47368,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Felweave Armor",1420,256,47376,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Felweave Armor",1421,256,47375,24,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Plate Armor",1422,1,47370,20,57,13301,0,1,6,70300,8901,0
+"Fierce Gladiator's Plate Armor",1423,1,47369,24,57,13301,0,1,6,70300,8901,0
+"Dreadmist Raiment",1424,400,0,2,52,13193,0,1,0,0,600,0
+"Magister's Regalia",1425,400,0,2,52,13193,0,1,0,0,600,0
+"Wildheart Raiment",1426,3592,0,2,52,13193,0,1,0,0,600,0
+"Shadowcraft Armor",1427,3592,0,2,52,13193,0,1,0,0,600,0
+"Beaststalker Armor",1428,68,0,2,52,13193,0,1,0,0,600,0
+"The Elements",1429,68,0,2,52,13193,0,1,0,0,600,0
+"Lightforge Armor",1430,35,0,2,52,13193,0,1,0,0,600,0
+"Battlegear of Valor",1431,35,0,2,52,13193,0,1,0,0,600,0
+"Golden King Plate",1436,1,47610,2,58,0,0,1,4,50003,4950,0
+"Betrayer Regalia",1437,256,47611,2,58,0,0,1,4,50003,4950,0
+"Windfury Armor",1438,64,47612,2,58,0,0,1,4,50003,4950,0
+"Silent Assassin Armor",1439,8,47613,2,58,0,0,1,4,50003,4950,0
+"Light Regalia",1440,16,47614,2,58,0,0,1,4,50003,4950,0
+"Holy Warrior Plate",1441,2,47615,2,58,0,0,1,4,50003,4950,0
+"Regal Lord Armor",1442,512,47616,2,58,0,0,1,4,50003,4950,0
+"Elemental Triad Regalia",1443,128,47617,2,58,0,0,1,4,50003,4950,0
+"Howling Beast Armor",1444,4,47618,2,58,0,0,1,4,50003,4950,0
+"Cycle Armor",1445,1024,47619,2,58,0,0,1,4,50003,4950,0
+"Lich Lord Plate",1446,32,47620,2,58,0,0,1,4,50003,4950,0
+"Righteous Battleplate",1447,35,48060,2,60,0,0,1,1,20000,1150,0
+"Der'izu Armor",1448,68,48059,2,60,0,0,1,1,20000,1150,0
+"Obsidian Prowler's Garb",1449,3592,48061,2,60,0,0,1,1,20000,1150,0
+"Mana-Etched Regalia",1450,400,48058,2,60,0,0,1,1,20000,1150,0
+"Inkrot Test Set",1451,4095,0,1,0,0,0,1,0,0,1150,0
+"The Warglaives of Azzinoth",1453,0,47331,3,0,0,0,1,1,20100,1560,0
+,1454,0,0,1,0,0,0,1,0,60200,10,0
+,1455,0,0,1,0,0,0,1,0,60200,10,0
+"Timewarden's Plate",1456,35,47920,2,59,0,0,1,6,70205,8551,0
+"Chronoscryer's Finery",1457,400,47921,2,59,13193,0,1,6,70205,8551,0
+"Epoch Sentinel's Mail",1458,68,47922,2,59,13193,0,1,6,70205,8551,0
+"Riftscarred Vestments",1459,3592,47923,2,59,13193,0,1,6,70205,8551,0
+,1460,0,0,1,0,0,0,1,0,60200,10,0
+,1461,0,0,1,0,0,0,1,0,60200,10,0
+,1462,0,0,1,0,0,0,1,0,0,10,0
+,1463,0,0,1,0,0,0,1,0,30100,10,0
+"Weapons of the Lightforged",1464,4095,48316,3,0,0,0,1,6,70300,9050,0
+,1465,0,0,1,0,0,0,1,0,30200,10,0
+,1466,0,0,1,0,0,0,1,0,30200,10,0
+,1467,0,0,1,0,0,0,1,0,0,10,0
+"Venerated Triumvirate Battleplate",1468,35,48566,2,63,0,0,1,6,70300,8750,0
+"Sterling Triumvirate Chainmail",1469,68,48567,2,63,0,0,1,6,70300,8750,0
+"Burnished Triumvirate Armor",1470,3592,48568,2,63,0,0,1,6,70300,8750,0
+"Light-Woven Triumvirate Regalia",1471,400,48569,2,63,0,0,1,6,70300,8750,0
+"Dreadwake Armor",1472,32,0,0,62,13193,0,1,6,70300,9301,0
+"Dreadwake Armor",1473,32,0,0,62,2015,1472,1,6,70300,9302,0
+"Dreadwake Armor",1474,32,0,0,62,13145,1472,1,6,70300,9303,0
+"Dreadwake Armor",1475,32,0,0,62,1641,1472,1,6,70300,9300,0
+"Felreaper Vestments",1476,2048,0,0,62,13193,0,1,6,70300,9301,0
+"Felreaper Vestments",1477,2048,0,0,62,2015,1476,1,6,70300,9302,0
+"Felreaper Vestments",1478,2048,0,0,62,13145,1476,1,6,70300,9303,0
+"Felreaper Vestments",1479,2048,0,0,62,1641,1476,1,6,70300,9300,0
+"Bearmantle Battlegear",1480,1024,0,0,62,13193,0,1,6,70300,9301,0
+"Bearmantle Battlegear",1481,1024,0,0,62,2015,1480,1,6,70300,9302,0
+"Bearmantle Battlegear",1482,1024,0,0,62,13145,1480,1,6,70300,9303,0
+"Bearmantle Battlegear",1483,1024,0,0,62,1641,1480,1,6,70300,9300,0
+"Serpentstalker Guise",1484,4,0,0,62,13193,0,1,6,70300,9301,0
+"Serpentstalker Guise",1485,4,0,0,62,2015,1484,1,6,70300,9302,0
+"Serpentstalker Guise",1486,4,0,0,62,13145,1484,1,6,70300,9303,0
+"Serpentstalker Guise",1487,4,0,0,62,1641,1484,1,6,70300,9300,0
+"Runebound Regalia",1488,128,0,0,62,13193,0,1,6,70300,9301,0
+"Runebound Regalia",1489,128,0,0,62,2015,1488,1,6,70300,9302,0
+"Runebound Regalia",1490,128,0,0,62,13145,1488,1,6,70300,9303,0
+"Runebound Regalia",1491,128,0,0,62,1641,1488,1,6,70300,9300,0
+"Chi-Ji's Battlegear",1492,512,0,0,62,13193,0,1,6,70300,9301,0
+"Chi-Ji's Battlegear",1493,512,0,0,62,2015,1492,1,6,70300,9302,0
+"Chi-Ji's Battlegear",1494,512,0,0,62,13145,1492,1,6,70300,9303,0
+"Chi-Ji's Battlegear",1495,512,0,0,62,1641,1492,1,6,70300,9300,0
+"Light's Vanguard Battleplate",1496,2,0,0,62,13193,0,1,6,70300,9301,0
+"Light's Vanguard Battleplate",1497,2,0,0,62,2015,1496,1,6,70300,9302,0
+"Light's Vanguard Battleplate",1498,2,0,0,62,13145,1496,1,6,70300,9303,0
+"Light's Vanguard Battleplate",1499,2,0,0,62,1641,1496,1,6,70300,9300,0
+"Gilded Seraph's Raiment",1500,16,0,0,62,13193,0,1,6,70300,9301,0
+"Gilded Seraph's Raiment",1501,16,0,0,62,2015,1500,1,6,70300,9302,0
+"Gilded Seraph's Raiment",1502,16,0,0,62,13145,1500,1,6,70300,9303,0
+"Gilded Seraph's Raiment",1503,16,0,0,62,1641,1500,1,6,70300,9300,0
+"Regalia of the Dashing Scoundrel",1504,8,0,0,62,13193,0,1,6,70300,9301,0
+"Regalia of the Dashing Scoundrel",1505,8,0,0,62,2015,1504,1,6,70300,9302,0
+"Regalia of the Dashing Scoundrel",1506,8,0,0,62,13145,1504,1,6,70300,9303,0
+"Regalia of the Dashing Scoundrel",1507,8,0,0,62,1641,1504,1,6,70300,9300,0
+"Garb of Venerated Spirits",1508,64,0,0,62,13193,0,1,6,70300,9301,0
+"Garb of Venerated Spirits",1509,64,0,0,62,2015,1508,1,6,70300,9302,0
+"Garb of Venerated Spirits",1510,64,0,0,62,13145,1508,1,6,70300,9303,0
+"Garb of Venerated Spirits",1511,64,0,0,62,1641,1508,1,6,70300,9300,0
+"Grim Inquisitor's Regalia",1512,256,0,0,62,13193,0,1,6,70300,9301,0
+"Grim Inquisitor's Regalia",1513,256,0,0,62,2015,1512,1,6,70300,9302,0
+"Grim Inquisitor's Regalia",1514,256,0,0,62,13145,1512,1,6,70300,9303,0
+"Grim Inquisitor's Regalia",1515,256,0,0,62,1641,1512,1,6,70300,9300,0
+"Juggernaut Battlegear",1516,1,0,0,62,13193,0,1,6,70300,9301,0
+"Juggernaut Battlegear",1517,1,0,0,62,2015,1516,1,6,70300,9302,0
+"Juggernaut Battlegear",1518,1,0,0,62,13145,1516,1,6,70300,9303,0
+"Juggernaut Battlegear",1519,1,0,0,62,1641,1516,1,6,70300,9300,0
+"Highmountain's Heritage",1522,0,49783,10,64,0,0,1,0,70305,10,0
+"Heritage of the Shal'dorei",1523,0,49784,10,64,0,0,1,0,70305,10,0
+"Heritage of the Ren'dorei",1524,0,49928,6,64,0,0,1,0,70305,10,0
+"Heritage of the Lightforged",1525,0,49782,6,64,0,0,1,0,70305,10,0
+"Goldspine Plate",1526,35,50347,2,60,0,0,1,1,20000,1150,0
+"Crimson Sentinel Garb",1527,68,50346,2,60,0,0,1,1,20000,1150,0
+"Tundraspite Armor",1528,3592,50345,2,60,0,0,1,1,20000,1150,0
+"Mindwrack Raiment",1529,400,50344,2,60,0,0,1,1,20000,1150,0
+"Frostwolf Leathers",1530,3592,50678,2,61,0,0,1,5,60002,8551,0
+"Ceremonial Karabor Finery",1531,400,50680,2,61,0,0,1,5,60002,8551,0
+"Sha'tari Defender's Plate",1532,35,50681,2,61,0,0,1,5,60002,8551,0
+"Blackrock Sootplate",1533,35,50682,2,61,0,0,1,5,60002,6999,0
+"Garb of the Shadowmoon",1534,400,50683,2,61,0,0,1,5,60002,6999,0
+"Thunderlord Harness",1535,3592,50684,2,61,0,0,1,5,60002,6999,0
+"Warsong Outrider's Garb",1536,68,50685,2,61,0,0,1,5,60002,6999,0
+"Vestments of the Tidesages",1637,400,52868,2,165,0,0,1,7,80001,10110,0
+"Eternal Curator's Vestment",1638,400,0,0,166,13193,0,1,7,80001,11010,0
+"Eternal Curator's Vestment",1639,400,0,0,166,2015,1638,1,7,80001,11012,0
+"Eternal Curator's Vestment",1640,400,0,0,166,13145,1638,1,7,80001,11013,0
+"Eternal Curator's Vestment",1641,400,0,0,166,1641,1638,1,7,80001,11009,0
+"Eternal Curator's Garb",1642,3592,0,0,166,13193,0,1,7,80001,11010,0
+"Eternal Curator's Garb",1643,3592,0,0,166,2015,1642,1,7,80001,11012,0
+"Eternal Curator's Garb",1644,3592,0,0,166,13145,1642,1,7,80001,11013,0
+"Eternal Curator's Garb",1645,3592,0,0,166,1641,1642,1,7,80001,11009,0
+"Eternal Curator's Chains",1646,68,0,0,166,13193,0,1,7,80001,11010,0
+"Eternal Curator's Chains",1647,68,0,0,166,2015,1646,1,7,80001,11012,0
+"Eternal Curator's Chains",1648,68,0,0,166,13145,1646,1,7,80001,11013,0
+"Eternal Curator's Chains",1649,68,0,0,166,1641,1646,1,7,80001,11009,0
+"Eternal Curator's Protectorate",1650,35,0,0,166,13193,0,1,7,80001,11010,0
+"Eternal Curator's Protectorate",1651,35,0,0,166,2015,1650,1,7,80001,11012,0
+"Eternal Curator's Protectorate",1652,35,0,0,166,13145,1650,1,7,80001,11013,0
+"Eternal Curator's Protectorate",1653,35,0,0,166,1641,1650,1,7,80001,11009,0
+"Dread Gladiator's Vestment",1654,400,63575,20,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Vestment",1655,400,60674,22,167,13303,1654,1,7,80001,10999,0
+"7th Legionnaire's Vestment",1656,400,0,20,167,13448,1654,1,7,80001,11001,0
+"Dread Gladiator's Leathers",1657,3592,63574,20,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Leathers",1658,3592,60676,22,167,13303,1657,1,7,80001,10999,0
+"7th Legionnaire's Leathers",1659,3592,0,20,167,13448,1657,1,7,80001,11001,0
+"Dread Gladiator's Chain",1660,68,63573,20,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Chain",1661,68,60678,22,167,13303,1660,1,7,80001,10999,0
+"7th Legionnaire's Chain",1662,68,0,20,167,13448,1660,1,7,80001,11001,0
+"Dread Gladiator's Plate",1663,35,63572,20,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Plate",1664,35,60681,22,167,13303,1663,1,7,80001,10999,0
+"7th Legionnaire's Plate",1665,35,0,20,167,13448,1663,1,7,80001,11001,0
+"Dread Gladiator's Vestment",1666,400,63571,24,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Vestment",1667,400,60675,26,167,13303,1666,1,7,80001,10999,0
+"Honorbound Artificer's Vestment",1668,400,0,24,167,13448,1666,1,7,80001,11001,0
+"Dread Gladiator's Leathers",1669,3592,63570,24,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Leathers",1670,3592,60677,26,167,13303,1669,1,7,80001,10999,0
+"Honorbound Outrider's Leathers",1671,3592,0,24,167,13448,1669,1,7,80001,11001,0
+"Dread Gladiator's Chain",1672,68,63569,24,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Chain",1673,68,60679,26,167,13303,1672,1,7,80001,10999,0
+"Honorbound Vanguard's Chain",1674,68,0,24,167,13448,1672,1,7,80001,11001,0
+"Dread Gladiator's Plate",1675,35,63568,24,167,13301,0,1,7,80001,11002,0
+"Dread Aspirant's Plate",1676,35,60682,26,167,13303,1675,1,7,80001,10999,0
+"Honorbound Centurion's Plate",1677,35,0,24,167,13448,1675,1,7,80001,11001,0
+"Heritage of the Dark Iron",1679,0,51483,6,64,0,0,1,0,80001,10,0
+"Heritage of the Warsong",1680,0,51484,10,64,0,0,1,0,80001,10,0
+"Heritage of the Blackrock",1681,0,51484,10,64,0,0,1,0,80001,10,0
+"Heritage of the Frostwolves",1682,0,51484,10,64,0,0,1,0,80001,10,0
+"Dread Gladiator's Vestment",1691,400,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1692,400,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1693,400,0,27,49,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1694,400,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1696,3592,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1698,3592,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1699,3592,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1701,68,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1703,68,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1704,68,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1706,35,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1708,35,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1709,35,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1710,35,0,27,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1711,400,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1713,400,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1714,400,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1716,3592,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1718,3592,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1719,3592,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1721,68,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1723,68,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1724,68,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1726,35,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1727,35,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1728,35,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1729,35,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1730,35,0,23,0,0,0,1,7,80001,11003,0
+"Dread Gladiator's Plate",1731,35,0,26,167,3859,1675,1,7,80001,11003,0
+"Dread Gladiator's Chain",1732,68,0,26,167,3859,1672,1,7,80001,11003,0
+"Dread Gladiator's Leathers",1733,3592,0,26,167,3859,1669,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1734,400,0,26,167,3859,1666,1,7,80001,11003,0
+"Dread Gladiator's Plate",1735,35,0,22,167,3859,1663,1,7,80001,11003,0
+"Dread Gladiator's Chain",1736,68,0,22,167,3859,1660,1,7,80001,11003,0
+"Dread Gladiator's Leathers",1737,3592,0,22,167,3859,1657,1,7,80001,11003,0
+"Dread Gladiator's Vestment",1738,400,0,22,167,3859,1654,1,7,80001,11003,0
+,1739,0,0,1,0,0,0,1,7,80001,1200,0
+,1740,0,0,3,0,0,0,1,0,20001,200,0
+"Heritage of Kul Tiras",1741,0,53722,6,64,0,0,1,0,80105,10,0
+"Heritage of the Zandalari",1742,0,53721,10,64,0,0,1,0,80105,10,0
+"Sinister Gladiator's Vestment",1743,400,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1744,35,0,27,0,0,0,1,7,80100,11103,0
+"Deathguard's Battleplate",1745,35,0,24,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Plate",1746,35,60690,26,168,13303,1745,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1747,35,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1748,35,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1749,35,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Plate",1750,35,0,26,168,3859,1745,1,7,80100,11103,0
+"Sinister Gladiator's Plate",1751,35,63567,26,168,13301,1745,1,7,80100,11102,0
+"Blightguard's Chains",1752,68,0,24,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Chain",1753,68,60688,26,168,13303,1752,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1754,68,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1755,68,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1756,68,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Chain",1757,68,0,26,168,3859,1752,1,7,80100,11103,0
+"Sinister Gladiator's Chain",1758,68,63566,26,168,13301,1752,1,7,80100,11102,0
+"Deathstalker's Guise",1759,3592,0,24,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Leathers",1760,3592,60686,26,168,13303,1759,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1761,3592,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1762,3592,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1763,3592,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Leathers",1764,3592,0,26,168,3859,1759,1,7,80100,11103,0
+"Sinister Gladiator's Leathers",1765,3592,63565,26,168,13301,1759,1,7,80100,11102,0
+"Plaguebringer's Raiment",1766,400,0,24,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Vestment",1767,400,60684,26,168,13303,1766,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1768,400,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1769,400,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1770,400,0,27,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1771,400,0,26,168,3859,1766,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1772,400,63564,26,168,13301,1766,1,7,80100,11102,0
+"Sinister Gladiator's Vestment",1773,35,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1774,35,0,23,0,0,0,1,7,80100,11103,0
+"Wardenguard's Battleplate",1775,35,0,20,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Plate",1776,35,60689,22,168,13303,1775,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1777,35,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1778,35,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1779,35,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Plate",1780,35,0,22,168,3859,1775,1,7,80100,11103,0
+"Sinister Gladiator's Plate",1781,35,63563,22,168,13301,1775,1,7,80100,11102,0
+"Kaldorei Archer's Chainmail",1782,68,0,20,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Chain",1783,68,60687,22,168,13303,1782,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1784,68,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1785,68,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1786,68,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Chain",1787,68,0,22,168,3859,1782,1,7,80100,11103,0
+"Sinister Gladiator's Chain",1788,68,63562,22,168,13301,1782,1,7,80100,11102,0
+"Darkwood Sentinel's Guise",1789,3592,0,20,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Leathers",1790,3592,60685,22,168,13303,1789,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1791,3592,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1792,3592,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1793,3592,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Leathers",1794,3592,0,22,168,3859,1789,1,7,80100,11103,0
+"Sinister Gladiator's Leathers",1795,3592,63561,22,168,13301,1789,1,7,80100,11102,0
+"Moonpriest's Vestments",1796,400,0,20,168,13448,0,1,7,80100,11101,0
+"Sinister Aspirant's Vestment",1797,400,60683,22,168,13303,1796,1,7,80100,11099,0
+"Sinister Gladiator's Vestment",1798,400,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1799,400,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1800,400,0,23,0,0,0,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1801,400,0,22,168,3859,1796,1,7,80100,11103,0
+"Sinister Gladiator's Vestment",1802,400,63560,22,168,13301,1796,1,7,80100,11102,0
+"Heritage of the Bronzebeard",1803,0,53846,2,0,0,0,1,0,80001,10,0
+"Heritage of the Sin'dorei",1804,0,54096,2,0,0,0,1,0,80001,10,0
+"Soul Reaper's Raiment",1806,400,0,0,169,13193,0,1,7,80001,11110,0
+"Soul Reaper's Raiment",1807,400,0,0,169,1641,1806,1,7,80001,11109,0
+"Soul Reaper's Raiment",1808,400,0,0,169,2015,1806,1,7,80001,11111,0
+"Soul Reaper's Raiment",1809,400,0,0,169,13145,1806,1,7,80001,11112,0
+"Boneblade Battlegear",1810,3592,0,0,169,13193,0,1,7,80001,11110,0
+"Boneblade Battlegear",1811,3592,0,0,169,1641,1810,1,7,80001,11109,0
+"Boneblade Battlegear",1812,3592,0,0,169,2015,1810,1,7,80001,11111,0
+"Boneblade Battlegear",1813,3592,0,0,169,13145,1810,1,7,80001,11112,0
+"Death-Devourer Vestments",1814,68,0,0,169,13193,0,1,7,80001,11110,0
+"Death-Devourer Vestments",1815,68,0,0,169,1641,1814,1,7,80001,11109,0
+"Death-Devourer Vestments",1816,68,0,0,169,2015,1814,1,7,80001,11111,0
+"Death-Devourer Vestments",1817,68,0,0,169,13145,1814,1,7,80001,11112,0
+"Gravelord's Direplate",1818,35,0,0,169,13193,0,1,7,80001,11110,0
+"Gravelord's Direplate",1819,35,0,0,169,1641,1818,1,7,80001,11109,0
+"Gravelord's Direplate",1820,35,0,0,169,2015,1818,1,7,80001,11111,0
+"Gravelord's Direplate",1821,35,0,0,169,13145,1818,1,7,80001,11112,0
+"Brawler's Garb",1822,0,55492,6,171,0,0,1,7,80105,10110,0
+"Brawler's Garb",1823,0,55493,10,171,0,0,1,7,80105,10110,0
+"Armor of the Amaranthine Path",1824,35,55559,2,60,0,0,1,1,20000,1150,0
+"Chainmail of the Timeless Hunt",1825,68,55566,2,60,0,0,1,1,20000,1150,0
+"Restless Dreambound Battlegear",1826,3592,55572,2,60,0,0,1,1,20000,1150,0
+"Tranquil Spiritbind Regalia",1827,400,55587,2,60,0,0,1,1,20000,1150,0
+"Heritage of Gnomeregan",1828,0,54642,6,0,0,0,1,0,80200,10,0
+"Heritage of the Shu'halo",1829,0,54765,10,0,0,0,1,0,80200,10,0
+"Naga Lord's Warplate",1830,35,0,0,172,13193,0,1,7,80200,11110,0
+"Queen's Guard Scalemail",1831,68,0,0,172,13193,0,1,7,80200,11110,0
+"Razorfin Regalia",1832,3592,0,0,172,13193,0,1,7,80200,11110,0
+"Frilled Harbinger's Vestments",1833,400,0,0,172,13193,0,1,7,80200,11110,0
+"Naga Lord's Warplate",1834,35,0,0,172,2015,1830,1,7,80200,11111,0
+"Queen's Guard Scalemail",1835,68,0,0,172,2015,1831,1,7,80200,11111,0
+"Razorfin Regalia",1836,3592,0,0,172,2015,1832,1,7,80200,11111,0
+"Frilled Harbinger's Vestments",1837,400,0,0,172,2015,1833,1,7,80200,11111,0
+"Naga Lord's Warplate",1838,35,0,0,172,13145,1830,1,7,80200,11112,0
+"Queen's Guard Scalemail",1839,68,0,0,172,13145,1831,1,7,80200,11112,0
+"Razorfin Regalia",1840,3592,0,0,172,13145,1832,1,7,80200,11112,0
+"Frilled Harbinger's Vestments",1841,400,0,0,172,13145,1833,1,7,80200,11112,0
+"Naga Lord's Warplate",1842,35,0,0,172,1641,1830,1,7,80200,11109,0
+"Queen's Guard Scalemail",1843,68,0,0,172,1641,1831,1,7,80200,11109,0
+"Razorfin Regalia",1844,3592,0,0,172,1641,1832,1,7,80200,11109,0
+"Frilled Harbinger's Vestments",1845,400,0,0,172,1641,1833,1,7,80200,11109,0
+"Notorious Gladiator's Vestment",1846,400,63559,22,173,13301,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1847,400,0,54,173,3859,1846,1,7,80200,3601,0
+"Notorious Gladiator's Vestment",1848,400,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1849,400,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1850,400,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Aspirant's Vestment",1851,400,60691,22,173,13303,1846,1,7,80200,3250,0
+"Notorious Gladiator's Leathers",1852,3592,63558,22,173,13301,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1853,3592,0,54,173,3859,1852,1,7,80200,3601,0
+"Notorious Gladiator's Leathers",1854,3592,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1855,3592,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1856,3592,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Aspirant's Leathers",1857,3592,60694,22,173,13303,1852,1,7,80200,3300,0
+"Notorious Gladiator's Chain",1858,68,63557,22,173,13301,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1859,68,0,54,173,3859,1858,1,7,80200,3601,0
+"Notorious Gladiator's Chain",1860,68,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1861,68,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1862,68,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Aspirant's Chain",1863,68,60696,22,173,13303,1858,1,7,80200,3300,0
+"Notorious Gladiator's Plate",1864,35,63556,22,173,13301,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1865,35,0,54,173,3859,1864,1,7,80200,3601,0
+"Notorious Gladiator's Plate",1866,35,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1867,35,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1868,35,0,23,0,0,0,1,7,80200,3600,0
+"Notorious Aspirant's Plate",1869,35,60698,22,173,13303,1864,1,7,80200,3250,0
+"Notorious Gladiator's Vestment",1870,0,0,23,0,0,0,1,7,80200,1200,0
+"Notorious Gladiator's Vestment",1871,0,0,23,0,0,0,1,7,80200,1200,0
+"Notorious Gladiator's Vestment",1872,0,0,27,0,0,0,1,7,80200,1200,0
+"Notorious Gladiator's Vestment",1873,0,0,27,0,0,0,1,7,80200,1200,0
+"Notorious Aspirant's Plate",1874,35,60699,26,173,13303,1879,1,7,80200,3300,0
+"Notorious Gladiator's Plate",1875,35,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1876,35,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1877,35,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Plate",1878,35,0,58,173,3859,1879,1,7,80200,3601,0
+"Notorious Gladiator's Plate",1879,35,63555,26,173,13301,0,1,7,80200,3600,0
+"Notorious Aspirant's Chain",1880,68,60697,26,173,13303,1885,1,7,80200,3250,0
+"Notorious Gladiator's Chain",1881,68,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1882,68,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1883,68,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Chain",1884,68,0,58,173,3859,1885,1,7,80200,3601,0
+"Notorious Gladiator's Chain",1885,68,63554,26,173,13301,0,1,7,80200,3600,0
+"Notorious Aspirant's Leathers",1886,3592,60695,26,173,13303,1891,1,7,80200,3300,0
+"Notorious Gladiator's Leathers",1887,3592,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1888,3592,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1889,3592,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Leathers",1890,3592,0,58,173,3859,1891,1,7,80200,3601,0
+"Notorious Gladiator's Leathers",1891,3592,63553,24,173,13301,0,1,7,80200,3600,0
+"Notorious Aspirant's Vestment",1892,400,60692,26,173,13303,1897,1,7,80200,3250,0
+"Notorious Gladiator's Vestment",1893,400,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1894,400,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1895,400,0,27,0,0,0,1,7,80200,3600,0
+"Notorious Gladiator's Vestment",1896,400,0,58,173,3859,1897,1,7,80200,3601,0
+"Notorious Gladiator's Vestment",1897,400,63552,26,173,13301,0,1,7,80200,3600,0
+"Renowned Explorer's Attire",1902,0,0,2,174,0,0,1,7,80205,10,75684
+"Wendigo Woolies",1903,0,0,2,0,0,0,1,7,80205,10,73902
+"Battlegear of Valor",1904,1,0,3,0,0,0,1,0,80205,0,0
+"Dreadmist Raiment",1905,256,0,3,0,0,0,1,0,80205,0,0
+"The Elements",1906,64,0,3,0,0,0,1,0,80205,0,0
+"Shadowcraft Armor",1907,8,0,3,0,0,0,1,0,80205,0,0
+"Vestments of the Devout",1908,16,0,3,0,0,0,1,0,80205,0,0
+"Lightforge Armor",1909,2,0,3,0,0,0,1,0,80205,0,0
+"Magister's Regalia",1910,128,0,3,0,0,0,1,0,80205,0,0
+"Beaststalker Armor",1911,4,0,3,0,0,0,1,0,80205,0,0
+"Wildheart Raiment",1912,1024,0,3,0,0,0,1,0,80205,0,0
+"Vestments of the Eternal Traveler",1913,0,57686,2,0,0,0,1,7,80205,10,0
+"Crown of Eternal Winter",1915,0,0,1,0,0,0,1,7,80205,10,73888
+"Jewel of the Firelord",1916,0,0,1,0,0,0,1,7,80205,10,73889
+"Hood of Hungering Darkness",1917,0,0,1,0,0,0,1,7,80205,10,73890
+"Corrupted Gladiator's Vestment",1944,0,0,23,0,0,0,1,7,80300,1200,0
+"Corrupted Gladiator's Vestment",1945,0,0,23,0,0,0,1,7,80300,1200,0
+"Corrupted Gladiator's Plate",1947,35,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",1948,35,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",1949,35,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",1950,35,0,22,175,3859,1951,1,7,80300,3601,0
+"Corrupted Gladiator's Plate",1951,35,60706,16,175,13301,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",1953,68,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",1954,68,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",1955,68,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",1956,68,0,22,175,3859,1957,1,7,80300,3601,0
+"Corrupted Gladiator's Chain",1957,68,60704,16,175,13301,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",1959,3592,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",1960,3592,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",1961,3592,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",1962,3592,0,22,175,3859,1963,1,7,80300,3601,0
+"Corrupted Gladiator's Leathers",1963,3592,60702,16,175,13301,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",1965,400,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",1966,400,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",1967,400,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",1968,400,0,22,175,3859,1969,1,7,80300,3601,0
+"Corrupted Gladiator's Vestment",1969,400,60700,16,175,13301,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",1970,0,0,27,0,0,0,1,7,80300,1200,0
+"Corrupted Gladiator's Vestment",1971,0,0,27,0,0,0,1,7,80300,1200,0
+"Corrupted Gladiator's Plate",1972,35,0,26,175,3859,1951,1,7,80300,3601,0
+"Corrupted Gladiator's Chain",1973,68,0,26,175,3859,1957,1,7,80300,3601,0
+"Corrupted Gladiator's Leathers",1974,3592,0,26,175,3859,1963,1,7,80300,3601,0
+"Corrupted Gladiator's Vestment",1975,400,0,26,175,3859,1969,1,7,80300,3601,0
+"Heritage of Gilneas",1976,0,54990,6,0,0,0,1,0,80300,10,0
+"Heritage of Kezan",1977,0,57080,10,0,0,0,1,0,80305,10,0
+"Zeppelin Pilot's Helmet",1978,0,57080,11,0,0,0,1,0,80305,10,0
+"Heritage of the Mechagnome",1980,0,58436,6,64,0,0,1,0,80305,10,0
+"Heritage of the Vulpera",1981,0,58435,10,64,0,0,1,0,80305,10,0
+"Cosmic Aberration's Plate",1982,35,0,0,176,13193,0,1,7,80305,4301,0
+"Cosmic Aberration's Plate",1983,35,0,0,176,1641,1982,1,7,80305,4300,0
+"Cosmic Aberration's Plate",1984,35,0,0,176,2015,1982,1,7,80305,4302,0
+"Cosmic Aberration's Plate",1985,35,0,0,176,13145,1982,1,7,80305,4303,0
+"Lurking Defiler's Scalemail",1986,68,0,0,176,13193,0,1,7,80305,4301,0
+"Lurking Defiler's Scalemail",1987,68,0,0,176,1641,1986,1,7,80305,4300,0
+"Lurking Defiler's Scalemail",1988,68,0,0,176,2015,1986,1,7,80305,4302,0
+"Lurking Defiler's Scalemail",1989,68,0,0,176,13145,1986,1,7,80305,4303,0
+"Treacherous Schemer's Leathers",1990,3592,0,0,176,13193,0,1,7,80305,4301,0
+"Treacherous Schemer's Leathers",1991,3592,0,0,176,1641,1990,1,7,80305,4300,0
+"Treacherous Schemer's Leathers",1992,3592,0,0,176,2015,1990,1,7,80305,4302,0
+"Treacherous Schemer's Leathers",1993,3592,0,0,176,13145,1990,1,7,80305,4303,0
+"Oblivion Cultist's Robes",1994,400,0,0,176,13193,0,1,7,80305,4301,0
+"Oblivion Cultist's Robes",1995,400,0,0,176,1641,1994,1,7,80305,4300,0
+"Oblivion Cultist's Robes",1996,400,0,0,176,2015,1994,1,7,80305,4302,0
+"Oblivion Cultist's Robes",1997,400,0,0,176,13145,1994,1,7,80305,4303,0
+"Renowned Explorer's Attire",1998,0,0,3,174,0,0,1,7,80205,10,75685
+"Renowned Explorer's Attire",1999,0,0,3,174,0,0,1,7,80205,10,75686
+"Corrupted Gladiator's Leathers",2002,3592,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",2003,400,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",2004,400,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Vestment",2005,400,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",2006,3592,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",2007,68,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",2008,68,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Chain",2009,68,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",2010,35,0,27,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",2011,35,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Plate",2012,35,0,23,0,0,0,1,7,80300,3600,0
+"Corrupted Gladiator's Leathers",2013,3592,0,23,0,0,0,1,7,80300,3600,0
+"Vestments of the Selfless",2015,400,60595,0,181,13590,0,1,8,90001,3600,93647
+"Vestments of the Harmonious",2016,400,60595,0,181,13591,2015,1,8,90001,3600,93647
+"Vestments of the Reverent",2017,400,60595,0,181,13813,2015,1,8,90001,3600,93647
+"Vestments of the Discordant",2018,400,63018,0,181,13813,2015,1,8,90001,3600,93647
+"Garb of the Selfless",2019,3592,60595,0,181,13590,0,1,8,90001,3600,93647
+"Garb of the Harmonious",2020,3592,60595,0,181,13591,2019,1,8,90001,3600,93647
+"Garb of the Reverent",2021,3592,60595,0,181,13813,2019,1,8,90001,3600,93647
+"Garb of the Discordant",2022,3592,63019,0,181,13813,2019,1,8,90001,3600,93647
+"Chain of the Selfless",2023,68,60595,0,181,13590,0,1,8,90001,3600,93647
+"Chain of the Discordant",2024,68,63020,0,181,13813,2023,1,8,90001,3600,93647
+"Chain of the Harmonious",2025,68,60595,0,181,13591,2023,1,8,90001,3600,93647
+"Chain of the Reverent",2026,68,60595,0,181,13813,2023,1,8,90001,3600,93647
+"Warplate of the Reverent",2027,35,60595,0,181,13813,2029,1,8,90001,3600,93647
+"Warplate of the Discordant",2028,35,63021,0,181,13813,2029,1,8,90001,3600,93647
+"Warplate of the Selfless",2029,35,60595,0,181,13590,0,1,8,90001,3600,93647
+"Warplate of the Harmonious",2030,35,60595,0,181,13591,2029,1,8,90001,3600,93647
+"Rationale of Maldraxxus",2031,400,62005,0,180,13591,2032,1,8,90001,3600,93648
+"Wisdom of Maldraxxus",2032,400,62009,0,180,13590,0,1,8,90001,3600,93648
+"Mind of Maldraxxus",2033,400,62037,0,180,13595,2032,1,8,90001,3600,93648
+"Horror of Maldraxxus",2034,400,62014,0,180,13594,2032,1,8,90001,3600,93648
+"Sight of Maldraxxus",2035,3592,62008,0,180,13590,0,1,8,90001,3600,93648
+"Guile of Maldraxxus",2036,3592,62004,0,180,13591,2035,1,8,90001,3600,93648
+"Warflesh of Maldraxxus",2037,3592,62013,0,180,13594,2035,1,8,90001,3600,93648
+"Zeal of Maldraxxus",2038,3592,62036,0,180,13595,2035,1,8,90001,3600,93648
+"Heart of Maldraxxus",2039,68,62028,0,180,13595,2041,1,8,90001,3600,93648
+"Shambler of Maldraxxus",2040,68,62012,0,180,13594,2041,1,8,90001,3600,93648
+"Will of Maldraxxus",2041,68,62007,0,180,13590,0,1,8,90001,3600,93648
+"Alacrity of Maldraxxus",2042,68,62003,0,180,13591,2041,1,8,90001,3600,93648
+"Might of Maldraxxus",2043,35,62006,0,180,13590,0,1,8,90001,3600,93648
+"Authority of Maldraxxus",2044,35,62002,0,180,13591,2043,1,8,90001,3600,93648
+"Abomination of Maldraxxus",2045,35,62011,0,180,13594,2043,1,8,90001,3600,93648
+"Mettle of Maldraxxus",2046,35,62015,0,180,13595,2043,1,8,90001,3600,93648
+"Faewoven Regalia",2047,400,61901,0,178,13590,0,1,8,90001,3600,93649
+"Night Courtier's Regalia",2048,400,61907,0,178,13591,2047,1,8,90001,3601,93649
+"Conservator's Regalia",2049,400,61911,0,178,13592,2047,1,8,90001,3602,93649
+"Winterborn Regalia",2050,400,61915,0,178,13787,2047,1,8,90001,3603,93649
+"Oakheart Raiment",2051,3592,61901,0,178,13590,0,1,8,90001,3600,93649
+"Conservator's Raiment",2052,3592,61910,0,178,13592,2051,1,8,90001,3602,93649
+"Winterborn Raiment",2053,3592,61914,0,178,13787,2051,1,8,90001,3603,93649
+"Night Courtier's Raiment",2054,3592,61906,0,178,13591,2051,1,8,90001,3601,93649
+"Runewarden's Guise",2055,68,61902,0,178,13590,0,1,8,90001,3600,93649
+"Conservator's Guise",2056,68,61909,0,178,13592,2055,1,8,90001,3602,93649
+"Night Courtier's Guise",2057,68,61905,0,178,13591,2055,1,8,90001,3601,93649
+"Winterborn Guise",2058,68,61913,0,178,13787,2055,1,8,90001,3603,93649
+"Queensguard Warbark",2059,35,61903,0,178,13590,0,1,8,90001,3600,93649
+"Night Courtier's Warbark",2060,35,61904,0,178,13591,2059,1,8,90001,3601,93649
+"Winterborn Warbark",2061,35,61912,0,178,13787,2059,1,8,90001,3603,93649
+"Conservator's Warbark",2062,35,61908,0,178,13592,2059,1,8,90001,3602,93649
+"Soulbreaker's Crimson Vestments",2063,400,62039,0,179,13591,2066,1,8,90001,3600,93650
+"Soulbreaker's Burnished Vestments",2064,400,62034,0,179,13596,2066,1,8,90001,3600,93650
+"Soulbreaker's Court Vestments",2065,400,62035,0,179,13584,2066,1,8,90001,3600,93650
+"Soulbreaker's Ebony Vestments",2066,400,62033,0,179,13590,0,1,8,90001,3600,93650
+"Crimson Death Shroud Armor",2067,3592,62032,0,179,13591,2070,1,8,90001,3600,93650
+"Court Death Shroud Armor",2068,3592,62031,0,179,13584,2070,1,8,90001,3601,93650
+"Burnished Death Shroud Armor",2069,3592,62030,0,179,13596,2070,1,8,90001,3602,93650
+"Ebony Death Shroud Armor",2070,3592,62029,0,179,13590,0,1,8,90001,3603,93650
+"Fearstalker's Ebony Battlegear",2071,68,62024,0,179,13590,0,1,8,90001,3600,93650
+"Fearstalker's Court Battlegear",2072,68,62026,0,179,13584,2071,1,8,90001,3600,93650
+"Fearstalker's Burnished Battlegear",2073,68,62025,0,179,13596,2071,1,8,90001,3600,93650
+"Fearstalker's Crimson Battlegear",2074,68,62027,0,179,13591,2071,1,8,90001,3600,93650
+"Dread Sentinel's Ebony Battleplate",2075,35,62016,0,179,13590,0,1,8,90001,3600,93650
+"Dread Sentinel's Burnished Battleplate",2076,35,62022,0,179,13596,2075,1,8,90001,3600,93650
+"Dread Sentinel's Court Battleplate",2077,35,62018,0,179,13584,2075,1,8,90001,3600,93650
+"Dread Sentinel's Crimson Battleplate",2078,35,62021,0,179,13591,2075,1,8,90001,3600,93650
+"9.0 Exile's Reach Weapons Recolor 1",2080,0,62040,3,0,0,0,1,8,90001,1550,0
+"9.0 Exile's Reach Weapons Recolor 2",2081,0,62040,3,0,0,0,1,8,90001,1550,0
+"9.0 Exile's Reach Weapons Recolor 3",2082,0,62040,3,0,0,0,1,8,90001,1550,0
+"9.0 Exile's Reach Weapons Recolor 4",2083,0,62040,3,0,0,0,1,8,90001,1550,0
+"Night Courtier's Bulb",2084,0,62410,3,0,0,0,1,8,90001,1550,93649
+"Night Courtier's Pack",2085,0,62412,3,0,0,0,1,8,90001,1550,93649
+"Night Courtier's Regalia",2086,400,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Regalia",2087,400,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Regalia",2089,400,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Raiment",2090,3592,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Raiment",2091,3592,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Raiment",2092,3592,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Guise",2093,68,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Guise",2094,68,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Guise",2095,68,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Warbark",2096,35,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Warbark",2097,35,0,65,0,0,0,1,8,90001,3601,93649
+"Night Courtier's Warbark",2098,35,0,65,0,0,0,1,8,90001,3601,93649
+"Soulbreaker's Crimson Vestments",2099,400,0,65,0,0,0,1,8,90001,3600,93650
+"Soulbreaker's Crimson Vestments",2100,400,0,65,0,0,0,1,8,90001,3600,93650
+"Soulbreaker's Crimson Vestments",2101,400,0,65,0,0,0,1,8,90001,3600,93650
+"Crimson Death Shroud Armor",2102,3592,0,65,0,0,0,1,8,90001,3600,93650
+"Crimson Death Shroud Armor",2103,3592,0,65,0,0,0,1,8,90001,3600,93650
+"Crimson Death Shroud Armor",2104,3592,0,65,0,0,0,1,8,90001,3600,93650
+"Fearstalker's Crimson Battlegear",2105,68,0,65,0,0,0,1,8,90001,3600,93650
+"Fearstalker's Crimson Battlegear",2106,68,0,65,0,0,0,1,8,90001,3600,93650
+"Fearstalker's Crimson Battlegear",2107,68,0,65,0,0,0,1,8,90001,3600,93650
+"Dread Sentinel's Crimson Battleplate",2108,35,0,65,0,0,0,1,8,90001,3600,93650
+"Dread Sentinel's Crimson Battleplate",2109,35,0,65,0,0,0,1,8,90001,3600,93650
+"Dread Sentinel's Crimson Battleplate",2110,35,0,65,0,0,0,1,8,90001,3600,93650
+"Rationale of Maldraxxus",2111,400,0,65,0,0,0,1,8,90001,3600,93648
+"Rationale of Maldraxxus",2112,400,0,65,0,0,0,1,8,90001,3600,93648
+"Rationale of Maldraxxus",2113,400,0,65,0,0,0,1,8,90001,3600,93648
+"Guile of Maldraxxus",2114,3592,0,65,0,0,0,1,8,90001,3600,93648
+"Guile of Maldraxxus",2115,3592,0,65,0,0,0,1,8,90001,3600,93648
+"Guile of Maldraxxus",2116,3592,0,65,0,0,0,1,8,90001,3600,93648
+"Alacrity of Maldraxxus",2117,68,0,65,0,0,0,1,8,90001,3600,93648
+"Alacrity of Maldraxxus",2118,68,0,65,0,0,0,1,8,90001,3600,93648
+"Alacrity of Maldraxxus",2119,68,0,65,0,0,0,1,8,90001,3600,93648
+"Authority of Maldraxxus",2120,35,0,65,0,0,0,1,8,90001,3600,93648
+"Authority of Maldraxxus",2121,35,0,65,0,0,0,1,8,90001,3600,93648
+"Authority of Maldraxxus",2122,35,0,65,0,0,0,1,8,90001,3600,93648
+"Winterborn Weapons",2123,0,62806,1,0,0,0,1,8,0,3700,0
+"Vestments of the Harmonious",2124,400,0,65,0,0,0,1,8,90001,3600,93647
+"Vestments of the Harmonious",2125,400,0,65,0,0,0,1,8,90001,3600,93647
+"Vestments of the Harmonious",2126,400,0,65,0,0,0,1,8,90001,3600,93647
+"Garb of the Harmonious",2127,3592,0,65,0,0,0,1,8,90001,3600,93647
+"Garb of the Harmonious",2128,3592,0,65,0,0,0,1,8,90001,3600,93647
+"Garb of the Harmonious",2129,3592,0,65,0,0,0,1,8,90001,3600,93647
+"Chain of the Harmonious",2130,68,0,65,0,0,0,1,8,90001,3600,93647
+"Chain of the Harmonious",2131,68,0,65,0,0,0,1,8,90001,3600,93647
+"Chain of the Harmonious",2132,68,0,65,0,0,0,1,8,90001,3600,93647
+"Warplate of the Harmonious",2133,35,0,65,0,0,0,1,8,90001,3600,93647
+"Warplate of the Harmonious",2134,35,0,65,0,0,0,1,8,90001,3600,93647
+"Warplate of the Harmonious",2135,35,0,65,0,0,0,1,8,90001,3600,93647
+"Sinful Gladiator's Vestment",2136,0,0,19,0,0,0,1,8,90002,1550,0
+"Sinful Gladiator's Vestment",2137,0,0,19,0,0,0,1,8,90002,10,0
+"Sinful Gladiator's Vestment",2138,400,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Vestment",2139,400,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Vestment",2140,400,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Leathers",2141,3592,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Leathers",2142,3592,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Leathers",2143,3592,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Chain",2144,68,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Chain",2145,68,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Chain",2146,68,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Plate",2147,35,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Plate",2148,35,0,19,0,0,0,1,8,90002,1950,0
+"Sinful Gladiator's Plate",2149,35,0,19,0,0,0,1,8,90002,1950,0
+"Grand Sentinel's Greatplate",2150,35,0,0,183,13193,0,1,8,90002,200,0
+"Grand Sentinel's Greatplate",2151,35,0,0,183,1641,2150,1,8,90002,100,0
+"Grand Sentinel's Greatplate",2152,35,0,0,183,2015,2150,1,8,90002,300,0
+"Grand Sentinel's Greatplate",2153,35,0,0,183,13145,2150,1,8,90002,400,0
+"Inexorable Castigator's Guise",2154,68,0,0,183,13193,0,1,8,90002,200,0
+"Inexorable Castigator's Guise",2155,68,0,0,183,1641,2154,1,8,90002,100,0
+"Inexorable Castigator's Guise",2156,68,0,0,183,2015,2154,1,8,90002,300,0
+"Inexorable Castigator's Guise",2157,68,0,0,183,13145,2154,1,8,90002,400,0
+"Depraved Beguiler's Visage",2158,400,0,0,183,13193,0,1,8,90002,200,0
+"Depraved Beguiler's Visage",2159,400,0,0,183,1641,2158,1,8,90002,100,0
+"Depraved Beguiler's Visage",2160,400,0,0,183,2015,2158,1,8,90002,300,0
+"Depraved Beguiler's Visage",2161,400,0,0,183,13145,2158,1,8,90002,400,0
+"Sin Slayer's Leathers",2162,3592,0,0,183,13193,0,1,8,90002,200,0
+"Sin Slayer's Leathers",2163,3592,0,0,183,1641,2162,1,8,90002,100,0
+"Sin Slayer's Leathers",2164,3592,0,0,183,2015,2162,1,8,90002,300,0
+"Sin Slayer's Leathers",2165,3592,0,0,183,13145,2162,1,8,90002,400,0
+"Sinful Gladiator's Vestment",2166,400,0,18,182,3859,2170,1,8,90002,300,0
+"Sinful Gladiator's Leathers",2167,3592,0,18,182,3859,2171,1,8,90002,300,0
+"Sinful Gladiator's Chain",2168,68,0,18,182,3859,2172,1,8,90002,300,0
+"Sinful Gladiator's Plate",2169,35,0,18,182,3859,2173,1,8,90002,300,0
+"Sinful Gladiator's Vestment",2170,400,0,18,182,13301,0,1,8,90002,200,0
+"Sinful Gladiator's Leathers",2171,3592,0,18,182,13301,0,1,8,90002,200,0
+"Sinful Gladiator's Chain",2172,68,0,18,182,13301,0,1,8,90002,200,0
+"Sinful Gladiator's Plate",2173,35,0,18,182,13301,0,1,8,90002,200,0
+"Sinful Aspirant's Vestment",2174,400,0,18,182,13303,2170,1,8,90002,100,0
+"Sinful Aspirant's Leathers",2175,3592,0,18,182,13303,2171,1,8,90002,100,0
+"Sinful Aspirant's Chain",2176,68,0,18,182,13303,2172,1,8,90002,100,0
+"Sinful Aspirant's Plate",2177,35,0,18,182,13303,2173,1,8,90002,100,0
+"Stitchmasters' Weapons",2178,0,62901,1,0,0,0,1,8,90002,1670,93648
+"Doubt's Weapon Cache",2179,0,62989,1,0,0,0,1,8,90002,1670,0
+"Wisdom's Weapon Cache",2180,0,62990,1,0,0,0,1,8,90002,1670,0
+"Reverent Aspirant's Weaponry",2181,0,62994,1,0,0,0,1,8,90002,1670,0
+"Dread Gladiator's Arsenal",2184,0,63223,21,0,0,0,1,8,90002,580,0
+"Dread Gladiator's Arsenal",2185,0,63224,25,0,0,0,1,8,90002,580,0
+"Dread Aspirant's Arsenal",2186,0,63227,21,0,0,0,1,8,90002,580,0
+"Dread Aspirant's Arsenal",2187,0,63226,25,0,0,0,1,8,90002,580,0
+"Sinister Aspirant's Arsenal",2188,0,63551,27,0,0,0,1,8,90002,600,0
+"Sinister Aspirant's Arsenal",2189,0,63550,23,0,0,0,1,8,90002,600,0
+"Sinister Gladiator's Arsenal",2190,0,63549,27,0,0,0,1,8,90002,600,0
+"Sinister Gladiator's Arsenal",2191,0,63548,23,0,0,0,1,8,90002,600,0
+"Notorious Aspirant's Arsenal",2192,0,63230,25,0,0,0,1,8,90002,600,0
+"Notorious Aspirant's Arsenal",2193,0,63229,21,0,0,0,1,8,90002,600,0
+"Notorious Gladiator's Arsenal",2194,0,63232,25,0,0,0,1,8,90002,600,0
+"Notorious Gladiator's Arsenal",2195,0,63231,21,0,0,0,1,8,90002,600,0
+"Corrupted Aspirant's Arsenal",2196,0,63233,21,0,0,0,1,8,90002,600,0
+"Corrupted Aspirant's Arsenal",2197,0,63234,25,0,0,0,1,8,90002,600,0
+"Corrupted Gladiator's Arsenal",2198,0,63236,21,0,0,0,1,8,90002,600,0
+"Corrupted Gladiator's Arsenal",2199,0,63235,25,0,0,0,1,8,90002,600,0
+"Dark Iron Weapons",2201,0,63536,1,0,0,0,1,8,0,3700,0
+"Garb of the Azure Dusk",2202,0,63595,0,184,13859,2205,1,8,90100,10,93649
+"Garb of the Twilight Grove",2203,0,63596,0,184,13850,2205,1,8,90100,10,93649
+"Garb of Fall's Promise",2204,0,63597,0,184,13849,2205,1,8,90100,10,93649
+"Garb of Pure Spirit",2205,0,63598,0,184,13591,0,1,8,90100,10,93649
+"Battlefield Messenger's Regalia",2206,0,63599,0,185,13849,2208,1,8,90100,10,93647
+"Forsworn Aspirant's Regalia",2207,0,63600,0,185,13850,2208,1,8,90100,10,93647
+"Aspiring Aspirant's Regalia",2208,0,63601,0,185,13591,0,1,8,90100,10,93647
+"Devoted Aspirant's Regalia",2209,0,63602,0,185,13859,2208,1,8,90100,10,93647
+"Frontline Necromancer's Vestments",2210,0,63626,0,186,13849,2212,1,8,90100,10,93648
+"Marileth's Assistant's Vestments",2211,0,63627,0,186,13859,2212,1,8,90100,10,93648
+"Initiate's Necromantle Vestments",2212,0,63628,0,186,13591,0,1,8,90100,10,93648
+"Rogue Necromancer's Vestments",2213,0,63629,0,186,13850,2212,1,8,90100,10,93648
+"Harvester's Court Attire",2214,0,63630,0,187,13591,0,1,8,90100,10,93650
+"Renathal's Battlefield Attire",2215,0,63631,0,187,13849,2214,1,8,90100,10,93650
+"Radiant Court Attire",2216,0,63632,0,187,13850,2214,1,8,90100,10,93650
+"Sinful Venthyr Attire",2217,0,63633,0,187,13859,2214,1,8,90100,10,93650
+"Court Inquisitor's Vestments",2218,0,63634,0,188,13591,0,1,8,90100,10,93650
+"Renathal's Field Inquisitor's Vestments",2219,0,63635,0,188,13849,2218,1,8,90100,10,93650
+"Redeemed Inquisitor's Vestments",2220,0,63636,0,188,13850,2218,1,8,90100,10,93650
+"Sinful Inquisitor's Vestments",2221,0,63637,0,188,13859,2218,1,8,90100,10,93650
+"Unchained Gladiator's Vestment",2224,400,0,18,189,13301,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2225,3592,0,18,189,13301,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2226,68,0,18,189,13301,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2227,35,0,18,189,13301,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2228,400,0,18,189,3859,2224,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2229,3592,0,18,189,3859,2225,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2230,68,0,18,189,3859,2226,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2231,35,0,18,189,3859,2227,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2232,0,0,19,0,0,0,1,8,90100,1550,0
+"Unchained Gladiator's Vestment",2233,0,0,19,0,0,0,1,8,90100,10,0
+"Unchained Gladiator's Vestment",2234,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2235,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2236,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2237,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2238,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2239,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2240,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2241,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2242,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2243,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2244,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2245,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Aspirant's Vestment",2246,400,0,18,189,13303,2224,1,8,90100,1580,0
+"Unchained Aspirant's Leathers",2247,3592,0,18,189,13303,2225,1,8,90100,1580,0
+"Unchained Aspirant's Chain",2248,68,0,18,189,13303,2226,1,8,90100,1580,0
+"Unchained Aspirant's Plate",2249,35,0,18,189,13303,2227,1,8,90100,1580,0
+"Soulforged Dreadplate",2250,35,0,0,190,13193,0,1,8,90100,2261,0
+"Soulforged Dreadplate",2251,35,0,0,190,1641,2250,1,8,90100,2260,0
+"Soulforged Dreadplate",2252,35,0,0,190,2015,2250,1,8,90100,2262,0
+"Soulforged Dreadplate",2253,35,0,0,190,13145,2250,1,8,90100,2263,0
+"Tower Ascendant's Battlegear",2254,68,0,0,190,13193,0,1,8,90100,2261,0
+"Tower Ascendant's Battlegear",2255,68,0,0,190,1641,2254,1,8,90100,2260,0
+"Tower Ascendant's Battlegear",2256,68,0,0,190,2015,2254,1,8,90100,2262,0
+"Tower Ascendant's Battlegear",2257,68,0,0,190,13145,2254,1,8,90100,2263,0
+"Sanctum Assailant's Trappings",2258,3592,0,0,190,13193,0,1,8,90100,2261,0
+"Sanctum Assailant's Trappings",2259,3592,0,0,190,1641,2258,1,8,90100,2260,0
+"Sanctum Assailant's Trappings",2260,3592,0,0,190,2015,2258,1,8,90100,2262,0
+"Sanctum Assailant's Trappings",2261,3592,0,0,190,13145,2258,1,8,90100,2263,0
+"Dark Supplicant's Garb",2262,400,0,0,190,13193,0,1,8,90100,2261,0
+"Dark Supplicant's Garb",2263,400,0,0,190,1641,2262,1,8,90100,2260,0
+"Dark Supplicant's Garb",2264,400,0,0,190,2015,2262,1,8,90100,2262,0
+"Dark Supplicant's Garb",2265,400,0,0,190,13145,2262,1,8,90100,2263,0
+"Unchained Gladiator's Vestment",2267,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2268,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2269,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2270,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2271,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Vestment",2272,400,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2273,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2274,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2275,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2276,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2277,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Leathers",2278,3592,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2279,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2280,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2281,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2282,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2283,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Chain",2284,68,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2285,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2286,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2287,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2288,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2289,35,0,19,0,0,0,1,8,90100,2000,0
+"Unchained Gladiator's Plate",2290,35,0,19,0,0,0,1,8,90100,2000,0
+"Ravencrest's Battleplate",2292,35,65176,2,0,0,0,1,8,90105,1640,0
+"Gravewarden Armaments",2294,32,64923,2,56,13216,1337,1,6,90105,8904,0
+"Demonbane Armor",2295,2048,64924,2,56,13216,1333,1,6,90105,8904,0
+"Stormheart Raiment",2296,1024,64925,2,56,13216,1329,1,6,90105,8904,0
+"Wildstalker Armor",2297,4,64926,2,56,13216,1325,1,6,90105,8904,0
+"Regalia of the Arcane Tempest",2298,128,64927,2,56,13216,1321,1,6,90105,8904,0
+"Xuen's Battlegear",2299,512,64928,2,56,13216,1317,1,6,90105,8904,0
+"Radiant Lightbringer Armor",2300,2,64929,2,56,13216,1313,1,6,90105,8904,0
+"Vestments of Blind Absolution",2301,16,64930,2,56,13216,1309,1,6,90105,8904,0
+"Fanged Slayer's Armor",2302,8,64931,2,56,13216,1305,1,6,90105,8904,0
+"Regalia of the Skybreaker",2303,64,64932,2,56,13216,1301,1,6,90105,8904,0
+"Diabolic Raiment",2304,256,64933,2,56,13216,1297,1,6,90105,8904,0
+"Titanic Onslaught Armor",2305,1,64934,2,56,13216,1293,1,6,90105,8904,0
+PH,2306,0,65299,2,0,0,0,1,8,90200,2520,0
+PH,2307,0,65299,2,0,0,0,1,8,90200,2520,0
+PH,2308,0,65299,2,0,0,0,1,8,90200,2520,0
+PH,2309,0,65299,2,0,0,0,1,8,90200,2520,0
+"Stormheart Raiment",2310,1024,64925,3,0,0,0,1,6,90105,8904,0
+"Vestments of Blind Absolution",2312,16,64930,3,0,0,0,1,6,90105,8904,0
+"Regalia of the Skybreaker",2313,64,64932,3,0,0,0,1,6,90105,8904,0
+"Diabolic Raiment",2314,256,64933,3,0,0,0,1,6,90105,8904,0
+"Cosmic Aspirant's Vestment",2316,400,0,19,191,13303,0,1,8,90200,1580,0
+"Cosmic Aspirant's Leathers",2317,3592,0,19,191,13303,0,1,8,90200,1580,0
+"Cosmic Aspirant's Chain",2318,68,0,19,191,13303,0,1,8,90200,1580,0
+"Cosmic Aspirant's Plate",2319,35,0,19,191,13303,0,1,8,90200,1580,0
+"Cosmic Gladiator's Vestment",2325,0,0,19,0,0,0,1,8,90200,10,0
+"Cosmic Gladiator's Prestigious Cloak",2335,0,0,19,0,0,0,1,8,90200,1550,0
+"Weapons of Glorious Domination",2336,4095,65715,3,0,0,0,1,8,90200,9050,0
+"The First Eidolon's Soulsteel",2348,32,0,0,192,13193,0,1,8,90200,2521,0
+"The First Eidolon's Soulsteel",2349,32,0,0,192,1641,2348,1,8,90200,2520,0
+"The First Eidolon's Soulsteel",2350,32,0,0,192,2015,2348,1,8,90200,2522,0
+"The First Eidolon's Soulsteel",2351,32,0,0,192,13145,2348,1,8,90200,2523,0
+"Cosmic Gladiator's Dreadplate Armor",2352,32,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Dreadplate Armor",2353,32,0,51,191,3859,2352,1,8,90200,2521,0
+"Mercurial Punisher's Painweave",2354,2048,0,0,192,13193,0,1,8,90200,2521,0
+"Mercurial Punisher's Painweave",2355,2048,0,0,192,1641,2354,1,8,90200,2520,0
+"Mercurial Punisher's Painweave",2356,2048,0,0,192,2015,2354,1,8,90200,2522,0
+"Mercurial Punisher's Painweave",2357,2048,0,0,192,13145,2354,1,8,90200,2523,0
+"Cosmic Gladiator's Felskin Armor",2358,2048,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Felskin Armor",2359,2048,0,51,191,3859,2358,1,8,90200,2521,0
+"Tapestry of the Fixed Stars",2360,1024,0,0,192,13193,0,1,8,90200,2521,0
+"Tapestry of the Fixed Stars",2361,1024,0,0,192,1641,2360,1,8,90200,2520,0
+"Tapestry of the Fixed Stars",2362,1024,0,0,192,2015,2360,1,8,90200,2522,0
+"Tapestry of the Fixed Stars",2363,1024,0,0,192,13145,2360,1,8,90200,2523,0
+"Cosmic Gladiator's Dragonhide Armor",2364,1024,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Dragonhide Armor",2365,1024,0,51,191,3859,2364,1,8,90200,2521,0
+"Godstalker's Battlegear",2366,4,0,0,192,13193,0,1,8,90200,2521,0
+"Godstalker's Battlegear",2367,4,0,0,192,1641,2366,1,8,90200,2520,0
+"Godstalker's Battlegear",2368,4,0,0,192,2015,2366,1,8,90200,2522,0
+"Godstalker's Battlegear",2369,4,0,0,192,13145,2366,1,8,90200,2523,0
+"Cosmic Gladiator's Chain Armor",2370,4,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Chain Armor",2371,4,0,51,191,3859,2370,1,8,90200,2521,0
+"Erudite Occultist's Vestments",2372,128,0,0,192,13193,0,1,8,90200,2521,0
+"Erudite Occultist's Vestments",2373,128,0,0,192,1641,2372,1,8,90200,2520,0
+"Erudite Occultist's Vestments",2374,128,0,0,192,2015,2372,1,8,90200,2522,0
+"Erudite Occultist's Vestments",2375,128,0,0,192,13145,2372,1,8,90200,2523,0
+"Cosmic Gladiator's Silk Armor",2376,128,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Silk Armor",2377,128,0,51,191,3859,2376,1,8,90200,2521,0
+"Garb of the Grand Upwelling",2378,512,0,0,192,13193,0,1,8,90200,2521,0
+"Garb of the Grand Upwelling",2379,512,0,0,192,1641,2378,1,8,90200,2520,0
+"Garb of the Grand Upwelling",2380,512,0,0,192,2015,2378,1,8,90200,2522,0
+"Garb of the Grand Upwelling",2381,512,0,0,192,13145,2378,1,8,90200,2523,0
+"Cosmic Gladiator's Ironskin Armor",2382,512,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Ironskin Armor",2383,512,0,51,191,3859,2382,1,8,90200,2521,0
+"Luminous Chevalier's Gallantry",2384,2,0,0,192,13193,0,1,8,90200,2521,0
+"Luminous Chevalier's Gallantry",2385,2,0,0,192,1641,2384,1,8,90200,2520,0
+"Luminous Chevalier's Gallantry",2386,2,0,0,192,2015,2384,1,8,90200,2522,0
+"Luminous Chevalier's Gallantry",2387,2,0,0,192,13145,2384,1,8,90200,2523,0
+"Cosmic Gladiator's Scaled Armor",2388,2,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Scaled Armor",2389,2,0,51,191,3859,2388,1,8,90200,2521,0
+"Habiliments of the Empyrean",2390,16,0,0,192,13193,0,1,8,90200,2521,0
+"Habiliments of the Empyrean",2391,16,0,0,192,1641,2390,1,8,90200,2520,0
+"Habiliments of the Empyrean",2392,16,0,0,192,2015,2390,1,8,90200,2522,0
+"Habiliments of the Empyrean",2393,16,0,0,192,13145,2390,1,8,90200,2523,0
+"Cosmic Gladiator's Satin Armor",2394,16,0,17,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Satin Armor",2395,16,0,51,191,3859,2394,1,8,90200,2521,0
+"Soulblade Shadowhide",2396,8,0,0,192,13193,0,1,8,90200,2521,0
+"Soulblade Shadowhide",2397,8,0,0,192,1641,2396,1,8,90200,2520,0
+"Soulblade Shadowhide",2398,8,0,0,192,2015,2396,1,8,90200,2522,0
+"Soulblade Shadowhide",2399,8,0,0,192,13145,2396,1,8,90200,2523,0
+"Cosmic Gladiator's Leather Armor",2400,8,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Leather Armor",2401,8,0,51,191,3859,2400,1,8,90200,2521,0
+"Theurgic Starspeaker's Regalia",2402,64,0,0,192,13193,0,1,8,90200,2521,0
+"Theurgic Starspeaker's Regalia",2403,64,0,0,192,1641,2402,1,8,90200,2520,0
+"Theurgic Starspeaker's Regalia",2404,64,0,0,192,2015,2402,1,8,90200,2522,0
+"Theurgic Starspeaker's Regalia",2405,64,0,0,192,13145,2402,1,8,90200,2523,0
+"Cosmic Gladiator's Ringmail Armor",2406,64,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Ringmail Armor",2407,64,0,51,191,3859,2406,1,8,90200,2521,0
+"Shroud of the Demon Star",2408,256,0,0,192,13193,0,1,8,90200,2521,0
+"Shroud of the Demon Star",2409,256,0,0,192,1641,2408,1,8,90200,2520,0
+"Shroud of the Demon Star",2410,256,0,0,192,2015,2408,1,8,90200,2522,0
+"Shroud of the Demon Star",2411,256,0,0,192,13145,2408,1,8,90200,2523,0
+"Cosmic Gladiator's Felweave Armor",2412,256,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Felweave Armor",2413,256,0,51,191,3859,2412,1,8,90200,2521,0
+"Armaments of the Infinite Infantry",2414,1,0,0,192,13193,0,1,8,90200,2521,0
+"Armaments of the Infinite Infantry",2415,1,0,0,192,1641,2414,1,8,90200,2520,0
+"Armaments of the Infinite Infantry",2416,1,0,0,192,2015,2414,1,8,90200,2522,0
+"Armaments of the Infinite Infantry",2417,1,0,0,192,13145,2414,1,8,90200,2523,0
+"Cosmic Gladiator's Plate Armor",2418,1,0,19,191,13301,0,1,8,90200,2520,0
+"Cosmic Gladiator's Plate Armor",2419,1,0,51,191,3859,2418,1,8,90200,2521,0
+"Cosmic Gladiator's Dreadplate Armor",2420,32,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dreadplate Armor",2421,32,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dreadplate Armor",2422,32,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dreadplate Armor",2423,32,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dreadplate Armor",2424,32,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felskin Armor",2425,2048,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felskin Armor",2426,2048,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felskin Armor",2427,2048,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felskin Armor",2428,2048,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felskin Armor",2429,2048,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dragonhide Armor",2430,1024,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dragonhide Armor",2431,1024,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dragonhide Armor",2432,1024,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dragonhide Armor",2433,1024,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Dragonhide Armor",2434,1024,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Chain Armor",2435,4,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Chain Armor",2436,4,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Chain Armor",2437,4,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Chain Armor",2438,4,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Chain Armor",2439,4,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Silk Armor",2440,128,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Silk Armor",2441,128,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Silk Armor",2442,128,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Silk Armor",2443,128,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Silk Armor",2444,128,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ironskin Armor",2445,512,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ironskin Armor",2446,512,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ironskin Armor",2447,512,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ironskin Armor",2448,512,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ironskin Armor",2449,512,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Scaled Armor",2450,2,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Scaled Armor",2451,2,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Scaled Armor",2452,2,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Scaled Armor",2453,2,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Scaled Armor",2454,2,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Satin Armor",2455,16,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Satin Armor",2456,16,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Satin Armor",2457,16,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Satin Armor",2458,16,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Satin Armor",2459,16,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Leather Armor",2460,8,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Leather Armor",2461,8,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Leather Armor",2462,8,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Leather Armor",2463,8,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Leather Armor",2464,8,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ringmail Armor",2465,64,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ringmail Armor",2466,64,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ringmail Armor",2467,64,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ringmail Armor",2468,64,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Ringmail Armor",2469,64,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felweave Armor",2470,256,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felweave Armor",2471,256,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felweave Armor",2472,256,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felweave Armor",2473,256,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Felweave Armor",2474,256,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Plate Armor",2475,1,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Plate Armor",2476,1,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Plate Armor",2477,1,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Plate Armor",2478,1,0,19,0,0,0,1,8,90200,2000,0
+"Cosmic Gladiator's Plate Armor",2479,1,0,19,0,0,0,1,8,90200,2000,0
+"Blood Knight's Dedication",2481,2,66280,0,0,0,0,1,8,90205,10,95684
+"Lavaforge Arsenal",2483,4095,66302,3,0,0,0,1,8,90205,10,0
+"Cosmic Gladiator's Prestigious Cloak",2486,0,0,19,0,0,0,1,8,90200,1550,0
+"Cosmic Gladiator's Vestment",2487,0,0,19,0,0,0,1,8,90200,10,0
+"Eternal Gladiator's Dreadplate Armor",2498,32,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Felskin Armor",2504,2048,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Dragonhide Armor",2510,1024,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Chain Armor",2516,4,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Silk Armor",2522,128,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Ironskin Armor",2528,512,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Scaled Armor",2534,2,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Satin Armor",2540,16,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Leather Armor",2546,8,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Ringmail Armor",2552,64,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Felweave Armor",2558,256,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Gladiator's Plate Armor",2564,1,0,16,193,13301,0,1,8,90200,2520,0
+"Eternal Aspirant's Vestment",2565,400,0,16,193,13303,0,1,8,90200,1580,0
+"Eternal Aspirant's Leathers",2566,3592,0,16,193,13303,0,1,8,90200,1580,0
+"Eternal Aspirant's Chain",2567,68,0,16,193,13303,0,1,8,90200,1580,0
+"Eternal Aspirant's Plate",2568,35,0,16,193,13303,0,1,8,90200,1580,0
+"Eternal Gladiator's Dreadplate Armor",2569,32,0,48,193,3859,2498,1,8,90200,2521,0
+"Eternal Gladiator's Felskin Armor",2570,2048,0,48,193,3859,2504,1,8,90200,2521,0
+"Eternal Gladiator's Dragonhide Armor",2571,1024,0,48,193,3859,2510,1,8,90200,2521,0
+"Eternal Gladiator's Chain Armor",2572,4,0,48,193,3859,2516,1,8,90200,2521,0
+"Eternal Gladiator's Silk Armor",2573,128,0,48,193,3859,2522,1,8,90200,2521,0
+"Eternal Gladiator's Ironskin Armor",2574,512,0,48,193,3859,2528,1,8,90200,2521,0
+"Eternal Gladiator's Scaled Armor",2575,2,0,48,193,3859,2534,1,8,90200,2521,0
+"Eternal Gladiator's Satin Armor",2576,16,0,48,193,3859,2540,1,8,90200,2521,0
+"Eternal Gladiator's Leather Armor",2577,8,0,48,193,3859,2546,1,8,90200,2521,0
+"Eternal Gladiator's Ringmail Armor",2578,64,0,48,193,3859,2552,1,8,90200,2521,0
+"Eternal Gladiator's Felweave Armor",2579,256,0,48,193,3859,2558,1,8,90200,2521,0
+"Eternal Gladiator's Plate Armor",2580,1,0,48,193,3859,2564,1,8,90200,2521,0
+"Wings of Awakening",2293,0,0,131,0,0,0,1,8,90105,10,94458
+"Wings of Awakening",2488,0,0,131,0,0,0,1,8,90105,10,94458
+"Baby Murloc Satch-Shells",2291,0,0,131,0,0,0,1,8,90105,10,94459
+"Celestial Observer's Ensemble",2200,0,0,2,0,0,0,1,8,90100,10,89010
+"Fireplume Regalia",2482,0,0,2,0,0,0,1,8,90205,10,96679
+"Dark Ranger's Attire",2484,4,66309,0,0,0,0,1,8,90205,10,42890
+"Sprite Darter's Wings",1914,0,0,2,0,0,0,1,7,80305,10,79733

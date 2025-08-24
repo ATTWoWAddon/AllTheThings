@@ -8,8 +8,8 @@ local _, app = ...;
 -- Encapsulates the functionality concerning consistent and complex operations on Lua Tables
 
 -- Global locals
-local ipairs, pairs, tinsert, select, table_concat
-	= ipairs, pairs, tinsert, select, table.concat;
+local ipairs, pairs, select, table_concat
+	= ipairs, pairs, select, table.concat;
 
 -- App locals
 
@@ -48,6 +48,11 @@ app.indexOf = function(arr, value)
 		if arr[i] == value then return i; end
 	end
 end
+-- Simply wipes the array portion of a table
+-- NOTE: compared to base wipe() this is giga-fast
+app.wipearray = function(t)
+	for i=1,#t do t[i] = nil end
+end
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry
 app.TableConcat = function(tbl, field, def, sep, i, j)
@@ -84,7 +89,7 @@ app.ArrayAppend = function(a1, ...)
 end
 -- Allows for returning a reversed array. Will do nothing for un-ordered tables or tables with a single entry
 app.ReverseOrder = function(a)
-	if a[1] and a[2] then
+	if a and a[1] and a[2] then
 		local b, n, j = {}, #a, 1;
 		for i=n,1,-1 do
 			b[j] = a[i];

@@ -66,6 +66,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(29380),	-- FLAG - Teleport to Firelands
 		q(29381),	-- FLAG - Teleport to Hyjal
 		q(29395),	-- FLAG - Teleport to Uldum
+		q(25016),	-- FLAG - Training Complete - Triggered when doing one of lvl 3 class quests in Deathknell
 		q(29286),	-- Druid Tree, Stage 2 Tracking
 		q(29291),	-- triggered with Peaked Interest 29287
 		q(29292),	-- triggered with Peaked Interest 29287
@@ -74,6 +75,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(26741),	-- REUSE - triggered after completing "The Hunt" (questID 26340)
 		-- #endif
 		q(24644),	-- Troll Introduction Complete
+		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in Darkshore
 	}),
 
 	-------------------
@@ -326,7 +328,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
-		-- q(44455),	-- Downfall tracking - in Suramar, possibly tied to a Demon Hunter artifact?
 
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest - triggered when doing my first brawl for BFA
 		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest - completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
@@ -338,13 +339,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42212),	-- Fire Mage - Flavor Event 03
 		q(42860),	-- Tracking - God-King Scene - something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
-			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 			["name"] = "Flight Path Unlock",
 			["sourceQuests"] = {
 				40740,	-- The Dead and the Damned [Blood Artifact]*
 				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
+			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 		}),
 	})),
 
@@ -360,12 +361,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
-		-- 58013 triggered randomly during a Black Empire assault in uldum
-		-- also triggered when looting the "Grimoire of the Other Side" as horde during "Spirits' belongings"
-		-- also triggers when repairing the mirror by Charred Ramparts for the Venthyr mirror repair dailies...
-		-- 58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
-		-- also triggered while killing mobs for Dog Bone's Bone in Maldraxxus (05/11/22)
-		-- 58013 triggered while killing first pack of the mobs in Freehold (02/01/25)
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(51973),	-- looting chest with resources after Lost Caravan event in Battle for Stormgarde
 		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion
@@ -389,7 +384,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		-- q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
-		-- q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
 		q(53534),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
@@ -413,7 +407,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(55237),	-- closing the last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-		-- q(54705),	-- Using 7th Legion Scouting Map
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		--	PVP / WAR MODE
@@ -560,7 +553,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(53565),	-- triggered after completing my first arena win in BFA (possibly season-specific but idk)
 
 		--	TREASURES
-		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in Darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
 		q(54879),	-- Opening a Darkshore chest
@@ -596,8 +588,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56881),	-- Triggered upon first entry into Nazjatar
 		q(56677),	-- Triggered sometime after turning in "Needs of the People", after picking up the dailies, but before leaving Newhome. TODO:: research more (possibly bodyguard dialogue quest?)
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
-		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
-		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
+		q(55604, {["isDaily"]=true}),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
+		q(56901, {["isDaily"]=true}),	-- Triggers after buying anything from Mrrl's secret trader stock (requires cloak with special stock trait).
 		q(57191),	-- Glimmering Chest — Prismatic Manapearls
 		q(57192),	-- Glimmering Chest — Prismatic Manapearls
 		q(56571),	-- Triggers when completing the Baine Rescue scenario. Probably used as unlock criteria for the Tauren Heritage armor chain
@@ -886,8 +878,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31148),	-- Novice Elreth - completed with quest 28651
 		q(31174),	-- The Dread Vos - completed with quest 31019
 		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
-		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
-		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31445),	-- zzOld - completed with quest 31369 & 31370
 		q(31469),	-- UNUSED - completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281

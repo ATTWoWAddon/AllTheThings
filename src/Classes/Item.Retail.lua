@@ -9,91 +9,21 @@ local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFla
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
-local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-	= GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, tonumber, tostring
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, tonumber, tostring
+local ItemEventListener = ItemEventListener
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
-local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
+local IsBoAOverride = C_Item.IsItemBindToAccountUntilEquip
 
 -- Class locals
 
 -- Module locals
 
--- Filters a specs table to only those which the current Character class can choose
-local function FilterSpecs(specs)
-	if specs and #specs > 0 then
-		local name, class, _;
-		for i=#specs,1,-1 do
-			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
-			if class ~= app.Class or not name or name == "" then
-				tremove(specs, i);
-			end
-		end
-		app.Sort(specs, app.SortDefaults.Values);
-	end
-end
-local GetFixedItemSpecInfo = function(itemID)
-	if itemID then
-		local specs = GetItemSpecInfo(itemID);
-		if not specs or #specs < 1 then
-			specs = {};
-			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
-			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
-			-- only Armor items
-			if itemClassID and itemClassID == 4 then
-				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
-				if expacID >= 6 and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
-					local numSpecializations = GetNumSpecializations();
-					if numSpecializations and numSpecializations > 0 then
-						for i=1,numSpecializations,1 do
-							local specID = GetSpecializationInfo(i);
-							tinsert(specs, specID);
-						end
-					end
-				end
-			end
-			app.Sort(specs, app.SortDefaults.Values);
-		else
-			FilterSpecs(specs);
-		end
-		if #specs > 0 then
-			return specs;
-		end
-	end
-end
-app.GetFixedItemSpecInfo = GetFixedItemSpecInfo
--- Returns a string containing the spec icons, followed by their respective names if desired
-local function GetSpecsString(specs, includeNames, trim)
-	local icons, name, icon, _ = {}, nil, nil, nil;
-	if includeNames then
-		for i=#specs,1,-1 do
-			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
-			icons[i * 4 - 3] = "  |T";
-			icons[i * 4 - 2] = icon;
-			icons[i * 4 - 1] = ":0|t ";
-			icons[i * 4] = name;
-		end
-	else
-		for i=#specs,1,-1 do
-			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
-			icons[i * 3 - 2] = "|T";
-			icons[i * 3 - 1] = icon;
-			icons[i * 3] = ":0|t ";
-		end
-	end
-	if trim then
-		return app.TableConcat(icons):match('^%s*(.*%S)');
-	end
-	return app.TableConcat(icons);
-end
-app.GetSpecsString = GetSpecsString
 -- Returns the ItemID of the group (if existing) with a decimal portion containing the modID/1000 and bonusID/10000000
 -- or converts a raw ItemID/ModID/BonusID into the combined modItemID value
 -- Ex. 12345 (ModID 5) => 12345.005
@@ -155,7 +85,6 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 		if group.otherFactionQuestID == value then return true; end
 	-- NPCID can be contained in other fields as well (for now)
 	elseif key == "npcID" or key == "creatureID" then
-		if group.creatureID == value then return true; end
 		if group.npcID == value then return true; end
 		-- treat encounters with this NPC as a match for the NPC
 		if group.encounterID then
@@ -236,55 +165,60 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 				app.GetGroupSourceID(group)
 			end
 		end
+		-- specific versions of a given Item can actually be BoA while the base version is typically BoP
+		-- so store the BoA flag for this instance of the Item
+		if IsBoAOverride(rawlink) then
+			group.b = 3
+		end
 	end
 end
+-- Removes the color and hyperlink text/formatting from the link string
+local function CleanLink(link)
+	if not link then return link end
+	local cleaned = link:lower():gsub("|c[%xniq:]+|?h?",""):gsub("|h%[.+","")
+	-- :gsub("|cniq[0-9]:[|h]+","")
+	-- :gsub("|r","")
+	-- app.PrintDebug("CleanLink",link,cleaned)
+	-- wanted this to just work to grab the portion of the link which contains the useful data, but
+	-- it started being dumb, maybe review later
+	-- local cleaned = link:match("[a-z]+[iI]?[dD]?:[%-?%d:]+")
+	return cleaned
+end
+local api = {}
+app.Modules.Item = api
+api.CleanLink = CleanLink
 
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local CLASS = "Item"
 local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
--- Consolidated function to cache available Item information
-local function RawSetItemInfoFromLink(t, link)
-	-- app.PrintDebug("RawSetLink:=",link)
-	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
-	if link then
-		--[[ -- Debug Prints
-		local _t, id = cache.GetCached(t);
-		print("rawset item info",id,link,name,quality,b)
-		--]]
-		local _t = cache.GetCached(t)
-		_t.name = name;
-		_t.link = link;
-		_t.title = nil
-		_t.icon = icon;
-		_t.q = quality;
-		if quality > 6 then
-			-- heirlooms return as 1 but are technically BoE for our concern
-			_t.b = 2;
-		else
-			_t.b = b;
-		end
-		return link;
-	elseif t.CanRetry == nil then
-		local _t, id = cache.GetCached(t)
-		local itemName = L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
-			or "Item #" .. tostring(id) .. "*";
-		_t.title = L.FAILED_ITEM_INFO;
-		_t.link = nil;
-		_t.sourceID = nil;
-		-- save the "name" field in the source group to prevent further requests to the cache
-		t.name = itemName;
-		-- app.PrintDebug("NoItemInfo",app:SearchLink(t))
-		return nil
-	end
+local function ItemAsyncRefreshFunc(t)
+	local _t, id = cache.GetCached(t)
+	if _t.__Retrieved then return end
+
+	_t.__Retrieved = true
+	-- app.PrintDebug("RetrievalFunc",t.hash)
+	-- app.PrintDebug("Item Callback", id)
+	ItemEventListener:AddCallback(math_floor(id), function()
+		-- app.PrintDebug("Item Loaded", id)
+		app.DirectGroupRefresh(t, true)
+		app.ReshowGametooltip()
+	end)
+	return true
 end
-local function default_link(t)
+app.AddEventRegistration("ITEM_DATA_LOAD_RESULT", function(itemID, success)
+	if not success then
+		local _t = cache.GetCachedByID(itemID)
+		-- app.PrintDebug("NoServerData", itemID)
+		_t.NoServerData = true
+	end
+end)
+-- Consolidated function to cache available Item information
+local function CacheInfo(t, field)
 	local itemLink = t.rawlink
-	-- item already has a pre-determined itemLink so use that
-	if itemLink then return RawSetItemInfoFromLink(t, itemLink); end
-	-- need to 'create' a valid accurate link for this item
-	itemLink = t.itemID;
-	if itemLink then
+	if not itemLink then
+		-- need to 'create' a valid accurate link for this item
+		itemLink = t.itemID
 		local modID, bonusID;
 		-- sometimes the raw itemID is actually a modItemID, so try splitting that here as a final adjustment
 		itemLink, modID, bonusID = GetItemIDAndModID(itemLink);
@@ -298,11 +232,15 @@ local function default_link(t)
 			modID = nil;
 			t.modID = nil;
 		end
+		local rawbonuses = rawget(t, "bonuses")
 		-- app.PrintDebug("default_link",itemLink,modID,bonusID)
-		if bonusID and modID then
-			itemLink = ("item:%d:::::::::::%d:1:%d:"):format(itemLink, modID, bonusID);
+		if rawbonuses then
+			local bonusesString = #rawbonuses..":"..app.TableConcat(rawbonuses, nil, nil, ":")
+			itemLink = ("item:%d:::::::::::%s:%s:"):format(itemLink, modID or "", bonusesString)
+			-- set the bonusID to the first bonusID
+			t.bonusID = rawbonuses[1]
 		elseif bonusID then
-			itemLink = ("item:%d::::::::::::1:%d:"):format(itemLink, bonusID);
+			itemLink = ("item:%d:::::::::::%s:1:%d:"):format(itemLink, modID or "", bonusID);
 		elseif modID then
 			-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 			itemLink = ("item:%d:::::::::::%d:1:3524:"):format(itemLink, modID);
@@ -310,32 +248,57 @@ local function default_link(t)
 			itemLink = ("item:%d"):format(itemLink);
 		end
 		-- save this link so it doesn't need to be built again
-		t.rawlink = itemLink;
-		return RawSetItemInfoFromLink(t, itemLink);
-	-- elseif t.sourceID then
-		-- local sourceID = t.sourceID;
-		-- This is supposed to be an Item but instead is a raw Source... likely doesn't exist
-		-- local link = "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r";
-		-- This is weird...
+		t.rawlink = itemLink
+		t.modItemID = nil
 	end
-	-- i don't know why this was returning Unknown... bad! default funcs should only return nil or a real value
-	-- return UNKNOWN;
-end
-local function default_icon(t)
-	return t.itemID and GetItemIcon(t.itemID) or 134400;
-end
-local function default_b(t, field, _t)
-	-- TODO: 'b' is accessed during update process, but might not yet be available from server
-	-- can we wait and do TLUG on any Item which determines b=1 later on?
-	if default_link(t) then
-		local b = _t.b
-		if b and b ~= 2 and t.__canretry then
 
+	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(itemLink);
+	-- app.PrintDebug("RawSetLink:=",itemLink,"->",link)
+	local _t, id = cache.GetCached(t)
+	if link then
+		-- app.PrintDebug("rawset item info",id,link,name,quality,b)
+		_t.name = name;
+		_t.link = link;
+		_t.title = nil
+		_t.icon = icon;
+		_t.q = quality;
+		if quality > 6 then
+			-- heirlooms return as 1 but are technically BoE for our concern
+			_t.b = 2;
+		else
+			-- specific versions of a given Item can actually be BoA while the base version is typically BoP
+			-- so store the BoA flag for this instance of the Item
+			if b and IsBoAOverride(itemLink) then
+				t.b = 3
+			else
+				_t.b = b
+			end
+		end
+	else
+		local icon = id and GetItemIcon(id) or 134400
+		_t.icon = icon
+		if _t.NoServerData or not t.CanRetry then
+			if not _t.name then
+				local itemName = t.baselink or L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
+					or "Item #" .. tostring(id) .. "*";
+				_t.title = L.FAILED_ITEM_INFO;
+				_t.link = nil;
+				_t.sourceID = nil;
+				-- save the "name" field in the source group to prevent further requests to the cache
+				if _t.NoServerData then
+					_t.name = itemName;
+					-- app.PrintDebug("NoItemInfo",t.hash)
+				end
+			end
 		end
 	end
+	if field then return _t[field] end
 end
+cache.DefaultFunctions.link = CacheInfo
+cache.DefaultFunctions.name = CacheInfo
+cache.DefaultFunctions.icon = CacheInfo
 local function default_specs(t)
-	return GetFixedItemSpecInfo(t.itemID);
+	return app.GetFixedItemSpecInfo(t.itemID);
 end
 local function default_costCollectibles(t)
 	local results, id;
@@ -359,6 +322,15 @@ local function default_costCollectibles(t)
 		id = t.itemID;
 		results = GetRawField("itemIDAsCost", id);
 	end
+	-- Spells on Items can also be a Cost for Things
+	local spellID = t.spellID
+	if spellID then
+		local spellResults = GetRawField("spellIDAsCost", spellID)
+		if spellResults and #spellResults > 0 then
+			-- app.PrintDebug("Found spell costs on item",#spellResults,spellID,app:SearchLink(spellResults[1]),app:SearchLink(t))
+			results = app.ArrayAppend({}, results, spellResults)
+		end
+	end
 	if results and #results > 0 then
 		-- not sure we need to copy these into another table
 		-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
@@ -367,31 +339,34 @@ local function default_costCollectibles(t)
 	return app.EmptyTable;
 end
 local itemFields = {
-	["_cache"] = function(t)
+	_cache = function(t)
 		return cache;
 	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", default_icon);
+	AsyncRefreshFunc = function()
+		return ItemAsyncRefreshFunc
 	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", default_link);
+	icon = function(t)
+		return cache.GetCachedField(t, "icon");
 	end,
-	["name"] = function(t)
+	link = function(t)
+		return cache.GetCachedField(t, "link");
+	end,
+	name = function(t)
 		return cache.GetCachedField(t, "name");
 	end,
-	["specs"] = function(t)
+	specs = function(t)
 		return cache.GetCachedField(t, "specs", default_specs);
 	end,
-	["q"] = function(t)
+	q = function(t)
 		return cache.GetCachedField(t, "q");
 	end,
-	["b"] = function(t)
+	b = function(t)
 		return cache.GetCachedField(t, "b") or 2;
 	end,
-	["title"] = function(t)
+	title = function(t)
 		return cache.GetCachedField(t, "title");
 	end,
-	["tsm"] = function(t)
+	tsm = function(t)
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
@@ -404,25 +379,25 @@ local itemFields = {
 			return ("i:%d"):format(itemLink);
 		end
 	end,
-	["modItemID"] = function(t)
+	modItemID = function(t)
 		-- if app.IsReady then app.PrintDebug("item.modItemID?",t.key,t[t.key]) end
 		local modItemID = GetGroupItemIDWithModID(t) or t.itemID;
 		-- if app.IsReady then app.PrintDebug("item.modItemID=",modItemID) end
 		t.modItemID = modItemID;
 		return modItemID;
 	end,
-	["indicatorIcon"] = app.GetQuestIndicator,
-	["costCollectibles"] = function(t)
+	indicatorIcon = app.GetQuestIndicator,
+	costCollectibles = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
-	["collectibleAsCost"] = app.CollectibleAsCost,
-	["costsCount"] = function(t)
+	collectibleAsCost = app.CollectibleAsCost,
+	costsCount = function(t)
 		if t.costCollectibles then return #t.costCollectibles; end
 	end,
 	bonuses = function(t)
 		local link = t.link
 		if IsRetrieving(link) then return end
-		local itemVals = {(":"):split(link)}
+		local itemVals = {(":"):split(CleanLink(link))}
 
 		-- BonusID count
 		local bonusCount = tonumber(itemVals[14])
@@ -453,9 +428,11 @@ local itemFields = {
 		if not merge then return end
 		return merge.isUpgrade
 	end,
+	itemString = function(t)
+		return CleanLink(t.rawlink or t.link)
+	end,
 };
 -- Module imports
-itemFields.nextUpgrade = app.Modules.Upgrade.NextUpgrade;
 itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 
 -- This is used for the Grand Commendations unlocking Bonus Reputation
@@ -527,24 +504,27 @@ app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
 local CreateCostItem = app.CreateClass("CostItem", KEY, {
 	IsClassIsolated = true,
+	-- import the link field from Item so that loading works properly
+	ImportFrom = "Item",
+	ImportFields = { "link", "AsyncRefreshFunc" },
 	-- total is the count of the cost item required
-	["total"] = function(t)
+	total = function(t)
 		return t.count or 1;
 	end,
 	-- progress is how many of the cost item your character has anywhere (bag/bank/reagent bank/warband bank)
-	["progress"] = function(t)
+	progress = function(t)
 		return GetItemCount(t.itemID, true, nil, true, true) or 0;
 	end,
-	["collectible"] = app.ReturnFalse,
+	collectible = app.ReturnFalse,
 	-- show a check when it is has matching quantity in your bags/reagent bank (bank/warband bank don't count at vendors)
-	["saved"] = function(t)
+	saved = function(t)
 		return GetItemCount(t.itemID, nil, nil, true) >= t.total;
 	end,
 	-- hide any irrelevant wrapped fields of a cost item
-	["g"] = app.EmptyFunction,
-	["costCollectibles"] = app.EmptyFunction,
-	["collectibleAsCost"] = app.EmptyFunction,
-	["costsCount"] = app.EmptyFunction,
+	g = app.EmptyFunction,
+	costCollectibles = app.EmptyFunction,
+	collectibleAsCost = app.EmptyFunction,
+	costsCount = app.EmptyFunction,
 })
 app.CreateCostItem = function(t, total)
 	local c = app.WrapObject(CreateCostItem(t[KEY]), t);
@@ -564,6 +544,7 @@ local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 ---@class ATTItemHarvesterForRetail: GameTooltip
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
+ItemHarvester.AllTheThingsIgnored = true;
 local CreateItemTooltipHarvester
 local FilterBind = app.Modules.Filter.Filters.Bind
 app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
@@ -593,16 +574,16 @@ app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 				end
 				CreateItemTooltipHarvester(t.itemID, t);
 				local info = {
-					["name"] = itemName,
-					["itemID"] = t.itemID,
-					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-					["class"] = classID,
-					["subclass"] = subclassID,
-					["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
-					["b"] = bindType,
-					["q"] = itemQuality,
-					["iLvl"] = itemLevel,
-					["spellID"] = spellID,
+					name = itemName,
+					itemID = t.itemID,
+					equippable = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+					class = classID,
+					subclass = subclassID,
+					inventoryType = C_Item_GetItemInventoryTypeByID(t.itemID),
+					b = bindType,
+					q = itemQuality,
+					iLvl = itemLevel,
+					spellID = spellID,
 				};
 				if itemMinLevel and itemMinLevel > 0 then
 					info.lvl = itemMinLevel;

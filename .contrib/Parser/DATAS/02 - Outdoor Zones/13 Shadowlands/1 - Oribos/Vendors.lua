@@ -11,13 +11,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
 				["coord"] = { 61.7, 72.3, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(180970, {	-- Teregeer Crystal
 						["description"] = "Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r.",
 					}),
 					i(186684, {	-- Memories of Brigther Times
 						["collectible"] = false,
-						["timeline"] = { ADDED_9_1_0 }
+						["timeline"] = { ADDED_9_1_0 },
 					}),
 				},
 			}),
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(182864, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Au'Dara
 				["description"] = "Next to the flightmaster.",
 				["coord"] = { 59.7, 70.6, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 						["cost"] = {{ "c", CONQUEST, 375 }},
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(188198, {	-- Travlers Anima Cache
 						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",
 						["cost"] = {{ "c", ANIMA, 1000 }},
-						["g"] = {
+						["groups"] = {
 							currency(ANIMA),	-- 1000x Anima
 						},
 					}),
@@ -162,15 +162,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(187997, {	-- Eternal Heirloom Armor Casing
 						["cost"] = 50000000,	-- 5000g
-						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = 75000000,	-- 7500g
-						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
-					i(190184, {	-- Incense of Infinity
-						["questID"] = 65623,
+					i(190184, {	-- Incense of Infinity (CI!)
 						["cost"] = 5000000,	-- 500g
+						["sourceAchievement"] = 14834,	-- Bound with Purpose
 						["sym"] = {
 							{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -198,13 +196,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(156690, {	-- Distributor Au'nagl
 				["coord"] = { 47.0, 23.6, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(180136),	-- The Brokers Angle'r
 				},
 			}),
 			n(176197, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Griftah <Amazing Amulets>
 				["coord"] = { 51.0, 43.4, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(188226),	-- Boots o' Maw Walkin
 					i(188224),	-- Darling Maldraxxi Doll
 					i(188217),	-- De Purpose
@@ -219,7 +217,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			})),
 			n(156769, {	-- Keeper Ta'hult <Pet Vendor>
 				["coord"] = { 64.9, 67.3, ORIBOS },
-				["g"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
+				["groups"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 					i(185919, {	-- Flawless Amethyst Baubleworm (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 10000 } },
 					}),
@@ -267,32 +265,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(177829, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Ko'tul <Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(187254, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Arrangement of Anima
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							currency(ANIMA),	-- Reservoir Anima
 						},
 					})),
 					i(191302, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bottled Night Sky
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							i(188957),	-- Genesis Mote
 						},
 					})),
 					i(187503, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Bundle of Archived Research
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							currency(1931),	-- Cataloged Research
 						},
 					})),
 					i(191300, {	-- Certified Vouchsafe
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["timeline"] = { ADDED_9_2_0 }
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(191030, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Cosmic Flux Parcel
 						["cost"] = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 1 } },
-						["g"] = {
+						["groups"] = {
 							currency(2009),	-- Cosmic Flux
 						},
 					})),
@@ -306,59 +304,59 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Korthite Crystal Geode
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
-						["g"] = {
+						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(187817, {	-- Korthite Crystal Geode
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", VALOR, 1500 }},
-						["g"] = {
+						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					}),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
-						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(187707, {	-- Progentior Essentia
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
-						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
+						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(185832, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Elethium Ore
 						["cost"] = {{ "c", VALOR, 750 }},
-						["g"] = {
+						["groups"] = {
 							i(171833),	-- Elethium Ore
 						},
 					})),
 					i(185765, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Heavy Callous Hide
 						["cost"] = {{ "c", VALOR, 750 }},
-						["g"] = {
+						["groups"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					})),
 					i(185833, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH } }, {	-- Shipment of Lightless Silk
 						["cost"] = {{ "c", VALOR, 750 }},
-						["g"] = {
+						["groups"] = {
 							i(173204),	-- Lightless Silk
 						},
 					})),
 					i(187221, {	-- Soul Ash Cache
 						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							currency(1828),	-- Soul Ash
 						},
 					}),
 					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							currency(1767),	-- Stygia
 						},
 					})),
 					i(191301, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH } }, {	-- Treatise on Patterns in the Purpose
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
-						["g"] = {
+						["groups"] = {
 							currency(1979),	-- Cyphers of the First Ones
 						},
 					})),
@@ -406,8 +404,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				--]]
 			}),
 			n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
-				["coord"] = { 51.3, 43.0, 1672 },
-				["g"] = {
+				["coord"] = { 51.3, 43.0, 1672 },	-- Broker's Den
+				["groups"] = {
 					i(180971, {	-- Aquamarine Cartel Chit
 						["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 					}),
@@ -415,32 +413,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(181681, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_5 } }, {	-- Tu'kol <Anima Exchange Specialist>
 				["coord"] = { 63.8, 36.0, ORIBOS },
-				["g"] = {
+				["groups"] = {
 					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Korthite Crystal Geode
 						["cost"] = {{ "c", ANIMA, 15000 }},
-						["g"] = {
+						["groups"] = {
 							i(186017),	-- Korthite Crystal
 						},
 					})),
 					i(187707, {	-- Progentior Essentia
 						["cost"] = {{ "c", ANIMA, 25000 }},
-						["timeline"] = { ADDED_9_2_0 }
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
 						["cost"] = {{ "c", ANIMA, 7500 }},
-						["g"] = {
+						["groups"] = {
 							i(171833),	-- Elethium Ore
 						},
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
 						["cost"] = {{ "c", ANIMA, 7500 }},
-						["g"] = {
+						["groups"] = {
 							i(172097),	-- Heavy Callous Hide
 						},
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
 						["cost"] = {{ "c", ANIMA, 7500 }},
-						["g"] = {
+						["groups"] = {
 							i(173204),	-- Lightless Silk
 						},
 					}),

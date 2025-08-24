@@ -50,7 +50,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93528, {	-- Angelique Butler <First Aid Supplies>
 					["coord"] = { 36.6, 37.6, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44692),	-- Dalaran Nurse's Gown
 						i(44693),	-- Wound Dressing
@@ -59,33 +59,25 @@ root(ROOTS.Zones, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 56.5, 28.1, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
+							moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+							moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+							moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
+							moh(3, i(123950)),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 						})),
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 					["coord"] = { 45.2, 29.1, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(154879, {	-- Awoken Titan Essence
 							["description"] = "Unless you played during Legion and have legendaries still not at their maximum iLvl, this item is completely useless.",
 						}),
 						i(157796, {	-- Purified Titan Essence
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {
-								{ "select", "creatureID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+								{ "select", "npcID", 106655 },	-- Arcanomancer Vridiel <Blacksmithing Trainer>
 								{ "pop" },	-- Discard the header and acquire the children.
 								{ "is", "itemID" },	-- Select the Items.
 								{ "exclude", "itemID", 154879, 157796, 151709 },	-- Exclude the Purified Titan Essence, Awoken Titan Essence, and Recipe: Felslate Anchor
@@ -94,7 +86,7 @@ root(ROOTS.Zones, {
 						i(147294, {	-- Bone-Wrought Coffer of the Damned [Death Knight]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(132459),	-- Perseverance of the Ebon Martyr
 								i(144280),	-- Death March
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
@@ -124,7 +116,7 @@ root(ROOTS.Zones, {
 						i(147301, {	-- Coffer of Twin Faiths [Priest]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(144244),	-- Kam Xi'raff
 								i(151787),	-- The Alabaster Lady
 								i(133971),	-- Zenk'aram, Iridi's Anadem
@@ -157,7 +149,7 @@ root(ROOTS.Zones, {
 						i(147297, {	-- Deepwood Ranger's Quiver [Hunter]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(137064),	-- The Shadow Hunter's Voodoo Mask
 								i(144326),	-- The Mantle of Command
 								i(151803),	-- Celerity of the Windrunnerszao
@@ -186,7 +178,7 @@ root(ROOTS.Zones, {
 						i(147295, {	-- Demonslayer's Soul-Sealed Satchel [Demon Hunter]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(137061),	-- Raddon's Cascading Eyes
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
 								i(144279),	-- Delusions of Grandeur
@@ -212,7 +204,7 @@ root(ROOTS.Zones, {
 						i(147303, {	-- Giant Elemental's Close Stone Fist [Shaman]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(143732),	-- Uncertain Reminder
 								i(137074),	-- Echoes of the Great Sundering
 								i(137616),	-- Emalon's Charged Core
@@ -241,7 +233,7 @@ root(ROOTS.Zones, {
 						i(147299, {	-- Hand-Carved Jade Puzzle Box [Monk]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(137063),	-- Fundamental Observation
 								i(151811),	-- The Wind Blows
 								i(151788),	-- Stormstout's Last Gasp
@@ -276,7 +268,7 @@ root(ROOTS.Zones, {
 						i(147302, {	-- Hollow Skeleton Key [Rogue]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(151815),	-- The Empty Crown
 								i(144236),	-- Mantle of the Master Assassino
 								i(151817),	-- The Curse of Restlessness
@@ -301,7 +293,7 @@ root(ROOTS.Zones, {
 						i(147300, {	-- Light-Bound Relinquary [Paladin]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(137065),	-- Justice Gaze
 								i(144275),	-- Saruan's Resolve
 								i(151782),	-- The Topless Tower
@@ -332,7 +324,7 @@ root(ROOTS.Zones, {
 						i(147296, {	-- Living Root-Bound Cache [Druid]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(151801),	-- Behemoth Headdress
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
 								i(151783),	-- Chameleon Song
@@ -370,7 +362,7 @@ root(ROOTS.Zones, {
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(132394),	-- Hood of Eternal Disdain
 								i(144385),	-- Wakener's Loyalty
 								i(144369),	-- Lessons of Space-Time
@@ -398,7 +390,7 @@ root(ROOTS.Zones, {
 						i(147298, {	-- Spell-Secured Pocket of Infinite Depths [Mage]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(132863),	-- Darckli's Dragonfire Diadem
 								i(144274),	-- Gravity Seal
 								i(151810),	-- Shattered Fragments of Sindragosa
@@ -426,7 +418,7 @@ root(ROOTS.Zones, {
 						i(147305, {	-- Stalwart Champion's War Chest [Warrior]
 							["cost"] = { { "c", 1533, 1000, } },	-- 1,000x Wakening Essence
 							["_drop"] = { "spellID" },
-							["g"] = {
+							["groups"] = {
 								i(137088),	-- Ceann-Ar Charger
 								i(151823),	-- The Great Storm's Eye
 								i(143728),	-- Timeless Stratagem
@@ -502,7 +494,7 @@ root(ROOTS.Zones, {
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
 					["coord"] = { 58.7, 39.3, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(136910, {	-- Alarm-o-Bot (PET!)
 							["cost"] = {
 								-- #if BEFORE 10.2.5
@@ -581,7 +573,7 @@ root(ROOTS.Zones, {
 				n(98724, {	-- Giada Goldleash <Exotic Pets and Accessories>
 					["coord"] = { 58.3, 38.0, LEGION_DALARAN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
 							["cost"] = {
 								-- #if BEFORE 10.2.5
@@ -649,7 +641,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93539, {	-- Hobart Grapplehammer <Engineering Supplies>
 					["coord"] = { 38.4, 24.7, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(136630),	-- "Twirling Bottom" Repeater
 						i(144328, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Boon of the Builder
 							i(144330, {	-- Sprocket Container
@@ -667,7 +659,7 @@ root(ROOTS.Zones, {
 						i(136632),	-- Chaos Blaster
 						i(139555, {	-- Designs of the Grand Architect
 							["cost"] = 80000000,	-- 8,000g
-							["g"] = {
+							["groups"] = {
 								artifact(918),	-- Titanstrike Hunter Hidden Appearance
 							},
 						}),
@@ -721,7 +713,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
 					["coord"] = { 38.5, 41.2, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(139494),	-- Forgotten Formulas of the Broken Isles
 						i(128591),	-- Formula: Enchant Cloak - Binding of Agility [Rank 2] (RECIPE!)
 						i(128592),	-- Formula: Enchant Cloak - Binding of Intellect [Rank 2] (RECIPE!)
@@ -737,16 +729,12 @@ root(ROOTS.Zones, {
 						i(128580),	-- Formula: Enchant Ring - Word of Haste [Rank 2] (RECIPE!)
 						i(128581),	-- Formula: Enchant Ring - Word of Mastery [Rank 2] (RECIPE!)
 						i(128582),	-- Formula: Enchant Ring - Word of Versatility [Rank 2] (RECIPE!)
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(140634),	-- Formula: Ley Shatter (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(92184, {	-- Imindril Spearsong <Blacksmithing Vendor>
 					["coord"] = { 46.2, 27.2, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(123928),	-- Plans: Leystone Armguards [Rank 2] (RECIPE!)
 						i(123934),	-- Plans: Leystone Boots [Rank 2] (RECIPE!)
 						i(123935),	-- Plans: Leystone Breastplate [Rank 2] (RECIPE!)
@@ -760,7 +748,7 @@ root(ROOTS.Zones, {
 				n(100500, {	-- Jabrul <Jewelcrafting Master>
 					["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
 					["coord"] = { 39.6, 34.5, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137809),	-- Design: Ancient Maelstrom Amulet [Rank 1] (RECIPE!)
 						i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
 						i(137797),	-- Design: Azsunite Pendant [Rank 1] (RECIPE!)
@@ -796,7 +784,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93544, {	-- Jang Quillpaw <Inscription Supplies>
 					["coord"] = { 41.4, 36.7, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(141042),	-- Technique: Glyph of Autumnal Bloom (RECIPE!)
 						i(137733),	-- Technique: Glyph of Blackout (RECIPE!)
 						i(141030),	-- Technique: Glyph of Cracked Ice (RECIPE!)
@@ -827,7 +815,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 43.6, 45.6, LEGION_DALARAN },
 					["timeline"] = { ADDED_7_0_3 },
 					["sym"] = {{"sub", "common_vendor", 29716}},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
-					["g"] = {
+					["groups"] = {
 						i(129057),	-- Dalaran Disc (TOY!)
 						i(140309, {	-- Prismatic Bauble (TOY!)
 							["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 },	-- During June 2023
@@ -843,7 +831,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93524, {	-- Lalla Brightweave <Tailoring Supplies>
 					["coord"] = { 36.1, 33.3, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137965),	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
 						i(137967),	-- Pattern: Imbued Silkweave Epaulets [Rank 2] (RECIPE!)
 						i(137970),	-- Pattern: Imbued Silkweave Gloves [Rank 2] (RECIPE!)
@@ -857,39 +845,30 @@ root(ROOTS.Zones, {
 						i(137958),	-- Pattern: Silkweave Gloves [Rank 2] (RECIPE!)
 						i(137956),	-- Pattern: Silkweave Pantaloons [Rank 2] (RECIPE!)
 						i(137960),	-- Pattern: Silkweave Robe [Rank 2] (RECIPE!)
-						i(138011),	-- Pattern: Silkweave Satchel
+						i(138011),	-- Pattern: Silkweave Satchel (RECIPE!)
 						i(137959),	-- Pattern: Silkweave Slippers [Rank 2] (RECIPE!)
 					},
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 29.4, 75.6, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
-							i(137894, {	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137926, {	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
-								["requireSkill"] = TAILORING,
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
-							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
-								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-							}),
+							moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
+							moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
+							moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
+							moh(3, i(123950)),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 						})),
 					},
 				}),
 				n(120906, {	-- Marshal Frazer <Gladiator Quartermaster>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.4, 74.0, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						--[[
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
@@ -1002,7 +981,7 @@ root(ROOTS.Zones, {
 						}),
 						currency(1357, {	-- Echoes of Domination
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 								i(149433, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
@@ -1148,7 +1127,7 @@ root(ROOTS.Zones, {
 				}),
 				n(92457, {	-- Patricia Egan <Alchemy Supplier>
 					["coord"] = { 42.2, 32.3, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(127898, {	-- Recipe: Ancient Healing Potion [Rank 1] (RECIPE!)
 							["sourceQuests"] = { 39325 },	-- Get Your Mix On
 						}),
@@ -1216,7 +1195,7 @@ root(ROOTS.Zones, {
 				}),
 				n(92195, {	-- Professor Pallin <Inscription Trainer>
 					["coord"] = { 41.5, 37.3, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137787),	-- Technique: Songs of Battle (RECIPE!)
 					},
 				}),
@@ -1228,7 +1207,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93521, {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
 					["coord"] = { 34.6, 28.6, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137884),	-- Pattern: Dreadleather Bindings [Rank 2] (RECIPE!)
 						i(137890),	-- Pattern: Dreadleather Footpads [Rank 2] (RECIPE!)
 						i(137889),	-- Pattern: Dreadleather Gloves [Rank 2] (RECIPE!)
@@ -1265,7 +1244,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93543, {	-- Sminx Glasseye
 					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(139599, {	-- Empowered Ring of the Kirin Tor
 					--		["cost"] = 2500000000,	-- 250,000g
 						}),
@@ -1283,7 +1262,7 @@ root(ROOTS.Zones, {
 				n(108468, {	-- The Mad Merchant
 					["description"] = "This vendor is not always present.",
 					["coord"] = { 43.2, 46.6, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137570, {	-- Bloodfang Widow (MOUNT!)
 							["cost"] = 20000000000,	-- 2,000,000g
 						}),
@@ -1300,7 +1279,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93526, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 					["coord"] = { 39.86, 34.77, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(137834),	-- Design: Ancient Maelstrom Amulet [Rank 2] (RECIPE!)
 						i(137819),	-- Design: Azsunite Loop [Rank 2] (RECIPE!)
 						i(137822),	-- Design: Azsunite Pendant [Rank 2] (RECIPE!)
@@ -1322,7 +1301,7 @@ root(ROOTS.Zones, {
 				n(98723, {	-- Tiffy Trapspring <Exotic Pets and Accessories>
 					["coord"] = { 59.2, 39.9, LEGION_DALARAN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(127704, {	-- Bloodthorn Hatchling (PET!)
 							["cost"] = {
 								-- #if BEFORE 10.2.5
@@ -1403,11 +1382,11 @@ root(ROOTS.Zones, {
 				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						--[[
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
@@ -1520,7 +1499,7 @@ root(ROOTS.Zones, {
 						}),
 						currency(1357, {	-- Echoes of Domination
 							["u"] = REMOVED_FROM_GAME,
-							["g"] = {
+							["groups"] = {
 								i(149433, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_ELITE, "INVTYPE_HEAD"),
@@ -1642,12 +1621,15 @@ root(ROOTS.Zones, {
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
 					["coord"] = { 48.8, 13.5, LEGION_DALARAN },
-					["g"] = {
+					["groups"] = {
 						i(141713, {	-- Arcadian War Turtle (MOUNT!)
 							["cost"] = { { "c", 1275, 150 }, },	-- 150x Curious Coin
 						}),
 						i(136702, {	-- Formula: Soul Fibril (RECIPE!)
 							["cost"] = { { "c", 1275, 1 }, },	-- 1x Curious Coin
+						}),
+						i(141860, {	-- Ingram's Puzzle
+							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin
 						}),
 						i(141862, {	-- Mote of Light (TOY!)
 							["cost"] = { { "c", 1275, 50 }, },	-- 50x Curious Coin

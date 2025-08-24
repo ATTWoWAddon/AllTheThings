@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201398 },	-- Kurazidaia
 					["coord"] = { 60.8, 26.4, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(203646),	-- Primalist Cloak
 					},
 				}),
@@ -31,12 +31,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 73076 },	-- Return to the Reach
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(202868),	-- Mender's Signal (QI!)
 					},
 				}),
 				q(74847, {	-- Emberthal Awaits
-					["timeline"] = { REMOVED_10_1_0 },
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
@@ -44,7 +43,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["timeline"] = { REMOVED_10_1_0 },
+					["groups"] = {
 						i(204276),	-- Untapped Forbidden Knowledge
 					},
 				}),
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72713 },	-- Inheritance
 					["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
 					["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(203692),	-- Horn Signet of Arrosh (QI!)
 						i(203697),	-- Horn Signet of Ekrati (QI!)
 						i(203698),	-- Horn Signet of Talon Hermin (QI!)
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 73137 },	-- Chasing the Flame
 					["provider"] = { "n", 199538 },	-- Scalecommander Emberthal
 					["coord"] = { 74.3, 36.9, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(204182),	-- Cloak of Dark Descent
 					},
 				}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
 				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(203463),	-- Atrenosh's Journal (QI!)
 				},
 			}),
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200566 },	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(204561),	-- Primalist Cache Key
 					i(204852),	-- Primalist Scriptures
 				},
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(204093),	-- Lunker Morsel (QI!)
 				},
 			}),
@@ -294,8 +294,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			-- Augmentation Evoker questline
 			q(72513, {	-- Our Destiny
-				["timeline"] = { ADDED_10_1_5 },
 				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72514, {	-- The High Creche
 				["sourceQuests"] = { 72513 },	-- Our Destiny
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 199141 },	-- Scalecommander Emberthal
 				["coord"] = { 58.7, 70.4, THE_FORBIDDEN_REACH },
 				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(205162),	-- Nelthara (PET!)
 				},
 			}),
@@ -336,22 +336,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73142, {	-- Busting Blues
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202362),	-- Arcane Focus (QI!)
 				},
 			}),
 			q(73189, {	-- Creche Cache
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(202619),	-- Mender Supplies (QI!)
+				["groups"] = {
+					o(385990, {	-- Mender Supplies
+						["coord"] = { 33.8, 56.2, 2101 },	-- The Support Creche
+						["groups"] = { i(202619) },	-- Mender Supplies (QI!)
+					}),
 					i(202620),	-- Toxin Antidote (QI!)
+					i(203657),	-- Toxin Antidote (QI!)
 				},
 			}),
 			q(73139, {	-- Deep Sea Supplies
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202361),	-- Farscale Supplies
 				},
 			}),
@@ -362,15 +366,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73141, {	-- Everburning Embers
 				["provider"] = { "n", 200558 },	-- Tukkaraq
 				["coord"] = { 31.8, 54.2, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202364),	-- Everburning Ember
 				},
 			}),
 			q(73178, {	-- Hands Off Our Booty!
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
-				["g"] = {
-					i(202647),	-- Stolen Goods (QI!)
+				["groups"] = {
+					o(385999, {	-- Stolen Booty
+						i(202647),	-- Stolen Goods (QI!)
+					}),
 				},
 			}),
 			q(73191, {	-- Snake Wrangling
@@ -396,7 +402,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73398, {	-- Too Far Forward
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202874),	-- Healing Draught
 				},
 			}),
@@ -407,7 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73194, {	-- Up Close and Personal
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202642),	-- Proto-Killing Spear
 				},
 			}),

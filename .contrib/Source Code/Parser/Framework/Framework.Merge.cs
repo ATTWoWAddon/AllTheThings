@@ -127,7 +127,6 @@ namespace ATT
                         }
                         break;
                     case "Items.SOURCES":
-                    case "Items.HARVESTSOURCES":
                         {
                             if (pair.Value is Dictionary<decimal, object> db)
                             {
@@ -149,12 +148,6 @@ namespace ATT
                     case "SpellDB":
                         MergeSpellDB(pair.Value);
                         break;
-                    case "ItemMountDB":
-                        {
-                            LogError("ItemMountDB not supported. Please use 'ItemDBConditional' to assign Mount objects.");
-                            Log(CurrentFileName);
-                            break;
-                        }
                     case "ItemSpeciesDB":
                         {
                             // The format of the Item Species DB is a dictionary of item ID -> Values.
@@ -309,45 +302,6 @@ namespace ATT
                                     else
                                     {
                                         ThrowBadFormatDB("AchievementCategoryData", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "Artifacts":
-                        {
-                            if (pair.Value is Dictionary<long, object> artifactDB)
-                            {
-                                foreach (var itemValuePair in artifactDB)
-                                {
-                                    if (itemValuePair.Value is IDictionary<string, object> artifact)
-                                    {
-                                        long artifactID = itemValuePair.Key;
-                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
-                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
-
-                                        foreach (var hand in artifact)
-                                        {
-                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
-                                        }
-                                    }
-                                }
-                            }
-                            else if (pair.Value is List<object> artifacts)
-                            {
-                                var artifactID = 0;
-                                foreach (var o in artifacts)
-                                {
-                                    ++artifactID;
-                                    if (o is IDictionary<string, object> artifact)
-                                    {
-                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
-                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
-
-                                        foreach (var hand in artifact)
-                                        {
-                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
-                                        }
                                     }
                                 }
                             }
@@ -600,6 +554,30 @@ namespace ATT
                                 foreach (var keyValuePair in db)
                                 {
                                     GlyphDB[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+                                }
+                            }
+                            break;
+                        }
+                    case "ItemAppearanceModifierIDs_BonusID":
+                        {
+                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Bonus ID <-> ItemAppearanceModifierID pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    ItemAppearanceModifierIDs_BonusID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+                                }
+                            }
+                            break;
+                        }
+                    case "ItemAppearanceModifierIDs_ModID":
+                        {
+                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Mod ID <-> ItemAppearanceModifierID pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    ItemAppearanceModifierIDs_ModID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
                                 }
                             }
                             break;
@@ -913,70 +891,6 @@ namespace ATT
             }
 
             return new List<object>();
-        }
-
-        internal static void ParseWagoCsv(string type, string csv)
-        {
-            TypeDB[type] = WagoTypes.ParseCsvType(type, csv);
-
-            // CriteriaTree creates parent mapping one-time
-            if (type == nameof(CriteriaTree))
-            {
-                CollectObjectsByValue<CriteriaTree>(type, (se) => se.Parent);
-            }
-            // ItemEffect creates SpellID mapping one-time
-            if (type == nameof(ItemEffect))
-            {
-                CollectObjectsByValue<ItemEffect>(type, (se) => se.SpellID);
-            }
-            // ItemXItemEffect creates ItemID mapping one-time
-            if (type == nameof(ItemXItemEffect))
-            {
-                CollectObjectsByValue<ItemXItemEffect>(type, (se) => se.ItemID);
-            }
-            // ModifierTree creates parent mapping one-time
-            if (type == nameof(ModifierTree))
-            {
-                CollectObjectsByValue<ModifierTree>(type, (se) => se.Parent);
-            }
-            // SpellEffect creates SpellID mapping one-time
-            if (type == nameof(SpellEffect))
-            {
-                CollectObjectsByValue<SpellEffect>(type, (se) => se.SpellID);
-            }
-            // TransmogSet creates QuestID mapping one-time
-            if (type == nameof(TransmogSet))
-            {
-                CollectObjectsByValue<TransmogSet>(type, (se) => se.TrackingQuestID);
-            }
-            // TransmogSetItem creates TransmogSetID mapping one-time
-            if (type == nameof(TransmogSetItem))
-            {
-                CollectObjectsByValue<TransmogSetItem>(type, (se) => se.TransmogSetID);
-                CollectObjectsByValue<TransmogSetItem>(type, (se) => se.ItemModifiedAppearanceID, nameof(TransmogSetItem.ItemModifiedAppearanceID));
-            }
-        }
-
-        private static void CollectObjectsByValue<T>(string type, Func<T, long> valueFunc, string subname = null)
-            where T : IDBType
-        {
-            IDictionary<long, IDBType> db = TypeDB[type];
-            Dictionary<long, IDBType> group = new Dictionary<long, IDBType>();
-            TypeDB[type + (subname ?? nameof(TypeCollection<T>))] = group;
-
-            foreach (T obj in db.Values.AsTypedEnumerable<T>())
-            {
-                long groupID = valueFunc(obj);
-                if (groupID != 0)
-                {
-                    if (!(group.TryGetValue(groupID, out IDBType groupDB) && groupDB is TypeCollection<T> groupCollection))
-                    {
-                        group[groupID] = groupCollection = new TypeCollection<T>();
-                    }
-
-                    groupCollection.Collection.Add(obj);
-                }
-            }
         }
 
         public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)

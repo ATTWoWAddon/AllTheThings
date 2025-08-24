@@ -7,6 +7,7 @@ DEFENSE_PROTOCOL_ALPHA = createHeader({
 		de = "Verteidigungsprotokoll Alpha",
 		fr = "Protocole de défense Alpha",
 		-- it = "[Defense Protocol Alpha]",
+		mx = "Protocolo de defensa Alfa",
 		pt = "Protocolo de Defesa Alfa",
 		ru = "Защитный протокол \"Альфа\"",
 		ko = "방어 프로토콜 알파",

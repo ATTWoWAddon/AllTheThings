@@ -8,6 +8,7 @@ local CERULEAN_PIGMENT = 114931;
 local LUMINOUS_SHARD = 111245;
 local RAW_BEAST_HIDE = 110609;
 local STARFLOWER = 109127;
+local SUMPTUOUS_FUR = 111557;
 local TRUE_IRON_ORE = 109119;
 local PRIMAL_SPIRIT = i(120945, {	-- Primal Spirit
 	["cost"] = {
@@ -30,6 +31,28 @@ local DUST_TRADER = {
 	PRIMAL_SPIRIT,
 	i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 		["cost"] = {{ "i", LUMINOUS_SHARD, 5 }},
+	}),
+};
+local FUR_TRADER = {
+	PRIMAL_SPIRIT,
+	i(122716, {	-- Pattern: Primal Weaving (RECIPE!)
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+	}),
+	i(127724, {	-- Pattern: Mighty Hexweave Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+	}),
+	i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+	}),
+	i(127742, {	-- Pattern: Savage Hexweave Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
 };
 local HERB_TRADER = {
@@ -112,7 +135,7 @@ local HERB_TRADER = {
 	}),
 	i(122599, {	-- Tome of Sorcerous Elements (RECIPE!)
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
-		["g"] = {
+		["groups"] = {
 			r(181637),	-- Transmute: Sorcerous Air to Earth
 			r(181633),	-- Transmute: Sorcerous Air to Fire
 			r(181636),	-- Transmute: Sorcerous Air to Water
@@ -129,7 +152,7 @@ local HERB_TRADER = {
 	}),
 	i(122605, {	-- Tome of the Stones (RECIPE!)
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
-		["g"] = {
+		["groups"] = {
 			r(181650),	-- Stone of Fire
 			r(181648),	-- Stone of the Earth
 			r(181649),	-- Stone of the Waters
@@ -252,11 +275,11 @@ root(ROOTS.ExpansionFeatures,
 			n(VENDORS, {
 				n(90894, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Alexi Hackercam <Ore Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = ORE_TRADER,
+					["groups"] = ORE_TRADER,
 				})),
 				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = COOK_TRADER,
+					["groups"] = COOK_TRADER,
 				}),
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
 					i(119210, {	-- Hearthstone Board (TOY!)
@@ -264,45 +287,17 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					i(119212),	-- Winning Hand (TOY!)
 				}),
-				n(91034, {	-- Calvo Klyne <Fur Trader>
+				n(91034, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Calvo Klyne <Fur Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(122716, {	-- Pattern: Primal Weaving
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127724, {	-- Pattern: Mighty Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(127742, {	-- Pattern: Savage Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-					},
-				}),
+					["groups"] = FUR_TRADER,
+				})),
 				n(88633, {	-- Deluwin Whisperfield <Contracts>
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Sells contracts for followers not chosen during zone quests.",
-					["g"] = {
+					["groups"] = {
 						i(119291, {	-- Contract: Artificer Andren
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(184),	-- Apprentice Artificer Andren
 							},
 						}),
@@ -311,105 +306,77 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(119256, {	-- Contract: Glirin
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(211),	-- Glirin
 							},
 						}),
 						i(119244, {	-- Contract: Hulda Shadowblade
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(453),	-- Hulda Shadowblade
 							},
 						}),
 						i(119242, {	-- Contract: Magister Serena
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(154),	-- Magister Serena
 							},
 						}),
 						i(119420, {	-- Contract: Miall
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(155),	-- Miall
 							},
 						}),
 						i(119254, {	-- Contract: Pitfighter Vaandaam
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(176),	-- Pitfighter Vaandaam
 							},
 						}),
 						i(119296, {	-- Contract: Rangari Chel
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(185),	-- Rangari Chel
 							},
 						}),
 						i(119252, {	-- Contract: Rangari Erdanii
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(212),	-- Rangari Erdanii
 							},
 						}),
 						i(119298, {	-- Contract: Ranger Kaalya
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(159),	-- Rangari Kaalya
 							},
 						}),
 						i(119292, {	-- Contract: Vindicator Onaala
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(186),	-- Vindicator Onaala
 							},
 						}),
 						i(119267, {	-- Contract: Ziri'ak
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(168),	-- Ziri'ak
 							},
 						}),
 					},
 				}),
-				n(91025, {	-- Dorothy "Two" <Fur Trader>
+				n(91025, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Dorothy "Two" <Fur Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(122716, {	-- Pattern: Primal Weaving
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127724, {	-- Pattern: Mighty Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(127742, {	-- Pattern: Savage Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-					},
-				}),
+					["groups"] = FUR_TRADER,
+				})),
 				n(91020, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Enchantress Ismae <Dust Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = DUST_TRADER,
+					["groups"] = DUST_TRADER,
 				})),
 				n(80285, {	-- Guh <Bladespire Trader>
 					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r to invite him to your garrison.",
-					["g"] = {
+					["groups"] = {
 						i(119430, {	-- Gas-Powered Stick
 							["cost"] = 10000000,	-- 1,000g
 						}),
@@ -417,72 +384,72 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(91024, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Jake the Fox <Leather Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = LEATHER_TRADER,
+					["groups"] = LEATHER_TRADER,
 				})),
 				n(76928, {	-- Kraank <Food & Drink>
 					["races"] = HORDE_ONLY,
-					["g"] = COOK_TRADER,
+					["groups"] = COOK_TRADER,
 				}),
 				n(88635, {	-- Nalya Battlehorn <Contracts>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(119255, {	-- Contract: Bruto
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(176),	-- Bruto
 							},
 						}),
 						i(119245, {	-- Contract: Dark Ranger Velonara
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(453),	-- Dark Ranger Velonara
 							},
 						}),
 						i(122135, {	-- Contract: Greatmother Geyah
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(186),	-- Greatmother Geyah
 							},
 						}),
 						i(122136, {	-- Contract: Kal'gor the Honorable
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(184),	-- Kal'gor the Honorable
 							},
 						}),
 						i(119233, {	-- Contract: Kaz the Shrieker
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(159),	-- Kaz the Shrieker
 							},
 						}),
 						i(119240, {	-- Contract: Lokra
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(185),	-- Lokra
 							},
 						}),
 						i(119243, {	-- Contract: Magister Krelas
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(154),	-- Magister Krelas
 							},
 						}),
 						i(119418, {	-- Contract: Morketh Bladehowl
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(155),	-- Morketh Bladehowl
 							},
 						}),
 						i(119257, {	-- Contract: Penny Clobberbottom
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(211),	-- Penny Clobberbottom
 							},
 						}),
 						i(119253, {	-- Contract: Spirit of Bony Xuk
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(212),	-- Spirit of Bony Xuk
 							},
 						}),
@@ -491,7 +458,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(119267, {	-- Contract: Ziri'ak
 							["cost"] = 50000000,	-- 5,000g
-							["g"] = {
+							["groups"] = {
 								follower(168),	-- Ziri'ak
 							},
 						}),
@@ -499,15 +466,15 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(91031, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Nicholas Mitrik <Herb Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = HERB_TRADER,
+					["groups"] = HERB_TRADER,
 				})),
 				n(91029, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Rath'thul Moonvale <Dust Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = DUST_TRADER,
+					["groups"] = DUST_TRADER,
 				})),
 				n(79619, {	-- Rezlak <Blueprints Vendor>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(111929),	-- Alchemy Lab, Level 2
 						i(118215, {	-- Book of Garrison Blueprints [Can learn all lvl 1 blueprints except Salvage Yard]
 							i(111812),	-- Alchemy Lab, Level 1
@@ -577,7 +544,7 @@ root(ROOTS.ExpansionFeatures,
 						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111930),	-- Alchemy Lab, Level 3
 								i(111973),	-- Enchanter's Study, Level 3
 								i(109257),	-- Engineering Works, Level 3
@@ -590,13 +557,13 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						ach(9565, {	-- Master Trapper (125)
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111969),	-- Barn, Level 3
 							},
 						}),
 						ach(9523, {	-- Patrolling Draenor
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111971),	-- Barracks, Level 3
 							},
 						}),
@@ -617,80 +584,80 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						ach(9453, {	-- Draenic Stone Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116249),	-- Frostwall Mines, Level 3
 							},
 						}),
 						ach(9703, {	-- Stay Awhile and Listen
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116432),	-- Frostwall Tavern, Level 3
 							},
 						}),
 						ach(9495, {	-- The Bone Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111981),	-- Gladiator's Sanctum, Level 3
 							},
 						}),
 						ach(9527, {	-- Terrific Technology
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116201),	-- Goblin Workshop, Level 3
 							},
 						}),
 						ach(9454, {	-- Draenic Seed Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111997),	-- Herb Garden, Level 3
 							},
 						}),
 						ach(9429, {	-- Upgrading the Mill
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(109255),	-- Lumber Mill, Level 3
 							},
 						}),
 						ach(9463, {	-- Draenic Pet Battler
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111999),	-- Menagerie, Level 3
 							},
 						}),
 						ach(9468, {	-- Salvaging Pays Off
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111977),	-- Salvage Yard, Level 3
 							},
 						}),
 						ach(9497, {	-- Finding Your Waystones
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116197),	-- Spirit Lodge, Level 3
 							},
 						}),
 						ach(9526, {	-- Master of Mounts
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(112003),	-- Stables, Level 3
 							},
 						}),
 						ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111983),	-- Storehouse, Level 3
 							},
 						}),
 						h(ach(9477, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["_noautomation"] = true,
-							["g"] = {
+							["groups"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
 						})),
 						ach(9129, {	-- Filling the Ranks
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116186),	-- War Mill, Level 3
 							},
 						}),
@@ -698,12 +665,12 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(91404, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Samantha Scarlet <Herb Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = HERB_TRADER,
+					["groups"] = HERB_TRADER,
 				})),
 				n(88223, {	-- Sergeant Crowler <Garrison Quartermaster>
 					["crs"] = {78564},
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(120348, {	-- Enchanted Crystal of Freezing
 							["cost"] = { { "c", 824, 60 }, },	-- 60x Garrison Resources
 						}),
@@ -793,7 +760,7 @@ root(ROOTS.ExpansionFeatures,
 				n(88228, {	-- Sergeant Grimjaw <Garrison Quartermaster>
 					["races"] = HORDE_ONLY,
 					["crs"] = { 79774 },	-- Sergeant Grimjaw <Garrison Quartermaster> (secondary version)
-					["g"] = {
+					["groups"] = {
 						i(120348, {	-- Enchanted Crystal of Freezing
 							["cost"] = { { "c", 824, 60 }, },	-- 60x Garrison Resources
 						}),
@@ -882,7 +849,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(85839, {	-- Sparz Boltwist <Blueprints Vendor>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(118215, {	-- Book of Garrison Blueprints [Can learn all lvl 1 blueprints except Salvage Yard]
 							i(111812),	-- Alchemy Lab, Level 1
 							i(111959, {	-- Barn, Level 1 [Building must be attached in order for the blueprint to be collectible]
@@ -951,7 +918,7 @@ root(ROOTS.ExpansionFeatures,
 						i(111986),	-- Trading Post, Level 2
 						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
-							["g"] = {
+							["groups"] = {
 								i(111930),	-- Alchemy Lab, Level 3
 								i(111973),	-- Enchanter's Study, Level 3
 								i(109257),	-- Engineering Works, Level 3
@@ -964,19 +931,19 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9565, {	-- Master Trapper (125)
-							["g"] = {
+							["groups"] = {
 								i(111969),	-- Barn, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9523, {	-- Patrolling Draenor
-							["g"] = {
+							["groups"] = {
 								i(111971),	-- Barracks, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9129, {	-- Filling the Ranks
-							["g"] = {
+							["groups"] = {
 								i(111967),	-- Dwarven Bunker, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -997,67 +964,67 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						ach(9495, {	-- The Bone Collector
-							["g"] = {
+							["groups"] = {
 								i(111981),	-- Gladiator's Sanctum, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9527, {	-- Terrific Technology
-							["g"] = {
+							["groups"] = {
 								i(111985),	-- Gnomish Gearworks, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9454, {	-- Draenic Seed Collector
-							["g"] = {
+							["groups"] = {
 								i(111997),	-- Herb Garden, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9429, {	-- Upgrading the Mill
-							["g"] = {
+							["groups"] = {
 								i(109255),	-- Lumber Mill, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9453, {	-- Draenic Stone Collector
-							["g"] = {
+							["groups"] = {
 								i(111996),	-- Lunarfall Excavation, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9703, {	-- Stay Awhile and Listen
-							["g"] = {
+							["groups"] = {
 								i(109065),	-- Lunarfall Inn, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9497, {	-- Finding Your Waystones
-							["g"] = {
+							["groups"] = {
 								i(109063),	-- Mage Tower, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9463, {	-- Draenic Pet Battler
-							["g"] = {
+							["groups"] = {
 								i(111999),	-- Menagerie, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9468, {	-- Salvaging Pays Off
-							["g"] = {
+							["groups"] = {
 								i(111977),	-- Salvage Yard, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9526, {	-- Master of Mounts
-							["g"] = {
+							["groups"] = {
 								i(112003),	-- Stables, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9487, {	-- Got My Mind On My Draenor Money (10,000)
-							["g"] = {
+							["groups"] = {
 								i(111983),	-- Storehouse, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -1065,7 +1032,7 @@ root(ROOTS.ExpansionFeatures,
 						a(ach(9478, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["_noautomation"] = true,
-							["g"] = {
+							["groups"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
 						})),
@@ -1073,7 +1040,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(95470, {	-- Trader Araanda <Local Supplies>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(127868, {	-- Crusher (PET!)
 							["cost"] = 10000000,	-- 1,000g
 							["timeline"] = { ADDED_6_2_0 },
@@ -1091,7 +1058,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(95471, {	-- Trader Darakk <Local Supplies>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(127868, {	-- Crusher (PET!)
 							["cost"] = 10000000,	-- 1,000g
 							["timeline"] = { ADDED_6_2_0 },
@@ -1109,11 +1076,11 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(91030, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Trixxy Volt <Ore Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = ORE_TRADER,
+					["groups"] = ORE_TRADER,
 				})),
 				n(91033, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Zeezu <Leather Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = LEATHER_TRADER,
+					["groups"] = LEATHER_TRADER,
 				})),
 			}),
 		})),

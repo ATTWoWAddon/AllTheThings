@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82297, {	-- One Hungry Worm
 					["provider"] = { "n", 223406 },	-- Zaedu
 					["coord"] = { 53.9, 37.0, AZJ_KAHET },
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79722, {	-- Gutter Work
 					["coord"] = { 57.5, 71.1, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						i(224102),	-- Chunked Kobyss Innards (QI!)
 						i(222921),	-- Mangled Kobyss Innards (QI!)
 						i(224103),	-- Uncertain Kobyss Innards (QI!)
@@ -97,13 +97,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79960, {	-- Taking It To Go
 					["coord"] = { 75.0, 77.4, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						i(216664),	-- Threading Lure (QI!)
 					},
 				}),
 				q(82266, {	-- Tower Washing Simulator
 					["coord"] = { 37, 34.1, NERUBAR },
-					["g"] = {
+					["groups"] = {
 						i(223220),	-- Kaheti All-Purpose Cleanser (QI!)
 					},
 				}),
@@ -131,11 +131,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					q(82161),	-- Special Assignment: Bombs from Behind [Trigger]
 					q(82531, {	-- Special Assignment: Bombs from Behind
-						-- ["coord"] = { XX, YY, AZJ_KAHET }
 						["sourceQuests"] = { 82161 },	-- Special Assignment: Bombs from Behind [Trigger]
+						-- ["coord"] = { XX, YY, AZJ_KAHET }
 					}),
 				}),
 			}),
 		}),
 	}),
-})));
+}));

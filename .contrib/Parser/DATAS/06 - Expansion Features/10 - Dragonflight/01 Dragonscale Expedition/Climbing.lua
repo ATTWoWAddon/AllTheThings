@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 66351 },	-- Smoke Over the Mountain
 					["provider"] = { "n", 181039 },	-- Rocky Dustbeard
 					["coord"] = { 62.4, 50.5, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						ach(16624),	-- Which Knot Was It Again?
 						i(191138),	-- Clinging Gustbloom Sample (QI!)
 					},
@@ -50,11 +50,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					-- The Waking Shores --
 				q(66070, {	-- Brightblade's Bones
 					["coord"] = { 22.0, 95.1, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						n(187077, {	-- Cymre Brightblade
 							["description"] = "Only available when world quest is active.",
 							["coord"] = { 22.8, 95.0, THE_WAKING_SHORES },
-							["g"] = {
+							["groups"] = {
 								i(202085, {	-- Bugbiter Tortoise (PET!)
 									["cost"] = {
 										{ "i", 202084, 1 },	-- 1xEroded Fossil

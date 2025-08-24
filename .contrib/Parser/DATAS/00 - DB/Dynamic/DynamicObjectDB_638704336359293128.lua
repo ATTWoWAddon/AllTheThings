@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[495500] = {
 		readable = "Shadowflame Cache",
 		model = 199748,

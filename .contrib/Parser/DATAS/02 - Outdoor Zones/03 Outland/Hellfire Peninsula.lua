@@ -67,7 +67,6 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
-local FELANNIA_JOHAN_GROUPS = {};
 -- #if AFTER WRATH
 -- All of these were removed and the associated recipes are now available through trainers now.
 bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
@@ -79,11 +78,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236778,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(862),	-- Explore Hellfire Peninsula
+					ach(862),	-- Explore Hellfire Peninsula
 					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10397,	-- Invasion Point: Annihilator
@@ -117,61 +117,13 @@ root(ROOTS.Zones, {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9587, 9575, 9607, 9589, 10754, 10762, 10763, 10764, 9492, 9493, 9494, 11002); end]],
-						["rank"] = 80,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- Disrupt the Burning Legion
-						-- 		["sourceQuest"] = 10397,	-- Invasion Point: Annihilator
-						-- 	}),
-						-- 	crit(2, {	-- Overthrow the Overlord
-						-- 		["sourceQuests"] = {
-						-- 			10400,	-- Overlord
-						-- 			10399,	-- The Heart of Darkness
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- In Search of Sedai
-						-- 		["sourceQuest"] = 9545,	-- The Seer's Relic
-						-- 	}),
-						-- 	crit(4, {	-- The Exorcism of Colonel Jules
-						-- 		["sourceQuest"] = 10935,	-- The Exorcism of Colonel Jules
-						-- 	}),
-						-- 	crit(5, {	-- Drill the Drillmaster
-						-- 		["sourceQuest"] = 10937,	-- Drill the Drillmaster
-						-- 	}),
-						-- 	crit(6, {	-- Temple of Telhamat
-						-- 		["sourceQuests"] = {
-						-- 			9383,	-- An Ambitious Plan
-						-- 			9490,	-- The Rock Flayer Matriarch
-						-- 			-- all quests below need to be confirmed
-						-- 			9427,	-- Cleaning the Waters
-						-- 			9398,	-- Deadly Predators
-						-- 		},
-						-- 	}),
-						-- 	crit(7, {	-- Green, But Not Orcs
-						-- 		["sourceQuests"] = {
-						-- 			10630,	-- Beneath Thrallmar
-						-- 			9356,	-- Smooth as Butter
-						-- 			9351,	-- Voidwalkers Gone Wild
-						-- 		},
-						-- 	}),
-						-- 	crit(8, {	-- Cenarion Post
-						-- 		["sourceQuests"] = {
-						-- 			10351,	-- Natural Remedies
-						-- 			10255,	-- Testing the Antidote
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10388,	-- Return to Thrallmar
@@ -211,63 +163,6 @@ root(ROOTS.Zones, {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9588, 9572, 9608, 9590, 10755, 10756, 10757, 10758, 9495, 9496, 11003); end]],
-						["rank"] = 90,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- Disrupt the Burning Legion
-						-- 		["sourceQuest"] = 10388,	-- Return to Thrallmar
-						-- 	}),
-						-- 	crit(2, {	-- Cruel's Intentions
-						-- 		["sourceQuests"] = {
-						-- 			10136,	-- Cruel's Intentions
-						-- 			10389,	-- The Agony and the Darkness
-						-- 			10393,	-- Vile Plans
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- The Hand of Kargath
-						-- 		["sourceQuest"] = 10876,	-- The Foot of the Citadel
-						-- 	}),
-						-- 	crit(4, {	-- Spinebreaker Post
-						-- 		["sourceQuests"] = {
-						-- 			10295,	-- From the Abyss
-						-- 			10834,	-- Grillok "Darkeye"
-						-- 			10258,	-- Honor the Fallen (probably)
-						-- 			10220,	-- Make Them listen
-						-- 			9345,	-- Preparing the Salve
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- The Mag'har
-						-- 		["sourceQuest"] = 9406,	-- The Mag'har
-						-- 	}),
-						-- 	crit(6, {	-- Falcon Watch
-						-- 		["sourceQuests"] = {
-						-- 			9397,	-- Birds of a Feather
-						-- 			9370,	-- The Cleansing Must Be Stopped
-						-- 			-- all quests below need to be confirmed
-						-- 			9472,	-- Arelion's Mistress
-						-- 			9391,	-- Marking the Path
-						-- 			9387,	-- Source of the Corruption
-						-- 		},
-						-- 	}),
-						-- 	crit(7, {	-- Green, But Not Orcs
-						-- 		["sourceQuests"] = {
-						-- 			10630,	-- Beneath Thrallmar
-						-- 			9356,	-- Smooth as Butter
-						-- 			9351,	-- Voidwalkers Gone Wild
-						-- 		},
-						-- 	}),
-						-- 	crit(8, {	-- Cenarion Post
-						-- 		["sourceQuests"] = {
-						-- 			10351,	-- Natural Remedies
-						-- 			10255,	-- Testing the Antidote
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 				}),
@@ -381,6 +276,21 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				petbattles({
+					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+						["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 20,
+						["groups"] = {
+							q(31922, {	-- Nicki Tinytech
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
+					}),
+				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						["crs"] = {
@@ -399,8 +309,8 @@ root(ROOTS.Zones, {
 							16583,	-- Rohok <Blacksmithing Trainer> (H)
 						},
 						["coords"] = {
-							{ 56.8, 63.8, HELLFIRE_PENINSULA },
-							{ 53.2, 38.2, HELLFIRE_PENINSULA },
+							{ 56.8, 63.8, HELLFIRE_PENINSULA },	-- Honour Hold
+							{ 53.2, 38.2, HELLFIRE_PENINSULA },	-- Thrallmar
 						},
 						["groups"] = TBC_BLACKSMITHING,
 					}),
@@ -470,11 +380,22 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = TBC_MINING,
 					}),
+					prof(TAILORING, {
+						["crs"] = {
+							18772,	-- Hama <Tailoring Trainer> (A)
+							18749,	-- Dalinna <Tailoring Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.6, 63.6, HELLFIRE_PENINSULA },
+							{ 56.6, 37.2, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_TAILORING,
+					}),
 				}),
 				n(QUESTS, {
 					q(10864, {	-- A Burden of Souls
-						["qg"] = 16588,	-- Apothecary Antonivich
 						["sourceQuest"] = 10835,	-- Apothecary Antonivich
+						["qg"] = 16588,	-- Apothecary Antonivich
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -495,8 +416,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9442, {	-- A Debilitating Sickness
-						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9441,	-- Envoy to the Mag'har
+						["qg"] = 17123,	-- Earthcaller Ryga
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -511,8 +432,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9355, {	-- A Job for an Intelligent Man
-						["qg"] = 16837,	-- Foreman Biggums
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16837,	-- Foreman Biggums
 						["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -525,8 +446,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9376, {	-- A Pilgrim's Plight
-						["qg"] = 17015,
 						["sourceQuest"] = 9375,	-- The Road to Falcon Watch
+						["qg"] = 17015,
 						["coord"] = { 27.1, 61.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(61, 61, 10),
@@ -536,7 +457,7 @@ root(ROOTS.Zones, {
 									{ "i",  23343 },	-- Torn Pilgrim's Pack
 									{ "o", 184478 },	-- Torn Pilgrim's Pack
 								},
-								["coord"] = { 22.1, 68.5, HELLFIRE_PENINSULA }
+								["coord"] = { 22.1, 68.5, HELLFIRE_PENINSULA },
 							}),
 							i(25783),	-- Pilgrim's Cover
 							i(25781),	-- Segmented Breastplate
@@ -544,8 +465,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9410, {	-- A Spirit Guide
-						["qg"] = 17015,	-- Far Seer Regulkut <Eyes of the Warchief>
 						["sourceQuest"] = 9405,	-- The Warchief's Mandate
+						["qg"] = 17015,	-- Far Seer Regulkut <Eyes of the Warchief>
 						["coord"] = { 54.2, 37.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -557,18 +478,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9401, {	-- A Strange Weapon
+						["sourceQuest"] = 9400,	-- The Assassin
 						["providers"] = {
 							{ "n", 17062 },	-- Fel Orc Corpse
 							{ "i", 23550 },	-- Heavy Stone Axe
 						},
-						["sourceQuest"] = 9400,	-- The Assassin
 						["coord"] = { 33.6, 43.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10367, {	-- A Traitor Among Us
-						["qg"] = 19361,	-- Naladu
 						["sourceQuest"] = 10403,	-- Naladu
+						["qg"] = 19361,	-- Naladu
 						["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
@@ -577,13 +498,13 @@ root(ROOTS.Zones, {
 									{ "i",  29501 },	-- Sha'naar Key
 									{ "o", 184466 },	-- Metal Coffer
 								},
-								["coord"] = { 14.3, 63.5, HELLFIRE_PENINSULA }
+								["coord"] = { 14.3, 63.5, HELLFIRE_PENINSULA },
 							}),
 						},
 					}),
 					q(9447, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Administering the Salve
-						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9442,	-- A Debilitating Sickness
+						["qg"] = 17123,	-- Earthcaller Ryga
 						["coord"] = { 32.1, 28.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -620,8 +541,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10058, {	-- An Old Gift
-						["qg"] = 16825,	-- Father Malgor Devidicus
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16825,	-- Father Malgor Devidicus
 						["coord"] = { 54.2, 63.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -636,21 +557,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10835, {	-- Apothecary Antonivich
+						["sourceQuest"] = 10538,	-- Boiling Blood
 						["providers"] = {
 							{ "n", 21279 },	-- Apothecary Albreck
 							{ "i", 31550 },	-- Albreck's Findings
 						},
-						["sourceQuest"] = 10538,	-- Boiling Blood
 						["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10449, {	-- Apothecary Zelana
+						["sourceQuest"] = 10450,	-- Bonechewer Blood
 						["providers"] = {
 							{ "n", 21256 },	-- Vurtok Axebreaker
 							{ "i", 30326 },	-- Bonechewer Blood Samples
 						},
-						["sourceQuest"] = 10450,	-- Bonechewer Blood
 						["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -672,11 +593,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9472, {	-- Arelion's Mistress
-						["qg"] = 16793,	-- Magistrix Carinda
 						["sourceQuests"] = {
 							-- 9483,	-- Life's Finer Pleasures
 							10287,	-- The Mistress Revealed
 						},
+						["qg"] = 16793,	-- Magistrix Carinda
 						["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -685,18 +606,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10286, {	-- Arelion's Secret
-						["qg"] = 16793,	-- Magistrix Carinda
 						["sourceQuest"] = 9374,	-- Arelion's Journal
+						["qg"] = 16793,	-- Magistrix Carinda
 						["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
-						["cr"] = 20159,	-- Magister Aledis
 						["races"] = HORDE_ONLY,
+						["cr"] = 20159,	-- Magister Aledis
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10288, {	-- Arrival in Outland [Alliance]
-						["providers"] = {
-							{ "n", 19229 },	-- Commander Duron
-							{ "i", 28105 },	-- Duron's Report
-						},
 						["sourceQuests"] = {
 							10119,	-- Through the Dark Portal [Alliance]
 							-- #if AFTER 4.0.3.13277
@@ -711,15 +628,15 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["sourceQuestNumRequired"] = 1,
+						["providers"] = {
+							{ "n", 19229 },	-- Commander Duron
+							{ "i", 28105 },	-- Duron's Report
+						},
 						["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10120, {	-- Arrival in Outland [Horde]
-						["providers"] = {
-							{ "n", 19253 },	-- Lieutenant General Orion
-							{ "i", 28024 },	-- Orion's Report
-						},
 						["sourceQuests"] = {
 							9407,	-- Through the Dark Portal [Horde]
 							-- #if AFTER 4.0.3.13277
@@ -732,13 +649,17 @@ root(ROOTS.Zones, {
 							60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde]
 							-- #endif
 						},
+						["providers"] = {
+							{ "n", 19253 },	-- Lieutenant General Orion
+							{ "i", 28024 },	-- Orion's Report
+						},
 						["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10369, {	-- Arzeth's Demise
-						["qg"] = 19361,	-- Naladu
 						["sourceQuest"] = 10368,	-- The Dreghood Elders
+						["qg"] = 19361,	-- Naladu
 						["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
@@ -753,8 +674,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9543, {	-- Atonement
-						["qg"] = 16834,	-- Anchorite Obadei
 						["sourceQuest"] = 9424,	-- Makuru's Vengeance
+						["qg"] = 16834,	-- Anchorite Obadei
 						["coord"] = { 23.0, 40.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -769,8 +690,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10630, {	-- Beneath Thrallmar
-						["qg"] = 16915,	-- Foreman Razelcraz
 						["sourceQuest"] = 10629,	-- Shizz Work
+						["qg"] = 16915,	-- Foreman Razelcraz
 						["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -801,12 +722,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11516, {	-- Blast the Gateway
-						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["qg"] = 24937,	-- Magistrix Seyla
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
-						["lvl"] = lvlsquish(70, 70, 25),
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Legion Gateway Destroyed
 								["provider"] = { "i", 34253 },	-- Sizzling Embers
@@ -819,12 +740,12 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_FIVE, q(11515, {	-- Blood for Blood
-						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["qg"] = 24937,	-- Magistrix Seyla
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
-						["lvl"] = lvlsquish(70, 70, 25),
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = appendGroups(BLOOD_FOR_BLOOD_GROUPS, {
 							objective(1, {	-- 0/1 Emaciated Felblood slain
 								["provider"] = { "i", 34257 },	-- Fel Siphon
@@ -836,8 +757,8 @@ root(ROOTS.Zones, {
 						}),
 					})),
 					q(10250, {	-- Bloody Vengeance
-						["qg"] = 19736,	-- Althen the Historian
 						["sourceQuest"] = 10230,	-- The Battle Horn
+						["qg"] = 19736,	-- Althen the Historian
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -850,8 +771,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10538, {	-- Boiling Blood
-						["qg"] = 21279,	-- Apothecary Albreck
 						["sourceQuest"] = 10242,	-- Spinebreaker Post
+						["qg"] = 21279,	-- Apothecary Albreck
 						["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -894,8 +815,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10087, {	-- Burn It Up... For the Horde!
-						["qg"] = 21283,	-- Megzeg Nukklebust
 						["sourceQuest"] = 10086,	-- I Work... For the Horde!
+						["qg"] = 21283,	-- Megzeg Nukklebust
 						["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -915,8 +836,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10391, {	-- Cannons of Rage
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10390,	-- Forge Camp: Mageddon
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -927,8 +848,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9427, {	-- Cleansing the Waters
-						["qg"] = 16796,	-- Amaan the Wise
 						["sourceQuest"] = 9426,	-- The Pools of Aggonar
+						["qg"] = 16796,	-- Amaan the Wise
 						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -982,8 +903,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10136, {	-- Cruel's Intentions
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10392,	-- Doorway to the Abyss
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -998,8 +919,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10484, {	-- Cursed Talismans
-						["qg"] = 21133,	-- Corporal Ironridge
 						["sourceQuest"] = 10483,	-- Ill Omens
+						["qg"] = 21133,	-- Corporal Ironridge
 						["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1038,11 +959,11 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9372, {	-- Demonic Contamination
-						["qg"] = 16991,	-- Thiah Redmane
 						["sourceQuests"] = {
 							10443,	-- Helping the Cenarion Post [Alliance]
 							10442,	-- Helping the Cenarion Post [Horde]
 						},
+						["qg"] = 16991,	-- Thiah Redmane
 						["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
@@ -1056,10 +977,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10916, {	-- Digging for Prayer Beads
-						["qg"] = 22430,	-- Assistant Klatu
+						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
+						["qg"] = 22430,	-- Assistant Klatu
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
-						["cost"] = { { "i", 31795, 1 } },	-- Draenei Prayer Beads
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1068,12 +989,14 @@ root(ROOTS.Zones, {
 									{ "i", 31795 },	-- Draenei Prayer Beads
 									{ "o", 185302 },	-- Fei Fei's Cache
 								},
+								["coord"] = { 54.1, 63.3, HELLFIRE_PENINSULA },
 							}),
+							i(31799),	-- Fei Fei Doggy Treat
 						},
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
-						["qg"] = 19310,	-- Forward Commander Kingston
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 19310,	-- Forward Commander Kingston
 						["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1100,8 +1023,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10208, {	-- Disrupt Their Reinforcements [Horde]
-						["qg"] = 19273,	-- Forward Commander To'arch
 						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["qg"] = 19273,	-- Forward Commander To'arch
 						["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1128,8 +1051,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10394, {	-- Disruption - Forge Camp: Mageddon
-						["qg"] = 20793,	-- Field Marshal Brock
 						["sourceQuest"] = 10382,	-- Go to the Front
+						["qg"] = 20793,	-- Field Marshal Brock
 						["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1144,8 +1067,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10392, {	-- Doorway to the Abyss
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10391,	-- Cannons of Rage
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1169,8 +1092,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10937, {	-- Drill the Drillmaster
-						["qg"] = 16819,	-- Force Commander Danath Trollbane
 						["sourceQuest"] = 10936,	-- Trollbane is Looking for You
+						["qg"] = 16819,	-- Force Commander Danath Trollbane
 						["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1186,8 +1109,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10396, {	-- Enemy of my Enemy...
-						["qg"] = 20793,	-- Field Marshal Brock
 						["sourceQuest"] = 10394,	-- Disruption - Forge Camp: Mageddon
+						["qg"] = 20793,	-- Field Marshal Brock
 						["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1198,8 +1121,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9441, {	-- Envoy to the Mag'har
-						["qg"] = 4949,	-- Thrall
 						["sourceQuest"] = 9438,	-- Messenger to Thrall
+						["qg"] = 4949,	-- Thrall
 						["coord"] = { 31.6, 37.8, ORGRIMMAR },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -1214,51 +1137,51 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(10121, {	-- Eradicate the Burning Legion
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10291,	-- Report to Nazgrel
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10143, {	-- Expedition Point
-						["qg"] = 19309,	-- Sergeant Altumus
 						["sourceQuest"] = 10142,	-- The Path of Anguish
+						["qg"] = 19309,	-- Sergeant Altumus
 						["coord"] = { 61.7, 60.9, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9498, {	-- Falcon Watch [Non-Blood Elf]
-						["qg"] = 16577,	-- Martik Tor'seldori
 						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
+						["qg"] = 16577,	-- Martik Tor'seldori
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9499, {	-- Falcon Watch [Blood Elf]
-						["qg"] = 16577,	-- Martik Tor'seldori
 						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Likely not required, Discord 2023-07-29]
+						["qg"] = 16577,	-- Martik Tor'seldori
 						["coord"] = { 55.1, 39.1, HELLFIRE_PENINSULA },
 						["races"] = { BLOODELF },
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10919, {	-- Fei Fei's Treat
-						["providers"] = {
-							{ "n",  20206 },	-- Fei Fei
-							{ "o", 185302 },	-- Fei Fei's Cache
-						},
-						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						-- #if BEFORE WRATH
 						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
 						-- #else
 						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for a Silken Thread.\n\nSilken Thread can be found upstairs in the inn from the Grand Master Tailor.",
 						-- #endif
+						["sourceQuest"] = 10903,	-- Return to Honor Hold
+						["providers"] = {
+							{ "n",  20206 },	-- Fei Fei
+							{ "o", 185302 },	-- Fei Fei's Cache
+						},
 						["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = {
 							{ "i", 31799, 1 },	-- Fei Fei Doggy Treat
 						},
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1266,8 +1189,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10482, {	-- Fel Orc Scavengers
-						["qg"] = 16820,	-- Lieutenant Amadi
 						["sourceQuest"] = 10160,	-- Know Your Enemy
+						["qg"] = 16820,	-- Lieutenant Amadi
 						["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1283,8 +1206,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10909, {	-- Fel Spirits
-						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
+						["qg"] = 22430,	-- Assistant Klatu
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1300,8 +1223,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10123, {	-- Felspark Ravine
-						["qg"] = 19256,	-- Sergeant Shatterskull
 						["sourceQuest"] = 10121,	-- Eradicate the Burning Legion
+						["qg"] = 19256,	-- Sergeant Shatterskull
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1323,15 +1246,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10254, {	-- Force Commander Danath
-						["qg"] = 19308,	-- Marshal Isildor
 						["sourceQuest"] = 10140,	-- Journey to Honor Hold
+						["qg"] = 19308,	-- Marshal Isildor
 						["coord"] = { 54.6, 62.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10390, {	-- Forge Camp: Mageddon
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10388,	-- Return to Thrallmar
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1353,15 +1276,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10124, {	-- Forward Base: Reaver's Fall
-						["qg"] = 19256,	-- Sergeeant Shatterskull
 						["sourceQuest"] = 10123,	-- Felspark Ravine
+						["qg"] = 19256,	-- Sergeeant Shatterskull
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10295, {	-- From the Abyss
-						["qg"] = 19683,	-- Ogath the Mad
 						["sourceQuest"] = 10294,	-- Void Ridge
+						["qg"] = 19683,	-- Ogath the Mad
 						["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1389,15 +1312,15 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10382, {	-- Go to the Front
-						["qg"] = 20232,	-- Wing Commander Gryphongar
 						["sourceQuest"] = 10163,	-- Mission: The Abyssal Shelf
+						["qg"] = 20232,	-- Wing Commander Gryphongar
 						["coord"] = { 79.3, 33.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10834, {	-- Grillok "Darkeye"
-						["qg"] = 22231,	-- Zezzak
 						["sourceQuest"] = 10813,	-- The Eyes of Grillok
+						["qg"] = 22231,	-- Zezzak
 						["coord"] = { 61.6, 81.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1415,8 +1338,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9361, {	-- Helboar, the Other White Meat
-						["qg"] = 19344,	-- Legassi
 						["sourceQuest"] = 9349,	-- Ravager Egg Roundup
+						["qg"] = 19344,	-- Legassi
 						["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1437,13 +1360,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10106, {	-- Hellfire Fortifications [Alliance]
-						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							13408,	-- Hellfire Fortifications [Alliance, Non-Death Knights]
 							13410,	-- Hellfire Fortifications [Alliance, Death Knight Only]
 						},
 						-- #endif
+						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
@@ -1466,8 +1389,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13408, {	-- Hellfire Fortifications [Alliance, Non-Death Knights]
-						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -1488,8 +1411,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13410, {	-- Hellfire Fortifications [Alliance, Death Knight Only]
-						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 18266,	-- Warrant Officer Tracy Proudwell
 						["coord"] = { 56.3, 62.8, HELLFIRE_PENINSULA },
 						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = { DEATHKNIGHT },
@@ -1510,13 +1433,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10110, {	-- Hellfire Fortifications [Horde]
-						["qg"] = 18267,	-- Battlecryer Blackeye
 						-- #if AFTER WRATH
 						["sourceQuests"] = {
 							13409,	-- Hellfire Fortifications [Horde, Non-Death Knights]
 							13411,	-- Hellfire Fortifications [Horde, Death Knight Only]
 						},
 						-- #endif
+						["qg"] = 18267,	-- Battlecryer Blackeye
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -1539,8 +1462,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13409, {	-- Hellfire Fortifications [Horde, Non-Death Knights]
-						["qg"] = 18267,	-- Battlecryer Blackeye
 						-- ["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall [Not required, Discord 2023-07-29]
+						["qg"] = 18267,	-- Battlecryer Blackeye
 						["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 						["timeline"] = { ADDED_3_3_0 },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -1605,8 +1528,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					})),
 					q(10258, {	-- Honor the Fallen
-						["qg"] = 19736,	-- Althen the Historian
 						["sourceQuest"] = 10250,	-- Bloody Vengeance
+						["qg"] = 19736,	-- Althen the Historian
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1616,8 +1539,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10238, {	-- How to Serve Goblins
-						["qg"] = 16915,	-- Foreman Razelcraz
 						["sourceQuest"] = 10236,	-- Outland Sucks!
+						["qg"] = 16915,	-- Foreman Razelcraz
 						["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1661,8 +1584,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10483, {	-- Ill Omens
-						["qg"] = 16820,	-- Lieutenant Amadi
 						["sourceQuest"] = 10482,	-- Fel Orc Scavengers
+						["qg"] = 16820,	-- Lieutenant Amadi
 						["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1719,8 +1642,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10397, {	-- Invasion Point: Annihilator
-						["qg"] = 20793,	-- Field Marshal Brock
 						["sourceQuest"] = 10396,	-- Enemy of my Enemy...
+						["qg"] = 20793,	-- Field Marshal Brock
 						["coord"] = { 68.2, 28.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1744,32 +1667,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10213, {	-- Investigate the Crash
-						["qg"] = 16858,	-- Grelag
 						["sourceQuest"] = 9345,	-- Preparing the Salve
+						["qg"] = 16858,	-- Grelag
 						["coord"] = { 60.9, 81.6, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10140, {	-- Journey to Honor Hold
+						["sourceQuest"] = 10288,	-- Arrival in Outland
 						["providers"] = {
 							{ "n", 18931 },	-- Amish Wildhammer
 							{ "i", 28105 },	-- Duron's Report
 						},
-						["sourceQuest"] = 10288,	-- Arrival in Outland
 						["coord"] = { 87.3, 52.4, HELLFIRE_PENINSULA },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10289, {	-- Journey to Thrallmar
+						["sourceQuest"] = 10120,	-- Arrival in Outland
 						["providers"] = {
 							{ "n", 18930 },	-- Vlagga Freyfeather
 							{ "i", 28024 },	-- Orion's Report
 						},
-						["sourceQuest"] = 10120,	-- Arrival in Outland
 						["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10159, {	-- Keep Thornfang Hill Clear!
@@ -1793,8 +1716,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10078, {	-- Laying Waste to the Unwanted
-						["qg"] = 21209,	-- Dumphry
 						["sourceQuest"] = 10055,	-- Waste Not, Want Not
+						["qg"] = 21209,	-- Dumphry
 						["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1822,9 +1745,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9483, {	-- Life's Finer Pleasures
+						["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 						["qg"] = 17226,	-- Viera Sunwhisper
 						["coord"] = { 27.2, 62.0, HELLFIRE_PENINSULA },
-						["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 						["cost"] = {
 							{ "i", 29112, 1 },	-- Cenarion Spirits
 						},
@@ -1841,8 +1764,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10057, {	-- Looking to the Leadership
-						["qg"] = 16827,	-- Honor Guard Wesilow
 						["sourceQuest"] = 10050,	-- Unyielding Souls
+						["qg"] = 16827,	-- Honor Guard Wesilow
 						["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1894,8 +1817,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9424, {	-- Makuru's Vengeance
-						["qg"] = 16833,	-- Makuru
 						["sourceQuest"] = 9423,	-- Return to Obadei
+						["qg"] = 16833,	-- Makuru
 						["coord"] = { 23.1, 40.1, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -1913,8 +1836,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9391, {	-- Marking the Path
-						["qg"] = 16789,	-- Ranger Captain Venn'ren
 						["sourceQuest"] = 9340,	-- The Great Fissure
+						["qg"] = 16789,	-- Ranger Captain Venn'ren
 						["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -1946,11 +1869,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9438, {	-- Messenger to Thrall
+						["sourceQuest"] = 9406,	-- The Mag'har
 						["providers"] = {
 							{ "n", 3230 },	-- Nazgrel
 							{ "i", 23662 },	-- Letter from Nazgrel
 						},
-						["sourceQuest"] = 9406,	-- The Mag'har
 						["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -1961,8 +1884,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10146, {	-- Mission: Gateways Murketh and Shaadraz [Alliance]
-						["qg"] = 19310,	-- Forward Commander Kingston
 						["sourceQuest"] = 10144,	-- Disrupt Their Reinforcements [Alliance]
+						["qg"] = 19310,	-- Forward Commander Kingston
 						["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1988,8 +1911,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10129, {	-- Mission: Gateways Murketh and Shaadraz [Horde]
-						["qg"] = 19273,	-- Forwarad Commander To'arch
 						["sourceQuest"] = 10208,	-- Disrupt Their Reinforcements [Horde]
+						["qg"] = 19273,	-- Forwarad Commander To'arch
 						["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2015,8 +1938,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10163, {	-- Mission: The Abyssal Shelf [Alliance]
-						["qg"] = 20232,	-- Wing Commander Gryphongar
 						["sourceQuest"] = 10344,	-- Wing Commander Gryphongar
+						["qg"] = 20232,	-- Wing Commander Gryphongar
 						["coord"] = { 79.3, 33.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2046,8 +1969,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10162, {	-- Mission: The Abyssal Shelf [Horde]
-						["qg"] = 19273,	-- Forwarad Commander To'arch
 						["sourceQuest"] = 10129,	-- Mission: Gateways Murketh and Shaadraz [Horde]
+						["qg"] = 19273,	-- Forwarad Commander To'arch
 						["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2091,8 +2014,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10351, {	-- Natural Remedies
-						["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
 						["sourceQuest"] = 10349,	-- The Earthbinder
+						["qg"] = 19294,	-- Earthbinder Galandria Nightbreeze
 						["coord"] = { 15.9, 51.5, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
@@ -2122,8 +2045,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10400, {	-- Overlord
-						["qg"] = 16819,	-- Force Commander Danath Trollbane
 						["sourceQuest"] = 10395,	-- The Dark Missive
+						["qg"] = 16819,	-- Force Commander Danath Trollbane
 						["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2182,16 +2105,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10291, {	-- Report to Nazgrel
-						["qg"] = 19255,	-- General Krakork
 						["sourceQuest"] = 10289,	-- Journey to Thrallmar
+						["qg"] = 19255,	-- General Krakork
 						["coord"] = { 55.8, 36.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(55, 55, 10),
 					}),
 					q(10875, {	-- Report to Nazgrel
-						["qg"] = 16588,	-- Apothecary Antonivich
 						["sourceQuest"] = 10838,	-- The Demonaic Scryer
+						["qg"] = 16588,	-- Apothecary Antonivich
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2204,22 +2127,22 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(10903, {	-- Return to Honor Hold
-						["qg"] = 21133,	-- Corporal Ironridge
 						["sourceQuest"] = 10485,	-- Warlord of the Bleeding Hollow
+						["qg"] = 21133,	-- Corporal Ironridge
 						["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9423, {	-- Return to Obadei
-						["qg"] = 16852,	-- Sedai's Corpse
 						["sourceQuest"] = 9390,	-- In Search of Sedai
+						["qg"] = 16852,	-- Sedai's Corpse
 						["coord"] = { 26.8, 37.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10346, {	-- Return to the Abyssal Shelf [Alliance]
-						["qg"] = 20235,	-- Gryphoneer Windbellow
 						["sourceQuest"] = 10163,	-- Mission: The Abyssal Shelf
+						["qg"] = 20235,	-- Gryphoneer Windbellow
 						["coord"] = { 78.2, 34.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
@@ -2246,8 +2169,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10347, {	-- Return to the Abyssal Shelf [Horde]
-						["qg"] = 19401,	-- Wing Commander Brack
 						["sourceQuest"] = 10162,	-- Mission: The Abyssal Shelf
+						["qg"] = 19401,	-- Wing Commander Brack
 						["coord"] = { 66.0, 43.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
@@ -2274,11 +2197,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10388, {	-- Return to Thrallmar
+						["sourceQuest"] = 10129,	-- Mission: Gateways Murketh and Shaadraz [Horde]
 						["qgs"] = {
 							19273,	-- Forwarad Commander To'arch
 							16576,	-- Overlord Hun Maimfist
 						},
-						["sourceQuest"] = 10129,	-- Mission: Gateways Murketh and Shaadraz [Horde]
 						["coords"] = {
 							{ 65.8, 43.5, HELLFIRE_PENINSULA },	-- Forwarad Commander To'arch
 							{ 65.0, 44.2, HELLFIRE_PENINSULA },	-- Overlord Hun Maimfist
@@ -2287,8 +2210,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9430, {	-- Sha'naar Relics
-						["qg"] = 16796,	-- Amaan the Wise
 						["sourceQuest"] = 9543,	-- Atonement
+						["qg"] = 16796,	-- Amaan the Wise
 						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2302,15 +2225,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10340, {	-- Shatter Point
-						["qg"] = 19310,	-- Forward Commander Kingston
 						["sourceQuest"] = 10146,	-- Mission: Gateways Murketh and Shaadraz [Alliance]
+						["qg"] = 19310,	-- Forward Commander Kingston
 						["coord"] = { 71.3, 62.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10629, {	-- Shizz Work
-						["qg"] = 16915,	-- Foreman Razelcraz
 						["sourceQuest"] = 10238,	-- How to Serve Goblins
+						["qg"] = 16915,	-- Foreman Razelcraz
 						["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -2327,8 +2250,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9356, {	-- Smooth as Butter
-						["qg"] = 19344,	-- Legassi
 						["sourceQuest"] = 9361,	-- Helboar, the Other White Meat
+						["qg"] = 19344,	-- Legassi
 						["coord"] = { 49.2, 74.8, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -2358,18 +2281,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10242, {	-- Spinebreaker Post
+						["sourceQuest"] = 10449,	-- Apothecary Zelana
 						["providers"] = {
 							{ "n", 21257 },	-- Apothecary Zelana
 							{ "i", 30404 },	-- Bleeding Hollow Blood Sample
 						},
-						["sourceQuest"] = 10449,	-- Apothecary Zelana
 						["coord"] = { 66.1, 41.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10255, {	-- Testing the Antidote
-						["qg"] = 16991,	-- Thiah Redmane
 						["sourceQuest"] = 9372,	-- Demonic Contamination
+						["qg"] = 16991,	-- Thiah Redmane
 						["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
@@ -2383,8 +2306,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10389, {	-- The Agony and the Darkness
-						["qg"] = 21175,	-- Magister Bloodhawk
 						["sourceQuest"] = 10392,	-- Doorway to the Abyss
+						["qg"] = 21175,	-- Magister Bloodhawk
 						["coord"] = { 55.1, 36.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2395,8 +2318,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9417, {	-- The Arakkoa Threat
-						["qg"] = 16850,	-- Gremni Longbeard
 						["sourceQuest"] = 9558,	-- The Longbeards
+						["qg"] = 16850,	-- Gremni Longbeard
 						["coord"] = { 23.8, 72.1, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2410,11 +2333,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9400, {	-- The Assassin
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuests"] = {
 							10087,	-- Burn It Up... For the Horde!
 							10124,	-- Forward Base: Reaver's Fall
 						},
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2426,11 +2349,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10230, {	-- The Battle Horn
+						["sourceQuest"] = 10229,	-- Decipher the Tome
 						["providers"] = {
 							{ "n", 19736 },	-- Althen the Historian
 							{ "i", 28562 },	-- Unyielding Battle Horn
 						},
-						["sourceQuest"] = 10229,	-- Decipher the Tome
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2442,8 +2365,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9370, {	-- The Cleansing Must Be Stopped
-						["qg"] = 16791,	-- Ryathen the Somber
 						["sourceQuest"] = 9366,	-- In Need of Felblood
+						["qg"] = 16791,	-- Ryathen the Somber
 						["coord"] = { 26.9, 59.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2467,8 +2390,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10838, {	-- The Demonaic Scryer
-						["qg"] = 16588,	-- Apothecary Antonivichk
 						["sourceQuest"] = 10864,	-- A Burden of Souls
+						["qg"] = 16588,	-- Apothecary Antonivichk
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2484,8 +2407,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10368, {	-- The Dreghood Elders
-						["qg"] = 19361,	-- Naladu
 						["sourceQuest"] = 10367,	-- A Traitor Among Us
+						["qg"] = 19361,	-- Naladu
 						["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
@@ -2513,20 +2436,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10349, {	-- The Earthbinder
+						["sourceQuest"] = 10134,	-- Crimson Crystal Clue
 						["providers"] = {
 							{ "n", 19293 },	-- Tola'thion
 							{ "i", 29477 },	-- Crimson Crystal Shard
 						},
-						["sourceQuest"] = 10134,	-- Crimson Crystal Clue
 						["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(10935, {	-- The Exorcism of Colonel Jules
-						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuests"] = {
 							10916,	-- Digging for Prayer Beads
 							10909,	-- Fel Spirits
 						},
+						["qg"] = 22430,	-- Assistant Klatu
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2539,8 +2462,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10813, {	-- The Eyes of Grillok
-						["qg"] = 22231,	-- Zezzak
 						["sourceQuest"] = 10792,	-- Zeth'Gor Must Burn!
+						["qg"] = 22231,	-- Zezzak
 						["coord"] = { 61.6, 81.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2553,12 +2476,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9420, {	-- The Finest Down
-						["qg"] = 16851,	-- Mirren Longbeard
 						["sourceQuest"] = 9563,	-- Gaining Mirren's Trust
+						["qg"] = 16851,	-- Mirren Longbeard
 						["coord"] = { 23.9, 72.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
+							-- Danny Donkey: o(181582),	-- Kaliri Nest should be linked to this quest as a provider of Kaliri Feather.
 							objective(1, {	-- 0/8 Kaliri Feather
 								["provider"] = { "i", 23588 },	-- Kaliri Feather
 								["crs"] = {
@@ -2572,8 +2496,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10876, {	-- The Foot of the Citadel
-						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10875,	-- Report to Nazgrel
+						["qg"] = 3230,	-- Nazgrel
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2596,11 +2520,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9340, {	-- The Great Fissure
-						["qg"] = 16789,	-- Ranger Captain Venn'ren
 						["sourceQuests"] = {
 							9498,	-- Falcon Watch [Non-Blood Elf]
 							9499,	-- Falcon Watch [Blood Elf]
 						},
+						["qg"] = 16789,	-- Ranger Captain Venn'ren
 						["coord"] = { 28.4, 60.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2614,8 +2538,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10399, {	-- The Heart of Darkness
-						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["sourceQuest"] = 10395,	-- The Dark Missive
+						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2632,19 +2556,19 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9558, {	-- The Longbeards
-						["qg"] = 16826,	-- Sid Limbardi
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16826,	-- Sid Limbardi
 						["coord"] = { 54.2, 63.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9406, {	-- The Mag'har
+						["sourceQuest"] = 9410,	-- A Spirit Guide
 						["providers"] = {
 							{ "n", 16845 },	-- Gorkan Bloodfish
 							{ "i", 23569 },	-- Letter from the Mag'har
 						},
-						["sourceQuest"] = 9410,	-- A Spirit Guide
 						["coord"] = { 31.9, 27.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2658,8 +2582,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(10099, {	-- The Mastermind
-						["qg"] = 16837,	-- Foreman Biggums
 						["sourceQuest"] = 10079,	-- When This Mine's a-Rockin'
+						["qg"] = 16837,	-- Foreman Biggums
 						["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2674,8 +2598,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10287, {	-- The Mistress Revealed
-						["qg"] = 20159,	-- Megister Aledis
 						["sourceQuest"] = 10286,	-- Arelion's Secret
+						["qg"] = 20159,	-- Megister Aledis
 						["coords"] = {
 							{ 10.3, 50.3, HELLFIRE_PENINSULA },
 							{ 15.7, 50.0, HELLFIRE_PENINSULA },
@@ -2686,8 +2610,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10142, {	-- The Path of Anguish
-						["qg"] = 19309,	-- Sergeant Altumus
 						["sourceQuest"] = 10141,	-- The Legion Reborn
+						["qg"] = 19309,	-- Sergeant Altumus
 						["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2709,8 +2633,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10047, {	-- The Path of Glory
-						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2765,8 +2689,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9545, {	-- The Seer's Relic
-						["qg"] = 16796,	-- Amaan the Wise
 						["sourceQuest"] = 9430,	-- Sha'naar Relics
+						["qg"] = 16796,	-- Amaan the Wise
 						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2782,18 +2706,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10093, {	-- The Temple of Telhamat
-						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["sourceQuest"] = 10047,	-- The Path of Glory
+						["qg"] = 16839,	-- Warp-Scryer Kryv
 						["coord"] = { 56.6, 66.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9405, {	-- The Warchief's Mandate
+						["sourceQuest"] = 9401,	-- A Strange Weapon
 						["providers"] = {
 							{ "n", 3230 },	-- Nazgrel
 							{ "i", 23550 },	-- Heavy Stone Axe
 						},
-						["sourceQuest"] = 9401,	-- A Strange Weapon
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2845,8 +2769,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10936, {	-- Trollbane is Looking for You
-						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10935,	-- The Exorcism of Colonel Jules
+						["qg"] = 22430,	-- Assistant Klatu
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2865,8 +2789,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10050, {	-- Unyielding Souls
-						["qg"] = 16827,	-- Honor Guard Wesilow
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16827,	-- Honor Guard Wesilow
 						["coord"] = { 50.8, 60.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2891,8 +2815,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10294, {	-- Void Ridge
-						["qg"] = 19683,	-- Ogath the Mad
 						["sourceQuest"] = 10278,	-- The Warp Rifts
+						["qg"] = 19683,	-- Ogath the Mad
 						["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2907,8 +2831,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9351, {	-- Voidwalkers Gone Wild
-						["qg"] = 19367,	-- "Screaming" Screed Luckheed <Zeppelin Pilot>
 						["sourceQuest"] = 10161,	-- In Case of Emergency...
+						["qg"] = 19367,	-- "Screaming" Screed Luckheed <Zeppelin Pilot>
 						["coord"] = { 49.1, 74.8, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -2940,8 +2864,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10809, {	-- Wanted: Worg Master Kruush
-						["provider"] = { "o", 185166 },	-- Wanted Poster
 						["sourceQuest"] = 10449,	-- Apothecary Zelana (TODO:: verify this. It isn't always available, but first seen while on "Spinebreaker Post")
+						["provider"] = { "o", 185166 },	-- Wanted Poster
 						["coord"] = { 61.2, 80.5, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2964,8 +2888,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					})),
 					q(10485, {	-- Warlord of the Bleeding Hollow
-						["qg"] = 21133,	-- Corporal Ironridge
 						["sourceQuest"] = 10484,	-- Cursed Talismans
+						["qg"] = 21133,	-- Corporal Ironridge
 						["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3002,8 +2926,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10079, {	-- When This Mine's a-Rockin'
-						["qg"] = 16837,	-- Foreman Biggums
 						["sourceQuest"] = 10143,	-- Expedition Point
+						["qg"] = 16837,	-- Foreman Biggums
 						["coord"] = { 52.0, 62.5, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3014,8 +2938,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10344, {	-- Wing Commander Gryphongar
-						["qg"] = 20234,	-- Runetog Wildhammer
 						["sourceQuest"] = 10340,	-- Shatter Point
+						["qg"] = 20234,	-- Runetog Wildhammer
 						["coord"] = { 78.4, 34.9, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -3051,8 +2975,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10792, {	-- Zeth'Gor Must Burn! [Horde]
-						["qg"] = 22107,	-- Captain Darkhowl
 						["sourceQuest"] = 10809,	-- WANTED: Worg Master Kruush
+						["qg"] = 22107,	-- Captain Darkhowl
 						["coord"] = { 61.2, 81.3, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3080,7 +3004,7 @@ root(ROOTS.Zones, {
 				}),
 				n(RARES, {
 					n(18678, {	-- Fulgorge
-						["description"] = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high.  Search along its three possible paths and be on the lookout for red rumbling rocks.",
+						["description"] = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high. Search along its three possible paths and be on the lookout for red rumbling rocks.",
 						["coords"] = {
 							{ 23.8, 63.0, HELLFIRE_PENINSULA },	-- west path, bottom
 							{ 24.8, 48.0, HELLFIRE_PENINSULA },	-- west path, mid
@@ -3202,6 +3126,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
+					n(18754, {	-- Barim Spilthoof <Leatherworking Trainer>
+						["coord"] = { 56.2, 38.6, HELLFIRE_PENINSULA },
+						["races"] = HORDE_ONLY,
+					}),
 					n(18988, {	-- Baxter <Chef>
 						["coord"] = { 56.8, 37.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
@@ -3211,6 +3139,10 @@ root(ROOTS.Zones, {
 								["rank"] = 5,
 							}),
 						},
+					}),
+					n(18771, {	-- Brumman <Leatherworking Trainer>
+						["coord"] = { 54.0, 64.0, HELLFIRE_PENINSULA },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
@@ -3227,6 +3159,10 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(27688),	-- Recipe: Ravager Dog (RECIPE!)
 						},
+					}),
+					n(18749, {	-- Dalinna <Tailoring Trainer>
+						["coord"] = { 56.6, 37.2, HELLFIRE_PENINSULA },
+						["races"] = HORDE_ONLY,
 					}),
 					n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
 						["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
@@ -3248,7 +3184,6 @@ root(ROOTS.Zones, {
 					n(18753, {	-- Felannia <Enchanting Trainer>
 						["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["groups"] = FELANNIA_JOHAN_GROUPS,
 					}),
 					n(16602, {	-- Floyd Pinkus <Innkeeper>
 						["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
@@ -3260,9 +3195,12 @@ root(ROOTS.Zones, {
 							i(30747, {	-- Gem Pouch
 								["isLimited"] = true,
 							}),
+							-- Danny Donkey: Although this vendor will keep offer a limited supply of Mining Sack after Cata, we will have more practical vendors offering unlimited supply of this bag.
+							-- #if BEFORE CATA
 							i(30746, {	-- Mining Sack
 								["isLimited"] = true,
 							}),
+							-- #endif
 							i(30745, {	-- Heavy Toolbox
 								["isLimited"] = true,
 							}),
@@ -3294,36 +3232,45 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
-					-- #if BEFORE 7.0.3
+					n(18772, {	-- Hama <Tailoring Trainer>
+						["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					-- #if AFTER WRATH
 					n(30734, {	-- Jezebel Bican <Inscription Supplies>
 						["coord"] = { 54.0, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						-- #if BEFORE 7.0.3
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_ONE, i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							})),
 						},
+						-- #endif
 					}),
 					-- #endif
 					n(18773, {	-- Johan Barnes <Enchanting Trainer>
 						["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = FELANNIA_JOHAN_GROUPS,
 					}),
 					n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 						["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = JEWELCRAFTING_PATTERNS,
 					}),
-					-- #if BEFORE 7.0.3
+					-- #if AFTER WRATH
 					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
-						["coord"] = { 52.4, 36.0, NORTHREND_DALARAN },
+						["coord"] = { 52.4, 36.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_3_0_2 },
+						-- #if BEFORE 7.0.3
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_ONE, i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							})),
 						},
+						-- #endif
 					}),
 					-- #endif
 					n(18775, {	-- Lebowski <Engineering Trainer>
@@ -3341,7 +3288,7 @@ root(ROOTS.Zones, {
 					n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 						["coord"] = { 56.6, 62.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_HONOR_HOLD, {
+						["groups"] = bubbleDownClassicRep(FACTION_HONOR_HOLD, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC) (RECIPE!)
@@ -3384,21 +3331,8 @@ root(ROOTS.Zones, {
 									["timeline"] = { REMOVED_4_2_0 },
 									["races"] = ALLIANCE_ONLY,
 									-- #if ANYCLASSIC
-									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-									["OnTooltip"] = [[function(t, tooltipInfo)
-										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-										else
-											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-										end
-										tooltip:Show();
-									end]],
-									["OnInit"] = [[function(t)
-										t.otherItemID = 185687;
-										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-										return t;
-									end]],
+									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185687),
 									-- #endif
 								}),
 								i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
@@ -3483,21 +3417,8 @@ root(ROOTS.Zones, {
 									["timeline"] = { REMOVED_4_2_0 },
 									["races"] = HORDE_ONLY,
 									-- #if ANYCLASSIC
-									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-									["OnTooltip"] = [[function(t, tooltipInfo)
-										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-										else
-											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-										end
-										tooltip:Show();
-									end]],
-									["OnInit"] = [[function(t)
-										t.otherItemID = 185686;
-										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-										return t;
-									end]],
+									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185686),
 									-- #endif
 								}),
 								i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
@@ -3565,7 +3486,7 @@ root(ROOTS.Zones, {
 					n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 						["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = JEWELCRAFTING_PATTERNS,
+						["groups"] = JEWELCRAFTING_PATTERNS
 					}),
 					n(19004, {	-- Vodesiin <Reagents>
 						["coord"] = { 24.4, 38.8, HELLFIRE_PENINSULA },
@@ -3663,15 +3584,6 @@ root(ROOTS.Zones, {
 });
 
 -- Add in the items that aren't locked by phase.
-appendGroups({
-	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
-	-- #if BEFORE CATA
-	i(6342),	-- Formula: Enchant Chest - Minor Mana
-	-- #endif
-}, FELANNIA_JOHAN_GROUPS);
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 	m(OUTLAND, {

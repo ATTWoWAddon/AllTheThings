@@ -1,0 +1,341 @@
+4.4.0.53627
+q(13574),	-- Peering Into the Vortex (DEPRECATED)
+q(13608),	-- Along for the Ride
+q(13637),	-- Ram Delivery	 CATA:Ram Delivery	 MOP:Ram Delivery
+q(13802),	-- The Goblin with Two Brains	 CATA:The Goblin with Two Brains	 MOP:The Goblin with Two Brains
+q(13804),	-- To Catch a Fish-Thing
+q(13894),	-- Marking the Kills (DEPRECATED)
+q(13939),	-- Fel Moss Corruption
+q(13941),	-- Vile Touch
+q(13972),	-- Among Humans Again
+q(13978),	-- Lurkers in the Mist
+q(13984),	-- Tracking Our Every Move
+q(13993),	-- You're the Bomb!
+q(13994),	-- (DEPRECATED)
+q(13996),	-- Can You Get This Quest While I'm In Combat?
+q(14000),	-- Hunt or Be Hunted
+q(14002),	-- A Job for a Bloodhound
+q(14015),	-- Incomplete Cartography
+q(14020),	-- The Curse
+q(14025),	-- To the Frontlines
+q(14026),	-- Off With a Bang
+q(14027),	-- Face to Face
+q(14029),	-- Breaking the Siege
+q(14097),	-- Get That Merchant Out of Here!
+q(14133),	-- The Way to a Mage's Heart
+q(14156),	-- Man on the Inside
+q(14298),	-- Kill Cultists/Dragonflight
+q(14315),	-- Liam's Stupor
+q(14317),	-- Tremors
+q(14415),	-- Apparitions in the Orchard
+q(14425),	-- The First Quest
+q(14426),	-- The Second Quest
+q(14427),	-- Item Quest	 CATA:Item Quest	 MOP:Item Quest
+q(14450),	-- Random Drop Test Progressive	 CATA:Random Drop Test Progressive	 MOP:Random Drop Test Progressive
+q(14451),	-- Random Drop Flat Rate	 CATA:Random Drop Flat Rate	 MOP:Random Drop Flat Rate
+q(14454),	-- The Captured Warrior	 CATA:The Captured Warrior	 MOP:The Captured Warrior
+q(24443),	-- The Captured Hunter	 CATA:The Captured Hunter	 MOP:The Captured Hunter
+q(24444),	-- The Captured Shaman	 CATA:The Captured Shaman	 MOP:The Captured Shaman
+q(24445),	-- The Captured Druid	 CATA:The Captured Druid	 MOP:The Captured Druid
+q(24446),	-- The Captured Sunwalker	 CATA:The Captured Sunwalker	 MOP:The Captured Sunwalker
+q(24447),	-- The Captured Seer
+q(24460),	-- Out of Order	 CATA:Out of Order	 MOP:Out of Order
+q(24462),	-- Operation Item Get
+q(24464),	-- Track Beasts
+q(24465),	-- Mark of the Wild
+q(24466),	-- Battle Shout
+q(24481),	-- Rockbiter Weapon
+q(24482),	-- Power Word: Fortitude
+q(24485),	-- Seal of Righteousness
+q(24544),	-- Paul Test Quest
+q(24696),	-- Un'Goro: PRK - E - Shizzle's Flyer 02 - Testing It Out
+q(24738),	-- Williden's Journal
+q(24739),	-- Expedition Salvation
+q(24860),	-- Profitable Preservation
+q(24900),	-- Blueleaf Tubers
+q(24935),	-- Body And Soul
+q(24967),	-- Stab!	 CATA:Stab!	 MOP:Stab!
+q(24984),	-- The Prodigal Lich
+q(24985),	-- Proving Allegiance
+q(24986),	-- The Prodigal Lich Returns
+q(24987),	-- Dark Lady, Watch Over Us
+q(25076),	-- Taming the Beast
+q(25077),	-- Taming the Beast
+q(25078),	-- Taming the Beast
+q(25083),	-- Beast Training
+q(25096),	-- Thunderdrome: Prince Mosh!
+q(25097),	-- Little Sumpthin'
+q(25101),	-- Friend of a Friend
+q(25113),	-- [DEPRECATED]Scorpid Poaching: Dunestalkers
+q(25114),	-- [DEPRECATED]Basilisk Poaching: Gazer Guts
+q(25116),	-- [DEPRECATED]Hyena Poaching: Rabid Livers
+q(25119),	-- Impulse Hunting
+q(25137),	-- Valley of Trials: PRK - H - Warlock Pet Imp
+q(25140),	-- Swine Hunting
+q(25142),	-- Into the Shadows
+q(25144),	-- Rock Meets Flesh
+q(25146),	-- A Demonic Fire
+q(25148),	-- Hone Your Holler
+q(25150),	-- Empowered Minds
+q(25225),	-- Oil Change
+q(25231),	-- Southseas Scum
+q(25302),	-- Remnants of Battle
+q(25307),	-- Eavesdropping
+q(25313),	-- The Defector
+q(25318),	-- Twilight Battle Plans
+q(25322),	-- Fiery Inscriptions
+q(25326),	-- Block Their Retreat
+q(25327),	-- Awakening
+q(25335),	-- Natural Materials
+q(25376),	-- Gordunni Cobalt
+q(25501),	-- Poaching for Dummies
+q(25508),	-- A Brilliant Idea
+q(25557),	-- Chief Ukorz
+q(25561),	-- Circle the Wagons... er, Boats	 CATA:Circle the Wagons... er, Boats	 MOP:Circle the Wagons... er, Boats
+q(25562),	-- Circle the Wagons... er, Boats	 CATA:Circle the Wagons... er, Boats	 MOP:Circle the Wagons... er, Boats
+q(25571),	-- A Natural Occurrence	 CATA:A Natural Occurrence	 MOP:A Natural Occurrence
+q(25604),	-- Hammering It Out
+q(25625),	-- Piercing the Ruins
+q(25639),	-- [DND] Test Rifts	 CATA:[DND] Test Rifts	 MOP:[DND] Test Rifts
+q(25738),	-- Shallow End of the Gene Pool
+q(25773),	-- A Natural Occurrence	 CATA:A Natural Occurrence	 MOP:A Natural Occurrence
+q(25789),	-- Hammering It Out
+q(25827),	-- Lo'Gosh is Ready for Battle
+q(25828),	-- Goldrinn's Message to Ysera
+q(25831),	-- Hamuul's Message to Ysera
+q(25833),	-- Aviana's Message to Ysera
+q(25902),	-- Your First Totem!
+q(25903),	-- It's Hot and it Might Explode
+q(26054),	-- Water They Up To?	 CATA:Water They Up To?	 MOP:Water They Up To?
+q(26104),	-- Our Aquatic Neigh-Bors
+q(26109),	-- Land Ho!
+q(26123),	-- When in Vashj'ir...
+q(26216),	-- Stoleways
+q(26217),	-- Overboard
+q(26218),	-- Long Shot
+q(26231),	-- Boarding Party
+q(26239),	-- <PH>Wildhammer Totems
+q(26242),	-- Deepholm, Plane of Earth
+q(26253),	-- Preserve the Evidence
+q(26262),	-- Twilight Armaments
+q(26392),	-- Voucher of Bravery
+q(26458),	-- Twilight Falls
+q(26459),	-- Researching the Corruption
+q(26460),	-- In Search of Thaelrid
+q(26471),	-- Knowledge in the Deeps
+q(26626),	-- We Have a Situation
+q(26675),	-- The Value of Trust	 CATA:The Value of Trust	 MOP:The Value of Trust
+q(26704),	-- REUSE	 CATA:REUSE	 MOP:REUSE
+q(26715),	-- Malfurion Stormrage	 CATA:Malfurion Stormrage	 MOP:Malfurion Stormrage
+q(26716),	-- A Bit of Privacy
+q(26789),	-- You no take axe!	 CATA:You no take axe!	 MOP:You no take axe!
+q(26790),	-- Magmadar Must Die!
+q(26847),	-- The Quaking Fields
+q(26848),	-- X Marks the Spot
+q(26849),	-- The Axe of Earthly Sundering
+q(26850),	-- Elemental Ore
+q(26851),	-- One With the Ground
+q(26852),	-- The Fragment's Inside
+q(26853),	-- The Middle Fragment
+q(26859),	-- Searching for the Lost Satchel
+q(26877),	-- The Fragment's Inside
+q(26880),	-- Gilneas City Unphase Cheat
+q(26900),	-- Agamaggan
+q(26990),	-- Water They Up To?	 CATA:Water They Up To?	 MOP:Water They Up To?
+q(27052),	-- Lingering Twilight
+q(27081),	-- [DEPRECATED]Trusting the Traitor
+q(27122),	-- Fired Up and Not So Good To Go.	 CATA:Fired Up and Not So Good To Go.	 MOP:Fired Up and Not So Good To Go.
+q(27127),	-- Fired Up and Not So Good To Go.	 CATA:Fired Up and Not So Good To Go.	 MOP:Fired Up and Not So Good To Go.
+q(27137),	-- Earth Girls Aren't So Easy
+q(27138),	-- Earth Girls Aren't So Easy
+q(27149),	-- School of the Damned	 CATA:School of the Damned	 MOP:School of the Damned
+q(27207),	-- This Blows	 CATA:This Blows	 MOP:This Blows
+q(27209),	-- This Blows	 CATA:This Blows	 MOP:This Blows
+q(27250),	-- REUSE - BAD COPY	 CATA:REUSE - BAD COPY	 MOP:REUSE - BAD COPY
+q(27546),	-- Speak with Captain Anton	 CATA:Speak with Captain Anton	 MOP:Speak with Captain Anton
+q(27678),	-- The Platinum Discs
+q(27723),	-- Kyle's Test Quest
+q(27819),	-- TEST - RVM	 CATA:TEST - RVM	 MOP:TEST - RVM
+q(28016),	-- Adventurers Wanted: Scarlet Monastery Graveyard	 CATA:Adventurers Wanted: Scarlet Monastery Graveyard	 MOP:Adventurers Wanted: Scarlet Monastery Graveyard
+q(28018),	-- Adventurers Wanted: Scarlet Monastery Armory	 CATA:Adventurers Wanted: Scarlet Monastery Armory	 MOP:Adventurers Wanted: Scarlet Monastery Armory
+q(28020),	-- Adventurers Wanted: Scarlet Monastery Graveyard	 CATA:Adventurers Wanted: Scarlet Monastery Graveyard	 MOP:Adventurers Wanted: Scarlet Monastery Graveyard
+q(28022),	-- Adventurers Wanted: Scarlet Monastery Armory	 CATA:Adventurers Wanted: Scarlet Monastery Armory	 MOP:Adventurers Wanted: Scarlet Monastery Armory
+q(28095),	-- Breadcrumb Out
+q(28110),	-- Breadcrumb Out
+q(28371),	-- [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]
+q(28412),	-- Blessing of the Family
+q(28468),	-- [DEPRECATED]Toxic Horrors
+q(28585),	-- Polished
+q(28648),	-- Frak's Wild Ride
+q(28739),	-- Night Elf Class Skill Tracker Quest
+q(28754),	-- Battle of Life and Death
+q(28835),	-- Necessary Refreshment (Backup Groundspawn Quest)
+q(28844),	-- [DEPRECATED] Hyena Harvest
+q(28851),	-- [DEPRECATED] Sullah's Sideshow
+q(28890),	-- Wasteland
+q(28891),	-- The Spirits of Southwind
+q(28892),	-- Hive in the Tower
+q(28893),	-- Umber, Archivist
+q(28894),	-- Uncovering Past Secrets
+q(28895),	-- Befoulers of the Wind
+q(28896),	-- Recalling
+q(28897),	-- Baristolth's Plan
+q(28898),	-- Secretion and Subterfuge
+q(28899),	-- Riding in Plain Sight
+q(28900),	-- Mysteries of the Twilight Hive
+q(28901),	-- Prisoners of Madness
+q(28936),	-- Diva Dilemma	 CATA:Diva Dilemma	 MOP:Diva Dilemma
+q(28937),	-- Alliance Breadcrumb	 CATA:Alliance Breadcrumb	 MOP:Alliance Breadcrumb
+q(28938),	-- Save the Children	 CATA:Save the Children	 MOP:Save the Children
+q(28939),	-- Beware of Strangers
+q(28940),	-- Get Antidote
+q(28941),	-- Transformation
+q(28942),	-- Revenge!
+q(29025),	-- Samophlange Repair
+q(29041),	-- Welcome to Paradise
+q(29042),	-- Kitchen Clean-Up
+q(29043),	-- Lunch Break
+q(29044),	-- No Child of Mine
+q(29045),	-- Fit for a King
+q(29046),	-- Chef's Challenge: Steelback
+q(29047),	-- Chef's Challenge: Faewing
+q(29048),	-- Chef's Challenge: Grumpfin
+q(29049),	-- So Sous Me
+q(29050),	-- Out of Gas
+q(29055),	-- Float My Boat
+q(29056),	-- Fruit Round-Up
+q(29057),	-- Firebeak
+q(29058),	-- Roc Collection
+q(29059),	-- Save 'Em
+q(29060),	-- At Your Service
+q(29062),	-- Finding the Cultist
+q(29063),	-- Subversion
+q(29064),	-- We Need a Boat
+q(29065),	-- Out of This World
+q(29070),	-- Twilight Plight
+q(29072),	-- Last Resort, Literally
+q(29076),	-- Kevin's Test Quest	 CATA:Kevin's Test Quest	 MOP:Kevin's Test Quest
+q(29077),	-- What Hath Dodd Wrought
+q(29097),	-- Mor'shan Caravan Rescue	 CATA:Mor'shan Caravan Rescue	 MOP:Mor'shan Caravan Rescue
+q(29098),	-- Demon Seed
+q(29099),	-- Mor'shan Caravan Delivery	 CATA:Mor'shan Caravan Delivery	 MOP:Mor'shan Caravan Delivery
+q(29108),	-- Mor'shan Test Quest	 CATA:Mor'shan Test Quest	 MOP:Mor'shan Test Quest
+q(29140),	-- Under the Skylord's Gaze	 CATA:Under the Skylord's Gaze	 MOP:Under the Skylord's Gaze
+q(29178),	-- Oooh, Shinies!
+q(29180),	-- Promises, Promises...	 CATA:Promises, Promises...	 MOP:Promises, Promises...
+q(29184),	-- X Marks... Your Doom!
+q(29187),	-- Tuskin' Raiders
+q(29212),	-- [DEPRECATED] Fire Hawk Down
+q(29216),	-- Malfurion's Breach	 CATA:Malfurion's Breach	 MOP:Malfurion's Breach
+q(29224),	-- [DEPRICATED] NO LONGER USED	 CATA:[DEPRICATED] NO LONGER USED	 MOP:[DEPRICATED] NO LONGER USED
+q(29256),	-- [DEPRECATED] Eat Your Heart Out
+q(29258),	-- Meteorite Hunt	 CATA:Meteorite Hunt	 MOP:Meteorite Hunt
+q(29259),	-- [DEPRECATED] Hide and Seek
+q(29260),	-- [DEPRECATED] Enlighten Us
+q(29266),	-- DEPRECATED Zul'Gurub Voodoo (NYI)	 CATA:DEPRECATED Zul'Gurub Voodoo (NYI)	 MOP:DEPRECATED Zul'Gurub Voodoo (NYI)
+q(29271),	-- Bound for Warmer Weather	 CATA:Bound for Warmer Weather	 MOP:Bound for Warmer Weather
+q(29277),	-- Druid Tree, Stage 3 Tracking
+q(29294),	-- Animate Embers	 CATA:Animate Embers	 MOP:Animate Embers
+q(29368),	-- Tracking
+q(29372),	-- Trouble in Podunk	 CATA:Trouble in Podunk	 MOP:Trouble in Podunk
+q(29373),	-- Trouble in Podunk	 CATA:Trouble in Podunk	 MOP:Trouble in Podunk
+q(29382),	-- Thanks, But No Thanks	 CATA:Thanks, But No Thanks	 MOP:Thanks, But No Thanks
+q(29383),	-- Thanks, But No Thanks	 CATA:Thanks, But No Thanks	 MOP:Thanks, But No Thanks
+q(29441),	-- From the Belly of the Beast	 CATA:From the Belly of the Beast	 MOP:From the Belly of the Beast
+q(29448),	-- An Exotic Egg
+q(29459),	-- A Captured Banner
+q(29460),	-- The Enemy's Insignia
+q(29461),	-- The Captured Journal
+q(29473),	-- Putting the Carnies Back Together Again
+q(29532),	-- Dark Tidings
+q(29533),	-- Dark Tidings
+q(29569),	-- Warlord Kalithresh's Prized Possession
+q(29572),	-- Safety Is Job One
+q(29671),	-- The Black Morass
+q(29683),	-- The Scryer's Scryer
+q(29810),	-- The Faceless Ones
+q(29820),	-- Into the Nexus	 CATA:Into the Nexus	 MOP:Into the Nexus
+q(29853),	-- Champion of the King
+q(30119),	-- Well of Eternity RP Tracker
+q(30173),	-- War Pigs!	 CATA:War Pigs!	 MOP:War Pigs!
+q(30537),	-- A Fizzy Fusion
+q(30538),	-- Fun for the Little Ones	 CATA:Fun for the Little Ones	 MOP:Fun for the Little Ones
+q(30539),	-- [DNT] Baby Needs Two Pair of Shoes TRACKER
+q(30540),	-- [DNT] Putting the Crunch in the Frog TRACKER
+q(30541),	-- [DNT] Putting Trash to Good Use TRACKER
+q(30542),	-- [DNT] Talkin' Tonks TRACKER
+q(30543),	-- [DNT] Putting the Carnies Back Together Again TRACKER
+q(30544),	-- [DNT] Spoilin' for Salty Sea Dogs TRACKER
+q(30545),	-- [DNT] Herbs for Healing TRACKER
+q(30546),	-- [DNT] Writing the Future TRACKER
+q(30547),	-- [DNT] Keeping the Faire Sparkling TRACKER
+q(30548),	-- [DNT] Eyes on the Prizes TRACKER
+q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
+q(30550),	-- [DNT] Tan My Hide TRACKER
+q(30551),	-- [DNT] Banners, Banners Everywhere! TRACKER
+q(30552),	-- [DNT] The Master Strategist TRACKER
+q(30553),	-- [DNT] A Curious Crystal TRACKER
+q(30554),	-- [DNT] An Exotic Egg TRACKER
+q(30555),	-- [DNT] An Intriguing Grimoire TRACKER
+q(30556),	-- [DNT] A Wondrous Weapon TRACKER
+q(30557),	-- [DNT] A Captured Banner TRACKER
+q(30558),	-- [DNT] The Enemy's Insignia TRACKER
+q(30559),	-- [DNT] The Captured Journal TRACKER
+q(30560),	-- [DNT] Tools of Divination TRACKER
+4.4.0.54217
+q(82808),	--
+4.4.0.54339
+q(82948),	-- CATA:Hero's Call Board	 MOP:Hero's Call Board
+q(82949),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+q(82981),	-- CATA:Talented	 MOP:Talented
+q(82982),	-- CATA:Talented	 MOP:Talented
+q(82983),	-- CATA:Hero's Call Board	 MOP:Hero's Call Board
+q(82984),	-- CATA:Talented	 MOP:Talented
+q(82985),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+q(82987),	-- CATA:Talented	 MOP:Talented
+q(82988),	-- CATA:Talented	 MOP:Talented
+q(82989),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+4.4.0.54647
+q(83316),	--
+4.4.1.57564
+q(86554),	--
+4.4.2.58486
+q(86600),	--
+4.4.2.58723
+q(88720),	--
+4.4.2.58884
+q(88775),	--
+q(88776),	-- CATA:A New Beginning	 MOP:A New Beginning
+q(88777),	-- CATA:A New Beginning	 MOP:A New Beginning
+q(88778),	-- CATA:A New Beginning	 MOP:A New Beginning
+q(88779),	-- CATA:A New Beginning	 MOP:A New Beginning
+q(88780),	-- CATA:Tools for Survival	 MOP:Tools for Survival
+q(88781),	-- CATA:Tools for Survival	 MOP:Tools for Survival
+q(88782),	-- CATA:Tools for Survival	 MOP:Tools for Survival
+q(88783),	-- CATA:Combat Training	 MOP:Combat Training
+q(88784),	-- CATA:Combat Training	 MOP:Combat Training
+q(88785),	-- CATA:Combat Training	 MOP:Combat Training
+q(88786),	-- CATA:Talented	 MOP:Talented
+q(88787),	-- CATA:Talented	 MOP:Talented
+q(88788),	-- CATA:Talented	 MOP:Talented
+q(88789),	-- CATA:Talented	 MOP:Talented
+q(88790),	-- CATA:Talented	 MOP:Talented
+q(88791),	--
+q(88792),	--
+q(88793),	-- CATA:Talented	 MOP:Talented
+q(88794),	-- CATA:Talented	 MOP:Talented
+q(88796),	-- CATA:Hero's Call Board	 MOP:Hero's Call Board
+q(88797),	-- CATA:Hero's Call Board	 MOP:Hero's Call Board
+q(88798),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+q(88800),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+q(88801),	-- CATA:Warchief's Command Board	 MOP:Warchief's Command Board
+q(88802),	--
+4.4.2.58947
+q(89045),	--
+q(89046),	--
+q(89047),	--
+q(89048),	--
+q(89049),	--
+q(89050),	--
+q(89051),	--
+q(89052),	--

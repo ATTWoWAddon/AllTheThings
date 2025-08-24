@@ -1,0 +1,275 @@
+3.4.0.43659
+q(11189),	-- One Last Time	 WOTLK:One Last Time	 CATA:One Last Time	 MOP:One Last Time
+q(11402),	-- Clayton's Quest: Extreme!!	 WOTLK:Clayton's Quest: Extreme!	 CATA:Clayton's Quest: Extreme!	 MOP:Clayton's Quest: Extreme!!
+q(11461),	-- DEPRECATED	 WOTLK:DEPRECATED	 CATA:DEPRECATED	 MOP:DEPRECATED
+q(11462),	-- Handsome Terry	 WOTLK:Handsome Terry	 CATA:Handsome Terry	 MOP:Handsome Terry
+q(11463),	-- Pirates of the North Seas	 WOTLK:Pirates of the North Seas	 CATA:Pirates of the North Seas	 MOP:Pirates of the North Seas
+q(11578),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY	 CATA:The "Chow" Quest (123)aa COPY	 MOP:The "Chow" Quest (123)aa COPY
+q(11579),	-- The "Chow" Quest (123)aa COPY	 WOTLK:The "Chow" Quest (123)aa COPY	 CATA:The "Chow" Quest (123)aa COPY	 MOP:The "Chow" Quest (123)aa COPY
+q(11621),	-- The Tablet of Leviroth	 WOTLK:The Tablet of Leviroth	 CATA:The Tablet of Leviroth	 MOP:The Tablet of Leviroth
+q(11622),	-- Secrets of Riplash	 WOTLK:Secrets of Riplash	 CATA:Secrets of Riplash	 MOP:Secrets of Riplash
+q(11934),	-- Unlocking Your Potential [PH]	 CATA:Unlocking Your Potential [PH]	 MOP:Unlocking Your Potential [PH]
+q(11992),	-- Navigation Charts (Deprecated)	 WOTLK:Navigation Charts (Deprecated)	 CATA:Navigation Charts (Deprecated)	 MOP:Navigation Charts (Deprecated)
+q(11994),	-- Juno's Flag Tester
+q(11997),	-- The Frozen Flame	 WOTLK:REUSE	 CATA:REUSE	 MOP:REUSE
+q(12001),	-- zzOLDHunting Tarot: Lesser Beasts	 WOTLK:zzOLDHunting Tarot: Lesser Beasts	 CATA:zzOLDHunting Tarot: Lesser Beasts	 MOP:zzOLDHunting Tarot: Lesser Beasts
+q(12015),	-- Test Quest for Craig	 WOTLK:Test Quest for Craig	 CATA:Test Quest for Craig	 MOP:Test Quest for Craig
+q(12018),	-- Sweet Revenge	 WOTLK:Sweet Revenge	 CATA:Sweet Revenge	 MOP:Sweet Revenge
+q(12021),	-- A Letter Home	 WOTLK:A Letter Home	 CATA:A Letter Home	 MOP:A Letter Home
+q(12023),	-- Sweeter Revenge
+q(12024),	-- Recording the Fallen	 WOTLK:Recording the Fallen	 CATA:Recording the Fallen	 MOP:Recording the Fallen
+q(12025),	-- A Scarlet Among Us	 WOTLK:A Scarlet Among Us	 CATA:A Scarlet Among Us	 MOP:A Scarlet Among Us
+q(12087),	-- A Little Help Here? DEPRECATED	 WOTLK:A Little Help Here? DEPRECATED	 CATA:A Little Help Here? DEPRECATED	 MOP:A Little Help Here? DEPRECATED
+q(12103),	-- Before the Storm
+q(12108),	-- DEPRECATED	 WOTLK:DEPRECATED	 CATA:DEPRECATED	 MOP:DEPRECATED
+q(12156),	-- DEPRECAED	 WOTLK:DEPRECAED	 CATA:DEPRECAED	 MOP:DEPRECAED
+q(12162),	-- Solstice Village	 WOTLK:Solstice Village	 CATA:Solstice Village	 MOP:Solstice Village
+q(12163),	-- The Evil Below	 WOTLK:The Evil Below	 CATA:The Evil Below	 MOP:The Evil Below
+q(12313),	-- UNUSED Save Brewfest!	 WOTLK:UNUSED Save Brewfest!	 CATA:UNUSED Save Brewfest!	 MOP:UNUSED Save Brewfest!
+q(12426),	-- DEPRECATED	 WOTLK:DEPRECATED	 CATA:DEPRECATED	 MOP:DEPRECATED
+q(12445),	--
+q(12493),	-- PvP Test	 WOTLK:PvP Test	 CATA:PvP Test	 MOP:PvP Test
+q(12586),	-- In Search of Bigger Game	 WOTLK:In Search of Bigger Game	 CATA:In Search of Bigger Game	 MOP:In Search of Bigger Game
+q(12590),	-- Blahblah[PH]	 WOTLK:Blahblah[PH]	 CATA:Blahblah[PH]	 MOP:Blahblah[PH]
+q(12601),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice	 CATA:The Alchemist's Apprentice	 MOP:The Alchemist's Apprentice
+q(12602),	-- The Alchemist's Apprentice	 WOTLK:The Alchemist's Apprentice	 CATA:The Alchemist's Apprentice	 MOP:The Alchemist's Apprentice
+q(12625),	-- Dominion Over Acherus	 WOTLK:Dominion Over Acherus	 CATA:Dominion Over Acherus	 MOP:Dominion Over Acherus
+q(12626),	-- Company of the Damned	 WOTLK:Company of the Damned	 CATA:Company of the Damned	 MOP:Company of the Damned
+q(12682),	-- Uncharted Territory (DEPRECATED)	 WOTLK:Uncharted Territory (DEPRECATED)	 CATA:Uncharted Territory (DEPRECATED)	 MOP:Uncharted Territory (DEPRECATED)
+q(12731),	--
+q(12764),	-- The Secret to Kungaloosh
+q(12765),	-- Kungaloosh
+q(12780),	-- DEPRICATED>>Enemy of Our Enemy	 WOTLK:DEPRICATED>>Enemy of Our Enemy	 CATA:DEPRICATED>>Enemy of Our Enemy	 MOP:DEPRICATED>>Enemy of Our Enemy
+q(12816),	-- Investigate the Scourge of Silvermoon	 WOTLK:Investigate the Scourge of Silvermoon	 CATA:Investigate the Scourge of Silvermoon	 MOP:Investigate the Scourge of Silvermoon
+q(12817),	-- Investigate the Scourge of Exodar	 WOTLK:Investigate the Scourge of Exodar	 CATA:Investigate the Scourge of Exodar	 MOP:Investigate the Scourge of Exodar
+q(12825),	-- Expressions of Gratitude	 WOTLK:Expressions of Gratitude	 CATA:Expressions of Gratitude	 MOP:Expressions of Gratitude
+q(12834),	-- Not Rain, Nor Snow, Nor Exploding Plane	 WOTLK:Not Rain, Nor Snow, Nor Exploding Plane	 CATA:Not Rain, Nor Snow, Nor Exploding Plane	 MOP:Not Rain, Nor Snow, Nor Exploding Plane
+q(12835),	-- All Grown Up	 WOTLK:All Grown Up	 CATA:All Grown Up	 MOP:All Grown Up
+q(12837),	-- Tore's Got the Goods	 WOTLK:Tore's Got the Goods	 CATA:Tore's Got the Goods	 MOP:Tore's Got the Goods
+q(12881),	-- The Brothers Bronzebeard	 WOTLK:The Brothers Bronzebeard	 CATA:The Brothers Bronzebeard	 MOP:The Brothers Bronzebeard
+q(13123),	-- WotLK Collector's Edition: - DEM - E - FLAG
+q(13173),	-- Amidst the Confusion	 WOTLK:Amidst the Confusion	 CATA:Amidst the Confusion	 MOP:Amidst the Confusion
+q(13210),	-- Blizzard Account: - DEM - E - FLAG
+q(13299),	-- ZZOLDWisp Cloak	 WOTLK:ZZOLDWisp Cloak	 CATA:ZZOLDWisp Cloak	 MOP:ZZOLDWisp Cloak
+q(13303),	-- The Panchurian Candidate	 CATA:Test Quest	 MOP:Test Quest
+q(13317),	-- ----	 WOTLK:----	 CATA:----	 MOP:----
+q(13378),	-- Chief Engineer Copperclaw	 WOTLK:Chief Engineer Copperclaw	 CATA:Chief Engineer Copperclaw	 MOP:Chief Engineer Copperclaw
+q(13404),	-- Static Shock Troops: the Bombardment	 WOTLK:Static Shock Troops: the Bombardment	 CATA:Static Shock Troops: the Bombardment	 MOP:Static Shock Troops: the Bombardment
+q(13405),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients	 CATA:Call to Arms: Strand of the Ancients	 MOP:Call to Arms: Strand of the Ancients
+q(13407),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients	 CATA:Call to Arms: Strand of the Ancients	 MOP:Call to Arms: Strand of the Ancients
+q(13427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(13476),	-- For Great Honor	 WOTLK:For Great Honor	 CATA:For Great Honor	 MOP:For Great Honor
+q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts	 CATA:Concerted Efforts	 MOP:Concerted Efforts
+q(13541),	-- 	 WOTLK:	 CATA:	 MOP:
+q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test	 CATA:Justin's Fun Test	 MOP:Justin's Fun Test
+q(13914),	-- Searing Roc Feathers	 WOTLK:Searing Roc Feathers	 CATA:Searing Roc Feathers	 MOP:Searing Roc Feathers
+q(13915),	-- Hungry, Hungry Hatchling	 WOTLK:Hungry, Hungry Hatchling	 CATA:Hungry, Hungry Hatchling	 MOP:Hungry, Hungry Hatchling
+q(13916),	-- Poached, Scrambled, Or Raw?	 WOTLK:Poached, Scrambled, Or Raw?	 CATA:Poached, Scrambled, Or Raw?	 MOP:Poached, Scrambled, Or Raw?
+q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub	 MOP:Gorishi Grub
+q(13990),	-- Upper Deck Promo - Chicken Mount
+q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...	 CATA:If You're Reading This While I'm In Combat...	 MOP:If You're Reading This While I'm In Combat...
+q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup	 CATA:Kobold Camp Cleanup	 MOP:Kobold Camp Cleanup
+q(14163),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest	 CATA:Call to Arms: Isle of Conquest	 MOP:Call to Arms: Isle of Conquest
+q(14164),	-- Call to Arms: Isle of Conquest	 WOTLK:Call to Arms: Isle of Conquest	 CATA:Call to Arms: Isle of Conquest	 MOP:Call to Arms: Isle of Conquest
+q(14178),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(14179),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	 CATA:Call to Arms: Eye of the Storm	 MOP:Call to Arms: Eye of the Storm
+q(14180),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	 CATA:Call to Arms: Eye of the Storm	 MOP:Call to Arms: Eye of the Storm
+q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(14200),	-- Kickoff Mail Marker
+q(14441),	-- Garrosh's Autograph	 WOTLK:Garrosh's Autograph	 CATA:Garrosh's Autograph	 MOP:Garrosh's Autograph
+q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24218),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24219),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24220),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(24221),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(24222),	-- Call to Arms: Eye of the Storm DEPRECATED	 WOTLK:Call to Arms: Eye of the Storm DEPRECATED	 CATA:Call to Arms: Eye of the Storm DEPRECATED	 MOP:Call to Arms: Eye of the Storm DEPRECATED
+q(24223),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(24224),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24225),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(24226),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(24227),	-- DEPRECATED
+q(24426),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(24427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(24508),	-- Temp Quest Record	 WOTLK:Temp Quest Record	 CATA:Temp Quest Record	 MOP:Temp Quest Record
+q(24509),	-- Temp Quest Record	 WOTLK:Temp Quest Record	 CATA:Temp Quest Record	 MOP:Temp Quest Record
+q(24661),	-- Theryn Fed Tracker	 WOTLK:REUSE ME	 CATA:REUSE ME	 MOP:REUSE ME
+q(24746),	-- REUSE	 WOTLK:REUSE	 CATA:REUSE	 MOP:REUSE
+q(25055),	-- Subduing the Elements	 WOTLK:Elemental Research	 CATA:Elemental Research	 MOP:Elemental Research
+q(25092),	-- Subduing the Elements	 WOTLK:Elemental Research	 CATA:Elemental Research	 MOP:Elemental Research
+q(25180),	-- Tablets of the Earth	 WOTLK:Tablets of the Earth	 CATA:Tablets of the Earth	 MOP:Tablets of the Earth
+q(25181),	-- Tablets of Fire	 WOTLK:Tablets of Fire	 CATA:Tablets of Fire	 MOP:Tablets of Fire
+q(25228),	-- Prophecies Of Doom
+q(25253),	-- Prophecies Of Doom
+q(25254),	-- Signs Of The Times
+q(25282),	-- Signs Of The Times
+q(25286),	-- Words for Delivery	 WOTLK:Words for Delivery	 CATA:Words for Delivery	 MOP:Words for Delivery
+q(25288),	-- Infiltrating The Cult
+q(25290),	-- Infiltrating the Cult
+q(25293),	-- The Missing
+q(25343),	-- The Master's Plan
+q(25347),	-- The Doomsday Plan
+q(25348),	-- Thwarting Twilight's Hammer
+q(25351),	-- Alert Our Leaders
+q(25380),	-- Spreading The Word
+q(25414),	-- The Missing
+q(25415),	-- Spreading The Word
+q(25416),	-- The Master's Plan
+q(25417),	-- The Doomsday Plan
+q(25418),	-- Thwarting Twilight's Hammer
+q(25425),	-- Warn King Wrynn
+3.4.0.44729
+q(70349),	--
+3.4.0.45854
+q(70354),	-- WOTLK:Northrend Expedition Supplies	 CATA:Northrend Expedition Supplies	 MOP:Northrend Expedition Supplies
+q(70356),	-- WOTLK:Northrend Expedition Supplies	 CATA:Northrend Expedition Supplies	 MOP:Northrend Expedition Supplies
+q(70395),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(70396),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(70397),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(70398),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(70401),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70411),	-- WOTLK:To the Dockmaster	 CATA:To the Dockmaster	 MOP:To the Dockmaster
+q(70663),	--
+q(70664),	--
+q(70665),	--
+q(70666),	--
+q(70667),	--
+q(70668),	--
+q(70669),	--
+q(70670),	--
+q(70671),	--
+q(70672),	--
+q(70673),	--
+q(70674),	--
+q(70675),	--
+q(70676),	--
+q(70677),	--
+q(70678),	--
+q(70679),	--
+q(70680),	--
+q(70681),	--
+q(70682),	--
+q(70683),	--
+q(70684),	--
+q(70685),	-- WOTLK:Tuskarr Kite	 CATA:Tuskarr Kite	 MOP:Tuskarr Kite
+q(70686),	--
+q(70687),	--
+q(70688),	--
+q(70689),	--
+q(70690),	--
+q(70691),	--
+q(70692),	--
+q(70693),	--
+q(70694),	--
+q(70695),	--
+q(70696),	--
+q(70734),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(70735),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(70736),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70737),	-- WOTLK:To the Zeppelin Master	 CATA:To the Zeppelin Master	 MOP:To the Zeppelin Master
+q(70760),	--
+q(70761),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(70762),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(70764),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(70765),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70855),	--
+q(70860),	--
+q(70861),	--
+q(70862),	-- WOTLK:Hoplet	 CATA:Hoplet	 MOP:Hoplet
+q(70865),	-- WOTLK:To Shattrath City	 CATA:To Shattrath City	 MOP:To Shattrath City
+q(70868),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70869),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70870),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(70998),	-- WOTLK:Frosty	 CATA:Frosty	 MOP:Frosty
+q(70999),	-- WOTLK:Frosty	 CATA:Frosty	 MOP:Frosty
+q(71098),	--
+q(71099),	--
+q(71100),	--
+q(71101),	--
+q(71102),	--
+q(71103),	--
+q(71104),	--
+q(71105),	--
+q(71106),	--
+q(71107),	--
+q(71108),	--
+q(71109),	--
+q(71110),	--
+q(71111),	--
+q(71112),	--
+q(71113),	--
+q(71114),	--
+q(71115),	--
+q(71116),	--
+q(71117),	--
+q(71118),	--
+q(71119),	--
+q(71120),	--
+q(71121),	--
+q(71122),	--
+q(71123),	--
+q(71124),	--
+q(71125),	--
+q(71126),	--
+q(71127),	--
+q(71128),	--
+q(71129),	--
+q(71130),	--
+q(71131),	--
+q(71132),	--
+q(71133),	--
+q(71134),	--
+3.4.0.45942
+q(72433),	--
+3.4.0.46779
+q(72522),	-- WOTLK:Festering Emerald Drake	 CATA:Festering Emerald Drake	 MOP:Festering Emerald Drake
+3.4.2.49311
+q(76175),	--
+3.4.3.51126
+q(78165),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+3.4.3.51278
+q(78505),	-- WOTLK:Daily Protocol Gamma Random (1st)	 CATA:Daily Protocol Gamma Random (1st)	 MOP:Daily Protocol Gamma Random (1st)
+q(78509),	-- WOTLK:Daily Non-Protocol Gamma Heroic Random (1st)	 CATA:Daily Non-Protocol Gamma Heroic Random (1st)	 MOP:Daily Non-Protocol Gamma Heroic Random (1st)
+3.4.3.52237
+q(74940),	-- WOTLK:Flurky	 CATA:Flurky	 MOP:Flurky
+q(75491),	-- WOTLK:Glub	 CATA:Glub	 MOP:Glub
+q(77167),	--
+q(77168),	--
+q(78135),	--
+q(78136),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(78137),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(78138),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(78139),	--
+q(78140),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(78151),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(78157),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(78158),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(78164),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(78166),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
+q(78167),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(78168),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
+q(78219),	-- WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(78220),	-- WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(78221),	-- WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(78222),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(78223),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
+q(78224),	-- WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(78225),	-- WOTLK:To Northrend	 CATA:To Northrend	 MOP:To Northrend
+3.4.3.54948
+q(83699),	--
+q(83709),	--
+q(83713),	--
+q(83714),	--
+q(83717),	--
+3.4.3.55325
+q(84385),	--
+q(84386),	--
+3.4.3.55392
+q(84553),	--
+3.4.3.55417
+q(84552),	--
+3.4.3.58936
+q(87379),	--

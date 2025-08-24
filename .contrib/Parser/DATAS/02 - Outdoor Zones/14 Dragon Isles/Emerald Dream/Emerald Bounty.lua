@@ -8,6 +8,7 @@ EMERALD_BOUNTY = createHeader({
 	text = {
 		en = "Emerald Bounty",
 		ru = "Изумрудный дар",
+		cn = "翡翠奖赏",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
@@ -93,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 78172 },	-- Mysterious Seeds
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210014),	-- Mysterious Ageless Seeds (QI!)
 					},
 				}),
@@ -101,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77209 },	-- Seed Legacy
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(211406),	-- Ageless Dewdrops (QI!)
 						i(211410),	-- Bloomed Wildling Cache
 					},
@@ -110,7 +111,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 78170 },	-- Nurturing Ageless Seeds
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						o_repeated({
 							i(210052),	-- Ageless Blossoms (QI!)
 							o(410045),	-- Ageless Blossom
@@ -133,9 +134,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					--["sourceQuestNumRequired"] = 1
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
-					["isWeekly"] = true,
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
-					["g"] = {
+					["isWeekly"] = true,
+					["groups"] = {
 						i(SEEDBLOOM, {
 							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
 						}),
@@ -181,7 +182,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							{"where", "filterID", BATTLE_PETS },
 							{"pop"},
 						},
-						["g"] = {
+						["groups"] = {
 							i(210059),	-- Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 							i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (MM!) / also was looted from purple
@@ -204,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(VENDORS, {
 				n(211265, {	-- Sylvia Whisperbloom
 					["coord"] = { 59.8, 16.9, EMERALD_DREAM },
-					["g"] = bubbleDownFiltered({
+					["groups"] = bubbleDownFiltered({
 						["cost"] = {{ "i", SEEDBLOOM, 1 }},
 					},FILTERFUNC_itemID,{
 						n(BACK, {

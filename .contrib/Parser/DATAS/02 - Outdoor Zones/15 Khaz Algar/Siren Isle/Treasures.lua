@@ -1,11 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(TREASURES, {
 			o_repeated({	-- Runed Storm Cache:CollectedThings
-				["g"] = {
+				["groups"] = {
 					o(474822, {	-- Runed Storm Cache (non storm id)
 						-- TBD if listing coords is viable or not, may be that these make for good iron farm
 						["coords"] = {
@@ -34,8 +34,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			o_repeated({	-- Seafarer's Cache
 				-- ["description"] = "Requires a character to have completed the Dipping a Toe quest at least once in order for chests to spawn on the map.",
-				["g"] = {
-					i(233501, {	-- Sandy Snapdragon Treat
+				["groups"] = {
+					i(233501, {	-- Sandy Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.",
 					}),
 					i(234231),	-- Technique: Glyph of the Admiral's Pistol Shot (RECIPE!)
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 41.7, 45.9, SIREN_ISLE },
 				["questID"] = 86766,
 				["lockCriteria"] = { 1, "sourceID", 231365 },
-				["g"] = {
+				["groups"] = {
 					i(233916),	-- Ashvane Issued Workboots (COSMETIC!)
 				},
 			}),
@@ -59,13 +59,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 74.1, 53.2, SIREN_ISLE },
 				["questID"] = 86768,
 				["lockCriteria"] = { 1, "sourceID", 231359 },
-				["g"] = {
+				["groups"] = {
 					i(233910),	-- Salt-Stained Sweatcap (COSMETIC!)
 				},
 			}),
 			o(465272, {	-- Empty Kaja'Cola Can
 				["coord"] = { 60.8, 62.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(228665),	-- Empty Kaja'Cola (QS!)
 				},
 			}),
@@ -74,14 +74,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["coord"] = { 37.0, 53.1, SIREN_ISLE },
 				["questID"] = 87446,
 				["lockCriteria"] = { 1, "sourceID", 231404 },
-				["g"] = {
+				["groups"] = {
 					i(233955),	-- Iron Mining Pick (COSMETIC!)
 				},
 			}),
 			o(505504, {	-- Kul Tiran Lumberer's Hatchet
 				["coord"] = { 40.2, 41.8, SIREN_ISLE },
 				["questID"] = 86764,
-				["g"] = {
+				["groups"] = {
 					i(233957),	-- Kul Tiran Lumberer's Hatchet (COSMETIC!)
 				},
 			}),
@@ -89,28 +89,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["description"] = "On the 2nd floor, at the base of the ceiling. It has a large interact range, you can reach it from the railing.",
 				["coord"] = { 39.3, 53.8, SIREN_ISLE },
 				["questID"] = 86767,
-				["g"] = {
+				["groups"] = {
 					i(233831),	-- Minnow's Favorite Blade (COSMETIC!)
 				},
 			}),
-			o(463539, {	-- Pilfered Earthen Chest
-				-- Naga
-				["coord"] = { 68.4, 94.4, SIREN_ISLE },
-				["questID"] = 84527,
-				["isWeekly"] = true,
-				["g"] = {
-					i(229181),	-- Ordained Forge Maul
-				},
-			}),
-			o(493375, {	-- Rune-Sealed Coffer
-				-- Vrykul
-				["coord"] = { 67.8, 73.5, SIREN_ISLE },
-				["questID"] = 86171,
-				["isWeekly"] = true,
-			}),
 			o(494475, {	-- Rune-Speared Spear
 				["coord"] = { 57.9, 78.5, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(232439),	-- Rune-Seared Spear (QS!)
 				},
 			}),
@@ -121,17 +106,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					{ 26.5, 23.4, 2375 },	-- Treasure
 				},
 				["questID"] = 86732,
-				["g"] = {
+				["groups"] = {
 					i(233834),	-- Stone Carver's Scramseax (COSMETIC!)
 				},
 			}),
 			o(500697, {	-- Well Loved Squeaky Toy
 				["description"] = "On the 2nd floor, in the back corner by the wall.",
 				["coord"] = { 39.3, 54.2, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(233027),	-- Well Loved Squeaky Toy
 				},
 			}),
 		}),
 	}),
-})));
+}));

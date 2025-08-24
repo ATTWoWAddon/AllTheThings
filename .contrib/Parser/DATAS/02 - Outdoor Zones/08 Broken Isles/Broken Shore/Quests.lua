@@ -29,81 +29,81 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(46904, {	-- Boon of the Command Center (Heavily Augmented)
 				["sourceQuests"] = { 46773 },	-- The Command Center
-				["repeatable"] = true,	-- technically isOccasional, lol
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
+				["repeatable"] = true,	-- technically isOccasional, lol
 			}),
 			q(46998, {	-- Boon of the Command Center (War Effort)
 				["sourceQuests"] = { 46773 },	-- The Command Center
-				["repeatable"] = true,	-- technically isOccasional, lol
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
+				["repeatable"] = true,	-- technically isOccasional, lol
 			}),
 			q(46999, {	-- Boon of the Command Center (Well Prepared)
 				["sourceQuests"] = { 46773 },	-- The Command Center
-				["repeatable"] = true,	-- technically isOccasional, lol
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
+				["repeatable"] = true,	-- technically isOccasional, lol
 			}),
 			q(46997, {	-- Boon of the Command Center (Worthy Champions)
 				["sourceQuests"] = { 46773 },	-- The Command Center
-				["repeatable"] = true,	-- technically isOccasional, lol
 				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.4, 63.1, BROKEN_SHORE },
+				["repeatable"] = true,	-- technically isOccasional, lol
 			}),
 			q(47007, {	-- Boon of the Mage Tower
+				["sourceQuest"] = 46772,	-- The Mage Tower
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46772,	-- The Mage Tower
 			}),
 			q(47008, {	-- Boon of the Mage Tower
+				["sourceQuest"] = 46772,	-- The Mage Tower
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46772,	-- The Mage Tower
 			}),
 			q(47009, {	-- Boon of the Mage Tower
+				["sourceQuest"] = 46772,	-- The Mage Tower
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46772,	-- The Mage Tower
 			}),
 			q(47010, {	-- Boon of the Mage Tower
+				["sourceQuest"] = 46772,	-- The Mage Tower
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46772,	-- The Mage Tower
 			}),
 			q(47012, {	-- Boon of the Nether Disruptor
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(47014, {	-- Boon of the Nether Disruptor
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(47015, {	-- Boon of the Nether Disruptor
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(47016, {	-- Boon of the Nether Disruptor
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["provider"] = { "n", 120183 },	-- Commander Chambers
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["repeatable"] = true,
-				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
 			}),
 			q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 				["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
-				["g"] = {
+				["groups"] = {
 					i(146932),	-- Condensed Storm's Fury
 					i(146926),	-- Fel Command Beacon
 					i(146928),	-- Heat Absorbing Prism
@@ -122,6 +122,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(47137, {	-- Champions of Legionfall
+				["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 				["sourceQuests"] = {
 					-- #IF AFTER 9.1.5
 					46734,	-- Assault on Broken Shore
@@ -129,7 +130,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					46247,	-- Defending Broken Isles
 					-- #ENDIF
 				},
-				["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
 				["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 				["coord"] = { 44.4, 63.4, BROKEN_SHORE },
 			}),
@@ -139,93 +139,97 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.4, 63.4, BROKEN_SHORE },
 			}),
 			q(46809, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { DEATHKNIGHT },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47069, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { MONK },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47070, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { MAGE },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47071, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { PALADIN },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47072, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { WARRIOR },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47073, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { HUNTER },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47074, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { SHAMAN },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47075, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { DRUID },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47076, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { WARLOCK },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47077, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { PRIEST },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47078, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { DEMONHUNTER },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47079, {	-- Delivering Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
+				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = { ROGUE },
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(47040, {	-- Fate Sealed
-				["repeatable"] = true,
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["repeatable"] = true,
 			}),
 			q(47045, {	-- Further Progress
-				["repeatable"] = true,
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["repeatable"] = true,
 			}),
 			q(46501, {	-- Grave Robbin'
 				["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["groups"] = {
+					i(146956),	-- Promising Treasure Key (QI!)
+					i(146664),	-- Finely-Jeweled Key
+				},
 			}),
 			q(46252, {	-- Intolerable Infestation
 				["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
@@ -238,9 +242,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.4, 63.0, BROKEN_SHORE },
 			}),
 			q(47032, {	-- Legion Threat: Azshara
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
-				["DisablePartySync"] = true,
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					DEATHKNIGHT,	-- Frost
@@ -249,13 +251,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					ROGUE,			-- Subtlety
 					WARRIOR,		-- Arms
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47030, {	-- Legion Threat: Dalaran Infiltration
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 44821 },	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
-				["DisablePartySync"] = true,
 				["classes"] = {
 					DEATHKNIGHT,	-- Blood
 					DEMONHUNTER,	-- Vengeance
@@ -264,12 +266,12 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PALADIN,		-- Protection
 					WARRIOR,		-- Protection
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47031, {	-- Legion Threat: Highmountain
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 44821 },	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
-				["DisablePartySync"] = true,
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					HUNTER,		-- Beast Mastery
@@ -277,12 +279,12 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Discipline
 					WARLOCK,	-- Destruction
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47033, {	-- Legion Threat: Suramar
-				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
-				["DisablePartySync"] = true,
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
 				["classes"] = {
 					MAGE,		-- Arcane
@@ -291,13 +293,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					SHAMAN,		-- Enhancement
 					WARLOCK,	-- Demonology
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47035, {	-- Legion Threat: The Missing Mage
-				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
-				["DisablePartySync"] = true,
 				["classes"] = {
 					DEATHKNIGHT,	-- Unholy
 					DRUID,			-- Feral
@@ -306,13 +308,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					SHAMAN,			-- Elemental
 					WARRIOR,		-- Fury
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47034, {	-- Legion Threat: The Necromancer
-				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.7, 63.2, BROKEN_SHORE },
-				["DisablePartySync"] = true,
 				["classes"] = {
 					DRUID,		-- Balance
 					HUNTER,		-- Marksmanship
@@ -320,13 +322,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Shadow
 					WARLOCK,	-- Affliction
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47027, {	-- Legion Threat: Val'sharah
-				["isBreadcrumb"] = true,
 				["sourceQuest"] = 44821,	-- In Dire Need
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
-				["DisablePartySync"] = true,
 				["classes"] = {
 					DRUID,		-- Restoration
 					MONK,		-- Mistweaver
@@ -334,6 +336,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Holy
 					SHAMAN,		-- Restoration
 				},
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(47112, {	-- Lost Souls
 				["sourceQuests"] = { 47097 },	-- A Walk to Remember
@@ -346,7 +350,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46251 },	-- Shard Times
 				["provider"] = { "n", 117873 },	-- Illidan Stormrage
 				["coord"] = { 44.6, 63.1, BROKEN_SHORE },
-				["g"] = { i(147582) },	-- Mark of the Sentinax (QI!)
+				["groups"] = { i(147582) },	-- Mark of the Sentinax (QI!)
 			}),
 			q(45193, {	-- One Step Behind
 				["sourceQuests"] = { 45192 },	-- Runes of Rending
@@ -362,10 +366,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(47017, {	-- Only the Best
 				["provider"] = { "n", 121081 },	-- Merris Townsend
 				["coord"] = { 43.6, 64.0, BROKEN_SHORE },
+				["groups"] = {
+					i(147432),	-- Champion Equipment
+				},
 			}),
 			q(46253, {	-- Pillars of Creation
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["qgs"] = {
+					116302,	-- Archmage Khadgar
+					122799,	-- Archmage Khadgar
+				},
 				["coord"] = { 44.6, 63.1, BROKEN_SHORE },
 			}),
 			q(46769, {	-- Relieved of Their Valuables
@@ -376,6 +386,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(45192, {	-- Runes of Rending
 				["sourceQuests"] = { 45190 },	-- Where it's Thinnest
 				["provider"] = { "n", 116175 },	-- Karam Magespear
+				["coord"] = { 56.4, 27.2, BROKEN_SHORE },
 				["classes"] = {
 					DRUID,		-- Balance
 					HUNTER,		-- Marksmanship
@@ -383,12 +394,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					PRIEST,		-- Shadow
 					WARLOCK,	-- Affliction
 				},
-				["coord"] = { 56.4, 27.2, BROKEN_SHORE },
 			}),
 			q(47067, {	-- Seeking Lost Knowledge
-				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(46248, {	-- Self-Fulfilling Prophecy
 				["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
@@ -396,20 +406,27 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["coord"] = { 44.4, 63.3, BROKEN_SHORE },
 			}),
 			q(46251, {	-- Shard Times
-			-- TODO: could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
 				["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+			-- TODO: could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
 			}),
 			q(46510, {	-- Ship Graveyard
 				["sourceQuests"] = { 46509 },	-- Tomb Raidering
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["groups"] = {
+					i(146958),	-- Wonderfully-Adorned Cloth (QI!)
+					i(146663),	-- Soggy Tapestry
+				},
 			}),
 			q(46499, {	-- Spiders, Huh?
 				["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["groups"] = {
+					i(146955),	-- Potentially Precious Gem (QI!)
+				},
 			}),
 			q(46246, {	-- Strike Them Down
 				["sourceQuests"] = { 46249 },	-- Championing Our Cause
@@ -432,6 +449,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+				["groups"] = {
+					i(147430),	-- Mysterious Runebound Scroll (QI!)
+				},
 			}),
 			q(46773, {	-- The Command Center
 				["sourceQuest"] = 46245,	-- Begin Construction
@@ -445,7 +465,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(46805, {	-- The Deceiver's Downfall
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 120372 },	-- Prophet Velen
+				["qgs"] = {
+					120372,	-- Prophet Velen
+					122800,	-- Prophet Velen
+				},
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(46282, {	-- The King's Path
@@ -463,7 +486,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(46774, {	-- The Nether Disruptor
 				["sourceQuest"] = 46245,	-- Begin Construction
 				["provider"] = { "n", 120183 },	-- Commander Chambers
-				["g"] = {
+				["groups"] = {
 					i(147451),	-- Armorcrafter's Commendation
 				},
 			}),
@@ -471,7 +494,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
-				["g"] = {
+				["groups"] = {
 					i(143559),	-- Wyrmtongue's Cache Key
 				},
 			}),
@@ -480,25 +503,29 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
 			}),
 			q(54120, {	-- To Orgrimmar
-				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
-				["lvl"] = 50,
+				["sourceQuests"] = { 53778 },	-- Where He Fell
+				["qgs"] = {
+					145965,	-- Spirit of Vol'jin
+					145981, -- Restless Spirit
+				},
 				["coord"] = { 62.3, 30.4, BROKEN_SHORE },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53778 },	-- Where He Fell
-				["g"] = {
-					i(165371),	-- The Glaive of Vol'jin (QI!)
-				},
+				["lvl"] = 50,
+				["groups"] = { i(165371) },	-- The Glaive of Vol'jin (QI!)
 			}),
 			q(46509, {	-- Tomb Raidering
 				["sourceQuests"] = { 46501 },	-- Grave Robbin'
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["groups"] = {
+					i(146957),	-- Mysterious Potion (QI!)
+				},
 			}),
 			q(47054, {	-- Touched By Fate
-				["repeatable"] = true,
+				["sourceQuest"] = 46774,	-- The Nether Disruptor
 				["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
 				["coord"] = { 41.2, 64.4, BROKEN_SHORE },
-				["sourceQuest"] = 46774,	-- The Nether Disruptor
+				["repeatable"] = true,
 			}),
 			q(46845, {	-- Vengeance Point
 				["sourceQuests"] = { 46832 },	-- Aalgen Point
@@ -509,13 +536,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46510 },	-- Ship Graveyard
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["groups"] = {
+					i(146653),	-- Ancient Shard of Binding (QI!)
+				},
 			}),
 			q(53778, {	-- Where He Fell
+				["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
-				["lvl"] = 120,
 				["coord"] = { 63.2, 33.3, BROKEN_SHORE },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53776 },	-- To the Broken Shore
+				["lvl"] = 120,
 			}),
 		}),
 	}),

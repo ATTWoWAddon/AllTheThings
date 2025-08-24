@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2098,	-- The Pitch
 			2099,	-- Algeth'ar Academy
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(72193, {	-- The Algeth'ar Academy
 					-- ["sourceQuests"] = {  },	--
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(TREASURES, {
 				o(384370, {	-- Deliberately Delinquent Notes
 					["description"] = "This Recipe is found near Overgrown Ancient in far left corner of the arena on a table with some strange flasks.",
-					["g"] = {
+					["groups"] = {
 						i(198908),	-- Technique: Illusion Parchment: Love Charm (RECIPE!)
 					},
 				}),
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						195416,	-- Magic Book
 						194181, -- Vexamus
 					},
-					["g"] = {
+					["groups"] = {
 						i(193708),	-- Platinum Star Band
 						i(193711),	-- Spellbane Cutlass
 						i(193710),	-- Spellboon Saber
@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2512, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
-					["g"] = {
+					["groups"] = {
 						i(193716),	-- Algeth'ar Hedgecleaver
 						i(193715),	-- Boots of Explosive Growth
 						i(193713),	-- Experimental Safety Gloves
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
-					["g"] = {
+					["groups"] = {
 						i(193722),	-- Azure Belt of Competition
 						i(193720),	-- Bronze Challenger's Robe
 						i(193719),	-- Dragon Games Equipment
@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
-					["g"] = {
+					["groups"] = {
 						ach(16269),	-- Algeth'ar Academy
 						i(193701),	-- Algeth'ar Puzzle Box
 						i(193705),	-- Breastplate of Proven Knowledge
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
-					["g"] = {
+					["groups"] = {
 						ach(16270),	-- Heroic: Algeth'ar Academy
 					},
 				}),
@@ -98,25 +98,25 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						195416,	-- Magic Book
 						194181, -- Vexamus
 					},
-					["g"] = {
+					["groups"] = {
 						ach(16434),	-- See Me After Class
 					},
 				}),
 				e(2512, {	-- Overgrown Ancient
 					["crs"] = { 196482 },	-- Overgrown Ancient
-					["g"] = {
+					["groups"] = {
 						ach(16329),	-- Duck, Duck, Spruce!
 					},
 				}),
 				e(2495, {	-- Crawth
 					["crs"] = { 191736 },	-- Crawth
-					["g"] = {
+					["groups"] = {
 						ach(16441),	-- Squad Goals
 					},
 				}),
 				e(2514, {	-- Echo of Doragosa
 					["crs"] = { 190609 },	-- Echo of Doragosa
-					["g"] = {
+					["groups"] = {
 						ach(16271),	-- Mythic: Algeth'ar Academy
 						ach(17096),	-- Mythic: Algeth'ar Academy Guild Run
 					},

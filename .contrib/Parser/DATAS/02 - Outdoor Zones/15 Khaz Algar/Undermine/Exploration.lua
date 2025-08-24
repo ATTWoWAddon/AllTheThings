@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		explorationHeader({
 			-- TODO: it fire different IDs when you out of DRIVE (lower IDs) and inside it (higher IDs)?
@@ -42,4 +42,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			visit_exploration(16106,{coord={43.1,77.2,UNDERMINE}}),	-- Venturewood
 		}),
 	}),
-})));
+}));

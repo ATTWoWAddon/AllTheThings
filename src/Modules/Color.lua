@@ -115,13 +115,38 @@ local function GetNumberWithZeros(number, desiredLength)
 		return tostring(floor(number));
 	end
 end
+local SettingsPrecision, UseMoreColors
 local function GetPercentageTextDefault(percent)
-	return " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)";
+	return " (" .. GetNumberWithZeros(percent * 100, SettingsPrecision) .. "%)";
 end
 local function GetPercentageEmpty(percent)
 	return " ";
 end
 local GetPercentageText = GetPercentageTextDefault;
+local TooltipSettingsSwaps = {
+	Precision = function(value) SettingsPrecision = value end,
+	UseMoreColors = function(value) UseMoreColors = value end,
+	["Show:Remaining"] = function(value)
+		GetProgressText = value and GetProgressTextRemaining or GetProgressTextDefault
+	end,
+	["Show:Percentage"] = function(value)
+		GetPercentageText = value and GetPercentageTextDefault or GetPercentageEmpty
+	end,
+}
+app.AddEventHandler("OnStartup", function()
+	for k, v in pairs(TooltipSettingsSwaps) do
+		v(app.Settings:GetTooltipSetting(k))
+	end
+end)
+app.AddEventHandler("Settings.OnSet", function(container, key, value)
+	if container == "Tooltips" then
+		local func = TooltipSettingsSwaps[key]
+		if func then
+			func(value)
+			app.CallbackEvent("OnRenderDirty")
+		end
+	end
+end)
 
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
@@ -164,12 +189,6 @@ api.GetProgressText = function(...)
 	-- NOTE: This is so you can cache the function externally and not lose the ability to swap the behaviour.
 	return GetProgressText(...);
 end
-api.SetShowPercentageText = function(setShowPercentageText)
-	GetPercentageText = setShowPercentageText and GetPercentageTextDefault or GetPercentageEmpty;
-end
-api.SetShowRemainingText = function(showRemainingText)
-	GetProgressText = showRemainingText and GetProgressTextRemaining or GetProgressTextDefault;
-end
 
 -- TODO: Convert these to module locals. (meaning api scoped)
 local containsAny, contains = app.containsAny, app.contains;
@@ -195,7 +214,7 @@ app.TryColorizeName = function(group, name)
 	-- elseif group.isBreadcrumb then
 	-- 	return Colorize(name, colors.Breadcrumb);
 	-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_DEBUG_OR_ACCOUNT)
+	elseif UseMoreColors --and (app.MODE_DEBUG_OR_ACCOUNT)
 	then
 		-- class color
 		if group.classID then

@@ -6,7 +6,9 @@ COLLECTORS_EDITION = createHeader({
 	icon = [[~_.asset("Promotion_Collector")]],
 	text = {
 		en = "Collector's Edition",
+		es = "Edición de coleccionista",
 		fr = "Edition Collector",
+		mx = "Edición de coleccionista",
 		ru = "Коллекционное издание",
 		cn = "典藏版",
 		tw = "典藏版",
@@ -17,6 +19,8 @@ HEROIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = "Heroic Edition",
+		es = "Edición Heroica",
+		mx = "Edición Heroica",
 		cn = "英雄礼包",
 		tw = "英雄版",
 	},
@@ -26,6 +30,8 @@ EPIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
 		en = "Epic Edition",
+		es = "Edición Épica",
+		mx = "Edición Épica",
 		cn = "史诗礼包",
 		tw = "史詩版",
 	},
@@ -35,7 +41,9 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
 		en = "TBC Classic Deluxe Edition",
+		es = "Edición TBC Classic Deluxe",
 		fr = "Édition BC Classic Deluxe",
+		mx = "Edición TBC Classic Deluxe",
 		cn = "燃烧的远征经典怀旧服典藏包",
 		tw = "燃燒的遠征：經典版 - 豪華版",
 	},
@@ -45,6 +53,8 @@ WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_WOTLK")]],
 	text = {
 		en = "WotLK Classic Northrend Upgrade",
+		es = "Pack Heroic Rasganorte WotLK Classic",
+		mx = "Paquete heroico Rasganorte WotLK Classic",
 		tw = "巫妖王之怒：經典版 - 北裂境升級",
 	},
 });
@@ -53,6 +63,8 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {
 		en = "Cata Classic Blazing Upgrade",
+		es = "Pack Heroic llameante de Cataclysm Classic",
+		mx = "Paquete heroico abrasador de Cataclysm Classic",
 		tw = "浩劫與重生：經典版 - 熾炎升級",
 	},
 });
@@ -61,6 +73,8 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 	icon = [[~_.asset("Expansion_MOP")]],
 	text = {
 		en = "MoP Classic Sha-Infused Heroic Pack",
+		es = "Pack Heroic imbuido de sha",
+		mx = "Paquete heroico infundido por los sha",
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
 });
@@ -69,11 +83,19 @@ MIDNIGHT_TEMPORARY = createHeader({
 	icon = [[~_.asset("Expansion_MD")]],
 	text = {
 		en = "Midnight",
+		-- es = "Midnight",
+		-- mx = "Midnight",
+		-- de = "Midnight",
+		-- fr = "Midnight",
+		-- it = "Midnight",
+		-- pt = "Midnight",
+		-- ru = "Midnight",
+		ko = "한밤",
 		cn = "至暗之夜",
 		-- tw = "至暗之夜",
 	},
 	description = {
-		en = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+		en = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga.",
 	};
 });
 WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
@@ -184,6 +206,7 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 		en = "These rewards are available to anyone who purchased the Spoils of War Edition of Warcraft III: Reforged.",
 	},
 });
+
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
@@ -305,8 +328,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["groups"] = {
 			n(QUESTS, {
 				q(63450, {	-- A Deluxe Delivery (Landro Longshot)
-					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
+					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
 					["maps"] = {
 						THE_EXODAR,
@@ -328,7 +351,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						17630,	-- Innkeeper Jovia <Innkeeper>
 					},
 					["groups"] = {
-						i(184865),	-- Reawakened Phase-Hunter
+						i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
 						i(184871),	-- Dark Portal
 						i(38233),	-- Path of Illidan
 					},
@@ -356,7 +379,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
-			["g"] = {
+			["groups"] = {
 				i(198665),	-- Pebble's Pebble
 				i(198647),	-- Fishspeaker's Lucky Lure (TOY!)
 				ach(16332, {	-- The Perfect Pebble
@@ -387,8 +410,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70448,	-- Elite Northrend Expedition Supplies [Epic]
-			["g"] = {
-				i(192455),	-- Kalu'ak Whalebone Glider
+			["groups"] = {
+				i(192455),	-- Kalu'ak Whalebone Glider (MOUNT!)
 			},
 		}),
 	})),
@@ -396,8 +419,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
-			["g"] = {
-				mount(370770),	-- Tuskarr Shoreglider
+			["groups"] = {
+				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
 			},
 		}),
 	})),
@@ -413,7 +436,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_4_2 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
-			["g"] = {
+			["groups"] = {
 				mount(423869),	-- Avatar of Flame (MOUNT!)
 				i(209945),	-- Lil' Wrathion (PET!)
 
@@ -475,7 +498,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
-			["g"] = {
+			["groups"] = {
 				i(210008),	-- Runebound Firelord (MOUNT!)
 				i(210964),	-- Lil' Wrathion (PET!)
 			},
@@ -495,7 +518,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_4_4_2, REMOVED_5_5_2 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
-			["g"] = {
+			["groups"] = {
 				mount(473487),		-- Sha-Touched Cloud Serpent
 				mount(473478),		-- Sha-Touched Riding Tiger
 				--i(xxxxxx),	-- Joyous Pet (PET!)
@@ -511,22 +534,38 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
-			["g"] = {
+			["groups"] = {
 				i(235286),	-- Sha-Warped Cloud Serpent (MOUNT!)
 				i(235287),	-- Sha-Warped Riding Tiger (MOUNT!)
 				i(235358),	-- Merriment (PET!)
 				i(235288),	-- Sha-Warped Tea Set (TOY!)
-				-- Ensemble: Stormstout's Sha-Warped Collection transmog
-				-- TODO: added in MoP Classic Prepatch
+				iensemble(238050, {	-- Ensemble: Stormstout's Sha-Warped Collection
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 			},
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_7,
+			-- #else
+			ADDED_5_4_7,
+			-- #endif
+			REMOVED_6_2_2,
+		}
+	}, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["groups"] = {
-			ach(8917),	-- Collector's Edition: Dread Hatchling
-			ach(8916),	-- Collector's Edition: Dread Raven
+			-- #if BEFORE 10.1.0
+			ach(8917, {	-- Collector's Edition: Dread Hatchling
+				["provider"] = { "i", 109014 },	-- Dread Hatchling
+			}),
+			ach(8916, {	-- Collector's Edition: Dread Raven
+				["provider"] = { "i", 109013 },	-- Dread Raven
+			}),
+			-- #endif
 			i(109014),	-- Dread Hatchling (PET!)
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
@@ -554,16 +593,16 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7, REMOVED_9_2_5 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",
-			["g"] = {
+			["groups"] = {
 				ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
 					-- ["provider"] = { "s", }	-- TODO maybe have a spell provider?
 				}),
 				mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
 				n(QUESTS, {
 					q(57686, {	-- The Eternal Traveler
+						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
-						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["groups"] = {
 							i(172954),	-- Echo of Mortality (QI!)
 							i(172075),	-- Eternal Traveler's Guise
@@ -582,7 +621,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Shadowlands Epic Edition.",
-			["g"] = {
+			["groups"] = {
 				pet(2779),	-- Anima Wyrmling (PET!)
 				i(172179),	-- Eternal Traveler's Hearthstone (TOY!)
 				i(172177),	-- Illusion: Wraithchill (ILLUSION!)
@@ -592,7 +631,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
-			["g"] = {
+			["groups"] = {
 				pet(3177, {	-- Drakks (PET!)
 					["description"] = "This is a pre-order bonus only available before the launch of Dragonflight.",
 					["timeline"] = { REMOVED_10_0_2 },
@@ -607,7 +646,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Epic Edition.",
-			["g"] = {
+			["groups"] = {
 				i(193588),	-- Timewalker's Hearthstone (TOY!)
 				i(188257),	-- Azure Wings of Awakening
 				i(188258),	-- Bronze Wings of Awakening
@@ -618,14 +657,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
-			["g"] = {
+			["groups"] = {
 				mount(417888),	-- Algarian Stormrider (MOUNT!)
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
-				iensemble(209336, {	-- Ensemble: Stormrider's Attire
-				}),
+				iensemble(209336),	-- Ensemble: Stormrider's Attire
 				skyriding(n(DRAGONRIDING_RACING, {
 					n(ACHIEVEMENTS, {
 						ach(18928, {	-- Storm Rider: Bronze
@@ -660,7 +698,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 								18921,	-- Tyrhold Trial Storm Gryphon: Gold
 								18918,	-- Vakthros Ascent Storm Gryphon: Gold
 							}},
-							["g"] = {
+							["groups"] = {
 								title(520),	-- The Storm Rider <Name>
 							},
 						}),
@@ -673,17 +711,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["DisablePartySync"] = true,
 						}),
 						q(77815, {	-- The Storm Race Tour
+							["sourceQuest"] = 77813,	-- Lightning Strikes
 							["provider"] = { "n", 193359 },	-- Lord Andestrasz
 							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
-							["sourceQuest"] = 77813,	-- Lightning Strikes
-							["g"] = {
+							["groups"] = {
 								iensemble(209417),	-- Ensemble: Thundering Stormrider's Attire
 							},
 						}),
 						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
 							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
-							["g"] = {
+							["groups"] = {
 								i(220737),	-- Storm Spirit (QI!)
 								i(220710),	-- Champion Stormrider's Boots
 								i(220709),	-- Champion Stormrider's Breastplate
@@ -715,9 +753,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							},
 						})),
 						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Stormrider's Honors [Khaz Algar Version]
-							-- Pops on login directs you to quest 83024
 							["lockCriteria"] = { 1, "questID", 83024 },	-- The Stormrider's Bond [Khaz Algar Version]
 							["DisablePartySync"] = true,
+							-- Pops on login directs you to quest 83024
 						})),
 						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
 							["provider"] = { "n", 225347 },	-- Stormrider Bruelda
@@ -731,7 +769,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							},
 							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
-							["g"] = {
+							["groups"] = {
 								i(220708),	-- Frenzied Stormrider's Breastplate
 								i(220706),	-- Frenzied Stormrider's Buckle
 								i(220705),	-- Frenzied Stormrider's Epaulets
@@ -757,7 +795,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77793, {	-- Crystal Circuit - Storm Gryphon
 							["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 							["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
-							["g"] = {
+							["groups"] = {
 								ach(18925),	-- Crystal Circuit Storm Gryphon: Bronze
 								ach(18926),	-- Crystal Circuit Storm Gryphon: Silver
 								ach(18927),	-- Crystal Circuit Storm Gryphon: Gold
@@ -766,7 +804,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77785, {	-- Fen Flythrough - Storm Gryphon
 							["provider"] = { "n", 191121 },	-- Bronze Timekeeper
 							["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
-							["g"] = {
+							["groups"] = {
 								ach(18913),	-- Fen Flythrough Storm Gryphon: Bronze
 								ach(18914),	-- Fen Flythrough Storm Gryphon: Silver
 								ach(18915),	-- Fen Flythrough Storm Gryphon: Gold
@@ -775,7 +813,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77777, {	-- Ruby Lifeshrine Loop - Storm Gryphon
 							["provider"] = { "n", 190123 },	-- Bronze Timekeeper
 							["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
-							["g"] = {
+							["groups"] = {
 								ach(18910),	-- Ruby Lifeshrine Loop Storm Gryphon: Bronze
 								ach(18911),	-- Ruby Lifeshrine Loop Storm Gryphon: Silver
 								ach(18912),	-- Ruby Lifeshrine Loop Storm Gryphon: Gold
@@ -784,7 +822,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77787, {	-- Stormsunder Crater Circuit - Storm Gryphon
 							["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 							["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-							["g"] = {
+							["groups"] = {
 								ach(18922),	-- Stormsunder Crater Circuit Storm Gryphon: Bronze
 								ach(18923),	-- Stormsunder Crater Circuit Storm Gryphon: Silver
 								ach(18924),	-- Stormsunder Crater Circuit Storm Gryphon: Gold
@@ -793,7 +831,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77784, {	-- Tyrhold Trial - Storm Gryphon
 							["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 							["coord"] = { 57.2, 66.9, THALDRASZUS },
-							["g"] = {
+							["groups"] = {
 								ach(18919),	-- Tyrhold Trial Storm Gryphon: Bronze
 								ach(18920),	-- Tyrhold Trial Storm Gryphon: Silver
 								ach(18921),	-- Tyrhold Trial Storm Gryphon: Gold
@@ -802,7 +840,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						dragonridingrace(77786, {	-- Vakthros Ascent - Storm Gryphon
 							["provider"] = { "n", 192115 },	-- Bronze Timekeeper
 							["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
-							["g"] = {
+							["groups"] = {
 								ach(18916),	-- Vakthros Ascent Storm Gryphon: Bronze
 								ach(18917),	-- Vakthros Ascent Storm Gryphon: Silver
 								ach(18918),	-- Vakthros Ascent Storm Gryphon: Gold
@@ -814,14 +852,14 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
-			["g"] = {
+			["groups"] = {
 				ach(19030),	-- Squally
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(208751),	-- Squally (PET!)
 				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Gryphons of a Feather
 					["provider"] = { "n", 209681 },	-- Squally
-					["g"] = {
+					["groups"] = {
 						i(224259),	-- Flash (PET!)
 						i(224261),	-- Gale (PET!)
 						i(224260),	-- Thundo (PET!)
@@ -830,31 +868,73 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
+	n(MIDNIGHT_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
+		n(HEROIC_EDITION, {
+			["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+			["groups"] = {
+				iensemble(248249),	-- Lightstider Raiment
+				i(243020),	-- Lightwing Dragonhawk (MOUNT!)
+			},
+		}),
+		n(EPIC_EDITION, {
+			["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+			["groups"] = {
+				i(243063),	-- Doomfeathers (PET!)
+				i(243062),	-- Hopeflutter (PET!)
+				i(245610),	-- Voidlight Surger
+				iensemble(248974),	-- Voidstrider Raiment
+				i(243019),	-- Voidwing Dragonhawk (MOUNT!)
+			},
+		}),
+	})),
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
 		["description"] = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
 		["groups"] = {
-			mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+			i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+			i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		},
 	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
+	n(DIABLO_III, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			REMOVED_5_4_7,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062, {	-- Fetish Shaman (PET!)
-				["timeline"] = { CREATED_4_3_0, ADDED_5_0_4 },
+				["timeline"] = {
+					CREATED_4_3_0,
+					-- #if NOT ANYCLASSIC
+					ADDED_5_0_4,
+					REMOVED_5_4_7,
+					-- #endif
+				},
 			}),
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_2 } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_2,
+			-- #else
+			ADDED_5_4_2,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
@@ -871,22 +951,38 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
 		["groups"] = {
-			ach(11064),	-- Collector's Edition: Baby Winston
 			i(134047),	-- Baby Winston (PET!)
+			ach(11064),	-- Collector's Edition: Baby Winston
 		},
 	})),
-	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 } }, {
+	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_3_5,
+			-- #else
+			ADDED_3_3_5,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
-	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
-			ach(7842),	-- Collector's Edition: Baneling
 			i(90177),	-- Baneling (PET!)
+			ach(7842),	-- Collector's Edition: Baneling
 		},
 	})),
 	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {

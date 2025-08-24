@@ -14,11 +14,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72762, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72117 },	-- Cultural Exchange [Renown 3]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72117, {	-- Cultural Exchange
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200551),	-- Comfortable Pile of Pelts (TOY!)
 							i(198402),	-- Maruuk Cooking Pot (TOY!)
 							i(200550),	-- Very Comfortable Pelt (TOY!)
@@ -86,10 +86,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72763, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71229 },	-- Call of the Plains [Renown 4]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -111,10 +111,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72761, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71231 },	-- Call of the Hunt [Renown 5]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -122,7 +122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71058, {	-- Observing the Wind
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(197630, {	-- Windborne Velocidrake: Feathered Neck (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71060, {	-- To Adorn Your Head
 						["provider"] = { "n", 195547 },	-- Farrier Rondare
 						["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200483),	-- Nokhud Battle Helm
 							i(200490),	-- Nokhud Reaver's Helm
 							i(200486),	-- Ohn'ir Dayligt Visor
@@ -161,11 +161,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72764, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -177,11 +177,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72765, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -193,11 +193,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72766, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71067, {	-- Whistling Rocks
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200613),	-- Aylaag Windstone Fragment
 						},
 					}),
@@ -221,11 +221,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72767, {	-- Sharing the Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71073 },	-- Mantle of Friendship [Renown 13]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71073, {	-- Mantle of Friendship
 						["provider"] = { "n", 195547 },	-- Farrier Rondare
 						["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200499),	-- Nokhud Battle Shoulderpads
 							i(200501),	-- Nokhud Reaver's Shoulderpads
 							i(200497),	-- Shikaar Hunter's Shoulderpads
@@ -247,17 +247,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71074, {	-- Befriending Wings and Wind
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(194885),	-- Ohuna Perch (TOY!)
 						},
 					}),
 					q(72131, {	-- Overstocking
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71074 },	-- Befriending Wings and Wind [Renown 14]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -265,7 +265,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = LEATHERWORKING,
-						["g"] = {
+						["groups"] = {
 							i(201713),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -273,7 +273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = SKINNING,
-						["g"] = {
+						["groups"] = {
 							i(201714),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = ALCHEMY,
-						["g"] = {
+						["groups"] = {
 							i(201706),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -289,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = BLACKSMITHING,
-						["g"] = {
+						["groups"] = {
 							i(201708),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = HERBALISM,
-						["g"] = {
+						["groups"] = {
 							i(201705),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71075, {	-- Understanding Their Grace
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(197587, {	-- Windborne Velocidrake: Feathered Back (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -325,11 +325,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72768, {	-- Our Great Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71079 },	-- Getting to the Point [Renown 17]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -337,7 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71079, {	-- Getting to the Point
 						["provider"] = { "n", 195529 },	-- Weaponmaster Aloom
 						["coord"] = { 62.4, 42.3, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(201159),	-- Aloom's Token
 						},
 					}),
@@ -345,11 +345,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72770, {	-- Our Great Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71083 },	-- An Expected Unexpected Gift [Renown 19]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -357,7 +357,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71083, {	-- An Expected Unexpected Gift
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(197011),	-- Cliffside Wylderdrake: Green Scales (MM!)
 							i(197143),	-- Highland Drake: Green Scales (MM!)
 							i(197389),	-- Renewed Proto-Drake: Green Scales (MM!)
@@ -374,11 +374,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72771, {	-- Our Great Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71085 },	-- Representation Matters [Renown 21]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -386,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71085, {	-- Representation Matters
 						["provider"] = { "n", 195547 },	-- Farrier Rondare
 						["coord"] = { 62.5, 42.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200546),	-- Clan Nokhud Pennant
 							i(200547),	-- Clan Ohn'ir Pennant
 							i(200545),	-- Clan Shikaar Pennant
@@ -401,11 +401,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72772, {	-- Our Great Bounty
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 71089 },	-- Get on the Horn [Renown 23]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
 					}),
@@ -413,7 +413,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71089, {	-- Get on the Horn
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(194099),	-- Shikaar Hunting Horn
 						},
 					}),
@@ -426,7 +426,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = LEATHERWORKING,
-						["g"] = {
+						["groups"] = {
 							i(201713),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -434,7 +434,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = ALCHEMY,
-						["g"] = {
+						["groups"] = {
 							i(201706),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -442,7 +442,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = BLACKSMITHING,
-						["g"] = {
+						["groups"] = {
 							i(201708),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -450,7 +450,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = HERBALISM,
-						["g"] = {
+						["groups"] = {
 							i(201717),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -458,7 +458,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["requireSkill"] = SKINNING,
-						["g"] = {
+						["groups"] = {
 							i(201718),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -466,7 +466,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(71091, {	-- The Highest Honor
 						["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 						["coord"] = { 60.0, 37.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							title(473),	-- Khansguard
 							i(197921),	-- Primal Infusion
 						},
@@ -476,7 +476,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185179 },	-- Agari Dotur
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(199474, {	-- Overflowing Maruuk Centaur Supply Satchel
 								["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_7 },
 							}),

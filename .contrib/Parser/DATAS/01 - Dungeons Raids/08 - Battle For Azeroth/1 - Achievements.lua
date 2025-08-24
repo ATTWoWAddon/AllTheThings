@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				["cr"] = 141805,	-- Threshanator 3000
 			}),
 		}),
-		-- #IF BEFORE SHADOWLANDS
+		-- #if BEFORE SL
 		ach(11162),	-- Keystone Master
 		ach(11185),	-- Keystone Conqueror
 		ach(11184),	-- Keystone Challenger

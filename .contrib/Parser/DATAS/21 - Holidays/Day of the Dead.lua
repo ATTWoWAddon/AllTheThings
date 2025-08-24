@@ -20,6 +20,7 @@ DAY_OF_THE_DEAD_HEADER = createHeader({
 		fr = "Jour des morts",
 		it = "Giorno dei Morti",
 		ko = "망자의 날",
+		mx = "Festividad de los Muertos",
 		pt = "Dia dos Mortos",
 		ru = "День мертвых",
 		cn = "悼念日",
@@ -158,13 +159,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			}),
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
 				["qg"] = 35260,	-- Cheerful Aldor Spirit
-				["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 			}),
 			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
 				["qg"] = 35261,	-- Cheerful Aldor Spirit
-				["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 			}),
 			q(14174, {	-- The Grateful Dead — Tirisfal Glades, Undead
 				["qg"] = 34476,	-- Cheerful Undead Spirit
@@ -233,7 +234,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(46860, {	-- Whimsical Skull Mask (Cosmetic)
 						["timeline"] = { ADDED_3_2_2 },
 						-- #if BEFORE LEGION
-						["collectible"] = false,
+						-- #if NOT COMMON_QUALITY_TRANSMOGS
+						-- NOTE: This is an event item that disappears after the end of the event. After Legion this item no longer requires any event and is upgraded from common to uncommon quality.
+						-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+						["ignoreSource"] = true,
+						-- #endif
 						-- #endif
 					}),
 					i(79048, {	-- Whimsical Skull Mask

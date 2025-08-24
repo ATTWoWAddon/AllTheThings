@@ -8,8 +8,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["groups"] = {
 			-- 2021 5th May until 5th Nov 2021
 			q(63768, {	-- Imp in a Ball
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 63767 },	-- Imp in a Ball (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -40,17 +40,17 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					6735,	-- Inkeeper Saelienne
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(32542, {	-- Imp in a Ball
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			-- 2022 13th Feb until 13th Aug 2022
 			q(65285, {	-- Goblin Gumbo Kettle
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 65284 },	-- Goblin Gumbo Kettle (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -79,17 +79,17 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(33219, {	-- Goblin Gumbo Kettle
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			-- 2022 14th July until 15th January 2023
 			q(65562, {	-- Tabard of Flame
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 65561 },	-- Tabard of Flame (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -118,12 +118,12 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(23705, {	-- Tabard of Flame
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger
 				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
@@ -135,8 +135,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_3_4_0 },
 		["groups"] = {
 			q(72523, {	-- Festering Emerald Drake [2022 11th November until 15th January 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 72522 },	-- Festering Emerald Drake (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -165,6 +165,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(201699, {	-- Festering Emerald Drake
 						["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
@@ -172,13 +173,11 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					-- Also part of 12 Month Sub. For Historys Sake
 					-- i(23705),	-- Tabard of Flame
 					-- i(200060),	-- Hopling
-
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(74941, {	-- Flurky [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 74940 },	-- Flurky (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -207,14 +206,14 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(187794),	-- Flurky
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(75492, {	-- Glub [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 75491 },	-- Glub (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -243,16 +242,16 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(204982, {	-- Glub
 						-- Description is under the 6 Months Promo?
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(70863, {	-- Hoplet [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 70862 },	-- Hoplet (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -281,13 +280,13 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(200060, {	-- Hoplet
 					-- Description is under the 12 Months Promo
 					-- ["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023 or a 6 Month WoW Subscription between 17th January 2023 until 31st July 2023.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(207097, {	-- Nightmarish Emerald Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",
@@ -309,7 +308,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 				["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",
 			})),
-			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (CN Only)
+			cnONLY(mount(1217476, {	-- Blazing Royal Fire Hawk (CN Only)
 				["description"] = "Rewarded from the Treasure Workshop.",
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 			})),
@@ -332,13 +331,27 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 	expansion(EXPANSION.CATA, {
 		["timeline"] = { ADDED_4_4_0 },
 		["groups"] = {
+			i(224002, {	-- Swoopy
+				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 9th July 2024.",
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			mount(463045, {	-- Lava Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(224002, {	-- Swoopy
-				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+			i(231312, {	-- Timbered Air Snakelet
+				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 31st January 2025.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		},
 	}),
+	expansion(EXPANSION.MOP, {
+		["timeline"] = { ADDED_5_5_0 },
+		["groups"] = {
+			pet(4850, {	-- Sa'bak's Blessed
+				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
+			}),
+		},
+	})
 	-- #endif
 }));

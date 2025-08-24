@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{ 63.2, 55.7, ZARALEK_CAVERN },
 				},
 				["cost"] = { { "i", 205686, 1 } },	-- 1x Clacking Claw
-				["g"] = {
+				["groups"] = {
 					i(205021),	-- Lord Stantley (PET!)
 				},
 			}),
@@ -24,10 +24,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			o(398698, {	-- Squeaking Swiss
 				["coord"] = { 52.4, 26.8, ZARALEK_CAVERN },
 				["questID"] = 75648,
-				["g"] = {
+				["groups"] = {
 					i(204871, {	-- Recipe Rat
 						["cost"] = { { "i", 3927, 20 } },	-- 20x Fine Aged Cheddar
-						["g"] = {
+						["groups"] = {
 							i(204872),	-- Ripped Recipe Scrap
 						},
 					}),

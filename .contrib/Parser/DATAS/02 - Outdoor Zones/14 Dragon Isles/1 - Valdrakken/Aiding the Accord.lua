@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 50.7, 58.0, VALDRAKKEN },
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
-				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR }
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR },
 			},{
 				q(70750),	-- Aiding the Accord
 				q(72068),	-- Aiding the Accord: A Feast For All
@@ -48,30 +48,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
 				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Emerald Dream
-					i(217111),	-- Cache of Awakened Dreams
 					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
 						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
 						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
 					})),
+					i(217111),	-- Cache of Awakened Dreams
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
-					i(217110),	-- Cache of Awakened Embers
 					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
 						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
 						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
 					})),
+					i(217110),	-- Cache of Awakened Embers
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Dragon Isles
-					i(217109),	-- Cache of Awakened Storms
 					TempForceMisc(i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
 						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
 						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
 					})),
+					i(217109),	-- Cache of Awakened Storms
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 			})),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						{"pop"},
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
-					["g"] = {
+					["groups"] = {
 						i(202171),	-- Dragon Purse
 						i(202172),	-- Overflowing Satchel of Coins
 					},

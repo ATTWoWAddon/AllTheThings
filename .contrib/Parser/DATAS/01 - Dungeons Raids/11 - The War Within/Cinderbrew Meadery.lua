@@ -5,12 +5,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	inst(1272, {	-- Cinderbrew Meadery
 		["coord"] = { 76.6, 43.8, ISLE_OF_DORN },
 		["maps"] = { 2335 },	-- Cinderbrew Meadery
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(83099, {	-- Mergers and Acquisitions
-					["providers"] = {
-						{ "n", 216088 },	-- Wenbrandt
-						{ "n", 226409 },	-- Wenbrandt
+					["qgs"] = {
+						216088,	-- Wenbrandt
+						226409,	-- Wenbrandt
 					},
 					["coords"] = {
 						{ 50, 50, 2335 },	-- Cinderbrew Meadery
@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2586, {	-- Brew Master Aldryr
 					["crs"] = { 210271 },	-- Brew Master Aldryr
-					["g"] = {
+					["groups"] = {
 						i(221053),	-- Battle-Scarred Fisticuffs
 						i(221054),	-- Chef Chewie's Towel
 						i(219297),	-- Cinderbrew Stein
@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2588, {	-- Benk Buzzbee
 					["crs"] = { 218002 },	-- Benk Buzzbee <Beekeeper>
-					["g"] = {
+					["groups"] = {
 						i(221201),	-- Fireproof Cinderbee Perch
 						i(221064),	-- Fuzzy Cindercuffs
 						i(221063),	-- Hivebreaker's Dipper
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2587, {	-- I'pa
 					["crs"] = { 210267 },	-- I'pa
-					["g"] = {
+					["groups"] = {
 						i(221058),	-- Brewery Toiler's Waistband
 						i(221055),	-- Cinderbrew-Soaked Cowl
 						i(221061),	-- Hops-Laden Greatboots
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 214661 },	-- Goldie Baronbottom <BEE.E.O.>
-					["g"] = {
+					["groups"] = {
 						ach(40361),	-- Cinderbrew Meadery
 						i(223155),	-- Bop (PET!)
 						i(223102),	-- Pattern: Busy Bee's Buckle (RECIPE!)
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
-					["g"] = {
+					["groups"] = {
 						ach(40363),	-- Heroic: Cinderbrew Meadery
 					},
 				}),
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
-					["g"] = {
+					["groups"] = {
 						ach(40366),	-- Mythic: Cinderbrew Meadery
 					},
 				}),

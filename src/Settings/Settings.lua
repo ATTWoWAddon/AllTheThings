@@ -1,21 +1,5 @@
 local appName, app = ...
 
--- Temporarily attach the settings menu's locales to L.
-local appL = app.L;
-setmetatable(appL.SETTINGS_MENU, {
-	__index = function(t, key)
-		local str = appL[key];
-		if str then
-			--print("SETTINGS_MENU", key);
-			t[key] = str;
-			return str;
-		else
-			print("SETTINGS_MENU", key, "missing reference");
-			return "INVALID LOCALIZATION";
-		end
-	end
-});
-
 -- Create the settings container.
 -- TODO: Investigate if this needs to be a frame or if it can be something else.
 local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer)
@@ -27,6 +11,7 @@ settings:Hide();
 settings.AccountWide = setmetatable({
 	Achievements = true,
 	BattlePets = true,
+	Campsites = true,
 	DeathTracker = true,
 	Exploration = true,
 	FlightPaths = true,
@@ -66,20 +51,23 @@ settings.Collectibles = {
 };
 settings.ForceAccountWide = {
 	BattlePets = true,
-	MountMods = true,
+	Campsites = true,
 	FlightPaths = app.GameBuildVersion >= 110000,
 	Heirlooms = true,
 	Illusions = true,
+	MountMods = true,
 	Mounts = true,
 	RuneforgeLegendaries = true,
 	Toys = true,
 	Transmog = true,
-	--WarbandScene = app.GameBuildVersion >= 110100,
 }
+
+-- INSANE MODE
 settings.RequiredForInsaneMode = {
 	Achievements = true,
 	AzeriteEssences = app.GameBuildVersion >= 80000,
 	BattlePets = true,
+	Campsites = app.GameBuildVersion >= 110100,
 	CharacterUnlocks = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 	Conduits = app.GameBuildVersion >= 100000,
 	DeathTracker = app.IsClassic,
@@ -95,17 +83,41 @@ settings.RequiredForInsaneMode = {
 	Recipes = true,
 	Reputations = true,
 	RuneforgeLegendaries = app.GameBuildVersion >= 90000,
-	Skyriding = app.GameBuildVersion >= 100000,
 	Titles = true,
 	Toys = true,
 	Transmog = app.GameBuildVersion >= 40000,
-	--WarbandScene = app.GameBuildVersion >= 110100,
+}
+
+-- RANKED MODE
+settings.RequiredForRankedMode = {
+	Achievements = true,
+	BattlePets = true,
+	Heirlooms = app.GameBuildVersion >= 30000,
+	Illusions = app.GameBuildVersion >= 70000,
+	Mounts = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	Titles = true,
+	Toys = true,
+	Transmog = app.GameBuildVersion >= 40000,
+}
+
+-- CORE MODE
+settings.RequiredForCoreMode = {
+	BattlePets = true,
+	Campsites = app.GameBuildVersion >= 110100,
+	Heirlooms = app.GameBuildVersion >= 30000,
+	Illusions = app.GameBuildVersion >= 70000,
+	Mounts = true,
+	Toys = true,
+	Transmog = app.GameBuildVersion >= 40000,
 }
 
 if app.GameBuildVersion >= 90000 then
 	-- In this version, also include Convenants
-	-- Returns true if something is being hidden/filtered and removing Insane status
-	settings.NonInsane = function(self)
+	-- Returns true if something is being hidden/filtered and removing any Mode status
+	settings.NonMode = function(self)
 		-- Non-Account Mode with Covenants filtered
 		if not self:Get("AccountMode") then
 			local currentCharacter = app.CurrentCharacter;
@@ -141,7 +153,7 @@ if app.GameBuildVersion >= 90000 then
 	end
 else
 	-- Returns true if something is being hidden/filtered and removing Insane status
-	settings.NonInsane = function(self)
+	settings.NonMode = function(self)
 		return
 		-- Hiding BoE's
 		self:Get("Hide:BoEs")

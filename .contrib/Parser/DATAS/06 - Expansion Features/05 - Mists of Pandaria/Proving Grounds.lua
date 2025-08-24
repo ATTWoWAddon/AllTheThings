@@ -8,10 +8,10 @@ PROVING_GROUNDS = createHeader({
 		en = [[~TRACKER_HEADER_PROVINGGROUNDS]],
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9572),	-- Proving Yourself: Bronze Damage
 				ach(9573),	-- Proving Yourself: Silver Damage
@@ -102,10 +102,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 		n(PROVING_GROUNDS, {
 			q(33089),	-- FLAG - Proving Grounds - Damage Bronze
 			q(33091),	-- FLAG - Proving Grounds - Damage Gold
@@ -117,8 +117,8 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(33094),	-- FLAG - Proving Grounds - Tank Gold
 			q(33093),	-- FLAG - Proving Grounds - Tank Silver
 		}),
-	})),
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+	}))),
+	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 		n(PROVING_GROUNDS, {
 			q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 			q(37214),	-- FLAG - Proving Grounds - Damage Gold
@@ -130,5 +130,5 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(37217),	-- FLAG - Proving Grounds - Tank Gold
 			q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		}),
-	})),
+	}))),
 });

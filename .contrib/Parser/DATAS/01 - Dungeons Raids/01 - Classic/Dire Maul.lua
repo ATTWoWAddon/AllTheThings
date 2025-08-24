@@ -47,7 +47,7 @@ CAPITAL_GARDENS = createHeader({
 	},
 });
 local DIREMAUL_SUBMAP = function(mapID, headerID, t)
-	t.creatureID = headerID;
+	t.headerID = headerID;
 	local oldMaps = t.maps;
 	if oldMaps then
 		local maps = {};
@@ -65,22 +65,22 @@ local DIREMAUL_SUBMAP = function(mapID, headerID, t)
 	return m(mapID, t);
 end
 local WARPWOOD_QUARTER_MAPS = {
-	239,	-- Warpwood Quarter (main)
+	DIRE_MAUL_WARPWOOD_QUARTER,
 };
 local GORDOK_COMMONS_MAPS = {
-	235,	-- Gordok Commons (main)
+	DIRE_MAUL_GORDOK_COMMONS,
 };
 local CAPITAL_GARDENS_MAPS = {
-	236,	-- Capital Gardens (main)
-	237,	-- Court of the Highborne
-	238,	-- Prison of Immol'Thar
+	DIRE_MAUL_CAPITAL_GARDENS,
+	DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
+	DIRE_MAUL_PRISON_OF_IMMOLTHAR,
 };
 local ALL_DIREMAUL_MAPS = {
-	239,	-- Warpwood Quarter (main)
-	235,	-- Gordok Commons (main)
-	236,	-- Capital Gardens (main)
-	237,	-- Court of the Highborne
-	238,	-- Prison of Immol'Thar
+	DIRE_MAUL_WARPWOOD_QUARTER,
+	DIRE_MAUL_GORDOK_COMMONS,
+	DIRE_MAUL_CAPITAL_GARDENS,
+	DIRE_MAUL_COURT_OF_THE_HIGHBORNE,
+	DIRE_MAUL_PRISON_OF_IMMOLTHAR,
 };
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
@@ -124,11 +124,12 @@ local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, bubbleDown({ ["timeline"] = { ADDED_1_2_0 } }, {
 	inst(230, {	-- Dire Maul
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
+		-- #if BEFORE MOP
 		["zone-text-areas"] = {
 			2557,	-- Dire Maul
 			3217,	-- "The Maul" now points to Dire Maul.
@@ -137,37 +138,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			4992,	-- "Broken Commons" now points to Dire Maul.
 			-- #endif
 		},
+		-- #endif
 		["maps"] = {
 			DIRE_MAUL,
-			240,	-- The Shrine of Eldretharr?
+			DIRE_MAUL_SHRINE_OF_ELDRETHARR,
 		},
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+					-- #if BEFORE WRATH
+					["icon"] = 133736,	-- CRIEVE NOTE: The other icon doesn't exist in the game files yet
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				ach(644, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- King of Dire Maul
+				ach(644, {	-- King of Dire Maul
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
-					["groups"] = {
-						crit(545, {	-- Alzzin the Wildshaper
-							["_npcs"] = { 11492 },	-- Alzzin the Wildshaper
-						}),
-						crit(546, {	-- Immol'thar
-							["_npcs"] = { 11496 },	-- Immol'thar
-						}),
-						-- #if ANYCLASSIC
-						crit(547, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #else
-						crit(18535, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #endif
-					},
-				})),
+				}),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -200,9 +188,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
-					["provider"] = { "o", 179485 },	-- A Broken Trap
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = GORDOK_COMMONS_MAPS,
 					-- #if BEFORE 4.0.3
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
@@ -210,11 +195,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 3829, 1 },	-- Frost Oil
 					},
 					-- #endif
+					["provider"] = { "o", 179485 },	-- Broken Trap
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(56, 56, 15),
 				}),
 				q(27118, {	-- A Broken Trap
-					["provider"] = { "o", 179485 },	-- A Broken Trap
+					["description"] = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
+					["provider"] = { "o", 179485 },	-- Broken Trap
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
@@ -320,17 +309,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7631, {	-- Dreadsteed of Xoroth
+					["sourceQuest"] = 7629,	-- Imp Delivery
 					["providers"] = {
 						{ "n", 14436 },	-- Mor'zul Bloodbringer
 						{ "i", 18818 },	-- Mor'zul's Instructions
 					},
-					["sourceQuest"] = 7629,	-- Imp Delivery
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
-					["group"] = {
+					["groups"] = {
 						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							["timeline"] = { REMOVED_4_0_3 },
@@ -370,12 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["requireSkill"] =
-						-- #if AFTER TBC
-						BLACKSMITHING,
-						-- #else
-						9788,	-- Armorsmith
-						-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = {
 						236,	-- Capital Gardens
 						BLACKROCK_SPIRE,
@@ -386,11 +370,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18779, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume I
 						{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 					},
+					["requireSkill"] =
+						-- #if AFTER TBC
+						BLACKSMITHING,
+						-- #else
+						9788,	-- Armorsmith
+						-- #endif
 					["groups"] = {
 						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
@@ -404,21 +393,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = {
+						236,	-- Capital Gardens
+						STRATHOLME, SCHOLOMANCE
+					},
+					["cost"] = {
+						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
+						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
+					},
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,
 						-- #else
 						9788,	-- Armorsmith
 						-- #endif
-					["maps"] = {
-						236,	-- Capital Gardens
-						STRATHOLME, SCHOLOMANCE
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
-						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
-					},
 					["lvl"] = 50,
 					["groups"] = {
 						i(12726, {	-- Plans: Enchanted Thorium Leggings (RECIPE!)
@@ -433,12 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["requireSkill"] =
-						-- #if AFTER TBC
-						BLACKSMITHING,
-						-- #else
-						9788,	-- Armorsmith
-						-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -449,11 +433,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_CHAMBER_OF_BATTLE,
 						STRATHOLME
 					}),
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III
 						{ "i", 18784, 1 },	-- Top Half of Advanced Armorsmithing: Volume III
 					},
+					["requireSkill"] =
+						-- #if AFTER TBC
+						BLACKSMITHING,
+						-- #else
+						9788,	-- Armorsmith
+						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
 						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
@@ -479,22 +468,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 54,
 				}),
 				q(5525, {	-- Free Knot!
-					["qg"] = 14338,	-- Knot Thimblejack
 					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
+					["qg"] = 14338,	-- Knot Thimblejack
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 54,
 				}),
 				q(7429, {	-- Free Knot! (repeatable)
-					["qg"] = 14338,	-- Knot Thimblejack
-					["sourceQuest"] = 5525,	-- Free Knot!
 					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
+					["sourceQuest"] = 5525,	-- Free Knot!
+					["qg"] = 14338,	-- Knot Thimblejack
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -617,8 +606,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7488, {	-- Lethtendris's Web [Alliance]
-					["qg"] = 7877,	-- Latronicus Moonspear
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
+					["qg"] = 7877,	-- Latronicus Moonspear
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
@@ -634,8 +623,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7489, {	-- Lethtendris's Web [Horde]
-					["qg"] = 7776,	-- Talo Thornhoof
 					["sourceQuest"] = 7492,	-- Camp Mojache
+					["qg"] = 7776,	-- Talo Thornhoof
 					["coord"] = { 76.2, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
@@ -662,11 +651,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7484, {	-- Libram of Focus
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -675,7 +665,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 4 },	-- Large Brilliant Shard
 						{ "i", 12753, 2 },	-- Skin of Shadow
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -685,11 +674,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7485, {	-- Libram of Protection
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -698,7 +688,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -708,11 +697,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7483, {	-- Libram of Rapidity
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -721,7 +711,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12938, 2 },	-- Blood of Heroes
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -892,8 +881,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5519, {	-- The Gordok Ogre Suit
-					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
+					["qg"] = 14338,	-- Knot Thimblejack
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -911,20 +900,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27119, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
+					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
 					},
 				}),
 				q(27120, {	-- The Gordok Ogre Suit
-					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
-					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = GORDOK_COMMONS_MAPS,
+					["qg"] = 14338,	-- Knot Thimblejack
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
+					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -932,8 +921,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5528, {	-- The Gordok Taste Test
-					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
+					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 56,
@@ -943,8 +932,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27114, {	-- The Gordok Taste Test
-					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
+					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -1022,8 +1011,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7461, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -1036,8 +1025,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27110, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -1050,18 +1039,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27113, {	-- The Shen'dralar Ancient
 					["qg"] = 44991,	-- Estulan
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
+					["sourceQuest"] = 7461,	-- The Madness Within
 					["providers"] = {
 						{ "n",  14358 },	-- Shen'dralar Ancient
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
-					["sourceQuest"] = 7461,	-- The Madness Within
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 57,
 					["groups"] = {
 						i(18421, {	-- Backwood Helm
@@ -1076,13 +1065,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27111, {	-- The Treasure of the Shen'dralar
+					["sourceQuest"] = 27110,	-- The Madness Within
 					["providers"] = {
 						{ "n",  14358 },	-- Shen'dralar Ancient
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
-					["sourceQuest"] = 27110,	-- The Madness Within
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						i(65949),	-- Dire Maul
@@ -1092,10 +1081,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7703, {	-- Unfinished Gordok Business
-					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
+					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["lvl"] = 60,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1110,10 +1099,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				q(27124, {	-- Unfinished Gordok Business
-					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = GORDOK_COMMONS_MAPS,
+					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18367),	-- Gordok's Gauntlets
@@ -1121,6 +1110,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						i(18366),	-- Gordok's Handguards
 						i(18369),	-- Gordok's Handwraps
 					},
+				}),
+			}),
+			n(TREASURES, {
+				o(179526, {	-- Warpwood Pod
+					i(18255),	-- Runn Tum Tuber
+					i(18297),	-- Thornling Seed
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -1264,7 +1259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 						["description"] =
 							-- #if AFTER 7.0.3
-							"Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+							"Required for the Retribution Paladin Hidden Artifact Appearance. This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
 							-- #else
 							"This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
 							-- #endif
@@ -1342,6 +1337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_10_1_5 },
 							}),
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
+							i(18255),	-- Runn Tum Tuber
 						},
 					}),
 					n(14349, {	-- Pimgib
@@ -1574,8 +1570,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					})),
 					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 						q(77194, {	-- Free Knot!
-							["qg"] = 14338,	-- Knot Thimblejack
 							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel whitout lowering your reputation with the Bloodsail Buccaneers.",
+							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = {
 								{ "i", 18250, 1 },	-- Gordok Shackle Key
 							},
@@ -1732,15 +1728,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 					e(414, {	-- Guard Slip'kik
 						["creatureID"] = 14323,
-						["provider"] = { "o", 179485 },	-- Broken Trap
-						["description"] = "Trap him using the Broken Trap.",
-						["sourceQuests"] = {
-							-- #if AFTER 4.0.3
-							27118,	-- A Broken Trap
-							-- #else
-							1193,	-- A Broken Trap
-							-- #endif
-						},
 						-- #if BEFORE 7.3.5
 						["groups"] = {
 							i(18498),	-- Hedgecutter
@@ -1977,100 +1964,96 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 						},
 					})),
-					n(14353, {	-- Mizzle the Crafty
-						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
+					o(179564, {	-- Gordok Tribute Chest
+						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.\n\nA full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
+						["qg"] = 14353,	-- Mizzle the Crafty
+						["modelScale"] = 3,
 						["groups"] = {
-							o(179564, {	-- Gordok Tribute Chest
-								["description"] = "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
-								["modelScale"] = 3,
-								["groups"] = {
-									i(18655),	-- Schematic: Major Recombobulator (RECIPE!)
-									i(18499),	-- Barrier Shield
-									i(18479),	-- Carrion Scorpid Helm
-									i(18537),	-- Counterattack Lodestone
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228065, {	-- Cyclone Spaulders
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18528, {	-- Cyclone Spaulders
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									i(18529),	-- Elemental Plate Girdle
-									i(18533),	-- Gordok Bracers of Power
-									i(18478),	-- Hyena Hide Jerkin
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228474, {	-- Mindsurge Robe
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18532, {	-- Mindsurge Robe
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									i(18476),	-- Mud Stained Boots
-									i(18475),	-- Oddly Magical Belt
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228070, {	-- Ogre Forged Hauberk
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18530, {	-- Ogre Forged Hauberk
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									i(18482),	-- Ogre Toothpick Shooter
-									i(18495),	-- Redoubt Cloak
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228484, {	-- Rod of the Ogre Magi
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18534, {	-- Rod of the Ogre Magi
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									i(18480),	-- Scarab Plate Helm
-									i(18477),	-- Shaggy Leggings
-									i(18481),	-- Skullcracking Mace
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228469, {	-- Tarnished Elven Ring
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18500, {	-- Tarnished Elven Ring
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
-										["description"] = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
-										["timeline"] = { CREATED_1_15_3 },
-									})),
-									-- #endif
-									i(18538, {	-- Treant's Bane
-										-- #if SEASON_OF_DISCOVERY
-										-- CRIEVE NOTE: There's no evidence that the reitemized version has dropped yet.
-										--["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_FOUR, i(228473, {	-- Unyielding Maul
-										["timeline"] = { ADDED_1_15_3 },
-									})),
-									-- #endif
-									i(18531, {	-- Unyielding Maul
-										-- #if SEASON_OF_DISCOVERY
-										["timeline"] = { REMOVED_1_15_3 },
-										-- #endif
-									}),
-								},
+							i(18655),	-- Schematic: Major Recombobulator (RECIPE!)
+							i(18499),	-- Barrier Shield
+							i(18479),	-- Carrion Scorpid Helm
+							i(18537),	-- Counterattack Lodestone
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228065, {	-- Cyclone Spaulders
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18528, {	-- Cyclone Spaulders
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							i(18529),	-- Elemental Plate Girdle
+							i(18533),	-- Gordok Bracers of Power
+							i(18478),	-- Hyena Hide Jerkin
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228474, {	-- Mindsurge Robe
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18532, {	-- Mindsurge Robe
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							i(18476),	-- Mud Stained Boots
+							i(18475),	-- Oddly Magical Belt
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228070, {	-- Ogre Forged Hauberk
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18530, {	-- Ogre Forged Hauberk
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							i(18482),	-- Ogre Toothpick Shooter
+							i(18495),	-- Redoubt Cloak
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228484, {	-- Rod of the Ogre Magi
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18534, {	-- Rod of the Ogre Magi
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							i(18480),	-- Scarab Plate Helm
+							i(18477),	-- Shaggy Leggings
+							i(18481),	-- Skullcracking Mace
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228469, {	-- Tarnished Elven Ring
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18500, {	-- Tarnished Elven Ring
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
+								["description"] = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
+								["timeline"] = { CREATED_1_15_3 },
+							})),
+							-- #endif
+							i(18538, {	-- Treant's Bane
+								-- #if SEASON_OF_DISCOVERY
+								-- CRIEVE NOTE: There's no evidence that the reitemized version has dropped yet.
+								--["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228473, {	-- Unyielding Maul
+								["timeline"] = { ADDED_1_15_3 },
+							})),
+							-- #endif
+							i(18531, {	-- Unyielding Maul
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_3 },
+								-- #endif
 							}),
 						},
 					}),
@@ -2090,7 +2073,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							i(18487, {	-- Pattern: Mooncloth Robe
+							i(18487, {	-- Pattern: Mooncloth Robe (RECIPE!)
 								-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
@@ -2137,11 +2120,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								11459,	-- Ironbark Protector
 								14303,	-- Petrified Guardian
 								11458,	-- Petrified Treant
-							},
-						}),
-						i(4402, {	-- Small Flame Sac
-							["crs"] = {
-								14398,	-- Eldreth Darter
 							},
 						}),
 						i(18344, {	-- Stonebark Gauntlets
@@ -2359,7 +2337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 		},
 	}),
-})));
+}))));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(230, {
 		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion

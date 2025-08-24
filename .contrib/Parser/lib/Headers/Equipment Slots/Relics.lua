@@ -10,6 +10,8 @@ RELICS = createHeader({
 		en = WOWAPI_GetItemSubClassInfo(3,11),
 		-- #else
 		en = "Relics",
+		es = "Reliquias",
+		mx = "Reliquias",
 		-- #endif
 	},
 });

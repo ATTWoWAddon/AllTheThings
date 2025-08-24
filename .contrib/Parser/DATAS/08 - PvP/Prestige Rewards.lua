@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 	["description"] = "System that was used during Legion Expansion.",
-	["g"] = {
+	["groups"] = {
 		ach(10991, {	-- First Step into a Larger World [1]
 			i(139777, {	-- Strange Crate
 				i(139775),	-- Alliance Enthusiast (PET!)
@@ -13,21 +13,21 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 		}),
 		ach(10743, {	-- The Prestige (A) [2]
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(138992, {	-- Grand Marshal's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
-					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42982, {	-- The Victor's Spoils [Alliance]
-					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
 					["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
+					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -45,7 +45,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 						42982,	-- The Victor's Spoils [Alliance]
 						42987,	-- The Victor's Spoils [Horde]
 					},
-					["sym"] = {{"select", "headerID", -5203}, {"index", 1}},
+					["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 1}},
 					["u"] = REMOVED_FROM_GAME,
 				},
 				--]]
@@ -53,21 +53,21 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 		}),
 		ach(10745, {	-- The Prestige (H) [2]
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(138996, {	-- High Warlord's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
-					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42987, {	-- The Victor's Spoils [Horde]
-					["qg"] = 109471,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 42985,	-- A Royal Audience
+					["qg"] = 109471,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
@@ -89,7 +89,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 2,	-- Crest of Heroism
-				["sym"] = {{"select", "headerID", -5203}, {"index", 2}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 2}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
@@ -113,7 +113,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 3,	-- Crest of Carnage
-				["sym"] = {{"select", "headerID", -5203}, {"index", 3}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 3}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
@@ -133,7 +133,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 4,	-- Crest of Devastation
-				["sym"] = {{"select", "headerID", -5203}, {"index", 4}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 4}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]

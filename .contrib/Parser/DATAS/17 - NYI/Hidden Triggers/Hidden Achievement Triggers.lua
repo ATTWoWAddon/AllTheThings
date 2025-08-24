@@ -2332,7 +2332,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 			ach(15992),	-- <DNT> Dragonscale Expedition Rank 01
 			ach(16022),	-- <DNT> Dragonscale Expedition Rank 02
 			ach(16023),	-- <DNT> Dragonscale Expedition Rank 03
@@ -3255,7 +3255,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
@@ -3803,10 +3803,18 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41856),	-- Faceless Mask of the Pained
 			ach(41884),	-- Faceless Mask of Vengeance
 			ach(41885),	-- Faceless Mask of Multitudes
-			ach(41930),	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-			ach(41938),	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-			ach(41946),	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-			ach(41947),	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+			ach(41930, {	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+			}),
+			ach(41938, {	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+			}),
+			ach(41946, {	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+			}),
+			ach(41947, {	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
+			}),
 			ach(41967),	-- Gift of the Titans Unlocked <Hidden>
 			-- 11.1.5.59651
 			ach(41986),	-- Highest Score
@@ -3820,6 +3828,153 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41994),	-- Total Tombstones
 			ach(42000),	-- Total Props Destroyed
 			ach(42001),	-- Total Runs Completed
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
+			-- 11.1.7.60520
+			ach(41757),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
+			ach(42213),	-- Console Overcharged Purchase 1
+			ach(42214),	-- Console Overcharged Purchase 2
+			ach(42215),	-- Console Overcharged Purchase 3
+			ach(42216),	-- Console Overcharged Purchase 4
+			ach(42217),	-- Console Overcharged Purchase 5
+			ach(42218),	-- Console Overcharged Purchase 6
+			ach(42219),	-- Console Overcharged Purchase 7
+			ach(42220),	-- Console Overcharged Purchase 8
+			ach(42221),	-- Console Overcharged Purchase 9
+			ach(42222),	-- Console Overcharged Purchase 10
+			ach(42223),	-- Console Overcharged Purchase 11
+			ach(42224),	-- Console Overcharged Purchase 12
+			ach(42225),	-- Console Overcharged Purchase 13
+			ach(42226),	-- Console Overcharged Purchase 14
+			ach(42227),	-- Console Overcharged Purchase 15
+			ach(42228),	-- Console Overcharged Purchase 16
+			ach(42229),	-- Console Overcharged Purchase 17
+			ach(42230),	-- 11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker
+
+			-- 11.1.7.60672
+			ach(42240),	-- Anu'relos, Flame's Guidance <Tracking Achievement>
+		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+			-- 11.2.0.61476
+			ach(41633),	-- Plexus Sentinel (Raid Finder Manaforge Omega)
+			ach(41634),	-- Plexus Sentinel (Normal Manaforge Omega)
+			ach(41635),	-- Plexus Sentinel (Heroic Manaforge Omega)
+			ach(41636),	-- Plexus Sentinel (Mythic Manaforge Omega)
+			ach(41637),	-- Loom'ithar (Raid Finder Manaforge Omega)
+			ach(41638),	-- Loom'ithar (Normal Manaforge Omega)
+			ach(41639),	-- Loom'ithar (Heroic Manaforge Omega)
+			ach(41640),	-- Loom'ithar (Mythic Manaforge Omega)
+			ach(41641),	-- Soulbinder Naazindhri (Raid Finder Manaforge Omega)
+			ach(41642),	-- Soulbinder Naazindhri (Normal Manaforge Omega)
+			ach(41643),	-- Soulbinder Naazindhri (Heroic Manaforge Omega)
+			ach(41644),	-- Soulbinder Naazindhri (Mythic Manaforge Omega)
+			ach(41645),	-- Forgeweaver Araz (Raid Finder Manaforge Omega)
+			ach(41646),	-- Forgeweaver Araz (Normal Manaforge Omega)
+			ach(41647),	-- Forgeweaver Araz (Heroic Manaforge Omega)
+			ach(41648),	-- Forgeweaver Araz (Mythic Manaforge Omega)
+			ach(41649),	-- The Soul Hunters (Raid Finder Manaforge Omega)
+			ach(41650),	-- The Soul Hunters (Normal Manaforge Omega)
+			ach(41651),	-- The Soul Hunters (Heroic Manaforge Omega)
+			ach(41652),	-- The Soul Hunters (Mythic Manaforge Omega)
+			ach(41653),	-- Fractillus (Raid Finder Manaforge Omega)
+			ach(41654),	-- Fractillus (Normal Manaforge Omega)
+			ach(41655),	-- Fractillus (Heroic Manaforge Omega)
+			ach(41656),	-- Fractillus (Mythic Manaforge Omega)
+			ach(41657),	-- Nexus-King Salhadaar (Raid Finder Manaforge Omega)
+			ach(41658),	-- Nexus-King Salhadaar (Normal Manaforge Omega)
+			ach(41659),	-- Nexus-King Salhadaar (Heroic Manaforge Omega)
+			ach(41660),	-- Nexus-King Salhadaar (Mythic Manaforge Omega)
+			ach(41661),	-- Dimensius, the All-Devouring (Raid Finder Manaforge Omega)
+			ach(41662),	-- Dimensius, the All-Devouring (Normal Manaforge Omega)
+			ach(41663),	-- Dimensius, the All-Devouring (Heroic Manaforge Omega)
+			ach(41664),	-- Dimensius, the All-Devouring (Mythic Manaforge Omega)
+			ach(41758),	-- Player has collected 1 Ethereal Strand
+			ach(41759),	-- Player has collected 2 Ethereal Strand
+			ach(41760),	-- Player has collected 3 Ethereal Strand
+			ach(41761),	-- Player has collected 4 Ethereal Strand
+			ach(41762),	-- Player has collected 5 Ethereal Strand
+			ach(41763),	-- Player has collected 6 Ethereal Strand
+			ach(41764),	-- Player has collected 7 Ethereal Strand
+			ach(41765),	-- Player has collected 8 Ethereal Strand
+			ach(41766),	-- Player has collected 9 Ethereal Strand
+			ach(41767),	-- Player has collected 10 Ethereal Strand
+			ach(41768),	-- Player has collected 11 Ethereal Strand
+			ach(41769),	-- Player has collected 12 Ethereal Strand
+			ach(41770),	-- Player has collected 13 Ethereal Strand
+			ach(41771),	-- Player has collected 14 Ethereal Strand
+			ach(41772),	-- Player has collected 15 Ethereal Strand
+			ach(41773),	-- Player has collected 16 Ethereal Strand
+			ach(41774),	-- Player has collected 17 Ethereal Strand
+			ach(41775),	-- Player has collected 18 Ethereal Strand
+			ach(41792),	-- <DNT> Completed EcoFriendly Quest Once
+			ach(41984),	-- Dastardly Duos Highest Score
+			ach(42123),	-- Vicious Saddle (42)
+			ach(42124),	-- Vicious Saddle (42)
+			ach(42195),	-- [HIDDEN] Renown 15 with Manaforge Vandals / Teach Raid Teleport Spell
+			ach(42700),	-- Archival Assault clears
+			ach(42783),	-- Soul-Scribe (Normal Eco-Dome Al'dani)
+			ach(42784),	-- Soul-Scribe (Heroic Eco-Dome Al'dani)
+			ach(42785),	-- Soul-Scribe (Mythic Eco-Dome Al'dani)
+			ach(60915),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 2 [DNT]
+			ach(60916),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 3 [DNT]
+			ach(60917),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 4 [DNT]
+			ach(60918),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 5 [DNT]
+			ach(60919),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 6 [DNT]
+			ach(60920),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 7 [DNT]
+			ach(60921),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 8 [DNT]
+			ach(60925),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 9 [DNT]
+			ach(60926),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 10 [DNT]
+			ach(60927),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 11 [DNT]
+			ach(60928),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 12 [DNT]
+			ach(60929),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 13 [DNT]
+			ach(60930),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 14 [DNT]
+			ach(60931),	-- <Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 15 [DNT]
+			ach(60932),	-- Voidrazor Sanctuary clears
+
+			-- 11.2.0.61624
+			ach(60941),	-- <Hidden> 11.2 Raid Renown - Activated All Dead Drops
+
+			-- 11.2.0.61787
+			ach(60978),	-- Gilded Ethereal Crests earned
+			ach(60975),	-- Weathered Ethereal Crests earned
+			ach(60976),	-- Carved Ethereal Crests earned
+			ach(60977),	-- Runed Ethereal Crests earned
+			ach(60993),	-- <DNT> Plexus Sentinel defeated on Heroic
+			ach(60994),	-- <DNT> Loom'ithar defeated on Heroic
+			ach(60995),	-- <DNT> Soulbinder Naazindhri defeated on Heroic
+			ach(60996),	-- <DNT> Forgeweaver Araz defeated on Heroic
+			ach(60997),	-- <DNT> The Soul Hunters defeated on Heroic
+			ach(60998),	-- <DNT> Fractillus defeated on Heroic
+			ach(60999),	-- <DNT> Nexus-King Salhadaar defeated on Heroic
+			ach(61000),	-- <DNT> Dimensius, the All-Devouring defeated on Heroic
+			ach(61001),	-- <DNT> Plexus Sentinel defeated on Normal
+			ach(61002),	-- <DNT> Loom'ithar defeated on Normal
+			ach(61003),	-- <DNT> Soulbinder Naazindhri defeated on Normal
+			ach(61004),	-- <DNT> Forgeweaver Araz defeated on Normal
+			ach(61005),	-- <DNT> The Soul Hunters defeated on Normal
+			ach(61006),	-- <DNT> Fractillus defeated on Normal
+			ach(61007),	-- <DNT> Nexus-King Salhadaar defeated on Normal
+			ach(61008),	-- <DNT> Dimensius, the All-Devouring defeated on Normal
+			ach(61009),	-- <DNT> Plexus Sentinel defeated on Raid Finder
+			ach(61010),	-- <DNT> Loom'ithar defeated on Raid Finder
+			ach(61011),	-- <DNT> Soulbinder Naazindhri defeated on Raid Finder
+			ach(61012),	-- <DNT> Forgeweaver Araz defeated on Raid Finder
+			ach(61013),	-- <DNT> The Soul Hunters defeated on Raid Finder
+			ach(61014),	-- <DNT> Fractillus defeated on Raid Finder
+			ach(61015),	-- <DNT> Nexus-King Salhadaar defeated on Raid Finder
+			ach(61016),	-- <DNT> Dimensius, the All-Devouring defeated on Raid Finder
+
+			-- 11.2.0.62610
+			ach(61343),	-- Hotfix 99733 Tracking
+
+			-- 11.2.0.62706
+			ach(61347),	-- <Hidden> Base 12.0 Tender [DNT]
+			ach(61348),	-- <Hidden> Heroic 12.0 Tender [DNT]
+			ach(61349),	-- <Hidden> Epic 12.0 Tender [DNT]
 		})),
 	}),
 });

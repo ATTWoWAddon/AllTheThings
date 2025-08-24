@@ -7,12 +7,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		n(VENDORS, {
 			n(200566, {	-- Cataloger Daela
 				["coord"] = { 34.3, 60.0, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(203217, {	-- Dragonscale Surplus Crate
 						["cost"] = {
 							{ "i", 202871, 1 },	-- 1x Draconic Artifact [Have no Source of This yet]
 						},
-						["g"] = {
+						["groups"] = {
 							i(200452),	-- Dragonscale Expedition [Rare]
 						},
 					}),
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
 						},
-						["g"] = {
+						["groups"] = {
 							i(204403),	-- Sack of Sack of Oddities
 							i(191915),	-- Shaggy (PET!)
 							i(200824),	-- Bottled Lightning
@@ -41,14 +41,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200987, {	-- Fusethrian <Munitions & Aspiring Sous-chef>
 				["coord"] = { 34.2, 59.8, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(200305),	-- Dracthyr Water Rations
 					i(200304),	-- Stored Dracthyr Rations
 				},
 			}),
 			n(200563, {	-- Kraxxus
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(204560, {	-- Azure Scrying Crystal
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 202870, 1 },	-- 1x Mysterious Writings [Have no Source of This yet]
 						},
-						["g"] = {
+						["groups"] = {
 							i(200455),	-- Valdrakken Accord Insignia [Rare]
 						},
 					}),
@@ -84,12 +84,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			n(200724, {	-- Researcher Imareth
 				["sourceQuest"] = 74355,	-- Primordial Embellishment
 				["coord"] = { 35.1, 57.6, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(204573, {	-- Condensed Fire Magic
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204005),	-- Entropic Fel Stone
 							i(204003),	-- Raging Magma Stone
 							i(204004),	-- Searing Smokey Stone
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204012),	-- Cold Frost Stone
 							i(204010),	-- Deluging Water Stone
 							i(204013),	-- Exuding Steam Stone
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204009),	-- Gleaming Iron Stone
 							i(204006),	-- Indomitable Earth Stone
 							i(204007),	-- Shining Obsidian Stone
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204029),	-- Prophetic Twilight Stone
 							i(204015, {	-- Swirling Mojo Stone
 								i(204244),	-- Breathing Mojo Crystal
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204001),	-- Echoing Thunder Stone
 							i(204000),	-- Storm-Infused Stone
 							i(204020),	-- Wild Spirit Stone
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204019),	-- Harmonic Music Stone
 							i(204018),	-- Humming Arcane Stone
 							i(204025),	-- Obscure Pastel Stone
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 204215, 10 },	-- Dormant Primordial Fragment
 						},
-						["g"] = {
+						["groups"] = {
 							i(204027),	-- Desirous Blood Stone
 							i(204021),	-- Necromantic Death Stone
 						},
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200564, {	-- Storykeeper Askhekh
 				["coord"] = { 34.1, 60.0, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(204559, {	-- Essence of Divination
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 202872, 1 },	-- 1x Token of Blessing [Have no Source of This yet]
 						},
-						["g"] = {
+						["groups"] = {
 							i(200454),	-- Maruuk Centaur Insignia [Rare]
 						},
 					}),
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(202445, {	-- Trader Hag'arth
 				["coord"] = { 35.9, 57.5, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(203426, {	-- Design: Crystal Tuning Fork (RECIPE!)
 						["cost"] = {{ "i", ARTISANS_METTLE, 10 }},
 					}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200559, {	-- Treysh
 				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(204571, {	-- Bulwark of the Forbidden Reach
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 5000 },
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			n(200562, {	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(193850, {	-- Buckie (PET!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 25000 },
@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						["cost"] = {
 							{ "i", 202854, 1 },	-- 1x Wondrous Fish [Have no Source of This yet]
 						},
-						["g"] = {
+						["groups"] = {
 							i(200453),	-- Iskaara Tuskarr Insignia [Rare]
 						},
 					}),

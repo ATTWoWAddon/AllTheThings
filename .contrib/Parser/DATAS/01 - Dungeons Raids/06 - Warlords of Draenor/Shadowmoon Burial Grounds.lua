@@ -1,183 +1,147 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
+------ Encounter Constants ------
+local SADANA = 1139
+local NHALLISH = 1168
+local BONEMAW = 1140
+local NERZHUL = 1160
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[SADANA] = { 75509 },	-- Sadana Bloodfury
+	[NHALLISH] = { 75829 },	-- Nhallish
+	[BONEMAW] = { 75452 },	-- Bonemaw
+	[NERZHUL] = { 76407 },	-- Ner'zhul
+}
+
+------ EncounterToLoot ------
+local EncounterToLoot = {
+	[SADANA] = {
+		i(110035),	-- Sadana's Grisly Visage
+	},
+	[NHALLISH] = {
+		i(110036),	-- Nhallish's Bloody Polearm
+		i(110007),	-- Voidmender's Shadowgem
+	},
+	[BONEMAW] = {
+		i(110037),	-- Bonetooth Longbow
+		i(110012),	-- Bonemaw's Big Toe
+	},
+	[NERZHUL] = {
+		i(110039),	-- Portal-Ripper's Staff
+		i(110038),	-- Ner'zhul's Ritual Blade
+	},
+}
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+}
+
+------ Common Drop Slots ----------
+local CommonDropSlots = {
+	[SADANA] = {NECK,BACK},
+	[NHALLISH] = {CHEST,WRIST},
+	[BONEMAW] = {HANDS,WAIST},
+	[NERZHUL] = {HEAD,FEET,FINGER},
+}
+
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, BossWithHeader =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(537, {	-- Shadowmoon Burial Grounds
 		["lvl"] = 100,
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, DRAENOR_SHADOWMOON_VALLEY },
 		["groups"] = {
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(1139, {	-- Sadana Bloodfury
-					["crs"] = { 75509 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, NECK},
-						{"sub", "common_wod_dungeon_drop", 1, BACK},
-					},
-					["g"] = {
-						i(110035),	-- Sadana's Grisly Visage
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110035),	-- Sadana's Grisly Visage
-						})),
-					},
-				}),
-				e(1168, {	-- Nhallish
-					["crs"] = { 75829 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, WRIST},
-						{"sub", "common_wod_dungeon_drop", 1, CHEST},
-					},
-					["g"] = {
-						i(110036),	-- Nhallish's Bloody Polearm
-						i(110007),	-- Voidmender's Shadowgem
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110036),	-- Nhallish's Bloody Polearm
-							i(110007),	-- Voidmender's Shadowgem
-						})),
-					},
-				}),
-				e(1140, {	-- Bonemaw
-					["crs"] = { 75452 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, WAIST},
-						{"sub", "common_wod_dungeon_drop", 1, HANDS},
-					},
-					["g"] = {
-						i(110037),	-- Bonetooth Longbow
-						i(110012),	-- Bonemaw's Big Toe
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110037),	-- Bonetooth Longbow
-							i(110012),	-- Bonemaw's Big Toe
-						})),
-					},
-				}),
-				e(1160, {	-- Ner'zhul
-					["crs"] = { 76407 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, HEAD},
-						{"sub", "common_wod_dungeon_drop", 1, FEET},
-						{"sub", "common_wod_dungeon_drop", 1, FINGER},
-					},
-					["g"] = {
-						ach(9041),	-- Shadowmoon Burial Grounds
-						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(110039),	-- Portal-Ripper's Staff
-						i(110038),	-- Ner'zhul's Ritual Blade
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110039),	-- Portal-Ripper's Staff
-							i(110038),	-- Ner'zhul's Ritual Blade
-						})),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
+				BossOnly(SADANA),
+				BossOnly(NHALLISH),
+				BossOnly(BONEMAW),
+				BossOnly(NERZHUL, {
+					ach(9041),	-- Shadowmoon Burial Grounds
+					i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(1139, {	-- Sadana Bloodfury
-					["crs"] = { 75509 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, NECK},
-						{"sub", "common_wod_dungeon_drop", 2, BACK},
-					},
-					["g"] = {
-						ach(9018),	-- What's Your Sign?
-						i(110035),	-- Sadana's Grisly Visage
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
+				Boss(SADANA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[SADANA])),
 				}),
-				e(1168, {	-- Nhallish
-					["crs"] = { 75829 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, WRIST},
-						{"sub", "common_wod_dungeon_drop", 2, CHEST},
-					},
-					["g"] = {
-						i(110036),	-- Nhallish's Bloody Polearm
-						i(110007),	-- Voidmender's Shadowgem
-					},
+				Boss(NHALLISH, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[NHALLISH])),
 				}),
-				e(1140, {	-- Bonemaw
-					["crs"] = { 75452 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, WAIST},
-						{"sub", "common_wod_dungeon_drop", 2, HANDS},
-					},
-					["g"] = {
-						ach(9025, {	-- Icky Ichors
-							["crs"] = { 77006 },	-- Corpse Skitterling
-						}),
-						i(110037),	-- Bonetooth Longbow
-						i(110012),	-- Bonemaw's Big Toe
-					},
+				Boss(BONEMAW, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[BONEMAW])),
 				}),
-				e(1160, {	-- Ner'zhul
-					["crs"] = { 76407 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, HEAD},
-						{"sub", "common_wod_dungeon_drop", 2, FEET},
-						{"sub", "common_wod_dungeon_drop", 2, FINGER},
-					},
-					["g"] = {
-						ach(9054),	-- Heroic: Shadowmoon Burial Grounds
-						ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
-						ach(9026, {	-- Souls of the Lost
-							["crs"] = { 76518 },	-- Ritual of Bones
-						}),
-						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(110039),	-- Portal-Ripper's Staff
-						i(110038),	-- Ner'zhul's Ritual Blade
-					},
+				Boss(NERZHUL, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, unpack(CommonDropSlots[NERZHUL])),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1139, {	-- Sadana Bloodfury
-					["crs"] = { 75509 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, BACK},
-					},
-					["g"] = {
-						i(110035),	-- Sadana's Grisly Visage
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossWithHeader(SADANA, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[SADANA])),
 				}),
-				e(1168, {	-- Nhallish
-					["crs"] = { 75829 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-					},
-					["g"] = {
-						i(110036),	-- Nhallish's Bloody Polearm
-						i(110007),	-- Voidmender's Shadowgem
-					},
+				BossWithHeader(NHALLISH, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[NHALLISH])),
 				}),
-				e(1140, {	-- Bonemaw
-					["crs"] = { 75452 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-					["g"] = {
-						i(110037),	-- Bonetooth Longbow
-						i(110012),	-- Bonemaw's Big Toe
-					},
+				BossWithHeader(BONEMAW, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[BONEMAW])),
 				}),
-				e(1160, {	-- Ner'zhul
-					["crs"] = { 76407 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						ach(10084),	-- Mythic: Shadowmoon Burial Grounds
-						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(110039),	-- Portal-Ripper's Staff
-						i(110038),	-- Ner'zhul's Ritual Blade
-					},
+				BossWithHeader(NERZHUL, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, unpack(CommonDropSlots[NERZHUL])),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(SADANA, {
+					ach(9083, {	-- Militaristic, Expansionist
+						["crs"] = {
+							83026,	-- Siegemaster Olugar
+							84520,	-- Pitwarden Gwarnok
+							81603,	-- Champion Druna
+						},
+					}),
+					ach(9018),	-- What's Your Sign?
+				}),
+				BossOnly(NHALLISH, {
+				}),
+				BossOnly(BONEMAW, {
+					ach(9025, {	-- Icky Ichors
+						["crs"] = { 77006 },	-- Corpse Skitterling
+					}),
+				}),
+				BossOnly(NERZHUL, {
+					ach(9054),	-- Heroic: Shadowmoon Burial Grounds
+					ach(9375),	-- Heroic: Shadowmoon Burial Grounds Guild Run
+					ach(9026, {	-- Souls of the Lost
+						["crs"] = { 76518 },	-- Ritual of Bones
+					}),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				Boss(SADANA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[SADANA])),
+				}),
+				Boss(NHALLISH, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[NHALLISH])),
+				}),
+				Boss(BONEMAW, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[BONEMAW])),
+				}),
+				Boss(NERZHUL, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, unpack(CommonDropSlots[NERZHUL])),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
+				BossOnly(SADANA),
+				BossOnly(NHALLISH),
+				BossOnly(BONEMAW),
+				BossOnly(NERZHUL, {
+					ach(10084),	-- Mythic: Shadowmoon Burial Grounds
 				}),
 			}),
 		},

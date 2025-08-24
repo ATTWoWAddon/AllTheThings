@@ -1,17 +1,19 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[479594] = {
 		readable = "Depleted Hotrod Battery",
 		model = 5900868,
 		text = {
 			en = "Depleted Hotrod Battery",
-			es = "[Depleted Hotrod Battery]",
-			de = "[Depleted Hotrod Battery]",
-			fr = "[Depleted Hotrod Battery]",
-			it = "[Depleted Hotrod Battery]",
-			pt = "[Depleted Hotrod Battery]",
-			ru = "[Depleted Hotrod Battery]",
-			ko = "[Depleted Hotrod Battery]",
-			cn = "[Depleted Hotrod Battery]",
+			de = "Erschöpfte Hot-Rod-Batterie",
+			es = "Batería de bólido agotada",
+			mx = "Batería de bólido agotada",
+			fr = "Batterie de voiture de sport épuisée",
+			it = "Batteria della Razzomobile Esaurita",
+			pt = "Bateria de Carango Esgotada",
+			ru = "Разряженная батарея хотрода",
+			ko = "소진된 개조차 전지",
+			cn = "枯竭的改装车电池",
+			tw = "耗盡的改裝車電池",
 		},
 	},
 })

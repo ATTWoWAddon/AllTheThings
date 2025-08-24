@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(2345, {	-- Deephaul Ravine
 		["icon"] = 5899325,
 		["timeline"] = { ADDED_11_0_2 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40617,{	-- Deepholla
 					-- Meta Achievement
@@ -17,7 +17,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						40612,	-- Sprinting in the Ravine
 						40616,	-- Unexpected Arrivals
 					}},
-					["g"] = {
+					["groups"] = {
 						title(563),	-- Deephauler <Name>
 					},
 				}),

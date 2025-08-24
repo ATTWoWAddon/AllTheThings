@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
 						["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(205985),	-- Loamm Niffen Insignia [Epic 500]
 							i(205983, {	-- Scentsational Niffen Treasures
 								["sym"] = {
@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 									{"where", "headerID", REWARDS },
 									{"pop"},
 								},
-								["g"] = {
+								["groups"] = {
 									i(205982, {	-- Lost Dig Map
 										-- ["questID"] = 75882,
 										--["isWeekly"] = true,
@@ -41,10 +41,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 75721 },	-- Bartering 101 [Renown 3]
 						["DisablePartySync"] = true,
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(205964),	-- Small Loammian Supply Pack
 						},
 					}),
@@ -62,14 +62,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 75720 },	-- Care to Barter?
 						["provider"] = { "n", 204693 },	-- Ponzo
 						["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(204985),	-- Barter Brick
 						},
 					}),
 					q(75885, {	-- Get Rich Quick
 						["provider"] = { "n", 204693 },	-- Ponzo
 						["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(204985),	-- Barter Brick
 						},
 					}),
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (MM!)
 							i(203316),	-- Winding Slitherdrake: Large Finned Crest (MM!)
 							i(203327),	-- Winding Slitherdrake: Tan Horns (MM!)
@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(205255),	-- Niffen Diggin' Mitts (TOY!)
 						},
 					}),
@@ -129,7 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(75727, {	-- The Smelliest Tabard
 						["provider"] = { "n", 205127 },	-- Newsy
 						["maps"] = { ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205286),	-- Loamm Niffen Tabard
 						},
 					}),
@@ -141,10 +141,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 75728 },	-- Bartering Boulders [Renown 12]
 						["DisablePartySync"] = true,
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(205965),	-- Large Loammian Supply Pack
 						},
 					}),
@@ -156,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(205188),	-- Barter Boulder
 						},
 					}),
@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(203323),	-- Winding Slitherdrake: Brown Hair
 							i(203335),	-- Winding Slitherdrake: Curved Horns
 							i(203341),	-- Winding Slitherdrake: Long Jaw Horns
@@ -192,10 +192,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 76030 },	-- Airborne Winding [Renown 16]
 						["DisablePartySync"] = true,
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(205968),	-- Overflowing Loammian Supply Pack
 						},
 					}),
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(205188),	-- 10x Barter Boulder
 						}
 					}),
@@ -228,22 +228,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 75742 },	-- Drake Helms [Renown 19]
 						["DisablePartySync"] = true,
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(205968),	-- Overflowing Loammian Supply Pack
 						},
 					}),
 				}, {	-- RENOWN 19 --
-					q(75742, {    -- Drake Helms
-						["provider"] = { "n", 205127 },    -- Newsy
+					q(75742, {	-- Drake Helms
+						["provider"] = { "n", 205127 },	-- Newsy
 						-- #if BEFORE 10.2.7
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							spell(409471, {	-- Drake Helms
 								-- auto learns these Mount Mods
 								i(196990),	-- Cliffside Wylderdrake: Helm (MM!)
@@ -271,7 +271,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 						},
 					}),
@@ -283,14 +283,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #else
 						["coord"] = { 56.4, 56.7, ZARALEK_CAVERN },
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(205937),	-- Newsy (PET!)
 						},
 					}),
 					------ PARAGON	------
 					q(75290, {	-- Renowned with the Loamm Niffen
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(204712),	-- Brimming Loamm Niffen Supply Satchel
 						},
 					}),

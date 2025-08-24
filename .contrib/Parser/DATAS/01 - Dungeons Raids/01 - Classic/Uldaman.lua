@@ -17,15 +17,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 36.6, 29.4, 16 },	-- Uldaman [Front], Uldaman [Badlands]
+			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 60.7, 37.4, BADLANDS },	-- Uldaman [Side]
 			-- #else
-			{ 36.6, 29.4, 16 },	-- Uldaman [Front], Uldaman [Badlands]
+			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 64.0, 44.0, BADLANDS },	-- Uldaman [Side]
 			-- #endif
 		},
 		["mapID"] = ULDAMAN,
-		["maps"] = { 16, 231 },
+		["maps"] = { ULDAMAN_OUTDOORS, ULDAMAN_LEVEL2 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
 			n(PROFESSIONS, {
@@ -40,8 +40,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(QUESTS, {
 				q(2964, {	-- A Future Task [Alliance]
-					["qg"] = 2916,	-- Historian Karnik
 					["sourceQuest"] = 2977,	-- Return to Ironforge
+					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.2, 11.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -64,8 +64,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2968, {	-- A Future Task [Horde]
-					["qg"] = 3978,	-- Sage Truthseeker
 					["sourceQuest"] = 2967,	-- Return to Thunder Bluff
+					["qg"] = 3978,	-- Sage Truthseeker
 					["coord"] = { 34.4, 46.9, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27677, {	-- Archaedas, The Ancient Stone Watcher [Alliance]
-					["qg"] = 46234,	-- Lead Prospector Durdin <Explorer's League>
 					["sourceQuest"] = 27672,	-- The Chamber of Khaz'mul [Alliance]
+					["qg"] = 46234,	-- Lead Prospector Durdin <Explorer's League>
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -98,8 +98,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27680, {	-- Archaedas, The Ancient Stone Watcher [Horde]
-					["qg"] = 46236,	-- High Examiner Tae'thelan Bloodwatcher <The Reliquary>
 					["sourceQuest"] = 27679,	-- The Chamber of Khaz'mul [Horde]
+					["qg"] = 46236,	-- High Examiner Tae'thelan Bloodwatcher <The Reliquary>
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -110,8 +110,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2200, {	-- Back to Uldaman
-					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2199,	-- Lore for a Price
+					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.4, 3.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -143,22 +143,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2340, {	-- Deliver the Gems
+					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
 					["providers"] = {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7887 },	-- Necklace and Gem Salvage
 					},
-					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
 					["coord"] = { 2.6, 46, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
 				q(2201, {	-- Find the Gems
+					["sourceQuest"] = 2200,	-- Back to Uldaman
 					["providers"] = {
 						{ "n", 6912 },	-- Remains of a Paladin
 						{ "i", 7668 },	-- Bloodstained Journal
 					},
-					["sourceQuest"] = 2200,	-- Back to Uldaman
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -175,11 +175,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2339, {	-- Find the Gems and Power Source
+					["sourceQuest"] = 2338,	-- Translating the Journal
 					["providers"] = {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7668 },	-- Bloodstained Journal
 					},
-					["sourceQuest"] = 2338,	-- Translating the Journal
 					["coord"] = { 2.6, 46, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -214,11 +214,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2199, {	-- Lore for a Price
-					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2198,	-- The Shattered Necklace
-					["cost"] = { { "i", 2842, 5 } },	-- Silver Bar (x5)
+					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.4, 3.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2842, 5 } },	-- Silver Bar (x5)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 				}),
@@ -235,16 +235,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2284, {	-- Necklace Recovery, Take 2
-					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["sourceQuest"] = 2283,	-- Necklace Recovery
+					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
 				q(2341, {	-- Necklace Recovery, Take 3
-					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["sourceQuest"] = 2340,	-- Deliver the Gems
+					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -256,24 +256,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2963, {	-- Portents of Uldum [Alliance]
-					["qg"] = 5387,	-- High Explorer Magellas
 					["sourceQuest"] = 2439,	-- The Platinum Discs (3/3) [Alliance]
+					["qg"] = 5387,	-- High Explorer Magellas
 					["coord"] = { 69.8, 18.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(2965, {	-- Portents of Uldum [Horde]
-					["qg"] = 3978,	-- Sage Truthseeker
 					["sourceQuest"] = 2440,	-- The Platinum Discs (3/3) [Horde]
+					["qg"] = 3978,	-- Sage Truthseeker
 					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(1956, {	-- Power in Uldaman
-					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1955,	-- The Exorcism
+					["qg"] = 6546,	-- Tabetha
 					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
@@ -285,15 +285,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3375, {	-- Replacement Phial
-					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2199,	-- Lore for a Price
+					["qg"] = 6826,	-- Talvash del Kissel
+					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 3827, 1 },	-- Mana Potion
 						{ "i", 3857, 1 },	-- Coal
 						{ "i", 1708, 1 },	-- Sweet Nectar
 					},
-					["coord"] = { 36.4, 3.6, IRONFORGE },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 37,
@@ -302,8 +302,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2204, {	-- Restoring the Necklace (1/2)
-					["provider"] = { "i", 7667 },	-- Talvash's Phial of Scrying
 					["sourceQuest"] = 2201,	-- Find the Gems
+					["provider"] = { "i", 7667 },	-- Talvash's Phial of Scrying
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -314,8 +314,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2361, {	-- Restoring the Necklace (2/2)
-					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2204,	-- Restoring the Necklace (1/2)
+					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.4, 3.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -327,11 +327,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2977, {	-- Return to Ironforge
+					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["providers"] = {
 						{ "o", 142343 },	-- Uldum Pedestal
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["coord"] = { 37.7, 81.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
@@ -339,11 +339,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 45,
 				}),
 				q(2967, {	-- Return to Thunder Bluff
+					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["providers"] = {
 						{ "o", 142343 },	-- Uldum Pedestal
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["coord"] = { 37.7, 81.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
@@ -351,22 +351,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 45,
 				}),
 				q(2946, {	-- Seeing What Happens [Alliance]
+					["sourceQuest"] = 2963,	-- Portents of Uldum [Alliance]
 					["providers"] = {
 						{ "n", 2916 },	-- Historian Karnik
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["sourceQuest"] = 2963,	-- Portents of Uldum [Alliance]
 					["coord"] = { 77.2, 11.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
 				q(2966, {	-- Seeing What Happens [Horde]
+					["sourceQuest"] = 2965,	-- Portents of Uldum [Horde]
 					["providers"] = {
 						{ "n", 5770 },	-- Nara Wildmane
 						{ "i", 6064 },	-- Miniature Platinum Discs
 					},
-					["sourceQuest"] = 2965,	-- Portents of Uldum [Horde]
 					["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -395,8 +395,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2240, {	-- The Hidden Chamber
-					["qg"] = 6906,	-- Baelog
 					["sourceQuest"] = 2398,	-- The Lost Dwarves
+					["qg"] = 6906,	-- Baelog
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -418,8 +418,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 35,
 				}),
 				q(1139, {	-- The Lost Tablets of Will
-					["qg"] = 2918,	-- Advisor Belgrum
 					["sourceQuest"] = 762,	-- An Ambassador of Evil
+					["qg"] = 2918,	-- Advisor Belgrum
 					["coord"] = { 77.3, 9.7, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -434,8 +434,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2278, {	-- The Platinum Discs (1/3)
-					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
+					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(2279, {	-- The Platinum Discs (2/3) [Alliance]
@@ -469,8 +469,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #endif
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
-					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["sourceQuest"] = 2279,	-- The Platinum Discs (2/3) [Alliance]
+					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["coord"] = { 69.9, 18.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8070, 1 } },	-- Reward Voucher
@@ -483,8 +483,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2440, {	-- The Platinum Discs (3/3) [Horde]
-					["qg"] = 3978,	-- Sage Truthseeker
 					["sourceQuest"] = 2280,	-- The Platinum Discs (2/3) [Horde]
+					["qg"] = 3978,	-- Sage Truthseeker
 					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 8070, 1 } },	-- Reward Voucher
@@ -503,31 +503,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 37,
 				}),
 				q(2954, {	-- The Stone Watcher
-					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 					["sourceQuests"] = {
 						2946,	-- Seeing What Happens [Ironforge]
 						2966,	-- Seeing What Happens [Thunder Bluff]
 					},
+					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 					["coord"] = { 37.7, 81.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(2318, {	-- Translating the Journal (1/2)
+					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2
 					["providers"] = {
 						{ "n", 6912 },	-- Remains of a Paladin
 						{ "i", 7886 },	-- Untranslated Journal
 					},
-					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
 				q(2338, {	-- Translating the Journal (2/2)
+					["sourceQuest"] = 2318,	-- Translating the Journal
 					["providers"] = {
 						{ "n", 6868 },	-- Jarkal Mossmeld
 						{ "i", 7886 },	-- Untranslated Journal
 					},
-					["sourceQuest"] = 2318,	-- Translating the Journal
 					["coord"] = { 2.6, 46.0, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -603,10 +603,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					-- #if AFTER 10.1.7
 					["coords"] = {
-						{ 62.0, 51.5, 16 },	-- Spur cave
-						{ 51.8, 68.5, 16 },	-- The Sealed Hall
-						{ 34.0, 84.5, 16 },	-- North Common Hall
-						{ 32.4, 62.4, 16 },	-- South Common Hall
+						{ 62.0, 51.5, ULDAMAN_OUTDOORS },	-- Spur cave
+						{ 51.8, 68.5, ULDAMAN_OUTDOORS },	-- The Sealed Hall
+						{ 34.0, 84.5, ULDAMAN_OUTDOORS },	-- North Common Hall
+						{ 32.4, 62.4, ULDAMAN_OUTDOORS },	-- South Common Hall
 					},
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -857,15 +857,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					ach(638, {	-- Uldaman
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							2278,	-- The Platinum Discs
-							2204,	-- Restoring the Necklace
-							2339,	-- Find the Gems and Power Source
-						},
-						-- #endif
-					}),
+					ach(638),	-- Uldaman
 					ach(5047, {	-- Uldaman Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -879,7 +871,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 				["modelScale"] = 3,
 				["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
-					8029,    -- Plans: Wicked Mithril Bade
+					8029,	-- Plans: Wicked Mithril Bade
 				}},
 			}),
 			o(131474, {	-- The Discs of Norgannon

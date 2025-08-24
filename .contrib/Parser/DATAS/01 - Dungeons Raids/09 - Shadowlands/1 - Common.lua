@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),
@@ -125,7 +125,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		}),
 		q(66696, {	-- Tempting Fate: Fate of the Shadowlands
 			["timeline"] = { CREATED_9_2_7, ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
-			["isWorldQuest"] = true,
 			["maps"] = {
 				-- Castle Nathria
 				1735,	-- The Grand Walk
@@ -152,6 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
+			["isWorldQuest"] = true,
 		}),
 	}),
 })));

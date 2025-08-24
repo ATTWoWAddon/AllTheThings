@@ -5,13 +5,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	inst(1184, {	-- Mists of Tirna Scithe
 		["coord"] = { 35.6, 54.2, ARDENWEALD },
 		["maps"] = { 1669 },	-- Mists of Tirna Scithe
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(62371, {	-- Tirna Scithe: A Warning Silence
 					["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 					["provider"] = { "n", 168032 },	-- Flwngyrr
 					["coord"] = { 48.3, 50.5, ARDENWEALD },
-					["g"] = {
+					["groups"] = {
 						i(184518),	-- Boots of the Oaken Assembly
 						i(184517),	-- Gladechewer Footguards
 						i(184516),	-- Mistveil Sandals
@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164567,	-- Ingra Maloch
 						164804,	-- Droman Oulfarran
 					},
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183253),	-- Memory of the Soulforge Embers
 						-- Conduits
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2402, {	-- Mistcaller
 					["crs"] = { 164501 },	-- Mistcaller
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183266),	-- Memory of the Disciplinary Command
 						i(183336),	-- Memory of the Duskwalker's Patch
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2405, {	-- Tred'ova
 					["crs"] = { 164517 },	--	Tred'ova
-					["g"] = {
+					["groups"] = {
 						ach(14371),	-- Mists of Tirna Scithe
 						-- Legendaries
 						i(183229),	-- Memory of a Timeworn Dreambinder
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2405, {	-- Tred'ova
 					["crs"] = { 164517 },	--	Tred'ova
-					["g"] = {
+					["groups"] = {
 						ach(14412),	-- Heroic: Mists of Tirna Scithe
 					},
 				}),
@@ -119,13 +119,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164567,	-- Ingra Maloch
 						164804,	-- Droman Oulfarran
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14503),	-- Hooked On Hydroponics
 					},
 				}),
 				e(2405, {	-- Tred'ova
 					["crs"] = { 164517 },	--	Tred'ova
-					["g"] = {
+					["groups"] = {
 						ach(14413),	-- Mythic: Mists of Tirna Scithe
 						ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
 						ach(14375),	-- Hunger for Knowledge

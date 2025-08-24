@@ -26,8 +26,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				applyclassicphase(TBC_PHASE_ONE, q(10277, {	-- The Caverns of Time
-					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["sourceQuest"] = 10279,	-- To The Master's Lair
+					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 41.5, 38.5, CAVERNS_OF_TIME },
@@ -39,11 +39,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(10445, {	-- The Vials of Eternity
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
-					},
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
+					["qgs"] = {
+						19935,	-- Soridormi
+						19936,	-- Arazmodu
+					},
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 39.4, 44.4, CAVERNS_OF_TIME },
@@ -67,12 +67,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(13432, {	-- The Vials of Eternity
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
-					},
-					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
+					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
+					["qgs"] = {
+						19935,	-- Soridormi
+						19936,	-- Arazmodu
+					},
 					["timeline"] = { ADDED_3_0_2 },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
@@ -92,13 +92,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 20142,	-- Steward of Time <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 65.4, 49.6, TANARIS },
+						{ 55.3, 27.9, 74 },	-- Caverns of Time Entrance
 						-- #else
-						{ 66, 49.6, TANARIS },
+						{ 66.0, 49.6, TANARIS },
 						-- #endif
 					},
-					["lvl"] = lvlsquish(66, 66, 15),
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 			}),
 			-- #endif
@@ -174,21 +174,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(30635, {	-- Key of Time
 								["timeline"] = { REMOVED_4_2_0 },
 								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185693;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
+								["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+								["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185693),
 								-- #endif
 							}),
 							i(29184),	-- Timewarden's Leggings

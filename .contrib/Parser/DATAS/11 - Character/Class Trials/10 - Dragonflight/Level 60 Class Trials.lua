@@ -9,7 +9,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of October 13th, 2020 Level 110 trials became Level 48 trials]
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
 			-- Note: BETA 10.0.2 50 Trials became 60 Trials
-			["description"] = "These are gained by creating a Level 60 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.",
+			["description"] = "These are gained by creating a Level 60 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 60,
 			["groups"] = {
 				i(185940),	-- Pristine Survival Kit

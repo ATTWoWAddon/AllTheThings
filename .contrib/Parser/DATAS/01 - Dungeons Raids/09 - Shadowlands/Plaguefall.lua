@@ -8,13 +8,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1674,	-- Plaguefall
 			1697,	-- The Festering Sanctum
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(59520, {	-- Plaguefall: Knee Deep In It
 					["sourceQuests"] = { 59223 },	-- By Any Other Name
 					["provider"] = { "n", 165052 },	-- Vial Master Lurgy
 					["coord"] = { 59.4, 72.9, MALDRAXXUS },
-					["g"] = {
+					["groups"] = {
 						i(176057),	-- Margrave Stradama's Plasm (QI!)
 						i(183724),	-- Poxedskin Sample (QI!)
 						i(175533),	-- Corpse-Stitcher's Amice
@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(181786),	-- Eternal Hunger
 						i(183506),	-- Lethal Poisons
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2403, {	-- Doctor Ickus
 					["crs"] = { 164967 },	-- Doctor Ickus
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(180933),	-- Ashen Juggernaut
 						i(182140),	-- Dissonant Echoes
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2423, {	-- Domina Venomblade
 					["crs"] = { 164266 },	-- Domina Venomblade
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183345),	-- Memory of the Rotten
 						i(183260),	-- Memory of the Serpentstalker's Trickery
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2404, {	-- Margrave Stradama
 					["crs"] = { 164267 },	-- Margrave Stradama
-					["g"] = {
+					["groups"] = {
 						ach(14369),	-- Plaguefall
 						-- Legendaries
 						i(183212),	-- Memory of a Darkglare Medallion
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2404, {	-- Margrave Stradama
 					["crs"] = { 164267 },	-- Margrave Stradama
-					["g"] = {
+					["groups"] = {
 						ach(14414),	-- Heroic: Plaguefall
 					},
 				}),
@@ -124,19 +124,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2419, {	-- Globgrog
 					["crs"] = { 164255 },	-- Globgrog
-					["g"] = {
+					["groups"] = {
 						ach(14347),	-- Full Gores Meal
 					},
 				}),
 				e(2403, {	-- Doctor Ickus
 					["crs"] = { 164967 },	-- Doctor Ickus
-					["g"] = {
+					["groups"] = {
 						ach(14296),	-- Going Viral
 					},
 				}),
 				e(2404, {	-- Margrave Stradama
 					["crs"] = { 164267 },	-- Margrave Stradama
-					["g"] = {
+					["groups"] = {
 						ach(14415),	-- Mythic: Plaguefall
 						ach(14383),	-- Mythic: Plaguefall Guild Run
 						i(181271),	-- Sludge Feeler (PET!)

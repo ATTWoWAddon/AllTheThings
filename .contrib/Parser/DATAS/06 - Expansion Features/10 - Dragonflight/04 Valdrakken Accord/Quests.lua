@@ -14,7 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70839, {	-- The Search for Titan Relics
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26, 40, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							sp(388303),	-- Titan Relics
 						},
 					}),
@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70880, {	-- To Cook With Finery
 						["provider"] = { "n", 185556 },	-- Erugosa
 						["coord"] = { 46.5, 46.2, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199648),	-- Dragon Dinner Fork
 							i(200750),	-- Dragon Dinner Knife
 							i(199649),	-- Dragon Tea Set (TOY!)
@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -81,7 +81,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198868, {	-- Small Valdrakken Accord Supply Pack
 								["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 },
 							}),
@@ -100,7 +100,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"sourceID", 182172,	-- Dragon Garden Rake
 							"sourceID", 182174,	-- Dragon Garden Shovel
 						},
-						["g"] = {
+						["groups"] = {
 							i(199647),	-- Dragon Garden Fork
 							i(199653),	-- Dragon Garden Hand Shovel
 							i(199651),	-- Dragon Garden Hoe
@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -141,7 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198868, {	-- Small Valdrakken Accord Supply Pack
 								["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 },
 							}),
@@ -169,7 +169,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69172,	-- Cliffside Wylderdrake: Spiked Cheek (MM!)
 							"questID", 69177,	-- Cliffside Wylderdrake: Split Head Horns (MM!)
 						},
-						["g"] = {
+						["groups"] = {
 							i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -182,7 +182,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -190,7 +190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70888, {	-- Rubbing Shoulders With The Best
 						["provider"] = { "n", 195770 },	-- Armorsmith Terisk
 						["coord"] = { 36.0, 49.7, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199655),	-- Black Dragonspawn Shoulderpads
 							i(199656),	-- Blue Dragonspawn Shoulderpads
 							i(199657),	-- Bronze Dragonspawn Shoulderpads
@@ -202,7 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -210,11 +210,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72687, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
+						["lockCriteria"] = { 1, "questID", 72688 },	-- Renown Supplies [Renown 12]
 						["DisablePartySync"] = true,
 						-- technically not accurate, but no other way to lock this properly for first character
-						["lockCriteria"] = { 1, "questID", 72688 },	-- Renown Supplies [Renown 12]
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -226,12 +226,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					header(HEADERS.Quest, 67074, {	-- The Gift of Silver
 						["icon"] = 134319,
-						["g"] = {
+						["groups"] = {
 							q(67074, {	-- The Gift of Silver
 								["sourceQuests"] = { 68794 },	-- Ally of Dragons
 								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 58.5, 35.7, VALDRAKKEN },
-								["g"] = {
+								["groups"] = {
 									i(197845),	-- Silver Scale (QI!)
 								},
 							}),
@@ -239,7 +239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 67074 },	-- The Gift of Silver
 								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 58.5, 35.7, VALDRAKKEN },
-								["g"] = {
+								["groups"] = {
 									i(197845),	-- Silver Scale (QI!)
 								},
 							}),
@@ -247,7 +247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 70703 },	-- The Legacy of Tyrhold
 								["provider"] = { "n", 192480 },	-- Watcher Koranos
 								["coord"] = { 58.2, 58.8, THALDRASZUS },
-								["g"] = {
+								["groups"] = {
 									i(198355),	-- Tyrhold Conduit
 								}
 							}),
@@ -270,7 +270,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 67078 },	-- Parting Instructions
 								["provider"] = { "n", 192480 },	-- Watcher Karanos
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
-								["g"] = {
+								["groups"] = {
 									i(197862),	-- Primary Security Disc (QI!)
 									i(197863),	-- Secondary Security Disc (QI!)
 									i(198355),	-- Tyrhold Conduit (QI!)
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["coord"] = { 60.5, 58.6, THALDRASZUS },
 								["maps"] = { 2082, 2083 },	-- Halls of Infusion
-								["g"] = {
+								["groups"] = {
 									i(198038),	-- Ancient Titansteel Ingot (QI!)
 								},
 							}),
@@ -289,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 67081 },	-- An Infusion of Materials
 								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["coord"] = { 60.5, 58.6, THALDRASZUS },
-								["g"] = {
+								["groups"] = {
 									i(201781),	-- Memory of Tyr
 								},
 							}),
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					header(HEADERS.Quest, 72440, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Silver Mettle
 						["icon"] = 4638415,
-						["g"] = {
+						["groups"] = {
 							q(72440, {	-- Silver Mettle
 								["sourceQuests"] = { 67084 },	-- The Silver Purpose
 								["provider"] = { "n", 198941 },	-- Nozdormu
@@ -323,7 +323,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
 								["maps"] = 2146,	-- The Eastern Glades
-								["g"] = {
+								["groups"] = {
 									i(204474),	-- Silver Scale (QI!)
 								},
 							}),
@@ -331,7 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 72443 },	-- Tyr's Fall
 								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
-								["g"] = {
+								["groups"] = {
 									i(204686),	-- Titan Containment Device (TOY!)
 								},
 							}),
@@ -339,7 +339,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					})),
 					header(HEADERS.Quest, 75632, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Dislocated Disc
 						["icon"] = 5172995,
-						["g"] = {
+						["groups"] = {
 							q(75632, {	-- A Dislocated Disc
 								["sourceQuests"] = { 72444 },	-- A Sliver of Silver
 								["provider"] = { "n", 187669 },	-- Nozdormu
@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 75634 },	-- Reforging the Tyr`s Guard
 								["provider"] = { "n", 206221 },	-- Travard
 								["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
-								["g"] = {
+								["groups"] = {
 									i(208198),	-- Tyr's Guard Bulwark
 									i(206476),	-- Tyr's Guard Equipment (QI!)
 								},
@@ -378,7 +378,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
 								["provider"] = { "n", 204593 },	-- Talthis
 								["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
-								["g"] = {
+								["groups"] = {
 									i(206204),	-- Recovered Tuskarr Relic (QI!)
 								},
 							}),
@@ -418,7 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["sourceQuests"] = { 75637 },	-- The Final Beacon
 								["provider"] = { "n", 204605 },	-- Travard
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
-								["g"] = {
+								["groups"] = {
 									i(208200),	-- Dragon Isles Drakes: Gilded Armor (MM!)
 								},
 							}),
@@ -442,9 +442,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 208832 },	-- Eternus
 								["coord"] = { 60.4, 59, THALDRASZUS },
 								["maps"] = {
-										2221,	-- The Nighthold (Scenario)
-										2220,	-- The Nighthold (Scenario)
-									},
+									2221,	-- The Nighthold (Scenario)
+									2220,	-- The Nighthold (Scenario)
+								},
 								["groups"] = {
 									o(410786, {	-- Alydrus' Research Notes
 										["questID"] = 78395,
@@ -496,7 +496,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
 					}),
@@ -504,7 +504,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70903, {	-- Wielding Titanic Might
 						["provider"] = { "n", 195768 },	-- Sorotis
 						["coord"] = { 26.1, 40.0, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199774),	-- Ancient Titan Blunderbus
 							i(199772),	-- Titan Gatekeeper's Shield
 							i(199776),	-- Titan Watcher's Broadsword
@@ -516,7 +516,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -525,7 +525,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = ALCHEMY,
-						["g"] = {
+						["groups"] = {
 							i(201706),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -533,7 +533,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = BLACKSMITHING,
-						["g"] = {
+						["groups"] = {
 							i(201708),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -541,7 +541,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
+						["groups"] = {
 							i(201710),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -549,7 +549,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = INSCRIPTION,
-						["g"] = {
+						["groups"] = {
 							i(201711),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -557,7 +557,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = MINING,
-						["g"] = {
+						["groups"] = {
 							i(201700),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -565,7 +565,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = TAILORING,
-						["g"] = {
+						["groups"] = {
 							i(201715),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -573,7 +573,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198868, {	-- Small Valdrakken Accord Supply Pack
 								["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 },
 							}),
@@ -586,7 +586,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70895, {	-- Soaring in Style
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
@@ -603,7 +603,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -616,7 +616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70897, {	-- A Coming of Age
 						["provider"] = { "n", 195770 },	-- Armorsmith Terisk
 						["coord"] = { 36.0, 49.7, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199682),	-- Bronze Drakonid Helmet
 							i(199681),	-- Cobalt Drakonid Helmet
 							i(199684),	-- Crimson Drakonid Helmet
@@ -628,7 +628,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -636,7 +636,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70901, {	-- A Collection of Creatures
 						["provider"] = { "n", 189197 },	-- Groundskeeper Kama
 						["coord"] = { 74.6, 63.2, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199758),	-- Crimson Proto-Whelp (PET!)
 							i(199757),	-- Magic Nibbler (PET!)
 						},
@@ -645,7 +645,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -664,7 +664,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66178 },	-- A Day in the Groves
 						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(192547),	-- Garden Seed (QI!)
 						},
 					}),
@@ -672,7 +672,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66178 },	-- A Day in the Groves
 						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(192555),	-- Borrowed Breath
 						},
 					}),
@@ -721,7 +721,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66393 },	-- To Somnikus
 						["provider"] = { "n", 189857 },	-- Rymek
 						["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(192744),	-- Rymek's Gift
 						},
 					}),
@@ -773,7 +773,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66189 },	-- Step Into the Life
 						["provider"] = { "n", 187646 },	-- Ysera
 						["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(193221),	-- Volatile Frostfire (QI!)
 						},
 					}),
@@ -809,7 +809,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66401 },	-- The Dreamer
 						["provider"] = { "n", 188850 },	-- Ysera
 						["coord"] = { 19.8, 81.6, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(201779),	-- Merithra's Blessing
 						},
 					}),
@@ -817,7 +817,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -825,7 +825,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70891, {	-- Fitting In
 						["provider"] = { "n", 195782 },	-- Giera
 						["coord"] = { 31.6, 69.3, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							iensemble(199754),	-- Ensemble: Azure Valdrakken Clothing
 							iensemble(199753),	-- Ensemble: Black Valdrakken Clothing
 							iensemble(199756),	-- Ensemble: Bronze Valdrakken Clothing
@@ -837,7 +837,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -845,7 +845,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70904, {	-- Variety is the Spice of Life
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(197145),	-- Highland Drake: Bronze Scales (MM!)
 							i(197391),	-- Renewed Proto-Drake: Bronze Scales (MM!)
 							i(197613),	-- Windborne Velocidrake: Bronze Scales (MM!)
@@ -858,7 +858,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -871,7 +871,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70905, {	-- Flying with Our Colors
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.2, 35.6, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(198732),	-- Valdrakken Accord Tabard
 						},
 					}),
@@ -879,7 +879,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
 						["classes"] = { HUNTER },
-						["g"] = {
+						["groups"] = {
 							i(201791),	-- How to Train a Dragonkin (CI!)
 						},
 					}),
@@ -887,7 +887,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -896,7 +896,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = ALCHEMY,
-						["g"] = {
+						["groups"] = {
 							i(201706),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -904,7 +904,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = ENGINEERING,
-						["g"] = {
+						["groups"] = {
 							i(201710),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -912,7 +912,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = BLACKSMITHING,
-						["g"] = {
+						["groups"] = {
 							i(201708),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -920,7 +920,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = INSCRIPTION,
-						["g"] = {
+						["groups"] = {
 							i(201711),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -928,7 +928,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = MINING,
-						["g"] = {
+						["groups"] = {
 							i(201716),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -936,18 +936,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 191000 },	-- Dothenos
 						["coord"] = { 36.4, 62.9, VALDRAKKEN },
 						["requireSkill"] = TAILORING,
-						["g"] = {
+						["groups"] = {
 							i(201715),	-- Notebook of Crafting Knowledge
 						},
 					}),
 					q(72697, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72698 },	-- Renown Supplies [Renown 25]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -955,7 +955,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70910, {	-- Mysteries in Paper and Glass
 						["provider"] = { "n", 195782 },	-- Giera
 						["coord"] = { 31.6, 68.8, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199742),	-- A Mender's Mentality
 							i(199744),	-- Academy Student's Journal
 							i(199741),	-- Compendium of Advanced Spells
@@ -970,7 +970,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
 					}),
@@ -978,7 +978,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70911, {	-- Armored and ready
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
 							i(197093),	-- Highland Drake: Silver and Purple Armor (MM!)
 							i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
@@ -1004,7 +1004,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
 					}),
@@ -1012,7 +1012,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70912, {	-- The Accord's High Standards
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(199768),	-- Black Dragon Banner (TOY!)
 							i(199769),	-- Blue Dragon Banner (TOY!)
 							i(199770),	-- Bronze Dragon Banner (TOY!)
@@ -1024,7 +1024,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
 					}),
@@ -1039,7 +1039,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"sourceID", 182180,	-- Obsidian Jeweled Shoulderpads
 							"sourceID", 182184,	-- Ruby Jeweled Shoulderpads
 						},
-						["g"] = {
+						["groups"] = {
 							i(199662),	-- Amber Jeweled Shoulderpads
 							i(199661),	-- Azure Jeweled Shoulderpads
 							i(199663),	-- Emerald Jeweled Shoulderpads
@@ -1051,7 +1051,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
 					}),
@@ -1059,7 +1059,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70914, {	-- The Breadth of Dragon Weaponry
 						["provider"] = { "n", 195769 },	-- Weaponsmith Koref
 						["coord"] = { 36.4, 51.7, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(200456),	-- Valdrakken Armor Opener
 							i(199825),	-- Valdrakken Belt Knife
 							i(199700),	-- Valdrakken Bladewing Decapitator
@@ -1083,7 +1083,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
 					}),
@@ -1091,7 +1091,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70916, {	-- Beknownst and Glorious
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.2, 35.8, VALDRAKKEN },
-						["g"] = {
+						["groups"] = {
 							i(197921),		-- Primal Infusion
 							spell(388978),	-- Ally of Dragons
 							title(474),		-- <Name>, Ally of Dragons (TITLE!)
@@ -1101,14 +1101,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
 					}),
 					------ PARAGON ------
 					q(71023, {	-- Renowned with the Valdrakken Accord
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(199475, {	-- Overflowing Valdrakken Accord Supply Pack
 								["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_7 },
 							}),

@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 			["maps"] = { TRUESHOT_LODGE },
-			["g"] = {
+			["groups"] = {
 				n(ARTIFACTS, {
 					cl(HUNTER, BEAST_MASTERY, {
 						i(139555, {	-- Designs of the Grand Architect
@@ -59,9 +59,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				})),
 				n(QUESTS, {
 					q(40384, {	-- Needs of the Hunters
+						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
 						["provider"] = { "n", 100786 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
-						["description"] = "This NPC will approach you within a few seconds the first time you enter Legion Dalaran.",
 					}),
 					q(41415, {	-- The Hunter's Call
 						["sourceQuest"] = 40384,	-- Needs of the Hunters
@@ -91,10 +91,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								44366,	-- One Last Adventure
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 102478 },	-- Emmarel Shadewarden
-								{ "n", 107317 },	-- Emmarel Shadewarden
-								{ "n", 107973 },	-- Emmarel Shadewarden
+							["qgs"] = {
+								102478,	-- Emmarel Shadewarden
+								107317,	-- Emmarel Shadewarden
+								107973,	-- Emmarel Shadewarden
 							},
 							["coords"] = {
 								{ 59.8, 53.0, LEGION_DALARAN },
@@ -115,17 +115,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["sourceQuests"] = { 42158 },	-- The Creator's Workshop
 							["provider"] = { "n", 106558 },	-- Mimiron
 							["coord"] = { 43.7, 38.9, 745 },
-							["g"] = {
+							["groups"] = {
 								i(128861, {	-- Titanstrike
-									artifact(288),	--  Titanstrike
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(288),	--  Titanstrike
+									},
 								}),
 							},
 						}),
 						q(41009, {	-- Hunter to Hunter
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
 							["sourceQuests"] = { 42185 },	-- Never Hunt Alone
 							["altQuests"] = { 40952 },	-- Hunter to Hunter
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
-							["description"] = "To obtain this quest you must choose to search for the |cffffff9aBeast Mastery|r artifact FIRST.",
 							["maps"] = { LEGION_DALARAN },
 						}),
 					}),
@@ -137,10 +140,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								44366,	-- One Last Adventure
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 102478 },	-- Emmarel Shadewarden
-								{ "n", 107317 },	-- Emmarel Shadewarden
-								{ "n", 107973 },	-- Emmarel Shadewarden
+							["qgs"] = {
+								102478,	-- Emmarel Shadewarden
+								107317,	-- Emmarel Shadewarden
+								107973,	-- Emmarel Shadewarden
 							},
 							["coords"] = {
 								{ 59.8, 53.0, LEGION_DALARAN },
@@ -149,32 +152,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 						q(40392, {	-- Call of the Marksman
 							["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
-							["providers"] = {
-								{ "n", 103415 },	-- Courier Larkspur
-								{ "n", 103741 },	-- Courier Larkspur
+							["qgs"] = {
+								103415,	-- Courier Larkspur
+								103741,	-- Courier Larkspur
 							},
 							["coord"] = { 71.5, 49.8, LEGION_DALARAN },
 						}),
 						q(40400, {	-- Clandestine Operation (A)
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 40392 },	-- Call of the Marksman
 							["provider"] = { "n", 100190 },	-- Vereesa Windrunner
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
 							["maps"] = { 714 },	-- Niskara (Scenario Map)
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(40402, {	-- Clandestine Operation (H, Non-BloodElf)
-							["races"] = exclude(BLOODELF, HORDE_ONLY),
 							["sourceQuests"] = { 40392 },	-- Call of the Marksman
 							["provider"] = { "n", 100190 },	-- Vereesa Windrunner
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
 							["maps"] = { 714 },	-- Niskara (Scenario Map)
+							["races"] = exclude(BLOODELF, HORDE_ONLY),
 						}),
 						q(40403, {	-- Clandestine Operation (H, BloodElf only)
-							["races"] = { BLOODELF },
 							["sourceQuests"] = { 40392 },	-- Call of the Marksman
 							["provider"] = { "n", 100190 },	-- Vereesa Windrunner
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
 							["maps"] = { 714 },	-- Niskara (Scenario Map)
+							["races"] = { BLOODELF },
 						}),
 						q(40419, {	-- Rescue Mission
 							["sourceQuests"] = {
@@ -184,17 +187,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							},
 							["provider"] = { "n", 100190 },	-- Vareesa Windrunner
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
-							["g"] = {
+							["groups"] = {
 								i(128826, {	-- Thas'dorah, Legacy of the Windrunners
-									artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									},
 								}),
 							},
 						}),
 						q(40952, {	-- Hunter to Hunter
+							["description"] = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["altQuests"] = { 41009 },	-- Hunter to Hunter
 							["provider"] = { "n", 102570 },	-- Vereesa Windrunner
-							["description"] = "To obtain this quest you must choose to search for the |cffffff9aMarksmanship|r artifact FIRST.",
 							["maps"] = { LEGION_DALARAN },
 						}),
 					}),
@@ -206,10 +212,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								44366,	-- One Last Adventure
 							},
 							["sourceQuestNumRequired"] = 1,
-							["providers"] = {
-								{ "n", 102478 },	-- Emmarel Shadewarden
-								{ "n", 107317 },	-- Emmarel Shadewarden
-								{ "n", 107973 },	-- Emmarel Shadewarden
+							["qgs"] = {
+								102478,	-- Emmarel Shadewarden
+								107317,	-- Emmarel Shadewarden
+								107973,	-- Emmarel Shadewarden
 							},
 							["coords"] = {
 								{ 59.8, 53.0, LEGION_DALARAN },
@@ -223,15 +229,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 						q(40385, {	-- The Spear in the Shadow
 							["sourceQuests"] = { 39427 },	-- The Eagle Spirit's Blessing
-							["providers"] = {
-								{ "n", 110821 },	-- Apata Highmountain
-								{ "n", 110986 },	-- Apata Highmountain
+							["qgs"] = {
+								110821,	-- Apata Highmountain
+								110986,	-- Apata Highmountain
 							},
 							["coord"] = { 60.8, 80.9, HIGHMOUNTAIN },
 							["maps"] = { 694 },	-- Helmouth Shallows (Scenario Map)
-							["g"] = {
+							["groups"] = {
 								i(128808, {	-- Talonclaw
-									artifact(125),	-- Talonclaw
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(125),	-- Talonclaw
+									},
 								}),
 							},
 						}),
@@ -245,7 +254,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 103693 },	-- Outfitter Reynolds
 						["coord"] = { 44.6, 49.0, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							i(139710),	-- Mask of the Unseen Path
 						},
 					}),
@@ -311,7 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42519 },	-- Rise, Champions
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							follower(593),	-- Emmarel Shadewarden
 						},
 					}),
@@ -319,7 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42519 },	-- Rise, Champions
 						["provider"] = { "n", 107315 },	-- Loren Stormhoof <Skyhorn Emissary>
 						["coord"] = { 52.0, 55.6, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							follower(742),	-- Loren Stormhoof
 						},
 					}),
@@ -385,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42391 },	-- Bite of the Beast
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
 						["coord"] = { 34.7, 41.6, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							follower(744),	-- Beastmaster Hilaire
 						},
 					}),
@@ -393,7 +402,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42411 },	-- Champion: Beastmaster Hilaire
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire
 						["coord"] = { 34.7, 41.6, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							artifact(454),	-- Titanstrike
 							artifact(211),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(469),	-- Talonclaw
@@ -419,7 +428,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42392 },	-- Survive the Night
 						["provider"] = { "n", 107425 },	-- Rexxar
 						["coord"] = { 36.7, 35.4, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
 							follower(743),	-- Rexxar
 						},
 					}),
@@ -463,10 +472,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["repeatable"] = true,	-- Aiding Our Allies
 					}),
 					q(42403, {	-- Highmountain Hunters
-						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 42394 },	-- Unseen Protection
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
+						["isBreadcrumb"] = true,
 					}),
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["sourceQuests"] = {
@@ -475,7 +484,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
 						["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
 							follower(746),	-- Addie Fizzlebog
 							i(139714),	-- Wristwraps of the Unseen Path
 						},
@@ -487,7 +496,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						},
 						["provider"] = { "n", 94409 },	-- Hemet Nesingwary
 						["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
 							follower(745),	-- Hemet Nesingwary
 						},
 					}),
@@ -500,12 +509,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42397 },	-- Baron and the Huntsman
 						["provider"] = { "n", 107981 },	-- Huntsman Blake
 						["coord"] = { 80.1, 66.2, STORMHEIM },
+						["groups"] = {
+							i(138299),	-- Ancient Bones (QI!)
+						},
 					}),
 					q(42412, {	-- Champion: Huntsman Blake
 						["sourceQuests"] = { 42398 },	-- Awakening the Senses
 						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
 						["coord"] = { 80.1, 66.2, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							follower(747),	-- Huntsman Blake
 						},
 					}),
@@ -569,11 +581,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 108456 },	-- Halduron Brightwing
 						["coord"] = { 43.1, 6.1, TRUESHOT_LODGE },
+						["groups"] = {
+							i(138273),	-- Azure Ore (QI!)
+						},
 					}),
 					q(43182, {	-- The Missing Vessel
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
 						["provider"] = { "n", 107966 },	-- Archmage Khadgar
 						["coord"] = { 42.9, 25.4, TRUESHOT_LODGE },
+						["groups"] = {
+							i(139041),	-- Arcane Vessel Fragment (QI!)
+						},
 					}),
 					q(42408, {	-- Required Reagents
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
@@ -620,7 +638,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
 						["maps"] = { 723 },	-- Violet Hold (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(139707),	-- Hauberk of the Unseen Path
 							title(335),	-- Huntmaster <Name>
 						},
@@ -629,22 +647,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
 						["provider"] = { "n", 108620 },	-- Halduron Brightwing <Ranger-General of the Farstriders>
 						["coord"] = { 49.9, 65.7, 723 },
-						["g"] = {
+						["groups"] = {
 							follower(748),	-- Halduron Brightwing
 						},
 					}),
 					q(44090, {	-- Pledge of Loyalty
+						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
 						["sourceQuests"] = { 40959 },	-- The Campaign Begins
 						["provider"] = { "n", 113327 },	-- Snowfeather
 						["maps"] = { LEGION_DALARAN },
 						["isBreadcrumb"] = true,
-						["description"] = "After completing |cffffff00The Campaign Begins|r, return to Dalaran and this NPC will approach you within a few seconds.",
 					}),
 					q(43423, {	-- A Hero's Weapon
 						["sourceQuests"] = { 42659 },	-- In Defense of Dalaran
 						["provider"] = { "n", 110505 },	-- Emmarel Shadewarden
 						["coord"] = { 47.7, 49.3, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							artifact(448),	-- Titanstrike
 							artifact(223),	-- Thas'dorah, Legacy of the Windrunners
 							artifact(475),	-- Talonclaw
@@ -655,8 +673,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuest"] = 43423,	-- A Hero's Weapon
 						["provider"] = { "n", 118429 },	-- Injured Archer
 						["coord"] = { 49.0, 45.2, TRUESHOT_LODGE },
-						["isBreadcrumb"] = true,
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
+						["isBreadcrumb"] = true,
 					}),
 					q(46023, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 46022,	-- An Urgent Warning
@@ -683,7 +701,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 117308 },	-- D'Bynn
 						["coord"] = { 52.2, 48.9, SURAMAR },
 						["timeline"] = { ADDED_7_2_0 },
-						["g"] = {
+						["groups"] = {
 							i(143788),	-- Manaroot (QI!)
 						},
 					}),
@@ -698,7 +716,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 57.5, 44.8, SURAMAR },
 						["timeline"] = { ADDED_7_2_0 },
-						["g"] = {
+						["groups"] = {
 							i(143830),	-- Relyn's Control Orb (QI!)
 						},
 					}),
@@ -739,7 +757,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuests"] = { 46235 },	-- Secured Surroundings
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
 						["coord"] = { 44.8, 61.1, BROKEN_SHORE },
-						["g"] = {
+						["groups"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
 					})),
@@ -754,7 +772,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 119943 },	-- Golden Letter
 						["coord"] = { 42.9, 45.7, TRUESHOT_LODGE },
 						["maps"] = { 877 },	-- Fields of the Eternal Hunt (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							mount(229386),	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
 						},
 					})),
@@ -768,7 +786,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuest"] = 41009,	-- Hunter to Hunter
 						["provider"] = { "n", 110424 },	-- Image of Mimiron
 						["coord"] = { 44.4, 45.0, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							i(138393),	-- Essence Swapper
 						},
 					}),
@@ -796,20 +814,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					-- Hunter Hati Reborn Questline (BfA)
-					q(55516, {	-- Spark of Genius
-						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 72.8, 14.0, BORALUS },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
 					q(54913, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 47.8, 89.4, DAZARALOR },
+						["coords"] = {
+							{ 72.8, 14.0, BORALUS },
+							{ 47.8, 89.4, DAZARALOR },
+						},
+						["timeline"] = { ADDED_8_1_5 },
+					}),
+					q(55516, {	-- Spark of Genius
+						["provider"] = { "n", 152002 },	-- Image of Mimiron
+						["coords"] = {
+							{ 72.8, 14.0, BORALUS },
+							{ 47.8, 89.4, DAZARALOR },
+						},
 						["timeline"] = { ADDED_8_1_5 },
 					}),
 					q(54915, {	-- Telemetry Online
 						["sourceQuests"] = {
-							54913,	-- Spark of Genius (H)
-							55516,	-- Spark of Genius (A)
+							54913,	-- Spark of Genius
+							55516,	-- Spark of Genius
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
@@ -821,7 +845,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 						["timeline"] = { ADDED_8_1_5 },
-						["g"] = {
+						["groups"] = {
 							i(166895),	-- Thunderspark (QI!)
 						},
 					}),
@@ -830,7 +854,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 149870 },	-- Grif Wildheart
 						["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
 						["timeline"] = { ADDED_8_1_5 },
-						["g"] = {
+						["groups"] = {
 							i(167061),	-- Thunderspark (QI!)
 						},
 					}),
@@ -844,7 +868,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["sourceQuest"] = 54918,	-- Spark of Imagination
 						["provider"] = { "n", 151061 },	-- Mimiron
 						["coord"] = { 43.3, 38.8, 745 },
-						["g"] = {
+						["groups"] = {
 							spell(292689),	-- Hati Reborn
 						},
 					})),
@@ -865,8 +889,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
 						["crs"] = { 105099 },	-- Dark Ranger Velonara
 						["coord"] = { 52.6, 50.3, TRUESHOT_LODGE },
-						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
-						["g"] = {
+						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her. Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two. Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
+						["groups"] = {
 							i(143663, {	-- Dark Ranger's Hood
 								["timeline"] = { ADDED_7_1_0 },
 							}),
@@ -894,7 +918,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
 						["coord"] = { 44.6, 48.8, TRUESHOT_LODGE },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
@@ -949,7 +973,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							i(147580, {	-- Tome of the Hybrid Beast (CI!)
 								["sourceQuest"] = 46337,	-- Night of the Wilds
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
@@ -969,7 +993,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					n(103325, {	-- Uthrok
 						["coord"] = { 58.9, 50.1, TRUESHOT_LODGE },
-						["g"] = {
+						["groups"] = {
 							i(11304, {	-- Fine Bow
 								["isLimited"] = true,
 							}),

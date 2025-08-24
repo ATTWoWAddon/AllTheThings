@@ -15,51 +15,51 @@ local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT!)
 });
 local GREATAXE_OF_UNRELENTING_PURSUIT = i(180154);
 local STAR_LAKE_AMPHITHEATER = n(STAR_LAKE_AMPHITHEATER,   {
-	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
 	["questID"] = 61633,
 	["isDaily"] = true,
 	["coord"] = { 41.5, 44.8, ARDENWEALD },
 	["icon"] = 1354190,
 	["crs"] = { 171743 },	-- Dapperdew
-	["g"] = {
+	["groups"] = {
 		n(166135, {	-- Astra, As Azshara <An Infamous Queen>
 			["questID"] = 61201,
 			["isDaily"] = true,
-			["g"] = {GLIMMERLIGHT_STAFF},
+			["groups"] = {GLIMMERLIGHT_STAFF},
 		}),
 		n(166145, {	-- Dreamweaver, As N'Zoth <An Eldritch Abomination>
 			["questID"] = 61206,
 			["isDaily"] = true,
-			["g"] = {TWILIGHT_BLOOM},
+			["groups"] = {TWILIGHT_BLOOM},
 		}),
 		n(166142, {	-- Glimmerdust, As Jaina <A Magic Ice Princess>
 			["questID"] = 61205,
 			["isDaily"] = true,
-			["g"] = {EVERCHILL_BRAMBLES},
+			["groups"] = {EVERCHILL_BRAMBLES},
 		}),
 		n(166139, {	-- Glimmerdust, As Kil'jaeden <of The Burning Legion>
 			["questID"] = 61203,
 			["isDaily"] = true,
-			["g"] = {GLIMMERDUSTS_GRAND_DESIGN},
+			["groups"] = {GLIMMERDUSTS_GRAND_DESIGN},
 		}),
 		n(166138, {	-- Mi'kai, As Argus, the Unmaker <A Corrupted World Soul>
 			["isDaily"] = true,
 			["questID"] = 61202,
-			["g"] = {MIKAI_DEATHSCYTHE},
+			["groups"] = {MIKAI_DEATHSCYTHE},
 		}),
 		n(166146, {	-- Niya, As Xavius <Some Kind of Evil Sylvar>
 			["questID"] = 61207,
 			["isDaily"] = true,
-			["g"] = {DREAMERS_MENDING},
+			["groups"] = {DREAMERS_MENDING},
 		}),
 		n(166140, {	-- Senthii, As Gul'dan <From an Alternate Timeline>
 			["questID"] = 61204,
 			["isDaily"] = true,
-			["g"] = {MURMURS_IN_THE_DARK},
+			["groups"] = {MURMURS_IN_THE_DARK},
 		}),
 		n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
 			["coord"] = { 43.0, 47.0, ARDENWEALD },
-			["g"] = {SILKY_SHIMMERMOTH},	-- (MOUNT!)
+			["groups"] = {SILKY_SHIMMERMOTH},	-- (MOUNT!)
 		}),
 	},
 });
@@ -68,7 +68,7 @@ local VALFIR = n(168647, {	-- Valfir the Unrelenting
 	["questID"] = 61632,
 	["isDaily"] = true,
 	["coord"] = { 30.0, 55.0, ARDENWEALD },
-	["g"] = {
+	["groups"] = {
 		i(180730),	-- Wild Glimmerfur Prowler (MOUNT!)
 		GREATAXE_OF_UNRELENTING_PURSUIT,
 		i(182176),	-- Shadowstalker Soul
@@ -79,12 +79,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641394,
-			["g"] = {
+			["groups"] = {
 				n(ANIMA_CONDUCTOR, {
 					["icon"] = 3854013,
-					["g"] = sharedData({ ["icon"] = 3854013 }, {
+					["groups"] = sharedData({ ["icon"] = 3854013 }, {
 						n(REWARDS, {
-							["g"] = {
+							["groups"] = {
 								currency(GRATEFUL, {
 									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
 								}),
@@ -107,11 +107,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 							n(TREASURES, {
 								o(356820, {	-- Large Lunarlight Pod
-									["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
+									["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin. To unlock the chest, run over 5 nearby Lunarlight Buds.",
 									["isDaily"] = true,
 									["questID"] = 61691,
 									["coord"] = { 51.7, 32.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										n(173005,{	-- Lunarlight Bud
 											["questID"] = 61696,
 											["isDaily"] = true,
@@ -172,13 +172,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(QUESTS, sharedData({ ["coord"] = { 59.7, 52.8, ARDENWEALD }, ["isDaily"] = true }, {
 								q(62160, {	-- A Bundle of Lilies
 									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["g"] = {
+									["groups"] = {
 										i(182659),	-- Night Lilly (QI!)
 									},
 								}),
 								q(62224, {	-- A Thread of Hope
 									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["g"] = {
+									["groups"] = {
 										i(183041),	-- Anima-Infused Silk (QI!)
 									},
 								}),
@@ -187,36 +187,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(61875, {	-- Doing the Dew
 									["provider"] = { "n", 173277 },	-- Teendynneetll
-									["g"] = {
+									["groups"] = {
 										i(182333),	-- Thistledrop Dew (QI!)
 									},
 								}),
 								q(61950, {	-- Hunting the Wilds
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-									["g"] = {
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
+									["groups"] = {
 										i(182387),	-- Feral Anima (QI!)
 									},
 								}),
 								q(61968, {	-- Just Wing It
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-									["g"] = {
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
+									["groups"] = {
 										i(182450),	-- Perfect Ardenmoth Wing Scale (QI!)
 									},
 								}),
 								q(62081, {	-- Return Those Animacones!
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-									["g"] = {
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
+									["groups"] = {
 										i(182619),	-- Looted Animacone (QI!)
 									},
 								}),
 								q(62155, {	-- Runestone Roundup
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
-									["g"] = {
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
+									["groups"] = {
 										i(182647),	-- Runestone Spike (QI!)
 									},
 								}),
 								q(62057, {	-- Those Who Hunger
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 								}),
 								q(61985, {	-- Wake the Sleepers
 									["provider"] = { "n", 173277 },	-- Teendynneetll
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									i(182611),	-- Fae Flute (QI!)
 								}),
 								q(61394, {	-- Gormling Piper: Tranquil Pools
-									["g"] = {
+									["groups"] = {
 										i(181284),	-- Gormling in a Bag (QI!)
 									},
 								}),

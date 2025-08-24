@@ -88,6 +88,12 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 					i(38186, {	-- Ethereal Credit
 						["description"] = "To obtain this, summon your Soul-Trader pet and kill players or NPCs which are no less than 8 levels below you.",
 					}),
+					i(38291, {	-- Ethereal Mutagen
+						["cost"] = { { "i", 38186, 100 } },	-- 100x Ethereal Credit
+					}),
+					i(38300, {	-- Diluted Ethereum Essence
+						["cost"] = { { "i", 38186, 50 } },	-- 50 Ethereal Credit
+					}),
 					i(38160, {	-- Soul-Trader's Bindings
 						["cost"] = { { "i", 38186, 1000 } },	-- 1000x Ethereal Credit
 					}),

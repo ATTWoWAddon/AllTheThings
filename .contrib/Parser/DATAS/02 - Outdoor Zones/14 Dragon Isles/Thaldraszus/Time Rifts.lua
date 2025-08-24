@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["maps"] = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
 						crit(61885, {	-- Azmerloth
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							18641,	-- To All The Squirrels I've BEEN Before
 							18635,	-- Verified Rifter
 						}},
-						["g"] = {
+						["groups"] = {
 							i(192765),	-- Bestowed Sandskimmer (MOUNT!)
 						},
 					})),
@@ -127,12 +127,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208347,	-- Provisioner Qorra <Azq'roth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404314,{	-- Chipped Stone Tablet
 							["coord"] = { 45.7, 23.9, AZQROTH },
-							["g"] = {
+							["groups"] = {
 								i(206859),	-- Chipped Stone Tablet (QI!)
 							},
 						}),
@@ -143,12 +143,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208341,	-- Falara Nightsong <Azwrath Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(403786,{	-- Antlered Skull
 							["coord"] = { 75.1, 41.9, AZEWRATH },
-							["g"] = {
+							["groups"] = {
 								i(206578),	-- An Antlered Skull (QI!)
 							},
 						}),
@@ -159,12 +159,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208338,	-- Baron Silver <Azmourne Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404492,{	-- Gilded Vase
 							["coord"] = { 40.1, 39.7, AZMOURNE },
-							["g"] = {
+							["groups"] = {
 								i(207003),	-- Gilded Vase (QI!)
 							},
 						}),
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208345,	-- Sir Finely Mrrgglton <Azmerloth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208343,	-- Sorotis <Ulderoth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208342,	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -211,12 +211,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208346,	-- Warden Krizzik <Warlands Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404242,{	-- Oil Soaked Book
 							["coord"] = { 12.0, 30.9, THE_WARLANDS },
-							["g"] = {
+							["groups"] = {
 								i(206749),	-- Oil-Soaked Log Book (QI!)
 							},
 						}),
@@ -247,71 +247,71 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 					},
 				}),
-				n(FACTIONS, {
+				header(HEADERS.Faction, FACTION_SORIDORMI, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
-						["g"] = {
-							ach(18615,	-- Legend of the Multiverse
-							bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
-								title(513),	-- <Name> Unparalleled
-							})),
-							q(77241, {	-- A Foreseeable Friendship
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 2 },
-								["g"] = {
-									i(208058),	-- Minute Glass (TOY!)
-								},
-							}),
-							q(77248, {	-- A Recognition of Skill
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 3 },
-								["g"] = {
-									iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
-								},
-							}),
-							q(77249, {	-- One of Us
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 4 },
-								["g"] = {
-									i(207027),	-- Greater Encapsulated Destiny
-								},
-							}),
-							q(77250, {	-- Realized Potentional
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 5 },
-								["g"] = {
-									i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
-									spell(417360),	-- Unparalleled (TITLE!)
-								},
-							}),
-						},
+					}),
+					ach(18615,	-- Legend of the Multiverse
+					bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
+						title(513),	-- <Name> Unparalleled
+					})),
+					n(QUESTS, {
+						q(77241, {	-- A Foreseeable Friendship
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 2 },
+							["groups"] = {
+								i(208058),	-- Minute Glass (TOY!)
+							},
+						}),
+						q(77248, {	-- A Recognition of Skill
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 3 },
+							["groups"] = {
+								iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
+							},
+						}),
+						q(77249, {	-- One of Us
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 4 },
+							["groups"] = {
+								i(207027),	-- Greater Encapsulated Destiny
+							},
+						}),
+						q(77250, {	-- Realized Potentional
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 5 },
+							["groups"] = {
+								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
+								spell(417360),	-- Unparalleled (TITLE!)
+							},
+						}),
 					}),
 				}),
 				n(QUESTS, {
 					q(77679, {	-- To Soridormi's Aid
 						["provider"] = { "n", 197574 },	-- Mairadormi
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
-						["isBreadcrumb"] = true,
-						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
-						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 						["timeline"] = { ADDED_10_1_5 },
+						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 					}),
 					-- ideally want the Object with coords with provider Item inside...
 					q(76548, {	-- A Fishy Gift
 						["provider"] = { "n", 207756 },	-- Murloc You
 						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map) / follow player
-						["g"] = {
+						["groups"] = {
 							i(207008),	-- A Fish (QI!)
 						},
 					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
-						["g"] = {
+						["groups"] = {
 							i(206599),	-- Azmerlothian Hourglass (QI!)
 						},
 					}),
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76521, {	-- Buzzing Boffins
 						["provider"] = { "n", 207509 },	-- Boffins
 						["coord"] = { 77.5, 64.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206957),	-- Boffins (QI!)
 						},
 					}),
@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207525 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
-						["g"] = {
+						["groups"] = {
 							i(206962),	-- Watcher's Log (QI!)
 						},
 					}),
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76459, {	-- The Resistance
 						["provider"] = { "n", 207297 },	-- Ellemayne
 						["coord"] = { 67.4, 63.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206775),	-- Map to Suramar (QI!)
 						},
 					}),
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 39.4, 58.4, AZMOURNE },
 							{ 39.7, 58.0, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
-						["g"] = {
+						["groups"] = {
 							i(206638),	-- Azmourne's Corrupted Ashbringer (QI!)
 						},
 					}),
@@ -382,13 +382,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(77236, {	-- When Time Needs Mending
+						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
+						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
 						["maxReputation"] = { FACTION_SORIDORMI, 5 },
-						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["isWeekly"] = true,
-						["sourceQuest"] = 77679,	-- To Soridormi's Aid
-						["g"] = {
+						["groups"] = {
 							i(208090, {	-- Contained Paracausality
 								i(207030, {	-- Dilated Time Capsule (10.1.5)
 									["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(EVENT_COMPLETION, {
 					i(207582),	-- Box of Tampered Reality
 					i(207584, {	-- Box of Volatile Reality
-						["g"] = {
+						["groups"] = {
 							i(207002),	-- Encapsulated Destiny
 						},
 					}),
@@ -430,7 +430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(TREASURES, {
 					o(404432,{	-- Bload Soaked Book
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206984),	-- Blood-Soaked Book (QI!)
 						},
 					}),
@@ -440,19 +440,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
-						["g"] = {
+						["groups"] = {
 							i(206602),	-- Mechanized Cog (QI!)
 						},
 					}),
 					o(404480,{	-- Ragged Mantid Sword
 						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206998),	-- Amber Sword (QI!)
 						},
 					}),
 					n(206587, {
 						-- ["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206564),	-- Time-Displaced Titanic Disc (QI!)
 						},
 					}),
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},FILTERFUNC_itemID,{
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206680, {	-- Reins of the Scourgebound Vanquisher (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208341, {	-- Falara Nightsong <Azwrath Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206676, {	-- Felstorm Dragon (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208342, {	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206679, {	-- Perfected Juggernaut (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208347, {	-- Provisioner Qorra <Azq'roth Vendor>
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206678, {	-- Sulfur Hound's Leash (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -617,7 +617,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208345, {	-- Sir Finely Mrrgglton <Azmerloth Vendor>
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(208009, {	-- Gill'dan (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
@@ -628,7 +628,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208548, {	-- Shi Everbreeze
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = bubbleDownFiltered({
+						["groups"] = bubbleDownFiltered({
 							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
 						},FILTERFUNC_itemID,{
 							filter(CLOTH, {
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							i(208945, {	-- Paracausal Crate
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
-								["g"] = {
+								["groups"] = {
 									currency(PARACAUSAL_FLAKES),
 								},
 							}),
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208343, {	-- Sorotis <Ulderoth Vendor>
 						["coord"] = { 51.1, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206675, {	-- Gold-Toed Albatross (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208346, {	-- Warden Krizzik <Warlands Vendor>
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(208011, {	-- Obsidian Warwhelp (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(207093, {	-- Jingoist's Mail Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206860),	-- Jingoist's Chainmail
 										i(206869),	-- Jingoist's Vestment
 									},
@@ -803,28 +803,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Cloak/Shoulders ------
 								i(207082, {	-- Jingoist's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206824),	-- Jingoist's Epaulets
 										i(206829),	-- Jingoist's Shroud
 									},
 								}),
 								i(207080, {	-- Jingoist's Leather Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206831),	-- Jingoist's Cloak
 										i(206836),	-- Jingoist's Spaulders
 									},
 								}),
 								i(207078, {	-- Jingoist's Mail Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206868),	-- Jingoist's Drape
 										i(206863),	-- Jingoist's Mantle
 									},
 								}),
 								i(207075, {	-- Jingoist's Plate Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206870),	-- Jingoist's Cape
 										i(206875),	-- Jingoist's Pauldrons
 									},
@@ -832,28 +832,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Feets/Waist ------
 								i(207071, {	-- Jingoist's Cloth Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206823),	-- Jingoist's Cord
 										i(206828),	-- Jingoist's Treads
 									},
 								}),
 								i(207067, {	-- Jingoist's Leather Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206837),	-- Jingoist's Belt
 										i(206832),	-- Jingoist's Boots
 									},
 								}),
 								i(207064, {	-- Jingoist's Mail Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206862),	-- Jingoist's Clasp
 										i(206867),	-- Jingoist's Footpads
 									},
 								}),
 								i(207053, {	-- Jingoist's Plate Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206876),	-- Jingoist's Girdle
 										i(206871),	-- Jingoist's Warboots
 									},
@@ -861,28 +861,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Hands/Wrists ------
 								i(207072, {	-- Jingoist's Cloth Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206827),	-- Jingoist's Mitts
 										i(206822),	-- Jingoist's Wristwraps
 									},
 								}),
 								i(207068, {	-- Jingoist's Leather Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206838),	-- Jingoist's Bracers
 										i(206833),	-- Jingoist's Gloves
 									},
 								}),
 								i(207063, {	-- Jingoist's Mail Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206861),	-- Jingoist's Bonds
 										i(206866),	-- Jingoist's Grips
 									},
 								}),
 								i(207052, {	-- Jingoist's Plate Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-										["g"] = {
+										["groups"] = {
 										i(206872),	-- Jingoist's Gauntlets
 										i(206877),	-- Jingoist's Vambraces
 									},
@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(207094, {	-- Warmonger's Leather Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206840),	-- Warmonger's Cuirass
 										i(206844),	-- Warmonger's Vestment
 									},
@@ -950,28 +950,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Cloak/Shoulders ------
 								i(207081, {	-- Warmonger's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206812),	-- Warmonger's Epaulets
 										i(206819),	-- Warmonger's Shroud
 									},
 								}),
 								i(207079, {	-- Warmonger's Leather Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206849),	-- Warmonger's Cloak
 										i(206843),	-- Warmonger's Spaulders
 									},
 								}),
 								i(207077, {	-- Warmonger's Mail Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206850),	-- Warmonger's Drape
 										i(206855),	-- Warmonger's Mantle
 									},
 								}),
 								i(207076, {	-- Warmonger's Plate Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206887),	-- Warmonger's Cape
 										i(206882),	-- Warmonger's Pauldrons
 									},
@@ -979,28 +979,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Feets/Waist ------
 								i(207073, {	-- Warmonger's Cloth Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206810),	-- Warmonger's Cord
 										i(206818),	-- Warmonger's Treads
 									},
 								}),
 								i(207069, {	-- Warmonger's Leather Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206842),	-- Warmonger's Belt
 										i(206848),	-- Warmonger's Boots
 									},
 								}),
 								i(207066, {	-- Warmonger's Mail Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206856),	-- Warmonger's Clasp
 										i(206851),	-- Warmonger's Footpads
 									},
 								}),
 								i(207051, {	-- Warmonger's Plate Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206881),	-- Warmonger's Girdle
 										i(206886),	-- Warmonger's Warboots
 									},
@@ -1008,28 +1008,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Hands/Wrists ------
 								i(207074, {	-- Warmonger's Cloth Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206817),	-- Warmonger's Mitts
 										i(206809),	-- Warmonger's Wristwraps
 									},
 								}),
 								i(207070, {	-- Warmonger's Leather Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206841),	-- Warmonger's Bracers
 										i(206847),	-- Warmonger's Gloves
 									},
 								}),
 								i(207065, {	-- Warmonger's Mail Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206857),	-- Warmonger's Bonds
 										i(206852),	-- Warmonger's Grips
 									},
 								}),
 								i(207050, {	-- Warmonger's Plate Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206885),	-- Warmonger's Gauntlets
 										i(206880),	-- Warmonger's Vambraces
 									},
@@ -1097,27 +1097,27 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(76709),	-- after buying/loot 'Jeepers' (itemID 208010) (spellID 418931)
 				-- q(76655),	-- after buying/loot 'Jingoist's Breastplate' (itemID 206878) (spellID 418930)
 				-- q(76651),	-- after buying/loot 'Jingoist's Casque' (itemID 206865) (spellID 418929)
-				q(76623),	-- after buying/loot 'Jingoist's Cloth Armor Bag' (itemID 207082) (spellID 418928)
-				q(76622),	-- after buying/loot 'Jingoist's Cloth Equipment Bag' (itemID 207072) (spellID 418927)
-				q(76624),	-- after buying/loot 'Jingoist's Cloth Gear Bag' (itemID 207071) (spellID 418926)
+				q(76623, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Armor Bag' (itemID 207082) (spellID 418928)
+				q(76622, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Equipment Bag' (itemID 207072) (spellID 418927)
+				q(76624, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Gear Bag' (itemID 207071) (spellID 418926)
 				-- q(76645),	-- after buying/loot 'Jingoist's Cuirass' (itemID 206839) (spellID 418925)
 				-- q(76657),	-- after buying/loot 'Jingoist's Greathelm' (itemID 206873) (spellID 418924)
 				-- q(76646),	-- after buying/loot 'Jingoist's Headcover' (itemID 206834) (spellID 418923)
 				-- q(76639),	-- after buying/loot 'Jingoist's Hood' (itemID 206826) (spellID 418922)
-				q(76626),	-- after buying/loot 'Jingoist's Leather Armor Bag' (itemID 207080) (spellID 418921)
-				q(76625),	-- after buying/loot 'Jingoist's Leather Equipment Bag' (itemID 207068) (spellID 418920)
-				q(76627),	-- after buying/loot 'Jingoist's Leather Gear Bag' (itemID 207067) (spellID 418919)
+				q(76626, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Armor Bag' (itemID 207080) (spellID 418921)
+				q(76625, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Equipment Bag' (itemID 207068) (spellID 418920)
+				q(76627, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Gear Bag' (itemID 207067) (spellID 418919)
 				-- q(76641),	-- after buying/loot 'Jingoist's Leggings' (itemID 206825) (spellID 418918)
 				-- q(76653),	-- after buying/loot 'Jingoist's Legguards' (itemID 206864) (spellID 418917)
 				-- q(76659),	-- after buying/loot 'Jingoist's Legplates' (itemID 206874) (spellID 418916)
-				q(76630),	-- after buying/loot 'Jingoist's Mail Armor Bag' (itemID 207078) (spellID 418915)
-				q(76629),	-- after buying/loot 'Jingoist's Mail Equipment Bag' (itemID 207063) (spellID 418914)
-				q(76631),	-- after buying/loot 'Jingoist's Mail Gear Bag' (itemID 207064) (spellID 418913)
-				q(76628),	-- after buying/loot 'Jingoist's Mail Suit Bag' (itemID 207093) (spellID 418912)
-				q(76648),	-- after buying/loot 'Jingoist's Pantaloons' (itemID ) (spellID 418911)
-				q(76633),	-- after buying/loot 'Jingoist's Plate Armor Bag' (itemID 207075) (spellID 418910)
-				q(76632),	-- after buying/loot 'Jingoist's Plate Equipment Bag' (itemID 207052) (spellID 418909)
-				q(76634),	-- after buying/loot 'Jingoist's Plate Gear Bag' (itemID 207053) (spellID 418908)
+				q(76630, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Armor Bag' (itemID 207078) (spellID 418915)
+				q(76629, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Equipment Bag' (itemID 207063) (spellID 418914)
+				q(76631, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Gear Bag' (itemID 207064) (spellID 418913)
+				q(76628, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Suit Bag' (itemID 207093) (spellID 418912)
+				q(76648, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Pantaloons' (itemID ) (spellID 418911)
+				q(76633, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Armor Bag' (itemID 207075) (spellID 418910)
+				q(76632, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Equipment Bag' (itemID 207052) (spellID 418909)
+				q(76634, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Gear Bag' (itemID 207053) (spellID 418908)
 				-- q(76643),	-- after buying/loot 'Jingoist's Robe' (itemID 206821) (spellID 418907)
 				-- q(76635),	-- after buying/loot 'Jingoist's Slicer' (itemID 207014) (spellID 418905)
 				q(76712),	-- after buying/loot 'Killbot 9000' (itemID 208013) (spellID 418905)
@@ -1154,35 +1154,29 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				-- q(76656),	-- after buying/loot 'Warmonger's Breastplate' (itemID 206879) (spellID 418874)
 				-- q(76652),	-- after buying/loot 'Warmonger's Casque' (itemID 206853) (spellID 418872)
 				-- q(76650),	-- after buying/loot 'Warmonger's Chainmail' (itemID 206858) (spellID 418871)
-				q(76662),	-- after buying/loot 'Warmonger's Cloth Armor Bag' (itemID 207081) (spellID 418870)
-				q(76663),	-- after buying/loot 'Warmonger's Cloth Equipment Bag' (itemID 207073) (spellID 418869)
-				q(76661),	-- after buying/loot 'Warmonger's Cloth Gear Bag' (itemID 207074) (spellID 418868)
+				q(76662, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Armor Bag' (itemID 207081) (spellID 418870)
+				q(76663, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Equipment Bag' (itemID 207073) (spellID 418869)
+				q(76661, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Gear Bag' (itemID 207074) (spellID 418868)
 				-- q(76658),	-- after buying/loot 'Warmonger's Greathelm' (itemID 206884) (spellID 418867)
 				-- q(76647),	-- after buying/loot 'Warmonger's Headcover' (itemID 206846) (spellID 418866)
-				q(76666),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
-				q(76667),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
-				q(76664),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
-				q(76665),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
+				q(76666, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
+				q(76667, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
+				q(76664, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
+				q(76665, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
 				-- q(76642),	-- after buying/loot 'Warmonger's Leggings' (itemID 206814) (spellID 418861)
 				-- q(76654),	-- after buying/loot 'Warmonger's Legguards' (itemID 206854) (spellID 418860)
 				-- q(76660),	-- after buying/loot 'Warmonger's Legplates' (itemID 206883) (spellID 418859)
-				q(76669),	-- after buying/loot 'Warmonger's Mail Armor Bag' (itemID 207077) (spellID 418858)
-				q(76670),	-- after buying/loot 'Warmonger's Mail Equipment Bag' (itemID 207066) (spellID 418856)
-				q(76668),	-- after buying/loot 'Warmonger's Mail Gear Bag' (itemID 207065) (spellID 418855)
-				q(76649),	-- after buying/loot 'Warmonger's Pantaloons' (itemID 206845) (spellID 418854)
-				q(76672),	-- after buying/loot 'Warmonger's Plate Armor Bag' (itemID 207076) (spellID 418853)
-				q(76673),	-- after buying/loot 'Warmonger's Plate Equipment Bag' (itemID 207051) (spellID 418852)
-				q(76671),	-- after buying/loot 'Warmonger's Plate Gear Bag' (itemID 207050) (spellID 418851)
+				q(76669, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Armor Bag' (itemID 207077) (spellID 418858)
+				q(76670, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Equipment Bag' (itemID 207066) (spellID 418856)
+				q(76668, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Gear Bag' (itemID 207065) (spellID 418855)
+				q(76649, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Pantaloons' (itemID 206845) (spellID 418854)
+				q(76672, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Armor Bag' (itemID 207076) (spellID 418853)
+				q(76673, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Equipment Bag' (itemID 207051) (spellID 418852)
+				q(76671, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Gear Bag' (itemID 207050) (spellID 418851)
 				-- q(76674),	-- after buying/loot 'Warmonger's Ripper' (itemID 207015) (spellID 418850)
 				-- q(76644),	-- after buying/loot 'Warmonger's Robe' (itemID 206808) (spellID 418849)
 				-- q(76640),	-- after buying/loot 'Warmonger's Skullcap' (itemID 206816) (spellID 418848)
-
-				q(76705),	-- after buying/loot Ensemble: Decorous Garments (itemID 207049) (spellID 418947)
-				q(76707),	-- after buying/loot Ensemble: Haukbert of Discipline (itemID 207047) (spellID 418946)
-				q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
-				q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
-
-				q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
+				-- q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 			}),
 		}),
 	}),

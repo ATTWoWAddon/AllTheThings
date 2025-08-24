@@ -6,7 +6,8 @@ BOUNTY = createHeader({
 	icon = 2125377,
 	text = {
 		en = "Bounty",
-		es = "Prima",
+		es = "Recompensa",
+		mx = "Recompensa",
 		de = "Kopfgeld",
 		fr = "Prime",
 		it = "Premio",
@@ -42,32 +43,32 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 		}),
 		n(QUESTS, {
 			q(58274, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
-				["races"] = ALLIANCE_ONLY,
 				["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					title(414),	-- <Name>, Servant of N'Zoth
 					i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 					i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 				},
 			})),
 			q(58273, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } },{	-- Servant of N'Zoth
-				["races"] = HORDE_ONLY,
 				["description"] = "Granted upon killing 10 Alliance players without dying after you became an Assassin.",
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					title(414),	-- <Name>, Servant of N'Zoth
 					i(173951),	-- N'lyeth, Sliver of N'Zoth (TOY!)
 					i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 				},
 			})),
 			q(52786, bubbleDownSelf({	-- The Alliance Slayer
-				["races"] = HORDE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
+				["races"] = HORDE_ONLY,
 			},{
 				title(376),	-- <Name> the Alliance Slayer
 			})),
 			q(52784, bubbleDownSelf({	-- The Horde Slayer
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
+				["races"] = ALLIANCE_ONLY,
 			},{
 				title(375),	-- <Name> the Horde Slayer
 			})),
@@ -136,7 +137,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, DORNOGAL, AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS,
 					-- #endif
 				},
-				["g"] =	{
+				["groups"] =	{
 					title(492),	-- Skyscourge <Name>
 				},
 			})),
@@ -174,7 +175,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					16593,	-- Tour of Duty: Thaldraszus
 					16599,	-- A Champion's Pursuit
 				}},
-				["g"] =	{
+				["groups"] =	{
 					title(479),	-- Malicious <Name>
 				},
 			}),
@@ -254,7 +255,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					40084,	-- Tour of Duty: The Ringing Deeps
 					40087,	-- Unbound Battle
 				}},
-				["g"] = {
+				["groups"] = {
 					title(562),	-- <Name>, Slayer of the Deeps
 					i(223158),	-- Raging Cinderbee (MOUNT!)
 				},

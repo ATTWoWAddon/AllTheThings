@@ -206,224 +206,223 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(QUESTS, {
 				q(8368, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 10, 19 },
 				}),
 				q(8426, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8427, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8428, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8429, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8430, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8389, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8368,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 10, 19 },
 				}),
 				q(8431, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8426,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8432, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8427,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8433, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8428,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8434, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8429,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8435, {	-- Battle of Warsong Gulch
-					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8430,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15350,	-- Horde Warbringer
 					["timeline"] = { REMOVED_2_0_1 },
-					["repeatable"] = true,
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8372, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 10, 19 },
 				}),
 				q(8399, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8400, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8401, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8402, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8403, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
 				q(8386, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 10, 19 },
 				}),
 				q(8404, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8405, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8406, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8407, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 50, 59 },
 				}),
 				q(8408, {	-- Fight for Warsong Gulch
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
-					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 60, 69 },
 				}),
 				q(7868, {	-- Outrider Advanced Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 20.0, NORTHERN_BARRENS },
@@ -431,6 +430,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.6, 8.4, THE_BARRENS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(45, 45, 10),
 					["groups"] = {
@@ -439,7 +439,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7866, {	-- Outrider Basic Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 20.0, NORTHERN_BARRENS },
@@ -447,6 +446,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.6, 8.4, THE_BARRENS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 25, 34 },
 					["groups"] = {
@@ -455,7 +455,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(7867, {	-- Outrider Standard Care Package
 					["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
-					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.2, 20.0, NORTHERN_BARRENS },
@@ -463,6 +462,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 46.6, 8.4, THE_BARRENS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 35, 44 },
 					["groups"] = {

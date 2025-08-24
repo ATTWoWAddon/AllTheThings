@@ -9,7 +9,6 @@ root(ROOTS.Zones, {
 				["sym"] = {{"select","speciesID",
 					1708,	-- Albatross Chick (PET!)
 					1743,	-- Black-Footed Fox Kit (PET!)
-					380,	-- Bucktooth Flapper (PET!)
 					647,	-- Grizzly Squirrel (PET!)
 					550,	-- Highlands Mouse (PET!)
 					645,	-- Highlands Turkey (PET!)
@@ -18,17 +17,19 @@ root(ROOTS.Zones, {
 					1713,	-- Long-Eared Owl (PET!)
 					633,	-- Mountain Skunk (PET!)
 					1441,	-- Mud Jumper (PET!)
-					743,	-- Rapan Whelk (PET!)
 				}},
 				["groups"] = {
+					pet(380, {	-- Bucktooth Flapper (PET!)
+						["coord"] = { 35.8, 52.2, STORMHEIM },
+					}),
 					pet(1712, {	-- Golden Eaglet (PET!)
 						["description"] = "Found in yellow areas on the map in Stormheim.",
 					}),
 					pet(1744, {	-- Mist Fox Kit (PET!)
-						["coords"] = {
-							{ 47.8, 30.6, HIGHMOUNTAIN },
-							{ 43.2, 21.2, STORMHEIM },
-						},
+						["coord"] = { 43.2, 21.2, STORMHEIM },
+					}),
+					pet(743, {	-- Rapana Whelk (PET!)
+						["coord"] = { 56.8, 45.5, STORMHEIM },
 					}),
 					pet(1749, {	-- Rose Taipan (PET!)
 						["description"] = "Found in yellow areas on the map in Stormheim.",
@@ -51,79 +52,79 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							pet(1975),	-- Direbeak Hatchling (PET!)
 							q(44977, {	-- Allies in Stormheim
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44976,	-- Hunting Lesson: Rose Taipan
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44982, {	-- Direbeak Bonding
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44981,	-- The Unkindly Faction
-								["g"] = {
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
+								["groups"] = {
 									i(142495),	-- Fake Teeth (TOY!)
 								},
 							}),
 							q(44988, {	-- Direbeak Reunion
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44987,	-- Direbeak Team Rumble
-								["g"] = {
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
+								["groups"] = {
 									i(137579),	-- Brilliant Direbeak (MOUNT!)
 								},
 							}),
 							q(44979, {	-- Dire Prey
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44978,	-- Direbeak Team Up
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44987, {	-- Direbeak Team Rumble
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44986,	-- Teamwork Lesson: Krosus
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44978, {	-- Direbeak Team Up
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44977,	-- Allies in Stormheim
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44983, {	-- Hunting Lesson: Golden Eaglet
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44982,	-- Direbeak Bonding
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44976, {	-- Hunting Lesson: Rose Taipan
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuests"] = {
 									44974,	-- The Smell of Dwarves
 									44975,	-- The Smell of Tauren
 								},
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44985, {	-- Hunting Lesson: Stormstruck Beaver
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44984,	-- Teamwork Lesson: Fenryr
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44980, {	-- Hunting Lesson: Tiny Apparition
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44979,	-- Dire Prey
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44973, {	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44984, {	-- Teamwork Lesson: Fenryr
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44983,	-- Hunting Lesson: Golden Eaglet
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44986, {	-- Teamwork Lesson: Krosus
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44985,	-- Hunting Lesson: Stormstruck Beaver
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44974, {	-- The Smell of Dwarves
+								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 							}),
 							q(44975, {	-- The Smell of Tauren
+								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 							}),
 							q(44981, {	-- The Unkindly Faction
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44980,	-- Hunting Lesson: Tiny Apparition
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 						},
 					})),

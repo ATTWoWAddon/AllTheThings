@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=".config/classic/05 - Mists of Pandaria.config" config=".config/classic/Debug Mode.config"

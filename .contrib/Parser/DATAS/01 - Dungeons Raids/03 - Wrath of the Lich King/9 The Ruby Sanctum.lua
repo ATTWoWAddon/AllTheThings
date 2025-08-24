@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { ADDED_3_3_5 } }, {
 	inst(761, {	-- The Ruby Sanctum
 		["mapID"] = THE_RUBY_SANCTUM,
 		["coord"] = { 61.2, 52.7, DRAGONBLIGHT },
@@ -13,13 +13,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		["groups"] = {
 			n(QUESTS, {
 				q(26013, {	-- Assault on the Sanctum
-					["qg"] = 27990,	-- Krasus <Consort of the Queen>
 					["sourceQuest"] = 26012,	-- Trouble at Wyrmrest
+					["qg"] = 27990,	-- Krasus <Consort of the Queen>
 					["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 				}),
 				q(26034, {	-- The Twilight Destroyer
-					["qg"] = 40429,	-- Sanctum Guardian Xerestrasza
 					["sourceQuest"] = 26013,	-- Assault on the Sanctum
+					["qg"] = 40429,	-- Sanctum Guardian Xerestrasza
 					["groups"] = {
 						objective(1, {	-- 0/1 Halion slain
 							["provider"] = { "n", 39863 },	-- Halion
@@ -27,13 +27,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(26012, {	-- Trouble at Wyrmrest
-					["qg"] = 16128,	-- Rhonin
+					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
 					["sourceAchievements"] = {
 						4531,	-- Storming the Citadel (10 Player)
 						4604,	-- Storming the Citadel (25 Player)
 					},
+					["qg"] = 16128,	-- Rhonin
 					["coord"] = { 30.6, 48.6, NORTHREND_DALARAN },
-					["description"] = "You need to have cleared the first four bosses in Icecrown Citadel before this quest will be available to you.",
 					["maps"] = { DRAGONBLIGHT },
 					["isBreadcrumb"] = true,
 				}),
@@ -143,4 +143,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 		},
 	}),
-})));
+}))));

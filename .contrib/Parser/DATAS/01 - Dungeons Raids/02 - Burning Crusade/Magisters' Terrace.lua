@@ -26,8 +26,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					},
 				}),
 				q(11492, {	-- Hard to Kill
-					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
+					["qg"] = 24848,	-- Kalecgos
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -39,8 +39,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					},
 				}),
 				q(29685, {	-- Hard to Kill
-					["qg"] = 24848,	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
+					["qg"] = 24848,	-- Kalecgos
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
@@ -52,33 +52,32 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					},
 				}),
 				q(11488, {	-- Magisters' Terrace
-					["qg"] = 24813,	-- Exarch Larethor
 					["sourceQuests"] = {
 						11481,	-- Crisis at the Sunwell
 						11482,	-- Duty Calls
 					},
+					["qg"] = 24813,	-- Exarch Larethor
 					["coord"] = { 47.4, 30.7, ISLE_OF_QUELDANAS },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(70, 70, 25),
 				}),
 				q(29682, {	-- Magisters' Terrace
-					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["sourceQuests"] = {
 						11481,	-- Crisis at the Sunwell
 						11482,	-- Duty Calls
 					},
+					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
-					["qg"] = 55007,	-- Exarch Larethor
 					["sourceQuest"] = 29682,	-- Magisters' Terrace
+					["qg"] = 55007,	-- Exarch Larethor
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(11490, {	-- The Scryer's Scryer
-					["qg"] = 24822,	-- Tyrith
 					-- #if AFTER 4.3.0
 					["sourceQuest"] = 29684,	-- Severed Communications
 					["lvl"] = lvlsquish(68, 68, 25),
@@ -86,6 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					["sourceQuest"] = 11488,	-- Magisters' Terrace
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #endif
+					["qg"] = 24822,	-- Tyrith
 					["groups"] = {
 						objective(1, {	-- Scrying Orb Activated
 							["provider"] = { "o", 189292 },	-- Scrying Orb
@@ -206,11 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				e(533, {	-- Kael'thas Sunstrider
 					["creatureID"] = 24664,
 					["groups"] = {
-						ach(661, {	-- Magister's Terrace
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 11492,	-- Hard to Kill
-							-- #endif
-						}),
+						ach(661),	-- Magister's Terrace
 						i(35504),	-- Phoenix Hatchling (PET!)
 						i(34794),	-- Axe of Shattered Dreams
 						i(34798),	-- Band of Celerity
@@ -334,9 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					e(533, {	-- Kael'thas Sunstrider
 						["creatureID"] = 24664,
 						["groups"] = {
-							ach(682, {	-- Heroic: Magister's Terrace
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(682),	-- Heroic: Magister's Terrace
 							ach(5082, {	-- Heroic: Magister's Terrace Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -382,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							i(34160),	-- The Signet Ring of Prince Kael'thas
 						},
 					})
-				}
+				},
 			}),
 		},
 	})),

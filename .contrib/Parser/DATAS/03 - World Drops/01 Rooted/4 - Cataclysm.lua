@@ -689,6 +689,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		i(67040),	-- Amulet of the Howling Watch
 		i(55405),	-- Blackwolf Amulet
 		i(67138),	-- Buc-Zakai Choker
+		i(67137),	-- Don Rodrigo's Fabulous Necklace
 		i(67130),	-- Dorian's Lost Necklace
 		i(55403),	-- Mereldar Amulet
 		i(55401),	-- Mirkfallon Amulet
@@ -767,9 +768,6 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(52496),	-- Design: Jeweler's Amber Monocle
 			i(52494),	-- Design: Jeweler's Ruby Monocle
 			i(52495),	-- Design: Jeweler's Sapphire Monocle
-			i(52497, {	-- Design: Jeweler's Sapphire Monocle
-				["u"] = REMOVED_FROM_GAME,
-			}),
 			i(52377),	-- Design: Keen Hessonite
 			i(52386),	-- Design: Lightning Jasper
 			i(52379),	-- Design: Nimble Jasper
@@ -788,10 +786,22 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(52388),	-- Design: Zen Jasper
 		}),
 		prof(TAILORING, {
-			i(67541),	-- Pattern: High Society Top Hat (drops from rare elites)
+			i(67541),	-- Pattern: High Society Top Hat (RECIPE!) (drops from rare elites)
 		}),
 	}),
 	filter(REAGENTS, {
+		-- Table of Content:
+		--	Cloth + Silk
+		--	Elemetal reagents
+		--	Clams
+		--	Cooking reagents
+		--	Other reagents
+		--_________________________________
+		--
+		--	Cloth + Silk:
+		--_________________________________
+		--
+		--	Elemental reagents:
 		i(52328, {	-- Volatile Air
 			["coords"] = {
 				{ 27.9, 39.9, MOUNT_HYJAL },	-- Lightning Ledge
@@ -811,6 +821,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			-- #endif
 			["maps"] = { 325 },	-- The Vortex Pinnacle
 			["providers"] = {
+				{ "i", 67494 },	-- Electrostatic Condenser
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
 				-- #if AFTER 4.1.0
@@ -919,6 +930,148 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
 			},
+		}),
+		--_________________________________
+		--
+		--	Clams:
+		i(52340, {	-- Abyssal Clam
+			["description"] = "Is a rare drop from humanoid water creatures like gilblins, murlocs and naga.",
+			["maps"] = {
+				--THRONE_OF_THE_TIDES,
+				VASHJIR_ABYSSAL_DEPTHS,
+				VASHJIR_KELPTHAR_FOREST,
+				VASHJIR_SHIMMERING_EXPANSE,
+			},
+			["groups"] = {
+				i(62791, {	-- Blood Shrimp
+					["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+				}),
+				i(52338),	-- Darkfathom Pearl
+				i(52339),	-- Flawless Pearl
+			},
+		}),
+		--_________________________________
+		--
+		--	Cooking reagents:
+		i(62783, {	-- Basilisk "Liver"
+			["coords"] = {
+				{ 41.8,	20.8, DEEPHOLM },	-- The Pale Roost
+				{ 56.0,	86.1, DEEPHOLM },	-- Alabaster Shelf
+			},
+			["crs"] = {
+				43981,	-- Jadecrest Basilisk
+				43181,	-- Shalehide Basilisk
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		-- i(62791),	-- Blood Shrimp > Properly sourced under Clams listed above.
+		i(62784, {	-- Crocolisk Tail
+			["coords"] = {
+				{ 41.3,	47.0, TOL_BARAD },	-- Baradin Hold, west of.
+				{ 64.0,	78.9, ULDUM },	-- Vir'naal River Delta
+				{ 57.0,	49.2, ULDUM },	-- Vir'naal River
+				{ 47.7,	29.4, ULDUM },	-- Vir'naal Oasis west
+				{ 56.6,	22.0, ULDUM },	-- Vir'naal Oasis east
+			},
+			["crs"] = {
+				46317,	-- Neferset Crocolisk
+				51675,	-- Oasis Crocolisk
+				45321,	-- Riverbed Crocolisk
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62785, {	-- Delicate Wing
+			["coords"] = {
+				{ 43.0,	43.4, MOUNT_HYJAL },	-- Shrine of Aviana
+				{ 65.5,	29.5, TWILIGHT_HIGHLANDS },	-- Kirthaven mountain, east of.
+				{ 54.0,	50.1, TWILIGHT_HIGHLANDS },	-- Bloodgulch, south of.
+				{ 44.1,	70.2, ULDUM },	-- Cradle of the Ancients
+				{ 68.0,	62.8, ULDUM },	-- Sunstone Terrace, southwest of.
+			},
+			["crs"] = {
+				47202,	-- Diseased Vulture
+				42660,	-- Hyjal Darkhawk
+				42657,	-- Hyjal Eagle
+				42658,	-- Hyjal Roc
+				42659,	-- Hyjal Screecher
+				46162,	-- Tawny Owl
+				46158,	-- Untamed Gryphon
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62782, {	-- Dragon Flank
+			["coords"] = {
+				{ 40.9,	12.6, DEEPHOLM },	-- The Pale Roost
+				{ 56.0,	86.1, DEEPHOLM },	-- Alabaster Shelf
+				{ 29.1,	32.0, TWILIGHT_HIGHLANDS },	-- Vermillion Redoubt
+				{ 63.2,	77.5, TWILIGHT_HIGHLANDS },	-- Obsidian Forest
+			},
+			["crs"] = {
+				47797,	-- Obsidian Charscale
+				46141,	-- Obsidian Pyrewing
+				47796,	-- Obsidian Viletongue
+				42522,	-- Stone Drake
+				43971,	-- Stonescale Drake
+				45748,	-- Twilight Wyrmkiller
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62781, {	-- Giant Turtle Tongue
+			["coords"] = {
+				{ 54.7,	47.3, VASHJIR_ABYSSAL_DEPTHS },	-- Seabrush
+				{ 54.2,	62.3, VASHJIR_ABYSSAL_DEPTHS },	-- Korthun's End, higher
+				{ 51.6,	72.1, VASHJIR_ABYSSAL_DEPTHS },	-- Korthun's End, lower
+				{ 54.8,	49.9, VASHJIR_KELPTHAR_FOREST },	-- Middle Kelp'thar Forest
+				{ 55.5,	83.7, VASHJIR_SHIMMERING_EXPANSE },	-- Biel'aran Ridge
+			},
+			["crs"] = {
+				42108,	-- Seabrush Terrapin
+				40802,	-- Softshell Sea Turtle
+				40223,	-- Speckled Sea Turtle
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62779, {	-- Monstrous Claw
+			["coord"] = { 44.5,	57.0, VASHJIR_ABYSSAL_DEPTHS },	-- Underlight Canyon
+			["crs"] = {
+				39918,	-- Clacksnap Pincer
+				39418,	-- Green Sand Crab
+				41922,	-- Pyreshell Scuttler
+				40276,	-- Sabreclaw Skitterer
+				40889,	-- Sandskin Pincer
+				41609,	-- Silversand Burrower
+				40798,	-- Spineshell Pincer
+				40685,	-- Splitclaw Skitterer
+			},
+			["maps"] = {
+				VASHJIR_KELPTHAR_FOREST,
+				VASHJIR_SHIMMERING_EXPANSE,
+			},
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62780, {	-- Snake Eye
+			["coord"] = { 57.2,	37.6, VASHJIR_KELPTHAR_FOREST },	-- Gorrok's Lament
+			["cr"] = 39948,	-- Brinescale Serpent
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		i(62778, {	-- Toughened Flesh
+			["coords"] = {
+				{ 55.1,	70.9, TWILIGHT_HIGHLANDS },	-- Highland Forest
+				{ 53.5,	31.5, TWILIGHT_HIGHLANDS },	-- Thundermar Ruins
+				{ 65.5,	29.5, TWILIGHT_HIGHLANDS },	-- Kirthaven mountain, east of.
+			},
+			["crs"] = {
+				46970,	-- Highland Elk
+				46153,	-- Highland Worg
+			},
+			["description"] = "Can drop from all Cataclysm red meat animals.",
+			["provider"] = { "i", 65513 },	-- Crate of tasty Meat
+		}),
+		--__________________________________
+		--
+		-- Other reagents:
+		i(52078, {	-- Chaos Orb
+			["description"] = "Is a guarranteed drop from Cataclysm Heroic dungeon end bosses.",
 		}),
 	}),
 }))));

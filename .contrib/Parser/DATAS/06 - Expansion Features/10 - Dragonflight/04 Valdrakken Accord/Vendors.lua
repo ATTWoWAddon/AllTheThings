@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					203305,	-- Winding Slitherdrake: Armor (MM!)
 					-- #endif
 				}},
-				["g"] = {
+				["groups"] = {
 					i(203432, {	-- Bag of Spicy Pet Snacks (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -210,7 +210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(193015, {	-- Unatos
 				["coord"] = { 58.1, 35.2, VALDRAKKEN },
-				["g"] = bubbleDownRep(FACTION_VALDRAKKEN_ACCORD, {
+				["groups"] = bubbleDownRep(FACTION_VALDRAKKEN_ACCORD, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --

@@ -1,0 +1,14 @@
+createLocalizationString({
+	readable = "[icon:status-unobtainable] Unobtainable\n[icon:status-prerequisites] Obtainable only with prerequisites\n[icon:status-seasonal-available] Available seasonal content\n[icon:status-seasonal-unavailable] Unavailable seasonal content\n[icon:374225] Unavailable on current character\n[icon:status-unsorted] Unsorted in ATT",
+	constant = "ICON_LEGEND_STATUS_TEXT",
+	color = [[~_.DefaultColors.White]],
+	export = true,
+	text = {
+		en = [[~"|T" .. _.asset("status-unobtainable") .. ":0|t Unobtainable\n|T" .. _.asset("status-prerequisites") .. ":0|t Obtainable only with prerequisites\n|T" .. _.asset("status-seasonal-available") .. ":0|t Available seasonal content\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t Unavailable seasonal content\n|T374225:0|t Unavailable on current character\n|T" .. _.asset("status-unsorted") .. ":0|t Unsorted in ATT"]],
+		es = [[~"|T" .. _.asset("status-unobtainable") .. ":0|t No conseguible\n|T" .. _.asset("status-prerequisites") .. ":0|t Conseguible solo con requisitos\n|T" .. _.asset("status-seasonal-available") .. ":0|t Contenido de temporada disponible\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t Contenido de temporada no disponible\n|T374225:0|t No disponible en el personaje actual\n|T" .. _.asset("status-unsorted") .. ":0|t Sin listar en ATT"]],
+		mx = [[~"|T" .. _.asset("status-unobtainable") .. ":0|t No obtenible\n|T" .. _.asset("status-prerequisites") .. ":0|t Obtenible sólo con prerequisitos\n|T" .. _.asset("status-seasonal-available") .. ":0|t Contenido temporal disponible\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t Contenido temporal no disponible\n|T374225:0|t No disponible en tu personaje actual\n|T" .. _.asset("status-unsorted") .. ":0|t Sin listar en ATT"]],
+		ru = [[~"|T" .. _.asset("status-unobtainable") .. ":0|t Недоступно\n|T" .. _.asset("status-prerequisites") .. ":0|t Доступно с условием\n|T" .. _.asset("status-seasonal-available") .. ":0|t Доступная Праздничная Штучка\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t Недоступная Праздничная Штучка\n|T374225:0|t Недоступно на текущем персонаже"]],
+		cn = [[~"\n|T374225:0|t 当前角色不可用|T" .. _.asset("status-unobtainable") .. ":0|t 不可获得\n|T" .. _.asset("status-prerequisites") .. ":0|t 仅在满足先决条件的情况下可获得\n|T" .. _.asset("status-seasonal-available") .. ":0|t 当前可用的季节性内容\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t 当前不可用的季节性内容\n|T374225:0|t Unavailable on current character\n|T" .. _.asset("status-unsorted") .. ":0|t Unsorted in ATT"]],
+		tw = [[~"|T" .. _.asset("status-unobtainable") .. ":0|t 無法獲得\n|T" .. _.asset("status-prerequisites") .. ":0|t 僅在滿足先決條件的情況下獲得\n|T" .. _.asset("status-seasonal-available") .. ":0|t 季節性內容\n|T" .. _.asset("status-seasonal-unavailable") .. ":0|t 季節性內容\n|T374225:0|t 當前角色不可用\n|T" .. _.asset("status-unsorted") .. ":0|t Unsorted in ATT"]],
+	},
+})

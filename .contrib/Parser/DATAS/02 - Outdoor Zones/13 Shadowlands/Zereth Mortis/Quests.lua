@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64945 },	-- Stangers in a Strange Land
 					["provider"] = { "n", 181561 },	-- Firim
 					["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187845),	-- Quadrangular Object (QI!)
 						i(187846),	-- Triangular Object (QI!)
 					},
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65456 },	-- Long Lost Firim
 					["provider"] = { "n", 181561 },	-- Firim
 					["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188954),	-- Disabled Automa Hand (QI!)
 					},
 				}),
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64947 },	-- Give Me a Hand
 					["provider"] = { "n", 184062 },	-- Firim
 					["coord"] = { 31.2, 51.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						o(375015, {	-- Primordial Core
 							["coord"] = { 32.1, 57.3, ZERETH_MORTIS },
 						}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64947 },	-- Give Me a Hand
 					["provider"] = { "n", 184062 },	-- Firim
 					["coord"] = { 31.2, 51.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188956),	-- Intact Automa Fragments (QI!)
 					},
 				}),
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64957 },	-- The Old Waystone
 					["provider"] = { "n", 184698 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 49.5, 37.5, ORIBOS },	-- (Up Stairs)
-					["g"] = {
+					["groups"] = {
 						i(188041),	-- Ageless Spellblade
 						i(188056),	-- Ancient Protector's Pulverizer
 						i(188040),	-- Burnished Arbalest
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 35, 64.7, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(190968),	-- Genesis Fields Report (QI!)
 						i(190969),	-- Provis Flora Report (QI!)
 						i(190971),	-- Terrace of Formation Report (QI!)
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 178015 },	-- Elder Zoor
 					["coord"] = { 34.8, 65, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190976),	-- Enlightened Incense (QI!)
 						i(190749),	-- Temporal Cryptic Grips
 						i(190744),	-- Temporal Enigmatic Footguards
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 178016 },	-- Elder Ara
 					["coord"] = { 34.8, 64.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190975),	-- Latent Protein (QI!)
 						i(190750),	-- Recreative Cryptic Grips
 						i(190743),	-- Recreative Enigmatic Footguards
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64796 },	-- Scour The Sands
 					["provider"] = { "n", 182046 },	-- Shandris Feathermoon
 					["coord"] = { 48, 44.9, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188024),	-- Anthemic Shoulders
 						i(188037),	-- Choral Amice
 						i(188032),	-- Harmonium Spaulders
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64818 },	-- Reinforcements May Be Necessary
 					["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 35, 64.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187839),	-- Tonal Jammer
 					},
 				}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64824 },	-- Fighting For The Forge
 					["provider"] = { "n", 183717 },	-- Lady Jaina Proudmoore
 					["coord"] = { 57, 53.6, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190748),	-- Dimensional Cryptic Grips
 						i(190742),	-- Dimensional Enigmatic Footguards
 						i(190745),	-- Dimensional Numerus Handguards
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65149 },	-- Surveying Cyphers
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190987),	-- Broker's Cryptic Shoulderpads
 						i(190993),	-- Broker's Enigmatic Cowl
 						i(190999),	-- Broker's Numerus Breastplate
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "n", 179611 },	-- Pelagos
 					["coord"] = { 34, 48, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188019),	-- Anthemic Cuirass
 						i(188006),	-- Choral Vestments
 						i(188031),	-- Harmonium Legplates
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
 					["provider"] = { "n", 183139 },	-- Elder Ara
 					["coord"] = { 56.2, 57.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187730),	-- Conduction Remnant (QI!)
 						i(187731),	-- Conduction Remnant (QI!)
 						i(187732),	-- Conduction Remnant (QI!)
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64969 },	-- In the Weeds
 					["provider"] = { "n", 181771 },	-- Feroz
 					["coord"] = { 48.1, 75.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188276),	-- Energized Roots (QI!)
 					},
 				}),
@@ -402,7 +402,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184323 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189433),	-- Herbal Remedy
 					},
 				}),
@@ -414,7 +414,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184323 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187835),	-- Replicating Essence (QI!)
 					},
 				}),
@@ -435,7 +435,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184442 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
-					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 					["sym"] = {{"select","itemID",
 									190985,	-- Crystallic Cryptic Mask
 									190991,	-- Crystallic Enigmatic Epaulets
@@ -450,6 +449,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 									190995,	-- Scouring Numerus Crown
 									190977,	-- Scouring Oracular Smock
 					}},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 				}),
 				q(64843, {	-- Key Crafting
 					["sourceQuests"] = { 64842 },	-- Flora Frenzy
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64843 },	-- Key Crafting
 					["provider"] = { "n", 184153 },	-- Elder Ara
 					["coord"] = { 47.3, 88.5, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188023),	-- Anthemic Legguards
 						i(188010),	-- Choral Leggings
 						i(188028),	-- Harmonium Breastplate
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64809 },	-- One Half of the Equation
 					["provider"] = { "n", 181372 },	-- Taelia Fordragon
 					["coord"] = { 57.2, 31.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190987),	-- Broker's Cryptic Shoulderpads
 						i(190993),	-- Broker's Enigmatic Cowl
 						i(190999),	-- Broker's Numerus Breastplate
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64808 },	-- What Makes us Strong
 					["provider"] = { "n", 181284 },	-- Anduin Wrynn
 					["coord"] = { 59.2, 88.3, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(188020),	-- Anthemic Greaves
 						i(188009),	-- Choral Hood
 						i(188027),	-- Harmonium Helm
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64812 },	-- Forge of Domination
 					["provider"] = { "n", 181384 },	-- The Primus
 					["coord"] = { 49.3, 58.6, 1912 },
-					["g"] = {
+					["groups"] = {
 						i(187785, {	-- Tome of the Eternal (RECIPE!)
 							r(359700, {	-- Vestige of the Eternal (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
@@ -616,7 +616,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64876 },	-- Music of the Spheres
 					["provider"] = { "n", 181706 },	-- Popopoc
 					["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
-					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 					["sym"] = {{"select","itemID",
 									190985,	-- Crystallic Cryptic Mask
 									190991,	-- Crystallic Enigmatic Epaulets
@@ -631,6 +630,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 									190995,	-- Scouring Numerus Crown
 									190977,	-- Scouring Oracular Smock
 					}},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 				}),
 				q(65245, {	-- Pop Goes the Devourer!
 					["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
@@ -643,13 +643,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64889, {	-- Match Made in Zereth Mortis
+					["description"] = "to unlock cosmic transport",
 					["sourceQuests"] = {
 						65245,	-- Pop Goes the Devourer!
 						64888,	-- Borrowed Power
 					},
 					["provider"] = { "n", 181706 },	-- Popopoc
 					["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
-					["description"] = "to unlock cosmic transport",
 				}),
 				q(64935, {	-- Between A Rock & A Rock
 					["sourceQuests"] = {
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64936 },	-- Searching High and Low
 					["provider"] = { "n", 184949 },	-- Popopoc
 					["coord"] = { 48, 34, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188022),	-- Anthemic Coif
 						i(188009),	-- Choral Slippers
 						i(188029),	-- Harmonium Percussive Stompers
@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64879 },	-- A Monumental Discovery
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187602),	-- Firim's Motivator (QI!)
 					},
 				}),
@@ -712,7 +712,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180928 },	-- Secutor Mevix
 					["coord"] = { 56.4, 31.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187602),	-- Firim's Motivator (QI!)
 					},
 				}),
@@ -720,7 +720,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180903 },	-- Firim
 					["coord"] = { 56.9, 31.2, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188678),	-- Firim's Motivator (QI!)
 					},
 				}),
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180942 },	-- Saezurah
 					["coord"] = { 57.1, 31.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187809),	-- Dominator's Key (QI!)
 					},
 				}),
@@ -740,7 +740,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180903 },	-- Firim
 					["coord"] = { 55.9, 29.9, ZERETH_MORTIS },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188021),	-- Anthemic Gauntlets
 						i(188008),	-- Choral Handwraps
 						i(188030),	-- Harmonium Gauntlets
@@ -789,7 +789,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64731 },	-- For Every Soul
 					["provider"] = { "n", 180942 },	-- Saezurah
 					["coord"] = { 53.3, 47.1, 2031 },
-					["g"] = {
+					["groups"] = {
 						i(190987),	-- Broker's Cryptic Shoulderpads
 						i(190993),	-- Broker's Enigmatic Cowl
 						i(190999),	-- Broker's Numerus Breastplate
@@ -808,7 +808,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64729 },	-- Lifetimes To Consider
 					["provider"] = { "n", 181545 },	-- Kleia
 					["coord"] = { 34.4, 48.5, ZERETH_MORTIS },
-					["g"] = {	-- In Class Order
+					["groups"] = {	-- In Class Order
 						i(190470),	-- Cinch of Unity
 						i(190472),	-- Cinch of Unity
 						i(190471),	-- Cinch of Unity
@@ -869,7 +869,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65305 },	-- The Way Forward
 					["provider"] = { "n", 184486 },	-- Tamra
 					["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187942),	-- Chromatic Rosid (QI!)
 					},
 				}),
@@ -877,7 +877,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65064 },	-- Look Who I Found!
 					["provider"] = { "n", 182346 },	-- Tamra
 					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189479),	-- Chromatic Rosid (QI!)
 					},
 				}),
@@ -885,9 +885,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65064 },	-- Look Who I Found!
 					["provider"] = { "n", 182346 },	-- Tamra
 					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187940),	-- Component Beaker (QI!)
-					}
+					},
 				}),
 				q(65068, {	-- Cascades of Magnitude
 					["sourceQuests"] = {
@@ -906,9 +906,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65069 },	-- Culling the Maelstorm
 					["provider"] = { "n", 182346 },	-- Tamra
 					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189585),	-- E'rnee (PET!)
-					}
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 15515.02, {	--  Not Al Are Lost
@@ -931,7 +931,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64742 },	-- Traces of Tampering
 					["provider"] = { "n", 181003 },	-- Al'dalil
 					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187736),	-- Decloakifier (QI!)
 					},
 				}),
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64742 },	-- Traces of Tampering
 					["provider"] = { "n", 181003 },	-- Al'dalil
 					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187626),	-- Suspicious Papers (QI!)
 					},
 				}),
@@ -955,7 +955,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64758 },	-- Following the Leader
 					["provider"] = { "n", 180936 },	-- Rana
 					["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190597),	-- Symbol of the Lupine
 						i(190602),	-- Symbol of the Raptora
 						i(190582),	-- Symbol of the Vombata
@@ -978,7 +978,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65349 },	-- Lost Grace
 					["provider"] = { "n", 184537 },	-- Nadir
 					["coord"] = { 55, 50.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188199),	-- Locrian Swale (QI!)
 					},
 				}),
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65350 },	-- Restore the Flow
 					["provider"] = { "o", 375283 },	-- Percolation Array
 					["coord"] = { 74.1, 69, 2028 },
-					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+					["groups"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
 						i(188026),	-- Anthemic Bracers
 						i(188012),	-- Choral Wraps
 						i(188034),	-- Harmonium Vambrace
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190852),	-- Vespoid Honey (QI!)
 					},
 				}),
@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65731 },	-- The Burrowed Bufonid
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(188808),	-- Patient Bufonid (MOUNT!)
 					},
 				}),
@@ -1078,10 +1078,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					o(375977, {	-- Firim's Research Notes
 						["coord"] = { 34.1, 48.8, ZERETH_MORTIS },
-						["g"] = { i(190940) },	-- Firim's Research Notes (QI!)
+						["groups"] = { i(190940) },	-- Firim's Research Notes (QI!)
 					}),
 				},
 			}),
@@ -1095,7 +1095,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 185713 },	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(190927),	-- Enlightened Provisions (QI!)
 				},
 			}),
@@ -1106,7 +1106,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(190610, {	-- Tribute of the Enlightened Elders
 						i(189462),	-- Schematic: Bronze Helicid (RECIPE!)
 					}),
@@ -1127,7 +1127,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188738),	-- Strange Artifact (QI!)
 				},
 			}),
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188788),	-- Zephyreal Generator (QI!)
 				},
 			}),
@@ -1154,7 +1154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188697),	-- Kinematic Micro-Life Recalibrator (QI!)
 					i(189436),	-- Schematic: Violent Poultrid
 				},
@@ -1169,7 +1169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188121),	-- Warped Anima Sample (QI!)
 				},
 			}),
@@ -1182,7 +1182,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188230),	-- Catamelon Seed (QI!)
 				},
 			}),
@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187516),	-- Firim's Forge-Tap (QI!)
 					i(187519),	-- Remnant Neomotes (QI!)
 				},
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187782),	-- Eidolic Fragment (QI!)
 					i(187516),	-- Firim's Forge-Tap (QI!)
 					i(187779),	-- Minor Enigmet (QI!)
@@ -1218,7 +1218,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189439),	-- Compilation Nodule (QI!)
 					i(189438),	-- Composition Mote (QI!)
 				},
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189535),	-- Neomote Residue (QI!)
 					i(189536),	-- Solidified Neomote (QI!)
 				},
@@ -1238,7 +1238,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189449),	-- Jiro Scan (QI!)
 				},
 			}),
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187944),	-- Progenitor Relic (QI!)
 				},
 			}),
@@ -1259,7 +1259,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189554),	-- Proto Wrangler Rope (QI!)
 				},
 			}),
@@ -1268,7 +1268,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187684),	-- Containment Trap (QI!)
 				},
 			}),
@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(188170),	-- Portal Initiator (QI!)
 				},
 			}),
@@ -1290,7 +1290,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189449),	-- Jiro Scan (QI!)
 				},
 			}),
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187684),	-- Containement Trap (QI!)
 				},
 			}),
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(187996),	-- Sacred Relic (QI!)
 				},
 			}),
@@ -1317,14 +1317,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65305 },	-- The Way Forwards
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(191139, {	-- Tribute of the Enlightened Elders
 						["sym"] = {
 							{"select","mapID",ZERETH_MORTIS},
 							{"find","headerID",ZONE_REWARDS},{"pop"},
 							{"not","itemID",190336},	-- Thrumming Powerstone
 						},
-						["g"] = {
+						["groups"] = {
 							i(189716, {	-- Pocopoc's Face Decoration
 								["questID"] = 65482,
 							}),
@@ -1343,7 +1343,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- Misc
 			q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
 			q(65724),	-- Daily Bufonid Quest Trigger
-			q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
+			-- q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
 			q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
 
 			--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))
@@ -1384,8 +1384,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- Treasure
 			q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
-			--q(65011),	Old HQT for i(187885, {	-- Honeycombed Lattice
-
+			--q(65011),	Old HQT for 187885,	Honeycombed Lattice
 			-- Jiro Buffs
 			q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
 			--[[

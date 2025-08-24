@@ -7,26 +7,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(QUESTS, {
 				q(62910, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 168011 },	-- Zo'sorg
-					["isWeekly"] = true,
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62911, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 168011 },	-- Zo'sorg
-					["isWeekly"] = true,
-					["races"] = HORDE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65649, {	-- A New Deal
-					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
+					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 35.6, 57.5, ORIBOS },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
-					["g"] = {
+					["groups"] = {
 						i(190955),	-- Protoplasmic Thread (QI!)
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction
 						i(188691),	-- Cosmic Gladiator's Echoing Resolve
@@ -42,71 +42,71 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 34.7, 57.3, ORIBOS },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(186980),	-- Unchained Gladiator's Shackles of Malediction
 					},
 				})),
 				q(62287, {	-- Observing Arenas
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.3, 55.8, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62284, {	-- Observing Battle
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62286, {	-- Observing Skirmishes
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62288, {	-- Observing Teamwork
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
-					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					["altQuests"] = {
 						53295,	-- Do Your Part [BFA 'Try Warmode'] [A]
 						53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
 					},
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					["timeline"] = { ADDED_9_1_0 },
 				}),
 				q(62285, {	-- Observing War
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65773, {	-- Solo Mission
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
+					["isWeekly"] = true,
 				}),
 				q(65775, {	-- Soloing Strategy
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
+					["isWeekly"] = true,
 				}),
 			}),
 			n(VENDORS, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						n(LEGENDARIES, sharedData({ ["cost"] = { { "c", HONOR, 1500 } }, }, {
 							i(183246),	-- Memory of Sephuz
 							i(183252, {	-- Memory of a Trapping Apparatus
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(185834, {	-- Orboreal Distinguishment
 							["cost"] = { { "c", HONOR, 2000 } },
 							-- #if BEFORE 10.0.2
-							["g"] = {
+							["groups"] = {
 							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
 							},
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					["coord"] = { 35.0, 57.6, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						n(CONDUITS, sharedData({ ["cost"] = { { "c", CONQUEST, 200 } } }, {
 							i(181848),	-- Accelerated Cold
 							i(183470),	-- Born of the Wilds

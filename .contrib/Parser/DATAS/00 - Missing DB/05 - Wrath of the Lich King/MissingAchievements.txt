@@ -1,0 +1,4 @@
+3.4.4.59853
+ach(42115),	-- 3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
+3.4.5.62072
+ach(61022),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy) (copy)

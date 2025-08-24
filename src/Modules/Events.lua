@@ -22,11 +22,11 @@ local function GetEventTimeString(d)
 			return ("%s, %s %02d, %d at %02d:%02d"):format(
 				CALENDAR_WEEKDAY_NAMES[d.weekday],
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
-				d.monthDay, d.year, d.hour, d.minute );
+				d.monthDay or d.day, d.year, d.hour, d.minute );
 		else
 			return ("%s %02d, %d at %02d:%02d"):format(
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
-				d.monthDay, d.year, d.hour, d.minute );
+				d.monthDay or d.day, d.year, d.hour, d.minute );
 		end
 	end
 	return "??";
@@ -34,18 +34,50 @@ end
 
 -- Event ID Remapping by Region
 local remapping = L.EVENT_REMAPPING;
-if GetCVar("portal") == "EU" then
-	remapping[622] = 559; -- EU BC Timewalking
-	remapping[616] = 562; -- EU Wrath Timewalking
-	remapping[628] = 587; -- EU Cata Timewalking
-	remapping[652] = 643; -- EU MoP Timewalking
-	remapping[1063] = 1056; -- EU WoD Timewalking
-	remapping[1265] = 1263;	-- EU Legion Timewalking
-	remapping[1398] = 1396;	-- EU Secrets of Azeroth
-	remapping[1514] = 1525;	-- EU Remix: Mists of Pandaria
-elseif GetCVar("portal") == "KO" then
-	remapping[1399] = 1396;	-- KO Secrets of Azeroth
-end
+app.AddEventHandler("OnLoad", function()
+	-- Remap the extra Timewalking Dungeon Event to the normal one
+	remapping[237] = 239;	-- Timewalking Dungeon Event
+
+	-- Remap Classic Timewalking => US
+	remapping[1583] = 1508; -- EU
+	remapping[1585] = 1508; -- KO
+	remapping[1584] = 1508; -- TW
+
+	-- Remap Outland Timewalking => US
+	remapping[622] = 559; -- EU
+	remapping[623] = 559; -- KO
+	remapping[624] = 559; -- TW
+
+	-- Remap Northrend Timewalking => US
+	remapping[616] = 562; -- EU
+	remapping[618] = 562; -- KO
+	remapping[617] = 562; -- TW
+
+	-- Remap Cataclysm Timewalking => US
+	remapping[628] = 587; -- EU
+	remapping[629] = 587; -- KO
+	remapping[630] = 587; -- TW
+
+	-- Remap MoP Timewalking => US
+	remapping[652] = 643; -- EU
+	remapping[656] = 643; -- KO
+	remapping[654] = 643; -- TW
+
+	-- Remap WoD Timewalking => US
+	remapping[1063] = 1056; -- EU
+	remapping[1068] = 1056; -- KO
+	remapping[1065] = 1056; -- TW
+
+	-- Remap Legion Timewalking => US
+	remapping[1265] = 1263; -- EU
+	remapping[1269] = 1263; -- KO
+	remapping[1267] = 1263; -- TW
+
+	-- Remap BFA Timewalking => US
+	remapping[1667] = 1669; -- EU
+	remapping[1668] = 1669; -- KO
+	remapping[1666] = 1669; -- TW
+end);
 
 -- Event Cache
 -- Determine if the Calendar is implemented or not.
@@ -75,11 +107,12 @@ local function CreateSchedule(startTime, endTime, t)
 	};
 end
 local SessionEventCache;
+local CacheVersion = 20250703;
 local function GetEventCache()
 	-- app.PrintDebug("GetEventCache")
 	local now = CreateTimeStamp(C_DateAndTime_GetCurrentCalendarTime());
 	local cache = SessionEventCache or AllTheThingsSavedVariables.EventCache;
-	if cache and (cache.lease or 0) > now then
+	if cache and (cache.lease or 0) > now and (cache.version and cache.version >= CacheVersion) then
 		-- If our cache is still leased, then simply return it.
 		-- app.PrintDebug("GetEventCache.lease")
 		SessionEventCache = cache;
@@ -87,19 +120,21 @@ local function GetEventCache()
 	end
 
 	-- Create a new cache with a week long lease.
-	cache = {};
-	cache.lease = now + 604800;
+	cache = {
+		lease = now + 604800,
+		version = CacheVersion
+	};
 	if isCalendarAvailable then
 		local C_Calendar_SetAbsMonth, C_Calendar_SetMonth, C_Calendar_GetDayEvent, C_Calendar_GetMonthInfo, C_Calendar_GetNumDayEvents
 			= C_Calendar.SetAbsMonth, C_Calendar.SetMonth, C_Calendar.GetDayEvent, C_Calendar.GetMonthInfo, C_Calendar.GetNumDayEvents;
 
-		-- Go back 6 months and then forward to the next year
+		-- Go back 18 months and then forward to the next year
 		local date = C_DateAndTime_GetCurrentCalendarTime();
 		C_Calendar_SetAbsMonth(date.month, date.year);
-		C_Calendar_SetMonth(-6);
+		C_Calendar_SetMonth(-18);
 
 		local anyEvents = false;
-		for offset=-6,12,1 do
+		for offset=-18,12,1 do
 			local monthInfo = C_Calendar_GetMonthInfo(0);
 			for day=1,monthInfo.numDays,1 do
 				local numEvents = C_Calendar_GetNumDayEvents(0, day);
@@ -109,9 +144,21 @@ local function GetEventCache()
 						if event then -- If this is nil, then attempting to index it on the same line will toss an error.
 							if event.calendarType == "HOLIDAY" and (not event.sequenceType or event.sequenceType == "" or event.sequenceType == "START") then
 								local eventID = event.eventID;
-								local remappedID = remapping[eventID] or eventID;
-								if remappedID then
-									local t = cache[remappedID];
+								local t = cache[eventID];
+								if not t then
+									t = {
+										["name"] = event.title,
+										["icon"] = event.iconTexture,
+										["times"] = {},
+									};
+									cache[eventID] = t;
+									anyEvents = true;
+								end
+								tinsert(t.times, CreateSchedule(event.startTime, event.endTime));
+
+								local remappedID = remapping[eventID];
+								if remappedID and remappedID ~= eventID then
+									t = cache[remappedID];
 									if not t then
 										t = {
 											["name"] = event.title,
@@ -122,10 +169,23 @@ local function GetEventCache()
 										anyEvents = true;
 									end
 									local schedule = CreateSchedule(event.startTime, event.endTime);
-									if remappedID ~= eventID then
-										schedule.remappedID = eventID;
-									end
+									schedule.remappedID = eventID;
 									tinsert(t.times, schedule);
+
+									local finalID = remapping[remappedID];
+									if finalID then
+										local t = cache[finalID];
+										if not t then
+											t = {
+												["name"] = event.title,
+												["icon"] = event.iconTexture,
+												["times"] = {},
+											};
+											cache[finalID] = t;
+											anyEvents = true;
+										end
+										tinsert(t.times, CreateSchedule(event.startTime, event.endTime));
+									end
 								end
 							end
 						end
@@ -155,9 +215,20 @@ local function GetEventCache()
 	return cache;
 end
 
+-- add a simple chat command to reset the calendar cache
+app.ChatCommands.Add("calendar-cache", function(args)
+	local cache = GetEventCache()
+	cache.lease = 0
+	GetEventCache()
+	app.print("Re-cached Calendar data!")
+	end, {
+		"Usage : /att calendar-cache",
+		"Provides a quick way to reset ATT's cache of the user's calendar data for determining in-game event schedules and visibility",
+	})
+
 -- Event Helpers
 local CustomEventHelpers = {
-	[1271] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
+	[239] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
 	[133701] = { 1395, 1400, 1407, 1429, 1430, 1431 },	-- EVENTS.DRAGONRIDING_CUP
 };
 local SortByStart = function(a, b)
@@ -212,7 +283,7 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 			end
 			t[id] = schedule;
 			return schedule;
-		elseif id == 424 then -- EVENTS.KALUAK_FISHING_DERBY
+		elseif id == 161 then -- EVENTS.KALUAK_FISHING_DERBY
 			local startTime = C_DateAndTime_GetCurrentCalendarTime();
 			local weekDay = date("*t").wday;
 			if weekDay < 7 then
@@ -240,7 +311,7 @@ setmetatable(NextEventSchedule, { __index = function(t, id)
 			});
 			t[id] = schedule;
 			return schedule;
-		elseif id == 301 then -- EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA
+		elseif id == 6 then -- EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA
 			local startTime = C_DateAndTime_GetCurrentCalendarTime();
 			local weekDay = date("*t").wday;
 			if weekDay > 1 then
@@ -340,10 +411,11 @@ if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 		return GetRelativeRawWithField(group, "e") == TimerunningSeasonEventID
 	end
 	local function NotMoPRemixTimerunning(group)
-		-- app.PrintDebug("F:~TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],not group.e or group.e ~= 1525)
+		-- app.PrintDebug("F:~TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],not group.e or group.e ~= 437)
 		if not ThingKeys[group.key] then return true end
 		local e = GetRelativeRawWithField(group, "e")
-		return not e or e ~= 1525
+		-- TODO: revise with Legion Remix since we will need new eventID excluded
+		return not e or e ~= 437
 	end
 
 	-- Add a Timerunning Filter that can be used for Live/Timerunning characters
@@ -393,6 +465,7 @@ end;
 events.SetEventNextSchedule = function(eventID, nextEvent)
 	NextEventSchedule[eventID] = nextEvent;
 end;
+events.GetEventTimeString = GetEventTimeString;
 events.GetTimerunningSeason = GetTimerunningSeason;
 events.GetUpcomingEventLeeway = function()
 	return UpcomingEventLeeway;
@@ -429,6 +502,7 @@ end;
 fields.nextEvent = function(t)
 	return NextEventSchedule[t.eventID];
 end;
+fields.ShouldShowEventSchedule = app.ReturnTrue;
 events.Fields = fields;
 
 -- Information Type hook for Events
@@ -437,35 +511,40 @@ app.AddEventHandler("OnLoad", function()
 		priority = 2.3,
 		text = L.EVENT_SCHEDULE,
 		Process = function(t, reference, tooltipInfo)
-			local nextEvent = reference.nextEvent;
-			if nextEvent then
-				if nextEvent.remappedID then
-					local mapID = RemappedEventToMapID[nextEvent.remappedID];
-					if mapID then
-						tinsert(tooltipInfo, {
-							left = L.EVENT_WHERE,
-							right = app.GetMapName(mapID),
-							color = app.Colors.TooltipDescription,
-						});
+			if reference.ShouldShowEventSchedule then
+				local e = reference.eventID or reference.e;
+				if e then
+					local nextEvent = NextEventSchedule[e];
+					if nextEvent then
+						if nextEvent.remappedID then
+							local mapID = RemappedEventToMapID[nextEvent.remappedID];
+							if mapID then
+								tinsert(tooltipInfo, {
+									left = L.EVENT_WHERE,
+									right = app.GetMapName(mapID),
+									color = app.Colors.TooltipDescription,
+								});
+							end
+						end
+						if nextEvent.endTime then
+							tinsert(tooltipInfo, {
+								left = L.EVENT_START,
+								right = GetEventTimeString(nextEvent.startTime),
+								color = app.Colors.TooltipDescription,
+							});
+							tinsert(tooltipInfo, {
+								left = L.EVENT_END,
+								right = GetEventTimeString(nextEvent.endTime),
+								color = app.Colors.TooltipDescription,
+							});
+						else
+							tinsert(tooltipInfo, {
+								left = L.EVENT_ACTIVE,
+								right = GetEventTimeString(nextEvent.startTime),
+								color = app.Colors.TooltipDescription,
+							});
+						end
 					end
-				end
-				if nextEvent.endTime then
-					tinsert(tooltipInfo, {
-						left = L.EVENT_START,
-						right = GetEventTimeString(nextEvent.startTime),
-						color = app.Colors.TooltipDescription,
-					});
-					tinsert(tooltipInfo, {
-						left = L.EVENT_END,
-						right = GetEventTimeString(nextEvent.endTime),
-						color = app.Colors.TooltipDescription,
-					});
-				else
-					tinsert(tooltipInfo, {
-						left = L.EVENT_ACTIVE,
-						right = GetEventTimeString(nextEvent.startTime),
-						color = app.Colors.TooltipDescription,
-					});
 				end
 			end
 		end,

@@ -1,4 +1,3 @@
-
 -- Provides an all-in-one builder object to help with consistently building Instance content
 
 
@@ -16,6 +15,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		appendAllGroups(ALL_BOSSES, v)
 	end
 	local function BossOnly(id, t)
+		if not t and type(id) ~= "number" then
+			print("ERROR: Missing id for boss. Got instead: ",id)
+		end
 		local encounter = e(id, t)
 		encounter.crs = crs[id]
 		return encounter
@@ -32,14 +34,35 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 				add(encounter, id, CurrentDifficultyID, data)
 			end
 		end
+		if helper.Coords and not encounter.coord then
+			encounter.coord = helper.Coords[id]
+		end
 		encounter.groups = appendAllGroups(encounter.groups, clone(loots[id]))
 		return encounter
+	end
+	-- Represents a World Quest that requires defeating an Encounter
+	local function BossWorldQuest(id, questID, t)
+		if not t and (type(id) ~= "number" or type(questID) ~= "number") then
+			print("ERROR: Missing id/questID for BossWorldQuest",id,questID)
+		end
+		local quest = q(questID, t)
+		quest.crs = crs[id]
+		quest.isWorldQuest = true
+		if not quest.sym then
+			quest.sym = {{"select","encounterID",id,},{"pop"}}	-- Original WB
+		end
+		if helper.Coords and not quest.coord then
+			quest.coord = helper.Coords[id]
+		end
+		return quest
 	end
 	local function WithUpgrades(groups)
 		if not groups then return end
 		if not helper.UpgradeMapping then error("To use 'WithUpgrades', define InstanceHelper.UpgradeMapping = { [DifficultyID] = ModID.BonusID }") end
 		local up = helper.UpgradeMapping[CurrentDifficultyID]
 		if not up then print("Missing 'UpgradeMapping' for Difficulty ",CurrentDifficultyID) end
+		-- allow a 0 upgrade to basically skip applying upgrades on that difficulty... some situations where this is desirable
+		if up == 0 then return end
 		for _,o in ipairs(groups) do
 			-- add upgrades within certain nested groups
 			if o.groups and (o.npcID or o.headerID or o.itemID or o.encounterID) then
@@ -48,6 +71,14 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 				o.up = up
 			end
 		end
+	end
+	local function BossWithHeader(id, headerFunc, t)
+		if not t and (type(headerFunc) ~= "function" or type(id) ~= "number") then
+			print("ERROR: Missing valid id/headerFunc for BossWithHeader",id,headerFunc)
+		end
+		local encounter = BossOnly(id, t)
+		encounter.groups = appendAllGroups(encounter.groups, {headerFunc(clone(loots[id]))})
+		return encounter
 	end
 	local function CommonBossDrops(t)
 		return n(COMMON_BOSS_DROPS, {
@@ -102,12 +133,16 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	}
 	local function Difficulty(difficultyID, t)
 		local diff = d(difficultyID, t)
-		CurrentDifficultyID = diff.difficultyID
+		-- d() can sometimes change the applied difficultyID, so just track the exact one passed in since
+		-- it's likely the same one re-used in the file
+		CurrentDifficultyID = difficultyID
 		return setmetatable(diff, helperMeta)
 	end
 
 	helper.BossOnly = BossOnly
 	helper.Boss = Boss
+	helper.BossWithHeader = BossWithHeader
+	helper.BossWorldQuest = BossWorldQuest
 	helper.Difficulty = Difficulty
 	helper.CommonBossDrops = CommonBossDrops
 	helper.ZoneDrops = ZoneDrops

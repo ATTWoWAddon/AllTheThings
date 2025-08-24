@@ -19,12 +19,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52935, {	-- A New Era
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155919),	-- Dead Ringer (QI!)
 				},
 			}),
 			q(52936, {	-- A New Era
-				["g"] = {
+				["groups"] = {
 					i(162627),	-- Plague Barrel Sack (QI!)
 				},
 			}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52940, {	-- Arms Deal
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162629),	-- Stormfused Weapon (QI!)
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["filterID"] = BATTLE_PETS,
 			})),
 			q(52986, {	-- A Wicked Vessel
-				["g"] = {
+				["groups"] = {
 					i(162650),	-- Tidal Kris (QI!)
 				},
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52330, {	-- Beehemoth
 				["cr"] = 134147,		-- Beehemoth
-				["g"] = {
+				["groups"] = {
 					i(160459, {	-- Apiarist's Stingproof Belt
 						["bonusID"] = 4803,		-- WQ Bonus ID
 					}),
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53288, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
-				["g"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
+				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(52045, {	-- Boarder Patrol
 				["races"] = ALLIANCE_ONLY,
@@ -102,13 +102,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52071, {	-- Briarback Mountain
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161123),	-- Stormsong Supplies (QI!)
 				},
 			}),
 			q(52117, {	-- Briarback Mountain
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161123),	-- Stormsong Supplies (QI!)
 				},
 			}),
@@ -129,11 +129,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(53106, {	-- Censership
 				["races"] = ALLIANCE_ONLY,
-				["g"] = { i(163212) },	-- Cleansing Thurible (QI!)
+				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
 			}),
 			q(53343, {	-- Censership
 				["races"] = HORDE_ONLY,
-				["g"] = { i(163212) },	-- Cleansing Thurible (QI!)
+				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
 			}),
 			q(52882, {	-- Controlled Burn
 				["races"] = HORDE_ONLY,
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53318, {	-- Ductile Platinum
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163630),	-- Ductile Platinum (QI!)
 				},
 			}),
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52972, {	-- Favored Grandchild
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159781),	-- Mountain Goat Milk (QI!)
 					i(162647),	-- Pristine Razorclaw Pelt (QI!)
 				},
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53316, {	-- Hardened Monelite
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163628),	-- Hardened Monelite (QI!)
 				},
 			}),
@@ -236,14 +236,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52328, {	-- Ice Sickle
 			}),
 			q(53108, {	-- Iconoclasm
-				["g"] = {
+				["groups"] = {
 					ach(13042),	-- About To Break
 					i(157771),	-- Holy Water (QI!)
 				},
 			}),
 			q(53344, {	-- Iconoclasm
 				["sym"] = {{"select","achievementID",13042}},	-- About To Break
-				["g"] = {
+				["groups"] = {
 					i(157771),	-- Holy Water (QI!)
 				},
 			}),
@@ -260,37 +260,37 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52987, {	-- Let's Burn!
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163120),	-- Welding Torch (QI!)
 				},
 			}),
 			q(52941, {	-- Light in the Darkness (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162635),	-- Abyssal Beacon (QI!)
 				},
 			}),
 			q(52968, {	-- Light in the Darkness
-				["g"] = {
+				["groups"] = {
 					i(162649),	-- Tideblood (QI!)
 				},
 			}),
 			q(52794, {	-- Lizards and Ledgers
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162540),	-- Lost Supplies (QI!)
 				},
 			}),
 			q(52230, {	-- Loose Change (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160668),	-- Lost Coin (QI!)
 					i(158226),	-- Magnetized Metal Collector (QI!)
 				},
 			}),
 			q(52239, {	-- Loose Change (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160668),	-- Lost Coin (QI!)
 					i(158226),	-- Magnetized Metal Collector (QI!)
 				},
@@ -307,7 +307,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54308, {	-- Mine Your Business (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(165889),	-- Blackpowder Ore (QI!)
 				},
 			}),
@@ -315,12 +315,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53773, {	-- Naga Attack!
-				["g"] = {
+				["groups"] = {
 					i(165605),	-- Azsharan Medallion
 				},
 			}),
 			q(53945, {	-- Naga Attack!
-				["g"] = {
+				["groups"] = {
 					i(165605),	-- Azsharan Medallion
 				},
 			}),
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52939, {	-- Ordnance Orders
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162629),	-- Stormfused Weapon (QI!)
 				},
 			}),
@@ -367,7 +367,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52142, {	-- Restocking
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						i(161216),	-- Handful of Scraps (QI!)
 						o(292764),	-- Metal Scraps
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52160, {	-- Restocking
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						i(161216),	-- Handful of Scraps (QI!)
 						o(292764),	-- Metal Scraps
@@ -388,9 +388,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52979, {	-- Ritual Cleansing
-				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 53.2, 33.4, STORMSONG_VALLEY },
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162650),	-- Tidal Kris (QI!)
 				},
 			}),
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52164, {	-- Rum- Paaaage!
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161197),	-- Barrel Busting Bomb (QI!)
 				},
 			}),
@@ -426,14 +426,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(52271, {	-- Sea Salt Flavored (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161450),	-- Crackling Eel Skin (QI!)
 					i(160055),	-- Seaweed (QI!)
 				},
 			}),
 			q(52280, {	-- Sea Salt Flavored (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161450),	-- Crackling Eel Skin (QI!)
 					i(160055),	-- Seaweed (QI!)
 				},
@@ -462,13 +462,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52174, {	-- Snakes in the Shallows
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161313),	-- Energized Tidecore (QI!)
 				},
 			}),
 			q(50591, {	-- Son of a Bee
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161220),	-- Rich Honey (QI!)
 				},
 			}),
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53040, {	-- Squall Squelching
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163033),	-- Surging Mote (QI!)
 				},
 			}),
@@ -487,20 +487,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52879, {	-- Stiff Policy
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(162599),	-- Treated Shipwood (QI!)
+				["groups"] = {
+					o_repeated({	-- Treated Shipwood
+						o(294017),	-- Treated Shipwood
+						o(294018),	-- Treated Shipwood
+						o(294019),	-- Treated Shipwood
+						o(294022),	-- Treated Shipwood
+						--
+						i(162599),	-- Treated Shipwood (QI!)
+					}),
 				},
 			}),
 			q(53042, {	-- Stormcaller
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163033),	-- Surging Mote (QI!)
 				},
 			}),
 			q(51982, {	-- Storm's Rage (Faction Assault WQ)
 				["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166459),	-- Xibek's Key (QI!)
 				},
 			}),
@@ -532,13 +539,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52054, {	-- Too Much To Bear (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161114),	-- Barbedclaw Flank (QI!)
 				},
 			}),
 			q(52229, {	-- Too Much To Bear (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161114),	-- Barbedclaw Flank (QI!)
 				},
 			}),
@@ -568,15 +575,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53983, {	-- Wet Work: Fort Knight (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = { i(164731) },	-- Enchanted Shroud (QI!)
+				["groups"] = { i(164731) },	-- Enchanted Shroud (QI!)
 			}),
 			q(52299, {	-- Whiplash
-				["g"] = {
+				["groups"] = {
 					n(129803, {	-- Whiplash
 						["questID"] = 52296,
 						["description"] = "This rare only spawns during its associated world quest.",
 						["coord"] = { 47.32, 65.81, STORMSONG_VALLEY },
-						["g"] = {
+						["groups"] = {
 							crit(41841, {	-- Whiplash
 								["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 							}),
@@ -592,8 +599,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(162443),	-- Pattern: Battle Flag: Spirit of Freedom
+				["groups"] = {
+					i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50993, {	-- Work Order: Coarse Leather
@@ -604,49 +611,49 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52394, {	-- Work Order: Contract: Champions of Azeroth
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					i(162374),	-- Technique: Contract: Champions of Azeroth [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52391, {	-- Work Order: Contract: Storm's Wake
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162364),	-- Technique: Contract: Storm's Wake [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52367, {	-- Work Order: Electroshock Mount Motivator
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162340),	-- Schematic: Electroshock Mount Motivator  [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52353, {	-- Work Order: Enchant Ring - Seal of Haste
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162299),	-- Formula: Enchant Ring - Seal of Haste [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52347, {	-- Work Order: Honey-Glazed Haunches
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 				["requireSkill"] = COOKING,
-				["g"] = {
+				["groups"] = {
 					i(162286),	-- Recipe: Honey-Glazed Haunches [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52344, {	-- Work Order: Kul Tiramisu
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 				["requireSkill"] = COOKING,
-				["g"] = {
+				["groups"] = {
 					i(162285),	-- Recipe: Kul Tiramisu [Rank 3] (RECIPE!)
 				},
 			}),
@@ -655,24 +662,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52332, {	-- Work Order: Lightfoot Potion
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(162258),	-- Recipe: Lightfoot Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50996, {	-- Work Order: Mistscale
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50981, {	-- Work Order: Riverbud
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52346, {	-- Work Order: Sailor's Pie
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 				["requireSkill"] = COOKING,
-				["g"] = {
+				["groups"] = {
 					i(162295),	-- Recipe: Sailor's Pie [Rank 3] (RECIPE!)
 				},
 			}),
@@ -680,8 +687,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50982, {	-- Work Order: Star Moss
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50989, {	-- Work Order: Storm Silver Ore
 				["races"] = ALLIANCE_ONLY,
@@ -692,8 +699,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52402, {	-- Work Order: Viridium
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52352, {	-- Zeritarj
-			}),
+			q(52352),	-- Zeritarj
 		})),
 	}),
 })));

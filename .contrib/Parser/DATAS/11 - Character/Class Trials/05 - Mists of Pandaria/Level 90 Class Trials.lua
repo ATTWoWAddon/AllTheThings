@@ -1,9 +1,10 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
+
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.MOP, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
-		header(HEADERS.Achievement, 6193, {
+	expansion(EXPANSION.MOP,bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
+		header(HEADERS.Achievement, 6193, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does not reward this gear anymore]
 			["description"] = "These were obtained by creating a Level 90 Class Trial for each class and specialization.",
 			["lvl"] = 90,
@@ -408,6 +409,6 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 					}),
 				}),
 			},
-		}),
+		})),
 	})),
 }));

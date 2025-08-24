@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(176987),	-- Ossein Scale Belt
 			i(176799),	-- Reverent Dagger
 			i(178915, {	-- Ripe Purian
-				["description"] = "Can be looted from objects scattered around the zone.  Used to open Silver Strongboxes and the Steward's Golden Chest.",
+				["description"] = "Can be looted from objects scattered around the zone. Used to open Silver Strongboxes and the Steward's Golden Chest.",
 			}),
 			i(176797),	-- Ritual Bell
 			i(176791),	-- Steelscale Bracers

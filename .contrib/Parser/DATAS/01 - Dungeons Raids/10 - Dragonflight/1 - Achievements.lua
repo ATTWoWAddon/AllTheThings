@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				19567,	-- Awakened Shadows
 				19564,	-- Awakened Storms
 			}},
-			["g"] = {
+			["groups"] = {
 				i(217340),	-- Voyaging Wilderling (MOUNT!)
 			},
 		})),
@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				19568,	-- Heroic: Awakened Shadows
 				19565,	-- Heroic: Awakened Storms
 			}},
-			["g"] = {
+			["groups"] = {
 				title(557),	-- <Name>, Awakened Hero
 			},
 		})),
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				19569,	-- Mythic: Awakened Shadows
 				19566,	-- Mythic: Awakened Storms
 			}},
-			["g"] = {
+			["groups"] = {
 				spell(432254),	-- Path of the Primal Prison
 				spell(432257),	-- Path of the Bitter Legacy
 				spell(432258),	-- Path of the Scorching Dream
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				16282,	-- No, You're Stunning!
 				16281,	-- Like Sands Through the Hourglass
 			}},
-			["g"] = {
+			["groups"] = {
 				i(192784),	-- Shellack (MOUNT!)
 			},
 		}),

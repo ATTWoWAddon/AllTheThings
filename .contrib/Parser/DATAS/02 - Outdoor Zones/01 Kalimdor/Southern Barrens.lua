@@ -9,143 +9,74 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(4996, {	-- Explore Southern Barrens
+				ach(4996, {	-- Explore Southern Barrens
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				ach(4937, {	-- Southern Barrens Quests (A)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
-						crit(38847, {	-- Honor's Stand
-							["sourceQuest"] = 25186,	-- Futile Resistance
-						}),
-						crit(38848, {	-- Northwatch Hold
-							["sourceQuest"] = 24939,	-- Run Out the Guns
-						}),
-						crit(38849, {	-- Northwatch Hold
-							["sourceQuest"] = 24948,	-- Lifting the Siege
-						}),
-						crit(38850, {	-- Northwatch Hold
-							["sourceQuest"] = 24956,	-- Silencing Rageroar
-						}),
-						crit(38851, {	-- Teegan's Expedition
-							["sourceQuest"] = 25008,	-- Filthy Animals
-						}),
-						crit(38852, {	-- Teegan's Expedition
-							["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
-						}),
-						crit(38853, {	-- Teegan's Expedition
-							["sourceQuest"] = 25002,	-- Scavenged
-						}),
-						crit(38854, {	-- Teegan's Expedition
-							["sourceQuest"] = 25000,	-- Teegan's People
-						}),
-						crit(38855, {	-- Life from the Dream
-							["sourceQuest"] = 24601,	-- The Nightmare Scar
-						}),
-						crit(38856, {	-- Life from the Dream
-							["sourceQuest"] = 24566,	-- Sowing a Solution
-						}),
-						crit(38857, {	-- Forward Command
-							["sourceQuest"] = 25044,	-- Diplomacy By Another Means
-						}),
-						crit(38858, {	-- Forward Command
-							["sourceQuest"] = 25057,	-- Clap 'Em In Irons
-						}),
-						crit(38859, {	-- Forward Command
-							["sourceQuest"] = 25059,	-- The Taurajo Briefs
-						}),
-						crit(38860, {	-- Forward Command
-							["sourceQuest"] = 25042,	-- Marching On Our Stomachs
-						}),
-						crit(38861, {	-- Firestone Point
-							["sourceQuest"] = 25085,	-- Mangletooth
-						}),
-						crit(38862, {	-- Firestone Point
-							["sourceQuest"] = 24824,	-- The Disturbed Earth
-						}),
-						crit(38863, {	-- Firestone Point
-							["sourceQuest"] = 24653,	-- Echoes of Agamaggan
-						}),
-						crit(38866, {	-- Fort Triumph
-							["sourceQuest"] = 25081,	-- Claim the Battlescar
-						}),
-						crit(38867, {	-- Fort Triumph
-							["sourceQuest"] = 25080,	-- Batteries Not Yet Included
-						}),
-						crit(38868, {	-- Fort Triumph
-							["sourceQuest"] = 25082,	-- Working the Bugs Out
-						}),
-						crit(38869, {	-- Fort Triumph
-							["sourceQuest"] = 25175,	-- The Bad News
-						}),
-						crit(38870, {	-- Fort Triumph
-							["sourceQuest"] = 25185,	-- The Deed Is Done
-						}),
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
+					["sourceQuests"] = {
+						25186,	-- Futile Resistance
+						24939,	-- Run Out the Guns
+						24948,	-- Lifting the Siege
+						24956,	-- Silencing Rageroar
+						25008,	-- Filthy Animals
+						25027,	-- You Flicked a Fine Vine to Leaf Me
+						25002,	-- Scavenged
+						25000,	-- Teegan's People
+						24601,	-- The Nightmare Scar
+						24566,	-- Sowing a Solution
+						25044,	-- Diplomacy By Another Means
+						25057,	-- Clap 'Em In Irons
+						25059,	-- The Taurajo Briefs
+						25042,	-- Marching On Our Stomachs
+						25085,	-- Mangletooth
+						24824,	-- The Disturbed Earth
+						24653,	-- Echoes of Agamaggan
+						25081,	-- Claim the Battlescar
+						25080,	-- Batteries Not Yet Included
+						25082,	-- Working the Bugs Out
+						25175,	-- The Bad News
+						25185,	-- The Deed Is Done
 					},
 					-- #endif
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Hunter's Hill
-							["sourceQuests"] = {
-								24513,	-- Eye for an Eye
-								25284,	-- Feeding the Fear
-								24505,	-- Holdout at Hunter's Hill
-								24517,	-- Put the Fear in Them
-								24514,	-- Raptor Scraps
-								24519,	-- Stalling the Survey
-								24512,	-- Warrior's Redemption
-							},
-						}),
-						crit(2, {	-- Camp Una'fe
-							["sourceQuests"] = {
-								24542,	-- A Curious Bloom
-								24525,	-- Keeping the Dogs at Bay
-								24534,	-- Speaking Their Language
-							},
-						}),
-						crit(3, {	-- Life from the Dream
-							["sourceQuests"] = {
-								24566,	-- Sowing a Solution
-								24601,	-- The Nightmare Scar
-							},
-						}),
-						crit(4, {	-- Vendetta Point
-							["sourceQuests"] = {
-								24573,	-- Honoring the Dead
-								24552,	-- Lion's Pride (H)
-								24572,	-- Taking Back Taurajo
-							},
-						}),
-						crit(5, {	-- Desolation Hold
-							["sourceQuests"] = {
-								24631,	-- Flightmare
-								24654,	-- Silithissues
-								24621,	-- Smarts-is-Smarts
-								24637,	-- The Butcher of Taurajo
-							},
-						}),
-						crit(6, {	-- Firestone Point
-							["sourceQuests"] = {
-								24667,	-- Firestone Point
-								24633,	-- Mahka's Plea
-								24608,	-- Mangletooth
-								24824,	-- The Disturbed Earth
-							},
-						}),
-						crit(7, {	-- Spearhead
-							["sourceQuest"] = 24747,	-- Sabotage!
-						}),
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
+					["sourceQuests"] = {
+						24513,	-- Eye for an Eye
+						25284,	-- Feeding the Fear
+						24505,	-- Holdout at Hunter's Hill
+						24517,	-- Put the Fear in Them
+						24514,	-- Raptor Scraps
+						24519,	-- Stalling the Survey
+						24512,	-- Warrior's Redemption
+						24542,	-- A Curious Bloom
+						24525,	-- Keeping the Dogs at Bay
+						24534,	-- Speaking Their Language
+						24566,	-- Sowing a Solution
+						24601,	-- The Nightmare Scar
+						24573,	-- Honoring the Dead
+						24552,	-- Lion's Pride (H)
+						24572,	-- Taking Back Taurajo
+						24631,	-- Flightmare
+						24654,	-- Silithissues
+						24621,	-- Smarts-is-Smarts
+						24637,	-- The Butcher of Taurajo
+						24667,	-- Firestone Point
+						24633,	-- Mahka's Plea
+						24608,	-- Mangletooth
+						24824,	-- The Disturbed Earth
+						24747,	-- Sabotage!
 					},
 					-- #endif
-					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -200,7 +131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(387, {	-- Honor's Stand, Southern Barrens
 					["cr"] = 39210,	-- John Johnson <Flight Master>
-					["coord"] = { 38.8, 10.8, SOUTHERN_BARRENS },
+					["coord"] = { 38.9, 10.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -223,10 +154,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66422, {	-- Cassandra Kaboom <Master Pet Tamer>
+					["coord"] = { 39.6, 79.2, SOUTHERN_BARRENS },
+					["description"] = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 11,
+					["groups"] = {
+						q(31904, {	-- Cassandra Kaboom
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31918, {	-- A Tamer's Homecoming (H)
+					["sourceQuest"] = 31870,	-- Cassandra Kaboom
+					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A) -- CRIEVE NOTE: Check this on MOP Classic
+					["qg"] = 66422,	-- Cassandra Kaboom
+					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+				}),
+			}),
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
-					["qg"] = 3433,	-- Tatternack Steelforge
 					["sourceQuest"] = 893,	-- Weapons of Choice
+					["qg"] = 3433,	-- Tatternack Steelforge
 					["coord"] = { 45.10, 57.69, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -247,8 +204,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25183, {	-- ...And Bury the Rest
-					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
+					["qg"] = 39118,	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -259,8 +216,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24542, {	-- A Curious Bloom
-					["qg"] = 37515,	-- Lane Tallgrass
 					["sourceQuest"] = 24539,	-- When Plants Attack
+					["qg"] = 37515,	-- Lane Tallgrass
 					["coord"] = { 44.3, 33.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -276,7 +233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25022, {	-- A Failure to Communicate
 					["qg"] = 38871,	-- Corporal Teegan
-					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
+					["coord"] = { 56.1, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -286,8 +243,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24543, {	-- A Family Divided
-					["qg"] = 37516,	-- Tawane
 					["sourceQuest"] = 24529,	-- Bad to Worse
+					["qg"] = 37516,	-- Tawane
 					["coord"] = { 44.5, 33.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -295,23 +252,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25084, {	-- A Growing Threat
 					["qg"] = 37835,	-- Dorn Redearth
-					["coord"] = { 45.0, 85.2, SOUTHERN_BARRENS },
+					["coord"] = { 45.0, 85.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/13 Razormane Quilboar Slain
 							["providers"] = {
-								{ "n", 37929},	-- Razormane Mankrik Quest Credit
-								{ "n", 37560},	-- Razormane Pathfinder
-								{ "n", 37660},	-- Razormane Warfrenzy
-								{ "n", 37661},	-- Razormane Seer
+								{ "n", 37929 },	-- Razormane Mankrik Quest Credit
+								{ "n", 37560 },	-- Razormane Pathfinder
+								{ "n", 37660 },	-- Razormane Warfrenzy
+								{ "n", 37661 },	-- Razormane Seer
 							},
 						}),
 					},
 				}),
 				q(25045, {	-- A Line in the Dirt (A)
 					["qg"] = 38323,	-- General Hawthorne
-					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
+					["coord"] = { 49.9, 49.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -330,8 +287,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24546, {	-- A Line in the Dirt (H)
-					["qg"] = 3418,	-- Kirge Sternhorn
 					["sourceQuest"] = 24543,	-- A Family Divided
+					["qg"] = 3418,	-- Kirge Sternhorn
 					["coord"] = { 41.6, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -351,8 +308,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24684, {	-- A Weezil in the Henhouse
-					["qg"] = 3341,	-- Gann Stonespire
 					["sourceQuest"] = 24632,	-- Tauren Vengeance
+					["qg"] = 3341,	-- Gann Stonespire
 					["coord"] = { 49.2, 82.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -378,8 +335,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5043, {	-- Agamaggan's Agility
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
@@ -388,8 +345,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(5042, {	-- Agamaggan's Strength
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
@@ -398,9 +355,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(24944, {	-- Back in the Fight
-					["qg"] = 38804,	-- Tolliver Houndstooth
 					["sourceQuest"] = 24941,	-- Langridge Shot
-					["coord"] = { 66.9, 46.7, SOUTHERN_BARRENS },
+					["qg"] = 38804,	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -430,9 +387,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25153, {	-- Bael'dun Rescue
-					["qg"] = 39218,	-- Bael'dun Survivor
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
-					["coord"] = { 49.3, 86.9, SOUTHERN_BARRENS },
+					["qg"] = 39218,	-- Bael'dun Survivor
+					["coord"] = { 49.4, 86.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -454,9 +411,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25080, {	-- Batteries Not Yet Included
-					["qg"] = 39084,	-- Mizzy Pistonhammer
 					["sourceQuest"] = 25079,	-- Powder Play
-					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
+					["qg"] = 39084,	-- Mizzy Pistonhammer
+					["coord"] = { 49.5, 67.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -482,8 +439,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(879, {	-- Betrayal from Within (1/2)
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -507,11 +464,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(906, {	-- Betrayal from Within (2/2)
+					["sourceQuest"] = 879,	-- Betrayal from Within (1/2)
 					["providers"] = {
 						{ "n", 3430 },	-- Mangletooth
 						{ "i", 5072 },	-- Lok's Skull
 					},
-					["sourceQuest"] = 879,	-- Betrayal from Within (1/2)
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -559,8 +516,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5052, {	-- Blood Shards of Agamaggan
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 878,	-- Tribes at War
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 1 }},	-- Blood Shard
@@ -569,7 +526,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24863, {	-- Breaking the Siege
 					["qg"] = 38378,	-- Commander Walpole
-					["coord"] = { 29.8, 9.00, SOUTHERN_BARRENS },
+					["coord"] = { 29.9, 9.00, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -612,8 +569,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24618, {	-- Claim the Battle Scar
-					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24591,	-- Changing of the Gar'dul
+					["qg"] = 37837,	-- Warlord Bloodhilt
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -632,15 +589,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/10 Desolation Raider slain
 							["provider"] = { "n", 37922 },	-- Desolation Raider
 						}),
+						objective(2, {	-- Battlescar Flag Scouted
+							["provider"] = { "o", 201877 },	-- Battlescar Flagpole
+							["coord"] = { 45.3, 69.8, SOUTHERN_BARRENS },
+						}),
 					},
 				}),
 				q(25057, {	-- Clap 'Em In Irons
-					["qg"] = 38323,	-- General Hawthorne
+					-- #if AFTER 7.0.3
+					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
+					-- #endif
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
 						25043,	-- Fields of Blood
 					},
-					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
+					["qg"] = 38323,	-- General Hawthorne
+					["coord"] = { 49.9, 49.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -651,11 +615,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24504, {	-- Clear the High Road
-					["qg"] = 37135,	-- Nura Pathfinder
 					["sourceQuests"] = {
 						28549,	-- Warchief's Command: Southern Barrens!
 						26069,	-- Nura Pathfinder
 					},
+					["qg"] = 37135,	-- Nura Pathfinder
 					["coord"] = { 31.4, 13.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -673,8 +637,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(913, {	-- Cry of the Thunderhawk
-					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 907,	-- Enraged Thunder Lizards
+					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.86, 59.13, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -700,8 +664,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24577, {	-- Desolation Hold Inspection
-					["qg"] = 37679,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24572,	-- Taking Back Taurajo
+					["qg"] = 37679,	-- Warlord Bloodhilt
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -712,13 +676,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1716, {	-- Devourer of Souls [Stormwind City]
-					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
-					-- #if AFTER WRATH
-					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
-					-- #endif
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.2, 85.2, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.4, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
@@ -750,9 +716,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25044, {	-- Diplomacy By Another Means
-					["qg"] = 38986,	-- Ambassador Gaines
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
-					["coord"] = { 49.9, 49.5, SOUTHERN_BARRENS },
+					["providers"] = {
+						{ "n", 38986 },	-- Ambassador Gaines
+						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
+					},
+					["coord"] = { 50.0, 49.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -774,11 +743,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1515, {	-- Dogran's Captivity
+					["sourceQuest"] = 1511,	-- Ken'zigla's Draught
 					["providers"] = {
 						{ "n", 5911 },	-- Grunt Logmar
 						{ "i", 6624 },	-- Ken'zigla's Draught
 					},
-					["sourceQuest"] = 1511,	-- Ken'zigla's Draught
 					["coord"] = { 44.6, 59.2, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
@@ -786,25 +755,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(24603, {	-- Don't Stop Bereavin'
-					["qg"] = 37847,	-- Mankrik
 					["sourceQuest"] = 24604,	-- Concern for Mankrik
+					["qg"] = 37847,	-- Mankrik
 					["coord"] = { 44.5, 88.0, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/13 Razormane Quilboar Slain
 							["providers"] = {
-								{ "n", 37929},	-- Razormane Mankrik Quest Credit
-								{ "n", 37560},	-- Razormane Pathfinder
-								{ "n", 37660},	-- Razormane Warfrenzy
-								{ "n", 37661},	-- Razormane Seer
+								{ "n", 37929 },	-- Razormane Mankrik Quest Credit
+								{ "n", 37560 },	-- Razormane Pathfinder
+								{ "n", 37660 },	-- Razormane Warfrenzy
+								{ "n", 37661 },	-- Razormane Seer
 							},
 						}),
 					},
 				}),
 				q(24685, {	-- Dwarf Fortress
-					["qg"] = 38140,	-- Weezil Slipshadow
 					["sourceQuest"] = 24684,	-- A Weezil in the Henhouse
+					["qg"] = 38140,	-- Weezil Slipshadow
 					["coord"] = { 50.7, 86.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -818,8 +787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24653, {	-- Echoes of Agamaggan
-					["qg"] = 37812,	-- Mahka
 					["sourceQuest"] = 24606,	-- Blood of the Barrens
+					["qg"] = 37812,	-- Mahka
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -832,8 +801,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(907, {	-- Enraged Thunder Lizards
-					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 882,	-- Ishamuhale
+					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.86, 59.13, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -872,9 +841,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25108, {	-- Feegly the Exiled
-					["qg"] = 39155,	-- Marley Twinbraid
 					["sourceQuest"] = 25104,	-- Digsite Status
-					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
+					["qg"] = 39155,	-- Marley Twinbraid
+					["coord"] = { 47.2, 88.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -895,15 +864,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(26908, {	-- Feeling Thorny
-					["qg"] = 37812,	-- Mahka
-					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
-					["timeline"] = { ADDED_4_0_3 },
-					["lvl"] = 30,
-				}),
 				q(25043, {	-- Fields of Blood
 					["qg"] = 38323,	-- General Hawthorne
-					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
+					["coord"] = { 49.9, 49.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -933,18 +896,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25086, {	-- Firestone Point (A)
-					["qg"] = 39085,	-- Logan Talonstrike
 					["sourceQuest"] = 25082,	-- Working the Bugs Out
-					["coord"] = { 49.1, 67.8, SOUTHERN_BARRENS },
+					["qg"] = 39085,	-- Logan Talonstrike
+					["coord"] = { 49.2, 67.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24667, {	-- Firestone Point (H)
-					["qg"] = 37910,	-- Crawgol
 					["sourceQuest"] = 24654,	-- Silithissues
+					["qg"] = 37910,	-- Crawgol
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(50162),	-- Crawgol's Silithid Field Guide (QI!)
+					},
 				}),
 				q(24631, {	-- Flightmare
 					["qg"] = 37909,	-- Tomusa
@@ -967,15 +933,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131382, {	-- Earthbound Trousers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(50031),	-- Tomusa's Hook (QI!)
 					},
 				}),
 				q(25186, {	-- Futile Resistance
-					["qg"] = 38380,	-- Janice Mattingly
 					["sourceQuests"] = {
 						24863,	-- Breaking the Siege
 						24862,	-- Running the Gauntlet
 					},
-					["coord"] = { 34.9, 9.50, SOUTHERN_BARRENS },
+					["qg"] = 38380,	-- Janice Mattingly
+					["coord"] = { 35.0, 9.50, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1014,9 +982,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25106, {	-- Hands Off Me Dig!
-					["qg"] = 39155,	-- Marley Twinbraid
 					["sourceQuest"] = 25104,	-- Digsite Status
-					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
+					["qg"] = 39155,	-- Marley Twinbraid
+					["coord"] = { 47.2, 88.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1034,19 +1002,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 52469 },	-- Twinbraid's Tools
 								{ "o", 202542 },	-- Twinbraid's Tools
 							},
+							["coord"] = { 49.0, 89.4, SOUTHERN_BARRENS },
 						}),
 					},
 				}),
 				q(25151, {	-- He Needs Ale!
-					["qg"] = 39188,	-- Marley Twinbraid
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
+					["qg"] = 39188,	-- Marley Twinbraid
 					["coord"] = { 49.2, 86.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mug of Ol' Barkerstout
+							["providers"] = {
+								{ "o", 202567 },	-- Keg of Ol' Barkerstout
+								{ "i",  52491 },	-- Mug of Ol' Barkerstout
+							},
+							["coords"] = {
+								{ 50.5, 85.9, SOUTHERN_BARRENS },
+								{ 50.7, 86.8, SOUTHERN_BARRENS },
+							},
+						}),
+					},
 				}),
 				q(24620, {	-- Hearts-is-Hearts
-					["qg"] = 37908,	-- Calder Gray
 					["sourceQuest"] = 24619,	-- Parts-is-Parts
+					["qg"] = 37908,	-- Calder Gray
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1058,8 +1039,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1738, {	-- Heartswood
-					["qg"] = 6244,	-- Takar the Seer
 					["sourceQuest"] = 1716,	-- Devourer of Souls [Stormwind City]
+					["qg"] = 6244,	-- Takar the Seer
 					["coord"] = { 49.2, 57.0, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -1080,35 +1061,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if NOT ANYCLASSIC
 					["description"] = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
 					-- #endif
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level between 32 and 39)
 					["lvl"] = { 29, 33 },
 					-- #endif
 				})),
 				heroscall(q(28551, {	-- Hero's Call: Southern Barrens!
-					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level between 32 and 39)
 					["lvl"] = { 29, 33 },
 					-- #endif
 				})),
 				q(24505, {	-- Holdout at Hunter's Hill
-					["qg"] = 37137,	-- Tunawa Stillwind
 					["sourceQuest"] = 24504,	-- Clear the High Road
+					["qg"] = 37137,	-- Tunawa Stillwind
 					["coord"] = { 37.4, 16.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24573, {	-- Honoring the Dead
-					["qg"] = 37717,	-- Winnoa Pineforest
 					["sourceQuest"] = 24572,	-- Taking Back Taurajo
+					["qg"] = 37717,	-- Winnoa Pineforest
 					["coord"] = { 41.5, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1132,8 +1113,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24634, {	-- Intelligence Warfare
-					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24591,	-- Changing of the Gar'dul
+					["qg"] = 37837,	-- Warlord Bloodhilt
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1149,8 +1130,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(882, {	-- Ishamuhale
-					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 3261,	-- Jorn Skyseer
+					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.86, 59.13, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1185,8 +1166,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25182, {	-- Kill 'em All!
-					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
+					["qg"] = 39118,	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1200,13 +1181,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5099 },	-- Hoof of Lakota'mani
 					["coord"] = { 47.6, 51.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3474,	-- Lakota'mani
 					["races"] = HORDE_ONLY,
+					["cr"] = 3474,	-- Lakota'mani
 					["lvl"] = 10,
 				}),
 				q(24941, {	-- Langridge Shot
 					["qg"] = 38620,	-- Thomas Paxton
-					["coord"] = { 67.0, 46.6, SOUTHERN_BARRENS },
+					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1220,6 +1201,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 202324 },	-- Broken Bottles
 								{ "o", 202325 },	-- Screws and Gears
 							},
+							["coord"] = { 67.6, 46.6, SOUTHERN_BARRENS },
 						}),
 					},
 				}),
@@ -1235,8 +1217,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24948, {	-- Lifting the Siege
-					["qg"] = 38620,	-- Thomas Paxton
 					["sourceQuest"] = 24943,	-- Re-Take the Courtyard
+					["providers"] = {
+						{ "n", 38620 },	-- Thomas Paxton
+						{ "i", 52017 },	-- Paxton's Torch
+					},
 					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1251,7 +1236,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25041, {	-- Lion's Pride (A)
 					["qg"] = 39003,	-- Sam Trawley
-					["coord"] = { 49.7, 50.4, SOUTHERN_BARRENS },
+					["coord"] = { 49.8, 50.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1278,11 +1263,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1512, {	-- Love's Gift
+					["sourceQuest"] = 1515,	-- Dogran's Captivity
 					["providers"] = {
 						{ "n", 5908 },	-- Grunt Dogran
 						{ "i", 6625 },	-- Dirt-caked Pendant
 					},
-					["sourceQuest"] = 1515,	-- Dogran's Captivity
 					["coord"] = { 43.2, 47.8, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
@@ -1290,24 +1275,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(24633, {	-- Mahka's Plea
-					["qg"] = 37812,	-- Mahka
 					["sourceQuest"] = 24653,	-- Echoes of Agamaggan
+					["qg"] = 37812,	-- Mahka
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(874, {	-- Mahren Skyseer
-					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
+					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.86, 59.13, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(25015, {	-- Make 'em Squeal
-					["qg"] = 38871,	-- Corporal Teegan
 					["sourceQuest"] = 25036,	-- Teegan's Troubles
-					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
+					["qg"] = 38871,	-- Corporal Teegan
+					["coord"] = { 56.1, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1326,9 +1311,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25085, {	-- Mangletooth (A)
-					["qg"] = 37835,	-- Dorn Redearth
 					["sourceQuest"] = 25084,	-- A Growing Threat
-					["coord"] = { 45.0, 85.3, SOUTHERN_BARRENS },
+					["qg"] = 37835,	-- Dorn Redearth
+					["coord"] = { 45.0, 85.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1350,8 +1335,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24608, {	-- Mangletooth (H)
-					["qg"] = 37847,	-- Mankrik
 					["sourceQuest"] = 24603,	-- Don't Stop Bereavin'
+					["qg"] = 37847,	-- Mankrik
 					["coord"] = { 44.5, 88.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1374,9 +1359,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25042, {	-- Marching On Our Stomachs
-					["qg"] = 39003,	-- Sam Trawley
 					["sourceQuest"] = 25041,	-- Lion's Pride (A)
-					["coord"] = { 49.7, 50.5, SOUTHERN_BARRENS },
+					["qg"] = 39003,	-- Sam Trawley
+					["coord"] = { 49.8, 50.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1402,12 +1387,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25120, {	-- Marley's Final Flight
-					["qg"] = 39155,	-- Marley Twinbraid
 					["sourceQuests"] = {
 						25108,	-- Feegly the Exiled
 						25106,	-- Hands Off Me Dig!
 					},
-					["coord"] = { 47.1, 88.5, SOUTHERN_BARRENS },
+					["qg"] = 39155,	-- Marley Twinbraid
+					["coord"] = { 47.2, 88.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1417,9 +1402,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25074, {	-- Meet Me at Triumph
-					["qg"] = 38323,	-- General Hawthorne
 					["sourceQuest"] = 25057,	-- Clap 'em In Irons
-					["coord"] = { 49.8, 49.6, SOUTHERN_BARRENS },
+					["qg"] = 38323,	-- General Hawthorne
+					["coord"] = { 49.9, 49.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1436,16 +1421,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25292, {	-- Next of Kin
-					["qg"] = 39697,	-- Nato Raintree
 					["sourceQuest"] = 24747,	-- Sabotage!
+					["qg"] = 39697,	-- Nato Raintree
 					["coord"] = { 49.2, 82.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
+					["groups"] = { i(52714) },	-- Dwarven Slug (QI!)
 				}),
 				q(25102, {	-- No Bull
 					["qg"] = 39154,	-- Hurlston Stonesthrow
-					["coord"] = { 43.4, 78.3, SOUTHERN_BARRENS },
+					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1473,8 +1459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5102 },	-- Owatanka's Tailspike
 					["coord"] = { 49.6, 59.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3473,	-- Owatanka
 					["races"] = HORDE_ONLY,
+					["cr"] = 3473,	-- Owatanka
 					["lvl"] = 10,
 				}),
 				q(24619, {	-- Parts-is-Parts
@@ -1489,27 +1475,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 201904 },	-- Mutilated Remains
 							},
 						}),
+						i(49948),	-- Calder's Bonesaw (QI!)
 					},
 				}),
 				q(25075, {	-- Pick-a-Part
 					["qg"] = 39084,	-- Mizzy Pistonhammer
-					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
+					["coord"] = { 49.5, 67.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Siege Engine Scrap
 							["providers"] = {
-								{ "i", 52285},	-- Siege Engine Scrap
-								{ "o", 202477},	-- Siege Engine Scrap
-								{ "o", 202478},	-- Siege Engine Scrap
+								{ "i",  52285 },	-- Siege Engine Scrap
+								{ "o", 202477 },	-- Siege Engine Scrap
+								{ "o", 202478 },	-- Siege Engine Scrap
 							},
 						}),
 					},
 				}),
 				q(25079, {	-- Powder Play
-					["qg"] = 39084,	-- Mizzy Pistonhammer
 					["sourceQuest"] = 25075,	-- Pick-a-Part
-					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
+					["qg"] = 39084,	-- Mizzy Pistonhammer
+					["coord"] = { 49.5, 67.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1561,8 +1548,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5046, {	-- Razorhide
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
@@ -1571,17 +1558,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(26687, {	-- Reinforcements From Theramore
-					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25182,	-- Kill 'em All!
+					["qg"] = 39118,	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(24934, {	-- Repel Boarders!
-					["qg"] = 38619,	-- Admiral Aubrey
 					["sourceQuest"] = 24921,	-- Report to Aubrey
-					["coord"] = { 69.2, 49.0, SOUTHERN_BARRENS },
+					["qg"] = 38619,	-- Admiral Aubrey
+					["coord"] = { 69.3, 49.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1591,27 +1578,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24921, {	-- Report to Aubrey
-					["qg"] = 38623,	-- Dockmaster Lewis
 					["sourceQuests"] = {
 						28551,	-- Hero's Call: Southern Barrens!
 						28550,	-- Hero's Call: Southern Barrens!
 					},
-					["coord"] = { 71.0, 50.0, SOUTHERN_BARRENS },
+					["qg"] = 38623,	-- Dockmaster Lewis
+					["coord"] = { 71.1, 49.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25087, {	-- Report to Twinbraid
-					["qg"] = 39083,	-- Commander Roberts
 					["sourceQuest"] = 25081,	-- Claim the Battlescar
+					["providers"] = {
+						{ "n", 39083 },	-- Commander Roberts
+						{ "i", 52324 },	-- Frontline Report
+					},
 					["coord"] = { 49.1, 66.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24943, {	-- Re-Take the Courtyard
-					["qg"] = 38620,	-- Thomas Paxton
 					["sourceQuest"] = 24941,	-- Langridge Shot
-					["coord"] = { 67.0, 46.6, SOUTHERN_BARRENS },
+					["qg"] = 38620,	-- Thomas Paxton
+					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1633,8 +1623,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(846, {	-- Revenge of Gann (1/2)
-					["qg"] = 3341,	-- Gann Stonespire
 					["sourceQuest"] = 843,	-- Gann's Reclamation
+					["qg"] = 3341,	-- Gann Stonespire
 					["coord"] = { 46.08, 76.37, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1667,8 +1657,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(849, {	-- Revenge of Gann (2/2)
-					["qg"] = 3341,	-- Gann Stonespire
 					["sourceQuest"] = 846,	-- Revenge of Gann (1/2)
+					["qg"] = 3341,	-- Gann Stonespire
 					["coord"] = { 46.08, 76.37, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1687,8 +1677,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5045, {	-- Rising Spirit
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
@@ -1698,7 +1688,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24862, {	-- Running the Gauntlet
 					["qg"] = 38378,	-- Commander Walpole
-					["coord"] = { 29.8, 9.00, SOUTHERN_BARRENS },
+					["coord"] = { 29.9, 9.00, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1708,8 +1698,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24939, {	-- Run Out the Guns
-					["qg"] = 3454,	-- Cannoneer Smythe
 					["sourceQuest"] = 24938,	-- The Guns of Northwatch
+					["qg"] = 3454,	-- Cannoneer Smythe
 					["coord"] = { 68.6, 44.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1735,8 +1725,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24747, {	-- Sabotage!
-					["qg"] = 38140,	-- Weezil Slipshadow
 					["sourceQuest"] = 24685,	-- Dwarf Fortress
+					["qg"] = 38140,	-- Weezil Slipshadow
 					["coord"] = { 50.7, 86.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1757,7 +1747,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25002, {	-- Scavenged
 					["qg"] = 38878,	-- Mangled Body
-					["coord"] = { 61.8, 42.0, SOUTHERN_BARRENS },
+					["coord"] = { 61.8, 42.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1770,11 +1760,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24569, {	-- Siegebreaker
-					["qg"] = 37679,	-- Warlord Bloodhilt
 					["sourceQuests"] = {
 						24546,	-- A Line in the Dirt
 						24551,	-- Meet the New Boss
 					},
+					["qg"] = 37679,	-- Warlord Bloodhilt
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1797,6 +1787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131376, {	-- Grease-Covered Footguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(49874),	-- Goblin Stickybombs (QI!)
 					},
 				}),
 				q(24515, {	-- Signals in the Sky
@@ -1806,9 +1798,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(24956, {	-- Silencing Rageroar
-					["qg"] = 38804,	-- Tolliver Houndstooth
 					["sourceQuest"] = 24944,	-- Back in the Fight
-					["coord"] = { 66.9, 46.7, SOUTHERN_BARRENS },
+					["qg"] = 38804,	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1828,7 +1820,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24654, {	-- Silithissues
-					["qg"] = 37910,	-- Crawgol
+					["providers"] = {
+						{ "n", 37910 },	-- Crawgol
+						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
+					},
 					["coord"] = { 41.6, 69.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1839,8 +1834,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24621, {	-- Smarts-is-Smarts
-					["qg"] = 37908,	-- Calder Gray
 					["sourceQuest"] = 24620,	-- Hearts-is-Hearts
+					["qg"] = 37908,	-- Calder Gray
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1864,12 +1859,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24566, {	-- Sowing a Solution
-					["qg"] = 38314,	-- Muyoh
 					["sourceQuests"] = {
 						24570,	-- Adder Subtraction
 						24571,	-- Lashvine Seeds
 					},
-					["coord"] = { 50.3, 40.3, SOUTHERN_BARRENS },
+					["qg"] = 38314,	-- Muyoh
+					["coord"] = { 50.3, 40.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Results Observed
@@ -1882,8 +1877,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24534, {	-- Speaking Their Language
-					["qg"] = 11857,	-- Makaba Flathoof
 					["sourceQuest"] = 24529,	-- Bad to Worse
+					["providers"] = {
+						{ "n", 11857 },	-- Makaba Flathoof
+						{ "i", 49782 },	-- Horn of Challenge (QI!) not prov
+					},
 					["coord"] = { 44.2, 33.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1906,8 +1904,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(889, {	-- Spirit of the Wind
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 10 }},	-- Blood Shard
@@ -1916,8 +1914,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(24519, {	-- Stalling the Survey
-					["qg"] = 37154,	-- Kilrok Gorehammer
 					["sourceQuest"] = 24518,	-- The Low Road
+					["qg"] = 37154,	-- Kilrok Gorehammer
 					["coord"] = { 39.6, 19.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1938,13 +1936,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25191, {	-- Survey the Destruction
 					["qg"] = 38383,	-- Nibb Spindlegear
-					["coord"] = { 39.0, 11.4, SOUTHERN_BARRENS },
+					["coord"] = { 39.1, 11.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24572, {	-- Taking Back Taurajo
-					["qg"] = 37679,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24569,	-- Siegebreaker
+					["qg"] = 37679,	-- Warlord Bloodhilt
 					["coord"] = { 41.4, 46.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1955,8 +1953,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24632, {	-- Tauren Vengeance
-					["qg"] = 37909,	-- Tomusa
 					["sourceQuest"] = 24631,	-- Flightmare
+					["qg"] = 37909,	-- Tomusa
 					["coord"] = { 41.1, 70.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1964,7 +1962,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25000, {	-- Teegan's People
 					["qg"] = 38621,	-- Jeffrey Long
-					["coord"] = { 64.8, 46.0, SOUTHERN_BARRENS },
+					["coord"] = { 64.8, 46.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1978,35 +1976,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25036, {	-- Teegan's Troubles
-					["qg"] = 38620,	-- Thomas Paxton
 					["sourceQuests"] = {
 						24948,	-- Lifting the Siege
 						24956,	-- Silencing Rageroar
 					},
+					["qg"] = 38620,	-- Thomas Paxton
 					["coord"] = { 67.0, 46.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
-					["qg"] = 39322,	-- Horton Gimbleheart
-					["sourceQuest"] = 25191,	-- Survey the Destruction
-					["coord"] = { 68.6, 49.0, SOUTHERN_BARRENS },
 					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
+					["sourceQuest"] = 25191,	-- Survey the Destruction
+					["qg"] = 39322,	-- Horton Gimbleheart
+					["coord"] = { 68.6, 49.0, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1, "questID", 24934 },	-- Repel Boarders!
 					["isBreadcrumb"] = true,
 				}),
 				q(25175, {	-- The Bad News
-					["qg"] = 39188,	-- Marley Twinbraid
 					["sourceQuest"] = 25151,	-- He Needs Ale!
+					["qg"] = 39188,	-- Marley Twinbraid
 					["coord"] = { 49.2, 86.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24637, {	-- The Butcher of Taurajo
-					["qg"] = 37837,	-- Warlord Bloodhilt
 					["sourceQuest"] = 24634,	-- Intelligence Warfare
+					["qg"] = 37837,	-- Warlord Bloodhilt
 					["coord"] = { 41.6, 69.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2029,9 +2028,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25185, {	-- The Deed Is Done
-					["provider"] = { "o", 202598 },	-- Big Nasty Plunger
 					["sourceQuest"] = 25183,	-- ...And Bury the Rest
-					["coord"] = { 40.3, 77.8, SOUTHERN_BARRENS },
+					["provider"] = { "o", 202598 },	-- Big Nasty Plunger
+					["coord"] = { 40.4, 77.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2051,7 +2050,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24824, {	-- The Disturbed Earth
 					["qg"] = 37834,	-- Tauna Skychaser
-					["coord"] = { 45.0, 85.3, SOUTHERN_BARRENS },
+					["coord"] = { 45.1, 85.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/4 Disturbed Earth Fragment
@@ -2061,9 +2060,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24938, {	-- The Guns of Northwatch
-					["qg"] = 38619,	-- Admiral Aubrey
 					["sourceQuest"] = 24934,	-- Repel Boarders!
-					["coord"] = { 69.2, 49.0, SOUTHERN_BARRENS },
+					["qg"] = 38619,	-- Admiral Aubrey
+					["coord"] = { 69.3, 49.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2075,14 +2074,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24518, {	-- The Low Road
 					["provider"] = { "i", 49776 },	-- Roadway Plans
-					["crs"] = { 37216 },	-- Honor's Stand Officer
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["crs"] = { 37216 },	-- Honor's Stand Officer
 				}),
 				q(24601, {	-- The Nightmare Scar
-					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24574,	-- To Harvest Chaos
-					["coord"] = { 50.4, 40.6, SOUTHERN_BARRENS },
+					["qg"] = 37570,	-- Naralex
+					["coord"] = { 50.4, 40.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(53161, {	-- Wailing Ring
@@ -2112,23 +2111,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 				}),
 				q(25059, {	-- The Taurajo Briefs
-					["qg"] = 38986,	-- Ambassador Gaines
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
 						25043,	-- Fields of Blood
 					},
-					["coord"] = { 49.9, 49.5, SOUTHERN_BARRENS },
+					["qg"] = 38986,	-- Ambassador Gaines
+					["coord"] = { 50.0, 49.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/3 Taurajo Intelligence
 							["providers"] = {
-								{ "i", 52277},	-- Taurajo Intelligence
-								{ "o", 202467},	-- Taurajo Intelligence
+								{ "i",  52277 },	-- Taurajo Intelligence
+								{ "o", 202467 },	-- Taurajo Intelligence
 							},
 						}),
 					},
-
 				}),
 				q(857, {	-- The Tear of the Moons
 					["qg"] = 3421,	-- Feegly the Exiled
@@ -2147,9 +2145,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24574, {	-- To Harvest Chaos
-					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24565,	-- Biological Intervention
-					["coord"] = { 50.4, 40.6, SOUTHERN_BARRENS },
+					["qg"] = 37570,	-- Naralex
+					["coord"] = { 50.4, 40.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Outgrowth slain
@@ -2162,9 +2160,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25034, {	-- To the Front!
-					["qg"] = 38871,	-- Corporal Teegan
 					["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
-					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
+					["qg"] = 38871,	-- Corporal Teegan
+					["coord"] = { 56.1, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2187,12 +2185,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25028, {	-- Trouble From the Ground Up
-					["qg"] = 38876,	-- Hannah Bridgewater
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate
 						25015,	-- Make 'Em Squeal
 					},
-					["coord"] = { 56.2, 42.6, SOUTHERN_BARRENS },
+					["qg"] = 38876,	-- Hannah Bridgewater
+					["coord"] = { 56.2, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2206,9 +2204,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25174, {	-- Twinbraid Needs to Know
-					["qg"] = 38152,	-- Weezil Slipshadow
 					["sourceQuest"] = 25163,	-- Who Did This?
-					["coord"] = { 50.2, 87.1, SOUTHERN_BARRENS },
+					["qg"] = 38152,	-- Weezil Slipshadow
+					["coord"] = { 50.3, 87.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2252,8 +2250,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(885, {	-- Washte Pawne
 					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3472,	-- Washte Pawne
 					["races"] = HORDE_ONLY,
+					["cr"] = 3472,	-- Washte Pawne
 					["lvl"] = 10,
 				}),
 				q(893, {	-- Weapons of Choice
@@ -2292,22 +2290,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25163, {	-- Who Did This?
-					["qg"] = 39220,	-- Wounded Bael'dun Officer
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
-					["coord"] = { 49.6, 87.1, SOUTHERN_BARRENS },
+					["qg"] = 39220,	-- Wounded Bael'dun Officer
+					["coord"] = { 49.6, 87.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24807, {	-- Winnoa Pineforest
-					["qg"] = 37570,	-- Naralex
 					["sourceQuest"] = 24601,	-- The Nightmare Scar
+					["qg"] = 37570,	-- Naralex
 					["coord"] = { 48.1, 38.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(5044, {	-- Wisdom of Agamaggan
-					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 5075, 4 }},	-- Blood Shard
@@ -2316,8 +2314,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(25082, {	-- Working the Bugs Out
-					["qg"] = 39085,	-- Logan Talonstrike
-					["coord"] = { 49.1, 67.8, SOUTHERN_BARRENS },
+					["providers"] = {
+						{ "n", 39085 },	-- Logan Talonstrike
+						{ "i", 50128 },	-- Bucket of Burning Pitch (QI!) not prov
+					},
+					["coord"] = { 49.2, 67.9, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2327,12 +2328,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25027, {	-- You Flicked a Fine Vine to Leaf Me
-					["qg"] = 38871,	-- Corporal Teegan
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate
 						25015,	-- Make 'Em Squeal
 					},
-					["coord"] = { 56.1, 42.6, SOUTHERN_BARRENS },
+					["providers"] = {
+						{ "n", 38871 },	-- Corporal Teegan
+						{ "i", 52073 },	-- Bramblestaff
+					},
+					["coord"] = { 56.1, 42.7, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2426,30 +2430,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
-					-- #if AFTER CATA
-					["coord"] = { 49.8, 89.6, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 49.6, 83.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.8, 89.6, SOUTHERN_BARRENS },
+						-- #else
+						{ 49.6, 83.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This rare NPC is friendly to Alliance players.",
+					["description"] = "This Rare NPC is friendly to Alliance players.",
 				}),
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
-					-- #if AFTER CATA
-					["coord"] = { 47.8, 88.2, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 47.6, 85.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.8, 88.2, SOUTHERN_BARRENS },
+						-- #else
+						{ 47.6, 85.6, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This rare NPC is friendly to Alliance players.",
+					["description"] = "This Rare NPC is friendly to Alliance players.",
 					["groups"] = {
 						i(4785, {	-- Brimstone Belt
-							-- #if BEFORE 4.0.3
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							-- #elseif AFTER 10.1.7
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mob that drop this item.",
-							-- #endif
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 11.09.2023
+							["description"] =
+								-- #if AFTER 10.1.7
+								"This item is only naturally accessible to Horde players due to the allegiance of the NPC that drop this item.",
+								-- #elseif BEFORE 4.0.3
+								"This item is only naturally accessible to Horde players due to the allegiance of the NPC that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+								-- #else
+								nil,
+								-- #endif
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2469,7 +2480,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1539, {	-- Gnarled Hermit's Staff
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2489,44 +2500,51 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5847, {	-- Heggin Stonewhisker <Bael'dun Chief Engineer>
-					-- #if AFTER CATA
-					["coord"] = { 47.0, 88.6, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 47.0, 83.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.0, 88.6, SOUTHERN_BARRENS },
+						-- #else
+						{ 47.0, 83.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This rare NPC is friendly to Alliance players.",
+					["description"] = "This Rare NPC is friendly to Alliance players.",
 					["groups"] = {
 						i(2035, {	-- Sword of the Night Sky
-							-- #if BEFORE 4.0.3
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							-- #elseif AFTER 10.1.7
-							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mob that drop this item.",
-							-- #endif
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["description"] =
+								-- #if AFTER 10.1.7
+								"This item is only naturally accessible to Horde players due to the allegiance of the NPC that drop this item.",
+								-- #elseif BEFORE 4.0.3
+								"This item is only naturally accessible to Horde players due to the allegiance of the NPC that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+								-- #else
+								nil,
+								-- #endif
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
-					-- #if AFTER CATA
-					["coord"] = { 47.4, 85.8, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 49.4, 84.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.4, 85.8, SOUTHERN_BARRENS },
+						-- #else
+						{ 49.4, 84.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
-					["description"] = "This rare NPC is friendly to Alliance players and functions as a vendor.",
+					["description"] = "This Rare NPC is friendly to Alliance players and functions as a vendor.",
 				}),
 				n(3253, {	-- Silithid Harvester
-					-- #if AFTER CATA
-					["coord"] = { 41.2, 67.0, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.2, 67.0, SOUTHERN_BARRENS },
+						-- #else
 						{ 42.6, 70.6, THE_BARRENS },
 						{ 44.6, 70.0, THE_BARRENS },
 						{ 44.4, 74.0, THE_BARRENS },
 						{ 47.8, 70.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(5138, {	-- Harvester's Head
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2535,26 +2553,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5829, {	-- Snort the Heckler
-					-- #if AFTER CATA
-					["coord"] = { 45.6, 43.6, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.6, 43.6, SOUTHERN_BARRENS },
+						-- #else
 						{ 41.8, 20.4, THE_BARRENS },
 						{ 40.8, 23.4, THE_BARRENS },
 						{ 41.4, 27.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5864, {	-- Swinegart Spearhide
-					-- #if AFTER CATA
-					["coord"] = { 38.6, 33.6, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.6, 33.6, SOUTHERN_BARRENS },
+						-- #else
 						{ 41.4, 45.6, THE_BARRENS },
 						{ 42.2, 48.0, THE_BARRENS },
 						{ 45.2, 49.0, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5832, {	-- Thunderstomp
 					["coords"] = {
@@ -2610,74 +2628,87 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(5075, {	-- Blood Shard
-					["crs"] = {
-						3261,	-- Bristleback Thornweaver
-						3263,	-- Bristleback Geomancer
-						3260,	-- Bristleback Water Seeker
-						3258,	-- Bristleback Hunter
+					["providers"] = {
+						{ "n", 3261 },	-- Bristleback Thornweaver
+						{ "n", 3263 },	-- Bristleback Geomancer
+						{ "n", 3260 },	-- Bristleback Water Seeker
+						{ "n", 3258 },	-- Bristleback Hunter
+						-- #if ANYCLASSIC
+						{ "o", 3763 },	-- Copper Vein (The Barrens - Blood Shard)
+						{ "o", 3764 },	-- Tin Vein (The Barrens - Blood Shard)
+						-- #endif
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 3458,	-- Razormane Seer
-					["coords"] = {
-						{ 42.6, 79.0, THE_BARRENS },
-						{ 43.0, 83.2, THE_BARRENS },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						37661,	-- Razormane Seer
+						-- #else
+						3458,	-- Razormane Seer
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37661,	-- Razormane Seer
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 41.8, 82.8, SOUTHERN_BARRENS },
 						{ 43.2, 84.4, SOUTHERN_BARRENS },
 						{ 23.4, 35.4, SOUTHERN_BARRENS },
+						-- #else
+						{ 42.6, 79.0, THE_BARRENS },
+						{ 43.0, 83.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5051, {	-- Dig Rat
-					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
+					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },	-- Bael Modan Excavation
 					["cr"] = 3444,	-- Dig Rat
+					["description"] = "Only drops from Dig Rats in Southern Barrens."
 				}),
 				i(78342, {	-- Plump Dig Rat (RECIPE!)
+					["timeline"] = { ADDED_4_3_0 },
 					["coord"] = { 49.4, 88.2, SOUTHERN_BARRENS },
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
+						37560,	-- Razormane Pathfinder
+						-- #else
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
+						-- #endif
 					},
 					["coords"] = {
-						{ 41.8, 79.6, THE_BARRENS },
-						{ 43.8, 83.2, THE_BARRENS },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37560,	-- Razormane Pathfinder
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 43.4, 82.0, SOUTHERN_BARRENS },
 						{ 41.6, 81.4, SOUTHERN_BARRENS },
 						{ 43.6, 86.2, SOUTHERN_BARRENS },
+						-- #else
+						{ 41.8, 79.6, THE_BARRENS },
+						{ 43.8, 83.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 3459,	-- Razormane Warfrenzy
-					["coords"] = {
-						{ 41.6, 79.0, THE_BARRENS },
-						{ 42.2, 81.6, THE_BARRENS },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						37660,	-- Razormane Warfrenzy
+						-- #else
+						3459,	-- Razormane Warfrenzy
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37660,	-- Razormane Warfrenzy
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 38.0, 81.8, SOUTHERN_BARRENS },
 						{ 43.6, 82.6, SOUTHERN_BARRENS },
 						{ 44.6, 87.8, SOUTHERN_BARRENS },
+						-- #else
+						{ 41.6, 79.0, THE_BARRENS },
+						{ 42.2, 81.6, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
 					["timeline"] = { ADDED_3_1_0, DELETED_4_3_0 },
@@ -2689,10 +2720,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(6663, {	-- Recipe: Elixir of Giant Growth (RECIPE!)
-					["description"] = "Can drop from any mob in the Barrens.",
+					["description"] = "Can drop from any creature in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
-					["description"] = "Can drop from any mob in the Barrens.",
+					["description"] = "Can drop from any creature in the Barrens.",
+				}),
+				i(5052, {	-- Unconscious Dig Rat
+					["cr"] = 3444,	-- Dig Rat
 				}),
 			}),
 		},

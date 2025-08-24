@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				3351,	-- Grizzlefur Cub (PET!)
 				3296,	-- Palamanther (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(3403, {	-- Blue Dasher (PET!)
 					["coord"] = { 37.8, 79.8, THALDRASZUS },
 				}),

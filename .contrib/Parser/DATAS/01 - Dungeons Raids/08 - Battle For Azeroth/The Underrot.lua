@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1042,	-- Ruin's Descent
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				i(206199),	-- Blood-Drenched Robes
 				i(206197),	-- Breastplate of Arterial Protection
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						131318,	-- Elder Leaxa <Voice of G'huun>
 					},
-					["g"] = {
+					["groups"] = {
 						i(159652),	-- Leaxa's Thought-Piercer
 						i(159324),	-- Blood Elder's Bindings
 						i(159402),	-- Waistguard of Sanguine Fervor
@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						131817,	-- Cragmaw the Infested
 					},
-					["g"] = {
+					["groups"] = {
 						i(159653),	-- Bile-Stained Crawg Tusks
 						i(159134),	-- Heart-Piercing Stalacite
 						i(159433),	-- Phosphorescent Armplates
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						131383,	-- Sporecaller Zancha
 					},
-					["g"] = {
+					["groups"] = {
 						i(159654),	-- Corruption Borne Headlopper
 						i(159665),	-- Targee of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = {
 						133007,	-- Unbound Abomination
 					},
-					["g"] = {
+					["groups"] = {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exasanguinator
 						i(159446),	-- Greathelm of the Putrid Path
@@ -101,12 +101,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2157, {	-- Elder Leaxa
 						["crs"] = {
 							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
-						["g"] = {
+						["groups"] = {
 							i(159652),	-- Leaxa's Thought-Piercer
 							i(159324),	-- Blood Elder's Bindings
 							i(159402),	-- Waistguard of Sanguine Fervor
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							131817,	-- Cragmaw the Infested
 						},
-						["g"] = {
+						["groups"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
 							i(159134),	-- Heart-Piercing Stalacite
 							i(159433),	-- Phosphorescent Armplates
@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							131383,	-- Sporecaller Zancha
 						},
-						["g"] = {
+						["groups"] = {
 							i(159654),	-- Corruption Borne Headlopper
 							i(159665),	-- Targee of the Ancient Warder
 							i(159292),	-- Sporecaller's Shroud
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							133007,	-- Unbound Abomination
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12501),	-- Heroic: Underrot
 							i(159655),	-- Vile Exasanguinator
 							i(159446),	-- Greathelm of the Putrid Path
@@ -171,12 +171,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2157, {	-- Elder Leaxa
 						["crs"] = {
 							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12498),	-- Taint Nobody Got Time For That
 							i(159652),	-- Leaxa's Thought-Piercer
 							i(159324),	-- Blood Elder's Bindings
@@ -190,7 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							131817,	-- Cragmaw the Infested
 						},
-						["g"] = {
+						["groups"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
 							i(159134),	-- Heart-Piercing Stalacite
 							i(159433),	-- Phosphorescent Armplates
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							131383,	-- Sporecaller Zancha
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12549),	-- Not a Fun Guy
 							i(159654),	-- Corruption Borne Headlopper
 							i(159665),	-- Targee of the Ancient Warder
@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						["crs"] = {
 							133007,	-- Unbound Abomination
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12502),	-- Mythic: Underrot
 							ach(13003),	-- Mythic: Underrot Guild Run
 							ach(12499),	-- Sporely Alive

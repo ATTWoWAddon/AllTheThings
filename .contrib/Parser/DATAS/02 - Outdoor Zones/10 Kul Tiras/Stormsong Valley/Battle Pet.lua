@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				2399,	-- Hermit Crab (PET!)
 				2381,	-- Shack Crab (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(2374, {	-- Freshwater Crawler (PET!)
 					["coord"] = { 65.6, 67.2, STORMSONG_VALLEY },
 				}),

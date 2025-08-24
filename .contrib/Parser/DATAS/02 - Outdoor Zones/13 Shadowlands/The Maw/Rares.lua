@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						179985,	-- Stygian Stonecrusher
 						179760,	-- Towering Exterminator
 					},
-					["g"] = {
+					["groups"] = {
 						i(183409),	-- Decaying Mawrat (PET!)
 						i(184368),	-- Sputtering Hilt
 						i(183408),	-- Undying Deathroach (PET!)
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(157964, {	-- Adjutant Dekaris
 				["coord"] = { 25.8, 31.2, THE_MAW },
 				["questID"] = 57482,
-				["g"] = {
+				["groups"] = {
 					i(186222, {	-- Grips of the Coldheart Adjutant
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(169102, {	-- Agonix
 				["coord"] = { 28.0, 44.6, THE_MAW },
 				["questID"] = 63380,
-				["g"] = {
+				["groups"] = {
 					i(186616, {	-- Bindings of Screaming Death
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(170787, {	-- Akros <Death's Hammer>
 				["coord"] = { 34.0, 74.6, THE_MAW },
 				["questID"] = 63382,
-				["g"] = {
+				["groups"] = {
 					i(186617, {	-- Death's Hammer Stompers
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Requires 4 players to summon.",
 				["coord"] = { 19.6, 42.0, THE_MAW },
 				["questID"] = 60788,
-				["g"] = {
+				["groups"] = {
 					i(184106),	-- Gimble
 					i(182327),	-- Dominion Etching: Loss
 				},
@@ -90,13 +90,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(157833, {	-- Borr-Geth
 				["coord"] = { 38.9, 41.2, THE_MAW },
 				["questID"] = 57469,
-				["g"] = {
+				["groups"] = {
 					i(184312),	-- Borr-Geth's Fiery Brimstone (TOY!)
 					i(186223),	-- Coif of the Molten Terror
 				},
 			}),
 			n(180246, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Carriage Crusher
-				["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
+				["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns. You can hop into the carriage to heal it and yourself.",
 				["crs"] = {
 					180182,	-- Assault Supply Carriage
 					180181,	-- Wicklick [Vignette]
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 45.5, 54.8, THE_MAW },
 				["questID"] = 64258, -- and 64439, both of which also triggered on my first Traitor Balthier kill.
 				["maps"] = { KORTHIA },	-- show in Korthia as well since it spawns there
-				["g"] = {
+				["groups"] = {
 					i(187370),	-- Carriage Crusher's Padded Slippers
 					i(187399),	-- Maw Construct's Shoulderguards
 				},
@@ -116,14 +116,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 28.6, 19.4, THE_MAW },	-- Venthyr assault spawnpoint
 				},
 				["questID"] = 61106,
-				["g"] = {
+				["groups"] = {
 					i(183887),	-- Suirhtaned, Blade of the Heir
 				},
 			}),
 			n(168693, {	-- Cyrixia
 				["coord"] = { 28.6, 25.0, THE_MAW },
 				["questID"] = 61346,
-				["g"] = {
+				["groups"] = {
 					i(183070),	-- Mawsworn Orders
 					i(186618),	-- Willbreaker's Chain
 				},
@@ -132,14 +132,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "At the back of the cave.",
 				["coord"] = { 59.3, 51.9, THE_MAW },
 				["questID"] = 62281,
-				["g"] = {
+				["groups"] = {
 					i(186220),	-- Stygian Chestcage
 				},
 			}),
 			n(158025, {	-- Darklord Taraxis
 				["coord"] = { 48.6, 82.6, THE_MAW },
 				["questID"] = 62282,
-				["g"] = {
+				["groups"] = {
 					i(183901, {	-- Bonestorm Top (TOY!)
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Coordinates are for a teleportation pad that will take you to the rare's platform.",
 				["coord"] = { 27.5, 17.3, THE_MAW },
 				["questID"] = 63373,
-				["g"] = {
+				["groups"] = {
 					i(186619),	-- Bloodspattered Shoulders of the Flayer
 					bo(59230),	-- Dartanos bonus objective
 				},
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162844, {	-- Dath Rezara
 				["coord"] = { 19.0, 57.6, THE_MAW },
 				["questID"] = 60988,
-				["g"] = {
+				["groups"] = {
 					i(183066),	-- Korrath's Grimoire: Aleketh
 					i(183067),	-- Korrath's Grimoire: Belidir
 					i(183068),	-- Korrath's Grimoire: Gyadrek
@@ -169,19 +169,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(179779, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Deomen the Vortex
-				["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+				["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r. There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
 				["crs"] = { 179791 },	-- Deomen the Vortex (while in cage)
 				["coord"] = { 61.3, 41.3, THE_MAW },
 				["questID"] = 64251,
-				["g"] = {
+				["groups"] = {
 					i(187367),	-- Deomen's Vortex Blade
 					i(187385),	-- Vortex Piercing Headgear
 				},
 			})),
 			n(170711, {	-- Dolos
+				["description"] = "Will not spawn during Necrolord assault.",
 				["coord"] = { 28.6, 60.6, THE_MAW },
 				["questID"] = 60909,
-				["g"] = {
+				["groups"] = {
 					i(186209),	-- Blood-Spattered Gloves of Death
 				},
 			}),
@@ -189,7 +190,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "To summon the mob, kill Agonizing Shades near the dark floating orb.",
 				["coord"] = { 32.0, 21.7, THE_MAW },
 				["questID"] = 63372,
-				["g"] = {
+				["groups"] = {
 					i(186622, {	-- Robe of Drifting Sorrow
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -197,9 +198,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170774, {	-- Eketra <The Impaler>
-				["coord"] = { 22.8, 52.4, THE_MAW },
+				["coord"] = { 23.8, 53.6, THE_MAW },
 				["questID"] = 60915,
-				["g"] = {
+				["groups"] = {
 					i(186563),	-- Spear of the Impaler
 				},
 			}),
@@ -207,7 +208,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Requires 4 players to summon.",
 				["coord"] = { 42.2, 21.0, THE_MAW },
 				["questID"] = 60666,
-				["g"] = {
+				["groups"] = {
 					i(184105),	-- Gyre
 					i(182328),	-- Dominion Etching: Grief
 				},
@@ -215,7 +216,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(154330, {	-- Eternas the Tormentor
 				["coord"] = { 19.3, 46.1, THE_MAW },
 				["questID"] = 57509,
-				["g"] = {
+				["groups"] = {
 					i(183407),	-- Dread (PET!)
 					i(186212, {	-- Eternas' Braided Waistcord
 						["timeline"] = { ADDED_9_1_0 },
@@ -227,7 +228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 21.0, 70.2, THE_MAW },
 				["questID"] = 62260,
 				["cost"] = { { "i", 182329, 1 } },	-- 1x Domination's Calling
-				["g"] = {
+				["groups"] = {
 					i(186606),	-- Nilganihmaht's Signet Ring
 					i(184108),	-- Vorpal Amulet
 					i(183066),	-- Korrath's Grimoire: Aleketh
@@ -238,14 +239,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(179460, {	-- Fallen Charger
 				["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
 				["questID"] = 64164,
-				["g"] = {
+				["groups"] = {
 					i(186659),	-- Fallen Charger (MOUNT!)
 				},
 			}),
 			n(172523, {	-- Houndmaster Vasanok
 				["coord"] = { 60.1, 64.9, THE_MAW },
 				["questID"] = 63385,
-				["g"] = {
+				["groups"] = {
 					i(186224),	-- Beastwarren Houndmaster's Treads
 					bo(62209),	-- Houndmaster Vasanok bonus objective
 				},
@@ -253,7 +254,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162965, {	-- Huwerath
 				["coord"] = { 21.3, 29.3, THE_MAW },
 				["questID"] = 58918,
-				["g"] = {
+				["groups"] = {
 					i(186623, {	-- Lost Soul's Mantle
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -263,14 +264,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Flies along the gap between islands.",
 				["coord"] = { 35.6, 52.2, THE_MAW },
 				["questID"] = 62788,
-				["g"] = {
+				["groups"] = {
 					i(186214),	-- Maw Snakeskin Boots
 				},
 			}),
 			n(170692, {	-- Krala <Death's Wings>
 				["coord"] = { 30.7, 68.8, THE_MAW },
 				["questID"] = 63381,
-				["g"] = {
+				["groups"] = {
 					i(186624),	-- Death Wing Drape
 					bo(60903),	-- Krala bonus objective
 				},
@@ -278,7 +279,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(171316, {	-- Malevolent Stygia
 				["coord"] = { 27.3, 17.3, THE_MAW },
 				["questID"] = 63383,
-				["g"] = {
+				["groups"] = {
 					i(186625, {	-- Hood of Malevolence
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -292,7 +293,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 19.0, 43.8, THE_MAW },	-- Night Fae assault spawnpoint
 				},
 				["questID"] = 60987,
-				["g"] = {
+				["groups"] = {
 					i(184292),	-- Ancient Elethium Coin (TOY!)
 					i(185892, {	-- Stygia-Etched Decapitator
 						["timeline"] = { ADDED_9_1_0 },
@@ -302,7 +303,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(158278, {	-- Nascent Devourer
 				["coord"] = { 46.0, 74.2, THE_MAW },
 				["questID"] = 57573,
-				["g"] = {
+				["groups"] = {
 					i(186236, {	-- Devourer's Shadehide Jerkin
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -311,7 +312,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(164064, {	-- Obolos
 				["coord"] = { 48.6, 18.4, THE_MAW },
 				["questID"] = 60667,
-				["g"] = {
+				["groups"] = {
 					i(186238, {	-- Mantle of the Prime Collector
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -320,7 +321,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(172207, {	-- Odalrik
 				["coord"] = { 38.6, 28.8, THE_MAW },
 				["questID"] = 63413,
-				["g"] = {
+				["groups"] = {
 					i(183061),	-- Wailing Coin
 					bo(62618),	-- Odalrik bonus objective
 				},
@@ -328,7 +329,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162845, {	-- Orrholyn <Lord of Bloodletting>
 				["coord"] = { 25.6, 48.2, THE_MAW },
 				["questID"] = 63375,
-				["g"] = {
+				["groups"] = {
 					i(186626, {	-- Bloodwicking Bands
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -339,13 +340,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Collect Eurydea's Necklace and offer it to Orophea.",
 				["coord"] = { 23.6, 21.6, THE_MAW },
 				["questID"] = 61519,
-				["g"] = {
+				["groups"] = {
 					i(186211, {	-- Pantaloons of the Condemned Bard
 						["timeline"] = { ADDED_9_1_0 },
 					}),
 					o(356555, {	-- Eurydea's Necklace
 						["coord"] = { 26.8, 29.3, THE_MAW },
-						["g"] = {
+						["groups"] = {
 							i(181794),	-- Orophea's Lyre (TOY!)
 						},
 					}),
@@ -355,7 +356,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Inside the cave.",
 				["coord"] = { 20.8, 39.1, THE_MAW },
 				["questID"] = 63388,
-				["g"] = {
+				["groups"] = {
 					i(186627),	-- Belt of Ten Thousand Tails
 					i(183136),	-- Incendiary Mawrat
 					bo(63044),	-- Ratgusher bonus objective
@@ -364,7 +365,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(162829, {	-- Razkazzar
 				["coord"] = { 26.2, 37.4, THE_MAW },
 				["questID"] = 63374,
-				["g"] = {
+				["groups"] = {
 					i(186628),	-- Razkazzar's Axe Grippers
 					bo(60992),	-- Razkazzar bonus objective
 				},
@@ -376,7 +377,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 55.7, 67.6, THE_MAW },
 				},
 				["questID"] = 62210,
-				["g"] = {
+				["groups"] = {
 					i(186629),	-- Sanngor's Spiked Band
 					i(183410),	-- Sharpclaw (PET!)
 				},
@@ -384,7 +385,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(170634, {	-- Shadeweaver Zeris
 				["coord"] = { 32.8, 66.6, THE_MAW },
 				["questID"] = 60884,
-				["g"] = {
+				["groups"] = {
 					i(185945),	-- Shadeweaver's Spire
 					i(183066),	-- Korrath's Grimoire: Aleketh
 					i(183067),	-- Korrath's Grimoire: Belidir
@@ -401,7 +402,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					-- #endif
 				},
 				["questID"] = 63386,
-				["g"] = {
+				["groups"] = {
 					i(186240, {	-- Broodmotherhide Cloak
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -411,7 +412,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(166398, {	-- Soulforger Rhovus
 				["coord"] = { 36.0, 41.4, THE_MAW },
 				["questID"] = 60834,
-				["g"] = {
+				["groups"] = {
 					i(186613, {	-- Rhovus' Linked Greaves
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -421,7 +422,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(165047, {	-- Soulsmith Yol-Mattar
 				["coord"] = { 36.6, 37.2, THE_MAW },
 				["questID"] = 63377,
-				["g"] = {
+				["groups"] = {
 					i(186630),	-- Spark-Deflecting Girdle
 					bo(59441),	-- Soulsmith Yol-Mattar bonus objective
 				},
@@ -429,7 +430,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(156203, {	-- Stygian Incinerator
 				["coord"] = { 36.4, 44.4, THE_MAW },
 				["questID"] = 63371,
-				["g"] = {
+				["groups"] = {
 					i(186631, {	-- Emberfused Band
 						["timeline"] = { ADDED_9_1_0 },
 					}),
@@ -440,7 +441,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Requires 4 players to summon.",
 				["coord"] = { 28.6, 12.6, THE_MAW },
 				["questID"] = 60789,
-				["g"] = {
+				["groups"] = {
 					i(184107),	-- Borogove Cloak
 					i(182326),	-- Dominion Etching: Pain
 				},
@@ -448,7 +449,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(170731, {	-- Thanassos <Death's Voice>
 				["coord"] = { 27.6, 71.6, THE_MAW },
 				["questID"] = 60914,
-				["g"] = {
+				["groups"] = {
 					i(186234, {	-- Girdle of the Death Speaker
 						-- this is the only permanently-available source, but the Item can drop from other temporary creatures
 						["crs"] = {
@@ -464,7 +465,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 68.8, 45.5, THE_MAW },
 				},
 				["questID"] = 64439, -- and 64258, both of which also triggered on my first completion of the Assault Supply Carriage event.
-				["g"] = {
+				["groups"] = {
 					i(187374),	-- Balthier's Waistcord
 					i(187364),	-- Maldraxxi Traitor's Blade
 				},
@@ -473,7 +474,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Click the runes in the correct order.",
 				["coord"] = { 40.8, 59.8, THE_MAW },
 				["questID"] = 63387,
-				["g"] = {
+				["groups"] = {
 					i(186632),	-- Rune Covered Bindings
 					n(174810, {	-- Rune of Cruelty (1)
 						["description"] = "Click 1st.",
@@ -490,16 +491,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(172862, {	-- Yero the Skittish
 				["coord"] = { 37.9, 61.4, THE_MAW },
 				["questID"] = 61568,
-				["g"] = {
+				["groups"] = {
 					i(186228),	-- Helm of the Skittish Hero
 				},
 			}),
 			n(177444, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Ylva <Mate of Guarm>
-				["questID"] = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time.  didn't get to do the achievement so it's unrelated to that
+				["questID"] = 64152,	-- also 62683 after a refresh, not sure which one is 'first time' or if both trigger every time. didn't get to do the achievement so it's unrelated to that
 				["coord"] = { 66.7, 42.4, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					ach(14943, {	-- Guarmageddon
-						["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.  You must be within range of the baby guarm when they die to get the debuff.",
+						["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare. You must be within range of the baby guarm when they die to get the debuff.",
 							["crs"] = {
 								177441,	-- Frekki
 								177422,	-- Girs
@@ -518,9 +519,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(187393),	-- Sterling Hound-Handler's Gauntlets
 					i(186217),	-- Supple Helhound Leather Pants
 					i(187359),	-- Ylva's Water Dish
-					i(186970, {	-- Feeder's Hand and Key
-						["questID"] = 62683,
-						["g"] = {
+					i(186970, {	-- Feeder's Hand and Key (CI!)
+						["groups"] = {
 							i(186727),	-- Seal Breaker Key
 						},
 					}),

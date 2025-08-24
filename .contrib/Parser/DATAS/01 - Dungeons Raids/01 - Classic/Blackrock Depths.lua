@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["mapID"] = BLACKROCK_DEPTHS,
-		["maps"] = { 243 },
+		["maps"] = { BLACKROCK_DEPTHS_LEVEL2 },
 		["lvl"] = 42,
 		["groups"] = {
 			n(FACTIONS, {
@@ -62,14 +62,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84338, {	-- A Binding Contract
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 					["providers"] = {
 						{ "n",  12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 						{ "i", 227730 },	-- Thorium Brotherhood Contract
 					},
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["requireSkill"] = BLACKSMITHING,
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					["timeline"] = { ADDED_1_15_3 },
+					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 60,
 					["groups"] = {
 						i(227727),	-- Plans: Sulfuron Hammer (RECIPE!)
@@ -77,16 +77,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				q(7604, {	-- A Binding Contract
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 					["providers"] = {
 						{ "n", 12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 						{ "i", 18628 },	-- Thorium Brotherhood Contract
 					},
-					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["requireSkill"] = BLACKSMITHING,
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
+					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
 						i(18592, {	-- Plans: Sulfuron Hammer (RECIPE!)
@@ -97,18 +97,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4264, {	-- A Crumpled Up Note
-					["provider"] = { "i", 11446 },	-- A Crumpled Up Note
-					["sourceQuest"] = 4242,	-- Abandoned Hope
 					-- #if BEFORE 3.0.2
 					["description"] = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
 					-- #endif
+					["sourceQuest"] = 4242,	-- Abandoned Hope
+					["provider"] = { "i", 11446 },	-- A Crumpled Up Note
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4282, {	-- A Shred of Hope
-					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4264,	-- A Crumpled Up Note
+					["qg"] = 9023,	-- Marshal Windsor
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -122,20 +122,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4022, {	-- A Taste of Flame (1/2) (A)
-					["qg"] = 9459,	-- Cyrus Therepentous
-					["sourceQuest"] = 3481,	-- Trinkets...
-					["altQuests"] = { 4023 },	-- A Taste of Flame
 					-- #if BEFORE 4.0.3
 					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
 					-- #endif
+					["sourceQuest"] = 3481,	-- Trinkets...
+					["altQuests"] = { 4023 },	-- A Taste of Flame
+					["qg"] = 9459,	-- Cyrus Therepentous
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10575, 1 } },	-- Black Dragonflight Molt
 					["lvl"] = 52,
 				}),
 				q(4023, {	-- A Taste of Flame (1/2) (B)
-					["qg"] = 9459,	-- Cyrus Therepentous
 					["altQuests"] = { 4022 },	-- A Taste of Flame (1/2) (A)
+					["qg"] = 9459,	-- Cyrus Therepentous
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
@@ -148,11 +148,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4024, {	-- A Taste of Flame (2/2)
-					["qg"] = 9459,	-- Cyrus Therepentous
 					["sourceQuests"] = {
 						4022,	-- A Taste of Flame (1/2) (A)
 						4023,	-- A Taste of Flame (1/2) (B)
 					},
+					["qg"] = 9459,	-- Cyrus Therepentous
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
@@ -173,8 +173,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4242, {	-- Abandoned Hope
-					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4241,	-- Marshal Windsor
+					["qg"] = 9023,	-- Marshal Windsor
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -190,28 +190,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3981, {	-- Commander Gor'shak
-					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
+					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 					["coord"] = { 5.8, 47.6, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(3801, {	-- Dark Iron Legacy (1/2)
-					["qg"] = 8888,	-- Franclorn Forgewright
 					-- #if BEFORE 4.0.3
 					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
 					-- #endif
+					["qg"] = 8888,	-- Franclorn Forgewright
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
 				}),
 				q(3802, {	-- Dark Iron Legacy (2/2)
+					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
 					["providers"] = {
 						{ "n",   8888 },	-- Franclorn Forgewright
 						{ "o", 164689 },	-- Monument of Franclorn Forgewright
 					},
-					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_MOUNTAIN },
 					["lvl"] = 48,
@@ -228,8 +228,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3906, {	-- Disharmony of Flame
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
-					["maps"] = { BLACKROCK_MOUNTAIN },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { BLACKROCK_MOUNTAIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -239,8 +239,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3907, {	-- Disharmony of Fire
-					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
+					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -267,10 +267,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4182, {	-- Dragonkin Menace
-					["qg"] = 9562,	-- Helendis Riverhorn
 					-- #if BEFORE 3.0.2
 					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
 					-- #endif
+					["qg"] = 9562,	-- Helendis Riverhorn
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -292,8 +292,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
-					["qg"] = 222530,	-- Rugged Traveler
 					["description"] = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
+					["qg"] = 222530,	-- Rugged Traveler
 					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -342,19 +342,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 60,
 				}),
 				q(4122, {	-- Grark Lorkrub
+					["sourceQuests"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 					["providers"] = {
 						{ "n", 9080 },	-- Lexlort <Kargath Expeditionary Force>
 						{ "i", 11286 },	-- Thorium Shackles
 					},
-					["sourceQuests"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 					["coord"] = { 5.9, 47.6, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(4126, {	-- Hurley Blackbreath
-					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["sourceQuest"] = 4128,	-- Ragnar Thunderbrew
+					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["coord"] = { 46.8, 52.4, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -373,8 +373,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4263, {	-- Incendius!
-					["qg"] = 9561,	-- Jalinda Sprig
 					["sourceQuest"] = 4262,	-- Overmaster Pyron
+					["qg"] = 9561,	-- Jalinda Sprig
 					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -398,8 +398,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4322, {	-- Jail Break!
-					["qg"] = 9023,	-- Marshal Windsor
 					["sourceQuest"] = 4282,	-- A Shred of Hope
+					["qg"] = 9023,	-- Marshal Windsor
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -416,16 +416,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4341, {	-- Kharan Mighthammer
-					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["sourceQuest"] = 3701,	-- The Smoldering Ruins of Thaurissan (2/2)
+					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["coord"] = { 39.09, 56.19, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4342, {	-- Kharan's Tale
-					["qg"] = 9021,	-- Kharan Mighthammer
 					["sourceQuest"] = 4341,	-- Kharan Mighthammer
+					["qg"] = 9021,	-- Kharan Mighthammer
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -449,8 +449,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4082, {	-- KILL ON SIGHT: High Ranking Dark Iron Officials
-					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 					["sourceQuest"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
+					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 					["coord"] = { 3.9, 47.4, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -468,8 +468,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4134, {	-- Lost Thunderbrew Recipe
-					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["sourceQuest"] = 4133,	-- Vivian Lagrave
+					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["coord"] = { 2.9, 47.8, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -487,15 +487,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4241, {	-- Marshal Windsor
-					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4224,	-- The True Masters (6/6)
+					["qg"] = 9560,	-- Marshal Maxwell
 					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
 				-- Crieve NOTE: If a Blizzard Dev ever reads this, please know that this is why I have trust issues.
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28258, {	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["qgs"] = {
 						17120,	-- Behomat
@@ -513,7 +513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28302, {	-- Meet with Avaros Dawnglaive [SL+] / Meet with Sunwalker Atohmo
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -547,7 +547,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28260, {	-- Meet with Dalgrun Steelpine [SL+] / Meet with Wulf Hansreim
 					["qgs"] = {
 						17122,	-- Vord
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28268, {	-- Meet with Ezul'aan [SL+] / Meet with Lord Grayson Shadowbreaker
 					["qgs"] = {
 						16761,	-- Baatun
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28287, {	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["qgs"] = {
 						52292,	-- Droha
@@ -615,7 +615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28300, {	-- Meet with Feenix Arcshine [SL+] / Meet with Ureda
 					["qgs"] = {
 						3047,	-- Archmage Shymm
@@ -634,7 +634,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28263, {	-- Meet with Frazzle Frostfingers [SL+] / Meet with Maginor Dumas
 					["qgs"] = {
 						16749,	-- Edirah
@@ -654,7 +654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28285, {	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["qgs"] = {
 						11401,	-- Priestess Alathea
@@ -674,7 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28301, {	-- Meet with Hretar Riverspeaker [SL+] / Meet with Terga Earthbreaker
 					["qgs"] = {
 						51639,	-- Kador Cloudsong
@@ -710,7 +710,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker / Meet with Ezul'aan [SL+]
 					["qgs"] = {
 						16761,	-- Baatun
@@ -730,7 +730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28262, {	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["qgs"] = {
 						4214,	-- Erion Shadewhisper
@@ -748,7 +748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28263, {	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
 					["qgs"] = {
 						16749,	-- Edirah
@@ -768,7 +768,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28303, {	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -787,7 +787,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28287, {	-- Meet with Mulric Boldrock [SL+] / Meet with Farseer Umbrua
 					["qgs"] = {
 						52292,	-- Droha
@@ -805,7 +805,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28297, {	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
 					["qgs"] = {
 						39116,	-- Apolos
@@ -824,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28285, {	-- Meet with Patrice Lancaster [SL+] / Meet with High Priestess Laurena
 					["qgs"] = {
 						11401,	-- Priestess Alathea
@@ -844,7 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28258, {	-- Meet with Signilda Hardforge [SL+] / Meet with Ander Germaine
 					["qgs"] = {
 						17120,	-- Behomat
@@ -862,7 +862,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28302, {	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -879,7 +879,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28297, {	-- Meet with Tamanji [SL+] / Meet with Ormak Grimshot
 					["qgs"] = {
 						39116,	-- Apolos
@@ -898,7 +898,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28301, {	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
 					["qgs"] = {
 						51639,	-- Kador Cloudsong
@@ -915,7 +915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
 					["qgs"] = {
 						3047,	-- Archmage Shymm
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28262, {	-- Meet with Veruca Darkstream [SL+] / Meet with Lord Tony Romano
 					["qgs"] = {
 						4214,	-- Erion Shadewhisper
@@ -952,7 +952,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28260, {	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["qgs"] = {
 						17122,	-- Vord
@@ -998,8 +998,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 
 
 				q(4132, {	-- Operation: Death to Angerforge
-					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["sourceQuest"] = 4121,	-- Precarious Predicament
+					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
 					["coord"] = { 5.8, 47.5, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1027,8 +1027,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4121, {	-- Precarious Predicament
-					["qg"] = 9520,	-- Grark Lorkrub
 					["sourceQuest"] = 4122,	-- Grark Lorkrub
+					["qg"] = 9520,	-- Grark Lorkrub
 					["coord"] = { 40.2, 34.2, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1052,8 +1052,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 50,
 				}),
 				q(4136, {	-- Ribbly Screwspigot
-					["qg"] = 9544,	-- Yuka Screwspigot
 					["sourceQuest"] = 4324,	-- Yuka Screwspigot
+					["qg"] = 9544,	-- Yuka Screwspigot
 					["coord"] = { 66.1, 21.9, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -1078,16 +1078,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["repeatable"] = true,
 				}),
 				q(28401, {	-- Slaves of the Firelord (A)
+					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164945,	-- Mulric Boldrock
 						-- #else
 						20407,	-- Farseer Umbrua
 						-- #endif
 					},
-					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.2, 70.9, STORMWIND_CITY },
 						-- #else
 						{ 64.6, 33.0, STORMWIND_CITY },
@@ -1106,10 +1106,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28465, {	-- Slaves of the Firelord (H)
-					["qg"] = 72939,	-- Terga Earthbreaker
 					["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
+					["qg"] = 72939,	-- Terga Earthbreaker
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 43.3, ORGRIMMAR },
 						-- #else
 						{ 39.0, 47.4, ORGRIMMAR },
@@ -1128,16 +1128,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28399, {	-- Stones of Binding (A)
+					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164942,	-- Evelyn Thorn
 						-- #else
 						461,	-- Demisette Cloyce
 						-- #endif
 					},
-					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.5, 69.9, STORMWIND_CITY },
 						-- #else
 						{ 39.4, 84.8, STORMWIND_CITY },
@@ -1153,16 +1153,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28459, {	-- Stones of Binding (H)
+					["sourceQuest"] = 28299,	-- Meet with Zevrost / Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+]
 					["qgs"] = {
-						-- #IF AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168623,	-- Kazak Darkscream
 						-- #ELSE
 						88705,	-- Kranosh
 						-- #ENDIF
 					},
-					["sourceQuest"] = 28299,	-- Meet with Zevrost / Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+]
 					["coords"] = {
-						-- #IF AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 47.4, ORGRIMMAR },
 						-- #ELSE
 						{ 49.0, 55.2, ORGRIMMAR },
@@ -1178,31 +1178,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6402, {	-- Stormwind Rendezvous
-					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4322,	-- Jail Break!
+					["qg"] = 9560,	-- Marshal Maxwell
 					["coord"] = { 84.7, 69.0, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4361, {	-- The Bearer of Bad News
-					["qg"] = 9021,	-- Kharan Mighthammer
 					["sourceQuest"] = 4342,	-- Kharan's Tale
+					["qg"] = 9021,	-- Kharan Mighthammer
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(28406, {	-- The Dark Iron Army (A)
+					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164946,	-- Veruca Darkstream
 						-- #else
 						13283,	-- Lord Tony Romano
 						-- #endif
 					},
-					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.7, 70.6, STORMWIND_CITY },
 						-- #else
 						{ 79.6, 60.8, STORMWIND_CITY },
@@ -1218,16 +1218,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28463, {	-- The Dark Iron Army (H)
+					["sourceQuest"] = 28298,	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168598,	-- Thega Graveblade
 						-- #else
 						47233,	-- Gordul
 						-- #endif
 					},
-					["sourceQuest"] = 28298,	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 75.4, 47.4, ORGRIMMAR },
 						-- #else
 						{ 44.6, 61.4, ORGRIMMAR },
@@ -1243,30 +1243,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6501, {	-- The Dragon's Eye
+					-- #if BEFORE 3.0.2
+					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+					-- #endif
+					["sourceQuest"] = 6403,	-- The Great Masquerade
 					["providers"] = {
 						{ "n", 1748 },	-- Highlord Bolvar Fordragon
 						{ "i", 16662 },	-- Fragment of the Dragon's Eye
 					},
-					["sourceQuest"] = 6403,	-- The Great Masquerade
-					-- #if BEFORE 3.0.2
-					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
-					-- #endif
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(4002, {	-- The Eastern Kingdoms
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 4001,	-- What Is Going On? (2/2)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 31.61, 37.83, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4362, {	-- The Fate of the Kingdom
-					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["sourceQuest"] = 4361,	-- The Bearer of Bad News
+					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 					["coord"] = { 39.09, 56.19, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1278,27 +1278,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6403, {	-- The Great Masquerade
-					["qg"] = 12580,	-- Reginald Windsor
-					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
 					-- #if BEFORE 3.0.2
 					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
 					-- #endif
+					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
+					["qg"] = 12580,	-- Reginald Windsor
 					["coord"] = { 64.7, 76.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(28394, {	-- The Golem Lord's Creations (A)
+					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164960,	-- Dalgrun Steelpine <Hunter Trainer>
 						-- #else
 						44247,	-- Wulf Hansreim
 						-- #endif
 					},
-					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 71.2, STORMWIND_CITY },
 						-- #else
 						{ 79.0, 71.0, STORMWIND_CITY },
@@ -1314,16 +1314,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28461, {	-- The Golem Lord's Creations (H)
+					["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168551,	-- Tamanji
 						-- #else
 						3352,	-- Ormak Grimshot
 						-- #endif
 					},
-					["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.8, 43.8, ORGRIMMAR },
 						-- #else
 						{ 63.8, 32.8, ORGRIMMAR },
@@ -1365,8 +1365,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7201, {	-- The Last Element
-					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
+					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["coord"] = { 2.9, 47.76, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1382,8 +1382,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4201, {	-- The Love Potion
 					["qg"] = 9500,	-- Mistress Nagmara
-					["maps"] = { AZSHARA, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { AZSHARA, UNGORO_CRATER },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/4 Gromsblood
@@ -1412,8 +1412,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4004, {	-- The Princess Saved?
-					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4003,	-- The Royal Rescue
+					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -1428,8 +1428,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4363, {	-- The Princess's Surprise
-					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["sourceQuest"] = 4362,	-- The Fate of the Kingdom
+					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1444,15 +1444,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28398, {	-- The Pyromancer's Grimoire (A)
+					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164955,	-- Frazzle Frostfingers
 						-- #else
 						331,	-- Maginor Dumas
 						-- #endif
 					},
-					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
-					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER SL
+						{ 80.0, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 49.2, 87.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -1463,16 +1469,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28458, {	-- The Pyromancer's Grimoire (H)
+					["sourceQuest"] = 28300,	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168626,	-- Feenix Arcshine
 						-- #else
 						47246,	-- Ureda
 						-- #endif
 					},
-					["sourceQuest"] = 28300,	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 43.5, ORGRIMMAR },
 						-- #else
 						{ 48.4, 62.6, ORGRIMMAR },
@@ -1506,19 +1512,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4062, {	-- The Rise of the Machines (2/3)
+					["sourceQuest"] = 4061,	-- The Rise of the Machines (1/3)
 					["providers"] = {
 						{ "n", 9079 },	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
 						{ "i", 11267 },	-- Elemental Shard Sample
 					},
-					["sourceQuest"] = 4061,	-- The Rise of the Machines (1/3)
 					["coord"] = { 3.02, 47.81, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(4063, {	-- The Rise of the Machines (3/3)
-					["qg"] = 2921,	-- Lotwil Veriatus
 					["sourceQuest"] = 4062,	-- The Rise of the Machines (2/3)
+					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 25.95, 44.87, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1545,8 +1551,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4003, {	-- The Royal Rescue
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 4002,	-- The Eastern Kingdoms
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 31.61, 37.83, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1565,8 +1571,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 50,
 				}),
 				q(3701, {	-- The Smoldering Ruins of Thaurissan (2/2)
-					["qg"] = 8879,	-- Royal Historian Archesonus
 					["sourceQuest"] = 3702,	-- The Smoldering Ruins of Thaurissan (1/2)
+					["qg"] = 8879,	-- Royal Historian Archesonus
 					["coord"] = { 38.37, 55.31, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BURNING_STEPPES },
@@ -1582,14 +1588,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4083, {	-- The Spectral Chalice
-					["provider"] = { "o", 164869 },	-- Spectral Chalice
 					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
-					["requireSkill"] = MINING,
+					["provider"] = { "o", 164869 },	-- Spectral Chalice
 					["cost"] = {
 						{ "i", 3577, 20 },	-- 20x Gold Bar
 						{ "i", 7910, 2 },	-- 2x Star Ruby
 						{ "i", 6037, 10 },	-- 10x Truesilver Bar
 					},
+					["requireSkill"] = MINING,
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {
@@ -1597,30 +1603,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4183, {	-- The True Masters (1/6)
+					["sourceQuest"] = 4182,	-- Dragonkin Menace
 					["providers"] = {
 						{ "n", 9562 },	-- Helendis Riverhorn
 						{ "i", 11366 },	-- Helendis Riverhorn's Letter
 					},
-					["sourceQuest"] = 4182,	-- Dragonkin Menace
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4184, {	-- The True Masters (2/6)
+					["sourceQuest"] = 4183,	-- The True Masters (1/6)
 					["providers"] = {
 						{ "n", 344 },	-- Magistrate Solomon
 						{ "i", 11367 },	-- Solomon's Plea to Bolvar
 					},
-					["sourceQuest"] = 4183,	-- The True Masters (1/6)
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4185, {	-- The True Masters (3/6)
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 4184,	-- The True Masters (2/6)
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -1632,27 +1638,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(4186, {	-- The True Masters (4/6)
+					["sourceQuest"] = 4185,	-- The True Masters (3/6)
 					["providers"] = {
 						{ "n", 1748 },	-- Highlord Bolvar Fordragon
 						{ "i", 11368 },	-- Bolvar's Decree
 					},
-					["sourceQuest"] = 4185,	-- The True Masters (3/6)
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4223, {	-- The True Masters (5/6)
-					["qg"] = 344,	-- Magistrate Solomon
 					["sourceQuest"] = 4186,	-- The True Masters (4/6)
+					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4224, {	-- The True Masters (6/6)
-					["qg"] = 9560,	-- Marshal Maxwell
 					["sourceQuest"] = 4223,	-- The True Masters (5/6)
+					["qg"] = 9560,	-- Marshal Maxwell
 					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
@@ -1673,16 +1679,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 50,
 				}),
 				q(28405, {	-- Weapons of Darkness (A)
+					["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164952,	-- Ezul'aan <Paladin Trainer>
 						-- #else
 						928,	-- Lord Grayson Shadowbreaker
 						-- #endif
 					},
-					["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 69.6, STORMWIND_CITY },
 						-- #else
 						{ 52.6, 45.0, STORMWIND_CITY },
@@ -1714,8 +1720,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28466, {	-- Weapons of Darkness (Tauren)
-					["qg"] = 44725,	-- Sunwalker Atohmo
 					["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
+					["qg"] = 44725,	-- Sunwalker Atohmo
 					["coord"] = { 45.2, 53.4, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1746,8 +1752,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28473, {	-- Weapons of Darkness (Blood Elf)
-					["qg"] = 23128,	-- Master Pyreanor
 					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
+					["qg"] = 23128,	-- Master Pyreanor
 					["coord"] = { 49.2, 71.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1766,15 +1772,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3982, {	-- What Is Going On? (1/2)
-					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["sourceQuest"] = 3981,	-- Commander Gor'shak
+					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(4001, {	-- What Is Going On? (2/2)
-					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["sourceQuest"] = 3982,	-- What Is Going On? (1/2)
+					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
@@ -1792,17 +1798,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 48,
 				}),
 				q(28393, {	-- A Dangerous Alliance [A]
+					["sourceQuest"] = 28258,	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["qgs"] = {
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE SL
 						914,	-- Ander Germaine
 						-- #else
 						164939,	-- Signilda Hardforge <Warrior Trainer>
 						-- #endif
 					},
-					["sourceQuest"] = 28258,	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
-						{ 80.2, 70.2, STORMWIND_CITY },
+						-- #if AFTER SL
+						{ 80.3, 70.4, STORMWIND_CITY },
 						-- #else
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif
@@ -1821,8 +1827,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28457, {	-- A Dangerous Alliance [H]
-					["qg"] = 168596,	-- Gormok Ogrefist
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
+					["qg"] = 168596,	-- Gormok Ogrefist
 					["coord"] = { 73.6, 45.6, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -1837,7 +1843,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28304, {	-- Journey to Orgrimmar [Undead] (SL+) / Meet with Dark Cleric Cecille (Cata+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1934,7 +1940,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28323, {	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1989,7 +1995,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28290, {	-- Meet with Gormok Ogrefist (SL+) / Meet with Grezz Ragefist (Cata+)
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion
@@ -2008,7 +2014,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28290, {	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion
@@ -2065,7 +2071,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28298, {	-- Meet with Thega Graveblade (SL+) / Meet with Gordul (Cata+)
 					["qgs"] = {
 						16684,	-- Zelanis <Rogue Trainer>
@@ -2082,7 +2088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28307, {	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -2105,8 +2111,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 
 				q(28475, {	-- Twilight Scheming [Blood Elf]
-					["qg"] = 45337,	-- Tyelis
 					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
+					["qg"] = 45337,	-- Tyelis
 					["coord"] = { 49.0, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -2117,8 +2123,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28478, {	-- Twilight Scheming [Goblin]
-					["qg"] = 45347,	-- Brother Silverhallow
 					["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["qg"] = 45347,	-- Brother Silverhallow
 					["coord"] = { 37.8, 87.4, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -2129,8 +2135,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28474, {	-- Twilight Scheming [Undead]
-					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
+					["qg"] = 45339,	-- Dark Cleric Cecille
 					["coord"] = { 48.2, 72.8, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -2141,8 +2147,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28476, {	-- Twilight Scheming [Tauren]
-					["qg"] = 44735,	-- Seer Liwatha
 					["sourceQuest"] = 28308,	-- Meet with Seer Liwatha (Cata+) / Journey to Orgrimmar [Tauren] (SL+)
+					["qg"] = 44735,	-- Seer Liwatha
 					["coord"] = { 45.4, 53.4, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -2158,8 +2164,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28477, {	-- Twilight Scheming [Troll]
-					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["sourceQuest"] = 28309,	-- Meet with Shadow-Walker Zuru (Cata+) / Journey to Orgrimmar [Troll] (SL+)
+					["qg"] = 45137,	-- Shadow-Walker Zuru
 					["coord"] = { 35.4, 69.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -2170,6 +2176,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(28328, {	-- Twilight Scheming [Alliance]
+					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["providers"] = {
 						-- #if ANYCLASSIC
 						{ "n", 376 },	-- High Priestess Laurena
@@ -2184,7 +2191,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 78.9, 69.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
@@ -2202,8 +2208,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 
 				q(27569, {	-- Dark Iron Tacticians
-					["qg"] = 45894,	-- Prospector Seymour
 					["sourceQuest"] = 27568,	-- Infilitrating Shadowforge City [Alliance]
+					["qg"] = 45894,	-- Prospector Seymour
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2228,8 +2234,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27585, {	-- The 109th Division
-					["qg"] = 45820,	-- Razal'blade
 					["sourceQuest"] = 27582,	-- Infiltrating Shadowforge City [Horde]
+					["qg"] = 45820,	-- Razal'blade
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2242,20 +2248,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27567, {	-- Twilight?! No! [Alliance]
-					["qg"] = 45898,	-- Kevin Dawson
 					["sourceQuest"] = 27565,	-- Into the Prison [Alliance]
+					["qg"] = 45898,	-- Kevin Dawson
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27581, {	-- Twilight?! No! [Horde]
-					["qg"] = 45818,	-- Lexlort
 					["sourceQuest"] = 27579,	-- Into the Prison [Horde]
+					["qg"] = 45818,	-- Lexlort
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27578, {	-- Morgan's Fruition
-					["qg"] = 45890,   -- Marshal Maxwell
 					["sourceQuest"] = 27573,	-- The Dark Iron Pact [Alliance]
+					["qg"] = 45890,	-- Marshal Maxwell
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2265,8 +2271,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27593, {	-- Rebirth of the K.E.F
-					["qg"] = 45840,	-- Warlord Goretooth
 					["sourceQuest"] = 27591,	-- The Dark Iron Pact [Horde]
+					["qg"] = 45840,	-- Warlord Goretooth
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2276,26 +2282,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27573, {	-- The Dark Iron Pact [Alliance]
-					["qg"] = 45899,	-- Mountaineer Orfus
 					["sourceQuest"] = 27571,	-- The Grim Guzzler [Alliance]
+					["qg"] = 45899,	-- Mountaineer Orfus
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27591, {	-- The Dark Iron Pact [Horde]
-					["qg"] = 45824,	--  Thunderheart
 					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
+					["qg"] = 45824,	--  Thunderheart
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27571, {	-- The Grim Guzzler [Alliance]
-					["qg"] = 45888,	-- Mayara Brightwing
 					["sourceQuest"] = 27569,	-- Dark Iron Tacticians
+					["qg"] = 45888,	-- Mayara Brightwing
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27589, {	-- The Grim Guzzler [Horde]
-					["qg"] = 45817,	-- Hierophant Theodora Mulvadania
 					["sourceQuest"] = 27585,	-- The 109th Division
+					["qg"] = 45817,	-- Hierophant Theodora Mulvadania
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2304,13 +2310,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(12944, bubbleDownClassicRep(FACTION_THORIUM_BROTHERHOOD, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil
+						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil
+						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(22308, {	-- Pattern: Enchanted Runecloth Bag
+						applyclassicphase(SOD_PHASE_FOUR, i(22308, {	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
@@ -2318,27 +2324,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{	-- Friendly
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
-						i(17018),	-- Pattern: Flarecore Gloves
+						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
 						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
 					},
 					{	-- Honored
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating
+						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(229008, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+						applyclassicphase(SOD_PHASE_FOUR, i(229008, {	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(229009, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+						applyclassicphase(SOD_PHASE_FOUR, i(229009, {	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
-						i(17017),	-- Pattern: Flarecore Mantle
-						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe
+						i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
@@ -2585,7 +2591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings
+						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19209)),	-- Plans: Blackfury (RECIPE!)
@@ -2621,7 +2627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
-						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
+						i(10602),	-- Schematic: Deadly Scope (RECIPE!)
 					},
 				}),
 			}),
@@ -2661,11 +2667,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.",
+					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11615, {	-- Plans: Dark Iron Shoulders (RECIPE!)
-					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.",
+					["description"] = "|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans
 				}),
 				i(11611, {	-- Plans: Dark Iron Sunderer (RECIPE!)
@@ -2675,7 +2681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16049, {	-- Schematic: Dark Iron Bomb (RECIPE!)
-					["cr"] = 8920,   -- Weapon Technician
+					["cr"] = 8920,	-- Weapon Technician
 				}),
 				i(16048, {	-- Schematic: Dark Iron Rifle (RECIPE!)
 					["cr"] = 8897,	-- Doomforge Craftsman
@@ -3119,7 +3125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				o(164820, {	-- Dark Keeper Nameplate
-					["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room.  When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r.  For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r.  When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r.  When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
+					["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",
 					["crs"] = {
 						9438,	-- Dark Keeper Bethek
 						9442,	-- Dark Keeper Ofgut
@@ -3507,14 +3513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						ach(642, {	-- Blackrock Depths
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								4362,	-- The Fate of the Kingdom
-								4003,	-- The Royal Rescue
-							},
-							-- #endif
-						}),
+						ach(642),	-- Blackrock Depths
 						ach(5051, {	-- Blackrock Depths Guild Run
 							["timeline"] = { ADDED_4_0_3 },
 						}),

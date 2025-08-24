@@ -5,29 +5,45 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
-			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, ["lvl"] = 45, },{
+			n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, 
+				-- #if BEFORE DF
+				["lvl"] = 45, 
+				-- #endif
+			},{
 				q(46209, {	-- A Flare In The Dark
 					["classes"] = { HUNTER },
 				}),
-				q(45473),	-- A Giant Problem
+				q(45473, {	-- A Giant Problem
+					["groups"] = {
+						i(146947),	-- Sunken Cargo (QI!)
+					},
+				}),
 				q(46932),	-- A Tad More Corruption
 				q(45988, {	-- Ancient Bones
-					["g"] = {
+					["groups"] = {
 						i(144238),	-- Ancient Bones (QI!)
 					},
 				}),
-				q(46105),	-- Arachnid Superiority
+				q(46105, {	-- Arachnid Superiority
+					["groups"] = {
+						i(147206),	-- Potent Venom Sac (QI!)
+					},
+				}),
 				q(46104),	-- Arachnid Toxicity
 				q(45694),	-- Arachnicide
 				q(46750),	-- Battery Backup
 				q(45559),	-- Behind Enemy Portals
 				q(45542, {	-- Behind Enemy Portals
-					-- NOTE: There are 3 versions of this world quest but only this one can be used for the achievement!
 					ach(11681),	-- Crate Expectations
+					-- NOTE: There are 3 versions of this world quest but only this one can be used for the achievement!
 				}),
 				q(45520),	-- Behind Enemy Portals
 				q(46073),	-- Break Their Garrison
-				q(46761),	-- Brew Bandits
+				q(46761, {	-- Brew Bandits
+					["groups"] = {
+						i(146896),	-- Hozen Vaulting Staff (QI!)
+					},
+				}),
 				q(46068),	-- Brute Wrangling
 				q(46201),	-- By Water Be Purged
 				q(46814),	-- Call of the Frostwyrm
@@ -44,11 +60,11 @@ root(ROOTS.Zones, {
 				}),
 				q(45970),	-- Duty's End
 				q(46829, {	-- Elemental Abuse
-					["g"] = {
+					["groups"] = {
 						i(147283),	-- Air Power Core (QI!)
 						i(147284),	-- Earth Power Core (QI!)
-						i(147285),	-- Water Power Core (QI!)
 						i(147286),	-- Fire Power Core (QI!)
+						i(147285),	-- Water Power Core (QI!)
 					},
 				}),
 				q(46288),	-- Everyone to the Front
@@ -62,12 +78,20 @@ root(ROOTS.Zones, {
 				q(46933),	-- Felrglrglrglrgl
 				q(45934),	-- Fowl Play
 				q(46072),	-- Full Fel
-				q(46198),	-- Gems of Destruction
+				q(46198, {	-- Gems of Destruction
+					["groups"] = {
+						i(144362),	-- Pulsating Gem (QI!)
+					},
+				}),
 				q(46212),	-- Get Them Up
 				q(40390, {	-- Hallowed Ground
 					["classes"] = { PALADIN },
 				}),
-				q(45985),	-- Hellish Scavengers
+				q(45985, {	-- Hellish Scavengers
+					["groups"] = {
+						i(144240),	-- Ravaged Supplies (QI!)
+					},
+				}),
 				q(45541),	-- How Do YOU Like It?!
 				q(46066),	-- I Fel Bat For You
 				petbattle(q(46112)),	-- Illidari Masters: Madam Viciosa
@@ -85,16 +109,23 @@ root(ROOTS.Zones, {
 				q(46308),	-- Leave a Trail
 				q(46046, {	-- Life's a Lich
 					["classes"] = { DEATHKNIGHT },
+					["groups"] = {
+						i(144241),	-- Fel-Infused Remains (QI!)
+					},
 				}),
 				q(46754, {	-- Magical Beasts
 					["classes"] = { MAGE },
 				}),
 				q(46707),	-- Minion! Kill That One Too!
 				q(46755, {	-- Mission: Felraging
-					-- TODO: ["classes"] = { ? },
+					-- ["classes"] = { ? },
 				}),
 				q(46756),	-- Mission: Felrage Destruction
-				q(46825),	-- Mud Mucking
+				q(46825, {	-- Mud Mucking
+					["groups"] = {
+						i(147211),	-- Sparkling Kirin Tor Coin (QI!)
+					},
+				}),
 				q(46822),	-- Natural Selection
 				q(46833),	-- Nature Unshackled
 				q(44751),	-- No Soldier Left Behind
@@ -106,7 +137,11 @@ root(ROOTS.Zones, {
 				q(45797),	-- Playing with Green Fire
 				q(46180),	-- Power of Our Enemy
 				q(45929),	-- Purging the Flames
-				q(46075),	-- Relic Hunting
+				q(46075, {	-- Relic Hunting
+					["groups"] = {
+						i(143851),	-- Precious Antiquity (QI!)
+					},
+				}),
 				q(46076),	-- Restless Spirits
 				q(46175, {	-- Rolling Thunder
 					ach(11607),	-- They See Me Rolling
@@ -120,12 +155,16 @@ root(ROOTS.Zones, {
 				q(46360),	-- Simply Stunning
 				q(46109),	-- Stand!
 				q(46236),	-- Stonebound Soldiers
-				q(46762),	-- Storm Brew Hustle
+				q(46762, {	-- Storm Brew Hustle
+					["groups"] = {
+						i(146896),	-- Hozen Vaulting Staff (QI!)
+					},
+				}),
 				q(46811, {	-- The Broodmother's Wrath
 					["classes"] = { DEATHKNIGHT },
 				}),
 				q(45805, {	-- The Burning Keys
-					["g"] = {
+					["groups"] = {
 						i(143924),	-- Burning Key (QI!)
 					},
 				}),
@@ -138,16 +177,24 @@ root(ROOTS.Zones, {
 				q(46866),	-- Torture Chamber
 				q(45379),	-- Treasure Master Iks'reeged
 				q(45973, {	-- Unchecked Power
-					["g"] = {
+					["groups"] = {
 						i(146951),	-- Abjurist's Scroll of Knowledge (QI!)
 					},
 				}),
-				q(45791),	-- War Materiel
+				q(45791, {	-- War Materiel
+					["groups"] = {
+						i(143888),	-- Felslag (QI!)
+					},
+				}),
 				q(45930),	-- We Didn't Start the Fire
 				q(45977, {	-- Where There is a Whip...
 					["sym"] = {{"select","npcID",118403}},	-- Syaith (special NPC for Inscription Recipe)
 				}),
-				q(44748),	-- Winged Terrors
+				q(44748, {	-- Winged Terrors
+					["groups"] = {
+						i(142079),	-- Shipwrecked Supplies (QI!)
+					},
+				}),
 			})),
 		}),
 	}),

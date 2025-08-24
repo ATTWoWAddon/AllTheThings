@@ -12,8 +12,6 @@ local MAGMORAX = 2527;
 local NELTHARION = 2523;
 local SARKARETH = 2520;
 
-local ABERRUS_THE_SHADOWED_CRUCIBLE = 2403;
-
 local SymRaidAberrus = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1208,DiffID,ClassID}};
 end
@@ -258,7 +256,8 @@ local EncounterToLoot = {
 		i(204399),	-- Oblivion's Immortal Coil
 		i(202599),	-- Sarkareth's Abyssal Embrace
 		i(202584),	-- Scalecommander's Ebon Schynbalds
-		i(204465),	-- Voice of the Silent Star
+		-- Has special ItemAppearanceModifierID assignments
+		-- i(204465),	-- Voice of the Silent Star
 		i(217408, {	-- Awakened Tempostone
 			["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
 			["up"] = IGNORED_VALUE,
@@ -283,10 +282,14 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, Zon
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+-- TODO fix once Blizzard stops clowning old LFRs
+local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2 }
+
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
 		["coord"] = { 48.6, 10.2, ZARALEK_CAVERN },
+		["timeline"] = { ADDED_10_1_0 },
 		["maps"] = {
 			2166,	-- Molten Crucible
 			2167,	-- Onyx Laboratory
@@ -295,11 +298,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2170,	-- Edge of Oblivion
 			2211,	-- Aberrus, the Shadowed Crucible (reported in #retail-errors on 3-July-2024)
 		},
-		["g"] = {
+		["groups"] = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
 				i(204274, {	-- Ancient Memories
 					["description"] = "You need to find an Evoker who is doing this quest.",
-					["g"] = {
+					["groups"] = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
 							["requireSkill"] = JEWELCRAFTING,
 							["u"] = TRAINING,
@@ -338,7 +341,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							{ "i", 204856, 1 },	-- 1x Inspired Order Recalibrator
 							{ "i", 204832, 1 },	-- 1x Reclaimed Gauntlet Chassis
 						},
-						["g"] = {
+						["groups"] = {
 							i(204274, {	-- Ancient Memories
 								i(206163),	-- Temporal Gossamer
 							}),
@@ -348,7 +351,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
 						["provider"] = { "i", 206163 },	-- Temporal Gossamer
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 },
-						["g"] = {
+						["groups"] = {
 							i(204808),	-- Empowered Temporal Gossamer
 							i(206165),	-- Major Resonating Vestigial (QI!)
 							i(206166),	-- Strong Resonating Vestigial (QI!)
@@ -358,7 +361,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					q(74924, {	-- Nasz'uro, the Unbound Legacy
 						["sourceQuests"] = { 74923 },	-- It Takes a Village to Make an Artifact
 						["provider"] = { "n", 187669 },	-- Nozdormu
-						["g"] = {
+						["coord"] = { 60.8, 39.2, VALDRAKKEN },
+						["maps"] = { 2176 },	-- The Maelstrom
+						["groups"] = {
 							i(204177),	-- Nasz'uro, the Unbound Legacy
 							ach(18256),	-- Nasz'uro, the Unbound Legacy
 						},
@@ -486,7 +491,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						18149,	-- Objects in Transit May Shatter
 						17877,	-- We'll Never See That Again, Surely
 					}},
-					["g"] = {
+					["groups"] = {
 						i(205205),	-- Shadowflame Shalewing (MOUNT!)
 					},
 				}),
@@ -494,7 +499,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["provider"] = { "i", 205684 },	-- Forbidden Flounder
 				}),
 				-- Awakened
-				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Shadows
+				ach(19567, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
@@ -523,7 +528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
-				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Shadows
+				ach(19568, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Shadows
 					crit(64966, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -552,7 +557,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Shadows
+				ach(19569, applyDataSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Shadows
 					crit(64975, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MYTHIC },
 					}),
@@ -591,7 +596,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(VENDORS, {
 				n(205676, {	-- Norzko the Proud
 					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-					["g"] = bubbleDownFiltered({
+					["groups"] = bubbleDownFiltered({
 						["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
@@ -691,6 +696,27 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			-- #endif
 			-- #endif
+			o(382621, {	-- Revival Catalyst Console
+				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["coord"] = { 60.6, 53.8, THALDRASZUS },
+				["modelScale"] = 4,
+				["catalystID"] = 6,	-- ItemBonus.Value_0 DF:S2
+				["groups"] = {
+					Difficulty(DIFFICULTY.RAID.LFR, {
+						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
+						["timeline"] = TIMELINE_LFR}).AddGroups(ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
+					),
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
+					),
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
+					),
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
+					),
+				},
+			}),
 			CommonBossDrops({
 				i(204857),	-- Ancient Elementium Fragment
 				i(204464),	-- Shadowflame Essence
@@ -747,162 +773,37 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (MM!) [LFR, Normal, Heroic]
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { REMOVED_11_0_2 } }, {
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- LFR --
-					["description"] = "The Revival Catalyst is a system that lets you convert Zaralek Cavern's Weekly Event Zone Items (Researchers & A Worthy Ally: Niffen) & LFR Mode Non-set items from the Aberrus Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 4 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202458),	-- Lingering Phantom's Deathlink
-								i(202456),	-- Lingering Phantom's Drape
-								i(202463),	-- Lingering Phantom's Stompers
-								i(202457),	-- Lingering Phantom's Vambraces
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202520),	-- Kinslayer's Bindings
-								i(202526),	-- Kinslayer's Gaiters
-								i(202521),	-- Kinslayer's Sash
-								i(202519),	-- Kinslayer's Shawl
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202511),	-- Bands of the Autumn Blaze
-								i(202510),	-- Foliage of the Autumn Blaze
-								i(202512),	-- Garland of the Autumn Blaze
-								i(202517),	-- Hooves of the Autumn Blaze
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202483),	-- Crest of Obsidian Secrets
-								i(202490),	-- Greatboots of Obsidian Secrets
-								i(202485),	-- Lasso of Obsidian Secrets
-								i(202484),	-- Scalebands of Obsidian Secrets
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202481),	-- Ashen Predator's Chasers
-								i(202474),	-- Ashen Predator's Cloak
-								i(202475),	-- Ashen Predator's Skinwraps
-								i(202476),	-- Ashen Predator's Strap
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
-								i(202548),	-- Underlight Conjurer's Charmbelt
-								i(202553),	-- Underlight Conjurer's Treads
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202501),	-- Drape of the Vermillion Forge
-								i(202503),	-- Blackbelt of the Vermillion Forge
-								i(202502),	-- Coils of the Vermillion Forge
-								i(202508),	-- Footpads of the Vermillion Forge
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202448),	-- Heartfire Sentinel's Blessed Bindings
-								i(202454),	-- Heartfire Sentinel's Greatboots
-								i(202447),	-- Heartfire Sentinel's Pelerine
-								i(202449),	-- Heartfire Sentinel's Waistguard
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202538),	-- Cuffs of the Furnace Seraph
-								i(202544),	-- Sabatons of the Furnace Seraph
-								i(202539),	-- Sash of the Furnace Seraph
-								i(202537),	-- Shroud of the Furnace Seraph
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202493),	-- Lurking Specter's Armwraps
-								i(202492),	-- Lurking Specter's Capelet
-								i(202494),	-- Lurking Specter's Edgeband
-								i(202499),	-- Lurking Specter's Tabi
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202467),	-- Faulds of the Cinderwolf
-								i(202465),	-- Pelisse of the Cinderwolf
-								i(202466),	-- Runebraces of the Cinderwolf
-								i(202472),	-- Sollerets of the Cinderwolf
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202535),	-- Sandals of the Sinister Savant
-								i(202528),	-- Shawl of the Sinister Savant
-								i(202530),	-- Skullstrap of the Sinister Savant
-								i(202529),	-- Wristwraps of the Sinister Savant
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.LFR),
-							["g"] = {
-								i(202440),	-- Insignia of the Onyx Crucible
-								i(202445),	-- Ironstriders of the Onyx Crucible
-								i(202438),	-- Manteau of the Onyx Crucible
-								i(202439),	-- Warbands of the Onyx Crucible
-							},
-						}),
-					}),
-				}),
-				-- #endif
+			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 						["up"] = IGNORED_VALUE,
 					}),
 				}),
-				header(HEADERS.Achievement, 18163, {	-- Discarded Works
+				header(HEADERS.LFGDungeon, 2399, {	-- Discarded Works
 					Boss(KAZZARA),
 					Boss(AMALGAMATION),
 					Boss(EXPERIMENTS),
 				}),
-				header(HEADERS.Achievement, 18164, {	-- Fury of Giants
+				header(HEADERS.LFGDungeon, 2400, {	-- Fury of Giants
 					Boss(ASSAULT),
 					Boss(RASHOK),
 					Boss(ZSKARN),
 				}),
-				header(HEADERS.Achievement, 18165, {	-- Neltharion's Shadow
+				header(HEADERS.LFGDungeon, 2401, {	-- Neltharion's Shadow
 					Boss(MAGMORAX),
 					Boss(NELTHARION),
 				}),
-				header(HEADERS.Achievement, 18167, {	-- Edge of the Void
+				header(HEADERS.LFGDungeon, 2402, {	-- Edge of the Void
 					Boss(SARKARETH, {
 						i(206046, {	-- Void-Touched Curio
 							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
+						i(204465, {ItemAppearanceModifierID=0}),	-- Voice of the Silent Star
 					}),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KAZZARA, {
 					ach(18229, {	-- Cosplate
@@ -968,137 +869,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205994),	-- Tome of the Earth-Warder (N)
 						},
 					}),
 				}),
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- NORMAL --
-					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Aberrus Raid into your class' Normal Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202458),	-- Lingering Phantom's Deathlink
-								i(202456),	-- Lingering Phantom's Drape
-								i(202463),	-- Lingering Phantom's Stompers
-								i(202457),	-- Lingering Phantom's Vambraces
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202520),	-- Kinslayer's Bindings
-								i(202526),	-- Kinslayer's Gaiters
-								i(202521),	-- Kinslayer's Sash
-								i(202519),	-- Kinslayer's Shawl
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202511),	-- Bands of the Autumn Blaze
-								i(202510),	-- Foliage of the Autumn Blaze
-								i(202512),	-- Garland of the Autumn Blaze
-								i(202517),	-- Hooves of the Autumn Blaze
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202483),	-- Crest of Obsidian Secrets
-								i(202490),	-- Greatboots of Obsidian Secrets
-								i(202485),	-- Lasso of Obsidian Secrets
-								i(202484),	-- Scalebands of Obsidian Secrets
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202481),	-- Ashen Predator's Chasers
-								i(202474),	-- Ashen Predator's Cloak
-								i(202475),	-- Ashen Predator's Skinwraps
-								i(202476),	-- Ashen Predator's Strap
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
-								i(202548),	-- Underlight Conjurer's Charmbelt
-								i(202553),	-- Underlight Conjurer's Treads
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202501),	-- Drape of the Vermillion Forge
-								i(202503),	-- Blackbelt of the Vermillion Forge
-								i(202502),	-- Coils of the Vermillion Forge
-								i(202508),	-- Footpads of the Vermillion Forge
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202448),	-- Heartfire Sentinel's Blessed Bindings
-								i(202454),	-- Heartfire Sentinel's Greatboots
-								i(202447),	-- Heartfire Sentinel's Pelerine
-								i(202449),	-- Heartfire Sentinel's Waistguard
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202538),	-- Cuffs of the Furnace Seraph
-								i(202544),	-- Sabatons of the Furnace Seraph
-								i(202539),	-- Sash of the Furnace Seraph
-								i(202537),	-- Shroud of the Furnace Seraph
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202493),	-- Lurking Specter's Armwraps
-								i(202492),	-- Lurking Specter's Capelet
-								i(202494),	-- Lurking Specter's Edgeband
-								i(202499),	-- Lurking Specter's Tabi
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202467),	-- Faulds of the Cinderwolf
-								i(202465),	-- Pelisse of the Cinderwolf
-								i(202466),	-- Runebraces of the Cinderwolf
-								i(202472),	-- Sollerets of the Cinderwolf
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202535),	-- Sandals of the Sinister Savant
-								i(202528),	-- Shawl of the Sinister Savant
-								i(202530),	-- Skullstrap of the Sinister Savant
-								i(202529),	-- Wristwraps of the Sinister Savant
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
-								i(202440),	-- Insignia of the Onyx Crucible
-								i(202445),	-- Ironstriders of the Onyx Crucible
-								i(202438),	-- Manteau of the Onyx Crucible
-								i(202439),	-- Warbands of the Onyx Crucible
-							},
-						}),
-					},
-				}),
-				-- #endif
 				ZoneDrops({
 					i(204076, {	-- Drake's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1118,6 +893,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
+					i(204465, {ItemAppearanceModifierID=1}),	-- Voice of the Silent Star
 				}),
 			}),
 			-- This is needed for Achievement distribution
@@ -1130,143 +906,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(ZSKARN),
 				BossOnly(MAGMORAX),
 				BossOnly(NELTHARION),
-				BossOnly(SARKARETH),
+				BossOnly(SARKARETH, {
+					i(204465, {up=IGNORED_VALUE, modID=5, ItemAppearanceModifierID=3}),	-- Voice of the Silent Star
+				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205996),	-- Tome of the Earth-Warder (H)
 						},
 					}),
 				}),
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- HEROIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Aberrus Raid into your class' Heroic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202458),	-- Lingering Phantom's Deathlink
-								i(202456),	-- Lingering Phantom's Drape
-								i(202463),	-- Lingering Phantom's Stompers
-								i(202457),	-- Lingering Phantom's Vambraces
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202520),	-- Kinslayer's Bindings
-								i(202526),	-- Kinslayer's Gaiters
-								i(202521),	-- Kinslayer's Sash
-								i(202519),	-- Kinslayer's Shawl
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202511),	-- Bands of the Autumn Blaze
-								i(202510),	-- Foliage of the Autumn Blaze
-								i(202512),	-- Garland of the Autumn Blaze
-								i(202517),	-- Hooves of the Autumn Blaze
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202483),	-- Crest of Obsidian Secrets
-								i(202490),	-- Greatboots of Obsidian Secrets
-								i(202485),	-- Lasso of Obsidian Secrets
-								i(202484),	-- Scalebands of Obsidian Secrets
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202481),	-- Ashen Predator's Chasers
-								i(202474),	-- Ashen Predator's Cloak
-								i(202475),	-- Ashen Predator's Skinwraps
-								i(202476),	-- Ashen Predator's Strap
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
-								i(202548),	-- Underlight Conjurer's Charmbelt
-								i(202553),	-- Underlight Conjurer's Treads
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202501),	-- Drape of the Vermillion Forge
-								i(202503),	-- Blackbelt of the Vermillion Forge
-								i(202502),	-- Coils of the Vermillion Forge
-								i(202508),	-- Footpads of the Vermillion Forge
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202448),	-- Heartfire Sentinel's Blessed Bindings
-								i(202454),	-- Heartfire Sentinel's Greatboots
-								i(202447),	-- Heartfire Sentinel's Pelerine
-								i(202449),	-- Heartfire Sentinel's Waistguard
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202538),	-- Cuffs of the Furnace Seraph
-								i(202544),	-- Sabatons of the Furnace Seraph
-								i(202539),	-- Sash of the Furnace Seraph
-								i(202537),	-- Shroud of the Furnace Seraph
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202493),	-- Lurking Specter's Armwraps
-								i(202492),	-- Lurking Specter's Capelet
-								i(202494),	-- Lurking Specter's Edgeband
-								i(202499),	-- Lurking Specter's Tabi
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202467),	-- Faulds of the Cinderwolf
-								i(202465),	-- Pelisse of the Cinderwolf
-								i(202466),	-- Runebraces of the Cinderwolf
-								i(202472),	-- Sollerets of the Cinderwolf
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202535),	-- Sandals of the Sinister Savant
-								i(202528),	-- Shawl of the Sinister Savant
-								i(202530),	-- Skullstrap of the Sinister Savant
-								i(202529),	-- Wristwraps of the Sinister Savant
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
-								i(202440),	-- Insignia of the Onyx Crucible
-								i(202445),	-- Ironstriders of the Onyx Crucible
-								i(202438),	-- Manteau of the Onyx Crucible
-								i(202439),	-- Warbands of the Onyx Crucible
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops({
 					i(204077, {	-- Wyrm's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1293,7 +945,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205997),	-- Tome of the Earth-Warder
 						},
 					}),
@@ -1310,132 +962,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(204428),	-- Sanctum Guard's Forgewalkers
 					i(204420),	-- Sundered Edgelord's Breastplate
 				})),
-				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- MYTHIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Aberrus Raid into your class' Mythic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-					["coord"] = { 60.6, 53.8, THALDRASZUS },
-					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 6 }, {
-						cl(DEATHKNIGHT, {
-							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202458),	-- Lingering Phantom's Deathlink
-								i(202456),	-- Lingering Phantom's Drape
-								i(202463),	-- Lingering Phantom's Stompers
-								i(202457),	-- Lingering Phantom's Vambraces
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202520),	-- Kinslayer's Bindings
-								i(202526),	-- Kinslayer's Gaiters
-								i(202521),	-- Kinslayer's Sash
-								i(202519),	-- Kinslayer's Shawl
-							},
-						}),
-						cl(DRUID, {
-							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202511),	-- Bands of the Autumn Blaze
-								i(202510),	-- Foliage of the Autumn Blaze
-								i(202512),	-- Garland of the Autumn Blaze
-								i(202517),	-- Hooves of the Autumn Blaze
-							},
-						}),
-						cl(EVOKER, {
-							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202483),	-- Crest of Obsidian Secrets
-								i(202490),	-- Greatboots of Obsidian Secrets
-								i(202485),	-- Lasso of Obsidian Secrets
-								i(202484),	-- Scalebands of Obsidian Secrets
-							},
-						}),
-						cl(HUNTER, {
-							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202481),	-- Ashen Predator's Chasers
-								i(202474),	-- Ashen Predator's Cloak
-								i(202475),	-- Ashen Predator's Skinwraps
-								i(202476),	-- Ashen Predator's Strap
-							},
-						}),
-						cl(MAGE, {
-							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202547),	-- Underlight Conjurer's Bracelets
-								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
-								i(202548),	-- Underlight Conjurer's Charmbelt
-								i(202553),	-- Underlight Conjurer's Treads
-							},
-						}),
-						cl(MONK, {
-							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202501),	-- Drape of the Vermillion Forge
-								i(202503),	-- Blackbelt of the Vermillion Forge
-								i(202502),	-- Coils of the Vermillion Forge
-								i(202508),	-- Footpads of the Vermillion Forge
-							},
-						}),
-						cl(PALADIN, {
-							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202448),	-- Heartfire Sentinel's Blessed Bindings
-								i(202454),	-- Heartfire Sentinel's Greatboots
-								i(202447),	-- Heartfire Sentinel's Pelerine
-								i(202449),	-- Heartfire Sentinel's Waistguard
-							},
-						}),
-						cl(PRIEST, {
-							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202538),	-- Cuffs of the Furnace Seraph
-								i(202544),	-- Sabatons of the Furnace Seraph
-								i(202539),	-- Sash of the Furnace Seraph
-								i(202537),	-- Shroud of the Furnace Seraph
-							},
-						}),
-						cl(ROGUE, {
-							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202493),	-- Lurking Specter's Armwraps
-								i(202492),	-- Lurking Specter's Capelet
-								i(202494),	-- Lurking Specter's Edgeband
-								i(202499),	-- Lurking Specter's Tabi
-							},
-						}),
-						cl(SHAMAN, {
-							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202467),	-- Faulds of the Cinderwolf
-								i(202465),	-- Pelisse of the Cinderwolf
-								i(202466),	-- Runebraces of the Cinderwolf
-								i(202472),	-- Sollerets of the Cinderwolf
-							},
-						}),
-						cl(WARLOCK, {
-							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202535),	-- Sandals of the Sinister Savant
-								i(202528),	-- Shawl of the Sinister Savant
-								i(202530),	-- Skullstrap of the Sinister Savant
-								i(202529),	-- Wristwraps of the Sinister Savant
-							},
-						}),
-						cl(WARRIOR, {
-							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
-								i(202440),	-- Insignia of the Onyx Crucible
-								i(202445),	-- Ironstriders of the Onyx Crucible
-								i(202438),	-- Manteau of the Onyx Crucible
-								i(202439),	-- Warbands of the Onyx Crucible
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops({
 					i(204078, {	-- Aspect's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1469,7 +995,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(18159, {	-- Mythic: Scalecommander Sarkareth
 						title(505),	-- <Name>, Heir to the Void
 					}),
-					ach(18176, bubbleDownSelf({["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
+					ach(18176, applyDataSelf({["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
 						title(506),	-- <Name>, Famed Slayer of Sarkareth
 					})),
 					ach(18254, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
@@ -1482,31 +1008,34 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
-		-- Normal
-		q(75732),	-- Kazzara
-		q(75733),	-- The Amalgamation Chamber
-		q(75734),	-- The Forgotten Experiments
-		q(75735),	-- Assault of the Zaqali
-		q(75736),	-- Rashok
-		q(75737),	-- The Vigilant Steward, Zskarn
-		q(75738),	-- Magmorax
-		q(75739),	-- Echo of Neltharion
-		q(75740),	-- Scalecommander Sarkareth
-		-- Heroic
-		-- None
-		-- Mythic
-		-- None
+		["timeline"] = { ADDED_10_1_0 },
+		["groups"] = {
+			-- Normal
+			q(75732),	-- Kazzara
+			q(75733),	-- The Amalgamation Chamber
+			q(75734),	-- The Forgotten Experiments
+			q(75735),	-- Assault of the Zaqali
+			q(75736),	-- Rashok
+			q(75737),	-- The Vigilant Steward, Zskarn
+			q(75738),	-- Magmorax
+			q(75739),	-- Echo of Neltharion
+			q(75740),	-- Scalecommander Sarkareth
+			-- Heroic
+			-- None
+			-- Mythic
+			-- None
 
-		q(76087),	-- Sarkareth HC kill on Evoker; Legendary 'higher chance' lockout?
-		q(75659),	-- Sarkareth M kill on Evoker; Legendary 'higher chance' lockout?
-		q(76088),	-- Normal Sarkareth Kill?
-		q(76089),	-- Normal Sarkareth Kill?
+			q(76087),	-- Sarkareth HC kill on Evoker; Legendary 'higher chance' lockout?
+			q(75659),	-- Sarkareth M kill on Evoker; Legendary 'higher chance' lockout?
+			q(76088),	-- Normal Sarkareth Kill?
+			q(76089),	-- Normal Sarkareth Kill?
 
-		-- Nasz'uro, the Unbound Legacy
-		q(75623),	-- Triggers when you receive the legendary during the last quest (spellID 408549)
+			-- Nasz'uro, the Unbound Legacy
+			q(75623),	-- Triggers when you receive the legendary during the last quest (spellID 408549)
+		},
 	}),
-})));
+}));

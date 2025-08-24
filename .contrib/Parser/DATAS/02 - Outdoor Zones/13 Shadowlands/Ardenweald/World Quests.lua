@@ -48,13 +48,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			petbattle(q(61948)),	-- Airborne Defense Force
 			q(61595, {	-- Alchemy: Potion of Hibernal Rest
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					r(338191, {["u"]=TRAINING}),	-- Liquid Sleep
 					r(338190, {["u"]=TRAINING}),	-- Potion of Hibernal Rest
 					r(338192, {["u"]=TRAINING}),	-- Powdered Dreamroot
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = { i(181985) },	-- Fresh Dreamroot Trimmings (QI!)
+						["groups"] = { i(181985) },	-- Fresh Dreamroot Trimmings (QI!)
 					}),
 					i(181983),	-- Liquid Sleep (QI!)
 					i(181375),	-- Potion of Hibernal Rest (QI!)
@@ -64,13 +64,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			petbattle(q(61949)),	-- Ardenweald's Tricksters
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
 				["requireSkill"] = BLACKSMITHING,
-				["g"] = {
+				["groups"] = {
 					r(337427, {["u"]=TRAINING}),	-- Bundle of Stalker Arrowheads
 					r(337374, {["u"]=TRAINING}),	-- Molten Phaedrum
 					r(337426, {["u"]=TRAINING}),	-- Unrefined Arrowheads
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = {
+						["groups"] = {
 							i(181783),	-- Borrowed Phaedrum Ore (QI!)
 							i(181860),	-- Borrowed Twilight Bark (QI!)
 							i(181789),	-- Wooden Arrowhead Mold (QI!)
@@ -84,13 +84,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61631),	-- Drust Between You and Me
 			q(61596, {	-- Cooking: Arden Apple Pie
 				["requireSkill"] = COOKING,
-				["g"] = {
+				["groups"] = {
 					r(338100, {["u"]=TRAINING}),	-- Arden Apple Pie
 					r(338101, {["u"]=TRAINING}),	-- Oat Pie Crust
 					r(338102, {["u"]=TRAINING}),	-- Sliced Arden Apples
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = {
+						["groups"] = {
 							i(181987),	-- Fresh Arden Apples (QI!)
 							i(181988),	-- Sack of Arden Oats (QI!)
 						},
@@ -102,11 +102,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61440, {	-- Enchanting: Boundless Basket
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					r(346026, {["u"]=TRAINING}),	-- Boundless Basket
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = { i(181991) },	-- Antique Stalker's Bow (QI!)
+						["groups"] = { i(181991) },	-- Antique Stalker's Bow (QI!)
 					}),
 					i(181384),	-- Boundless Basket (QI!)
 					i(181990),	-- Twilight Dust (QI!)
@@ -114,13 +114,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61597, {	-- Engineering: Bug Zapifier
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					r(338119, {["u"]=TRAINING}),	-- Bug Zapifier
 					r(338212, {["u"]=TRAINING}),	-- Electro Cable
 					r(338210, {["u"]=TRAINING}),	-- Energized Battery
 					o(356878, {
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = { i(181994) },	-- Machined Phaedrum Bar (QI!)
+						["groups"] = { i(181994) },	-- Machined Phaedrum Bar (QI!)
 					}),
 					i(181385),	-- Bug Zapifier (QI!)
 					i(181992),	-- Electro Cable (QI!)
@@ -129,29 +129,29 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61598, {	-- Fishing: Speckled Flametail
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					i(181387),	-- Speckled Flametail (QI!)
 				},
 			}),
 			q(60855),	-- Gormageddon
 			q(61543, {	-- Herbalism: Lambent Vigil's Torch
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(181757),	-- Lambent Vigil's Torch (QI!)
 				},
 			}),
 			q(61599, {	-- Inscription: Hymnal of Reprise
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					r(338227, {["u"]=TRAINING}),	-- Ardenberry Ink
 					r(338225, {["u"]=TRAINING}),	-- Hymnal of Respite
 					r(338226, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = {
+						["groups"] = {
 							i(181997),	-- Ardenberry Pigment (QI!)
 							i(182286),	-- Twilight Parchment (QI!)
-						}
+						},
 					}),
 					i(181996),	-- Ardenberry Ink (QI!)
 					i(181397),	-- Hymnal of Respite (QI!)
@@ -161,13 +161,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61303),	-- It's Raining Sparkles
 			q(61601, {	-- Jewelcrafting: Gem Studded Bangle
 				["requireSkill"] = JEWELCRAFTING,
-				["g"] = {
+				["groups"] = {
 					r(338239, {["u"]=TRAINING}),	-- Engraved Phaedrum Band
 					r(338238, {["u"]=TRAINING}),	-- Gem Studded Bangle
 					r(338240, {["u"]=TRAINING}),	-- Polished Gemstones
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = {
+						["groups"] = {
 							i(182289),	-- Handful of Glimmering Gemstones (QI!)
 							i(182000),	-- Polished Phedrum Rod (QI!)
 						},
@@ -179,13 +179,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 				["requireSkill"] = LEATHERWORKING,
-				["g"] = {
+				["groups"] = {
 					r(338253, {["u"]=TRAINING}),	-- Dyed Runestag Leather
 					r(338254, {["u"]=TRAINING}),	-- Runestag Leather Strap
 					r(338255, {["u"]=TRAINING}),	-- Stalker's Leather Quiver
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = {
+						["groups"] = {
 							i(182290),	-- Bottle of Leather Dye (QI!)
 							i(182003),	-- Runestag Leather (QI!)
 						},
@@ -198,20 +198,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			petbattle(q(61947)),	-- Lurking In The Shadows
 			q(61530, {	-- Mining: Ligneous Phaedrum Cluster
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(181718),	-- Ligneous Phaedrum Ore (QI!)
 				},
 			}),
 			petbattle(q(61946)),	-- Natural Defenders
 			q(61411, {	-- Our Heart Will Go On
-				["g"] = {
+				["groups"] = {
 					i(181284),	-- Gormling in a Bag (QI!)
 				},
 			}),
 			q(58975),	-- Pest Removal
 			q(60337, {	-- Pupa Trooper
-				["g"] = {
-					i(178717),	-- Ardenmoth Cocoon (QI!)
+				["groups"] = {
+					o(352047, {	--Ardenmoth Cocoon
+						i(178717),	-- Ardenmoth Cocoon (QI!)
+					}),
 				},
 			}),
 			q(59600),	-- Rotbriar Trouble
@@ -219,13 +221,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60574),	-- Shaking 'Shrooms
 			q(61603, {	-- Skinning: Thick Gormhide
 				["requireSkill"] = SKINNING,
-				["g"] = {
+				["groups"] = {
 					i(181452),	-- Thick Gormhide (QI!)
 				},
 			}),
 			q(60585),	-- Spriggan Riot
 			q(60476, {	-- Spriggan Size Me!
-				["g"] = {
+				["groups"] = {
 					o(352182, {	-- Spriggan-Sized Polearm
 						i(178908),	-- Spriggan-Sized Polearm (QI!)
 					}),
@@ -237,7 +239,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(60770, {	-- Squish and Burn
-				["g"] = {
+				["groups"] = {
 					i(180274),	-- Torch (QI!)
 				},
 			}),
@@ -245,13 +247,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60786),	-- Swarm Defense
 			q(61604, {	-- Tailoring: Cloak of Camouflage
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["groups"] = {
 					r(338270, {["u"]=TRAINING}),	-- Ardensilk Cloth
 					r(338269, {["u"]=TRAINING}),	-- Bolt of Ardensilk Cloth
 					r(338267, {["u"]=TRAINING}),	-- Cloak of Camouflage
 					o(356878, {	-- Crafter's Basket
 						["coord"] = { 48.3, 51.3, ARDENWEALD },
-						["g"] = { i(182006) },	-- Spool of Ardensilk (QI!)
+						["groups"] = { i(182006) },	-- Spool of Ardensilk (QI!)
 					}),
 					i(182005),	-- Ardensilk Cloth (QI!)
 					i(182004),	-- Bolt of Ardensilk Cloth (QI!)
@@ -261,7 +263,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60533),	-- Terrors in Tirna Scithe
 			q(60564),	-- Three Gorm Enter, No One Leaves
 			q(60842, {	-- To Serve Spriggan
-				["g"] = { i(180439) },	-- Bagged Frog
+				["groups"] = { i(180439) },	-- Bagged Frog
 			}),
 			q(60739, {	-- Tough Crowd
 				ach(14671, {	-- Something's Not Quite Right....
@@ -273,10 +275,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60597),	-- Trouble at the Gormling Corral
 			q(60475, {	-- We'll Workshop It
-				["g"] = {
+				["groups"] = {
 					ach(14672, {	-- A Bit of This, A Bit of That
 						["description"] = "Can currently be completed in one appearance of the World Quest by converting the Party to a Raid after collecting the 10 supplies then talking to all 6 NPCs.",
-						["g"] = {
+						["groups"] = {
 							crit(49570, {	-- Faerie Pomander
 								["crs"] = { 158345 },	-- Lady of the Falls
 								["coord"] = { 51.1, 33.9, ARDENWEALD },
@@ -303,7 +305,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						},
 						}),
-					i(178876),    -- Sack of Supplies (QI!)
+					i(178876),	-- Sack of Supplies (QI!)
 				},
 			}),
 			q(60609),	-- Who Devours the Devourers?
@@ -322,7 +324,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				}),
 			}),
 			n(WORLD_QUESTS, {
-				q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
+				q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald. i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
 			}),
 		}),
 	}),

@@ -84,38 +84,20 @@ local JEWELCRAFTING_RECIPES = pvp({
 	moh(1, sks(20, i(44066))),	-- Kharmaa's Grace
 });
 local PHASE_ONE_TRINKETS = applyclassicphase(WRATH_PHASE_ONE, pvp({
-	moh(1, wmoh(25, i(44914, {	-- Anvil of Titans
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(44912, {	-- Flow of Knowledge
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
+	-- NOTE: These were previously marked as REMOVED_4_0_1, but they are still in Cata Classic
+	moh(1, wmoh(25, i(44914))),	-- Anvil of Titans
+	moh(1, wmoh(25, i(44912))),	-- Flow of Knowledge
 }));
 local PHASE_TWO_TRINKETS = applyclassicphase(WRATH_PHASE_TWO, pvp({
-	moh(1, wmoh(25, i(46086, {	-- Platinum Disks of Battle
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46087, {	-- Platinum Disks of Sorcery
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46088, {	-- Platinum Disks of Swiftness
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46083, {	-- Titan-Forged Rune of Accuracy
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46085, {	-- Titan-Forged Rune of Alacrity
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46081, {	-- Titan-Forged Rune of Audacity
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46084, {	-- Titan-Forged Rune of Cruelty
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(25, i(46082, {	-- Titan-Forged Rune of Determination
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
+	-- NOTE: These were previously marked as REMOVED_4_0_1, but they are still in Cata Classic
+	moh(1, wmoh(25, i(46086))),	-- Platinum Disks of Battle
+	moh(1, wmoh(25, i(46087))),	-- Platinum Disks of Sorcery
+	moh(1, wmoh(25, i(46088))),	-- Platinum Disks of Swiftness
+	moh(1, wmoh(25, i(46083))), -- Titan-Forged Rune of Accuracy
+	moh(1, wmoh(25, i(46085))), -- Titan-Forged Rune of Alacrity
+	moh(1, wmoh(25, i(46081))),	-- Titan-Forged Rune of Audacity
+	moh(1, wmoh(25, i(46084))),	-- Titan-Forged Rune of Cruelty
+	moh(1, wmoh(25, i(46082))),	-- Titan-Forged Rune of Determination
 }));
 local WINTERGRASP_BELTS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 	moh(1, wmoh(15, i(46076))),	-- Titan-Forged Belt of Dominance
@@ -198,20 +180,14 @@ local WINTERGRASP_LEGS = applyclassicphase(WRATH_PHASE_THREE, pvp({
 	moh(2, wmoh(40, i(48994))),	-- Titan-Forged Ringmail Leggings of Salvation
 }));
 local WINTERGRASP_NECKS = applyclassicphase(WRATH_PHASE_THREE, pvp({
-	moh(1, wmoh(15, i(51568, {	-- Titan-Forged Pendant of Ascendancy
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(15, i(51569, {	-- Titan-Forged Pendant of Victory
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
+	-- NOTE: These were previously marked as REMOVED_4_0_1, but they are still in Cata Classic
+	moh(1, wmoh(15, i(51568))),	-- Titan-Forged Pendant of Ascendancy
+	moh(1, wmoh(15, i(51569))),	-- Titan-Forged Pendant of Victory
 }));
 local WINTERGRASP_RINGS = applyclassicphase(WRATH_PHASE_THREE, pvp({
-	moh(1, wmoh(15, i(48999, {	-- Titan-Forged Band of Ascendancy
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
-	moh(1, wmoh(15, i(49000, {	-- Titan-Forged Band of Victory
-		["timeline"] = { REMOVED_4_0_1 },
-	}))),
+	-- NOTE: These were previously marked as REMOVED_4_0_1, but they are still in Cata Classic
+	moh(1, wmoh(15, i(48999))),	-- Titan-Forged Band of Ascendancy
+	moh(1, wmoh(15, i(49000))),	-- Titan-Forged Band of Victory
 }));
 local WINTERGRASP_SHOULDERS = applyclassicphase(WRATH_PHASE_FOUR, pvp({
 	moh(2, wmoh(40, i(51573))),	-- Titan-Forged Shoulderpads of Domination
@@ -231,11 +207,9 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	})),
 	moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 		["timeline"] = { ADDED_6_1_0 },
-		["sym"] = {{ "fill" }},	-- simply fill this item
 	})),
 	moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 		["timeline"] = { ADDED_6_1_0 },
-		["sym"] = {{ "fill" }},	-- simply fill this item
 	})),
 	moh(10, i(122369, {	-- Battleworn Thrash Blade
 		["timeline"] = { ADDED_6_1_0 },
@@ -284,30 +258,60 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	})),
 
 	-- Old Heirlooms before they became learnable
+	i(93886, {			-- Adorned Beastmaster's Mantle
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44102, {	-- Aged Pauldrons of The Five Thunders
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93851, {			-- Battle-Forged Truesilver Champion
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	i(93848, {			-- Battle-Hardened Thrash Blade
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44096, {	-- Battleworn Thrash Blade
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93899, {			-- Bequeathed Insignia of the Alliance
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	i(93898, {			-- Bequeathed Insignia of the Horde
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	i(93852, {			-- Deadly Scarlet Kris
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	i(93849, {			-- Elder Staff of Jordan
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44103, {	-- Exceptional Stormshroud Shoulders
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44107, {	-- Exquisite Sunderseer Mantle
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93894, {			-- Immaculate Lightforge Spaulders
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(250, i(44098, {	-- Inherited Insignia of the Alliance
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(250, i(44097, {	-- Inherited Insignia of the Horde
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93900, {			-- Inherited Mark of Tyranny
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(325, i(44095, {	-- Grand Staff of Jordan
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
 	sks(200, i(44105, {	-- Lasting Feralheart Spaulders
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93861, {			-- Prestigious Sunderseer Mantle
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44100, {	-- Pristine Lightforge Spaulders
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
@@ -317,18 +321,36 @@ local WINTERGRASP_HEIRLOOMS = pvp({
 	sks(325, i(44092, {	-- Reforged Truesilver Champion
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93895, {			-- Reinforced Stockade Pauldrons
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44091, {	-- Sharpened Scarlet Kris
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93841, {			-- Smoothbore Dwarven Hand Cannon
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(200, i(44099, {	-- Strengthened Stockade Pauldrons
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93867, {			-- Superior Stormshroud Shoulders
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 	sks(250, i(44094, {	-- The Blessed Hammer of Grace
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
-	sks(325, i(44093, {	-- Unpgraded Dwarven Hand Cannon
+	i(93850, {			-- The Sanctified Hammer of Grace
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	sks(325, i(44093, {	-- Upgraded Dwarven Hand Cannon
 		["timeline"] = { REMOVED_6_1_0 },
 	})),
+	i(93889, {			-- Venerated Pauldrons of The Five Thunders
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
+	i(93866, {			-- Wild Feralheart Spaulders
+		["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+	}),
 });
 
 -- Group content that changes randomly throughout the ages because Blizzard is bad at making up their damn minds.
@@ -361,7 +383,8 @@ appendGroups(WINTERGRASP_HELMS, CHAMPION_ROSSLAI_GROUPS);
 appendGroups(WINTERGRASP_HELMS, KNIGHT_DAMERON_GROUPS);
 appendGroups(WINTERGRASP_HELMS, STONE_GUARD_GROUPS);
 appendGroups(WINTERGRASP_HELMS, TRAVIS_DAY_GROUPS);
--- #if AFTER CATA
+-- #if AFTER MOP
+-- NOTE: On Retail Wowhead these are listed as sold by all four vendors, though in Cata Classic they are ONLY sold by Ros'slai and Magruder
 appendGroups(WINTERGRASP_SHOULDERS, KNIGHT_DAMERON_GROUPS);
 appendGroups(WINTERGRASP_SHOULDERS, STONE_GUARD_GROUPS);
 -- #else

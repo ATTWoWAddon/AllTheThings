@@ -143,38 +143,54 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(87399),	-- Restored Artifact
 		i(154989),	-- Zandalari Idol
 		header(HEADERS.Currency, ARCH_CURRENCY_DRUST, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRUST,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(154922),	-- Ancient Runebound Tome
-			i(154921),	-- Ceremonial Bonesaw
-			i(160751),	-- Dance of the Dead (TOY!)
-			i(154923),	-- Disembowling Sickle
-			i(160833),	-- Fetish of the Tormented Mind
-			i(154924),	-- Jagged Blade of the Drust
-			i(154927),	-- Pristine Ancient Runebound Tome
-			i(154926),	-- Pristine Ceremonial Bonesaw
-			i(154928),	-- Pristine Disembowling Sickle
-			i(154929),	-- Pristine Jagged Blade of the Drust
-			i(154930),	-- Pristine Ritual Fetish
-			i(160742),	-- Pristine Soul Coffer
-			i(161089),	-- Restored Revenant (PET!)
-			i(154925),	-- Ritual Fetish
-			i(160741),	-- Soul Coffer
+			["provider"] = { "o", 278477 },	-- Drust Archaeology Find
+			["maps"] = {
+				DRUSTVAR,
+				STORMSONG_VALLEY,
+				TIRAGARDE_SOUND,
+			},
+			["groups"] = {
+				i(154922),	-- Ancient Runebound Tome
+				i(154921),	-- Ceremonial Bonesaw
+				i(160751),	-- Dance of the Dead (TOY!)
+				i(154923),	-- Disembowling Sickle
+				i(160833),	-- Fetish of the Tormented Mind
+				i(154924),	-- Jagged Blade of the Drust
+				i(154927),	-- Pristine Ancient Runebound Tome
+				i(154926),	-- Pristine Ceremonial Bonesaw
+				i(154928),	-- Pristine Disembowling Sickle
+				i(154929),	-- Pristine Jagged Blade of the Drust
+				i(154930),	-- Pristine Ritual Fetish
+				i(160742),	-- Pristine Soul Coffer
+				i(161089),	-- Restored Revenant (PET!)
+				i(154925),	-- Ritual Fetish
+				i(160741),	-- Soul Coffer
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_ZANDALARI, sharedData({["cost"]={{"c",ARCH_CURRENCY_ZANDALARI,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(154913),	-- Akun'Jar Vase
-			i(160743),	-- Blowgun of the Sethra
-			i(154917),	-- Bwonsamdi Voodoo Mask
-			i(160740),	-- Croak Crock (TOY!)
-			i(161080),	-- Direhorn Hatchling (PET!)
-			i(154916),	-- High Apothecary's Hood
-			i(154931),	-- Pristine Akun'Jar Vase
-			i(160744),	-- Pristine Blowgun of the Sethrak
-			i(154935),	-- Pristine Bwonsamdi Voodoo Mask
-			i(154934),	-- Pristine High Apothecary's Hood
-			i(154933),	-- Pristine Rezan Idol
-			i(154932),	-- Pristine Urn of Passage
-			i(154915),	-- Rezan Idol
-			i(160753),	-- Sanguinating Totem
-			i(154914),	-- Urn of Passage
+			["provider"] = { "o", 278476 },	-- Zandalari Archaeology Find
+			["maps"] = {
+				NAZMIR,
+				VOLDUN,
+				ZULDAZAR,
+			},
+			["groups"] = {
+				i(154913),	-- Akun'Jar Vase
+				i(160743),	-- Blowgun of the Sethra
+				i(154917),	-- Bwonsamdi Voodoo Mask
+				i(160740),	-- Croak Crock (TOY!)
+				i(161080),	-- Direhorn Hatchling (PET!)
+				i(154916),	-- High Apothecary's Hood
+				i(154931),	-- Pristine Akun'Jar Vase
+				i(160744),	-- Pristine Blowgun of the Sethrak
+				i(154935),	-- Pristine Bwonsamdi Voodoo Mask
+				i(154934),	-- Pristine High Apothecary's Hood
+				i(154933),	-- Pristine Rezan Idol
+				i(154932),	-- Pristine Urn of Passage
+				i(154915),	-- Rezan Idol
+				i(160753),	-- Sanguinating Totem
+				i(154914),	-- Urn of Passage
+			},
 		})),
 	}),
 	prof(BLACKSMITHING, {
@@ -738,6 +754,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
 		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		spell(273293, {	-- Aromatic Fish Oil
+			i(160711),	-- Aromatic Fish Oil
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -766,6 +785,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(INSCRIPTION, {
+		header(HEADERS.Spell, 382984, {	-- Kul Tiras and Zandalar Milling
+			i(153636),	-- Crimson Pigment
+			i(153635),	-- Ultramarine Pigment
+			i(153669),	-- Viridescent Pigment
+		}),
 		filter(GLYPHS, {
 			i(170173, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Dire Bees
 			i(172449, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Lavish Servings
@@ -904,6 +928,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
 				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
+		}),
+		header(HEADERS.Spell, 382973, {	-- Kul Tiras and Zandalar Prospecting
+			i(154123),	-- Amberblaze
+			i(168193, { ["timeline"] = { ADDED_8_2_0 } }),	-- Azsharine
+			i(168189, { ["timeline"] = { ADDED_8_2_0 } }),	-- Dark Opal
+			i(153700),	-- Golden Beryl
+			i(153706),	-- Kraken's Eye
+			i(153702),	-- Kubiline
+			i(153705),	-- Kyanite
+			i(154124),	-- Laribole
+			i(168190, { ["timeline"] = { ADDED_8_2_0 } }),	-- Lava Lazuli
+			i(154120),	-- Owlseye
+			i(154125),	-- Royal Quartz
+			i(153701),	-- Rubellite
+			i(168192, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sand Spinel
+			i(154121),	-- Scarlet Diamond
+			i(168191, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sea Currant
+			i(153703),	-- Solstone
+			i(154122),	-- Tidal Amethyst
+			i(153704),	-- Viridium
 		}),
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
@@ -1279,6 +1323,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154168),	-- Shimmerscale Diving Suit
 			i(165747),	-- Tempest Hide Pouch
 		}),
+		filter(REAGENTS, {
+			i(152542),	-- Hardened Tempest Hide
+		}),
 		n(WEAPONS, {
 			i(161970),	-- Coarse Leather Cestus [A]
 			i(154161),	-- Coarse Leather Cestus [H]
@@ -1316,219 +1363,198 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152579),	-- Storm Silver Ore
 		i(161085),	-- Tattered Map
 	}),
+	prof(SKINNING, {
+		i(154164),	-- Blood-Stained Bone
+		i(154165),	-- Calcified Bone
+		i(152541),	-- Coarse Leather
+		i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
+		i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
+		i(153051),	-- Mistscale
+		i(153050),	-- Shimmerscale
+		i(154722),	-- Tempest Hide
+	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
-			{	-- Embroidered Deep Sea Breeches
-				["spellID"] = 257122,	-- Embroidered Deep Sea Breeches
-				["groups"] = {
-					i(162509),	-- Pattern: Imbued Deep Sea Breeches
-				},
-			},
-			{	-- Embroidered Deep Sea Gloves
-				["spellID"] = 257118,	-- Embroidered Deep Sea Gloves
-				["groups"] = {
-					i(162507),	-- Pattern: Imbued Deep Sea Gloves
-				},
-			},
-			{	-- Enhanced Deep Sea Breeches
-				["spellID"] = 285077,	-- Enhanced Deep Sea Breeches
-				["groups"] = {
-					i(165655),	-- Pattern: Fortified Deep Sea Breeches
-				},
-			},
-			{	-- Enhanced Deep Sea Gloves
-				["spellID"] = 285078,	-- Enhanced Deep Sea Gloves
-				["groups"] = {
-					i(165652),	-- Pattern: Fortified Deep Sea Gloves
-				},
-			},
-			{	-- Fortified Deep Sea Breeches
-				["spellID"] = 285085,	-- Fortified Deep Sea Breeches
-				["groups"] = {
-					i(165654),	-- Pattern: Tempered Deep Sea Breeches
-				},
-			},
-			{	-- Fortified Deep Sea Gloves
-				["spellID"] = 285086,	-- Fortified Deep Sea Gloves
-				["groups"] = {
-					i(165653),	-- Pattern: Tempered Deep Sea Gloves
-				},
-			},
-			{	-- Imbued Deep Sea Breeches
-				["spellID"] = 257123,	-- Imbued Deep Sea Breeches
-				["groups"] = {
-					i(162510),	-- Pattern: Emblazoned Deep Sea Breeches
-				},
-			},
-			{	-- Imbued Deep Sea Gloves
-				["spellID"] = 257120,	-- Imbued Deep Sea Gloves
-				["groups"] = {
-					i(162508),	-- Pattern: Emblazoned Deep Sea Gloves
-				},
-			},
+			spell(257122, {	-- Embroidered Deep Sea Breeches
+				i(162509),	-- Pattern: Imbued Deep Sea Breeches (RECIPE!)
+			}),
+			spell(257118, {	-- Embroidered Deep Sea Gloves
+				i(162507),	-- Pattern: Imbued Deep Sea Gloves (RECIPE!)
+			}),
+			spell(285077, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Deep Sea Breeches
+				i(165655),	-- Pattern: Fortified Deep Sea Breeches (RECIPE!)
+			})),
+			spell(285078, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Enhanced Deep Sea Gloves
+				i(165652),	-- Pattern: Fortified Deep Sea Gloves (RECIPE!)
+			})),
+			spell(285085, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Deep Sea Breeches
+				i(165654),	-- Pattern: Tempered Deep Sea Breeches (RECIPE!)
+			})),
+			spell(285086, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Fortified Deep Sea Gloves
+				i(165653),	-- Pattern: Tempered Deep Sea Gloves (RECIPE!)
+			})),
+			spell(299034, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Gilded Seaweave Breeches
+				i(168783),	-- Pattern: Reinforced Seaweave Breeches (RECIPE!)
+			})),
+			spell(299031, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Gilded Seaweave Gloves
+				i(168781),	-- Pattern: Reinforced Seaweave Gloves (RECIPE!)
+			})),
+			spell(257123, {	-- Imbued Deep Sea Breeches
+				i(162510),	-- Pattern: Emblazoned Deep Sea Breeches (RECIPE!)
+			}),
+			spell(257120, {	-- Imbued Deep Sea Gloves
+				i(162508),	-- Pattern: Emblazoned Deep Sea Gloves (RECIPE!)
+			}),
+			spell(304563, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Seaweave Breeches
+				i(171147),	-- Pattern: Eldritch Seaweave Breeches (RECIPE!)
+			})),
+			spell(304560, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Maddening Seaweave Gloves
+				i(171149),	-- Pattern: Eldritch Seaweave Gloves (RECIPE!)
+			})),
+			spell(299035, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Seaweave Breeches
+			i(168784),	-- Pattern: Banded Seaweave Breeches (RECIPE!)
+			})),
+			spell(299032, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Reinforced Seaweave Gloves
+				i(168782),	-- Pattern: Banded Seaweave Gloves (RECIPE!)
+			})),
+			spell(304562, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Seaweave Breeches
+				i(171148),	-- Pattern: Maddening Seaweave Breeches (RECIPE!)
+			})),
+			spell(304559, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unsettling Seaweave Gloves
+				i(171150),	-- Pattern: Maddening Seaweave Gloves (RECIPE!)
+			})),
 		}),
-		filter(MOUNT_EQUIPMENT, {
-			i(165739),	-- Rough-hooked Tidespray Linen
-			i(168427),	-- Saddlechute
+		n(ARMOR, {
+			i(168733, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Seaweave Breeches [A]
+			i(168739, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Seaweave Breeches [H]
+			i(168730, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Seaweave Gloves [A]
+			i(168736, {["timeline"] = {ADDED_8_2_0}}),	-- Banded Seaweave Gloves [H]
+			i(170461, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Seaweave Breeches
+			i(170458, {["timeline"] = {ADDED_8_3_0}}),	-- Eldritch Seaweave Gloves
+			i(165385, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Deep Sea Breeches [A]
+			i(165386, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Deep Sea Breeches [H]
+			i(165410, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Deep Sea Gloves [A]
+			i(165411, {["timeline"] = {ADDED_8_1_0}}),	-- Fortified Deep Sea Gloves [H]
+			i(165377),	-- Enhanced Deep Sea Breeches [A]
+			i(165378),	-- Enhanced Deep Sea Breeches [H]
+			i(165402),	-- Enhanced Deep Sea Gloves [A]
+			i(165403),	-- Enhanced Deep Sea Gloves [H]
+			i(161986),	-- Embroidered Deep Sea Breeches [A]
+			i(154694),	-- Embroidered Deep Sea Breeches [H]
+			i(161990),	-- Embroidered Deep Sea Cloak [A]
+			i(154700),	-- Embroidered Deep Sea Cloak [H]
+			i(161985),	-- Embroidered Deep Sea Gloves [A]
+			i(154693),	-- Embroidered Deep Sea Gloves [H]
+			i(162480),	-- Emblazoned Deep Sea Breeches [A]
+			i(162478),	-- Emblazoned Deep Sea Breeches [H]
+			i(162479),	-- Emblazoned Deep Sea Gloves [A]
+			i(162476),	-- Emblazoned Deep Sea Gloves [H]
+			i(168731, {["timeline"] = {ADDED_8_2_0}}),	-- Gilded Seaweave Breeches [A]
+			i(168737, {["timeline"] = {ADDED_8_2_0}}),	-- Gilded Seaweave Breeches [H]
+			i(168728, {["timeline"] = {ADDED_8_2_0}}),	-- Gilded Seaweave Gloves [A]
+			i(168734, {["timeline"] = {ADDED_8_2_0}}),	-- Gilded Seaweave Gloves [H]
+			i(161996),	-- Honorable Combatant's Satin Belt [A]
+			i(159915),	-- Honorable Combatant's Satin Belt [H]
+			i(161993),	-- Honorable Combatant's Satin Boots [A]
+			i(159912),	-- Honorable Combatant's Satin Boots [H]
+			i(161997),	-- Honorable Combatant's Satin Bracers [A]
+			i(159916),	-- Honorable Combatant's Satin Bracers [H]
+			i(161998),	-- Honorable Combatant's Satin Cloak [A]
+			i(159917),	-- Honorable Combatant's Satin Cloak [H]
+			i(161994),	-- Honorable Combatant's Satin Mittens [A]
+			i(159913),	-- Honorable Combatant's Satin Mittens [H]
+			i(161995),	-- Honorable Combatant's Satin Pants [A]
+			i(159914),	-- Honorable Combatant's Satin Pants [H]
+			i(162487),	-- Imbued Deep Sea Gloves [A]
+			i(162475),	-- Imbued Deep Sea Gloves [H]
+			i(162488),	-- Imbued Deep Sea Breeches [A]
+			i(162477),	-- Imbued Deep Sea Breeches [H]
+			i(170460, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Seaweave Breeches
+			i(170457, {["timeline"] = {ADDED_8_3_0}}),	-- Maddening Seaweave Gloves
+			i(167977, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Belt [A]
+			i(167976, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Belt [H]
+			i(167979, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Boots [A]
+			i(167978, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Boots [H]
+			i(167981, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Bracers [A]
+			i(167980, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Bracers [H]
+			i(167983, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Cloak [A]
+			i(167982, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Cloak [H]
+			i(167985, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Mittens [A]
+			i(167984, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Mittens [H]
+			i(167987, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Pants [A]
+			i(167986, {["timeline"] = {ADDED_8_2_0}}),	-- Notorious Combatant's Satin Pants [H]
+			i(168732, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Seaweave Breeches [A]
+			i(168738, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Seaweave Breeches [H]
+			i(168729, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Seaweave Gloves [A]
+			i(168735, {["timeline"] = {ADDED_8_2_0}}),	-- Reinforced Seaweave Gloves [H]
+			i(164715, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Belt [A]
+			i(164674, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Belt [H]
+			i(164712, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Boots [A]
+			i(164671, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Boots [H]
+			i(164716, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Bracers [A]
+			i(164675, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Bracers [H]
+			i(164717, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Cloak [A]
+			i(164676, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Cloak [H]
+			i(164713, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Mittens [A]
+			i(164672, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Mittens [H]
+			i(164714, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Pants [A]
+			i(164673, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Pants [H]
+			i(165393, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Deep Sea Breeches [A]
+			i(165394, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Deep Sea Breeches [H]
+			i(165418, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Deep Sea Gloves [A]
+			i(165419, {["timeline"] = {ADDED_8_1_0}}),	-- Tempered Deep Sea Gloves [H]
+			i(161983),	-- Tidespray Linen Belt [A]
+			i(154691),	-- Tidespray Linen Belt [H]
+			i(161984),	-- Tidespray Linen Bracers [A]
+			i(154692),	-- Tidespray Linen Bracers [H]
+			i(161987),	-- Tidespray Linen Cloak [A]
+			i(154697),	-- Tidespray Linen Cloak [H]
+			i(161980),	-- Tidespray Linen Hood [A]
+			i(154688),	-- Tidespray Linen Hood [H]
+			i(161979),	-- Tidespray Linen Mittens [A]
+			i(154687),	-- Tidespray Linen Mittens [H]
+			i(161981),	-- Tidespray Linen Pants [A]
+			i(154689),	-- Tidespray Linen Pants [H]
+			i(161977),	-- Tidespray Linen Robe [A]
+			i(154685),	-- Tidespray Linen Robe [H]
+			i(161978),	-- Tidespray Linen Sandals [A]
+			i(154686),	-- Tidespray Linen Sandals [H]
+			i(161982),	-- Tidespray Linen Spaulders [A]
+			i(154690),	-- Tidespray Linen Spaulders [H]
+			i(170324, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Belt [A]
+			i(170332, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Belt [H]
+			i(170327, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Boots [A]
+			i(170337, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Boots [H]
+			i(170323, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Bracers [A]
+			i(170338, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Bracers [H]
+			i(170320, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Cloak [A]
+			i(170339, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Cloak [H]
+			i(170340, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Mittens [A]
+			i(170326, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Mittens [H]
+			i(170325, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Pants [A]
+			i(170341, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Pants [H]
+			i(170459, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Seaweave Breeches
+			i(170456, {["timeline"] = {ADDED_8_3_0}}),	-- Unsettling Seaweave Gloves
 		}),
 		filter(BAGS, {
 			i(154695),	-- Deep Sea Bag
 			i(154696),	-- Embroidered Deep Sea Bag
 		}),
-		n(CHEST, {
-			i(161977),	-- Tidespray Linen Robe [Alliance]
-			i(154685),	-- Tidespray Linen Robe [Horde]
-		}),
-		n(BACK, {
-			i(161990),	-- Embroidered Deep Sea Cloak [Alliance]
-			i(154700),	-- Embroidered Deep Sea Cloak [Horde]
-			i(161998),	-- Honorable Combatant's Satin Cloak [Alliance]
-			i(159917),	-- Honorable Combatant's Satin Cloak [Horde]
-			i(167983),	-- Notorious Combatant's Satin Cloak [Alliance]
-			i(167982),	-- Notorious Combatant's Satin Cloak [Horde]
-			i(164717),	-- Sinister Combatant's Satin Cloak [Alliance]
-			i(164676),	-- Sinister Combatant's Satin Cloak [Horde]
-			i(161987),	-- Tidespray Linen Cloak [Alliance]
-			i(154697),	-- Tidespray Linen Cloak [Horde]
-			i(170320),	-- Uncanny Combatant's Satin Cloak [Alliance]
-			i(170339),	-- Uncanny Combatant's Satin Cloak [Horde}
-		}),
-		n(FEET, {
-			i(161993),	-- Honorable Combatant's Satin Boots [Alliance]
-			i(159912),	-- Honorable Combatant's Satin Boots [Horde]
-			i(167979),	-- Notorious Combatant's Satin Boots [Alliance]
-			i(167978),	-- Notorious Combatant's Satin Boots [Horde]
-			i(164712),	-- Sinister Combatant's Satin Boots [Alliance]
-			i(164671),	-- Sinister Combatant's Satin Boots [Horde]
-			i(161978),	-- Tidespray Linen Sandals [Alliance]
-			i(154686),	-- Tidespray Linen Sandals [Horde]
-			i(170327),	-- Uncanny Combatant's Satin Boots [Alliance]
-			i(170337),	-- Uncanny Combatant's Satin Boots [Horde]
-		}),
-		n(HANDS, {
-			i(168730),	-- Banded Seaweave Gloves [Alliance]
-			i(168736),	-- Banded Seaweave Gloves [Horde]
-			i(170458),	-- Eldritch Seaweave Gloves
-			i(162479),	-- Emblazoned Deep Sea Gloves [Alliance]
-			i(162476),	-- Emblazoned Deep Sea Gloves [Horde]
-			i(161985),	-- Embroidered Deep Sea Gloves [Alliance]
-			i(154693),	-- Embroidered Deep Sea Gloves [Horde]
-			i(165402),	-- Enhanced Deep Sea Gloves [Alliance]
-			i(165403),	-- Enhanced Deep Sea Gloves [Horde]
-			i(165410),	-- Fortified Deep Sea Gloves [Alliance]
-			i(165411),	-- Fortified Deep Sea Gloves [Horde]
-			i(168728, {	-- Gilded Seaweave Gloves [Alliance]
-				i(168781),	-- Pattern: Reinforced Seaweave Gloves
-			}),
-			i(168734, {	-- Gilded Seaweave Gloves [Horde]
-				i(168781),	-- Pattern: Reinforced Seaweave Gloves
-			}),
-			i(161994),	-- Honorable Combatant's Satin Mittens [Alliance]
-			i(159913),	-- Honorable Combatant's Satin Mittens [Horde]
-			i(162487),	-- Imbued Deep Sea Gloves [Alliance]
-			i(162475),	-- Imbued Deep Sea Gloves [Horde]
-			i(170457, {	-- Maddening Seaweave Gloves
-				i(171149),	-- Pattern: Eldritch Seaweave Gloves
-			}),
-			i(167985),	-- Notorious Combatant's Satin Mittens [Alliance]
-			i(167984),	-- Notorious Combatant's Satin Mittens [Horde]
-			i(168729, {	-- Reinforced Seaweave Gloves [Alliance]
-				i(168782),	-- Pattern: Banded Seaweave Gloves
-			}),
-			i(168735, {	-- Reinforced Seaweave Gloves [Horde]
-				i(168782),	-- Pattern: Banded Seaweave Gloves
-			}),
-			i(164713),	-- Sinister Combatant's Satin Mittens [Alliance]
-			i(164672),	-- Sinister Combatant's Satin Mittens [Horde]
-			i(165418),	-- Tempered Deep Sea Gloves [Alliance]
-			i(165419),	-- Tempered Deep Sea Gloves [Horde]
-			i(161979),	-- Tidespray Linen Mittens [Alliance]
-			i(154687),	-- Tidespray Linen Mittens [Horde]
-			i(170340),	-- Uncanny Combatant's Satin Mittens [Alliance]
-			i(170326),	-- Uncanny Combatant's Satin Mittens [Horde]
-			i(170456, {	-- Unsettling Seaweave Gloves
-				i(171150),	-- Pattern: Maddening Seaweave Gloves
-			}),
-		}),
-		n(HEAD, {
-			i(161980),	-- Tidespray Linen Hood [Alliance]
-			i(154688),	-- Tidespray Linen Hood [Horde]
-		}),
-		n(LEGS, {
-			i(168733),	-- Banded Seaweave Breeches [Alliance]
-			i(168739),	-- Banded Seaweave Breeches [Horde]
-			i(170461),	-- Eldritch Seaweave Breeches
-			i(162480),	-- Emblazoned Deep Sea Breeches [Alliance]
-			i(162478),	-- Emblazoned Deep Sea Breeches [Horde]
-			i(161986),	-- Embroidered Deep Sea Breeches [Alliance]
-			i(154694),	-- Embroidered Deep Sea Breeches [Horde]
-			i(165377),	-- Enhanced Deep Sea Breeches [Alliance]
-			i(165378),	-- Enhanced Deep Sea Breeches [Horde]
-			i(165385),	-- Fortified Deep Sea Breeches [Alliance]
-			i(165386),	-- Fortified Deep Sea Breeches [Horde]
-			i(168731, {	-- Gilded Seaweave Breeches [Alliance]
-				i(168783),	-- Pattern: Reinforced Seaweave Breeches
-			}),
-			i(168737, {	-- Gilded Seaweave Breeches [Horde]
-				i(168783),	-- Pattern: Reinforced Seaweave Breeches
-			}),
-			i(161995),	-- Honorable Combatant's Satin Pants [Alliance]
-			i(159914),	-- Honorable Combatant's Satin Pants [Horde]
-			i(162488),	-- Imbued Deep Sea Breeches [Alliance]
-			i(162477),	-- Imbued Deep Sea Breeches [Horde]
-			i(170460, {	-- Maddening Seaweave Breeches
-				i(171147),	-- Pattern: Eldritch Seaweave Breeches
-			}),
-			i(167987),	-- Notorious Combatant's Satin Pants [Alliance]
-			i(167986),	-- Notorious Combatant's Satin Pants [Horde]
-			i(168732, {	-- Reinforced Seaweave Breeches [Alliance]
-				i(168784),	-- Pattern: Banded Seaweave Breeches
-			}),
-			i(168738, {	-- Reinforced Seaweave Breeches [Horde]
-				i(168784),	-- Pattern: Banded Seaweave Breeches
-			}),
-			i(164714),	-- Sinister Combatant's Satin Pants [Alliance]
-			i(164673),	-- Sinister Combatant's Satin Pants [Horde]
-			i(165393),	-- Tempered Deep Sea Breeches [Alliance]
-			i(165394),	-- Tempered Deep Sea Breeches [Horde]
-			i(161981),	-- Tidespray Linen Pants [Alliance]
-			i(154689),	-- Tidespray Linen Pants [Horde]
-			i(170325),	-- Uncanny Combatant's Satin Pants [Alliance]
-			i(170341),	-- Uncanny Combatant's Satin Pants [Horde]
-			i(170459, {	-- Unsettling Seaweave Breeches
-				i(171148),	-- Pattern: Maddening Seaweave Breeches
-			}),
-		}),
-		n(SHOULDER, {
-			i(161982),	-- Tidespray Linen Spaulders [Alliance]
-			i(154690),	-- Tidespray Linen Spaulders [Horde]
-		}),
-		n(WAIST, {
-			i(161996),	-- Honorable Combatant's Satin Belt [Alliance]
-			i(159915),	-- Honorable Combatant's Satin Belt [Horde]
-			i(167977),	-- Notorious Combatant's Satin Belt [Alliance]
-			i(167976),	-- Notorious Combatant's Satin Belt [Horde]
-			i(164715),	-- Sinister Combatant's Satin Belt [Alliance]
-			i(164674),	-- Sinister Combatant's Satin Belt [Horde]
-			i(161983),	-- Tidespray Linen Belt [Alliance]
-			i(154691),	-- Tidespray Linen Belt [Horde]
-			i(170324),	-- Uncanny Combatant's Satin Belt [Alliance]
-			i(170332),	-- Uncanny Combatant's Satin Belt [Horde]
-		}),
-		n(WRIST, {
-			i(161997),	-- Honorable Combatant's Satin Bracers [Alliance]
-			i(159916),	-- Honorable Combatant's Satin Bracers [Horde]
-			i(167981),	-- Notorious Combatant's Satin Bracers [Alliance]
-			i(167980),	-- Notorious Combatant's Satin Bracers [Horde]
-			i(164716),	-- Sinister Combatant's Satin Bracers [Alliance]
-			i(164675),	-- Sinister Combatant's Satin Bracers [Horde]
-			i(161984),	-- Tidespray Linen Bracers [Alliance]
-			i(154692),	-- Tidespray Linen Bracers [Horde]
-			i(170323),	-- Uncanny Combatant's Satin Bracers [Alliance]
-			i(170338),	-- Uncanny Combatant's Satin Bracers [Horde]
-		}),
 		filter(REAGENTS, {
 			i(158378),	-- Embroidered Deep Sea Satin
+		}),
+		filter(MISC, {
+			i(154706),	-- Battle Flag: Phalanx Defense
+			i(154705),	-- Battle Flag: Rallying Swiftness
+			i(154707),	-- Battle Flag: Spirit of Freedom
+			i(158382),	-- Deep Sea Bandage
+			i(159792),	-- Hooked Deep Sea Net
+			i(165739),	-- Rough-hooked Tidespray Linen
+			i(168427, {["timeline"] = {ADDED_8_2_0}}),	-- Saddlechute
+			i(169456, {["timeline"] = {ADDED_8_2_0}}),	-- Seabreeze Saddle Blanket
+			i(164733, {["timeline"] = {ADDED_8_1_5}}),	-- Synchronous Thread
+			i(158381),	-- Tidespray Linen Bandage
+			i(159791),	-- Tidespray Linen Net
 		}),
 	}),
 }))));

@@ -27,6 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				645,	-- Scholomance
 				646,	-- Stratholme
 			}},
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(1285, {		-- Classic Raider
 			-- Meta Achievement
@@ -36,47 +37,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				687,	-- Temple of Ahn'Qiraj
 				689,	-- Ruins of Ahn'Qiraj
 			}},
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(7934, {		-- Raiding with Leashes
+		ach(7934, {	-- Raiding with Leashes
 			["timeline"] = { ADDED_5_1_0 },
-			["g"] = {
-				i(93031),		-- Mr. Bigglesworth (PET!)
-				crit(22468, {		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
-					["provider"] = { "i", 93041 },
-				}),
-				crit(22469, {		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
-					["provider"] = { "i", 93040 },
-				}),
-				crit(22470, {		-- Giant Bone Spider (Naxxramas - Maexxna)
-					["provider"] = { "i", 93030 },
-				}),
-				crit(22471, {		-- Fungal Abomination (Naxxramas - Loatheb)
-					["provider"] = { "i", 93032 },
-				}),
-				crit(22473, {		-- Stitched Pup (Naxxramas - Gluth)
-					["provider"] = { "i", 93029 },
-				}),
-				crit(22474, {		-- Harbinger of Flame (Molten Core - Sulfuron Harbinger)
-					["provider"] = { "i", 93033 },
-				}),
-				crit(22475, {		-- Corefire Imp (Molten Core - Magmadar)
-					["provider"] = { "i", 93034 },
-				}),
-				crit(22476, {		-- Ashstone Core (Molten Core - Golemagg the Incinerator)
-					["provider"] = { "i", 93035 },
-				}),
-				crit(22477, {		-- Untamed Hatchling (Blackwing Lair - Razorgore the Untamed)
-					["provider"] = { "i", 93036 },
-				}),
-				crit(22478, {		-- Chrominius (Blackwing Lair - Chromaggus)
-					["provider"] = { "i", 93038 },
-				}),
-				crit(22479, {		-- Death Talon Whelpguard (Blackwing Lair - Broodlord Lashlayer)
-					["provider"] = { "i", 93037 },
-				}),
-				crit(22480, {		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
-					["provider"] = { "i", 93039 },
-				}),
+			["groups"] = {
+				i(93031),	-- Mr. Bigglesworth (PET!)
 			},
 		}),
 	}),

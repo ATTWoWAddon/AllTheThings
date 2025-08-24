@@ -57,9 +57,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					62000,	-- Choosing Your Purpose [Skip]
 				},
 				["sourceQuestNumRequired"] = 1,
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 39.2, 69.7, ORIBOS },
+				["isBreadcrumb"] = true,
 			}),
 			q(61475, {	-- The Heart of the Forest
 				["sourceQuests"] = {
@@ -78,10 +78,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					59071,	-- Mending a Broken Hart
 					60272,	-- The Weak Link (not 100% on this, but it's as far in the chain at which I am able to accept this)
 					62899,	-- The Endless Forest
+					63427,	-- HQT to skip sanctum intro quests
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
-				["coord"] = { 47.4, 36.1, THE_TRUNK },
+				["coords"] = {
+					{ 47.5, 36.5, THE_TRUNK },
+					{ 49.2, 39.9, THE_TRUNK },
+				},
 			}),
 			q(61058, {	-- Bound in Dreams
 				["sourceQuests"] = {
@@ -91,7 +95,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 160482 },	-- Dreamweaver
 				["coord"] = { 33.7, 47.6, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					follower(1264),	-- Dreamweaver
 				},
 			}),
@@ -103,7 +107,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
 				["coord"] = { 35.2, 47.4, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					follower(1266),	-- Hunt-Captain Korayn
 				},
 			}),
@@ -129,8 +133,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 			}),
 			q(63346, {	-- Night Fae Veteran
-				["sourceQuests"] = { 62899 },	-- The Endless Forest
 				["description"] = "Requires Renown 7.",
+				["sourceQuests"] = { 62899 },	-- The Endless Forest
 				["provider"] = { "n", 176096 },	-- Laurel
 				["coord"] = { 34.0, 37.0, THE_TRUNK },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
@@ -155,39 +159,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- TODO Verify if requirements different for first Covenant vs. Switching Covenant?
 				["sourceQuests"] = { 62899 },	-- The Endless Forest  [after switching Covenant]
 				["provider"] = { "n", 167196 },	-- Sesselie
-				["isWeekly"] = true,
 				["coord"] = { 50.5, 62.9, THE_ROOTS },
+				["isWeekly"] = true,
 			}),
 			q(61331, {	-- Return Lost Souls (5 soul version)
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
-				["isWeekly"] = true,
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
+				["isWeekly"] = true,
 			}),
 			q(62858, {	-- Return Lost Souls (10 soul version)
-				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["description"] = "Requires Renown 15.",
+				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
+				["isWeekly"] = true,
 			}),
 			q(62859, {	-- Return Lost Souls (15 soul version)
-				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["description"] = "Requires Renown 24.",
+				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
+				["isWeekly"] = true,
 			}),
 			q(62860, {	-- Return Lost Souls (20 soul version)
-				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["description"] = "Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",
+				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
 						["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
@@ -214,23 +218,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 62860 },	-- Return Lost Souls (20 soul version)
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["repeatable"] = true,
 				["timeline"] = { ADDED_9_1_5 },
+				["repeatable"] = true,
 			}),
 			q(72113, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Shapes Beyond the Veil
 				-- ["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 174209 },	-- Lady Muunn
 				["coord"] = { 38.2, 24.4, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					i(200960),	-- Seed of Renewed Souls (TOY!)
 				},
 			})),
 			q(62536, {	-- The Lost of Teldrassil
-				-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
-				-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there
 				["sourceQuests"] = { 59242 },	-- Their New Home
 				["provider"] = { "n", 160262 },	-- Ysera
 				["coord"] = { 44.6, 39.0, THE_TRUNK },
+				-- TODO: figure out sourceQuests. This quest just randomly showed up for me after daily reset on a Saturday.
+				-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset. it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there
 			}),
 
 			-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
@@ -239,7 +243,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(61479, {	-- The Boon of Shapes
 				["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 				["provider"] = { "n", 172431 },	-- Lady Moonberry
-				["coord"] = { 39.7, 60.8, ARDENWEALD },
+				["coord"] = { 49.2, 52.2, ARDENWEALD },
 			}),
 			q(58104, {	-- Show, Don't Tell
 				["sourceQuests"] = { 61479 },	-- The Boon of Shapes
@@ -250,7 +254,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
 				["provider"] = { "n", 160484 },	-- Featherlight
 				["coord"] = { 40.7, 42.7, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					title(413, {	-- <Name>, As Themselves
 						["collectible"] = false,
 					}),
@@ -265,22 +269,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58158 },	-- The Fourth Wall, er, War
 				["provider"] = { "n", 160484 },	-- Featherlight
 				["coord"] = { 40.7, 42.7, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180263),	-- Dreamlight Runestag (MOUNT!)
 				},
 			}),
 			q(58160, {	-- For Queen and Grove!
 				["sourceQuests"] = { 58159 },	-- What's My Motivation?
+				["altQuests"] = { 63006 },	-- For Queen and Grove! [Covenant Intro Skip]
 				["provider"] = { "n", 160500 },	-- Ysera
 				["coord"] = { 42.4, 45.2, ARDENWEALD },
-				["altQuests"] = { 63006 },	-- For Queen and Grove! [Covenant Intro Skip]
 			}),
 			q(63006, {	-- For Queen and Grove! [Covenant Intro Skip]
 				["description"] = "Available when skipping Night Fae covenant intro quests.",
 				["sourceQuests"] = { 58104 },	-- Show, Don't Tell
+				["altQuests"] = { 58160 },	-- For Queen and Grove! [Covenant Intro Skip]
 				["qg"] = 161509,	-- Lady Moonberry
 				["coord"] = { 49.7, 40.1, THE_TRUNK },
-				["altQuests"] = { 58160 },	-- For Queen and Grove! [Covenant Intro Skip]
 			}),
 			q(62883, {	-- Keeper of Great Renown
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -304,12 +308,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(62891, {	-- Into the Reservoir
 				["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
 				["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-				["coord"] = { 39.7, 55.7, THE_TRUNK },
+				["coord"] = { 39.7, 55.7, THE_ROOTS },
 			}),
 			q(62892, {	-- Recover the Lost
 				["sourceQuests"] = { 62891 },	-- Into the Reservoir
 				["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-				["coord"] = { 39.7, 55.7, THE_TRUNK },
+				["coord"] = { 39.7, 55.7, THE_ROOTS },
 			}),
 			q(62893, {	-- Do What We Cannot
 				["sourceQuests"] = { 62892 },	-- Recover the Lost
@@ -329,19 +333,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(62898, {	-- The First New Growth
 				["sourceQuests"] = { 62897 },	-- Recovered Souls (technically can be acquired after 62837 Hopeful News, but requires Souls reward from 62897 anyway...)
 				["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-				["coord"] = { 39.7, 55.7, THE_TRUNK },
+				["coord"] = { 39.7, 55.7, THE_ROOTS },
 			}),
 			q(61541, {	-- The Forge of Bonds
-				["altQuests"] = { 63008 },	-- The Forge of Bonds
 				["sourceQuests"] = { 62898 },	-- The First New Growth
+				["altQuests"] = { 63008 },	-- The Forge of Bonds
 				["provider"] = { "n", 172431 },	-- Lady Moonberry
 				["coord"] = { 49.5, 40.0, THE_TRUNK },
 			}),
 			q(63008, {	-- The Forge of Bonds [Covenant Skip]
-				["altQuests"] = { 61541 },	-- The Forge of Bonds
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
+				["altQuests"] = { 61541 },	-- The Forge of Bonds
 				["provider"] = { "n", 156634 },	-- Winter Queen
-				["coord"] = { 50.9, 29.4, THE_CANOPY },
+				["coord"] = { 51.4, 27.7, THE_CANOPY },
 			}),
 			q(61542, {	-- The Boon of Binding
 				["sourceQuests"] = { 61541 },	-- The Forge of Bonds
@@ -352,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61542 },	-- The Boon of Binding
 				["provider"] = { "n", 172677 },	-- Niya
 				["coord"] = { 33.7, 45.0, THE_TRUNK },
-				["g"] = appendGroups(CONDUIT_GROUP, {
+				["groups"] = appendGroups(CONDUIT_GROUP, {
 					i(183473),	-- Conflux of Elements
 					i(182651),	-- Destructive Reverberations
 					i(181539),	-- Discipline of the Grove
@@ -427,7 +431,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59189 },	-- The Recovery of Tyrande Whisperwind
 				["provider"] = { "n", 174834 },	-- Shandris Feathermoon
 				["coord"] = { 46.8, 41.7, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(175576),	-- Faewoven Raiment
 					i(179657),	-- Faewoven Tunic
 					i(179765),	-- Oakheart Tunic
@@ -440,11 +444,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 
 			-- Chapter 4: Da Boss (Renown 8 required to start)
 			q(59809, {	-- On De Other Side
-				["sourceQuests"] = { 59242 },	-- Their New Home
 				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 59242 },	-- Their New Home
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
 				["maps"] = { 1917 },	-- De Other Side (scenario)
-				["g"] = {
+				["groups"] = {
 					i(177904),	-- Deathstone (QI!)
 				},
 			}),
@@ -456,7 +460,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(59812, {	-- Following the Trail
 				["sourceQuests"] = { 59811 },	-- Taking Inventory
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-				["g"] = {
+				["groups"] = {
 					i(180167),	-- Death God Mask (QI!)
 				},
 			}),
@@ -474,7 +478,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					59815,	-- Stolen Loa
 				},
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
-				["g"] = {
+				["groups"] = {
 					i(175586),	-- Faewoven Handwraps
 					i(179767),	-- Oakheart Armguards
 					i(179890),	-- Queensguard Gauntlets
@@ -526,7 +530,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					59008,	-- Spriggan Snares
 				},
 				["provider"] = { "n", 161934 },	-- Qadarin
-				["g"] = {
+				["groups"] = {
 					i(175581),	-- Faewoven Sandals
 					i(179766),	-- Oakheart Anklewraps
 					i(179889),	-- Queensguard Sabatons
@@ -547,7 +551,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59725 },	-- Archivist on the Edge
 				["provider"] = { "n", 165867 },	-- Archivist Dreyden
 				["coord"] = { 63.6, 22.6, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(175137),	-- Piece of Shredded Scroll (QI!)
 					i(175138),	-- Sealed Scroll of Soul Rot (QI!)
 					i(177280),	-- Tattered Binding (QI!)
@@ -557,7 +561,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
 				["coord"] = { 44.0, 37.1, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					i(175154),	-- A Secret Never Spoken (QI!)
 					i(175152),	-- A Slime-Covered Book of Secrets (QI!)
 				},
@@ -566,7 +570,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
 				["coord"] = { 44.0, 37.1, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					i(175139),	-- Mischief-touched Anima (QI!)
 				},
 			}),
@@ -574,8 +578,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 160262 },	-- Ysera
 				["coord"] = { 44.7, 39.0, THE_TRUNK },
-				["g"] = {
-					i(175149),    -- A Small Carving of Ysera (QI!)
+				["groups"] = {
+					i(175149),	-- A Small Carving of Ysera (QI!)
 				},
 			}),
 			q(59071, {	-- Mending a Broken Hart
@@ -586,7 +590,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
 				["coord"] = { 44.0, 37.1, THE_TRUNK },
-				["g"] = {
+				["groups"] = {
 					i(181301),	-- Faewoven Branches
 					i(182172),	-- Equine Soul
 				},
@@ -606,7 +610,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180462),	-- Mask of Possession (QI!)
 				},
 			}),
@@ -614,7 +618,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 60910 },	-- Masks of Deception
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180523),	-- Disguise Mask (QI!)
 				},
 			}),
@@ -622,7 +626,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 60928 },	-- Blackthorn Captives
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 41.1, 31.6, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180606),	-- Ara'lon's Report (QI!)
 					i(175603),	-- Faewoven Cuffs
 					i(179772),	-- Oakheart Bracers
@@ -639,7 +643,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
 				["provider"] = { "n", 141159 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(180625),	-- Imbued Drust Fetish (QI!)
 				},
 			}),
@@ -662,7 +666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61701 },	-- Searching the Grove
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 46.6, 73.1, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182639),	-- Gilded Skull Key (QI!)
 					i(182641),	-- Lustrous Silver Key (QI!)
 					i(180777),	-- Thros-Forged Key (QI!)
@@ -677,7 +681,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61702 },	-- A Swift Intervention
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 41.3, 74.3, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(175600),	-- Faewoven Sash
 					i(179771),	-- Oakheart Belt
 					i(179893),	-- Queensguard Girdle
@@ -688,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61143 },	-- Return to the Den
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 43.7, 69.0, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182958),	-- Nox Root (QI!)
 				},
 			}),
@@ -696,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61703 },	-- Nox Root
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 46.2, 56.5, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182963),	-- Witch's Satchel (QI!)
 				},
 			}),
@@ -704,7 +708,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61703 },	-- Nox Root
 				["provider"] = { "o", 357726 },	-- Broken Spear
 				["coord"] = { 33.8, 54.4, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182966),	-- Broken Spear (QI!)
 				},
 			}),
@@ -720,7 +724,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 61711 },	-- Ritual of Purification
 				["provider"] = { "n", 170848 },	-- Lord Herne
 				["coord"] = { 46.2, 56.7, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(175597),	-- Faewoven Amice
 					i(180832),	-- Lord Herne's Report (QI!)
 					i(179770),	-- Oakheart Mantle
@@ -760,7 +764,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
 				["provider"] = { "n", 165841 },	-- Huln Highmountain
 				["coord"] = { 35.3, 51.2, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(174467),	-- Bulging Digestive Sac (QI!)
 					i(174645),	-- Gormherd Branch (QI!)
 				},
@@ -769,7 +773,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
 				["provider"] = { "n", 165841 },	-- Huln Highmountain
 				["coord"] = { 35.3, 51.2, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(175753),	-- Life-Hardened Anima (QI!)
 				},
 			}),
@@ -790,7 +794,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 58451 },	-- Voras, The Realm Eater
 				["provider"] = { "n", 161353 },	-- Huln Highmountain
 				["coord"] = { 24.5, 49.0, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(175592),	-- Faewoven Leggings
 					i(179769),	-- Oakheart Britches
 					i(179891),	-- Queensguard Greaves
@@ -813,7 +817,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(180787),	-- Zel'han's Broken Armor (QI!)
 				},
 			}),
@@ -821,7 +825,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
 				["provider"] = { "n", 165968 },	-- Hanzabu
 				["coord"] = { 39.5, 24.7, NAZMIR },
-				["g"] = { i(177818) },	-- Dark Mojo (QI!)
+				["groups"] = { i(177818) },	-- Dark Mojo (QI!)
 			}),
 			q(59742, {	-- Delaying the Other Side
 				["sourceQuests"] = { 59732 },	-- Something Extra for the Winter Queen
@@ -836,7 +840,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 					i(179623),	-- Faewoven Drape
 					i(179773),	-- Oakheart Cape
@@ -848,7 +852,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59749 },	-- One Little Whisper
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.6, 24.7, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 				},
 			}),
@@ -856,7 +860,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59805 },	-- Maw Manifested
 				["provider"] = { "n", 171655 },	-- Spirit of Vol'jin
 				["coord"] = { 44.8, 40.9, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 				},
 			}),
@@ -864,7 +868,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59822 },	-- Tracking a Wild God
 				["provider"] = { "n", 171806 },	-- Spirit of Vol'jin
 				["coord"] = { 41.0, 64.2, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 				},
 			}),
@@ -872,7 +876,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59824 },	-- Loa Rescue
 				["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
 				["coord"] = { 45.8, 85.0, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 				},
 			}),
@@ -880,7 +884,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59856 },	-- Rezan, Loa of Kings
 				["provider"] = { "n", 166461 },	-- Spirit of Vol'jin
 				["coord"] = { 45.8, 85.0, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(177817),	-- Voodoo Powder (QI!)
 					i(175588),	-- Faewoven Cowl
 					i(179768),	-- Oakheart Crest
@@ -929,7 +933,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 172091 },	-- Lord Herne
 				["coord"] = { 39.0, 63.4, ARDENWEALD },
 				["maps"] = { 1709 },	-- Ardenweald (scenario)
-				["g"] = appendGroups(LFR_WEAPON_GROUP, {
+				["groups"] = appendGroups(LFR_WEAPON_GROUP, {
 					i(180721),	-- Enchanted Dreamlight Runestag (MOUNT!)
 					i(182165),	-- Ardenmoth Soul
 				}),
@@ -940,21 +944,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 
 			--[[
 			q(61554, {	-- The Play's The Thing
-				-- pretty sure this was beta only
+				["sourceQuests"] = { 61553 },	-- Know Where to Strike
 				["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 				["coord"] = { 44.6, 56.2, ARDENWEALD },
-				["sourceQuests"] = { 61553 },	-- Know Where to Strike
+				-- pretty sure this was beta only
 			}),
 			-- Return to the Maw
 			q(60233, {	-- Souls of the Damned (Ardenweald)
+				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 			}),
 			q(61508, {	-- Soul Salvation (Ardenweald)
+				["sourceQuests"] = { 60233 },	-- Souls of the Damned
 				["provider"] = { "n", 158553 },	-- Flutterby
 				["coord"] = { 33.9, 43.5, THE_TRUNK },
-				["sourceQuests"] = { 60233 },	-- Souls of the Damned
 			}),
 			--]]
 		}),

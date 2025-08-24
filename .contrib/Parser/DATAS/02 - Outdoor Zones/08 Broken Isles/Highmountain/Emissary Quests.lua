@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(HIGHMOUNTAIN, {
 			n(EMISSARY_QUESTS, {
 				q(42233, {	-- Highmountain Tribes
-					["isWorldQuest"] = true,
 					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(157823, {	-- Highmountain Tribute
 							["sym"] = {
@@ -24,29 +24,29 @@ root(ROOTS.Zones, {
 						}),
 						un(REMOVED_FROM_GAME, i(137561, {	-- Highmountain Tribute
 							["sym"] = {{"select","itemID",
-								157823,    -- Highmountain Tribute
+								157823,	-- Highmountain Tribute
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(154904, {	-- Highmountain Tribute
 							["sym"] = {{"select","itemID",
-								157823,    -- Highmountain Tribute
+								157823,	-- Highmountain Tribute
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146748, {	-- Highmountain Tribute
 							["sym"] = {{"select","itemID",
-								157823,    -- Highmountain Tribute
+								157823,	-- Highmountain Tribute
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151465, {	-- Highmountain Tribute
 							["sym"] = {{"select","itemID",
-								157823,    -- Highmountain Tribute
+								157823,	-- Highmountain Tribute
 							}},
 						})),
 					},
 				}),
 				q(46743, bubbleDownSelf({ ["minReputation"] = { FACTION_HIGHMOUNTAIN_TRIBE, EXALTED }}, {	-- Supplies From Highmountain
-					["repeatable"] = true,
 					["provider"] = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(152104, {	-- Highmountain Supplies
 							i(147807),	-- Highmountain Elderhorn (MOUNT!)

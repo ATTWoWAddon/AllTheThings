@@ -5,9 +5,12 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/TransmogSet
     /// </summary>
-    internal class TransmogSet : IDBType
+    [DataModule]
+    public class TransmogSet : IDBType
     {
+        [ExportableData("setID")]
         public long ID { get; set; }
+        [Localize]
         public string Name_lang { get; set; }
         public long ClassMask { get; set; }
         public long TrackingQuestID { get; set; }
@@ -22,14 +25,6 @@ namespace ATT.DB.Types
         public long ConditionID { get; set; }
 
         private TypeFlags _flags => (TypeFlags)Flags;
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>
-            {
-                { "setID", ID },
-            };
-        }
 
         public bool IsIgnoreFlags() =>
             (_flags & TypeFlags.DoNotDisplay) == TypeFlags.DoNotDisplay;

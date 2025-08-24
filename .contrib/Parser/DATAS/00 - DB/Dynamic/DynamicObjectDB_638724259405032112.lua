@@ -1,17 +1,19 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[455204] = {
 		readable = "Salvage Crate",
 		model = 1979995,
 		text = {
 			en = "Salvage Crate",
-			es = "Salvage Crate",
-			de = "Salvage Crate",
-			fr = "Salvage Crate",
-			it = "Salvage Crate",
-			pt = "Salvage Crate",
-			ru = "Salvage Crate",
-			ko = "Salvage Crate",
-			cn = "Salvage Crate",
+			de = "Bergungskiste",
+			es = "Cajón rescatado",
+			mx = "Cajón rescatado",
+			fr = "Caisse de récupération",
+			it = "Cassa Recuperata",
+			pt = "Caixote de Resgate",
+			ru = "Ящик со спасенным добром",
+			ko = "인양된 상자",
+			cn = "打捞上来的箱子",
+			tw = "回收箱",
 		},
 	},
 })

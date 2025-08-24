@@ -7,6 +7,7 @@ PROTOCOL_INFERNO = createHeader({
 		de = "Protokoll Inferno",
 		fr = "Protocole Inferno",
 		-- it = "[Protocol Inferno]",
+		mx = "Protocolo Inferno",
 		pt = "Protocolo Inferno",
 		ru = "Протокол \"Пекло\"",
 		ko = "프로토콜 지옥불",

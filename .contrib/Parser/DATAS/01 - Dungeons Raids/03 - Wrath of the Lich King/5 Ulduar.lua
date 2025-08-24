@@ -33,8 +33,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 					}),
 					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-						["provider"] = { "o", 194555 },	-- Archivum Console
 						["sourceQuest"] = 13622,	-- Ancient History
+						["provider"] = { "o", 194555 },	-- Archivum Console
 						["groups"] = {
 							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
 								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
@@ -431,16 +431,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 					n(QUESTS, {
 						q(13614, {	-- Algalon
-							["qg"] = 33957,	-- Prospector Loren
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45791 },	-- Sigils of the Watchers
-							},
 							["sourceQuests"] = {
 								13606,	-- Freya's Sigil
 								13609,	-- Hodir's Sigil
 								13611,	-- Mimiron's Sigil
 								13610,	-- Thorim's Sigil
+							},
+							["qg"] = 33957,	-- Prospector Loren
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45791 },	-- Sigils of the Watchers
 							},
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
@@ -469,8 +469,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["provider"] = { "i", 45506 },	-- Archivum Data Disc
 						}),
 						q(13606, {	-- Freya's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Freya's Sigil
@@ -480,8 +480,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13609, {	-- Hodir's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Hodir's Sigil
@@ -491,8 +491,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13611, {	-- Mimiron's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
@@ -502,13 +502,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13607, {	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13604,	-- Archivum Data Disc
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 						}),
 						q(13610, {	-- Thorim's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Thorim's Sigil
@@ -671,8 +671,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								crit(10781),	-- Defeat Algalon the Observer
 							}),
 							ach(3316, {	-- Herald of the Titans
+								["description"] = "While your current character may now be too high level to earn it, it's good for players to know it exist.",
 								-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-								-- #if AFTER SHADOWLANDS
+								-- #if AFTER SL
 								["lockCriteria"] = { 1, "lvl", 31 },
 								-- #else
 								["lockCriteria"] = { 1, "lvl", 80 },
@@ -1124,7 +1125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2952),	-- With Open Arms (25 player)
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(125, {	-- <Name> the Celestial Defender
 									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1132,7 +1133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
 								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1255,7 +1256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(125, {	-- <Name> the Celestial Defender
 									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1263,7 +1264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
 								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1286,8 +1287,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 							}),
 							q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-								["provider"] = { "o", 194555 },	-- Archivum Console
 								["sourceQuest"] = 13622,	-- Ancient History
+								["provider"] = { "o", 194555 },	-- Archivum Console
 								["groups"] = {
 									objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
 										["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
@@ -1301,15 +1302,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					})),
 					n(QUESTS, {
 						q(13818, {	-- Heroic: Algalon
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45855 },	-- Sigils of the Watchers
-							},
 							["sourceQuests"] = {
 								13821,	-- Heroic: Freya's Sigil
 								13822,	-- Heroic: Hodir's Sigil
 								13824,	-- Heroic: Mimiron's Sigil
 								13823,	-- Heroic: Thorim's Sigil
+							},
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45855 },	-- Sigils of the Watchers
 							},
 							["groups"] = {
 								i(45798),	-- Heroic Celestial Planetarium Key
@@ -1341,8 +1342,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
 						}),
 						q(13821, {	-- Heroic: Freya's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Freya's Sigil
 									["provider"] = { "i", 45814 },	-- Freya's Sigil
@@ -1351,8 +1352,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13822, {	-- Heroic: Hodir's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Hodir's Sigil
 									["provider"] = { "i", 45815 },	-- Hodir's Sigil
@@ -1361,8 +1362,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13824, {	-- Heroic: Mimiron's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
 									["provider"] = { "i", 45816 },	-- Mimiron's Sigil
@@ -1371,12 +1372,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13816, {	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+							["qg"] = 33957,	-- Prospector Loren
 						}),
 						q(13823, {	-- Heroic: Thorim's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Thorim's Sigil
 									["provider"] = { "i", 45817 },	-- Thorim's Sigil
@@ -1432,13 +1433,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
 							i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
 							i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
-							i(45104),	-- Pattern: Cord of the White Dawn
+							i(45104),	-- Pattern: Cord of the White Dawn (RECIPE!)
 							i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
 							i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
 							i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
-							i(45102),	-- Pattern: Sash of Ancient Power
-							i(45105),	-- Pattern: Savior's Slippers
-							i(45103),	-- Pattern: Spellslinger's Slippers
+							i(45102),	-- Pattern: Sash of Ancient Power (RECIPE!)
+							i(45105),	-- Pattern: Savior's Slippers (RECIPE!)
+							i(45103),	-- Pattern: Spellslinger's Slippers (RECIPE!)
 							i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
 							i(45088),	-- Plans: Belt of the Titans (RECIPE!)
 							i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
@@ -1987,16 +1988,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(13614, {	-- Algalon
-						["qg"] = 33957,	-- Prospector Loren
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45791 },	-- Sigils of the Watchers
-						},
 						["sourceQuests"] = {
 							13606,	-- Freya's Sigil
 							13609,	-- Hodir's Sigil
 							13611,	-- Mimiron's Sigil
 							13610,	-- Thorim's Sigil
+						},
+						["qg"] = 33957,	-- Prospector Loren
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45791 },	-- Sigils of the Watchers
 						},
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
@@ -2025,8 +2026,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["provider"] = { "i", 45506 },	-- Archivum Data Disc
 					}),
 					q(13606, {	-- Freya's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Freya's Sigil
@@ -2036,8 +2037,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13609, {	-- Hodir's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Hodir's Sigil
@@ -2047,8 +2048,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13611, {	-- Mimiron's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
@@ -2058,13 +2059,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13607, {	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 					}),
 					q(13610, {	-- Thorim's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Thorim's Sigil
@@ -2075,15 +2076,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 
 					q(13818, {	-- Heroic: Algalon
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45855 },	-- Sigils of the Watchers
-						},
 						["sourceQuests"] = {
 							13821,	-- Heroic: Freya's Sigil
 							13822,	-- Heroic: Hodir's Sigil
 							13824,	-- Heroic: Mimiron's Sigil
 							13823,	-- Heroic: Thorim's Sigil
+						},
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45855 },	-- Sigils of the Watchers
 						},
 						["groups"] = {
 							i(45798),	-- Heroic Celestial Planetarium Key
@@ -2115,8 +2116,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
 					}),
 					q(13821, {	-- Heroic: Freya's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Freya's Sigil
 								["provider"] = { "i", 45814 },	-- Freya's Sigil
@@ -2125,8 +2126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13822, {	-- Heroic: Hodir's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Hodir's Sigil
 								["provider"] = { "i", 45815 },	-- Hodir's Sigil
@@ -2135,8 +2136,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13824, {	-- Heroic: Mimiron's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
 								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
@@ -2145,12 +2146,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13816, {	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+						["qg"] = 33957,	-- Prospector Loren
 					}),
 					q(13823, {	-- Heroic: Thorim's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Thorim's Sigil
 								["provider"] = { "i", 45817 },	-- Thorim's Sigil
@@ -2213,13 +2214,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45096),	-- Pattern: Blue Belt of Chaos (RECIPE!)
 						i(45095),	-- Pattern: Boots of Living Scale (RECIPE!)
 						i(45101),	-- Pattern: Boots of Wintry Endurance (RECIPE!)
-						i(45104),	-- Pattern: Cord of the White Dawn
+						i(45104),	-- Pattern: Cord of the White Dawn (RECIPE!)
 						i(45098),	-- Pattern: Death-Warmed Belt (RECIPE!)
 						i(45099),	-- Pattern: Footpads of Silence (RECIPE!)
 						i(45097),	-- Pattern: Lightning Grounded Boots (RECIPE!)
-						i(45102),	-- Pattern: Sash of Ancient Power
-						i(45105),	-- Pattern: Savior's Slippers
-						i(45103),	-- Pattern: Spellslinger's Slippers
+						i(45102),	-- Pattern: Sash of Ancient Power (RECIPE!)
+						i(45105),	-- Pattern: Savior's Slippers (RECIPE!)
+						i(45103),	-- Pattern: Spellslinger's Slippers (RECIPE!)
 						i(45089),	-- Plans: Battlelord's Plate Boots (RECIPE!)
 						i(45088),	-- Plans: Belt of the Titans (RECIPE!)
 						i(45092),	-- Plans: Indestructible Plate Girdle (RECIPE!)
@@ -2444,7 +2445,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3316, {	-- Herald of the Titans
 							-- If Classic actually goes to WoD, feel free to add variations of lock criteria for the multiple level squishes
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							["lockCriteria"] = { 1, "lvl", 31 },
 							-- character above 30 without account-wide achievements shouldn't see forever-incomplete achievement
 							["OnUpdate"] = [[function(t) if _.Level > 30 and not _.Settings.AccountWide.Achievements then t.collectible = false; end end]],

@@ -115,7 +115,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(64394),	-- Draenei Tome
 		i(64392),	-- Orc Blood Text
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENEI,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, {
 			["provider"] = { "o", 207188 },	-- Draenei Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -126,19 +126,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				ZANGARMARSH,
 			},
 			["groups"] = {
-				i(64440),	-- Anklet with Golden Bells
-				i(64456),	-- Arrival of the Naaru (TOY!)
-				i(64453),	-- Baroque Sword Scabbard
-				i(64442),	-- Carved Harp of Exotic Wood
-				i(64455),	-- Dignified Portrait
-				i(64454),	-- Fine Crystal Candelabra
-				i(64458),	-- Plated Elekk Goad
-				i(64444),	-- Scepter of the Nathrezim
-				i(64443),	-- Strange Silver Paperweight
-				i(64457),	-- The Last Relic of Argus
+				i(64440, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Anklet with Golden Bells
+				i(64456, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,124}}}),	-- Arrival of the Naaru (TOY!)
+				i(64453, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Baroque Sword Scabbard
+				i(64442, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Carved Harp of Exotic Wood
+				i(64455, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Dignified Portrait
+				i(64454, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,44}}}),	-- Fine Crystal Candelabra
+				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
+				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
+				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_ORC, sharedData({["cost"]={{"c",ARCH_CURRENCY_ORC,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
 			["provider"] = { "o", 207187 },	-- Orc Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -147,18 +147,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				TEROKKAR_FOREST,
 			},
 			["groups"] = {
-				i(64436),	-- Fiendish Whip
-				i(64421),	-- Fierce Wolf Figurine
-				i(64418),	-- Gray Candle Stub
-				i(64644),	-- Headdress of the First Shaman
-				i(64417),	-- Maul of Stone Guard Mur'og
-				i(64419),	-- Rusted Steak Knife
-				i(64420),	-- Scepter of Nekros Skullcrusher
-				i(64438),	-- Skull Drinking Cup
-				i(64437),	-- Tile of Glazed Clay
-				i(64389),	-- Tiny Bronze Scorpion
+				i(64436, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fiendish Whip
+				i(64421, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fierce Wolf Figurine
+				i(64418, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Gray Candle Stub
+				i(64644, {["cost"]={{"c",ARCH_CURRENCY_ORC,130}}}),	-- Headdress of the First Shaman
+				i(64417, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Maul of Stone Guard Mur'og
+				i(64419, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Rusted Steak Knife
+				i(64420, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Scepter of Nekros Skullcrusher
+				i(64438, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Skull Drinking Cup
+				i(64437, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tile of Glazed Clay
+				i(64389, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tiny Bronze Scorpion
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
@@ -399,13 +399,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(27659),	-- Warp Burger
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
-			i(22445),	-- Arcane Dust
-			i(22446),	-- Greater Planar Essence
-			i(22449),	-- Large Prismatic Shard
-			i(22447),	-- Lesser Planar Essence
-			i(22448),	-- Small Prismatic Shard
-			i(22450),	-- Void Crystal
+		header(HEADERS.Spell, 13262, {	-- Disenchant
+			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
+			-- Dust:
+			i(22445, {	-- Arcane Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 31-32.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",
+				-- #endif
+			}),
+			-- Essences:
+			i(22446, {	-- Greater Planar Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 31-32, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(22447, {	-- Lesser Planar Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 29-31, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 80-98, except shields and off-hand frills.",
+				-- #endif
+			}),
+			-- Shards and crystals:
+			i(22449, {	-- Large Prismatic Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 31-32.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 100-115.",
+				-- #endif
+			}),
+			i(22448, {	-- Small Prismatic Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 29-31.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality TBC gear within the ilvl bracket 68-97.",
+				-- #endif
+			}),
+			i(22450, {	-- Void Crystal
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 31-34.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all epic (purple) quality TBC gear within the ilvl bracket 100-141.",
+				-- #endif
+			}),
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, n(ARMOR_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38944),	-- Enchant Boots - Boar's Speed
@@ -430,11 +470,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(38928),	-- Enchant Chest - Major Versatility / TBC: Major Spirit
 			i(38929),	-- Enchant Chest - Versatility Prime / TBC: Restore Mana Prime
 			i(38940),	-- Enchant Cloak - Greater Agility
-			i(38941, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Arcane Resistance
+			i(38941, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Arcane Resistance
 			i(39000),	-- Enchant Cloak - Greater Dodge / TBC: Steelweave
-			i(38942, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Shadow Resistance
+			i(38942, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Shadow Resistance
 			i(38914),	-- Enchant Cloak - Major Armor
-			i(38915, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Major Resistance
+			i(38915, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Major Resistance
 			i(38939),	-- Enchant Cloak - Empowerment
 			-- #if AFTER BFA
 			i(38895),	-- Enchant Cloak - Dodge
@@ -461,20 +501,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		})),
 		filter(MISC, {
 			i(22460),	-- Prismatic Sphere
-			i(22462, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Adamantite Rod
-			i(22463, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Eternium Rod
-			i(22461, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Fel Iron Rod
 			i(22521),	-- Superior Mana Oil
 			i(22522),	-- Superior Wizard Oil
 			i(22459),	-- Void Sphere
 		}),
+		filter(PROFESSION_EQUIPMENT, sharedDataSelf({ ["timeline"] = { REMOVED_5_0_4 }}, {
+			i(22462),	-- Runed Adamantite Rod
+			i(22463),	-- Runed Eternium Rod
+			i(22461),	-- Runed Fel Iron Rod
+		})),
 		applyclassicphase(WRATH_PHASE_ONE, n(WEAPON_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38949),	-- Enchant Shield - Armor / TBC: Resilience
 			i(38905),	-- Enchant Shield - Intellect
 			i(38904),	-- Enchant Shield - Lesser Dodge / TBC: Tough Shield
 			i(38945),	-- Enchant Shield - Major Stamina
 			i(38906),	-- Enchant Shield - Parry / TBC: Shield Block
-			i(38907, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Shield - Resistance
+			i(38907, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Shield - Resistance
 			i(38927),	-- Enchant Weapon - Battlemaster
 			i(38948),	-- Enchant Weapon - Executioner
 			i(38998),	-- Enchant Weapon - Deathfrost
@@ -633,7 +675,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(21991),	-- Heavy Netherweave Bandage
 		i(21990),	-- Netherweave Bandage
@@ -869,7 +911,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 	}),
 	prof(HERBALISM, {
-		spell(2366, {	-- Herb Gathering
+		header(HEADERS.Spell, 2366, {	-- Herb Gathering
 			-- Herbs
 			i(22790, {	-- Ancient Lichen
 				["maps"] = {
@@ -1124,6 +1166,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
+		-- Inks and reagents:
+		header(HEADERS.Spell, 51005, {	-- Milling
+			i(43108, {	-- Ebon Pigment
+				["providers"] = {
+					{ "i", 22790 },	-- Ancient Lichen
+					{ "i", 22786 },	-- Dreaming Glory
+					{ "i", 22785 },	-- Felweed
+					{ "i", 22793 },	-- Mana Thistle
+					{ "i", 22792 },	-- Nightmare Vine
+					{ "i", 22787 },	-- Ragveil
+					{ "i", 22789 },	-- Terocone
+				},
+			}),
+			i(39342, {	-- Nether Pigment
+				["providers"] = {
+					{ "i", 22790 },	-- Ancient Lichen
+					{ "i", 22786 },	-- Dreaming Glory
+					{ "i", 22785 },	-- Felweed
+					{ "i", 22793 },	-- Mana Thistle
+					{ "i", 22792 },	-- Nightmare Vine
+					{ "i", 22787 },	-- Ragveil
+					{ "i", 22789 },	-- Terocone
+				},
+			}),
+		}),
+		filter(REAGENTS, {
+			i(43125),	-- Darkflame Ink
+			i(43124),	-- Ethereal Ink
+		}),
+		-- Non-reagent crafts:
 		-- #if AFTER WOD
 		filter(GLYPHS, {
 			i(42743, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
@@ -1134,6 +1206,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(43378, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Safe Fall
 		}),
 		-- #endif
+		filter(HELD_IN_OFF_HAND, {
+			i(43667),	-- Book of Clever Tricks
+			i(43666),	-- Hellfire Tome
+		}),
 		category(106, {	-- Tarot Cards
 			i(44317, {	-- Greater Darkmoon Card
 				-- Blessings Deck
@@ -1177,13 +1253,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(31893),	-- Eight of Storms
 			}),
 		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(43667),	-- Book of Clever Tricks
-			i(43666),	-- Hellfire Tome
-		}),
 	}),
 	-- #endif
 	prof(JEWELCRAFTING, {
+		header(HEADERS.Spell, 31212, {	-- Prospecting
+			-- Note: Epiq quality (purple) gems CANNOT be obtained from prospecting, see Mining.
+			["groups"] = appendAllGroups(
+				sharedData({	-- Uncommon quality (green) gems:
+					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting.",
+					["providers"] = {
+						{ "i", 23425 },	-- Adamantite Ore
+						{ "i", 23424 },	-- Fel Iron Ore
+					},
+				}, {
+					i(23117),	-- Azure Moonstone
+					i(23077),	-- Blood Garnet
+					i(23079),	-- Deep Perigot
+					i(21929),	-- Flame Spessarite
+					i(23112),	-- Golden Draenite
+					i(23107),	-- Shadow Draenite
+				}),
+				sharedData({	-- Rare quality (blue) gems:
+					-- #if AFTER CATA
+					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate. Mining Ancient Gem Veins in the raid Battle for Mount Hyjal is also a reliable source.",
+					-- #else
+					["description"] = "This gem is most reliably obtained from prospecting ore with Jewelcrafting, Adamatite Ores offering the better drop rate.",
+					-- #endif
+					["providers"] = {
+						{ "i", 23425 },	-- Adamantite Ore
+						{ "i", 23424 },	-- Fel Iron Ore
+					},
+				}, {
+					i(23440),	-- Dawnstone
+					i(23436),	-- Living Ruby
+					i(23441),	-- Nightseye
+					i(23439),	-- Noble Topaz
+					i(23438),	-- Star of Elune
+					i(23437),	-- Talasite
+				})
+			),
+		}),
 		category(868, {	-- Reagents
 			i(31079),	-- Mercurial Adamantite
 		}),
@@ -1453,7 +1562,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			-- Nodes
 			o(181556, {	-- Adamantite Deposit
 				["maps"] = {
@@ -1465,6 +1574,31 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					TEROKKAR_FOREST,
 					ZANGARMARSH,
 				},
+			}),
+			o(185557, {	-- Ancient Gem Vein
+				["maps"] = { THE_BATTLE_FOR_MOUNT_HYJAL },
+				["timeline"] = { ADDED_2_1_0 },
+				["groups"] = appendAllGroups(
+					{	-- Rare quality (blue) gems:
+						i(23440),	-- Dawnstone
+						i(23436),	-- Living Ruby
+						i(23441),	-- Nightseye
+						i(23439),	-- Noble Topaz
+						i(23438),	-- Star of Elune
+						i(23437),	-- Talasite
+					},
+					sharedData({
+						["timeline"] = { ADDED_2_1_0 },
+					}, {
+						-- Epiq quality (purple) gems:
+						i(32227),	-- Crimson Spinel
+						i(32228),	-- Empyrean Sapphire
+						i(32229),	-- Lionseye
+						i(32231),	-- Pyrestone
+						i(32249),	-- Seaspray Emerald
+						i(32230),	-- Shadowsong Amethyst
+					})
+				),
 			}),
 			o(181555, {	-- Fel Iron Deposit
 				["maps"] = {
@@ -1625,34 +1759,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(23437),	-- Talasite
 			--]]
 		}),
-		spell(2656, {	-- Smelting
-			i(23446, {    -- Adamantite Bar
-				["cost"] = ClassicCost({ { "i", 23425, 2 } }),    -- Adamantite Ore
+		header(HEADERS.Spell, 2656, {	-- Smelting
+			i(23446, {	-- Adamantite Bar
+				["cost"] = ClassicCost({ { "i", 23425, 2 } }),	-- Adamantite Ore
 			}),
-			i(23447, {    -- Eternium Bar
-				["cost"] = ClassicCost({ { "i", 23427, 2 } }),    -- Eternium Ore
+			i(23447, {	-- Eternium Bar
+				["cost"] = ClassicCost({ { "i", 23427, 2 } }),	-- Eternium Ore
 			}),
-			i(23445, {    -- Fel Iron Bar
-				["cost"] = ClassicCost({ { "i", 23424, 2 } }),    -- Fel Iron Ore
+			i(23445, {	-- Fel Iron Bar
+				["cost"] = ClassicCost({ { "i", 23424, 2 } }),	-- Fel Iron Ore
 			}),
-			i(23448, {    -- Felsteel Bar
+			i(23448, {	-- Felsteel Bar
 				["cost"] = ClassicCost({
 					{ "i", 23445, 3 },	-- Fel Iron Bar
 					{ "i", 23447, 2 },	-- Eternium Bar
 				}),
 			}),
-			i(23573, {    -- Hardened Adamantite Bar
-				["cost"] = ClassicCost({ { "i", 23446, 10 } }),    -- Adamantite Bar
+			i(23573, {	-- Hardened Adamantite Bar
+				["cost"] = ClassicCost({ { "i", 23446, 10 } }),	-- Adamantite Bar
 			}),
-			applyclassicphase(TBC_PHASE_FIVE, i(35128, {    -- Hardened Khorium Bar
+			applyclassicphase(TBC_PHASE_FIVE, i(35128, {	-- Hardened Khorium Bar
 				["timeline"] = {ADDED_2_4_0},
 				["cost"] = ClassicCost({
-					{ "i", 23449, 3 },    -- Khorium Bar
-					{ "i", 23573, 1 },    -- Hardened Adamantite Bar
+					{ "i", 23449, 3 },	-- Khorium Bar
+					{ "i", 23573, 1 },	-- Hardened Adamantite Bar
 				}),
 			})),
-			i(23449, {    -- Khorium Bar
-				["cost"] = ClassicCost({ { "i", 23426, 2 } }),    -- Khorium Ore
+			i(23449, {	-- Khorium Bar
+				["cost"] = ClassicCost({ { "i", 23426, 2 } }),	-- Khorium Ore
 			}),
 		}),
 	}),
@@ -1664,9 +1798,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(22055),	-- Wound Poison V
 	})),
 	prof(SKINNING, {
-		["description"] = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leader is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+		["description"] = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
 		["groups"] = {
-			i(29539, {    -- Cobra Scales
+			i(29539, {	-- Cobra Scales
 				["crs"] = {
 					19784,	-- Coilskar Cobra
 					23020,	-- Shadow Serpent
@@ -1683,7 +1817,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 45.8, 28.6, SHADOWMOON_VALLEY },	-- Coilskar Point
 				},
 			}),
-			i(25699, {    -- Crystal-Infused Leather
+			i(25699, {	-- Crystal-Infused Leather
 				["crs"] = {
 					18461,	-- Dampscale Basilisk
 					18463,	-- Dampscale Devourer
@@ -1740,7 +1874,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 				["description"] = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales",
 			}),
-			i(25707, {    -- Fel Hide
+			i(25707, {	-- Fel Hide
 				["crs"] = {
 					19852,	-- Artifact Seeker
 					23219,	-- Blackwind Warp Chaser
@@ -1830,7 +1964,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(21887),	-- Knothide Leather
 				},
 			}),
-			i(29548, {    -- Nether Dragonscales
+			i(29548, {	-- Nether Dragonscales
 				["description"] = "Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction.",
 				["crs"] = {
 					21722,	-- Enslaved Netherwing Drake
@@ -1845,7 +1979,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(35229),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			i(25708, {    -- Thick Clefthoof Leather
+			i(25708, {	-- Thick Clefthoof Leather
 				["description"] = "Clefthoofs can be found all over Nagrand.",
 				["crs"] = {
 					17133,	-- Aged Clefthoof
@@ -1855,7 +1989,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 				["maps"] = { NAGRAND },
 			}),
-			i(29547, {    -- Wind Scales
+			i(29547, {	-- Wind Scales
 				["crs"] = {
 					20502,	-- Eclipsion Dragonhawk
 					21123,	-- Felsworn Scalewing
@@ -1874,8 +2008,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		},
 	}),
 	prof(TAILORING, {
-		-- #if BEFORE 4.0.1.12984
-		prof(26798, {	-- Mooncloth Tailoring
+		-- #if BEFORE CATA
+		prof(MOONCLOTH_TAILORING, {
 			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 			["groups"] = {
 				i(21873),	-- Primal Mooncloth Belt
@@ -1883,7 +2017,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(21874),	-- Primal Mooncloth Shoulders
 			},
 		}),
-		prof(26801, {	-- Shadoweave Tailoring
+		prof(SHADOWEAVE_TAILORING, {
 			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 			["groups"] = {
 				i(21869),	-- Frozen Shadoweave Shoulders
@@ -1891,7 +2025,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(21870),	-- Frozen Shadoweave Boots
 			},
 		}),
-		prof(26797, {	-- Spellfire Tailoring
+		prof(SPELLFIRE_TAILORING, {
 			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 			["groups"] = {
 				i(21846),	-- Spellfire Belt
@@ -1900,7 +2034,102 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		-- #endif
-		category(1000, {	-- Materials
+		n(ARMOR, {
+			i(21867),	-- Arcanoweave Boots
+			i(21866),	-- Arcanoweave Bracers
+			i(21868),	-- Arcanoweave Robe
+			i(24267),	-- Battlecast Hood
+			i(24263),	-- Battlecast Pants
+			applyclassicphase(TBC_PHASE_TWO, i(30038, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of Blasting
+			applyclassicphase(TBC_PHASE_TWO, i(30036, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of the Long Road
+			i(24257),	-- Black Belt of Knowledge
+			i(24251),	-- Blackstrike Bracers
+			applyclassicphase(TBC_PHASE_TWO, i(30037, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of Blasting
+			applyclassicphase(TBC_PHASE_TWO, i(30035, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of the Long Road
+			i(24250),	-- Bracers of Havok
+			applyclassicphase(TBC_PHASE_THREE, i(32586, {["timeline"] = {ADDED_2_1_0}})),	-- Bracers of Nimble Thought
+			i(30831),	-- Cloak of Arcane Evasion
+			i(24253),	-- Cloak of Eternity
+			i(24252),	-- Cloak of the Black Void
+			i(30837),	-- Flameheart Bracers
+			i(30838),	-- Flameheart Gloves
+			i(30839),	-- Flameheart Vest
+			-- #if AFTER CATA
+			i(21870),	-- Frozen Shadoweave Boots
+			i(21871),	-- Frozen Shadoweave Robe
+			i(21869),	-- Frozen Shadoweave Shoulders
+			-- #endif
+			i(24256),	-- Girdle of Ruination
+			applyclassicphase(TBC_PHASE_FIVE, i(34367, {["timeline"] = {ADDED_2_4_0}})),	-- Hands of Eternal Light
+			i(21860),	-- Imbued Netherweave Boots
+			i(21859),	-- Imbued Netherweave Pants
+			i(21861),	-- Imbued Netherweave Robe
+			i(21862),	-- Imbued Netherweave Tunic
+			i(24260),	-- Manaweave Cloak
+			applyclassicphase(TBC_PHASE_THREE, i(32587, {["timeline"] = {ADDED_2_1_0}})),	-- Mantle of Nimble Thought
+			i(21850),	-- Netherweave Belt
+			i(21853),	-- Netherweave Boots
+			i(21849),	-- Netherweave Bracers
+			i(21851),	-- Netherweave Gloves
+			i(21852),	-- Netherweave Pants
+			i(21854),	-- Netherweave Robe
+			i(21855),	-- Netherweave Tunic
+			applyclassicphase(TBC_PHASE_THREE, i(32420, {["timeline"] = {ADDED_2_1_0}})),	-- Night's End
+			-- #if AFTER CATA
+			i(21873),	-- Primal Mooncloth Belt
+			i(21875),	-- Primal Mooncloth Robe
+			i(21874),	-- Primal Mooncloth Shoulders
+			-- #endif
+			i(24258),	-- Resolute Cape
+			applyclassicphase(TBC_PHASE_FIVE, i(34365, {["timeline"] = {ADDED_2_4_0}})),	-- Robe of Eternal Light
+			i(21863),	-- Soulcloth Gloves
+			i(21864),	-- Soulcloth Shoulders
+			i(21865),	-- Soulcloth Vest
+			applyclassicphase(TBC_PHASE_THREE, i(32392, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Bracers
+			applyclassicphase(TBC_PHASE_THREE, i(32390, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Girdle
+			applyclassicphase(TBC_PHASE_THREE, i(32389, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Leggings
+			applyclassicphase(TBC_PHASE_THREE, i(32391, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Slippers
+			-- #if AFTER CATA
+			i(21846),	-- Spellfire Belt
+			i(21847),	-- Spellfire Gloves
+			i(21848),	-- Spellfire Robe
+			-- #endif
+			i(24266),	-- Spellstrike Hood
+			i(24262),	-- Spellstrike Pants
+			applyclassicphase(TBC_PHASE_FIVE, i(34366, {["timeline"] = {ADDED_2_4_0}})),	-- Sunfire Handwraps
+			applyclassicphase(TBC_PHASE_FIVE, i(34364, {["timeline"] = {ADDED_2_4_0}})),	-- Sunfire Robe
+			applyclassicphase(TBC_PHASE_THREE, i(32585, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftheal Mantle
+			applyclassicphase(TBC_PHASE_THREE, i(32584, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftheal Wraps
+			i(24249),	-- Unyielding Bracers
+			i(24255),	-- Unyielding Girdle
+			i(24259),	-- Vengeance Wrap
+			i(24254),	-- White Remedy Cape
+			i(24264),	-- Whitemend Hood
+			i(24261),	-- Whitemend Pants
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(24276),	-- Golden Spellthread
+			i(24273),	-- Mystic Spellthread
+			i(24274),	-- Runic Spellthread
+			i(24275),	-- Silver Spellthread
+		}),
+		filter(BAGS, {
+			i(24270),	-- Bag of Jewels
+			i(21872),	-- Ebon Shadowbag
+			i(21843),	-- Imbued Netherweave Bag
+			i(38225, {["timeline"] = {ADDED_2_4_3}}),	-- Mycah's Botanical Bag
+			i(21841),	-- Netherweave Bag
+			i(21876),	-- Primal Mooncloth Bag
+			i(21858),	-- Spellfire Bag
+		}),
+		filter(MISC, {
+			-- #if AFTER BFA
+			i(21991),	-- Heavy Netherweave Bandage
+			i(21990),	-- Netherweave Bandage
+			-- #endif
+			i(24268),	-- Netherweave Net
+		}),
+		filter(REAGENTS, {
 			i(21842),	-- Bolt of Imbued Netherweave
 			i(21840),	-- Bolt of Netherweave
 			i(21844),	-- Bolt of Soulcloth
@@ -1929,125 +2158,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(24271, {	-- Spellcloth
 				["maps"] = { NETHERSTORM },
 			}),
-		}),
-		category(1001, {	-- Spellthreads
-			i(24276),	-- Golden Spellthread
-			i(24273),	-- Mystic Spellthread
-			i(24274),	-- Runic Spellthread
-			i(24275),	-- Silver Spellthread
-		}),
-		category(1002, {	-- Bags
-			i(24270),	-- Bag of Jewels
-			i(21872),	-- Ebon Shadowbag
-			i(21843),	-- Imbued Netherweave Bag
-			i(38225),	-- Mycah's Botanical Bag
-			i(21841),	-- Netherweave Bag
-			i(21876),	-- Primal Mooncloth Bag
-			i(21858),	-- Spellfire Bag
-		}),
-		category(1003, {	-- Hats & Hoods
-			i(24267),	-- Battlecast Hood
-			i(24266),	-- Spellstrike Hood
-			i(24264),	-- Whitemend Hood
-		}),
-		category(1004, {	-- Shoulders
-			-- #if AFTER 4.0.1.12984
-			i(21869),	-- Frozen Shadoweave Shoulders
-			-- #endif
-			applyclassicphase(TBC_PHASE_THREE, i(32587)),	-- Mantle of Nimble Thought
-			-- #if AFTER 4.0.1.12984
-			i(21874),	-- Primal Mooncloth Shoulders
-			-- #endif
-			i(21864),	-- Soulcloth Shoulders
-			applyclassicphase(TBC_PHASE_THREE, i(32585)),	-- Swiftheal Mantle
-		}),
-		category(1005, {	-- Robes & Tunics
-			i(21868),	-- Arcanoweave Robe
-			i(30839),	-- Flameheart Vest
-			-- #if AFTER 4.0.1.12984
-			i(21871),	-- Frozen Shadoweave Robe
-			-- #endif
-			i(21861),	-- Imbued Netherweave Robe
-			i(21862),	-- Imbued Netherweave Tunic
-			i(21854),	-- Netherweave Robe
-			i(21855),	-- Netherweave Tunic
-			-- #if AFTER 4.0.1.12984
-			i(21875),	-- Primal Mooncloth Robe
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34365)),	-- Robe of Eternal Light
-			i(21865),	-- Soulcloth Vest
-			-- #if AFTER 4.0.1.12984
-			i(21848),	-- Spellfire Robe
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34364)),	-- Sunfire Robe
-		}),
-		category(1006, {	-- Bracers
-			i(21866),	-- Arcanoweave Bracers
-			i(24251),	-- Blackstrike Bracers
-			i(24250),	-- Bracers of Havok
-			applyclassicphase(TBC_PHASE_THREE, i(32586)),	-- Bracers of Nimble Thought
-			i(30837),	-- Flameheart Bracers
-			i(21849),	-- Netherweave Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32392)),	-- Soulguard Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32584)),	-- Swiftheal Wraps
-			i(24249),	-- Unyielding Bracers
-		}),
-		category(1008, {	-- Gloves
-			i(30838),	-- Flameheart Gloves
-			applyclassicphase(TBC_PHASE_FIVE, i(34367)),	-- Hands of Eternal Light
-			i(21851),	-- Netherweave Gloves
-			i(21863),	-- Soulcloth Gloves
-			-- #if AFTER 4.0.1.12984
-			i(21847),	-- Spellfire Gloves
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34366)),	-- Sunfire Handwraps
-		}),
-		category(1007, {	-- Belts
-			applyclassicphase(TBC_PHASE_TWO, i(30038)),	-- Belt of Blasting
-			applyclassicphase(TBC_PHASE_TWO, i(30036)),	-- Belt of the Long Road
-			i(24257),	-- Black Belt of Knowledge
-			i(24256),	-- Girdle of Ruination
-			i(21850),	-- Netherweave Belt
-			-- #if AFTER 4.0.1.12984
-			i(21873),	-- Primal Mooncloth Belt
-			-- #endif
-			applyclassicphase(TBC_PHASE_THREE, i(32390)),	-- Soulguard Girdle
-			-- #if AFTER 4.0.1.12984
-			i(21846),	-- Spellfire Belt
-			-- #endif
-			i(24255),	-- Unyielding Girdle
-		}),
-		category(1009, {	-- Pants
-			i(24263),	-- Battlecast Pants
-			i(21859),	-- Imbued Netherweave Pants
-			i(21852),	-- Netherweave Pants
-			applyclassicphase(TBC_PHASE_THREE, i(32389)),	-- Soulguard Leggings
-			i(24262),	-- Spellstrike Pants
-			i(24261),	-- Whitemend Pants
-		}),
-		category(1010, {	-- Boots
-			i(21867),	-- Arcanoweave Boots
-			applyclassicphase(TBC_PHASE_TWO, i(30037)),	-- Boots of Blasting
-			applyclassicphase(TBC_PHASE_TWO, i(30035)),	-- Boots of the Long Road
-			-- #if AFTER 4.0.1.12984
-			i(21870),	-- Frozen Shadoweave Boots
-			-- #endif
-			i(21860),	-- Imbued Netherweave Boots
-			i(21853),	-- Netherweave Boots
-			applyclassicphase(TBC_PHASE_THREE, i(32391)),	-- Soulguard Slippers
-		}),
-		category(1011, {	-- Cloaks
-			i(30831),	-- Cloak of Arcane Evasion
-			i(24253),	-- Cloak of Eternity
-			i(24252),	-- Cloak of the Black Void
-			i(24260),	-- Manaweave Cloak
-			applyclassicphase(TBC_PHASE_THREE, i(32420)),	-- Night's End
-			i(24258),	-- Resolute Cape
-			i(24259),	-- Vengeance Wrap
-			i(24254),	-- White Remedy Cape
-		}),
-		category(1012, {	-- Nets
-			i(24268),	-- Netherweave Net
 		}),
 	}),
 }))));

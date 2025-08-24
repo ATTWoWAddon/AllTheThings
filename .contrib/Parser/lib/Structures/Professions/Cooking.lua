@@ -119,7 +119,56 @@ CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	r(88006),	-- Blackened Surprise
 	r(88015),	-- Darkbrew Lager
 }));
-MOP_COOKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
+	["providers"] = {
+		{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>
+		{ "n", 4223},	-- Fyldan <Cooking Supplies> [TBC+] / <Cooking Supplier>
+		{ "n", 49701},	-- Jon Casper <Sous Chef>
+		{ "n", 3027},	-- Naal Mistrunner <Cooking Supplies>
+		{ "n", 4553},	-- Ronald Burch <Cooking Supplies> [TBC+] / <Cooking Supplier>
+		{ "n", 49737},	-- Shazdar <Sous Chef>
+	},
+	["timeline"] = { ADDED_4_0_3 },
+},{
+	chefsaward(2, i(65513, {	-- Crate of Tasty Meat
+	--	i(62786),	-- Cocoa Beans
+	})),
+	chefsaward(1, i(68689, {	-- Imported Supplies
+		i(62786),	-- Cocoa Beans
+	})),
+	chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+	chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+	chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+	chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+	chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+	chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+	chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+	chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+	chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+	chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+	chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+	chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+	chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+	chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+	chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+	chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+	chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+	chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+	chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+	chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+	chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+	chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+		["timeline"] = { ADDED_4_0_6 },
+	})),
+	chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+	chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+	chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+	chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+	chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+	chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+	chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
+}));
+MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(104381, {	-- Cooking (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -149,42 +198,42 @@ MOP_COOKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 	r(125121),	-- Wildfowl Ginseng Soup
 	r(124224),	-- Yak Cheese Curds
 }));
-WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31479 } }, {
+WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31479 } }, {
 	r(125602),	-- Banquet of the Brew
 	r(124052),	-- Ginseng Tea
 	r(125603),	-- Great Banquet of the Brew
 	r(124053),	-- Jade Witch Brew
 	r(124054),	-- Mad Brewer's Breakfast
 }));
-WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31311 } }, {
+WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31311 } }, {
 	r(125141),	-- Banquet of the Grill
 	r(104300),	-- Black Pepper Ribs and Shrimp
 	r(104298),	-- Charbroiled Tiger Steak
 	r(104299),	-- Eternal Blossom Fish
 	r(125142),	-- Great Banquet of the Grill
 }));
-WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31478 } }, {
+WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31478 } }, {
 	r(125600),	-- Banquet of the Oven
 	r(104312),	-- Chun Tian Spring Rolls
 	r(125601),	-- Great Banquet of the Oven
 	r(104311),	-- Twin Fish Platter
 	r(104310),	-- Wildfowl Roast
 }));
-WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31472 } }, {
+WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31472 } }, {
 	r(125596),	-- Banquet of the Pot
 	r(104305),	-- Braised Turtle
 	r(125597),	-- Great Banquet of the Pot
 	r(104306),	-- Mogu Fish Stew
 	r(104307),	-- Shrimp Dumplings
 }));
-WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31475 } }, {
+WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31475 } }, {
 	r(125598),	-- Banquet of the Steamer
 	r(104308),	-- Fire Spirit Salmon
 	r(125599),	-- Great Banquet of the Steamer
 	r(104309),	-- Steamed Crab Surprise
 	r(104304),	-- Swirling Mist Soup
 }));
-WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31470 } }, {
+WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }, ["sourceQuests"] = { 31470 } }, {
 	r(125594),	-- Banquet of the Wok
 	r(125595),	-- Great Banquet of the Wok
 	r(104301),	-- Sauteed Carrots
@@ -193,7 +242,7 @@ WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 }));
 DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
-	["g"] = {
+	["groups"] = {
 		r(158765, {	-- Cooking (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -252,7 +301,7 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 	r(297078),	-- Mech-Dowel's "Big Mech" [Rank 1]
 	r(297079),	-- Mech-Dowel's "Big Mech" [Rank 2]
 }));
-SL_COOKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309830),	-- Shadowlands Cooking
 	r(818),		-- Cooking Fire
 	r(308415),	-- Banana Beef Pudding

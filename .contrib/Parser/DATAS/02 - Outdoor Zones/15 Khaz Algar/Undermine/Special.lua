@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SPECIAL, {
 			o(509490, {	-- Sewer Cheese
@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(238661, {	-- Hungry Rat
 				["description"] = "Feed it Sewer Cheese picked up from a nearby barrel.",
 				["coord"] = { 33.6, 58.1, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(237129, {	-- Tarnished Undermine Real
 						["description"] = "Give to Pix Xizzix on the second floor of the Port Authority at the Blackwater Marina.",
 					}),
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(237412, {	-- Pix Xizzix
 				["coord"] = { 63.3, 16.9, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(237130, {	-- Undermine Undershirt
 						["cost"] = {{ "i", 237129, 1 }},	-- Tarnished Undermine Real
 					}),
@@ -29,4 +29,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));

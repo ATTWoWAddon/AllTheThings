@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64861, {	-- Kismetric Disc
 					["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 					["provider"] = { "i", 187792 },	-- Kismetric Disc
-					["g"] = {
+					["groups"] = {
 						i(190062, {	-- Wicked Pocopoc
 							["questID"] = 65530,
 						}),
@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 180919 },	-- Olea Novi
 					["coord"] = { 36.7, 37.7, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187615),	-- Orb Fragment (QI!)
 					},
 				}),
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 181102 },	-- Olea Manu
 					["coord"] = { 38.2, 35.3, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189450),	-- Crescendal (QI!)
 					},
 				}),
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180984 },	-- Hanoa the Exile
 					["coord"] = { 39.5, 31.9, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189493),	-- Black Steel Fragment (QI!)
 					},
 				}),
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
 					["provider"] = { "n", 181174 },	-- Olea Pau
 					["coord"] = { 42.3, 31.5, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187950),	-- Warped Flesh (QI!)
 					},
 				}),
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64641 },	-- Mysterious Greenery
 					["provider"] = { "n", 179923 },	-- Koh Riva
 					["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187131),	-- Automa Internals (QI!)
 					},
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180702 },	-- Glimmercane
 					["coord"] = { 60.7, 69.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(187925),	-- Eternal Water (QI!)
 					},
 				}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64645 },	-- Moment of Truth
 					["provider"] = { "o", 375021 },	-- Perished Automa
 					["coord"] = { 29.3, 15.3, 2027 },
-					["g"] = {
+					["groups"] = {
 						i(187619),	-- Winding Seed (QI!)
 						i(187620),	-- Winding Seed (QI!)
 					},
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180800 },	-- Koh Shira
 					["coord"] = { 39.3, 55.5, 2027 },
-					["g"] = {
+					["groups"] = {
 						i(190985),	-- Crystallic Cryptic Mask
 						i(190991),	-- Crystallic Enigmatic Epaulets
 						i(190997),	-- Crystallic Numerus Crown
@@ -308,56 +308,56 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				o(375973, {	-- Firim in Exile, Part 1
 					["coord"] = { 35.7, 55.4, ZERETH_MORTIS },
 					["questID"] = 65739,
-					["g"] = {
+					["groups"] = {
 						i(189575),	-- Firim in Exile, Part 1
 					},
 				}),
 				o(375982, {	-- Firim in Exile, Part 2
 					["coord"] = { 41.8, 62.4, ZERETH_MORTIS },
 					["questID"] = 65741,
-					["g"] = {
+					["groups"] = {
 						i(189576),	-- Firim in Exile, Part 2
 					},
 				}),
 				o(375983, {	-- Firim in Exile, Part 3
 					["coord"] = { 37.5, 46.1, ZERETH_MORTIS },
 					["questID"] = 65742,
-					["g"] = {
+					["groups"] = {
 						i(189578),	-- Firim in Exile, Part 3
 					},
 				}),
 				o(375984, {	-- Firim in Exile, Part 4
 					["coord"] = { 49.9, 76.6, ZERETH_MORTIS },
 					["questID"] = 65743,
-					["g"] = {
+					["groups"] = {
 						i(189579),	-- Firim in Exile, Part 4
 					},
 				}),
 				o(375985, {	-- Firim in Exile, Part 5
 					["coord"] = { 39, 31.1, ZERETH_MORTIS },
 					["questID"] = 65744,
-					["g"] = {
+					["groups"] = {
 						i(189580),	-- Firim in Exile, Part 5
 					},
 				}),
 				o(375986, {	-- Firim in Exile, Part 6
 					["coord"] = { 67.4, 25.2, ZERETH_MORTIS },
 					["questID"] = 65745,
-					["g"] = {
+					["groups"] = {
 						i(189581),	-- Firim in Exile, Part 6
 					},
 				}),
 				o(375987, {	-- Firim in Exile, Part 7
 					["coord"] = { 64.8, 33.6, ZERETH_MORTIS },
 					["questID"] = 65746,
-					["g"] = {
+					["groups"] = {
 						i(189582),	-- Firim in Exile, Part 7
 					},
 				}),
 				o(375988, {	-- Firim in Exile, Epilogue
 					["coord"] = { 34.3, 48.8, ZERETH_MORTIS },
 					["questID"] = 65747,
-					["g"] = {
+					["groups"] = {
 						i(189753),	-- Firim in Exile, Epilogue
 					},
 				}),
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				n(177958, {	-- Firim
 					i(187908, {	-- Firim's Spare Forge-tap
 						["description"] = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
-						["g"] = {
+						["groups"] = {
 							i(187527),	-- Aeon Matrix
 							i(187788, {	-- Aetheric Lattice
 								["coord"] = { 53.0, 29.1, ZERETH_MORTIS },
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 								["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
 							}),
 							i(187728, {	-- Ephemera Strand
-								["g"] = {
+								["groups"] = {
 									i(187787, {	-- Ephemera Orb
 										i(187890),	-- Anima-charged Yolk
 										i(187735),	-- Geordy (PET!)
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				n(185748, {	-- Mai Toa
 					["coord"] = { 58.6, 49.8, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(190880),	-- Catalyzed Apple Pie
 					},
 				}),
@@ -585,7 +585,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["description"] = "Only Available after Hanoas Questline",
 					["sourceQuests"] = { 65219 },	-- Jiro to Hero
 					["coord"] = { 37.2, 44.7, ZERETH_MORTIS },
-					["g"] = {
+					["groups"] = {
 						i(189986, {	-- Armadillo Soul (SOUL!)
 							["cost"] = { { "c", CYPHER, 500 }, },
 						}),
@@ -593,8 +593,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							["cost"] = { { "c", CYPHER, 25 }, },
 							["timeline"] = {  ADDED_9_2_7 },
 						}),
-						i(188793, {	-- Improvised Cypher Analysis Tool
-							["questID"] = 65282,
+						i(188793, {	-- Improvised Cypher Analysis Tool (CI!)
 							["cost"] = { { "c", CYPHER, 150 }, },
 						}),
 						i(189980, {	-- Brutosaur Soul (SOUL!)
@@ -608,7 +607,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						}),
 						i(187781, {	-- Olea Cache
 							["cost"] = { { "c", CYPHER, 700 }, },
-							["g"] = {
+							["groups"] = {
 								i(190946),	-- Emerald-Heart Protomaul
 								i(190945),	-- Greatmaul of the Ancient Sentinels
 								i(190947),	-- Halo-Stave of the Oracles
@@ -689,16 +688,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			header(HEADERS.Achievement, 15402, {	-- Cypher of the First Ones
 				q(65027),	-- eligible for Firim's Spare Forge-tap
 				q(65028),	-- eligible for Unstable Containment Trap
-				-- q(65017, {["repeatable"]=true}),	-- Looting 187891, {	-- Empyrean Essence
-				-- q(65015, {["repeatable"]=true}),	-- Looting 187894, {	-- Energized Firmament
-				q(65622, {["repeatable"]=true}),	-- Looting 187885, {	-- Honeycombed Lattice
-				-- q(65014, {["repeatable"]=true}),	-- Looting 187892, {	-- Incorporeal Sand
-				q(65005, {["repeatable"]=true}),	-- Looting 187879, {	-- Pollinated Extraction
-				-- q(65560, {["repeatable"]=true}),	-- Looting 190129, {	-- Serene Pigment
-				-- q(65018, {["repeatable"]=true}),	-- Looting 187889, {	-- Unstable Agitant
-				-- q(65016, {["repeatable"]=true}),	-- Looting 187893, {	-- Volatile Precursor
-				-- q(65559, {["repeatable"]=true}),	-- Looting 190128, {	-- Wayward Essence
-				-- q(65019, {["repeatable"]=true}),	-- Looting 187890, {	-- Anima-charged Yolk
+				-- q(65017, {["repeatable"]=true}),	-- Looting 187891,	-- Empyrean Essence
+				-- q(65015, {["repeatable"]=true}),	-- Looting 187894,	-- Energized Firmament
+				q(65622, {["repeatable"]=true}),	-- Looting 187885,	-- Honeycombed Lattice
+				-- q(65014, {["repeatable"]=true}),	-- Looting 187892,	-- Incorporeal Sand
+				q(65005, {["repeatable"]=true}),	-- Looting 187879,	-- Pollinated Extraction
+				-- q(65560, {["repeatable"]=true}),	-- Looting 190129,	-- Serene Pigment
+				-- q(65018, {["repeatable"]=true}),	-- Looting 187889,	-- Unstable Agitant
+				-- q(65016, {["repeatable"]=true}),	-- Looting 187893,	-- Volatile Precursor
+				-- q(65559, {["repeatable"]=true}),	-- Looting 190128,	-- Wayward Essence
+				-- q(65019, {["repeatable"]=true}),	-- Looting 187890,	-- Anima-charged Yolk
 				-- Pocopoc Costumes Applied
 				q(66059),	-- Chef's Hat
 				q(66060),	-- Crown of Flowers

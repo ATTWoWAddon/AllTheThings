@@ -5,11 +5,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(707, {	-- Vault of the Wardens
 		["coord"] = { 48.0, 82.1, AZSUNA },
 		["maps"] = { 710, 711, 712 },
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
-					["g"] = {
+					["groups"] = {
 						crit(33146, {	-- Fel-Ravaged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(95885, e(1467, {	-- Tirathon Saltheril
 						i(134369),	-- Felbat Leather Boots
 						i(137509),	-- Glaivemaster's Studded Grips
@@ -186,8 +186,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(10707, {	-- A Specter, Illuminated
 							["description"] = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",

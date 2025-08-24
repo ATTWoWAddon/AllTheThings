@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -67,7 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -75,7 +75,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70939, {	-- Cooking Utensils
 						["provider"] = { "n", 186547 },	-- Lil Ki
 						["coord"] = { 13.5, 48.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(200749),	-- Tuskarr Clobbering Board
 							i(200748),	-- Tuskarr Ulu Knife
 							i(199892),	-- Tuskarr Traveling Soup Pot
@@ -85,7 +85,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -102,11 +102,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72875, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72387 },	-- Dragon Isles Supplies [Renown 6]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70953, {	-- Tuskarr Headwear
 						["provider"] = { "n", 196018 },	-- Omapurita
 						["coord"] = { 14.0, 49.3, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199538),	-- Azure Ear Warmer
 							i(199535),	-- Crimson Ear Warmer
 							i(199537),	-- Forest Green Ear Warmer
@@ -125,7 +125,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -133,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70954, {	-- Mounting Curiosity
 						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(197101),	-- Highland Drake: Bushy Brow (MM!)
 							i(197155, {	-- Highland Drake: Finned Neck (MM!)
 								["timeline"] = { ADDED_10_0_7 },
@@ -146,7 +146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -154,11 +154,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72389, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 72390 },	-- Dragon Isles Supplies [Renown 9]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -167,7 +167,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["description"] = "Runs around Iskaara.",
 						["provider"] = { "n", 186564 },	-- Jiq
 						["coord"] = { 13.5, 49.2, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(193837),	-- Backswimmer Timbertooth (PET!)
 							i(193225),	-- Whiskuk (PET!)
 						},
@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -205,7 +205,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 68640 },	-- Sudden Isolation
 						["provider"] = { "n", 188301 },	-- Guard Hakota
 						["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(191855),	-- Qalashi Trophy (QI!)
 						},
 					}),
@@ -218,7 +218,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
 						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(192191),	-- Tuskarr Fishing Net (QI!)
 							i(191858),	-- Succulent Snapper Meat (QI!)
 						},
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
 						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["coord"] = { 53.6, 38.0, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(191863),	-- Waterlogged Wood (QI!)
 							i(191862),	-- Whalebone Fragment (QI!)
 						},
@@ -236,7 +236,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
 						["provider"] = { "o", 384405 },	-- Half-Boiled Fish
 						["coord"] = { 53.1, 35.3, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(201787),	-- Recipe: Filet of Fangs (RECIPE!)
 							i(201786),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
 							i(201785),	-- Recipe: Seamoth Surprise (RECIPE!)
@@ -248,7 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66417 },	-- Salvaging Supplies
 						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(199830),	-- Tuskarr Training Dummy (TOY!)
 						},
 					}),
@@ -274,7 +274,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66431 },	-- In Mourning
 						["provider"] = { "n", 187323 },	-- Tutaqan
 						["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(200188),	-- Broken Fishing Pole (QI!)
 							i(200191),	-- Ottuk Lure (QI!)
 							i(200190),	-- Stuffed Duckling Toy (QI!)
@@ -289,7 +289,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["sourceQuests"] = { 66443 },	-- Calling the Hunting Party
 						["provider"] = { "n", 187323 },	-- Tutaqan
 						["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							r(390631),	-- Ottuk Taming (CI!)
 							i(201783),	-- Tutaqan's Commendation
 						},
@@ -297,14 +297,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72392, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						-- #IF BEFORE 10.2.7
 						-- technically not accurate, but no other way to lock this properly for first character
 						-- 2024-05-16: This quest was no longer locked, possibly with 10.2.7
-						-- #IF BEFORE 10.2.7
 						["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 						["DisablePartySync"] = true,
 						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						-- #ENDIF
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -312,7 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70960, {	-- Trader's Apparel
 						["provider"] = { "n", 196016 },	-- Lontupit
 						["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199872),	-- Tuskarr Trader's Cloak
 						},
 					}),
@@ -320,7 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -328,7 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70955, {	-- Fascinating Fliers
 						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(197153),	-- Highland Drake: Bladed Tail (MM!)
 							i(197139),	-- Highland Drake: Large Spotted Pattern (MM!)
 							i(197123),	-- Highland Drake: Thorn Horns (MM!)
@@ -338,7 +338,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
 					}),
@@ -351,7 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = ENCHANTING,
-						["g"] = {
+						["groups"] = {
 							i(201709),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = HERBALISM,
-						["g"] = {
+						["groups"] = {
 							i(201705),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -367,7 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							i(201712),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -375,7 +375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = LEATHERWORKING,
-						["g"] = {
+						["groups"] = {
 							i(201713),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -383,7 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = SKINNING,
-						["g"] = {
+						["groups"] = {
 							i(201714),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -401,7 +401,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -409,7 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70966, {	-- Trading Made Easier
 						["provider"] = { "n", 187869 },	-- Tikukk
 						["coord"] = { 12.6, 50.2, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199863),	-- Burgundy Tuskarr Backpack
 							i(199862),	-- Dark Tuskarr Backpack
 							i(199860),	-- Rustic Tuskarr Backpack
@@ -420,7 +420,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -428,7 +428,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70967, {	-- Fishy Entertainment
 						["provider"] = { "n", 186554 },	-- Nunvuq
 						["coord"] = { 13.8, 49.2, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199894),	-- Fisherman's Folly Rack (TOY!)
 							i(199896),	-- Rubbery Fish Head (TOY!)
 						},
@@ -436,10 +436,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72632, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 70967 },	-- Fishy Entertainment [Renown 17]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -447,24 +447,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72633, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1,
 							"questID", 70956,	-- Of Azure Scales [Renown 19]
 							"questID", 72634,	-- Dragon Isles Supplies [Renown 19]
 						},
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
 				}, {	-- RENOWN 19 --
 					q(70956, {	-- Of Azure Scales
+						["altQuests"] = { 72634 },	-- Dragon Isles Supplies [Renown 19]
 						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 						-- TODO: this has some source quest? otherwise 72634 is offerred instead
-						["altQuests"] = { 72634 },	-- Dragon Isles Supplies [Renown 19]
-						["g"] = {
+						["groups"] = {
 							i(197390),	-- Renewed Proto-Drake: Blue Scales (MM!)
 							i(197612),	-- Windborne Velocidrake: Blue Scales (MM!)
 							i(197012),	-- Cliffside Wylderdrake: Blue Scales (MM!)
@@ -474,12 +474,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(72634, {	-- Dragon Isles Supplies
+						["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
-						["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
-						["DisablePartySync"] = true,
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["DisablePartySync"] = true,
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -487,11 +487,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72635, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 70968 },	-- Of the Cloth, of the Community [Renown 21]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -499,18 +499,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70968, {	-- Of the Cloth, of the Community
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(198731),	-- Iskaara Tuskarr Tabard
 						},
 					}),
 					q(72636, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
-						-- technically not accurate, but no other way to lock this properly for first character
+						["timeline"] = { REMOVED_11_0_0 },
 						["lockCriteria"] = { 1, "questID", 70964 },	-- Shrug it On! [Renown 22]
 						["DisablePartySync"] = true,
-						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						-- technically not accurate, but no other way to lock this properly for first character
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -528,7 +528,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -539,7 +539,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							{ 13.5, 48.2, THE_AZURE_SPAN },
 							{ 12.9, 48.7, THE_AZURE_SPAN },
 						},
-						["g"] = {
+						["groups"] = {
 							i(199879),	-- Tuskarr Fisherman's Dagger
 							i(199881),	-- Tuskarr Fisherman's Harpoon
 							i(199880),	-- Tuskarr Leviathan's Hook
@@ -552,7 +552,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = ENCHANTING,
-						["g"] = {
+						["groups"] = {
 							i(201709),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -560,7 +560,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = HERBALISM,
-						["g"] = {
+						["groups"] = {
 							i(201717),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -568,7 +568,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["groups"] = {
 							i(201712),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -576,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = LEATHERWORKING,
-						["g"] = {
+						["groups"] = {
 							i(201713),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -584,7 +584,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 194059 },	-- Rokkutuk
 						["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
 						["requireSkill"] = SKINNING,
-						["g"] = {
+						["groups"] = {
 							i(201718),	-- Notebook of Crafting Knowledge
 						},
 					}),
@@ -592,7 +592,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -600,7 +600,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70972, {	-- Our Loyal, Lanky Steeds
 						["provider"] = { "n", 186462 },	-- Tatto
 						["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(198872),	-- Brown Scouting Ottuk (MOUNT!)
 							i(200118),	-- Yellow Scouting Ottuk (MOUNT!)
 						},
@@ -609,7 +609,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
 					}),
@@ -617,7 +617,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70976, {	-- Slacking and Sledding
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199899),	-- Iskaara Tug Sled (TOY!)
 							i(198827),	-- Magical Snow Sled (TOY!)
 						},
@@ -626,7 +626,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
 					}),
@@ -635,7 +635,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
 					}),
@@ -643,7 +643,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70961, {	-- Shouldering the Needed Armor
 						["provider"] = { "n", 196016 },	-- Lontupit
 						["coord"] = { 14.0, 49.4, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(199539),	-- Blue Tufted Shoulderpads
 							i(199540),	-- Green Tufted Shoulderpads
 							i(199541),	-- Grey Tufted Shoulderpads
@@ -654,16 +654,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
 					}),
 				}, {	-- RENOWN 29 --
 					q(70977, {	-- Scaps Packs
-						["provider"] = { "n", 187680 },	-- Scaps
 						["sourceQuests"] = { 66223 },	-- Can We Keep It?
+						["provider"] = { "n", 187680 },	-- Scaps
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(198337),	-- Azure Paw Pack
 							i(198338),	-- Black Paw Pack
 							i(198339),	-- Dark Paw Pack
@@ -675,7 +675,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
-						["g"] = {
+						["groups"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
 					}),
@@ -683,7 +683,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70969, {	-- Becoming One of Our Community
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							title(476),	-- <Name> of Iskaara
 						},
 					}),
@@ -694,7 +694,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"spellID", 376910,	-- Brown War Ottuk (MOUNT!)
 							"spellID", 376913,	-- Yellow War Ottuk (MOUNT!)
 						},
-						["g"] = {
+						["groups"] = {
 							i(201426),	-- Brown War Ottuk (MOUNT!)
 							i(201425),	-- Yellow War Ottuk (MOUNT!)
 						},
@@ -704,7 +704,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(204379, {	-- Brimming Iskaaran Supply Pack
 								["timeline"] = { ADDED_10_0_7 },
 							}),

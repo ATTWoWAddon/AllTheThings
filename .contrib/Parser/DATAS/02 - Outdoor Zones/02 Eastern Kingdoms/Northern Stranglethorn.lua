@@ -8,41 +8,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236844,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(781),	-- Explore Northern Stranglethorn
+				ach(781),	-- Explore Northern Stranglethorn
 				ach(4906, {	-- Northern Stranglethorn Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Ohgan'aka (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26775,	-- Be Raptor (A)
-						}),
-						crit(1, {	-- Ohgan'aka (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26362,	-- Be Raptor (H)
-						}),
-						crit(2, {	-- Rebel Camp
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26765,	-- Return to Corporal Kaleb
-								26737,	-- Stopping Kurzen's Legacy
-								26731,	-- The Altar of Naias
-								26734,	-- The Source of the Madness
-							},
-						}),
-						crit(2, {	-- Yenniku
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 26305,	-- Saving Yenniku
-						}),
-						crit(3, {	-- Nesingwary's Expedition
-							["sourceQuests"] = {
-								208,	-- Big Game Hunter
-								26345,	-- Excelsior
-								26269,	-- The Green Hills of Stranglethorn
-							},
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26775,	-- Be Raptor (A)
@@ -57,25 +27,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26269,	-- The Green Hills of Stranglethorn
 					},
 					-- #endif
-					-- #endif
 				}),
-				ach(940, {	-- The Green Hills of Stranglethorn
-					-- #if AFTER CATA
-					["sourceQuest"] = 208,	-- Big Game Hunter
-					-- #else
-					["sourceQuests"] = {
-						208,	-- Big Game Hunter
-						338,	-- The Green Hills of Stranglethorn
-					},
-					-- #endif
-					-- #if BEFORE WRATH
-					["AllSourceQuestsRequiredForAchievement"] = true,
-					-- #endif
-				}),
+				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
-					407,	-- Forest Spiderling (PET!)
 					404,	-- Long-tailed Mole (PET!)
 					424,	-- Roach (PET!)
 					401,	-- Strand Crab (PET!)
@@ -85,6 +41,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(421, {	-- Crimson Moth (PET!)
 						["coord"] = { 41.8, 41.6, NORTHERN_STRANGLETHORN },
 					}),
+					pet(407),	-- Forest Spiderling (PET!)
 					pet(408),	-- Lizard Hatchling (PET!)
 					pet(409),	-- Polly (PET!)
 					pet(405),	-- Tree Python (PET!)
@@ -157,35 +114,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180901),	-- Bloodsail Wreckage
+			petbattles({
+				n(63194, {	-- Steven Lisbane <Master Pet Tamer>
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+					["description"] = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 9,
+					["groups"] = {
+						q(31852, {	-- Steven Lisbane
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
+				q(31728, {	-- Bill Buckler
+					["sourceQuest"] = 31729,	-- Steven Lisbane
+					["qg"] = 63194,	-- Steven Lisbane
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Bill Buckler
+							["provider"] = { "n", 65656 },	-- Bill Buckler
+							["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
+			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
 						["races"] = HORDE_ONLY,
-						["g"] = CLASSIC_TBC_TRIBAL,
+						["groups"] = CLASSIC_TBC_TRIBAL,
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				q(26317, {	-- A Lashtail Hatchling
+					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
 					["providers"] = {
 						{ "n", 2465 },	-- Far Seer Mok'thardin
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26746, {	-- A Nose for This Sort of Thing (A)
+					["sourceQuest"] = 26745,	-- Favored Skull
 					["providers"] = {
 						{ "n", 43884 },	-- Osborn Obnoticus
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26745,	-- Favored Skull
 					["coord"] = { 47.13, 10.56, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -196,11 +182,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26325, {	-- A Nose for This Sort of Thing (H)
+					["sourceQuest"] = 26323,	-- Favored Skull
 					["providers"] = {
 						{ "o", 2076 },	-- Bubbling Cauldron
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26323,	-- Favored Skull
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -211,11 +197,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26747, {	-- A Physical Specimen
+					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
 					["providers"] = {
 						{ "n", 43884 },	-- Osborn Obnoticus
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
 					["coord"] = { 47.1, 10.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -250,8 +236,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(9457, {	-- An Unusual Patron
-					["qg"] = 17094,	-- Nemeth Hawkeye
 					["sourceQuest"] = 9436,	-- Bloodscalp Insight
+					["qg"] = 17094,	-- Nemeth Hawkeye
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
@@ -288,8 +274,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(204, {	-- Bad Medicine
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
-					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -339,8 +325,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26775, {	-- Be Raptor (A)
-					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26774,	-- Mind Control
+					["qg"] = 44017,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -379,8 +365,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26362, {	-- Be Raptor (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
 					["sourceQuest"] = 26360,	-- Mind Control
+					["qg"] = 42812,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -419,12 +405,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(208, {	-- Big Game Hunter
-					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuests"] = {
 						193,	-- Panther Mastery
 						197,	-- Raptor Mastery
 						188,	-- Tiger Mastery
 					},
+					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
@@ -475,28 +461,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26748, {	-- Bloodlord Mandokir (A)
+					["sourceQuest"] = 26747,	-- A Physical Specimen
 					["providers"] = {
 						{ "n", 42790 },	-- Bloodlord Mandokir
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26747,	-- A Physical Specimen
 					["coord"] = { 47.1, 10.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26334, {	-- Bloodlord Mandokir (H)
+					["sourceQuest"] = 26332,	-- Skullsplitter Mojo
 					["providers"] = {
 						{ "n", 42790 },	-- Bloodlord Mandokir
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26332,	-- Skullsplitter Mojo
 					["coord"] = { 38.4, 48.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(584, {	-- Bloodscalp Clan Heads
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 582,	-- Headhunting
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -542,11 +528,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26742, {	-- Bloodscalp Insight (A)
-					["qg"] = 43886,	-- Berrin Burnquill
 					["sourceQuests"] = {
 						26736,	-- Spared from Madness
 						26737,	-- Stopping Kurzen's Legacy
 					},
+					["qg"] = 43886,	-- Berrin Burnquill
 					["coord"] = { 47.9, 12.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -559,7 +545,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(9436, {	-- Bloodscalp Insight (H)
-					["qg"] = 17094,	-- Nemeth Hawkeye
 					-- #if AFTER CATA
 					["sourceQuests"] = {
 						26321,	-- I Think She's Hungry
@@ -567,6 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26280,	-- The Defense of Grom'gol: Murloc Menace
 					},
 					-- #endif
+					["qg"] = 17094,	-- Nemeth Hawkeye
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
@@ -613,8 +599,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(200, {	-- Bookie Herod
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 215,	-- Jungle Secrets
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -688,15 +674,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26302, {	-- Chasing Yenniku's Fate
-					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26301,	-- Speaking with Nezzliok
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(202, {	-- Colonel Kurzen
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 574,	-- Special Forces
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -719,8 +705,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26733, {	-- Control Sample
-					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 26732,	-- Bad Medicine
+					["qg"] = 739,	-- Brother Nimetz
 					["coord"] = { 47.2, 11.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -736,8 +722,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26352, {	-- Cozzle's Plan
-					["qg"] = 42813,	-- Kil'karil
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
+					["qg"] = 42813,	-- Kil'karil
 					["coord"] = { 63.2, 39.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -758,8 +744,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26744, {	-- Deep Roots
-					["qg"] = 1422,	-- Corporal Sethman
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
+					["qg"] = 1422,	-- Corporal Sethman
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -786,8 +772,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3621,	-- The Formation of Felbane
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -804,15 +790,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2765, {	-- Expert Blacksmith!
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuests"] = {
 						2761,	-- Smelt On, Smelt Off
 						2762,	-- The Great Silver Deceiver
 						2763,	-- The Art of the Imbue
 					},
-					["requireSkill"] = BLACKSMITHING,
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
 						i(8703,	{	-- Signet of Expertise
@@ -827,8 +813,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26345, {	-- Excelsior
-					["qg"] = 2495,	-- Drizzlik
 					["sourceQuest"] = 26344,	-- Some Assembly Required
+					["qg"] = 2495,	-- Drizzlik
 					["coord"] = { 43.6, 23.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -845,32 +831,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26745, {	-- Favored Skull (A)
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+					["sourceQuest"] = 26739,	-- I Think She's Hungry
 					["providers"] = {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
-					["sourceQuest"] = 26739,	-- I Think She's Hungry
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26323, {	-- Favored Skull (H)
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
+					["sourceQuest"] = 26321,	-- I Think She's Hungry
 					["providers"] = {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
-					["sourceQuest"] = 26321,	-- I Think She's Hungry
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(2764, {	-- Galvan's Finest Pupil
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuests"] = {
 						2761,	-- Smelt On, Smelt Off
 						2762,	-- The Great Silver Deceiver
 						2763,	-- The Art of the Imbue
 					},
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -878,8 +864,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(26776, {	-- Ghaliri
-					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26775,	-- Be Raptor
+					["qg"] = 44017,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -913,8 +899,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(582, {	-- Headhunting
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 581,	-- Hunt for Yenniku
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -933,8 +919,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26299, {	-- Headhunting
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 26298,	-- Hunt for Yenniku
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 38.4, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1000,11 +986,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26298, {	-- Hunt for Yenniku
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuests"] = {
 						26280,	-- The Defense of Grom'gol: Murloc Menace
 						26279,	-- The Defense of Grom'gol: Ogre Oppression
 					},
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 38.4, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1028,11 +1014,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26739, {	-- I Think She's Hungry (A)
+					["sourceQuest"] = 26738,	-- Just Hatched
 					["providers"] = {
 						{ "n", 1422 },	-- Corporal Sethman
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26738,	-- Just Hatched
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1043,11 +1029,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26321, {	-- I Think She's Hungry (H)
+					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
 					["providers"] = {
 						{ "n", 2465 },	-- Far Seer Mok'thardin
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
 					["coord"] = { 38.4, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1064,22 +1050,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(215, {	-- Jungle Secrets
-					["qg"] = 738,	-- Private Thorsen
 					-- #if BEFORE 4.0.3
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
+					["qg"] = 738,	-- Private Thorsen
 					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(26738, {	-- Just Hatched
+					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
+					["sourceQuest"] = 26732,	-- Bad Medicine
 					["providers"] = {
 						{ "n", 1422 },	-- Corporal Sethman
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
-					["sourceQuest"] = 26732,	-- Bad Medicine
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1144,11 +1130,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(206, {	-- Mai'Zoth
-					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuests"] = {
 						202,	-- Colonel Kurzen
 						205,	-- Troll Witchery
 					},
+					["qg"] = 739,	-- Brother Nimetz
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1164,8 +1150,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26774, {	-- Mind Control (A)
-					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26773,	-- See Raptor
+					["qg"] = 44017,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1178,8 +1164,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26360, {	-- Mind Control (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
 					["sourceQuest"] = 26359,	-- See Raptor
+					["qg"] = 42812,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1192,8 +1178,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26772, {	-- Mind Vision (A)
-					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26749,	-- Priestess Thaalia
+					["qg"] = 44017,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1206,8 +1192,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26351, {	-- Mind Vision (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
 					["sourceQuest"] = 26350,	-- Priestess Hu'rala
+					["qg"] = 42812,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1240,8 +1226,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(572, {	-- Mok'thardin's Enchantment (2/4)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 570,	-- Mok'thardin's Enchantment (1/4)
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1254,8 +1240,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(571, {	-- Mok'thardin's Enchantment (3/4)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 572,	-- Mok'thardin's Enchantment (2/4)
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1268,8 +1254,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(573, {	-- Mok'thardin's Enchantment (4/4)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment (3/4)
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1291,18 +1277,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
-					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
 					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
+					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
 						1144,	-- Mosh'Ogg Witch Doctor
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(26300, {	-- Nezzliok Will Know
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 26299,	-- Headhunting
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 38.4, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1315,8 +1301,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26780, {	-- Nighttime in the Jungle (A)
-					["qg"] = 44043,	-- Kinnel
 					["sourceQuest"] = 26773,	-- See Raptor
+					["qg"] = 44043,	-- Kinnel
 					["coord"] = { 53.2, 66.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1328,8 +1314,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26304, {	-- Nighttime in the Jungle (H)
-					["qg"] = 42813,	-- Kil'karil
 					["sourceQuest"] = 26359,	-- See Raptor
+					["qg"] = 42813,	-- Kil'karil
 					["coord"] = { 63.2, 39.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1341,16 +1327,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26417, {	-- Northern Stranglethorn: The Fallen Empire
-					["qg"] = 43062,	-- Bort
 					["sourceQuest"] = 26416,	-- Well, Come to the Jungle
+					["qg"] = 43062,	-- Bort
 					["coord"] = { 51.2, 56.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(190, {	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
-					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
+					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
@@ -1366,8 +1352,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(193, {	-- Panther Mastery (4/4)
-					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 192,	-- Panther Prowess [CATA+] / Panther Mastery (3/4)
+					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
@@ -1401,8 +1387,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(192, {	-- Panther Prowess [CATA+] / Panther Mastery (3/4)
-					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 191,	-- Panther Stalking [CATA+] / Panther Mastery (2/4)
+					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
@@ -1418,8 +1404,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(191, {	-- Panther Stalking [CATA+] / Panther Mastery (2/4)
-					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 190,	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
+					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
@@ -1435,16 +1421,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(330, {	-- Patrol Schedules
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 329,	-- The Spy Revealed!
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(26751, {	-- Population Con-Troll (A)
-					["qg"] = 733,	-- Sergeant Yohwa
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
+					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 47.5, 10.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1464,8 +1450,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26338, {	-- Population Con-Troll (H)
-					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1485,22 +1471,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26350, {	-- Priestess Hu'rala
-					["qg"] = 2497,	-- Nimboya
 					["sourceQuest"] = 26334,	-- Bloodlord Mandokir
+					["qg"] = 2497,	-- Nimboya
 					["coord"] = { 38.4, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26749, {	-- Priestess Thaalia
-					["qg"] = 43884,	-- Osborn Obnoticus
 					["sourceQuest"] = 26748,	-- Bloodlord Mandokir
+					["qg"] = 43884,	-- Osborn Obnoticus
 					["coord"] = { 47.1, 10.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(194, {	-- Raptor Hunting [CATA+] / Raptor Mastery (1/4)
-					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
+					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
@@ -1516,8 +1502,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(197, {	-- Raptor Mastery (4/4)
-					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 196,	-- Raptor Prowess [CATA+] / Raptor Mastery (3/4)
+					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
@@ -1556,8 +1542,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(196, {	-- Raptor Prowess [CATA+] / Raptor Mastery (3/4)
-					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 195,	-- Raptor Stalking [CATA+] / Raptor Mastery (2/4)
+					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
@@ -1573,8 +1559,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(195, {	-- Raptor Stalking [CATA+] / Raptor Mastery (2/4)
-					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 194,	-- Raptor Hunting [CATA+] / Raptor Mastery (1/4)
+					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
@@ -1603,8 +1589,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(331, {	-- Report to Doren
-					["qg"] = 1422,	-- Corporal Sethman
 					["sourceQuest"] = 330,	-- Patrol Schedules
+					["qg"] = 1422,	-- Corporal Sethman
 					["coord"] = { 37.7, 3.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1619,11 +1605,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(622, {	-- Return to Corporal Kaleb
+					["sourceQuest"] = 627,	-- Favor for Krazek
 					["providers"] = {
 						{ "n", 773 },	-- Krazek
 						{ "i", 1987 },	-- Krazek's Fixed Pot
 					},
-					["sourceQuest"] = 627,	-- Favor for Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1635,11 +1621,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(26765, {	-- Return to Corporal Kaleb
+					["sourceQuest"] = 26763,	-- Venture Company Mining
 					["providers"] = {
 						{ "n", 773 },	-- Krazek
 						{ "i", 1987 },	-- Krazek's Fixed Pot
 					},
-					["sourceQuest"] = 26763,	-- Venture Company Mining
 					["coord"] = { 43.6, 23.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1648,16 +1634,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3626, {	-- Return to the Blasted Lands
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3625,	-- Enchanted Azsharite Fel Weaponry
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 45,
 				}),
 				q(26743, {	-- Sacred to the Bloodscalp
-					["qg"] = 43886,	-- Berrin Burnquill
 					["sourceQuest"] = 26742,	-- Bloodscalp Insight
+					["qg"] = 43886,	-- Berrin Burnquill
 					["coord"] = { 47.9, 12.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1692,8 +1678,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(592, {	-- Saving Yenniku
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 591,	-- The Mind's Eye
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1720,8 +1706,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26305, {	-- Saving Yenniku
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 26303,	-- The Mind's Eye
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 63.0, 41.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1749,25 +1735,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26773, {	-- See Raptor (A)
-					["qg"] = 44017,	-- Priestess Thaalia
 					["sourceQuest"] = 26772,	-- Mind Vision
+					["qg"] = 44017,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26359, {	-- See Raptor (H)
-					["qg"] = 42812,	-- Priestess Hu'rala
 					["sourceQuest"] = 26351,	-- Mind Vision
+					["qg"] = 42812,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26332, {	-- Skullsplitter Mojo
+					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 					["providers"] = {
 						{ "o", 2076 },	-- Bubbling Cauldron
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1783,16 +1769,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2761, {	-- Smelt On, Smelt Off
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3575, 40 },	-- Iron Bar
 						{ "i", 3860, 40 },	-- Mithril Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7983, {	-- Plans: Ornate Mithril Pants (RECIPE!)
@@ -1801,8 +1787,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26344, {	-- Some Assembly Required
-					["qg"] = 2495,	-- Drizzlik
 					["sourceQuest"] = 26343,	-- Supply and Demand
+					["qg"] = 2495,	-- Drizzlik
 					["coord"] = { 43.6, 23.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1813,8 +1799,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26736, {	-- Spared from Madness
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 26735,	-- The Fate of Kurzen
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 47.5, 10.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1831,8 +1817,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(586, {	-- Speaking with Gan'zulah
-					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 584,	-- Bloodscalp Clan Heads
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1855,8 +1841,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(585, {	-- Speaking with Nezzliok
-					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 584,	-- Bloodscalp Clan Heads
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1886,8 +1872,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26301, {	-- Speaking with Nezzliok
-					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuest"] = 26300,	-- Nezzliok Will Know
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1921,11 +1907,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(574, {	-- Special Forces
-					["qg"] = 733,	-- Sergeant Yohwa
 					["sourceQuests"] = {
 						204,	-- Bad Medicine
 						203,	-- The Second Rebellion
 					},
+					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1940,11 +1926,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(598, {	-- Split Bone Necklace
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuests"] = {
 						596,	-- Bloody Bone Necklaces
 						629,	-- The Vile Reef
 					},
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1975,8 +1961,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26737, {	-- Stopping Kurzen's Legacy
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 26736,	-- Spared from Madness
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 47.5, 10.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2023,18 +2009,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26386, {	-- Surkhan
-					["qg"] = 42812,	-- Priestess Hu'rala
 					["sourceQuest"] = 26362,	-- Be Raptor
+					["qg"] = 42812,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26731, {	-- The Altar of Naias
+					["sourceQuest"] = 26730,	-- You Can Take the Murloc Out of the Ocean...
 					["providers"] = {
 						{ "n", 43885 },	-- Emerine Junis
 						{ "i", 60273 },	-- Emerine's Telling-Sphere
 					},
-					["sourceQuest"] = 26730,	-- You Can Take the Murloc Out of the Ocean...
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2063,16 +2049,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2763, {	-- The Art of the Imbue
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 3864, 4 },	-- Citrine
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7985, {	-- Plans: Ornate Mithril Shoulder (RECIPE!)
@@ -2093,8 +2079,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(569, {	-- The Defense of Grom'gol (2/2)
-					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuest"] = 568,	-- The Defense of Grom'gol (1/2)
+					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 32.2, 28.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2112,8 +2098,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26280, {	-- The Defense of Grom'gol: Murloc Menace
-					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
+					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2130,8 +2116,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26279, {	-- The Defense of Grom'gol: Ogre Oppression
-					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuest"] = 26278,	-- The Defense of Grom'gol: Raptor Risk
+					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2157,11 +2143,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26278, {	-- The Defense of Grom'gol: Raptor Risk
-					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuests"] = {
 						26417,	-- Northern Stranglethorn: The Fallen Empire
 						28688,	-- Warchief's Command: Northern Stranglethorn!
 					},
+					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2173,11 +2159,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26281, {	-- The Defense of Grom'gol: Trollish Thievery
-					["qg"] = 2464,	-- Commander Aggro'gosh
 					["sourceQuests"] = {
 						26280,	-- The Defense of Grom'gol: Murloc Menace
 						26279,	-- The Defense of Grom'gol: Ogre Oppression
 					},
+					["qg"] = 2464,	-- Commander Aggro'gosh
 					["coord"] = { 38.4, 50.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2204,11 +2190,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26735, {	-- The Fate of Kurzen
-					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuests"] = {
 						26838,	-- Rebels Without a Clue
 						28699,	-- Hero's Call: Northern Stranglethorn!
 					},
+					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 47.6, 10.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2230,27 +2216,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(588, {	-- The Fate of Yenniku
-					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["sourceQuests"] = {
 						586,	-- Speaking with Gan'zulah
 						585,	-- Speaking with Nezzliok
 					},
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(2762, {	-- The Great Silver Deceiver
-					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 2760,	-- The Mithril Order
+					["qg"] = 7802,	-- Galvan the Ancient
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 6037, 5 },	-- Truesilver Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7984, {	-- Plans: Ornate Mithril Gloves (RECIPE!)
@@ -2259,8 +2245,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(338, {	-- The Green Hills of Stranglethorn
-					["qg"] = 716,	-- Barnil Stonepot
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
+					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2284,8 +2270,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26269, {	-- The Green Hills of Stranglethorn
-					["qg"] = 716,	-- Barnil Stonepot
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
+					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 44.2, 22.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2490,11 +2476,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(328, {	-- The Hidden Key
+					["sourceQuest"] = 200,	-- Bookie Herod
 					["providers"] = {
 						{ "o", 287 },	-- Bookie Herod's Records
 						{ "i", 2719 },	-- Small Brass Key
 					},
-					["sourceQuest"] = 200,	-- Bookie Herod
 					["coord"] = { 43.7, 9.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2506,16 +2492,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26340, {	-- The Hunt
-					["qg"] = 17094,	-- Nemeth Hawkeye
 					["sourceQuest"] = 9457,	-- An Unusual Patron
+					["qg"] = 17094,	-- Nemeth Hawkeye
 					["coord"] = { 38.1, 50.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(591, {	-- The Mind's Eye
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 589,	-- The Singing Crystals
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2553,8 +2539,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26303, {	-- The Mind's Eye (H)
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 63.0, 41.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2567,8 +2553,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A)
-					["qg"] = 44018,	-- Wulfred Harrys
 					["description"] = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2583,8 +2569,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26783, {	-- The Mosh'Ogg Bounty (A)
-					["qg"] = 44018,	-- Wulfred Harrys
 					["description"] = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
+					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2599,8 +2585,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26399, {	-- The Mosh'Ogg Bounty (H)
-					["qg"] = 42814,	-- Skeezy Whillzap
 					["sourceQuest"] = 26407,	-- Mosh'Ogg Handiwork
+					["qg"] = 42814,	-- Skeezy Whillzap
 					["coord"] = { 63.4, 41.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2627,8 +2613,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(589, {	-- The Singing Crystals
-					["qg"] = 2519,	-- Kin'weelay
 					["sourceQuest"] = 588,	-- The Fate of Yenniku
+					["qg"] = 2519,	-- Kin'weelay
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2641,8 +2627,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26734, {	-- The Source of the Madness
-					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 26733,	-- Control Sample
+					["qg"] = 739,	-- Brother Nimetz
 					["coord"] = { 47.2, 11.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2664,19 +2650,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(329, {	-- The Spy Revealed!
+					["sourceQuest"] = 328,	-- The Hidden Key
 					["providers"] = {
 						{ "o", 288 },	-- Bookie Herod's Strongbox
 						{ "i", 2720 },	-- Muddy Note
 					},
-					["sourceQuest"] = 328,	-- The Hidden Key
 					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(26400, {	-- The Universal Key
-					["qg"] = 42814,	-- Skeezy Whillzap
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
+					["qg"] = 42814,	-- Skeezy Whillzap
 					["coord"] = { 63.7, 39.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2711,8 +2697,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(185, {	-- Tiger Hunting [CATA+] / Tiger Mastery (1/4)
-					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
+					["qg"] = 717,	-- Ajeck Rouack
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
@@ -2728,8 +2714,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(188, {	-- Tiger Mastery (4/4)
-					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 187,	-- Tiger Prowess [CATA+] / Tiger Mastery (3/4)
+					["qg"] = 717,	-- Ajeck Rouack
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
@@ -2765,8 +2751,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(187, {	-- Tiger Prowess [CATA+] / Tiger Mastery (3/4)
-					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 186,	-- Tiger Stalking [CATA+] / Tiger Mastery (2/4)
+					["qg"] = 717,	-- Ajeck Rouack
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
@@ -2782,8 +2768,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(186, {	-- Tiger Stalking [CATA+] / Tiger Mastery (2/4)
-					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 185,	-- Tiger Hunting [CATA+] / Tiger Mastery (1/4)
+					["qg"] = 717,	-- Ajeck Rouack
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
@@ -2805,8 +2791,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(205, {	-- Troll Witchery
-					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207,	-- Kurzen's Mystery
+					["qg"] = 739,	-- Brother Nimetz
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2822,8 +2808,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26763, {	-- Venture Company Mining (A)
-					["qg"] = 773,	-- Krazek
 					["sourceQuest"] = 26740,	-- Krazek's Cookery
+					["qg"] = 773,	-- Krazek
 					["coord"] = { 43.5, 23.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2856,8 +2842,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26403, {	-- Venture Company Mining (H)
-					["qg"] = 42814,	-- Skeezy Whillzap
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
+					["qg"] = 42814,	-- Skeezy Whillzap
 					["coord"] = { 63.7, 39.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2897,11 +2883,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(26729, {	-- Water Elementals
+					["sourceQuest"] = 26736,	-- Spared from Madness
 					["providers"] = {
 						{ "n", 43885 },	-- Emerine Junis
 						{ "i", 60273 },	-- Emerine's Telling-Sphere
 					},
-					["sourceQuest"] = 26736,	-- Spared from Madness
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2914,10 +2900,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(583, {	-- Welcome to the Jungle
-					["qg"] = 716,	-- Barnil Stonepot
 					-- #if AFTER CATA
 					["sourceQuest"] = 26340,	-- The Hunt
 					-- #endif
+					["qg"] = 716,	-- Barnil Stonepot
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.2, 22.1, NORTHERN_STRANGLETHORN },
@@ -2935,11 +2921,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(26330, {	-- Who's a Big Troll
+					["sourceQuest"] = 26325,	-- A Nose for This Sort of Thing
 					["providers"] = {
 						{ "o", 2076 },	-- Bubbling Cauldron
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["sourceQuest"] = 26325,	-- A Nose for This Sort of Thing
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2967,11 +2953,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26730, {	-- You Can Take the Murloc Out of the Ocean...
+					["sourceQuest"] = 26729,	-- Water Elementals
 					["providers"] = {
 						{ "n", 43885 },	-- Emerine Junis
 						{ "i", 60273 },	-- Emerine's Telling-Sphere
 					},
-					["sourceQuest"] = 26729,	-- Water Elementals
 					["coord"] = { 47.6, 10.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2989,8 +2975,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26779, {	-- Zul'Mamwe Mambo (A)
-					["qg"] = 44021,	-- Ghaliri
 					["sourceQuest"] = 26773,	-- See Raptor
+					["qg"] = 44021,	-- Ghaliri
 					["coord"] = { 52.6, 66.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3027,8 +3013,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26405, {	-- Zul'Mamwe Mambo (H)
-					["qg"] = 42811,	-- Surkhan
 					["sourceQuest"] = 26359,	-- See Raptor
+					["qg"] = 42811,	-- Surkhan
 					["coord"] = { 63.2, 38.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3135,6 +3121,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(51661, {	-- Tsul'Kalu
 					["coord"] = { 47.0, 32.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_6 },
+				}),
+			}),
+			n(TREASURES, {
+				o(2744, {	-- Giant Clam
+					["coords"] = {
+						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+					},
+					["nomerge"] = true,
+					["groups"] = {
+						i(4611),	-- Blue Pearl
+						i(4655),	-- Giant Clam Meat
+					},
 				}),
 			}),
 			n(VENDORS, {

@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(TOWNLONG_STEPPES, {
 		["icon"] = 618796,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19889),		-- Campaign: Townlong Steppes
 				ach(19997),		-- Elusive Foes: Townlong Steppes
@@ -47,7 +47,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19914,	-- Shado-Pan
 						19966,	-- Tour Townlong Steppes
 					}},
-					["g"] = {
+					["groups"] = {
 						i(221817),	-- Muskpaw Calf (PET!)
 					},
 				}),

@@ -9,19 +9,19 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(10, {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
 					n(QUESTS, {
 						q(38175, {	-- Scrap Meltdown
-							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 77377 },	-- Kristen Stoneforge
+							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
-							["g"] = {
+							["groups"] = {
 								i(120301),	-- Armor Enhancement Token
 								i(120302),	-- Weapon Enhancement Token
 							},
 						}),
 						q(38188, {	-- Scrap Meltdown
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 79815 },	-- Gun'lek
+							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
-							["g"] = {
+							["groups"] = {
 								i(120301),	-- Armor Enhancement Token
 								i(120302),	-- Weapon Enhancement Token
 							},
@@ -29,14 +29,14 @@ root(ROOTS.ExpansionFeatures,
 						q(37092, {	-- Scraps of Iron
 							["provider"] = { "n", 77377 },	-- Kristen Stoneforge
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(118365),	-- Stormwind Tabard
 							},
 						}),
 						q(37043, {	-- Scraps of Iron
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 79815 },	-- Gun'lek
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(118372),	-- Orgrimmar Tabard
 							},
 						}),
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures,
 					n(VENDORS, {
 						n(77377, {	-- Kristen Stoneforge <Quartermaster>
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(113807, {	-- Blackrock Chestplate
 									["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
 								}),
@@ -214,7 +214,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(79815, {	-- Grun'lek - Quartermaster	-- War Mill
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(113807, {	-- Blackrock Chestplate
 									["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
 								}),

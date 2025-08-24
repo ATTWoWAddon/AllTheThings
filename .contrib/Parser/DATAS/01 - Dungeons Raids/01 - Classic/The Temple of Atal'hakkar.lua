@@ -106,8 +106,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(QUESTS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9053, {	-- A Better Ingredient
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9051,	-- Toxic Test
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
@@ -137,8 +137,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(10593, {	-- An Ancient Evil
-					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["coord"] = { 57.8, 92, UNDERCITY },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -154,8 +154,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8257, {	-- Blood of Morphaz
-					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
+					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PRIEST },
@@ -177,8 +177,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8413, {	-- Da Voodoo
-					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8412,	-- Spirit Totem
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE TBC
@@ -208,8 +208,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8253, {	-- Destroy Morphaz
-					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8252,	-- The Siren's Coral
+					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { MAGE },
@@ -231,8 +231,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(27605, {	-- Eranikus
-					["qg"] = 46077,	-- Lord Itharius
 					["sourceQuest"] = 27915,	-- The Heart of the Temple
+					["qg"] = 46077,	-- Lord Itharius
 					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
@@ -245,8 +245,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8418, {	-- Forging the Mightstone
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -277,8 +277,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(4143, {	-- Haze of Evil
-					["qg"] = 7775,	-- Gregan Brewspewer
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
+					["qg"] = 7775,	-- Gregan Brewspewer
 					["coord"] = { 45.1, 25.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -291,31 +291,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3512, {	-- In Eranikus' Own Words
-					["qg"] = 5353,	-- Itharius
-					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
+					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
+					["qg"] = 5353,	-- Itharius
 					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
+					["lvl"] = 48,
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate,
 					-- #endif
-					["lvl"] = 48,
 				}),
 				q(3446, {	-- Into the Depths
+					["sourceQuest"] = 3444,	-- The Stone Circle
 					["providers"] = {
 						{ "n",  7771 },	-- Marvon Rivetseeker
 						{ "i",  10466 },	-- Atal'ai Stone Circle
 						{ "o", 148836 },	-- Altar of Hakkar
 					},
-					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 46,
 				}),
 				q(1475, {	-- Into The Temple of Atal'Hakkar
-					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["sourceQuest"] = 1469,	-- Rhapsody's Tale
+					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -361,8 +361,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8236, {	-- The Azure Key
-					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8235,	-- Encoded Fragments
+					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -399,11 +399,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus
+					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["providers"] = {
 						{ "i",  10454 },	-- Essence of Eranikus
 						{ "o", 148512 },	-- Essence Font
 					},
-					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
@@ -413,21 +413,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
-					["qg"] = 5353,	-- Itharius
-					["sourceQuest"] = 3373,	-- The Essence of Eranikus
-					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
 					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
+					["sourceQuest"] = 3373,	-- The Essence of Eranikus
+					["qg"] = 5353,	-- Itharius
+					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
 					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
+					["lvl"] = 48,
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate,
 					-- #endif
-					["lvl"] = 48,
 				}),
 				q(3528, {	-- The God Hakkar
-					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 4787,	-- The Ancient Egg
+					["qg"] = 8579,	-- Yeh'kinya
 					["coord"] = { 66.8, 22.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -452,8 +452,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8232, {	-- The Green Drake
-					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8231,	-- Wavethrashing
+					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { HUNTER },
@@ -475,8 +475,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(1445, {	-- The Temple of Atal'Hakkar
-					["qg"] = 1443,	-- Fel'zerul
 					["sourceQuest"] = 1424,	-- Pool of Tears
+					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -491,8 +491,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8422, {	-- Trolls of a Feather
-					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuest"] = 8421,	-- The Wrong Stuff
+					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -519,8 +519,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8425, {	-- Voodoo Feathers
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -547,11 +547,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(4146, {	-- Zapper Fuel
+					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["providers"] = {
 						{ "n", 8496 },	-- Liv Rizzlefix <Workshop Assistant>
 						{ "i", 11319 },	-- Unloaded Zapper
 					},
-					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -564,9 +564,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			-- #if AFTER 10.1.5
-			prof(SKINNING, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+			prof(SKINNING, {
 				i(20381),	-- Dreamscale
-			})),
+			}),
 			-- #endif
 			-- #if NOT SEASON_OF_DISCOVERY
 			SUNKEN_TEMPLE_ZONE_DROPS,
@@ -607,11 +607,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
 					q(3447, {	-- Secret of the Circle
+						["sourceQuest"] = 3444,	-- The Stone Circle
 						["providers"] = {
 							{ "n",   7771 },	-- Marvon Rivetseeker
 							{ "o", 148838 },	-- Idol of Hakkar
 						},
-						["sourceQuest"] = 3444,	-- The Stone Circle
 						["coord"] = { 52.6, 45.8, TANARIS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 46,
@@ -770,11 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(463, {	-- Shade of Erankikus
 				["creatureID"] = 5709,
 				["groups"] = {
-					ach(641, {	-- Sunken Temple
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 3373,	-- The Essence of Eranikus
-						-- #endif
-					}),
+					ach(641),	-- Sunken Temple
 					ach(5050, {	-- Sunken Temple Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -798,8 +794,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					n(QUESTS, {
 						q(82112, {	-- A Better Ingredient
-							["qg"] = 9619,	-- Torwa Pathfinder
 							--["sourceQuest"] = 9051,	-- Toxic Test
+							["qg"] = 9619,	-- Torwa Pathfinder
 							["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 							["classes"] = { DRUID },
 							["lvl"] = 50,
@@ -852,14 +848,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82021, {	-- A Fortuitous Turn of Events
-							["qg"] = 222188,	-- Shadowy Figure
 							["sourceQuest"] = 82020,	-- Return to Moonglade
+							["qg"] = 222188,	-- Shadowy Figure
 							["coord"] = { 52.0, 40.6, MOONGLADE },
 							["lvl"] = 50,
 						}),
 						q(82017, {	-- An Amalagamation of Nightmares
-							["qg"] = 221477,	-- Field Captain Hannalah
 							["sourceQuest"] = 82015,	-- Emotional Damage HQT
+							["qg"] = 221477,	-- Field Captain Hannalah
 							["coord"] = { 89.6, 40.6, ASHENVALE },
 							["maps"] = { MOONGLADE },
 							["lvl"] = 40,
@@ -886,8 +882,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82111, {	-- Blood of Morphaz
-							["qg"] = 8405,	-- Ogtinc
 							--["sourceQuest"] = 8256,	-- The Ichor of Undeath
+							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { PRIEST },
 							["lvl"] = 50,
@@ -908,8 +904,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82113, {	-- Da Voodoo
-							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							--["sourceQuest"] = 8412,	-- Spirit Totem
+							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 							-- #if BEFORE TBC
 							["races"] = HORDE_ONLY,
@@ -938,8 +934,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82114, {	-- Destroy Morphaz
-							["qg"] = 8379,	-- Archmage Xylem
 							--["sourceQuest"] = 8252,	-- The Siren's Coral
+							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["classes"] = { MAGE },
 							["lvl"] = 50,
@@ -973,8 +969,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(82106, {	-- Forging the Mightstone
-							["qg"] = 10838,	-- Commander Ashlam Valorfist
 							--["sourceQuest"] = 8416,	-- Inert Scourgestones
+							["qg"] = 10838,	-- Commander Ashlam Valorfist
 							["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
@@ -1004,14 +1000,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82019, {	-- Going Under
-							["qg"] = 5353,	-- Itharius
 							["sourceQuest"] = 82018,	-- Itharius
+							["qg"] = 5353,	-- Itharius
 							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
 							["lvl"] = 40,
 						}),
 						q(82099, {	-- Haze of Evil
-							["qg"] = 7775,	-- Gregan Brewspewer
 							["sourceQuest"] = 4142,	-- A Visit to Gregan
+							["qg"] = 7775,	-- Gregan Brewspewer
 							["coord"] = { 45.1, 25.6, FERALAS },
 							["maps"] = { UNGORO_CRATER },
 							["races"] = ALLIANCE_ONLY,
@@ -1050,8 +1046,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82018, {	-- Itharius
-							["qg"] = 12042,	-- Loganaar <Druid Trainer>
 							["sourceQuest"] = 82017,	-- An Amalagamation of Nightmares
+							["qg"] = 12042,	-- Loganaar <Druid Trainer>
 							["coord"] = { 52.4, 40.4, MOONGLADE },
 							["maps"] = { SWAMP_OF_SORROWS },
 							["lvl"] = 40,
@@ -1075,8 +1071,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82020, {	-- Return to Moonglade
-							["qg"] = 5353,	-- Itharius
 							["sourceQuest"] = 82019,	-- Going Under
+							["qg"] = 5353,	-- Itharius
 							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
 							["maps"] = { MOONGLADE },
 							["lvl"] = 50,
@@ -1103,8 +1099,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82110, {	-- The Azure Key
-							["qg"] = 8379,	-- Archmage Xylem
 							--["sourceQuest"] = 8235,	-- Encoded Fragments
+							["qg"] = 8379,	-- Archmage Xylem
 							["coord"] = { 29.6, 40.6, AZSHARA },
 							["maps"] = { HILLSBRAD_FOOTHILLS },
 							["classes"] = { ROGUE },
@@ -1126,8 +1122,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82022, {	-- The Bad News...
-							["qg"] = 222188,	-- Shadowy Figure
 							["sourceQuest"] = 82021,	-- A Fortuitous Turn of Events
+							["qg"] = 222188,	-- Shadowy Figure
 							["coord"] = { 52.0, 40.6, MOONGLADE },
 							["maps"] = { STRANGLETHORN_VALE },
 							["lvl"] = 50,
@@ -1152,8 +1148,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82095, {	-- The God Hakkar
-							["qg"] = 8579,	-- Yeh'kinya
 							["sourceQuest"] = 4787,	-- The Ancient Egg
+							["qg"] = 8579,	-- Yeh'kinya
 							["coord"] = { 66.8, 22.4, TANARIS },
 							["lvl"] = 50,
 							["groups"] = {
@@ -1171,8 +1167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82108, {	-- The Green Drake
-							["qg"] = 8405,	-- Ogtinc
 							--["sourceQuest"] = 8231,	-- Wavethrashing
+							["qg"] = 8405,	-- Ogtinc
 							["coord"] = { 42.2, 42.6, AZSHARA },
 							["classes"] = { HUNTER },
 							["lvl"] = 50,
@@ -1193,11 +1189,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82102, {	-- The Essence of Eranikus
+							["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 							["providers"] = {
 								{ "i", 221475 },	-- Essence of Eranikus
 								{ "o", 148512 },	-- Essence Font
 							},
-							["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 							["lvl"] = 50,
 							["groups"] = {
 								i(221474),	-- Chained Essence of Eranikus
@@ -1218,8 +1214,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82115, {	-- Trolls of a Feather
-							["qg"] = 14470,	-- Impsy <Niby's Minion>
 							--["sourceQuest"] = 8421,	-- The Wrong Stuff
+							["qg"] = 14470,	-- Impsy <Niby's Minion>
 							["coord"] = { 41.6, 45.0, FELWOOD },
 							["classes"] = { WARLOCK },
 							["lvl"] = 50,
@@ -1245,8 +1241,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(82107, {	-- Voodoo Feathers
-							["qg"] = 7572,	-- Fallen Hero of the Horde
 							--["sourceQuest"] = 8424,	-- War on the Shadowsworn
+							["qg"] = 7572,	-- Fallen Hero of the Horde
 							["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 							["classes"] = { WARRIOR },
 							["lvl"] = 50,
@@ -1272,8 +1268,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(81986, {	-- Waking the Nightmare
-							["qg"] = 222188,	-- Shadowy Figure
 							["sourceQuest"] = 82022,	-- The Bad News...
+							["qg"] = 222188,	-- Shadowy Figure
 							["coord"] = { 52.0, 40.6, MOONGLADE },
 							["maps"] = { ASHENVALE },
 							["lvl"] = 50,

@@ -12,7 +12,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 	end
 end]];
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,
 		["coord"] = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
@@ -25,8 +25,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(QUESTS, {
 					q(13384, {	-- Judgment at the Eye of Eternity
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						-- #if ANYCLASSIC
 						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
@@ -78,8 +78,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				n(QUESTS, {
 					q(13385, {	-- Heroic Judgment at the Eye of Eternity
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Heart of Magic
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						ach(1400, {	-- Realm First! Magic Seeker
 							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8  },
-							["g"] = {
+							["groups"] = {
 								title(88, {	-- <Name> the Magic Seeker
 									["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
 								}),
@@ -145,4 +145,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 		},
 	}),
-})));
+}))));

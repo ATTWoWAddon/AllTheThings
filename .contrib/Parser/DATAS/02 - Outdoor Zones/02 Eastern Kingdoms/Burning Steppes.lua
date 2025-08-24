@@ -7,37 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236734,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(775),	-- Explore Burning Steppes
+				ach(775),	-- Explore Burning Steppes
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Preparation
-							["sourceQuests"] = {
-								28183,	-- Return to Keeshan (A)
-								28425,	-- Return to Ariok (H)
-							},
-						}),
-						crit(2, {	-- Annihilation
-							["sourceQuests"] = {
-								28322,	-- The Spoils of War (A)
-								28456,	-- The Spoils of War (H)
-							},
-						}),
-						crit(3, {	-- Infiltration
-							["sourceQuests"] = {
-								28286,	-- Enough Damage For One Day (A)
-								28441,	-- Enough Damage For One Day (H)
-							},
-						}),
-						crit(4, {	-- Anticipation
-							["sourceQuests"] = {
-								28326,	-- Placing the Pawns (A)
-								28449,	-- Placing the Pawns (H)
-							},
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						28183,	-- Return to Keeshan (A)
@@ -49,7 +23,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28326,	-- Placing the Pawns (A)
 						28449,	-- Placing the Pawns (H)
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),
@@ -128,92 +101,108 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
+					["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 17,
+					["groups"] = {
+						q(31914, {	-- Durin Darkhammer
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(28316, {	-- A Deal With a Dragon (A)
-					["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
-						{ "n", 48306 },	-- John J. Keeshan
-						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
-						{ "i", 63431 },	-- Rescued Whelplings
-					},
 					["sourceQuests"] = {
 						28313,	-- A Heap of Delicious Worg (A)
 						28311,	-- Blackened Ashes (A)
 						28312,	-- Latent Demons of the Land (A)
+					},
+					["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
+						{ "n", 48306 },	-- John J. Keeshan
+						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
+						{ "i", 63431 },	-- Rescued Whelplings
 					},
 					["coord"] = { 73.5, 67.2, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28448, {	-- A Deal With a Dragon (H)
-					["providers"] = {
-						{ "n", 48565 },	-- Ariok
-						{ "i", 63431 },	-- Rescued Whelplings
-					},
 					["sourceQuests"] = {
 						28445,	-- A Heap of Delicious Worg (H)
 						28443,	-- Blackened Ashes (H)
 						28444,	-- Latent Demons of the Land (H)
+					},
+					["providers"] = {
+						{ "n", 48565 },	-- Ariok
+						{ "i", 63431 },	-- Rescued Whelplings
 					},
 					["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28318, {	-- A Delivery for Neeralak (A)
+					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["providers"] = {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63430 },	-- Crate of Sleeping Flamekin
 					},
-					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28451, {	-- A Delivery for Neeralak (H)
+					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["providers"] = {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63430 },	-- Crate of Sleeping Flamekin
 					},
-					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28317, {	-- A Delivery for Thorg'izog (A)
+					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["providers"] = {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
 					},
-					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28450, {	-- A Delivery for Thorg'izog (H)
+					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["providers"] = {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63429 },	-- Slider Cider-Marinated Cutlets
 					},
-					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28319, {	-- A Delivery for Xi'lun (A)
+					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["providers"] = {
 						{ "n", 48307 },	-- Colonel Troteman
 						{ "i", 63134 },	-- Clear Glass Orb
 					},
-					["sourceQuest"] = 28326,	-- Placing the Pawns (A)
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28452, {	-- A Delivery for Xi'lun (H)
+					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["providers"] = {
 						{ "n", 48569 },	-- Eitrigg
 						{ "i", 63134 },	-- Clear Glass Orb
 					},
-					["sourceQuest"] = 28449,	-- Placing the Pawns (H)
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -235,8 +224,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28178, {	-- A Future Project (A)
-					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -254,8 +243,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28420, {	-- A Future Project (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -274,13 +263,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- A Heap of Delicious Worg
 					["allianceQuestData"] = q(28313, {	-- A Heap of Delicious Worg (A)
-						["qg"] = 48307,	-- Colonel Troteman
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
+						["qg"] = 48307,	-- Colonel Troteman
 						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28445, {	-- A Heap of Delicious Worg (H)
-						["qg"] = 48569,	-- Eitrigg
 						["sourceQuest"] = 28442,	-- Flame Crest
+						["qg"] = 48569,	-- Eitrigg
 						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -295,30 +284,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(28254, {	-- A Needle in a Hellhole (A)
-					["qg"] = 48109,	-- John J. Keeshan
 					["sourceQuest"] = 28184,	-- Chiselgrip, the Heart of the Steppes (A)
+					["qg"] = 48109,	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28427, {	-- A Needle in a Hellhole (H)
-					["qg"] = 48568,	-- Eitrigg
 					["sourceQuest"] = 28426,	-- Chiselgrip, the Heart of the Steppes (H)
+					["qg"] = 48568,	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28202, {	-- A Perfect Costume (A)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
 					-- #endif
+					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -340,16 +329,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28203, {	-- A Perfect Costume (A)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
+					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -364,16 +353,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28204, {	-- A Perfect Costume (A)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { GNOME, MECHAGNOME },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
+					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { GNOME, MECHAGNOME },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -388,16 +377,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28205, {	-- A Perfect Costume (A)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { NIGHTELF },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
+					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { NIGHTELF },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -412,16 +401,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28428, {	-- A Perfect Costume (H)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { ORC, UNDEAD, MAGHAR },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
 					-- #endif
+					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { ORC, UNDEAD, MAGHAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -436,16 +425,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28429, {	-- A Perfect Costume (H)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
+					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -460,16 +449,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28430, {	-- A Perfect Costume (H)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { GOBLIN, VULPERA },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
+					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { GOBLIN, VULPERA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -484,16 +473,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28431, {	-- A Perfect Costume (H)
-					["qg"] = 48001,	-- Thelaron Direneedle
-					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
-					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
+					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
+					["qg"] = 48001,	-- Thelaron Direneedle
+					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -509,13 +498,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Abuse of Power
 					["allianceQuestData"] = q(28279, {	-- Abuse of Power (A)
-						["qg"] = 48110,	-- Colonel Troteman
 						["sourceQuest"] = 28266,	-- Trial by Magma (A)
+						["qg"] = 48110,	-- Colonel Troteman
 						["coord"] = { 46.3, 45.9, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28440, {	-- Abuse of Power (H)
-						["qg"] = 48568,	-- Eitrigg
 						["sourceQuest"] = 28438,	-- Trial by Magma (H)
+						["qg"] = 48568,	-- Eitrigg
 						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -536,7 +525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else
@@ -551,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else
@@ -559,15 +548,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 				}),
 				q(7630, {	-- Arcanite
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["sourceQuests"] = {
 						7626,	-- Bell of Dethmoora
 						7627,	-- Wheel of the Black March
 						7628,	-- Doomsday Candle
 					},
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 12360, 1 },	-- Arcanite Bar
@@ -575,17 +563,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 12360, 3 },	-- Arcanite Bar
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				{	-- Assault on Dreadmaul Rock
 					["allianceQuestData"] = q(28320, {	-- Assault on Dreadmaul Rock (A)
-						["qg"] = 48306,	-- John J. Keeshan
 						["sourceQuest"] = 28327,	-- Locked and Loaded (A)
+						["qg"] = 48306,	-- John J. Keeshan
 						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28454, {	-- Assault on Dreadmaul Rock (H)
-						["qg"] = 48565,	-- Ariok
 						["sourceQuest"] = 28453,	-- Locked and Loaded (H)
+						["qg"] = 48565,	-- Ariok
 						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_1 },
@@ -599,11 +588,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(7626, {	-- Bell of Dethmoora
-					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 9264, 2 },	-- Elixir of Shadow Power
@@ -611,17 +599,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 9264, 10 },	-- Elixir of Shadow Power
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				{	-- Blackened Ashes
 					["allianceQuestData"] = q(28311, {	-- Blackened Ashes (A)
-						["qg"] = 48307,	-- Colonel Troteman
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
+						["qg"] = 48307,	-- Colonel Troteman
 						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28443, {	-- Blackened Ashes (H)
-						["qg"] = 48569,	-- Eitrigg
 						["sourceQuest"] = 28442,	-- Flame Crest
+						["qg"] = 48569,	-- Eitrigg
 						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -634,24 +623,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Blood Tour
 					["allianceQuestData"] = q(28314, {	-- Blood Tour (A)
-						["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
-						{ "n", 48306 },	-- John J. Keeshan
-						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
-					},
 						["sourceQuests"] = {
 							28313,	-- A Heap of Delicious Worg (A)
 							28311,	-- Blackened Ashes (A)
 							28312,	-- Latent Demons of the Land (A)
 						},
+						["qgs"] = {
+							48306,	-- John J. Keeshan
+							48346,	-- John J. Keeshan (mobileNPC)
+						},
 						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28446, {	-- Blood Tour (H)
-						["qg"] = 48565,	-- Ariok
 						["sourceQuests"] = {
 							28445,	-- A Heap of Delicious Worg (H)
 							28443,	-- Blackened Ashes (H)
 							28444,	-- Latent Demons of the Land (H)
 						},
+						["qg"] = 48565,	-- Ariok
 						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -685,9 +674,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28174, {	-- Burning Vengeance (A)
-					["qg"] = 47811,	-- John J. Keeshan
-					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
+					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -701,9 +690,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28416, {	-- Burning Vengeance (A)
-					["qg"] = 47811,	-- John J. Keeshan
-					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
 					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
+					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -717,8 +706,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28418, {	-- Burning Vengeance (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuest"] = 28667,	-- Warchief's Command: Burning Steppes!
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -732,11 +721,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28184, {	-- Chiselgrip, the Heart of the Steppes (A)
-					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = {
 						28172,	-- Done Nothing Wrong (A)
 						28183,	-- Return to Keeshan (A)
 					},
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -768,11 +757,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28426, {	-- Chiselgrip, the Heart of the Steppes (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuests"] = {
 						28417,	-- Done Nothing Wrong (H)
 						28425,	-- Return to Ariok (H)
 					},
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.5, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -804,11 +793,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7628, {	-- Doomsday Candle
-					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 15416, 3},	-- 3x Black Dragonscal
@@ -816,11 +804,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 15416, 35},	-- 35x Black Dragonscale
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				q(28172, {	-- Done Nothing Wrong (A)
-					["qg"] = 47779,	-- Mouton Flamestar
 					["sourceQuest"] = 28514,	-- Mouton Flamestar (A)
+					["qg"] = 47779,	-- Mouton Flamestar
 					["coord"] = { 16.9, 51.3, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -861,8 +850,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28417, {	-- Done Nothing Wrong (H)
-					["qg"] = 47779,	-- Mouton Flamestar
 					["sourceQuest"] = 28515,	-- Mouton Flamestar (H)
+					["qg"] = 47779,	-- Mouton Flamestar
 					["coord"] = { 16.9, 51.3, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -907,24 +896,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Draconic Vanguard
 					["allianceQuestData"] = q(28315, {	-- Draconic Vanguard (A)
-						["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
-						{ "n", 48306 },	-- John J. Keeshan
-						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
-					},
 						["sourceQuests"] = {
 							28313,	-- A Heap of Delicious Worg (A)
 							28311,	-- Blackened Ashes (A)
 							28312,	-- Latent Demons of the Land (A)
 						},
+						["qgs"] = {
+							48306,	-- John J. Keeshan
+							48346,	-- John J. Keeshan (mobileNPC)
+						},
 						["coord"] = { 73.5, 67.2, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28447, {	-- Draconic Vanguard (H)
-						["qg"] = 48565,	-- Ariok
 						["sourceQuests"] = {
 							28445,	-- A Heap of Delicious Worg (H)
 							28443,	-- Blackened Ashes (H)
 							28444,	-- Latent Demons of the Land (H)
 						},
+						["qg"] = 48565,	-- Ariok
 						["coord"] = { 54.7, 24.5, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -948,8 +937,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(28286, {	-- Enough Damage For One Day (A)
-					["qg"] = 48110,	-- Colonel Troteman
 					["sourceQuest"] = 28279,	-- Abuse of Power (A)
+					["qg"] = 48110,	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -972,8 +961,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28441, {	-- Enough Damage For One Day (H)
-					["qg"] = 48568,	-- Eitrigg
 					["sourceQuest"] = 28440,	-- Abuse of Power (H)
+					["qg"] = 48568,	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1014,11 +1003,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(4808, {	-- Felnok Steelspring
+					["sourceQuest"] = 4726,	-- Broodling Essence
 					["providers"] = {
 						{ "n", 10267 },	-- Tinkee Steamboil
 						{ "i", 12438 },	-- Tinkee's Letter
 					},
-					["sourceQuest"] = 4726,	-- Broodling Essence
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -1048,41 +1037,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28442, {	-- Flame Crest
-					["qg"] = 48568,	-- Eitrigg
 					["sourceQuest"] = 28441,	-- Enough Damage for One Day (H)
+					["qg"] = 48568,	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28265, {	-- General Thorg'izog (A)
-					["qg"] = 48109,	-- John J. Keeshan
 					["sourceQuests"] = {
 						28227,	-- Golem Training
 						28253,	-- Taking the Horn For Ourselves (A)
 					},
+					["qg"] = 48109,	-- John J. Keeshan
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28437, {	-- General Thorg'izog (H)
-					["qg"] = 48568,	-- Eitrigg
 					["sourceQuests"] = {
 						28227,	-- Golem Training
 						28436,	-- Taking the Horn For Ourselves (H)
 					},
+					["qg"] = 48568,	-- Eitrigg
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				{	-- Glory Amidst Chaos
 					["allianceQuestData"] = q(28321, {	-- Glory Amidst Chaos (A)
-						["qg"] = 48307,	-- Colonel Troteman
 						["sourceQuest"] = 28320,	-- Assault on Dreadmaul Rock (A)
+						["qg"] = 48307,	-- Colonel Troteman
 						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28455, {	-- Glory Amidst Chaos (H)
-						["qg"] = 48569,	-- Eitrigg
 						["sourceQuest"] = 28454,	-- Assault on Dreadmaul Rock (H)
+						["qg"] = 48569,	-- Eitrigg
 						["coord"] = { 54.6, 24.5, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_1 },
@@ -1102,11 +1091,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(28227, {	-- Golem Training
-					["qg"] = 48033,	-- Stebben Oreknuckle
 					["sourceQuests"] = {
 						28225,	-- Prove Yer Allegiance
 						28226,	-- Scrapped Golems
 					},
+					["qg"] = 48033,	-- Stebben Oreknuckle
 					["coord"] = { 46.8, 44.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -1128,8 +1117,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3824, {	-- Gor'tesh the Brute Lord
-					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3823,	-- Extinguish the Firegut
+					["qg"] = 9177,	-- Oralius
 					["coord"] = { 84.6, 68.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1198,13 +1187,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(7629, {	-- Imp Delivery
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 18688 },	-- Imp in a Jar
-					},
 					["sourceQuests"] = {
 						7625,	-- Xorothian Stardust
 						7630,	-- Arcanite
+					},
+					["providers"] = {
+						{ "n", 14437 },	-- Gorzeeki Wildeyes
+						{ "i", 18688 },	-- Imp in a Jar
 					},
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1213,28 +1202,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 60,
 				}),
 				q(28239, {	-- Into the Black Tooth Hovel (A)
+					["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (A)
 					["providers"] = {
 						{ "n", 48109 },	-- John J. Keeshan
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["sourceQuests"] = { 28202, 28203, 28204, 28205 },	-- A Perfect Costume (A)
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28432, {	-- Into the Black Tooth Hovel (H)
+					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (H)
 					["providers"] = {
 						{ "n", 48568 },	-- Eitrigg
 						{ "i", 63357 },	-- Blackrock Disguise
 					},
-					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (H)
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3822, {	-- Krom'Grul
-					["qg"] = 9136,	-- Sha'ni Proudtusk
 					["sourceQuest"] = 3821,	-- Dreadmaul Rock
+					["qg"] = 9136,	-- Sha'ni Proudtusk
 					["coord"] = { 79.8, 45.4, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1251,13 +1240,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Latent Demons of the Land
 					["allianceQuestData"] = q(28312, {	-- Latent Demons of the Land (A)
-						["qg"] = 48307,	-- Colonel Troteman
 						["sourceQuest"] = 28310,	-- Morgan's Vigil
+						["qg"] = 48307,	-- Colonel Troteman
 						["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28444, {	-- Latent Demons of the Land (H)
-						["qg"] = 48569,	-- Eitrigg
 						["sourceQuest"] = 28442,	-- Flame Crest
+						["qg"] = 48569,	-- Eitrigg
 						["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1276,7 +1265,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 8411, 1 },	-- Lung Juice Cocktail
@@ -1284,6 +1272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11952, 4 },	-- Night Dragon's Breath
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11642, {	-- Lesser Arcanum of Constitution
@@ -1295,7 +1284,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11567, 4 },	-- Crystal Spire
@@ -1303,6 +1291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11736, 1 },	-- Libram of Resilience
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11644, {	-- Lesser Arcanum of Resilience
@@ -1314,7 +1303,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11752, 1 },	-- Black Blood of the Tormented
@@ -1322,6 +1310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11732, 1 },	-- Libram of Rumination
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11622, {	-- Lesser Arcanum of Rumination
@@ -1333,7 +1322,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11734, 1 },	-- Libram of Tenacity
@@ -1341,6 +1329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11753, 1 },	-- Eye of Kajal
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11643, {	-- Lesser Arcanum of Tenacity
@@ -1352,7 +1341,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11737, 1 },	-- Libram of Voracity
@@ -1360,6 +1348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11563, 4 },	-- Crystal Force
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11647, {	-- Lesser Arcanum of Voracity
@@ -1406,12 +1395,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28453, {	-- Locked and Loaded (H)
-					["qg"] = 48569,	-- Eitrigg
 					["sourceQuests"] = {
 						28451,	-- A Delivery for Neeralak (H)
 						28450,	-- A Delivery for Thorg'izog (H)
 						28452,	-- A Delivery for Xi'lun (H)
 					},
+					["qg"] = 48569,	-- Eitrigg
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1434,13 +1423,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7623, {	-- Lord Banehollow
-					["qg"] = 14437,	-- Gorzeeki Wildeyes
-					-- #if BEFORE TBC
-					["sourceQuest"] = 7564,	-- Wildeyes
-					-- #endif
 					-- #if BEFORE 4.0.3
 					["description"] = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
 					-- #endif
+					-- #if BEFORE TBC
+					["sourceQuest"] = 7564,	-- Wildeyes
+					-- #endif
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
@@ -1475,15 +1464,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 60,
 				}),
 				q(28310, {	-- Morgan's Vigil
-					["qg"] = 48110,	-- Colonel Troteman
 					["sourceQuest"] = 28286,	-- Enough Damage for One Day (A)
+					["qg"] = 48110,	-- Colonel Troteman
 					["coord"] = { 46.3, 46.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28179, {	-- Mud Hunter (A)
-					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1501,8 +1490,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28421, {	-- Mud Hunter (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1520,8 +1509,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28491, {	-- Not Fireflies, Flameflies
-					["qg"] = 10260,	-- Kibler
 					["sourceQuest"] = 28442,	-- Flame Crest
+					["qg"] = 10260,	-- Kibler
 					["coord"] = { 54.9, 22.5, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1552,8 +1541,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
-					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3824,	-- Gor'tesh the Brute Lord
+					["qg"] = 9177,	-- Oralius
 					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1575,12 +1564,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28326, {	-- Placing the Pawns (A)
-					["qg"] = 48307,	-- Colonel Troteman
 					["sourceQuests"] = {
 						28316,	-- A Deal With a Dragon (A)
 						28314,	-- Blood Tour (A)
 						28315,	-- Draconic Vanguard (A)
 					},
+					["qg"] = 48307,	-- Colonel Troteman
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1600,12 +1589,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28449, {	-- Placing the Pawns (H)
-					["qg"] = 48569,	-- Eitrigg
 					["sourceQuests"] = {
 						28448,	-- A Deal With a Dragon (H)
 						28446,	-- Blood Tour (H)
 						28447,	-- Draconic Vanguard (H)
 					},
+					["qg"] = 48569,	-- Eitrigg
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1625,8 +1614,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28225, {	-- Prove Yer Allegiance
-					["qg"] = 48033,	-- Stebben Oreknuckle
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
+					["qg"] = 48033,	-- Stebben Oreknuckle
 					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
@@ -1640,8 +1629,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(7563, {	-- Rage of Blood
-					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7562,	-- Mor'zul Bloodbringer
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
@@ -1661,58 +1650,54 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28425, {	-- Return to Ariok
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 63354 },	-- Warlock Supplies
-					},
 					["sourceQuests"] = {
 						28424,	-- Shadow Boxing (A)
 						28423,	-- Warlocks Have the Neatest Stuff (A)
+					},
+					["providers"] = {
+						{ "n", 14437 },	-- Gorzeeki Wildeyes
+						{ "i", 63354 },	-- Warlock Supplies
 					},
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28183, {	-- Return to Keeshan
-					["providers"] = {
-						{ "n", 14437 },	-- Gorzeeki Wildeyes
-						{ "i", 63354 },	-- Warlock Supplies
-					},
 					["sourceQuests"] = {
 						28182,	-- Shadow Boxing (H)
 						28181,	-- Warlocks Have the Neatest Stuff (H)
+					},
+					["providers"] = {
+						{ "n", 14437 },	-- Gorzeeki Wildeyes
+						{ "i", 63354 },	-- Warlock Supplies
 					},
 					["coord"] = { 8.3, 35.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28226, {	-- Scrapped Golems
-					["qg"] = 48033,	-- Stebben Oreknuckle
 					["sourceQuests"] = { 28184, 28426 },	-- Chiselgrip, the Heart of the Steppes (A/H versions)
+					["qg"] = 48033,	-- Stebben Oreknuckle
 					["coord"] = { 46.7, 44.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/3 Obsidian Piston
 							["provider"] = { "i", 63333 },	-- Obsidian Piston
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(2, {	-- 0/1 Flux Exhaust Sieve
 							["provider"] = { "i", 63336 },	-- Flux Exhaust Sieve
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(3, {	-- 0/1 Thorium Gearshaft
 							["provider"] = { "i", 63335 },	-- Thorium Gearshaft
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(4, {	-- 0/1 Stone Power Core
 							["provider"] = { "i", 63334 },	-- Stone Power Core
-							["cr"] = 7039,	-- War Reaver
 						}),
 					},
 				}),
 				q(28415, {	-- SEVEN! YUP!
-					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 28310,	-- Morgan's Vigil
+					["qg"] = 9177,	-- Oralius
 					["coord"] = { 71.8, 67.9, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1759,8 +1744,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(28177, {	-- Stocking Up (A)
-					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = { 28174, 28416 },	-- Burning Vengeance (A)
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1781,8 +1766,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28419, {	-- Stocking Up (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuest"] = 28418,	-- Burning Vengeance (H)
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1801,13 +1786,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Strategic Cuts
 					["allianceQuestData"] = q(28246, {	-- Strategic Cuts (A)
-						["qg"] = 48110,	-- Colonel Troteman
 						["sourceQuest"] = 28245,	-- Grunt Work (A)
+						["qg"] = 48110,	-- Colonel Troteman
 						["coord"] = { 46.3, 45.9, BURNING_STEPPES },
 					}),
 					["hordeQuestData"] = q(28434, {	-- Strategic Cuts (H)
-						["qg"] = 28432,	-- Eitrigg
 						["sourceQuest"] = 28433,	-- Grunt Work (H)
+						["qg"] = 28432,	-- Eitrigg
 						["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1851,13 +1836,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28253, {	-- Taking the Horn For Ourselves (A)
-					["providers"] = {
-						{ "n", 48110 },	-- Colonel Troteman
-						{ "i", 63358 },	-- Horn of the Callers
-					},
 					["sourceQuests"] = {
 						28246,	-- Strategic Cuts (A)
 						28252,	-- The Kodocaller's Horn (A)
+					},
+					["providers"] = {
+						{ "n", 48110 },	-- Colonel Troteman
+						{ "i", 63358 },	-- Horn of the Callers
 					},
 					["coord"] = { 46.3, 45.9, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
@@ -1875,13 +1860,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28436, {	-- Taking the Horn For Ourselves (H)
-					["providers"] = {
-						{ "n", 48568 },	-- Eitrigg
-						{ "i", 63358 },	-- Horn of the Callers
-					},
 					["sourceQuests"] = {
 						28434,	-- Strategic Cuts (H)
 						28435,	-- The Kodocaller's Horn (H)
+					},
+					["providers"] = {
+						{ "n", 48568 },	-- Eitrigg
+						{ "i", 63358 },	-- Horn of the Callers
 					},
 					["coord"] = { 44.5, 44.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1918,33 +1903,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(28180, {	-- The Sand, the Cider, and the Orb (A)
-					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuests"] = {
 						28178,	-- A Future Project (A)
 						28179,	-- Mud Hunter (A)
 						28177,	-- Stocking Up (A)
 					},
+					["qg"] = 47811,	-- John J. Keeshan
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28422, {	-- The Sand, the Cider, and the Orb (H)
-					["qg"] = 48559,	-- Ariok
 					["sourceQuests"] = {
 						28420,	-- A Future Project (H)
 						28421,	-- Mud Hunter (H)
 						28419,	-- Stocking Up (H)
 					},
+					["qg"] = 48559,	-- Ariok
 					["coord"] = { 17.4, 51.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28322, {	-- The Spoils of War (A)
+					["sourceQuest"] = 28321,	-- Glory Amidst Chaos (A)
 					["providers"] = {
 						{ "n",  48307 },	-- Colonel Troteman
 						{ "o", 207125 },	-- Crate of Left Over Supplies
 					},
-					["sourceQuest"] = 28321,	-- Glory Amidst Chaos (A)
 					["coord"] = { 73.6, 67.1, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -1970,11 +1955,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28456, {	-- The Spoils of War (H)
+					["sourceQuest"] = 28455,	-- Glory Amidst Chaos (H)
 					["providers"] = {
 						{ "n",  48569 },	-- Eitrigg
 						{ "o", 207125 },	-- Crate of Left Over Supplies
 					},
-					["sourceQuest"] = 28455,	-- Glory Amidst Chaos (H)
 					["coord"] = { 54.6, 24.4, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2000,8 +1985,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28266, {	-- Trial by Magma (A)
-					["qg"] = 48133,	-- General Thorg'izog
 					["sourceQuest"] = 28265,	-- General Thorg'izog (A)
+					["qg"] = 48133,	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2021,8 +2006,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28438, {	-- Trial by Magma (H)
-					["qg"] = 48133,	-- General Thorg'izog
 					["sourceQuest"] = 28437,	-- General Thorg'izog (H)
+					["qg"] = 48133,	-- General Thorg'izog
 					["coord"] = { 30.6, 33.7, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2086,31 +2071,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(7627, {	-- Wheel of the Black March
-					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["sourceQuest"] = 7564,	-- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 14344, 6 },	-- Large Brilliant Shard
 						{ "i", 11370, 25 },	-- Dark Iron Ore
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				q(7564, {	-- Wildeyes
+					["sourceQuest"] = 7563,	-- Rage of Blood
 					["providers"] = {
 						{ "n", 14436 },	-- Mor'zul Bloodbringer
 						{ "i", 18591 },	-- Case of Blood
 					},
-					["sourceQuest"] = 7563,	-- Rage of Blood
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				q(44927, {	-- Worth Its Weight in Steel
-					["qg"] = 115805,	-- Hoddruc Bladebender
 					["sourceQuest"] = 44926,	-- A Familiar Axe to Grind
+					["qg"] = 115805,	-- Hoddruc Bladebender
 					["coord"] = { 46.8, 44.9, BURNING_STEPPES },
 					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = BLACKSMITHING,
@@ -2401,7 +2386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{58.8, 37.2, BURNING_STEPPES},
 					},
 				}),
-				i(14490, {	-- Pattern: Cindercloth Pants
+				i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 					["cr"] = 7037,	-- Thaurissan Firewalker (RECIPE!)
 					["coords"] = {
 						{43.8, 39.4, BURNING_STEPPES},
@@ -2501,6 +2486,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 					["cr"] = 7027,	-- Blackrock Slayer
+				}),
+				o(206971, {	-- War Reaver Parts
+					["description"] = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
+					["coord"] = { 47.4, 37.8, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_1 },
+					["cr"] = 7039,	-- War Reaver
+					["groups"] = {
+						i(63333),	-- Obsidian Piston
+						i(63336),	-- Flux Exhaust Sieve
+						i(63335),	-- Thorium Gearshaft
+						i(63334),	-- Stone Power Core
+					},
 				}),
 			}),
 		},

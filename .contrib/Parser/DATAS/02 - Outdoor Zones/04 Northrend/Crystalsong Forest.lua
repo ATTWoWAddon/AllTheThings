@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			["icon"] = 236735,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1457),	-- Explore Crystalsong Forest
+					ach(1457),	-- Explore Crystalsong Forest
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -52,7 +52,28 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66636, {	-- Nearly Headless Jacob <Master Pet Tamer>
 						["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+						["description"] = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31932, {	-- Nearly Headless Jacob
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
+				}),
+				n(SPECIAL, {
+					applyclassicphase(WRATH_PHASE_TWO, i(45000, {	-- Winter Hyacinth
+						["coords"] = {
+							{ 18.5, 15.7, CRYSTALSONG_FOREST },
+							{ 71.0, 73.8, ICECROWN },
+						},
+						["description"] = "Can be found beneath the Ironwall Dam seperating Icecrown from Crystalsong Forest.",
+						["_allowObjectProvider"] = true,
+						["provider"] = { "o", 194213 },	-- Winter Hyacinth
+					})),
 				}),
 				n(ZONE_DROPS, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45005, {	-- Everburning Ember
@@ -62,11 +83,6 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45080, {	-- Large Femur
 						["coord"] = { 37.6, 57.8, CRYSTALSONG_FOREST },
 						["cr"] = 33499,	-- Skeletal Woodcutter
-					})),
-					applyclassicphase(WRATH_PHASE_TWO, i(45000, {	-- Winter Hyacinth
-						["coord"] = { 18.5, 15.7, CRYSTALSONG_FOREST },
-						["_allowObjectProvider"] = true,
-						["provider"] = { "o", 194213 },	-- Winter Hyacinth
 					})),
 				}),
 			},

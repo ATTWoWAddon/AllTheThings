@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(423, {	-- Silvershard Mines
 		["icon"] = 622094,
 		["timeline"] = { ADDED_5_0_4 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(7106, {	-- Master of Silvershard Mines
 					-- Meta Achievement should symlink the contained Achievements from Source

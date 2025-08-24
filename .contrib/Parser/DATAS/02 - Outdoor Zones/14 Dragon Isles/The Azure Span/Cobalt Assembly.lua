@@ -14,7 +14,8 @@ local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
-		faction(FACTION_COBALT_ASSEMBLY, {
+		header(HEADERS.Faction, FACTION_COBALT_ASSEMBLY, {
+			faction(FACTION_COBALT_ASSEMBLY),
 			n(ACHIEVEMENTS, {
 				ach(16569),	-- Cobalt Enthusiast
 				ach(16537),	-- Maximum Power!
@@ -24,7 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70550 },	-- Welcome to the Assembly
 					["provider"] = { "n", 197100 },	-- Heleth the Wise
 					["coord"] = { 46.4, 25.6, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(200514),	-- Salve-Soaked Bandages (QI!)
 					},
 				}),
@@ -42,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71096 },	-- Is A Claw Indeed
 					["provider"] = { "n", 197201 },	-- Venderthvan
 					["coord"] = { 45.9, 25.9, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(200628),	-- Somewhat-Stabilized Arcana (TOY!)
 					},
 				}),
@@ -78,7 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 43.9, 30.9, THE_AZURE_SPAN },
 					["questID"] = 74544,
-					["g"] = {
+					["groups"] = {
 						bo(74456, true),
 						i(203675),	-- Legplates of the Brutal Motivator
 					},
@@ -87,7 +88,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 47.0, 22.0, THE_AZURE_SPAN },
 					["questID"] = 74543,
-					["g"] = {
+					["groups"] = {
 						bo(74458, true),
 						i(203663),	-- Cinch of the Sundered Flame
 					},
@@ -96,7 +97,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["coord"] = { 47.0, 25.3, THE_AZURE_SPAN },
 					["questID"] = 74536,
-					["g"] = {
+					["groups"] = {
 						bo(74455, true),
 						i(203662),	-- Arcanogolem Crystalblade
 					},
@@ -105,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(194832, {	-- Meiz <Quartermaster>
 					["coord"] = { 49.4, 22.6, THE_AZURE_SPAN },
-					["g"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
+					["groups"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 							i(197584, {	-- Windborne Velocidrake: Finned Back (MM!)
 								["cost"] = {
@@ -314,7 +315,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						199733,	-- Cobalt Defender's Wingglaive
 						201371,	-- Cobalt Defender's Shredder
 					}},
-					["g"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
+					["groups"] = bubbleDownRep(FACTION_COBALT_ASSEMBLY, {
 						{		-- Empty --
 						}, {	-- Low --
 						}, {	-- Medium --

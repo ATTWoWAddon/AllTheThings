@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		explorationHeader({
 			exploration(14921),	-- Beledar's Bounty
@@ -51,4 +51,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(15384,{coord={59.8,67.1,HALLOWFALL}}),	-- Whispering Pool
 		}),
 	}),
-})));
+}));

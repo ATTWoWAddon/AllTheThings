@@ -590,7 +590,6 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 };
-local ZURII_YURIAL_GROUPS = {};
 -- #if AFTER CATA
 local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
 -- #elseif AFTER WRATH
@@ -680,6 +679,21 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
 					}),
 				}),
+				petbattles({
+					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+						["description"] = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 23,
+						["groups"] = {
+							q(31925, {	-- Morulu The Elder
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
+					}),
+				}),
 				n(PROFESSIONS, {
 					prof(BLACKSMITHING, {
 						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>
@@ -700,17 +714,17 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(10420, {	-- A Cleansing Light
-						["qg"] = 18538,	-- Ishanah
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 29740, 1 } },	-- Fel Armament
 					}),
 					q(10020, {	-- A Cure for Zahlia
-						["qg"] = 18597,	-- Sha'nir
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["qg"] = 18597,	-- Sha'nir
 						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Stonegazer's Blood
 								["provider"] = { "i", 25815 },	-- Stonegazer's Blood
@@ -724,27 +738,27 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.6, 41.4, SHATTRATH_CITY },
 					}),
 					q(10551, {	-- Allegiance to the Aldor
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10211,	-- City of Light
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
 					q(10552, {	-- Allegiance to the Scryers
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10211,	-- City of Light
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
 					q(10419, {	-- Arcane Tomes
-						["qg"] = 18530,	-- Voren'thal the Seer
 						["sourceQuest"] = 10416,	-- Synthesis of Power
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["cost"] = { { "i", 29739, 1 } },	-- Arcane Tome
 						["repeatable"] = true,
 					}),
 					q(10211, {	-- City of Light
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10210,	-- A'dal
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
 					q(44863, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3, ADDED_7_1_5 } }, {	-- Clearing the Air
@@ -755,11 +769,14 @@ root(ROOTS.Zones, {
 							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
 							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
 							i(142282),	-- Plans: Stormforged Axe (RECIPE!)
+							i(142272),	-- Cardinal Sky Core (QI!)
+							i(142271),	-- Cardinal Storm Core (QI!)
+							i(142270),	-- Cardinal Wind Core (QI!)
 						},
 					})),
 					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.6, 34.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["isBreadcrumb"] = true,
@@ -780,27 +797,30 @@ root(ROOTS.Zones, {
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
+							i(142269),	-- Cardinal Earth Core (QI!)
+							i(142268),	-- Cardinal Lava Core (QI!)
+							i(142267),	-- Cardinal Stone Core (QI!)
 						},
 					})),
 					q(10421, {	-- Fel Armaments
-						["qg"] = 18538,	-- Ishanah
 						["sourceQuest"] = 10420,	-- A Cleansing Light
+						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["cost"] = { { "i", 29740, 1 } },	-- Fel Armament
 						["repeatable"] = true,
 					}),
 					q(10412, {	-- Firewing Signets
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 29426, 10 } },	-- Firewing Signet
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11875, {	-- Gaining the Advantage
-						["qg"] = 19202,	-- Emissary Mordin
 						["description"] = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
+						["qg"] = 19202,	-- Emissary Mordin
 						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { BLADES_EDGE_MOUNTAINS, HELLFIRE_PENINSULA, ISLE_OF_QUELDANAS, NAGRAND, NETHERSTORM, SHADOWMOON_VALLEY, TEROKKAR_FOREST, ZANGARMARSH },
 						["isDaily"] = true,
@@ -812,12 +832,12 @@ root(ROOTS.Zones, {
 						},
 					})),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11513, {	-- Intercepting the Mana Cells
-						["qg"] = 24932,	-- Exarch Nasuun
 						["sourceQuest"] = 11517,	-- Report to Nasuun
+						["qg"] = 24932,	-- Exarch Nasuun
 						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
-						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_3_0_2 },
+						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
 						-- #if BEFORE WRATH
@@ -842,8 +862,8 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10554, {	-- Ishanah
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
@@ -853,8 +873,8 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_2_0_3, REMOVED_2_4_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11514, {	-- Maintaining the Sunwell Portal
-						["qg"] = 24932,	-- Exarch Nasuun
 						["sourceQuest"] = 11534,	-- Report to Nasuun
+						["qg"] = 24932,	-- Exarch Nasuun
 						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
@@ -895,100 +915,96 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10325, {	-- Marks of Kil'jaeden
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
 					}),
 					q(10653, {	-- Marks of Sargeras
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					}),
 					q(10025, {	-- More Basilisk Eyes
-						["qg"] = 18596,	-- Arcanist Adyria
-						["sourceQuest"] = 10024,	-- Voren'thal's Visions
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
+						["sourceQuest"] = 10024,	-- Voren'thal's Visions
+						["qg"] = 18596,	-- Arcanist Adyria
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
-						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["repeatable"] = true,
 					}),
 					q(10918, {	-- More Feathers
-						["qg"] = 22429,	-- Vekax
 						["sourceQuest"] = 10917,	-- The Outcast's Plight
+						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["maxReputation"] = { FACTION_LOWER_CITY, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
-						["repeatable"] = true,
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 1011.6 },	-- Lower City, Honored
 						-- #endif
+						["repeatable"] = true,
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								["sym"] = {{"fill"}},	-- fill with Sourced content for this Item since reward of repeatable quest
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10415, {	-- More Firewing Signets
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10412,	-- Firewing Signets
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
 						["cost"] = { { "i", 29426, 10 } },	-- Firewing Signet
 						["repeatable"] = true,
 					}),
 					q(10326, {	-- More Marks of Kil'jaeden
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
 						["cost"] = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
 						["repeatable"] = true,
 					}),
 					q(10654, {	-- More Marks of Sargeras
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 					}),
 					q(10658, {	-- More Sunfury Signets
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 						["repeatable"] = true,
 					}),
 					q(10019, {	-- More Venom Sacs
-						["qg"] = 18597,	-- Sha'nir
-						["sourceQuest"] = 10017,	-- Strained Supplies
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["sourceQuest"] = 10017,	-- Strained Supplies
+						["qg"] = 18597,	-- Sha'nir
 						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 						["repeatable"] = true,
 					}),
 					q(57581, {	-- Plucking Plumes
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
-						["timeline"] = { ADDED_8_2_5 },
 						["minReputation"] = { FACTION_LOWER_CITY, EXALTED },	-- Lower City, Exalted.
+						["timeline"] = { ADDED_8_2_5 },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								["sym"] = {{"fill"}},	-- fill with Sourced content for this Item since reward of repeatable quest
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10037, {	-- Rather Be Fishin'
@@ -1005,8 +1021,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10021, {	-- Restoring the Light
-						["qg"] = 18538,	-- Ishanah
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
+						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["maps"] = { TEROKKAR_FOREST },
@@ -1057,38 +1073,38 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10414, {	-- Single Firewing Signet
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10412,	-- Firewing Signets
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
 						["cost"] = { { "i", 29426, 1 } },	-- Firewing Signet
 						["repeatable"] = true,
 					}),
 					q(10327, {	-- Single Mark of Kil'jaeden
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuest"] = 10325,	-- Marks of Kil'jaeden
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
 						["cost"] = { { "i", 29425, 1 } },	-- Mark of Kil'jaeden
 						["repeatable"] = true,
 					}),
 					q(10655, {	-- Single Mark of Sargeras
-						["qg"] = 18537,	-- Adyen the Lightwarden
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
+						["qg"] = 18537,	-- Adyen the Lightwarden
 						["coord"] = { 30.7, 34.6, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["cost"] = { { "i", 30809, 1 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 					}),
 					q(10659, {	-- Single Sunfury Signet
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["cost"] = { { "i", 30810, 1 } },	-- Sunfury Signet
 						["repeatable"] = true,
 					}),
@@ -1113,16 +1129,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10984, {	-- Speak with the Ogre
+						["altQuests"] = { 11022 },	-- Speak with Mog'dorg
 						["qg"] = 22497,	-- V'eru
 						["coord"] = { 56.4, 49.2, SHATTRATH_CITY },
-						["altQuests"] = { 11022 },	-- Speak with Mog'dorg
 						["isBreadcrumb"] = true,
 					}),
 					q(10017, {	-- Strained Supplies
-						["qg"] = 18597,	-- Sha'nir
 						["description"] = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["qg"] = 18597,	-- Sha'nir
 						["coord"] = { 64.2, 15.4, SHATTRATH_CITY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
@@ -1158,8 +1174,8 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(10656, {	-- Sunfury Signets
-						["qg"] = 18531,	-- Magistrix Fyalenn
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						["qg"] = 18531,	-- Magistrix Fyalenn
 						["coord"] = { 45.1, 81.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
@@ -1187,15 +1203,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10416, {	-- Synthesis of Power
-						["qg"] = 18530,	-- Voren'thal the Seer
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 29739, 1 } },	-- Arcane Tome
 					}),
 					q(10251, {	-- The Master's Grand Design?
-						["qg"] = 19720,	-- "Dirty" Larry <Ruffian>
 						["sourceQuest"] = 10231,	-- What Book? I Don't See Any Book.
+						["qg"] = 19720,	-- "Dirty" Larry <Ruffian>
 						["coord"] = { 43.6, 29.6, SHATTRATH_CITY },
 						["maps"] = { NAGRAND },
 					}),
@@ -1218,21 +1234,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								i(28495),	-- Windwalker's Sash
-								i(28496),	-- Talonite's Belt
-								i(28497),	-- Dreadhawk's Girdle
-								i(28498),	-- Ravenguard's Baldric
-								i(28491),	-- Windwalker's Footwraps
-								i(28493),	-- Dreadhawk's Schynbald
-								i(28492),	-- Talonite's Boots
-								i(28494),	-- Ravenguard's Greaves
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10883, {	-- The Tempest Key
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10588,	-- The Cipher of Damnation
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11096, {	-- Threat from Above
@@ -1240,22 +1247,22 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11098, {	-- To Skettis!
-						["qg"] = 23449,	-- Yuula
 						["sourceQuest"] = 11096,	-- Threat From Above
+						["qg"] = 23449,	-- Yuula
 						["coord"] = { 64.0, 42.0, SHATTRATH_CITY },
 					})),
 					q(10553, {	-- Voren'thal the Seer
-						["qg"] = 18166,	-- Archmage Khadgar
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						["qg"] = 18166,	-- Archmage Khadgar
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10024, {	-- Voren'thal's Visions
-						["qg"] = 18596,	-- Arcanist Adyria
 						["description"] = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
+						["qg"] = 18596,	-- Arcanist Adyria
+						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
-						["coord"] = { 54.8, 22.6, SHATTRATH_CITY },
 					}),
 					q(11369, {	-- WANTED: A Black Stalker Egg
 						["qg"] = 24369,	-- Wind Trader Zhareem
@@ -1554,10 +1561,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10231, {	-- What Book? I Don't See Any Book.
-						["qg"] = 19715,	-- Ezekiel
-						["sourceQuest"] = 10228,	-- Ezekiel
-						["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
 						["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
+						["sourceQuest"] = 10228,	-- Ezekiel
+						["qg"] = 19715,	-- Ezekiel
+						["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
 						["groups"] = {
 							objective(1, {	-- Beat Down "Dirty" Larry and Get Information
 								["provider"] = { "n", 19720 },	-- "Dirty" Larry <Ruffian>
@@ -1567,7 +1574,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_2_3_0 } }, {
-					i(33844, {	-- Barrel of Fish
+					container(33844, {	-- Barrel of Fish
 						i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
 						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							["timeline"] = { ADDED_3_2_0 },
@@ -1577,7 +1584,7 @@ root(ROOTS.Zones, {
 						i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 					}),
-					i(33857, {	-- Crate of Meat
+					container(33857, {	-- Crate of Meat
 						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							["timeline"] = { ADDED_3_2_0 },
 						}),
@@ -1586,6 +1593,16 @@ root(ROOTS.Zones, {
 						i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 						i(33855),	-- Tarnished Silver Ring
+					}),
+					container(31800, {  -- Outcasts Cache
+						i(28495),	-- Windwalker's Sash
+						i(28496),	-- Talonite's Belt
+						i(28497),	-- Dreadhawk's Girdle
+						i(28498),	-- Ravenguard's Baldric
+						i(28491),	-- Windwalker's Footwraps
+						i(28493),	-- Dreadhawk's Schynbald
+						i(28492),	-- Talonite's Boots
+						i(28494),	-- Ravenguard's Greaves
 					}),
 				})),
 				n(VENDORS, {
@@ -1613,9 +1630,11 @@ root(ROOTS.Zones, {
 					}),
 					n(33630, {	-- Aelthin <Alchemy Trainer>
 						["coord"] = { 38.6, 71.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(19043, {	-- Ahemen <Staff Vendor>
 						["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
@@ -1630,11 +1649,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(33674, {	-- Alchemist  Kanhu  <Alchemy Trainer>
+					n(33674, {	-- Alchemist Kanhu  <Alchemy Trainer>
 						["coord"] = { 38.6, 30.0, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
 						["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
@@ -1682,21 +1703,8 @@ root(ROOTS.Zones, {
 								i(30634, {	-- Warpforged Key
 									["timeline"] = { REMOVED_4_2_0 },
 									-- #if ANYCLASSIC
-									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-									["OnTooltip"] = [[function(t, tooltipInfo)
-										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-										else
-											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-										end
-										tooltip:Show();
-									end]],
-									["OnInit"] = [[function(t)
-										t.otherItemID = 185692;
-										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-										return t;
-									end]],
+									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185692),
 									-- #endif
 								}),
 								i(29179),	-- Xi'ri's Gift
@@ -1875,7 +1883,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.2, 74.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["timeline"] = { ADDED_3_1_0 },
-						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 					n(19678, {	-- Fantei <Reagents>
 						["coord"] = { 64.6, 70.6, SHATTRATH_CITY },
@@ -2149,15 +2156,15 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					-- #if AFTER WRATH
 					n(19065, {	-- Inessera <Jewelcrafting Supplies Vendor>
 						["coord"] = { 35.6, 19.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						-- #if AFTER WRATH
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
 						},
+						-- #endif
 					}),
-					-- #endif
 					n(19195, {	-- Jim Saltit <Cooking Supplies>
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
@@ -2166,11 +2173,13 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
-					n(19049, {	-- Karokka  <Alchemy Trainer>
+					n(19049, {	-- Karokka <Alchemy Trainer>
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 						["coord"] = { 24.8, 27.0, SHATTRATH_CITY },
@@ -2183,15 +2192,14 @@ root(ROOTS.Zones, {
 							i(33042),	-- Black Coffee
 						},
 					})),
-					-- #if AFTER WRATH
 					n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 						["coord"] = { 58.6, 75.2, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["timeline"] = { ADDED_3_1_0 },
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
 						},
 					}),
-					-- #endif
 					n(19186, {	-- Kylene <Barmaid>
 						["description"] = "Speak to her and tell her she's quite the cook to learn these recipes.",
 						["coord"] = { 75.6, 32.6, SHATTRATH_CITY },
@@ -2288,7 +2296,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select", "itemID",
 							2526,	-- Main Gauche
 							2534,	-- Rondel
+							-- #if AFTER MOP
 							4565,	-- Simple Dagger
+							-- #endif
 						}},
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
@@ -2322,21 +2332,8 @@ root(ROOTS.Zones, {
 								i(30633, {	-- Auchenai Key
 									["timeline"] = { REMOVED_4_2_0 },
 									-- #if ANYCLASSIC
-									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-									["OnTooltip"] = [[function(t, tooltipInfo)
-										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-										else
-											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-										end
-										tooltip:Show();
-									end]],
-									["OnInit"] = [[function(t)
-										t.otherItemID = 185691;
-										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-										return t;
-									end]],
+									["OnTooltip"] = [[_.OnTooltipDB.ShowHonoredKeyComparison]],
+									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185691),
 									-- #endif
 								}),
 								i(33157),	-- Design: Falling Star (RECIPE!)
@@ -2375,15 +2372,14 @@ root(ROOTS.Zones, {
 							i(21918),	-- Pattern: Primal Mooncloth Shoulders (RECIPE!)
 						},
 					}),
-					-- #if AFTER WRATH
 					n(33680, {	-- Nemiha <Jewelcrafting Trainer>
 						["coord"] = { 36.2, 47.0, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["timeline"] = { ADDED_3_1_0 },
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
 						},
 					}),
-					-- #endif
 					applyclassicphase(TBC_PHASE_FIVE, n(27666, {	-- Ontuvo <Jewelcrafting Supplies>
 						["coord"] = { 48.8, 41.8, SHATTRATH_CITY },
 						["sym"] = {{"sub","common_vendor",25950}},	-- Shaani <Jewelcrafting Supplies>
@@ -2435,7 +2431,7 @@ root(ROOTS.Zones, {
 					}),
 					n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
 						["coord"] = { 60.6, 64.2, SHATTRATH_CITY },
-						["g"] = bubbleDownClassicRep(FACTION_THE_SCRYERS, {
+						["groups"] = bubbleDownClassicRep(FACTION_THE_SCRYERS, {
 							{		-- Neutral
 							}, {	-- Friendly
 								-- #if BEFORE CATA
@@ -2450,7 +2446,7 @@ root(ROOTS.Zones, {
 									["timeline"] = { REMOVED_4_0_1 },
 								}),
 								-- #else
-								i(23143, {	--Design: Purified Shadow Draenite [CATA+] / Design: Dazzling Deep Peridot [TBC] (RECIPE!)
+								i(23143, {	-- Design: Purified Shadow Draenite [CATA+] / Design: Dazzling Deep Peridot [TBC] (RECIPE!)
 									["timeline"] = { REMOVED_4_0_1 },
 								}),
 								-- #endif
@@ -2492,6 +2488,16 @@ root(ROOTS.Zones, {
 							5238,	-- Pitchwood Wand
 							5208,	-- Smoldering Wand
 						}},
+					}),
+					n(33679, {	-- Recorder Lidio <Inscription Trainer>
+						["coord"] = { 55.9, 74.34, SHATTRATH_CITY },
+						["timeline"] = { ADDED_3_1_0 },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					}),
+					n(33638, {	-- Scribe Lanloer <Inscription Trainer>
+						["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
+						["timeline"] = { ADDED_3_1_0 },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 						["coord"] = { 48.6, 26.6, SHATTRATH_CITY },
@@ -2583,6 +2589,14 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(19244, {	-- Trader Endernor <Trade Goods>
+						["coord"] = { 44.6, 96.8, SHATTRATH_CITY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					}),
+					n(27711, {	-- Technician Halmaha <Engineering Supplies>
+						["coord"] = { 27.93, 47.6, SHATTRATH_CITY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					}),
 					n(19238, {	-- Urumir Stavebright <Staff Vendor>
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 49.6, 79.0, SHATTRATH_CITY },
@@ -2637,13 +2651,11 @@ root(ROOTS.Zones, {
 					n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
 						["coord"] = { 44.6, 96.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 					n(33676, {	-- Zurii <Enchanting Trainer>
 						["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
 						["timeline"] = { ADDED_3_1_0 },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 				}),
 			},
@@ -2652,14 +2664,6 @@ root(ROOTS.Zones, {
 });
 
 -- Add in the items that aren't locked by phase.
-local COMMON_ENCHANTING_RECIPES = {
-	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
-};
-appendGroups(COMMON_ENCHANTING_RECIPES, ZURII_YURIAL_GROUPS);
-appendGroups(COMMON_ENCHANTING_RECIPES, MADAME_RUBY_GROUPS);
 
 -- Add in Classic specific sources of PVP Gear.
 -- #if ANYCLASSIC

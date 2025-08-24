@@ -1,12 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
-		header(HEADERS.Spell, 458069, {    -- Seafury Tempest (Storm)
+		header(HEADERS.Spell, 458069, {	-- Seafury Tempest (Storm)
 			petbattle(filter(BATTLE_PETS, {
 				pet(4732),	-- Scavenging Snapdragon (storm phase)
 				pet(4731),	-- Storminfused Snapdragon (storm phase)
@@ -56,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					},
 					["provider"] = { "n", 233582 },	-- Thrayir, Eyes of the Siren
 					["coord"] = { 72.5, 61.3, 2375 },
-					["g"] = {
+					["groups"] = {
 						i(232639),	-- Thrayir, Eyes of the Siren (MOUNT!)
 					},
 				}),
@@ -88,7 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				n(231357, {	-- Zek'ul the Shipbreaker
 					["coord"] = { 32.7, 73.0, SIREN_ISLE },
 					["questID"] = 85405,
-					["g"] = {
+					["groups"] = {
 						i(232569),	-- Cyclonic Runekey
 					},
 				}),
@@ -96,8 +93,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				n(231368, {	-- Ksvir the Forgotten
 					["coord"] = { 37.9, 76.1, 2375 },
 					["questID"] = 85406,
-					["g"] = {
-						i(235017),	-- Glittering Vault Shard (TOY!)
+					["groups"] = {
+						i(235017, {	-- Glittering Vault Shard (TOY!)
+							["description"] = "The toy can drop on every kill and is unaffected by daily lockout.",
+						}),
 						i(232571),	-- Whirling Runekey
 					},
 				}),
@@ -106,13 +105,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				o(507120, {	-- Ducky Friend
 					["description"] = "Can be found during the storm in a house on the 2nd floor, on a bed.",
 					["coord"] = { 39.2, 54.2, SIREN_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(233447),	-- Marmaduke's "Ducky Friend"
 					},
 				}),
 				o(499127, {	-- Runemarked Coffer
-					-- TODO: The Forgotten Vault + storm phase
-					-- TODO: I don't make screenshot for this one, so I'm unsure if it something in loot or it is related to treasure chest)
 					["description"] = "In the back of the left room of the Forgotten Vault during a storm.",
 					["coord"] = { 26.6, 23.9, 2375 },
 					["questID"] = 85859,
@@ -140,13 +137,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 					84725,	-- The Circlet Calls
 				},
-				["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 					n(SPECIAL, {
 						q(86174),	-- Special Assignment: Storm's a Brewin (TODO: seems to be unlock tracker)
 						q(85113, {	-- Special Assignment: Storm's a Brewin
 							["provider"] = { "n", 227815 },	-- Suzie Boltwrench
 							["coord"] = { 69.0, 49.2, SIREN_ISLE },
-							["g"] = {
+							["groups"] = {
 								i(232466),	-- Leave the Storm (QI!)
 								i(235548),	-- Earthen Landlubber's Cache
 								--^ contain isle drop/vendor stuff
@@ -159,7 +156,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				i(234379, {	-- Crackleroar (PET!)
 					["crs"] = { 230827 },	-- Stormtouched Pridetalon
 				}),
-				i(233498, {	-- Storminfused Snapdragon Treat
+				i(233498, {	-- Storminfused Snapdragon Treat (CI!)
 					["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
 					["crs"] = {
 						231986,	-- Deepwater Matriarch
@@ -184,9 +181,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(SIREN_ISLE, {
 			n(QUESTS, {
@@ -203,4 +200,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

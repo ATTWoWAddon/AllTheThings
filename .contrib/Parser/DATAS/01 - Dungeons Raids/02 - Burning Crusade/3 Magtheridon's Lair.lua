@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(747, {	-- Magtheridon's Lair
 		["lore"] = "After the Legion came to Outland, Magtheridon controlled all but small pockets of Outland. Even so, he was taken largely by surprise when Illidan and his allies conquered the Black Temple. Many believed that Magtheridon had been slain in the attack, but, when Illidan discovered that Magtheridon's blood had a transformative, corrupting effect on orcs, the beaten pit lord was dragged to Hellfire Citadel.\n\nBound by chains both physical and magical, Magtheridon survives, at the brink of death. Each day, Illidan's minions drain his tainted blood, pooling it for a purpose as malevolent as Magtheridon himself: the creation of a new army of barbaric fel orcs.",
 		-- #if BEFORE WRATH
@@ -37,12 +37,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10888, {	-- Trial of the Naaru: Magtheridon
-					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
 						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["groups"] = {
@@ -65,13 +65,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(13430, {	-- Trial of the Naaru: Magtheridon
-					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
 						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {
@@ -86,13 +86,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 17257,
 				["groups"] = {
 					ach(693, {	-- Magtheridon's Lair
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							11002,	-- The Fall of Magtheridon
-							11003,	-- The Fall of Magtheridon
-							10888,	-- Trial of the Naaru: Magtheridon
-							11116,	-- Trial of the Naaru: (QUEST FLAG)
-						},
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing one of 4 quests.
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5087, {	-- Magtheridon's Lair Guild Run
@@ -150,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 		},
 	}),
-})));
+}))));
 -- #if AFTER TBC
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TBC, {

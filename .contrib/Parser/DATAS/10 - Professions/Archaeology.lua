@@ -1,78 +1,78 @@
 ARCHAEOLOGY_ARAKKOA = createHeader({
-	readable = "Archaeology: PH1",
-	--icon = "PH",
+	readable = "Archaeology: Arakkoa",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH1",
+		en = "Archaeology: Arakkoa",
 	},
 });
 ARCHAEOLOGY_DEMONIC = createHeader({
-	readable = "Archaeology: PH2",
-	--icon = "PH",
+	readable = "Archaeology: Demonic",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH2",
+		en = "Archaeology: Demonic",
 	},
 });
 ARCHAEOLOGY_DRAENORCLANS = createHeader({
-	readable = "Archaeology: PH3",
-	--icon = "PH",
+	readable = "Archaeology: Draenor Clans",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH3",
+		en = "Archaeology: Draenor Clans",
 	},
 });
 ARCHAEOLOGY_DRUST = createHeader({
-	readable = "Archaeology: PH4",
-	--icon = "PH",
+	readable = "Archaeology: Drust",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH4",
+		en = "Archaeology: Drust",
 	},
 });
 ARCHAEOLOGY_HIGHBORNE = createHeader({
-	readable = "Archaeology: PH5",
-	--icon = "PH",
+	readable = "Archaeology: Highborne",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH5",
+		en = "Archaeology: Highborne",
 	},
 });
 ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
-	readable = "Archaeology: PH6",
-	--icon = "PH",
+	readable = "Archaeology: Highmountain",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH6",
+		en = "Archaeology: Highmountain",
 	},
 });
 ARCHAEOLOGY_MANTID = createHeader({
-	readable = "Archaeology: PH7",
-	--icon = "PH",
+	readable = "Archaeology: Mantid",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH7",
+		en = "Archaeology: Mantid",
 	},
 });
 ARCHAEOLOGY_MOGU = createHeader({
-	readable = "Archaeology: PH8",
-	--icon = "PH",
+	readable = "Archaeology: Mogu",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH8",
+		en = "Archaeology: Mogu",
 	},
 });
 ARCHAEOLOGY_OGRE = createHeader({
-	readable = "Archaeology: PH9",
-	--icon = "PH",
+	readable = "Archaeology: Ogre",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH9",
+		en = "Archaeology: Ogre",
 	},
 });
 ARCHAEOLOGY_PANDAREN = createHeader({
-	readable = "Archaeology: PH10",
-	--icon = "PH",
+	readable = "Archaeology: Pandaren",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH10",
+		en = "Archaeology: Pandaren",
 	},
 });
 ARCHAEOLOGY_ZANDALARI = createHeader({
-	readable = "Archaeology: PH11",
-	--icon = "PH",
+	readable = "Archaeology: Zandalari",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH11",
+		en = "Archaeology: Zandalari",
 	},
 });
 local RESTORED_ARTIFACT = 87399;
@@ -255,7 +255,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				-- #endif
 				-- #endif
 			},
-			["g"] = sharedData({
+			["groups"] = sharedData({
 				["cost"] = {{"i", RESTORED_ARTIFACT, 1}},
 			}, {
 				i(87534, {	-- Crate of Draenei Archaeology Fragments
@@ -760,7 +760,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				-- #endif
 				-- #endif
 			},
-			["g"] = sharedData({
+			["groups"] = sharedData({
 				["cost"] = {{"i", RESTORED_ARTIFACT, 1}},
 			}, {
 				i(117388, {	-- Crate of Mantid Archaeology Fragments
@@ -1285,7 +1285,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				{ 43.0, 44.0, DAZARALOR},
 				-- #endif
 			},
-			["g"] = sharedData({
+			["groups"] = sharedData({
 				["cost"] = {{"i", RESTORED_ARTIFACT, 1}},
 			}, {
 				i(142113, {	-- Crate of Arakkoa Archaeology Fragments
@@ -1392,11 +1392,9 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 			ach(10601, {	-- Surveying the Land
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10602, {	-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10605, {	-- Handle With Care
@@ -1468,7 +1466,9 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41165 },	-- Deciphering Demonology
 						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 						["coord"] = { 27.0, 70.0, SURAMAR },
-						["g"] = {
+						["groups"] = {
+							i(136398),	-- Ancient Vial (QI!)
+							i(136397),	-- Dusty Disc Fragment (QI!)
 							i(131743),	-- Blood of Young Mannoroth
 						},
 					}),
@@ -1482,7 +1482,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 40857 },	-- Bits and Pieces
 						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 						["coord"] = { 52.2, 52.6, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							i(136362, {	-- Ancient War Remnants
 								i(131724),	-- Crystalline Eye of Undravius (TOY!)
 							}),
@@ -1504,7 +1504,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41159 },	-- Process of Elimination
 						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 						["coord"] = { 52.2, 52.6, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							i(131735),	-- Imp Generator
 						},
 					}),
@@ -1523,7 +1523,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41168 },	-- The Purple Hills of Eredath
 						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 						["coord"] = { 61.8, 87.9, VALSHARAH },
-						["g"] = {
+						["groups"] = {
 							i(131732),	-- Purple Hills of Eredath
 						},
 					}),
@@ -1542,7 +1542,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41162 },	-- And Into the Fel Fire
 						["provider"] = { "n", 103484 },	-- Brann Bronzebeard
 						["coord"] = { 39.0, 38.6, AZSUNA },
-						["g"] = {
+						["groups"] = {
 							i(136922),	-- Wyrmy Tunkins (PET!)
 						},
 					}),
@@ -1555,7 +1555,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						41868,	-- The Gates of Valor
 						41867,	-- Corrupted Studies
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10606),	-- The Dwarven Dream
 					},
 				}),
@@ -1590,7 +1590,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41175 },	-- Fit for an Elven Queen
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 38.2, 90.0, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							i(131740),	-- Crown Jewels of Suramar
 						},
 					}),
@@ -1609,7 +1609,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41181 },	-- Narrowing Down
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 38.2, 90.0, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							i(134076),	-- Crystallized Shard of Sciallax
 							i(134079),	-- Ardent Shard of Sciallax
 							i(134081),	-- Adamant Shard of Sciallax
@@ -1633,28 +1633,34 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41178 },
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 38.8, 81.6, VALSHARAH },
-						["g"] = {
+						["groups"] = {
 							i(136383, {	-- Ravencrest Cache
-								i(131745),	-- Key of Kalyndras
+								i(131745, {	-- Key of Kalyndras
+									["questID"] = 41805,
+									["isWeekly"] = true,
+								}),
 							}),
 						},
 					}),
 				})),
 				header(HEADERS.Item, 131744, sharedData({ ["isWeekly"] = true }, {	-- Key to Nar'thalas Academy
 					q(41183, {	-- Academic Exploration
-						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
+						["coord"] = { 40.4, 24.0, LEGION_DALARAN },
 					}),
 					q(41184, {	-- Tried and True
 						["sourceQuests"] = { 41183 },	-- Academic Exploration
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 38.2, 90.0, AZSUNA },
+						["groups"] = {
+							i(134117),	-- Azsunian Key Mold Piece (QI!)
+						},
 					}),
 					q(41185, {	-- The Keys to Success
 						["sourceQuests"] = { 41184 },
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 38.2, 90.0, AZSUNA },
-						["g"] = {
+						["groups"] = {
 							i(131744, {	-- Key to Nar'thalas Academy
 								title(348),	-- Headmaster <Name> / Headmistress <Name>
 							}),
@@ -1675,8 +1681,15 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41172 },	-- Echoes of My Ancestors
 						["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
 						["coord"] = { 47.4, 42.6, AZSUNA },
-						["g"] = {
-							i(131717),	-- Starlight Beacon
+						["groups"] = {
+							i(134108),	-- Ancient Highborne Artifact (QI!)
+							i(131717, {	-- Starlight Beacon
+								-- #if AFTER 11.2.0
+								-- #if BEFORE 11.2.5
+								["description"] = "In patch 11.2.5, Starlight Beacon is becoming a toy.\n\nIf you don't have it, the next time the quest will be up is from 2nd September through 15th September. Then it won't be up again until March 2026.",
+								-- #endif
+								-- #endif
+							}),
 						},
 					}),
 				})),
@@ -1711,7 +1724,8 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41190 },	-- Crystal Eyes
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
+							i(134094),	-- Ancient Highmountain Necklace (QI!)
 							i(131736),	-- Prizerock Neckband
 						},
 					}),
@@ -1725,12 +1739,16 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41186 },	-- History of Highmountain
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
+						["groups"] = {
+							i(136372),	-- Archaeologist's Whistle (QI!)
+						},
 					}),
 					q(41188, {	-- Neltharion's Lair: Misdirected
 						["sourceQuests"] = { 41187 },	-- Surveying Student
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
+							i(134093),	-- Ancient Highmountain Artifact (QI!)
 							i(131733),	-- Spear of Rethu
 						},
 					}),
@@ -1744,7 +1762,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["sourceQuests"] = { 41192 },	-- The Right Path
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
 						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
 							i(131734),	-- Spirit of Eche'ro (MOUNT!)
 						},
 					}),
@@ -1775,7 +1793,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				{ 68.4, 8.6, BORALUS },
 				{ 43.0, 44.0, DAZARALOR},
 			},
-			["g"] = sharedData({
+			["groups"] = sharedData({
 				["cost"] = {{"i", RESTORED_ARTIFACT, 1}},
 			}, {
 				i(164625, {	-- Crate of Demon Archaeology Fragments
@@ -1910,7 +1928,6 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(41869),	-- FLAG - Brann Week 3
 				q(41870),	-- FLAG - Brann Week 4
 				q(41871),	-- FLAG - Brann Week 5
-				-- q(41805),	-- Key of Kalyndras
 				q(45775),	-- Completion of 'Sifting Through the Rubble' [41176] for A Keen Eye [10603] - Crown Jewels of Suramar
 			}),
 		}),

@@ -11,6 +11,7 @@ ICOKE_PROMOTION = createHeader({
 	text = {
 		en = "iCoke",
 		cn = "可口可乐活动",
+		tw = "可口可樂活動",
 	},
 	description = {
 		en = "These were only available through the 2006 iCoke Promotion (China Only)",

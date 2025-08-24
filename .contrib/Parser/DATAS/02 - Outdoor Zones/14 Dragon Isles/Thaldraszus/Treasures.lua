@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Bring nearby Acorn to Tree.",
 				["coord"] = { 49.4, 63.1, THALDRASZUS },
 				["questID"] = 70611,
-				["g"] = {
+				["groups"] = {
 					i(193066),	-- Chestnut (PET!)
 				},
 			}),
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 52.6, 76.7, THALDRASZUS },
 				["questID"] = 70408,
 				["cost"] = { { "i", 198852, 1 }, },	-- 1x Yennu's Map
-				["g"] = {
+				["groups"] = {
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
 				},
@@ -36,14 +36,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381094, {	-- Elegant Canvas Brush
 				["coord"] = { 60.2, 41.6, THALDRASZUS },
 				["questID"] = 70609,
-				["g"] = {
+				["groups"] = {
 					i(203206),	-- Elegant Canvas Brush
 				},
 			}),
 			o(380429, {	-- Golden Claw
 				["coord"] = { 38.8, 45.01, THALDRASZUS },
 				["description"] = "Underneath the dragon statue.",
-				["g"] = {
+				["groups"] = {
 					i(198540),	-- Golden Claw
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
 				["description"] = "Underneath the right foot of the titan statue.",
-				["g"] = {
+				["groups"] = {
 					i(199893),	-- Precious Stone Fragment
 				},
 			}),
@@ -71,14 +71,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(198604, {	-- Strange Bear Cub
 				["coord"] = { 52.5, 83.6, THALDRASZUS },
 				["questID"] = 72355,
-				["g"] = {
+				["groups"] = {
 					i(201463),	-- Cubbly (PET!)
 				},
 			}),
 			o(381216, {	-- Surveyor's Magnifying Glass
 				["coord"] = { 64.8, 16.5, THALDRASZUS },
 				["questID"] = 70610,
-				["g"] = {
+				["groups"] = {
 					i(193036),	-- Left-Handed Magnifying Glass
 				},
 			}),
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["timeline"] = { ADDED_10_2_0 },
 				["coord"] = { 60.8, 63.8, THALDRASZUS },
 				["questID"] = 78330,
-				["g"] = {
+				["groups"] = {
 					i(210321),	-- The Reforging of the Tyr's Guard [book]
 				},
 			}),
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 60.6, 62.2, THALDRASZUS },
 					{ 61.9, 61.8, THALDRASZUS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(201458),	-- Aegis of Tyrhold
 					i(201460),	-- Gavel of Tyrhold
 					i(201055),	-- Tyrhold Bindings
@@ -153,10 +153,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381108, {	-- Yennu's Map
 				["coord"] = { 54.9, 75.4, THALDRASZUS },
-				["g"] = {
-					i(199069, {	-- Yennu's Map
-						["questID"] = 70538,
-					}),
+				["groups"] = {
+					i(199069),	-- Yennu's Map (CI!)
 				},
 			}),
 		}),

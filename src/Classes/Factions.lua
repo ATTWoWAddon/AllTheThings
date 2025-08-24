@@ -26,10 +26,6 @@ local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 local GetFactionReputationCeiling = app.WOWAPI.GetFactionReputationCeiling;
 
 -- Faction API Implementation
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	ATTAccountWideData = accountWideData
-end)
-
 
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
 local C_GossipInfo_GetFriendshipReputation;
@@ -124,6 +120,12 @@ local function GetFactionStanding(reputationPoints)
 	end
 	return 1, 0
 end
+local function CompareReputation(t, reputation)
+	return t.reputation >= reputation;
+end
+local function CompareStanding(t, standing)
+	return t.standing >= standing;
+end
 
 -- Faction lib
 local KEY, CACHE, SETTING = "factionID", "Factions", "Reputations"
@@ -141,7 +143,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		end
 	end,
 	name = function(t)
-		return GetFactionName(t[KEY]) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
+		return GetFactionName(t[KEY]) or (t.npcID and app.NPCNameFromID[t.npcID]) or (FACTION .. " #" .. t[KEY]);
 	end,
 	description = function(t)
 		if not t.lore then return L.FACTION_SPECIFIC_REP; end
@@ -246,6 +248,9 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 	sortProgress = function(t)
 		return ((t.reputation or -42000) + 42000) / 84000;
 	end,
+	CompareReputation = function()
+		return CompareReputation;
+	end,
 },
 C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	isFriend = app.ReturnTrue,
@@ -296,6 +301,9 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	rankText = function(t)
 		local standing, maxstanding = t.rank, t.maxstanding;
 		return Colorize(TRADESKILL_RANK_HEADER:format(standing), GetProgressColor(math_min(standing, maxstanding) / maxstanding));
+	end,
+	CompareReputation = function()
+		return CompareStanding;
 	end,
 },
 function(t) return C_GossipInfo_GetFriendshipReputation(t[KEY]).friendshipFactionID ~= 0; end,
@@ -360,6 +368,11 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 	end,
 },
 function(t) return C_MajorFactions_GetMajorFactionData(t[KEY]) end);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	ATTAccountWideData = accountWideData
+end)
 
 if app.IsRetail then
 	app.AddEventHandler("OnRefreshCollections", function()

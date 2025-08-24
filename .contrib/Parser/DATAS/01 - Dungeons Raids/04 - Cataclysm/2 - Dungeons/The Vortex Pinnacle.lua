@@ -8,8 +8,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
-					["qg"] = 49943,	-- Itesh
 					["sourceQuest"] = 28845,	-- The Vortex Pinnacle
+					["qg"] = 49943,	-- Itesh
 					["groups"] = {
 						i(66898),	-- Cloak of Itesh
 						i(66899),	-- Leggings of the Vortex Pinnacle
@@ -17,7 +17,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28845, {	-- The Vortex Pinnacle
-					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						27519,	-- Under the Choking Sands
+						27520,	-- Minions of Al'Akir
+						27706,	-- The Scepter of Orsis
+					},
 					["qgs"] = {
 						45772,	-- General Ammantep
 						49943,	-- Itesh
@@ -25,15 +29,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["coords"] = {
 						{ 45.2, 37.7, ULDUM },	-- General Ammantep
 					},
-					["sourceQuests"] = {
-						27519,	-- Under the Choking Sands
-						27520,	-- Minions of Al'Akir
-						27706,	-- The Scepter of Orsis
-					},
+					["isBreadcrumb"] = true,
 				}),
 				q(28760, {	-- Vengeance for Orsis
-					["qg"] = 49943,	-- Itesh
 					["sourceQuest"] = 28845,	-- The Vortex Pinnacle
+					["qg"] = 49943,	-- Itesh
 					["groups"] = {
 						i(66901),	-- Greaves of Orsis
 						i(66903),	-- Caliph's Band
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
 					["groups"] = {
 						-- #if BEFORE 7.3.5
-						ach(4847),    -- The Vortex Pinnacle
+						ach(4847),	-- The Vortex Pinnacle
 						-- #endif
 						i(55847),	-- Billowing Cape
 						i(55844),	-- Gloves of Haze
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					e(116, {	-- Asaad, Caliph of Zephyrs
 						["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
 						["groups"] = {
-							ach(4847),    -- The Vortex Pinnacle
+							ach(4847),	-- The Vortex Pinnacle
 							i(56369),	-- Billowing Cape
 							i(56368),	-- Gloves of Haze
 							i(56370),	-- Heart of Thunder

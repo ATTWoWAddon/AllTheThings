@@ -535,7 +535,7 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(84410),	-- Safety Catch Removal Kit
 	}),
 }));
-MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110403, {	-- Engineering (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -609,7 +609,7 @@ MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = {
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
-	["g"] = {
+	["groups"] = {
 		r(158739, {	-- Engineering (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -808,7 +808,7 @@ NAZJATAR_ENGINEERING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timelin
 		r(294787),	-- Notorious Combatant's Stormsteel Destroyer [Rank 1]
 	}),
 }));
-SL_ENGINEERING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310542),	-- Shadowlands Engineering
 	n(ARMOR, {
 		r(310507),	-- Articulated Ectoplasmic Specs

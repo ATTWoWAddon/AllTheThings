@@ -1,0 +1,5 @@
+11.2.0.61476
+faction(2657),	-- 11.2 Ethereum
+faction(2659),	-- The K'aresh Trust (Paragon)
+faction(2722),	-- Delves: Season 3
+faction(2739),	-- Delves: Coffer Key Shards Conversion

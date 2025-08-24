@@ -8,8 +8,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28814, {	-- Followers and Leaders
-					["qg"] = 50048,	-- Earthwarden Yrsa
 					["sourceQuest"] = 28815,	-- Twilight Documents
+					["qg"] = 50048,	-- Earthwarden Yrsa
 					["groups"] = {
 						i(66892),	-- Band of the One Hundred and One
 						i(66893),	-- High Priestess' Signet
@@ -20,9 +20,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 50048,	-- Earthwarden Yrsa
 				}),
 				q(28824, {	-- Wayward Child
+					["sourceQuest"] = 26871,	-- A Rock Amongst Many
 					["qg"] = 42465,	-- Therazane <The Stonemother>
 					["coord"] = { 56.3, 12.2, DEEPHOLM },
-					["sourceQuest"] = 26871,	-- A Rock Amongst Many
 					["lvl"] = 82,
 					["groups"] = {
 						i(66897),	-- Crystal Shimmer Cloak

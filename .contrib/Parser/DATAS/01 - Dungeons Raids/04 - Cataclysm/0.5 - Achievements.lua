@@ -4,18 +4,6 @@
 
 root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
 	n(ACHIEVEMENTS, {
-		ach(5535, {	-- 1000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5536, {	-- 5000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5537, {	-- 25,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5538, {	-- 50,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
 		ach(4844, {	-- Cataclysm Dungeon Hero
 			["sym"] = {{"meta_achievement",
 				5060,	-- Heroic: Blackrock Caverns
@@ -48,7 +36,6 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 				title(185),	-- <Name>, Defender of a Shattered World
 			},
 		}),
-		ach(11754, {["timeline"] = {ADDED_7_2_0}}),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(4845, {	-- Glory of the Cataclysm Hero
 			["sym"] = {{"meta_achievement",
 				4844,	-- Cataclysm Dungeon Hero
@@ -119,53 +106,8 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 		}),
 		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
 			["timeline"] = { ADDED_7_3_0 },
-			["g"] = {
-				i(152963),		-- Amalgam of Destruction (PET!)
-				crit(37670, {		-- Tinytron (Blackwing Descent - Magmatron)
-					["provider"] = { "i", 152966 },
-				}),
-				crit(37671, {		-- Discarded Experiment (Blackwing Descent - Maloriak)
-					["provider"] = { "i", 152967 },
-				}),
-				crit(37672, {		-- Rattlejaw (Blackwing Descent - Nefarian)
-					["provider"] = { "i", 152968 },
-				}),
-				crit(37673, {		-- Twilight Clutch-Sister (The Bastion of Twilight - Valiona)
-					["provider"] = { "i", 152969 },
-				}),
-				crit(37674, {		-- Bound Stream (The Bastion of Twilight - Elementium Monstrosity)
-					["provider"] = { "i", 152970 },
-				}),
-				crit(37675, {		-- Faceless Minion (The Bastion of Twilight - Cho'gall)
-					["provider"] = { "i", 152972 },
-				}),
-				crit(37677, {		-- Drafty (Throne of the Four Winds - Nezir)
-					["provider"] = { "i", 152974 },
-				}),
-				crit(37676, {		-- Zephyrian Prince (Throne of the Four Winds - Al'Akir)
-					["provider"] = { "i", 152973 },
-				}),
-				crit(37678, {		-- Blazehound (Firelands - Shannox)
-					["provider"] = { "i", 152975 },
-				}),
-				crit(37679, {		-- Cinderweb Recluse (Firelands - Beth'tilac)
-					["provider"] = { "i", 152976 },
-				}),
-				crit(37680, {		-- Surger (Firelands - Baleroc)
-					["provider"] = { "i", 152977 },
-				}),
-				crit(37681, {		-- Infernal Pyreclaw (Firelands - Majordomo Staghelm)
-					["provider"] = { "i", 152978 },
-				}),
-				crit(37682, {		-- Faceless Mindlasher (Dragon Soul - Yor'sahj the Unsleeping)
-					["provider"] = { "i", 152979 },
-				}),
-				crit(37683, {		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
-					["provider"] = { "i", 152980 },
-				}),
-				crit(37684, {		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
-					["provider"] = { "i", 152981 },
-				}),
+			["groups"] = {
+				i(152963),	-- Amalgam of Destruction (PET!)
 			},
 		}),
 	}),

@@ -1,17 +1,16 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			["lore"] = "Townlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.",
 			["icon"] = 618796,
-			["maps"] = { 389 },	-- Niuzao Catacombs
+			["maps"] = { TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7310),	-- Defender of Gods
-					explorationAch(6977),	-- Explore Townlong Steppes
+					ach(6977),	-- Explore Townlong Steppes
 					ach(7309),	-- Fire in the Yaung-hole!
 					ach(7298, {	-- Getting Around with the Shado-Pan
 						crit(20453),	-- Fei Li
@@ -24,15 +23,9 @@ root(ROOTS.Zones, {
 						crit(20458),	-- Tenwu of the Red Smoke
 						crit(20459),	-- Lao-Chin the Iron Belly
 					}),
-					ach(7308, {	-- Know Your Role
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(7299, {	-- Loner and a Rebel
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(6539, {	-- One Steppe Forward, Two Steppes Back
-						["sym"] = {{ "achievement_criteria" }},
-					}),
+					ach(7308),	-- Know Your Role
+					ach(7299),	-- Loner and a Rebel
+					ach(6539),	-- One Steppe Forward, Two Steppes Back
 					ach(7297, {	-- Proven Strength (Shado-Pan Garrison)
 						crit(22174),	-- Fei Li
 						crit(22168),	-- Snow Blossom
@@ -60,35 +53,24 @@ root(ROOTS.Zones, {
 							7309,		-- Fire in the Yaung-hole!
 							7310,		-- Defender of Gods
 						}},
-						["g"] = {
+						["groups"] = {
 							title(205),		-- Shado-Master
 						},
 					}),
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						724,	-- Alpine Foxling (PET!)
-						725,	-- Alpine Foxling Kit (PET!)
-						742,	-- Clouded Hedgehog (PET!)
-						745,	-- Crunchy Scorpion (PET!)
-						741,	-- Silent Hedgehog (PET!)
-						729,	-- Tolai Hare (PET!)
-					}},
-					["groups"] = {
-						pet(732, {	-- Amber Moth (PET!)
-							["coords"] = {
-								{ 50.0, 80.2, TOWNLONG_STEPPES },
-								{ 66.8, 80.6, TOWNLONG_STEPPES },
-								{ 55.6, 33.6, DREAD_WASTES },
-							},
-						}),
-						pet(733),	-- Grassland Hopper (PET!)
-						pet(680),	-- Kuitan Mongoose (PET!)
-						pet(737),	-- Mongoose (PET!)
-						pet(739),	-- Mongoose Pup (PET!)
-						pet(740),	-- Yakrat (PET!)
-					},
+					pet(732, {	-- Amber Moth (PET!)
+						["coords"] = {
+							{ 48.8, 78.2, TOWNLONG_STEPPES },
+							{ 66.8, 80.6, TOWNLONG_STEPPES },
+						},
+					}),
+					pet(733),	-- Grassland Hopper (PET!)
+					pet(680),	-- Kuitan Mongoose (PET!)
+					pet(737),	-- Mongoose (PET!)
+					pet(739),	-- Mongoose Pup (PET!)
+					pet(740),	-- Yakrat (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6342,{coord={59.2,85.9,TOWNLONG_STEPPES}}),	-- Ambermarsh
@@ -127,68 +109,74 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_SHADO_PAN),	-- Shado-Pan
-					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
-						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
-						["collectible"] = false,
-						["icon"] = 645203,
-						["g"] = {
-							n(QUESTS, {
-								q(30954, {	-- A Blade is a Blade
-									["provider"] = { "n", 61581 },	-- Ogo the Younger
-									["isDaily"] = true,
-									["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
-								}),
-								q(30953, {	-- Fallen Sentinels
-									["provider"] = { "n", 61585 },	-- Yak-Keeper Kyana
-									["isDaily"] = true,
-									["coord"] = { 39.1, 62.0, TOWNLONG_STEPPES },
-								}),
-								q(30955, {	-- Paying Tribute
-									["provider"] = { "n", 61583 },	-- High Adept Paosha
-									["isDaily"] = true,
-									["coord"] = { 38.9, 62.5, TOWNLONG_STEPPES },
-								}),
-								q(30952, {	-- The Unending Siege
-									["provider"] = { "n", 61580 },	-- Ogo the Elder
-									["isDaily"] = true,
-									["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
-								}),
-							}),
-						},
-					}),
 				}),
 				n(FLIGHT_PATHS, {
-					fp(1054, {	-- Gao-Ran Battlefront
+					fp(1054, {	-- Gao-Ran Battlefront, Townlong Steppes
+						["cr"] = 62903,	-- Kite Master Nenshi <Flight Master>
 						["coord"] = { 74.4, 81.4, TOWNLONG_STEPPES },
 					}),
-					fp(1053, {	-- Longying Outpost
+					fp(1053, {	-- Longying Outpost, Townlong Steppes
+						["cr"] = 62901,	-- Kite Master Wong <Flight Master>
 						["coord"] = { 71.0, 57.2, TOWNLONG_STEPPES },
 					}),
-					fp(1055, {	-- Rensai's Watchpost
+					fp(1055, {	-- Rensai's Watchpost, Townlong Steppes
+						["cr"] = 62898,	-- Kite Master Li-Sen <Flight Master>
 						["coord"] = { 54.2, 79.0, TOWNLONG_STEPPES },
 					}),
-					fp(1056, {	-- Shado-Pan Garrison
+					fp(1056, {	-- Shado-Pan Garrison, Townlong Steppes
+						["cr"] = 62909,	-- Kite Master Yao-Li <Flight Master>
 						["coord"] = { 50.0, 71.8, TOWNLONG_STEPPES },
 					}),
 				}),
 				petbattles({
 					n(68463, {	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
 						["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(32434, {	-- Burning Pandaren Spirit
+								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(93146, {	-- Pandaren Spirit Pet Supplies
+										["sym"] = {{"select","itemID",
+											89139,	-- Chain Pet Leash
+											44820,	-- Red Ribbon Pet Leash
+											37460,	-- Rope Pet Leash
+										}},
+										["groups"] = {
+											i(92798),	-- Pandaren Fire Spirit (PET!)
+										},
+									})
+								},
+							}),
+						},
 					}),
 					n(66918, {	-- Seeker Zusshi <Grand Master Pet Tamer>
 						["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31991, {	-- Grand Master Zusshi
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
 					q(31894, {	-- A Delicate Balance
-						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuest"] = 30784,	-- The Point of No Return
+						["qg"] = 60864,	-- Yalia Sagewhisper
+						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["isBreadcrumb"] = true,
 					}),
 					q(30814, {	-- A Foot in the Door
-						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60688 },	-- Taran Zhu
 						["sourceQuests"] = {
 							-- #if AFTER 7.3.5
 							49560,	-- Hero's Call: Townlong Steppes!
@@ -199,127 +187,129 @@ root(ROOTS.Zones, {
 							30768,	-- My Husband...
 							31695,	-- Beyond the Wall
 						},
+						["qg"] = 60688,	-- Taran Zhu
+						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 					}),
 					q(31198, {	-- A Morale Victory
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49, 71.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 						["isDaily"] = true,
 					}),
 					q(30964, {	-- A Proper Poultice
+						["qg"] = 61625,	-- Provisioner Bamfu
 						["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61625 },	-- Provisioner Bamfu
 					}),
 					q(30786, {	-- A Spear Through My Side, A Chain Through My Soul
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 31894,	-- A Delicate Balance
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 					}),
 					q(30928, {	-- A Trail of Fear
-						["coord"] = { 39.1, 62.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61585 },	-- Yak-Keeper Kyana
 						["sourceQuest"] = 30925,	-- Niuzao's Price
+						["qg"] = 61585,	-- Yak-Keeper Kyana
+						["coord"] = { 39.1, 62.0, TOWNLONG_STEPPES },
 					}),
 					q(30901, {	-- Along the Southern Front
-						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuest"] = 30900,	-- Terror of the Dread Wastes
+						["qg"] = 61066,	-- Taran Zhu
+						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 					}),
 					q(30789, {	-- Arconiss
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81319),	-- Stack of Torches (QI!)
 						},
 					}),
 					q(30791, {	-- Arconiss Thirsts
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81260),	-- Clotted Rodent's Blood (QI!)
 						},
 					}),
 					q(31114, {	-- Assault Deadtalker's Plateau
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 					}),
 					q(31113, {	-- Assault Fire Camp Gai-Cho
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 					}),
 					q(30892, {	-- Back on Their Feet
-						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61470 },	-- Septi the Herbalist
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61470,	-- Septi the Herbalist
+						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(82787),	-- Citron-Infused Bandages (QI!)
 						},
 					}),
 					q(30929, {	-- Bad Yak
-						["coord"] = { 39.2, 62.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61161 },	-- Bluesaddle
 						["sourceQuests"] = {
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61161,	-- Bluesaddle
+						["coord"] = { 39.2, 62.0, TOWNLONG_STEPPES },
 					}),
 					q(30884, {	-- Behind the Battlefront
-						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuest"] = 30785,	-- Gao-Ran Battlefront
+						["qg"] = 61066,	-- Taran Zhu
+						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 					}),
 					q(31895, {	-- Better Off Dread
+						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 						["isBreadcrumb"] = true,
 					}),
 					q(31047, {	-- Born Free
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.6, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 					}),
 					q(30888, {	-- Breach in the Defenses
-						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61468 },	-- Taoshi
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["qg"] = 61468,	-- Taoshi
+						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81925),	-- Shado-Pan Flare (QI!)
 						},
 					}),
 					q(31044, {	-- Bronze Claws
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.6, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(83153),	-- Bronze Claw (QI!)
 						},
 					}),
 					q(31065, {	-- Buried Beneath
-						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuests"] = { 30980 },	-- Heroes of the Shado-Pan
+						["qg"] = 62274,	-- Taran Zhu
+						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31120, {	-- Cheng Bo!
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 					}),
 					q(31032, {	-- Choking the Skies
-						["coord"] = { 51.2, 83.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62573 },	-- Marksman Ye
 						["sourceQuest"] = 30976,	-- Joining the Hunt
-						["g"] = {
+						["qg"] = 62573,	-- Marksman Ye
+						["coord"] = { 51.2, 83.0, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83768),	-- Wu Kao Torch (QI!)
 							i(88589),	-- Cremating Torch (TOY!)
 						},
 					}),
 					q(30898, {	-- Cutting the Swarm
-						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuests"] = { 30895 },	-- Improvised Ammunition
+						["qg"] = 61066,	-- Taran Zhu
+						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
 								i(82723),	-- Volatile Dread Orb (QI!)
@@ -330,23 +320,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31043, {	-- Dark Arts
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
-						["g"] = {
+						["groups"] = {
 							i(83130),	-- Shan'ze Tablet (QI!)
 						},
 					}),
 					q(31199, {	-- Destroy the Siege Weapons!
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					}),
 					q(30979, {	-- Devastation Below
-						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61020 },	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30978 },	-- Hostile Skies
-						["g"] = {
+						["qg"] = 61020,	-- Hawkmaster Nurong
+						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(84587),	-- Farwatch Satin Hood
 							i(84588),	-- Farwatch Hide Helm
 							i(84589),	-- Earthmover Cap
@@ -359,23 +349,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30778, {	-- Dust to Dust
-						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61261 },	-- Ban Bearheart
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 61261,	-- Ban Bearheart
+						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31041, {	-- Egg Rescue!
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
-						["g"] = {
+						["groups"] = {
 							i(83129),	-- Cloudrunner Egg (QI!)
 						},
 					}),
 					q(30970, {	-- Enraged By Hatred
-						["coord"] = { 67.3, 80.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62436 },	-- Taoshi
 						["sourceQuests"] = { 30901 },	-- Along the Southern Front
-						["g"] = {
+						["qg"] = 62436,	-- Taoshi
+						["coord"] = { 67.3, 80.8, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83741),	-- Cloak of the Hollow
 							i(83742),	-- Cloak of Seething Hatred
 							i(83743),	-- Scorpion Drape
@@ -384,15 +374,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30932, {	-- Father's Footsteps
-						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 						["sourceQuest"] = 30931,	-- My Father's Crossbow
+						["qg"] = 61584,	-- Sentinel Commander Qipan
+						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
 					}),
 					q(30769, {	-- First Assault
-						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["sourceQuest"] = 30814,	-- A Foot in the Door
-						["provider"] = { "n", 60688 },	-- Taran Zhu
-						["g"] = {
+						["qg"] = 60688,	-- Taran Zhu
+						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(88095),	-- Mistborne Pauldrons
 							i(88094),	-- Mistlurker Pauldrons
 							i(88093),	-- Earthmover Pauldron
@@ -405,41 +395,41 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31201, {	-- Friends, Not Food!
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					}),
 					q(31200, {	-- Fumigation
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
-						["g"] = {
+						["groups"] = {
 							i(86532),	-- Bag of Shado-Pan Gas Bombs (QI!)
 						},
 					}),
 					q(30785, {	-- Gao-Ran Battlefront
-						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61261 },	-- Ban Beartheart
-						["isBreadcrumb"] = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 						["sourceQuests"] = { 30784 },	-- The Point of No Return
+						["qg"] = 61261,	-- Ban Beartheart
+						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
+						["isBreadcrumb"] = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 					}),
 					q(30927, {	-- Give Them Peace
-						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 						["sourceQuest"] = 30925,	-- Niuzao's Price
+						["qg"] = 61584,	-- Sentinel Commander Qipan
+						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
 					}),
 					q(30788, {	-- Golgoss
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81319),	-- Stack of Torches (QI!)
 						},
 					}),
 					q(30790, {	-- Golgoss Hungers
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
 								i(81250),	-- Snarlvine (QI!)
@@ -449,15 +439,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31048, {	-- Grave Consequences
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(30977, {	-- Grounded Welcome
-						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62278 },	-- Rensai Oakhide
 						["sourceQuest"] = 30976,	-- Joining the Hunt
-						["g"] = {
+						["qg"] = 62278,	-- Rensai Oakhide
+						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(84596),	-- Farwatch Satin Robe
 							i(84597),	-- Farwatch Hide Robes
 							i(84598),	-- Earthmover Breastplate
@@ -470,10 +460,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30783, {	-- Hatred Becomes Us
-						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuest"] = 30827,	-- What Lies Beneath
-						["g"] = {
+						["qg"] = 60864,	-- Yalia Sagewhisper
+						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(81417),	-- Totem of Harmony (QI!)
 							i(88584),	-- Totem of Harmony (TOY!)
 						},
@@ -485,32 +475,32 @@ root(ROOTS.Zones, {
 						["lvl"] = 83,
 					})),
 					q(30980, {	-- Heroes of the Shado-Pan
-						["coord"] = { 53.9, 86.9, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62786 },	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30979 },	-- Devastation Below
+						["qg"] = 62786,	-- Hawkmaster Nurong
+						["coord"] = { 53.9, 86.9, TOWNLONG_STEPPES },
 					}),
 					q(30978, {	-- Hostile Skies
-						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61020 },	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30899 },	-- In Skilled Hands
-						["g"] = {
+						["qg"] = 61020,	-- Hawkmaster Nurong
+						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(88590),	-- Nurong's Gun
 						},
 					}),
 					q(31045, {	-- Illusions Of The Past
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(30895, {	-- Improvised Ammunition
-						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuests"] = {
 							30892,	-- Back on Their Feet
 							30894,	-- Rummaging Through the Remains
 							30893,	-- The Endless Swarm
 						},
-						["g"] = {
+						["qg"] = 61066,	-- Taran Zhu
+						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
+						["groups"] = {
 							o(211863, {
 								i(82722),	-- Krik'thik Limb (QI!)
 							}),
@@ -526,64 +516,64 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30958, {	-- In Battle's Shadow
+						["qg"] = 61583,	-- High Adept Paosha
 						["coord"] = { 38.9, 62.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 61583 },	-- High Adept Paosha
 					}),
 					q(30777, {	-- In Search of Suna
-						["coord"] = { 71.0, 56.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60687 },	-- Ban Bearheart
 						["sourceQuests"] = { 30776 },	-- Jung Duk
+						["qg"] = 60687,	-- Ban Bearheart
+						["coord"] = { 71.0, 56.5, TOWNLONG_STEPPES },
 					}),
 					q(30899, {	-- In Skilled Hands
-						["coord"] = { 54.0, 78.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuests"] = { 30976 },	-- Joining the Hunt
+						["qg"] = 62274,	-- Taran Zhu
+						["coord"] = { 54.0, 78.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83023),	-- Shado-Pan Crossbow Bolt Bundle (QI!)
 						},
 					}),
 					q(31049, {	-- In Sprite Of Everything
+						["qgs"] = {
+							62304,	-- Ban Bearheart
+							62379,	-- Omnia Mage
+							62295,	-- Omnia Mage
+							62378,	-- Omnia Priest
+						},
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["providers"] = {
-							{ "n", 62304 },	-- Ban Bearheart
-							{ "n", 62379 },	-- Omnia Mage
-							{ "n", 62295 },	-- Omnia Mage
-							{ "n", 62378 },	-- Omnia Priest
-						},
 					}),
 					q(30897, {	-- In the Wrong Hands
-						["coord"] = { 70.3, 86.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61880 },	-- Initiate Chao
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61880,	-- Initiate Chao
+						["coord"] = { 70.3, 86.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(82783),	-- Initiate Chao's Sword (QI!)
 							i(88586),	-- Chao Cookies
 						},
 					}),
 					q(30972, {	-- Joining the Fight
-						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62124 },	-- Initiate Pao-Me
 						["sourceQuests"] = {
 							30970,	-- Enraged By Hatred
 							30971,	-- Taking Stock
 						},
+						["qg"] = 62124,	-- Initiate Pao-Me
+						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
 					}),
 					q(30976, {	-- Joining the Hunt
-						["coord"] = { 61.1, 83.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62736 },	-- Taran Zhu
 						["sourceQuests"] = { 30975 },	-- The Taking of Dusklight Bridge
+						["qg"] = 62736,	-- Taran Zhu
+						["coord"] = { 61.1, 83.0, TOWNLONG_STEPPES },
 					}),
 					q(30776, {	-- Jung Duk
-						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60684 },	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30773,	-- Pitching In
 							30774,	-- Ranger Rescue
 							30772,	-- Seeing Red
 						},
-						["g"] = {
+						["qg"] = 60684,	-- Suna Silentstrike
+						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83689),	-- Mistborne Cord
 							i(83690),	-- Mistlurker Belt
 							i(83691),	-- Earthmover Waistguard
@@ -596,15 +586,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31063, {	-- Lao-Chin and Serevex
-						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
+						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(30781, {	-- Last Toll of the Yaungol
-						["coord"] = { 82.7, 73.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60903 },	-- Xiao Tu
 						["sourceQuest"] = 30777,	-- In Search of Suna
-						["g"] = {
+						["qg"] = 60903,	-- Xiao Tu
+						["coord"] = { 82.7, 73.1, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83746),	-- Torch of Noon
 							i(83747),	-- Torch of Dawn
 							i(83748),	-- Torch of Dusk
@@ -618,19 +608,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31046, {	-- Little Hatchlings
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(30793, {	-- Mists' Opportunity
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuests"] = {
 							30791,	-- Arconiss Thirsts
 							30790,	-- Golgoss Hungers
 							30792,	-- Orbiss Fades
 						},
-						["g"] = {
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83653),	-- Mistborne Mantle
 							i(83654),	-- Mistlurker Spaulders
 							i(83655),	-- Earthmover Spaulder
@@ -643,31 +633,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31266, {	-- Mogu Incursions
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
 					}),
 					q(30931, {	-- My Father's Crossbow
-						["coord"] = { 43.8, 65.7, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61539 },	-- Ku-Mo
 						["sourceQuests"] = {	-- [Discord 2023-8-2]
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61539,	-- Ku-Mo
+						["coord"] = { 43.8, 65.7, TOWNLONG_STEPPES },
+						-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 						["groups"] = {
 							i(81891),	-- Gunpowder Casks (QI!)
 						},
-						-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 					}),
 					q(30922, {	-- Natural Antiseptic
+						["qg"] = 61625,	-- Provisioner Bamfu
 						["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61625 },	-- Provisioner Bamfu
 					}),
 					q(30925, {	-- Niuzao's Price
-						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61581 },	-- Ogo the Younger
 						["sourceQuests"] = { 30924 },	-- The Wisdom of Niuzao
-						["g"] = {
+						["qg"] = 61581,	-- Ogo the Younger
+						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83736),	-- Sigil of Compassion
 							i(83737),	-- Sigil of Fidelity
 							i(83738),	-- Sigil of Grace
@@ -676,27 +666,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31064, {	-- Nurong and Rothek
-						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
+						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31042, {	-- Onyx Hearts
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
-						["g"] = {
+						["groups"] = {
 							i(83138),	-- Onyx Heart (QI!)
 						},
 					}),
 					q(30792, {	-- Orbiss Fades
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 					}),
 					q(30771, {	-- Perfect Pitch
-						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60688 },	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["qg"] = 60688,	-- Taran Zhu
+						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
 								i(81174),	-- Dark Pitch (QI!)
@@ -706,82 +696,82 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30930, {	-- Pick a Yak
-						["coord"] = { 35.4, 56.7, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61161 },	-- Bluesaddle
 						["sourceQuest"] = 30929,	-- Bad Yak
-						["g"] = {
+						["qg"] = 61161,	-- Bluesaddle
+						["coord"] = { 35.4, 56.7, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(82467),	-- Ruthers' Harness (TOY!)
 							i(82468),	-- Yak Lasso (QI!)
 						},
 					}),
 					q(30773, {	-- Pitching In
-						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60687 },	-- Ban Bearheart
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
-						["g"] = {
+						["qg"] = 60687,	-- Ban Bearheart
+						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(81193),	-- Ban's Explosives (QI!)
 							i(88583),	-- Ban's Bag of Bombs
 						},
 					}),
 					q(30774, {	-- Ranger Rescue
-						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60684 },	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60684,	-- Suna Silentstrike
+						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81178),	-- Stone Key (QI!)
 						},
 					}),
 					q(30960, {	-- Returning from the Pass
-						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61468 },	-- Taoshi
 						["sourceQuests"] = {
 							30888,	-- Breach in the Defenses
 							30890,	-- The Restless Watch
 						},
+						["qg"] = 61468,	-- Taoshi
+						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 					}),
 					q(31061, {	-- Riding the Storm
+						["qgs"] = {
+							62304,	-- Ban Bearheart
+							62295,	-- Omnia Mage
+							62379,	-- Omnia Mage
+							62378,	-- Omnia Priest
+						},
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["providers"] = {
-							{ "n", 62304 },	-- Ban Bearheart
-							{ "n", 62295 },	-- Omnia Mage
-							{ "n", 62379 },	-- Omnia Mage
-							{ "n", 62378 },	-- Omnia Priest
-						},
-						["g"] = {
+						["groups"] = {
 							i(83134),	-- Bronze Claws (QI!)
 						},
 					}),
 					q(30894, {	-- Rummaging Through the Remains
-						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61470 },	-- Septi the Herbalist
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
-						["g"] = {
+						["qg"] = 61470,	-- Septi the Herbalist
+						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(88585),	-- Dislodged Stinger
 						},
 					}),
 					q(30770, {	-- Running Rampant
-						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60688 },	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["qg"] = 60688,	-- Taran Zhu
+						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 					}),
 					q(30772, {	-- Seeing Red
-						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60684 },	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
-						["g"] = {
+						["qg"] = 60684,	-- Suna Silentstrike
+						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83671),	-- Mistborne Leggings
 							i(83672),	-- Mistlurker Legguards
 							i(83673),	-- Earthmover Leggings
@@ -794,56 +784,56 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30933, {	-- Seeking Father
-						["coord"] = { 48.6, 71.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 65341 },	-- Ku-Mo
-						["sourceQuest"] = 30932,	-- Father's Footsteps
 						["description"] = "This quest is not always available due to zone phasing issues.",
+						["sourceQuest"] = 30932,	-- Father's Footsteps
+						["qg"] = 65341,	-- Ku-Mo
+						["coord"] = { 48.6, 71.0, TOWNLONG_STEPPES },
 					}),
 					q(30923, {	-- Set the Mantid Back
+						["qg"] = 61482,	-- Tai Ho
 						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61482 },	-- Tai Ho
 					}),
 					q(30779, {	-- Slaying the Scavengers
-						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61261 },	-- Ban Bearheart
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 61261,	-- Ban Bearheart
+						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31116, {	-- Spirit Dust
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
-						["g"] = {
+						["groups"] = {
 							i(84727),	-- Ancient Spirit Dust (QI!)
 						},
 					}),
 					q(30782, {	-- Spiteful Spirits
-						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61261 },	-- Ban Bearheart
 						["sourceQuest"] = 30827,	-- What Lies Beneath
+						["qg"] = 61261,	-- Ban Bearheart
+						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31040, {	-- Spiteful Sprites (daily)
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(31196, {	-- Sra'vess Wetwork
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					}),
 					q(31277, {	-- Surprise Attack!
-						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["sourceQuests"] = { 31266 },	-- Mogu Incursions
+						["qg"] = 63009,	-- Master Snowdrift
+						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
-						["g"] = {
+						["groups"] = {
 							i(87768),	-- Onyx Cloud Serpent (MOUNT!)
 						},
 					}),
 					q(30971, {	-- Taking Stock
-						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62124 },	-- Initiate Pao-Me
 						["sourceQuest"] = 30901,	-- Along the Southern Front
+						["qg"] = 62124,	-- Initiate Pao-Me
+						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
 								i(83024),	-- Shadow-Pan Fire Arrows (QI!)
@@ -853,39 +843,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30981, {	-- Taoshi and Korvexxis
-						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
+						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31204, {	-- Target of Opportunity: Sra'thik Hivelord
+						["qgs"] = {
+							63614,	-- Ling of the Six Pools
+							63623,	-- Wu Kao Assassin
+							63624,	-- Wu Kao Hawkmaster
+							63622,	-- Wu Kao Rogue
+						},
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["providers"] = {
-							{ "n", 63614 },	-- Ling of the Six Pools
-							{ "n", 63623 },	-- Wu Kao Assassin
-							{ "n", 63624 },	-- Wu Kao Hawkmaster
-							{ "n", 63622 },	-- Wu Kao Rogue
-						},
 					}),
 					q(31203, {	-- Target of Opportunity: Sra'thik Swarmlord
+						["qgs"] = {
+							63614,	-- Ling of the Six Pools
+							63623,	-- Wu Kao Assassin
+							63624,	-- Wu Kao Hawkmaster
+							63622,	-- Wu Kao Rogue
+						},
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["providers"] = {
-							{ "n", 63614 },	-- Ling of the Six Pools
-							{ "n", 63623 },	-- Wu Kao Assassin
-							{ "n", 63624 },	-- Wu Kao Hawkmaster
-							{ "n", 63622 },	-- Wu Kao Rogue
-						},
-						["g"] = {
+						["groups"] = {
 							i(86534),	-- Shiny Shado-Pan Coin (QI!)
 							i(86536),	-- Wu Kao Dart of Lethargy (QI!)
 						},
 					}),
 					q(30900, {	-- Terror of the Dread Wastes
-						["coord"] = { 74.2, 85.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61021 },	-- Taoshi
 						["sourceQuests"] = { 30898 },	-- Cutting the Swarm
-						["g"] = {
+						["qg"] = 61021,	-- Taoshi
+						["coord"] = { 74.2, 85.0, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83726),	-- Gao-Ran Ring
 							i(83727),	-- Band of Terror
 							i(83728),	-- Seal of Taran Zhu
@@ -894,67 +884,67 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30959, {	-- The Big Guns
+						["qg"] = 61581,	-- Ogo the Younger
 						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 61581 },	-- Ogo the Younger
 					}),
 					q(31197, {	-- The Bigger They Come...
+						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 					}),
 					q(31127, {	-- The Challenger's Ring: Chao the Voice
-						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+						["qg"] = 63009,	-- Master Snowdrift
+						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31220, {	-- The Challenger's Ring: Hawkmaster Nurong
-						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+						["qg"] = 63614,	-- Ling of the Six Pools
+						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31128, {	-- The Challenger's Ring: Lao-Chin the Iron Belly
-						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
+						["qg"] = 63009,	-- Master Snowdrift
+						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31038, {	-- The Challenger's Ring: Snow Blossom
-						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+						["qg"] = 62304,	-- Ban Bearheart
+						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31221, {	-- The Challenger's Ring: Tenwu of the Red Smoke
-						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
+						["qg"] = 63614,	-- Ling of the Six Pools
+						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31104, {	-- The Challenger's Ring: Yalia Sagewhisper
-						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
+						["qg"] = 62304,	-- Ban Bearheart
+						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31118, {	-- The Deadtalker Cipher
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
-						["g"] = {
+						["groups"] = {
 							i(84759),	-- Ciphered Scroll (QI!)
 						},
 					}),
 					q(30815, {	-- The Death of Me
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuests"] = {
 							30789,	-- Arconiss
 							30788,	-- Golgoss
 						},
-						["g"] = {
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83756),	-- Sumprush Mace
 							i(83757),	-- Halcyon Death
 							i(83758),	-- Shield of Orbiss
@@ -964,10 +954,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30893, {	-- The Endless Swarm
-						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuests"] = { 30960 },	-- Returning from the Pass
-						["g"] = {
+						["qg"] = 61066,	-- Taran Zhu
+						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83698),	-- Mistborne Gloves
 							i(83699),	-- Mistlurker Gloves
 							i(83700),	-- Earthmover Gaunlets
@@ -980,26 +970,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31119, {	-- The Enemy of My Enemy... Is Still My Enemy!
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
-						["g"] = {
+						["groups"] = {
 							i(84762),	-- Highly Explosive Yaungol Oil (QI!)
 						},
 					}),
 					q(30775, {	-- The Exile
-						["coord"] = { 66.9, 51.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60735 },	-- Katak the Defeated
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60735,	-- Katak the Defeated
+						["coord"] = { 66.9, 51.4, TOWNLONG_STEPPES },
 					}),
 					q(30963, {	-- The Field Armorer
+						["qg"] = 61625,	-- Provisioner Bamfu
 						["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61625 },	-- Provisioner Bamfu
-						["g"] = {
+						["groups"] = {
 							i(83680),	-- Mistborne Treads
 							i(83681),	-- Mistlurker Footguards
 							i(83682),	-- Earthmover Sabatons
@@ -1012,24 +1002,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31039, {	-- The Mogu Menace
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(31106, {	-- The Mogu Menace
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(31105, {	-- The Mogu Menace
+						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 62304 },	-- Ban Bearheart
 					}),
 					q(30921, {	-- The Motives of the Mantid
+						["qg"] = 61482,	-- Tai Ho
 						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61482 },	-- Tai Ho
-						["g"] = {
+						["groups"] = {
 							i(83707),	-- Mistborne Cuffs
 							i(83708),	-- Mistlurker Bindings
 							i(83709),	-- Earthmover Armbands
@@ -1042,18 +1032,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30957, {	-- The Overwhelming Swarm
+						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
 					}),
 					q(30784, {	-- The Point of No Return
-						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61261 },	-- Ban Bearheart
 						["sourceQuests"] = {
 							30783,	-- Hatred Becomes Us
 							30782,	-- Spiteful Spirits
 						},
-						["g"] = {
+						["qg"] = 61261,	-- Ban Bearheart
+						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(81430),	-- Totem of Harmony (QI!)
 							i(83662),	-- Mistborne Robe
 							i(83663),	-- Mistlurker Tunic
@@ -1067,10 +1057,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30890, {	-- The Restless Watch
-						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61468 },	-- Taoshi
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
-						["g"] = {
+						["qg"] = 61468,	-- Taoshi
+						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(84610),	-- Ring of Shallowstep Pass
 							i(84611),	-- Ring of the Watchful Eye
 							i(84612),	-- Band of the Faithful Scout
@@ -1079,19 +1069,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31688, {	-- The Search for Restless Leng
-						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62278 },	-- Rensai Oakhide
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62278,	-- Rensai Oakhide
+						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
 					}),
 					q(30968, {	-- The Sha of Hatred
-						["coord"] = { 47.4, 78.8, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62275 },	-- Taran Zhu
 						["sourceQuests"] = {
 							31063,	-- Lao-Chin and Serevex
 							31064,	-- Nurong and Rothek
 							30981,	-- Taoshi and Korvexxis
 						},
-						["g"] = {
+						["qg"] = 62275,	-- Taran Zhu
+						["coord"] = { 47.4, 78.8, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83644),	-- Mistborne Hood
 							i(83645),	-- Mistlurker Helm
 							i(83646),	-- Earthmover Helm
@@ -1103,34 +1093,48 @@ root(ROOTS.Zones, {
 							i(83652),	-- Palewind Helm
 						},
 					}),
+					q(31386, {	-- The Shado-Pan Offensive (A)
+						["qg"] = 64030,	-- Lao Lang
+						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31388, {	-- The Shado-Pan Offensive (H)
+						["qg"] = 64002,	-- Sang-Bo
+						["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(30956, {	-- The Siege Swells
+						["qg"] = 61580,	-- Ogo the Elder
 						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 61580 },	-- Ogo the Elder
 					}),
-					q(32681, {	-- The Storm Gathers (A)
-						["coord"] = { 49.8, 69.0, TOWNLONG_STEPPES },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 70360 },	-- Vareesa Windrunner
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32681, {	-- The Storm Gathers (A)
 						["sourceQuest"] = 32679,	-- Thunder Calls (A)
-						["g"] = {
+						["qg"] = 70360,	-- Vareesa Windrunner
+						["coord"] = { 49.8, 69.0, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
 							i(95567),	-- Kirin Tor Beacon (TOY!)
 						},
-					}),
-					q(32680, {	-- The Storm Gathers (H)
-						["coord"] = { 50.7, 73.3, TOWNLONG_STEPPES },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 70358 },	-- Scout Captain Elsia
+					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32680, {	-- The Storm Gathers (H)
 						["sourceQuest"] = 32678,	-- Thunder Calls (H)
-						["g"] = {
+						["qg"] = 70358,	-- Scout Captain Elsia
+						["coord"] = { 50.7, 73.3, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
 							i(95568),	-- Sunreaver Beacon (TOY!)
 						},
-					}),
+					})),
 					q(30975, {	-- The Taking of Dusklight Bridge
-						["coord"] = { 61.5, 79.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61016 },	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30973,	-- Up In Flames
-						["g"] = {
+						["qg"] = 61016,	-- Lao-Chin the Iron Belly
+						["coord"] = { 61.5, 79.3, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83721),	-- Bloodletter Band
 							i(83722),	-- Dusklight Band
 							i(83723),	-- Lao-Chin's Ring
@@ -1139,10 +1143,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30926, {	-- The Terrible Truth
-						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61580 },	-- Ogo the Elder
 						["sourceQuest"] = 30925,	-- Niuzao's Price
-						["g"] = {
+						["qg"] = 61580,	-- Ogo the Elder
+						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83731),	-- Mark of the Catacombs
 							i(83732),	-- Sigil of the Catacombs
 							i(83733),	-- Emblem of the Catacombs
@@ -1151,16 +1155,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31656, {	-- The Threat in the South
-						["coord"] = { 46.1, 82.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62802 },	-- Taoshi
 						["sourceQuests"] = { 30968 },	-- The Sha of Hatred
+						["qg"] = 62802,	-- Taoshi
+						["coord"] = { 46.1, 82.4, TOWNLONG_STEPPES },
 						["isBreadcrumb"] = true,
 					}),
 					q(30787, {	-- The Torches
-						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuests"] = { 30786 },	-- A Spear Through My Side, A Chain Through My Soul
-						["g"] = {
+						["qg"] = 60857,	-- Orbiss
+						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(81176),	-- Mist-Shaman's Torch (QI!)
 							i(84605),	-- Mist-Shaman Necklace
 							i(84606),	-- Pendant of Orbiss
@@ -1170,17 +1174,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30924, {	-- The Wisdom of Niuzao
-						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61482 },	-- Tai Ho
 						["sourceQuests"] = {
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61482,	-- Tai Ho
+						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
 					}),
 					q(30896, {	-- Thieves and Troublemakers
-						["coord"] = { 70.4, 86.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61881 },	-- Initiate Feng
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61881,	-- Initiate Feng
+						["coord"] = { 70.4, 86.3, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
 								i(82342),	-- Violet Citron (QI!)
@@ -1191,10 +1195,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31687, {	-- Thinning the Sik'thik
-						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62278 },	-- Rensai Oakhide
 						["sourceQuest"] = 31065,	-- Buried Beneath
-						["g"] = {
+						["qg"] = 62278,	-- Rensai Oakhide
+						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83716),	-- Sik'thik Locket
 							i(83717),	-- Oakhide Choker
 							i(83718),	-- Rensai's Necklace
@@ -1203,16 +1207,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31110, {	-- Through the Portal
+						["qg"] = 62810,	-- Moshu the Arcane
 						["coord"] = { 28.8, 22.5, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62810 },	-- Moshu the Arcane
-						["g"] = {
+						["groups"] = {
 							i(84102),	-- Ancient Arcane Powder (QI!)
 						},
 					}),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32679, {	-- Thunder Calls (A)
+						["qg"] = 64610,	-- Lyalia
+						["coord"] = { 84.0, 58.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32678, {	-- Thunder Calls (H)
+						["qg"] = 64566,	-- Sunwalker Dezco
+						["coord"] = { 62.8, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(30780, {	-- Totemic Research
-						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 60864,	-- Yalia Sagewhisper
+						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							o(211566, {	-- Palewind Totem
 								i(81355),	-- Palewind Totem (QI!)
@@ -1220,24 +1238,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30889, {	-- Trap Setting
-						["coord"] = { 79.3, 84.4, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61467 },	-- Mao the Lookout
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["qg"] = 61467,	-- Mao the Lookout
+						["coord"] = { 79.3, 84.4, TOWNLONG_STEPPES },
 					}),
 					q(30891, {	-- Treatment for the Troops
+						["qg"] = 61470,	-- Septi the Herbalist
 						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61470 },	-- Septi the Herbalist
 					}),
 					q(30887, {	-- Unwelcome Intruders
-						["coord"] = { 76.9, 78.7, TOWNLONG_STEPPES },
-						["provider"] = { "n", 61469 },	-- Taoshi
 						["sourceQuests"] = { 30884 },	-- Behind the Battlefront
+						["qg"] = 61469,	-- Taoshi
+						["coord"] = { 76.9, 78.7, TOWNLONG_STEPPES },
 					}),
 					q(30973, {	-- Up In Flames
-						["coord"] = { 61.6, 79.3, TOWNLONG_STEPPES },
-						["provider"] = { "n", 62273 },	-- Taran Zhu
 						["sourceQuest"] = 30972,	-- Joining the Fight
-						["g"] = {
+						["qg"] = 62273,	-- Taran Zhu
+						["coord"] = { 61.6, 79.3, TOWNLONG_STEPPES },
+						["groups"] = {
 							i(83136),	-- Quiver of Shado-Pan Fire Arrows (QI!)
 							i(88113),	-- Mistborne Waistband
 							i(88112),	-- Mistlurker Waistband
@@ -1251,9 +1269,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31117, {	-- Uruk!
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["provider"] = { "n", 63009 },	-- Master Snowdrift
 					}),
 					warchiefscommand(q(49542, {	-- Warchief's Command: Townlong Steppes!
 						["timeline"] = { ADDED_7_3_5 },
@@ -1262,27 +1280,27 @@ root(ROOTS.Zones, {
 						["lvl"] = 83,
 					})),
 					q(30827, {	-- What Lies Beneath
-						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
-						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuests"] = {
 							30778,	-- Dust to Dust
 							30781,	-- Last Toll of the Yaungol
 							30779,	-- Slaying the Scavengers
 							30780,	-- Totemic Research
 						},
+						["qg"] = 60864,	-- Yalia Sagewhisper
+						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81356),	-- Shadow-Pan Torch (QI!)
 						},
 					}),
 					q(31062, {	-- When The Dead Speak
+						["qgs"] = {
+							62304,	-- Ban Bearheart
+							62295,	-- Omnia Mage
+							62379,	-- Omnia Mage
+							62378,	-- Omnia Priest
+						},
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["isDaily"] = true,
-						["providers"] = {
-							{ "n", 62304 },	-- Ban Bearheart
-							{ "n", 62295 },	-- Omnia Mage
-							{ "n", 62379 },	-- Omnia Mage
-							{ "n", 62378 },	-- Omnia Priest
-						},
 					}),
 					o(214175, {	-- Bag of Wu Kao Supplies
 						["questID"] = 31466,
@@ -1302,7 +1320,7 @@ root(ROOTS.Zones, {
 							50832,	-- The Yowler
 							50820,	-- Yul Wildpaw
 						},
-						["g"] = {
+						["groups"] = {
 							i(87625),	-- Congealed Mist Amulet
 							i(87623),	-- Razor-Sharp Chitin Choker
 							i(87626),	-- Suna's Shattered Locket
@@ -1317,7 +1335,7 @@ root(ROOTS.Zones, {
 							{ 67.8, 87.6, TOWNLONG_STEPPES },
 							{ 68.8, 89.0, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(87222),	-- Big Bag of Linens
 						},
 					}),
@@ -1327,19 +1345,20 @@ root(ROOTS.Zones, {
 							{ 20.4, 7.40, TOWNLONG_STEPPES },
 							{ 36.4, 7.80, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(94595),	-- Spawn of G'nathus (PET!)
 						},
 					})),
 					n(66900, {	-- Huggalon the Heart Watcher
-						["coord"] = { 37.2, 57.6, TOWNLONG_STEPPES },
-						["g"] = {
+						["coord"] = { 65.6, 23.8, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+						["description"] = "Located in the catacombs.",
+						["groups"] = {
 							i(90067),	-- B. F. F. Necklace (TOY!)
 						},
 					}),
 					n(50355, {	-- Kah'tir
 						["coord"] = { 63.0, 35.6, TOWNLONG_STEPPES },
-						["g"] = {
+						["groups"] = {
 							i(87218, {	-- Big Bag of Arms
 								["sym"] = {{"select","itemID",
 									90723,	-- Arness's Scaled Leggings
@@ -1358,7 +1377,7 @@ root(ROOTS.Zones, {
 									90724,	-- Spriggin's Sproggin' Leggin'
 									90718,	-- Torik-Ethis' Bloodied Legguards
 								}},
-								["g"] = {
+								["groups"] = {
 									-- likely intended from actual Rares, but not actually working as intended since MoP it seems
 									i(90722),	-- Torik-Ethis' Gilded Legplates
 									i(87641),	-- Yaungol Battle Barrier
@@ -1373,7 +1392,7 @@ root(ROOTS.Zones, {
 							{ 47.8, 84.2, TOWNLONG_STEPPES },
 							{ 47.8, 88.6, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(87221),	-- Big Bag of Jewels
 						},
 					}),
@@ -1384,13 +1403,13 @@ root(ROOTS.Zones, {
 							{ 66.6, 52.8, TOWNLONG_STEPPES },
 							{ 65.4, 50.6, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(87219),	-- Huge Bag of Herbs
 						},
 					}),
 					n(50344, {	-- Norlaxx
 						["coord"] = { 54.0, 63.4, TOWNLONG_STEPPES },
-						["g"] = {
+						["groups"] = {
 							i(87220, {	-- Big Bag of Mysteries
 								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
 							}),
@@ -1398,63 +1417,79 @@ root(ROOTS.Zones, {
 					}),
 					n(66938, {	-- Odd'nirok <Seer of Kril'mandar>
 						["coord"] = { 42.3, 92.67, TOWNLONG_STEPPES },
-						["g"] = {
-							i(90171, {	-- Odd'nirok's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+						["groups"] = {
+							i(90171),	-- Odd'nirok's Clamshell
 						},
 					}),
 					n(50791, {	-- Siltriss the Sharpener
 						["coord"] = { 59.2, 85.6, TOWNLONG_STEPPES },
-						["g"] = {
+						["groups"] = {
 							i(87223),	-- Big Bag of Skins
 						},
 					}),
 					n(50832, {  -- The Yowler
 						["coord"] = { 67.6, 74.6, TOWNLONG_STEPPES },
-						["g"] = {
+						["groups"] = {
 							i(87225),	-- Big Bag of Food
 						},
 					}),
 					n(50820, {	-- Yul Wildpaw
 						["coord"] = { 32.0, 61.8, TOWNLONG_STEPPES },
-						["g"] = {
+						["groups"] = {
 							i(87224),	-- Big Bag of Wonders
 						},
 					}),
-					n(69841, {	-- Zandalari Warbringer (Amber)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
+				}),
+				n(TREASURES, {
+					o(213961, {	-- Abandoned Crate of Goods
+						["questID"] = 31427,	-- Abandoned Crate of Goods
+						["coord"] = { 62.8, 34.1, TOWNLONG_STEPPES },
+					}),
+					o(213844, {	-- Amber Encased Moth
+						["questID"] = 31426,
+						["coord"] = { 65.8, 86.1, TOWNLONG_STEPPES },
+						["groups"] = {
+							i(86472),	-- Amber Encased Moth
 						},
 					}),
-					n(69842, {	-- Zandalari Warbringer (Jade)
+					o(213418, {	-- Dominance
+						["coord"] = { 65.5, 50.0, TOWNLONG_STEPPES },
+					}),
+					o(213956, {	-- Fragment of Dread
+						["questID"] = 31423,
 						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
+							{ 64.2, 20.3, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 37.7, 87.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 47.8, 89.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 56.5, 64.7, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 						},
-						["g"] = {
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
+						["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
+						["groups"] = {
+							i(86516),	-- Fragment of Dread
 						},
 					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 39.83, 65.92, KRASARANG_WILDS },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
+					o(213959, {	-- Hardened Sap of Kri'vess
+						["questID"] = 31424,
+						["description"] = "Located all around Kri'vess.",
+						["coord"] = { 53.9, 58.4, TOWNLONG_STEPPES },
+						["groups"] = {
+							i(86517),	-- Hardened Sap of Kri'vess
 						},
-						["g"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
+					}),
+					o(213445, {	-- The Emperor's Burden - Part 5
+						["coord"] = { 37.7, 62.9, TOWNLONG_STEPPES },
+					}),
+					o(213420, {	-- Trapped in a Strange Land
+						["coord"] = { 84.1, 72.8, TOWNLONG_STEPPES },
+					}),
+					o(213960, {	-- Yaungol Fire Carrier
+						["coords"] = {
+							{ 66.2, 44.7, TOWNLONG_STEPPES },
+							{ 66.8, 48.0, TOWNLONG_STEPPES },
+						},
+						["questID"] = 31425,
+						["groups"] = {
+							i(86518),	-- Yaungol Fire Carrier
 						},
 					}),
 				}),
@@ -1463,1050 +1498,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.4, 57.2, TOWNLONG_STEPPES },
 						["sym"] = {{"sub","common_vendor",61749}},	-- The Metal Paw <Adventuring Supplies>
 					}),
-					n(70346, {	-- Ao Pye <Shado-Pan Assault Quartermaster>
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, n(70346, {	-- Ao Pye <Shado-Pan Assault Quartermaster>
 						["coord"] = { 38.0, 64.6, TOWNLONG_STEPPES },
-						["g"] = bubbleDownClassicRep(FACTION_SHADO_PAN_ASSAULT, {
+						["timeline"] = { ADDED_5_2_0 },
+						["groups"] = bubbleDownClassicRep(FACTION_SHADO_PAN_ASSAULT, {
 							{		-- Neutral
-								i(95987, {	-- Battleplate of the Last Mogu (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95331, {	-- Battleplate of the Last Mogu (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96731, {	-- Battleplate of the Last Mogu (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95825, {	-- Breastplate of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95225, {	-- Breastplate of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96569, {	-- Breastplate of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95853, {	-- Breeches of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95253, {	-- Breeches of the Haunted Forest (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96597, {	-- Breeches of the Haunted Forest (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95830, {	-- Chestguard of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95230, {	-- Chestguard of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96574, {	-- Chestguard of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95991, {	-- Chestguard of the Last Mogu (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95335, {	-- Chestguard of the Last Mogu (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96735, {	-- Chestguard of the Last Mogu (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95846, {	-- Cover of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95246, {	-- Cover of the Haunted Forest (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96590, {	-- Cover of the Haunted Forest (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95926, {	-- Cowl of the Exorcist (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95296, {	-- Cowl of the Exorcist (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96670, {	-- Cowl of the Exorcist (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95945, {	-- Cuirass of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95315, {	-- Cuirass of the Witch Doctor (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96689, {	-- Cuirass of the Witch Doctor (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
 								i(95146),	-- Destroyer's Battletags
-								i(95832, {	-- Faceguard of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95232, {	-- Faceguard of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96576, {	-- Faceguard of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95993, {	-- Faceguard of the Last Mogu (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95337, {	-- Faceguard of the Last Mogu (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96737, {	-- Faceguard of the Last Mogu (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95942, {	-- Faceguard of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95312, {	-- Faceguard of the Witch Doctor (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96686, {	-- Faceguard of the Witch Doctor (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95905, {	-- Fire-Charm Chestguard (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95275, {	-- Fire-Charm Chestguard (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96649, {	-- Fire-Charm Chestguard (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95907, {	-- Fire-Charm Crown (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95277, {	-- Fire-Charm Crown (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96651, {	-- Fire-Charm Crown (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95906, {	-- Fire-Charm Gauntlets (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95276, {	-- Fire-Charm Gauntlets (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96650, {	-- Fire-Charm Gauntlets (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95896, {	-- Fire-Charm Grips (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95266, {	-- Fire-Charm Grips (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96640, {	-- Fire-Charm Grips (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95900, {	-- Fire-Charm Handwraps (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95270, {	-- Fire-Charm Handwraps (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96644, {	-- Fire-Charm Handwraps (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95897, {	-- Fire-Charm Headpiece (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95267, {	-- Fire-Charm Headpiece (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96641, {	-- Fire-Charm Headpiece (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95901, {	-- Fire-Charm Helm (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95271, {	-- Fire-Charm Helm (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96645, {	-- Fire-Charm Helm (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95898, {	-- Fire-Charm Leggings (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95268, {	-- Fire-Charm Leggings (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96642, {	-- Fire-Charm Leggings (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95908, {	-- Fire-Charm Legguards (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95278, {	-- Fire-Charm Legguards (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96652, {	-- Fire-Charm Legguards (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95902, {	-- Fire-Charm Legwraps (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95272, {	-- Fire-Charm Legwraps (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96646, {	-- Fire-Charm Legwraps (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95904, {	-- Fire-Charm Mantle (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95274, {	-- Fire-Charm Mantle (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96648, {	-- Fire-Charm Mantle (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95909, {	-- Fire-Charm Shoulderguards (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95279, {	-- Fire-Charm Shoulderguards (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96653, {	-- Fire-Charm Shoulderguards (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95899, {	-- Fire-Charm Spaulders (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95269, {	-- Fire-Charm Spaulders (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96643, {	-- Fire-Charm Spaulders (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95895, {	-- Fire-Charm Tunic (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95265, {	-- Fire-Charm Tunic (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96639, {	-- Fire-Charm Tunic (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95903, {	-- Fire-Charm Vest (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95273, {	-- Fire-Charm Vest (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96647, {	-- Fire-Charm Vest (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
 								i(95143),	-- Flanker's Battletags
-								i(95826, {	-- Gauntlets of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95226, {	-- Gauntlets of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96570, {	-- Gauntlets of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95988, {	-- Gauntlets of the Last Mogu (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95332, {	-- Gauntlets of the Last Mogu (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96732, {	-- Gauntlets of the Last Mogu (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95890, {	-- Gloves of the Chromatic Hydra (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95260, {	-- Gloves of the Chromatic Hydra (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96634, {	-- Gloves of the Chromatic Hydra (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95930, {	-- Gloves of the Exorcist (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95300, {	-- Gloves of the Exorcist (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96674, {	-- Gloves of the Exorcist (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95845, {	-- Gloves of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95245, {	-- Gloves of the Haunted Forest (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96589, {	-- Gloves of the Haunted Forest (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95981, {	-- Gloves of the Thousandfold Hells (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95325, {	-- Gloves of the Thousandfold Hells (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96725, {	-- Gloves of the Thousandfold Hells (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95951, {	-- Gloves of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95321, {	-- Gloves of the Witch Doctor (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96695, {	-- Gloves of the Witch Doctor (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95828, {	-- Greaves of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95228, {	-- Greaves of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96572, {	-- Greaves of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95836, {	-- Grips of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95236, {	-- Grips of the Haunted Forest (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96580, {	-- Grips of the Haunted Forest (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95946, {	-- Grips of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95316, {	-- Grips of the Witch Doctor (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96690, {	-- Grips of the Witch Doctor (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95831, {	-- Handguards of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95231, {	-- Handguards of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96575, {	-- Handguards of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95851, {	-- Handguards of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95251, {	-- Handguards of the Haunted Forest (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96595, {	-- Handguards of the Haunted Forest (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95992, {	-- Handguards of the Last Mogu (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95336, {	-- Handguards of the Last Mogu (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96736, {	-- Handguards of the Last Mogu (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95925, {	-- Handwraps of the Exorcist (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95295, {	-- Handwraps of the Exorcist (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96669, {	-- Handwraps of the Exorcist (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95840, {	-- Handwraps of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95240, {	-- Handwraps of the Haunted Forest (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96584, {	-- Handwraps of the Haunted Forest (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95941, {	-- Handwraps of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95311, {	-- Handwraps of the Witch Doctor (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96685, {	-- Handwraps of the Witch Doctor (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95950, {	-- Hauberk of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95320, {	-- Hauberk of the Witch Doctor (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96694, {	-- Hauberk of the Witch Doctor (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95852, {	-- Headguard of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95252, {	-- Headguard of the Haunted Forest (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96596, {	-- Headguard of the Haunted Forest (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95837, {	-- Headpiece of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95237, {	-- Headpiece of the Haunted Forest (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96581, {	-- Headpiece of the Haunted Forest (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95952, {	-- Headpiece of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95322, {	-- Headpiece of the Witch Doctor (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96696, {	-- Headpiece of the Witch Doctor (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95841, {	-- Helm of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95241, {	-- Helm of the Haunted Forest (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96585, {	-- Helm of the Haunted Forest (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95827, {	-- Helmet of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95227, {	-- Helmet of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96571, {	-- Helmet of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95986, {	-- Helmet of the Last Mogu (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95330, {	-- Helmet of the Last Mogu (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96730, {	-- Helmet of the Last Mogu (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95947, {	-- Helmet of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95317, {	-- Helmet of the Witch Doctor (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96691, {	-- Helmet of the Witch Doctor (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95891, {	-- Hood of the Chromatic Hydra (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95261, {	-- Hood of the Chromatic Hydra (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96635, {	-- Hood of the Chromatic Hydra (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95931, {	-- Hood of the Exorcist (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95301, {	-- Hood of the Exorcist (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96675, {	-- Hood of the Exorcist (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95982, {	-- Hood of the Thousandfold Hells (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95326, {	-- Hood of the Thousandfold Hells (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96726, {	-- Hood of the Thousandfold Hells (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95953, {	-- Kilt of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95323, {	-- Kilt of the Witch Doctor (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96697, {	-- Kilt of the Witch Doctor (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95892, {	-- Leggings of the Chromatic Hydra (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95262, {	-- Leggings of the Chromatic Hydra (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96636, {	-- Leggings of the Chromatic Hydra (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95932, {	-- Leggings of the Exorcist (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95302, {	-- Leggings of the Exorcist (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96676, {	-- Leggings of the Exorcist (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95847, {	-- Leggings of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95247, {	-- Leggings of the Haunted Forest (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96591, {	-- Leggings of the Haunted Forest (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95983, {	-- Leggings of the Thousandfold Hells (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95327, {	-- Leggings of the Thousandfold Hells (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96727, {	-- Leggings of the Thousandfold Hells (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95833, {	-- Legguards of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95233, {	-- Legguards of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96577, {	-- Legguards of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95838, {	-- Legguards of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95238, {	-- Legguards of the Haunted Forest (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96582, {	-- Legguards of the Haunted Forest (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95994, {	-- Legguards of the Last Mogu (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95338, {	-- Legguards of the Last Mogu (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96738, {	-- Legguards of the Last Mogu (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95948, {	-- Legguards of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95318, {	-- Legguards of the Witch Doctor (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96692, {	-- Legguards of the Witch Doctor (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95989, {	-- Legplates of the Last Mogu (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95333, {	-- Legplates of the Last Mogu (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96733, {	-- Legplates of the Last Mogu (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95927, {	-- Legwraps of the Exorcist (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95297, {	-- Legwraps of the Exorcist (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96671, {	-- Legwraps of the Exorcist (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95842, {	-- Legwraps of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95242, {	-- Legwraps of the Haunted Forest (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96586, {	-- Legwraps of the Haunted Forest (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95943, {	-- Legwraps of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95313, {	-- Legwraps of the Witch Doctor (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96687, {	-- Legwraps of the Witch Doctor (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95910, {	-- Lightning Emperor's Battleplate (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95280, {	-- Lightning Emperor's Battleplate (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96654, {	-- Lightning Emperor's Battleplate (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95915, {	-- Lightning Emperor's Breastplate (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95285, {	-- Lightning Emperor's Breastplate (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96659, {	-- Lightning Emperor's Breastplate (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95920, {	-- Lightning Emperor's Chestguard (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95290, {	-- Lightning Emperor's Chestguard (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96664, {	-- Lightning Emperor's Chestguard (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95922, {	-- Lightning Emperor's Faceguard (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95292, {	-- Lightning Emperor's Faceguard (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96666, {	-- Lightning Emperor's Faceguard (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95911, {	-- Lightning Emperor's Gauntlets (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95281, {	-- Lightning Emperor's Gauntlets (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96655, {	-- Lightning Emperor's Gauntlets (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95916, {	-- Lightning Emperor's Gloves (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95286, {	-- Lightning Emperor's Gloves (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96660, {	-- Lightning Emperor's Gloves (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95918, {	-- Lightning Emperor's Greaves (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95288, {	-- Lightning Emperor's Greaves (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96662, {	-- Lightning Emperor's Greaves (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95921, {	-- Lightning Emperor's Handguards (LFR)
-									["cost"] = { { "i", 95856, 1 }, },	-- Gauntlets of the Crackling Conqueror (LFR)
-								}),
-								i(95291, {	-- Lightning Emperor's Handguards (N)
-									["cost"] = { { "i", 95575, 1 }, },	-- Gauntlets of the Crackling Conqueror (N)
-								}),
-								i(96665, {	-- Lightning Emperor's Handguards (H)
-									["cost"] = { { "i", 96600, 1 }, },	-- Gauntlets of the Crackling Conqueror (H)
-								}),
-								i(95917, {	-- Lightning Emperor's Headguard (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95287, {	-- Lightning Emperor's Headguard (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96661, {	-- Lightning Emperor's Headguard (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95912, {	-- Lightning Emperor's Helmet (LFR)
-									["cost"] = { { "i", 95880, 1 }, },	-- Helm of the Crackling Conqueror (LFR)
-								}),
-								i(95282, {	-- Lightning Emperor's Helmet (N)
-									["cost"] = { { "i", 95577, 1 }, },	-- Helm of the Crackling Conqueror (N)
-								}),
-								i(96656, {	-- Lightning Emperor's Helmet (H)
-									["cost"] = { { "i", 96624, 1 }, },	-- Helm of the Crackling Conqueror (H)
-								}),
-								i(95923, {	-- Lightning Emperor's Legguards (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95293, {	-- Lightning Emperor's Legguards (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96667, {	-- Lightning Emperor's Legguards (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95913, {	-- Lightning Emperor's Legplates (LFR)
-									["cost"] = { { "i", 95888, 1 }, },	-- Leggings of the Crackling Conqueror (LFR)
-								}),
-								i(95283, {	-- Lightning Emperor's Legplates (N)
-									["cost"] = { { "i", 95576, 1 }, },	-- Leggings of the Crackling Conqueror (N)
-								}),
-								i(96657, {	-- Lightning Emperor's Legplates (H)
-									["cost"] = { { "i", 96632, 1 }, },	-- Leggings of the Crackling Conqueror (H)
-								}),
-								i(95919, {	-- Lightning Emperor's Mantle (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95289, {	-- Lightning Emperor's Mantle (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96663, {	-- Lightning Emperor's Mantle (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95914, {	-- Lightning Emperor's Pauldron (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95284, {	-- Lightning Emperor's Pauldron (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96658, {	-- Lightning Emperor's Pauldron (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95924, {	-- Lightning Emperor's Shoulderguards (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95294, {	-- Lightning Emperor's Shoulderguards (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96668, {	-- Lightning Emperor's Shoulderguards (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95894, {	-- Mantle of the Chromatic Hydra (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95264, {	-- Mantle of the Chromatic Hydra (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96638, {	-- Mantle of the Chromatic Hydra (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95929, {	-- Mantle of the Exorcist (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95299, {	-- Mantle of the Exorcist (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96673, {	-- Mantle of the Exorcist (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95844, {	-- Mantle of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95244, {	-- Mantle of the Haunted Forest (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96588, {	-- Mantle of the Haunted Forest (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95985, {	-- Mantle of the Thousandfold Hells (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95329, {	-- Mantle of the Thousandfold Hells (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96729, {	-- Mantle of the Thousandfold Hells (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95944, {	-- Mantle of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95314, {	-- Mantle of the Witch Doctor (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96688, {	-- Mantle of the Witch Doctor (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
 								i(95145),	-- Mender's Battletags
-								i(95936, {	-- Nine-Tailed Gloves (LFR)
-									["cost"] = { { "i", 95855, 1 }, },	-- Gauntlets of the Crackling Vanquisher (LFR)
-								}),
-								i(95306, {	-- Nine-Tailed Gloves (N)
-									["cost"] = { { "i", 95570, 1 }, },	-- Gauntlets of the Crackling Vanquisher (N)
-								}),
-								i(96680, {	-- Nine-Tailed Gloves (H)
-									["cost"] = { { "i", 96599, 1 }, },	-- Gauntlets of the Crackling Vanquisher (H)
-								}),
-								i(95937, {	-- Nine-Tailed Helmet (LFR)
-									["cost"] = { { "i", 95879, 1 }, },	-- Helm of the Crackling Vanquisher (LFR)
-								}),
-								i(95307, {	-- Nine-Tailed Helmet (N)
-									["cost"] = { { "i", 95571, 1 }, },	-- Helm of the Crackling Vanquisher (N)
-								}),
-								i(96681, {	-- Nine-Tailed Helmet (H)
-									["cost"] = { { "i", 96623, 1 }, },	-- Helm of the Crackling Vanquisher (H)
-								}),
-								i(95938, {	-- Nine-Tailed Legguards (LFR)
-									["cost"] = { { "i", 95887, 1 }, },	-- Leggings of the Crackling Vanquisher (LFR)
-								}),
-								i(95308, {	-- Nine-Tailed Legguards (N)
-									["cost"] = { { "i", 95572, 1 }, },	-- Leggings of the Crackling Vanquisher (N)
-								}),
-								i(96682, {	-- Nine-Tailed Legguards (H)
-									["cost"] = { { "i", 96631, 1 }, },	-- Leggings of the Crackling Vanquisher (H)
-								}),
-								i(95939, {	-- Nine-Tailed Spaulders (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95309, {	-- Nine-Tailed Spaulders (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96683, {	-- Nine-Tailed Spaulders (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95935, {	-- Nine-Tailed Tunic (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95305, {	-- Nine-Tailed Tunic (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96679, {	-- Nine-Tailed Tunic (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95829, {	-- Pauldrons of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95229, {	-- Pauldrons of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96573, {	-- Pauldrons of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95990, {	-- Pauldrons of the Last Mogu (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95334, {	-- Pauldrons of the Last Mogu (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96734, {	-- Pauldrons of the Last Mogu (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95933, {	-- Raiment of the Exorcist (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95303, {	-- Raiment of the Exorcist (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96677, {	-- Raiment of the Exorcist (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95835, {	-- Raiment of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95235, {	-- Raiment of the Haunted Forest (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96579, {	-- Raiment of the Haunted Forest (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95893, {	-- Robes of the Chromatic Hydra (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95263, {	-- Robes of the Chromatic Hydra (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96637, {	-- Robes of the Chromatic Hydra (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95928, {	-- Robes of the Exorcist (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95298, {	-- Robes of the Exorcist (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96672, {	-- Robes of the Exorcist (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95843, {	-- Robes of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95243, {	-- Robes of the Haunted Forest (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96587, {	-- Robes of the Haunted Forest (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95984, {	-- Robes of the Thousandfold Hells (LFR)
-									["cost"] = { { "i", 95823, 1 }, },	-- Chest of the Crackling Conqueror (LFR)
-								}),
-								i(95328, {	-- Robes of the Thousandfold Hells (N)
-									["cost"] = { { "i", 95574, 1 }, },	-- Chest of the Crackling Conqueror (N)
-								}),
-								i(96728, {	-- Robes of the Thousandfold Hells (H)
-									["cost"] = { { "i", 96567, 1 }, },	-- Chest of the Crackling Conqueror (H)
-								}),
-								i(95883, {	-- Saurok Stalker's Gloves (LFR)
-									["cost"] = { { "i", 95857, 1 }, },	-- Gauntlets of the Crackling Protector (LFR)
-								}),
-								i(95256, {	-- Saurok Stalker's Gloves (N)
-									["cost"] = { { "i", 95580, 1 }, },	-- Gauntlets of the Crackling Protector (N)
-								}),
-								i(96627, {	-- Saurok Stalker's Gloves (H)
-									["cost"] = { { "i", 96601, 1 }, },	-- Gauntlets of the Crackling Protector (H)
-								}),
-								i(95884, {	-- Saurok Stalker's Headguard (LFR)
-									["cost"] = { { "i", 95881, 1 }, },	-- Helm of the Crackling Protector (LFR)
-								}),
-								i(95257, {	-- Saurok Stalker's Headguard (N)
-									["cost"] = { { "i", 95582, 1 }, },	-- Helm of the Crackling Protector (N)
-								}),
-								i(96628, {	-- Saurok Stalker's Headguard (H)
-									["cost"] = { { "i", 96625, 1 }, },	-- Helm of the Crackling Protector (H)
-								}),
-								i(95885, {	-- Saurok Stalker's Legguards (LFR)
-									["cost"] = { { "i", 95889, 1 }, },	-- Leggings of the Crackling Protector (LFR)
-								}),
-								i(95258, {	-- Saurok Stalker's Legguards (N)
-									["cost"] = { { "i", 95581, 1 }, },	-- Leggings of the Crackling Protector (N)
-								}),
-								i(96629, {	-- Saurok Stalker's Legguards (H)
-									["cost"] = { { "i", 96633, 1 }, },	-- Leggings of the Crackling Protector (H)
-								}),
-								i(95886, {	-- Saurok Stalker's Spaulders (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95259, {	-- Saurok Stalker's Spaulders (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96630, {	-- Saurok Stalker's Spaulders (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95882, {	-- Saurok Stalker's Tunic (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95255, {	-- Saurok Stalker's Tunic (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96626, {	-- Saurok Stalker's Tunic (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
-								i(95834, {	-- Shoulderguards of the All-Consuming Maw (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95234, {	-- Shoulderguards of the All-Consuming Maw (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96578, {	-- Shoulderguards of the All-Consuming Maw (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95934, {	-- Shoulderguards of the Exorcist (LFR)
-									["cost"] = { { "i", 95956, 1 }, },	-- Shoulders of the Crackling Conqueror (LFR)
-								}),
-								i(95304, {	-- Shoulderguards of the Exorcist (N)
-									["cost"] = { { "i", 95578, 1 }, },	-- Shoulders of the Crackling Conqueror (N)
-								}),
-								i(96678, {	-- Shoulderguards of the Exorcist (H)
-									["cost"] = { { "i", 96700, 1 }, },	-- Shoulders of the Crackling Conqueror (H)
-								}),
-								i(95854, {	-- Shoulderguards of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95254, {	-- Shoulderguards of the Haunted Forest (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96598, {	-- Shoulderguards of the Haunted Forest (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95995, {	-- Shoulderguards of the Last Mogu (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95339, {	-- Shoulderguards of the Last Mogu (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96739, {	-- Shoulderguards of the Last Mogu (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95849, {	-- Shoulderwraps of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95249, {	-- Shoulderwraps of the Haunted Forest (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96593, {	-- Shoulderwraps of the Haunted Forest (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95954, {	-- Shoulderwraps of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95324, {	-- Shoulderwraps of the Witch Doctor (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96698, {	-- Shoulderwraps of the Witch Doctor (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
-								i(95839, {	-- Spaulders of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95955, 1 }, },	-- Shoulders of the Crackling Vanquisher (LFR)
-								}),
-								i(95239, {	-- Spaulders of the Haunted Forest (N)
-									["cost"] = { { "i", 95573, 1 }, },	-- Shoulders of the Crackling Vanquisher (N)
-								}),
-								i(96583, {	-- Spaulders of the Haunted Forest (H)
-									["cost"] = { { "i", 96699, 1 }, },	-- Shoulders of the Crackling Vanquisher (H)
-								}),
-								i(95949, {	-- Spaulders of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95957, 1 }, },	-- Shoulders of the Crackling Protector (LFR)
-								}),
-								i(95319, {	-- Spaulders of the Witch Doctor (N)
-									["cost"] = { { "i", 95583, 1 }, },	-- Shoulders of the Crackling Protector (N)
-								}),
-								i(96693, {	-- Spaulders of the Witch Doctor (H)
-									["cost"] = { { "i", 96701, 1 }, },	-- Shoulders of the Crackling Protector (H)
-								}),
 								i(95142),	-- Striker's Battletags
-								i(95850, {	-- Tunic of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95250, {	-- Tunic of the Haunted Forest (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96594, {	-- Tunic of the Haunted Forest (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
-								i(95940, {	-- Tunic of the Witch Doctor (LFR)
-									["cost"] = { { "i", 95824, 1 }, },	-- Chest of the Crackling Protector (LFR)
-								}),
-								i(95310, {	-- Tunic of the Witch Doctor (N)
-									["cost"] = { { "i", 95579, 1 }, },	-- Chest of the Crackling Protector (N)
-								}),
-								i(96684, {	-- Tunic of the Witch Doctor (H)
-									["cost"] = { { "i", 96568, 1 }, },	-- Chest of the Crackling Protector (H)
-								}),
 								i(95144),	-- Vanguard's Battletags
-								i(95848, {	-- Vestments of the Haunted Forest (LFR)
-									["cost"] = { { "i", 95822, 1 }, },	-- Chest of the Crackling Vanquisher (LFR)
-								}),
-								i(95248, {	-- Vestments of the Haunted Forest (N)
-									["cost"] = { { "i", 95569, 1 }, },	-- Chest of the Crackling Vanquisher (N)
-								}),
-								i(96592, {	-- Vestments of the Haunted Forest (H)
-									["cost"] = { { "i", 96566, 1 }, },	-- Chest of the Crackling Vanquisher (H)
-								}),
 							}, {	-- Friendly
 								i(95129),	-- Axebinder Wristguards
 								i(95140),	-- Band of the Shado-Pan Assault
@@ -2592,9 +1593,6 @@ root(ROOTS.Zones, {
 								i(94511),	-- Vicious Talisman of the Shado-Pan Assault
 								i(94510),	-- Volatile Talisman of the Shado-Pan Assault
 								i(95085),	-- Waistplate of Channeled Mending
-								i(95100, {	-- Wallwalker Spaulders
-									["cost"] = 10000000,	-- 1,000g
-								}),
 								i(95133),	-- Willow-Weave Armbands
 								i(95122, {	-- Wisp-Weave Pantaloons
 									["cost"] = 5179700,	-- 517g 97s
@@ -2630,9 +1628,12 @@ root(ROOTS.Zones, {
 								i(95095, {	-- Targetblinder Spaulders
 									["cost"] = 10000000,	-- 1,000g
 								}),
+								i(95100, {	-- Wallwalker Spaulders
+									["cost"] = 10000000,	-- 1,000g
+								}),
 							},
 						}),
-					}),
+					})),
 					n(64607, {	-- Commander Lo Ping <Justice Quartermaster>
 						["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
 						-- all items are available via faction vendors in/near main city
@@ -2687,6 +1688,14 @@ root(ROOTS.Zones, {
 							89657,	-- Wall Breaker Gauntlets
 							89652,	-- Wandering Friar's Gloves
 						}},
+						["groups"] = {
+							-- #if AFTER 6.0.1
+							currency(697, {	-- Elder Charm of Good Fortune
+								["cost"] = { { "c", 738, 20 } },	-- 20x Lesser Charm of Good Fortune
+								["timeline"] = { ADDED_6_0_2 },
+							}),
+							-- #endif
+						},
 					}),
 					n(64606, {	-- Commander Oxheart <Valor Quartermaster>
 						["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
@@ -2785,1047 +1794,10 @@ root(ROOTS.Zones, {
 							89433,	-- Vestments of Thundering Skies
 							89434,	-- Robe of the Five Sisters
 						}},
-						["g"] = {
-							i(86702, {	-- Guardian Serpent Cowl
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86705, {	-- Guardian Serpent Hood
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86710, {	-- Sha-Skin Hood
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86661, {	-- White Tiger Faceguard
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86681, {	-- White Tiger Helmet
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86686, {	-- White Tiger Headguard
-								["cost"] = { { "i", 89274, 1 }, },	-- Helm of the Shadowy Conqueror (LFR)
-							}),
-							i(86699, {	-- Guardian Serpent Mantle
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86708, {	-- Guardian Serpent Shoulderguards
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86713, {	-- Sha-Skin Mantle
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86659, {	-- White Tiger Shoulderguards
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86679, {	-- White Tiger Pauldrons
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86684, {	-- White Tiger Mantle
-								["cost"] = { { "i", 89277, 1 }, },	-- Shoulders of the Shadowy Conqueror (LFR)
-							}),
-							i(86700, {	-- Guardian Serpent Robes
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86707, {	-- Guardian Serpent Raiment
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86712, {	-- Sha-Skin Robes
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86663, {	-- White Tiger Chestguard
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86683, {	-- White Tiger Battleplate
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86688, {	-- White Tiger Breastplate
-								["cost"] = { { "i", 89265, 1 }, },	-- Chest of the Shadowy Conqueror (LFR)
-							}),
-							i(86703, {	-- Guardian Serpent Handwraps
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86704, {	-- Guardian Serpent Gloves
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86709, {	-- Sha-Skin Gloves
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86662, {	-- White Tiger Handguards
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86682, {	-- White Tiger Gauntlets
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86687, {	-- White Tiger Gloves
-								["cost"] = { { "i", 89271, 1 }, },	-- Gauntlets of the Shadowy Conqueror (LFR)
-							}),
-							i(86701, {	-- Guardian Serpent Legwraps
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(86706, {	-- Guardian Serpent Leggings
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(86711, {	-- Sha-Skin Leggings
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(86660, {	-- White Tiger Legguards
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(86680, {	-- White Tiger Legplates
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(86685, {	-- White Tiger Greaves
-								["cost"] = { { "i", 89268, 1 }, },	-- Leggings of the Shadowy Conqueror (LFR)
-							}),
-							i(85362, {	-- Guardian Serpent Cowl
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85365, {	-- Guardian Serpent Hood
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85370, {	-- Sha-Skin Hood
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85321, {	-- White Tiger Faceguard
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85341, {	-- White Tiger Helmet
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85346, {	-- White Tiger Headguard
-								["cost"] = { { "i", 89235, 1 }, },	-- Helm of the Shadowy Conqueror (Normal)
-							}),
-							i(85359, {	-- Guardian Serpent Mantle
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85368, {	-- Guardian Serpent Shoulderguards
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85373, {	-- Sha-Skin Mantle
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85319, {	-- White Tiger Shoulderguards
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85339, {	-- White Tiger Pauldrons
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85344, {	-- White Tiger Mantle
-								["cost"] = { { "i", 89246, 1 }, },	-- Shoulders of the Shadowy Conqueror (Normal)
-							}),
-							i(85360, {	-- Guardian Serpent Robes
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85367, {	-- Guardian Serpent Raiment
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85372, {	-- Sha-Skin Robes
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85323, {	-- White Tiger Chestguard
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85343, {	-- White Tiger Battleplate
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85348, {	-- White Tiger Battleplate
-								["cost"] = { { "i", 89237, 1 }, },	-- Chest of the Shadowy Conqueror (Normal)
-							}),
-							i(85363, {	-- Guardian Serpent Handwraps
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85364, {	-- Guardian Serpent Gloves
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85369, {	-- Sha-Skin Gloves
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85322, {	-- White Tiger Handguards
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85342, {	-- White Tiger Gauntlets
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85347, {	-- White Tiger Gloves
-								["cost"] = { { "i", 89240, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Normal)
-							}),
-							i(85361, {	-- Guardian Serpent Legwraps
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(85366, {	-- Guardian Serpent Leggings
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(85371, {	-- Sha-Skin Leggings
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(85320, {	-- White Tiger Legguards
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(85340, {	-- White Tiger Legplates
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(85345, {	-- White Tiger Greaves
-								["cost"] = { { "i", 89243, 1 }, },	-- Leggings of the Shadowy Conqueror (Normal)
-							}),
-							i(87115, {	-- Guardian Serpent Cowl
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87120, {	-- Guardian Serpent Hood
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87188, {	-- Sha-Skin Hood
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87111, {	-- White Tiger Faceguard
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87101, {	-- White Tiger Helmet
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87106, {	-- White Tiger Headguard
-								["cost"] = { { "i", 89259, 1 }, },	-- Helm of the Shadowy Conqueror (Heroic)
-							}),
-							i(87118, {	-- Guardian Serpent Mantle
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87123, {	-- Guardian Serpent Shoulderguards
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87191, {	-- Sha-Skin Mantle
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87103, {	-- White Tiger Shoulderguards
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87108, {	-- White Tiger Pauldrons
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87113, {	-- White Tiger Mantle
-								["cost"] = { { "i", 89262, 1 }, },	-- Shoulders of the Shadowy Conqueror (Heroic)
-							}),
-							i(87117, {	-- Guardian Serpent Robes
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87122, {	-- Guardian Serpent Raiment
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87190, {	-- Sha-Skin Robes
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87099, {	-- White Tiger Chestguard
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87104, {	-- White Tiger Battleplate
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87109, {	-- White Tiger Battleplate
-								["cost"] = { { "i", 89250, 1 }, },	-- Chest of the Shadowy Conqueror (Heroic)
-							}),
-							i(87114, {	-- Guardian Serpent Handwraps
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87119, {	-- Guardian Serpent Gloves
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87187, {	-- Sha-Skin Gloves
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87100, {	-- White Tiger Handguards
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87105, {	-- White Tiger Gauntlets
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87110, {	-- White Tiger Gloves
-								["cost"] = { { "i", 89256, 1 }, },	-- Gauntlets of the Shadowy Conqueror (Heroic)
-							}),
-							i(87116, {	-- Guardian Serpent Legwraps
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(87121, {	-- Guardian Serpent Leggings
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(87189, {	-- Sha-Skin Leggings
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(87102, {	-- White Tiger Legguards
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(87107, {	-- White Tiger Legplates
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(87112, {	-- White Tiger Greaves
-								["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
-							}),
-							i(86726, {	-- Red Crane Crown
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86730, {	-- Red Crane Helm
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86736, {	-- Red Crane Headpiece
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86636, {	-- Yaungol Slayer's Headguard
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86626, {	-- Firebird's Helmet
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86631, {	-- Firebird's Headpiece
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86691, {	-- Firebird's Faceguard
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86666, {	-- Faceguard of Resounding Rings
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86673, {	-- Helmet of Resounding Rings
-								["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
-							}),
-							i(86724, {	-- Red Crane Shoulderguards
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86733, {	-- Red Crane Mantle
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86738, {	-- Red Crane Spaulders
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86634, {	-- Yaungol Slayer's Spaulders
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86624, {	-- Firebird's Spaulders
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86633, {	-- Firebird's Shoulderwraps
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86689, {	-- Firebird's Mantle
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86664, {	-- Shoulderguards of Resounding Rings
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86669, {	-- Pauldrons of Resounding Rings
-								["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
-							}),
-							i(86728, {	-- Red Crane Chestguard
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86732, {	-- Red Crane Vest
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86734, {	-- Red Crane Tunic
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86638, {	-- Yaungol Slayer's Tunic
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86628, {	-- Firebird's Cuirass
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86629, {	-- Firebird's Hauberk
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86693, {	-- Firebird's Tunic
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86668, {	-- Chestguard of Resounding Rings
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86672, {	-- Battleplate of Resounding Rings
-								["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
-							}),
-							i(86727, {	-- Red Crane Gauntlets
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86729, {	-- Red Crane Handwraps
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86735, {	-- Red Crane Grips
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86637, {	-- Yaungol Slayer's Gloves
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86627, {	-- Firebird's Grips
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86630, {	-- Firebird's Gloves
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86692, {	-- Firebird's Handwraps
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86667, {	-- Handguards of Resounding Rings
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86671, {	-- Gauntlets of Resounding Rings
-								["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
-							}),
-							i(86725, {	-- Red Crane Legguards
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86731, {	-- Red Crane Legwraps
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86737, {	-- Red Crane Leggings
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86635, {	-- Yaungol Slayer's Legguards
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86625, {	-- Firebird's Legguards
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86632, {	-- Firebird's Kilt
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86690, {	-- Firebird's Legwraps
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86665, {	-- Legguards of Resounding Rings
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(86670, {	-- Legplates of Resounding Rings
-								["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
-							}),
-							i(85386, {	-- Red Crane Crown
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85390, {	-- Red Crane Helm
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85396, {	-- Red Crane Headpiece
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85296, {	-- Yaungol Slayer's Headguard
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85286, {	-- Firebird's Helmet
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85291, {	-- Firebird's Headpiece
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85351, {	-- Firebird's Faceguard
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85326, {	-- Faceguard of Resounding Rings
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85333, {	-- Helmet of Resounding Rings
-								["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
-							}),
-							i(85384, {	-- Red Crane Shoulderguards
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85393, {	-- Red Crane Mantle
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85398, {	-- Red Crane Spaulders
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85294, {	-- Yaungol Slayer's Spaulders
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85284, {	-- Firebird's Spaulders
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85293, {	-- Firebird's Shoulderwraps
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85349, {	-- Firebird's Mantle
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85324, {	-- Shoulderguards of Resounding Rings
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85329, {	-- Pauldrons of Resounding Rings
-								["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
-							}),
-							i(85388, {	-- Red Crane Chestguard
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85392, {	-- Red Crane Vest
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85394, {	-- Red Crane Tunic
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85298, {	-- Yaungol Slayer's Tunic
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85288, {	-- Firebird's Cuirass
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85289, {	-- Firebird's Hauberk
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85353, {	-- Firebird's Tunic
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85328, {	-- Chestguard of Resounding Rings
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85332, {	-- Battleplate of Resounding Rings
-								["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
-							}),
-							i(85387, {	-- Red Crane Gauntlets
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85389, {	-- Red Crane Handwraps
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85395, {	-- Red Crane Grips
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85297, {	-- Yaungol Slayer's Gloves
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85287, {	-- Firebird's Grips
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85290, {	-- Firebird's Gloves
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85352, {	-- Firebird's Handwraps
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85327, {	-- Handguards of Resounding Rings
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85331, {	-- Gauntlets of Resounding Rings
-								["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
-							}),
-							i(85385, {	-- Red Crane Legguards
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85391, {	-- Red Crane Legwraps
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85397, {	-- Red Crane Leggings
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85295, {	-- Yaungol Slayer's Legguards
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85285, {	-- Firebird's Legguards
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85292, {	-- Firebird's Kilt
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85350, {	-- Firebird's Legwraps
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85325, {	-- Legguards of Resounding Rings
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(85330, {	-- Legplates of Resounding Rings
-								["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
-							}),
-							i(87096, {	-- Red Crane Crown
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87090, {	-- Red Crane Helm
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87086, {	-- Red Crane Headpiece
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87004, {	-- Yaungol Slayer's Headguard
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87136, {	-- Firebird's Helmet
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87141, {	-- Firebird's Headpiece
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87131, {	-- Firebird's Faceguard
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87199, {	-- Faceguard of Resounding Rings
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87192, {	-- Helmet of Resounding Rings
-								["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
-							}),
-							i(87098, {	-- Red Crane Shoulderguards
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87093, {	-- Red Crane Mantle
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87088, {	-- Red Crane Spaulders
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87006, {	-- Yaungol Slayer's Spaulders
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87138, {	-- Firebird's Spaulders
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87143, {	-- Firebird's Shoulderwraps
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87133, {	-- Firebird's Mantle
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87201, {	-- Shoulderguards of Resounding Rings
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87196, {	-- Pauldrons of Resounding Rings
-								["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
-							}),
-							i(87094, {	-- Red Crane Chestguard
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87092, {	-- Red Crane Vest
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87084, {	-- Red Crane Tunic
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87002, {	-- Yaungol Slayer's Tunic
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87134, {	-- Firebird's Cuirass
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87139, {	-- Firebird's Hauberk
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87129, {	-- Firebird's Tunic
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87197, {	-- Chestguard of Resounding Rings
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87193, {	-- Battleplate of Resounding Rings
-								["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
-							}),
-							i(87095, {	-- Red Crane Gauntlets
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87089, {	-- Red Crane Handwraps
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87085, {	-- Red Crane Grips
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87003, {	-- Yaungol Slayer's Gloves
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87135, {	-- Firebird's Grips
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87140, {	-- Firebird's Gloves
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87130, {	-- Firebird's Handwraps
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87198, {	-- Handguards of Resounding Rings
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87194, {	-- Gauntlets of Resounding Rings
-								["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
-							}),
-							i(87097, {	-- Red Crane Legguards
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87091, {	-- Red Crane Legwraps
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87087, {	-- Red Crane Leggings
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87005, {	-- Yaungol Slayer's Legguards
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87137, {	-- Firebird's Legguards
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87142, {	-- Firebird's Kilt
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87132, {	-- Firebird's Legwraps
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87200, {	-- Legguards of Resounding Rings
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(87195, {	-- Legplates of Resounding Rings
-								["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
-							}),
-							i(86717, {	-- Hood of the Burning Scroll
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86647, {	-- Eternal Blossom Cover
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86651, {	-- Eternal Blossom Headpiece
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86697, {	-- Eternal Blossom Helm
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86721, {	-- Eternal Blossom Headguard
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86641, {	-- Helmet of the Thousandfold Blades
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86656, {	-- Faceguard of the Lost Catacomb
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86676, {	-- Helmet of the Lost Catacomb
-								["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
-							}),
-							i(86714, {	-- Mantle of the Burning Scroll
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86644, {	-- Eternal Blossom Shoulderwraps
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86649, {	-- Eternal Blossom Spaulders
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86694, {	-- Eternal Blossom Mantle
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86723, {	-- Eternal Blossom Shoulderguards
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86639, {	-- Spaulders of the Thousandfold Blades
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86654, {	-- Shoulderguards of the Lost Catacomb
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86674, {	-- Pauldrons of the Lost Catacomb
-								["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
-							}),
-							i(86715, {	-- Robes of the Burning Scroll
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86645, {	-- Eternal Blossom Vestment
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86653, {	-- Eternal Blossom Raiment
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86695, {	-- Eternal Blossom Robes
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86719, {	-- Eternal Blossom Tunic
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86643, {	-- Tunic of the Thousandfold Blades
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86658, {	-- Chestguard of the Lost Catacomb
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86678, {	-- Breastplate of the Lost Catacomb
-								["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
-							}),
-							i(86718, {	-- Gloves of the Burning Scroll
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86648, {	-- Eternal Blossom Gloves
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86652, {	-- Eternal Blossom Grips
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86698, {	-- Eternal Blossom Handwraps
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86720, {	-- Eternal Blossom Handguards
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86642, {	-- Gloves of the Thousandfold Blades
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86657, {	-- Handguards of the Lost Catacomb
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86677, {	-- Gauntlets of the Lost Catacomb
-								["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
-							}),
-							i(86716, {	-- Leggings of the Burning Scroll
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86646, {	-- Eternal Blossom Leggings
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86650, {	-- Eternal Blossom Legguards
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86696, {	-- Eternal Blossom Legwraps
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86722, {	-- Eternal Blossom Breeches
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86640, {	-- Legguards of the Thousandfold Blades
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86655, {	-- Legguards of the Lost Catacomb
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(86675, {	-- Greaves of the Lost Catacomb
-								["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
-							}),
-							i(85377, {	-- Hood of the Burning Scroll
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85307, {	-- Eternal Blossom Cover
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85311, {	-- Eternal Blossom Headpiece
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85357, {	-- Eternal Blossom Helm
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85381, {	-- Eternal Blossom Headguard
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85301, {	-- Helmet of the Thousandfold Blades
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85316, {	-- Faceguard of the Lost Catacomb
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85336, {	-- Helmet of the Lost Catacomb
-								["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
-							}),
-							i(85374, {	-- Mantle of the Burning Scroll
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85304, {	-- Eternal Blossom Shoulderwraps
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85309, {	-- Eternal Blossom Spaulders
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85354, {	-- Eternal Blossom Mantle
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85383, {	-- Eternal Blossom Shoulderguards
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85299, {	-- Spaulders of the Thousandfold Blades
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85314, {	-- Shoulderguards of the Lost Catacomb
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85334, {	-- Pauldrons of the Lost Catacomb
-								["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
-							}),
-							i(85375, {	-- Robes of the Burning Scroll
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85305, {	-- Eternal Blossom Vestment
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85313, {	-- Eternal Blossom Raiment
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85355, {	-- Eternal Blossom Robes
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85379, {	-- Eternal Blossom Tunic
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85303, {	-- Tunic of the Thousandfold Blades
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85318, {	-- Chestguard of the Lost Catacomb
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85338, {	-- Breastplate of the Lost Catacomb
-								["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
-							}),
-							i(85378, {	-- Gloves of the Burning Scroll
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85308, {	-- Eternal Blossom Gloves
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85312, {	-- Eternal Blossom Grips
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85358, {	-- Eternal Blossom Handwraps
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85380, {	-- Eternal Blossom Handguards
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85302, {	-- Gloves of the Thousandfold Blades
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85317, {	-- Handguards of the Lost Catacomb
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85337, {	-- Gauntlets of the Lost Catacomb
-								["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
-							}),
-							i(85376, {	-- Leggings of the Burning Scroll
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85306, {	-- Eternal Blossom Leggings
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85310, {	-- Eternal Blossom Legguards
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85356, {	-- Eternal Blossom Legwraps
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85382, {	-- Eternal Blossom Breeches
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85300, {	-- Legguards of the Thousandfold Blades
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85315, {	-- Legguards of the Lost Catacomb
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(85335, {	-- Greaves of the Lost Catacomb
-								["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
-							}),
-							i(87008, {	-- Hood of the Burning Scroll
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86934, {	-- Eternal Blossom Cover
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86925, {	-- Eternal Blossom Headpiece
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86929, {	-- Eternal Blossom Helm
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86940, {	-- Eternal Blossom Headguard
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87126, {	-- Helmet of the Thousandfold Blades
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86920, {	-- Faceguard of the Lost Catacomb
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86915, {	-- Helmet of the Lost Catacomb
-								["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87011, {	-- Mantle of the Burning Scroll
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86937, {	-- Eternal Blossom Shoulderwraps
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86927, {	-- Eternal Blossom Spaulders
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86932, {	-- Eternal Blossom Mantle
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86942, {	-- Eternal Blossom Shoulderguards
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87128, {	-- Spaulders of the Thousandfold Blades
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86922, {	-- Shoulderguards of the Lost Catacomb
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86917, {	-- Pauldrons of the Lost Catacomb
-								["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87010, {	-- Robes of the Burning Scroll
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86936, {	-- Eternal Blossom Vestment
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86923, {	-- Eternal Blossom Raiment
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86931, {	-- Eternal Blossom Robes
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86938, {	-- Eternal Blossom Tunic
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87124, {	-- Tunic of the Thousandfold Blades
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86918, {	-- Chestguard of the Lost Catacomb
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86913, {	-- Breastplate of the Lost Catacomb
-								["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87007, {	-- Gloves of the Burning Scroll
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86933, {	-- Eternal Blossom Gloves
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86924, {	-- Eternal Blossom Grips
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86928, {	-- Eternal Blossom Handwraps
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86939, {	-- Eternal Blossom Handguards
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87125, {	-- Gloves of the Thousandfold Blades
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86919, {	-- Handguards of the Lost Catacomb
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86914, {	-- Gauntlets of the Lost Catacomb
-								["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87009, {	-- Leggings of the Burning Scroll
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86935, {	-- Eternal Blossom Leggings
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86926, {	-- Eternal Blossom Legguards
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86930, {	-- Eternal Blossom Legwraps
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86941, {	-- Eternal Blossom Breeches
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(87127, {	-- Legguards of the Thousandfold Blades
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86921, {	-- Legguards of the Lost Catacomb
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-							i(86916, {	-- Greaves of the Lost Catacomb
-								["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
-							}),
-						},
 					}),
 					n(64595, {	-- Rushi the Fox <Shado-Pan Quartermaster>
 						["coord"] = { 48.8, 70.5, TOWNLONG_STEPPES },
-						["g"] = bubbleDownClassicRep(FACTION_SHADO_PAN, {
+						["groups"] = bubbleDownClassicRep(FACTION_SHADO_PAN, {
 							{		-- Neutral
 								i(89076),	-- Blackguard Cape
 								i(89081),	-- Blossom of Pure Snow
@@ -3844,6 +1816,11 @@ root(ROOTS.Zones, {
 								i(89522),	-- Mark of the Dancing Crane
 								i(89296),	-- Nightwatcher's Helm
 								i(89300),	-- Red Smoke Bandana
+								-- #if ANYCLASSIC
+								i(247800, {	-- Recipe: Venerable Potion of Invisibility
+									["timeline"] = { ADDED_5_5_0 },
+								}),
+								-- #endif
 								i(89673),	-- Robe of Eternal Dynasty
 								i(89672),	-- Robe of Quiet Meditation
 								i(89078),	-- Sagewhisper's Wrap
@@ -3869,7 +1846,7 @@ root(ROOTS.Zones, {
 								i(84584),	-- Formula: Enchant Weapon - Dancing Steel (RECIPE!)
 								i(84583),	-- Formula: Enchant Weapon - Jade Spirit (RECIPE!)
 								i(84580),	-- Formula: Enchant Weapon - River's Song (RECIPE!)
-								i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
+								i(138877, { ["timeline"] = { ADDED_7_0_3 } }),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
 								i(93220),	-- Grand Commendation of the Shado-Pan
 							}, {	-- Exalted
 								i(89307, {	-- Blue Shado-Pan Riding Tiger (MOUNT!)
@@ -3893,6 +1870,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.8, 55.8, TOWNLONG_STEPPES },
 						["sym"] = {{"sub","common_vendor",65172}},	-- Len at Arms <Adventuring Supplies>
 					}),
+				}),
+				n(ZONE_DROPS, {
+					i(74849),	-- Pink Turnip
 				}),
 			},
 		}),
@@ -3923,6 +1903,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			n(QUESTS, {
 				q(31607),	-- Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 			}),
+			-- #if ANYCLASSIC
+			q(31697),	-- ACCIDENTAL COPY [reuse if you like] - completed with quest 30898
+			-- #endif
 		}),
 	}),
 })));

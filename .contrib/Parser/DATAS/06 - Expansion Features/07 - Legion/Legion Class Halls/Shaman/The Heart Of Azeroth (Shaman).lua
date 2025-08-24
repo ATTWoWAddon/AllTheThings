@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	n(CLASS_HALL, {
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 			["maps"] = { THE_HEART_Of_AZEROTH },
-			["g"] = {
+			["groups"] = {
 				n(ARTIFACTS, {
 					cl(SHAMAN, ELEMENTAL, {
 						i(139572, {	-- Lost Codex of the Amani
@@ -74,9 +74,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(44406, {	-- Aggra's Guidance
 						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
-						["providers"] = {
-							{ "n", 96528 },	-- Farseer Nobundo
-							{ "n", 106519 },	-- Farseer Nobundo
+						["qgs"] = {
+							96528,	-- Farseer Nobundo
+							106519,	-- Farseer Nobundo
 						},
 						["coords"] = {
 							{ 30.3, 51.6, 725 },	-- The Maelstrom (Scenario Map)
@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 43338 },	-- The Codex of Ra
 							["provider"] = { "n", 96541 },	-- Rehgar Earthfury
 							["coord"] = { 47.0, 83.0, 395 },	-- Guo-Lai Halls, Vale of Eternal Blossom
-							["g"] = {
+							["groups"] = {
 								artifact(113),	-- The Fist of Ra-den
 								artifact(113),	-- The Highkeeper's Ward
 							},
@@ -147,7 +147,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
 							["coord"] = { 43.6, 63.2, VASHJIR_SHIMMERING_EXPANSE },
 							["maps"] = { 742, 743 },	-- Abyssal Maw (Scenario Map)
-							["g"] = {
+							["groups"] = {
 								artifact(116),	-- Sharas'dal, Scepter of Tides
 								artifact(116),	-- Shield of the Sea Queen
 							},
@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96527 },	-- Thrall
 							["coord"] = { 56.5, 12.9, DEEPHOLM },
 							["maps"] = { 729 },	-- Crumbling Depths (Scenario Map)
-							["g"] = {
+							["groups"] = {
 								artifact(117),	-- Doomhammer
 								artifact(117),	-- Fury of the Stonemother
 							},
@@ -221,7 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
 						["provider"] = { "n", 112318 },	-- Flamesmith Lanying
 						["coord"] = { 30.3, 60.6, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							i(139701),	-- Farseer's Mask
 						},
 					}),
@@ -245,10 +245,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Learn Mission Table & Research
 					q(44544, {	-- Call of the Earthen Ring
+						["description"] = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
 						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
 						["provider"] = { "n", 114274 },	-- Mackay Firebeard
 						["maps"] = { LEGION_DALARAN },
-						["description"] = "After completing |cffffff00Azeroth Needs You|r, return to Dalaran and this NPC will approach you within a few seconds.",
 						["isBreadcrumb"] = true,
 					}),
 					q(42188, {	-- Nobundo Awaits
@@ -258,9 +258,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(42114, {	-- The Ritual of Tides
 						["sourceQuests"] = { 42188 },	-- Nobundo Awaits
-						["providers"] = {
-							{ "n", 96528 },	-- Farseer Nobundo
-							{ "n", 106316 }	-- Farseer Nobundo
+						["qgs"] = {
+							96528,	-- Farseer Nobundo
+							106316,	-- Farseer Nobundo
 						},
 						["coord"] = { 34.1, 31.4, THE_HEART_Of_AZEROTH },
 					}),
@@ -273,7 +273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
 						["provider"] = { "n", 106312 },	-- Stormcaller Mylra
 						["coord"] = { 34.4, 32.4, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
 					}),
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42383 },	-- Rise, Champions
 						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
 						["coord"] = { 29.6, 34.0, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(609),	-- Duke Hydraxis
 						},
 					}),
@@ -320,7 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
 						["provider"] = { "n", 14347 },	-- Highlord Demitrian
 						["coord"] = { 29.6, 10.6, SILITHUS },
-						["g"] = {
+						["groups"] = {
 							i(139000),	-- Damaged Thunderfury (QI!)
 						},
 					}),
@@ -333,7 +333,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41770 },	-- The Skies Above
 						["provider"] = { "n", 104797 },	-- Consular Celestos
 						["coord"] = { 55.2, 18.4, 737 },	-- The Vortex Pinnacle (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(139000),	-- Damaged Thunderfury (QI!)
 							i(135589),	-- Heart of Skywall (QI!)
 							i(139037),	-- Thunderfury, Blessed Blade of the Windseeker (QI!)
@@ -348,7 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41776 },	-- Return of the Windlord
 						["provider"] = { "n", 104788 },	-- Thunderaan
 						["coord"] = { 52.4, 79.3, 737 },	-- The Vortex Pinnacle (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							artifact(675),	-- The Fist of Ra-den
 							-- artifact(675),	-- The Highkeeper's Ward
 							artifact(774),	-- Sharas'dal, Scepter of Tides
@@ -361,7 +361,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
 						["coord"] = { 28.2, 45.0, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(610),	-- Consular Celestos
 						},
 					}),
@@ -369,7 +369,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
 						["coord"] = { 30.2, 51.6, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(611),	-- Farseer Nobundo
 						},
 					}),
@@ -457,7 +457,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42065 },	-- The Twilight Master
 						["provider"] = { "n", 42465 },	-- Therazane
 						["coord"] = { 56.3, 12.2, DEEPHOLM },
-						["g"] = {
+						["groups"] = {
 							i(139705),	-- Farseer's Wristwraps
 						},
 					}),
@@ -465,7 +465,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
 						["coord"] = { 32.0, 43.8, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(614),	-- Muln Earthfury
 						},
 					}),
@@ -473,7 +473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
 						["coord"] = { 34.6, 34.0, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
 					}),
@@ -519,9 +519,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42208,	-- Return to the Firelands
 							42990,	-- Neltharion's Lair: The Earthen Amulet
 						},
-						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
+						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },
 					}),
 					q(41773, {	-- The Firelord's Command
 						["sourceQuests"] = { 41772 },	-- Ascendant of Flames
@@ -537,7 +537,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41934 },	-- The Brand of Damnation
 						["provider"] = { "n", 105594 },	-- Lord Smolderon
 						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(139698),	-- Farseer's Harness
 							title(336),	-- Farseer <Name>
 						},
@@ -546,7 +546,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 106517 },	-- Rehgar Earthfury <Hero of the Storm>
 						["coord"] = { 31.4, 57.8, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(612),	-- Rehgar Earthfury
 						},
 					}),
@@ -554,7 +554,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 106649 },	-- Baron Scaldius <Emissary of the Firelord>
 						["coord"] = { 29.8, 57.6, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(613),	-- Baron Scaldius
 						},
 					}),
@@ -562,7 +562,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 41888 },	-- Allegiance of Flame
 						["provider"] = { "n", 110495 },	-- Farseer Nobundo
 						["coord"] = { 35.0, 46.0, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							artifact(676),	-- The Fist of Ra-den
 							-- artifact(676),	-- The Highkeeper's Ward
 							artifact(775),	-- Sharas'dal, Scepter of Tides
@@ -576,8 +576,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43418,	-- A Hero's Weapon
 						["provider"] = { "n", 118427 },	-- Injured Earthcaller
 						["coord"] = { 31.0, 51.2, THE_HEART_Of_AZEROTH },
-						["isBreadcrumb"] = true,
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
+						["isBreadcrumb"] = true,
 					}),
 					q(45996, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45995,	-- An Urgent Warning
@@ -610,6 +610,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
 						["timeline"] = { ADDED_7_2_0 },
+						["groups"] = {
+							i(143860),	-- The Doomstone (QI!)
+						},
 					}),
 					q(45723, {	-- The Crone's Wrath
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
@@ -630,8 +633,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							45723,	-- The Crone's Wrath
 						},
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
-						["maps"] = { THOUSAND_NEEDLES },
 						["timeline"] = { ADDED_7_2_0 },
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 					q(45763, {	-- Demonic Disruption
 						["sourceQuests"] = { 44800 },	-- Against Magatha's Will
@@ -656,7 +659,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117715 },	-- Therazane
 						["coord"] = { 60.4, 51.6, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
-						["g"] = {
+						["groups"] = {
 							i(146888),	-- Fire Power Core (QI!)
 							i(146889),	-- Water Power Core (QI!)
 							i(146890),	-- Earth Power Core (QI!)
@@ -689,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46258 },	-- The Calm After the Storm
 						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
 						["coord"] = { 34.2, 30.6, THE_HEART_Of_AZEROTH },
-						["g"] = {
+						["groups"] = {
 							follower(992),	-- Magatha Grimtotem
 						},
 					})),
@@ -707,7 +710,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 106521 },	-- Consular Celestos
 						["coord"] = { 28.4, 45.0, THE_HEART_Of_AZEROTH },
 						["maps"] = { 857 },	-- Throne of the Four Winds (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							mount(231442),	-- Farseer's Raging Tempest (MOUNT!)
 						},
 					})),
@@ -733,7 +736,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "o", 254010 },	-- Earthen Ring Supplies
 						["coord"] = { 25.4, 41.7, THE_HEART_Of_AZEROTH },
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(139879),	-- Crate of Champion Equipment
 							i(147351),	-- Fel Armor Enhancement Token
 						},
@@ -748,7 +751,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL, {
 					n(103004, {	-- Puzzlemaster Lo <The Earthen Ring>
 						["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (Stand in front of Puzzlemaster with your back to him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
-						["g"] = {
+						["groups"] = {
 							q(41071, {	-- Puzzle 01 Solved
 								["name"] = "Puzzle 1 Solved",
 							}),
@@ -763,7 +766,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							q(41075, {	-- Puzzle 05 Solved
 								["name"] = "Puzzle 5 Solved",
-								["g"] = {
+								["groups"] = {
 									i(140632),	-- Lava Fountain (TOY!)
 								},
 							}),
@@ -778,7 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					n(114064, {	-- Snowfang
 						["description"] = "Defeating this NPC in a pet battle awards the pet.",
-						["g"] = {
+						["groups"] = {
 							i(141530),	-- Snowfang (PET!)
 						},
 					}),
@@ -793,7 +796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(VENDORS, {
 					n(112318, {	-- Flamesmith Lanying <Earthen Ring Quartermaster>
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(140536),	-- Earthen Ring Aegis
 							i(140545),	-- Earthen Ring Mace
 							i(140546),	-- Earthen Ring Scepter

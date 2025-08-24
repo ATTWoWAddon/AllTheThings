@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 				q(70067, {	-- A Massage to the Nokhud
 					["coord"] = { 35.7, 39.2, OHNAHRAN_PLAINS },
 				}),
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(69988, {	-- Flashy Rocks
 					["coord"] = { 53.2, 50.0, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(198138),	-- Lightning-Infused Rock
 					},
 				}),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				q(70074, {	-- Plunder the Sundered
 					["coord"] = { 46.2, 65.2, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(198448),	-- Dragonscale Expedition Supplies (QI!)
 					},
 				}),

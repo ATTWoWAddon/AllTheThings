@@ -63,95 +63,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			-- #ENDIF
 		}),
-		ach(18909, {	-- Fantastic Figurines
-			crit(61827, {	-- Figurine - Jade Owl
-				["provider"] = { "i", 21748 },	-- Figurine - Jade Owl
-			}),
-			crit(61828, {	-- Figurine - Golden Hare
-				["provider"] = { "i", 21756 },	-- Figurine - Golden Hare
-			}),
-			crit(61829, {	-- Figurine - Black Pearl Panther
-				["provider"] = { "i", 21758 },	-- Figurine - Black Pearl Panther
-			}),
-			crit(61830, {	-- Figurine - Truesilver Crab
-				["provider"] = { "i", 21760 },	-- Figurine - Truesilver Crab
-			}),
-			crit(61831, {	-- Figurine - Truesilver Boar
-				["provider"] = { "i", 21763 },	-- Figurine - Truesilver Boar
-			}),
-			crit(61832, {	-- Figurine - Ruby Serpent
-				["provider"] = { "i", 21769 },	-- Figurine - Ruby Serpent
-			}),
-			crit(61833, {	-- Figurine - Emerald Owl
-				["provider"] = { "i", 21777 },	-- Figurine - Emerald Owl
-			}),
-			crit(61834, {	-- Figurine - Black Diamond Crab
-				["provider"] = { "i", 21784 },	-- Figurine - Black Diamond Crab
-			}),
-			crit(61836, {	-- Figurine - Felsteel Boar
-				["provider"] = { "i", 24124 },	-- Figurine - Felsteel Boar
-			}),
-			crit(61837, {	-- Figurine - Dawnstone Crab
-				["provider"] = { "i", 24125 },	-- Figurine - Dawnstone Crab
-			}),
-			crit(61835, {	-- Figurine - Dark Iron Scorpid
-				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
-			}),
-			crit(61838, {	-- Figurine - Living Ruby Serpent
-				["provider"] = { "i", 24126 },	-- Figurine - Living Ruby Serpent
-			}),
-			crit(61839, {	-- Figurine - Talasite Owl
-				["provider"] = { "i", 24127 },	-- Figurine - Talasite Owl
-			}),
-			crit(61840, {	-- Figurine - Nightseye Panther
-				["provider"] = { "i", 24128 }	-- Figurine - Nightseye Panther
-			}),
-			crit(61841, {	-- Figurine - Empyrean Tortoise
-				["provider"] = { "i", 35693 },	-- Figurine - Empyrean Tortoise
-			}),
-			crit(61842, {	-- Figurine - Khorium Boar
-				["provider"] = { "i", 35694 },	-- Figurine - Khorium Boar
-			}),
-			crit(61843, {	-- Figurine - Crimson Serpent
-				["provider"] = { "i", 35700 },	-- Figurine - Crimson Serpent
-			}),
-			crit(61844, {	-- Figurine - Shadowsong Panther
-				["provider"] = { "i", 35702 },	-- Figurine - Shadowsong Panther
-			}),
-			crit(61845, {	-- Figurine - Seaspray Albatross
-				["provider"] = { "i", 35703 },	-- Figurine - Seaspray Albatross
-			}),
-			crit(61846, {	-- Figurine - Ruby Hare
-				["provider"] = { "i", 42341 },	-- Figurine - Ruby Hare
-			}),
-			crit(61847, {	-- Figurine - Twilight Serpent
-				["provider"] = { "i", 42395 },	-- Figurine - Twilight Serpent
-			}),
-			crit(61848, {	-- Figurine - Sapphire Owl
-				["provider"] = { "i", 42413 },	-- Figurine - Sapphire Owl
-			}),
-			crit(61849, {	-- Figurine - Emerald Boar
-				["provider"] = { "i", 42418 },	-- Figurine - Emerald Boar
-			}),
-			crit(61850, {	-- Figurine - Monarch Crab
-				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
-			}),
-			crit(61851, {	-- Figurine - King of Boars
-				["_quests"] = { 28778 },	-- Broken Boar Figurine
-			}),
-			crit(61852, {	-- Figurine - Demon Panther
-				["_quests"] = { 25047 },	-- Broken Panther Figurine
-			}),
-			crit(61853, {	-- Figurine - Earthen Guardian
-				["_quests"] = { 28776 },	-- Broken Earthen Figurine
-			}),
-			crit(61854, {	-- Figurine - Jeweled Serpent
-				["_quests"] = { 28775 },	-- Broken Serpent Figurine
-			}),
-			crit(61855, {	-- Figurine - Dream Owl
-				["_quests"] = { 28777 },	-- Broken Owl Figurine
-			}),
-		}),
+		ach(18909),	-- Fantastic Figurines (automated)
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
@@ -214,37 +126,37 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(54479, {	-- Jeweled Designs [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54480, {	-- Jeweled Designs [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },
+				["races"] = HORDE_ONLY,
 			}),
 			-- Tools of Trade Questline
 			q(49570, {	-- A Rocky Start [A]
+				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 75.0, 10.2, BORALUS },
-				["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49585, {	-- A Rocky Start [H]
+				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
 				["provider"] = { "o", 278570 },	-- Ancient Journal
 				["coord"] = { 46.9, 38.0, DAZARALOR },
-				["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49571, {	-- Digging Through the Past [A]
 				["sourceQuests"] = { 49570 },	-- A Rocky Start [A]
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
 					i(155678),	-- Ancient Journal Transcription (QI!)
 					i(155587),	-- Primordial Races: Runes and Writings (QI!)
 					i(155588),	-- Scrolls of the Stonefather (QI!)
@@ -255,9 +167,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49585 },	-- A Rocky Start [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(155678),	-- Ancient Journal Transcription (QI!)
 					i(155587),	-- Primordial Races: Runes and Writings (QI!)
 					i(155588),	-- Scrolls of the Stonefather (QI!)
@@ -268,24 +180,24 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49571 },	-- Digging Through the Past [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49589, {	-- The Shrine of the Dawning
 				["sourceQuests"] = { 49586 },	-- Digging Through the Past [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49577, {	-- Cracking the Surface [A]
 				["sourceQuests"] = { 49574 },	-- The Shrine of Storms
 				["provider"] = { "n", 150898 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
+				["groups"] = {
 					i(155590),	-- Shard of Golden Beryl (QI!)
 				},
 			}),
@@ -293,49 +205,49 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49589 },	-- The Shrine of the Dawning
 				["provider"] = { "n", 150897 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(55585, {	-- A Promising Beginning [A]
 				["sourceQuests"] = { 49577 },	-- Cracking the Surface [A]
 				["provider"] = { "n", 152489 },	-- Shrine of Storms
 				["coord"] = { 60.7, 58.5, STORMSONG_VALLEY },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(55592, {	-- A Promising Beginning [H]
 				["sourceQuests"] = { 49583 },	-- Out With the Old [H]
 				["provider"] = { "n", 152490 },	-- Shrine of the Dawning
 				["coord"] = { 61.4, 37.2, NAZMIR },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(49572, {	-- The Shrine of the Sea
 				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49587, {	-- The Shrine of Nature
 				["sourceQuests"] = { 55592 },	-- A Promising Beginning [H]
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49575, {	-- Tol Dagor: Jewel of the Tides
 				["sourceQuests"] = { 49572 },	-- The Shrine of the Sea
 				["provider"] = { "n", 150893 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["maps"] = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
+				["groups"] = {
 					i(155648),	-- Jewel of the Tides (QI!)
 				},
 			}),
@@ -343,11 +255,11 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49587 },	-- The Shrine of Nature
 				["provider"] = { "n", 150894 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
-				["maps"] = { 934, 935 },	-- Atal'Dazar
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["maps"] = { 934, 935 },	-- Atal'Dazar
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
+				["groups"] = {
 					i(155666),	-- Eye of Dazar (QI!)
 				},
 			}),
@@ -355,40 +267,40 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49575 },	-- Tol Dagor: Jewel of the Tides
 				["provider"] = { "n", 152495 },	-- Shrine of the Sea
 				["coord"] = { 46.4, 23.5, TIRAGARDE_SOUND },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(55596, {	-- Setting Things Right [H]
 				["sourceQuests"] = { 49582 },	-- Atal'Dazar: Not All That Glitters...
 				["provider"] = { "n", 152496 },	-- Shrine of Nature
 				["coord"] = { 43.2, 64.3, ZULDAZAR },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(49573, {	-- The Shrine of the Eventide
 				["sourceQuests"] = { 55585 },	-- A Promising Beginning [A]
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49588, {	-- The Shrine of the Sands
 				["sourceQuests"] = { 55592 },	-- A Promising Beginning
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49576, {	-- High Prospects
 				["sourceQuests"] = { 49573 },	-- The Shrine of the Eventide
 				["provider"] = { "n", 150896 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
+				["groups"] = {
 					i(155661),	-- Pristine Kubiline Shards (QI!)
 					i(155830),	-- Runic Core (QI!)
 				},
@@ -397,10 +309,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49588 },	-- The Shrine of the Sands
 				["provider"] = { "n", 150895 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
+				["groups"] = {
 					i(155664),	-- Polished Fire Spinel (QI!)
 					i(155665),	-- Rough Fire Spinel (QI!)
 				},
@@ -409,17 +321,17 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["sourceQuests"] = { 49576 },	-- High Prospects
 				["provider"] = { "n", 152497 },	-- Shrine of the Eventide
 				["coord"] = { 34.1, 35.5, DRUSTVAR },
-				["modelScale"] = 2,
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(55594, {	-- Polished Up [H]
 				["sourceQuests"] = { 49581 },	-- Sun-Speckled Dunes
 				["provider"] = { "n", 152493 },	-- Shrine of the Sands
 				["coord"] = { 44.2, 38.0, VOLDUN },
-				["modelScale"] = 2,
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
+				["modelScale"] = 2,
 			}),
 			q(49584, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [A]
 				["sourceQuests"] = {
@@ -429,7 +341,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 130368 },	-- Samuel D. Colton III
 				["coord"] = { 75.2, 9.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
@@ -443,7 +355,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 122695 },	-- Seshuli
 				["coord"] = { 47.1, 37.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					r(256703),	-- Jewelhammer's Focus
 					i(155668),	-- The Missing Chapter (QI!)
 					i(155669),	-- Transcribed Final Chapter (QI!)
@@ -478,10 +390,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, {
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-				["sourceQuests"] = {
-					67700,	-- To the Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
 				["provider"] = { "n", 192121 },	-- Falron Greygold
 				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -491,10 +399,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			q(72247, {	-- To the Dragon Isles: Jewelcrafting
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",
-				["sourceQuests"] = {
-					67700,	-- To the Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
 				["provider"] = { "n", 198398 },	-- Misty Catseye
 				["coord"] = { 76.2, 33.6, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1,
@@ -503,9 +407,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70032, {	-- Artisan's Supply: Jeweler's Specs
-				["providers"] = {
-					{ "n", 192121 },	-- Falron Greygold
-					{ "n", 190103 },	-- Uluami
+				["qgs"] = {
+					192121,	-- Falron Greygold
+					190103,	-- Uluami
 				},
 				["coords"] = {
 					{ 25.4, 54.2, THE_WAKING_SHORES },
@@ -525,7 +429,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
@@ -533,7 +437,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, sharedData({
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(198612),	-- Jeweler's Cuts
 			},
 		},{
@@ -542,7 +446,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(194449),	-- Giant Core (QI!)
 				},
 			}),
@@ -550,7 +454,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(201829),	-- Pungent Gem (QI!)
 				},
 			}),
@@ -563,7 +467,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(192125),	-- 'Mundane' Gem (QI!)
 				},
 			}),
@@ -571,7 +475,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(194443),	-- Stolen Trinket (QI!)
 				},
 			}),
@@ -603,7 +507,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
+				["groups"] = {
 					i(204794),	-- Whelkshell Crystals (QI!)
 				},
 			}),
@@ -617,7 +521,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(208927),	-- Sandsparkle Pearl (QI!)
 				},
 			}),
@@ -625,14 +529,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(208928),	-- Zaqali Adornments (QI!)
 				},
 			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", DF_JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", DF_JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
 				r(374483),	-- Blotting Sand
 				r(374442),	-- Crafty Alexstraszite
 				r(374450),	-- Crafty Ysemerald
@@ -668,42 +572,42 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			o(401299, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Broken Barter Boulder
 				["coord"] = { 54.4, 32.5, ZARALEK_CAVERN },
 				["questID"] = 75654,
-				["g"] = {
+				["groups"] = {
 					i(205219),	-- Broken Barter Boulder
 				},
 			})),
 			o(380591, {	-- Closely Guarded Shiny
 				["questID"] = 70292,
 				["coord"] = { 50.4, 45.1, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(198687),	-- Closely Guarded Shiny
 				},
 			}),
 			o(410484, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Coalesced Dreamstone
 				["coord"] = { 58.9, 53.8, EMERALD_DREAM },
 				["questID"] = 78285,
-				["g"] = {
+				["groups"] = {
 					i(210202),	-- Coalesced Dreamstone
 				},
 			})),
 			o(380569, {	-- Crystalline Overgrowth
 				["questID"] = 70277,
 				["coord"] = { 45.01, 61.3, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198664),	-- Crystalline Overgrowth
 				},
 			}),
 			o(380585, {	-- Erupted Alexstraszite Cluster
 				["questID"] = 70285,
 				["coord"] = { 59.8, 65.2, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(198682),	-- Alexstraszite Cluster
 				},
 			}),
 			o(380548, {	-- Forgotten Jewelry Box
 				["questID"] = 70263,
 				["coord"] = { 61.8, 13.0, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(198657),	-- Forgotten Jewelry Box
 					i(198660),	-- Fragmented Key
 				},
@@ -711,7 +615,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			o(401292, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Gently Jostled Jewels
 				["coord"] = { 34.5, 45.5, ZARALEK_CAVERN },
 				["questID"] = 75653,
-				["g"] = {
+				["groups"] = {
 					i(205216),	-- Gently Jostled Jewels
 				},
 			})),
@@ -719,7 +623,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Click the key next to the chest, then click the three crystals in the same lake. Return to the chest to collect the treasure.",
 				["questID"] = 70271,
 				["coord"] = { 44.6, 61.2, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(201016),	-- Harmonic Crystal Harmonizer
 				},
 			}),
@@ -727,56 +631,56 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Click the three crystals on the nearby small islands (quickly), then return to collect the treasure.",
 				["questID"] = 70273,
 				["coord"] = { 33.9, 63.7, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(201017),	-- Igneous Gem
 				},
 			}),
 			o(384318, {	-- Inconspicuous Bookmark
 				["coord"] = { 58.5, 36.7, THALDRASZUS },
 				["questID"] = 72356,
-				["g"] = {
+				["groups"] = {
 					i(194654),	-- Design: Convergent Prism (RECIPE!)
 				}
 			}),
 			o(380577, {	-- Lofty Malygite
 				["questID"] = 70282,
 				["coord"] = { 25.2, 34.8, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(198670),	-- Lofty Malygite
 				},
 			}),
 			o(380545, {	-- Painter's Pretty Jewel
 				["questID"] = 70261,
 				["coord"] = { 56.9, 43.6, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(198656),	-- Painter's Pretty Jewel
 				},
 			}),
 			o(410475, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Petrified Hope
 				["coord"] = { 33.2, 46.5, EMERALD_DREAM },
 				["questID"] = 78282,
-				["g"] = {
+				["groups"] = {
 					i(210200),	-- Petrified Hope
 				},
 			})),
 			o(401241, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Snubbed Snail Shells
 				["coord"] = { 40.4, 80.7, ZARALEK_CAVERN },
 				["questID"] = 75652,
-				["g"] = {
+				["groups"] = {
 					i(205214),	-- Snubbed Snail Shells
 				},
 			})),
 			o(410479, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Unpolished Blemish
 				["coord"] = { 43.4, 33.3, EMERALD_DREAM },
 				["questID"] = 78283,
-				["g"] = {
+				["groups"] = {
 					i(210201),	-- Handful of Tiny Pebbles
 				},
 			})),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(DF_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
@@ -797,25 +701,21 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			q(70521, {	-- DF Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
 				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
+				["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
+				["coords"] = {
+					{ 46.8, 59.6, THALDRASZUS },
+					{ 45.8 ,58.2, THALDRASZUS },
+				},
 				["crs"] = {
 					195215,	-- Rebel Bruiser
 					195062,	-- Rebel Incinerator
 					195063,	-- Rebel Conjurer
 					195060,	-- Rebel Mender
 				},
-				["provider"] = { "i", 198974 },	-- Elegantly Engraved Embellishment
-				["coords"] = {
-					{ 46.8, 59.6, THALDRASZUS },
-					{ 45.8 ,58.2, THALDRASZUS },
-				},
 			}),
 			q(70520, {	-- DF Weekly Jewelcrafting Knowledgepoint #4
 				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
-				["crs"] = {
-					194212,	-- Unleashed Rubble
-					194517,	-- Crushing Elemental
-				},
 				["provider"] = { "i", 198973 },	-- Incandescent Curio
 				["coords"] = {
 					{ 50.6, 57.6, THALDRASZUS },
@@ -824,6 +724,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 50.6, 33.2, THE_WAKING_SHORES },
 					{ 53.6, 31.0, THE_WAKING_SHORES },
 				},
+				["crs"] = {
+					194212,	-- Unleashed Rubble
+					194517,	-- Crushing Elemental
+				},
 			}),
 		})),
 	})),
@@ -831,7 +735,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["g"] = {
+			["groups"] = {
 				i(228777),	-- Algari Jewelcrafter's Notebook
 			},
 		},{
@@ -842,7 +746,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{"c", TWW_JEWELCRAFTING_KNOWLEDGE, 1}} }, {
+			["groups"] = sharedData({ ["cost"] = {{"c", TWW_JEWELCRAFTING_KNOWLEDGE, 1}} }, {
 				r(435338),	-- Algari Emerald Prism
 				r(435369),	-- Algari Onyx Prism
 				r(435339),	-- Algari Ruby Prism
@@ -869,63 +773,63 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			o(455973, {	-- Arathi Sizing Gauges
 				["coord"] = { 47.3, 60.6, HALLOWFALL },
 				["questID"] = 83894,
-				["g"] = {
+				["groups"] = {
 					i(226320),	-- Arathi Sizing Gauges
 				},
 			}),
 			o(455975, {	-- Carved Stone File
 				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
 				["questID"] = 83892,
-				["g"] = {
+				["groups"] = {
 					i(226318),	-- Carved Stone File
 				},
 			}),
 			o(455976, {	-- Earthen Gem Pliers
 				["coord"] = { 34.9, 52.3, DORNOGAL },
 				["questID"] = 83891,
-				["g"] = {
+				["groups"] = {
 					i(226317),	-- Earthen Gem Pliers
 				},
 			}),
 			o(455977, {	-- Gentle Jewel Hammer
 				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
 				["questID"] = 83890,
-				["g"] = {
+				["groups"] = {
 					i(226316),	-- Gentle Jewel Hammer
 				},
 			}),
 			o(455974, {	-- Jeweler's Delicate Drill
 				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
 				["questID"] = 83893,
-				["g"] = {
+				["groups"] = {
 					i(226319),	-- Jeweler's Delicate Drill
 				},
 			}),
 			o(455972, {	-- Librarian's Magnifiers
 				["coord"] = { 44.7, 50.9, HALLOWFALL },
 				["questID"] = 83895,
-				["g"] = {
+				["groups"] = {
 					i(226321),	-- Librarian's Magnifiers
 				},
 			}),
 			o(455970, {	-- Nerubian Bench Blocks
 				["coord"] = { 56.1, 58.6, AZJ_KAHET },
 				["questID"] = 83897,
-				["g"] = {
+				["groups"] = {
 					i(226323),	-- Nerubian Bench Blocks
 				},
 			}),
 			o(455971, {	-- Ritual Caster's Crystal
 				["coord"] = { 47.7, 19.4, NERUBAR },
 				["questID"] = 83896,
-				["g"] = {
+				["groups"] = {
 					i(226322),	-- Ritual Caster's Crystal
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
@@ -985,34 +889,6 @@ local function bloodied(t)
 	return t;
 end
 
--- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
-local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
-	-- #else
-	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
-	-- #endif
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
-
-local function moltenfront(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
-end
 local function firelands(t)
 	t.timeline = { ADDED_4_2_0 };
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
@@ -4121,10 +3997,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Secrets of the Stone",
 					["recipeID"] = 131759
 				},
-				{
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					["name"] = "Serpent's Heart",
 					["recipeID"] = 140050
-				},
+				}),
 				{
 					["name"] = "Sun's Radiance",
 					["recipeID"] = 131695
@@ -4152,10 +4028,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 106947
 				},
 				{
-					["name"] = "Rigid Serpent's Eye",
-					["recipeID"] = 122681
-				},
-				{
 					["name"] = "Solid Lapis Lazuli",
 					["recipeID"] = 107619
 				},
@@ -4164,20 +4036,12 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 106950
 				},
 				{
-					["name"] = "Solid Serpent's Eye",
-					["recipeID"] = 122678
-				},
-				{
 					["name"] = "Sparkling Lapis Lazuli",
 					["recipeID"] = 107620
 				},
 				{
 					["name"] = "Sparkling River's Heart",
 					["recipeID"] = 106949
-				},
-				{
-					["name"] = "Sparkling Serpent's Eye",
-					["recipeID"] = 122677
 				},
 				{
 					["name"] = "Stormy Lapis Lazuli",
@@ -4424,10 +4288,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107724
 				},
 				{
-					["name"] = "Lucent Serpent's Eye",
-					["recipeID"] = 136270
-				},
-				{
 					["name"] = "Lucent Tiger Opal",
 					["recipeID"] = 107655
 				},
@@ -4466,10 +4326,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Resolute Vermilion Onyx",
 					["recipeID"] = 107729
-				},
-				{
-					["name"] = "Resplendent Serpent's Eye",
-					["recipeID"] = 136269
 				},
 				{
 					["name"] = "Resplendent Tiger Opal",
@@ -4520,10 +4376,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107735
 				},
 				{
-					["name"] = "Willful Serpent's Eye",
-					["recipeID"] = 136272
-				},
-				{
 					["name"] = "Willful Tiger Opal",
 					["recipeID"] = 107667
 				},
@@ -4552,10 +4404,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Assassin's Roguestone",
 					["recipeID"] = 130656
-				},
-				{
-					["name"] = "Assassin's Serpent's Eye",
-					["recipeID"] = 136274
 				},
 				{
 					["name"] = "Defender's Imperial Amethyst",
@@ -4598,10 +4446,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107633
 				},
 				{
-					["name"] = "Mysterious Serpent's Eye",
-					["recipeID"] = 136275
-				},
-				{
 					["name"] = "Purified Imperial Amethyst",
 					["recipeID"] = 107699
 				},
@@ -4642,10 +4486,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 130655
 				},
 				{
-					["name"] = "Tense Serpent's Eye",
-					["recipeID"] = 136273
-				},
-				{
 					["name"] = "Timeless Imperial Amethyst",
 					["recipeID"] = 107703
 				},
@@ -4676,20 +4516,12 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107705
 				},
 				{
-					["name"] = "Bold Serpent's Eye",
-					["recipeID"] = 122675
-				},
-				{
 					["name"] = "Brilliant Pandarian Garnet",
 					["recipeID"] = 107623
 				},
 				{
 					["name"] = "Brilliant Primordial Ruby",
 					["recipeID"] = 107706
-				},
-				{
-					["name"] = "Brilliant Serpent's Eye",
-					["recipeID"] = 122676
 				},
 				{
 					["name"] = "Delicate Pandarian Garnet",
@@ -4700,20 +4532,12 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107707
 				},
 				{
-					["name"] = "Delicate Serpent's Eye",
-					["recipeID"] = 122674
-				},
-				{
 					["name"] = "Flashing Pandarian Garnet",
 					["recipeID"] = 107625
 				},
 				{
 					["name"] = "Flashing Primordial Ruby",
 					["recipeID"] = 107708
-				},
-				{
-					["name"] = "Flashing Serpent's Eye",
-					["recipeID"] = 122685
 				},
 				{
 					["name"] = "Precise Pandarian Garnet",
@@ -4723,20 +4547,12 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Precise Primordial Ruby",
 					["recipeID"] = 107709
 				},
-				{
-					["name"] = "Precise Serpent's Eye",
-					["recipeID"] = 122683
-				}
 			}
 		},
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 833,
 			["groups"] = {
-				{
-					["name"] = "Fractured Serpent's Eye",
-					["recipeID"] = 122684
-				},
 				{
 					["name"] = "Fractured Sun's Radiance",
 					["recipeID"] = 107710
@@ -4754,10 +4570,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107641
 				},
 				{
-					["name"] = "Quick Serpent's Eye",
-					["recipeID"] = 122682
-				},
-				{
 					["name"] = "Quick Sun's Radiance",
 					["recipeID"] = 107712
 				},
@@ -4766,20 +4578,12 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 107642
 				},
 				{
-					["name"] = "Smooth Serpent's Eye",
-					["recipeID"] = 122680
-				},
-				{
 					["name"] = "Smooth Sun's Radiance",
 					["recipeID"] = 107713
 				},
 				{
 					["name"] = "Smooth Sunstone",
 					["recipeID"] = 107643
-				},
-				{
-					["name"] = "Subtle Serpent's Eye",
-					["recipeID"] = 122679
 				},
 				{
 					["name"] = "Subtle Sun's Radiance",
@@ -4843,10 +4647,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Powerful Primal Diamond",
 					["recipeID"] = 107766
 				},
-				{
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					["name"] = "Primal Diamond",
 					["recipeID"] = 140060
-				},
+				}),
 				{
 					["name"] = "Reverberating Primal Diamond",
 					["recipeID"] = 107767
@@ -6367,7 +6171,7 @@ itemrecipe("Design: Stalwart Monarch Topaz", 41779, 53992, 53992, REMOVED_WITH_C
 
 -- #endif
 
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 
 -- #endif
 

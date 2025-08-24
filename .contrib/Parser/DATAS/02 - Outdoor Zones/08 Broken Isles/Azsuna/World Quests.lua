@@ -186,12 +186,15 @@ root(ROOTS.Zones, {
 				petbattle(q(42063)),	-- Size Doesn't Matter
 				q(41551, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41259, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41552, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41435, {	-- Smooth Leystone Deposits
 					["requireSkill"] = MINING,
@@ -225,7 +228,7 @@ root(ROOTS.Zones, {
 				q(42160),	-- Unwelcome Visitors
 				q(41663, {	-- Vantus Rune Work Order: Elerethe Renferal
 					["requireSkill"] = INSCRIPTION,
-					["g"] = {
+					["groups"] = {
 						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3] (RECIPE!)
 					},
 				}),
@@ -259,19 +262,19 @@ root(ROOTS.Zones, {
 				}),
 				q(41651, {	-- Work Order: Azsunite Pendant
 					["requireSkill"] = JEWELCRAFTING,
-					["g"] = {
+					["groups"] = {
 						i(137843),	-- Design: Azsunite Pendant [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41639, {	-- Work Order: Battlebound Spaulders
 					["requireSkill"] = LEATHERWORKING,
-					["g"] = {
+					["groups"] = {
 						i(137914),	-- Pattern: Battlebound Spaulders [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun
 					["requireSkill"] = ENGINEERING,
-					["g"] = {
+					["groups"] = {
 						i(137711),	-- Schematic: Blink-Trigger Headgun [Rank 3] (RECIPE!)
 					},
 				}),
@@ -280,7 +283,7 @@ root(ROOTS.Zones, {
 				}),
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["requireSkill"] = ALCHEMY,
-					["g"] = {
+					["groups"] = {
 						i(127920),	-- Recipe: Draught of Raw Magic [Rank 2] (RECIPE!)
 					},
 				}),
@@ -289,13 +292,13 @@ root(ROOTS.Zones, {
 				}),
 				q(41633, {	-- Work Order: Leystone Greaves (WQ)
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(123931),	-- Plans: Leystone Greaves [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets
 					["requireSkill"] = TAILORING,
-					["g"] = {
+					["groups"] = {
 						i(137963),	-- Pattern: Silkweave Epaulets [Rank 3] (RECIPE!)
 					},
 				}),
@@ -304,7 +307,7 @@ root(ROOTS.Zones, {
 				}),
 				q(41669, {	-- Work Order: Word of Critical Strike
 					["requireSkill"] = ENCHANTING,
-					["g"] = {
+					["groups"] = {
 						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike [Rank 3] (RECIPE!)
 					},
 				}),

@@ -1,0 +1,20 @@
+createLocalizationString({
+	readable = "[icon:logo_32x32] Contributor",
+	constant = "PLAYER_RANK_CONTRIBUTOR",
+	color = [[~_.DefaultColors.White]],
+	icon = [[~_.asset("logo_32x32")]],
+	export = true,
+	text = {
+		en = "Contributor",
+		de = "Mitwirkender",
+		es = "Contribuyente",
+		mx = "Contribuyente",
+		fr = "Donateur",
+		it = "Collaboratore",
+		pt = "Contribuinte",
+		ru = "Автор",
+		ko = "기부자",
+		cn = "贡献者",
+		tw = "貢獻者",
+	},
+})

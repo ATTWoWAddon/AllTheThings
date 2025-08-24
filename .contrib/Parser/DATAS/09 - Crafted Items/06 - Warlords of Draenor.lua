@@ -6,11 +6,11 @@ local WOD_CRAFTED_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
 		["bonusID"] = 525,
-		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
+		["groups"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
 			i(id, {	-- Upgrade 1 2/6
 				["bonusID"] = 558,
 				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
+				["groups"] = {
 					i(id, {	-- Upgrade 2 3/6
 						["bonusID"] = 559,
 						["u"] = REMOVED_FROM_GAME,
@@ -51,10 +51,10 @@ local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	i(id, {	-- Base Item 1/6
 		["bonusID"] = 525,
 		["description"] = "The upgraded versions of this Item are *still* not available, but they share the same SourceID as this base Item so they will appear as available in ATT.",
-		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },},{
+		["groups"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } },},{
 			i(id, {	-- Upgrade 1 2/6
 				["bonusID"] = 558,
-				["g"] = {
+				["groups"] = {
 					i(id, {	-- Upgrade 2 3/6
 						["bonusID"] = 559,
 					}),
@@ -73,11 +73,10 @@ local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	});
 end
 
-local WOD_CRAFTED_ITEM_DF_BASE = function(id)
-	return
-	i(id, {
-		["bonusID"] = 525,
-	});
+local WOD_CRAFTED_ITEM_DF_BASE = function(id, t)
+	if not t then t = {}; end
+	t.bonusID = 525;
+	return i(id, t);
 end
 
 local WOD_CRAFTED_ITEM_DF_IMPRESSIVE = function(id, upgradeItem)
@@ -159,55 +158,82 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(109584),	-- Ogre Missive
 		i(87399),	-- Restored Artifact
 		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(117354),	-- Ancient Nest Guardian (PET!)
-			i(114204),	-- Apexis Crystal
-			i(114205),	-- Apexis Hieroglyph
-			i(114206),	-- Apexis Scroll
-			i(117382),	-- Beakbreaker of Terokk
-			i(114198),	-- Burial Urn
-			i(114199),	-- Decree Scrolls
-			i(114197),	-- Dreamcatcher
-			i(114203),	-- Outcast Dreamcatcher
-			i(114200),	-- Solar Orb
-			i(114201),	-- Sundial
-			i(114202),	-- Talonpriest Mask
+			["provider"] = { "o", 234105 },	-- Arakkoa Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["groups"] = {
+				i(117354),	-- Ancient Nest Guardian (PET!)
+				i(114204),	-- Apexis Crystal
+				i(114205),	-- Apexis Hieroglyph
+				i(114206),	-- Apexis Scroll
+				i(117382),	-- Beakbreaker of Terokk
+				i(114198),	-- Burial Urn
+				i(114199),	-- Decree Scrolls
+				i(114197),	-- Dreamcatcher
+				i(114203),	-- Outcast Dreamcatcher
+				i(114200),	-- Solar Orb
+				i(114201),	-- Sundial
+				i(114202),	-- Talonpriest Mask
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(114171),	-- Ancestral Talisman
-			i(114163),	-- Barbed Fishing Hook
-			i(114157),	-- Blackrock Razor
-			i(114165),	-- Calcified Eye in a Jar
-			i(114167),	-- Ceremonial Tattoo Needles
-			i(114169),	-- Cracked Ivory Idol
-			i(114177),	-- Doomsday Prophecy
-			i(114155),	-- Elemental Bellows
-			i(114141),	-- Fang-Scarred Frostwolf Axe
-			i(114173),	-- Flask of Blazegrease
-			i(114143),	-- Frostwolf Ancestry Scrimshaw
-			i(117380),	-- Frostwolf Ghostpup (PET!)
-			i(114175),	-- Gronn-Tooth Necklace
-			i(116985),	-- Headdress of the First Shaman
-			i(114161),	-- Hooked Dagger
-			i(114153),	-- Metalworker's Hammer
-			i(114149),	-- Screaming Bullroarer
-			i(114147),	-- Warsinger's Drums
-			i(114151),	-- Warsong Ceremonial Pike
-			i(114159),	-- Weighted Chopping Axe
-			i(114145),	-- Wolfskin Snowshoes
+			["provider"] = { "o", 226521 },	-- Draenor Clans Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				DRAENOR_NAGRAND,
+				FROSTFIRE_RIDGE,
+				GORGROND,
+			},
+			["groups"] = {
+				i(114171),	-- Ancestral Talisman
+				i(114163),	-- Barbed Fishing Hook
+				i(114157),	-- Blackrock Razor
+				i(114165),	-- Calcified Eye in a Jar
+				i(114167),	-- Ceremonial Tattoo Needles
+				i(114169),	-- Cracked Ivory Idol
+				i(114177),	-- Doomsday Prophecy
+				i(114155),	-- Elemental Bellows
+				i(114141),	-- Fang-Scarred Frostwolf Axe
+				i(114173),	-- Flask of Blazegrease
+				i(114143),	-- Frostwolf Ancestry Scrimshaw
+				i(117380),	-- Frostwolf Ghostpup (PET!)
+				i(114175),	-- Gronn-Tooth Necklace
+				i(116985),	-- Headdress of the First Shaman
+				i(114161),	-- Hooked Dagger
+				i(114153),	-- Metalworker's Hammer
+				i(114149),	-- Screaming Bullroarer
+				i(114147),	-- Warsinger's Drums
+				i(114151),	-- Warsong Ceremonial Pike
+				i(114159),	-- Weighted Chopping Axe
+				i(114145),	-- Wolfskin Snowshoes
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(114191),	-- Eye of Har'gunn the Blind
-			i(114189),	-- Gladiator's Shield
-			i(114194),	-- Imperial Decree Stele
-			i(114190),	-- Mortar and Pestle
-			i(114185),	-- Ogre Figurine
-			i(114187),	-- Pictogram Carving
-			i(114193),	-- Rylak Riding Harness
-			i(117385),	-- Sorcerer-King Toe Ring
-			i(114192),	-- Stone Dentures
-			i(114183),	-- Stone Manacles
-			i(114181),	-- Stonemaul Succession Stone
-			i(117384),	-- Warmaul of the Warmaul Chieftain
+			["provider"] = { "o", 234106 },	-- Ogre Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				DRAENOR_NAGRAND,
+				GORGROND,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["groups"] = {
+				i(114191),	-- Eye of Har'gunn the Blind
+				i(114189),	-- Gladiator's Shield
+				i(114194),	-- Imperial Decree Stele
+				i(114190),	-- Mortar and Pestle
+				i(114185),	-- Ogre Figurine
+				i(114187),	-- Pictogram Carving
+				i(114193),	-- Rylak Riding Harness
+				i(117385),	-- Sorcerer-King Toe Ring
+				i(114192),	-- Stone Dentures
+				i(114183),	-- Stone Manacles
+				i(114181),	-- Stonemaul Succession Stone
+				i(117384),	-- Warmaul of the Warmaul Chieftain
+			},
 		})),
 	}),
 	prof(BLACKSMITHING, {
@@ -491,7 +517,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder + True Iron Trigger
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(109168),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM_DF_BASE(109168, { ["ItemAppearanceModifierID"] = 0 }),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109168, 202214),	-- Shrediron's Shredder + Impressive True Iron Trigger
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(109168, 202215),	-- Shrediron's Shredder + Remarkable True Iron Trigger
 			-- #ENDIF
@@ -502,7 +528,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(109120),	-- Oglethorpe's Missile Splitter
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(111603),	-- Antiseptic Bandage
 		i(116979),	-- Blackwater Anti-Venom
@@ -629,7 +655,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113270),	-- Shadowtome
+			WOD_CRAFTED_ITEM_DF_BASE(113270, { ["ItemAppearanceModifierID"] = 0 }),	-- Shadowtome
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113270, 202220),	-- Shadowtome + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113270, 202221),	-- Shadowtome + Remarkable Weapon Crystal
 			-- #ENDIF
@@ -647,8 +673,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
 			WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113134),	-- Crystalfire Spellstaff
-			WOD_CRAFTED_ITEM_DF_BASE(111526),	-- Etched-Blade Warstaff
+			WOD_CRAFTED_ITEM_DF_BASE(113134, { ["ItemAppearanceModifierID"] = 0 }),	-- Crystalfire Spellstaff
+			WOD_CRAFTED_ITEM_DF_BASE(111526, { ["ItemAppearanceModifierID"] = 0 }),	-- Etched-Blade Warstaff
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113134, 202220),	-- Crystalfire Spellstaff+ Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(111526, 202220),	-- Etched-Blade Warstaff + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113134, 202221),	-- Crystalfire Spellstaff + Remarkable Weapon Crystal
@@ -663,7 +689,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113131),	-- Warmaster's Firestick
+			WOD_CRAFTED_ITEM_DF_BASE(113131, { ["ItemAppearanceModifierID"] = 0 }),	-- Warmaster's Firestick
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113131, 202220),	-- Warmaster's Firestick + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113131, 202221),	-- Warmaster's Firestick + Remarkable Weapon Crystal
 			-- #ENDIF
@@ -840,31 +866,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 	prof(TAILORING, {
-		filter(BAGS, {
-			i(114821),	-- Hexweave Bag
-		}),
-		n(BACK, {
+		n(ARMOR, {
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(114819, 128012),	-- Brilliant Hexweave Cloak + Hexweave Essence
-			WOD_CRAFTED_ITEM(114818, 128012),	-- Nimble Hexweave Cloak + Hexweave Essence
-			WOD_CRAFTED_ITEM(114817, 128012),	-- Powerful Hexweave Cloak + Hexweave Essence
-			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(114819),	-- Brilliant Hexweave Cloak
-			WOD_CRAFTED_ITEM_DF_BASE(114818),	-- Nimble Hexweave Cloak
-			WOD_CRAFTED_ITEM_DF_BASE(114817),	-- Powerful Hexweave Cloak
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114819, 202218),	-- Brilliant Hexweave Cloak + Impressive Hexweave Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114818, 202218),	-- Nimble Hexweave Cloak + Impressive Hexweave Essence
-			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114817, 202218),	-- Powerful Hexweave Cloak + Impressive Hexweave Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(114819, 202219),	-- Brilliant Hexweave Cloak + Remarkable Hexweave Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(114818, 202219),	-- Nimble Hexweave Cloak + Remarkable Hexweave Essence
-			WOD_CRAFTED_ITEM_DF_REMARKABLE(114817, 202219),	-- Powerful Hexweave Cloak + Remarkable Hexweave Essence
-			-- #ENDIF
-		}),
-		filter(CLOTH, {
-			i(114828),	-- Sumptuous Cowl
-			i(114829),	-- Sumptuous Robes
-			i(114831),	-- Sumptuous Leggings
-			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(114816, 128012),	-- Hexweave Belt + Hexweave Essence
 			WOD_CRAFTED_ITEM(114814, 128012),	-- Hexweave Bracers + Hexweave Essence
 			WOD_CRAFTED_ITEM(114810, 128012),	-- Hexweave Cowl + Hexweave Essence
@@ -873,7 +877,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM(114809, 128012),	-- Hexweave Mantle + Hexweave Essence
 			WOD_CRAFTED_ITEM(114813, 128012),	-- Hexweave Robe + Hexweave Essence
 			WOD_CRAFTED_ITEM(114815, 128012),	-- Hexweave Slippers + Hexweave Essence
+			WOD_CRAFTED_ITEM(114818, 128012),	-- Nimble Hexweave Cloak + Hexweave Essence
+			WOD_CRAFTED_ITEM(114817, 128012),	-- Powerful Hexweave Cloak + Hexweave Essence
 			-- #ELSE
+			WOD_CRAFTED_ITEM_DF_BASE(114819),	-- Brilliant Hexweave Cloak
 			WOD_CRAFTED_ITEM_DF_BASE(114816),	-- Hexweave Belt
 			WOD_CRAFTED_ITEM_DF_BASE(114814),	-- Hexweave Bracers
 			WOD_CRAFTED_ITEM_DF_BASE(114810),	-- Hexweave Cowl
@@ -882,6 +889,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM_DF_BASE(114809),	-- Hexweave Mantle
 			WOD_CRAFTED_ITEM_DF_BASE(114813),	-- Hexweave Robe
 			WOD_CRAFTED_ITEM_DF_BASE(114815),	-- Hexweave Slippers
+			WOD_CRAFTED_ITEM_DF_BASE(114818),	-- Nimble Hexweave Cloak
+			WOD_CRAFTED_ITEM_DF_BASE(114817),	-- Powerful Hexweave Cloak
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114819, 202218),	-- Brilliant Hexweave Cloak + Impressive Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114816, 202218),	-- Hexweave Belt + Impressive Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114814, 202218),	-- Hexweave Bracers + Impressive Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114810, 202218),	-- Hexweave Cowl + Impressive Hexweave Essence
@@ -890,6 +900,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114809, 202218),	-- Hexweave Mantle + Impressive Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114813, 202218),	-- Hexweave Robe + Impressive Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114815, 202218),	-- Hexweave Slippers + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114818, 202218),	-- Nimble Hexweave Cloak + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(114817, 202218),	-- Powerful Hexweave Cloak + Impressive Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114819, 202219),	-- Brilliant Hexweave Cloak + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114816, 202219),	-- Hexweave Belt + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114814, 202219),	-- Hexweave Bracers + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114810, 202219),	-- Hexweave Cowl + Remarkable Hexweave Essence
@@ -898,17 +911,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114809, 202219),	-- Hexweave Mantle + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114813, 202219),	-- Hexweave Robe + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114815, 202219),	-- Hexweave Slippers + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114818, 202219),	-- Nimble Hexweave Cloak + Remarkable Hexweave Essence
+			WOD_CRAFTED_ITEM_DF_REMARKABLE(114817, 202219),	-- Powerful Hexweave Cloak + Remarkable Hexweave Essence
 			-- #ENDIF
+			i(114828),	-- Sumptuous Cowl
+			i(114829),	-- Sumptuous Robes
+			i(114831),	-- Sumptuous Leggings
+		}),
+		filter(BAGS, {
+			i(114821),	-- Hexweave Bag
+		}),
+		filter(BATTLE_PETS, {
+			i(113216),	-- Elekk Plushie (PET!)
 		}),
 		filter(MISC, {
-			i(202218, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Hexweave Essence
-			i(202219, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Hexweave Essence
+			-- #if AFTER BFA
+			i(111603),	-- Antiseptic Bandage
+			-- #endif
+			i(114836),	-- Hexweave Embroidery
+			i(118722),	-- Secret of Draenor Tailoring
 		}),
 		filter(MOUNTS, {
 			i(115363),	-- Creeping Carpet (MOUNT!)
 		}),
-		filter(BATTLE_PETS, {
-			i(113216),	-- Elekk Plushie (PET!)
+		filter(REAGENTS, {
+			i(111556),	-- Hexweave Cloth
+			i(128012, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Hexweave Essence
+			i(202218, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Hexweave Essence
+			i(127715, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Hexweave Essence
+			i(202219, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Hexweave Essence
+			i(127733, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Hexweave Essence
+			i(114838, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Hexweave Essence
+			i(114837, {["timeline"] = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Hexweave Essence
+			i(122540, {["timeline"] = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Hexweave Essence
 		}),
 	}),
 }))));

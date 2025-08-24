@@ -1,0 +1,41 @@
+name: Process Automation Tool (PAT)
+
+# Controls when the action will run.
+on:
+  schedule:
+    - cron: '0 7 * * *'   #at 07:00 UTC everyday
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Perform a PATdown
+        timeout-minutes: 5
+        run: |
+          cd .contrib/.tools
+          "Process Automation Tool.exe"
+        shell: cmd
+
+      - name: Commit Changes
+        shell: bash -l {0}
+        run: |
+            if [[ `git status --porcelain` ]]; then
+              echo "Staging changes..."
+              git config --global user.name 'Process Automation Tool (PAT)'
+              git config --global user.email 'bot@noreply.github.com'
+              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+              git add --all --verbose
+              echo "Committing changes..."
+              git commit -m "[PAT] Updated source file format based on current standards."
+              echo "Pushing changes to remote..."
+              git push
+              echo "Task complete."
+            else
+              echo "No changes detected, skipping commit."
+            fi

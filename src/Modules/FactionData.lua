@@ -8,6 +8,8 @@ local _, app = ...;
 -- Encapsulates the functionality for defining Faction-related data used in the addon
 
 -- Global locals
+local ipairs, pairs, math_ceil
+	= ipairs, pairs, math.ceil;
 
 -- App locals
 
@@ -30,9 +32,14 @@ end
 api.FACTION_RACES = FACTION_RACES
 
 local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1, nil, nil;
-api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation)
+api.CalculateRemainingTurnIns = function(reputation, repPerTurnIn, maxReputation)
 	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
-	remainingTurnIns, totalTurnIns = math.ceil((maxReputation - reputation) / repPerTurnIn), math.ceil(maxReputation / repPerTurnIn);
+	return repPerTurnIn,	-- Adjusted Reputation Per Turn In
+		math_ceil((maxReputation - reputation) / repPerTurnIn),	-- Remaining Turn Ins
+		math_ceil(maxReputation / repPerTurnIn);				-- Total Turn Ins
+end
+api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation)
+	repPerTurnIn, remainingTurnIns, totalTurnIns = api.CalculateRemainingTurnIns(reputation, repPerTurnIn, maxReputation);
 	local minimum = totalTurnIns - remainingTurnIns;
 	if minimum < 0 then
 		totalTurnIns = totalTurnIns - minimum;
@@ -45,10 +52,9 @@ api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTur
 	return repPerTurnIn, remainingTurnIns;
 end
 api.AddReputationTooltipInfoWithMultiplier = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation, multiplier)
-	if isHuman then repPerTurnIn = repPerTurnIn + (repPerTurnIn * 0.1); end
-	remainingTurnIns, totalTurnIns =
-		math.ceil((maxReputation - reputation) / repPerTurnIn) * multiplier,
-		math.ceil(maxReputation / repPerTurnIn) * multiplier;
+	repPerTurnIn, remainingTurnIns, totalTurnIns = api.CalculateRemainingTurnIns(reputation, repPerTurnIn, maxReputation);
+	remainingTurnIns = remainingTurnIns * multiplier;
+	totalTurnIns = remainingTurnIns * multiplier;
 	local minimum = totalTurnIns - remainingTurnIns;
 	if minimum < 0 then
 		totalTurnIns = totalTurnIns - minimum;

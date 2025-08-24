@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1748,	-- The Observatorium
 			1750,	-- Feast of Arrogance
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14715, {	-- Castle Nathria
 					crit(48950, {	-- Shriekwing
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						14525,	-- Feed Me, Seymour!
 						14610,	-- Clear Conscience
 					}},
-					["g"] = {
+					["groups"] = {
 						i(182596),	-- Rampart Screecher (MOUNT!)
 					},
 				}),
@@ -450,8 +450,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66693, {	-- Tempting Fate: Castle Nathria
-						["isWorldQuest"] = true,
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						["isWorldQuest"] = true,
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -796,7 +796,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
 						["provider"] = { "n", 172653 },	-- General Draven
-						["g"] = {
+						["groups"] = {
 							i(182601),	-- Sludgefist's Head (QI!)
 						},
 					}),
@@ -870,7 +870,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
 						["provider"] = { "n", 172653 },	-- General Draven
-						["g"] = {
+						["groups"] = {
 							i(182602),	-- Sludgefist's Head (QI!)
 						},
 					}),
@@ -929,7 +929,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
 						["provider"] = { "n", 172653 },	-- General Draven
-						["g"] = {
+						["groups"] = {
 							i(182603),	-- Sludgefist's Head (QI!)
 						},
 					}),
@@ -980,13 +980,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					ach(14461, {["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }}),	-- Cutting Edge: Sire Denathrius
 					ach(14649, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
 					})),
 					ach(14650, bubbleDownSelf({["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {	-- Hall of Fame: Sire Denathrius (Horde)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(440),	-- <Name>, Famed Slayer of Denathrius
 						},
 					})),

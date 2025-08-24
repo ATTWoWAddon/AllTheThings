@@ -11,18 +11,18 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2076,	-- Lower Chamber
 			2077,	-- Crystal Chambers
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(71155, {	-- The Azure Vaults
 					--["sourceQuests"] = { },	-- TODO
-					["provider"] = { "n", 186188 },	-- Sindragosa
+					["qg"] = 186188,	-- Sindragosa
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
 				q(75388, {	-- The Azure Vaults
 					--["sourceQuests"] = { },	-- TODO
-					["provider"] = { "n", 186188 },	-- Sindragosa
+					["qg"] = 190000,	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
-					["timeline"] = { ADDED_10_1_0 }
+					["timeline"] = { ADDED_10_1_0 },
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2492, {	-- Leymor
 					["crs"] = { 186644 },	-- Leymor
-					["g"] = {
+					["groups"] = {
 						i(193634),	-- Burgeoning Seed
 						i(193636),	-- Cinch of Forgotten Duty
 						i(193635),	-- Infused Elemental Bands
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2505, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
-					["g"] = {
+					["groups"] = {
 						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2483, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
-					["g"] = {
+					["groups"] = {
 						i(193648),	-- Azureblade's Work Gloves
 						i(193647),	-- Custodian's Seal of Delusion
 						i(193651),	-- Golden-Winged Rod
@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
-					["g"] = {
+					["groups"] = {
 						ach(16272),	-- The Azure Vault
 						i(193644),	-- Breastplate of Irreparable Madness
 						i(193645),	-- Crystalized Bulwark
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
-					["g"] = {
+					["groups"] = {
 						ach(16273),	-- Heroic: The Azure Vault
 					},
 				}),
@@ -102,13 +102,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2483, {	-- Telash Greywing
 					["crs"] = { 186737 },	-- Telash Greywing
-					["g"] = {
+					["groups"] = {
 						ach(16445),	-- Icy What You Did There
 					},
 				}),
 				e(2508, {	-- Umbrelskul
 					["crs"] = { 186738 },	-- Umbrelskul
-					["g"] = {
+					["groups"] = {
 						ach(16274),	-- Mythic: The Azure Vault
 						ach(17101),	-- Mythic: The Azure Vault Guild Run
 						ach(16331),	-- The Cracked Crystal

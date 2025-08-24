@@ -9,21 +9,21 @@ root(ROOTS.Zones, {
 				n(111649, {	-- Ambassador D'vwinn
 					["questID"] = 43794,
 					["coord"] = { 54.8, 63.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(139918),	-- Robes of the Nightborne Ambassador
 					},
 				}),
 				n(111197, {	-- Anax
 					["questID"] = 43954,
 					["coord"] = { 33.7, 51.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(140934),	-- Benax (PET!)
 					},
 				}),
 				n(110870, {	-- Apothecary Faldren
 					["questID"] = 43580,
 					["coord"] = { 42.2, 56.4, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121754),	-- Mana-Flecked Mantle
 					},
 				}),
@@ -41,42 +41,42 @@ root(ROOTS.Zones, {
 						{ 62.7, 49.1, SURAMAR },
 						{ 62.6, 47.1, SURAMAR },
 					},
-					["g"] = {
+					["groups"] = {
 						i(139969),	-- Nightborne Stalker's Coif
 					},
 				}),
 				n(100864, {	-- Cora'kar
 					["questID"] = 41135,
 					["coord"] = { 68.2, 58.6, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(139952),	-- Salt-Tide Jailor's Tunic
 					},
 				}),
 				n(111651, {	-- Degren
 					["questID"] = 43792,
 					["coord"] = { 54.4, 56.1, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121808),	-- Nether Conductors
 					},
 				}),
 				n(99792, {	-- Elfbane
 					["questID"] = 41319,
 					["coord"] = { 22.1, 51.8, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121806),	-- Mountain Rage Shaker
 					},
 				}),
 				n(99610, {	-- Garvrulg
 					["questID"] = 40897,
 					["coord"] = { 53.3, 30.2, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121755),	-- Slatecrusher Spaulders
 					},
 				}),
 				n(110832, {	-- Gorgroth
 					["questID"] = 43992,
 					["coord"] = { 27.3, 66.0, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121747),	-- Soulcrush Legplates
 					},
 				}),
@@ -96,7 +96,7 @@ root(ROOTS.Zones, {
 				n(103223, {	-- Hertha Grimdottir
 					["questID"] = 43993,
 					["coord"] = { 61.3, 39.7, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121737),	-- Exile's Chain Boots
 					},
 				}),
@@ -111,32 +111,33 @@ root(ROOTS.Zones, {
 				n(106526, {	-- Lady Rivantas
 					["questID"] = 44675,
 					["coord"] = { 35.4, 67.0, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(141866),	-- Rivantas' Silk Gloves
 					},
 				}),
 				n(102303, {	-- Lieutenant Strathmar
 					["questID"] = 40905,
 					["coord"] = { 48.5, 56.7, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121735),	-- Nightguard Stompers
 					},
 				}),
 				n(113368, {	-- Llorian
 					["questID"] = 44676,
 					["coord"] = { 29.4, 53.3, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(141867),	-- Llorian's Dress Leggings
 					},
 				}),
 				n(109954, {	-- Magister Phaedris
 					["questID"] = 43348,
 					["coord"] = { 42.1, 80.1, SURAMAR },
+					["groups"] = { i(140405) },	-- Illusion Matrix Crystal
 				}),
 				n(112497, {	-- Maia the White
 					["questID"] = 44072,
 					["coord"] = { 24.4, 35.2, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(139897),	-- Cloak of the White Prowler
 					},
 				}),
@@ -155,14 +156,14 @@ root(ROOTS.Zones, {
 				n(111653, {	-- Miasu
 					["questID"] = 43793,
 					["coord"] = { 62.5, 63.7, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121810),	-- Pocket Void Portal
 					},
 				}),
 				n(110340, {	-- Myonix
 					["questID"] = 43358,
 					["coord"] = { 41.0, 32.7, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(133816),	-- Recipe: Leybeque Ribs [Rank 1] (RECIPE!)
 						i(121739),	-- Felinus Manus
 					},
@@ -174,8 +175,9 @@ root(ROOTS.Zones, {
 				n(107846, {	-- Pinchshank
 					["questID"] = 43968,
 					["coord"] = { 66.7, 67.1, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(140314),	-- Crab Shank (TOY!)
+						i(140402),	-- Green Or'ligai Egg
 					},
 				}),
 				n(111007, {	-- Randril
@@ -185,7 +187,7 @@ root(ROOTS.Zones, {
 				n(105547, {	-- Rauren
 					["questID"] = 43484,
 					["coord"] = { 24.0, 25.5, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(121759),	-- Feather-Notched Belt
 					},
 				}),
@@ -196,7 +198,7 @@ root(ROOTS.Zones, {
 						{ 76.3, 58.6, SURAMAR },
 						{ 74.6, 56.9, SURAMAR },
 					},
-					["g"] = {
+					["groups"] = {
 						i(121801),	-- Coral-Edge Band
 					},
 				}),
@@ -206,7 +208,7 @@ root(ROOTS.Zones, {
 						{ 80.2, 70.6, SURAMAR },
 						{ 80.0, 68.0, SURAMAR },
 					},
-					["g"] = {
+					["groups"] = {
 						i(140019),	-- Eel Collars
 					},
 				}),
@@ -222,7 +224,7 @@ root(ROOTS.Zones, {
 				n(109054, {	-- Shal'an
 					["questID"] = 42831,
 					["coord"] = { 26.3, 41.2, SURAMAR },
-					["g"] = {
+					["groups"] = {
 						i(139926),	-- Subject 12's ID Bracelets
 					},
 				}),

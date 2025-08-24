@@ -41,6 +41,34 @@ i(228981, 463869);	-- Conductive Shield Coating
 i(229008, 25081);	-- Enchant Cloak - Greater Fire Resistance
 i(229009, 25082);	-- Enchant Cloak - Greater Nature Resistance
 i(228982, 463871);	-- Enchant Shield - Law of Nature
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+--- ITEM ---
+i(232610, 471400);	-- Magnificent Trollshine
+i(234272, 1213610);	-- Enchanted Repellent
+i(233997, 1213616);	-- Enchant Chest - Living Stats
+i(233998, 1213622);	-- Enchant Gloves - Holy Power
+i(233999, 1213626);	-- Enchant Gloves - Arcane Power
+i(234275, 1213628);	-- Enchanted Prayer Tome
+i(234277, 1213635);	-- Enchanted Mushroom
+i(234269, 1213600);	-- Enchanted Stopwatch
+i(234276, 1213633);	-- Enchanted Totem
+i(235133, 1216005);	-- Libram of Righteousness
+i(235134, 1216007); -- Libram of the Exorcist
+i(235135, 1216010);	-- Libram of Sanctity
+i(235139, 1216020);	-- Idol of Sidereal Wrath
+i(235140, 1216022);	-- Idol of Feline Ferocity
+i(235141, 1216024);	-- Idol of Ursin Power
+i(234268, 1213598);	-- Lodestone of Retaliation
+i(234270, 1213603);	-- Ruby-Encrusted Broach
+i(234271, 1213607);	-- Scroll: Wrath of the Swarm
+i(234266, 1213593);	-- Speedstone
+i(234267, 1213595);	-- Tear of the Dreamer
+i(235136, 1216014);	-- Totem of Pyroclastic Thunder
+i(235137, 1216016);	-- Totem of Thunderous Strikes
+i(235138, 1216018);	-- Totem of Flowing Magma
 -- #endif
 
 -----------------
@@ -149,7 +177,9 @@ i(11204, 13846);	-- Greater Versatility / CLASSIC: Greater Spirit [Bracers]
 i(19447, 23802);	-- Healing Power [Bracers]
 i(20730, 25079);	-- Healing Power [Golves]
 i(18260, 22750);	-- Healing Power [Weapon]
+-- #IF BEFORE 4.3
 i(11151, 13617);	-- Herbalism [REMOVED:4.3.0, See new version]
+-- #ENDIF
 i(16223, 20029);	-- Icy Chill
 i(11206, 13882);	-- Lesser Agility [Cloak] [REMOVED:4.0.3, See new version]
 i(11164, 13653);	-- Lesser Beastslayer
@@ -1371,3 +1401,26 @@ i(0, 445355);		-- Scepter of Radiant Magics
 i(0, 445466);		-- Shatter Essence
 --- NYI ---
 i(0, 455488);		-- Glimmering Haste
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+--- NYI ---
+i(0, 1227288);		-- Greater Rune of Gushing Wound
+i(0, 1227206);		-- Greater Rune of Infinite Stars
+i(0, 1225873);		-- Greater Rune of the Echoing Void
+i(0, 1227294);		-- Greater Rune of the Twisted Appendage
+i(0, 1227311);		-- Greater Rune of the Void Ritual
+i(0, 1225074);		-- Lesser Rune of Twilight Devastation
+i(238683, 0);		-- Formula: Enchant Weapon - Echoing Void
+i(239087, 0);		-- Formula: Enchant Weapon - Gushing Wound
+i(239081, 0);		-- Formula: Enchant Weapon - Infinite Stars
+i(238406, 0);		-- Formula: Enchant Weapon - Twilight Devastation
+i(239091, 0);		-- Formula: Enchant Weapon - Twisted Appendage
+i(239096, 0);		-- Formula: Enchant Weapon - Void Ritual
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(249709, 1249469);	-- Gleeful Glamour - Ethereal

@@ -2838,6 +2838,10 @@
 7943@@@Grand Inquisitor
 1.15.7.60000
 7944@@@Poultry Precision Scope (+10 Damage)
+1.15.7.60249
+7855@@@Benevolent Seer
+1.15.7.60663
+8057@@@Poultry Precision Scope (+3% Hit)
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
@@ -8902,18 +8906,252 @@
 4996@@@+$k1 Agility
 4997@@@+$k1 Strength
 4998@@@+$k1 Intellect
+5.5.0.60481
+2705@@@+$k2 Haste and +$k1 Intellect
+2707@@@+$k2 Intellect and +$k1 Spirit
+2752@@@+$k2 Critical Strike and +$k1 Strength
+2755@@@+$k2 Hit and +$k1 Agility
+2760@@@+$k2 Critical Strike and +$k1 Intellect
+3110@@@+$k2 Intellect and +$k1 Hit
+3139@@@+$k2 Critical Strike and +$k1 Strength
+3201@@@+$k2 Intellect and +$k1 Spirit
+3253@@@+$25063s1% Threat and +$k2 Parry
+3879@@@+$k1 All Stats
+4654@@@+$k1 Hit
+4842@@@+$k1 PvP Power
+4851@@@+$k1 PvP Power
+4863@@@+$k1 PvP Power
+5000@@@Watergliding Jets
+5001@@@Ghost Iron Spike (600-1000)
+5002@@@Socket Belt
+5003@@@+$k1 Intellect and +$k2 Critical Strike
+5004@@@+$k1 Intellect and +$k2 Spirit
+5011@@@+$k1 Agility
+5012@@@+$k1 Intellect
+5013@@@+$k1 Strength
+5015@@@Socket Sha-Touched Weapon
+5016@@@+$k1 Strength and +$k2 PvP Resilience
+5017@@@+$k1 Agility and +$k2 PvP Resilience
+5018@@@+$k1 Intellect and +$k2 PvP Resilience
+5019@@@+$k1 Strength and +$k2 PvP Power
+5020@@@+$k1 Agility and +$k2 PvP Power
+5021@@@+$k1 Intellect and +$k2 PvP Power
+5024@@@+$k1 Hit and +$k2 Dodge
+5025@@@+$k1 Hit and +$k2 Dodge
+5026@@@+$k1 Hit and +$k2 Dodge
+5027@@@+$k1 Hit and +$k2 Dodge
+5029@@@Custom - Jaina - Crackling Lightning
+5030@@@+$k1 Stamina and chance on being hit to gain $137593s1% reduction to damage taken
+5031@@@+$k1 Intellect and chance on beneficial spell to make your spells cost no mana for 4 sec.
+5032@@@+$k1 Crit, and chance on melee or ranged hit to gain Capacitance
+5033@@@+$k1 Crit, and chance on spell damage to gain $137590s1% spell haste
+5034@@@+$k1 PvP Power and +$k2 PvP Resilience
+5035@@@+$k1 PvP Power, Disarm Duration Reduction
+5040@@@+$k1 Intellect
+5041@@@+$k1 Intellect
+5042@@@+$k1 Intellect
+5043@@@+$k1 Critical Strike
+5044@@@+$k1 Spirit
+5045@@@+$k1 Intellect
+5046@@@+$k1 Spirit
+5047@@@+$k1 Spirit and 3% Increased Critical Effect
+5048@@@+$k1 Spirit
+5049@@@+$k1 Spirit and +$k2 Critical Strike
+5050@@@+$k1 Intellect
+5051@@@+$k1 Intellect and +$k2 Spirit
+5052@@@+$k1 Haste
+5053@@@+$k1 Haste and +$k2 Spirit
+5054@@@+$k1 Intellect
+5055@@@+$k1 Intellect and +$k2 Critical Strike
+5056@@@+$k1 Intellect
+5057@@@+$k1 Intellect
+5058@@@+$k1 Haste
+5059@@@+$k1 Intellect and +$k2 Critical Strike
+5060@@@+$k1 Mastery & Minor Speed Increase
+5061@@@+$k1 Intellect
+5062@@@Jade Spirit
+5063@@@Synapse Springs
+5064@@@+$k1 PvP Resilience
+5065@@@+$k1 Intellect
+5066@@@+$k1 PvP Resilience
+5067@@@+$k1 Intellect
+5068@@@+$k1 Intellect
+5069@@@+$k1 PvP Resilience
+5070@@@+$k1 Intellect and $44797s1% Increased Critical Effect
+5071@@@+$k1 PvP Resilience
+5072@@@+$k1 Intellect and +$k2PvP Power
+5073@@@+$k1 PvP Power
+5074@@@+$k1 Intellect and +$k2 PvP Resilience
+5075@@@+$k1 Intellect and +$k2 PvP Power
+5076@@@+$k1 PvP Resilience
+5077@@@+$k1 Intellect
+5078@@@+$k1 PvP Resilience
+5079@@@+$k1 PvP Resilience
+5080@@@+$k1 Mastery
+5081@@@+$k1 Mastery
+5082@@@+$k1 Intellect
+5083@@@+$k1 PvP Resilience
+5084@@@+$k1 PvP Resilience
+5085@@@+$k1 Intellect and $44797s1% Increased Critical Effect
+5086@@@+$k1 PvP Resilience
+5087@@@+$k1 Intellect and +$k2 PvP Power
+5088@@@+$k1 Intellect and +$k2 PvP Power
+5089@@@+$k1 PvP Power
+5090@@@+$k1 Intellect and +$k2 PvP Resilience
+5091@@@+$k1 Intellect and +$k2 Critical Strike
+5092@@@+$k1 Intellect
+5093@@@+$k1 Intellect
+5094@@@+$k1 Haste
+5095@@@+$k1 Intellect and +$k2 Critical Strike
+5096@@@+$k1 Mastery & Minor Speed Increase
+5097@@@+$k1 Intellect
+5098@@@Jade Spirit
+5099@@@+$k1 PvP Resilience
+5100@@@+$k1 Mastery
+5101@@@+$k1 Mastery
+5102@@@+$k1 Intellect
+5103@@@+$k1 Intellect
+5104@@@+$k1 Hit
+5105@@@+$k1 Haste
+5106@@@+$k1 Critical Strike and +$k2 Hit
+5107@@@+$k1 Critical Strike
+5108@@@+$k1 Expertise and +$k2 Critical Strike
+5109@@@+$k1 Expertise and +$k2 Critical Strike
+5110@@@Lightweave Embroidery
+5111@@@+$k1 All Stats
+5112@@@+$k1 Intellect
+5113@@@+$k1 Intellect
+5114@@@+$k1 Intellect and +$k2 Critical Strike
+5115@@@+$k1 Intellect
+5116@@@+$k1 Haste
+5117@@@+$k1 Mastery
+5118@@@+$k1 Expertise and +$k2 Mastery
+5119@@@+$k1 Hit
+5120@@@+$k1 Intellect
+5124@@@Spirit of Conquest
+5125@@@Bloody Dancing Steel
+5147@@@+$k1 Agility
+5155@@@+$k1 Agility
+5156@@@+$k1 Agility
+5157@@@+$k1 Intellect
+5158@@@+$k1 Agility
+5159@@@+$k1 Intellect
+5160@@@+$k1 Spirit
+5161@@@+$k1 Stamina
+5162@@@+$k1 Strength
+5163@@@+$k1 Dodge
+5164@@@+$k1 Dodge
+5165@@@+$k1 Spell Power
+5166@@@+$k1 Spell Power
+5167@@@+$k1 Spell Power
+5168@@@+$k1 Attack Power
+5169@@@+$k1 Attack Power
+5170@@@+$k1 Attack Power
+5171@@@+$k1 Attack Power
+5172@@@+$k1 Attack Power
+5173@@@+$k1 Attack Power
+5174@@@+$k1 Attack Power
+5175@@@+$k1 Stamina
+5176@@@+$k1 Spell Power
+5177@@@+$k1 Intellect
+5178@@@+$k1 Intellect
+5179@@@+$k1 Hit
+5180@@@+$k1 Spell Power
+5181@@@+$k1 Critical Strike
+5182@@@+$k1 Agility
+5183@@@+$k1 Spell Power
+5184@@@+$k1 Spell Power
+5185@@@+$k1 Critical Strike
+5186@@@+$k1 Spirit
+5187@@@+$k1 Critical Strike
+5188@@@+$k1 Hit
+5189@@@+$k1 PvP Resilience
+5190@@@+$k1 Critical Strike
+5191@@@+$k1 PvP Resilience
+5192@@@+$k1 Hit
+5193@@@+$k1 Dodge
+5194@@@+$k1 PvP Resilience
+5195@@@+$k1 Intellect
+5196@@@+$k1 Critical Strike
+5197@@@+$k1 Critical Strike
+5198@@@+$k1 Spirit
+5199@@@+$k1 Spirit
+5200@@@+$k1 Spirit
+5201@@@+$k1 PvP Resilience
+5202@@@+$k1 Stamina
+5203@@@+$k1 Stamina
+5204@@@+$k1 Intellect
+5205@@@+$k1 Intellect
+5206@@@+$k1 Parry
+5207@@@+$k1 Dodge
+5208@@@+$k1 Dodge
+5209@@@+$k1 Spell Power
+5210@@@+$k1 Spell Power
+5211@@@+$k1 Hit
+5212@@@+$k1 Hit
+5213@@@+$k1 Critical Strike
+5214@@@+$k1 Critical Strike
+5215@@@+$k1 Critical Strike
+5216@@@+$k1 Dodge
+5217@@@+$k1 Agility
+5218@@@+$k1 Agility
+5219@@@+$k1 PvP Resilience
+5220@@@+$k1 PvP Resilience
+5221@@@+$k1 Strength
+5222@@@+$k1 Hit
+5223@@@+$k1 Hit
+5224@@@+2 Spirit
+5225@@@+$k1 Stamina
+5226@@@+$k1 Stamina
+5227@@@+$k1 Stamina
+5228@@@+$k1 Critical Strike
+5229@@@+$k1 Hit
+5230@@@+$k1 Critical Strike
+5231@@@+$k1 Spell Power
+5232@@@+$k1 Spell Power
+5233@@@+$k1 Spirit
+5234@@@+$k1 Spirit
+5235@@@+$k1 Strength
+5236@@@+$k1 Strength
+5237@@@+$k1 Spirit
+5238@@@+$k1 Agility
+5239@@@+$k1 Stamina
+5240@@@+$k1 Spell Power
+5241@@@+$k1 Critical Strike
+5242@@@+$k1 Parry
+5243@@@+$k1 Hit
+5244@@@+$k1 Stamina
+5245@@@+$k1 Dodge
+5246@@@+$k1 Strength
+5247@@@+$k1 Strength
+5248@@@+$k1 Attack Power
+5249@@@+$k1 Attack Power
+5250@@@+$k1 Strength
+5251@@@+$k1 Attack Power
+5252@@@+$k1 Dodge
+5253@@@+$k1 Strength
+5254@@@+$k1 Expertise
+5255@@@+$k1 Attack Power
+5256@@@+$k1 Attack Power
+5257@@@+$k1 Attack Power
+5258@@@+$k1 Agility
+5259@@@+$k1 Agility
+5260@@@+$k1 Dodge
+5264@@@+$k1 Critical Strike
+5265@@@+$k1 Critical Strike
+5266@@@+$k1 Haste
+5267@@@+$k1 Haste
+5.5.0.61735
+8221@@@
+5.5.0.61916
 6.0.1.18179
 2523@@@+$k1 Ranged Critical Strike
 2586@@@+$k1 Ranged Attack Power/+$k2 Stamina/+$k3 Critical Strike
 2588@@@+$k1 Spell Power and +$k2 Critical Strike
 2658@@@+$k1 Haste and +$k2 Critical Strike
 2697@@@+$k1 Critical Strike
-2705@@@+$k2 Haste and +$k1 Intellect
-2707@@@+$k2 Intellect and +$k1 Spirit
-2752@@@+$k2 Critical Strike and +$k1 Strength
 2755@@@+$k2 Critical Strike and +$k1 Agility
 2756@@@+$k1 Agility and +$k2 Critical Strike
-2760@@@+$k2 Critical Strike and +$k1 Intellect
 2764@@@+$k1 Critical Strike
 2767@@@+$k1 Critical Strike
 2769@@@+$k1 Critical Strike
@@ -8951,16 +9189,13 @@
 3128@@@+$k1 Critical Strike
 3132@@@+$k1 Critical Strike
 3136@@@+$k1 Agility and +$k2 Critical Strike
-3139@@@+$k2 Critical Strike and +$k1 Strength
 3142@@@+$k1 Agility and +$k2 Critical Strike
 3143@@@+$k1 Intellect and +$k2 Critical Strike
-3201@@@+$k2 Intellect and +$k1 Spirit
 3218@@@+$k1 Critical Strike
 3219@@@+$k1 Critical Strike
 3231@@@+$k1 Haste
 3234@@@+$k1 Critical Strike
 3248@@@+$k1 Haste
-3253@@@+$25063s1% Threat and +$k2 Parry
 3351@@@+$k1 Critical Strike
 3362@@@+$k1 Haste
 3379@@@+$k1 Haste
@@ -9030,7 +9265,6 @@
 3826@@@+$k1 Critical Strike
 3858@@@+$k1 Critical Strike
 3867@@@+$k1 Critical Strike
-3879@@@+$k1 All Stats
 3886@@@+$k2 Mastery and +$k1 Critical Strike
 3888@@@+$k2 Mastery and +$k1 Critical Strike
 3893@@@+$k1 Haste
@@ -9175,18 +9409,15 @@
 4838@@@+$k1 Critical Strike
 4839@@@+$k1 Critical Strike
 4840@@@+$k1 Critical Strike
-4842@@@+$k1 PvP Power
 4844@@@+$k1 Critical Strike
 4845@@@+$k1 Haste
 4847@@@+$k1 Critical Strike
 4850@@@+$k1 Critical Strike
-4851@@@+$k1 PvP Power
 4852@@@+$k1 Critical Strike
 4856@@@+$k1 Critical Strike
 4857@@@+$k1 Haste
 4859@@@+$k1 Critical Strike
 4862@@@+$k1 Critical Strike
-4863@@@+$k1 PvP Power
 4866@@@+$k1 Critical Strike
 4901@@@+$k1 Haste
 4903@@@+$k1 Critical Strike
@@ -9207,226 +9438,26 @@
 4965@@@+$k1 Haste and +$k2 Dodge
 4970@@@+$k1 Haste and +$k2 PvP Resilience
 4971@@@+$k1Haste
-5000@@@Watergliding Jets
-5001@@@Ghost Iron Spike (600-1000)
-5002@@@Socket Belt
-5003@@@+$k1 Intellect and +$k2 Critical Strike
-5004@@@+$k1 Intellect and +$k2 Spirit
-5011@@@+$k1 Agility
-5012@@@+$k1 Intellect
-5013@@@+$k1 Strength
-5015@@@Socket Sha-Touched Weapon
-5016@@@+$k1 Strength and +$k2 PvP Resilience
-5017@@@+$k1 Agility and +$k2 PvP Resilience
-5018@@@+$k1 Intellect and +$k2 PvP Resilience
-5019@@@+$k1 Strength and +$k2 PvP Power
-5020@@@+$k1 Agility and +$k2 PvP Power
-5021@@@+$k1 Intellect and +$k2 PvP Power
 5024@@@+$k1 Critical Strike and +$k2 Dodge
 5025@@@+$k1 Critical Strike and +$k2 Dodge
 5026@@@+$k1 Critical Strike and +$k2 Dodge
 5027@@@+$k1 Critical Strike and +$k2 Dodge
-5029@@@Custom - Jaina - Crackling Lightning
-5030@@@+$k1 Stamina and chance on being hit to gain $137593s1% reduction to damage taken
-5031@@@+$k1 Intellect and chance on beneficial spell to make your spells cost no mana for 4 sec.
-5032@@@+$k1 Crit, and chance on melee or ranged hit to gain Capacitance
-5033@@@+$k1 Crit, and chance on spell damage to gain $137590s1% spell haste
-5034@@@+$k1 PvP Power and +$k2 PvP Resilience
-5035@@@+$k1 PvP Power, Disarm Duration Reduction
-5040@@@+$k1 Intellect
-5041@@@+$k1 Intellect
-5042@@@+$k1 Intellect
-5043@@@+$k1 Critical Strike
-5044@@@+$k1 Spirit
-5045@@@+$k1 Intellect
-5046@@@+$k1 Spirit
-5047@@@+$k1 Spirit and 3% Increased Critical Effect
-5048@@@+$k1 Spirit
-5049@@@+$k1 Spirit and +$k2 Critical Strike
-5050@@@+$k1 Intellect
-5051@@@+$k1 Intellect and +$k2 Spirit
-5052@@@+$k1 Haste
-5053@@@+$k1 Haste and +$k2 Spirit
-5054@@@+$k1 Intellect
-5055@@@+$k1 Intellect and +$k2 Critical Strike
-5056@@@+$k1 Intellect
-5057@@@+$k1 Intellect
-5058@@@+$k1 Haste
-5059@@@+$k1 Intellect and +$k2 Critical Strike
-5060@@@+$k1 Mastery & Minor Speed Increase
-5061@@@+$k1 Intellect
-5062@@@Jade Spirit
-5063@@@Synapse Springs
-5064@@@+$k1 PvP Resilience
-5065@@@+$k1 Intellect
-5066@@@+$k1 PvP Resilience
-5067@@@+$k1 Intellect
-5068@@@+$k1 Intellect
-5069@@@+$k1 PvP Resilience
-5070@@@+$k1 Intellect and $44797s1% Increased Critical Effect
-5071@@@+$k1 PvP Resilience
-5072@@@+$k1 Intellect and +$k2PvP Power
-5073@@@+$k1 PvP Power
-5074@@@+$k1 Intellect and +$k2 PvP Resilience
-5075@@@+$k1 Intellect and +$k2 PvP Power
-5076@@@+$k1 PvP Resilience
-5077@@@+$k1 Intellect
-5078@@@+$k1 PvP Resilience
-5079@@@+$k1 PvP Resilience
-5080@@@+$k1 Mastery
-5081@@@+$k1 Mastery
-5082@@@+$k1 Intellect
-5083@@@+$k1 PvP Resilience
-5084@@@+$k1 PvP Resilience
-5085@@@+$k1 Intellect and $44797s1% Increased Critical Effect
-5086@@@+$k1 PvP Resilience
-5087@@@+$k1 Intellect and +$k2 PvP Power
-5088@@@+$k1 Intellect and +$k2 PvP Power
-5089@@@+$k1 PvP Power
-5090@@@+$k1 Intellect and +$k2 PvP Resilience
-5091@@@+$k1 Intellect and +$k2 Critical Strike
-5092@@@+$k1 Intellect
-5093@@@+$k1 Intellect
-5094@@@+$k1 Haste
-5095@@@+$k1 Intellect and +$k2 Critical Strike
-5096@@@+$k1 Mastery & Minor Speed Increase
-5097@@@+$k1 Intellect
-5098@@@Jade Spirit
-5099@@@+$k1 PvP Resilience
-5100@@@+$k1 Mastery
-5101@@@+$k1 Mastery
-5102@@@+$k1 Intellect
-5103@@@+$k1 Intellect
 5104@@@+$k1 Critical Strike
-5105@@@+$k1 Haste
 5106@@@+$k1 Critical Strike
-5107@@@+$k1 Critical Strike
 5108@@@+$k1 Haste and +$k2 Critical Strike
 5109@@@+$k1 Haste and +$k2 Critical Strike
-5110@@@Lightweave Embroidery
-5111@@@+$k1 All Stats
-5112@@@+$k1 Intellect
-5113@@@+$k1 Intellect
-5114@@@+$k1 Intellect and +$k2 Critical Strike
-5115@@@+$k1 Intellect
-5116@@@+$k1 Haste
-5117@@@+$k1 Mastery
 5118@@@+$k1 Haste and +$k2 Mastery
 5119@@@+$k1 Critical Strike
-5120@@@+$k1 Intellect
-5124@@@Spirit of Conquest
-5125@@@Bloody Dancing Steel
-5147@@@+$k1 Agility
-5155@@@+$k1 Agility
-5156@@@+$k1 Agility
-5157@@@+$k1 Intellect
-5158@@@+$k1 Agility
-5159@@@+$k1 Intellect
-5160@@@+$k1 Spirit
-5161@@@+$k1 Stamina
-5162@@@+$k1 Strength
-5163@@@+$k1 Dodge
-5164@@@+$k1 Dodge
-5165@@@+$k1 Spell Power
-5166@@@+$k1 Spell Power
-5167@@@+$k1 Spell Power
-5168@@@+$k1 Attack Power
-5169@@@+$k1 Attack Power
-5170@@@+$k1 Attack Power
-5171@@@+$k1 Attack Power
-5172@@@+$k1 Attack Power
-5173@@@+$k1 Attack Power
-5174@@@+$k1 Attack Power
-5175@@@+$k1 Stamina
-5176@@@+$k1 Spell Power
-5177@@@+$k1 Intellect
-5178@@@+$k1 Intellect
 5179@@@+$k1 Critical Strike
-5180@@@+$k1 Spell Power
-5181@@@+$k1 Critical Strike
-5182@@@+$k1 Agility
-5183@@@+$k1 Spell Power
-5184@@@+$k1 Spell Power
-5185@@@+$k1 Critical Strike
-5186@@@+$k1 Spirit
-5187@@@+$k1 Critical Strike
 5188@@@+$k1 Critical Strike
-5189@@@+$k1 PvP Resilience
-5190@@@+$k1 Critical Strike
-5191@@@+$k1 PvP Resilience
 5192@@@+$k1 Critical Strike
-5193@@@+$k1 Dodge
-5194@@@+$k1 PvP Resilience
-5195@@@+$k1 Intellect
-5196@@@+$k1 Critical Strike
-5197@@@+$k1 Critical Strike
-5198@@@+$k1 Spirit
-5199@@@+$k1 Spirit
-5200@@@+$k1 Spirit
-5201@@@+$k1 PvP Resilience
-5202@@@+$k1 Stamina
-5203@@@+$k1 Stamina
-5204@@@+$k1 Intellect
-5205@@@+$k1 Intellect
-5206@@@+$k1 Parry
-5207@@@+$k1 Dodge
-5208@@@+$k1 Dodge
-5209@@@+$k1 Spell Power
-5210@@@+$k1 Spell Power
 5211@@@+$k1 Critical Strike
 5212@@@+$k1 Critical Strike
-5213@@@+$k1 Critical Strike
-5214@@@+$k1 Critical Strike
-5215@@@+$k1 Critical Strike
-5216@@@+$k1 Dodge
-5217@@@+$k1 Agility
-5218@@@+$k1 Agility
-5219@@@+$k1 PvP Resilience
-5220@@@+$k1 PvP Resilience
-5221@@@+$k1 Strength
 5222@@@+$k1 Critical Strike
 5223@@@+$k1 Critical Strike
-5224@@@+2 Spirit
-5225@@@+$k1 Stamina
-5226@@@+$k1 Stamina
-5227@@@+$k1 Stamina
-5228@@@+$k1 Critical Strike
 5229@@@+$k1 Critical Strike
-5230@@@+$k1 Critical Strike
-5231@@@+$k1 Spell Power
-5232@@@+$k1 Spell Power
-5233@@@+$k1 Spirit
-5234@@@+$k1 Spirit
-5235@@@+$k1 Strength
-5236@@@+$k1 Strength
-5237@@@+$k1 Spirit
-5238@@@+$k1 Agility
-5239@@@+$k1 Stamina
-5240@@@+$k1 Spell Power
-5241@@@+$k1 Critical Strike
-5242@@@+$k1 Parry
 5243@@@+$k1 Critical Strike
-5244@@@+$k1 Stamina
-5245@@@+$k1 Dodge
-5246@@@+$k1 Strength
-5247@@@+$k1 Strength
-5248@@@+$k1 Attack Power
-5249@@@+$k1 Attack Power
-5250@@@+$k1 Strength
-5251@@@+$k1 Attack Power
-5252@@@+$k1 Dodge
-5253@@@+$k1 Strength
 5254@@@+$k1 Haste
-5255@@@+$k1 Attack Power
-5256@@@+$k1 Attack Power
-5257@@@+$k1 Attack Power
-5258@@@+$k1 Agility
-5259@@@+$k1 Agility
-5260@@@+$k1 Dodge
-5264@@@+$k1 Critical Strike
-5265@@@+$k1 Critical Strike
-5266@@@+$k1 Haste
-5267@@@+$k1 Haste
 5269@@@Slaghammer
 5270@@@Living Clay Weapon
 5274@@@+$25065s1 Fire Spell Power
@@ -12639,3 +12670,59 @@
 7930@@@Greater Twisted Appendage
 7931@@@Lesser Void Ritual
 7933@@@Greater Void Ritual
+11.1.7.61965
+8246@@@Sha Corruption
+11.2.0.61476
+7641@@@Arcane
+7897@@@Energizing Fiber
+7898@@@Pure Energizing Fiber
+7899@@@Pure Precise Fiber
+7900@@@Precise Fiber
+7901@@@Chronomatic Fiber
+7902@@@Pure Chronomatic Fiber
+7903@@@Pure Dexterous Fiber
+7904@@@Dexterous Fiber
+8058@@@11.2 - FX - Arcane - Enchants
+11.2.0.61787
+7901@@@Chronomantic Fiber
+7902@@@Pure Chronomantic Fiber
+11.2.5.62554
+7886@@@Flame-scarred Scales of the Earth-Warder
+7887@@@Val'kyrian Rebirth
+7888@@@Warbreaker's Revenge
+7890@@@Self-Conjuring Mana Gem
+7891@@@Treatise of the Council's Wisdom
+7892@@@Blessed Prayer Beads
+7893@@@Xenedar Gem Fragment
+7894@@@Rusting Chain of Ancient Hunger
+7895@@@Skrog Tooth
+7911@@@zzOldFelfuel Cell
+8064@@@Pristine Xakal's Determination
+8066@@@Pristine Gleaming Iron Spike
+8067@@@Pristine Ettin Bone Fragment
+8068@@@Pristine Gelmogg's Fractured Skull
+8069@@@Pristine Everchill Pearl
+8070@@@Pristine Rage of the Tides
+8071@@@Pristine Sundered Comet
+8072@@@Intricate Xakal's Determination
+8073@@@Intricate Gleaming Iron Spike
+8074@@@Intricate Ettin Bone Fragment
+8075@@@Intricate Gelmogg's Fractured Skull
+8076@@@Intricate Everchill Pearl
+8077@@@Intricate Rage of the Tides
+8078@@@Intricate Sundered Comet
+8079@@@Flawed Xakal's Determination
+8080@@@Flawed Gleaming Iron Spike
+8081@@@Flawed Ettin Bone Fragment
+8082@@@Flawed Gelmogg's Fractured Skull
+8083@@@Flawed Everchill Pearl
+8084@@@Flawed Rage of the Tides
+8085@@@Flawed Sundered Comet
+8086@@@Perfected Xakal's Determination
+8087@@@Perfected Gleaming Iron Spike
+8088@@@Perfected Ettin Bone Fragment
+8089@@@Perfected Gelmogg's Fractured Skull
+8090@@@Perfected Everchill Pearl
+8091@@@Perfected Rage of the Tides
+8092@@@Perfected Sundered Comet
+8549@@@Felshatter

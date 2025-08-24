@@ -1,0 +1,88 @@
+Name_lang,ID,Parent,Ui_order
+Estadísticas,1,-1,1
+"Jugador contra Jugador",21,1,10
+"Proezas de fuerza",81,-1,11
+General,92,-1,2
+"Jugador contra Jugador",95,-1,6
+Misiones,96,-1,4
+Exploración,97,-1,5
+Muertes,122,1,4
+Arenas,123,122,1
+"Campos de batalla",124,122,2
+Calabozos,125,122,3
+Mundo,126,122,4
+Resurrección,127,122,5
+Víctimas,128,1,3
+Personaje,130,1,1
+Social,131,1,9
+Habilidades,132,1,7
+Misiones,133,1,5
+Viajes,134,1,8
+Criaturas,135,128,1
+"Muertes con honor",136,128,2
+"Golpes de gracia",137,128,3
+Fortuna,140,130,1
+Combate,141,1,2
+Consumibles,145,130,2
+Reputación,147,130,3
+"Arenas puntuadas",152,21,1
+"Campos de batalla",153,21,2
+Mundo,154,21,3
+"Eventos del mundo",155,-1,10
+"Festival de Invierno",156,155,9
+Halloween,158,155,7
+"Jardín Noble",159,155,3
+"Festival Lunar",160,155,1
+Solsticio,161,155,5
+"Fiesta de la cerveza",162,155,6
+"Los Niños",163,155,4
+Arena,165,95,1
+"Calabozos y bandas",168,-1,7
+Profesiones,169,-1,8
+Cocina,170,169,1
+Pesca,171,169,2
+"Primeros auxilios",172,169,3
+Profesiones,173,132,2
+"Habilidades secundarias",178,132,1
+"Amor en el aire",187,155,2
+Equipamiento,191,130,4
+Reputación,201,-1,9
+"Reinos del Este",14777,97,1
+Kalimdor,14778,97,2
+Terrallende,14779,97,3
+Rasganorte,14780,97,4
+"Valle de Alterac",14801,95,2
+"Cuenca de Arathi",14802,95,3
+"Ojo de la Tormenta",14803,95,4
+"G. Grito de Guerra",14804,95,5
+"The Burning Crusade",14805,168,2
+"Lich King: Calabozo",14806,168,3
+"Calabozos y bandas",14807,1,6
+"World of Warcraft",14808,168,1
+"World of Warcraft",14821,14807,1
+"The Burning Crusade",14822,14807,2
+"Wrath of the Lich King",14823,14807,3
+"World of Warcraft",14861,96,1
+"The Burning Crusade",14862,96,2
+"Wrath of the Lich King",14863,96,3
+"World of Warcraft",14864,201,1
+"The Burning Crusade",14865,201,2
+"Wrath of the Lich King",14866,201,3
+"Playa de los Ancestros",14881,95,6
+"Conquista del Invierno",14901,95,7
+"Lich King: Heroico",14921,168,4
+"Lich King (10 j.)",14922,168,5
+"Lich King (25 j.)",14923,168,6
+"Torneo Argenta",14941,155,10
+"Ulduar (10 j.)",14961,168,7
+"Ulduar (25 j.)",14962,168,8
+Ulduar,14963,14807,4
+Generosidad,14981,155,8
+"La Llamada (10 j.)",15001,168,9
+"La Llamada (25 j.)",15002,168,10
+"Isla de la Conquista",15003,95,8
+"La Llamada de la Cruzada",15021,14807,5
+"La Caída (10 j.)",15041,168,11
+"La Caída (25 j.)",15042,168,12
+"La caída del Rey Exánime",15062,14807,6
+BCC,15452,-1,3

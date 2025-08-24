@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(255, {	-- The Black Morass
+	inst(255, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Black Morass
 		["lore"] = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2366,	-- The Black Morass
@@ -13,8 +13,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10298, {	-- Hero of the Brood
-					["qg"] = 20201,	-- Sa'at
 					["sourceQuest"] = 10297,	-- The Opening of the Dark Portal
+					["qg"] = 20201,	-- Sa'at
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 25),
 					-- #if BEFORE 4.3.0.14732
@@ -27,8 +27,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				}),
 				q(9837, {	-- Return to Khadgar
-					["qg"] = 15608,	-- Medivh
 					["sourceQuest"] = 9836,	-- The Master's Touch
+					["qg"] = 15608,	-- Medivh
 					["coord"] = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
 					["timeline"] = { REMOVED_7_1_0 },
 					["maps"] = { SHATTRATH_CITY },
@@ -40,30 +40,30 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10296, {	-- The Black Morass
-					["qg"] = 20130,	-- Andormu
 					-- #if BEFORE 4.3.0.14732
 					["sourceQuest"] = 10285,	-- Return to Andormu
 					-- #endif
-					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
+					["qg"] = 20130,	-- Andormu
+					["coord"] = { 41.6, 38.5, CAVERNS_OF_TIME },
 					["lvl"] = lvlsquish(66, 66, 25),
 				}),
 				q(9836, {	-- The Master's Touch
+					["sourceQuest"] = 9832,	-- The Second and Third Fragments
 					["providers"] = {
 						{ "n", 18166 },	-- Khadgar <Sons of Lothar>
 						{ "i", 24489 },	-- Restored Apprentice's Key
 					},
-					["sourceQuest"] = 9832,	-- The Second and Third Fragments
 					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_7_1_0 },
 					["lvl"] = lvlsquish(69, 69, 30),
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
-					["qg"] = 20201,	-- Sa'at
-					-- TODO Confirm if required in classic
 					-- #if ANYCLASSIC
 					["sourceQuest"] = 10296,	-- The Black Morass
 					-- #endif
+					["qg"] = 20201,	-- Sa'at
 					["lvl"] = lvlsquish(66, 66, 25),
+					-- TODO Confirm if required in classic
 					["groups"] = {
 						objective(1, {	-- The Dark Portal Opened
 							["provider"] = { "i", 24289 },	-- Chrono-beacon
@@ -136,14 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						ach(655, {	-- Opening of the Dark Portal
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								9836,	-- The Master's Touch
-								10297,	-- The Opening of the Dark Portal
-							},
-							-- #endif
-						}),
+						ach(655),	-- Opening of the Dark Portal
 						i(28188),	-- Bloodfire Greatstaff
 						i(28189),	-- Latro's Shifting Sword
 						i(28206),	-- Cowl of the Guiltless
@@ -232,9 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(554, {	-- Aeonus
 						["creatureID"] = 17881,
 						["groups"] = {
-							ach(676, {	-- Heroic: Opening of the Dark Portal
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(676),	-- Heroic: Opening of the Dark Portal
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -266,10 +257,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(33858),	-- Aeonus' Hourglass
 						},
 					})
-				}
+				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

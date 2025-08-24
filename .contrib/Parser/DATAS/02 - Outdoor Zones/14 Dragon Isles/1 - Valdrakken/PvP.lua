@@ -8,8 +8,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72723, {	-- A Call to Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
+					["isWeekly"] = true,
 				}),
 				q(71026, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 196191 },	-- Malicia
@@ -25,21 +25,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(75622, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Calling All Competitors!
 					["provider"] = { "i", 205187 },	-- Artisan's Consortium Flier (QI!)
-					["g"] = {
+					["groups"] = {
 						i(204186),	-- Greater Obsidian Trophy of Conquest
 						i(204187),	-- Obsidian Trophy of Conquest
 					},
 				})),
 				q(77681, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {	-- Alerting All Adversaries!
 					["provider"] = { "i", 208571 },	-- Artisan's Consortium Leaflet (QI!)
-					["g"] = {
+					["groups"] = {
 						i(212537),	-- Verdant Trophy of Conquest
 						i(212538),	-- Greater Verdant Trophy of Conquest
 					},
 				})),
 				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Summoning All Soldiers!
 					["provider"] = { "i", 211690 },	-- Artisan's Consortium Brochure (QI!)
-					["g"] = {
+					["groups"] = {
 						i(211685),	-- Draconic Trophy of Conquest
 						i(211686),	-- Greater Draconic Trophy of Conquest
 					},
@@ -50,10 +50,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },
 				["isWeekly"] = true,
 				["timeline"] = { REMOVED_TWW_LAUNCH },
-				["g"] = {
+				["groups"] = {
 					i(206271, {	-- Malicia's Hoard
 						["timeline"] = { ADDED_10_1_0, REMOVED_TWW_LAUNCH },
-						["g"] = {
+						["groups"] = {
 							i(204717),	-- Splintered Spark of Shadowflame
 						},
 					}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 42.2, 40.7, VALDRAKKEN },
 				["isWeekly"] = true,
 				["timeline"] = { REMOVED_TWW_LAUNCH },
-				["g"] = {
+				["groups"] = {
 					currency(2797, {	-- Trophy of Strife
 						["timeline"] = { ADDED_10_2_0 },
 					}),
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						------ Season 1 ------
 						conquest(375, i(205289, {	-- Crimson Equipment Chest
 							["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 },
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(196191, {	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["g"] = sharedData({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 						bloody(100, i(206144)),	-- Curious Primordial Fungus
 						bloody(100, i(206143)),	-- Energized Temporal Spores
 						bloody(100, i(206142)),	-- Gritty Stone Potion
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(197553, {	-- Fieldmaster Emberath
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
-					["g"] = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
 						bloody(750, i(201464)),	-- Flesh Parachute
 						i(198076, {	-- Pest Fogger
@@ -208,11 +208,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(185834, {	-- Orboreal Distinguishment
 							["cost"] = { { "c", HONOR, 2000 } },
 							-- #if BEFORE 11.0.2
-							["g"] = {
+							["groups"] = {
 							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
 							},
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
 							["cost"] = {{"c", HONOR, 5000}},
-							["g"] = {
+							["groups"] = {
 								------ Season 1 ------
 								i(201254, {	-- Cracked Medal of Honor [A]
 									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(213989, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
 						bloody(100, i(206144, {		-- Curious Primordial Fungus
 							["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 },

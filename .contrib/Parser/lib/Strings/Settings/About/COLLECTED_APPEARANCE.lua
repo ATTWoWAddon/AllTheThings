@@ -1,0 +1,20 @@
+createLocalizationString({
+	readable = "[icon:known_circle] Collected*",
+	constant = "COLLECTED_APPEARANCE",
+	icon = [[~_.asset("known_circle")]],
+	color = [[~_.DefaultColors.Completed]],
+	export = true,
+	text = {
+		en = "Collected*",
+		de = "Gesammelt*",
+		es = "Adquirido*",
+		mx = "Coleccionado*",
+		fr = "Collecté*",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		ru = "Собрано*",
+		-- TODO: ko = "",
+		cn = "已收藏*",
+		-- TODO: tw = "",
+	},
+})

@@ -59,6 +59,15 @@ i(0, 446185);		-- Shrieking Spaulders
 i(0, 446190);		-- Wailing Chain Mantle
 -- #endif
 
+------------------
+-- PATCH 1.15.5 --
+------------------
+i(234235, 1213513);	-- Glowing Chitin Armor Kit
+i(234236, 1213519);	-- Sharpened Chitin Armor Kit
+i(234237, 1213521);	-- Razorbramble Cowl
+i(234238, 1213523);	-- Razorbramble Shoulderpads
+i(234239, 1213525);	-- Razorbramble Leathers
+
 -----------------
 --   CLASSIC   --
 -----------------

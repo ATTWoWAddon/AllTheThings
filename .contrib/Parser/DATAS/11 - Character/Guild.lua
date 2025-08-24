@@ -392,7 +392,6 @@ root(ROOTS.Character, n(createHeader({
 				-- #endif
 			},
 		},
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
 		["groups"] = bubbleDownClassicRep(FACTION_GUILD, {
 			{	-- Neutral
 			},

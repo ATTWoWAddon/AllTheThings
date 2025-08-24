@@ -34,7 +34,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			{ 37.4, 77.9, KUN_LAI_SUMMIT },	-- Cave entrance
 			{ 35.2, 76.4, KUN_LAI_SUMMIT },
 		},
-		["g"] = {
+		["groups"] = {
 			i(224003, {	-- Cup of Nearly Infinite Kafa
 				--["questID"] = 31304,
 			}),

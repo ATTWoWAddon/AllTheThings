@@ -1180,183 +1180,443 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(41787),	-- Design: Thundering Skyflare Diamond
 		}),
 		prof(TAILORING, {
-			i(43876, {	-- A Guide to Northern Cloth Scavenging
-				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some point
+			i(43876, {	-- A Guide to Northern Cloth Scavenging (RECIPE!)
+				-- #if NOT ANYCLASSIC
+				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some
+				["collectible"] = false,
+				-- #endif
 			}),
 			-- #if AFTER 8.0.1
 			i(39152),	-- Manual: Heavy Frostweave Bandage (RECIPE!)
 			-- #endif
-			i(42173),	-- Pattern: Blue Lumberjack Shirt
-			i(42176),	-- Pattern: Blue Workman's Shirt
-			i(42175),	-- Pattern: Green Lumberjack Shirt
-			i(42172),	-- Pattern: Red Lumberjack Shirt
-			i(42177),	-- Pattern: Red Workman's Shirt
-			i(42178),	-- Pattern: Rustic Workman's Shirt
+			i(42173),	-- Pattern: Blue Lumberjack Shirt (RECIPE!)
+			i(42176),	-- Pattern: Blue Workman's Shirt (RECIPE!)
+			i(42175),	-- Pattern: Green Lumberjack Shirt (RECIPE!)
+			i(42172),	-- Pattern: Red Lumberjack Shirt (RECIPE!)
+			i(42177),	-- Pattern: Red Workman's Shirt (RECIPE!)
+			i(42178),	-- Pattern: Rustic Workman's Shirt (RECIPE!)
 		}),
 	}),
-	filter(REAGENTS, sharedData({	-- Air
-		["coords"] = {
-			{ 75.0, 54.6, GRIZZLY_HILLS },	-- Dun Argol
-			{ 73.9, 58.6, ZULDRAK },	-- Altar of Quetz'lun
-			{ 67.0, 44.9, THE_STORM_PEAKS },	-- The Howling Hollow
-			{ 28.5, 47.3, THE_STORM_PEAKS },	-- Snowdrift Plains
-			{ 51.1, 77.3, WINTERGRASP },	-- Wintergrasp South
-			{ 27.6, 33.4, SHOLAZAR_BASIN },	-- The Stormwright's Shelf
-			{ 44.9, 8.6, BOREAN_TUNDRA },	-- Ruins of Eldra'nath
-			{ 73.0, 31.8, BOREAN_TUNDRA },	-- Steam Springs
-		},
-		["crs"] = {
-			28784,	-- Altar Warden
-			24879,	-- Arctic Cloud (Gas cloud)
-			25415,	-- Enraged Tempest
-			26407,	-- Lightning Sentry
-			30184,	-- Scion of Storm
-			24601,	-- Steam Rager
-			28858,	-- Storm Revenant
-			29624,	-- Stormrider
-			30875,	-- Tempest Revenant
-			30848,	-- Whispering Wind
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-	}, {
-		i(37700),	-- Crystallized Air
-		i(35623),	-- Eternal Air
-	})),
-	filter(REAGENTS, sharedData({	-- Earth
-		["coords"] = {
-			{ 64.2, 23.3, GRIZZLY_HILLS },	-- Thor Modan
-			{ 15.5, 77.6, ZULDRAK },	-- Ebon Watch, south of.
-			{ 58.5, 45.6, ZULDRAK },	-- Zim'Rhuk
-			{ 70.0, 59.2, THE_STORM_PEAKS },	-- Frostfield Lake
-			{ 56.6, 41.7, WINTERGRASP },	-- Wintergrasp East
-		},
-		["crs"] = {
-			30160,	-- Brittle Revenant
-			30849,	-- Chilled Earth Revenant
-			30876,	-- Earthbound Revenant
-			28597,	-- Guardian of Zim'Rhuk
-			29436,	-- Icetouched Earthrager
-			26284,	-- Runic Battle Golem
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-		["providers"] = {
-			{ "o", 189978 },	-- Cobalt Deposit
-			{ "o", 189979 },	-- Rich Cobalt Deposit
-			{ "o", 189981 },	-- Rich Saronite Deposit
-			{ "o", 189980 },	-- Saronite Deposit
-		},
-	}, {
-		i(37701),	-- Crystallized Earth
-		i(35624),	-- Eternal Earth
-	})),
-	filter(REAGENTS, sharedData({	-- Fire
-		["coords"] = {
-			{ 48.7, 14.4, BOREAN_TUNDRA },	-- Charred Rise
-			{ 84.0, 71.5, WINTERGRASP },	-- The Cauldron of Flames
-			{ 62.5, 41.5, THE_STORM_PEAKS },	-- Frostfloe Deep
-			{ 75.5, 63.2, THE_STORM_PEAKS },	-- Fjorn's Anvil
-		},
-		["crs"] = {
-			32522,	-- Cinder Cloud (Gas cloud)
-			30873,	-- Flame Revenant
-			25417,	-- Raging Boiler
-			30847,	-- Raging Flame
-			30387,	-- Seething Revenant
-			32544,	-- Steam Cloud (Gas cloud)
-			30450,	-- Wailing Winds
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-	}, {
-		i(37702),	-- Crystallized Fire
-		i(36860),	-- Eternal Fire
-	})),
-	filter(REAGENTS, sharedData({	-- Life
-		["coords"] = {
-			{ 54.0, 17.6, HOWLING_FJORD },	-- The Twisted Glade
-			{ 44.0, 59.3, ZULDRAK },	-- Drak'Agal
-			{ 9.5, 61.6, WINTERGRASP },	-- The Steppe of Life
-			{ 48.9, 54.0, SHOLAZAR_BASIN },	-- River's Heart, north of.
-			{ 44.3, 69.9, SHOLAZAR_BASIN },	-- River's Heart, southwest of.
-		},
-		["crs"] = {
-			30845,	-- Living Lasher
-			34300,	-- Mature Lasher
-			28323,	-- Mossy Rampager
-			29036,	-- Servant of Freya
-			23874,	-- Thornwine Creeper
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-		["providers"] = {
-			{ "o", 191019 },	-- Adder's Tongue
-			{ "o", 191303 },	-- Firethorn
-			{ "o", 189973 },	-- Goldclover
-			{ "o", 190172 },	-- Icethorn
-			{ "o", 190171 },	-- Lichbloom
-			{ "o", 190170 },	-- Talandra's Rose
-			{ "o", 190169 },	-- Tiger Lily
-		},
-	}, {
-		i(37704),	-- Crystallized Life
-		i(35625),	-- Eternal Life
-	})),
-	filter(REAGENTS, sharedData({	-- Shadow
-		["coords"] = {
-			{ 74.6, 23.2, DRAGONBLIGHT },	-- Frostmourne Cavern
-			{ 18.0, 56.0, WINTERGRASP },	-- The Forest of Shadows
-		},
-		["crs"] = {
-			27382,	-- Deathbringer Revenant
-			30872,	-- Shadow Revenant
-			30842,	-- Wandering Shadow
-		},
-		["providers"] = {
-			{ "o", 189981 },	-- Rich Saronite Deposit
-			{ "o", 189980 },	-- Saronite Deposit
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-	}, {
-		i(37703),	-- Crystallized Shadow
-		i(35627),	-- Eternal Shadow
-	})),
-	filter(REAGENTS, sharedData({	-- Water
-		["coords"] = {
-			{ 27.6, 33.4, SHOLAZAR_BASIN },	-- The Stormwright's Shelf
-			{ 46.3, 13.4, BOREAN_TUNDRA },	-- Blistering Pool
-			{ 49.6, 54.6, WINTERGRASP },	-- Wintergrasp
-			{ 9.6, 56.8, DRAGONBLIGHT },	-- Coldwind Pass
-			{ 40.1, 67.7, DRAGONBLIGHT },	-- Lake Indu'le
-			{ 53.1, 20.0, DRAGONBLIGHT },	-- Coldwind Heights
-			{ 67.3, 53.4, DRAGONBLIGHT },	-- The Mirror of Dawn
-			{ 41.7, 62.2, THE_STORM_PEAKS },	-- The Frigid Tomb
-			{ 42.0, 78.0, ZULDRAK },	-- Drak'Sotra Fields
-			{ 54.0, 50.3, ZULDRAK },	-- Drak'Mabwa
-			{ 65.3, 69.1, GRIZZLY_HILLS },	-- The Forgotten Overlook
-			{ 61.3, 23.0, HOWLING_FJORD },	-- The Frozen Glade
-		},
-		["crs"] = {
-			28862,	-- Aquerous Spirit
-			24879,	-- Arctic Cloud (Gas cloud)
-			25419,	-- Boiling Spirit
-			21223,	-- Corrupted Rager
-			16570,	-- Crazed Water Spirit
-			26316,	-- Crystalline Ice Elemental
-			28411,	-- Frozen Earth
-			25715,	-- Frozen Element
-			30846,	-- Glacial Spirit
-			23919,	-- Ice Elemental
-			26283,	-- Ice Revenant
-			29844,	-- Icebound Revenant
-			24228,	-- Iceshard Elemental
-			32544,	-- Steam Cloud (Gas cloud)
-			30877,	-- Water Revenant
-		},
-		["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
-		["providers"] = {
-			{ "o", 189978 },	-- Cobalt Deposit
-			{ "o", 189979 },	-- Rich Cobalt Deposit
-		},
-	}, {
-		i(37705),	-- Crystallized Water
-		i(35622),	-- Eternal Water
-	})),
+	filter(REAGENTS, {
+		["groups"] = appendAllGroups(
+			-- Table of Content:
+			--	Cloth + Silk
+			--	Elemetal reagents
+			--	Clams
+			--	Cooking reagents
+			--	Other reagents
+			--_________________________________
+			--
+			--	Cloth + Silk:
+			{
+				i(33470, {
+					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
+				}),
+				i(42253, {	-- Iceweb Silk
+					["coords"] = {
+						{ 40.4, 78.0, THE_STORM_PEAKS },	-- Crystalweb Cavern
+						{ 37.0, 56.2, ZULDRAK },	-- Heb'Valok
+						{ 47.6, 83.1, ZULDRAK },	-- Drak'Sotra Fields, southeast of.
+					},
+					["crs"] = {
+						15975,	-- Carrion Spinner
+						29412,	-- Crystalweb Splitter
+						29411,	-- Crystalweb Weaver
+						15974,	-- Dread Creeper
+						29461,	-- Icetip Crawler
+						28342,	-- Trapdoor Ambusher
+						28221,	-- Trapdoor Crawler
+						15976,	-- Venom Stalker
+					},
+					["maps"] = { NAXXRAMAS },
+				}),
+			},
+			--_________________________________
+			--
+			--	Elemental reagents:
+			sharedData({	-- Air
+				["coords"] = {
+					{ 75.0, 54.6, GRIZZLY_HILLS },	-- Dun Argol
+					{ 73.9, 58.6, ZULDRAK },	-- Altar of Quetz'lun
+					{ 67.0, 44.9, THE_STORM_PEAKS },	-- The Howling Hollow
+					{ 28.5, 47.3, THE_STORM_PEAKS },	-- Snowdrift Plains
+					{ 51.1, 77.3, WINTERGRASP },	-- Wintergrasp South
+					{ 27.6, 33.4, SHOLAZAR_BASIN },	-- The Stormwright's Shelf
+					{ 44.9, 8.6, BOREAN_TUNDRA },	-- Ruins of Eldra'nath
+					{ 73.0, 31.8, BOREAN_TUNDRA },	-- Steam Springs
+				},
+				["crs"] = {
+					28784,	-- Altar Warden
+					24879,	-- Arctic Cloud (Gas cloud)
+					25415,	-- Enraged Tempest
+					26407,	-- Lightning Sentry
+					30184,	-- Scion of Storm
+					24601,	-- Steam Rager
+					28858,	-- Storm Revenant
+					29624,	-- Stormrider
+					30875,	-- Tempest Revenant
+					30848,	-- Whispering Wind
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+			}, {
+				i(37700),	-- Crystallized Air
+				i(35623),	-- Eternal Air
+			}),
+			sharedData({	-- Earth
+				["coords"] = {
+					{ 64.2, 23.3, GRIZZLY_HILLS },	-- Thor Modan
+					{ 15.5, 77.6, ZULDRAK },	-- Ebon Watch, south of.
+					{ 58.5, 45.6, ZULDRAK },	-- Zim'Rhuk
+					{ 70.0, 59.2, THE_STORM_PEAKS },	-- Frostfield Lake
+					{ 56.6, 41.7, WINTERGRASP },	-- Wintergrasp East
+				},
+				["crs"] = {
+					30160,	-- Brittle Revenant
+					30849,	-- Chilled Earth Revenant
+					30876,	-- Earthbound Revenant
+					28597,	-- Guardian of Zim'Rhuk
+					29436,	-- Icetouched Earthrager
+					26284,	-- Runic Battle Golem
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["providers"] = {
+					{ "o", 189978 },	-- Cobalt Deposit
+					{ "o", 189979 },	-- Rich Cobalt Deposit
+					{ "o", 189981 },	-- Rich Saronite Deposit
+					{ "o", 189980 },	-- Saronite Deposit
+				},
+			}, {
+				i(37701),	-- Crystallized Earth
+				i(35624),	-- Eternal Earth
+			}),
+			sharedData({	-- Fire
+				["coords"] = {
+					{ 48.7, 14.4, BOREAN_TUNDRA },	-- Charred Rise
+					{ 84.0, 71.5, WINTERGRASP },	-- The Cauldron of Flames
+					{ 62.5, 41.5, THE_STORM_PEAKS },	-- Frostfloe Deep
+					{ 75.5, 63.2, THE_STORM_PEAKS },	-- Fjorn's Anvil
+				},
+				["crs"] = {
+					32522,	-- Cinder Cloud (Gas cloud)
+					30873,	-- Flame Revenant
+					25417,	-- Raging Boiler
+					30847,	-- Raging Flame
+					30387,	-- Seething Revenant
+					32544,	-- Steam Cloud (Gas cloud)
+					30450,	-- Wailing Winds
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+			}, {
+				i(37702),	-- Crystallized Fire
+				i(36860),	-- Eternal Fire
+			}),
+			sharedData({	-- Life
+				["coords"] = {
+					{ 54.0, 17.6, HOWLING_FJORD },	-- The Twisted Glade
+					{ 44.0, 59.3, ZULDRAK },	-- Drak'Agal
+					{ 9.5, 61.6, WINTERGRASP },	-- The Steppe of Life
+					{ 48.9, 54.0, SHOLAZAR_BASIN },	-- River's Heart, north of.
+					{ 44.3, 69.9, SHOLAZAR_BASIN },	-- River's Heart, southwest of.
+				},
+				["crs"] = {
+					30845,	-- Living Lasher
+					34300,	-- Mature Lasher
+					28323,	-- Mossy Rampager
+					29036,	-- Servant of Freya
+					23874,	-- Thornwine Creeper
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["providers"] = {
+					{ "o", 191019 },	-- Adder's Tongue
+					{ "o", 191303 },	-- Firethorn
+					{ "o", 189973 },	-- Goldclover
+					{ "o", 190172 },	-- Icethorn
+					{ "o", 190171 },	-- Lichbloom
+					{ "o", 190170 },	-- Talandra's Rose
+					{ "o", 190169 },	-- Tiger Lily
+				},
+			}, {
+				i(37704),	-- Crystallized Life
+				i(35625),	-- Eternal Life
+			}),
+			sharedData({	-- Shadow
+				["coords"] = {
+					{ 74.6, 23.2, DRAGONBLIGHT },	-- Frostmourne Cavern
+					{ 18.0, 56.0, WINTERGRASP },	-- The Forest of Shadows
+				},
+				["crs"] = {
+					27382,	-- Deathbringer Revenant
+					30872,	-- Shadow Revenant
+					30842,	-- Wandering Shadow
+				},
+				["providers"] = {
+					{ "o", 189981 },	-- Rich Saronite Deposit
+					{ "o", 189980 },	-- Saronite Deposit
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+			}, {
+				i(37703),	-- Crystallized Shadow
+				i(35627),	-- Eternal Shadow
+			}),
+			sharedData({	-- Water
+				["coords"] = {
+					{ 27.6, 33.4, SHOLAZAR_BASIN },	-- The Stormwright's Shelf
+					{ 46.3, 13.4, BOREAN_TUNDRA },	-- Blistering Pool
+					{ 49.6, 54.6, WINTERGRASP },	-- Wintergrasp
+					{ 9.6, 56.8, DRAGONBLIGHT },	-- Coldwind Pass
+					{ 40.1, 67.7, DRAGONBLIGHT },	-- Lake Indu'le
+					{ 53.1, 20.0, DRAGONBLIGHT },	-- Coldwind Heights
+					{ 67.3, 53.4, DRAGONBLIGHT },	-- The Mirror of Dawn
+					{ 41.7, 62.2, THE_STORM_PEAKS },	-- The Frigid Tomb
+					{ 42.0, 78.0, ZULDRAK },	-- Drak'Sotra Fields
+					{ 54.0, 50.3, ZULDRAK },	-- Drak'Mabwa
+					{ 65.3, 69.1, GRIZZLY_HILLS },	-- The Forgotten Overlook
+					{ 61.3, 23.0, HOWLING_FJORD },	-- The Frozen Glade
+				},
+				["crs"] = {
+					28862,	-- Aquerous Spirit
+					24879,	-- Arctic Cloud (Gas cloud)
+					25419,	-- Boiling Spirit
+					21223,	-- Corrupted Rager
+					16570,	-- Crazed Water Spirit
+					26316,	-- Crystalline Ice Elemental
+					28411,	-- Frozen Earth
+					25715,	-- Frozen Element
+					30846,	-- Glacial Spirit
+					23919,	-- Ice Elemental
+					26283,	-- Ice Revenant
+					29844,	-- Icebound Revenant
+					24228,	-- Iceshard Elemental
+					32544,	-- Steam Cloud (Gas cloud)
+					30877,	-- Water Revenant
+				},
+				["description"] = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
+				["providers"] = {
+					{ "o", 189978 },	-- Cobalt Deposit
+					{ "o", 189979 },	-- Rich Cobalt Deposit
+				},
+			}, {
+				i(37705),	-- Crystallized Water
+				i(35622),	-- Eternal Water
+			}),
+			{
+			--_________________________________
+			--
+			--	Clams:
+				i(44700, {	-- Brooding Darkwater Clam
+					["coords"] = {
+						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
+						{ 66.6, 40.7, BOREAN_TUNDRA },	-- The Flood Plain, west
+						{ 72.2, 44.5, BOREAN_TUNDRA },	-- The Flood Plain, central
+						{ 79.0, 41.8, BOREAN_TUNDRA },	-- The Flood Plain, east
+						{ 79.6, 31.9, BOREAN_TUNDRA },	-- The Flood Plain, northeast
+						{ 40.2, 19.2, BOREAN_TUNDRA },	-- Winterfin Village
+						{ 21.3, 28.8, HOWLING_FJORD },	-- Onslaught Harbour
+						{ 8.2, 40.5, ICECROWN },	-- Onslaught Harbour
+						{ 44.5, 36.6, SHOLAZAR_BASIN },	-- Mistwhisper Refuge
+						{ 32.8, 74.9, SHOLAZAR_BASIN },	-- Sparktouched Haven
+					},
+					["crs"] = {
+						25686,	-- Gorloc Gibberer
+						25699,	-- Gorloc Mud Splasher
+						25687,	-- Gorloc Steam Belcher
+						25685,	-- Gorloc Waddler
+						28110,	-- Mistwhisper Oracle
+						28109,	-- Mistwhisper Warrior
+						23645,	-- Mur'ghoul Corrupter
+						23644,	-- Mur'ghoul Flesheater
+						29392,	-- Ravenous Jaws
+						28112,	-- Sparktouched Oracle
+						28111,	-- Sparktouched Warrior
+						25216,	-- Winterfin Oracle
+						25215,	-- Winterfin Shorestriker
+						25217,	-- Winterfin Warrior
+					},
+					["description"] = "Is a rare drop from water creatures like murlocs and whales, and have a high chance of containing pearls. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					["groups"] = {
+						i(36782),	-- Succulent Clam Meat
+						i(36783),	-- Northsea Pearl
+						i(36784),	-- Siren's Tear
+					},
+				}),
+				i(36781, {	-- Darkwater Clam
+					["coords"] = {
+						{ 60.9, 50.6, BOREAN_TUNDRA },	-- The Flood Plain, southwest
+						{ 66.6, 40.7, BOREAN_TUNDRA },	-- The Flood Plain, west
+						{ 72.2, 44.5, BOREAN_TUNDRA },	-- The Flood Plain, central
+						{ 79.0, 41.8, BOREAN_TUNDRA },	-- The Flood Plain, east
+						{ 79.6, 31.9, BOREAN_TUNDRA },	-- The Flood Plain, northeast
+						{ 40.2, 19.2, BOREAN_TUNDRA },	-- Winterfin Village
+						{ 21.3, 28.8, HOWLING_FJORD },	-- Onslaught Harbour
+						{ 8.2, 40.5, ICECROWN },	-- Onslaught Harbour
+						{ 44.5, 36.6, SHOLAZAR_BASIN },	-- Mistwhisper Refuge
+						{ 32.8, 74.9, SHOLAZAR_BASIN },	-- Sparktouched Haven
+					},
+					["crs"] = {
+						25686,	-- Gorloc Gibberer
+						25699,	-- Gorloc Mud Splasher
+						25687,	-- Gorloc Steam Belcher
+						25685,	-- Gorloc Waddler
+						28110,	-- Mistwhisper Oracle
+						28109,	-- Mistwhisper Warrior
+						23645,	-- Mur'ghoul Corrupter
+						23644,	-- Mur'ghoul Flesheater
+						29392,	-- Ravenous Jaws
+						28112,	-- Sparktouched Oracle
+						28111,	-- Sparktouched Warrior
+						25216,	-- Winterfin Oracle
+						25215,	-- Winterfin Shorestriker
+						25217,	-- Winterfin Warrior
+					},
+					["description"] = "Is a common drop from water creatures like murlocs and whales. Coordinates in Scholazar Basin can be disregarded for players aligned with The Oracles.",
+					["groups"] = {
+						i(36782),	-- Succulent Clam Meat
+						i(36783),	-- Northsea Pearl
+						i(36784),	-- Siren's Tear
+					},
+				}),
+				-- i(45909),	-- Giant Darkwater Clam > Properly sourced in Crafted Items/Fishing.
+			--_________________________________
+			--
+			--	Cooking reagents:
+				i(43013, {	-- Chilled Meat
+					["description"] = "Can drop from any Northrend beasts.",
+				}),
+				i(34736, {	-- Chunk o' Mammoth
+					["coords"] = {
+						{ 82.2, 31.3, BOREAN_TUNDRA },	-- Transborea
+						{ 55.6, 31.9, BOREAN_TUNDRA },	-- Coldrock Quarry, east of.
+						{ 65.5, 38.1, DRAGONBLIGHT },	-- The Dragon Wastes
+						{ 52.0, 42.3, SHOLAZAR_BASIN },	-- THe Glimmering Pillar, southeast of.
+						{ 64.5, 45.25, THE_STORM_PEAKS },	-- Plain of Echoes
+						{ 58.0, 62.0, THE_STORM_PEAKS },	-- Valley of Ancient Winters
+						{ 34.7, 84.9, THE_STORM_PEAKS },	-- Snowblind Hills
+					},
+					["crs"] = {
+						26272,	-- Emaciated Mammoth
+						26271,	-- Emaciated Mammoth Bull
+						26273,	-- Emaciated Mammoth Calf
+						29402,	-- Ironwool Mammoth
+						24613,	-- Mammoth Calf
+						30448,	-- Plains Mammoth
+						25452,	-- Scourged Mammoth
+						28380,	-- Shattertusk Bull
+						28381,	-- Shattertusk Calf
+						28379,	-- Shattertusk Mammoth
+						30260,	-- Stoic Mammoth
+						24614,	-- Wooly Mammoth
+						25743,	-- Wooly Mammoth Bull
+					},
+				}),
+				i(43501, {	-- Northern Egg
+					["coords"] = {
+						{ 59.0, 26.3, BOREAN_TUNDRA },	-- Scalding Pools
+						{ 82.9, 36.4, BOREAN_TUNDRA },	-- Transborea
+						{ 37.9, 60.6, GRIZZLY_HILLS },	-- Amberpine Lodge, east of.
+						{ 58.3, 28.1, SHOLAZAR_BASIN },	-- The Bonefields
+						{ 17.1, 58.5, ZULDRAK },	-- Thrym's End
+					},
+					["crs"] = {
+						26483,	-- Carrion Condor
+						26174,	-- Dragonbone Condor
+						27244,	-- Emerald Skytalon
+						29044,	-- Goretalon Matriarch
+						28004,	-- Goretalon Roc
+						26369,	-- Imperial Eagle
+						25748,	-- Oil-covered Hawk
+						25817,	-- Oiled Fledgeling
+						29453,	-- Vargul Plaguetalon
+					},
+					["maps"] = { DRAGONBLIGHT },
+				}),
+				i(43012, {	-- Rhino Meat
+					["coords"] = {
+						{ 44.7, 42.4, BOREAN_TUNDRA },	-- Amber Ledge, south of.
+						{ 46.2, 72.7, BOREAN_TUNDRA },	-- Riplash Strand, north of.
+						{ 26.7, 51.7, SHOLAZAR_BASIN },	-- The Suntouched Pillar, west of.
+						{ 43.4, 58.6, THE_STORM_PEAKS },	-- The Foot Steppes
+						{ 65.0, 43.0, THE_STORM_PEAKS },	-- Plain of Echoes
+					},
+					["crs"] = {
+						30445,	-- Ice Steppe Bull
+						29469,	-- Ice Steppe Rhino
+						30447,	-- Rhomping Rhino
+						28009,	-- Shardhorn Rhino
+						25489,	-- Whooly Rhino Bull
+						25488,	-- Whooly Rhino Calf
+						25487,	-- Whooly Rhino Matriarch
+					},
+				}),
+				i(43009, {	-- Shoveltusk Flank
+					["crs"] = {
+						24681,	-- Island Shoveltusk
+						23690,	-- Shoveltusk
+						24791,	-- Shoveltusk Calf
+						29479,	-- Shoveltusk Forager
+						23691,	-- Shoveltusk Stag
+						29486,	-- Tamed Shoveltusk
+						29487,	-- Wild Shoveltusk
+					},
+					["maps"] = { HOWLING_FJORD },
+				}),
+				-- i(36782),	-- Succulent Clam Meat > Properly sourced under Clams listed above.
+				i(43011, {	-- Worg Haunch
+					["coords"] = {
+						{ 39.5, 71.8, BOREAN_TUNDRA },	-- Bloodspore Plains
+						{ 48.7, 47.8, BOREAN_TUNDRA },	-- Warsong Hold, northeast of.
+						{ 73.3, 32.9, GRIZZLY_HILLS },	-- Harkor's Camp, north of.
+						{ 24.6, 50.3, GRIZZLY_HILLS },	-- Vordrassil's Tears, southwest of.
+						{ 28.6, 6.3, GRIZZLY_HILLS },	-- Rivenwood
+						{ 32.9, 3.55, HOWLING_FJORD },	-- Steel Gate, south of.
+						{ 74.8, 33.4, HOWLING_FJORD },	-- Bleeding Vale
+						{ 47.1, 54.9, THE_STORM_PEAKS },	-- Gimorek's Den
+					},
+					["crs"] = {
+						30164,	-- Cavedweller Wolf
+						27408,	-- Duskhowl Prowler
+						24026,	-- Fanggore Wolf
+						26592,	-- Greymist Hunter
+						25675,	-- Tundra Wolf
+						24517,	-- Varg
+						24128,	-- Wild Worg
+					},
+				}),
+				i(43010, {	-- Worm Meat
+					["coords"] = {
+						{ 82.2, 31.3, BOREAN_TUNDRA },	-- Transborea
+						{ 57.3, 12.3, DRAGONBLIGHT },	-- The Crystal Vice
+						{ 51.3, 23.9, DRAGONBLIGHT },	-- The Dragon Wastes
+						{ 55.9, 64.2, THE_STORM_PEAKS },	-- Hibernal Cavern
+						{ 47.1, 54.9, THE_STORM_PEAKS },	-- Gimorek's Den
+						{ 27.6, 46.7, THE_STORM_PEAKS },	-- Snowdrift Plains
+					},
+					["crs"] = {
+						26293,	-- Hulking Jormungar
+						26358,	-- Ice Heart Jormungar Feeder
+						26359,	-- Ice Heart Jormungar Spawn
+						30148,	-- Infesting Jormungar
+						26467,	-- Jormungar Tunneler
+						30291,	-- Ravenous Jormungar
+						30422,	-- Roaming Jormungar
+						29390,	-- Snowdrift Jormungar
+						25454,	-- Tundra Crawler
+					},
+				}),
+			--__________________________________
+			--
+			-- Other reagents:
+				i(47556, {	-- Crusader Orb
+					["description"] = "Is a common drop from Trial of the Crusader bosses.",
+					["timeline"] = { ADDED_3_2_0 },
+				}),
+				i(43102, {	-- Frozen Orb
+					["description"] = "Is a guarranteed drop from WotLK Heroic dungeon end bosses.",
+				}),
+				i(45087, {	-- Runed Orb
+					["description"] = "Is a common drop from Ulduar bosses.",
+					["timeline"] = { ADDED_3_1_0 },
+				}),
+			}
+		),
+	})
 })));

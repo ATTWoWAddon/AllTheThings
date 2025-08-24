@@ -9,7 +9,7 @@ root(ROOTS.Craftables, {
 			q(31752, {	-- Blingtron 4000
 				["qg"] = 43929,	-- Blingtron 4000
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(86623, {	-- Blingtron 4000 Gift Package
 						["sym"] = {{"select","itemID",
 							87250,	-- Depleted-Kyparium Rocket (MOUNT!)
@@ -22,7 +22,7 @@ root(ROOTS.Craftables, {
 							11825,	-- Pet Bombling (PET!)
 							21277,	-- Tranquil Mechanical Yeti (PET!)
 						}},
-						["g"] = {
+						["groups"] = {
 							i(103670),	-- Lil' Bling (PET!)
 							i(90561, {	-- Eternium Rose
 								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
@@ -41,17 +41,25 @@ root(ROOTS.Craftables, {
 			q(34774, {	-- Blingtron 5000
 				["qg"] = 77789,	-- Blingtron 5000
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
+					ach(9071, {	-- Inspector Gadgetzan (automated)
+						["_doautomation"] = true,	-- otherwise ignored from quest parent
+					}),
 					i(113258, {	-- Blingtron 5000 Gift Package
 						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
-						["g"] = {
-							ach(9071, {		-- Inspector Gagetzan
-								["provider"] = { "i", 114002 },	-- Encoded Message
-								["sym"] = {{ "achievement_criteria" }},
-							}),
+						["groups"] = {
 							i(115483),	-- Sky-Bo (PET!)
 							i(123851),	-- Photo B.O.M.B. (TOY!)
-							i(114002),	-- Encoded Message
+							i(114002, {	-- Encoded Message
+								i(113994),	-- Decoded Message 001-003
+								i(113995),	-- Decoded Message 001-014
+								i(113996),	-- Decoded Message 001-107
+								i(113997),	-- Decoded Message 001-111
+								i(113998),	-- Decoded Message 001-119
+								i(113999),	-- Decoded Message 001-150
+								i(114000),	-- Decoded Message 001-159
+								i(114001),	-- Decoded Message 001-168
+							}),
 						},
 					}),
 				},
@@ -63,7 +71,7 @@ root(ROOTS.Craftables, {
 			q(40753, {	-- Blingtron 6000
 				["qg"] = 101527,	-- Blingtron 6000
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(132892, {	-- Blingtron 6000 Gift Package
 						["sym"] = {{"select","itemID",113258},{"pop"},	-- Blingtron 5000 Gift Package
 							{"select","itemID",
@@ -72,7 +80,7 @@ root(ROOTS.Craftables, {
 								136629,	-- Felgibber Shotgun
 								136632,	-- Chaos Blaster
 						}},
-						["g"] = {
+						["groups"] = {
 							i(136911),	-- Knockoff Blingtron -- https://www.wowhead.com/item=168740/blingtron-7000-gift-package#comments:id=3210510
 						},
 					}),
@@ -85,10 +93,10 @@ root(ROOTS.Craftables, {
 			q(56042, {	-- Blingtron 7000
 				["qg"] = 153897,	-- Blingtron 7000
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168740, {	-- Blingtron 7000 Gift Package
 						["sym"] = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
-						["g"] = {
+						["groups"] = {
 							-- TODO does the 7000 have any special unique drop?
 						},
 					}),

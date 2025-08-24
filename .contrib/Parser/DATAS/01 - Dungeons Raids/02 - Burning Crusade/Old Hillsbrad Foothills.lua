@@ -18,14 +18,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10284, {	-- Escape from Durnholde
-					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 10283,	-- Taretha's Diversion
+					["qg"] = 17876,	-- Thrall
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(29599, {	-- Escape from Durnholde
-					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 29598,	-- Taretha's Diversion
+					["qg"] = 17876,	-- Thrall
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
@@ -39,14 +39,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 28126,	-- Don Carlos
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.7, 27.5, TANARIS },
+						{ 50.8, 27.5, TANARIS },
 						-- #else
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					["lvl"] = lvlsquish(66, 66, 15),
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -63,9 +63,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
 					["lvl"] = lvlsquish(66, 66, 15),
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -74,11 +74,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10282, {	-- Old Hillsbrad
-					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["sourceQuest"] = 10277,	-- The Caverns of Time
+					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.8, 38.4, CAVERNS_OF_TIME },
+						{ 41.6, 38.5, CAVERNS_OF_TIME },
 						-- #else
 						{ 58.4, 54.3, TANARIS },
 						-- #endif
@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(10283, {	-- Taretha's Diversion
-					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10282,	-- Old Hillsbrad
+					["qg"] = 18723,	-- Erozion
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
@@ -107,8 +107,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10285, {	-- Return to Andormu
-					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
+					["qg"] = 18723,	-- Erozion
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(28132, {	-- Don Carlos
-					["description"] = "This is a neutral mob that wanders the road.",
+					["description"] = "This is a neutral Elite Creature that wanders the road.",
 					["groups"] = {
 						i(38329),	-- Don Carlos' Hat
 					},
@@ -190,11 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(540, {	-- Epoch Hunter
 					["creatureID"] = 18096,
 					["groups"] = {
-						ach(652, {	-- The Escape From Durnholde
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10284,	-- Escape from Durnholde
-							-- #endif
-						}),
+						ach(652),	-- The Escape From Durnholde
 						-- #if AFTER 7.3.5
 						i(28222),	-- Reaver of the Infinites
 						-- #endif
@@ -255,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(28132, {	-- Don Carlos
-						["description"] = "This is a neutral mob that wanders the road.",
+						["description"] = "This is a neutral Elite Creature that wanders the road.",
 						["groups"] = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -314,9 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(540, {	-- Epoch Hunter
 						["creatureID"] = 18096,
 						["groups"] = {
-							ach(673, {	-- Heroic: The Escape From Durnholde
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(673),	-- Heroic: The Escape From Durnholde
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -354,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(33847),	-- Epoch Hunter's Head
 						},
 					}),
-				}
+				},
 			}),
 		},
 	})),

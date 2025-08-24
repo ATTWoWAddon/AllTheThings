@@ -12,10 +12,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12944, {	-- Adventurer of Zuldazar
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			explorationAch(12559),	-- Explore Zuldazar
+			ach(12559),	-- Explore Zuldazar
 			ach(13542, {	-- How to Train your Direhorn
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(45147, {	-- Naptime
 						["sourceQuests"] = { 47310 },	-- Naptime
 					}),
@@ -36,11 +36,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(13573, {	-- How to Ptrain Your Pterrordax
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
-				["g"] = {
+				["groups"] = {
 					crit(45335),	-- Just Ptrust Me On This
 					ach(13030, {	-- How to Ptrain Your Pterrordax
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(41773, {	-- Nature Versus Nurture
 								["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
 								["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",

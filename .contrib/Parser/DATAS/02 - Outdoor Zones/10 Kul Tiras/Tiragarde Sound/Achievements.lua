@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(ACHIEVEMENTS, {
 			ach(12473, {	-- A Sound Plan
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(39984, {	-- The Ashvane Trading Company
 						["sourceQuests"] = { 50531 },	-- Under Their Noses
 					}),
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 			}),
-			explorationAch(12556),	-- Explore Tiragarde Sound
+			ach(12556),	-- Explore Tiragarde Sound
 			a(ach(13060, {	-- Kul Runnings
 				crit(41764, {		-- Sliding with Style
 					["_quests"] = { 49994 },	-- Sliding with Style

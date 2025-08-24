@@ -1,19 +1,19 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(TREASURES, {
-				o(469858, {	-- Shiny Trash Can
-					-- entire map, basically
-					-- trash items, crystals, valorstones
-					--currency(3226), 	-- Market Research
-				}),
-				o(469857, {	-- Overflowing Dumpster
-					-- entire map
-					--currency(3226), 	-- Market Research
-					i(234741),	-- Miscellaneous Mechanica
-				}),
+			o(469858, {	-- Shiny Trash Can
+				-- entire map, basically
+				-- trash items, crystals, valorstones
+				--currency(3226), 	-- Market Research
+			}),
+			o(469857, {	-- Overflowing Dumpster
+				-- entire map
+				--currency(3226), 	-- Market Research
+				i(234741),	-- Miscellaneous Mechanica
+			}),
 			--
 			o(502908, {	-- A Threatening Letter
 				["coord"] = { 27.3, 70.6, UNDERMINE },
@@ -28,19 +28,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["description"] = "Turn the nearby valve to spew the dice onto the walkway.",
 				["coord"] = { 39.0, 59.6, UNDERMINE },
 				["questID"] = 85814,
-				["g"] = {
+				["groups"] = {
 					i(235255),	-- Durable Dice
 				},
 			}),
 			o(504096, {	-- Crumpled Schematics
 				["coord"] = { 42.3, 82.2, UNDERMINE },
 				["questID"] = 86487,
-				["g"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine
+				["groups"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine (CI!)
 			}),
 			o(493305, {	-- Exploded Plunger
 				["coord"] = { 49.6, 90.2, UNDERMINE },
 				["questID"] = 85698,
-				["g"] = {
+				["groups"] = {
 					i(235238),	-- Exploded Plunger
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 233720 },	-- vignette
 				["coord"] = { 55.9, 51.7, UNDERMINE },
 				["questID"] = 85856,
-				["g"] = {
+				["groups"] = {
 					q(85838, {
 						["name"] = "Original spot",
 						["coord"] = { 57.9, 52.9, UNDERMINE },
@@ -81,10 +81,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 49.7, 90.2, UNDERMINE },
 				["questID"] = 85694,
 			}),
+			i(236961, {	-- Inoperative Gorillion (QS!)
+				["cost"] = {
+					{ "i", 234431, 1 },	-- Gorillion Batteries
+					{ "i", 234433, 1 },	-- Gorillion Chasis
+					{ "i", 234432, 1 },	-- Gorillion Engine
+					{ "i", 234427, 1 },	-- Gorillion Fork
+					{ "i", 234430, 1 },	-- Gorillion Grease
+				},
+			}),
 			o(499119, {	-- Lonely Tub
 				["coord"] = { 59.3, 19.0, UNDERMINE },
 				["questID"] = 85860,
-				["g"] = {
+				["groups"] = {
 					q(85858, {
 						["name"] = "Use nearby fire extinguisher on the Lonely Tub.",
 						["coord"] = { 58.8, 18.0, UNDERMINE },
@@ -95,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(477373, {	-- Marooned Floatmingo
 				["coord"] = { 63.8, 32.2, UNDERMINE },
 				["questID"] = 85494,
-				["g"] = {
+				["groups"] = {
 					i(235273),	-- Distracting Floatmingo
 				},
 			}),
@@ -106,56 +115,56 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(474398, {	-- Muff's Auto-Locker
 				["coord"] = { 34.3, 82.7, UNDERMINE },
 				["questID"] = 85117,
-				["g"] = {
+				["groups"] = {
 					i(234433),	-- Gorillion Chasis
 				},
 			}),
 			o(474393, {	-- Muff's Auto-Locker
 				["coord"] = { 71.3, 85.7, UNDERMINE },
 				["questID"] = 85114,
-				["g"] = {
+				["groups"] = {
 					i(234430),	-- Gorillion Grease
 				},
 			}),
 			o(474397, {	-- Muff's Auto-Locker
 				["coord"] = { 56.6, 55.3, UNDERMINE },
 				["questID"] = 85116,
-				["g"] = {
+				["groups"] = {
 					i(234432),	-- Gorillion Engine
 				},
 			}),
 			o(467468, {	-- Muff's Auto-Locker
 				["coord"] = { 23.8, 45.4, UNDERMINE },
 				["questID"] = 85072,
-				["g"] = {
+				["groups"] = {
 					i(234427),	-- Gorillion Fork
 				},
 			}),
 			o(474396, {	-- Muff's Atuo-Locker
 				["coord"] = { 75.1, 23.0, UNDERMINE },
 				["questID"] = 85115,
-				["g"] = {
+				["groups"] = {
 					i(234431),	-- Gorillion Batteries
 				},
 			}),
 			o(476068, {	-- Papa's Prized Putter
 				["coord"] = { 74.6, 79.9, UNDERMINE },
 				["questID"] = 85424,
-				["g"] = {
+				["groups"] = {
 					i(234821),	-- Papa's Prized Putter
 				},
 			}),
 			o(477363, {	-- Particularly Nice Lamp
 				["coord"] = { 39.4, 61, UNDERMINE },
 				["questID"] = 85492,
-				["g"] = {
+				["groups"] = {
 					i(235221),	-- Particularly Bright Lightbulb
 				},
 			}),
 			o(476070, {	-- Potent Potable
 				["coord"] = { 69.6, 21.4, UNDERMINE },
 				["questID"] = 85426,
-				["g"] = {
+				["groups"] = {
 					i(235230),	-- Impotent Potable
 				},
 			}),
@@ -171,7 +180,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 233775 },	-- vignette
 				["coord"] = { 49.8, 65.5, UNDERMINE },
 				["questID"] = 85868,
-				["g"] = {
+				["groups"] = {
 					-- TODO: probably need another look
 					q(85866, {
 						["name"] = "Original spot",
@@ -188,7 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(509567, {	-- The Undermine Guide to Authentic Cooking
 				["description"] = "You will only be able to obtain the recipe if you already know the Classic cooking recipe: Undermine Clam Chowder.",
 				["coord"] = { 38.5, 88.5, UNDERMINE },
-				["g"] = { i(235800) },	-- Recipe: Authentic Undermine Clam Chowder (RECIPE!)
+				["groups"] = { i(235800) },	-- Recipe: Authentic Undermine Clam Chowder (RECIPE!)
 			}),
 			o(477376, {	-- Trick Deck of Cards
 				["coord"] = { 43.6, 51.5, UNDERMINE },
@@ -197,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(477374, {	-- Uncracked Cold Ones
 				["coord"] = { 53.3, 52.6, UNDERMINE },
 				["questID"] = 85495,
-				["g"] = {
+				["groups"] = {
 					i(234951),	-- Uncracked Cold Ones (TOY!)
 				},
 			}),
@@ -205,18 +214,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["description"] = "On the roof",
 				["coord"] = { 48.4, 43.1, UNDERMINE },
 				["questID"] = 85683,
-				["g"] = {
+				["groups"] = {
 					i(235042),	-- Imminently Exploding Fireworks
 				},
 			}),
 			o(476071, {	-- Unsupervised Takeout
 				["coord"] = { 26.7, 42.6, UNDERMINE },
 				["questID"] = 85425,
-				["g"] = {
+				["groups"] = {
 					i(233118),	-- Incontinental Takeout
 					i(7341),	-- Cubic Zirconia Ring (probably placeholder?)
 				},
 			}),
 		}),
 	}),
-})));
+}));

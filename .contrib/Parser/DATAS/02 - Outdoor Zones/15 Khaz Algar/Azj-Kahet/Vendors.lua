@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(VENDORS, {
 			n(218218, {	-- "Eight-Shaker" Sallow <Apertifologist>
 				["coord"] = { 53.4, 15.3, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223957, {	-- Recipe: Protein Slurp (RECIPE)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218179, {	-- Alvus Valavulu <Jewelcrafting Supplies>
 				["coord"] = { 47.8, 18.7, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(228914, {	-- Arachnophile Spectacles (TOY!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
 				["coord"] = { 60.80, 42.60, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223961, {	-- Recipe: Azj-Kahet Special (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218207, {	-- Clutchmother Marn'tiq <Pet Battle Master>
 				["coord"] = { 44.2, 17.1, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(222973, {	-- Fringe (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 						["isLimited"] = true,
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(223280, {	-- Collector Z'til <Alien Antiquities>
 				["coord"] = { 70.0, 31.3, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(226177, {	-- Recipe: Outsider's Provisions (RECIPE!)
 						["cost"] = {{"c", KEJ, 2638}},
 					}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218193, {	-- Iliani <Enchanting Supplies>
 				["coord"] = { 45.4, 33.3, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223136, {	-- Formula: Enchant Bracers - Chant of Armored Avoidance (RECIPE!)
 						["cost"] = {
 							{"c", KEJ, 1500},
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218165, {	-- Kama <Skinning & Leatherworking Supplies>
 				["coord"] = { 43.1, 20.7, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223111, {	-- Pattern: Deep Tracker's Cap (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218169, {	-- Llyot <Plant Sundries & Herbalism Supplies>
 				["coord"] = { 46.9, 16.1, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224023, {	-- Herbal Embalming Techniques (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = HERBALISM,
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218176, {	-- Nuel Prill <Inscription Supplies>
 				["coord"] = { 42.2, 27.2, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224053, {	-- Eight Views on Defense against Hostile Runes (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = INSCRIPTION,
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218198, {	-- Pelefien <Clerk>
 				["coord"] = { 50.5, 26.3, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(221850, {	-- Freshly Webbed Kebab (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 						["isLimited"] = true,
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218172, {	-- Phylieus <Fish & Fishing Supplies>
 				["coord"] = { 51.8, 24.6, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223979, {	-- Whispering Squirmworm
 						["cost"] = {{"c", KEJ, 133}},
 						["isLimited"] = true,
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218189, {	-- Polo <Cooking Supplies>
 				["coord"] = { 48.1, 25.3, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224152, {	-- Recipe: Empress' Farewell (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218166, {	-- Rakka <Mining & Blacksmithing Supplies>
 				["coord"] = { 46.6, 21.9, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224055, {	-- A Rocky Start (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = MINING,
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218195, {	-- Rukku <Engineering Supplies>
 				["coord"] = { 58.3, 31.5, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224052, {	-- Clocks, Gears, Sprockets, and Legs (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = ENGINEERING,
@@ -280,7 +280,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218214, {	-- Ruukk <Silks & Secrets>>
 				["coord"] = { 51.4, 12.5, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(226515, {	-- Rumor Map: Bounties
 						["cost"] = {{"c", KEJ, 25}},
 					}),
@@ -294,7 +294,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218190, {	-- Saaria <Tailoring Supplies>
 				["coord"] = { 50.4, 17.0, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(224036, {	-- And That's A Web-Wrap! (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = TAILORING,
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218192, {	-- Siesbarg <Alchemy Supplies>
 				["coord"] = { 45.4, 13.0, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(227445, {	-- Inscrutable Fragrance
 						["cost"] = {{"c", KEJ, 150}},
 					}),
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(223176, {	-- Tej the Undying <Dye Removal>
 				["coord"] = { 56.5, 35.5, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(227447, {	-- Invigorating Fragrance
 						["cost"] = {{"c", KEJ, 150}},
 					}),
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218210, {	-- Tyro Whalekk <Organic Pet Food>
 				["coord"] = { 43.4, 17.0, NERUBAR },
-				["g"] = {
+				["groups"] = {
 					i(223960, {	-- Recipe: Little Buddy Biscuits (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(223134, {	-- Venom Dahn
 				["coord"] = { 55.2, 36.5, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(227330, {	-- Grottochunk Stew (TODO: move into uncollectible? / food)
 						["cost"] = {{"c", KEJ, 137}},
 					}),
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(217253, {	-- Ves'trak <Rak-Ush Operations>
 				-- not sure if he always was here or locked behind some quest in area
 				["coord"] = { 74.7, 81.2, AZJ_KAHET },
-				["g"] = {
+				["groups"] = {
 					i(221486, {	-- Rak-Ush Threadling (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 					}),
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(224337, {	-- Zara'azj the Magnificent <Alchemy Supplies>
 				["coord"] = { 55.6, 47.5, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(224425, {	-- Pattern: Concoctor's Clutch (RECIPE!)
 						["cost"] = {
 							{"c", KEJ, 1500},
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			-- This Used for anything??
 			n(223177, {	-- Izkrk'tkrzn <Discount Eggs>
 				["coord"] = { 59.9, 31.6, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(223972),	-- Cracked Weavershell
 					i(223973),	-- Sticky Gossamer Sac]
 					i(223974),	-- Jostling Ovoid
@@ -396,7 +396,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(223155, {	-- Old V'k <The Crypt Lord>
 				["coord"] = { 50.6, 37.8, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					i(224240, {	-- Nerubian Tombstone
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--raid, hero gear
 			n(224270, {	-- Ip'xal
 				["coord"] = { 57.0, 45.8, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					--symlink?
 					--everything for 1x
 					i(226206),	-- Mark of the Spelunker Supreme
@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--pvp
 			n(224267, {	-- Ab'xal
 				["coord"] = { 57.3, 45.9, NERUBAR_LOWER },
-				["g"] = {
+				["groups"] = {
 					--symlink?
 					--everything for 1x
 					i(226206),	-- Mark of the Spelunker Supreme
@@ -423,4 +423,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

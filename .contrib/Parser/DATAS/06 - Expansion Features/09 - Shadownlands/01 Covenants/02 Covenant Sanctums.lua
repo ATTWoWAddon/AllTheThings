@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
 		["description"] = "These rewards are shared across Covenants.",
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14835),		-- A Resolute Bond
 				ach(14636),		-- Adventurer in Chief
@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					172400,	-- Command Table [Night Fae]
 					166143,	-- Command Table [Venthyr]
 				},
-				["g"] = {
+				["groups"] = {
 					i(178040, {	-- Condensed Stygia
 						currency(1767),	-- Stygia
 					}),
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			}),
 			n(COVENANT_CALLINGS, {
 				n(175390, {	-- Dirty Glinting Object
-					["description"] = "Can appear when on certain Training callings.  Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
+					["description"] = "Can appear when on certain Training callings. Roughly every 5 minutes, upon exiting combat, your trainee will call your attention to something they've discovered.\n\nOften contains potions, leveling and rarity charms for pets, or food.",
 					["crs"] = {
 						-- Confirmed Follower ID's which will drop the loot objects
 						170035,	-- Deos [Kyrian]
@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						-- 170044,	-- Nandor [Venthyr]
 						-- 170039,	-- Popo [Kyrian]
 					},
-					["g"] = {
+					["groups"] = {
 						i(184507),	-- Lucy (PET!)
 						i(184505),	-- "Adorable Ascended" Costume
 						i(184506),	-- "Flying Faerie" Costume
@@ -227,22 +227,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				n(COMMON_BOX_DROPS, {	-- Common Box Drops
-					i(187880),	-- Goat Soul
-					i(187862),	-- Snake Soul
+					["providers"] = {
+						{"i", 181475},	-- Bounty of the Grovewardens
+						{"i", 181476},	-- Tribute of the Wild Hunt
+						{"i", 181732},	-- Tribute of the Ambitious
+						{"i", 181733},	-- Tribute of the Duty-Bound
+						{"i", 181372},	-- Tribute of the Ascended
+						{"i", 181741},	-- Tribute of the Paragon
+						{"i", 181556},	-- Tribute of the Court
+						{"i", 181557},	-- Favor of the Court
+					},
+					["groups"] = {
+						i(187880),	-- Goat Soul
+						i(187862),	-- Snake Soul
+					},
 				}),
 			}),
-			-- Calling Boxes
-			n(COVENANT_CALLINGS, sharedData({
-					["sym"] = {
-						{ "select", "headerID", COVENANT_SANCTUMS },{"pop"},	-- Covenant Sanctum groups
-						{ "where", "headerID", COVENANT_CALLINGS },{"pop"},	-- Covenant Callings groups
-						{ "where", "headerID", COMMON_BOX_DROPS },	-- Common Box Drops
+			-- Covenant-Specific Box Rewards
+			n(COVENANT_CALLINGS, {
+				n(NIGHT_FAE, {
+					["providers"] = {
+						{"i", 181475},	-- Bounty of the Grovewardens
+						{"i", 181476},	-- Tribute of the Wild Hunt
 					},
-				},{
-				-- Rare Quality Calling Rewards / Zone
-				i(181475, {	-- Bounty of the Grovewardens / Ardenweald
-					["description"] = "Rewarded by completing a Calling based in Ardenweald.",
-					["g"] = {
+					["groups"] = {
 						i(187840, {	-- Sparkle Wings (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
@@ -251,84 +259,85 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 					},
 				}),
-				i(181556, {	-- Tribute of the Court / Revendreth
-					["description"] = "Rewarded by completing a Calling based in Revendreth.",
-					["g"] = {
-						i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
-						i(187512, {	-- Tome of Small Sins (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
-						}),
+				n(NECROLORD, {
+					["providers"] = {
+						{"i", 181732},	-- Tribute of the Ambitious
+						{"i", 181733},	-- Tribute of the Duty-Bound
 					},
-				}),
-				i(181732, {	-- Tribute of the Ambitious / Maldraxxus
-					["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
-					["g"] = {
-						i(184159, {	-- Necroray Egg (Timer)
-							i(184158, {	-- Oozing Necroray Egg (No Timer)
-								i(184160),	-- Bulbous Necroray (MOUNT!)
-								i(184161),	-- Infested Necroray (MOUNT!)
-								i(184162),	-- Pestilent Necroray (MOUNT!)
-							}),
-						}),
+					["groups"] = {
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
+						i(184159),	-- Necroray Egg
+						i(184158, {	-- Oozing Necroray Egg
+							["provider"] = { "i", 184159 },	-- Necroray Egg
+							["groups"] = {
+								i(184160),	-- Bulbous Necroray (MOUNT!)
+								i(184161),	-- Infested Necroray (MOUNT!)
+								i(184162),	-- Pestilent Necroray (MOUNT!)
+							},
+						}),
 					},
 				}),
-				i(181372, {	-- Tribute of the Ascended / Bastion
-					["description"] = "Rewarded by completing a Calling based in Bastion.",
-					["g"] = {
+				n(KYRIAN, {
+					["providers"] = {
+						{"i", 181372},	-- Tribute of the Ascended
+						{"i", 181741},	-- Tribute of the Paragon
+					},
+					["groups"] = {
 						i(187419, {	-- Steward's First Feather (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
-
-				-- Epic Quality Challenges Rewards / Zone
-				i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
-					["g"] = {
-						i(187840, {	-- Sparkle Wings (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
-						}),
-						i(190381, {	-- Technique: Glyph of the Spectral Vulpine (RECIPE!)
-							["timeline"] = { ADDED_9_2_0 },
-						}),
+				n(VENTHYR, {
+					["providers"] = {
+						{"i", 181556},	-- Tribute of the Court
+						{"i", 181557},	-- Favor of the Court
 					},
-				}),
-				i(181557, {	-- Favor of the Court / Revendreth
-					["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
-					["g"] = {
+					["groups"] = {
+						i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 						i(176850),	-- Blank Invitation
 						i(187512, {	-- Tome of Small Sins (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 					},
 				}),
+			}),
+			-- All Calling Boxes
+			-- These are all sourced via BNet harvest for Quests under their respective quests...
+			-- don't think we need the extra description now that structure is revised
+			--[[
+			n(COVENANT_CALLINGS, {
+				-- Rare Quality Calling Rewards / Zone
+				i(181475, {	-- Bounty of the Grovewardens / Ardenweald
+					["description"] = "Rewarded by completing a Calling based in Ardenweald.",
+				}),
+				i(181556, {	-- Tribute of the Court / Revendreth
+					["description"] = "Rewarded by completing a Calling based in Revendreth.",
+				}),
+				i(181732, {	-- Tribute of the Ambitious / Maldraxxus
+					["description"] = "Rewarded by completing a Calling based in Maldraxxus.",
+				}),
+				i(181372, {	-- Tribute of the Ascended / Bastion
+					["description"] = "Rewarded by completing a Calling based in Bastion.",
+				}),
+
+				-- Epic Quality Challenges Rewards / Zone
+				i(181476, {	-- Tribute of the Wild Hunt / Ardenweald
+					["description"] = "Rewarded by completing a 'Challenges' Calling based in Ardenweald.",
+				}),
+				i(181557, {	-- Favor of the Court / Revendreth
+					["description"] = "Rewarded by completing a 'Challenges' Calling based in Revendreth.",
+				}),
 				i(181733, {	-- Tribute of the Duty-Bound / Maldraxxus
 					["description"] = "Rewarded by completing a 'Challenges' Calling based in Maldraxxus.",
-					["g"] = {
-						i(184159, {	-- Necroray Egg (Timer)
-							i(184158, {	-- Oozing Necroray Egg (No Timer)
-								i(184160),	-- Bulbous Necroray (MOUNT!)
-								i(184161),	-- Infested Necroray (MOUNT!)
-								i(184162),	-- Pestilent Necroray (MOUNT!)
-							}),
-						}),
-						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
-						}),
-					},
 				}),
 				i(181741, {	-- Tribute of the Paragon / Bastion
 					["description"] = "Rewarded by completing a 'Challenges' Calling based in Bastion.",
-					["g"] = {
-						i(187419, {	-- Steward's First Feather (TOY!)
-							["timeline"] = { ADDED_9_1_5 },
-						}),
-					},
 				}),
-			})),
+			}),
+			--]]
 			n(MISSIONS, {
 				mi(2253),	-- Topple the Giants
 				mi(2299),	-- Maw: Topple the Giants

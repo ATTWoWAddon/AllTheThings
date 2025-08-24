@@ -292,6 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						["crs"] = { 24239 },	-- Hex Lord Malacrass
 						["groups"] = {
 							i(69572),	-- Hex Lord's Bloody Cloak
+							i(69762),	-- Miniature Voodoo Mask
 							i(69573),	-- Pauldrons of Sacrifice
 							i(70080),	-- Reforged Heartless
 							i(69569),	-- Shadowtooth Trollskin Breastplate

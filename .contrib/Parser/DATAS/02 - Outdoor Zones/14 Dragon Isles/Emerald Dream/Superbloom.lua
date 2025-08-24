@@ -37,10 +37,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(QUESTS, {
 				q(78319, {	-- The Superbloom
-					["provider"] = { "n", 208474 },	-- Clarelle
-					["coord"] = { 51.4, 59.6, EMERALD_DREAM },
+					["qg"] = 208474,	-- Clarelle
+					["coords"] = {
+						{ 44.6, 72.0, EMERALD_DREAM },
+						{ 51.4, 59.6, EMERALD_DREAM },
+					},
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(211389, {	-- Cache of Overblooming Treasures
 							i(211416),	-- Dream Wardens Insignia [Epic 1k BoA]
 							i(211417),	-- Dream Wardens Insignia [Epic 1k]

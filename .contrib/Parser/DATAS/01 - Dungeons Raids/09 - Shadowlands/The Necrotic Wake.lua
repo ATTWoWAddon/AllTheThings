@@ -2,23 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	inst(1182, {	-- Necrotic Wake
+	inst(1182, {	-- The Necrotic Wake
 		["coord"] = { 40.0, 55.3, BASTION },
 		["maps"] = {
 			1666,	-- The Necrotic Wake
 			1667,	-- Stitchwerks
 			1668,	-- Zolramus
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				header(HEADERS.Achievement, 14339, {	-- Shard Labor
-					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion.  Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
-					["g"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nGoblin Gliders are required for some of the shards in Bastion. Being part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["groups"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
 						q(61296, {	-- Anima Crystal Shard
-							["description"] = "After Blightbone, go up the stairs to the middle platform.  Straight ahead is a large fallen bell.  The shard is behind it on the right-hand side.",
+							["description"] = "After Blightbone, go up the stairs to the middle platform. Straight ahead is a large fallen bell. The shard is behind it on the right-hand side.",
 						}),
 						q(61297, {	-- Anima Crystal Shard
-							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north.  Climb behind the large broken pillar.  Behind it is a small broken pillar, and the shard is behind that.",
+							["description"] = "Before Amarth, at the middle of the top of the final platform is a little outcropping that juts north. Climb behind the large broken pillar. Behind it is a small broken pillar, and the shard is behind that.",
 						}),
 					}),
 				}),
@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 60055 },	-- A Time For Courage
 					["provider"] = { "n", 167584 },	-- Disciple Artemede
 					["coord"] = { 40.9, 55.3, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(184714),	-- Refulgent Chestguard
 						i(184713),	-- Refulgent Cuirass
 						i(184712),	-- Refulgent Raiment
@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2395, {	-- Blightbone
 					["crs"] = { 162691 },	-- Blightbone
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(183505),	-- Maim, Mangle
 						i(181641),	-- Rising Sun Revival
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 163157 },	-- Amarth, The Harvester
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183387),	-- Memory of the Deathmaker
 						-- Conduits
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						162689,	-- Surgeon Stitchflesh
 						164578,	-- Stitchflesh's Creation
 					},
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183373),	-- Memory of an Implosive Potential
 						-- Conduits
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
-					["g"] = {
+					["groups"] = {
 						ach(14366),	-- The Necrotic Wake
 						-- Legendaries
 						i(182633),	-- Memory of the Biting Cold
@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
-					["g"] = {
+					["groups"] = {
 						ach(14367),	-- Heroic: The Necrotic Wake
 					},
 				}),
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2391, {	-- Amarth, The Harvester
 					["crs"] = { 166855 },	-- Amarth, The Harvester
-					["g"] = {
+					["groups"] = {
 						ach(14295),	-- Bountiful Harvest
 					},
 				}),
@@ -147,13 +147,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						162689,	-- Surgeon Stitchflesh
 						164578,	-- Stitchflesh's Creation
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14320),	-- Surgeon's Supplies
 					},
 				}),
 				e(2396, {	-- Nalthor the Rimebinder
 					["crs"] = { 162693 },	-- Nalthor the Rimebinder
-					["g"] = {
+					["groups"] = {
 						ach(14368),	-- Mythic: The Necrotic Wake
 						ach(14381),	-- Mythic: The Necrotic Wake Guild Run
 						ach(14285),	-- Ready for Raiding VII

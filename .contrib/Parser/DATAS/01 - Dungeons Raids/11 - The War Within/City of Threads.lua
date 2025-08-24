@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2343,	-- City of Threads
 			2344,	-- The Transformatory
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(83164, {	-- City of Threads: Splice the Splicer
 					["provider"] = { "n", 224733 },	-- Tulumun
@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(227607, {	-- Fliq'ri <Mistress of Minions>
 					["description"] = "Found by the right stairs near the second boss. You may need another player to be caught by the nearby guard to be able to buy from the vendor yourself.",
 					["coord"] = { 74.7, 48.8, 2343 },
-					["g"] = {
+					["groups"] = {
 						i(226191),	-- Web Pet Leash (TOY!)
 					},
 				}),
@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2594, {	-- Orator Krix'vizk
 					["crs"] = { 216619 },	-- Orator Krix'vizk <The Fifth Strand>
-					["g"] = {
+					["groups"] = {
 						i(221168),	-- Cinch of Lingering Influence
 						i(221166),	-- Krix'vizk's Speech Rod
 						i(219318),	-- Oppressive Orator's Larynx
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						216648,	-- Nx <Fang of the Queen>
 						216649,	-- Vx <Fang of the Queen>
 					},
-					["g"] = {
+					["groups"] = {
 						i(221176),	-- Arachnofrost Vest
 						i(221171),	-- Kingslayer's Frostfang
 						i(221173),	-- Legplates of Duality
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2600, {	-- The Coaglamation
 					["crs"] = { 216320 },	-- The Coaglamation
-					["g"] = {
+					["groups"] = {
 						i(221179),	-- Coagulum Cuirass
 						i(221181),	-- Elder's Hemolymphal Periapt
 						i(221180),	-- Gorebound Stranglers
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2596, {	-- Izo, the Grand Splicer
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
-					["g"] = {
+					["groups"] = {
 						ach(40376),	-- City of Threads
 						i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 						i(223142),	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2596, {	-- Izo, the Grand Splicer
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
-					["g"] = {
+					["groups"] = {
 						ach(40377),	-- Heroic: City of Threads
 					},
 				}),
@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2596, {	-- Izo, the Grand Splicer
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
-					["g"] = {
+					["groups"] = {
 						ach(40379),	-- Mythic: City of Threads
 					},
 				}),

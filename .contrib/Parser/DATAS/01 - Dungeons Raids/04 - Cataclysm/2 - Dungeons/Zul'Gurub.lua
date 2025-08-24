@@ -6,6 +6,8 @@ CACHE_OF_MADNESS = createHeader({	-- This is the header for the event boss Cache
 	icon = 441139,
 	text = {
 		en = "Cache of Madness",
+		es = "El extremo de la locura",
+		mx = "El extremo de la locura",
 		fr = "L'antre de la Folie",
 		ru = "Тайник Безумия",
 		cn = "疯狂宝箱",
@@ -58,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							}),
 							ach(17366, {	-- Relics of a Fallen Empire
 								["sourceQuest"] = 74576,	-- Restored Hakkari Bijou
-								["timeline"] = { ADDED_10_0_7 }
+								["timeline"] = { ADDED_10_0_7 },
 							}),
 						}),
 						header(HEADERS.Item, 203757, {	-- Brazier of Madness
@@ -307,6 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						n(VENDORS, {
 							n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 								["sourceQuest"] = 74576, -- Restored Hakkari Bijou
+								["coord"] = { 55.0, 86.8, DAZARALOR },
 								["groups"] = {
 									cl(DRUID, {
 										iensemble(203974, {	-- Ensemble: Zandalar Haruspec
@@ -602,15 +605,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 				n(QUESTS, {
 					q(29155, {	-- A Shiny Reward
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							29153,	-- Booty Bay's Interests
 							29154,	-- Booty Bay's Interests
 						},
-						["providers"] = {
-							{ "n", 2496 },	-- Baron Revilgaz
-							{ "n", 53151 },	-- Overseer Blingbang
+						["qgs"] = {
+							2496,	-- Baron Revilgaz
+							53151,	-- Overseer Blingbang
 						},
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(69262, {	-- Black Ice
 								["timeline"] = { REMOVED_7_0_3 },
@@ -624,15 +627,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 					q(29253, {	-- A Shiny Reward
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							29251,	-- Booty Bay's Interests
 							29252,	-- Booty Bay's Interests
 						},
-						["providers"] = {
-							{ "n", 2496 },	-- Baron Revilgaz
-							{ "n", 53151 },	-- Overseer Blingbang
+						["qgs"] = {
+							2496,	-- Baron Revilgaz
+							53151,	-- Overseer Blingbang
 						},
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(69262, {	-- Black Ice
 								["timeline"] = { REMOVED_7_0_3 },
@@ -681,9 +684,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(29262, {	-- Zul'Gurub Voodoo
+						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 						["provider"] = { "o", 208550 },	-- Voodoo Pile
 						["isDaily"] = true,
-						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 					}),
 				}),
 				n(ZONE_DROPS, {

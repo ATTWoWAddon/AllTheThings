@@ -1,11 +1,27 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
 			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40622),		-- Biblo Archivist (automated)
+			ach(41188, {	-- Crystal Chronicled
+				["timeline"] = { ADDED_11_0_7 },
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40851,	-- Adventurer of Hallowfall
+					40308,	-- Beacon of Hope
+					40622,	-- Biblo Archivist
+					40150,	-- Children's Entertainer
+					40313,	-- Igniting the Keyflames
+					40618,	-- Lost and Found
+					40151,	-- Mereldar Menace
+					40311,	-- Sharing the Light
+					40625,	-- The Missing Lynx
+					40848,	-- Treasures of Hallowfall
+				}},
+			}),
 			ach(40826),		-- Explore Hallowfall (automated)
 			ach(20594, {	-- Flamegard's Hope
 				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days. This does not have to be done on consecutive days.",
@@ -17,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			ach(20598),		-- Hallowfall (automated)
-			ach(40704, {	-- Hallowfall Glyph Hunter
+			skyriding(ach(40704, {	-- Hallowfall Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					40685,	-- Skyriding Glyphs: Bleak Sand
@@ -31,9 +47,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40690,	-- Skyriding Glyphs: Tenir's Ascent
 					40689,	-- Skyriding Glyphs: Velhan's Claim
 				}},
-			}),
+			})),
 			ach(40360, {	-- Life on the Farm (automated)
-				["g"] = {
+				["groups"] = {
 					i(226160),	-- Hillhelm Farmhand's Hoe
 					i(226161),	-- Hillhelm Farmhand's Watering Can
 				},
@@ -56,36 +72,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					219368,	-- Alyza Bowblaze
 				},
 			}),
-			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
+			skyriding(ach(40685, {	-- Skyriding Glyphs: Bleak Sand
 				["coord"] = { 62.8, 7.2, HALLOWFALL },
-			}),
-			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
+			})),
+			skyriding(ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
 				["coord"] = { 69.9, 44.2, HALLOWFALL },
-			}),
-			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
+			})),
+			skyriding(ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
 				["coord"] = { 30.8, 51.6, HALLOWFALL },
-			}),
-			ach(40686, {	-- Skyriding Glyphs: Mereldar
+			})),
+			skyriding(ach(40686, {	-- Skyriding Glyphs: Mereldar
 				["coord"] = { 43.3, 52.8, HALLOWFALL },
-			}),
-			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
+			})),
+			skyriding(ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
 				["coord"] = { 35.4, 33.9, HALLOWFALL },
-			}),
-			ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
+			})),
+			skyriding(ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
 				["coord"] = { 63.6, 65.5, HALLOWFALL },
-			}),
-			ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
+			})),
+			skyriding(ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
 				["coord"] = { 57.3, 32.8, HALLOWFALL },
-			}),
-			ach(40681, {	-- Skyriding Glyphs: The Fangs
+			})),
+			skyriding(ach(40681, {	-- Skyriding Glyphs: The Fangs
 				["coord"] = { 62.9, 51.8, HALLOWFALL },
-			}),
-			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
+			})),
+			skyriding(ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
 				["coord"] = { 57.6, 64.6, HALLOWFALL },
-			}),
-			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
+			})),
+			skyriding(ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
 				["coord"] = { 45.7, 12.4, HALLOWFALL },
-			}),
+			})),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
 			ach(40625, {	-- The Missing Lynx
 				crit(68975, {	-- Magpie
@@ -138,9 +154,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40848),		-- Treasures of Hallowfall (automated)
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(ACHIEVEMENTS, {
@@ -153,4 +169,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

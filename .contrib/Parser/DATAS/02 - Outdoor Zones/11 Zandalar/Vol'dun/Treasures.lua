@@ -117,26 +117,100 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o_repeated(sharedData({	-- Treasure Chest
 				["isDaily"] = true,
 			},{
-				-- Objects
 				o(284411, {	-- Treasure Chest
 					["questID"] = 50917,
 					["coords"] = {
+						{ 52.6, 31.9, VOLDUN },
 						{ 54.6, 35.5, VOLDUN },
+					},
+				}),
+				o(284414, {	-- Treasure Chest
+					["questID"] = 50920,
+					["coords"] = {
+						{ 45.6, 88.1, VOLDUN },
 					},
 				}),
 				o(284417, {	-- Treasure Chest
 					["questID"] = 50923,
 					["coords"] = {
+						{ 26.7, 66.2, VOLDUN },
 						{ 27.8, 69.2, VOLDUN },
+					},
+				}),
+				o(284420, {	-- Treasure Chest
+					["questID"] = 50926,
+					["coords"] = {
+						{ 52.4, 77.9, VOLDUN },
 					},
 				}),
 				o(284421, {	-- Treasure Chest
 					["questID"] = 50928,
 					["coords"] = {
 						{ 56.2, 52.3, VOLDUN },
+						{ 56.7, 55.3, VOLDUN },
 					},
 				}),
-			}))
+				o(290770, {	-- Treasure Chest
+					["questID"] = 51673,
+					["coords"] = {
+						{ 52.7, 81.1, VOLDUN },
+					},
+				}),
+				o(284410, {	-- Treasure Chest
+					["questID"] = 50916,
+					["coords"] = {
+						{ 64.3, 34.7, VOLDUN },
+					},
+				}),
+				o(284412, {	-- Treasure Chest
+					["questID"] = 50918,
+					["coords"] = {
+						{ 61.6, 24.1, VOLDUN },
+					},
+				}),
+				o(284408, {	-- Treasure Chest
+					["questID"] = 50914,
+					["coords"] = {
+						{ 61.0, 16.7, VOLDUN },
+					},
+				}),
+				o(284409, {	-- Treasure Chest
+					["questID"] = 50915,
+					["coords"] = {
+						{ 51.9, 17.8, VOLDUN },
+					},
+				}),
+				o(284413, {	-- Treasure Chest
+					["questID"] = 50919,
+					["coords"] = {
+						{ 35.7, 43.2, VOLDUN },
+					},
+				}),
+				o(284419, {	-- Treasure Chest
+					["questID"] = 50925,
+					["coords"] = {
+						{ 48.0, 74.4, VOLDUN },
+					},
+				}),
+				o(284418, {	-- Treasure Chest
+					["questID"] = 50924,
+					["coords"] = {
+						{ 37.6, 82.7, VOLDUN },
+					},
+				}),
+				o(284415, {	-- Treasure Chest
+					["questID"] = 50921,
+					["coords"] = {
+						{ 46.2, 42.8, VOLDUN },
+					},
+				}),
+				o(284416, {	-- Treasure Chest
+					["questID"] = 50922,
+					["coords"] = {
+						{ 30.3, 46.2, VOLDUN },
+					},
+				}),
+			})),
 		}),
 	}),
 })));
@@ -153,18 +227,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(50555),	-- Clicking the Cracked Stone Tablet at 48.7, 72.1
 				q(50556),	-- Clicking the Cracked Stone Tablet at 48.7, 72.1
 				q(50557),	-- Clicking the Cracked Stone Tablet at 48.7, 72.1
-				q(50922),	-- Vol'dun repeatable random chest
-				q(50920),	-- Vol'dun repeatable random chest
-				q(51673),	-- Vol'dun repeatable random chest
-				q(50926),	-- Vol'dun repeatable random chest
-				q(50916),	-- Vol'dun repeatable random chest
-				q(50914),	-- Vol'dun repeatable random chest
-				q(50918),	-- Vol'dun repeatable random chest
-				q(50924),	-- Vol'dun repeatable random chest
-				q(50921),	-- Vol'dun repeatable random chest
-				q(50919),	-- Vol'dun repeatable random chest
-				q(50915),	-- Vol'dun repeatable random chest
-				q(50925),	-- Vol'dun repeatable random chest
 			}),
 		}),
 	}),

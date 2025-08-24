@@ -1,169 +1,129 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
-	t.CacheFactions = function(t)
-		local factions = t.factions;
-		if not factions then
-			factions = {};
-			for i,factionID in ipairs({
-				87,
-				21,
-				577,
-				369,
-				470,
-				909,
-				349,
-				809,
-			}) do
-				local f = _.SearchForField("factionID", factionID);
-				if f and #f > 0 then
-					tinsert(factions, f and f[1] or _.CreateFaction(factionID));
-				else
-					return;
-				end
-			end
-			local bloodsail = _.CreateFaction( ]] .. FACTION_BLOODSAIL_BUCCANEERS .. [[ );
-			bloodsail.minReputation = { ]] .. FACTION_BLOODSAIL_BUCCANEERS .. [[ , ]] .. HONORED .. [[ };
-			bloodsail.OnTooltip = factions[1].OnTooltip;
-			bloodsail.collectible = false;
-			factions[1] = bloodsail;
-			t.factions = factions;
-		end
-		return factions;
-	end
-	t.OnPopout = function(t)
-		local clone = _.CloneReference(t);
-		clone.sourceParent = t.parent;
-		local factions = t:CacheFactions();
-		if factions then
-			local g = clone.g;
-			if g then
-				for i,o in ipairs(factions) do
-					tinsert(g, o);
-				end
-			else
-				clone.g = _.CloneArray(factions);
-			end
-		end
-		return clone;
-	end
-	return t;
-end]];
-local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
-	if t.collectible then
-		local fs = t:CacheFactions();
-		if not fs then return; end
-		local collected = true;
-		for i,f in ipairs(fs) do
-			if f.saved ~= 1 then
-				collected = false;
-				break;
-			end
-		end
-		t:SetAchievementCollected(t.achievementID, collected);
-	end
-end]];
-local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t, tooltipInfo)
-	local fs = t:CacheFactions();
-	if not fs then return; end
-	tinsert(tooltipInfo, { left = " " });
-	for i,f in ipairs(fs) do
-		tinsert(tooltipInfo, {
-			left = " |T" .. f.icon .. ":0|t " .. f.text,
-			right = _.GetCollectionIcon(f.saved),
-			r = 1, g = 1, b = 1
-		});
-	end
-end]];
 root(ROOTS.Character, n(ACHIEVEMENTS, {
+	petbattles({
+		ach(8348, {	-- The Longest Day
+			["timeline"] = { ADDED_5_3_0 },
+		}),
+	}),
+	-- #if BEFORE 4.0.1
+	ach(4784, {	-- Emblematic [A]
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		["races"] = ALLIANCE_ONLY,
+	}),
+	ach(4785, {	-- Emblematic [H]
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		["races"] = HORDE_ONLY,
+	}),
+	ach(3838, {	-- Dungeon & Raid Emblem
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3839, {	-- 25 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3840, {	-- 50 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3841, {	-- 100 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3842, {	-- 250 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(3843, {	-- 500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #endif
+	ach(3844, {	-- 1000 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #if BEFORE 4.0.1
+	ach(3876, {	-- 1500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	-- #endif
+	ach(4316, {	-- 2500 Dungeon & Raid Emblems
+		["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+	}),
+	ach(5535, {	-- 1000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5536, {	-- 5000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5537, {	-- 25,000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(5538, {	-- 50,000 Valor Points
+		["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+	}),
+	ach(6924, {	-- 100,000 Valor Points
+		["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+	}),
 	ach(523, {		-- 5 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
+		-- #if NOT ANYCLASSIC
 		["timeline"] = { ADDED_3_0_2 },
 		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 5,
 	}),
 	ach(524, {		-- 10 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
+		-- #if NOT ANYCLASSIC
 		["timeline"] = { ADDED_3_0_2 },
 		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 10,
 	}),
 	ach(521, {		-- 15 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
+		-- #if NOT ANYCLASSIC
 		["timeline"] = { ADDED_3_0_2 },
 		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 15,
 	}),
 	ach(520, {		-- 20 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
+		-- #if NOT ANYCLASSIC
 		["timeline"] = { ADDED_3_0_2 },
 		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 20,
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(519, {		-- 25 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
-		["timeline"] = { ADDED_3_0_2 },
-		-- #endif
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["_noautomation"] = true,
-		["rank"] = 25,
 	})),
 	applyclassicphase(TBC_PHASE_ONE, ach(518, {		-- 30 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
-		["timeline"] = { ADDED_3_0_2 },
-		-- #endif
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["_noautomation"] = true,
-		["rank"] = 30,
 	})),
 	applyclassicphase(TBC_PHASE_TWO, ach(1014, {	-- 35 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
-		["timeline"] = { ADDED_3_0_2 },
-		-- #endif
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["_noautomation"] = true,
-		["rank"] = 35,
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, ach(1015, {	-- 40 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #else
-		["timeline"] = { ADDED_3_0_2 },
-		-- #endif
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			ADDED_2_0_1,
+			-- #else
+			ADDED_3_0_2,
+			-- #endif
+		},
 		["_noautomation"] = true,
-		["rank"] = 40,
 		-- #if AFTER 3.0.1
 		["groups"] = {
 			title(46),		-- <Name> the Exalted
@@ -171,101 +131,47 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #endif
 	})),
 	applyclassicphase(CATA_PHASE_ONE, ach(5374, {		-- 45 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_4_0_3_LAUNCH },
 		["_noautomation"] = true,
-		["rank"] = 45,
 	})),
 	applyclassicphase(CATA_PHASE_ONE, ach(5723, {		-- 50 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_4_0_6 },
 		["_noautomation"] = true,
-		["rank"] = 50,
 	})),
 	applyclassicphase(MOP_PHASE_ONE, ach(6826, {		-- 55 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_5_0_4 },
 		["_noautomation"] = true,
-		["rank"] = 55,
 	})),
 	applyclassicphase(MOP_PHASE_ONE, ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 60,
-		["g"] = {
+		["groups"] = {
 			title(197),	-- <Name> the Beloved
 		},
 	}))),
 	applyclassicphase(LEGION_PHASE_ONE, ach(11177, {	-- 70 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_7_0_3_LAUNCH },
 		["_noautomation"] = true,
-		["rank"] = 70,
 	})),
 	applyclassicphase(BFA_PHASE_ONE, ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 80,
-		["g"] = {
+		["groups"] = {
 			title(380),		-- <Name> the Admired
 		},
 	}))),
 	applyclassicphase(BFA_PHASE_ONE, ach(12865, {	-- 90 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["_noautomation"] = true,
-		["rank"] = 90,
 	})),
 	applyclassicphase(BFA_PHASE_ONE, ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 100,
-		["g"] = {
+		["groups"] = {
 			i(163982),		-- Pureheart Courser (MOUNT!)
 			title(379),		-- Esteemed <Name>
 		},
 	}))),
 	ach(18471, {	-- 110 Exalted Reputations
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["timeline"] = { ADDED_10_1_5 },
 		["_noautomation"] = true,
-		["rank"] = 110,
 	}),
 	ach(2358, {	-- Charger
 		-- #if BEFORE 3.0.1
@@ -296,12 +202,12 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	})),
 	applyclassicphase(PHASE_THREE_DMF_CARDS, ach(2336, {	-- Insane in the Membrane
 		-- #if ANYCLASSIC
-		["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
-		["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = INSANE_IN_THE_MEMBRANE_OnUpdate,
-		-- #endif
-		["description"] = "Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
+		["description"] =
+			-- #if AFTER CATA
+			"Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, and the Darkmoon Faire. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
+			-- #else
+			"Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
+			-- #endif
 		-- #endif
 		["groups"] = {
 			title(112, {	-- the Insane
@@ -312,67 +218,31 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	ach(4496, {	-- It's Over Nine Thousand!
 		["timeline"] = { ADDED_3_0_2 },
 	}),
-	ach(6, {		-- Level 10
-		["lvl"] = 10,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
-	}),
-	ach(7, {		-- Level 20
-		["lvl"] = 20,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
-	}),
-	ach(8, {		-- Level 30
-		["lvl"] = 30,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
-	}),
-	ach(9, {		-- Level 40
-		["lvl"] = 40,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
-	}),
-	ach(10, {		-- Level 50 (Legacy)
+	ach(6),	-- Level 10
+	ach(7),	-- Level 20
+	ach(8),	-- Level 30
+	ach(9),	-- Level 40
+	ach(10, {	-- Level 50 (Legacy)
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
 			-- #endif
 			REMOVED_9_0_1
 		},
-		["lvl"] = 50,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
 	}),
-	ach(11, {		-- Level 60 (Legacy)
+	ach(11, {	-- Level 60 (Legacy)
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
 			-- #endif
 			REMOVED_9_0_1
 		},
-		["lvl"] = 60,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_ONE, ach(12, {	-- Level 70 (Legacy)
 		["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 },
-		["lvl"] = 70,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(13, {	-- Level 80 (Legacy)
 		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
-		["lvl"] = 80,
-		-- #if BEFORE WRATH
-		["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-		-- #endif
 		["groups"] = {
 			i(41426, {	-- Magically Wrapped Gift
 				i(41427),	-- Dalaran Firework
@@ -700,14 +570,11 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	ach(6872, {		-- Realm First! Zen Master Tailor
 		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 	}),
+	ach(42191, {	-- Safer Deposit
+		["timeline"] = { ADDED_11_2_0 },
+	}),
 	ach(522, {		-- Somebody Likes Me
-		-- #if ANYCLASSIC
-		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-		["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-		-- #endif
 		["_noautomation"] = true,
-		["rank"] = 1,
 	}),
 	-- #if ANYCLASSIC
 	applyclassicphase(SOM_PHASE_ONE, ach(16433, {	-- Soul of Iron (Season of Mastery)
@@ -834,69 +701,27 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			i(91802),	-- Jade Pandaren Kite String (MOUNT!)
 		}))),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2536, {	-- Mountain o' Mounts [A] (100 mounts)
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
-			["rank"] = 100,
 			["groups"] = {
 				i(44843),	-- Blue Dragonhawk (MOUNT!)
 			},
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2537, {	-- Mountain o' Mounts [H] (100 mounts)
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
-			["rank"] = 100,
 			["groups"] = {
 				i(44842),	-- Red Dragonhawk (MOUNT!)
 			},
 		})),
 		applyclassicphase(TBC_PHASE_ONE, ach(2143, {	-- Leading the Cavalry (50 mounts)
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
-			["rank"] = 50,
 			["groups"] = {
 				applyclassicphase(WRATH_PHASE_ONE, i(44178)),	-- Albino Drake (MOUNT!)
 			},
 		})),
-		ach(2142, {		-- Filling Up The Barn (25 mounts)
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			-- #endif
-			["rank"] = 25,
-		}),
-		ach(2141, {		-- Stable Keeper (10 mounts)
-			-- #if ANYCLASSIC
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			-- #endif
-			["rank"] = 10,
-		}),
+		ach(2142),	-- Filling Up The Barn (25 mounts)
+		ach(2141),	-- Stable Keeper (10 mounts)
 		ach(9713, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Awake the Drakes (automated)
 			i(118676),		-- Emerald Drake (MOUNT!)
 		})),
@@ -924,4 +749,3 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	-- #endif
 }))
-

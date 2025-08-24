@@ -1,0 +1,10 @@
+
+
+
+
+Missing in Inscription
+
+4.4.1.57916
+r(1216290),	-- Bloodthirsty Eyeball of Dominance
+r(1216316),	-- Bloodthirsty Charm of Triumph
+r(1216317),	-- Bloodthirsty Jawbone of Conquest

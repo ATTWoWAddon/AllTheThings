@@ -14,7 +14,7 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
-		["g"] = {
+		["groups"] = {
 			q(49851, {	-- Cataclysm First Responder (Horde)
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["timeline"] = { ADDED_7_3_5 },
@@ -26,8 +26,8 @@ root(ROOTS.Zones, {
 				["timeline"] = { ADDED_7_3_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 60,
 			})),
 			warchiefscommand(q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
@@ -48,19 +48,19 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
-		["g"] = {
+		["groups"] = {
 			q(49865, {	-- Cataclysm First Responder (Alliance)
 				["sourceQuest"] = 49846,	-- War on Two Fronts (Cataclysm)
 				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49863, {	-- To Northrend! (Alliance)
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
-				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 60,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Cataclysm or Pandaria)
@@ -70,13 +70,13 @@ root(ROOTS.Zones, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80. You can use them to progress either to Cataclysm or Pandaria.",
 				["providers"] = {
 					{ "o", 206111 },	-- [SW]
 					{ "o", 207321 },	-- [DA]
 					{ "o", 207320 },	-- [IF]
 					{ "i", 156477 },	-- Special Duty Assignments
 				},
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
@@ -84,24 +84,24 @@ root(ROOTS.Zones, {
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80. You can use them to progress either to Cataclysm or Pandaria.",
 				["providers"] = {
 					{ "o", 206111 },	-- [SW]
 					{ "o", 207321 },	-- [DA]
 					{ "o", 207320 },	-- [IF]
 					{ "i", 156477 },	-- Special Duty Assignments
 				},
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
-				["lvl"] = 80,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 80,
 			}),
 		},
 	})),
 	n(DUNGEON_JOURNAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		q(72743, {	-- A Piece of Copper
 			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
-			["g"] = {
+			["groups"] = {
 				ach(16789),	-- Lucky Penny
 			},
 		}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 		q(72749, {	-- A Curious Coin
 			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
 			["sourceQuests"] = { 72748 },	-- A Bag of Gold
-			["g"] = {
+			["groups"] = {
 				ach(16790),	-- Curious Coin
 			},
 		}),

@@ -11,13 +11,12 @@ local RETRIEVING_DATA = RETRIEVING_DATA
 local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID
 
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture
-local GetItemInfo = app.WOWAPI.GetItemInfo
+local GetSpellIcon = app.WOWAPI.GetSpellIcon
 local GetFactionName = app.WOWAPI.GetFactionName
 local Callback = app.CallbackHandlers.Callback
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
-local Colorize = app.Modules.Color.Colorize
 local GetProgressColorText = app.Modules.Color.GetProgressColorText
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros
 local GetProgressColor = app.Modules.Color.GetProgressColor
@@ -30,6 +29,8 @@ local TryColorizeName = app.TryColorizeName
 local GetRelativeValue = app.GetRelativeValue
 local SearchForField, SearchForObject = app.SearchForField, app.SearchForObject
 local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
+local GetUnobtainableTexture = app.GetUnobtainableTexture
+local wipearray = app.wipearray
 
 app.Windows = {};
 
@@ -60,7 +61,12 @@ local SkipAutoExpands = {
 	headerID = {
 		[app.HeaderConstants.ZONE_DROPS] = true,
 		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-		[app.HeaderConstants.HOLIDAYS] = true
+		[app.HeaderConstants.HOLIDAYS] = true,
+	},
+	objectID = {
+		[375368] = true,	-- Creation Catalyst Console
+		[382621] = true,	-- Revival Catalyst Console
+		[456208] = true,	-- The Catalyst
 	},
 	-- Item/Difficulty as Headers should not expand
 	itemID = true,
@@ -93,6 +99,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		end
 	end
 end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively
 local VisibilityFilter, SortGroup
 local function ProcessGroup(data, object)
 	if not VisibilityFilter(object) then return end
@@ -107,6 +114,9 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
+-- TODO: instead of requiring 'got' parameter to indicate something was collected
+-- to trigger the complete sound for a 100% window, let's have the window check a field for externally-assigned new collection
+-- and clear on update
 local function UpdateWindow(self, force, got)
 	local data = self.data;
 	-- TODO: remove IsReady check when Windows have OnInit capability
@@ -120,7 +130,7 @@ local function UpdateWindow(self, force, got)
 		self.HasPendingUpdate = true;
 		force = nil;
 	end
-	-- app.PrintDebug(Colorize("Update:", app.Colors.ATT),self.Suffix,
+	-- app.PrintDebug(Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
 	-- 	force and "FORCE" or "SOFT",
 	-- 	visible and "VISIBLE" or "HIDDEN",
 	-- 	got and "COLLECTED" or "PASSIVE",
@@ -132,13 +142,15 @@ local function UpdateWindow(self, force, got)
 		wipe(rowData)
 
 		data.expanded = true;
+		local didUpdate
 		if not self.doesOwnUpdate and force then
 			self:ToggleExtraFilters(true)
-			app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
+			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
 			app.TopLevelUpdateGroup(data);
 			self.HasPendingUpdate = nil;
-			app.PrintDebugPrior("Done")
+			-- app.PrintDebugPrior("Done")
 			self:ToggleExtraFilters()
+			didUpdate = true
 		end
 
 		-- Should the groups in this window be expanded prior to processing the rows for display
@@ -167,7 +179,7 @@ local function UpdateWindow(self, force, got)
 				-- only add this info row if there is actually nothing visible in the list
 				-- always a header row
 				-- print("any data",#self.Container,#rowData,#data)
-				if #rowData < 2 then
+				if #rowData < 2 and not app.ThingKeys[data.key] then
 					rowData[#rowData + 1] = app.CreateRawText(L.NO_ENTRIES, {
 						description = L.NO_ENTRIES_DESC,
 						collectible = 1,
@@ -185,6 +197,7 @@ local function UpdateWindow(self, force, got)
 
 		self:Refresh();
 		-- app.PrintDebugPrior("Update:Done")
+		app.HandleEvent("OnWindowUpdated", self, didUpdate)
 		return true;
 	else
 		local expireTime = self.ExpireTime;
@@ -207,6 +220,7 @@ local function ClearRowData(self)
 	self.Indicator:Hide();
 	self.Summary:Hide();
 	self.Label:Hide();
+	self:SetHighlightLocked(false)
 end
 local function CalculateRowIndent(data)
 	if data.indent then return data.indent; end
@@ -282,44 +296,6 @@ local function SetPortraitIcon(self, data)
 	self:SetTexture(QUESTION_MARK_ICON);
 	return true
 end
-local function GetUnobtainableTexture(group)
-	if not group then return; end
-	if type(group) ~= "table" then
-		-- This function shouldn't be used with only u anymore!
-		app.print("Invalid use of GetUnobtainableTexture", group);
-		return;
-	end
-
-	-- Determine the texture color, default is green for events.
-	-- TODO: Use 4 for inactive events, use 5 for active events
-	local filter, u = 4, group.u;
-	if u then
-		-- only b = 0 (BoE), not BoA/BoP
-		-- removed, elite, bmah, tcg, summon
-		if u > 1 and u < 12 and group.itemID and (group.b or 0) == 0 then
-			filter = 2;
-		else
-			local phase = L.PHASES[u];
-			if phase then
-				if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
-					filter = phase.state or 0;
-				else
-					-- This is a phase that's available. No icon.
-					return;
-				end
-			else
-				-- otherwise it's an invalid unobtainable filter
-				app.print("Invalid Unobtainable Filter:",u);
-				return;
-			end
-		end
-		return L.UNOBTAINABLE_ITEM_TEXTURES[filter];
-	end
-	if group.e then
-		return L.UNOBTAINABLE_ITEM_TEXTURES[app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
-	end
-end
-app.GetUnobtainableTexture = GetUnobtainableTexture;
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
  local function GetIndicatorIcon(group)
 	-- Use the group's own indicator if defined
@@ -351,25 +327,32 @@ local function GetReagentIcon(data, iconOnly)
 end
 local function GetUpgradeIconForRow(data, iconOnly)
 	-- upgrade only for filled groups, or if itself is an upgrade
-	if data.filledUpgrade or data.isUpgrade or (data.progress == data.total and ((data.upgradeTotal or 0) > 0)) then
+	if data.isUpgrade or (data.progress == data.total and data.upgradeTotal > 0) then
 		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.filledUpgrade or data.collectibleAsUpgrade then
+	if data.collectibleAsUpgrade then
 		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
+	end
+end
+local function GetCatalystIcon(data, iconOnly)
+	if data.filledCatalyst then
+		return L[iconOnly and "CATALYST_ICON" or "CATALYST_TEXT"];
 	end
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only for filled groups, or if itself is a cost
-	if data.filledCost or data.isCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
+	-- temp, added filledCost back due to some discrepancies discovered based on Fillers not accounted for in Cost calculations
+	if data.isCost or data.filledCost or (data.progress == data.total and data.costTotal > 0) then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.filledCost or data.collectibleAsCost then
+	-- temp, added filledCost back due to some discrepancies discovered based on Fillers not accounted for in Cost calculations
+	if data.isCost or data.filledCost then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
@@ -398,40 +381,47 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 		end
 	end
 end
+local __Text = {}
 local function GetProgressTextForRow(data)
 	-- build the row text from left to right with possible info
-	local text = {}
 	-- Reagent (show reagent icon)
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Text)
 	local icon = GetReagentIcon(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Cost (show cost icon)
 	icon = GetCostIconForRow(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Upgrade (show upgrade icon)
 	icon = GetUpgradeIconForRow(data, true);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
+	end
+	-- Upgrade (show upgrade icon)
+	icon = GetCatalystIcon(data, true);
+	if icon then
+		__Text[#__Text + 1] = icon
 	end
 	-- Progress Achievement
 	local statistic = data.statistic
 	if statistic then
-		text[#text + 1] = "["..statistic.."]"
+		__Text[#__Text + 1] = "["..statistic.."]"
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, true)
 	if stateIcon then
-		text[#text + 1] = stateIcon
+		__Text[#__Text + 1] = stateIcon
 	end
 	-- Container
 	local total = data.total;
 	local isContainer = total and (total > 1 or (total > 0 and not data.collectible));
 	if isContainer then
 		local textContainer = GetProgressColorText(data.progress or 0, total)
-		text[#text + 1] = textContainer
+		__Text[#__Text + 1] = textContainer
 	end
 	-- Non-collectible/total Container (only contains visible, non-collectibles...)
 	local g = data.g;
@@ -442,50 +432,56 @@ local function GetProgressTextForRow(data)
 		else
 			headerText = "+++";
 		end
-		text[#text + 1] = headerText
+		__Text[#__Text + 1] = headerText
 	end
 
 	-- Trackable (Only if no other text available)
-	if #text == 0 then
+	if #__Text == 0 then
 		stateIcon = GetTrackableIcon(data, true)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 
-	return app.TableConcat(text, nil, "", " ");
+	return app.TableConcat(__Text, nil, "", " ");
 end
 app.GetProgressTextForRow = GetProgressTextForRow;
 
 local function GetProgressTextForTooltip(data)
 	-- build the row text from left to right with possible info
-	local text = {}
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Text)
 	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	-- Reagent (show reagent icon)
 	local icon = GetReagentIcon(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Cost (show cost icon)
 	icon = GetCostIconForTooltip(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
 	end
 	-- Upgrade (show upgrade icon)
 	icon = GetUpgradeIconForTooltip(data, iconOnly);
 	if icon then
-		text[#text + 1] = icon
+		__Text[#__Text + 1] = icon
+	end
+	-- Catalyst (show catalyst icon)
+	icon = GetCatalystIcon(data, iconOnly);
+	if icon then
+		__Text[#__Text + 1] = icon
 	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, iconOnly)
 	if stateIcon then
-		text[#text + 1] = stateIcon
+		__Text[#__Text + 1] = stateIcon
 	end
 	-- Saved (only certain data types)
 	if data.npcID then
 		stateIcon = GetTrackableIcon(data, iconOnly, true)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 	-- Container
@@ -494,51 +490,66 @@ local function GetProgressTextForTooltip(data)
 	if isContainer then
 		local textContainer = GetProgressColorText(data.progress or 0, total)
 		if textContainer then
-			text[#text + 1] = textContainer
+			__Text[#__Text + 1] = textContainer
 		end
 	end
 
 	-- Trackable (Only if no other text available)
-	if #text == 0 then
+	if #__Text == 0 then
 		stateIcon = GetTrackableIcon(data, iconOnly)
 		if stateIcon then
-			text[#text + 1] = stateIcon
+			__Text[#__Text + 1] = stateIcon
 		end
 	end
 
-	return app.TableConcat(text, nil, "", " ");
+	return app.TableConcat(__Text, nil, "", " ");
 end
 app.GetProgressTextForTooltip = GetProgressTextForTooltip
 
+local __Summary = {}
 local function BuildDataSummary(data)
-	local summary = {}
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Summary)
 	local requireSkill = data.requireSkill
 	if requireSkill then
-		local profIcon = GetTradeSkillTexture(requireSkill)
+		local profIcon = GetTradeSkillTexture(requireSkill) or GetSpellIcon(requireSkill)
 		if profIcon then
-			summary[#summary + 1] = "|T"..profIcon..":0|t "
+			__Summary[#__Summary + 1] = "|T"
+			__Summary[#__Summary + 1] = profIcon
+			__Summary[#__Summary + 1] = ":0|t "
 		end
 	end
 	-- TODO: races
 	local specs = data.specs;
 	if specs and #specs > 0 then
-		summary[#summary + 1] = GetSpecsString(specs, false, false)
+		__Summary[#__Summary + 1] = GetSpecsString(specs, false, false)
 	else
 		local classes = data.c
 		if classes and #classes > 0 then
-			summary[#summary + 1] = GetClassesString(classes, false, false)
+			__Summary[#__Summary + 1] = GetClassesString(classes, false, false)
 		end
 	end
-	summary[#summary + 1] = GetProgressTextForRow(data) or "---"
-	return app.TableConcat(summary, nil, "", "")
+	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or "---"
+	return app.TableConcat(__Summary, nil, "", "")
 end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
+		-- temp debug check to ensure we aren't assigning any non-objects into windows
+		-- if not data.key then
+		-- 	app.PrintDebug(app.Modules.Color.Colorize("Non-Object "..(data.text or "?").." assigned to Row "..self.Suffix,app.Colors.LockedWarning))
+		-- end
 		local text = data.text;
 		if IsRetrieving(text) then
 			text = RETRIEVING_DATA;
-			self.processingLinks = true;
+
+			local AsyncRefreshFunc = data.AsyncRefreshFunc
+			if AsyncRefreshFunc then
+				AsyncRefreshFunc(data)
+			else
+				-- app.PrintDebug("No Async Refresh Func for Type!",data.__type)
+				Callback(self.Update, self)
+			end
 		end
 		local leftmost, relative, rowPad = row, "LEFT", 8;
 		local x = CalculateRowIndent(data) * rowPad + rowPad;
@@ -586,6 +597,9 @@ local function SetRowData(self, row, data)
 			rowLabel:SetFontObject("GameFontNormal");
 			rowSummary:SetFontObject("GameFontNormal");
 		end
+		if self.HightlightDatas[data] then
+			row:SetHighlightLocked(true)
+		end
 		row:Show();
 	else
 		row:Hide();
@@ -612,7 +626,7 @@ local function ClearRowData(self)
 end
 local function Refresh(self)
 	if not self:IsVisible() then return; end
-	-- app.PrintDebug(Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
+	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	local height = self:GetHeight();
 	if height > 80 then
 		self.ScrollBar:Show();
@@ -635,18 +649,38 @@ local function Refresh(self)
 
 	-- Fill the remaining rows up to the (visible) row count.
 	local container, windowPad, minIndent = self.Container, 0, nil;
+	local rows = container.rows
 	local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount)) + 1
 
 	-- Ensure that the first row doesn't move out of position.
-	local row = container.rows[1]
+	local row = rows[1]
 	SetRowData(self, row, rowData[1]);
 
 	local containerHeight = container:GetHeight();
 	local rowHeight = row:GetHeight()
 	local rowCount = math.floor(containerHeight / rowHeight)
 
+	-- Should this window attempt to scroll to specific data?
+	if self.ScrollInfo then
+		local field, value = self.ScrollInfo[1], self.ScrollInfo[2]
+		-- app.PrintDebug("ScrollInfo",field,value)
+		wipe(self.HightlightDatas)
+		local foundAt, ref
+		for i=2,totalRowCount do
+			ref = rowData[i]
+			if ref and ref[field] == value then
+				if not foundAt then foundAt = i end
+				self.HightlightDatas[ref] = true
+			end
+		end
+		if foundAt then
+			-- app.PrintDebug("ScrollTo",foundAt)
+			self.ScrollInfo.ScrollTo = foundAt
+		end
+	end
+
 	for i=2,rowCount do
-		row = container.rows[i]
+		row = rows[i]
 		SetRowData(self, row, rowData[current]);
 		-- track the minimum indentation within the set of rows so they can be adjusted later
 		if row.indent and (not minIndent or row.indent < minIndent) then
@@ -658,7 +692,7 @@ local function Refresh(self)
 
 	-- Readjust the indent of visible rows
 	-- if there's actually an indent to adjust on top row (due to possible indicator)
-	row = container.rows[1];
+	row = rows[1];
 	if row.indent ~= windowPad then
 		AdjustRowIndent(row, row.indent - windowPad);
 		-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
@@ -671,7 +705,7 @@ local function Refresh(self)
 	--	-- header only adjust
 	-- 	headerAdjust = startIndent - 8;
 	-- 	print("header adjust",headerAdjust)
-	-- 	row = container.rows[1];
+	-- 	row = rows[1];
 	-- 	AdjustRowIndent(row, headerAdjust);
 	-- end
 	-- adjust remaining rows to align on the left
@@ -679,14 +713,14 @@ local function Refresh(self)
 		-- print("minIndent",minIndent,windowPad)
 		local adjust = minIndent - windowPad;
 		for i=2,rowCount do
-			row = container.rows[i];
+			row = rows[i];
 			AdjustRowIndent(row, adjust);
 		end
 	end
 
 	-- Hide the extra rows if any exist
-	for i=math.max(2, rowCount + 1),#container.rows do
-		row = container.rows[i];
+	for i=math.max(2, rowCount + 1),#rows do
+		row = rows[i];
 		ClearRowData(row);
 		row:Hide();
 	end
@@ -704,15 +738,23 @@ local function Refresh(self)
 		self.ScrollBar:SetStepsPerPage(rowCount - 2);
 	end
 
+	-- Actually do the scroll if it was determined above
+	if self.ScrollInfo then
+		if self.ScrollInfo.ScrollTo then
+			self.ScrollBar:SetValue(math.max(1, self.ScrollInfo.ScrollTo - (rowCount / 2)))
+		end
+		self.ScrollInfo = nil
+	end
+
 	-- If this window has an UpdateDone method which should process after the Refresh is complete
 	if self.UpdateDone then
 		-- print("Refresh-UpdateDone",self.Suffix)
 		Callback(self.UpdateDone, self);
 	-- If the rows need to be processed again, do so next update.
-	elseif self.processingLinks then
+	-- elseif self.processingLinks then
 		-- print("Refresh-processingLinks",self.Suffix)
-		Callback(self.Refresh, self);
-		self.processingLinks = nil;
+		-- Callback(self.Refresh, self);
+		-- self.processingLinks = nil;
 	end
 	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
 	if GameTooltip and GameTooltip:IsVisible() then
@@ -983,6 +1025,9 @@ local function ToggleATTMoving(self)
 		self.isMoving = true
 	end
 end
+local function ScrollTo(self, field, value)
+	self.ScrollInfo = { field, value }
+end
 function app:GetWindow(suffix, parent, onUpdate)
 	if app.GetCustomWindowParam(suffix, "reset") then
 		ResetWindow(suffix);
@@ -1010,6 +1055,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.BuildData = BuildData;
 	window.GetRunner = GetRunner;
 	window.ToggleExtraFilters = ToggleExtraFilters
+	window.ScrollTo = ScrollTo
 
 	window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 	window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -1085,28 +1131,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	container.rows = NewWindowRowContainer(container)
 	container:Show();
 
-	-- Setup the Event Handlers
-	-- TODO: review how necessary this actually is in Retail
-	local handlers = {};
-	window:SetScript("OnEvent", function(self, e, ...)
-		local handler = handlers[e];
-		if handler then
-			handler(self, ...);
-		else
-			app.PrintDebug("Unhandled Window Event",e,...)
-			self:Update();
-		end
-	end);
-	local refreshWindow = function() DelayedCallback(window.Refresh, 0.25, window) end;
-	handlers.ACHIEVEMENT_EARNED = refreshWindow;
-	handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
-	handlers.QUEST_ACCEPTED = refreshWindow;
-	handlers.QUEST_REMOVED = refreshWindow;
-	window:RegisterEvent("ACHIEVEMENT_EARNED");
-	window:RegisterEvent("QUEST_ACCEPTED");
-	window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
-	window:RegisterEvent("QUEST_REMOVED");
-
 	window.AddEventHandler = AddEventHandler
 	window.RemoveEventHandlers = RemoveEventHandlers
 
@@ -1120,6 +1144,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 
 	-- Ensure the window updates itself when opened for the first time
 	window.HasPendingUpdate = true;
+	window.HightlightDatas = {}
 	-- TODO: eventually remove this when Windows are re-designed to have an OnInit/OnUpdate distinction for Retail
 	window:Update();
 	return window;
@@ -1147,7 +1172,7 @@ local function LocationTrigger(forceNewMap)
 	if not app.InWorld or not app.IsReady then return end
 	local window = app:GetWindow("CurrentInstance");
 	if not window:IsVisible() then return end
-	-- app.PrintDebug("LocationTrigger-Callback")
+	-- app.PrintDebug("LocationTrigger-Callback",forceNewMap)
 	if forceNewMap then
 		-- this allows minilist to rebuild itself
 		wipe(window.CurrentMaps)
@@ -1195,7 +1220,7 @@ app.TrySearchAHForGroup = function(group)
 	-- local itemID = group.itemID
 	-- if itemID then
 	local name, link = group.name, group.link or group.silentLink
-	if name and HandleModifiedItemClick(link) then
+	if name and app.HandleModifiedItemClick(link) then
 		local AH = app.AH
 		if not AH then AH = {} app.AH = AH end
 		-- AuctionFrameBrowse_Search();	-- doesn't exist
@@ -1288,7 +1313,7 @@ function app:CreateMiniListForGroup(group, forceFresh)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true});
+				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
@@ -1357,13 +1382,15 @@ function app:CreateMiniListForGroup(group, forceFresh)
 
 		app.HandleEvent("OnNewPopoutGroup", popout.data)
 		-- Sort any content added to the Popout data by the Global sort (not for popped out difficulty groups)
-		if not popout.data.difficultyID then
+		if not (popout.data.difficultyID or popout.data.instanceID) then
 			app.Sort(popout.data.g, app.SortDefaults.Global)
 		end
 
 		popout:BuildData();
-		-- always expand all groups on initial creation
-		ExpandGroupsRecursively(popout.data, true, true);
+		-- always expand all groups on initial creation if enabled
+		if app.Settings:GetTooltipSetting("Expand:MiniList") then
+			ExpandGroupsRecursively(popout.data, true, true);
+		end
 		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
@@ -1452,34 +1479,6 @@ local function AddQuestInfoToTooltip(info, quests, reference)
 			}
 		end
 	end
-end
-local function formatNumericWithCommas(amount)
-    local k
-    while true do
-        amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
-        if k == 0 then
-            break
-        end
-    end
-    return amount
-end
-local function GetMoneyString(amount)
-    if amount > 0 then
-        local formatted
-        local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
-            math_floor(amount % 100)
-        if gold > 0 then
-            formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
-        end
-        if silver > 0 then
-            formatted = (formatted or "") .. silver .. "|T237620:0|t"
-        end
-        if copper > 0 then
-            formatted = (formatted or "") .. copper .. "|T237617:0|t"
-        end
-        return formatted
-    end
-    return amount
 end
 
 -- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
@@ -1614,7 +1613,7 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;
-					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
+					if app.HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
 
 					if button == "LeftButton" then
 						-- Default behavior is to Refresh Collections.
@@ -1640,8 +1639,8 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					return true;
 				else
 					local link = reference.link or reference.silentLink;
-					if link and HandleModifiedItemClick(link) then
-						return true;
+					if app.HandleModifiedItemClick(link) then
+						return true
 					end
 				end
 
@@ -1699,6 +1698,11 @@ end)
 app.AddEventHandler("RowOnEnter", function(self)
 	local reference = self.ref;
 	if not reference then return; end
+	local window = self:GetParent():GetParent()
+	if window.HightlightDatas[reference] then
+		window.HightlightDatas[reference] = nil
+		self:SetHighlightLocked(false)
+	end
 	reference.working = nil;
 	local tooltip = GameTooltip;
 	if not tooltip then return end;
@@ -1739,9 +1743,11 @@ app.AddEventHandler("RowOnEnter", function(self)
 	-- Attempt to show the object as a hyperlink in the tooltip
 	local linkSuccessful;
 	local refkey = reference.key
-	local questReplace = app.Settings:GetTooltipSetting("Objectives")
-	if refkey ~= "encounterID" and refkey ~= "instanceID" and (refkey ~= "questID" or not questReplace) then
-		-- Encounter & Instance Links break the tooltip
+	-- Items always use their links
+	if reference.itemID
+		-- Quest links are ignored if 'Objectives' is enabled
+		or (refkey ~= (app.Settings:GetTooltipSetting("Objectives") and "questID" or "_Z_"))
+	then
 		local link = reference.link or reference.tooltipLink or reference.silentLink
 		if link and link:sub(1, 1) ~= "[" then
 			local ok, result = pcall(tooltip.SetHyperlink, tooltip, link);
@@ -1751,7 +1757,6 @@ app.AddEventHandler("RowOnEnter", function(self)
 				-- if a link fails to render a tooltip, it clears the tooltip and the owner
 				-- so we have to re-assign it here for it to use :Show()
 				tooltip:SetOwner(self, owner);
-				if not questReplace then questReplace = true end
 			end
 			-- app.PrintDebug("Link:", link:gsub("|","\\"));
 			-- app.PrintDebug("Link Result!", result, refkey, reference.__type,"TT lines",tooltip:NumLines());
@@ -1813,52 +1818,6 @@ app.AddEventHandler("RowOnEnter", function(self)
 		end
 	end
 
-	-- TODO: Convert cost to an InformationType.
-	if reference.cost then
-		if type(reference.cost) == "table" then
-			local _, name, icon, amount;
-			for k,v in pairs(reference.cost) do
-				_ = v[1];
-				if _ == "i" then
-					_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-					amount = v[3];
-					if amount > 1 then
-						amount = formatNumericWithCommas(amount) .. "x ";
-					else
-						amount = "";
-					end
-				elseif _ == "c" then
-					amount = v[3];
-					local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2]);
-					name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or (currencyData and currencyData.name) or "Unknown";
-					icon = currencyData and currencyData.iconFileID or nil;
-					if amount > 1 then
-						amount = formatNumericWithCommas(amount) .. "x ";
-					else
-						amount = "";
-					end
-				elseif _ == "g" then
-					name = "";
-					icon = nil;
-					amount = GetMoneyString(v[2]);
-				end
-				if not name then
-					reference.working = true;
-					name = RETRIEVING_DATA;
-				end
-				tooltipInfo[#tooltipInfo + 1] = {
-					left = (k == 1 and L.COST),
-					right = amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. name,
-				}
-			end
-		else
-			tooltipInfo[#tooltipInfo + 1] = {
-				left = L.COST,
-				right = GetMoneyString(reference.cost),
-			}
-		end
-	end
-
 	-- Additional information (search will insert this information if found in search)
 	if tooltip.ATT_AttachComplete == nil then
 		-- an item used for a faction which is repeatable
@@ -1874,13 +1833,6 @@ app.AddEventHandler("RowOnEnter", function(self)
 		app.ProcessInformationTypes(tooltipInfo, reference);
 	end
 
-	-- Ignored for Source/Progress
-	if reference.sourceIgnored then
-		tooltipInfo[#tooltipInfo + 1] = {
-			left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS,
-			wrap = true,
-		}
-	end
 	-- Further conditional texts that can be displayed
 	if reference.timeRemaining then
 		tooltipInfo[#tooltipInfo + 1] = {
@@ -2221,8 +2173,8 @@ app.AddEventHandler("RowOnEnter", function(self)
 	end
 	-- Add info in tooltip for the header of a Window for whether it is locked or not
 	if self.index == 0 then
-		local owner = self:GetParent():GetParent();
-		if owner and owner.isLocked then
+		local window = self:GetParent():GetParent();
+		if window and window.isLocked then
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.TOP_ROW_TO_UNLOCK,
 			}

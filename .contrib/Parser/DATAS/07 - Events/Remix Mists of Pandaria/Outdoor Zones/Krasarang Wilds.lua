@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KRASARANG_WILDS, {
 		["icon"] = 623769,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19885),	-- Campaign: Krasarang Wilds [A] (automated)
 				ach(19886),	-- Campaign: Krasarang Wilds [H] (automated)
@@ -27,7 +27,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19886,	-- Campaign: Krasarang Wilds [H]
 						19964,	-- Tour Krasarang Wilds
 					}},
-					["g"] = {
+					["groups"] = {
 						i(210334),	-- Chen Stormstout's Keg
 					},
 				}),
@@ -39,7 +39,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19999,	-- Elusive Foes: Landfall
 						19917,	-- Operation: Shieldwall [A]
 					}},
-					["g"] = {
+					["groups"] = {
 						cl(DEATHKNIGHT, {
 							iensemble(217837, {	-- Ensemble: Webbed Soulforged Exoskeleton
 								["classes"] = DEATHKNIGHT,
@@ -124,16 +124,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuest"] = 32108,	-- Domination Point [H]
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
-					["races"] = HORDE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(80439, {	-- Aid the Alliance [A]
 					["sourceQuest"] = 32109,	-- Lion's Landing [A]
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(80433, {  -- Aid the August Celestials

@@ -6,8 +6,10 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/Criteria
     /// </summary>
-    internal class Criteria : IDBType
+    [DataModule]
+    public class Criteria : IDBType
     {
+        [ExportableData("criteriaID")]
         public long ID { get; set; }
         public long Type { get; set; }
         public long Asset { get; set; }
@@ -22,14 +24,6 @@ namespace ATT.DB.Types
         public long Eligibility_world_state_value { get; set; }
 
         private TypeFlags _flags => (TypeFlags)Flags;
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>
-            {
-                { "criteriaID", ID },
-            };
-        }
 
         public bool IsIgnoreFlags() =>
             (_flags & TypeFlags.DoNotDisplay) == TypeFlags.DoNotDisplay;
@@ -55,12 +49,37 @@ namespace ATT.DB.Types
             GetRequiredFlightPath() > 0 ||
             GetRecruitFollowerID() > 0 ||
             GetGarrisonMissionID() > 0 ||
+            GetRequiredSkillID() > 0 ||
+            GetTargetClassID() > 0 ||
+            GetTargetRaceID() > 0 ||
+            // Currency gained
+            Type == 12 ||
+            // Designer Value{`Uses Record ID}
+            Type == 21 ||
+            // Win arena "{Map}"
+            Type == 32 ||
+            // Do an emote
+            Type == 54 ||
             // Reveal world map overlay "{WorldMapOverlay}" (Exploration stuff)
             Type == 43 ||
             // Equip item in slot "{$Equip Slot}"
             Type == 49 ||
+            // Gain aura "{Spell}"
+            Type == 69 ||
+            // Land targeted spell "{Spell}" on a target
+            Type == 110 ||
             // Mythic Plus Completed
-            Type == 216;
+            Type == 216 ||
+            // Learned as new pet (Account Only)
+            Type == 155 ||
+            // Obtain a pet through battle (Account Only)
+            Type == 157 ||
+            // Win a pet battle
+            Type == 158 ||
+            // Object a pet through battle
+            Type == 161 ||
+            // Reach Max Level
+            Type == 221;
 
         public long GetSourceQuest() =>
             Type == 27 ? Asset : 0;
@@ -78,6 +97,9 @@ namespace ATT.DB.Types
         public long GetCastedSpellID() =>
             Type == 29 ? Asset : 0;
 
+        public long GetExplorationWorldMapOverlayID() =>
+            Type == 43 ? Asset : 0;
+
         public long GetFactionID() =>
             Type == 46 ? Asset : 0;
 
@@ -88,7 +110,7 @@ namespace ATT.DB.Types
             Type == 174 ? Asset : 0;
 
         public long GetProviderItem() =>
-        Type == 36 || Type == 41 || Type == 42 || Type == 57 ? Asset : 0;
+            Type == 36 || Type == 41 || Type == 42 || Type == 57 ? Asset : 0;
 
         public long GetProviderNPC() =>
             (Type == 0 || Type == 96) && Asset > 0 ? Asset : 0;
@@ -101,6 +123,15 @@ namespace ATT.DB.Types
 
         public long GetRequiredFlightPath() =>
             Type == 262 ? Asset : 0;
+
+        public long GetRequiredSkillID() =>
+            Type == 7 ? Asset : 0;
+
+        public long GetTargetClassID() =>
+            Type == 52 ? Asset : 0;
+
+        public long GetTargetRaceID() =>
+            Type == 53 ? Asset : 0;
 
         public long GetModifierTreeID() =>
             Modifier_tree_ID;

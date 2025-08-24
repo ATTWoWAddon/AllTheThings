@@ -5,28 +5,28 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 	m(VALSHARAH, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(93758, {	-- Antydas Nightcaller
-				["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure.  The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink.  Enjoy your foray into larceny!",
+				["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure. The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink. Enjoy your foray into larceny!",
 				["coord"] = { 64.5, 85.3, VALSHARAH },
 				["questID"] = 38903,
 			}),
 			n(110562, {	-- Bahagar
 				["coord"] = { 45.2, 88.1, VALSHARAH },
 				["questID"] = 43446,
-				["g"] = {
+				["groups"] = {
 					i(130135),	-- Mana-Prowler Leggings
 				},
 			}),
 			n(92965, {	-- Darkshade
 				["coord"] = { 44.0, 52.5, VALSHARAH },
 				["questID"] = 38767,
-				["g"] = {
+				["groups"] = {
 					i(130166),	-- Risen Saber Kitten (PET!)
 				},
 			}),
 			n(97517, {	-- Dreadbog
 				["coord"] = { 60.4, 44.1, VALSHARAH },
 				["questID"] = 39858,
-				["g"] = {
+				["groups"] = {
 					i(130125),	-- Dreadbog Fungalflesh Cape
 				},
 			}),
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["crs"] = { 93654 },	-- Skul'vrax
 				["coord"] = { 60.4, 90.7, VALSHARAH },
 				["questID"] = 38887,
-				["g"] = {
+				["groups"] = {
 					i(130115),	-- Darkfiend Slippers
 				},
 			}),
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["crs"] = { 112472 },	-- Tehd Shoemaker
 				["coord"] = { 49.1, 47.4, VALSHARAH },
 				["questID"] = 44070,
-				["g"] = {
+				["groups"] = {
 					i(132359),	-- The Subjugator's Shackles
 				},
 			}),
@@ -51,21 +51,21 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["crs"] = { 92111 },	-- Lorel Sagefeather
 				["coord"] = { 59.7, 77.2, VALSHARAH },
 				["questID"] = 38468,
-				["g"] = {
+				["groups"] = {
 					i(130154),	-- Pygmy Owl (PET!)
 				},
 			}),
 			n(95123, {	-- Grelda the Hag
 				["coord"] = { 66.0, 52.5, VALSHARAH },
 				["questID"] = 40126,
-				["g"] = {
+				["groups"] = {
 					i(130122),	-- Grelda's Ageless Pendant
 				},
 			}),
 			n(93030, {	-- Ironbranch
 				["coord"] = { 58.8, 33.9, VALSHARAH },
 				["questID"] = 40080,
-				["g"] = {
+				["groups"] = {
 					i(130126),	-- Iron Branch
 				},
 			}),
@@ -76,35 +76,35 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			n(98241, {	-- Lyrath Moonfeather
 				["coord"] = { 61.9, 30.2, VALSHARAH },
 				["questID"] = 40079,
-				["g"] = {
+				["groups"] = {
 					i(130118),	-- Moonfeather Handwraps
 				},
 			}),
 			n(95221, {	-- Mad Henryk
 				["coord"] = { 47.1, 57.8, VALSHARAH },
 				["questID"] = 39357,
-				["g"] = {
+				["groups"] = {
 					i(130214),	-- Worn Doll (TOY!)
 				},
 			}),
 			n(95318, {	-- Perrexx the Corruptor
 				["coord"] = { 61.1, 69.9, VALSHARAH },
 				["questID"] = 39596,
-				["g"] = {
+				["groups"] = {
 					i(130137),	-- Bramblevine Spaulders
 				},
 			}),
 			n(94485, {	-- Pollous the Fetid
 				["coord"] = { 67.0, 44.0, VALSHARAH },
 				["questID"] = 39130,
-				["g"] = {
+				["groups"] = {
 					i(130168),	-- Fetid Waveling (PET!)
 				},
 			}),
 			n(92180, {	-- Seersei
 				["coord"] = { 41.8, 77.7, VALSHARAH },
 				["questID"] = 38479,
-				["g"] = {
+				["groups"] = {
 					i(130171),	-- Cursed Orb (TOY!)
 				},
 			}),
@@ -112,14 +112,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["description"] = "Click on Theryssia's nameplate on the gravestone.",
 				["coord"] = { 38.0, 52.8, VALSHARAH },
 				["questID"] = 38772,
-				["g"] = {
+				["groups"] = {
 					i(130136),	-- Theryssia's White Gown
 				},
 			}),
 			n(93205, {	-- Thondrax
 				["coord"] = { 62.6, 47.8, VALSHARAH },
 				["questID"] = 38780,
-				["g"] = {
+				["groups"] = {
 					i(130121),	-- Thondrax's Night-Runed Bands
 				},
 			}),
@@ -127,21 +127,21 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["crs"] = { 109225 },	-- Elandris Bladesong
 				["coord"] = { 67.0, 69.5, VALSHARAH },
 				["questID"] = 43176,
-				["g"] = {
+				["groups"] = {
 					i(130133),	-- Undergrell Mobilehelm
 				},
 			}),
 			o(241128, {	-- Unguarded Thistleleaf Treasure
 				["coord"] = { 55.4, 77.6, VALSHARAH },
 				["questID"] = 38466,
-				["g"] = {
+				["groups"] = {
 					i(130147),	-- Thistleleaf Branch (TOY!)
 				},
 			}),
 			n(97504, {	-- Wraithtalon
 				["coord"] = { 66.6, 37.0, VALSHARAH },
 				["questID"] = 39856,
-				["g"] = {
+				["groups"] = {
 					i(130116),	-- Twisted Wraithtalon Gloves
 				},
 			}),

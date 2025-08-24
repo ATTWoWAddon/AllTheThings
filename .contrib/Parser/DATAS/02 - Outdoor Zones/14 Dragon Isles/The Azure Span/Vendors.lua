@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(VENDORS, {
 			n(186446, {	-- Elder Nappa <Innkeeper>
 				["coord"] = { 12.4, 49.4, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(194689),	-- Anchovy Crisps
 					i(194683),	-- Buttermilk
 					i(194692),	-- Distilled Fish Juice
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(193637, {	-- Jinkutuk
 				["coord"] = { 13.9, 49.5, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(192153),	-- Frigidfish
 					i(198104, {	-- Recipe: Blubbery Muffin (RECIPE!)
 						["cost"] = {
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(196069, {	-- Patchu
 				["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(192459, {	-- Jean's Lucky Fish (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 					}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(199448, {	-- Tattukiaka <Ottuk Trader>
 				["coord"] = { 14.0, 49.6, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198871, {	-- Iskaara Trader's Ottuk (MOUNT!)
 						["cost"] = {
 							{ "i", 195496, 1 },	-- 1x Eye of the Vengeful Hurricane
@@ -69,13 +69,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(192560, {	-- Elder Nappa <Innkeeper>
 				["coord"] = { 13.2, 49.6, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(197847),	-- Gorloc Fin Soup
 				},
 			}),
 			n(189460, {	-- Vel Tal IX
 				["coord"] = { 37.4, 62.4, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(197853),	-- Critter Kebab
 					i(197854),	-- Enchanted Argali Tenderloin
 					i(197851),	-- Extra Crispy Mutton

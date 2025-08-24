@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66159 },	-- A Message Most Dire
 					["provider"] = { "n", 189842 },	-- Captain Drine
 					["coord"] = { 59.3, 34.8, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(195203),	-- Eavesdropper's Cap
 						i(195204),	-- Eavesdropper's Coif
 						i(195202),	-- Eavesdropper's Cowl
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66159 },	-- A Message Most Dire
 					["provider"] = { "n", 189842 },	-- Captain Drine
 					["coord"] = { 59.3, 34.8, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(198859),	-- Revealing Dragon's Eye
 					},
 				}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66167 },	-- Southern Exposure
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 35.8, 82.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197110),	-- Highland Drake: Plated Head (MM!)
 					},
 				}),
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 37.6, 83.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191269),	-- South Hold Garrison Signet (QI!)
 					},
 				}),
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 190458 },	-- Dead Magmasworn Rockcleaver
 					["coord"] = { 37.9, 83.3, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(192759),	-- Magmasworn Spear (QI!)
 						i(195219),	-- Magmasworn Spearhead
 					},
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "o", 377114 },	-- Coil of Heavy Rope
 					["coord"] = { 38.6, 83.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(192758),	-- Coil of Heavy Rope (QI!)
 					},
 				}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 37.6, 83.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197126),	-- Highland Drake: Hooked Horns (MM!)
 					},
 				}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66250 },	-- Where's The Chief?
 					["provider"] = { "n", 190562 },	-- Guardian Velomir
 					["coord"] = { 40.2, 85.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195224),	-- Magmatalon Bracers
 						i(195221),	-- Magmatalon Wraps
 						i(195223),	-- Magmatalon Wrist Scales
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66080 },	-- Temporal Difficulties
 					["provider"] = { "n", 187098 },	-- Slaszerathel
 					["coord"] = { 55.0, 75.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(198408),	-- Timewalker Notes (QI!)
 						i(198410),	-- Timewalker Staff (QI!)
 					},
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70136 },	-- Haven't Got Time For the Pain
 					["provider"] = { "n", 187098 },	-- Slaszerathel
 					["coord"] = { 55.0, 75.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195207),	-- Junior Timewarder Breeches
 						i(195209),	-- Junior Timewarder Greaves
 						i(195206),	-- Junior Timewarder Leggings
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66083 },	-- Feels Like the First Time
 					["provider"] = { "n", 187877 },	-- Andantenormu
 					["coord"] = { 57.5, 78.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195212),	-- Causality Band
 						i(192809),	-- Temporal Residue (QI!)
 					},
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 190929 },	-- Aeonormu
 					["coord"] = { 57.5, 78.9, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(194520),	-- Scroll of Timewalker Knowledge (QI!)
 						i(195194),	-- Time Walkers
 						i(195195),	-- Time Walkers
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65935 },	-- Catching Up to Chromie
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197151),	-- Highland Drake: Spiked Tail (MM!)
 					},
 				}),
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65935 },	-- Catching Up to Chromie
 					["provider"] = { "n", 186433 },	-- Andantenormu
 					["coord"] = { 59.6, 82.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195184),	-- Bronze Tower
 						i(195211),	-- Chromie's Spare Beacon
 						i(195214),	-- Hoursteel Barrier
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65935 },	-- Catching Up to Chromie
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191113),	-- Timewalker Staff (QI!)
 					},
 				}),
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195201),	-- Chronomental Gauntlets
 						i(195200),	-- Chronomental Gloves
 						i(195199),	-- Chronomental Grips
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
 					["maps"] = { 2092 },	-- Azmerloth
-					["g"] = {
+					["groups"] = {
 						i(192749),	-- Chrono Crystal
 					},
 				}),
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 186953 },	-- Possible Future You
 					["coord"] = { 61.4, 50.2, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						i(195185),	-- Annihilation Warder's Cloak
 						i(192454),	-- Elemental Essence (QI!)
 					},
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66028 },	-- To the Future!
 					["provider"] = { "n", 183860 },	-- Soridormi
 					["coord"] = { 61.1, 50.8, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						i(192467),	-- Bandages
 					},
 				}),
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66033 },	-- To the... Past?
 					["provider"] = { "n", 187344 },	-- Andantenormu
 					["coord"] = { 59.8, 66.1, 2092 },	-- Azmerloth
-					["g"] = {
+					["groups"] = {
 						i(195210),	-- Heart of Azmerloth
 					},
 				}),
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66039 },	-- Chromie Time
 					["provider"] = { "n", 186499 },	-- Chromie
 					["coord"] = { 53.4, 44.1, 2089 },	-- The Black Empire
-					["g"] = {
+					["groups"] = {
 						i(194521),	-- Cliffside Wylderdrake (MOUNT!)
 						i(195220),	-- Uncanny Pocketwatch
 						ach(15796),	-- Cliffside Companion
@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66040 },	-- Back to the Future
 					["provider"] = { "n", 186931 },	-- Nozdormu
 					["coord"] = { 60.1, 82.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195213),	-- Life-Binder's Band
 					},
 				}),
@@ -401,9 +401,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
-					["providers"] = {
-						{ "n", 187678 },	-- Alexstrasza the Life-Binder
-						{ "n", 190902 },	-- Alexstrasza the Life-Binder
+					["qgs"] = {
+						187678,	-- Alexstrasza the Life-Binder
+						190902,	-- Alexstrasza the Life-Binder
 					},
 					["coords"] = {
 						{ 72.5, 56.2, THALDRASZUS },
@@ -412,12 +412,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				------ Chapter 4 ------
 				q(70437, {	-- To Tyrhold
-					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66221,	-- Moving On
 						66159,	-- A Message Most Dire
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.4, 35.4, VALDRAKKEN },
 				}),
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 72.4, 56.1, THALDRASZUS },
 					["maps"] = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
-					["g"] = {
+					["groups"] = {
 						i(197921),	-- Primal Infusion
 					},
 				}),
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71179 },	-- Look to the Overlook
 					["provider"] = { "n", 189174 },	-- Commander Thadezus
 					["coord"] = { 52.7, 67.3, THALDRASZUS },
-					["g"] ={
+					["groups"] ={
 						i(197097),	-- Highland Drake: Spined Back (MM!)
 						i(192795),	-- Rejuvenating Draught
 					},
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66468 },	-- What Once Was Ours
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.4, 65.2, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(192808),	-- Primalist Orders (QI!)
 					},
 				}),
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66468 },	-- What Once Was Ours
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.4, 65.2, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200671),	-- Earthen Gateway Stone (QI!)
 						i(200672),	-- Iceforged Gateway Stone (QI!)
 						i(200670),	-- Misttouched Gateway Stone (QI!)
@@ -489,7 +489,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.8, 64.3, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197103),	--	Highland Drake: Maned Chin (MM!)
 					},
 				}),
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66473 },	-- The Land Awakens
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.8, 64.3, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200537),	-- Bundle of Primalist Orders
 					},
 				}),
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
 					["coord"] = { 54.7, 69.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191405),	-- Alvi's "Ledger" [book]
 						i(191317),	-- Crude Tarasek Key (QI!)
 					},
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
 					["coord"] = { 54.7, 69.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191852),	-- Waywatcher Supplies (QI!)
 					},
 				}),
@@ -561,7 +561,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
 					["coord"] = { 57.0, 67.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195187),	-- Artist's Belt
 						i(195186),	-- Artist's Cinch
 						i(195188),	-- Artist's Sash
@@ -575,7 +575,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
 					["coord"] = { 57.0, 67.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197122),	-- Highland Drake: Heavy Horns (MM!)
 					},
 				}),
@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(189384),	-- Ornithological Medical Kit
 					},
 				}),
@@ -624,7 +624,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(190188),	-- The Chirpsnide Auto-Excre-Collector
 					},
 				}),
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 184591 },	-- Segallia
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191178),	-- Feather-Plucker 3300 Bolts (QI!)
 						i(191177),	-- Feather-Plucker 3300 Exhaust Pipe (QI!)
 						i(189453),	-- Feather-Plucker 3300 Gasket (QI!)
@@ -659,7 +659,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(189974),	-- Creekborne's Core (QI!)
 						i(189979),	-- Screechflight Staff (QI!)
 						i(189981),	-- Screechflight Talon (QI!)
@@ -674,7 +674,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 184591 },	-- Segallia
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(189454),	-- Feather-Plucker 3300 (QI!)
 						i(189751),	-- Hatchling Feather (QI!)
 					},
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(189899),	-- Bluefeather Egg (QI!)
 					},
 				}),
@@ -700,7 +700,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 43.5, 70.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191681),	-- Im-PECK-able Screechflight Disguise
 					},
 				}),
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65778 },	-- Screechflight Potluck
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 43.5, 72.1, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(197133),	-- Highland Drake: Spined Cheek (MM!)
 						i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
 						i(191763),	-- Im-PECK-able Screechflight Disguise v2
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66134 },	-- Azeroth Pest Control
 					["provider"] = { "o", 376451 },	-- Bronze Stopwatch
 					["coord"] = { 38.9, 74.3, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191548),	-- Bronze Pocket Watch
 					},
 				}),
@@ -744,7 +744,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
 					["provider"] = { "n", 187300 },	-- Gryrmpech
 					["coord"] = { 37.9, 75.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191473),	-- Watery Essence (QI!)
 					},
 				}),
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 187300 },	-- Gryrmpech
 					["coord"] = { 37.9, 75.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(191676),	-- Concentrated Essence of Water
 					},
 				}),
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66139 },	-- Flame at Last
 					["provider"] = { "n", 187300 },	-- Gryrmpech
 					["coord"] = { 37.9, 75.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(194098),	-- Lord Basilton (PET!)
 					},
 				}),
@@ -825,7 +825,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189045 },	-- Mara
 					["coord"] = { 49.6, 58.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(193043),	-- Missing Ward Pieces (QI!)
 					},
 				}),
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189045 },	-- Mara
 					["coord"] = { 49.6, 58.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(195192),	-- Sister's Gift
 						i(195193),	-- Sister's Keeper
 						i(195190),	-- Sister's Token
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66252 },	-- Reporting In
 					["provider"] = { "n", 189842 },	-- Captain Drine
 					["coord"] = { 56.0, 40.0, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(200273),	-- Saboteur's Map (QI!)
 					},
 				}),
@@ -932,7 +932,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70837 },	-- Follow the Clues
 					["provider"] = { "n", 196416 },	-- Investigator Erima
 					["coord"] = { 42.7, 81.9, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200463),	-- Mistyvale Map: Black Market Auction House
 						i(200462),	-- Mistyvale Map: Butterfly Garden
 						i(200461),	-- Mistyvale Map: Training Grounds
@@ -961,7 +961,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70850 },	-- Maldra's in Hot Water
 					["provider"] = { "n", 196562 },	-- Maldra Flametongue
 					["coord"] = { 42.7, 78.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200087),	-- Fallingwater Mote (QI!)
 					},
 				}),
@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72412 },	-- Explosive Interruption
 					["provider"] = { "n", 199397 },	-- Investigator Erima
 					["coord"] = { 46.4, 50.8, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(204407),	-- Rebel Detonator (QI!)
 					},
 				}),
@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72412 },	-- Explosive Interruption
 					["provider"] = { "n", 199396 },	-- Maldra Flametongue
 					["coord"] = { 46.3, 50.7, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(202855),	-- Maldra's Ring of Elemental Binding
 					},
 				}),
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72412 },	-- Explosive Interruption
 					["provider"] = { "n", 199396 },	-- Maldra Flametongue
 					["coord"] = { 46.3, 50.7, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
 						i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
 						i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
@@ -1062,7 +1062,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
 					["provider"] = { "n", 199391 },	-- Maldra Flametongue
 					["coord"] = { 46.4, 55.9, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(203390),	-- Maldra's Ring of Elemental Binding
 					},
 				}),
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72419 },	-- Cleaning up the Cliffraff
 					["provider"] = { "n", 199301 },	-- Investigator Erima
 					["coord"] = { 46.4, 55.9, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(203383),	-- Notes on Dragonkin Equality
 					},
 				}),
@@ -1087,7 +1087,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 200839 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 76.8, 33.5, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						ach(17734),	-- Active Listening Skills
 						title(498),	-- <Name> the Reconciler
 					},
@@ -1121,7 +1121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72352 },	-- HQT for moving closer to Sneaky Mud Mask npc
 					["provider"] = { "n", 198590 },	-- Sneaky Mud Mask
 					["coord"] = { 38.6, 46.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200872),	-- Living Mud Mask (PET!)
 						i(198818),	-- Sneaky Mud Mask (QI!)
 					},
@@ -1141,11 +1141,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.Quest, 76423, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- No Limits
 				["icon"] = 5205847,
-				["g"] = {
+				["groups"] = {
 					q(76423, {	-- No Limits
-						["providers"] = {
-							{ "n", 208035 },	-- Chromie
-							{ "n", 208086 },	-- Chromie
+						["qgs"] = {
+							208035,	-- Chromie
+							208086,	-- Chromie
 						},
 						["coords"] = {
 							{ 60.9, 40.0, VALDRAKKEN },
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 76419 },	-- Violence Will Solve It
 						["provider"] = { "n", 207634 },	-- Eternus
 						["coord"] = { 37.9, 83.2, TANARIS },
-						["g"] = {
+						["groups"] = {
 							i(208099),	-- Quickened Sand (QI!)
 						},
 					}),
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 76421 },	-- The Fate We Make
 						["provider"] = { "n", 206971 },	-- Nozdormu
 						["coord"] = { 37.7, 83.2, TANARIS },
-						["g"] = {
+						["groups"] = {
 							iensemble(210024, {	-- Ensemble: Temporal Burdens
 								["extraTransmogSetSpells"] = {
 									424247,	-- Ensemble: Temporal Burdens
@@ -1199,7 +1199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(194687),	-- Echo of Duty (QI!)
 					i(195218),	-- Highfather's Burden
 					i(195215),	-- Highfather's Cover
@@ -1211,14 +1211,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(199064),	-- Vitrified Sand (QI!)
 				},
 			}),
 			q(66929, {	-- Gotta Collect Them All
 				["provider"] = { "n", 191414 },	-- Yumadormu
 				["coord"] = { 59.7, 43.6, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(194033),	-- Waterlogged Card (QI!)
 				},
 			}),

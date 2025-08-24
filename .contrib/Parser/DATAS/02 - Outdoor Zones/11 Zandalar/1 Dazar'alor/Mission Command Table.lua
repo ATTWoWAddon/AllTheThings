@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
 				{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 			},
-			["g"] = {
+			["groups"] = {
 				ach(12869, {	-- Azeroth at War: After Lordaron
 					["_doautomation"] = true,
 				}),
@@ -31,11 +31,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				mission(2122, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 166242 },	-- A Shady Message [H]
-					["g"] = {
+					["groups"] = {
 						q(54447, {	-- A Shady Character
-							["pvp"] = true,
 							["pb"] = true,
-							["g"] = {
+							["pvp"] = true,
+							["groups"] = {
 								i(166244),	-- Token of Shadiness (QI!)
 							},
 						}),
@@ -89,7 +89,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(ZANDALAR, {
 		m(DAZARALOR, {
 			n(138706, {
-				-- q(54445),	-- Won PvP pet battle, [A Shady Character] has been added to your Mission Table. [H]
 				q(54446),	-- Completing A Shady Character (Mission), accepting A Shady Character (Quest) [H]
 			}),
 		}),

@@ -8,13 +8,13 @@ root(ROOTS.Zones, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
 					425,	-- Ash Viper (PET!)
-					706,	-- Bandicoon (PET!)
 					1914,	-- Coastal Sandpiper (PET!)
 					751,	-- Dancing Watter Skimmer (PET!)
 					1325,	-- Flamering moth (PET!)
 					1591,	-- Violet Firefly (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
+					pet(706),	-- Bandicoon (PET!)
 					pet(1809, {	-- Crystalline Broodling (PET!)
 						["description"] = "Found around Falanaar.",
 						["coord"] = { 21.0, 41.0, SURAMAR },

@@ -8,13 +8,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 } }, {
 			ach(10998, {	-- Vindictive Combatant [A]
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(10997, {	-- Vindictive Combatant [H]
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -68,7 +68,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -272,7 +272,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -478,7 +478,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -682,7 +682,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(146133, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -888,7 +888,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["groups"] = bubbleDown({
 						["sourceAchievements"] = {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite
@@ -1099,7 +1099,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["groups"] = bubbleDown({
 						["sourceAchievements"] = {
 							11578,	-- Vindictive Elite
 							11579,	-- Fearless Elite

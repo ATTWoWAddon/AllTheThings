@@ -8,14 +8,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28870, {	-- Return to the Lost City
-					["qg"] = 47684,	-- King Phaoris
 					["sourceQuest"] = 28520,	-- The Fall of Neferset City
+					["qg"] = 47684,	-- King Phaoris
 					["coord"] = { 54.9, 32.7, ULDUM },
 					["isBreadcrumb"] = true,
 				}),
 				q(28781, {	-- Targets of Opportunity
-					["qg"] = 50038,	-- Captain Hadan
 					["sourceQuest"] = 28870,	-- Return to the Lost City
+					["qg"] = 50038,	-- Captain Hadan
 					["groups"] = {
 						i(66905),	-- Clandestine Spaulders
 						i(66906),	-- Bracers of the Lost City
@@ -23,8 +23,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28783, {	-- The Source of Their Power
-					["qg"] = 50038,	-- Captain Hadan
 					["sourceQuest"] = 28870,	-- Return to the Lost City
+					["qg"] = 50038,	-- Captain Hadan
 					["groups"] = {
 						i(66910),	-- Blight-Lifter's Mantle
 						i(66908),	-- Treads of the Neferset

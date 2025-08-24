@@ -1,0 +1,10 @@
+11.2.0.61476
+title(638),	-- %s the Delver Within
+title(641),	-- %s Bronzebeard
+title(644),	-- %s of the Twilight Star
+11.2.0.61624
+title(647),	-- Ba'%s
+title(648),	-- Zo'%s
+title(649),	-- Om'%s
+11.2.0.62049
+title(650),	-- Delver %s

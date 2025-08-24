@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82825,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195171 },
-				["g"] = {
+				["groups"] = {
 					i(213005),	-- Blue Kaldorei Backpack
 				},
 			}),
@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82821,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195176 },
-				["g"] = {
+				["groups"] = {
 					i(213010),	-- Blue Kaldorei Pouch
 				},
 			}),
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82824,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195175 },
-				["g"] = {
+				["groups"] = {
 					i(213009),	-- Violet Kaldorei Pouch
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82822,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195169 },
-				["g"] = {
+				["groups"] = {
 					i(213003),	-- Blue Kaldorei Bedroll
 				},
 			}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82826,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195174 },
-				["g"] = {
+				["groups"] = {
 					i(213008),	-- Kaldorei Bow Carver
 				},
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82828,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195172 },
-				["g"] = {
+				["groups"] = {
 					i(213006),	-- Night Elven Horn
 				},
 			}),
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82827,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195173 },
-				["g"] = {
+				["groups"] = {
 					i(213007),	-- Night Elven Signal
 				},
 			}),
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82831,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195215 },
-				["g"] = {
+				["groups"] = {
 					i(213160),	-- Kaldorei Moon Bow
 				},
 			}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82829,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195177 },
-				["g"] = {
+				["groups"] = {
 					i(213011),	-- Night Elven Shield
 				},
 			}),
@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82823,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195178 },
-				["g"] = {
+				["groups"] = {
 					i(213012),	-- Night Elven Spear
 				},
 			}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					82830,
 					-- #endif
 				["lockCriteria"] = { 1, "sourceID", 195179 },
-				["g"] = {
+				["groups"] = {
 					i(213013),	-- Kaldorei Sentinel's Spyglass
 				},
 			}),

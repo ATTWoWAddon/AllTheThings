@@ -12,21 +12,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					175776,	-- Courage
 					175760,	-- Larion Cub
 				},
-				["g"] = {
+				["groups"] = {
 					i(184400),	-- Courage (PET!)
 				},
 			}),
 			n(171524, {	-- Honor Steward
-				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest.  Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
+				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest. Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
 				["coord"] = { 56.8, 19.0, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(180797),	-- Memorial Offering Key
 				},
 			}),
 			n(181682, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Lost Soul (Otter)
 				["description"] = "Use /hug on the Lost Soul. It has roughly a 60 minute respawn.",
 				["coord"] = { 49.85, 46.85, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(187818),	-- Otter Soul
 				},
 			})),

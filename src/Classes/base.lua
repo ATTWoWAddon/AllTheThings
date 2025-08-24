@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
-	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
+local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
+	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -48,12 +48,11 @@ local function CreateHash(t)
 			hash = hash .. ":" .. t.achievementID;
 		elseif key == "itemID" and t.modItemID and t.modItemID ~= t.itemID then
 			hash = key .. t.modItemID;
-		elseif key == "creatureID" then
-			if t.encounterID then hash = hash .. ":" .. t.encounterID; end
+		elseif key == "npcID" or key == "creatureID" then
 			local difficultyID = GetRelativeValue(t, "difficultyID");
 			if difficultyID then hash = hash .. "-" .. difficultyID; end
 		elseif key == "encounterID" then
-			if t.creatureID then hash = hash .. ":" .. t.creatureID; end
+			if t.npcID then hash = hash .. ":" .. t.npcID; end
 			local difficultyID = GetRelativeValue(t, "difficultyID");
 			if difficultyID then hash = hash .. "-" .. difficultyID; end
 			if t.crs then
@@ -109,6 +108,8 @@ local ShouldExcludeFromTooltipHelper = function(t)
 	if parent then return parent.ShouldExcludeFromTooltip; end
 	return false;
 end
+-- Classic needs to use Search Module for this
+local SourceSearcher = app.SourceSearcher or setmetatable({}, { __index = function(t,key) return app.GetRawField end})
 
 -- Represents how long a given group is allowed to permit a retryable operation
 local CAN_RETRY_DURATION_SEC = 3
@@ -140,20 +141,29 @@ local DefaultFields = {
 		local key = t.key;
 		-- only process this logic for real 'Things' in the game
 		if not app.ThingKeys[key] then return; end
+		local searcher = SourceSearcher[key]
 		-- quest 76250
 		-- item with modID, so key is itemID, t[key] is 13544
 		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
 		-- so we need to know to search by 'itemID' but using the 'modItemID' here for base itemID lookups of missing
 		-- i.e. if searching 13544, we allow 13544.01 to count as a non-missing representation of the search... makes sense?
-		local val = key == "itemID" and t.modItemID or t[key];
-		local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject("itemID", val));
-		local missing = true;
-		while o do
-			missing = rawget(o, "_missing");
-			o = not missing and (o.sourceParent or o.parent);
+		-- TODO: would be nice to store _missing in the Thing's cache instead of every reference of that Thing
+		local os = searcher(key, t[key]) or app.EmptyTable
+		local o
+		for i=1,#os do
+			o = os[i]
+			while o do
+				if rawget(o, "_missing") then
+					t._missing = true
+					return true
+				end
+				o = o.parent
+			end
+			t._missing = false
+			return false
 		end
-		t._missing = missing or false;
-		return missing;
+		t._missing = true
+		return true
 	end,
 	-- Whether or not something is repeatable.
 	["repeatable"] = function(t)
@@ -163,6 +173,21 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	["nmc"] = function(t)
+		local c = t.c;
+		local nmc = c and not containsValue(c, app.ClassIndex) or false;
+		-- app.PrintDebug("base.nmc",t.__type,nmc)
+		t.nmc = nmc;
+		return nmc;
+	end,
+	["nmr"] = function(t)
+		local races = t.races;
+		local r = t.r;
+		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
+		-- app.PrintDebug("base.nmr",t.__type,nmr)
+		t.nmr = nmr;
+		return nmr;
+	end,
 	["AccessibilityScore"] = function(t)
 		local score = 0;
 		if GetRelativeValue(t, "nmr") then
@@ -193,6 +218,12 @@ local DefaultFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
+	["filterID"] = function(t)	-- we like to use different field names in different places
+		return t.f
+	end,
+	["iconPath"] = function(t)
+		return rawget(t, "icon")
+	end,
 	["ShouldExcludeFromTooltipHelper"] = function(t)
 		return ShouldExcludeFromTooltipHelper;
 	end,
@@ -204,63 +235,43 @@ local DefaultFields = {
 	-- check 'if [not] o.CanRetry then ...'
 	-- Assign this field directly in the group if re-tries on the group should be permanently disabled
 	-- i.e. if not t.CanRetry then t.CanRetry = false end
+	-- (number) - the retry has been started with this duration in seconds
+	-- true - the group is pending an active retry timer
+	-- nil - the group has retried and the retry timer has not been re-started
 	["CanRetry"] = function(t)
 		local canretry = t.__canretry
 		if canretry == nil then
 			-- first check if we can retry for this group
 			canretry = true
 			t.__canretry = canretry
-			-- app.PrintDebug("retry:start",app:SearchLink(t))
+			-- app.PrintDebug("retry:start",t,canretry,t.hash)
 			-- after some seconds, mark this group to no longer retry
 			DelayedCallback(function(t)
-				-- app.PrintDebug("__cantry:done",app:SearchLink(t))
+				-- app.PrintDebug("__cantry:done",t,false,t.hash)
 				t.__canretry = false
+				t.HasRetried = true
 			end, CAN_RETRY_DURATION_SEC, t)
+			return CAN_RETRY_DURATION_SEC
 		elseif canretry == false then
 			-- group has been marked to stop retrying, but it can be re-tried later
 			t.__canretry = nil
-			-- app.PrintDebug("retry:nil",app:SearchLink(t))
+			-- app.PrintDebug("retry:nil",t,nil,t.hash)
 			return
-		-- else app.PrintDebug("retry:wait",t)
+		-- else app.PrintDebug("retry:wait",t,canretry)	-- cannot ref t fields here or may infinite loop on CanRetry from .text
 		end
 		return canretry
 	end,
 };
 
 if app.IsRetail then
+	local TryColorizeName = app.TryColorizeName
 	-- Crieve doesn't see these fields being included as necessary,
 	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
-	for fieldName,fieldMethod in pairs({
-		-- Default text should be a valid link or name
-		-- In Retail, text can be colored and can be based on a variety of possible fields
-		-- trying to individually maintain variable coloring in every object class is quite absurd
-		["text"] = function(t)
-			return t.link or app.TryColorizeName(t);
-		end,
-		["nmc"] = function(t)
-			local c = t.c;
-			local nmc = c and not containsValue(c, app.ClassIndex) or false;
-			-- app.PrintDebug("base.nmc",t.__type,nmc)
-			t.nmc = nmc;
-			return nmc;
-		end,
-		["nmr"] = function(t)
-			local races = t.races;
-			local r = t.r;
-			local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
-			-- app.PrintDebug("base.nmr",t.__type,nmr)
-			t.nmr = nmr;
-			return nmr;
-		end,
-		-- we like to use different field names in different places
-		["filterID"] = function(t)
-			return t.f
-		end,
-		["iconPath"] = function(t)
-			return rawget(t, "icon")
-		end,
-	}) do
-		DefaultFields[fieldName] = fieldMethod;
+	-- Default text should be a valid link or name
+	-- In Retail, text can be colored and can be based on a variety of possible fields
+	-- trying to individually maintain variable coloring in every object class is quite absurd
+	DefaultFields.text = function(t)
+		return t.link or TryColorizeName(t)
 	end
 end
 
@@ -435,6 +446,43 @@ local function CloneObject(object, ignoreChildren)
 	end
 	return clone;
 end
+-- Allow importing a specific set of Class functions from one Class to another
+local function ImportClassFunctions(baseClassName, copyClassName, ...)
+	-- make sure the base class exists
+	local baseClass = type(baseClassName) == "table" and baseClassName or classDefinitions[baseClassName]
+	if not baseClass then error("ImportClassFunctions - base Class does not exist"..(baseClassName or "")) end
+
+	-- make sure the copy class exists
+	local copyClass = type(copyClassName) == "table" and copyClassName or classDefinitions[copyClassName]
+	if not copyClass then error("ImportClassFunctions - copy Class does not exist"..(copyClassName or "")) end
+
+	local funcName, func
+	local count = select("#", ...)
+	if count > 0 then
+		-- app.PrintDebug("ImportClassFunctions - Explicit Copy",baseClassName,copyClassName,...)
+		-- copy the explicitly-named class functions provided, these can replace the base class functions
+		for i=1,count do
+			funcName = select(i, ...)
+			func = copyClass[funcName]
+			if not func then app.print("ImportClassFunctions - func not found in copy Class",funcName,copyClassName)
+			-- elseif baseClass[funcName] then app.print("ImportClassFunctions - func already exists in base Class",funcName,baseClassName)
+			else
+				baseClass[funcName] = func
+				-- app.PrintDebug("Copied Base Func!",funcName,"from",copyClassName,"into",baseClassName)
+			end
+		end
+	else
+		-- app.PrintDebug("ImportClassFunctions - Soft Copy",baseClassName,copyClassName)
+		-- soft-copy any missing class functions into the provided class
+		for field,func in pairs(baseClass) do
+			if not baseClass[field] then
+				baseClass[field] = func
+				-- app.PrintDebug("Copied Base Func!",funcName,"from",copyClassName,"into",baseClassName)
+			-- else app.PrintDebug("ImportClassFunctions - Ignoring func already existing in base Class",field,baseClassName)
+			end
+		end
+	end
+end
 app.CloneObject = CloneObject;
 app.CloneClassInstance = CloneClassInstance;
 app.CreateClassInstance = CreateClassInstance;
@@ -591,6 +639,11 @@ app.CreateClass = function(className, classKey, fields, ...)
 		end
 	end
 
+	-- Allow the base Class to ImportFrom another Class
+	if fields.ImportFrom then
+		ImportClassFunctions(fields, fields.ImportFrom, unpack(fields.ImportFields))
+	end
+
 	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
 	GenerateSimpleMetaClass(fields, className)
 
@@ -610,6 +663,9 @@ app.CreateClass = function(className, classKey, fields, ...)
 					CloneDictionary(fields, subfields)
 					subfields.__condition = conditional
 					subfields.base = base;
+					if subfields.ImportFrom then
+						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
+					end
 					GenerateSimpleMetaClass(subfields, className, subclassName)
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
 					GenerateVariantClasses(subclass)
@@ -733,7 +789,7 @@ app.SwapClassDefinitionMethod = function(className, classField, newFunc)
 	local curFunc = class[classField]
 	if not curFunc then app.print("Class",className,"does not contain field",classField) return end
 
-	if newFunc and type(newFunc) ~= "function" then app.print("Cannot assing non-function for Class",className,"field",classField) return end
+	if newFunc and type(newFunc) ~= "function" then app.print("Cannot assign non-function for Class",className,"field",classField) return end
 
 	local swapdefaults = class.__swapdefaults
 	if not swapdefaults then
@@ -806,11 +862,12 @@ app.WrapObject = function(object, baseObject)
 	});
 end
 
+local ClassDataCaches = {}
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField, className)
 	local cache, _t, v = {}, nil, nil;
-	cache.DefaultFunctions = {}
+	local DefaultFunctions = {}
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
@@ -823,7 +880,18 @@ app.CreateCache = function(idField, className)
 		end
 		app.PrintDebug("CACHE_MISS",idField,">",id,t.__type,t.hash)
 		app.PrintTable(t)
-	end;
+	end
+	cache.GetCachedByID = function(id)
+		if id then
+			_t = cache[id];
+			if not _t then
+				_t = {};
+				cache[id] = _t;
+			end
+			return _t, id;
+		end
+		app.PrintDebug("CACHE_MISS_ID",idField,">",id)
+	end
 	cache.GetCachedField = function(t, field, default_function)
 		--[[ -- Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -835,7 +903,7 @@ app.CreateCache = function(idField, className)
 			v = _t[field];
 			if v ~= nil then return v end
 
-			default_function = default_function or cache.DefaultFunctions[field]
+			default_function = default_function or DefaultFunctions[field]
 			if not default_function then return end
 
 			local defVal = default_function(t, field, _t);
@@ -845,7 +913,7 @@ app.CreateCache = function(idField, className)
 			end
 			return v
 		end
-	end;
+	end
 	cache.SetCachedField = function(t, field, value)
 		--[[ Debug Prints
 		local _t, id = cache.GetCached(t);
@@ -857,11 +925,22 @@ app.CreateCache = function(idField, className)
 		--]]
 		_t = cache.GetCached(t);
 		if _t then _t[field] = value; end
-	end;
+	end
+	cache.DefaultFunctions = DefaultFunctions
 	if app.__perf then
 		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
 	end
-	return cache;
+	if className then
+		ClassDataCaches[className] = cache
+	end
+	return cache
+end
+app.GetOrCreateCache = function(idField, className)
+	local cache = ClassDataCaches[className]
+	if cache then return cache end
+
+	app.print("Missing className",className,"for ClassData cache with idField",idField)
+	return app.CreateCache(idField, className)
 end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced

@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(275, {	-- Battle for Gilneas
 		["icon"] = 462671,
 		["timeline"] = { ADDED_4_0_3 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5258, {	-- Master of the Battle for Gilneas
 					-- Meta Achievement should symlink the contained Achievements from Source

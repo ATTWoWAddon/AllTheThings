@@ -17,7 +17,7 @@ local ZIRIAK = {
 	["crs"] = { 223443 },
 	["coord"] = { 61.4, 36.8, NERUBAR_LOWER },
 };
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ACHIEVEMENTS, {
 		ach(41555, {	-- All That Khaz
 			["timeline"] = { ADDED_11_1_0 },
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40762,	-- Khaz Algar Lore Hunter
 				20596,	-- Loremaster of Khaz Algar
 			}},
-			["g"] = { ws(7) },	-- Freywold Spring (WS!)
+			["groups"] = { campsite(7) },	-- Freywold Spring (CS!)
 		}),
 		-- #IF BEFORE 11.0.5
 		n(FAMILY_BATTLER, {
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40165,	-- Undead Battler of Khaz Algar
 				}},
 				["timeline"] = { ADDED_11_0_5 },
-				["g"] = {
+				["groups"] = {
 					i(222970),	-- Fuzzy (PET!)
 				},
 			})),
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		petbattle(ach(40153)),	-- Battle on Khaz Algar (automated)
 		ach(40791, {	-- Fate of the Kirin Tor (automated)
 			["timeline"] = { ADDED_11_0_7 },
-			["g"] = {
+			["groups"] = {
 				title(569),	-- <Name>, Witness of the Kirin Tor
 			},
 		}),
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40330,	-- The Ringing Deeps Advanced: Gold
 				40333,	-- The Ringing Deeps Reverse: Gold
 			}},
-			["g"] = {
+			["groups"] = {
 				title(594,	{	-- Khaz Algar Racer
 					["timeline"] = { ADDED_11_0_5 },
 				}),
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40166,	-- Isle of Dorn Glyph Hunter
 				40703,	-- The Ringing Deeps Glyph Hunter
 			}},
-			["g"] = {
+			["groups"] = {
 				i(223267),	-- Swarmite Skyhunter (MOUNT!)
 			}
 		}),
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40844,	-- Sojourner of Hallowfall
 				40636,	-- Sojourner of Azj-Kahet
 			}},
-			["g"] = {
+			["groups"] = {
 				iensemble(219132),	-- Crimson Cartographer's Orientation
 			},
 		}),
@@ -364,4 +364,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}},
 		}),
 	}),
-})));
+}));

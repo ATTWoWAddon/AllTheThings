@@ -22,6 +22,7 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 		de = "Hearthstone Söldner",
 		fr = "Hearthstone Mercenaires",
 		it = "Hearthstone Mercenari",
+		mx = "Hearthstone Mercenarios",
 		pt = "Hearthstone Mercenários",
 		ru = "Hearthstone Наемники",
 		cn = "炉石传说佣兵战纪",
@@ -40,6 +41,7 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 		de = "10. Jubiläum von Hearthstone",
 		fr = "10e anniversaire de Hearthstone",
 		it = "10° anniversario di Hearthstone",
+		mx = "10.º aniversario de Hearthstone",
 		pt = "10º Aniversário de Hearthstone",
 		ru = "10-я годовщина Hearthstone",
 		cn = "《炉石传说》10周年",
@@ -48,7 +50,13 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 });
 root(ROOTS.Promotions, {
 	n(HEARTHSTONE, bubbleDown({ ["u"] = REAL_MONEY }, {
-		["timeline"] = { ADDED_5_3_0 },
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_3_0,
+			-- #else
+			ADDED_5_3_0,
+			-- #endif
+		},
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
 			i(98618),	-- Hearthsteed (MOUNT!)
@@ -88,7 +96,7 @@ root(ROOTS.Promotions, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
 					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QI!)
 					["groups"] = {
-						i(212157),   -- An Invitation
+						i(212157),	-- An Invitation
 					},
 				}),
 				q(79178, {	-- Play Hearthstone!
@@ -137,69 +145,27 @@ root(ROOTS.Promotions, {
 					i(212336),	-- The Tavern's Tabard (COSMETIC!)
 					i(211965),	-- Hearthstone Wild Card
 					i(212924, {	-- Stolen Hearthstone Card
-						i(212925, {	-- Hearthstone Card: Abomination
-							["questID"] = 79392,
-						}),
-						i(212922, {	-- Hearthstone Card: Alley Cat
-							["questID"] = 79390,
-						}),
-						i(212927, {	-- Hearthstone Card: Ancient of Lore
-							["questID"] = 79394,
-						}),
-						i(212932, {	-- Hearthstone Card: Arcane Explosion
-							["questID"] = 79399,
-						}),
-						i(212926, {	-- Hearthstone Card: Arcane Golem
-							["questID"] = 79393,
-						}),
-						i(212933, {	-- Hearthstone Card: Arcane Shot
-							["questID"] = 79401,
-						}),
-						i(212929, {	-- Hearthstone Card: Baron Geddon
-							["questID"] = 79396,
-						}),
-						i(212930, {	-- Hearthstone Card: Blessing of Kings
-							["questID"] = 79397,
-						}),
-						i(213019, {	-- Hearthstone Card: Cairne Bloodhoof
-							["questID"] = 79460,
-						}),
-						i(212938, {	-- Hearthstone Card: Charged Devilsaur
-							["questID"] = 79406,
-						}),
-						i(212921, {	-- Hearthstone Card: Chillwind Yeti
-							["questID"] = 79389,
-						}),
-						i(212931, {	-- Hearthstone Card: Forbidden Words
-							["questID"] = 79398,
-						}),
-						i(212923, {	-- Hearthstone Card: Grove Tender
-							["questID"] = 79391,
-						}),
-						i(213224, {	-- Hearthstone Card: Hand of Protection
-							["questID"] = 79582,
-						}),
-						i(212928, {	-- Hearthstone Card: Hogger
-							["questID"] = 79395,
-						}),
-						i(212939, {	-- Hearthstone Card: Jive, Insect!
-							["questID"] = 79403,
-						}),
-						i(212937, {	-- Hearthstone Card: Preparation
-							["questID"] = 79402,
-						}),
-						i(212934, {	-- Hearthstone Card: Pyroblast
-							["questID"] = 79400,
-						}),
-						i(212936, {	-- Hearthstone Card: Righteousness
-							["questID"] = 79405,
-						}),
-						i(212871, {	-- Hearthstone Card: Scarlet Crusader
-							["questID"] = 79384,
-						}),
-						i(212872, {	-- Hearthstone Card: Shadow Word: Ruin
-							["questID"] = 79385,
-						}),
+						i(212925),	-- Hearthstone Card: Abomination (CI!)
+						i(212922),	-- Hearthstone Card: Alley Cat (CI!)
+						i(212927),	-- Hearthstone Card: Ancient of Lore (CI!)
+						i(212932),	-- Hearthstone Card: Arcane Explosion (CI!)
+						i(212926),	-- Hearthstone Card: Arcane Golem (CI!)
+						i(212933),	-- Hearthstone Card: Arcane Shot (CI!)
+						i(212929),	-- Hearthstone Card: Baron Geddon (CI!)
+						i(212930),	-- Hearthstone Card: Blessing of Kings (CI!)
+						i(213019),	-- Hearthstone Card: Cairne Bloodhoof (CI!)
+						i(212938),	-- Hearthstone Card: Charged Devilsaur (CI!)
+						i(212921),	-- Hearthstone Card: Chillwind Yeti (CI!)
+						i(212931),	-- Hearthstone Card: Forbidden Words (CI!)
+						i(212923),	-- Hearthstone Card: Grove Tender (CI!)
+						i(213224),	-- Hearthstone Card: Hand of Protection (CI!)
+						i(212928),	-- Hearthstone Card: Hogger (CI!)
+						i(212939),	-- Hearthstone Card: Jive, Insect! (CI!)
+						i(212937),	-- Hearthstone Card: Preparation (CI!)
+						i(212934),	-- Hearthstone Card: Pyroblast (CI!)
+						i(212936),	-- Hearthstone Card: Righteousness (CI!)
+						i(212871),	-- Hearthstone Card: Scarlet Crusader (CI!)
+						i(212872),	-- Hearthstone Card: Shadow Word: Ruin (CI!)
 					}),
 				},
 			}),

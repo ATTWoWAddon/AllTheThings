@@ -86,6 +86,15 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(169832),	-- The Infinity Tube
 			i(169575),	-- Worthless data
 		})),
+
+		-- 8.3.0
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			-- 8.3.0.32044
+			i(170543),	-- Strange Stone
+			i(172515),	-- Writhing Prison Cage Rune
+			-- 8.3.0.32712
+			i(175057),	-- H'partho's Whistle
+		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
@@ -153,7 +162,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(174075),	-- Emeni's Magnificent Skin
 			i(168803),	-- Emergency Supplies
 			i(173149),	-- Empty Anima Crystal
-			i(182363),	-- Enchanted Trickster Dust
 			i(181496),	-- Endmire Blossom
 			i(175793),	-- Enlarged Gluegland
 			i(180898),	-- Ephemeral Draught
@@ -228,7 +236,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(172453),	-- Prisoner Transfer Orders
 			i(178467),	-- Profane Shadestone
 			i(180828),	-- Promissory Note
-			i(173973),	-- Purian
 			i(177963),	-- Purified Armor Fragments
 			i(183733),	-- Purified Nectar
 			i(175973),	-- Ravager Talon
@@ -389,7 +396,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194445),	-- [DNT] Ceremonial Necklace
 			i(191633),	-- A Shard of Crystallized Mana
 			i(191023),	-- Mudcaked Necklace
@@ -452,7 +459,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191117),	-- Enchanted Claws
 			i(193858),	-- Enchanted Tools
 			i(191551),	-- Encrusted Key [DNT]
-			i(194426),	-- Enriched Soil
 			i(191308),	-- Envenomed Spear
 			i(192496),	-- Exhumed Hunter's Spear
 			i(193839),	-- Explosive Ash
@@ -476,7 +482,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(200544),	-- Mistvale Map: Illegible
 			i(190191),	-- Muck-Covered Map
 			i(192783),	-- Nokhud Vanguard Orders
-			i(198450),	-- Old Crabshell
 			i(190964),	-- Ornate Chest Key
 			i(191947),	-- Parachutes
 			i(189362),	-- Pheromone Gland
@@ -623,7 +628,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(219939),	-- Alleria's Crystal
 			i(213193),	-- Arathi Army Medallion
 			i(223638),	-- Arathi Trade Goods
@@ -702,14 +707,14 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
 			i(231773),	-- Lost & Found Chest
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			i(232654),	-- Compiled Tattered Journal
 			i(231760),	-- Notes on Ancient Treasure
 			i(228095),	-- Scroll of Empowered Time Warp
@@ -717,7 +722,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			i(238395),	-- Barrel of Fireworks
 			i(228822),	-- Burgled Art
 			i(225931),	-- Contract Fee
@@ -734,6 +739,12 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(227386),	-- R.P.E.L
 			i(227540),	-- Skimmed Profits
 			i(230792),	-- X-Plo-Dar 64k
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(231766),	-- Hammerfall Horn
+			i(228964),	-- Scarlet Signet Ring
 		})),
 	}),
 }));

@@ -54,7 +54,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191422),	-- Crystal Magical Lockpick
 					i(198483),	-- jrz 10.0 enchanting test [DNT]
 					i(198677),	-- jrz test vellum quality 1 [DNT]
@@ -69,10 +69,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(230986),	-- Nascent Gilded Undermine Crest
 					i(230987),	-- Nascent Weathered Undermine Crest
 				})),
+
+				-- 11.1.5
+				expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+					i(238679),	-- Enchant Weapon - Echoing Void
+					i(239085),	-- Enchant Weapon - Gushing Wound
+					i(239079),	-- Enchant Weapon - Infinite Stars
+					i(238404),	-- Enchant Weapon - Twilight Devastation
+					i(239089),	-- Enchant Weapon - Twisted Appendage
+					i(239094),	-- Enchant Weapon - Void Ritual
+				})),
 			}),
-			i(230985),	-- Nascent Runed Undermine Crest
-			i(230986),	-- Nascent Gilded Undermine Crest
-			i(230987),	-- Nascent Weathered Undermine Crest
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -271,7 +278,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382580),	-- Opening
 					r(391200),	-- Wisp of Tyr
 					r(383736),	-- Unknown
@@ -299,6 +306,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
 					i(230932),	-- Formula: Enchanted Runed Undermine Crest
 					i(230933),	-- Formula: Enchanted Gilded Undermine Crest
+				})),
+
+				-- 11.1.5
+				expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+					r(1227288),	-- Greater Rune of Gushing Wound
+					r(1227206),	-- Greater Rune of Infinite Stars
+					r(1225873),	-- Greater Rune of the Echoing Void
+					r(1227294),	-- Greater Rune of the Twisted Appendage
+					r(1227311),	-- Greater Rune of the Void Ritual
+					r(1225074),	-- Lesser Rune of Twilight Devastation
+					-- Without SpellID attached
+					i(238683),	-- Formula: Enchant Weapon - Echoing Void
+					i(239087),	-- Formula: Enchant Weapon - Gushing Wound
+					i(239081),	-- Formula: Enchant Weapon - Infinite Stars
+					i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
+					i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
+					i(239096),	-- Formula: Enchant Weapon - Void Ritual
 				})),
 			}),
 		}),

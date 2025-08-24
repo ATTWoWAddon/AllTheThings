@@ -124,7 +124,7 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(200142),	-- Generous Goblin Grenade (TOY!)
 			i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 			i(199926),	-- Portable J.A.M. (TOY!)
@@ -149,14 +149,18 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(224809),	-- Earthen Plumber's Pipe (TOY!)
 			i(216665),	-- Warband Bank Distance Inhibitor (TOY!)
 			i(216887),	-- Unknown (TOY!)
 		})),
-		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
-			i(235016),	-- Redeployment Module
+
+		-- 11.0.5
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+			i(232303),	-- Unknown (TOY!)
+			i(232304),	-- Unknown (TOY!)
+			i(232307),	-- Unknown (TOY!)
+			i(232308),	-- Unknown (TOY!)
 		})),
 	}),
 }));

@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 61.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 65520,
 				["sourceQuest"] = 65427,	-- A New Architect
-				["g"] = {
+				["groups"] = {
 					i(187833, {	-- Dapper Pocopoc
 						["questID"] = 65528,
 					}),
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Kill Nascent Servitor(182368) until you have 5 buffs then you can open the door.",
 				["coord"] = { 47.5, 95.2, ZERETH_MORTIS },
 				["questID"] = 65573,
-				["g"] = {
+				["groups"] = {
 					i(190853),	-- Bushel of Mysterious Fruit (TOY!)
 					i(189451, {	-- Chef Pocopoc
 						["questID"] = 65524,
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Jumping puzzle.",
 				["coord"] = { 38.2, 37.2, ZERETH_MORTIS },
 				["questID"] = 64667,
-				["g"] = {
+				["groups"] = {
 					i(190637),	-- Percussive Maintenance Instrument
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 60, 18, ZERETH_MORTIS },
 				["questID"] = 65465,
 				["cost"] = { { "i", 189704, 1}, },	-- 1xDominance Key
-				["g"] = {
+				["groups"] = {
 					i(189863),	-- Spatial Opener
 					i(190638),	-- Tormented Mawsteel Greatsword
 				},
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Requires Altonian Understanding and Chapter 6. Accessible with flying or via the Quintus Locus and dropping down.",
 				["coord"] = { 51.03, 32.48, ZERETH_MORTIS },
 				["questID"] = 65346,
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["sourceQuest"] = 65346,	-- Dormant Alcove Arrangement
 					["cost"] = { { "i", 189863, 1 }, },	-- 1 Spatial Opener
 					["sharedDescription"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus.",
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					o(375401, {	-- Sparkling Sand Pile
 						["coord"] = { 43.9, 36.5, 2029 },	-- Gravid Repose
 						["questID"] = 65499,
-						["g"] = {
+						["groups"] = {
 							i(190374),	-- Gemstone of Prismatic Brilliance
 						},
 					}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",
 				["coord"] = { 34.8, 69.9, ZERETH_MORTIS },
 				["questID"] = 65523,
-				["g"] = {
+				["groups"] = {
 					i(190059, {	-- Pirate Pocopoc
 						["questID"] = 65526,
 					}),
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Use the Fogotten Translocator nearby to teleport up.",
 				["coord"] = { 51.6, 9.9, ZERETH_MORTIS },
 				["questID"] = 65487,
-				["g"] = {
+				["groups"] = {
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Jumping Puzzle, ontop of the tree ring.",
 				["coord"] = { 49.8, 87.3, ZERETH_MORTIS },
 				["questID"] = 65503,
-				["g"] = {
+				["groups"] = {
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "This chest only spawn during WQ Frog'it (65089).",
 				["coord"] = { 67.0, 69.4, ZERETH_MORTIS },
 				["questID"] = 65178,
-				["g"] = {
+				["groups"] = {
 					i(189469),	-- Schematic: Prototype Leaper
 				},
 			}),
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Requires Aealic Understanding and Chapter 6.",
 				["coord"] =	{ 47.85, 30.38, ZERETH_MORTIS },
 				["questID"] = 65347,
-				["g"] = {
+				["groups"] = {
 					o(375902, {	-- Torn Ethereal Drape
 						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Arcae Locus. Take out Pocopoc, activate & ride an orb until it reaches the treasure.",
 						["coord"] = { 46.7, 39.3, 2029 },	-- Gravid Repose
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							184329,	-- Locus Shift (Gravid Repose)
 							184485,	-- Locus Shift (Interior)
 						},
-						["g"] = {
+						["groups"] = {
 							i(188054),	-- Antecedent Drape
 						},
 					}),
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Pet all the creatures in the area. The creature will sit down after being petted. The Jiro will yell when you are done.",
 				["coord"] = { 37.2, 78.2, ZERETH_MORTIS },
 				["questID"] = 65545,
-				["g"] = {
+				["groups"] = {
 					i(189478),	-- Schematic: Adorned Vombata
 				},
 			}),
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "There are tablets around the Cave. The correct one is located in the back at 57.9 78.9.",
 				["coord"] = { 58.9, 77, ZERETH_MORTIS },
 				["questID"] = 65173,
-				["g"] = {
+				["groups"] = {
 					i(189447),	-- Schematic: Viperid Menace
 				},
 			}),
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 53.6, 72.2, ZERETH_MORTIS },
 				["questID"] = 65522,
 				["cost"] = { { "i", 190239, 5 } },	-- 5xLost Ovoid
-				["g"] = {
+				["groups"] = {
 					i(189435),	-- Schematic: Multichicken
 				},
 			}),
@@ -203,14 +203,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Jump from the ledge above the flight path to the rock.",
 				["coord"] = { 35.2, 44.1, ZERETH_MORTIS },
 				["questID"] = 65536,
-				["g"] = {
+				["groups"] = {
 					i(190953),	-- Protofruit Flesh
 				},
 			}),
 			o(375423, {	-- Offering to the First Ones
 				["coord"] = { 34.8, 56.1, ZERETH_MORTIS },
 				["questID"] = 65537,
-				["g"] = {
+				["groups"] = {
 					i(190339),	-- Enlightened Offering
 				},
 			}),
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "You need flying/teleport to get here, ontop of the pillar.",
 				["coord"] = { 60.8, 42.9, ZERETH_MORTIS },
 				["questID"] = 65542,
-				["g"] = {
+				["groups"] = {
 					i(190098, {	-- Pepepec
 						["questID"] = 65538,
 					}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Jumping Puzzle. Go around to get ontop of the rock behind the treasure and jump down.",
 				["coord"] = { 52.8, 71.4, ZERETH_MORTIS },
 				["questID"] = 65546,
-				["g"] = {
+				["groups"] = {
 					i(190952),	-- Protoflora Harvester
 				},
 			}),
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Use the cosmic system to get to the top and use some form of glide/teleport/flying.",
 				["coord"] = { 46.6, 31, ZERETH_MORTIS },
 				["questID"] = 65540,
-				["g"] = {
+				["groups"] = {
 					i(190942),	-- Protomineral Extractor
 				},
 			}),
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Requires Aealic Understanding and Chapter 6. Inside the Terrestrial Cache cave, on the side of the left wall after you enter.",
 				["coord"] =	{ 49.62, 30.92, ZERETH_MORTIS },
 				["questID"] = 65344,
-				["g"] = {
+				["groups"] = {
 					n(185261, {	-- Requisites Originator
 						["description"] = "Gather 60 Cosmic energy and go to Interior Locus then use Repertory Locus.",
 						["sourceQuests"] = { 65344 },	-- Repertory Alcove Arrangement
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["coord"] = { 31.3, 65, 2029 },	-- Gravid Repose
 						["questID"] = 65532,	-- Fourth Option?
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(189179, {	-- Unalloyed Bronze Ingot
 								["description"] = "Select 4th option, 'Restore Genesis Potencies'.",
 							}),
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Available inside the Blooming Foundary (63.2, 73.1) during Glimmercanes Questline (Need Sopranian Understanding). You need to collect 5 Pollen Cloud buffs (Green Clouds).",
 				["coord"] = { 65.4, 47.1, 2027 },
 				["questID"] = 65566,
-				["g"] = {
+				["groups"] = {
 					i(190058, {	-- Peaceful Pocopoc
 						["questID"] = 65525,
 					}),
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] =	{ 50.46, 27.61, ZERETH_MORTIS },
 				["questID"] = 65345,
 				["sym"] = {{"select","objectID",375270}},	-- Protoform Schematic
-				["g"] = {
+				["groups"] = {
 					o(375494, {	-- Rondure Cache
 						["coord"] = { 43, 40, 2029 },	-- Gravid Repose
 						["sourceQuest"] = 65345,	-- Rondure Alcove Arrangement
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Jumping Puzzle, climb ontop of the slumbering vault in Haven.",
 				["coord"] = { 34, 67.6, ZERETH_MORTIS },
 				["questID"] = 65543,
-				["g"] = {
+				["groups"] = {
 					i(189863),	-- Spatial Opener
 					i(190941),	-- Teachings of the Elders
 				},
@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Bring Orb at 59,4, 76,8 to the pump.",
 				["coord"] = { 58.8, 73.1, ZERETH_MORTIS },
 				["questID"] = 64545,
-				["g"] = {
+				["groups"] = {
 					i(190061, {	-- Admiral Pocopoc
 						["questID"] = 65529,
 					}),
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "The Broken Automa next to chest will give you sound queues, press the remaning 4 Broken Consonoles in the correct order. With your back against the entrance:\nTOP RIGHT\nDOWN LEFT\nDOWN RIGHT\nTOP LEFT.",
 				["coord"] = { 52.7, 63, ZERETH_MORTIS },
 				["questID"] = 65270,
-				["g"] = {
+				["groups"] = {
 					i(189863),	-- Spatial Opener
 				},
 			}),
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 80.9, 56.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65565,
-				["g"] = {
+				["groups"] = {
 					i(190457),	-- Protopological Cube (TOY!)
 				},
 			}),
@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Found inside of Nexus of Actualization. Push Orb in the room before",
 				["coord"] = { 51.6, 86.6, ZERETH_MORTIS },
 				["questID"] = 65175,
-				["g"] = {
+				["groups"] = {
 					i(190060, {	-- Adventurous Pocopoc
 						["questID"] = 65527,
 					}),
@@ -351,7 +351,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "There is four runes that needs to be activated to activate the teleporter.",
 				["coord"] = { 52.0, 80.0, ZERETH_MORTIS },
 				["questID"] = 65572,
-				["g"] = {
+				["groups"] = {
 					n(185390, {	-- Teleporter Lock
 						["coord"] = { 51, 82.1, ZERETH_MORTIS },
 						["questID"] = 65589,
@@ -393,13 +393,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 60.3, 71.7, ZERETH_MORTIS },
 					{ 36.4, 50.2, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189148),	-- Poultrid Lattice
 				},
 			}),
 			o(375950, {	-- Bauble of Pure Innovation
 				["coord"] = { 34.5, 49.7, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189171),	-- Bauble of Pure Innovation
 				},
 			}),
@@ -411,7 +411,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 77.6, 60.4, ZERETH_MORTIS },
 					{ 58.7, 89.8, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189172),	-- Crystallized Echo of the First Song
 					i(189441),	-- Schematic: Resonant Echo
 				},
@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 71.1, 28.7, ZERETH_MORTIS },
 					{ 42.6, 76.5, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(190740),	-- Automa Integration
 					i(190739),	-- Provis Wax
 				},
@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 50.2, 76.4, 2028 },
 					{ 79.2, 74.8, 2028 },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189717, {	-- Pocopoc's Shielded Core
 						["questID"] = 65483,
 					}),
@@ -531,7 +531,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 37.7, 29.1, ZERETH_MORTIS },
 					{ 61.5, 18.3, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189168),	-- Glimmer of Serenity
 				},
 			}),
@@ -555,7 +555,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 61.07, 65.15, ZERETH_MORTIS },
 				},
 				["questID"] = 65624,
-				["g"] = {
+				["groups"] = {
 					i(190239),	-- Lost Ovoid
 				},
 			}),
@@ -576,7 +576,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 66.6, 32.1, ZERETH_MORTIS },
 					{ 67.6, 29.5, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(190766),	-- Colossal Wraithbound Mawrat (MOUNT!)
 				},
 			}),
@@ -588,7 +588,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 51.8, 77.8, ZERETH_MORTIS },
 				},
 				["questID"] = 65184,
-				["g"] = {
+				["groups"] = {
 					i(189711, {	-- Pocopoc's Gold and Ruby Components
 						["questID"] = 65476,
 					}),
@@ -604,32 +604,31 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					185265,	-- Pulp-Covered Relic
 				},
 				["coords"] = {
-					{ 42, 34.2, ZERETH_MORTIS },
-					{ 53.4, 25.8, ZERETH_MORTIS },
-					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 42.0, 34.2, ZERETH_MORTIS },
+					{ 42.0, 34.2, ZERETH_MORTIS },
 					{ 50.4, 41.2, ZERETH_MORTIS },
+					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 53.4, 25.8, ZERETH_MORTIS },
 					{ 64.4, 63.4, ZERETH_MORTIS },
-					{ 42, 34.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65501,
-				["g"] = {
+				["groups"] = {
 					i(189474),	-- Schematic: Buzz
 				},
 			}),
 			o(375404, {	-- Sandworn Chest
 				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
 				["coords"] = {
-					{ 64.8, 33.7, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
-					{ 60.9, 37.9, ZERETH_MORTIS },
 					{ 60.0, 25.8, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
 					{ 60.9, 37.9, ZERETH_MORTIS },
 					{ 61.4, 17.6, ZERETH_MORTIS },
+					{ 63.2, 26.0, ZERETH_MORTIS },
+					{ 64.8, 33.7, ZERETH_MORTIS },
+					{ 66.0, 26.9, ZERETH_MORTIS },
 				},
 				["questID"] = 65611,
 				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key
-				["g"] = {
+				["groups"] = {
 					i(190189),	-- Sandworn Relic
 					i(190734),	-- Makaris's Satchel of Mines (TOY!)
 					i(189713, {	-- Pocopoc's Copper and Cobalt Components
@@ -661,7 +660,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 49.0, 30.5, ZERETH_MORTIS },
 					{ 50.8, 4.7, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189983),	-- Gormit Soul
 				},
 			}),
@@ -672,7 +671,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 55.3, 32.9, ZERETH_MORTIS },
 					{ 56.3, 27.3, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189158),	-- Glimmer of Cunning
 				},
 			}),
@@ -683,7 +682,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 42, 51.9, ZERETH_MORTIS },
 				["questID"] = 65183,
 				["cost"] = { { "i", 188231, 1 }, },	-- 1xProvis Cache Key
-				["g"] = {
+				["groups"] = {
 					i(189710, {	-- Pocopoc's Ruby and Platinum Body
 						["questID"] = 65474,
 					}),

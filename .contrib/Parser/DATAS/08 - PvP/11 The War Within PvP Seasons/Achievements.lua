@@ -9,7 +9,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
 				-- Having it not filtered is providing information about the Toy which is good.
 				--["classes"] = HEALERS,
-				["g"] = {
+				["groups"] = {
 					i(227539),	-- Unbound Strategist's Pennant (TOY!)
 				},
 			}),
@@ -18,7 +18,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
 				-- Having it not filtered is providing information about the Toy which is good.
 				--["classes"] = HEALERS,
-				["g"] = {
+				["groups"] = {
 					i(227538),	-- Unbound Legend's Pennant (TOY!)
 				},
 			}),

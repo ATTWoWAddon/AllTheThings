@@ -6,11 +6,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
 				["coord"] = { 52.2, 47.0, BASTION },
-				["g"] = bubbleDownClassicRep(FACTION_THE_ASCENDED, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_ASCENDED, {
 					{		-- Neutral
-						i(190644, {	-- Vessel of Profound Possibilities
+						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
+							["sourceAchievement"] = 14834,	-- Bound with Purpose
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 								{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
@@ -75,13 +76,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(171526, {	-- Kobri <Refreshments>
 				["coord"] = { 52.6, 47.4, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(180788),	-- Memorial Wine
 				},
 			}),
 			n(158625, {	-- Trader Ta'bix
 				["coord"] = { 33.4, 36.4, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(180972, {	-- Pristine Vuline Pelt
 						["description"] = "Take this to Ta'lan the Antiquary in Oribos (The Broker's Den) |cffffffff(51.3, 43.0)|r.",
 					}),

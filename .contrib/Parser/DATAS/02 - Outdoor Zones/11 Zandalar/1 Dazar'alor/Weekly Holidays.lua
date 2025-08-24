@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ "sub", "pvp_gear_base", EXPANSION.BFA, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
 						{ "pop" },	-- discard Aspirant / Combatant Gear header
 						{ "pop" },	-- discard item type headers
-						{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better
+						{ "modID", 47 },	-- blue. still the wrong iLvl because i can't also apply 2, but it looks better
 					},
 				})),
 			}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(54995),					-- A Savage Path Through Time
 				q(53037),					-- Emissary of War
 				-- #IF AFTER BFA
-				-- #IF BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				pvp(q(47148)),				-- Something Different
 				-- #ENDIF
 				-- #ENDIF

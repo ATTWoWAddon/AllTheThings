@@ -227,22 +227,22 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 	})),
 	q(52213, {	-- Ancient Skinning Knife
-		["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
-		["sourceQuest"] = 51575,	-- Lost But Not Forgotten
 		["description"] = "Requires 150 Zandalari Skinning to get the item.",
+		["sourceQuest"] = 51575,	-- Lost But Not Forgotten
+		["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
 		["timeline"] = { ADDED_8_0_1 },
 		["races"] = HORDE_ONLY,
-		["g"] = {
+		["groups"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
 	q(52224, {	-- Ivory Handled Dagger
-		["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
-		["sourceQuest"] = 52223,	-- Brinepinch
 		["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
+		["sourceQuest"] = 52223,	-- Brinepinch
+		["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
 		["timeline"] = { ADDED_8_0_1 },
 		["races"] = ALLIANCE_ONLY,
-		["g"] = {
+		["groups"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
@@ -250,10 +250,6 @@ root(ROOTS.Professions, prof(SKINNING, {
 		n(QUESTS, {
 			q(70363, {	-- Dragon Isles Skinning
 				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
-				["sourceQuests"] = {
-					67700,	-- To the Dragon Isles! [A]
-					65444,	-- To the Dragon Isles! [H]
-				},
 				["provider"] = { "n", 192558 },	-- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
 				["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
@@ -275,7 +271,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
@@ -286,7 +282,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			["coord"] = { 28.8, 60.4, VALDRAKKEN },
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(199128),	-- Skinning Field Notes
 			},
 		},{
@@ -297,7 +293,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
 				r(375787),	-- Cerulean Spinefish Lure
@@ -320,7 +316,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(DF_SKINNING_KNOWLEDGE),
 			},
 		},{
@@ -362,7 +358,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(224807),	-- Algari Skinner's Notes
 			},
 		},{
@@ -374,7 +370,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
 				r(442647),	-- Arathor Hammerfish Lure
 				r(442654),	-- Beast Lure Scent
 				r(442615),	-- Carve Meat
@@ -400,63 +396,63 @@ root(ROOTS.Professions, prof(SKINNING, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },
 				["questID"] = 83919,
-				["g"] = {
+				["groups"] = {
 					i(226345),	-- Arathi Craftsman's Spokeshave
 				},
 			}),
 			o(455949, {	-- Arathi Tanning Agent
 				["coord"] = { 49.3, 62.1, HALLOWFALL },
 				["questID"] = 83918,
-				["g"] = {
+				["groups"] = {
 					i(226344),	-- Arathi Tanning Agent
 				},
 			}),
 			o(455951, {	-- Artisan's Drawing Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83916,
-				["g"] = {
+				["groups"] = {
 					i(226342),	-- Artisan's Drawing Knife
 				},
 			}),
 			o(455946, {	-- Carapace Shiner
 				["coord"] = { 56.5, 55.2, AZJ_KAHET },
 				["questID"] = 83921,
-				["g"] = {
+				["groups"] = {
 					i(226347),	-- Carapace Shiner
 				},
 			}),
 			o(455953, {	-- Dornogal Carving Knife
 				["coord"] = { 28.7, 51.7, DORNOGAL },
 				["questID"] = 83914,
-				["g"] = {
+				["groups"] = {
 					i(226340),	-- Dornogal Carving Knife
 				},
 			}),
 			o(455952, {	-- Earthen Worker's Beam
 				["coord"] = { 60.0, 28.0, ISLE_OF_DORN },
 				["questID"] = 83915,
-				["g"] = {
+				["groups"] = {
 					i(226341),	-- Earthen Worker's Beams
 				},
 			}),
 			o(455950, {	-- Fungarian's Rich Tannin
 				["coord"] = { 65.7, 61.9, THE_RINGING_DEEPS },
 				["questID"] = 83917,
-				["g"] = {
+				["groups"] = {
 					i(226343),	-- Fungarian's Rich Tannin
 				},
 			}),
 			o(455947, {	-- Nerubian's Slicking Iron
 				["coord"] = { 45.5, 49.4, NERUBAR },
 				["questID"] = 83920,
-				["g"] = {
+				["groups"] = {
 					i(226346),	-- Nerubian's Slicking Iron
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(TWW_SKINNING_KNOWLEDGE),
 			},
 		},{
@@ -512,19 +508,19 @@ profession(SKINNING, {
 						},
 					}),
 					q(40157, {	-- An Unseemly Task
-						["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 						["sourceQuest"] = 40156,	-- Felhide Sample
+						["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 					}),
 					q(40158, {	-- Darkheart Thicket: Demons Be Different
-						["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 						["sourceQuest"] = 40157,	-- An Unseemly Task
+						["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 						["groups"] = {
 							recipe(194168),	-- Felhide [Rank 2]
 						},
 					}),
 					q(40159, {	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-						["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 						["sourceQuest"] = 40158,	-- Darkheart Thicket: Demons Be Different
+						["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 						["groups"] = {
 							recipe(194169),	-- Felhide [Rank 3]
 						},
@@ -546,8 +542,8 @@ profession(SKINNING, {
 				},
 			}),
 			q(48041, {	-- A Larger Cut
-				["provider"] = { "i", 151867 },	-- Spoiled Fiendish Leather
 				["sourceQuest"] = 48040,	-- Tainted Scraps
+				["provider"] = { "i", 151867 },	-- Spoiled Fiendish Leather
 				["maps"] = {
 					ANTORAN_WASTES,
 					KROKUUN,
@@ -558,8 +554,8 @@ profession(SKINNING, {
 				},
 			}),
 			q(48042, {	-- Order of Operations
-				["provider"] = { "i", 151868 },	-- Corrupted Tooth
 				["sourceQuest"] = 48041,	-- A Larger Cut
+				["provider"] = { "i", 151868 },	-- Corrupted Tooth
 				["maps"] = {
 					ANTORAN_WASTES,
 					KROKUUN,
@@ -583,15 +579,15 @@ profession(SKINNING, {
 				},
 			}),
 			q(40142, {	-- The Core of the Stormscale
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40141,	-- Stormscale Sample
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["groups"] = {
 					recipe(194164),	-- Stormscale [Rank 1]
 				},
 			}),
 			q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
-				["provider"] = { "i", 129865 },	-- Unfinished Treatise on the Properties of Stormscale
 				["sourceQuest"] = 40142,	-- The Core of the Stormscale
+				["provider"] = { "i", 129865 },	-- Unfinished Treatise on the Properties of Stormscale
 				["maps"] = {
 					AZSUNA,
 					HIGHMOUNTAIN,
@@ -601,47 +597,50 @@ profession(SKINNING, {
 				},
 			}),
 			q(40144, {	-- Glielle
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 			}),
 			q(40145, {	-- Under Down
-				["qg"] = 98791,	-- Glielle <Skinning Trainer>
 				["sourceQuest"] = 40144,	-- Glielle
+				["qg"] = 98791,	-- Glielle <Skinning Trainer>
 				["coord"] = { 47.0, 45.2, AZSUNA },
 				["groups"] = {
 					recipe(194165),	-- Stormscale [Rank 2]
 				},
 			}),
 			q(40146, {	-- Seymour and Agnes
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40143,	-- Unfinished Treatise on the Properties of Stormscale
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["coord"] = { 35.9, 28.5, LEGION_DALARAN },
 			}),
 			q(40147, {	-- Mother's Prized Knife
-				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["sourceQuest"] = 40146,	-- Seymour and Agnes
+				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["coord"] = { 45.7, 25.6, STORMHEIM },
+				["groups"] = {
+					i(129910),	-- Agnes' Skinning Knife (QI!)
+				},
 			}),
 			q(40148, {	-- Red-Eyed Revenge
-				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["sourceQuest"] = 40146,	-- Seymour and Agnes
+				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["coord"] = { 45.7, 25.6, STORMHEIM },
 			}),
 			q(40149, {	-- Drakol'nir Must Die
-				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["sourceQuests"] = {
 					40147,	-- Mother's Prized Knife
 					40148	-- Seymour and Agnes
 				},
+				["qg"] = 98721,	-- Seymour <Skinning Trainer>
 				["coord"] = { 45.7, 25.6, STORMHEIM },
 				["groups"] = {
 					i(130102),	-- Mother's Skinning Knife (TOY!)
 				},
 			}),
 			q(40151, {	-- Immaculate Stormscale
-				["provider"] = { "i", 129867 },	-- Immaculate Stormscale
 				["sourceQuest"] = 40145,	-- Under Down
+				["provider"] = { "i", 129867 },	-- Immaculate Stormscale
 				["maps"] = {
 					AZSUNA,
 					HIGHMOUNTAIN,
@@ -651,25 +650,25 @@ profession(SKINNING, {
 				},
 			}),
 			q(40152, {	-- Scales for Ske'rit
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40151,	-- Immaculate Stormscale
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["maps"] = { LEGION_DALARAN },	-- TODO replace with coord
 			}),
 			q(40153, {	-- Return to Karazhan: Scales of Legend
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuest"] = 40152,	-- Scales for Ske'rit
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["maps"] = { KARAZHAN, 474, THE_OBSIDIAN_SANCTUM },
 			}),
 			q(40154, {	-- Eye of Azshara: The Scales of Serpentrix
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuest"] = 40152,	-- Scales for Ske'rit
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 			}),
 			q(40155, {	-- Eye of Azshara: The Scales of Serpentrix
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuests"] = {
 					40153,	-- Return to Karazhan: Scales of Legend
 					40154	-- Eye of Azshara: The Scales of Serpentrix
 				},
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["groups"] = {
 					recipe(194166),	-- Stormscale [Rank 3]
 				},
@@ -688,16 +687,16 @@ profession(SKINNING, {
 				},
 			}),
 			q(40132, {	-- In One Piece
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40131,	-- Stonehide Leather Sample
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["coord"] = { 35.9, 28.6, LEGION_DALARAN },
 				["groups"] = {
 					recipe(194161),	-- Stonehide Leather [Rank 1]
 				},
 			}),
 			q(40133, {	-- Scrap of Pants
-				["provider"] = { "i", 129864 },	-- Scrap of Pants
 				["sourceQuest"] = 40132,	-- In One Piece
+				["provider"] = { "i", 129864 },	-- Scrap of Pants
 				["maps"] = {
 					AZSUNA,
 					HIGHMOUNTAIN,
@@ -707,22 +706,22 @@ profession(SKINNING, {
 				},
 			}),
 			q(40134, {	-- Highmountain Hides
-				["qg"] = 94409,	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["sourceQuest"] = 40133,	-- Scrap of Pants
+				["qg"] = 94409,	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
 					i(130064),	-- Deadeye Monocle
 				},
 			}),
 			q(40135, {	-- The Freedom to Roam
-				["qg"] = 94409,	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["sourceQuest"] = 40133,	-- Scrap of Pants
+				["qg"] = 94409,	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
 					recipe(194162),	-- Stonehide Leather [Rank 2]
 				},
 			}),
 			q(40136, {	-- Immaculate Stonehide Leather
-				["provider"] = { "i", 129866 },	-- Immaculate Stonehide Leather
 				["sourceQuest"] = 40135,	-- In One Piece
+				["provider"] = { "i", 129866 },	-- Immaculate Stonehide Leather
 				["maps"] = {
 					AZSUNA,
 					HIGHMOUNTAIN,
@@ -732,26 +731,26 @@ profession(SKINNING, {
 				},
 			}),
 			q(40137, {	-- Leather for Ske'rit
-				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["sourceQuest"] = 40136,	-- Immaculate Stonehide Leather
+				["qg"] = 93541,	-- Kondal Huntsworn <Skinning Trainer>
 				["maps"] = { SURAMAR },
 			}),
 			q(40138, {	-- Trial of the Crusader: Hides of Legend
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuest"] = 40137,	-- Leather for Ske'rit
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 			}),
 			q(40139, {	-- Halls of Valor: The Hide of Fenryr
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuest"] = 40137,	-- Leather for Ske'rit
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 			}),
 			q(40140, {	-- Ske'rit's Leather Handbook
-				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["sourceQuests"] = {
 					40138,	-- Trial of the Crusader: Hides of Legend
 					40139	-- Halls of Valor: The Hide of Fenryr
 				},
+				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["groups"] = {
-					recipe(194163),    -- Stonehide Leather [Rank 3]
+					recipe(194163),	-- Stonehide Leather [Rank 3]
 				},
 			}),
 		}),

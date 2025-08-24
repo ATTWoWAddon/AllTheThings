@@ -1,28 +1,3 @@
-429354@@@Void-Touched Leather Gloves [Classic]
-429869@@@Void-Touched Leather Gauntlets [Classic]
-435819@@@Faintly Glowing Leather [Classic]
-435904@@@Glowing Gneuro-Linked Cowl [Classic]
-435949@@@Glowing Hyperconductive Scale Coif [Classic]
-435951@@@Gneuro-Conductive Channeler's Hood [Classic]
-435953@@@Rad-Resistant Scale Hood [Classic]
-439105@@@Big Voodoo Mask [Classic]
-439108@@@Big Voodoo Robe [Classic]
-439110@@@Guardian Leather Bracers [Classic]
-439112@@@Guardian Belt [Classic]
-439114@@@Guardian Pants [Classic]
-439116@@@Turtle Scale Breastplate [Classic]
-439118@@@Turtle Scale Gloves [Classic]
-446183@@@Paranoia Mantle
-446185@@@Shrieking Spaulders
-446186@@@Cacophonous Chain Shoulderguards
-446189@@@Shoulderpads of Obsession
-446190@@@Wailing Chain Mantle
-446192@@@Membrane of Dark Neurosis
-351766@@@Greater Drums of War [Classic]
-351768@@@Greater Drums of Speed [Classic]
-351769@@@Greater Drums of Restoration [Classic]
-351770@@@Greater Drums of Panic [Classic]
-351771@@@Greater Drums of Battle [Classic]
 110955@@@Release Spirit
 102366@@@Mist-Touched Leather [Spell not Recipe]
 256786@@@Honorable Combatant's Spellblade \\ REUSE ME \\ Skeletal Composite Bow

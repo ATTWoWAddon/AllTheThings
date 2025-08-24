@@ -89,8 +89,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 },
 				})),
 				pvp(q(78129, {	-- Gotta Go Faster
-					["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 },
 					["sourceQuests"] = { 78128 },
+					["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 },
 				})),
 			})),
 		}),

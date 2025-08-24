@@ -50,13 +50,60 @@ app.CreateFlightPath = app.CreateClass(CLASSNAME, KEY, {
 	end,
 })
 
+if app.IsGit then
+-- CRIEVE NOTE: Comment this out after you've finished sourcing flight masters
+-- use /att check-fps if you want to run this
+app.ChatCommands.Add("check-fps", function()
+	local missingByMapID, any = {}, false;
+	for flightpathID,flightPaths in pairs(app.SearchForFieldContainer("flightpathID")) do
+		for i,o in ipairs(flightPaths) do
+			if not (o.crs or o.npcID or o.objectID or o.provider or o.providers) and (not o.u or o.u >= 11) then
+				local mapID = app.GetRelativeValue(o, "mapID");
+				if mapID then
+					local missingOnMap = missingByMapID[mapID];
+					if not missingOnMap then
+						missingOnMap = {};
+						missingByMapID[mapID] = missingOnMap;
+					end
+					missingOnMap[flightpathID] = (","):split(o.name);
+					any = true;
+					break;
+				end
+			end
+		end
+	end
+
+	if any then
+		-- Create an information object.
+		local info = {
+			"### Missing Flight Master Summary",
+			"```lua",
+		};
+		for mapID,missing in pairs(missingByMapID) do
+			tinsert(info, app.GetMapName(mapID) .. " (" .. mapID .. ")");
+			for flightpathID,text in pairs(missing) do
+				tinsert(info, " " .. flightpathID .. " -- " .. text);
+			end
+		end
+		tinsert(info, "```");	-- discord fancy box end
+
+		local popupID, text = "flight-master-summary", "Summary";
+		app:SetupReportDialog(popupID, text, info);
+		app.print("Found Missing Flight Masters:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
+	end
+end, {
+	"Usage : /att check-fps",
+	"Allows scanning all sourced FPs to find Flight Masters which have no NPC linked to them.",
+});
+end
+
 local function CacheFlightPathDataForTarget(nodes)
 	local guid = UnitGUID("npc") or UnitGUID("target");
 	if guid then
 		---@diagnostic disable-next-line: undefined-field
 		local type, _, _, _, _, npcID = ("-"):split(guid);
 		if type == "Creature" and npcID then
-			local searchResults = SearchForField("creatureID", tonumber(npcID));
+			local searchResults = SearchForField("npcID", tonumber(npcID));
 			if searchResults and #searchResults > 0 then
 				local count = 0;
 				for i,group in ipairs(searchResults) do

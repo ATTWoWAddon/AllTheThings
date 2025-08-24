@@ -63,7 +63,6 @@ AchievementData = CreateDatabaseContainer("AchievementData");
 AchievementCategoryData = CreateDatabaseContainer("AchievementCategoryData");
 CategoryDB = CreateDatabaseContainer("CategoryDB");
 FilterDB = CreateDatabaseContainer("FilterDB");
-FlightPathDB = CreateDatabaseContainer("FlightPathDB");
 -- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
 ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
 	__index = function(t, key)

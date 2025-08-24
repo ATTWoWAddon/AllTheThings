@@ -6,14 +6,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(TREASURES, {
 			o(364345, {	-- A Faintly Glowing Seed
 				["description"] = "Can be found anywhere in Ardenweald",
-				["g"] = {
+				["groups"] = {
 					i(183902),	-- A Faintly Glowing Seed
 				},
 			}),
 			n(171156, {		-- Aerto <Grove Ranger>
 				["coord"] = { 55.9, 21.0, ARDENWEALD },
 				["questID"] = 61072,
-				["g"] = {
+				["groups"] = {
 					i(180630),	-- Gorm Harrier (PET!)
 				},
 			}),
@@ -21,17 +21,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF50.6, 38.8|r.",
 				["coord"] = { 52.9, 37.2, ARDENWEALD },
 				["questID"] = 61065,
-				["g"] = {
+				["groups"] = {
 					i(180642),	-- Cloudfeather Fledgling (PET!)
 				},
 			}),
 			o(355041, {		-- Cache of the Moon
-				["description"] = "Combine the |cff1eff00Diary of the Night|r, |cff1eff00Gardener's Basket|r, |cff1eff00Gardener's Hammer|r, |cff1eff00Gardener's Flute|r, and |cff1eff00Gardener's Wand|r to create |cff0070ddTwinklestar's Gardening Toolkit|r.  Take the toolkit to Twinklestar at |cFFFFFFFF63.8, 37.5|r.  He will grant you the \"Moonsight\" buff, allowing you to see the treasure behind him.",
+				["description"] = "Combine the |cff1eff00Diary of the Night|r, |cff1eff00Gardener's Basket|r, |cff1eff00Gardener's Hammer|r, |cff1eff00Gardener's Flute|r, and |cff1eff00Gardener's Wand|r to create |cff0070ddTwinklestar's Gardening Toolkit|r. Take the toolkit to Twinklestar at |cFFFFFFFF63.8, 37.5|r. He will grant you the \"Moonsight\" buff, allowing you to see the treasure behind him.",
 				["crs"] = { 171349 },	-- Twinklestar
 				["coord"] = { 63.8, 37.5, ARDENWEALD },	-- Twinklestar & Treasure
 				["questID"] = 61074,
 				["cost"] = { { "i", 180753, 1 } },	-- Twinklestar's Gardening Toolkit
-				["g"] = {
+				["groups"] = {
 					i(180759, {	-- Diary of the Night
 						["coord"] = { 39.0, 56.9, ARDENWEALD },
 					}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 36.1, 65.2, ARDENWEALD },
 				["questID"] = 61110,
 				["cost"] = { { "i", 180652, 1 } },	-- Fae Dreamcatcher
-				["g"] = {
+				["groups"] = {
 					i(179549),	-- Nightwillow Cudgel
 					i(180637),	-- Starry Dreamfoal (PET!)
 				},
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 42.0, 32.6, ARDENWEALD },	-- Treasure
 				},
 				["questID"] = 61147,
-				["g"] = {
+				["groups"] = {
 					i(180640),	-- Amber Glitterwing (PET!)
 					i(180784),	-- Aromatic Flowers
 				},
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 174911 },	-- Bounding Shroom
 				["coord"] = { 37.6, 37.0, ARDENWEALD },
 				["questID"] = 61070,
-				["g"] = {
+				["groups"] = {
 					i(179510),	-- Dreamsong Warglaive
 				},
 			}),
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 44.8, 75.8, ARDENWEALD },	-- Treasure
 				},
 				["questID"] = 61175,
-				["g"] = {
+				["groups"] = {
 					i(179512),	-- Dreamsong Saber
 					i(184490),	-- Fae Pipes (TOY!)
 				},
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(355020, {	-- Enchanted Bough
 				["description"] = "Under the platform with the big chair.",
 				["coord"] = { 42.4, 46.7, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180656),	-- Enchanted Bough
 				},
 			}),
@@ -174,20 +174,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(354651, {		-- Enchanted Dreamcatcher
 				["coord"] = { 36.4, 25.0, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(183129),	-- Anima-Laden Dreamcatcher
 				},
 			}),
 			o(373460, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Fae Net
 				["coord"] = { 38.3, 36.8, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(187943),	-- Fae Net
 				},
 			})),
 			o(355021, {	-- Fae Ornament
 				["description"] = "On the tree platform.",
 				["coord"] = { 51.5, 61.6, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180654),	-- Fae Ornament
 				},
 			}),
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Underneath the platform.",
 				["coord"] = { 49.7, 55.9, ARDENWEALD },
 				["questID"] = 61073,
-				["g"] = {
+				["groups"] = {
 					i(182673),	-- Shimmerbough Hoarder (PET!)
 				},
 			}),
@@ -237,22 +237,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "You need two people to open the chest. One person needs to play the harp and one needs to play the drums.",
 				["coord"] = { 67.8, 34.6, ARDENWEALD },
 				["questID"] = 61165,
-				["g"] = {
+				["groups"] = {
 					i(184489),	-- Fae Harp (TOY!)
 					i(179565),	-- Songwood Stem
 				},
 			}),
 			o(354647, {		-- Hearty Dragon Plume
-				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF48.1, 39.0|r.\n\nFollow it up and to the left until you reach the beginning of the bridge at |cFFFFFFFF46.1, 39.1|r, and cross it to get to the ledge above the treasure.  Any class should be able to safely make it down to the treasure with two jumps (or by using a Goblin Glider), but you can also use the feather found at |cFFFFFFFF48.9, 41.0|r to slow fall.",
+				["description"] = "The path to get up to the treasure starts at |cFFFFFFFF48.1, 39.0|r.\n\nFollow it up and to the left until you reach the beginning of the bridge at |cFFFFFFFF46.1, 39.1|r, and cross it to get to the ledge above the treasure. Any class should be able to safely make it down to the treasure with two jumps (or by using a Goblin Glider), but you can also use the feather found at |cFFFFFFFF48.9, 41.0|r to slow fall.",
 				["coord"] = { 48.2, 39.2, ARDENWEALD },
 				["questID"] = 61067,
-				["g"] = {
+				["groups"] = {
 					i(182729),	-- Hearty Dragon Plume (TOY!)
 				},
 			}),
 			o(354645, {		-- Lost Satchel
 				["coord"] = { 48.2, 20.3, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182731),	-- Satchel of Culexwood
 				},
 			}),
@@ -260,11 +260,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			--	Rewards
 			--	Objects
 				o(353683, {	-- Lunarlight Pod
-					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
+					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 39.2, 54.4, ARDENWEALD },
 					["questID"] = 60791,
 					["isDaily"] = true,
-					["g"] = sharedData({["isDaily"] = true}, {
+					["groups"] = sharedData({["isDaily"] = true}, {
 						n(170349,{	-- Lunarlight Bud
 							["coord"] = { 38.8, 54.2, ARDENWEALD },
 							["questID"] = 60809,
@@ -288,11 +288,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				}),
 				o(353681, {	-- Lunarlight Pod
-					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
+					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 48.0, 71.1, ARDENWEALD },
 					["questID"] = 60790,
 					["isDaily"] = true,
-					["g"] = sharedData({["isDaily"] = true}, {
+					["groups"] = sharedData({["isDaily"] = true}, {
 						n(170346,{	-- Lunarlight Bud
 							["coord"] = { 48.3, 71.5, ARDENWEALD },
 							["questID"] = 60802,
@@ -316,17 +316,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				}),
 				o(353684, {	-- Lunarlight Pod
-					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
+					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 48.2, 34.9, ARDENWEALD },
 					["questID"] = 60792,
 					["isDaily"] = true,
 				}),
 				o(353685, {	-- Lunarlight Pod
-					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
+					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 55.4, 38.6, ARDENWEALD },
 					["questID"] = 60793,
 					["isDaily"] = true,
-					["g"] = sharedData({["isDaily"] = true}, {
+					["groups"] = sharedData({["isDaily"] = true}, {
 						n(170359,{	-- Lunarlight Bud
 							["coord"] = { 55.2, 39.2, ARDENWEALD },
 							["questID"] = 60819,
@@ -350,11 +350,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				}),
 				o(353686, {	-- Lunarlight Pod
-					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r.  To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
+					["description"] = "When you first get to the treasure, it is called |cFFFFFFFFDim Lunarlight Pod|r. To light it up and make it lootable, run through 5 nearby |cFFFFFFFFLunarlight Buds|r.\n\nYou can /tar the buds, so just run around in a circle close to the treasure and spam a target macro to find each one.",
 					["coord"] = { 61.2, 56.9, ARDENWEALD },
 					["questID"] = 60794,
 					["isDaily"] = true,
-					["g"] = sharedData({["isDaily"] = true}, {
+					["groups"] = sharedData({["isDaily"] = true}, {
 						n(170368,{	-- Lunarlight Bud
 							["coord"] = { 60.5, 56.4, ARDENWEALD },
 							["questID"] = 60820,
@@ -381,13 +381,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(355019, {	-- Raw Dream Silk
 				["description"] = "Hanging silk fibers at the back of the platform.",
 				["coord"] = { 36.9, 29.8, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180655),	-- Raw Dream Fibers
 				},
 			}),
 			o(354911, {		-- Swollen Anima Seed
 				["coord"] = { 76.6, 29.7, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(182730),	-- Swollen Anima Seed
 				},
 			}),

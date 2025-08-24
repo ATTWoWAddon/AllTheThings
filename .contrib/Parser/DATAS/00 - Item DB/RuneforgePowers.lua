@@ -1,4 +1,3 @@
-
 local Items = ItemDBConditional;
 local i = function(itemID
 				,runeforgepowerID

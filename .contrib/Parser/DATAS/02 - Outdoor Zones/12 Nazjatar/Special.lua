@@ -22,13 +22,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 72.8, 24.3, NAZJATAR },
 			["cost"] = {{"i",187662,1}},	-- Strange Goop
 			["timeline"] = { ADDED_9_2_5 },
-			["g"] = {
+			["groups"] = {
 				i(187922),	-- Flipper Fish
 			},
 		}),
 		header(HEADERS.Achievement, 13715, {	-- From the Belly of the Jelly
 			["description"] = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon. You can do this for each |cFFFFD700Ravenous Slime|r once per week.",
-			["g"] = {
+			["groups"] = {
 				ach(13715),	-- From the Belly of the Jelly
 				n(151218, {	-- Ravenous Slime (South)
 					["coord"] = { 55.1, 48.8, NAZJATAR },
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 59.3, 37.5, NAZJATAR, },
 				{ 77.0, 36.7, NAZJATAR, },
 			},
-			["g"] = {
+			["groups"] = {
 				i(168802),	-- Nazjatar Battle Commendation
 			},
 		})),
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 59.3, 37.5, NAZJATAR, },
 				{ 77.0, 36.7, NAZJATAR, },
 			},
-			["g"] = {
+			["groups"] = {
 				i(168802),	-- Nazjatar Battle Commendation
 			},
 		})),

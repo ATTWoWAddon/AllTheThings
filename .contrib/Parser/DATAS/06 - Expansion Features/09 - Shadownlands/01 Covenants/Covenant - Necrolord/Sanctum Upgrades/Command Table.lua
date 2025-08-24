@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641396,
-			["g"] = {
+			["groups"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = 3675495,
-						["g"] = {
+						["groups"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,	-- Temporary troops
@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 62.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1335),	-- Enceladus
 									},
 								}),
@@ -37,7 +37,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 71.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1336),	-- Deathfang
 									},
 								}),
@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 12.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1301),	-- Gunn Gorgebone
 									},
 								}),
@@ -53,7 +53,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 27.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1303),	-- Khaliiq
 									},
 								}),
@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 44.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1334),	-- Lyra Hailstorm
 									},
 								}),
@@ -69,7 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 33.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1304),	-- Plaguey
 									},
 								}),
@@ -77,7 +77,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 38.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1305),	-- Rathan
 									},
 								}),
@@ -85,16 +85,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["description"] = "Requires Renown 17.",
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1302),	-- Rencissa the Dynamo
 									},
 								}),
 								q(62309, {	-- Adventurer: Secutor Mevix
-									["sourceQuests"] = { 59603 },	-- In Shadowlands Service
 									["description"] = "Requires Renown 4.",
+									["sourceQuests"] = { 59603 },	-- In Shadowlands Service
 									["provider"] = { "n", 165321 },	-- Merick Feldscar
 									["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
-									["g"] = {
+									["groups"] = {
 										follower(1300),	-- Secutor Mevix
 									},
 								}),

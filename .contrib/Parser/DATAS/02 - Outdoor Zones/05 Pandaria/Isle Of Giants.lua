@@ -4,29 +4,41 @@
 
 root(ROOTS.Zones, {
 	m(PANDARIA, {
-		m(ISLE_OF_GIANTS, {
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, m(ISLE_OF_GIANTS, {
 			["lore"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
+			["timeline"] = { ADDED_5_2_0 },
 			["icon"] = 236192,
-			["g"] = {
+			["groups"] = {
 				n(FLIGHT_PATHS, {
 					fp(1221, {	-- Beeble's Wreck, Isle Of Giants
+						["cr"] = 69359,	-- Beeble Sockwrench <Jurassic Expedition>
 						["coord"] = { 41.8, 79.2, ISLE_OF_GIANTS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1222, {	-- Bozzle's Wreck, Isle Of Giants
+						["cr"] = 69360,	-- Bozzle Blastinfuse <Jurassic Expedition>
 						["coord"] = { 51.8, 75.4, ISLE_OF_GIANTS },
 						["races"] = HORDE_ONLY,
 					}),
 				}),
 				n(RARES, {
-					n(70096, {	-- War-God Dokah
+					n(70096, {	-- War-God Dokah <Ward of Beasts>
 						["coords"] = {
 							{ 77.6, 82.6, ISLE_OF_GIANTS },
 							{ 78.6, 80.6, ISLE_OF_GIANTS },
 							{ 76.4, 83.8, ISLE_OF_GIANTS },
 						},
-						["g"] = {
-							i(94158),	-- Big Bag of Zandalari Supplies
+						["groups"] = {
+							i(94158, {	-- Big Bag of Zandalari Supplies
+								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+							}),
+							i(94159, {	-- Small Bag of Zandalari Supplies
+								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
+							}),
+							i(94225),	-- Stolen Celestial Insignia
+							i(94227),	-- Stolen Golden Lotus Insignia
+							i(94226),	-- Stolen Klaxxi Insignia
 						},
 					}),
 				}),
@@ -41,7 +53,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 94288, 9 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["groups"] = {
-							i(89112),	-- Mote of Harmony
+						--	i(89112),	-- Mote of Harmony	-- Doesnt need sourcing from a Quest
 						},
 					}),
 					q(32615, {	-- Many More Giant Dinosaur Bones
@@ -49,14 +61,14 @@ root(ROOTS.Zones, {
 						["cost"] = {{ "i", 94288, 99 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
 						["groups"] = {
-							i(76061),	-- Spirit of Harmony
+						--	i(76061),	-- Spirit of Harmony	-- Doesnt need sourcing from a Quest
 						},
 					}),
 					q(32616, {	-- A Large Pile of Dinosaur Bones
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
 						["cost"] = {{ "i", 94288, 999 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(94190),	-- Spectral Porcupette (PET!)
 						},
 					}),
@@ -64,7 +76,7 @@ root(ROOTS.Zones, {
 						["qg"] = 70022,	-- Ku'ma <The Bone Collector>
 						["cost"] = {{ "i", 94288, 9999 }},	-- Giant Dinosaur Bone
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							ach(8092, {	-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
 								["provider"] = { "i", 94290 },	-- Bone-White Primal Raptor
 								["f"] = MOUNTS,
@@ -112,7 +124,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(94295, {	-- Primal Egg
-						["provider"] = { "i", 94296 },	-- Cracked Primal Egg
 						["crs"] = {
 							69991,	-- Primal Devilsaur [East - Blue]
 							70010,	-- Primal Devilsaur [East - Tan]
@@ -141,7 +152,10 @@ root(ROOTS.Zones, {
 							62346,	-- Galleon
 							60491,	-- Sha of Anger
 						},
-						["g"] = {
+					}),
+					i(94296, {	-- Cracked Primal Egg
+						["provider"] = { "i", 94295 },	-- Primal Egg
+						["groups"] = {
 							i(94292),	-- Black Primal Raptor (MOUNT!)
 							i(94293),	-- Green Primal Raptor  (MOUNT!)
 							i(94291),	-- Red Primal Raptor (MOUNT!)
@@ -156,6 +170,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 			},
-		}),
+		})),
 	}),
 });

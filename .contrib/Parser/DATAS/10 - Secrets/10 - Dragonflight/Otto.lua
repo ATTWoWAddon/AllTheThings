@@ -7,7 +7,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		["modelScale"] = .8,
 		["displayID"] = 102074,
 		["cost"] = { { "i", 202042, 1 } },	-- 1x Aquatic Shades (TOY!)
-		["g"] = {
+		["groups"] = {
 			q(72676, {	-- Step 1: Dance, Dance 'Til You're Dead
 				["name"] = "Step 1: Dance, Dance 'Til You're Dead",
 				["description"] = "Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off.",
@@ -17,7 +17,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["description"] = "Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
 				["coord"] = { 20, 40, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(202061),	-- Empty Fish Barrel
 				},
 			}),
@@ -27,7 +27,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
 				["requireSkill"] = FISHING,
 				["cost"] = { { "i", 202072, 100 } },	-- 100x Frigid Floe Fish
-				["g"] = {
+				["groups"] = {
 					i(202072, {	-- Frigid Floe Fish
 						["description"] = "You'll need 100 of these fish. They can be found in open waters in the Azure Span. After using them with the barrel, you'll receive a Half-Filled Fish Barrel.",
 						["coord"] = { 12.4, 50, THE_AZURE_SPAN },
@@ -40,7 +40,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
 				["requireSkill"] = FISHING,
 				["cost"] = { { "i", 202073, 25 } },	-- 25x Calamitous Carp
-				["g"] = {
+				["groups"] = {
 					i(202073, {	-- Calamitous Carp
 						["description"] = "You'll need 25 of these fish. Keep in mind, they're rarer drops, so this will take longer than the Frigid Floe Fish.",
 						["coord"] = { 35.8, 64.6, THE_WAKING_SHORES },
@@ -51,9 +51,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["name"] = "Step 5: One Last Fish",
 				["description"] = "Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",
 				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
-				["requireSkill"] = FISHING,
 				["cost"] = { { "i", 202074, 1 } },	-- 1x Kingfin, the Wise Whiskerfish
-				["g"] = {
+				["requireSkill"] = FISHING,
+				["groups"] = {
 					i(202074, {	-- Kingfin, the Wise Whiskerfish
 						["description"] = "Just one! But it'll take a while. Having good Perception on your Profession gear may help.",
 						["coord"] = { 56, 44.5, THALDRASZUS },
@@ -71,7 +71,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 72808 },	-- Step 5: One Last Fish
 				["provider"] = { "n", 199563 },	-- Otto
 				["coord"] = { 20, 40, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(198870),	-- Otto (Mount!!)
 				},
 			}),

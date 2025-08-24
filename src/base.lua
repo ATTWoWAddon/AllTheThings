@@ -9,6 +9,7 @@ local rawget, ipairs, pairs, tinsert, setmetatable, print,math_sqrt,math_floor,g
 local appName, app = ...;
 app.EmptyFunction = function() end;
 app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
+app.Categories = {};
 
 
 -- Generate the version identifier.
@@ -35,6 +36,69 @@ app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
+
+-- Faction Specific Data
+local IgnoredOtherQuestFields = {
+	otherQuestData = 1,
+	coords = 1,
+	coord = 1,
+	maps = 1,
+	g = 1,
+}
+local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
+app.ResolveQuestData = function(t)
+	local aqd, hqd = t.aqd, t.hqd;
+	if aqd and hqd then
+		t.aqd = nil; t.hqd = nil;
+		local questData, otherQuestData;
+		if app.FactionID == HORDE_FACTION_ID then
+			questData = hqd;
+			otherQuestData = aqd;
+		else
+			questData = aqd;
+			otherQuestData = hqd;
+		end
+
+		-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
+		for key,value in pairs(t) do
+			if not IgnoredOtherQuestFields[key] and not otherQuestData[key] then
+				otherQuestData[key] = value;
+			end
+		end
+		app.AssignChildren(otherQuestData)
+		t.otherQuestData = otherQuestData;
+		otherQuestData.parent = t.parent
+		otherQuestData.nmr = 1;
+		if not getmetatable(otherQuestData) then
+			otherQuestData.coords = nil;
+			otherQuestData.coord = nil;
+			otherQuestData.maps = nil;
+		end
+
+		-- Move over the quest data's groups.
+		if questData.g then
+			local g = t.g;
+			if g then
+				for _,o in ipairs(questData.g) do
+					tinsert(g, 1, o);
+				end
+				questData.g = g;
+				t.g = nil;
+			end
+		end
+
+		-- Apply the faction specific quest data to this object.
+		for key,value in pairs(t) do
+			if not questData[key] then
+				questData[key] = value;
+			end
+		end
+		return questData;
+	else
+		error("Missing AQD / HQD: " .. (aqd and 1 or 0) .. " " .. (hqd and 1 or 0));
+	end
+	return t;
+end
 
 -- External API
 -- TODO: We will use a common API eventually.
@@ -213,6 +277,10 @@ app.IsComplete = function(o)
 	if o.trackable then return o.saved; end
 	return true;
 end
+
+-- Potentially shared functions which aren't yet added to Classic
+app.DirectGroupRefresh = app.EmptyFunction
+app.DirectGroupUpdate = app.EmptyFunction
 
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 app.GetIconFromProviders = function(group)
@@ -496,7 +564,8 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 			hasEditBox = true,
 			OnAccept = function(self)
 				if popup.callback and type(popup.callback) == "function" then
-					popup.callback(self.editBox:GetText());
+					local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
+					popup.callback(editBox:GetText());
 				end
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
@@ -504,11 +573,12 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		StaticPopupDialogs.ALL_THE_THINGS_EDITBOX = popup;
 	end
 	popup.OnShow = function (self, data)
-		self.editBox:SetText(text);
-		self.editBox:SetJustifyH("CENTER");
-		self.editBox:SetWidth(240);
-		if self.editBox.HighlightText then
-			self.editBox:HighlightText();
+		local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
+		editBox:SetText(text);
+		editBox:SetJustifyH("CENTER");
+		editBox:SetWidth(240);
+		if editBox.HighlightText then
+			editBox:HighlightText();
 		end
 	end;
 	popup.text = msg or "";

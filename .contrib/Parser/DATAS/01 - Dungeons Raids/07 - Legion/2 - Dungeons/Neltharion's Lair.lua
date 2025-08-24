@@ -6,13 +6,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["lvl"] = 98,
 		["mapID"] = 731,
 		["coord"] = { 49.5, 68.5, HIGHMOUNTAIN },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(10996, {	-- Got to Ketchum All
 					["description"] = "As soon as you jump into the hole at the start of the dungeon, follow the cliff's path near |cFFFFD700Spiritwalker Ebonhorn|r to a hidden grotto and buy a |cFFFFD700Ketchum Tablet|r from the |cFFFFD700Mushroom Merchant|r.",
 					["crs"] = { 111746	},	-- Mushroom Merchant
 					["provider"] = { "i", 140212 },	-- Ketchum Tablet
-					["g"] = {
+					["groups"] = {
 						crit(31787, {	-- Sparky's imprint collected
 							["provider"] = { "n", 111882 },	-- Sparky
 							["description"] = "Dive right where the barrel ride ends and find a pathway to a somewhat hidden cave where the snail is located at.",
@@ -46,9 +46,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			n(QUESTS, {
 				q(42454, {	-- The Hammer of Khaz'goroth
-					["sourceQuests"] = { 39781 },	-- Neltharion's Lair: Death to the Underking
 					["icon"] = 1487017,
-					["g"] = {
+					["sourceQuests"] = { 39781 },	-- Neltharion's Lair: Death to the Underking
+					["groups"] = {
 						i(141007),	-- Earthguard Handwraps
 						i(141008),	-- Earthguard Grips
 						i(141009),	-- Earthguard Gloves
@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers
@@ -232,8 +232,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(91003, e(1662, {	-- Rokmora
 						i(134481),	-- Boulderbuckle Strap
 						i(137337),	-- Deepfurrow Bracers

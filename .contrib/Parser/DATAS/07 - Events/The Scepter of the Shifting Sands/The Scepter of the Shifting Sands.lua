@@ -30,35 +30,35 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 		["groups"] = {
 			n(QUESTS, {
 				q(8519, {	-- A Pawn on the Eternal Board
-					["provider"] = { "o", 180633 },	-- Crystalline Tear
 					["sourceQuest"] = 8305,	-- Long Forgotten Memories
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["provider"] = { "o", 180633 },	-- Crystalline Tear
 					["coord"] = { 28.7, 89.1, SILITHUS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8303, {	-- Anachronos
+					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["providers"] = {
 						{ "n", 15180 },	-- Baristolth of the Shifting Sands
 						{ "i", 20415 },	-- The War of the Shifting Sands
 					},
-					["sourceQuest"] = 8301,	-- The Path of the Righteous
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger
-					["provider"] = { "i", 20949 },	-- Magical Ledger
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
+					["provider"] = { "i", 20949 },	-- Magical Ledger
 					["qg"] = 15481,	-- Spirit of Azuregos
 					["coord"] = { 57.0, 85.6, AZSHARA },
 					["lvl"] = 60,
 				}),
 				applyclassicphase(PHASE_FIVE_GONG, q(8743, {	-- Bang a Gong!
+					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["providers"] = {
 						{ "o", 180717 },	-- The Scarab Gong
 						{ "i",  21175 },	-- The Scepter of the Shifting Sands
 					},
-					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.7, 90.9, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -78,8 +78,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				})),
 				q(8606, {	-- Decoy!
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8598,	-- rAnS0m
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["maps"] = { WINTERSPRING },
 					["lvl"] = 60,
@@ -102,14 +102,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8597, {	-- Draconic for Dummies
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8576,	-- Translating the Ledger
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8586, {	-- Dirge's Kickin' Chimaerok Chops
-					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["sourceQuest"] = 8585,	-- The Isle of Dread!
+					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["cost"] = {
 						{ "i", 9061, 20 },	-- Goblin Rocket Fuel
@@ -121,30 +121,30 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8733, {	-- Eranikus, Tyrant of the Dream
-					["qg"] = 15362,	-- Malfurion Stormrage
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
+					["qg"] = 15362,	-- Malfurion Stormrage
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["lvl"] = 60,
 				}),
 				q(8305, {	-- Long Forgotten Memories
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8303,	-- Anachronos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = { 65, 50, TANARIS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8599, {	-- Love Song for Narain
+					["sourceQuest"] = 8597,	-- Draconic for Dummies
 					["providers"] = {
 						{ "n", 15526 },	-- Meridith the Mermaiden
 						{ "i", 21032 },	-- Meridith's Love Letter
 					},
-					["sourceQuest"] = 8597,	-- Draconic for Dummies
 					["coord"] = { 59.4, 96.0, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8730, {	-- Nefarius's Corruption
-					["qg"] = 13020,	-- Vaelastrasz the Corrupt
 					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
+					["qg"] = 13020,	-- Vaelastrasz the Corrupt
 					["maps"] = { BLACKWING_LAIR },
 					["lvl"] = 60,
 					["groups"] = {
@@ -161,14 +161,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8584, {	-- Never Ask Me About My Business
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8576,	-- Translating the Ledger
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8288, {	-- Only One May Rise
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8286,	-- What Tomorrow Brings
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["maps"] = { BLACKWING_LAIR },
 					["lvl"] = 60,
@@ -180,29 +180,29 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8598, {	-- rAnS0m
+					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
+					["sourceQuest"] = 8599,	-- Love Song for Narain
 					["providers"] = {
 						{ "o", 180652 },	-- Freshly Dug Dirt
 						{ "i",  21029 },	-- Ransom Letter
 					},
-					["sourceQuest"] = 8599,	-- Love Song for Narain
-					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
 					["coord"] = { 59.4, 96.0, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8587, {	-- Return to Narain
+					["sourceQuest"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
 					["providers"] = {
 						{ "n", 8125 },	-- Dirge Quikcleave <Butcher>
 						{ "i", 21028 },	-- 500 Pound Chicken
 					},
-					["sourceQuest"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8578, {	-- Scrying Goggles? No Problem!
-					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
 					["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
+					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
 					["coord"] = { 46.2, 86.7, SILVERPINE_FOREST },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
 					["maps"] = { MOLTEN_CORE },
 					["lvl"] = 60,
 					["groups"] = {
@@ -212,36 +212,36 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8577, {	-- Stewvul, Ex-B.F.F.
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8576,	-- Translating the Ledger
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["maps"] = { SILVERPINE_FOREST },
 					["lvl"] = 60,
 				}),
 				q(8741, {	-- The Champion Returns
+					["sourceQuest"] = 8736,	-- The Nightmare Manifests
 					["providers"] = {
 						{ "n", 11832 },	-- Keeper Remulos
 						{ "i", 21139 },	-- Green Scepter Shard
 					},
-					["sourceQuest"] = 8736,	-- The Nightmare Manifests
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = { 65, 50, TANARIS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8728, {	-- The Good News and The Bad News
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuests"] = {
 						8587,	-- Return to Narain
 						8578,	-- Scrying Goggles? No Problem!
 						8620,	-- The Only Prescription
 					},
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["cost"] = {
 						{ "i", 12360, 20 },	-- Arcanite Bar
@@ -252,8 +252,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 				}),
 				q(8302, {	-- The Hand of the Righteous
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["sourceQuest"] = 8301,	-- The Path of the Righteous
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
@@ -264,8 +264,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8585, {	-- The Isle of Dread!
-					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["sourceQuest"] = 8584,	-- Never Ask Me About My Business
+					["qg"] = 8125,	-- Dirge Quikcleave <Butcher>
 					["coord"] = { 52.6, 28.1, TANARIS },
 					["maps"] = { FERALAS },
 					["cost"] = {
@@ -281,12 +281,12 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8742, {	-- The Might of Kalimdor
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuests"] = {
 						8729,	-- The Wrath of Neptulon
 						8730,	-- Nefarius's Corruption
 						8741,	-- The Champion Returns
 					},
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = { 65, 50, TANARIS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -294,11 +294,11 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8736, {	-- The Nightmare Manifests
-					["qg"] = 11832,	-- Keeper Remulos
-					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["description"] = "You do NOT want to kill Eranikus or allow Remulos to die.",
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
+					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 					["groups"] = {
 						i(21531),	-- Drake Tooth Necklace
@@ -306,10 +306,10 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8735, {	-- The Nightmare's Corruption
-					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 8734,	-- Tyrande and Remulos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -349,8 +349,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8620, {	-- The Only Prescription
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8606,	-- Decoy!
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["maps"] = {
 						BLACKWING_LAIR,
@@ -442,11 +442,11 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8301, {	-- The Path of the Righteous
+					["sourceQuest"] = 8288,	-- Only One May Rise
 					["providers"] = {
 						{ "n", 15180 },	-- Baristolth of the Shifting Sands
 						{ "i", 20402 },	-- Agent of Nozdormu
 					},
-					["sourceQuest"] = 8288,	-- Only One May Rise
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["cost"] = {{ "i", 20384, 200 }},	-- Silithid Carapace Fragment
 					["lvl"] = 60,
@@ -455,8 +455,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8729, {	-- The Wrath of Neptulon
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8728,	-- The Good News and The Bad News
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["maps"] = { AZSHARA },
 					["lvl"] = 60,
@@ -476,17 +476,17 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8576, {	-- Translating the Ledger
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 8575,	-- Azuregos's Magical Ledger
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 65.2, 18.6, TANARIS },
 					["lvl"] = 60,
 				}),
 				q(8745, {	-- Treasure of the Timeless One
+					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["providers"] = {
 						{ "n", 15693 },	-- Jonathan the Revelator
 						{ "i", 21175 },	-- The Scepter of the Shifting Sands
 					},
-					["sourceQuest"] = 8742,	-- The Might of Kalimdor
 					["coord"] = { 25.9, 91.0, SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -500,15 +500,15 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					},
 				}),
 				q(8734, {	-- Tyrande and Remulos
-					["qg"] = 15624,	-- Forest Wisp
 					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["qg"] = 15624,	-- Forest Wisp
 					["coord"] = { 37.5, 47.9, TELDRASSIL },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
+					["qg"] = 15180,	-- Baristolth of the Shifting Sands
 					["coord"] = { 49.5, 36.4, SILITHUS },
 					["lvl"] = 60,
 				}),

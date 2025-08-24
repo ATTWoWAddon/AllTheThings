@@ -7,24 +7,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 			garrisonBuilding(126, {	-- Enchanter's Study (rank 1: 93, rank 2: 125, rank 3: 126)
 				n(QUESTS, {
 					q(38290, {	-- Some Dust
-						["providers"] = {
-							{ "n", 91020 },	-- Enchantress Ismae
-							{ "n", 91029 },	-- Rath'thul Moonvale
+						["qgs"] = {
+							91020,	-- Enchantress Ismae
+							91029,	-- Rath'thul Moonvale
 						},
-						["isDaily"] = true,
 						["cost"] = {{ "i", 109693, 50 }},	-- 50x Draenic Dust
+						["isDaily"] = true,
 					}),
-					q(36310, {	-- The Arakkoan Enchanter
-						["requireSkill"] = ENCHANTING,
+					q(36310, {	-- The Arakkoan Enchanter [A]
 						["sourceQuests"] = { 36308 },	-- Enchanted Highmaul Bracer
 						["provider"] = { "n", 83491 },	-- Eileese Shadowsong
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(36256, {	-- The Arakkoan Enchanter
+						["coord"] = { 45.4, 53.4, LUNARFALL },
 						["requireSkill"] = ENCHANTING,
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
+					}),
+					q(36256, {	-- The Arakkoan Enchanter [H]
 						["sourceQuests"] = { 36255 },	-- Enchanted Highmaul Bracer
 						["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
+						["coord"] = { 47.6, 38.7, FROSTWALL },
+						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
 					q(36645, {	-- Your First Enchanting Work Order
 						["provider"] = { "n", 77354 },	-- Ayada the White
@@ -42,7 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						88612,	-- Enchanting Follower [A]
 						88611,	-- Enchanting Follower [H]
 					},
-					["g"] = sharedData({ ["u"] = TRAINING }, {
+					["groups"] = sharedData({ ["u"] = TRAINING }, {
 						r(173716),	-- Illusion: Agility
 						r(173717),	-- Illusion: Battlemaster
 						r(173718),	-- Illusion: Berserking

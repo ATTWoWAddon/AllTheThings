@@ -158,5 +158,8 @@ i(0, 444789);		-- Whispering Stargazer
 ------------------
 -- PATCH 11.1.0 --
 ------------------
+--- TRAINER ---
+i(0, 471368);		-- Blair's "Gold" Fish Exchange
+i(0, 471365);		-- Undermine
 --- DISCOVERY ---
-i(0, 471359);       -- "Gold" Fish
+i(0, 471359);		-- "Gold" Fish

@@ -54,8 +54,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27068, {	-- Chief Ukorz Sandscalp
-					["qg"] = 40712,	-- Mazoga's Spirit
 					["sourceQuest"] = 25556,	-- Into Zul'Farrak
+					["qg"] = 40712,	-- Mazoga's Spirit
 					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(44, 44, 15),
 					["groups"] = {
@@ -85,8 +85,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2770, {	-- Gahz'rilla
-					["qg"] = 4453,	-- Wizzle Brassbolts
 					["sourceQuest"] = 2769,	-- The Brassbolts Brothers
+					["qg"] = 4453,	-- Wizzle Brassbolts
 					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -110,15 +110,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(25556, {	-- Into Zul'Farrak
-					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
-					["coord"] = { 42.4, 24.0, TANARIS },
+					["qg"] = 7804,	-- Trenton Lighthammer
+					["coord"] = { 42.5, 24.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(2991, {	-- Nekrum's Medallion
-					["qg"] = 8022,	-- Thadius Grimshade
 					["sourceQuest"] = 2990,	-- Thadius Grimshade
+					["qg"] = 8022,	-- Thadius Grimshade
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -130,8 +130,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2865, {	-- Scarab Shells
-					["qg"] = 7876,	-- Tran'rek
 					["sourceQuest"] = 2864,	-- Tran'rek
+					["qg"] = 7876,	-- Tran'rek
 					["coord"] = { 51.6, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -168,8 +168,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 40,
 				}),
 				q(4787, {	-- The Ancient Egg
-					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
+					["qg"] = 8579,	-- Yeh'kinya
 					["coord"] = { 67, 22.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
@@ -193,8 +193,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 40,
 				}),
 				q(3527, {	-- The Prophecy of Mosh'aru
-					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
+					["qg"] = 8579,	-- Yeh'kinya
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -208,8 +208,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2936, {	-- The Spider God
-					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
+					["qg"] = 3188,	-- Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -221,8 +221,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2846, {	-- Tiara of the Deep
-					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 2861,	-- Tabetha's Task
+					["qg"] = 6546,	-- Tabetha
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -427,7 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9471, {	-- Nekrum's Medallion
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}
+				},
 			}),
 			-- #endif
 			e(487, {	-- Nekrum & Sezzi'ziz
@@ -493,9 +493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
 				["groups"] = {
-					ach(639, {	-- Zul'Farrak
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					ach(639),	-- Zul'Farrak
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

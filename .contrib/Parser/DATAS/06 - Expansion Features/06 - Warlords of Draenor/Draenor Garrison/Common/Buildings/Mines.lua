@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9453, {	-- Draenic Stone Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(116249),	-- Frostwall Mines, Level 3
 								i(111996),	-- Lunarfall Excavation, Level 3
 							},

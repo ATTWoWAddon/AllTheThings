@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
+local L, settings, ipairs = app.L, app.Settings, ipairs;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage(L.REPORTING_LABEL, L.FEATURES_PAGE)
@@ -56,7 +56,6 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:ReportContent", self:GetChecked())
-		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxReportNearby:SetATTTooltip(L.REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP)
 	checkboxReportNearby:AlignBelow(checkboxReportUnsourced, -1)
@@ -109,7 +108,6 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:Type:npc", self:GetChecked())
-		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeCreatures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeCreatures:AlignBelow(checkboxNearbyClearWaypoints, -1)
@@ -127,7 +125,6 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:Type:object", self:GetChecked())
-		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeTreasures:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeTreasures:AlignBelow(checkboxNearbyIncludeCreatures)
@@ -145,7 +142,6 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:IncludeCompleted", self:GetChecked())
-		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeCompleted:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeCompleted:AlignBelow(checkboxNearbyIncludeTreasures)
@@ -163,7 +159,6 @@ if C_VignetteInfo then
 	end,
 	function(self)
 		settings:SetTooltipSetting("Nearby:IncludeUnknown", self:GetChecked())
-		app.HandleEvent("OnReportNearbySettingsChanged");
 	end)
 	checkboxNearbyIncludeUnknown:SetATTTooltip(L.REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP)
 	checkboxNearbyIncludeUnknown:AlignBelow(checkboxNearbyIncludeCompleted)

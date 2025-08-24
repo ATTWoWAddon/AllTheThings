@@ -1,577 +1,57 @@
---------------------------------------------------------------------------------
---						L O C A L I Z A T I O N  F I L E					  --
---------------------------------------------------------------------------------
---						English / United States (default)					  --
---------------------------------------------------------------------------------
 local appName, app = ...;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
-local L = setmetatable({
-	-- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
-	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
-	THINGS_UNTIL = " THINGS UNTIL ";
-	THING_UNTIL = " THING UNTIL ";
-	YOU_DID_IT = "YOU DID IT!";
+local L = {
+	-- Temporary
+    EVENT_REMAPPING = {};
+    EVENT_TIMERUNNING_SEASONS = {};
+    HEADER_DESCRIPTIONS = {};
+    HEADER_EVENTS = {};
+    HEADER_ICONS = {};
+    HEADER_LORE = {};
+    HEADER_NAMES = {};
+    QUEST_NAMES = {};
+    MAP_ID_TO_ZONE_TEXT = {};
+	
+	SPELL_NAME_TO_SPELL_ID = {
+		-- Riding
+		["Riding"] = 33388,
+		["Equitación"] = 33388,
+		["Reiten"] = 33388,
+		["Monte"] = 33388,
+		["Montaria"] = 33388,
+		["Верховая езда"] = 33388,
+		["탈것 타기"] = 33388,
+		["骑术"] = 33388,
+		["騎術"] = 33388,
 
-	-- Social Module
-	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
-	NEW_VERSION_FLAVORS = {
-		"AllTheThings hungers.",
-		"or Sylvanas might get another lighter.",
-		"as Alexstrasza is worried about you.",
-		"and Invincible will drop |cffffaaaafor sure|r next time.",
-	--	"this was merely a setback.",
-		", Yes Chef!",
-		"and Crieve will help a turtle to make it to the water.",
-		"CHAMPYUUN, DE AZURIITE.",
-	};
-	SOCIAL_PROGRESS = "Social Progress";
-	TRACKING_PROGRESS = "Tracking Progress";
-	COLLECTION_PROGRESS = "Collection Progress";
+		-- Herb Gathering
+		-- The skill name is "Herbalism", not "Herb Gathering"
+		["Herbalism"] = 2366,
+		["Herboristería"] = 2366,
+		["Kräuterkunde"] = 2366,
+		["Herboristerie"] = 2366,
+		["Herborismo"] = 2366,
+		["Травничество"] = 2366,
+		["약초채집"] = 2366,
+		["草药学"] = 2366,
+		["草藥學"] = 2366,
 
-	-- Settings
-	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-	OPEN_MINILIST_FOR = "Open mini list for ";
-	REFRESHING_COLLECTION = "Refreshing collection...";
-	DONE_REFRESHING = "Done refreshing collection.";
-	ADDED_WITH_PATCH = "Added With Patch";
-	REMOVED_WITH_PATCH = "Removed With Patch";
-	AVAILABILITY = "Availability";
-	CREATURES_COUNT = "[%s Creatures]";
-	CREATURES_LIST = "Creatures List";
-	PROGRESS = "Progress";
-	COMPLETED_BY = "Completed By: %s";
-	KNOWN_BY = "Known by %s";
-	OWNED_BY = "Owned by %s";
-	ALIVE = "Alive";
-	SPAWNED = "Spawned";
-	LAYER = "Layer";
-	BINDING = "Binding";
-	BONUS_ID = "Bonus ID";
-	CONDUIT_ID = "Conduit ID";
-	DISPLAY_ID = "Display ID";
-	PET_BATTLES = "Pet Battles";
-	EVENT_ID = "Event ID";
-	ICON_PATH = "Icon Path";
-	ITEM_LEVEL = "iLvl";
-	ITEM_STRING = "Item String";
-	MOD_ID = "Mod ID";
-	OBJECT_TYPE = "Object Type";
-	OBJECTIVES = "Objectives";
-	QUEST_GIVERS = "Quest Givers";
-	RUNEFORGE_POWER_ID = "Runeforge Power ID";
+		-- French (Classic Era)
+		["Ingénierie"] = 4036,    -- Engineering
+		["Secourisme"] = 3273,    -- First Aid
 
-	-- Instructional Text
-	MINIMAP_MOUSEOVER_TEXT = "Right click to change settings.\nLeft click to open the Main List.\n"..CTRL_KEY_TEXT.." click to open the Mini List.\n"..SHIFT_KEY_TEXT.." click to Refresh Collections.";
-	TOP_ROW_INSTRUCTIONS = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
-	OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffAlt + Right Click to Plot Waypoints|r";
-	TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Search the Auction House|r";
-	OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
-	RECENTLY_MADE_OBTAINABLE = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
-	RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000The more information, the better.  Thanks!|r";
-	MAIN_LIST_REQUIRES_REFRESH = "[Click to Update Progress]";
-	UPDATES_PAUSED = "Updates Paused";
-	VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache.";
-	REQUIRES_PVP = "|CFF00FFDERequires PvP Activities or Currencies|r";
-	REQUIRES_PETBATTLES = "|CFF00FFDERequires Pet Battling|r";
-	REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requires Skyriding").."|r";
-	PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
-	REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
-	QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
-	REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
-	ITEM_GIVES_REP = "Provides Reputation with '";
+		-- Spanish (Classic Era)
+		["Costura"] = 3908,    -- Tailoring
+		["Marroquinería"] = 2108,    -- Leatherworking
 
-	-- Event Text
-	ITEM_ID_ADDED = "%s (%d) was added to your collection.";
-	ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
-	ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
-	ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] was added to your collection.";
-	ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] was added to your collection. Not found in the database. Please report to the ATT Discord!";
-	ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
-	ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] was removed from your collection.";
-
-	-- Tooltip Text
-	DROP_RATE = "Drop Rate";
-	QUEST_GIVER = "Quest Giver";
-	COORDINATES = "Coordinates";
-	PLAYER_COORDINATES = "Player Coordinates";
-	EVENT_SCHEDULE = "Event Schedule";
-	EVENT_ACTIVE = "Active:";
-	EVENT_START = "Start:";
-	EVENT_END = "End:";
-	EVENT_WHERE = "Where:";
-	REQUIRES_EVENT = "Requires Event";
-	BREADCRUMBS = "Breadcrumbs";
-	MAPS = "Maps";
-	LOCKOUT = "Lockout";
-	LOCKOUTS = "Lockouts";
-	RESETS = "Resets";
-	SHARED = "Shared";
-	SPLIT = "Per Difficulty";
-	REQUIRES = "Requires";
-	REQUIRES_LEVEL = "Requires Level";
-	LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
-	ADDED_WITH_PATCH_FORMAT = "This gets added with patch %s";
-	ADDED_BACK_WITH_PATCH_FORMAT = "This gets added back with patch %s";
-	REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
-	WAS_ADDED_WITH_PATCH_FORMAT = "This was added with patch %s";
-	WAS_ADDED_BACK_WITH_PATCH_FORMAT = "This was added back with patch %s";
-
-	FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
-	MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
-	MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
-	MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
-
-	HEIRLOOM_TEXT = "Unlocked Heirloom";
-	HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
-	HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
-
-	LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
-	LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
-	LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
-	LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
-	LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
-	LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
-	TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
-
-	-- Filter Text
-	ARTIFACT_ID = "Artifact ID";
-	AZERITE_ESSENCE_ID = "Azerite Essence ID";
-	ART_ID = "Art ID";
-	CREATURE_ID = "Creature ID";
-	CURRENCY_ID = "Currency ID";
-	DESCRIPTIONS = "Descriptions";
-	DIFFICULTY_ID = "Difficulty ID";
-	ENCOUNTER_ID = "Encounter ID";
-	EXPANSION_ID = "Expansion ID";
-	EXPLORATION_ID = "Exploration ID";
-	FILTER_ID = "Filter ID";
-	FOLLOWER_ID = "Follower ID";
-	GUID = "Global ID";
-	HEADER_ID = "Header ID";
-	ILLUSION_ID = "Illusion ID";
-	INSTANCE_ID = "Instance ID";
-	SAVED_INSTANCE_ID = "Saved Instance ID";
-	ITEM_ID = "Item ID";
-	FACTION_ID = "Faction ID";
-	FLIGHT_PATH_ID = "Flight Path ID";
-	LORE = "Lore";
-	MAP_ID = "Map ID";
-	MISSION_ID = "Mission ID";
-	MOUNT_ID = "Mount ID";
-	MUSIC_ROLL_ID = "Music Roll ID";
-	NPC_ID = "NPC ID";
-	OBJECT_ID = "Object ID";
-	PROVIDERS = "Provider(s)";
-	QUEST_ID = "Quest ID";
-	SET_ID = "Gear Set ID";
-	SOURCE_ID = "Source ID";
-	SPELL_ID = "Spell ID";
-	SPELL_NAME = "Spell Name";
-	SPECIES_ID = "Species ID";
-	TITLE_ID = "Title ID";
-	TOY_ID = "Toy ID";
-	VISUAL_ID = "Visual ID";
-	AND_MORE = "And %s more...";
-	SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
-	SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
-	ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
-	CLASSES = "Classes";
-
-	ADDITIONAL_LABEL = "Additional Information";
-	CRITERIA_FOR = "Criteria for";
-	CURRENCY_FOR = "Currency for";
-
-	CHAT_COMMANDS_LABEL = "Chat Commands";
-	CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
-	ICON_LEGEND_LABEL = "Icon Legend";
-	ICON_LEGEND_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Unobtainable" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Obtainable only with prerequisites" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Available seasonal content" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Unavailable seasonal content" .. "\n|T374225:0|t " .. "Unavailable on current character";
-	KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
-	KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
-	MINIMAP_LABEL = "Minimap Button";
-	MODULES_LABEL = "Modules & Mini Lists";
-	AUTO_PROF_LIST_CHECKBOX = "Automatically Open the Profession List";
-	AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
-	SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
-	SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
-	MINIMAP_BUTTON_CHECKBOX = "Show the Minimap Button";
-	MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
-	MINIMAP_SLIDER = "Minimap Button Size";
-	MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
-	WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
-	WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
-
-	-- Icons and Collection Text
-	COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-	COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-	NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-	COLLECTED = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Collected|r";		-- Acquired the colors and icon from CanIMogIt.
-	COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |c" .. app.Colors.Completed .. "Collected*|r";	-- Acquired the colors and icon from CanIMogIt.
-	NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
-	COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
-	COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
-	INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
-	INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-
-
-	-- temporary move
-	COLLECTED_STRING = " Collected";
-	CONTAINS = "Contains:";
-	FACTIONS = "Factions";
-
-	NO_COORDINATES_FORMAT = "No known coordinates for %s";
-	TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
-	FLIGHT_PATHS = "Flight Paths";
-	BOUND_ON = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
-
-	NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
-	MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-	MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-	COST = "Cost";
-	COST_DESC = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
-	COST_TOTAL = "Total Cost";
-	COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
-	SOURCES = "Source(s)";
-	SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
-	REQUIRED_ACHIEVEMENTS = ITEM_REQ_SKILL:format(ACHIEVEMENTS),
-	REQUIRED_ACHIEVEMENTS_DESC = "Shows any Achievements which must be obtained before this Thing is available",
-	WRONG_FACTION = "You might need to be on the other faction to view this.";
-	ARTIFACT_INTRO_REWARD = "Awarded for completing the introductory quest for this Artifact.";
-	FLIGHT_PATHS_DESC = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
-	FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
-	FAILED_ITEM_INFO = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
-	MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
-	MUSIC_ROLLS_DESC_2 = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass in your garrison for this item to drop.";
-	OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
-	SELFIE_DESC = "Take a selfie using your ";
-	SELFIE_DESC_2 = " with |cffff8000";
-
-	UPON_COMPLETION = "Upon Completion";
-	UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below.";
-	QUEST_CHAIN_REQ = "Quest Chain Requirements";
-	QUEST_CHAIN_REQ_DESC = "The following quests need to be completed before being able to complete the final quest.";
-	AH_SEARCH_NO_ITEMS_FOUND = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.";
-	AH_SEARCH_BOE_ONLY = "Only Bind on Equip items can be found using this search.";
-	TSM_WARNING_1 = "Running this command can potentially destroy your existing TSM settings by reassigning items to the ";
-	TSM_WARNING_2 = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?";
-	PRESET_UPDATE_SUCCESS = "Updated the preset successfully.";
-	SHOPPING_OP_MISSING_1 = "The preset is missing a 'Shopping' Operation assignment.";
-	SHOPPING_OP_MISSING_2 = "Type '/tsm operations' to create or assign one.";
-	AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionator.";
-	TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
-	QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
-
-	DURING_WQ_ONLY = "Can be completed when the World Quest is active";
-	COMPLETED_DAILY = "Can be completed daily";
-	COMPLETED_WEEKLY = "Can be completed weekly";
-	COMPLETED_MONTHLY = "Can be completed monthly";
-	COMPLETED_YEARLY = "Can be completed yearly";
-	COMPLETED_MULTIPLE = "Can be repeated multiple times";
-	LOOT_TABLE_CHANCE = "Loot Table Chance";
-	BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
-	BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
-	PREREQUISITE_QUESTS = "There are prerequisite quests that must be accepted or completed before this may be obtained:";
-	BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
-	THIS_IS_BREADCRUMB = "This is a breadcrumb quest.";
-	BREADCRUMB_PARTYSYNC = "This may be unable to be completed without Party Sync if completing any of these quests first:";
-	BREADCRUMB_PARTYSYNC_2 = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
-	BREADCRUMB_PARTYSYNC_3 = "This may be obtained via Party Sync with a character that is able to accept this quest.";
-	BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
-	DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
-	UNAVAILABLE_WARNING_FORMAT = "Becomes unavailable if %d of the following are met:";
-	NO_ENTRIES = "No entries matching your filters were found.";
-	NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
-	DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
-	OPEN_AUTOMATICALLY = "Open Automatically";
-	OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
-	MINI_LIST = "Mini List";
-	MINI_LIST_DESC = "This list contains the relevant information for your current zone, which cannot be found in the ATT database";
-	-- OPEN_MINILIST_FOR = "Open mini list for ";
-	UPDATE_LOCATION_NOW = "Update Location Now";
-	UPDATE_LOCATION_NOW_DESC = "If you wish to forcibly refresh the data to your current Map, click this button now!";
-	PERSONAL_LOOT_DESC = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.";
-	RAID_ASSISTANT = "Raid Assistant";
-	RAID_ASSISTANT_DESC = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!";
-	LOOT_SPEC_UNKNOWN = "Loot Specialization Unknown";
-	LOOT_SPEC = "Loot Specialization";
-	LOOT_SPEC_DESC = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!";
-	DUNGEON_DIFF = "Dungeon Difficulty";
-	DUNGEON_DIFF_DESC = "The difficulty setting for dungeons.\n\nClick this row to change it now!";
-	RAID_DIFF = "Raid Difficulty";
-	RAID_DIFF_DESC = "The difficulty setting for raids.\n\nClick this row to change it now!";
-	LEGACY_RAID_DIFF = "Legacy Raid Difficulty";
-	LEGACY_RAID_DIFF_DESC = "The difficulty setting for legacy raids.\n\nClick this row to change it now!";
-	TELEPORT_TO_FROM_DUNGEON = "Teleport to/from Dungeon";
-	TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.";
-	RESET_INSTANCES = "Reset Instances";
-	RESET_INSTANCES_DESC = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.." click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
-	DELIST_GROUP = "Delist Group";
-	DELIST_GROUP_DESC = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.";
-	LEAVE_GROUP = "Leave Group";
-	LEAVE_GROUP_DESC = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.";
-	LOOT_SPEC_DESC_2 = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.";
-	CURRENT_SPEC = "Current Specialization";
-	CURRENT_SPEC_DESC = "If you switch your talents, your loot specialization changes with you.";
-	DUNGEON_DIFF_DESC_2 = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.";
-	CLICK_TO_CHANGE = "Click to change now. (if available)";
-	RAID_DIFF_DESC_2 = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.";
-	LEGACY_RAID_DIFF_DESC_2 = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.";
-	REROLL = "Reroll";
-	REROLL_DESC = "Click this button to reroll using the active filter.";
-	APPLY_SEARCH_FILTER = "Apply a Search Filter";
-	APPLY_SEARCH_FILTER_DESC = "Please select a search filter option.";
-	SEARCH_EVERYTHING_BUTTON_OF_DOOM = "Click this button to search... EVERYTHING.";
-	ACHIEVEMENT = BATTLE_PET_SOURCE_6;
-	ACHIEVEMENT_DESC = "Click this button to select a random achievement based on what you're missing.";
-	FACTION_DESC = "Click this button to select a random faction based on what you're missing.";
-	ITEM = AUCTION_HOUSE_HEADER_ITEM;
-	ITEM_DESC = "Click this button to select a random item based on what you're missing.";
-	INSTANCE = INSTANCE;
-	INSTANCE_DESC = "Click this button to select a random instance based on what you're missing.";
-	DUNGEON = CALENDAR_TYPE_DUNGEON;
-	DUNGEON_DESC = "Click this button to select a random dungeon based on what you're missing.";
-	RAID = RAID;
-	RAID_DESC = "Click this button to select a random raid based on what you're missing.";
-	MOUNT = MOUNT;
-	MOUNT_DESC = "Click this button to select a random mount based on what you're missing.";
-	PET = PET;
-	PET_DESC = "Click this button to select a random pet based on what you're missing.";
-	QUEST = BATTLE_PET_SOURCE_2;
-	QUEST_DESC = "Click this button to select a random quest based on what you're missing.";
-	TITLES = PAPERDOLL_SIDEBAR_TITLES;
-	TITLES_RAND_DESC = "Click this button to select a random title based on what you're missing.";
-	TOY = TOY;
-	TOY_DESC = "Click this button to select a random toy based on what you're missing.";
-	ZONE = ZONE;
-	ZONE_DESC = "Click this button to select a random zone based on what you're missing.";
-	GO_GO_RANDOM = "Random - Go Get 'Em!";
-	GO_GO_RANDOM_DESC = "This window allows you to randomly select a place or item to get. Go get 'em!";
-	CHANGE_SEARCH_FILTER = "Change Search Filter";
-	CHANGE_SEARCH_FILTER_DESC = "Click this to change your search filter.";
-	REROLL_2 = "Reroll: ";
-	NOTHING_TO_SELECT_FROM = "There was nothing collectible (according to current Settings) to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.";
-	NO_SEARCH_METHOD = "No search method specified.";
-	PROFESSION_LIST = "Profession List";
-	PROFESSION_LIST_DESC = "Open your professions to cache them.";
-	CACHED_RECIPES_1 = "Cached ";
-	CACHED_RECIPES_2 = " known recipes!";
-	WORLD_QUESTS = TRACKER_HEADER_WORLD_QUESTS;
-	WORLD_QUESTS_DESC = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!";
-	QUESTS_DESC = "Shows all possible QuestID's in the game in ascending numeric order.";
-	UPDATE_WORLD_QUESTS = "Update World Quests Now";
-	UPDATE_WORLD_QUESTS_DESC = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\n"..ALT_KEY_TEXT.." click to include currently-available Things which may not be time-limited";
-	CLEAR_WORLD_QUESTS = "Clear World Quests";
-	CLEAR_WORLD_QUESTS_DESC = "Click to clear the current information within the World Quests frame";
-	ALL_THE_ITEMS_FOR_ACHIEVEMENTS_DESC = "All items that can be used to obtain achievements that you are missing are displayed here.";
-	ALL_THE_APPEARANCES_DESC = "All appearances that you need are displayed here.";
-	ALL_THE_MOUNTS_DESC = "All mounts that you have not collected yet are displayed here.";
-	ALL_THE_BATTLEPETS_DESC = "All pets that you have not collected yet are displayed here.";
-	ALL_THE_QUESTS_DESC = "All quests that have objective or starting items that can be sold on the auction house are displayed here.";
-	ALL_THE_RECIPES_DESC = "All recipes that you have not collected yet are displayed here.";
-	ALL_THE_ILLUSIONS_DESC = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.";
-	ALL_THE_REAGENTS_DESC = "All items that can be used to craft an item using a profession on your account.";
-	AH_SCAN_SUCCESSFUL_1 = ": Successfully scanned ";
-	AH_SCAN_SUCCESSFUL_2 = " item(s).";
-	REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
-	ARTIFACT_CACHE_OUT_OF_DATE = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
-	QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
-	QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
-	NESTED_QUEST_REQUIREMENTS = "Nested Quest Requirements";
-	DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
-	CURRENCY_NEEDED_TO_BUY = "Estimated amount needed to obtain remaining Things";
-	FUTURE_UNOBTAINABLE = "Future Unobtainable!";
-	FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
-	NEW_WITH_PATCH = "Newly Added Things";
-	NEW_WITH_PATCH_TOOLTIP = "This shows you all of the content that has been added with the latest patch of the game.";
-	ADDED_WITH_PATCH_TOOLTIP = "This shows you all of the content that has been added with each patch of the expansion.";
-	TRADING_POST = "Trading Post";
-
-	-- Item Filter Window
-	ITEM_FILTER_TEXT = "Item Filters";
-	ITEM_FILTER_DESCRIPTION = "You can search the ATT Database by using a item filter.";
-	ITEM_FILTER_BUTTON_TEXT = "Set Item Filter";
-	ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
-	ITEM_FILTER_POPUP_TEXT = "Which Item Filter would you like to search for?";
-
-	-- Instructional Text
-	TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
-	TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
-	QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
-	QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-	GARRISON_BUILDINGS_REQUIRE_GARRISON = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison";
-
-
-	-- These are solely used to condense the length of Source strings within Tooltips
-	ABBREVIATIONS = {
-		["ALL THE THINGS"] = "ATT",
-		["Expansion Pre"] = "Pre",
-		["Expansion Features"] = "EF",
-		[GROUP_FINDER] = "D&R",
-		["Dungeons & Raids"] = "D&R",
-		["Player vs Player"] = STAT_CATEGORY_PVP,
-		["Player vs. Player"] = STAT_CATEGORY_PVP,
-		["Outdoor Zones"] = LFG_TYPE_ZONE,
-		-- Expansion sorted
-		["Classic %> "] = "",
-		["The Burning Crusade"] = "BC",
-		["Burning Crusade"] = "BC",
-		["The BC"] = "BC",
-		["Wrath of the Lich King"] = "WotLK",
-		["Cataclysm %>"] = "Cata >",
-		["Cataclysm "] = "Cata ",
-		["Mists of Pandaria"] = "MoP",
-		["Warlords of Draenor"] = "WoD",
-		["Battle for Azeroth"] = "BFA",
-		["The Shadowlands"] = "SL",
-		["Shadowlands"] = "SL",
-		["Dragonflight"] = "DF",
-		["The War Within"] = "TWW",
-		-- Dungeon & Raid
-		["Normal"] = "N",
-		["Heroic"] = "H",
-		["Mythic"] = "M",
-		["M Keystone"] = "M+",
-		["Raid Finder"] = "LFR",
-		["Looking For Raid"] = "LFR",
-		["10 Player"] = "10M",
-		["10 Player (Heroic)"] = "10M (H)",
-		["25 Player"] = "25M",
-		["25 Player (Heroic)"] = "25M (H)",
-		[BATTLEGROUNDS] = "BGs",
-		-- Dungeon & Raid Names
-		-- Cata
-		["Baleroc, the Gatekeeper"] = "Baleroc",
-		["The Conclave of Wind"] = "Conclave",
-		["Hagara the Stormbinder"] = "Hagara",
-		["Majordomo Staghelm"] = "Majordomo",
-		["Omnotron Defense System"] = "Omnotron",
-		["Theralion and Valiona"] = "Theralion&Valiona",
-		["Yor'sahj the Unsleeping"] = "Yor'sahj",
-		-- DF
-		["Aberrus, the Shadowed Crucible"] = "Aberrus",
-		["Antorus, the Burning Throne"] = "Antorus",
-		["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
-		["Kazzara, the Hellforged"] = "Kazzara",
-		["Larodar, Keeper of the Flame"] = "Larodar",
-		["Nymue, Weaver of the Cycle"] = "Nymue",
-		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
-		-- Legion
-		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
-		-- BFA
-		["Ny'alotha, the Waking City"] = "Ny'alotha",
-		-- SL
-		["Tazavesh, the Veiled Market"] = "Tazavesh",
-		-- TWW
-		["Ara-Kara, City of Echoes"] = "Ara-Kara",
-		["Enterprising Hero: The War Within Season Two"] = "Enterprising Hero: TWW S2",
-		["The War Within Keystone Legend: SeasonTwo"] = "TWW Keystone Legend: S2",
-		["Mug'Zee, Heads of Security"] = "Mug'Zee",
-		["Sikran, Captain of the Sureki"] = "Sikran",
-		["Vexie and the Geargrinders"] = "Vexie & the Geargrinders",
-		-- Outdoor Zones
-		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
-		["Season "] = "S",
-		["Sanctum Upgrades %> "] = "",
-		["The Azure Span"] = "Azure Span",
-		["The Forbidden Reach"] = "Forbidden Reach",
-		["The Superbloom"] = "Superbloom",
-		["The Waking Shores"] = "Waking Shores",
-		["The Primalist Future"] = "Primalist Future",
-		["The Storm's Fury"] = "Storm's Fury",
-		["WoW Anniversary"] = "Anniversary",
-		["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
-		["Dragon Racing Completionist: Gold > "] = "",
-		["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
-		["Emerald Dream Racing Completionist: Gold > "] = "",
-		["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
-		["Forbidden Reach Racing Completionist: Gold > "] = "",
-		["Zaralek Cavern Racing Completionist: Gold > "] = "",
-
-		["WoW's Anniversary %> "] = "",
-		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
-		["Emissary Quests"] = "Emissary",
-		["Item Sets"] = WARDROBE_SETS,
-		["Zone Wide"] = LFG_TYPE_ZONE,
-		["Mini World Events"] = GetSpellName(57055),
-		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
-		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
-		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
-		["Covenant:"] = "Cov:",
-		[CLASS.." %> "] = "",
-
-		["Pet Journal"] = PETS,
-		["Toy Box"] = TOY,
-	};
-
-	-- These are populated by the LocalizationDB.
-	EVENT_REMAPPING = {};
-	EVENT_TIMERUNNING_SEASONS = {};
-	HEADER_DESCRIPTIONS = {};
-	HEADER_EVENTS = {};
-	HEADER_ICONS = {};
-	HEADER_LORE = {};
-	HEADER_NAMES = {};
-	QUEST_NAMES = {};
-
-	-- If there is a name provided in the table above, it will prefer that name association.
-	MAP_ID_TO_ZONE_TEXT = {};
-
-	-- Binding Localizations
-	TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
-	TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
-	TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
-	TOGGLE_FACTION_MODE = "Toggle Faction Mode";
-	TOGGLE_LOOT_MODE = "Toggle Loot Mode";
-	TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
-	TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
-	TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
-	TOGGLE_BOEITEMS = "Toggle BoE/BoA Items";
-	TOGGLE_SOURCETEXT = "Toggle Source Locations";
-	TOGGLE_MAINLIST = "Toggle ATT Main List";
-	TOGGLE_MINILIST = "Toggle ATT Mini List";
-	TOGGLE_PROFESSION_LIST = "Toggle ATT Profession List";
-	TOGGLE_WORLD_QUESTS_LIST = "Toggle ATT World Quests";
-	TOGGLE_RAID_ASSISTANT = "Toggle ATT Raid Assistant";
-	TOGGLE_RANDOM = "Toggle ATT Random";
-	REROLL_RANDOM = "Reroll the Random Selection";
-	MODULES = "Modules";
-
-	-- Features
-	NEARBY = "Nearby:";
-
-	-- Tooltips
-	AND_OTHER_SOURCES = "And %s other sources...";
-	FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
-	RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-	RACE_LOCKED = "Race Locked";
-	ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your characters";
-	HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.";
-	ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
-
-	-- Windows
-	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
-	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers";
-	HIDDEN_CURRENCY_TRIGGERS_DESC = "These are Currencies which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
-	HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-	NEVER_IMPLEMENTED = "Never Implemented";
-	NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
-	SOURCELESS = "Sourceless";
-	SOURCELESS_DESC = "These things are confirmed to be obtainable, but there is currently no known source of where it comes from or if it is even still obtainable";
-	UNSORTED = "Unsorted";
-	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
-	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
-
-	-- Module Localizations
-	PVP_RANK_DESCRIPTION = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
-
+		["Ganzúa"] = 1809,        -- Lock Pick    -- Required for ES (EU)
+		["Desollar"] = 8613,    -- Skinning        -- Required for ES (EU)
+		["Cнятие шкур"] = 8613,    -- Skinning        -- Required for RU
+	},
+	
+	
 	EXPANSION_DATA = {
 		{	-- Classic
 			["icon"] = app.asset("Expansion_CLASSIC"),
@@ -625,535 +105,124 @@ local L = setmetatable({
 			["icon"] = app.asset("Expansion_TLT"),
 			["lore"] = "The Last Titan is the twelfth expansion for World of Warcraft and the final installment of the Worldsoul Saga.",
 		},
-	};
-
-	-- Settings.lua
-	AFTER_REFRESH = "After Refresh";
-
-	-- General tab
-	-- Mode Title
-	MODE = "Mode";
-	TITLE_COMPLETIONIST = "Completionist ";
-	TITLE_UNIQUE_APPEARANCE = "Unique ";
-	TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-	TITLE_ACCOUNT = app.ccColors.Account .. "Account|R ";
-	TITLE_ALLIANCE = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
-	TITLE_HORDE = app.ccColors.Horde .. FACTION_HORDE .. "|R";
-	TITLE_NEUTRAL = FACTION_NEUTRAL;
-	TITLE_MAIN_ONLY = " (Main Only)";
-	TITLE_NONE_THINGS = "None of the Things ";
-	TITLE_ONLY = " Only ";
-	TITLE_INSANE = app.ccColors.Insane .. "Insane|R ";
-	TITLE_SOME_THINGS = "Some of the Things ";
-	TITLE_LEVEL = "Level ";
-	TITLE_SOLO = "Solo ";
-	_BETA_LABEL = " |cff4AA7FF[Beta]|R";	-- unused
-
-	EXTRA_THINGS_LABEL = "Additional Resources";	-- unused
-
-	CLICK_TO_CREATE_FORMAT = "Click to Create %s";
-	LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
-	READY_FORMAT = "%s "..READY;	-- %s Ready	-- unused
-
-	-- Features tab
-	AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
-	AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
-	AUTO_MAIN_LIST_CHECKBOX = "Automatically Open the Main List";
-	AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
-	AUTO_MINI_LIST_CHECKBOX = "Automatically Open the Mini List";
-	AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
-	FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX = "Filter Mini List for Timerunning";
-	FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP = "Enable this option to filter Timerunning content appropriately (only from the mini list) when playing on either a Retail or Timerunning Character.\n\nNOTE: This option will only be available during Timerunning events!";
-	AUTO_RAID_ASSISTANT_CHECKBOX = "Automatically Open the Raid Assistant";
-	AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
-	AUTO_WQ_LIST_CHECKBOX = "Automatically Open the World Quests List";
-	AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
-	AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
-	AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
-
-	-- Sync Window
-	ACCOUNT_MANAGEMENT = "Account Management";
-	ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
-	ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
-	ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
-	ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
-	CHARACTERS = CHARACTER;	-- Character
-	SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
-	NO_CHARACTERS_FOUND = "No characters found.";
-	LINKED_ACCOUNTS = "Linked Accounts";
-	LINKED_ACCOUNTS_TOOLTIP = "This shows all of the linked accounts you have defined so far.";
-	NO_LINKED_ACCOUNTS = "No linked accounts found.";
-	LINKED_ACCOUNT_TOOLTIP = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
-	DELETE_LINKED_CHARACTER = "Right Click to Delete this Linked Character";
-	DELETE_LINKED_ACCOUNT = "Right Click to Delete this Linked Account";
-	DELETE_CHARACTER = "Right Click to Delete this Character";
-	CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
-
-	-- Tooltip Text
-	SECRETS_HEADER = "Secrets";	-- unused
-	SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-
-	-- Artifact Relic Completion
-	ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
-	ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
-	NOT_TRADEABLE = "Not Tradeable";
-	TRADEABLE = "Tradeable";
-
-	-- Keybind usage
-	ENABLED = "enabled";
-	DISABLED = "disabled";
-
-	-- Icons and Collection Text
-	SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
-	COST_ICON = "|T" .. app.asset("Currency") .. ":0|t";
-	COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
-	COLLECTED_WARBAND_ICON = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
-	COLLECTED_WARBAND = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
-	UPGRADE_ICON = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
-	UPGRADE_TEXT = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
-	REAGENT_ICON = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
-	REAGENT_TEXT = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
-
-	-- Unobtainable Listing (for fellow 100%s out there)
+	},
 	UNOBTAINABLE_ITEM_TEXTURES = {
-		[0] = 374225,	-- Available, but not due to Current Character filters
-		app.asset("status-unobtainable"),
-		app.asset("status-prerequisites"),
+		[0] = 374225,	-- 0 Available, but not due to Current Character filters
+		app.asset("status-unobtainable"),	-- 1
+		app.asset("status-prerequisites"),	-- 2
 		"",									-- 3, we want no icon for these
-		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
-		app.asset("status-seasonal-available"),	-- Seasonal available
-	};
-
-	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
-	SPELL_NAME_TO_SPELL_ID = {
-		-- Riding
-		["Riding"] = 33388,
-		["Equitación"] = 33388,
-		["Reiten"] = 33388,
-		["Monte"] = 33388,
-		["Montaria"] = 33388,
-		["Верховая езда"] = 33388,
-		["탈것 타기"] = 33388,
-		["骑术"] = 33388,
-		["騎術"] = 33388,
-
-		-- Herb Gathering
-		-- The skill name is "Herbalism", not "Herb Gathering"
-		["Herbalism"] = 2366,
-		["Herboristería"] = 2366,
-		["Kräuterkunde"] = 2366,
-		["Herboristerie"] = 2366,
-		["Herborismo"] = 2366,
-		["Травничество"] = 2366,
-		["약초채집"] = 2366,
-		["草药学"] = 2366,
-		["草藥學"] = 2366,
-
-		-- French (Classic Era)
-		["Ingénierie"] = 4036,    -- Engineering
-		["Secourisme"] = 3273,    -- First Aid
-
-		-- Spanish (Classic Era)
-		["Costura"] = 3908,	-- Tailoring
-		["Marroquinería"] = 2108,    -- Leatherworking
-
-		["Ganzúa"] = 1809,		-- Lock Pick	-- Required for ES (EU)
-		["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
-		["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
-	};
-}, {
-	__index = function(t, key)
-		print("L", key, "missing reference");
-	end
-});
+		app.asset("status-seasonal-unavailable"),	-- 4 Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- 5 Seasonal available
+		app.asset("status-unsorted"), -- 6 Unsorted
+	},
+};
 app.L = L;
 
--- All of the locales related to the settings menu.
-L.SETTINGS_MENU = {
-	-- Common Header
-		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
-		SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
+-- Abbreviations are used to reduce the length of the source locations
+local ABBREVIATIONS = {
+	["ALL THE THINGS"] = "ATT",
+	["Expansion Pre"] = "Pre",
+	["Expansion Features"] = "EF",
+	[GROUP_FINDER] = "D&R",
+	["Dungeons & Raids"] = "D&R",
+	["Player vs Player"] = STAT_CATEGORY_PVP,
+	["Player vs. Player"] = STAT_CATEGORY_PVP,
+	["Outdoor Zones"] = LFG_TYPE_ZONE,
+	-- Expansion sorted
+	["Classic %> "] = "",
+	["The Burning Crusade"] = "BC",
+	["Burning Crusade"] = "BC",
+	["The BC"] = "BC",
+	["Wrath of the Lich King"] = "WotLK",
+	["Cataclysm %>"] = "Cata >",
+	["Cataclysm "] = "Cata ",
+	["Mists of Pandaria"] = "MoP",
+	["Warlords of Draenor"] = "WoD",
+	["Battle for Azeroth"] = "BFA",
+	["The Shadowlands"] = "SL",
+	["Shadowlands"] = "SL",
+	["Dragonflight"] = "DF",
+	["The War Within"] = "TWW",
+	-- Dungeon & Raid
+	["Normal"] = "N",
+	["Heroic"] = "H",
+	["Mythic"] = "M",
+	["M Keystone"] = "M+",
+	["Raid Finder"] = "LFR",
+	["Looking For Raid"] = "LFR",
+	["10 Player"] = "10M",
+	["10 Player (Heroic)"] = "10M (H)",
+	["25 Player"] = "25M",
+	["25 Player (Heroic)"] = "25M (H)",
+	[BATTLEGROUNDS] = "BGs",
+	-- Dungeon & Raid Names
+	-- Classic
+	["Scarlet Monastery of Old"] = "SM: Old",
+	-- Cata
+	["Baleroc, the Gatekeeper"] = "Baleroc",
+	["The Conclave of Wind"] = "Conclave",
+	["Hagara the Stormbinder"] = "Hagara",
+	["Majordomo Staghelm"] = "Majordomo",
+	["Omnotron Defense System"] = "Omnotron",
+	["Theralion and Valiona"] = "Theralion&Valiona",
+	["Yor'sahj the Unsleeping"] = "Yor'sahj",
+	-- DF
+	["Aberrus, the Shadowed Crucible"] = "Aberrus",
+	["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
+	["Kazzara, the Hellforged"] = "Kazzara",
+	["Larodar, Keeper of the Flame"] = "Larodar",
+	["Nymue, Weaver of the Cycle"] = "Nymue",
+	["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
+	-- Legion
+	["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
+	["Antorus, the Burning Throne"] = "Antorus",
+	-- BFA
+	["Ny'alotha, the Waking City"] = "Ny'alotha",
+	-- SL
+	["Tazavesh, the Veiled Market"] = "Tazavesh",
+	-- TWW
+	["Ara-Kara, City of Echoes"] = "Ara-Kara",
+	["Enterprising Hero: The War Within Season Two"] = "Enterprising Hero: TWW S2",
+	["The War Within Keystone Legend: SeasonTwo"] = "TWW Keystone Legend: S2",
+	["Mug'Zee, Heads of Security"] = "Mug'Zee",
+	["Sikran, Captain of the Sureki"] = "Sikran",
+	["Vexie and the Geargrinders"] = "Vexie & the Geargrinders",
+	-- Outdoor Zones
+	["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
+	["Season "] = "S",
+	["Sanctum Upgrades %> "] = "",
+	["The Azure Span"] = "Azure Span",
+	["The Forbidden Reach"] = "Forbidden Reach",
+	["The Superbloom"] = "Superbloom",
+	["The Waking Shores"] = "Waking Shores",
+	["The Primalist Future"] = "Primalist Future",
+	["The Storm's Fury"] = "Storm's Fury",
+	["WoW Anniversary"] = "Anniversary",
+	["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
+	["Dragon Racing Completionist: Gold > "] = "",
+	["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
+	["Emerald Dream Racing Completionist: Gold > "] = "",
+	["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
+	["Forbidden Reach Racing Completionist: Gold > "] = "",
+	["Zaralek Cavern Racing Completionist: Gold > "] = "",
 
-	-- About Page
-		ABOUT_PAGE = "About";
-		ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
-		ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
-		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
-		CURSEFORGE_BUTTON_LABEL = "Curse";
-		CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-		DISCORD_BUTTON_LABEL = "Discord";
-		DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-		GITHUB_BUTTON_LABEL = "GitHub";
-		GITHUB_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things GitHub.\n\nYou can clone the repository directly without needing to use a third party addon manager!";
-		MERCH_BUTTON_LABEL = "Merch";
-		MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
-		PATREON_BUTTON_LABEL = "Patreon";
-		PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-		TWITCH_BUTTON_LABEL = "Twitch";
-		TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-		WAGO_BUTTON_LABEL = "Wago.io";
-		WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+	["WoW's Anniversary %> "] = "",
+	[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
+	["Emissary Quests"] = "Emissary",
+	["Item Sets"] = WARDROBE_SETS,
+	["Zone Wide"] = LFG_TYPE_ZONE,
+	["Mini World Events"] = "Mini",
+	["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
+	[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
+	["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
+	["Covenant:"] = "Cov:",
+	[CLASS.." %> "] = "",
 
-	-- General Page
-		DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-		DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
-		ACCOUNT_MODE = app.ccColors.Account.."Account Mode";
-		ACCOUNT_MODE_TOOLTIP = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
-		FACTION_MODE = "Faction Only";
-		FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
-		LOOT_MODE = "Loot Mode";
-		LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources. This can include items such as Rings, Trinkets, Necklaces and the like. Whether or not something is collectible is irrelevant when using this mode. Not recommended all the time, but if you want to see items that can come from a source like they do in AtlasLoot, you can enable this to see that information.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
-		MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		COMPLETIONIST_MODE = "+Sources";
-		COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-		MAIN_ONLY = "Main Only";
-		MAIN_ONLY_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-		ONLY_RWP = "Only RWP";
-		ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		ONLY_NOT_TRASH = "Filter Trash Items";
-		ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.";
-		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
-
-		-- General Content
-		GENERAL_CONTENT = "General Content";
-		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show Repeatable/Trackable Things";
-		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see incomplete repeatable content without forcing it to be considered 'collectible'.\n\nNOTE: Non-saved Rare Spawns, Treasures, and Vignettes also appear in the listing with this setting turned on.";
-		SHOW_COMPLETED_GROUPS_CHECKBOX = "Show Completed Groups";
-		SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-		SHOW_COLLECTED_THINGS_CHECKBOX = "Show Collected Things";
-		SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-		FILTER_THINGS_BY_LEVEL_CHECKBOX = "No Level Restrictions";
-		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
-		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
-		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
-		SHOW_BOE_CHECKBOX = "BoE/Warbound Items";
-		SHOW_BOE_CHECKBOX_TOOLTIP = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignore BoE/Warbound Item Filters";
-		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
-		SHOW_ALL_SEASONAL = "All Seasonal Events";
-		SHOW_ALL_SEASONAL_TOOLTIP = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
-		SHOW_PET_BATTLES_CHECKBOX = SHOW_PET_BATTLES_ON_MAP_TEXT;
-		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Pet Battles within the game.";
-		SHOW_PVP_CHECKBOX = PVP_OPTIONS;
-		SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
-		SHOW_SKYRIDING_CHECKBOX = DYNAMIC_FLIGHT or "Skyriding";
-		SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Skyriding within the game.";
-		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
-		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
-
-		-- Collectible Things
-		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
-		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
-		ACCOUNT_THINGS_LABEL = "Account-Wide Things";
-		GENERAL_THINGS_LABEL = "General Things";
-		STRANGER_THINGS_LABEL = "Stranger Things";
-		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
-		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
-		APPEARANCES_CHECKBOX = "Appearances";
-		APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
-		BATTLE_PETS_CHECKBOX = "Battle Pets";
-		BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
-		DEATHS_CHECKBOX = "Deaths";
-		DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
-		EXPLORATION_CHECKBOX = "Exploration (inaccurate)";
-		EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.\n\nThe information provided by this option is currently inaccurate and needs to be strengthened, so please use it with caution.";
-		FLIGHT_PATHS_CHECKBOX = "Flight Paths";
-		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-		HEIRLOOMS_CHECKBOX = HEIRLOOMS;
-		HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
-		HEIRLOOMS_UPGRADES_CHECKBOX = "+Upgrades";
-		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-		ILLUSIONS_CHECKBOX = "Illusions";
-		ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
-		MOUNTS_CHECKBOX = MOUNTS;
-		MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
-		QUESTS_CHECKBOX = QUESTS_LABEL;
-		QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
-		QUESTS_LOCKED_CHECKBOX = "+Locked";
-		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
-		QUESTS_HIDDEN_TRACKER_CHECKBOX = "+HQT";
-		QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "Enable this option to specifically include Hidden Quest Tracking (HQT) completion.\n\nHQT are those QuestID's which are invisible to Players and used behind-the-scenes to monitor character/account progress or status in various situations.\n\nYou probably don't care to track these. Right? I mean you're not crazy, I'm sure...";
-		RECIPES_CHECKBOX = "Recipes";
-		RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
-		REPUTATIONS_CHECKBOX = "Reputations";
-		REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
-		TITLES_CHECKBOX = "Titles";
-		TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-		TOYS_CHECKBOX = TOY_BOX;
-		TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
-
-		-- Expansion Things
-		EXPANSION_THINGS_LABEL = "Expansion Things";
-		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
-		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
-		MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Mount Modifications";
-		MOUNTMODS_CHECKBOX_TOOLTIP = "Enable this option to track Mount Modifications";
-		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Followers & Companions";
-		FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
-		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
-		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
-		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
-		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Conduits.";
-
-		-- TODO: Crieve doesn't think this one is necessary, going to investigate later. (A lot of these things could be classified as non-profession recipes, when the profession checkboxes are added, this could be a simple "Character" checkbox in that context instead of a new class)
-		CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
-		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-
-		-- Account-Wide Checkboxes
-		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
-		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used Account-Wide, but if you only care about collecting them on your main character then you may prefer tracking them Account-Wide.";
-		ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
-		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
-		ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se";
-		ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
-		ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
-		ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
-		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
-		ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
-
-
-	-- General: Filters Page
-		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
-		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		CLASS_DEFAULTS_BUTTON = "Class Defaults";
-		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-		ALL_BUTTON = ALL;
-		ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
-		UNCHECK_ALL_BUTTON = NONE;
-		UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
-		STORE_IN_PROFILE_BUTTON = "Store in Profile",
-		STORE_IN_PROFILE_BUTTON_TOOLTIP = "By default, ATT stores these Filters on a per-character basis.\n\nCheck this option to store these Filter selections in the current Profile rather than per-character.",
-
-	-- General: Phases Page
-	-- Classic Only, fully dynamic from within parser.
-
-	-- General: Unobtainables Page
-		UNOBTAINABLES_PAGE = "Unobtainables";
-		UNOBTAINABLE_LABEL = "Unobtainable Content";
-		CUSTOM_FILTERS_LABEL = "Automated Content";
-		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
-
-	-- Interface Page
-		INTERFACE_PAGE = UIOPTIONS_MENU;
-		TOOLTIP_LABEL = "Tooltips";
-		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
-		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
-		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
-		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
-		DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
-		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
-		NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Except NPCs";
-		NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Enable this option to ignore rendering NPC tooltips while in combat.";
-		TOOLTIP_MOD_LABEL = "Modifier";
-		TOOLTIP_MOD_NONE = NONE_KEY;
-		TOOLTIP_MOD_SHIFT = SHIFT_KEY_TEXT;
-		TOOLTIP_MOD_CTRL = CTRL_KEY_TEXT;
-		TOOLTIP_MOD_ALT = ALT_KEY_TEXT;
-		TOOLTIP_MOD_CMD = CMD_KEY_TEXT;
-		TOOLTIP_SHOW_LABEL = "Shown Information";
-		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Collection Progress";
-		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
-		ICON_ONLY_CHECKBOX = "Icon Only";
-		ICON_ONLY_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
-		KNOWN_BY_CHECKBOX = "Known By";
-		KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
-		COMPLETED_BY_CHECKBOX = "Completed By";
-		COMPLETED_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
-		SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
-		SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
-		SHOW_RECIPES_CHECKBOX = "Show Recipes";
-		SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
-		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
-		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
-		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
-		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
-		SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
-		SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
-		INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
-		INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
-		ONLY_RELEVANT_CHECKBOX = "Only Relevant";
-		ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
-		SPEC_CHECKBOX = "Specializations";
-		SPEC_CHECKBOX_TOOLTIP = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";
-		SUMMARIZE_CHECKBOX = "Summarize Things";
-		SUMMARIZE_CHECKBOX_TOOLTIP = "Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.";
-		CONTAINS_SLIDER_TOOLTIP = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
-		SOURCE_LOCATIONS_CHECKBOX = "Source Locations";
-		SOURCE_LOCATIONS_CHECKBOX_TOOLTIP = "Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.";
-		LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
-		COMPLETED_SOURCES_CHECKBOX = "For Completed";
-		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
-		DROP_CHANCES_CHECKBOX = "Drop Chances";
-		DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
-		FOR_CREATURES_CHECKBOX = "For Creatures";
-		FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
-		FOR_THINGS_CHECKBOX = "For Things";
-		FOR_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Things.";
-		FOR_UNSORTED_CHECKBOX = "For Unsorted";
-		FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
-		WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
-		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-
-		BEHAVIOR_LABEL = "List Behavior";
-		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
-		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
-		MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
-		MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
-		ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
-		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
-		EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
-		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
-		SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
-		SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
-		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
-		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
-		SHOW_MODELS_CHECKBOX = "Model Preview";
-		SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
-		FILL_DYNAMIC_QUESTS_CHECKBOX = "Fill Dynamic Quests";
-		FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.";
-		FILL_NPC_DATA_CHECKBOX = "Fill NPC Data";
-		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible on the mini list if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
-		NESTED_QUEST_CHAIN_CHECKBOX = "Show Nested Quest Chains";
-		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
-		SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
-		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." right click) to sort by the total progress of each group (instead of by Name)";
-		SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
-		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
-		PERCENTAGES_CHECKBOX = "Show Percentage Completion";
-		PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		PRECISION_SLIDER = "Precision Level";
-		PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
-		DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
-		DYNAMIC_CATEGORY_SIMPLE = "Simple";
-		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
-		DYNAMIC_CATEGORY_NESTED = "Nested";
-		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
-		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
-		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
-
-	-- Interface: Accessibility Page
-		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
-		COLORS_ICONS = "Colors and Icons";
-		LOCKED_QUESTS = "Locked quests";
-		MORE_COLORS_CHECKBOX = "Show Colors";
-		MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
-		WINDOW_COLORS = "Window Colors";
-		BACKGROUND = EMBLEM_BACKGROUND;
-		BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
-		BORDER = EMBLEM_BORDER;
-		BORDER_TOOLTIP = "Set the border color of all ATT windows.";
-		RESET_TOOLTIP = "Revert to default settings.";
-		CLASS_BORDER = "Use Class Color For Border";
-		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
-
-	-- Interface: Information Page
-		ACHIEVEMENT_ID = "Achievement ID";
-		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
-		ADDED_WITH_PATCH_CLASSIC_FORMAT = "This gets added with patch %s";
-		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
-		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
-		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "This was added with patch %s";
-
-	-- Features Page
-		FEATURES_PAGE = FEATURES_LABEL;
-
-	-- Features: Audio Page
-		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
-		AUDIO_CHANNEL = "Audio Channel";
-		CHANNEL_MASTER = MASTER;
-		CHANNEL_MUSIC = MUSIC_VOLUME;
-		CHANNEL_SFX = FX_VOLUME;
-		CHANNEL_AMBIENCE = AMBIENCE_VOLUME;
-		CHANNEL_DIALOG = DIALOG_VOLUME;
-		CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
-		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-		SOUNDPACK = "Soundpack";
-		PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
-		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
-		WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
-		WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
-		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
-		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
-
-	-- Features: Reporting Page
-		REPORTING_LABEL = "Reporting";
-		REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
-		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
-		REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
-		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)";
-		REPORT_UNSORTED_CHECKBOX = "Only 'Unsourced'";
-		REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the QuestID if it isn't already Sourced.";
-		REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
-		REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
-		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
-		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
-		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
-		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
-		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
-		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
-		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
-		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
-		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
-		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are completed based on your filters in ATT.";
-		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
-		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
-		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
-		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
-		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
-		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
-
-	-- Features: Sync Page
-	-- Retail Only, deprecated.
-		SYNC_PAGE = "Sync";
-		ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
-
-	-- Features: Windows Page
-	-- Classic Only, nothing localizable atm.
-		WINDOWS_PAGE = "Windows";
-
-	-- Profiles Page
-		PROFILES_PAGE = "Profiles";
-		PROFILE = "Profile";
-		PROFILE_INITIALIZE = "Initialize Profiles";
-		PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-		PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
-		PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
-		PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
-		PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
-		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
-		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
+	["Pet Journal"] = PETS,
+	["Toy Box"] = TOY,
 };
+L.ABBREVIATIONS = ABBREVIATIONS;
 
--- All of the locales related to the Player Tooltips module.
-L.TOOLTIP_MODULE = {
-	RANKS = {
-		AUTHOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Author";
-		CONTRIBUTOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Contributor";
-		COLLECTOR = "Collector";
-	},
-	TITLES = {
-		XX_BRINGER_OF_FLAMES = "%s, Bringer of Flames";
-		XX_THE_COMPLETIONIST = "%s the Completionist";
-		XX_THE_CONTRIBUTOR = "%s";	-- NOTE: Contributors didn't want a different title.
-		XX_THE_EXTERMINATOR = "%s the Exterminator";
-		XX_THE_GOLD_TYCOON = "Gold Tycoon %s";
-		XX_THE_LORD_KING = "Lord King %s";
-		XX_THE_LORD_QUEEN = "Lord Queen %s";
-		XX_THE_SCARAB_LORD = "Scarab Lord %s";
-		XX_THE_HUGGLER = "%s the Huggler";
-	},
-};
-
--- Icon Selectors based on Collection State
 app.GetCollectionIcon = function(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
 end
@@ -1168,4 +237,474 @@ app.GetCompletionText = function(state)
 end
 app.GetSavedText = function(state)
 	return L[state and "SAVED" or "INCOMPLETE"];
+end
+
+local localeString = GetLocale();
+if localeString == "deDE" then
+	L.EXPANSION_DATA[1].lore = "Vier Jahre nach der Schlacht am Berg Hyjal beginnen die Spannungen zwischen der Allianz und der Horde erneut zu wachsen. Mit der Absicht, die trockene Region von Durotar zu besiedeln, erweiterte Thralls neue Horde ihre Reihen und lud die untoten Verlassenen ein sich den Orcs, Tauren und Trollen anzuschließen. In der Zwischenzeit schworen die Zwerge, Gnome und die alten Nachtelfen der wiedererstarkten Allianz unter der Führung des menschlichen Königreichs Sturmwind ihre Loyalität. Nachdem der König Sturmwinds, Varian Wrynn, auf mysteriöse Weise verschwunden war, diente Hochlord Bolvar Fordragon als Regent. Sein Dienst wurde durch die Manipulation und der Gedankenkontrolle Onyxia's beeinträchtigt, die sich als menschliche Adlige tarnte und somit im Hintergrund regierte. Während die Helden Onyxias Manipulationen untersuchten, tauchten in den Ländern der Welt uralte Feinde auf und bedrohten die Horde und die Allianz gleichermaßen.";
+	L.EXPANSION_DATA[2].lore = "The Burning Crusade ist die erste Erweiterung. Zu den Hauptmerkmalen gehören die Anhebung der maximalen Stufe auf 70, die Einführung der Blutelfen und der Draenei als spielbare Völker, sowie die neue Scherbenwelt mit vielen neuen Zonen, Instanzen, Gegenständen, Quests & Monstern.";
+	L.EXPANSION_DATA[3].lore = "Wrath of the Lich King ist die zweite Erweiterung. Der Großteil dieser Erweiterung findet in Nordend statt und dreht sich um die Pläne des Lichkönigs. Zu den inhaltlichen Highlights gehören die Erhöhung der maximalen Stufe von 70 auf 80, die Einführung der neuen Todesritter Heldenklasse und neue PvP/Welt PvP Inhalte";
+	L.EXPANSION_DATA[4].lore = "Cataclysm ist die dritte Erweiterung. Die Erweiterung spielt hauptsächlich in einem dramatisch umgestalteten Kalimdor & der Östlichen Königreiche auf der Welt von Azeroth und folgt der Rückkehr von Todesschwinge, der während seiner Rückkehr von Tiefenheim in diese Welt eine katastrophale Teilung verursacht. Mit Cataclysm kehren Spieler hauptsächlich auf die alten Kontinente von Azeroth zurück und betreten unter anderem neue Gebiete wie den Berg Hyjal's, die versunkende Welt von Vashj'ir, Tiefenheim, Uldum und das Zwielicht-Hochland. Außerdem sind zwei neue spielbare Völker, die Worgen und die Goblins, verfügbar. Die maximale Stufe wurde auf 85 erhöht, ermöglicht Spielern das Fliegen in Kalimdor & den Östlichen Königreichen, fügt den neuen Beruf der Archäologie & umschmieden der Rüstung hinzu und strukturiert die Welt selbst um";
+	L.EXPANSION_DATA[5].lore = "Mists of Pandaria ist die vierte Erweiterung. Die Erweiterung konzentriert sich in erster Linie auf den Krieg zwischen Allianz und Horde, der durch die zufällige Wiederentdeckung von Pandaria ausgelöst wurde. Die Abenteurer entdecken das uralte Volk der Pandaren wieder, dessen Weisheit sie zu neuen Schicksalen führen wird, den uralten Feind des Pandarenreiches, die Mantiden und ihre legendären Unterdrücker, die rätselhaften Mogu. Das Land verändert sich mit der Zeit und der Konflikt zwischen Varian Wrynn und Garrosh Höllschrei eskaliert. Während in der Horde ein Bürgerkrieg ausbricht, schließen sich die Allianz und die Kräfte in der Horde, die gegen Höllschreis gewalttätigen Aufstand sind, zusammen, um den Kampf direkt gegen Höllschrei und seine von Sha berührten Verbündeten in Orgrimmar zu führen.";
+	L.EXPANSION_DATA[6].lore = "Warlords of Draenor ist die fünfte Erweiterung. Across Draenor's savage jungles & battle-scarred plains, Azeroth's heroes will engage in a mythic conflict involving mystical draenei champions & mighty orc clans, & cross axes with the likes of Grommash Hellscream, Blackhand, & Ner'zhul at the height of their primal power. Players will need to scour this unwelcoming land in search of allies to help build a desperate defense against the old Horde's formidable engine of conquest, or else watch their own world's bloody, war-torn history repeat itself.";	--TODO:
+	L.EXPANSION_DATA[7].lore = "Legion ist die sechste Erweiterung. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";	--TODO:
+	L.EXPANSION_DATA[8].lore = "Battle for Azeroth ist die siebte Erweiterung. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";	--TODO:
+	L.EXPANSION_DATA[9].lore = "Shadowlands ist die achte Erweiterung. Was liegt hinter die Welt die du kennst? Die Shadowlands, Ruheplatz für jede sterbliche seele—tugendhaft oder abscheulich—die jemals gelebt hat.";
+	L.EXPANSION_DATA[10].lore = "Dragonflight ist die neunte Erweiterung. Die Drachenschwärme von Azeroth sind zurück und folgen dem Ruf, die Dracheninseln, ihre angestammte Heimat, zu verteidigen. Erfüllt von elementarer Macht und Azeroths Lebensenergie erwachen die Inseln erneut, und es liegt an euch, ihre urzeitlichen Wunder zu erforschen und lang vergessene Geheimnisse ans Licht zu bringen.";
+
+	for key,value in pairs({
+		["Antorus, der Brennende Thron"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		[GROUP_FINDER] = "D&S",	-- ["Dungeons & Raids"] = "D&R"
+		["The Burning Crusade"] = "TBC",
+		["Burning Crusade"] = "TBC",
+		["The BC"] = "TBC",
+		["Wrath of the Lich King"] = "WotLK",
+		["Cataclysm "] = "Cata ",
+		["Mists of Pandaria"] = "MoP",
+		["Warlords of Draenor"] = "WoD",
+		["Battle for Azeroth"] = "BFA",
+		["The Shadowlands"] = "SL",
+		["Shadowlands"] = "SL",
+		["Spieler gegen Spieler"] = "PvP",
+		["Schlachtzugbrowser"] = "LFR",
+		["Normal"] = "N",
+		["Heroisch"] = "H",
+		["Mythisch"] = "M",
+		["Mythischer Schlüsselstein"] = "M+",
+		["Ny'alotha, die Erwachte Stadt"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, der Verhüllte Markt"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["10 Spieler"] = "10M",
+		["10 Spieler (Heroisch)"] = "10M (H)",
+		["25 Spieler"] = "25M",
+		["25 Spieler (Heroisch)"] = "25M (H)",
+		["WoW Geburtstag"] = "Geburtstag",
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "esES" or localeString == "esMX" then
+	L.EXPANSION_DATA[1].lore = "Cuatro años después de la batalla del Monte Hyjal, tensiones entre la Alianza y la Horda empiezan a surgir nuevamente. Con la intención de establecerse en la región árida de Durotar, la nueva Horda de Thrall expande sus miembros, invitando a los no muertos a unirse a orcos, tauren, y trols. Mientras tanto, enanos, gnomos y los ancestrales elfos de la noche prometieron su lealtad a una Alianza revitalizada, guiada por el reino humano de Ventormenta. Después de que el rey de Ventormenta Varian Wrynn misteriosamente desapareciera, el Alto Señor Bolvar Fordragon sirve como Regente pero Su servicio se vio empañado por las manipulaciones y el control mental de Onyxia, quien gobierna disfrazada como una humana de la nobleza. Mientras los héroes investigaban las manipulaciones de Onyxia, antiguos enemigos surgieron en tierras de todo el mundo para amenazar a la Horda y a la Alianza por igual.";
+	L.EXPANSION_DATA[2].lore = "The Burning Crusade es la primera expansión. Sus principales características incluyen un aumento del nivel máximo a 70, la introducción de los elfos de sangre y los draenei como razas jugables, y la incorporación del mundo de Terrallende, junto con varias zonas, mazmorras, objetos, misiones y monstruos nuevos.";
+	L.EXPANSION_DATA[3].lore = "Wrath of the Lich King es la segunda expansión. La mayor parte del contenido de la expansión se desarrolla en Rasganorte y se centra en los planes del Rey Exánime. Entre sus contenidos más destacados se incluyen el aumento del límite de nivel de 70 a 80, la introducción de la clase de héroe caballero de la Muerte y nuevo contenido JcJ/JcJ en el mundo.";
+	L.EXPANSION_DATA[4].lore = "Cataclysm es la tercera expansión. Ambientada principalmente en un Kalimdor y los Reinos del Este dramáticamente reforjados en el mundo de Azeroth, la expansión sigue el regreso de Alamuerte, quien provoca una nueva ruptura al realizar su cataclísmica reentrada al mundo desde Infralar. Cataclismo devuelve a los jugadores a los dos continentes de Azeroth durante la mayor parte de su campaña, abriendo nuevas zonas como el Monte Hyjal, el mundo sumergido de Vashj'ir, Infralar, Uldum y las Tierras Altas Crepusculares. Incluye dos nuevas razas jugables: los huargen y los goblins. La expansión aumenta el nivel máximo a 85, añade la capacidad de volar en Kalimdor y los Reinos del Este, introduce la arqueología, la reforja y reestructura el mundo.";
+	L.EXPANSION_DATA[5].lore = "Mists of Pandaria es la cuarta expansión. Esta expansión se centra principalmente en la guerra entre la Alianza y la Horda, tras el redescubrimiento accidental de Pandaria. Los aventureros redescubren al antiguo pueblo pandaren, cuya sabiduría los guiará hacia nuevos destinos; a los antiguos enemigos del Imperio Pandaren, los mántides; y a sus legendarios opresores, los enigmáticos mogu. La tierra cambia con el tiempo y el conflicto entre Varian Wrynn y Garrosh Grito Infernal se intensifica. Mientras la guerra civil azota a la Horda, la Alianza y las fuerzas de la Horda opuestas al violento levantamiento de Grito Infernal unen fuerzas para llevar la batalla directamente a Grito Infernal y sus aliados tocados por el Sha en Orgrimmar.";
+	L.EXPANSION_DATA[6].lore = "Warlords of Draenor es la quinta expansión. A través de las junglas salvajes y las llanuras asoladas por la batalla de Draenor, los héroes de Azeroth se enfrentarán en un conflicto mítico que involucra a místicos campeones draenei y poderosos clanes orcos, y se enfrentarán con personajes como Grommash Grito Infernal, Puño Negro y Ner'zhul en la cúspide de su poder primigenio. Los jugadores deberán recorrer esta tierra hostil en busca de aliados que les ayuden a construir una defensa desesperada contra la formidable máquina de conquista de la antigua Horda, o verán cómo se repite la sangrienta y bélica historia de su propio mundo.";
+	L.EXPANSION_DATA[7].lore = "Legion es la sexta expansión. Gul'dan es expulsado a Azeroth para reabrir la Tumba de Sargeras y la puerta a Argus, dando inicio a la tercera invasión de la Legión Ardiente. Tras la derrota en la Costa Abrupta, los defensores de Azeroth buscan los Pilares de la Creación, la única esperanza de Azeroth para cerrar el enorme portal demoníaco en el corazón de la Tumba. Sin embargo, las Islas Abruptas llegaron con sus propios peligros que superar, desde Xavius ​​hasta el Rey Dios Skovald, los nocheterna y la Señora de las Mareas Athissa. Khadgar trasladó Dalaran a las costas de esta tierra; la ciudad sirve como centro neurálgico para los héroes. Los caballeros de la Muerte de Acherus también llevaron su necrópolis flotante a las Islas. Los héroes de Azeroth buscaron armas artefacto legendarias para empuñar en batalla, pero también encontraron aliados inesperados en la forma de los Illidari. El conflicto en curso entre la Alianza y la Horda condujo a la formación de las órdenes de clases, con comandantes excepcionales que dejaron de lado la facción para liderar sus clases en la lucha contra la Legión.";
+	L.EXPANSION_DATA[8].lore = "Battle for Azeroth es la séptima expansión. Azeroth pagó un precio terrible para poner fin a la marcha apocalíptica de la cruzada de la Legión; pero aunque las heridas del mundo se curen, la confianza rota entre la Alianza y la Horda podría ser la más difícil de sanar. En Battle for Azeroth, la caída de la Legión Ardiente desencadena una serie de incidentes desastrosos que reavivan el conflicto central de la saga de Warcraft. Con el inicio de una nueva era bélica, los héroes de Azeroth deben emprender un viaje para reclutar nuevos aliados, competir por los recursos más poderosos del mundo y luchar en varios frentes para determinar si la Horda o la Alianza liderarán Azeroth hacia su incierto futuro.";
+	L.EXPANSION_DATA[9].lore = "Shadowlands es la octava expansión. ¿Qué hay más allá del mundo que conoces? Las Tierras Sombrías, lugar de descanso para cada alma mortal, virtuosa o vil, que haya existido jamás.";
+	L.EXPANSION_DATA[10].lore = "Dragonflight es la novena expansión. Los Vuelos de Azeroth han regresado, llamados a defender su ancestral hogar, las Islas Dragón. Rebosante de magia elemental y de las energías vitales de Azeroth, este archipiélago despierta de nuevo. Está en tus manos explorar sus maravillas primordiales y descubrir los olvidados secretos que oculta.";
+	L.EXPANSION_DATA[11].lore = "The War Within es la décima expansión de World of Warcraft y el inicio de la Saga Alma del Mundo. Viaja a través de mundos subterráneos nunca antes vistos, repletos de maravillas ocultas y peligros acechantes, hasta las oscuras profundidades del imperio nerubiano, donde la maligna Presagista del Vacío reúne fuerzas arácnidas para doblegar a Azeroth.";
+	L.EXPANSION_DATA[12].lore = "Midnight es la undécima expansión de World of Warcraft y la segunda entrega de la saga Alma del Mundo.";
+	L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Alma del Mundo.";
+	
+	for key,value in pairs({
+		["Expansion Features"] = "CE",
+		[GROUP_FINDER] = "BdG",
+		["Dungeons & Raids"] = "MyB",
+		-- Expansion sorted
+		["Wrath of the Lich King"] = "Lich",
+		-- Dungeon & Raid
+		["Raid Finder"] = "BdB",
+		["Looking For Raid"] = "BdB",
+		["10 Player"] = "10",
+		["10 Player (Heroic)"] = "10 (H)",
+		["25 Player"] = "25",
+		["25 Player (Heroic)"] = "25 (H)",
+		[BATTLEGROUNDS] = "CdB",
+		-- Dungeon & Raid Names
+		-- Classic
+		["Scarlet Monastery of Old"] = "ME: Viejo",
+		-- Cata
+		["Majordomo Staghelm"] = "Mayordomo",
+		["Omnotron Defense System"] = "Omnitron",
+		["Theralion and Valiona"] = "TheralionyValiona",
+		-- DF
+		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sabioveloz",
+		-- TWW
+		["Enterprising Hero: The War Within Season Two"] = "Héroe Emprendedor: TWW T2",
+		["The War Within Keystone Legend: SeasonTwo"] = "TWW Leyenda de la piedra angular: T2",
+		["Vexie and the Geargrinders"] = "Vexie y los Cadenas",
+		-- Outdoor Zones
+		["Quartermaster Miranda Breechlock"] = "Intendente Miranda",
+		["Season "] = "T ",
+		["The Azure Span"] = "Tierras Azures",
+		["The Forbidden Reach"] = "Confín Olvidado",
+		["The Superbloom"] = "Superfloración",
+		["The Waking Shores"] = "Orillas del Despertar",
+		["The Primalist Future"] = "Futuro primalista",
+		["The Storm's Fury"] = "Furia de la tormenta",
+		["WoW Anniversary"] = "Aniversario",
+
+		[BLACK_MARKET_AUCTION_HOUSE] = "CSMN",
+		["Emissary Quests"] = "Emisario",
+		[TRACKER_HEADER_WORLD_QUESTS] = "MM",
+		["Covenant:"] = "Curia:",
+	})
+	do ABBREVIATIONS[key] = value; end
+	
+	if localeString == "esMX" then
+		L.EXPANSION_DATA[1].lore = "Cuatro años después de la batalla del Monte Hyjal, tensiones entre la Alianza y la Horda empiezan a surgir nuevamente. Con la intención de establecerse en la región árida de Durotar, la nueva Horda de Thrall expande sus miembros, invitando a los no muertos a unirse a orcos, tauren, y trols. Mientras tanto, enanos, gnomos y los ancestrales elfos de la noche prometieron su lealtad a una Alianza revitalizada, guiada por el reino humano de Ventormenta. Después de que el rey de Ventormenta Varian Wrynn misteriosamente desapareciera, el Alto Señor Bolvar Fordragon sirve como Regente pero Su servicio se vio empañado por las manipulaciones y el control mental de Onyxia, quien gobierna disfrazada como una humana de la nobleza. Mientras los héroes investigaban las manipulaciones de Onyxia, antiguos enemigos surgieron en tierras de todo el mundo para amenazar a la Horda y a la Alianza por igual.";
+		L.EXPANSION_DATA[2].lore = "The Burning Crusade es la primera expansión. Sus principales características incluyen un aumento del nivel máximo a 70, la introducción de los elfos de sangre y los draenei como razas jugables, y la incorporación del mundo de Terrallende, junto con varias zonas, calabozos, objetos, misiones y monstruos nuevos.";
+		L.EXPANSION_DATA[3].lore = "Wrath of the Lich King es la segunda expansión. La mayor parte del contenido de la expansión se desarrolla en Rasganorte y se centra en los planes del Rey Exánime. Entre sus contenidos más destacados se incluyen el aumento del límite de nivel de 70 a 80, la introducción de la clase de héroe caballero de la Muerte y nuevo contenido JcJ/JcJ en el mundo.";
+		L.EXPANSION_DATA[4].lore = "Cataclysm es la tercera expansión. Ambientada principalmente en un Kalimdor y los Reinos del Este dramáticamente reforjados en el mundo de Azeroth, la expansión sigue el regreso de Alamuerte, quien provoca una nueva ruptura al realizar su cataclísmica reentrada al mundo desde Infralar. Cataclismo devuelve a los jugadores a los dos continentes de Azeroth durante la mayor parte de su campaña, abriendo nuevas zonas como el Monte Hyjal, el mundo sumergido de Vashj'ir, Infralar, Uldum y las Tierras Altas Crepusculares. Incluye dos nuevas razas jugables: los huargen y los goblins. La expansión aumenta el nivel máximo a 85, añade la capacidad de volar en Kalimdor y los Reinos del Este, introduce la arqueología, la reforja y reestructura el mundo.";
+		L.EXPANSION_DATA[5].lore = "Mists of Pandaria es la cuarta expansión. Esta expansión se centra principalmente en la guerra entre la Alianza y la Horda, tras el redescubrimiento accidental de Pandaria. Los aventureros redescubren al antiguo pueblo pandaren, cuya sabiduría los guiará hacia nuevos destinos; a los antiguos enemigos del Imperio Pandaren, los mántides; y a sus legendarios opresores, los enigmáticos mogu. La tierra cambia con el tiempo y el conflicto entre Varian Wrynn y Garrosh Grito Infernal se intensifica. Mientras la guerra civil azota a la Horda, la Alianza y las fuerzas de la Horda opuestas al violento levantamiento de Grito Infernal unen fuerzas para llevar la batalla directamente a Grito Infernal y sus aliados tocados por el Sha en Orgrimmar.";
+		L.EXPANSION_DATA[6].lore = "Warlords of Draenor es la quinta expansión. A través de las junglas salvajes y las llanuras asoladas por la batalla de Draenor, los héroes de Azeroth se enfrentarán en un conflicto mítico que involucra a místicos campeones draenei y poderosos clanes orcos, y se enfrentarán con personajes como Grommash Grito Infernal, Puño Negro y Ner'zhul en la cúspide de su poder primigenio. Los jugadores deberán recorrer esta tierra hostil en busca de aliados que les ayuden a construir una defensa desesperada contra la formidable máquina de conquista de la antigua Horda, o verán cómo se repite la sangrienta y bélica historia de su propio mundo.";
+		L.EXPANSION_DATA[7].lore = "Legion es la sexta expansión. Gul'dan es expulsado a Azeroth para reabrir la Tumba de Sargeras y la puerta a Argus, dando inicio a la tercera invasión de la Legión Ardiente. Tras la derrota en la Costa Quebrada, los defensores de Azeroth buscan los Pilares de la Creación, la única esperanza de Azeroth para cerrar el enorme portal demoníaco en el corazón de la Tumba. Sin embargo, las Islas Quebradas llegaron con sus propios peligros que superar, desde Xavius ​​hasta el Rey Dios Skovald, los natonocturnos y la Señora de las Mareas Athissa. Khadgar trasladó Dalaran a las costas de esta tierra; la ciudad sirve como centro neurálgico para los héroes. Los caballeros de la Muerte de Acherus también llevaron su necrópolis flotante a las Islas. Los héroes de Azeroth buscaron armas artefacto legendarias para empuñar en batalla, pero también encontraron aliados inesperados en la forma de los Illidari. El conflicto en curso entre la Alianza y la Horda condujo a la formación de las órdenes de clases, con comandantes excepcionales que dejaron de lado la facción para liderar sus clases en la lucha contra la Legión.";
+		L.EXPANSION_DATA[8].lore = "Battle for Azeroth es la séptima expansión. Azeroth pagó un precio terrible para poner fin a la marcha apocalíptica de la cruzada de la Legión; pero aunque las heridas del mundo se curen, la confianza rota entre la Alianza y la Horda podría ser la más difícil de sanar. En Battle for Azeroth, la caída de la Legión Ardiente desencadena una serie de incidentes desastrosos que reavivan el conflicto central de la saga de Warcraft. Con el inicio de una nueva era bélica, los héroes de Azeroth deben emprender un viaje para reclutar nuevos aliados, competir por los recursos más poderosos del mundo y luchar en varios frentes para determinar si la Horda o la Alianza liderarán Azeroth hacia su incierto futuro.";
+		L.EXPANSION_DATA[9].lore = "Shadowlands es la octava expansión. ¿Qué hay más allá del mundo que conoces? Las Tierras de las Sombras, lugar de descanso para cada alma mortal, virtuosa o vil, que haya existido jamás.";
+		L.EXPANSION_DATA[10].lore = "Dragonflight es la novena expansión. Los Vuelos de Azeroth han regresado, llamados a defender su ancestral hogar, las Islas Dragón. Rebosante de magia elemental y de las energías vitales de Azeroth, este archipiélago despierta de nuevo. Está en tus manos explorar sus maravillas primordiales y descubrir los olvidados secretos que oculta.";
+		L.EXPANSION_DATA[11].lore = "The War Within es la décima expansión de World of Warcraft y el inicio de la Saga Worldsoul. Viaja a través de mundos subterráneos nunca antes vistos, repletos de maravillas ocultas y peligros acechantes, hasta las oscuras profundidades del imperio nerubiano, donde la maligna Emisaria del Vacío reúne fuerzas arácnidas para doblegar a Azeroth.";
+		L.EXPANSION_DATA[12].lore = "Midnight es la undécima expansión de World of Warcraft y la segunda entrega de la saga Worldsoul.";
+		L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Worldsoul.";
+		
+		for key,value in pairs({
+			["Expansion Features"] = "CE",
+			[GROUP_FINDER] = "BdG",
+			["Dungeons & Raids"] = "CyB",
+			-- Expansion sorted
+			["Wrath of the Lich King"] = "Lich",
+			-- Dungeon & Raid
+			["Raid Finder"] = "BdB",
+			["Looking For Raid"] = "BdB",
+			["10 Player"] = "10",
+			["10 Player (Heroic)"] = "10 (H)",
+			["25 Player"] = "25",
+			["25 Player (Heroic)"] = "25 (H)",
+			[BATTLEGROUNDS] = "CdB",
+			-- Dungeon & Raid Names
+			-- Classic
+			["Scarlet Monastery of Old"] = "ME: Viejo",
+			-- Cata
+			["Majordomo Staghelm"] = "Mayordomo",
+			["Omnotron Defense System"] = "Omnitron",
+			["Theralion and Valiona"] = "TheralionyValiona",
+			-- DF
+			["Tindral Sageswift, Seer of the Flame"] = "Yescal Sabioveloz",
+			-- TWW
+			["Enterprising Hero: The War Within Season Two"] = "Héroe Emprendedor: TWW T2",
+			["The War Within Keystone Legend: SeasonTwo"] = "TWW Leyenda de la piedra angular: T2",
+			["Vexie and the Geargrinders"] = "Vexie y los rugemotores",
+			-- Outdoor Zones
+			["Quartermaster Miranda Breechlock"] = "Intendente Miranda",
+			["Season "] = "T ",
+			["The Azure Span"] = "Trecho Azur",
+			["The Forbidden Reach"] = "Confín Prohibido",
+			["The Superbloom"] = "Superflorecimiento",
+			["The Waking Shores"] = "Costas del Despertar",
+			["The Primalist Future"] = "Futuro primalista",
+			["The Storm's Fury"] = "Furia de la tormenta",
+			["WoW Anniversary"] = "Aniversario",
+			[BLACK_MARKET_AUCTION_HOUSE] = "CSMN",
+			["Emissary Quests"] = "Emisario",
+			[TRACKER_HEADER_WORLD_QUESTS] = "MM",
+			["Covenant:"] = "Pacto:",
+		})
+		do ABBREVIATIONS[key] = value; end
+	end
+end
+if localeString == "frFR" then
+	L.EXPANSION_DATA[1].lore = "Déterminée à s’installer dans la région aride de Durotar, la nouvelle Horde de Thrall étoffa ses rangs, en invitant les Réprouvés morts-vivants à rejoindre les orcs, les taurens et les trolls. De leur côté, les nains, les gnomes et les anciens elfes de la nuit jurèrent fidélité à l’Alliance revigorée, sous la houlette du royaume humain de Hurlevent. Après la mystérieuse disparition du roi de Hurlevent Varian Wrynn, le généralissime Bolvar Fordragon assura le rôle de régent. Mais son autorité fut contrariée par les manipulations et le contrôle mental du dragon noir Onyxia, qui tirait les ficelles sous l’apparence d’une humaine appartenant à la noblesse. Tandis que des héros enquêtaient sur les manipulations d’Onyxia, d’anciens adversaires refirent surface un peu partout dans le monde, menaçant tout aussi bien la Horde que l’Alliance.";
+	L.EXPANSION_DATA[2].lore = "The Burning Crusade est la 1ère extension. Le seigneur funeste Kazzak étant parvenu à rouvrir la Porte des ténèbres en Outreterre, il fit déferler sur Azeroth les démons enragés de la Légion ardente. Des expéditions de la Horde et de l’Alliance, respectivement renforcées par les elfes de sang et les draeneï, franchirent le portail afin de stopper l’invasion à sa source. En Outreterre, dans l’aride péninsule des Flammes infernales, l’Alliance retrouva plusieurs de ses héros qui avaient franchi le portail bien des années auparavant, tandis que la Horde put entrer en contact avec les Mag’har, des orcs non-corrompus qui n’avaient pas pris part à la première invasion d’Azeroth par ceux de leur race. L’expédition en Outreterre plongea les armées de la Horde et de l’Alliance dans un intense conflit contre les agents de la Légion et les lieutenants d’Illidan Hurlorage, qui s’était approprié ce monde brisé.";
+	L.EXPANSION_DATA[3].lore = "Wrath of the Lich King est la 2ème extension. À la suite de la purification du Puits de soleil, le monde connut une période d’accalmie étrangement suspecte. Puis, subitement, le Fléau mort-vivant lança un assaut massif contre les cités et les villes d’Azeroth, frappant cette fois bien au-delà des royaumes de l’Est. Poussé à réagir vigoureusement, le chef de guerre Thrall déploya une force expéditionnaire dans le Norfendre sous les ordres du suzerain Garrosh Hurlenfer. Pendant ce temps, le roi humain disparu Varian Wrynn regagnait la cité de Hurlevent et récupérait sa couronne. Il envoya alors une armée de l’Alliance de puissance équivalente, sous les ordres de Bolvar Fordragon, à l’assaut du roi-liche… et de toutes les forces de la Horde qui se dresseraient en travers de sa route.";
+	L.EXPANSION_DATA[4].lore = "Cataclysm est la 3ème extension. Les expéditions victorieuses du Norfendre regagnèrent leurs demeures, mais découvrirent bien vite que toute Azeroth était affectée par des instabilités des forces élémentaires. Ces troubles précédaient en fait le retour de l’Aspect draconique enragé Aile de mort le Destructeur, qui surgit des tréfonds du plan élémentaire, disloquant Azeroth au passage. Les mondes élémentaires étant désormais ouverts, des esprits élémentaires chaotiques et leurs seigneurs tyranniques émergèrent afin d’aider le Destructeur et le culte nihiliste du Marteau du crépuscule à provoquer l’Heure du crépuscule : la fin de toute vie sur Azeroth.";
+	L.EXPANSION_DATA[5].lore = "Mists of Pandaria est la 4ème extension. La menace d’Aile de mort étant écartée, le chef de guerre Garrosh Hurlenfer saisit l’occasion pour attaquer l’Alliance et agrandir le territoire de la Horde en Kalimdor. Son offensive anéantit littéralement la cité humaine de Theramore, ravivant la haine et les violences entre les deux factions à travers le monde. Une escarmouche navale dévastatrice expédia les soldats de l’Alliance et de la Horde sur les rives brumeuses de l’île de la Pandarie qui venait de surgir au large, au grand dam des atlas et autres cartes marines les plus modernes. Alors que les deux factions en guerre s’apprêtaient à s’installer sur ce continent aux ressources abondantes, elles firent la connaissance des principaux habitants de l’île : les nobles pandarens. Cette ancienne race s’unit à l’Alliance et à la Horde dans l’espoir de détruire les sha, sombres et antiques créatures évanescentes, que ce conflit sanglant faisait ressurgir des entrailles de la Pandarie.";
+	L.EXPANSION_DATA[6].lore = "Warlords of Draenor est la 5ème extension. Après avoir échappé à la justice grâce au dragon de bronze Kairozdormu, Garrosh Hurlenfer trouva refuge dans une Draenor parallèle, à une époque où la Horde originelle n’avait pas encore débarqué en Azeroth. Assoiffé de vengeance, le fuyard fournit à son père, Grommash Hurlenfer, la technologie dont il avait besoin pour lever son armée idéale, une formidable force d’invasion qui prit le nom de Horde de Fer. Grommash unit rapidement sous sa bannière les différents clans orcs de Draenor et fit de leurs chefs les seigneurs de guerre de sa Horde de Fer. Parmi eux se trouvaient le sanguinaire Kargath Lamepoing, Main-Noire le fourbe, le vieux chaman Ner’zhul et l’intrépide Kilrogg Oeil-Mort. La Horde de Fer se lança alors à l’assaut de plusieurs régions stratégiques de Draenor, s’empara de la ville ogre de Cognefort et bâtit d’imposantes fortifications, dont la fonderie des Rochenoires, pour équiper les armées de ces seigneurs de guerre. La Horde de Fer ayant soumis Draenor, les orcs empruntèrent la Porte des ténèbres pour envahir Azeroth, rasèrent Rempart-du-Néant et prirent le contrôle du bastion Cognepeur. L’archimage Khadgar riposta en rassemblant les champions de l’Alliance et de la Horde pour les mener par-delà la Porte et mettre un terme aux exactions de la Horde de Fer en Draenor. Garrosh fut finalement tué par Thrall, et après une campagne éreintante, les héros d’Azeroth parvinrent à triompher de la plupart des seigneurs de guerre ennemis. L’offensive de Khadgar porta un coup terrible à la Horde de Fer. Incapable de mener ses guerriers à la victoire comme il le leur avait promis, Grommash vit croître un profond mécontentement dans les rangs de son armée. Profitant de cette occasion, le démoniste Gul’dan usurpa son commandement et invoqua la démoniaque Légion ardente en Draenor…";
+	L.EXPANSION_DATA[7].lore = "Legion est la 6ème extension. À la suite de la bataille de Draenor, le fourbe Gul’dan se retrouva en Azeroth. Tourmenté par les murmures de Kil’jaeden le Trompeur, il ouvrit la Tombe de Sargeras et ainsi un portail permettant à la Légion ardente d’envahir Azeroth. Le démoniste soumit alors les habitants des îles Brisées, dont les Sacrenuit de la ville antique de Suramar et leur chef, la grande magistrice Élisande. L’Alliance et la Horde prirent le Rivage Brisé d’assaut dans l’espoir d’arrêter Gul’dan et les forces de la Légion avant qu’il ne soit trop tard, mais elles échouèrent, et le roi Varian Wrynn ainsi que le chef de guerre Vol’jin perdirent la vie. Dans un effort désespéré pour réunir les factions éparpillées, l’archimage Khadgar découvrit les piliers de la Création, les seuls instruments capables de sceller la tombe à nouveau. Tandis que les habitants des îles Brisées sont libérés de l’emprise de la Légion, les forces de l’Alliance et de la Horde se rapprochent du palais Sacrenuit, le quartier général de Gul’dan, déterminées à mettre un terme à la menace qu’il représente une bonne fois pour toutes…";
+	L.EXPANSION_DATA[8].lore = "Battle for Azeroth est la 7ème extension. Les blessures ouvertes en Azeroth par Sargeras, le titan noir, ont fait apparaître une substance instable : l’azérite, le sang de la planète elle-même. Les tensions entre la Horde et l’Alliance ont redoublé d’intensité depuis que les deux factions ont découvert le véritable pouvoir de l’azérite, marquant le début d’une guerre totale qui a mené à la chute de Teldrassil et Fossoyeuse. Affaiblies et à la recherche de nouveaux alliés, l’Alliance et la Horde ont sollicité l’aide de leurs plus valeureux héros pour étayer leurs rangs. Jaina Portvaillant s’est rendue dans son royaume natal, Kul Tiras, dans l’espoir de convaincre les siens de revenir dans l’Alliance. Elle y a rencontré des nobles querelleurs et un peuple amer, unis dans leur mépris à l’égard de ses actions passées. De son côté, la Horde a fait sortir la princesse zandalari Talanji de la prison de Hurlevent. En retour, celle-ci s’est efforcée de convaincre les Trolls zandalari de prêter main-forte à la Horde malgré la réticence de son père, le roi Rastakhan. Ces efforts diplomatiques ont porté leurs fruits, et avec l’appui de leurs nouveaux alliés, les deux factions ont pu établir de nouveaux avant-postes en Zandalar et en Kul Tiras. Aux côtés de leurs nouveaux frères d’armes, l’Alliance et la Horde se tiennent une fois de plus sur les rives de la guerre, alors que les flots de la vengeance menacent à l’horizon…";
+	L.EXPANSION_DATA[9].lore = "Shadowlands est la 8ème extension. Après avoir fui Orgrimmar, Sylvanas Coursevent met le cap vers la citadelle de la Couronne de glace. Là, elle affronte Bolvar, le roi-liche, et s’empare du Heaume de domination. Par un simple acte de destruction, Sylvanas ouvre le passage vers le royaume de l’au-delà : l’Ombreterre, un monde entre les mondes dont l’équilibre délicat préserve aussi bien la vie que la mort. Anduin, Baine, Jaina, Thrall et les héros d’Azeroth suivent Sylvanas en Ombreterre, mais se retrouvent pris au piège dans l’Antre, un royaume effroyable réservé aux âmes malfaisantes au-delà de toute rédemption. Après avoir réussi à s’échapper envers et contre tout, nos héros finissent par se rendre à Oribos, la cité éternelle qui accueille habituellement toutes les âmes fraîchement arrivées en Ombreterre. Ils découvrent alors que l’impassible Arbitre, chargée d’aiguiller les défunts vers leur dernière demeure, est en sommeil et incapable d’honorer ses devoirs. Pire encore, les quatre congrégations de l’Ombreterre ont plongé dans le chaos, et se livrent bataille pour s’approprier une ressource aussi rare que vitale : l’anima. Les héros d’Azeroth décident de venir en aide aux habitants de l’Ombreterre, espérant lever le voile sur les agissements de Sylvanas. Ils finissent par découvrir un traître au sein des congrégations : Denathrius, fondateur et dirigeant de Revendreth, foyer des Venthyrs. Ce dernier assiste secrètement Sylvanas dans son projet de libérer leur mystérieux bienfaiteur commun : une entité surnommée le Geôlier, qui règne sur tout l’Antre. L’infâme seigneur de Revendreth est mis en déroute dans son propre domaine, le château Nathria, mais Sylvanas et le Geôlier ont déjà mis leur plan à exécution : utiliser Anduin contre son gré pour servir leurs terribles desseins.";
+	L.EXPANSION_DATA[10].lore = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
+	
+	for key,value in pairs({
+		["Antorus, le Trône ardent"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["Expansion Pre"] = "Pré",
+		["Expansion Features"] = "CE",
+		[GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
+		["The Burning Crusade"] = "BC",
+		["Burning Crusade"] = "BC",
+		["The BC"] = "BC",
+		["Wrath of the Lich King"] = "WotLK",
+		["Cataclysm "] = "Cata ",
+		["Mists of Pandaria"] = "MoP",
+		["Warlords of Draenor"] = "WoD",
+		["Battle for Azeroth"] = "BfA",
+		["The Shadowlands"] = "SL",
+		["Shadowlands"] = "SL",
+		["Player vs Player"] = "JcJ",
+		["Raid Finder"] = "LFR",
+		["Looking For Raid"] = "LFR",
+		["Normal"] = "N",
+		["Heroic"] = "H",
+		["Mythic"] = "M",
+		["Clé mythique"] = "M+",
+		["Ny’alotha, la cité en éveil"] = "Ny’alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, le marché dissimulé"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["10 Player"] = "10J",
+		["10 Player (Heroic)"] = "10J (H)",
+		["25 Player"] = "25J",
+		["25 Player (Heroic)"] = "25J (H)",
+		["Emissary Quests"] = "Émissaire de quêtes",
+		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
+		["WoW Anniversary"] = "Anniversaire",
+		["Covenant:"] = "Cov :",
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "itIT" then
+	L.EXPANSION_DATA[10].lore = "Dragonflight is the ninth expansion. Gli Stormi dei Draghi di Azeroth sono tornati, richiamati a difendere la loro dimora ancestrale, le Isole dei Draghi. Ricche di magia elementale e delle energie vitali di Azeroth, le isole si sono risvegliate, e starà a te esplorare le loro meraviglie primordiali e i loro segreti dimenticati da tempo immemore.";	--TODO: First sentence
+	
+	for key,value in pairs({
+		["Antorus, il Trono Infuocato"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["Ny'alotha, la Città Risvegliata"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, il Bazar Celato"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "ptBR" then
+	L.EXPANSION_DATA[10].lore = "Dragonflight is the ninth expansion. As revoadas dragônicas de Azeroth retornaram, convocadas a defender seu lar ancestral, as Ilhas do Dragão. Repletas de magia elemental e das energias vitais de Azeroth, as Ilhas despertam uma vez mais. Cabe a você explorar suas maravilhas primordiais e revelar segredos há muito esquecidos.";	--TODO: First sentence
+	
+	for key,value in pairs({
+		["Antorus, o Trono Ardente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["Ny'alotha, a Cidade Desperta"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["Tazavesh, o Mercado Oculto"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "ruRU" then
+	L.EXPANSION_DATA[1].name = "Classic";
+	L.EXPANSION_DATA[1].lore = "Полный решимости заселить засушливые земли Дуротара, Тралл позволил Отрекшимся присоединиться к Орде, состоявшей из орков, тауренов и троллей. В то же время дворфы, гномы и древние ночные эльфы присягнули Альянсу, управляемому королевством людей. После таинственного исчезновения короля Штормграда Вариана Ринна, регентом был назначен Верховный лорд Болвар Фордрагон, но истинная власть находилась в руках черного дракона Ониксии, скрывавшейся под личиной дворянки и подчинившей Фордрагона своей воле. По мере того как герои узнавали новые подробности страшного заговора, во всех концах мира пробуждались древние силы, представлявшие угрозу как для Альянса, так и для Орды.";
+	L.EXPANSION_DATA[2].lore = "Владыка Судеб Каззак вновь открыл Темный портал в Запределье, из которого в Азерот хлынули кровожадные демоны Пылающего Легиона. Эльфы крови и дренеи присоединились к экспедиционным силам Альянса и Орды, которые отправились через портал в самое сердце Запределья, чтобы нанести поражение демонам прямо в их логове. На испепеленном Полуострове Адского Пламени в Запределье герои Альянса обнаружили нескольких своих соплеменников, которые давным-давно прошли через портал. В это же время воины Орды встретились с «неоскверненными» орками из племени Маг'хар, которые не участвовали во вторжении на Азерот. В ходе кампании в Запределье союзные войска все больше увязали в конфликте с Легионом и подручными Иллидана Ярости Бури, который распространил свое влияние на все уголки разрушенного мира.";
+	L.EXPANSION_DATA[3].lore = "Когда Солнечный Колодец был очищен от скверны, в мире наступило спокойствие, причем настолько безмятежное, что просто не могло не вызвать подозрений. Внезапно, как по сигналу, войска Плети приступили к планомерному нападению на города по всему Азероту уже и за пределами Восточных Королевств. Вождь Тралл был вынужден принять решительные меры и направил в Нордскол экспедиционный корпус под началом Гарроша Адского Крика. Тем временем в Штормград, наконец, вернулся король людей Вариан Ринн и занял свое законное место на престоле. На бой с Королем-личом он выставил внушительное войско Альянса под командованием Болвара Фордрагона. Кроме того, воины Альянса должны были подавить любое сопротивление Орды.";
+	L.EXPANSION_DATA[4].lore = "Экспедиции в Нордскол вернулись с победой, но внезапно на Азерот обрушились разгневанные элементали — знак, что грядет возвращение аспекта драконов Смертокрыла Разрушителя. Он покинул свое логово и принес в Азерот разрушение, открыв проходы в Царство Стихий, через которые хлынули беснующиеся элементали и их владыки. Они намерены помочь Смертокрылу и отвратительному культу Сумеречного Молота приблизить Время Сумерек и уничтожить все живое в Азероте.";
+	L.EXPANSION_DATA[5].lore = "От Смертокрыла мир удалось спасти, и вождь Гаррош Адский Крик решил: когда, как не теперь, нанести удар по Альянсу и расширить владения Орды в Калимдоре. Под натиском его армии пал и был разрушен до основания город людей Терамор. По всему миру противостояние между фракциями разгорелось с новой силой. После крупного морского сражения остатки флота Орды и Альянса прибило к туманным берегам Пандарии — таинственного континента, не отмеченного ни на одной карте. На берегу этой богатой земли враждующие фракции встретили благородных пандаренов — один из главных местных народов. Пандарены вступили в союз с Альянсом и Ордой, надеясь с их помощью изгнать со своих земель злобных ша — бестелесных созданий, явившихся на свет из недр Пандарии в давней кровопролитной войне.";
+	L.EXPANSION_DATA[6].lore = "Гаррош Адский Крик бежал от правосудия, в чем ему помог бронзовый дракон Кайроздорму. Бывшему вождю удалось вернуться назад во времени и попасть на Дренор еще до вторжения Орды в Азерот. Поддавшись жажде мести, Гаррош выдал своему отцу, Громмашу Адскому Крику, все технологии для создания идеальной армии для завоевания других миров — Железной Орды. Громмаш объединил все разрозненные кланы орков Дренора под своим знаменем, сделав их вождей своими военачальниками. В число приближенных вошли кровожадный Каргат Острорук, хитрый Чернорук, старый шаман Нер'зул и бесстрашный Килрогг Мертвый Глаз. Железная Орда захватила ряд ключевых областей Дренора, покорила город огров из клана Верховного Молота и построила крупные военные объекты вроде литейной клана Черной горы, снабжающей армии Орды оружием. Завладев Дренором, орки Железной Орды вторглись в Азерот через Темный портал, разорили крепость Стражей Пустоты и захватили форт Молота Ужаса. В ответ на нападение верховный маг Кадгар призвал на помощь героев Альянса и Орды и повел их через портал на Дренор, чтобы остановить Железную Орду раз и навсегда. В итоге Гаррош пал от руки Тралла, а героям Азерота удалось в ходе продолжительной и тяжелой кампании уничтожить большую часть военачальников Железной Орды. Возглавляемое Кадгаром наступление позволило нанести сокрушительный удар Железной Орде. Громмаш не смог привести своих воинов к обещанной победе, и в рядах его последователей назрел раскол. Это позволило чернокнижнику Гул'дану захватить власть в Железной Орде и призвать на Дренор демонов Пылающего Легиона...";
+	L.EXPANSION_DATA[7].lore = "После битвы за Дренор коварный Гул'дан очутился в Азероте. Под влиянием демонического владыки Кил'джедена Искусителя он открыл гробницу Саргераса, а вместе с ней — врата, через которые Пылающий Легион вторгся в Азерот. Чернокнижник покорил Расколотые острова, включая древний город ночнорожденных Сурамар, и подчинил своей воле их лидера, Великого магистра Элисанду. Альянс и Орда штурмовали Расколотый берег в надежде остановить Гул'дана и предотвратить вторжение Легиона, но их усилия оказались тщетны и стоили жизни королю Вариану Ринну и вождю Вол'джину. Тогда верховный маг Кадгар предпринял отчаянную попытку объединить раздробленные фракции, что привело к восстановлению Столпов Созидания — единственного инструмента, способного вновь запечатать гробницу. Жители Расколотых островов освободились от влияния Легиона, а силы Альянса и Орды приблизились к базе Гул'дана, Цитадели Ночи, в надежде раз и навсегда положить конец зловещим амбициям чернокнижника...";
+	L.EXPANSION_DATA[8].lore = "Когда Саргерас нанес Азерот страшную рану, из недр планеты поднялась нестабильная субстанция, прозванная азеритом — кровь самого спящего титана. Вскоре Альянс и Орда поняли, какой потенциал сокрыт в этом веществе, и взаимная неприязнь перешла в открытую конфронтацию. В стремлении завладеть как можно большим количеством азерита, Орда сожгла Тельдрассил, а затем Альянс осадил Подгород.\n\nОбе фракции были ослаблены и нуждались в новых союзниках и в героях, которые бы помогли их найти. Так Джайна Праудмур отправилась на свою родину, Кул-Тирас, в надежде уговорить морскую державу вновь присоединиться к Альянсу. Однако местные дворянские дома погрязли в конфликтах и проявили единодушие лишь в ненависти к Джайне за ее прошлые поступки. В то же время герои Орды вызволили зандаларскую принцессу Таланджи из тюрьмы Штормграда. И, хотя сперва ее отец, король Растахан, не был настроен слушать послов, со временем Таланджи все-таки уговорила зандаларских троллей присоединиться к Орде. Дипломатия помогла обеим фракциям, и в результате успешных военных кампаний они основали надежные базы в Зандаларе и Кул-Тирасе.\n\nДобившись доверия со стороны своих новых союзников, Альянс и Орда вновь скрестили клинки, не замечая, что над ними нависли грозные волны возмездия…";
+	L.EXPANSION_DATA[9].lore = "Одним отчаянным ударом Сильвана Ветрокрылая разрушила границу между миром живых и загробным царством. Храбрейших защитников Азерота затянула всепожирающая тьма. Несущая смерть древняя сила грозит сбросить оковы и уничтожить саму реальность.\n\nТех, кто осмелится сделать шаг в царство мертвых, ждут чудесные и пугающие неизведанные миры. Темные земли — это царство, в котором обитают души умерших. Это мир между мирами, от хрупкого баланса в котором зависит само существование жизни и смерти.\n\nКак одного из величайших защитников Азерота, вас наделили способностью пребывать в этом мире, не теряя своей телесной оболочки. Теперь вам предстоит раскрыть заговор, грозящий уничтожением Вселенной, и помочь легендарным героям всех эпох Warcraft вернуться в Азерот... или окончательно покинуть этот мир.";
+	L.EXPANSION_DATA[10].lore = "Драконы Азерота откликнулись на зов и вернулись, чтобы защитить свою родину, Драконьи острова. Магия стихий и энергия жизни Азерота наполняют вновь пробудившиеся Драконьи острова, и теперь вам предстоит исследовать их первобытные чудеса и раскрыть давно забытые тайны.";
+	
+	for key,value in pairs({
+		["Анторус, Пылающий Трон"] = "Анторус";	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["Expansion Pre"] = "Препатч";
+		["Особый контент"] = "ОК";
+		[GROUP_FINDER] = "П и Р";	-- ["Dungeons & Raids"] = "D&R"
+		["Cataclysm "] = "Ката ";
+		["Темные Земли"] = "ТЗ",
+		["Player vs Player"] = "ПвП";
+		["Поиск рейда"] = "ЛФР";
+		["Обычный"] = "О";
+		["Героический"] = "Г";
+		["Эпохальный"] = "Э";
+		["Тайный рынок Тазавеш"] = "Тазавеш";	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["10 игроков"] = "10";
+		["25 игроков"] = "25";
+		["героич."] = "гер.";
+		["Локальные задания"] = "ЛЗ",	-- ["World Quests"] = "WQ"
+		["годовщина World of Warcraft"] = "годовщина";
+		["Ковенант:"] = "Ков:",
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "koKR" then
+	L.EXPANSION_DATA[10].lore = "용군단 is the ninth expansion. 아제로스의 용군단이 부름을 받들어 선조의 보금자리인 용의 섬을 수호하고자 귀환했습니다. 섬 전역에서 정령 마력과 아제로스의 생명력이 넘쳐흐르는 지금, 용의 섬이 다시 한번 기지개를 켜며 깨어나고 있습니다. 여러분은 이제 태고의 경이를 모험하며 아득히 먼 옛날 잊힌 비밀을 탐구해야 합니다.";	--TODO: First sentence
+	
+	for key,value in pairs({
+		["안토러스 - 불타는 왕좌"] = "안토러스",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["깨어난 도시 나이알로사"] = "나이알로사",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["미지의 시장 타자베쉬"] = "타자베쉬",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	})
+	do ABBREVIATIONS[key] = value; end
+end
+if localeString == "zhCN" or localeString == "zhTW" then
+	L.EXPANSION_DATA[1].lore = "海加尔山之战的四年后，联盟和部落之间的关系又一次紧张了起来。为了能在贫瘠之地杜隆塔尔立足，萨尔邀请亡灵被遗忘者加入到兽人、牛头人和巨魔中，以扩大他的部落。与此同时，在另一边矮人、侏儒和古暗夜精灵则发誓它们将效忠人类暴风城王国所领导的新的联盟。当暴风城的国王瓦里安·乌瑞恩神秘消失之后，领主伯瓦尔·弗塔根担任摄政王，但是伯瓦尔的所做的一切被伪装成人类贵妇的黑龙奥尼克希亚通过意识控制所破坏。当英雄们正在研究对抗奥克尼希亚的手法时，古代的敌人出现在大陆上，并威胁着部落和联盟的生存。";
+	L.EXPANSION_DATA[2].lore = "燃烧的远征是第一个资料片。它的主要内容包括将等级上限提高到70，将血精灵和德莱尼作为可玩的种族引入，以及外域世界的加入，以及许多新区域、地下城、物品、任务和怪物。";
+	L.EXPANSION_DATA[3].lore = "巫妖王之怒是第二个资料片。大部分资料片内容都发生在诺森德，并以巫妖王的计划为中心。内容亮点包括将等级上限从70增加到80，引入英雄职业死亡骑士，以及新的 PvP/世界 PvP 内容。";
+	L.EXPANSION_DATA[4].lore = "大地的裂变是第三个资料片。随着死亡之翼的回归，重做艾泽拉斯大陆的卡利姆多和东部王国，他从位于元素位面深处的巢穴中破土而出，将艾泽拉斯撕成碎片。大灾难让玩家们回到艾泽拉斯的两大洲进行大部分的活动，开辟新的区域，如海加尔山、瓦斯琪尔、深岩之洲、奥丹姆和暮光高地。它包括两个新的可玩的种族，狼人和地精。资料片将等级上限提高到85，增加了在卡利姆多和东部王国飞行的能力，引入考古学和重做，并重做世界本身。";
+	L.EXPANSION_DATA[5].lore = "熊猫人之谜是第四个资料片。在潘达利亚意外重新发现之后，资料片主要重新集中在联盟和部落之间的战争。冒险者重新发现了古老的熊猫人，他们的智慧将有助于引导他们走向新的命运; 熊猫人帝国的古代敌人螳螂妖; 和他们传说中的压迫者神秘的魔古族。领土随着时间的推移而变化，瓦里安乌瑞恩和加尔鲁什地狱咆哮之间的冲突逐渐升级。内战席卷了部落，联盟和部落中反对地狱咆哮的暴力起义联合起来直接把战争带到地狱咆哮和被煞魔侵蚀的奥格瑞玛的盟友。";
+	L.EXPANSION_DATA[6].lore = "德拉诺之王是第五个资料片。在德拉诺的原始丛林和战争创伤的平原上，艾泽拉斯的英雄们将参与一场神话般的冲突，包括神秘的德莱尼冠军和强大的兽人部落，以及在原始力量的顶峰与格罗玛什地狱咆哮、黑手和耐奥祖等。玩家需要在这片不受欢迎的土地上搜索盟友，以帮助建立一个绝望的防御，对抗旧部落强大的统治，或者观看他们自己世界上血腥的、饱受战争蹂躏的历史重演。";
+	L.EXPANSION_DATA[7].lore = "军团再临是第六个资料片。古尔丹被驱逐到艾泽拉斯，重新开放萨格拉斯之墓和阿古斯之门，开始第三次入侵燃烧军团。在破碎海岸被击败后，艾泽拉斯的卫士们寻找创造之柱，这是艾泽拉斯关闭萨墓中心巨大的恶魔之门的唯一希望。然而，破碎群岛也有自己的危险要克服，从萨维斯到神王斯科瓦德，到夜之子，再到潮汐之力艾萨拉。卡德加将达拉然迁移到这片土地的海岸，这座城市是英雄的中心枢纽。阿彻鲁斯的死亡骑士也将他们漂浮的墓地带到了群岛。艾泽拉斯的英雄们在战斗中寻找传说中的神器，但也发现了伊利达雷的意外盟友。联盟和部落之间正在发生的冲突导致了阶级秩序的形成，特殊的指挥官搁置阵营纷争来领导他们的队伍参加对抗军团的斗争。";
+	L.EXPANSION_DATA[8].lore = "争霸艾泽拉斯是第七个资料片。艾泽拉斯为结束军团十字军的天启付出了惨重的代价，但即使世界上的创伤得到了修复，联盟和部落之间破碎的信任也可能是最难弥补的。在艾泽拉斯战役中，燃烧军团的垮台引发了一系列灾难性事件，重新引发了魔兽世界中心的冲突。随着一个新的战争时代的开始，艾泽拉斯的英雄们必须开始征募新的盟友，争夺世界上最强大的资源，并在多条战线上战斗，以确定部落或联盟是否会带领艾泽拉斯进入不确定的未来。";
+	L.EXPANSION_DATA[9].lore = "暗影国度是第八个资料片。你所知道的世界之外还有什么? 暗影国度。每一个世俗的人(无论是邪恶的还是邪恶的)都曾居住过的地方。";
+	L.EXPANSION_DATA[10].lore = "巨龙时代是第九个资料片。艾泽拉斯的巨龙军团已经回归，他们响应了召唤，前去保护自己世代相传的家园：巨龙群岛。巨龙群岛涌动着元素魔法和艾泽拉斯的生命能量，如今它已从睡梦中苏醒，原始的奇观和尘封已久的秘密正等待你去揭露。";
+	L.EXPANSION_DATA[11].lore = "地心之战是第十个资料片。也是世界之魂传说三部曲的开端。穿越前所未见的地下世界，那里充满了隐藏的奇迹和潜伏的危险，一直到蛛魔帝国的黑暗深处，那里邪恶的虚空先驱正在聚集蛛魔力量，试图让艾泽拉斯屈服。";
+	L.EXPANSION_DATA[12].lore = "至暗之夜是第十一个资料片。也是世界之魂传说的第二部份。";
+	L.EXPANSION_DATA[13].lore = "最后的泰坦是第十二个资料片。也是世界之魂传说三部曲终章。";
+	
+	for key,value in pairs({
+		["安托鲁斯，燃烧王座"] = "安托鲁斯",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["资料片前夕"] = "前夕",	-- ["Expansion Pre"] = "Pre"
+		["尼奥罗萨，觉醒之城"] = "尼奥罗萨",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+		["塔扎维什，帷纱集市"] = "塔扎维什",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+		["亚贝鲁斯，焰影熔炉"] = "亚贝鲁斯",	-- ["Aberrus, the Shadowed Crucible"] = "Aberrus"
+		["阿梅达希尔，梦境之愿"] = "阿梅达希尔",	-- ["Amirdrassil, the Dream's Hope"] = "Amirdrassil"
+		["艾拉-卡拉，回响之城"] = "回响之城",	-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
+	})
+	do ABBREVIATIONS[key] = value; end
+	
+	if localeString == "zhTW" then
+		L.EXPANSION_DATA[1].lore = "海加爾山之戰的四年後，聯盟和部落之間的關係又一次緊張了起來。在貧瘠之地杜洛塔，由索爾所領導的部落安頓定居下來並繼續擴充軍隊的規模，他們邀請被遺忘者加入獸人、牛頭人和食人妖的行列。同時，矮人、地精和古老的夜精靈也發誓效忠由人類王國暴風城所領導的聯盟。在暴風城國王瓦里安·烏瑞恩神秘失蹤後，大領主伯瓦爾‧弗塔根擔任攝政王一職，但是偽裝成人類女貴族的黑龍軍團的奧妮克希亞控制他的心智，從幕後操控整個王國。正當英雄們探查奧妮克希亞的陰謀時，古老的強敵卻現身世界各地，威脅著部落和聯盟。";
+		L.EXPANSION_DATA[2].lore = "燃燒的遠征是第一個資料片。它的主要內容包括將等級上限提高到70，將血精靈和德萊尼作為可玩的種族引入，以及外域世界的加入，以及許多新區域、地城、物品、任務和怪物。";
+		L.EXPANSION_DATA[3].lore = "巫妖王之怒是第二個資料片。大部分資料片內容都發生在諾森德，並以巫妖王的計劃為中心。內容亮點包括將等級上限從70增加到80，引入英雄職業死亡騎士，以及新的 PvP/世界 PvP 內容。";
+		L.EXPANSION_DATA[4].lore = "浩劫與重生是第三個資料片。隨著死亡之翼的回歸，重做艾澤拉斯大陸的卡林多和東部王國，他從位於元素位面深處的巢穴中破土而出，將艾澤拉斯撕成碎片。大災變讓玩家們回到艾澤拉斯的兩大洲進行大部分的活動，開闢新的區域，如海加爾山、瓦許伊爾、地深之源、奧丹姆和暮光高地。它包括兩個新的可玩的種族，狼人和哥布林。資料片將等級上限提高到85，增加了在卡林多和東部王國飛行的能力，引入考古學，並重做世界本身。";
+		L.EXPANSION_DATA[5].lore = "潘達利亞之謎是第四個資料片。在潘達利亞意外重新發現之後，資料片主要重新集中在聯盟和部落之間的戰爭。冒險者重新發現了古老的熊貓人，他們的智慧將有助於引導他們走向新的命運；熊貓人帝國的古代敵人螳螂人；和他們傳說中的壓迫者神秘的魔古族。領土隨著時間的推移而變化，瓦里安．烏瑞恩和卡爾洛斯．地獄吼之間的衝突逐漸升級。內戰席捲了部落，聯盟和部落中反對地獄吼的暴力起義聯合起來直接把戰爭帶到地獄吼和被煞侵蝕的奧格瑪的盟友。";
+		L.EXPANSION_DATA[6].lore = "德拉諾之霸是第五個資料片。在德拉諾的原始叢林和戰爭創傷的平原上，艾澤拉斯的英雄們將參與一場神話般的衝突，包括神秘的德萊尼冠軍和強大的獸人部落，以及在原始力量的頂峰與葛羅瑪許．地獄吼、黑手和耐奧祖等。玩家需要在這片不受歡迎的土地上搜尋盟友，以幫助建立一個絕望的防禦，對抗舊部落強大的統治，或者觀看他們自己世界上血腥的、飽受戰爭蹂躪的歷史重演。";
+		L.EXPANSION_DATA[7].lore = "軍臨天下是第六個資料片。古爾丹被驅逐到艾澤拉斯，重新開啟薩格拉斯之墓和阿古斯之門，燃燒軍團開始第三次入侵。在破碎海岸被擊敗後，艾澤拉斯的防衛者們尋找創造之柱，這是在艾澤拉斯關閉薩墓中心巨大的惡魔之門的唯一希望。然而，破碎群島也有自己的危險要克服，從薩維斯到神王斯科瓦德，到夜裔精靈，再到潮汐之力艾薩拉。卡德加將達拉然遷移到這片土地的海岸，這座城市是英雄的中心樞紐。亞榭洛的死亡騎士也將他們的黯黑堡帶到了群島。艾澤拉斯的英雄們在戰鬥中尋找傳說中的神器，但也發現了意外的盟友伊利達瑞。聯盟和部落之間正在發生的衝突導致了階級秩序的形成，特殊的指揮官擱置陣營紛爭來領導他們的隊伍參加對抗軍團的戰爭。";
+		L.EXPANSION_DATA[8].lore = "決戰艾澤拉斯是第七個資料片。艾澤拉斯為結束燃燒軍團的天啓付出了慘重的代價，但即使世界上的創傷得到了修復，聯盟和部落之間破碎的信任也可能是最難彌補的。在決戰艾澤拉斯中，燃燒軍團的垮台引發了一系列災難性事件，重新引發了魔獸世界中心的衝突。隨著一個新的戰爭時代開始，艾澤拉斯的英雄們必須開始招募新的盟友，爭奪世界上最強大的資源，並在多條戰線上戰鬥，以決定部落或聯盟是否會帶領艾澤拉斯進入不確定的未來。";
+		L.EXPANSION_DATA[9].lore = "暗影之境是第八個資料片。你所知道的世界之外還有什麼？暗影之境。每一個世俗的人（無論是善良的還是邪惡的）都曾居住過的地方。";
+		L.EXPANSION_DATA[10].lore = "巨龍崛起是第九個資料片。艾澤拉斯的巨龍軍團已經回歸，他們響應了召喚，前去保護自己世代相傳的家園：巨龍群島。巨龍群島湧動著元素魔法和艾澤拉斯的生命能量，如今它已從睡夢中甦醒，原始的奇觀和塵封已久的秘密正等待你去揭曉。";
+		L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之魂戰記三部曲的開端。穿越前所未見的地下世界，那裡充滿了隱藏的奇觀和潛伏的危險，一直到蛛魔帝國的黑暗深處，那裡邪惡的虛空先驅正在聚集蛛魔力量，試圖讓艾澤拉斯屈服。";
+		L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
+		L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
+		
+		for key,value in pairs({
+			["資料片前夕"] = "前夕",
+			["安托洛斯，燃燒王座"] = "安托洛斯",		-- ["Antorus, the Burning Throne"] = "Antorus"
+			["奈奧羅薩，甦醒之城"] = "奈奧羅薩",		-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+			["『帷幕市集』塔札維許"] = "塔札維許",		-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+			["『朧影實驗場』亞貝魯斯"] = "亞貝魯斯",	-- ["Aberrus, the Shadowed Crucible"] = "Aberrus"
+			["『夢境希望』埃達希爾"] = "埃達希爾",		-- ["Amirdrassil, the Dream's Hope"] = "Amirdrassil"
+			["『回音之城』厄拉卡拉"] = "厄拉卡拉",		-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
+		})
+		do ABBREVIATIONS[key] = value; end
+	end
+end
+
+if app.IsRetail then
+	local CUSTOM_COLLECTS_REASONS = {
+		["NPE"] = {
+			color = "ff5bc41d",
+			icon = "|T"..(3567434)..":0|t",
+			text = "New Player Experience",
+			desc = "Only a New Character can Collect this."
+		},
+		["SL_SKIP"] = {
+			color = "ff76879c",
+			icon = "|T"..app.asset("Expansion_SL")..":0|t",
+			text = "Threads of Fate",
+			desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this."
+		},
+		["HOA"] = {
+			color = "ffe6cc80",
+			icon = "|T"..(1869493)..":0|t",
+			text = GetSpellName(275825),
+			desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this."
+		},
+		["!HOA"] = {
+			color = "ffe6cc80",
+			icon = "|T"..(2480886)..":0|t",
+			text = "|cffff0000"..NO.."|r "..GetSpellName(275825),
+			desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this."
+		},
+		["SL_COV_KYR"] = {
+			color = "ff516bfe",
+			icon = "|T"..(3257748)..":0|t",
+			text = GetSpellName(321076)
+		},
+		["SL_COV_NEC"] = {
+			color = "ff40bf40",
+			icon = "|T"..(3257749)..":0|t",
+			text = GetSpellName(321078)
+		},
+		["SL_COV_NFA"] = {
+			color = "ffA330C9",
+			icon = "|T"..(3257750)..":0|t",
+			text = GetSpellName(321077)
+		},
+		["SL_COV_VEN"] = {
+			color = "fffe040f",
+			icon = "|T"..(3257751)..":0|t",
+			text = GetSpellName(321079)
+		},
+	};
+	L.CUSTOM_COLLECTS_REASONS = CUSTOM_COLLECTS_REASONS;
+	
+	--[[
+	if localeString == "deDE" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "New Player Experience";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Only a New Character can Collect this.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Threads of Fate";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+	end
+	]]--
+	if localeString == "esES" or localeString == "esMX" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "Experiencia de los jugadores nuevos";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Sólo un personaje nuevo puede coleccionar esto.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Hilos del destino";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Sólo un personaje que elige saltarse la historia de las Tierras Sombrías puede coleccionar esto.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Sólo un personaje que ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Sólo un personaje que |cffff0000no|r ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
+		
+		if localeString == "esMX" then
+			CUSTOM_COLLECTS_REASONS["NPE"].text = "Experiencia de los jugadores nuevos";
+			CUSTOM_COLLECTS_REASONS["NPE"].desc = "Sólo un personaje nuevo puede coleccionar esto.";
+			CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Hilos del destino";
+			CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Sólo un personaje que elige saltarse la historia de las Tierras de las Sombras puede coleccionar esto.";
+			CUSTOM_COLLECTS_REASONS["HOA"].desc = "Sólo un personaje que ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
+			CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Sólo un personaje que |cffff0000no|r ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
+		end
+	end
+	if localeString == "frFR" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "Expérience Nouveau Joueur";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Seul un nouveau personnage peut collecter ceci.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Fil du destin";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Seul un personnage ayant passé la suite de quête principale de Shadowlands peut collecter ceci.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Seul un personnage ayant obtenu le |cffe6cc80"..GetSpellName(275825).."|r peut collecter ceci.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Seul un personnage |cffff0000n’ayant pas|r obtenu le |cffe6cc80"..GetSpellName(275825).."|r peut collecter ceci.";
+	end
+	--[[
+	if localeString == "itIT" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "New Player Experience";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Only a New Character can Collect this.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Threads of Fate";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+	end
+	]]--
+	--[[
+	if localeString == "ptBR" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "New Player Experience";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Only a New Character can Collect this.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Threads of Fate";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+	end
+	]]--
+	if localeString == "ruRU" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "Новый Персонаж";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Только Новый Персонаж может собрать эти предметы.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Нити Судьбы";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Только Персонаж, который пропустил сюжет Тёмных Земель, может собрать эти предметы.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Только Персонаж с |cffe6cc80Сердцем Азерот|r может собрать эти предметы.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].text = "|cffff0000Без|r Сердца Азерот";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Только Персонаж |cffff0000без|r |cffe6cc80Сердца Азерот|r может собрать эти предметы.";
+	end
+	--[[
+	if localeString == "koKR" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "New Player Experience";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "Only a New Character can Collect this.";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Threads of Fate";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this.";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this.";
+	end
+	]]--
+	if localeString == "zhCN" or localeString == "zhTW" then
+		CUSTOM_COLLECTS_REASONS["NPE"].text = "新玩家体验";
+		CUSTOM_COLLECTS_REASONS["NPE"].desc = "只有新角色可以收藏这个。";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "命运丝线";
+		CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。";
+		CUSTOM_COLLECTS_REASONS["HOA"].desc = "只有角色获得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
+		CUSTOM_COLLECTS_REASONS["!HOA"].desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
+		
+		if localeString == "zhTW" then
+			CUSTOM_COLLECTS_REASONS["NPE"].text = "新玩家體驗";
+			CUSTOM_COLLECTS_REASONS["NPE"].desc = "只有新角色可以收藏這個。";
+			CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "命運絲線";
+			CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "只有選擇跳過暗影之境故事線的角色才能收集這個。";
+			CUSTOM_COLLECTS_REASONS["HOA"].desc = "只有角色獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
+			CUSTOM_COLLECTS_REASONS["!HOA"].desc = "只有角色 |cffff0000沒有|r 獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
+		end
+	end
 end

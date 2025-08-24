@@ -6,10 +6,14 @@ MINIGAMES_HEADER = createHeader({
 	icon = 134481,
 	text = {
 		en = "Minigames",
+		es = "Minijuegos",
+		mx = "Minijuegos",
 		cn = "小游戏",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
+		es = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
+		mx = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
 	},
 });
 DARKMOON_DANCE_HEADER = createHeader({
@@ -17,10 +21,11 @@ DARKMOON_DANCE_HEADER = createHeader({
 	icon = 348567,
 	text = {
 		en = "Darkmoon Dance",
-		es = "Feria de la Luna Negra Juego de Baile",
+		es = "Baile de la Luna Negra",
 		de = "Dunkelmond-Jahrmarkt Tanzspiel",
 		fr = "Foire de Sombrelune Jeu de Danse",
 		it = "Fiera di Lunacupa Gioco della Danza",
+		mx = "Baile bajo la Luna Negra",
 		pt = "Feira de Negraluna Jogo da Dança",
 		ru = "Ярмарка Новолуния состязании танцоров",
 		ko = "다크문 유랑단 춤 게임",
@@ -28,6 +33,8 @@ DARKMOON_DANCE_HEADER = createHeader({
 	},
 	description = {
 		en = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
+		es = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Baile del Pollo (Amarillo), Giro enérgico (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
+		mx = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Danza de la gallina (Amarillo), Vuelta poderosa (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
 	},
 });
 FIREBIRDS_CHALLENGE_HEADER = createHeader({
@@ -39,6 +46,7 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		de = "Herausforderung des Feuervogels",
 		fr = "Défi de l’Oiseau de feu",
 		it = "Sfida dell'Uccello di Fuoco",
+		mx = "Desafío del Pájaro de Fuego",
 		pt = "Desafio da Ave Flamejante",
 		ru = "Вызов огнекрыла",
 		ko = "불새의 도전",
@@ -46,6 +54,8 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 	},
 	description = {
 		en = "Roughly 60 floating rings appear all over the island, but most are not over the Faire area proper and are found in the woods. Players start with ten seconds of flight time and flying through a ring will refresh the buff. Work out a route in such a way that the next ring is always within 10 seconds of the one that is getting flown through, as there are many ways to get cut off.",
+		es = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
+		mx = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
 	},
 });
 SHOOTING_GALLERY_HEADER = createHeader({
@@ -57,6 +67,7 @@ SHOOTING_GALLERY_HEADER = createHeader({
 		de = "Schießbude",
 		fr = "Stand de tir",
 		it = "Tiro a Segno",
+		mx = "Galería de tiro",
 		pt = "Galeria de tiro",
 		ru = "Тир",
 		ko = "사격 연습장",
@@ -64,6 +75,8 @@ SHOOTING_GALLERY_HEADER = createHeader({
 	},
 	description = {
 		en = "In order to maximize your score, wait for the current mark to disappear then aim towards the middle target. As soon as any green mark appear, press 1 immediately and during the short cast time, move your gun to point at the left or right target if necessary.",
+		es = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
+		mx = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
 	},
 });
 WHACK_A_GNOLL_HEADER = createHeader({
@@ -75,6 +88,7 @@ WHACK_A_GNOLL_HEADER = createHeader({
 		de = "Hau-den-Gnoll",
 		fr = "Cogne-Gnoll",
 		it = "Pesta-lo-Gnoll",
+		mx = "Golpea al gnoll",
 		pt = "Pancada-no-Gnoll",
 		ru = "Гноллобой",
 		ko = "놀 때려잡기",
@@ -82,6 +96,8 @@ WHACK_A_GNOLL_HEADER = createHeader({
 	},
 	description = {
 		en = "Located near the entrance, guests receive a mallet to whack some stuffed gnolls that pop out of nine barrels in the area. Players will have 60 seconds to earn 30 points. The gnolls come in three types: normal, Hogger, and baby, awarding 1 point, 3 points, or a knockdown, respectively.",
+		es = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
+		mx = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
 	},
 });
 
@@ -101,15 +117,19 @@ local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2001 };	-- Darkmoon Faire, mu
 local DECK_MAX_REPUTATION = { 909, EXALTED };	-- Darkmoon Faire, must be less than Exalted 999/1000.
 local DARKMOON_GAME_PRIZE = i(93724, {	-- Darkmoon Game Prize [Cataclysm Version]
 	["timeline"] = { ADDED_5_2_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local DARKMOON_GAME_TOKEN = i(71083, {	-- Darkmoon Game Token [Cataclysm Version]
 	["timeline"] = { ADDED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local DARKMOON_PRIZE_TICKET = currency(515, {	-- Darkmoon Prize Ticket [Cataclysm Version]
 	["timeline"] = { ADDED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 local TATTERED_DARKMOON_PRIZE_TICKET = i(19182, {	-- Tattered Darkmoon Faire Prize Ticket
 	["timeline"] = { REMOVED_4_3_0 },
+	["pb"] = IGNORED_VALUE,
 });
 
 -- This is what every online guide ever says, but they're incorrect.
@@ -179,290 +199,54 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			ach(6019, {	-- Come One, Come All!
 				["timeline"] = { ADDED_4_3_0 },
 			}),
-			ach(6028, {	-- Darkmoon Defender
+			ach(6028, {	-- Darkmoon Defender (automated)
 				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
-					crit(18649, {	-- Adventurer's Journal
-						["_quests"] = { 29458 },	-- The Captured Journal
-					}),
-					crit(18650, {	-- Banner of the Fallen
-						["_quests"] = { 29456 },	-- A Captured Banner
-					}),
-					crit(18651, {	-- Captured Insignia
-						["_quests"] = { 29457 },	-- The Enemy's Insignia
-					}),
-				},
 			}),
-			ach(6029, {	-- Darkmoon Despoiler
+			ach(6029, {	-- Darkmoon Despoiler (automated)
 				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
-					crit(18649, {	-- Adventurer's Journal
-						["_quests"] = { 29458 },	-- The Captured Journal
-					}),
-					crit(18644, {	-- A Treatise on Strategy
-						["_quests"] = { 29451 },	-- The Master Strategist
-					}),
-					crit(18647, {	-- Mysterious Grimoire
-						["_quests"] = { 29445 },	-- An Intriguing Grimoire
-					}),
-					crit(18648, {	-- Ornate Weapon
-						["_quests"] = { 29446 },	-- A Wondrous Weapon
-					}),
-					crit(18650, {	-- Banner of the Fallen
-						["_quests"] = { 29456 },	-- A Captured Banner
-					}),
-					crit(18287, {	-- Soothsayer's Runes
-						["_quests"] = { 29464 },	-- Tools of Divination
-					}),
-					crit(18651, {	-- Captured Insignia
-						["_quests"] = { 29457 },	-- The Enemy's Insignia
-					}),
-					crit(18645, {	-- Imbued Crystal
-						["_quests"] = { 29443 },	-- A Curious Crystal
-					}),
-					crit(18646, {	-- Monstrous Egg
-						["_quests"] = { 29444 },	-- An Exotic Egg
-					}),
-				},
 			}),
-			ach(6027, {	-- Darkmoon Dungeoneer
+			ach(6027, {	-- Darkmoon Dungeoneer (automated)
 				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
-					crit(18644, {	-- A Treatise on Strategy
-						["_quests"] = { 29451 },	-- The Master Strategist
-					}),
-					crit(18645, {	-- Imbued Crystal
-						["_quests"] = { 29443 },	-- A Curious Crystal
-					}),
-					crit(18646, {	-- Monstrous Egg
-						["_quests"] = { 29444 },	-- An Exotic Egg
-					}),
-					crit(18647, {	-- Mysterious Grimoire
-						["_quests"] = { 29445 },	-- An Intriguing Grimoire
-					}),
-					crit(18648, {	-- Ornate Weapon
-						["_quests"] = { 29446 },	-- A Wondrous Weapon
-					}),
-				},
 			}),
-			ach(6032, {	-- Faire Favors
+			ach(6032, {	-- Faire Favors (automated)
 				["timeline"] = { ADDED_4_3_0 },
+				-- #if ANYCLASSIC
 				["groups"] = {
+					-- In MOP Classic this criteria is busted without this.
 					crit(18300, {	-- Alchemy
 						["_quests"] = { 29506 },	-- A Fizzy Fusion
 					}),
-					crit(18301, {	-- Archaeology
-						["_quests"] = { 29507 },	-- Fun for the Little Ones
-					}),
-					crit(18302, {	-- Blacksmithing
-						["_quests"] = { 29508 },	-- Baby Needs Two Pair of Shoes
-					}),
-					crit(18303, {	-- Cooking
-						["_quests"] = { 29509 },	-- Putting the Crunch in the Frog
-					}),
-					crit(18304, {	-- Enchanting
-						["_quests"] = { 29510 },	-- Putting Trash to Good Use
-					}),
-					crit(18305, {	-- Engineering
-						["_quests"] = { 29511 },	-- Talking' Tonks
-					}),
-					crit(18307, {	-- Fishing
-						["_quests"] = { 29513 },	-- Spoilin' for Salty Sea Dogs
-					}),
-					crit(18308, {	-- Herbalism
-						["_quests"] = { 29514 },	-- Herbs for Healing
-					}),
-					crit(18309, {	-- Inscription
-						["_quests"] = { 29515 },	-- Writing the Future
-					}),
-					crit(18310, {	-- Jewelcrafting
-						["_quests"] = { 29516 },	-- Keeping the Faire Sparkling
-					}),
-					crit(18311, {	-- Leatherworking
-						["_quests"] = { 29517 },	-- Eyes on the Prizes
-					}),
-					crit(18312, {	-- Mining
-						["_quests"] = { 29518 },	-- Rearm, Reuse, Recycle
-					}),
-					crit(18313, {	-- Skinning
-						["_quests"] = { 29519 },	-- Tan My Hide
-					}),
-					crit(18370, {	-- Tailoring
-						["_quests"] = { 29520 },	-- Banners, Banners Everywhere!
-					}),
 				},
+				-- #endif
 			}),
-			ach(6026, {	-- Fairegoer's Feast
+			ach(6026, {	-- Fairegoer's Feast (automated)
 				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
-					crit(18252, {	-- Corn-Breaded Sausage
-						["provider"] = { "i", 44940 },
-					}),
-					crit(6552, {	-- Crunchy Frog
-						["provider"] = { "i", 19306 },
-					}),
-					crit(7313, {	-- Darkmoon Dog
-						["provider"] = { "i", 19223 },
-					}),
-					crit(6567, {	-- Deep Fried Candybar
-						["provider"] = { "i", 19225 },
-					}),
-					crit(8030, {	-- Forest Strider Drumstick
-						["provider"] = { "i", 33254 },
-					}),
-					crit(7957, {	-- Funnel Cake
-						["provider"] = { "i", 33246 },
-					}),
-					crit(6903, {	-- Pickled Kodo Foot
-						["provider"] = { "i", 19305 },
-					}),
-					crit(6915, {	-- Red Hot Wings
-						["provider"] = { "i", 19224 },
-					}),
-					crit(18596, {	-- Salty Sea Dog
-						["provider"] = { "i", 73260 },
-					}),
-					crit(7017, {	-- Spiced Beef Jerky
-						["provider"] = { "i", 19304 },
-					}),
-					crit(4661, {	-- Bottled Winterspring Water
-						["provider"] = { "i", 19300 },
-					}),
-					crit(4665, {	-- Cheap Beer
-						["provider"] = { "i", 19222 },
-					}),
-					crit(4678, {	-- Darkmoon Special Reserve
-						["provider"] = { "i", 19221 },
-					}),
-					crit(4687, {	-- Fizzy Faire Drink
-						["provider"] = { "i", 19299 },
-					}),
-					crit(9016, {	-- Fizzy Faire Drink "Classic"
-						["provider"] = { "i", 33236 },
-					}),
-					crit(18609, {	-- Fresh-Squeezed Limeade
-						["provider"] = { "i", 44941 },
-					}),
-					crit(9015, {	-- Iced Berry Slush
-						["provider"] = { "i", 33234 },
-					}),
-					crit(18610, {	-- Sasparilla Sinker
-						["provider"] = { "i", 74822 },
-					}),
-				},
 			}),
 			ach(6025, {	-- I Was Promised a Pony
 				["provider"] = { "n", 55715 },	-- Darkmoon Pony
 				["coord"] = { 56.6, 81.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 			}),
-			ach(6020, {	-- Step Right Up
+			ach(6020, {	-- Step Right Up (automated)
 				["timeline"] = { ADDED_4_3_0 },
-				["groups"] = {
-					crit(18234, {	-- Cannon Blast
-						["_quests"] = { 29436 },	-- The Humanoid Cannonball
-					}),
-					crit(18236, {	-- Shooting Gallery
-						["_quests"] = { 29438 },	-- He Shoots, He Scores!
-					}),
-					crit(18235, {	-- Ring Toss
-						["_quests"] = { 29455 },	-- Target: Turtle
-					}),
-					crit(18237, {	-- Tonk Battle
-						["_quests"] = { 29434 },	-- Tonk Commander
-					}),
-					crit(18238, {	-- Whack-A-Gnoll
-						["_quests"] = { 29463 },	-- It's Hammer Time
-					}),
-				},
 			}),
-			a(ach(6030, {	-- Taking the Show on the Road (A)
+			a(ach(6030, {	-- Taking the Show on the Road (A) (automated)
 				["timeline"] = { ADDED_4_3_0 },
+				-- #if ANYCLASSIC
 				["groups"] = {
-					-- #if ANYCLASSIC
-					crit(18294, {	-- Dalaran
-						["maps"] = { NORTHREND_DALARAN },
-					}),
-					crit(18290, {	-- Darnassus
-						["maps"] = { DARNASSUS },
-					}),
-					crit(18291, {	-- The Exodar
-						["maps"] = { THE_EXODAR },
-					}),
-					crit(18289, {	-- Ironforge
-						["maps"] = { IRONFORGE },
-					}),
-					crit(18298, {	-- Shattrath City
-						["maps"] = { SHATTRATH_CITY },
-					}),
-					crit(18288, {	-- Stormwind City
-						["maps"] = { STORMWIND_CITY },
-					}),
-					-- #else
-					crit(27718, {	-- Dalaran
-						["maps"] = { NORTHREND_DALARAN },
-					}),
-					crit(27724, {	-- Darnassus
-						["maps"] = { DARNASSUS },
-					}),
-					crit(27725, {	-- The Exodar
-						["maps"] = { THE_EXODAR },
-					}),
-					crit(27726, {	-- Ironforge
-						["maps"] = { IRONFORGE },
-					}),
-					crit(27720, {	-- Shattrath City
-						["maps"] = { SHATTRATH_CITY },
-					}),
-					crit(27727, {	-- Stormwind City
-						["maps"] = { STORMWIND_CITY },
-					}),
-					-- #endif
+					-- In MOP Classic this criteria is busted without this.
+					crit(18294, { ["_maps"] = { NORTHREND_DALARAN } }),	-- Dalaran
 				},
+				-- #endif
 			})),
-			h(ach(6031, {	-- Taking the Show on the Road (H)
+			h(ach(6031, {	-- Taking the Show on the Road (H) (automated)
 				["timeline"] = { ADDED_4_3_0 },
+				-- #if ANYCLASSIC
 				["groups"] = {
-					-- #if ANYCLASSIC
-					crit(18294, {	-- Dalaran
-						["maps"] = { NORTHREND_DALARAN },
-					}),
-					crit(18295, {	-- Orgrimmar
-						["maps"] = { ORGRIMMAR },
-					}),
-					crit(18298, {	-- Shattrath City
-						["maps"] = { SHATTRATH_CITY },
-					}),
-					crit(18296, {	-- Silvermoon City
-						["maps"] = { SILVERMOON_CITY },
-					}),
-					crit(18297, {	-- Thunder Bluff
-						["maps"] = { THUNDER_BLUFF },
-					}),
-					crit(18299, {	-- Undercity
-						["maps"] = { UNDERCITY },
-					}),
-					-- #else
-					crit(27718, {	-- Dalaran
-						["maps"] = { NORTHREND_DALARAN },
-					}),
-					crit(27719, {	-- Orgrimmar
-						["maps"] = { ORGRIMMAR },
-					}),
-					crit(27720, {	-- Shattrath City
-						["maps"] = { SHATTRATH_CITY },
-					}),
-					crit(27721, {	-- Silvermoon City
-						["maps"] = { SILVERMOON_CITY },
-					}),
-					crit(27722, {	-- Thunder Bluff
-						["maps"] = { THUNDER_BLUFF },
-					}),
-					crit(27723, {	-- Undercity
-						["maps"] = { UNDERCITY },
-					}),
-					-- #endif
+					-- In MOP Classic this criteria is busted without this.
+					crit(18294, { ["_maps"] = { NORTHREND_DALARAN } }),	-- Dalaran
 				},
+				-- #endif
 			})),
 		}),
 		-- #endif
@@ -522,26 +306,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		-- #if AFTER 4.3.0
-		prof(FISHING, {
-			i(35286),	-- Bloated Giant Sunfish
-			i(127141, {	-- Bloated Thresher
-				["timeline"] = { ADDED_6_2_0 },
-				["groups"] = {
-					i(124669, {	-- Darkmoon Daggermaw
-						["timeline"] = { ADDED_6_2_0 },
-					}),
-				},
-			}),
-			i(124669, {	-- Darkmoon Daggermaw
-				["timeline"] = { ADDED_6_2_0 },
-			}),
-			i(93732, {	-- Darkmoon Fishing Cap
-				["timeline"] = { ADDED_5_2_0 },
-			}),
-			i(73953, {	-- Sea Pony (PET!)
-				["timeline"] = { ADDED_4_3_0 },
-			}),
-		}),
 		n(MINIGAMES_HEADER, {
 			["cost"] = {{ "i", 71083, 1 }},	-- Darkmoon Game Token
 			["groups"] = {
@@ -699,6 +463,55 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					},
 				}),
 			},
+		}),
+		-- #endif
+		petbattles({
+			n(67370, {	-- Jeremy Feasel <Master Pet Tamer>
+				["coord"] = { 47.0, 62.75, DARKMOON_ISLAND },
+				["description"] = "Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+				["timeline"] = { ADDED_5_0_4 },
+				["petBattleLvl"] = 25,
+			}),
+			n(85519, {	-- Cristoph VonFeasel <Grand Master Pet Tamer>
+				["coord"] = { 47.3, 62.0, DARKMOON_ISLAND },
+				["description"] = "Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+				["timeline"] = { ADDED_5_0_4 },
+				["petBattleLvl"] = 25,
+			}),
+		}),
+		-- #if AFTER 4.3.0
+		n(PROFESSIONS, {
+			prof(FISHING, {
+				i(35286, {	-- Bloated Giant Sunfish
+					["timeline"] = { ADDED_2_4_0 },
+				}),
+				i(127141, {	-- Bloated Thresher
+					["timeline"] = { ADDED_6_2_0 },
+					["groups"] = {
+						i(124669, {	-- Darkmoon Daggermaw
+							["timeline"] = { ADDED_6_2_0 },
+						}),
+					},
+				}),
+				i(124669, {	-- Darkmoon Daggermaw
+					["timeline"] = { ADDED_6_2_0 },
+				}),
+				i(93732, {	-- Darkmoon Fishing Cap
+					["timeline"] = { ADDED_5_2_0 },
+				}),
+				i(73953, {	-- Sea Pony (PET!)
+					["timeline"] = { ADDED_4_3_0 },
+				}),
+				i(124670, {	-- Sealed Darkmoon Crate
+					["timeline"] = { ADDED_6_2_0 },
+				}),
+				i(164973, {	-- Severed Azurefin Head
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(164972, {	-- Severed Crimsonscale Head
+					["timeline"] = { ADDED_8_1_5 },
+				}),
+			}),
 		}),
 		-- #endif
 		n(QUESTS, {
@@ -1110,12 +923,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 55.4, 54.8, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },
-				["requireSkill"] = TAILORING,
 				["cost"] = {
 					{ "i", 2320, 1 },	-- Coarse Thread
 					{ "i", 2604, 1 },	-- Red Dye
 					{ "i", 6260, 1 },	-- Blue Dye
 				},
+				["requireSkill"] = TAILORING,
 				["isMonthly"] = true,
 				["groups"] = {
 					objective(1, {	-- Plant Darkmoon Banner
@@ -1200,8 +1013,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
-				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1244,8 +1057,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.2, 35.2, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
-				["cost"] = { { "i", 2314, 3 } },	-- Toughened Leather Armor
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 2314, 3 } },	-- Toughened Leather Armor
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -1288,8 +1101,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
-				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1331,8 +1144,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.1, 37.2, MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
-				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -1921,12 +1734,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				["maxReputation"] = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
 				["timeline"] = { ADDED_4_3_0 },
-				["requireSkill"] = LEATHERWORKING,
 				["cost"] = {
 					{ "i", 6529, 10 },	-- Shiny Bauble
 					{ "i", 2320, 5 },	-- Coarse Thread
 					{ "i", 6260, 5 },	-- Blue Dye
 				},
+				["requireSkill"] = LEATHERWORKING,
 				["isMonthly"] = true,
 				["groups"] = {
 					objective(1, {	-- 0/5 Darkmoon Prize
@@ -2068,8 +1881,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.8, 39.8, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
-				["cost"] = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -2160,11 +1973,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp(q(29761, {	-- Master Pit Fighter
-				["qg"] = 55402,	-- Korgol Crushskull
 				["sourceQuest"] = 29760,	-- Pit Fighter
+				["qg"] = 55402,	-- Korgol Crushskull
 				["coord"] = { 47.3, 78.9, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 				["cost"] = { { "i", 74034, 12 } },	-- Pit Fighter
+				["repeatable"] = true,
 				["groups"] = {
 					ach(6024, {	-- Darkmoon Dominator
 						["timeline"] = { ADDED_4_3_0 },
@@ -2197,8 +2011,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7941, {	-- More Armor Kits [Tier 5] (Not Really)
-				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				["sourceQuest"] = 7885,	-- Armor Kits
+				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
@@ -2219,8 +2033,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7943, {	-- More Bat Eyes [Tier 5] (Not Really)
-				["qg"] = 14829,	-- Yebb Neblegear
 				["sourceQuest"] = 7903,	-- Evil Bat Eyes
+				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
@@ -2241,8 +2055,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7939, {	-- More Dense Grinding Stones [Tier 5] (Not Really)
-				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				["sourceQuest"] = 7893,	-- Rituals of Strength
+				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				-- #if AFTER 4.3.0
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
@@ -2263,8 +2077,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(8223, {	-- More Glowing Scorpid Blood [Tier 5] (Not Really)
-				["qg"] = 14829,	-- Yebb Neblegear
 				["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
+				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
@@ -2285,8 +2099,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7942, {	-- More Thorium Widgets [Tier 5] (Not Really)
-				["qg"] = 14841,	-- Rinling
 				["sourceQuest"] = 7898,	-- Thorium Widget
+				["qg"] = 14841,	-- Rinling
 				-- #if AFTER 4.3.0
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
@@ -2531,8 +2345,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MULGORE },
 				},
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
-				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
@@ -2562,6 +2376,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7946, {	-- Spawn of Jubjub
+				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",
 				["qg"] = 14871,	-- Morja
 				-- #if AFTER 4.3.0
 				["coord"] = { 55.9, 70.7, DARKMOON_ISLAND },
@@ -2574,7 +2389,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",
 				["cost"] = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
 				["isMonthly"] = true,
 				["lvl"] = 10,
@@ -2887,8 +2701,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37.5, 39.6, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
-				["cost"] = { { "i", 11407, 5 } },	-- Torn Bear Pelt
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 11407, 5 } },	-- Torn Bear Pelt
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -2954,8 +2768,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 37, 37.4, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
-				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
 				["timeline"] = { REMOVED_2_0_1 },
+				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
 				["repeatable"] = true,
 				["lvl"] = 10,
 				["groups"] = {
@@ -3049,8 +2863,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 				["timeline"] = { REMOVED_4_3_0 },
 				["maps"] = { WAILING_CAVERNS },
-				["cr"] = 14822,	-- Sayge
 				["repeatable"] = true,
+				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["groups"] = {
 					i(19425, {	-- Mysterious Lockbox
@@ -3061,15 +2875,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		n(QUESTS, {	-- TODO: Move into mini game section.
 			q(33756, {	-- Let's Keep Racing
-				["qg"] = 74056,	-- Malle Earnhard
 				["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
+				["qg"] = 74056,	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
 			}),
 			q(37868, {	-- More Big Racing!
-				["qg"] = 90473,	-- Patti Earnhard
 				["sourceQuest"] = 37911,	-- The Real Big Race
+				["qg"] = 90473,	-- Patti Earnhard
 				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
@@ -3110,8 +2924,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(37911, {	-- The Real Big Race
-				["qg"] = 90473,	-- Patti Earnhard
 				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+				["qg"] = 90473,	-- Patti Earnhard
 				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
@@ -3162,8 +2976,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(37910, {	-- The Real Race
-				["qg"] = 74056,	-- Malle Earnhard
 				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+				["qg"] = 74056,	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
@@ -3293,7 +3107,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					ach(11918),	-- Hey, You're a Rockstar!
 					ach(11921),	-- Mosh Pit
 					ach(11920, {	-- Perfect Performance
-						["description"] = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road.  This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
+						["description"] = "Four people fighting the Death Metal Knight will need to successfully perform the roles from Taking this Show on the Road. This achievement technically does not require a group, but it would be easier to coordinate roles with one!",
 					}),
 					ach(11919, {	-- Taking this Show on the Road
 						crit(37025, {	-- Guitarist
@@ -3480,6 +3294,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		n(VENDORS, {
 			n(55072, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Barum <Replica Armor Prizes>
 				["coord"] = { 47.5, 66.3, DARKMOON_ISLAND },
+				["description"] = "This vendor sells additional ensembles which are only visible to those who completed the original T0.5 questline. If you do not see them, you don't meet the requirements, and they can no longer be unlocked as the questline was removed from the game.",
 				["groups"] = {
 					clWithoutLock(WARRIOR, {	-- Battlegear of Valor
 						darkmoonprizeticket(55, i(78319)),	-- Replica Belt of Valor
@@ -3571,6 +3386,42 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78239)),	-- Replica Wildheart Spaulders
 						darkmoonprizeticket(75, i(78242)),	-- Replica Wildheart Vest
 					}),
+					darkmoonprizeticket(75, iensemble(171984, {	-- Ensemble: Battlegear of Valor
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171977, {	-- Ensemble: Beaststalker Armor
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171983, {	-- Ensemble: Dreadmist Raiment
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171979, {	-- Ensemble: Lightforge Armor
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171978, {	-- Ensemble: Magister's Regalia
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171981, {	-- Ensemble: Shadowcraft Armor
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171982, {	-- Ensemble: The Elements
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171980, {	-- Ensemble: Vestments of the Devout
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
+					darkmoonprizeticket(75, iensemble(171976, {	-- Ensemble: Wildheart Raiment
+						["description"] = "Only appears for those who have done the original T0.5 questline, which is removed from the game at the time of adding the ensembles",
+						["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5 },
+					})),
 				},
 			})),
 			n(57983, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Baruma <Replica Armor Prizes>
@@ -3742,102 +3593,104 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["timeline"] = { ADDED_4_3_0 },
 				["groups"] = {
 					darkmoonprizeticket(100, i(122338, {	-- Ancient Heirloom Armor Casing
-						["sym"] = { { "fill" } },	-- simply fill this item
 						["timeline"] = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(120, i(122339, {	-- Ancient Heirloom Scabbard
-						["sym"] = { { "fill" } },	-- simply fill this item
 						["timeline"] = { ADDED_6_1_0 },
 					})),
 
 					-- Old Heirlooms
-					darkmoonprizeticket(50, i(42944, {	-- Balanced Heartseeker
+					darkmoonprizeticket(110, i(42944, {	-- Balanced Heartseeker
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42943, {	-- Bloodied Arcanite Reaper
+					darkmoonprizeticket(160, i(42943, {	-- Bloodied Arcanite Reaper
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69893, {	-- Bloodsoaked Skullforge Reaver
+					darkmoonprizeticket(110, i(69893, {	-- Bloodsoaked Skullforge Reaver
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69889, {	-- Burnished Breastplate of Might
+					darkmoonprizeticket(110, i(69889, {	-- Burnished Breastplate of Might
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(69890, {	-- Burnished Pauldrons of Might
+					darkmoonprizeticket(110, i(69890, {	-- Burnished Pauldrons of Might
 						["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(79131, {	-- Burnished Warden Staff
+					darkmoonprizeticket(160, i(79131, {	-- Burnished Warden Staff
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42950, {	-- Champion Herod's Shoulders
+					darkmoonprizeticket(110, i(42950, {	-- Champion Herod's Shoulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48677, {	-- Champion's Deathdealer Breastplate
+					darkmoonprizeticket(110, i(48677, {	-- Champion's Deathdealer Breastplate
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42946, {	-- Charmed Ancient Bone Bow
+					darkmoonprizeticket(160, i(42946, {	-- Charmed Ancient Bone Bow
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42948, {	-- Devout Aurastone Hammer
+					darkmoonprizeticket(110, i(42948, {	-- Devout Aurastone Hammer
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(42947, {	-- Dignified Headmaster's Charge
+					darkmoonprizeticket(160, i(42947, {	-- Dignified Headmaster's Charge
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(70, i(42992, {	-- Discerning Eye of the Beast
+					darkmoonprizeticket(130, i(42992, {	-- Discerning Eye of the Beast
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93902, {	-- Flamescarred Draconian Deflector
+					-- #if NOT ANYCLASSIC
+					darkmoonprizeticket(110, i(93902, {	-- Flamescarred Draconian Deflector
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93904, {	-- Musty Tome of the Lost
+					darkmoonprizeticket(110, i(93904, {	-- Musty Tome of the Lost
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42951, {	-- Mystical Pauldrons of Elements
+					-- #endif
+					darkmoonprizeticket(110, i(42951, {	-- Mystical Pauldrons of Elements
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48683, {	-- Mystical Vest of Elements
+					darkmoonprizeticket(110, i(48683, {	-- Mystical Vest of Elements
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48685, {	-- Polished Breastplate of Valor
+					darkmoonprizeticket(110, i(48685, {	-- Polished Breastplate of Valor
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42949, {	-- Polished Spaulders of Valor
+					darkmoonprizeticket(110, i(42949, {	-- Polished Spaulders of Valor
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48687, {	-- Preened Ironfeather Breastplate
+					darkmoonprizeticket(110, i(48687, {	-- Preened Ironfeather Breastplate
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42984, {	-- Preened Ironfeather Shoulders
+					darkmoonprizeticket(110, i(42984, {	-- Preened Ironfeather Shoulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(75, i(48718, {	-- Repurposed Lava Dredger
+					darkmoonprizeticket(160, i(48718, {	-- Repurposed Lava Dredger
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42952, {	-- Stained Shadowcraft Spaulders
+					darkmoonprizeticket(110, i(42952, {	-- Stained Shadowcraft Spaulders
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48689, {	-- Stained Shadowcraft Tunic
+					darkmoonprizeticket(110, i(48689, {	-- Stained Shadowcraft Tunic
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(70, i(42991, {	-- Swift Hand of Justice
+					darkmoonprizeticket(130, i(42991, {	-- Swift Hand of Justice
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42985, {	-- Tattered Dreadmist Mantle
+					darkmoonprizeticket(110, i(42985, {	-- Tattered Dreadmist Mantle
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48691, {	-- Tattered Dreadmist Robe
+					darkmoonprizeticket(110, i(48691, {	-- Tattered Dreadmist Robe
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
+					darkmoonprizeticket(110, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(48716, {	-- Venerable Mass of McGowan
+					darkmoonprizeticket(110, i(48716, {	-- Venerable Mass of McGowan
 						["timeline"] = { REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(93903, {	-- Weathered Observer's Shield
+					-- #if NOT ANYCLASSIC
+					darkmoonprizeticket(110, i(93903, {	-- Weathered Observer's Shield
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 					})),
+					-- #endif
 
 					-- New Heirlooms
 					darkmoonprizeticket(50, i(122350, {	-- Balanced Heartseeker
@@ -4042,9 +3895,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(75, i(78341, {	-- Darkmoon Hammer
 						["timeline"] = { ADDED_4_3_0 },
 					})),
-					darkmoonprizeticket(50, i(97994, {	-- Darkmoon Seesaw (TOY!)
+					darkmoonprizeticket(50, i(97994, applyclassicphase(MOP_PHASE_ESCALATION, {	-- Darkmoon Seesaw (TOY!)
 						["timeline"] = { ADDED_5_3_0 },
-					})),
+					}))),
 					darkmoonprizeticket(1, i(19291)),	-- Darkmoon Storage Box
 					darkmoonprizeticket(10, i(93730, {	-- Darkmoon Top Hat
 						["timeline"] = { ADDED_5_2_0, REMOVED_8_2_5 },
@@ -4251,7 +4104,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			n(108785, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 }, }, {	-- Scarlet Quartermaster
-				["description"] = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster.  A tabard that has been transmogged will NOT work.",
+				["description"] = "You must be wearing Tabard of the Scarlet Crusade in order to purchase items from the Scarlet Quartermaster. A tabard that has been transmogged will NOT work.",
 				["provider"] = { "i", 23192 },	-- Tabard of the Scarlet Crusade
 				["coord"] = { 58.2, 80.6, DARKMOON_ISLAND },
 				["groups"] = {

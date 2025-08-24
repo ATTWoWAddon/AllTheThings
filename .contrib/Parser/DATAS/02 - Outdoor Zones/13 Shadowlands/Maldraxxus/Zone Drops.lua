@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					162258,	-- Ravenous Galescreamer
 					164587,	-- Satiated Sawtooth
 				},
-				["g"] = {
+				["groups"] = {
 					i(184103, {	-- Cracked Blight-Touched Egg
 						i(181818),	-- Callow Flayedwing (MOUNT!)
 					}),
@@ -102,7 +102,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					165960,	-- Blazing Forgehound
 					161390,	-- Darkhound Hunter
 				},
-				["questID"] = 59687,
 			}),
 			i(180532),	-- Oxxein Lockbox
 			i(181777, {	-- Phaeton's Key

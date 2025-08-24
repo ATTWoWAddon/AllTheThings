@@ -45,6 +45,8 @@
 41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
 1.15.7.60000
 42133@@@[DNT] Balnazzar Defeated
+1.15.7.60277
+42186@@@[DNT] Balnazzar Defeated (Backup Achievement)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -2826,6 +2828,8 @@
 40841@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
 3.4.4.59853
 42115@@@3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
+3.4.5.62072
+61022@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy) (copy)
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -3785,6 +3789,8 @@
 41334@@@Challenger: Season 10
 41336@@@Gladiator: Season 10
 41713@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy)
+4.4.2.60895
+42242@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy) (copy)
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
@@ -4438,7 +4444,7 @@
 7501@@@That's a Lot of Pet Food
 7502@@@Savior of Stoneplow
 7509@@@Scenaterday
-6.0.1.18179
+5.5.0.60481
 1260@@@Almost Blind Luck
 1793@@@For the Children
 2144@@@What a Long, Strange Trip It's Been
@@ -4867,7 +4873,6 @@
 8382@@@Grievous Conquest
 8391@@@Tournament Participation 2013
 8392@@@Tournament Glory 2013
-8394@@@The Frostwind Slayer
 8397@@@Crazy for Cats
 8398@@@Ahead of the Curve: Garrosh Hellscream (10 player)
 8399@@@Ahead of the Curve: Garrosh Hellscream (25 player)
@@ -4893,20 +4898,20 @@
 8459@@@Gates of Retribution
 8461@@@The Underhold
 8462@@@Downfall
-8463@@@Mythic: Immerseus
-8465@@@Mythic: Fallen Protectors
-8466@@@Mythic: Norushen
-8467@@@Mythic: Sha of Pride
-8468@@@Mythic: Galakras
-8469@@@Mythic: Iron Juggernaut
-8470@@@Mythic: Kor'kron Dark Shaman
-8471@@@Mythic: General Nazgrim
-8472@@@Mythic: Malkorok
-8478@@@Mythic: Spoils of Pandaria
-8479@@@Mythic: Thok the Bloodthirsty
-8480@@@Mythic: Siegecrafter Blackfuse
-8481@@@Mythic: Paragons of the Klaxxi
-8482@@@Mythic: Garrosh Hellscream
+8463@@@Heroic: Immerseus
+8465@@@Heroic: Fallen Protectors
+8466@@@Heroic: Norushen
+8467@@@Heroic: Sha of Pride
+8468@@@Heroic: Galakras
+8469@@@Heroic: Iron Juggernaut
+8470@@@Heroic: Kor'kron Dark Shaman
+8471@@@Heroic: General Nazgrim
+8472@@@Heroic: Malkorok
+8478@@@Heroic: Spoils of Pandaria
+8479@@@Heroic: Thok the Bloodthirsty
+8480@@@Heroic: Siegecrafter Blackfuse
+8481@@@Heroic: Paragons of the Klaxxi
+8482@@@Heroic: Garrosh Hellscream
 8484@@@Grievous Combatant
 8485@@@Grievous Combatant
 8486@@@Proving Yourself: Bronze Damage
@@ -5057,7 +5062,6 @@
 8668@@@Duelist: Season 15
 8669@@@Rival: Season 15
 8670@@@Challenger: Season 15
-8671@@@You'll Get Caught Up In The... Frostfire!
 8678@@@Tyrannical Gladiator's Cloud Serpent
 8679@@@Conqueror of Orgrimmar
 8680@@@Liberator of Orgrimmar
@@ -5094,6 +5098,64 @@
 8793@@@Murkalot
 8794@@@Friends In Places Even Higher Than That
 8795@@@Collector's Edition: Treasure Goblin
+8913@@@Collector's Edition: Dread Raven
+8915@@@Collector's Edition: Dread Hatchling
+5.5.0.60548
+8066@@@Heroic: Twin Empyreans
+8193@@@Twin Empyreans kills (LFR Throne of Thunder)
+8194@@@Twin Empyreans kills (10-player Normal Throne of Thunder)
+8195@@@Twin Empyreans kills (25-player Normal Throne of Thunder)
+8196@@@Twin Empyreans kills (10-player Heroic Throne of Thunder)
+8197@@@Twin Empyreans kills (25-player Heroic Throne of Thunder)
+5.5.0.60700
+42242@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+5.5.0.61217
+42762@@@Challenger: Season 12
+42763@@@Duelist: Season 12
+42764@@@Rival: Season 12
+42765@@@Gladiator: Season 12
+42772@@@Rival: Season 11
+42774@@@Duelist: Season 11
+42775@@@Challenger: Season 11
+42776@@@Cataclysmic Gladiator
+42777@@@Gladiator: Season 11
+5.5.0.61411
+60892@@@Celestial: Temple of the Jade Serpent
+60893@@@Celestial: Stormstout Brewery
+60894@@@Celestial: Mogu'shan Palace
+60895@@@Celestial: Shado-Pan Monastery
+60896@@@Celestial: Gate of the Setting Sun
+60897@@@Celestial: Scarlet Halls
+60898@@@Celestial: Scarlet Monastery
+60899@@@Celestial: Scholomance
+60900@@@Celestial: Siege of Niuzao Temple
+60901@@@Pandaria Celestial Hero
+5.5.0.61496
+6678@@@Realm First! Sha of Fear (25 player)
+6679@@@Realm First! Grand Empress Shek'zeer (25 player)
+6680@@@Realm First! Will of the Emperor (25 player)
+8257@@@Realm First! Ra-den (25 player)
+60907@@@Realm First! Will of the Emperor (10 player)
+60908@@@Realm First! Grand Empress Shek'zeer (10 player)
+60909@@@Realm First! Sha of Fear (10 player)
+60910@@@Realm First! Ra-den (10 player)
+6.0.1.18179
+8394@@@The Frostwind Slayer
+8463@@@Mythic: Immerseus
+8465@@@Mythic: Fallen Protectors
+8466@@@Mythic: Norushen
+8467@@@Mythic: Sha of Pride
+8468@@@Mythic: Galakras
+8469@@@Mythic: Iron Juggernaut
+8470@@@Mythic: Kor'kron Dark Shaman
+8471@@@Mythic: General Nazgrim
+8472@@@Mythic: Malkorok
+8478@@@Mythic: Spoils of Pandaria
+8479@@@Mythic: Thok the Bloodthirsty
+8480@@@Mythic: Siegecrafter Blackfuse
+8481@@@Mythic: Paragons of the Klaxxi
+8482@@@Mythic: Garrosh Hellscream
+8671@@@You'll Get Caught Up In The... Frostfire!
 8820@@@WoW's 10th Anniversary
 8843@@@Spires of Arak
 8844@@@Heroic: Spires of Arak
@@ -9580,7 +9642,6 @@
 15244@@@Renowned - Night Fae
 15245@@@Renowned - Venthyr
 9.1.5.40290
-8066@@@Heroic: Twin Empyreans
 9.1.5.40383
 15308@@@Tower Overwhelming
 15309@@@A Towering Success
@@ -15985,3 +16046,599 @@
 42004@@@Bullhorn of Most Plenty
 11.1.5.60008
 41990@@@Total Kill Score
+11.1.5.60822
+42240@@@Anu'relos, Flame's Guidance <Tracking Achievement>
+11.1.5.61122
+41757@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid (YGR)
+42139@@@The Enterprising Tank
+42141@@@The Enterprising Healer
+42144@@@The Enterprising Damage Dealer
+42148@@@The Enterprising Dungeon Master
+42230@@@11.1.5 Mid-Season - Weekly Wrapper - Group Content - Seasonal Raid, First Time Tracker
+11.1.7.60520
+41779@@@Master of the Turbulent Timeways III
+41818@@@Rise of the Red Dawn
+41820@@@Rise of the Red Dawn
+41859@@@Thanks for the Mementos
+42028@@@Ashes to Ashes
+42029@@@The Emerald Nightmare
+42030@@@The Nighthold
+42031@@@Tomb of Sargeras
+42032@@@Antorus, the Burning Throne
+42114@@@Broken Memories
+42187@@@Lorewalking: Ethereal Wisdom
+42188@@@Lorewalking: Blade's Bane
+42189@@@Lorewalking: The Lich King
+42212@@@Console Overcharged
+42213@@@Console Overcharged Purchase 1
+42214@@@Console Overcharged Purchase 2
+42215@@@Console Overcharged Purchase 3
+42216@@@Console Overcharged Purchase 4
+42217@@@Console Overcharged Purchase 5
+42218@@@Console Overcharged Purchase 6
+42219@@@Console Overcharged Purchase 7
+42220@@@Console Overcharged Purchase 8
+42221@@@Console Overcharged Purchase 9
+42222@@@Console Overcharged Purchase 10
+42223@@@Console Overcharged Purchase 11
+42224@@@Console Overcharged Purchase 12
+42225@@@Console Overcharged Purchase 13
+42226@@@Console Overcharged Purchase 14
+42227@@@Console Overcharged Purchase 15
+42228@@@Console Overcharged Purchase 16
+42229@@@Console Overcharged Purchase 17
+11.1.7.60672
+42212@@@Titan Console Overcharged
+42241@@@Overcharged Delver
+11.2.0.61476
+18579@@@A Round on the House on the Dragon Isles
+41024@@@Rival I: The War Within Season 3
+41025@@@Rival II: The War Within Season 3
+41026@@@Duelist: The War Within Season 3
+41027@@@Elite: The War Within Season 3
+41028@@@Combatant I: The War Within Season 3
+41029@@@Combatant II: The War Within Season 3
+41030@@@Challenger I: The War Within Season 3
+41031@@@Challenger II: The War Within Season 3
+41048@@@[11.2 PVP] Weapons of Conquest
+41049@@@Gladiator: The War Within Season 3
+41212@@@A Round on the House in Khaz Algar
+41597@@@Glory of the Omega Raider
+41598@@@Manaforge Omega
+41599@@@Heroic: Manaforge Omega
+41600@@@Mythic: Manaforge Omega
+41601@@@Might of the Shadowguard
+41602@@@Monsters of the Sands
+41603@@@Heart of Darkness
+41604@@@Mythic: Plexus Sentinel
+41605@@@Mythic: Loom'ithar
+41606@@@Mythic: Soulbinder Naazindhri
+41607@@@Mythic: Forgeweaver Araz
+41608@@@Mythic: The Soul Hunters
+41609@@@Mythic: Fractillus
+41610@@@Mythic: Nexus-King Salhadaar
+41611@@@Mythic: Dimensius, the All-Devouring
+41613@@@Time to Vote! Cute or Scary?
+41614@@@Mother of All Tantrums
+41615@@@Cheat Meal
+41616@@@I See... Absolutely Nothing
+41617@@@Breaking the Fourth Wall
+41618@@@Swing and a Miss
+41619@@@Defying Gravity
+41620@@@Manaforge Omega Guild Run
+41621@@@Heroic: Manaforge Omega Guild Run
+41622@@@Mythic: Dimensius, the All-Devouring Guild Run
+41623@@@Hall of Fame: Dimensius, the All-Devouring
+41624@@@Ahead of the Curve: Dimensius, the All-Devouring
+41625@@@Cutting Edge: Dimensius, the All-Devouring
+41633@@@Plexus Sentinel (Raid Finder Manaforge Omega)
+41634@@@Plexus Sentinel (Normal Manaforge Omega)
+41635@@@Plexus Sentinel (Heroic Manaforge Omega)
+41636@@@Plexus Sentinel (Mythic Manaforge Omega)
+41637@@@Loom'ithar (Raid Finder Manaforge Omega)
+41638@@@Loom'ithar (Normal Manaforge Omega)
+41639@@@Loom'ithar (Heroic Manaforge Omega)
+41640@@@Loom'ithar (Mythic Manaforge Omega)
+41641@@@Soulbinder Naazindhri (Raid Finder Manaforge Omega)
+41642@@@Soulbinder Naazindhri (Normal Manaforge Omega)
+41643@@@Soulbinder Naazindhri (Heroic Manaforge Omega)
+41644@@@Soulbinder Naazindhri (Mythic Manaforge Omega)
+41645@@@Forgeweaver Araz (Raid Finder Manaforge Omega)
+41646@@@Forgeweaver Araz (Normal Manaforge Omega)
+41647@@@Forgeweaver Araz (Heroic Manaforge Omega)
+41648@@@Forgeweaver Araz (Mythic Manaforge Omega)
+41649@@@The Soul Hunters (Raid Finder Manaforge Omega)
+41650@@@The Soul Hunters (Normal Manaforge Omega)
+41651@@@The Soul Hunters (Heroic Manaforge Omega)
+41652@@@The Soul Hunters (Mythic Manaforge Omega)
+41653@@@Fractillus (Raid Finder Manaforge Omega)
+41654@@@Fractillus (Normal Manaforge Omega)
+41655@@@Fractillus (Heroic Manaforge Omega)
+41656@@@Fractillus (Mythic Manaforge Omega)
+41657@@@Nexus-King Salhadaar (Raid Finder Manaforge Omega)
+41658@@@Nexus-King Salhadaar (Normal Manaforge Omega)
+41659@@@Nexus-King Salhadaar (Heroic Manaforge Omega)
+41660@@@Nexus-King Salhadaar (Mythic Manaforge Omega)
+41661@@@Dimensius, the All-Devouring (Raid Finder Manaforge Omega)
+41662@@@Dimensius, the All-Devouring (Normal Manaforge Omega)
+41663@@@Dimensius, the All-Devouring (Heroic Manaforge Omega)
+41664@@@Dimensius, the All-Devouring (Mythic Manaforge Omega)
+41758@@@Player has collected 1 Ethereal Strand
+41759@@@Player has collected 2 Ethereal Strand
+41760@@@Player has collected 3 Ethereal Strand
+41761@@@Player has collected 4 Ethereal Strand
+41762@@@Player has collected 5 Ethereal Strand
+41763@@@Player has collected 6 Ethereal Strand
+41764@@@Player has collected 7 Ethereal Strand
+41765@@@Player has collected 8 Ethereal Strand
+41766@@@Player has collected 9 Ethereal Strand
+41767@@@Player has collected 10 Ethereal Strand
+41768@@@Player has collected 11 Ethereal Strand
+41769@@@Player has collected 12 Ethereal Strand
+41770@@@Player has collected 13 Ethereal Strand
+41771@@@Player has collected 14 Ethereal Strand
+41772@@@Player has collected 15 Ethereal Strand
+41773@@@Player has collected 16 Ethereal Strand
+41774@@@Player has collected 17 Ethereal Strand
+41775@@@Player has collected 18 Ethereal Strand
+41778@@@Brokers Don't Care How You Win
+41792@@@<DNT> Completed EcoFriendly Quest Once
+41808@@@Otherworldly Ecologist
+41809@@@Ecological Variety
+41811@@@Ecological Stability
+41812@@@Expertly Done
+41815@@@Ecological Succession
+41886@@@Weathered of the Ethereal
+41887@@@Carved of the Ethereal
+41888@@@Runed of the Ethereal
+41892@@@Gilded of the Ethereal
+41937@@@The War Within Season 3: Voidborne Victor
+41970@@@The Knife's Edge
+41973@@@The War Within Keystone Master: Season Three
+41978@@@Moonlighter
+41979@@@Bounty Seeker
+41980@@@Vigilante
+41984@@@Dastardly Duos Highest Score
+42022@@@A Trusted Partner
+42023@@@Legend: The War Within Season 3
+42024@@@Strategist: The War Within Season 3
+42033@@@Astral Legend: The War Within Season 3
+42034@@@Astral Warlord: The War Within Season 3
+42035@@@Astral Marshal: The War Within Season 3
+42036@@@Astral Gladiator: The War Within Season 3
+42037@@@Hero of the Horde: Astral
+42038@@@Hero of the Alliance: Astral
+42039@@@Astral Gladiator's Fel Bat
+42042@@@Astral Combatant
+42043@@@Astral Combatant
+42044@@@Battle Mender: The War Within Season 3
+42118@@@Of Mice and Manaforges
+42123@@@Vicious Saddle (42)
+42124@@@Vicious Saddle (42)
+42131@@@Tour of Duty: K'aresh
+42149@@@The War Within Season 3: Resilient Keystone 12
+42150@@@The War Within Season 3: Resilient Keystone 13
+42151@@@The War Within Season 3: Resilient Keystone 14
+42152@@@The War Within Season 3: Resilient Keystone 15
+42153@@@The War Within Season 3: Resilient Keystone 16
+42154@@@The War Within Season 3: Resilient Keystone 17
+42155@@@The War Within Season 3: Resilient Keystone 18
+42156@@@The War Within Season 3: Resilient Keystone 19
+42157@@@The War Within Season 3: Resilient Keystone 20
+42158@@@The War Within Season 3: Resilient Keystone 21
+42159@@@The War Within Season 3: Resilient Keystone 22
+42160@@@The War Within Season 3: Resilient Keystone 23
+42161@@@The War Within Season 3: Resilient Keystone 24
+42162@@@The War Within Season 3: Resilient Keystone 25
+42169@@@The War Within Keystone Explorer: Season Three
+42170@@@The War Within Keystone Conqueror: Season Three
+42171@@@The War Within Keystone Hero: Season Three
+42172@@@The War Within Keystone Legend: Season Three
+42173@@@Keystone Hero: Eco-Dome Al'dani
+42174@@@[PH] Hero: The War Within Season Three
+42190@@@Let Me Solo Her: Nexus-Princess Ky'veza
+42191@@@Safer Deposit
+42193@@@My Stab-Happy Nemesis
+42194@@@Pruning the Princess
+42195@@@[HIDDEN] Renown 15 with Manaforge Vandals / Teach Raid Teleport Spell
+42196@@@War Within Delves: Tier 4 (Season 3)
+42197@@@War Within Delves: Tier 5 (Season 3)
+42198@@@War Within Delves: Tier 6 (Season 3)
+42199@@@War Within Delves: Tier 7 (Season 3)
+42200@@@War Within Delves: Tier 8 (Season 3)
+42201@@@War Within Delves: Tier 9 (Season 3)
+42202@@@War Within Delves: Tier 10 (Season 3)
+42203@@@War Within Delves: Tier 11 (Season 3)
+42316@@@Fractals? For Spring? Groundbreaking.
+42325@@@Void Wear Prohibited
+42676@@@Buddy System IX
+42677@@@This Machine Flies?! Don't Care I Got It!
+42678@@@So That's Where My Manaflux Capacitor Was!
+42679@@@Archival Assault Discoveries
+42700@@@Archival Assault clears
+42712@@@Skyriding Glyphs: Tazavesh, the Veiled Market
+42713@@@Skyriding Glyph: Serrated Peaks
+42714@@@Skyriding Glyphs: The Oasis
+42715@@@Skyriding Glyphs: Fracture of Laacuna
+42716@@@Skydiving Glyphs: Shadow Point
+42717@@@Skyriding Glyphs: Castigaar
+42718@@@Skyriding Glyphs: Eco-Dome: Primus
+42719@@@Skydiving Glyphs: North Sufaad
+42727@@@K'aresh Glyph Hunter
+42729@@@Dangerous Prowlers of K'aresh
+42730@@@Jump, Jump, and Away!
+42731@@@Become a Hero. Become a Phasediver!
+42736@@@Ixthar's Legacy
+42737@@@Capstoned
+42738@@@We've All Got Swords!
+42739@@@Sojourner of K'aresh
+42740@@@Explore K'aresh
+42741@@@Treasures of K'aresh
+42742@@@Power of the Reshii
+42761@@@Remnants of a Shattered World
+42771@@@Archival Assault Stories
+42778@@@A Flicker in the Dark
+42779@@@A Flash in the Void
+42780@@@Eco-Dome Al'dani
+42781@@@Heroic: Eco-Dome Al'dani
+42782@@@Mythic: Eco-Dome Al'dani
+42783@@@Soul-Scribe (Normal Eco-Dome Al'dani)
+42784@@@Soul-Scribe (Heroic Eco-Dome Al'dani)
+42785@@@Soul-Scribe (Mythic Eco-Dome Al'dani)
+42799@@@Let Her Solo Me
+42800@@@Astral Attire
+42801@@@Journey's End (Season 3)
+42802@@@The War Within Season 3: Resilient Keystone 26
+42803@@@The War Within Season 3: Resilient Keystone 27
+42804@@@The War Within Season 3: Resilient Keystone 28
+42805@@@The War Within Season 3: Resilient Keystone 29
+42806@@@The War Within Season 3: Resilient Keystone 30
+60889@@@Unraveled and Persevering
+60890@@@Secrets of the K'areshi
+60915@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 2 [DNT]
+60916@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 3 [DNT]
+60917@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 4 [DNT]
+60918@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 5 [DNT]
+60919@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 6 [DNT]
+60920@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 7 [DNT]
+60921@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 8 [DNT]
+60925@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 9 [DNT]
+60926@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 10 [DNT]
+60927@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 11 [DNT]
+60928@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 12 [DNT]
+60929@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 13 [DNT]
+60930@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 14 [DNT]
+60931@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 15 [DNT]
+60932@@@Voidrazor Sanctuary clears
+11.2.0.61624
+41048@@@Astral Weapons of Conquest
+60933@@@With Flying Colors
+60934@@@With Flying Colors
+60939@@@Bringing Down the House
+60940@@@Vandals! In! Space!
+60941@@@<Hidden> 11.2 Raid Renown - Activated All Dead Drops
+11.2.0.61787
+41618@@@King's Ransom
+60975@@@Weathered Ethereal Crests earned
+60976@@@Carved Ethereal Crests earned
+60977@@@Runed Ethereal Crests earned
+60978@@@Gilded Ethereal Crests earned
+60993@@@<DNT> Plexus Sentinel defeated on Heroic
+60994@@@<DNT> Loom'ithar defeated on Heroic
+60995@@@<DNT> Soulbinder Naazindhri defeated on Heroic
+60996@@@<DNT> Forgeweaver Araz defeated on Heroic
+60997@@@<DNT> The Soul Hunters defeated on Heroic
+60998@@@<DNT> Fractillus defeated on Heroic
+60999@@@<DNT> Nexus-King Salhadaar defeated on Heroic
+61000@@@<DNT> Dimensius, the All-Devouring defeated on Heroic
+61001@@@<DNT> Plexus Sentinel defeated on Normal
+61002@@@<DNT> Loom'ithar defeated on Normal
+61003@@@<DNT> Soulbinder Naazindhri defeated on Normal
+61004@@@<DNT> Forgeweaver Araz defeated on Normal
+61005@@@<DNT> The Soul Hunters defeated on Normal
+61006@@@<DNT> Fractillus defeated on Normal
+61007@@@<DNT> Nexus-King Salhadaar defeated on Normal
+61008@@@<DNT> Dimensius, the All-Devouring defeated on Normal
+61009@@@<DNT> Plexus Sentinel defeated on Raid Finder
+61010@@@<DNT> Loom'ithar defeated on Raid Finder
+61011@@@<DNT> Soulbinder Naazindhri defeated on Raid Finder
+61012@@@<DNT> Forgeweaver Araz defeated on Raid Finder
+61013@@@<DNT> The Soul Hunters defeated on Raid Finder
+61014@@@<DNT> Fractillus defeated on Raid Finder
+61015@@@<DNT> Nexus-King Salhadaar defeated on Raid Finder
+61016@@@<DNT> Dimensius, the All-Devouring defeated on Raid Finder
+11.2.0.61871
+42174@@@Unbound Hero: The War Within Season Three
+61017@@@Phase-Lost-and-Found
+11.2.0.62049
+61092@@@Hard Mode: Tazavesh, the Veiled Market
+61093@@@Flawless Transaction
+11.2.5.62554
+42301@@@Timerunner
+42312@@@Artifact, Remixed
+42313@@@Remixing Time
+42314@@@Unlimited Power
+42315@@@Unlimited Power II
+42317@@@Campaign: Azsuna
+42318@@@Court of Farondis
+42319@@@Azsuna
+42320@@@Legion Remix Dungeoneer
+42321@@@Legion Remix Raids
+42502@@@Artifact, Remixed II
+42503@@@Artifact, Remixed III
+42504@@@Timerunner: Paladin
+42505@@@Unlimited Power III
+42506@@@Unlimited Power IV
+42507@@@Unlimited Power V
+42508@@@Unlimited Power VI
+42509@@@Unlimited Power VII
+42510@@@Unlimited Power VIII
+42511@@@Unlimited Power IX
+42512@@@Unlimited Power X
+42513@@@Unlimited Power XI
+42514@@@Unlimited Power XII
+42515@@@Tour Azsuna
+42516@@@Explore Azsuna
+42517@@@Hidden Treasures: Azsuna
+42518@@@Elusive Foes: Azsuna
+42519@@@Looking for Group: Azsuna
+42526@@@Calamir
+42527@@@Levantus
+42529@@@Humongris
+42530@@@Si'vash
+42531@@@Heroic: Emerald Nightmare
+42533@@@Looking for Group: Highmountain
+42534@@@Sotanathor
+42536@@@Nithogg
+42537@@@Insurrection
+42538@@@Mistress Alluradel
+42539@@@Broken Isles World Quests II
+42540@@@Looking for Group: The Broken Shore
+42541@@@Highmountain
+42542@@@Drugon the Frostblood
+42543@@@Heroic: The Nighthold
+42544@@@Mythic: The Nighthold
+42547@@@Highmountain Tribe
+42549@@@Argus
+42551@@@Looking for Group: Suramar
+42552@@@Campaign: Highmountain
+42553@@@Raid Finder: The Nighthold
+42554@@@Raid Finder: Antorus the Burning Throne
+42555@@@Broken Isles World Quests IV
+42558@@@Raid Finder: Trial of Valor
+42559@@@Ana-Mouz
+42564@@@Tour Suramar
+42565@@@Bringing Order to the Isles
+42567@@@Tour Argus
+42570@@@Broken Isles World Quests III
+42574@@@Matron Folnuna
+42576@@@Mythic: Tomb of Sargeras
+42578@@@Looking for Group: Stormheim
+42581@@@Inquisitor Meto
+42582@@@Stormheim
+42583@@@Mythic: Antorus the Burning Throne
+42586@@@Campaign: Suramar
+42590@@@Tour Stormheim
+42593@@@Pillars of Creation
+42594@@@Tour Val'Sharah
+42596@@@Campaign: Stormheim
+42603@@@Raid Finder: Emerald Nightmare
+42604@@@Occularus
+42605@@@Suramar
+42610@@@The Soultakers
+42612@@@You Are Now Prepared!
+42614@@@Flotsam
+42615@@@Timeworn Keystone Apprentice
+42616@@@Pit Lord Vilemus
+42617@@@Campaign: Val'Sharah
+42618@@@Looking for Group: Argus
+42619@@@Dreamweavers
+42624@@@Broken Isles World Quests I
+42627@@@Argussian Reach
+42628@@@The Nightfallen
+42629@@@Malificus
+42630@@@Val'Sharah
+42636@@@Mythic: Trial of Valor
+42637@@@Na'zak the Fiend
+42639@@@Heroic: Trial of Valor
+42642@@@Tour Highmountain
+42643@@@Brutallus
+42647@@@Breaching the Tomb
+42649@@@Raid Finder: Tomb of Sargeras
+42651@@@Mythic: Emerald Nightmare
+42655@@@The Armies of Legionfall
+42658@@@Valarjar
+42659@@@Shar'thos
+42661@@@Heroic: Tomb of Sargeras
+42662@@@Apocron
+42663@@@Looking for Group: Val'Sharah
+42664@@@Heroic: Antorus the Burning Throne
+42666@@@The Broken Shore
+42669@@@Withered J'im
+42672@@@Defending the Broken Isles II
+42673@@@Defending the Broken Isles I
+42674@@@Broken Isles World Quests V
+42675@@@Defending the Broken Isles III
+42676@@@Buddy System X
+42684@@@Timerunner: Warrior
+42685@@@Timerunner: Death Knight
+42686@@@Timerunner: Shaman
+42687@@@Timerunner: Hunter
+42688@@@Timeworn Keystone Adept
+42689@@@Timeworn Keystone Master
+42690@@@Timeworn Keystone Hero
+42691@@@Timeworn Keystone Enthusiast
+42692@@@Broken Isles Dungeoneer
+42693@@@Breaking the Legion I
+42694@@@Breaking the Legion II
+42695@@@Breaking the Legion III
+42696@@@Greater Invasion Points I
+42697@@@Greater Invasion Points II
+42698@@@Greater Invasion Points III
+42699@@@You Were Not Prepared!
+42807@@@Cloudy With a Chance of Infernals
+60803@@@Explore Highmountain
+60804@@@Elusive Foes: Highmountain
+60805@@@Hidden Treasures: Highmountain
+60806@@@Explore Stormheim
+60807@@@Elusive Foes: Stormheim
+60808@@@Hidden Treasures: Stormheim
+60809@@@Explore Val'sharah
+60810@@@Elusive Foes: Val'sharah
+60811@@@Hidden Treasures: Val'sharah
+60812@@@Explore Suramar
+60813@@@Elusive Foes: Suramar
+60814@@@Hidden Treasures: Suramar
+60815@@@Explore Broken Shore
+60816@@@Hidden Treasures: Argus
+60817@@@Explore Argus
+60818@@@Elusive Foes: Argus
+60819@@@Eye of Azshara
+60820@@@Heroic: Eye of Azshara
+60821@@@Mythic: Eye of Azshara
+60822@@@Vault of the Wardens
+60823@@@Heroic: Vault of the Wardens
+60824@@@Mythic: Vault of the Wardens
+60825@@@Neltharion's Lair
+60826@@@Heroic: Neltharion's Lair
+60827@@@Mythic: Neltharion's Lair
+60828@@@Maw of Souls
+60829@@@Heroic: Maw of Souls
+60830@@@Mythic: Maw of Souls
+60831@@@Halls of Valor
+60832@@@Heroic: Halls of Valor
+60833@@@Mythic: Halls of Valor
+60834@@@Black Rook Hold
+60835@@@Heroic: Black Rook Hold
+60836@@@Mythic: Black Rook Hold
+60837@@@Darkheart Thicket
+60838@@@Heroic: Darkheart Thicket
+60839@@@Mythic: Darkheart Thicket
+60840@@@The Arcway
+60841@@@Heroic: The Arcway
+60842@@@Mythic: The Arcway
+60843@@@Court of Stars
+60844@@@Heroic: Court of Stars
+60845@@@Mythic: Court of Stars
+60846@@@Assault on Violet Hold
+60847@@@Heroic: Assault on Violet Hold
+60848@@@Mythic: Assault on Violet Hold
+60849@@@Cathedral of Eternal Night
+60850@@@Heroic: Cathedral of Eternal Night
+60851@@@Mythic: Cathedral of Eternal Night
+60852@@@Heroic: Seat of the Triumvirate
+60853@@@Mythic: Seat of the Triumvirate
+60854@@@Heroic: Return to Karazhan
+60855@@@Mythic: Return to Karazhan
+60856@@@Darkbough
+60857@@@Tormented Guardians
+60858@@@Rift of Aln
+60859@@@The Emerald Nightmare
+60860@@@Trial of Valor
+60861@@@Arcing Aqueducts
+60862@@@Royal Athenaeum
+60863@@@Nightspire
+60864@@@Betrayer's Rise
+60865@@@The Nighthold
+60866@@@The Gates of Hell
+60867@@@Wailing Halls
+60868@@@Chamber of the Avatar
+60869@@@Deceiver's Fall
+60870@@@Tomb of Sargeras
+60871@@@Light's Breach
+60872@@@Forbidden Descent
+60873@@@Hope's End
+60874@@@Seat of the Pantheon
+60875@@@Antorus, the Burning Throne
+60935@@@Tenured in the Timeways IV
+60936@@@Empowered enemies killed in Heroic World Tier
+60937@@@Deaths in Heroic World Tier
+60938@@@Demons slain
+60959@@@Tenured in the Timeways I
+60960@@@Tenured in the Timeways II
+60961@@@Tenured in the Timeways III
+60993@@@<DNT> Plexus Sentinel defeated on Heroic (Manaforge Omega)
+60994@@@<DNT> Loom'ithar defeated on Heroic (Manaforge Omega)
+60995@@@<DNT> Soulbinder Naazindhri defeated on Heroic (Manaforge Omega)
+60996@@@<DNT> Forgeweaver Araz defeated on Heroic (Manaforge Omega)
+60997@@@<DNT> The Soul Hunters defeated on Heroic (Manaforge Omega)
+60998@@@<DNT> Fractillus defeated on Heroic (Manaforge Omega)
+60999@@@<DNT> Nexus-King Salhadaar defeated on Heroic (Manaforge Omega)
+61000@@@<DNT> Dimensius, the All-Devouring defeated on Heroic (Manaforge Omega)
+61001@@@<DNT> Plexus Sentinel defeated on Normal (Manaforge Omega)
+61002@@@<DNT> Loom'ithar defeated on Normal (Manaforge Omega)
+61003@@@<DNT> Soulbinder Naazindhri defeated on Normal (Manaforge Omega)
+61004@@@<DNT> Forgeweaver Araz defeated on Normal (Manaforge Omega)
+61005@@@<DNT> The Soul Hunters defeated on Normal (Manaforge Omega)
+61006@@@<DNT> Fractillus defeated on Normal (Manaforge Omega)
+61007@@@<DNT> Nexus-King Salhadaar defeated on Normal (Manaforge Omega)
+61008@@@<DNT> Dimensius, the All-Devouring defeated on Normal (Manaforge Omega)
+61009@@@<DNT> Plexus Sentinel defeated on Raid Finder (Manaforge Omega)
+61010@@@<DNT> Loom'ithar defeated on Raid Finder (Manaforge Omega)
+61011@@@<DNT> Soulbinder Naazindhri defeated on Raid Finder (Manaforge Omega)
+61012@@@<DNT> Forgeweaver Araz defeated on Raid Finder (Manaforge Omega)
+61013@@@<DNT> The Soul Hunters defeated on Raid Finder (Manaforge Omega)
+61014@@@<DNT> Fractillus defeated on Raid Finder (Manaforge Omega)
+61015@@@<DNT> Nexus-King Salhadaar defeated on Raid Finder (Manaforge Omega)
+61016@@@<DNT> Dimensius, the All-Devouring defeated on Raid Finder (Manaforge Omega)
+61024@@@The Deathless Champion
+61025@@@The Deathless Marauder
+61026@@@The Deathless Wanderer
+61027@@@The Deathless Magus
+61053@@@Legionslayer III
+61054@@@Heroic Broken Isles World Quests III
+61055@@@Power of the Obelisks III
+61056@@@Heroic Broken Isles World Quests II
+61057@@@Heroic Broken Isles World Quests I
+61058@@@Legionslayer II
+61059@@@Legionslayer I
+61060@@@Power of the Obelisks II
+61061@@@Power of the Obelisks I
+61062@@@<DNT> Season 3 Midseason - Eco-Dome - Timed +12
+61063@@@<DNT> Season 3 Midseason - Ara-Kara - Timed +12
+61064@@@<DNT> Season 3 Midseason - Dawnbreaker - Timed +12
+61065@@@<DNT> Season 3 Midseason - Priory - Timed +12
+61066@@@<DNT> Season 3 Midseason - Floodgate - Timed +12
+61067@@@<DNT> Season 3 Midseason - Tazavesh: Streets - Timed +12
+61068@@@<DNT> Season 3 Midseason - Tazavesh: Gambit - Timed +12
+61069@@@<DNT> Season 3 Midseason - Halls of Atonement - Timed +12
+61070@@@Heroic Broken Isles World Quests IV
+61071@@@Legionslayer IV
+61072@@@Power of the Obelisks IV
+61073@@@Heroic Legion Remix Dungeoneer
+61074@@@Mythic Legion Remix Dungeoneer
+61075@@@Heroic Legion Remix Raider
+61076@@@Broken Isles World Bosses
+61077@@@Argus Invasion Point Bosses
+61078@@@Mythic Legion Remix Raids
+61079@@@Heroic Legion Remix Raids
+61080@@@Broken Shore World Bosses
+61084@@@Timerunner: Rogue
+61085@@@Timerunner: Monk
+61086@@@Timerunner: Druid
+61087@@@Timerunner: Demon Hunter
+61088@@@Timerunner: Priest
+61089@@@Timerunner: Mage
+61090@@@Timerunner: Warlock
+61103@@@Sojourner of Azsuna
+61104@@@Sojourner of Highmountain
+61105@@@Sojourner of Stormheim
+61106@@@Sojourner of Val'Sharah
+61107@@@Sojourner of Suramar
+61108@@@Lorerunner of Azsuna
+61109@@@Lorerunner of Highmountain
+61110@@@Lorerunner of Stormheim
+61111@@@Lorerunner of Val'Sharah
+61112@@@Lorerunner of Suramar
+61113@@@Legion Dungeons: Threats of the Isle
+61114@@@Legion Dungeons: Power of the Ancients
+61115@@@Legion Dungeons: Might of the Legion
+61174@@@Building a Heroic Army
+61218@@@The Wardens
+61323@@@Legionslayer V
+61324@@@<Hidden>[DNT] Jewelry Unlocked
+61325@@@<Hidden>[DNT] Jewelry Equipped
+61337@@@To Fel and Back
+61338@@@Bronze gained across Warband
+61342@@@Buddy System IX
+61343@@@Hotfix 99733 Tracking

@@ -8,10 +8,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
-				-- q(QUEST, {	-- NAME
-					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
-				-- }),
+			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
+				--[[
+				q(QUEST, {	-- NAME
+					["coord"] = { XX, YY, THE_AZURE_SPAN },
+				}),
+				]]--
 				petbattle(q(74836, {	-- A New Vocation
 					["coord"] = { 19.52, 24.61, THE_AZURE_SPAN },
 					["timeline"] = { ADDED_10_0_7 },
@@ -36,14 +38,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(70720, {	-- Can't Have These
 					["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(199704),	-- Artifact Fragment (QI!)
 						i(199692),	-- Artifact Locator (QI!)
 					},
 				}),
 				q(70787, {	-- Caught In a Dusk Storm
 					["coord"] = { 27.3, 45.7, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(199917),	-- Dragon Bone Fragment (QI!)
 					},
 				}),
@@ -65,26 +67,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				q(70612, {	-- Feed Three-Falls
 					["coord"] = { 17.8, 27.6, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(194030),	-- Moose Flank (QI!)
 						i(193219),	-- Vorquin Meat (QI!)
 					},
 				}),
 				q(70152, {	-- Fishing Frenzy!
 					["coord"] = { 70.8, 35.3, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(200530),	-- Sweet Steamed Meat (QI!)
 					},
 				}),
 				q(72022, {	-- Fishing Frenzy!
 					["coord"] = { 58.7, 34.5, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(200756),	-- Frozen Steak (QI!)
 					},
 				}),
 				q(70064, {	-- For Imbu!
 					["coord"] = { 58.4, 66.4, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(199646),	-- Imbu Tuskarr Bandages (QI!)
 					},
 				}),
@@ -105,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(70622, {	-- Resupply Three-Falls
 					["coord"] = { 20.1, 27.8, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(199178),	-- Bronze Horn Flower (QI!)
 						i(199176),	-- Thick Bear Fur (QI!)
 						i(199180),	-- Dragon's Blood Berry (QI!)

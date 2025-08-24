@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(MALDRAXXUS, {
 		n(FACTIONS, {
-			faction(FACTION_THE_UNDYING_ARMY, {
-				ach(14336),	-- The Undying Army
-			}),
+			faction(FACTION_THE_UNDYING_ARMY),
 		}),
 	}),
 })));

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				4535,	-- Ghostcap Menace (PET!)
 				4522,	-- Troglofrog (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(3525, {	-- Abyssal Lurker (PET!)
 					["description"] = "Rare spawn in the backline.",
 					--["coord"] = { X, Y, HALLOWFALL },
@@ -71,4 +71,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 		})),
 	}),
-})));
+}));

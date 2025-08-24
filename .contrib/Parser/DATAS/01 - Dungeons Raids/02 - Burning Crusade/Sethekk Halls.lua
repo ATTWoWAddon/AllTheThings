@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(252, {	-- Sethekk Halls
+	inst(252, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Sethekk Halls
 		["lore"] = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3791,	-- Sethekk Halls
@@ -16,8 +16,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10097, {	-- Brother Against Brother
-					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
+					["qg"] = 18933,	-- Isfar
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
@@ -35,8 +35,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29605, {	-- Brother Against Brother
-					["qg"] = 54840,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
+					["qg"] = 54840,	-- Isfar
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
@@ -56,8 +56,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(65, 65, 15),
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(11011, {	-- Eternal Vigilance
-					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 11001,	-- Vanquish the Raven God
+					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
@@ -68,8 +68,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 				q(29607, {	-- Eyes of Desire
-					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
+					["qg"] = 54847,	-- Dealer Vijaad
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
@@ -80,8 +80,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10098, {	-- Terokk's Legacy
-					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
+					["qg"] = 18933,	-- Isfar
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
 					["timeline"] = { REMOVED_4_3_0 },
 					["cost"] = {
@@ -123,8 +123,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(11001, {	-- Vanquish the Raven God
-					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 10994,	-- Chasing the Moonstone
+					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
 					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
@@ -200,11 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(543, {	-- Talon King Ikiss
 					["creatureID"] = 18473,
 					["groups"] = {
-						ach(653, {	-- Sethekk Halls
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							-- #endif
-						}),
+						ach(653),	-- Sethekk Halls
 						i(27986),	-- Crow Wing Reaper
 						-- #if AFTER 7.3.5
 						i(29355),	-- Terokk's Shadowstaff (7.3.5 - Used to be only Heroic Mode)
@@ -231,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["description"] = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
@@ -308,9 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(543, {	-- Talon King Ikiss
 						["creatureID"] = 18473,
 						["groups"] = {
-							ach(674, {	-- Heroic: Sethekk Halls
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(674),	-- Heroic: Sethekk Halls
 							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -338,10 +332,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							}),
 						},
 					}),
-				}
+				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

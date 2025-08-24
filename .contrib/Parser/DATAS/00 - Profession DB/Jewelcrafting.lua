@@ -2,13 +2,33 @@ local i = GetRecipeHelperForProfession(JEWELCRAFTING);
 
 -- Everything in the file currently is representative of live Retail data, so let's avoid contaminating
 -- Classic pre-CATA where the Great JC Recipe Replacement took place
--- #IF BEFORE CATA
+-- #if BEFORE CATA
 if true then return end
--- #ENDIF
+-- #endif
+
+-- #if ANYCLASSIC
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+--- TRAINER ---
+i(0,1216321);	-- Bloodthirsty Amberjewel Pendant
+i(0,1216323);	-- Bloodthirsty Sapphire Ring
+i(0,1216328);	-- Bloodthirsty Amberjewel Band
+i(0,1216329);	-- Bloodthirsty Ruby Signet
+i(0,1216330);	-- Bloodthirsty Sapphire Necklace
+i(0,1216331);	-- Bloodthirsty Ruby Choker
+-- #endif
 
 -----------------
 -- PATCH 2.0.1 --
 -----------------
+--- TRAINER ---
+i(0, 25229);	-- Jewelcrafting (Apprentice)
+i(0, 25230);	-- Jewelcrafting (Journeyman)
+i(0, 28894);	-- Jewelcrafting (Expert)
+i(0, 28895);	-- Jewelcrafting (Artisan)
+i(0, 28895);	-- Jewelcrafting (Master)
+--- ITEM ---
 i(20854, 25339);	-- Design: Amulet of the Moon (Guessed via Filter Recipe with SpellID)
 i(20855, 25323);	-- Design: Wicked Moonstone Ring (Guessed via Filter Recipe with SpellID)
 i(20856, 25320);	-- Design: Heavy Golden Necklace of Battle (Guessed via Filter Recipe with SpellID)
@@ -151,9 +171,9 @@ i(32291, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with Spel
 i(32292, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
 i(32293, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with SpellID)
 i(32295, 39724);	-- Design: Mystic Lionseye (Guessed via Filter Recipe with SpellID)
--- #IF BEFORE MOP
+-- #if BEFORE MOP
 i(32296, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
--- #ENDIF
+-- #endif
 i(32297, 39727);	-- Design: Sovereign Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
 i(32298, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
 i(32299, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
@@ -270,6 +290,9 @@ i(37504, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Duplicate 
 -----------------
 -- PATCH 3.0.2 --
 -----------------
+--- TRAINER ---
+i(0, 51311);	-- Jewelcrafting (Grand Master)
+--- ITEM ---
 i(41559, 53857);	-- Design: Mystic Sun Crystal (Guessed via Filter Recipe with SpellID)
 i(41560, 53943);	-- Design: Stormy Chalcedony (Guessed via Filter Recipe with SpellID)
 i(41561, 53885);	-- Design: Reckless Huge Citrine (Guessed via Filter Recipe with SpellID)
@@ -484,8 +507,145 @@ i(47023, 66584);	-- Design: Deft Ametrine
 i(49112, 68253);	-- Design: Nightmare Tear
 
 -----------------
+-- PATCH 4.0.1 --
+-----------------
+--- NYI ---
+i(0,73233);	-- Mystic Alicite
+i(0,73259);	-- Resolute Hessonite
+
+-----------------
 -- PATCH 4.0.3 --
 -----------------
+--- TRAINER ---
+i(0,73318)	-- Jewelcrafting (Illustrious Grand Master)
+i(0,73222);	-- Bold Carnelian
+i(0,73223);	-- Delicate Carnelian
+i(0,73225);	-- Brilliant Carnelian
+i(0,73226);	-- Precise Carnelian
+i(0,73227);	-- Solid Zephyrite
+i(0,73228);	-- Sparkling Zephyrite
+i(0,73230);	-- Rigid Zephyrite
+i(0,73232);	-- Smooth Alicite
+i(0,73234);	-- Quick Alicite
+i(0,73239);	-- Fractured Alicite
+i(0,73240);	-- Sovereign Nightstone
+i(0,73241);	-- Shifting Nightstone
+i(0,73243);	-- Timeless Nightstone
+i(0,73246);	-- Etched Nightstone
+i(0,73247);	-- Glinting Nightstone
+i(0,73249);	-- Veiled Nightstone
+i(0,73250);	-- Accurate Nightstone
+i(0,73265);	-- Deft Hessonite
+i(0,73267);	-- Skillful Hessonite
+i(0,73268);	-- Adept Hessonite
+i(0,73270);	-- Artful Hessonite
+i(0,73274);	-- Jagged Jasper
+i(0,73279);	-- Puissant Jasper
+i(0,73281);	-- Sensey's Jasper
+i(0,73478);	-- Fire Prism
+i(0,73494);	-- Jasper Ring
+i(0,73495);	-- Hessonite Band
+i(0,73496);	-- Alicite Pendant
+i(0,73497);	-- Nightstone Choker
+i(0,73620);	-- Carnelian Spikes
+i(0,73621);	-- The Perforator
+i(0,73622);	-- Stardust
+i(0,99539);	-- Vicious Sapphire Ring
+i(0,99540);	-- Vicious Amberjewel Band
+i(0,99541);	-- Vicious Ruby Signet
+i(0,99542);	-- Vicious Sapphire Necklace
+i(0,99543);	-- Vicious Amberjewel Pendant
+i(0,99544);	-- Vicious Ruby Choker
+--- ITEM ---
+i(52362, 73335);	-- Design: Bold Inferno Ruby
+i(52380, 73336);	-- Design: Delicate Inferno Ruby
+i(52381, 73396);	-- Design: Bold Chimera's Eye
+i(52384, 73337);	-- Design: Flashing Inferno Ruby
+i(52387, 73338);	-- Design: Brilliant Inferno Ruby
+i(52389, 73339);	-- Design: Precise Inferno Ruby
+i(52390, 73340);	-- Design: Solid Ocean Sapphire
+i(52391, 73341);	-- Design: Sparkling Ocean Sapphire
+i(52392, 73343);	-- Design: Stormy Ocean Sapphire
+i(52393, 73344);	-- Design: Rigid Ocean Sapphire
+i(52394, 73345);	-- Design: Subtle Amberjewel
+i(52395, 73346);	-- Design: Smooth Amberjewel
+i(52396, 73347);	-- Design: Mystic Amberjewel
+i(52397, 73348);	-- Design: Quick Amberjewel
+i(52398, 73349);	-- Design: Fractured Amberjewel
+i(52399, 73350);	-- Design: Sovereign Demonseye
+i(52400, 73351);	-- Design: Shifting Demonseye
+i(52401, 73352);	-- Design: Defender's Demonseye
+i(52402, 73353);	-- Design: Timeless Demonseye
+i(52403, 73354);	-- Design: Guardian's Demonseye
+i(52404, 73355);	-- Design: Purified Demonseye
+i(52405, 73356);	-- Design: Etched Demonseye
+i(52406, 73357);	-- Design: Glinting Demonseye
+i(52407, 73358);	-- Design: Retaliating Demonseye
+i(52408, 73359);	-- Design: Veiled Demonseye
+i(52409, 73360);	-- Design: Accurate Demonseye
+i(52410, 73361);	-- Design: Polished Ember Topaz
+i(52411, 73362);	-- Design: Resolute Ember Topaz
+i(52412, 73364);	-- Design: Inscribed Ember Topaz
+i(52413, 73365);	-- Design: Deadly Ember Topaz
+i(52414, 73366);	-- Design: Potent Ember Topaz
+i(52415, 73367);	-- Design: Fierce Ember Topaz
+i(52416, 73368);	-- Design: Deft Ember Topaz
+i(52417, 73369);	-- Design: Reckless Ember Topaz
+i(52418, 73370);	-- Design: Skillful Ember Topaz
+i(52419, 73371);	-- Design: Adept Ember Topaz
+i(52420, 73372);	-- Design: Fine Ember Topaz
+i(52421, 73373);	-- Design: Artful Ember Topaz
+i(52422, 73374);	-- Design: Keen Ember Topaz
+i(52423, 73375);	-- Design: Regal Dream Emerald
+i(52424, 73376);	-- Design: Nimble Dream Emerald
+i(52425, 73377);	-- Design: Jagged Dream Emerald
+i(52426, 73378);	-- Design: Piercing Dream Emerald
+i(52427, 73379);	-- Design: Steady Dream Emerald
+i(52428, 73380);	-- Design: Forceful Dream Emerald
+i(52429, 73381);	-- Design: Lightning Dream Emerald
+i(52430, 73382);	-- Design: Puissant Dream Emerald
+i(52431, 73383);	-- Design: Zen Dream Emerald
+i(52432, 73384);	-- Design: Sensei's Dream Emerald
+i(52433, 73464);	-- Design: Fleet Shadowspirit Diamond
+i(52434, 73465);	-- Design: Chaotic Shadowspirit Diamond
+i(52435, 73466);	-- Design: Bracing Shadowspirit Diamond
+i(52436, 73467);	-- Design: Eternal Shadowspirit Diamond
+i(52437, 73468);	-- Design: Austere Shadowspirit Diamond
+i(52438, 73469);	-- Design: Effulgent Shadowspirit Diamond
+i(52439, 73470);	-- Design: Ember Shadowspirit Diamond
+i(52440, 73471);	-- Design: Revitalizing Shadowspirit Diamond
+i(52441, 73472);	-- Design: Destructive Shadowspirit Diamond
+i(52442, 73473);	-- Design: Powerful Shadowspirit Diamond
+i(52443, 73474);	-- Design: Enigmatic Shadowspirit Diamond
+i(52444, 73475);	-- Design: Impassive Shadowspirit Diamond
+i(52445, 73476);	-- Design: Forlorn Shadowspirit Diamond
+i(52447, 73397);	-- Design: Delicate Chimera's Eye
+i(52448, 73398);	-- Design: Flashing Chimera's Eye
+i(52449, 73399);	-- Design: Brilliant Chimera's Eye
+i(52450, 73400);	-- Design: Precise Chimera's Eye
+i(52451, 73401);	-- Design: Solid Chimera's Eye
+i(52452, 73402);	-- Design: Sparkling Chimera's Eye
+i(52453, 73403);	-- Design: Stormy Chimera's Eye
+i(52454, 73404);	-- Design: Rigid Chimera's Eye
+i(52455, 73405);	-- Design: Subtle Chimera's Eye
+i(52456, 73406);	-- Design: Smooth Chimera's Eye
+i(52457, 73407);	-- Design: Mystic Chimera's Eye
+i(52458, 73408);	-- Design: Quick Chimera's Eye
+i(52459, 73409);	-- Design: Fractured Chimera's Eye
+i(52460, 73520);	-- Design: Elementium Destroyer's Ring
+i(52461, 73498);	-- Design: Band of Blades
+i(52462, 73502);	-- Design: Ring of Warring Elements
+i(52463, 73503);	-- Design: Elementium Moebius Band
+i(52464, 73521);	-- Design: Brazen Elementium Medallion
+i(52465, 73504);	-- Design: Entwined Elementium Choker
+i(52466, 73505);	-- Design: Eye of Many Deaths
+i(52467, 73506);	-- Design: Elementium Guardian
+i(68359, 95754);	-- Design: Willful Ember Topaz
+i(68360, 95755);	-- Design: Lucent Ember Topaz
+i(68361, 95756);	-- Design: Resplendent Ember Topaz
+i(68742, 96226);	-- Design: Vivid Dream Emerald
+i(69853, 98921);	-- Design: Punisher's Band
+
 i(52363, 73224);	-- Design: Flashing Carnelian (Guessed via Filter Recipe with SpellID)
 i(52364, 73229);	-- Design: Stormy Zephyrite (Guessed via Filter Recipe with SpellID)
 i(52365, 73231);	-- Design: Subtle Alicite (Guessed via Filter Recipe with SpellID)
@@ -620,12 +780,32 @@ i(83932, 121842);	-- Design: Sapphire Panther (Guessed via Filter Recipe with Sp
 -----------------
 i(90471, 131898);	-- Design: Sapphire Cub (Guessed via Filter Recipe with SpellID)
 i(90470, 131897);	-- Design: Jade Owl (Guessed via Filter Recipe with SpellID)
+--- TRAINER ---
+i(0, 122675);	-- Bold Serpent's Eye
+i(0, 122676);	-- Brilliant Serpent's Eye
+i(0, 122674);	-- Delicate Serpent's Eye
+i(0, 122685);	-- Flashing Serpent's Eye
+i(0, 122684);	-- Fractured Serpent's Eye
+i(0, 122683);	-- Precise Serpent's Eye
+i(0, 122682);	-- Quick Serpent's Eye
+i(0, 122681);	-- Rigid Serpent's Eye
+i(0, 122680);	-- Smooth Serpent's Eye
+i(0, 122678);	-- Solid Serpent's Eye
+i(0, 122677);	-- Sparkling Serpent's Eye
+i(0, 122679);	-- Subtle Serpent's Eye
 
 -----------------
 -- PATCH 5.2.0 --
 -----------------
 i(95470, 140050);	-- Design: Serpent's Heart (Guessed via Filter Recipe with SpellID)
 i(95471, 140060);	-- Design: Primal Diamond (Guessed via Filter Recipe with SpellID)
+--- TRAINER ---
+i(0, 136274);	-- Assassin's Serpent's Eye
+i(0, 136270);	-- Lucent Serpent's Eye
+i(0, 136275);	-- Mysterious Serpent's Eye
+i(0, 136269);	-- Resplendent Serpent's Eye
+i(0, 136273);	-- Tense Serpent's Eye
+i(0, 136272);	-- Willful Serpent's Eye
 
 -----------------
 -- PATCH 6.0.1 --
@@ -1222,9 +1402,11 @@ i(211589, 430056);	-- Draconic Combatant's Jeweled Signet
 -- PATCH 11.0.0 --
 ------------------
 --- NYI ---
-i(223083, 0);	-- Design: Elemental Focusing Lens
-i(223084, 0);	-- Design: Prismatic Null Stone
-i(225431, 0);	-- Design: Vicious Jeweler's Setting
+i(0, 435335);		-- Apply Socket
+i(0, 434019);		-- Recraft Equipment
+i(225431, 435336);	-- Design: Vicious Jeweler's Setting
+i(223083, 0);		-- Design: Elemental Focusing Lens
+i(223084, 0);		-- Design: Prismatic Null Stone
 
 ------------------
 -- PATCH 11.0.2 --
@@ -1298,3 +1480,9 @@ i(0, 435384);	-- Ring of Earthen Craftsmanship
 i(0, 434544);	-- Versatile Emerald
 i(0, 434548);	-- Versatile Onyx
 i(0, 434552);	-- Versatile Ruby
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+--- ITEM ---
+i(238922, 1226650);	-- Void-Crystal Panther

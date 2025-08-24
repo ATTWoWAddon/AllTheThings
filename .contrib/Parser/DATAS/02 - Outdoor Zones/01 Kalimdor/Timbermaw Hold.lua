@@ -88,21 +88,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				q(8469, {	-- Beads for Salfa
-					["qg"] = 11556,	-- Salfa
 					["sourceQuest"] = 8464,	-- Winterfall Activity
+					["qg"] = 11556,	-- Salfa
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
 				q(28338, {	-- Deadwood of the North
-					["qg"] = 15395,	-- Nafien
 					["sourceQuests"] = {
 						28392,	-- The Timbermaw Tribe
 						28373,	-- Timbermaw Hold
 					},
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -145,8 +145,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(28366, {	-- Disarming Bears
-					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -165,8 +165,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(8466, {	-- Feathers for Grazle
-					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["qg"] = 11554,	-- Grazle
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -175,11 +175,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 45,
 				}),
 				q(28395, {	-- Feathers for Nafien
-					["qg"] = 15395,	-- Nafien
 					["sourceQuests"] = {
 						28338,	-- Deadwood of the North
 						28366,	-- Disarming Bears
 					},
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
@@ -188,8 +188,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84777, {	-- Feathers for Nafien
-					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_1_15_3 },
@@ -199,8 +199,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(8467, {	-- Feathers for Nafien
-					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = {
@@ -215,12 +215,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 45,
 				}),
 				q(28523, {	-- More Beads for Salfa
-					["qg"] = 11556,	-- Salfa
 					["sourceQuest"] = 28522,	-- Winterfall Activity
+					["qg"] = 11556,	-- Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { ADDED_4_0_3 },
+					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["repeatable"] = true,
 				}),
 				q(6031, {	-- Runecloth
@@ -258,26 +258,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(8462, {	-- Speak to Nafien
-					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["qg"] = 11554,	-- Grazle
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
 				q(28521, {	-- Speak to Salfa
-					["qg"] = 15395,	-- Nafien
 					["sourceQuests"] = {
 						28338,	-- Deadwood of the North
 						28366,	-- Disarming Bears
 						28364,	-- The Chieftain's Key
 					},
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(8465, {	-- Speak to Salfa
-					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8461,	-- Deadwood of the North
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.8, 8.2, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 45,
 				},
 				q(28364, {	-- The Chieftain's Key
-					["qg"] = 47556,	-- Drizle
 					["sourceQuest"] = 28362,	-- Stupid Drizle!
+					["qg"] = 47556,	-- Drizle
 					["coord"] = { 60.5, 9.5, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -353,8 +353,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(8460, {	-- Timbermaw Ally
-					["qg"] = 11554,	-- Grazle
 					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
+					["qg"] = 11554,	-- Grazle
 					["coord"] = { 50.9, 85.0, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -377,16 +377,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28373, {	-- Timbermaw Hold
-					["qg"] = 48127,	-- Darla Drilldozer
 					["sourceQuest"] = 28368,	-- Fire in the Hole!
+					["qg"] = 48127,	-- Darla Drilldozer
 					["coord"] = { 56.3, 8.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28522, {	-- Winterfall Activity
-					["qg"] = 11556,	-- Salfa
 					["sourceQuest"] = 28521,	-- Speak to Salfa
+					["qg"] = 11556,	-- Salfa
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 21383, 10 }},	-- Winterfall Spirit Beads
@@ -434,12 +434,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(28768, {	-- Winterspring!
-					["qg"] = 15395,	-- Nafien
+					["description"] = "Only available above level 40.",
 					--["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
+					["qg"] = 15395,	-- Nafien
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
-					["description"] = "Only available above level 40.",
 				}),
 			}),
 			n(VENDORS, {
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
-							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 							-- EPIC CRAFTED ITEMS UPGRADES
 							applyclassicphase(SOD_PHASE_FOUR, i(227807, {	-- Dense Timbermaw Belt
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
 						},

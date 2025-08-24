@@ -1,0 +1,14 @@
+3.0.1.8622
+title(41),	-- Battlemaster %s \\ Infernal Gladiator %s
+3.1.0.9767
+title(53),	-- Crashin' Thrashin' %s \\ %s the Supreme
+title(55),	-- %s of the Emerald Dream
+title(59),	-- Predator %s \\ Stalker %s
+title(61),	-- Archmage %s
+title(62),	-- Battlelord %s \\ Warbringer %s
+title(78),	-- Combatant %s \\ %s of Quel'Thalas
+title(79),	-- Dread Gladiator %s \\ %s of Argus
+title(80),	-- Sinister Gladiator %s \\ %s of Khaz Modan
+title(96),	-- %s the Flawless Victor
+3.4.1.47245
+title(144),	-- Warbringer %s \\ Guardian of %s \\ %s, Survivor of the Firelord

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 135758,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(855),	-- Explore Moonglade
+				ach(855),	-- Explore Moonglade
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -47,6 +47,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.4, 45.6, MOONGLADE },
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
+					["coord"] = { 46.0, 60.6, MOONGLADE },
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 17,
+					["groups"] = {
+						q(31908, {	-- Elena Flutterfly
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -104,8 +120,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				},
 				q(5931, {	-- Back to Darnassus
-					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 5929,	-- Great Bear Spirit [A]
+					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARNASSUS },
@@ -114,8 +130,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(5932, {	-- Back to Thunder Bluff
-					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 5930,	-- Great Bear Spirit [H]
+					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
@@ -124,8 +140,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(6001, {	-- Body and Heart [A]
-					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuest"] = 5931,	-- Back to Darnassus
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
@@ -160,8 +176,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6002, {	-- Body and Heart [H]
-					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["sourceQuest"] = 5932,	-- Back to Thunder Bluff
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -269,12 +285,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(6121, {	-- Lessons Anew [A]
-					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call [Darnassus]
-						5924,   -- Heeding the Call [Stormwind City]
-						5925,   -- Heeding the Call [Teldrassil]
+						5924,	-- Heeding the Call [Stormwind City]
+						5925,	-- Heeding the Call [Teldrassil]
 					},
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -282,12 +298,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(6126, {	-- Lessons Anew [H]
-					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["sourceQuests"] = {
 						5926,	-- Heeding the Call [Thunder Bluff]
-						5927,   -- Heeding the Call [Orgrimmar]
-						5928,   -- Heeding the Call [Mulgore]
+						5927,	-- Heeding the Call [Orgrimmar]
+						5928,	-- Heeding the Call [Mulgore]
 					},
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -295,24 +311,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(5921, {	-- Moonglade [A]
-					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call [Darnassus]
-						5924,   -- Heeding the Call [Stormwind City]
-						5925,   -- Heeding the Call [Teldrassil]
+						5924,	-- Heeding the Call [Stormwind City]
+						5925,	-- Heeding the Call [Teldrassil]
 					},
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 				}),
 				q(5922, {	-- Moonglade [H]
-					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["sourceQuests"] = {
 						5926,	-- Heeding the Call [Thunder Bluff]
-						5927,   -- Heeding the Call [Orgrimmar]
-						5928,   -- Heeding the Call [Mulgore]
+						5927,	-- Heeding the Call [Orgrimmar]
+						5928,	-- Heeding the Call [Mulgore]
 					},
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -340,9 +356,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
+					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
 					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, MOONGLADE },
-					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
 					["timeline"] = { ADDED_7_2_5 },
 					["isYearly"] = true,
 					["groups"] = {
@@ -360,8 +376,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 70,
 				})),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10965, {	-- No Mere Dream
-					["qg"] = 22834,	-- Clintar Dreamwalker
 					["sourceQuest"] = 10964,	-- Waking the Sleeper
+					["qg"] = 22834,	-- Clintar Dreamwalker
 					["coord"] = { 75.5, 67.0, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
@@ -388,31 +404,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				},
 				q(6762, {	-- Rabine Saturna [A]
-					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["sourceQuest"] = 6761,	-- The New Frontier (2/2) [Darnassus]
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1123, {	-- Rabine Saturna [H]
-					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = {
 						1000,	-- The New Frontier [Thunder Bluff]
-						1004,   -- The New Frontier [Undercity]
-						1018,   -- The New Frontier [Orgrimmar]
+						1004,	-- The New Frontier [Undercity]
+						1018,	-- The New Frontier [Orgrimmar]
 					},
+					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10978, {	-- Return to Morthis Whisperwing
+					["sourceQuest"] = 10965,	-- No Mere Dream
 					["providers"] = {
 						{ "n", 22837 },	-- Dreamwarden Lurosa
 						{ "i", 32074 },	-- Relics of Aviana
 					},
-					["sourceQuest"] = 10965,	-- No Mere Dream
 					["coord"] = { 72.5, 63.3, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
@@ -420,8 +436,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 70,
 				})),
 				q(5526, {	-- Shards of the Felvine
-					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
+					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DIRE_MAUL },
@@ -443,8 +459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28343, {	-- The Breath of Cenarius
-					["qg"] = 12042,	-- Loganaar
 					["sourceQuest"] = 28289,	-- Moonglade Calls
+					["qg"] = 12042,	-- Loganaar
 					["coord"] = { 52.4, 40.4, MOONGLADE },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
@@ -452,7 +468,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/3 Elemental Gate closed
+							["provider"] = { "o", 207103 },	-- Elemental Gate
+						}),
+						objective(2, {	-- 0/1 Breath of Cenarius
 							["provider"] = { "i", 63469 },	-- Breath of Cenarius
+							["cr"] = 9024,	-- Pyromancer Loregrain
 						}),
 						i(65638, {	-- Headdress of the Green Circle
 							["timeline"] = { ADDED_4_0_3 },
@@ -463,86 +483,86 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1015, {	-- The New Frontier [Stormwind City]
-					["qg"] = 2198,	-- Crier Goodman
 					["altQuests"] = {
-						1019,   -- The New Frontier [Ironforge]
-						1047,   -- The New Frontier [Darnassus]
+						1019,	-- The New Frontier [Ironforge]
+						1047,	-- The New Frontier [Darnassus]
 					},
+					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1019, {	-- The New Frontier [Ironforge]
-					["qg"] = 10877,	-- Courier Hammerfall
 					["altQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1047,   -- The New Frontier [Darnassus]
+						1047,	-- The New Frontier [Darnassus]
 					},
+					["qg"] = 10877,	-- Courier Hammerfall
 					["coord"] = { 31.6, 67, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1047, {	-- The New Frontier (1/2) [Darnassus]
-					["qg"] = 10878,	-- Herald Moonstalker
 					["altQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1019,   -- The New Frontier [Ironforge]
+						1019,	-- The New Frontier [Ironforge]
 					},
+					["qg"] = 10878,	-- Herald Moonstalker
 					["coord"] = { 36.4, 39.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(6761, {	-- The New Frontier (2/2) [Darnassus]
-					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1019,   -- The New Frontier [Ironforge]
-						1047,   -- The New Frontier (1/2) [Darnassus]
+						1019,	-- The New Frontier [Ironforge]
+						1047,	-- The New Frontier (1/2) [Darnassus]
 					},
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1000, {	-- The New Frontier [Thunder Bluff]
-					["qg"] = 10881,	-- Bluff Runner Windstrider
 					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
-						1004,   -- The New Frontier [Undercity]
+						1004,	-- The New Frontier [Undercity]
 					},
+					["qg"] = 10881,	-- Bluff Runner Windstrider
 					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1004, {	-- The New Frontier [Undercity]
-					["qg"] = 10879,	-- Harbinger Balthazad
 					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
-						1000,   -- The New Frontier [Thunder Bluff]
+						1000,	-- The New Frontier [Thunder Bluff]
 					},
+					["qg"] = 10879,	-- Harbinger Balthazad
 					["coord"] = { 68.8, 48.4, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1018, {	-- The New Frontier [Orgrimmar]
-					["qg"] = 10880,	-- Warcaller Gorlach
 					["altQuests"] = {
-						1000,   -- The New Frontier [Thunder Bluff]
-						1004,   -- The New Frontier [Undercity]
+						1000,	-- The New Frontier [Thunder Bluff]
+						1004,	-- The New Frontier [Undercity]
 					},
+					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(6122, {	-- The Principal Source [A]
-					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6121,	-- Lessons Anew [A]
+					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
@@ -558,8 +578,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6127, {	-- The Principal Source [H]
-					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6121,	-- Lessons Anew [H]
+					["qg"] = 11802,	-- Dendrite Starblaze
 					["coord"] = { 56.2, 30.4, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -618,8 +638,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(272, {	-- Trial of the Sea Lion [A]
-					["qg"] = 11799,	-- Tajarri
 					["sourceQuest"] = 29,	-- Trial of the Lake [A]
+					["qg"] = 11799,	-- Tajarri
 					["coord"] = { 36.4, 40.2, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE, WESTFALL },
@@ -647,8 +667,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(30, {	-- Trial of the Sea Lion [H]
-					["qg"] = 11799,	-- Tajarri
 					["sourceQuest"] = 28,	-- Trial of the Lake [H]
+					["qg"] = 11799,	-- Tajarri
 					["coord"] = { 36.4, 40.2, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
@@ -676,8 +696,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6845, {	-- Uncovering Past Secrets
-					["qg"] = 11939,	-- Umber
 					["sourceQuest"] = 6844,	-- Umber, Archivist
+					["qg"] = 11939,	-- Umber
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
@@ -691,20 +711,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1185, {	-- Under the Chitin Was...
-					["qg"] = 11939,	-- Umber
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
+					["qg"] = 11939,	-- Umber
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 				}),
 				q(1124, {	-- Wasteland
-					["providers"] = {
-						{ "n", 11801 },	-- Rabine Saturna
-						{ "i", 17355 },	-- Rabine's Letter
-					},
 					["sourceQuests"] = {
 						1123,	-- Rabine Saturna [H]
 						6762,	-- Rabine Saturna [A]
+					},
+					["providers"] = {
+						{ "n", 11801 },	-- Rabine Saturna
+						{ "i", 17355 },	-- Rabine's Letter
 					},
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -724,13 +744,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(446188),	-- Fearmonger's Shoulderguards
 						recipe(446226),	-- Flask of Everlasting Nightmares
 						recipe(448085),	-- Flask of Restless Dreams
-						recipe(446193),	-- Fractured Mind Pauldrons
-						recipe(446194),	-- Mantle of Insanity
+						r(446193, {	-- Fractured Mind Pauldrons (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
+						r(446194, {	-- Mantle of Insanity (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
 						recipe(446192),	-- Membrane of Dark Neurosis
 						recipe(446183),	-- Paranoia Mantle
 						recipe(451706),	-- Screaming Chain Pauldrons
 						recipe(446189),	-- Shoulderpads of Obsession
-						recipe(446195),	-- Shoulderpads of the Deranged
+						r(446195, {	-- Shoulderpads of the Deranged (RECIPE!)
+							["requireSkill"] = TAILORING,
+						}),
 						recipe(446179),	-- Shoulderplates of Dread
 						recipe(446185),	-- Shrieking Spaulders
 						recipe(446236),	-- Void-Powered Invoker's Vambraces
@@ -745,25 +771,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
 					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["groups"] = {
-						i(14488, {	-- Pattern: Runecloth Boots
+						i(14488, {	-- Pattern: Runecloth Boots (RECIPE!)
 							["timeline"] = { REMOVED_2_0_1 },	-- Learned from trainer, recipe removed.
-							-- #if BEFORE 2.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
-						i(14472, {	-- Pattern: Runecloth Cloak
+						i(14472, {	-- Pattern: Runecloth Cloak (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
-							-- #if BEFORE 6.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
-						i(14469, {	-- Pattern: Runecloth Robe
+						i(14469, {	-- Pattern: Runecloth Robe (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
-							-- #if BEFORE 6.0.1
 							["isLimited"] = true
-							-- #endif
 						}),
 					},
 				}),
@@ -804,13 +824,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16224, {	-- Formula: Enchant Cloak - Superior Defense (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(16243, {	-- Formula: Runed Arcanite Rod
+						i(16243, {	-- Formula: Runed Arcanite Rod (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(136849, {	-- Nature's Beacon (TOY!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(14483, {	-- Pattern: Felcloth Pants
+						i(14483, {	-- Pattern: Felcloth Pants (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)

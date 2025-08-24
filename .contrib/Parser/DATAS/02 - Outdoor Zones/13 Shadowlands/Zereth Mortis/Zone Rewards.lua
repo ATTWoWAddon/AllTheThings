@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			i(190336, {	-- Thrumming Powerstone
 				["description"] = "Disenchant might give lattices.",
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(189153),	-- Unformed Lattice	-- no comments on Wowhead about any other Type dropped specifically?
 				},
 			}),

@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=".config/classic/03 - Wrath.config" config=".config/classic/Debug Mode.config"

@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		}),
 		ach(13020, {	-- Bow to Your Masters
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				crit(41497, {	-- Akunda respected
 					["coord"] = { 53.1, 91.5, VOLDUN },
 					["cr"] = 128152,	-- Akunda
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		}),
 		ach(11861, {	-- The Throne of Zuldazar
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				crit(41674, {	-- Among the People
 					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
 				}),
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				12479,	-- Zandalar Forever!
 				13466,	-- Tides of Vengeance (H)
 			}},
-			["g"] = {
+			["groups"] = {
 				h(i(168055)),	-- Bloodflank Charger (MOUNT!)
 			},
 		}),

@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(646, {	-- Forsaken Forward Command, Gilneas
+					["cr"] = 45479,	-- Bat Handler Doomair <Flight Master>
 					["altQuests"] = { 27438 },	-- The Great Escape
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
 					["description"] = "Becomes available during |cFFFFD700To Forsaken Forward Command|r and is no longer available after |cFFFFD700The Great Escape|r.",
@@ -30,8 +31,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(27406, {	-- A Man Named Godfrey
-					["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 					["sourceQuest"] = 27405,	-- Fall Back!
+					["qg"] = 45312,	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 					["coord"] = { 72.9, 30.1, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -42,24 +43,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27349, {	-- Break in Communications: Dreadwatch Outpost
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuests"] = {
 						27342,	-- In Time, All Will Be Revealed
 						27333,	-- Losing Ground
 						27345,	-- The F.C.D.
 					},
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27350, {	-- Break in Communications: Rutsak's Guard
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27349,	-- Break in Communications: Dreadwatch Outpost
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27405, {	-- Fall Back!
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27401,	-- What Tomorrow Brings
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -69,8 +70,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27342, {	-- In Time, All Will Be Revealed
-					["qg"] = 45312,	-- Deathstalker Commander Belmont
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
+					["qg"] = 45312,	-- Deathstalker Commander Belmont
 					["coord"] = { 57.4, 18.9, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -90,11 +91,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27322, {	-- Korok's Second Head
-					["provider"] = { "i", 60956 },	-- Korok's Second Head
-					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
 					["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
-					["crs"] = { 45301, 46657 },	-- Korok the Colossus
+					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
+					["provider"] = { "i", 60956 },	-- Korok's Second Head
 					["races"] = HORDE_ONLY,
+					["crs"] = { 45301, 46657 },	-- Korok the Colossus
 					["groups"] = {
 						i(62867),	-- Belt of the Second Head
 						i(62866),	-- Cromush's Cloak
@@ -102,8 +103,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27333, {	-- Losing Ground
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -113,8 +114,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27364, {	-- On Whose Orders?
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27350,	-- Break in Communications: Rutsak's Guard
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -126,8 +127,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27423, {	-- Resistance is Futile
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27405,	-- Fall Back!
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -144,8 +145,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27345, {	-- The F.C.D.
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuest"] = 27290,	-- To Forsaken Forward Command
+					["qg"] = 45315,	-- Forward Commander Onslaught
 					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -159,11 +160,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
-					["qg"] = 45312,	-- Deathstalker Commander Belmont
 					["sourceQuests"] = {
 						27406,	-- A Man Named Godfrey
 						27423,	-- Resistance is Futile
 					},
+					["qg"] = 45312,	-- Deathstalker Commander Belmont
 					["coord"] = { 79.7, 75.7, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -176,8 +177,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27360, {	-- Vengeance for Our Soldiers
-					["qg"] = 45389,	-- Captain Rutsak
 					["sourceQuest"] = 27350,	-- Break in Communication: Rutsak's Guard
+					["qg"] = 45389,	-- Captain Rutsak
 					["coord"] = { 65.6, 34.1, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -193,12 +194,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27401, {	-- What Tomorrow Brings
-					["qg"] = 45315,	-- Forward Commander Onslaught
 					["sourceQuests"] = {
 						27364,	-- On Whose Orders?
 						27360,	-- Vengeance for Our Soldiers
 					},
-					["coord"] = { 57.5, 18.2, SILVERPINE_FOREST },
+					["qg"] = 45315,	-- Forward Commander Onslaught
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -228,23 +229,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(78177, {	-- To Gilneas (A)
-					["qg"] = 214538,	-- Genn Greymane
 					["sourceQuest"] = 78596,	-- Summons to Lord Greymane
+					["qg"] = 214538,	-- Genn Greymane
 					["coord"] = { 35.7, 28.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(78178, {	-- To Gilneas (H)
-					["qg"] = 210965, -- Calia Menethil <The Pallid Lady>
 					["sourceQuest"] = 78597,	-- Clandestine Movements
+					["qg"] = 210965, -- Calia Menethil <The Pallid Lady>
 					["coord"] = { 43.5, 73.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 				}),
 				q(78180, {	-- A Crusade of Red
-					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuests"] = {
 						78177,	-- To Gilneas (A)
 						78178,	-- To Gilneas (H)
 					},
+					["qg"] = 210905,	-- Princess Tess Greymane
 					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/10 Members of the Scarlet Crusade slain
@@ -258,11 +259,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78181, {	-- Aderic's Retort
-					["qg"] = 210904,	-- Genn Greymane
 					["sourceQuests"] = {
 						78177,	-- To Gilneas (A)
 						78178,	-- To Gilneas (H)
 					},
+					["qg"] = 210904,	-- Genn Greymane
 					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/1 Consecrator Hennas slain
@@ -271,16 +272,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78182, {	-- Knee-High
-					["qg"] = 212187,	-- Genn Greymane
 					["sourceQuests"] = {
 						78180,	-- A Crusade of Red
 						78181,	-- Aderic's Retort
 					},
+					["qg"] = 212187,	-- Genn Greymane
 					["coord"] = { 49.6, 56.9, RUINS_OF_GILNEAS },
 				}),
 				q(78183, {	-- Scarlet Blood
-					["qg"] = 210964,	-- Lillian Voss
 					["sourceQuest"] = 78182,	-- Knee-High
+					["qg"] = 210964,	-- Lillian Voss
 					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/12 Scarlet forces slain
@@ -295,8 +296,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78184, {	-- Smokepowder and Mirrors
-					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuests"] = 78182,	-- Knee-High
+					["qg"] = 210905,	-- Princess Tess Greymane
 					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/8 Scarlet Explosives
@@ -309,16 +310,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78185, {	-- Hounds of War
-					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuests"] = {
 						78183,	-- Scarlet Blood
 						78184,	-- Smokepowder and Mirrors
 					},
+					["qg"] = 210905,	-- Princess Tess Greymane
 					-- ["coord"] = { 57, 53, RUINS_OF_GILNEAS },	-- Spawns with you.
 				}),
 				q(78186, {	-- Crushing the Crusade
-					["qg"] = 210964,	-- Lillian Voss
 					["sourceQuest"] = 78185,	-- Hounds of War
+					["qg"] = 210964,	-- Lillian Voss
 					["coord"] = { 55.8, 58.3, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/12 Scarlet elite slain
@@ -331,8 +332,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78187, {	-- Artillerist Arsonist
-					["qg"] = 213995,	-- Princess Tess Greymane
 					["sourceQuest"] = 78185,	-- Hounds of War
+					["qg"] = 213995,	-- Princess Tess Greymane
 					["coord"] = { 55.8, 58.7, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/6 Explosives set
@@ -341,11 +342,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78188, {	-- Righteous Fire, Righteous Fury
-					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuests"] = {
 						78186,	-- Crushing the Crusade
 						78187,	-- Artillerist Arsonist
 					},
+					["qg"] = 210905,	-- Princess Tess Greymane
 					["coord"] = { 59.4, 48.7, RUINS_OF_GILNEAS },
 					["groups"] = {
 						objective(1, {	-- 0/1 Inquisitor Fairbell slain
@@ -357,8 +358,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(78189, {	-- Beginning a New Dawn
-					["qg"] = 210904,	-- Genn Greymane
 					["sourceQuest"] = 78188,	-- Righteous Fire, Righteous Fury
+					["qg"] = 210904,	-- Genn Greymane
 					["coord"] = { 58.7, 47.8, RUINS_OF_GILNEAS },
 					["groups"] = {
 						i(211873),	-- Gilnean Prowler (MOUNT!)
@@ -372,14 +373,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(79137, {	-- The Wall between Us
-					["qg"] = 210965,	-- Calia Menethil <The Pallid Lady>
 					["sourceQuest"] = 78189,	-- Beginning a New Dawn
+					["qg"] = 210965,	-- Calia Menethil <The Pallid Lady>
 					["coord"] = { 58.8, 48.4, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(78190, {	-- What We Left Behind
-					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuest"] = 78189,	-- Beginning a New Dawn
+					["qg"] = 210905,	-- Princess Tess Greymane
 					["coord"] = { 58.8, 47.7, RUINS_OF_GILNEAS },
 					["races"] = ALLIANCE_ONLY,
 				}),

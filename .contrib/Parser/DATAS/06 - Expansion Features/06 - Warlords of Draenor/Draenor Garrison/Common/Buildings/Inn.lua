@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures,
 						ach(9703, {		-- Stay Awhile and Listen
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["sym"] = {{ "achievement_criteria" }},
-							["g"] = {
+							["groups"] = {
 								a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
 								h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
 							},
@@ -529,48 +529,20 @@ root(ROOTS.ExpansionFeatures,
 					n(QUESTS, {
 						i(119036, {	-- Box of Storied Treasures [4]
 							["description"] = "Commonly rewarded from quests provided from the Inn.",
-							["sym"] = {
-								{"sub", "common_wod_dungeon_drop", 1, HANDS},
-								{"sub", "common_wod_dungeon_drop", 1, WAIST},
-								{"sub", "common_wod_dungeon_drop", 1, LEGS},
-								{"sub", "common_wod_dungeon_drop", 1, CHEST},
-								{"sub", "common_wod_dungeon_drop", 1, FEET},
-								{"sub", "common_wod_dungeon_drop", 1, HEAD},
-								{"sub", "common_wod_dungeon_drop", 1, WRIST},
-								{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-								{"sub", "common_wod_dungeon_drop", 1, BACK},
-								{"sub", "common_wod_dungeon_drop", 1, NECK},
-								{"sub", "common_wod_dungeon_drop", 1, FINGER},
-								{"merge"},	-- Merge all sub results for processing
-								{"pop"},	-- Get the raw Items from each slot header
-								{"is", "itemID"},	-- Only Items (discards Warforged headers)
-							},
+							["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
+								HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 						}),
 						i(119037, {	-- Supply of Storied Rarities [16]
 							["description"] = "Commonly rewarded from quests provided from the Inn.",
-							["sym"] = {
-								{"sub", "common_wod_dungeon_drop", 2, HANDS},
-								{"sub", "common_wod_dungeon_drop", 2, WAIST},
-								{"sub", "common_wod_dungeon_drop", 2, LEGS},
-								{"sub", "common_wod_dungeon_drop", 2, CHEST},
-								{"sub", "common_wod_dungeon_drop", 2, FEET},
-								{"sub", "common_wod_dungeon_drop", 2, HEAD},
-								{"sub", "common_wod_dungeon_drop", 2, WRIST},
-								{"sub", "common_wod_dungeon_drop", 2, SHOULDER},
-								{"sub", "common_wod_dungeon_drop", 2, BACK},
-								{"sub", "common_wod_dungeon_drop", 2, NECK},
-								{"sub", "common_wod_dungeon_drop", 2, FINGER},
-								{"merge"},	-- Merge all sub results for processing
-								{"pop"},	-- Get the raw Items from each slot header
-								{"is", "itemID"},	-- Only Items (discards Warforged headers)
-							},
+							["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC,
+								HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 						}),
 						q(37228, {	-- A Fruitful Proposition
 							["sourceQuest"] = 37152,	-- Cro's Revenge
 							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(118534),	-- Giant Ogre Head (QI!)
 								i(119037),	-- Supply of Storied Rarities
 							},
@@ -580,7 +552,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237469, {	-- Shed Proto-Dragon Claw
 									i(118624),	-- Shed Proto-Dragon Claw (QI!)
 								}),
@@ -592,7 +564,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["maps"] = { 601, 602 },	-- Skyreach
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237467, {	-- Pristine Plumage
 									i(118622),	-- Pristine Plumage (QI!)
 								}),
@@ -604,7 +576,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88007 },	-- Gamon
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237475, {	-- Iron Limbcleaver
 									i(118644),	-- Iron Limbcleaver (QI!)
 								}),
@@ -614,7 +586,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37167, {	-- And No Maces!
 							["provider"] = { "n", 88006 },	-- Lonika Stillblade
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
-							["g"] = {
+							["groups"] = {
 								o(237474, {	-- Huge Crate of Weapons
 									i(118643),	-- Huge Crate of Weapons (QI!)
 								}),
@@ -650,7 +622,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37159, {	-- Aviana's Request
 							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["maps"] = { 601, 602 },	-- Skyreach
-							["g"] = {
+							["groups"] = {
 								o(237467, {	-- Pristine Plumage
 									i(118622),	-- Pristine Plumage (QI!)
 								}),
@@ -662,7 +634,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87994 },	--  Moroes <Tower Steward>
 							["maps"] = { 595 },	-- Iron Docks
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237462, {	-- Horribly Acidic Solution
 									i(118647),	-- Horribly Acidic Solution (QI!)
 								}),
@@ -673,34 +645,20 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88017 },	-- Budd
 							["maps"] = { 595 },	-- Iron Docks
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237478, {	-- Very Shiny Thing
 									i(118617),	-- Very Shiny Thing (QI!)
 								}),
 								i(119041, {	-- Strongbox of Mysterious Treasures
-									["sym"] = {
-										{"sub", "common_wod_dungeon_drop", 1, HANDS},
-										{"sub", "common_wod_dungeon_drop", 1, WAIST},
-										{"sub", "common_wod_dungeon_drop", 1, LEGS},
-										{"sub", "common_wod_dungeon_drop", 1, CHEST},
-										{"sub", "common_wod_dungeon_drop", 1, FEET},
-										{"sub", "common_wod_dungeon_drop", 1, HEAD},
-										{"sub", "common_wod_dungeon_drop", 1, WRIST},
-										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-										{"sub", "common_wod_dungeon_drop", 1, BACK},
-										{"sub", "common_wod_dungeon_drop", 1, NECK},
-										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"merge"},	-- Merge all sub results for processing
-										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Warforged headers)
-									},
+									["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
+										HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 								}),
 							},
 						}),
 						q(37165, {	-- Cenarion Concerns
 							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["maps"] = { 620, 621 },	-- The Everbloom
-							["g"] = {
+							["groups"] = {
 								i(118935),	-- Ever-Blooming Frond (TOY!)
 								o(237472, {	-- Strangely-Glowing Frond
 									i(118627),	-- Strangely-Glowing Frond (QI!)
@@ -710,7 +668,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37160, {	-- Cleaving Time
 							["provider"] = { "n", 88007 },	-- Gamon
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
-							["g"] = {
+							["groups"] = {
 								i(118937),	-- Gamon's Braid (TOY!)
 								o(237475, {	-- Iron Limbcleaver
 									i(118644),	-- Iron Limbcleaver (QI!)
@@ -720,7 +678,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37151, {	-- Cold Steel
 							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
-							["g"] = {
+							["groups"] = {
 								i(118918),	-- Bloody Bandanna
 								o(237484, {	-- Iron Autocannon
 									i(118653),	-- Iron Autocannon (QI!)
@@ -732,7 +690,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(119036),	-- Box of Storied Treasures
 								o(237484, {	-- Iron Autocannon
 									i(118653),	-- Iron Autocannon (QI!)
@@ -742,7 +700,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37152, {	-- Cro's Revenge
 							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
-							["g"] = {
+							["groups"] = {
 								i(119083),	-- Fruit Basket (TOY!)
 								i(118534),	-- Giant Ogre Head (QI!)
 							},
@@ -750,7 +708,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37162, {	-- Damsels and Dragons
 							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
-							["g"] = {
+							["groups"] = {
 								i(118927),	-- Maximillian's Laundry
 								o(237469, {	-- Shed Proto-Dragon Claw
 									i(118624),	-- Shed Proto-Dragon Claw (QI!)
@@ -760,7 +718,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37161, {	-- Family Traditions
 							["provider"] = { "n", 88000 },	--  Pip Quickwit
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
-							["g"] = {
+							["groups"] = {
 								i(118926),	-- Huge Pile of Skins
 								o(237468, {	-- Pip's Improved Skinner
 									i(118623),	-- Pip's Improved Skinner (QI!)
@@ -768,27 +726,27 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(33814, {	-- Fast Expansion
-							["races"] = ALLIANCE_ONLY,
-							["isBreadcrumb"] = true,
-							["qgs"] = {
-								81152,	-- Scout Valdez
-								81153,	-- Scout Valdez
-							},
 							["sourceQuests"] = {
 								33059,	-- The Fate of Karabor
 								33081,	-- Escape From Shaz'gul
+							},
+							["qgs"] = {
+								81152,	-- Scout Valdez
+								81153,	-- Scout Valdez
 							},
 							["coords"] = {
 								{ 31.0, 31.1, LUNARFALL },	-- Garrison lvl 3
 								{ 40.6, 54.8, DRAENOR_SHADOWMOON_VALLEY },
 							},
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
 						}),
 						q(37239, {	-- Fate of the Fallen
 							["sourceQuest"] = 37164,	-- The Huntress
 							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237471, {	-- Silver-Lined Arrow
 									i(118626),	-- Silver-Lined Arrow (QI!)
 								}),
@@ -798,7 +756,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37157, {	-- Feeling A Bit Morose
 							["provider"] = { "n", 87994 },	-- Moroes <Tower Steward>
 							["maps"] = { 595 },	-- Iron Docks
-							["g"] = {
+							["groups"] = {
 								o(237462, {	-- Horribly Acidic Solution
 									i(118617),	-- Horribly Acidic Solution (QI!)
 								}),
@@ -810,7 +768,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88024 },	-- Oralius
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237481, {	-- Bottled Flamefly
 									i(118650),	-- Spire Flamefly (QI!)
 								}),
@@ -820,7 +778,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37150, {	-- For the Birds
 							["provider"] = { "n", 88025 },	-- Mylune
 							["maps"] = { 620, 621 },	-- The Everbloom
-							["g"] = {
+							["groups"] = {
 								i(118921),	-- Everbloom Peachick (PET!)
 								o(237483, {	-- Rustling Peachick Nest
 									i(118652),	-- Tiny Peachick Hatchling (QI!)
@@ -830,7 +788,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37179, {	-- For the Children!
 							["provider"] = { "n", 88009 },	-- Millhouse Manastorm
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
-							["g"] = {
+							["groups"] = {
 								i(118938),	-- Manastorm's Duplicator (TOY!)
 								follower(455),	-- Millhouse Manastorm
 								o(237476, {	-- Miniature Iron Star
@@ -842,24 +800,10 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88022 },	-- Johnny Awesome
 							["maps"] = { 593 },	-- Auchindoun
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(119042, {	-- Crate of Valuable Treasures
-									["sym"] = {
-										{"sub", "common_wod_dungeon_drop", 1, HANDS},
-										{"sub", "common_wod_dungeon_drop", 1, WAIST},
-										{"sub", "common_wod_dungeon_drop", 1, LEGS},
-										{"sub", "common_wod_dungeon_drop", 1, CHEST},
-										{"sub", "common_wod_dungeon_drop", 1, FEET},
-										{"sub", "common_wod_dungeon_drop", 1, HEAD},
-										{"sub", "common_wod_dungeon_drop", 1, WRIST},
-										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-										{"sub", "common_wod_dungeon_drop", 1, BACK},
-										{"sub", "common_wod_dungeon_drop", 1, NECK},
-										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"merge"},	-- Merge all sub results for processing
-										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Warforged headers)
-									},
+									["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
+										HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 								}),
 								o(237479, {	-- Nightmare Bell
 									i(118648),	-- Nightmare Bell (QI!)
@@ -869,7 +813,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37158, {	-- Gloriously Incandescent
 							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["maps"] = { 601, 602 },	-- Skyreach
-							["g"] = {
+							["groups"] = {
 								i(118928),	-- Faintly-Sparkling Cache
 								o(237466, {	-- Sun Crystal
 									i(118621),	-- Sun Crystal (QI!)
@@ -881,7 +825,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88006 },	--  Lonika Stillblade
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237474, {	-- Huge Crate of Weapons
 									i(118643),	-- Huge Crate of Weapons (QI!)
 								}),
@@ -893,7 +837,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237473, {	-- Overgrown Artifact
 									i(118628),	-- Overgrown Artifact (QI!)
 								}),
@@ -905,7 +849,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87992 },	--  Olaf
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237461, {	-- Olaf's Shield
 									i(118616),	-- Olaf's Shield (QI!)
 								}),
@@ -917,7 +861,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88000 },	--  Pip Quickwit
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237468, {	-- Pip's Improved Skinner
 									i(118623),	-- Pip's Improved Skinner (QI!)
 								}),
@@ -928,34 +872,20 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88013 },	-- Lunk
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
 							["isDaily"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237477, {	-- Ogre Family Tree
 									i(118646),	-- Ogre Family Tree (QI!)
 								}),
 								i(119040, {	-- Cache of Mingled Treasures
-									["sym"] = {
-										{"sub", "common_wod_dungeon_drop", 1, HANDS},
-										{"sub", "common_wod_dungeon_drop", 1, WAIST},
-										{"sub", "common_wod_dungeon_drop", 1, LEGS},
-										{"sub", "common_wod_dungeon_drop", 1, CHEST},
-										{"sub", "common_wod_dungeon_drop", 1, FEET},
-										{"sub", "common_wod_dungeon_drop", 1, HEAD},
-										{"sub", "common_wod_dungeon_drop", 1, WRIST},
-										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-										{"sub", "common_wod_dungeon_drop", 1, BACK},
-										{"sub", "common_wod_dungeon_drop", 1, NECK},
-										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"merge"},	-- Merge all sub results for processing
-										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Warforged headers)
-									},
+									["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
+										HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 								}),
 							},
 						}),
 						q(37148, {	-- Oralius' Adventure
 							["provider"] = { "n", 88024 },	-- Oralius
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
-							["g"] = {
+							["groups"] = {
 								o(237481, {	-- Bottled Flamefly
 									i(118650),	-- Spire Flamefly (QI!)
 								}),
@@ -967,7 +897,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88025 },	-- Mylune
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(119036),	-- Box of Storied Treasures
 								o(237483, {	-- Rustling Peachick Nest
 									i(118652),	-- Tiny Peachick Hatchling (QI!)
@@ -979,7 +909,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237470, {	-- Dark Parchment
 									i(118625),	-- Dark Parchment (QI!)
 								}),
@@ -989,7 +919,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37163, {	-- Shadowy Secrets
 							["provider"] = { "n", 88002 },	-- Highlord Darion Mograine
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
-							["g"] = {
+							["groups"] = {
 								o(237470, {	-- Dark Parchment
 									i(118625),	-- Dark Parchment (QI!)
 								}),
@@ -1000,27 +930,13 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88023 },	-- Taoshi
 							["maps"] = { 601, 602 },	-- Skyreach
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237480, {	-- Bottled Windstorm
 									i(118649),	-- Bottled Windstorm (QI!)
 								}),
 								i(119043, {	-- Trove of Smoldering Treasures
-									["sym"] = {
-										{"sub", "common_wod_dungeon_drop", 1, HANDS},
-										{"sub", "common_wod_dungeon_drop", 1, WAIST},
-										{"sub", "common_wod_dungeon_drop", 1, LEGS},
-										{"sub", "common_wod_dungeon_drop", 1, CHEST},
-										{"sub", "common_wod_dungeon_drop", 1, FEET},
-										{"sub", "common_wod_dungeon_drop", 1, HEAD},
-										{"sub", "common_wod_dungeon_drop", 1, WRIST},
-										{"sub", "common_wod_dungeon_drop", 1, SHOULDER},
-										{"sub", "common_wod_dungeon_drop", 1, BACK},
-										{"sub", "common_wod_dungeon_drop", 1, NECK},
-										{"sub", "common_wod_dungeon_drop", 1, FINGER},
-										{"merge"},	-- Merge all sub results for processing
-										{"pop"},	-- Get the raw Items from each slot header
-										{"is", "itemID"},	-- Only Items (discards Warforged headers)
-									},
+									["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC,
+										HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 								}),
 							},
 						}),
@@ -1029,7 +945,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["maps"] = { 593 },	-- Auchindoun
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237464, {	-- Soulsever Blade
 									i(118619),	-- Soulsever Blade (QI!)
 								}),
@@ -1039,7 +955,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37155, {	-- The Brass Compass
 							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["maps"] = { 595 },	-- Iron Docks
-							["g"] = {
+							["groups"] = {
 								i(118925),	-- Plundered Booty
 								o(237463, {	-- Strange Brass Compass
 									i(118618),	-- Strange Brass Compass (QI!)
@@ -1049,7 +965,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37154, {	-- The Cure For Death
 							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["maps"] = { 593 },	-- Auchindoun
-							["g"] = {
+							["groups"] = {
 								i(118931),	-- Leonid's Bag of Supplies
 								o(237465, {	-- Soulweave Vessel
 									i(118620),	-- Soulweave Vessel (QI!)
@@ -1061,7 +977,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["maps"] = { 601, 602 },	-- Skyreach
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237466, {	-- Sun Crystal
 									i(118621),	-- Sun Crystal (QI!)
 								}),
@@ -1079,7 +995,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37164, {	-- The Huntresses
 							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
-							["g"] = {
+							["groups"] = {
 								i(118923),	-- Sentinel's Companion (PET!)
 								o(237471, {	-- Silver-Lined Arrow
 									i(118626),	-- Silver-Lined Arrow (QI!)
@@ -1091,7 +1007,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237472, {	-- Strangely-Glowing Frond
 									i(118627),	-- Strangely-Glowing Frond (QI!)
 								}),
@@ -1103,7 +1019,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["maps"] = { 595 },	-- Iron Docks
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237463, {	-- Strange Brass Compass
 									i(118618),	-- Strange Brass Compass (QI!)
 								}),
@@ -1113,7 +1029,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37156, {	-- The Soulcutter
 							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["maps"] = { 593 },	-- Auchindoun
-							["g"] = {
+							["groups"] = {
 								i(119039),	-- Lilian's Warning Sign (TOY!)
 								o(237464, {	-- Soulsever Blade
 									i(118619),	-- Soulsever Blade (QI!)
@@ -1123,7 +1039,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37149, {	-- The Void-Gate
 							["provider"] = { "n", 88027 },	-- Impsy
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
-							["g"] = {
+							["groups"] = {
 								i(118936),	-- Manual of Void-Calling
 								o(237482, {	-- Void-Gate Key
 									i(118651),	-- Void-Gate Key
@@ -1133,7 +1049,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37153, {	-- Time-Lost Vikings
 							["provider"] = { "n", 87992 },	--  Olaf
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
-							["g"] = {
+							["groups"] = {
 								o(237461, {	-- Olaf's Shield
 									i(118616),	-- Olaf's Shield (QI!)
 								}),
@@ -1143,7 +1059,7 @@ root(ROOTS.ExpansionFeatures,
 						q(37166, {	-- Titanic Evolution
 							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["maps"] = { 620, 621 },	-- The Everbloom
-							["g"] = {
+							["groups"] = {
 								i(118930),	-- Bag of Everbloom Herbs
 								o(237473, {	-- Overgrown Artifact
 									i(118628),	-- Overgrown Artifact (QI!)
@@ -1155,7 +1071,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["maps"] = { 593 },	-- Auchindoun
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								o(237465, {	-- Soulweave Vessel
 									i(118620),	-- Soulweave Vessel (QI!)
 								}),
@@ -1167,7 +1083,7 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 88027 },	-- Impsy
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(119036),	-- Box of Storied Treasures
 								o(237482, {	-- Void-Gate Key
 									i(118651),	-- Void-Gate Key
@@ -1178,7 +1094,7 @@ root(ROOTS.ExpansionFeatures,
 					n(VENDORS, {
 						n(77368, {	-- Madison Clark <Cook>
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(119207, {	-- Meat Cleaver
 									["cost"] = 50000000,	-- 5,000g
 								}),
@@ -1186,7 +1102,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(87302, {	-- Murg <Cook>
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(119207, {	-- Meat Cleaver
 									["cost"] = 50000000,	-- 5,000g
 								}),

@@ -114,7 +114,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hqd"] = {
 						["coord"] = { 66.4, 24.6, NORTHREND_DALARAN },
 					},
-					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return t; end]],
 					["groups"] = {
 						siderealessence(3, i(47556)),	-- Crusader Orb
 						siderealessence(38, i(45868)),	-- Aesir's Edge

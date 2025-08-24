@@ -6,12 +6,18 @@ import requests
 import json
 from pathlib import Path
 from packaging import version
+from packaging.version import Version
+from typing import Optional
+from collections.abc import Iterable
 from QuestNames import get_quest_names
 from ThingTypes import (
     DATAS_FOLDER,
     DEBUGGING_FOLDER,
     DELIMITER,
+    FLAVOR_RANGES,
+    FLAVOR_FOLDERS,
     Achievements,
+    Explorations,
     Factions,
     FlightPaths,
     Followers,
@@ -31,9 +37,8 @@ from ThingTypes import (
     # Creatures,
     remove_non_digits,
 )
+
 """Helper Functions"""
-
-
 def things_version(build: str) -> list[type[Thing]]:
     thing_list: list[type[Thing]] = Thing.__subclasses__()
     if version.parse(build) < version.parse("1.14.0.39802"):
@@ -72,6 +77,108 @@ def create_dict_from_raw(file_name: str, n: int) -> dict[str, list[str]]:
             else:
                 item_dict[key] = [f"{value}"]
     return item_dict
+
+
+def create_patch_dict_from_raw(thing: type[Thing], flavor: str) -> dict[str, list[dict[str, Optional[str]]]]:
+    patch_data: dict[str, list[dict[str, Optional[str]]]] = {}
+    keys: list[str] = thing.id_schema()
+    current_patch: str = "1.0.0.00000"
+
+    with open(Path("Raw", f"{thing.__name__}.txt"), "r") as file:
+        for line in file:
+            line = line.strip()
+            if DELIMITER in line or line.isdigit():
+                parts: list[str] = line.split(DELIMITER)
+                entry: dict[str, Optional[str]] = { key: parts[i] if i < len(parts) else None for i, key in enumerate(keys) }
+                if pre_process(thing, current_patch, parts[0], flavor):
+                    patch_data[current_patch].append(entry)
+            else:
+                current_patch = line
+                patch_data[current_patch] = []
+                continue
+    return patch_data
+
+
+def create_patch_dict_from_raw_recipes(profession: str, flavor: str) -> dict[str, list[dict[str, Optional[str]]]]:
+    patch_data: dict[str, list[dict[str, Optional[str]]]] = {}
+    keys: list[str] = Recipes.id_schema()
+    current_patch: str = "1.0.0.00000"
+
+    with open(Path("Raw", "Professions", f"{profession}.txt"), "r") as file:
+        for line in file:
+            line = line.strip()
+            if DELIMITER in line or line.isdigit():
+                parts: list[str] = line.split(DELIMITER)
+                entry: dict[str, Optional[str]] = { key: parts[i] if i < len(parts) else None for i, key in enumerate(keys) }
+                if pre_process(Recipes, current_patch, parts[0], flavor):
+                    if current_patch not in patch_data:
+                        patch_data[current_patch] = []
+                    patch_data[current_patch].append(entry)
+            else:
+                current_patch = line
+                patch_data[current_patch] = []
+                continue
+    return patch_data
+
+
+def pre_process(thing: type[Thing], current_patch: str, id: str, flavor: str) -> bool:
+    patch: Version = version.parse(current_patch)
+    id_int = int(id)
+
+    # Check if current patch falls within the flavor's range
+    min_ver, max_ver = FLAVOR_RANGES.get(flavor, (None, None))
+    if min_ver and (patch > min_ver) and (max_ver is None or patch < max_ver):
+        return True
+
+    # Fallback: handle old IDs that still belong to Retail
+    if flavor == "Retail" and (
+        (thing == Achievements and id_int < 15000) or
+        # (thing == Explorations and id_int < 1) or #TODO
+        (thing == Factions and id_int < 2400) or
+        (thing == FlightPaths and id_int < 2900) or
+        (thing == Items and id_int < 172000) or
+        (thing == Mounts and id_int < 348000) or
+        (thing == Pets and id_int < 4100) or
+        (thing == Quests and id_int < 60000) or
+        (thing == Titles and id_int not in [210, 213, 217]) or
+        (thing == Toys and id_int < 183000 and id_int not in [38233, 38506]) or
+        (thing == Transmog and id_int < 146735) or
+        (thing == Recipes and id_int < 350000)
+    ):
+        return True
+
+    return False
+
+
+def get_raw_ids(patch_data: dict[str, list[dict[str, Optional[str]]]]) -> set[str]:
+    ids: set[str] = set()
+    for entries in patch_data.values():
+        for entry in entries:
+            id_val = entry.get('id')
+            if id_val:
+                ids.add(id_val)
+    return ids
+
+
+def get_difference(patch_data: dict[str, list[dict[str, Optional[str]]]], raw_ids: set[str], existing_ids: Iterable[str], excluded_ids: Iterable[str]) -> dict[str, list[dict[str, Optional[str]]]]:
+    filtered_patch_data: dict[str, list[dict[str, Optional[str]]]] = {}
+    existing_ids = {s.strip() for s in existing_ids}
+    excluded_ids = {s.strip() for s in excluded_ids}
+    difference_set = set(raw_ids) - set(existing_ids) - set(excluded_ids)
+
+    seen_ids: set[str] = set()
+    for patch, entries in patch_data.items():
+        filtered_entries: list[dict[str, Optional[str]]] = []
+        for entry in entries:
+            identifier = entry.get("id")
+            if identifier in difference_set and identifier not in seen_ids:
+                seen_ids.add(identifier)
+                filtered_entries.append(entry)
+
+        if filtered_entries:
+            filtered_patch_data[patch] = filtered_entries
+
+    return filtered_patch_data
 
 
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
@@ -122,13 +229,13 @@ def build_profession_dict() -> dict[str, list[str]]:
     profession_dict["Runeforging"] = ["776", "960"]
     return profession_dict
 
+
 def read_file_in_order(file_path: str) -> list[str]:
     with open(file_path, 'r') as file:
         return [line.strip() for line in file.readlines()]
 
+
 """Programme"""
-
-
 def check_build_difference() -> None:
     """Check difference between two text files (dropdown options from wago and whats currently in Builds.txt)"""
     # Paths to your dropdown-options.txt and Builds.txt files
@@ -225,7 +332,7 @@ def sort_raw_file_recipes() -> None:
                 sorted_file.writelines(recipe_list)
 
 
-def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipes: list[str]) -> list[str]:
+def get_itemdb_difference(profession: str) -> list[str]:
     """Get itemDB difference for recipes"""
     itemdb_list = list[str]()
     itemdb_path = Path(
@@ -242,9 +349,7 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
                     line = ""
                 line = remove_non_digits(line)
                 itemdb_list.append(line + "\n")
-            difference = sorted(set(raw_lines) - set(itemdb_list) - set(excluded_recipes), key=raw_lines.index)
-            difference = remove_empty_builds(difference)
-            return difference
+            return itemdb_list
     except FileNotFoundError:
         print(f"This {profession} has no ItemDB")
         return []
@@ -269,99 +374,90 @@ def get_existing_ids(thing: type[Thing]) -> list[str]:
     return existing_ids
 
 
-def create_missing_recipes() -> None:
-    """Create a missing file for Recipes using difference between debug, raw file and exclusions."""
-    profession_dict: dict[str, list[str]] = build_profession_dict()
-    raw_path_dict: dict[str, Path] = {
-        profession: Path("Raw", "Professions", f"{profession}.txt")
-        for profession in profession_dict
-    }
-    exclusion_path_dict: dict[str, Path] = {
-        profession: Path("Exclusion", "Professions", f"{profession}.txt")
-        for profession in profession_dict
-    }
-    missing_path_dict: dict[str, Path] = {
-        profession: Path(
-            DATAS_FOLDER,
-            "00 - Missing DB",
-            "Professions",
-            f"{profession}.txt",
-        )
-        for profession in profession_dict
-    }
+def write_missing_file(
+    name: str,
+    patch_data: dict[str, list[dict[str, Optional[str]]]],
+    thing: type[Thing],
+    raw_ids: set[str],
+    existing_ids: list[str],
+    excluded_ids: list[str],
+    db_ids: list[str] | None,
+    output_path: Path,
+    db_label: str,
+) -> None:
+    filtered_patch_data = get_difference(patch_data, raw_ids, existing_ids, excluded_ids)
+    filtered_patch_data_db = get_difference(patch_data, raw_ids, db_ids, excluded_ids) if db_ids else {}
+
+    with open(output_path, "w", encoding="utf-8") as missing_file:
+        for patch, entries in filtered_patch_data.items():
+            missing_file.write(f"{patch.strip()}\n")
+            for entry in entries:
+                values = [str((entry.get(field) or "").strip()) for field in thing.id_schema()]
+                line = DELIMITER.join(values)
+                missing_file.write(f"{line}\n")
+        if db_ids is not None:
+            if filtered_patch_data_db:
+                missing_file.write(f"\n\n\n\nMissing in {db_label}\n\n")
+                for patch, entries in filtered_patch_data_db.items():
+                    missing_file.write(f"{patch.strip()}\n")
+                    for entry in entries:
+                        values = [str((entry.get(field) or "").strip()) for field in thing.id_schema()]
+                        line = DELIMITER.join(values)
+                        missing_file.write(f"{line}\n")
+            else:
+                missing_file.write(f"\n\nNothing is Missing in {db_label}! Good Work!")
+
+    if not filtered_patch_data and not filtered_patch_data_db and output_path.exists():
+        output_path.unlink()
+
+
+def create_missing_file_recipes(flavor: str) -> None:
+    profession_dict = build_profession_dict()
+
     for profession in profession_dict:
-        print(profession)
-        with open(missing_path_dict[profession], "w") as missing_file:
-            raw_ids = extract_nth_column(raw_path_dict[profession], 0)
-            excluded_ids = extract_nth_column(exclusion_path_dict[profession], 0)
-            difference = sorted(
-                set(raw_ids) - set(get_existing_ids(Recipes)) - set(excluded_ids),
-                key=raw_ids.index,
-            )
-            if (difference := remove_empty_builds(difference)):
-                missing_file.writelines(difference)
-            else:
-                missing_file.write("Good Work! Nothing to do here!")
-            if (difference_db := get_itemdb_difference(profession, raw_ids, excluded_ids)):
-                missing_file.write(f"\n\n\n\nMissing in {profession}.lua\n\n")
-                missing_file.writelines(difference_db)
-            else:
-                missing_file.write(f"\n\nNothing is Missing in {profession}.lua! Good Work!")
-        if not difference and not difference_db and missing_path_dict[profession].exists():
-            missing_path_dict[profession].unlink()
-    return
+        patch_data = create_patch_dict_from_raw_recipes(profession, flavor)
+        raw_ids = get_raw_ids(patch_data)
+        existing_ids = get_existing_ids(Recipes)
+        excluded_ids = extract_nth_column(Path("Exclusion", "Professions", f"{profession}.txt"), 0)
+        db_ids = get_itemdb_difference(profession)
+
+        missing_path = Path(DATAS_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", "Professions", f"{profession}.txt")
+        write_missing_file(profession, patch_data, Recipes, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, profession)
 
 
-def create_missing_file(thing: type[Thing]) -> None:
-    """Create a missing file for a thing using difference between debug, raw file and exclusions."""
+def create_missing_file(thing: type[Thing], flavor: str) -> None:
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
-        create_missing_recipes()
+        create_missing_file_recipes(flavor)
         return
-    missing_path = Path(
-        DATAS_FOLDER,
-        "00 - Missing DB",
-        f"Missing{thing.__name__}.txt",
-    )
-    with open(missing_path, "w") as missing_file:
-        raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
-        excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
-        difference_db = None
-        difference = sorted(
-            set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
-            key=raw_ids.index,
-        )
-        if (difference := remove_empty_builds(difference)):
-            missing_file.writelines(difference)
-        else:
-            missing_file.write("Good Work! Nothing to do here!")
-        if thing.db_path:
-            existing_things = list[str]()
-            with open(thing.db_path) as db_file:
-                for line in db_file:
-                    if info := thing.extract_existing_info(line):
-                        existing_things.append(info + "\n")
-                difference_db = sorted(
-                    set(raw_ids) - set(existing_things) - set(excluded_ids),
-                    key=raw_ids.index,
-                )
-                if (difference_db := remove_empty_builds(difference_db)):
-                    missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
-                    missing_file.writelines(difference_db)
-                else:
-                    missing_file.write(f"\n\nNothing is Missing in {thing.db_path.name}! Good Work!")
-    if not difference and not difference_db and missing_path.exists():
-        missing_path.unlink()
+
+    patch_data = create_patch_dict_from_raw(thing, flavor)
+    raw_ids = get_raw_ids(patch_data)
+    existing_ids = get_existing_ids(thing)
+    excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+    db_ids: list[str] | None = None
+
+    if thing.db_path:
+        db_ids = []
+        with open(thing.db_path, "r", encoding="utf-8") as db_file:
+            for line in db_file:
+                info = thing.extract_existing_info(line)
+                if info:
+                    db_ids.append(info.strip())
+
+    missing_path = Path(DATAS_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", f"Missing{thing.__name__}.txt")
+    write_missing_file(thing.__name__, patch_data, thing, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, thing.db_path.name if thing.db_path else "Database")
 
 
-def post_process_recipes() -> None:
+def post_process_recipes(flavor: str) -> None:
     profession_dict: dict[str, list[str]] = build_profession_dict()
     spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
     missing_path_dict: dict[str, Path] = {
         profession: Path(
             DATAS_FOLDER,
             "00 - Missing DB",
+            f"{FLAVOR_FOLDERS[flavor]}",
             "Professions",
             f"{profession}.txt",
         )
@@ -387,16 +483,17 @@ def post_process_recipes() -> None:
     return
 
 
-def post_process(thing: type[Thing]) -> None:
+def post_process(thing: type[Thing], flavor: str) -> None:
     """Get the name of a thing and clean up builds."""
     if not thing.real_collectible:
         raise NotImplementedError("This is not a real collectible.")
     if thing == Recipes:
-        post_process_recipes()
+        post_process_recipes(flavor)
         return
     missing_path = Path(
         DATAS_FOLDER,
         "00 - Missing DB",
+        f"{FLAVOR_FOLDERS[flavor]}",
         f"Missing{thing.__name__}.txt",
     )
     if not missing_path.exists():
@@ -404,6 +501,7 @@ def post_process(thing: type[Thing]) -> None:
     missing_lines = extract_nth_column(missing_path, 0)
     if thing in (
         Achievements,
+        Explorations,
         Factions,
         FlightPaths,
         Mounts,
@@ -476,7 +574,7 @@ def post_process(thing: type[Thing]) -> None:
             missing_file.writelines(missing_lines)
         return
     elif thing == Quests:
-        get_quest_names()
+        get_quest_names(flavor)
     elif thing == Pets:
         pet_dict: dict[str, list[str]] = create_dict_from_raw("Pets.txt", 1)
         creature_dict = create_dict_from_raw("Creatures.txt", 1)
@@ -577,19 +675,19 @@ def add_latest_data(build: str) -> None:
                 item_file.writelines(difference)
 
 
-def create_missing_files() -> None:
+def create_missing_files(flavor: str) -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
         print('Missing File: ', thing)
-        create_missing_file(thing)
+        create_missing_file(thing, flavor)
         print('Post Process: ', thing)
-        post_process(thing)
+        post_process(thing, flavor)
 
 
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-# add_latest_data("")
+add_latest_data("11.2.5.62554")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
@@ -598,5 +696,5 @@ def create_missing_files() -> None:
 """How to generate Missing Files"""
 """Step 1: Delete questDB.json in DATAS/00 - Item Database folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
-"""Step 3: Run create_missing_files() and (you have to uncomment it)"""
-# create_missing_files()
+"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it)"""
+# create_missing_files("")

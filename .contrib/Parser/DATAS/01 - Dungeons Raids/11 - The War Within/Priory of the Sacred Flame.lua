@@ -8,13 +8,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2308,	-- Sanctified Grounds
 			2309,	-- Priory of the Sacred Flame
 		},
-		["g"] = {
+		["groups"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2571, {	-- Captain Dailcry
 					["crs"] = { 207946 },
-					["g"] = {
+					["groups"] = {
 						i(221118),	-- Flameforged Armguard
+						-- #if BEFORE 11.2.0
 						i(221116),	-- Glorious Defender's Poleaxe
+						-- #endif
 						i(221119),	-- Holybound Grips
 						i(221121),	-- Honorbound Retainer's Sash
 						i(221117),	-- Sanctified Priory Wall
@@ -24,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2570, {	-- Baron Braunpyke
 					["crs"] = { 207939 },	-- Baron Braunpyke
-					["g"] = {
+					["groups"] = {
 						i(221124),	-- Consecrated Baron's Bindings
 						i(221123),	-- Devoted Plate Walkers
 						i(221122),	-- Hand of Beledar
@@ -35,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2573, {	-- Prioress Murrpray
 					["crs"] = { 207940 },	-- Prioress Murrpray
-					["g"] = {
+					["groups"] = {
 						ach(40590),	-- Priory of the Sacred Flame
 						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
 						i(223116),	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
@@ -54,10 +56,30 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 			}),
+			-- #if AFTER 11.2.0
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				e(2571, {	-- Captain Dailcry
+					["crs"] = { 207946 },
+					["groups"] = {
+						i(221116),	-- Glorious Defender's Poleaxe
+					},
+				}),
+			}),
+			-- #endif
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				-- #if AFTER 11.2.0
+				e(2570, {	-- Baron Braunpyke
+					["crs"] = { 207939 },	-- Baron Braunpyke
+					["groups"] = {
+						i(252009, {	-- Bloodstained Memento
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				-- #endif
 				e(2573, {	-- Prioress Murrpray
 					["crs"] = { 207940 },	-- Prioress Murrpray
-					["g"] = {
+					["groups"] = {
 						ach(40592),	-- Heroic: Priory of the Sacred Flame
 					},
 				}),
@@ -65,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2573, {	-- Prioress Murrpray
 					["crs"] = { 207940 },	-- Prioress Murrpray
-					["g"] = {
+					["groups"] = {
 						ach(40596),	-- Mythic: Priory of the Sacred Flame
 					},
 				}),

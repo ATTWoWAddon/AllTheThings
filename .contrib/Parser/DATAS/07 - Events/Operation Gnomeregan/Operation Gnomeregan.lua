@@ -49,8 +49,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25199, {	-- Basic Orders
-				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25229,	-- A Few Good Gnomes
+				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Salute the Drill Sergeant
@@ -68,8 +68,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25285, {	-- In and Out
-				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25199,	-- Basic Orders
+				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Ejection System Tested
@@ -78,8 +78,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25289, {	-- One Step Forward...
-				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25285,	-- In and Out
+				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Left Leg Servos Tested
@@ -94,11 +94,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25393, {	-- Operation: Gnomeregan
-				["providers"] = {
-					{ "n", 39271 },	-- High Tinker Mekkatorque <King of Gnomes> (At the operation start location)
-					{ "n", 7937 },	-- High Tinker Mekkatorque <King of Gnomes> (after the quest is done, back in IF)
-				},
 				["sourceQuest"] = 25287,	-- Words for Delivery (2)
+				["qgs"] = {
+					39271,	-- High Tinker Mekkatorque <King of Gnomes> (At the operation start location)
+					7937,	-- High Tinker Mekkatorque <King of Gnomes> (after the quest is done, back in IF)
+				},
 				["coord"] = { 69.2, 49.2, IRONFORGE },
 				["groups"] = {
 					objective(1, {	-- Regain the Surface of Gnomeregan
@@ -113,11 +113,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25283, {	-- Prepping the Speech
-				["qg"] = 39678,	-- Toby Zeigear
 				["sourceQuests"] = {
 					25295,	-- Press Fire
 					25212,	-- Vent Horizon
 				},
+				["qg"] = 39678,	-- Toby Zeigear
 				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- Perform Speech to Ozzie Togglevolt
@@ -144,8 +144,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25295, {	-- Press Fire
-				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["sourceQuest"] = 25289,	-- One Step Forward...
+				["qg"] = 39675,	-- Captain Tread Sparknozzle
 				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Weapon System Tested
@@ -157,8 +157,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25212, {	-- Vent Horizon
-				["qg"] = 39386,	-- Pilot Muzzlesprock
 				["sourceQuest"] = 25199,	-- Basic Orders
+				["qg"] = 39386,	-- Pilot Muzzlesprock
 				["coord"] = { 50.1, 47.74, DUN_MOROGH },
 				["groups"] = {
 					objective(1, {	-- 0/3 Deploy Radiageigatron at Gnomeregan Vents
@@ -170,24 +170,24 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25500, {	-- Words for Delivery (1/2)
+				["sourceQuest"] = 25283,	-- Prepping the Speech
+				["altQuests"] = { 25286 },	-- Words for Delivery (for level 75 and below)
 				["providers"] = {
 					{ "n", 39678 },	-- Toby Zeigear
 					{ "i", 52731 },	-- Mekkatorque's Speech
 				},
-				["sourceQuest"] = 25283,	-- Prepping the Speech
-				["altQuests"] = { 25286 },	-- Words for Delivery (for level 75 and below)
 				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 				["groups"] = {
 					i(54651),	-- Gnomeregan Pride (TOY!)
 				},
 			}),
 			q(25287, {	-- Words for Delivery (2/2)
+				["sourceQuest"] = 25500,	-- Words for Delivery (1/2)
 				["providers"] = {
 					{ "n", 39675 },	-- Captain Tread Sparknozzle
 					{ "i", 52731 },	-- Mekkatorque's Speech
 					{ "n", 39396 },	-- 'Thunderflash'
 				},
-				["sourceQuest"] = 25500,	-- Words for Delivery (1/2)
 				["coord"] = { 50.16, 48.35, DUN_MOROGH },
 			}),
 		},

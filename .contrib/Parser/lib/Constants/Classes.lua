@@ -143,6 +143,41 @@ INTELLECT_CLASSES = {
 	SHAMAN,
 	WARLOCK,
 };
+-- Racial Constants TODO
+
+BLOOD_ELF_CLASSES = {
+	-- #if AFTER WRATH
+	DEATHKNIGHT,
+	-- #endif
+	-- #if AFTER LEGION
+	DEMONHUNTER,
+	-- #endif
+	HUNTER,
+	MAGE,
+	-- #if AFTER MOP
+	MONK,
+	-- #endif
+	PALADIN,
+	PRIEST,
+	ROGUE,
+	WARLOCK,
+	-- #if AFTER CATA
+	WARRIOR,
+	-- #endif
+};
+
+DRACTHYR_CLASSES = {
+	EVOKER,
+	-- #if AFTER 11.0.5
+	HUNTER,
+	MAGE,
+	PRIEST,
+	ROGUE,
+	WARLOCK,
+	WARRIOR,
+	-- #endif
+};
+
 EARTHEN_CLASSES = {
 	HUNTER,
 	MAGE,
@@ -154,6 +189,7 @@ EARTHEN_CLASSES = {
 	WARLOCK,
 	WARRIOR,
 };
+--
 SWORD_CLASSES = {
 	WARRIOR,
 	PALADIN,

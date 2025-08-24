@@ -3,19 +3,9 @@
 -----------------------------------------------------
 local BRONZE = 2778;
 local BONES_OF_MANNOROTH = 224461;
-INFINITE_BAZARR = createHeader({
-	readable = "Infinite Bazaar",
-	icon = 298656,
-	text = {
-		en = "Infinite Bazaar",
-		tw = "無限市集",
-	},
-	description = {
-		en = "The Infinite Bazaar has multiple locations.",
-	},
-});
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-	n(INFINITE_BAZARR, {
+	n(INFINITE_BAZAAR, {
 		["coords"] = {
 		--[[	-- Accurate, but its 100 Ensembles per Zone in the Minilist
 			{ 42.8, 27.5, THE_JADE_FOREST },
@@ -23,10 +13,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			{ 37.8, 64.0, TOWNLONG_STEPPES },
 			{ 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 		--]]
-			{ 26.0, 49.0, 391 },	-- Shrine of Two Moons
-			{ 72.0, 47.2, 393 },	-- Shrine of Seven Stars
+			{ 26.0, 49.0, SHRINE_OF_TWO_MOONS },
+			{ 72.0, 47.2, SHRINE_OF_SEVEN_STARS },
 		},
-		["g"] = {
+		["groups"] = {
 			n(219031, {	-- Aeonicus <Raid Finder Apparel>
 				clWithoutLock(DEATHKNIGHT, {
 					iensemble(215320, { -- Ensemble: Plate of the Lost Catacomb (LFR)
@@ -1139,7 +1129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(223908),	-- Minor Bronze Cache
 				},
 			}, {

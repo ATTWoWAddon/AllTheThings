@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193198, {	-- Captain Lancer
 				["coord"] = { 26.9, 76.1, THE_WAKING_SHORES },
 				["questID"] = 73075,
-				["g"] = {
+				["groups"] = {
 					bo(72127, true),
 					i(200286),	-- Dragonbane Lance
 				},
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 47.2, 78.0, THE_WAKING_SHORES },
 				},
 				["questID"] = 73874,
-				["g"] = {
+				["groups"] = {
 					i(200219),	-- Dangerous Drapery
 				},
 			}),
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["cost"] = {{"i",201092,1}},	-- Lava Spices
 				["questID"] = 73072,
-				["g"] = {
+				["groups"] = {
 					bo(72128, true),
 					i(200167),	-- Regurgitated Stone Handaxe
 				},
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193154, {	-- Forgotten Gryphon
 				["coord"] = { 33.1, 76.3, THE_WAKING_SHORES },
 				["questID"] = 73073,
-				["g"] = {
+				["groups"] = {
 					bo(72130, true),
 					i(200858),	-- Plume of the Forgotten
 				},
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Talk to Collector Zik at the entrance to the cave and get a net. Start catching butterflies- no really, like, 200-400 butterflies. You'll be here a while.\n\nYou can talk to Collector Zik and select chat option 3: 'How many shimmerwings have you collected so far?' to get a hint toward your progress:\n0-33% I've only just started.\n34-66%We're making good progress.\n67-99%We're close to a discovery.",
 				["coord"] = { 33.8, 85.8, THE_WAKING_SHORES },
 				["questID"] = 74065,
-				["g"] = {
+				["groups"] = {
 					bo(69891, true),
 				},
 			}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "At the top of the Tower. Nearby ghostly telescopes will indicate her spawn timer:\n\n2 telescopes means roughly 2h30min till respawn.\n\n3 telescopes indicate 2h respawn till respawn.\n\n4 telescopes indicate 1h till respawn.",
 				["coord"] = { 56.00, 45.87, THE_WAKING_SHORES },
 				["questID"] = 73888,
-				["g"] = {
+				["groups"] = {
 					i(200236),	-- Memory of Nulltheria
 				},
 			}),
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 53.0, 66.4, THE_WAKING_SHORES },
 				},
 				["questID"] = 73890,
-				["g"] = {	-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
+				["groups"] = {	-- He "drops" 4 rare npcs upon dieing, but they have no drops. CRS doesnt seem useful
 					n(192738),	-- Brundin the Dragonbane
 					n(192741),	-- Flamebreaker Grella
 					n(192744),	-- Scalemelter Dorbane
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Cave Entrance: 48.6, 74.3. Have to touch Focus, Globe and Telescope to spawn.",
 				["coord"] = { 47.3, 73.9, THE_WAKING_SHORES },
 				["questID"] = 74076,
-				["g"] = {
+				["groups"] = {
 					bo(70719, true),
 					i(200152),	-- Gleaming Blade of Insight
 				},
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 48.6, 16.4, THE_WAKING_SHORES },
 				},
 				["questID"] = 73895,
-				["g"] = {
+				["groups"] = {
 					i(200132),	-- Skewer's Snout
 				},
 			}),
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 34.5, 89.7, THE_WAKING_SHORES },
 				["questID"] = 74079,
 				["cost"] = {{"i",201033,1}},	-- 1x Magical Salt Crystal
-				["g"] = {
+				["groups"] = {
 					bo(72126, true),
 					i(200189),	-- Hydroforged Shell Helm
 				},

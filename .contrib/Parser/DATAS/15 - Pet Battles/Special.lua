@@ -8,7 +8,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(63596, {  -- Audrey Burnhep
 			["coord"] = { 69.4, 24.4, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				pet(138, {	-- Blue Moth
 					["races"] = { DRAENEI },
 				}),
@@ -112,7 +112,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(63626, {	-- Varzok
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				pet(75, {	-- Black Kingsnake (PET!)
 					["races"] = { ORC, TROLL },
 				}),

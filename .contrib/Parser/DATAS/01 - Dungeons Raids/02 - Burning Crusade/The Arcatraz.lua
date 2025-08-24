@@ -22,13 +22,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10706, {	-- A Mysterious Portent
-					["qg"] = 21962,	-- Udalo
 					["sourceQuest"] = 10705,	-- Seer Udalo
+					["qg"] = 21962,	-- Udalo
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(10882, {	-- Harbinger of Doom
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["timeline"] = { REMOVED_4_3_0 },
 					-- #if AFTER WRATH
@@ -46,8 +46,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29675, {	-- Hey There Dalliah
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29674,	-- Unbound Darkness
+					["qg"] = 18481,	-- A'dal
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -60,8 +60,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10704, {	-- How to Break Into the Arcatraz
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["maps"] = { TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
 					-- #if AFTER WRATH
@@ -87,8 +87,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29681, {	-- Maximum Security Breakout
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29675,	-- Hey There Dalliah
+					["qg"] = 18481,	-- A'dal
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -101,14 +101,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10705, {	-- Seer Udalo
-					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10628,	-- Akama
+					["qg"] = 21700,	-- Akama
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(10886, {	-- Trial of the Naaru: Tenacity
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
 					["lvl"] = lvlsquish(70, 70, 25),
 				}),
@@ -211,14 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						ach(660, {	-- The Arcatraz
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10882,	-- Harbinger of Doom
-								10886,	-- Trial of the Naaru: Tenacity
-							},
-							-- #endif
-						}),
+						ach(660),	-- The Arcatraz
 						-- #if BEFORE 7.3.5
 						i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 						-- #endif
@@ -337,11 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							ach(681, {	-- Heroic: The Arcatraz
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								-- #endif
-							}),
+							ach(681),	-- Heroic: The Arcatraz
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

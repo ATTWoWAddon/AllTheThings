@@ -18,54 +18,51 @@ HALLOWS_END_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
+		es = "Halloween",
+		mx = "Halloween",
 		-- #endif
 	},
 });
 local CANDY_AND_TOY_VENDOR_GROUPS = {
 	i(122338, {	-- Ancient Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 250 } },	-- 250x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
-		["timeline"] = { ADDED_9_1_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_9_1_5 },
 	}),
 	i(122340, {	-- Timeworn Heirloom Armor Casing
-		["timeline"] = { ADDED_6_1_0 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_6_1_0 },
 	}),
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 33226, 450 } },	-- 450x Tricky Treat
-		["sym"] = { { "fill" } },	-- simply fill this item
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	-- #if BEFORE 7.0.1
 	i(116811, {	-- "Lil' Starlet" Costume
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(116810, {	-- "Mad Alchemist" Costume
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116801, {	-- Cursed Birman (PET!)
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(70908, {	-- Feline Familiar (PET!)
-		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -74,8 +71,8 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { ADDED_4_2_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
@@ -91,36 +88,36 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	i(116804, {	-- Widget the Departed (PET!)
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	-- #else
 	i(208735, {	-- Bucket of Morbid Treats
-		["timeline"] = { ADDED_10_1_7 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 2x Tricky Treat
+		["timeline"] = { ADDED_10_1_7 },
 	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
 	iensemble(230173, {	-- Ensemble: Prowler's Faded Headgear
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(128643, {	-- Exquisite Costume Set: "Deathwing"
-		["timeline"] = { ADDED_6_2_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_6_2_2 },
 	}),
 	i(138990, {	-- Exquisite Costume Set: "Grommash"
-		["timeline"] = { ADDED_7_0_3 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_7_0_3 },
 	}),
 	i(116828, {	-- Exquisite Costume Set: "The Lich King"
-		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_6_0_2 },
 	}),
 	i(151268, {	-- Exquisite Costume Set: "Xavius"
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 200 }, },	-- 200x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(37583, {	-- G.N.E.R.D.S.
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -129,40 +126,40 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	i(163045, {	-- Headless Horseman's Hearthstone (TOY!)
-		["timeline"] = { ADDED_8_0_1 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 	i(151271, {	-- Horse Head Costume (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(151270, {	-- Horse Tail Costume (TOY!)
-		["timeline"] = { ADDED_7_3_0 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		["timeline"] = { ADDED_7_3_0 },
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
-		["timeline"] = { ADDED_4_2_0 },
 		-- #if BEFORE 11.0.5
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		-- #else
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
 		-- #endif
+		["timeline"] = { ADDED_4_2_0 },
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 		["collectible"] = false,
 	}),
 	i(226427, {	-- Patched Harvester's Claw
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(226453, {	-- Patched Harvest Golem's Post
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(230042, {	-- Prowler's Faded Shoulder Cape
-		["timeline"] = { ADDED_11_0_5 },
 		["cost"] = { { "i", 33226, 50 }, },	-- 50x Tricky Treat
+		["timeline"] = { ADDED_11_0_5 },
 	}),
 	i(37582, {	-- Pyroblast Cinnamon Ball
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -708,7 +705,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 33154 },	-- Sinister Squashling
 				{ "i", 33292 },	-- Hallowed Helm
 			},
-			["AllProvidersRequiredForAchievement"] = true,
 			["timeline"] = { ADDED_2_0_1 },
 			-- #else
 			crit(5783, {	-- Sinister Squashling
@@ -2327,7 +2323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["provider"] = { "o", 215915 },	-- Candy Bucket, Shrine of Seven Stars
 					["coords"] = {
 						{ 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
-						{ 37.7, 67.0, 393 },	-- Shrine of Seven Stars
+						{ 37.7, 67.0, SHRINE_OF_SEVEN_STARS },
 					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),
@@ -2782,7 +2778,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
 					["coords"] = {
 						{ 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
-						--{ x, y, 391 },	-- Shrine of Two Moons
+						--{ x, y, SHRINE_OF_TWO_MOONS },
 					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),
@@ -2866,8 +2862,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29430, {	-- A Friend in Need (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.3, 50.9, ELWYNN_FOREST },
-			["maps"] = { STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -2875,8 +2871,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29431, {	-- A Friend in Need (Horde)
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["maps"] = { ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -2963,13 +2959,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isBreadcrumb"] = true,
 		}),
 		q(29377, {	-- A Time to Break Down
-			["qg"] = 15197,	-- Darkcaller Yanka
 			["sourceQuests"] = {
 				29400,	-- A Season for Celebration (Horde)
 				-- #if AFTER 8.0.1
 				53122,	-- A Season for Celebration (Horde - New Tirisfal Glades)
 				-- #endif
 			},
+			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ELWYNN_FOREST },
@@ -2984,13 +2980,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29376, {	-- A Time to Build Up
-			["qg"] = 15197,	-- Darkcaller Yanka
 			["sourceQuests"] = {
 				29400,	-- A Season for Celebration (Horde)
 				-- #if AFTER 8.0.1
 				53122,	-- A Season for Celebration (Horde - New Tirisfal Glades)
 				-- #endif
 			},
+			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3000,8 +2996,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29075, {	-- A Time to Gain
-			["qg"] = 51665,	-- Celestine of the Harvest
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
+			["qg"] = 51665,	-- Celestine of the Harvest
 			["coord"] = { 32, 50.4, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3011,8 +3007,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29371, {	-- A Time to Lose
-			["qg"] = 52064,	-- Keira
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
+			["qg"] = 52064,	-- Keira
 			["coord"] = { 32, 50.4, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
@@ -3035,16 +3031,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(98, 98, 40),	-- TODO: Check Level Requirement
 		}),
 		q(11392, {	-- Call the Headless Horseman
-			["provider"] = { "o", 186267 },	-- Pumpkin Shrine
 			["sourceQuests"] = {
 				11135,	-- The Headless Horseman
 				11220,	-- The Headless Horseman
 			},
+			["provider"] = { "o", 186267 },	-- Pumpkin Shrine
+			["timeline"] = { ADDED_2_0_1, REMOVED_3_3_0 },
 			["maps"] = {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["timeline"] = { ADDED_2_0_1, REMOVED_3_3_0 },
 			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
@@ -3068,13 +3064,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29375, {	-- Clean Up in Undercity
-			["qg"] = 53763,	-- Candace Fenlow
 			["sourceQuests"] = {
 				29400,	-- A Season for Celebration (Horde)
 				-- #if AFTER 8.0.1
 				53122,	-- A Season for Celebration (Horde - New Tirisfal Glades)
 				-- #endif
 			},
+			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { UNDERCITY },
@@ -3125,8 +3121,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(1658, {	-- Crashing the Wickerman Festival
 			["qg"] = 15199,	-- Sergeant Hartman
 			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
-			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
+			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3160,8 +3156,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29398, {	-- Fencing the Goods (Alliance)
-			["qg"] = 53950,	-- Hired Courier
 			["sourceQuest"] = 29392,	-- Missing Heirlooms (Alliance)
+			["qg"] = 53950,	-- Hired Courier
 			["coords"] = {
 				-- #if AFTER LEGION
 				{ 24, 44.6, STORMWIND_CITY },
@@ -3174,8 +3170,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29416, {	-- Fencing the Goods (Horde)
-			["qg"] = 54142,	-- Hired Courier
 			["sourceQuest"] = 29415,	-- Missing Heirlooms (Horde)
+			["qg"] = 54142,	-- Hired Courier
 			["coord"] = { 57.4, 9, DUROTAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
@@ -3183,8 +3179,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
-			["qg"] = 24519,	-- Costumed Orphan Matron
 			["sourceQuest"] = 11356,	-- Costumed Orphan Matron
+			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coord"] = { 49.2, 51.4, AZUREMYST_ISLE },
 			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3201,8 +3197,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11360, {	-- Fire Brigade Practice (Elwynn Forest)
-			["qg"] = 24519,	-- Costumed Orphan Matron
 			["sourceQuest"] = 11356,	-- Costumed Orphan Matron
+			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coord"] = { 42.6, 64.4, ELWYNN_FOREST },
 			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3219,8 +3215,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11439, {	-- Fire Brigade Practice (Dun Morogh)
-			["qg"] = 24519,	-- Costumed Orphan Matron
 			["sourceQuest"] = 11356,	-- Costumed Orphan Matron
+			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 53.2, 51.4, DUN_MOROGH },
@@ -3243,8 +3239,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11361, {	-- Fire Training (Durotar)
-			["qg"] = 23973,	-- Masked Orphan Matron
 			["sourceQuest"] = 11357,	-- Masked Orphan Matron
+			["qg"] = 23973,	-- Masked Orphan Matron
 			["coord"] = { 52.5, 41.2, DUROTAR },
 			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3261,8 +3257,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11450, {	-- Fire Training (Eversong Woods)
-			["qg"] = 23973,	-- Masked Orphan Matron
 			["sourceQuest"] = 11357,	-- Masked Orphan Matron
+			["qg"] = 23973,	-- Masked Orphan Matron
 			["coord"] = { 47.2, 46.6, EVERSONG_WOODS },
 			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3279,8 +3275,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11449, {	-- Fire Training (Tirisfal Glades)
-			["qg"] = 23973,	-- Masked Orphan Matron
 			["sourceQuest"] = 11357,	-- Masked Orphan Matron
+			["qg"] = 23973,	-- Masked Orphan Matron
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 60.8, 53.6, TIRISFAL_GLADES },
@@ -3322,8 +3318,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11242, {	-- Free at Last! (Alliance)
 			["qg"] = 23904,	-- Sir Thomas
-			["maps"] = { SCARLET_MONASTERY },
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
+			["maps"] = { SCARLET_MONASTERY },
 			["cost"] = {
 				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 			},
@@ -3332,8 +3328,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11403, {	-- Free at Last! (Horde)
 			["qg"] = 23904,	-- Sir Thomas
-			["maps"] = { SCARLET_MONASTERY },
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
+			["maps"] = { SCARLET_MONASTERY },
 			["cost"] = {
 				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 			},
@@ -3543,8 +3539,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isBreadcrumb"] = true
 		}),
 		q(29392, {	-- Missing Heirlooms (Alliance)
-			["qg"] = 53949,	-- Anson Hastings
 			["sourceQuest"] = 29430,	-- A Friend in Need (Alliance)
+			["qg"] = 53949,	-- Anson Hastings
 			["coords"] = {
 				-- #if AFTER LEGION
 				{ 60.2, 75.2, STORMWIND_CITY },
@@ -3557,8 +3553,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29415, {	-- Missing Heirlooms (Horde)
-			["qg"] = 54141,	-- Edgar Goodwin
 			["sourceQuest"] = 29431,	-- A Friend in Need (Horde)
+			["qg"] = 54141,	-- Edgar Goodwin
 			["coord"] = { 54.4, 77.6, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3589,16 +3585,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			},
 			["timeline"] = { REMOVED_4_0_3 },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
 			["cost"] = {
 				{ "i", 20605, 1 },	-- Rotten Eggs
 			},
+			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
 			["lvl"] = 30,
 		}),
 		q(8409, {	-- Ruined Kegs
-			["provider"] = { "o", 180570 },	-- Keg
 			["sourceQuest"] = 8322,	-- Rotten Eggs
+			["provider"] = { "o", 180570 },	-- Keg
 			["coord"] = { 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["races"] = HORDE_ONLY,
@@ -3609,8 +3605,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29399, {	-- Shopping Around (Alliance)
-			["qg"] = 8719,	-- Auctioneer Fitch
 			["sourceQuest"] = 29398,	-- Fencing the Goods (Alliance)
+			["qg"] = 8719,	-- Auctioneer Fitch
 			["coords"] = {
 				-- #if AFTER LEGION
 				{ 61.2, 70.8, STORMWIND_CITY },
@@ -3623,8 +3619,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29425, {	-- Shopping Around (Horde)
-			["qg"] = 44866,	-- Auctioneer Drezmit
 			["sourceQuest"] = 29416,	-- Fencing the Goods (Horde)
+			["qg"] = 44866,	-- Auctioneer Drezmit
 			["coord"] = { 54, 73.4, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3633,8 +3629,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(1657, {	-- Stinking Up Southshore
 			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 55.6, 69.9, TIRISFAL_GLADES },
-			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["timeline"] = { REMOVED_4_0_3 },
+			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3701,8 +3697,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29054, {	-- Stink Bombs Away! (Alliance)
-			["qg"] = 51934,	-- Gretchen Fenlow
 			["sourceQuest"] = 29074,	-- A Season for Celebration (Alliance)
+			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3717,7 +3713,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29374, {	-- Stink Bombs Away! (Horde)
-			["qg"] = 53763,	-- Candace Fenlow
 			-- #if AFTER 8.0.1
 			["sourceQuests"] = {
 				29400,	-- A Season for Celebration (Horde)
@@ -3726,6 +3721,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #else
 			["sourceQuest"] = 29400,	-- A Season for Celebration (Horde)
 			-- #endif
+			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3740,12 +3736,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11131, {	-- Stop the Fires! (Alliance)
-			["qg"] = 24519,	-- Costumed Orphan Matron
 			["sourceQuests"] = {
 				11440,	-- Fire Brigade Practice [Azuremyst Isle]
 				11439,	-- Fire Brigade Practice [Dun Morogh]
 				11360,	-- Fire Brigade Practice [Elwynn Forest]
 			},
+			["qg"] = 24519,	-- Costumed Orphan Matron
 			["coords"] = {
 				{ 60.8, 53.6, AZUREMYST_ISLE },
 				{ 53.4, 51.5, DUN_MOROGH },
@@ -3764,12 +3760,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(11219, {	-- Stop the Fires! (Horde)
-			["qg"] = 23973,	-- Masked Orphan Matron
 			["sourceQuests"] = {
 				11361,	-- Fire Training [Durotar]
 				11450,	-- Fire Training [Eversong Woods]
 				11449,	-- Fire Training [Tirisfal Glades]
 			},
+			["qg"] = 23973,	-- Masked Orphan Matron
 			["coords"] = {
 				{ 52.6, 41.5, DUROTAR },
 				{ 47.2, 46.4, EVERSONG_WOODS },
@@ -3788,8 +3784,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29402, {	-- Taking Precautions (Alliance)
-			["qg"] = 54021,	-- Hudson Barnes
 			["sourceQuest"] = 29399,	-- Shopping Around (Alliance)
+			["qg"] = 54021,	-- Hudson Barnes
 			["coord"] = { 64, 46.4, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3820,8 +3816,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29426, {	-- Taking Precautions (Horde)
-			["qg"] = 54146,	-- Delian Sunshade
 			["sourceQuest"] = 29425,	-- Shopping Around (Horde)
+			["qg"] = 54146,	-- Delian Sunshade
 			["coord"] = { 58, 48.2, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = HORDE_ONLY,
@@ -3852,8 +3848,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29403, {	-- The Collector's Agent (Alliance)
-			["qg"] = 54021,	-- Hudson Barnes
 			["sourceQuest"] = 29402,	-- Taking Precautions (Alliance)
+			["qg"] = 54021,	-- Hudson Barnes
 			["coord"] = { 64, 46.4, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
@@ -3866,8 +3862,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29427, {	-- The Collector's Agent (Horde)
-			["qg"] = 54146,	-- Delian Sunshade
 			["sourceQuest"] = 29426,	-- Taking Precautions (Horde)
+			["qg"] = 54146,	-- Delian Sunshade
 			["coord"] = { 58, 48.2, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { TIRISFAL_GLADES },
@@ -3881,28 +3877,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(29413, {	-- The Creepy Crate (Alliance)
-			["provider"] = { "o", 209076 },	-- Anson's Crate
 			["sourceQuest"] = 29411,	-- What Now? (Alliance)
+			["provider"] = { "o", 209076 },	-- Anson's Crate
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0}
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
 		q(29429, {	-- The Creepy Crate (Horde)
-			["provider"] = { "o", 209095 },	-- Edgar's Crate
 			["sourceQuest"] = 29428,	-- What Now? (Horde)
+			["provider"] = { "o", 209095 },	-- Edgar's Crate
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0}
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
@@ -3955,8 +3951,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		q(43162, {	-- Under the Crooked Tree
-			["qg"] = 109734,	-- Hag of the Crooked Tree
 			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
+			["qg"] = 109734,	-- Hag of the Crooked Tree
 			["coord"] = { 34.9, 56.0, VALSHARAH },
 			["timeline"] = { ADDED_7_0_3 },
 			["isDaily"] = true,
@@ -3980,14 +3976,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						i(139134),	-- Hat of the Second Sister
 						i(139135),	-- Hat of the Third Sister
 						i(139136),	-- Hat of the Youngest Sister
-					}
+					},
 				}),
 			},
 		}),
 		q(29411, {	-- What Now? (Alliance)
-			["provider"] = { "o", 209072 },	-- Stolen Crate
-			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
+			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
+			["provider"] = { "o", 209072 },	-- Stolen Crate
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
@@ -3997,9 +3993,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
 		q(29428, {	-- What Now? (Horde)
-			["provider"] = { "o", 209094 },	-- Stolen Crate
-			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
 			["description"] = "Does not matter who you give it to, you still get the pet!",
+			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
+			["provider"] = { "o", 209094 },	-- Stolen Crate
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
@@ -4026,57 +4022,55 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
 			["maps"] = { 1644 },	-- The Ember Court
 			["groups"] = {
-				i(181442, {	-- Vision of Sire Denathrius
-					["questID"] = 61458,
-				}),
+				i(181442),	-- Visions of Sire Denathrius (EC!)
 			},
 		})),
 		q(76075, {	-- A Ghostly Message
-			["providers"] = {
-				{ "n", 53869 },	-- Orphan Matron Seacole (A)
-				{ "n", 53865 },	-- Orphan Matron Nanee (H)
+			["qgs"] = {
+				53869,	-- Orphan Matron Seacole (A)
+				53865,	-- Orphan Matron Nanee (H)
 			},
-			["timeline"] = { ADDED_10_1_7 },
 			["coords"] = {
 				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
 				{ 62.4, 66.6, TIRISFAL_GLADES },	-- Horde
 			},
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(206596),	-- Tome of Thomas Thomson (QI!)
 			},
 		}),
 		q(76072, {	-- Shades of Scarlet
-			["provider"] = { "n", 206158 },	-- Sir Thomas
 			["sourceQuest"] = 76075,	-- A Ghostly Message
-			["timeline"] = { ADDED_10_1_7 },
+			["provider"] = { "n", 206158 },	-- Sir Thomas
 			["coord"] = { 81.2, 44.6, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
 		}),
 		q(76073, {	-- No Laughing Matter
-			["provider"] = { "n", 205473 },	-- Sir Thomas
 			["sourceQuest"] = 76072,	-- Shades of Scarlet
-			["timeline"] = { ADDED_10_1_7 },
+			["provider"] = { "n", 205473 },	-- Sir Thomas
 			["coord"] = { 82.4, 32.7, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
 		}),
 		q(76074, {	-- The Headless Horseman, Returned
-			["provider"] = { "n", 205448 },	-- Suzannah
 			["sourceQuest"] = 76073,	-- No Laughing Matter
-			["timeline"] = { ADDED_10_1_7 },
+			["provider"] = { "n", 205448 },	-- Suzannah
 			["coord"] = { 83.5, 30.8, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
 		}),
 		q(77779, {	-- The Tale of Sir Thomas
-			["provider"] = { "n", 209609 },	-- Sir Thomas
 			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
-			["timeline"] = { ADDED_10_1_7 },
+			["provider"] = { "n", 209609 },	-- Sir Thomas
 			["coord"] = { 43, 53, SCARLET_MONASTERY },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(208769),	-- Tome of Thomas Thomson
 			},
@@ -4252,28 +4246,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 44.2, 51.0, LUNARFALL },
 			},
 			["groups"] = {
-				i(128664, {	-- Creepy Crawlers
+				i(128664, {	-- Creepy Crawlers (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39759,
 				}),
-				i(128660, {	-- Ghoulish Guises
+				i(128660, {	-- Ghoulish Guises (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39758,
 				}),
-				i(128661, {	-- Hallow's Glow
+				i(128661, {	-- Hallow's Glow (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39612,
 				}),
-				i(128662, {	-- Seer's Invitation
+				i(128662, {	-- Seer's Invitation (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39613,
 				}),
 				i(33226, {	-- Tricky Treat
 					["cost"] = { { "i", 128658, 1 }, },	-- 1x Spooky Supplies
 				}),
-				i(128663, {	-- Witch's Brew
+				i(128663, {	-- Witch's Brew (CI!)
 					["cost"] = { { "i", 128658, 5 }, },	-- 5x Spooky Supplies
-					["questID"] = 39611,
 				}),
 			},
 		}),

@@ -9,52 +9,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38274, {	-- Faldir's Cove
-							["sourceQuest"] = 26628,	-- Death From Below
-						}),
-						crit(38275, {	-- Refuge Pointe (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26117,	-- For Southshore
-							},
-						}),
-						crit(38276, {	-- Refuge Pointe (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26038,	-- Attack on the Tower
-							},
-						}),
-						crit(38277, {	-- Myzrael's Tale (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26049,	-- The Princess Unleashed (A)
-						}),
-						crit(38270, {	-- Galen's Fall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26081,	-- Alina's Reward
-							},
-						}),
-						crit(38271, {	-- Galen's Fall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26029,	-- The Real Threat
-							},
-						}),
-						crit(38272, {	-- Hammerfall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26912,	-- The Princess Unleashed (H)
-							},
-						}),
-						crit(38273, {	-- Hammerfall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26108,	-- Guile of the Raptor
-							},
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26628,	-- Death From Below
@@ -68,7 +24,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(761),	-- Explore Arathi Highlands
+				ach(761),	-- Explore Arathi Highlands
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -174,15 +130,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
 						["races"] = HORDE_ONLY,
-						["g"] = CLASSIC_TBC_ELEMENTAL,
+						["groups"] = CLASSIC_TBC_ELEMENTAL,
 					}),
 				}),
 			}),
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79677, {	-- A Quick Grocery Run
-					["qg"] = 217300,	-- Skonk <Amateur Chef>
 					["sourceQuest"] = 79624,	-- Anyone Can Cook
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
 					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_1_15_1 },
 					["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, BADLANDS },
@@ -217,8 +173,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(26081, {	-- Alina's Reward
-					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26033,	-- Trol'kalar
+					["qg"] = 41944,	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -244,11 +200,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(695, {	-- An Apprentice's Enchantment
+					["sourceQuest"] = 694,	-- Trelane's Defenses
 					["providers"] = {
 						{ "n", 2788 },	-- Apprentice Kryten
 						{ "i", 4529 },	-- Enchanted Agate
 					},
-					["sourceQuest"] = 694,	-- Trelane's Defenses
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -277,8 +233,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(696, {	-- Attack on the Tower
-					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 46.65, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -308,8 +264,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26038, {	-- Attack on the Tower
-					["qg"] = 41983,	-- Apprentice Kryten
 					["sourceQuest"] = 26037,	-- Trelane's Defenses
+					["qg"] = 41983,	-- Apprentice Kryten
 					["coord"] = { 13.0, 69.2, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -356,8 +312,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(652, {	-- Breaking the Keystone
-					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 651,	-- Stones of Binding
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["coord"] = { 36.2, 57.5, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -369,8 +325,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26042, {	-- Breaking the Keystone
-					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26041,	-- Stones of Binding
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["coord"] = { 30.0, 59.0, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -382,10 +338,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(677, {	-- Call to Arms (1/3)
-					["qg"] = 2771,	-- Drum Fel
 					-- #if BEFORE WRATH
 					["sourceQuest"] = 676,	-- The Hammer May Fall
 					-- #endif
+					["qg"] = 2771,	-- Drum Fel
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -403,8 +359,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(678, {	-- Call to Arms (2/3)
-					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 677,	-- Call to Arms (1/3)
+					["qg"] = 2771,	-- Drum Fel
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -419,8 +375,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(679, {	-- Call to Arms (3/3)
-					["qg"] = 2771,	-- Drum Fel
 					["sourceQuest"] = 678,	-- Call to Arms (2/3)
+					["qg"] = 2771,	-- Drum Fel
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -441,8 +397,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26027, {	-- Call to Arms
-					["qg"] = 41966,	-- Deathstalker Maudria
 					["sourceQuest"] = 26053,	-- Clearing the Highlands
+					["qg"] = 41966,	-- Deathstalker Maudria
 					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -488,12 +444,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26429, {	-- Crush the Witherbark
-					["qg"] = 2771,	-- Drum Fel
-					-- not required as of 2018/2024
 					-- ["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
+					["qg"] = 2771,	-- Drum Fel
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					-- not required as of 2018/2024
 					["groups"] = {
 						objective(1, {	-- 0/10 Witherbark Axe Thrower slain
 							["provider"] = { "n", 2554 },	-- Witherbark Axe Thrower
@@ -510,14 +466,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(635, {	-- Crystal in the Mountains
-					["provider"] = { "i", 4614 },	-- Pendant of Myzrael
 					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
+					["provider"] = { "i", 4614 },	-- Pendant of Myzrael
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 				}),
 				q(667, {	-- Death From Below
-					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
 					["sourceQuest"] = 670,	-- Sunken Treasure (5/5)
+					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
 					["coord"] = { 32.2, 81.6, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -531,8 +487,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26628, {	-- Death From Below
-					["qg"] = 2610,	-- Shakes O'Breen
 					["sourceQuest"] = 26052,	-- Speak to Shakes
+					["qg"] = 2610,	-- Shakes O'Breen
 					["coord"] = { 25.9, 83.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -557,8 +513,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(662, {	-- Deep Sea Salvage
-					["qg"] = 2767,	-- First Mate Nilzlix
 					["sourceQuest"] = 663,	-- Land Ho!
+					["qg"] = 2767,	-- First Mate Nilzlix
 					["coord"] = { 32.6, 81.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -639,11 +595,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26022, {	-- First Blood
-					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuests"] = {
 						28572,	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
 						28619,	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
 					},
+					["qg"] = 41949,	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -659,8 +615,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26117, {	-- For Southshore
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26116,	-- Kinelory Strikes
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -697,8 +653,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(673, {	-- Foul Magics (2/2)
-					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 671,	-- Foul Magics (1/2)
+					["qg"] = 2706,	-- Tor'gan
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -723,8 +679,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(701, {	-- Guile of the Raptor (1/3)
-					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 675,	-- Raising Spirits (3/3)
+					["qg"] = 2706,	-- Tor'gan
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -737,19 +693,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(702, {	-- Guile of the Raptor (2/3)
+					["sourceQuest"] = 701,	-- Guile of the Raptor (1/3)
 					["providers"] = {
 						{ "n", 2706 },	-- Tor'gan
 						{ "i", 4528 },	-- Tor'gan's Orb
 					},
-					["sourceQuest"] = 701,	-- Guile of the Raptor (1/3)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
 				q(847, {	-- Guile of the Raptor (3/3)
-					["qg"] = 2792,	-- Gor'mul
 					["sourceQuest"] = 702,	-- Guile of the Raptor (2/3)
+					["qg"] = 2792,	-- Gor'mul
 					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -761,8 +717,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26108, {	-- Guile of the Raptor
-					["qg"] = 42130,	-- Gor'mul
 					["sourceQuest"] = 26107,	-- Raising Spirits
+					["qg"] = 42130,	-- Gor'mul
 					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -796,15 +752,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 29,
 				}),
 				q(26084, {	-- Hammerfall
-					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26081,	-- Alina's Reward
+					["qg"] = 41949,	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26083, {	-- Hello Lolo
-					["qg"] = 42088,	-- Goutgut
 					["sourceQuest"] = 26081,	-- Alina's Reward
+					["qg"] = 42088,	-- Goutgut
 					["coord"] = { 12.8, 34.0, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -827,8 +783,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(658, {	-- Hints of a New Plague? (2/5)
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 659,	-- Hints of a New Plague? (1/5)
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -843,24 +799,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(657, {	-- Hints of a New Plague? (3/5)
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 658,	-- Hints of a New Plague? (2/5)
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(660, {	-- Hints of a New Plague? (4/5)
-					["qg"] = 2713,	-- Kinelory
 					["sourceQuest"] = 657,	-- Hints of a New Plague? (3/5)
+					["qg"] = 2713,	-- Kinelory
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(661, {	-- Hints of a New Plague? (5/5)
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 660,	-- Hints of a New Plague? (4/5)
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 60.2, 53.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -876,6 +832,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6623, {	-- Horde Trauma
+					["description"] =
+						-- #if AFTER BFA
+						"Needs a minimum of 225 skill in Tailoring.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
+						-- #else
+						"Needs a minimum of 225 skill in First Aid.",
+						-- #endif
 					["qgs"] = {
 						-- #if AFTER CATA
 						45540,	-- Krenk Choplimb
@@ -890,12 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.0, 84.6, ORGRIMMAR },
 						-- #endif
 					},
-					["description"] =
-						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.\n\nThis quest inadvertently becomes unavailable due to phasing which occurs once an Account has unlocked the allied race: Highmountain Tauren. If you manage to complete this quest while in that situation, please let us know on Discord!",
-						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
-						-- #endif
+					["timeline"] = { REMOVED_7_3_5 },
 					["requireSkill"] =
 						-- #if AFTER BFA
 						TAILORING,
@@ -903,18 +860,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						FIRST_AID,
 						-- #endif
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 35, 10),
-					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
-					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					-- ["DisablePartySync"] = true,
 					-- ["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
 					-- #endif
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 35, 10),
+					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
 				}),
 				q(26110, {	-- Just Like Old Times
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26113,	-- Quae and Kinelory
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -927,8 +883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26116, {	-- Kinelory Strikes
-					["qg"] = 2713,	-- Kinelory
 					["sourceQuest"] = 26114,	-- Quae Trusts You
+					["qg"] = 2713,	-- Kinelory
 					["coord"] = { 54.8, 55.4, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -959,11 +915,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(697, {	-- Malin's Request (2/2)
+					["sourceQuest"] = 696,	-- Attack on the Tower
 					["providers"] = {
 						{ "n", 2789 },	-- Skuerto
 						{ "i", 4533 },	-- Sealed Letter to Archmage Malin
 					},
-					["sourceQuest"] = 696,	-- Attack on the Tower
 					["coord"] = { 46.6, 47, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -998,8 +954,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79242, {	-- No Honor Among Thieves
-					["qg"] = 215643,	-- Tokal
 					["sourceQuest"] = 79236,	-- Cherry for Your Thoughts?
+					["qg"] = 215643,	-- Tokal
 					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
 					["timeline"] = { ADDED_1_15_1 },
 					["lvl"] = 30,
@@ -1097,11 +1053,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26093, {	-- Northfold Manor
-					["qg"] = 2700,	-- Captain Nials
 					["sourceQuests"] = {
 						28573,	-- Hero's Call: Arathi Highlands!
 						26139,	-- Into Arathi
 					},
+					["qg"] = 2700,	-- Captain Nials
 					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1125,15 +1081,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26114, {	-- Quae Trusts You
-					["qg"] = 2712,	-- Quae
 					["sourceQuest"] = 26110,	-- Just Like Old Times
+					["qg"] = 2712,	-- Quae
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(672, {	-- Raising Spirits (1/3)
-					["qg"] = 2706,	-- Tor'gan
 					["sourceQuest"] = 655,	-- Hammerfall
+					["qg"] = 2706,	-- Tor'gan
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1149,19 +1105,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(674, {	-- Raising Spirits (2/3)
+					["sourceQuest"] = 672,	-- Raising Spirits (1/3)
 					["providers"] = {
 						{ "n", 2706 },	-- Tor'gan
 						{ "i", 4526 },	-- Raptor Talon Amulet
 					},
-					["sourceQuest"] = 672,	-- Raising Spirits (1/3)
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
 				q(675, {	-- Raising Spirits (3/3)
-					["qg"] = 2792,	-- Gor'mul
 					["sourceQuest"] = 674,	-- Raising Spirits (2/3)
+					["qg"] = 2792,	-- Gor'mul
 					["coord"] = { 72.6, 34, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1196,8 +1152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(643, {	-- Sigil of Arathor
-					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 641,	-- Sigil of Thoradin
+					["qg"] = 2703,	-- Zengu
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1210,8 +1166,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26032, {	-- Sigil of Arathor
-					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
+					["qg"] = 41944,	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1224,8 +1180,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(639, {	-- Sigil of Strom
-					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 638,	-- Trollbane
+					["qg"] = 2703,	-- Zengu
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1243,8 +1199,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26030, {	-- Sigil of Strom
-					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
+					["qg"] = 41944,	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1261,19 +1217,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(641, {	-- Sigil of Thoradin
+					["sourceQuest"] = 640,	-- The Broken Sigil
 					["providers"] = {
 						{ "n", 2706 },	-- Tor'gan
 						{ "i", 4453 },	-- Sigil of Thoradin
 					},
-					["sourceQuest"] = 640,	-- The Broken Sigil
 					["coord"] = { 74.6, 36.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 				}),
 				q(26031, {	-- Sigil of Thoradin
-					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26030,	-- Sigil of Strom
+					["qg"] = 41944,	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1290,8 +1246,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(644, {	-- Sigil of Trollbane
-					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 643,	-- Sigil of Arathor
+					["qg"] = 2703,	-- Zengu
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1304,17 +1260,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26052, {	-- Speak to Shakes
+					["sourceQuest"] = 26051,	-- Sunken Treasure
 					["providers"] = {
 						{ "n", 2774 },	-- Doctor Draxlegauge
 						{ "i", 4493 },	-- Elven Gems
 					},
-					["sourceQuest"] = 26051,	-- Sunken Treasure
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(651, {	-- Stones of Binding
-					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuest"] = 642,	-- The Princess Trapped
+					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["coord"] = { 84.3, 30.9, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1343,8 +1299,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26041, {	-- Stones of Binding
-					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuest"] = 26039,	-- The Princess Trapped
+					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["coord"] = { 79.8, 31.6, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1372,8 +1328,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(682, {	-- Stromgarde Badges
-					["qg"] = 2700,	-- Captain Nials
 					["sourceQuest"] = 681,	-- Northfold Manor
+					["qg"] = 2700,	-- Captain Nials
 					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1393,8 +1349,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26095, {	-- Stromgarde Badges
-					["qg"] = 2700,	-- Captain Nials
 					["sourceQuest"] = 26093,	-- Northfold Manner
+					["qg"] = 2700,	-- Captain Nials
 					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1439,8 +1395,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 				}),
 				q(656, {	-- Summoning the Princess
-					["qg"] = 2785,	-- Theldurin the Lost
 					["sourceQuest"] = 692,	-- The Lost Fragments
+					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.4, 76.8, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1465,11 +1421,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(666, {	-- Sunken Treasure (2/5)
+					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 					["providers"] = {
 						{ "n", 2774 },	-- Doctor Draxlegauge
 						{ "i", 4491 },	-- Goggles of Gem Hunting
 					},
-					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -1490,42 +1446,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(668, {	-- Sunken Treasure (3/5)
+					["sourceQuest"] = 666,	-- Sunken Treasure (2/5)
 					["providers"] = {
 						{ "n", 2774 },	-- Doctor Draxlegauge
 						{ "i", 4493 },	-- Elven Gems
 					},
-					["sourceQuest"] = 666,	-- Sunken Treasure (2/5)
 					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(669, {	-- Sunken Treasure (4/5)
+					["sourceQuest"] = 668,	-- Sunken Treasure (3/5)
 					["providers"] = {
 						{ "n", 2610 },	-- Shakes O'Breen
 						{ "i", 4502 },	-- Sample Elven Gem
 					},
-					["sourceQuest"] = 668,	-- Sunken Treasure (3/5)
 					["coord"] = { 32.2, 81.4, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
 				q(670, {	-- Sunken Treasure (5/5)
+					["sourceQuest"] = 669,	-- Sunken Treasure (4/5)
 					["providers"] = {
 						{ "n", 2487 },	-- Fleet Master Seahorn <Blackwater Raiders>
 						{ "i", 4494 },	-- Seahorn's Sealed Letter
 					},
-					["sourceQuest"] = 669,	-- Sunken Treasure (4/5)
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 				}),
 				q(26051, {	-- Sunken Treasure
+					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["providers"] = {
 						{ "n", 2774 },	-- Doctor Draxlegauge
 						{ "i", 4491 },	-- Goggles of Gem Hunting
 					},
-					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1552,8 +1508,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79678, {	-- Taste Testing
-					["qg"] = 217300,	-- Skonk <Amateur Chef>
 					["sourceQuest"] = 79677,	-- A Quick Grocery Run
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
 					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_1_15_1 },
 					["classes"] = { WARRIOR },
@@ -1570,8 +1526,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(640, {	-- The Broken Sigil
-					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 639,	-- Sigil of Strom
+					["qg"] = 2703,	-- Zengu
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1588,15 +1544,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26023, {	-- The Forsaken Trollbane
-					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26022,	-- First Blood
+					["qg"] = 41949,	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(676, {	-- The Hammer May Fall
-					["qg"] = 2770,	-- Tallow
 					["altQuests"] = { 677 },	-- Call to Arms (1/3)
+					["qg"] = 2770,	-- Tallow
 					["coord"] = { 61.86, 19.58, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1628,8 +1584,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26039, {	-- The Princess Trapped
-					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
+					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["coord"] = { 57.2, 34.5, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1646,13 +1602,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- The Princess Unleashed [A & H]
 					["allianceQuestData"] = q(26049, {	-- The Princess Unleashed [A]
-						["qg"] = 2789,	-- Skuerto
 						["sourceQuest"] = 26346,	-- Myzrael's Tale
+						["qg"] = 2789,	-- Skuerto
 						["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					}),
 					["hordeQuestData"] = q(26912, {	-- The Princess Unleashed [H]
-						["qg"] = 2787,	-- Zaruk
 						["sourceQuest"] = 26911,	-- Myzrael's Tale
+						["qg"] = 2787,	-- Zaruk
 						["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -1683,8 +1639,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(680, {	-- The Real Threat
-					["qg"] = 2772,	-- Korin Fel
 					["sourceQuest"] = 678,	-- Call to Arms (2/3)
+					["qg"] = 2772,	-- Korin Fel
 					["coord"] = { 74.0, 33.2, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1704,8 +1660,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26029, {	-- The Real Threat
-					["qg"] = 41966,	-- Deathstalker Maudria
 					["sourceQuest"] = 26027,	-- Call to Arms
+					["qg"] = 41966,	-- Deathstalker Maudria
 					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1747,8 +1703,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(26025, {	-- The Traitor Orc
-					["qg"] = 41949,	-- Dark Ranger Alina
 					["sourceQuest"] = 26022,	-- First Blood
+					["qg"] = 41949,	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1789,11 +1745,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79976, {	-- This Must Be The Place
+					["sourceQuest"] = 79975,	-- Eagle's Fist
 					["providers"] = {
 						{ "o", 406918 },	-- Messenger Bag
 						{ "o", 424006 },	-- Hastily Rolled-Up Satchel
 					},
-					["sourceQuest"] = 79975,	-- Eagle's Fist
 					["coord"] = { 22.5, 24.2, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_1_15_1 },
 					["lvl"] = 14,
@@ -1845,8 +1801,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(694, {	-- Trelane's Defenses
-					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 693,	-- Wand over Fist
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1860,8 +1816,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26037, {	-- Trelane's Defenses
-					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 26036,	-- Wand Over Fist
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1874,8 +1830,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6622, {	-- Triage (H)
-					["qg"] = 12920,	-- Doctor Gregory Victor
+					["description"] =
+						-- #if AFTER BFA
+						"Needs a minimum of 225 skill in Tailoring.",
+						-- #else
+						"Needs a minimum of 225 skill in First Aid.",
+						-- #endif
 					["sourceQuest"] = 6623,	-- Horde Trauma
+					["qg"] = 12920,	-- Doctor Gregory Victor
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 73.4, 36.8, ARATHI_HIGHLANDS },
@@ -1883,12 +1845,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.5, 37.8, ARATHI_HIGHLANDS },
 						-- #endif
 					},
-					["description"] =
-						-- #if AFTER BFA
-						"Needs a minimum of 225 skill in Tailoring.",
-						-- #else
-						"Needs a minimum of 225 skill in First Aid.",
-						-- #endif
 					["requireSkill"] =
 						-- #if AFTER BFA
 						TAILORING,
@@ -1916,23 +1872,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(645, {	-- Trol'kalar (1/2)
+					["sourceQuest"] = 644,	-- Sigil of Trollbane
 					["providers"] = {
 						{ "n", 2703 },	-- Zengu
 						{ "i", 4467 },	-- Sigil of Ignaeus
 						{ "o", 2703 },	-- Trollbane's Tomb
 					},
-					["sourceQuest"] = 644,	-- Sigil of Trollbane
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 				}),
 				q(646, {	-- Trol'kalar (2/2)
+					["sourceQuest"] = 645,	-- Trol'kalar (1/2)
 					["providers"] = {
 						{ "o", 2703 },	-- Trollbane's Tomb
 						{ "i", 4468 },	-- Sheathed Trol'kalar
 					},
-					["sourceQuest"] = 645,	-- Trol'kalar (1/2)
 					["coord"] = { 28.9, 59.6, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1947,11 +1903,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26033, {	-- Trol'kalar
+					["sourceQuest"] = 26032,	-- Sigil of Arathor
 					["providers"] = {
 						{ "n", 41944 },	-- Galen Trollbane
 						{ "i", 4466 },	-- Sigil of Trollbane
 					},
-					["sourceQuest"] = 26032,	-- Sigil of Arathor
 					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1974,8 +1930,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 32,
 				}),
 				q(693, {	-- Wand over Fist
-					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 691,	-- Worth Its Weight in Gold
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1989,8 +1945,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26036, {	-- Wand over Fist
-					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2130,8 +2086,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(691, {	-- Worth Its Weight in Gold
-					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)
+					["qg"] = 2788,	-- Apprentice Kryten
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2171,17 +2127,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["crs"] = {
 								2554,	-- Witherbark Axe Thrower
 								2558,	-- Witherbark Berserker
+								51631,	-- Witherbark Fisher
 								2556,	-- Witherbark Headhunter
 								2557,	-- Witherbark Shadow Hunter
 								2553,	-- Witherbark Shadowcaster
 								2552,	-- Witherbark Troll
 								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
 								2605,	-- Zalas Witherbark <Warband Leader>
 							},
 						}),
 						objective(2, {	-- 0/4 Witherbark Medicine Pouch
 							["provider"] = { "i", 4522 },	-- Witherbark Medicine Pouch
-							["cr"] = 2555,	-- Witherbark Witch Doctor
+							["crs"] = {
+								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
+							},
 						}),
 					},
 				}),
@@ -2442,7 +2403,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,
@@ -2559,7 +2520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7089, {	-- Pattern: Azure Silk Cloak
+						i(7089, {	-- Pattern: Azure Silk Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2714,6 +2675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1297, {	-- Robes of the Shadowcaster
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						2553,	-- Witherbark Shadowcaster
 						-- #if BEFORE CATA
@@ -2784,4 +2746,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		}),
 	})
 })));
-

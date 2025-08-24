@@ -1,0 +1,20 @@
+createLocalizationString({
+	readable = "[icon:logo_32x32] Collector",
+	constant = "PLAYER_RANK_COLLECTOR",
+	color = [[~_.DefaultColors.White]],
+	icon = [[~_.asset("logo_32x32")]],
+	export = true,
+	text = {
+		en = "Collector",
+		de = "Kollektor",
+		es = "Coleccionista",
+		mx = "Coleccionista",
+		fr = "Collectionneur",
+		it = "Collettore",
+		pt = "Colecionador",
+		ru = "Коллекционер",
+		ko = "수집기",
+		cn = "集电极",
+		tw = "集電極",
+	},
+})

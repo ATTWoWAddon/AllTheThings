@@ -5,13 +5,13 @@
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(EMISSARY_QUESTS, {
 		q(53982, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_UNSHACKLED, EXALTED } }, {	-- Supplies From The Unshackled
-			["races"] = HORDE_ONLY,
 			["provider"] = { "n", 154002 },	-- Atolia Seapearl
+			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169940, {	-- Unshackled Supplies
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -40,14 +40,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isWorldQuest"] = true,
 		}),
 		q(55976, bubbleDownSelf({ ["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, EXALTED } }, {	-- Supplies From The Waveblade Ankoan
-			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154140 },	-- Speaker Utia
-			["lvl"] = 120,
+			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
-			["g"] = {
+			["lvl"] = 120,
+			["groups"] = {
 				i(169939, {	-- Ankoan Supplies
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 						}),

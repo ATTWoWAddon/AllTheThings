@@ -110,7 +110,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 					29902,	-- Red Moth (PET!)
 					29903,	-- Yellow Moth (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					i(136905),	-- Ridgeback Piglet (PET!)
 					i(136908),	-- Thaumaturgical Piglet (PET!)
 					i(139789),	-- Transmutant (PET!)
@@ -166,41 +166,83 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(130905),	-- Mark of the Deceiver
 		i(87399),	-- Restored Artifact
 		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130917),	-- Flayed-Skin Chronicle
-			i(130920),	-- Houndstooth Hauberk
-			i(130916),	-- Imp's Cup
-			i(130918),	-- Malformed Abyssal
-			i(130919),	-- Orb of Inner Chaos
-			i(130932),	-- Pristine Flayed-Skin Chronicle
-			i(130935),	-- Pristine Houndstooth Hauberk
-			i(130931),	-- Pristine Imp's Cup
-			i(130933),	-- Pristine Malformed Abyssal
-			i(130934),	-- Pristine Orb of Inner Chaos
+			["providers"] = {
+				{ "o", 246812 },	-- Demonic Archaeology Find
+				-- #if AFTER 7.2.5
+				{ "o", 268466 },	-- Demonic Archaeology Find
+				{ "o", 268451 },	-- Demonic Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				AZSUNA,
+				STORMHEIM,
+				SURAMAR,
+				VALSHARAH,
+			},
+			["groups"] = {
+				i(130917),	-- Flayed-Skin Chronicle
+				i(130920),	-- Houndstooth Hauberk
+				i(130916),	-- Imp's Cup
+				i(130918),	-- Malformed Abyssal
+				i(130919),	-- Orb of Inner Chaos
+				i(130932),	-- Pristine Flayed-Skin Chronicle
+				i(130935),	-- Pristine Houndstooth Hauberk
+				i(130931),	-- Pristine Imp's Cup
+				i(130933),	-- Pristine Malformed Abyssal
+				i(130934),	-- Pristine Orb of Inner Chaos
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130907),	-- Inert Leystone Charm
-			i(130910),	-- Nobleman's Letter Opener
-			i(130909),	-- Pre-War Highborne Tapestry
-			i(130922),	-- Pristine Inert Leystone Charm
-			i(130925),	-- Pristine Nobleman's Letter Opener
-			i(130924),	-- Pristine Pre-War Highborne Tapestry
-			i(130923),	-- Pristine Quietwine Vial
-			i(130921),	-- Pristine Violetglass Vessel
-			i(130908),	-- Quietwine Vial
-			i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
-			i(130906),	-- Violetglass Vessel
+			["providers"] = {
+				{ "o", 246811 },	-- Highborne Archaeology Find
+				-- #if AFTER 7.2.0
+				{ "o", 268440 },	-- Highborne Archaeology Find
+				{ "o", 268453 },	-- Highborne Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				AZSUNA,
+				SURAMAR,
+				VALSHARAH,
+			},
+			["groups"] = {
+				i(130907),	-- Inert Leystone Charm
+				i(130910),	-- Nobleman's Letter Opener
+				i(130909),	-- Pre-War Highborne Tapestry
+				i(130922),	-- Pristine Inert Leystone Charm
+				i(130925),	-- Pristine Nobleman's Letter Opener
+				i(130924),	-- Pristine Pre-War Highborne Tapestry
+				i(130923),	-- Pristine Quietwine Vial
+				i(130921),	-- Pristine Violetglass Vessel
+				i(130908),	-- Quietwine Vial
+				i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+				i(130906),	-- Violetglass Vessel
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130914),	-- Drogbar Gem-Roller
-			i(130913),	-- Hand-Smoothed Pyrestone
-			i(130912),	-- Moosebone Fish-Hook
-			i(130929),	-- Pristine Drogbar Gem-Roller
-			i(130928),	-- Pristine Hand-Smoothed Pyrestone
-			i(130927),	-- Pristine Moosebone Fish-Hook
-			i(130930),	-- Pristine Stonewood Bow
-			i(130926),	-- Pristine Trailhead Drum
-			i(130915),	-- Stonewood Bow
-			i(130911),	-- Trailhead Drum
+			["providers"] = {
+				{ "o", 246804 },	-- Highmountain Tauren Archaeology Find
+				-- #if AFTER 7.2.0
+				{ "o", 268450 },	-- Highmountain Tauren Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				HIGHMOUNTAIN,
+				652,	-- Thunder Totem
+				750,	-- Thunder Totem
+			},
+			["groups"] = {
+				i(130914),	-- Drogbar Gem-Roller
+				i(130913),	-- Hand-Smoothed Pyrestone
+				i(130912),	-- Moosebone Fish-Hook
+				i(130929),	-- Pristine Drogbar Gem-Roller
+				i(130928),	-- Pristine Hand-Smoothed Pyrestone
+				i(130927),	-- Pristine Moosebone Fish-Hook
+				i(130930),	-- Pristine Stonewood Bow
+				i(130926),	-- Pristine Trailhead Drum
+				i(130915),	-- Stonewood Bow
+				i(130911),	-- Trailhead Drum
+			},
 		})),
 	}),
 	prof(BLACKSMITHING, {
@@ -354,39 +396,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(134125),	-- Mecha-Bond Imprint Matrix (CI!)
 			i(132511),	-- Pump-Action Bandage Gun
 			i(132523),	-- Reaves Battery
-			i(132530, {	-- Reaves Module: Bling Mode
-				["questID"] = 40736,	-- FLAG - Reaves Bling Module
+			i(132530, {	-- Reaves Module: Bling Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132526, {	-- Reaves Module: Failure Detection Mode
-				["questID"] = 40733,	-- FLAG - Reaves Failure Detection Module
+			i(132526, {	-- Reaves Module: Failure Detection Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132528, {	-- Reaves Module: Fireworks Display Mode
-				["questID"] = 40734,	-- FLAG - Reaves Fireworks Module
+			i(132528, {	-- Reaves Module: Fireworks Display Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132531, {	-- Reaves Module: Piloted Combat Mode
-				["questID"] = 40737,	-- FLAG - Reaves Piloted Combat Module
+			i(132531, {	-- Reaves Module: Piloted Combat Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132525, {	-- Reaves Module: Repair Mode
-				["questID"] = 40732,	-- FLAG - Reaves Repair Module
+			i(132525, {	-- Reaves Module: Repair Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132529, {	-- Reaves Module: Snack Distribution Mode
-				["questID"] = 40735,	-- FLAG - Reaves Snack Distribution Module
+			i(132529, {	-- Reaves Module: Snack Distribution Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
-			i(132524, {	-- Reaves Module: Wormhole Generator Mode
-				["questID"] = 40738,	-- FLAG - Reaves Wormhole Generator Module
+			i(132524, {	-- Reaves Module: Wormhole Generator Mode (CI!)
 				["requireSkill"] = ENGINEERING,
 			}),
 			i(144341, {["timeline"] = {ADDED_7_1_5}}),	-- Rechargeable Reaves Battery
 			i(132982),	-- Sonic Environment Enhancer
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(142332, {["timeline"] = {ADDED_7_1_0}}),	-- Feathered Luffa
 		i(133940),	-- Silkweave Bandage
@@ -510,6 +545,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(139315, {	-- Grimoire of the Wrathguard (CI!)
 				["timeline"] = { ADDED_7_2_0 },
 			}),
+			i(139339),	-- Glyph of Yu'lon's Grace (CI!)
 		}),
 		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion
@@ -544,7 +580,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	prof(FISHING, {
 		spell(201943, {	-- Better Luck Next Time
 			["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
-			["g"] = {
+			["groups"] = {
 				i(142528),	-- Crate of Bobbers: Can of Worms (TOY!)
 				i(142529),	-- Crate of Bobbers: Cat Head (TOY!)
 				i(142530),	-- Crate of Bobbers: Tugboat (TOY!)
@@ -714,43 +750,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 	}),
 	prof(TAILORING, {
-		filter(BAGS, {
-			i(142075),	-- Imbued Silkweave Bag
-			i(127035),	-- Silkweave Satchel
-		}),
-		n(BACK, {
-			i(127019),	-- Imbued Silkweave Cover
-			i(127020),	-- Imbued Silkweave Drape
-			i(127034),	-- Imbued Silkweave Flourish
-			i(127033),	-- Imbued Silkweave Shade
-			i(127016),	-- Silkweave Cover
-			i(127017),	-- Silkweave Drape
-			i(127032),	-- Silkweave Flourish
-			i(127031),	-- Silkweave Shade
-		}),
-		filter(CLOTH, {
-			i(146666),	-- Celumbra, the Night's Dichotomy
-			i(151771),	-- Festival Dress
-			i(151772),	-- Festival Suit
-			i(151792),	-- Green Winter Clothes
+		n(ARMOR, {
+			i(146666, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy
 			i(127002),	-- Imbued Silkweave Bracers
 			i(127001),	-- Imbued Silkweave Cinch
+			i(127019),	-- Imbued Silkweave Cover
+			i(127020),	-- Imbued Silkweave Drape
 			i(127000),	-- Imbued Silkweave Epaulets
+			i(127034),	-- Imbued Silkweave Flourish
 			i(126997),	-- Imbued Silkweave Gloves
 			i(126998),	-- Imbued Silkweave Hood
 			i(126999),	-- Imbued Silkweave Pantaloons
 			i(126995),	-- Imbued Silkweave Robe
+			i(127033),	-- Imbued Silkweave Shade
 			i(126996),	-- Imbued Silkweave Slippers
-			i(151571),	-- Lightweave Breeches
-			i(151790),	-- Red Winter Clothes
+			i(151571, {["timeline"] = {ADDED_7_3_0}}),	-- Lightweave Breeches
 			i(126994),	-- Silkweave Bracers
 			i(126993),	-- Silkweave Cinch
+			i(127016),	-- Silkweave Cover
+			i(127017),	-- Silkweave Drape
 			i(126992),	-- Silkweave Epaulets
+			i(127032),	-- Silkweave Flourish
 			i(126989),	-- Silkweave Gloves
 			i(126990),	-- Silkweave Hood
 			i(126991),	-- Silkweave Pantaloons
 			i(126987),	-- Silkweave Robe
 			i(126988),	-- Silkweave Slippers
+			i(127031),	-- Silkweave Shade
+		}),
+		filter(BAGS, {
+			i(142075, {["timeline"] = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
+			i(127035),	-- Silkweave Satchel
+		}),
+		filter(MISC, {
+			i(139503),	-- Bloodtotem Saddle Blanket
+			i(137556),	-- Clothes Chest: Dalaran Citizens
+			i(137557),	-- Clothes Chest: Karazhan Opera House
+			i(137558),	-- Clothes Chest: Molten Core
+			-- #if AFTER BFA
+			i(133940),	-- Silkweave Bandage
+			i(133942),	-- Silkweave Splint
+			-- #endif
+		}),
+		filter(REAGENTS, {
+			i(127004),	-- Imbued Silkweave
 		}),
 	}),
 }))));

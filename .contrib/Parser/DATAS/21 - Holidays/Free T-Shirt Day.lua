@@ -8,6 +8,8 @@ FREE_T_SHIRT_DAY_HEADER = createHeader({
 	eventID = EVENTS.FREE_T_SHIRT_DAY,
 	text = {
 		en = "Free T-Shirt Day",
+		es = "Día de las Camisetas Gratis",
+		mx = "Día de camisetas gratis",
 		ru = "День бесплатных футболок",
 		cn = "免费T恤日",
 		tw = "免費T恤日",
@@ -19,7 +21,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 			["description"] = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",
 			["races"] = HORDE_ONLY,
 			["maps"] = { ORGRIMMAR },
-			["g"] = {
+			["groups"] = {
 				i(167183),	-- Amber Filigreed Doublet
 				i(167187),	-- Amber Filigreed Shirt
 				i(167197),	-- Antiseptic-Soaked Dressing
@@ -54,7 +56,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 			["description"] = "This NPC wanders around in Stormwind and shoots T-Shirts on the ground where you can pick them up.",
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = { STORMWIND_CITY },
-			["g"] = {
+			["groups"] = {
 				i(167183),	-- Amber Filigreed Doublet
 				i(167187),	-- Amber Filigreed Shirt
 				i(167197),	-- Antiseptic-Soaked Dressing
@@ -89,43 +91,43 @@ root(ROOTS.Holidays, applyevent(EVENTS.FREE_T_SHIRT_DAY, n(FREE_T_SHIRT_DAY_HEAD
 	n(VENDORS, {
 		n(150948, {	-- Gild Crewneck
 			["coord"] = { 60.3, 52.5, STORMHEIM },
-			["g"] = {
+			["groups"] = {
 				i(167226),	-- Gild's Crewneck
 			},
 		}),
 		n(146961, {	-- Jade Lovelyshirts
 			["coord"] = { 61.9, 58.8, VALLEY_OF_THE_FOUR_WINDS },
-			["g"] = {
+			["groups"] = {
 				i(167207),	-- Jade's Lovely Shirt
 			},
 		}),
 		n(150904, {	-- Melvin Shirtson
 			["coord"] = { 74.3, 53.0, EASTERN_PLAGUELANDS },
-			["g"] = {
+			["groups"] = {
 				i(167220),	-- Threads of Tirion
 			},
 		}),
 		n(150945, {	-- Selis Silksong
 			["coord"] = { 67.7, 27.7, SHATTRATH_CITY },
-			["g"] = {
+			["groups"] = {
 				i(167222),	-- Selis' Silk Shirt
 			},
 		}),
 		n(150905, {	-- Shirtsi Clothpatch
 			["coord"] = { 59.6, 50.3, WINTERSPRING },
-			["g"] = {
+			["groups"] = {
 				i(167229),	-- Shirtsi's Cloth Shirt
 			},
 		}),
 		n(150946, {	-- Shuurt the Clothripper
 			["coord"] = { 49.8, 51.5, GRIZZLY_HILLS },
-			["g"] = {
+			["groups"] = {
 				i(167212),	-- Shuurt's Precious
 			},
 		}),
 		n(150950, {	-- Tia Shortsleeve
 			["coord"] = { 84.4, 30.9, TALADOR },
-			["g"] = {
+			["groups"] = {
 				i(167215),	-- Tia Shortsleeve's Short Sleeve Shirt
 			},
 		}),

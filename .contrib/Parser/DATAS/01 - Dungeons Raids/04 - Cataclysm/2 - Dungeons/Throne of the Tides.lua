@@ -18,18 +18,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			}, {
 				q(28834, {	-- Rescue the Earthspeaker!
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 50270,	-- Captain Taylor
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28833, {	-- Rescue the Earthspeaker!
-					["races"] = HORDE_ONLY,
 					["qg"] = 50272,	-- Legionnaire Nazgrim
+					["races"] = HORDE_ONLY,
 				}),
 			})),
 			n(QUESTS, {
 				q(28836, {	-- Sins of the Sea Witch
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 50270,	-- Captain Taylor
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest
@@ -37,8 +37,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28843, {	-- Sins of the Sea Witch
-					["races"] = HORDE_ONLY,
 					["qg"] = 50272,	-- Legionnaire Nazgrim
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(65657),	-- Deepmist Robes
 						i(65659),	-- Kelp Forest Vest

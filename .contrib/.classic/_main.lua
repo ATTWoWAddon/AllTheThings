@@ -8,4 +8,5 @@ _ = AllTheThings;
 -- #IMPORT: ..\\lib\\Constants
 -- #IMPORT: ..\\lib\\Functions
 -- #IMPORT: ..\\lib\\Headers
+-- #IMPORT: ..\\lib\\Strings
 -- #IMPORT: ..\\lib\\Structures

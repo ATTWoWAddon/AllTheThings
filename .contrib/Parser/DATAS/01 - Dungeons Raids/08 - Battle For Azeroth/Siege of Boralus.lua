@@ -9,19 +9,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		},
 		["maps"] = { 1162 },	-- Siege of Boralus
 		["lvl"] = 120,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(53128, {	-- The Lord Admiral's Lament
 					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(163336),	-- Illegible Correspondence (QI!)
 					},
 				}),
 				q(53127, {	-- The Lord Admiral's Lament
 					["provider"] = { "o", 296479 },	-- Lord Admiral's Footlocker
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(163336),	-- Illegible Correspondence (QI!)
 					},
 				}),
@@ -45,12 +45,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			-- #if BEFORE 8.1.0
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
-						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = { 128650 },	-- Chopper Redhook
-						["g"] = {
+						["groups"] = {
 							i(159972),	-- Mutineer's Fate
 							i(159973),	-- Boarder's Billy Club
 							i(159968),	-- Gloves of the Iron Reavers
@@ -62,10 +62,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2133, {	-- Sergeant Bainbridge [1st Encounter - Horde]
-						-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is Horde-only. We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = HORDE_ONLY,
 						["crs"] = { 128649 },	-- Sergeant Bainbridge
-						["g"] = {
+						["groups"] = {
 							i(159647),	-- Siegebreaker's Halberd
 							i(159648),	-- Bainbridge's Blackjack
 							i(159328),	-- Wharf Warden's Gloves
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
-						["g"] = {
+						["groups"] = {
 							ach(12727),	-- Stand by Me
 							i(159649),	-- Saber of Dread Pirate Lockwood
 							i(159372),	-- Dread Captain's Irons
@@ -94,7 +94,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2134, {	-- Hadal Darkfathom [3rd Encounter - Both Factions]
 						["crs"] = { 128651 },	-- Hadal Darkfathom
-						["g"] = {
+						["groups"] = {
 							i(159650),	-- Dismembered Submersible Claw
 							i(159386),	-- Anchor Chain Girdle
 							i(159322),	-- Seawalker's Pantaloons
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
 							ach(13007),	-- Siege of Boralus Guild Run
@@ -128,10 +128,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			-- #if AFTER 11.0.2
 			-- #if BEFORE 11.1.0
 			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["g"] = {
+				["groups"] = {
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							i(159310),	-- Circlet of the Enveloping Leviathan
 							i(159252),	-- Grasping Crown of the Deep
 							i(159376),	-- Hook-Barbed Spaulders
@@ -145,12 +145,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
-						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = ALLIANCE_ONLY,
 						["crs"] = { 128650 },	-- Chopper Redhook
-						["g"] = {
+						["groups"] = {
 							i(159972),	-- Mutineer's Fate
 							i(159973),	-- Boarder's Billy Club
 							i(159968),	-- Gloves of the Iron Reavers
@@ -162,10 +162,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					e(2133, {	-- Sergeant Bainbridge [1st Encounter - Horde]
-						-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is Horde-only. We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = HORDE_ONLY,
 						["crs"] = { 128649 },	-- Sergeant Bainbridge
-						["g"] = {
+						["groups"] = {
 							i(159647),	-- Siegebreaker's Halberd
 							i(159648),	-- Bainbridge's Blackjack
 							i(159328),	-- Wharf Warden's Gloves
@@ -178,7 +178,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
-						["g"] = {
+						["groups"] = {
 							i(159649),	-- Saber of Dread Pirate Lockwood
 							i(159372),	-- Dread Captain's Irons
 							i(159237),	-- Captain's Dustfinders
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2134, {	-- Hadal Darkfathom [3rd Encounter - Both Factions]
 						["crs"] = { 128651 },	-- Hadal Darkfathom
-						["g"] = {
+						["groups"] = {
 							i(159650),	-- Dismembered Submersible Claw
 							i(159386),	-- Anchor Chain Girdle
 							i(159322),	-- Seawalker's Pantaloons
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
@@ -214,10 +214,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders
@@ -231,16 +231,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
-						["g"] = {
+						["groups"] = {
 							ach(12727),	-- Stand by Me
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
 							ach(13007),	-- Siege of Boralus Guild Run
@@ -252,14 +252,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
-						-- This fight is was Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is was Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						-- #if BEFORE 11.1.0
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 						["crs"] = { 128650 },	-- Chopper Redhook
-						["g"] = {
+						["groups"] = {
 							i(159972),	-- Mutineer's Fate
 							i(159973),	-- Boarder's Billy Club
 							i(159968),	-- Gloves of the Iron Reavers
@@ -272,10 +272,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2133, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_11_0_2 } }, {	-- Sergeant Bainbridge [1st Encounter - Horde]
 						-- This boss was removed in TWW season 1 and did not return when the season ended
-						-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						-- This fight is Horde-only. We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = HORDE_ONLY,
 						["crs"] = { 128649 },	-- Sergeant Bainbridge
-						["g"] = {
+						["groups"] = {
 							i(159647),	-- Siegebreaker's Halberd
 							i(159648),	-- Bainbridge's Blackjack
 							i(159328),	-- Wharf Warden's Gloves
@@ -288,7 +288,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					})),
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
-						["g"] = {
+						["groups"] = {
 							i(159649),	-- Saber of Dread Pirate Lockwood
 							i(159372),	-- Dread Captain's Irons
 							i(159237),	-- Captain's Dustfinders
@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2134, {	-- Hadal Darkfathom [3rd Encounter - Both Factions]
 						["crs"] = { 128651 },	-- Hadal Darkfathom
-						["g"] = {
+						["groups"] = {
 							i(159650),	-- Dismembered Submersible Claw
 							i(159386),	-- Anchor Chain Girdle
 							i(159322),	-- Seawalker's Pantaloons
@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159310),	-- Circlet of the Enveloping Leviathan
 							i(159252),	-- Grasping Crown of the Deep
@@ -331,10 +331,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders
@@ -348,16 +348,16 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["g"] = {
+				["groups"] = {
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
-						["g"] = {
+						["groups"] = {
 							ach(12727),	-- Stand by Me
 						},
 					}),
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
-						["g"] = {
+						["groups"] = {
 							ach(12726),	-- A Fish Out of Water
 							ach(12847),	-- Siege of Boralus
 							ach(13007),	-- Siege of Boralus Guild Run

@@ -47,8 +47,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 			}),
 			n(QUESTS, {
 				q(11041, {	-- A Job Unfinished...
-					["provider"] = { "i", 32621 },	-- Partially Digested Hand
 					["sourceQuest"] = 10870,	-- Ally of the Netherwing
+					["provider"] = { "i", 32621 },	-- Partially Digested Hand
 					["minReputation"] = { FACTION_NETHERWING, NEUTRAL },	-- Netherwing, Neutral.
 					["groups"] = {
 						objective(1, {	-- 0/10 Overmine Flayer slain
@@ -64,8 +64,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11020, {	-- A Slow Death
-					["qg"] = 23141,	-- Yarzill the Merc
 					["sourceQuest"] = 11019,	-- Your Friend on the Inside
+					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
@@ -91,45 +91,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11050, {	-- Accepting All Eggs
-					["qg"] = 23141,	-- Yarzill the Merc
 					["sourceQuest"] = 11049,	-- The Great Netherwing Egg Hunt
+					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["cost"] = {{ "i", 32506, 1 }},	-- Netherwing Egg
 					["repeatable"] = true,
 				}),
 				q(11012, {	-- Blood Oath of the Netherwing
-					["qg"] = 22113,	-- Mordenai
 					["sourceQuest"] = 10870,	-- Ally of the Netherwing
+					["qg"] = 22113,	-- Mordenai
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
 				}),
 				q(11107, {	-- Bow to the Highlord
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11092,	-- Hail, Commander!
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 				}),
 				q(11100, {	-- Commander Arcus
+					["sourceQuest"] = 11099,	-- Kill Them All! (Aldor)
 					["providers"] = {
 						{ "n", 21402 },	-- Anchorite Ceyla
 						{ "i", 32842 },	-- Dragonmaw Flare Gun
 					},
-					["sourceQuest"] = 11099,	-- Kill Them All! (Aldor)
 					["coord"] = { 62.4, 28.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(11095, {	-- Commander Hobb
+					["sourceQuest"] = 11094,	-- Kill Them All! (Scryers)
 					["providers"] = {
 						{ "n", 21955 },	-- Arcanist Thelis
 						{ "i", 32842 },	-- Dragonmaw Flare Gun
 					},
-					["sourceQuest"] = 11094,	-- Kill Them All! (Scryers)
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(11083, {	-- Crazed and Confused
-					["qg"] = 23166,	-- Ronag the Slave Driver
 					["sourceQuest"] = 11075,	-- The Netherwing Mines
+					["qg"] = 23166,	-- Ronag the Slave Driver
 					["coord"] = { 71.6, 87.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					["groups"] = {
@@ -142,8 +142,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11086, {	-- Disrupting the Twilight Portal
-					["qg"] = 23139,	-- Overlord Mor'ghor
 					["sourceQuest"] = 11084,	-- Stand Tall, Captain!
+					["qg"] = 23139,	-- Overlord Mor'ghor
 					["coord"] = { 66.3, 85.6, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["maps"] = { NAGRAND },
@@ -163,8 +163,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11071, {	-- Dragonmaw Race: Captain Skyshatter
-					["qg"] = 23348,	-- Captain Skyshatter
 					["sourceQuest"] = 11070,	-- Dragonmaw Race: Wing Commander Mulverick
+					["qg"] = 23348,	-- Captain Skyshatter
 					["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 					["groups"] = {
 						ach(1638, {	-- Skyshattered
@@ -174,36 +174,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11068, {	-- Dragonmaw Race: Corlok the Vet
-					["qg"] = 23344,	-- Corlok the Vet
 					["sourceQuest"] = 11067,	-- Dragonmaw Race: Trope the Filth-Belcher
+					["qg"] = 23344,	-- Corlok the Vet
 					["coord"] = { 65.2, 85.2, SHADOWMOON_VALLEY },
 				}),
 				q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
-					["qg"] = 23340,	-- Murg "Oldie" Muckjaw
 					["sourceQuest"] = 11063,	-- Earning Your Wings
+					["qg"] = 23340,	-- Murg "Oldie" Muckjaw
 					["coord"] = { 65.2, 85.7, SHADOWMOON_VALLEY },
 				}),
 				q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
-					["qg"] = 23342,	-- Trope the Filth-Belcher
 					["sourceQuest"] = 11064,	-- Dragonmaw Race: The Ballad of Oldie McOld
+					["qg"] = 23342,	-- Trope the Filth-Belcher
 					["coord"] = { 65.2, 85.5, SHADOWMOON_VALLEY },
 				}),
 				q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
-					["qg"] = 23345,	-- Wing Commander Ichman
 					["sourceQuest"] = 11068,	-- Dragonmaw Race: Corlok the Vet
+					["qg"] = 23345,	-- Wing Commander Ichman
 					["coord"] = { 65.2, 85.1, SHADOWMOON_VALLEY },
 				}),
 				q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
-					["qg"] = 23346,	-- Wing Commander Mulverick
 					["sourceQuest"] = 11069,	-- Dragonmaw Race: Wing Commander Ichman
+					["qg"] = 23346,	-- Wing Commander Mulverick
 					["coord"] = { 65.2, 84.9, SHADOWMOON_VALLEY },
 				}),
 				q(11077, {	-- Dragons are the Least of Our Problems
-					["qg"] = 23376,	-- Dragonmaw Foreman
 					["sourceQuest"] = 11075,	-- The Netherwing Mines
+					["qg"] = 23376,	-- Dragonmaw Foreman
 					["coord"] = { 63.4, 87.4, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Nethermine Flayer slain
@@ -215,18 +215,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11063, {	-- Earning Your Wings
-					["qg"] = 22433,	-- Ja'y Nosliw
 					["sourceQuest"] = 11084,	-- Stand Tall, Captain!
+					["qg"] = 22433,	-- Ja'y Nosliw
 					["coord"] = { 65.9, 87.2, SHADOWMOON_VALLEY },
 				}),
 				q(11014, {	-- Enter the Taskmaster
-					["qg"] = 23139,	-- Overlord Mor'ghor
 					["sourceQuest"] = 11013,	-- In Service of the Illidari
+					["qg"] = 23139,	-- Overlord Mor'ghor
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 				}),
 				q(11092, {	-- Hail, Commander!
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11084,	-- Stand Tall, Captain!
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, REVERED },	-- Netherwing, Revered.
 					["groups"] = {
@@ -234,13 +234,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11013, {	-- In Service of the Illidari
-					["qg"] = 22113,	-- Mordenai
 					["sourceQuest"] = 11012,	-- Blood Oath of the Netherwing
+					["qg"] = 22113,	-- Mordenai
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
 				}),
 				q(11109, {	-- Jorus the Cobalt Netherwing Drake
-					["qg"] = 23462,	-- Jorus
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23462,	-- Jorus
 					["coord"] = { 67.8, 17.2, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {
@@ -248,31 +248,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11099, {	-- Kill Them All! (Aldor)
+					["sourceQuest"] = 11092,	-- Hail, Commander!
 					["providers"] = {
 						{ "n", 23139 },	-- Overlord Mor'ghor
 						{ "i", 32842 },	-- Dragonmaw Flare Gun
 					},
-					["sourceQuest"] = 11092,	-- Hail, Commander!
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_ALDOR, FRIENDLY },	-- The Aldor, Friendly.
 				}),
 				q(11094, {	-- Kill Them All! (Scryers)
+					["sourceQuest"] = 11092,	-- Hail, Commander!
 					["providers"] = {
 						{ "n", 23139 },	-- Overlord Mor'ghor
 						{ "i", 32842 },	-- Dragonmaw Flare Gun
 					},
-					["sourceQuest"] = 11092,	-- Hail, Commander!
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_THE_SCRYERS, FRIENDLY },	-- The Scryers, Friendly.
 				}),
 				q(11108, {	-- Lord Illidan Stormrage
-					["qg"] = 23139,	-- Overlord Mor'ghor
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23139,	-- Overlord Mor'ghor
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 				}),
 				q(11110, {	-- Malfas the Purple Netherwing Drake
-					["qg"] = 23464,	-- Malfas
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23464,	-- Malfas
 					["coord"] = { 67.8, 18.0, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {
@@ -280,39 +280,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11018, {	-- Nethercite Ore
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11014,	-- Enter the Taskmaster
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["cost"] = { { "i", 32464, 40 } },	-- Nethercite Ore
 					["requireSkill"] = MINING,
 					["isDaily"] = true,
 				}),
 				q(11017, {	-- Netherdust Pollen
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11014,	-- Enter the Taskmaster
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["cost"] = { { "i", 32468, 40 } },	-- Netherdust Pollen
 					["requireSkill"] = HERBALISM,
 					["isDaily"] = true,
 				}),
 				q(11016, {	-- Nethermine Flayer Hide
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11014,	-- Enter the Taskmaster
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["cost"] = { { "i", 32470, 35 } },	-- Nethermine Flayer Hide
 					["requireSkill"] = SKINNING,
 					["isDaily"] = true,
 				}),
 				q(11015, {	-- Netherwing Crystals
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11014,	-- Enter the Taskmaster
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["cost"] = { { "i", 32427, 30 } },	-- Netherwing Crystals
 					["isDaily"] = true,
 				}),
 				q(11111, {	-- Onyxien the Onyx Netherwing Drake
-					["qg"] = 23463,	-- Onyxien
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23463,	-- Onyxien
 					["coord"] = { 67.6, 18.4, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {
@@ -320,8 +320,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11054, {	-- Overseeing and You: Making the Right Choices
-					["qg"] = 23291,	-- Chief Overseer Mudlump
 					["sourceQuest"] = 11053,	-- Rise, Overseer!
+					["qg"] = 23291,	-- Chief Overseer Mudlump
 					["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					["groups"] = {
@@ -337,8 +337,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11076, {	-- Picking Up The Pieces...
-					["qg"] = 23149,	-- Mistress of the Mines
 					["sourceQuest"] = 11075,	-- The Netherwing Mines
+					["qg"] = 23149,	-- Mistress of the Mines
 					["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
@@ -352,8 +352,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11053, {	-- Rise, Overseer!
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11014,	-- Enter the Taskmaster
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					["groups"] = {
@@ -361,13 +361,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11082, {	-- Seeker of Truth
-					["qg"] = 23149,	-- Mistress of the Mines
 					["sourceQuest"] = 11081,	-- The Great Murkblood Revolt
+					["qg"] = 23149,	-- Mistress of the Mines
 					["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
+					["groups"] = {
+						objective(1, {	-- 0/1 Hand of the Overseer
+							["provider"] = { "i", 32734 },	-- Hand of the Overseer
+						}),
+						objective(2, {	-- 0/1 Murkblood Information Gathered
+							["provider"] = { "n", 23309 },	-- Murkblood Overseer
+						}),
+					},
 				}),
 				q(11084, {	-- Stand Tall, Captain!
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11053,	-- Rise, Overseer!
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, HONORED },	-- Netherwing, Honored.
 					["groups"] = {
@@ -375,10 +383,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11090, {	-- Subdue the Subduer
-					["qg"] = 23427,	-- Illidari Lord Balthas
 					["sourceQuest"] = 11089,	-- The Soul Cannon of Reth'hedron
+					["qg"] = 23427,	-- Illidari Lord Balthas
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
+					["maps"] = { NAGRAND },
 					["groups"] = {
+						objective(1, {	-- Subdue Reth'hedron the Subduer
+							["providers"] = {
+								{ "n", 22357 },	-- Reth'hedron the Subduer
+								{ "i", 32825 },	-- Soul Cannon
+							},
+							["coord"] = { 10.6, 41.4, NAGRAND },
+						}),
 						i(32871),	-- Horns of the Illidari
 						i(32869),	-- Illidari Lord's Tunic
 						i(32872),	-- Illidari Rod of Discipline
@@ -386,8 +402,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11112, {	-- Suraku the Azure Netherwing Drake
-					["qg"] = 23461,	-- Suraku
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23461,	-- Suraku
 					["coord"] = { 66.8, 18.4, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {
@@ -395,8 +411,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11055, {	-- The Booterang: A Cure For The Common Worthless Peon
-					["qg"] = 23291,	-- Chief Overseer Mudlump
 					["sourceQuest"] = 11054,	-- Overseeing and You: Making the Right Choices
+					["qg"] = 23291,	-- Chief Overseer Mudlump
 					["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
@@ -407,41 +423,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11101, {	-- The Deadliest Trap Ever Laid (Aldor)
-					["qg"] = 23452,	-- Commander Arcus
 					["sourceQuest"] = 11100,	-- Commander Arcus
+					["qg"] = 23452,	-- Commander Arcus
 					["coord"] = { 62.4, 29.4, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 				}),
 				q(11097, {	-- The Deadliest Trap Ever Laid (Scryers)
-					["qg"] = 23434,	-- Commander Hobb
 					["sourceQuest"] = 11095,	-- Commander Hobb
+					["qg"] = 23434,	-- Commander Hobb
 					["coord"] = { 56.6, 58.6, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 				}),
 				q(11081, {	-- The Great Murkblood Revolt
+					["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",
 					["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
-					["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 				}),
 				q(11049, {	-- The Great Netherwing Egg Hunt
-					["qg"] = 23141,	-- Yarzill the Merc
 					["sourceQuest"] = 11019,	-- Your Friend on the Inside
+					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 					["cost"] = { { "i", 32506, 1 }, },	-- Netherwing Egg
 				}),
 				q(11075, {	-- The Netherwing Mines
-					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["sourceQuest"] = 11053,	-- Rise, Overseer!
+					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 				}),
 				q(11035, {	-- The Not-So-Friendly Skies...
-					["qg"] = 23141,	-- Yarzill the Merc
 					["sourceQuest"] = 11019,	-- Your Friend on the Inside
+					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
@@ -453,9 +469,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11089, {	-- The Soul Cannon of Reth'hedron
-					["qg"] = 23427,	-- Illidari Lord Balthas
 					["sourceQuest"] = 11084,	-- Stand Tall, Captain!
+					["qg"] = 23427,	-- Illidari Lord Balthas
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
+					["maps"] = { TEROKKAR_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/2 Felsteel Bar
 							["providers"] = {
@@ -474,13 +491,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 						}),
 						objective(4, {	-- 0/1 Flawless Arcane Essence
 							["provider"] = { "i", 32822 },	-- Flawless Arcane Essence
-							["cr"] = 23100,	-- Flawless Arcane Elemental
+							["coord"] = { 44.0, 41.0, TEROKKAR_FOREST },
+							["crs"] = {
+								23100,	-- Flawless Arcane Elemental
+								23093,	-- Sar'this
+							},
 						}),
 					},
 				}),
 				q(11113, {	-- Voranaku the Violet Netherwing Drake
-					["qg"] = 23466,	-- Voranaku
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23466,	-- Voranaku
 					["coord"] = { 66.6, 17.8, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {
@@ -488,13 +509,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					},
 				}),
 				q(11019, {	-- Your Friend On The Inside
-					["qg"] = 23141,	-- Yarzill the Merc
 					["sourceQuest"] = 11013,	-- In Service of the Illidari
+					["qg"] = 23141,	-- Yarzill the Merc
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
 				}),
 				q(11114, {	-- Zoya the Veridian Netherwing Drake
-					["qg"] = 23465,	-- Zoya
 					["sourceQuest"] = 11107,	-- Bow to the Highlord
+					["qg"] = 23465,	-- Zoya
 					["coord"] = { 66.6, 18.6, SHATTRATH_CITY },
 					["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["groups"] = {

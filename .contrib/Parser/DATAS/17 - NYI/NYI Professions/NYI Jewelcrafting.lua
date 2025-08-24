@@ -52,7 +52,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191629),	-- 10.0 Jewelcrafting Gem Template (DNT)
 					i(193034),	-- Ludicrously Luxurious Lucky Loop
 					i(194112),	-- Straddling Illimited Diamond
@@ -62,7 +62,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(215139),	-- Copy Copy Elemental Lariat
 					i(215143),	-- Copy Copy Elemental Lariat
 					i(215146),	-- JC Gemcutting Toy
@@ -70,6 +70,92 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			expansion(EXPANSION.TBC, {
+				-- 2.1.0
+				expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
+					i(32412),	-- Design: Relentless Earthstorm Diamond
+				})),
+
+				-- 2.1.3
+				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
+					i(21958),	-- Design: Arcanite Sword Pendant
+					i(21959),	-- Design: Blood Crown
+					i(25888),	-- Primal Stone Statue
+				})),
+
+				-- 2.3.0
+				expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
+					i(34221),	-- Design: Chaotic Skyfire Diamond
+				})),
+
+				-- 2.4.0
+				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+					i(35533),	-- Design: Amulet of Flowing Life
+					i(35534),	-- Hard Khorium Band
+					i(35535),	-- Hard Khorium Choker
+					i(35536),	-- Loop of Forged Power
+					i(35537),	-- Pendant of Sunfire
+					i(35538),	-- Ring of Flowing Life
+				})),
+
+				i(21950),	-- Design: Cut Emerald - Deprecated
+				i(21951),	-- Design: Cut Azerothian Diamond
+				i(20972),	-- Design: Silver Rose Pendant
+			}),
+			expansion(EXPANSION.CATA, {
+				-- 4.0.1
+				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					i(41403),	-- ZZOLD Design: Insightful Earthsiege Diamond
+					i(41404),	-- ZZOLD Design: Bracing Earthsiege Diamond
+					i(41405),	-- ZZOLD Design: Eternal Earthsiege Diamond
+					i(41406),	-- ZZOLD Design: Powerful Earthsiege Diamond
+					i(41407),	-- ZZOLD Design: Relentless Earthsiege Diamond
+					i(41408),	-- ZZOLD Design: Austere Earthsiege Diamond
+					i(41409),	-- ZZOLD Design: Persistent Earthsiege Diamond
+					i(41410),	-- ZZOLD Design: Trenchant Earthsiege Diamond
+					i(41411),	-- ZZOLD Design: Invigorating Earthsiege Diamond
+					i(41412),	-- ZZOLD Design: Beaming Earthsiege Diamond
+					i(41413),	-- ZZOLD Design: Revitalizing Skyflare Diamond
+					i(41414),	-- ZZOLD Design: Effulgent Skyflare Diamond
+					i(41415),	-- ZZOLD Design: Tireless Skyflare Diamond
+					i(41416),	-- ZZOLD Design: Forlorn Skyflare Diamond
+					i(41417),	-- ZZOLD Design: Impassive Skyflare Diamond
+					i(41418),	-- ZZOLD Design: Chaotic Skyflare Diamond
+					i(41419),	-- ZZOLD Design: Destructive Skyflare Diamond
+					i(41420),	-- ZZOLD Design: Ember Skyflare Diamond
+					i(41421),	-- ZZOLD Design: Enigmatic Skyflare Diamond
+					i(41422),	-- ZZOLD Design: Swift Skyflare Diamond
+					i(41423),	-- ZZOLDDesign: Thundering Skyflare Diamond
+					r(73233),	-- Mystic Alicite
+					r(73259),	-- Resolute Hessonite
+				})),
+
+				-- 4.0.3
+				expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+					i(52497),	-- Design: Jeweler's Sapphire Monocle
+					i(52499),	-- Design: Figurine - King of Boars
+					i(52500),	-- Design: Figurine - Demon Panther
+					i(52501),	-- Design: Figurine - Earthen Guardian
+					i(52502),	-- Design: Figurine - Jeweled Serpent
+					i(52503),	-- Design: Figurine - Dream Owl
+				})),
+			}),
+			expansion(EXPANSION.WOD, {
+				-- 6.0.1
+				expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(116080),	-- Design: Greater Taladite Amplifier
+					i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
+					i(116087),	-- Design: Glowing Blackrock Band
+					i(116081),	-- Design: Glowing Iron Band
+					i(116084),	-- Design: Glowing Iron Choker
+					i(116088),	-- Design: Shifting Blackrock Band
+					i(116082),	-- Design: Shifting Iron Band
+					i(116085),	-- Design: Shifting Iron Choker
+					i(116089),	-- Design: Whispering Blackrock Band
+					i(116083),	-- Design: Whispering Iron Band
+					i(116086),	-- Design: Whispering Iron Choker
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -109,7 +195,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382584),	-- Opening (RECIPE!)
 					r(391784),	-- Wisp of Tyr (RECIPE!)
 					-- With SpellID attached
@@ -181,71 +267,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					r(435335),	-- Apply Socket (RECIPE!)
+					r(434019),	-- Recraft Equipment (RECIPE!)
+					-- With SpellID attached
+					i(225431),	-- Design: Vicious Jeweler's Setting (RECIPE!)
 					-- Without SpellID attached
-					i(223083),	-- Design: Elemental Focusing Lens
-					i(223084),	-- Design: Prismatic Null Stone
-					i(225431),	-- Design: Vicious Jeweler's Setting
+					i(223083),	-- Design: Elemental Focusing Lens (RECIPE!)
+					i(223084),	-- Design: Prismatic Null Stone (RECIPE!)
 				})),
 			}),
-		}),
-	}),
-	-- Needs Sorting
-	prof(JEWELCRAFTING, {
-		expansion(EXPANSION.TBC, {
-			-- 2.1.0
-			expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
-				i(32412),	-- Design: Relentless Earthstorm Diamond
-			})),
-
-			-- 2.1.3
-			expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
-				i(21958),	-- Design: Arcanite Sword Pendant
-				i(21959),	-- Design: Blood Crown
-				i(25888),	-- Primal Stone Statue
-			})),
-
-			-- 2.3.0
-			expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
-				i(34221),	-- Design: Chaotic Skyfire Diamond
-			})),
-
-			-- 2.4.0
-			expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
-				i(35533),	-- Design: Amulet of Flowing Life
-				i(35534),	-- Hard Khorium Band
-				i(35535),	-- Hard Khorium Choker
-				i(35536),	-- Loop of Forged Power
-				i(35537),	-- Pendant of Sunfire
-				i(35538),	-- Ring of Flowing Life
-			})),
-
-			i(21950),	-- Design: Cut Emerald - Deprecated
-			i(21951),	-- Design: Cut Azerothian Diamond
-			i(20972),	-- Design: Silver Rose Pendant
-		}),
-		expansion(EXPANSION.CATA, {
-			-- 4.0.1
-			expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
-				r(73259),	-- Resolute Hessonite
-				r(73233),	-- Mystic Alicite
-			})),
-		}),
-		expansion(EXPANSION.WOD, {
-			-- 6.0.1
-			expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
-				i(116080),	-- Design: Greater Taladite Amplifier
-				i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
-				i(116087),	-- Design: Glowing Blackrock Band
-				i(116081),	-- Design: Glowing Iron Band
-				i(116084),	-- Design: Glowing Iron Choker
-				i(116088),	-- Design: Shifting Blackrock Band
-				i(116082),	-- Design: Shifting Iron Band
-				i(116085),	-- Design: Shifting Iron Choker
-				i(116089),	-- Design: Whispering Blackrock Band
-				i(116083),	-- Design: Whispering Iron Band
-				i(116086),	-- Design: Whispering Iron Choker
-			})),
 		}),
 	}),
 }));

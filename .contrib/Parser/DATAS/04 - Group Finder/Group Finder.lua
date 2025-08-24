@@ -462,13 +462,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	-- #endif
 	expansion(EXPANSION.MOP, {
-		i(156698, {	-- Tranquil Satchel of Helpful Goods
+		i(156698, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #else
 			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
-			["g"] = {
+			["groups"] = {
+				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
 				i(113764),	-- Blossoming Cap*
 				i(113766),	-- Blossoming Gloves*
@@ -507,11 +508,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
 				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
 			},
-		}),
-		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["u"] = REMOVED_FROM_GAME,
+		})),
+		i(114662, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
-			["g"] = {
+			["groups"] = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
 				i(113787),	-- Blossoming Slippers
@@ -535,11 +535,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113728),	-- Kyparite Helm
 				i(113783),	-- Kyparite Stompers
 			},
-		}),
-		i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["u"] = REMOVED_FROM_GAME,
+		})),
+		i(114669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
-			["g"] = {
+			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves
 				i(113767),	-- Blossoming Mantle
@@ -561,38 +560,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113749),	-- Kyparite Pauldrons
 				i(113750),	-- Kyparite Shoulderguards
 			},
-		}),
-		i(98133, {	-- Greater Cache of Treasures
-			["timeline"] = {
-				ADDED_5_3_0,
-				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
-			},
-			["sym"] = {{"fill"}},
-		}),
-		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
-			["timeline"] = {
-				ADDED_5_1_0,
-				REMOVED_5_3_0,
-			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
-		}),
-		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
-			["timeline"] = {
-				ADDED_5_0_4,
-				REMOVED_5_1_0,
-			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
-		}),
-		i(98134, {	-- Heroic Cache of Treasures
-			["timeline"] = {
-				ADDED_5_3_0,
-				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
-			},
-			["sym"] = {{"select","itemID",98546},{"pop"}},
-		}),
+		})),
 		i(69903, {	-- Satchel of Exotic Mysteries
-			["u"] = REMOVED_FROM_GAME,
-			["sym"] = {MOP_SYM_PETS, {"select", "itemID",
+			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
+			["sym"] = { MOP_SYM_PETS, {"select", "itemID",
 				13335,	-- Deathcharger's Reins
 				43953,	-- Reins of the Blue Drake
 				44151,	-- Reins of the Blue Proto-Drake
@@ -603,7 +574,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			}},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
-			["u"] = REMOVED_FROM_GAME,
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
@@ -611,24 +582,24 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.WOD, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
-			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_3 },
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(104260, {	-- Satchel of Savage Mysteries
-			["timeline"] = { ADDED_6_0_3, REMOVED_6_1_0 },
+			["timeline"] = { ADDED_6_0_2, REMOVED_6_1_0 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
-			["g"] = {
+			["groups"] = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe
 					i(115322),	-- Turbulent Dagger
 					i(115320),	-- Turbulent Greataxe
-					i(115321),	-- Turbulent Longboww
+					i(115321),	-- Turbulent Longbow
 					i(115324),	-- Turbulent Polearm
 					i(115326),	-- Turbulent Scepter
 					i(115325),	-- Turbulent Spire
@@ -707,7 +678,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(128803, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
-			["g"] = {
+			["groups"] = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet
 					i(124611),	-- Discordant Collar
@@ -841,7 +812,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
 		q(51370, {	-- Short-Supply Reward
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(160054),	-- War-Torn Satchel of Cooperation
 			},
 		}),
@@ -857,7 +828,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		q(83023, {	-- Short-Supply Reward
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(224573, {	-- Crystal Satchel of Cooperation
 					i(224572),	-- Crystallized Augment Rune
 				}),

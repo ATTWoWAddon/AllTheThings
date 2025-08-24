@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	n(KYRIAN, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = {
+			["groups"] = {
 				i(186593, {	-- A Tiny Pair of Wings (Pepe!)
 					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
-					["g"] = {
+					["groups"] = {
 						i(186566),	-- Memory of the Final Sentence
 						i(187111),	-- Memory of Blind Faith
 						i(186673),	-- Memory of Kindred Affinity

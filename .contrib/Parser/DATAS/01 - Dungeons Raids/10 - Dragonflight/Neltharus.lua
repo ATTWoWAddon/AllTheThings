@@ -8,12 +8,15 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2080,	-- The Burning Cauldron
 			2081,	-- Chamber of Flames
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
-					["provider"] = { "n", 193456 },	-- Archivist Edress
+					["qgs"] = {
+						193456,	-- Archivist Edress
+						205781,	-- Archivist Edress
+					},
 					["coord"] = { 25.1, 56.2, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(193776),	-- Dragonkin Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193787),	-- Mammoth-Trainer's Cape
@@ -33,7 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
-					["g"] = {
+					["groups"] = {
 						i(193772),	-- Dragonscale Ripper
 						i(193769),	-- Erupting Spear Fragment
 						i(193727),	-- Obsidian-Hardened Wraps
@@ -43,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2489, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
-					["g"] = {
+					["groups"] = {
 						i(193782),	-- Emberguard Harness
 						i(193780),	-- Flare-Singed Strap
 						i(193784),	-- Forgemaster's Grips
@@ -55,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2494, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
-					["g"] = {
+					["groups"] = {
 						i(193789),	-- Fural's Blazing Faulds
 						i(193787),	-- Mammoth Trainer Drape
 						i(193788),	-- Molten Magma Mantle
@@ -65,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
-					["g"] = {
+					["groups"] = {
 						ach(16263),	-- Neltharus
 						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
@@ -81,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
-					["g"] = {
+					["groups"] = {
 						ach(16264),	-- Heroic: Neltharus
 					},
 				}),
@@ -89,25 +92,25 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2490, {	-- Chargath, Bane of Scales
 					["crs"] = { 189340 },	-- Chargath, Bane of Scales
-					["g"] = {
+					["groups"] = {
 						ach(16438),	-- Knowledge is... Preserved?
 					},
 				}),
 				e(2489, {	-- Forgemaster Gorek
 					["crs"] = { 189478 },	-- Forgemaster Gorek
-					["g"] = {
+					["groups"] = {
 						ach(16432),	-- Ready for Raiding VIII
 					},
 				}),
 				e(2494, {	-- Magmatusk
 					["crs"] = { 181861 },	-- Magmatusk
-					["g"] = {
+					["groups"] = {
 						ach(16453),	-- Liquid Hot Magma
 					},
 				}),
 				e(2501, {	-- Warlord Sargha
 					["crs"] = { 189901 },	-- Warlord Sargha
-					["g"] = {
+					["groups"] = {
 						ach(16265),	-- Mythic: Neltharus
 						ach(17099),	-- Mythic: Neltharus Guild Run
 					},

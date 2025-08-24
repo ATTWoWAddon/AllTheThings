@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 				n(VENDORS, {
 					n(88607, {	-- Engineering Follower <Engineering Entrepreneur>
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(117438),	-- Gnomish Net Launcher
 							i(117403),	-- Gyro-Radiant Reflector
 							i(117402),	-- Ultra-Electrified Reflector
@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 					}),
 					n(88610, {	-- Engineering Follower <Engineering Entrepreneur>
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(117438),	-- Gnomish Net Launcher
 							i(117403),	-- Gyro-Radiant Reflector
 							i(117402),	-- Ultra-Electrified Reflector

@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 79.8, 27.2, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
-			["g"] = {
+			["groups"] = {
 				i(205456, {	-- Lost Dragonscale
 					["timeline"] = { ADDED_10_1_0 },
 				}),
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 44.2, 38.2, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
-			["g"] = {
+			["groups"] = {
 				i(205458, {	-- Lost Dragonscale
 					["timeline"] = { ADDED_10_1_0 },
 				}),
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["timeline"] = { ADDED_10_0_5 },
 		}),
 		q(78113, {	-- The Challenge Tour
-			-- TODO: ["sourceQuests"] = { 72985 },	-- The Thaldraszus Reverse Tour
+			-- ["sourceQuests"] = { 72985 },	-- The Thaldraszus Reverse Tour
 			["provider"] = { "n", 193411 },	-- Celormu
 			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_10_1_7 },

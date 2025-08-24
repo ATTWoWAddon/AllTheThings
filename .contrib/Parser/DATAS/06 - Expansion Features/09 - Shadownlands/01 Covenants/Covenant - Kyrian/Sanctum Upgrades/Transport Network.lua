@@ -5,10 +5,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641395,
-			["g"] = {
+			["groups"] = {
 				n(TRANSPORT_NETWORK, {
 					["icon"] = 3854018,
-					["g"] = sharedData({ ["icon"] = 3854018 }, {
+					["groups"] = sharedData({ ["icon"] = 3854018 }, {
 						n(TIER_ONE, {
 							n(FLIGHT_PATHS, {
 								fp(2626, {	-- Hero's Rest, Bastion

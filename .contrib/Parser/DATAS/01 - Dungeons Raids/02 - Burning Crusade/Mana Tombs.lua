@@ -42,8 +42,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
-					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
+					["qg"] = 22919,	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
 					["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
@@ -99,11 +99,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10218, bubbleDown({ ["timeline"] = { REMOVED_4_3_0 } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
+					["sourceQuest"] = 10216,	-- Safety Is Job One
 					["providers"] = {
 						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
 						{ "o", 183877 },	-- Ethereal Transporter Control Panel
 					},
-					["sourceQuest"] = 10216,	-- Safety Is Job One
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
@@ -114,8 +114,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 				q(10977, {	-- Stasis Chambers of the Mana-Tombs
-					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
+					["qg"] = 22919,	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -129,8 +129,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10982, {	-- The Eye of Haramad
-					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
+					["qg"] = 22919,	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -246,11 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(537, {	-- Nexus-Prince Shaffar
 					["creatureID"] = 18344,
 					["groups"] = {
-						ach(651, {	-- Mana-Tombs
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10165,	-- Undercutting the Competition
-							-- #endif
-						}),
+						ach(651),	-- Mana-Tombs
 						-- #if AFTER 7.3.5
 						i(27829),	-- Axe of the Nexus-Kings
 						i(27842),	-- Grand Scepter of the Nexus-Kings
@@ -398,9 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(537, {	-- Nexus-Prince Shaffar
 						["creatureID"] = 18344,
 						["groups"] = {
-							ach(671, {	-- Heroic: Mana-Tombs
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(671),	-- Heroic: Mana-Tombs
 							ach(5071, {	-- Heroic: Mana-Tombs Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

@@ -1,6 +1,198 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
+------ Encounter Constants ------
+local WRATHION = 2368;
+local MAUT = 2365;
+local PROPHET = 2369;
+local INQUISITOR = 2377;
+local HIVEMIND = 2372;
+local SHADHAR = 2367;
+local DRESTAGATH = 2373;
+local ILGYNOTH = 2374;
+local VEXIONA = 2370;
+local RADEN = 2364;
+local CARAPACE = 2366;
+local NZOTH = 2375;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[WRATHION] = { 156818 },	-- Wrathion, the Black Emperor
+	[MAUT] = { 156523 },	-- Maut
+	[PROPHET] = {
+		157238,	-- The Prophet Skitra
+		157620,	-- The Prophet Skitra
+	},
+	[INQUISITOR] = {
+		160229, -- Dark Inquisitor Xanesh
+		156575,	-- Dark Inquisitor Xanesh
+	},
+	[HIVEMIND] = {	-- The Hivemind
+		157253,	-- Ka'zir
+		157254,	-- Tek'ris
+	},
+	[SHADHAR] = { 157231 },	-- Shad'har the Insatiable
+	[DRESTAGATH] = { 157602 },	-- Drest'agath
+	[ILGYNOTH] = { 158328 },	-- Il'gynoth, Corruption Reborn
+	[VEXIONA] = { 157354 },	-- Vexiona
+	[RADEN] = { 156866 },	-- Ra-den the Despoiled
+	[CARAPACE] = {	-- Carapace of N'Zoth
+		162429,	-- Fury of N'Zoth
+		157439,	-- Fury of N'Zoth
+	},
+	[NZOTH] = { 158041 },	-- N'Zoth, the Corruptor
+};
+
+------ EncounterToLoot ------
+local EncounterToLoot = {
+	[WRATHION] = {
+		i(172185),	-- Destroyer's Shadowblade
+		i(174170),	-- Dragonbone Vambraces
+		i(174153),	-- Ebony Scaled Gauntlets
+		i(174125),	-- Emberscale Gloves
+		i(172199),	-- Faralos, Empire's Dream
+		i(174044),	-- Humming Black Dragonscale
+		i(174105),	-- Mish'un, Blade of Tyrants
+		i(174139),	-- Onyx-Imbued Breeches
+	};
+	[MAUT] = {
+		i(172191),	-- An'zig Vra
+		i(174141),	-- Boots of Manifest Shadow
+		i(173944),	-- Forbidden Obsidian Claw
+		i(174155),	-- Greaves of Forbidden Magics
+		i(174172),	-- Living Obsidian Legguards
+		i(174124),	-- Mana-Infused Sash
+		i(174152),	-- Pauldrons of Ill Portent
+		i(173940),	-- Sigil of Warding
+		i(172200),	-- Sk'shuul Vaz
+		i(174132),	-- Stygian Guise
+	};
+	[PROPHET] = {
+		i(172201),	-- Bloodstained Ritual Athame
+		i(174173),	-- Boots of Hallucinatory Reality
+		i(174138),	-- Bracers of Dark Prophecy
+		i(174143),	-- Macabre Ritual Pants
+		i(174060),	-- Psyche Shredder
+		i(174123),	-- Psychic's Subtle Slippers
+		i(174119),	-- Robes of Unreality
+		i(174157),	-- Talons of Grim Revelations
+		i(172193),	-- Whispering Eldritch Bow
+		i(174165),	-- Writhing Spaulders of Madness
+	};
+	[INQUISITOR] = {
+		i(174126),	-- Binding of Dark Heresies
+		i(174156),	-- Chainlink Belt of Ill Omens
+		i(174140),	-- Cord of Anguished Cries
+		i(174169),	-- Gauntlets of Foul Inquisition
+		i(173943),	-- Torment in a Jar
+		i(174121),	-- Trousers of Peculiar Potency
+		i(172190),	-- Uhnish Vwah
+		i(172196),	-- Vorzz Yoq'al
+	};
+	[HIVEMIND] = {
+		i(174137),	-- Chitinspine Gloves
+		i(174171),	-- Dark Crystalline Girdle
+		i(174154),	-- Nightmarish Chain Shackles
+		i(174106),	-- Qwor N'lyeth
+		i(174530),	-- Ring of Collective Consciousness
+		i(172192),	-- The All-Seeing Eye
+		i(174122),	-- Void-drenched Wristwraps
+	};
+	[SHADHAR] = {
+		i(174177),	-- Bracers of Phantom Pains
+		i(174162),	-- Ego-Annihilating Grips
+		i(174130),	-- Grips of Occult Reminiscence
+		i(174107),	-- Insidious Writhing Longbow
+		i(174531),	-- Void-Etched Band
+		i(172186),	-- Warmace of Waking Nightmares
+		i(174145),	-- Wristwraps of Volatile Power
+	};
+	[DRESTAGATH] = {
+		i(174174),	-- Belt of Muttering Truths
+		i(174146),	-- Gloves of Abyssal Authority
+		i(172195),	-- Halsheth, Slumberer's Spear
+		i(174532),	-- Ichorspine Loop
+		i(172198),	-- Mar'kowa, the Mindpiercer
+		i(174159),	-- Spinebarb Legplates
+		i(173946),	-- Writhing Segment of Drest'agath
+		i(173946),	-- Writhing Segment of Drest'agath
+	};
+	[ILGYNOTH] = {
+		i(174142),	-- Belt of Braided Vessels
+		i(174161),	-- Bracers of Manifest Apathy
+		i(174116),	-- Cowl of Unspeakable Horrors
+		i(174129),	-- Cuffs of Grim Conjuration
+		i(172189),	-- Eyestalk of Il'gynoth
+		i(174180),	-- Oozing Coagulum
+		i(172188),	-- Precipice of Oblivion
+		i(174176),	-- Sabatons of Malevolent Intent
+		i(174150),	-- Scales of the Scheming Behemoth
+		i(174163),	-- Second Sight Helm
+		i(174135),	-- Spaulders of Aberrant Allure
+	};
+	[VEXIONA] = {
+		i(172194),	-- Gift of the Void
+		i(174148),	-- Helm of Deep Despair
+		i(174120),	-- Void Ascendant's Mantle
+		i(174164),	-- Breastplate of Twilight Decimation
+		i(174131),	-- Darkheart Robe
+		i(174160),	-- Greaves of the Twilight Drake
+	};
+	[RADEN] = {
+		i(174128),	-- Boots of Wrought Shadow
+		i(174168),	-- Carapace of Pulsing Vita
+		i(174149),	-- Dreamer's Unblinking Pauldrons
+		i(174134),	-- Gibbering Maw
+		i(174175),	-- Reality-Defying Greaves
+		i(174115),	-- Robe of the Fallen Keeper
+		i(172228),	-- Shandai, Watcher of Cosmos
+		i(172197),	-- Unguent Caress
+		i(174500),	-- Vita-Charged Titanshard
+		i(174528),	-- Vita-Twisted Titanshard
+	};
+	[CARAPACE] = {
+		i(174127),	-- Corporeal Supplicant's Trousers
+		i(174144),	-- Corpuscular Leather Greaves
+		i(174151),	-- Helm of Actualized Visions
+		i(174109),	-- Lurker's Piercing Gaze
+		i(174178),	-- Mirage-Weaver's Gauntlets
+		i(174166),	-- Pauldrons of Infinite Dreams
+		i(172227),	-- Shard of the Black Empire
+		i(174108),	-- Shgla'yos, Astral Malignity
+		i(174117),	-- Spaulders of Miasmic Mycelia
+		i(174136),	-- Tortured Fleshbeast Cuirass
+		i(174158),	-- Watcher's Scheming Girdle
+	};
+	[NZOTH] = {
+		i(172187),	-- Devastation's Hour
+		i(172229),	-- Dominion, Lurker Beyond Dreams
+		i(174167),	-- Greathelm of Phantasmic Reality
+		i(174147),	-- Last Vestige of Neltharion
+		i(174277),	-- Lingering Psychic Shell
+		i(174103),	-- Manifesto of Madness
+		i(174133),	-- Pauldrons of the Great Convergence
+		i(174533),	-- Ring of Cosmic Potential
+		i(174118),	-- Visage of Nightmarish Machinations
+	};
+};
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+	i(175005),	-- Belt of Concealed Intent
+	i(175007),	-- Footpads of Terrible Delusions
+	i(175006),	-- Gauntlets of Nightmare Manifest
+	i(175004),	-- Legwraps of Horrifying Figments
+	i(175008),	-- Lurking Schemer's Band
+	i(175010),	-- Maddened Adherent's Bulwark
+	i(175009),	-- Zealous Ritualist's Reverie
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
@@ -22,85 +214,59 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1596,	-- Chamber of Rebirth
 			1597,	-- Locus of Infinite Truths
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14058),	-- All Eyes On Me (Ny'alotha)
-				ach(14146, {	-- Glory of the Ny'alotha Raider
-					["sym"] = {{"meta_achievement",
-					14019,	-- Smoke Test
-					14008,	-- Mana Sponge
-					14037,	-- Phase 3: Prophet
-					14024,	-- Buzzer Beater
-					14023,	-- Realizing Your Potential
-					13990,	-- You Can Pet the Dog, But...
-					14026,	-- Temper Tantrum
-					14139,	-- Total Annihilation
-					13999,	-- How? Isn't it Obelisk?
-					14038,	-- Bloody Mess
-					14147,	-- Cleansing Treatment
-					14148,	-- It's Not a Cult
-					}},
-					["groups"] = {
-						i(174861),	-- Wriggling Parasite (MOUNT!)
-					},
+				ach(14146, {	-- Glory of the Ny'alotha Raider (automated)
+					i(174861),	-- Wriggling Parasite (MOUNT!)
 				}),
 				ach(14193, {	-- Vision of Destiny
-                    crit(46693, {    -- Wrathion, the Black Emperor
-                        ["_encounter"] = { 2368, DIFFICULTY.RAID.LFR },
+                    crit(46693, {	-- Wrathion, the Black Emperor
+                        ["_encounter"] = { WRATHION, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46694, {    -- Maut
-                        ["_encounter"] = { 2365, DIFFICULTY.RAID.LFR },
+                    crit(46694, {	-- Maut
+                        ["_encounter"] = { MAUT, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46695, {    -- The Prophet Skitra
-                        ["_encounter"] = { 2369, DIFFICULTY.RAID.LFR },
+                    crit(46695, {	-- The Prophet Skitra
+                        ["_encounter"] = { PROPHET, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(14194, {	-- Halls of Devotion
-                    crit(46696, {    -- Dark Inquisitor Xanesh
-                        ["_encounter"] = { 2377, DIFFICULTY.RAID.LFR },
+                    crit(46696, {	-- Dark Inquisitor Xanesh
+                        ["_encounter"] = { INQUISITOR, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46697, {    -- Vexiona
-                        ["_encounter"] = { 2370, DIFFICULTY.RAID.LFR },
+                    crit(46697, {	-- Vexiona
+                        ["_encounter"] = { VEXIONA, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46698, {    -- The Hivemind
-                        ["_encounter"] = { 2372, DIFFICULTY.RAID.LFR },
+                    crit(46698, {	-- The Hivemind
+                        ["_encounter"] = { HIVEMIND, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46699, {    -- Ra-den the Despoiled
-                        ["_encounter"] = { 2364, DIFFICULTY.RAID.LFR },
+                    crit(46699, {	-- Ra-den the Despoiled
+                        ["_encounter"] = { RADEN, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(14195, {	-- Gift of Flesh
-                    crit(46700, {    -- Shad'har the Insatiable
-                        ["_encounter"] = { 2367, DIFFICULTY.RAID.LFR },
+                    crit(46700, {	-- Shad'har the Insatiable
+                        ["_encounter"] = { SHADHAR, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46701, {    -- Drest'agath
-                        ["_encounter"] = { 2373, DIFFICULTY.RAID.LFR },
+                    crit(46701, {	-- Drest'agath
+                        ["_encounter"] = { DRESTAGATH, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46702, {    -- Il'gynoth, Corruption Reborn
-                        ["_encounter"] = { 2374, DIFFICULTY.RAID.LFR },
+                    crit(46702, {	-- Il'gynoth, Corruption Reborn
+                        ["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(14196, {	-- The Waking Dream
-                    crit(46703, {    -- Carapace of N'Zoth
-                        ["_encounter"] = { 2366, DIFFICULTY.RAID.LFR },
+                    crit(46703, {	-- Carapace of N'Zoth
+                        ["_encounter"] = { CARAPACE, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(46704, {    -- N'Zoth, the Corruptor
-                        ["_encounter"] = { 2375, DIFFICULTY.RAID.LFR },
+                    crit(46704, {	-- N'Zoth, the Corruptor
+                        ["_encounter"] = { NZOTH, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
-				ach(14146, {	-- Glory of the Ny'alotha Raider
-					i(174861),	-- Wriggling Parasite (MOUNT!)
-				}),
 				ach(14039),	-- Ny'alotha, the Waking City Guild Run
-				ach(40963, {	-- Ny'alotha, the Waking City
+				ach(40963, {	-- Ny'alotha, the Waking City (automated)
 					["timeline"] = { ADDED_11_0_7 },
-					-- Meta Achievement
-					["sym"] = {{"meta_achievement",
-						14193,	-- Vision of Destiny
-						14194,	-- Halls of Devotion
-						14195,	-- Gift of Flesh
-						14196,	-- The Waking Dream
-					}},
 				}),
 			}),
 			n(AZERITE_ESSENCES, {
@@ -114,12 +280,46 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["cost"] = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
 				}),
 			}),
-			n(COMMON_BOSS_DROPS, {
-				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 1] (RECIPE!)
-				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
-				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
+			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
+				CommonBossDrops({
+					i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 1] (RECIPE!)
+					i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
+					i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
+				}),
+				BossOnly(WRATHION),
+				BossOnly(MAUT, {
+					i(174446),	-- Muar (PET!)
+				}),
+				BossOnly(PROPHET, {
+					i(174279),	-- Encrypted Ny'alothan Text
+				}),
+				BossOnly(INQUISITOR),
+				BossOnly(HIVEMIND, {
+					i(174448),	-- Aqir Hivespawn (PET!)
+					i(174449),	-- Ra'kim (PET!)
+				}),
+				BossOnly(SHADHAR),
+				BossOnly(DRESTAGATH),
+				BossOnly(ILGYNOTH, {
+					i(174279),	-- Encrypted Ny'alothan Text
+				}),
+				BossOnly(VEXIONA, {
+					i(174279),	-- Encrypted Ny'alothan Text
+				}),
+				BossOnly(RADEN, {
+					i(174279),	-- Encrypted Ny'alothan Text
+					i(174447),	-- Void-Scarred Anubisath (PET!)
+				}),
+				BossOnly(CARAPACE),
+				BossOnly(NZOTH, {
+					i(174279),	-- Encrypted Ny'alothan Text
+					i(174452),	-- Eye of Corruption (PET!)
+					i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
+						["timeline"] = { ADDED_10_1_5 },
+					}),
+				}),
 			}),
-			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
+			Difficulty(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
 					177208,	-- Eppu
@@ -129,958 +329,202 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
 				},
 			}),
-			d(DIFFICULTY.RAID.LFR, {
-				n(ZONE_DROPS, {
-					i(175005),	-- Belt of Concealed Intent
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175008),	-- Lurking Schemer's Band
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
+				ZoneDrops({}),
+				header(HEADERS.LFGDungeon, 2036, {	-- Vision of Destiny
+					Boss(WRATHION),
+					Boss(MAUT),
+					Boss(PROPHET),
 				}),
-				header(HEADERS.Achievement, 14193, {	-- Vision of Destiny
-					e(2368, {	-- Wrathion, the Black Emperor
-						["crs"] = { 156818 },
-						["g"] = {
-							crit(46693, {	-- Wrathion, the Black Emperor
-								["achievementID"] = 14193,	-- Vision of Destiny
-							}),
-							i(172185),	-- Destroyer's Shadowblade
-							i(172199),	-- Faralos, Empire's Dream
-							i(174105),	-- Mish'un, Blade of Tyrants
-							i(174170),	-- Dragonbone Vambraces
-							i(174153),	-- Ebony Scaled Gauntlets
-							i(174125),	-- Emberscale Gloves
-							i(174139),	-- Onyx-Imbued Breeches
-							i(174044),	-- Humming Black Dragonscale
-						},
-					}),
-					e(2365, {	-- Maut
-						["crs"] = { 156523 },
-						["g"] = {
-							crit(46694, {	-- Maut
-								["achievementID"] = 14193,	-- Vision of Destiny
-							}),
-							i(172191),	-- An'zig Vra
-							i(172200),	-- Sk'shuul Vaz
-							i(174132),	-- Stygian Guise
-							i(174152),	-- Pauldrons of Ill Portent
-							i(174124),	-- Mana-Infused Sash
-							i(174155),	-- Greaves of Forbidden Magics
-							i(174172),	-- Living Obsidian Legguards
-							i(174141),	-- Boots of Manifest Shadow
-							i(173944),	-- Forbidden Obsidian Claw
-							i(173940),	-- Sigil of Warding
-							i(174446),	-- Muar (PET!)
-						},
-					}),
-					e(2369, {	-- The Prophet Skitra
-						["crs"] = { 157238, 157620 },
-						["g"] = {
-							crit(46695, {	-- The Prophet Skitra
-								["achievementID"] = 14193,	-- Vision of Destiny
-							}),
-							i(174279),	-- Encrypted Ny'alothan Text
-							i(172201),	-- Bloodstained Ritual Athame
-							i(172193),	-- Whispering Eldritch Bow
-							i(174165),	-- Writhing Spaulders of Madness
-							i(174119),	-- Robes of Unreality
-							i(174138),	-- Bracers of Dark Prophecy
-							i(174143),	-- Macabre Ritual Pants
-							i(174173),	-- Boots of Hallucinatory Reality
-							i(174123),	-- Psychic's Subtle Slippers
-							i(174157),	-- Talons of Grim Revelations
-							i(174060),	-- Psyche Shredder
-						},
-					}),
+				header(HEADERS.LFGDungeon, 2037, {	-- Halls of Devotion
+					Boss(INQUISITOR),
+					Boss(VEXIONA),
+					Boss(HIVEMIND),
+					Boss(RADEN),
 				}),
-				header(HEADERS.Achievement, 14194, {	-- Halls of Devotion
-					e(2377, {	-- Dark Inquisitor Xanesh
-						["crs"] = { 160229, 156575 },
-						["g"] = {
-							crit(46696, {	-- Dark Inquisitor Xanesh
-								["achievementID"] = 14194,	-- Halls of Devotion
-							}),
-							i(172196),	-- Vorzz Yoq'al
-							i(172190),	-- Uhnish Vwah
-							i(174169),	-- Gauntlets of Foul Inquisition
-							i(174126),	-- Binding of Dark Heresies
-							i(174156),	-- Chainlink Belt of Ill Omens
-							i(174140),	-- Cord of Anguished Cries
-							i(174121),	-- Trousers of Peculiar Potency
-							i(173943),	-- Torment in a Jar
-						},
-					}),
-					e(2370, {	-- Vexiona
-						["crs"] = { 157354 },
-						["g"] = {
-							crit(46697, {	-- Vexiona
-								["achievementID"] = 14194,	-- Halls of Devotion
-							}),
-							i(174279),	-- Encrypted Ny'alothan Text
-							i(172194),	-- Gift of the Void
-							i(174148),	-- Helm of Deep Despair
-							i(174120),	-- Void Ascendant's Mantle
-							i(174164),	-- Breastplate of Twilight Decimation
-							i(174131),	-- Darkheart Robe
-							i(174160),	-- Greaves of the Twilight Drake
-						},
-					}),
-					e(2372, {	-- The Hivemind
-						["crs"] = {
-							157253,	-- Ka'zir
-							157254,	-- Tek'ris
-						},
-						["g"] = {
-							crit(46698, {	-- The Hivemind
-								["achievementID"] = 14194,	-- Halls of Devotion
-							}),
-							i(174448),	-- Aqir Hivespawn (PET!)
-							i(174449),	-- Ra'kim (PET!)
-							i(174106),	-- Qwor N'lyeth
-							i(172192),	-- The All-Seeing Eye
-							i(174154),	-- Nightmarish Chain Shackles
-							i(174122),	-- Void-drenched Wristwraps
-							i(174137),	-- Chitinspine Gloves
-							i(174171),	-- Dark Crystalline Girdle
-							i(174530),	-- Ring of Collective Consciousness
-							i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
-						},
-					}),
-					e(2364, {	-- Ra-den the Despoiled
-						["crs"] = { 156866 },
-						["g"] = {
-							crit(46699, {	-- Ra-den the Despoiled
-								["achievementID"] = 14194,	-- Halls of Devotion
-							}),
-							i(174447),	-- Void-Scarred Anubisath (PET!)
-							i(174279),	-- Encrypted Ny'alothan Text
-							i(172228),	-- Shandai, Watcher of Cosmos
-							i(172197),	-- Unguent Caress
-							i(174134),	-- Gibbering Maw
-							i(174149),	-- Dreamer's Unblinking Pauldrons
-							i(174168),	-- Carapace of Pulsing Vita
-							i(174115),	-- Robe of the Fallen Keeper
-							i(174175),	-- Reality-Defying Greaves
-							i(174128),	-- Boots of Wrought Shadow
-							i(174500),	-- Vita-Charged Titanshard
-							i(174528),	-- Vita-Twisted Titanshard
-						},
-					}),
+				header(HEADERS.LFGDungeon, 2038, {	-- Gift of Flesh
+					Boss(SHADHAR),
+					Boss(DRESTAGATH),
+					Boss(ILGYNOTH),
 				}),
-				header(HEADERS.Achievement, 14195, {	-- Gift of Flesh
-					e(2367, {	-- Shad'har the Insatiable
-						["crs"] = { 157231 },
-						["g"] = {
-							crit(46700, {	-- Shad'har the Insatiable
-								["achievementID"] = 14195,	-- Gift of Flesh
-							}),
-							i(172186),	-- Warmace of Waking Nightmares
-							i(174107),	-- Insidious Writhing Longbow
-							i(174177),	-- Bracers of Phantom Pains
-							i(174145),	-- Wristwraps of Volatile Power
-							i(174162),	-- Ego-Annihilating Grips
-							i(174130),	-- Grips of Occult Reminiscence
-							i(174531),	-- Void-Etched Band
-							i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
-						},
-					}),
-					e(2373, {	-- Drest'agath
-						["crs"] = { 157602 },
-						["g"] = {
-							crit(46701, {	-- Drest'agath
-								["achievementID"] = 14195,	-- Gift of Flesh
-							}),
-							i(172195),	-- Halsheth, Slumberer's Spear
-							i(172198),	-- Mar'kowa, the Mindpiercer
-							i(174146),	-- Gloves of Abyssal Authority
-							i(174174),	-- Belt of Muttering Truths
-							i(174159),	-- Spinebarb Legplates
-							i(173946),	-- Writhing Segment of Drest'agath
-							i(174532),	-- Ichorspine Loop
-							i(173946),	-- Writhing Segment of Drest'agath
-							i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
-						},
-					}),
-					e(2374, {	-- Il'gynoth, Corruption Reborn
-						["crs"] = { 158328 },
-						["g"] = {
-							crit(46702, {	-- Il'gynoth, Corruption Reborn
-								["achievementID"] = 14195,	-- Gift of Flesh
-							}),
-							i(174279),	-- Encrypted Ny'alothan Text
-							i(172189),	-- Eyestalk of Il'gynoth
-							i(172188),	-- Precipice of Oblivion
-							i(174116),	-- Cowl of Unspeakable Horrors
-							i(174163),	-- Second Sight Helm
-							i(174135),	-- Spaulders of Aberrant Allure
-							i(174150),	-- Scales of the Scheming Behemoth
-							i(174161),	-- Bracers of Manifest Apathy
-							i(174129),	-- Cuffs of Grim Conjuration
-							i(174142),	-- Belt of Braided Vessels
-							i(174176),	-- Sabatons of Malevolent Intent
-							i(174180),	-- Oozing Coagulum
-						},
-					}),
-				}),
-				header(HEADERS.Achievement, 14196, {	-- The Waking Dream
-					e(2366, {	-- Carapace of N'Zoth
-						["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
-						["g"] = {
-							crit(46703, {	-- Carapace of N'Zoth
-								["achievementID"] = 14196,	-- The Waking Dream
-							}),
-							i(174109),	-- Lurker's Piercing Gaze
-							i(172227),	-- Shard of the Black Empire
-							i(174108),	-- Shgla'yos, Astral Malignity
-							i(174151),	-- Helm of Actualized Visions
-							i(174166),	-- Pauldrons of Infinite Dreams
-							i(174117),	-- Spaulders of Miasmic Mycelia
-							i(174136),	-- Tortured Fleshbeast Cuirass
-							i(174178),	-- Mirage-Weaver's Gauntlets
-							i(174158),	-- Watcher's Scheming Girdle
-							i(174127),	-- Corporeal Supplicant's Trousers
-							i(174144),	-- Corpuscular Leather Greaves
-						},
-					}),
-					e(2375, {	-- N'Zoth, the Corruptor
-						["crs"] = { 158041 },
-						["g"] = {
-							crit(46704, {	-- N'Zoth, the Corruptor
-								["achievementID"] = 14196,	-- The Waking Dream
-							}),
-							i(174452),	-- Eye of Corruption (PET!)
-							i(174279),	-- Encrypted Ny'alothan Text
-							i(172187),	-- Devastation's Hour
-							i(172229),	-- Dominion, Lurker Beyond Dreams
-							i(174167),	-- Greathelm of Phantasmic Reality
-							i(174118),	-- Visage of Nightmarish Machinations
-							i(174133),	-- Pauldrons of the Great Convergence
-							i(174147),	-- Last Vestige of Neltharion
-							i(174533),	-- Ring of Cosmic Potential
-							i(174277),	-- Lingering Psychic Shell
-							i(174103),	-- Manifesto of Madness
-							i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
-								["timeline"] = { ADDED_10_1_5 },
-							}),
-							i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
-						},
-					}),
+				header(HEADERS.LFGDungeon, 2039, {	-- The Waking Dream
+					Boss(CARAPACE),
+					Boss(NZOTH),
 				}),
 			}),
-			d(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
-				e(2368, {	-- Wrathion, the Black Emperor
-					["crs"] = { 156818 },
-					["g"] = {
-						ach(14019),	-- Smoke Test
-					},
+			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
+				BossOnly(WRATHION, {
+					ach(14019),	-- Smoke Test
 				}),
-				e(2365, {	-- Maut
-					["crs"] = { 156523 },
-					["g"] = {
-						ach(14008),	-- Mana Sponge
-						i(174446),	-- Muar (PET!)
-					},
+				BossOnly(MAUT, {
+					ach(14008),	-- Mana Sponge
 				}),
-				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157238 },
-					["g"] = {
-						ach(14037),	-- Phase 3: Prophet
-						i(174279),	-- Encrypted Ny'alothan Text
-					},
+				BossOnly(PROPHET, {
+					ach(14037),	-- Phase 3: Prophet
 				}),
-				e(2377, {	-- Dark Inquisitor Xanesh
-					["crs"] = { 160229, 156575 },
-					["g"] = {
-						ach(14024),	-- Buzzer Beater
-					},
+				BossOnly(INQUISITOR, {
+					ach(14024),	-- Buzzer Beater
 				}),
-				e(2372, {	-- The Hivemind
-					["crs"] = {
-						157253,	-- Ka'zir
-						157254,	-- Tek'ris
-					},
-					["g"] = {
-						ach(14023),	-- Realizing Your Potential
-						i(174448),	-- Aqir Hivespawn (PET!)
-						i(174449),	-- Ra'kim (PET!)
-					},
+				BossOnly(HIVEMIND, {
+					ach(14023),	-- Realizing Your Potential
 				}),
-				e(2367, {	-- Shad'har the Insatiable
-					["crs"] = { 157231 },
-					["g"] = {
-						ach(13990),	-- You Can Pet the Dog, But...
-					},
+				BossOnly(SHADHAR, {
+					ach(13990),	-- You Can Pet the Dog, But...
 				}),
-				e(2373, {	-- Drest'agath
-					["crs"] = { 157602 },
-					["g"] = {
-						ach(14026),	-- Temper Tantrum
-					},
+				BossOnly(DRESTAGATH, {
+					ach(14026),	-- Temper Tantrum
 				}),
-				e(2370, {	-- Vexiona
-					["crs"] = { 157354 },
-					["g"] = {
-						ach(14139),	-- Total Annihilation
-						i(174279),	-- Encrypted Ny'alothan Text
-					},
+				BossOnly(ILGYNOTH, {
+					ach(14038),	-- Bloody Mess
 				}),
-				e(2364, {	-- Ra-den the Despoiled
-					["crs"] = { 156866 },
-					["g"] = {
-						ach(13999),	-- Clean up, Aisle 9
-						i(174447),	-- Void-Scarred Anubisath (PET!)
-					},
+				BossOnly(VEXIONA, {
+					ach(14139),	-- Total Annihilation
 				}),
-				e(2364, {	-- Ra-den the Despoiled
-					["crs"] = { 156866 },
-					["g"] = {
-						i(174279),	-- Encrypted Ny'alothan Text
-					},
+				BossOnly(RADEN, {
+					ach(13999),	-- Clean up, Aisle 9
 				}),
-				e(2374, {	-- Il'gynoth, Corruption Reborn
-					["crs"] = { 158328 },
-					["g"] = {
-						ach(14038),	-- Bloody Mess
-						i(174279),	-- Encrypted Ny'alothan Text
-					},
+				BossOnly(CARAPACE, {
+					ach(14147),	-- Cleansing Treatment
 				}),
-				e(2366, {	-- Carapace of N'Zoth
-					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
-					["g"] = {
-						ach(14147),	-- Cleansing Treatment
-					},
-				}),
-				e(2375, {	-- N'Zoth, the Corruptor
-					["crs"] = { 158041 },
-					["g"] = {
-						ach(14148),	-- Peer Pressure
-						i(175062),	-- Malefic Core
-						i(174452),	-- Eye of Corruption (PET!)
-						i(174279),	-- Encrypted Ny'alothan Text
-						i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
-							["timeline"] = { ADDED_10_1_5 },
-						}),
-					},
+				BossOnly(NZOTH, {
+					ach(14148),	-- Peer Pressure
+					i(175062),	-- Malefic Core
 				}),
 			}),
-			d(DIFFICULTY.RAID.NORMAL, {
+			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
-					q(58373, {	-- Ny'alotha: MOTHER's Guidance
+					q(58373, {	-- Ny'alotha: MOTHER's Guidance [N]
 						["provider"] = { "n", 160177 },	-- Wrathion
-						["cost"] = {
-							{ "i", 174910, 4 },	-- 4x Dragon Heart
-							{ "i", 174913, 4 },	-- 4x Prophetic Eye
-							{ "i", 174063, 4 },	-- 4x Titan Core
+						["lockCriteria"] = { 1,
+							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
+						["groups"] = {
+							i(174910),	-- Dragon Heart (QI!)
+							i(174913),	-- Prophetic Eye (QI!)
+							i(174063),	-- Titan Core (QI!)
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
-					i(175005),	-- Belt of Concealed Intent
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175008),	-- Lurking Schemer's Band
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
-				}),
-				e(2368, {	-- Wrathion, the Black Emperor
-					["crs"] = { 156818 },
-					["g"] = {
-						i(172185),	-- Destroyer's Shadowblade
-						i(172199),	-- Faralos, Empire's Dream
-						i(174105),	-- Mish'un, Blade of Tyrants
-						i(174170),	-- Dragonbone Vambraces
-						i(174153),	-- Ebony Scaled Gauntlets
-						i(174125),	-- Emberscale Gloves
-						i(174139),	-- Onyx-Imbued Breeches
-						i(174044),	-- Humming Black Dragonscale
-					},
-				}),
-				e(2365, {	-- Maut
-					["crs"] = { 156523 },
-					["g"] = {
-						i(172191),	-- An'zig Vra
-						i(172200),	-- Sk'shuul Vaz
-						i(174132),	-- Stygian Guise
-						i(174152),	-- Pauldrons of Ill Portent
-						i(174124),	-- Mana-Infused Sash
-						i(174155),	-- Greaves of Forbidden Magics
-						i(174172),	-- Living Obsidian Legguards
-						i(174141),	-- Boots of Manifest Shadow
-						i(173944),	-- Forbidden Obsidian Claw
-						i(173940),	-- Sigil of Warding
-					},
-				}),
-				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157238 },
-					["g"] = {
-						i(172201),	-- Bloodstained Ritual Athame
-						i(172193),	-- Whispering Eldritch Bow
-						i(174165),	-- Writhing Spaulders of Madness
-						i(174119),	-- Robes of Unreality
-						i(174138),	-- Bracers of Dark Prophecy
-						i(174143),	-- Macabre Ritual Pants
-						i(174173),	-- Boots of Hallucinatory Reality
-						i(174123),	-- Psychic's Subtle Slippers
-						i(174157),	-- Talons of Grim Revelations
-						i(174060),	-- Psyche Shredder
-					},
-				}),
-				e(2377, {	-- Dark Inquisitor Xanesh
-					["crs"] = { 160229, 156575 },
-					["g"] = {
-						i(172196),	-- Vorzz Yoq'al
-						i(172190),	-- Uhnish Vwah
-						i(174169),	-- Gauntlets of Foul Inquisition
-						i(174126),	-- Binding of Dark Heresies
-						i(174156),	-- Chainlink Belt of Ill Omens
-						i(174140),	-- Cord of Anguished Cries
-						i(174121),	-- Trousers of Peculiar Potency
-						i(173943),	-- Torment in a Jar
-					},
-				}),
-				e(2372, {	-- The Hivemind
-					["crs"] = {
-						157253,	-- Ka'zir
-						157254,	-- Tek'ris
-					},
-					["g"] = {
-						i(174106),	-- Qwor N'lyeth
-						i(172192),	-- The All-Seeing Eye
-						i(174154),	-- Nightmarish Chain Shackles
-						i(174122),	-- Void-drenched Wristwraps
-						i(174137),	-- Chitinspine Gloves
-						i(174171),	-- Dark Crystalline Girdle
-						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
-					},
-				}),
-				e(2367, {	-- Shad'har the Insatiable
-					["crs"] = { 157231 },
-					["g"] = {
-						i(172186),	-- Warmace of Waking Nightmares
-						i(174107),	-- Insidious Writhing Longbow
-						i(174177),	-- Bracers of Phantom Pains
-						i(174145),	-- Wristwraps of Volatile Power
-						i(174162),	-- Ego-Annihilating Grips
-						i(174130),	-- Grips of Occult Reminiscence
-						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
-					},
-				}),
-				e(2373, {	-- Drest'agath
-					["crs"] = { 157602 },
-					["g"] = {
-						i(172195),	-- Halsheth, Slumberer's Spear
-						i(172198),	-- Mar'kowa, the Mindpiercer
-						i(174146),	-- Gloves of Abyssal Authority
-						i(174174),	-- Belt of Muttering Truths
-						i(174159),	-- Spinebarb Legplates
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174532),	-- Ichorspine Loop
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
-					},
-				}),
-				e(2370, {	-- Vexiona
-					["crs"] = { 157354 },
-					["g"] = {
-						i(172194),	-- Gift of the Void
-						i(174148),	-- Helm of Deep Despair
-						i(174120),	-- Void Ascendant's Mantle
-						i(174164),	-- Breastplate of Twilight Decimation
-						i(174131),	-- Darkheart Robe
-						i(174160),	-- Greaves of the Twilight Drake
-					},
-				}),
-				e(2364, {	-- Ra-den the Despoiled
-					["crs"] = { 156866 },
-					["g"] = {
-						i(172228),	-- Shandai, Watcher of Cosmos
-						i(172197),	-- Unguent Caress
-						i(174134),	-- Gibbering Maw
-						i(174149),	-- Dreamer's Unblinking Pauldrons
-						i(174168),	-- Carapace of Pulsing Vita
-						i(174115),	-- Robe of the Fallen Keeper
-						i(174175),	-- Reality-Defying Greaves
-						i(174128),	-- Boots of Wrought Shadow
-						i(174500),	-- Vita-Charged Titanshard
-						i(174528),	-- Vita-Twisted Titanshard
-					},
-				}),
-				e(2374, {	-- Il'gynoth, Corruption Reborn
-					["crs"] = { 158328 },
-					["g"] = {
-						i(172189),	-- Eyestalk of Il'gynoth
-						i(172188),	-- Precipice of Oblivion
-						i(174116),	-- Cowl of Unspeakable Horrors
-						i(174163),	-- Second Sight Helm
-						i(174135),	-- Spaulders of Aberrant Allure
-						i(174150),	-- Scales of the Scheming Behemoth
-						i(174161),	-- Bracers of Manifest Apathy
-						i(174129),	-- Cuffs of Grim Conjuration
-						i(174142),	-- Belt of Braided Vessels
-						i(174176),	-- Sabatons of Malevolent Intent
-						i(174180),	-- Oozing Coagulum
-					},
-				}),
-				e(2366, {	-- Carapace of N'Zoth
-					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
-					["g"] = {
-						i(174109),	-- Lurker's Piercing Gaze
-						i(172227),	-- Shard of the Black Empire
-						i(174108),	-- Shgla'yos, Astral Malignity
-						i(174151),	-- Helm of Actualized Visions
-						i(174166),	-- Pauldrons of Infinite Dreams
-						i(174117),	-- Spaulders of Miasmic Mycelia
-						i(174136),	-- Tortured Fleshbeast Cuirass
-						i(174178),	-- Mirage-Weaver's Gauntlets
-						i(174158),	-- Watcher's Scheming Girdle
-						i(174127),	-- Corporeal Supplicant's Trousers
-						i(174144),	-- Corpuscular Leather Greaves
-					},
-				}),
-				e(2375, {	-- N'Zoth, the Corruptor
-					["crs"] = { 158041 },
-					["g"] = {
-						i(172187),	-- Devastation's Hour
-						i(172229),	-- Dominion, Lurker Beyond Dreams
-						i(174167),	-- Greathelm of Phantasmic Reality
-						i(174118),	-- Visage of Nightmarish Machinations
-						i(174133),	-- Pauldrons of the Great Convergence
-						i(174147),	-- Last Vestige of Neltharion
-						i(174533),	-- Ring of Cosmic Potential
-						i(174277),	-- Lingering Psychic Shell
-						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
-					},
+				ZoneDrops({}),
+				Boss(WRATHION),
+				Boss(MAUT),
+				Boss(PROPHET),
+				Boss(INQUISITOR),
+				Boss(HIVEMIND),
+				Boss(SHADHAR),
+				Boss(DRESTAGATH),
+				Boss(ILGYNOTH),
+				Boss(VEXIONA),
+				Boss(RADEN),
+				Boss(CARAPACE),
+				Boss(NZOTH),
+			}),
+			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(NZOTH, {
+					ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
+						["timeline"] = { REMOVED_9_0_1 },
+					}),
+					i(174863, {	-- Spawn of Vexiona (QS!)
+						["timeline"] = { REMOVED_9_0_1 },
+					}),
 				}),
 			}),
-			d(DIFFICULTY.RAID.HEROIC, {
+			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
-					q(58374, {	-- Ny'alotha: MOTHER's Guidance
+					q(58374, {	-- Ny'alotha: MOTHER's Guidance [H]
 						["provider"] = { "n", 160177 },	-- Wrathion
-						["cost"] = {
-							{ "i", 174909, 4 },	-- Dragon Heart x4
-							{ "i", 174911, 4 },	-- Prophetic Eye x4
-							{ "i", 174064, 4 },	-- Titan Core x4
+						["lockCriteria"] = { 1,
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
+						["groups"] = {
+							i(174909),	-- Dragon Heart (QI!)
+							i(174911),	-- Prophetic Eye (QI!)
+							i(174064),	-- Titan Core (QI!)
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
-					i(175005),	-- Belt of Concealed Intent
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175008),	-- Lurking Schemer's Band
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
-				}),
-				e(2368, {	-- Wrathion, the Black Emperor
-					["crs"] = { 156818 },
-					["g"] = {
-						i(172185),	-- Destroyer's Shadowblade
-						i(172199),	-- Faralos, Empire's Dream
-						i(174105),	-- Mish'un, Blade of Tyrants
-						i(174170),	-- Dragonbone Vambraces
-						i(174153),	-- Ebony Scaled Gauntlets
-						i(174125),	-- Emberscale Gloves
-						i(174139),	-- Onyx-Imbued Breeches
-						i(174044),	-- Humming Black Dragonscale
-					},
-				}),
-				e(2365, {	-- Maut
-					["crs"] = { 156523 },
-					["g"] = {
-						i(172191),	-- An'zig Vra
-						i(172200),	-- Sk'shuul Vaz
-						i(174132),	-- Stygian Guise
-						i(174152),	-- Pauldrons of Ill Portent
-						i(174124),	-- Mana-Infused Sash
-						i(174155),	-- Greaves of Forbidden Magics
-						i(174172),	-- Living Obsidian Legguards
-						i(174141),	-- Boots of Manifest Shadow
-						i(173944),	-- Forbidden Obsidian Claw
-						i(173940),	-- Sigil of Warding
-					},
-				}),
-				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157238, 157620 },
-					["g"] = {
-						i(172201),	-- Bloodstained Ritual Athame
-						i(172193),	-- Whispering Eldritch Bow
-						i(174165),	-- Writhing Spaulders of Madness
-						i(174119),	-- Robes of Unreality
-						i(174138),	-- Bracers of Dark Prophecy
-						i(174143),	-- Macabre Ritual Pants
-						i(174173),	-- Boots of Hallucinatory Reality
-						i(174123),	-- Psychic's Subtle Slippers
-						i(174157),	-- Talons of Grim Revelations
-						i(174060),	-- Psyche Shredder
-					},
-				}),
-				e(2377, {	-- Dark Inquisitor Xanesh
-					["crs"] = { 160229, 156575 },
-					["g"] = {
-						i(172196),	-- Vorzz Yoq'al
-						i(172190),	-- Uhnish Vwah
-						i(174169),	-- Gauntlets of Foul Inquisition
-						i(174126),	-- Binding of Dark Heresies
-						i(174156),	-- Chainlink Belt of Ill Omens
-						i(174140),	-- Cord of Anguished Cries
-						i(174121),	-- Trousers of Peculiar Potency
-						i(173943),	-- Torment in a Jar
-					},
-				}),
-				e(2372, {	-- The Hivemind
-					["crs"] = {
-						157253,	-- Ka'zir
-						157254,	-- Tek'ris
-					},
-					["g"] = {
-						i(174106),	-- Qwor N'lyeth
-						i(172192),	-- The All-Seeing Eye
-						i(174154),	-- Nightmarish Chain Shackles
-						i(174122),	-- Void-drenched Wristwraps
-						i(174137),	-- Chitinspine Gloves
-						i(174171),	-- Dark Crystalline Girdle
-						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
-					},
-				}),
-				e(2367, {	-- Shad'har the Insatiable
-					["crs"] = { 157231 },
-					["g"] = {
-						i(172186),	-- Warmace of Waking Nightmares
-						i(174107),	-- Insidious Writhing Longbow
-						i(174177),	-- Bracers of Phantom Pains
-						i(174145),	-- Wristwraps of Volatile Power
-						i(174162),	-- Ego-Annihilating Grips
-						i(174130),	-- Grips of Occult Reminiscence
-						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
-					},
-				}),
-				e(2373, {	-- Drest'agath
-					["crs"] = { 157602 },
-					["g"] = {
-						i(172195),	-- Halsheth, Slumberer's Spear
-						i(172198),	-- Mar'kowa, the Mindpiercer
-						i(174146),	-- Gloves of Abyssal Authority
-						i(174174),	-- Belt of Muttering Truths
-						i(174159),	-- Spinebarb Legplates
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174532),	-- Ichorspine Loop
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
-					},
-				}),
-				e(2370, {	-- Vexiona
-					["crs"] = { 157354 },
-					["g"] = {
-						i(172194),	-- Gift of the Void
-						i(174148),	-- Helm of Deep Despair
-						i(174120),	-- Void Ascendant's Mantle
-						i(174164),	-- Breastplate of Twilight Decimation
-						i(174131),	-- Darkheart Robe
-						i(174160),	-- Greaves of the Twilight Drake
-					},
-				}),
-				e(2364, {	-- Ra-den the Despoiled
-					["crs"] = { 156866 },
-					["g"] = {
-						i(172228),	-- Shandai, Watcher of Cosmos
-						i(172197),	-- Unguent Caress
-						i(174134),	-- Gibbering Maw
-						i(174149),	-- Dreamer's Unblinking Pauldrons
-						i(174168),	-- Carapace of Pulsing Vita
-						i(174115),	-- Robe of the Fallen Keeper
-						i(174175),	-- Reality-Defying Greaves
-						i(174128),	-- Boots of Wrought Shadow
-						i(174500),	-- Vita-Charged Titanshard
-						i(174528),	-- Vita-Twisted Titanshard
-					},
-				}),
-				e(2374, {	-- Il'gynoth, Corruption Reborn
-					["crs"] = { 158328 },
-					["g"] = {
-						i(172189),	-- Eyestalk of Il'gynoth
-						i(172188),	-- Precipice of Oblivion
-						i(174116),	-- Cowl of Unspeakable Horrors
-						i(174163),	-- Second Sight Helm
-						i(174135),	-- Spaulders of Aberrant Allure
-						i(174150),	-- Scales of the Scheming Behemoth
-						i(174161),	-- Bracers of Manifest Apathy
-						i(174129),	-- Cuffs of Grim Conjuration
-						i(174142),	-- Belt of Braided Vessels
-						i(174176),	-- Sabatons of Malevolent Intent
-						i(174180),	-- Oozing Coagulum
-					},
-				}),
-				e(2366, {	-- Carapace of N'Zoth
-					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
-					["g"] = {
-						i(174109),	-- Lurker's Piercing Gaze
-						i(172227),	-- Shard of the Black Empire
-						i(174108),	-- Shgla'yos, Astral Malignity
-						i(174151),	-- Helm of Actualized Visions
-						i(174166),	-- Pauldrons of Infinite Dreams
-						i(174117),	-- Spaulders of Miasmic Mycelia
-						i(174136),	-- Tortured Fleshbeast Cuirass
-						i(174178),	-- Mirage-Weaver's Gauntlets
-						i(174158),	-- Watcher's Scheming Girdle
-						i(174127),	-- Corporeal Supplicant's Trousers
-						i(174144),	-- Corpuscular Leather Greaves
-					},
-				}),
-				e(2375, {	-- N'Zoth, the Corruptor
-					["crs"] = { 158041 },
-					["g"] = {
-						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
-						}),
-						i(174863, {	-- Spawn of Vexiona
-							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
-						}),
-						i(172187),	-- Devastation's Hour
-						i(172229),	-- Dominion, Lurker Beyond Dreams
-						i(174167),	-- Greathelm of Phantasmic Reality
-						i(174118),	-- Visage of Nightmarish Machinations
-						i(174133),	-- Pauldrons of the Great Convergence
-						i(174147),	-- Last Vestige of Neltharion
-						i(174533),	-- Ring of Cosmic Potential
-						i(174277),	-- Lingering Psychic Shell
-						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
-					},
-				}),
+				ZoneDrops({}),
+				Boss(WRATHION),
+				Boss(MAUT),
+				Boss(PROPHET),
+				Boss(INQUISITOR),
+				Boss(HIVEMIND),
+				Boss(SHADHAR),
+				Boss(DRESTAGATH),
+				Boss(ILGYNOTH),
+				Boss(VEXIONA),
+				Boss(RADEN),
+				Boss(CARAPACE),
+				Boss(NZOTH),
 			}),
-			d(DIFFICULTY.RAID.MYTHIC, {
+			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
-					q(58375, {	-- Ny'alotha: MOTHER's Guidance
+					q(58375, {	-- Ny'alotha: MOTHER's Guidance [M]
 						["provider"] = { "n", 160177 },	-- Wrathion
-						["cost"] = {
-							{ "i", 174908, 4 },	-- 4x Dragon Heart
-							{ "i", 174912, 4 },	-- 4x Prophetic Eye
-							{ "i", 174065, 4 },	-- 4x Titan Core
+						["groups"] = {
+							i(174908),	-- Dragon Heart (QI!)
+							i(174912),	-- Prophetic Eye (QI!)
+							i(174065),	-- Titan Core (QI!)
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
-					i(175005),	-- Belt of Concealed Intent
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175008),	-- Lurking Schemer's Band
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+				ZoneDrops({}),
+				Boss(WRATHION, {
+					ach(14041),	-- Mythic: Wrathion, the Black Emperor
 				}),
-				e(2368, {	-- Wrathion, the Black Emperor
-					["crs"] = { 156818 },
-					["g"] = {
-						ach(14041),	-- Mythic: Wrathion, the Black Emperor
-						i(172185),	-- Destroyer's Shadowblade
-						i(172199),	-- Faralos, Empire's Dream
-						i(174105),	-- Mish'un, Blade of Tyrants
-						i(174170),	-- Dragonbone Vambraces
-						i(174153),	-- Ebony Scaled Gauntlets
-						i(174125),	-- Emberscale Gloves
-						i(174139),	-- Onyx-Imbued Breeches
-						i(174044),	-- Humming Black Dragonscale
-					},
+				Boss(MAUT, {
+					ach(14043),	-- Mythic: Maut
 				}),
-				e(2365, {	-- Maut
-					["crs"] = { 156523 },
-					["g"] = {
-						ach(14043),	-- Mythic: Maut
-						i(172191),	-- An'zig Vra
-						i(172200),	-- Sk'shuul Vaz
-						i(174132),	-- Stygian Guise
-						i(174152),	-- Pauldrons of Ill Portent
-						i(174124),	-- Mana-Infused Sash
-						i(174155),	-- Greaves of Forbidden Magics
-						i(174172),	-- Living Obsidian Legguards
-						i(174141),	-- Boots of Manifest Shadow
-						i(173944),	-- Forbidden Obsidian Claw
-						i(173940),	-- Sigil of Warding
-					},
+				Boss(PROPHET, {
+					ach(14044),	-- Mythic: The Prophet Skitra
 				}),
-				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157620 },
-					["g"] = {
-						ach(14044),	-- Mythic: The Prophet Skitra
-						i(172201),	-- Bloodstained Ritual Athame
-						i(172193),	-- Whispering Eldritch Bow
-						i(174165),	-- Writhing Spaulders of Madness
-						i(174119),	-- Robes of Unreality
-						i(174138),	-- Bracers of Dark Prophecy
-						i(174143),	-- Macabre Ritual Pants
-						i(174173),	-- Boots of Hallucinatory Reality
-						i(174123),	-- Psychic's Subtle Slippers
-						i(174157),	-- Talons of Grim Revelations
-						i(174060),	-- Psyche Shredder
-					},
+				Boss(INQUISITOR, {
+					ach(14045),	-- Mythic: Dark Inquisitor Xanesh
 				}),
-				e(2377, {	-- Dark Inquisitor Xanesh
-					["crs"] = { 160229, 156575 },
-					["g"] = {
-						ach(14045),	-- Mythic: Dark Inquisitor Xanesh
-						i(172196),	-- Vorzz Yoq'al
-						i(172190),	-- Uhnish Vwah
-						i(174169),	-- Gauntlets of Foul Inquisition
-						i(174126),	-- Binding of Dark Heresies
-						i(174156),	-- Chainlink Belt of Ill Omens
-						i(174140),	-- Cord of Anguished Cries
-						i(174121),	-- Trousers of Peculiar Potency
-						i(173943),	-- Torment in a Jar
-					},
+				Boss(HIVEMIND, {
+					ach(14046),	-- Mythic: The Hivemind
 				}),
-				e(2372, {	-- The Hivemind
-					["crs"] = {
-						157253,	-- Ka'zir
-						157254,	-- Tek'ris
-					},
-					["g"] = {
-						ach(14046),	-- Mythic: The Hivemind
-						i(174106),	-- Qwor N'lyeth
-						i(172192),	-- The All-Seeing Eye
-						i(174154),	-- Nightmarish Chain Shackles
-						i(174122),	-- Void-drenched Wristwraps
-						i(174137),	-- Chitinspine Gloves
-						i(174171),	-- Dark Crystalline Girdle
-						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
-					},
+				Boss(SHADHAR, {
+					ach(14048),	-- Mythic: Shad'har the Insatiable
 				}),
-				e(2367, {	-- Shad'har the Insatiable
-					["crs"] = { 157231 },
-					["g"] = {
-						ach(14048),	-- Mythic: Shad'har the Insatiable
-						i(172186),	-- Warmace of Waking Nightmares
-						i(174107),	-- Insidious Writhing Longbow
-						i(174177),	-- Bracers of Phantom Pains
-						i(174145),	-- Wristwraps of Volatile Power
-						i(174162),	-- Ego-Annihilating Grips
-						i(174130),	-- Grips of Occult Reminiscence
-						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
-					},
+				Boss(DRESTAGATH, {
+					ach(14049),	-- Mythic: Drest'agath
 				}),
-				e(2373, {	-- Drest'agath
-					["crs"] = { 157602 },
-					["g"] = {
-						ach(14049),	-- Mythic: Drest'agath
-						i(172195),	-- Halsheth, Slumberer's Spear
-						i(172198),	-- Mar'kowa, the Mindpiercer
-						i(174146),	-- Gloves of Abyssal Authority
-						i(174174),	-- Belt of Muttering Truths
-						i(174159),	-- Spinebarb Legplates
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174532),	-- Ichorspine Loop
-						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
-					},
+				Boss(ILGYNOTH, {
+					ach(14052),	-- Mythic: Il'gynoth, Corruption Reborn
 				}),
-				e(2370, {	-- Vexiona
-					["crs"] = { 157354 },
-					["g"] = {
-						ach(14050),	-- Mythic: Vexiona
-						i(172194),	-- Gift of the Void
-						i(174148),	-- Helm of Deep Despair
-						i(174120),	-- Void Ascendant's Mantle
-						i(174164),	-- Breastplate of Twilight Decimation
-						i(174131),	-- Darkheart Robe
-						i(174160),	-- Greaves of the Twilight Drake
-					},
+				Boss(VEXIONA, {
+					ach(14050),	-- Mythic: Vexiona
 				}),
-				e(2364, {	-- Ra-den the Despoiled
-					["crs"] = { 156866 },
-					["g"] = {
-						ach(14051),	-- Mythic: Ra-den the Despoiled
-						i(172228),	-- Shandai, Watcher of Cosmos
-						i(172197),	-- Unguent Caress
-						i(174134),	-- Gibbering Maw
-						i(174149),	-- Dreamer's Unblinking Pauldrons
-						i(174168),	-- Carapace of Pulsing Vita
-						i(174115),	-- Robe of the Fallen Keeper
-						i(174175),	-- Reality-Defying Greaves
-						i(174128),	-- Boots of Wrought Shadow
-						i(174500),	-- Vita-Charged Titanshard
-						i(174528),	-- Vita-Twisted Titanshard
-					},
+				Boss(RADEN, {
+					ach(14051),	-- Mythic: Ra-den the Despoiled
 				}),
-				e(2374, {	-- Il'gynoth, Corruption Reborn
-					["crs"] = { 158328 },
-					["g"] = {
-						ach(14052),	-- Mythic: Il'gynoth, Corruption Reborn
-						i(172189),	-- Eyestalk of Il'gynoth
-						i(172188),	-- Precipice of Oblivion
-						i(174116),	-- Cowl of Unspeakable Horrors
-						i(174163),	-- Second Sight Helm
-						i(174135),	-- Spaulders of Aberrant Allure
-						i(174150),	-- Scales of the Scheming Behemoth
-						i(174161),	-- Bracers of Manifest Apathy
-						i(174129),	-- Cuffs of Grim Conjuration
-						i(174142),	-- Belt of Braided Vessels
-						i(174176),	-- Sabatons of Malevolent Intent
-						i(174180),	-- Oozing Coagulum
-					},
+				Boss(CARAPACE, {
+					ach(14054),	-- Mythic: Carapace of N'Zoth
 				}),
-				e(2366, {	-- Carapace of N'Zoth
-					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
-					["g"] = {
-						ach(14054),	-- Mythic: Carapace of N'Zoth
-						i(174109),	-- Lurker's Piercing Gaze
-						i(172227),	-- Shard of the Black Empire
-						i(174108),	-- Shgla'yos, Astral Malignity
-						i(174151),	-- Helm of Actualized Visions
-						i(174166),	-- Pauldrons of Infinite Dreams
-						i(174117),	-- Spaulders of Miasmic Mycelia
-						i(174136),	-- Tortured Fleshbeast Cuirass
-						i(174178),	-- Mirage-Weaver's Gauntlets
-						i(174158),	-- Watcher's Scheming Girdle
-						i(174127),	-- Corporeal Supplicant's Trousers
-						i(174144),	-- Corpuscular Leather Greaves
-					},
-				}),
-				e(2375, {	-- N'Zoth, the Corruptor
-					["crs"] = { 158041 },
-					["g"] = {
-						ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
-							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
-						}),
-						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
-							title(417),	-- the Uncorrupted
-						}),
-						ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
-						ach(14071, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								title(416),	-- <Name>, Famed Slayer of N'Zoth
-							},
-						})),
-						ach(14072, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								title(416),	-- <Name>, Famed Slayer of N'Zoth
-							},
-						})),
-						i(173886, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Bursting Void Droplet
-						})),
-						i(174872),	-- Ny'alotha Allseer (MOUNT!)
-						i(172187),	-- Devastation's Hour
-						i(172229),	-- Dominion, Lurker Beyond Dreams
-						i(174167),	-- Greathelm of Phantasmic Reality
-						i(174118),	-- Visage of Nightmarish Machinations
-						i(174133),	-- Pauldrons of the Great Convergence
-						i(174147),	-- Last Vestige of Neltharion
-						i(174533),	-- Ring of Cosmic Potential
-						i(174277),	-- Lingering Psychic Shell
-						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
-					},
+				Boss(NZOTH, {
+					ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
+						["timeline"] = { REMOVED_9_0_1 },
+					}),
+					ach(14071, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { REMOVED_9_0_1 },
+						["groups"] = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
+					}),
+					ach(14072, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
+						["races"] = HORDE_ONLY,
+						["timeline"] = { REMOVED_9_0_1 },
+						["groups"] = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
+					}),
+					ach(14055, {	-- Mythic: N'Zoth, the Corruptor
+						title(417),	-- the Uncorrupted
+					}),
+					ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
+					i(174872),	-- Ny'alotha Allseer (MOUNT!)
+					i(173886, {	-- Bursting Void Droplet
+						["timeline"] = { REMOVED_9_0_1 },
+					}),
 				}),
 			}),
 		},

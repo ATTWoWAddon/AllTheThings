@@ -8,11 +8,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236766,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1266),	-- Explore Grizzly Hills
+					ach(1266),	-- Explore Grizzly Hills
 					ach(37, {	-- Fo' Grizzle My Shizzle (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12249,	-- Ursoc, the Bear God
 							12153,	-- The Iron Thane and His Anvil
@@ -21,39 +22,13 @@ root(ROOTS.Zones, {
 							12164,	-- Hour of the Worg
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 85,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39108, {	-- Ursoc, the Bear God
-								["sourceQuest"] = 12249,	-- Ursoc, the Bear God
-							}),
-							crit(39109, {	-- The Iron Thane
-								["sourceQuest"] = 12153,	-- The Iron Thane and His Anvil
-							}),
-							crit(39110, {	-- Loken's Orders
-								["sourceQuest"] = 12185,	-- Put on Your Best Face for Loken
-							}),
-							crit(39111, {	-- Revelation!
-								["sourceQuest"] = 12068,	-- Voices From the Dust
-							}),
-							crit(39112, {	-- Hour of the Worg
-								["sourceQuest"] = 12164,	-- Hour of the Worg
-							}),
-							crit(39113, {	-- Eons of Misery
-								["sourceQuest"] = 12152,	-- Jin'arrak's End
-							}),
-						},
 						-- #endif
 					}),
 					ach(1357, {	-- Fo' Grizzle My Shizzle (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12236,	-- Ursoc, the Bear God
 							12431,	-- The Conquest Pit: Final Showdown
@@ -63,101 +38,13 @@ root(ROOTS.Zones, {
 							12068,	-- Voices From the Dust
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39114, {	-- Ursoc, the Bear God
-								["sourceQuest"] = 12236,	-- Ursoc, the Bear God
-							}),
-							crit(39115, {	-- The Final Showdown
-								["sourceQuest"] = 12431,	-- The Conquest Pit: Final Showdown
-							}),
-							crit(39116, {	-- The Iron Thane
-								["sourceQuest"] = 12199,	-- Bringing Down the Iron Thane
-							}),
-							crit(39117, {	-- Loken's Orders
-								["sourceQuest"] = 12203,	-- Loken's Orders
-							}),
-							crit(39112, {	-- Hour of the Worg
-								["sourceQuest"] = 12164,	-- Hour of the Worg
-							}),
-							crit(39111, {	-- Revelation!
-								["sourceQuest"] = 12068,	-- Voices From the Dust
-							}),
-							crit(39113, {	-- Eons of Misery
-								["sourceQuest"] = 12152,	-- Jin'arrak's End
-							}),
-						},
 						-- #endif
 					}),
 					pvp(ach(2016, {	-- Grizzled Veteran (A)
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(7278, {	-- Blackriver Skirmish
-								["_quests"] = { 12444 },	-- Blackriver Skirmish
-							}),
-							crit(7284, {	-- Down With Captain Zorna!
-								["_quests"] = { 12314 },	-- Down With Captain Zorna!
-							}),
-							crit(7283, {	-- Keep Them at Bay!
-								["_quests"] = { 12316 },	-- Keep Them at Bay!
-							}),
-							crit(7282, {	-- Kick 'Em While They're Down
-								["_quests"] = { 12289 },	-- Kick 'Em While They're Down
-							}),
-							crit(7280, {	-- Life or Death
-								["_quests"] = { 12296 },	-- Life or Death
-							}),
-							crit(7279, {	-- Pieces Parts
-								["_quests"] = { 12268 },	-- Pieces Parts
-							}),
-							crit(7286, {	-- Riding the Red Rocket
-								["_quests"] = { 12437 },	-- Riding the Red Rocket
-							}),
-							crit(7281, {	-- Shredder Repair
-								["_quests"] = { 12244 },	-- Shredder Repair
-							}),
-							crit(7285, {	-- Smoke 'Em Out
-								["_quests"] = { 12323 },	-- Smoke 'Em Out
-							}),
-						},
 					})),
 					pvp(ach(2017, {	-- Grizzled Veteran (H)
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(7287, {	-- Blackriver Brawl
-								["_quests"] = { 12170 },	-- Blackriver Brawl
-							}),
-							crit(7293, {	-- Crush Captain Brightwater!
-								["_quests"] = { 12315 },	-- Crush Captain Brightwater!
-							}),
-							crit(7290, {	-- Keep 'Em on Their Heels
-								["_quests"] = { 12284 },	-- Keep 'Em on Their Heels
-							}),
-							crit(7294, {	-- Keep Them at Bay
-								["_quests"] = { 12317 },	-- Keep Them at Bay
-							}),
-							crit(7289, {	-- Making Repairs
-								["_quests"] = { 12280 },	-- Making Repairs
-							}),
-							crit(7291, {	-- Overwhelmed!
-								["_quests"] = { 12288 },	-- Overwhelmed!
-							}),
-							crit(7292, {	-- Riding the Red Rocket
-								["_quests"] = { 12432 },	-- Riding the Red Rocket
-							}),
-							crit(7288, {	-- Shred the Alliance
-								["_quests"] = { 12270 },	-- Shred the Alliance
-							}),
-							crit(7295, {	-- Smoke 'Em Out
-								["_quests"] = { 12324 },	-- Smoke 'Em Out
-							}),
-						},
 					})),
 				}),
 				battlepets({
@@ -240,8 +127,8 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(12138, {	-- ... Or Maybe We Don't (A)
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12131,	-- We Have the Power
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -249,8 +136,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12198, {	-- ... Or Maybe We Don't (H)
-						["qg"] = 27227,	-- Prospector Rokar
 						["sourceQuest"] = 12197,	-- We Have the Power
+						["qg"] = 27227,	-- Prospector Rokar
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
@@ -259,14 +146,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.0, 40.0, GRIZZLY_HILLS },
 					}),
 					q(12220, {	-- A Dark Influence
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuest"] = 12310,	-- A Swift Response
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12176, {  -- A Minor Substitution
-						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["sourceQuest"] = 12175,	-- Gray Worg Hides
+						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -284,17 +171,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12160, {	-- A Name from the Past
-						["qg"] = 26932,	-- Petrov
 						["sourceQuest"] = 12159,	-- Souls at Unrest
+						["qg"] = 26932,	-- Petrov
 						["coord"] = { 55.1, 23.3, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12246, {	-- A Possible Link (A)
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuests"] = {
 							12219,	-- The Failed World Tree
 							12220,	-- A Dark Influence
 						},
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -315,11 +202,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12229, {  -- A Possible Link (H)
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuests"] = {
 							12213,	-- The Darkness Beneath
 							12207,	-- Vordassil's Fall
 						},
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -340,8 +227,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12257, {	-- A Show of Strength
-						["qg"] = 27388,	-- Sergeant Nazgrim
 						["sourceQuest"] = 12468,	-- The Conqueror's Task
+						["qg"] = 27388,	-- Sergeant Nazgrim
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -351,13 +238,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12411, {	-- A Sister's Pledge
-						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12330,	-- Anatoly Will Talk
+						["qg"] = 26935,	-- Sasha
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 					}),
 					q(12310, {	-- A Swift Response
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuest"] = 12308,	-- Escape from Silverbrook
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -370,32 +257,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12294, {	-- A Tentative Pact
-						["qg"] = 27469,	-- Ivan
 						["sourceQuest"] = 12293,	-- Close the Deal
+						["qg"] = 27469,	-- Ivan
 						["coord"] = { 34.7, 55.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					pvp(q(12446, {	-- Always Seeking Solvent (A)
-						["qg"] = 27495,	-- Barblefink
 						["sourceQuest"] = 12443,	-- Seeking Solvent
+						["qg"] = 27495,	-- Barblefink
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
-						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["timeline"] = { REMOVED_4_0_1 },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					})),
 					pvp(q(12434, {	-- Always Seeking Solvent (H)
-						["qg"] = 27565,	-- Gurtor
 						["sourceQuest"] = 12433,	-- Seeking Solvent
+						["qg"] = 27565,	-- Gurtor
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
-						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["timeline"] = { REMOVED_4_0_1 },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					})),
 					q(12295, {	-- An Exercise in Diplomacy
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuest"] = 12294,	-- A Tentative Pact
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -406,14 +293,14 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12165, {	-- An Intriguing Plan
-						["qg"] = 27221,	-- Tormak the Scarred
 						["sourceQuest"] = 12195,	-- The Unexpected 'Guest'
+						["qg"] = 27221,	-- Tormak the Scarred
 						["coord"] = { 65.2, 47.5, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12330, {	-- Anatoly Will Talk
-						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12329,	-- Fate and Coincidence
+						["qg"] = 26935,	-- Sasha
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 						["groups"] = {
 							i(38748),	-- Seal of the Slumbering Wolf
@@ -422,8 +309,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12413, {  -- Attack on Silverbrook
-						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
+						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.6, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -438,8 +325,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12154, {	-- Blackout
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -471,8 +358,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					})),
 					q(12199, {  -- Bringing Down the Iron Thane
-						["qg"] = 27227,	-- Prospector Rokar
 						["sourceQuest"] = 12198,	-- ... Or Maybe We Don't
+						["qg"] = 27227,	-- Prospector Rokar
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -486,8 +373,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12002, {	-- Brothers in Battle
-						["qg"] = 26226,	-- Brugar Stoneshear
 						["sourceQuest"] = 11998,	-- Softening the Blow
+						["qg"] = 26226,	-- Brugar Stoneshear
 						["coord"] = { 59.8, 27.5, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -497,23 +384,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12128, {	-- Check Up on Raegar
-						["qg"] = 26226,	-- Brugar Stoneshear
 						["sourceQuest"] = 12014,	-- Steady as a Rock?
+						["qg"] = 26226,	-- Brugar Stoneshear
 						["coord"] = { 59.8, 27.5, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12247, {	-- Children of Ursoc
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuests"] = {
 							12219,	-- The Failed World Tree
 							12220,	-- A Dark Influence
 						},
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12137, {	-- Chill Out, Mon
-						["qg"] = 26924,	-- Gan'jo
 						["sourceQuest"] = 12121,	-- See You on the Other Side
+						["qg"] = 26924,	-- Gan'jo
 						["coord"] = { 69.4, 19.4, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Snow of Eternal Slumber
@@ -531,8 +418,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12293, {	-- Close the Deal
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuest"] = 12292,	-- Local Support
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -548,20 +435,20 @@ root(ROOTS.Zones, {
 						-- #endif
 					})),
 					q(12184, {	-- Cultivating an Image (A)
-						["qg"] = 26885,	-- Mountaineer Kilian
 						["sourceQuest"] = 12183,	-- Looking the Part
+						["qg"] = 26885,	-- Mountaineer Kilian
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12202, {	-- Cultivating an Image (H)
-						["qg"] = 26666,	-- Scout Vor'takh
 						["sourceQuest"] = 12201,	-- The Overseer's Shadow
+						["qg"] = 26666,	-- Scout Vor'takh
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12054, {	-- Deciphering the Journal
-						["qg"] = 26584,	-- Sage Paluna
 						["sourceQuest"] = 12026,	-- The Damaged Journal
+						["qg"] = 26584,	-- Sage Paluna
 						["coord"] = { 65.2, 47.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -572,15 +459,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12178, {	-- Delivery to Krenna
-						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["sourceQuest"] = 12177,	-- Jun'ik's Coverup
+						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12105, {	-- Descent into Darkness
 						["provider"] = { "i", 36940 },	-- Mikhail's Journal
-						["cr"] = 27546,	-- Silverbrook Hunter
 						["races"] = ALLIANCE_ONLY,
+						["cr"] = 27546,	-- Silverbrook Hunter
 						["groups"] = {
 							i(38734),	-- Abandoned Hood
 							i(39033),	-- Discarded Miner's Jerkin
@@ -589,17 +476,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12241, {	-- Destroy the Sapling
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuests"] = {
 							12229,	-- A Possible Link
 							12231,	-- The Bear God's Offpsring
 						},
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12227, {	-- Doing Your Duty
-						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["sourceQuest"] = 12226,	-- Just Passing Through
+						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.1, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -620,8 +507,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					})),
 					q(12120, {	-- Drak'aguul's Mallet
-						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12116,	-- It Takes Guts...
+						["qg"] = 26886,	-- Kraz
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Drakil'jin Mallet
@@ -645,8 +532,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12217, {	-- Eagle Eyes
-						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["sourceQuest"] = 12215,	-- Them or Us!
+						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -656,8 +543,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12308, {	-- Escape from Silverbrook
-						["qg"] = 27499,	-- Caged Prisoner
 						["sourceQuest"] = 12302,	-- Words of Warning
+						["qg"] = 27499,	-- Caged Prisoner
 						["coord"] = { 26.4, 31.8, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -669,8 +556,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12453, {	-- Eyes Above
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -680,16 +567,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12329, {	-- Fate and Coincidence
-						["qg"] = 27581,	-- Ruuna the Blind
 						["sourceQuest"] = 12327,	-- Out of Body Experience
+						["qg"] = 27581,	-- Ruuna the Blind
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 					}),
 					q(11984, {	-- Filling the Cages
-						["qg"] = 26424,	-- Samir
 						["sourceQuests"] = {
 							12210,	-- Troll Season! (A)
 							12208,	-- Good Troll Hunting (H)
 						},
+						["qg"] = 26424,	-- Samir
 						["coord"] = { 16.1, 47.6, GRIZZLY_HILLS },
 						["groups"] = {
 							i(39116),	-- Grinder of Reverse Emancipation
@@ -706,8 +593,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12099, {	-- Free at Last
-						["qg"] = 26420,	-- Gavrock
 						["sourceQuest"] = 12094,	-- Latent Power
+						["qg"] = 26420,	-- Gavrock
 						["coord"] = { 79.7, 33.5, GRIZZLY_HILLS },
 						["groups"] = {
 							i(39119),	-- Bondsniper
@@ -718,8 +605,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12196, {	-- From the Ground Up
-						["qg"] = 27227,	-- Prospector Rokar
 						["sourceQuest"] = 12165,	-- An Intriguing Plan
+						["qg"] = 27227,	-- Prospector Rokar
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -734,20 +621,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12081, {	-- Gavrock
-						["qg"] = 26260,	-- Kurun
 						["sourceQuest"] = 11985,	-- Into the Breach
+						["qg"] = 26260,	-- Kurun
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 					}),
 					q(12208, {	-- Good Troll Hunting
-						["qg"] = 27266,	-- Sergeant Thurkin
 						["sourceQuest"] = 12412,	-- My Enemy's Friend
+						["qg"] = 27266,	-- Sergeant Thurkin
 						["coord"] = { 22.1, 64.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12424, {	-- Gorgonna
-						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuest"] = 12423,	-- Mikhail's Journal
+						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
@@ -767,8 +654,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12042, {	-- Heart of the Ancients
-						["qg"] = 26543,	-- Image of Drakuru
 						["sourceQuest"] = 12007,	-- Sacrifices Must be Made
+						["qg"] = 26543,	-- Image of Drakuru
 						["coord"] = { 17.4, 36.3, GRIZZLY_HILLS },
 					}),
 					heroscall(q(39207, {	-- Hero's Call: Grizzly Hills!
@@ -779,17 +666,17 @@ root(ROOTS.Zones, {
 						["lvl"] = 63,
 					})),
 					q(12158, {	-- Hollowstone Mine
-						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["sourceQuests"] = {
 							12105,	-- Descent into Darkness
 							12109,	-- Report to Gryan Stoutmantle... Again
 						},
+						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["coord"] = { 59.4, 26.0, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12164, {	-- Hour of the Worg
-						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12411,	-- A Sister's Pledge
+						["qg"] = 26935,	-- Sasha
 						["coord"] = { 57.5, 41.3, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Varlam slain
@@ -812,8 +699,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12204, {	-- In the Name of Loken
-						["qg"] = 26666,	-- Scout Vor'takh
 						["sourceQuest"] = 12099,	-- Free at Last -- TODO: verify
+						["qg"] = 26666,	-- Scout Vor'takh
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -826,8 +713,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11985, {	-- Into the Breach
-						["qg"] = 26260,	-- Kurun
 						["sourceQuest"] = 12070,	-- Rallying the Troops
+						["qg"] = 26260,	-- Kurun
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Iron Thane Argrum slain
@@ -852,8 +739,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12152, {	-- Jin'arrak's End
-						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12137,	-- Chill Out, Mon
+						["qg"] = 26886,	-- Kraz
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Warlord Jin'arrak Destroyed
@@ -868,14 +755,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12177, {	-- Jun'ik's Coverup
-						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["sourceQuest"] = 12176,	-- A Minor Substitution
+						["qg"] = 27037,	-- Hidetrader Jun'ik
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12226, {	-- Just Passing Through
-						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["sourceQuest"] = 12225,	-- Mmm... Amberseeds!
+						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -924,8 +811,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					})),
 					q(12094, {	-- Latent Power
-						["qg"] = 26420,	-- Gavrock
 						["sourceQuest"] = 12093,	-- Runes of Compulsion
+						["qg"] = 26420,	-- Gavrock
 						["coord"] = { 79.7, 33.6, GRIZZLY_HILLS },
 					}),
 					pvp(q(12296, {	-- Life or Death
@@ -936,13 +823,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					})),
 					q(12292, {	-- Local Support
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuests"] = {
 							12511,	-- The Hills Have Us
 							-- #if AFTER 6.2.0.19953
 							39207,	-- Hero's Call: Grizzly Hills!
 							-- #endif
 						},
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -960,14 +847,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12203, {	-- Loken's Orders
-						["qg"] = 26666,
 						["sourceQuest"] = 12202,	-- Cultivating an Image
+						["qg"] = 26666,
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12183, {	-- Looking the Part
-						["qg"] = 26885,	-- Mountaineer Kilian
 						["sourceQuest"] = 12180,	-- The Captive Prospectors
+						["qg"] = 26885,	-- Mountaineer Kilian
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -986,8 +873,8 @@ root(ROOTS.Zones, {
 					})),
 					q(12423, {	-- Mikhail's Journal
 						["provider"] = { "i", 37830 },	-- Mikhail's Journal
-						["crs"] = { 27546 },	-- Silverbrook Hunter
 						["races"] = HORDE_ONLY,
+						["crs"] = { 27546 },	-- Silverbrook Hunter
 					}),
 					q(12225, {	-- Mmm... Amberseeds!
 						["provider"] = { "o", 188667 },	-- Amberseed
@@ -1016,8 +903,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12412, {  -- My Enemy's Friend
-						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuest"] = 12259,	-- The Thane of Voldrune
+						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1035,8 +922,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12802, {	-- My Heart is in Your Hands
-						["provider"] = { "o", 188365 },	-- Heart of the Ancients
 						["sourceQuest"] = 12042,	-- Heart of the Ancients
+						["provider"] = { "o", 188365 },	-- Heart of the Ancients
 						["coord"] = { 36.9, 32.3, GRIZZLY_HILLS },
 					}),
 					q(12113, {	-- Nice to Meat You
@@ -1054,8 +941,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12299, {	-- Northern Hospitality
-						["qg"] = 27486,	-- Sergei
 						["sourceQuest"] = 12295,	-- An Exercise in Diplomacy
+						["qg"] = 27486,	-- Sergei
 						["coord"] = { 26.4, 35.7, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1068,14 +955,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12451, {	-- Onward to Camp Oneqwah
-						["qg"] = 27388,	-- Sergeant Nazgrim
 						["sourceQuest"] = 12259,	-- The Thane of Voldrune
+						["qg"] = 27388,	-- Sergeant Nazgrim
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12327, {	-- Out of Body Experience
-						["qg"] = 27581,	-- Ruuna the Blind
 						["sourceQuest"] = 12328,	-- Ruuna's Request
+						["qg"] = 27581,	-- Ruuna the Blind
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 					}),
 					pvp(q(12288, {	-- Overwhelmed!
@@ -1092,8 +979,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					})),
 					q(12073, {	-- Pounding the Iron
-						["qg"] = 26666,	-- Scout Vor'takh
 						["sourceQuest"] = 12054,	-- Deciphering the Journal
+						["qg"] = 26666,	-- Scout Vor'takh
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1106,8 +993,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12185, {	-- Put on Your Best Face for Loken
-						["qg"] = 26885,	-- Mountaineer Kilian
 						["sourceQuest"] = 12184,	-- Cultivating an Image
+						["qg"] = 26885,	-- Mountaineer Kilian
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1118,24 +1005,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11982, {	-- Raining Down Destruction
-						["qg"] = 26260,	-- Kurun
 						["sourceQuests"] = {
 							12074,	-- An Expedient Ally
 							11981,	-- Find Kurun!
 						},
+						["qg"] = 26260,	-- Kurun
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 					}),
 					q(12070, {	-- Rallying the Troops
-						["qg"] = 26260,	-- Kurun
 						["sourceQuest"] = 11982,	-- Raining Down Destruction
+						["qg"] = 26260,	-- Kurun
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 					}),
 					q(12770, {	-- Reallocating Resources
-						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["altQuests"] = { 12789 },	-- Into the Breach
-						-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
+						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["coord"] = { 59.4, 26.0, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 					}),
 					q(12212, {	-- Replenishing the Storehouse
 						["qg"] = 27277,	-- Master Woodsman Anderhol
@@ -1149,8 +1036,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12109, {	-- Report to Gryan Stoutmantle... Again
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuest"] = 12105,	-- Descent into Darkness
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1168,8 +1055,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					})),
 					q(12093, {	-- Runes of Compulsion
-						["qg"] = 26420,	-- Gavrock
 						["sourceQuest"] = 12081,	-- Gavrock
+						["qg"] = 26420,	-- Gavrock
 						["coord"] = { 79.7, 33.6, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Overseer Durval slain
@@ -1187,23 +1074,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12161, {	-- Ruuna the Blind (A)
-						["qg"] = 27582,	-- Private Arun
 						["sourceQuest"] = 12160,	-- A Name from the Past
+						["qg"] = 27582,	-- Private Arun
 						["coord"] = { 59.1, 26.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12425, {	-- Ruuna the Blind (H)
-						["qg"] = 27102,	-- Gorgonna
 						["sourceQuest"] = 12422,	-- Tactical Clemency
+						["qg"] = 27102,	-- Gorgonna
 						["coord"] = { 20.9, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12328, {	-- Ruuna's Request
-						["qg"] = 27581,	-- Ruuna the Blind
 						["sourceQuests"] = {
 							12161,	-- Ruuna the Blind (A)
 							12425,	-- Ruuna the Blind (H)
 						},
+						["qg"] = 27581,	-- Ruuna the Blind
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/4 Gossamer Dust
@@ -1217,13 +1104,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12007, {	-- Sacrifices Must be Made
-						["qg"] = 26500,	-- Image of Drakuru
 						["sourceQuest"] = 11991,	-- Subject to Interpretation
+						["qg"] = 26500,	-- Image of Drakuru
 						["coord"] = { 13.2, 60.8, GRIZZLY_HILLS },
 					}),
 					q(12134, {	-- Sasha's Hunt
-						["qg"] = 26935,	-- Sasha
 						["sourceQuest"] = 12329,	-- Fate and Coincidence
+						["qg"] = 26935,	-- Sasha
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/12 Solstice Hunter slain
@@ -1236,18 +1123,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12190, {	-- Say Hello to My Little Friend
-						["qg"] = 26519,	-- Prigmon
 						["sourceQuest"] = 12483,	-- Shimmercap Stew
+						["qg"] = 26519,	-- Prigmon
 						["coord"] = { 15.7, 46.6, GRIZZLY_HILLS },
 					}),
 					q(12484, {	-- Scourgekabob
-						["qg"] = 26519,	-- Prigmon
 						["sourceQuest"] = 11990,	-- Vial of Visions
+						["qg"] = 26519,	-- Prigmon
 						["coord"] = { 15.7, 46.6, GRIZZLY_HILLS },
 					}),
 					q(12037, {	-- Search and Rescue
-						["qg"] = 26604,	-- Mack Fearsen
 						["sourceQuest"] = 12029,	-- Seared Scourge
+						["qg"] = 26604,	-- Mack Fearsen
 						["coord"] = { 16.6, 48.2, GRIZZLY_HILLS },
 						["groups"] = {
 							i(39649),	-- Kurzel's Angst
@@ -1256,25 +1143,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12029, {	-- Seared Scourge
-						["qg"] = 26604,	-- Mack Fearsen
 						["sourceQuest"] = 12484,	-- Scourgekabob
+						["qg"] = 26604,	-- Mack Fearsen
 						["coord"] = { 16.6, 48.2, GRIZZLY_HILLS },
 					}),
 					q(12038, {	-- Seared Scourge (daily)
-						["qg"] = 26604,	-- Mack Fearsen
 						["sourceQuest"] = 12029,	-- Seared Scourge
+						["qg"] = 26604,	-- Mack Fearsen
 						["coord"] = { 16.6, 48.2, GRIZZLY_HILLS },
 						["isDaily"] = true,
 					}),
 					q(12222, {	-- Secrets of the Flamebinders
-						["qg"] = 27391,	-- Woodsman Drake
 						["sourceQuest"] = 12294,	-- A Tentative Pact
+						["qg"] = 27391,	-- Woodsman Drake
 						["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12121, {	-- See You on the Other Side
-						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12120,	-- Drak'aguul's Mallet
+						["qg"] = 26886,	-- Kraz
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 					}),
 					pvp(q(12443, {	-- Seeking Solvent (A)
@@ -1303,8 +1190,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12483, {	-- Shimmercap Stew
-						["qg"] = 26519,	-- Prigmon
 						["sourceQuest"] = 12484,	-- Scourgekabob
+						["qg"] = 26519,	-- Prigmon
 						["coord"] = { 15.7, 46.6, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/5 Ice Serpent Eye
@@ -1369,8 +1256,8 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12159, {	-- Souls at Unrest
-						["qg"] = 26932,	-- Petrov
 						["sourceQuest"] = 12158,	-- Hollowstone Mine
+						["qg"] = 26932,	-- Petrov
 						["coord"] = { 55.1, 23.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1381,8 +1268,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12014, {	-- Steady as a Rock?
-						["qg"] = 26514,	-- Surveyor Orlond
 						["sourceQuest"] = 12010,	-- The Fate of Orlond
+						["qg"] = 26514,	-- Surveyor Orlond
 						["coord"] = { 67.4, 15.2, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1419,8 +1306,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11991, {	-- Subject to Interpretation
-						["qg"] = 26423,	-- Drakuru
 						["sourceQuest"] = 11990,	-- Vial of Visions
+						["qg"] = 26423,	-- Drakuru
 						["coord"] = { 16.4, 47.8, GRIZZLY_HILLS },
 						["groups"] = {
 							i(39020),	-- Drakuru's Ghastly Helm
@@ -1441,14 +1328,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12422, {	-- Tactical Clemency
-						["qg"] = 27102,	-- Gorgonna
 						["sourceQuest"] = 12424,	-- Gorgonna
+						["qg"] = 27102,	-- Gorgonna
 						["coord"] = { 20.9, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12216, {	-- Take Their Rear!
-						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["sourceQuest"] = 12212,	-- Replenishing the Storehouse
+						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1462,66 +1349,66 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12300, {	-- Test of Mettle
-						["qg"] = 27486,	-- Sergei
 						["sourceQuests"] = {
 							12299,	-- Northern Hospitality
 							12307,	-- Wolfsbane Root
 						},
+						["qg"] = 27486,	-- Sergei
 						["coord"] = { 26.4, 35.7, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12231, {	-- The Bear God's Offspring
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuests"] = {
 							12213,	-- The Darkness Beneath
 							12207,	-- Vordassil's Fall
 						},
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12180, {	-- The Captive Prospectors
-						["qg"] = 26885,	-- Mountaineer Kilian
 						["sourceQuest"] = 12128,	-- Check Up on Raegar
+						["qg"] = 26885,	-- Mountaineer Kilian
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12468, {	-- The Conqueror's Task
-						["qg"] = 26860,	-- Conqueror Krenna
 						["sourceQuests"] = {
 							12487,	-- To Conquest Hold, But Be Careful!
 							-- #if AFTER 6.2.0.19953
 							39206,	-- Warchief's Command: Grizzly Hills!
 							-- #endif
 						},
+						["qg"] = 26860,	-- Conqueror Krenna
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12427, {	-- The Conquest Pit: Bear Wrestling!
-						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuests"] = {
 							12178,	-- Delivery to Krenna
 							-- TODO: verify the following:
 							12413,	-- Attack on Silverbrook
 							12422,	-- Tactical Clemency
 						},
+						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12429, {	-- The Conquest Pit: Blood and Metal
-						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuest"] = 12428,	-- The Conquest Pit: Mad Furbolg Fighting
+						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12430, {	-- The Conquest Pit: Death Is Likely
-						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuest"] = 12429,	-- The Conquest Pit: Blood and metal
+						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12431, {  -- The Conquest Pit: Final Showdown
-						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuest"] = 12430,	-- The Conquest Pit: Death Is Likely
+						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1533,8 +1420,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12428, {	-- The Conquest Pit: Mad Furbolg Fighting
-						["qg"] = 27719,	-- Grennix Shivwiggle
 						["sourceQuest"] = 12427,	-- The Conquest Pit: Bear Wrestling!
+						["qg"] = 27719,	-- Grennix Shivwiggle
 						["coord"] = { 22.4, 63.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1549,20 +1436,20 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12213, {	-- The Darkness Beneath
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuest"] = 12413,	-- Attack on Silverbrook -- TODO: verify
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12010, {	-- The Fate of Orlond
-						["qg"] = 26226,	-- Brugar Stoneshear
 						["sourceQuest"] = 12003,	-- Uncovering the Tunnels
+						["qg"] = 26226,	-- Brugar Stoneshear
 						["coord"] = { 59.8, 27.5, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12219, {	-- The Failed World Tree
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuest"] = 12310,	-- A Swift Response
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1577,8 +1464,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12256, {	-- The Flamebinders' Secrets
-						["qg"] = 27388,	-- Sergeant Nazgrim
 						["sourceQuest"] = 12468,	-- The Conqueror's Task
+						["qg"] = 27388,	-- Sergeant Nazgrim
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1589,10 +1476,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12511, {	-- The Hills Have Us
-						["qg"] = 27317,	-- Gryphon Commander Urik
 						-- #if AFTER 6.2.0
 						["altQuests"] = { 39207 },	-- Hero's Call: Grizzly Hills!
 						-- #endif
+						["qg"] = 27317,	-- Gryphon Commander Urik
 						["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -1603,8 +1490,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12153, {	-- The Iron Thane and His Anvil
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1619,8 +1506,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12201, {	-- The Overseer's Shadow
-						["qg"] = 26666,	-- Scout Vor'takh
 						["sourceQuest"] = 12204,	-- in the Name of Loken
+						["qg"] = 26666,	-- Scout Vor'takh
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1631,8 +1518,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12129, {	-- The Perfect Plan
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12128,	-- Check Up on Raegar
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1640,11 +1527,11 @@ root(ROOTS.Zones, {
 							i(36849),	-- Golem Blueprint Section 1 (QI!)
 							i(36850),	-- Golem Blueprint Section 2 (QI!)
 							i(36851),	-- Golem Blueprint Section 3 (QI!)
-						}
+						},
 					}),
 					q(11988, {	-- The Runic Keystone
-						["qg"] = 26361,	-- Torthen Deepdig
 						["sourceQuest"] = 11986,	-- The Damaged Journal
+						["qg"] = 26361,	-- Torthen Deepdig
 						["coord"] = { 59.7, 27.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1659,8 +1546,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11993, {	-- The Runic Prophecies (A)
-						["qg"] = 26361,	-- Torthen Deepdig
 						["sourceQuest"] = 11988,	-- The Runic Keystone
+						["qg"] = 26361,	-- Torthen Deepdig
 						["coord"] = { 59.7, 27.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1680,8 +1567,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12058, {  -- The Runic Prophecies (H)
-						["qg"] = 26584,	-- Sage Paluna
 						["sourceQuest"] = 12054,	-- Deciphering the Journal
+						["qg"] = 26584,	-- Sage Paluna
 						["coord"] = { 65.1, 47.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1701,11 +1588,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12255, {	-- The Thane of Voldrune (A)
-						["qg"] = 27391,	-- Woodsman Drake
 						["sourceQuests"] = {
 							12222,	-- Secrets of the Flamebinders
 							12223,	-- Thinning the Ranks
 						},
+						["qg"] = 27391,	-- Woodsman Drake
 						["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1720,11 +1607,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12259, {  -- The Thane of Voldrune (H)
-						["qg"] = 27388,	-- Sergeant Nazgrim
 						["sourceQuests"] = {
 							12257,	-- A Show of Strength
 							12256,	-- The Flamebinders' Secrets
 						},
+						["qg"] = 27388,	-- Sergeant Nazgrim
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1777,8 +1664,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12223, {	-- Thinning the Ranks
-						["qg"] = 27391,	-- Woodsman Drake
 						["sourceQuest"] = 12294,	-- A Tentative Pact
+						["qg"] = 27391,	-- Woodsman Drake
 						["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1788,28 +1675,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12210, {	-- Troll Season!
-						["qg"] = 26875,	-- Lieutenant Dumont
 						["sourceQuest"] = 12212,	-- Replenishing the Storehouse
+						["qg"] = 26875,	-- Lieutenant Dumont
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(11989, {	-- Truce?
-						["qg"] = 26423,	-- Drakuru
 						["sourceQuest"] = 11984,	-- Filling the Cages
+						["qg"] = 26423,	-- Drakuru
 						["coord"] = { 16.4, 47.8, GRIZZLY_HILLS },
 					}),
 					q(12003, {	-- Uncovering the Tunnels
-						["qg"] = 26226,	-- Brugar Stoneshear
 						["sourceQuest"] = 12002,	-- Brothers in Battle
+						["qg"] = 26226,	-- Brugar Stoneshear
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12249, {	-- Ursoc, the Bear God (A)
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuests"] = {
 							12248,	-- Vordrassil's Sapling
 							12250,	-- Vordrassil's Seeds
 						},
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1822,11 +1709,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12236, {  -- Ursoc, the Bear God (H)
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuests"] = {
 							12241,	-- Destroy the Sapling
 							12242,	-- Vordrassil's Seeds
 						},
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1839,8 +1726,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11990, {	-- Vial of Visions
-						["qg"] = 26423,	-- Drakuru
 						["sourceQuest"] = 11989,	-- Truce?
+						["qg"] = 26423,	-- Drakuru
 						["coord"] = { 16.4, 47.8, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/3 Haze Leaf
@@ -1858,8 +1745,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12068, {	-- Voices From the Dust
-						["qg"] = 26701,	-- Image of Drakuru
 						["sourceQuest"] = 12802,	-- My Heart is in Your Hands
+						["qg"] = 26701,	-- Image of Drakuru
 						["coord"] = { 44.9, 28.3, GRIZZLY_HILLS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Drakkari Tablets
@@ -1876,8 +1763,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12207, {  -- Vordrassil's Fall
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuest"] = 12413,	-- Attack on Silverbrook
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1892,20 +1779,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12248, {	-- Vordrassil's Sapling
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuests"] = {
 							12246,	-- A Possible Link
 							12247,	-- Children of Ursoc
 						},
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12250, {	-- Vordrassil's Seeds (A)
-						["qg"] = 27295,	-- Hierophant Thayreen
 						["sourceQuests"] = {
 							12246,	-- A Possible Link
 							12247,	-- Children of Ursoc
 						},
+						["qg"] = 27295,	-- Hierophant Thayreen
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1921,11 +1808,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12242, {  -- Vordrassil's Seeds (H)
-						["qg"] = 27262,	-- Windseer Grayhorn
 						["sourceQuests"] = {
 							12229,	-- A Possible Link
 							12231,	-- The Bear God's Offpsring
 						},
+						["qg"] = 27262,	-- Windseer Grayhorn
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1946,8 +1833,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(12131, {	-- We Have the Power (A)
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1990,8 +1877,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12197, {	-- We Have the Power (H)
-						["qg"] = 27227,	-- Prospector Rokar
 						["sourceQuest"] = 12196,	-- From the Ground Up
+						["qg"] = 27227,	-- Prospector Rokar
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2006,8 +1893,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12130, {	-- Why Fabricate When You Can Appropriate?
-						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12129,	-- The Perfect Plan
+						["qg"] = 26883,	-- Raegar Breakbrow
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2042,8 +1929,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12302, {	-- Words of Warning
-						["qg"] = 27497,	-- Captured Trapper
 						["sourceQuest"] = 12300,	-- Test of Mettle
+						["qg"] = 27497,	-- Captured Trapper
 						["coord"] = { 21.9, 29.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),

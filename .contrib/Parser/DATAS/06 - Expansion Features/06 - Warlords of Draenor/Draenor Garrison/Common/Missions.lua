@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures,
 						84224,	-- Lunarfall Level 2 Command Table
 						84698,	-- Lunarfall Level 3 Command Table
 					},
-					["g"] = {
+					["groups"] = {
 						ach(9900, {	-- Exploration Mission Master
 							ach(9150),	-- Exploration Mission Specialist
 							crit(27777),	-- Exploration: Oshu'gun Dig Site
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						ach(9523, {	-- Patrolling Draenor
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111971),	-- Barracks, Level 3 [Blueprints]
 								ach(9146),	-- Patrolling Mission Specialist
 							},
@@ -57,19 +57,13 @@ root(ROOTS.ExpansionFeatures,
 							ach(9145),	-- Treasure Mission Specialist
 						}),
 						mi(463, {	-- Bird Watching
-							i(118731, {	-- Spires of Arak Treasure Map
-								["questID"] = 36467,
-							}),
+							i(118731),	-- Spires of Arak Treasure Map (CI!)
 						}),
 						mi(460, {	-- Fickle Loyalty
-							i(118727, {	-- Frostfire Treasure Map
-								["questID"] = 34557,
-							}),
+							i(118727),	-- Frostfire Treasure Map (CI!)
 						}),
 						mi(462, {	-- Fields of Sorrow
-							i(118730, {	-- Talador Treasure Map
-								["questID"] = 36466,
-							}),
+							i(118730),	-- Talador Treasure Map (CI!)
 						}),
 						mi(2,   {	-- Gronnlings Abound
 							i(112737, {	-- Contract: Ka'la of the Frostwolves
@@ -79,22 +73,16 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						}),
 						mi(464, {	-- Highplains Robbery
-							i(118732, {	-- Nagrand Treasure Map
-								["questID"] = 36468,
-							}),
+							i(118732),	-- Nagrand Treasure Map (CI!)
 						}),
 						mi(461, {	-- It's a Jungle Out There
-							i(118729, {	-- Gorgrond Treasure Map
-								["questID"] = 36465,
-							}),
+							i(118729),	-- Gorgrond Treasure Map (CI!)
 						}),
 						mi(335, {	-- The Bloodmane Scrolls
 							i(117492),	-- Relic of Rukhmar
 						}),
 						mi(465, {	-- Tomb Raider
-							i(118728, {	-- Shadowmoon Valley Treasure Map
-								["questID"] = 36464,
-							}),
+							i(118728),	-- Shadowmoon Valley Treasure Map (CI!)
 						}),
 						mi(467),	-- Mushroom Mystery
 						mi(468),	-- I See Dead Orcs
@@ -111,7 +99,7 @@ root(ROOTS.ExpansionFeatures,
 						mi(479),	-- Mountain of Spirits
 						i(114053, {	-- Shimmering Gauntlets
 							["description"] = "This token is a reward from one of the first missions when you initially unlock your garrison.",
-							["g"] = {
+							["groups"] = {
 								i(112810),	-- Windowhanger Wraps
 								i(112812),	-- Softfinger Grips
 								i(112809),	-- Beastminder Chain Gloves
@@ -150,7 +138,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						i(114108, {	-- Tormented Armament
 							["description"] = "You must have level 34 active followers in order to get missions that reward this token.",
-							["g"] = {
+							["groups"] = {
 								i(115303),	-- Tormented Axe
 								i(115306),	-- Tormented Dagger
 								i(115304),	-- Tormented Greataxe
@@ -215,7 +203,7 @@ root(ROOTS.ExpansionFeatures,
 						n(GARRISON_MISSION_LOOT, sharedData ({ ["sharedDescription"] = "To receive a mission for these tokens, your character's 'bag' item level (as displayed in game when mousing over the item level number on the character panel) has to be 44 or lower. You must also have at least one level 40 follower.\nTaking an alt with higher item level gear and reducing it to 44 or less will (by deleting items) enables the toon to get the token missions once the table updates (about twice a week). Raising your item level above 44 instantly causes any available token missions to disappear, and they won't return until your item level is reduced and the table updates." }, {
 							i(114109, {	-- Munificent Armament
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(115311),	-- Munificent Axe
 									i(115314),	-- Munificent Dagger
 									i(115312),	-- Munificent Greataxe
@@ -228,7 +216,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114066, {	-- Munificent Choker
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114417),	-- Choker of Averted Doom
 									i(114416),	-- Goldleaf Bloom
 									i(114415),	-- Gorget of Whirling Blades
@@ -238,7 +226,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114063, {	-- Munificent Spaulders
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114395),	-- Mantle of Hooded Nightmares
 									i(114396),	-- Spaulders of Falling Leaves
 									i(114397),	-- Element-Binder Spaulders
@@ -247,7 +235,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114058, {	-- Munificent Robes
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114378),	-- Robes of Hooded Nightmares
 									i(114375),	-- Chestguard of Falling Leaves
 									i(114376),	-- Element-Binder Chestguard
@@ -256,7 +244,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114057, {	-- Munificent Bracers
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114371),	-- Bracers of Hooded Nightmares
 									i(114372),	-- Bracers of Falling Leaves
 									i(114373),	-- Element-Binder Bracers
@@ -265,7 +253,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114059, {	-- Munificent Treads
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114379),	-- Sandals of Hooded Nightmares
 									i(114380),	-- Boots of Falling Leaves
 									i(114381),	-- Element-Binder Boots
@@ -274,7 +262,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114068, {	-- Munificent Trinket
 							--["description"] = "You must have level 100 active followers without upgraded gear in order to get missions that reward Munificent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114430),	-- Munificent Bonds of Fury
 									i(114429),	-- Munificent Censer of Tranquility
 									i(114427),	-- Munificent Emblem of Terror
@@ -284,11 +272,11 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114110, {	-- Turbulent Armament
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(115319),	-- Turbulent Axe
 									i(115322),	-- Turbulent Dagger
 									i(115320),	-- Turbulent Greataxe
-									i(115321),	-- Turbulent Longboww
+									i(115321),	-- Turbulent Longbow
 									i(115324),	-- Turbulent Polearm
 									i(115326),	-- Turbulent Scepter
 									i(115325),	-- Turbulent Spire
@@ -297,7 +285,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114078, {	-- Turbulent Choker
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114477),	-- Arcane Master's Chain
 									i(114476),	-- Beastminder Cabochon
 									i(114480),	-- Chainwrecker Gorget
@@ -307,7 +295,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114075, {	-- Turbulent Spaulders
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114456),	-- Firelash Mantle
 									i(114457),	-- Spireflame Spaulders
 									i(114458),	-- Spaulders of Elemental Torment
@@ -316,7 +304,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114070, {	-- Turbulent Robes
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114439),	-- Firelash Robes
 									i(114436),	-- Spireflame Chestguard
 									i(114437),	-- Chestguard of Elemental Torment
@@ -325,7 +313,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114069, {	-- Turbulent Bracers
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114432),	-- Firelash Bracers
 									i(114433),	-- Spireflame Bracers
 									i(114434),	-- Bracers of Elemental Torment
@@ -334,7 +322,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114071, {	-- Turbulent Treads
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114440),	-- Firelash Sandls
 									i(114441),	-- Spireflame Boots
 									i(114442),	-- Boots of Elemental Torment
@@ -343,7 +331,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114080, {	-- Turbulent Trinket
 							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114491),	-- Turbulent Emblem
 									i(114489),	-- Turbulent Focusing Crystal
 									i(114490),	-- Turbulent Relic of Mendacity
@@ -353,7 +341,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114112, {	-- Grandiose Armament
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(115327),	-- Grandiose Axe
 									i(115330),	-- Grandiose Dagger
 									i(115328),	-- Grandiose Greataxe
@@ -366,7 +354,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114086, {	-- Grandiose Choker
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114538),	-- Bleak Temple Choker
 									i(114539),	-- Dreamsleep Locket
 									i(114537),	-- Gorefeather Pendant
@@ -376,7 +364,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114085, {	-- Grandiose Spaulders
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114520),	-- Crazed Bomber's Shoulderguard
 									i(114517),	-- Mantle of Volatile Ice
 									i(114518),	-- Spaulders of Determined Resolve
@@ -385,7 +373,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114083, {	-- Grandiose Robes
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114497),	-- Chestguard of Determined Resolve
 									i(114499),	-- Crazed Bomber's Breastplate
 									i(114500),	-- Robes of Volatile Ice
@@ -394,7 +382,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114082, {	-- Grandiose Bracers
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114494),	-- Bracers of Determined Resolve
 									i(114493),	-- Bracers of Volatile Ice
 									i(114496),	-- Crazed Bomber's Bracers
@@ -403,7 +391,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114084, {	-- Grandiose Treads
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114502),	-- Boots of Determined Resolve
 									i(114504),	-- Crazed Bomber's Greaves
 									i(114501),	-- Sandals of Volatile Ice
@@ -412,7 +400,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							i(114087, {	-- Grandiose Trinket
 							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
-								["g"] = {
+								["groups"] = {
 									i(114552),	-- Grandiose Carnage
 									i(114549),	-- Grandiose Plans
 									i(114550),	-- Grandiose Power
@@ -473,7 +461,7 @@ root(ROOTS.ExpansionFeatures,
 				n(94398, {	-- Frostwall Fleet Command Table
 					["modelScale"] = 2.3,
 					["crs"] = { 94399 },	-- Lunarfall Fleet Command Table
-					["g"] = {
+					["groups"] = {
 						a(ach(10174, {	-- Admiral [A]
 							a(ach(10173)),	-- Fleet Commander [A]
 							a(ach(10172, {	-- Petty Officer [A]
@@ -525,7 +513,7 @@ root(ROOTS.ExpansionFeatures,
 						mi(647, {	-- Black Market Journal
 							-- TODO: not sure on spawn requirements
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(127989),	-- Waterlogged Manifest
 								a(crit(28543, {	-- Black Market Journal
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
@@ -537,7 +525,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						mi(649, {	-- For Hate's Sake
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(128172),	-- Captain Sander's Returned Band
 								a(crit(29703, {	-- For Hate's Sake
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
@@ -550,7 +538,7 @@ root(ROOTS.ExpansionFeatures,
 						mi(615, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
 							-- TODO: not sure on spawn requirements. WH comments only mention level 2 shipyard
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 2 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(116769),	-- Mudback Riverbeast (MOUNT!)
 								a(crit(29704, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
@@ -563,7 +551,7 @@ root(ROOTS.ExpansionFeatures,
 						mi(619, {	-- Orphaned Aquatic Animal Rescue
 							-- TODO: not sure on spawn requirements
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(127856),	-- Left Shark (PET!)
 								a(crit(28544, {	-- Orphaned Aquatic Animal Rescue
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
@@ -575,7 +563,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						mi(650, {	-- The House always wins
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(128173),	-- Admiral Taylor's Loyalty Ring
 								a(crit(29701, {	-- The House Always Wins
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
@@ -587,7 +575,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						mi(616, {	-- The Wave Mistress
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
-							["g"] = {
+							["groups"] = {
 								i(128169),	-- Signet of the Third Fleet
 								a(crit(29702, {	-- The Wave Mistress
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]

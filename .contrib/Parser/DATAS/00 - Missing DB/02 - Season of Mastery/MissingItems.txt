@@ -1,0 +1,74 @@
+1.14.1.40666
+i(189181),	-- Bonus Experience
+i(189184),	-- Bonus Experience
+i(189185),	-- Bonus Experience
+i(189186),	-- Bonus Experience
+i(189187),	-- Bonus Experience
+i(189188),	-- Bonus Experience
+1.14.1.40800
+i(189419),	-- Fire Resist Plate Gear
+i(189420),	-- Fire Resist Plate Gear
+i(189421),	-- Fire Resist Leather Gear
+i(189426),	-- Raid Consumables
+i(189427),	-- More Raid Consumables
+1.14.2.42065
+i(190179),	-- Avelina's Heart
+i(190180),	-- Isaac's Heart
+i(190181),	-- [NYI] Incubus Quest Summon \\ Lovers' Hearts
+i(190186),	-- [NYI] Stormwind Incubus Summon \\ Wooden Figurine
+i(190187),	-- Withered Scarf
+i(190232),	-- Withered Scarf
+i(190307),	-- Unlit Torch
+i(190309),	-- [PH] Love Artifact \\ Wooden Figurine
+1.14.3.42770
+i(191204),	-- Lesser Deathstone
+i(191249),	-- Greater Deathstone \\ Deathstone
+i(191267),	-- Rune of Teleportation: Antechamber
+i(191268),	-- Orb of Corruption
+i(191270),	-- Greater Deathstone
+i(191272),	-- Rod of Necromancy
+i(191280),	-- Fungal Spore Cluster
+i(191288),	-- Rune of Teleportation: Frostwyrm's Lair
+i(191292),	-- Ritual Dagger
+i(191312),	-- Failsafe Phylactery \\ Failsafe Phylactory
+i(191313),	-- Mask of Death
+i(191414),	-- Skeletal Artifact
+i(191427),	-- Corrupted Whetstone
+1.14.3.44834
+i(191458),	-- Shattered Phylactery
+i(191459),	-- Rune of Fortune
+i(191477),	-- Skeletal Hitching Post
+i(191480),	-- Skeletal Steed
+i(191550),	-- Book of Deathstones: Mask of Death
+i(191605),	-- Book of Deathstones: Rune of Teleportation I
+i(191606),	-- Book of Deathstones: Orb of Corruption
+i(191607),	-- Book of Deathstones: Skeletal Artifact
+i(191608),	-- Book of Deathstones: Rod of Necromancy
+i(191609),	-- Book of Deathstones: Fungal Spore Cluster
+i(191610),	-- Book of Deathstones: Ritual Dagger
+i(191611),	-- Book of Deathstones: Failsafe Phylactery
+i(191612),	-- Book of Deathstones: Rune of Teleportation II
+i(191613),	-- Book of Deathstones: Rune of Fortune
+i(191614),	-- Book of Deathstones: Skeletal Hitching Post
+i(191656),	-- Death's Essence
+i(191660),	-- Thaddius' Lightning Bolts
+i(191661),	-- Monstrous Spider Fang
+i(191664),	-- Book of Deathstones: Thaddius' Lightning Bolts
+i(191666),	-- Book of Deathstones: Monstrous Spider Fang
+1.14.4.50753
+i(209611),	-- Insignia of the Alliance
+i(209612),	-- Insignia of the Alliance
+i(209613),	-- Insignia of the Alliance
+i(209614),	-- Insignia of the Alliance
+i(209615),	-- Insignia of the Alliance
+i(209616),	-- Insignia of the Alliance
+i(209617),	-- Insignia of the Alliance
+i(209618),	-- Insignia of the Alliance
+i(209619),	-- Insignia of the Horde
+i(209620),	-- Insignia of the Horde
+i(209621),	-- Insignia of the Horde
+i(209622),	-- Insignia of the Horde
+i(209623),	-- Insignia of the Horde
+i(209624),	-- Insignia of the Horde
+i(209625),	-- Insignia of the Horde
+i(209626),	-- Insignia of the Horde

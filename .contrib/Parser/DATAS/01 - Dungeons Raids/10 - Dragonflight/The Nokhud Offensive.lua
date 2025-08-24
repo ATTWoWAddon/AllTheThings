@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 	inst(1198, {	-- The Nokhud Offensive
 		["coord"] = { 60.9, 39.1, OHNAHRAN_PLAINS },
 		["maps"] = { 2093 },	-- The Nokhud Offensive
-		["g"] = {
+		["groups"] = {
 			n(FLIGHT_PATHS, {
 				fp(2847, {	-- Maruukai, The Nokhud Offensive
 					--["coord"] = { XX.Y, XX.Y, 2093 },	-- The Nokhud Offensive
@@ -36,7 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 					["provider"] = { "n", 190164 },	-- Elder Nazuun
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(193483),	-- Medallion of the Ancestors (QI!)
 						i(200251),	-- Medallion of the Ancestors
 					},
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 66657 },	-- And Stay Dead!
 					["provider"] = { "n", 193985 },	-- Initiate Zorig
 					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
-					["g"] = {
+					["groups"] = {
 						i(200100),	-- Batubar the Relentless (QI!)
 						i(200115),	-- Sarantuya the Ever-True (QI!)
 						i(197891),	-- Embroidered Broadhoof Cowl
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 66783 },	-- Renewal of Vows
 					["provider"] = { "n", 188601 },	-- Khanam Matra Sarest
 					["coord"] = { 22.3, 51.0, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(197666),	-- Maruuk Ring of Bravery
 						i(197665),	-- Ohn'Ahra's Gratitude
 					},
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2498, {	-- Granyth
 					["crs"] = { 186616 },	-- Granyth
-					["g"] = {
+					["groups"] = {
 						i(193690),	-- Drake Hunter Shoulderpads
 						i(193694),	-- Drake Slayer's Greaves
 						i(193689, {	-- Granyth's Enduring Scale
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
-					["g"] = {
+					["groups"] = {
 						i(193697),	-- Bottle of Spiraling Winds
 						i(193699),	-- Staff of Violent Storms
 						i(193700),	-- Strike Twice
@@ -97,7 +97,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						186338,	-- Maruuk
 						186339,	-- Teera
 					},
-					["g"] = {
+					["groups"] = {
 						i(193681),	-- Bow of the First Khanam
 						i(193677),	-- Furious Ragefeather
 						i(193679),	-- Idol of Trampling Hooves
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
-					["g"] = {
+					["groups"] = {
 						ach(16275),	-- The Nokhud Offensive
 						i(193683),	-- Blessed Ohn'ir Robes
 						i(193687),	-- Koroleth's Crackling Dagger
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
-					["g"] = {
+					["groups"] = {
 						ach(16276),	-- Heroic: The Nokhud Offensive
 					},
 				}),
@@ -137,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2497, {	-- The Raging Tempest
 					["crs"] = { 186615 },	-- The Raging Tempest
-					["g"] = {
+					["groups"] = {
 						ach(16447),	-- What Are The Chances...
 					},
 				}),
@@ -146,13 +146,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						186338,	-- Maruuk
 						186339,	-- Teera
 					},
-					["g"] = {
+					["groups"] = {
 						ach(16456),	-- Weapons of the Maruukai
 					},
 				}),
 				e(2477, {	-- Balakar Khan
 					["crs"] = { 186151 },	-- Balakar Khan
-					["g"] = {
+					["groups"] = {
 						ach(16277),	-- Mythic: The Nokhud Offensive
 						ach(17102),	-- Mythic: The Nokhud Offensive Guild Run
 						ach(16602),	-- Nokhud Deed Goes Unnoticed

@@ -45,14 +45,14 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 			n(QUESTS, {
 				-- Phase One Quests
 				q(25351, {	-- Alert Our Leaders
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 25348,	-- Thwarting Twilight's Hammer (B)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(25290, {	-- Infiltrating the Cult (A)
-					["qg"] = 39508,	-- Captain Anton
 					["sourceQuest"] = 25282,	-- Signs Of The Times (A)
+					["qg"] = 39508,	-- Captain Anton
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -63,8 +63,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25288, {	-- Infiltrating The Cult (H)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 25254,	-- Signs Of The Times (H)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -116,8 +116,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25282, {	-- Signs Of The Times (A)
-					["qg"] = 39508,	-- Captain Anton
 					["sourceQuest"] = 25253,	-- Prophecies of Doom (A)
+					["qg"] = 39508,	-- Captain Anton
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -127,8 +127,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25254, {	-- Signs Of The Times (H)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 25228,	-- Prophecies of Doom (H)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -138,8 +138,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25415, {	-- Spreading The Word (A)
-					["qg"] = 40098,	-- Overseer Sylandra
 					["sourceQuest"] = 25290,	-- Infiltrating the Cult (A)
+					["qg"] = 40098,	-- Overseer Sylandra
 					["coord"] = { 31.3, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -158,8 +158,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25380, {	-- Spreading The Word (H)
-					["qg"] = 39827,	-- Overseer Jintak
 					["sourceQuest"] = 25288,	-- Infiltrating The Cult (H)
+					["qg"] = 39827,	-- Overseer Jintak
 					["coord"] = { 48.2, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -178,20 +178,20 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25417, {	-- The Doomsday Plan (A)
+					["sourceQuest"] = 25416,	-- The Master's Plan (A)
 					["providers"] = {
 						{ "n", 40098 },	-- Overseer Sylandra
 						{ "i", 52835 },	-- Elemental Devices
 					},
-					["sourceQuest"] = 25416,	-- The Master's Plan (A)
 					["coord"] = { 31.3, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25347, {	-- The Doomsday Plan (B)
+					["sourceQuest"] = 25343,	-- The Master's Plan (B)
 					["providers"] = {
 						{ "n", 39827 },	-- Overseer Jintak
 						{ "i", 52835 },	-- Elemental Devices
 					},
-					["sourceQuest"] = 25343,	-- The Master's Plan (B)
 					["coord"] = { 48.2, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
@@ -212,8 +212,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					["isBreadcrumb"] = true,
 				}),
 				q(25416, {	-- The Master's Plan (A)
-					["qg"] = 40098,	-- Overseer Sylandra
 					["sourceQuest"] = 25415,	-- Spreading The Word (A)
+					["qg"] = 40098,	-- Overseer Sylandra
 					["coord"] = { 31.3, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -224,8 +224,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25343, {	-- The Master's Plan (B)
-					["qg"] = 39827,	-- Overseer Jintak
 					["sourceQuest"] = 25380,	-- Spreading The Word (H)
+					["qg"] = 39827,	-- Overseer Jintak
 					["coord"] = { 48.2, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -236,8 +236,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25414, {	-- The Missing (A)
-					["qg"] = 39508,	-- Captain Anton
 					["sourceQuest"] = 25282,	-- Signs Of The Times (A)
+					["qg"] = 39508,	-- Captain Anton
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
@@ -273,8 +273,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25293, {	-- The Missing (H)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 25254,	-- Signs Of The Times (H)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -310,22 +310,22 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27570, {	-- The Situation So Far
-					["qg"] = 39283,	-- Earthmender Norsala
 					["sourceQuest"] = 27308,	-- The Elements Cry Out (H)
+					["qg"] = 39283,	-- Earthmender Norsala
 					["coord"] = { 52.2, 73.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27540, {	-- The Wildhammer
-					["qg"] = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
 					["sourceQuest"] = 27307,	-- The Elements Cry Out (A)
+					["qg"] = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
 					["coord"] = { 62.5, 75.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25418, {	-- Thwarting Twilight's Hammer (A)
-					["qg"] = 39508,	-- Captain Anton
 					["sourceQuest"] = 25417,	-- The Doomsday Plan (A)
+					["qg"] = 39508,	-- Captain Anton
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -335,8 +335,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25348, {	-- Thwarting Twilight's Hammer (B)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 25347,	-- The Doomsday Plan (B)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -346,16 +346,16 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25425, {	-- Warn King Wrynn
-					["qg"] = 39508,	-- Captain Anton
 					["sourceQuest"] = 25418,	-- Thwarting Twilight's Hammer (A)
+					["qg"] = 39508,	-- Captain Anton
 					["coord"] = { 75.9, 44.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 
 				-- Phase Two Quests
 				q(25055, {	-- Subduing the Elements (A)
-					["qg"] = 45712,	-- Stormcaller Mylra
 					["sourceQuest"] = 27473,	-- What's Shaking in Ironforge
+					["qg"] = 45712,	-- Stormcaller Mylra
 					["coord"] = { 30.3, 60.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -391,11 +391,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25181, {	-- Tablets of Fire
-					["qg"] = 39283,	-- Earthmender Norsala
-					["coord"] = { 52.2, 73.2, ORGRIMMAR },
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 2 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 39283,	-- Earthmender Norsala
+					["coord"] = { 52.2, 73.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tablets of Fire
@@ -409,11 +409,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(25180, {	-- Tablets of the Earth
-					["qg"] = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
-					["coord"] = { 62.5, 75.5, STORMWIND_CITY },
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 2 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
+					["coord"] = { 62.5, 75.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tablets of the Earth
@@ -426,38 +426,38 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27473, {	-- What's Shaking in Ironforge
+					-- #if BEFORE 5.0.1
+					["description"] = "Activated with phase 2 of the Elemental Unrest.",
+					-- #endif
 					["qgs"] = {
 						45341,	-- Earthen Ring Emissary
 						45946,	-- Earthen Ring Emissary
 					},
-					-- #if BEFORE 5.0.1
-					["description"] = "Activated with phase 2 of the Elemental Unrest.",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 
 				-- Phase Three Quests
 				q(27566, {	-- A Gathering in Outland (A)
-					["qg"] = 45341,	-- Earthen Ring Emissary
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 3 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 45341,	-- Earthen Ring Emissary
 					["maps"] = { NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27572, {	-- A Gathering in Outland (H)
-					["qg"] = 39283,	-- Earthmender Norsala
-					["coord"] = { 52.2, 73.2, ORGRIMMAR },
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 3 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 39283,	-- Earthmender Norsala
+					["coord"] = { 52.2, 73.2, ORGRIMMAR },
 					["maps"] = { NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27749, {	-- Arrest the Infiltrators (A)
-					["qg"] = 12481,	-- Justine Demalier
 					["sourceQuest"] = 27741,	-- Show Me Your Papers (A)
+					["qg"] = 12481,	-- Justine Demalier
 					["coord"] = { 62.2, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -473,8 +473,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27802, {	-- Arrest the Infiltrators (H)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 27801,	-- Show Me Your Papers (H)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -490,8 +490,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27767, {	-- Back Under Cover (A)
-					["qg"] = 12481,	-- Justine Demalier
 					["sourceQuest"] = 27749,	-- Arrest the Infiltrators (A)
+					["qg"] = 12481,	-- Justine Demalier
 					["coord"] = { 62.2, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -504,8 +504,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27800, {	-- Back Under Cover (H)
-					["qg"] = 39448,	-- Blood Guard Torek
 					["sourceQuest"] = 27802,	-- Arrest the Infiltrators (H)
+					["qg"] = 39448,	-- Blood Guard Torek
 					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -518,8 +518,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27780, {	-- I Said the Words... (A)
-					["qg"] = 40098,	-- Overseer Sylandra
 					["sourceQuest"] = 27767,	-- Back Under Cover (A)
+					["qg"] = 40098,	-- Overseer Sylandra
 					["coord"] = { 31.3, 65.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -538,8 +538,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27799, {	-- I Said the Words... (H)
-					["qg"] = 39827,	-- Overseer Jintak
 					["sourceQuest"] = 27800,	-- Back Under Cover (H)
+					["qg"] = 39827,	-- Overseer Jintak
 					["coord"] = { 48.2, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -558,11 +558,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27741, {	-- Show Me Your Papers (A)
-					["qg"] = 12481,	-- Justine Demalier
-					["coord"] = { 62.2, 71.6, STORMWIND_CITY },
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 3 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 12481,	-- Justine Demalier
+					["coord"] = { 62.2, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Stormwind Citizens searched
@@ -579,11 +579,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_ELEMENTAL_INVASION, n
 					},
 				}),
 				q(27801, {	-- Show Me Your Papers (H)
-					["qg"] = 39448,	-- Blood Guard Torek
-					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					-- #if BEFORE 5.0.1
 					["description"] = "Activated with phase 3 of the Elemental Unrest.",
 					-- #endif
+					["qg"] = 39448,	-- Blood Guard Torek
+					["coord"] = { 52.9, 72.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Orgrimmar Citizen searched

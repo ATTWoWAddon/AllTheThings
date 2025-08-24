@@ -1,40 +1,40 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(TREASURES, {
 			o(433773, {	-- Buried Treasire
 				["coord"] = { 50.8, 52.4, THE_RINGING_DEEPS },
 				["questID"] = 80488,
-				["g"] = {
+				["groups"] = {
 					i(217959),	-- Incomplete Painting (gray)
 				},
 			}),
 			o(433774, {	-- Buried Treasure
 				["coord"] = { 50.7, 52.45, THE_RINGING_DEEPS },
 				["questID"] = 80489,
-				["g"] = {
+				["groups"] = {
 					i(217969),	-- Bomb Debris (gray)
 				},
 			}),
 			o(433757, {	-- Buried Treasure
 				["coord"] = { 50.7, 53.0, THE_RINGING_DEEPS },
 				["questID"] = 80487,
-				["g"] = {
+				["groups"] = {
 					i(217958),	-- Used Socks (gray)
 				},
 			}),
 			o(433776, {	-- Buried Treasure
 				["coord"] = { 50.37, 52.84, THE_RINGING_DEEPS },
 				["questID"] = 80490,
-				["g"] = {
+				["groups"] = {
 					i(217962),	-- Dud Bomb (gray)
 				},
 			}),
 			o(433778, {	-- Buried Treasure
 				["coord"] = { 50.3, 53.3, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(217960),	-- Forgotten Key
 				},
 			}),
@@ -79,14 +79,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(444071, {	-- Cursed Pickaxe
 				["coord"] = { 63.1, 63.1, THE_RINGING_DEEPS },
 				["questID"] = 82230,
-				["g"] = {
+				["groups"] = {
 					i(224837),	-- Cursed Pickaxe
 				},
 			}),
 			o(444115, {	-- Discarded Toolbox
 				["coord"] = { 45.5, 17.5, THE_RINGING_DEEPS },
 				["questID"] = 82239,
-				["g"] = {
+				["groups"] = {
 					i(224644),	-- Lava-Forged Cogwheel
 				},
 			}),
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "o", 446100 },	-- Blocked Intake (vignette)
 				["coord"] = { 48.2, 48.9, THE_RINGING_DEEPS },
 				["questID"] = 82820,
-				["g"] = {
+				["groups"] = {
 					i(221548),	-- Blightbud (PET!)
 				},
 			}),
@@ -116,34 +116,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cost"] = {
 					{"i", 217960, 1},	-- Forgotten Key
 				},
-				["g"] = {
+				["groups"] = {
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},
 			}),
 			o(444261, {	-- Purchase Bluesberry Blast 5 Silver
 				["description"] = "Purchase First, then Orange!.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223741),	-- Bluesberry Blast
 				},
 			}),
 			o(444275, {	-- Purchase Mangoro Madness 5 Silver
 				["description"] = "Purchase Fourth.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223742),	-- Mangoro Madness
 				},
 			}),
 			o(444276, {	-- Purchase Orange O Pocalypse 5 Silver
 				["description"] = "Purchase Second, next is Oyster.",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223743),	-- Orange O-pocalypse
 				},
 			}),
 			o(444277, {	-- Purchase Oyster Outbreak 5 Silver
 				["description"] = "Purchase Third, now lets get some Mangoro Madness.",
-				["g"] = {
+				["groups"] = {
 					i(223744),	-- Oyster Outbreak
 				},
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ "i", 223743, 1 },	-- Orange O-pocalypse
 					{ "i", 223744, 1 },	-- Oyster Outbreak
 				},
-				["g"] = {
+				["groups"] = {
 					i(220774),	-- Goblin Mini Fridge
 				},
 			}),
@@ -174,19 +174,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			o(446349, {	-- Loose Crystal Shard
 				["coord"] = { 57.3, 21.9, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223880),	-- Rough Deepamethyst Shard
 				},
 			}),
 			o(446352, {	-- Loose Crystal Shard
 				["coord"] = { 68.2, 53.2, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223882),	-- Rough Deepdiamond Shard
 				},
 			}),
 			o(446351, {	-- Loose Crystal Shard
 				["coord"] = { 59.0, 38.1, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223881),	-- Rough Deepemerald Shard
 				},
 			}),
@@ -195,13 +195,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 57.5, 49.5, THE_RINGING_DEEPS },
 					{ 59.9, 53.0, THE_RINGING_DEEPS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(223878),	-- Rough Deepruby Shard
 				},
 			}),
 			o(446347, {	-- Loose Crystal Shard
 				["coord"] = { 62.5, 63.0, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(223879),	-- Rough Deeptopaz Shard
 				},
 			}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Lit up all candles.",
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
 				["questID"] = 82818,
-				["g"] = {
+				["groups"] = {
 					i(224439),	-- Oop'lajax (PET!)
 				},
 			}),
@@ -327,4 +327,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

@@ -2,23 +2,10 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 -- Bloodied Crafted Gear was added with Cataclysm and then removed from the game after Firelands was released.
--- #if ANYCLASSIC
-local BLOODIED_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
-		t.rwp = 40200;
-	end
-end]];
--- #endif
+-- In Classic, these items were not removed from the game at all.
 local function bloodied(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODIED_ONUPDATE;
-		-- #endif
+	-- #if ANYCLASSIC
+	t.timeline = { ADDED_4_0_3_LAUNCH };
 	-- #else
 	t.timeline = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 };
 	-- #endif
@@ -26,23 +13,10 @@ local function bloodied(t)
 end
 
 -- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
+-- In Classic, these items were not removed from the game at all.
 local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
+	-- #if ANYCLASSIC
+	t.timeline = { ADDED_4_2_0 };
 	-- #else
 	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
 	-- #endif
@@ -101,7 +75,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				-- #if AFTER 6.0.3
 				["description"] = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
 				-- #endif
-				["group"] = { i(67539) },	-- Tiny Treasure Chest
+				["groups"] = { i(67539) },	-- Tiny Treasure Chest
 			}),
 			i(58143),	-- Prismatic Elixir
 			i(58091),	-- Volcanic Potion
@@ -140,27 +114,27 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	prof(ARCHAEOLOGY, {
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
-		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, sharedData({["cost"]={{"c",ARCH_CURRENCY_TOLVIR,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, {
 			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
 			["maps"] = { ULDUM },
 			["groups"] = {
 				i(64657, {	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 				}),
-				i(64652),	-- Castle of Sand
-				i(64653),	-- Cat Statue with Emerald Eyes
-				i(60847),	-- Crawling Claw (PET!)
-				i(64656),	-- Engraved Scimitar Hilt
-				i(64881),	-- Pendant of the Scarab Storm (TOY!)
-				i(64904),	-- Ring of the Boy Emperor
-				i(64885),	-- Scimitar of the Sirocco
-				i(64658),	-- Sketch of a Desert Palace
-				i(64654),	-- Soapstone Scarab Necklace
-				i(64880),	-- Staff of Ammunae
-				i(64655),	-- Tiny Oasis Mosaic
-				i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
+				i(64652, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Castle of Sand
+				i(64653, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Cat Statue with Emerald Eyes
+				i(60847, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Crawling Claw (PET!)
+				i(64656, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
+				i(64881, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Pendant of the Scarab Storm (TOY!)
+				i(64904, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ring of the Boy Emperor
+				i(64885, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Scimitar of the Sirocco
+				i(64658, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Sketch of a Desert Palace
+				i(64654, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Soapstone Scarab Necklace
+				i(64880, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Staff of Ammunae
+				i(64655, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Tiny Oasis Mosaic
+				i(64883, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 			},
-		})),
+		}),
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
@@ -293,12 +267,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(COOKING, {
+		n(COMMON_VENDOR_ITEMS, sharedData({	-- Experimental
+			["coords"] = {
+				{ 76.27, 52.64, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
+				{ 79.37, 78.53, TWILIGHT_HIGHLANDS },	-- Highbank
+				{ 50.21, 38.36, ULDUM },	-- Mar'at
+			},
+			["description"] = "Coordinates are for select vendors.",
+			["providers"] = {
+				{ "n", 49688 },	-- Innkeeper Francis <Innkeeper>
+				{ "n", 49519 },	-- Lizzy "Lemons"
+				{ "n", 48861 },	-- Umi <Produce>
+			},
+		}, {
+			i(58265),	-- Highland Pomegranate
+			i(58278),	-- Tropical Sunfruit
+		})),
 		i(62661),	-- Baked Rockfish
 		i(62665),	-- Basilisk Liverdog
 		i(62670),	-- Beer-Basted Crocolisk
 		i(62668),	-- Blackbelly Sushi
 		i(62676),	-- Blackened Surprise
-		i(62289),	-- Broiled Dragon Feast
+		i(62289, {["description"] = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'."}),	-- Broiled Dragon Feast
 		i(62655),	-- Broiled Mountain Trout
 		i(62680),	-- Chocolate Cookie
 		i(62664),	-- Crocolisk Au Gratin
@@ -318,7 +308,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62660),	-- Pickled Guppy
 		i(62653),	-- Salted Eye
 		i(68687, {["timeline"] = {ADDED_4_0_6}}),	-- Scalding Murglesnout
-		i(62290),	-- Seafood Magnifique Feast
+		i(62290, {["description"] = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'."}),	-- Seafood Magnifique Feast
 		i(62652),	-- Seasoned Crab
 		i(62671),	-- Severed Sagefish Head
 		i(62669),	-- Skewered Eel
@@ -328,13 +318,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62656),	-- Whitecrest Gumbo
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
-			i(52719),	-- Greater Celestial Essence
-			i(52721),	-- Heavenly Shard
-			i(52555),	-- Hypnotic Dust
-			i(52718),	-- Lesser Celestial Essence
-			i(52722),	-- Maelstrom Crystal
-			i(52720),	-- Small Heavenly Shard
+		header(HEADERS.Spell, 13262, {	-- Disenchant
+			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
+			-- Dust:
+			i(52555, {	-- Hypnotic Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 35-36.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+				-- #endif
+			}),
+			-- Essences:
+			i(52719, {	-- Greater Celestial Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 36-37, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(52718, {	-- Lesser Celestial Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 35-36, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+				-- #endif
+			}),
+			-- Shards and crystals:
+			i(52721, {	-- Heavenly Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 37.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+				-- #endif
+			}),
+			i(52722, {	-- Maelstrom Crystal
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear at ilvl 37.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+				-- #endif
+			}),
+			i(52720, {	-- Small Heavenly Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 36.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+				-- #endif
+			}),
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(52781),	-- Enchant Boots - Assassin's Step
@@ -409,6 +439,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
+		-- #if AFTER MOP
+		n(COMMON_VENDOR_ITEMS, {
+			i(90146),	-- Tinker's Kit
+		}),
+		-- #endif
 		prof(GNOMISH_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
@@ -496,11 +531,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(59596),	-- Safety Catch Removal Kit
 		}),
 	}),
-	-- #if BEFORE 8.0.1
+	-- #if BEFORE BFA
 	prof(FIRST_AID, {
 		i(53051),	-- Dense Embersilk Bandage
 		i(53049),	-- Embersilk Bandage
-		i(53051),	-- Dense Embersilk Bandage
 		i(53050),	-- Heavy Embersilk Bandage
 	}),
 	-- #endif
@@ -744,6 +778,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 		o(207724, {	-- Shipwreck Debris
 			["maps"] = { TOL_BARAD_PENINSULA },
+			["groups"] = {
+				i(67597),	-- Sealed Crate
+			},
 		}),
 		--	Recipe:
 		filter(RECIPES, {
@@ -766,7 +803,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202749 },	-- Azshara's Veil
 			}),
 			i(108362, {	-- Azshara's Veil Stem
-				["group"] = { i(52985) },	-- Azshara's Veil
+				["groups"] = { i(52985) },	-- Azshara's Veil
 				["provider"] = { "o", 202749 },	-- Azshara's Veil
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -783,7 +820,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202747 },	-- Cinderbloom
 			}),
 			i(108360, {	-- Cinderbloom Petal
-				["group"] = { i(52983) },	-- Cinderbloom
+				["groups"] = { i(52983) },	-- Cinderbloom
 				["provider"] = { "o", 202747 },	-- Cinderbloom
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -792,7 +829,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202750 },	-- Heartblossom
 			}),
 			i(108363, {	-- Heartblossom Petal
-				["group"] = { i(52986) },	-- Heartblossom
+				["groups"] = { i(52986) },	-- Heartblossom
 				["provider"] = { "o", 202750 },	-- Heartblossom
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -822,7 +859,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202748 },	-- Stormvine
 			}),
 			i(108361, {	-- Stormvine Stalk
-				["group"] = { i(52984) },	-- Stormvine
+				["groups"] = { i(52984) },	-- Stormvine
 				["provider"] = { "o", 202748 },	-- Stormvine
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -836,7 +873,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			i(108364, {	-- Twilight Jasmine Petal
-				["group"] = { i(52987) },	-- Twilight Jasmine
+				["groups"] = { i(52987) },	-- Twilight Jasmine
 				["provider"] = { "o", 202751 },	-- Twilight Jasmine
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -852,7 +889,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202752 },	-- Whiptail
 			}),
 			i(108365, {	-- Whiptail Stem
-				["group"] = { i(52988) },	-- Whiptail
+				["groups"] = { i(52988) },	-- Whiptail
 				["provider"] = { "o", 202752 },	-- Whiptail
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -909,6 +946,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- Inks and reagents:
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["coords"] = {
+				{ 76.6, 49.4, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
+				{ 78.6, 76.2, TWILIGHT_HIGHLANDS },	-- Highbank
+			},
+			["providers"] = {
+				{ "n", 49703 },	-- Casandra Downs <Alchemy & Inscription Supplies>
+				{ "n", 50248 },	-- Una Kobuna <Alchemy and Inscription Supplies>
+			},
+		}, {
+			i(67348),	-- Bleached Jawbone
+			i(62323),	-- Deathwing Scale Fragment
+			i(67319),	-- Preserved Ogre Eye
+			i(68047),	-- Scavenged Dragon Horn
+			i(67335),	-- Silver Charm Bracelet
+		})),
+		header(HEADERS.Spell, 51005, {	-- Milling
+			i(61979, {	-- Ashen Pigment
+				["providers"] = {
+					{ "o", 202749 },	-- Azshara's Veil
+					{ "o", 202747 },	-- Cinderbloom
+					{ "o", 202750 },	-- Heartblossom
+					{ "o", 202748 },	-- Stormvine
+					{ "o", 202751 },	-- Twilight Jasmine
+					{ "o", 202752 },	-- Whiptail
+				},
+			}),
+			i(61980, {	-- Burning Embers
+				["providers"] = {
+					{ "o", 202749 },	-- Azshara's Veil
+					{ "o", 202747 },	-- Cinderbloom
+					{ "o", 202750 },	-- Heartblossom
+					{ "o", 202748 },	-- Stormvine
+					{ "o", 202751 },	-- Twilight Jasmine
+					{ "o", 202752 },	-- Whiptail
+				},
+			}),
+		}),
+		filter(REAGENTS, {
+			i(61978),	-- Blackfallow Ink
+			i(61981),	-- Inferno Ink
+		}),
+		-- Non-reagent crafts:
 		i(62237, {	-- Adventurer's Journal
 			-- #if CATA
 			["description"] = [[Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.
@@ -941,108 +1022,6 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(45768, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
 			i(45776, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 			-- #endif
-		}),
-		category(106, {	-- Tarot Cards
-			sp(86615, {	-- Darkmoon Card of Destruction
-				i(61988),    -- Ace of Embers
-				i(61989),    -- Two of Embers
-				i(61990),    -- Three of Embers
-				i(61991),    -- Four of Embers
-				i(61992),    -- Five of Embers
-				i(61993),    -- Six of Embers
-				i(61994),    -- Seven of Embers
-				i(61995),    -- Eight of Embers
-
-				i(61996),    -- Ace of Stones
-				i(61997),    -- Two of Stones
-				i(61998),    -- Three of Stones
-				i(61999),    -- Four of Stones
-				i(62000),    -- Five of Stones
-				i(62001),    -- Six of Stones
-				i(62002),    -- Seven of Stones
-				i(62003),    -- Eight of Stones
-
-				i(62004),    -- Ace of the Winds
-				i(62005),    -- Two of the Winds
-				i(62006),    -- Three of the Winds
-				i(62007),    -- Four of the Winds
-				i(62008),    -- Five of the Winds
-				i(62009),    -- Six of the Winds
-				i(62010),    -- Seven of the Winds
-				i(62011),    -- Eight of the Winds
-
-				i(62012),    -- Ace of Waves
-				i(62013),    -- Two of Waves
-				i(62014),    -- Three of Waves
-				i(62015),    -- Four of Waves
-				i(62016),    -- Five of Waves
-				i(62017),    -- Six of Waves
-				i(62018),    -- Seven of Waves
-				i(62019),    -- Eight of Waves
-			}),
-			i(60838, {	-- Mysterious Fortune Card
-				["timeline"] = { ADDED_4_0_3 },
-				["groups"] = {
-					i(60839),	-- Fortune Card
-					i(60840),	-- Fortune Card
-					i(60841),	-- Fortune Card
-					i(60842),	-- Fortune Card
-					i(60843),	-- Fortune Card
-					i(60844),	-- Fortune Card
-					i(60845),	-- Fortune Card
-					i(62246),	-- Fortune Card
-					i(62247),	-- Fortune Card
-					i(62552),	-- Fortune Card
-					i(62553),	-- Fortune Card
-					i(62554),	-- Fortune Card
-					i(62555),	-- Fortune Card
-					i(62556),	-- Fortune Card
-					i(62557),	-- Fortune Card
-					i(62558),	-- Fortune Card
-					i(62559),	-- Fortune Card
-					i(62560),	-- Fortune Card
-					i(62561),	-- Fortune Card
-					i(62562),	-- Fortune Card
-					i(62563),	-- Fortune Card
-					i(62564),	-- Fortune Card
-					i(62565),	-- Fortune Card
-					i(62566),	-- Fortune Card
-					i(62567),	-- Fortune Card
-					i(62568),	-- Fortune Card
-					i(62569),	-- Fortune Card
-					i(62570),	-- Fortune Card
-					i(62571),	-- Fortune Card
-					i(62572),	-- Fortune Card
-					i(62573),	-- Fortune Card
-					i(62574),	-- Fortune Card
-					i(62575),	-- Fortune Card
-					i(62576),	-- Fortune Card
-					i(62577),	-- Fortune Card
-					i(62578),	-- Fortune Card
-					i(62579),	-- Fortune Card
-					i(62580),	-- Fortune Card
-					i(62581),	-- Fortune Card
-					i(62582),	-- Fortune Card
-					i(62583),	-- Fortune Card
-					i(62584),	-- Fortune Card
-					i(62585),	-- Fortune Card
-					i(62586),	-- Fortune Card
-					i(62587),	-- Fortune Card
-					i(62588),	-- Fortune Card
-					i(62589),	-- Fortune Card
-					i(62590),	-- Fortune Card
-					i(62591),	-- Fortune Card
-					i(62598),	-- Fortune Card
-					i(62599),	-- Fortune Card
-					i(62600),	-- Fortune Card
-					i(62601),	-- Fortune Card
-					i(62602),	-- Fortune Card
-					i(62603),	-- Fortune Card
-					i(62604),	-- Fortune Card
-					i(62605),	-- Fortune Card
-					i(62606),	-- Fortune Card
-				},
-			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(62236),	-- Battle Tome
@@ -1120,6 +1099,108 @@ Fire and Water - Damage against Elementals increased by 15%.
 			}),
 		}),
 		-- #endif
+		category(106, {	-- Tarot Cards
+			sp(86615, {	-- Darkmoon Card of Destruction
+				i(61988),	-- Ace of Embers
+				i(61989),	-- Two of Embers
+				i(61990),	-- Three of Embers
+				i(61991),	-- Four of Embers
+				i(61992),	-- Five of Embers
+				i(61993),	-- Six of Embers
+				i(61994),	-- Seven of Embers
+				i(61995),	-- Eight of Embers
+
+				i(61996),	-- Ace of Stones
+				i(61997),	-- Two of Stones
+				i(61998),	-- Three of Stones
+				i(61999),	-- Four of Stones
+				i(62000),	-- Five of Stones
+				i(62001),	-- Six of Stones
+				i(62002),	-- Seven of Stones
+				i(62003),	-- Eight of Stones
+
+				i(62004),	-- Ace of the Winds
+				i(62005),	-- Two of the Winds
+				i(62006),	-- Three of the Winds
+				i(62007),	-- Four of the Winds
+				i(62008),	-- Five of the Winds
+				i(62009),	-- Six of the Winds
+				i(62010),	-- Seven of the Winds
+				i(62011),	-- Eight of the Winds
+
+				i(62012),	-- Ace of Waves
+				i(62013),	-- Two of Waves
+				i(62014),	-- Three of Waves
+				i(62015),	-- Four of Waves
+				i(62016),	-- Five of Waves
+				i(62017),	-- Six of Waves
+				i(62018),	-- Seven of Waves
+				i(62019),	-- Eight of Waves
+			}),
+			i(60838, {	-- Mysterious Fortune Card
+				["timeline"] = { ADDED_4_0_3 },
+				["groups"] = {
+					i(60839),	-- Fortune Card
+					i(60840),	-- Fortune Card
+					i(60841),	-- Fortune Card
+					i(60842),	-- Fortune Card
+					i(60843),	-- Fortune Card
+					i(60844),	-- Fortune Card
+					i(60845),	-- Fortune Card
+					i(62246),	-- Fortune Card
+					i(62247),	-- Fortune Card
+					i(62552),	-- Fortune Card
+					i(62553),	-- Fortune Card
+					i(62554),	-- Fortune Card
+					i(62555),	-- Fortune Card
+					i(62556),	-- Fortune Card
+					i(62557),	-- Fortune Card
+					i(62558),	-- Fortune Card
+					i(62559),	-- Fortune Card
+					i(62560),	-- Fortune Card
+					i(62561),	-- Fortune Card
+					i(62562),	-- Fortune Card
+					i(62563),	-- Fortune Card
+					i(62564),	-- Fortune Card
+					i(62565),	-- Fortune Card
+					i(62566),	-- Fortune Card
+					i(62567),	-- Fortune Card
+					i(62568),	-- Fortune Card
+					i(62569),	-- Fortune Card
+					i(62570),	-- Fortune Card
+					i(62571),	-- Fortune Card
+					i(62572),	-- Fortune Card
+					i(62573),	-- Fortune Card
+					i(62574),	-- Fortune Card
+					i(62575),	-- Fortune Card
+					i(62576),	-- Fortune Card
+					i(62577),	-- Fortune Card
+					i(62578),	-- Fortune Card
+					i(62579),	-- Fortune Card
+					i(62580),	-- Fortune Card
+					i(62581),	-- Fortune Card
+					i(62582),	-- Fortune Card
+					i(62583),	-- Fortune Card
+					i(62584),	-- Fortune Card
+					i(62585),	-- Fortune Card
+					i(62586),	-- Fortune Card
+					i(62587),	-- Fortune Card
+					i(62588),	-- Fortune Card
+					i(62589),	-- Fortune Card
+					i(62590),	-- Fortune Card
+					i(62591),	-- Fortune Card
+					i(62598),	-- Fortune Card
+					i(62599),	-- Fortune Card
+					i(62600),	-- Fortune Card
+					i(62601),	-- Fortune Card
+					i(62602),	-- Fortune Card
+					i(62603),	-- Fortune Card
+					i(62604),	-- Fortune Card
+					i(62605),	-- Fortune Card
+					i(62606),	-- Fortune Card
+				},
+			}),
+		}),
 	}),
 	prof(JEWELCRAFTING, {
 		filter(FIST_WEAPONS, {
@@ -1224,9 +1305,10 @@ Fire and Water - Damage against Elementals increased by 15%.
 				i(56480),	-- Savage Cloak
 				i(56549),	-- Twilight Dragonscale Cloak
 				-- #if ANYCLASSIC
-				-- Blizzard did a dumb when they implemented Cata Classic
-				dragonsoul(i(226181)),	-- Vicious Fur Cloak
-				dragonsoul(i(226183)),	-- Vicious Hide Cloak
+				-- Blizzard did a dumb when they implemented Cata Classic, making Dragon Soul PVP cloaks available at launch
+				-- and adding new, higher ilvl, cloaks which never got added to the game
+				i(226181, { ["timeline"] = { CREATED_4_4_0 } }), -- Vicious Fur Cloak
+				i(226183, { ["timeline"] = { CREATED_4_4_0 } }), -- Vicious Hide Cloak
 				i(75076, {	-- Vicious Fur Cloak
 					["timeline"] = {
 						ADDED_4_0_3_LAUNCH,
@@ -1569,6 +1651,101 @@ Fire and Water - Damage against Elementals increased by 15%.
 		},
 	}),
 	prof(TAILORING, {
+		n(ARMOR, {
+			i(54504),	-- Belt of the Depths
+			i(54441),	-- Black Embersilk Gown
+			bloodthirsty(i(70062)),	-- Bloodthirsty Embersilk Belt
+			bloodthirsty(i(70061)),	-- Bloodthirsty Embersilk Boots
+			bloodthirsty(i(70063)),	-- Bloodthirsty Embersilk Bracers
+			bloodthirsty(i(70070)),	-- Bloodthirsty Embersilk Cape
+			bloodthirsty(i(70067)),	-- Bloodthirsty Embersilk Cowl
+			bloodthirsty(i(70065)),	-- Bloodthirsty Embersilk Gloves
+			bloodthirsty(i(70066)),	-- Bloodthirsty Embersilk Pants
+			bloodthirsty(i(70060)),	-- Bloodthirsty Embersilk Robe
+			bloodthirsty(i(70064)),	-- Bloodthirsty Embersilk Shoulders
+			bloodthirsty(i(70052)),	-- Bloodthirsty Fireweave Belt
+			bloodthirsty(i(70053)),	-- Bloodthirsty Fireweave Boots
+			bloodthirsty(i(70054)),	-- Bloodthirsty Fireweave Bracers
+			bloodthirsty(i(70055)),	-- Bloodthirsty Fireweave Cowl
+			bloodthirsty(i(70056)),	-- Bloodthirsty Fireweave Gloves
+			bloodthirsty(i(70057)),	-- Bloodthirsty Fireweave Pants
+			bloodthirsty(i(70058)),	-- Bloodthirsty Fireweave Robe
+			bloodthirsty(i(70059)),	-- Bloodthirsty Fireweave Shoulders
+			firelands(i(69954)),	-- Boots of the Black Flame
+			dragonsoul(i(71989)),	-- Bracers of Unconquered Power
+			i(54505),	-- Breeches of Mended Nightmares
+			i(54471),	-- Deathsilk Belt
+			i(54477),	-- Deathsilk Boots
+			i(54473),	-- Deathsilk Bracers
+			i(54476),	-- Deathsilk Cowl
+			i(54478),	-- Deathsilk Gloves
+			i(54472),	-- Deathsilk Leggings
+			i(54475),	-- Deathsilk Robe
+			i(54474),	-- Deathsilk Shoulders
+			firelands(i(69945)),	-- Don Tayo's Inferno Mittens
+			i(54503),	-- Dreamless Belt
+			dragonsoul(i(71990)),	-- Dreamwraps of the Light
+			bloodied(i(54500)),	-- Emberfire Belt
+			bloodied(i(54499)),	-- Emberfire Boots
+			bloodied(i(54501)),	-- Emberfire Bracers
+			bloodied(i(54496)),	-- Emberfire Cowl
+			bloodied(i(54497)),	-- Emberfire Gloves
+			bloodied(i(54498)),	-- Emberfire Pants
+			bloodied(i(54495)),	-- Emberfire Robe
+			bloodied(i(54502)),	-- Emberfire Shoulders
+			firelands(i(69953)),	-- Endless Dream Walkers
+			bloodied(i(54489)),	-- Fireweave Belt
+			bloodied(i(54490)),	-- Fireweave Boots
+			bloodied(i(54488)),	-- Fireweave Bracers
+			bloodied(i(54493)),	-- Fireweave Cowl
+			bloodied(i(54492)),	-- Fireweave Gloves
+			bloodied(i(54491)),	-- Fireweave Pants
+			bloodied(i(54494)),	-- Fireweave Robe
+			bloodied(i(54487)),	-- Fireweave Shoulders
+			i(54506),	-- Flame-Ascended Pantaloons
+			firelands(i(69944)),	-- Grips of Altered Reality
+			i(54451),	-- High Society Top Hat
+			dragonsoul(i(71980)),	-- Lavaquake Legwraps
+			i(54481),	-- Spiritmend Belt
+			i(54482),	-- Spiritmend Boots
+			i(54480),	-- Spiritmend Bracers
+			i(54485),	-- Spiritmend Cowl
+			i(54484),	-- Spiritmend Gloves
+			i(54483),	-- Spiritmend Leggings
+			i(54486),	-- Spiritmend Robe
+			i(54479),	-- Spiritmend Shoulders
+			dragonsoul(i(75096)),	-- Vicious Embersilk Belt
+			dragonsoul(i(75095)),	-- Vicious Embersilk Boots
+			dragonsoul(i(75098)),	-- Vicious Embersilk Bracers
+			-- #if ANYCLASSIC
+			-- Blizzard did a dumb when they implemented Cata Classic, making Dragon Soul PVP cloaks available at launch
+			-- and adding a new, higher ilvl, cloak which never got added to the game
+			i(226182, { ["timeline"] = { CREATED_4_4_0 } }), -- Vicious Embersilk Cape
+			bloodied(i(75065)),	-- Vicious Embersilk Cape
+			-- #else
+			dragonsoul(i(75065)),	-- Vicious Embersilk Cape
+			-- #endif
+			dragonsoul(i(75073)),	-- Vicious Embersilk Cowl
+			dragonsoul(i(75070)),	-- Vicious Embersilk Gloves
+			dragonsoul(i(75072)),	-- Vicious Embersilk Pants
+			dragonsoul(i(75093)),	-- Vicious Embersilk Robe
+			dragonsoul(i(75064)),	-- Vicious Embersilk Shoulders
+			dragonsoul(i(75086)),	-- Vicious Fireweave Belt
+			dragonsoul(i(75087)),	-- Vicious Fireweave Boots
+			dragonsoul(i(75089)),	-- Vicious Fireweave Bracers
+			dragonsoul(i(75062)),	-- Vicious Fireweave Cowl
+			dragonsoul(i(75063)),	-- Vicious Fireweave Gloves
+			dragonsoul(i(75082)),	-- Vicious Fireweave Pants
+			dragonsoul(i(75088)),	-- Vicious Fireweave Robe
+			dragonsoul(i(75091)),	-- Vicious Fireweave Shoulders
+			dragonsoul(i(71981)),	-- World Mender's Pants
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(54447),	-- Enchanted Spellthread
+			i(54449),	-- Ghostly Spellthread
+			i(54448),	-- Powerful Enchanted Spellthread
+			i(54450),	-- Powerful Ghostly Spellthread
+		}),
 		filter(BAGS, {
 			i(54443),	-- Embersilk Bag
 			i(54446),	-- Hyjal Expedition Bag
@@ -1576,113 +1753,19 @@ Fire and Water - Damage against Elementals increased by 15%.
 			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
 			i(54445),	-- Otherworldly Bag
 		}),
-		filter(CONSUMABLES, {
-			i(54447),	-- Enchanted Spellthread
-			i(54449),	-- Ghostly Spellthread
-		}),
-		n(CHEST, {
-			i(54441),	-- Black Embersilk Gown
-			bloodthirsty(i(70060)),	-- Bloodthirsty Embersilk Robe
-			bloodthirsty(i(70058)),	-- Bloodthirsty Fireweave Robe
-			i(54475),	-- Deathsilk Robe
-			bloodied(i(54495)),	-- Emberfire Robe
-			bloodied(i(54494)),	-- Fireweave Robe
-			i(54486),	-- Spiritmend Robe
-			dragonsoul(i(75093)),	-- Vicious Embersilk Robe
-			dragonsoul(i(75088)),	-- Vicious Fireweave Robe
-		}),
-		n(BACK, {
-			bloodthirsty(i(70070)),	-- Bloodthirsty Embersilk Cape
-			-- #if ANYCLASSIC
-			-- Blizzard did a dumb when they implemented Cata Classic
-			dragonsoul(i(226182)),	-- Vicious Embersilk Cape
-			bloodied(i(75065)),	-- Vicious Embersilk Cape
-			-- #else
-			dragonsoul(i(75065)),	-- Vicious Embersilk Cape
+		filter(MISC, {
+			-- #if AFTER BFA
+			i(53051),	-- Dense Embersilk Bandage
+			i(53049),	-- Embersilk Bandage
+			-- #endif
+			i(54442),	-- Embersilk Net
+			-- #if AFTER BFA
+			i(53050),	-- Heavy Embersilk Bandage
 			-- #endif
 		}),
-		n(FEET, {
-			firelands(i(69954)),	-- Boots of the Black Flame
-			bloodthirsty(i(70061)),	-- Bloodthirsty Embersilk Boots
-			bloodthirsty(i(70053)),	-- Bloodthirsty Fireweave Boots
-			i(54477),	-- Deathsilk Boots
-			bloodied(i(54499)),	-- Emberfire Boots
-			firelands(i(69953)),	-- Endless Dream Walkers
-			bloodied(i(54490)),	-- Fireweave Boots
-			i(54482),	-- Spiritmend Boots
-			dragonsoul(i(75095)),	-- Vicious Embersilk Boots
-			dragonsoul(i(75087)),	-- Vicious Fireweave Boots
-		}),
-		n(HANDS, {
-			bloodthirsty(i(70065)),	-- Bloodthirsty Embersilk Gloves
-			bloodthirsty(i(70056)),	-- Bloodthirsty Fireweave Gloves
-			i(54478),	-- Deathsilk Gloves
-			firelands(i(69945)),	-- Don Tayo's Inferno Mittens
-			bloodied(i(54497)),	-- Emberfire Gloves
-			bloodied(i(54492)),	-- Fireweave Gloves
-			firelands(i(69944)),	-- Grips of Altered Reality
-			i(54484),	-- Spiritmend Gloves
-			dragonsoul(i(75070)),	-- Vicious Embersilk Gloves
-			dragonsoul(i(75063)),	-- Vicious Fireweave Gloves
-		}),
-		n(HEAD, {
-			bloodthirsty(i(70067)),	-- Bloodthirsty Embersilk Cowl
-			bloodthirsty(i(70055)),	-- Bloodthirsty Fireweave Cowl
-			i(54476),	-- Deathsilk Cowl
-			bloodied(i(54496)),	-- Emberfire Cowl
-			bloodied(i(54493)),	-- Fireweave Cowl
-			i(54451),	-- High Society Top Hat
-			i(54485),	-- Spiritmend Cowl
-			dragonsoul(i(75073)),	-- Vicious Embersilk Cowl
-			dragonsoul(i(75062)),	-- Vicious Fireweave Cowl
-		}),
-		n(LEGS, {
-			bloodthirsty(i(70066)),	-- Bloodthirsty Embersilk Pants
-			bloodthirsty(i(70057)),	-- Bloodthirsty Fireweave Pants
-			i(54505),	-- Breeches of Mended Nightmares
-			i(54472),	-- Deathsilk Leggings
-			bloodied(i(54498)),	-- Emberfire Pants
-			bloodied(i(54491)),	-- Fireweave Pants
-			i(54506),	-- Flame-Ascended Pantaloons
-			dragonsoul(i(71980)),	-- Lavaquake Legwraps
-			i(54483),	-- Spiritmend Leggings
-			dragonsoul(i(75072)),	-- Vicious Embersilk Pants
-			dragonsoul(i(75082)),	-- Vicious Fireweave Pants
-			dragonsoul(i(71981)),	-- World Mender's Pants
-		}),
-		n(SHOULDER, {
-			bloodthirsty(i(70064)),	-- Bloodthirsty Embersilk Shoulders
-			bloodthirsty(i(70059)),	-- Bloodthirsty Fireweave Shoulders
-			i(54474),	-- Deathsilk Shoulders
-			bloodied(i(54502)),	-- Emberfire Shoulders
-			bloodied(i(54487)),	-- Fireweave Shoulders
-			i(54479),	-- Spiritmend Shoulders
-			dragonsoul(i(75064)),	-- Vicious Embersilk Shoulders
-			dragonsoul(i(75091)),	-- Vicious Fireweave Shoulders
-		}),
-		n(WAIST, {
-			i(54504),	-- Belt of the Depths
-			bloodthirsty(i(70062)),	-- Bloodthirsty Embersilk Belt
-			bloodthirsty(i(70052)),	-- Bloodthirsty Fireweave Belt
-			i(54471),	-- Deathsilk Belt
-			i(54503),	-- Dreamless Belt
-			bloodied(i(54500)),	-- Emberfire Belt
-			bloodied(i(54489)),	-- Fireweave Belt
-			i(54481),	-- Spiritmend Belt
-			dragonsoul(i(75096)),	-- Vicious Embersilk Belt
-			dragonsoul(i(75086)),	-- Vicious Fireweave Belt
-		}),
-		n(WRIST, {
-			bloodthirsty(i(70063)),	-- Bloodthirsty Embersilk Bracers
-			bloodthirsty(i(70054)),	-- Bloodthirsty Fireweave Bracers
-			dragonsoul(i(71989)),	-- Bracers of Unconquered Power
-			i(54473),	-- Deathsilk Bracers
-			dragonsoul(i(71990)),	-- Dreamwraps of the Light
-			bloodied(i(54501)),	-- Emberfire Bracers
-			bloodied(i(54488)),	-- Fireweave Bracers
-			i(54480),	-- Spiritmend Bracers
-			dragonsoul(i(75098)),	-- Vicious Embersilk Bracers
-			dragonsoul(i(75089)),	-- Vicious Fireweave Bracers
+		filter(REAGENTS, {
+			i(53643),	-- Bolt of Embersilk Cloth
+			i(54440),	-- Dreamcloth
 		}),
 	}),
 }))));

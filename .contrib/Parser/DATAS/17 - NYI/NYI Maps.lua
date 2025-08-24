@@ -326,7 +326,7 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- 0 (World)
 			m(2063),	-- Dragon Isles
 			m(2107),	-- The Forbidden Reach

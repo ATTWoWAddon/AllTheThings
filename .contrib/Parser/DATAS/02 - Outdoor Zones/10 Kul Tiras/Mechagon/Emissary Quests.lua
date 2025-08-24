@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(55348, bubbleDownSelf({ ["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, EXALTED } }, {	-- Supplies from the Rustbolt Resistance
 				["repeatable"] = true,
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					i(170061, {	-- Rustbolt Supplies
 						i(168935, {	-- Existence Vibrancy Display (Rank 4)
 							["u"] = REMOVED_FROM_GAME,

@@ -1,16 +1,19 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[506696] = {
 		readable = "Buried Treasure",
 		model = 1804876,
 		text = {
 			en = "Buried Treasure",
-			de = "Buried Treasure",
-			fr = "Buried Treasure",
-			it = "Buried Treasure",
-			pt = "Buried Treasure",
-			ru = "Buried Treasure",
-			ko = "Buried Treasure",
-			cn = "Buried Treasure",
+			de = "Vergrabener Schatz",
+			es = "Tesoro enterrado",
+			mx = "Tesoro enterrado",
+			fr = "Trésor enfoui",
+			it = "Tesoro Sepolto",
+			pt = "Tesouro Enterrado",
+			ru = "Зарытое сокровище",
+			ko = "파묻힌 보물",
+			cn = "埋藏的宝藏",
+			tw = "地底藏寶",
 		},
 	},
 })

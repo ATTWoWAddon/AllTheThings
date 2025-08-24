@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 				["coord"] = { 65.0, 19.6, ARDENWEALD },
 				["crs"] = { 164725 },	-- Tanor <Food & Drink>
-				["g"] = {
+				["groups"] = {
 					crit(49954, {["provider"] = { "i", 178228 }}),	-- Glittersnap Snowpeas
 					crit(49955, {["provider"] = { "i", 173761 }}),	-- Glazed Glowberries
 					crit(49956, {["provider"] = { "i", 173759 }}),	-- Candied Brightbark
@@ -93,10 +93,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14353, {	-- Ardenweald's a Stage
-				["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
+				["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else. Only one mob is summonable per day.",
 				["coord"] = { 41.5, 44.8, ARDENWEALD },
 				["crs"] = { 171743 },	-- Dapperdew
-				["g"] = {
+				["groups"] = {
 					crit(48705, {	-- Xavius
 						["_npcs"] = { 166146 },
 					}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			ach(14164, {	-- Awaken, Ardenweald
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			explorationAch(14304),	-- Explore Ardenweald
+			ach(14304),	-- Explore Ardenweald
 			ach(14788, {	-- Fractured Faerie Tales
 				["sym"] = {{ "achievement_criteria" }},
 			}),
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(14791, {	-- Toss a Seed to Your Hunter...
-				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove.  Look around the bases of trees for sparkling bluish-purple plants.",
+				["description"] = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove. Look around the bases of trees for sparkling bluish-purple plants.",
 				["crs"] = { 171690 },	-- Gwyncierw
 				["coord"] = { 65.6, 24.6, ARDENWEALD },
 				["provider"] = { "i", 183902 },	-- 1x A Faintly Glowing Seed

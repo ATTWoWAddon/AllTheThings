@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(STORMHEIM, {
 			n(EMISSARY_QUESTS,   {
 				q(42234, {	-- The Valarjar
-					["isWorldQuest"] = true,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(157824, {	-- Valarjar Cache
 							["sym"] = {
@@ -24,29 +24,29 @@ root(ROOTS.Zones, {
 						}),
 						un(REMOVED_FROM_GAME, i(154905, {	-- Valarjar Cache
 							["sym"] = {{"select","itemID",
-								157824,    -- Valarjar Cache
+								157824,	-- Valarjar Cache
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151466, {	-- Valarjar Cache
 							["sym"] = {{"select","itemID",
-								157824,    -- Valarjar Cache
+								157824,	-- Valarjar Cache
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146749, {	-- Valarjar Cache
 							["sym"] = {{"select","itemID",
-								157824,    -- Valarjar Cache
+								157824,	-- Valarjar Cache
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(137562, {	-- Valarjar Cache
 							["sym"] = {{"select","itemID",
-								157824,    -- Valarjar Cache
+								157824,	-- Valarjar Cache
 							}},
 						})),
 					},
 				}),
 				q(46746, bubbleDownSelf({ ["minReputation"] = { FACTION_VALAJAR, EXALTED }}, {		-- Supplies from the Valarjar
-					["repeatable"] = true,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(152106, {	-- Valarjar Strongbox
 							i(147805),	-- Valarjar Stormwing (MOUNT!)

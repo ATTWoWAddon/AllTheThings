@@ -1,0 +1,180 @@
+3.0.1.8303
+fp(165),	-- -- \\ Transport, Northrend 2
+fp(175),	-- -- \\ Transport, Howling Fjord
+fp(176),	-- -- \\ Quest - Howling Fjord Tauren Canoe (Start)
+fp(177),	-- -- \\ Quest - Howling Fjord Tauren Canoe (End)
+fp(178),	-- -- \\ Transport, Borean Tundra
+fp(182),	-- -- \\ Quest - Howling Fjord - Break the Blockade Zeppelin
+fp(183),	-- -- \\ Valgarde Port, Howling Fjord
+fp(184),	-- -- \\ Fort Wildervar, Howling Fjord
+fp(185),	-- -- \\ Westguard Keep, Howling Fjord
+fp(186),	-- -- \\ Quest - Howling Fjord - Flight to the Windrunner - Start
+fp(187),	-- -- \\ Quest - Howling Fjord - Flight to the Windrunner - End
+fp(188),	-- -- \\ Quest - Howling Fjord - Test at Sea - Start
+fp(189),	-- -- \\ Quest - Howling Fjord - Test at Sea - End
+fp(190),	-- -- \\ New Agamand, Howling Fjord
+fp(191),	-- -- \\ Vengeance Landing, Howling Fjord
+fp(192),	-- -- \\ Camp Winterhoof, Howling Fjord
+fp(193),	-- -- \\ Quest - Howling Fjord - Mission: Plague This! - End
+fp(194),	-- -- \\ Quest - Howling Fjord - Mission: Plague This! - Start
+fp(196),	-- -- \\ Test - SP
+fp(199),	-- -- \\ Quest - Howling Fjord - McGoyver Start
+fp(200),	-- -- \\ Quest - Howling Fjord - McGoyver End
+fp(203),	-- -- \\ Quest - Stars' Rest -> Wintergarde
+fp(204),	-- -- \\ Quest - New Agamand -> Venomspite
+fp(207),	-- -- \\ Quest - Howling Fjord - Sister Mercy (Start)
+fp(208),	-- -- \\ Quest - Howling Fjord - Sister Mercy (End)
+fp(214),	-- -- \\ Quest - Howling Fjord - Naglfar (Start)
+fp(215),	-- -- \\ Quest - Howling Fjord - Naglfar (Nodes)
+fp(216),	-- 
+fp(217),	-- 
+fp(218),	-- -- \\ Transport, Howling Fjord (Gondola, Top)
+fp(219),	-- -- \\ Transport, Howling Fjord (Gondola, Bottom)
+fp(221),	-- -- \\ Amber Ledge, Borean (To Beryl)
+fp(222),	-- -- \\ Beryl Point, Borean
+fp(223),	-- -- \\ Quest - Naglevar
+fp(224),	-- -- \\ Borean Tundra, Naglevar
+fp(225),	-- -- \\ Amber Ledge, Borean (to Coldarra)
+fp(226),	-- -- \\ Transitus Shield, Coldarra
+fp(227),	-- -- \\ Transport, PattyMacDevTest
+fp(228),	-- -- \\ Development Land - Pat Test Start
+fp(229),	-- -- \\ Development Land - Pat Test End
+fp(230),	-- -- \\ Transport, Tuskarr 01
+fp(231),	-- -- \\ Transport, Tuskarr 02
+fp(232),	-- -- \\ Borean Tundra - Warsong Hold Wolf Start
+fp(233),	-- -- \\ Borean Tundra - Warsong Hold Wolf End
+fp(234),	-- -- \\ Coldarra Ledge, Coldarra
+fp(235),	-- -- \\ Transitus Shield, Coldarra (NOT USED)
+fp(236),	-- -- \\ Coldarra, Keristrasza to Malygos
+fp(237),	-- -- \\ Coldarra, Keristrasza Landing
+fp(238),	-- 
+fp(239),	-- -- \\ Borean Tundra - Quest - Dusk Start
+fp(240),	-- -- \\ Borean Tundra - Quest - Dusk - End
+fp(241),	-- -- \\ Transport, Valiance Keep
+fp(242),	-- -- \\ Quest - Dragonblight - Spiritual Vision - Begin \\ Quest - Dragonblight - Spiritual Vision - Start
+fp(243),	-- -- \\ Quest - Dragonblight - Spiritual Vision - End
+fp(244),	-- -- \\ Wintergarde Keep, Dragonblight
+fp(245),	-- -- \\ Valiance Keep, Borean Tundra
+fp(246),	-- -- \\ Fizzcrank Airstrip, Borean Tundra
+fp(247),	-- -- \\ Stars' Rest, Dragonblight \\ Star's Rest, Dragonblight
+fp(248),	-- -- \\ Apothecary Camp, Howling Fjord
+fp(249),	-- -- \\ Camp Oneqwah, Grizzly Hills
+fp(250),	-- -- \\ Conquest Hold, Grizzly Hills
+fp(251),	-- -- \\ Fordragon Hold, Dragonblight
+fp(252),	-- -- \\ Wyrmrest Temple, Dragonblight
+fp(253),	-- -- \\ Amberpine Lodge, Grizzly Hills
+fp(254),	-- -- \\ Venomspite, Dragonblight
+fp(255),	-- -- \\ Westfall Brigade, Grizzly Hills
+fp(256),	-- -- \\ Agmar's Hammer, Dragonblight
+fp(257),	-- -- \\ Warsong Hold, Borean Tundra
+fp(258),	-- -- \\ Taunka'le Village, Borean Tundra
+fp(259),	-- -- \\ Bor'gorok Outpost, Borean Tundra
+fp(260),	-- -- \\ Kor'kron Vanguard, Dragonblight \\ Kor'koron Vanguard, Dragonblight
+fp(261),	-- -- \\ Quest - Stars' Rest to Wintergarde End
+fp(262),	-- -- \\ Grizzly Hills, Alliance Log Ride Start 01
+fp(263),	-- -- \\ Grizzly Hills, Alliance Log Ride End 01
+fp(264),	-- -- \\ Transport, Auberdine (NEW)
+fp(265),	-- -- \\ Transport, Theramore (NEW)
+fp(266),	-- -- \\ Transport, Menethil (NEW)
+fp(267),	-- -- \\ Grizzly Hills, Alliance Log Ride Start
+fp(268),	-- -- \\ Grizzly Hills, Alliance Log Ride End
+fp(269),	-- -- \\ Quest - Westguard Keep to Wintergarde Keep Begin \\ Quest - Westguard Keep to Wintergarde Keep Start
+fp(270),	-- -- \\ Quest - Westguard Keep to Wintergarde Keep End
+fp(271),	-- -- \\ Grizzly Hills, Horde Log Ride Start
+fp(272),	-- -- \\ Grizzly Hills, Horde Log Ride End
+fp(273),	-- -- \\ Wyrmrest Temple - bottom to top, Dragonblight - Begin
+fp(274),	-- -- \\ Wyrmrest Temple - bottom to top, Dragonblight - End
+fp(275),	-- -- \\ Wyrmrest Temple - top to bottom, Dragonblight - Begin
+fp(276),	-- -- \\ Wyrmrest Temple - top to bottom, Dragonblight - End
+fp(277),	-- -- \\ Wyrmrest Temple - top to middle, Dragonblight - Begin
+fp(278),	-- -- \\ Wyrmrest Temple - top to middle, Dragonblight - End
+fp(279),	-- -- \\ Wyrmrest Temple - middle to top, Dragonblight - End
+fp(280),	-- -- \\ Wyrmrest Temple - middle to top, Dragonblight - Begin
+fp(281),	-- -- \\ Wyrmrest Temple - middle to bottom, Dragonblight - End
+fp(282),	-- -- \\ Wyrmrest Temple - middle to bottom, Dragonblight - Begin
+fp(283),	-- -- \\ Wyrmrest Temple - bottom to middle, Dragonblight - End
+fp(284),	-- -- \\ Wyrmrest Temple - bottom to middle, Dragonblight - Begin
+fp(285),	-- -- \\ Quest - Wintergarde -> Stars' Rest (Start)
+fp(286),	-- -- \\ Quest - Wintergarde -> Stars' Rest (End)
+fp(287),	-- -- \\ Quest - Valgarde -> Westguard Keep Start
+fp(288),	-- -- \\ Quest - Valgarde -> Westguard Keep End
+fp(289),	-- -- \\ Amber Ledge, Borean Tundra
+3.0.1.8622
+fp(290),	-- -- \\ Argent Stand, Zul'Drak
+fp(291),	-- -- \\ Ruined City Post 01, Zul'Drak
+fp(292),	-- -- \\ Flavor - Stormwind Harbor  - Start
+fp(293),	-- -- \\ Flavor - Stormwind Harbor - Stop
+fp(294),	-- -- \\ Moa'ki, Dragonblight
+fp(295),	-- -- \\ Kamagua, Howling Fjord
+fp(296),	-- -- \\ Unu'pe, Borean Tundra
+fp(297),	-- -- \\ Sholazar Basin - Quest - Reconnaisance - Start
+fp(298),	-- -- \\ Sholazar Basin - Quest - Reconnaisance - End
+fp(299),	-- -- \\ Transport: Menethil <-> Valgarde
+fp(300),	-- -- \\ Transport, Stormwind
+fp(301),	-- -- \\ Quest - Borean Tundra - Check In With Bixie - Begin
+fp(302),	-- -- \\ Quest - Borean Tundra - Check In With Bixie - End
+fp(303),	-- -- \\ Valiance Landing Camp, Wintergrasp \\ The Argent Stand, Zul'Drak (DO NOT USE)
+fp(304),	-- -- \\ The Argent Stand, Zul'Drak
+fp(305),	-- -- \\ Ebon Watch, Zul'Drak
+fp(306),	-- -- \\ Light's Breach, Zul'Drak
+fp(307),	-- -- \\ Zim'Torga, Zul'Drak
+fp(308),	-- -- \\ River's Heart, Sholazar Basin
+fp(309),	-- -- \\ Nesingwary Base Camp, Sholazar Basin
+fp(310),	-- -- \\ Dalaran
+fp(311),	-- -- \\ Camp Onequah, Grizzly Hills (Quest)
+fp(312),	-- -- \\ Light's Breach, Zul'Drak (Quest) \\ Light's Breach, Zul'Drak
+fp(313),	-- -- \\ Westfall Brigade, Grizzly Hills (Quest)
+fp(314),	-- -- \\ Zim'Torga, Zul'Drak (Quest)
+3.0.1.8874
+fp(315),	-- -- \\ Acherus: The Ebon Hold
+fp(316),	-- -- \\ Ebon Hold - Acherus -> Death's Breach Start
+fp(317),	-- -- \\ Ebon Hold - Acherus -> Death's Breach End
+fp(318),	-- -- \\ Ebon Hold - Death's Breach -> Acherus Start
+fp(319),	-- -- \\ Ebon Hold - Death's Breach -> Acherus End
+fp(320),	-- -- \\ K3, The Storm Peaks \\ AAA K3, The Storm Peaks
+fp(321),	-- -- \\ Frosthold, The Storm Peaks \\ AAA Frosthold, The Storm Peaks
+fp(322),	-- -- \\ Dun Niffelem, The Storm Peaks \\ Dun Nifflelem, The Storm Peaks \\ AAA Brann's Base Camp, The Storm Peaks
+fp(323),	-- -- \\ Grom'arsh Crash-Site, The Storm Peaks \\ AAA Grom'arsh Crash-Site
+fp(324),	-- -- \\ Camp Tunka'lo, The Storm Peaks \\ AAA Camp Tunka'lo, The Storm Peaks
+fp(325),	-- -- \\ Death's Rise, Icecrown \\ AAA Ulduar (H)
+fp(326),	-- -- \\ Ulduar, The Storm Peaks \\ AAA Ulduar (A)
+fp(327),	-- -- \\ Bouldercrag's Refuge, The Storm Peaks \\ AAA Bouldercrag's Refuge, The Storm Peaks
+fp(328),	-- -- \\ Transport, Icecrown Airship (A) \\ AAAA Transport, Icecrown (A)
+fp(329),	-- -- \\ Transport, Icecrown Airship (H) \\ AAAA Transport, Icecrown (H)
+fp(330),	-- -- \\ Transport, Icecrown (Target) \\ AAAA Transport, Icecrown (Target)
+3.1.0.9767
+fp(331),	-- -- \\ Gundrak, Zul'Drak
+fp(332),	-- -- \\ Warsong Camp, Wintergrasp
+fp(333),	-- -- \\ The Shadow Vault, Icecrown
+fp(334),	-- -- \\ The Argent Vanguard, Icecrown
+fp(335),	-- -- \\ Crusaders' Pinnacle, Icecrown
+fp(336),	-- -- \\ Windrunner's Overlook, Crystalsong Forest
+fp(337),	-- -- \\ Sunreaver's Command, Crystalsong Forest
+fp(340),	-- -- \\ Argent Tournament Grounds, Icecrown
+fp(341),	-- -- \\ Ulduar Raid - Interior - Insertion Point
+fp(342),	-- -- \\ Ulduar Raid - Iron Concourse
+3.3.5.12340
+fp(348),	-- -- \\ Transport: Thunder Bluff <-> Org (Zep)
+fp(352),	-- -- \\ Isle of Conquest - Gunships
+fp(353),	-- 
+fp(357),	-- 
+fp(358),	-- -- \\ Quest - Icecrown - North Sea Kraken Bombing - Start
+fp(359),	-- -- \\ Quest - Icecrown - North Sea Kraken Bombing - End
+fp(375),	-- -- \\ Transport, Gadgetzan \\ REUSEME
+fp(376),	-- -- \\ Icecrown Raid - Airship Battle Taxi Paths \\ AAAIcecrown Raid - Airship Battle Taxi Paths
+fp(377),	-- -- \\ Icecrown Dungeon - Gunships
+fp(379),	-- -- \\ Icecrown Raid - Saurfang's Ship (End) \\ AAAAIcecrown Raid - Saurfang's Ship (End)
+fp(380),	-- -- \\ Icecrown Raid - Saurfang's Ship (Start) \\ AAAAIcecrown Raid - Saurfang's Ship (Start)
+fp(381),	-- -- \\ Quest [Transport] Icecrown Raid - Saurfang Ship (START) \\ AAAAQuest [Transport] Icecrown Raid - Saurfang Ship (START)
+fp(382),	-- -- \\ Quest [Transport] Icecrown Raid - Saurfang Ship (END)
+fp(383),	-- -- \\ Thondroril River, Eastern Plaguelands \\ Thondoril River, Eastern Plaguelands \\ Thondoril River, Western Plaguelands
+fp(384),	-- -- \\ The Bulwark, Tirisfal
+fp(392),	-- -- \\ CC Prologue - GT - Quest - Vent Horizon - Start
+fp(393),	-- -- \\ CC Prologue - GT - Quest - Vent Horizon - End
+fp(394),	-- -- \\ CC Prologue - GT - Battle Flight - Start
+fp(395),	-- -- \\ CC Prologue - GT - Battle Flight - End
+fp(404),	-- -- \\ Durotar - ET - CC Prologue Spy Frog Start
+fp(405),	-- -- \\ Durotar - ET - CC Prologue Spy Frog End
+fp(438),	-- -- \\ Durotar - ET - CC Prologue Troll Taxi Bat Start
+fp(439),	-- -- \\ Durotar - ET - CC Prologue Troll Recruit End
+fp(440),	-- -- \\ Durotar - ET - CC Prologue - Troll Battle End

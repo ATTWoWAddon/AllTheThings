@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(VENDORS, {
 			n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
 				["coord"] = { 54.0, 25.6, SINFALL_REACHES },
-				["g"] = {
+				["groups"] = {
 					CHRONICLE_OF_LOST_MEMORIES,
 					MEMORY_OF_A_VITAL_SACRIFICE,
 					i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
@@ -411,7 +411,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					180906,	-- Soulbreaker's Ebony Slippers
 					180928,	-- Soulbreaker's Ebony Wraps
 				}},
-				["g"] = {
+				["groups"] = {
 					i(181143, {	-- Claw of the Stoneborn Executioner
 						["cost"] = {
 							{ "c", ANIMA, 3500 },
@@ -494,7 +494,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
 				["coord"] = { 55.2, 54.1, SINFALL_DEPTHS },
-				["g"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
+				["groups"] = bubbleDown({ ["modID"] = 3 }, {	-- Normal
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,03), 1 },	-- Normal Abominable Anima Spherule - 200
@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			n(178176, {	-- Night Guardian Jethraasa <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 55.1, 46.1, SINFALL_DEPTHS },
 				["cr"] = 174183,	-- Solivane <Raid Finder Nathrian Weaponsmith> (no longer the vendor for anyone who has progressed through Chapter 5/9 of Chains of Domination)
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["groups"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -908,7 +908,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
 				["coord"] = { 45.4, 65.0, SINFALL_DEPTHS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["groups"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
@@ -1113,7 +1113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
 				["coord"] = { 40.3, 46.1, SINFALL_DEPTHS },
-				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				["groups"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226

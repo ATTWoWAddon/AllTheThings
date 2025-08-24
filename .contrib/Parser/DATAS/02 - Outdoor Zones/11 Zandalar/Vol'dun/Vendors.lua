@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135804, {	-- Hoarder Jena <Voldunai Emissary>
 				["coord"] = { 56.7, 49.7, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_VOLDUNAI, {
+				["groups"] = bubbleDownClassicRep(FACTION_VOLDUNAI, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50818 },	-- A Lost Flute
 				["coord"] = { 29.5, 59.4, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(129354, {	-- Rhan'ka
 				["coord"] = { 43.5, 60.2, VOLDUN },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164983, {	-- Rhan'ka's Escape Plan (TOY!)
 						["sourceQuests"] = { 48322 },	-- A Goldtusk Greeting
 					}),
@@ -173,13 +173,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(133833, {	-- Rikati
 				["coord"] = { 40.4, 55.4, VOLDUN },
-				["g"] = {
+				["groups"] = {
 					i(163567),	-- Snake on a Stick
 				},
 			}),
 			n(138919, {	-- Tukuku <Ancient Scrolls>
 				["coord"] = { 62.0, 20.8, VOLDUN },
-				["g"] = {
+				["groups"] = {
 					-- Common Vendor Item added here so theres at least one source for cost item same zone as the rare
 					i(161128),	-- Seaside Leafy Greens Mix
 				},

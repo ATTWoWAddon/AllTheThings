@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51385, {	-- A Supply of Stingers
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153486),	-- Intact Venomous Barb (QI!)
 				},
 			}),
@@ -80,14 +80,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50296, {	-- Billy Goat Barber (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155681),	-- Goat Fur (QI!)
 					i(153596),	-- Goat Shears (QI!)
 				},
 			}),
 			q(51671, {	-- Billy Goat Barber (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155681),	-- Goat Fur (QI!)
 					i(153596),	-- Goat Shears (QI!)
 				},
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51842),	-- Carla Smirk
 			q(53314, {	-- Coarse Storm Silver
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163626),	-- Coarse Storm Silver (QI!)
 				},
 			}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51647, {	-- Crews of Freehold
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153680),	-- Bilge Rat Orders (QI!)
 					i(153682),	-- Blacktooth Bruiser Orders (QI!)
 					i(153681),	-- Cutwater Corsair Orders (QI!)
@@ -145,15 +145,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50234, {	-- Crews of Freehold
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153680),	-- Bilge Rat Orders (QI!)
 					i(153682),	-- Blacktooth Bruiser Orders (QI!)
 					i(153681),	-- Cutwater Corsair Orders (QI!)
 				},
 			}),
 			q(50998, {	-- Work Order: Deep Sea Satin
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53716, {	-- Eastpoint Emergency (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53874),	-- End Their Vigil
 			q(51311, {	-- Energizing Extract
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152849),	-- Pulsating Extract (QI!)
 				},
 			}),
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53950, {	-- Explosive Relief (H, Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(307028, {	-- Azerite Gernades
 						i(164741),	-- Unstable Azerite Grenade
 					}),
@@ -193,22 +193,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53278, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163595),	-- Flourishing Riverbud (QI!)
 				},
 			}),
 			q(53277, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163588),	-- Flourishing Sea Stalk (QI!)
 				},
 			}),
 			q(53875, {	-- Fogsail for a Day (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
 			}),
-			q(52144, {	-- Foundry Meltdown (Alliance)
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(52144),	-- Foundry Meltdown
 			q(53076),	-- Foundry Meltdown
 			q(51654),	-- Fowlmouth
 			q(51662),	-- Foxhollow Skyterror
@@ -234,7 +232,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50299, {	-- Gryphon Wranglin'
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156928),	-- Tether Shot (QI!)
 				},
 			}),
@@ -248,7 +246,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52145, {	-- Heave-Ho!
 				["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
 				["coord"] = { 77.10, 76.25, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(152667),	-- "Sea Dog" Grog (QI!)
 				},
 			}),
@@ -257,10 +255,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54268, {	-- Impulsive Propulsion (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(312155, {	-- Gallywix's Getaway Pack
 						["coord"] = { 87.6, 50.7, TIRAGARDE_SOUND },
-						["g"] = { i(165942) },	-- Gallywix's Getaway Pack (QI!)
+						["groups"] = { i(165942) },	-- Gallywix's Getaway Pack (QI!)
 					}),
 				},
 			}),
@@ -270,13 +268,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50295, {	-- Like Pulling Teeth (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161312),	-- Intact Wendigo Tooth (QI!)
 				},
 			}),
 			q(52805, {	-- Like Pulling Teeth (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161312),	-- Intact Wendigo Tooth (QI!)
 				},
 			}),
@@ -308,25 +306,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51462),	-- Paratroopers
 			q(50324, {	-- Picturesque Fizzsprings Resort
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
 				},
 			}),
 			q(51090, {	-- Picturesque Norwington Estate
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
 				},
 			}),
 			q(50164, {	-- Polly Want A Cracker?
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(154878),	-- Rodrigo's Birdseed Biscuit (QI!)
 				},
 			}),
 			q(51646, {	-- Polly Want A Cracker?
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(154878),	-- Rodrigo's Birdseed Biscuit (QI!)
 				},
 			}),
@@ -337,7 +335,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53313, {	-- Rough Monelite
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163625),	-- Rough Monelite (QI!)
 				},
 			}),
@@ -348,7 +346,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51892),	-- Shiverscale the Toxic
 			q(53331, {	-- Show-Off
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					a(ach(12087)),	-- The Reining Champion
 				},
 			}),
@@ -366,13 +364,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53315, {	-- Smooth Platinum
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163627),	-- Smooth Platinum (QI!)
 				},
 			}),
 			q(50977, {	-- Smuggler Shakedown
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159673),	-- Bootleg Weapon Crate (QI!)
 				},
 			}),
@@ -439,18 +437,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51847),	-- Tort Jaw
 			q(53078, {	-- Treasure in the Tides (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163099),	-- Proudmoore Supply Crate (QI!)
 				},
 			}),
 			q(52155, {	-- Treasure in the Tides (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163099),	-- Proudmoore Supply Crate (QI!)
 				},
 			}),
 			a(q(53346, {	-- Trogg Tromping
-				["g"] = {
+				["groups"] = {
 					a(ach(13059)),	-- Drag Race
 				},
 			})),
@@ -461,7 +459,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(52752, {	-- Vigilant Lookouts
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162448),	-- Daelin's Gate Dossier (QI!)
 					i(162449),	-- Vigil Hill Documents (QI!)
 				},
@@ -473,28 +471,28 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50983, {	-- Work Order: Akunda's Bite
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
+					i(162444),	-- Pattern: Battle Flag: Phalanx Defense [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52331, {	-- Work Order: Demitri's Draught of Deception
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
+					i(162257),	-- Recipe: Demitri's Draught of Deception [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52333, {	-- Work Order: Sea Mist Potion
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
+					i(162259),	-- Recipe: Sea Mist Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(53772, {	-- Zagg Brokeneye (Faction Assault WQ)
@@ -509,7 +507,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		m(TIRAGARDE_SOUND, {
 			n(WORLD_QUESTS, {
 				q(54953),	-- Killing Adhara White
-				q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
+				q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4. this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
 			}),
 		}),
 	}),

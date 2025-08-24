@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1004,	-- Kings' Rest
 		},
 		["lvl"] = 120,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(51502, {	-- King's Rest: Kingsguard
 					["isWorldQuest"] = true,
@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2165, {	-- The Golden Serpent
 					["crs"] = { 135322 },	-- The Golden Serpent
-					["g"] = {
+					["groups"] = {
 						i(159137),	-- Gilded Serpent's Tooth
 						i(159413),	-- Gauntlets of the Avian Sentinel
 						i(159369),	-- Belt of the Consecrateed Tomb
@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2171, {	-- Mchimba the Embalmer
 					["crs"] = { 134993 },	-- Mchimba the Embalmer
-					["g"] = {
+					["groups"] = {
 						i(159642),	-- Royal Purifier's Spaade
 						i(159667),	-- Vessel of Last Rites
 						i(159409),	-- Embalmer's Steadying Bracers
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						135475,	-- Kula the Butcher
 						135472,	-- Zanazal the Wise
 					},
-					["g"] = {
+					["groups"] = {
 						i(160216),	-- Crackling Jade Kilij
 						i(159136),	-- Jeweled Dagger of Subjugation
 						i(159643),	-- Crossbow of Forgotten Majesty
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2172, {	-- Dazar, The First King
 					["crs"] = { 136160 },	-- King Dazar <The First>
-					["g"] = {
+					["groups"] = {
 						ach(12848),	-- Kings' Rest
 						i(159644),	-- Geti'ikku, Cut of Death
 						i(159645),	-- Headcracker of Supplication
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
-				["g"] = {
+				["groups"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						crit(41269, {	-- First trinket found
 							["description"] = "The first trinket is in the first room, on the pedestal in the center of the room.",
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2165, {	-- The Golden Serpent
 						["crs"] = { 135322 },	-- The Golden Serpent
-						["g"] = {
+						["groups"] = {
 							i(159137),	-- Gilded Serpent's Tooth
 							i(159413),	-- Gauntlets of the Avian Sentinel
 							i(159369),	-- Belt of the Consecrateed Tomb
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2171, {	-- Mchimba the Embalmer
 						["crs"] = { 134993 },	-- Mchimba the Embalmer
-						["g"] = {
+						["groups"] = {
 							ach(12721),	-- Wrap God
 							i(159642),	-- Royal Purifier's Spaade
 							i(159667),	-- Vessel of Last Rites
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							135475,	-- Kula the Butcher
 							135472,	-- Zanazal the Wise
 						},
-						["g"] = {
+						["groups"] = {
 							i(160216),	-- Crackling Jade Kilij
 							i(159136),	-- Jeweled Dagger of Subjugation
 							i(159643),	-- Crossbow of Forgotten Majesty
@@ -152,12 +152,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2172, {	-- Dazar, The First King
 						["crs"] = { 136160 },	-- King Dazar <The First>
-						["g"] = {
+						["groups"] = {
 							ach(12848),	-- Kings' Rest
 							ach(13008),	-- Kings' Rest Guild Run
 							ach(12723, {	-- How to Keep a Mummy
-								["description"] = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them.  Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom.  When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
-								["g"] = {
+								["description"] = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them. Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom. When they are full, it locks in and the rightmost sarcophagus will begin to shake. Simply kill the boss at this point and Miimii is yours!",
+								["groups"] = {
 									i(161214),	-- Miimii (PET!)
 								},
 							}),

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(258, {	-- The Mechanar
+	inst(258, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Mechanar
 		["lore"] = "Among the satellites of Tempest Keep, the Mechanar has been chosen by Kael'thas to be a factory to create large amounts of power. Mechano-Lord Capacitus appears to be the one creating it using the naaru-technology found in Tempest Keep, and the power is stored in manacells which piles up into walls and heaps inside the satellite. The large amount of manacells are smuggled by ethereals to the Sunwell where Kael'thas plans to use them to power up the summoning of Kil'jaeden.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3849,	-- The Mechanar
@@ -16,8 +16,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10665, {	-- Fresh from the Mechanar
-					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
+					["qg"] = 21465,	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -27,8 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29659, {	-- Lost Treasure
-					["qg"] = 18481,	-- A'dal
-					-- #if ANYCLASSIC
+					-- #if BEFORE MOP
 					["description"] = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
 					["isBounty"] = true,
 					-- #else
@@ -38,11 +37,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["description"] = "Automatically provided after killing either Gatewatcher. This appears to be bugged.",
 					-- #endif
 					-- #endif
+					["qg"] = 18481,	-- A'dal
 					["timeline"] = {
 						ADDED_4_3_0,
-						-- #if ANYCLASSIC
 						REMOVED_4_3_0,
-						-- #endif
+						ADDED_5_0_4,
 					},
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -52,9 +51,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29658, {	-- The Calculator
-					["qg"] = 18481,	-- A'dal
-					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon stepping into the final hallway. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
+					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
+					["qg"] = 18481,	-- A'dal
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -64,8 +63,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
-					["qg"] = 18481,	-- A'dal
 					["description"] = "Automatically provided upon starting the instance. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
+					["qg"] = 18481,	-- A'dal
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -98,8 +97,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 			}),
 			o(184465, bubbleDownSelf({
-				-- #if ANYCLASSIC
-				["timeline"] = { REMOVED_4_0_3 },
+				-- #if BEFORE MOP
+				["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4 },
 				["isBounty"] = true,
 				-- #endif
 			}, {	-- Cache of the Legion
@@ -107,8 +106,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				-- #if BEFORE 4.3.0.14942
 				["cost"] = {{ "i", 30438, 1 }},	-- Cache of the Legion Key
 				-- #endif
-				-- #if ANYCLASSIC
+				-- #if BEFORE MOP
+				-- #if AFTER WRATH
 				["sharedDescription"] = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
+				-- #endif
 				-- #endif
 				["groups"] = {
 					i(28252),	-- Bloodfyre Robes of Annihilation
@@ -163,11 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						ach(658, {	-- The Mechanar
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							-- #endif
-						}),
+						ach(658),	-- The Mechanar
 						i(28288),	-- Abacus of Violent Odds
 						i(28269),	-- Baba's Cloak of Arcanistry
 						-- #if BEFORE 7.3.5
@@ -262,9 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(565, {	-- Pathaleon the Calculator
 						["creatureID"] = 19220,
 						["groups"] = {
-							ach(679, {	-- Heroic: The Mechanar
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(679),	-- Heroic: The Mechanar
 							ach(5079, {	-- Heroic: The Mechanar Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -299,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

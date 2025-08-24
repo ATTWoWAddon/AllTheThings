@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			2003,	-- Sanctum of Domination
 			2004,	-- The Crucible
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(15122, {	-- The Jailer's Vanguard
 					crit(52470, {	-- The Tarragrue
@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						15108,	-- Together Forever
 						15133,	-- This World is a Prism
 					}},
-					["g"] = {
+					["groups"] = {
 						i(186653),	-- Hand of Hrestimorak (MOUNT!)
 					},
 				}),
@@ -493,8 +493,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66694, {	-- Tempting Fate: Sanctum of Domination
-						["isWorldQuest"] = true,
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						["isWorldQuest"] = true,
 					}),
 				}),
 				BossOnly(TARRAGRUE, {
@@ -703,7 +703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(187529),	-- Phylactery Shard (QI!)
 						},
 					}),
@@ -749,7 +749,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(187530),	-- Phylactery Shard (QI!)
 						},
 					}),
@@ -781,7 +781,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(187531),	-- Phylactery Shard (QI!)
 						},
 					}),
@@ -826,13 +826,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					ach(15197, bubbleDownSelf({["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
 					})),
 					ach(15196, bubbleDownSelf({["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Hall of Fame: Sylvanas (Horde)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
 					})),

@@ -3,6 +3,7 @@
 -------------------------------------------------------------------
 DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	readable = "Daily Dreamway Event Roll",
+	standalone = true,
 	icon = 1128042,
 	text = {
 		en = "Event Roll",
@@ -21,6 +22,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 });
 DUSKWOOD_ACTIVE = createHeader({
 	readable = "Duskwood Active",
+	standalone = true,
 	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -32,6 +34,7 @@ DUSKWOOD_ACTIVE = createHeader({
 });
 FERALAS_ACTIVE = createHeader({
 	readable = "Feralas Active",
+	standalone = true,
 	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -43,6 +46,7 @@ FERALAS_ACTIVE = createHeader({
 });
 THE_HINTERLANDS_ACTIVE = createHeader({
 	readable = "The Hinterlands Active",
+	standalone = true,
 	icon = 236780,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -54,6 +58,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 });
 DUSKWOOD_ACTIVATED = createHeader({
 	readable = "Duskwood Activated",
+	standalone = true,
 	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(78741),
@@ -65,6 +70,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 });
 FERALAS_ACTIVATED = createHeader({
 	readable = "Feralas Activated",
+	standalone = true,
 	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(78741),
@@ -77,6 +83,7 @@ FERALAS_ACTIVATED = createHeader({
 THE_HINTERLANDS_ACTIVATED = createHeader({
 	readable = "The Hinterlands Activated",
 	icon = 236780,
+	standalone = true,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Внутренние земли - активирован",
@@ -91,17 +98,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	n(CLASS_HALL, {
 		cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 			["maps"] = { THE_DREAMGROVE },
-			["g"] = {
+			["groups"] = {
 				o(253161, {	-- Grove Vine
 					["classes"] = { DRUID },
-					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots.  When Grove Vine spawns it has a chance for these two pets.|r",
-					["g"] = {
+					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots. When Grove Vine spawns it has a chance for these two pets.|r",
+					["groups"] = {
 						i(139554, {	-- Acorn of the Endless
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
 						i(129362),	-- Broot (PET!)
-						i(140741),	-- Nightmare Lasher (PET!)
 						i(140397),	-- G'hanir's Blossom
+						i(140741),	-- Nightmare Lasher (PET!)
+						i(140400),	-- Perfect Dreamgrove Blossom
 					},
 				}),
 				petbattle(filter(BATTLE_PETS, {
@@ -145,13 +153,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				})),
 				n(QUESTS, {
 					q(42044, {	-- A Dying Dream
-						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
-						["coord"] = { 43.4, 30.6, 715 },
 						["sourceQuests"] = {
 							42041,	-- Enduring the Nightmare
 							42042,	-- Teensy Weensies!
 							42043,	-- Cleaning Up
 						},
+						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
+						["coord"] = { 43.4, 30.6, 715 },
 					}),
 					q(40785, {	-- A Foe of the Dark
 						["sourceQuests"] = { 40784 },	-- Its Rightful Place
@@ -164,18 +172,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
 					}),
 					q(43409, {	-- A Hero's Weapon
+						["sourceQuests"] = { 42056 },	-- Champion: Remulos
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42056 },	-- Champion: Remulos
-						["g"] = {
+						["groups"] = {
 							spell(219663) -- Heroic Weapons [No item associated]
 						},
 					}),
 					q(42046, {	-- A New Beginning
+						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
 						["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
-						["sourceQuests"] = { 42045 },	-- Communing with Malorne
-						["g"] = {
+						["groups"] = {
 							i(139730),	-- Bracers of the Dreamgrove
 						},
 					}),
@@ -183,7 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 						["provider"] = { "n", 101061 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 57.8, 45.8, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							i(173716),	-- Mossy Hearthstone (QI!)
 						},
 					}),
@@ -201,9 +209,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
 					}),
 					q(42054, {	-- Archimonde, the Defiler
+						["sourceQuests"] = { 42053 },	-- The War of the Ancients
 						["provider"] = { "n", 107212 },	-- Skylord Omnuron
 						["coord"] = { 53.7, 33.9, 760 },
-						["sourceQuests"] = { 42053 },	-- The War of the Ancients
 					}),
 					q(41332, {	-- Ascending The Circle
 						["sourceQuests"] = { 41255 },	-- Sowing The Seed
@@ -211,70 +219,80 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 30.9, 54.2, THE_DREAMGROVE },
 					}),
 					q(44877, {	-- Attack on the Roost
-						["providers"] = {
-							{ "n", 115802 },	-- Thisalee Crow
-							{ "n", 119982 },	-- Druid of the Talon
+						["sourceQuest"] = 44869,	-- Talon Terror
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
 						},
 						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
-						["sourceQuest"] = 44869,	-- Talon Terror
 					}),
 					q(44888, {	-- Aviana's Grace
-						["providers"] = {
-							{ "n", 115802 },	-- Thisalee Crow
-							{ "n", 119982 },	-- Druid of the Talon
-						},
-						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 						["sourceQuests"] = {
 							44877,	-- Attack on the Roost
 							45532,	-- Mother's Orders
 						},
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
+						},
+						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 					}),
 					q(42588, {	-- Branching Out
+						["sourceQuests"] = { 42586 },	-- A Glade Defense
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 42586 },	-- A Glade Defense
 					}),
 					q(41106, {	-- Call of the Wilds
 						["sourceQuests"] = { 40643 },	-- A Summons From Moonglade
-						["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
-						["coord"] = { 56.2, 32.0, MOONGLADE },
+						["qgs"] = {
+							101064,	-- Archdruid Hamuul Runetotem
+							-- #if AFTER BFA
+							142299,	-- Archdruid Hamuul Runetotem
+							-- #endif
+						},
+						["coords"] = {
+							{ 56.2, 32.0, MOONGLADE },
+							-- #if AFTER BFA
+							{ 42.3, 44.3, SILITHUS },
+							-- #endif
+						},
 					}),
 					q(43368, {	-- Champion: Brightwing
-						["provider"] = { "n", 98008 },		-- Brightwing
-						["coord"] = { 39.6, 45.5, 715 },
 						["sourceQuests"] = {
 							42719,	-- Eye of Azshara: Cleansing the Dreamway
 							43365,	-- The Cycle Continues
 							42129,	-- The Pendant of Starlight
 						},
-						["g"] = {
+						["provider"] = { "n", 98008 },		-- Brightwing
+						["coord"] = { 39.6, 45.5, 715 },
+						["groups"] = {
 							follower(645),	-- Brightwing
 						},
 					}),
 					q(42038, {	-- Champion: Broll Bearmantle
-						["lvl"] = 103,
+						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["provider"] = { "n", 106091 },	-- Broll Bearmantle
 						["coord"] = { 49.0, 47.1, THE_DREAMGROVE },
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
-						["g"] = {
+						["lvl"] = 103,
+						["groups"] = {
 							follower(641),	-- Broll Bearmantle
 						},
 					}),
 					q(42047, {	-- Champion: Hamuul Runetotem
-						["level"] = 110,
+						["sourceQuests"] = { 42046 },	-- A New Beginning
 						["provider"] = { "n", 107025 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 47.9, 55.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 42046 },	-- A New Beginning
-						["g"] = {
+						["lvl"] = 110,
+						["groups"] = {
 							follower(643),	-- Archdruid Hamuul Runetotem
 						},
 					}),
 					q(42048, {	-- Champion: Mylune
-						["level"] = 110,
+						["sourceQuests"] = { 42046 },	-- A New Beginning
 						["provider"] = { "n", 107026 },	-- Mylune
 						["coord"] = { 53.7, 51.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42046 },	-- A New Beginning
-						["g"] = {
+						["lvl"] = 110,
+						["groups"] = {
 							follower(644),	-- Mylune
 						},
 					}),
@@ -282,32 +300,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42583 },	-- Rise, Champions
 						["provider"] = { "n", 103778 },	-- Naralex
 						["coord"] = { 67.2, 75.8, THE_DREAMGROVE },
-						["g"] = {
+						["groups"] = {
 							follower(639),	-- Naralex
 						},
 					}),
 					q(42056, {	-- Champion: Remulos
+						["sourceQuests"] = { 42055 },	-- The Demi-God's Return
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.6, 50.2, THE_DREAMGROVE },
-						["sourceQuests"] = { 42055 },	-- The Demi-God's Return
-						["g"] = {
+						["groups"] = {
 							follower(646),	-- Keeper Remulos
 						},
 					}),
 					q(42039, {	-- Champion: Sylendra Gladesong
-						["lvl"] = 103,
+						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["provider"] = { "n", 106093 },	-- Sylendra Gladesong
 						["coord"] = { 49.0, 46.8, THE_DREAMGROVE },
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
-						["g"] = {
+						["lvl"] = 103,
+						["groups"] = {
 							follower(642),	-- Sylendra Gladesong
 						},
 					}),
 					q(46044, {	-- Champion: Thisalee Crow
+						["sourceQuests"] = { 45425 },	-- Grovebound
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
 						["coord"] = { 44.4, 51.5, THE_DREAMGROVE },
-						["sourceQuests"] = { 45425 },	-- Grovebound
-						["g"] = {
+						["groups"] = {
 							follower(999),	-- Thisalee Crow
 						},
 					}),
@@ -315,51 +333,54 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42583 },	-- Rise, Champions
 						["provider"] = { "n", 98013 },	-- Zen'tabra
 						["coord"] = { 47.3, 7.5, THE_DREAMGROVE },
-						["g"] = {
+						["groups"] = {
 							follower(640),	-- Zen'tabra
 						},
 					}),
 					q(42043, {	-- Cleaning Up
+						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 43.4, 30.6, 715 },
-						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 					}),
 					q(41689, {	-- Cleansing the Mother Tree
 						["sourceQuests"] = { 41690 },	-- Reconvene
 						["provider"] = { "n", 104577 },	-- Lyessa Bloomwatcher
 						["coord"] = { 45.2, 51.9, THE_DREAMGROVE },
-						["g"] = {
+						["groups"] = {
 							title(332),	-- <Name>, Guardian of G'Hanir
 							i(128306, {	-- G'Hanir, the Mother Tree
-								artifact(45),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(45),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
 					q(42045, {	-- Communing with Malorne
+						["sourceQuests"] = { 42044 },	-- A Dying Dream
 						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 43.4, 30.6, 715 },
-						["sourceQuests"] = { 42044 },	-- A Dying Dream
 					}),
 					q(44076, {	-- Darkheart Thicket: Essence of Regrowth
-						["lvl"] = 103,
+						["sourceQuests"] = { 43991 },	-- The Protectors
 						["provider"] = { "n", 112549 },	-- Glimmer of Aessina
 						["coord"] = { 40.9, 59.0, 715 },
-						["sourceQuests"] = { 43991 },	-- The Protectors
+						["lvl"] = 103,
 					}),
 					q(42050, {	-- Defenders of the Dream
+						["sourceQuests"] = { 42051 },	-- Enter Nightmare
 						["provider"] = { "n", 107163 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 61.2, 65.2, 760 },
-						["sourceQuests"] = { 42051 },	-- Enter Nightmare
 					}),
 					q(43403, {	-- Defending the Isles
+						["sourceQuests"] = { 42046 },	-- A New Beginning
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
 						["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
-						["sourceQuests"] = { 42046 },	-- A New Beginning
 					}),
 					q(42031, {	-- Dire Growth
+						["sourceQuests"] = { 42032 },	-- Sampling the Nightmare
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 42032 },	-- Sampling the Nightmare
 					}),
 					q(40835, {	-- Disturbing the Past
 						["sourceQuests"] = { 40834 },	-- Following the Curse
@@ -367,37 +388,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 52.4, 34.4, DEADWIND_PASS },
 					}),
 					q(40654, {	-- Druids of the Claw
-						["lvl"] = 103,
+						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.6, 52.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
+						["lvl"] = 103,
 					}),
 					q(42041, {	-- Enduring the Nightmare
+						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 43.4, 30.6, 715 },
-						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 					}),
 					q(42051, {	-- Enter Nightmare
+						["sourceQuests"] = { 42049 },	-- Powering the Portal
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42049 },	-- Powering the Portal
 						["maps"] = { MOONGLADE },
 					}),
 					q(44235, {	-- Essence of Fate
+						["altQuests"] = { 44236 },	-- Essence of Fate
 						["provider"] = { "n", 110810 },	-- Almenis
 						["coord"] = { 41.0, 29.3, THE_DREAMGROVE },
-						["altQuests"] = { 44236 },	-- Essence of Fate
 					}),
 					q(42719, {	-- Eye of Azshara: Cleansing the Dreamway
+						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 						["provider"] = { "n", 98008 },	-- Brightwing
 						["coord"] = { 39.6, 45.5, 715 },
-						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 					}),
 					q(44077, {	-- Eye of Azshara: Essence of Balance
-						["lvl"] = 103,
+						["sourceQuests"] = { 43991 },	-- The Protectors
 						["provider"] = { "n", 112548 },	-- Keeper Remulos
 						["coord"] = { 30.7, 50.8, 715 },
-						["sourceQuests"] = { 43991 },	-- The Protectors
+						["lvl"] = 103,
 					}),
 					q(41783, {	-- Fallen Offerings
 						["sourceQuests"] = { 41782 },	-- To The Hills
@@ -406,9 +427,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["u"] = REMOVED_FROM_GAME,	-- was not part of the questline as of 12/12/20
 					}),
 					q(42365, {	-- Focusing the Energies
+						["sourceQuests"] = { 42046 },	-- A New Beginning
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
 						["coord"] = { 60.5, 23.6, THE_DREAMGROVE },
-						["sourceQuests"] = { 42046 },	-- A New Beginning
 					}),
 					q(40834, {	-- Following the Curse
 						["sourceQuests"] = { 40785 },	-- A Foe in the Dark
@@ -416,59 +437,59 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 77.4, 36.3, DUSKWOOD },
 					}),
 					q(46786, {	-- Further Advancement
+						["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 46044 },	-- Champion: Thisalee Crow
 					}),
 					q(46154, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42037, {	-- Gathering the Dreamweavers
-						["lvl"] = 103,
+						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
+						["lvl"] = 103,
 					}),
 					q(42034, {	-- Grip of Nightmare
-						["lvl"] = 103,
+						["sourceQuests"] = { 42033 },	-- Malorne's Refuge
 						["provider"] = { "n", 105903 },	-- Broll Bearmantle
 						["coord"] = { 57.2, 71.3, VALSHARAH },
-						["sourceQuests"] = { 42033 },	-- Malorne's Refuge
+						["lvl"] = 103,
 					}),
 					q(45425, {	-- Grovebound
-						["providers"] = {
-							{ "n", 120070 },	-- Thisalee Crow
-							{ "n", 120084 },	-- Druid of the Talon
-						},
 						["sourceQuests"] = { 46677 },	-- Prick of a Thistle
+						["qgs"] = {
+							120070,	-- Thisalee Crow
+							120084,	-- Druid of the Talon
+						},
 						["maps"] = { BROKEN_SHORE },
 					}),
 					q(42516, {	-- Growing Power
-						["sourceQuests"] = { 40653 },	-- Making Trails
-						["isBreadcrumb"] = true,
 						["description"] = "To get this quest, you have to port to Dalaran.",
+						["sourceQuests"] = { 40653 },	-- Making Trails
 						["provider"] = { "n", 112689 },	-- Archdruid Hamuul Runetotem
+						["isBreadcrumb"] = true,
 					}),
 					q(44075, {	-- Halls of Valor: Essence of Ferocity
-						["lvl"] = 103,
+						["sourceQuests"] = { 43991 },	-- The Protectors
 						["provider"] = { "n", 112544 },	-- Keeper Remulos
 						["coord"] = { 31.1, 36.5, 715 },
-						["sourceQuests"] = { 43991 },	-- The Protectors
+						["lvl"] = 103,
 					}),
 					q(43879, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42036, {	-- Idol of the Wilds
-						["lvl"] = 103,
+						["sourceQuests"] = { 42035 },	-- Tracking the Enemy
 						["provider"] = { "n", 106883 },	-- Sylendra Gladesong
 						["coord"] = { 59.8, 75.2, VALSHARAH },
-						["sourceQuests"] = { 42035 },	-- Tracking the Enemy
+						["lvl"] = 103,
 					}),
 					q(41436, {	-- In Deep Slumber
 						["sourceQuests"] = { 41449 },	-- Join the Dreamer
 						["provider"] = { "n", 104349 },	-- Naralex
 						["coord"] = { 39.6, 18.2, VALSHARAH },	-- technically Dreamgrove, but inside the barrow den the mapID changes
-						["g"] = {
+						["groups"] = {
 							i(135582),	-- Corrupted G'Hanir, the Mother Tree
 						},
 					}),
@@ -490,23 +511,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(45498, {	-- Let Sleeping Dogs Lie
-						["coord"] = { 68.0, 54.8, MOONGLADE },
 						["sourceQuests"] = { 44921 },	-- Lone Wolf
-						["providers"] = {
-							{ "n", 120032 },	-- Thisalee Crow
-							{ "n", 120041 },	-- Druid of the Talon
+						["qgs"] = {
+							120032,	-- Thisalee Crow
+							120041,	-- Druid of the Talon
 						},
+						["coord"] = { 68.0, 54.8, MOONGLADE },
 					}),
 					q(44921, {	-- Lone Wolf
+						["sourceQuest"] = 44888,	-- Aviana's Grace
 						["provider"] = { "n", 115749 },	-- Aviana
 						["coord"] = { 44.3, 48.0, MOUNT_HYJAL },
-						["sourceQuest"] = 44888,	-- Aviana's Grace
 					}),
 					q(42033, {	-- Malorne's Refuge
-						["lvl"] = 103,
+						["sourceQuests"] = { 42031 },	-- Dire Growth
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.6, 52.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42031 },	-- Dire Growth
+						["lvl"] = 103,
 					}),
 					q(40653, {	-- Making Trails
 						["sourceQuests"] = { 40652 },	-- Word on the Winds
@@ -527,25 +548,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
 					}),
 					q(45532, {	-- Mother's Orders
-						["providers"] = {
-							{ "n", 115802 },	-- Thisalee Crow
-							{ "n", 119982 },	-- Druid of the Talon
+						["sourceQuest"] = 44869,	-- Talon Terror
+						["qgs"] = {
+							115802,	-- Thisalee Crow
+							119982,	-- Druid of the Talon
 						},
 						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
-						["sourceQuest"] = 44869,	-- Talon Terror
 					}),
 					q(45426, {	-- Nature's Advance
+						["sourceQuests"] = { 46924 },	-- The Wolf's Tale
 						["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
 						["coord"] = { 68.1, 55.3, MOONGLADE },
-						["sourceQuests"] = { 46924 },	-- The Wolf's Tale
 					}),
 					q(46676, {	-- Nature's Touch
-						["providers"] = {
-							{ "n", 120070 },	-- Thisalee Crow
-							{ "n", 120084 },	-- Druid of the Talon
+						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
+						["qgs"] = {
+							120070,	-- Thisalee Crow
+							120084,	-- Druid of the Talon
 						},
 						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
-						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
 					}),
 					q(41422, {	-- Necessary Preparations
 						["sourceQuests"] = { 40649 },	-- Meet with Mylune
@@ -553,24 +574,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 52.6, 52.8, THE_DREAMGROVE },
 					}),
 					q(44074, {	-- Neltharion's Lair: Essence of Tenacity
-						["lvl"] = 103,
+						["sourceQuests"] = { 43991 },	-- The Protectors
 						["provider"] = { "n", 112546 },	-- Keeper Remulos
 						["coord"] = { 34.7, 62.5, 715 },
-						["sourceQuests"] = { 43991 },	-- The Protectors
+						["lvl"] = 103,
 					}),
 					q(42049, {	-- Powering the Portal
+						["sourceQuests"] = { 42046 },	-- A New Beginning
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
 						["coord"] = { 60.5, 23.6, THE_DREAMGROVE },
-						["sourceQuests"] = { 42046 },	-- A New Beginning
 					}),
 					q(46677, {	-- Prick of a Thistle
-						["providers"] = {
-							{ "n", 120070 },	-- Thisalee Crow
-							{ "n", 120084 },	-- Druid of the Talon
-						},
 						["sourceQuests"] = {
 							46676,	-- Nature's Touch
 							46675,	-- To Track a Demon
+						},
+						["qgs"] = {
+							120070,	-- Thisalee Crow
+							120084,	-- Druid of the Talon
 						},
 						["maps"] = { BROKEN_SHORE },
 					}),
@@ -591,9 +612,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 44.6, 52.0, THE_DREAMGROVE },
 					}),
 					q(42032, {	-- Sampling the Nightmare
+						["sourceQuests"] = { 42588 },	-- Branching Out
 						["provider"] = { "n", 98002 },	-- Skylord Omnuron
 						["coord"] = { 52.6, 51.4, THE_DREAMGROVE },
-						["sourceQuests"] = { 42588 },	-- Branching Out
 					}),
 					q(42438, {	-- Seeds of Renewal
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane
@@ -611,22 +632,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 44.5, 51.1, THE_DREAMGROVE },
 					}),
 					q(44869, {	-- Talon Terror
+						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
 						["coord"] = { 44.3, 51.5, THE_DREAMGROVE },
-						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					}),
 					q(42042, {	-- Teensy Weensies!
+						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 						["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem
 						["coord"] = { 43.4, 30.6, 715 },
-						["sourceQuests"] = { 42040 },	-- The Way to Nordrassil
 					}),
 					q(45528, {	-- The Befouled Barrows
-						["coord"] = { 68.0, 54.8, MOONGLADE },
 						["sourceQuests"] = { 44921 },	-- Lone Wolf
-						["providers"] = {
-							{ "n", 120032 },	-- Thisalee Crow
-							{ "n", 120041 },	-- Druid of the Talon
+						["qgs"] = {
+							120032,	-- Thisalee Crow
+							120041,	-- Druid of the Talon
 						},
+						["coord"] = { 68.0, 54.8, MOONGLADE },
 					}),
 					q(40900, {	-- The Burden Borne
 						["sourceQuests"] = { 40838 },	-- The Dark Riders
@@ -634,10 +655,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 68.3, 27.1, 46 },
 					}),
 					q(43365, {	-- The Cycle Continues
+						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 						["provider"] = { "n", 98008 },	-- Brightwing
 						["coord"] = { 39.6, 45.5, 715 },
-						["sourceQuests"] = { 42045 },	-- Communing with Malorne
-						["g"] = {
+						["groups"] = {
 							i(139380),	-- Dream Seeds (QI!)
 						},
 					}),
@@ -645,9 +666,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40837 },	-- The Deadwind Hunt
 						["provider"] = { "n", 100812 },	-- Revil Kost
 						["coord"] = { 46.9, 69.5, DEADWIND_PASS },
-						["g"] = {
+						["groups"] = {
 							i(128858, {	-- Scythe of Elune
-								artifact(244),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(244),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
@@ -657,10 +681,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 52.4, 34.4, DEADWIND_PASS },
 					}),
 					q(42055, {	-- The Demi-God's Return
+						["sourceQuests"] = { 42054 },	-- Call of the Wilds
 						["provider"] = { "n", 106905 },	-- Malorne
 						["coord"] = { 66.1, 66.8, 760 },
-						["sourceQuests"] = { 42054 },	-- Call of the Wilds
-						["g"] = {
+						["groups"] = {
 							i(139723),	-- Robes of the Dreamgrove
 							title(327),	-- Archdruid <Name>
 						},
@@ -676,32 +700,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 56.2, 32.0, MOONGLADE },
 					}),
 					q(42432, {	-- The Emerald Nightmare: The Emerald Nightmare
+						["sourceQuests"] = { 42056 },	-- Champion: Remulos
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42056 },	-- Champion: Remulos
 					}),
 					q(42430, {	-- The Fangs of Ashamane
 						["sourceQuests"] = { 42440 },	-- The Shrine in Peril
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
 						["coord"] = { 73.8, 38.4, VALSHARAH },
-						["g"] = {
+						["groups"] = {
 							i(128860, {	-- Fangs of Ashamane
-								artifact(426, {	-- Standard Troll
-									["displayID"] = 66779,	-- Rainbow Druid Form
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(427, {	-- Standard Tauren
-									["displayID"] = 66777,	-- Brown Druid Form
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(428, {	-- Standard Worgen / Kultiran
-									["displayID"] = 66778,	-- Light Brown Form
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(430, {	-- Standard Night Elf
-									["displayID"] = 66780,	-- Purple Druid Form
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(426, {	-- Standard Troll
+										["displayID"] = 66779,	-- Rainbow Druid Form
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(427, {	-- Standard Tauren
+										["displayID"] = 66777,	-- Brown Druid Form
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(428, {	-- Standard Worgen / Kultiran
+										["displayID"] = 66778,	-- Light Brown Form
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(430, {	-- Standard Night Elf
+										["displayID"] = 66780,	-- Purple Druid Form
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),
@@ -711,30 +738,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
 					}),
 					q(44232, {	-- The Grove Provides
-					--	this is now available to level 45 characters (was previously 110).  unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
+					--	this is now available to level 45 characters (was previously 110). unsure if it has any specific SQs or if it's just "hey, congratulations for hitting this level!"
 					--	["sourceQuests"] = { },	--
 						["provider"] = { "n", 112323 },	-- Amurra Thistledew
 						["coord"] = { 40.0, 24.8, THE_DREAMGROVE },
-						["g"] = {
+						["groups"] = {
 							i(139726),	-- Hood of the Dreamgrove
 						},
 					}),
 					q(42129, {	-- The Pendant of Starlight
+						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 						["provider"] = { "n", 98008 },	-- Brightwing
 						["coord"] = { 39.6, 45.5, 715 },
-						["sourceQuests"] = { 42045 },	-- Communing with Malorne
 					}),
 					q(46674, {	-- The Preservation of Nature
+						["sourceQuests"] = { 45426 },	-- Nature's Advance
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.6, 51.8, THE_DREAMGROVE },
-						["sourceQuests"] = { 45426 },	-- Nature's Advance
 					}),
 					q(43991, {	-- The Protectors
-						["lvl"] = 103,
+						["description"] = "Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",
+						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.6, 50.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42036 },	-- Idol of the Wilds
-						["description"] = "Feral stone: Shapeshift into cat form and use Prowl.\nRestoration stone: Heal the sampling infront of the stone.\nBalance stone: Target the candles and use Moonfire.\nGuardian stone: Just be a Bear.",
+						["lvl"] = 103,
 					}),
 					q(40783, {	-- The Scythe of Elune
 						["provider"] = { "n", 103778 },	-- Naralex
@@ -766,23 +793,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 50.5, 37.6, GRIZZLY_HILLS },
 					}),
 					q(42053, {	-- The War of Ancients
+						["sourceQuests"] = { 42050 },	-- Defenders of the Dream
 						["provider"] = { "n", 107132 },	-- Keeper Remulos
 						["coord"] = { 61.4, 65.6, 760 },
-						["sourceQuests"] = { 42050 },	-- Defenders of the Dream
 					}),
 					q(42040, {	-- The Way to Nordrassil
+						["sourceQuests"] = { 42037 },	-- Gathering the Dreamweavers
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
 						["coord"] = { 44.6, 50.0, THE_DREAMGROVE },
-						["sourceQuests"] = { 42037 },	-- Gathering the Dreamweavers
 					}),
 					q(46924, {	-- The Wolf's Tale
-						["providers"] = {
-							{ "n", 120032 },	-- Thisalee Crow
-							{ "n", 120041 },	-- Druid of the Talon
-						},
 						["sourceQuests"] = {
 							45498,	-- Let Sleeping Dogs Lie
 							45528,	-- The Befouled Barrows
+						},
+						["qgs"] = {
+							120032,	-- Thisalee Crow
+							120041,	-- Druid of the Talon
 						},
 						["maps"] = { MOONGLADE },
 					}),
@@ -792,23 +819,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 66.8, 60.4, MOONGLADE },
 					}),
 					q(41782, {	-- To The Hills
+						["sourceQuests"] = { 41468 },	-- Mistress of the Claw
 						["provider"] = { "n", 101259 },	-- Lea Stonepaw
 						["coord"] = { 39.2, 18.7, THE_DREAMGROVE },
-						["sourceQuests"] = { 41468 },	-- Mistress of the Claw
 					}),
 					q(46675, {	-- To Track a Demon
-						["providers"] = {
-							{ "n", 120070 },	-- Thisalee Crow
-							{ "n", 120084 },	-- Druid of the Talon
+						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
+						["qgs"] = {
+							120070,	-- Thisalee Crow
+							120084,	-- Druid of the Talon
 						},
 						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
-						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
+						["groups"] = {
+							i(147282),	-- Impsorrow Missive (QI!)
+						},
 					}),
 					q(42035, {	-- Tracking the Enemy
-						["lvl"] = 103,
+						["sourceQuests"] = { 42034 },	-- Grip of Nightmare
 						["provider"] = { "n", 105948 },	-- Sylendra Gladesong
 						["coord"] = { 56.8, 71.5, VALSHARAH },
-						["sourceQuests"] = { 42034 },	-- Grip of Nightmare
+						["lvl"] = 103,
 					}),
 					q(40646, {	-- Weapons of Legend
 						["sourceQuests"] = { 40644 },	--	To The Dreamgrove
@@ -827,20 +857,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["maps"] = {
 							757,	-- Ursoc's Lair
 						},
-						["g"] = {
+						["groups"] = {
 							i(128821, {	-- Claws of Ursoc
-								artifact(265, {	-- Standard Troll
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(264, {	-- Standard Tauren
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(266, {	-- Standard Worgen / Kultiran
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(121, {	-- Standard Night Elf
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(265, {	-- Standard Troll
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(264, {	-- Standard Tauren
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(266, {	-- Standard Worgen / Kultiran
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(121, {	-- Standard Night Elf
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),
@@ -866,7 +899,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(46319, {	-- You Can't Take the Sky from Me
 						["sourceQuests"] = { 46318 },	-- Defense of Aviana
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
-						["g"] = {
+						["groups"] = {
 							mount(231437),	-- Archdruid's Lunarwing Form (MOUNT!)
 							mount(241857),	-- Archdruid's Lunarwing Form (MOUNT!)
 						},
@@ -875,10 +908,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 
 					q(44237),	-- Ancients of War
 					q(41412, {	-- The Retreat
-						-- TODO: triggered "Right after completing Light's Charge and picking up Goddess Watch Over You"
-						-- maybe more info? is this actually an HQT instead?
 						["sourceQuests"] = { 44153 },	-- Light's Charge
 						["coord"] = { 60.0, 52.4, THE_DREAMGROVE },
+						-- TODO: triggered "Right after completing Light's Charge and picking up Goddess Watch Over You"
+						-- maybe more info? is this actually an HQT instead?
 					}),
 					q(41413),	-- What Could Go Wrong?
 
@@ -904,17 +937,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					--]]
 				}),
 				n(98000, {	-- Scouting Map
-					["g"] = {
+					["groups"] = {
 						i(139420),	-- Wild Mushroom
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.25,
 				}),
+				n(TREASURES, {
+					o_repeated({	-- Spirit Berries
+						["coord"] = { 45.6, 63.7, THE_DREAMGROVE },
+						["groups"] = {
+							o(253157),	-- Spirit Berries
+							o(253183),	-- Spirit Berries
+							i(140347),	-- Spirit Berries
+							i(140351),	-- Sunfruit
+						},
+					}),
+				}),
 				n(VENDORS, {
 					n(112323, {	-- Amurra Thistledew <Proprietor>
 						["coord"] = { 40.0, 24.8, THE_DREAMGROVE },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(139728, {	-- Amice of the Dreamgrove
 								["cost"] = 5000000,	-- 500g
 							}),
@@ -961,7 +1005,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				m(715, bubbleDown({["classes"] = { DRUID }},{	-- Emerald Dreamway
 					["icon"] = 135745,	-- Dream Portal Icon
-					["g"] = {
+					["groups"] = {
 						n(DAILY_DREAMWAY_EVENT_ROLL, {
 							["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
 							["isDaily"] = true,
@@ -1058,7 +1102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 44328 },	-- Owlcat Stone Activate [Hinterlands]
 						}),
 						n(113663, {	-- Ela'lothen <The Moonspirit>
-							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a description added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
+							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing. Each quest has a description added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. In cat form, type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
 							["sourceQuests"] = { 44330, 44331, 44332 },
 							["groups"] = {
 								i(139552, {	-- Feather of the Moonspirit

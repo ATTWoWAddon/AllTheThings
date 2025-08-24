@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2095,	-- Infusion Chambers
 			2094,	-- Ruby Overlook
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(66119, {	-- Defend the Life Pools!
 					["sourceQuests"] = { 66118 },	-- Basalt Assault
@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
-					["g"] = {
+					["groups"] = {
 						i(193761),	-- Chillworn's Infusion Staff
 						i(193759),	-- Egg Tender's Leggings
 						i(193757),	-- Ruby Whelp Shell
@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2485, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
-					["g"] = {
+					["groups"] = {
 						i(193762),	-- Blazebinder's Hoof
 						i(193765),	-- Blazebound Lieutenant's Helm
 						i(193763),	-- Fireproof Drape of Cinders
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein
 					},
-					["g"] = {
+					["groups"] = {
 						ach(16266),	-- Ruby Life Pools
 						i(193755),	-- Backdraft Cleaver
 						i(193753),	-- Breastplate of Soaring Terror
@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein
 					},
-					["g"] = {
+					["groups"] = {
 						ach(16267),	-- Heroic: Ruby Life Pools
 					},
 				}),
@@ -74,13 +74,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2488, {	-- Melidrussa Chillworn
 					["crs"] = { 188252 },	-- Melidrussa Chillworn
-					["g"] = {
+					["groups"] = {
 						ach(16402),	-- Dragon Kill Points
 					},
 				}),
 				e(2485, {	-- Kokia Blazehoof
 					["crs"] = { 189232 },	-- Kokia Blazehoof
-					["g"] = {
+					["groups"] = {
 						ach(16320),	-- Does Steam Do Fire Damage?
 					},
 				}),
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						190484,	-- Kyrakka
 						190485,	-- Erkhart Stormvein
 					},
-					["g"] = {
+					["groups"] = {
 						ach(16268),	-- Mythic: Ruby Life Pools
 						ach(17100),	-- Mythic: Ruby Life Pools Guild Run
 						ach(16440),	-- Are You My Broodmother?

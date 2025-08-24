@@ -1,160 +1,117 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
+------ Encounter Constants ------
+local ROCKET_BORKA = 1138
+local NITROGG = 1163
+local TOVRA = 1133
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[ROCKET_BORKA] = {
+		77816,	-- Borka the Brute
+		77803,	-- Railmaster Rocketspark
+	},
+	[NITROGG] = {
+		79545,	-- Nitrogg Thundertower
+		79548,	-- Assault Cannon
+	},
+	[TOVRA] = { 80005 },	-- Skylord Tovra
+}
+
+------ EncounterToLoot ------
+local EncounterToLoot = {
+	[ROCKET_BORKA] = {
+		i(110051),	-- Overseer's Final Word
+	},
+	[NITROGG] = {
+		i(110052),	-- Scepter of Brutality
+		i(109996),	-- Thundertower's Targeting Reticle
+	},
+	[TOVRA] = {
+		i(110054),	-- Thunderlord Flamestaff
+		i(110053),	-- Arrowbreaker Greatshield
+		i(110001),	-- Tovra's Lightning Repository
+	},
+}
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+}
+
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, BossWithHeader =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.BossWithHeader
+
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(536, {	-- Grimrail Depot
 		["coord"] = { 55.0, 31.3, GORGROND },
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
-		["g"] = {
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(1138, {	-- Rocketspark and Borka
-					["crs"] = {
-						77816,	-- Borka the Brute
-						77803,	-- Railmaster Rocketspark
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, WAIST},
-						{"sub", "common_wod_dungeon_drop", 1, FINGER},
-					},
-					["g"] = {
-						i(110051),	-- Overseer's Final Word
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110051),	-- Overseer's Final Word
-						})),
-					},
-				}),
-				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = {
-						79548,	-- Assault Cannon
-						79545,	-- Nitrogg Thundertower
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, NECK},
-						{"sub", "common_wod_dungeon_drop", 1, CHEST},
-					},
-					["g"] = {
-						i(110052),	-- Scepter of Brutality
-						i(109996),	-- Thundertower's Targeting Reticle
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110052),	-- Scepter of Brutality
-							i(109996),	-- Thundertower's Targeting Reticle
-						})),
-					},
-				}),
-				e(1133, {	-- Skylord Tovra
-					["crs"] = { 80005 },	-- Skylord Tovra
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 1, WRIST},
-						{"sub", "common_wod_dungeon_drop", 1, HANDS},
-						{"sub", "common_wod_dungeon_drop", 1, LEGS},
-					},
-					["g"] = {
-						ach(9043),	-- Grimrail Depot
-						i(110054),	-- Thunderlord Flamestaff
-						i(110053),	-- Arrowbreaker Greatshield
-						i(110001),	-- Tovra's Lightning Repository
-						n(WARFORGED, bubbleDown({["bonusID"] = 4746 }, {
-							i(110054),	-- Thunderlord Flamestaff
-							i(110053),	-- Arrowbreaker Greatshield
-							i(110001),	-- Tovra's Lightning Repository
-						})),
-					},
+		["groups"] = {
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
+				BossOnly(ROCKET_BORKA),
+				BossOnly(NITROGG),
+				BossOnly(TOVRA, {
+					ach(9043),	-- Grimrail Depot
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(1138, {	-- Rocketspark and Borka
-					["crs"] = {
-						77816,	-- Borka the Brute
-						77803,	-- Railmaster Rocketspark
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, WAIST},
-						{"sub", "common_wod_dungeon_drop", 2, FINGER},
-					},
-					["g"] = {
-						ach(9024, {	-- This Is Why We Can't Have Nice Things
-							["crs"] = { 81834 },	-- Priceless Paraphernalia
-						}),
-						i(110051),	-- Overseer's Final Word
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({
+				Boss(ROCKET_BORKA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WAIST, FINGER),
 				}),
-				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = {
-						79548,	-- Assault Cannon
-						79545,	-- Nitrogg Thundertower
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, NECK},
-						{"sub", "common_wod_dungeon_drop", 2, CHEST},
-					},
-					["g"] = {
-						ach(9007, {	-- No Ticket
-							["crs"] = { 80936 },	-- Grom'kar Grenadier
-						}),
-						i(110052),	-- Scepter of Brutality
-						i(109996),	-- Thundertower's Targeting Reticle
-					},
+				Boss(NITROGG, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, CHEST, NECK),
 				}),
-				e(1133, {	-- Skylord Tovra
-					["crs"] = { 80005 },	-- Skylord Tovra
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 2, WRIST},
-						{"sub", "common_wod_dungeon_drop", 2, HANDS},
-						{"sub", "common_wod_dungeon_drop", 2, LEGS},
-					},
-					["g"] = {
-						ach(9052),	-- Heroic: Grimrail Depot
-						ach(9373),	-- Heroic: Grimrail Depot Guild Run
-						i(110054),	-- Thunderlord Flamestaff
-						i(110053),	-- Arrowbreaker Greatshield
-						i(110001),	-- Tovra's Lightning Repository
-						un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
-					},
+				Boss(TOVRA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL_MYTHIC, WRIST, HANDS, LEGS),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1138, {	-- Rocketspark and Borka
-					["crs"] = {
-						77816,	-- Borka the Brute
-						77803,	-- Railmaster Rocketspark
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						i(110051),	-- Overseer's Final Word
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossWithHeader(ROCKET_BORKA, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WAIST, FINGER),
 				}),
-				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = {
-						79548,	-- Assault Cannon
-						79545,	-- Nitrogg Thundertower
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-					},
-					["g"] = {
-						i(110052),	-- Scepter of Brutality
-						i(109996),	-- Thundertower's Targeting Reticle
-					},
+				BossWithHeader(NITROGG, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, CHEST, NECK),
 				}),
-				e(1133, {	-- Skylord Tovra
-					["crs"] = { 80005 },	-- Skylord Tovra
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						ach(10082),	-- Mythic: Grimrail Depot
-						i(110054),	-- Thunderlord Flamestaff
-						i(110053),	-- Arrowbreaker Greatshield
-						i(110001),	-- Tovra's Lightning Repository
-						un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
-					},
+				BossWithHeader(TOVRA, HEADER_WARFORGED, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.NORMAL, WRIST, HANDS, LEGS),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(ROCKET_BORKA, {
+					ach(9024, {	-- This Is Why We Can't Have Nice Things
+						["crs"] = { 81834 },	-- Priceless Paraphernalia
+					}),
+				}),
+				BossOnly(NITROGG, {
+					ach(9007, {	-- No Ticket
+						["crs"] = { 80936 },	-- Grom'kar Grenadier
+					}),
+				}),
+				BossOnly(TOVRA, {
+					ach(9052),	-- Heroic: Grimrail Depot
+					ach(9373),	-- Heroic: Grimrail Depot Guild Run
+					un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				Boss(ROCKET_BORKA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WAIST, FINGER),
+				}),
+				Boss(NITROGG, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, CHEST, NECK),
+				}),
+				Boss(TOVRA, {
+					["sym"] = SYM_WOD_COMMON_DUNGEON_SLOTS(DIFFICULTY.DUNGEON.HEROIC, WRIST, HANDS, LEGS),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
+				BossOnly(ROCKET_BORKA),
+				BossOnly(NITROGG),
+				BossOnly(TOVRA, {
+					ach(10082),	-- Mythic: Grimrail Depot
 				}),
 			}),
 		},

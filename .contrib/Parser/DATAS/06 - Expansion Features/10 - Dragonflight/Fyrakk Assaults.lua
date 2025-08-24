@@ -10,6 +10,7 @@ FYRAKK_ASSAULTS = createHeader({
 		de = "Angriffe von Fyrakk",
 		fr = "Assauts de Fyrakk",
 		it = "Assalti di Fyrakk",
+		mx = "Asaltos de Fyrakk",
 		pt = "Ofensivas de Fyrakk",
 		ru = "Налеты Фиракка",
 		ko = "피락의 습격",
@@ -24,7 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			OHNAHRAN_PLAINS,
 			THE_AZURE_SPAN,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(17506),	-- Still Standing in the Fire
 				ach(17735),	-- We Didn't Start the Fire
@@ -34,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					201673,	-- Kretchenwrath
 					203411,	-- Shadeisethal
 				},
-				["g"] = {
+				["groups"] = {
 					filter(BATTLE_PETS, {
 						i(205003),	-- Ambre (PET!)
 						i(205002),	-- Blaise (PET!)
@@ -54,20 +55,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 49.2, 55.8, VALDRAKKEN },
 						{ 55.6, 55.0, ZARALEK_CAVERN },
 					},
-					["isWeekly"] = IGNORED_VALUE,
 					["isBreadcrumb"] = true,
+					["isWeekly"] = IGNORED_VALUE,
 				}),
 				q(75888, {	-- Suffusion Camp
 					["sourceQuest"] = 75887,	-- Fyrakk's Forces
-					["providers"] = {
-						{ "n", 201648 },	-- Somnikus
-						{ "n", 203520 },	-- Stellagosa
+					["qgs"] = {
+						201648,	-- Somnikus
+						203520,	-- Stellagosa
 					},
 					["coords"] = {
 						{ 75.2, 69.2, OHNAHRAN_PLAINS },
 						{ 58.0, 34.6, THE_AZURE_SPAN },
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18867, {	-- Through the Ashes and Flames
 							["timeline"] = { ADDED_10_1_7 },
 						}),
@@ -81,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(74570, {	-- Aid Our Wounded
 					["provider"] = { "n", 201861 },	-- Tigari Khan
 					["coord"] = { 75.6, 69.1, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(203731),	-- Enchanted Bandage
 					},
 				}),
@@ -96,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(74569, {	-- Deny Them Resources
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(204699),	-- Suffused Ingots (QI!)
 					},
 				}),
@@ -140,7 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
-					["group"] = {
+					["groups"] = {
 						i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
 						}),
 					},
@@ -176,12 +177,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			})),
 			n(RARES, sharedData({ ["isWeekly"] = true }, {
 				n(201673, {	-- Kretchenwrath
-					["g"] = {
+					["groups"] = {
 						i(204071),	-- Head of Kretchenwrath
 					},
 				}),
 				n(203411, {	-- Shadeisethal
-					["g"] = {
+					["groups"] = {
 						i(204683),	-- Head of Shadeisethal
 					},
 				}),
@@ -284,7 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				o_repeated({	-- Secured Shipment
 					["cost"] = { { "i", 203710, 3 } },	-- 3x Everburning Key
 					["sym"] = {{"select","headerID",FYRAKK_ASSAULTS},{"pop"},{"where","headerID",EVENT_COMPLETION},{"pop"}},	-- add Fyrakk Assault Rewards
-					["g"] = {
+					["groups"] = {
 						-- Rewards
 						filter(BATTLE_PETS, {
 							i(205003),	-- Ambre (PET!)
@@ -314,7 +315,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ 74.3, 72.2, OHNAHRAN_PLAINS },
 						{ 55.4, 35.2, THE_AZURE_SPAN },
 					},
-					["g"] = {
+					["groups"] = {
 						n(203709, {	-- Forgemaster Algrin
 							i(203710),	-- Everburning Key
 						}),

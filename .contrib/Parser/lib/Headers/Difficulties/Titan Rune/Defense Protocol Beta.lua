@@ -7,6 +7,7 @@ DEFENSE_PROTOCOL_BETA = createHeader({
 		de = "Verteidigungsprotokoll Beta",
 		fr = "Protocole de défense Bêta",
 		-- it = "[Defense Protocol Beta]",
+		mx = "Protocolo de defensa Beta",
 		pt = "Protocolo de Defesa Beta",
 		ru = "Защитный протокол \"Бета\"",
 		ko = "방어 프로토콜 베타",

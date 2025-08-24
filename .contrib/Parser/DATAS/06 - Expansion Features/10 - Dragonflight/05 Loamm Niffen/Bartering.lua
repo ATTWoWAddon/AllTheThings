@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(ACHIEVEMENTS, {
 				ach(17841, {	-- Pyramid Scheme
 					["provider"] = { "i", 205421 },	-- Ponzo's Scheming Topper
-					["g"] = {
+					["groups"] = {
 						title(502),	-- <Name>, Barter Boss
 					},
 				}),
@@ -44,65 +44,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["isWeekly"] = true,
 			}, {
 				q(75286, {	-- Blacksmith's Back
+					["altQuests"] = { 75288, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 191304, 10 },	-- 10x Sturdy Expedition Shovel
 					},
-					["altQuests"] = { 75288, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75288, {	-- Enchanted Tales with Topuiz
+					["altQuests"] = { 75286, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 200034, 5 },		-- 5x Enchant Cloak - Writ of Avoidance+++
 						{ "i", 200035, 5 },		-- 5x Enchant Cloak - Writ of Leech+++
 						{ "i", 200036, 5 },		-- 5x Enchant Cloak - Writ of Speed+++
 					},
-					["altQuests"] = { 75286, 75304, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75304, {	-- I Need... a Tailor
+					["altQuests"] = { 75286, 75288, 75289, 75309, 75351, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 193930, 75 },	-- 75x Vibrant Wildercloth Bolt++
 					},
-					["altQuests"] = { 75286, 75288, 75289, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75289, {	-- Ink Master
+					["altQuests"] = { 75286, 75288, 75304, 75309, 75351, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 198423, 30 },	-- 30x Shimmering Pigment+++
 						{ "i", 194767, 15 },	-- 15x Chilled Rune++
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75309, 75351, 75301, 75307, 75308 },
 				}),
 				q(75309, {	-- If a Gem Isn't Pretty
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75351, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 192855, 5 },		-- 5x Alexstraszite+++
 						{ "i", 193370, 50 },	-- 50x Silken Gemdust+++
 						{ "i", 192861, 5 },		-- 5x Ysemerald+++
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75289, 75351, 75301, 75307, 75308 },
 				}),
 				q(75351, {	-- Keep a Leather Eye Open
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75301, 75307, 75308 },
 					["cost"] = {
 						{ "i", 193470, 10 },	-- 10x Feral Hide Drums
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75301, 75307, 75308 },
 				}),
 				q(75301, {	-- Mistie's Mix Magic
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75307, 75308 },
 					["cost"] = {
 						{ "i", 191386, 50 },	-- 50x Aerated Mana Potion+++
 						{ "i", 191497, 15 },	-- 15x Omnium Draconis++
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75307, 75308 },
 				}),
 				q(75307, {	-- Road to Season City
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75308 },
 					["cost"] = {
 						{ "i", 197793, 40 },	-- 40x Yusa's Hearty Stew
 						{ "i", 197794, 5 },		-- 5x Grand Banquet of the Kalu'ak
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75308 },
 				}),
 				q(75308, {	-- Scrybbil Engineering
+					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
 					["cost"] = {
 						{ "i", 198225, 2 },		-- 2x Draconium Fisherfriend
 					},
-					["altQuests"] = { 75286, 75288, 75304, 75289, 75309, 75351, 75301, 75307 },
 				}),
 			})),
 			n(REWARDS, {
@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(VENDORS, {
 				n(203172, {	-- Dustmonger Topuiz
 					["coord"] = { 55.9, 56.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204978, {	-- Formula: Enchant Weapon - Spore Tender (RECIPE!)
 							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203612, {	-- Fanilly
 					["coord"] = { 56.7, 55.3, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205174, {	-- Design: B.B.F. Fist (RECIPE!)
 							["cost"] = {{"i", VOUCHER, 1}},
 						}),
@@ -152,7 +152,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203644, {	-- Garram
 					["coord"] = { 57.3, 55.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204970, {	-- Pattern: Adaptive Dracothyst Armguards (RECIPE!)
 							["cost"] = {{"i", VOUCHER, 1}},
 						}),
@@ -166,7 +166,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203170, {	-- Kilnmaster Crubus
 					["coord"] = { 57.1, 55.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205137, {	-- Plans: Shadowed Alloy (RECIPE!)
 							["cost"] = {{"i", PONZOS_CREAM, 1}},
 						}),
@@ -178,7 +178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203607, {	-- Mistie
 					["coord"] = { 56.0, 56.5, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204984, {	-- Recipe: Stinky Bright Potion (RECIPE!)
 							["cost"] = {{"i", VOUCHER, 1}},
 						}),
@@ -189,7 +189,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203609, {	-- Phiary <Cooking>
 					["coord"] = { 56.9, 56.3, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205690, {	-- Barter-B-Q
 							["cost"] = BarterCost(5, 1),
 						}),
@@ -197,7 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(204693, {	-- Ponzo
 					["coord"] = { 58.1, 53.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(BARTER_BOULDER, {
 							["cost"] = {{"i", BARTER_BRICK, 3 }},
 						}),
@@ -232,113 +232,91 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["cost"] = BarterCost(170, 85),
 						}),
 						-- Professions
-						i(205440, {	-- Bartered Alchemy Journal
-							["questID"] = 75848,
+						i(205440, {	-- Bartered Alchemy Journal (CI!)
 							["requireSkill"] = ALCHEMY,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205439, {	-- Bartered Blacksmithing Journal
-							["questID"] = 75849,
+						i(205439, {	-- Bartered Blacksmithing Journal (CI!)
 							["requireSkill"] = BLACKSMITHING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205438, {	-- Bartered Enchanting Journal
-							["questID"] = 75850,
+						i(205438, {	-- Bartered Enchanting Journal (CI!)
 							["requireSkill"] = ENCHANTING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205436, {	-- Bartered Engineering Journal
-							["questID"] = 75851,
+						i(205436, {	-- Bartered Engineering Journal (CI!)
 							["requireSkill"] = ENGINEERING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205445, {	-- Bartered Herbalism Journal
-							["questID"] = 75852,
+						i(205445, {	-- Bartered Herbalism Journal (CI!)
 							["requireSkill"] = HERBALISM,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205441, {	-- Bartered Inscription Journal
-							["questID"] = 75853,
+						i(205441, {	-- Bartered Inscription Journal (CI!)
 							["requireSkill"] = INSCRIPTION,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205435, {	-- Bartered Jewelcrafting Journal
-							["questID"] = 75854,
+						i(205435, {	-- Bartered Jewelcrafting Journal (CI!)
 							["requireSkill"] = JEWELCRAFTING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205437, {	-- Bartered Leatherworking Journal
-							["questID"] = 75855,
+						i(205437, {	-- Bartered Leatherworking Journal (CI!)
 							["requireSkill"] = LEATHERWORKING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205443, {	-- Bartered Mining Journal
-							["questID"] = 75856,
+						i(205443, {	-- Bartered Mining Journal (CI!)
 							["requireSkill"] = MINING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205444, {	-- Bartered Skinning Journal
-							["questID"] = 75857,
+						i(205444, {	-- Bartered Skinning Journal (CI!)
 							["requireSkill"] = SKINNING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205442, {	-- Bartered Tailoring Journal
-							["questID"] = 75858,
+						i(205442, {	-- Bartered Tailoring Journal (CI!)
 							["requireSkill"] = TAILORING,
 							["cost"] = BarterCost(90, 40),
 						}),
-						i(205429, {	-- Bartered Alchemy Notes
-							["questID"] = 75847,
+						i(205429, {	-- Bartered Alchemy Notes (CI!)
 							["requireSkill"] = ALCHEMY,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205428, {	-- Bartered Blacksmithing Notes
-							["questID"] = 75846,
+						i(205428, {	-- Bartered Blacksmithing Notes (CI!)
 							["requireSkill"] = BLACKSMITHING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205427, {	-- Bartered Enchanting Notes
-							["questID"] = 75845,
+						i(205427, {	-- Bartered Enchanting Notes (CI!)
 							["requireSkill"] = ENCHANTING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205425, {	-- Bartered Engineering Notes
-							["questID"] = 75844,
+						i(205425, {	-- Bartered Engineering Notes (CI!)
 							["requireSkill"] = ENGINEERING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205434, {	-- Bartered Herbalism Notes
-							["questID"] = 75843,
+						i(205434, {	-- Bartered Herbalism Notes (CI!)
 							["requireSkill"] = HERBALISM,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205430, {	-- Bartered Inscription Notes
-							["questID"] = 75842,
+						i(205430, {	-- Bartered Inscription Notes (CI!)
 							["requireSkill"] = INSCRIPTION,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205424, {	-- Bartered Jewelcrafting Notes
-							["questID"] = 75841,
+						i(205424, {	-- Bartered Jewelcrafting Notes (CI!)
 							["requireSkill"] = JEWELCRAFTING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205426, {	-- Bartered Leatherworking Notes
-							["questID"] = 75840,
+						i(205426, {	-- Bartered Leatherworking Notes (CI!)
 							["requireSkill"] = LEATHERWORKING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205432, {	-- Bartered Mining Notes
-							["questID"] = 75839,
+						i(205432, {	-- Bartered Mining Notes (CI!)
 							["requireSkill"] = MINING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205433, {	-- Bartered Skinning Notes
-							["questID"] = 75838,
+						i(205433, {	-- Bartered Skinning Notes (CI!)
 							["requireSkill"] = SKINNING,
 							["cost"] = BarterCost(35, 25),
 						}),
-						i(205431, {	-- Bartered Tailoring Notes
-							["questID"] = 75837,
+						i(205431, {	-- Bartered Tailoring Notes (CI!)
 							["requireSkill"] = TAILORING,
 							["cost"] = BarterCost(35, 25),
 						}),
@@ -351,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203608, {	-- Rossmar
 					["coord"] = { 56.1, 56.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205138, {	-- Pattern: Medical Wrap Kit (RECIPE!)
 							["cost"] = { { "i", VOUCHER, 1 } }
 						}),
@@ -362,7 +340,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203171, {	-- Scridorsa the Chiseler
 					["coord"] = { 55.8, 55.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205136, {	-- Technique: Contract: Loamm Niffen (RECIPE!)
 							["cost"] = {{"i", VOUCHER, 1}},
 						}),
@@ -388,7 +366,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				n(203610, {	-- Scrybbil
 					["coord"] = { 55.8, 55.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205178, {	-- Schematic: Mallard Mortar (RECIPE!)
 							["cost"] = {{"i", VOUCHER, 1}},
 						}),

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 	inst(959, {	-- Invasion Points
 		["isRaid"] = true,
 		-- ["sourceQuests"] = { },	-- TODO pretty sure a quest is required to unlock these
@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			-- TODO more coords for possible spawns
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(12028, {	-- Envision Invasion Eradication
 					-- TODO: instead of maps on entire achieve, have coords/maps on each criteria as needed
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						125863,	-- Invasion Point: Sangua
 						126499,	-- Invasion Point: Val
 					},
-					["g"] = {
+					["groups"] = {
 						crit(37456, {	-- Mazgoroth
 							["crs"] = { 125137 },	-- Mazgoroth
 						}),
@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -157,7 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
 					i(152363),	-- Fel-Spike Shoulderpads
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152371),	-- Shoulderguards of Despondent Masses
 					i(152378),	-- Breastplate of Terminal End
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152369),	-- Helm of the Vigilant Eye
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152379),	-- Spaulders of Vile Determination
 					i(152366),	-- Enthralling Chain Armor
@@ -291,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152376),	-- Crown of Burning Resolve
 					i(152363),	-- Fel-Spike Shoulderpads
 					i(152378),	-- Breastplate of Terminal End
@@ -308,9 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(48982, {	-- Invasion Point: Aurinor
-				["crs"] = { 125849 },	-- Invasion Point: Aurinor
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
 					KROKUUN,
@@ -322,15 +320,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 125849 },	-- Invasion Point: Aurinor
+				["groups"] = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
 					i(153261),	-- Forlorn Artificer's Hammer
 				},
 			}),
 			q(49099, {	-- Invasion Point: Bonich
-				["crs"] = { 126547 },	-- Invasion Point: Bonich
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					922,	-- Invasion Point: Bonich
 					KROKUUN,
@@ -342,15 +340,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 126547 },	-- Invasion Point: Bonich
+				["groups"] = {
 					i(153320),	-- Ardent Vindicator's Demolisher
 					i(153295),	-- Spectral Consul's Quickblade
 				},
 			}),
 			q(49098, {	-- Invasion Point: Cen'gar
-				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					923,	-- Invasion Point: Cen'gar
 					KROKUUN,
@@ -362,15 +360,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
+				["groups"] = {
 					i(153262),	-- Forlorn Artificer's Gavel
 					i(153300),	-- Militant Exarch's Saber
 				},
 			}),
 			q(49096, {	-- Invasion Point: Naigtal
-				["crs"] = { 126593 },	-- Invasion Point: Naigtal
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					924,	-- Invasion Point: Naigtal
 					KROKUUN,
@@ -382,15 +380,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 126593 },	-- Invasion Point: Naigtal
+				["groups"] = {
 					i(153264),	-- Enclave Aspirant's Splitter
 					i(153301),	-- Militant Exarch's Slicer
 				},
 			}),
 			q(49097, {	-- Invasion Point: Sangua
-				["crs"] = { 125863 },	-- Invasion Point: Sangua
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					925,	-- Invasion Point: Sangua
 					KROKUUN,
@@ -402,15 +400,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 125863 },	-- Invasion Point: Sangua
+				["groups"] = {
 					i(153307),	-- Oronaar Miner's Pickaxe
 					i(153297),	-- Spectral Consul's Broadsword
 				},
 			}),
 			q(49091, {	-- Invasion Point: Val
-				["crs"] = { 126499 },	-- Invasion Point: Val
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					926,	-- Invasion Point: Val
 					KROKUUN,
@@ -422,14 +420,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["repeatable"] = true,
+				["crs"] = { 126499 },	-- Invasion Point: Val
+				["groups"] = {
 					i(153258),	-- Forlorn Artificer's Mace
 					i(153254),	-- Isolon Anchorite's Mace
 				},
 			}),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
 	inst(959, {

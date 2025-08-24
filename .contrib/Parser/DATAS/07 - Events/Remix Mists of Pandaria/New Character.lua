@@ -117,7 +117,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
-		q(80504),   -- triggers a bit after character was created for wow remix (druid, ne) (spellID - 441562 / [DNT] Flag Quest) / Same for Braghe / Same for Myrhial
+		q(80504),	-- triggers a bit after character was created for wow remix (druid, ne) (spellID - 441562 / [DNT] Flag Quest) / Same for Braghe / Same for Myrhial
 		q(79439),	-- Triggers after 79438 (Goodbyes Are Hard When You Live Forever) and mop intro cinematic (spellID - 433399 / [DNT] Tutorial Complete)
 		q(80318),	-- Triggers after 31732 (Unleash Hell) (A) / 31765 Paint it Red! (H)
 		q(80451),	-- Extract Gem Override (spellID 436522)

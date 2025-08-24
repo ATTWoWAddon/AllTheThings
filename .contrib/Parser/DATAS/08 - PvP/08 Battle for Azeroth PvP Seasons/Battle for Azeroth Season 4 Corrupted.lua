@@ -59,7 +59,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
-					["g"] = {
+					["groups"] = {
 						filter(CLOTH, {
 							honor(700, i(172837)),	-- Corrupted Aspirant's Silk Cord [A]
 							honor(525, i(172840)),	-- Corrupted Aspirant's Silk Cuffs [A]
@@ -139,7 +139,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = {
+					["groups"] = {
 						moh(80, iensemble(184680)),	-- Arsenal: Corrupted Aspirant's Weapons [A]
 					},
 				}),
@@ -221,7 +221,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(175050, {	-- Aneka Melae
 					["coord"] = { 37.5, 71.4, ORGRIMMAR },
-					["g"] = {
+					["groups"] = {
 						filter(CLOTH, {
 							honor(700, i(172787)),	-- Corrupted Aspirant's Silk Cord [H]
 							honor(525, i(172786)),	-- Corrupted Aspirant's Silk Cuffs [H]
@@ -301,7 +301,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						moh(80, iensemble(184681)),	-- Arsenal: Corrupted Aspirant's Weapons [H]
 					},
 				}),
@@ -397,7 +397,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184678, {	-- Arsenal: Corrupted Gladiator's Weapons [A]
 							["cost"] = {{"i", MOH, 80}},
 						}),
@@ -538,7 +538,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184679, {	-- Arsenal: Corrupted Gladiator's Weapons [H]
 							["cost"] = {{"i", MOH, 80}},
 						}),

@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72978 },	-- Scar of Earth and Fire
 					["provider"] = { "n", 202788 },	-- Khasar
 					["coord"] = { 86.9, 27.2, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(204461),	-- Shalkeel's Remembrance
 					},
 				}),
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 200085 },	-- Sabellian
 					["coord"] = { 87.4, 27.5, OHNAHRAN_PLAINS },
 					["maps"] = { 2165 },	-- The Throughway (Scenario Map)
-					["g"] = {
+					["groups"] = {
 						i(204389),	-- Stone Breaker (TOY!)
 					},
 				}),
@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["provider"] = { "n", 201587 },	-- Elder Honeypelt
 					["coord"] = { 60.2, 37.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204604),	-- Bequeathed Bracers
 						i(204612),	-- Bestowed Vambraces
 						i(204588),	-- Endowed Bindings
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72973 },	-- Smells Like Loamm
 					["provider"] = { "n", 200054 },	-- Elder Honeypelt
 					["coord"] = { 57.0, 55.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204457),	-- Almost Immovable Wall
 						i(204449),	-- Black Earth Glaive
 						i(204453),	-- Black Dragon's Reach
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["provider"] = { "n", 200052 },	-- Aurantia
 					["coord"] = { 54.6, 54.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						spell(408876),	-- Zaralek Cavern World Quests
 					},
 				}),
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 74334 },	-- Future Aspects
 					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
 					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204599),	-- Bequeathed Gauntlets
 						i(204607),	-- Bestowed Crushers
 						i(204583),	-- Endowed Mitts
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 74334 },	-- Future Aspects
 					["provider"] = { "n", 200049 },	-- Scalecommander Emberthal
 					["coord"] = { 59.4, 68.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204603),	-- Bequeathed Cinch
 						i(204611),	-- Bestowed Girdle
 						i(204595),	-- Inherited Cincture
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72959 },	-- Whose Vault Is It Anyway?
 					["provider"] = { "n", 200074 },	-- Rannan Korren
 					["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204387),	-- Buzzing Orb Core
 						i(204833),	-- Buzzing Orb Core (QI!)
 					},
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75419 },	-- Sundered Flames
 					["provider"] = { "n", 202857 },	-- Scalecommander Emberthal
 					["coord"] = { 63.0, 74.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204598),	-- Bequeathed Striders
 						i(204606),	-- Bestowed Stompers
 						i(204582),	-- Endowed Slippers
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72964 },	-- Singed
 					["provider"] = { "n", 202670 },	-- Ebyssian
 					["coord"] = { 63.4, 74.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204601),	-- Bequeathed Tassets
 						i(204609),	-- Bestowed Greaves
 						i(204585),	-- Endowed Breeches
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72966 },	-- Where There's Smoke, There's Fire
 					["provider"] = { "n", 200080 },	-- Ebyssian
 					["coord"] = { 40.9, 41.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204602),	-- Bequeathed Spaulders
 						i(204610),	-- Bestowed Pauldrons
 						i(204586),	-- Endowed Mantle
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72908 },	-- Sight Beyond Sight
 					["provider"] = { "n", 199851 },	-- Sabellian
 					["coord"] = { 35.4, 41.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204620),	-- Dark Earth Glaive
 						i(204625),	-- Dark Nail
 						i(204454),	-- Dragon Maul
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72912 },	-- Consequences
 					["provider"] = { "n", 199863 },	-- Ebyssian
 					["coord"] = { 38.2, 48.5, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203653),	-- Vacant Elemental Core (QI!)
 						i(203654),	-- Zaqali Flame Totem (QI!)
 					},
@@ -286,19 +286,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72912 },	-- Consequences
 					["provider"] = { "n", 201578 },	-- Ebyssian
 					["coord"] = { 37.0, 47.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204386),	-- Pocket Darkened Elemental Core
 						i(203682),	-- Darkened Elemental Core (QI!)
 					},
 				}),
 				q(72915, {	-- Alliance of Convenience
 					["sourceQuests"] = { 72914 },	-- Rushing Quality
-					["providers"] = {
-						{ "n", 199950 },	-- Sabellian
-						{ "n", 201647 },	-- Sabellian
+					["qgs"] = {
+						199950,	-- Sabellian
+						201647,	-- Sabellian
 					},
 					["coord"] = { 33.2, 50.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204618),	-- Bequeathed Drape
 						i(204617),	-- Bestowed Cape
 						i(204616),	-- Endowed Wrap
@@ -307,9 +307,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(72916, {	-- Shut Them Down
 					["sourceQuests"] = { 72914 },	-- Rushing Quality
-					["providers"] = {
-						{ "n", 201581 },	-- Ebyssian
-						{ "n", 201646 },	-- Ebyssian
+					["qgs"] = {
+						201581,	-- Ebyssian
+						201646,	-- Ebyssian
 					},
 					["coord"] = { 33.1, 50.9, ZARALEK_CAVERN },
 				}),
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					},
 					["provider"] = { "n", 201647 },	-- Sabellian
 					["coord"] = { 29.3, 54.6, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204085),	-- Zaqali Dragonslayer's Spear (QI!)
 					},
 				}),
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 74494 },	-- A Scale for a Scale
 					["provider"] = { "n", 199952 },	-- Sabellian
 					["coord"] = { 29.6, 49.7, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204597),	-- Bequeathed Chainmail
 						i(204605),	-- Bestowed Chestplate
 						i(204581),	-- Endowed Robes
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72917 },	-- From Hell's Heart
 					["provider"] = { "n", 199877 },	-- Ebyssian
 					["coord"] = { 41.1, 59.9, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204388),	-- Draconic Cauterizing Magma
 					},
 				}),
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72919 },	-- Raked Over the Coals
 					["provider"] = { "n", 199958 },	-- Ebyssian
 					["coord"] = { 56.0, 54.3, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203707),	-- Water Bucket (QI!)
 					},
 				}),
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72920 },	-- The Endless Burning Sky
 					["provider"] = { "n", 201784 },	-- Ebyssian
 					["coord"] = { 56.1, 54.5, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(205989),	-- Symbol of Friendship
 						i(204600),	-- Bequeathed Cowl
 						i(204608),	-- Bestowed Greathelm
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72987 },	-- Here We Go Again
 					["provider"] = { "n", 200046 },	-- Ebyssian
 					["coord"] = { 49.9, 27.6, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204819),	-- Flight Master's Report
 					},
 				}),
@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 74557 },	-- Investigating the Unknown
 					["provider"] = { "n", 202523 },	-- Ebyssian
 					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203330),	-- Winding Slitherdrake: Swept Horns (MM!)
 					},
 				}),
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 74557 },	-- Investigating the Unknown
 					["provider"] = { "n", 202523 },	-- Ebyssian
 					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						ach(17779),	-- A Serpentine Discovery
 						i(204361),	-- Winding Slitherdrake (MOUNT!)
 						i(205992),	-- Regurgitated Half-Digested Fish
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72924 },	-- Appealing to the Black Prince
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 51.5, 25.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						iensemble(204447),	-- Ensemble: Black Dragonflight's Vestments
 					},
 				}),
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
 					["provider"] = { "n", 200101 },	-- Wrathion
 					["coord"] = { 47.2, 27.8, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(204877),	-- 'The Resting Blade' (QI!)
 						i(204184),	-- Ebon Eviscerator (QI!)
 					},
@@ -501,7 +501,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199964 },	-- Scalecommander Emberthal
 					["coord"] = { 47.4, 15.6, ZARALEK_CAVERN },
 					["_drop"] = { "g" },	-- Drop Crest
-					["g"] = {
+					["groups"] = {
 						i(205998),	-- Sign of Respect
 					},
 				}),
@@ -511,21 +511,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 199965 },	-- Ebyssian
 					["coord"] = { 47.9, 15.0, ZARALEK_CAVERN },
 					["maps"] = { 2166, 2167, 2168, 2169, 2170 },	-- Aberrus, the Shadowed Crucible
-					["g"] = {
+					["groups"] = {
 						i(204682),	-- Enchanted Wyrm's Shadowflame Crest
 					},
 				}),
 				q(74521, {	-- A Flame, Extinguished
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
-					-- also requires kill of Sarkareth
 					["provider"] = { "n", 201727 },	-- Ebyssian
 					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
+					-- also requires kill of Sarkareth
 				}),
 				q(74522, {	-- Remnants
 					["sourceQuests"] = { 74521 },	-- A Flame, Extinguished
 					["provider"] = { "n", 202809 },	-- Wrathion
 					["maps"] = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
-					["g"] = {
+					["groups"] = {
 						i(204271),	-- Blacktalon Napalm
 					},
 				}),
@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75028 },	-- All the Broken Pieces
 					["provider"] = { "n", 202928 },	-- Ebyssian
 					["coord"] = { 49.9, 70.9, 2174 },	-- Aberrus, the Shadowed Crucible
-					["g"] = {
+					["groups"] = {
 						i(206006),	-- Earth-Warder's Thanks
 					},
 				}),
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
 				["timeline"] = { REMOVED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(202171),	-- Obsidian Flightstone
 				},
 			}),
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
 				["timeline"] = { REMOVED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(204728),	-- Friendship Censer
 					i(202171),	-- Obsidian Flightstone
 				},
@@ -602,7 +602,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
 				["timeline"] = { REMOVED_10_2_0 },
 				["_drop"] = { "g" },	-- Drop Crest
-				["g"] = {
+				["groups"] = {
 					i(202171),	-- Obsidian Flightstone
 				},
 			}),
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 204509 },	-- Examiner Tae'shara Bloodwatcher
 				["coord"] = { 56.8, 54.8, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204717),	-- Splintered Spark of Shadowflame
 				},
 			}),
@@ -623,7 +623,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 200054 },	-- Elder Honeypelt
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205980),	-- Snail Lasso
 					i(203442),	-- Snail Slime (QI!)
 				},
@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 72879 },	-- Smells like Kith Spirit
 				["provider"] = { "n", 200055 },	-- Citros
 				["coord"] = { 56.8, 54.1, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205249),	-- Pugent Niffen Incense
 				},
 			}),
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["provider"] = { "n", 200052 },	-- Aurantia
 				["coord"] = { 54.7, 54.7, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204998),	-- Effervesta's Clue 3
 				},
 			}),
@@ -672,7 +672,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 72884 },	-- Expedition Effervesta
 				["provider"] = { "n", 200052 },	-- Aurantia
 				["coord"] = { 58.1, 54.2, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205250),	-- Gift of the High Redolence
 				},
 			}),
@@ -690,15 +690,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 74857 },	-- Mouse Detective
 				["provider"] = { "n", 202600 },	-- Agrul
 				["coord"] = { 50.4, 76.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204377),	-- Glow Spores
 				},
 			}),
 			q(74859, {	-- Sporemoth Exterminator
 				["sourceQuests"] = { 74857 },	-- Mouse Detective
-				["providers"] = {
-					{ "n", 202600 },	-- Agrul
-					{ "n", 204573 },	-- Agrul
+				["qgs"] = {
+					202600,	-- Agrul
+					204573,	-- Agrul
 				},
 				["coord"] = { 50.4, 76.4, ZARALEK_CAVERN },
 			}),
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 74861 },	-- An Unfriendly Confrontation
 				["provider"] = { "n", 202600 },	-- Agrul
 				["coord"] = { 46.9, 79.6, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205253),	-- Farmhand's Abudant Harvest
 				},
 			}),
@@ -743,7 +743,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73707 },	-- TICKET: Glimmerogg Games
 				["provider"] = { "n", 201098 },	-- Brogg the Beast
 				["coord"] = { 43.7, 82.9, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204803),	-- Echoed Lurker Flesh (QI!)
 					i(205169),	-- Glimmer Mushroom (QI!)
 				},
@@ -760,7 +760,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73710 },	-- Rock By Rock
 				["provider"] = { "n", 201100 },	-- Storul Heavystone
 				["coord"] = { 44.9, 83.2, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205251),	-- Champion's Rock Bar
 				},
 			}),
@@ -769,7 +769,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200291 },	-- Rupert, the Gentleman Elemental
 				["coord"] = { 40.1, 68.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(203012),	-- Viridian Heartcrystal (QI!)
 				},
 			}),
@@ -777,7 +777,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.3, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(202873),	-- Drooping Mushroom Cutting (QI!)
 				},
 			}),
@@ -785,7 +785,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205217),	-- Sharpbeak's Feed (QI!)
 				},
 			}),
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73046 },	-- Cavernous Capers
 				["provider"] = { "n", 200290 },	-- Voraxian
 				["coord"] = { 53.6, 79.5, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(203394),	-- Elementally Charged Orb (QI!)
 					i(203395),	-- Research Journal (QI!)
 					i(203396),	-- Displayed Armor Piece (QI!)
@@ -825,7 +825,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73047 },	-- Terrestrial Tunneling
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.3, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(197855),	-- Explore's Mix
 				},
 			}),
@@ -833,7 +833,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73041 },	-- Respite
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 40.1, 68.3, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204334),	-- Waste Disposal Notes
 					i(204345),	-- Note to Disposal Site
 				},
@@ -847,7 +847,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 73042 },	-- A Tower Yonder
 				["provider"] = { "n", 200290 },	-- Voraxian
 				["coord"] = { 48.9, 45.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204698),	-- Cataloging Camera
 				},
 			}),
@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["provider"] = { "n", 200953 },	-- Earthmender Narvra
 				["coord"] = { 48.3, 32.8, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205254),	-- Honoary Explorer's Compass
 				},
 			}),
@@ -881,7 +881,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 74495 },	-- The Tale of Hraxian
 				["provider"] = { "n", 200298 },	-- Veritistrasz
 				["coord"] = { 40.2, 68.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204220),	-- Hraxian's Unbreakable Will (TOY!)
 				},
 			}),
@@ -892,7 +892,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 59.4, 63.8, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
-				["g"] = {
+				["groups"] = {
 					i(204088),	-- Quartzite Spore Bile (QI!)
 					i(203393),	-- Spongy Loamshroom (QI!)
 				},
@@ -910,7 +910,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 55.6, 57.0, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
-				["g"] = {
+				["groups"] = {
 					i(204436),	-- Chipped Horn Signet (QI!)
 				},
 			}),
@@ -924,7 +924,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
 				["provider"] = { "n", 203378 },	-- Gorgul
 				["coord"] = { 43.2, 84.1, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204714),	-- Satchel of Healing Spores
 					i(204728),	-- Friendship Censer
 					i(204797),	-- Djaradin Boasting Tablets

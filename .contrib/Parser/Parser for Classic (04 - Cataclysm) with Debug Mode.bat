@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=".config/classic/04 - Cataclysm.config" config=".config/classic/Debug Mode.config"

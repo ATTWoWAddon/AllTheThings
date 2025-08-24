@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
 			i(220123, {	-- Ominous Offering
@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(444798, {	-- Arathi Treasure Hoard
 				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					i(212333),	-- Expedition Tinderbox (QS!)
 					i(224463),	-- Lily's Locket (QS!)
 					i(224460),	-- The Lost Diary (QS!)
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
 				["coord"] = { 41.8, 58.3, HALLOWFALL },	-- Caesper
 				["cost"] = {{ "i", 225238, 1 }},	-- Meaty Haunch
-				["g"] = {
+				["groups"] = {
 					o(453167, {	-- Disturbed Lyns Treasure
 						["questID"] = 83263,
 						["groups"] = {
@@ -40,14 +40,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(444804, {	-- Concentrated Shadow
 				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
 				["maps"] = { HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					-- some crafting reagents and gray item
 				},
 			}),
 			o(444799, {	-- Potent Concentrated Shadow
 				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
 				["maps"] = { HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					-- some crafting reagents and gray item
 				},
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
 				["coord"] = { 59.5, 59.7, HALLOWFALL },
 				["questID"] = 83284,
-				["g"] = {
+				["groups"] = {
 					i(225693),	-- Shadowed Essence
 				},
 			}),
@@ -64,7 +64,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
 				["coord"] = { 58.4, 27.2, HALLOWFALL },
 				["questID"] = 81468,
-				["g"] = {
+				["crs"] = { 220703 },	-- Starblessed Glimmerfly
+				["groups"] = {
 					i(224552),	-- Cave Spelunker's Torch (TOY!)
 				},
 			}),
@@ -74,7 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 48.0, 16.7, HALLOWFALL },
 					{ 48.8, 50.2, HALLOWFALL },
 				},
-				["g"] = {
+				["groups"] = {
 					i(220124),	-- Jar of Mucus
 				},
 			}),
@@ -82,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Located inside the crack of the pillar high above ground.",
 				["coord"] = { 55.8, 69.5, HALLOWFALL },
 				["questID"] = 81971,
-				["g"] = {
+				["groups"] = {
 					i(224580, {	-- Massive Sapphire Chunk
 					--	i(212508),	-- Stunning Sapphire x3
 					}),
@@ -95,7 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441638, {	-- Lost Memento
 				["coord"] = { 50.1, 13.8, HALLOWFALL },
 				["questID"] = 81978,
-				["g"] = {
+				["groups"] = {
 					i(224575),	-- Lightbearer's Pendant
 				},
 			}),
@@ -103,21 +104,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 84289,
 				["coord"] = { 42.6, 53.7, HALLOWFALL },
 				["isWeekly"] = true,	-- unflagged at some point (Runaway)
-				["g"] = {
+				["groups"] = {
 					i(225213),	-- Sky-Captain Lancekat's Curse
 				}
 			}),
-			o(453283, {	-- Smuggler's Treasure
-				["description"] = "Fly down to the Dead Arathi body and loot key.",
-				["coord"] = { 55.1, 51.9, HALLOWFALL },
-				["questID"] = 83273,
-				["g"] = {
-					i(225335),	-- Smuggler's Key
-					--
-					i(226021),	-- Jar of Pickles
-					--no longer here
-					--i(225256),	-- PH_2
-				},
+			o_repeated({	-- Smuggler's Treasure
+				o(453283, {
+					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["coord"] = { 55.1, 51.9, HALLOWFALL },
+					["questID"] = 83273,
+				}),
+				o(453274, {
+					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["coord"] = { 55.1, 51.9, HALLOWFALL },
+				}),
+				i(225335),	-- Smuggler's Key
+				i(226021),	-- Jar of Pickles
 			}),
 			o(419695, {	-- Spore-Covered Coffer
 				["description"] = "Inside the Shadowmire cave.",
@@ -127,21 +129,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(454797, {	-- From the Depths They Come
 				["coord"] = { 57.8, 51.7, HALLOWFALL },
 				--["questID"] = ,
-				["g"] = {
+				["groups"] = {
 					i(225208),	-- From the Depths They Come [book]
 				},
 			}),
 			o(455038, {	-- Light's Gambit Playbook
 				["coord"] = { 68.7, 41.5, HALLOWFALL },
 				--["questID"] = ,
-				["g"] = {
+				["groups"] = {
 					i(225206),	-- Light's Gambit Playbook [book]
 				},
 			}),
 			o(463979, {	-- Lightspark Sky Academy Gradebook
 				["coord"] = { 52.6, 60.0, HALLOWFALL },
 				["questID"] = 84497,
-				["g"] = {
+				["groups"] = {
 					i(228457),	-- Lightspark Grade Book [book]
 				},
 			}),
@@ -160,84 +162,84 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 55.2, 23.4, HALLOWFALL },
 					{ 55.2, 23.5, HALLOWFALL },
 				},
-				["g"] = {
+				["groups"] = {
 					i(220122),	-- Offering of Pure Water
 				},
 			}),
 			o(455183, {	-- Shadow Curfew Journal
 				["coord"] = { 59.8, 22.1, HALLOWFALL },
 				--["questID"] = ,
-				["g"] = {
+				["groups"] = {
 					i(225205),	-- Shadow Curfew Journal [book]
 				},
 			}),
 			o(453937, {	-- 500 Dishes Using Cave Fish and Mushrooms
 				["coord"] = { 43.9, 50.0, HALLOWFALL },
 				--["questID"] = ,
-				["g"] = {
+				["groups"] = {
 					i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms [book]
 				},
 			}),
 			o(453749, {	-- Palawltar's Codex of Dimensional Structure
 				["coord"] = { 48.7, 64.7, HALLOWFALL },
 				-- ["questID"] = 83309, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225216),	-- Palawltar's Codex of Dimensional Structure [book]
 				},
 			}),
 			o(453751, {	-- Care and Feeding of the Imperial Lynx
 				["coord"] = { 69.4, 44.0, HALLOWFALL },
 				-- ["questID"] = 83310, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225207),	-- Care and Feeding of the Imperial Lynx [book]
 				},
 			}),
 			o(453752, {	-- Shadow Curfew Guidelines
 				["coord"] = { 64.2, 28.1, HALLOWFALL },
 				-- ["questID"] = 83311, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225204),	-- Shadow Curfew Guidelines [book]
 				},
 			}),
 			o(453753, {	-- Beledar - The Emperor's Vision
 				["coord"] = { 56.6, 65.2, HALLOWFALL },
 				-- ["questID"] = 83312, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225203),	-- Beledar - The Emperor's Vision [book]
 				},
 			}),
 			o(439473, {	-- Tenir and the Order of Night
 				["description"] = "In the basement.",
 				["coord"] = { 63.5, 29.5, HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					i(219384),	-- Tenir and the Order of Night
 				},
 			}),
 			o(453754, {	-- The Song of Renilash
 				["coord"] = { 70.2, 56.8, HALLOWFALL },
 				-- ["questID"] = 83313, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225215),	-- The Song of Renilash [book]
 				},
 			}),
 			o(453755, {	-- The Big Book of Arathi Idioms
 				["coord"] = { 48.1, 39.6, HALLOWFALL },
 				-- ["questID"] = 83314, (automated)
-				["g"] = {
+				["groups"] = {
 					i(225212),	-- The Big Book of Arathi Idioms [book]
 				},
 			}),
 			o(419729, {	-- Strange Eggs
 				["coord"] = { 67.1, 21.8, HALLOWFALL },
 				--["questID"] = 83032, -- I looted it with some characters and never got any questID - Darkal
-				["g"] = {
+				["groups"] = {
 					i(212331),	-- The Unusual Bug
 				},
 			}),
 			o(441611, {	-- Windswept Satchel
 				["coord"] = { 30.2, 38.8, HALLOWFALL },
 				["questID"] = 81972,
-				["g"] = {
+				["groups"] = {
 					i(224578),	-- Arathor Courier's Satchel
 				},
 			}),
@@ -255,7 +257,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- 	{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
 				-- 	{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
 				-- },
-				["g"] = {
+				["groups"] = {
 					i(225659),	-- Arathi Book Collection (TOY!)
 					hqt(83300, {	-- Question 1
 						["name"] = "Answer 1: That the Cosmos consisted of monopole elemental phase spaces.",
@@ -356,10 +358,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuests"] = { 82012, 82024, 82025, 82026 },	-- Talk to all Sky-Captains
 				["coord"] = { 45.9, 45.1, HALLOWFALL },
 				["questID"] = 82005,
-				["g"] = {
+				["groups"] = {
 					i(224554),	-- Silver Linin' Scepter (TOY!)
 				},
 			}),
 		}),
 	}),
-})));
+}));

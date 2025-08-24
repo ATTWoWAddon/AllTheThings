@@ -4,7 +4,7 @@
 root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
 	race(BLOODELF, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }, ["races"] = { BLOODELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },
 			-- #endif
@@ -14,51 +14,51 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 39.2, 79.0, ORGRIMMAR },
 			}),
 			q(53734, {	-- Walk Among Ghosts
+				["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
 				["provider"] = { "n", 16802 },	-- Lor'themar Theron
 				["coord"] = { 53.8, 20.2, SILVERMOON_CITY },
-				["sourceQuest"] = 53791,	-- The Pride of the Sin'dorei
 			}),
 			q(53882, {	-- Writing on the Wall
+				["sourceQuest"] = 53734,	-- Walk Among Ghosts
 				["provider"] = { "n", 145015 },	-- Lor'themar Theron
 				["coord"] = { 46.2, 31.8, GHOSTLANDS },
-				["sourceQuest"] = 53734,	-- Walk Among Ghosts
 			}),
 			q(53735, {	-- The First to Fall
+				["sourceQuest"] = 53882,	-- Writing on the Wall
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["coord"] = { 47.5, 84.1, GHOSTLANDS },
-				["sourceQuest"] = 53882,	-- Writing on the Wall
 			}),
 			q(53736, {	-- Lament of the Highborne
+				["sourceQuest"] = 53735,	-- The First to Fall
 				["provider"] = { "n", 145005 },		-- Lor'themar Theron
 				["coord"] = { 37.2, 66.4, GHOSTLANDS },	-- Pickup Quest
-				["sourceQuest"] = 53735,	-- The First to Fall
 			}),
 			q(53737, {	-- The Day Hope Died
+				["sourceQuest"] = 53736,	-- Lament of the Highborne
 				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["coord"] = { 12.7, 56.9, GHOSTLANDS },	-- Pickup Quest
-				["sourceQuest"] = 53736,	-- Lament of the Highborne
 			}),
 			q(53738, {	-- Defense of Qual'Danas
-				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["sourceQuest"] = 53737,	-- The Day Hope Died
+				["provider"] = { "n", 145005 },	-- Lor'themar Theron
 				["coord"] = { 51.1, 68.8, EVERSONG_WOODS },
 			}),
 			q(53725, {	-- A People Shattered
-				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53738,	-- Defense of Qual'Danas
+				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 			}),
 			q(53853, {	-- The Setting Sun
-				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53725,	-- A People Shattered
+				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 			}),
 			q(54096, {	-- The Fall of the Sunwell
-				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["sourceQuest"] = 53853,	-- The Setting Sun
+				["provider"] = { "n", 145793 },	-- Lady Liadrin
 				["coord"] = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 				["maps"] = { 973 },	-- The Sunwell: Shrine of the Eclipse (Scenario)
-				["g"] = {
+				["groups"] = {
 					i(166348),	-- Sin'dorei Helm
 					i(166349),	-- Sin'dorei Pauldrons
 					i(166357),	-- Sin'dorei Cloak
@@ -75,12 +75,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(DARKIRON, bubbleDown({ ["timeline"] = { ADDED_8_0_1 }, ["races"] = { DARKIRON } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-		["g"] = {
+		["groups"] = {
 			q(51483, {	-- Heritage o' the Dark Iron
 				["provider"] = { "n", 144152 },	-- Moira Thaurissan
 				["coord"] = { 56.6, 31.8, 1186 },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(13076),	-- Heritage of the Dark Iron
 					i(161008),	-- Dark Iron Helm
 					i(161009),	-- Dark Iron Pauldrons
@@ -96,11 +96,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(DRAENEI, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { DRAENEI } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
-		["g"] = {
+		["groups"] = {
 			q(78068, {	-- An Artificer's Appeal
 				["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
 				["coord"] = { 53, 15.5, STORMWIND_CITY },
-				["g"] = {
+				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
 			}),
@@ -108,7 +108,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78068 },	-- An Artificer's Appeal
 				["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
 				["coord"] = { 54.8, 79.8, THE_EXODAR },
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						i(210167),	-- Empyrium Filament (QI!)
 						o(420019),	--	Artificing Tools
@@ -125,7 +125,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78069 },	-- Reviving Tradition
 				["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
 				["coord"] = { 54.8, 79.8, THE_EXODAR },
-				["g"] = {
+				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
 			}),
@@ -133,7 +133,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78070 },	-- Pressing Deadlines
 				["provider"] = { "n", 208494 },	-- High Artificer Ataanya
 				["coord"] = { 39.0, 46.9, SHATTRATH_CITY },
-				["g"] = {
+				["groups"] = {
 					i(210181),	-- Signed Work Orders (QI!)
 				},
 			}),
@@ -151,7 +151,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78073 },	-- Lingering Scars
 				["provider"] = { "n", 210581 },	-- Exarch Maladaar
 				["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
-				["g"] = {
+				["groups"] = {
 					o(408954, {	--	Artificer's Lockbox
 						i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
 					}),
@@ -161,7 +161,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78074 },	-- To See Clearly
 				["provider"] = { "n", 210569 },	-- High Artificer Ataanya
 				["coord"] = { 39.1, 46.3, SHATTRATH_CITY },
-				["g"] = {
+				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
 			}),
@@ -174,7 +174,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78076 },	-- Emergency Efforts
 				["provider"] = { "n", 210391 },	-- Chieftain Hatuun
 				["coord"] = { 51.9, 75.5, BLOODMYST_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(210239),	-- Pitted Bones (QI!)
 				},
 			}),
@@ -182,7 +182,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78076 },	-- Emergency Efforts
 				["provider"] = { "n", 210588 },	-- Arzaal
 				["coord"] = { 51.9, 75.7, BLOODMYST_ISLE },
-				["g"] = {
+				["groups"] = {
 					o(408964, {	-- Satyr Totem
 						i(210238),	-- Satyr Totem (QI!)
 					}),
@@ -205,7 +205,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78080 },	-- At the Source
 				["provider"] = { "n", 210605 },	-- Proper Velen
 				["coord"] = { 41.5, 33.0, BLOODMYST_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(210454),	-- Spare Hologem (QI!)
 				},
 			}),
@@ -213,7 +213,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78081 },	-- Pain Recedes
 				["provider"] = { "n", 214021 },	-- Proper Velen
 				["coord"] = { 54.7, 80.7, THE_EXODAR },
-				["g"] = {
+				["groups"] = {
 					i(210586),	-- Akama's Memory Stone (QI!)
 					i(210578),	-- Arzaal's Memory Stone (QI!)
 					i(210577),	-- Ataanya's Memory Stone (QI!)
@@ -241,7 +241,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 78082 },	-- A Burden Shared
 				["provider"] = { "n", 212387 },	-- Grand Anchorite Almonen
 				["coord"] = { 64.4, 87.3, THE_EXODAR },
-				["g"] = {
+				["groups"] = {
 					i(210455),	-- Draenic Hologem (TOY!)
 					iensemble(211313, {	-- Ensemble: Heritage of the Draenei
 						["extraTransmogSetSpells"] = {
@@ -256,7 +256,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	}));
 	race(DWARF, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }, ["races"] = { DWARF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_IRONFORGE, EXALTED },
 			-- #endif
@@ -306,7 +306,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
 				["coord"] = { 35.0, 48.8, LOCH_MODAN },
-				["g"] = {
+				["groups"] = {
 					i(164960),	-- Remnant of the Earthen Ritual (QI!)
 				},
 			}),
@@ -319,7 +319,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuest"] = 53845,	-- Forging the Armor
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
 				["coord"] = { 46.2, 49.6, IRONFORGE },
-				["g"] = {
+				["groups"] = {
 					i(165931),	-- Bronzebeard Helm
 					i(165932),	-- Bronzebeard Pauldrons
 					i(165933),	-- Bronzebeard Tunic
@@ -334,12 +334,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
-		["g"] = {
+		["groups"] = {
 			q(82771, {	-- Heritage of the Earthen
 				["provider"] = { "n", 224790 },	-- Dawn <The Awakened>
 				["coord"] = { 29.0, 59.6, DORNOGAL },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(40309),	-- Heritage of the Earthen
 					------ Dornogal Set ------
 					i(224863),	-- Dornogal Cheststraps
@@ -377,7 +377,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(GNOME, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { GNOME } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },
 			-- #endif
@@ -387,65 +387,65 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 54.6, 18.4, STORMWIND_CITY },
 			}),
 			q(54576, {	-- Gnomeregan's Finest
+				["sourceQuest"] = 54402, -- Shifting Gears
 				["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 				["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
-				["sourceQuest"] = 54402, -- Shifting Gears
 				["maps"] = { 1380 },	-- GnomereganC
 			}),
 			q(54577, {	-- Shadowed Halls and Dusty Cogs
+				["sourceQuest"] = 54576, -- Gnomeregan's Finest
 				["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 				["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
-				["sourceQuest"] = 54576, -- Gnomeregan's Finest
 				["maps"] = { 1380 },	-- GnomereganC
 			}),
 			q(54580, {	-- A Tundra Conundrum
+				["sourceQuest"] = 54577, -- Shadowed Halls and Dusty Cogs
 				["provider"] = { "n", 147943 },	-- Captain Tread Sparknozzle
 				["coord"] = { 41.8, 31.7, NEW_TINKERTOWN },
-				["sourceQuest"] = 54577, -- Shadowed Halls and Dusty Cogs
 			}),
 			q(54581, {	-- Now With More Mechanical Fowl
+				["sourceQuest"] = 54580, -- A Tundra Conundrum
 				["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
 				["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
-				["sourceQuest"] = 54580, -- A Tundra Conundrum
 			}),
 			q(54582, {	-- Smarter Than Your Average Trogg
+				["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
 				["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
 				["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
-				["sourceQuest"] = 54581, -- Now With More Mechanical Fowl
-				["g"] = {
+				["groups"] = {
 					i(166584),	-- Broken Communication Device (QI!)
 				},
 			}),
 			q(54579, {	-- The Gnome Behind the Trogg
+				["sourceQuest"] = 54582, -- Smarter Than Your Average Trogg
 				["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
 				["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
-				["sourceQuest"] = 54582, -- Smarter Than Your Average Trogg
 			}),
 			q(54639, {	-- A Signal in Storm Peaks
+				["sourceQuest"] = 54579, -- The Gnome Behind the Trogg
 				["provider"] = { "n", 147952 },	-- Fizzi Tinkerbow
 				["coord"] = { 55.3, 18.9, BOREAN_TUNDRA },
-				["sourceQuest"] = 54579, -- The Gnome Behind the Trogg
 			}),
 			q(54640, {	-- Gnomercy!
+				["sourceQuest"] = 54639, -- A Signal in Storm Peaks
 				["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
 				["coord"] = { 37.6, 60.3, THE_STORM_PEAKS },
-				["sourceQuest"] = 54639, -- A Signal in Storm Peaks
 			}),
 			q(54850, {	-- Operation: Troggageddon
+				["sourceQuest"] = 54640, -- Gnomercy!
 				["provider"] = { "n", 147950 },	-- Cog Captain Winklespring
 				["coord"] = { 56.1, 51.4, THE_STORM_PEAKS },
-				["sourceQuest"] = 54640, -- Gnomercy!
 			}),
 			q(54641, {	-- For Gnomeregan!
+				["sourceQuest"] = 54850, -- Operation: Troggageddon
 				["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
 				["coord"] = { 39.4, 26.8, THE_STORM_PEAKS },
-				["sourceQuest"] = 54850, -- Operation: Troggageddon
 			}),
 			q(54642, {	-- G.E.A.R. Up
+				["sourceQuest"] = 54641, -- For Gnomeregan!
 				["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
 				["coord"] = { 50.0, 12.9, 1375 },
-				["sourceQuest"] = 54641, -- For Gnomeregan!
-				["g"] = {
+				["groups"] = {
 					i(168286),	-- G.E.A.R. Commander's Buckle
 					i(168284),	-- G.E.A.R. Commander's Chestpiece
 					i(168290),	-- G.E.A.R. Commander's Cloak
@@ -462,7 +462,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(GOBLIN, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { GOBLIN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },
 			-- #endif
@@ -472,77 +472,77 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 39.5, 80.2, ORGRIMMAR },
 			}),
 			q(57045, {	-- A Special Delivery
+				["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
-				["sourceQuest"] = 57043,	-- Old Friends, New Opportunities
-				["g"] = {
+				["groups"] = {
 					i(170538),	-- Mysterious Package (QI!)
 				},
 			}),
 			q(57047, {	-- A Simple Experiment
+				["sourceQuest"] = 57045,	-- A Special Delivery
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 53.5, 61.9, 1532 },
-				["sourceQuest"] = 57045,	-- A Special Delivery
 			}),
 			q(57048, {	-- Shopping For Parts
+				["sourceQuest"] = 57047,	-- A Simple Experiment
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 52.9, 58.6, 1532 },
-				["sourceQuest"] = 57047,	-- A Simple Experiment
 			}),
 			q(57051, {	-- Debt Collection!
+				["sourceQuest"] = 57048,	-- Shopping For Parts
 				["provider"] = { "n", 156542 },	-- Crank Greasefuse
 				["coord"] = { 56.0, 78.2, 1532 },
-				["sourceQuest"] = 57048,	-- Shopping For Parts
-				["g"] = {
+				["groups"] = {
 					i(171089),	-- Unpaid Debt (QI!)
 				},
 			}),
 			q(57052, {	-- I've Got What You Need
+				["sourceQuest"] = 57051,	-- Debt Collection!
 				["provider"] = { "n", 156542 },	-- Crank Greasefuse
 				["coord"] = { 56.0, 78.2, 1532 },
-				["sourceQuest"] = 57051,	-- Debt Collection!
 			}),
 			q(57053, {	-- Blunt Force Testing
+				["sourceQuest"] = 57052,	-- I've Got What You Need
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 58.7, 60.8, 1532 },
-				["sourceQuest"] = 57052,	-- I've Got What You Need
-				["g"] = {
+				["groups"] = {
 					i(171114),	-- X-52 Personnel Armor (QI!)
 				},
 			}),
 			q(57058, {	-- Fun With Landmines
+				["sourceQuest"] = 57053,	-- Blunt Force Testing
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 58.7, 60.8, 1532 },
-				["sourceQuest"] = 57053,	-- Blunt Force Testing
-				["g"] = {
+				["groups"] = {
 					i(174059),	-- X-52 Personnel Armor (QI!)
 				},
 			}),
 			q(57059, {	-- Let's Rumble!
+				["sourceQuest"] = 57058,	-- Fun With Landmines
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 52.0, 59.3, 1532 },
-				["sourceQuest"] = 57058,	-- Fun With Landmines
 			}),
 			q(57077, {	-- Buyers Wanted!
+				["sourceQuest"] = 57059,	-- Let's Rumble!
 				["provider"] = { "n", 156520 },	-- Hobart Grapplehammer
 				["coord"] = { 52.0, 59.3, 1532 },
-				["sourceQuest"] = 57059,	-- Let's Rumble!
 			}),
 			q(57078, {	-- The VIP List
+				["sourceQuest"] = 57077,	-- Buyers Wanted!
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
-				["sourceQuest"] = 57077,	-- Buyers Wanted!
 			}),
 			q(57079, {	-- Beat The Crapopolis Outta Him!
+				["sourceQuest"] = 57078,	-- The VIP List
 				["provider"] = { "n", 156396 },	-- Sassy Hardwrench
 				["coord"] = { 34.6, 28.5, THE_CAPE_OF_STRANGLETHORN },
-				["sourceQuest"] = 57078,	-- The VIP List
 			}),
 			q(57080, {	-- A Fitting Reward
+				["sourceQuest"] = 57079,	-- Beat The Crapopolis Outta Him!
 				["provider"] = { "n", 157491 },	-- Hobart Grapplehammer
 				["coord"] = { 47.8, 50.5, 1531 },
-				["sourceQuest"] = 57079,	-- Beat The Crapopolis Outta Him!
-				["g"] = {
+				["groups"] = {
 					i(174077),	-- X-52 Insulated Headgear
 					i(173978),	-- X-52 Precision Goggles
 					i(173979),	-- X-52 Reinforced Legguards
@@ -558,12 +558,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(HIGHMOUNTAIN_TAUREN, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { HIGHMOUNTAIN_TAUREN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
-		["g"] = {
+		["groups"] = {
 			q(49783, {	-- Heritage of Highmountain
 				["provider"] = { "n", 93826 },	--  Mayla Highmountain
 				["coord"] = { 46.6, 61.0, HIGHMOUNTAIN },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(12415),	-- Heritage of Highmountain
 					i(156668),	-- Highmountain Headdress
 					i(156669),	-- Highmountain Shoulderguards
@@ -579,28 +579,28 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(HUMAN, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["races"] = { HUMAN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { FACTION_STORMWIND, EXALTED }
+			["minReputation"] = { FACTION_STORMWIND, EXALTED },
 			-- #endif
 		}, {
 			q(72644, {	-- An Urgent Matter
-				["isBreadcrumb"] = true,
 				["altQuests"] = {
 					75265,	-- An Urgent Matter (the other one)
 				},
-				["g"] = {
+				["isBreadcrumb"] = true,
+				["groups"] = {
 					i(203475),	-- Urgent Stormwind Summons
 				},
 			}),
 			q(75265, {	-- An Urgent Matter
-				["provider"] = { "n", 199340 },	-- Agent Render
-				["coord"] = { 54.6, 20.0, STORMWIND_CITY },
-				["isBreadcrumb"] = true,
 				["altQuests"] = {
 					72644,	-- An Urgent Matter (the other one)
 				},
-				["g"] = {
+				["provider"] = { "n", 199340 },	-- Agent Render
+				["coord"] = { 54.6, 20.0, STORMWIND_CITY },
+				["isBreadcrumb"] = true,
+				["groups"] = {
 					i(203475),	-- Urgent Stormwind Summons
 				},
 			}),
@@ -619,15 +619,23 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72408 },	-- A Window to the Past
 				["provider"] = { "n", 198883 },	-- Vanessa VanCleef
 				["coord"] = { 44.3, 66.0, ELWYNN_FOREST },
-				["g"] = {
-					i(202106),	-- Chewed Piece of Journal (QI!)
+				["groups"] = {
+					o(384644, {	-- Hoarded Debris
+						["coords"] = {
+							{ 60.4, 66.3, BURNING_STEPPES },
+							{ 61.1, 67.1, BURNING_STEPPES },
+							{ 61.2, 65.5, BURNING_STEPPES },
+							{ 61.7, 66.6, BURNING_STEPPES },
+						},
+						["groups"] = { i(202106) },	-- Chewed Piece of Journal (QI!)
+					}),
 				},
 			}),
 			q(72424, {	-- Looking for Something Specific
 				["sourceQuests"] = { 72409 },	-- Rotten Old Memories
 				["provider"] = { "n", 9563 },	-- Ragged John
 				["coord"] = { 72.8, 64.8, BURNING_STEPPES },
-				["g"] = {
+				["groups"] = {
 					i(204063),	-- Windsor's Journal
 				},
 			}),
@@ -654,7 +662,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72453, {	-- Betrayal of the Brotherhood
 				["sourceQuests"] = { 72431 },	-- Misdeeds in Moonbrook
 				["provider"] = { "n", 199598 },	-- Vanessa VanCleef
-				["coord"] = { 59.5, 59.7, WESTFALL },
+				["coord"] = { 59.5, 59.7, DEADMINES_OUTDOORS },
 			}),
 			q(72445, {	-- To Northshire
 				["sourceQuests"] = {
@@ -668,7 +676,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72445 },	-- To Northshire
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 				["coord"] = { 27.9, 66.7, NORTHSHIRE_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(202238),	-- Enforcer Grant's Signet
 					i(204173),	-- Enforcer Horb's Signet
 					i(204171),	-- Enforcer Jennive's Signet
@@ -687,7 +695,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				},
 				["provider"] = { "n", 198984 },	-- Cecilia Clessington
 				["coord"] = { 28.0, 67.2, NORTHSHIRE_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(202267),	-- Clessington Signet
 				},
 			}),
@@ -695,7 +703,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72450 },	-- The Clessington Will
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 				["coord"] = { 36.5, 51.1, NORTHSHIRE_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(204214),	-- Drakefire Amulet (QI!)
 				},
 			}),
@@ -703,7 +711,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72451 },	-- Will to Survive
 				["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 				["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
-				["g"] = {
+				["groups"] = {
 					title(493),	-- Lionguard <Name>
 					i(203153),	-- Lionguard Greathelm
 					i(203154),	-- Lionguard Greathelm
@@ -744,12 +752,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(KULTIRAN, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { KULTIRAN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-		["g"] = {
-			q(53722, {    -- Heritage of the Kul Tiran
+		["groups"] = {
+			q(53722, {	-- Heritage of the Kul Tiran
 				["provider"] = { "n", 150941 },	-- Katherine Proudmoore
 				["coord"] = { 67.8, 21.8, BORALUS },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(13504),	-- Heritage of the Kul Tirans
 					i(165002),	-- Kul'Tiran Bicorne
 					i(165003),	-- Kul'Tiran Tasseled Pauldron
@@ -765,12 +773,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(LIGHTFORGED, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { LIGHTFORGED } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-		["g"] = {
+		["groups"] = {
 			q(49782, {	-- Heritage of the Lightforged
 				["provider"] = { "n", 130993 },	-- Captain Fareeya
 				["coord"] = { 42.96, 24.16, 940 },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(12414),	-- Heritage of the Lightforged
 					i(156699),	-- Lightforged Gorget
 					i(156700),	-- Lightforged Pauldrons
@@ -786,12 +794,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(MAGHAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 }, ["races"] = { MAGHAR } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
-		["g"] = {
-			q(51484, {    -- Heritage of the Mag'har
+		["groups"] = {
+			q(51484, {	-- Heritage of the Mag'har
 				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(13077),	-- Heritage of the Mag'har
 					i(161050),	-- Blackrock Clan Helm
 					i(161051),	-- Blackrock Clan Pauldrons
@@ -823,13 +831,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(MECHAGNOME, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { MECHAGNOME } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
-		["g"] = {
-			q(58436, {    -- Heritage of the Mechagnome
+		["groups"] = {
+			q(58436, {	-- Heritage of the Mechagnome
 				["provider"] = { "n", 158145 },	-- Prince Erazmin
 				["coord"] = { 73.0, 33.4, MECHAGON },
 				["maps"] = { MECHAGON_CITY },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(14014),	-- Heritage of the Mechagnome
 					i(173961),	-- Mechagnome Heritage Helmet
 					i(173963),	-- Mechagnome Heritage Shouldergaurds
@@ -843,11 +851,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(NIGHTELF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { NIGHTELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
-		["g"] = {
+		["groups"] = {
 			q(75890, {	-- The Clarion Call
 				["provider"] = { "o", 405958 },	-- Sealed Kaldorei Scroll
 				["coord"] = { 52.4, 14.2, STORMWIND_CITY },
-				["g"] = {
+				["groups"] = {
 					i(206942),	-- Sealed Kaldorei Scroll
 				},
 			}),
@@ -865,7 +873,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 76194 },	--  A Grim Portent
 				["provider"] = { "n", 202700 },	-- Lysander Starshade
 				["coord"] = { 54, 79.4, FELWOOD },
-				["g"] = {
+				["groups"] = {
 					i(207004),	-- Incanter's Tome (QI!)
 				},
 			}),
@@ -914,7 +922,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 76212 },	-- A Mark For A Protector
 				["provider"] = { "n", 209140 },	-- Maiev Stormsong
 				["coord"] = { 52.7, 4.2, STORMWIND_CITY },
-				["g"] = {
+				["groups"] = {
 					iensemble(208879),	-- Ensemble: Kaldorei Protector's Adornment
 					iensemble(208785),	-- Traditionalist's Kaldorei Blades
 					title(511),	-- Ama'shan <Name>
@@ -924,12 +932,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	}));
 	race(NIGHTBORNE, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { NIGHTBORNE } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
-		["g"] = {
-			q(49784, {    -- Heritage of the Nightborne
+		["groups"] = {
+			q(49784, {	-- Heritage of the Nightborne
 				["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(12413),	-- Heritage of the Nightborne
 					i(156675),	-- Shal'dorei Crown
 					i(156676),	-- Shal'dorei Mantle
@@ -945,9 +953,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(ORC, bubbleDown({ ["timeline"] = { ADDED_10_0_7 }, ["races"] = { ORC } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { FACTION_ORGRIMMAR, EXALTED }
+			["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },
 			-- #endif
 		}, {
 			q(73703, {	-- A Summon to Orgrimmar
@@ -960,7 +968,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 3144 },	-- Eitrigg
 				["coord"] = { 49.2, 72.3, ORGRIMMAR },
 				["maps"] = { 2162 },	-- Frostwolf Village
-				["g"] = {
+				["groups"] = {
 					i(201957),	-- Thrall's Hearthstone
 				},
 			}),
@@ -968,7 +976,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72462 },	-- A People in Need of Healing
 				["provider"] = { "n", 200244 },	-- Aggra
 				["coord"] = { 54.4, 78.6, ORGRIMMAR },
-				["g"] = {
+				["groups"] = {
 					i(203713),	-- Mysterious Flower
 				},
 			}),
@@ -994,14 +1002,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(74581, {	-- The Long Knives
 				["sourceQuests"] = { 72467 },	-- The Blessing of the Clan
-				["providers"] = {
-					{ "n", 199173 },	-- Thrall
-					-- maybe given by who you chose in previous quest?
-					-- { "n", TODO },	-- Eitrigg
-					-- { "n", TODO },	-- Jorin Deadeye
-					-- { "n", TODO },	-- Gorgonna
-					-- { "n", TODO },	-- Gorfax Angerfang
-					-- { "n", TODO },	-- Thega Graveblade
+				["qgs"] = {
+					199173,	-- Thrall
+					199152,	-- Eitrigg
+					200616,	-- Jorin Deadeye
+					199154,	-- Gorgonna
+					199156,	-- Gorfax Angerfang
+					199151,	-- Thega Graveblade
 				},
 				["coord"] = { 52.3, 42.9, DUROTAR },
 			}),
@@ -1015,7 +1022,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 200760 },	-- Bag of Cactus Apples
 				["coord"] = { 50.0, 60.0, VALLEY_OF_TRIALS },
 				["isBreadcrumb"] = true,
-				["g"] = {
+				["groups"] = {
 					i(202402),	-- Bag of Cactus Apples
 					i(202401),	-- Cactus Apple Surprise
 				},
@@ -1037,7 +1044,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 74374 },	-- An Important Heirloom
 				["provider"] = { "n", 199383 },	-- Cook Torka
 				["coord"] = { 50.7, 42.7, DUROTAR },
-				["g"] = {
+				["groups"] = {
 					-- recipes
 					r(399034, {["u"]=TRAINING}),	-- Curried Coconut Crab (RECIPE!)
 					r(399040, {["u"]=TRAINING}),	-- Feast for the Ancestors (RECIPE!)
@@ -1060,7 +1067,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72477 },	-- Orcish Groceries
 				["provider"] = { "n", 201361 },	-- Durak
 				["coord"] = { 50.8, 42.6, DUROTAR },
-				["g"] = {
+				["groups"] = {
 					-- items
 					i(202026),	-- Durotar Coast Crab
 					i(202031),	-- Farahlon Fenugreek
@@ -1092,7 +1099,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72478 },	-- Honor and Glory
 				["provider"] = { "n", 200437 },	-- Thrall
 				["coord"] = { 52.3, 43.4, DUROTAR },
-				["g"] = {
+				["groups"] = {
 					i(204170),	-- Clan Banner (TOY!)
 					i(203179),	-- Kosh'aka Casque
 					i(203180),	-- Kosh'aka Casque
@@ -1127,59 +1134,59 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(TAUREN, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { TAUREN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },
 			-- #endif
 		}, {
 			q(54759, {	-- When Spirits Whisper
-				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
-				["coord"] = { 39.1, 79.0, ORGRIMMAR },
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 				-- #endif
+				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
+				["coord"] = { 39.1, 79.0, ORGRIMMAR },
 			}),
 			q(54760, {	-- The Spiritwalkers
+				["sourceQuest"] = 54759,	-- When Spirits Whisper
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-				["sourceQuest"] = 54759,	-- When Spirits Whisper
 			}),
 			q(54761, {	-- Spirit Guide
+				["sourceQuest"] = 54760,	-- The Spiritwalkers
 				["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
 				["coord"] = { 12.3, 31.3, 462 },
-				["sourceQuest"] = 54760,	-- The Spiritwalkers
 			}),
 			q(54762, {	-- A Small Retreat
+				["sourceQuest"] = 54761,	-- Spirit Guide
 				["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
 				["coord"] = { 12.3, 31.3, 462 },
-				["sourceQuest"] = 54761,	-- Spirit Guide
 			}),
 			q(54763, {	-- Crossing Over
+				["sourceQuest"] = 54762,	-- A Small Retreat
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
 				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
-				["sourceQuest"] = 54762,	-- A Small Retreat
-				["g"] = {
+				["groups"] = {
 					i(166899),	-- Spiritwalker's Hallowed Vessel (QI!)
 				},
 			}),
 			q(54764, {	-- Storm in Bloodhoof
+				["sourceQuest"] = 54763,	-- Crossing Over
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
 				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
-				["sourceQuest"] = 54763,	-- Crossing Over
 			}),
 			q(54766, {	-- Answer the Call
+				["sourceQuest"] = 54764,	-- Storm in Bloodhoof
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 				["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
-				["sourceQuest"] = 54764,	-- Storm in Bloodhoof
-				["g"] = {
+				["groups"] = {
 					i(167030),	-- Spiritwalker's Hallowed Vessel (QI!)
 				},
 			}),
 			q(54765, {	-- Thank Your Guide
+				["sourceQuest"] = 54766,	-- Answer the Call
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
-				["sourceQuest"] = 54766,	-- Answer the Call
-				["g"] = {
+				["groups"] = {
 					i(168298),	-- Ancestral Chieftain's Armor
 					i(168297),	-- Ancestral Chieftain's Grasps
 					i(168296),	-- Ancestral Chieftain's Greatbelt
@@ -1196,7 +1203,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(TROLL, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { TROLL } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
-		["g"] = {
+		["groups"] = {
 			q(77869),	-- Return to the Echo Isles
 			q(77871, {	-- De Old Loa
 				["sourceQuests"] = { 77869 },	-- Return to the Echo Isles
@@ -1212,7 +1219,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 77874 },	-- De Loa of de Past
 				["provider"] = { "n", 210238 },	-- Rokhan
 				["coord"] = { 84.8, 40.2, NORTHERN_STRANGLETHORN },
-				["g"] = {
+				["groups"] = {
 					i(211350),	-- Offering to Hakkar (QI!)
 				},
 			}),
@@ -1235,7 +1242,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 77877 },	-- One With the Loa
 				["provider"] = { "n", 210091 },	-- Rokhan
 				["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
-				["g"] = {
+				["groups"] = {
 					o(408767, {	-- Dusty Bag
 						i(210592),	-- Altar Fragment (QI!)
 					}),
@@ -1245,7 +1252,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 77877 },	-- One With the Loa
 				["provider"] = { "n", 210091 },	-- Rokhan
 				["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
-				["g"] = {
+				["groups"] = {
 					i(210593),	-- Lukou's Altar Centerpiece (QI!)
 				},
 			}),
@@ -1266,7 +1273,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 77898 },	-- Honor and Tribute
 				["provider"] = { "n", 210086 },	-- Witch Doctor Tzadah
 				["coord"] = { 59.1, 65.9, ECHO_ISLES },
-				["g"] = {
+				["groups"] = {
 					i(210830),	-- Finished Rush'kah Mask (QI!)
 				},
 			}),
@@ -1279,7 +1286,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 77900 },	-- The Loa Trials
 				["provider"] = { "n", 210260 },	-- Kevo ya Siti
 				["coord"] = { 59.0, 66.3, ECHO_ISLES },
-				["g"] = {
+				["groups"] = {
 					i(211000),	-- Cunning Charm (QI!)
 				},
 			}),
@@ -1300,16 +1307,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					77903,	-- De Power of Death
 				},
 				["provider"] = { "n", 213638 },	-- Rokhan
-				["coord"] = { 56.9, 56.4, NORTHERN_STRANGLETHORN },
-				["g"] = {
-					i(211133),	-- Jani's Blessing (QI!)
-				},
+				["coord"] = { 58.5, 65.5, ECHO_ISLES },
+				["groups"] = { i(211133) },	-- Jani's Blessing (QI!)
 			}),
 			q(77906, {	-- De Darkspear Loa
 				["sourceQuests"] = { 77905 },	-- Avatar of Mueh'zala
 				["provider"] = { "n", 212782 },	-- Rokhan
 				["coord"] = { 58.5, 65.5, ECHO_ISLES },
-				["g"] = {
+				["groups"] = {
 					iensemble(211446, {	-- Ensemble: Heritage of the Darkspear
 						["extraTransmogSetSpells"] = {
 							441539,	-- Ensemble: Loyalty of the Darkspear
@@ -1324,41 +1329,55 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	}));
 	race(UNDEAD, bubbleDown({ ["timeline"] = { ADDED_10_1_7 }, ["races"] = { UNDEAD } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
-		["g"] = {
+		["groups"] = {
 			q(76530, {	-- Unliving Summons (automatically pops up when you meet the requirements)
 				["sourceQuests"] = { 65788 },	-- A Walk with Ghosts
 			}),
 			q(72854, {	-- Our Enemies Abound
 				["sourceQuests"] = { 76530 },	-- Unliving Summons
 				["provider"] = { "n", 186091 },	-- Lilian Voss
-				["coord"] = { 63.8, 68.2, TIRISFAL_GLADES },
+				["coord"] = { 63.8, 68.2, 2070 },	-- Tirisfal Glades
 			}),
 			q(72855, {	-- To the Sepulcher
 				["sourceQuests"] = { 72854 },	-- Our Enemies Abound
 				["provider"] = { "n", 199761 },	-- Deathstalker Commander Belmont
-				["coord"] = { 61.2, 82.6, TIRISFAL_GLADES },
+				["coord"] = { 61.2, 82.6, 2070 },	-- Tirisfal Glades
 			}),
 			q(72858, {	-- Acid Beats Paper
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
 				["coord"] = { 45.4, 42, SILVERPINE_FOREST },
-				["g"] = {
-					i(202182),	-- Acid Rifle (QI!)
-				},
+				["groups"] = { i(202182) },	-- Acid Rifle (QI!)
 			}),
 			q(72857, {	-- Boom Weed
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
-				["g"] = {
-					i(202186),	-- Boom Weed (QI!)
+				["groups"] = {
+					o(385373, {	-- Boom Weed
+						["coords"] = {
+							{ 45.4, 48.4, SILVERPINE_FOREST },
+							{ 45.4, 49.6, SILVERPINE_FOREST },
+							{ 45.4, 51.4, SILVERPINE_FOREST },
+							{ 45.5, 49.0, SILVERPINE_FOREST },
+							{ 45.8, 47.7, SILVERPINE_FOREST },
+							{ 45.9, 50.1, SILVERPINE_FOREST },
+							{ 46.6, 50.9, SILVERPINE_FOREST },
+							{ 47.1, 48.7, SILVERPINE_FOREST },
+							{ 47.3, 47.8, SILVERPINE_FOREST },
+							{ 47.3, 49.8, SILVERPINE_FOREST },
+							{ 47.8, 49.0, SILVERPINE_FOREST },
+							{ 48.0, 50.6, SILVERPINE_FOREST },
+						},
+						["groups"] = { i(202186) },	-- Boom Weed (QI!)
+					}),
 				},
 			}),
 			q(72856, {	-- Nothing Like the Classic
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
-				["g"] ={
+				["groups"] ={
 					i(202187),	-- Plagued Flesh (QI!)
 				},
 			}),
@@ -1370,7 +1389,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				},
 				["provider"] = { "n", 199793 },	-- Calia Menethil
 				["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
-				["g"] = {
+				["groups"] = {
 					i(206929),	-- Hawlsey's Armor (QI!)
 				},
 			}),
@@ -1390,7 +1409,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
 				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
-				["g"] = {
+				["groups"] = {
 					i(204799),	-- Scarlet Disguise (QI!)
 				},
 			}),
@@ -1421,9 +1440,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(72867, {	-- I Am Forsaken
 				["sourceQuests"] = { 72866 },	-- Return to Lordaeron
-				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
-				["g"] = {
+				["qgs"] = {
+					199893,	-- Lilian Voss
+					199922,	-- Lilian Voss
+				},
+				["coord"] = { 61.8, 69.4, 2070 },	-- Tirisfal Glades
+				["groups"] = {
 					iensemble(208475, {	-- Ensemble: Forsaken Champion's Attire
 						["extraTransmogSetSpells"] = {
 							419716,	-- Ensemble: Forsaken Champion's Additional Attire
@@ -1436,12 +1458,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(VOIDELF, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { VOIDELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 		["maps"] = { TELOGRUS_RIFT },
-		["g"] = {
+		["groups"] = {
 			q(49928, {	-- Heritage of the Void
 				["provider"] = { "n", 131345 },	-- Alleria Windrunner
 				["coord"] = { 28.6, 22.3, TELOGRUS_RIFT },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(12291),	-- Heritage of the Void
 					i(156690),	-- Ren'dorei Helm
 					i(156691),	-- Ren'dorei Pauldrons
@@ -1458,12 +1480,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(VULPERA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { VULPERA } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
-		["g"] = {
-			q(58435, {    -- Heritage of the Vulpera
+		["groups"] = {
+			q(58435, {	-- Heritage of the Vulpera
 				["provider"] = { "n", 124108 },	-- Hagashi <Innkeeper>
 				["coord"] = { 56.8,	49.8, VOLDUN },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(14002),	-- Heritage of the Vulpera
 					i(173968),	-- Vulpera Heritage Shawl
 					i(173971),	-- Vulpera Heritage Shoulderpads
@@ -1480,7 +1502,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(WORGEN, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { WORGEN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			-- #if BEFORE 10.1.0
 			["minReputation"] = { FACTION_GILNEAS, EXALTED },
 			-- #endif
@@ -1495,46 +1517,46 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["coord"] = { 82.3, 27.8, STORMWIND_CITY },
 			}),
 			q(54980, {	-- Bane of the Nightbane
+				["sourceQuest"] = 54977, -- Into Duskwood
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 				["coord"] = { 18.1, 57.2, DUSKWOOD },
-				["sourceQuest"] = 54977, -- Into Duskwood
 			}),
 			q(54981, {	-- Cry to the Moon
+				["sourceQuest"] = 54980, -- Bane of the Nightbane
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 				["coord"] = { 18.1, 57.2, DUSKWOOD },
-				["sourceQuest"] = 54980, -- Bane of the Nightbane
-				["g"] = {
+				["groups"] = {
 					i(167032),	-- Elune's Grace (QI!)
 				},
 			}),
 			q(54982, {	-- The Spirit of the Hunter
+				["sourceQuest"] = 54980, -- Bane of the Nightbane
 				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 				["coord"] = { 18.1, 57.2, DUSKWOOD },
-				["sourceQuest"] = 54980, -- Bane of the Nightbane
-				["g"] = {
+				["groups"] = {
 					i(167031),	-- Bloodstained Fangs (QI!)
 				},
 			}),
 			q(54983, {	-- Waking a Dreamer
-				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-				["coord"] = { 46.4, 36.9, DUSKWOOD },
 				["sourceQuests"] = {
 					54981,		-- Cry to the Moon
 					54982,		-- The Spirit of the Hunter
 				},
+				["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
+				["coord"] = { 46.4, 36.9, DUSKWOOD },
 			}),
 			q(54984, {	-- Let Sleeping Wolves Lie
 				["description"] = "If you can't see Goldrinn, try relog",
+				["sourceQuest"] = 54983, -- Waking a Dreamer
 				["provider"] = { "n", 150106 },	-- Goldrinn
 				["coord"] = { 46.6, 36.6, DUSKWOOD },
-				["sourceQuest"] = 54983, -- Waking a Dreamer
 				["maps"] = { 1577 },	-- Gilneas City (Scenario)
 			}),
 			q(54990, {	-- The New Guard
+				["sourceQuest"] = 54984, -- Let Sleeping Wolves Lie
 				["provider"] = { "n", 150115 },	-- Princess Tess Greymane
 				["coord"] = { 46.3, 37.0, DUSKWOOD },
-				["sourceQuest"] = 54984, -- Let Sleeping Wolves Lie
-				["g"] = {
+				["groups"] = {
 					i(173999),	-- Greyguard Buckle
 					i(174000),	-- Greyguard Ceremonial Shoulderguards
 					i(174003),	-- Greyguard Dueling Gloves
@@ -1550,12 +1572,12 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	})),
 	race(ZANDALARI, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { ZANDALARI } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
-		["g"] = {
-			q(53721, {    -- Heritage of the Zandalari
+		["groups"] = {
+			q(53721, {	-- Heritage of the Zandalari
 				["provider"] = { "n", 146335 },	--  Queen Talanji
 				["coord"] = { 42.2, 9.4, DAZARALOR },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					ach(13503),	-- Heritage of the Zandalari
 					i(164993),	-- Zandalari Mask
 					i(164994),	-- Zandalari Pauldrons

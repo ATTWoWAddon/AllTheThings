@@ -1,5 +1,5 @@
 local appName, app = ...;
-local L = app.L.SETTINGS_MENU;
+local L = app.L;
 local settings = app.Settings;
 
 -- Settings Class
@@ -7,6 +7,7 @@ local Things = {
 	"Achievements",
 	"AzeriteEssences",
 	"BattlePets",
+	"Campsites",
 	"CharacterUnlocks",
 	"Conduits",
 	"DeathTracker",
@@ -28,7 +29,6 @@ local Things = {
 	"Titles",
 	"Toys",
 	"Transmog",
-	--"WarbandScenes",
 }
 local GeneralSettingsBase = {
 	__index = {
@@ -60,6 +60,7 @@ local GeneralSettingsBase = {
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = app.GameBuildVersion >= 80000,
 		["Thing:BattlePets"] = true,
+		["Thing:Campsites"] = app.GameBuildVersion >= 110100,
 		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
 		["Thing:MountMods"] = app.GameBuildVersion >= 100000,
@@ -80,7 +81,6 @@ local GeneralSettingsBase = {
 		["Thing:Titles"] = true,
 		["Thing:Toys"] = true,
 		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
-		--["Thing:WarbandScenes"] = app.GameBuildVersion >= 110100,
 		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
 		["Skip:AutoRefresh"] = false,
@@ -100,6 +100,7 @@ local GeneralSettingsBase = {
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
+		["PresetRestore"] = {},
 	},
 };
 local FilterSettingsBase = {
@@ -114,11 +115,14 @@ local TooltipSettingsBase = {
 		["Auto:AH"] = false,
 		["Celebrate"] = true,
 		["Channel"] = "Master",
+		["Cost"] = true,
 		["Screenshot"] = false,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
 		["Enabled:Mod"] = "None",
+		["EnablePetCageTooltips"] = true,
 		["Expand:Difficulty"] = true,
+		["Expand:MiniList"] = true,
 		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
 		["WorldMapButton"] = true,
@@ -134,6 +138,7 @@ local TooltipSettingsBase = {
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["Objectives"] = false,
+		["Owned Pets"] = true,
 		["Precision"] = 2,
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
@@ -160,7 +165,6 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
-		["NPCData:Nested"] = false,
 		["QuestChain:Nested"] = true,
 		["WorldQuestsList:Currencies"] = true,
 		["Updates:AdHoc"] = true,
@@ -190,6 +194,7 @@ local TooltipSettingsBase = {
 		["playerCoord"] = true,
 		["requireEvent"] = true,
 		["requireSkill"] = true,
+		["petBattleLvl"] = true,
 		["providers"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,
@@ -211,6 +216,11 @@ local TooltipSettingsBase = {
 		["u"] = true,
 	},
 };
+local UnobtainableSettingsBase = {
+	__index = {
+		[7] = true,	-- Trading Post
+	}
+};
 
 local RawSettings;
 local function SetupRawSettings()
@@ -221,6 +231,7 @@ local function SetupRawSettings()
 	setmetatable(RawSettings.General, GeneralSettingsBase)
 	setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
 	setmetatable(RawSettings.Filters, FilterSettingsBase)
+	setmetatable(RawSettings.Unobtainable, UnobtainableSettingsBase)
 end
 settings.Initialize = function(self)
 	-- app.PrintDebug("settings.Initialize")
@@ -261,32 +272,28 @@ settings.Initialize = function(self)
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
 
-	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+	self:UpdateMode()
+	-- TODO: need to properly use other libraries to create minimap button if delayed...
+	-- but other addons only handle pre-existing minimap buttons when they load, so for now move back to the order it was
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
-	self:UpdateMode()
 
-	if self:GetTooltipSetting("Auto:MainList") then
-		app.AddEventHandler("OnInit", function()
+	app.AddEventHandler("OnInit", function()
+		if self:GetTooltipSetting("Auto:MainList") then
 			app:GetWindow("Prime"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:MiniList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:MiniList") then
 			app:GetWindow("CurrentInstance"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:RaidAssistant") then
 			app:GetWindow("RaidAssistant"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:WorldQuestsList") then
 			app:GetWindow("WorldQuests"):SetVisible(true)
-		end)
-	end
+		end
+		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+	end)
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()
@@ -408,12 +415,12 @@ settings.ApplyProfile = function()
 			end
 
 			-- when applying a profile, clean out any 'false' Unobtainable keys for cleaner settings storage
-			-- since there are no situations where Unobtainables are included by default
+			-- for non-defaulted fields
 			local unobCopy = app.CloneDictionary(RawSettings.Unobtainable)
 			-- this key is no longer used
 			unobCopy.DoFiltering = false
 			for unobID,set in pairs(unobCopy) do
-				if not set then
+				if not set and not UnobtainableSettingsBase.__index[unobID] then
 					RawSettings.Unobtainable[unobID] = nil
 				end
 			end
@@ -476,7 +483,11 @@ settings.Get = function(self, setting, container)
 	return RawSettings.General[setting]
 end
 settings.GetValue = function(self, container, setting)
-	return RawSettings[container][setting]
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		return
+	end
+	return settingscontainer[setting]
 end
 settings.GetDefaultFilter = function(self, filterID)
 	return FilterSettingsBase.__index[filterID]
@@ -520,6 +531,17 @@ end
 settings.GetRawSettings = function(self, name)
 	return RawSettings[name];
 end
+-- Applies a metatable (to provide Defaults) for a given settings Container if one is not already defined
+settings.ApplySettingsMetatable = function(self, container, meta)
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		settingscontainer = setmetatable({}, meta)
+		RawSettings[container] = settingscontainer
+	elseif not getmetatable(settingscontainer) then
+		setmetatable(settingscontainer, meta)
+		RawSettings[container] = settingscontainer
+	end
+end
 settings.GetModeString = function(self)
 	local mode = L.MODE
 	if (settings:Get("Thing:Transmog") or app.MODE_DEBUG) and app.GameBuildVersion > 40000 then
@@ -554,6 +576,8 @@ settings.GetModeString = function(self)
 		local solo = not app.MODE_DEBUG_OR_ACCOUNT
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
+		local rankedTotalCount, rankedCount = 0, 0;
+		local coreTotalCount, coreCount = 0, 0;
 		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix, thingName = (":"):split(key)
@@ -571,8 +595,24 @@ settings.GetModeString = function(self)
 						insaneTotalCount = insaneTotalCount + 1;
 						insaneCount = insaneCount + 1;
 					end
-				elseif self.RequiredForInsaneMode[thingName] then
-					insaneTotalCount = insaneTotalCount + 1;
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+						rankedCount = rankedCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+						coreCount = coreCount + 1;
+					end
+				else
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+					end
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+					end
 				end
 			elseif solo and keyPrefix == "AccountWide"
 				and not settings.ForceAccountWide[thingName]
@@ -588,11 +628,25 @@ settings.GetModeString = function(self)
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L.TITLE_ONLY .. mode
 		elseif insaneCount == insaneTotalCount then
-			-- only insane if not hiding anything!
-			if settings:NonInsane() then
-				-- don't add insane :)
+			-- only Insane if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Insane :)
 			else
 				mode = L.TITLE_INSANE .. mode
+			end
+		elseif rankedCount == rankedTotalCount then
+			-- only Ranked if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Ranked :)
+			else
+				mode = L.TITLE_RANKED .. mode
+			end
+		elseif coreCount == coreTotalCount then
+			-- only Core if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Core :)
+			else
+				mode = L.TITLE_CORE .. mode
 			end
 		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode.Transmog then
 			mode = L.TITLE_SOME_THINGS .. mode
@@ -619,6 +673,8 @@ settings.GetShortModeString = function(self)
 		local totalThingCount = 0
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
+		local rankedTotalCount, rankedCount = 0, 0;
+		local coreTotalCount, coreCount = 0, 0;
 		local solo = not app.MODE_DEBUG_OR_ACCOUNT
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix, thingName = (":"):split(key)
@@ -636,8 +692,24 @@ settings.GetShortModeString = function(self)
 						insaneTotalCount = insaneTotalCount + 1;
 						insaneCount = insaneCount + 1;
 					end
-				elseif self.RequiredForInsaneMode[thingName] then
-					insaneTotalCount = insaneTotalCount + 1;
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+						rankedCount = rankedCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+						coreCount = coreCount + 1;
+					end
+				else
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+					end
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+					end
 				end
 			elseif solo and keyPrefix == "AccountWide"
 				and not settings.ForceAccountWide[thingName]
@@ -650,11 +722,25 @@ settings.GetShortModeString = function(self)
 		if thingCount == 0 then
 			style = "N"
 		elseif insaneCount == insaneTotalCount then
-			-- only insane if not hiding anything!
-			if settings:NonInsane() then
-				-- don't add insane :)
+			-- only Insane if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Insane :)
 			else
 				style = "I"
+			end
+		elseif rankedCount == rankedTotalCount then
+			-- only Ranked if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Ranked :)
+			else
+				style = "R"
+			end
+		elseif coreCount == coreTotalCount then
+			-- only Core if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Core :)
+			else
+				style = "C"
 			end
 		else
 			style = ""
@@ -664,7 +750,7 @@ settings.GetShortModeString = function(self)
 		end
 		-- Waiting on Refresh to properly show values
 		if self.NeedsRefresh then
-			style = "R:" .. " " .. style
+			style = "R: " .. style
 		end
 		if self:Get("Completionist") then
 			if app.MODE_ACCOUNT then
@@ -709,14 +795,22 @@ end
 end
 settings.Set = function(self, setting, value)
 	RawSettings.General[setting] = value
+	app.HandleEvent("Settings.OnSet","General",setting,value)
 	self:Refresh()
 end
 settings.SetValue = function(self, container, setting, value)
-	RawSettings[container][setting] = value
+	local settingscontainer = RawSettings[container]
+	if not settingscontainer then
+		settingscontainer = {}
+		RawSettings[container] = settingscontainer
+	end
+	settingscontainer[setting] = value
+	app.HandleEvent("Settings.OnSet",container,setting,value)
 	self:Refresh()
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	RawSettings.Tooltips[setting] = value
+	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
 	app.WipeSearchCache();
 	self:Refresh()
 end
@@ -724,7 +818,7 @@ settings.GetUnobtainableFilter = function(self, u)
 	return not u or RawSettings.Unobtainable[u]
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	self:SetValue("Unobtainable", u, value and true or nil)
+	self:SetValue("Unobtainable", u, value)
 	self:UpdateMode(1);
 end
 
@@ -767,14 +861,14 @@ do
 ATTSettingsObjectMixin = {
 	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox below it. Allows an 'indent' which defines how many steps of indentation to
 	-- apply either positive (right) or negative (left), or specifying another frame against which to LEFT-align
-	AlignBelow = function(self, other, indent)
+	AlignBelow = function(self, other, indent, add)
 		if type(indent) == "number" then
-			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, 4)
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", indent * 8, add or 4)
 		elseif type(indent) == "table" then
-			self:SetPoint("TOP", other, "BOTTOM", 0, 4)
+			self:SetPoint("TOP", other, "BOTTOM", 0, add or 4)
 			self:SetPoint("LEFT", indent, "LEFT")
 		else
-			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, 4)
+			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, add or 4)
 		end
 		return self
 	end,
@@ -1094,7 +1188,7 @@ end
 
 Mixin(settings, ATTSettingsPanelMixin);
 
-local Categories, AddOnCategoryID, RootCategoryID = {}, appName, nil;
+local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
 local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
 settings.Open = function(self)
 	if not openToCategory(RootCategoryID or AddOnCategoryID) then
@@ -1117,7 +1211,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 			Settings.RegisterAddOnCategory(category);
 			AddOnCategoryID = category.ID;
 		else
-			parentCategory = Categories[parentCategory or appName];
+			parentCategory = OptionsPages[parentCategory or appName];
 			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
 			if isRootCategory then RootCategoryID = category.ID; end
 		end
@@ -1128,7 +1222,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 		if text ~= appName then subcategory.parent = parentCategory or appName; end
 		InterfaceOptions_AddCategory(subcategory);
 	end
-	Categories[text] = subcategory;
+	OptionsPages[text] = subcategory;
 
 	-- Common Header
 	local logo = subcategory:CreateTexture(nil, "ARTWORK");

@@ -61,9 +61,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),	
 				q(86965, {	-- No Ordinary Shadows
+					["sourceQuest"] = 86964,	-- For Gold and Glory!
 					["qg"] = 237820,	-- Deceased Adventurer
 					["coord"] = { 40.0, 74.2, DEADWIND_PASS },
-					["sourceQuest"] = 86964,	-- For Gold and Glory!
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
@@ -73,9 +73,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(86966, {	-- Seeking Survivors
+					["sourceQuest"] = 86965,	-- No Ordinary Shadows
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
 					["coord"] = { 52.0, 34.0, DEADWIND_PASS },
-					["sourceQuest"] = 86965,	-- No Ordinary Shadows
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
@@ -88,9 +88,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(86967, {	-- To the Rescue
+					["sourceQuest"] = 86966,	-- Seeking Survivors
 					["qg"] = 237819,	-- Injured Adventurer
 					["coord"] = { 65.2, 78.6, DEADWIND_PASS },
-					["sourceQuest"] = 86966,	-- Seeking Survivors
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {
@@ -109,15 +109,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(86968, {	-- Are You Afraid of the Dark?
+					["sourceQuest"] = 86967,	-- To the Rescue
 					["qg"] = 237818,	-- Harrison Jones
 					["coord"] = { 52.2, 34.2, DEADWIND_PASS },
-					["sourceQuest"] = 86967,	-- To the Rescue
 					["lvl"] = 60,
 				}),
 				q(86969, {	-- The Hypothesis
+					["sourceQuest"] = 86968,	-- Are You Afraid of the Dark?
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
 					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
-					["sourceQuest"] = 86968,	-- Are You Afraid of the Dark?
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Flame of Life
@@ -145,9 +145,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(86970, {	-- Testing Our Hypothesis
+					["sourceQuest"] = 86969,	-- The Hypothesis
 					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
 					["coord"] = { 52.0, 34.6, DEADWIND_PASS },
-					["sourceQuest"] = 86969,	-- The Hypothesis
 					["lvl"] = 60,
 				}),
 			}),

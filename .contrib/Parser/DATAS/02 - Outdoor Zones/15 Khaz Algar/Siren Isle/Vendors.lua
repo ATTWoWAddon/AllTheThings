@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(VENDORS, {
 			n(236045, {	-- Ailenda Hedgemyr
 				["coord"] = { 70.8, 40.2, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(350, i(233925)),	-- Arathi Knight's Shoulderguard
 					fbiron(350, i(233922)),	-- Arathi Knight's Headguard
 					fbiron(350, i(233924)),	-- Arathi Champion's Shoulderguard
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(232295, {	-- Almyr Sunhart
 				["coord"] = { 70.6, 38.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234287),	-- Radiant Focus
 					i(234527),	-- Sacredite's Ledger
 					i(234466),	-- Tattered Arathi Prayer Scroll
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(228074, {	-- Angorla
 				["coord"] = { 71.2, 44.0, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(50, i(228638, {	-- Stormbringer's Runed Citrine
 						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					{ 72.0, 43.0, SIREN_ISLE },
 					{ 70.8, 40.6, SIREN_ISLE },
 				},
-				["g"] = {
+				["groups"] = {
 					fbiron(50, i(228642, {	-- Storm Sewer's Citrine
 						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(228093, {	-- Argarom
 				["coord"] = { 67.3, 41.7, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOAKS, {
 							fbiron(105, i(229019)),	-- Earthen Deckhand's Cape
@@ -164,13 +164,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["description"] = "You must have the Prismatic Snapdragon Mount before this dialog option can appear.",
 				--["lockCriteria"] = {1, "questID", 86485 },	-- TODO: probably a spellID will be better?
 				["coord"] = { 69.2, 45.8, SIREN_ISLE },
-				["g"] = {
-					i(233497),	-- Kaja'Cola-Braised Snapdragon Treat
+				["groups"] = {
+					i(233497),	-- Kaja'Cola-Braised Snapdragon Treat (CI!)
 				},
 			}),
 			n(231997, {	-- Didi the Wrench
 				["coord"] = { 71.2, 45.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(50, i(228634, {	-- Thunderlord's Crackling Citrine
 						["description"] = "You may have to acquire the gem as Bonus Objective Reward once before it appears on the vendor.",
 					})),
@@ -185,13 +185,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(228103, {	-- Flori
 				["coord"] = { 67.4, 40.0, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234526),	-- Archivist's Codex
 				},
 			}),
 			n(235407, {	-- Hooded Purveyor
 				["coord"] = { 67.9, 39.3, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(750, i(235015)),	-- Awakened Supply Crate (TOY!)
 					fbiron(500, i(224165)),	-- Dornogal Tabard
 					fbiron(500, i(224168)),	-- Earthen Expedition Tabard
@@ -199,7 +199,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					fbiron(3000, iensemble(234524)),	-- Ensemble: Awakened Ambassador's Uniform
 					fbiron(500, i(224167)),	-- Gundargaz Tabard
 					fbiron(500, i(233980)),	-- Noble's Forgegrounds Worksack
-					--fbiron(1000, i(235016)),	-- Redeployment Module (TOY!) (57788 - NYI?)
 					fbiron(350, i(235297)),	-- Smuggled Councilor's Chalice
 					fbiron(200, i(233829)),	-- Smuggled Councilor's Chalice
 					fbiron(350, i(235298)),	-- Smuggled Forgegrounds Hammer
@@ -212,19 +211,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(227814, {	-- Sally Boltwrench
 				["coord"] = { 69.0, 47.5, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(10, i(230728)),	-- Experimental Go-Pack
 				},
 			}),
 			n(228390, {	-- Snizzle Fumblecrank
 				["coord"] = { 69.0, 46.4, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234282),	-- Decorative Yard Flamingo (TODO: unsure at what point it pop here)
 				},
 			}),
 			n(234390, {	-- Soweezi
 				["coord"] = { 70.0, 48.4, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(2000, iensemble(234519)),	-- Ensemble: Paradise Beach Loungewear
 					fbiron(4500, iensemble(221543)),	-- Ensemble: Pink Tropical
 					fbiron(4500, iensemble(222960)),	-- Ensemble: Pink Tropical Swimwear
@@ -241,7 +240,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			n(233259, {	-- Taljori
 				["coord"] = { 65.7, 41.7, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					fbiron(350, i(233810)),	-- Barnacle Breaker's Falchion
 					fbiron(350, i(233912)),	-- Bilge Rat Pirate Hat
 					fbiron(350, i(233911)),	-- Bloodstained Rat Cap
@@ -288,4 +287,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 		}),
 	}),
-})));
+}));

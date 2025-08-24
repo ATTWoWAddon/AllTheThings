@@ -22,29 +22,29 @@ root(ROOTS.Zones, {
 					},
 				})),
 				q(58902, {	-- Defender of Azeroth (A)
-					["qg"] = 163016,	-- The Lich King
 					["sourceQuest"] = 58877,	-- Death's Power Grows
+					["qg"] = 163016,	-- The Lich King
 					["coord"] = { 49.5, 90.7, 1602 },
 					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58903, {	-- Defender of Azeroth (H)
-					["qg"] = 163016,	-- The Lich King
 					["sourceQuest"] = 58877,	-- Death's Power Grows
+					["qg"] = 163016,	-- The Lich King
 					["coord"] = { 49.5, 90.7, 1602 },
 					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 				}),
 				q(58989, {	-- Runeforging 101
-					["qg"] = 29246,	-- Highlord Darion Morgraine
+					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
 					["sourceQuests"] = {
 						58902,	-- Defender of Azeroth (A)
 						58903,	-- Defender of Azeroth (H)
 					},
-					["coord"] = { 82.0, 46.3, 648 },	-- Acherus: The Ebon Hold (Lower Level)
-					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
+					["qg"] = 29246,	-- Highlord Darion Morgraine
+					["coord"] = { 82.0, 46.3, EASTERN_PLAGUELANDS },	-- Acherus: The Ebon Hold (Lower Level)
 					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },
 				}),

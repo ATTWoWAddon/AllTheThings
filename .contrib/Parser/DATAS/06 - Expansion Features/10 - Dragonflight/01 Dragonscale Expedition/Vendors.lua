@@ -57,11 +57,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(189226, {	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
+				["groups"] = bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
 					{		-- RENOWN 1 --
-						i(198854, {	-- Archeologist Artifact Notes
+						i(198854, {	-- Archeologist Artifact Notes (CI!)
 							["sourceQuest"] = 72709,	-- Funding a Treasure Hunt
-							["questID"] = 70409,
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 10 },
 							},
@@ -130,8 +129,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
-						i(198083, {	-- Expedition Supply Kit
-							["questID"] = 69996,
+						i(198083, {	-- Expedition Supply Kit (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 75 },
 							},
@@ -426,8 +424,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								{ "c", DRAGON_SUPPLIES, 1000 },
 							},
 						}),
-						i(200738, {	-- Onyx Gem Cluster Map
-							["questID"] = 72021,
+						i(200738, {	-- Onyx Gem Cluster Map (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 								{ "i", NELTHARITE, 3 },
@@ -527,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(187444, {	-- Kajithalan
 				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(196440),	-- Dragon Flight
 					i(194691),	-- Artisanal Berry Juice
 					i(201089),	-- Craft Creche Crowler
@@ -544,7 +541,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					------ RENOWN 5 ------
 					191294,	-- Small Expedition Shover
 					------ RENOWN 7 ------
-					198083,	-- Expedition Supply Kit
+					198083,	-- Expedition Supply Kit (CI!)
 					------ RENOWN 12 ------
 					198737,	-- Relic Handler's Gauntlets
 					198735,	-- Relic Handler's Gloves

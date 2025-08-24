@@ -9,7 +9,7 @@ local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12312;
 local COLOSOS_CRITERIA_UID_HEROIC_HORDE = 12320;
 local RUNOK_CRITERIA_UID_HEROIC_ALLIANCE = 12320;
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	inst(284, {	-- Trial of the Champion
 		["mapID"] = TRIAL_OF_THE_CHAMPION,
 		["coord"] = { 74.0, 20.9, ICECROWN },
@@ -258,15 +258,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #if AFTER 4.3.0.14732
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
-					["qg"] = 34996,	-- Highlord Tirion Fordring
-					-- #if ANYCLASSIC
+					-- #if BEFORE 5.0.4
 					["description"] = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
 					["isBounty"] = true,
 					-- #endif
+					["qg"] = 34996,	-- Highlord Tirion Fordring
 					["timeline"] = {
-						ADDED_4_3_0,
 						-- #if ANYCLASSIC
-						REMOVED_4_3_0,
+						CREATED_4_3_0,
+						ADDED_5_0_4,
+						-- #else
+						ADDED_4_3_0,
 						-- #endif
 					},
 				}),
@@ -774,7 +776,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(284, {

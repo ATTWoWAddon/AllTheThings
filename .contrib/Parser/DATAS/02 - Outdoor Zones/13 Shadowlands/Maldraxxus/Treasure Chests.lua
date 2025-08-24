@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60368,
 				["isDaily"] = true,
 				["coord"] = { 44.0, 39.8, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(184318),	-- Battlecry of Krexus (TOY!)
 					i(183827),	-- Blacksteel Backplate
 					i(183824, {	-- Cache of Spare Weapons
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(171337, {		-- Bloated Lootfly
-				["description"] = "This is a critter that flies around.  Find it, kill it, and loot it to collect the treasure.",
+				["description"] = "This is a critter that flies around. Find it, kill it, and loot it to collect the treasure.",
 				["coords"] = {
 					{ 49.0, 24.6, MALDRAXXUS },
 					{ 49.8, 21.8, MALDRAXXUS },
@@ -61,17 +61,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isDaily"] = true,
 			}),
 			o(352433, {		-- Cache of Eyes
-				["description"] = "Coordinates are to the entrance of Sightless Hold.  The cache spawns in numerous locations within the cave.  The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
+				["description"] = "Coordinates are to the entrance of Sightless Hold. The cache spawns in numerous locations within the cave. The pet is not a 100% drop and the chest is not always up, but there is no cooldown or lockout for opening the chest.",
 				["coord"] = { 54.0, 12.3, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(181171),	-- Luminous Webspinner (PET!)
 				},
 			}),
 			o(345456, {		-- Chest of Eyes
-				["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r.  Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
+				["description"] = "The path to the treasure starts at |cFFFFFFFF51.6, 13.7|r. Climb up the side of the crumbled building until you get close to the treasure, then turn right and walk up the cliff to it.",
 				["questID"] = 59244,
 				["coord"] = { 48.3, 16.3, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(183696),	-- Sp-eye-glass
 				},
 			}),
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			o(358855, {		-- Damaged Safe Fall Pack
 				["coord"] = { 60.0, 44.6, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(183831),	-- Safe Fall Kit
 				},
 			}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 37.9, 76.3, MALDRAXXUS },
 					{ 50.3, 17.4, 1651 },	-- Molten Forge
 				},
-				["g"] = {
+				["groups"] = {
 					i(183752),	-- Empty Nightcap Cask
 				},
 			}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(358531, {		-- Giant Cache of Epic Treasure
 				["coord"] = { 41.4, 19.7, MALDRAXXUS },
 				["questID"] = 62602,
-				["g"] = {
+				["groups"] = {
 					p(3047),	-- Spinebug
 				},
 			}),
@@ -130,10 +130,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(169664, {		-- Kyrian Corpse
 				["coord"] = { 32.7, 21.2, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(180085, {	-- Kyrian Keepsake
 						["questID"] = 60587,	-- quest pops for opening the keepsake, not looting it
-						["g"] = {
+						["groups"] = {
 							i(175708),	-- Reconstructed Family Locket
 						},
 					}),
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ "i", 182163, 1 },	-- 1x Strength of Blood
 					{ "i", 180771, 1 },	-- 1x Potion of Unusual Strength
 				},
-				["g"] = {
+				["groups"] = {
 					ach(14626),	-- Harvester of Sorrow
 					i(181164),	-- Oonar's Arm (PET!)
 					i(180273),	-- Sorrowbane
@@ -172,34 +172,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(347444, {		-- Ornate Bone Shield
 				["coord"] = { 47.2, 62.1, MALDRAXXUS },
 				["questID"] = 59358,
-				["g"] = {
+				["groups"] = {
 					i(180749),	-- Hauk's Battle-Scarred Bulwark
 				},
 			}),
 			o(355886, {		-- Plaguefallen Chest
-				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
+				["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff. You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleport to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
 				["coord"] = { 62.4, 76.5, MALDRAXXUS },
 				["questID"] = 61474,
-				["g"] = {
+				["groups"] = {
 					i(183515),	-- Iridescent Ooze (PET!)
 				},
 			}),
 			o(345458, {		-- Prize Bag
 				["description"] = "Spawns periodically around the arena.",
 				["coord"] = { 50.3, 47.1, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(180854),	-- Competitor's Medallion
 					i(180855),	-- Competitor's Signet
 				},
 			}),
 			o(355980, {		-- Ritualist's Cache
-				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room.  Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
+				["description"] = "Loot the |cFFFFFFFFRitual Pages|r from the front-right corner of the room. Take them to the back-right corner and use the |cFFFFFFFFBook of Binding Rituals|r, and then you can loot the chest.",
 				["coord"] = { 62.4, 76.5, MALDRAXXUS },
 				["questID"] = 61514,
-				["g"] = {
-					i(183517, {	-- Page 76 of the Necronom-i-nom
-						["questID"] = 62372,
-					}),
+				["groups"] = {
+					i(183517),	-- Page 76 of the Necronom-i-nom (CI!)
 				},
 			}),
 			o(355037, {		-- Runebound Coffer
@@ -210,7 +208,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 61115,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						["coords"] = {
 							{ 24.4, 34.8, MALDRAXXUS },
@@ -230,7 +228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 35.4, 27.9, MALDRAXXUS },
 							{ 35.5, 30.2, MALDRAXXUS },
 						},
-						["g"] = {
+						["groups"] = {
 							o(355194, {	-- Rune of Constructs
 								["questID"] = 61120,
 								["isDaily"] = true,
@@ -255,7 +253,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 61116,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						["coords"] = {
 							{ 63.8, 33.2, MALDRAXXUS },
@@ -268,7 +266,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 70.1, 31.3, MALDRAXXUS },
 							{ 71.6, 35.2, MALDRAXXUS },
 						},
-						["g"] = {
+						["groups"] = {
 							o(355040, {	-- Rune of Rituals
 								["questID"] = 61117,
 								["isDaily"] = true,
@@ -291,7 +289,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 31.7, 70.0, MALDRAXXUS },	-- Treasure
 				["questID"] = 61491,
 				["cost"] = { { "i", 181777, 1 } },	-- Phaeton's Key
-				["g"] = {
+				["groups"] = {
 					i(183516),	-- Stained Bonefused Mantle
 				},
 			}),
@@ -302,7 +300,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{"i",183111,1},	-- Animated Ulna
 					{"i",183112,1},	-- Animated Radius
 				},
-				["g"] = {
+				["groups"] = {
 					i(183113),	-- Flexing Phalanges
 				},
 			}),
@@ -318,7 +316,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 61093,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(181262),	-- Bubbling Pustule (PET!)
 					i(184447);	-- Kevin's Party Supplies (TOY!)
 				},
@@ -363,7 +361,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "There are two caves - the treasure is in the lower one.",
 				["coord"] = { 65.6, 50.8, MALDRAXXUS },
 				["questID"] = 61451,
-				["g"] = {
+				["groups"] = {
 					i(182618),	-- Reclaimed Vessel (QS!)
 				},
 			}),
@@ -371,7 +369,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 165037 },	-- Strange Growth
 				["coord"] = { 55.9, 38.9, MALDRAXXUS },
 				["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now
-				["g"] = {
+				["groups"] = {
 					i(182607, {	-- Hairy Egg
 						i(182606),	-- Bloodlouse Larva (PET!)
 					}),
@@ -384,7 +382,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 42.3, 23.3, MALDRAXXUS },
 				["questID"] = 61470,
-				["g"] = {
+				["groups"] = {
 					i(182732),	-- The Necronom-i-nom (TOY!)
 					i(183120),	-- Partially Digested Encyclopedia (maybe drops when Toy is known?)
 				},
@@ -393,7 +391,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Pick up the |cFFFFFFFFEmpty Plague Bottle|r from the table next to the vat.",
 				["coord"] = { 59.8, 79.0, MALDRAXXUS },
 				["questID"] = 61444,
-				["g"] = {
+				["groups"] = {
 					i(181825),	-- Phial of Ravenous Slime (TOY!)
 				},
 			}),
@@ -401,7 +399,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 54.9, 26.1, MALDRAXXUS },
 				["questID"] = 60109,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(183602),	-- Sticky Webbing
 				},
 			}),

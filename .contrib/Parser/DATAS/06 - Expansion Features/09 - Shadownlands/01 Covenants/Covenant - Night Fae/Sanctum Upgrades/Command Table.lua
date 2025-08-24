@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641394,
-			["g"] = {
+			["groups"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = 3675495,
-						["g"] = {
+						["groups"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,	-- Temporary troops
@@ -31,7 +31,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1338),	-- Elwyn
 									},
 								}),
@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1288),	-- Groonoomcrooek
 									},
 								}),
@@ -49,7 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1284),	-- Master Sha'lor
 									},
 								}),
@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1283),	-- Guardian Kota
 									},
 								}),
@@ -67,7 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1286),	-- Qadarin
 									},
 								}),
@@ -76,7 +76,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1337),	-- Sulanoom
 									},
 								}),
@@ -85,7 +85,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1285),	-- Te'zan
 									},
 								}),
@@ -94,7 +94,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1287),	-- Watcher Vesperbloom
 									},
 								}),
@@ -103,7 +103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1339),	-- Yanlar
 									},
 								}),
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(61552, {	-- The Hunt Watches
 									["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-									["coord"] = { 39.7, 55.7, THE_TRUNK },
+									["coord"] = { 39.7, 55.7, THE_ROOTS },
 								}),
 							}),
 							n(REWARDS, {

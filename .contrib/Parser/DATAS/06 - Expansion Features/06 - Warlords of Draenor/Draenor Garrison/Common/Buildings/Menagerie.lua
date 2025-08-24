@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures,
 								127704,	-- Bloodthorn Hatchling (PET!)
 								127705,	-- Lost Netherpup (PET!)
 							}},
-							["g"] = {
+							["groups"] = {
 								i(127707, {	-- Indestructible Bone (TOY!)
 									["cost"] = {
 										-- #if BEFORE 10.2.5
@@ -54,7 +54,7 @@ root(ROOTS.ExpansionFeatures,
 								127704,	-- Bloodthorn Hatchling (PET!)
 								127705,	-- Lost Netherpup (PET!)
 							}},
-							["g"] = {
+							["groups"] = {
 								i(127707, {	-- Indestructible Bone (TOY!)
 									["cost"] = {
 										-- #if BEFORE 10.2.5

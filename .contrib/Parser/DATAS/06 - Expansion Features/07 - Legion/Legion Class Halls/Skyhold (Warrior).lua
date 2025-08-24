@@ -150,14 +150,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 	n(CLASS_HALL, {
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 			["maps"] = { SKYHOLD },
-			["g"] = {
+			["groups"] = {
 				n(ARTIFACTS, {
 					cl(WARRIOR, ARMS, {
 						q(43643, {	-- Secrets of the Axes
-							["coord"] = { 41.0, 37.1, SKYHOLD },
-							["provider"] = { "n", 96586 },	-- Master Smith Helgar
 							["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
-							["g"] = {
+							["provider"] = { "n", 96586 },	-- Master Smith Helgar
+							["coord"] = { 41.0, 37.1, SKYHOLD },
+							["groups"] = {
 								i(139578, {	-- The Arcanite Bladebreaker
 									artifact(908),	-- Strom'kar, the Warbreaker
 								}),
@@ -171,7 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								{ "i", 140658, 1 },	-- Skull of Nithogg
 								{ "i", 140659, 1 },	-- Skull of Shar'thos
 							},
-							["g"] = {
+							["groups"] = {
 								artifact(964),	-- Warswords of the Valarjar [Main Hand]
 								-- artifact(964),	-- Warswords of the Valarjar [Off Hand]
 							},
@@ -183,15 +183,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							{ 45.1, 28.6, SKYHOLD },
 							{ 49.6, 68.5, HIGHMOUNTAIN },
 						},
-						["g"] = {
+						["groups"] = {
 							q(44311, {	-- Burning Plate of the Worldbreaker Available
 								["name"] = "Burning Plate of the Worldbreaker Available",
 								["description"] = "This quest indicates if the appearance spawns and can be looted.",
 							}),
 							q(44312, {	-- Burning Plate of the Worldbreaker Denied
-								["isDaily"] = true,
 								["name"] = "Burning Plate of the Worldbreaker Denied",
 								["description"] = "This quest apparently makes you unable to see/obtain the container while it is true.",
+								["isDaily"] = true,
 							}),
 							i(139580, {	-- Burning Plate of the Worldbreaker
 								artifact(159),	-- Scale of the Earth-Warder
@@ -265,13 +265,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(43949, {	-- More Weapons of Legend
 						["sourceQuest"] = 40579,	-- Weapons of Legend
-						["coord"] = { 58.3, 84.7, SKYHOLD },
 						["provider"] = { "n", 96469 },	-- Odyn
+						["coord"] = { 58.3, 84.7, SKYHOLD },
 					}),
 					q(44417, {	-- One More Legend
 						["sourceQuest"] = 43949,	-- More Weapons of Legend
-						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["provider"] = { "n", 96469 },	-- Odyn
+						["coord"] = { 58.3, 84.6, SKYHOLD },
 					}),
 					cl(WARRIOR, ARMS, {
 						q(41105, {	-- The Sword of Kings
@@ -283,9 +283,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
-							["g"] = {
+							["groups"] = {
 								i(128910, {	-- Strom'kar, the Warbreaker
-									artifact(295),	-- Strom'kar, the Warbreaker
+									["ItemAppearanceModifierID"] = 0,
+									["groups"] = {
+										artifact(295),	-- Strom'kar, the Warbreaker
+									},
 								}),
 							},
 						}),
@@ -300,12 +303,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
-							["g"] = {
+							["groups"] = {
 								i(128908, {	-- Warswords of the Valarjar [Main Hand]
-									artifact(296),	-- Warswords of the Valarjar
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(296),	-- Warswords of the Valarjar
+									},
 								}),
 								i(134553, {	-- Warswords of the Valarjar [Off Hand]
-									artifact(296),	-- Warswords of the Valarjar
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(296),	-- Warswords of the Valarjar
+									},
 								}),
 							},
 						}),
@@ -320,12 +329,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
-							["g"] = {
+							["groups"] = {
 								i(128288, {	-- Scaleshard
-									artifact(66),	-- Scaleshard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(66),	-- Scaleshard
+									},
 								}),
 								i(128289, {	-- Scale of the Earth-Warder
-									artifact(66),	-- Scale of the Earth-Warder
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(66),	-- Scale of the Earth-Warder
+									},
 								}),
 							},
 						}),
@@ -334,7 +349,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 40579 },	-- Weapons of Legend
 						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
 						["coord"] = { 56.2, 27.0, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							i(139684),	-- Battlelord's Greathelm
 						},
 					}),
@@ -390,7 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107984 },	-- Ragnvald Drakeborn
 						["coord"] = { 61.3, 33.8, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(708),	-- Ragnvald Drakeborn
 						},
 					}),
@@ -398,7 +413,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 						["provider"] = { "n", 107985 },	-- Finna Bjornsdottir
 						["coord"] = { 61.5, 34.5, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(709),	-- Finna Bjornsdottir
 						},
 					}),
@@ -442,7 +457,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42194,	-- Stolen Honor
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["coord"] = { 63.8, 47.2, STORMHEIM },
-						["g"] = {
+						["groups"] = {
 							i(138204),	-- Svergan's Belongings (QI!)
 						},
 					}),
@@ -460,7 +475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
 						["coord"] = { 52.0, 82.6, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(710),	-- Svergan Stormcloak
 						},
 					}),
@@ -479,7 +494,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42202,	-- Revenge, Served Cold
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["coord"] = { 53.8, 87.8, HIGHMOUNTAIN },
-						["g"] = {
+						["groups"] = {
 							i(139501),	-- Frostcrag Drums (QI!)
 							i(138205),	-- The Gjallarhorn (QI!)
 							follower(711),	-- Hymdall
@@ -511,7 +526,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
 						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["g"] = {
+						["groups"] = {
 							follower(712),	-- King Ymiron
 						},
 					}),
@@ -520,7 +535,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 744, 746 },	-- Ulduar (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(139688),	-- Battlelord's Bracers
 						},
 					}),
@@ -528,7 +543,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
 						["coord"] = { 57.1, 75.0, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(714),	-- Dvalen Ironrune
 						},
 					}),
@@ -536,7 +551,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["provider"] = { "n", 112765 },	-- Thorim
 						["coord"] = { 59.5, 75.2, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(713),	-- Thorim
 						},
 					}),
@@ -570,7 +585,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 714 },	-- Niskara (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							title(62),	-- Battlelord <Name>
 							i(139681),	-- Battlelord's Chest
 						},
@@ -579,7 +594,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
 						["provider"] = { "n", 113583 },	-- Hodir
 						["coord"] = { 59.7, 78.4, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							follower(715),	-- Hodir
 						},
 					}),
@@ -587,7 +602,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42974,	-- The Fate of Hodir
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
-						["g"] = {
+						["groups"] = {
 							artifact(794),	-- Strom'kar, the Warbreaker
 							artifact(657),	-- Warswords of the Valarjar [Main Hand]
 							-- artifact(657),	-- Warswords of the Valarjar [Off Hand]
@@ -600,8 +615,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43425,	-- A Hero's Weapon
 						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["coord"] = { 61.2, 27.6, SKYHOLD },
-						["isBreadcrumb"] = true,
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
+						["isBreadcrumb"] = true,
 					}),
 					q(45987, {	-- Investigate the Broken Shore
 						["sourceQuest"] = 45986,	-- An Urgent Warning
@@ -634,6 +649,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
 						["timeline"] = { ADDED_7_2_0 },
+						["groups"] = {
+							i(142285),	-- Stolen Warrior's Blade (QI!)
+							i(142312),	-- Stolen Warrior's Shield (QI!)
+						},
 					}),
 					q(45834, {	-- Stolen Souls
 						["sourceQuest"] = 44849,	-- Recruitment Drive
@@ -646,7 +665,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 116193 },	-- Aerylia
 						["coord"] = { 34.3, 28.5, HELHEIM },
 						["timeline"] = { ADDED_7_2_0 },
-						["g"] = {
+						["groups"] = {
 							i(144071),	-- Helya's Horn (QI!)
 						},
 					}),
@@ -676,43 +695,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 44889,	-- Resource Management
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(45632, {	-- Missing in Action: Eitrigg
 						["sourceQuest"] = 44889,	-- Resource Management
 						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
 						["coord"] = { 69.8, 34.7, BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = HORDE_ONLY,
 					}),
 					q(45649, {	-- Mission: Search and Rescue (A)
 						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(45647, {	-- Mission: Search and Rescue (H)
 						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
 						["provider"] = { "n", 117471 },	-- Eitrigg
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = HORDE_ONLY,
 					}),
 					q(45650, {	-- Operation Felrage (A)
 						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
 						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(45633, {	-- Operation Felrage (H)
 						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
 						["provider"] = { "n", 117471 },	-- Eitrigg
 						["coord"] = { 73.7, 31.2, BROKEN_SHORE },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["races"] = HORDE_ONLY,
 					}),
 					q(46267, {	-- Return of the Battlelord
 						["sourceQuests"] = {
@@ -731,7 +750,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					})),
@@ -740,7 +759,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117479 },	-- Eitrigg
 						["coord"] = { 59.9, 83.8, SKYHOLD },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					})),
@@ -758,7 +777,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 96469 },	-- Odyn
 						["coord"] = { 58.3, 84.6, SKYHOLD },
 						["maps"] = { 829 },	-- Halls of Valor (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							mount(229388),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
 						},
 					})),
@@ -788,7 +807,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					i(144436, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vrykul in the Broken Isles as a Warrior (any spec).",
-						["g"] = {
+						["groups"] = {
 							n(GREAT_ODYN_AND_THE_FIRELORD, { ["questID"] = 46223, }),
 							n(THE_WANDERER_AND_THE_SERPENT, { ["questID"] = 46224, }),
 							n(HALLS_OF_GOLD_AND_GLORY, { ["questID"] = 46225, }),
@@ -802,7 +821,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["crs"] = {
 							115732,	-- Jorvild the Trusted (highest drop chance)
 						},
-						["g"] = {
+						["groups"] = {
 							n(HIS_NAME_IS_DRAGONBLOOD, { ["questID"] = 46229, }),
 							n(THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER, { ["questID"] = 46230, }),
 							n(A_SHIELDMAIDENS_CREED, { ["questID"] = 46231, }),
@@ -825,7 +844,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
 							["questID"] = 43763,	-- Chest of Riches Weekly Lockout
 							["isWeekly"] = true,
-							["g"] = {
+							["groups"] = {
 								i(141069, {	-- Skyhold Chest of Riches
 									i(140160),	-- Stormforged Vrykul Horn (TOY!)
 									i(140161),	-- Hargal's Favorite Trinket
@@ -837,8 +856,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					gt(411, {	-- Heavenly Forge
 						q(44221, {	-- Champion Armaments
 							["sourceQuest"] = 42611,	-- Einar the Runecaster
-							["coord"] = { 62.3, 25.8, SKYHOLD },
 							["provider"] = { "n", 110437 },	-- Haklang Ulfsson
+							["coord"] = { 62.3, 25.8, SKYHOLD },
 						}),
 					}),
 				}),
@@ -846,7 +865,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					n(112392, {	-- Quartermaster Durnolf
 						["coord"] = { 56.1, 27.0, SKYHOLD },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
-						["g"] = {
+						["groups"] = {
 							i(140946, {	-- Battlelord's Armor Kit
 								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
 							}),

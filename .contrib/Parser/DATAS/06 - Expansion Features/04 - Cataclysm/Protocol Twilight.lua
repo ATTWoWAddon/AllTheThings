@@ -291,7 +291,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						["qg"] = 241467,	-- Sylstrasza <Obsidian Fragment Exchange>
 						["coord"] = { 47.2, 70.1, ORGRIMMAR },
 					},
-					["OnInit"] = "function(t) _.ResolveQuestData(t); t.OnInit = nil; return t; end",
 					["groups"] = {
 						-- Dragon Soul LFR Gear
 						-- Tier Tokens

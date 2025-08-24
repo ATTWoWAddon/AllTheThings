@@ -1,12 +1,6 @@
-
 local Items = ItemDBConditional;
 local i = function(itemID, factionID, unlock)
-	local o = {
-		["factionID"] = factionID,
-		-- #if NOT ANYCLASSIC
-		-- ["f"] = 112
-		-- #endif
-	};
+	local o = { ["factionID"] = factionID };
 	-- #if NOT ANYCLASSIC
 	if not unlock then o.repeatable = true; end
 	-- #endif
@@ -58,22 +52,24 @@ h(i(70154, FACTION_UNDERCITY));				-- Undercity Writ of Commendation
 -- Pandaria
 -- The "Grand Commendation" items of Pandaria unlock bonus reputation rather than grant reputation.
 -- TODO: review if /dump GetFactionInfoByID(1337) still returns [15] = false
--- i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
--- i(93225, 1302, true);		-- Grand Commendation of the Anglers
--- i(93224, 1341, true);		-- Grand Commendation of the August Celestials
--- i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
--- i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
--- i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
--- i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
--- i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
--- i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
--- i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
--- i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
--- i(93226, 1272, true);		-- Grand Commendation of the Tillers
-i(95490, FACTION_KIRIN_TOR_OFFENSIVE);		-- Greater Kirin Tor Offensive Insignia
-i(95489, FACTION_KIRIN_TOR_OFFENSIVE);		-- Kirin Tor Offensive Insignia
-i(95488, FACTION_SUNREAVER_ONSLAUGHT);		-- Greater Sunreaver Onslaught Insignia
-i(95487, FACTION_SUNREAVER_ONSLAUGHT);		-- Sunreaver Onslaught Insignia
+-- #if BEFORE WOD
+i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
+i(93225, 1302, true);		-- Grand Commendation of the Anglers
+i(93224, 1341, true);		-- Grand Commendation of the August Celestials
+i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
+i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
+i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
+i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
+i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
+i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
+i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
+i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
+i(93226, 1272, true);		-- Grand Commendation of the Tillers
+-- #endif
+a(i(95490, FACTION_KIRIN_TOR_OFFENSIVE));	-- Greater Kirin Tor Offensive Insignia
+a(i(95489, FACTION_KIRIN_TOR_OFFENSIVE));	-- Kirin Tor Offensive Insignia
+h(i(95488, FACTION_SUNREAVER_ONSLAUGHT));	-- Greater Sunreaver Onslaught Insignia
+h(i(95487, FACTION_SUNREAVER_ONSLAUGHT));	-- Sunreaver Onslaught Insignia
 i(90815, FACTION_GOLDEN_LOTUS);				-- Relic of Guo-Lai
 i(90816, FACTION_GOLDEN_LOTUS);				-- Relic of the Thunder King
 i(94225, FACTION_THE_AUGUST_CELESTIALS);	-- Stolen Celestial Insignia
@@ -82,54 +78,50 @@ i(94226, FACTION_THE_KLAXXI);				-- Stolen Klaxxi Insignia
 i(94223, FACTION_SHADO_PAN);				-- Stolen Shado-Pan Insignia
 
 -- Timewalking: Burning Crusade
-i(129948, FACTION_HONOR_HOLD);				-- Commendation of Honor Hold
+a(i(129948, FACTION_HONOR_HOLD));			-- Commendation of Honor Hold
 i(129951, FACTION_LOWER_CITY);				-- Commendation of Lower City
 i(129949, FACTION_CENARION_EXPEDITION);		-- Commendation of the Cenarion Expedition
 i(129945, FACTION_THE_CONSORTIUM);			-- Commendation of The Consortium
 i(129950, FACTION_KEEPERS_OF_TIME);			-- Commendation of the Keepers of Time
 i(129946, FACTION_THE_SHATAR);				-- Commendation of The Sha'tar
-i(129947, FACTION_THRALLMAR);				-- Commendation of Thrallmar
+h(i(129947, FACTION_THRALLMAR));			-- Commendation of Thrallmar
 
 -- Timewalking: Wrath of the Lich King
-i(129955, FACTION_ALLIANCE_VANGUARD);		-- Commendation of the Alliance Vanguard
+a(i(129955, FACTION_ALLIANCE_VANGUARD));	-- Commendation of the Alliance Vanguard
 i(129942, FACTION_ARGENT_CRUSADE);			-- Commendation of the Argent Crusade
-i(129954, FACTION_HORDE_EXPEDITION);		-- Commendation of the Horde Expedition
+h(i(129954, FACTION_HORDE_EXPEDITION));		-- Commendation of the Horde Expedition
 i(129940, FACTION_KIRIN_TOR);				-- Commendation of the Kirin Tor
 i(129943, FACTION_THE_SONS_OF_HODIR);		-- Commendation of the Sons of Hodir
 i(129944, FACTION_THE_WYRMREST_ACCORD);		-- Commendation of the Wyrmrest Accord
 
 -- Timewalking: Cataclysm
-i(133150, FACTION_DRAGONMAW_CLAN);			-- Commendation of the Dragonmaw Clan
+h(i(133150, FACTION_DRAGONMAW_CLAN));		-- Commendation of the Dragonmaw Clan
 i(133159, FACTION_THE_EARTHEN_RING);		-- Commendation of The Earthen Ring
 i(133152, FACTION_GUARDIANS_OF_HYJAL);		-- Commendation of the Guardians of Hyjal
 i(133154, FACTION_RAMKAHEN);				-- Commendation of the Ramkahen
-i(133151, FACTION_WILDHAMMER_CLAN);			-- Commendation of the Wildhammer Clan
+a(i(133151, FACTION_WILDHAMMER_CLAN));		-- Commendation of the Wildhammer Clan
 i(133160, FACTION_THERAZANE);				-- Commendation of Therazane
 
 -- Timewalking: Mists of Pandaria
 i(143947, FACTION_EMPEROR_SHAOHAO);			-- Commendation of Emperor Shaohao
-i(143944, FACTION_OPERATION_SHIELDWALL);	-- Commendation of Operation: Shieldwall
+a(i(143944, FACTION_OPERATION_SHIELDWALL));	-- Commendation of Operation: Shieldwall
 i(143946, FACTION_THE_ANGLERS);				-- Commendation of The Anglers
 i(143938, FACTION_THE_AUGUST_CELESTIALS);	-- Commendation of The August Celestials
-i(143943, FACTION_DOMINANCE_OFFENSIVE);		-- Commendation of the Dominance Offensive
+h(i(143943, FACTION_DOMINANCE_OFFENSIVE));	-- Commendation of the Dominance Offensive
 i(143937, FACTION_GOLDEN_LOTUS);			-- Commendation of the Golden Lotus
-i(143940, FACTION_KIRIN_TOR_OFFENSIVE);		-- Commendation of the Kirin Tor Offensive
+a(i(143940, FACTION_KIRIN_TOR_OFFENSIVE));	-- Commendation of the Kirin Tor Offensive
 i(143935, FACTION_THE_KLAXXI);				-- Commendation of The Klaxxi
 i(143942, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Commendation of the Order of the Cloud Serpent
 i(143936, FACTION_SHADO_PAN);				-- Commendation of the Shado-Pan
 i(143945, FACTION_SHADO_PAN_ASSAULT);		-- Commendation of the Shado-Pan Assault
-i(143939, FACTION_SUNREAVER_ONSLAUGHT);		-- Commendation of the Sunreaver Onslaught
+h(i(143939, FACTION_SUNREAVER_ONSLAUGHT));	-- Commendation of the Sunreaver Onslaught
 i(143941, FACTION_THE_TILLERS);				-- Commendation of The Tillers
 
 -- Miscellaneous Rep Items
 
 -- Cataclysm
-i(63518, FACTION_HELLSCREAMS_REACH);		-- Hellscream's Reach Commendation
-i(63517, FACTION_BARADINS_WARDENS);		-- Baradin's Wardens Commendation
-
--- Mists of Pandaria
-i(104286, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
-i(89155, FACTION_ORDER_OF_THE_CLOUD_SERPENT);		-- Onyx Egg [Order of the Cloud Serpent]
+h(i(63518, FACTION_HELLSCREAMS_REACH));		-- Hellscream's Reach Commendation
+a(i(63517, FACTION_BARADINS_WARDENS));		-- Baradin's Wardens Commendation
 
 -- Warlords of Draenor
 i(118099, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
@@ -150,13 +142,13 @@ i(167926, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Commendation of the Ste
 i(167925, FACTION_ORDER_OF_THE_AWAKENED);				-- Commendation of the Order of the Awakened
 i(167927, FACTION_THE_SABERSTALKERS);					-- Commendation of the Saberstalkers
 -- Horde
-i(167928, FACTION_FROSTWOLF_ORCS);			-- Commendation of the Frostwolf Orcs
-i(167930, FACTION_LAUGHING_SKULL_ORCS);		-- Commendation of the Laughing Skull Orcs
-i(168017, FACTION_VOLJINS_HEADHUNTERS);		-- Commendation of Vol'jin's Headhunters
+h(i(167928, FACTION_FROSTWOLF_ORCS));			-- Commendation of the Frostwolf Orcs
+h(i(167930, FACTION_LAUGHING_SKULL_ORCS));		-- Commendation of the Laughing Skull Orcs
+h(i(168017, FACTION_VOLJINS_HEADHUNTERS));		-- Commendation of Vol'jin's Headhunters
 -- Alliance
-i(167929, FACTION_COUNCIL_OF_EXARCHS);		-- Commendation of the Council of Exarchs
-i(167932, FACTION_SHATARI_DEFENSE);			-- Commendation of the Sha'tari Defense
-i(168018, FACTION_HAND_OF_THE_PROPHET);		-- Commendation of the Hand of the Prophet
+a(i(167929, FACTION_COUNCIL_OF_EXARCHS));		-- Commendation of the Council of Exarchs
+a(i(167932, FACTION_SHATARI_DEFENSE));			-- Commendation of the Sha'tari Defense
+a(i(168018, FACTION_HAND_OF_THE_PROPHET));		-- Commendation of the Hand of the Prophet
 
 -- Legion
 i(147418, FACTION_THE_NIGHTFALLEN);			-- Arcane Remnant of Falanaar [The Nightfallen]
@@ -221,53 +213,53 @@ i(146939, FACTION_THE_WARDENS);				-- Wardens Insignia [The Wardens]
 		i(174521, FACTION_RUSTBOLT_RESISTANCE);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 
 	-- Nazjatar
-		i(173948, FACTION_THE_UNSHACKLED);		-- Glittering Abyssal Conch (Unshackled)
-		i(173947, FACTION_WAVEBLADE_ANKOAN);	-- Glittering Abyssal Conch (Waveblade Ankoan)
-		i(174523, FACTION_THE_UNSHACKLED);		-- Waveswept Abyssal Conch (Unshackled)
-		i(174522, FACTION_WAVEBLADE_ANKOAN);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
+		h(i(173948, FACTION_THE_UNSHACKLED));	-- Glittering Abyssal Conch (Unshackled)
+		a(i(173947, FACTION_WAVEBLADE_ANKOAN));	-- Glittering Abyssal Conch (Waveblade Ankoan)
+		h(i(174523, FACTION_THE_UNSHACKLED));	-- Waveswept Abyssal Conch (Unshackled)
+		a(i(174522, FACTION_WAVEBLADE_ANKOAN));	-- Waveswept Abyssal Conch (Waveblade Ankoan)
 
 	-- For the rest of these, the first line is the quest item and the second line is the BoA token awarded by the quest.
-	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation.  These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
+	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation. These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
 
 	-- 7th Legion
-	--	i(163617, FACTION_7TH_LEGION);	-- Rusted Alliance Insignia
-		i(174507, FACTION_7TH_LEGION);	-- Fallen Soldier's Insignia (A)
+	--	a(i(163617, FACTION_7TH_LEGION));	-- Rusted Alliance Insignia
+		a(i(174507, FACTION_7TH_LEGION));	-- Fallen Soldier's Insignia (A)
 
 	-- Champions of Azeroth
 	--	i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
 		i(174502, FACTION_CHAMPIONS_OF_AZEROTH);	-- Tear of Azeroth
 
 	-- Honorbound
-	--	i(163621, FACTION_THE_HONORBOUND);	-- Rusted Horde Insignia
-		i(174508, FACTION_THE_HONORBOUND);	-- Fallen Soldier's Insignia (H)
+	--	h(i(163621, FACTION_THE_HONORBOUND));	-- Rusted Horde Insignia
+		h(i(174508, FACTION_THE_HONORBOUND));	-- Fallen Soldier's Insignia (H)
 
 	-- Order of Embers
 	--	i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
 		i(174503, FACTION_ORDER_OF_EMBERS);	-- Exotically Spiced Carrot
 
 	-- Proudmoore Admiralty
-	--	i(163616, FACTION_PROUDMOORE_ADMIRALTY);	-- Dented Coin
-		i(174504, FACTION_PROUDMOORE_ADMIRALTY);	-- Proudmoore War Copper
+	--	a(i(163616, FACTION_PROUDMOORE_ADMIRALTY));	-- Dented Coin
+		a(i(174504, FACTION_PROUDMOORE_ADMIRALTY));	-- Proudmoore War Copper
 
 	-- Storm's Wake
-	--	i(163615, FACTION_STORMS_WAKE);	-- Lost Sea Scroll
-		i(174505, FACTION_STORMS_WAKE);	-- Tide-Speaker's Tome
+	--	a(i(163615, FACTION_STORMS_WAKE));	-- Lost Sea Scroll
+		a(i(174505, FACTION_STORMS_WAKE));	-- Tide-Speaker's Tome
 
 	-- Talanji's Expedition
-	--	i(163619, FACTION_TALANJIS_EXPEDITION);	-- Golden Beetle
-		i(174506, FACTION_TALANJIS_EXPEDITION);	-- Golden Insect Wings
+	--	h(i(163619, FACTION_TALANJIS_EXPEDITION));	-- Golden Beetle
+		h(i(174506, FACTION_TALANJIS_EXPEDITION));	-- Golden Insect Wings
 
 	-- Tortollan Seekers
 	--	i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
 		i(174519, FACTION_TORTOLLAN_SEEKERS);	-- Verdant Hills of Chokingvine - Page 17
 
 	-- Voldunai
-	--	i(163618, FACTION_VOLDUNAI);	-- Shimmering Shell
-		i(174501, FACTION_VOLDUNAI);	-- Ornate Voldunai Jewelry
+	--	h(i(163618, FACTION_VOLDUNAI));	-- Shimmering Shell
+		h(i(174501, FACTION_VOLDUNAI));	-- Ornate Voldunai Jewelry
 
 	-- Zandalari Empire
-	--	i(163620, FACTION_ZANDALARI_EMPIRE);	-- Island Flotsam
-		i(174518, FACTION_ZANDALARI_EMPIRE);	-- Jani Figurine
+	--	h(i(163620, FACTION_ZANDALARI_EMPIRE));	-- Island Flotsam
+		h(i(174518, FACTION_ZANDALARI_EMPIRE));	-- Jani Figurine
 
 
 
@@ -390,9 +382,9 @@ i(210422, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic 2.5k]
 -- PATCH 10.1.5 --
 ------------------
 i(208617, FACTION_EBON_BLADE);				-- Ebon Blade Commendation Badge [BOP]
-i(208133, FACTION_ORGRIMMAR);				-- Orgrimmar Insignia [BOP]
+h(i(208133, FACTION_ORGRIMMAR));			-- Orgrimmar Insignia [BOP]
 i(208134, FACTION_RUSTBOLT_RESISTANCE);		-- Rustbolt Resistance Insignia [BOP]
-i(208132, FACTION_STORMWIND);				-- Stormwind Insignia [BOP]
+a(i(208132, FACTION_STORMWIND));			-- Stormwind Insignia [BOP]
 
 ------------------
 -- PATCH 10.2.0 --
@@ -408,7 +400,7 @@ i(224558, FACTION_BROOD_OF_NOZDORMU);		-- Commendation of the Brood of Nozdormu
 i(224561, FACTION_HYDRAXIAN_WATERLORDS);	-- Commendation of the Hydraxian Waterlords
 i(224571, FACTION_THORIUM_BROTHERHOOD);		-- Commendation of the Thorium Brotherhood
 i(224566, FACTION_TIMBERMAW_HOLD);			-- Commendation of the Timbermaw Hold
-i(224565, FACTION_WINTERSABER_TRAINERS);	-- Commendation of the Wintersaber Trainers
+a(i(224565, FACTION_WINTERSABER_TRAINERS));	-- Commendation of the Wintersaber Trainers
 i(224570, FACTION_ZANDALAR_TRIBE);			-- Commendation of the Zandalar Tribe
 -- Blizz decided against adding these, boooo
 --i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
@@ -427,3 +419,23 @@ i(236764, FACTION_TWW_BILGEWATER_CARTEL);	-- Finder's Fee [500 Rep]
 i(236689, FACTION_TWW_STEAMWHEEDLE_CARTEL);	-- Finder's Fee [500 Rep]
 i(236765, FACTION_TWW_VENTURE_CO);			-- Finder's Fee [500 Rep]
 i(237014, FACTION_THE_SEVERED_THREADS);		-- Severed Threads Commendation [1500 rep with choice of three subreps.] Not technically correct to apply metafaction but is close while only one rep may be attached.
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+a(i(238804, FACTION_PROUDMOORE_ADMIRALTY));	-- Commendation of Proudmoore Admiralty [300 Rep]
+a(i(238805, FACTION_STORMS_WAKE));			-- Commendation of Storm's Wake [300 Rep]
+h(i(238816, FACTION_TALANJIS_EXPEDITION));	-- Commendation of Talanji's Expedition [300 Rep]
+a(i(238806, FACTION_7TH_LEGION));			-- Commendation of the 7th Legion [300 Rep]
+i(238821, FACTION_CHAMPIONS_OF_AZEROTH);	-- Commendation of the Champions of Azeroth [300 Rep]
+h(i(238819, FACTION_THE_HONORBOUND));		-- Commendation of the Honorbound [300 Rep]
+a(i(238803, FACTION_ORDER_OF_EMBERS));		-- Commendation of the Order of Embers [300 Rep]
+i(238826, FACTION_RAJANI);					-- Commendation of the Rajani [300 Rep]
+i(238823, FACTION_RUSTBOLT_RESISTANCE);		-- Commendation of the Rustbolt Resistance [300 Rep]
+i(238822, FACTION_TORTOLLAN_SEEKERS);		-- Commendation of the Tortollan Seekers [300 Rep]
+i(238827, FACTION_ULDUM_ACCORD);			-- Commendation of the Uldum Accord [300 Rep]
+h(i(238820, FACTION_THE_UNSHACKLED));		-- Commendation of the Unshackled [300 Rep]
+h(i(238817, FACTION_VOLDUNAI));				-- Commendation of the Voldunai [300 Rep]
+a(i(238809, FACTION_WAVEBLADE_ANKOAN));		-- Commendation of the Waveblade Ankoan [300 Rep]
+h(i(238818, FACTION_ZANDALARI_EMPIRE));		-- Commendation of the Zandalari Empire [300 Rep]
+i(244848, FACTION_THE_SEVERED_THREADS);		-- Severed Threads Commendation [100 rep with choice of three subreps.] Not technically correct to apply metafaction but is close while only one rep may be attached.

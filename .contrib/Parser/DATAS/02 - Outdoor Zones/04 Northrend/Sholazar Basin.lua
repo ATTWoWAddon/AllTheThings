@@ -106,40 +106,13 @@ root(ROOTS.Zones, {
 			["icon"] = 236817,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1268),	-- Explore Sholazar Basin
+					ach(1268),	-- Explore Sholazar Basin
 					achWithRep(950, FACTION_FRENZYHEART_TRIBE),	-- Frenzyheart Tribe
-					ach(961, {	-- Honorary Frenzyheart
-						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(2061, {	-- A Hero's Headgear
-								["_quests"] = { 12758 },
-							}),
-							crit(2054, {	-- Chicken Party!
-								["_quests"] = { 12702 },
-							}),
-							crit(2055, {	-- Kartak's Rampage
-								["_quests"] = { 12703 },
-							}),
-							crit(2060, {	-- Rejek: First Blood
-								["_quests"] = { 12734 },
-							}),
-							crit(2057, {	-- Secret Strength of the Frenzyheart
-								["_quests"] = { 12760 },
-							}),
-							crit(2059, {	-- Strength of the Tempest
-								["_quests"] = { 12741 },
-							}),
-							crit(2058, {	-- The Heartblood's Strength
-								["_quests"] = { 12732 },
-							}),
-							crit(2056, {	-- Tools of War
-								["_quests"] = { 12759 },
-							}),
-						},
-					}),
+					ach(961),	-- Honorary Frenzyheart (automated)
 					ach(39, {	-- Into the Basin
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12595,	-- In Search of Bigger Game
 							12614,	-- Post-partum Aggression
@@ -148,69 +121,10 @@ root(ROOTS.Zones, {
 							12805,	-- Salvaging Life's Strength
 							12546,	-- Reclamation
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
-						-- #else
-						crit(39053, {	-- Hunting Bigger Game
-							["sourceQuest"] = 12595,	-- In Search of Bigger Game
-						}),
-						crit(2004, {	-- Teeth, Spikes, and Talons
-							["sourceQuest"] = 12614,	-- Post-partum Aggression
-						}),
-						crit(39054, {	-- The Wolvar
-							["sourceQuest"] = 12540,	-- Just Following Orders
-						}),
-						crit(39055, {	-- The Oracles
-							["sourceQuest"] = 12581,	-- A Hero's Burden
-						}),
-						crit(39056, {	-- The Lifewarden
-							["sourceQuest"] = 12805,	-- Salvaging Life's Strength
-						}),
-						crit(39726, {	-- Watching Over the Basin
-							["sourceQuest"] = 12546,	-- Reclamation
-						}),
 						-- #endif
 					}),
-					ach(952, {	-- Mercenary of Sholazar
-						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
-							950,	-- Frenzyheart Tribe
-							951,	-- The Oracles
-						}},
-					}),
-					ach(962, {	-- Savior of the Oracles
-						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(2068, {	-- A Cleansing Song
-								["_quests"] = { 12735 },
-							}),
-							crit(2062, {	-- Appeasing the Great Rain Stone
-								["_quests"] = { 12704 },
-							}),
-							crit(2064, {	-- Mastery of the Crystals
-								["_quests"] = { 12761 },
-							}),
-							crit(2065, {	-- Power of the Great Ones
-								["_quests"] = { 12762 },
-							}),
-							crit(2069, {	-- Song of Fecundity
-								["_quests"] = { 12737 },
-							}),
-							crit(2066, {	-- Song of Reflection
-								["_quests"] = { 12736 },
-							}),
-							crit(2067, {	-- Song of Wind and Water
-								["_quests"] = { 12726 },
-							}),
-							crit(2063, {	-- Will of the Titans
-								["_quests"] = { 12705 },
-							}),
-						},
-					}),
+					ach(952),	-- Mercenary of Sholazar (automated)
+					ach(962),	-- Savior of the Oracles (automated)
 					achWithRep(951, FACTION_THE_ORACLES),	-- The Oracles
 				}),
 				battlepets({
@@ -304,7 +218,6 @@ root(ROOTS.Zones, {
 				n(QUESTS, {
 					-- Frenzyheart Tribe
 					q(12758, {	-- A Hero's Headgear
-						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["altQuests"] = {
 							-- 12758,	-- A Hero's Headgear
@@ -312,35 +225,35 @@ root(ROOTS.Zones, {
 							12741,	-- Strength of the Tempest
 							12732,	-- The Heartblood's Strength
 						},
+						["qg"] = 29043,	-- Rejek
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12702, {	-- Chicken Party!
-						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["qg"] = 28138,	-- Elder Harkek
 						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12582, {	-- Frenzyheart Champion
-						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["coord"] = { 72.0, 57.0, SHOLAZAR_BASIN },
 						["isDaily"] = true,
 					}),
 					q(12703, {	-- Kartak's Rampage
-						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["qg"] = 29146,	-- Vekgar
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12734, {	-- Rejek: First Blood
-						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["altQuests"] = {
 							12758,	-- A Hero's Headgear
@@ -348,26 +261,26 @@ root(ROOTS.Zones, {
 							12741,	-- Strength of the Tempest
 							12732,	-- The Heartblood's Strength
 						},
+						["qg"] = 29043,	-- Rejek
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12692, {	-- Return of the Lich Hunter
-						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12582,	-- Frenzyheart Champion
+						["qg"] = 28668,	-- Zepik the Gorloc Hunter
 						["coord"] = { 71.9, 57.0, SHOLAZAR_BASIN },
 					}),
 					q(12760, {	-- Secret Strength of the Frenzyheart
-						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["qg"] = 29146,	-- Vekgar
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12741, {	-- Strength of the Tempest
-						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["altQuests"] = {
 							12758,	-- A Hero's Headgear
@@ -375,13 +288,13 @@ root(ROOTS.Zones, {
 							-- 12741,	-- Strength of the Tempest
 							12732,	-- The Heartblood's Strength
 						},
+						["qg"] = 29043,	-- Rejek
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12732, {	-- The Heartblood's Strength
-						["qg"] = 29043,	-- Rejek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["altQuests"] = {
 							12758,	-- A Hero's Headgear
@@ -389,23 +302,23 @@ root(ROOTS.Zones, {
 							12741,	-- Strength of the Tempest
 							-- 12732,	-- The Heartblood's Strength
 						},
+						["qg"] = 29043,	-- Rejek
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12759, {	-- Tools of War
-						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
+						["qg"] = 29146,	-- Vekgar
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
 						["isDaily"] = true,
 					}),
 
 					-- The Oracles dailies
 					q(12735, {	-- A Cleansing Song
-						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["altQuests"] = {
 							-- 12735,	-- A Cleansing Song
@@ -413,20 +326,21 @@ root(ROOTS.Zones, {
 							12736,	-- Song of Reflection
 							12726,	-- Song of Wind and Water
 						},
+						["qg"] = 29006,	-- Oracle Soo-nee
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
+						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["providers"] = {
 							{ "n", 28027 },	-- High-Oracle Soo-say
 							{ "i", 38622 },	-- Lafoo's Bug Bag
 						},
-						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/6 Shiny Treasures
@@ -442,17 +356,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12689, {	-- Hand of the Oracles
-						["qg"] = 28667,	-- Jaloot
 						["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenzyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
+						["qg"] = 28667,	-- Jaloot
 						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
 						["isDaily"] = true,
 					}),
 					q(12761, {	-- Mastery of the Crystals
-						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["qg"] = 29149,	-- Oracle Soo-dow
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/50 Frenzyheart Attacker slain
@@ -467,20 +381,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12762, {	-- Power of the Great Ones
-						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["qg"] = 29149,	-- Oracle Soo-dow
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12695, {	-- Return of the Friendly Dryskin
-						["qg"] = 28667,	-- Jaloot
 						["sourceQuest"] = 12689,	-- Hand of the Oracles
+						["qg"] = 28667,	-- Jaloot
 						["coord"] = { 72.5, 57.5, SHOLAZAR_BASIN },
 					}),
 					q(12737, {	-- Song of Fecundity
-						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["altQuests"] = {
 							12735,	-- A Cleansing Song
@@ -488,9 +401,10 @@ root(ROOTS.Zones, {
 							12736,	-- Song of Reflection
 							12726,	-- Song of Wind and Water
 						},
+						["qg"] = 29006,	-- Oracle Soo-nee
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/8 Song of Fedundity played
@@ -502,7 +416,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12736, {	-- Song of Reflection
-						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["altQuests"] = {
 							12735,	-- A Cleansing Song
@@ -510,13 +423,13 @@ root(ROOTS.Zones, {
 							-- 12736,	-- Song of Reflection
 							12726,	-- Song of Wind and Water
 						},
+						["qg"] = 29006,	-- Oracle Soo-nee
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12726, {	-- Song of Wind and Water
-						["qg"] = 29006,	-- Oracle Soo-nee
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["altQuests"] = {
 							12735,	-- A Cleansing Song
@@ -524,27 +437,28 @@ root(ROOTS.Zones, {
 							12736,	-- Song of Reflection
 							-- 12726,	-- Song of Wind and Water
 						},
+						["qg"] = 29006,	-- Oracle Soo-nee
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12705, {	-- Will of the Titans
-						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
+						["qg"] = 29149,	-- Oracle Soo-dow
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
 						["isDaily"] = true,
 					}),
 
 					q(12581, {	-- A Hero's Burden
-						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
-						["qg"] = 28122,	-- Moodle
 						["sourceQuests"] = {
 							12579,	-- Lifeblood of the Mosswalker Shrine
 							12580,	-- The Mosswalker Savior
 						},
+						["qg"] = 28122,	-- Moodle
+						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39475),	-- Artruis' Focus Stone
 							i(39485),	-- Blood-Infused Pendant
@@ -553,29 +467,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12607, {	-- A Mammoth Undertaking
-						["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
-						["qg"] = 28374,	-- Zootfizzle
 						["sourceQuests"] = {
 							12605,	-- Securing the Bait
 							12603,	-- Sharpening Your Talens
 						},
+						["qg"] = 28374,	-- Zootfizzle
+						["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
 					}),
 					q(12536, {	-- A Rough Ride
-						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28082,	-- High-Shaman Rakjak
 						["sourceQuests"] = {
 							12535,	-- Mischief in the Making
 							12531,	-- The Underground Menace
 						},
+						["qg"] = 28082,	-- High-Shaman Rakjak
+						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12804, {	-- A Steak Fit for a Hunter
-						["coord"] = { 26.7, 59.5, SHOLAZAR_BASIN },
-						["qg"] = 28046,	-- Korg the Cleaver
 						["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
+						["qg"] = 28046,	-- Korg the Cleaver
+						["coord"] = { 26.7, 59.5, SHOLAZAR_BASIN },
 					}),
 					q(12691, {	-- A Timeworn Coffer
-						["coord"] = { 80.4, 55.8, SHOLAZAR_BASIN },
 						["provider"] = { "o", 190768 },	-- Timeworn Coffer
+						["coord"] = { 80.4, 55.8, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39348),	-- Aged Watcher's Legwraps
 							i(39402),	-- Binding of the Ancient Keeper
@@ -584,19 +498,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12696, {	-- Aerial Surveillance
-						["coord"] = { 25.4, 58.4, SHOLAZAR_BASIN },
-						["qg"] = 28266,	-- Professor Calvert
 						["sourceQuest"] = 12523,	-- Have a Part, Give a Part
+						["qg"] = 28266,	-- Professor Calvert
+						["coord"] = { 25.4, 58.4, SHOLAZAR_BASIN },
 					}),
 					q(12699, {	-- An Embarrassing Incident
-						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
-						["qg"] = 28746,	-- Pilot Vic
 						["sourceQuest"] = 12523,	-- Have a Part, Give a Part
+						["qg"] = 28746,	-- Pilot Vic
+						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 					}),
 					q(12561, {	-- An Issue of Trust
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12803,	-- Force of Nature
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39363),	-- Binding of Purified Corpses
 							i(39406),	-- Splattered Zombie Wristguards
@@ -605,32 +519,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12543, {	-- An Offering for Soo-rahm
-						["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
-						["qg"] = 28191,	-- Oracle Soo-rahm
 						["sourceQuest"] = 12526,	-- Rhino Mastery: The Chase
+						["qg"] = 28191,	-- Oracle Soo-rahm
+						["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
 					}),
 					q(12574, {	-- Back So Soon?
-						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
-						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuests"] = {
 							12572,	-- Gods like Shiny Things
 							12573,	-- Making Peace
 						},
+						["qg"] = 28027,	-- High-Oracle Soo-say
+						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					}),
 					q(12797, {	-- Back Through the Waygate
-						["lvl"] = 66,
-						["coord"] = { 47.4, 9.2, UNGORO_CRATER },
-						["qg"] = 28092,	-- The Etymidian
 						["sourceQuest"] = 12547,	-- The Activation Rune
+						["qg"] = 28092,	-- The Etymidian
+						["coord"] = { 47.4, 9.2, UNGORO_CRATER },
+						["lvl"] = 66,
 					}),
 					q(12683, {	-- Burning to Help
-						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 						["qg"] = 28771,	-- Colvin Norrington
+						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 					}),
 					q(12569, {	-- Crocolisk Mastery: The Ambush
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12560,	-- Crocolisk Mastery: The Plan
+						["qg"] = 28032,	-- Debaar
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39331),	-- Tooth-Marked Girdle
 							i(39374),	-- Crocscale Moccasins
@@ -639,35 +553,35 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12560, {	-- Crocolisk Mastery: The Plan
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12551,	-- Crocolisk Mastery: The Trial
+						["qg"] = 28032,	-- Debaar
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					}),
 					q(12551, {	-- Crocolisk Mastery: The Trial
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
 						["sourceQuests"] = {
 							12549,	-- Dreadsaber Mastery: Becoming a Predator
 							12520,	-- Rhino Mastery: The Test
 						},
+						["qg"] = 28032,	-- Debaar
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					}),
 					q(12608, {	-- Cultist Incursion
-						["coord"] = { 65.0, 60.3, SHOLAZAR_BASIN },
-						["qg"] = 28464,	-- Cultist Corpse
 						["sourceQuest"] = 12612,	-- The Fallen Pillar
+						["qg"] = 28464,	-- Cultist Corpse
+						["coord"] = { 65.0, 60.3, SHOLAZAR_BASIN },
 					}),
 					q(12549, {	-- Dreadsaber Mastery: Becoming a Predator
-						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
-						["qg"] = 28031,	-- Buck Cantwell
 						["sourceQuests"] = {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
 						},
+						["qg"] = 28031,	-- Buck Cantwell
+						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 					}),
 					q(12558, {	-- Dreadsaber Mastery: Ready to Pounce
-						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
-						["qg"] = 28031,	-- Buck Cantwell
 						["sourceQuest"] = 12550,	-- Dreadsaber Mastery: Stalking the Prey
+						["qg"] = 28031,	-- Buck Cantwell
+						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39323),	-- Scrap-Hide Spaulders
 							i(39375),	-- Dreadsaber Tooth Shoulderpads
@@ -677,18 +591,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12550, {	-- Dreadsaber Mastery: Stalking the Prey
-						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
-						["qg"] = 28031,	-- Buck Cantwell
 						["sourceQuest"] = 12549,	-- Dreadsaber Mastery: Becoming a Predator
+						["qg"] = 28031,	-- Buck Cantwell
+						["coord"] = { 26.6, 59.0, SHOLAZAR_BASIN },
 					}),
 					q(12688, {	-- Engineering a Disaster
-						["coord"] = { 35.5, 47.4, SHOLAZAR_BASIN },
 						["qg"] = 28787,	-- Engineer Helice
+						["coord"] = { 35.5, 47.4, SHOLAZAR_BASIN },
 					}),
 					q(12617, {	-- Exterminate the Intruders
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12608,	-- Cultist Incursion
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39365),	-- Lifewarden's Raiment
 							i(39385),	-- Helm of the Ancient Horn
@@ -697,12 +611,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12532, {	-- Flown the Coop!
-						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
-						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuests"] = {
 							12534,	-- The Sapphire Queen
 							12533,	-- The Wasp Hunter's Apprentice
 						},
+						["qg"] = 28138,	-- Elder Harkek
+						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39337),	-- Stained Coop Warmer
 							i(39383),	-- Egg-Warming Boots
@@ -711,19 +625,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12803, {	-- Force of Nature
-						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 						["qg"] = 28746,	-- Pilot Vic
+						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 						["isBreadcrumb"] = true,
 					}),
 					q(12576, {	-- Forced Hand
-						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
-						["qg"] = 28114,	-- Mistcaller Soo-gan
 						["sourceQuest"] = 12574,	-- Back So Soon?
+						["qg"] = 28114,	-- Mistcaller Soo-gan
+						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 					}),
 					q(12570, {	-- Fortunate Misunderstandings
-						["coord"] = { 56.6, 62.4, SHOLAZAR_BASIN },
-						["qg"] = 28217,	-- Injured Rainspeaker Oracle
 						["sourceQuest"] = 12540,	-- Just Following Orders
+						["qg"] = 28217,	-- Injured Rainspeaker Oracle
+						["coord"] = { 56.6, 62.4, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39335),	-- Leggings of Mending Fronds
 							i(39378),	-- Ragged Leaf Grips
@@ -732,19 +646,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12621, {	-- Freya's Pact
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12620,	-- The Lifewarden's Wrath
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					}),
 					q(12572, {	-- Gods like Shiny Things
-						["coord"] = { 54.4, 56.3, SHOLAZAR_BASIN },
-						["qg"] = 28120,	-- Lafoo
 						["sourceQuest"] = 12570,	-- Fortunate Misunderstandings
+						["qg"] = 28120,	-- Lafoo
+						["coord"] = { 54.4, 56.3, SHOLAZAR_BASIN },
 					}),
 					q(12523, {	-- Have a Part, Give a Part
-						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
-						["qg"] = 28033,	-- Weslex Quickwrench
 						["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
+						["qg"] = 28033,	-- Weslex Quickwrench
+						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["groups"] = {
 							o_repeated({
 								i(38349),	-- Venture Co. Spare Parts (QI!)
@@ -760,33 +674,33 @@ root(ROOTS.Zones, {
 						["lvl"] = 66,
 					})),
 					q(12577, {	-- Home Time!
-						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
-						["qg"] = 28114,	-- Mistcaller Soon-gan
 						["sourceQuests"] = {
 							12576,	-- Forced Hand
 							12575,	-- The Lost Mistwhisper Treasure
 						},
+						["qg"] = 28114,	-- Mistcaller Soon-gan
+						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 					}),
 					q(12539, {	-- Hoofing It
-						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
-						["qg"] = 28216,	-- Zepik the Gorloc Hunter
 						["sourceQuests"] = {
 							12537,	-- Lightning Definitely Strikes Twice
 							12538,	-- The Mist Isn't Listening
 						},
+						["qg"] = 28216,	-- Zepik the Gorloc Hunter
+						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 					}),
 					q(12595, {	-- In Search of Bigger Game
-						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
-						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuests"] = {
 							12569,	-- Crocolisk Mastery: The Ambush
 							12558,	-- Dreadsaber Mastery: Ready to Pounce
 							12556,	-- Rhino Mastery: The Kill
 						},
+						["qg"] = 27986,	-- Hemet Nesingwary
+						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					}),
 					q(12624, {	-- It Could Be Anywhere!
-						["coord"] = { 26.8, 58.9, SHOLAZAR_BASIN },
 						["qg"] = 28497,	-- Chad
+						["coord"] = { 26.8, 58.9, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39479),	-- Cloak of Renewed Hope
 							i(39446),	-- Pauldrons of Resolution
@@ -795,37 +709,37 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12540, {	-- Just Following Orders
-						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28082,	-- High-Shaman Rakjak
 						["sourceQuest"] = 12539,	-- Hoofing It
+						["qg"] = 28082,	-- High-Shaman Rakjak
+						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12589, {	-- Kick, What Kick?
-						["coord"] = { 27.0, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28328,	-- Drostan
 						["sourceQuests"] = {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
 						},
+						["qg"] = 28328,	-- Drostan
+						["coord"] = { 27.0, 59.8, SHOLAZAR_BASIN },
 					}),
 					q(12651, {	-- Lakeside Landing
-						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
-						["qg"] = 27986,	-- Hemet Nesingwary
-						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
 							12543,	-- An Offering for Soo-rahm
 							12550,	-- Dreadsaber Mastery: Stalking the Prey
 							12560,	-- Crocolisk Mastery: The Plan
 						},
+						["qg"] = 27986,	-- Hemet Nesingwary
+						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
+						["isBreadcrumb"] = true,
 					}),
 					q(12579, {	-- Lifeblood of the Mosswalker Shrine
-						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
-						["qg"] = 28122,	-- Moodle
 						["sourceQuest"] = 12578,	-- The Angry Gorloc
+						["qg"] = 28122,	-- Moodle
+						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 					}),
 					q(12537, {	-- Lightning Definitely Strikes Twice
-						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
-						["qg"] = 28216,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12536,	-- A Rough Ride
+						["qg"] = 28216,	-- Zepik the Gorloc Hunter
+						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39347),	-- Gloves of the Crackling Storm
 							i(39400),	-- Static-Dispersing Shoulderpads
@@ -834,14 +748,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12571, {	-- Make the Bad Snake Go Away
-						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
-						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12570,	-- Fortunate Misunderstandings
+						["qg"] = 28027,	-- High-Oracle Soo-say
+						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					}),
 					q(12573, {	-- Making Peace
-						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
-						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12571,	-- Make the Bad Snake Go Away
+						["qg"] = 28027,	-- High-Oracle Soo-say
+						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39672),	-- Drape of the Offered Branch
 							i(39674),	-- Cloak of the Buzzing Swarm
@@ -850,21 +764,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12535, {	-- Mischief in the Making
-						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28082,	-- High-Shaman Rakjak
 						["sourceQuest"] = 12532,	-- Flown the Coop!
+						["qg"] = 28082,	-- High-Shaman Rakjak
+						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12658, {	-- My Pet Roc
-						["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
-						["qg"] = 28374,	-- Zootfizzle
 						["sourceQuests"] = {
 							12605,	-- Securing the Bait
 							12603,	-- Sharpening Your Talons
 						},
+						["qg"] = 28374,	-- Zootfizzle
+						["coord"] = { 42.1, 28.8, SHOLAZAR_BASIN },
 					}),
 					q(12522, {	-- Need an Engine, Take an Engine
-						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["qg"] = 28033,	-- Weslex Quickwrench
+						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["groups"] = {
 							o(190447, {	-- Flying Machine Engine
 								i(38334),	-- Flying Machine Engine (QI!)
@@ -872,13 +786,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12528, {	-- Playing Along
-						["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
-						["qg"] = 28095,	-- Tracker Gekgek
 						["description"] = "Available after you kill |cFFFFD700Pitch|r.",
+						["qg"] = 28095,	-- Tracker Gekgek
+						["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
 					}),
 					q(12614, {	-- Post-partum Aggression
-						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuest"] = 12607,	-- A Mammoth Undertaking
+						["qg"] = 28376,	-- Dorian Drakestalker
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							ach(938),	-- The Snows of Northrend
@@ -893,22 +807,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12613, {	-- Powering the Waygate - The Makers' Overlook
-						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12559,	-- Powering the Waygate - The Makers' Perch
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 					}),
 					q(12559, {	-- Powering the Waygate - The Makers' Perch
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12621,	-- Freya's Pact
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					}),
 					q(12681, {	-- Reagent Agent
-						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
-						["qg"] = 28771,	-- Colvin Norrington
 						["sourceQuests"] = {
 							12605,	-- Securing the Bait
 							12603,	-- Sharpening Your Talons
 						},
+						["qg"] = 28771,	-- Colvin Norrington
+						["coord"] = { 42.0, 28.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39368),	-- Field Researcher's Boots
 							i(39413),	-- Hydrafang Breeches
@@ -917,9 +831,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12546, {	-- Reclamation
-						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12797,	-- Back Through the Waygate
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(40290),	-- Gaze of the Punishing Construct
 							i(40291),	-- Helm of the Avenging Protector
@@ -929,17 +843,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12671, {	-- Reconnaissance Flight
-						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
-						["qg"] = 28746,	-- Pilot Vic
 						["sourceQuests"] = {
 							12696,	-- Aerial Surveillance
 							12699,	-- An Embarrassing Incident
 						},
+						["qg"] = 28746,	-- Pilot Vic
+						["coord"] = { 49.9, 61.5, SHOLAZAR_BASIN },
 					}),
 					q(12611, {	-- Returned Sevenfold
-						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12561,	-- An Issue of Trust
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39367),	-- Cowl of the Purifier
 							i(39412),	-- Scourgebane Treads
@@ -949,14 +863,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12526, {	-- Rhino Mastery: The Chase
-						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
-						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
+						["qg"] = 27986,	-- Hemet Nesingwary
+						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					}),
 					q(12556, {	-- Rhino Mastery: The Kill
-						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
-						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuest"] = 12544,	-- The Bones of Nozroon
+						["qg"] = 27986,	-- Hemet Nesingwary
+						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39333),	-- Nimblefoot Moccasins
 							i(39377),	-- Toenail Belt
@@ -965,8 +879,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12520, {	-- Rhino Mastery: The Test
-						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
-						["qg"] = 27986,	-- Hemet Nesingwary
 						["sourceQuests"] = {
 							12523,	-- Have a Part, Give a Part
 							12525,	-- Wipe That Grin Off His Face
@@ -974,37 +886,39 @@ root(ROOTS.Zones, {
 										for this, 12549 and 12589
 							]]--
 						},
+						["qg"] = 27986,	-- Hemet Nesingwary
+						["coord"] = { 27.0, 58.6, SHOLAZAR_BASIN },
 					}),
 					q(12805, {	-- Salvaging Life's Strength
-						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12611,	-- Returned Sevenfold
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 					}),
 					q(12605, {	-- Securing the Bait
-						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
-						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuests"] = {
 							12569,	-- Crocolisk Mastery: The Ambush
 							12558,	-- Dreadsaber Mastery: Ready to Pounce
 							12556,	-- Rhino Mastery: The Kill
 						},
+						["qg"] = 28376,	-- Dorian Drakestalker
+						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 					}),
 					q(12603, {	-- Sharpening Your Talons
-						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
-						["qg"] = 28376,	-- Dorian Drakestalker
 						["sourceQuests"] = {
 							12569,	-- Crocolisk Mastery: The Ambush
 							12558,	-- Dreadsaber Mastery: Ready to Pounce
 							12556,	-- Rhino Mastery: The Kill
 						},
+						["qg"] = 28376,	-- Dorian Drakestalker
+						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 					}),
 					q(12634, {	-- Some Make Lemonade, Some Make Liquor
-						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
-						["qg"] = 29157,	-- Grimbooze Thunderbrew
 						["sourceQuests"] = {
 							12549,	-- Dreadsaber Matery: Becoming a Predator
 							12520,	-- Rhino Mastery: The Test
 						},
+						["qg"] = 29157,	-- Grimbooze Thunderbrew
+						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["groups"] = {
 							o(190622, {	-- Sturdy Vine
 								o(190623, {	-- Papaya
@@ -1020,9 +934,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12644, {	-- Still At It
-						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
-						["qg"] = 29157,	-- Grimbooze Thunderbrew
 						["sourceQuest"] = 12634,	-- Some Make Lemonade, Some Make Liquor
+						["qg"] = 29157,	-- Grimbooze Thunderbrew
+						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["groups"] = {
 							o(190643, {	-- Thunderbrew's Jungle Punch
 								i(38688),	-- Thunderbrew's Jungle Punch (QI!)
@@ -1030,10 +944,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12547, {	-- The Activation Rune
-						["lvl"] = 66,
-						["coord"] = { 47.4, 9.2, UNGORO_CRATER },
-						["qg"] = 28092,	-- The Etymidian
 						["sourceQuest"] = 12548,	-- The Etymidian
+						["qg"] = 28092,	-- The Etymidian
+						["coord"] = { 47.4, 9.2, UNGORO_CRATER },
+						["lvl"] = 66,
 						["groups"] = {
 							i(39366),	-- Spaulders of the Runeseeker
 							i(39411),	-- Legguards of Guided Travel
@@ -1042,34 +956,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12578, {	-- The Angry Gorloc
-						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
-						["qg"] = 28027,	-- High-Oracle Soo-say
 						["sourceQuest"] = 12577,	-- Home Time!
+						["qg"] = 28027,	-- High-Oracle Soo-say
+						["coord"] = { 54.5, 56.3, SHOLAZAR_BASIN },
 					}),
 					q(12529, {	-- The Ape Hunter's Slave
-						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28082,	-- High-Shaman Rakjak
 						["sourceQuest"] = 12528,	-- Playing Along
+						["qg"] = 28082,	-- High-Shaman Rakjak
+						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12544, {	-- The Bones of Nozronn
-						["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
-						["qg"] = 28191,	-- Oracle Soo-rahm
 						["sourceQuest"] = 12543,	-- An Offering for Soo-rahm
+						["qg"] = 28191,	-- Oracle Soo-rahm
+						["coord"] = { 25.5, 66.5, SHOLAZAR_BASIN },
 					}),
 					q(12548, {	-- The Etymidian
-						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12613,	-- Powering the Waygate - The Makers' Overlook
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.6, 48.7, SHOLAZAR_BASIN },
 					}),
 					q(12612, {	-- The Fallen Pillar
-						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12611,	-- Returned Sevenfold
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.5, SHOLAZAR_BASIN },
 					}),
 					q(12592, {	-- The Great Hunter's Challenge
-						["coord"] = { 27.0, 59.9, SHOLAZAR_BASIN },
-						["qg"] = 28328,	-- Drostan
 						["sourceQuest"] = 12589,	-- Kick, What Kick?
+						["qg"] = 28328,	-- Drostan
+						["coord"] = { 27.0, 59.9, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39330),	-- Fingers of Dextrous Decimation
 							i(39373),	-- Bracers of Rapid Death
@@ -1078,17 +992,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12620, {	-- The Lifewarden's Wrath
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuests"] = {
 							12617,	-- Exterminate the Intruders
 							12660,	-- Weapons of Destruction
 						},
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					}),
 					q(12575, {	-- The Lost Mistwhisper Treasure
-						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
-						["qg"] = 28114,	-- Mistcaller Soo-gan
 						["sourceQuest"] = 12574,	-- Back So Soon?
+						["qg"] = 28114,	-- Mistcaller Soo-gan
+						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39336),	-- Bracers of Prompt Reclamation
 							i(39380),	-- Legguards of the Aggressive Emissary
@@ -1097,27 +1011,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12538, {	-- The Mist Isn't Listening
-						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
-						["qg"] = 28216,	-- Zepik the Gorloc Hunter
 						["sourceQuest"] = 12536,	-- A Rough Ride
+						["qg"] = 28216,	-- Zepik the Gorloc Hunter
+						["coord"] = { 46.2, 39.4, SHOLAZAR_BASIN },
 					}),
 					q(12580, {	-- The Mosswalker Savior
-						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
-						["qg"] = 28122,	-- Moodle
 						["sourceQuest"] = 12578,	-- The Angry Gorloc
+						["qg"] = 28122,	-- Moodle
+						["coord"] = { 74.1, 50.7, SHOLAZAR_BASIN },
 					}),
 					q(12654, {	-- The Part-time Hunter
-						["coord"] = { 50.4, 62.1, SHOLAZAR_BASIN },
-						["qg"] = 28568,	-- Tamara Wobblesprocket
 						["sourceQuest"] = 12651,	-- Lakeside Landing
+						["qg"] = 28568,	-- Tamara Wobblesprocket
+						["coord"] = { 50.4, 62.1, SHOLAZAR_BASIN },
 					}),
 					q(12534, {	-- The Sapphire Queen
-						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
-						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuests"] = {
 							12529,	-- The Ape Hunter's Slave
 							12530,	-- Tormenting the Softknuckles
 						},
+						["qg"] = 28138,	-- Elder Harkek
+						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39346),	-- Chitin-Reinforced Hood
 							i(39387),	-- Stinger-Proof Chestguard
@@ -1126,34 +1040,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12645, {	-- The Taste Test
-						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
-						["qg"] = 29157,	-- Crimbooze Thunderbrew
 						["sourceQuest"] = 12644,	-- Still At It
+						["qg"] = 29157,	-- Crimbooze Thunderbrew
+						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(38697),	-- Jungle Punch Sample (QI!)
 						},
 					}),
 					q(12531, {	-- The Underground Menace
-						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
-						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuest"] = 12532,	-- Flown the Coop!
+						["qg"] = 28138,	-- Elder Harkek
+						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
 					}),
 					q(12533, {	-- The Wasp Hunter's Apprentice
-						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28082,	-- High-Shaman Rakjak
 						["sourceQuests"] = {
 							12529,	-- The Ape Hunter's Slave
 							12530,	-- Tormenting the Softknuckles
-						}
+						},
+						["qg"] = 28082,	-- High-Shaman Rakjak
+						["coord"] = { 54.9, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12530, {	-- Tormenting the Softknuckles
-						["coord"] = { 55.0, 69.1, SHOLAZAR_BASIN },
-						["qg"] = 28214,	-- Goregek the Gorilla Hunter
 						["sourceQuest"] = 12528,	-- Playing Along
+						["qg"] = 28214,	-- Goregek the Gorilla Hunter
+						["coord"] = { 55.0, 69.1, SHOLAZAR_BASIN },
 					}),
 					q(12524, {	-- Venture Co. Misadventure
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["qg"] = 28032,	-- Debaar
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 					}),
 					warchiefscommand(q(49535, {	-- Warchief's Command: Sholazar Basin!
 						["timeline"] = { ADDED_7_3_5 },
@@ -1161,13 +1075,11 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(12660, {	-- Weapons of Destruction
-						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
-						["qg"] = 27801,	-- Avatar of Freya
 						["sourceQuest"] = 12608,	-- Cultist Incursion
+						["qg"] = 27801,	-- Avatar of Freya
+						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 					}),
 					q(12489, {	-- Welcome to Sholazar Basin
-						["coord"] = { 39.7, 58.7, SHOLAZAR_BASIN },
-						["qg"] = 27987,	-- Monte Muzzleshot
 						["sourceQuests"] = {
 							-- #if AFTER 6.2.0.19953
 							39209,	-- Sholazar Basin -- Adventure Guide
@@ -1175,21 +1087,23 @@ root(ROOTS.Zones, {
 							-- #endif
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
+						["qg"] = 27987,	-- Monte Muzzleshot
+						["coord"] = { 39.7, 58.7, SHOLAZAR_BASIN },
 					}),
 					q(12521, {	-- Where in the World is Hemet Nesingwary?
-						["qg"] = 28160,	-- Achmage Pentarus
 						-- #if AFTER 7.3.5.25600
 						["sourceQuests"] = {
 							49553,	-- Hero's Call: Sholazar Basin!
 							49535,	-- Warchief's Command: Sholazar Basin!
 						},
 						-- #endif
+						["qg"] = 28160,	-- Achmage Pentarus
 						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					}),
 					q(12525, {	-- Wipe That Grin Off His Face
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
 						["sourceQuest"] = 12524,	-- Venture Co. Misadventure
+						["qg"] = 28032,	-- Debaar
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39332),	-- Ogre-Crushing Wristguards
 							i(39376),	-- Bracers of the Rejuvenated Forest
@@ -1296,8 +1210,9 @@ root(ROOTS.Zones, {
 								i(44112),	-- Glimmershell Shoulder Protectors
 								i(44106),	-- Glitterscale Wrap
 								i(44111),	-- Gold Star Spaulders
-								i(39878, {	-- Mysterious Egg
-									["provider"] = { "i", 39883 },	-- Cracked Egg
+								i(39878),	-- Mysterious Egg
+								i(39883, {	-- Cracked Egg
+									["provider"] = { "i", 39878 },	-- Mysterious Egg
 									["groups"] = {
 										i(44707),	-- Green Proto-Drake (MOUNT!)
 										i(39898, {	-- Cobra Hatchling (PET!)
@@ -1321,6 +1236,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 70.2, SHOLAZAR_BASIN },
 						["groups"] = {
 							i(39522),	-- Wolvar Shortbow
+						},
+					}),
+					n(28027, {	-- High-Oracle Soo-say
+						["coord"] = { 54.57, 56.34, SHOLAZAR_BASIN },
+						["sharedDescription"] = "Talk to High-Oracle Soo-say to obtain the items for summoning Jalot, Lafoo, and Moodle. You can only hold one at a time.",
+						["groups"] = {
+							i(38623),	-- Jalot's Favourite Crystal
+							i(38622),	-- Lafoo's Bug Bag
+							i(38624),	-- Moodle's Stress Ball
 						},
 					}),
 					n(28040, {	-- Mardan Thunderhoof <Gunsmith>
@@ -1349,8 +1273,9 @@ root(ROOTS.Zones, {
 								i(44117),	-- Azure Strappy Pants
 								i(41723),	-- Design: Jagged Forest Emerald (RECIPE!)
 								i(44123),	-- Discarded Titanium Legplates
-								i(44717, {	-- Disgusting Jar
-									["provider"] = { "i", 44718 },	-- Ripe Disgusting Jar
+								i(44717),	-- Disgusting Jar
+								i(44718, {	-- Ripe Disgusting Jar
+									["provider"] = { "i", 44717 },	-- Disgusting Jar
 									["groups"] = {
 										i(44719),	-- Frenzyheart Brew (TOY!)
 									},

@@ -15,12 +15,12 @@ root(ROOTS.Zones, {
 					n(109059, {	-- Dareer
 						["questID"] = 42826,
 						["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
-						["crs"] = { 109062 },    -- Dareer
+						["crs"] = { 109062 },	-- Dareer
 					}),
 					n(109159, {	-- Holk the Wanderer
 						["questID"] = 42863,
 						["coord"] = { 39.6, 58.2, 750 },
-						["crs"] = { 109161 },    -- Holk the Wanderer
+						["crs"] = { 109161 },	-- Holk the Wanderer
 					}),
 				})),
 				n(createHeader({	-- Amateur Hunters
@@ -57,7 +57,7 @@ root(ROOTS.Zones, {
 						100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
 						100238,	-- Mara Swiftmane
 					},
-					["g"] = {
+					["groups"] = {
 						o(245479, {	-- Battered Chest
 							i(131781),	-- Plate Hiking Boots
 						}),
@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 					["description"] = "Speak with Beastmastr Pao'lek then help him tame Arru. Loot Thunder Totem Stolen Goods afterward.",
 					["coord"] = { 48.6, 50.0, HIGHMOUNTAIN },
 					["crs"] = { 97220 },	-- Arru <The Terror>
-					["g"] = {
+					["groups"] = {
 						o(244473, {	-- Thunder Totem Stolen Goods
 							i(131756),	-- Fletcher's Nimble Grips
 						}),
@@ -81,21 +81,21 @@ root(ROOTS.Zones, {
 				n(98299, {	-- Bodash the Hoarder
 					["questID"] = 40084,
 					["coord"] = { 36.6, 16.6, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131799),	-- Zugdug's Piece of Paradis
 					},
 				}),
 				n(97449, {	-- Bristlemaul
 					["questID"] = 40405,
 					["coord"] = { 37.7, 45.7, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131761),	-- Thick Bristly Hood
 					},
 				}),
 				n(94877, {	-- Brogrul the Mighty
 					["questID"] = 39235,
 					["coord"] = { 56.2, 72.4, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(138396),	-- Mighty Chain Footpads
 					},
 				}),
@@ -105,14 +105,14 @@ root(ROOTS.Zones, {
 						{ 43.0, 10.4, HIGHMOUNTAIN },
 						{ 46.2, 12.0, HIGHMOUNTAIN },
 					},
-					["g"] = {
+					["groups"] = {
 						i(131798),	-- Faded Swashbuckler's Jerkin
 					},
 				}),
 				n(97345, {	-- Crawshuk the Hungry
 					["questID"] = 39806,
 					["coord"] = { 48.3, 40.4, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131809),	-- Gleaming Roc Feather
 					},
 				}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, {
 						{ 55.1, 44.3, HIGHMOUNTAIN },	-- cave entrance
 					},
 					["questID"] = 40414,
-					["g"] = {
+					["groups"] = {
 						i(131780),	-- Void Slippers
 					},
 				}),
@@ -132,7 +132,7 @@ root(ROOTS.Zones, {
 					["description"] = "This rare is only available when its associated world quest is active.",
 					["questID"] = 41093,
 					["coord"] = { 43.8, 75.6, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131796),	-- Roggumsoggum's Boppers
 					},
 				}),
@@ -140,7 +140,7 @@ root(ROOTS.Zones, {
 					["description"] = "Click on the Abandoned Fishing Pole to summon Flamescale.",
 					["questID"] = 39963,
 					["coord"] = { 40.9, 57.7, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131773),	-- Flamescale Mail
 					},
 				}),
@@ -155,14 +155,14 @@ root(ROOTS.Zones, {
 				n(96590, {	-- Gurbog da Basher
 					["questID"] = 40347,
 					["coord"] = { 56.5, 60.7, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131775),	-- Da Basher's Toy Armor
 					},
 				}),
 				n(97326, {	-- Hartli the Snatcher
 					["questID"] = 39802,
 					["coord"] = { 51.0, 48.5, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 					--	i(129190),	-- Rope of Friendship
 					},
 				}),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, {
 						{ 51.4, 37.3, HIGHMOUNTAIN },	-- cave entrance
 						{ 50.8, 34.7, HIGHMOUNTAIN },	-- actual rare
 					},
-					["g"] = {
+					["groups"] = {
 						i(131776),	-- Scale Cord of the Eggeater
 					},
 				}),
@@ -185,7 +185,7 @@ root(ROOTS.Zones, {
 						{ 45.2, 25.8, HIGHMOUNTAIN },
 						{ 45.4, 30.4, HIGHMOUNTAIN },
 					},
-					["g"] = {
+					["groups"] = {
 						i(131900),	-- Magestic Elderhorn Hoof (TOY!)
 					},
 				}),
@@ -197,14 +197,14 @@ root(ROOTS.Zones, {
 					["questID"] = 40096,
 					["coord"] = { 46.7, 7.30, HIGHMOUNTAIN },
 					["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
-					["g"] = {
+					["groups"] = {
 						i(131797),	-- Swamprock Salvage Band
 					},
 				}),
 				n(95204, {	-- Oubdob da Smasher
 					["questID"] = 39435,
 					["coord"] = { 47.4, 73.8, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
 				}),
@@ -217,13 +217,13 @@ root(ROOTS.Zones, {
 					["description"] = "Speak to Scout Harefoot and Mynta Talonscreech will spawn.",
 					["questID"] = 39866,
 					["coord"] = { 54.5, 40.5, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131792),	-- Harefoot Pinnacle Wrap
 					},
 				}),
 				o(240353, {	-- Seemingly Unguarded Treasure
 					["questID"] = 40423,
-					["description"] = "Loot the treasure inside the cave and a party of enemies will appear.  Kill them and loot the treasure.",
+					["description"] = "Loot the treasure inside the cave and a party of enemies will appear. Kill them and loot the treasure.",
 					["coord"] = { 52.3, 58.5, HIGHMOUNTAIN },
 					["crs"] = {
 						100302,	-- Puck <Unethical Adventurers>
@@ -232,7 +232,7 @@ root(ROOTS.Zones, {
 						109501,	-- Darkful <Unethical Adventurers>
 						109500,	-- Jak <Unethical Adventurers>
 					},
-					["g"] = {
+					["groups"] = {
 						i(140683),	-- Darkful's Mitts
 						i(140682),	-- Zenobia's Handwraps
 						i(140681),	-- Jak's Gloves
@@ -243,38 +243,38 @@ root(ROOTS.Zones, {
 				n(101077, {	-- Sekhan
 					["questID"] = 40681,
 					["coord"] = { 45.5, 55.2, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131730),	-- Darksaber Leather Belt
 					},
 				}),
 				n(97093, {	-- Shara Felbreath
 					["questID"] = 39762,
 					["coord"] = { 51.0, 25.8, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131791),	-- Felbreath Bloodsinger Robe
 					},
 				}),
 				n(95872, {	-- Skullhat
 					["questID"] = 39465,
 					["coord"] = { 50.9, 32.0, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131769),	-- The Taskmaster's Wristwraps
 					},
 				}),
 				n(98890, {	-- Slumber
 					["questID"] = 40175,
 					["coord"] = { 41.4, 31.9, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131921),	-- Dreamflow Collar
 					},
 				}),
 				n(97653, {	-- Taurson
 					["questID"] = 39872,
 					["coord"] = { 54.1, 50.8, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						o(244628, {	-- Taurson's Prize
 							["displayID"] = 65118,
-							["g"] = {
+							["groups"] = {
 								i(131800),	-- Taurson's Champion Belt
 							},
 						}),
@@ -283,7 +283,7 @@ root(ROOTS.Zones, {
 				n(97203, {	-- Tenpak Flametotem
 					["questID"] = 39782,
 					["coord"] = { 41.9, 41.5, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(129175),	-- Crispin (PET!)
 					},
 				}),

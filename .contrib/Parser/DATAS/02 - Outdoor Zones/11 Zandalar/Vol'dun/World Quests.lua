@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		},{
 			q(52798, {	-- A Few More Charges
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					h(ach(13041)),	-- Hungry, Hungry Ranishu
 				},
 			}),
@@ -23,13 +23,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51095),	-- Ashmane
 			q(54245, {	-- Azerite Altercation (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164767),	-- Unrefined Azerite Shard (QI!)
 				},
 			}),
 			q(54246, {	-- Azerite Altercation (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164767),	-- Unrefined Azerite Shard (QI!)
 				},
 			}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{"select","objectID",
 					311903,	-- Loose Parts (A)
 				}},
-				["g"] = {
+				["groups"] = {
 					i(165852),	-- Alkalescent Salt (QI!)
 				},
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{"select","objectID",
 					311902,	-- Loose Parts (H)
 				}},
-				["g"] = {
+				["groups"] = {
 					i(165852),	-- Alkalescent Salt (QI!)
 				},
 			}),
@@ -81,11 +81,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50848, {	-- Brgl-Lrgl the Basher
 				n(134643, {	-- Brgl-Lrgl the Basher
-					["description"] = "This rare is only up when its associated world quest is active.",
-					["repeatable"] = true,
 					["questID"] = 50663,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 29.78, 46.47, VOLDUN },
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(161044),	-- Tideflat Brute's Greatbelt
 					},
 				}),
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49345, {	-- Buried Treasure
-				["g"] = {
+				["groups"] = {
 					i(159828),	-- Ancient Coin (QI!)
 				},
 			}),
@@ -108,26 +108,26 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53325, {	-- Coarse Storm Silver
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163626),	-- Coarse Storm Silver (QI!)
 				},
 			}),
 			q(51098),	-- Commodore Calhoun
 			q(51562, {	-- Damaged Goods
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160923),	-- Torch (QI!)
 				},
 			}),
 			q(51559, {	-- Damaged Goods
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160923),	-- Torch (QI!)
 				},
 			}),
 			q(54189, {	-- Desert Crawl (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(311182, {	-- Crawler Mine Parts
 						i(164742),	-- Crawler Mine Parts (QI!)
 					}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 142054 },	-- Kusa
 			})),
 			q(51780, {	-- Dinner for Dolly and Dot
-				["g"] = {
+				["groups"] = {
 					i(155680),	-- Buzzard Meat (QI!)
 					i(155679),	-- Speckled Egg (QI!)
 				},
@@ -154,10 +154,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51924),	-- Faithless Follow-Through
 			q(51156, {	-- Fangcaller Xorreth
 				n(136323, {	-- Fangcaller Xorreth
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 51065,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 53.60, 35.01, VOLDUN },
-					["g"] = {
+					["groups"] = {
 						i(162612),	-- Cobra Priest's Headdress
 					},
 				}),
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(54649),	-- Flames of War (Faction Assault WQ)
 			q(53296, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163588),	-- Flourishing Sea Stalk (QI!)
 				},
 			}),
@@ -182,13 +182,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51157, {	-- Golanar
 				n(129027, {	-- Golanar
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50362,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coords"] = {
 						{ 57.6, 6.40, VOLDUN },
 						{ 59.6, 8.80, VOLDUN },
 					},
-					["g"] = {
+					["groups"] = {
 						i(160972),	-- Herculean Golden Sword
 					},
 				}),
@@ -202,10 +202,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51228, {	-- Instant Meat, Ready to Eat
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(159794),	-- Broiled Buzzard Meat (QI!)
+				["groups"] = {
+					o_repeated({	-- Bonebeak Scavenger Meat
+						o(288189),	-- Bonebeak Scavenger Meat
+						o(288190),	-- Bonebeak Scavenger Meat
+						i(159794),	-- Broiled Buzzard Meat (QI!)
+					}),
+					o_repeated({	-- Brineclaw Meat
+						o(288191),	-- Brineclaw Meat
+						o(288192),	-- Brineclaw Meat
+						i(159795),	-- Steaming Crab Meat (QI!)
+					}),
 					i(159796),	-- Meatification Potion (QI!)
-					i(159795),	-- Steaming Crab Meat (QI!)
 				},
 			}),
 			q(51239),	-- Instructions Not Included
@@ -240,11 +248,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50851, {	-- Mor'fani the Exile
 				n(134694, {	-- Mor'fani the Exile
-					["description"] = "This rare is only up when its associated world quest is active.",
-					["repeatable"] = true,
 					["questID"] = 50666,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 37.41, 88.71, VOLDUN },
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(162616),	-- Master Dinomancer's Tunic
 					},
 				}),
@@ -260,7 +268,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53300, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
-				["g"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
+				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(51850, {	-- Preserve the Oasis
 				["races"] = HORDE_ONLY,
@@ -275,7 +283,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51124),	-- Relic Hunter Hazaak
 			q(51330, {	-- Resilient Seeds
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159909),	-- Resilient Seed (QI!)
 				},
 			}),
@@ -284,7 +292,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53324, {	-- Rough Monelite
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163625),	-- Rough Monelite (QI!)
 				},
 			}),
@@ -294,7 +302,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51173, {	-- Sandfishing
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159767),	-- Sandworm Fang (QI!)
 					-- Drops from Quest Mob required for achievement
 					i(163464),	-- Cobalt Sandworm Scale
@@ -308,10 +316,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51122),	-- Scorpox
 			q(54188, {	-- Scrambled Bots (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(311822, {	-- Bot Scrambler
 						["coord"] = { 39.5, 53.7, VOLDUN },
-						["g"] = { i(165841), },	-- Bot Scrambler (QI!)
+						["groups"] = { i(165841) },	-- Bot Scrambler (QI!)
 					}),
 				},
 			}),
@@ -324,7 +332,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51116),	-- Skycarver Krakit
 			q(53326, {	-- Smooth Platinum
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163627),	-- Smooth Platinum (QI!)
 				},
 			}),
@@ -333,19 +341,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(51106),	-- Songstress Nahjeen
 			q(51836, {	-- Sourching Resources
-				["g"] = {
+				["groups"] = {
 					i(160755),	-- Azerite Sack (QI!)
 				},
 			}),
 			q(51558, {	-- Spider Scorching
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160870),	-- Torch (QI!)
 				},
 			}),
 			q(51561, {	-- Spider Scorching
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160870),	-- Torch (QI!)
 				},
 			}),
@@ -368,10 +376,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55303),	-- The Cycle of Life
 			q(54154, {	-- The Hills Have Spies (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(315933, {	-- Gallywix's Getaway Pack
 						["coord"] = { 37.0, 52.1, VOLDUN },
-						["g"] = { i(165942) },	-- Gallywix's Getaway Pack (QI!)
+						["groups"] = { i(165942) },	-- Gallywix's Getaway Pack (QI!)
 					}),
 					i(165656),	-- Spy Gear (QI!)
 				},
@@ -387,13 +395,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54415, {	-- Vulpera for a Day (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					h(ach(13437)),	-- Scavenge like a Vulpera
 				},
 			}),
 			q(51316),	-- Walking in a Spiderweb
 			q(51223, {	-- Walking on Broken Glass
-				["g"] = {
+				["groups"] = {
 					i(159790),	-- Sea Glass (QI!)
 				},
 			}),
@@ -408,12 +416,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(51315, {	-- Wild Flutterbies
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162585),	-- Flutterby Collector (QI!)
 				},
 			}),
 			q(51322, {	-- Wings and Stingers
-				["g"] = {
+				["groups"] = {
 					i(159925),	-- Buzzard Wing (QI!)
 					i(159924),	-- Oasis Stinger (QI!)
 				},
@@ -422,82 +430,82 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51002, {	-- Work Order: Akunda's Bite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162445),	-- Pattern: Battle Flag: Rallying Swiftness [Rank 3] (RECIPE!)
 				},
 			}),
 			q(51008, {	-- Work Order: Blood-Stained Bone
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52419, {	-- Work Order: Coarse Leather Barding
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52397, {	-- Work Order: Contract: Voldunai
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162370),	-- Technique: Contract: Voldunai [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52371, {	-- Work Order: F.R.I.E.D.
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52413, {	-- Work Order: Golden Beryl
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52408, {	-- Work Order: Kyanite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52338, {	-- Work Order: Potion of Concealment
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52412, {	-- Work Order: Rubelite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51007, {	-- Work Order: Storm Silver Ore
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = MINING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51011, {	-- Work Order: Tempest Hide
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52370, {	-- Work Order: Thermo-Accelerated Plague Spreader
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["races"] = HORDE_ONLY,
+				["groups"] = {
 					i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 				},
 			}),
 			q(51003, {	-- Work Order: Winter's Kiss
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51783, {	-- Zem'lan Rescue
 				["races"] = ALLIANCE_ONLY,
@@ -519,5 +527,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		}),
 	}),
 })));
-
-

@@ -19,6 +19,7 @@ PIRATES_DAY_HEADER = createHeader({
 		de = "Piratentag",
 		fr = "Jour des pirates",
 		it = "Giorno dei Pirati",
+		mx = "Día de los Piratas",
 		pt = "Dia dos Piratas",
 		ru = "День пирата",
 		ko = "해적의 날",

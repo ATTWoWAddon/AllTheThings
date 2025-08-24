@@ -1,23 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-BATTLEFIELD_BARRENS = createHeader({
-	readable = "Battlefield: Barrens",
-	icon = 252178,
-	text = {
-		en = "Battlefield: Barrens",
-		de = "Schlachtfeld: Brachland",
-		es = "Campo de batalla: Los Baldíos",
-		-- mx = "Campo de batalla: Los Baldíos",
-		fr = "Champ de bataille : les Tarides",
-		it = "Campo di battaglia: le Savane",
-		ko = "전쟁터: 불모의 땅",
-		pt = "Campo de Batalha: Sertões",
-		ru = "Поле битвы: Степи",
-		cn = "战线：贫瘠之地",
-		tw = "戰爭前線：貧瘠之地",
-	},
-});
+
 local RADICAL_MOJO = 97849;
 local LATENT_KORKRON_HELM = 97829;
 local LATENT_KORKRON_SPAULDERS = 97831;
@@ -26,19 +10,36 @@ local LATENT_KORKRON_GLOVES = 97828;
 local LATENT_KORKRON_BELT = 97832;
 local LATENT_KORKRON_LEGGINGS = 97830;
 local LATENT_KORKRON_BOOTS = 97827;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 } }, {
+
+-- #if MOP
+local BATTLEFIELD_ONUPDATE = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. MOP_PHASE_ESCALATION .. [[;
+		t.description = "This will be removed when the Siege of Orgrimmar phase begins."
+	end
+end]];
+-- #endif
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
+	["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+	-- #if MOP
+	["OnUpdate"] = BATTLEFIELD_ONUPDATE,
+	-- #endif
+}, {
 	n(BATTLEFIELD_BARRENS, {
 		["description"] = "During 5.3 a big battle occured in Barrens.",
 		["maps"] = {
-			VALE_OF_ETERNAL_BLOSSOMS,
 			DUROTAR,
 			NORTHERN_BARRENS,
+			VALE_OF_ETERNAL_BLOSSOMS,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8307, {	-- Darkspear Revolutionary
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(228, {	-- Darkspear Revolutionary <Name>
 							["races"] = HORDE_ONLY,
 						}),
@@ -46,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				}),
 				ach(8306, {	-- Hordebreaker
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(230, {	-- <Name> the Hordebreaker
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -58,50 +59,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["isBreadcrumb"] = true,
 				}),
 				q(32808, {	-- A Little Field Work
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["qg"] = 61962,	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32809, {	-- Gathering Intelligence
+					["sourceQuests"] = { 32808 },	-- A Little Field Work
 					["qg"] = 71027,	-- Amber Kearnen
 					["coord"] = { 54.4, 9.8, DUROTAR },
-					["sourceQuests"] = { 32808 },	-- A Little Field Work
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32810, {	-- The Darkspear Rebellion
+					["sourceQuests"] = { 32809 },	-- Gathering Intelligence
 					["qg"] = 71027,	-- Amber Kearnen
 					["coord"] = { 54.4, 9.8, DUROTAR },
-					["sourceQuests"] = { 32809 },	-- Gathering Intelligence
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32871, {	-- Vol'jin of the Darkspear
+					["sourceQuests"] = { 32810 },	-- The Darkspear Rebellion
 					["qg"] = 71320,	-- Zen'tabra
 					["coord"] = { 51.8, 39.2, DUROTAR },
-					["sourceQuests"] = { 32810 },	-- The Darkspear Rebellion
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32811, {	-- Battlefield: Barrens
+					["sourceQuests"] = { 32871 },	-- Vol'jin of the Darkspear
 					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
-					["sourceQuests"] = { 32871 },	-- Vol'jin of the Darkspear
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32895, {	-- The Road to War
+					["sourceQuests"] = { 32811 },	-- Battlefield: Barrens
 					["qg"] = 71336,	-- Gleep Chatterswitch
 					["coord"] = { 85.8, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["sourceQuests"] = { 32811 },	-- Battlefield: Barrens
 					["races"] = ALLIANCE_ONLY,
-					["isWeekly"] = true,
 					["isBreadcrumb"] = true,
+					["isWeekly"] = true,
 				}),
 				q(32872, {	-- Battlefield: Barrens
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["coord"] = { 49.8, 40.0, DUROTAR },
 					["sourceQuests"] = {
 						32811,	-- Battlefield: Barrens
 						32895,	-- The Road to War
 					},
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
+					["coord"] = { 49.8, 40.0, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["groups"] = {
@@ -109,50 +110,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(32812, {	-- The Darkspear Rebellion
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["qg"] = 61962,	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
-					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
 					["races"] = HORDE_ONLY,
 				}),
 				q(32867, {	-- Vol'jin of the Darkspear
+					["sourceQuests"] = { 32812 },	-- The Darkspear Rebellion
 					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["coord"] = { 49.8, 40.0, DUROTAR },
-					["sourceQuests"] = { 32812 },	-- The Darkspear Rebellion
 					["races"] = HORDE_ONLY,
 				}),
 				q(32819, {	-- Battlefield: Barrens
+					["sourceQuests"] = { 32867 },	-- Vol'jin of the Darkspear
 					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
-					["sourceQuests"] = { 32867 },	-- Vol'jin of the Darkspear
 					["races"] = HORDE_ONLY,
 				}),
 				q(32813, {	-- Battle of Sen'jin Village
+					["sourceQuests"] = { 32819 },	-- Battlefield: Barrens
 					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
-					["sourceQuests"] = { 32819 },	-- Battlefield: Barrens
 					["races"] = HORDE_ONLY,
 				}),
 				q(32814, {	-- Battle of Razor Hill
+					["sourceQuests"] = { 32813 },	-- Battle of Sen'jin Village
 					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
-					["sourceQuests"] = { 32813 },	-- Battle of Sen'jin Village
 					["races"] = HORDE_ONLY,
 				}),
 				q(32896, {	-- The Road to War
+					["sourceQuests"] = { 32814 },	-- Battle of Razor Hill
 					["qg"] = 71483,	-- Abrogar Dusthoof
 					["coord"] = { 62.2, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
-					["sourceQuests"] = { 32814 },	-- Battle of Razor Hill
 					["races"] = HORDE_ONLY,
-					["isWeekly"] = true,
 					["isBreadcrumb"] = true,
+					["isWeekly"] = true,
 				}),
 				q(32862, {	-- Battlefield: Barrens
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
-					["coord"] = { 49.8, 40.0, DUROTAR },
 					["sourceQuests"] = {
 						32814,	-- Battle of Razor Hill
 						32896,	-- The Road to War
 					},
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
+					["coord"] = { 49.8, 40.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["groups"] = {
@@ -312,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			n(VENDORS, {
 				n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
 					["description"] = "Rebellion Quatermaster during Barrens Battlefield.",
-					["g"] = {
+					["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' (TOY!)
 						i(97942),	-- Sen'jin Spirit Drum (TOY!)
@@ -345,7 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ESCALATION, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
 	m(KALIMDOR, {
 		m(DUROTAR, {
 			n(BATTLEFIELD_BARRENS, {
@@ -360,4 +361,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}))));

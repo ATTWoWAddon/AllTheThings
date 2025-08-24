@@ -6,26 +6,11 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			-- #endif
 			REMOVED_8_0_1,
 	}}, {
-		ach(131, {	-- Journeyman in First Aid
-			-- #if ANYCLASSIC
-			["spellID"] = 3274,	-- First Aid (Journeyman)
-			-- #endif
-			["rank"] = 2,
-		}),
-		ach(132, {	-- Expert in First Aid
-			-- #if ANYCLASSIC
-			["spellID"] = 7924,	-- First Aid (Expert)
-			-- #endif
-			["rank"] = 3,
-		}),
-		ach(133, {	-- Artisan in First Aid
-			-- #if ANYCLASSIC
-			["spellID"] = 10846,	-- First Aid (Artisan)
-			-- #endif
-			["rank"] = 4,
-		}),
+		ach(131),	-- Journeyman in First Aid
+		ach(132),	-- Expert in First Aid
+		ach(133),	-- Artisan in First Aid
 	})),
-	expansion(EXPANSION.TBC, bubbleDownSelf({
+	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
@@ -34,20 +19,10 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			-- #endif
 			REMOVED_8_0_1,
 	}}, {
-		applyclassicphase(TBC_PHASE_ONE, ach(134, {	-- Master in First Aid
-			-- #if ANYCLASSIC
-			["spellID"] = 27028,	-- First Aid (Master)
-			-- #endif
-			["rank"] = 5,
-		})),
-	})),
+		ach(134),	-- Master in First Aid
+	}))),
 	expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
-		ach(135, {	-- Grand Master in First Aid
-			-- #if ANYCLASSIC
-			["spellID"] = 45542,	-- First Aid (Grand Master)
-			-- #endif
-			["rank"] = 6,
-		}),
+		ach(135),	-- Grand Master in First Aid
 		-- #if BEFORE BFA
 		ach(137, {	-- Stocking Up
 			["provider"] = { "i", 34722 },	-- Heavy Frostweave Bandage
@@ -68,12 +43,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		-- #endif
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(4918, {	-- Illustrious Grand Master Medic
-			-- #if ANYCLASSIC
-			["spellID"] = 74559,	-- First Aid (Illustrious)
-			-- #endif
-			["rank"] = 7,
-		}),
+		ach(4918),	-- Illustrious Grand Master Medic
 		-- #if BEFORE BFA
 		ach(5480, {	-- Preparing for Disaster
 			["provider"] = { "i", 53051 },	-- Dense Embersilk Bandage
@@ -81,31 +51,16 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		-- #endif
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {
-		ach(6838, {	-- Zen Master Medic
-			-- #if ANYCLASSIC
-			["spellID"] = 110406,	-- First Aid (Zen Master)
-			-- #endif
-			["rank"] = 8,
-		}),
+		ach(6838),	-- Zen Master Medic
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(9505, {	-- Draenor Medic
-			-- #if ANYCLASSIC
-			["spellID"] = 158741,	-- First Aid (Draenor Master)
-			-- #endif
-			["rank"] = 9,
-		}),
+		ach(9505),	-- Draenor Medic
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 } }, {
-		ach(10599, {	-- Legion Medic
-			-- #if ANYCLASSIC
-			["spellID"] = 195113,	-- First Aid (Legion Master)
-			-- #endif
-			["rank"] = 10,
-		}),
+		ach(10599),	-- Legion Medic
 		ach(11139, {	-- Field Medic!
 			["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-			["g"] = {
+			["groups"] = {
 				title(340),	-- Field Medic <Name> (TITLE!)
 				i(139534, {	-- Bloody Letter
 					["criteriaID"] = 34872,		-- Bloody Letter
@@ -206,7 +161,6 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 			},
 		}),
 		ach(11138, {	-- Is There a Medic in the Zone?
-			-- identical criteria as full achievement
 			["sym"] = {{"partial_achievement",11139}},	-- Field Medic!
 		}),
 	})),

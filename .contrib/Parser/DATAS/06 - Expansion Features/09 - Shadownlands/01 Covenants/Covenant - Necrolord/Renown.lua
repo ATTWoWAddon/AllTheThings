@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = {
+			["groups"] = {
 				i(186524, {	-- A Tiny Vial of Slime (Pepe!)
 					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
-					["g"] = {
+					["groups"] = {
 						i(186568),	-- Memory of an Abomination's Frenzy
 						i(187118),	-- Memory of the Demonic Oath
 						i(186577),	-- Memory of the Unbridled Swarm

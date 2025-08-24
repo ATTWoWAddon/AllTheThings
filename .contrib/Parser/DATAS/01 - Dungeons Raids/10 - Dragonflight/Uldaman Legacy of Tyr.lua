@@ -8,16 +8,16 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2071,	-- Hall of the Keepers
 			2072,	-- The Vault of Tyr
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(71093, {	-- Legacy of Tyr: Secrets of the Past
 					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
-					["_drop"] = { "r" },	-- bad API data
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["altQuests"] = {
 						66458,	-- Legacy of Tyr: Secrets of the Past [A]
 						66586,	-- Legacy of Tyr: Secrets of the Past [H]
 					},
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["_drop"] = { "r" },	-- bad API data
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						184582,	-- Eric "The Swift"
 						184580,	-- Olaf
 					},
-					["g"] = {
+					["groups"] = {
 						i(193812),	-- Fierce Boreal Armguards
 						i(193815),	-- Homeland Raid Horn
 						i(193816),	-- Lost Hero's Waist Wrap
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
-					["g"] = {
+					["groups"] = {
 						i(193809),	-- Bromach's Disentombed Locket
 						i(193813),	-- Excavated Earthen Wristslabs
 						i(193810),	-- Miner's Sturdy Trousers
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2484, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
-					["g"] = {
+					["groups"] = {
 						i(193806),	-- Ancient Crosswrapped Sandals
 						i(193804),	-- Eternal Sentry's Ring
 						i(193805, {	-- Inexorable Resonator
@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2476, {	-- Emberon
 					["crs"] = { 184422 },
-					["g"] = {
+					["groups"] = {
 						i(193792),	-- Animated Shackles
 						i(193811),	-- Annora's Punctured Leggings
 						i(193797),	-- Bouldersplitter
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
-					["g"] = {
+					["groups"] = {
 						ach(16278),	-- Uldaman: Legacy of Tyr
 						i(193799),	-- Crazed Traveler's Legwraps
 						i(193801),	-- Fatebound Chainmail
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
-					["g"] = {
+					["groups"] = {
 						ach(16279),	-- Heroic: Uldaman: Legacy of Tyr
 					},
 				}),
@@ -132,19 +132,19 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2487, {	-- Bromach
 					["crs"] = { 184018 },	-- Bromach
-					["g"] = {
+					["groups"] = {
 						ach(16337),	-- It's a Trogg Eat Trogg World
 					},
 				}),
 				e(2484, {	-- Sentinel Talondras
 					["crs"] = { 184124 },	-- Sentinel Talondras
-					["g"] = {
+					["groups"] = {
 						ach(16282),	-- No, You're Stunning!
 					},
 				}),
 				e(2479, {	-- Chrono-Lord Deios
 					["crs"] = { 184125 },	-- Chrono-Lord Deios
-					["g"] = {
+					["groups"] = {
 						ach(16280),	-- Mythic: Uldaman: Legacy of Tyr
 						ach(17103),	-- Mythic: Uldaman: Legacy of Tyr Guild Run
 						ach(16281),	-- Like Sands Through the Hourglass

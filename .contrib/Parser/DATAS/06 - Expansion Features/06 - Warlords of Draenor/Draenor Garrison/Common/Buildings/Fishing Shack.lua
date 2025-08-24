@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 		n(BUILDINGS, {
 			garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(7274, {  -- Learning From The Best
 							i(86596),	-- Nat's Fishing Chair (TOY!)
@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					n(QUESTS, {
 						i(112623, {	-- Pack of Fishing Supplies
 							["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
-							["g"] = {
+							["groups"] = {
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 								i(33820),	-- Weather-Beaten Fishing Hat
 								i(44983),	-- Strand Crawler (PET!)
@@ -26,242 +26,242 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(36611, {	-- A True Draenor Angler
 							["sourceQuests"] = { 36870, 36612 },	-- Luring Nat (A, H)
-							["requireSkill"] = FISHING,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
+							["requireSkill"] = FISHING,
 						}),
 						q(36517, {	-- Abyssal Gulper Eel
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
 						}),
 						q(35075, {	-- Abyssal Gulper Eel
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
 						}),
 						q(36802, {	-- Abyssal Gulper Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(36616, {	-- An Angler on Our Team
 							["sourceQuests"] = { 36611 },	-- A True Draenor Angler
-							["requireSkill"] = FISHING,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["groups"] = {
 								follower(202),	-- Nat Pagle
 							},
 						}),
 						q(36515, {	-- Blackwater Whiptail
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(35074, {	-- Blackwater Whiptail
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(36803, {	-- Blackwater Whiptail Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116817, 1 }, },	-- Blackwater Whiptail Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(36804, {	-- Blind Lake Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116820, 1 }, },	-- Blind Lake Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(36514, {	-- Blind Lake Sturgeon
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(35073, {	-- Blind Lake Sturgeon
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(36513, {	-- Fat Sleeper
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(35072, {	-- Fat Sleeper
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(36805, {	-- Fat Sleeper Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116821, 1 }, },	-- Fat Sleeper Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(39283, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {	-- Felmouth Frenzy Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						})),
 						q(36608, {	-- Finding Nat Pagle
 							["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
-							["providers"] = {
-								{ "n", 79917 },	-- Rak'jin
-								{ "n", 85708 },	-- Segumi
+							["qgs"] = {
+								79917,	-- Rak'jin
+								85708,	-- Segumi
 							},
 						}),
 						q(36510, {	-- Fire Ammonite
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(35066, {	-- Fire Ammonite
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(36800, {	-- Fire Ammonite Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116819, 1 }, },	-- Fire Ammonite Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(36511, {	-- Jawless Skulker
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(35071, {	-- Jawless Skulker
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-							["isDaily"] = true,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["isDaily"] = true,
+							["groups"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
 						}),
 						q(36806, {	-- Jawless Skulker Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						}),
 						q(34194, {	-- Looking For Help
-							["requireSkill"] = FISHING,
 							["sourceQuest"] = 36592,	-- Bigger is Better
 							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 53.9, 13.4, LUNARFALL },	-- lvl 2 garrison
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(34758, {	-- Looking For Help
-							["requireSkill"] = FISHING,
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.1, 72.2, FROSTWALL },
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 						}),
 						q(36870, {	-- Luring Nat
-							["description"] = "Requires upgrading your Fishing Shack to level 3.",
+							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
 							["provider"] = { "n", 85708 },	-- Segumi
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36612, {	-- Luring Nat
-							["description"] = "Requires upgrading your Fishing Shack to level 3.",
+							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
 							["provider"] = { "n", 79971 },	-- Rak'jin
 							["races"] = HORDE_ONLY,
 						}),
 						q(38406, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Sea Scorpion Lunker
-							["requireSkill"] = FISHING,
-							["repeatable"] = true,
 							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["cost"] = { { "i", 122696, 1 }, },	-- Sea Scorpion Lunker
-							["g"] = {
+							["requireSkill"] = FISHING,
+							["repeatable"] = true,
+							["groups"] = {
 								i(NATS_LUCKY_COIN),
 							}
 						})),
@@ -269,7 +269,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					n(RARES, {
 						i(116158, {	-- Lunarfall Carp
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								n(85715, {	-- Lunarfall Cavedweller
 									i(23720),	-- Riding Turtle (MOUNT!)
 									i(46109),	-- Sea Turtle (MOUNT!)
@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						i(112633, {	-- Frostdeep Minnow
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								n(81171, {	-- Frostdeep Cavedweller
 									i(23720),	-- Riding Turtle (MOUNT!)
 									i(46109),	-- Sea Turtle (MOUNT!)

@@ -257,7 +257,7 @@ CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(96252, {["timeline"] = {ADDED_4_0_6}}),	-- Volatile Alchemist Stone
 	}),
 }));
-MOP_ALCHEMY = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(105206, {	-- Alchemy (Zen Master)
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -272,7 +272,7 @@ MOP_ALCHEMY = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 }));
 DRAENOR_ALCHEMY = applyclassicphase(WOD_PHASE_ONE, i(109558, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob.",
-	["g"] = {
+	["groups"] = {
 		r(156606, {	-- Alchemy (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -445,7 +445,7 @@ NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] 
 		r(298995),	-- Abyssal Alchemist Stone
 	}),
 }));
-SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309822),	-- Shadowlands Alchemy
 	filter(CONSUMABLES, {
 		r(359870, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion

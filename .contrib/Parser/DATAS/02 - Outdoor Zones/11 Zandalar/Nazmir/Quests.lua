@@ -6,20 +6,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
-			-- *someting* unlocks "into the darkness" other than the pre-nazmir questline that starts from the dazar'alor scouting map.  it was already available with no prereqs when i was in the middle of questing through zuldazar.  figure out what quest triggers its availability, and figure out if it makes the scouting map questline invalid/if those should all be marked as breadcrumbs or with altQuests.
+			-- *someting* unlocks "into the darkness" other than the pre-nazmir questline that starts from the dazar'alor scouting map. it was already available with no prereqs when i was in the middle of questing through zuldazar. figure out what quest triggers its availability, and figure out if it makes the scouting map questline invalid/if those should all be marked as breadcrumbs or with altQuests.
 			-- figure out if "'til death do us part" is available any earlier than turning in "a tribute for death."  it wasn't available w/0 prereqs, just need to make sure we have the availability trigger correct.
-			-- verify SQ for "the forlorn soul" also, picked up at the same time as above.  actual non-breadcrumb SQ seems to be "A Tribute for Death," but could be something else?
+			-- verify SQ for "the forlorn soul" also, picked up at the same time as above. actual non-breadcrumb SQ seems to be "A Tribute for Death," but could be something else?
 			-- verify SQ for "a poisonous touch."  it wasn't available w/0 prereqs and i didn't see it until after turning in "staying hidden," but it may be available earlier.
-			-- verify whether or not "crawg free zone" is needed for "it seems you've made a friend" by turning it in last of the 4 quests.  i turned it in second to last, and the previous person who quested through turned in "bad juju"/"off with her head" last, so it seems those 3 are required)
+			-- verify whether or not "crawg free zone" is needed for "it seems you've made a friend" by turning it in last of the 4 quests. i turned it in second to last, and the previous person who quested through turned in "bad juju"/"off with her head" last, so it seems those 3 are required)
 			-- figure out if "what rots beneath" is a breadcrumb
 			-- this question is also in the dazar'alor file, but verify SQ for "the blood gate."  it may become available after "ateena's fall," not "halting the empire's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
 			q(50934, {	-- A Chance Sighting
 				["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 131993 },	-- Yash
 				["coord"] = { 66.9, 41.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = { i(153676) },	-- Vial of Liquid (QI!)
+				["isBreadcrumb"] = true,
+				["groups"] = { i(153676) },	-- Vial of Liquid (QI!)
 			}),
 			q(47244, {	-- A Culling of Souls
 				["sourceQuests"] = { 47241 },	-- The Shadow of Death
@@ -34,7 +34,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47493, {	-- A Lonely Spirit
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = {
 					49348,	-- A Desecrated Temple
 					47247,	-- That Which Haunts the Dead
@@ -43,13 +42,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(47622, {	-- A Magical Glow
 				["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151237),	-- Glowfly Bottle (QI!)
 					i(158972),	-- Alluring Glowfly Lantern
 					i(158975),	-- Gilded Lilypad
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133338 },	-- Rokhan
 				["coord"] = { 48.3, 53.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156931),	-- Wand of Embers (QI!)
 				},
 			}),
@@ -75,11 +75,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(48402, {	-- A Poisonous Touch
-				--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 				["sourceQuests"] = { 47525 },	-- Staying Hidden
 				["provider"] = { "n", 126039 },	-- Mag'ash the Poisonous
 				["coord"] = { 69.1, 50.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	SQ needs confirmation. i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner. was NOT available with 0 prereqs prior to starting dazar'alor.
 			}),
 			q(47263, {	-- A Time of Revelation
 				["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151040),	-- Chunky Meat (QI!)
 				},
 			}),
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133476 },	-- Princess Talanji
 				["coord"] = { 49.3, 57.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155335),	-- Death-Pledged Shoulderguards
 					azeriteItem(159011),	-- Death-Pledged Hauberk
 					azeriteItem(155334),	-- Loa Speaker's Epaulets
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129165 },	-- Guard Satao
 				["coord"] = { 63.1, 52.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = { i(153678) },	-- Sample Bottle (QI!)
+				["groups"] = { i(153678) },	-- Sample Bottle (QI!)
 			}),
 			q(49779, {	-- Bad to the Bone
 				["sourceQuests"] = { 49778 },	-- Don't Go into the Light
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 				["coord"] = { 39.5, 43.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152785),	-- Jomubu's Juju Powder (QI!)
 				},
 			}),
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 68.6, 35.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156527),	-- Reanimated Monstrosity Bones (QI!)
 					i(156528),	-- Titan Manipulator (QI!)
 					i(159078),	-- Potency Manipulator
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
 				["coord"] = { 38.9, 59.9, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(153346),	-- Cursed Bone (QI!)
 				},
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132988 },	-- Patch
 				["coord"] = { 44.9, 68.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156847),	-- Seaforium Smoke Grenade (QI!)
 					i(159827),	-- Bomb-samdi Mojo Bombs
 				},
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48468, {	-- Bwonsamdi's Deliverance
 				["provider"] = { "n", 130481 },	-- Shinga Deathwalker
 				["coord"] = { 39.0, 59.9, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(153178),	-- Cremation Torch (QI!)
 				}
 			}),
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130930 },	-- Zaluto
 				["coord"] = { 24.1, 53.2, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156481),	-- Jin'Tiki's Empowered Fetish (QI!)
 					i(155556),	-- Jin'Tiki's Signet
 					i(159046),	-- Loa Speaker's Footpads
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127961 },	-- Princess Talanji
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158981),	-- Death-Pledged Footguards
 					i(158974),	-- Fen Summoner's Cloak
 					i(158980),	-- Loa Speaker's Slippers
@@ -291,18 +291,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 72.5, 29.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(159088),	-- Nazmani Hexblade
+				["groups"] = {
 					i(159085),	-- Ancient Loa-Blessed Mace
+					i(159086),	-- Corrupted Tribe Headsmasher
 					i(159083),	-- Degraded Empire Shortblade
-					i(159084),	-- Handscythe of the First City
-					i(159087),	-- Nazmani Longstaff
 					i(159082),	-- Fallen Nation Recurve
 					i(159081),	-- Fallen Nation Carver
-					i(159086),	-- Corrupted Tribe Headsmasher
-					i(161299, {	-- Stoat-Trapper's Bladefist
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
+					i(159084),	-- Handscythe of the First City
+					i(159088),	-- Nazmani Hexblade
+					i(159087),	-- Nazmani Longstaff
+					--
+					a(i(161299)),	-- Stoat-Trapper's Bladefist
 				},
 			}),
 			q(49938, {	-- Corrupted Earth
@@ -322,7 +321,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 38.8, 77.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152596),	-- Sur'jan's Ritual Dagger (QI!)
 				},
 			}),
@@ -351,7 +350,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156519),	-- Camoflauge Kit (QI!)
 				},
 			}),
@@ -369,7 +368,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127960 },	-- Lashk
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153024),	-- Scroll of Combustion (QI!)
 				},
 			}),
@@ -393,7 +392,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124376 },	-- Witch Doctor Zentimo
 				["coord"] = { 68.6, 46.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						i(151113),	-- Stolen Idol of Krag'wa
 						o(271648),	-- Stolen Idol of Krag'wa
@@ -410,7 +409,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123544 },	-- Patch
 				["coord"] = { 82.4, 27.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158993),	-- Death-Pledged Legguards
 					i(158992),	-- Loa Speaker's Trousers
 					i(158991),	-- Nazmani Warplate Wargreaves
@@ -423,8 +422,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127958 },	-- Kisha
 				["coord"] = { 65.6, 17.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158973),	-- Band of Destiny
+					i(153058),	-- Scroll of Fate's Hand (PQI!)
 				},
 			}),
 			q(48492, {	-- Getting a Leg Up
@@ -440,11 +440,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50808, {	-- Halting the Empire's Fall
-				--	is this a breadcrumb?
 				["sourceQuests"] = { 51244 },	-- What Rots Beneath
 				["provider"] = { "n", 137113 },	-- Rokhan
 				["coord"] = { 51.8, 65.5, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	is this a breadcrumb?
 			}),
 			q(47711, {	-- Head of the Viper
 				["sourceQuests"] = {
@@ -463,6 +463,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129378 },	-- Jo'chunga
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(153694),	-- Poisoned Dagger (PQI!)
+				},
 			}),
 			q(48890, {	-- How to Be a Blood Troll
 				["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
@@ -475,11 +478,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 66.9, 38.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156522),	-- Keeper Bolcan's Core (QI!)
 					o(281417, {	-- Keeper Shavras's Core
 						["coord"] = { 69.3, 39.8, NAZMIR },
-						["g"] = { i(156521) },	-- Keeper Shavras's Core (QI!)
+						["groups"] = { i(156521) },	-- Keeper Shavras's Core (QI!)
 					}),
 				},
 			}),
@@ -491,7 +494,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 				["coord"] = { 31.0, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153483),	-- Modified Blood Fetish (QI!)
 				},
 			}),
@@ -500,24 +503,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124376 },	-- Witch Doctor Zentimo
 				["coord"] = { 68.6, 46.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155383),	-- Bloody Warmother's Greatcloak
 					i(159040),	-- Death-Pledged Bindings
 					i(159038),	-- Loa Speaker's Bands
 					i(159039),	-- Nazmani Warplate Armguards
 					i(159041),	-- Ritual Flayer's Armbands
-					i(158631, {	-- Wickerwoven Bindings (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158633, {	-- Crone-Seeker's Bindings (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158634, {	-- Waycrest Militia Wristguards (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158632, {	-- Banisher Bindings
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
+					--
+					a(i(158632)), 	-- Banisher Bindings
+					a(i(158633)), 	-- Crone-Seeker's Bindings
+					a(i(158634)), 	-- Waycrest Militia Wristguards
+					a(i(158631)), 	-- Wickerwoven Bindings
 				},
 			}),
 			q(49314, {	-- Hunting Zardrax
@@ -525,10 +521,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47250,	-- We'll Meet Again
 					49082,	-- Upward and Onward
 				},
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 				["coord"] = { 39.5, 43.8, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(47130, {	-- Improper Burial
 				["sourceQuests"] = { 47105 },	-- Into The Darkness
@@ -538,7 +534,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 47.2, 79.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
+					i(154724),	-- Ceremonial Torch (QI!)
 					i(155322),	-- Death-Pledged Gauntlets
 					i(155329),	-- Death-Pledged Leggings
 					i(155321),	-- Loa Speaker's Gloves
@@ -547,7 +544,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155327),	-- Nazmani Warplate Greaves
 					i(155330),	-- Ritual Flayer's Breeches
 					i(155319),	-- Ritual Flayer's Gloves
-					i(154724),	-- Ceremonial Torch
 				},
 			}),
 			q(47105, {	-- Into The Darkness
@@ -563,12 +559,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152989),	-- Kruga's Poisoned Claw (QI!)
 				},
 			}),
 			q(49382, {	-- It Seems You've Made a Friend
-				--	verify whether or not "crawg free zone" is needed
 				["sourceQuests"] = {
 					49380,	-- Bad Juju
 					--	49379,	-- Crawg Free Zone (may be required)
@@ -578,7 +573,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129164 },	-- Chronicler Jabari
 				["coord"] = { 63.1, 52.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				--	verify whether or not "crawg free zone" is needed
+				["groups"] = {
 					i(156566),	-- Dart (PET!)
 				},
 			}),
@@ -607,7 +603,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 126080 },	-- Shinga Deathwalker
 				["coord"] = { 39.0, 59.9, NAZMIR },
-				["g"] = {	-- quest is neutral, but rewards are Horde-only
+				["groups"] = {	-- quest is neutral, but rewards are Horde-only
 					i(158943, {	-- Nazmani Warplate Treads
 						["races"] = HORDE_ONLY,
 					}),
@@ -634,15 +630,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					o(278341, {	-- Ancient Phylactery
 						["coord"] = { 39.4, 57.4, NAZMIR },
-						["g"] = { i(154136) },	-- Ancient Phylactery (QI!)
+						["groups"] = { i(154136) },	-- Ancient Phylactery (QI!)
 					}),
 					o(278342, {	-- Pristine Phylactery
 						["coord"] = { 38.4, 54.5, NAZMIR },
-						["g"] = { i(154137) },	-- Pristine Phylactery (QI!)
+						["groups"] = { i(154137) },	-- Pristine Phylactery (QI!)
 					}),
 					o(278337, {	-- Repaired Phylactery
 						["coord"] = {  40.9, 52, NAZMIR },
-						["g"] = { i(152468) },	-- epaired Phylactery (QI!)
+						["groups"] = { i(152468) },	-- epaired Phylactery (QI!)
 					}),
 					i(154130),	-- Spirit Powder (QI!)
 				},
@@ -663,7 +659,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
 				["coord"] = { 77.7, 53.2, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158071),	-- Empowerment Potion (QI!)
 				},
 			}),
@@ -672,7 +668,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159015),	-- Death-Pledged Boots
 					i(158986),	-- Death-Pledged Gloves
 					i(158985),	-- Loa Speaker's Handwraps
@@ -681,18 +677,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(159013),	-- Nazmani Warplate Stompers
 					i(159016),	-- Ritual Flayer's Footwraps
 					i(158983),	-- Ritual Flayer's Grips
-					i(158588, {	-- Wickerwoven Walkers (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158590, {	-- Crone-Seeker's Striders (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158591, {	-- Waycrest Militia Footguards (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158589, {	-- Banisher Striders
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
+					--
+					a(i(158589)),	-- Banisher Striders
+					a(i(158590)),	-- Crone-Seeker's Striders
+					a(i(158591)),	-- Waycrest Militia Footguards
+					a(i(158588)),	-- Wickerwoven Walkers
 				},
 			}),
 			q(47264, {	-- Leave None Standing
@@ -706,7 +695,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127958 },	-- Kisha
 				["coord"] = { 58.5, 13.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153070),	-- Parts of Torga (QI!)
 				},
 			}),
@@ -718,7 +707,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153672),	-- Vashera's Talisman (QI!)
 					i(153671),	-- Yialu's Talisman (QI!)
 					i(153674),	-- Zu'Anji's Talisman (QI!)
@@ -738,7 +727,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },
 				["coord"] = { 34.0, 78.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156621),	-- Sur'jan's Helm (QI!)
 					i(156620),	-- Sur'jan's Left Shoulderpad (QI!)
 					i(156619),	-- Sur'jan's Right Shoulderpad (QI!)
@@ -748,22 +737,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
 				["provider"] = { "n", 149823 },
 				["coord"] = { 47.6, 16.2, 1381 },
-				["maps"] = { 1382 },	-- Uldir (Scenario)
 				["timeline"] = {
 					ADDED_8_1_5,
 					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
+				["maps"] = { 1382 },	-- Uldir (Scenario)
 			}),
 			q(49125, {	-- Negative Blood
 				["sourceQuests"] = { 49120 },	-- Speaking with the Dead
 				["provider"] = { "n", 127958 },	-- Kisha
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(280347, {	-- Scroll of Fate's Hand
 						["coord"] = { 62.3, 24.6, NAZMIR },
-						["g"] = { i(156568) },	-- Damaged Scroll of Fate's Hand (QI!)
+						["groups"] = { i(156568) },	-- Damaged Scroll of Fate's Hand (QI!)
 					}),
 					i(160559),	-- Scroll of Purification (QI!)
 				},
@@ -779,7 +768,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126377 },	-- Ingrid Bellix
 				["coord"] = { 26.6, 37.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(154892),	-- Skycaller Gem (QI!)
 				},
 			}),
@@ -788,7 +777,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155913),	-- Sticky Tar (QI!)
 				},
 			}),
@@ -807,20 +796,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129165 },	-- Guard Satao
 				["coord"] = { 63.1, 52.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153572),	-- Nagla's Head (QI!)
-					i(159092),	-- Grim Ritual Mace
-					i(159094),	-- Bloodsinger Wand
 					i(159089),	-- Amaki Scalper
-					i(159091),	-- Bloodrite Sticker
-					i(159093),	-- Marrow Drained Bonestaff
-					i(159090),	-- Crawgmother's Shortbow
-					i(159096),	-- Nagla's Headcracker
 					i(159095),	-- Bloodhunter Greatblade
-					i(161293, {	-- Thrasneck Greatblade (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-
+					i(159091),	-- Bloodrite Sticker
+					i(159094),	-- Bloodsinger Wand
+					i(159090),	-- Crawgmother's Shortbow
+					i(159092),	-- Grim Ritual Mace
+					i(159093),	-- Marrow Drained Bonestaff
+					i(159096),	-- Nagla's Headcracker
+					--
+					a(i(161293)),	-- Thrasneck Greatblade
 				},
 			}),
 			q(48854, {	-- Offer of Power
@@ -844,7 +831,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 				["coord"] = { 30.9, 52.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155378),	-- Zardax's Tattered Drape
 					i(155374),	-- Death Defier's Aegis
 					i(155375),	-- Ghoulish Blood Idol
@@ -864,7 +851,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123545 },	-- Newt
 				["coord"] = { 82.2, 27.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151202),	-- Ancient Titan Relics (QI!)
 				},
 			}),
@@ -876,7 +863,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153012),	-- Poisoned Mojo Flask (QI!)
 				},
 			}),
@@ -885,14 +872,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127212 },	-- Kal'dran
 				["coord"] = { 30.9, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153482),	-- Blood Fetish (QI!)
 				},
 			}),
 			q(47924, {	-- Profanity Filter
 				["provider"] = { "n", 124666 },	-- Kajosh
 				["coord"] = { 55.1, 36.7, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(151849),	-- Scroll of Inferno (QI!)
 				},
 			}),
@@ -905,7 +892,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 68.6, 35.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156537),	-- Containment Protocol (QI!)
 				},
 			}),
@@ -914,7 +901,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 38.8, 77.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152595),	-- Saurid Teeth (QI!)
 				},
 			}),
@@ -935,7 +922,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156480),	-- Jin'Tiki's Fetish (QI!)
 				},
 			}),
@@ -944,7 +931,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 66.9, 38.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156524),	-- Titan Plating (QI!)
 				},
 			}),
@@ -953,10 +940,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(278691, {	-- Sarcophagus Lid
 						["coord"] = { 39.6, 34.9, NAZMIR },
-						["g"] = { i(150753) },	-- Decaying Bloodstone (QI!)
+						["groups"] = { i(150753) },	-- Decaying Bloodstone (QI!)
 					}),
 				},
 			}),
@@ -975,10 +962,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48473, {	-- Respecting the Rites
 				["provider"] = { "n", 130481 },	-- Shinga Deathwalker
 				["coord"] = { 39.0, 59.9, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					o(281361, {	-- Ritual Powder
 						["coord"] = { 41.3, 62.7, NAZMIR },
-						["g"] = { i(157793) },	-- Ritual Powder (QI!)
+						["groups"] = { i(157793) },	-- Ritual Powder (QI!)
 					}),
 				}
 			}),
@@ -987,7 +974,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126346 },	-- Chadwick Paxton
 				["coord"] = { 25.9, 36.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153519),	-- Skycaller Gem (QI!)
 				},
 			}),
@@ -1002,7 +989,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126346 },	-- Chadwick Paxton
 				["coord"] = { 28.6, 43.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158950),	-- Death-Pledged Grips
 					i(155342),	-- Death-Pledged Wristguards
 					i(158949),	-- Loa Speaker's Grips
@@ -1021,7 +1008,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 74.7, 39.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151363),	-- Ticker's Rocket Launcher (QI!)
 					i(159002),	-- Death-Pledged Girdle
 					i(159001),	-- Loa Speaker's Cinch
@@ -1038,7 +1025,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 34.0, 78.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152610),	-- Sur'jan's Grappling Hook (QI!)
 				},
 			}),
@@ -1049,17 +1036,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47925, {	-- Shoak's on the Menu
-				["sourceQuests"] = { 47924 },	-- Profanity Filter
 				["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
+				["sourceQuests"] = { 47924 },	-- Profanity Filter
 				["qgs"] = {
 					125024,	-- Kajosh
 					124933,	-- Kajosh
 				},
 				["coord"] = { 51.7, 33.2, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({["races"] = ALLIANCE_ONLY},{
 						["description"] = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
-						["g"] = {
+						["groups"] = {
 							i(155465),	-- Wickerwoven Cord
 							i(155462),	-- Wickerwoven Legwraps
 							i(155481),	-- Crone-Seeker's Chain
@@ -1092,10 +1079,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131978 },	-- Lashk
 				["coord"] = { 67.4, 41.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(280480, {	-- Damaged Core
 						["coord"] = { 66.9, 38.8, NAZMIR },
-						["g"] = { i(156593) },	-- Damaged Core (QI!)
+						["groups"] = { i(156593) },	-- Damaged Core (QI!)
 					}),
 				},
 			}),
@@ -1104,7 +1091,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 				["coord"] = { 39.6, 43.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152785),	-- Jomubu's Juju Powder (QI!)
 				},
 			}),
@@ -1113,13 +1100,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49432,	-- The Forlorn Soul
 					49348,	-- A Desecrated Temple
 					47491,	-- Remnants of the Damned
-					--	may also require this quest.  definitely doesn't require "'til death do us part"
+					--	may also require this quest. definitely doesn't require "'til death do us part"
 					--	47247,	-- That Which Haunts the Dead
 				},
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155347),	-- Bloodrite Headchopper
 					i(155344),	-- Ceremonial Limb Chopper
 					i(155350),	-- Death Sworn Blade
@@ -1151,7 +1138,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124428 },	-- Hanzabu
 				["coord"] = { 39.5, 43.9, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153514),	-- Hanzabu's Charm (QI!)
 				},
 			}),
@@ -1172,10 +1159,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49477, {	-- Surprise Backup
-				["isBreadcrumb"] = true,
 				["provider"] = { "o", 278577 },	-- Torn Horde Missive
 				["coord"] = { 34.0, 39.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(50444, {	-- Taking the Loa Road
 				["sourceQuests"] = {
@@ -1193,27 +1180,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133125 },	-- Princess Talanji
 				["coord"] = { 44.1, 62.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(159034),	-- Nazmani Warplate Greatbelt
-					i(159025),	-- Nazmani Warplate Legplates
-					i(159035),	-- Loa Speaker's Cincture
-					i(159026),	-- Loa Speaker's Legwraps
+				["groups"] = {
 					i(159036),	-- Death-Pledged Chain
 					i(159027),	-- Death-Pledged Breeches
+					i(159035),	-- Loa Speaker's Cincture
+					i(159026),	-- Loa Speaker's Legwraps
+					i(159034),	-- Nazmani Warplate Greatbelt
+					i(159025),	-- Nazmani Warplate Legplates
 					i(159037),	-- Ritual Flayer's Girdle
 					i(159028),	-- Ritual Flayer's Pants
-					i(158619, {	-- Wickerwoven Waistband (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158621, {	-- Crone-Seeker's Cincture (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158622, {	-- Waycrest Militia Buckle (confirmed)
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
-					i(158620, {	-- Banisher Waistwrap
-						["races"] = ALLIANCE_ONLY,	-- Alliance appearance with no other source, granted by learning Horde appearance
-					}),
+					--
+					a(i(158620)),	-- Banisher Waistwrap
+					a(i(158621)),	-- Crone-Seeker's Cincture
+					a(i(158622)),	-- Waycrest Militia Buckle
+					a(i(158619)),	-- Wickerwoven Waistband
 				},
 			}),
 			q(48577, {	-- Terrorizing Their Eggs
@@ -1230,7 +1210,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155338),	-- Death-Pledged Belt
 					i(159052),	-- Death-Pledged Grasps
 					i(155337),	-- Loa Speaker's Cord
@@ -1262,7 +1242,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },
 				["coord"] = { 34.0, 78.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152611),	-- Coagulated Dreadtick Blood (QI!)
 					i(156618),	-- Sur'jan's Dreadtick Gasser (QI!)
 				},
@@ -1272,7 +1252,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133471 },	-- Rokhan
 				["coord"] = { 45.4, 58.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156868),	-- Crawg Poison Gland (QI!)
 				},
 			}),
@@ -1285,7 +1265,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 39.0, 59.9, NAZMIR },
 			}),
 			q(49432, {	-- The Forlorn Soul
-				--	SQ needs verification.
 				["sourceQuests"] = {
 					47880,	-- A Tribute for Death
 					47493,	-- A Lonely Spirit (breadcrumb)
@@ -1293,6 +1272,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126588 },	-- Keula
 				["coord"] = { 42.5, 31.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	SQ needs verification.
 			}),
 			q(47623, {	-- The Last Witch Doctor of Krag'wa
 				["sourceQuests"] = {
@@ -1302,7 +1282,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.3, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157805),	-- Scepter of Rebirth (QI!)
 				},
 			}),
@@ -1341,18 +1321,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123548 },	-- Ticker
 				["coord"] = { 82.3, 27.2, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(271747, {	-- Broken Elevating Gears
 						["coord"] = { 79.2, 27.5, NAZMIR },
-						["g"] = { i(151209) },	-- Broken Elevating Gears (QI!)}
+						["groups"] = { i(151209) },	-- Broken Elevating Gears (QI!)
 					}),
 					o(271746, {	-- Damaged Artillery Barrel
 						["coord"] = { 77.7, 25.5, NAZMIR },
-						["g"] = { i(151208) },	-- Damaged A.M.O.D. Barrel (QI!)
+						["groups"] = { i(151208) },	-- Damaged A.M.O.D. Barrel (QI!)
 					}),
 					o(271748, {	-- Shattered Firing Mechanism
 						["coord"] = { 79.5, 22.2, NAZMIR },
-						["g"] = { i(151210) },	-- Shattered Firing Mechanism (QI!)
+						["groups"] = { i(151210) },	-- Shattered Firing Mechanism (QI!)
 					}),
 				},
 			}),
@@ -1364,22 +1344,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 34.0, 78.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152600),	-- Jarkadiax's Eye (QI!)
 					i(155377),	-- Drained Bone Band
 					i(159074),	-- Jarkadiax's Other Eye
 				},
 			}),
 			q(47248, {	-- 'Til Death Do Us Part
-				--	SQ needs verification.
 				["sourceQuests"] = { 47880 },	-- A Tribute for Death
 				["provider"] = { "n", 122706 },	-- Theurgist Salazae
 				["coord"] = { 36.7, 27.4, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				--	SQ needs verification.
+				["groups"] = {
 					o(270991, {	-- Ancient Urn
 						["coord"] = { 40.4, 26.4, NAZMIR },
-						["g"] = { i(150754) },	-- Valjabu's Tusk Ring (QI!)
+						["groups"] = { i(150754) },	-- Valjabu's Tusk Ring (QI!)
 					}),
 				},
 			}),
@@ -1394,7 +1374,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 128276 },	-- Jo'chunga
 				["coord"] = { 31.3, 46.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155313),	-- Death-Pleged Chestguard
 					azeriteItem(155325),	-- Death-Pledged Helm
 					azeriteItem(155324),	-- Loa Speaker's Hood
@@ -1415,10 +1395,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47918, {	-- To Serve Krag'wa
 				["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.4, 56.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49064, {	-- Torga, the Turtle Loa
 				["sourceQuests"] = { 49185 },	-- Catching Up
@@ -1431,7 +1411,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127960 },	-- Lashk
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153131),	-- Scroll of Eternal Return (QI!)
 				},
 			}),
@@ -1524,62 +1504,62 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51244, {	-- What Rots Beneath
-				--	is this a breadcrumb?
 				["sourceQuests"] = { 50087 },	-- Ateena's Fall
 				["provider"] = { "n", 140656 },	-- Rokhan
 				["coord"] = { 50.5, 58.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	is this a breadcrumb?
 			}),
 			q(49774, {	-- Won't Leaf Him to Die
 				["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(279293, {	-- Sweetleaf Bush
 						i(155912),	-- Sweetleaf (QI!)
 					}),
 				},
 			}),
 			q(53781, {	-- Eyir
+				["sourceQuests"] = { 54145 },	-- The Loa of Death
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
 				["coord"] = { 39.5, 24.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 54145 },	-- The Loa of Death
+				["lvl"] = 120,
 			}),
 			q(53780, {	-- Jailor of the Damned
+				["sourceQuests"] = { 54145 },	-- The Loa of Death
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
 				["coord"] = { 39.5, 24.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 54145 },	-- The Loa of Death
+				["lvl"] = 120,
 			}),
 			q(53782, {	-- Mysteries of Death
-				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
-				["coord"] = { 39.5, 24.6, NAZMIR },
-				["races"] = HORDE_ONLY,
 				["sourceQuests"] = {
 					54147,	-- Confront The Val'kyr
 					53780,	-- Jailor of the Damned
 				},
+				["provider"] = { "n", 122688 },	-- Bwonsamdi
+				["coord"] = { 39.5, 24.6, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
 			}),
 			q(48823, {	-- Projection Destruction
+				["sourceQuests"] = { 48854 },	-- Offer of Power
 				["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 				["coord"] = { 31.0, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 48854 },	-- Offer of Power
-				["g"] = {
+				["groups"] = {
 					i(152727),	-- Da'jul's Fire Mojo (QI!)
 				},
 			}),
 			q(54145, {	-- The Loa of Death
+				["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				["provider"] = { "n", 146824 },	-- Princess Talanji
-				["lvl"] = 120,
 				["coord"] = { 39.5, 27.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53779 },	-- The Lies of a Loa
+				["lvl"] = 120,
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 50 },
@@ -1607,9 +1587,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(50080, {	-- Raiding the Raiders
-					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
-					["g"] = {
+					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
+					["groups"] = {
 						i(157029),	-- Bag of Zandalari Supplies (QI!)
 					},
 				}),
@@ -1654,7 +1634,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 					["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
 				}),
 				q(49368, {	-- Nazmir dialogue around the Necropolis: "De voice... he is calling to us... we must obey!"
-					["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
+					["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it. haunted!
 				}),
 				q(49369, {	-- Nazmir dialogue around the Necropolis: "Do you hear it?  It's Bwonsamdi's call!  Eternity is near!"
 					["isWorldQuest"] = true, -- unsure if this erroneously shows up in /attwq like the others; if so, it needs to be marked as a WQ

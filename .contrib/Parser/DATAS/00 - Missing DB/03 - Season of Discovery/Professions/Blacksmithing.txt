@@ -1,0 +1,60 @@
+1.15.3.55348
+r(461669),	-- Refined Arcanite Champion
+r(461671),	-- Stronger-hold Gauntlets
+r(461675),	-- Refined Arcanite Reaper
+r(461712),	-- Refined Hammer of the Titans
+r(461730),	-- Hardened Frostguard
+r(461743),	-- Sageblade of the Archmagus
+1.15.5.57537
+r(1213709),	-- Ironvine Belt
+r(1213711),	-- Ironvine Gloves
+r(1213715),	-- Ironvine Breastplate
+r(1213746),	-- Heavy Obsidian Belt
+r(1213748),	-- Light Obsidian Belt
+r(1214309),	-- Dreamscale Visor
+1.15.6.58725
+r(1223787),	-- Icebane Breastplate
+r(1223789),	-- Icebane Gauntlets
+r(1223791),	-- Icebane Bracers
+1.15.7.59706
+r(1224631),	-- Scarlet Soldier's Helmet
+r(1224632),	-- Scarlet Soldier's Spaulders
+r(1224633),	-- Scarlet Soldier's Chestplate
+r(1224635),	-- Scarlet Soldier's Protectors
+r(1224636),	-- Scarlet Soldier's Grips
+r(1224637),	-- Scarlet Soldier's Waistguard
+r(1224638),	-- Scarlet Soldier's Legplates
+r(1224639),	-- Scarlet Soldier's Stompers
+
+
+
+
+Missing in Blacksmithing
+
+1.15.3.55348
+r(461669),	-- Refined Arcanite Champion
+r(461671),	-- Stronger-hold Gauntlets
+r(461675),	-- Refined Arcanite Reaper
+r(461712),	-- Refined Hammer of the Titans
+r(461730),	-- Hardened Frostguard
+r(461743),	-- Sageblade of the Archmagus
+1.15.5.57537
+r(1213709),	-- Ironvine Belt
+r(1213711),	-- Ironvine Gloves
+r(1213715),	-- Ironvine Breastplate
+r(1213746),	-- Heavy Obsidian Belt
+r(1213748),	-- Light Obsidian Belt
+r(1214309),	-- Dreamscale Visor
+1.15.6.58725
+r(1223787),	-- Icebane Breastplate
+r(1223789),	-- Icebane Gauntlets
+r(1223791),	-- Icebane Bracers
+1.15.7.59706
+r(1224631),	-- Scarlet Soldier's Helmet
+r(1224632),	-- Scarlet Soldier's Spaulders
+r(1224633),	-- Scarlet Soldier's Chestplate
+r(1224635),	-- Scarlet Soldier's Protectors
+r(1224636),	-- Scarlet Soldier's Grips
+r(1224637),	-- Scarlet Soldier's Waistguard
+r(1224638),	-- Scarlet Soldier's Legplates
+r(1224639),	-- Scarlet Soldier's Stompers

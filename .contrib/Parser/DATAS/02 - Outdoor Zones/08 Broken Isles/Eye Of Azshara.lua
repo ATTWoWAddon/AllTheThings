@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(EYE_OF_AZSHARA, {
 			["description"] = "The Eye of Azshara is zone south of Dalaran in the Broken Isles. It is an elite zone that is a replica of the dungeon of the same name. A flight master can be found here, you need to unlock it by visiting the flight point.",
 			["icon"] = 1417426,
-			["g"] = {
+			["groups"] = {
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",
 						1914,	-- Coastal Sandpiper (PET!)
@@ -26,11 +26,11 @@ root(ROOTS.Zones, {
 					n(111573, {	-- Kosumoth the Hungering
 						["description"] = "For a detailed explanation on how to get this world quest to be available, find |cFFFFD700Kosumoth the Hungering|r in the Secrets section of the ATT main list (type /att main, or click the minimap button).",
 						["questID"] = 45479,
-						["g"] = {
+						["groups"] = {
 							q(43798, {	-- DANGER: Kosumoth the Hungering
 								["sourceQuest"] = 43761,	-- Step 12: Hungering Orb
 								["repeatable"] = true,
-								["g"] = {
+								["groups"] = {
 									i(140261),	-- Hungering Claw (PET!)
 									i(138201),	-- Fathom Dweller (MOUNT!)
 								},
@@ -40,8 +40,8 @@ root(ROOTS.Zones, {
 				}),
 				n(WORLD_QUESTS, {
 					q(43805, {	-- Aquatic Assassination
-						["lvl"] = 110,
 						["isWorldQuest"] = true,
+						["lvl"] = 110,
 					}),
 				}),
 			},

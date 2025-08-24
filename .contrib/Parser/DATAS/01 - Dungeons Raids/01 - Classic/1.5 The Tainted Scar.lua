@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228355),	-- Flayed Doomguard Belt
 					i(228352),	-- Fel-Infused Leggings
 					i(228359),	-- Ring of Entropy
-					i(21371),	-- Pattern: Core Felcloth Bag
+					i(21371),	-- Pattern: Core Felcloth Bag (RECIPE!)
 				},
 			}),
 			n(12397, {	-- Lord Kazzak / Highlord Kruul

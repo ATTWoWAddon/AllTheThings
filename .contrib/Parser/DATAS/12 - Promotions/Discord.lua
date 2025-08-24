@@ -6,7 +6,9 @@ DISCORD_PROMOTION = createHeader({
 	icon = 133014,
 	text = {
 		en = "Discord Promotion",
-		cn = "Discord推广",
+		es = "Promoción de Discord",
+		mx = "Promoción de Discord",
+		cn = "Discord 推广",
 		tw = "Discord推廣",
 	},
 	description = {

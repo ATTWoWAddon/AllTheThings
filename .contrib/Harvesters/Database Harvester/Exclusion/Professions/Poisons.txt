@@ -1,5 +1,2 @@
-439500@@@Sebacious Poison [Classic]
-439503@@@Atrophic Poison [Classic]
-439505@@@Numbing Poison [Classic]
 2818@@@Deadly Poison
 2823@@@Deadly Poison

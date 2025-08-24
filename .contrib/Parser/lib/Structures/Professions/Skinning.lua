@@ -16,4 +16,5 @@ TWW_SKINNING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(442567),	-- Stormcharged Leather
 	r(442569),	-- Sunless Carapace
 	r(442572),	-- Thunderous Hide
+	r(469989, {["timeline"] = {ADDED_11_0_5}}),	-- Toughened Tempest Pelt
 });

@@ -3,3 +3,4 @@
 "Parser.exe" config=".config/classic/02 - TBC.config"
 "Parser.exe" config=".config/classic/03 - Wrath.config"
 "Parser.exe" config=".config/classic/04 - Cataclysm.config"
+"Parser.exe" config=".config/classic/05 - Mists of Pandaria.config"

@@ -284,6 +284,7 @@ i(85500);	-- Anglers Fishing Raft
 i(86582);	-- Aqua Jewel
 i(90067);	-- B. F. F. Necklace
 i(86565);	-- Battle Horn
+i(86579);	-- Bottled Tornado [Removed 7.0.3]
 i(87214);	-- Blingtron 4000
 i(89139);	-- Chain Pet Leash
 i(86575);	-- Chalice of Secrets
@@ -1309,8 +1310,6 @@ i(206347);	-- Mannequin Charm
 i(212337);	-- Stone of the Hearth
 i(211788);	-- Tess's Peacebloom
 i(212518);	-- Vial of Endless Draconic Scales
---- NYI ---
-i(212525);	-- Delicate Ebony Parasol
 
 ------------------
 -- PATCH 10.2.6 --
@@ -1360,6 +1359,7 @@ i(215147);	-- Beautification Iris
 i(228698);	-- Candleflexer's Dumbbell
 i(224552);	-- Cave Spelunker's Torch
 i(221962);	-- Defective Escape Pod
+i(212525);	-- Delicate Ebony Parasol
 i(221964);	-- Filmless Camera
 i(225969);	-- Forged Flag of Victory
 i(225933);	-- Forged Legend's Pennant
@@ -1394,7 +1394,7 @@ i(228789);	-- Coldflame Ring
 i(232305);	-- Forged Champion's Prestigious Banner
 i(224192);	-- Practice Ravager
 i(232301);	-- Tempered Banner of the Algari
---- UNSORTED ---
+--- NYI ---
 i(232303);	-- Unknown
 i(232304);	-- Unknown
 i(232307);	-- Unknown
@@ -1414,8 +1414,6 @@ i(228966);	-- Starry-Eyed Goggles
 -- #endif
 i(234473);	-- Soweezi's Comfy Lawn Chair
 i(218308);	-- Winter Veil Cracker
---- NYI ---
-i(235016);	-- Redeployment Module
 
 ------------------
 -- PATCH 11.1.0 --
@@ -1446,7 +1444,6 @@ i(235799);	-- Throwin' Sawblade
 i(234951);	-- Uncracked Cold Ones
 i(237382);	-- Undermine Supply Crate
 i(235672);	-- Venture Co. Banner
---- UNSORTED ---
 i(235519);	-- Prized Legend's Pennant
 
 ------------------
@@ -1456,10 +1453,55 @@ i(235519);	-- Prized Legend's Pennant
 i(167698);	-- Secret Fish Goggles
 -- #endif
 i(238850);	-- Arathi Entertainer's Flame
-i(238852);	-- Flame's Radiance Banner
-i(239693);	-- Radiant Lynx Whistle
---- UNSORTED ---
 i(239007);	-- Dastardly Banner
+i(238852);	-- Flame's Radiance Banner
 i(232302);	-- Prized Banner of the Algari
 i(232306);	-- Prized Champion's Prestigious Banner
+i(239693);	-- Radiant Lynx Whistle
 i(239018);	-- Winner's Podium
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(244888);	-- Echo of Xal'atath, Blade of the Black Empire
+i(245567);	-- K'aresh Memory Crystal
+i(246227);	-- Lightning-Blessed Spire
+i(235016);	-- Redeployment Module
+i(245631);	-- Royal Visage
+i(245942);	-- Sea-Blessed Shrine
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+i(246907);	-- Broker Supply Crate
+i(242323);	-- Chowdar's Favorite Ribbon
+i(246565);	-- Cosmic Hearthstone
+i(243056);	-- Delver's Mana-Bound Ethergate
+i(244792);	-- Etheric Brannmorpher
+i(250722);	-- Ethereal Stall
+i(244470);	-- Etheric Victory
+i(246903);	-- Guise of the Phase Diver
+i(246908);	-- K'areshi Supply Crate
+i(246905);	-- Overtuned K'areshi Goggles
+i(245970);	-- P.O.S.T. Master's Express Hearthstone
+--- UNSORTED ---
+i(242534);	-- Azure Sea Skiff
+i(245946);	-- Brewer's Balloon
+i(249713);	-- Cartel Transmorpher
+-- SPECIAL CASE --
+-- #if BEFORE 11.2.5
+i(131717);	-- Starlight Beacon	
+-- This will be a toy in 11.2.5, but the Quest will be up before 11.2.5 and then you have to wait 5 months
+-- Tagging it as toy earlier, so users can easily prefarm it
+-- #endif
+
+------------------
+-- PATCH 11.2.5 --
+------------------
+-- #if AFTER 11.2.5
+i(141605);	-- Flight Master's Whistle
+i(131717);	-- Starlight Beacon	
+i(138111);	-- Stormforged Grapple Launcher
+-- #endif
+
+--- UNSORTED ---

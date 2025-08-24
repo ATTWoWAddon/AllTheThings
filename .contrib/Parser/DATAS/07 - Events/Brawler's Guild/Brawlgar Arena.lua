@@ -3,6 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawl'gar Arena
+	["timeline"] = { ADDED_5_1_0 },
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = 970888,
@@ -14,7 +15,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(13192, {	-- Brawler for Azeroth
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					title(209, {	-- Brawler <Name>
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
 					}),
@@ -35,7 +36,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(8343, {		-- Deck Your Collection (Season 1)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -44,7 +45,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(9177, {		-- Deck Your Collection (Season 2)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -107,7 +108,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(9173, {		-- The Second Rule of Brawler's Guild (Season 2)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -120,7 +121,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(13190, {	-- The Second Rule of Brawler's Guild
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -179,83 +180,83 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
-				["qg"] = 86272,	-- Meatball
 				["description"] = "Reach Rank 5 in the arena.",
+				["qg"] = 86272,	-- Meatball
 				["groups"] = {
 					follower(203),	-- Meatball
 				},
 			}),
 			q(53914, {	-- Murder at the Brawl'gar Arena
-				["qg"] = 68364,	-- Paul North
 				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
+				["qg"] = 68364,	-- Paul North
 				["coord"] = { 48.4, 29.2, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53915, {	-- Put Up Your Dukes
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53917, {	-- Undercover Agent: Sharisanda
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53915,	-- Put Up Your Dukes
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53918, {	-- The Financial Participation Incentive
-				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
-				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
+				["qg"] = 145582,	-- Sharisanda
 				["coord"] = { 48.8, 79.8, 503 },
+				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 				["races"] = HORDE_ONLY,
 			}),
 			q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
-				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["sourceQuest"] = 53918,	-- The Financial Participation Incentive
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53921, {	-- The Pit Boss's Debts
-				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 				},
 			}),
 			q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
-				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53921,	-- The Pit Boss's Debts
+				["qg"] = 145582,	-- Sharisanda
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164962),	-- Evidence Packet: Pit Boss Buxdoggle (QI!)
 				},
 			}),
 			q(53923, {	-- Undercover Agent: Stone Guard Mollivox
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53922,	-- Evidence Packet: Pit Boss Buxdoggle
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53924, {	-- Soul Splinters
-				["qg"] = 145691,	-- Shadowmaster Skrizzik
-				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
+				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164928),	-- Soul Splinter (QI!)
 				},
 			}),
 			q(53925, {	-- Super Soul Splinters
-				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["sourceQuest"] = 53924,	-- Soul Splinters
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164929),	-- Super Soul Splinter (QI!)
 				},
 			}),
@@ -264,81 +265,81 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["races"] = HORDE_ONLY,
 			}),
 			q(53927, {	-- The Precious 13-Tooth Gogglegear
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53926,	-- Cause for Concern
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164937),	-- 13-Tooth Gogglegear (QI!)
 				},
 			}),
 			q(53928, {	-- The Mollivox Goggle Experiment
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164943),	-- Mollivox's Goggles (QI!)
 				},
 			}),
 			q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164963),	-- Evidence Packet: Shadowmaster Skrizzik (QI!)
 				},
 			}),
 			q(53930, {	-- Undercover Agent: Nugg Lumbo
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
-				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
+				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 				["races"] = HORDE_ONLY,
 			}),
 			q(53931, {	-- Flaunt It If You Got It
-				["qg"] = 70716,	-- Libbiara Blightrunner
 				["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
-				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
+				["qg"] = 70716,	-- Libbiara Blightrunner
 				["coord"] = { 31.2, 54.0, 503 },
+				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 				["races"] = HORDE_ONLY,
 			}),
 			q(53952, {	-- Simply Dying of Boredom
-				["qg"] = 70716,	-- Libbiara Blightrunner
 				["sourceQuest"] = 53931,	-- Flaunt It If You Got It
+				["qg"] = 70716,	-- Libbiara Blightrunner
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164947),	-- Brawl'gar Arena Sign (QI!)
 				},
 			}),
 			q(53932, {	-- Evidence Packet: Libbiara Blightrunner
-				["qg"] = 145584,	-- Nugg Lumbo
 				["sourceQuest"] = 53952,	-- Simply Dying of Boredom
+				["qg"] = 145584,	-- Nugg Lumbo
 				["coord"] = { 29.8, 50.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164964),	-- Evidence Packet: Libbiara Blightrunner (QI!)
 				},
 			}),
 			q(53933, {	-- The Brawl'gar Trial
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53932,	-- Evidence Packet: Libbiara Blightrunner
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53934, {	-- A Clue from Area 52
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53933,	-- The Brawl'gar Trial
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53935, {	-- Solving the Mystery
-				["qg"] = 149808,	-- Boss Bazzelflange
 				["sourceQuest"] = 53934,	-- A Clue from Area 52
-				["races"] = HORDE_ONLY,
+				["qg"] = 149808,	-- Boss Bazzelflange
 				["maps"] = { NETHERSTORM },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["groups"] = {
 					i(166724),	-- Bruce (MOUNT!)
@@ -372,7 +373,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
 		}),
 		n(VENDORS, {
-			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
+			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				["groups"] = {
@@ -387,17 +388,24 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98085),	-- Brucehide Jersey
 					i(93025),	-- Clock'em (PET!)
 					i(98092),	-- Digmaster's Bodysleeve
-					iensemble(167892),	-- Ensemble: Brawlers Garb
+					iensemble(167892, {	-- Ensemble: Brawlers Garb
+						["timeline"] = { ADDED_8_1_5 },
+					}),
 					i(98079),	-- Floot-Tooter's Tunic
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
-						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					i(98080),	-- Gorgeous Blouse
 					i(98091),	-- Last Season's Shirt
 					i(98084),	-- Ooze-Soaked Shirt
 					i(98087),	-- Paper Shirt
+					i(118908, {	-- Pit Fighter's Punching Ring
+						["timeline"] = { ADDED_6_0_2 },
+						["races"] = HORDE_ONLY,
+					}),
 					i(144392, {	-- Pugilist's Powerful Punching Ring
+						["timeline"] = { ADDED_7_1_5 },
 						["races"] = HORDE_ONLY,
 					}),
 					i(98083),	-- Sharkskin Tunic
@@ -411,7 +419,13 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},
 			}),
+			n(145695, {	-- "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
+				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
+				["timeline"] = { ADDED_8_1_5 },
+				["sym"] = { {"sub", "common_vendor", 68364} },	-- Paul North <Brawl'gar Arena Quartermaster>
+			}),
 			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
+				["timeline"] = { ADDED_7_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(142319, {		-- Bag of Chipped Dice

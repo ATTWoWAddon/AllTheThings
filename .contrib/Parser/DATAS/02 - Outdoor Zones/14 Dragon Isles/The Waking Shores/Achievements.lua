@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
 				}),
 			}),
-			ach(17561, {    -- Ancient Stones of the Waking Shores (automated)
+			ach(17561, {	-- Ancient Stones of the Waking Shores (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16406, {	-- All Sides of the Story (automated)
@@ -149,13 +149,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(15986, {	-- Dragon Glyphs: Wingrest Embassy
 				["coord"] = { 74.9, 37.4, THE_WAKING_SHORES },
 			}),
-			explorationAch(16400),	-- Explore the Waking Shores
-			ach(16736),	-- Grand Theft Mammoth
+			ach(16400),		-- Explore the Waking Shores
+			ach(16736),		-- Grand Theft Mammoth
 			ach(16493, {	-- Petty Theft Mammoth
 				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok
 				["coord"] = { 39.6, 55.0, THE_WAKING_SHORES },	-- Turn in
-				["g"] = {
+				["groups"] = {
 					crit(55870, {	-- Smoldering Perch
 						["coord"] = { 37.2, 44.5, THE_WAKING_SHORES },
 						["cr"] = 194625,	-- Tame Magmammoth

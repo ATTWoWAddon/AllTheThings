@@ -73,6 +73,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 						i(217412, {	-- Blackened Flightstone
 							["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
 						}),
+						i(210923, {	-- Clutch of Wyrm's Dreaming Crests
+							["cost"] = {{"i", 217397, 3}},	-- 3x Keg-Stamped Coin
+						}),
 						i(217419, {	-- Large Satchel of Drake's Dreaming Crests
 							["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
 						}),
@@ -111,7 +114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(216776),	-- Calcified Claymore
 				q(80384, {	-- A Keg-Stamped Package (account wide quest!)
 					-- pop asap as r5 is obtained with no providers
-					["g"] = {
+					["groups"] = {
 						i(217397),	-- Keg-Stamped Coin x15
 					},
 				}),
@@ -253,10 +256,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			}),
 			ach(20509),	-- Plunderkind
 		}),
+		n(QUESTS, {
+			q(89263, {	-- Your Cut of the Spoils
+				i(238946),	-- Letter from Keg Leg
+				i(234422),	-- Storm-Singed Plunder
+			}),
+		}),
 		filter(MISC, {
 			i(234422, { -- Storm-Singed Plunder
 				["description"] = "Contains 1 Silver and 2 Bronze Spoils.",
-				["g"] = {
+				["groups"] = {
 					i(234423),	-- Keg-Leg's Silver Spoils
 					i(234424),	-- Keg-Leg's Bronze Spoils
 				},	-- Wowhead reports this is given from a(41218)?
@@ -430,11 +439,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				}),
 				i(232596, {	-- Swabbie's Oar
 					["cost"] = {{"c", PLUNDER, 1000}},
-					["g"] = { i(232597) },	-- Swabbie's Oar (Bonus)
+					["groups"] = { i(232597) },	-- Swabbie's Oar (Bonus)
 				}),
 				i(232595, {	-- Swabbie's Shovel
 					["cost"] = {{"c", PLUNDER, 1000}},
-					["g"] = { i(236180) },	-- Swabbie's Shovel (Bonus)
+					["groups"] = { i(236180) },	-- Swabbie's Shovel (Bonus)
 				}),
 				i(216986, {	-- Swindler's Cutouts
 					["cost"] = {{"c", PLUNDER, 250}},

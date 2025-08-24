@@ -68,22 +68,17 @@ local function StylizePlayerTitle(title, style, me)
 	return title or RETRIEVING_DATA;
 end
 local OnUpdateForSpecificGender = function(t, parent, defaultUpdate)
-	if app.MODE_DEBUG_OR_ACCOUNT or t.gender == app.Gender then
-		if defaultUpdate and parent then
-			t.visible = defaultUpdate(t, parent);
-		else
-			t.visible = true;
-		end
+	-- for gendered-titles matching the gender or in account mode, just let the default update sequence take place
+	if defaultUpdate and (app.MODE_DEBUG_OR_ACCOUNT or t.gender == app.Gender) then
+		defaultUpdate(t, parent)
 	else
-		if defaultUpdate and parent then
-			t.visible = false;
-		else
-			t.visible = true;
-		end
+		-- otherwise for a non-matching title, just pretend it doesn't exist
+		t.visible = nil
 	end
-	return true;
+	return true
 end
 app.CreateTitle = app.CreateClass("Title", "titleID", {
+	CACHE = function() return CACHE end,
 	icon = function(t)
 		return app.asset("Category_Titles");
 	end,
@@ -111,7 +106,6 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 			return style;
 		end
 	end,
-	RefreshCollectionOnly = true,
 	collectible = function(t)
 		return app.Settings.Collectibles.Titles;
 	end,
@@ -121,10 +115,17 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	saved = function(t)
 		return IsTitleKnown(t[KEY]);
 	end,
+}
+,"WithGender",{
 	OnUpdate = function(t)
-		return t.gender and OnUpdateForSpecificGender;
+		return OnUpdateForSpecificGender
 	end
-});
+},function(t) return t.gender end
+);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+end)
 app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 
 -- Title Refresh

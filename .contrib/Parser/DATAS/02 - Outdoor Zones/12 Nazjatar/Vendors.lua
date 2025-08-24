@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(153510, {	-- Artisan Itanu <Vaultkeeper of the Ankoan>
 			["coord"] = { 37.8, 55.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169589, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Pearling Kit
 				i(169592, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Pearling Enhancement
 				i(169787, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Azerite Pearling Enhancement
@@ -15,46 +15,37 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169480, {	-- Benthic Chestguard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169481, {	-- Benthic Cloak
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169485, {	-- Benthic Gauntlets
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169477, {	-- Benthic Girdle
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169479, {	-- Benthic Helm
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169482, {	-- Benthic Leggings
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169484, {	-- Benthic Spaulders
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169483, {	-- Benthic Treads
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 			},
 		}),
 		n(153509, {	-- Artisan Okata <Ancient Relics>
 			["coord"] = { 37.8, 55.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(171247, {	-- Abyssal Shard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 				}),
@@ -75,7 +66,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(154002, {	-- Atolia Seapearl <Quartermaster>
 			["coord"] = { 51.0, 65.5, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = bubbleDownClassicRep(FACTION_THE_UNSHACKLED, {
+			["groups"] = bubbleDownClassicRep(FACTION_THE_UNSHACKLED, {
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
@@ -146,7 +137,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					i(168479, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["questID"] = 55968,
-						["g"] = {
+						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,
@@ -154,7 +145,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
@@ -170,7 +160,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		pvp(n(154653, {	-- Tomas Riogain <Nazjatar PvP Quartermaster>
 			["coord"] = { 38.1, 55.4, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
+			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento (Rank 2)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
@@ -203,7 +193,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		pvp(n(154652, {	-- Dazzerian <Nazjatar PvP Quartermaster>
 			["coord"] = { 48.8, 60.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
+			["groups"] = appendGroups(COMMON_BFA_PVP_RECIPES_S3, {
 				i(168851, {	-- Enduring Battlefield Memento [Rank 2] (RECIPE!)
 					["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
 					["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
@@ -234,7 +224,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		})),
 		n(154860, {	-- Feylana the Handler <Hippogryph Vendor>
 			["coord"] = { 73.6, 46.0, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(169377, {	-- Drowned Hatchling (PET!)
 					["cost"] = { { "c", 1721, 40 }, },	-- 40x Prismatic Manapearl
 				}),
@@ -243,7 +233,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(153514, {	-- Finder Palta <Treasures of the Unshackled>
 			["coord"] = { 49.2, 62.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169589, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Pearling Kit
 				i(169592, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Pearling Enhancement
 				i(169787, { ["timeline"] = { CREATED_8_2_0 }}),	-- Azsharan Azerite Pearling Enhancement
@@ -251,46 +241,37 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169480, {	-- Benthic Chestguard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169481, {	-- Benthic Cloak
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169485, {	-- Benthic Gauntlets
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169477, {	-- Benthic Girdle
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169479, {	-- Benthic Helm
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169482, {	-- Benthic Leggings
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169484, {	-- Benthic Spaulders
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169483, {	-- Benthic Treads
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 			},
 		}),
 		n(153512, {	-- Finder Pruc <Ancient Relics>
 			["coord"] = { 49.1, 62.2, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(171247, {	-- Abyssal Shard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 				}),
@@ -336,7 +317,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(145838, {	-- Marshal Frazer <Gladiator Quartermaster>
 			["coord"] = { 38.0, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 			--	i(139775),	-- Alliance Enthusiast (PET!)
 			--	i(142379),	-- Dutiful Squire (PET!)
 			--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
@@ -392,14 +373,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 39.1, 54.4, NAZJATAR },	-- Alliance
 				{ 47.0, 61.5, NAZJATAR },	-- Horde
 			},
-			["g"] = {	-- not sure it's worth adding 'cost' to these items since the purchasing process is so convoluted.
+			["groups"] = {	-- not sure it's worth adding 'cost' to these items since the purchasing process is so convoluted.
 				i(169202),	-- Crimson Tidestallion (MOUNT!)
 				i(168092, {	-- Curiously Warm Kelp Bundle
 					["description"] = "Contains Mardivas reagents.",
 				}),
 				i(168094, {	-- Faintly Humming Sea Stones
 					["description"] = "Contains Scrying Stones.",	-- Description added so you dont need debug mode to see contained item.
-					["g"] = {
+					["groups"] = {
 						i(167077),	-- Scrying Stone
 					},
 				}),
@@ -411,14 +392,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				}),
 				i(170153, {	-- Ominous Looking Tome
 					["description"] = "Grants 150 reputation with each of your bodyguards.",	-- Description added so you dont need debug mode to see contained items.
-					["g"] = {
+					["groups"] = {
 						i(169945),	-- Naga Deployment Orders(A)
 						i(170085),	-- Naga Deployment Orders(H)
 					},
 				}),
 				i(168097, {	-- Pilfered Armor Crate
 					["description"] = "Contains a piece of Benthic gear.",
-					["g"] = {
+					["groups"] = {
 						-- probably contains other benthic items too, but this is only one confirmed so far
 						i(169477),	-- Benthic Girdle
 					},
@@ -448,14 +429,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170161),	-- Unusually Wise Hermit Crab
 				i(168096, {	-- Waterlogged Toolbox
 					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
-					["g"] = {
+					["groups"] = {
 						i(166888),	-- Germinating Seed
 						i(167059),	-- Chum
 					},
 				}),
 				i(170162, {	-- Waterlogged Toolbox
 					["description"] = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
-					["g"] = {
+					["groups"] = {
 						i(166888),	-- Germinating Seed
 						i(167012),	-- Brinestone Pickaxe
 						i(167059),	-- Chum
@@ -466,7 +447,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(154140, {	-- Speaker Utia <Waveblade Ankoan Emissary>
 			["coord"] = { 38.0, 55.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = bubbleDownClassicRep(FACTION_WAVEBLADE_ANKOAN, {
+			["groups"] = bubbleDownClassicRep(FACTION_WAVEBLADE_ANKOAN, {
 				{		-- Neutral
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
@@ -537,7 +518,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					i(168480, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["questID"] = 55969,
-						["g"] = {
+						["groups"] = {
 							follower(1183, {	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries (Temporary Troop)
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,
@@ -545,7 +526,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
@@ -561,7 +541,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(153024, {	-- Suva <Shell Seller>
 			["coord"] = { 50.2, 63.9, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168309),	-- Armwrap of Ocean Magic
 				i(168308),	-- Most Magnificient Small Shell of Shimmering
 				i(168307),	-- Necklace of Most Beautiful Shells
@@ -571,7 +551,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		n(145837, {	-- Violet Shadowmend <Gladiator Quartermaster>
 			["coord"] = { 48.6, 60.7, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 			--	i(139776),	-- Horde Fanatic (PET!)
 			--	i(142380),	-- Dutiful Gruntling (PET!)
 			--	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS

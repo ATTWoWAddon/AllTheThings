@@ -1,0 +1,24 @@
+1.15.5.57537
+r(470359),	-- Darkclaw Bisque
+r(470370),	-- Smoked Redgill
+1.15.7.59706
+r(1225758),	-- Prowler Steak
+r(1225759),	-- Filet o' Flank
+r(1225760),	-- Sunrise Omelette
+r(1225762),	-- Specklefin Feast
+r(1225763),	-- Grand Lobster Banquet
+
+
+
+
+Missing in Cooking
+
+1.15.5.57537
+r(470359),	-- Darkclaw Bisque
+r(470370),	-- Smoked Redgill
+1.15.7.59706
+r(1225758),	-- Prowler Steak
+r(1225759),	-- Filet o' Flank
+r(1225760),	-- Sunrise Omelette
+r(1225762),	-- Specklefin Feast
+r(1225763),	-- Grand Lobster Banquet

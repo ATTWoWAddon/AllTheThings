@@ -27,6 +27,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 				ach(4986),	-- The Bastion of Twilight Guild Run
+				ach(11754, {	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
+					["timeline"] = { ADDED_7_2_0 },
+					["maps"] = {
+						285,	-- Blackwing Descent (The Broken Hall)
+						286,	-- Blackwing Descent (Vault of the Shadowflame)
+					},
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(60211),	-- Bracers of the Dark Pool

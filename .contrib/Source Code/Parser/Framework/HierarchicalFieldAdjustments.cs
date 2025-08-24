@@ -28,6 +28,9 @@ namespace ATT
                 if (data.TryGetValue(field, out object value))
                 {
                     _fieldValues.Add(value);
+                    // not exactly 1 unique value across all groups, then leave
+                    if (_fieldValues.Count != 1)
+                        return;
                 }
                 else
                 {
@@ -36,22 +39,18 @@ namespace ATT
                 }
             }
 
-            // exactly 1 unique value across all groups, then adjust...
-            if (_fieldValues.Count == 1)
-            {
-                object val = _fieldValues.First();
-                parent.TryGetValue(field, out object parentVal);
-                // parent has a different field val, don't touch it
-                if (parentVal != null && !Equals(parentVal, val))
-                    return;
+            object val = _fieldValues.First();
+            parent.TryGetValue(field, out object parentVal);
+            // parent has a different field val, don't touch it
+            if (parentVal != null && !Equals(parentVal, val))
+                return;
 
-                parent[field] = val;
-                foreach (IDictionary<string, object> data in groups)
+            parent[field] = val;
+            foreach (IDictionary<string, object> data in groups)
+            {
+                if (data.Remove(field))
                 {
-                    if (data.Remove(field))
-                    {
-                        Framework.LogDebug($"INFO: Removed field {field}={val} due to " + nameof(ConsolidateField), data);
-                    }
+                    Framework.LogDebug($"INFO: Removed field {field}={val} due to " + nameof(ConsolidateField), data);
                 }
             }
         }
@@ -128,6 +127,9 @@ namespace ATT
                 if (data.TryGetValue(field, out object value))
                 {
                     _fieldValues.Add(value);
+                    // not exactly 1 unique value across all groups, then leave
+                    if (_fieldValues.Count != 1)
+                        return;
                 }
                 else
                 {
@@ -136,19 +138,15 @@ namespace ATT
                 }
             }
 
-            // exactly 1 unique value across all groups, then adjust...
-            if (_fieldValues.Count == 1)
-            {
-                object val = _fieldValues.First();
-                parent.TryGetValue(field, out object parentVal);
-                // parent has existing value, don't touch it
-                // e.g. Crit auto-assign to 3.0.1 in crit() if no timeline
-                if (parentVal != null)
-                    return;
+            object val = _fieldValues.First();
+            parent.TryGetValue(field, out object parentVal);
+            // parent has existing value, don't touch it
+            // e.g. Crit auto-assign to 3.0.1 in crit() if no timeline
+            if (parentVal != null)
+                return;
 
-                parent[field] = val;
-                Framework.LogDebug($"INFO: Set field {field}={val} due to " + nameof(PropagateField), parent);
-            }
+            parent[field] = val;
+            Framework.LogDebug($"INFO: Set field {field}={val} due to " + nameof(PropagateField), parent);
         }
 
         /// <summary>
@@ -168,34 +166,19 @@ namespace ATT
 
             foreach (IDictionary<string, object> data in groups)
             {
-                if (data.TryGetValue(field, out object value))
-                {
-                    _fieldValues.Add(value);
-                }
-                else
-                {
-                    // field value is missing from a group, use a random value instead
-                    _fieldValues.Add(Guid.NewGuid());
-                    return;
-                }
-            }
+                if (!data.TryGetValue(field, out object value))
+                    continue;
 
-            // exactly 1 unique value across all groups, then adjust...
-            if (_fieldValues.Count == 1)
-            {
-                object val = _fieldValues.First();
-                // parent has a different field val, don't touch it
-                if (parentVal != null && !Equals(parentVal, val))
-                    return;
+                // if child has exactly the same value as parent, we won't repeat it in the child
+                if (!Equals(parentVal, value))
+                    continue;
 
-                foreach (IDictionary<string, object> data in groups)
+                if (data.Remove(field))
                 {
-                    if (data.Remove(field))
-                    {
-                        // awp and rwp are spammy
-                        //Framework.LogDebug($"INFO: Removed field {field}={parentVal} due to " + nameof(NonRepeatField), data);
-                    }
+                    // awp and rwp are spammy
+                    //Framework.LogDebug($"INFO: Removed field {field}={parentVal} due to " + nameof(NonRepeatField), data);
                 }
+                // child without the value is ignored
             }
         }
 
@@ -213,21 +196,24 @@ namespace ATT
                 if (data.TryGetValue(field, out object value))
                 {
                     _fieldValues.Add(value);
+                    // not exactly 1 unique value across all groups, then leave
+                    if (_fieldValues.Count != 1)
+                        return;
                 }
             }
 
-            // exactly 1 unique value across all groups, then adjust...
-            if (_fieldValues.Count == 1)
-            {
-                object val = _fieldValues.First();
-                parent.TryGetValue(field, out object parentVal);
-                // parent has a different field val, don't touch it
-                if (parentVal != null && !Equals(parentVal, val))
-                    return;
+            // not exactly 1 unique value across all groups, then leave
+            if (_fieldValues.Count != 1)
+                return;
 
-                parent[field] = val;
-                Framework.LogDebug($"INFO: Set field {field}={val} due to " + nameof(AnyPropagateField), parent);
-            }
+            object val = _fieldValues.First();
+            parent.TryGetValue(field, out object parentVal);
+            // parent has a different field val, don't touch it
+            if (parentVal != null && !Equals(parentVal, val))
+                return;
+
+            parent[field] = val;
+            Framework.LogDebug($"INFO: Set field {field}={val} due to " + nameof(AnyPropagateField), parent);
         }
 
         /// <summary>

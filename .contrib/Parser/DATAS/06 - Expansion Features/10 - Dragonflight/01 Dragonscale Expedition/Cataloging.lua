@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["sourceQuests"] = { 69870 },	-- Pictures with Purpose
 					["provider"] = { "n", 185651 },	-- Akunda the Cataloger
 					["coord"] = { 49.9, 68.4, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						ach(16758),	-- Ready, Aim, Catalog!
 					},
 				}),

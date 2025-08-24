@@ -14,12 +14,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			980,	-- Oveseer's Summit
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(51287, {	-- Tol Dagor: Sealed Supplies
 					["isWorldQuest"] = true,
 					["lvl"] = 50,
-					["g"] = {
+					["groups"] = {
 						i(159831),	-- Sealed Kul Tiran Crate (QI!)
 					},
 				}),
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				q(51296, {	-- Tol Dagor: The Overseer's Pride
 					["isWorldQuest"] = true,
 					["lvl"] = 50,
-					["g"] = {
+					["groups"] = {
 						i(159834),	-- The Pride of Kul Tiras (QI!)
 					},
 				}),
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2097, {	-- The Sand Queen
 					["crs"] = { 127479 },	-- The Sand Queen
-					["g"] = {
+					["groups"] = {
 						i(159656),	-- Halberd of the Unwary Guard
 						i(160110),	-- Warglaive of the Sand Queen
 						i(159668),	-- Rattling Jar of Eyes
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2098, {	-- Jes Howlis
 					["crs"] = { 127484 },	-- Jes Howlis
-					["g"] = {
+					["groups"] = {
 						i(168145),	-- Sly Rogue's Decanter (for Silas' Sphere of Transmutation)
 						i(159131),	-- Howlis' Crystal Shiv
 						i(159666),	-- Improvised Riot Shield
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2099, {	-- Knight Captain Valyri
 					["crs"] = { 127490 },	-- Knight Captain Valyri
-					["g"] = {
+					["groups"] = {
 						i(159441),	-- Valyri's Fire-Proof Bracers
 						i(159389),	-- Flint-Linked Wristguards
 						i(159390),	-- Sure-Grip Munition Handlers
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2096, {	-- Overseer Korgus
 					["crs"] = { 127503 },	-- Overseer Korgus
-					["g"] = {
+					["groups"] = {
 						ach(12840),	-- Tol Dagor
 						i(159129),	-- Flamecaster Botefeux
 						i(159658),	-- Cudgel of Correctional Oversight
@@ -95,10 +95,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2097, {	-- The Sand Queen
 						["crs"] = { 127479 },	-- The Sand Queen
-						["g"] = {
+						["groups"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
 							i(159668),	-- Rattling Jar of Eyes
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2098, {	-- Jes Howlis
 						["crs"] = { 127484 },	-- Jes Howlis
-						["g"] = {
+						["groups"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
 							i(159293),	-- Turncoat's Cape
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2099, {	-- Knight Captain Valyri
 						["crs"] = { 127490 },	-- Knight Captain Valyri
-						["g"] = {
+						["groups"] = {
 							i(159441),	-- Valyri's Fire-Proof Bracers
 							i(159389),	-- Flint-Linked Wristguards
 							i(159390),	-- Sure-Grip Munition Handlers
@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2096, {	-- Overseer Korgus
 						["crs"] = { 127503 },	-- Overseer Korgus
-						["g"] = {
+						["groups"] = {
 							ach(12841),	-- Heroic: Tol Dagor
 							i(159129),	-- Flamecaster Botefeux
 							i(159658),	-- Cudgel of Correctional Oversight
@@ -156,19 +156,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					n(135451, {	-- Filthy Bucket
 						i(158698),	-- Discarded Cell Key
 					}),
 					n(135448, {	-- Gol'than the Malodorous
 						["provider"] = { "i", 158698 },	-- Discarded Cell Key
-						["g"] = {
+						["groups"] = {
 							i(160704),	--  Filthy Slime (PET!)
 						},
 					}),
 					e(2097, {	-- The Sand Queen
 						["crs"] = { 127479 },	-- The Sand Queen
-						["g"] = {
+						["groups"] = {
 							i(159656),	-- Halberd of the Unwary Guard
 							i(160110),	-- Warglaive of the Sand Queen
 							i(159668),	-- Rattling Jar of Eyes
@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2098, {	-- Jes Howlis
 						["crs"] = { 127484 },	-- Jes Howlis
-						["g"] = {
+						["groups"] = {
 							i(159131),	-- Howlis' Crystal Shiv
 							i(159666),	-- Improvised Riot Shield
 							i(159293),	-- Turncoat's Cape
@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2099, {	-- Knight Captain Valyri
 						["crs"] = { 127490 },	-- Knight Captain Valyri
-						["g"] = {
+						["groups"] = {
 							ach(12457),	-- Remix to Ignition
 							i(159441),	-- Valyri's Fire-Proof Bracers
 							i(159389),	-- Flint-Linked Wristguards
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2096, {	-- Overseer Korgus
 						["crs"] = { 127503 },	-- Overseer Korgus
-						["g"] = {
+						["groups"] = {
 							ach(12842),	-- Mythic: Tol Dagor
 							ach(13005),	-- Mythic: Tol Dagor Guild Run
 							ach(12462),	-- Shot Through the Heart

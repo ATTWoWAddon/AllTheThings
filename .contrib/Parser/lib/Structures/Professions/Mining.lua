@@ -129,7 +129,7 @@ CATA_MINING
 {}
 -- #endif
 );
-MOP_MINING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(102161, {	-- Mining (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -144,7 +144,7 @@ MOP_MINING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDE
 }));
 DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This can drop from any ore gathering node on Draenor.",
-	["g"] = {
+	["groups"] = {
 		r(158754, {	-- Mining (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC
@@ -168,7 +168,7 @@ NAZJATAR_MINING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] =
 	r(296149),	-- Osmenite Deposit [Rank 1]
 	r(296145),	-- Osmenite Seam [Rank 1]
 }));
-SL_MINING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_MINING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309835),	-- Mining (Shadowlands)
 	r(2656),	-- Mining Journal \ Smelting
 }));

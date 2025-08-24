@@ -6,10 +6,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641396,
-			["g"] = {
+			["groups"] = {
 				n(TRANSPORT_NETWORK, {
 					["icon"] = 3854019,
-					["g"] = sharedData({ ["icon"] = 3854019 }, {
+					["groups"] = sharedData({ ["icon"] = 3854019 }, {
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(63059, {	-- Blink of an Eye
@@ -18,9 +18,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 59.8, 31.8, SEAT_OF_THE_PRIMUS },
 								}),
 								q(63055, {	-- Powering the Portals
+									["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 									["provider"] = { "n", 161909 },	-- Arkadia Moa
 									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
-									["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 								}),
 							}),
 						}),

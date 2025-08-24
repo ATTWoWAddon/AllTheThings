@@ -18,6 +18,8 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(187),
 		-- #else
 		en = "Love is in the Air",
+		es = "Amor en el aire",
+		mx = "Amor en el aire",
 		-- #endif
 	},
 });
@@ -442,11 +444,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	-- #endif
 	n(QUESTS, {
 		q(9029, {	-- A Bubbling Cauldron
-			["provider"] = { "o", 181073 },	-- Fragrant Cauldron
 			["sourceQuests"] = {
 				9028,	-- The Source Revealed [A]
 				8984,	-- The Source Revealed [H]
 			},
+			["provider"] = { "o", 181073 },	-- Fragrant Cauldron
 			["coord"] = { 89.3, 75.1, ALTERAC_MOUNTAINS },
 			["timeline"] = { REMOVED_3_3_0 },
 			["isYearly"] = true,
@@ -492,18 +494,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24657, {	-- A Friendly Chat... (A)
-			["qg"] = 38325,	-- Marion Sutton
 			["sourceQuest"] = 24849,	-- Hot On The Trail (A)
+			["qg"] = 38325,	-- Marion Sutton
 			["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24576, {	-- A Friendly Chat... (H)
-			["providers"] = {
-				{ "n", 37172 },	-- Detective Snap Snagglebolt
-				{ "n", 38328 },	-- Roka
-			},
 			["sourceQuest"] = 24851,	-- Hot On The Trail (H)
+			["qgs"] = {
+				37172,	-- Detective Snap Snagglebolt
+				38328,	-- Roka
+			},
 			["coords"] = {
 				{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
 				{ 57.6, 61.0, ORGRIMMAR },	-- Roka
@@ -591,8 +593,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(9024, {	-- Aristan's Hunch
-			["qg"] = 16105,	-- Aristan Mottar
 			["sourceQuest"] = 8903,	-- Dangerous Love (A)
+			["qg"] = 16105,	-- Aristan Mottar
 			["coord"] = { 54.6, 65.6, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -622,8 +624,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(44558, {	-- Crushing the Crown (A) [Legion+]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
@@ -645,14 +647,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24658, {	-- Crushing the Crown (A) [Elwynn Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 5, 13 },
 			["isDaily"] = true,
+			["lvl"] = { 5, 13 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -664,14 +666,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24659, {	-- Crushing the Crown (A) [Darkshore]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 14, 22 },
 			["isDaily"] = true,
+			["lvl"] = { 14, 22 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -683,14 +685,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24660, {	-- Crushing the Crown (A) [Duskwood]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSKWOOD },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 23, 31 },
 			["isDaily"] = true,
+			["lvl"] = { 23, 31 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -702,14 +704,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24662, {	-- Crushing the Crown (A) [Dustwallow Marsh]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 32, 40 },
 			["isDaily"] = true,
+			["lvl"] = { 32, 40 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -721,14 +723,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24663, {	-- Crushing the Crown (A) [The Hinterlands]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 41, 50 },
 			["isDaily"] = true,
+			["lvl"] = { 41, 50 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -740,14 +742,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24664, {	-- Crushing the Crown (A) [Winterspring]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 51, 60 },
 			["isDaily"] = true,
+			["lvl"] = { 51, 60 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -759,14 +761,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24665, {	-- Crushing the Crown (A) [Terokkar Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 61, 70 },
 			["isDaily"] = true,
+			["lvl"] = { 61, 70 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -778,14 +780,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24666, {	-- Crushing the Crown (A) [Crystalsong Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = { 71, 80 },
 			["isDaily"] = true,
+			["lvl"] = { 71, 80 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -797,14 +799,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(28934, {	-- Crushing the Crown (A) [Uldum]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 81,
 			["isDaily"] = true,
+			["lvl"] = 81,
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -816,8 +818,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(44546, {	-- Crushing the Crown (H) [Legion+]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
@@ -839,14 +841,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24638, {	-- Crushing the Crown (H) [Durotar]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUROTAR },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 5, 13 },
 			["isDaily"] = true,
+			["lvl"] = { 5, 13 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -858,14 +860,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24645, {	-- Crushing the Crown (H) [Silverpine Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { SILVERPINE_FOREST },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 14, 22 },
 			["isDaily"] = true,
+			["lvl"] = { 14, 22 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -877,14 +879,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24647, {	-- Crushing the Crown (H) [Hillsbrad Foothills]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 23, 31 },
 			["isDaily"] = true,
+			["lvl"] = { 23, 31 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -896,14 +898,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24648, {	-- Crushing the Crown (H) [Dustwallow Marsh]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 32, 40 },
 			["isDaily"] = true,
+			["lvl"] = { 32, 40 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -915,14 +917,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24649, {	-- Crushing the Crown (H) [The Hinterlands]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 41, 50 },
 			["isDaily"] = true,
+			["lvl"] = { 41, 50 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -934,14 +936,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24650, {	-- Crushing the Crown (H) [Winterspring]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 51, 60 },
 			["isDaily"] = true,
+			["lvl"] = { 51, 60 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -953,14 +955,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24651, {	-- Crushing the Crown (H) [Terokkar Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 61, 70 },
 			["isDaily"] = true,
+			["lvl"] = { 61, 70 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -972,14 +974,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24652, {	-- Crushing the Crown (H) [Crystalsong Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
 			["races"] = HORDE_ONLY,
-			["lvl"] = { 71, 80 },
 			["isDaily"] = true,
+			["lvl"] = { 71, 80 },
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -991,14 +993,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(28935, {	-- Crushing the Crown (H) [Uldum]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
 			["races"] = HORDE_ONLY,
-			["lvl"] = 81,
 			["isDaily"] = true,
+			["lvl"] = 81,
 			["groups"] = {
 				objective(1, {	-- Chemical Wagon Destroyed
 					["provider"] = { "n", 38035 },	-- Chemical Wagon
@@ -1099,8 +1101,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isYearly"] = true,
 		}),
 		q(8979, {	-- Fenstad's Hunch
-			["qg"] = 16108,	-- Fenstad Argyle
 			["sourceQuest"] = 8904,	-- Dangerous Love (H)
+			["qg"] = 16108,	-- Fenstad Argyle
 			["coord"] = { 66.8, 44.4, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1115,8 +1117,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24848, {	-- Fireworks At The Gilded Rose
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24656,	-- Pilfering Perfume (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
@@ -1180,36 +1182,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #endif
 		}),
 		q(24849, {	-- Hot On The Trail (A)
-			["qg"] = 38325,	-- Marion Sutton
 			["sourceQuest"] = 24848,	-- Fireworks At The Gilded Rose
+			["qg"] = 38325,	-- Marion Sutton
 			["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24851, {	-- Hot On The Trail (H)
-			["qg"] = 38328,	-- Roka
 			["sourceQuest"] = 24850,	-- Snivel's Sweetheart
+			["qg"] = 38328,	-- Roka
 			["coord"] = { 57.6, 61.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(24792, {	-- Man on the Inside (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24793, {	-- Man on the Inside (H)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(9025, {	-- Morgan's Discovery
-			["qg"] = 279,	-- Morgan Pestle
 			["sourceQuest"] = 9024,	-- Aristan's Hunch
+			["qg"] = 279,	-- Morgan Pestle
 			["coord"] = { 56.2, 64.8, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -1222,22 +1224,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #endif
 		}),
 		q(24656, {	-- Pilfering Perfume (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24655,	-- Something Stinks (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24541, {	-- Pilfering Perfume (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24536,	-- Something Stinks (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(24850, {	-- Snivel's Sweetheart
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24541,	-- Pilfering Perfume (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
@@ -1255,25 +1257,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 		}),
 		q(24655, {	-- Something Stinks (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuests"] = {
 				24804,	-- Uncommon Scents (A)
 				-- #if AFTER DF
 				72735,	-- Still Into Perfume (A)
 				-- #endif
 			},
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24536, {	-- Something Stinks (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuests"] = {
 				24805,	-- Uncommon Scents (H)
 				-- #if AFTER DF
 				72736,	-- Still Into Perfume (H)
 				-- #endif
 			},
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
@@ -1303,48 +1305,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isYearly"] = true,
 		}),
 		q(9028, {	-- The Source Revealed (A)
-			["qg"] = 16106,	-- Evert Sorisam
 			["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
+			["qg"] = 16106,	-- Evert Sorisam
 			["coord"] = { 39.8, 46.8, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8984, {	-- The Source Revealed (H)
-			["qg"] = 16109,	-- Mara Rennick
 			["sourceQuest"] = 8983,	-- Tracing the Source (H) (2/2)
+			["qg"] = 16109,	-- Mara Rennick
 			["coord"] = { 70.8, 28.8, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(9026, {	-- Tracing the Source (A) (1/2)
-			["qg"] = 16105,	-- Aristan Mottar
 			["sourceQuest"] = 9025,	-- Morgan's Discovery
+			["qg"] = 16105,	-- Aristan Mottar
 			["coord"] = { 54.6, 65.6, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(9027, {	-- Tracing the Source (A) (2/2)
-			["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
 			["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
+			["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
 			["coord"] = { 52.8, 65.4, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8982, {	-- Tracing the Source (H) (1/2)
-			["qg"] = 16108,	-- Fenstad Argyle
 			["sourceQuest"] = 8980,	-- Zinge's Assessment
+			["qg"] = 16108,	-- Fenstad Argyle
 			["coord"] = { 66.8, 44.4, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8983, {	-- Tracing the Source (H) (2/2)
-			["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
 			["sourceQuest"] = 8982,	-- Tracing the Source (H) (1/2)
+			["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
 			["coord"] = { 67.6, 38.2, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1379,8 +1381,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(8980, {	-- Zinge's Assessment
-			["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 			["sourceQuest"] = 8979,	-- Fenstad's Hunch
+			["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 			["coord"] = { 50.0, 68.6, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1410,13 +1412,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ 48.4, 48.3, DORNOGAL },
 				-- #endif
 			},
-			["isBreadcrumb"] = true,
 			["races"] = ALLIANCE_ONLY,
+			["isBreadcrumb"] = true,
 		}),
 		q(78328, {	-- Take a Look Around (A)
+			["sourceQuest"] = 78329,	-- Love is in the Air (A)
 			["qg"] = 211802,	-- Luciana Delgado
 			["coord"] = { 32.3, 49.4, ELWYNN_FOREST },
-			["sourceQuest"] = 78329,	-- Love is in the Air (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
 		}),
@@ -1441,8 +1443,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78337, {	-- An Unwelcome Gift (A)
-			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78332,	-- I Smell Trouble (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
@@ -1451,20 +1453,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78729, {	-- Raising a Stink (A)
-			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78337,	-- An Unwelcome Gift (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78369, {	-- Crushing the Crown (A)
+			["sourceQuest"] = 78729,	-- Raising a Stink (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-			["sourceQuest"] = 78729,	-- Raising a Stink (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
 				o(413126, {	-- Box of Artisanal Goods
 					["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(210431),	-- Artisanal Bon-Bombs (QI!)
 						i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
 					},
@@ -1472,9 +1474,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78379, {	-- The Stench of Revenge (A)
+			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
 		}),
@@ -1491,13 +1493,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ 48.9, 48.3, DORNOGAL },
 				-- #endif
 			},
-			["isBreadcrumb"] = true,
 			["races"] = HORDE_ONLY,
+			["isBreadcrumb"] = true,
 		}),
 		q(78980, {	-- Take a Look Around (H)
+			["sourceQuest"] = 78981,	-- Love is in the Air (H)
 			["qg"] = 214477,	-- Mahaja Cloudsong
 			["coord"] = { 41.8, 18.0, DUROTAR },
-			["sourceQuest"] = 78981,	-- Love is in the Air (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
 		}),
@@ -1522,8 +1524,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78983, {	-- An Unwelcome Gift (H)
-			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78982,	-- I Smell Trouble (H)
+			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
@@ -1531,20 +1533,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78978, {	-- Raising a Stink (H)
-			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78983,	-- I Smell Trouble (H)
+			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["races"] = HORDE_ONLY,
 		}),
 		q(78984, {	-- Crushing the Crown (H)
+			["sourceQuest"] = 78978,	-- Raising a Stink (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-			["sourceQuest"] = 78978,	-- Raising a Stink (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
 				o(413126, {	-- Box of Artisanal Goods
 					["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(210431),	-- Artisanal Bon-Bombs (QI!)
 						i(211782),	-- Note from Zikky (QI!) [book]
 					},
@@ -1552,9 +1554,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78985, {	-- The Stench of Revenge (H)
+			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
-			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
 		}),
@@ -1656,48 +1658,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78724, {	-- Loving Yourself, Your Way (A)
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
-			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78726, {	-- Loving Yourself, Your Way (A)
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
-			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				objective(1, {	-- 0/15 Treats Consumed
-				["providers"] = {
-					{ "i", 210929 },	-- Comfort Food Package
-					{ "i", 210928 },	-- Healthy Body Package
-					{ "i", 210926 },	-- Me, Myself, and Chocolate Package
-				},
-			}),
+					["providers"] = {
+						{ "i", 210929 },	-- Comfort Food Package
+						{ "i", 210928 },	-- Healthy Body Package
+						{ "i", 210926 },	-- Me, Myself, and Chocolate Package
+					},
+				}),
 			},
 		}),
 		q(78727, {	-- Loving Yourself, Your Way (A)
+			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
-			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78979, {	-- Loving Yourself, Your Way (H)
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
-			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["races"] = HORDE_ONLY,
 		}),
 		q(78992, {	-- Loving Yourself, Your Way (H)
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
-			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["races"] = HORDE_ONLY,
 		}),
 		q(78993, {	-- Loving Yourself, Your Way (H)
+			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
-			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
 			["races"] = HORDE_ONLY,
 		}),
 		q(78679, {	-- The Gift of Relaxation (A)
@@ -1931,7 +1933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		},
 	}),
 	n(COMMON_VENDOR_ITEMS, {
-		["description"] = "The following items can be purchased from innkeepers.",
+		["sharedDescription"] = "Can be purchased from innkeepers.",
 		["groups"] = {
 			i(21833, {	-- Cologne Bottle
 				["timeline"] = { REMOVED_3_3_2, ADDED_8_1_0 },
@@ -1948,7 +1950,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		},
 	}),
 	n(DROPS, bubbleDownSelf({["timeline"] = { ADDED_10_2_5 },},{
-		["description"] = "Perfumes and Colognes can be looted from any killed creature related to the Holliday.",
+		["description"] = "Perfumes and Colognes can be looted from any killed creature related to the Holiday.",
 		["groups"] = {
 			i(49859),	-- "Bravado" Cologne
 			i(49857),	-- "Enchantress" Perfume
@@ -1963,7 +1965,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(211873, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bang Sparknozzle <Lovely Novelties>
 			["coord"] = { 33.6, 47.8, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210318, {	-- Chocolate Bon-Bomb
 					["cost"] = {{"i", LOVE_TOKEN, 1}},
 				}),
@@ -1987,31 +1989,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(213094, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Bimble Longberry
 			["coord"] = { 33.7, 51.3, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210928),	-- Healthy Body Package
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214482, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Grogg Skullsmasher <Fruit Vendor>
 			["coord"] = { 41.2, 18.2, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210821),	-- Berry Chocolate Tart
 				i(210819),	-- Chocolate-Covered Cherries
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Guo Plumpaw
 			["coord"] = { 3357, 50.9, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210841),	-- Buttered Oysters
 				i(210929),	-- Comfort Food Package
 				i(210842),	-- Fresh Fig
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(214488, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Hana Breezeheart <Flower Vendor>
 			["coord"] = { 41.4, 17.8, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(211359, {	-- Eternal Black Rose
 					["cost"] = {{"i", LOVE_TOKEN, 20}},
 				}),
@@ -2065,14 +2076,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(214861, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Jeremiah Payson <Crunchy Sweets> [Need HORDE Version]
 			["coord"] = { 41.2, 17.5, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(211810),	-- Chocolate-Covered Crunchies
 			},
 		})),
 		n(211812, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Kiera Torres <Lovely Prizes and Heirlooms>
 			["coord"] = { 32.2, 50.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				filter(BATTLE_PETS, {
 					i(205156, {	-- Heartseeker Moth (PET!)
 						["cost"] = {{"i", LOVE_TOKEN, 40}},
@@ -2091,33 +2102,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				n(HEIRLOOMS, {
 					i(122339, {	-- Ancient Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 200}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(204337, {	-- Awakened Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(167732, {	-- Battle-Hardened Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 				}),
 				filter(MISC, {
 					i(21813, {	-- Bag of Heart Candies
 						["cost"] = {{"i", LOVE_TOKEN, 2}},
-						["g"] = {
+						["groups"] = {
 							i(21816),	-- Heart Candy (Be Mine!)
 							i(21817),	-- Heart Candy (I LOVE YOU)
 							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
@@ -2133,7 +2138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					i(50160, {	-- Lovely Dress Box
 						["cost"] = {{"i", LOVE_TOKEN, 20}},
-						["g"] = {
+						["groups"] = {
 							ach(1694, {	-- Lovely Luck Is On Your Side
 								["provider"] = { "i", 151770 },	-- Lovely Black Dress
 							}),
@@ -2145,7 +2150,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					i(50161, {	-- Dinner Suit Box
 						["cost"] = {{"i", LOVE_TOKEN, 20}},
-						["g"] = {
+						["groups"] = {
 							i(151765),	-- Blue Dinner Suit
 							i(151764),	-- Purple Dinner Suit
 							i(151766),	-- Red Dinner Suit
@@ -2202,27 +2207,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(122339, {	-- Ancient Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 200 } },	-- 200x Love Token
 					["timeline"] = { ADDED_6_1_0 },
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(167732, {	-- Battle-Hardened Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { ADDED_8_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(187998, {	-- Eternal Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { ADDED_9_1_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(122341, {	-- Timeworn Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { ADDED_6_1_0 },
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(151615, {	-- Weathered Heirloom Scabbard
 					["cost"] = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
 					["timeline"] = { ADDED_7_2_5 },
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(50161, {	-- Dinner Suit Box
 					["timeline"] = { ADDED_3_3_2 },
@@ -2396,7 +2396,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(214481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Lythianne Morningspear <Lovely Prizes and Heirlooms>
 			["coord"] = { 41.9, 17.3, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				filter(BATTLE_PETS, {
 					i(205156, {	-- Heartseeker Moth (PET!)
 						["cost"] = {{"i", LOVE_TOKEN, 40}},
@@ -2415,33 +2415,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				n(HEIRLOOMS, {
 					i(122339, {	-- Ancient Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 200}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(204337, {	-- Awakened Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(167732, {	-- Battle-Hardened Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard
 						["cost"] = {{"i", LOVE_TOKEN, 450}},
-						["sym"] = {{"fill"}},	-- simply fill this item
 					}),
 				}),
 				filter(MISC, {
 					i(21813, {	-- Bag of Heart Candies
 						["cost"] = {{"i", LOVE_TOKEN, 2}},
-						["g"] = {
+						["groups"] = {
 							i(21816),	-- Heart Candy (Be Mine!)
 							i(21817),	-- Heart Candy (I LOVE YOU)
 							i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
@@ -2457,7 +2451,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					i(50160, {	-- Lovely Dress Box
 						["cost"] = {{"i", LOVE_TOKEN, 20}},
-						["g"] = {
+						["groups"] = {
 							ach(1694, {	-- Lovely Luck Is On Your Side
 								["provider"] = { "i", 151770 },	-- Lovely Black Dress
 							}),
@@ -2469,7 +2463,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					}),
 					i(50161, {	-- Dinner Suit Box
 						["cost"] = {{"i", LOVE_TOKEN, 20}},
-						["g"] = {
+						["groups"] = {
 							i(151765),	-- Blue Dinner Suit
 							i(151764),	-- Purple Dinner Suit
 							i(151766),	-- Red Dinner Suit
@@ -2514,38 +2508,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(211864, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Maurice Guichi <House of Chocolates>
 			["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210926),	-- Me, Myself, and Chocolate Package
 				i(49909, {	-- Box of Chocolates
 					["cost"] = {{"i", LOVE_TOKEN, 10}},
-					["g"] = {
+					["groups"] = {
 						i(22236),	-- Buttermilk Delight
 						i(22237),	-- Dark Desire
 						i(22239),	-- Sweet Surprise
 						i(22238),	-- Very Berry Cream
 					},
 				}),
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(212886, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Melanie Charles <Bountiful Brews>
 			["coord"] = { 34.2, 50.6, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210927),	-- Fruity Cocktail Flight
 			},
 		})),
 		n(214493, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ming Plumpaw <Lovely Snacks> [Need Alliance Version]
 			["coord"] = { 41.1, 17.8, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210841),	-- Buttered Oysters
+				i(210929),	-- Comfort Food Package
 				i(210842),	-- Fresh Fig
+				i(239015, {	-- Rock Candy Package
+					["timeline"] = { ADDED_11_0_7 },
+				}),
 			},
 		})),
 		n(211810, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ronathan Graham <Fruit Vendor>
 			["coord"] = { 33.6, 49.8, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210821),	-- Berry Chocolate Tart
 				i(210819),	-- Chocolate-Covered Cherries
 				i(210928),	-- Healthy Body Package
@@ -2554,7 +2555,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(211887, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Sylandra Silverbreeze <Flower Vendor>
 			["coord"] = { 34.2, 48.8, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(211359, {	-- Eternal Black Rose
 					["cost"] = {{"i", LOVE_TOKEN, 20}},
 				}),
@@ -2608,21 +2609,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(215109, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ugawa <Bountiful Brews>
 			["coord"] = { 40.8, 17.8, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210927),	-- Fruity Cocktail Flight
 			},
 		})),
 		n(212587, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Wobbley Sugarfizz <House of Chocolates>
 			["coord"] = { 33.5, 50.1, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210695),	-- Delightful Chocolate Sample
 			},
 		})),
 		n(214489, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zikky <Lovely Novelties>
 			["coord"] = { 41.0, 17.2, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(210318, {	-- Chocolate Bon-Bomb
 					["cost"] = {{"i", LOVE_TOKEN, 1}},
 				}),
@@ -2646,10 +2647,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		n(214480, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Zin'boja <De Chocolate Den>
 			["coord"] = { 41.2, 18.0, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(49909, {	-- Box of Chocolates
 					["cost"] = {{"i", LOVE_TOKEN, 10}},
-					["g"] = {
+					["groups"] = {
 						i(22236),	-- Buttermilk Delight
 						i(22237),	-- Dark Desire
 						i(22239),	-- Sweet Surprise
@@ -2676,9 +2677,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["description"] = "With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
 			}),
-			i(49916, {	-- Lovely Charm Bracelet
+			i(49916, {	-- Lovely Charm Bracelet (Cosmetic)
 				["cost"] = { { "i", 49655, 10 } },	-- 10x Lovely Charm
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
+				-- #if BEFORE 10.0.5
+				-- #if NOT COMMON_QUALITY_TRANSMOGS
+				-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
+				-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+				["ignoreSource"] = true,
+				-- #endif
+				-- #endif
 			}),
 			-- #if BEFORE 3.3.2.11403
 			i(22262, {	-- Alliance Gift Collection

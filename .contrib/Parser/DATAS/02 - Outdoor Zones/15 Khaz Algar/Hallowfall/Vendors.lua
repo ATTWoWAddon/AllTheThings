@@ -1,12 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(VENDORS, {
 			n(217989, {	-- Aeden Braesmeld
 				["coord"] = { 42.0, 54.6, HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					i(227543, {	-- Preserved Arathi Hatchet
 						["cost"] = {{ "c", RESONANCE_CRYSTALS, 500 }},
 					}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(214380, {	-- Raen Dawncavalyr
 				["coord"] = { 43.3, 56.4, HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					i(227694, {	-- Preserved Begrimed Greathelm
 						["cost"] = {{ "c", RESONANCE_CRYSTALS, 200 }},
 					}),
@@ -50,10 +50,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(217645, {	-- Torran Dellain
 				["coord"] = { 69.3, 43.9, HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					i(225238),	-- Meaty Haunch
 				},
 			}),
 		}),
 	}),
-})));
+}));

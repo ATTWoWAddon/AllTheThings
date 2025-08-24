@@ -7,7 +7,9 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using static ATT.Export;
+using static ATT.FieldTypes.TimelineEntry;
 
 namespace ATT
 {
@@ -49,15 +51,80 @@ namespace ATT
         {
             // Combine DB information
             // Achievements
-            if (TypeDB.TryGetValue("Achievement", out IDictionary<long, IDBType> wagoAchDb))
-            {
-                MergeAchievementDB(wagoAchDb.Values.Select(i => i.AsData()), true);
-            }
+            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.GetExportableData()), true);
 
             // Items
-            if (TypeDB.TryGetValue("Item", out IDictionary<long, IDBType> wagoItemDb))
+            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.GetExportableData()));
+
+            // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
+            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.GetExportableData()));
+
+            // GlyphGB
+            foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
             {
-                MergeItemDB(wagoItemDb.Values.Select(i => i.AsData()));
+                GlyphDB[glyph.ID] = glyph.SpellID;
+            }
+
+            // FlightPathNames (FlightPathDB)
+            foreach (var fp in WagoData.GetAll<TaxiNodes>().Values)
+            {
+                string englishName = fp.Name_lang;
+                if (!string.IsNullOrEmpty(englishName))
+                {
+                    if (!FlightPathDB.TryGetValue(fp.ID, out var flightPath))
+                    {
+                        FlightPathDB[fp.ID] = flightPath = new Dictionary<string, object>();
+                    }
+
+                    // TODO: Once the data module is implemented completely, use GetLocalizedData instead.
+                    flightPath["text"] = new Dictionary<string, object>
+                    {
+                        { "en", englishName.Trim() }
+                    };
+                }
+            }
+
+            // ItemConversionDB
+            var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
+            if (ItemConversionDB.Length > 0)
+            {
+                var itemConversionDB = new Dictionary<string, object>();
+                Exports.Add("ItemConversionDB", itemConversionDB);
+                if (Exports.TryGetValue("_Compressed", out IDictionary<string, object> compressed))
+                {
+                    compressed.Add("ItemConversionDB", true);
+                }
+
+                var bonusCatalysts = new Dictionary<long, long>();
+                var catalystBonusIDs = new Dictionary<long, long>();
+                itemConversionDB["BonusCatalysts"] = bonusCatalysts;
+                itemConversionDB["BonusUpgradeTracks"] = catalystBonusIDs;
+
+                foreach (var obj in ItemConversionDB)
+                {
+                    bonusCatalysts[obj.ParentItemBonusListID] = obj.Value_0;
+
+                    // probably not worth having a configurable mapping... unless blizz adds more naming/ids for upgrade levels >_>
+                    switch (obj.Value_1)
+                    {
+                        // LFR
+                        case 4:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 972;
+                            break;
+                        // N
+                        case 0:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 973;
+                            break;
+                        // H
+                        case 1:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 974;
+                            break;
+                        // M
+                        case 3:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 978;
+                            break;
+                    }
+                }
             }
 
             // Go through all of the items in the database and calculate the Filter ID
@@ -94,6 +161,27 @@ namespace ATT
             foreach (var container in Objects.AllContainers)
             {
                 ProcessContainer(container);
+            }
+
+            // Merge Wago Battle Pet data into the containers
+            // TODO: move this to the Incorporate pass instead of manually outside the flow
+            if (SOURCED.TryGetValue("speciesID", out Dictionary<long, HashSet<IDictionary<string, object>>> allSourcedSpecies))
+            {
+                foreach (var sourceSpeciesDataPair in allSourcedSpecies)
+                {
+                    if (WagoData.TryGetValue(sourceSpeciesDataPair.Key, out BattlePetSpecies battlePetSpecies) && battlePetSpecies.CreatureID > 0)
+                    {
+                        foreach (var speciesData in sourceSpeciesDataPair.Value)
+                        {
+                            // TODO: better way to handle pet battle enemies which are species but also listed under NYI
+                            // for now just wipe the npcID of any species listed under NYI
+                            if (!speciesData.ContainsKey("_nyi"))
+                            {
+                                speciesData["npcID"] = battlePetSpecies.CreatureID;
+                            }
+                        }
+                    }
+                }
             }
 
             // Incorporate external or other DB information into the Objects
@@ -258,6 +346,7 @@ namespace ATT
                                     var newItem = new Dictionary<string, object>
                                     {
                                         {"itemID", itemID },
+                                        { "_unsorted", true },
                                     };
                                     Items.MergeInto(itemID, item, newItem);
                                     Items.DetermineSourceID(newItem);
@@ -290,6 +379,7 @@ namespace ATT
                                     var newItem = new Dictionary<string, object>
                                     {
                                         {"itemID", itemID },
+                                        { "_unsorted", true },
                                     };
                                     Items.MergeInto(itemID, item, newItem);
                                     Items.DetermineSourceID(newItem);
@@ -305,8 +395,7 @@ namespace ATT
             //int dataPhase = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME][0];
             for (int i = unsorted.Count - 1; i >= 0; --i)
             {
-                var o = unsorted[i] as IDictionary<string, object>;
-                if (o == null) continue;
+                if (!(unsorted[i] is IDictionary<string, object> o)) continue;
                 if (o.TryGetValue("g", out List<object> list) && list.Count == 0)
                 {
                     unsorted.RemoveAt(i);
@@ -319,8 +408,7 @@ namespace ATT
             }
             if (unsorted.Count == 1)
             {
-                var o = unsorted[0] as IDictionary<string, object>;
-                if (o != null && o.TryGetValue("g", out List<object> list))
+                if (unsorted[0] is IDictionary<string, object> o && o.TryGetValue("g", out List<object> list))
                 {
                     Objects.AllContainers["Unsorted"] = list;
                 }
@@ -397,7 +485,7 @@ namespace ATT
                     {
                         Objects.Merge(unsorted, new Dictionary<string, object>
                         {
-                            { "npcID", value },
+                            { "headerID", value },
                             { "g", unsortedQuests },
                         });
                     }
@@ -521,91 +609,154 @@ namespace ATT
                 CaptureDebugDBData(data);
             }
 
-            // handle the current processing against the data
-            if (!ProcessingFunction(data, parentData))
-                return false;
+            // Cache the state of values that are inherited from parent objects to their children.
 
-            // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
-            if (data.TryGetValue("hqd", out qd)) Process(qd, data);
+            var cachedDifficultyRoot = DifficultyRoot;
+            long cachedDifficulty = NestedDifficultyID;
+            long cachedHeaderID = NestedHeaderID;
+            long cachedItemAppearanceModifierID = NestedItemAppearanceModifierID;
+            long cachedBonusID = NestedBonusID;
+            long cachedModID = NestedModID;
 
-            // If this container has groups, then process those groups as well.
-            if (data.TryGetValue("g", out List<object> groups))
+            // Track the hierarchy of difficultyID
+            if ((data.TryGetValue("_multiDifficultyID", out long nestedDiffID) || data.TryGetValue("difficultyID", out nestedDiffID)) && nestedDiffID != NestedDifficultyID)
             {
-                var previousParent = CurrentParentGroup;
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
-                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
-                // Track the hierarchy of modID
-                bool restoreModID = false;
-                long previousMod = NestedModID;
-                if (data.TryGetValue("modID", out long nestedModID) && nestedModID != NestedModID)
-                {
-                    NestedModID = nestedModID;
-                    restoreModID = true;
-                    //LogDebug($"INFO: New inherited modID {NestedModID}", data);
-                }
-                // Track the hierarchy of difficultyID
-                bool restoreDifficulty = false;
-                var previousDifficultyRoot = DifficultyRoot;
-                var previousDifficulty = NestedDifficultyID;
-                if ((data.TryGetValue("_multiDifficultyID", out long nestedDiffID) || data.TryGetValue("difficultyID", out nestedDiffID)) && nestedDiffID != NestedDifficultyID)
-                {
-                    DifficultyRoot = data;
-                    NestedDifficultyID = nestedDiffID;
-                    restoreDifficulty = true;
-                    //LogDebug($"INFO: New inherited difficultyID {NestedDifficultyID}", data);
-                }
-                // Track the hierarchy of headerID
-                bool restoreHeader = false;
-                var previousHeaderID = NestedHeaderID;
-                // NOTE: Once autoID no longer clashes with headerID and npcID is no longer dumb, use headerID instead.
-                if (data.TryGetValue("npcID", out long npcID) && npcID < 0 && long.TryParse(npcID.ToString(), out long headerID))
-                {
-                    NestedHeaderID = headerID;
-                    restoreHeader = true;
-                }
-                // Track the hierarchy of lvl
-                bool restoreLvl = false;
-                long previousLvl = NestedMinLvl;
-                long dataLvl = GetDataMinLvl(data);
-                if (dataLvl > NestedMinLvl)
-                {
-                    NestedMinLvl = dataLvl;
-                    restoreLvl = true;
-                    //LogDebug($"INFO: New inherited lvl {NestedMinLvl}", data);
-                }
-
-                Process(groups, data);
-
-                // Parent field consolidation now that groups have been processed
-                if (CurrentParseStage >= ParseStage.Consolidation)
-                    HierarchicalFieldAdjustments.Apply(data, groups);
-
-                if (restoreDifficulty)
-                {
-                    //LogDebug($"INFO: Restore previous difficultyID {previousDifficulty} => {NestedDifficultyID}", data);
-                    DifficultyRoot = previousDifficultyRoot;
-                    NestedDifficultyID = previousDifficulty;
-                }
-                if (restoreHeader)
-                {
-                    //LogDebug($"INFO: Restore previous headerID {previousHeaderID} => {NestedHeaderID}", data);
-                    NestedHeaderID = previousHeaderID;
-                }
-                if (restoreModID)
-                {
-                    //LogDebug($"INFO: Restore previous modID {previousMod} => {NestedModID}", data);
-                    NestedModID = previousMod;
-                }
-                if (restoreLvl)
-                {
-                    //LogDebug($"INFO: Restore previous lvl {previousLvl} => {NestedMinLvl}", data);
-                    NestedMinLvl = previousLvl;
-                }
-                CurrentParentGroup = previousParent;
+                DifficultyRoot = data;
+                NestedDifficultyID = nestedDiffID;
             }
 
-            return true;
+            // Update the modID and associated ItemAppearanceModifierID
+            if (data.TryGetValue("modID", out long nestedModID) && nestedModID != NestedModID)
+            {
+                NestedModID = nestedModID;
+                if (ItemAppearanceModifierIDs_ModID.TryGetValue(NestedModID, out var id)) NestedItemAppearanceModifierID = id;
+            }
+
+            // Update the bonusID and associated ItemAppearanceModifierID
+            if (data.TryGetValue("bonusID", out long nestedBonusID) && nestedBonusID != NestedBonusID)
+            {
+                NestedBonusID = nestedBonusID;
+                if (ItemAppearanceModifierIDs_BonusID.TryGetValue(NestedBonusID, out var id)) NestedItemAppearanceModifierID = id;
+            }
+
+            // An explicitly defined value trumps the others.
+            if (data.TryGetValue("ItemAppearanceModifierID", out long nestedItemAppearanceModifierID))
+            {
+                NestedItemAppearanceModifierID = nestedItemAppearanceModifierID;
+            }
+
+            // Track the hierarchy of headerID
+            // NOTE: Once autoID no longer clashes with headerID and npcID is no longer dumb, use headerID instead.
+            if (data.TryGetValue("headerID", out long headerID))
+            {
+                NestedHeaderID = headerID;
+            }
+
+            // Report context changes.
+            bool cachedShouldReportContextChanges = ShouldReportContextChanges;
+            long cachedContextReportDepth = ContextReportDepth;
+            /*
+            if (!cachedShouldReportContextChanges && NestedDifficultyID == 23 && Framework.CurrentParseStage == ParseStage.Consolidation)
+            {
+                ShouldReportContextChanges = true;
+                LogWarn("Report Start: ", data);
+            }
+            */
+            var cachedChangedDetected = NestedHeaderID != cachedHeaderID || NestedDifficultyID != cachedDifficulty
+                    || NestedModID != cachedModID || NestedBonusID != cachedBonusID || NestedItemAppearanceModifierID != cachedItemAppearanceModifierID;
+            if (ShouldReportContextChanges)
+            {
+                ContextReportDepth++;
+                if (cachedChangedDetected)
+                {
+                    var builder = new StringBuilder($">> [Context {NestedDifficultyID}, {NestedModID}, {NestedBonusID}, {NestedItemAppearanceModifierID}]");
+                    for (var i = 0; i < ContextReportDepth; i++) builder.Insert(0, ' ');
+                    LogWarn(builder.ToString());
+                }
+            }
+
+            /*
+            if (NestedHeaderID != cachedHeaderID) LogDebug($"INFO: Entered HeaderID Context: {NestedHeaderID}");
+            if (NestedDifficultyID != cachedDifficulty) LogDebug($"INFO: Entered DifficultyID Context: {NestedDifficultyID}");
+            if (NestedModID != cachedModID) LogDebug($"INFO: Entered ModID Context: {NestedModID}");
+            if (NestedBonusID != cachedBonusID) LogDebug($"INFO: Entered BonusID Context: {NestedBonusID}");
+            if (NestedItemAppearanceModifierID != cachedItemAppearanceModifierID) LogDebug($"INFO: Entered ItemAppearanceModifierID Context: {NestedItemAppearanceModifierID}");
+            */
+
+            // handle the current processing against the data
+            bool success = true;
+            if (ProcessingFunction(data, parentData))
+            {
+                // If this container has an aqd or hqd, then process those objects as well.
+                if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
+                if (data.TryGetValue("hqd", out qd)) Process(qd, data);
+
+                // If this container has groups, then process those groups as well.
+                if (data.TryGetValue("g", out List<object> groups))
+                {
+                    // Cache the state of values that are inherited from parent objects to their children.
+                    var cachedParentGroup = CurrentParentGroup;
+                    long cachedMinLevel = NestedMinLvl;
+
+                    // Track the hierarchy of lvl
+                    long? dataLvl = GetDataMinLevel(data);
+                    if (dataLvl.HasValue && dataLvl > NestedMinLvl) NestedMinLvl = dataLvl.Value;
+                    /*
+                    if (NestedMinLvl != cachedMinLevel) LogDebug($"INFO: Entered MinLevel Context: {NestedMinLvl}");
+                    */
+
+                    // Update the Current Parent Group
+                    if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                        CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
+
+                    // Process all relative groups to this object.
+                    Process(groups, data);
+
+                    // Parent field consolidation now that groups have been processed
+                    if (CurrentParseStage >= ParseStage.Consolidation)
+                        HierarchicalFieldAdjustments.Apply(data, groups);
+
+                    /*
+                    if (NestedMinLvl != cachedMinLevel) LogDebug($"INFO: Left MinLevel Context: {NestedMinLvl}");
+                    */
+
+                    // Restore Previous Context
+                    NestedMinLvl = cachedMinLevel;
+                    CurrentParentGroup = cachedParentGroup;
+                }
+            }
+            else success = false;
+
+            /*
+            if (NestedItemAppearanceModifierID != cachedItemAppearanceModifierID) LogDebug($"INFO: Left ItemAppearanceModifierID Context: {NestedItemAppearanceModifierID}");
+            if (NestedBonusID != cachedBonusID) LogDebug($"INFO: Left BonusID Context: {NestedBonusID}");
+            if (NestedModID != cachedModID) LogDebug($"INFO: Left ModID Context: {NestedModID}");
+            if (NestedDifficultyID != cachedDifficulty) LogDebug($"INFO: Left DifficultyID Context: {NestedDifficultyID}");
+            if (NestedHeaderID != cachedHeaderID) LogDebug($"INFO: Left HeaderID Context: {NestedHeaderID}");
+            */
+
+            // Restore the Cached Context of the parent object.
+            NestedModID = cachedModID;
+            NestedBonusID = cachedBonusID;
+            NestedItemAppearanceModifierID = cachedItemAppearanceModifierID;
+            NestedHeaderID = cachedHeaderID;
+            NestedDifficultyID = cachedDifficulty;
+            DifficultyRoot = cachedDifficultyRoot;
+
+            // Report context changes.
+            if (ShouldReportContextChanges)
+            {
+                if (cachedChangedDetected)
+                {
+                    var builder = new StringBuilder($"<< [Context {NestedDifficultyID}, {NestedModID}, {NestedBonusID}, {NestedItemAppearanceModifierID}]");
+                    for (var i = 0; i < ContextReportDepth; i++) builder.Insert(0, ' ');
+                    LogWarn(builder.ToString());
+                }
+            }
+            ContextReportDepth = cachedContextReportDepth;
+            ShouldReportContextChanges = cachedShouldReportContextChanges;
+
+            return success;
         }
 
         private static void CaptureDebugDBData(IDictionary<string, object> data)
@@ -647,7 +798,9 @@ namespace ATT
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
             if (data.ContainsKey("objectiveID") && !Program.PreProcessorTags.ContainsKey("OBJECTIVES"))
             {
-                ConvertObjectiveData(data, parentData);
+                // capture the parent relationship here since we are removing the objective data
+                data["_parent"] = parentData;
+                AddPostProcessing(ConvertObjectiveData, data);
                 return false;
             }
 
@@ -675,8 +828,15 @@ namespace ATT
             Validate_sym(data);
             Validate_providers(data);
 
+            // Validate Headers
+            if (data.TryGetValue("headerID", out long headerID))
+            {
+                MarkCustomHeaderAsRequired(headerID);
+            }
+
             Validate_Achievement(data);
             Validate_Criteria(data);
+            Validate_Faction(data);
             Validate_LocationData(data);
             Validate_Quest(data);
 
@@ -701,34 +861,23 @@ namespace ATT
                 else MarkPhaseAsRequired(phase);
             }
 
-            // Apply the inherited modID for items which do not specify their own modID
-            if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
-            {
-                //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
-                data["modID"] = NestedModID;
-            }
             if (data.ContainsKey("ignoreBonus"))
             {
                 // will be removed later
                 data.Remove("modID");
                 data.Remove("bonusID");
+                NestedBonusID = 0L;
+                NestedModID = 0L;
+                NestedItemAppearanceModifierID = 0L;
                 //Log("Removed ignoreBonus modID", data.GetString("itemID"));
             }
-
-            if (data.TryGetValue("artifactID", out long tempId)
-                && !data.ContainsKey("sourceID")
-                && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
+            else
             {
-                // off-hand artifact source
-                if (data.ContainsKey("isOffHand"))
+                // Apply the inherited modID for items which do not specify their own modID
+                if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
                 {
-                    if (sources.TryGetValue("offHand", out long s))
-                        data["sourceID"] = s;
-                }
-                else
-                {
-                    if (sources.TryGetValue("mainHand", out long s))
-                        data["sourceID"] = s;
+                    //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
+                    data["modID"] = NestedModID;
                 }
             }
 
@@ -791,8 +940,10 @@ namespace ATT
 
             Incorporate_Achievement(data);
             Incorporate_Criteria(data);
-            // Handles Spell->SpellEffect incorporation
+            // Handles Item->Spell->SpellEffect incorporation
             Incorporate_Item(data);
+            // Handles Spell->SpellEffect incorporation
+            Incorporate_Spell(data);
             Incorporate_Ensemble(data);
 
             bool cloned = Incorporate_DataCloning(data);
@@ -896,7 +1047,7 @@ namespace ATT
             // only clean the name after other processing is complete
             if (data.TryGetValue("name", out string name))
             {
-                // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
+                // Determine the Most-Significant ID Type
                 if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objKeyValue.TryConvert(out long id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
@@ -1069,7 +1220,7 @@ namespace ATT
                             data.TryGetValue("timeline", out object timelineObj);
                             if (timelineObj is Timeline dataTimeline)
                             {
-                                dataTimelineEntry = dataTimeline.Entries[dataTimeline.CurrentEntry];
+                                dataTimelineEntry = dataTimeline.CurrentEntry;
                             }
                         }
 
@@ -1083,11 +1234,11 @@ namespace ATT
                             LogWarn($"Non-Timelined data being coord-shifted due to {ToJSON(shiftInfo)}", data);
                         }
 
-                        if (coordObj[0].TryConvert(out long coordx))
+                        if (coordObj[0].TryConvert(out float coordx))
                         {
                             coordObj[0] = coordx + shiftInfo.X;
                         }
-                        if (coordObj[1].TryConvert(out long coordy))
+                        if (coordObj[1].TryConvert(out float coordy))
                         {
                             coordObj[1] = coordy + shiftInfo.Y;
                         }
@@ -1126,13 +1277,13 @@ namespace ATT
                 else
                 {
                     // otherwise it can remain directly listed in the Ensemble
-                    if (TryGetTypeDBObjectCollection(sourceID, out List<TransmogSetItem> tmogSetItems, nameof(TransmogSetItem.ItemModifiedAppearanceID)))
+                    if (WagoData.TryGetItemModifiedAppearanceAssociations(sourceID, out List<TransmogSetItem> tmogSetItems))
                     {
-                        IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.AsData();
+                        IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.GetExportableData();
                         if (source == null)
                         {
                             LogWarn($"Ensemble via SpellID {spellID} sourcing SourceID {sourceID} which is not associated with a TransmogSetItem", data);
-                            source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.AsData();
+                            source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.GetExportableData();
                         }
                         source["_generated"] = true;
                         Items.DetermineItemID(source);
@@ -1304,6 +1455,16 @@ namespace ATT
             }
         }
 
+        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
+        {
+            if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+                && idObj is long id && id > 0
+                && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+            {
+                yield return objectSources;
+            }
+        }
+
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
@@ -1338,7 +1499,6 @@ namespace ATT
             if (data.TryGetValue("qg", out long tempId))
             {
                 NPCS_WITH_REFERENCES[tempId] = true;
-                MarkCustomHeaderAsRequired(tempId);
             }
             if (data.TryGetValue("qgs", out List<object> qgs))
             {
@@ -1346,7 +1506,6 @@ namespace ATT
                 {
                     var id = Convert.ToInt64(qg);
                     NPCS_WITH_REFERENCES[id] = true;
-                    MarkCustomHeaderAsRequired(id);
                 }
             }
             if (data.TryGetValue("crs", out qgs))
@@ -1355,7 +1514,6 @@ namespace ATT
                 {
                     var id = Convert.ToInt64(qg);
                     NPCS_WITH_REFERENCES[id] = true;
-                    MarkCustomHeaderAsRequired(id);
                 }
             }
             if (data.TryGetValue("flightpathID", out long flightpathID))
@@ -1381,7 +1539,6 @@ namespace ATT
                         break;
                     case "n":
                         NPCS_WITH_REFERENCES[headerID] = true;
-                        MarkCustomHeaderAsRequired(headerID);
                         break;
                     case "o":
                         OBJECTS_WITH_REFERENCES[headerID] = true;
@@ -1474,20 +1631,51 @@ namespace ATT
 
         private static void Validate_npc(IDictionary<string, object> data)
         {
-            if (data.TryGetValue("creatureID", out long creatureID))
+            data.TryGetValue("npcID", out long npcID);
+            data.TryGetValue("creatureID", out long creatureID);
+            if (npcID > 0)
             {
-                if (data.TryGetValue("npcID", out object dupeNpcID))
+                NPCS_WITH_REFERENCES[npcID] = true;
+                if (creatureID > 0)
                 {
-                    LogError($"Both CreatureID {creatureID} and NPCID {dupeNpcID}?", data);
+                    data.Remove("creatureID");
+
+                    // Check to see if we are exporting both an npcID and a creatureID that are the same.
+                    if (npcID != creatureID)
+                    {
+                        LogWarn($"Data with both npcID {npcID} and creatureID {creatureID}. Converting creatureID to crs", data);
+                        // Uh oh, these are different.
+                        NPCS_WITH_REFERENCES[creatureID] = true;
+
+                        // Check to see if we have a crc container already.
+                        if (data.TryGetValue("crs", out List<object> crs))
+                        {
+                            if (!crs.Contains(creatureID)) crs.Add(creatureID);
+                        }
+                        else
+                        {
+                            // We don't. Nice!
+                            data["crs"] = new List<object> { creatureID };
+                        }
+                    }
                 }
-                data["npcID"] = creatureID;
-                NPCS_WITH_REFERENCES[creatureID] = true;
-                MarkCustomHeaderAsRequired(creatureID);
             }
-            if (data.TryGetValue("npcID", out creatureID))
+            else
             {
-                NPCS_WITH_REFERENCES[creatureID] = true;
-                MarkCustomHeaderAsRequired(creatureID);
+                if (npcID < 0)
+                {
+                    LogWarn($"Data with negative npcID {npcID}. Converting npcID to headerID", data);
+                    data.Remove("npcID");
+                    data["headerID"] = npcID;
+                }
+
+                if (creatureID > 0)
+                {
+                    LogDebugWarn($"Data with creatureID {creatureID}. Converting creatureID to npcID", data);
+                    NPCS_WITH_REFERENCES[creatureID] = true;
+                    data["npcID"] = creatureID;
+                    data.Remove("creatureID");
+                }
             }
         }
 
@@ -1631,14 +1819,35 @@ namespace ATT
             data["_encounterHash"] = NestedDifficultyID > 0 ? GetEncounterHash(encounterID, NestedDifficultyID) : GetEncounterHash(encounterID, NestedHeaderID);
 
             // Clean up Encounters which only have a single npcID assigned via 'crs'
-            if (!data.ContainsKey("npcID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long crID))
+            if (!data.TryGetValue("crs", out List<object> crs))
             {
-                data["npcID"] = crID;
+                data["crs"] = crs = new List<object>();
+            }
+            if (data.TryGetValue("creatureID", out long creatureID))
+            {
+                data.Remove("creatureID");
+                if (!crs.Contains(creatureID)) crs.Add(creatureID);
+            }
+            if (data.TryGetValue("npcID", out creatureID))
+            {
+                data.Remove("npcID");
+                if (creatureID > 0)
+                {
+                    if (!crs.Contains(creatureID)) crs.Add(creatureID);
+                }
+                else
+                {
+                    data["headerID"] = creatureID;
+                }
+            }
+            if (crs.Count == 1 && crs[0].TryConvert(out creatureID))
+            {
+                data["npcID"] = creatureID;
                 data.Remove("crs");
             }
 
             // Warn about Encounters with no NPCID assignment
-            if (!data.ContainsKey("npcID") && !data.ContainsKey("crs"))
+            if (!data.ContainsKey("npcID") && !data.ContainsKey("crs") && !data.ContainsKey("aqd"))
             {
                 switch (encounterID)
                 {
@@ -1648,7 +1857,7 @@ namespace ATT
                     case 1552:  // Servant's Quarters (Kara)
                         break;
                     default:
-                        LogError($"Encounter {encounterID} is missing an NPC assignment! (Could lead to unassigned Achievement data)");
+                        LogWarn($"Encounter {encounterID} is missing an NPC assignment! (Could lead to unassigned Achievement data)");
                         break;
                 }
             }
@@ -1696,8 +1905,15 @@ namespace ATT
             if (data.TryGetValue("npcID", out long npcID))
             {
                 data.Remove("npcID");
-                LogDebug($"INFO: Converted 'npcID' {npcID} on Criteria {achID}:{criteriaID} into 'crs'");
-                Objects.Merge(data, "crs", new List<long> { npcID });
+                if (npcID > 0)
+                {
+                    LogDebug($"INFO: Converted 'npcID' {npcID} on Criteria {achID}:{criteriaID} into 'crs'");
+                    Objects.Merge(data, "crs", new List<long> { npcID });
+                }
+                else
+                {
+                    LogError($"INFO: Deleted negative 'npcID' {npcID} on Criteria {achID}:{criteriaID}");
+                }
             }
 
             // If criteria end up with a single 'crs', then try using _npcs instead to move the criteria under the proper NPC
@@ -1706,6 +1922,19 @@ namespace ATT
             {
                 data.Remove("crs");
                 Objects.Merge(data, "_npcs", crs);
+            }
+        }
+
+        private static void Validate_Faction(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("factionID", out long factionID))
+                return;
+
+            // Factions should not contain Sourced content as they are considered standalone collectibles
+            if (data.TryGetValue("g", out List<object> g) && g.Count > 0)
+            {
+                // TODO: normal warn once eventually cleaned up
+                LogDebugWarn($"Faction {factionID} should not contain nested content. Use an auto-header to nest content related to a Faction", data);
             }
         }
 
@@ -1751,8 +1980,13 @@ namespace ATT
                 }
             }
 
-            // Convert any 'n' providers into 'qgs' for data simplicity
-            if (data.TryGetValue("providers", out List<object> providers))
+            // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
+            if (data.TryGetValue("providers", out List<object> providers)
+                // if not an item listed first
+                && !(providers.Count > 0
+                    && providers[0] is List<object> firstProvider
+                    && firstProvider.Count > 0
+                    && firstProvider[0].ToString() == "i"))
             {
                 List<object> quest_qgs = new List<object>(providers.Count);
                 for (int p = providers.Count - 1; p >= 0; p--)
@@ -1909,10 +2143,15 @@ namespace ATT
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             // TODO: include the WagoDB Achievement Data somehow...
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
-                TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
+                WagoData.TryGetValue(criteriaTreeID, out CriteriaTree criteriaTree))
             {
-                // Some Achievements we use specific symlinks to show information instead of Criteria
-                if (CheckSymlink(data, "meta_achievement", "partial_achievement", "select"))
+                // Some Achievements we use specific symlinks to show information instead of Criteria (for pre-CATA parses)
+                if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["CATA"].ConvertVersion() && CheckSymlink(data, "meta_achievement"))
+                {
+                    LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
+                    return;
+                }
+                else if (CheckSymlink(data, "partial_achievement", "select"))
                 {
                     LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
                     return;
@@ -1934,14 +2173,12 @@ namespace ATT
             if (!data.TryGetValue("criteriaID", out long criteriaID))
                 return;
 
-            //data.DataBreakPoint("criteriaID", 55244);
             // ignore criteria which have _encounters defined. maybe eventually figure out the ModiferTree logic for them instead
             // ignore criteria which were already incorporated
             if (data.ContainsKey("_noautomation") || data.ContainsKey("_encounter") || data.ContainsKey("_incorporatedCriteria"))
                 return;
 
             data.TryGetValue("achID", out long achID);
-
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
             IDictionary<string, object> matchedCriteriaInfo = null;
@@ -2005,25 +2242,26 @@ namespace ATT
             }
 
             // Grab matching Criteria data
-            if (!TryGetTypeDBObject(criteriaID, out Criteria criteriaData))
+            if (!WagoData.TryGetValue(criteriaID, out Criteria criteriaData))
             {
                 // If it wasn't found by UID, then try to check by ID using Achievement referenced CriteriaTree
                 // Get matching Achievement
-                if (!TryGetTypeDBObject(achID, out Achievement achievementData))
+                if (!WagoData.TryGetValue(achID, out Achievement achievementData))
                 {
                     LogWarn($"Failed to find matching Achievement data (Wago) for ID: {achID}");
                     return;
                 }
 
                 // Get matching CriteriaTree
-                if (!TryGetTypeDBObject(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
+                if (!WagoData.TryGetValue(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
                 {
                     LogWarn($"Failed to find matching CriteriaTree data (Wago) for ID: {achievementData.Criteria_tree}");
                     return;
                 }
 
                 // Get children of the CriteriaTree
-                if (TryGetTypeDBObjectChildren(criteriaTreeData, out List<CriteriaTree> children))
+                var children = criteriaTreeData.EnumerateChildren().ToList();
+                if (children.Count > 0)
                 {
                     long critIndex = criteriaID - 1;
                     foreach (CriteriaTree child in children)
@@ -2058,7 +2296,7 @@ namespace ATT
                 }
 
                 // See if we didn't end up with a valid UID with nothing nested
-                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(GetAllNestedTypeDBObjects(criteriaTreeData).Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
+                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(criteriaTreeData.EnumerateChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
                 Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
                 return;
             }
@@ -2181,13 +2419,35 @@ namespace ATT
             {
                 if (!TryGetSOURCED("achID", achievementID, out _))
                 {
-                    LogDebugWarn($"Achievement {achievementID} linked to Criteria {achID}:{criteriaID}, but it's likely a hidden achievement. Not nesting Criteria.");
+                    LogDebugWarn($"Unsourced Achievement {achievementID} linked to Criteria {achID}:{criteriaID}, but it's likely a hidden achievement. Not nesting Criteria.");
                 }
                 else
                 {
                     LogDebug($"INFO: Added _achievements to Criteria {achID}:{criteriaID} => {achievementID}");
                     Objects.Merge(data, "_achievements", achievementID);
                     incorporated = true;
+                }
+            }
+
+            long worldMapOverlayID = criteriaData.GetExplorationWorldMapOverlayID();
+            if (worldMapOverlayID > 0)
+            {
+                if (WagoData.TryGetValue(worldMapOverlayID, out WorldMapOverlay overlay))
+                {
+                    long explorationID = overlay.AreaID_0;
+                    if (explorationID > 0)
+                    {
+                        if (!TryGetSOURCED("explorationID", explorationID, out _))
+                        {
+                            LogWarn($"Exploration {explorationID} should be sourced for nesting Criteria {achID}:{criteriaID}");
+                        }
+                        else
+                        {
+                            LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
+                            Objects.Merge(data, "_exploration", explorationID);
+                            incorporated = true;
+                        }
+                    }
                 }
             }
 
@@ -2251,6 +2511,37 @@ namespace ATT
                 }
             }
 
+            long requireSkillID = criteriaData.GetRequiredSkillID();
+            if (requireSkillID > 0)
+            {
+                Objects.Merge(data, "requireSkill", requireSkillID);
+                // TODO: it's nice for requireSkill to consolidate to the base profession, but also want to see the 'exact' profession requirement for these cases...
+                //data["_specificRequireSkill"] = true;
+                data.TryGetValue("_parentAmount", out long parentAmount);
+                if (parentAmount > 0)
+                {
+                    Objects.Merge(data, "learnedAt", parentAmount);
+                }
+                LogDebug($"INFO: Added requireSkill to Criteria {achID}:{criteriaID} with ProfessionID: {requireSkillID} @ {parentAmount}");
+                incorporated = true;
+            }
+
+            long targetClassID = criteriaData.GetTargetClassID();
+            if (targetClassID > 0)
+            {
+                // TODO: perhaps a different way eventually to show in target tooltips
+                Objects.Merge(data, "c_disp", new List<object> { targetClassID });
+                TrackIncorporationData(data, "c_disp", new List<object> { targetClassID });
+            }
+
+            long targetRaceID = criteriaData.GetTargetRaceID();
+            if (targetRaceID > 0)
+            {
+                // TODO: perhaps a different way eventually to show in target tooltips
+                Objects.Merge(data, "races_disp", new List<object> { targetRaceID });
+                TrackIncorporationData(data, "races_disp", new List<object> { targetRaceID });
+            }
+
             // This needs to be the last check performed since it will remove the Criteria group if nothing useful was added from the Criteria data
             long modifierTreeID = criteriaData.GetModifierTreeID();
             if (modifierTreeID > 0)
@@ -2291,7 +2582,7 @@ namespace ATT
         {
             if (criteriaTree == null)
             {
-                if (!TryGetTypeDBObject(criteriaTreeID, out CriteriaTree refCriteriaTree))
+                if (!WagoData.TryGetValue(criteriaTreeID, out CriteriaTree refCriteriaTree))
                     return false;
 
                 criteriaTree = refCriteriaTree;
@@ -2300,7 +2591,7 @@ namespace ATT
             bool inGameIgnored = criteriaTree.IsIgnoreFlags() && !data.ContainsKey("_doautomation");
             bool incorporated = false;
             // CriteriaTree itself is linked to a Criteria
-            if (criteriaTree.CriteriaID != 0 && TryGetTypeDBObject(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
+            if (criteriaTree.CriteriaID != 0 && WagoData.TryGetValue(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
             {
                 long criteriaProviderItem = criteria.GetProviderItem();
                 // Don't incorporate ignore-flagged CriteriaTree whose Criteria is simply a provider Item (i.e. Old Crafty has 2 criteria both with same provider)
@@ -2325,7 +2616,7 @@ namespace ATT
                 }
                 else
                 {
-                    IDictionary<string, object> criteriaData = criteria.AsData();
+                    IDictionary<string, object> criteriaData = criteria.GetExportableData();
                     criteriaData["achID"] = achID;
                     // capture the parent criteria tree amount multiplier if it exists, so when the criteria data is incorporated we can properly utilize the value
                     if (criteriaTree.Operator == 0 && criteriaTree.Amount > 0)
@@ -2337,6 +2628,15 @@ namespace ATT
                         Objects.Merge(criteriaData, extraData);
                         extraData = null;
                     }
+                    // Copy e, u, pb, pvp, and timeline flags from the parent achievement
+                    if (data.ContainsKey("e")) criteriaData["e"] = data["e"];
+                    if (data.ContainsKey("u")) criteriaData["u"] = data["u"];
+                    if (data.ContainsKey("pb")) criteriaData["pb"] = data["pb"];
+                    if (data.ContainsKey("pvp")) criteriaData["pvp"] = data["pvp"];
+                    if (data.ContainsKey("timeline")) criteriaData["timeline"] = data["timeline"];
+                    if (data.ContainsKey("races")) criteriaData["races"] = data["races"];
+                    if (data.ContainsKey("classes")) criteriaData["classes"] = data["classes"];
+
                     // we can merge single criteria under a criteriatree into the achievement if it's 1 level down,
                     // otherwise it's a criteira which is split instead
                     if (mergeDirectly && level == 1)
@@ -2425,7 +2725,7 @@ namespace ATT
             }
 
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
-            if (criteriaTree.IsUseful() && TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
+            if (criteriaTree.IsUseful())
             {
                 // Don't incorporate multiple Criteria from an ignored CriteriaTree
                 if (inGameIgnored)
@@ -2434,90 +2734,96 @@ namespace ATT
                     return false;
                 }
 
-                if (criteriaTree.IsAllianceOnlyFlags())
+                var childTrees = criteriaTree.EnumerateChildren().ToList();
+                if (childTrees.Count > 0)
                 {
-                    extraData = extraData ?? new Dictionary<string, object>();
-                    extraData["r"] = 2;
-                    TrackIncorporationData(data, "r", 2);
-                }
-                else if (criteriaTree.IsHordeOnlyFlags())
-                {
-                    extraData = extraData ?? new Dictionary<string, object>();
-                    extraData["r"] = 1;
-                    TrackIncorporationData(data, "r", 1);
-                }
 
-                foreach (CriteriaTree child in childTrees)
-                {
-                    if (level == 0)
+                    if (criteriaTree.IsAllianceOnlyFlags())
                     {
-                        // add level 1 criteriaIndex for proper name retrieval in game
                         extraData = extraData ?? new Dictionary<string, object>();
-                        extraData["id"] = child.OrderIndex + 1;
+                        extraData["r"] = 2;
+                        TrackIncorporationData(data, "r", 2);
+                    }
+                    else if (criteriaTree.IsHordeOnlyFlags())
+                    {
+                        extraData = extraData ?? new Dictionary<string, object>();
+                        extraData["r"] = 1;
+                        TrackIncorporationData(data, "r", 1);
                     }
 
-                    incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData, criteriaTree.UseIndependentCriteria());
-                }
-
-                long criteriaIndex = criteriaTree.OrderIndex + 1;
-                // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
-                // data to merge directly into criteria index groups if sourced
-                if (level == 1)
-                {
-                    // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
-                    if (data.TryGetValue("g", out List<object> datag))
+                    foreach (CriteriaTree child in childTrees)
                     {
-                        // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
-                        for (int i = datag.Count - 1; i >= 0; i--)
+                        if (level == 0)
                         {
-                            IDictionary<string, object> obj = datag[i] as IDictionary<string, object>;
-                            if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
-                            {
-                                if (obj.TryGetValue("_noautomation", out bool noautomation) && noautomation)
-                                {
-                                    return incorporated;
-                                }
+                            // add level 1 criteriaIndex for proper name retrieval in game
+                            extraData = extraData ?? new Dictionary<string, object>();
+                            extraData["id"] = child.OrderIndex + 1;
+                        }
 
-                                if (incorporated)
+                        incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData, criteriaTree.UseIndependentCriteria());
+                    }
+
+                    long criteriaIndex = criteriaTree.OrderIndex + 1;
+                    // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
+                    // data to merge directly into criteria index groups if sourced
+                    if (level == 1)
+                    {
+                        // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
+                        if (data.TryGetValue("g", out List<object> datag))
+                        {
+                            // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
+                            for (int i = datag.Count - 1; i >= 0; i--)
+                            {
+                                IDictionary<string, object> obj = datag[i] as IDictionary<string, object>;
+                                if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
                                 {
-                                    LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
-                                    datag.RemoveAt(i);
-                                    // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
-                                    obj.Remove("criteriaID");
-                                    obj.Remove("achID");
-                                    obj.Remove("timeline");
-                                    obj.Remove("awp");
-                                    obj.Remove("r");
-                                    obj.Remove("g");
-                                    if (obj.Keys.Count > 0)
+                                    if (obj.TryGetValue("_noautomation", out bool noautomation) && noautomation)
                                     {
-                                        LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                        return incorporated;
                                     }
+
+                                    if (incorporated)
+                                    {
+                                        LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
+                                        datag.RemoveAt(i);
+                                        // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
+                                        obj.Remove("criteriaID");
+                                        obj.Remove("achID");
+                                        obj.Remove("timeline");
+                                        obj.Remove("awp");
+                                        obj.Remove("r");
+                                        obj.Remove("g");
+                                        if (obj.Keys.Count > 0)
+                                        {
+                                            LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(criteriaTree.EnumerateChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        LogWarn($"Add '_noautomation' to Criteria by Index: {achID}:{objCriteriaID} if it contains accurate data since it failed to incorporate useful data.");
+                                        incorporated = true;
+                                    }
+                                    break;
                                 }
-                                else
-                                {
-                                    LogWarn($"Add '_noautomation' to Criteria by Index: {achID}:{objCriteriaID} if it contains accurate data since it failed to incorporate useful data.");
-                                    incorporated = true;
-                                }
-                                break;
                             }
                         }
+
+                        // more than 1 useful & non-ignored criteria tree to nest, but none had any incorporated data, so add basic criterias by index
+                        if (!incorporated && !data.ContainsKey("achievement_criteria") && childTrees.Any(c => c.IsUseful() && !c.IsIgnoreFlags()))
+                        {
+                            extraData = extraData ?? new Dictionary<string, object>();
+                            if (extraData.TryGetValue("id", out long id) && id == criteriaIndex)
+                            {
+                                extraData.Remove("id");
+                            }
+                            extraData["criteriaID"] = criteriaIndex;
+                            extraData["achID"] = achID;
+                            extraData["_noautomation"] = true;
+                            LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
+                            Objects.Merge(data, "g", extraData);
+                        }
                     }
 
-                    // more than 1 criteria tree to nest, but none had any incorporated data, so add basic criterias by index
-                    if (!incorporated && !data.ContainsKey("achievement_criteria") && childTrees.Count > 1)
-                    {
-                        extraData = extraData ?? new Dictionary<string, object>();
-                        if (extraData.TryGetValue("id", out long id) && id == criteriaIndex)
-                        {
-                            extraData.Remove("id");
-                        }
-                        extraData["criteriaID"] = criteriaIndex;
-                        extraData["achID"] = achID;
-                        extraData["_noautomation"] = true;
-                        LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
-                        Objects.Merge(data, "g", extraData);
-                    }
                 }
             }
 
@@ -2529,7 +2835,7 @@ namespace ATT
             bool incorporated = false;
             if (existingModifierTree == null)
             {
-                if (!TryGetTypeDBObject(id, out ModifierTree modifierTree))
+                if (!WagoData.TryGetValue(id, out ModifierTree modifierTree))
                     return incorporated;
 
                 existingModifierTree = modifierTree;
@@ -2551,6 +2857,76 @@ namespace ATT
                     case 19:
                         Objects.Merge(data, "provider", new List<object> { "i", existingModifierTree.Asset });
                         TrackIncorporationData(data, "provider", new List<object> { "i", existingModifierTree.Asset });
+                        break;
+                    // 25 (SOURCE_RACE)
+                    case 25:
+                        Objects.Merge(data, "races", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "races", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 26 (SOURCE_CLASS)
+                    case 26:
+                        Objects.Merge(data, "c", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "c", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 27 (TARGET_RACE)
+                    case 27:
+                        Objects.Merge(data, "races_disp", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "races_disp", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 28 (TARGET_CLASS)
+                    case 28:
+                        Objects.Merge(data, "c_disp", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "c_disp", new List<object> { existingModifierTree.Asset });
+                        break;
+                    // 17 (SOURCE_AREA_OR_ZONE)
+                    case 17:
+                    // 41 (SOURCE_ZONE)
+                    case 41:
+                        if (WagoData.TryGetAreaAssociations(existingModifierTree.Asset, out List<UiMapAssignment> associations))
+                        {
+                            var dict = new Dictionary<long, object>();
+                            foreach (var uiMapAssociation in associations)
+                            {
+                                var mapID = uiMapAssociation.UiMapID;
+                                if (MAPID_MERGE_REPLACEMENTS.TryGetValue(mapID, out long replacementMapID))
+                                {
+                                    mapID = replacementMapID;
+                                }
+                                if (mapID > 0) dict[mapID] = mapID;
+                            }
+                            if (dict.Count > 0)
+                            {
+                                var maps = dict.Values.ToList();
+                                //Objects.Merge(data, "maps", maps);
+                                //TrackIncorporationData(data, "maps", maps);
+                                TrackIncorporationData(data, "_maps", maps);
+                                Objects.Merge(data, "_maps", maps);
+                                /*
+                                Console.WriteLine("ADDED MAP DATA TO ACHIEVEMENT:");
+                                Console.WriteLine(MiniJSON.Json.Serialize(data));
+                                Console.ReadLine();
+                                */
+                            }
+                            /*
+                            else
+                            {
+                                Console.WriteLine("FAILED TO FIND MAP DATA TO ACHIEVEMENT:");
+                                Console.WriteLine(MiniJSON.Json.Serialize(data));
+                                Console.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
+                                Console.WriteLine(MiniJSON.Json.Serialize(associations));
+                                Console.ReadLine();
+                            }
+                            */
+                        }
+                        /*
+                        else
+                        {
+                            Console.WriteLine("FAILED TO FIND AREA DATA TO ACHIEVEMENT:");
+                            Console.WriteLine(MiniJSON.Json.Serialize(data));
+                            Console.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
+                            Console.ReadLine();
+                        }
+                        */
                         break;
                     // 62 (GUILD_REPUTATION)
                     case 62:
@@ -2592,6 +2968,19 @@ namespace ATT
                         TrackIncorporationData(data, "minReputation", new List<object> { 1271, existingModifierTree.Asset });
                         Objects.Merge(data, "_factions", 1271);
                         break;
+                    // 91 (BATTLE_PET_SPECIES)
+                    case 91:
+                        // world quest battle pets have 'speciesID' and are sourced under NYI... don't move any of their criteria there
+                        if (TryGetSOURCED("speciesID", existingModifierTree.Asset, out HashSet<IDictionary<string, object>> sourcedSpecies)
+                            && sourcedSpecies.All(s => IsObtainableData(s)))
+                        {
+                            Objects.Merge(data, "_species", existingModifierTree.Asset);
+                        }
+                        else if (WagoData.TryGetValue(existingModifierTree.Asset, out BattlePetSpecies battlePetSpecies))
+                        {
+                            Objects.Merge(data, "_npcs", battlePetSpecies.CreatureID);
+                        }
+                        break;
                     // 95 (FACTION_STANDING)
                     case 95:
                         Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.Asset, existingModifierTree.SecondaryAsset });
@@ -2601,6 +2990,8 @@ namespace ATT
                     // 99 (SKILL)
                     case 99:
                         Objects.Merge(data, "requireSkill", existingModifierTree.Asset);
+                        // TODO: it's nice for requireSkill to consolidate to the base profession, but also want to see the 'exact' profession requirement for these cases...
+                        //data["_specificRequireSkill"] = true;
                         TrackIncorporationData(data, "requireSkill", existingModifierTree.Asset);
                         // SecondaryAsset = skill level
                         break;
@@ -2638,6 +3029,11 @@ namespace ATT
                         TrackIncorporationData(data, "provider", new List<object> { existingModifierTree.SecondaryAsset, existingModifierTree.Asset });
                         Objects.Merge(data, "_factions", existingModifierTree.SecondaryAsset);
                         break;
+                    // 271 (QUEST_IS_ON_OR_HAS_COMPLETED)
+                    case 271:
+                        Objects.Merge(data, "sourceQuests", new List<object> { existingModifierTree.Asset });
+                        TrackIncorporationData(data, "sourceQuests", new List<object> { existingModifierTree.Asset });
+                        break;
                     default:
                         incorporated = false;
                         break;
@@ -2645,12 +3041,9 @@ namespace ATT
             }
 
             // ModifierTree can be a parent, which means the children should be incorporated into the data instead
-            if (TryGetTypeDBObjectChildren(existingModifierTree, out List<ModifierTree> childTrees))
+            foreach (ModifierTree child in existingModifierTree.EnumerateChildren())
             {
-                foreach (ModifierTree child in childTrees)
-                {
-                    incorporated |= Incorporate_ModifierTree(data, child.ID, child);
-                }
+                incorporated |= Incorporate_ModifierTree(data, child.ID, child);
             }
 
             return incorporated;
@@ -2660,48 +3053,27 @@ namespace ATT
         {
             if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID")) return;
             if (data.ContainsKey("_noautomation")) return;
+            if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
-            if (!data.TryGetValue("spellID", out long spellID))
+            if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet) && tmogSet.TrackingQuestID > 0)
             {
-                LogWarn($"Ensemble Type Item missing linking SpellID", data);
-                return;
-            }
+                Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+                TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
 
-            if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
-            {
-                foreach (SpellEffect spellEffect in spellEffects)
-                {
-                    Incorporate_SpellEffect(data, spellEffect);
-                }
-            }
-            else
-            {
-                data.TryGetValue("itemID", out long itemID);
-                LogWarn($"Ensemble {itemID} with Spell {spellID} missing Wago SpellEffect record(s)", data);
-            }
-
-            if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet))
-            {
-                if (tmogSet.TrackingQuestID > 0)
-                {
-                    Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
-                    TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
-
-                    // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
-                    // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
-                    //IEnumerable<TransmogSet> matchingTmogSets = GetTypeDBObjects<TransmogSet>(i => i.Name_lang == tmogSet.Name_lang
-                    //                                                                            && i.TrackingQuestID > 0
-                    //                                                                            && i.TrackingQuestID != tmogSet.TrackingQuestID);
-                    //data.TryGetValue("itemID", out long ensembleID);
-                    //foreach (var matchingTmogSet in matchingTmogSets)
-                    //{
-                    //    long? matchingTmogSetSpellID = GetTypeDBObjects<SpellEffect>(i => i.EffectMiscValue_0 == matchingTmogSet.ID && i.IsLearnedTransmogSet()).FirstOrDefault()?.SpellID;
-                    //    if (matchingTmogSetSpellID != null)
-                    //    {
-                    //        LogDebugWarn($"Matching Transmog Set {matchingTmogSet.Name_lang}:{matchingTmogSet.ID} may need a manual SpellID {matchingTmogSetSpellID} added within existing iensemble({ensembleID}");
-                    //    }
-                    //}
-                }
+                // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
+                // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
+                //IEnumerable<TransmogSet> matchingTmogSets = GetTypeDBObjects<TransmogSet>(i => i.Name_lang == tmogSet.Name_lang
+                //                                                                            && i.TrackingQuestID > 0
+                //                                                                            && i.TrackingQuestID != tmogSet.TrackingQuestID);
+                //data.TryGetValue("itemID", out long ensembleID);
+                //foreach (var matchingTmogSet in matchingTmogSets)
+                //{
+                //    long? matchingTmogSetSpellID = GetTypeDBObjects<SpellEffect>(i => i.EffectMiscValue_0 == matchingTmogSet.ID && i.IsLearnedTransmogSet()).FirstOrDefault()?.SpellID;
+                //    if (matchingTmogSetSpellID != null)
+                //    {
+                //        LogDebugWarn($"Matching Transmog Set {matchingTmogSet.Name_lang}:{matchingTmogSet.ID} may need a manual SpellID {matchingTmogSetSpellID} added within existing iensemble({ensembleID}");
+                //    }
+                //}
             }
 
             // add additional ensemble spells as sub-groups of the Item Ensemble
@@ -2723,56 +3095,70 @@ namespace ATT
             }
 
             AddPostProcessing(EnsembleCleanup, data);
+            // don't incorporate ensemble again
+            data["_Incorporate_Ensemble"] = true;
         }
 
         private static void Incorporate_Item_TransmogSetItems(IDictionary<string, object> data, long tmogSetID)
         {
-            if (!TryGetTypeDBObjectCollection(tmogSetID, out List<TransmogSetItem> transmogSetItems))
+            if (WagoData.TryGetTransmogSetAssociations(tmogSetID, out List<TransmogSetItem> transmogSetItems) && transmogSetItems.Count > 0)
             {
-                LogDebugWarn($"Ensemble missing Wago TransmogSetItem record(s) for TransmogSetID {tmogSetID}", data);
-                return;
-            }
-
-            if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID"))
-            {
-                LogDebugWarn($"Valid Ensemble information not set as 'iensemble'/'sensemble'", data);
-                return;
-            }
-
-            List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
-
-            // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
-            if (data.TryGetValue("questID", out long questID) && TryGetTypeDBObjectCollection(questID, out List<TransmogSet> sameQuestTransmogSets))
-            {
-                foreach (var sameQuestTransmogSet in sameQuestTransmogSets)
+                if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID"))
                 {
-                    if (sameQuestTransmogSet.ID != tmogSetID)
+                    LogDebugWarn($"Valid Ensemble information not set as 'iensemble'/'sensemble'", data);
+                    return;
+                }
+
+                List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
+
+                // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
+                if (data.TryGetValue("questID", out long questID))
+                {
+                    foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values)
                     {
-                        if (!TryGetTypeDBObjectCollection(sameQuestTransmogSet.ID, out transmogSetItems))
+                        if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
                         {
-                            LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
-                        }
-                        else
-                        {
-                            allSourceIDs.AddRange(transmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                            LogDebug($"INFO: Ensemble {tmogSetID} has addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            if (!WagoData.TryGetTransmogSetAssociations(tmogSetID, out List<TransmogSetItem> associations) || associations.Count < 1)
+                            {
+                                LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            }
+                            else
+                            {
+                                allSourceIDs.AddRange(transmogSetItems.Select(i => i.ItemModifiedAppearanceID));
+                                LogDebug($"INFO: Ensemble {tmogSetID} has addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            }
                         }
                     }
                 }
+
+                // Remove any added SourceIDs which don't actually exist in the ItemModifiedAppearance DB
+                allSourceIDs.RemoveAll(id =>
+                {
+                    if (!WagoData.ContainsKey<ItemModifiedAppearance>(id))
+                    {
+                        LogDebugWarn($"Removing SourceID {id} from TransmogSet {tmogSetID} since it does not exist in ItemModifiedAppearanceDB");
+                        return true;
+                    }
+                    return false;
+                });
+
+                Objects.Merge(data, "_sourceIDs", allSourceIDs);
+                TrackIncorporationData(data, "_sourceIDs", allSourceIDs);
+                LogDebug($"INFO: Ensemble {type} with TransmogSet {tmogSetID} merged {allSourceIDs.Count} SourceIDs", data);
+
+                //foreach (long sourceID in )
+                //{
+                //    Items.DetermineItemID(itemData);
+                //    // since we may determine an itemID for this data after the ConditionalMerge phase
+                //    // we need to apply that logic to this data specifically as well
+                //    DataConditionalMerge(itemData);
+                //    Objects.Merge(data, "g", itemData);
+                //}
             }
-
-            Objects.Merge(data, "_sourceIDs", allSourceIDs);
-            TrackIncorporationData(data, "_sourceIDs", allSourceIDs);
-            LogDebug($"INFO: Ensemble {type} with TransmogSet {tmogSetID} merged {allSourceIDs.Count} SourceIDs", data);
-
-            //foreach (long sourceID in )
-            //{
-            //    Items.DetermineItemID(itemData);
-            //    // since we may determine an itemID for this data after the ConditionalMerge phase
-            //    // we need to apply that logic to this data specifically as well
-            //    DataConditionalMerge(itemData);
-            //    Objects.Merge(data, "g", itemData);
-            //}
+            else
+            {
+                LogDebugWarn($"Ensemble missing Wago TransmogSetItem record(s) for TransmogSetID {tmogSetID}", data);
+            }
         }
 
         private static void Incorporate_Item(IDictionary<string, object> data)
@@ -2780,10 +3166,37 @@ namespace ATT
             if (!data.TryGetValue("itemID", out long itemID)) return;
             if (data.ContainsKey("_noautomation")) return;
 
-            // See if there's a Spell and what it links to
-            if (data.TryGetValue("spellID", out long spellID))
+            // See if there's a Primary Spell already (can be set via WagoDB/Item/SpellID in AsData() when merging ItemDB)
+            data.TryGetValue("spellID", out long spellID);
+
+            // See what direct ItemXItemEffects are linked to this Item
+            // Item X> ItemXItemEffect
+            // ItemXItemEffect 1> ItemEffect
+            // ItemEffect X> SpellEffect
+            // e.g. i:207046 -> 2 ItemXItemEffect -> 2 ItemEffect -> 2 SpellEffect & 4 SpellEffect
+            foreach (ItemXItemEffect itemXItemEffect in WagoData.EnumerateForItemID<ItemXItemEffect>(itemID))
             {
-                if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
+                if (!WagoData.TryGetValue(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
+                    continue;
+
+                // ignore matching spellID effect
+                if (itemEffect.SpellID == spellID)
+                    continue;
+
+                // Incorporate_Spell will handle any 'extra' spells triggered by secondary ItemEffects
+                Objects.Merge(data, "_extraSpells", itemEffect.SpellID);
+            }
+        }
+
+        private static void Incorporate_Spell(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("spellID", out long spellID) && !data.ContainsKey("_extraSpells")) return;
+            if (data.ContainsKey("_noautomation")) return;
+
+            // See what the Spell links to
+            if (spellID > 0)
+            {
+                if (WagoData.TryGetSpellAssociations(spellID, out List<SpellEffect> spellEffects) && spellEffects.Count > 0)
                 {
                     foreach (SpellEffect spellEffect in spellEffects)
                     {
@@ -2797,24 +3210,14 @@ namespace ATT
                 }
             }
 
-            // See what direct ItemXItemEffects are linked to this Item
-            if (TryGetTypeDBObjectCollection(itemID, out List<ItemXItemEffect> itemXItemEffects))
+            // Incorporate any extra spells
+            if (data.TryGetValue("_extraSpells", out List<object> extraSpells))
             {
-                foreach (ItemXItemEffect itemXItemEffect in itemXItemEffects)
+                foreach (long extraSpellID in extraSpells.AsTypedEnumerable<long>())
                 {
-                    if (!TryGetTypeDBObject(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
-                        continue;
-
-                    // we may have already incorporated the specific SpellID above from the direct Item data
-                    if (itemEffect.SpellID == spellID)
-                        continue;
-
-                    if (TryGetTypeDBObjectCollection(itemEffect.SpellID, out List<SpellEffect> spellEffects))
+                    foreach (SpellEffect spellEffect in WagoData.EnumerateForSpellID<SpellEffect>(extraSpellID))
                     {
-                        foreach (SpellEffect spellEffect in spellEffects)
-                        {
-                            Incorporate_SpellEffect(data, spellEffect);
-                        }
+                        Incorporate_SpellEffect(data, spellEffect);
                     }
                 }
             }
@@ -2826,59 +3229,61 @@ namespace ATT
             // ref. /att i:181538 -> SpellID 336988
             if (spellEffect.IsQuest())
             {
+                long questID = spellEffect.EffectMiscValue_0;
                 if (!data.TryGetValue("questID", out long existingQuestID))
                 {
                     // we only want to attach a questID to an Item if that Quest is only linked via 1 ItemEffect...
                     long spellID = spellEffect.SpellID;
-                    if (TryGetTypeDBObjectCollection(spellID, out List<ItemEffect> matchingItemEffects) && matchingItemEffects.Count > 1)
+                    if (WagoData.TryGetSpellAssociations(spellID, out List<ItemEffect> itemEffects) && itemEffects.Count > 1)
                     {
-                        LogDebug($"INFO: Ignored assignment of Item 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
+                        //LogDebug($"INFO: Ignored assignment of data 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
+                        // assign this data as a provider of the questID instead since this data may link to multiple questIDs
+                        Assign_QuestProviderFromData(questID, data);
                     }
                     else
                     {
-                        long questID = spellEffect.EffectMiscValue_0;
-                        using (IEnumerator<SpellEffect> spellEffectEnumerator = GetTypeDBObjects<SpellEffect>((se) =>
+                        // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
+                        // CRIEVE NOTE: We can't use the spellID Associations collection helper for this since there's an additional logic requirement.
+                        // I'd advise at some point maybe creating a cache class for Quest object types?
+                        if (WagoData.Enumerate<SpellEffect>((se) =>
                         {
-                            // quest spelleffect with either same spellID or same quest (should only be 1 if we aare going to apply it to an Item)
+                            // quest spelleffect with either same spellID or same quest (should only be 1 if we are going to apply it to an Item)
                             return se.IsQuest() && (se.SpellID == spellID || se.EffectMiscValue_0 == questID);
-                        }).GetEnumerator())
+                        }).Count() > 1)
                         {
-                            // we know there's 1 at least
-                            spellEffectEnumerator.MoveNext();
-                            // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
-                            if (spellEffectEnumerator.MoveNext())
+                            //LogDebug($"INFO: Ignored assignment of data 'questID' {questID} due to multiple SpellEffect use", data);
+                            // assign this data as a provider of the questID instead since this data links to multiple questIDs
+                            Assign_QuestProviderFromData(questID, data);
+                        }
+                        else
+                        {
+                            // we only want to attach a questID to an item if that Quest is only linked via 1 SpellEffect...
+                            // and not already Sourced as a Quest
+                            if (!TryGetSOURCED("questID", questID, out var sourcedQuests))
                             {
-                                LogDebug($"INFO: Ignored assignment of Item 'questID' {questID} due to multiple SpellEffect use", data);
+                                Objects.Merge(data, "questID", questID);
+                                LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
+                                Objects.MergeQuestData(data);
+                                TrackIncorporationData(data, "questID", questID);
+                            }
+                            else if (sourcedQuests.TryGetAnyMatchingGroup(q => q.ContainsKey("_unsorted"), out var matchedQuest))
+                            {
+                                LogWarn($"Item 'questID' {questID} is currently listed in Unsorted but should be directly linked on the trigger group. Remove Unsorted group so the QuestID is not duplicated", data);
+                                Objects.Merge(data, "questID", questID);
+                                Objects.MergeQuestData(data);
+                                TrackIncorporationData(data, "questID", questID);
                             }
                             else
                             {
-                                // we only want to attach a questID to an item if that Quest is only linked via 1 SpellEffect...
-                                // and not already Sourced as a Quest
-                                if (!TryGetSOURCED("questID", questID, out var sourcedQuests))
-                                {
-                                    Objects.Merge(data, "questID", questID);
-                                    LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
-                                    Objects.MergeQuestData(data);
-                                    TrackIncorporationData(data, "questID", questID);
-                                }
-                                else if (sourcedQuests.TryGetAnyMatchingGroup(q => q.ContainsKey("_unsorted"), out var matchedQuest))
-                                {
-                                    LogWarn($"Item 'questID' {questID} is currently listed in Unsorted but should be directly linked on the trigger group. Remove Unsorted group so the QuestID is not duplicated", data);
-                                    Objects.Merge(data, "questID", questID);
-                                    Objects.MergeQuestData(data);
-                                    TrackIncorporationData(data, "questID", questID);
-                                }
-                                else
-                                {
-                                    LogDebug($"INFO: Ignoring Item 'questID' {questID} since it is already Sourced", data);
-                                }
+                                LogDebug($"INFO: Ignoring Item 'questID' {questID} since it is already Sourced", data);
                             }
                         }
                     }
                 }
-                else
+                else if (questID != existingQuestID)
                 {
-                    LogDebug($"INFO: Ignored assignment of Item 'questID' {spellEffect.EffectMiscValue_0} due to existing 'questID' of {existingQuestID}", data);
+                    // additional spell effects that trigger additional questIDs, we will link the data as a provider of that additional questID's Source if possible
+                    Assign_QuestProviderFromData(questID, data);
                 }
             }
             if (spellEffect.IsLearnedTransmogSet())
@@ -2891,7 +3296,49 @@ namespace ATT
                     TrackIncorporationData(data, "tmogSetID", tmogSetID);
                     LogDebug($"INFO: Assigned 'tmogSetID' {tmogSetID}", data);
                 }
+                // this is repeated later for the same data, yes, but we need to ensure some things happen in the correct order
+                Incorporate_Ensemble(data);
                 Incorporate_Item_TransmogSetItems(data, tmogSetID);
+            }
+        }
+
+        private static void Assign_QuestProviderFromData(long questID, IDictionary<string, object> data)
+        {
+            // additional spell effects that trigger additional questIDs, we will link the data as a provider of that additional questID's Source if possible
+            if (TryGetSOURCED("questID", questID, out var sourcedQuests))
+            {
+                foreach (var sourcedQuestData in sourcedQuests)
+                {
+                    if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                    {
+                        string providerType = null;
+                        switch (objectData.ConvertedKey ?? objectData.ObjectType)
+                        {
+                            case "itemID":
+                                providerType = "i";
+                                break;
+                            case "npcID":
+                                providerType = "n";
+                                break;
+                            case "objectID":
+                                providerType = "o";
+                                break;
+                            case "spellID":
+                                providerType = "s";
+                                break;
+                        }
+
+                        if (providerType != null)
+                        {
+                            Objects.MergeField_provider(sourcedQuestData, new List<object> { providerType, objKeyValue });
+                            LogDebug($"INFO: Assigning {providerType}:{objKeyValue} as Provider of 'questID' {questID}", sourcedQuestData);
+                        }
+                        else
+                        {
+                            LogDebugWarn($"Unable to determine provider type for data", data);
+                        }
+                    }
+                }
             }
         }
 
@@ -2933,6 +3380,17 @@ namespace ATT
                     cloned = true;
                 }
             }
+            if (data.TryGetValue("_species", out object species))
+            {
+                DuplicateDataIntoGroups(data, species, "speciesID");
+                cloned = true;
+                // don't also nest to NPCs if we are nesting species, can warn to remove the NPCs
+                if (data.TryGetValue("_npcs", out object speciesNpcs))
+                {
+                    LogDebugWarn($"Removing _npcs {ToJSON(speciesNpcs)} since _species {ToJSON(species)} was prioritized instead", data);
+                    data.Remove("_npcs");
+                }
+            }
             if (data.TryGetValue("_npcs", out object npcs))
             {
                 // TODO: consolidate when creature/npc are the same... if that ever happens
@@ -2963,6 +3421,11 @@ namespace ATT
                 DuplicateDataIntoGroups(data, factions, "factionID");
                 cloned = true;
             }
+            if (data.TryGetValue("_maps", out object maps))
+            {
+                DuplicateDataIntoGroups(data, maps, "mapID");
+                cloned = true;
+            }
             if (data.TryGetValue("_encounter", out object encounterData))
             {
                 var encounterListData = Objects.CompressToList<long>(encounterData);
@@ -2973,6 +3436,11 @@ namespace ATT
                     DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                     encIndex += 2;
                 }
+                cloned = true;
+            }
+            if (data.TryGetValue("_exploration", out object exploration))
+            {
+                DuplicateDataIntoGroups(data, exploration, "explorationID");
                 cloned = true;
             }
             if (data.TryGetValue("_flightpath", out object flightpath))
@@ -3000,7 +3468,7 @@ namespace ATT
                     List<long> crs = new List<long>();
                     foreach (long npcID in npcObjs.AsTypedEnumerable<long>())
                     {
-                        if (!SOURCED["npcID"].ContainsKey(npcID))
+                        if (!TryGetSOURCED("npcID", npcID, out var npcSources))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
                             data.TryGetValue("achID", out long achID);
@@ -3024,7 +3492,7 @@ namespace ATT
                     {
                         if (!TryGetSOURCED("objectID", objectID, out var objectSources))
                         {
-                            // remove the creatures which are not sourced from being reported as failed to merge
+                            // remove the maps which are not sourced from being reported as failed to merge
                             data.TryGetValue("achID", out long achID);
                             LogWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Object {objectID}. Consider Sourcing Object");
                             Objects.TrackPostProcessMergeKey("objectID", objectID);
@@ -3056,8 +3524,12 @@ namespace ATT
                             {
                                 // ignored criteria which are being assigned a questID can be assigned as NYI so
                                 // that when triggered they can be associated with the proper activity
-                                data["u"] = 1;
-                                LogDebugWarn($"Criteria {achID}:{criteriaID} is ignored in UI and marked NYI to trigger reporting of proper Source", data);
+                                // assign NYI only if there are not additional _quests
+                                if (questObjs.Count == 1)
+                                {
+                                    data["u"] = 1;
+                                    LogDebugWarn($"Criteria {achID}:{criteriaID} is ignored in UI and marked NYI to trigger reporting of proper Source", data);
+                                }
                             }
                         }
                         else if (questRefs.All(d => d.ContainsKey("_unsorted")))
@@ -3155,6 +3627,22 @@ namespace ATT
                         }
                     }
                 }
+                // if the Criteria attempts to clone into a Species which is not Sourced, then ignore trying to move the criteria
+                //if (data.TryGetValue("_species", out List<object> speciesObjs))
+                //{
+                //    data.DataBreakPoint("criteriaID", 55537);
+                //    data.TryGetValue("achID", out long achID);
+                //    foreach (long speciesID in speciesObjs.AsTypedEnumerable<long>())
+                //    {
+                //        if (!TryGetSOURCED("speciesID", speciesID, out HashSet<IDictionary<string, object>> sourcedSpecies)
+                //            || sourcedSpecies.Any(s => !IsObtainableData(s)))
+                //        {
+                //            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested unsorted SpeciesID {speciesID}. Consider sourcing the SpeciesID");
+                //            Objects.TrackPostProcessMergeKey("speciesID", speciesID);
+                //            cloned = false;
+                //        }
+                //    }
+                //}
             }
 
             // Un-cloned data which is marked as ignored should allow itself to be removed from the list
@@ -3189,12 +3677,7 @@ namespace ATT
             if (!providers.TryConvert(out List<object> providersList))
                 return;
 
-            //if (data.TryGetValue("questID", out long questID) && questID == 13614)
-            //{
-
-            //}
-
-            bool hasNpcProvider = data.TryGetValue("qgs", out List<long> qgs);
+            bool hasQuestGivers = data.TryGetValue("qgs", out List<object> qgs) && qgs.Count > 0;
 
             int i = 0;
             while (i < providersList.Count)
@@ -3212,21 +3695,34 @@ namespace ATT
                 switch (pType)
                 {
                     case "i":
-                        if (hasNpcProvider || Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                        // These Item providers are ONLY referenced as a way to hook tooltips on that Item to show the root data
+                        if (hasQuestGivers || i > 0)
                         {
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             Items.MarkItemAsReferenced(pID);
+                            // Classic likes providers to be Items still due to the logic implementation
+                            if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                            {
+                                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objectData.ObjectType == "questID")
+                                {
+                                    // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                    Objects.Merge(data, "qis", pID);
+                                    providersList.RemoveAt(i);
+                                    i--;
+                                }
+                            }
                         }
+                        // These Item providers are referenced as an actual quest starter and SHOULD be sourced elsewhere in ATT for how they are obtained
                         else
                         {
                             var item = Items.GetNull(pID);
-                            // Crieve doesn't want this. Sometimes the only valid source is the provider, which is fine for quest items.
-                            // Quest Items which specifically are listed AFTER an NPC provider will now be considered referenced
-                            // Actual Quest-providing Items should still have a valid Source
-                            if (item == null || !Items.IsItemReferenced(pID))
+                            // Items which are the 'first' provider indicate that their acquisition is what 'provides' the data
+                            // and thus they must be Sourced to be properly visible for being acquired
+                            if (i == 0 && (item == null || !Items.IsItemReferenced(pID)))
                             {
                                 // The item isn't Sourced in Retail version
                                 // Holy... there are actually a ton of these. Will Debug Log for now until they are cleaned up...
+                                // There are currently about 1000 warnings due to unsourced Items of this nature
                                 LogDebugWarn($"Non-Sourced 'provider-item' {pID}", data);
                             }
                             else if (item.TryGetValue("u", out long u) && u == 1)
@@ -3240,8 +3736,6 @@ namespace ATT
                         break;
                     case "n":
                         NPCS_WITH_REFERENCES[(long)pID] = true;
-                        hasNpcProvider = true;
-                        MarkCustomHeaderAsRequired((long)pID);
                         break;
                     case "o":
                         OBJECTS_WITH_REFERENCES[(long)pID] = true;
@@ -3383,6 +3877,29 @@ namespace ATT
                     }
                 }
             }
+
+            // Items with Spells which are themselves directly Sourced as Recipe -- remove that spellID from the Item
+            if (data.TryGetValue("itemID", out long itemID) && data.TryGetValue("spellID", out long spellID))
+            {
+                //foreach (var spellSources in GetAllMatchingSOURCED("spellID", spellID))
+                //{
+                //    if (spellSources.Any(d => !d.ContainsKey("itemID")))
+                //    {
+                //        LogDebug($"INFO: Removed spellID {spellID} from Item {itemID} which is Sourced as a standalone Spell", data);
+                //        data.Remove("spellID");
+                //        break;
+                //    }
+                //}
+                foreach (var recipeSources in GetAllMatchingSOURCED("recipeID", spellID))
+                {
+                    if (recipeSources.Any(d => d.TryGetValue("recipeID", out long recipeID) && recipeID == spellID))
+                    {
+                        LogDebug($"INFO: Removed spellID {spellID} from Item {itemID} which is Sourced as a Recipe", data);
+                        data.Remove("spellID");
+                        break;
+                    }
+                }
+            }
         }
 
         private static void Consolidate_awprwp(IDictionary<string, object> data)
@@ -3391,7 +3908,7 @@ namespace ATT
                 return;
 
             // if this Thing is marked as removed in the past, but is currently available, drop the 'rwp' value
-            if (awp > rwp && awp <= CURRENT_RELEASE_VERSION)
+            if (awp > rwp && awp <= CURRENT_SHORT_RELEASE_VERSION)
             {
                 data.Remove("rwp");
                 LogDebug($"INFO: Removed RWP:{rwp} which is before AWP:{awp}", data);
@@ -3583,217 +4100,120 @@ namespace ATT
         /// </summary>
         private static bool CheckTimeline(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is Timeline timeline)
+            // Return early if no timeline exists on the Thing
+            if (!data.TryGetValue("timeline", out object timelineRef) || !(timelineRef is Timeline timeline))
+                return true;
+
+            // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
+            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+                LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+
+            // Get the most relevant timeline for the current release version
+            var adaptedTimeline = timeline.GetAdaptedTimeline(CURRENT_RELEASE_VERSION);
+
+            // If there are no relevant entries for this item, then it's not implemented yet and doesn't exist in the database
+            if (adaptedTimeline?.Entries == null)
+                return false;   // Invalid entry
+
+            // We don't want things that got deleted to be in the addon.
+            // NOTE: If it's not the last entry, that means it might have been readded later?
+            // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
+            // Deleting it from the actual database is actually expected for the real builds,
+            // so don't remove this. This is how I want it. Thanks!
+            if (adaptedTimeline.RemovedStatus == RemovedStatus.DELETED_FROM_GAME && !DebugMode)
+                return false;   // Invalid entry
+
+            // Undo NYI status if we're processing an unsorted category
+            if (adaptedTimeline.RemovedStatus == RemovedStatus.NEVER_IMPLEMENTED && ProcessingUnsortedCategory)
+                adaptedTimeline.RemovedStatus = 0;
+
+            // Set current entry for timeline
+            timeline.SetCurrentEntry(adaptedTimeline.GetCurrentEntry());
+
+            long addedPatch = 10000, removedPatch = 10000;
+
+            // Define added/removed patch based on entries in adapted timeline
+            foreach (var entry in adaptedTimeline.Entries)
             {
-                int removed = 0;
-                var lastIndex = timeline.EntryCount - 1;
-                long addedPatch = 10000;
-                long removedPatch = 10000;
-                // we will track if a Thing is specifically 're-added' and consider that a 'force timeline' automatically so the data
-                // doesn't need to be adjusted for every situation
-                bool readded = false;
-
-                // if the timeline has more than 1 Entry and the earliest entry is not an 'adding' change then warn
-                // still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data
-                var firstEntry = timeline.Entries[0];
-                if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && firstEntry.Version > 80000 && !firstEntry.AddedData)
+                switch (entry.Change)
                 {
-                    LogWarn($"Timeline contains '{firstEntry.Change}' change @ earliest patch -> {firstEntry}", data);
-                }
-
-                for (int index = 0; index < timeline.EntryCount; index++)
-                {
-                    var entry = timeline.Entries[index];
-                    switch (entry.Change)
-                    {
-                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
-                        case "created":
-                            {
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
-                                {
-                                    // Not implemented yet and doesn't exist in the database.
-                                    return false;    // Invalid
-                                }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
-                                {
-                                    //Console.Write("NOT CREATED: ");
-                                    //Console.WriteLine(ToJSON(data));
-                                    // Not implemented yet and doesn't exist in the database.
-                                    return false;    // Invalid
-                                }
-
-                                // Mark this as Never Implemented
-                                if (!ProcessingUnsortedCategory)
-                                    removed = 1;
-                                break;
-                            }
-                        case "added":
-                            {
-                                // If it hasn't happened yet, then do a thing.
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
-                                {
-                                    // If this is the first patch the thing was added...
-                                    if (index == 0)
-                                    {
-                                        // Not implemented yet and likely doesn't exist in the database.
-                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                        return false;    // Invalid
-                                    }
-                                }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
-                                {
-                                    //Console.Write("NOT ADDED: ");
-                                    //Console.WriteLine(ToJSON(data));
-                                    // If this is the first patch the thing was added...
-                                    if (index == 0)
-                                    {
-                                        // Not implemented yet and likely doesn't exist in the database.
-                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                        return false;    // Invalid
-                                    }
-                                }
-                                else
-                                {
-                                    if (removed == 2)
-                                    {
-                                        readded = true;
-                                    }
-                                    // Cancel the Removed tag.
-                                    removed = 0;
-                                }
-
-                                // Mark the most relevant patch this was added or comes back
-                                if (entry.Version <= CURRENT_SHORT_RELEASE_VERSION || removed > 0)
-                                {
-                                    timeline.CurrentEntry = index;
-                                    addedPatch = entry.Version;
-                                }
-                                break;
-                            }
-                        case "deleted":
-                            {
-                                // deleted only affects if the parse version has passed the timeline version
-                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                                {
-                                    // the last entry in the timeline is this deleted change
-                                    if (index == lastIndex)
-                                    {
-                                        // We don't want things that got deleted to be in the addon.
-                                        // NOTE: If it's not the last entry, that means it might have been readded later?
-                                        // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
-                                        // Deleting it from the actual database is actually expected for the real builds,
-                                        // so don't remove this. This is how I want it. Thanks!
-                                        if (!DebugMode) return false;    // Invalid
-                                    }
-
-                                    // just in case parsing with Debug and verifying in-game... we would want Deleted to show as Removed
-                                    removed = 4;
-                                    readded = false;
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
-                                }
-                                break;
-                            }
-                        case "removed":
-                            {
-                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                                {
-                                    removed = 2;
-                                    readded = false;
-                                    // Mark the most recent patch this was removed
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
-                                }
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000) removedPatch = entry.Version;
-                                }
-                                break;
-                            }
-                    }
-                }
-
-                // final removed type for the current parser patch
-                switch (removed)
-                {
-                    // Never Implemented
-                    case 1:
-                        data["u"] = 1;
+                    case ChangeType.ADDED:
+                        addedPatch = entry.Version;
                         break;
-                    case 4: // Deleted
-                    case 2: // Removed From Game
-                        data["u"] = 2;
-                        break;
-                    default:
-                        // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
-                        // as long as the Thing itself isn't specifically also marked with 'u' directly
-                        // as long as the Thing itself isn't an 'objective'
-                        if (data.ContainsAnyKey("u", "objectiveID"))
-                            break;
-
-                        // or inherited a 'timeline' to itself
-                        if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
-                            break;
-
-                        // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
-                        // if _forcetimeline is specified, then don't let parent's timeline override this timeline
-                        if (!data.ContainsKey("_forcetimeline") && parentData.TryGetValue("rwp", out long parentRwp) && parentRwp >= addedPatch)
-                        {
-                            if (readded)
-                            {
-                                LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider re-added", data);
-                                removedPatch = 10000;
-                            }
-                            else
-                            {
-                                LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider 'removed'", data);
-                                // also inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
-                                removedPatch = parentRwp;
-                            }
-                            break;
-                        }
-
-                        data["_u"] = 0;
+                    case ChangeType.DELETED:
+                    case ChangeType.REMOVED:
+                        removedPatch = entry.Version;
                         break;
                 }
+            }
 
-                // Mark when this thing was put into (or back into) the game.
-                if (addedPatch > 10000)
-                {
-                    if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
-                    {
-                        LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
-                    }
-                    data["awp"] = addedPatch; // "Added With Patch"
-                }
+            // Set unobtainable status on the data object
+            switch (adaptedTimeline.RemovedStatus)
+            {
+                case RemovedStatus.NEVER_IMPLEMENTED:
+                    data["u"] = 1;
+                    break;
+                case RemovedStatus.REMOVED_FROM_GAME:
+                case RemovedStatus.DELETED_FROM_GAME:
+                    data["u"] = 2;
+                    break;
+                default:
+                    // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
+                    // as long as the Thing itself isn't specifically also marked with 'u' directly
+                    // as long as the Thing itself isn't an 'objective'
+                    if (data.ContainsAnyKey("u", "objectiveID"))
+                        break;
 
-                // Future Unobtainable
-                if (removedPatch > 10000 && !readded)
-                {
-                    if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
+                    // or inherited a 'timeline' to itself
+                    if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
+                        break;
+
+                    // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
+                    // if _forcetimeline is specified, then don't let parent's timeline override this timeline
+                    if (!data.ContainsKey("_forcetimeline")
+                        && parentData.TryGetValue("rwp", out long parentRwp)
+                        && parentRwp >= addedPatch
+                        && (parentRwp < removedPatch || removedPatch == 10000))
                     {
-                        LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+                        LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider 'removed'", data);
+                        // inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
+                        removedPatch = parentRwp;
+
+                        break;
                     }
-                    data["rwp"] = removedPatch; // "Removed With Patch"
-                }
+
+                    data["_u"] = 0;
+                    break;
+            }
+
+            // Mark when this Thing was put into (or back into) the game
+            if (addedPatch > 10000)
+            {
+                if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
+                    LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+
+                data["awp"] = addedPatch; // "Added With Patch"
+            }
+
+            // Mark when this Thing was (or will be) removed from the game
+            if (removedPatch > 10000)
+            {
+                if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
+                    LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+
+                data["rwp"] = removedPatch; // "Removed With Patch"
             }
 
             return true;
         }
 
-        private static void ConvertObjectiveData(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        private static void ConvertObjectiveData(IDictionary<string, object> data)
         {
             // Grab any coords for this objective if existing
             data.TryGetValue("coords", out List<object> coords);
+
+            if (!data.TryGetValue("_parent", out IDictionary<string, object> parentData))
+                return;
 
             // Convert various 'providers' data into sub-groups on the parent data
             if (data.TryGetValue("providers", out List<object> providers))
@@ -3807,14 +4227,18 @@ namespace ATT
                     string pType = provider[0] as string;
                     switch (pType)
                     {
-                        // Items can simply be Sourced under the parent
+                        // Items can simply be referenced to the parent
                         case "i":
-                            providerData = new Dictionary<string, object> { { "itemID", pID } };
-                            Objects.Merge(parentData, "g", providerData);
+                            if (!TryGetSOURCED("itemID", pID, out _))
+                            {
+                                Items.MarkItemAsReferenced(pID);
+                                // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
+                                Objects.Merge(parentData, "qis", pID);
+                            }
                             break;
                         // Objects can be Sourced under the parent with attached coords if any
                         case "o":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("objectID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "objectID", pID } };
                                 if (coords != null)
@@ -3826,7 +4250,7 @@ namespace ATT
                             break;
                         // NPCs can be Sourced under the parent with attached coords if any
                         case "n":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("npcID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "npcID", pID } };
                                 if (coords != null)
@@ -3852,7 +4276,9 @@ namespace ATT
 
         private static bool IsObtainableData(IDictionary<string, object> data)
         {
-            return !data.TryGetValue("u", out long u) || u > 2;
+            return !data.ContainsKey("_unsorted")
+                && !data.ContainsKey("_nyi")
+                && (!data.TryGetValue("u", out long u) || u > 2);
         }
 
         /// <summary>
@@ -3989,7 +4415,7 @@ namespace ATT
         /// <param name="data"></param>
         private static void CheckRequireSkill(IDictionary<string, object> data)
         {
-            if (data.TryGetValue("requireSkill", out long requiredSkill))
+            if (!data.ContainsKey("_specificRequireSkill") && data.TryGetValue("requireSkill", out long requiredSkill))
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
                 {
@@ -4010,7 +4436,7 @@ namespace ATT
                             data.Remove("requireSkill");
                             break;
                         default:
-                            Log($"Missing Skill ID in Conversion Table: {requiredSkill}{Environment.NewLine}{ToJSON(data)}");
+                            LogDebugWarn($"Missing Skill ID in Conversion Table: {requiredSkill}", data);
                             break;
                     }
                 }
@@ -4042,13 +4468,15 @@ namespace ATT
                     switch (filter)
                     {
                         case Objects.Filters.Ignored:
-                        case Objects.Filters.Consumable:
                         case Objects.Filters.Faction:
                         case Objects.Filters.Toy:
                         case Objects.Filters.Quest:
                         case Objects.Filters.Recipe:
                         case Objects.Filters.Mount:
                             return;
+                        case Objects.Filters.Consumable:
+                            if (!data.ContainsKey("factionID")) return;
+                            break;
                     }
 
                     //LogDebugFormatted("ItemID:{0} Marked as Heirloom. Filter: {1}", itemID, filter.ToString());
@@ -4058,31 +4486,8 @@ namespace ATT
                         Log($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING SOURCE IDS?!");
                         Framework.WaitForUser();
                     }
-                    else if (data.ContainsKey("ignoreBonus"))
-                    {
-                        Log($"WTF WHY IS THIS HEIRLOOM {itemID} IGNORING BONUS IDS?!");
-                        Framework.WaitForUser();
-                    }
                 }
             }
-        }
-
-        private static long GetDataMinLvl(IDictionary<string, object> data)
-        {
-            // If the level of this object is less than the current minimum level, we can safely remove it.
-            if (data.TryGetValue("lvl", out object lvlRef))
-            {
-                if (lvlRef is List<object> lvls)
-                {
-                    return Convert.ToInt64(lvls[0]);
-                }
-                else
-                {
-                    return Convert.ToInt64(lvlRef);
-                }
-            }
-
-            return 1;
         }
 
         /// <summary>
@@ -4200,78 +4605,8 @@ namespace ATT
 
         private static decimal GetEncounterHash(long encounterID, long difficultyID)
         {
-            if (difficultyID < 0) return encounterID + ((Math.Abs(difficultyID) - 1000000) / 10000M);
-            // expecting difficultyID to be a positive, 100-999 value
-            return encounterID + difficultyID / 1000M;
-        }
-
-        internal static bool TryGetTypeDBObject<T>(long id, out T data)
-            where T : IDBType
-        {
-            if (TypeDB.TryGetValue(typeof(T).Name, out IDictionary<long, IDBType> db) &&
-                db.TryGetValue(id, out IDBType obj) &&
-                obj is T dbData)
-            {
-                data = dbData;
-                return true;
-            }
-
-            data = default;
-            return false;
-        }
-
-        private static IEnumerable<T> GetTypeDBObjects<T>(Func<T, bool> check)
-            where T : IDBType
-        {
-            if (!TypeDB.TryGetValue(typeof(T).Name, out IDictionary<long, IDBType> db)) yield break;
-
-            foreach (KeyValuePair<long, IDBType> kvp in db)
-            {
-                if ((kvp.Value is T dbData) && check(dbData))
-                {
-                    yield return dbData;
-                }
-            }
-        }
-
-        internal static bool TryGetTypeDBObjectChildren<T>(IDBType data, out List<T> children)
-            where T : IDBType
-        {
-            return TryGetTypeDBObjectCollection(data.ID, out children);
-        }
-
-        private static bool TryGetTypeDBObjectCollection<T>(long collectionID, out List<T> children, string subname = null)
-            where T : IDBType
-        {
-            if (TypeDB.TryGetValue(typeof(T).Name + (subname ?? nameof(TypeCollection<T>)), out var typeDBCollection) &&
-                typeDBCollection.TryGetValue(collectionID, out IDBType childCollection) &&
-                childCollection is TypeCollection<T> childTrees)
-            {
-                children = childTrees.Collection;
-                return true;
-            }
-
-            children = default;
-            return false;
-        }
-
-        private static IEnumerable<T> GetAllNestedTypeDBObjects<T>(T obj)
-            where T : IDBType
-        {
-            if (TryGetTypeDBObjectChildren(obj, out List<T> nested))
-            {
-                foreach (T child in nested)
-                {
-                    yield return child;
-
-                    foreach (T id in GetAllNestedTypeDBObjects(child))
-                    {
-                        yield return id;
-                    }
-                }
-            }
-
-            yield break;
+            // expecting abs(difficultyID/headerID) to be a positive, 1-99999 value
+            return encounterID + (Math.Abs(difficultyID) / 100000M);
         }
 
         private class TierList

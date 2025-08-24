@@ -280,3 +280,10 @@ i(0, 442989);	-- Imbued Mulch
 i(0, 442988);	-- Magical Mulch
 i(0, 438811);	-- Refine Herbs++
 i(0, 438812);	-- Refine Herbs+++
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- DISCOVERY ---
+i(0, 1250317);	-- Lush Phantom Bloom
+i(0, 1250314);	-- Phantom Bloom

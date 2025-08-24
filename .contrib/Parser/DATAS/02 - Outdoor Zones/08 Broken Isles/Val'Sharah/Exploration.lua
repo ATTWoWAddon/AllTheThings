@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			visit_exploration(8032,{coord={66.7,32.2,VALSHARAH}}),	-- Sylvan Vale
 			visit_exploration(8067,{coord={72.4,50.4,VALSHARAH}}),	-- Sundersong Glade
 			exploration(8333),	-- Tangled Cleft
-			exploration(7677),	-- Temple of Elune
+			visit_exploration(7677,{coord={52.4,58.0,VALSHARAH}}),	-- Temple of Elune
 			exploration(7572, {	-- Thas'talah
 				-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bradensbrook, it gets masked behind it.
 				["collectible"] = false,

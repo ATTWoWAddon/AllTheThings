@@ -88,6 +88,14 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(50329),	-- Icecrown-10 Normal Loot Token
 		})),
 
+		-- 3.4.2
+		-- #if ANYCLASSIC
+		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_4_2 } }, {
+			i(208157),	-- Bounty Satchel
+			i(206759),	-- Essence or Dust
+		})),
+		-- #endif
+
 		-- 3.x.x
 		n(P3xx, {
 			i(33565),	-- Uncommon Drop Certificate
@@ -186,6 +194,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 			i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 		})),
+
+		-- 5.5.0
+		-- #if ANYCLASSIC
+		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_5_0 } }, {
+			i(249899),	-- Coinpurse of Good Fortune (a way of giving beta testers quick Elder Charms of Good Fortune)
+		})),
+		-- #endif
 
 		-- 5.x.x
 		n(P5xx, {
@@ -286,6 +301,18 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(146799),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
 		})),
 
+		-- 7.3.2
+		expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_2 } }, {
+			i(155657),	-- Alor'idal Crystal Shard
+			i(154991),	-- Brawler's Footlocker
+		})),
+
+		-- 7.3.5
+		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_5 } }, {
+			i(156707),	-- Bret's Satchel of Helpful Goods
+			i(156718),	-- Stolen Ore \\ Stolen Azerite
+		})),
+
 		-- 7.x.x
 		n(P7xx, {
 			i(132250),	-- Unknown
@@ -356,6 +383,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(159693),	-- Set Keystone Map: Vault of the Wardens
 			i(158782),	-- Warchief's Prideful
 			i(158922),	-- Zany Zombiefied Raptor
+			i(159224),	-- Zuldazar Hearthstone
 		})),
 
 		-- 8.1.0
@@ -388,6 +416,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(168171),	-- [PH] Objective Reward
 			i(172381),	-- [PH] Objective Reward
 			i(168244),	-- [PH] Treasure Reward
+			i(172204),	-- Add Keystone Affix: Beguiling
 			i(170145),	-- Cache of Palace Treasures
 			i(164774),	-- Decrypted Message Module
 			i(169081),	-- Holographic Combat Entity Data
@@ -396,36 +425,93 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 8.2.5
 		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_5 } }, {
+			i(169389),	-- [DNT] Lookout's Key
 			i(170488),	-- [DNT] Torn Journal Page #7
 			i(170484),	-- [DNT] Torn Journal Page #14
 			i(170487),	-- [DNT] Torn Journal Page #23
 			i(171372),	-- Alterac Valley Mark of Honor
 			i(169295),	-- Dormant Vision Stone
+			i(171366),	-- Potion of Temporary Lucidity
+			i(171949),	-- Shadow Arrow
+			i(173535),	-- Service Record
 		})),
 
 		-- 8.3.0
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			i(174097),	-- [DNT] Corruptium \\ [PH] Corruptium
+			i(171321),	-- [DNT] REUSE ME [MTMM]
+			i(171322),	-- [DNT] REUSE ME [MTMM]
+			i(173876),	-- [PH] Tattered Cloth
 			i(174455),	-- Add Keystone Affix: Awakened
+			i(174184),	-- Bag of Cloth
+			i(174194),	-- Bag of Enchanting
+			i(174195),	-- Bag of Gems
+			i(174181),	-- Bag of Herbs
+			i(174183),	-- Bag of Leather
+			i(174182),	-- Bag of Ore
+			i(173159),	-- Cache of Distorted Dreams
 			i(169293),	-- Coalescing Visions
 			i(174838),	-- Collapsed Fusion Core
 			i(171347),	-- Corrupted Bone Fragment
 			i(174642),	-- Corrupted Ny'alotha Raid Item
+			i(172960),	-- Cracked Tushui Training Staff
 			i(174529),	-- Crate of Coalescing Visions
+			i(174039),	-- Crate of Cursed Mementos
+			i(173190),	-- Darkstar
+			i(167788),	-- Detoxifying Vial
+			i(173027),	-- Drum Mallet
 			i(174970),	-- Easeflower
+			i(173188),	-- Enveloping Nightstone
+			i(167198),	-- Gilnean Banners
 			i(174800),	-- HARDCODED - Corrupted Stats Placeholder
 			i(175019),	-- Holy Statuette
+			i(173734),	-- Mysterious Crate
+			i(173189),	-- Nightmare Resonator
 			i(174045),	-- Orb of Dark Portents
 			i(174049),	-- Orb of Darkest Madness
 			i(174047),	-- Orb of Darkest Visions
 			i(174048),	-- Orb of Madness
 			i(174046),	-- Orb of Visions
+			i(173934),	-- Partially Digested Noodles
+			i(167027),	-- Portable Clarity Beam
+			i(169490),	-- Relic of the Black Empire
 			i(174971),	-- Ripe Juicycrunch
+			i(171212),	-- Sanity Restoration Orb
+			i(167747),	-- Seeker's Music Box
+			i(175150),	-- Self-Shaping Amber
 			i(174663),	-- Set Keystone Map: Operation: Mechagon - Junkyard
 			i(174664),	-- Set Keystone Map: Operation: Mechagon - Workshop
-			i(175150),	-- Self-Shaping Amber
 			i(175018),	-- Shadowy Rune
+			i(174892),	-- Veteran 7th Legion Shocktroopers Contract
+			i(174901),	-- Veteran Ankoan Tidehunters Contract
+			i(174897),	-- Veteran Bloodfang Stalkers Contract
+			i(174900),	-- Veteran Dark Iron Shadowcasters Contract
+			i(174880),	-- Veteran Darkspear Shaman Contract
+			i(174894),	-- Veteran Darnassus Sentinel Contract
+			i(174893),	-- Veteran Dwarven Rifleman Contract
+			i(174896),	-- Veteran Exodar Peacekeeper Contract
+			i(174881),	-- Veteran Forsaken Dreadguards Contract
+			i(174895),	-- Veteran Gnomeregan Mechano-Tanks Contract
+			i(174883),	-- Veteran Goblin Sappers Contract
+			i(174885),	-- Veteran Highmountain Warbraves Contract
+			i(174884),	-- Veteran Huojin Monks Contract
+			i(174902),	-- Veteran Kul Tiran Marines Contract
+			i(173279),	-- Veteran Lightforged Dragoons Contract \\ Lightforged Dragoons Contract
+			i(174886),	-- Veteran Mag'har Outriders Contract
+			i(174903),	-- Veteran Mechagnome Spidercrawlers Contract
+			i(173284),	-- Veteran Nightborne Warpcaster Contract \\ Nightborne Warpcaster Contract
+			i(174878),	-- Veteran Shattered Hand Specialists Contract
+			i(174882),	-- Veteran Silvermoon Sorceress Contract
+			i(174879),	-- Veteran Tauren Earthshakers Contract
+			i(174898),	-- Veteran Tushui Monks Contract
+			i(174887),	-- Veteran Unshackled Mercenaries Contract
+			i(174899),	-- Veteran Veiled Riftblades Contract
+			i(174889),	-- Veteran Vulpera Sharpshooters Contract
+			i(174888),	-- Veteran Zandalari Wingriders Contract
+			i(173983),	-- Vulpera Satchel of Salvage
 			i(171334),	-- Void-Touched Cloth
 			i(175017),	-- Volatile Ember
+			i(172959),	-- Worn Leather Bracelet
 		})),
 
 		-- 8.x.x
@@ -472,7 +558,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178090),	-- Bastion Unique Loot
 			i(180736),	-- Blacksmith's Journal
 			i(175041),	-- Blinding Anima
-			i(175148),	-- Blooming Vale
+		 i(175148),	-- Blooming Vale
 			i(181281),	-- Boss 10 Lure
 			i(180007),	-- Brewfest Pretzel Bowl
 			i(180829),	-- Cache of Anima Tolls
@@ -510,7 +596,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(178112),	-- Death Venom Stinger
 			i(180811),	-- Deathfang's Favorite Skull
 			i(183122),	-- Death's Cloak
-			i(183695),	-- Decaying Dark Naaru Shard
 			i(180308),	-- Determined Stone Visage
 			i(181753),	-- Droman Aliothe Elated PH Reward
 			i(181755),	-- Droman Aliothe Happy PH Reward
@@ -607,7 +692,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(183190),	-- Oublion Cipher
 			i(183825),	-- Oversized Monocle
 			i(175042),	-- Path to Enlightenment
-			i(175035),	-- Patience is a Virtue
+		 i(175035),	-- Patience is a Virtue
 			i(181444),	-- Perk 24
 			i(181445),	-- Perk 25
 			i(181446),	-- Perk 26
@@ -652,7 +737,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(176058),	-- RSVP: Baroness Vashj
 			i(176094),	-- RSVP: Honor 6
 			i(176090),	-- RSVP: Lady Moonberry
-			i(176092),	-- RSVP: Mikanikos
+		 i(176092),	-- RSVP: Mikanikos
 			i(176091),	-- RSVP: The Countess
 			i(178687),	-- RSVP: VIP 17
 			i(178688),	-- RSVP: VIP 18
@@ -741,37 +826,37 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(181739),	-- Bag of Soul Ash
 			i(184482),	-- Blueprint: Phial of Serenity
 			i(184484),	-- Blueprint: Ring of Warding
-			i(184483),	-- Blueprint: Vial of Lichfrost
-			i(184663),	-- Building: Guardhouse
-			i(184575),	-- Byron Test Happy Fun Rock
-			i(184316),	-- Cache of Nathrian Treasures
-			i(184317),	-- Cache of Nathrian Treasures
-			i(184762),	-- Fragmented Sorrow
-			i(184684),	-- Grimoire of Knowledge
-			i(184685),	-- Grimoire of Knowledge
-			i(184686),	-- Grimoire of Knowledge
-			i(184687),	-- Grimoire of Knowledge
-			i(184688),	-- Grimoire of Knowledge
-			i(184608),	-- Korrath's Grimoire: Aleketh
-			i(184609),	-- Korrath's Grimoire: Belidir
-			i(184610),	-- Korrath's Grimoire: Gyadrek
-			i(184649),	-- Mawrat Cannon
-			i(184649),	-- Mawrat Cannon
-			i(184612),	-- Mawsworn Orders
-			i(184206),	-- Moth-Eaten Covenant Cloak
-			i(181868),	-- Murder Vacation
-			i(181366),	-- Necrostatic Charge
-			i(173929),	-- Perforated Skull
-			i(184153),	-- Polymorphic Polyhedron
-			i(184761),	-- Purified Misery
-			i(184760),	-- Quiescent Orb
-			i(184120),	-- Spare Brain
-			i(184121),	-- Spare Eye
-			i(184122),	-- Spare Foot
-			i(184119),	-- Spare Heart
-			i(184124),	-- Spare Stomach
-			i(184611),	-- Tormentor's Notes
-			i(184607),	-- Words of the Warden
+		 i(184483),	-- Blueprint: Vial of Lichfrost
+		 i(184663),	-- Building: Guardhouse
+		 i(184575),	-- Byron Test Happy Fun Rock
+		 i(184316),	-- Cache of Nathrian Treasures
+		 i(184317),	-- Cache of Nathrian Treasures
+		 i(184762),	-- Fragmented Sorrow
+		 i(184684),	-- Grimoire of Knowledge
+		 i(184685),	-- Grimoire of Knowledge
+		 i(184686),	-- Grimoire of Knowledge
+		 i(184687),	-- Grimoire of Knowledge
+		 i(184688),	-- Grimoire of Knowledge
+		 i(184608),	-- Korrath's Grimoire: Aleketh
+		 i(184609),	-- Korrath's Grimoire: Belidir
+		 i(184610),	-- Korrath's Grimoire: Gyadrek
+		 i(184649),	-- Mawrat Cannon
+		 i(184649),	-- Mawrat Cannon
+		 i(184612),	-- Mawsworn Orders
+		 i(184206),	-- Moth-Eaten Covenant Cloak
+		 i(181868),	-- Murder Vacation
+		 i(181366),	-- Necrostatic Charge
+		 i(173929),	-- Perforated Skull
+		 i(184153),	-- Polymorphic Polyhedron
+		 i(184761),	-- Purified Misery
+		 i(184760),	-- Quiescent Orb
+		 i(184120),	-- Spare Brain
+		 i(184121),	-- Spare Eye
+		 i(184122),	-- Spare Foot
+		 i(184119),	-- Spare Heart
+		 i(184124),	-- Spare Stomach
+		 i(184611),	-- Tormentor's Notes
+		 i(184607),	-- Words of the Warden
 		})),
 
 		-- 9.0.5
@@ -810,7 +895,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(186394),	-- Item Ehancement Matrix
 			i(186443),	-- Item Enhancement Kit
 			i(186389),	-- Jailer's Stygian Badge
-			i(184823),	-- Junk Mail
 			i(184824),	-- Junk Mail
 			i(184825),	-- Junk Mail
 			i(187434),	-- Lightseed Sapling
@@ -876,8 +960,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(189524),	-- Set Keystone Level: 31
 			i(189525),	-- Set Keystone Level: 32
 			i(189526),	-- Set Keystone Level: 33
-			i(189527),	-- Set Keystone Level: 34
-			i(189528),	-- Set Keystone Level: 35
+		 i(189527),	-- Set Keystone Level: 34
+		 i(189528),	-- Set Keystone Level: 35
 		})),
 
 		-- 9.2.0
@@ -962,7 +1046,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194719),	-- [DEPRECATED]Illusionary Coin
 			i(192600),	-- [DNT][PH] Meat
 			i(194110),	-- [PH] Dragon Rider's Honor
@@ -990,7 +1074,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(191192),	-- Assorted Parts
 			i(198141),	-- Astral Essence
 			i(192127),	-- Basilisk Eggs
-			i(198442),	-- Bogthwottle's Shrinky-Do
 			i(192560),	-- Bossy Storm Stuff
 			i(192078),	-- Bottled Putrescence
 			i(199690),	-- BWU Test Profession Accessory
@@ -1167,6 +1250,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(200937),	-- Flavorful Soup Bone
 			i(201423),	-- Hallowed Helm
 			i(200965),	-- Horde Dueling Flag
+			i(202103),	-- Immaculate Sac of Swog Treasures
 			i(201723),	-- Indecipherable Pages
 			i(193054),	-- Luxurious Loop
 			i(201200),	-- Makeshift Totem
@@ -1188,6 +1272,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192696),	-- Third Head's Eye
 			i(201223),	-- Thorn Bracelet
 			i(193447),	-- Thunder Thigh
+			i(202083),	-- Tyler's Test Box
+			i(202104),	-- Weighted Sac of Swog Treasures
 		})),
 
 		-- 10.0.5
@@ -1214,42 +1300,41 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(202678),	-- [DNT] Maruuk Centaur Item 04
 			i(202679),	-- [DNT] Maruuk Centaur Item 05
 			i(202680),	-- [DNT] Iskaara Tuskarr Item 01
-			i(202681),	-- [DNT] Iskaara Tuskarr Item 02
-			i(202682),	-- [DNT] Iskaara Tuskarr Item 03
-			i(202683),	-- [DNT] Iskaara Tuskarr Item 04
-			i(202684),	-- [DNT] Iskaara Tuskarr Item 05
-			i(202685),	-- [DNT] Valdrakken Accord Item 01
-			i(202686),	-- [DNT] Valdrakken Accord Item 02
-			i(202687),	-- [DNT] Valdrakken Accord Item 03
-			i(202688),	-- [DNT] Valdrakken Accord Item 04
-			i(202689),	-- [DNT] Valdrakken Accord Item 05
-			i(203693),	-- Ensemble: Cloudburst Regalia
-			i(203694),	-- Ensemble: Cyclonic Battlegear
-			i(203696),	-- Ensemble: Dust Devil Armor
-			i(203695),	-- Ensemble: Firestorm Armor
-			i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
-			i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
-			i(203213),	-- Ensemble: Lion's Heritage White Armor Set
-			i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
-			i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
-			i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
-			i(203465),	-- Draconic Artifact
-			i(203210),	-- Dragonscale Supply Box
-			i(203466),	-- Dragonscale Surplus Crate
-			i(204330),	-- Inert Primordial Fragments
-			i(203218),	-- Iskaara Supply Pouch
-			i(203221),	-- Maruuk Supply Sack
-			i(204310),	-- Mycelial Threads
-			i(204307),	-- Ornate Bronze Lockbox
-			i(204216),	-- Primordial Pulverizing
-			i(204008),	-- Prodigious Sand Stone
-			i(202202),	-- Revealing Mask
-			i(203730),	-- Rustic Winterpelt Supplies
-			i(204213),	-- Short-Range Teleport
-			i(202075),	-- Temp Currency
-			i(203657),	-- Toxin Antidote
-			i(203223),	-- Valdrakken Supply Coffe
-			i(203854),	-- Warblades of the Hakkari, Reborn
+		 i(202681),	-- [DNT] Iskaara Tuskarr Item 02
+		 i(202682),	-- [DNT] Iskaara Tuskarr Item 03
+		 i(202683),	-- [DNT] Iskaara Tuskarr Item 04
+		 i(202684),	-- [DNT] Iskaara Tuskarr Item 05
+		 i(202685),	-- [DNT] Valdrakken Accord Item 01
+		 i(202686),	-- [DNT] Valdrakken Accord Item 02
+		 i(202687),	-- [DNT] Valdrakken Accord Item 03
+		 i(202688),	-- [DNT] Valdrakken Accord Item 04
+		 i(202689),	-- [DNT] Valdrakken Accord Item 05
+		 i(203693),	-- Ensemble: Cloudburst Regalia
+		 i(203694),	-- Ensemble: Cyclonic Battlegear
+		 i(203696),	-- Ensemble: Dust Devil Armor
+		 i(203695),	-- Ensemble: Firestorm Armor
+		 i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
+		 i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
+		 i(203213),	-- Ensemble: Lion's Heritage White Armor Set
+		 i(203214),	-- Ensemble: Wolf's Heritage Blackrock Armor Set
+		 i(203215),	-- Ensemble: Wolf's Heritage Frostwolf Armor Set
+		 i(203216),	-- Ensemble: Wolf's Heritage Warsong Armor Set
+		 i(203465),	-- Draconic Artifact
+		 i(203210),	-- Dragonscale Supply Box
+		 i(203466),	-- Dragonscale Surplus Crate
+		 i(204330),	-- Inert Primordial Fragments
+		 i(203218),	-- Iskaara Supply Pouch
+		 i(203221),	-- Maruuk Supply Sack
+		 i(204310),	-- Mycelial Threads
+		 i(204307),	-- Ornate Bronze Lockbox
+		 i(204216),	-- Primordial Pulverizing
+		 i(204008),	-- Prodigious Sand Stone
+		 i(202202),	-- Revealing Mask
+		 i(203730),	-- Rustic Winterpelt Supplies
+		 i(204213),	-- Short-Range Teleport
+		 i(202075),	-- Temp Currency
+		 i(203223),	-- Valdrakken Supply Coffe
+		 i(203854),	-- Warblades of the Hakkari, Reborn
 		})),
 
 		-- 10.1.0
@@ -1510,7 +1595,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(225640),	-- Abyssal Lure
 			i(228415),	-- Adelgonn's Journal
 			i(225211),	-- Airship Operations Manual
@@ -1746,11 +1831,11 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(227698),	-- Torn Diary, Page 2
 			i(229223),	-- Two of Earth
 			i(229215),	-- Two of Frost
-			i(232631),	-- Wrapped Spear
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+			i(224258),	-- [DNT] Flower
 			i(234313),	-- [DNT] Item
 			i(234969),	-- Archivist Chassis
 			i(233331),	-- Aura of Zealotry
@@ -1770,7 +1855,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			i(235667),	-- Add Keystone Affix: Xal'atath's Bargain: Pulsar
 			i(232076),	-- Adventurer's Warbound Battlegear Drop
 			i(232069),	-- Adventurer's Warbound Boots
@@ -1786,24 +1871,70 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(232898),	-- Delver's Bounty
 			i(235535),	-- Discretely-Packaged Invention
 			i(230807),	-- Drill Hands
-			i(237260),	-- Glass of Daylight Dew
+			i(234390),	-- Gallagio Loyalty Rewards Card: Gold
+			i(234391),	-- Gallagio Loyalty Rewards Card: Platinum
+			i(234392),	-- Gallagio Loyalty Rewards Card: Black
+			i(234393),	-- Gallagio Loyalty Rewards Card: Diamond
+			i(234394),	-- Gallagio Loyalty Rewards Card: Legendary
 			i(228798),	-- Gob-Glider
-			i(237036),	-- Golden Valorstone
 			i(235559),	-- Hidden Trove
-			i(237259),	-- Kapow Kanapes
 			i(230017),	-- Master Blaster's Insignia
+			i(238207),	-- Nanny's Surge Dividend
 			i(234618),	-- Omega Oyster Outbreak
-			i(234620),	-- Perfectly Preserved Kaja'Classic Original Taste
 			i(231291),	-- Radar
 			i(235627),	-- Scribbles' Favorite Candies
 			i(230990),	-- Set Keystone Map: Operation: Floodgate
 			i(231787),	-- Vigilante's Disposable Falling Shadow Grapple Gun
+			i(236651),	-- Vince's Old Left Shoe
+			i(229810),	-- Vintage Kaja'Cola Can
 			i(236956),	-- Void-Touched Valorstone
+			i(235713),	-- Weird Sand
 			i(233054),	-- Wonder Ball
 			i(225766),	-- Zoom-Zoom Boosters
 			i(232929),	-- [DNT] Large Surge Chest
 			i(232928),	-- [DNT] Medium Surge Chest
 			i(232927),	-- [DNT] Small Surge Chest
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			i(237509),	-- Bottle of Invisibility
+			i(237508),	-- Can of Amps
+			i(235804),	-- Concentrated Potion of Celerity
+			i(235844),	-- Concentrated Potion of Revivification
+			i(235817),	-- Concentrated Potion of Swiftstrike
+			i(235837),	-- Concentrated Potion of Tenacity
+			i(235798),	-- Diluted Potion of Celerity
+			i(235842),	-- Diluted Potion of Revivification
+			i(235815),	-- Diluted Potion of Swiftstrike
+			i(235839),	-- Diluted Potion of Tenacity
+			i(235274),	-- Echo of N'zoth
+			i(235284),	-- Echo of N'zoth
+			i(235285),	-- Echo of N'zoth
+			i(243245),	-- Gears Grabbed
+			i(237510),	-- Goblet
+			i(243249),	-- Khaz Algar Adventurer Pack
+			i(240187),	-- Refulgent Crystal Shards
+			i(237511),	-- Vial of Healing
+			i(242318),	-- Wooden Orgrimmar Shield
+			i(236939),	-- [DNT] TEST
+			i(236958),	-- [NOT USED] Empty Mysterious Potion
+			i(236941),	-- [NOT USED] Mysterious Accessories Satchel
+			i(236943),	-- [NOT USED] Mysterious Accessories Satchel
+			i(236946),	-- [NOT USED] Mysterious Accessories Satchel
+			i(235631),	-- [NOT USED] Mysterious Large Satchel of Goodies
+			i(236940),	-- [NOT USED] Mysterious Outfitters Satchel
+			i(236942),	-- [NOT USED] Mysterious Outfitters Satchel
+			i(236945),	-- [NOT USED] Mysterious Outfitters Satchel
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			n(ARMOR, {
+				i(246114),	-- Catalyst Elixir
+				i(238740),	-- Distilled Knowledge of Timeways
+				i(246730),	-- Landro's Loot Box
+			}),
 		})),
 	}),
 }));

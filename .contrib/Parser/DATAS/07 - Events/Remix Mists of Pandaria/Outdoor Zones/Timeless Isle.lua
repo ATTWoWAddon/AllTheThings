@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(TIMELESS_ISLE, {
 		["icon"] = 294481,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(20001),		-- Elusive Foes: Timeless Isle (automated)
 				ach(19922),		-- Emperor Shaohao
@@ -58,7 +58,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19970,	-- Tour Timeless Isle
 						19922,	-- Emperor Shaohao
 					}},
-					["g"] = {
+					["groups"] = {
 						i(221818),	-- Astral Emperor's Serpentling (PET!)
 					},
 				}),
@@ -75,7 +75,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(79432, {	-- It's About Time
 					["provider"] = { "n", 216591 },	-- Eternus
 					["coord"] = { 24.5, 52.2, TIMELESS_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(213631),	-- Empty Spool of Temporal Threads (QI!)
 					},
 				}),
@@ -88,7 +88,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuests"] = { 79433 },	-- Seeking Expert Advice
 					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(213571),	-- Thread of Time (QI!)
 					},
 				}),
@@ -96,7 +96,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuests"] = { 79433 },	-- Seeking Expert Advice
 					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(215110),	-- Chronostablizer (QI!)
 					},
 				}),
@@ -107,7 +107,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(210333, {	-- Cloak of Infinite Potential
 							["bonusID"] = 10972,
 						}),
@@ -134,7 +134,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(VENDORS, {
 				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
 					["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(219222, {	-- Time-Lost Artifact
 							["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
 						}),

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 		n(VENDORS, {
 			n(98367, {	-- Tigrid the Charmer <Enchantress>
 				["coord"] = { 39.4, 42.6, STORMHEIM },
-				["g"] = sharedData({ ["cost"] = { { "i", 124440, 50 }, }, ["sourceQuest"] = 39904 }, {	-- 50xArkhana, Halls of Valor: Revenge of the Enchantress
+				["groups"] = sharedData({ ["cost"] = { { "i", 124440, 50 }, }, ["sourceQuest"] = 39904 }, {	-- 50xArkhana, Halls of Valor: Revenge of the Enchantress
 					i(128617),	-- Formula: Enchant Gloves - Legion Herbalism (RECIPE!)
 					i(128618),	-- Formula: Enchant Gloves - Legion Mining (RECIPE!)
 					i(128619),	-- Formula: Enchant Gloves - Legion Skinning (RECIPE!)
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			n(90866, {	-- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
 				["coord"] = { 33.6, 50.8, STORMHEIM },
-				["g"] = {
+				["groups"] = {
 					i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 						["isLimited"] = true,
 					}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 				["coord"] = { 60.2, 51.2, STORMHEIM },
-				["g"] = bubbleDownClassicRep(FACTION_VALAJAR, {
+				["groups"] = bubbleDownClassicRep(FACTION_VALAJAR, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					}, {	-- Revered
 						i(140225, {	-- Boon of the Salvager
 							["cost"] = 1275000,	-- 127,5g
-							["g"] = {
+							["groups"] = {
 								i(140225),	-- Salvaged Armor
 							},
 						}),

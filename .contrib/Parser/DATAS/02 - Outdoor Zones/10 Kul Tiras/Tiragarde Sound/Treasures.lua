@@ -28,14 +28,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(281397, {	-- Cutwater Treasure Chest
 				["questID"] = 50442,	-- Cutwater Treasure Chest
 				["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(155381),	-- Cutwater-Captain's Sapphire Ring
 				},
 			}),
 			o(297933, {	-- Dusty Songbook
 				["questID"] = 53410,	-- Shanty of Fruit Counting
 				["coord"] = { 43.50, 25.59, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(163715),	-- Forbidden Sea Shanty of Fruit Counting
 				},
 			}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
 				["crs"] = { 131453 },	-- Roan Berthold
 				["questID"] = 49963,
-				["g"] = {
+				["groups"] = {
 					i(155571),	-- Garyl's Riding Blanket
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297934, {	-- Scoundrel's Songbook
 				["questID"] = 53411,	-- Shanty of the Horse [Criteria]
 				["coord"] = { 73.20, 84.13, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(163719),	-- Forbidden Sea Shanty of the Horse
 				},
 			}),
@@ -67,6 +67,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 52870,	-- Scrimshaw Cache
 				["coord"] = { 72.6, 21.5, TIRAGARDE_SOUND },
 			}),
+			o_repeated(sharedData({	-- Treasure Chest
+				["isDaily"] = true,
+			},{
+				-- Objects
+				o(273900, {	-- Treasure Chest
+					["questID"] = 48593,
+					["coords"] = {
+						{ 83.3, 74.6, TIRAGARDE_SOUND },
+					},
+				}),
+				o(275071, {	-- Treasure Chest
+					["questID"] = 48618,
+					["coords"] = {
+						{ 88.0, 79.6, TIRAGARDE_SOUND },
+					},
+				}),
+			})),
 		}),
 	}),
 })));
@@ -75,7 +92,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(TIRAGARDE_SOUND, {
 			n(TREASURES, {
-				q(48593),	-- Tiragarde Sound repeatable random chest
 				q(48595),	-- Tiragarde Sound repeatable random chest
 				q(48596),	-- Tiragarde Sound repeatable random chest
 				q(48598),	-- Tiragarde Sound repeatable random chest
@@ -86,7 +102,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(48611),	-- Tiragarde Sound repeatable random chest
 				q(48612),	-- Tiragarde Sound repeatable random chest
 				q(48617),	-- Tiragarde Sound repeatable random chest
-				q(48618),	-- Tiragarde Sound repeatable random chest
 				q(48619),	-- Tiragarde Sound repeatable random chest
 				q(48621),	-- Tiragarde Sound repeatable random chest
 				q(50166),	-- Tiragarde Sound repeatable random chest

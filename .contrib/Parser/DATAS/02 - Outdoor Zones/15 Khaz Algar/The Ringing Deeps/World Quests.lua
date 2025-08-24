@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(WORLD_QUESTS, {
 			["sourceQuests"] = {
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82293, {	-- The Power of Friendship
 					["provider"] = { "n", 223444 },	-- Friendhaver Grem
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82523, {	-- Candle Kingbreaker
 					["coord"] = { 64.3, 33.6, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(223896),	-- Liberated Scrap (QI!)
 					},
 				}),
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83715, {	-- Claimed Salvage
 					["coord"] = { 59.7, 80.6, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(455204, {	-- Salvage Crate
 							i(226020),	-- Ancient Titan Salvage (QI!)
 						}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						ach(40630),	-- For the Collective
 						ach(40623),	-- I Only Need One Trip
 					},
@@ -67,14 +67,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82238, {	-- Lava Glob Lobbin'
 					["coord"] = { 52.2, 16.7, THE_RINGING_DEEPS },
-					["g"] = { i(222963) },	-- Lava Globs (QI!)
+					["groups"] = { i(222963) },	-- Lava Globs (QI!)
 				}),
 				q(83079, {	-- Mineral Buildup
 					["coord"] = { 45.8, 42.8, THE_RINGING_DEEPS },
 				}),
 				q(81656, {	-- Nothing to Waste
 					["coord"] = { 59.2, 52.2, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(419657, {	-- Abandoned Tools
 							i(219468),	-- Mining Tools (QI!)
 						}),
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83101, {	-- Reaching for Resources
 					["coord"] = { 55.2, 50.8, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						ach(40507),	-- Hanging Tight
 					},
 				}),
@@ -125,14 +125,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--
 				q(81691, {	-- Special Assignment: Shadows Below
 					["coord"] = { 68.2, 48.4, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						o(451222, {	-- Radiant Fuel Cache
 							["coord"] = { 67.3, 49.5, THE_RINGING_DEEPS },
-							["g"] = { i(224913) },	-- Radiant Fuel Cache (QI!)
+							["groups"] = { i(224913) },	-- Radiant Fuel Cache (QI!)
 						}),
 						o(446580, {	-- Radiant Fuel Cache
 							["coord"] = { 69.4, 49.9, THE_RINGING_DEEPS },
-							["g"] = { i(224941) },	-- Radiant Fuel Cache (QI!)
+							["groups"] = { i(224941) },	-- Radiant Fuel Cache (QI!)
 						}),
 						i(219522),	-- Radiant Fuel Crystal (QI!)
 						i(224292),	-- Radiant Fuel Shard (QI!)
@@ -150,9 +150,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
 			n(WORLD_QUESTS, {
@@ -160,4 +160,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

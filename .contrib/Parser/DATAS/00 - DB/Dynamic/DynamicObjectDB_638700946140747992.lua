@@ -1,17 +1,19 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[457181] = {
 		readable = "Interesting Notes",
 		model = 936413,
 		text = {
 			en = "Interesting Notes",
-			es = "[Interesting Notes]",
-			de = "[Interesting Notes]",
-			fr = "[Interesting Notes]",
-			it = "[Interesting Notes]",
-			pt = "[Interesting Notes]",
-			ru = "[Interesting Notes]",
-			ko = "[Interesting Notes]",
-			cn = "[Interesting Notes]",
+			de = "Interessante Notizen",
+			es = "Notas interesantes",
+			mx = "Notas interesantes",
+			fr = "Notes passionnantes",
+			it = "Appunti Interessanti",
+			pt = "Anotações Interessantes",
+			ru = "Интересные записи",
+			ko = "흥미로운 쪽지",
+			cn = "有趣的笔记",
+			tw = "有趣的筆記",
 		},
 	},
 })

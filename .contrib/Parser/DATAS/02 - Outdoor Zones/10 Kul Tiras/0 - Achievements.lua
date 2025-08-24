@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				12997,	-- The Pride of Kul Tiras
 			}},
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				crit(41138, {	-- A Nation United
 					["_quests"] = { 52151 },	-- A Nation United
 				}),
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				12479,	-- Zandalar Forever!
 				13466,	-- Tides of Vengeance (H)
 			}},
-			["g"] = {
+			["groups"] = {
 				a(i(168056)),	-- Ironclad Frostclaw (MOUNT!)
 			},
 		}),

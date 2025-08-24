@@ -5,7 +5,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.BFA, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		header(HEADERS.Achievement, 12544, {
 			-- Note: [As of October 13th, 2020 These became lvl 50 Boost]
-			["description"] = "These are gained by boosting a character to Level 120.  Each class has one default spec except Shamans, Druids and Hunters.",
+			["description"] = "These are gained by boosting a character to Level 120. Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 120,
 			["groups"] = {
 				cl(DEATHKNIGHT, {

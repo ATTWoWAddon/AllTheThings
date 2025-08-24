@@ -10,7 +10,7 @@ local GIEGER = n(162741, {	-- Gieger <Experimental Construct>
 	["isDaily"] = true,
 	["coord"] = { 31.4, 35.4, MALDRAXXUS },
 	["cr"] = 162815,	-- Final Thread
-	["g"] = {
+	["groups"] = {
 		i(182080),	-- Predatory Plagueroc (MOUNT!)
 		AMALGAMTED_FORWORNS_JOURNAL,
 		i(183754),	-- Stitchflesh's Design Notes
@@ -22,7 +22,7 @@ local SABRIEL = n(168147, {	-- Sabriel the Bonecleaver
 	["questID"] = 58784,
 	["coord"] = { 50.4, 48.2, MALDRAXXUS },
 	["crs"] = { 168148 },	-- Drolkrad
-	["g"] = {
+	["groups"] = {
 		i(181815),	-- Armored Bonehoof Tauralus (MOUNT!)
 		TEMPERED_BONEPLASTE_WAISTGUARD,
 	},
@@ -32,12 +32,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641396,
-			["g"] = {
+			["groups"] = {
 				n(ANIMA_CONDUCTOR, {
 					["icon"] = 3854015,
-					["g"] = sharedData({ ["icon"] = 3854015 }, {
+					["groups"] = sharedData({ ["icon"] = 3854015 }, {
 						n(REWARDS, {
-							["g"] = {
+							["groups"] = {
 								currency(GRATEFUL, {
 									["description"] = "Grateful Offerings can be collected once you have unlocked the Anima Conductor in for your covenant.\n Once unlocked, you can loot them from Covenant Callings (higher Conductor => more Offerings), Patterns Within Patterns Weekly Quest in Zereth Morthis and from special rares & treasures, based on the channeling of your Anima Conductor.",
 								}),
@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["questID"] = 61647,
 									["isDaily"] = true,
 									["coord"] = { 38.0, 65.6, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										o(1278968766, {	-- Rune -- TODO: proper objectID?
 											["questID"] = 61648,
 											["isDaily"] = true,
@@ -91,14 +91,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(62403, {	-- Boared to Death
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(183620),	-- Bloody Tusks (QI!)
 									},
 								}),
 								q(62390, {	-- Body Count
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(183600),	-- Abomination Parts (QI!)
 									},
 								}),
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(58211, {	-- Pumped Up
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(173892),	-- Salvaged Gear (QI!)
 										i(173881),	-- Sludge Pump (QI!)
 									},
@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(58260, {	-- Queens and Future Kings
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(173942),	-- Marrowbore Larva (QI!)
 									},
 								}),
@@ -132,7 +132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(60482, {	-- See With My Eyes
 									["provider"] = { "n", 168675 },	-- Varzisk Lidless
 									["coord"] = { 51.2, 16.8, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(178992),	-- Hidden Weapons (QI!)
 										i(178993),	-- Sightless Vision (QI!)
 									},
@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								q(62362, {	-- Volatile Reactions
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(183436),	-- Animated Catalyst (QI!)
 									},
 								}),
@@ -152,7 +152,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
 								q(61699, {	-- Not Much to Goo On
 									["coord"] = { 66, 66, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(177844),	-- Plague Sample (QI!)
 									},
 								}),
@@ -165,8 +165,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(RARES, {
 								q(58454, {	-- Spoiling For A Fight
 									["provider"] = { "n", 159830 },	-- Au'narim
-									["isDaily"] = true,
 									["coord"] = { 53.6, 47.6, MALDRAXXUS },
+									["isDaily"] = true,
 								}),
 								SABRIEL,
 							}),

@@ -25,7 +25,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			o(316863, {	-- Lost Zandalari Relic
 				["coord"] = { 46.6, 29.9, DAZARALOR },
-				["g"] = { i(166506) },	-- Clump of Broken Loa Idols
+				["groups"] = {
+					i(166506, {	-- Clump of Broken Loa Idols
+						i(166507),	-- Jani's First Offering (QS!)
+					}),
+				},
 			}),
 			o(276735, {	-- Offerings of the Chosen
 				["questID"] = 48938,
@@ -101,6 +105,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 56.8, 19.4, VOLDUN },
 					},
 				}),
+				o(281904, {	-- Treasure Chest
+					["questID"] = 50727,
+					["coords"] = {
+						{ 40.2, 37.2, ZULDAZAR },
+						{ 42.1, 37.2, ZULDAZAR },
+					},
+				}),
 			}))
 		}),
 	}),
@@ -117,7 +128,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(50721),	-- Zuldazar repeatable random chest
 				q(50723),	-- Zuldazar repeatable random chest
 				q(50726),	-- Zuldazar repeatable random chest
-				q(50727),	-- Zuldazar repeatable random chest
 				q(50728),	-- Zuldazar repeatable random chest
 				q(51346),	-- Zuldazar repeatable random chest
 				q(50729),	-- looted a chest in Zuldazar at 58.6, 81.1

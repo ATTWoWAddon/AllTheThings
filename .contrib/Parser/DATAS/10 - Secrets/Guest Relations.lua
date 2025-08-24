@@ -32,7 +32,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					40872,	-- I Saved the Party and All I Got Was This Lousy Hat
 					40979,	-- No Crate Left Behind
 				}},
-				["g"] = {
+				["groups"] = {
 					title(571),	-- Detective <Name> (TITLE!)
 				},
 			}),
@@ -44,19 +44,19 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84144, {	-- Tat Big Meanie
-				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84143,	-- Lost and Busy
+				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					o(456767, {	-- Red Hair
 						["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 						["coord"] = { 62.1, 51.7, TANARIS },
-						["g"] = { i(227364) },	-- Red Hair (QI!)
+						["groups"] = { i(227364) },	-- Red Hair (QI!)
 					}),
 					o(455310, {	-- Hear Historic Tales at the Storyteller Stage!
 						["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 						["coord"] = { 62.0, 51.5, TANARIS },
-						["g"] = { i(227363) },	-- Hear Historic Tales at the Storyteller Stage! (QI!)
+						["groups"] = { i(227363) },	-- Hear Historic Tales at the Storyteller Stage! (QI!)
 					}),
 					n(226775, {	-- Ratts <Former Event Coordinator>
 						["coord"] = { 64.0, 51.7, TANARIS },
@@ -64,55 +64,55 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(456820, {	-- Strange Torch
 						["provider"] = { "i", 207730 },	-- Idol of Ohn'ahra
 						["coord"] = { 63.7, 47.8, TANARIS },
-						["g"] = { i(227443) },	-- Strange Torch (QI!)
+						["groups"] = { i(227443) },	-- Strange Torch (QI!)
 					}),
 					i(207730),	-- Idol of Ohn'ahra
 				},
 			}),
 			q(84419, {	-- To da Ruins!
-				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84144,	-- Tat Big Meanie
+				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
 			}),
 			q(84393, {	-- Da Stick of Revealing
-				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84419,	-- To da Ruins!
+				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 35.1, 78.2, TANARIS },
-				["g"] = { i(208092) },	-- Torch of Pyrreth
+				["groups"] = { i(208092) },	-- Torch of Pyrreth
 			}),
 			q(84363, {	-- Tweasure Hunt
 				["description"] = "Activate Torch of Pyrreth at each of the Dig Sites.",
-				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84393,	-- Da Stick of Revealing
+				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 37.2, 78.9, TANARIS },
-				["g"] = {
+				["groups"] = {
 					o(459333, {	-- Jeweled Eye
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 40.8, 70.5, TANARIS },
-						["g"] = { i(227785) },	-- Jeweled Eye (QI!)
+						["groups"] = { i(227785) },	-- Jeweled Eye (QI!)
 					}),
 					n(228810, {	-- Tanaris Sandworm
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 42.2, 72.0, TANARIS },
-						["g"] = { i(227790) },	-- Cool Guts (QI!)
+						["groups"] = { i(227790) },	-- Cool Guts (QI!)
 					}),
 					o(459368, {	-- Half-Burried Chest
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 45.0, 64.6, TANARIS },
-						["g"] = { i(227775) },	-- Golden Chalice (QI!)
+						["groups"] = { i(227775) },	-- Golden Chalice (QI!)
 					}),
 					n(228791, {	-- Ancient Statue
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 52.3, 45.3, TANARIS },
-						["g"] = { i(227777) },	-- Fragment of an Ancient Statue (QI!)
+						["groups"] = { i(227777) },	-- Fragment of an Ancient Statue (QI!)
 					}),
 				},
 			}),
 			q(84521, {	-- Thoughtful Pursuits
-				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["sourceQuest"] = 84363,	-- Tweasure Hunt
+				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["coord"] = { 63.3, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(228617),	-- Benatauk's Clue Book (QI!)
 					i(228618, {	-- Benatauk's Crystal Ocular Lenses (QI!)
 						["coord"] = { 64.2, 50.0, TANARIS },
@@ -130,10 +130,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84868, {	-- A Whiff of Help
-				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["sourceQuest"] = 84521,	-- Thoughtful Pursuits
+				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["coord"] = { 63.3, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					hqt(83831, {	-- Triggered on turn in of (84868) A Whiff of Help. Unlocks secret quests accountwide.
 						["name"] = "Complete the Guest Relations tutorial quest chain."
 					}),
@@ -146,7 +146,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 84868,	-- A Whiff of Help (Quest Accepted)
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["timeline"] = { "removed 11.0.7.58238" },
-				["g"] = {
+				["groups"] = {
 					i(229351),	-- Spiritual Incense
 					i(229375),	-- Neural Enlarger
 				},
@@ -154,7 +154,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			n(230310, {	-- Pointless Treasure Salesman
 				["description"] = "Inside the Booty Bay goblin statue behind chests in the back.",
 				["coord"] = { 33.6, 63.5, THE_CAPE_OF_STRANGLETHORN },
-				["g"] = {
+				["groups"] = {
 					i(228996, {	-- Relic of Crystal Connections
 						["cost"] = {
 							{ "i", 228995, 1 },	-- Golden Muffin
@@ -173,7 +173,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					-- South stop
 					{ 65.8, 48.2, AZSUNA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(228986, {	-- Aesthetician's Coupon Book
 						["cost"] = 5000000,	-- 500g
 					}),
@@ -210,10 +210,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			q(84237, {	-- The "Great" Detective
 				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n3. Talk to all nearby NPCs.\n4. Talk to Athelton Jones to complete the quest requirements.",
-				["provider"] = { "n", 226796 },	-- Athektin Jones
 				["sourceQuest"] = 84236,	-- The Great Detective
+				["provider"] = { "n", 226796 },	-- Athektin Jones
 				["coord"] = { 63.9, 51.7, TANARIS },
-				["g"] = {
+				["groups"] = {
 					n(226805, {	-- Ellanoir
 						["coord"] = { 63.8, 51.0, TANARIS },
 					}),
@@ -249,7 +249,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(227551),	-- Note from Rexxar (QI!)
 					o(457025, {	-- Pre-Calibrated Goblin Transport Vessel
 						["coord"] = { 68.0, 40.8, TANARIS },
@@ -265,21 +265,21 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["provider"] = { "n", 226952 },	-- Rexxar
 				["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 				["crs"] = { 228550 },	-- Rexxar
-				["g"] = {
+				["groups"] = {
 					i(227664),	-- Spirit's Whistle (QI!)
 					o(457156, {	-- Torn Note
 						["coord"] = { 85.9, 34.0, BOREAN_TUNDRA },
-						["g"] = { i(227665) },	-- Torn Diary, Page 4 (QI!)
+						["groups"] = { i(227665) },	-- Torn Diary, Page 4 (QI!)
 					}),
 					o(457161, {	-- Torn Note
 						["description"] = "Use Torch of Pyrreth to reveal the page.",
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 85.9, 33.9, BOREAN_TUNDRA },
-						["g"] = { i(227672) },	-- Torn Diary, Page 7 (QI!)
+						["groups"] = { i(227672) },	-- Torn Diary, Page 7 (QI!)
 					}),
 					o(457160, {	-- Torn Note
 						["coord"] = { 88.1, 34.6, BOREAN_TUNDRA },
-						["g"] = { i(227671) },	-- Torn Diary, Page 6 (QI!)
+						["groups"] = { i(227671) },	-- Torn Diary, Page 6 (QI!)
 					}),
 					o(457197, {	-- Mounted Spyglass
 						["coord"] = { 49.7, 36.0, SHOLAZAR_BASIN },
@@ -290,22 +290,22 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84334, {	-- Warn the Detective
+				["sourceQuest"] = 84296,	-- The Trail's Gone Cold
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 				},
-				["sourceQuest"] = 84296,	-- The Trail's Gone Cold
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84336, {	-- Spot The Difference
 				["description"] = "Speak to Hemet, Leeroy, and Addie to suss out the detectives' stories, then accuse one. Chase the intruder east of Bootlegger Outpost and kill him.",
+				["sourceQuest"] = 84334,	-- Warn the Detective
 				["qgs"] = {
 					226796,	-- Athelton Jones
 					228661,	-- Athelton Jones (!)
 				},
-				["sourceQuest"] = 84334,	-- Warn the Detective
 				["coord"] = { 61.0, 50.6, TANARIS },
-				["g"] = {
+				["groups"] = {
 					n(227731, {	-- Addie Fizzlebog
 						["coord"] = { 63.5, 51.7, TANARIS },
 					}),
@@ -338,11 +338,11 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["allianceQuestData"] = q(84588, {	-- Operation Toy Rescue [A]
 					["description"] = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Kenshi in Boralus, find the Ball of Yarn in the park, and talk to Kenshi again.",
 					["sourceQuest"] = 84563,	-- Toy Trouble [A]
-					["g"] = {
+					["groups"] = {
 						i(229990),	-- My Journal: Operation Toy Rescue (QI!)
 						n(142044, {	-- Kenshi
 							["coord"] = { 54.0, 72.8, BORALUS },
-							["g"] = {
+							["groups"] = {
 								i(232363, {	-- Half-Eaten Mouse
 									["cost"] = {{ "i", 232362, 1 }},	-- Deluxe Tuna
 								}),
@@ -351,47 +351,47 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						o(467060, {	-- Ball of Yarn
 							["description"] = "Near a fence and tree in Boralus Park.",
 							["coord"] = { 42.1, 75.1, BORALUS },
-							["g"] = { i(229164)	},	-- Ball of Yarn (QI!)
+							["groups"] = { i(229164)	},	-- Ball of Yarn (QI!)
 						}),
 					},
 				}),
 					["hordeQuestData"] = q(85025, {	-- Operation Toy Rescue [H]
 					["description"] = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Nuts in Dazar'Alor, follow the fur sheddings to a Plush Toy, and give it to him.",
 					["sourceQuest"] = 85024,	-- Toy Trouble [H]
-					["g"] = {
+					["groups"] = {
 						i(229991),	-- My Journal: Operation Toy Rescue (QI!)
 						n(54227, {	-- Nuts
 							["coord"] = { 56.3, 31.7, DAZARALOR },
 						}),
 						o(470229, {	-- Plush Toy
 							["coord"] = { 56.4, 21.3, DAZARALOR },
-							["g"] = { i(229908) },	-- Plush Toy (QI!)
+							["groups"] = { i(229908) },	-- Plush Toy (QI!)
 						}),
 					},
 				}),
 				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					n(229847, {	-- Yennu
 						["coord"] = { 13.4, 48.9, THE_AZURE_SPAN },
 					}),
 					o(465234, {	-- Missing Page from Yennu's Snackbook
 						["description"] = "Inside a cart in Dragonscale Basecamp.",
 						["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
-						["g"] = { i(228791) },	-- Missing Page from Yennu's Snackbook (QI!)
+						["groups"] = { i(228791) },	-- Missing Page from Yennu's Snackbook (QI!)
 					}),
 					o(465277, {	-- Mound of Dirt
 						["description"] = "By a river by the eastern side of Maruukai.",
 						["coord"] = { 62.0, 37.5, OHNAHRAN_PLAINS },
-						["g"] = { i(228795) },	-- Yennu's Toy Ball (QI!)
+						["groups"] = { i(228795) },	-- Yennu's Toy Ball (QI!)
 					}),
 				},
 			},
 			{	-- The Final Toy
-					["allianceQuestData"] = q(84755, {	-- The Final Toy [A]
+				["allianceQuestData"] = q(84755, {	-- The Final Toy [A]
 					["sourceQuest"] = 84588,	-- Operation Toy Rescue [A]
 				}),
-					["hordeQuestData"] = q(85042, {	-- The Final Toy [H]
+				["hordeQuestData"] = q(85042, {	-- The Final Toy [H]
 					["sourceQuest"] = 85025,	-- Operation Toy Rescue [H]
 				}),
 				["qgs"] = {
@@ -402,35 +402,35 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			},
 			{	-- The Toy Thief
-					["allianceQuestData"] = q(84756, {	-- The Toy Thief [A]
-					["sourceQuest"] = 84755,	-- The Final Toy [A]
+				["allianceQuestData"] = q(84756, {	-- The Toy Thief [A]
 					["description"] = "Talk to Maru, suspect a dog, then visit Urban Planner Volrath in Boralus.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
-						["g"] = {
+					["sourceQuest"] = 84755,	-- The Final Toy [A]
+						["groups"] = {
 							i(229992),	-- My Journal: Operation Toy Rescue (QI!)
 							n(142178, {	-- Urban Planner Volrath
 								["coord"] = { 43.2, 73.7, BORALUS },
-								["g"] = { i(232364) },	-- Bakar Sketch (QI!)
+								["groups"] = { i(232364) },	-- Bakar Sketch (QI!)
 							}),
 						},
 				}),
-					["hordeQuestData"] = q(85043, {	-- The Toy Thief [H]
-					["sourceQuest"] = 85042,	-- The Final Toy [H]
+				["hordeQuestData"] = q(85043, {	-- The Toy Thief [H]
 					["description"] = "Talk to Maru, suspect a dog, then visit Matan in Dazar'alor.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
-						["g"] = {
+					["sourceQuest"] = 85042,	-- The Final Toy [H]
+						["groups"] = {
 							i(229997),	-- My Journal: Operation Toy Rescue (QI!)
 							o(472068, {	-- Bakar Sketch
 								["coord"] = { 57.0, 22.2, DAZARALOR },
-								["g"] = { i(229196) },	-- Bakar Sketch (QI!)
+								["groups"] = { i(229196) },	-- Bakar Sketch (QI!)
 							}),
 						},
 				}),
 				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					o(467293, {	-- Chew Toy
 						["description"] = "Atop the high mountain peak behind Maruukai.",
 						["coord"] = { 57.9, 31.7, OHNAHRAN_PLAINS },
-						["g"] = { i(229350) },	-- Chew Toy (QI!)
+						["groups"] = { i(229350) },	-- Chew Toy (QI!)
 					}),
 					o(467305, {	-- Toy Box
 						["description"] = "Place the Chew Toy inside the Toy Box and then hide in the nearby bush.\nAfter Bakar Pup takes the toy, follow him to the cave.",
@@ -439,20 +439,20 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(467329, {	-- Maru's Toy
 						["description"] = "Inside a cave near Teerakai",
 						["coord"] = { 38.8, 56.0, OHNAHRAN_PLAINS },
-						["g"] = { i(229358)	},	-- Miniature Tuskarr Boat (QI!)
+						["groups"] = { i(229358)	},	-- Miniature Tuskarr Boat (QI!)
 					}),
 				},
 			},
 			-- Chapter 3
 			q(85047, {	-- A Pirate Predicament
+				["sourceQuests"] = {
+					84756,	-- The Toy Thief [A]
+					85043,	-- The Toy Thief [H]
+				},
 				["qgs"] = {
 					232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator, and Temporary Service Agent>
-				},
-				["sourceQuests"] = {
-					84756,	-- The Toy Thief [A]
-					85043,	-- The Toy Thief [H]
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
@@ -461,7 +461,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 85047,	-- A Pirate Predicament
 				["provider"] = { "n", 231413 },	-- Bonenose
 				["coord"] = { 60.9, 44.7, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(231263),	-- My Journal: The Case of the Superstitious and Hungry Pirates (QI!)
 					n(2664, {	-- Kelsey Yance <Cook>
 						["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
@@ -472,7 +472,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(473934, {	-- Property of Cooktholomew
 						["description"] = "On the bottom floor of a building in Booty Bay by some bunks.",
 						["coord"] = { 42.9, 72.9, THE_CAPE_OF_STRANGLETHORN },
-						["g"] = { i(229968) },	-- Boonful Banquet (QI!)
+						["groups"] = { i(229968) },	-- Boonful Banquet (QI!)
 					}),
 				},
 			}),
@@ -500,7 +500,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ "i", 2452, 2 },	-- Swiftthistle
 					{ "i", 74846, 2 },	-- Witchberries
 				},
-				["g"] = {
+				["groups"] = {
 					i(229968),	-- Boonful Banquet (QI!)
 					i(230235),	-- Rosa's Notes on Boonful Banquet (QI!)
 					i(231263),	-- The Case of the Superstitious and Hungry Pirates (QI!)
@@ -528,7 +528,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 85475,	-- Secret in the Sands
 				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(231808),	-- Ancient Treasure Notes (QI!)
 					o(476815, {	-- Ancient Treasure Note
 						["description"] = "In the back right of the Ruins of Uldum in the Valley of the Watchers.",
@@ -564,7 +564,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 85502,	-- Festive Reflections
 				["provider"] = { "n", 226796 },	-- Athelton Jones
 				["coord"] = { 61.0, 50.7, TANARIS },
-				["g"] = {
+				["groups"] = {
 					n(233000, {	-- Big Kinook
 						["description"] = "By the mole machine.",
 						["coord"] = { 63.0, 49.9, TANARIS },
@@ -605,7 +605,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					230838,	-- Alphonse Constant <Apprentice Cartomancer>
 				},
-				["g"] = {
+				["groups"] = {
 					i(229219),	-- Six of Frost
 				},
 			}),
@@ -617,51 +617,51 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ "i", 229219 },	-- Six of Frost
 				},
 				["coord"] = { 63.9, 52.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					o(467083, {	-- Darkmoon Fortune Card
 						["description"] = "Under a bench near the Story Time stage.",
 						["coord"] = { 63.97, 51.51, TANARIS },
-						["g"] = { i(229207) },	-- Two of Fire (QI!)
+						["groups"] = { i(229207) },	-- Two of Fire (QI!)
 					}),
 					o(467336, {	-- Darkmoon Fortune Card
 						["description"] = "By two barrels near the Story Time seating.",
 						["coord"] = { 63.77, 51.91, TANARIS },
-						["g"] = { i(229210) },	-- Five of Fire (QI!)
+						["groups"] = { i(229210) },	-- Five of Fire (QI!)
 					}),
 					o(467337, {	-- Darkmoon Fortune Card
 						["description"] = "To the right of Leeroy's food stall.",
 						["coord"] = { 63.27, 52.26, TANARIS },
-						["g"] = { i(229211) },	-- Six of Fire (QI!)
+						["groups"] = { i(229211) },	-- Six of Fire (QI!)
 					}),
 					o(467339, {	-- Darkmoon Fortune Card
 						["description"] = "Behind Brivelthwerp near the ice rink.",
 						["coord"] = { 61.91, 51.61, TANARIS },
-						["g"] = { i(229213) },	-- Eight of Fire (QI!)
+						["groups"] = { i(229213) },	-- Eight of Fire (QI!)
 					}),
 					o(467351, {	-- Darkmoon Fortune Card
 						["description"] = "Between two caravan carts by the front of the grounds.",
 						["coord"] = { 61.19, 50.88, TANARIS },
-						["g"] = { i(229225) },	-- Four of Earth (QI!)
+						["groups"] = { i(229225) },	-- Four of Earth (QI!)
 					}),
 					o(467334, {	-- Darkmoon Fortune Card
 						["description"] = "By the outhose near the photo-op portals.",
 						["coord"] = { 62.14, 49.34, TANARIS },
-						["g"] = { i(229208) },	-- Three of Fire (QI!)
+						["groups"] = { i(229208) },	-- Three of Fire (QI!)
 					}),
 					o(467338, {	-- Darkmoon Fortune Card
 						["description"] = "Near the black market walls under the Fashion Frenzy stage.",
 						["coord"] = { 63.41, 48.98, TANARIS },
-						["g"] = { i(229212) },	-- Seven of Fire (QI!)
+						["groups"] = { i(229212) },	-- Seven of Fire (QI!)
 					}),
 					o(467342, {	-- Darkmoon Fortune Card
 						["description"] = "On one of the steps leading down to the Story Time area.",
 						["coord"] = { 63.58, 51.00, TANARIS },
-						["g"] = { i(229216) },	-- Three of Frost (QI!)
+						["groups"] = { i(229216) },	-- Three of Frost (QI!)
 					}),
 					o(467075, {	-- Darkmoon Fortune Card
 						["description"] = "On the Fashion Frenzy stage to the left.",
 						["coord"] = { 63.18, 49.35, TANARIS },
-						["g"] = { i(229199) },	-- Two of Air (QI!)
+						["groups"] = { i(229199) },	-- Two of Air (QI!)
 					}),
 				},
 			}),
@@ -679,26 +679,26 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 83832,	-- Torn Dreams
 				["provider"] = { "n", 231433 },	-- Raenie Fizzlebog
 				["coord"] = { 63.1, 52.0, TANARIS },
-				["g"] = {
-					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!)
+				["groups"] = {
+					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!/CI!)
 					i(226362),	-- Torn Note (Black Market)
 					i(226364),	-- Torn Note (Fiona Caravan)
 					o(456039, {	-- Crumpled Letter
 						["description"] = "Next to the boxes behind Leeroy's tent.",
 						["coord"] = { 63.4, 52.4, TANARIS },
 						["questID"] = 83837,
-						["g"] = { i(226365) },	-- Crumpled Letter
+						["groups"] = { i(226365) },	-- Crumpled Letter
 					}),
 					o(456032, {	-- Ruffled Paper
 						["description"] = "Right by Farmer Yoon, near the Mount Mania.",
 						["coord"] = { 63.2, 52.0, TANARIS },
 						["questID"] = 83833,
-						["g"] = { i(226361) },	-- Next Week's Mount Competition Listing
+						["groups"] = { i(226361) },	-- Next Week's Mount Competition Listing
 					}),
 					o(456041, {	-- Folded Paper
 						["description"] = "Next to the outhouse behind the Fashion Show platform.",
 						["coord"] = { 63.6, 47.8, TANARIS },
-						["g"] = { i(226236) },	-- Green Hills of Stranglethorn - Page 21 (QI!)
+						["groups"] = { i(226236) },	-- Green Hills of Stranglethorn - Page 21 (QI!)
 					}),
 					i(226232, {	-- Green Hills of Stranglethorn - Page 6 (QI!)
 						["description"] = "Drops from any of the Anniversary World Bosses.",
@@ -709,7 +709,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(456036, {	-- Loose Paper
 						["description"] = "In a Dog Bowl, in front of the Doghouse.",
 						["coord"] = { 61.9, 49.8, TANARIS },
-						["g"] = { i(226234) },	-- Green Hills of Stranglethorn - Page 16 (QI!)
+						["groups"] = { i(226234) },	-- Green Hills of Stranglethorn - Page 16 (QI!)
 					}),
 					i(226237, {	-- Green Hills of Stranglethorn - Page 25 (QI!)
 						["description"] = "Drops from Sand Devils In the Timeless Tunnel.",
@@ -722,12 +722,12 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(456038, {	-- Wet Paper
 						["description"] = "Behind the Story Time Stage, next to the Hearthstone Table.",
 						["coord"] = { 64.5, 51.8, TANARIS },
-						["g"] = { i(226235) },	-- Green Hills of Stranglethorn - Page 18 (QI!)
+						["groups"] = { i(226235) },	-- Green Hills of Stranglethorn - Page 18 (QI!)
 					}),
 					n(227816, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "Below the Fashion Frenzy platform.",
 						["coord"] = { 63.6, 48.8, TANARIS },
-						["g"] = {
+						["groups"] = {
 							i(226242, {	-- Green Hills of Stranglethorn (QI!)
 								["description"] = "Ultimately, if you could not be bothered to search for the scattered pages,\nyou can buy this item from a vendor... |CFFFF0000Cheater...|r",
 							}),
@@ -752,7 +752,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 84583,	-- A Hozen On My Back
 				["provider"] = { "n", 229749 },	-- Riko
 				["coord"] = { 61.9, 50.5, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(228750),	-- My Journal: The Case of the Fur-Getting Wikket (QI!)
 					n(229775, {	-- Sully "The Pickle" McLeary
 						["coord"] = { 63.1, 49.4, TANARIS },
@@ -760,7 +760,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					n(229776, {
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 						["coord"] = { 43.4, 68.8, THE_JADE_FOREST },
-						["g"] = { i(228755) },	-- Gizmo (QI!)
+						["groups"] = { i(228755) },	-- Gizmo (QI!)
 					}),
 					i(228740),	-- Gizmo the Pure (PET!)
 				},
@@ -775,7 +775,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(228302),	-- My Journal: Nola's Last Wish (QI!)
 					n(229102, {	-- Lashk
 						["description"] = "Near the story time stage.",
@@ -784,7 +784,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(463104, {	-- Nola's Last Wish
 						["description"] = "In a pile of scrolls south of Tortaka Refuge in Vol'Dun.",
 						["coord"] = { 64.0, 26.0, VOLDUN },
-						["g"] = { i(228223)	},	-- Nola's Last Wish (QI!)
+						["groups"] = { i(228223)	},	-- Nola's Last Wish (QI!)
 					}),
 					n(229103, {	-- Scrollsage Nola
 						["description"] = "Use Nola's Last Wish to summon and speak to at the underwater Tortollan wedding west of Atal'Dazar.",
@@ -813,7 +813,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ 38.3, 49.1, TWILIGHT_HIGHLANDS },
 					{ 38.8, 66.9, VASHJIR_SHIMMERING_EXPANSE },
 				},
-				["g"] = { i(231292) },	-- Whelpling Whistle (QI!)
+				["groups"] = { i(231292) },	-- Whelpling Whistle (QI!)
 			}),
 			-- The Case of a Feathered Friend
 			q(84923, {	-- A Bird's Tale
@@ -830,27 +830,27 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 84923,	-- A Bird's Tale
 				["provider"] = { "n", 228273 },	-- Reshad
 				["coord"] = { 64.2, 51.3, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(229958),	-- Decorated Feather (QI!)
 					o(469568, {	-- Burnt Feather
 						["description"] = "On the alignment controls device atop the Windswept Terrace spire in Spires of Arak directly south of Veil Terokk.",
 						["coord"] = { 45.8, 53.6, SPIRES_OF_ARAK },
-						["g"] = { i(229408) },	-- Burnt Feather (QI!)
+						["groups"] = { i(229408) },	-- Burnt Feather (QI!)
 					}),
 					o(469569, {	-- Plucked Feather
 						["description"] = "On a rock in Shattrath Overlook on the north-west side of Shattrath (Talador).",
 						["coord"] = { 29.6, 29.6, TALADOR },
-						["g"] = { i(229409) },	-- Plucked Feather (QI!)
+						["groups"] = { i(229409) },	-- Plucked Feather (QI!)
 					}),
 					o(469573, {	-- Frozen Feather
 						["description"] = "Atop a seaside mountain in the Elemental Plateau in Nagrand (Draenor).",
 						["coord"] = { 83.8, 19.4, DRAENOR_NAGRAND },
-						["g"] = { i(229410) },	-- Frozen Feather (QI!)
+						["groups"] = { i(229410) },	-- Frozen Feather (QI!)
 					}),
 					o(469574, {	-- Normal Feather
 						["description"] = "On a ridge slightly north of the Horde shipyard in Frostfire Ridge.",
 						["coord"] = { 42.1, 67.5, FROSTFIRE_RIDGE },
-						["g"] = { i(229411) },	-- Normal Feather (QI!)
+						["groups"] = { i(229411) },	-- Normal Feather (QI!)
 					}),
 				},
 			}),
@@ -869,7 +869,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 84506,	-- Pet Pursuit
 				["provider"] = { "n", 228276 },	-- Jepetto Joybuzz
 				["coord"] = { 62.2, 49.7, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(228328),	-- Bingo Card (QI!)
 					o(464213, {	-- Jumping Spider
 						["description"] = "In the Bamboo Wilds, northeast of Pearlfin Village in the Jade Forest.",
@@ -890,11 +890,11 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(231810),	-- Alyx's Lost & Found Notes (QI!)
 					o(477139, {	-- Lost & Found
 						["coord"] = { 63.0, 50.2, TANARIS },
-						["g"] = {
+						["groups"] = {
 							i(231761, {	-- Crude Ivory Locket (QI!)
 								["description"] = "Return this to Mankrik, found by Bartender Bob's stall to the right of the Story Time stage.",
 							}),
@@ -949,27 +949,27 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"] = 84985,	-- Not Ready on Set
 				["provider"] = { "n", 171743 },	-- Dapperdew
 				["coord"] = { 41.5, 44.8, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(229387),	-- Trickster's Riddles (QI!)
 					o(469334, {	-- Mask of the Trickster
 						["description"] = "Behind a wooden wall onstage near the back.",
 						["coord"] = { 41.3, 43.8, ARDENWEALD },
-						["g"] = { i(229385) },	-- Mask of the Trickster (QI!)
+						["groups"] = { i(229385) },	-- Mask of the Trickster (QI!)
 					}),
 					o(469327, {	-- Play Script
 						["description"] = "On a table to the right in the back of the stage's balcony area.",
 						["coord"] = { 41.3, 42.8, ARDENWEALD },
-						["g"] = { i(229383) },	-- Play Script (QI!)
+						["groups"] = { i(229383) },	-- Play Script (QI!)
 					}),
 					o(469332, {	-- Prop Sword
 						["description"] = "Under the Winter Queen's throne platform.",
 						["coord"] = { 42.3, 46.8, ARDENWEALD },
-						["g"] = { i(229384) },	-- Prop Sword (QI!)
+						["groups"] = { i(229384) },	-- Prop Sword (QI!)
 					}),
 					o(469335, {	-- Conductor's Baton
 						["description"] = "Next to some drums to the right of the south venue entrance.",
 						["coord"] = { 43.3, 46.4, ARDENWEALD },
-						["g"] = { i(229386) },	-- Conductor's Baton (QI!)
+						["groups"] = { i(229386) },	-- Conductor's Baton (QI!)
 					}),
 				},
 			}),
@@ -989,7 +989,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					84625,	-- Surprisingly Pristine Celebration Crate
 					84909,	-- Ghostly Celebration Crate
 				},
-				["g"] = {
+				["groups"] = {
 					ach(40873),	-- Crate Insurance Agent
 				},
 			}),
@@ -997,17 +997,17 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				i(228694),	-- Damp Ransom Note
 				n(143029, {	-- Nikto <Master Talekeep>
 					["coord"] = { 54.3, 54.5, ZULDAZAR },
-					["g"] = { i(225996) },	-- Clam Digger
+					["groups"] = { i(225996) },	-- Clam Digger
 				}),
 				o(455761, {	-- Gerald
 					["description"] = "Go to Zuldazar in Zandalar. At 54.3, 54.5 you will find Nikto. Buy Clam Digger and head upwards to 54.2, 54.2. Interract with Gerald and give him the drink.",
 					["provider"] = { "i", 225996 },	-- Clam Digger
 					["coord"] = { 54.2, 54.2, ZULDAZAR },
-					["g"] = {
+					["groups"] = {
 						o(455768, {	-- Soggy Celebration Crate
 							["coord"] = { 54.2, 54.2, ZULDAZAR },
 							["questID"] = 83790,
-							["g"] = { i(226200) },	-- Soggy Celebration Crate (QS!)
+							["groups"] = { i(226200) },	-- Soggy Celebration Crate (QS!)
 						}),
 					},
 				}),
@@ -1026,7 +1026,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						{ 54.0, 58.1, DESOLACE },
 						{ 21.0, 60.0, NAGRAND },
 					},
-					["g"] = { i(232263) },	-- Hazy Celebration Crate (QS!)
+					["groups"] = { i(232263) },	-- Hazy Celebration Crate (QS!)
 				}),
 				q(85574, {	-- Hazy Celebration Crate
 					["provider"] = { "i", 232263 },	-- Hazy Celebration Crate
@@ -1037,7 +1037,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(465161, {	-- Water-Resistant Receipt of Sale
 					["description"] = "Enter the underwater tunnel at 66.3, 86.2 in the Thousand Needles, find the receipt behind some pipes inside.",
 					["coord"] = { 64.9, 84.4, THOUSAND_NEEDLES },
-					["g"] = { i(228768) },	-- Water-Resistant Receipt
+					["groups"] = { i(228768) },	-- Water-Resistant Receipt
 				}),
 				q(84624, {	-- Sandy Celebration Crate
 					["provider"] = { "i", 228767 },	-- Sandy Celebration Crate
@@ -1048,7 +1048,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(463653, {	-- Dirt-Caked Celebration Crate
 					["description"] = "Enter the Karazhan Crypt at 39.83, 73.11 in Deadwind Pass. Follow the spiraling corridor down until you find the pool of Upside Down Sinners. Cross the pool and the crate will be in the back left of the next room.",
 					["coord"] = { 22.4, 83.7, DEADWIND_PASS },
-					["g"] = { i(228322) },	-- Dirt-Caked Celebration Crate (QS!)
+					["groups"] = { i(228322) },	-- Dirt-Caked Celebration Crate (QS!)
 				}),
 				q(84470, {	-- Dirt-Caked Celebration Crate
 					["provider"] = { "i", 228322 },	-- Dirt-Caked Celebration Crate
@@ -1058,7 +1058,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(456061, {	-- Battered Celebration Crate
 					["description"] = "Outside a worg den near Gjalerbron in Howling Fjord.",
 					["coord"] = { 29.4, 6.4, HOWLING_FJORD },
-					["g"] = { i(226375) },	-- Battered Celebration Crate (QS!)
+					["groups"] = { i(226375) },	-- Battered Celebration Crate (QS!)
 				}),
 				q(83931, {	-- Battered Celebration Crate
 					["provider"] = { "i", 226375 },	-- Battered Celebration Crate
@@ -1069,7 +1069,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(462417, {	-- Waterlogged Celebration Crate
 					["description"] = "Behind a bed on the second floor of an underwater gnomish building off the south-eastern coast of Tanaris.",
 					["coord"] = { 69.2, 68.6, TANARIS },
-					["g"] = { i(228212) },	-- Waterlogged Celebration Crate (QS!)
+					["groups"] = { i(228212) },	-- Waterlogged Celebration Crate (QS!)
 				}),
 				q(84426, {	-- Waterlogged Celebration Crate
 					["provider"] = { "i", 228212 },	-- Waterlogged Celebration Crate
@@ -1080,7 +1080,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(466438, {	-- Charred Celebration Crate
 					["description"] = "On the ground by the bear trampoline in the north-western corner of Mount Hyjal.",
 					["coord"] = { 13.6, 33.5, MOUNT_HYJAL },
-					["g"] = { i(228976) },	-- Charred Celebration Crate (QS!)
+					["groups"] = { i(228976) },	-- Charred Celebration Crate (QS!)
 				}),
 				q(84767, {	-- Charred Celebration Crate
 					["provider"] = { "i", 228976 },	-- Charred Celebration Crate
@@ -1096,7 +1096,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					["description"] = "In a corner within Eldreth Row by the exterior of Dire Maul.\nVisible only with a buff, obtained from the Potion of Truth.",
 					["provider"] = { "o", 505260 },	-- Potion of Truth
 					["coord"] = {60.4, 35.4, FERALAS },
-					["g"] = { i(231886) },	-- Mildewed Celebration Crate (QS!)
+					["groups"] = { i(231886) },	-- Mildewed Celebration Crate (QS!)
 				}),
 				q(85523, {	-- Mildewed Celebration Crate
 					["provider"] = { "i", 231886 },	-- Mildewed Celebration Crate
@@ -1107,7 +1107,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(466512, {	-- Crystalized Celebration Crate
 					["description"] = "Inside Oshu'gun's central chamber in Nagrand (Outland).",
 					["coord"] = {35.3, 74.7, NAGRAND },
-					["g"] = { i(228983) },	-- Crystalized Celebration Crate (QS!)
+					["groups"] = { i(228983) },	-- Crystalized Celebration Crate (QS!)
 				}),
 				q(84773, {	-- Crystalized Celebration Crate
 					["provider"] = { "i", 228983 },	-- Crystalized Celebration Crate
@@ -1122,13 +1122,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						{ 42.1, 93.4, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Cave Entrance
 						{ 44.6, 90.1, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Mysterious Bones
 					},
-					["g"] = { i(228772) },	-- Mysterious Bones
+					["groups"] = { i(228772) },	-- Mysterious Bones
 				}),
 				o(465186, {	-- Unmarked Grave
 					["description"] = "Use the bones at the Unmarked Grave to receive the crate.",
 					["coord"] = { 37.3, 47.7, STORMHEIM },
 					["cost"] = { { "i", 228772, 1 } },	-- Mysterious Bones
-					["g"] = { i(228770) },	-- Surprisingly Pristine Celebration Crate (QS!)
+					["groups"] = { i(228770) },	-- Surprisingly Pristine Celebration Crate (QS!)
 				}),
 				q(84625, {	-- Surprisingly Pristine Celebration Crate
 					["provider"] = { "i", 228770 },	-- Surprisingly Pristine Celebration Crate
@@ -1139,7 +1139,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				o(467489, {	-- Ghostly Celebration Crate
 					["description"] = "Atop the Seat of the Primus in Maldraxxus, in the back to the right of the portal.",
 					["coord"] = { 50.0, 73.8, MALDRAXXUS },
-					["g"] = { i(229367) },	-- Ghostly Celebration Crate (QS!)
+					["groups"] = { i(229367) },	-- Ghostly Celebration Crate (QS!)
 				}),
 				q(84909, {	-- Ghostly Celebration Crate
 					["provider"] = { "i", 229367 },	-- Ghostly Celebration Crate
@@ -1151,7 +1151,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["description"] = "Inside a rotten tree trunk in the far north of Un'Goro Crater. Use your Torch of Pyrreth to reveal it.",
 				["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 				["coord"] = { 44.5, 8.0, UNGORO_CRATER },
-				["g"] = { i(228941) },	-- Inert Peculiar Key
+				["groups"] = { i(228941) },	-- Inert Peculiar Key
 			}),
 			hqt(84685, {	-- Talk to the Dalaran Survivor while using the Detective title
 				["name"] = "Talk to the Dalaran Survivor while using the Detective title",
@@ -1163,22 +1163,22 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["sourceQuest"]	= 84685,	-- Talk to the Dalaran Survivor with the Detective title
 				["provider"] = { "n", 230042 },	-- Dalaran Survivor
 				["coord"] = { 54.9, 28.9, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(228934),	-- Carefully Penned Note (QI!)
 					o(466118, {	-- Unfinished Note
 						["description"] = "#1. In a cave in Azj'Kahet in the center of 5 Rotglow Settlers.",
 						["coord"] = { 69.3, 93.3, AZJ_KAHET },
-						["g"] = { i(228935) },	-- Unfinished Note (QI!)
+						["groups"] = { i(228935) },	-- Unfinished Note (QI!)
 					}),
 					o(466119, {	-- Hastily Scrawled Note
 						["description"] = "#2. High up on a ridge overlooking the City of Threads.",
 						["coord"] = { 31.5, 20.8, NERUBAR },
-						["g"] = { i(228936) },	-- Hastily Scrawled Note (QI!)
+						["groups"] = { i(228936) },	-- Hastily Scrawled Note (QI!)
 					}),
 					o(466120, {	-- Water-Resistant Note
 						["description"] = "#3. Underwater in the center of a lake on the right side of the Azj-Kahet-Hallowfall transition.",
 						["coord"] = { 50.7, 86.6, HALLOWFALL },
-						["g"] = { i(228937) },	-- Water-Resistant Note (QI!)
+						["groups"] = { i(228937) },	-- Water-Resistant Note (QI!)
 					}),
 					o(466128, {	-- Peculiar Gem
 						["description"] = "#4. To turn in the quest, enter Pillar-nest Vosh to the left of Faerin's advance, navigate toward the back of the cave then turn around to find a wall you can climb, fall into a tunnel hidden in the wall.",
@@ -1204,7 +1204,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ "i",  44124 },	-- Peculiar Key
 					{ "i", 208092 },	-- Torch of Pyrreth
 				},
-				["g"] = {
+				["groups"] = {
 					--1 O'clock Basin
 					hqt(84676, {	-- The Light of Their Love
 						["name"] = "Acquire The Light of Their Love buff stacked 3 times",
@@ -1230,7 +1230,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 							{ "n", 153297 },	-- Ny'Alotha Obelisk
 							{ "n", 37865 },	-- Perky Pug
 						},
-						["g"] = {
+						["groups"] = {
 							n(153297, {	-- Ny'Alotha Obelisk
 								["coord"] = { 83.7, 27.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 								["providers"] = {
@@ -1241,7 +1241,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									{ "i", 229413, 1 },	-- "Dogg-Saron" Costume
 									{ "i", 116812, 1 },	-- "Yipp-Saron" Costume
 								},
-								["g"] = {
+								["groups"] = {
 									i(53156, {	-- Key of Shadows
 										["description"] = "Opens both doors in the room with the Red Button.",
 									}),
@@ -1253,66 +1253,66 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					header(HEADERS.Item, 228967, bubbleDownSelf( {["sourceQuest"] = 84677 }, {	-- Acquire the Key of Shadows
 						["description"] = "1. Use the Key of Shadows to enter the room to the left of the Red Button. Fish up an Astral key from the bowl on the left bookshelf. Open the Astral chest in the same room, use the goggles.\n2. Interact with any of the consoles around the catacombs until you get a new actionbar. Can't see it? Look in your spellbook for a Number Sequence spell. Click the console again to submit your code.\n3. Enter the codes on adjacent consoles to open each of the chests, each Piece of Hate will give you an orb at the 3 O'clock basin, fully lighting with 9 orbs.",
 						["provider"] = { "i", 53156 },	-- Key of Shadows
-						["g"] = {
+						["groups"] = {
 							i(228965),	-- Astral Key
 							o(466393, {	-- Astral Chest
 								["provider"] = { "i", 228965 },	-- Astral Key
 								["coord"] = { 48.4, 79.5, 46 },	-- Karazhan Catacombs
-								["g"] = { i(228966) },	-- Starry-Eyed Goggles (TOY!)
+								["groups"] = { i(228966) },	-- Starry-Eyed Goggles (TOY!)
 							}),
 							o(466400, {	-- Property of Elder Ko'nani
 								["description"] = "Code to open at the adjacent decryption console: 88224646",
 								["coord"] = { 48.9, 80.3, 46 },	-- Karazhan Catacombs
 								["questID"] = 84757,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466413, {	-- Encrypted Puzzle Box
 								["description"] = "Code to open at the adjacent decryption console: 17112317",
 								["coord"] = { 42.9, 70.6, 46 },	-- Karazhan Catacombs
 								["questID"] = 84758,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466479, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 1533, 3457, 8265, or 10638",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 49.5, 65.1, 46 },	-- Karazhan Catacombs
 								["questID"] = 84768,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466495, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 19019",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 67.4, 84.3, 46 },	-- Karazhan Catacombs
 								["questID"] = 84771,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466484, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 5661",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 56.3, 62.6, 46 },	-- Karazhan Catacombs
 								["questID"] = 84769,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466420, {	-- Rubenstein's Safe
 								["description"] = "Code to open at the adjacent decryption console: 52233",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 64.9, 48.3, 46 },	-- Karazhan Catacombs
 								["questID"] = 84766,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466497, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 51567",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 70.3, 55.4, 46 },	-- Karazhan Catacombs
 								["questID"] = 84772,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							o(466489, {	-- Encrypted Chest
 								["description"] = "Code to open at the adjacent decryption console: 115",
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 66.3, 15.2, 46 },	-- Karazhan Catacombs
 								["questID"] = 84770,	-- Orb
-								["g"] = { i(228967) },	-- Piece of Hate
+								["groups"] = { i(228967) },	-- Piece of Hate
 							}),
 							header(HEADERS.Quest, 84786, {	-- Acquire the Piece of Hate from the Lucky slot machine consoles
 								["description"] = "In the felcycle room is over a dozen slot machine consoles around the walls, any of them work for this coin. Variations of 777, 888 and 168 are correct answers but the machines only pay out a coin if you are deemed lucky.\nYour luck can be increased by obtaining at least 5 unique lucky things. It's not clear what counts but Blizzard states there are 13 possible lucky sources, some have been listed as a provider for this step. If you see the 'You feel lucky' emote in chat, you should be good, but try at least once anyway, the machine will pay out on first attempt if you're lucky enough, it is not random.\nNo chest will spawn, you will be given the Piece of Hate directly.",
@@ -1325,7 +1325,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									{ "i", 138385 },	-- Lucky Shirt
 									{ "i", 202046 },	-- Lucky Tortollan Charm
 								},
-								["g"] = {
+								["groups"] = {
 									i(228967),	-- Piece of Hate
 									hqt(84786, {	-- Orb
 										["name"] = "Acquire the Piece of Hate from the Lucky slot machine consoles",
@@ -1345,27 +1345,27 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					q(84781, {	-- Master of Secrets
 						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",
 						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
-						["providers"] = {
-							{ "n", 232048 },	-- Jeremy Feasel
-							{ "n", 141941 },	-- Baa'l
-							{ "n", 143730 },	-- Bumbles
-							{ "n", 160704 },	-- Filthy Slime
-							{ "n", 134406 },	-- Francois
-							{ "n", 229779 },	-- Gizmo the Pure
-							{ "n", 169514 },	-- Glimr
-							{ "n", 111984 },	-- Hungering Claw
-							{ "n", 159783 },	-- Jenafur
-							{ "n", 179008 },	-- Lil' Abom
-							{ "n", 204367 },	-- Nelthara
-							{ "n", 189117 },	-- Phoenix Wishwing
-							{ "n", 163897 },	-- Renny
-							{ "n", 192343 },	-- Snowclaw Cub
-							{ "n", 191381 },	-- Spyragos
-							{ "n", 61087 },		-- Sun Darter Hatchling
-							{ "n", 139770 },	-- Taptaf
-							{ "n", 16445 },		-- Terky
-							{ "n", 208643 },	-- Tobias
-							{ "n", 143189 },	-- Wicker Pup
+						["qgs"] = {
+							232048,	-- Jeremy Feasel
+							141941,	-- Baa'l
+							143730,	-- Bumbles
+							160704,	-- Filthy Slime
+							134406,	-- Francois
+							229779,	-- Gizmo the Pure
+							169514,	-- Glimr
+							111984,	-- Hungering Claw
+							159783,	-- Jenafur
+							179008,	-- Lil' Abom
+							204367,	-- Nelthara
+							189117,	-- Phoenix Wishwing
+							163897,	-- Renny
+							192343,	-- Snowclaw Cub
+							191381,	-- Spyragos
+							61087,	-- Sun Darter Hatchling
+							139770,	-- Taptaf
+							16445,	-- Terky
+							208643,	-- Tobias
+							143189,	-- Wicker Pup
 						},
 						["coords"] = {
 							{ 43.1, 41.4, TIMELESS_ISLE },
@@ -1373,14 +1373,14 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 							{ 39.6, 38.4, 555 },	-- Cavern of Lost Spirits
 						},
 						["crs"] = 71876,
-						["g"] = { i(228995) },	-- Golden Muffin
+						["groups"] = { i(228995) },	-- Golden Muffin
 					}),
 					--6 O'clock Basin
 					hqt(84811, {	-- Acquire the Ancient Shaman Blood
 						["name"] = "Acquire the Ancient Shaman Blood",
 						["description"] = "Use your Torch of Pyrreth at various alters to summon a Spirit of Collections. Perform several actions to appease the spirits on each alter of acquisition, an action may require summoning a mount, pet, or toy associated with each spirit, emoting in some way, or changing your transmog.\n\nSomeone in your phase can appease a spirit for you if nearby, but they must fulfill each part of a spirit's appeasement themselves. If one person covers mount, and another covers pet for example, it will not work.\n\nEach appeased spirit will add an orb to the 6 O'clock basin, and looting the final chest will light it fully.",
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
-						["g"] = {
+						["groups"] = {
 							hqt(84809, {	-- Appease the Spirit of Collections (Blood)
 								["description"] = "Confirmed actions to appease:\nMounts: Any with 'blood' in their name\n\nPets: Any with 'blood' in their name\n\nToys: Throbbing Blood Orb",
 								["name"] = "Appease the Spirit of Collections (Blood)",
@@ -1423,7 +1423,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								},
 								["provider"] = { "i", 228966 },	-- Starry-Eyed Goggles
 								["coord"] = { 78.2, 47.7, NORTHERN_STRANGLETHORN },
-								["g"] = { i(229007)	},	-- Ancient Shaman Blood
+								["groups"] = { i(229007)	},	-- Ancient Shaman Blood
 							}),
 						},
 					}),
@@ -1432,7 +1432,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["name"] = "Acquire the Warden's Mirror",
 						["description"] = "Empower your owl pet with the Owl statues in Azsuna then enter the Vault of the Wardens to find a Sentry Statue. Use it to solve a puzzle to receive the mirror.\n\nEmpowering your owl will add 4 orbs to the 7 O'clock basin, and solving the sentry puzzle will light it fully.",
 						["maps"] = { AZSUNA, 710, 711, 712 },	-- Vault of the Wardens
-						["g"] = {
+						["groups"] = {
 							header(HEADERS.Object, 254262, {	-- Owl of the Watchers
 								["description"] = "On the Isle of the Watchers in Azsuna are 9 Owl of the Watchers statues, on any shard, only 4 of them will be interactable at any given time.\n\nYou need an owl pet, the Fledgling Warden Owl sold by the Wardens quartermaster on the same island is confirmed to work, but other owls may work too.\n\nSummon your owl and don't let it disappear by flying too far away. Find an interactable statue and sit in the aura it creates with your pet until an audible sound cue plays and a secret magnifying glass icon appears over your head. Do that again for 4 different statue auras, Red, Green, Blue and Purple.\nYou'll know you're done when your owl has a distinct white orb above their head. Unlocks 4 orbs at Basin 7.",
 								["provider"] = { "n", 97128 },	-- Fledgling Warden Owl
@@ -1447,7 +1447,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									{ 47.48, 84.74, AZSUNA },
 									{ 45.97, 84.06, AZSUNA },
 								},	-- TODO: if we REALLY want to, we could source objectids for each statue but it'd be trial and error with coordinates since wowhead is missing data and debugger doesn't report.
-								["g"] = {
+								["groups"] = {
 									hqt(39353, {	-- Empower your owl with the red statue aura
 										["name"] = "Empower your owl with the red statue aura",
 										["description"] = "Unlocks an orb at the 7 O'clock basin."	-- Orb
@@ -1471,7 +1471,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								["description"] = "You must first have completed the previous steps with the watcher statues and empowering your owl.\n1. Clear Vault of the Wardens (any difficulty) with your owl pet summoned through to last boss.\n2. Pick up Elune's light from a statue in the corner of Cordana's arena and QUICKLY get back up to the first boss's room.\n3. Backtrack from the first boss room towards the dungeon entrance, enter the newly opened door on your right, the statue will sit in the center.",
 								["provider"] = { "n", 97128 },	-- Fledgling Warden Owl
 								["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
-								["g"] = {
+								["groups"] = {
 									i(229046, {	-- Sentry Statue
 										["description"] = "Place in the center platform before the last set of stairs leading to Glazer's platform in the Vault of Mirrors."
 									}),
@@ -1490,7 +1490,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 								},
 								["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 								["crs"] = 109300,	-- Sentry
-								["g"] = { i(229054) },	-- Warden's Mirror
+								["groups"] = { i(229054) },	-- Warden's Mirror
 							}),
 						},
 					}),
@@ -1498,7 +1498,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					o(466975, {	-- Enigma Machine
 						["description"] = "On the left side of the hallway after the second stairwell.",
 						["coord"] = { 59.9, 42.6, 46 },	-- Karazhan Catacombs
-						["g"] = {
+						["groups"] = {
 							hqt(84829, {	-- Insert the Ancient Shaman Blood into the Enigma Machine
 								["name"] = "Insert the Ancient Shaman Blood into the Enigma Machine",
 								["sourceQuest"] = 84811,	-- Acquire the Ancient Shaman Blood
@@ -1517,7 +1517,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									84830,	-- Insert the Warden's Mirror into the Enigma Machine
 								},
 								["provider"] = { "i", 228996 },	-- Relic of Crystal Connections
-								["g"] = {
+								["groups"] = {
 									n(230653, {	-- Greed Statue
 										["description"] = "Right of the entrance of the felcycle room.",
 										["coord"] = { 70.6, 34.5, 46 },	-- Karazhan Catacombs
@@ -1562,7 +1562,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 							{ 56.1, 17.9, AZJ_KAHET },	-- Encrypted Chest
 						},
 						["questID"] = 84854, -- Fully lights the 9 O'clock basin
-						["g"] = {
+						["groups"] = {
 							i(229348),	-- Incognitro, the Indecipherable Felcycle (MOUNT!)
 							ach(40967),		-- Ratts' Revenge
 						},
@@ -1571,7 +1571,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					n(230070, {	-- Red Button
 						["description"] = "Interacting with the button starts a 20 second timer, refreshing on clicking again. The orb to the left of the button reports how many times the button has been clicked within that window.",
 						["coord"] = { 47.4, 68.3, 46 },	-- Karazhan Catacombs
-						["g"] = {
+						["groups"] = {
 							hqt(84702, {	-- Red Button x100
 								["name"] = "Press the Red Button 100 times",
 								["description"] = "Unlocks an orb at the 10 O'clock basin."	-- Orb
@@ -1617,7 +1617,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85420),	-- Acquire 2 Nettlefish for (85195) Pirate Gastronomy.
 		q(85421),	-- Acquire 3 Furious Crawdads for (85195) Pirate Gastronomy.
 		q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
-		-- q(83824, name(HEADERS.Item, 226242)),	-- Triggered when restoring the 'Green Hills of Stranglethorn' by gathering all the missing pages. (automated)
 		-- Felcycle HQTs
 		q(84718),	-- Flags and unflags CONSTANTLY all over the catacombs.
 		q(85169),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.

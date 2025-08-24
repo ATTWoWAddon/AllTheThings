@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(262, {	-- The Underbog
+	inst(262, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Underbog
 		["lore"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3716,	-- The Underbog
@@ -40,26 +40,26 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(61, 61, 10),
 				}),
 				q(9714, {	-- Bring Me Another Shrubbery!
-					["qg"] = 17856,	-- Gzhun'tt
 					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
+					["qg"] = 17856,	-- Gzhun'tt
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { REMOVED_4_3_0 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
+					["repeatable"] = true,
 					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(29692, {	-- Bring Me Another Shrubbery!
-					["qg"] = 54674,	-- T'shu
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
+					["qg"] = 54674,	-- T'shu
 					["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { ADDED_4_3_0 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
+					["repeatable"] = true,
 					["lvl"] = lvlsquish(61, 61, 10),
 				}),
 				q(29571, {	-- Defending the Wilds
@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29570, {	-- Rescuing the Expedition
-					["qg"] = 54675,	-- Watcher Jhang
 					["sourceQuest"] = 29571,	-- Defending the Wilds
+					["qg"] = 54675,	-- Watcher Jhang
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
@@ -217,11 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(579, {	-- The Black Stalker
 					["creatureID"] = 17882,
 					["groups"] = {
-						ach(650, {	-- Underbog
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 9719,	-- Stalk the Stalker
-							-- #endif
-						}),
+						ach(650),	-- Underbog
 						-- #if AFTER 7.3.5
 						i(27769),	-- Endbringer
 						-- #endif
@@ -348,9 +344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(579, {	-- The Black Stalker
 						["creatureID"] = 17882,
 						["groups"] = {
-							ach(670, {	-- Heroic: Underbog
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(670),	-- Heroic: Underbog
 							ach(5070, {	-- Heroic: Underbog Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),
@@ -388,7 +382,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

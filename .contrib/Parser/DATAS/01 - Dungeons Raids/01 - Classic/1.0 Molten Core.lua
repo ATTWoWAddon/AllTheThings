@@ -42,6 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 2717,	-- Molten Core
 		-- #endif
 		["mapID"] = MOLTEN_CORE,
+		["cr"] = 14387,	-- Lothos Riftwalker
 		["coord"] = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 		-- #if BEFORE 5.4.0
 		["sourceQuest"] = 7848,	-- Attunement to the Core
@@ -90,14 +91,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["isRaid"] = true,
 				["groups"] = {
 					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
+						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-						-- #if ANYCLASSIC
-						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-						["classes"] = SWORD_CLASSES,
-						-- #endif
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -105,16 +101,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						["lvl"] = 60,
 						["cost"] = {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
+						-- #endif
+						["lvl"] = 60,
 					})),
 					applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
-						["qg"] = 14347,	-- Highlord Demitrian
 						["sourceQuest"] = 7785,	-- Examine the Vessel
 						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						["qg"] = 14347,	-- Highlord Demitrian
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -122,17 +123,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						-- #if ANYCLASSIC
-						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-						["classes"] = SWORD_CLASSES,
-						-- #endif
 						-- #if NOT ANYCLASSIC
 						["cost"] = {
 							{ "i", 17771, 10 },	-- Elementium Bar x10
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
+						-- #endif
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
 						-- #endif
 						["lvl"] = 60,
 						["groups"] = {
@@ -171,15 +172,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
+						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+						["coord"] = { 21.7, 8.6, SILITHUS },
 						-- #if ANYCLASSIC
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
 						["classes"] = SWORD_CLASSES,
 						-- #endif
-						["coord"] = { 21.7, 8.6, SILITHUS },
 						["lvl"] = 60,
 						["groups"] = {
 							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -216,11 +217,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ ["timeline"] = { ADDED_1_15_3 } }, {	-- A Hero's Reward
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["providers"] = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -251,24 +252,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(6823, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6822,	-- The Molten Core
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["lvl"] = 55,
 				})),
 				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
-					["qg"] = 14524,	-- Vartrus the Ancient
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
+					["qg"] = 14524,	-- Vartrus the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
 				q(7487, {	-- Attunement to the Core [Old]
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
@@ -281,15 +282,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7848, {	-- Attunement to the Core
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["timeline"] = { ADDED_1_3_0 },
 					["description"] =
 						-- #if BEFORE 5.4.0
 						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #else
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #endif
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["qg"] = 14387,	-- Lothos Riftwaker
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["timeline"] = { ADDED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
@@ -302,11 +303,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuests"] = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -325,8 +326,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(6824, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -342,11 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
-						ach(2496, {	-- The Fifth Element
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 6824,	-- Hands of the Enemy
-							-- #endif
-						}),
+						ach(2496),	-- The Fifth Element
 					},
 				})),
 				q(6804, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
@@ -384,18 +381,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
-					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					["qg"] = 14524,	-- Vartrus the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
 				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -452,8 +449,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18260),	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					i(18259),	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					i(18252),	-- Pattern: Core Armor Kit (RECIPE!)
-					i(21371),	-- Pattern: Core Felcloth Bag
-					i(18265),	-- Pattern: Flarecore Wraps
+					i(21371),	-- Pattern: Core Felcloth Bag (RECIPE!)
+					i(18265),	-- Pattern: Flarecore Wraps (RECIPE!)
 					i(18264),	-- Plans: Elemental Sharpening Stone (RECIPE!)
 					i(18257),	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					i(18290),	-- Schematic: Biznicks 247x128 Accurascope (RECIPE!)
@@ -473,19 +470,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			prof(MINING, {
 				i(11382),	-- Blood of the Mountain
 			}),
-			prof(SKINNING, {
-				i(17012, {	-- Core Leather
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11982,	-- Magmadar
-					},
-				}),
-			}),
 			-- #if SEASON_OF_DISCOVERY
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_1, {
 			-- #endif
-			n(ZONE_DROPS, {
+			n(ZONE_DROPS, sharedData({
+				-- #if AFTER TWW
+				["description"] = "This armour was a 'Binds when equipped' prior to TWW.",
+				-- #elseif AFTER DF
+				["description"] = "This item will likely become soulbound with The War Within, you might want an appropriate character to hold on to it.",
+				-- #endif
+			}, {
 				i(16802),	-- Arcanist Belt (Mage)
 				i(16799),	-- Arcanist Bindings (Mage)
 				i(16864),	-- Belt of Might (Warrior)
@@ -504,7 +499,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(16827),	-- Nightslayer Belt (Rogue)
 				i(16825),	-- Nightslayer Bracelets (Rogue)
 				i(16819),	-- Vambraces of Prophecy (Priest)
-			}),
+			})),
 			e(1519, {	-- Lucifron
 				["creatureID"] = 12118,
 				["groups"] = {
@@ -787,16 +782,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 11502,
 				["groups"] = {
 					-- #if NOT SEASON_OF_DISCOVERY
-					ach(686, {	-- Molten Core
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							7787,	-- Rise, Thunderfury!
-							8620,	-- The Only Prescription
-						},
-						-- #endif
-					}),
+					ach(686),	-- Molten Core
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { ADDED_4_0_3 },
+					}),
+					ach(15330, {	-- Survivor of the Firelord (Season of Mastery)
+						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					-- #endif
 					i(17204, {	-- Eye of Sulfuras
@@ -809,7 +800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 						["classes"] = SWORD_CLASSES,
 					}),
-					i(138018, {	-- Clothes Chest Pattern: Molten Core
+					i(138018, {	-- Clothes Chest Pattern: Molten Core (RECIPE!)
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(138833, {	-- Illusion: Flametongue (ILLUSION!)
@@ -1606,14 +1597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(228438, {	-- Ragnaros
-					ach(686, {	-- Molten Core
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							85443,	-- Rise, Thunderfury!
-							8620,	-- The Only Prescription
-						},
-						-- #endif
-					}),
+					ach(686),	-- Molten Core
 					i(227728),	-- Eye of Sulfuras
 					i(17203),	-- Sulfuron Ingot
 					i(227532),	-- Incandescent Hood

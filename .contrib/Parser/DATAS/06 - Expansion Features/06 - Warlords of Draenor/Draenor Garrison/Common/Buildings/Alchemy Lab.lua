@@ -9,34 +9,34 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(120, {	-- Alchemy Lab (rank 1: 76, rank 2: 119, rank 3: 120)
 					n(QUESTS, {
 						q(37270, {	-- Alchemy Experiment
-							["providers"] = {
-								{ "n", 88145 },	-- Alchemy Follower - Alliance
-								{ "n", 88392 },	-- Alchemy Follower - Horde
+							["qgs"] = {
+								88145,	-- Alchemy Follower - Alliance
+								88392,	-- Alchemy Follower - Horde
 							},
 							["isDaily"] = true,
 						}),
 						q(35342, {	-- The Mysterious Flask
-							["requireSkill"] = ALCHEMY,
 							["provider"] = { "i", 113103 },	-- Mysterious Flask
+							["requireSkill"] = ALCHEMY,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(35058, {	-- The Mysterious Flask
-							["requireSkill"] = ALCHEMY,
 							["provider"] = { "i", 112566 },	-- Mysterious Flask
+							["requireSkill"] = ALCHEMY,
 							["races"] = HORDE_ONLY,
 						}),
 						q(35343, {	-- The Young Alchemist
 							["sourceQuests"] = { 35342 },	-- The Mysterious Flask
-							["requireSkill"] = ALCHEMY,
 							["provider"] = { "n", 82466 },	-- Aenir
 							["coord"] = { 47.2, 45.8, LUNARFALL },
+							["requireSkill"] = ALCHEMY,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(35103, {	-- The Alchemist
 							["sourceQuests"] = { 35058 },	-- The Mysterious Flask
-							["requireSkill"] = ALCHEMY,
 							["provider"] = { "n", 81166 },	-- Refugee Lo'nash
 							["coord"] = { 45.4, 50.4, FROSTWALL },
+							["requireSkill"] = ALCHEMY,
 							["races"] = HORDE_ONLY,
 						}),
 						q(36641, {	-- Your First Alchemy Work Order

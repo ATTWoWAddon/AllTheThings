@@ -1,17 +1,48 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using static ATT.Framework;
 
 namespace ATT.DB.Types
 {
     /// <summary>
     /// https://wago.tools/db2/Item
     /// </summary>
-    internal class Item : IDBType
+    [DataModule]
+    public class Item : IDBType
     {
+        [ExportableData("itemID")]
         public long ID { get; set; }
+        [ExportableData("_class")]
         public long ClassID { get; set; }
+        [ExportableData("_subclass")]
         public long SubclassID { get; set; }
+        [ExportableData("_inventoryType")]
         public long InventoryType { get; set; }
+        public long RequiredLevel { get; set; }
+
+
+        [ExportableData("lvl")]
+        public object RequiredLevelHeleper
+        {
+            get
+            {
+                long lvl = RequiredLevel;
+                if (lvl > 1) return lvl;
+                return null;
+            }
+        }
+
+        [ExportableData("spellID")]
+        public object SpellIDHeleper
+        {
+            get
+            {
+                long? spellID = SpellID;
+                if (spellID.HasValue) return spellID.Value;
+                return null;
+            }
+        }
+
         public long? SpellID => Effects.FirstOrDefault(x => x.SpellID != 0)?.SpellID;
 
         private List<ItemEffect> _effects;
@@ -22,14 +53,11 @@ namespace ATT.DB.Types
                 if (_effects != null) return _effects;
 
                 _effects = new List<ItemEffect>();
-                if (Framework.TryGetTypeDBObjectChildren(this, out List<ItemXItemEffect> xeffects))
+                foreach (var xeffect in WagoData.EnumerateForItemID<ItemXItemEffect>(ID))
                 {
-                    foreach (var xeffect in xeffects)
+                    if (WagoData.TryGetValue(xeffect.ItemEffectID, out ItemEffect effect) && effect.IsKnownTriggerType())
                     {
-                        if (Framework.TryGetTypeDBObject(xeffect.ItemEffectID, out ItemEffect effect) && effect.IsKnownTriggerType())
-                        {
-                            _effects.Add(effect);
-                        }
+                        _effects.Add(effect);
                     }
                 }
 
@@ -39,25 +67,6 @@ namespace ATT.DB.Types
                 });
                 return _effects;
             }
-        }
-
-        public IDictionary<string, object> AsData()
-        {
-            var data = new Dictionary<string, object>
-            {
-                { "itemID", ID },
-                { "_class", ClassID },
-                { "_subclass", SubclassID },
-                { "_inventoryType", InventoryType },
-            };
-            long? spellID = SpellID;
-            if (spellID.HasValue)
-            {
-                data["spellID"] = spellID.Value;
-            }
-            // big spam!
-            //Framework.LogDebug("INFO: Using Wago Item Data", data);
-            return data;
         }
     }
 }

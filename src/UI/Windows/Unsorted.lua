@@ -11,7 +11,7 @@ app:CreateWindow("Unsorted", {
 	Commands = { "attunsorted" },
 	OnInit = function(self)
 		-- Add an achievement header
-		local achievementHeader = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, { g = {} });
+		local achievementHeader = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, { g = {} });
 		self.achievementHeader = achievementHeader;
 		
 		-- Make a function to add a new unsorted achievement.
@@ -43,15 +43,5 @@ app:CreateWindow("Unsorted", {
 		end
 		self:DefaultUpdate(...);
 		return false;
-	end,
-	OnLoad = function(self, settings)
-		if settings.Progress then
-			self.data.progress = settings.Progress;
-			self.data.total = settings.Total;
-		end
-	end,
-	OnSave = function(self, settings)
-		settings.Progress = self.data.progress;
-		settings.Total = self.data.total;
 	end,
 });

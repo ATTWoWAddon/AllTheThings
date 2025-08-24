@@ -190,7 +190,7 @@ root(ROOTS.ExpansionFeatures,
 								["races"] = ALLIANCE_ONLY,
 								["isWeekly"] = true,
 								["isRaid"] = true,
-								["g"] = {
+								["groups"] = {
 									i(163195),	-- Schematic: Makeshift Azerite Detector (RECIPE!)
 									i(163828),	-- Toy Siege Tower (TOY!)
 									i(161464),	-- Alliance Bowman's Coif
@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures,
 								["races"] = HORDE_ONLY,
 								["isWeekly"] = true,
 								["isRaid"] = true,
-								["g"] = {
+								["groups"] = {
 									i(163195),	-- Schematic: Makeshift Azerite Detector (RECIPE!)
 									i(163829),	-- Toy War Machine (TOY!)
 									i(161455),	-- Battlemage's Collar
@@ -264,7 +264,7 @@ root(ROOTS.ExpansionFeatures,
 							142440,	-- Yogursa
 							142682,	-- Zalas Witherbark <Warband Leader>
 						},
-						["g"] = {
+						["groups"] = {
 							-- Alliance
 							n(FACTION_HEADER_ALLIANCE, { n(BACK, clone(ALLIANCE_WARFRONT_BACKS))}),
 							n(FACTION_HEADER_ALLIANCE, { n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR))}),
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53504,	-- Beastrider Kama [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 65.3, 70.6, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163644),	-- Swift Albino Raptor (MOUNT!)
 							},
 						}),
@@ -290,7 +290,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163650),	-- Aldrusian Sproutling (PET!)
 							},
 						}),
@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53506,	-- Burning Goliath [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 30.6, 44.7, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163691),	-- Burning Essence
 							},
 						}),
@@ -308,7 +308,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53531,	-- Cresting Goliath [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 61.8, 31.2, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163700),	-- Cresting Essence
 							},
 						}),
@@ -321,7 +321,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 50.4, 61.2, ARATHI_HIGHLANDS },	-- Horde-controlled
 								{ 50.7, 36.5, ARATHI_HIGHLANDS },	-- Alliance-controlled
 							},
-							["g"] = {
+							["groups"] = {
 								i(163652),	-- Voidwiggler (PET!)
 							},
 						}),
@@ -331,7 +331,7 @@ root(ROOTS.ExpansionFeatures,
 							["isWeekly"] = true,
 							["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
 							["description"] = "Only shows up when Alliance-controlled.",
-							["g"] = {
+							["groups"] = {
 								i(163579),	-- Highland Mustang (MOUNT!)
 							},
 						}),
@@ -340,7 +340,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53508,	-- Echo of Myzrael [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 57.0, 34.6, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163677),	-- Teeny Titan Orb (PET!)
 							},
 						}),
@@ -350,7 +350,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Spawns at the back of the cave.",
 							["isWeekly"] = true,
 							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
-							["g"] = {
+							["groups"] = {
 								i(163735),	-- Foulbelly (TOY!)
 							},
 						}),
@@ -362,7 +362,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 59.4, 27.5, ARATHI_HIGHLANDS },	-- Top
 								{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
 							},
-							["g"] = {
+							["groups"] = {
 								i(163711),	-- Fozling (PET!)
 							},
 						}),
@@ -372,7 +372,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Spawns at the back of the cave.",
 							["isWeekly"] = true,
 							["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163713),	-- Brazier Cap (TOY!)
 							},
 						}),
@@ -385,7 +385,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 19.5, 60.9, ARATHI_HIGHLANDS },	-- Horde-controlled
 								{ 26.7, 32.6, ARATHI_HIGHLANDS },	-- Alliance-controlled
 							},
-							["g"] = {
+							["groups"] = {
 								i(163736),	-- Spectral Visage (TOY!)
 							},
 						}),
@@ -395,7 +395,7 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 49.0, 40.0, ARATHI_HIGHLANDS },
 							["races"] = HORDE_ONLY,
 							["description"] = "Only shows up when Horde-controlled.",
-							["g"] = {
+							["groups"] = {
 								i(163578),	-- Broken Highland Mustang (MOUNT!)
 							},
 						}),
@@ -405,7 +405,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Spawns at the back of the cave.",
 							["isWeekly"] = true,
 							["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163744),	-- Coldrage's Cooler (TOY!)
 							},
 						}),
@@ -415,7 +415,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Spawns at the front of the cave.",
 							["isWeekly"] = true,
 							["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
-							["g"] = {
+							["groups"] = {
 								i(163750),	-- Kovork Kostume (TOY!)
 							},
 						}),
@@ -425,7 +425,7 @@ root(ROOTS.ExpansionFeatures,
 							["isWeekly"] = true,
 							["crs"] = { 142717 },	-- SQUAAWK!
 							["coord"] = { 51.8, 75.1, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163712),	-- Squawkling (PET!)
 							},
 						}),
@@ -434,7 +434,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53516,	-- Molok the Crusher [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 47.6, 77.9, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163775),	-- Molok Morion (TOY!)
 							},
 						}),
@@ -443,7 +443,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53517,	-- Nimar the Slayer [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 67.5, 61.0, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163706),	-- Witherbark Direwing (MOUNT!)
 							},
 						}),
@@ -456,7 +456,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 33.7, 36.7, ARATHI_HIGHLANDS },	-- Horde-controlled
 								{ 27.4, 55.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 							},
-							["g"] = {
+							["groups"] = {
 								i(163646),	-- Lil' Donkey (MOUNT!)
 							},
 						}),
@@ -465,7 +465,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53519,	-- Plaguefeather [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163690),	-- Foulfeather (PET!)
 							},
 						}),
@@ -478,7 +478,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 11.9, 52.1, ARATHI_HIGHLANDS },	-- Horde-controlled
 								{ 18.5, 27.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 							},
-							["g"] = {
+							["groups"] = {
 								i(163689),	-- Ragepeep (PET!)
 							},
 						}),
@@ -487,7 +487,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 29.7, 60.0, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163701),	-- Rumbling Essence
 							},
 						}),
@@ -496,7 +496,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53524,	-- Ruul Onestone [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 42.8, 56.4, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163741),	-- Magic Fun Rock (TOY!)
 							},
 						}),
@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures,
 								{ 50.4, 57.6, ARATHI_HIGHLANDS },	-- Horde-controlled
 								{ 51.1, 39.9, ARATHI_HIGHLANDS },	-- Alliance-controlled
 							},
-							["g"] = {
+							["groups"] = {
 								i(163738),	-- Syndicate Mask (TOY!)
 							},
 						}),
@@ -518,7 +518,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53526,	-- Skullripper [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 56.8, 45.1, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163645),	-- Skullripper (MOUNT!)
 							},
 						}),
@@ -527,7 +527,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53527,	-- Thundering Goliath [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 46.3, 52.0, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163698),	-- Thundering Essence
 							},
 						}),
@@ -536,7 +536,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53528,	-- Venomarus [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163648),	-- Fuzzy Creepling (PET!)
 							},
 						}),
@@ -545,7 +545,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestID"] = 53529,	-- Yogursa [Horde]
 							["isWeekly"] = true,
 							["coord"] = { 14.0, 36.9, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163684),	-- Scabby (PET!)
 							},
 						}),
@@ -555,7 +555,7 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Spawns in the middle of the cave.",
 							["isWeekly"] = true,
 							["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
-							["g"] = {
+							["groups"] = {
 								i(163745),	-- Witherbark Gong (TOY!)
 							},
 						}),
@@ -775,7 +775,7 @@ root(ROOTS.ExpansionFeatures,
 							131752,	-- War Table (Horde)
 						},
 						["lvl"] = {
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							50,
 							-- #else
 							120,
@@ -800,7 +800,7 @@ root(ROOTS.ExpansionFeatures,
 								ach(12993),	-- Don't Warfront Me
 								ach(13739, {	-- Heroic: Tour of War (A)
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(45806),	-- Eitrigg
 										crit(45813),	-- Lady Liadrin
 										crit(45814),	-- Rokhan
@@ -808,7 +808,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								ach(13738, {	-- Heroic: Tour of War (H)
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(45802),	-- Danath Trollbane
 										crit(45803),	-- Turalyon
 										crit(45804),	-- Muradin
@@ -821,9 +821,9 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								ach(12884, {	-- Leader of Troops (A)
-									["description"] = "You must personally create each troop.  Siege Engines are limited to 3 active at a time.",
+									["description"] = "You must personally create each troop. Siege Engines are limited to 3 active at a time.",
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(41124),	-- Footmen
 										crit(41125),	-- Riflemen
 										crit(41126),	-- Priests
@@ -832,9 +832,9 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								ach(12878, {	-- Leader of Troops (H)
-									["description"] = "You must personally create each troop.  Demolishers are limited to 3 active at a time.",
+									["description"] = "You must personally create each troop. Demolishers are limited to 3 active at a time.",
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(41120),	-- Grunts
 										crit(41121),	-- Axe Throwers
 										crit(41122),	-- Shaman
@@ -845,7 +845,7 @@ root(ROOTS.ExpansionFeatures,
 								ach(12889, {	-- Strike Fast (A)
 									["description"] = "You must personally capture each flag.",
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										ach(12888, {	-- Strike Hard
 											["races"] = ALLIANCE_ONLY,
 										}),
@@ -861,7 +861,7 @@ root(ROOTS.ExpansionFeatures,
 								ach(12876, {	-- Strike Fast (H)
 									["description"] = "You must personally capture each flag.",
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										ach(12877, {	-- Strike Hard
 											["races"] = HORDE_ONLY,
 										}),
@@ -877,7 +877,7 @@ root(ROOTS.ExpansionFeatures,
 								ach(12886, {	-- Tour of War (A)
 									["description"] = "Only one commander is up per warfront cycle.",
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(43480),	-- Eitrigg
 										crit(42134),	-- Lady Liadrin
 										crit(42135),	-- Rokhan
@@ -886,7 +886,7 @@ root(ROOTS.ExpansionFeatures,
 								ach(12879, {	-- Tour of War (H)
 									["description"] = "Only one commander is up per warfront cycle.",
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										crit(43479),	-- Danath Trollbane
 										crit(42136),	-- Turalyon
 										crit(42137),	-- Muradin
@@ -1111,7 +1111,7 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- bnet api has horde box
-									["g"] = {
+									["groups"] = {
 										i(169197, {	-- Warfronts Equipment Cache
 											n(BACK, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 23, BACK),
@@ -1127,15 +1127,15 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53175, {	-- The Warfront Looms
 									["races"] = ALLIANCE_ONLY,
-									["isBreadcrumb"] = true,
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
+									["isBreadcrumb"] = true,
 									["DisablePartySync"] = true,
 								}),
 								q(53194, {	-- To The Front
+									["sourceQuest"] = 53175,	-- The Warfront Looms
 									["provider"] = { "n", 142721 },		-- Ralston Karn
 									["coord"] = { 65.89, 26.03, BORALUS },
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
-									["sourceQuest"] = 53175,	-- The Warfront Looms
 								}),
 								q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 									["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
@@ -1143,10 +1143,10 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 									["isWeekly"] = true,
 									["_drop"] = { "g" },	-- bnet api has horde box
-									["g"] = {
+									["groups"] = {
 										i(164578, {	-- Warfronts Equipment Cache
 											["modID"] = 6,
-											["g"] = {
+											["groups"] = {
 												n(BACK, clone(ALLIANCE_WARFRONT_BACKS)),
 												n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR)),
 												n(WEAPONS, {
@@ -1157,8 +1157,8 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53185, {	-- Warfront Contribution
-									["provider"] = { "n", 142721 },	-- Ralston Karn
 									["sourceQuest"] = 53194,	-- To The Front
+									["provider"] = { "n", 142721 },	-- Ralston Karn
 									["coord"] = { 66.0, 26.0, BORALUS },
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -1370,12 +1370,12 @@ root(ROOTS.ExpansionFeatures,
 									["isWeekly"] = true,
 								}),
 								q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.9, 94.3, DAZARALOR },
 									["races"] = HORDE_ONLY,
 									["isWeekly"] = true,
-									["g"] = {
+									["groups"] = {
 										i(169196, {	-- Warfronts Equipment Cache
 											n(BACK, {
 												["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 23, BACK),
@@ -1390,32 +1390,32 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53207, {	-- The Warfront Looms
+									["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",
+									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.97, 94.35, DAZARALOR },
-									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
-									["isBreadcrumb"] = true,
-									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
-									["DisablePartySync"] = true,
-									["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
 									["races"] = HORDE_ONLY,
+									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
+									["isBreadcrumb"] = true,
+									["DisablePartySync"] = true,
 								}),
 								q(53208, {	-- To The Front
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["sourceQuest"] = 53207,	-- The Warfront Looms
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.9, 94.4, DAZARALOR },
 									["races"] = HORDE_ONLY,
+									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 								}),
 								q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["sourceQuest"] = 53212,	-- Back to Zuldazar
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.97, 94.35, DAZARALOR },
-									["isWeekly"] = true,
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["isWeekly"] = true,
+									["groups"] = {
 										i(164577, {	-- Warfronts Equipment Cache
 											["modID"] = 6,
-											["g"] = {
+											["groups"] = {
 												n(BACK, clone(HORDE_WARFRONT_BACKS)),
 												n(ARMOR, clone(HORDE_WARFRONT_ARMOR)),
 												n(WEAPONS, {
@@ -1441,34 +1441,34 @@ root(ROOTS.ExpansionFeatures,
 								}),
 
 								q(53198, {	-- Back to Boralus
-									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
-									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 									["sourceQuest"] = 53197,	-- Touring the Front
+									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
+									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 									["isBreadcrumb"] = true,
 								}),
 								q(53212, {	-- Back to Zuldazar
-									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
-									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["sourceQuest"] = 53210,	-- Touring the Front
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["coord"] = { 26.11, 35.59, ARATHI_HIGHLANDS },
 									["races"] = HORDE_ONLY,
+									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["isBreadcrumb"] = true,
 								}),
 								q(53153, {	-- Death to the Defilers
-									["providers"] = {
-										{ "n", 143172 },	-- Yvera Dawnwing [Arathi Highlands Location]
-										{ "n", 143380 },	-- Yvera Dawnwing [Boralus Location]
-									},
 									["sourceQuest"] = 53198,	-- Back to Boralus
+									["qgs"] = {
+										143172,	-- Yvera Dawnwing [Arathi Highlands Location]
+										143380,	-- Yvera Dawnwing [Boralus Location]
+									},
 									["coord"] = { 21.71, 64.88, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
 									["repeatable"] = true,
 									["u"] = REMOVED_FROM_GAME,
 									["_drop"] = { "g" },	-- bnet api has horde box
-									["g"] = {
-										-- #IF BEFORE SHADOWLANDS
+									["groups"] = {
+										-- #if BEFORE SL
 										-- this is distorting actual live rewards
 										i(164578, {	-- Warfronts Equipment Cache (A)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
@@ -1479,25 +1479,25 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53197, {	-- Touring the Front (A)
-									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
-									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 									["sourceQuest"] = 53194,	-- To The Front
+									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
 									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
+									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 								}),
 								q(53210, {	-- Touring the Front (H)
-									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
-									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["sourceQuest"] = 53208,	-- To The Front
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["coord"] = { 26.1, 35.5, ARATHI_HIGHLANDS },
 									["races"] = HORDE_ONLY,
+									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 								}),
 								q(53154, {	-- The League Will Lose [Horde]
-									["u"] = REMOVED_FROM_GAME,
 									["races"] = HORDE_ONLY,
 									["repeatable"] = true,
-									["g"] = {
-										-- #IF BEFORE SHADOWLANDS
+									["u"] = REMOVED_FROM_GAME,
+									["groups"] = {
+										-- #if BEFORE SL
 										-- this is distorting actual live rewards
 										i(164577, {	-- Warfronts Equipment Cache (H)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
@@ -1515,9 +1515,9 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(53666, {	-- Armor Up!
-									["races"] = HORDE_ONLY,
 									["qg"] = 133374,	-- Drom'kal
 									["coord"] = { 58.9, 25.8, 943 },
+									["races"] = HORDE_ONLY,
 								}),
 								q(53677, {	-- Beasts of Newstead
 									["races"] = ALLIANCE_ONLY,
@@ -1527,7 +1527,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(47283, {	-- Chop, Chop
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										i(156531),	-- Freshly-Chopped Wood (QI!)
 										i(156514),	-- Sturdy Axe (QI!)
 									},
@@ -1536,7 +1536,7 @@ root(ROOTS.ExpansionFeatures,
 									["qg"] = 139446,	-- Lumbering Leo
 									["coord"] = { 36.5, 59.6, 1044 },	-- Arathi Highlands
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										i(156531),	-- Freshly-Chopped Wood (QI!)
 										i(161130),	-- Sturdy Axe (QI!)
 									},
@@ -1546,21 +1546,21 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53668, {	-- Flightgineer's Network
 									["races"] = HORDE_ONLY,
-									["g"] = {
+									["groups"] = {
 										i(164598),	-- Krazzle's Scribbled Note (QI!)
 									},
 								}),
 								q(52439, {	-- Iron Stores
 									["races"] = ALLIANCE_ONLY,
-									["g"] = {
+									["groups"] = {
 										i(159728),	-- Heavy Iron Key (QI!)
 									},
 								}),
 								q(51082, {	-- Iron Stores
-									["races"] = HORDE_ONLY,
 									["qg"] = 131750,	-- Lug'ruk
 									["coord"] = { 61.4, 25.6, 943 },
-									["g"] = {
+									["races"] = HORDE_ONLY,
+									["groups"] = {
 										i(159728),	-- Heavy Iron Key (QI!)
 									},
 								}),
@@ -1570,9 +1570,9 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(53665, {	-- Ready for Battle
-									["races"] = HORDE_ONLY,
 									["qg"] = 133959,	-- Lieutenant Akaro
 									["coord"] = { 60.6, 28.1, 943 },
+									["races"] = HORDE_ONLY,
 								}),
 								q(53674, {	-- The Altar's Power
 									["qg"] = 137698,	-- Captain Roderick Brewston
@@ -1580,14 +1580,14 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(53669, {	-- The Altar's Power
-									["races"] = HORDE_ONLY,
 									["qg"] = 131602,	-- Wistel Silversnitch
 									["coord"] = { 60.8, 25.3, 943 },
+									["races"] = HORDE_ONLY,
 								}),
 								q(53671, {	-- The Circle's Power
-									["races"] = HORDE_ONLY,
 									["qg"] = 144612,	-- Arcanist Ilira
 									["coord"] = { 69.5, 47.6, 943 },
+									["races"] = HORDE_ONLY,
 								}),
 								q(53676, {	-- The Circle's Power
 									["races"] = ALLIANCE_ONLY,
@@ -1629,7 +1629,7 @@ root(ROOTS.ExpansionFeatures,
 								["groups"] = {
 									i(164578, {	-- Warfronts Equipment Cache [A]
 										["modID"] = 3,
-										["g"] = {
+										["groups"] = {
 											n(BACK, clone(ALLIANCE_WARFRONT_BACKS)),
 											n(ARMOR, clone(ALLIANCE_WARFRONT_ARMOR)),
 											n(WEAPONS, {
@@ -1639,7 +1639,7 @@ root(ROOTS.ExpansionFeatures,
 									}),
 									i(164577, {	-- Warfronts Equipment Cache [H]
 										["modID"] = 3,
-										["g"] = {
+										["groups"] = {
 											n(BACK, clone(HORDE_WARFRONT_BACKS)),
 											n(ARMOR, clone(HORDE_WARFRONT_ARMOR)),
 											n(WEAPONS, {

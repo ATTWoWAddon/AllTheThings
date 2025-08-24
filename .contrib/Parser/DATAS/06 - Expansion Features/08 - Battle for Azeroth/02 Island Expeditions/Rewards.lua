@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ISLAND_EXPEDITIONS, {
 		n(SCENARIO_COMPLETION, {
 			["description"] = "These are the random rewards you can receive by completing an Island Expedition or by purchasing the salvage boxes from vendors. It is estimated that winning will give you a higher chance to receive a reward.\n\nIf you receive something not listed here, please screenshot and submit it to our Discord.",
-			["g"] = bubbleDown({["modID"] = 0}, {
+			["groups"] = bubbleDown({["modID"] = 0}, {
 				i(173950, {	-- Crestfall Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(HEAD, {
 							i(164367),	-- Plundered Blue Captain's Hat
 							i(164368),	-- Plundered Crimson Captain's Hat
@@ -65,7 +65,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173949, {	-- Dread Chain Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164508),	-- Frostwind Cowl
 							i(164513),	-- Frostwind Mantle
@@ -119,7 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173988, {	-- Havenswood Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(166828),	-- Dark Animator's Cowl
 							i(166825),	-- Dark Animator's Mantle
@@ -171,7 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173989, {	-- Jorundall Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164534),	-- Bloodwake Helmet
 							i(164536),	-- Bloodwake Spaulders
@@ -231,7 +231,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173991, {	-- Rotting Mire Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(HEAD, {
 							i(164367),	-- Plundered Blue Captain's Hat
 							i(164368),	-- Plundered Crimson Captain's Hat
@@ -282,7 +282,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173992, {	-- Skittering Hollow Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164476),	-- Spider Acolyte's Cowl
 							i(164481),	-- Spider Acolyte's Amice
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173993, {	-- Snowblossom Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164452),	-- Swarmfury Crown
 							i(164457),	-- Swarmfury Amice
@@ -371,7 +371,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173990, {	-- Molten Cay Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164526),	-- Rattling Bone Mask
 							i(164528),	-- Rattling Bone Spaulders
@@ -434,7 +434,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173994, {	-- Un'gol Ruins Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164495),	-- Headshrinker's Cowl
 							i(164497),	-- Headshrinker's Shoulders
@@ -473,7 +473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173996, {	-- Verdant Wilds Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164391),	-- Feralbark Cover
 							i(164393),	-- Feralbark Shoulders
@@ -512,7 +512,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173997, {	-- Whispering Reef Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164471),	-- Mrrglurggl Helm
 							i(164473),	-- Mrrglurggl Spaulders
@@ -547,7 +547,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173987, {	-- Elemental Salvage
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164559),	-- Firekin Headgear
 							i(164561),	-- Firekin Amice
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				i(173995, {	-- Venture Co 'Salvage'
 					["modID"] = 14,
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
-					["g"] = {
+					["groups"] = {
 						n(ARMOR, {
 							i(164399),	-- Dragonrider's Helmet
 							i(164401),	-- Dragonrider's Spaulders
@@ -644,19 +644,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				filter(MISC, {
 					i(163611, {	-- Seafarer's Coin Pouch
 						["description"] = "Contains roughly 1-4 dubloons, more if you have the research.",
-						["g"] = {
+						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163612, {	-- Wayfinder's Satchel
 						["description"] = "Contains roughly 5-8 dubloons, more if you have the research.",
-						["g"] = {
+						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
 					i(163613, {	-- Sack of Plunder
 						["description"] = "Contains roughly 9-12 dubloons, more if you have the research.",
-						["g"] = {
+						["groups"] = {
 							currency(1710),	-- Seafarer's Dubloon
 						},
 					}),
@@ -665,35 +665,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 					i(163616, {	-- Dented Coin (A)
 						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163614, {	-- Exotic Spices (A)
 						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-						["races"] = ALLIANCE_ONLY,
+					}),
+					i(173947, {	-- Glittering Abyssal Conch (A)
+						["timeline"] = { ADDED_8_3_0 },
+					}),
+					i(173948, {	-- Glittering Abyssal Conch (H)
+						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(163619, {	-- Golden Beetle (H)
 						["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163620, {	-- Island Flotsam (H)
 						["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163615, {	-- Lost Sea Scroll (A)
 						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163617, {	-- Rusted Alliance Insignia (A)
 						["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163621, {	-- Rusted Horde Insignia (H)
 						["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163618, {	-- Shimmering Shell (H)
 						["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(166501, {	-- Soggy Page
 						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",

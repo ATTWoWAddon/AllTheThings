@@ -5,7 +5,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 	m(THE_FORBIDDEN_REACH, {
 		n(ACHIEVEMENTS, {
 			ach(17524, {	-- Adventurer of the Forbidden Reach
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",17525}},	-- Champion of the Forbidden Reach
 			}),
 			ach(17525, {	-- Champion of the Forbidden Reach
@@ -48,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					17398,	-- Dragon Glyphs: Winglord's Perch
 				}},
 			}),
-			explorationAch(17534),	-- Explore the Forbidden Reach
+			ach(17534),	-- Explore the Forbidden Reach
 			ach(17529),	-- Forbidden Spoils
 			petbattle(ach(17541, {	-- Global Swarming
 				["sym"] = {{ "achievement_criteria" }},
@@ -68,40 +67,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			ach(17526, {	-- Treasures of the Forbidden Reach
 				crit(58487, {	-- Forbidden Hoard
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58488, {	-- Avian Trove
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58489, {	-- Obsidian Coffer
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58490, {	-- Spellsworn Reserves
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58491, {	-- Bone Pile
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58492, {	-- Farscale Cache
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58493, {	-- Irontide Stash
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58494, {	-- Storm-Eater Cairn
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58495, {	-- Stonescaled Cairn
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58496, {	-- Blazing Cairn
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58497, {	-- Frozenheart Cairn
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 				crit(58498, {	-- Morqut Provisions
-					-- TODO: ["_quests"] = {  },
+					-- ["_quests"] = {  },
 				}),
 			}),
 			ach(17315, {	-- While We Were Sleeping
@@ -123,7 +122,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					17540,	-- Under the Weather
 					17315,	-- While We Were Sleeping
 				}},
-				["g"] = {
+				["groups"] = {
 					title(495),	-- <Name> the Forbidden [Unsure if this got deleted/removed?]
 					title(533, {	-- The Forbidden <Name>
 						["timeline"] = { ADDED_10_2_6 },

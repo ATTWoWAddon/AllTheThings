@@ -380,8 +380,10 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				-- ["displayID"] = ,
 			}),
 			-- Without SpeciesID Attached
+			-- #if NOT ANYCLASSIC
 			i(88148),	-- Jade Crane Chick (PET!) [Jade Crane Chick, item was never used]
-			i(82800),	-- Pet Cage (PET!)
+			-- #endif
+			--i(82800),	-- Pet Cage (PET!)
 		})),
 
 		-- 5.1.0
@@ -710,9 +712,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(136906, {	-- Brown Piglet (PET!)
 				["displayID"] = 65669,
-			}),
-			i(129108, {	-- Son of Goredome (PET!)
-				["displayID"] = 65527,
 			}),
 			-- Without SpeciesID Attached
 			i(136897),	-- Northern Hawk Owl (PET!) [Northern Hawk Owl, item was never used]
@@ -1176,7 +1175,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- Trainer Pets --
 			pet(3393),	-- Anubisath Idol (PET!)
 			pet(3401),	-- Arcantus (PET!)
@@ -1408,23 +1407,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(4237),	-- Treanthony (PET!)
 		})),
 
-		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			-- With SpeciesID Attached
-			i(212791, {	-- Beetriz (PET!)
-				["displayID"] = 116643,
-			}),
-			i(208446, {	-- Fyrn (PET!)
-				["displayID"] = 113777,
-			}),
-		})),
-
 		-- 10.2.7
 		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			-- With SpeciesID Attached
-			i(223498, {	-- Charismatic Courier (PET!)
-				["displayID"] = 120173,
-			}),
 			i(223499, {	-- Lil' Manny (PET!)
 				["displayID"] = 119700,
 			}),
@@ -1432,7 +1417,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			-- Only itemID
 			i(220163),	-- [PH] Cinder Bee
 			-- Only SpeciesID
@@ -1475,9 +1460,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- With SpeciesID Attached
 			i(222969, {	-- Anub'Rekyute (PET!)
 				["displayID"] = 114049,
-			}),
-			i(221851, {	-- Argos (PET!)
-				["displayID"] = 118863,
 			}),
 			i(221764, {	-- Burntram (PET!)
 				["displayID"] = 103840,
@@ -1554,8 +1536,73 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		-- 11.0.7
 		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			-- Only SpeciesID
-			pet(4725, {	-- Titan Orb PET!)
-				--["displayID"] = ,
+			pet(4725, {	-- Titan Orb (PET!)
+				["displayID"] = 124606,
+			}),
+			-- With SpeciesID Attached
+			i(234905, {	-- Mech-Friend Maya (PET!)
+				["displayID"] = 125160,
+			}),
+			i(233057, {	-- Rock Hound Mica (PET!)
+				["displayID"] = 124374,
+			}),
+			-- Without SpeciesID Attached
+			i(235988, {	-- Parley (PET!)
+				["displayID"] = 124174,
+			}),
+		})),
+
+		-- 11.1.0
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+			-- Trainer Pets --
+			pet(4741),	-- Cannoneer (PET!)
+			pet(4739),	-- Fancier Rat (PET!)
+			pet(4740),	-- Handbag Hyena (PET!)
+			pet(4742),	-- Lookout (PET!)
+			pet(4744),	-- Muddy Croach (PET!)
+			pet(4737),	-- Precision Powerdrill (PET!)
+			pet(4745),	-- Rusty Croach (PET!)
+			pet(4746),	-- Sooty Croach (PET!)
+			pet(4738),	-- Status Symbol (PET!)
+			pet(4743),	-- Swabbie (PET!)
+			--
+			i(231628, {	-- Bawkinator 2000 (PET!)
+				["displayID"] = 75333,
+			}),
+			i(231627, {	-- Black Cave Crab (PET!)
+				["displayID"] = 120695,
+			}),
+			-- #if BEFORE 11.2.0
+			i(231757, {	-- Cauldrone (PET!) TODO: [wrong ItemID]
+				["displayID"] = 47711,
+			}),
+			-- #endif
+			i(231760, {	-- Crunchy (PET!)
+				["displayID"] = 54848,
+			}),
+			i(231762, {	-- Dosh (PET!)
+				["displayID"] = 123032,
+			}),
+			i(231758, {	-- Finnity (PET!)
+				["displayID"] = 74800,
+			}),
+			i(231763, {	-- FO-MO Mark II (PET!)
+				["displayID"] = 111667,
+			}),
+			i(235909, {	-- Gleam (PET!)
+				["displayID"] = 89251,
+			}),
+			i(232854, {	-- Grinner (PET!)
+				["displayID"] = 121850,
+			}),
+			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
+			-- 	["displayID"] = 120709,
+			-- }),
+			i(232856, {	-- Scruff (PET!)
+				["displayID"] = 121851,
+			}),
+			i(231613, {	-- Yellow Tropical Frog (PET!)
+				["displayID"] = 122963,
 			}),
 		})),
 	}),

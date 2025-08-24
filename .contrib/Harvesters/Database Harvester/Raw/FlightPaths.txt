@@ -775,7 +775,9 @@
 1117@@@Hellscream's Fist, Townlong Steppes
 1130@@@Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
 1131@@@Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
-6.0.1.18125
+5.5.0.60481
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
 1117@@@Serpent's Spine, Kun-Lai Summit
 1190@@@Lion's Landing, Krasarang Wilds
 1195@@@Domination Point, Krasarang Wilds
@@ -786,6 +788,7 @@
 1292@@@Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
 1293@@@Tushui Landing, Timeless Isle
 1294@@@Huojin Landing, Timeless Isle
+6.0.1.18125
 1350@@@Shadowmoon Valley 6.0 - Observatory (JP3)
 1351@@@Shadowmoon Valley 6.0 - Ironhorde POI (JP3)
 1381@@@Teluuna Observatory, Shadowmoon Valley
@@ -1085,8 +1088,6 @@
 7.3.0.24829
 2020@@@Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB
 7.3.5.25600
-951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
-963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
 1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
 7.3.5.25632
 2058@@@Staghelm Point, Silithus
@@ -2743,3 +2744,34 @@
 2998@@@Demolition Dome
 2999@@@The Gallagio
 3000@@@Gutterville, The Ringing Deeps
+11.1.7.60520
+3005@@@Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)
+3122@@@Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)
+11.2.0.61476
+3026@@@Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
+3029@@@Tazavesh, K'aresh
+3030@@@Eco-Dome: Rhovan, K'aresh
+3031@@@The Oasis, K'aresh
+3032@@@Shan'dorah, K'aresh
+3033@@@Shadow Point, K'aresh
+3034@@@Overlook Zo'shuul, K'aresh
+3035@@@Hosaas Rest, K'aresh
+3111@@@Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC
+11.2.0.61624
+3034@@@Overlook Zo'Shuul, K'aresh
+11.2.0.61787
+3145@@@Tazavesh, the Veiled Market
+3146@@@The Oasis
+3147@@@Shan'dorah
+3155@@@Shadow Point
+3156@@@Serrated Peaks
+3157@@@Overlook Zo'Shuul
+3158@@@Lunnall River
+3159@@@North Sufaad
+3160@@@Naakroa
+3161@@@Fracture of Laacuna
+3162@@@Untethered Space
+3163@@@Ruins of Yaathron
+3164@@@Hosaas' Rest
+11.2.5.62554
+1767@@@Nesingwary's Retreat, Highmountain

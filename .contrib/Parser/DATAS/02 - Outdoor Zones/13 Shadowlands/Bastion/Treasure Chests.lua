@@ -34,25 +34,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 61.1, 15.1, BASTION },
 				["questID"] = 61698,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180783),	-- Design: Crown of the Righteous (RECIPE!)
 					i(183756),	-- Floating Circlet
 				},
 			}),
 			o(354275, {	-- Experimental Construct Part
-				["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area.  It looks similar to the other jars of anima, but is smaller and glows purple.",
+				["description"] = "Requires an |cFFFFFFFFUnstable Construct Anima|r, which can be found in the surrounding area. It looks similar to the other jars of anima, but is smaller and glows purple.",
 				["coord"] = { 51.5, 18.0, BASTION },
 				["questID"] = 61052,
 				["cost"] = { { "i", 180534, 1 } },	-- Unstable Construct Anima
-				["g"] = {
+				["groups"] = {
 					i(183609),	-- Re-Powered Golliath Fists
 				},
 			}),
 			o(353942, {	-- Gift of Agthia
-				["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it.  An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock.  Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
+				["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it. An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock. Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
 				["coord"] = { 39.1, 54.4, BASTION },
 				["questID"] = 60893,	-- 62847 also completed when opening
-				["g"] = {
+				["groups"] = {
 					i(180063),	-- Unearthly Chime
 				},
 			}),
@@ -60,14 +60,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Kneel in front of the chest.",
 				["coord"] = { 70.4, 36.4, BASTION },
 				["questID"] = 60892,
-				["g"] = {
+				["groups"] = {
 					i(183988),	-- Bondable Val'kyr Diadem (TOY!)
 				},
 			}),
 			o(353944, {	-- Gift of Devos
 				["coord"] = { 27.6, 21.8, BASTION },
 				["questID"] = 60895,
-				["g"] = {
+				["groups"] = {
 					i(179977),	-- Benevolent Gong
 				},
 			}),
@@ -78,15 +78,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 40.6, 18.9, BASTION },	-- Treasure
 				},
 				["questID"] = 60894,
-				["g"] = {
+				["groups"] = {
 					i(181290),	-- Harmonious Sigil of the Archon
 				},
 			}),
 			o(353940, {	-- Gift of Vesiphone
-				["description"] = "Ring one of the Bells of Purification on either side of the treasure.  Then turn around and stand in the waterfall next to the Purity Steward.  You will get a buff called Proof of Purity, allowing you to open the chest.",
+				["description"] = "Ring one of the Bells of Purification on either side of the treasure. Then turn around and stand in the waterfall next to the Purity Steward. You will get a buff called Proof of Purity, allowing you to open the chest.",
 				["coord"] = { 64.8, 71.1, BASTION },
 				["questID"] = 60890,
-				["g"] = {
+				["groups"] = {
 					i(180859),	-- Purity (PET!)
 				},
 			}),
@@ -94,15 +94,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coords"] = {	-- there might be more
 					{ 24.5, 18.0, BASTION },
 					{ 24.8, 23.3, BASTION },
-				--	{ 25.6, 26.2, BASTION },
+					{ 25.6, 26.2, BASTION },
 					{ 27.5, 21.7, BASTION },
 					{ 28.2, 24.8, BASTION },
 				},
 				["questID"] = 60663,
 				["isDaily"] = true,	-- repeatable?
-				["g"] = {
+				["groups"] = {
 					i(184418),	-- Acrobatic Steward (TOY!)
-				}
+				},
 			}),
 			o_repeated({
 			-- Rewards
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isDaily"] = true,
 				}),
 				o(353871, {	-- Hidden Hoard
-					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff.  You'll have to walk along a ledge halfway up the cliffside to access it.",
+					["description"] = "The coordinates are for a cave entrance hidden in the side of a cliff. You'll have to walk along a ledge halfway up the cliffside to access it.",
 					["coord"] = { 47.7, 35.1, BASTION },
 					["questID"] = 60878,	-- also 60875
 					["isDaily"] = true,
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "At the back of the cave.",
 				["coord"] = { 55.7, 42.8, BASTION },	-- cave entrance
 				["questID"] = 61049,
-				["g"] = {
+				["groups"] = {
 					i(182653),	-- Larion Treats
 					i(183126),	-- Kyrian Smith's Kit
 				},
@@ -154,12 +154,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(354213, {	-- Lost Disciple's Notes
 				["coord"] = { 59.3, 60.9, BASTION },
 				["questID"] = 61048,
-				["g"] = {
+				["groups"] = {
 					i(182693),	-- Lost Disciple's Notes
 				},
 			}),
 			o(355286, {	-- Memorial Offerings
-				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest.  Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
+				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest. Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
 				["coord"] = { 56.5, 17.2, BASTION },
 				["questID"] = 61150,
 				["cost"] = {
@@ -167,16 +167,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ "i", 180797, 1 },	-- Memorial Offering Key (QI!)
 				},
 			}),
+			o(339587, {	-- Purians
+				["coords"] = {
+					{ 54.4, 81.8, BASTION },
+					{ 54.4, 82.7, BASTION },
+				},
+				["groups"] = { i(173973) },	-- Purian
+			}),
 			o(339601, {	-- Scroll of Aeons
 				["description"] = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
 				["coords"] = {
-					{ 54.3, 81.8, BASTION },	-- Purian
 					{ 54.4, 83.8, BASTION },	-- Tribute
 					{ 56.1, 83.0, BASTION },	-- Tribute
 					{ 53.5, 80.4, BASTION },	-- Treasure
 				},
 				["questID"] = 58298,	-- triggers 58292, 58293 and 58294 too
-				["g"] = {
+				["cost"] = {{"i", 173973, 2}},	-- 2x Purian
+				["groups"] = {
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
@@ -185,7 +192,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = {
 					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
 				},
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["isDaily"] = true,
 				},{
 					-- Rewards
@@ -242,13 +249,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60798,	-- also triggered 60874... why two quests?
 				-- also triggered 60799 for non-kyrian
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 				},
 			}),
 			o(353650, {	-- Steward's Golden Chest
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-				["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map.  Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
+				["description"] = "Ask Elios about the Steward of the Day, and he will pin their location on your map. Take a Ripe Purian to the steward, and then you can come back and loot the chest.",
 				["coord"] = { 53.2, 46.4, BASTION },
 				["questID"] = 60779,
 				["isDaily"] = true,
@@ -260,14 +267,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(354208, {	-- Stolen Equipment
 				["coord"] = { 40.5, 49.8, BASTION },
 				["questID"] = 61044,
-				["g"] = {
+				["groups"] = {
 					i(182561),	-- Fallen Disciple's Cloak
 				},
 			}),
 			o(339641, {	-- The Purifying Draught
 				["coord"] = { 52.0, 86.0, BASTION },
 				["questID"] = 58329,
-				["g"] = {
+				["groups"] = {
 					i(174007),	-- Purifying Draught
 				},
 			}),
@@ -275,7 +282,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 				["coord"] = { 58.6, 71.4, BASTION },
 				["questID"] = 60478,	-- 62841 triggered too
-				["g"] = {
+				["groups"] = {
 					i(179982),	-- Kyrian Bell
 				},
 			}),
@@ -285,12 +292,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isDaily"] = true,
 			}),
 			o(354289, {	-- Windsmith's Tools
-				["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure.  After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
+				["description"] = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure. After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
 				["coord"] = { 35.8, 48.1, BASTION },
 				["questID"] = 61053,
 				["crs"] = { 170009 },	-- Unsettled Etherwyrm
 				["cost"] = { { "i", 180536, 1 } },	-- 1x Broken Kyrian Flute
-				["g"] = {
+				["groups"] = {
 					i(180064),	-- Ascended Flute
 				},
 			}),

@@ -52,6 +52,26 @@ i(228311, 461733, nil, MASTER_HAMMERSMITH);	-- Finely-Enchanted Battlehammer
 i(227905, 461647, nil, MASTER_HAMMERSMITH);	-- Skyrider's Masterwork Stormhammer
 i(228308, 461718, nil, MASTER_HAMMERSMITH);	-- Tranquility
 i(228306, 461714, nil, MASTER_SWORDSMITH);	-- Desecration
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+i(234220, 1213481, nil, ARMORSMITH);			-- Razorspike Headcage
+i(234221, 1213484, nil, ARMORSMITH);			-- Razorspike Shoulderplate
+i(234222, 1213490, nil, ARMORSMITH);			-- Razorspike Battleplate
+i(234429, 1214137, nil, WEAPONSMITH);			-- Obsidian Heartseeker
+i(234228, 1213506, nil, MASTER_AXESMITH);		-- Obsidian Defender
+i(234223, 1213492, nil, MASTER_AXESMITH);		-- Obsidian Reaver
+i(234225, 1213500, nil, MASTER_HAMMERSMITH);	-- Obsidian Destroyer
+i(234226, 1213502, nil, MASTER_HAMMERSMITH);	-- Obsidian Stormhammer
+i(234227, 1213504, nil, MASTER_SWORDSMITH);		-- Obsidian Sageblade
+i(234224, 1213498, nil, MASTER_SWORDSMITH);		-- Obsidian Champion
+i(234458, 1214270);	-- Jagged Obsidian Shield
+i(234279, 1213643);	-- Obsidian Grinding Stone
+i(234085, 1214257);	-- Black Grasp of the Destroyer
+i(234461, 1214274);	-- Obsidian Mail Tunic
+i(235039, 1215507);	-- Thick Obsidian Breastplate
+
 -- #endif
 
 -----------------

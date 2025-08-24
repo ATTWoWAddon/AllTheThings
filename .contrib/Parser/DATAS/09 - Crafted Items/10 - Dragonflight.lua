@@ -67,7 +67,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
-			["g"] = {
+			["groups"] = {
 				i(193366, {	-- Advanced Phial Experimentation
 					-- Move to Basic Phial Experimentation if possible discovery
 					r(370460),	-- Phial of Charged Isolation (RECIPE!)
@@ -82,7 +82,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		spell(370745, {	-- Advanced Potion Experimentation
 			-- Nothing moved to Basic yet, so don't symlink to it
 			-- ["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
-			["g"] = {
+			["groups"] = {
 				i(193367, {	-- Advanced Potion Experimentation
 					-- Move to Basic Potion Experimentation if possible discovery
 					r(370478),	-- Potion of Frozen Fatality (RECIPE!)
@@ -1160,7 +1160,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
 			["description"] = "Multiple Ways of Discovering.",
-			["g"] = {
+			["groups"] = {
 				r(382350),	-- Calibrated Safety Switch
 				r(382319),	-- Complicated Cuffs
 				r(382349),	-- Critical Failure Prevention Unit
@@ -1390,7 +1390,31 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198263),	-- Bottomless Mireslush Ore Satchel
 			i(198262),	-- Bottomless Stonecrust Ore Satchel
 			i(198550),	-- Bronze Fireflight
-			i(198172),	-- Bundle of Fireworks
+			i(198172, {	-- Bundle of Fireworks
+				i(116147),	-- Alliance Firework
+				i(89893),	-- Autumn Flower Firework
+				i(198549),	-- Black Fireflight
+				i(198222),	-- Blue Fireflight
+				i(9312),	-- Blue Firework
+				i(198550),	-- Bronze Fireflight
+				i(88493),	-- Celestial Firework
+				i(41427),	-- Dalaran Firework
+				i(88491),	-- Grand Celebration Firework
+				i(198224),	-- Green Fireflight
+				i(9313),	-- Green Firework
+				i(116148),	-- Horde Firework
+				i(89888),	-- Jade Blossom Firework
+				i(34850),	-- Midsummer Ground Flower
+				i(198223),	-- Red Fireflight
+				i(9318),	-- Red Firework
+				i(5740),	-- Red Fireworks Rocket
+				i(9314),	-- Red Streaks Firework
+				i(9317),	-- Red, White and Blue Firework
+				i(87764),	-- Serpent's Heart Firework
+				i(19026),	-- Snake Burst Firework
+				i(116149),	-- Snake Firework
+				i(9315),	-- Yellow Rose Firework
+			}),
 			i(198253),	-- Calibrated Safety Switch+
 			i(198254),	-- Calibrated Safety Switch++
 			i(198255),	-- Calibrated Safety Switch+++
@@ -1550,7 +1574,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 	}),
 	prof(FISHING, {
-		i(198438, {	-- Draconic Recipe in a Bottle
+		container(198438, {	-- Draconic Recipe in a Bottle
 			["sym"] = {{"select","itemID",
 				-- Available from the Bottle but has another Source
 				194298,	-- Pattern: Forlorn Funeral Pall (RECIPE!)
@@ -1562,7 +1586,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				201738,	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor (RECIPE!)
 				198904,	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 			}},
-			["g"] = {
+			["groups"] = {
 				-- Only known source is the Bottle
 				i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
 				i(205161, {["timeline"] = {ADDED_10_1_0}}),	-- Plans: Heat-Resistant Rescue Ring (RECIPE!)
@@ -1643,7 +1667,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 		n(DISCOVERY, {
 			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["maps"] = { EMERALD_DREAM }
 				},{
 					r(422293),	-- Overload Overgrown Herb
@@ -1654,7 +1678,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			})),
 			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["maps"] = { ZARALEK_CAVERN }
 				},{
 					r(405124),	-- Lambent Bubble Poppy
@@ -3131,7 +3155,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Skinning Elusive Auric Argali
 			FirstSkin(78394, 212090, ADDED_10_2_0),	-- Skinning Elusive Blooming Brierhide
 			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
-			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451, {["questID"] = 75866,})),	-- Skinning Elusive Crystalscale Stonecleaver
+			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451)),	-- Skinning Elusive Crystalscale Stonecleaver / Flawless Crystal Scale (CI!)
 			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
 			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
 			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)

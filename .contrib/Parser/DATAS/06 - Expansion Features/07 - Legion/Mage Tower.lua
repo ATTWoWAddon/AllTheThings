@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Original Legion content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter, {
 		["description"] = "The Mage Tower Challenges were solo encounters designed for all of the 36 talent specializations in the game during Legion. They were designed to be challenging, but beatable. Access to these challenges was removed with the BFA Prepatch, 8.0.1.\n\nCongratulations to everyone that worked really hard attempting to collect all of these appearances!\n\n - Crieve (31/36)",
-		["g"] = {
+		["groups"] = {
 			ach(11611, {	-- A Challenging Look
 				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 			}),
@@ -30,6 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
 			}),
 			q(46065, {	-- An Impossible Foe
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					DEATHKNIGHT,	-- Unholy
 					DRUID,			-- Feral
@@ -38,7 +39,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					SHAMAN,			-- Elemental
 					WARRIOR,		-- Fury
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					115638,	-- Agatha
 					115719,	-- Imp Servant
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					115642,	-- Umbral Imp
 					115640,	-- Fuming Imp
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(947, {	-- Apocalypse
 						["classes"] = { DEATHKNIGHT },
 					}),
@@ -68,6 +68,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(44925, {	-- Closing the Eye
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					DEATHKNIGHT,	-- Frost
 					DEMONHUNTER,	-- Havoc
@@ -75,12 +76,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					ROGUE,			-- Subtlety
 					WARRIOR,		-- Arms
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					115244,	-- Archmage Xylem
 					116839,	-- Corrupting Shadows
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(383, {	-- Blades of the Fallen Prince
 						["classes"] = { DEATHKNIGHT },
 					}),
@@ -99,6 +99,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(46035, {	-- End of the Risen Threat
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					DRUID,		-- Restoration
 					PALADIN,	-- Holy
@@ -106,7 +107,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					PRIEST,		-- Holy
 					SHAMAN,		-- Restoration
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					118447,	-- Commander Jarod Shadowsong
 					118448,	-- Granny Marl
@@ -116,7 +116,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					119478,	-- Corrupted Risen Mage
 					119474,	-- Corrupted Risen Soldier
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(875, {	-- G'Hanir, the Mother Tree
 						["classes"] = { DRUID },
 					}),
@@ -135,18 +135,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(45627, {	-- Feltotem's Fall
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					HUNTER,		-- Beast Mastery
 					MONK,		-- Windwalker
 					PRIEST,		-- Discipline
 					WARLOCK,	-- Destruction
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					117230,	-- Tugar Bloodtotem
 					117484,	-- Jormog the Behemoth
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(466, {	-- Titanstrike
 						["classes"] = { HUNTER },
 					}),
@@ -162,6 +162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(45526, {	-- The God-Queen's Fury
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					MAGE,		-- Arcane
 					PALADIN,	-- Retribution
@@ -169,13 +170,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					SHAMAN,		-- Enhancemeent
 					WARLOCK,	-- Demonology
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					116484,	-- Sigryn
 					116499,	-- Jarl Velbrand
 					116496,	-- Runeseer Faljar
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(144, {	-- Aluneth
 						["classes"] = { MAGE },
 					}),
@@ -194,6 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(45416, {	-- The Highlord's Return
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					DEATHKNIGHT,	-- Blood
 					DEMONHUNTER,	-- Vengeance
@@ -202,7 +203,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					PALADIN,		-- Protection
 					WARRIOR,		-- Protection
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					117933,	-- Inquisitor Variss
 					118032,	-- Tormenting Eye
@@ -210,7 +210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					118044,	-- Nether Horror
 					117198,	-- Highlord Kruul
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(364, {	-- Maw of the Damned
 						["classes"] = { DEATHKNIGHT },
 					}),
@@ -232,6 +232,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			q(46127, {	-- Thwarting the Twins
+				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["classes"] = {
 					DRUID,		-- Balance
 					HUNTER,		-- Marksmanship
@@ -239,14 +240,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					PRIEST,		-- Shadow
 					WARLOCK,	-- Affliction
 				},
-				["provider"] = { "n", 117871 },	-- War Councilor Victoria
 				["crs"] = {
 					116410,	-- Karam Magespear
 					116409,	-- Raest Magespear
 					118698,	-- Hand from Beyond
 					119098,	-- Thing of Nightmare
 				},
-				["g"] = {
+				["groups"] = {
 					artifact(929, {	-- Scythe of Elune
 						["classes"] = { DRUID },
 					}),
@@ -269,7 +269,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	-- Rehashed Permanent content
 	n(MAGE_TOWER, bubbleDown(MageTowerFilter92, {
 		["description"] = "The Mage Tower Challenges are back, more challenging than ever. Good luck everyone!",
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(15309),	-- A Towering Success
 				ach(15310, {	-- A Tour of Towers

@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(274, {	-- Gundrak
 		["mapID"] = GUNDRAK,
 		["coord"] = { 76.3, 21.1, ZULDRAK },
@@ -103,8 +103,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(13098, {	-- For Posterity
-					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
+					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["coord"] = { 70, 21, ZULDRAK },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
@@ -156,8 +156,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(13096, {	-- Gal'darah Must Pay
-					["qg"] = 30671,	-- Tol'mar
 					["sourceQuest"] = 13097,	-- Unfinished Business
+					["qg"] = 30671,	-- Tol'mar
 					["coord"] = { 70.0, 22.8, ZULDRAK },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
@@ -200,8 +200,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(13111, {	-- One of a Kind
-					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["sourceQuest"] = 13099,	-- Just Checkin'
+					["qg"] = 30676,	-- Chronicler Bah'Kini
 					["coord"] = { 70, 21, ZULDRAK },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(74, 74, 20),
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(284, {

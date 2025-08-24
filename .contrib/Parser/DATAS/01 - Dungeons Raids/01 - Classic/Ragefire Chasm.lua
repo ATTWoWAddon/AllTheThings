@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = lvlsquish(13, 13, 7),
 		["groups"] = {
 			n(QUESTS, {
-				q(30998, {	-- A New Enemy
+				q(30998, {	-- A New Enemy (Alliance)
 					["qg"] = 61823,	-- High Sorceress Aryna
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(30969, {	-- A New Enemy
+				q(30969, {	-- A New Enemy (Horde)
 					["qg"] = 61716,	-- Invoker Xorenth
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -53,6 +53,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								61672,	-- Dark Shaman Acolyte
 								61412,	-- Dark Shaman Koranthal
 							},
+						}),
+					},
+				}),
+				q(30997, {	-- Animal Control (Alliance)
+					["qg"] = 61822,	-- SI:7 Field Commander Dirken
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_2_0 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
+					["groups"] = {
+						objective(1, {	-- 0/1 Adarogg slain
+							["provider"] = { "n", 61408 },	-- Adarogg
+						}),
+						objective(2, {	-- 0/1 Slagmaw slain
+							["provider"] = { "n", 61463 },	-- Slagmaw
+						}),
+					},
+				}),
+				q(30982, {	-- Animal Control (Horde)
+					["qg"] = 61724,	-- Commander Bagran
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_2_0 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
+					["groups"] = {
+						objective(1, {	-- 0/1 Adarogg slain
+							["provider"] = { "n", 61408 },	-- Adarogg
+						}),
+						objective(2, {	-- 0/1 Slagmaw slain
+							["provider"] = { "n", 61463 },	-- Slagmaw
 						}),
 					},
 				}),
@@ -76,12 +104,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(31034, {	-- Enemies Below [Orgrimmar]
 					["qgs"] = {
+						-- #if AFTER WOD
 						14720,	-- High Overlord Saurfang
 						3144,	-- Eitrigg
+						-- #else
+						39605,	-- Garrosh Hellscream
+						-- #endif
 					},
 					["coords"] = {
+						-- #if AFTER WOD
 						{ 48.6, 71.0, ORGRIMMAR },
 						{ 14.1, 73.8, ORGRIMMAR },
+						-- #else
+						{ 48.1, 70.5, ORGRIMMAR },
+						-- #endif
 					},
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -111,8 +147,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5728, {	-- Hidden Enemies (3/5)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -127,16 +163,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5729, {	-- Hidden Enemies (4/5)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5730, {	-- Hidden Enemies (5/5)
-					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
+					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -156,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(30995, {	-- No Man Left Behind
+				q(30995, {	-- No Man Left Behind (Alliance)
 					["qg"] = 61822,	-- SI:7 Field Commander Dirken
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -167,8 +203,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(30984, {	-- No Orc Left Behind
-					["qg"] = 61823,	-- Commander Bagran
+				q(30984, {	-- No Orc Left Behind (Horde)
+					["qg"] = 61724,	-- Commander Bagran
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 7),
@@ -196,11 +232,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5724, {	-- Returning the Lost Satchel
+					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["providers"] = {
 						{ "n", 11834 },	-- Maur Grimtotem
 						{ "i", 14381 },	-- Grimtotem Satchel
 					},
-					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -222,10 +258,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 9,
 				}),
 				q(5761, {	-- Slaying the Beast
-					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -235,7 +271,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26858, {	-- Taragaman the Hungerer
-					["qg"] = 44217,	-- Stone Guard Kurjack
 					["sourceQuests"] = {
 						28003,	-- Adventurer's Wanted: Ragefire Chasm
 						26865,	-- Enemies Below [Orgrimmar]
@@ -248,11 +283,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						31037,	-- Enemies Below [Undercity]
 						-- #endif
 					},
+					["qg"] = 44217,	-- Stone Guard Kurjack
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),
 					["groups"] = {
-						objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
+						objective(1, {	-- 0/4 Searing Blade Cultist slain
+							["provider"] = { "n", 11322 },	-- Searing Blade Cultist
+						}),
+						objective(2, {	-- 0/4 Searing Blade Enforcer slain
+							["provider"] = { "n", 11323 },	-- Searing Blade Enforcer
+						}),
+						objective(3, {	-- 0/3 Searing Blade Warlock slain
+							["provider"] = { "n", 11324 },	-- Searing Blade Warlock
+						}),
+						objective(4, {	-- 0/1 Taragaman the Hungerer's Heart
 							["provider"] = { "i", 14540 },	-- Taragaman the Hungerer's Heart
 						}),
 						i(131614, {	-- Chasm Linked Pants
@@ -281,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5723, {	-- Testing an Enemy's Strength
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
 					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -423,7 +468,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 5.0.4
 					ach(629, {	-- Ragefire Chasm
 						-- #if BEFORE WRATH
-						["sourceQuest"] = 5761,	-- Slaying the Beast
 						["races"] = HORDE_ONLY,
 						-- #endif
 					}),

@@ -4,7 +4,7 @@
 root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {
 	race(BLOODELF, bubbleDown({ ["timeline"] = { ADDED_9_2_5 }, ["races"] = { BLOODELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
-		["g"] = bubbleDown({
+		["groups"] = bubbleDown({
 			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED }
 		}, {
 			q(65652, {	-- Summons from the Matriarch (non-Paladin)
@@ -46,7 +46,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				},
 				["provider"] = { "n", 176826 },	-- Lady Liadrin
 				["coord"] = { 48.5, 32.1, GHOSTLANDS },
-				["g"] = {
+				["groups"] = {
 					i(184895),	-- Forged Ranseur (QI!)
 				},
 			}),
@@ -90,7 +90,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63488 },	-- I Am the Blade of the Light
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 35.6, 73.0, GHOSTLANDS },
-				["g"] = {
+				["groups"] = {
 					i(191604),	-- Veil-Touched Ranseur (Maybe only Paladin?)
 				},
 			}),
@@ -98,8 +98,8 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 34.2, 77.4, GHOSTLANDS },
-				["classes"] = exclude({DRUID, PALADIN, SHAMAN}, ALL_CLASSES),
-				["g"] = {
+				["classes"] = exclude({PALADIN}, BLOOD_ELF_CLASSES),
+				["groups"] = {
 					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 				},
 			}),
@@ -108,7 +108,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 34.0, 77.4, SILVERMOON_CITY },
 				["classes"] = { PALADIN },
-				["g"] = {
+				["groups"] = {
 					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 					iensemble(191565),	-- Ensemble: Blood Knight's Dedication
 				},
@@ -118,7 +118,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["coord"] = { 34.8, 81.9, GHOSTLANDS },
 				["questID"] = 66480,
 				["classes"] = { PALADIN },
-				["g"] = {
+				["groups"] = {
 					i(191957),	-- Fallen Knight's Ranseur
 				},
 			}),
@@ -126,7 +126,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 	})),
 	race(DARKIRON, bubbleDown({ ["timeline"] = { ADDED_9_2_5 }, ["races"] = { DARKIRON } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dark Iron Dwarf|r and completed |cFFFFD700 Heritage o' the Dark Iron|r, The Dark Iron Dwarf Heritage Quest.",
-		["g"] = {
+		["groups"] = {
 			q(63494, {	-- The Anvil-Thane's Designs
 				["sourceQuests"] = { 51483 },	-- Heritage o' the Dark Iron
 				["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
@@ -136,14 +136,14 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63494 },	-- The Anvil-Thane's Designs
 				["provider"] = { "n", 176828 },	-- Strongarm Jarden
 				["coord"] = { 51.7, 33.1, 1186 },
-				["g"] = {
+				["groups"] = {
 					i(184894),	-- Thurgaden's Designs
 				},
 			}),
 			q(63501, {	-- It's Called Borrowing
 				["sourceQuests"] = { 63498 },	-- Brawl or Brew
 				["provider"] = { "i", 184894 },	-- Thurgaden's Designs
-				["g"] = {
+				["groups"] = {
 					i(184916),	-- Boiling Flamecore (QI!)
 					i(184915),	-- Darkforged Ingot (QI!)
 					i(184917),	-- Flamepoint Engraver (QI!)
@@ -153,7 +153,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63501 },	-- It's Called Borrowing
 				["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
 				["coord"] = { 57.2, 31.9, 1186 },
-				["g"] = {
+				["groups"] = {
 					iensemble(184922),	-- Arsenal: Lavaforge Armaments
 				},
 			}),
@@ -166,7 +166,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 65563 },	-- Delivery for Kasea
 				["provider"] = { "n", 144119 },	-- Kasea Angerforge
 				["coord"] = { 47.7, 47.0, 1186 },
-				["g"] = {
+				["groups"] = {
 					i(190606),	-- Charred Steak (QI!)
 					i(191123),	-- Grimhowl (MOUNT!)
 				},

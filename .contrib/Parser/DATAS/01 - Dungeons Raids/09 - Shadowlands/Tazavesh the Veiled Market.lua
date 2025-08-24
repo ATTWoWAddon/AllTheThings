@@ -1,9 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
-		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+		["coords"] = {
+			{ 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+			-- #if AFTER 11.2.0
+			{ 36.3, 12.2, KARESH_TAZAVESH },
+			-- #endif
+		},
 		["maps"] = {
 			TAZAVESH_THE_VEILED_MARKET,
 			TAZAVESH_THE_MENAGERIE,
@@ -14,8 +19,15 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
-		["g"] = {
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(61093, {	-- Flawless Transaction
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_PH_PREPATCH },
+				}),
+				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_PH_PREPATCH },
+				}),
 				ach(15190, {	-- Mischief!
 					crit(52460, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
@@ -39,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					crit(52464, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
-						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET }
+						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET },
 					}),
 				}),
 			}),
@@ -63,13 +75,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				q(63977, {	-- Insider Trading
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63979, {	-- Things Best Kept Dark
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
-					["g"] = {
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
+					["groups"] = {
 						i(186182),	-- Cartel So Shipping Manifest (QI!)
 					},
 				}),
@@ -79,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						63979,	-- Things Best Kept Dark
 					},
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63982, {	-- Above My Station
 					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
@@ -95,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63983 },	-- Dead Drop
 					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
 					["coord"] = { 32.5, 32.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(186696),	-- Ta Coin of Favors (QI!)
 					},
 				}),
@@ -115,45 +127,60 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
-					["g"] = {
+					["groups"] = {
 						i(187552),	-- Perfectly-Forged Credentials
 					},
 				}),
 				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
-					["_drop"] = { "g" },
 					["timeline"] = {
 						CREATED_9_1_0,
 					},
+					["_drop"] = { "g" },
 				}),
 			}),
 			n(VENDORS, {
 				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
-				["g"] = {
+				["groups"] = {
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
+						i(161208),	-- Pirate's Snuff Box
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
-						["g"] = {
+						["groups"] = {
 							i(185954, {	-- Passably-Forged Credentials
 								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
 							}),
 						},
 					}),
-					n(177239, {	-- Collector of Worth <Banker>
-						i(34828),	-- Antique Silver Cufflinks
-						i(187179),	-- Glow Sticks
+					n(180571, {	-- Beeyuh
+						i(162573),	-- Amani Mule
+						i(162574),	-- Mojo'ito
+						i(163132),	-- Bijou on the Beach
+						i(163136),	-- Grotto Punch
+						i(162551),	-- Jani Juice
+						i(162552),	-- Zul's Gin
+						i(162575),	-- Bwonzombie
+						i(162572),	-- Trolwhip
 					}),
+					-- This NPC is just a bank... ?
+					-- n(177239, {	-- Collector of Worth <Banker>
+					-- 	i(34828),	-- Antique Silver Cufflinks
+					-- 	i(187179),	-- Glow Sticks
+					-- }),
 					n(180114, {	-- Fruit Vendor
 						i(187171),	-- Organic Melon
 					}),
 					n(180117, {	-- Meat Vendor
 						i(187173),	-- Wriggling Tentacle
 					}),
+					n(180754, {	-- Questionable Trader <Cartel Ta>
+						i(185953),	-- Fraudulent Credentials
+					}),
 					n(180161, {	-- Shopkeeper
 						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
-						["g"] = {
+						["groups"] = {
 							i(186540, {	-- Rarity (PET!)
 								["cost"] = {
 									{ "g", 21430000 },	-- 2,143g
@@ -171,182 +198,248 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							}),
 						},
 					}),
-					n(180754, {	-- Questionable Trader <Cartel Ta>
-						i(185953),	-- Fraudulent Credentials
-					}),
 					n(180129, {	-- Toy Vendor
 						i(104324),	-- Foot Ball (TOY!)
 						i(187178),	-- Sc'ootie's Favorite Plushie
 					}),
+					n(177999, {	-- Xy'darid <General Goods>
+						i(185933),	-- Cheap Spices
+						i(185936),	-- Common Drum
+						i(185934),	-- Cracked Warhammer
+						i(185932),	-- Damaged Flask
+						i(185909),	-- Dull Opal
+						i(185935),	-- Dusty Skull
+						i(185937),	-- Stale Bread
+						i(185938),	-- Threadbare Cloth
+						i(185939),	-- Worn Journal
+					}),
 				},
 			}),
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				i(186161),	-- Stygian Lockbox
 			}),
 			-- #if AFTER 9.2.0
-			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
-				e(2437, {	-- Zo'phex the Sentinel
-					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
-						i(183468),	-- Born Anew
-						i(183498),	-- Cloaked in Shadows
-						i(182110),	-- Crippling Hex
-						i(182330),	-- Demonic Parole
-						i(181962),	-- Mental Recovery
-						i(182338),	-- Pure Concentration
-						i(181841),	-- Reinforced Shell
-						i(185824),	-- Blade of Grievous Harm
-						i(185780),	-- Interrogator's Flensing Blade
-						i(185816),	-- Confiscated Bracers of Concealment
-						i(185815),	-- Vambraces of Verification
-						i(185793),	-- Cyphered Gloves
-						i(185791),	-- Knuckle-Dusting Handwraps
-					},
-				}),
-				e(2454, {	-- The Menagerie
-					["crs"] = {
-						176555,	-- Achillite
-						176556,	-- Alcruux
-						176705,	-- Venza Goldfuse
-					},
-					["g"] = {
-						i(184587),	-- Ambuscade
-						i(181512),	-- Dizzying Tumble
-						i(181756),	-- Incantation of Swiftness
-						i(181469),	-- Indelible Victory
-						i(183044),	-- Kilrogg's Cunning
-						i(181836),	-- Spirit Drain
-						i(185777),	-- Fang of Alcruux
-						i(185821),	-- Gluttonous Rondel
-						i(185814),	-- Auctioneer's Counting Bracers
-						i(185792),	-- Achillite's Unbreakable Grip
-						i(185794),	-- Gavel Pounders
-						i(185809),	-- Venza's Powderbelt
-						i(185840),	-- Seal of the Panoply
-						i(185051),	-- Direhorn Soul
-					},
-				}),
-				e(2436, {	-- Mailroom Mayhem
-					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
-						i(182584),	-- Cheetah's Vigor
-						i(181837),	-- Clear Mind
-						i(182461),	-- Echoing Blessings
-						i(186534),	-- Gizmo (PET!)
-						i(182325),	-- Ravenous Consumption
-						i(183497),	-- Recuperator
-						i(183465),	-- Ursine Vigor
-						i(185811),	-- Package Protector
-						i(185817),	-- Bracers of Autonomous Classification
-						i(185808),	-- Discount Mail-Order Belt
-						i(185807),	-- Pan-Dimensional Packing Cord
-						i(185787),	-- Implacable Weatherproof Treads
-						i(185845),	-- First Class Healing Distributor
-						i(185846),	-- Miniscule Mailemental in an Envelope
-						i(190652),	-- Ticking Sack of Terror
-					},
-				}),
-				e(2452, {	-- Au'myza's Oasis
-					["crs"] = { 176563 },	-- Zo'gron
-					["g"] = {
-						i(182460),	-- Accrued Vitality
-						i(183470),	-- Born of the Wilds
-						i(182656),	-- Disturb the Peace
-						i(181508),	-- Fortifying Ingredients
-						i(182106),	-- Refreshing Waters
-						i(181464),	-- Winter's Protection
-						i(185783),	-- Yasahm the Riftbreaker
-						i(185812),	-- Acoustically Alluring Censer
-						i(185842),	-- Ornately Engraved Amplifier
-						i(185802),	-- Breakbeat Shoulderguards
-						i(185804),	-- Harmonious Spaulders
-						i(185806),	-- Improvisational Cinch
-						i(185789),	-- Sabatons of Measured Time
-						i(187256, {	-- Hips' Spare Fedora
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
-				}),
-				e(2451, {	-- So'azmi
-					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
-						i(181707),	-- Diverted Energy
-						i(182449),	-- Resolute Barrier
-						i(182605),	-- Tactical Retreat
-						i(181826),	-- Translucent Image
-						i(182132),	-- Unending Grip
-						i(182318),	-- Viscous Ink
-						i(185778),	-- First Fist of the So Cartel
-						i(185843),	-- Duplicating Drape
-						i(185782),	-- Robes of Midnight Bargains
-						i(185786),	-- So'azmi's Fractal Vest
-						i(185800),	-- Orbitwarp Culottes
-						i(185798),	-- Quantum Leapers
-						i(185836),	-- Codex of the First Technique
-					},
-				}),
-				e(2448, {	-- Hylbrande
-					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
-						i(182105),	-- Astral Projection
-						i(180943),	-- Cacophonous Roar
-						i(182336),	-- Golden Path
-						i(181373),	-- Harm Denial
-						i(183501),	-- Rushed Setup
-						i(183467),	-- Tireless Pursuit
-						i(185810),	-- Skyreaver, Greataxe of the Keepers
-						i(185779),	-- Spire of Expurgation
-						i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
-						i(185803),	-- Stoneflesh Spaulders
-						i(185781),	-- Drape of Titanic Dreams
-						i(185788),	-- Codebreaker's Cunning Sandals
-						i(185790),	-- Treads of Titanic Deconversion
-					},
-				}),
-				e(2449, {	-- Timecap'n Hooktail
-					["crs"] = { 175546 },	-- Timecap'n Hooktail
-					["g"] = {
-						i(181498),	-- Grounding Surge
-						i(181975),	-- Hardened Bones
-						i(183502),	-- Prepared for All
-						i(182469),	-- Rejuvenating Wind
-						i(182466),	-- Shade of Terror
-						i(180842),	-- Stalwart Guardian
-						i(185823),	-- Fatebreaker, Destroyer of Futures
-						i(185841),	-- Timetwister Tulwar
-						i(185795),	-- Cowl of Branching Fate
-						i(185796),	-- Dragonbane Diadem
-						i(185776),	-- Hooktail's Commanding Gaze
-						i(185797),	-- Rakishly Tipped Tricorne
-						i(185820),	-- Cabochon of the Infinite Flight
-					},
-				}),
-				e(2455, {	-- So'leah
-					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
-						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
-						i(181838),	-- Charitable Soul
-						i(182304),	-- Divine Call
-						i(182316),	-- Fel Defender
-						i(183466),	-- Innate Resolve
-						i(181510),	-- Lingering Numbness
-						i(182480),	-- Reversal of Fortune
-						i(182109),	-- Totemic Surge
-						i(185822),	-- Staff of Fractured Spacetime
-						i(185819),	-- Event Horizon's Edge
-						i(185785),	-- Embrace of the Relicbinder
-						i(185784),	-- Novaburst Warplate
-						i(185801),	-- Anomalous Starlit Breeches
-						i(185799),	-- Hyperlight Leggings
-						i(185813),	-- Signet of Collapsing Stars
-						i(190958),	-- So'leah's Secret Technique
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["timeline"] = { ADDED_9_2_0 },
+				["groups"] = {
+					e(2437, {	-- Zo'phex the Sentinel
+						["crs"] = { 175616 },	-- Zo'phex
+						["groups"] = {
+							-- Conduits
+							i(183468),	-- Born Anew
+							i(183498),	-- Cloaked in Shadows
+							i(182110),	-- Crippling Hex
+							i(182330),	-- Demonic Parole
+							i(181962),	-- Mental Recovery
+							i(182338),	-- Pure Concentration
+							i(181841),	-- Reinforced Shell
+							-- Items
+							i(185824),	-- Blade of Grievous Harm
+							i(185816),	-- Confiscated Bracers of Concealment
+							i(185793),	-- Cyphered Gloves
+							i(185780),	-- Interrogator's Flensing Blade
+							i(185791),	-- Knuckle-Dusting Handwraps
+							i(185815),	-- Vambraces of Verification
+						},
+					}),
+					e(2454, {	-- The Menagerie
+						["crs"] = {
+							176555,	-- Achillite
+							176556,	-- Alcruux
+							176705,	-- Venza Goldfuse
+						},
+						["groups"] = {
+							i(185051),	-- Direhorn Soul (SS!)
+							-- Conduits
+							i(184587),	-- Ambuscade
+							i(181512),	-- Dizzying Tumble
+							i(181756),	-- Incantation of Swiftness
+							i(181469),	-- Indelible Victory
+							i(183044),	-- Kilrogg's Cunning
+							i(181836),	-- Spirit Drain
+							-- Items
+							i(185792),	-- Achillite's Unbreakable Grip
+							i(185814),	-- Auctioneer's Counting Bracers
+							i(185777),	-- Fang of Alcruux
+							i(185794, {	-- Gavel Pounders
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185821),	-- Gluttonous Rondel
+							i(246282, {	-- Order Bashers
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(246281, {	-- Ring of the Panoply
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(185840, {	-- Seal of the Panoply
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185809),	-- Venza's Powderbelt
+						},
+					}),
+					e(2436, {	-- Mailroom Mayhem
+						["crs"] = { 175646 },	-- P.O.S.T Master
+						["groups"] = {
+							i(186534),	-- Gizmo (PET!)
+							-- Conduits
+							i(182584),	-- Cheetah's Vigor
+							i(181837),	-- Clear Mind
+							i(182461),	-- Echoing Blessings
+							i(182325),	-- Ravenous Consumption
+							i(183497),	-- Recuperator
+							i(183465),	-- Ursine Vigor
+							-- Items
+							i(185817),	-- Bracers of Autonomous Classification
+							i(185808),	-- Discount Mail-Order Belt
+							i(185845),	-- First Class Healing Distributor
+							i(185787),	-- Implacable Weatherproof Treads
+							i(185846),	-- Miniscule Mailemental in an Envelope
+							i(185811),	-- Package Protector
+							i(185807),	-- Pan-Dimensional Packing Cord
+							i(190652),	-- Ticking Sack of Terror
+						},
+					}),
+					e(2452, {	-- Au'myza's Oasis
+						["crs"] = { 176563 },	-- Zo'gron
+						["groups"] = {
+							i(187256, {	-- Hips' Spare Fedora
+								["customCollect"] = "SL_COV_VEN",
+							}),
+							-- Conduits
+							i(182460),	-- Accrued Vitality
+							i(183470),	-- Born of the Wilds
+							i(182656),	-- Disturb the Peace
+							i(181508),	-- Fortifying Ingredients
+							i(182106),	-- Refreshing Waters
+							i(181464),	-- Winter's Protection
+							-- Items
+							i(185812),	-- Acoustically Alluring Censer
+							i(185802),	-- Breakbeat Shoulderguards
+							i(185804),	-- Harmonious Spaulders
+							i(185806, {	-- Improvisational Cinch
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(246287, {	-- Improvisational Girdle
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(185842),	-- Ornately Engraved Amplifier
+							i(185789),	-- Sabatons of Measured Time
+							i(185783),	-- Yasahm the Riftbreaker
+						},
+					}),
+					e(2451, {	-- So'azmi
+						["crs"] = { 175806 },	-- So'azmi
+						["groups"] = {
+							-- Conduits
+							i(181707),	-- Diverted Energy
+							i(182449),	-- Resolute Barrier
+							i(182605),	-- Tactical Retreat
+							i(181826),	-- Translucent Image
+							i(182132),	-- Unending Grip
+							i(182318),	-- Viscous Ink
+							-- Item
+							i(185836),	-- Codex of the First Technique
+							i(185843),	-- Duplicating Drape
+							i(185778),	-- First Fist of the So Cartel
+							i(246285, {	-- Fluxphase Culottes
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(185800, {	-- Orbitwarp Culottes
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185798),	-- Quantum Leapers
+							i(185782),	-- Robes of Midnight Bargains
+							i(185786),	-- So'azmi's Fractal Vest
+						},
+					}),
+					e(2448, {	-- Hylbrande
+						["crs"] = { 175663 },	-- Hylbrande
+						["groups"] = {
+							-- Conduits
+							i(182105),	-- Astral Projection
+							i(180943),	-- Cacophonous Roar
+							i(182336),	-- Golden Path
+							i(181373),	-- Harm Denial
+							i(183501),	-- Rushed Setup
+							i(183467),	-- Tireless Pursuit
+							-- Items
+							i(246280, {	-- Boots of Titanic Deconversion
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(246275, {	-- Codebreaker's Cunning Handwraps
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(185788, {	-- Codebreaker's Cunning Sandals
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185781),	-- Drape of Titanic Dreams
+							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
+							i(185810),	-- Skyreaver, Greataxe of the Keepers
+							i(185779),	-- Spire of Expurgation
+							i(185803),	-- Stoneflesh Spaulders
+							i(185790, {	-- Treads of Titanic Deconversion
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+						},
+					}),
+					e(2449, {	-- Timecap'n Hooktail
+						["crs"] = { 175546 },	-- Timecap'n Hooktail
+						["groups"] = {
+							-- Conduits
+							i(181498),	-- Grounding Surge
+							i(181975),	-- Hardened Bones
+							i(183502),	-- Prepared for All
+							i(182469),	-- Rejuvenating Wind
+							i(182466),	-- Shade of Terror
+							i(180842),	-- Stalwart Guardian
+							-- Items
+							i(185820),	-- Cabochon of the Infinite Flight
+							i(185795),	-- Cowl of Branching
+							i(246283, {	-- Crown of Absolute Command
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+							}),
+							i(185796),	-- Dragonbane Diadem
+							i(185823),	-- Fatebreaker, Destroyer of Futures
+							i(185776, {	-- Hooktail's Commanding Gaze
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185797),	-- Rakishly Tipped Tricorne
+							i(185841),	-- Timetwister Tulwar
+						},
+					}),
+					e(2455, {	-- So'leah
+						["crs"] = { 177269 },	-- So'leah
+						["groups"] = {
+							i(186638),	-- Cartel Master's Gearglider (MOUNT!)
+							-- Conduits
+							i(181838),	-- Charitable Soul
+							i(182304),	-- Divine Call
+							i(182316),	-- Fel Defender
+							i(183466),	-- Innate Resolve
+							i(181510),	-- Lingering Numbness
+							i(182480),	-- Reversal of Fortune
+							i(182109),	-- Totemic Surge
+							-- Items
+							i(185801),	-- Anomalous Starlit Breeches
+							i(185785, {	-- Embrace of the Relicbinder
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185819),	-- Event Horizon's
+							i(185799),	-- Hyperlight Leggings
+							i(185784, {	-- Novaburst Warplate
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
+							}),
+							i(185813),	-- Signet of Collapsing Stars
+							i(190958),	-- So'leah's Secret Technique
+							i(185822),	-- Staff of Fractured Spacetime
+						},
+					}),
+				},
+			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
+					["groups"] = {
 						ach(15109, {	-- Will it Blend?
 							["cost"] = {
 								{ "i", 187179, 1 },	-- Glow Sticks
@@ -359,33 +452,30 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2436, {	-- Mailroom Mayhem
 					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
+					["groups"] = {
 						ach(15106),	-- Quality Control
 						i(185844, {	-- Ticking Sack of Terror
 							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
-						}),
-						i(190652, {	-- Ticking Sack of Terror
-							["timeline"] = { ADDED_9_2_0 },
 						}),
 					},
 				}),
 				-- #if AFTER 9.2.5
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
+					["groups"] = {
 						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
 					},
 				}),
 				-- #endif
 				e(2448, {	-- Hylbrande
 					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
+					["groups"] = {
 						ach(15179),	-- This is Fine
 					},
 				}),
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
+					["groups"] = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
@@ -395,7 +485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(185818, {	-- So'leah's Secret Technique
 							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
-						i(185047, {	-- Yak Soul
+						i(185047, {	-- Yak Soul (SS!)
 							["description"] = "Drops on Hard Mode or M+.",
 						}),
 					},
@@ -405,7 +495,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
+					["groups"] = {
 						ach(15109, {	-- Will it Blend?
 							["cost"] = {
 								{ "i", 187179, 1 },	-- Glow Sticks
@@ -414,6 +504,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 								{ "i", 187173, 1 },	-- Wriggling Tentacle
 							},
 						}),
+						-- Conduits
 						i(183468),	-- Born Anew
 						i(183498),	-- Cloaked in Shadows
 						i(182110),	-- Crippling Hex
@@ -421,12 +512,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(181962),	-- Mental Recovery
 						i(182338),	-- Pure Concentration
 						i(181841),	-- Reinforced Shell
+						-- Items
 						i(185824),	-- Blade of Grievous Harm
-						i(185780),	-- Interrogator's Flensing Blade
 						i(185816),	-- Confiscated Bracers of Concealment
-						i(185815),	-- Vambraces of Verification
 						i(185793),	-- Cyphered Gloves
+						i(185780),	-- Interrogator's Flensing Blade
 						i(185791),	-- Knuckle-Dusting Handwraps
+						i(185815),	-- Vambraces of Verification
 					},
 				}),
 				e(2454, {	-- The Menagerie
@@ -435,41 +527,45 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						176556,	-- Alcruux
 						176705,	-- Venza Goldfuse
 					},
-					["g"] = {
+					["groups"] = {
+						i(185051),	-- Direhorn Soul (SS!)
+						-- Conduits
 						i(184587),	-- Ambuscade
 						i(181512),	-- Dizzying Tumble
 						i(181756),	-- Incantation of Swiftness
 						i(181469),	-- Indelible Victory
 						i(183044),	-- Kilrogg's Cunning
 						i(181836),	-- Spirit Drain
-						i(185777),	-- Fang of Alcruux
-						i(185821),	-- Gluttonous Rondel
-						i(185814),	-- Auctioneer's Counting Bracers
+						-- Items
 						i(185792),	-- Achillite's Unbreakable Grip
+						i(185814),	-- Auctioneer's Counting Bracers
+						i(185777),	-- Fang of Alcruux
 						i(185794),	-- Gavel Pounders
-						i(185809),	-- Venza's Powderbelt
+						i(185821),	-- Gluttonous Rondel
 						i(185840),	-- Seal of the Panoply
-						ig(185051),	-- Direhorn Soul
+						i(185809),	-- Venza's Powderbelt
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem
 					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
+					["groups"] = {
 						ach(15106),	-- Quality Control
+						i(186534),	-- Gizmo (PET!)
+						-- Conduits
 						i(182584),	-- Cheetah's Vigor
 						i(181837),	-- Clear Mind
 						i(182461),	-- Echoing Blessings
-						i(186534),	-- Gizmo (PET!)
 						i(182325),	-- Ravenous Consumption
 						i(183497),	-- Recuperator
 						i(183465),	-- Ursine Vigor
-						i(185811),	-- Package Protector
+						-- Items
 						i(185817),	-- Bracers of Autonomous Classification
 						i(185808),	-- Discount Mail-Order Belt
-						i(185807),	-- Pan-Dimensional Packing Cord
-						i(185787),	-- Implacable Weatherproof Treads
 						i(185845),	-- First Class Healing Distributor
+						i(185787),	-- Implacable Weatherproof Treads
 						i(185846),	-- Miniscule Mailemental in an Envelope
+						i(185811),	-- Package Protector
+						i(185807),	-- Pan-Dimensional Packing Cord
 						i(185844, {	-- Ticking Sack of Terror
 							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
 						}),
@@ -480,84 +576,91 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2452, {	-- Au'myza's Oasis
 					["crs"] = { 176563 },	-- Zo'gron
-					["g"] = {
+					["groups"] = {
+						i(187256, {	-- Hips' Spare Fedora
+							["customCollect"] = "SL_COV_VEN",
+						}),
+						-- Conduits
 						i(182460),	-- Accrued Vitality
 						i(183470),	-- Born of the Wilds
 						i(182656),	-- Disturb the Peace
 						i(181508),	-- Fortifying Ingredients
 						i(182106),	-- Refreshing Waters
 						i(181464),	-- Winter's Protection
-						i(185783),	-- Yasahm the Riftbreaker
+						-- Items
 						i(185812),	-- Acoustically Alluring Censer
-						i(185842),	-- Ornately Engraved Amplifier
 						i(185802),	-- Breakbeat Shoulderguards
 						i(185804),	-- Harmonious Spaulders
 						i(185806),	-- Improvisational Cinch
+						i(185842),	-- Ornately Engraved Amplifier
 						i(185789),	-- Sabatons of Measured Time
-						i(187256, {	-- Hips' Spare Fedora
-							["customCollect"] = "SL_COV_VEN",
-						}),
+						i(185783),	-- Yasahm the Riftbreaker
 					},
 				}),
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
-						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
+					["groups"] = {
+						-- Conduits
 						i(181707),	-- Diverted Energy
 						i(182449),	-- Resolute Barrier
 						i(182605),	-- Tactical Retreat
 						i(181826),	-- Translucent Image
 						i(182132),	-- Unending Grip
 						i(182318),	-- Viscous Ink
-						i(185778),	-- First Fist of the So Cartel
+						-- Item
+						i(185836),	-- Codex of the First Technique
 						i(185843),	-- Duplicating Drape
-						i(185782),	-- Robes of Midnight Bargains
-						i(185786),	-- So'azmi's Fractal Vest
+						i(185778),	-- First Fist of the So Cartel
 						i(185800),	-- Orbitwarp Culottes
 						i(185798),	-- Quantum Leapers
-						i(185836),	-- Codex of the First Technique
+						i(185782),	-- Robes of Midnight Bargains
+						i(185786),	-- So'azmi's Fractal Vest
 					},
 				}),
 				e(2448, {	-- Hylbrande
 					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
+					["groups"] = {
 						ach(15179),	-- This is Fine
+						-- Conduits
 						i(182105),	-- Astral Projection
 						i(180943),	-- Cacophonous Roar
 						i(182336),	-- Golden Path
 						i(181373),	-- Harm Denial
 						i(183501),	-- Rushed Setup
 						i(183467),	-- Tireless Pursuit
+						-- Items
+						i(185788),	-- Codebreaker's Cunning Sandals
+						i(185781),	-- Drape of Titanic Dreams
+						i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
 						i(185810),	-- Skyreaver, Greataxe of the Keepers
 						i(185779),	-- Spire of Expurgation
-						i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
 						i(185803),	-- Stoneflesh Spaulders
-						i(185781),	-- Drape of Titanic Dreams
-						i(185788),	-- Codebreaker's Cunning Sandals
 						i(185790),	-- Treads of Titanic Deconversion
 					},
 				}),
 				e(2449, {	-- Timecap'n Hooktail
 					["crs"] = { 175546 },	-- Timecap'n Hooktail
-					["g"] = {
+					["groups"] = {
+						-- Conduits
 						i(181498),	-- Grounding Surge
 						i(181975),	-- Hardened Bones
 						i(183502),	-- Prepared for All
 						i(182469),	-- Rejuvenating Wind
 						i(182466),	-- Shade of Terror
 						i(180842),	-- Stalwart Guardian
-						i(185823),	-- Fatebreaker, Destroyer of Futures
-						i(185841),	-- Timetwister Tulwar
+						-- Items
+						i(185820),	-- Cabochon of the Infinite Flight
 						i(185795),	-- Cowl of Branching Fate
 						i(185796),	-- Dragonbane Diadem
+						i(185823),	-- Fatebreaker, Destroyer of Futures
 						i(185776),	-- Hooktail's Commanding Gaze
 						i(185797),	-- Rakishly Tipped Tricorne
-						i(185820),	-- Cabochon of the Infinite Flight
+						i(185841),	-- Timetwister Tulwar
 					},
 				}),
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
+					["groups"] = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
@@ -565,6 +668,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 						ach(15652, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
+						i(185047, {	-- Yak Soul (SS!)
+							["description"] = "Drops on Hard Mode or M+.",
+						}),
+						-- Conduits
 						i(181838),	-- Charitable Soul
 						i(182304),	-- Divine Call
 						i(182316),	-- Fel Defender
@@ -572,26 +679,33 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(181510),	-- Lingering Numbness
 						i(182480),	-- Reversal of Fortune
 						i(182109),	-- Totemic Surge
-						i(185822),	-- Staff of Fractured Spacetime
-						i(185819),	-- Event Horizon's Edge
-						i(185785),	-- Embrace of the Relicbinder
-						i(185784),	-- Novaburst Warplate
+						-- Items
 						i(185801),	-- Anomalous Starlit Breeches
+						i(185785),	-- Embrace of the Relicbinder
+						i(185819),	-- Event Horizon's
 						i(185799),	-- Hyperlight Leggings
+						i(185784),	-- Novaburst Warplate
 						i(185813),	-- Signet of Collapsing Stars
 						i(185818, {	-- So'leah's Secret Technique
 							["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 },
 						}),
-						i(190958, {	-- So'leah's Secret Technique
-							["timeline"] = { ADDED_9_2_0 },
-						}),
-						i(185047, {	-- Yak Soul
-							["description"] = "Drops on Hard Mode or M+.",
-						}),
+						i(185822),	-- Staff of Fractured Spacetime
 					},
 				}),
 			}),
 			-- #endif
 		},
 	}),
-})));
+}))
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
+	inst(1194, {	-- Tazavesh, the Veiled Market
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
+			q(92651, {	-- Failed Deathless Run Attempt
+				["name"] = "Failed Deathless Run Attempt",
+				["isWeekly"] = true,
+			}),
+		},
+	}),
+}))

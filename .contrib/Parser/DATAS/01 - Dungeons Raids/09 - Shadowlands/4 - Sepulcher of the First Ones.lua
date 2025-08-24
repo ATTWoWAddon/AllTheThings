@@ -300,7 +300,7 @@ local ZoneDropLoot = {
 };
 
 ------ Catalyst Functions ------
-local TierList, SymLink, SymLinKPvP;
+local TierList, SymLink
 local SymRaid = function(ClassID, ModID)
 	if ClassID == DEATHKNIGHT or ClassID == WARLOCK or ClassID == DEMONHUNTER then
 		TierList = {"select", "itemID",
@@ -361,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			2052,	-- The Grand Design
 			2061,	-- Ephemeral Plains
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(15493, {	-- Ephemeral Plains
 					crit(53151, {	-- Vigilant Guardian
@@ -505,7 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						15396,	-- We Are All Made of Stars
 						15494,	-- Damnation Aviation
 					}},
-					["g"] = {
+					["groups"] = {
 						i(187675),	-- Shimmering Aurelid (MOUNT!)
 					},
 				}),
@@ -653,7 +653,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
 					["coord"] = { 22.0, 38.0, 2061 },
-					["g"] = {
+					["groups"] = {
 						i(190727),	-- Security Override Orb
 					},
 				}),
@@ -665,7 +665,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["questID"] = 66285,
 					["cost"] = {{ "i", 190727, 1 }},	-- 1 Security Override Orb
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(189175),	-- Mawforged Bridle (PS!)
 						i(189991),	-- Snail Soul (SS!)
 					},
@@ -673,23 +673,45 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				o(375905, {	-- Protoform Schematic
 					["description"] = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
 					["coord"] = { 45.4, 32.6, 2047 },
-					["g"] = {
+					["groups"] = {
 						i(189461),	-- Schematic: Serenade (PS!)
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
 					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					["coord"] = { 63.2, 51.9, 2061 },
-					["g"] = {
+					["groups"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer (PS!)
 					},
 				}),
 			}),
+			o(375368, {	-- Creation Catalyst Console
+				["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+				["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
+				["sourceQuests"] = { 64842 },	-- Flora Frenzy
+				["modelScale"] = 4,
+				["catalystID"] = 2,	-- ItemBonus.Value_0 SL:S4
+				["groups"] = {
+					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+						sharedData({["cost"] = {{"i",190189,2070}}},	-- 2070 Sandworn Relic, Full set cost from Vendor
+						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
+					),
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
+					),
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
+					),
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
+					),
+				},
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
-						["isWorldQuest"] = true,
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						["isWorldQuest"] = true,
 					}),
 				}),
 				BossOnly(VIGILANT_GUARDIAN, {
@@ -867,170 +889,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 4 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					Boss(VIGILANT_GUARDIAN),
@@ -1091,175 +949,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown [N]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(190967),	-- Mourne Fragment (QI!)
 						},
 					}),
 				}),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Normal Mode Non-set items from the Sepulcher of the First Ones Raid or from the World Boss into your class' Normal Mode Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 3 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -1279,7 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
-						["g"] = {
+						["groups"] = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
 					})),
@@ -1308,175 +1002,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown [H]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(190966),	-- Mourne Fragment (QI!)
 						},
 					}),
 				}),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Heroic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Heroic Mode Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -1493,176 +1023,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown [M]
-						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
-							i(190959),	-- Mourne Fragment (QI!)
-						},
+						["qgs"] = {
+							184601,	-- Highlord Bolvar Fordragon
+							188683,	-- Knight of the Ebon Blade
+						},	--
+						["groups"] = { i(190959) },	-- Mourne Fragment (QI!)
 					}),
 				}),
-				-- #if AFTER 10.0.2
-				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Mythic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Mythic Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
-					["g"] = bubbleDown({ ["modID"] = 6 }, {
-						cl(DEATHKNIGHT, {
-							["g"] = {
-								i(188873),	-- Cloak of the First Eidolon
-								i(188864),	-- Carapace of the First Eidolon
-								i(188866),	-- Chausses of the First Eidolon
-								i(188863),	-- Gauntlets of the First Eidolon
-								i(188870),	-- Girdle of the First Eidolon
-								i(188865),	-- Greaves of the First Eidolon
-								i(188867),	-- Shoulderplates of the First Eidolon
-								i(188868),	-- Visage of the First Eidolon
-								i(188869),	-- Vambraces of the First Eidolon
-							},
-						}),
-						cl(DEMONHUNTER, {
-							["g"] = {
-								i(188897),	-- Mercurial Punisher's Belt
-								i(188899),	-- Mercurial Punisher's Boots
-								i(188898),	-- Mercurial Punisher's Grips
-								i(188896),	-- Mercurial Punisher's Shoulderpads
-								i(188900),	-- Mercurial Punisher's Mantle
-								i(188894),	-- Mercurial Punisher's Jerkin
-								i(188893),	-- Mercurial Punisher's Breeches
-								i(188892),	-- Mercurial Punisher's Hood
-								i(188895),	-- Mercurial Punisher's Wristguards
-							},
-						}),
-						cl(DRUID, {
-							["g"] = {
-								i(188850),	-- Bracers of the Fixed Stars
-								i(188852),	-- Cincture of the Fixed Stars
-								i(188854),	-- Footwraps of the Fixed Stars
-								i(188853),	-- Handwraps of the Fixed Stars
-								i(188848),	-- Leggings of the Fixed Stars
-								i(188849),	-- Chestguard of the Fixed Stars
-								i(188847),	-- Headpiece of the Fixed Stars
-								i(188851),	-- Shoulderpads of the Fixed Stars
-								i(188871),	-- Wrap of the Fixed Stars
-							},
-						}),
-						cl(HUNTER, {
-							["g"] = {
-								i(188872),	-- Godstalker's Camouflage
-								i(188857),	-- Godstalker's Fauld
-								i(188861),	-- Godstalker's Gauntlets
-								i(188862),	-- Godstalker's Sabatons
-								i(188859),	-- Godstalker's Sallet
-								i(188858),	-- Godstalker's Hauberk
-								i(188856),	-- Godstalker's Pauldrons
-								i(188860),	-- Godstalker's Tassets
-								i(188855),	-- Godstalker's Wristwraps
-							},
-						}),
-						cl(MAGE, {
-							["g"] = {
-								i(188840),	-- Erudite Occultist's Bracers
-								i(188841),	-- Erudite Occultist's Cord
-								i(188843),	-- Erudite Occultist's Mantle
-								i(188845),	-- Erudite Occultist's Handwraps
-								i(188846),	-- Erudite Occultist's Shroud
-								i(188839),	-- Erudite Occultist's Robes
-								i(188844),	-- Erudite Occultist's Hood
-								i(188842),	-- Erudite Occultist's Leggings
-								i(188838),	-- Erudite Occultist's Treads
-							},
-						}),
-						cl(MONK, {
-							["g"] = {
-								i(188910),	-- Crown of the Grand Upwelling
-								i(188913),	-- Demigaunts of the Grand Upwelling
-								i(188918),	-- Drape of the Grand Upwelling
-								i(188916),	-- Grips of the Grand Upwelling
-								i(188912),	-- Cuirass of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
-								i(188917),	-- Footwraps of the Grand Upwelling
-								i(188911),	-- Legguards of the Grand Upwelling
-								i(188915),	-- Waistwrap of the Grand Upwelling
-							},
-						}),
-						cl(PALADIN, {
-							["g"] = {
-								i(188936),	-- Luminous Chevalier's Drape
-								i(188935),	-- Luminous Chevalier's Girdle
-								i(188928),	-- Luminous Chevalier's Gauntlets
-								i(188930),	-- Luminous Chevalier's Spurs
-								i(188932),	-- Luminous Chevalier's Epaulets
-								i(188931),	-- Luminous Chevalier's Robes
-								i(188933),	-- Luminous Chevalier's Casque
-								i(188929),	-- Luminous Chevalier's Plackart
-								i(188934),	-- Luminous Chevalier's Vambraces
-							},
-						}),
-						cl(PRIEST, {
-							["g"] = {
-								i(188880),	-- Amice of the Empyrean
-								i(188876),	-- Bracelets of the Empyrean
-								i(188882),	-- Drape of the Empyrean
-								i(188877),	-- Sash of the Empyrean
-								i(188875),	-- Habit of the Empyrean
-								i(188881),	-- Caress of the Empyrean
-								i(188879),	-- Capelet of the Empyrean
-								i(188878),	-- Leggings of the Empyrean
-								i(188874),	-- Slippers of the Empyrean
-							},
-						}),
-						cl(ROGUE, {
-							["g"] = {
-								i(188906),	-- Soulblade Baldric
-								i(188909),	-- Soulblade Cloak
-								i(188907),	-- Soulblade Grasps
-								i(188901),	-- Soulblade Guise
-								i(188903),	-- Soulblade Leathers
-								i(188905),	-- Soulblade Nightwings
-								i(188908),	-- Soulblade Footpads
-								i(188902),	-- Soulblade Leggings
-								i(188904),	-- Soulblade Wristguard
-							},
-						}),
-						cl(SHAMAN, {
-							["g"] = {
-								i(188921),	-- Theurgic Starspeaker's Belt
-								i(188923),	-- Theurgic Starspeaker's Howl
-								i(188925),	-- Theurgic Starspeaker's Runebindings
-								i(188919),	-- Theurgic Starspeaker's Bracers
-								i(188920),	-- Theurgic Starspeaker's Adornment
-								i(188922),	-- Theurgic Starspeaker's Ringmail
-								i(188926),	-- Theurgic Starspeaker's Sabatons
-								i(188927),	-- Theurgic Starspeaker's Shawl
-								i(188924),	-- Theurgic Starspeaker's Tassets
-							},
-						}),
-						cl(WARLOCK, {
-							["g"] = {
-								i(188885),	-- Bangles of the Demon Star
-								i(188883),	-- Boots of the Demon Star
-								i(188891),	-- Cape of the Demon Star
-								i(188884),	-- Robes of the Demon Star
-								i(188890),	-- Grasps of the Demon Star
-								i(188888),	-- Mantle of the Demon Star
-								i(188887),	-- Leggings of the Demon Star
-								i(188889),	-- Horns of the Demon Star
-								i(188886),	-- Waistwrap of the Demon Star
-							},
-						}),
-						cl(WARRIOR, {
-							["g"] = {
-								i(188945),	-- Favor of the Infinite Infantry
-								i(188942),	-- Gaze of the Infinite Infantry
-								i(188944),	-- Greatbelt of the Infinite Infantry
-								i(188939),	-- March of the Infinite Infantry
-								i(188938),	-- Breastplate of the Infinite Infantry
-								i(188941),	-- Pauldrons of the Infinite Infantry
-								i(188940),	-- Legplates of the Infinite Infantry
-								i(188943),	-- Vambraces of the Infinite Infantry
-								i(188937),	-- Grasps of the Infinite Infantry
-							},
-						}),
-					}),
-				}),
-				-- #endif
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN, {
 					ach(15479),	-- Mythic: Vigilant Guardian
@@ -1705,13 +1072,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(THE_JAILER, bubbleDown({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					ach(15476, {	-- Hall of Fame: The Jailer (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),
 					ach(15475, {	-- Hall of Fame: The Jailer (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),

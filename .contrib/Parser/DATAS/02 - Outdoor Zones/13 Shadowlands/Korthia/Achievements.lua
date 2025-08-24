@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					15099,	-- Treasures of Korthia
 					15107,	-- Conquering Korthia
 				}},
-				["g"] = {
+				["groups"] = {
 					i(186654),	-- Hand of Salaranga (MOUNT!)
 				},
 			}),
@@ -136,7 +136,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["_npcs"] = { 177336 },	-- Zelnithop
 				}),
 			}),
-			explorationAch(15053),	-- Explore Korthia
+			achWithRep(15059, FACTION_DEATHS_ADVANCE),	-- Death's Advance
+			ach(15053),	-- Explore Korthia
 			ach(15066, {	-- Reliquary Restoration
 				crit(52126, {
 					["sourceQuests"] = { 63860 },	-- Talisman of the Eternal Scholar
@@ -199,9 +200,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63924 },	-- Gorak Claw Fetish
 				}),
 			}),
+			ach(15069, {	-- The Archivist's Codex
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 6 },
+			}),
 			ach(15099, {	-- Treasures of Korthia
 				crit(52236, {	-- Glittering Nest Material
-					["_quests"] = { 64222 }
+					["_quests"] = { 64222 },
 				}),
 				crit(52237, {	-- Forgotten Feather
 					["_quests"] = { 64234 },

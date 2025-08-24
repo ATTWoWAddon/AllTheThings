@@ -4,8 +4,7 @@
 root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {
 		n(WORLD_QUESTS, {
-			faction(FACTION_TORTOLLAN_SEEKERS, {	-- Tortollan Seekers
-			-- Displaying a header to indicate these items can only come from Tortollan Seeker's World Quests.
+			header(HEADERS.Faction, FACTION_TORTOLLAN_SEEKERS, {	-- Tortollan Seekers
 				i(165785, {	-- Tortollan Trader's Stock
 					i(165680),	-- Igneous Winterskorn Loop
 					i(165679),	-- Ornate Elun'dris Ring
@@ -19,7 +18,7 @@ root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(165665),	-- Ritual Feather of Unng Ak
 					i(165664),	-- Sea Giant's Tidestone
 				}),
-			}),	
+			}),
 		}),
 	}),
 }));

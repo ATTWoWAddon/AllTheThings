@@ -16,25 +16,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61689),	-- A Crisis of Memory
 			q(60623),	-- AHHH! Real Monsters!
 			q(61148, {	-- AHHH! Real Monsters!
-				["g"] = {
+				["groups"] = {
 					i(180789),	-- Devoured Anima (QI!)
 				},
 			}),
 			q(61220),	-- AHHH! Real Monsters!
 			q(60929, {	-- Air Supremacy
-				["g"] = {
+				["groups"] = {
 					i(180465),	-- Xandria's Reach (QI!)
 				},
 			}),
 			q(61434, {	-- Alchemy: Flask of Measured Discipline
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					r(338195, {["u"]=TRAINING}),	-- Distilled Resolve
 					r(338194, {["u"]=TRAINING}),	-- Flask of Measured Discipline
 					r(338196, {["u"]=TRAINING}),	-- Pulverized Breezebloom
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = { i(182027) },	-- Fresh Breezebloom Trimmings (QI!)
+						["groups"] = { i(182027) },	-- Fresh Breezebloom Trimmings (QI!)
 					}),
 					i(182025),	-- Distilled Resolve (QI!)
 					i(181859),	-- Flask of Measured Discipline (QI!)
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(62235, {	-- Allay Their Fears
-				["g"] = {
+				["groups"] = {
 					i(183045),	-- Korinna's Allaying Crook (QI!)
 				},
 			}),
@@ -55,13 +55,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60565),	-- A Steward for Every Occasion
 			q(61564, {	-- Blacksmithing: Polished Kyrian Shield
 				["requireSkill"] = BLACKSMITHING,
-				["g"] = {
+				["groups"] = {
 					r(337619, {["u"]=TRAINING}),	-- Polished Kyrian Shield
 					r(337626, {["u"]=TRAINING}),	-- Reforged Kyrian Shield
 					r(337621, {["u"]=TRAINING}),	-- Tarnished Kyrian Shield
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = { i(181793) },	-- Shattered Kyrian Shield Fragment (QI!)
+						["groups"] = { i(181793) },	-- Shattered Kyrian Shield Fragment (QI!)
 					}),
 					i(181791),	-- Polished Kyrian Shield (QI!)
 					i(181790),	-- Reforged Kyrian Shield (QI!)
@@ -72,13 +72,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			petbattle(q(61784)),	-- Cliffs of Bastion
 			q(61439, {	-- Cooking: Steward Stew
 				["requireSkill"] = COOKING,
-				["g"] = {
+				["groups"] = {
 					r(338107, {["u"]=TRAINING}),	-- Diced Vegetables
 					r(338106, {["u"]=TRAINING}),	-- Grazer Bone Broth
 					r(338105, {["u"]=TRAINING}),	-- Steward Stew
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(182098),	-- Fresh Carrots (QI!)
 							i(182100),	-- Fresh Mushrooms (QI!)
 							i(182099),	-- Fresh Turnips (QI!)
@@ -94,31 +94,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61549),	-- Drought Conditions
 			q(61629, {	-- Enchanting: True Aim
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					r(338121, {["u"]=TRAINING}),	-- True Aim Spear
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = { i(182021) },	-- Antique Kyrian Javelin (QI!)
+						["groups"] = { i(182021) },	-- Antique Kyrian Javelin (QI!)
 					}),
 					i(181948),	-- Enchant: True Aim (QI!)
 					i(182020),	-- Transcendent Dust (QI!)
 				},
 			}),
 			q(61520, {	-- Enemy of My Mnemis
-				["g"] = {
+				["groups"] = {
 					i(181711),	-- Depleted Centurion Core (QI!)
-					i(181710),	-- Inert Centurion Core (QI!)
+					o(356395, {	-- Inert Centurion Core
+						["coord"] = { 50.8, 20.7, BASTION },
+						["groups"] = { i(181710) },	-- Inert Centurion Core (QI!)
+					}),
 				},
 			}),
 			q(61441, {	-- Engineering: Power Hammer
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					r(338216, {["u"]=TRAINING}),	-- Hardened Bolts
 					r(338214, {["u"]=TRAINING}),	-- Piston Assembly
 					r(338213, {["u"]=TRAINING}),	-- Power Hammer
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = { i(182018) },	-- Machined Solenium Bar (QI!)
+						["groups"] = { i(182018) },	-- Machined Solenium Bar (QI!)
 					}),
 					i(182017),	-- Hardened Bolts (QI!)
 					i(182016),	-- Piston Assembly (QI!)
@@ -128,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59658),	-- Express Dominance
 			q(61442, {	-- Fishing: Glorious Shimmerfin
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					i(181954),	-- Glorious Shimmerfin (QI!)
 				},
 			}),
@@ -144,24 +147,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59804),	-- Gateways of Horror
 			q(61443, {	-- Herbalism: Windswept Rising Glory
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(181749),	-- Windswept Rising Glory (QI!)
 				},
 			}),
 			q(59771, {	-- History of Corruption
-				["g"] = {
+				["groups"] = {
 					i(177836),	-- Wingpierce Javelin (QI!)
 				},
 			}),
 			q(61446, {	-- Inscription: Invocation of Duty
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					r(338228, {["u"]=TRAINING}),	-- Invocation of Duty
 					r(338230, {["u"]=TRAINING}),	-- Opalescent Ink
 					r(338229, {["u"]=TRAINING}),	-- Poem on Duty
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(182202),	-- Borrowed Parchment (QI!)
 							i(182015),	-- Opalescent Pigment (QI!)
 						},
@@ -173,13 +176,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
 				["requireSkill"] = JEWELCRAFTING,
-				["g"] = {
+				["groups"] = {
 					r(338241, {["u"]=TRAINING}),	-- Gleaming Kyranite Necklace
 					r(338242, {["u"]=TRAINING}),	-- Kyranite Dangle
 					r(338243, {["u"]=TRAINING}),	-- Solenium Wire
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(182197),	-- Borrowed Kyranite (QI!)
 							i(182012),	-- Borrowed Solenium Nugget (QI!)
 						},
@@ -191,13 +194,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61449, {	-- Leatherworking: Steelhide Leather Harness
 				["requireSkill"] = LEATHERWORKING,
-				["g"] = {
+				["groups"] = {
 					r(338258, {["u"]=TRAINING}),	-- Steelhide Leather Belt
 					r(338257, {["u"]=TRAINING}),	-- Steelhide Leather Harness
 					r(338259, {["u"]=TRAINING}),	-- Steelhide Leather Strap
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(182009),	-- Fresh Steelhide (QI!)
 							i(182194),	-- Steelhide Sinew (QI!)
 							i(182193),	-- Thick Steelhide Leather (QI!)
@@ -214,12 +217,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			petbattle(q(61787)),	-- Micro Defense Force
 			q(61467, {	-- Mining: Luminous Solenium Cluster
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(181450),	-- Luminous Solenium Ore (QI!)
 				},
 			}),
 			q(61967, {	-- Remedial Lessons
-				["g"] = {
+				["groups"] = {
 					i(182457),	-- Mirror Fragment (QI!)
 					i(182458),	-- Mirror of Ancient Teachings (QI!)
 					i(182477),	-- Sacred Text (QI!)
@@ -227,24 +230,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61468, {	-- Skinning: Plush Copperfur Pelts
 				["requireSkill"] = SKINNING,
-				["g"] = {
+				["groups"] = {
 					i(181968),	-- Plush Copperfur Pelt (QI!)
 				},
 			}),
 			q(62258, {	-- Soaring Over Bastion
-				["g"] = {
+				["groups"] = {
 					i(183140),	-- Cloudstrider Antler (QI!)
 				},
 			}),
 			q(61469, {	-- Tailoring: Woven Gossamer Tunic
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["groups"] = {
 					r(338272, {["u"]=TRAINING}),	-- Bolt of Woven Gossamer
 					r(338273, {["u"]=TRAINING}),	-- Gossamer Cloth
 					r(338271, {["u"]=TRAINING}),	-- Woven Gossamer Tunic
 					o(356553, {	-- Crafter's Crate
 						["coord"] = { 52.5, 46.5, BASTION },
-						["g"] = { i(182104) },	-- Gossamer Thread (QI!)
+						["groups"] = { i(182104) },	-- Gossamer Thread (QI!)
 					}),
 					i(182102),	-- Bolt of Woven Gossamer (QI!)
 					i(182103),	-- Gossamer Cloth (QI!)
@@ -266,12 +269,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59705, {	-- Things Remembered
 				["sym"] = {{"select","achievementID",14737}},	-- What Bastion Remembered
-				["g"] = {
+				["groups"] = {
 					i(177186),	-- Forgotten Memorandum (QI!)
 				},
 			}),
 			q(62241, {	-- Training Regimen
-				["g"] = {
+				["groups"] = {
 					i(183121),	-- Training Gem (QI!)
 				},
 			}),

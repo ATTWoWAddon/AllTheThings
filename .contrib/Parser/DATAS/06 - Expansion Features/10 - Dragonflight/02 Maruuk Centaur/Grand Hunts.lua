@@ -123,7 +123,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(190907, {	-- Blitztusk
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
 						["questID"] = 73908,
-						["g"] = {
+						["groups"] = {
 							i(200296),	-- Mammoth Tusk Wraps
 						},
 					}),
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(190161, {	-- Sarana
 						["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
 						["questID"] = 73932,
-						["g"] = {
+						["groups"] = {
 							i(200440),	-- Helm of Feline Instinct
 						},
 					}),
@@ -199,14 +199,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(193341, {	-- Angen
 						["coord"] = { 33.2, 72.4, THALDRASZUS },
 						["questID"] = 73906,
-						["g"] = {
+						["groups"] = {
 							i(200128),	-- Zephyr's Razor
 						},
 					}),
 					n(193330, {	-- Galzuda
 						["coord"] = { 36.0, 68.6, THALDRASZUS },
 						["questID"] = 73916,
-						["g"] = {
+						["groups"] = {
 							i(200261),	-- White Chitin Bands
 						},
 					}),
@@ -322,41 +322,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70906, {
 						["name"] = "1st Weekly Grand Hunt",
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200468, {	-- Grant Hunt Spoils [Epic]
 								i(200290),	-- Bakar Companion (PET!)
-								i(194094, {	-- Bakar Companion Color: Black
-									["questID"] = 71044,
-								}),
-								i(194093, {	-- Bakar Companion Color: Brown
-									["questID"] = 71045,
-								}),
-								i(194091, {	-- Bakar Companion Color: Golden Brown
-									["questID"] = 71048,
-								}),
-								i(194089, {	-- Bakar Companion Color: Orange
-									["questID"] = 71046,
-								}),
-								i(194090, {	-- Bakar Companion Color: White
-									["questID"] = 71047,
-								}),
+								i(194094),	-- Bakar Companion Color: Black (CI!)
+								i(194093),	-- Bakar Companion Color: Brown (CI!)
+								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
+								i(194089),	-- Bakar Companion Color: Orange (CI!)
+								i(194090),	-- Bakar Companion Color: White (CI!)
 								i(215362, {	-- Cache of Storms
 									["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 								}),
 								i(193360),	-- Centaur's Trophy Necklace
-								i(194095, {	-- Ohuna Companion Color: Sepia
-									["questID"] = 71052,
-								}),
+								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
 								i(200276),	-- Ohuna Companion (PET!)
-								i(193205, {	-- Ohuna Companion Color: Brown
-									["questID"] = 71050,
-								}),
-								i(194088, {	-- Ohuna Companion Color: Dark
-									["questID"] = 71049,
-								}),
-								i(194087, {	-- Ohuna Companion Color: Red
-									["questID"] = 71051,
-								}),
+								i(193205),	-- Ohuna Companion Color: Brown (CI!)
+								i(194088),	-- Ohuna Companion Color: Dark (CI!)
+								i(194087),	-- Ohuna Companion Color: Red (CI!)
 								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 								i(192791),	-- Plainswalker Bearer (MOUNT!)
 							}),
@@ -366,22 +348,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "2nd Weekly Grand Hunt",
 						["sourceQuests"] = { 70906 },	-- 1st Weekly Grand Hunt
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200513, {	-- Grand Hunt Spoils [Rare]
 								i(200290),	-- Bakar Companion (PET!)
-								i(194094, {	-- Bakar Companion Color: Black
-									["questID"] = 71044,
-								}),
-								i(194091, {	-- Bakar Companion Color: Golden Brown
-									["questID"] = 71048,
-								}),
-								i(194089, {	-- Bakar Companion Color: Orange
-									["questID"] = 71046,
-								}),
+								i(194094),	-- Bakar Companion Color: Black (CI!)
+								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
+								i(194089),	-- Bakar Companion Color: Orange (CI!)
 								i(193360),	-- Centaur's Trophy Necklace
-								i(194095, {	-- Ohuna Companion Color: Sepia
-									["questID"] = 71052,
-								}),
+								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
 								i(200276),	-- Ohuna Companion (PET!)
 								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 							}),
@@ -391,16 +365,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "3rd Weekly Grand Hunt",
 						["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200515, {	-- Grand Hunt Spoils [Uncommon]
 								i(200290),	-- Bakar Companion (PET!)
-								i(194091, {	-- Bakar Companion Color: Golden Brown
-									["questID"] = 71048,
-								}),
+								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
 								i(193360),	-- Centaur's Trophy Necklace
-								i(194095, {	-- Ohuna Companion Color: Sepia
-									["questID"] = 71052,
-								}),
+								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
 								i(200276),	-- Ohuna Companion (PET!)
 								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 							}),
@@ -410,15 +380,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "Repeatable Grand Hunt",
 						["sourceQuests"] = { 71137 },	-- 3rd Weekly Grand Hunt
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200516, {	-- Grant Hunt Spoils [Common]
-								i(194091, {	-- Bakar Companion Color: Golden Brown
-									["questID"] = 71048,
-								}),
+								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
 								i(193360),	-- Centaur's Trophy Necklace
-								i(194095, {	-- Ohuna Companion Color: Sepia
-									["questID"] = 71052,
-								}),
+								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
 								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 							}),
 						},

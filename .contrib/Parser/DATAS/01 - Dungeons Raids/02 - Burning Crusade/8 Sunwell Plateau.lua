@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_2_4_0 } }, {
 	inst(752, {	-- Sunwell Plateau
 		["lore"] = "Nearly seven thousand years ago, the Highborne were exiled from Kalimdor for refusing to give up arcane magic. Led by Dath'Remar Sunstrider, these elves founded their own kingdom of Quel'Thalas. For millennia the mystical pool of energy known as the Sunwell fueled the potent magic of the exiled high elves. Now, the remnants of this ancient fountain have become the Burning Legion's latest target as the demons prepare to summon their commander, Kil'jaeden, with the Sunwell's energy.",
 		-- #if BEFORE WRATH
@@ -34,14 +34,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				i(35217),	-- Pattern: Embrace of the Phoenix (RECIPE!)
 				i(35213),	-- Pattern: Fletcher's Gloves of the Phoenix (RECIPE!)
 				i(35214),	-- Pattern: Gloves of Immortal Dusk (RECIPE!)
-				i(35205),	-- Pattern: Hands of Eternal Light
+				i(35205),	-- Pattern: Hands of Eternal Light (RECIPE!)
 				i(35216),	-- Pattern: Leather Chestguard of the Sun (RECIPE!)
 				i(35212),	-- Pattern: Leather Gauntlets of the Sun (RECIPE!)
-				i(35207),	-- Pattern: Robe of Eternal Light
+				i(35207),	-- Pattern: Robe of Eternal Light (RECIPE!)
 				i(35219),	-- Pattern: Sun-Drenched Scale Chestguard (RECIPE!)
 				i(35215),	-- Pattern: Sun-Drenched Scale Gloves (RECIPE!)
-				i(35204),	-- Pattern: Sunfire Handwraps
-				i(35206),	-- Pattern: Sunfire Robe
+				i(35204),	-- Pattern: Sunfire Handwraps (RECIPE!)
+				i(35206),	-- Pattern: Sunfire Robe (RECIPE!)
 				i(35209),	-- Plans: Hard Khorium Battlefists (RECIPE!)
 				i(35211),	-- Plans: Hard Khorium Battleplate (RECIPE!)
 				i(35210),	-- Plans: Sunblessed Breastplate (RECIPE!)
@@ -257,7 +257,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				["creatureID"] = 25315,
 				["groups"] = {
 					ach(698, {	-- Sunwell Plateau
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having an item from KJ in your bags.
 						["timeline"] = { ADDED_3_0_2 },
+						-- #endif
 					}),
 					ach(5092, {	-- Sunwell Plateau Guild Run
 						["timeline"] = { ADDED_4_0_3 },
@@ -292,4 +295,4 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			}),
 		},
 	}),
-})));
+}))));

@@ -786,7 +786,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(30918, { ["name"] = "Hui's Vengeance", }),	-- Hui's Vengeance
 			q(30021, { ["name"] = "Impenetrable", }),	-- Impenetrable
 			q(29705, { ["name"] = "Invasion of the Bottle Snatchers", }),	-- Invasion of the Bottle Snatchers
+			-- #if NOT ANYCLASSIC
 			q(31697, { ["name"] = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
+			-- #endif
 			q(29706, { ["name"] = "Kegplosion", }),	-- Kegplosion
 			q(29584, { ["name"] = "Kill Mogu Firestarters", }),	-- Kill Mogu Firestarters
 			q(29531, { ["name"] = "Kill Stuff", }),	-- Kill Stuff
@@ -3244,8 +3246,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(48838),	-- Water Reclamation
 			q(54755, {	-- Not My Table
 				["sourceQuests"] = { 54106 },	-- Tracking Tipoff
-				["races"] = HORDE_ONLY,
 				["maps"] = { REDRIDGE_MOUNTAINS },
+				["races"] = HORDE_ONLY,
 			}),
 			q(56110),	-- A Defender Emerges
 			q(56112),	-- A Royal Awakening
@@ -3277,17 +3279,17 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- Unsorted
 			q(47246, {	-- Remnants of the Damned
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(47506, {
-				["lvl"] = 255,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 255,
 			}),
 			q(47529, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(47588, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
@@ -3295,60 +3297,62 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(47695, {
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(47894, {
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(48023, {	-- Orders Received
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(151928),	-- Explicit Orders (QI!)
 				},
 			}),
 			q(48086, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(48104, {
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(48176, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(48237, {
 				["description"] = "Type: |cFFf09f26Account|r",
 			}),
 			q(48515, {	-- Silver Blades
 				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(155906),	-- Tarnished Silver Blade (QI!)
 				},
 			}),
 			q(48604, {	-- Home Again, Home Again
 				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(152629),	-- Crate of Non-Tainted Meat Products (QI!)
 				},
 			}),
-			q(48653, {
+			q(48653, {	-- A Bejeweled Prison
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
+				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
+				["cost"] = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(48759, {
 				["description"] = "Category: |cFFf09f26Herbalism|r",
@@ -3376,16 +3380,16 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(48808, {	-- Thesis Statement
 				["description"] = "Area: |cFFf09f26Drustvar|r",
-				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(152705),	-- Thesis Paper Page (QI!)
 				},
 			}),
 			q(48905, {	-- Unappreciated Scrolls
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
-				["g"] = {
+				["groups"] = {
 					i(152864),	-- Tortollan Scroll (QI!)
 				},
 			}),
@@ -3451,35 +3455,35 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(48949, {	-- Weeds of the Mire
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(152895),	-- Sprig of Graveweed (QI!)
 				},
 			}),
 			q(48950, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(49073, {	-- Ritualistic Denial
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(153025),	-- Scroll of Purging (QI!)
 				},
 			}),
 			q(49123, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(49124, {	-- Tortollan Rescue
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 20,
+				["groups"] = {
 					i(153049),	-- Scroll of Purging (QI!)
 				},
 			}),
@@ -3488,18 +3492,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(49376, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(49381, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(49408, {
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49449, {
 				["description"] = "Category: |cFFf09f26Herbalism|r",
@@ -3539,139 +3543,139 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(49464, {	-- Saurolisk Tails
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 10,
+				["groups"] = {
 					i(155663),	-- Saurolisk Tail (QI!)
 				},
 			}),
 			q(49578, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49579, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49580, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49590, {
 				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(49591, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(49592, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(49593, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49594, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49595, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49596, {
 				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(49597, {	-- REUSE ME
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				-- ["g"] = {
+				["lvl"] = 50,
+				-- ["groups"] = {
 				-- 	i(155830),	-- Runic Core (QI!)
 				-- },
 			}),
 			q(49598, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(49661, {	-- Locally Sourced Eggs
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 10,
+				["groups"] = {
 					i(155660),	-- Coilscale Egg (QI!)
 				},
 			}),
 			q(49875, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49880, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49945, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49947, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49948, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(49952, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(49991, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(50084, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(50273, {	-- Atal'Dazar: Locking Horns
 				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Blacksmithing|r",
 				["lvl"] = 10,
-				["g"] = {
+				["groups"] = {
 					i(156920),	-- The Golden Horn of Rezan (QI!)
 				},
 			}),
 			q(50321, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
-				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 			}),
 			q(50326, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					i(150733, {	-- Scroll of Town Portal
 						["b"] = 1,
 						["q"] = 1,
@@ -3681,27 +3685,27 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(50350, {
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
-				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(50375, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(50377, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
 			}),
 			q(50520, {
 				["lvl"] = 30,
 			}),
 			q(50632, {	-- Battlefield Scavenging
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(158172),	-- Circle of Elements Supplies (QI!)
 					i(163125),	-- High Perch Supplies (QI!)
 					i(163126),	-- Newstead Supplies (QI!)
@@ -3723,14 +3727,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				},
 			}),
 			q(50670, {
-
 			}),
 			q(50709, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
+				["races"] = HORDE_ONLY,
 				["isDaily"] = 1,
 				["lvl"] = 50,
-				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158326, {	-- Makeshift Explosives
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3740,10 +3743,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(50764, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
+				["races"] = HORDE_ONLY,
 				["isDaily"] = 1,
 				["lvl"] = 50,
-				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158709, {	-- Refurbished Shredder
 						["b"] = 1,
 						["filterID"] = TOYS,
@@ -3752,10 +3755,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				},
 			}),
 			q(51052, {
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = 1,
-				-- ["g"] = {
+				["lvl"] = 50,
+				-- ["groups"] = {
 				-- 	i(151557, {	-- Champion's Strongbox
 				-- 		["b"] = 1,
 				-- 		["q"] = 2,
@@ -3764,9 +3767,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(51068, {	-- Raiding Their Stores
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(159719),	-- Basket of Eggs (QI!)
 					i(159718),	-- Colossal Cheese Wheel (QI!)
 					i(159720),	-- Keg of Applebrew (QI!)
@@ -3795,25 +3798,25 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(51070, {	-- Raiding the Boulderfist
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(159721),	-- Unprocessed Iron Ore (QI!)
 				},
 			}),
 			q(51086, {	-- Break's Over (QI!)
 				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(159744),	-- Overseer's Blackjack (QI!)
 				},
 			}),
 			q(51130, {
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = 1,
-				-- ["g"] = {
+				["lvl"] = 50,
+				-- ["groups"] = {
 				-- 	i(151557, {	-- Champion's Strongbox
 				-- 		["b"] = 1,
 				-- 		["q"] = 2,
@@ -3822,17 +3825,17 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(51344, {	-- To Matters at Hand
 				["description"] = "Area: |cFFf09f26Hall of Communion|r",
-				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
-				-- ["g"] = {
+				["lvl"] = 10,
+				-- ["groups"] = {
 				-- 	i(159671),	-- Silithus Portal Stone (QI!)
 				-- },
 			}),
 			q(51425, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(160219, {	-- Scroll of Town Portal
 						["b"] = 1,
 						["q"] = 1,
@@ -3842,8 +3845,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(51535, {
 				["description"] = "Category: |cFFf09f26Mag'har Orc|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(51567, {
 				["description"] = "Category: |cFFf09f26Island Expeditions|r",
@@ -3857,19 +3860,19 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(52012, {
 				["description"] = "Category: |cFFf09f26Horde War Campaign|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(52440, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(52467, {	-- Battlefield Scavenging
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(162031),	-- Circle of Elements Supplies (QI!)
 					i(163129),	-- High Perch Supplies (QI!)
 					i(163130),	-- Newstead Supplies (QI!)
@@ -3892,9 +3895,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(52468, {	-- Raiding Their Stores
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(159719),	-- Basket of Eggs (QI!)
 					i(159718),	-- Colossal Cheese Wheel (QI!)
 					i(159720),	-- Keg of Applebrew (QI!)
@@ -3923,25 +3926,25 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(52497, {	-- Raiding the Boulderfist
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 50,
+				["groups"] = {
 					i(159721),	-- Unprocessed Iron Ore (QI!)
 				},
 			}),
 			q(52991, {	-- [REMOVED]
 				["description"] = "Category: |cFFf09f26Hallow's End|r",
 				["lvl"] = 10,
-				["g"] = {
+				["groups"] = {
 					i(162972),	-- Bloody Apple (QI!)
 				},
 			}),
 			q(53080, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
+				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = 1,
 				["lvl"] = 50,
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163219, {	-- Repurposed Explosive Device
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3951,53 +3954,53 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(53146, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53148, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53149, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53150, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53162, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53173, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53179, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53190, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53192, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53193, {
 				["description"] = "Area: |cFFf09f26Arathi Highlands|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53199, {
 				["description"] = "Area: |cFFf09f26Zuldazar|r",
@@ -4008,13 +4011,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(53413, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53415, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			-- Tools
 			-- 8.0.1.25902
@@ -4589,23 +4592,23 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(53271),	-- Blooming Star Moss
 			q(53281),	-- Winter's Kiss Cluster
 			q(53283, {	-- Flourishing Sea Stalks
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- 	i(163588),	-- Flourishing Sea Stalk (QI!)
 				-- },
 			}),
 			q(53284, {	-- Flourishing Riverbud
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
 			q(53297, {	-- Flourishing Riverbud
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
 			q(53299),	-- Blooming Siren's Sting
 			q(53302, {	-- Flourishing Riverbud
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- 	i(163595),	-- Flourishing Riverbud (QI!)
 				-- },
 			}),
@@ -4619,14 +4622,14 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(53319, {	-- Our Sacred Forest
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
-				["g"] = {
-					i(163631),	--Sacred Timber (QI!)
+				["groups"] = {
+					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
 			q(53320, {	-- Ours For the Taking
 				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(163631),	--Sacred Timber (QI!)
+				["groups"] = {
+					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
 			q(53427),	--
@@ -4704,13 +4707,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- Unsorted
 			q(53987, {
 				["description"] = "Category: |cFFf09f26Horde War Campaign|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(54210, {
 				["description"] = "Category: |cFFf09f26Alliance War Campaign|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(54748, {
 			}),
@@ -4822,13 +4825,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(53943, {
 				["description"] = "Category: |cFFf09f26Engineering|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(53953, {
 				["description"] = "Category: |cFFf09f26Brawler's Guild|r",
-				["lvl"] = 60,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 60,
 			}),
 			q(54957, {
 				["description"] = "Area: |cFFf09f26Trueshot Lodge|r",
@@ -4862,7 +4865,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(55189),	--
 			q(55190),	--
 			q(55191),	--
-			q(55239),	--
 			-- 8.1.5.29220
 			-- 8.1.5.29281
 			-- 8.1.5.29310
@@ -4908,28 +4910,28 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(56129),	-- Heroic: Battle for Stromgarde
 			q(56206),	-- Heroic: Battle for Stromgarde
 			q(56164, {	-- Desperate Need (A)
+				["sourceQuest"] = 56156,	-- A Tempered Blade
 				["provider"] = { "n", 151763 },	-- Isla
 				["coord"] = { 37.7, 55.3, NAZJATAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 56156,	-- A Tempered Blade
 			}),
 			q(56176, {	-- Desperate Need (H)
+				["sourceQuest"] = 55500,	-- Save a Friend
 				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, NAZJATAR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 55500,	-- Save a Friend
 			}),
 			q(56166, {	-- The Needs of the People
+				["sourceQuest"] = 56164,	-- Desperate Need
 				["provider"] = { "n", 151763 },	-- Isla
 				["coord"] = { 37.7, 55.3, NAZJATAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuest"] = 56164,	-- Desperate Need
 			}),
 			q(56179, {	-- The Needs of the People
+				["sourceQuest"] = 56176,	-- Desperate Need
 				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, NAZJATAR },
 				["races"] = HORDE_ONLY,
-				["sourceQuest"] = 56176,	-- Desperate Need
 			}),
 			-- Unsorted
 			q(54085, {
@@ -4942,7 +4944,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(55111, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					i(169444, {	-- Creature Compendium: Zanj'ir Naga
 						["q"] = 0,
 					}),
@@ -4966,18 +4968,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(55483, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(55484, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(55487, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(55523, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
@@ -5108,33 +5110,33 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(56406, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			q(56409, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			q(56411, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			q(56412, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			q(56415, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			q(56416, {
 				["description"] = "Area: |cFFf09f26Nazjatar|r",
-				["lvl"] = 50,
 				["repeatable"] = 1,
+				["lvl"] = 50,
 			}),
 			-- Mechagon
 			q(54084),	-- [DNT]
@@ -5295,7 +5297,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.2.0.30329
 			q(56666),	--
 			q(56691),	--
-			q(56709),	--
 			q(56717),	--
 			q(56718),	--
 			q(56736),	--
@@ -5383,9 +5384,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(56622, {
 				["description"] = "Area: |cFFf09f26Ashran|r",
-				["lvl"] = 60,
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["lvl"] = 60,
+				["groups"] = {
 					i(170077, {	-- Gleaming Ashmaul Strongbox
 						["b"] = 1,
 						["q"] = 4,
@@ -5394,9 +5395,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(56623, {
 				["description"] = "Area: |cFFf09f26Ashran|r",
-				["lvl"] = 60,
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["lvl"] = 60,
+				["groups"] = {
 					i(170077, {	-- Gleaming Ashmaul Strongbox
 						["b"] = 1,
 						["q"] = 4,
@@ -5413,7 +5414,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			-- tools
 			-- 8.2.5.31337
-			q(56169),	--
 			q(56646),	--
 			q(56878),	--
 			q(56880),	--
@@ -5462,7 +5462,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			q(58801),	-- Enter the Void
 			q(58904, {	-- Shards of Corruption
-				["g"] = {
+				["groups"] = {
 					i(174867),	-- Shard of Corruption (QI!)
 				},
 			}),
@@ -5489,13 +5489,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			q(57155, {
 				["description"] = "Area: |cFFf09f26Crucible of Storms|r",
-				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(57156, {
 				["description"] = "Area: |cFFf09f26Crucible of Storms|r",
-				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
 			}),
 			q(57370, {
 				["description"] = "Area: |cFFf09f26Uldum|r",
@@ -5697,20 +5697,19 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		n(P8xx, {
 			q(54168, {
 				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
-				["isDaily"] = 1,
 				["races"] = HORDE_ONLY,
 				["repeatable"] = 1,
+				["isDaily"] = 1,
 			}),
 			q(54986, {
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					i(169154, {	-- [PH] N'Zoth Cache
 						["q"] = 4,
 					}),
 				},
 			}),
-			q(55208, {
-			}),
+			q(55208),
 		}),
 	}),
 	expansion(EXPANSION.SL, {
@@ -7350,7 +7349,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			q(70390),	-- (DNT) Chloe's Onboarding Kill Quest
 			q(65894),	-- [DNT] - Removed - Eggs Benediction
 			q(65897),	-- [DNT] - Removed - Focus Locus
@@ -8100,7 +8099,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72359),	--
 			q(72361),	--
 			q(72368),	--
-			q(72370),	--
 			q(72491),	--
 			q(72492),	--
 			q(72493),	--
@@ -8410,9 +8408,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75536),	--
 			q(75605),	--
 			q(76198),	--
-			q(76220),	--
 			q(76226),	--
-			q(76231),	--
 			q(76237),	--
 			q(76245),	--
 			q(76289),	--
@@ -8656,7 +8652,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			q(80950),	-- First Craft: Deepfury Hide
 			q(81114),	-- First Craft: Vicious Flask of Manifested Fury
 			q(81651),	-- Delver's Guide to Delves
@@ -8665,15 +8661,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
 			q(82366, {	-- DO NOT USE
-			-- 	["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
-			-- 	["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
-				-- ["g"] = {
-			-- 		i(226146),	-- Handful of Humming Shinies
-			-- 	},
+			-- ["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+			-- ["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+			-- ["groups"] = {
+			-- 	i(226146),	-- Handful of Humming Shinies
+			-- },
 			}),
 			q(82421, {	-- For Your Next Delve
-			--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-			--["coord"] = { 55.3, 41.2, AZJ_KAHET },
+			-- ["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+			-- ["coord"] = { 55.3, 41.2, AZJ_KAHET },
 			}),
 			q(85725),	-- (Argent Dawn Valor Token)
 			q(85726),	-- (Argent Dawn Valor Token)
@@ -8683,6 +8679,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			q(83447),
 			q(86651),	-- [DNT] Test (causes Bolt of Silk Cloth to be Sourced when not under NYI)
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			q(90504), -- Dastardly Duos Weekly Wins
+			q(90503), -- Dastardly Duos Weekly Wins
+			q(90502), -- Dastardly Duos Weekly Wins
+			q(90501), -- Dastardly Duos Weekly Wins
+			q(90500), -- Dastardly Duos Weekly Wins
+			q(90499), -- Dastardly Duos Weekly Wins
+			q(90498), -- Dastardly Duos Weekly Wins
+			q(90497), -- Dastardly Duos Weekly Wins
+			q(90496), -- Dastardly Duos Weekly Wins
+			q(90495), -- Dastardly Duos Weekly Wins
 		})),
 	}),
 }));

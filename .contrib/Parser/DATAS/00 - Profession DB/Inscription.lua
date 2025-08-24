@@ -39,7 +39,7 @@ i(0, 48121);	-- Glyph of Entangling Roots
 i(0, 57119);	-- Glyph of Evasion
 i(0, 57120);	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
 i(0, 56974);	-- Glyph of Evocation
-i(0, 57156);	-- Glyph of Execution
+i(0, 57156);	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
 i(0, 57025);	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
 i(0, 57121);	-- Glyph of Expose Armor
 i(0, 57262);	-- Glyph of Fear
@@ -53,11 +53,11 @@ i(0, 57216);	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
 i(0, 57123);	-- Glyph of Garrote
 i(0, 57125);	-- Glyph of Gouge
 i(0, 57027);	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
-i(0, 57157);	-- Glyph of Hamstring
+i(0, 57157);	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
 i(0, 56945);	-- Glyph of Healing Touch
 i(0, 57265);	-- Glyph of Health Funnel
 i(0, 57266);	-- Glyph of Healthstone
-i(0, 57158);	-- Glyph of Heroic Strike
+i(0, 57158);	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
 i(0, 57029);	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 i(0, 57004);	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
 i(0, 56978);	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
@@ -70,7 +70,7 @@ i(0, 57030);	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
 i(0, 57244);	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 i(0, 57245);	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
 i(0, 57246);	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-i(0, 56985);	-- Glyph of Mana Gem
+i(0, 56985);	-- Glyph of Mana Gem (Deleted with Cata - re-added in MoP using Glyph of Mage Armor spell ID)
 i(0, 56961);	-- Glyph of Maul
 i(0, 57200);	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
 i(0, 56951);	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
@@ -79,12 +79,12 @@ i(0, 57161);	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
 i(0, 57162);	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
 i(0, 56953);	-- Glyph of Rebirth
 i(0, 56955);	-- Glyph of Rejuvenation
-i(0, 57163);	-- Glyph of Rending
+i(0, 57163);	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
 i(0, 57165);	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
 i(0, 56956);	-- Glyph of Rip / Glyph of Prowl[MOP+]
 i(0, 57129);	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
 i(0, 56982);	-- Glyph of Scorch
-i(0, 57270);	-- Glyph of Searing Pain
+i(0, 57270);	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
 i(0, 57009);	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
 i(0, 57271);	-- Glyph of Shadow Bolt
 i(0, 57272);	-- Glyph of Shadowburn
@@ -157,15 +157,15 @@ i(0, 58332);	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph o
 i(0, 58303);	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
 i(0, 58342);	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
 i(0, 58314);	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
-i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
-i(0, 58343);	-- Glyph of Bloodrage
+i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight [CATA] /Glyph of Winged Vengeance [MOP+]
+i(0, 58343);	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA] / Glyph of Bloodcurdling Shout [MOP+]
 i(0, 58323);	-- Glyph of Blurred Speed
-i(0, 58344);	-- Glyph of Charge
+i(0, 58344);	-- Glyph of Charge / Glyph of Long Charge [CATA+]
 i(0, 58337);	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 i(0, 58306);	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
 i(0, 58313);	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
 i(0, 58301);	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
-i(0, 58345);	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+i(0, 58345);	-- Glyph of Mocking Blow / Glyph of Demoralizing Shout [CATA] / Glyph of Gushing Wound [MOP+]
 i(0, 58326);	-- Glyph of Pick Pocket
 i(0, 58300);	-- Glyph of Possessed Strength
 i(0, 58299);	-- Glyph of Revive Pet
@@ -395,7 +395,7 @@ i(0, 57035);	--
 i(0, 57028);	--
 i(0, 57153);	--
 i(0, 56988);	--
-i(0, 56984);	--
+i(0, 56984);	-- Glyph of Mage Armor / Glyph of Mana Gem [MOP+]
 i(0, 57227);	--
 i(0, 64276);	--
 i(0, 64268);	--
@@ -439,7 +439,7 @@ i(0, 59339);	--
 i(0, 57003);	--
 i(0, 57223);	--
 i(0, 59500);	--
-i(0, 57124);	--
+i(0, 57124);	-- Glyph of Ghostly Strike / Glyph of Revealing Strike [CATA] / Glyph of Detection [MOP+]
 i(0, 57190);	--
 i(0, 64283);	--
 i(0, 57192);	--
@@ -612,26 +612,51 @@ i(0, 127020);	-- Secret Tiger Fang Inscription
 i(0, 111646);	-- Starlight Ink
 i(0, 127017);	-- Tiger Claw Inscription
 i(0, 127016);	-- Tiger Fang Inscription
+i(0, 112883);	-- Tome of the Clear Mind
 i(0, 127007);	-- Yu'lon Kite
 -- Scroll/Research?!
+i(0, 124443);	-- Glyph of Black Ice
+i(0, 132167);	-- Glyph of Blackout Kick
+i(0, 112266);	-- Glyph of Bladed Judgment
+i(0, 124444);	-- Glyph of Breath of Fire
+i(0, 112430);	-- Glyph of Burning Anger (Research: Blackfallow Ink)
+i(0, 124446);	-- Glyph of Clash
+i(0, 126153);	-- Glyph of Confession
+i(0, 112462);	-- Glyph of Crackling Tiger Lightning (Research: Blackfallow Ink)
+i(0, 112429);	-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+] (Research: Jadefire Ink)
+i(0, 126701);	-- Glyph of Direction
+i(0, 124447);	-- Glyph of Enduring Healing Sphere
 i(0, 112469);	-- Glyph of Fighting Pose (Research: Ink of the Sea)
+i(0, 57037);	-- Glyph of Focused Wrath
+i(0, 135561);	-- Glyph of Gateway Attunement
+i(0, 124449);	-- Glyph of Guard
+i(0, 126687);	-- Glyph of Holy Resurrection
 i(0, 112464);	-- Glyph of Honor (Scroll of Wisdom)
-i(0, 123781);	-- Glyph of the Blazing Trail(Scroll of Wisdom)
-i(0, 112462);	-- Glyph of Crackling Tiger Lightning Research: Blackfallow Ink
-i(0, 112430);	-- Glyph of Burning Anger Research: Blackfallow Ink
-i(0, 131152);	-- Glyph of the Cheetah Research: Shimmering Ink
-i(0, 124466);	-- Glyph of the Heavens Research: Blackfallow Ink
-i(0, 126800);	-- Glyph of Shadowy Friends Research: Blackfallow Ink
-i(0, 112466);	-- Glyph of Rising Tiger Kick Research: Shimmering Ink
-i(0, 126696);	-- Glyph of the Val'kyr Research: Ink of Dreams
-i(0, 112429);	-- Glyph of Hawk Feast Research: Jadefire Ink
-
+i(0, 122015);	-- Glyph of Incite
+i(0, 112465);	-- Glyph of Jab
+i(0, 124450);	-- Glyph of Mana Tea
+i(0, 126704);	-- Glyph of Marking
+i(0, 122030);	-- Glyph of Mass Exorcism
+i(0, 124448);	-- Glyph of Rapid Rolling
+i(0, 112265);	-- Glyph of Righteous Retreat
+i(0, 112466);	-- Glyph of Rising Tiger Kick (Research: Shimmering Ink)
+i(0, 124461);	-- Glyph of Shadow Word: Death
+i(0, 126800);	-- Glyph of Shadowy Friends (Research: Blackfallow Ink)
+i(0, 124454);	-- Glyph of Spinning Fire Blossom
+i(0, 112468);	-- Glyph of Spirit Roll
+i(0, 119481);	-- Glyph of the Battle Healer
+i(0, 123781);	-- Glyph of the Blazing Trail (Scroll of Wisdom)
+i(0, 131152);	-- Glyph of the Cheetah (Research: Shimmering Ink)
+i(0, 112264);	-- Glyph of the Falling Avenger
+i(0, 124466);	-- Glyph of the Heavens (Research: Blackfallow Ink)
+i(0, 126696);	-- Glyph of the Val'kyr (Research: Ink of Dreams)
+i(0, 124457);	-- Glyph of Transcendence
+i(0, 124460);	-- Glyph of Vampiric Embrace
+i(0, 112461);	-- Glyph of Water Roll
+i(0, 112460);	-- Glyph of Zen Flight
 
 -- Blackfallow
 --i(0, 57855);	-- Glyph of Charm Woodland Creature
-
-
-
 
 i(0, 130407);	-- Mystery of the Mists (removed`?)
 i(0, 127475);	-- Incarnadine Ink Removed?
@@ -656,59 +681,29 @@ i(104229, 148276);	-- Glyph of the Sha
 i(104228, 148275);	-- Glyph of Angels
 i(104227, 148274);	-- Glyph of Pillar of Light
 
-
-
 -- 5.0.3.15890
--- Need more research
-i(0, 124448);	--
-i(0, 124461);	--
 i(0, 112437);	--
-i(0, 112461);	--
-i(0, 126701);	--
 i(0, 127625);	--
-i(0, 112266);	--
-i(0, 112265);	--
 i(0, 124453);	--
 i(0, 112451);	--
 i(0, 112454);	--
 i(0, 112444);	--
-i(0, 124443);	--
 i(0, 126801);	--
-i(0, 124460);	--
-i(0, 124454);	--
-i(0, 126704);	--
 i(0, 112440);	--
-i(0, 124449);	--
 i(0, 124445);	--
-i(0, 124457);	--
 i(0, 124451);	--
-i(0, 112264);	--
 i(0, 58309);	--
-i(0, 112465);	--
 i(0, 124452);	--
-i(0, 112460);	--
-i(0, 112883);	--
 i(0, 112442);	--
-i(0, 124447);	--
 i(0, 124456);	--
-i(0, 112468);	--
-i(0, 57037);	--
-i(0, 126153);	--
 i(0, 112450);	--
-i(0, 124444);	--
 i(0, 124463);	--
 i(0, 112458);	--
-i(0, 124450);	--
 i(0, 112463);	--
 i(0, 124459);	--
-i(0, 122030);	--
-i(0, 119481);	--
-i(0, 124446);	--
 i(0, 124442);	--
 i(0, 124455);	--
-i(0, 126687);	--
 i(0, 112457);	--
-i(0, 122015);	--
 i(0, 112452);	--
 --6.0.1.18179
 -- if not all are 5.4.0 material?
@@ -720,7 +715,6 @@ i(0, 148268);	--
 i(0, 148490);	--
 i(0, 135535);	--
 i(0, 148255);	--
-i(0, 132167);	--
 i(0, 148290);	--
 i(0, 148289);	--
 i(0, 148291);	--
@@ -732,7 +726,6 @@ i(0, 148259);	--
 i(0, 148279);	--
 i(0, 148283);	--
 i(0, 148284);	--
-i(0, 135561);	--
 i(0, 148257);	--
 i(0, 148273);	--
 i(0, 148288);	--
@@ -1681,13 +1674,34 @@ i(0, 444186);	-- Algari Treatise on Tailoring
 ------------------
 -- PATCH 11.0.7 --
 ------------------
+--- ITEM ---
 i(234231, 1213515);	-- Glyph of the Admiral's Pistol Shot
 i(234232, 1213517);	-- Glyph of the Ashvane Pistol Shot
 i(234229, 1213514);	-- Glyph of the Gilded Pistol Shot
 i(234230, 1213512);	-- Glyph of the Twilight Pistol Shot
+--- NYI ---
+i(0, 1213516);		-- Unknown
 
 ------------------
 -- PATCH 11.1.0 --
 ------------------
-i(233022, 471132);	-- Contract: The Cartels of Undermine
-i(232535, 472951);	-- Vantus Rune: Undermine
+--- ITEM ---
+i(232535, 471132);	-- Contract: The Cartels of Undermine
+i(233022, 472951);	-- Vantus Rune: Undermine
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+--- ITEM ---
+i(243052, 1234336);	-- Technique: Glyph of the Strix
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(244043, 1236170);	-- Contract: The K'aresh Trust
+i(249703, 1249466);	-- Deal: Cartel Ba
+i(249705, 1249468);	-- Deal: Cartel Om
+i(249701, 1249463);	-- Deal: Cartel Zo
+i(246811, 1243994);	-- Inspired Writer's Quill
+i(244334, 1236908);	-- Vantus Rune: Manaforge Omega

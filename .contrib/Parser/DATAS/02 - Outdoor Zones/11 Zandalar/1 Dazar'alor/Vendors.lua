@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					15811,	-- Heavy Spear
 					15810,	-- Short Spear
 				}},
-				["g"] = {
+				["groups"] = {
 					i(8177),	-- Practice Sword
 					i(49395),	-- Rigging Slicer
 				},
@@ -21,10 +21,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(132153, {	-- "Black Eye" Zenru
 				["coord"] = { 53.7, 85.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156659, {	-- Counterfeit Rastakhan Mask
 						["description"] = "Return to |CFFCC33FFGriftah|r and trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF(53.0, 89.9)|r.",
-						["g"] = {
+						["groups"] = {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(148923, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Captain Zen'taga <Dubloons Trader>
 				["coord"] = { 44.4, 94.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166491, {	-- Albino Duskwatcher (PET!)
 						["cost"] = { { "c", 1710, 200 }, },	-- 200x Seaferer's Dubloon
 					}),
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(167858, {	-- Island Expedition Cloak
 						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
-						["g"] = {
+						["groups"] = {
 							i(160332, {	-- Mud-Slicked Capote -- Opening on Alliance
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163620, {	-- Island Flotsam
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
-					i(166749, {	-- Lyrics: Song of the Sea
-						["questID"] = 54859,
+					i(166749, {	-- Lyrics: Song of the Sea (CI!)
 						["cost"] = { { "c", 1710, 25 }, },	-- 25x Seaferer's Dubloon
 					}),
 					i(160290, {	-- Red Tricorne Hat
@@ -121,7 +120,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(161067, {	-- Captain Kitt
 				["coord"] = { 44.4, 94.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["modID"] = 14,
 				},{
 					i(173950, {	-- Crestfall Salvage
@@ -180,14 +179,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["g"] = {
+				["groups"] = {
+					i(158205),	-- Acacia Powder
+					i(158186),	-- Distilled Water
 					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),
 			n(122703, {	-- Clever Kumali <Alchemist Trainer>
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuest"] = 50120,	-- A Recipe for Success (H)
 					}),
@@ -196,7 +197,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(138033, {	-- Elly Fraze <Toys and Curiosities>
 				["coord"] = { 48.4, 89.5, DAZARALOR },
 				-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
-				["g"] = {
+				["groups"] = {
 					i(104324, {	-- Foot Ball (TOY!)
 						["timeline"] = { ADDED_5_4_0 },
 					}),
@@ -208,7 +209,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
 				["coord"] = { 47.0, 35.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
 						["timeline"] = { ADDED_8_1_5 },
@@ -218,7 +219,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
 				["coord"] = { 43.4, 38.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
+					i(160298),	-- Durable Flux
 					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50279 },	-- Anvil's Away (H)
 						["timeline"] = { ADDED_8_1_5 },
@@ -228,10 +230,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(132130, {	-- Granda Watae
 				["coord"] = { 42.2, 35.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156652, {	-- Centennial Blossom
 						["description"] = "Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF(57.1, 91.4)|r.",
-						["g"] = {
+						["groups"] = {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
@@ -247,7 +249,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 53.7, 85.9, DAZARALOR },	-- Counterfeit Rastakhan Mask
 				},
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156659, {	-- Counterfeit Rastakhan Mask
 						i(156649, {	-- Zandalari Effigy Amulet (TOY!)
 							["description"] = "To get this item you have to jump through the following hoops:\n\n|cFFFFFFFFStep 1:|r Purchase a |CFFFFD700Sack of \"Discarded\" Hearthstones|r from |CFFCC33FFGriftah|r |cFFFFFFFF[Coords: 53.02, 89.93]|r.\n|cFFFFFFFFStep 2:|r Now visit |CFFCC33FFRakle the Wretched|r and trade him the |CFFFFD700Sack of \"Discarded\" Hearthstones|r to receive a |CFFFFD700Much-Too-Hot-Pepper|r |cFFFFFFFF[Coords: 34.77, 11.58]|r.\n|cFFFFFFFFStep 3:|r Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.81, 14.72]|r.\n|cFFFFFFFFStep 4:|r Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78]|r.\n|cFFFFFFFFStep 5:|r Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF[Coords: 57.15, 91.47]|r.\n|cFFFFFFFFStep 6:|r Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.\n|cFFFFFFFFStep 7:|r Return back to |CFFCC33FFGriftah|r and you will trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF[Coords: 53.02, 89.93]|r.",
@@ -260,7 +262,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(132097, {	-- Happy Holaua <Pet Vendor>
 				["coord"] = { 56.0, 32.2, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
@@ -271,27 +273,25 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163705, {	-- Imaginary Gun (TOY!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
-					i(165840, {	-- Interdimensional Pet Portal
-						["questID"] = 54264,
+					i(165840, {	-- Shattered Pet Portal (CI!)
 						-- #if BEFORE 9.0.2
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						-- #endif
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163502, {	-- Lil' Ben'fon (PET!)
 						["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
-						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
+						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde. Alliance can use it so we don't mark the actual species.
 						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 					}),
 					i(161016, {	-- Lil' Tika (PET!)
 						["sourceQuests"] = { 49681 },	-- Lil' Tika
-						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
+						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde. Alliance can use it so we don't mark the actual species.
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
-					i(139003, {	-- Pocket Pet Portal
-						["questID"] = 43016,
+					i(139003, {	-- Pocket Pet Portal (CI!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(131287, {	-- Natal'hakata <Zandalari Empire Emissary>
 				["coord"] = { 67.2, 71.7, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_ZANDALARI_EMPIRE, {
+				["groups"] = bubbleDownClassicRep(FACTION_ZANDALARI_EMPIRE, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -434,10 +434,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 			}),
 			n(148080, {	-- Olly <Pet Smuggler>
-				["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns.  Complete the mission, and you'll be able to purchase items from the vendor.  It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
+				["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns. Complete the mission, and you'll be able to purchase items from the vendor. It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
 				["coord"] = { 45.51, 86.45, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
@@ -461,7 +461,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(122700, {	-- Pin'jin the Patient <Tailoring Trainer>
 				["coord"] = { 44.5, 33.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
+					i(159959),	-- Nylon Thread
 					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
@@ -474,7 +475,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(122463, {	-- Plen <Unusual and Remarkable Wares>
 				["coord"] = { 47.7, 91.6, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					i(63044),	-- Brown Riding Camel (MOUNT!)
 					i(63045),	-- Tan Riding Camel (MOUNT!)
 				},
@@ -482,7 +483,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(148924, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Mukra
 				["coord"] = { 51.22, 95.08, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166743, {	-- Blight Bomber (TOY!)
 						["cost"] = { { "c", 1716, 125 }, },	-- 125x Honorbound Service Medal
 					}),
@@ -531,10 +532,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(126330, {	-- Rakle the Wretched
 				["coord"] = { 34.7, 11.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156650, {	-- Much-Too-Hot Pepper
 						["description"] = "Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.8, 14.7]|r.",
-						["g"] = {
+						["groups"] = {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
@@ -543,7 +544,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
 				["coord"] = { 58.0, 62.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161532, {	-- Bindings of the Elemental Allies
 						["cost"] = 19000000,	-- 1,900g
 					}),
@@ -559,7 +560,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161521, {	-- Goblin Sapper's Legguards
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166444),	-- Honorbound Scouting Map
+					i(166444),	-- Honorbound Scouting Map (CI!)
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
@@ -649,14 +650,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					39987,	-- Tuskarr Fishing Spear
 				}},
 			}),
-			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-				["coord"] = { 55.0, 86.8, DAZARALOR },
-				["sym"] = {{ "fill" }},	--
-			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168027, {	-- Design: Jewelhammer's Focus (RECIPE!)
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 					}),
@@ -665,21 +662,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(131840, {	-- Shuga Blastcaps <Engineering Trainer>
 				["coord"] = { 45.0, 40.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuest"] = 53937,	-- The Ub3r-Spanner (H)
-						["g"] = {
+						["groups"] = {
 							r(282975),	-- The Ub3r-Spanner (RECIPE!)
 							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)
 							r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
 							r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
 						},
 					}),
+					i(160502),	-- Chemical Blasting Cap
+					i(163569),	-- Insulated Wiring
 				},
 			}),
 			n(125879, {	-- Talutu <Mount Vendor>
 				["coord"] = { 48.5, 87.0, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
 						["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
@@ -695,7 +694,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(149045, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 				["coord"] = { 53.9, 88.9, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
@@ -723,7 +722,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(174636),	-- Relinquished Azerite Chestpiece
 					i(174637),	-- Relinquished Azerite Chestpiece
 					i(174638),	-- Relinquished Azerite Chestpiece
-					-- this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics.  commenting out until someone figures out a better way to display it.
+					-- this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics. commenting out until someone figures out a better way to display it.
 					--[[
 					i(155860),	-- Spymaster's Wrap
 					i(155866),	-- Soulspun Casque
@@ -802,10 +801,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(129597, {	-- Trader Haw'li <Food & Drink>
 				["coord"] = { 37.8, 14.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156651, {	-- Golden Seeds
 						["description"] = "Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78].",
-						["g"] = {
+						["groups"] = {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
@@ -815,10 +814,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(125311, {	-- Trader Nog
 				["coord"] = { 57.1, 91.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156655, {	-- Preserved Night Elf Head
 						["description"] = "Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",
-						["g"] = {
+						["groups"] = {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
@@ -827,7 +826,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(145837, {	-- Violet Shadowmend
 				["coord"] = { 51.6, 57.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 				--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
 				--	i(142380),	-- Dutiful Squire (PET!)
 				--	i(139776),	-- Horde Fanatic (PET!)
@@ -836,7 +835,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(122698, {	-- Xanjo <Leatherworking Trainer>
 				["coord"] = { 44.0, 34.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
 						["sourceQuests"] = { 55223 },	-- Instruments of Destruction (H)
 						["timeline"] = { ADDED_8_1_5 },

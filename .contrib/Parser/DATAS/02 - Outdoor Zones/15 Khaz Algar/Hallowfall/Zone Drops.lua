@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(ZONE_DROPS, {
 			i(217388, {
@@ -31,8 +31,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["crs"] = { 215653 },	-- Kobyss Shadeshaper
 				["coord"] = { 54.0, 26.4, HALLOWFALL },
 			}),
-			i(212491),	-- Sweet Eclipse
-			i(212492),	-- Twilight-Spiced Grouper
 		}),
 	}),
-})));
+}));

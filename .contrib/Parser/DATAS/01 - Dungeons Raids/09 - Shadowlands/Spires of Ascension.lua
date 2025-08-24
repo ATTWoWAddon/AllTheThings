@@ -10,11 +10,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1694,	-- Font of Fealty
 			1695,	-- Seat of the Archon
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				header(HEADERS.Achievement, 14339, {	-- Shard Labor
-					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nBeing part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
-					["g"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
+					["description"] = "Quest tracking must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.\n\nBeing part of the |cFFfe040fVenthyr Covenant|r is not required, but the |cFFfe040fDoor of Shadows|r ability does trivialize a few of the more annoying shards!",
+					["groups"] = sharedData({ ["name"] = "Anima Crystal Shard", ["icon"] = 3528288 }, {
 						q(61298, {	-- Anima Crystal Shard
 							["description"] = "After Kin-Tara, behind a lounge chair on the left side of the fountain.",
 						}),
@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							["description"] = "After Ventunax, behind the left-hand torch next to the Winged Guardian that will take you to the Font of Fealty.",
 						}),
 						q(61300, {	-- Anima Crystal Shard
-							["description"] = "Can be collected before or after Oryphrion.  There is a heart-shaped whirlpool in the middle of the room.  The shard is at the top of the heart in the middle.  After the boss, there will be two Winged Guardians on either side of it.",
+							["description"] = "Can be collected before or after Oryphrion. There is a heart-shaped whirlpool in the middle of the room. The shard is at the top of the heart in the middle. After the boss, there will be two Winged Guardians on either side of it.",
 						}),
 					}),
 				}),
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						163077,	-- Azules
 						162059,	-- Kin-Tara
 					},
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183231),	-- Memory of a Cat-eye Curio
 						-- Conduits
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2416, {	-- Ventunax
 					["crs"] = { 162058 },	-- Ventunax
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183338),	-- Memory of Celerity
 						i(183365),	-- Memory of the Consuming Wrath
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183313),	-- Memory of the Lightbringer's Tempest
 						i(183392),	-- Memory of the Thunderlord
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
-					["g"] = {
+					["groups"] = {
 						ach(14326),	-- Spires of Ascension
 						-- Legendaries
 						i(183354),	-- Memory of the Doom Winds
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
-					["g"] = {
+					["groups"] = {
 						ach(14324),	-- Heroic: Spires of Ascension
 					},
 				}),
@@ -146,13 +146,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2414, {	-- Oryphrion
 					["crs"] = { 162060 },	-- Oryphrion
-					["g"] = {
+					["groups"] = {
 						ach(14331),	-- Goliath Offline
 					},
 				}),
 				e(2412, {	-- Devos, Paragon of Doubt
 					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
-					["g"] = {
+					["groups"] = {
 						ach(14325),	-- Mythic: Spires of Ascension
 						ach(14384),	-- Mythic: Spires of Ascension Guild Run
 						ach(14323),	-- ExSPEARiential

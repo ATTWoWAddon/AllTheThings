@@ -101,20 +101,23 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			q(41612, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
-				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41613, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
-				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41270, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
-				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
+				["groups"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(45804),	-- Impvasion! (Invasion wq)
 			q(42028),	-- Into the Nightmare
 			q(41271, {	-- Into the Whirlpool
 				["requireSkill"] = FISHING,
+				["groups"] = {
+					i(139279),	-- Albino Barracuda (QI!)
+				},
 			}),
 			q(41531, {	-- Iridescent Dreamleaf
 				["requireSkill"] = HERBALISM,
@@ -178,12 +181,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(44895),	-- Sharptalon Swarm!
 			q(41553, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41554, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41260, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			petbattle(q(41855)),	-- Stand Up to Bullies
 			q(41441, {	-- Superior Leystone Deposits
@@ -201,17 +207,17 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(44759),	-- The Vale of Dread (Invasion WQ)
 			q(43303),	-- Time to Rumble!
 			petbattle(q(40279, {	-- Training with Durian
-				["coord"] = { 46.4, 36.9, VALSHARAH },
 				-- #IF BEFORE 10.2.5
 				-- Not sure when they fixed this but you can repeat the battle now :D
 				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				-- #ENDIF
+				["coord"] = { 46.4, 36.9, VALSHARAH },
 			})),
 			q(41992),	-- Twisted Ash
 			q(46766),	-- Ulgthax (Invasion wq)
 			q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3] (RECIPE!)
 				},
 			}),
@@ -252,7 +258,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			petbattle(q(42190)),	-- Wildlife Conservationist
 			q(41652, {	-- Work Order: Deep Amber Loop
 				["requireSkill"] = JEWELCRAFTING,
-				["g"] = {
+				["groups"] = {
 					i(137838),	-- Design: Deep Amber Loop [Rank 3] (RECIPE!)
 				},
 			}),
@@ -263,10 +269,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["requireSkill"] = MINING,
 			}),
 			q(41634, {	-- Work Order: Leystone Armguards
-				["requireSkill"] = BLACKSMITHING,
 				["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
-				["lvl"] = 110,
+				["requireSkill"] = BLACKSMITHING,
 				["isWorldQuest"] = true,
+				["lvl"] = 110,
 				["groups"] = {
 					i(123936),	-- Plans: Leystone Armguards [Rank 3] (RECIPE!)
 				},
@@ -276,13 +282,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			q(41676, {	-- Work Order: Pump-Action Bandage Gun
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(137721),	-- Schematic: Pump-Action Bandage Gun [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41646, {	-- Work Order: Silkweave Gloves
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["groups"] = {
 					i(138012),	-- Pattern: Silkweave Gloves [Rank 3] (RECIPE!)
 				},
 			}),
@@ -291,19 +297,19 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			q(41658, {	-- Work Order: Sylvan Elixirs
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					i(127921),	-- Recipe: Sylvan Elixir [Rank 2] (RECIPE!)
 				},
 			}),
 			q(41640, {	-- Work Order: Warhide Mask
 				["requireSkill"] = LEATHERWORKING,
-				["g"] = {
+				["groups"] = {
 					i(137878),	-- Pattern: Warhide Mask [Rank 3] (RECIPE!)
 				},
 			}),
 			q(41670, {	-- Work Order: Word of Agility
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(128605),	-- Formula: Enchant Cloak - Word of Agility [Rank 3] (RECIPE!)
 				},
 			}),

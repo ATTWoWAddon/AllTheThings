@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["mapID"] = 733,
 		["coord"] = { 59.0, 31.3, VALSHARAH },
 		["lvl"] = 98,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(42745, {	-- Darkheart Thicket: A Burden to Bear
 					["isWorldQuest"] = true,
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt
@@ -180,8 +180,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(96512, e(1654, {	-- Archdruid Glaidalis
 						i(134487),	-- Arch-Druid's Tainted Seal
 						i(139077),	-- Bramblemail Belt

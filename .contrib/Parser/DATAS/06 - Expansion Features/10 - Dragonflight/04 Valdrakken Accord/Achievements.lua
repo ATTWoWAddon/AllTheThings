@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					16301,	-- Treasures of Thaldraszus
 					18384,	-- Whelp, There It Is
 				}},
-				["g"] = {
+				["groups"] = {
 					i(211862),	-- Bestowed Ottuk Vanguard (MOUNT!)
 				},
 			}),

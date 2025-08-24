@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17783, {	-- Adventurer of Zaralek Cavern
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17567),    -- Ancient Stones of Zaralek (automated)
+			ach(17567),	-- Ancient Stones of Zaralek (automated)
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
 				crit(59352, {	-- To a Land Down Under
 					["_quests"] = { 75680 },	-- To a Land Down Under
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			})),
 			ach(18100, {	-- Cavern Clawbbering
 				["cost"] = { { "i", 205686, 21 } },	-- 21x Clacking Claw
-				["g"] = {
+				["groups"] = {
 					i(205904),	-- Vibrant Clacking Claw (TOY!)
 					crit(59491, {
 						["_npcs"] = { 203515 },	-- Alcanon
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
-			explorationAch(17766),	-- Explore Zaralek Cavern
+			ach(17766),		-- Explore Zaralek Cavern
 			header(HEADERS.Achievement, 17934, {	-- Family Battler of Zaralek Cavern
 				petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 					-- Meta Achievement
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						17917,	-- Mechanical Battler of Zaralek Cavern
 						17918,	-- Undead Battler of Zaralek Cavern
 					}},
-					["g"] = {
+					["groups"] = {
 						i(193377),	-- Gerald (PET!)
 					},
 				})),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					41183,	-- There's No Place Like Loamm
 					-- #endif
 				}},
-				["g"] = {
+				["groups"] = {
 					i(205206, {	-- Calescent Shalewing (MOUNT!)
 						["timeline"] = { ADDED_10_2_6 },
 					}),

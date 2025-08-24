@@ -238,7 +238,7 @@ namespace ATT
                 Directory.CreateDirectory(Path.GetDirectoryName(filePath));
                 File.WriteAllText(filePath, finalDirtyObjectStringBuilder
                     .Insert(0, "local ObjectDB = ObjectDB; for objectID,objectData in pairs(")
-                    .Append(")\ndo ObjectDB[objectID] = objectData; end").ToString(), Encoding.UTF8);
+                    .Append($")\ndo ObjectDB[objectID] = objectData; end{Environment.NewLine}").ToString(), Encoding.UTF8);
             }
         }
 

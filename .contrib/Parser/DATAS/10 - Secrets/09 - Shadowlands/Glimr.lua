@@ -5,7 +5,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 	header(HEADERS.Spell, 329900, {	-- Glimr
 		["displayID"] = 96259,
 		["modelScale"] = 1.1,
-		["g"] = {
+		["groups"] = {
 			q(60605, {	-- Glimmerfin Scale
 				["provider"] = { "o", 352909 },	-- Glimmerfin Scale
 				["coord"] = { 18.4, 88.2, GRIZZLY_HILLS },
@@ -14,7 +14,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60605 },	-- Glimmerfin Scale
 				["provider"] = { "n", 25197 },	-- King Mrgl-Mrgl
 				["coord"] = { 43.5, 13.9, BOREAN_TUNDRA },
-				["g"] = {
+				["groups"] = {
 					i(180010),	-- Meaty Crab Chunk (QI!)
 				},
 			}),
@@ -22,7 +22,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60606 },	-- Glimmerfin Welcome
 				["provider"] = { "n", 169414 },	-- Glimmergut
 				["coord"] = { 17.8, 93.2, GRIZZLY_HILLS },
-				["g"] = {
+				["groups"] = {
 					i(180025),	-- Pile of Blubberfat (QI!)
 				},
 			}),
@@ -35,7 +35,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60615 },	-- Seer of the Waves
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
-				["g"] = {
+				["groups"] = {
 					i(180026),	-- Giant Pearl (QI!)
 				},
 			}),
@@ -48,7 +48,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60617 },	-- Trainer's Test
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
-				["g"] = {
+				["groups"] = {
 					i(180031),	-- Bulbous Seaweed Stalk (QI!)
 					i(180033),	-- Warm Seaweed Stalk (QI!)
 					i(180032),	-- Young Seaweed Stalk (QI!)
@@ -58,7 +58,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 60619 },	-- Wrap it Up
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
-				["g"] = {
+				["groups"] = {
 					i(180034),	-- Glimr (PET!)
 				},
 			}),

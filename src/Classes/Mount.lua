@@ -9,15 +9,12 @@ local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_Mou
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;
-local GetRawField
-	= app.GetRawField
 
 -- Mount Lib
 do
@@ -40,7 +37,6 @@ do
 	end });
 	local cache = app.CreateCache("spellID");
 	local function CacheInfo(t, field)
-		local itemID = t.itemID;
 		local _t, id = cache.GetCached(t);
 		local mountID = SpellIDToMountID[id];
 		if mountID then
@@ -55,36 +51,22 @@ do
 			_t.name = name
 			_t.icon = icon;
 		end
-		if itemID then
-			local itemLink = select(2, GetItemInfo(itemID));
-			-- item info might not be available on first request, so don't cache the data
-			if itemLink then
-				_t.link = itemLink;
-			end
-		else
-			_t.link = GetSpellLink(id);
-		end
+		_t.link = GetSpellLink(id);
 		if not _t.link and not t.CanRetry then
-			local name = (itemID and ("Item #%d"):format(itemID)) or
-						(id and ("Spell #%d"):format(id));
+			local name = id and ("Spell #%d"):format(id);
 			_t.name = _t.name or name;
 			_t.icon = _t.icon or 134400;	-- question mark
 			_t.link = GetSpellLink(id);
 		end
 		if field then return _t[field]; end
 	end
-	local function default_costCollectibles(t)
-		local id = t.itemID;
-		if id then
-			local results = GetRawField("itemIDAsCost", id);
-			if results and #results > 0 then
-				-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
-				return results;
-			end
-		end
-		return app.EmptyTable;
-	end
 
+	local PerCharacterMountSpells = {
+		[148970] = 1,	-- Felsteed (Green)
+		[148972] = 1,	-- Dreadsteed (Green)
+		[241857] = 1,	-- Druid Lunarwing
+		[231437] = 1,	-- Druid Lunarwing (Owl)
+	}
 	app.CreateMount = app.CreateClass(CLASSNAME, KEY, {
 		CACHE = function() return CACHE end,
 		_cache = function(t)
@@ -116,9 +98,6 @@ do
 		mountJournalID = function(t)
 			return cache.GetCachedField(t, "mountJournalID", CacheInfo);
 		end,
-		costCollectibles = function(t)
-			return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
-		end,
 		collectibleAsCost = app.CollectibleAsCost,
 		collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
 		collected = function(t)
@@ -138,21 +117,24 @@ do
 			return t.mountID;
 		end,
 		tsm = function(t)
-			if t.itemID then return ("i:%d"):format(t.itemID); end
 			if t.parent and t.parent.itemID then return ("i:%d"):format(t.parent.itemID); end
 		end,
-	})
-	local PerCharacterMountSpells = {
-		[148970] = 1,	-- Felsteed (Green)
-		[148972] = 1,	-- Dreadsteed (Green)
-		[241857] = 1,	-- Druid Lunarwing
-		[231437] = 1,	-- Druid Lunarwing (Owl)
-	}
+		perCharacter = function(t)
+			return PerCharacterMountSpells[t.mountID]
+		end
+	},
+	"WithItem", {
+		ImportFrom = "Item",
+		ImportFields = { "name", "link", "icon", "tsm", "costCollectibles", "AsyncRefreshFunc" },
+	},
+	function(t) return t.itemID end)
 	app.AddEventHandler("OnRefreshCollections", function()
 		local acct, char, none = {}, {}, {}
 		local IsSpellKnown = app.IsSpellKnownHelper
 		for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			-- somehow, randomly, some players have had a spellID value which exists but isn't a number...
+			spellID = tonumber(spellID)
 			if spellID then
 				 -- also used to have a questID check... is that really needed?
 				if isCollected or IsSpellKnown(spellID) then

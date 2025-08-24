@@ -6,14 +6,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(QUESTS, {
 			header(HEADERS.Quest, 60152, {	-- The Eternal City
 				["icon"] = 3847780,
-				["g"] = {
+				["groups"] = {
 					q(62801, {	-- The Call of Fate
+						["description"] = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+						["sourceQuests"] = { 59770 },	-- Stand as One
 						-- TODO: confirm whether you HAVE to hit 60 on that exact quest
 						-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
-						["sourceQuests"] = { 59770 },	-- Stand as One
-						["isBreadcrumb"] = true,
 						["lockCriteria"] = { 1, "lvl", 61 },
-						["description"] = "In order to guarantee this quest is offered, the safest way is this: Level a character to approximately 59.7 (meaning Level 59, about 70% experience gained). From there, start the Shadowlands intro (SKIPPING THE MAW), and complete quests in Oribos until you create portals back to Orgrimmar and Stormwind. You should have hit level 60- from there, return to your Capital City, log out and back in, and the quest should pop up.",
+						["isBreadcrumb"] = true,
 					}),
 					q(60129, {	-- Stranger in an Even Stranger Land
 						["sourceQuests"] = { 59770 },	-- Stand as One
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(184544),	-- Attuned Shard (QI!)
 						i(184757),	-- Chain of the Purpose-Bound
 					},
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 					["maps"] = { TORGHAST },
-					["g"] = {
+					["groups"] = {
 						i(184758),	-- Drape of Inscrutable Purpose
 						i(184198),	-- Soul-Touched Key (QI!)
 					},
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62935 },	-- Remnants of Hope
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184200),	-- Coded Notes (QI!)
 						i(184199),	-- Ice-Encrusted Debris (QI!)
 					},
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184550),	-- Attuned Shard (QI!)
 					},
 				}),
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62966 },	-- Finding a Witness
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184242),	-- Burnt Totem (QI!)
 					},
 				}),
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184551),	-- Attuned Shard (QI!)
 					},
 				}),
@@ -164,17 +164,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						60146,	-- Torment Chamber: Thrall
 						-- 63645,	-- The Dawnkeep Prisoner	-- TODO: confirm
 					},
+					["altQuests"] = { 60146 },	-- Torment Chamber: Thrall
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					-- This quest gets skipped over during marking all the quest as done when using the skip, and it also doesn't pop up for people who after the skip implementation try to do the chain manually.
 					-- In short, things are broken, and until Blizzard does something about it (please submit a bug report to them if this affects you), marking this as breadcrumb and not obtainable in party sync is the best way to handle this in ATT.
-					["isBreadcrumb"] = true,
-					["altQuests"] = { 60146 },	-- Torment Chamber: Thrall
-					["DisablePartySync"] = true,
 				}),
 				q(62836, {	-- Signs of the Lion
 					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184276),	-- Length of Light-Infused Chain (QI!)
 						i(184277),	-- Lion Emblem (QI!)
 						i(184278),	-- Royal Ring (QI!)
@@ -187,9 +187,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(61558, {	-- The Highlord's Vision
 					["sourceQuests"] = { 61730 },	-- The Captive King
-					["providers"] = {
-						{ "n", 171362 },	-- Thrall (this NPC gives the quest but the RP does not properly progress)
-						{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
+					["qgs"] = {
+						171362,	-- Thrall (this NPC gives the quest but the RP does not properly progress)
+						175912,	-- Thrall (this NPC gives the quest and triggers the RP properly)
 					},
 					["coord"] = { 40.0, 68.4, ORIBOS },
 				}),
@@ -219,21 +219,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
-				["crs"] = { 151583 },	-- Secret Fish
-				["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles
 				["maps"] = {
 					ARDENWEALD,
 					BASTION,
 					MALDRAXXUS,
 					REVENDRETH,
 				},
+				["crs"] = { 151583 },	-- Secret Fish
 				["_drop"] = { "isDaily" },
+				["groups"] = { i(161475) },	-- Secret Fish Lure
 			}),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
 				["coord"] = { 64.4, 35.8, ORIBOS },
 				["timeline"] = { REMOVED_10_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(183251),	-- Memory of a Craven Strategem
 					i(183224),	-- Memory of a Deep Focus Draught
 					i(183210),	-- Memory of a Fel Bombardment
@@ -260,43 +260,43 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
-			-- TODO: post-DF is threads of fate still a thing, or are these quests available to a first-time/storyline character as well?
 		}, {
 			------ Skip Quests ------
 			q(62704, {	-- The Threads of Fate
 				["sourceQuests"] = { 59770 },	-- Stand as One
+				["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 				["provider"] = { "n", 174871 },	-- Fatescribe Roh-Tahl
 				["coord"] = { 19.6, 50.2, ORIBOS },
+				["customCollect"] = IGNORED_VALUE,
+				["DisablePartySync"] = true,
 				-- this quest is only available once another character has completed the SL campaign, but it in itself is what allows becoming a 'skip'
 				-- character so it isn't actually a Threads quest
-				["customCollect"] = IGNORED_VALUE,
-				["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
-				["DisablePartySync"] = true,
 			}),
 			q(63771, {	-- Fate's Reminder
 				["description"] = "To get this Quest, you have to choose 'Replay Storyline' and pick 'Skip Storyline' right after.",
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
-				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lockCriteria"] = { 1, "lvl", 60 },
+				["isBreadcrumb"] = true,
 			}),
 			q(62716, {	-- Re-Introductions
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
-				["providers"] = {
-					{ "n", 174871 },	-- Fatescribe Roh-Tahl
-					{ "n", 164173 },	-- Fatescribe Roh-Tahl
+				["qgs"] = {
+					174871,	-- Fatescribe Roh-Tahl
+					164173,	-- Fatescribe Roh-Tahl
 				},
 				["coords"] = {
 					{ 19.6, 50.2, ORIBOS },
 					{ 79.0, 49.2, ORIBOS },
 				},
+				["isBreadcrumb"] = true,
 			}),
 			q(62000, {	-- Choosing Your Purpose
 				["sourceQuests"] = { 62716 },	-- Re-Introductionse
+				["altQuests"] = { 57878 },	-- Choosing Your Purpose
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["altQuests"] = { 57878 },	-- Choosing Your Purpose
 				["DisablePartySync"] = true,
 			}),
 			------ Zone Choice Quests ------
@@ -305,97 +305,96 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62000 },	-- Choosing Your Purpose
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
-				["DisablePartySync"] = true,
 				["lockCriteria"] = { 1,	-- Completing 1 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
-
+				["isBreadcrumb"] = true,
+				["DisablePartySync"] = true,
 			}),
 			q(63208, {	-- The Next Step
 				["description"] = "Offered after completing 1 Zone Meta-quest.",
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 2,	-- Completing 2 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["isBreadcrumb"] = true,
 			}),
 			q(63209, {	-- Furthering the Purpose
 				["description"] = "Offered after completing 2 Zone Meta-quests.",
 				["sourceQuests"] = { 63208 },	-- The Next Step
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 3,	-- Completing 3 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["isBreadcrumb"] = true,
 			}),
 			q(63210, {	-- The Last Step
 				["description"] = "Offered after completing 3 Zone Meta-quests.",
 				["sourceQuests"] = { 63209 },	-- Furthering the Purpose
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
-				["isBreadcrumb"] = true,
-				["timeline"] = { REMOVED_10_0_0 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_0, ADDED_11_1_0 },
 				["lockCriteria"] = { 4,	-- Completing 4 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
 				},
+				["isBreadcrumb"] = true,
 			}),
 			------ Zone Select Breadcrumbs ------
 			q(62277, {	-- Ardenweald
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 62153 },	-- accepting this Quest
+				["isBreadcrumb"] = true,
 			}),
 			q(62275, {	-- Bastion
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 62151 },	-- accepting this Quest
+				["isBreadcrumb"] = true,
 			}),
 			q(62278, {	-- Maldraxxus
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 62152 },	-- accepting this Quest
+				["isBreadcrumb"] = true,
 			}),
 			q(62279, {	-- Revendreth
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 62154 },	-- accepting this Quest
+				["isBreadcrumb"] = true,
 			}),
 			q(65031, {	-- Battlegrounds
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
-				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["isBreadcrumb"] = true,
 			}),
 			q(64846, {	-- Torghast
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
 			}),
 			------ Zone Travel Breadcrumbs ------
 			------ Ardenweald ------
@@ -411,8 +410,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62277 },	-- Ardenweald
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["customCollect"] = { "SL_SKIP", "SL_COV_NFA", },	-- SL Skip Character + Night Fae
+				["isBreadcrumb"] = true,
 			}),
 			------ Bastion ------
 			q(62707, {	-- The Elysian Fields [Non-Kyrian]
@@ -427,8 +426,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62275 },	-- Bastion
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["customCollect"] = { "SL_SKIP", "SL_COV_KYR", },	-- SL Skip Character + Kyrian
+				["isBreadcrumb"] = true,
 			}),
 			------ Maldraxxus ------
 			q(62738, {	-- A Fresh Blade [Non-Necrolord]
@@ -443,8 +442,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62278 },	-- Maldraxxus
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["customCollect"] = { "SL_SKIP", "SL_COV_NEC", },	-- SL Skip Character + Necrolord
+				["isBreadcrumb"] = true,
 			}),
 			------ Revendreth ------
 			q(62740, {	-- Dark Aspirations [Non-Venthyr]
@@ -459,24 +458,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62279 },	-- Revendreth
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 70.0, ORIBOS },
-				["isBreadcrumb"] = true,
 				["customCollect"] = { "SL_SKIP", "SL_COV_VEN", },	-- SL Skip Character + Venthyr
+				["isBreadcrumb"] = true,
 			}),
 			------ Battlegrounds ------
 			q(65032, {	-- Battleground Observers
 				["sourceQuests"] = { 65031 },	-- Battlegrounds
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
 			}),
 			------ Torghast ------
 			q(64849, {	-- Tower of the Damned
 				["sourceQuests"] = { 64846 },	-- Torghast
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
 			}),
 			------ Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose) ------
 			------ Ardenweald ------
@@ -488,7 +487,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
 					i(181433),	-- Duskwarder Gavel
@@ -513,7 +512,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
 					i(181627),	-- Lifepath Crossbow
@@ -539,7 +538,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 52.8, 68.2, MALDRAXXUS },
 					{ 49.7, 43.5, SEAT_OF_THE_PRIMUS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(181685),	-- Gorewrought Barrier
 					i(181689),	-- Gorewrought Bonesaw
 					i(181693),	-- Gorewrought Crossbow
@@ -563,15 +562,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					62159,	-- Aiding the Shadowlands
 					62704,	-- The Threads of Fate
 				},
-				["providers"] = {
-					{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
-					{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+				["qgs"] = {
+					158653,	-- Prince Renathal [in Sinfall, for Venthyr]
+					175056,	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
 				["coords"] = {
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
-				["g"] = {
+				["groups"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
@@ -596,9 +595,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 65032 },	-- Battleground Observers
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
+				["timeline"] = { ADDED_9_1_5 },
 				["isDaily"] = true,
 				["lvl"] = { 50, 59 },
-				["timeline"] = { ADDED_9_1_5 },
 				["sym"] = {
 					{"select", "mapID", BASTION },
 					{"find", "headerID", ZONE_REWARDS },
@@ -626,9 +625,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuest"] = 64849,	-- Tower of the Damned
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1627 },
-				["isDaily"] = true,
 				["timeline"] = { ADDED_9_1_5 },
 				["lockCriteria"] = { 1, "lvl", 60 },
+				["isDaily"] = true,
 				--  "able to acquire this quest after skipping the campaign on my fresh level 10"
 			}),
 			------ Oribos Return Quests ------
@@ -665,9 +664,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			------ Revendreth ------
 			q(62779, {	-- Return to Oribos
 				["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth
-				["providers"] = {
-					{ "n", 158653 },	-- Prince Renathal [in Sinfall, for Venthyr]
-					{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
+				["qgs"] = {
+					158653,	-- Prince Renathal [in Sinfall, for Venthyr]
+					175056,	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
 				["coords"] = {
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
@@ -682,7 +681,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 65033 },	-- Observing Victory
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			})),
 			------ Torghast ------
@@ -690,7 +689,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 64850 },	-- Traversing Torghast
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1911 },	-- Torghast - Entrance
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			}),
 		})),
@@ -741,13 +740,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60256, {	-- A Valuable Find: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178575),	-- Golden Orb of Energy (QI!)
 					i(178591),	-- Ancient Venthyr Relic
 					i(178575),	-- Golden Orb of Energy (QI!)
@@ -758,9 +757,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60253, {	-- A Valuable Find: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -770,45 +769,45 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60251, {	-- A Valuable Find: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178571),	-- A Slimy Correspondence (QI!)
 				},
 			}),
 			q(60257, {	-- A Valuable Find: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178576),	-- Ancient Broker Headpiece (QI!)
 				},
 			}),
 			q(60252, {	-- A Valuable Find: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178570),	-- Fading Memory Glass (QI!)
 				},
 			}),
 			q(60255, {	-- A Valuable Find: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -818,9 +817,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60250, {	-- A Valuable Find: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -830,9 +829,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60254, {	-- A Valuable Find: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary
-					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167881,	-- Ta'lan the Antiquary
+					205782,	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -842,9 +841,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60244, {	-- Trading Favors: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -854,9 +853,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60242, {	-- Trading Favors: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -866,9 +865,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60248, {	-- Trading Favors: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -878,9 +877,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60243, {	-- Trading Favors: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -890,9 +889,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60249, {	-- Trading Favors: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -902,9 +901,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60245, {	-- Trading Favors: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -914,21 +913,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60247, {	-- Trading Favors: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178580),	-- Champion's Coin (QI!)
 				},
 			}),
 			q(60246, {	-- Trading Favors: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["providers"] = {
-					{ "n", 167880 },	-- Finder Ta'sul
-					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				["qgs"] = {
+					167880,	-- Finder Ta'sul
+					205783,	-- Finder Ta'sul (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -956,7 +955,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(65756, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
 				q(65757, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
 				q(66047, {["timeline"] = {ADDED_9_2_0}}),	-- Solo Shuffle Completion? /First win
-				-- q(70704, {["timeline"] = {ADDED_9_2_0}}),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
 				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Oribos)
 				hqt(65511, {	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
 					["timeline"] = {ADDED_9_2_0},

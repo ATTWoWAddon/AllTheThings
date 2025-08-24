@@ -1,0 +1,94 @@
+5.0.3.15882
+fp(888),	-- -- \\ Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines
+fp(894),	-- -- \\ Grookin Hill, Jade Forest
+fp(895),	-- -- \\ Dawn's Blossom, Jade Forest
+fp(918),	-- -- \\ Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK
+fp(919),	-- -- \\ Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK
+fp(920),	-- -- \\ Quest Path 2956: Quest - Valley of the Four Winds (Flyback: Chen C) PRK
+fp(921),	-- -- \\ Quest Path 2957: Quest - Valley of the Four Winds (Flyback: Chen D) PRK
+fp(922),	-- -- \\ Quest Path 2958: Quest - Valley of the Four Winds (Flyback: Sad Panda A) PRK
+fp(923),	-- -- \\ Quest Path 2959: Quest - Valley of the Four Winds (Flyback: Sad Panda B) PRK
+fp(924),	-- -- \\ Quest Path 2960: Quest - Valley of the Four Winds (Flyback: Horde A) PRK
+fp(925),	-- -- \\ Quest Path 2961: Quest - Valley of the Four Winds (Flyback: Alliance A) PRK
+fp(926),	-- -- \\ Quest Path 2962: Quest - Valley of the Four Winds (Flyback: Horde B) PRK
+fp(927),	-- -- \\ Quest Path 2963: Quest - Valley of the Four Winds (Flyback: Alliance B) PRK
+fp(935),	-- -- \\ Quest Path 2986: Jade Forest: -hmc (Taxi: Glassfin Village to Dawnblossom)
+fp(949),	-- -- \\ Quest Path 3002: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top)
+fp(950),	-- -- \\ Quest Path 3003: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine)
+fp(951),	-- -- \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise \\ Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise
+fp(963),	-- -- \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise \\ Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise
+fp(966),	-- -- \\ Paw'Don Village, Jade Forest
+fp(967),	-- -- \\ The Arboretum, Jade Forest
+fp(968),	-- -- \\ Jade Temple Grounds, Jade Forest
+fp(969),	-- -- \\ Sri-La Village, Jade Forest
+fp(970),	-- -- \\ Emperor's Omen, Jade Forest
+fp(971),	-- -- \\ Tian Monastery, Jade Forest
+fp(972),	-- -- \\ Pearlfin Village, Jade Forest
+fp(973),	-- -- \\ Honeydew Village, Jade Forest
+fp(984),	-- -- \\ Pang's Stead, Valley of the Four Winds
+fp(985),	-- -- \\ Halfhill, Valley of the Four Winds
+fp(986),	-- -- \\ Zhu's Watch, Krasarang Wilds
+fp(987),	-- -- \\ Thunder Cleft, Krasarang Wilds
+fp(988),	-- -- \\ The Incursion, Krasarang Wilds
+fp(989),	-- -- \\ Stoneplow, Valley of the Four Winds
+fp(990),	-- -- \\ Dawnchaser Retreat, Krasarang Wilds
+fp(991),	-- -- \\ Sentinel Basecamp, Krasarang Wilds
+fp(992),	-- -- \\ Cradle of Chi-Ji, Krasarang Wilds
+fp(993),	-- -- \\ Marista, Krasarang Wilds
+fp(998),	-- -- \\ Quest Path 3154: Quest - Kun-Lai Summit - Neverrest Peak -> Valley of Emperors
+fp(1009),	-- -- \\ Quest Path 3173: Quest - Kun-Lai Summit - Valley -> Whispercloud Rise
+fp(1016),	-- -- \\ Quest Path 3066: Quest - Jade Forest - Serpent's Spine -> VotFW - JLR
+fp(1017),	-- -- \\ Binan Village, Kun-Lai Summit
+fp(1018),	-- -- \\ Temple of the White Tiger, Kun-Lai Summit
+fp(1019),	-- -- \\ Eastwind Rest, Kun-Lai Summit
+fp(1020),	-- -- \\ Westwind Rest, Kun-Lai Summit
+fp(1021),	-- -- \\ Zouchin Village, Kun-Lai Summit
+fp(1022),	-- -- \\ One Keg, Kun-Lai Summit
+fp(1023),	-- -- \\ Kota Basecamp, Kun-Lai Summit
+fp(1024),	-- -- \\ Shado-Pan Fallback, Kun-Lai Summit
+fp(1025),	-- -- \\ Winter's Blossom, Kun-Lai Summit
+fp(1029),	-- -- \\ Tavern in the Mists, The Veiled Stair
+fp(1030),	-- -- \\ Quest Path 3244: Jade Forest: -hmc (Taxi: Serpent's Spine to East Temple)
+fp(1032),	-- -- \\ Quest Path 3246: Quest - Kun-Lai Summit - GoWB - To the Wall! (NLC)
+fp(1038),	-- -- \\ Quest Path 3248: Quest - Kun-Lai Summit - GoWB - Back from the Wall (NLC)
+fp(1046),	-- -- \\ Jade Forest - Cliff path 04 Start
+fp(1047),	-- -- \\ Jade Forest - Cliff path 04 End
+fp(1048),	-- -- \\ Quest Path 3263: Jade forest - Cliff path 04
+fp(1049),	-- -- \\ Quest Path 3264: Jade Forest - Cliff Path 01
+fp(1050),	-- -- \\ Quest Path 3265: Jade Forest - Cliff Path 02
+fp(1051),	-- -- \\ Quest Path 3266: Jade Forest - Cliff Path 03
+fp(1052),	-- -- \\ Grassy Cline, Valley of the Four Winds
+fp(1053),	-- -- \\ Longying Outpost, Townlong Steppes
+fp(1054),	-- -- \\ Gao-Ran Battlefront, Townlong Steppes
+fp(1055),	-- -- \\ Rensai's Watchpost, Townlong Steppes
+fp(1056),	-- -- \\ Shado-Pan Garrison, Townlong Steppes
+fp(1057),	-- -- \\ Shrine of Seven Stars, Vale of Eternal Blossoms
+fp(1058),	-- -- \\ Shrine of Two Moons, Vale of Eternal Blossoms
+fp(1070),	-- -- \\ Klaxxi'vess, Dread Wastes
+fp(1071),	-- -- \\ Soggy's Gamble, Dread Wastes
+fp(1072),	-- -- \\ The Sunset Brewgarden, Dread Wastes
+fp(1073),	-- -- \\ Serpent's Spine, Vale of Eternal Blossoms
+fp(1076),	-- -- \\ Quest Path 3375: Jade Forest: JSB - East Temple -> Grookin' Hill
+fp(1079),	-- -- \\ Quest Path 3377: Jade Forest: JSB - East Temple -> Glassfin Village
+fp(1080),	-- -- \\ Serpent's Overlook, Jade Forest
+fp(1090),	-- -- \\ The Briny Muck, Dread Wastes
+fp(1091),	-- -- \\ Quest Path 3448: Dread Wastes: Klaxxi'vess -> Briny Muck Quest Path
+fp(1092),	-- -- \\ Quest Path 3449: Dread Wastes: Klaxxi'vess -> Lake of Stars Quest Path
+fp(1104),	-- -- \\ Test - Spy Quest H01a - PRK
+fp(1105),	-- -- \\ Test - Spy Quest H01b - PRK
+fp(1114),	-- -- \\ Quest Path 3481: Quest - Kun-Lai Summit: JLR - Zouchin Village -> Isle of Reckoning
+fp(1115),	-- -- \\ The Lion's Redoubt, Dread Wastes
+fp(1116),	-- -- \\ Quest Path 3482: Quest - Kun-Lai Summit: JLR - Isle of Reckoning - Zouchin
+fp(1117),	-- -- \\ Serpent's Spine, Kun-Lai Summit \\ Hellscream's Fist, Townlong Steppes
+fp(1130),	-- -- \\ Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
+fp(1131),	-- -- \\ Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
+5.5.0.60481
+fp(1190),	-- -- \\ Lion's Landing, Krasarang Wilds
+fp(1195),	-- -- \\ Domination Point, Krasarang Wilds
+fp(1221),	-- -- \\ Beeble's Wreck, Isle Of Giants
+fp(1222),	-- -- \\ Bozzle's Wreck, Isle Of Giants
+fp(1284),	-- -- \\ Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer
+fp(1291),	-- Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]
+fp(1292),	-- -- \\ Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
+fp(1293),	-- -- \\ Tushui Landing, Timeless Isle
+fp(1294),	-- -- \\ Huojin Landing, Timeless Isle

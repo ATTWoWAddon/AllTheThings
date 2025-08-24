@@ -24,7 +24,7 @@ namespace ATT
             // Initialize all of the Object Types in order of Export Priority.
             ObjectData.Create("buildingID",         "gb",           "_.CreateGarrisonBuilding", "f", "spellID");
             ObjectData.Create<MountData>("mountID", "mnt",          "_.CreateMount", "f", "spellID", "modID");
-            ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
+            ObjectData.Create<HeaderData>("headerID","ah",          "_.CreateHeader", "f"); // To not confuse people, "ah" means "AutoHeader", which is different from a Header
             ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "modID");
             ObjectData.Create("objectiveID",        "qo",           "_.CreateQuestObjective", "f");
             ObjectData.Create("instanceID",         "inst",         "_.CreateInstance", "f");
@@ -43,8 +43,8 @@ namespace ATT
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
             ObjectData.Create("missionID",          "gm",           "_.CreateGarrisonMission", "f");
             ObjectData.Create("talentID",           "gt",           "_.CreateGarrisonTalent", "f");
-            ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
-            ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
+            ObjectData.Create<MapData>("mapID",     "m",            "_.CreateMap", "f");
+            ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID", "type");
             ObjectData.Create<RecipeData>("recipeID",   "r",        "_.CreateRecipe", "f", "spellID", "modID");
             ObjectData.Create("azeriteessenceID",   "aze",          "_.CreateAzeriteEssence", "f");
             ObjectData.Create("runeforgepowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
@@ -65,8 +65,8 @@ namespace ATT
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID", "f");
             ObjectData.Create("npcID",              "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create("spellID",            "sp",           "_.CreateSpell", "f");
-            ObjectData.Create<FactionQuestData>("aqd", "aqd",       "_.CreateQuestWithFactionData", "f");
-            ObjectData.Create("questID",            "q",            "_.CreateQuest", "f");
+            ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
+            ObjectData.Create("creatureID",         "n",            "_.CreateNPC", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 
@@ -84,7 +84,6 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         private static void ExportCategoriesHeaderForLua(StringBuilder builder)
         {
-            var utcNow = DateTime.UtcNow;
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
                 .AppendLine("-----------------------------------------------------")
@@ -125,11 +124,6 @@ namespace ATT
             {
                 builder.Replace("_.Settings", "settings");
                 FUNCTION_SHORTCUTS["settings"] = "_.Settings";
-            }
-            if (builder.ToString().Contains("_.CommonAchievementHandlers"))
-            {
-                builder.Replace("_.CommonAchievementHandlers", "handlers");
-                FUNCTION_SHORTCUTS["handlers"] = "_.CommonAchievementHandlers";
             }
             var keys = FUNCTION_SHORTCUTS.Keys.ToList();
             keys.Sort(Framework.Compare);
