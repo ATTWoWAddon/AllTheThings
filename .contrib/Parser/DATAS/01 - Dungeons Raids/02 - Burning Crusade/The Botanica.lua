@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(24172, {	-- Design: Coronet of Verdant Flame
+				i(24172, {	-- Design: Coronet of Verdant Flame (RECIPE!)
 					["cr"] = 18422,	-- Sunseeker Botanist
 				}),
 			}),

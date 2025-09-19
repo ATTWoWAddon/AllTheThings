@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local TEMPORARY_SOURCEQUEST = 78536;	-- Set to Completing First Chapter
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
@@ -401,7 +400,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread
 				q(78570, {	-- Frayed Legacy
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 212708 },	-- Freysworn Cruton
 					["coord"] = { 41.6, 71.3, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,
@@ -447,7 +446,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.02, {	-- Behind Closed Doors
 				q(80207, {	-- How Scandalous!
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 219393 },	-- Aldra
 					["coord"] = { 62.7, 21.7, DORNOGAL },
 				}),
@@ -552,10 +551,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 60.5, 33.1, DORNOGAL },
 				}),
 				q(79526, {	-- Sedition
-					["sourceQuests"] = {
-						79546,	-- The Machine Speakeasy
-						78630,	-- The Rise of the Reckoning
-					},
+					["sourceQuests"] = { 79546 },	-- The Machine Speakeasy
 					["provider"] = { "o", 429303 },	-- Angrily-Scrawled Poster
 					["coord"] = { 45.9, 47.2, DORNOGAL },
 					["groups"] = {
@@ -588,7 +584,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.03, {	-- Seven Soldiers
 				q(78996, {	-- Weapons and Warriors
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 214444 },	-- Aggartha
 					["coord"] = { 42.7, 71.7, ISLE_OF_DORN },
 				}),
@@ -620,7 +616,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.04, {	-- Lost Lord of the Storm
 				q(78289, {	-- To Rumbleshire
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 214352 },	-- Rooktender Otwin
 					["coord"] = { 32.8, 33.6, DORNOGAL },
 				}),
@@ -664,7 +660,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.05, {	-- Hope, An Anomaly
 				q(78469, {	-- Prairie Fever
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 217961 },	-- Hreka
 					["coord"] = { 41.8, 70.8, ISLE_OF_DORN },
 				}),
@@ -698,10 +694,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.06, {	-- The Hermit
 				q(78754, {	-- Lost Delivery
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "o", 423987 },	-- Dropped Package
 					["coords"] = {
 						{ 55.1, 59.3, ISLE_OF_DORN },
+						{ 55.5, 56.5, ISLE_OF_DORN },
 						{ 68.7, 52.5, ISLE_OF_DORN },
 						{ 61.5, 33.2, ISLE_OF_DORN },
 					},
@@ -750,7 +747,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.07, {	-- A Titanic Expedition
 				q(79724, {	-- A Titanic Expedition!
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 217763 },	-- Rannan Korren
 					["coord"] = { 58.8, 28.3, ISLE_OF_DORN },
 				}),
@@ -788,7 +785,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.08, {	-- Remember Me, Earthen
 				q(81661, {	-- To Mourning Rise
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 221355 },	-- Urtago
 					["coord"] = { 55.7, 56.0, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,
@@ -809,7 +806,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 61.7, 41.6, ISLE_OF_DORN },
 					["groups"] = {
 						o(414199, {	-- Pile of Earthen Belongings
-							i(211428),	-- Earthen Belongings (QI!)
+							["coords"] = {
+								{ 62.7, 44.3, ISLE_OF_DORN },
+								{ 63.2, 43.3, ISLE_OF_DORN },
+								{ 63.8, 42.3, ISLE_OF_DORN },
+							},
+							["groups"] = { i(211428) },	-- Earthen Belongings (QI!)
 						}),
 					},
 				}),
@@ -852,7 +854,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["groups"] = {
 						i(213002),	-- Charged Core (QI!)
 						o(420730, {	-- Vein of Ore
-							i(213001),	-- Clump of Ore (QI!)
+							["coords"] = {
+								{ 58.3, 42.3, ISLE_OF_DORN },
+								{ 59.4, 40.2, ISLE_OF_DORN },
+								{ 59.4, 43.9, ISLE_OF_DORN },
+								{ 59.5, 41.5, ISLE_OF_DORN },
+								{ 59.7, 39.1, ISLE_OF_DORN },
+								{ 60.4, 42.5, ISLE_OF_DORN },
+								{ 60.5, 43.6, ISLE_OF_DORN },
+								{ 60.6, 45.0, ISLE_OF_DORN },
+								{ 60.7, 40.4, ISLE_OF_DORN },
+								{ 60.7, 41.6, ISLE_OF_DORN },
+							},
+							["groups"] = { i(213001) },	-- Clump of Ore (QI!)
 						}),
 					},
 				}),
@@ -1001,7 +1015,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 20595.10, {	-- All Ore Nothing
 				q(82792, {	-- All Ore Nothing
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78536,	-- Impossible Odds
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1083,12 +1097,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Dagran & Brinthe ------
 			q(83081, {	-- Not Enought Minerals
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 225451 },	-- Dagran Thaurissan II
 				["coord"] = { 44.8, 64.4, ISLE_OF_DORN },
 			}),
 			q(83082, {	-- The Opalfront
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 225454 },	-- Peacekeeper Hektare
 				["coord"] = { 44.8, 64.3, ISLE_OF_DORN },
 			}),
@@ -1165,7 +1179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Birdman ------
 			q(82680, {	-- Birdman of the Three Shields
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 224394 },	-- Harmot
 				["coord"] = { 60.2, 28.4, ISLE_OF_DORN },
 				["isBreadcrumb"] = true,
@@ -1181,6 +1195,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 74.6, 19.7, ISLE_OF_DORN },
 				["groups"] = {
 					i(224119),	-- Electric Eel (QI!)
+					i(232510),	-- Electric Eel (QI!)
 				},
 			}),
 			q(82768, {	-- Cloud Fishing
@@ -1264,9 +1279,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			})),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(ISLE_OF_DORN, {
 			n(QUESTS, {
@@ -1281,4 +1296,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

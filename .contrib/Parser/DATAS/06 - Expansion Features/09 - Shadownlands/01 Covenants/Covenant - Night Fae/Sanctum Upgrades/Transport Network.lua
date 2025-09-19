@@ -18,6 +18,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								},
 							}),
 						}),
+						n(EXPLORATION, {
+							visit_exploration(13385,{coord={65.7,73.6,1819}}),	-- The Ring
+							visit_exploration(13483,{coord={54.2,93.6,ARDENWEALD}}),	-- Arkelios' Solace
+							visit_exploration(13410,{coord={48.1,71.8,1827}}),	-- Underweald
+						}),
 						n(FACTIONS, {
 							faction(FACTION_MARASMIUS, {	-- Marasmius
 								["crs"] = { 167455 },	-- Marasmius

@@ -16,6 +16,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		currency(GILDED_HARBINGER_CREST, {
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
+		i(211297, {	-- Fractured Spark of Omens
+			["timeline"] = { ADDED_11_0_2 }
+		}),
 
 		-- Season 2 TWW
 		currency(WEATHERED_UNDERMINE_CREST, {
@@ -30,6 +33,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		currency(GILDED_UNDERMINE_CREST, {
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 		}),
+		i(230905, {	-- Fractured Spark of Fortunes
+			["timeline"] = { ADDED_11_1_0 }
+		}),
 
 		-- Season 3 TWW
 		currency(WEATHERED_ETHEREAL_CREST, {
@@ -43,6 +49,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		}),
 		currency(GILDED_ETHEREAL_CREST, {
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+		}),
+		i(231757, {	-- Fractured Spark of Starlight
+			["timeline"] = { ADDED_11_2_0 },
 		}),
 	}),
 })));

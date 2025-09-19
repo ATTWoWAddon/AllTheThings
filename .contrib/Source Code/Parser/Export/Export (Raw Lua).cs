@@ -21,7 +21,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The undetermined object data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua(StringBuilder builder, object data, string indent = "")
+        private static void ExportRawLua(Exporter builder, object data, string indent = "")
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) ExportBooleanValue(builder, b);
@@ -59,7 +59,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua<KEY, VALUE>(StringBuilder builder, IDictionary<KEY, VALUE> data, string indent = "")
+        private static void ExportRawLua<KEY, VALUE>(Exporter builder, IDictionary<KEY, VALUE> data, string indent = "")
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Count == 0)
@@ -186,7 +186,7 @@ namespace ATT
         /// <param name="builder"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
-        private static void ExportRawLuaKeyValue(StringBuilder builder, object key, object value, string subindent = "")
+        private static void ExportRawLuaKeyValue(Exporter builder, object key, object value, string subindent = "")
         {
             // Append the Sub-Indent and the Field Name
             builder.Append(subindent).Append("[");
@@ -204,7 +204,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua<VALUE>(StringBuilder builder, IEnumerable<VALUE> list, string indent = "")
+        private static void ExportRawLua<VALUE>(Exporter builder, IEnumerable<VALUE> list, string indent = "")
         {
             // If the list doesn't have any content, then return immediately.
             if (!list.Any())
@@ -257,9 +257,9 @@ namespace ATT
         /// </summary>
         /// <param name="data">The undetermined object data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRawLua(object data)
+        public static Exporter ExportRawLua(object data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportRawLua(builder, data);
             return builder;
         }
@@ -272,9 +272,9 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="data">The data dictionary.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRawLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
+        public static Exporter ExportRawLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportRawLua(builder, data);
             return builder;
         }
@@ -285,9 +285,9 @@ namespace ATT
         /// </summary>
         /// <param name="list">The list of data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportRawLua<T>(IList<T> list)
+        public static Exporter ExportRawLua<T>(IList<T> list)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportRawLua(builder, list);
             return builder;
         }

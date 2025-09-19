@@ -14,13 +14,15 @@ namespace ATT
         /// </summary>
         public static bool IsErrored { get; private set; }
 
+        public static bool DebugLogging { get; internal set; }
+
         /// <summary>
         /// Outputs the message to the Trace only if DebugMode is enabled, including the serialized data if provided
         /// </summary>
         /// <param name="message"></param>
         public static void LogDebug(string message, IDictionary<string, object> data)
         {
-            if (DebugMode)
+            if (DebugLogging)
                 Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 
@@ -30,7 +32,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogDebug(string message, object data = null)
         {
-            if (DebugMode)
+            if (DebugLogging)
                 Trace.WriteLine(message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 
@@ -40,7 +42,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogDebugFormatted(string format, params object[] content)
         {
-            if (DebugMode)
+            if (DebugLogging)
                 Trace.WriteLine(string.Format(format, content));
         }
 
@@ -50,7 +52,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void LogDebugWarn(string message, object data = null)
         {
-            if (DebugMode)
+            if (DebugLogging)
                 Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
         }
 
@@ -60,7 +62,7 @@ namespace ATT
         /// <param name="message"></param>
         public static void Log(string message, object data = null)
         {
-            if (!DebugMode && !string.IsNullOrEmpty(CurrentFileName))
+            if (!DebugLogging && !string.IsNullOrEmpty(CurrentFileName))
                 Trace.WriteLine("FILE: " + CurrentFileName);
 
             if (!string.IsNullOrEmpty(CurrentSubFileName))

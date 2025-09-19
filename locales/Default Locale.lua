@@ -99,7 +99,7 @@ local L = {
 		},
 		{	-- Midnight
 			["icon"] = app.asset("Expansion_MD"),
-			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second installment of the Worldsoul Saga.",
+			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga. Return to Quel'Thalas, where the forces of the Void have invaded Azeroth, intent on claiming the Sunwell and plunging the world into darkness and fear. Reunify the scattered elven tribes of Azeroth and ultimately fight alongside the forces of the Light to banish the Shadow forever.",
 		},
 		{	-- The Last Titan
 			["icon"] = app.asset("Expansion_TLT"),

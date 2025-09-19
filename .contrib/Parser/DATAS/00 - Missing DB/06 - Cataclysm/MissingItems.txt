@@ -2,11 +2,9 @@
 i(878),	-- -Sized Spinneret \\ Fist-Sized Spinneret \\ Fist-sized Spinneret
 i(1019),	-- n Scrap \\ Linen Scrap \\ Red Linen Bandana
 i(1630),	-- en Electro-Lantern \\ Broken Electro-Lantern \\ Broken Electro-lantern
-i(1685),	-- l-Hide Bag \\ Troll-Hide Bag \\ Troll-hide Bag
 i(2939),	-- zy Blood \\ Frenzy Blood \\ Crocolisk Tear
 i(3238),	-- and's Findings \\ Holland's Findings \\ Johaan's Findings
 i(3353),	-- -Inscribed Pendant \\ Rune-Inscribed Pendant \\ Rune-inscribed Pendant
-i(3372),	-- ked Vial \\ Cracked Vial \\ Leaded Vial
 i(3460),	-- and's Special Drink \\ Holland's Special Drink \\ Johaan's Special Drink
 i(3502),	-- nout Blossom \\ Mudsnout Blossom \\ Mudsnout Blossoms
 i(3552),	-- mus' Head \\ Glommus' Head \\ Glommus's Head
@@ -28,7 +26,6 @@ i(6783),	-- -Tooth's Key \\ Dead-Tooth's Key \\ Dead-tooth's Key
 i(7226),	-- -Tastic Gizmonitor \\ Mage-Tastic Gizmonitor \\ Mage-tastic Gizmonitor
 i(7675),	-- ping Schedule \\ Shipping Schedule \\ Defias Shipping Schedule
 i(7869),	-- Lucius' Lockbox \\ Lucius's Lockbox
-i(8925),	-- ted Vial \\ Tainted Vial \\ Crystal Vial
 i(9250),	-- r-Damaged Ship Schedule \\ Water-Damaged Ship Schedule \\ Ship Schedule
 i(9336),	-- -Capped Troll Tusk \\ Gold-Capped Troll Tusk \\ Gold-capped Troll Tusk
 i(9507),	-- refully-Packed Crate \\ A Carefully-Packed Crate \\ A Carefully-packed Crate
@@ -53,10 +50,7 @@ i(16306),	-- tak's Meats \\ Grimtak's Meats \\ Zargh's Meats
 i(16310),	-- lock's List \\ Gremlock's List \\ Brock's List
 i(16311),	-- rary Cleavers \\ Honorary Cleavers \\ Honorary Picks
 i(16972),	-- ni's Banner \\ Senani's Banner \\ Karang's Banner
-i(17414),	-- x: Prayer of Fortitude \\ Codex: Prayer of Fortitude \\ Codex: Prayer of Fortitude II
-i(17683),	-- : Gift of the Wild \\ Book: Gift of the Wild \\ Book: Gift of the Wild II
 i(18224),	-- er Blossom \\ Lasher Blossom \\ Lasher Root
-i(18256),	-- ed Vial \\ Melted Vial \\ Imbued Vial
 i(18947),	-- l Scar Yeti Hide \\ Feral Scar Yeti Hide \\ Rage Scar Yeti Hide
 i(18955),	-- rius' Head \\ Artorius' Head \\ Artorius's Head
 i(19004),	-- thstone \\ Healthstone \\ Minor Healthstone
@@ -65,7 +59,6 @@ i(20310),	-- ed Demon Skin [Depricated] \\ Flayed Demon Skin [Depricated] \\ Fla
 i(21781),	-- lis' Head \\ Thaelis' Head \\ Thaelis's Head
 i(22549),	-- iel's Request \\ Sathiel's Request \\ Quartermaster Lymel's Bill of Lading
 i(22550),	-- iel's Goods \\ Sathiel's Goods \\ Quartermaster Lymel's Goods
-i(22890),	-- of Frost Ward \\ Tome of Frost Ward \\ Tome of Frost Ward V
 i(23094),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Teardrop Blood Garnet
 i(23096),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Runed Blood Garnet
 i(23099),	-- less Flame Spessarite \\ Reckless Flame Spessarite \\ Luminous Flame Spessarite
@@ -328,7 +321,6 @@ i(40176),	-- y Eye of Zul \\ Misty Eye of Zul \\ Sundered Eye of Zul
 i(40177),	-- tning Eye of Zul \\ Lightning Eye of Zul \\ Lambent Eye of Zul
 i(40178),	-- id Eye of Zul \\ Turbid Eye of Zul \\ Opaque Eye of Zul
 i(40181),	-- ant Eye of Zul \\ Radiant Eye of Zul \\ Tense Eye of Zul
-i(40411),	-- tered Vial \\ Shattered Vial \\ Enchanted Vial
 i(40482),	-- -Plagued Brain \\ Dual-Plagued Brain \\ Dual-plagued Brain
 i(40832),	-- leteSigil of Pestilential Touch \\ ObsoleteSigil of Pestilential Touch \\ Sigil of Pestilential Touch
 i(40839),	-- leteSigil of the Glorious Mistake \\ ObsoleteSigil of the Glorious Mistake \\ Sigil of the Glorious Mistake
@@ -429,7 +421,6 @@ i(44850),	-- 's Paw \\ Bear's Paw
 i(44863),	-- upted Tide Crawler Flesh \\ Corrupted Tide Crawler Flesh
 i(44864),	-- usted Clam Muscle \\ Encrusted Clam Muscle
 i(44868),	-- zied Cyclone Bracers \\ Frenzied Cyclone Bracers
-i(44886),	-- tfoot's Tailfeathers \\ Fleetfoot's Tailfeathers
 i(44887),	-- sed Herb Bundle \\ Blessed Herb Bundle
 i(44888),	-- 's Paw Bundle \\ Bear's Paw Bundle
 i(44889),	-- sed Herb Bundle \\ Blessed Herb Bundle
@@ -543,7 +534,6 @@ i(46698),	-- -Kissed Clay \\ Moon-Kissed Clay
 i(46699),	-- ylah's Stolen Water \\ Dellylah's Stolen Water
 i(46700),	-- thar's Stolen Bags \\ Melithar's Stolen Bags
 i(46701),	-- dle's Improvised Explosive \\ Tweedle's Improvised Explosive
-i(46702),	-- ent Device Fragment \\ Ancient Device Fragment
 i(46703),	-- s Button \\ Brass Button
 i(46714),	-- a's "Street Sweeper" \\ Halga's "Street Sweeper"
 i(46715),	-- tified Moonstones \\ Sanctified Moonstones
@@ -948,7 +938,6 @@ i(52072),	-- est Mojo \\ Darkest Mojo
 i(52073),	-- blestaff \\ Bramblestaff
 i(52074),	-- Sand \\ Wet Sand
 i(52077),	-- nt Scarlet Memorandum \\ Urgent Scarlet Memorandum
-i(52078),	-- s Orb \\ Chaos Orb
 i(52080),	-- h Crawler Meat \\ Fresh Crawler Meat
 i(52081),	-- Carnelian \\ Bold Carnelian
 i(52082),	-- cate Carnelian \\ Delicate Carnelian
@@ -1156,9 +1145,6 @@ i(52334),	-- Earthen Might
 i(52335),	-- mlord's Favor \\ Stormlord's Favor
 i(52336),	-- Death Vortex
 i(52337),	-- giving Seed \\ Lifegiving Seed
-i(52338),	-- fathom Pearl \\ Darkfathom Pearl
-i(52339),	-- less Pearl \\ Flawless Pearl
-i(52340),	-- sal Clam \\ Abyssal Clam
 i(52341),	-- Fiery Silk Gland
 i(52342),	-- Nightstone Focusing Lens
 i(52360),	-- Modan Artifact \\ Bael Modan Artifact
@@ -2416,7 +2402,6 @@ i(58261),	-- ery Wheat Roll \\ Buttery Wheat Roll
 i(58262),	-- ed Raw Billfish \\ Sliced Raw Billfish
 i(58263),	-- led Shark \\ Grilled Shark
 i(58264),	-- Green Apple \\ Sour Green Apple
-i(58265),	-- land Pomegranate \\ Highland Pomegranate
 i(58266),	-- et Morel \\ Violet Morel
 i(58267),	-- let Polypore \\ Scarlet Polypore
 i(58268),	-- ted Beef \\ Roasted Beef
@@ -2426,7 +2411,6 @@ i(58274),	-- h Water \\ Fresh Water
 i(58275),	-- tack \\ Hardtack
 i(58276),	-- ean White \\ Gilnean White
 i(58277),	-- ered Squid \\ Simmered Squid
-i(58278),	-- ical Sunfruit \\ Tropical Sunfruit
 i(58279),	-- y Puffball \\ Tasty Puffball
 i(58280),	-- ed Rabbit \\ Stewed Rabbit
 i(58281),	-- of Shadra \\ Fang of Shadra
@@ -3759,10 +3743,6 @@ i(61974),	-- vale Notes \\ Highvale Notes
 i(61975),	-- of the Evening Star \\ Orb of the Evening Star
 i(61976),	-- of the North Star \\ Orb of the North Star
 i(61977),	-- of the Shooting Star \\ Orb of the Shooting Star
-i(61978),	-- kfallow Ink \\ Blackfallow Ink
-i(61979),	-- n Pigment \\ Ashen Pigment
-i(61980),	-- ing Embers \\ Burning Embers
-i(61981),	-- rno Ink \\ Inferno Ink
 i(61982),	-- y Fruit Wine \\ Fizzy Fruit Wine
 i(61983),	-- rted E.K. Ale \\ Imported E.K. Ale \\ Imported Ale
 i(61984),	-- nt Pineapple Punch \\ Potent Pineapple Punch
@@ -3790,7 +3770,6 @@ i(62232),	-- Great Sword of the Sin'dorei
 i(62238),	-- ami Rock \\ Origami Rock
 i(62239),	-- ami Slime \\ Origami Slime
 i(62248),	-- Elementium Axe \\ The Elementium Axe
-i(62251),	-- scroll of Fortitude II \\ Runescroll of Fortitude II
 i(62252),	-- DEM's Armor Test
 i(62267),	-- Scepter of Orsis \\ The Scepter of Orsis
 i(62268),	-- led Flipper \\ Mangled Flipper
@@ -3816,7 +3795,6 @@ i(62315),	-- Wrynn's Proclamation \\ King Wrynn's Proclamation
 i(62316),	-- icious Note \\ Suspicious Note
 i(62317),	-- ed Wildhammer Ale \\ Sacred Wildhammer Ale
 i(62322),	-- shed Horn \\ Polished Horn
-i(62323),	-- hwing Scale Fragment \\ Deathwing Scale Fragment
 i(62324),	-- hammer Food Stores \\ Wildhammer Food Stores
 i(62325),	-- hammer Insignia \\ Wildhammer Insignia
 i(62326),	-- y Manacles \\ Heavy Manacles
@@ -4025,19 +4003,9 @@ i(62773),	-- Glyph of Conjuring
 i(62775),	-- ed Fleshhook \\ Barbed Fleshhook
 i(62776),	-- rt Coyote Pelt \\ Desert Coyote Pelt
 i(62777),	-- Desert Fox \\ The Desert Fox
-i(62778),	-- hened Flesh \\ Toughened Flesh
-i(62779),	-- trous Claw \\ Monstrous Claw
-i(62780),	-- e Eye \\ Snake Eye
-i(62781),	-- t Turtle Tongue \\ Giant Turtle Tongue
-i(62782),	-- on Flank \\ Dragon Flank
-i(62783),	-- lisk "Liver" \\ Basilisk "Liver"
-i(62784),	-- olisk Tail \\ Crocolisk Tail
-i(62785),	-- cate Wing \\ Delicate Wing
-i(62786),	-- a Beans \\ Cocoa Beans
 i(62787),	-- e Hops \\ Noble Hops
 i(62788),	-- Yeast \\ Dry Yeast
 i(62789),	-- per Uniform \\ Trooper Uniform
-i(62791),	-- d Shrimp \\ Blood Shrimp
 i(62792),	-- -Preserved Idol \\ Well-Preserved Idol \\ Well-preserved Idol
 i(62793),	-- ous Spectral Essence \\ Furious Spectral Essence
 i(62794),	-- nsed Proton Accelerator Cannon \\ Licensed Proton Accelerator Cannon
@@ -4194,12 +4162,6 @@ i(63293),	-- kheart Grog \\ Blackheart Grog
 i(63296),	-- lming Fluid \\ Embalming Fluid
 i(63299),	-- issed Wine \\ Sunkissed Wine
 i(63300),	-- e's Draught \\ Rogue's Draught
-i(63303),	-- ll of Agility IX \\ Scroll of Agility IX
-i(63304),	-- ll of Strength IX \\ Scroll of Strength IX
-i(63305),	-- ll of Intellect IX \\ Scroll of Intellect IX
-i(63306),	-- ll of Stamina IX \\ Scroll of Stamina IX
-i(63307),	-- Scroll of Versatility IX \\ ll of Versatility IX \\ Scroll of Spirit IX
-i(63308),	-- ll of Protection IX \\ Scroll of Protection IX
 i(63309),	-- en's Keys \\ Warden's Keys
 i(63310),	-- de Taurene \\ Eau de Taurene
 i(63311),	-- ish Mud \\ Reddish Mud
@@ -4415,7 +4377,6 @@ i(65509),	-- led Tuft of Wolf Hair \\ Tangled Tuft of Wolf Hair
 i(65510),	-- Garnet Crystal \\ Deep Garnet Crystal
 i(65511),	-- veled Boar Eye \\ Shriveled Boar Eye
 i(65512),	-- rized Bone Saw \\ Motorized Bone Saw
-i(65513),	-- e of Tasty Meat \\ Crate of Tasty Meat
 i(65514),	-- et's Tickers \\ Ricket's Tickers
 i(65515),	-- ured Mana Brownie \\ Conjured Mana Brownie
 i(65516),	-- ured Mana Cupcake \\ Conjured Mana Cupcake
@@ -5217,7 +5178,6 @@ i(66950),	-- Big Big Book o' Beards \\ The Big Big Book o' Beards
 i(66984),	-- of Heaven \\ Eye of Heaven
 i(67051),	-- d Gout Amulet \\ Blood Gout Amulet
 i(67111),	-- surge Necklace \\ Soulsurge Necklace
-i(67137),	-- Rodrigo's Fabulous Necklace \\ Don Rodrigo's Fabulous Necklace
 i(67155),	-- Girdle of Service
 i(67231),	-- scroll of Might \\ Runescroll of Might
 i(67232),	-- ah's Pygmy Pen \\ Sullah's Pygmy Pen
@@ -5278,7 +5238,6 @@ i(67315),	-- Smelling Bits \\ Foul Smelling Bits
 i(67316),	-- usting Bits \\ Disgusting Bits
 i(67317),	-- l Animal Parts \\ Small Animal Parts
 i(67318),	-- l Animal Bones \\ Small Animal Bones
-i(67319),	-- erved Ogre Eye \\ Preserved Ogre Eye
 i(67320),	-- icated Bones \\ Masticated Bones
 i(67321),	-- ed Bullet \\ Rusted Bullet
 i(67322),	-- d Glob \\ Fetid Glob
@@ -5294,7 +5253,6 @@ i(67331),	-- y Colored Fluid \\ Oddly Colored Fluid
 i(67332),	-- y Colored Flesh Chunks \\ Oddly Colored Flesh Chunks
 i(67333),	-- y Shaped Bone \\ Oddly Shaped Bone
 i(67334),	-- rmed Bone \\ Deformed Bone
-i(67335),	-- er Charm Bracelet \\ Silver Charm Bracelet
 i(67336),	-- rmed Tooth \\ Deformed Tooth
 i(67337),	-- rmed Ear \\ Deformed Ear
 i(67338),	-- rmed Carapace \\ Deformed Carapace
@@ -5307,7 +5265,6 @@ i(67344),	-- r Chunks \\ Liver Chunks
 i(67345),	-- rmed Claw \\ Deformed Claw
 i(67346),	-- ing Tissue \\ Rotting Tissue
 i(67347),	-- hed Bone \\ Crushed Bone
-i(67348),	-- ched Jawbone \\ Bleached Jawbone
 i(67349),	-- hed Shell \\ Crushed Shell
 i(67350),	-- ntered Bone \\ Splintered Bone
 i(67351),	-- erizing Stone \\ Mesmerizing Stone
@@ -5742,7 +5699,6 @@ i(68039),	-- Charred Glyph \\ red Glyph \\ Glyph of the Treant
 i(68041),	-- Monster - Sword, 1H Twilight's Hammer Green
 i(68042),	-- Monster - Shield, Twilight's Hammer Green
 i(68043),	-- 'Ashi Secretion Gland \\ Hive'Ashi Secretion Gland
-i(68047),	-- enged Dragon Horn \\ Scavenged Dragon Horn
 i(68055),	-- talline Tear of Loyalty \\ Crystalline Tear of Loyalty
 i(68057),	-- immar Defender's Crest \\ Orgrimmar Defender's Crest
 i(68059),	-- Art Template Cloth Belt - Cloth_Cataclysm_B_02 - Red
@@ -6225,7 +6181,6 @@ i(68679),	-- in Gas Tank \\ Goblin Gas Tank
 i(68680),	-- Coconut
 i(68681),	-- Gut \\ Roc Gut
 i(68682),	-- Inflatable Lifesaver
-i(68689),	-- rted Supplies \\ Imported Supplies
 i(68702),	-- ight Evidence \\ Twilight Evidence
 i(68709),	-- lvable Riddle \\ Unsolvable Riddle
 i(68710),	-- p of Time \\ Stump of Time
@@ -7135,8 +7090,6 @@ i(72056),	-- p Frogs \\ Plump Frogs
 i(72057),	-- ded Frog \\ Breaded Frog
 i(72058),	-- chy Frog \\ Crunchy Frog
 i(72069),	-- Ninja Test Item
-i(72101),	-- Black Silk Vest
-i(72102),	-- Pattern: Black Silk Vest
 i(72106),	-- Darkmoon Steam Tonk Remote Control
 i(72110),	-- ered Wrench \\ Battered Wrench
 i(72125),	-- dly Growing Scale \\ Rapidly Growing Scale

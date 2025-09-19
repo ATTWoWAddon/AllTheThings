@@ -1488,7 +1488,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4610, {	-- Algernon <Alchemy Supplies>
 					["coord"] = { 51.8, 74.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					["groups"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
@@ -1584,10 +1583,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.0, 37.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1599,15 +1598,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 					},
-				}),
-				n(4587, {	-- Elizabeth Van Talen <Engineering Supplies>
-					["coords"] = {
-						{ 75.5, 74.3, UNDERCITY },
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
-						i(5956),	-- Blacksmith Hammer
-					}),
 				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
@@ -1780,10 +1770,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.1, 50.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(20975, {	-- Design: The Jade Eye (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(20975, {	-- Design: The Jade Eye (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 					},
 				}),
 				n(4601, {	-- Francis Eliot
@@ -1982,7 +1972,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 					["coord"] = { 81.0, 30.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
@@ -2036,7 +2025,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
 					["coord"] = { 70.6, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER CATA
 					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					-- #endif
 					["groups"] = sharedData({
 						["isLimited"] = true,
 					}, {
@@ -2128,22 +2119,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						-- #if AFTER CATA
-						{"sub", "common_vendor", 49737},	-- Shazdar <Sous Chef>
-						-- #endif
-						{ "select","itemID",
-							159,	-- Refreshing Spring Water
-							-- #if AFTER TBC
-							30817,	-- Simple Flour
-							-- #endif
-							2678,	-- Mild Spices
-							-- #if BEFORE WRATH
-							2692,	-- Hot Spices
-							3713,	-- Soothing Spices
-							-- #endif
-						},
-					},
+					-- #if AFTER CATA
+					["sym"] = {{"sub", "common_vendor", 49737}},	-- Shazdar <Sous Chef>
+					-- #endif
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
@@ -2155,24 +2133,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
-						i(5956),	-- Blacksmith Hammer
-					}),
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
-						{ "select","itemID",
-						52188,	-- Jeweler's Setting
-						20815,	-- Jeweler's Toolset/-Kit
-						-- #if BEFORE MOP
-						20824,	-- Simple Grinder
-						-- #endif
-						},
-					},
+					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 				}),
 				n(4599, {	-- Sarah Killan <Mining Supplies>
 					["coord"] = { 56.6, 37.3, UNDERCITY },
@@ -2256,7 +2222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, VANILLA_ENCHANTING_COMMON_RECIPES, {}),
+					["groups"] = appendGroups(VANILLA_ENCHANTING_COMMON_RECIPES, {}),
 				}),
 				n(4559, {	-- Timothy Weldon
 					["coord"] = { 63.6, 39.6, UNDERCITY },

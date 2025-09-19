@@ -5,11 +5,28 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.TBC, {
-				-- 2.1.3
-				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
+				-- 2.0.5
+				expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_2_0_5 } }, {
 					i(21793),	-- Arcanite Sword Pendant
 					i(21780),	-- Blood Crown
+					i(20952),	-- Cut Agate
+					i(20962),	-- Cut Aquamarine
+					i(21786),	-- Cut Azerothian Diamond
+					i(20957),	-- Cut Citrine
+					i(21785),	-- Cut Emerald
+					i(20953),	-- Cut Jade
+					i(20819),	-- Cut Malachite
+					i(20829),	-- Cut Moonstone
+					i(21773),	-- Cut Opal
+					i(20965),	-- Cut Ruby
+					i(20825),	-- Cut Shadowgem
+					i(21772),	-- Cut Sapphire
+					i(20822),	-- Cut Tigerseye
 					i(20956),	-- Silver Rose Pendant
+				})),
+				-- 2.1.3
+				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
+					i(25884),	-- Primal Stone Statue
 				})),
 			}),
 			expansion(EXPANSION.CATA, {
@@ -71,36 +88,33 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.TBC, {
-				-- 2.1.0
-				expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
-					i(32412),	-- Design: Relentless Earthstorm Diamond
+				-- 2.0.5
+				expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_2_0_5 } }, {
+					-- With SpellID attched
+					i(21958),	-- Design: Arcanite Sword Pendant
+					i(21959),	-- Design: Blood Crown
+					i(21951),	-- Design: Cut Azerothian Diamond
+					i(21950),	-- Design: Cut Emerald - Deprecated
+					i(20972),	-- Design: Silver Rose Pendant
+
 				})),
 
 				-- 2.1.3
 				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
-					i(21958),	-- Design: Arcanite Sword Pendant
-					i(21959),	-- Design: Blood Crown
-					i(25888),	-- Primal Stone Statue
-				})),
-
-				-- 2.3.0
-				expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
-					i(34221),	-- Design: Chaotic Skyfire Diamond
+					-- With SpellID attched
+					i(25888),	-- Design: Primal Stone Statue
 				})),
 
 				-- 2.4.0
 				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+					-- Without SpellID attched
 					i(35533),	-- Design: Amulet of Flowing Life
-					i(35534),	-- Hard Khorium Band
-					i(35535),	-- Hard Khorium Choker
-					i(35536),	-- Loop of Forged Power
-					i(35537),	-- Pendant of Sunfire
-					i(35538),	-- Ring of Flowing Life
+					i(35534),	-- Design: Hard Khorium Band
+					i(35535),	-- Design: Hard Khorium Choker
+					i(35536),	-- Design: Loop of Forged Power
+					i(35537),	-- Design: Pendant of Sunfire
+					i(35538),	-- Design: Ring of Flowing Life
 				})),
-
-				i(21950),	-- Design: Cut Emerald - Deprecated
-				i(21951),	-- Design: Cut Azerothian Diamond
-				i(20972),	-- Design: Silver Rose Pendant
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1

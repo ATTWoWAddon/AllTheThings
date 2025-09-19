@@ -2917,7 +2917,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871, {	-- Design: Balanced Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31871, {	-- Design: Balanced Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -2936,7 +2936,7 @@ root(ROOTS.Zones, {
 					})),
 					-- #endif
 					-- #if AFTER CATA
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Deadly Flame Spessarite [CATA+] / Design: Wicked Flame Spessarite [TBC]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Deadly Flame Spessarite [CATA+] / Design: Wicked Flame Spessarite [TBC] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -2955,7 +2955,7 @@ root(ROOTS.Zones, {
 					})),
 					-- #endif
 					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Great Golden Draenite [TBC] / Design: Rigid Azure Moonstone [CATA+]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Great Golden Draenite [TBC] / Design: Rigid Azure Moonstone [CATA+] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -2972,7 +2972,7 @@ root(ROOTS.Zones, {
 							23355,	-- Zarcsin
 						},
 					})),
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872, {	-- Design: Infused Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31872, {	-- Design: Infused Shadow Draenite [TBC] / Design: Shifting Shadow Draenite [CATA+] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -2990,11 +2990,11 @@ root(ROOTS.Zones, {
 						},
 					})),
 					-- #endif
-					i(24161, {	-- Design: Khorium Band of Leaves
+					i(24161, {	-- Design: Khorium Band of Leaves (RECIPE!)
 						["cr"] = 19984,	-- Vekh'nir Dreadhawk
 					}),
 					-- #if AFTER CATA
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Rigid Azure Moonstone [CATA+] / Design: Great Golden Draenite [TBC]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31870, {	-- Design: Rigid Azure Moonstone [CATA+] / Design: Great Golden Draenite [TBC] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir
@@ -3032,7 +3032,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					-- #if BEFORE CATA
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Wicked Flame Spessarite [TBC] / Design: Deadly Flame Spessarite [CATA+]
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31874, {	-- Design: Wicked Flame Spessarite [TBC] / Design: Deadly Flame Spessarite [CATA+] (RECIPE!)
 						["crs"] = {
 							22275,	-- Apexis Guardian
 							23391,	-- Bash'ir

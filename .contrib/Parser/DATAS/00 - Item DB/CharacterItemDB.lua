@@ -575,7 +575,7 @@ ihqt(205444, 75857);				-- Bartered Skinning Journal
 ihqt(205433, 75838);				-- Bartered Skinning Notes
 ihqt(205442, 75858);				-- Bartered Tailoring Journal
 ihqt(205431, 75837);				-- Bartered Tailoring Notes
-iq(205451, 75866);					-- Flawless Crystal Scale
+ihqt(205451, 75866);				-- Flawless Crystal Scale
 ihqt(205353, 75756);				-- Niffen Notebook of Alchemy Knowledge
 ihqt(205352, 75755);				-- Niffen Notebook of Blacksmithing Knowledge
 ihqt(205351, 75752);				-- Niffen Notebook of Enchanting Knowledge

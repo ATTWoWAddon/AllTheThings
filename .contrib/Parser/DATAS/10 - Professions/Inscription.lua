@@ -5,7 +5,7 @@
 -- Validation Code replace r with a helper that will determine if we have a glyph in the list or not.
 local oldR = r;
 local recipeList,recipeListBySpellID = {},{};
-r = function(...)
+local r = function(...)
 	local recipe = oldR(...);
 	local spellID = recipe.recipeID or recipe.spellID;
 	if recipe.name then
@@ -785,10 +785,10 @@ GLYPH_OF_EVASION = r(57119, {	-- Glyph of Evasion
 	["name"] = "Glyph of Evasion",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_EVAPORATION = r(148271, {	-- Glyph of Evaporation
+GLYPH_OF_EVAPORATION = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148271, {	-- Glyph of Evaporation
 	["name"] = "Glyph of Evaporation",
 	["timeline"] = { ADDED_5_4_0 },
-});
+}));
 GLYPH_OF_EVISCERATE_AND_DEBILITATION_AND_RECOVERY = r(57120, {	-- Glyph of Eviscerate / Glyph of Debilitation [MOP-5.4.0] / Glyph of Recovery [5.4.0+]
 	-- #if AFTER 5.4.0
 	["name"] = "Glyph of Recovery",
@@ -1447,10 +1447,10 @@ GLYPH_OF_INSECT_SWARM_AND_THE_ORCA = r(56948, {	-- Glyph of Insect Swarm / Glyph
 	-- #endif
 	["timeline"] = { ADDED_3_0_2 },
 });
-GLYPH_OF_INSPIRED_HYMNS = r(148278, {	-- Glyph of Inspired Hymns
+GLYPH_OF_INSPIRED_HYMNS = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148278, {	-- Glyph of Inspired Hymns
 	["name"] = "Glyph of Inspired Hymns",
 	["timeline"] = { ADDED_5_4_0 },
-});
+}));
 GLYPH_OF_INTERCEPT_AND_BULL_RUSH = r(94406, {	-- Glyph of Intercept / Glyph of Bull Rush [MOP+]
 	-- #if AFTER MOP
 	["name"] = "Glyph of Bull Rush",
@@ -1609,10 +1609,10 @@ GLYPH_OF_LIGHTWELL = r(57189, {	-- Glyph of Lightwell / Glyph of Lightspring [5.
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_LINGERING_ANCESTORS = r(148282, {	-- Glyph of Lingering Ancestors
+GLYPH_OF_LINGERING_ANCESTORS = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148282, {	-- Glyph of Lingering Ancestors
 	["name"] = "Glyph of Lingering Ancestors",
 	["timeline"] = { ADDED_5_4_0 },
-});
+}));
 GLYPH_OF_LIVING_BOMB_AND_SLOW = r(64275, {	-- Glyph of Living Bomb / Glyph of Slow [CATA+]
 	-- #if AFTER CATA
 	["name"] = "Glyph of Slow",
@@ -1875,10 +1875,10 @@ GLYPH_OF_PICK_POCKET = r(58326, {	-- Glyph of Pick Pocket
 	["name"] = "Glyph of Pick Pocket",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_PILLAR_OF_LIGHT = r(148274, {	-- Glyph of Pillar of Light
+GLYPH_OF_PILLAR_OF_LIGHT = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148274, {	-- Glyph of Pillar of Light
 	["name"] = "Glyph of Pillar of Light",
-	["timeline"] = { ADDED_5_0_4 },
-});
+	["timeline"] = { ADDED_5_4_0 },
+}));
 GLYPH_OF_PLAGUE_STRIKE_AND_PESTILENCE = r(57221, {	-- Glyph of Plague Strike / Glyph of Pestilence [CATA+]
 	-- #if AFTER CATA
 	["name"] = "Glyph of Pestilence",
@@ -1923,7 +1923,7 @@ GLYPH_OF_PSYCHIC_SCREAM = r(57196, {	-- Glyph of Psychic Scream
 	["name"] = "Glyph of Psychic Scream",
 	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
-GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RESOLVE = r(71102, {	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA+] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
+GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RESOLVE = r(71102, {	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
 	-- #if AFTER 5.4.0
 	["name"] = "Glyph of Eternal Resolve",
 	-- #elseif AFTER 5.0.4
@@ -1975,8 +1975,12 @@ GLYPH_OF_RAPID_REJUVENATION = r(71015, {	-- Glyph of Rapid Rejuvenation
 	["name"] = "Glyph of Rapid Rejuvenation",
 	["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
 });
-GLYPH_OF_RAPID_ROLLING = r(124448, {	-- Glyph of Rapid Rolling
+GLYPH_OF_EXPEL_HARM_AND_RAPID_ROLLING = r(124448, {	-- Glyph of Expel Harm / Glyph of Rapid Rolling [5.4.0+]
+	-- #if AFTER 5.4.0
 	["name"] = "Glyph of Rapid Rolling",
+	-- #else
+	["name"] = "Glyph of Expel Harm",
+	-- #endif
 	["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
 });
 GLYPH_OF_RAPTOR_STRIKE_AND_MIRRORED_BLADES = r(64246, {	-- Glyph of Raptor Strike / Glyph of Mirrored Blades [5.0.4+]
@@ -2776,10 +2780,10 @@ GLYPH_OF_THE_SHIVARRA = r(225556, {	-- Glyph of the Shivarra
 	["name"] = "Glyph of the Shivarra",
 	["timeline"] = { ADDED_7_0_3 },
 });
-GLYPH_OF_THE_SKELETON = r(148266, {	-- Glyph of the Skeleton
+GLYPH_OF_THE_SKELETON = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148266, {	-- Glyph of the Skeleton
 	["name"] = "Glyph of the Skeleton",
 	["timeline"] = { ADDED_5_4_0 },
-});
+}));
 GLYPH_OF_THE_SKULLSEYE = r(225542, {	-- Glyph of the Skullseye
 	["name"] = "Glyph of the Skullseye",
 	["timeline"] = { ADDED_7_0_3, DELETED_8_0_1 },
@@ -2832,10 +2836,10 @@ GLYPH_OF_THE_VOIDLORD = r(225558, {	-- Glyph of the Voidlord
 	["name"] = "Glyph of the Voidlord",
 	["timeline"] = { ADDED_7_0_3 },
 });
-GLYPH_OF_THE_WEAPONMASTER = r(148292, {	-- Glyph of the Weaponmaster
+GLYPH_OF_THE_WEAPONMASTER = applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, r(148292, {	-- Glyph of the Weaponmaster
 	["name"] = "Glyph of the Weaponmaster",
 	["timeline"] = { ADDED_5_4_0 },
-});
+}));
 GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE = r(58296, {	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
 	-- #if AFTER MOP
 	["name"] = "Glyph of Charm Woodland Creature",
@@ -3142,7 +3146,7 @@ GLYPH_OF_ZEN_MEDITATION = r(124451, {	-- Glyph of Zen Meditation
 	["name"] = "Glyph of Zen Meditation",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
-MARK_OF_THE_CHEETAH = r(131152, {	-- Glyph of the Cheetah / Mark of the Cheetah [SL+]
+GLYPH_MARK_OF_THE_CHEETAH = r(131152, {	-- Glyph of the Cheetah / Mark of the Cheetah [SL+]
 	-- #if AFTER 9.0.1
 	["name"] = "Mark of the Cheetah",
 	-- #else
@@ -3290,7 +3294,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
 		GLYPH_OF_WILD_GROWTH,
 		GLYPH_OF_WRATH_AND_NATURES_GRASP,
-		MARK_OF_THE_CHEETAH,
+		GLYPH_MARK_OF_THE_CHEETAH,
 		MARK_OF_THE_DOE,
 		MARK_OF_THE_DUSKWING_RAVEN,
 		MARK_OF_THE_SENTINEL,
@@ -3431,7 +3435,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 			GLYPH_OF_LIFE_COCOON,
 			GLYPH_OF_MANA_TEA,
 			GLYPH_OF_PATH_OF_BLOSSOMS_AND_PARALYSIS,
-			GLYPH_OF_RAPID_ROLLING,
+			GLYPH_OF_EXPEL_HARM_AND_RAPID_ROLLING,
 			GLYPH_OF_RENEWING_MIST,
 			GLYPH_OF_RISING_TIGER_KICK,
 			GLYPH_OF_SPARRING,
@@ -3845,7 +3849,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	-- #if ANYCLASSIC
 	CLASS_GLYPHS,
 	n(DISCOVERY, {
-		-- #if BEFORE 6.0.1.18379
+		-- #if BEFORE WOD
 		header(HEADERS.Item, 45912, {	-- Book of Glyph Mastery
 			["provider"] = { "i", 45912 },	-- Book of Glyph Mastery
 			["description"] = "Recipes listed below are learned by using a Book of Glyph Mastery.",
@@ -4199,6 +4203,50 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				-- #endif
 			}),
 		}),
+		-- #if BEFORE WOD
+		spell(112996, {	-- Scroll of Wisdom (MoP)
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = insertionSort({
+				GLYPH_OF_BLADED_JUDGMENT,
+				GLYPH_OF_BLACK_ICE,
+				GLYPH_OF_BLACKOUT_KICK,
+				GLYPH_OF_BLADED_JUDGMENT,
+				GLYPH_OF_BREATH_OF_FIRE,
+				GLYPH_OF_BURNING_ANGER,
+				GLYPH_OF_CLASH,
+				GLYPH_OF_CONFESSION,
+				GLYPH_OF_CROW_FEAST_AND_HAWK_FEAST,
+				GLYPH_OF_DIRECTION,
+				GLYPH_OF_ENDURING_HEALING_SPHERE,
+				GLYPH_OF_FOCUSED_WRATH,
+				GLYPH_OF_GUARD,
+				GLYPH_OF_HOLY_RESURRECTION,
+				GLYPH_OF_HONOR,
+				GLYPH_OF_INCITE,
+				GLYPH_OF_JAB,
+				GLYPH_OF_MANA_TEA,
+				GLYPH_OF_MARKING,
+				GLYPH_OF_MASS_EXORCISM,
+				GLYPH_OF_EXPEL_HARM_AND_RAPID_ROLLING,
+				GLYPH_OF_RIGHTEOUS_RETREAT,
+				GLYPH_OF_RISING_TIGER_KICK,
+				GLYPH_OF_SHADOW_WORD_DEATH,
+				GLYPH_OF_SHADOWY_FRIENDS,
+				GLYPH_OF_SPINNING_FIRE_BLOSSOM,
+				GLYPH_OF_SPIRIT_ROLL,
+				GLYPH_OF_THE_BATTLE_HEALER,
+				GLYPH_OF_THE_BLAZING_TRAIL,
+				GLYPH_MARK_OF_THE_CHEETAH,
+				GLYPH_OF_THE_FALLING_AVENGER,
+				GLYPH_OF_THE_HEAVENS,
+				GLYPH_OF_THE_VALKYR,
+				GLYPH_OF_TRANSCENDENCE,
+				GLYPH_OF_VAMPIRIC_EMBRACE,
+				GLYPH_OF_WATER_ROLL,
+				GLYPH_OF_ZEN_FLIGHT,
+			}),
+		}),
+		-- #endif
 		spell(165466, {	-- Research: Blackfallow Ink
 			["timeline"] = { ADDED_6_0_2 },
 			["groups"] = insertionSort({
@@ -4280,6 +4328,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_GARROTE,
 				GLYPH_OF_ICE_BLOCK,
 				GLYPH_OF_MEND_PET_AND_LESSER_PROPORTION,
+				GLYPH_OF_PILLAR_OF_LIGHT,
 				GLYPH_OF_STARFIRE_AND_THE_MOONBEAST_AND_GUIDED_STARS_AND_UNTAMED_STARS,
 				GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
 			}),
@@ -4314,6 +4363,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
 				GLYPH_OF_DISENGAGE,
 				GLYPH_OF_DISTRACT,
+				GLYPH_OF_EVAPORATION,
 				GLYPH_OF_FIRE_NOVA,
 				GLYPH_OF_GHOST_WOLF,
 				GLYPH_OF_HAMMER_OF_JUSTICE_AND_HOLY_WRATH,
@@ -4321,6 +4371,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_MULTISHOT_AND_SILENCING_SHOT_AND_NO_ESCAPE,
 				GLYPH_OF_PICK_LOCK,
 				GLYPH_OF_REVIVE_PET,
+				GLYPH_OF_SPIRIT_RAPTORS,
 				GLYPH_OF_VANISH_AND_POISONS,
 			}),
 		}),
@@ -4333,10 +4384,12 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				GLYPH_OF_BLURRED_SPEED,
 				GLYPH_OF_FLAMETONGUE_WEAPON_AND_WIND_SHEAR,
 				GLYPH_OF_HEALING_STREAM_TOTEM,
+				GLYPH_OF_LINGERING_ANCESTORS,
 				GLYPH_OF_MOCKING_BLOW_AND_DEMORALIZING_SHOUT_AND_GUSHING_WOUND,
 				GLYPH_OF_PICK_POCKET,
 				GLYPH_OF_SERPENT_STING_AND_TAME_BEAST,
 				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
+				GLYPH_OF_THE_SKELETON,
 				GLYPH_OF_THUNDER_CLAP_AND_UNENDING_RAGE,
 			}),
 		}),
@@ -4344,6 +4397,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			["timeline"] = { ADDED_6_0_2 },
 			-- Crieve NOTE: I haven't updated this list yet.
 			["groups"] = insertionSort({
+				GLYPH_OF_INSPIRED_HYMNS,
 				GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW,
 				GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
 			}),
@@ -5483,7 +5537,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
 				["groups"] = {
-					i(204435),	-- Obsidian Tablet (QI!)
+					o(390556, {	-- Obsidian Tablet
+						["coords"] = {
+							{ 38.6, 50.7, ZARALEK_CAVERN },
+							{ 39.3, 53.9, ZARALEK_CAVERN },
+							{ 40.1, 51.2, ZARALEK_CAVERN },
+							{ 40.8, 50.3, ZARALEK_CAVERN },
+							{ 41.0, 48.7, ZARALEK_CAVERN },
+							{ 41.2, 47.7, ZARALEK_CAVERN },
+							{ 41.7, 45.2, ZARALEK_CAVERN },
+							{ 41.7, 50.9, ZARALEK_CAVERN },
+							{ 42.1, 46.6, ZARALEK_CAVERN },
+						},
+						["groups"] = { i(204435) },	-- Obsidian Tablet (QI!)
+					}),
 				},
 			}),
 			q(75573, {	-- Proclamation Reclamation
@@ -5859,12 +5926,5 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	return o;
 end
 
--- #if BEFORE 4.0.1
--- These techniques get completely deleted from the database with cataclysm.
-itemrecipe("Technique: Glyph of Eternal Water", 50166, 71101, WRATH_PHASE_ONE);
-itemrecipe("Technique: Glyph of Quick Decay", 50168, 71102, WRATH_PHASE_ONE);
-itemrecipe("Technique: Glyph of Rapid Rejuvenation", 50167, 71015, WRATH_PHASE_ONE);
--- #endif
-itemrecipe("Technique: Rituals of the New Moon", 46108, 64051, WRATH_PHASE_ONE);
 -- #endif
 -- #endif

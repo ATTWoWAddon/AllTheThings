@@ -28,9 +28,6 @@ i(235464);	-- Sha-Touched Tea Set
 -----------------
 i(18984);	-- Dimensional Ripper - Everlook
 i(21540);	-- Elune's Lantern
--- #if ANYCLASSIC
-i(6948);	-- Hearthstone (Should be a toy...)
--- #endif
 i(1973);	-- Orb of Deception
 i(13379);	-- Piccolo of the Flaming Fire
 i(17716);	-- Snowmaster 9000
@@ -1490,7 +1487,7 @@ i(245946);	-- Brewer's Balloon
 i(249713);	-- Cartel Transmorpher
 -- SPECIAL CASE --
 -- #if BEFORE 11.2.5
-i(131717);	-- Starlight Beacon	
+i(131717);	-- Starlight Beacon
 -- This will be a toy in 11.2.5, but the Quest will be up before 11.2.5 and then you have to wait 5 months
 -- Tagging it as toy earlier, so users can easily prefarm it
 -- #endif
@@ -1498,10 +1495,12 @@ i(131717);	-- Starlight Beacon
 ------------------
 -- PATCH 11.2.5 --
 ------------------
+i(242636);	-- Astral Legend's Pennant
 -- #if AFTER 11.2.5
 i(141605);	-- Flight Master's Whistle
-i(131717);	-- Starlight Beacon	
+i(131717);	-- Starlight Beacon
 i(138111);	-- Stormforged Grapple Launcher
 -- #endif
 
 --- UNSORTED ---
+i(254666);	-- Lil' Exodar

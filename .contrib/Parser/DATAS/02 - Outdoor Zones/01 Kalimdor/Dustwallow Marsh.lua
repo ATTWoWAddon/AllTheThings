@@ -3772,14 +3772,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21941, {	-- Design: Black Pearl Panther (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(21941, {	-- Design: Black Pearl Panther (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
-						i(21943, {	-- Design: Truesilver Crab (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						})),
+						applyclassicphase(TBC_PHASE_ONE, i(21943, {	-- Design: Truesilver Crab (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),

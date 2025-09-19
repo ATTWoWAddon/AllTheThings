@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Включите эту опцию, чтобы игнорировать отображение подсказок НИП во время боя.",
 		-- TODO: ko = "",
 		cn = "启用此选项可在战斗中忽略显示 NPC 的提示。",
 		-- TODO: tw = "",

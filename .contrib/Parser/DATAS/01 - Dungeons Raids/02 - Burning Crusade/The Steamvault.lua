@@ -94,7 +94,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(ZONE_DROPS, {
 				i(24368),	-- Coilfang Armaments
-				i(24159, {	-- Design: Khorium Band of Frost
+				i(24159, {	-- Design: Khorium Band of Frost (RECIPE!)
 					["cr"] = 17722,	-- Coilfang Sorceress
 				}),
 				i(22533, {	-- Formula: Enchant Bracer - Fortitude (RECIPE!)
@@ -281,7 +281,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27791),	-- Serpentcrest Life-Staff
 							i(27794),	-- Recoiless Rocket Ripper X-54
 							i(27790),	-- Mask of Penance
-							i(27792),	-- Steam-Hinge Chain of Valor
+							i(27792, {	-- Steam-Hinge Chain of Valor
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238989, {	-- Steam-Hinge Chain of Valor
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							-- #if AFTER 7.3.5
 							i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved from Hydromancer Thespia)
 							-- #endif

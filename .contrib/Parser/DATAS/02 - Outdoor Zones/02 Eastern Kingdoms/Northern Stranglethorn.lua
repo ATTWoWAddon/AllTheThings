@@ -3211,10 +3211,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(21943, {	-- Design: Truesilver Crab (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(21943, {	-- Design: Truesilver Crab (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)

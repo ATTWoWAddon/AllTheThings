@@ -1,4 +1,4 @@
--- Last updated via https://wago.tools/db2/HolidayNames?build=11.1.7.61131
+-- Last updated via https://wago.tools/db2/HolidayNames?build=11.2.5.62554
 EVENTS = {
 	-- Seasonal Holidays
 	BREWFEST = 7,
@@ -36,7 +36,7 @@ EVENTS = {
 
 	-- FOMO
 	PLUNDERSTORM = 444,
-	REMIX_LEGION = 1525555,	-- This is a fake eventID. (Goldenshacal made this up!)
+	REMIX_LEGION = 447,
 	REMIX_MOP = 437,
 	DASTARDLY_DUOS = 451,
 	WINDS_OF_MYSTERIOUS_FORTUNE = 450,

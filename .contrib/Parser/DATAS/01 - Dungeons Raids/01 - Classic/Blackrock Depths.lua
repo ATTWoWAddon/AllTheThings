@@ -3197,7 +3197,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(11268),	-- Head of Argelmach
 						i(11465),	-- Marshal Windsor's Lost Information
-						applyclassicphase(TBC_PHASE_ONE, i(21956)),	-- Design: Dark Iron Scorpid
+						applyclassicphase(TBC_PHASE_ONE, i(21956, {	-- Design: Dark Iron Scorpid (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
+						})),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(227964, {	-- Luminary Kilt
 							["timeline"] = { ADDED_1_15_3 },

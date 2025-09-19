@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["sourceQuests"] = { 40419 },	-- Rescue Mission
 							["altQuests"] = { 41009 },	-- Hunter to Hunter
 							["provider"] = { "n", 102570 },	-- Vereesa Windrunner
-							["maps"] = { LEGION_DALARAN },
+							["coord"] = { 66.1, 45.4, LEGION_DALARAN },
 						}),
 					}),
 					cl(HUNTER, SURVIVAL, {

@@ -1,10 +1,34 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(WORLD_QUESTS, {
 			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				header(HEADERS.Achievement, 42737, {	-- Capstoned
+					q(89294, {	-- Special Assignment: Aligned Views
+						["coord"] = { 77.2, 48.9, KARESH },
+						["groups"] = {
+							i(244842, {	-- Fabled Veteran's Cache
+								["sym"] = { -- [K'aresh Zone Rewards content]
+									{"select","mapID",KARESH},{"pop"},
+									{"where","headerID",ZONE_REWARDS},{"pop"},
+									{"where","headerID",ARMOR},{"finalize"},
+
+									{"select","mapID",KARESH},{"pop"},
+									{"where","headerID",ZONE_REWARDS},{"pop"},
+									{"where","headerID",WEAPONS},
+								},
+							}),
+						},
+					}),
+					q(89293, {	-- Special Assignment: Overshadowed
+						["coord"] = { 56.3, 27.3, KARESH },
+						["groups"] = {
+							i(244842),	-- Fabled Veteran's Cache
+						},
+					}),
+				}),
 				pvp(q(89241, {	-- Up and Up
 					["coord"] = { 72.6, 12.4, KARESH },
 				})),
@@ -15,11 +39,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					["coord"] = { 74.1, 32.6, KARESH },
 					["isWeekly"] = true,	-- TODO: remove after Blizzard fix it flag
 					["groups"] = {
+						i(241353),	-- Hydrobite (QI!)
 						o(483713, {	-- Watering Jug
 							i(232323),	-- Watering Jug (QI!)
 						}),
 						--
 						i(245611, {	-- Wriggling Pinnacle Cache
+							["description"] = "|cFFE50D12Only the first Bag of the Week on your entire B.Net Account can contain a Pet or a Mount!|r",
 							["sym"] = {	-- K'aresh Zone Reward
 								{"select","mapID",KHAZ_ALGAR},{"pop"},
 								{"where","mapID",KARESH},{"pop"},
@@ -60,12 +86,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(85822, {	-- Making a Market
 					["coord"] = { 58.8, 58.9, KARESH },
 					["groups"] = {
-						o(495603, {	--  Loose Sand
+						o_repeated({
 							i(232578),	-- Wastelander Artifact (QI!)
 							i(232626),	-- Wastelander Artifact (QI!)
 							i(232625),	-- Wastelander Artifact (QI!)
 							i(232627),	-- Wastelander Artifact (QI!)
 							i(232628),	-- Wastelander Artifact (QI!)
+							o(495603),	-- Loose Sand
+							o(495605),	-- Sealed Coffer
 						}),
 					},
 				}),
@@ -146,16 +174,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(KARESH, {
 			n(WORLD_QUESTS, {
 				q(91075),	-- Triggered after completing 'Ecological Succession' (first time)
-				q(91179),	-- Triggered after completing 'Ecological Succession' (first time/Curious Slateback hqt?)
-							-- Triggered after completing 'Special Assignment: Overshadowed' (89293)
-							-- Triggered after completing 'Special Assignment: Aligned Views' (89294)
+				q(91179, name(HEADERS.Item, 244865,{["isWeekly"]=true})),	-- Pinnacle Cache #1 of the week
+				q(91180, name(HEADERS.Item, 244865,{["isWeekly"]=true})),	-- Pinnacle Cache #2 of the week
 				q(91193),	-- Special Assignment: Capstone 1 - Unlock
 				q(91203),	-- Special Assignment: Capstone 2 - Unlock
 				-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
@@ -166,4 +193,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

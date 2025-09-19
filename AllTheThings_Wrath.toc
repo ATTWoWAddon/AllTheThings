@@ -163,7 +163,7 @@ src\UI\Shared Window Logic.lua
 src\UI\Classic Window Logic.lua
 
 # Load expansion specific category database.
-db\Wrath\Categories.lua
+db\Wrath\Categories.xml
 
 # Window Definitions
 src\UI\Windows\Windows.xml

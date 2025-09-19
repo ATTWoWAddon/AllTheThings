@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.BFA, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+	expansion(EXPANSION.BFA, bubbleDown({["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 }}, {
 		header(HEADERS.Achievement, 12544, {
 			-- Note: [As of October 13th, 2020 These became lvl 50 Boost]
 			["description"] = "These are gained by boosting a character to Level 120. Each class has one default spec except Shamans, Druids and Hunters.",

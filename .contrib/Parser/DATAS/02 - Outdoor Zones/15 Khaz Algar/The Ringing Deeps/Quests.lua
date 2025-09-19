@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local TEMPORARY_SOURCEQUEST = 80434;
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 19560, {	-- The Ringing Deeps
@@ -336,7 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.01, {	-- The Caretaker of Brunwin's Terrace
 				q(80392, {	-- The Caretaker of Brunwin's Terrace
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -451,7 +450,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.03, {	-- Routine Maintenance
 				q(82773, {	-- A Functional Favor
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -506,7 +505,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.04, {	-- Dread in the Den
 				q(80508, {	-- Dread in the Den
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -572,7 +571,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.05, {	-- Envenomed Invasion
 				q(79367, {	-- A Nebb in Need
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -700,7 +699,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.07, {	-- Into the Fog
 				q(81556, {	-- Foreign Fog
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -733,7 +732,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- TODO: CHECK THIS QUESTLINE AGAIN...
 				q(83092, {	-- An Igneous End
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -742,7 +741,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83160, {	-- Cinderbrew Reserve
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -751,7 +750,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83152, {	-- Magmamagement
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -760,7 +759,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83153, {	-- Sampling Steam
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -912,7 +911,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.11, {	-- Kobold Story Time
 				q(79504, {	-- Dripsy Forgot Her Candle
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -981,7 +980,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.12, {	-- Rampage at Nibelgaz Mine
 				q(79148, {	-- The Nibelgaz Refinery
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -993,7 +992,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79149, {	-- Rampage in the Refinery
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1038,7 +1037,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
 				q(83155, {	-- Tired of Tripping
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1062,7 +1061,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.14, {	-- Revenge in the Rumbling Wastes
 				q(81655, {	-- Juicy Krolusk Meat
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1092,7 +1091,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.15, {	-- Tired of Rest
 				q(80576, {	-- Listener Lost
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1170,7 +1169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.16, {	-- Frolicking in the Fetid Grotto
 				q(81693, {	-- Desparately Seeking Skorthuz
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						80434,	-- Into the Deeps,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -1229,7 +1228,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
 				["sourceQuests"] = {
-					TEMPORARY_SOURCEQUEST,
+					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
@@ -1249,7 +1248,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(82195, {	-- Rust and Redemption
 				["sourceQuests"] = {
-					TEMPORARY_SOURCEQUEST,
+					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
@@ -1315,7 +1314,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			------ Miscellaneous ------
 			q(78918, {	-- Brax's Brass Knuckles
 				["sourceQuests"] = {
-					TEMPORARY_SOURCEQUEST,
+					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
@@ -1341,7 +1340,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(82226, {	-- Papers? Please!
 				["sourceQuests"] = {
-					TEMPORARY_SOURCEQUEST,
+					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
@@ -1349,7 +1348,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 64.9, 78.6, THE_RINGING_DEEPS },
 			}),
 			q(83331, {	-- Preserve and Pretend
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 80434 },	-- Into the Deeps,
 				["provider"] = { "n", 226255 },	-- Chive
 				["coord"] = { 58.3, 32.1, THE_RINGING_DEEPS },
 			}),
@@ -1376,9 +1375,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			})),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
 			n(QUESTS, {
@@ -1400,4 +1399,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

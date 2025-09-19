@@ -228,6 +228,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						},
 					}),
 					n(RARES, sharedData({
+						["sharedDescription"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
 						["coords"] = {
 							{ 25.6, 73.2, STORMSONG_VALLEY },
 							{ 33.4, 32.8, STORMSONG_VALLEY },
@@ -239,7 +240,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 66.3, 69.9, STORMSONG_VALLEY },
 							{ 72.3, 52.2, STORMSONG_VALLEY },
 						},
-						["sharedDescription"] = "This Rare has a chance to spawn during the Honeyback Harvester Event on either Wave 4, 9, 14, 19 and so on.",
+						["crs"] = {
+							154944,	-- Lush Flower Bed (vignette)
+						},
 					}, {
 						n(155055, {	-- Gurg the Hivethief
 							["groups"] = {

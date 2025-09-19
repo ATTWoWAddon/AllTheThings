@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	inst(756, {	-- The Eye of Eternity
 		["mapID"] = THE_EYE_OF_ETERNITY,
 		["coord"] = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
-		-- #if AFTER CATA
+		-- #if AFTER WOD
 		["sharedLockout"] = 1,
 		-- #endif
 		["isRaid"] = true,

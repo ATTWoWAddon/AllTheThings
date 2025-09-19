@@ -158,6 +158,7 @@ local function CacheAccountWideMiscQuests()
 
 		-- No additional HQT on completion, and once per account
 		88947,	-- Undermined Delves
+		91780,	-- Ethereal Delves
 
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character

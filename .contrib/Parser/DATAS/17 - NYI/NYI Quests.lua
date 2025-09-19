@@ -786,7 +786,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(30918, { ["name"] = "Hui's Vengeance", }),	-- Hui's Vengeance
 			q(30021, { ["name"] = "Impenetrable", }),	-- Impenetrable
 			q(29705, { ["name"] = "Invasion of the Bottle Snatchers", }),	-- Invasion of the Bottle Snatchers
+			-- #if NOT ANYCLASSIC
 			q(31697, { ["name"] = "Jeremy's Test Quest", }),	-- Jeremy's Test Quest
+			-- #endif
 			q(29706, { ["name"] = "Kegplosion", }),	-- Kegplosion
 			q(29584, { ["name"] = "Kill Mogu Firestarters", }),	-- Kill Mogu Firestarters
 			q(29531, { ["name"] = "Kill Stuff", }),	-- Kill Stuff
@@ -832,7 +834,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(30677, { ["name"] = "Shuttle Service", }),	-- Shuttle Service
 			q(30122, { ["name"] = "Silver Filigree Flask", ["_drop"] = { "g" }, }),	-- Silver Filigree Flask
 			q(29718, { ["name"] = "Sixteen Fluid Ounces of Prevention", }),	-- Sixteen Fluid Ounces of Prevention
-			q(30294, { ["name"] = "Small Comforts", }),	-- Small Comforts
 			q(29744, { ["name"] = "Some \"Pupil of Nature\"", }),	-- Some "Pupil of Nature"
 			q(30759, { ["name"] = "Sotelo's Quest", }),	-- Sotelo's Quest
 			q(29554, { ["name"] = "Sunken Junk", }),	-- Sunken Junk
@@ -2650,7 +2651,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(43826, { ["name"] = "Hidden History", }),	-- Hidden History
 			q(41008, { ["name"] = "Hunter to Hunter", }),	-- Hunter to Hunter
 			q(40780, { ["name"] = "Hunting Impaired", }),	-- Hunting Impaired
-			q(42729, { ["name"] = "Challenger's Armaments", }),	-- Challenger's Armaments
+			-- q(42729, { ["name"] = "Challenger's Armaments", }),	-- Challenger's Armaments
 			q(42853, { ["name"] = "Champion: Aponi Brightmane [NYI]", }),	-- Champion: Aponi Brightmane [NYI]
 			q(42855, { ["name"] = "Champion: Arator the Redeemer [NYI]", }),	-- Champion: Arator the Redeemer [NYI]
 			q(42617, { ["name"] = "Champion: King Ymiron", }),	-- Champion: King Ymiron

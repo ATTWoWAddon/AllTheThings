@@ -354,866 +354,1728 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			header(HEADERS.Achievement, 14222, {	-- Exile's Reach
-				q(56775, {	-- Warming Up [A]
-					["provider"] = { "n", 156280 },	-- Captain Garrick
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59926, {	-- Warming Up [H]
-					["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
-					["races"] = HORDE_ONLY,
-				}),
-				q(58209, {	-- Stand Your Ground [A]
-					["sourceQuests"] = { 56775 },	-- Warming Up [A]
-					["provider"] = { "n", 160664 },	-- Private Cole
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59927, {	-- Stand Your Ground [H]
-					["sourceQuests"] = { 59926 },	-- Warming Up [H]
-					["provider"] = { "n", 166583 },	-- Grunt Throg
-					["races"] = HORDE_ONLY,
-				}),
-				q(58208, {	-- Brace for Impact [A]
-					["sourceQuests"] = { 58209 },	-- Stand Your Ground [A]
-					["provider"] = { "n", 160664 },	-- Private Cole
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59928, {	-- Brace for Impact [H]
-					["sourceQuests"] = { 59927 },	-- Stand Your Ground [H]
-					["provider"] = { "n", 166583 },	-- Grunt Throg
-					["races"] = HORDE_ONLY,
-				}),
-				q(55122, {	-- Murloc Mania [A]
-					["sourceQuests"] = { 58208 },	-- Brace for Impact [A]
-					["provider"] = { "n", 156626 },	-- Captain Garrick
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(170549),	-- First Aid Kit (QI!)
-					},
-				}),
-				q(59929, {	-- Murloc Mania [H]
-					["sourceQuests"] = { 59928 },	-- Brace for Impact [H]
-					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(170549),	-- First Aid Kit (QI!)
-					},
-				}),
-				q(54951, {	-- Emergency First Aid [A]
-					["sourceQuests"] = { 55122 },	-- Murloc Mania [A]
-					["provider"] = { "n", 156626 },	-- Captain Garrick
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(174780),	-- Emptied First Aid Kit
-					},
-				}),
-				q(59930, {	-- Emergency First Aid [H]
-					["sourceQuests"] = { 59929 },	-- Murloc Mania [H]
-					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(174780),	-- Emptied First Aid Kit
-					},
-				}),
-				q(54952, {	-- Finding the Lost Expedition [A]
-					["sourceQuests"] = { 54951 },	-- Emergency First Aid [A]
-					["provider"] = { "n", 156626 },	-- Captain Garrick
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59931, {	-- Finding the Lost Expedition [H]
-					["sourceQuests"] = { 59930 },	-- Emergency First Aid [H]
-					["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
-					["coord"] = { 61.8, 82.8, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55174, {	-- Cooking Meat [A]
-					["sourceQuests"] = { 54952 },	-- Finding the Lost Expedition [A]
-					["provider"] = { "n", 156651 },	-- Captain Garrick
-					["coord"] = { 58.3, 74.6, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(174074),	-- Cooked Meat (QI!)
-						i(174072),	-- Raw Meat (QI!)
-					},
-				}),
-				q(59932, {	-- Cooking Meat [H]
-					["sourceQuests"] = { 59931 },	-- Finding the Lost Expedition [H]
-					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
-					["coord"] = { 58.3, 74.6, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(174074),	-- Cooked Meat (QI!)
-						i(174072),	-- Raw Meat (QI!)
-					},
-				}),
-				q(59254, {	-- Enhanced Combat Tactics [A]
-					["sourceQuests"] = { 55174 },	-- Cooking Meat [A]
-					["provider"] = { "n", 156651 },	-- Captain Garrick
-					["coord"] = { 58.3, 74.6, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
-				}),
-				q(59933, {	-- Enhanced Combat Tactics [H]
-					["sourceQuests"] = { 59932 },	-- Cooking Meat [H]
-					["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
-					["coord"] = { 58.3, 74.6, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
-				}),
-				q(55173, {	-- Northbound [A]
-					["sourceQuests"] = {
-						59254,	-- Enhanced Combat Tactics [A]
-						55174,	-- Cooking Meat [A] [Hunter]
-						59339,	-- Enhanced Combat Tactics [A] [Monk]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 175031 },	-- Alaria
-					["coord"] = { 58.3, 74.4, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(167206),	-- Fire Essence (QI!)
-					},
-				}),
-				q(59935, {	-- Northbound [H]
-					["sourceQuests"] = {
-						59933,	-- Enhanced Combat Tactics [H]
-						59932,	-- Cooking Meat [H] [Hunter]
-						59934,	-- Enhanced Combat Tactics [H] [Monk]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["qgs"] = {
-						166854,	-- Won'sa
-						175030,	-- Won'sa (Note: this creatureID here at least from 11.0.5)
-					},
-					["coord"] = { 58.3, 74.4, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(167206),	-- Fire Essence (QI!)
-					},
-				}),
-				q(55186, {	-- Down with the Quilboar [A]
-					["sourceQuests"] = {
-						55173,	-- Northbound [A]
-						59342,	-- Taming the Wilds [A] [Hunter]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59938, {	-- Down with the Quilboar [H]
-					["sourceQuests"] = {
-						59935,	-- Northbound [H]
-						59937,	-- Taming the Wilds [H] [Hunter]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55184, {	-- Forbidden Quilboar Necromancy [A]
-					["sourceQuests"] = {
-						55173,	-- Northbound [A]
-						59342,	-- Taming the Wilds [A] [Hunter]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
-						i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
-						i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
-						i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
-						i(175181, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
-						i(175183, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
-						i(175182, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
-						i(175180, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
-					},
-				}),
-				q(59939, {	-- Forbidden Quilboar Necromancy [H]
-					["sourceQuests"] = {
-						59935,	-- Northbound [H]
-						59937,	-- Taming the Wilds [H] [Hunter]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
-						i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
-						i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
-						i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
-						i(175213, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
-						i(175215, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
-						i(175214, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
-						i(175212, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
-					},
-				}),
-				q(55193, {	-- The Scout-o-Matic 5000
-					["sourceQuests"] = {
-						55186,	-- Down with the Quilboar [A]
-						55184,	-- Forbidden Quilboar Necromancy [A]
-					},
-					["provider"] = { "n", 149899 },	-- Lindie Springstock
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59940, {	-- The Choppy Booster Mk 5
-					["sourceQuests"] = {
-						59938,	-- Down with the Quilboar [H]
-						59939,	-- Forbidden Quilboar Necromancy [H]
-					},
-					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(56034, {	-- Re-sizing the Situation [A]
-					["sourceQuests"] = { 55193 },	-- The Scout-o-Matic 5000
-					["provider"] = { "n", 149899 },	-- Lindie Springstock
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(170557),	-- Re-Sizer v9.0.1 (QI!)
-					},
-				}),
-				q(59941, {	-- Re-sizing the Situation [H]
-					["sourceQuests"] = { 59940 },	-- The Choppy Booster Mk 5
-					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(178051),	-- Re-Sizer v9.0.1 (QI!)
-					},
-				}),
-				q(55879, {	-- Ride of the Scientifically Enhanced Boar
-					["sourceQuests"] = { 56034 },	-- Re-sizing the Situation [A]
-					["provider"] = { "n", 156280 },	-- Captain Garrick
-					["coord"] = { 56.2, 59.0, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175167),	-- Expeditionary Staff
-						i(175172),	-- Expeditionary Dagger
-						i(175166),	-- Expeditionary Greatsword
-						i(175162),	-- Expeditionary Longbow
-						i(175168),	-- Expeditionary Quarterstaff
-						i(175170),	-- Expeditionary Short Sword
-						i(175173),	-- Expeditionary Cudgel
-					},
-				}),
-				q(59942, {	-- The Re-Deather
-					["sourceQuests"] = { 59941 },	-- Re-sizing the Situation [H]
-					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175161),	-- Expeditionary Axe
-						i(175163),	-- Expeditionary Quarterstaff
-						i(175165),	-- Expeditionary Greataxe
-						i(175174),	-- Expeditionary Cudgel
-						i(175169),	-- Expeditionary Longbow
-						i(175164),	-- Expeditionary Staff
-						i(175171),	-- Expeditionary Dagger
-					},
-				}),
-				q(55194, {	-- Stocking Up on Supplies [A]
-					["sourceQuests"] = { 55879 },	-- Ride of the Scientifically Enhanced Boar
-					["provider"] = { "n", 156807 },	-- Captain Garrick
-					["coord"] = { 52.3, 55.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175239),	-- Standard Issue Knapsack
-					},
-				}),
-				q(59950, {	-- Stocking Up on Supplies [H]
-					["sourceQuests"] = { 59942 },	-- The Re-Deather
-					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
-					["coord"] = { 52.1, 55.3, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175239),	-- Standard Issue Knapsack
-					},
-				}),
-				q(55196, {	-- The Harpy Problem [A]
-					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
-					["provider"] = { "n", 156833 },	-- Henry Garrick
-					["coord"] = { 53.5, 52.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59943, {	-- The Harpy Problem [H]
-					["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
-					["provider"] = { "n", 167219 },	-- Shuja Grimaxe
-					["coord"] = { 53.7, 52.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55764, {	-- Harpy Culling [A]
-					["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
-					["provider"] = { "n", 156860 },	-- Kee-La
-					["coord"] = { 56.9, 46.2, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59945, {	-- Harpy Culling [H]
-					["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
-					["provider"] = { "n", 167291 },	-- Bo
-					["coord"] = { 56.9, 46.2, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55881, {	-- Purge the Totems [A]
-					["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
-					["provider"] = { "n", 156859 },	-- Henry Garrick
-					["coord"] = { 56.9, 46.2, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(168445),	-- Wand of Delugion (QI!)
-						i(175200),	-- Expeditionary Cloth Cord
-						i(175202),	-- Expeditionary Leather Belt
-						i(175201),	-- Expeditionary Mail Waistguard
-						i(175199),	-- Expeditionary Plate Girdle
-					},
-				}),
-				q(59946, {	-- Purge the Totems [H]
-					["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
-					["provider"] = { "n", 167291 },	-- Bo
-					["coord"] = { 56.9, 46.2, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(168445),	-- Wand of Delugion (QI!)
-						i(175238),	-- Expeditionary Cloth Cord
-						i(175233),	-- Expeditionary Leather Belt
-						i(175232),	-- Expeditionary Mail Waistguard
-						i(175231),	-- Expeditionary Plate Girdle
-					},
-				}),
-				q(55763, {	-- The Rescue of Meredy Huntswell
-					["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
-					["provider"] = { "n", 156859 },	-- Henry Garrick
-					["coord"] = { 56.8, 46.1, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(168410),	-- First Aid Kit (QI!)
-					},
-				}),
-				q(59944, {	-- The Rescue of Herbert Gloomburst
-					["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
-					["provider"] = { "n", 167290 },	-- Shuja Grimaxe
-					["coord"] = { 56.8, 46.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(168410),	-- First Aid Kit (QI!)
-					},
-				}),
-				q(55882, {	-- Message to Base [A]
-					["sourceQuests"] = {
-						55764,	-- Harpy Culling [A]
-						55881,	-- Purge the Totems [A]
-						55763,	-- The Rescue of Meredy Huntswell
-					},
-					["provider"] = { "n", 156859 },	-- Henry Garrick
-					["coord"] = { 56.8, 46.1, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175192),	-- Expeditionary Cloth Leggings
-						i(175194),	-- Expeditionary Leather Legguards
-						i(175193),	-- Expeditionary Mail Leggings
-						i(175191),	-- Expeditionary Plate Legguards
-					},
-				}),
-				q(59947, {	-- Message to Base [H]
-					["sourceQuests"] = {
-						59945,	-- Harpy Culling [H]
-						59946,	-- Purge the Totems [H]
-						59944,	-- The Rescue of Herbert Gloomburst
-					},
-					["provider"] = { "n", 167290 },	-- Shuja Grimaxe
-					["coord"] = { 56.8, 46.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175224),	-- Expeditionary Cloth Leggings
-						i(175226),	-- Expeditionary Leather Legguards
-						i(175225),	-- Expeditionary Mail Leggings
-						i(175223),	-- Expeditionary Plate Legguards
-					},
-				}),
-				q(55965, {	-- Westward Bound [A]
-					["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
-					["provider"] = { "n", 154300 },	-- Bjorn Stouthands
-					["coord"] = { 53.0, 55.0, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59948, {	-- Westward Bound [H]
-					["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
-					["provider"] = { "n", 167221 },	-- Lana Jordan
-					["coord"] = { 52.9, 56.4, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55639, {	-- Who Lurks in the Pit [A]
-					["sourceQuests"] = { 55965 },	-- Westward Bound [A]
-					["provider"] = { "n", 156803 },	-- Alaria
-					["coord"] = { 51.1, 59.5, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175203),	-- Expeditionary Cloth Cuffs
-						i(175206),	-- Expeditionary Leather Bracers
-						i(175205),	-- Expeditionary Mail Armbands
-						i(175204),	-- Expeditionary Plate Armguards
-					},
-				}),
-				q(59949, {	-- Who Lurks in the Pit [H]
-					["sourceQuests"] = { 59948 },	-- Westward Bound [H]
-					["provider"] = { "n", 167225 },	-- Lana Jordan
-					["coord"] = { 51.1, 59.5, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175234),	-- Expeditionary Cloth Cuffs
-						i(175237),	-- Expeditionary Leather Bracers
-						i(175236),	-- Expeditionary Mail Armbands
-						i(175235),	-- Expeditionary Plate Armguards
-					},
-				}),
-				q(85678, {	-- Repair Yourself [A]
-					["coord"] = { 52.2, 55.2, EXILES_REACH },
-					["timeline"] = { ADDED_11_1_7 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(85679, {	-- Repair Yourself [H]
-					["coord"] = { 52.4, 55.6, EXILES_REACH },
-					["timeline"] = { ADDED_11_1_7 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(56344, {	-- To Darkmaul Citadel [A]
-					["sourceQuests"] = {
-						55882,	-- Message to Base [A]
-						55639,	-- Who Lurks in the Pit [A]
-						59350,	-- A Druid's Form [A] [Druid]
-						60168,	-- The Art of Taming [A] [Hunter]
-						59354,	-- The Best Way to Use Sheep [A] [Mage]
-						59349,	-- One Last Spar [A] [Monk]
-						-- #if AFTER 11.1.7
-						85678,	-- Repair Yourself
-						-- #endif
-					},
-					["provider"] = { "n", 156807 },	-- Captain Garrick
-					["coord"] = { 52.1, 55.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59975, {	-- To Darkmaul Citadel [H]
-					["sourceQuests"] = {
-						59947,	-- Message to Base [H]
-						59949,	-- Who Lurks in the Pit [H]
-						59951,	-- A Druid's Form [H] [Druid]
-						60162,	-- The Art of Taming [H] [Hunter]
-						59955,	-- The Best Way to Use Sheep [H] [Mage]
-						59957,	-- One Last Spar [H] [Monk]
-						-- #if AFTER 11.1.7
-						85679,	-- Repair Yourself
-						-- #endif
-					},
-					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
-					["coord"] = { 52.1, 55.3, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55981, {	-- Right Beneath Their Eyes [A]
-					["sourceQuests"] = { 56344 },	-- To Darkmaul Citadel [A]
-					["provider"] = { "n", 156941 },	-- Captain Garrick
-					["coord"] = { 48.9, 49.2, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59978, {	-- Right Beneath Their Eyes [H]
-					["sourceQuests"] = { 59975 },	-- To Darkmaul Citadel [H]
-					["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
-					["coord"] = { 48.9, 49.3, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55989, {	-- Catapult Destruction [A]
-					["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
-					["provider"] = { "n", 156960 },	-- Meredy Huntswell
-					["coord"] = { 40.2, 32.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59980, {	-- Catapult Destruction [H]
-					["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-					["provider"] = { "n", 167631 },	-- Herbert Gloomburst
-					["coord"] = { 40.3, 32.4, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-				}),
-				q(55990, {	-- Controlling their Stones [A]
-					["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
-					["provider"] = { "n", 156961 },	-- Captain Garrick
-					["coord"] = { 40.1, 32.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(168599),	-- Ward Stone (QI!)
-						i(168600),	-- Ward Stone (QI!)
-						i(168601),	-- Ward Stone (QI!)
-					},
-				}),
-				q(59981, {	-- Controlling Their Stones [H]
-					["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-					["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
-					["coord"] = { 40.2, 32.4, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(168599),	-- Ward Stone (QI!)
-						i(168600),	-- Ward Stone (QI!)
-						i(168601),	-- Ward Stone (QI!)
-					},
-				}),
-				q(55988, {	-- Like Ogres to the Slaughter [A]
-					["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
-					["provider"] = { "n", 156942 },	-- Henry Garrick
-					["coord"] = { 40.2, 32.3, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175186),	-- Expeditionary Cloth Gloves
-						i(175184),	-- Expeditionary Leather Gloves
-						i(175187),	-- Expeditionary Mail Gauntlets
-						i(175185),	-- Expeditionary Plate Gauntlets
-					},
-				}),
-				q(59979, {	-- Like Ogres to the Slaughter [H]
-					["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
-					["provider"] = { "n", 167632 },	-- Shuja Grimaxe
-					["coord"] = { 40.2, 32.5, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175218),	-- Expeditionary Cloth Gloves
-						i(175216),	-- Expeditionary Leather Gloves
-						i(175219),	-- Expeditionary Mail Gauntlets
-						i(175217),	-- Expeditionary Plate Gauntlets
-					},
-				}),
-				q(55992, {	-- Dungeon: Darkmaul Citadel [A]
-					["sourceQuests"] = {
-						55989,	-- Catapult Destruction [A]
-						55990,	-- Controlling their Stones [A]
-						55988,	-- Like Ogres to the Slaughter [A]
-					},
-					["provider"] = { "n", 156965 },	-- Captain Kelra
-					["coord"] = { 39.9, 32.1, EXILES_REACH },
-					["maps"] = { DARKMAUL_CITADEL },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(175188),	-- Expeditionary Cloth Hood
-						i(175190),	-- Expeditionary Leather Helm
-						i(175189),	-- Expeditionary Mail Helm
-						i(175175),	-- Expeditionary Plate Helm
-					},
-				}),
-				q(59984, {	-- Dungeon: Darkmaul Citadel [H]
-					["sourceQuests"] = {
-						59980,	-- Catapult Destruction [H]
-						59981,	-- Controlling their Stones [H]
-						59979,	-- Like Ogres to the Slaughter [H]
-					},
-					["provider"] = { "n", 167183 },	-- Warlord Mulgrin Thunderwalker
-					["coord"] = { 39.9, 32.1, EXILES_REACH },
-					["maps"] = { DARKMAUL_CITADEL },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(175220),	-- Expeditionary Cloth Hood
-						i(175222),	-- Expeditionary Leather Helm
-						i(175221),	-- Expeditionary Mail Helm
-						i(175207),	-- Expeditionary Plate Helm
-					},
-				}),
-				q(55991, {	-- An End to Beginnings [A]
-					["sourceQuests"] = { 55992 },	-- Dungeon: Darkmaul Citadel [A]
-					["provider"] = { "n", 156961 },	-- Captain Garrick
-					["coord"] = { 39.6, 31.9, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
-					["_drop"] = { "g" },
-					["groups"] = {
-						i(175176),	-- Expeditionary Cloth Robe
-						i(175179),	-- Expeditionary Leather Tunic
-						i(175178),	-- Expeditionary Mail Armor
-						i(175177),	-- Expeditionary Plate Chestpiece
-					},
-				}),
-				q(59985, {	-- An End to Beginnings [H]
-					["sourceQuests"] = { 59984 },	-- Dungeon: Darkmaul Citadel [H]
-					["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
-					["coord"] = { 39.6, 31.9, EXILES_REACH },
-					["races"] = HORDE_ONLY,
-					["_drop"] = { "g" },
-					["groups"] = {
-						i(175208),	-- Expeditionary Cloth Robe
-						i(175211),	-- Expeditionary Leather Tunic
-						i(175210),	-- Expeditionary Mail Armor
-						i(175209),	-- Expeditionary Plate Chestpiece
-					},
-				}),
-
-					-- Stormwind --
-				q(59583, {	-- Welcome to Stormwind
-					["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
-					["provider"] = { "n", 154169 },	-- Captain Garrick
-					["coord"] = { 73.6, 91.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58908, {	-- Finding Your Way
-					["sourceQuests"] = { 59583 },	-- Welcome to Stormwind
-					["provider"] = { "n", 163095 },	-- Lindie Springstock
-					["coord"] = { 70.1, 85.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58909, {	-- License to Ride [A]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163007 },	-- Curly
-					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58910, {	-- What's Your Specialty? [A] [Druid]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59586, {	-- What's Your Specialty? [A] [Hunter]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { HUNTER },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59587, {	-- What's Your Specialty? [A] [Mage]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { MAGE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59588, {	-- What's Your Specialty? [A] [Monk]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { MONK },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59589, {	-- What's Your Specialty? [A] [Paladin]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59590, {	-- What's Your Specialty? [A] [Priest]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { PRIEST },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59591, {	-- What's Your Specialty? [A] [Rogue]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { ROGUE },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59592, {	-- What's Your Specialty? [A] [Shaman]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { SHAMAN },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59593, {	-- What's Your Specialty? [A] [Warlock]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(59594, {	-- What's Your Specialty? [A] [Warrior]
-					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 77.4, 67.2, STORMWIND_CITY },
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58911, {	-- Home Is Where the Hearth Is [A]
-					["sourceQuests"] = {
-						58910,	-- What's Your Specialty? [A] [Druid]
-						59586,	-- What's Your Specialty? [A] [Hunter]
-						59587,	-- What's Your Specialty? [A] [Mage]
-						59588,	-- What's Your Specialty? [A] [Monk]
-						59589,	-- What's Your Specialty? [A] [Paladin]
-						59590,	-- What's Your Specialty? [A] [Priest]
-						59591,	-- What's Your Specialty? [A] [Rogue]
-						59592,	-- What's Your Specialty? [A] [Shaman]
-						59593,	-- What's Your Specialty? [A] [Warlock]
-						59594,	-- What's Your Specialty? [A] [Warrior]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 163097 },	-- Lindle Springstock
-					["coord"] = { 79.0, 69.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(58912, {	-- An Urgent Meeting [A]
-					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
-					["provider"] = { "n", 163211 },	-- Henry Garrick
-					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
-					["races"] = ALLIANCE_ONLY,
-					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
-				}),
-				q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
-					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
-					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
-					["qg"] = 163219,	-- Captain Garrick
-					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(178941),	-- Alliance Dog Tags,
-					}
-				}),
-				q(59641, {	-- The Nation of Kul Tiras
-					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
-					["qg"] = 165395,	-- Anduin Wrynn
-					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
-					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-
-					-- Orgrimmar --
-				q(60343, {	-- Welcome to Orgrimmar
-					["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
-					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 52.5, 88.0, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60344, {	-- Finding Your Way [H]
-					["sourceQuests"] = { 60343 },	-- Welcome to Orgrimmar
-					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
-					["coord"] = { 51.9, 85.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60345, {	-- License to Ride
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
-					["coord"] = { 61.5, 32.9, ORGRIMMAR },
-					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60346, {	-- What's Your Specialty? [H] [Druid]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { DRUID },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60347, {	-- What's Your Specialty? [H] [Hunter]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { HUNTER },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60348, {	-- What's Your Specialty? [H] [Mage]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { MAGE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60349, {	-- What's Your Specialty? [H] [Monk]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { MONK },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60350, {	-- What's Your Specialty? [H] [Paladin]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { PALADIN },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60351, {	-- What's Your Specialty? [H] [Priest]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { PRIEST },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60352, {	-- What's Your Specialty? [H] [Rogue]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60353, {	-- What's Your Specialty? [H] [Shaman]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60355, {	-- What's Your Specialty? [H] [Warlock]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60357, {	-- What's Your Specialty? [H] [Warrior]
-					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 61.5, 33.0, ORGRIMMAR },
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-				}),
-				q(60359, {	-- Home Is Where the Hearth Is [H]
-					["sourceQuests"] = {
-						60346,	-- What's Your Specialty? [H] [Druid]
-						60347,	-- What's Your Specialty? [H] [Hunter]
-						60348,	-- What's Your Specialty? [H] [Mage]
-						60349,	-- What's Your Specialty? [H] [Monk]
-						60350,	-- What's Your Specialty? [H] [Paladin]
-						60351,	-- What's Your Specialty? [H] [Priest]
-						60352,	-- What's Your Specialty? [H] [Rogue]
-						60353,	-- What's Your Specialty? [H] [Shaman]
-						60355,	-- What's Your Specialty? [H] [Warlock]
-						60357,	-- What's Your Specialty? [H] [Warrior]
-					},
-					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
-					["coord"] = { 73.6, 43.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
-				----- The original ending of the questline where new players got funneled into BfA -----
-				-- After 11.0.2 players receive Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
-				q(60360, {	-- An Urgent Meeting [H]
-					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
-					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
-					["coord"] = { 70.9, 49.6, ORGRIMMAR },
-					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
-					["races"] = HORDE_ONLY,
-					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
-				}),
-				q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
-					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
-					["sourceQuest"] = 60360,	-- An Urgent Meeting
-					["qg"] = 168431,	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(178942),	-- War-Chain of the Horde
-					},
-				}),
+			q(56775, {	-- Warming Up [A]
+				["provider"] = { "n", 156280 },	-- Captain Garrick
+				["races"] = ALLIANCE_ONLY,
 			}),
+			q(59926, {	-- Warming Up [H]
+				["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
+				["races"] = HORDE_ONLY,
+			}),
+			q(58209, {	-- Stand Your Ground [A]
+				["sourceQuests"] = { 56775 },	-- Warming Up [A]
+				["provider"] = { "n", 160664 },	-- Private Cole
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59927, {	-- Stand Your Ground [H]
+				["sourceQuests"] = { 59926 },	-- Warming Up [H]
+				["provider"] = { "n", 166583 },	-- Grunt Throg
+				["races"] = HORDE_ONLY,
+			}),
+			q(58208, {	-- Brace for Impact [A]
+				["sourceQuests"] = { 58209 },	-- Stand Your Ground [A]
+				["provider"] = { "n", 160664 },	-- Private Cole
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59928, {	-- Brace for Impact [H]
+				["sourceQuests"] = { 59927 },	-- Stand Your Ground [H]
+				["provider"] = { "n", 166583 },	-- Grunt Throg
+				["races"] = HORDE_ONLY,
+			}),
+			q(55122, {	-- Murloc Mania [A]
+				["sourceQuests"] = { 58208 },	-- Brace for Impact [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(170549),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(59929, {	-- Murloc Mania [H]
+				["sourceQuests"] = { 59928 },	-- Brace for Impact [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(170549),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(54951, {	-- Emergency First Aid [A]
+				["sourceQuests"] = { 55122 },	-- Murloc Mania [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(174780),	-- Emptied First Aid Kit
+				},
+			}),
+			q(59930, {	-- Emergency First Aid [H]
+				["sourceQuests"] = { 59929 },	-- Murloc Mania [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(174780),	-- Emptied First Aid Kit
+				},
+			}),
+			q(54952, {	-- Finding the Lost Expedition [A]
+				["sourceQuests"] = { 54951 },	-- Emergency First Aid [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59931, {	-- Finding the Lost Expedition [H]
+				["sourceQuests"] = { 59930 },	-- Emergency First Aid [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55174, {	-- Cooking Meat [A]
+				["sourceQuests"] = { 54952 },	-- Finding the Lost Expedition [A]
+				["provider"] = { "n", 156651 },	-- Captain Garrick
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					o(349962, {	-- Campfire
+						["coord"] = { 58.5, 74.5, EXILES_REACH },
+						["groups"] = { i(174074) },	-- Cooked Meat (QI!)
+					}),
+					i(174072),	-- Raw Meat (QI!)
+				},
+			}),
+			q(59932, {	-- Cooking Meat [H]
+				["sourceQuests"] = { 59931 },	-- Finding the Lost Expedition [H]
+				["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					o(339769, {
+						["coord"] = { 58.5, 74.5, EXILES_REACH },
+						["groups"] = { i(174074) },	-- Cooked Meat (QI!)
+					}),
+					i(174072),	-- Raw Meat (QI!)
+				},
+			}),
+			q(59254, {	-- Enhanced Combat Tactics [A]
+				["sourceQuests"] = { 55174 },	-- Cooking Meat [A]
+				["provider"] = { "n", 156651 },	-- Captain Garrick
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+			}),
+			q(59933, {	-- Enhanced Combat Tactics [H]
+				["sourceQuests"] = { 59932 },	-- Cooking Meat [H]
+				["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+			}),
+			q(55173, {	-- Northbound [A]
+				["sourceQuests"] = {
+					59254,	-- Enhanced Combat Tactics [A]
+					55174,	-- Cooking Meat [A] [Hunter]
+					59339,	-- Enhanced Combat Tactics [A] [Monk]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 175031 },	-- Alaria
+				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(167206),	-- Fire Essence (QI!)
+				},
+			}),
+			q(59935, {	-- Northbound [H]
+				["sourceQuests"] = {
+					59933,	-- Enhanced Combat Tactics [H]
+					59932,	-- Cooking Meat [H] [Hunter]
+					59934,	-- Enhanced Combat Tactics [H] [Monk]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["qgs"] = {
+					166854,	-- Won'sa
+					175030,	-- Won'sa (Note: this creatureID here at least from 11.0.5)
+				},
+				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(167206),	-- Fire Essence (QI!)
+				},
+			}),
+			q(55186, {	-- Down with the Quilboar [A]
+				["sourceQuests"] = {
+					55173,	-- Northbound [A]
+					59342,	-- Taming the Wilds [A] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 154327 },	-- Austin Huxworth
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59938, {	-- Down with the Quilboar [H]
+				["sourceQuests"] = {
+					59935,	-- Northbound [H]
+					59937,	-- Taming the Wilds [H] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55184, {	-- Forbidden Quilboar Necromancy [A]
+				["sourceQuests"] = {
+					55173,	-- Northbound [A]
+					59342,	-- Taming the Wilds [A] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 154327 },	-- Austin Huxworth
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+					i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+					i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+					i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+					i(175181, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
+					i(175183, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
+					i(175182, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
+					i(175180, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
+				},
+			}),
+			q(59939, {	-- Forbidden Quilboar Necromancy [H]
+				["sourceQuests"] = {
+					59935,	-- Northbound [H]
+					59937,	-- Taming the Wilds [H] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+					i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+					i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+					i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+					i(175213, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
+					i(175215, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
+					i(175214, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
+					i(175212, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
+				},
+			}),
+			q(55193, {	-- The Scout-o-Matic 5000
+				["sourceQuests"] = {
+					55186,	-- Down with the Quilboar [A]
+					55184,	-- Forbidden Quilboar Necromancy [A]
+				},
+				["provider"] = { "n", 149899 },	-- Lindie Springstock
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59940, {	-- The Choppy Booster Mk 5
+				["sourceQuests"] = {
+					59938,	-- Down with the Quilboar [H]
+					59939,	-- Forbidden Quilboar Necromancy [H]
+				},
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56034, {	-- Re-sizing the Situation [A]
+				["sourceQuests"] = { 55193 },	-- The Scout-o-Matic 5000
+				["provider"] = { "n", 149899 },	-- Lindie Springstock
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(170557),	-- Re-Sizer v9.0.1 (QI!)
+				},
+			}),
+			q(59941, {	-- Re-sizing the Situation [H]
+				["sourceQuests"] = { 59940 },	-- The Choppy Booster Mk 5
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(178051),	-- Re-Sizer v9.0.1 (QI!)
+				},
+			}),
+			q(55879, {	-- Ride of the Scientifically Enhanced Boar
+				["sourceQuests"] = { 56034 },	-- Re-sizing the Situation [A]
+				["provider"] = { "n", 156280 },	-- Captain Garrick
+				["coord"] = { 56.2, 59.0, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175167),	-- Expeditionary Staff
+					i(175172),	-- Expeditionary Dagger
+					i(175166),	-- Expeditionary Greatsword
+					i(175162),	-- Expeditionary Longbow
+					i(175168),	-- Expeditionary Quarterstaff
+					i(175170),	-- Expeditionary Short Sword
+					i(175173),	-- Expeditionary Cudgel
+				},
+			}),
+			q(59942, {	-- The Re-Deather
+				["sourceQuests"] = { 59941 },	-- Re-sizing the Situation [H]
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175161),	-- Expeditionary Axe
+					i(175163),	-- Expeditionary Quarterstaff
+					i(175165),	-- Expeditionary Greataxe
+					i(175174),	-- Expeditionary Cudgel
+					i(175169),	-- Expeditionary Longbow
+					i(175164),	-- Expeditionary Staff
+					i(175171),	-- Expeditionary Dagger
+				},
+			}),
+			q(55194, {	-- Stocking Up on Supplies [A]
+				["sourceQuests"] = { 55879 },	-- Ride of the Scientifically Enhanced Boar
+				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["coord"] = { 52.3, 55.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175239),	-- Standard Issue Knapsack
+				},
+			}),
+			q(59950, {	-- Stocking Up on Supplies [H]
+				["sourceQuests"] = { 59942 },	-- The Re-Deather
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175239),	-- Standard Issue Knapsack
+				},
+			}),
+			q(55196, {	-- The Harpy Problem [A]
+				["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
+				["provider"] = { "n", 156833 },	-- Henry Garrick
+				["coord"] = { 53.5, 52.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59943, {	-- The Harpy Problem [H]
+				["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
+				["provider"] = { "n", 167219 },	-- Shuja Grimaxe
+				["coord"] = { 53.7, 52.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55764, {	-- Harpy Culling [A]
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156860 },	-- Kee-La
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59945, {	-- Harpy Culling [H]
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167291 },	-- Bo
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55881, {	-- Purge the Totems [A]
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168445),	-- Wand of Delugion (QI!)
+					i(175200),	-- Expeditionary Cloth Cord
+					i(175202),	-- Expeditionary Leather Belt
+					i(175201),	-- Expeditionary Mail Waistguard
+					i(175199),	-- Expeditionary Plate Girdle
+				},
+			}),
+			q(59946, {	-- Purge the Totems [H]
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167291 },	-- Bo
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168445),	-- Wand of Delugion (QI!)
+					i(175238),	-- Expeditionary Cloth Cord
+					i(175233),	-- Expeditionary Leather Belt
+					i(175232),	-- Expeditionary Mail Waistguard
+					i(175231),	-- Expeditionary Plate Girdle
+				},
+			}),
+			q(55763, {	-- The Rescue of Meredy Huntswell
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168410),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(59944, {	-- The Rescue of Herbert Gloomburst
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167290 },	-- Shuja Grimaxe
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168410),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(55882, {	-- Message to Base [A]
+				["sourceQuests"] = {
+					55764,	-- Harpy Culling [A]
+					55881,	-- Purge the Totems [A]
+					55763,	-- The Rescue of Meredy Huntswell
+				},
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175192),	-- Expeditionary Cloth Leggings
+					i(175194),	-- Expeditionary Leather Legguards
+					i(175193),	-- Expeditionary Mail Leggings
+					i(175191),	-- Expeditionary Plate Legguards
+				},
+			}),
+			q(59947, {	-- Message to Base [H]
+				["sourceQuests"] = {
+					59945,	-- Harpy Culling [H]
+					59946,	-- Purge the Totems [H]
+					59944,	-- The Rescue of Herbert Gloomburst
+				},
+				["provider"] = { "n", 167290 },	-- Shuja Grimaxe
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175224),	-- Expeditionary Cloth Leggings
+					i(175226),	-- Expeditionary Leather Legguards
+					i(175225),	-- Expeditionary Mail Leggings
+					i(175223),	-- Expeditionary Plate Legguards
+				},
+			}),
+			q(55965, {	-- Westward Bound [A]
+				["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
+				["provider"] = { "n", 154300 },	-- Bjorn Stouthands
+				["coord"] = { 53.0, 55.0, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59948, {	-- Westward Bound [H]
+				["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
+				["provider"] = { "n", 167221 },	-- Lana Jordan
+				["coord"] = { 52.9, 56.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55639, {	-- Who Lurks in the Pit [A]
+				["sourceQuests"] = { 55965 },	-- Westward Bound [A]
+				["provider"] = { "n", 156803 },	-- Alaria
+				["coord"] = { 51.1, 59.5, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175203),	-- Expeditionary Cloth Cuffs
+					i(175206),	-- Expeditionary Leather Bracers
+					i(175205),	-- Expeditionary Mail Armbands
+					i(175204),	-- Expeditionary Plate Armguards
+				},
+			}),
+			q(59949, {	-- Who Lurks in the Pit [H]
+				["sourceQuests"] = { 59948 },	-- Westward Bound [H]
+				["provider"] = { "n", 167225 },	-- Lana Jordan
+				["coord"] = { 51.1, 59.5, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175234),	-- Expeditionary Cloth Cuffs
+					i(175237),	-- Expeditionary Leather Bracers
+					i(175236),	-- Expeditionary Mail Armbands
+					i(175235),	-- Expeditionary Plate Armguards
+				},
+			}),
+			q(85678, {	-- Repair Yourself [A]
+				["qg"] = 156807,	-- Captain Garrick
+				["coord"] = { 52.2, 55.2, EXILES_REACH },
+				["timeline"] = { ADDED_11_1_7 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(85679, {	-- Repair Yourself [H]
+				["coord"] = { 52.4, 55.6, EXILES_REACH },
+				["timeline"] = { ADDED_11_1_7 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56344, {	-- To Darkmaul Citadel [A]
+				["sourceQuests"] = {
+					55882,	-- Message to Base [A]
+					55639,	-- Who Lurks in the Pit [A]
+					59350,	-- A Druid's Form [A] [Druid]
+					60168,	-- The Art of Taming [A] [Hunter]
+					59354,	-- The Best Way to Use Sheep [A] [Mage]
+					59349,	-- One Last Spar [A] [Monk]
+					-- #if AFTER 11.1.7
+					85678,	-- Repair Yourself
+					-- #endif
+				},
+				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59975, {	-- To Darkmaul Citadel [H]
+				["sourceQuests"] = {
+					59947,	-- Message to Base [H]
+					59949,	-- Who Lurks in the Pit [H]
+					59951,	-- A Druid's Form [H] [Druid]
+					60162,	-- The Art of Taming [H] [Hunter]
+					59955,	-- The Best Way to Use Sheep [H] [Mage]
+					59957,	-- One Last Spar [H] [Monk]
+					-- #if AFTER 11.1.7
+					85679,	-- Repair Yourself
+					-- #endif
+				},
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55981, {	-- Right Beneath Their Eyes [A]
+				["sourceQuests"] = { 56344 },	-- To Darkmaul Citadel [A]
+				["provider"] = { "n", 156941 },	-- Captain Garrick
+				["coord"] = { 48.9, 49.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59978, {	-- Right Beneath Their Eyes [H]
+				["sourceQuests"] = { 59975 },	-- To Darkmaul Citadel [H]
+				["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
+				["coord"] = { 48.9, 49.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55989, {	-- Catapult Destruction [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156960 },	-- Meredy Huntswell
+				["coord"] = { 40.2, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59980, {	-- Catapult Destruction [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167631 },	-- Herbert Gloomburst
+				["coord"] = { 40.3, 32.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55990, {	-- Controlling their Stones [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["coord"] = { 40.1, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168599),	-- Ward Stone (QI!)
+					i(168600),	-- Ward Stone (QI!)
+					i(168601),	-- Ward Stone (QI!)
+				},
+			}),
+			q(59981, {	-- Controlling Their Stones [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
+				["coord"] = { 40.2, 32.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168599),	-- Ward Stone (QI!)
+					i(168600),	-- Ward Stone (QI!)
+					i(168601),	-- Ward Stone (QI!)
+				},
+			}),
+			q(55988, {	-- Like Ogres to the Slaughter [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156942 },	-- Henry Garrick
+				["coord"] = { 40.2, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175186),	-- Expeditionary Cloth Gloves
+					i(175184),	-- Expeditionary Leather Gloves
+					i(175187),	-- Expeditionary Mail Gauntlets
+					i(175185),	-- Expeditionary Plate Gauntlets
+				},
+			}),
+			q(59979, {	-- Like Ogres to the Slaughter [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167632 },	-- Shuja Grimaxe
+				["coord"] = { 40.2, 32.5, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175218),	-- Expeditionary Cloth Gloves
+					i(175216),	-- Expeditionary Leather Gloves
+					i(175219),	-- Expeditionary Mail Gauntlets
+					i(175217),	-- Expeditionary Plate Gauntlets
+				},
+			}),
+			q(55992, {	-- Dungeon: Darkmaul Citadel [A]
+				["sourceQuests"] = {
+					55989,	-- Catapult Destruction [A]
+					55990,	-- Controlling their Stones [A]
+					55988,	-- Like Ogres to the Slaughter [A]
+				},
+				["provider"] = { "n", 156965 },	-- Captain Kelra
+				["coord"] = { 39.9, 32.1, EXILES_REACH },
+				["maps"] = { DARKMAUL_CITADEL },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175188),	-- Expeditionary Cloth Hood
+					i(175190),	-- Expeditionary Leather Helm
+					i(175189),	-- Expeditionary Mail Helm
+					i(175175),	-- Expeditionary Plate Helm
+				},
+			}),
+			q(59984, {	-- Dungeon: Darkmaul Citadel [H]
+				["sourceQuests"] = {
+					59980,	-- Catapult Destruction [H]
+					59981,	-- Controlling their Stones [H]
+					59979,	-- Like Ogres to the Slaughter [H]
+				},
+				["provider"] = { "n", 167183 },	-- Warlord Mulgrin Thunderwalker
+				["coord"] = { 39.9, 32.1, EXILES_REACH },
+				["maps"] = { DARKMAUL_CITADEL },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175220),	-- Expeditionary Cloth Hood
+					i(175222),	-- Expeditionary Leather Helm
+					i(175221),	-- Expeditionary Mail Helm
+					i(175207),	-- Expeditionary Plate Helm
+				},
+			}),
+			q(55991, {	-- An End to Beginnings [A]
+				["sourceQuests"] = { 55992 },	-- Dungeon: Darkmaul Citadel [A]
+				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["coord"] = { 39.6, 31.9, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["_drop"] = { "g" },
+				["groups"] = {
+					i(175176),	-- Expeditionary Cloth Robe
+					i(175179),	-- Expeditionary Leather Tunic
+					i(175178),	-- Expeditionary Mail Armor
+					i(175177),	-- Expeditionary Plate Chestpiece
+				},
+			}),
+			q(59985, {	-- An End to Beginnings [H]
+				["sourceQuests"] = { 59984 },	-- Dungeon: Darkmaul Citadel [H]
+				["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
+				["coord"] = { 39.6, 31.9, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["_drop"] = { "g" },
+				["groups"] = {
+					i(175208),	-- Expeditionary Cloth Robe
+					i(175211),	-- Expeditionary Leather Tunic
+					i(175210),	-- Expeditionary Mail Armor
+					i(175209),	-- Expeditionary Plate Chestpiece
+				},
+			}),
+
+				-- Stormwind --
+			q(59583, {	-- Welcome to Stormwind
+				["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
+				["provider"] = { "n", 154169 },	-- Captain Garrick
+				["coord"] = { 73.6, 91.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58908, {	-- Finding Your Way
+				["sourceQuests"] = { 59583 },	-- Welcome to Stormwind
+				["provider"] = { "n", 163095 },	-- Lindie Springstock
+				["coord"] = { 70.1, 85.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58909, {	-- License to Ride [A]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163007 },	-- Curly
+				["coord"] = { 77.3, 67.0, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58910, {	-- What's Your Specialty? [A] [Druid]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { DRUID },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59586, {	-- What's Your Specialty? [A] [Hunter]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { HUNTER },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59587, {	-- What's Your Specialty? [A] [Mage]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { MAGE },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59588, {	-- What's Your Specialty? [A] [Monk]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { MONK },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59589, {	-- What's Your Specialty? [A] [Paladin]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { PALADIN },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59590, {	-- What's Your Specialty? [A] [Priest]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { PRIEST },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59591, {	-- What's Your Specialty? [A] [Rogue]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { ROGUE },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59592, {	-- What's Your Specialty? [A] [Shaman]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { SHAMAN },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59593, {	-- What's Your Specialty? [A] [Warlock]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { WARLOCK },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59594, {	-- What's Your Specialty? [A] [Warrior]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { WARRIOR },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58911, {	-- Home Is Where the Hearth Is [A]
+				["sourceQuests"] = {
+					58910,	-- What's Your Specialty? [A] [Druid]
+					59586,	-- What's Your Specialty? [A] [Hunter]
+					59587,	-- What's Your Specialty? [A] [Mage]
+					59588,	-- What's Your Specialty? [A] [Monk]
+					59589,	-- What's Your Specialty? [A] [Paladin]
+					59590,	-- What's Your Specialty? [A] [Priest]
+					59591,	-- What's Your Specialty? [A] [Rogue]
+					59592,	-- What's Your Specialty? [A] [Shaman]
+					59593,	-- What's Your Specialty? [A] [Warlock]
+					59594,	-- What's Your Specialty? [A] [Warrior]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 79.0, 69.8, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58912, {	-- An Urgent Meeting [A]
+				["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
+				["provider"] = { "n", 163211 },	-- Henry Garrick
+				["coord"] = { 75.3, 54.3, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
+			}),
+			q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
+				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
+				["qg"] = 163219,	-- Captain Garrick
+				["coord"] = { 85.2, 32.1, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(178941),	-- Alliance Dog Tags,
+				}
+			}),
+			q(59641, {	-- The Nation of Kul Tiras
+				["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
+				["qg"] = 165395,	-- Anduin Wrynn
+				["coord"] = { 85.8, 31.6, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+
+				-- Orgrimmar --
+			q(60343, {	-- Welcome to Orgrimmar
+				["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
+				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.5, 88.0, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60344, {	-- Finding Your Way [H]
+				["sourceQuests"] = { 60343 },	-- Welcome to Orgrimmar
+				["provider"] = { "n", 168441 },	-- Cork Fizzlepop
+				["coord"] = { 51.9, 85.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60345, {	-- License to Ride
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
+				["coord"] = { 61.5, 32.9, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60346, {	-- What's Your Specialty? [H] [Druid]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { DRUID },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60347, {	-- What's Your Specialty? [H] [Hunter]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { HUNTER },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60348, {	-- What's Your Specialty? [H] [Mage]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { MAGE },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60349, {	-- What's Your Specialty? [H] [Monk]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { MONK },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60350, {	-- What's Your Specialty? [H] [Paladin]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { PALADIN },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60351, {	-- What's Your Specialty? [H] [Priest]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { PRIEST },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60352, {	-- What's Your Specialty? [H] [Rogue]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { ROGUE },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60353, {	-- What's Your Specialty? [H] [Shaman]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { SHAMAN },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60355, {	-- What's Your Specialty? [H] [Warlock]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { WARLOCK },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60357, {	-- What's Your Specialty? [H] [Warrior]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { WARRIOR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60359, {	-- Home Is Where the Hearth Is [H]
+				["sourceQuests"] = {
+					60346,	-- What's Your Specialty? [H] [Druid]
+					60347,	-- What's Your Specialty? [H] [Hunter]
+					60348,	-- What's Your Specialty? [H] [Mage]
+					60349,	-- What's Your Specialty? [H] [Monk]
+					60350,	-- What's Your Specialty? [H] [Paladin]
+					60351,	-- What's Your Specialty? [H] [Priest]
+					60352,	-- What's Your Specialty? [H] [Rogue]
+					60353,	-- What's Your Specialty? [H] [Shaman]
+					60355,	-- What's Your Specialty? [H] [Warlock]
+					60357,	-- What's Your Specialty? [H] [Warrior]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 73.6, 43.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+			----- The original ending of the questline where new players got funneled into BfA -----
+			-- After 11.0.2 players receive Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
+			q(60360, {	-- An Urgent Meeting [H]
+				["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
+				["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+				["coord"] = { 70.9, 49.6, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = HORDE_ONLY,
+				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
+			}),
+			q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
+				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["sourceQuest"] = 60360,	-- An Urgent Meeting
+				["qg"] = 168431,	-- Warlord Breka Grimaxe
+				["coord"] = { 48.3, 71.4, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(178942),	-- War-Chain of the Horde
+				},
+			}),
+
+			q(59926, {	-- Warming Up [H]
+				["provider"] = { "n", 166573 },	-- Warlord Breka Grimaxe
+				["races"] = HORDE_ONLY,
+			}),
+			q(58209, {	-- Stand Your Ground [A]
+				["sourceQuests"] = { 56775 },	-- Warming Up [A]
+				["provider"] = { "n", 160664 },	-- Private Cole
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59927, {	-- Stand Your Ground [H]
+				["sourceQuests"] = { 59926 },	-- Warming Up [H]
+				["provider"] = { "n", 166583 },	-- Grunt Throg
+				["races"] = HORDE_ONLY,
+			}),
+			q(58208, {	-- Brace for Impact [A]
+				["sourceQuests"] = { 58209 },	-- Stand Your Ground [A]
+				["provider"] = { "n", 160664 },	-- Private Cole
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59928, {	-- Brace for Impact [H]
+				["sourceQuests"] = { 59927 },	-- Stand Your Ground [H]
+				["provider"] = { "n", 166583 },	-- Grunt Throg
+				["races"] = HORDE_ONLY,
+			}),
+			q(55122, {	-- Murloc Mania [A]
+				["sourceQuests"] = { 58208 },	-- Brace for Impact [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(170549),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(59929, {	-- Murloc Mania [H]
+				["sourceQuests"] = { 59928 },	-- Brace for Impact [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(170549),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(54951, {	-- Emergency First Aid [A]
+				["sourceQuests"] = { 55122 },	-- Murloc Mania [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(174780),	-- Emptied First Aid Kit
+				},
+			}),
+			q(59930, {	-- Emergency First Aid [H]
+				["sourceQuests"] = { 59929 },	-- Murloc Mania [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(174780),	-- Emptied First Aid Kit
+				},
+			}),
+			q(54952, {	-- Finding the Lost Expedition [A]
+				["sourceQuests"] = { 54951 },	-- Emergency First Aid [A]
+				["provider"] = { "n", 156626 },	-- Captain Garrick
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59931, {	-- Finding the Lost Expedition [H]
+				["sourceQuests"] = { 59930 },	-- Emergency First Aid [H]
+				["provider"] = { "n", 166782 },	-- Warlord Breka Grimaxe
+				["coord"] = { 61.8, 82.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55174, {	-- Cooking Meat [A]
+				["sourceQuests"] = { 54952 },	-- Finding the Lost Expedition [A]
+				["provider"] = { "n", 156651 },	-- Captain Garrick
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(174074),	-- Cooked Meat (QI!)
+					i(174072),	-- Raw Meat (QI!)
+				},
+			}),
+			q(59932, {	-- Cooking Meat [H]
+				["sourceQuests"] = { 59931 },	-- Finding the Lost Expedition [H]
+				["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(174074),	-- Cooked Meat (QI!)
+					i(174072),	-- Raw Meat (QI!)
+				},
+			}),
+			q(59254, {	-- Enhanced Combat Tactics [A]
+				["sourceQuests"] = { 55174 },	-- Cooking Meat [A]
+				["provider"] = { "n", 156651 },	-- Captain Garrick
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+			}),
+			q(59933, {	-- Enhanced Combat Tactics [H]
+				["sourceQuests"] = { 59932 },	-- Cooking Meat [H]
+				["provider"] = { "n", 166906 },	-- Warlord Breka Grimaxe
+				["coord"] = { 58.3, 74.6, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["classes"] = exclude({ HUNTER, MONK }, ALL_CLASSES),
+			}),
+			q(55173, {	-- Northbound [A]
+				["sourceQuests"] = {
+					59254,	-- Enhanced Combat Tactics [A]
+					55174,	-- Cooking Meat [A] [Hunter]
+					59339,	-- Enhanced Combat Tactics [A] [Monk]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 175031 },	-- Alaria
+				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(167206),	-- Fire Essence (QI!)
+				},
+			}),
+			q(59935, {	-- Northbound [H]
+				["sourceQuests"] = {
+					59933,	-- Enhanced Combat Tactics [H]
+					59932,	-- Cooking Meat [H] [Hunter]
+					59934,	-- Enhanced Combat Tactics [H] [Monk]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["qgs"] = {
+					166854,	-- Won'sa
+					175030,	-- Won'sa (Note: this creatureID here at least from 11.0.5)
+				},
+				["coord"] = { 58.3, 74.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(167206),	-- Fire Essence (QI!)
+				},
+			}),
+			q(55186, {	-- Down with the Quilboar [A]
+				["sourceQuests"] = {
+					55173,	-- Northbound [A]
+					59342,	-- Taming the Wilds [A] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 154327 },	-- Austin Huxworth
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59938, {	-- Down with the Quilboar [H]
+				["sourceQuests"] = {
+					59935,	-- Northbound [H]
+					59937,	-- Taming the Wilds [H] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55184, {	-- Forbidden Quilboar Necromancy [A]
+				["sourceQuests"] = {
+					55173,	-- Northbound [A]
+					59342,	-- Taming the Wilds [A] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 154327 },	-- Austin Huxworth
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+					i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+					i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+					i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+					i(175181, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
+					i(175183, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
+					i(175182, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
+					i(175180, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
+				},
+			}),
+			q(59939, {	-- Forbidden Quilboar Necromancy [H]
+				["sourceQuests"] = {
+					59935,	-- Northbound [H]
+					59937,	-- Taming the Wilds [H] [Hunter]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+				["coord"] = { 62.7, 69.8, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+					i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+					i(174786, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+					i(174787, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+					i(175213, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Cloth Boots
+					i(175215, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Leather Boots
+					i(175214, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Mail Sabatons
+					i(175212, { ["timeline"] = { ADDED_11_0_0 } }),	-- Expeditionary Plate Warboots
+				},
+			}),
+			q(55193, {	-- The Scout-o-Matic 5000
+				["sourceQuests"] = {
+					55186,	-- Down with the Quilboar [A]
+					55184,	-- Forbidden Quilboar Necromancy [A]
+				},
+				["provider"] = { "n", 149899 },	-- Lindie Springstock
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59940, {	-- The Choppy Booster Mk 5
+				["sourceQuests"] = {
+					59938,	-- Down with the Quilboar [H]
+					59939,	-- Forbidden Quilboar Necromancy [H]
+				},
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56034, {	-- Re-sizing the Situation [A]
+				["sourceQuests"] = { 55193 },	-- The Scout-o-Matic 5000
+				["provider"] = { "n", 149899 },	-- Lindie Springstock
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(170557),	-- Re-Sizer v9.0.1 (QI!)
+				},
+			}),
+			q(59941, {	-- Re-sizing the Situation [H]
+				["sourceQuests"] = { 59940 },	-- The Choppy Booster Mk 5
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(178051),	-- Re-Sizer v9.0.1 (QI!)
+				},
+			}),
+			q(55879, {	-- Ride of the Scientifically Enhanced Boar
+				["sourceQuests"] = { 56034 },	-- Re-sizing the Situation [A]
+				["provider"] = { "n", 156280 },	-- Captain Garrick
+				["coord"] = { 56.2, 59.0, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175167),	-- Expeditionary Staff
+					i(175172),	-- Expeditionary Dagger
+					i(175166),	-- Expeditionary Greatsword
+					i(175162),	-- Expeditionary Longbow
+					i(175168),	-- Expeditionary Quarterstaff
+					i(175170),	-- Expeditionary Short Sword
+					i(175173),	-- Expeditionary Cudgel
+				},
+			}),
+			q(59942, {	-- The Re-Deather
+				["sourceQuests"] = { 59941 },	-- Re-sizing the Situation [H]
+				["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+				["coord"] = { 56.1, 59.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175161),	-- Expeditionary Axe
+					i(175163),	-- Expeditionary Quarterstaff
+					i(175165),	-- Expeditionary Greataxe
+					i(175174),	-- Expeditionary Cudgel
+					i(175169),	-- Expeditionary Longbow
+					i(175164),	-- Expeditionary Staff
+					i(175171),	-- Expeditionary Dagger
+				},
+			}),
+			q(55194, {	-- Stocking Up on Supplies [A]
+				["sourceQuests"] = { 55879 },	-- Ride of the Scientifically Enhanced Boar
+				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["coord"] = { 52.3, 55.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175239),	-- Standard Issue Knapsack
+				},
+			}),
+			q(59950, {	-- Stocking Up on Supplies [H]
+				["sourceQuests"] = { 59942 },	-- The Re-Deather
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175239),	-- Standard Issue Knapsack
+				},
+			}),
+			q(55196, {	-- The Harpy Problem [A]
+				["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
+				["provider"] = { "n", 156833 },	-- Henry Garrick
+				["coord"] = { 53.5, 52.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59943, {	-- The Harpy Problem [H]
+				["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
+				["provider"] = { "n", 167219 },	-- Shuja Grimaxe
+				["coord"] = { 53.7, 52.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55764, {	-- Harpy Culling [A]
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156860 },	-- Kee-La
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59945, {	-- Harpy Culling [H]
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167291 },	-- Bo
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55881, {	-- Purge the Totems [A]
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168445),	-- Wand of Delugion (QI!)
+					i(175200),	-- Expeditionary Cloth Cord
+					i(175202),	-- Expeditionary Leather Belt
+					i(175201),	-- Expeditionary Mail Waistguard
+					i(175199),	-- Expeditionary Plate Girdle
+				},
+			}),
+			q(59946, {	-- Purge the Totems [H]
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167291 },	-- Bo
+				["coord"] = { 56.9, 46.2, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168445),	-- Wand of Delugion (QI!)
+					i(175238),	-- Expeditionary Cloth Cord
+					i(175233),	-- Expeditionary Leather Belt
+					i(175232),	-- Expeditionary Mail Waistguard
+					i(175231),	-- Expeditionary Plate Girdle
+				},
+			}),
+			q(55763, {	-- The Rescue of Meredy Huntswell
+				["sourceQuests"] = { 55196 },	-- The Harpy Problem [A]
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168410),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(59944, {	-- The Rescue of Herbert Gloomburst
+				["sourceQuests"] = { 59943 },	-- The Harpy Problem [H]
+				["provider"] = { "n", 167290 },	-- Shuja Grimaxe
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168410),	-- First Aid Kit (QI!)
+				},
+			}),
+			q(55882, {	-- Message to Base [A]
+				["sourceQuests"] = {
+					55764,	-- Harpy Culling [A]
+					55881,	-- Purge the Totems [A]
+					55763,	-- The Rescue of Meredy Huntswell
+				},
+				["provider"] = { "n", 156859 },	-- Henry Garrick
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175192),	-- Expeditionary Cloth Leggings
+					i(175194),	-- Expeditionary Leather Legguards
+					i(175193),	-- Expeditionary Mail Leggings
+					i(175191),	-- Expeditionary Plate Legguards
+				},
+			}),
+			q(59947, {	-- Message to Base [H]
+				["sourceQuests"] = {
+					59945,	-- Harpy Culling [H]
+					59946,	-- Purge the Totems [H]
+					59944,	-- The Rescue of Herbert Gloomburst
+				},
+				["provider"] = { "n", 167290 },	-- Shuja Grimaxe
+				["coord"] = { 56.8, 46.1, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175224),	-- Expeditionary Cloth Leggings
+					i(175226),	-- Expeditionary Leather Legguards
+					i(175225),	-- Expeditionary Mail Leggings
+					i(175223),	-- Expeditionary Plate Legguards
+				},
+			}),
+			q(55965, {	-- Westward Bound [A]
+				["sourceQuests"] = { 55194 },	-- Stocking Up on Supplies [A]
+				["provider"] = { "n", 154300 },	-- Bjorn Stouthands
+				["coord"] = { 53.0, 55.0, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59948, {	-- Westward Bound [H]
+				["sourceQuests"] = { 59950 },	-- Stocking Up on Supplies [H]
+				["provider"] = { "n", 167221 },	-- Lana Jordan
+				["coord"] = { 52.9, 56.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55639, {	-- Who Lurks in the Pit [A]
+				["sourceQuests"] = { 55965 },	-- Westward Bound [A]
+				["provider"] = { "n", 156803 },	-- Alaria
+				["coord"] = { 51.1, 59.5, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175203),	-- Expeditionary Cloth Cuffs
+					i(175206),	-- Expeditionary Leather Bracers
+					i(175205),	-- Expeditionary Mail Armbands
+					i(175204),	-- Expeditionary Plate Armguards
+				},
+			}),
+			q(59949, {	-- Who Lurks in the Pit [H]
+				["sourceQuests"] = { 59948 },	-- Westward Bound [H]
+				["provider"] = { "n", 167225 },	-- Lana Jordan
+				["coord"] = { 51.1, 59.5, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175234),	-- Expeditionary Cloth Cuffs
+					i(175237),	-- Expeditionary Leather Bracers
+					i(175236),	-- Expeditionary Mail Armbands
+					i(175235),	-- Expeditionary Plate Armguards
+				},
+			}),
+			q(85678, {	-- Repair Yourself [A]
+				["coord"] = { 52.2, 55.2, EXILES_REACH },
+				["timeline"] = { ADDED_11_1_7 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(85679, {	-- Repair Yourself [H]
+				["coord"] = { 52.4, 55.6, EXILES_REACH },
+				["timeline"] = { ADDED_11_1_7 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(56344, {	-- To Darkmaul Citadel [A]
+				["sourceQuests"] = {
+					55882,	-- Message to Base [A]
+					55639,	-- Who Lurks in the Pit [A]
+					59350,	-- A Druid's Form [A] [Druid]
+					60168,	-- The Art of Taming [A] [Hunter]
+					59354,	-- The Best Way to Use Sheep [A] [Mage]
+					59349,	-- One Last Spar [A] [Monk]
+					-- #if AFTER 11.1.7
+					85678,	-- Repair Yourself
+					-- #endif
+				},
+				["provider"] = { "n", 156807 },	-- Captain Garrick
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59975, {	-- To Darkmaul Citadel [H]
+				["sourceQuests"] = {
+					59947,	-- Message to Base [H]
+					59949,	-- Who Lurks in the Pit [H]
+					59951,	-- A Druid's Form [H] [Druid]
+					60162,	-- The Art of Taming [H] [Hunter]
+					59955,	-- The Best Way to Use Sheep [H] [Mage]
+					59957,	-- One Last Spar [H] [Monk]
+					-- #if AFTER 11.1.7
+					85679,	-- Repair Yourself
+					-- #endif
+				},
+				["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.1, 55.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55981, {	-- Right Beneath Their Eyes [A]
+				["sourceQuests"] = { 56344 },	-- To Darkmaul Citadel [A]
+				["provider"] = { "n", 156941 },	-- Captain Garrick
+				["coord"] = { 48.9, 49.2, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59978, {	-- Right Beneath Their Eyes [H]
+				["sourceQuests"] = { 59975 },	-- To Darkmaul Citadel [H]
+				["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
+				["coord"] = { 48.9, 49.3, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55989, {	-- Catapult Destruction [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156960 },	-- Meredy Huntswell
+				["coord"] = { 40.2, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59980, {	-- Catapult Destruction [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167631 },	-- Herbert Gloomburst
+				["coord"] = { 40.3, 32.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+			}),
+			q(55990, {	-- Controlling their Stones [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["coord"] = { 40.1, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(168599),	-- Ward Stone (QI!)
+					i(168600),	-- Ward Stone (QI!)
+					i(168601),	-- Ward Stone (QI!)
+				},
+			}),
+			q(59981, {	-- Controlling Their Stones [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167633 },	-- Warlord Breka Grimaxe
+				["coord"] = { 40.2, 32.4, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(168599),	-- Ward Stone (QI!)
+					i(168600),	-- Ward Stone (QI!)
+					i(168601),	-- Ward Stone (QI!)
+				},
+			}),
+			q(55988, {	-- Like Ogres to the Slaughter [A]
+				["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
+				["provider"] = { "n", 156942 },	-- Henry Garrick
+				["coord"] = { 40.2, 32.3, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175186),	-- Expeditionary Cloth Gloves
+					i(175184),	-- Expeditionary Leather Gloves
+					i(175187),	-- Expeditionary Mail Gauntlets
+					i(175185),	-- Expeditionary Plate Gauntlets
+				},
+			}),
+			q(59979, {	-- Like Ogres to the Slaughter [H]
+				["sourceQuests"] = { 59978 },	-- Right Beneath Their Eyes [H]
+				["provider"] = { "n", 167632 },	-- Shuja Grimaxe
+				["coord"] = { 40.2, 32.5, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175218),	-- Expeditionary Cloth Gloves
+					i(175216),	-- Expeditionary Leather Gloves
+					i(175219),	-- Expeditionary Mail Gauntlets
+					i(175217),	-- Expeditionary Plate Gauntlets
+				},
+			}),
+			q(55992, {	-- Dungeon: Darkmaul Citadel [A]
+				["sourceQuests"] = {
+					55989,	-- Catapult Destruction [A]
+					55990,	-- Controlling their Stones [A]
+					55988,	-- Like Ogres to the Slaughter [A]
+				},
+				["provider"] = { "n", 156965 },	-- Captain Kelra
+				["coord"] = { 39.9, 32.1, EXILES_REACH },
+				["maps"] = { DARKMAUL_CITADEL },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(175188),	-- Expeditionary Cloth Hood
+					i(175190),	-- Expeditionary Leather Helm
+					i(175189),	-- Expeditionary Mail Helm
+					i(175175),	-- Expeditionary Plate Helm
+				},
+			}),
+			q(59984, {	-- Dungeon: Darkmaul Citadel [H]
+				["sourceQuests"] = {
+					59980,	-- Catapult Destruction [H]
+					59981,	-- Controlling their Stones [H]
+					59979,	-- Like Ogres to the Slaughter [H]
+				},
+				["provider"] = { "n", 167183 },	-- Warlord Mulgrin Thunderwalker
+				["coord"] = { 39.9, 32.1, EXILES_REACH },
+				["maps"] = { DARKMAUL_CITADEL },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(175220),	-- Expeditionary Cloth Hood
+					i(175222),	-- Expeditionary Leather Helm
+					i(175221),	-- Expeditionary Mail Helm
+					i(175207),	-- Expeditionary Plate Helm
+				},
+			}),
+			q(55991, {	-- An End to Beginnings [A]
+				["sourceQuests"] = { 55992 },	-- Dungeon: Darkmaul Citadel [A]
+				["provider"] = { "n", 156961 },	-- Captain Garrick
+				["coord"] = { 39.6, 31.9, EXILES_REACH },
+				["races"] = ALLIANCE_ONLY,
+				["_drop"] = { "g" },
+				["groups"] = {
+					i(175176),	-- Expeditionary Cloth Robe
+					i(175179),	-- Expeditionary Leather Tunic
+					i(175178),	-- Expeditionary Mail Armor
+					i(175177),	-- Expeditionary Plate Chestpiece
+				},
+			}),
+			q(59985, {	-- An End to Beginnings [H]
+				["sourceQuests"] = { 59984 },	-- Dungeon: Darkmaul Citadel [H]
+				["provider"] = { "n", 167675 },	-- Warlord Breka Grimaxe
+				["coord"] = { 39.6, 31.9, EXILES_REACH },
+				["races"] = HORDE_ONLY,
+				["_drop"] = { "g" },
+				["groups"] = {
+					i(175208),	-- Expeditionary Cloth Robe
+					i(175211),	-- Expeditionary Leather Tunic
+					i(175210),	-- Expeditionary Mail Armor
+					i(175209),	-- Expeditionary Plate Chestpiece
+				},
+			}),
+
+				-- Stormwind --
+			q(59583, {	-- Welcome to Stormwind
+				["sourceQuests"] = { 55991 },	-- An End to Beginnings [A]
+				["provider"] = { "n", 154169 },	-- Captain Garrick
+				["coord"] = { 73.6, 91.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58908, {	-- Finding Your Way
+				["sourceQuests"] = { 59583 },	-- Welcome to Stormwind
+				["provider"] = { "n", 163095 },	-- Lindie Springstock
+				["coord"] = { 70.1, 85.3, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58909, {	-- License to Ride [A]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163007 },	-- Curly
+				["coord"] = { 77.3, 67.0, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58910, {	-- What's Your Specialty? [A] [Druid]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { DRUID },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59586, {	-- What's Your Specialty? [A] [Hunter]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { HUNTER },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59587, {	-- What's Your Specialty? [A] [Mage]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { MAGE },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59588, {	-- What's Your Specialty? [A] [Monk]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { MONK },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59589, {	-- What's Your Specialty? [A] [Paladin]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { PALADIN },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59590, {	-- What's Your Specialty? [A] [Priest]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { PRIEST },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59591, {	-- What's Your Specialty? [A] [Rogue]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { ROGUE },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59592, {	-- What's Your Specialty? [A] [Shaman]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { SHAMAN },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59593, {	-- What's Your Specialty? [A] [Warlock]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { WARLOCK },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(59594, {	-- What's Your Specialty? [A] [Warrior]
+				["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 77.4, 67.2, STORMWIND_CITY },
+				["classes"] = { WARRIOR },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58911, {	-- Home Is Where the Hearth Is [A]
+				["sourceQuests"] = {
+					58910,	-- What's Your Specialty? [A] [Druid]
+					59586,	-- What's Your Specialty? [A] [Hunter]
+					59587,	-- What's Your Specialty? [A] [Mage]
+					59588,	-- What's Your Specialty? [A] [Monk]
+					59589,	-- What's Your Specialty? [A] [Paladin]
+					59590,	-- What's Your Specialty? [A] [Priest]
+					59591,	-- What's Your Specialty? [A] [Rogue]
+					59592,	-- What's Your Specialty? [A] [Shaman]
+					59593,	-- What's Your Specialty? [A] [Warlock]
+					59594,	-- What's Your Specialty? [A] [Warrior]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 163097 },	-- Lindle Springstock
+				["coord"] = { 79.0, 69.8, STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(58912, {	-- An Urgent Meeting [A]
+				["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
+				["provider"] = { "n", 163211 },	-- Henry Garrick
+				["coord"] = { 75.3, 54.3, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
+			}),
+			q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
+				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
+				["qg"] = 163219,	-- Captain Garrick
+				["coord"] = { 85.2, 32.1, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(178941),	-- Alliance Dog Tags,
+				}
+			}),
+			q(59641, {	-- The Nation of Kul Tiras
+				["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
+				["qg"] = 165395,	-- Anduin Wrynn
+				["coord"] = { 85.8, 31.6, STORMWIND_CITY },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = ALLIANCE_ONLY,
+			}),
+
+				-- Orgrimmar --
+			q(60343, {	-- Welcome to Orgrimmar
+				["sourceQuests"] = { 59985 },	-- An End to Beginnings [H]
+				["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
+				["coord"] = { 52.5, 88.0, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60344, {	-- Finding Your Way [H]
+				["sourceQuests"] = { 60343 },	-- Welcome to Orgrimmar
+				["provider"] = { "n", 168441 },	-- Cork Fizzlepop
+				["coord"] = { 51.9, 85.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60345, {	-- License to Ride
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
+				["coord"] = { 61.5, 32.9, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60346, {	-- What's Your Specialty? [H] [Druid]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { DRUID },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60347, {	-- What's Your Specialty? [H] [Hunter]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { HUNTER },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60348, {	-- What's Your Specialty? [H] [Mage]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { MAGE },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60349, {	-- What's Your Specialty? [H] [Monk]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { MONK },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60350, {	-- What's Your Specialty? [H] [Paladin]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { PALADIN },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60351, {	-- What's Your Specialty? [H] [Priest]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { PRIEST },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60352, {	-- What's Your Specialty? [H] [Rogue]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { ROGUE },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60353, {	-- What's Your Specialty? [H] [Shaman]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { SHAMAN },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60355, {	-- What's Your Specialty? [H] [Warlock]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { WARLOCK },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60357, {	-- What's Your Specialty? [H] [Warrior]
+				["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 61.5, 33.0, ORGRIMMAR },
+				["classes"] = { WARRIOR },
+				["races"] = HORDE_ONLY,
+			}),
+			q(60359, {	-- Home Is Where the Hearth Is [H]
+				["sourceQuests"] = {
+					60346,	-- What's Your Specialty? [H] [Druid]
+					60347,	-- What's Your Specialty? [H] [Hunter]
+					60348,	-- What's Your Specialty? [H] [Mage]
+					60349,	-- What's Your Specialty? [H] [Monk]
+					60350,	-- What's Your Specialty? [H] [Paladin]
+					60351,	-- What's Your Specialty? [H] [Priest]
+					60352,	-- What's Your Specialty? [H] [Rogue]
+					60353,	-- What's Your Specialty? [H] [Shaman]
+					60355,	-- What's Your Specialty? [H] [Warlock]
+					60357,	-- What's Your Specialty? [H] [Warrior]
+				},
+				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 168545 },	-- Cork Fizzlepop
+				["coord"] = { 73.6, 43.4, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+			}),
+
+			----- The original ending of the questline where new players got funneled into BfA -----
+			-- After 11.0.2 players receive Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
+			q(60360, {	-- An Urgent Meeting [H]
+				["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
+				["provider"] = { "n", 168771 },	-- Shuja Grimaxe
+				["coord"] = { 70.9, 49.6, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = HORDE_ONLY,
+				["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
+			}),
+			q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
+				["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+				["sourceQuest"] = 60360,	-- An Urgent Meeting
+				["qg"] = 168431,	-- Warlord Breka Grimaxe
+				["coord"] = { 48.3, 71.4, ORGRIMMAR },
+				["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(178942),	-- War-Chain of the Horde
+				},
+			}),
+
 			------ Miscellaneous ------
 			q(54933, {	-- Freeing the Light
 				["sourceQuests"] = {

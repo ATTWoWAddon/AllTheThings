@@ -605,6 +605,14 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 			}),
 			i(44924),	-- Sun-Lute of the Phoenix King
 		}),
+		applyclassicphase(MOP_PHASE_LANDFALL, i(93194, {	-- Blood-Soaked Invitation (A)
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+		})),
+		applyclassicphase(MOP_PHASE_LANDFALL, i(93227, {	-- Blood-Soaked Invitation (H)
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+		})),
 		i(169430, {	-- Unclaimed Black Market Container [8.2.5+]
 			["timeline"] = { ADDED_8_2_5 },
 			["skipFill"] = true,

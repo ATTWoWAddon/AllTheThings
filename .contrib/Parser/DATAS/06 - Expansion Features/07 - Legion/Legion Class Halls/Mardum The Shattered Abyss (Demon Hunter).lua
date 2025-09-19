@@ -57,7 +57,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(44379, {	-- In Pursuit of Power (Altruis)
 						["sourceQuests"] = { 40816 },	-- The Power to Survive (Altruis)
-						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["qgs"] = {
+							95237,	-- Altruis the Sufferer
+							108571,	-- Altruis the Sufferer
+						},
 						["coord"] = { 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
 					}),
 					q(44383, {	-- In Pursuit of Power (Kayn)
@@ -155,6 +158,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["qgs"] = {
 								99254,	-- Altruis the Sufferer
 								95237,	-- Altruis the Sufferer
+								108571,	-- Altruis the Sufferer
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
@@ -553,7 +557,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							107724,	-- Kayn Sunfury
 						},
 						["coord"] = { 57.7, 51.7, 721 },
-						["lvl"] = 103,
+						["lvl"] = 10,
+						["groups"] = {
+							i(137690),	-- Blood Offering (QI!)
+						},
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
@@ -623,6 +630,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
 						["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 						["coord"] = { 26.0, 52.0, LEGION_DALARAN },
+						["groups"] = {
+							o(250993, {	-- Grimoire of Arcane Ways
+								["coord"] = { 59.8, 49.2, LEGION_DALARAN },
+								["groups"] = {
+									i(138139),	-- Grimoire of Arcane Ways (QI!)
+								},
+							}),
+						},
 					}),
 					q(44694, {	-- One Battle at a Time
 						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
@@ -765,6 +780,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.3, 57.7, 720 },
 						["lvl"] = 103,
+						["groups"] = { i(137677) },	-- Fel Blood (QI!)
 					}),
 					q(42775, {	-- The Crux of the Plan
 						["sourceQuests"] = { 42752, 42753 },	-- Vault of the Wardens: Vault Break-In (2 different versions)

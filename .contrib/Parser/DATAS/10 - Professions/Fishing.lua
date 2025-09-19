@@ -227,12 +227,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		-- #endif
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
-		ach(6839),	-- Zen Master Fisherman
-		ach(7614, {	-- Locking Down the Docks
-			["sym"] = {{ "achievement_criteria" }},
+		n(ACHIEVEMENTS, {
+			ach(6839),	-- Zen Master Fisherman
+			ach(7611, {	-- Pandarian Angler
+				["sym"] = {{ "achievement_criteria" }},
+			}),
 		}),
-		ach(7611, {	-- Pandarian Angler
-			["sym"] = {{ "achievement_criteria" }},
+		n(QUESTS, {
+			applyclassicphase(MOP_PHASE_ESCALATION, i(97981, {	-- Impeccably Sharp Tooth (QI!)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+				["description"] = "Drops from fishing pools in Pandaria",
+			})),
 		}),
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {

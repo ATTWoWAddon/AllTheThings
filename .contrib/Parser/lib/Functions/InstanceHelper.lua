@@ -37,6 +37,19 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		if helper.Coords and not encounter.coord then
 			encounter.coord = helper.Coords[id]
 		end
+		if helper.BossObjects then
+			local bossObjects = helper.BossObjects[id]
+			if bossObjects then
+				local bossProviders = encounter.providers
+				if not bossProviders then
+					bossProviders = {}
+					encounter.providers = bossProviders
+				end
+				for i=1,#bossObjects do
+					bossProviders[#bossProviders + 1] = { "o", bossObjects[i] }
+				end
+			end
+		end
 		encounter.groups = appendAllGroups(encounter.groups, clone(loots[id]))
 		return encounter
 	end

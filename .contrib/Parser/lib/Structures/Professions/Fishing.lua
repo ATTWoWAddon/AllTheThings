@@ -41,21 +41,6 @@ CLASSIC_FISHING = {
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 };
-FISHING_SUPPLIES = sharedData({ ["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world." }, {
-	i(6533, {["isLimited"] = true, }),	-- Aquadynamic Fish Attractor
-	i(6532),	-- Bright Baubles
-	i(6256),	-- Fishing Pole
-	i(6530),	-- Nightcrawlers
-	-- #if AFTER LEGION
-	i(136377, {["timeline"] = { ADDED_7_0_3 }}),	-- Oversized Bobber
-	-- #endif
-	i(6365),	-- Strong Fishing Pole
-});
-SHINY_BAUBLE = {
-	i(6529, {	-- Shiny Bauble
-		["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world."
-	}),
-};
 TBC_FISHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(33095, {	-- Fishing (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

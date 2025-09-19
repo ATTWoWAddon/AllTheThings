@@ -17,7 +17,7 @@ local CREECH = {
 	["crs"] = { 237718 },
 	["coord"] = { 32.2, 82.2, UNDERMINE },
 };
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(ACHIEVEMENTS, {
 			ach(41216),	-- Adventurer of Undermine (automated)
@@ -264,4 +264,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));

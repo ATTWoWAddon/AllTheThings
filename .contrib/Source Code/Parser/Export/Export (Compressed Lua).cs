@@ -44,7 +44,7 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The undetermined object data.</param>
-        private static void ExportCompressedLua(StringBuilder builder, object data)
+        private static void ExportCompressedLua(Exporter builder, object data)
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) ExportBooleanValue(builder, b);
@@ -81,7 +81,7 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua<KEY, VALUE>(StringBuilder builder, IDictionary<KEY, VALUE> data)
+        private static void ExportCompressedLua<KEY, VALUE>(Exporter builder, IDictionary<KEY, VALUE> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Any())
@@ -125,7 +125,7 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IDictionary<string, VALUE> data)
+        private static void ExportCompressedLua<VALUE>(Exporter builder, IDictionary<string, VALUE> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Any())
@@ -167,7 +167,7 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
-        private static void ExportCompressedLua(StringBuilder builder, IDictionary<string, object> data)
+        private static void ExportCompressedLua(Exporter builder, IDictionary<string, object> data)
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (!data.Any())
@@ -301,7 +301,7 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
-        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IEnumerable<VALUE> list)
+        private static void ExportCompressedLua<VALUE>(Exporter builder, IEnumerable<VALUE> list)
         {
             // If the list doesn't have any content, then return immediately.
             if (!list.Any())
@@ -320,13 +320,13 @@ namespace ATT
             {
                 // These are simple types that can be compressed.
                 // Open Bracket for beginning of the List.
-                var subbuilder = new StringBuilder();
+                var subbuilder = new Exporter();
                 subbuilder.Append('{');
 
                 // Export Fields
                 //int maxValue = 0, value = 0;
                 bool first = true;
-                foreach(var obj in list)
+                foreach (var obj in list)
                 {
                     // If this is NOT the first field, append a comma.
                     if (!first) { subbuilder.Append(','); }
@@ -346,7 +346,7 @@ namespace ATT
                 // Cache the structure, mark it, then write it to the builder.
                 var structure = subbuilder.ToString();
                 /*if (maxValue < 40)*/
-                MarkStructure(structure);
+                builder.MarkStructure(structure);
                 builder.Append(structure);
             }
             else
@@ -378,12 +378,10 @@ namespace ATT
         /// </summary>
         /// <param name="data">The undetermined object data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportCompressedLua(object data)
+        public static Exporter ExportCompressedLua(object data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportCompressedLua(builder, data);
-            STRUCTURE_COUNTS.Clear();
-            FUNCTION_SHORTCUTS.Clear();
             AddTableNewLines = false;
             return builder;
         }
@@ -396,12 +394,10 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="data">The data dictionary.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportCompressedLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
+        public static Exporter ExportCompressedLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportCompressedLua(builder, data);
-            STRUCTURE_COUNTS.Clear();
-            FUNCTION_SHORTCUTS.Clear();
             AddTableNewLines = false;
             return builder;
         }
@@ -412,12 +408,36 @@ namespace ATT
         /// </summary>
         /// <param name="list">The list of data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportCompressedLua<T>(IList<T> list)
+        public static Exporter ExportCompressedLua<T>(IList<T> list)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportCompressedLua(builder, list);
-            STRUCTURE_COUNTS.Clear();
-            FUNCTION_SHORTCUTS.Clear();
+            AddTableNewLines = false;
+            return builder;
+        }
+
+        /// <summary>
+        /// Export the category to a new string builder instance.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        public static Exporter ExportCompressedLuaCategory(string name, List<object> category)
+        {
+            // Export the Category
+            var builder = new Exporter(name);
+            builder.Append("_.Categories.").Append(name).AppendLine("={");
+            foreach (var group in category)
+            {
+                ExportCompressedLua(builder, group);
+                builder.Append(",");
+            }
+            builder.Remove(builder.Length - 1, 1).AppendLine("};");
+            builder.Insert(0, "--STRUCTURE_REPLACEMENTS" + Environment.NewLine);
+            ExportLocalVariablesForLua(builder);
+            builder.Insert(0, new StringBuilder()
+                .AppendLine("---@diagnostic disable: deprecated")
+                .AppendLine("local appName, _ = ...;"));
             AddTableNewLines = false;
             return builder;
         }
@@ -427,10 +447,10 @@ namespace ATT
         /// </summary>
         /// <param name="categories"></param>
         /// <returns></returns>
-        public static StringBuilder ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
+        public static Exporter ExportCompressedLuaCategories(IDictionary<string, List<object>> categories)
         {
             // Export all of the Categories
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             builder.AppendLine("_.Categories={");
             foreach (var pair in categories)
             {
@@ -463,8 +483,6 @@ namespace ATT
             }
             ExportLocalVariablesForLua(builder);
             ExportCategoriesHeaderForLua(builder);
-            STRUCTURE_COUNTS.Clear();
-            FUNCTION_SHORTCUTS.Clear();
             AddTableNewLines = false;
             return builder;
         }
@@ -476,9 +494,9 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="value">The boolean value.</param>
         /// <returns>The builder.</returns>
-        public static StringBuilder ExportBooleanValue(StringBuilder builder, bool value)
+        public static void ExportBooleanValue(Exporter builder, bool value)
         {
-            return builder.Append(value ? "1" : "false");
+            builder.Append(value ? "1" : "false");
         }
 
         /// <summary>
@@ -488,19 +506,22 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="value">The string value.</param>
         /// <returns>The builder.</returns>
-        public static StringBuilder ExportStringValue(StringBuilder builder, string value)
+        public static void ExportStringValue(Exporter builder, string value)
         {
             value = value.Replace("\n", "\\n").Replace("\r", "\\r");
             if (value.StartsWith("~"))
             {
-                return builder.Append(value.Substring(1));
+                builder.Append(value.Substring(1));
             }
             else if (value.StartsWith("GetSpellInfo") || value.StartsWith("GetItem") || value.StartsWith("select(") || value.StartsWith("C_")
                 || value.StartsWith("_."))
             {
-                return builder.Append(value);
+                builder.Append(value);
             }
-            return builder.Append("\"").Append(value.Replace("\"", "\\\"").Replace("\\\\\"", "\\\"")).Append("\"");
+            else
+            {
+                builder.Append("\"").Append(value.Replace("\"", "\\\"").Replace("\\\\\"", "\\\"")).Append("\"");
+            }
         }
 
         /// <summary>
@@ -556,7 +577,7 @@ namespace ATT
             }
 
             // replace the extract verbatim strings
-            foreach(var verbatimSwap in verbatimStringReplacements)
+            foreach (var verbatimSwap in verbatimStringReplacements)
             {
                 functionBody = functionBody.Replace(verbatimSwap.Key, verbatimSwap.Value);
             }

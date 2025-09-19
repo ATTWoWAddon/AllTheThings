@@ -128,6 +128,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
+			n(137183, {	-- Honey-Coated Slitherer
+				["questID"] = 51321,
+				["coord"] = { 64.2, 19.2, TIRAGARDE_SOUND },
+				["crs"] = {
+					137181,	-- Mead-Craving Cranee
+					137182,	-- Honey-Crazed Gull
+					137176,	-- Walter Ferrell
+					137175,	-- Bradford Crusco
+					137180,	-- Merchant Attack Controller (vignette)
+				},
+				["groups"] = {
+					i(160472),	-- Honey-Glazed Gauntlets
+					crit(41823, {	-- Imperiled Merchants
+						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
+					}),
+				},
+			}),
 			n(131520, {	-- Kulett the Ornery
 				["questID"] = 49984,
 				["coord"] = { 48.2, 22.6, TIRAGARDE_SOUND },
@@ -264,6 +281,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(133356, {	-- Tempestria
 				["questID"] = 50301,
 				["coord"] = { 60.7, 17.4, TIRAGARDE_SOUND },
+				["providers"] = {
+					{ "o", 281172 },	-- Suspicious Pile of Meat
+					{ "n", 133353 },	-- Grimestone Trapper
+				},
 				["groups"] = {
 					i(160466),	-- Saurolisk Broodmother Boots
 					crit(41835, {	-- Tempestria
@@ -324,22 +345,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(132052, {	-- Vol'Jim
 				["description"] = "It looks like this NPC didn't make it to live from beta.",
 				["timeline"] = { CREATED_8_0_1 },
-			}),
-			n(137176, {	-- Walter Ferrell
-				["questID"] = 51321,
-				["coord"] = { 64.2, 19.2, TIRAGARDE_SOUND },
-				["crs"] = {
-					137181,	-- Mead-Craving Cranee
-					137182,	-- Honey-Crazed Gull
-					137183,	-- Honey-Coated Slitherer
-					137175,	-- Bradford Crusco
-				},
-				["groups"] = {
-					i(160472),	-- Honey-Glazed Gauntlets
-					crit(41823, {	-- Imperiled Merchants
-						["achievementID"] = 12939,	-- Adventurer of Tiragarde Sound
-					}),
-				},
 			}),
 		}),
 	}),

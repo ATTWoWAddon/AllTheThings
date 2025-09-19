@@ -2887,119 +2887,106 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					["description"] = "Howling Fjord does not have any vendors offering enchanting supplies, nor jewelcrafting supplies.",
-					["groups"] = {
-						n(24539, {	-- "Silvermoon" Harry
-							["coord"] = { 35.0, 80.8, HOWLING_FJORD },
-							["groups"] = {
-								i(20983),	-- Acolyte's Dagger
-								i(6097),	-- Acolyte's Shirt
-								i(20978),	-- Apprentice's Staff
-								i(20986),	-- Light Cloth Pants
-								i(20918),	-- Unadorned Chain Leggings
+					n(24539, {	-- "Silvermoon" Harry
+						["coord"] = { 35.0, 80.8, HOWLING_FJORD },
+						["groups"] = {
+							i(20983),	-- Acolyte's Dagger
+							i(6097),	-- Acolyte's Shirt
+							i(20978),	-- Apprentice's Staff
+							i(20986),	-- Light Cloth Pants
+							i(20918),	-- Unadorned Chain Leggings
+						},
+					}),
+					n(24347, {	-- Alexis Walker
+						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
+							-- These 6 items could be symlinked to 6 more vendors
+						},
+					}),
+					n(24341, {	-- Barnabas Frye <Trade Goods>
+						["coord"] = { 79.5, 30.47, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
 							},
-						}),
-						n(24347, {	-- Alexis Walker
-							["coord"] = { 79.2, 28.8, HOWLING_FJORD },
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(30777),	-- Aldor Heavy Belt
-								i(30771),	-- Heavy Draenic Bracers
-								i(30765),	-- Heavy Draenic Breastplate
-								i(30775),	-- Layered Bone Shield
-								i(30781),	-- Mag'hari Chain Vest
-								i(30784),	-- Worn Mag'hari Gauntlets
-								-- These 6 items could be symlinked to 6 more vendors
+						},
+					}),
+					n(23735, {	-- Bartleby Armorfist
+						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
+							-- These 6 items could be symlinked to 6 more vendors
+						},
+					}),
+					n(27151, {	-- Deniigi <Spearcrafter>
+						["coord"] = { 25.6, 57.6, HOWLING_FJORD },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
+					n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
+						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
+						["sym"] = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+					})),
+					n(24330, {	-- Orson Locke <Sharp Blades>
+						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(40005),	-- Forsaken Blade
+							i(40004),	-- Forsaken Greatsword
+							i(40006),	-- Forsaken Sword
+							i(40007, {	-- Forsaken Throwing Knife
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
+					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
+						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
+						["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
+					})),
+					n(24028, {	-- Talu Frosthoof <Bowyer>
+						["coord"] = { 48.2, 11.0, HOWLING_FJORD },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(11307, {	-- Massive Longbow
+								["isLimited"] = true,
+							}),
+							i(11308, {	-- Sylvan Shortbow
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
+						["coord"] = { 25.4, 58.6, HOWLING_FJORD },
+						["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
+					}),
+					n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+						["coord"] = { 58.4, 62.75, HOWLING_FJORD },
+						["description"] = "Walks in a circle inside Valgarde Inn.",
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {
+							{ "select","itemID",
+								38426,	-- Eternium Thread
 							},
-						}),
-						n(24341, {	-- Barnabas Frye <Trade Goods>
-							["coord"] = { 79.5, 30.47, HOWLING_FJORD },
-							["sym"] = {
-								{ "select","itemID",
-									38426,	-- Eternium Thread
-									-- #if AFTER CATA
-									3371,	-- Crystal Vial
-									-- #else
-									40411,	-- Enchanted Vial
-									18256,	-- Imbued Vial
-									-- #endif
-								},
-							},
-						}),
-						n(23735, {	-- Bartleby Armorfist
-							["coord"] = { 59.6, 63.6, HOWLING_FJORD },
-							["races"] = ALLIANCE_ONLY,
-							["groups"] = {
-								i(30777),	-- Aldor Heavy Belt
-								i(30771),	-- Heavy Draenic Bracers
-								i(30765),	-- Heavy Draenic Breastplate
-								i(30775),	-- Layered Bone Shield
-								i(30781),	-- Mag'hari Chain Vest
-								i(30784),	-- Worn Mag'hari Gauntlets
-								-- These 6 items could be symlinked to 6 more vendors
-							},
-						}),
-						n(27151, {	-- Deniigi <Spearcrafter>
-							["coord"] = { 25.6, 57.6, HOWLING_FJORD },
-							["groups"] = {
-								i(39987),	-- Tuskarr Fishing Spear
-								i(39995, {	-- Tuskarr Javelin
-									["timeline"] = { REMOVED_5_0_4 },
-								}),
-							},
-						}),
-						n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
-							["coord"] = { 59.6, 63.8, HOWLING_FJORD },
-							["sym"] = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-						})),
-						n(24330, {	-- Orson Locke <Sharp Blades>
-							["coord"] = { 53.8, 66.8, HOWLING_FJORD },
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(40005),	-- Forsaken Blade
-								i(40004),	-- Forsaken Greatsword
-								i(40006),	-- Forsaken Sword
-								i(40007, {	-- Forsaken Throwing Knife
-									["timeline"] = { REMOVED_5_0_4 },
-								}),
-							},
-						}),
-						n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
-							["coord"] = { 79.6, 30.6, HOWLING_FJORD },
-							["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
-						})),
-						n(24028, {	-- Talu Frosthoof <Bowyer>
-							["coord"] = { 48.2, 11.0, HOWLING_FJORD },
-							["races"] = HORDE_ONLY,
-							["groups"] = {
-								i(11307, {	-- Massive Longbow
-									["isLimited"] = true,
-								}),
-								i(11308, {	-- Sylvan Shortbow
-									["isLimited"] = true,
-								}),
-							},
-						}),
-						n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
-							["coord"] = { 25.4, 58.6, HOWLING_FJORD },
-							["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
-						}),
-						n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
-							["coord"] = { 58.4, 62.75, HOWLING_FJORD },
-							["description"] = "Walks in a circle inside Valgarde Inn.",
-							["sym"] = {
-								{ "select","itemID",
-									38426,	-- Eternium Thread
-									-- #if AFTER CATA
-									3371,	-- Crystal Vial
-									-- #else
-									40411,	-- Enchanted Vial
-									18256,	-- Imbued Vial
-									-- #endif
-								},
-							},
-						}),
-					},
+						},
+					}),
 				}),
 				n(ZONE_DROPS, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45003, {	-- Winter's Edge

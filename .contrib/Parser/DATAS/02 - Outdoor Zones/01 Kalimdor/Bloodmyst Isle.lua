@@ -136,11 +136,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9549, {	-- Artifacts of the Blacksilt
-					-- #if AFTER CATA
-					["sourceQuest"] = 10063,	-- Explorers' League, Is That Something for Gnomes?
-					-- #else
-					["sourceQuest"] = 9548,	-- Pilfered Equipment
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						10063,	-- Explorers' League, Is That Something for Gnomes?
+						-- #else
+						9548,	-- Pilfered Equipment
+						-- #endif
+					},
 					["qg"] = 17421,	-- Clopper Wizbang
 					["coord"] = { 42.1, 21.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
@@ -484,11 +486,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9623,	-- Coming of Age
 					-- #if AFTER CATA
 					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
-					["coord"] = { 81.5, 51.5, THE_EXODAR },
-					-- #else
-					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
 					-- #endif
 					["qg"] = 17584,	-- Torallius the Pack Handler
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 81.5, 51.5, THE_EXODAR },
+						-- #else
+						{ 35.3, 43.1, AZUREMYST_ISLE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -511,15 +517,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9759, {	-- Ending Their World
-					-- #if BEFORE CATA
-					["sourceQuest"] = 9761,	-- Clearing the Way
-					["races"] = { DRAENEI },
-					-- #else
-					["sourceQuest"] = 9760,	-- Vindicator's Rest
-					["races"] = ALLIANCE_ONLY,
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						9760,	-- Vindicator's Rest
+						-- #else
+						9761,	-- Clearing the Way
+						-- #endif
+					},
 					["qg"] = 17982,	-- Demolitionist Legoso
 					["coord"] = { 30.8, 46.6, BLOODMYST_ISLE },
+					-- #if BEFORE CATA
+					["races"] = { DRAENEI },
+					-- #else
+					["races"] = ALLIANCE_ONLY,
+					-- #endif
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- Vector Coil Destroyed and Sironas Slain
@@ -583,11 +594,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9706, {	-- Galaen's Journal - The Fate of Vindicator Saruan
-					-- #if BEFORE CATA
-					["sourceQuest"] = 9694,	-- Blood Watch
-					-- #else
-					["sourceQuest"] = 9779,	-- Intercepting the Message
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						9779,	-- Intercepting the Message
+						-- #else
+						9694,	-- Blood Watch
+						-- #endif
+					},
 					["providers"] = {
 						{ "o", 182032 },	-- Galaen's Journal
 						{ "i",  24237 },	-- Galaen's Journal
@@ -936,11 +949,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9667, {	-- Saving Princess Stillpine
-					-- #if AFTER CATA
-					["sourceQuest"] = 9559,	-- Stillpine Hold
-					-- #else
-					["sourceQuest"] = 9538,	-- Learning the Language
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						9559,	-- Stillpine Hold
+						-- #else
+						9538,	-- Learning the Language
+						-- #endif
+					},
 					["qg"] = 17682,	-- Princess Stillpine
 					["coord"] = { 68.2, 81.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,

@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(TBC_PHASE_TWO, i(35402)),	-- Crusader's Ornamented Chestplate
 							applyclassicphase(TBC_PHASE_TWO, i(35414)),	-- Crusader's Scaled Helm
 							i(25910),	-- Design: Enigmatic Skyfire Diamond (RECIPE!)
-							i(33160),	-- Design: Facet of Eternity (RECIPE!)
+							i(33160, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Facet of Eternity (RECIPE!)
 							applyclassicphase(TBC_PHASE_TWO, i(35356)),	-- Dragonhide Gloves
 							applyclassicphase(TBC_PHASE_TWO, i(35328)),	-- Dreadweave Gloves
 							applyclassicphase(TBC_PHASE_TWO, i(35346)),	-- Evoker's Silk Raiment
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(29185),	-- Continuum Blade
 							i(24181),	-- Design: Living Ruby Serpent (RECIPE!)
 							i(24174),	-- Design: Pendant of Frozen Flame (RECIPE!)
-							i(33158),	-- Design: Stone of Blades (RECIPE!)
+							i(33158, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Stone of Blades (RECIPE!)
 							i(29186, {	-- Glyph of the Defender
 								["timeline"] = { REMOVED_5_0_4 },
 							}),

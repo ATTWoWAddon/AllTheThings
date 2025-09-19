@@ -1616,3 +1616,6 @@ s(295724)/i(248947),	-- Shroud of Winter's Chill
 s(295725)/i(248948),	-- The Frost Lord's Battle Shroud
 s(295726)/i(248949),	-- The Frost Lord's War Cloak
 s(295727)/i(248950),	-- Icebound Cloak
+3.4.5.62916
+s(300719)/i(256035),	-- Direbrew's Bloody Shanker
+s(300812)/i(256396),	-- Tankard O' Terror

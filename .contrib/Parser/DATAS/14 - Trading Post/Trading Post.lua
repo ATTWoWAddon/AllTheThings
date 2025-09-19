@@ -1525,7 +1525,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(200, i(242354)),	-- Wailing Banshee's Warglaives
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61967", "removed 11.2.0.99999" } }, {	-- TODO: Timeline out correctly
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61967", "removed 11.2.0.62876" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(243572),	-- Grandmaster's Prophetic Board (MOUNT!)
 			}),
@@ -1568,6 +1568,45 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(50, i(233133)),	-- Short Snowy War Skirt and Leg Wraps
 				traderstender(50, i(235019)),	-- Vigilante's Midnight Mask
 				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
+			}),
+		})),
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.62876", "removed 11.2.0.99999" } }, {	-- TODO: Timeline out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(247792),	-- High Shaman's Aerie Gryphon (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				traderstender(650, i(247793)),	-- Cinder-Plumed Highland Gryphon (MOUNT!)
+				traderstender(600, i(226041)),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
+				traderstender(325, i(247795)),	-- Ornery Breezestrider (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(330, i(226104)),	-- Claudius (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(20, i(233183)),	-- Banded Aquatic War Slippers
+				traderstender(20, i(233166)),	-- Banded Aquatic War Wraps
+				traderstender(230, i(246781)),	-- Bronzebeard's Ancient Crusher
+				traderstender(210, i(245952)),	-- Bronzebeard's Ceremonial Gavel
+				traderstender(80, i(245956)),	-- Bronzebeard's Crystal Ward
+				traderstender(150, i(246798)),	-- Bronzebeard's Mighty Crossbow
+				traderstender(200, i(245948)),	-- Bronzebeard's Portable Forge
+				traderstender(100, iensemble(242485)),	-- Ensemble: Aquatic Sweatsuit\
+				traderstender(575, iensemble(248299)),	-- Ensemble: Bronzebeard's Ceremonial Collection
+				traderstender(750, iensemble(226017)),	-- Ensemble: Plunderlord's Radiant Finery
+				traderstender(100, iensemble(230181)),	-- Ensemble: Prowler's Aquatic Headgear
+				traderstender(375, iensemble(242346)),	-- Ensemble: Rainy Day Attire
+				traderstender(575, iensemble(248309)),	-- Ensemble: The Speaker's Ceremonial Collection
+				traderstender(300, i(209053)),	-- Green Brewfest Bulwark
+				traderstender(40, i(233110)),	-- Long Aquatic War Skirt
+				traderstender(50, i(233149)),	-- Long Aquatic War Skirt and Leg Wraps
+				traderstender(40, i(233093)),	-- Short Aquatic War Skirt
+				traderstender(50, i(233132)),	-- Short Aquatic War Skirt and Leg Wraps
+				traderstender(230, i(246782)),	-- The Speaker's Ancient Crusher
+				traderstender(210, i(245953)),	-- The Speaker's Ceremonial Mallet
+				traderstender(80, i(245957)),	-- The Speaker's Crystal Ward
+				traderstender(150, i(246799)),	-- The Speaker's Mighty Crossbow
+				traderstender(200, i(245949)),	-- The Speaker's Portable Forge
+				traderstender(200, i(211258)),	-- Wildhammer Scouts Headgear
 			}),
 		})),
 	}),
@@ -1616,17 +1655,6 @@ root(ROOTS.NeverImplemented, {
 					i(190913),	-- Vambraces of the Honored Valarjar
 					i(190912),	-- Warboots of the Honored Valarjar
 
-					------ Nightmare Forest Set ------
-					i(190229),	-- Nightmare Forest Bindings
-					i(190224),	-- Nightmare Forest Grips
-					i(190223),	-- Nightmare Forest Jerkin
-					i(190226),	-- Nightmare Forest Leggings
-					i(190228),	-- Nightmare Forest Mantle
-					i(190225),	-- Nightmare Forest Mask
-					i(190227),	-- Nightmare Forest Raiment
-					i(190222),	-- Nightmare Forest Sandals
-					i(190221),	-- Nightmare Forest Waistwrap
-
 					------ Slumbering Caldera Set ------
 					i(190781),	-- Slumbering Caldera Bracers
 					i(190780),	-- Slumbering Caldera Crown
@@ -1660,7 +1688,6 @@ root(ROOTS.NeverImplemented, {
 				n(SETS, {
 					i(190575),	-- Ensemble: Chains of the Honored Valarjar
 					i(190165),	-- Ensemble: Twisted Arcanum Regalia
-					i(190772),	-- Ensemble: Vestments of the Nightmare Forest
 
 					------ Highborne Scholar Set ------
 					i(190435),	-- Highborne Scholar's Belt
@@ -1860,6 +1887,15 @@ root(ROOTS.NeverImplemented, {
 		filter(MOUNTS, {
 			mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 			i(137615),	-- Molten Flarecore (MOUNT!)
+			i(247791),	-- Adorned Northeron Gryphon
+			i(246919),	-- Cinder-seared Elekk
+			i(247794),	-- Emberwing Sky Guide
+			i(246921),	-- Legion Forged Elekk
+			i(246917),	-- Thunder-ridged Elekk
+			i(247720),	-- The Headless Horseman's Chilling Charger
+			i(247721),	-- The Headless Horseman's Ghoulish Charger
+			i(247722),	-- The Headless Horseman's Burning Charger
+			i(247723),	-- The Headless Horseman's Ghostly Charger
 		}),
 	})),
 });

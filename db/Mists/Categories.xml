@@ -1,0 +1,21 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Script file="Categories/BlackMarket.lua"/>
+	<Script file="Categories/Character.lua"/>
+	<Script file="Categories/Craftables.lua"/>
+	<Script file="Categories/ExpansionFeatures.lua"/>
+	<Script file="Categories/GroupFinder.lua"/>
+	<Script file="Categories/HiddenAchievementTriggers.lua"/>
+	<Script file="Categories/HiddenQuestTriggers.lua"/>
+	<Script file="Categories/Holidays.lua"/>
+	<Script file="Categories/InGameShop.lua"/>
+	<Script file="Categories/Instances.lua"/>
+	<Script file="Categories/NeverImplemented.lua"/>
+	<Script file="Categories/PetBattles.lua"/>
+	<Script file="Categories/Professions.lua"/>
+	<Script file="Categories/Promotions.lua"/>
+	<Script file="Categories/PVP.lua"/>
+	<Script file="Categories/Unsorted.lua"/>
+	<Script file="Categories/WorldDrops.lua"/>
+	<Script file="Categories/WorldEvents.lua"/>
+	<Script file="Categories/Zones.lua"/>
+</Ui>

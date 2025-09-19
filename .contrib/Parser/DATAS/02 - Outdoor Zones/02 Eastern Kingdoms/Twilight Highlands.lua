@@ -221,6 +221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			explorationHeader({
+				visit_exploration(5584,{coord={45.7,85.9,TWILIGHT_HIGHLANDS}}),	-- Altar of Twilight
 				exploration(5138),	-- Bloodgulch
 				exploration(5527),	-- Crucible of Carnage
 				exploration(5471),	-- Crushblow

@@ -1,33 +1,48 @@
 5.0.3.15882
+ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
+ach(6786),	-- Flameweaver Koegler kills (Scarlet Halls)
 ach(6941),	-- Hero of the Horde
 ach(6942),	-- Hero of the Alliance
-5.5.0.60481
-ach(7274),	-- Learning from the Best
 5.5.0.60700
 ach(42242),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) \\ [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy) (copy)
 5.5.0.61217
 ach(42762),	-- Challenger: Season 12
 ach(42763),	-- Duelist: Season 12
 ach(42764),	-- Rival: Season 12
-ach(42765),	-- Gladiator: Season 12
+ach(42765),	-- Gladiator: Season 12 (3v3) \\ Gladiator: Season 12
 ach(42772),	-- Rival: Season 11
 ach(42774),	-- Duelist: Season 11
 ach(42775),	-- Challenger: Season 11
 ach(42776),	-- Cataclysmic Gladiator
 ach(42777),	-- Gladiator: Season 11
-5.5.0.61411
-ach(60892),	-- Celestial: Temple of the Jade Serpent
-ach(60893),	-- Celestial: Stormstout Brewery
-ach(60894),	-- Celestial: Mogu'shan Palace
-ach(60895),	-- Celestial: Shado-Pan Monastery
-ach(60896),	-- Celestial: Gate of the Setting Sun
-ach(60897),	-- Celestial: Scarlet Halls
-ach(60898),	-- Celestial: Scarlet Monastery
-ach(60899),	-- Celestial: Scholomance
-ach(60900),	-- Celestial: Siege of Niuzao Temple
-ach(60901),	-- Pandaria Celestial Hero
 5.5.0.61496
 ach(60907),	-- Realm First! Will of the Emperor (10 player)
 ach(60908),	-- Realm First! Grand Empress Shek'zeer (10 player)
 ach(60909),	-- Realm First! Sha of Fear (10 player)
 ach(60910),	-- Realm First! Ra-den (10 player)
+5.5.1.62856
+ach(61096),	-- Gladiator: Season 13 (3v3) \\ Gladiator: Season 13
+ach(61097),	-- Duelist: Season 13
+ach(61098),	-- Challenger: Season 13
+ach(61099),	-- Rival: Season 13
+ach(61350),	-- Gladiator: Season 12 (2v2) \\ Skirmisher: Season 12
+ach(61351),	-- Gladiator: Season 13 (2v2) \\ Skirmisher: Season 13
+ach(61352),	-- Gladiator: Season 14 (2v2) \\ Skirmisher: Season 14
+ach(61353),	-- Gladiator: Season 15 (2v2) \\ Skirmisher: Season 15
+ach(61354),	-- Malevolent Gladiator: Season 12 (2v2) \\ Malevolent Skirmisher: Season 12
+ach(61355),	-- Tyrannical Gladiator: Season 13 (2v2) \\ Tyrannical Skirmisher: Season 13
+ach(61356),	-- Grievous Gladiator: Season 14 (2v2) \\ Grievous Skirmisher: Season 14
+ach(61357),	-- Prideful Gladiator: Season 15 (2v2) \\ Prideful Skirmisher: Season 15
+ach(61358),	-- Gladiator: Season 12 (5v5) \\ Marauder: Season 12
+ach(61359),	-- Gladiator: Season 13 (5v5) \\ Marauder: Season 13
+ach(61360),	-- Gladiator: Season 14 (5v5) \\ Marauder: Season 14
+ach(61361),	-- Gladiator: Season 15 (5v5) \\ Marauder: Season 15
+ach(61362),	-- Malevolent Gladiator: Season 12 (5v5) \\ Malevolent Marauder: Season 12
+ach(61363),	-- Tyrannical Gladiator: Season 13 (5v5) \\ Tyrannical Marauder: Season 13
+ach(61364),	-- Grievous Gladiator: Season 14 (5v5) \\ Grievous Marauder: Season 14
+ach(61365),	-- Prideful Gladiator: Season 15 (5v5) \\ Prideful Marauder: Season 15
+5.5.1.63014
+ach(61415),	-- Undisputed Gladiator: Season 12
+ach(61416),	-- Undisputed Gladiator: Season 13
+ach(61417),	-- Undisputed Gladiator: Season 14
+ach(61418),	-- Undisputed Gladiator: Season 15

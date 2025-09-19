@@ -1,39 +1,227 @@
 -------------------
 -- JEWELCRAFTING --
 -------------------
-JEWELCRAFTING_SUPPLIES = sharedData({
-	["description"] = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
-	["providers"] = {
-		{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
-		{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
-		{ "n", 19065},	-- Inessera <Jewelcrafting Supplies>
-		{ "n", 18751},	-- Kalaen <Jewelcrafting Trainer>
-		{ "n", 18774},	-- Tatiana <Jewelcrafting Trainer>
-		-- #if AFTER WRATH
-		{ "n", 27142},	-- Librarian Jeffers <Jewelcrafting Supplies>
-		{ "n", 28721},	-- Tiffany Cartier <Jewelcrafting Supplies>
+CLASSIC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(25229, {	-- Jewelcrafting(Apprentice)
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
 		-- #endif
-		-- #if AFTER 3.1.0
-		{ "n", 33637},	-- Kirembri Silvermane <Jewelcrafting Trainer>
-		-- #endif
-		-- #if AFTER CATA
-		{ "n", 52584},	-- Laida Gembold <Jewelcrafting Supplies>
-		{ "n", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
-		{ "n", 52658},	-- Paku Cloudchaser <Jewelcrafting Supplies>
-		{ "n", 52588},	-- Sara Lanner <Jewelcrafting Supplies>
-		{ "n", 52644},	-- Tarien Silverdew <Jewelcrafting Supplies>
-		{ "n", 44583},	-- Terrance Denman <Jewelcrafting Supplies>
-		-- #endif
-	},
-}, {
-	i(52188, {	-- Jeweler's Setting
-		["timeline"] = { ADDED_4_0_3 },
+		["rank"] = 1,
 	}),
-	i(20815),	-- Jeweler's Toolset/-Kit
-	i(20824, {	-- Simple Grinder
-		["timeline"] = { REMOVED_5_0_4 },
+	r(25230, {	-- Jewelcrafting (Journeyman)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
+		-- #endif
+		["rank"] = 2,
 	}),
-});
+	r(28894, {	-- Jewelcrafting (Expert)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 20,
+		-- #endif
+		["rank"] = 3,
+	}),
+	r(28895, {	-- Jewelcrafting (Artisan)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 35,
+		-- #endif
+		["rank"] = 4,
+	}),
+	r(31252),	-- Prospecting
+	applyclassicphase(BFA_PHASE_ONE, r(264532, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Jewelcrafting
+	n(ARMOR, {
+		r(25321),	-- Moonsoul Crown
+	}),
+	filter(FINGER_F, {
+		r(26874),	-- Aquamarine Signet
+		r(25493),	-- Braided Copper Ring
+		r(37818),	-- Bronze Band of Force
+		r(25621),	-- Citrine Ring of Rapid Healing
+		r(36526),	-- Diamond Focus Ring
+		r(25280),	-- Elegant Silver Ring
+		r(34961),	-- Emerald Lion Ring
+		r(25620),	-- Engraved Truesilver Ring
+		r(25287),	-- Gloom Band
+		r(34960),	-- Glowing Thorium Band
+		r(25613),	-- Golden Dragon Ring
+		r(34955),	-- Golden Ring of Power
+		r(26926),	-- Heavy Copper Ring
+		r(36524),	-- Heavy Jade Ring
+		r(25305),	-- Heavy Silver Ring
+		r(25283),	-- Inlaid Malachite Ring
+		r(26907),	-- Onslaught Ring
+		r(36525),	-- Red Ring of Destruction
+		r(25317),	-- Ring of Silver Might
+		r(25318),	-- Ring of Twilight Shadows
+		r(26903),	-- Sapphire Signet
+		r(26902),	-- Simple Opal Ring
+		r(25284),	-- Simple Pearl Ring
+		r(25490),	-- Solid Bronze Ring
+		r(25619, {["timeline"] = {ADDED_4_0_3}}),	-- The Jade Eye
+		r(32179),	-- Tigerseye Band
+		r(34959),	-- Truesilver Commander's Ring
+		r(26885),	-- Truesilver Healing Ring
+		r(26925),	-- Woven Copper Ring
+	}),
+	filter(MISC, {
+		r(32801),	-- Coarse Stone Statue
+		r(32809),	-- Dense Stone Statue
+		r(32807),	-- Heavy Stone Statue
+		r(32259),	-- Rough Stone Statue
+		r(32808),	-- Solid Stone Statue
+	}),
+	filter(NECK_F, {
+		r(26876),	-- Aquamarine Pendant of the Warrior
+		r(25498),	-- Barbaric Iron Collar
+		r(36523),	-- Brilliant Necklace
+		r(38175),	-- Bronze Torc
+		r(26911),	-- Living Emerald Pendant
+		r(32178),	-- Malachite Pendant
+		r(26928),	-- Ornate Tigerseye Necklace
+		r(25610, {["timeline"] = {ADDED_4_1_0}}),	-- Pendant of the Agate Shield
+		r(26883),	-- Ruby Pendant of Fire
+		r(26908),	-- Sapphire Pendant of Winter Night
+		r(26927),	-- Thick Bronze Necklace
+	}),
+	filter(REAGENTS, {
+		r(25278),	-- Bronze Setting
+		r(25255),	-- Delicate Copper Wire
+		r(25615),	-- Mithril Filigree
+		r(26880),	-- Thorium Setting
+	}),
+	filter(TRINKET_F, {
+		r(26872),	-- Figurine - Jade Owl
+	}),
+	n(WEAPONS, {
+		r(25612, {["timeline"] = {ADDED_4_0_3}}),	-- Heavy Iron Knuckles
+	}),
+}));
+TBC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(28897, {	-- Jewelcrafting (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264534, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Jewelcrafting
+	n(ARMOR, {
+		applyclassicphase(TBC_PHASE_TWO, r(41418, {["timeline"] = {ADDED_2_1_0}})),	-- Crown of the Sea Witch
+	}),
+	filter(GEMS, {
+		-- #if BEFORE CATA
+		r(28905, {["timeline"] = {ADDED_3_0_2}}),	-- Bold Blood Garnet
+		r(34590, {["timeline"] = {ADDED_3_0_2}}),	-- Bright Blood Garnet
+		r(28938, {["timeline"] = {ADDED_3_0_2, REMOVED_4_0_3}}),	-- Brilliant Golden Draenite
+		r(28914, {["timeline"] = {ADDED_3_0_2}}),	-- Glinting Flame Spessarite
+		r(28925, {["timeline"] = {ADDED_3_0_2}}),	-- Glowing Shadow Draenite
+		r(28910, {["timeline"] = {ADDED_3_0_2}}),	-- Inscribed Flame Spessarite
+		r(28917, {["timeline"] = {ADDED_3_0_2}}),	-- Jagged Deep Peridot
+		r(41420, {["timeline"] = {ADDED_2_1_0}}),	-- Purified Jaggal Pearl
+		r(41429, {["timeline"] = {ADDED_2_1_0}}),	-- Purified Shadow Pearl
+		r(28916, {["timeline"] = {ADDED_3_0_2}}),	-- Radiant Deep Peridot
+		r(28948, {["timeline"] = {ADDED_3_0_2}}),	-- Rigid Golden Draenite
+		r(34069, {["timeline"] = {ADDED_3_0_2, REMOVED_4_0_3}}),	-- Smooth Golden Draenite
+		r(28950, {["timeline"] = {ADDED_3_0_2}}),	-- Solid Azure Moonstone
+		r(28936, {["timeline"] = {ADDED_3_0_2}}),	-- Sovereign Shadow Draenite
+		r(28953, {["timeline"] = {ADDED_3_0_2}}),	-- Sparkling Azure Moonstone
+		r(28903, {["timeline"] = {ADDED_3_0_2}}),	-- Teardrop Blood Garnet
+		-- #else
+		r(28905, {["timeline"] = {ADDED_3_0_2}}),	-- Bold Blood Garnet
+		r(28903, {["timeline"] = {ADDED_3_0_2}}),	-- Brilliant Blood Garnet
+		r(34590, {["timeline"] = {ADDED_3_0_2}}),	-- Delicate Blood Garnet
+		r(28914, {["timeline"] = {ADDED_3_0_2}}),	-- Glinting Shadow Draenite
+		r(28910, {["timeline"] = {ADDED_3_0_2}}),	-- Inscribed Flame Spessarite
+		r(28917, {["timeline"] = {ADDED_3_0_2}}),	-- Jagged Deep Peridot
+		r(41420, {["timeline"] = {ADDED_2_1_0}}),	-- Purified Jaggal Pearl
+		r(41429, {["timeline"] = {ADDED_2_1_0}}),	-- Purified Shadow Pearl
+		r(28916, {["timeline"] = {ADDED_3_0_2}}),	-- Radiant Deep Peridot
+		r(28948, {["timeline"] = {ADDED_3_0_2}}),	-- Rigid Azure Moonstone
+		r(28950, {["timeline"] = {ADDED_3_0_2}}),	-- Solid Azure Moonstone
+		r(28936, {["timeline"] = {ADDED_3_0_2}}),	-- Sovereign Shadow Draenite
+		r(28953, {["timeline"] = {ADDED_3_0_2}}),	-- Sparkling Azure Moonstone
+		r(28925, {["timeline"] = {ADDED_3_0_2}}),	-- Timeless Shadow Draenite
+		-- #endif
+	}),
+	filter(FINGER_F, {
+		r(31050),	-- Azure Moonstone Ring
+		r(26916),	-- Band of Natural Fire
+		r(41414, {["timeline"] = {ADDED_2_1_0}}),	-- Brilliant Pearl Band
+		r(31048),	-- Fel Iron Blood Ring
+		r(31049),	-- Golden Draenite Ring
+		r(31052),	-- Heavy Adamantite Ring
+		r(41415, {["timeline"] = {ADDED_2_1_0}}),	-- The Black Pearl
+	}),
+	filter(MISC, {
+		r(47280, {["timeline"] = {ADDED_2_4_0}}),	-- Brilliant Glass
+	}),
+	filter(NECK_F, {
+		applyclassicphase(TBC_PHASE_TWO, r(40514, {["timeline"] = {ADDED_2_1_0}})),	-- Necklace of the Deep
+		r(31051),	-- Thick Adamantite Necklace
+	}),
+	filter(REAGENTS, {
+		r(38068),	-- Mercurial Adamantite
+	}),
+	--- REMOVED RECIPES ---
+	r(34069, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}),	-- Smooth Golden Draenite
+	r(28938, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}),	-- Brilliant Golden Draenite
+	r(31089, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Bright Living Ruby [REMOVED 4.0.3]
+	r(31096, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Brilliant Dawnstone [REMOVED 4.0.3]
+	r(28924, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Dazzling Deep Peridot [REMOVED: 4.0.3]
+	r(28907, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Delicate Blood Garnet [REMOVED: 4.0.3]
+	r(31110, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Regal Talasite [REMOVED 4.0.3]
+	r(31099, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Gleaming Dawnstone [REMOVED 4.0.3]
+	r(28957, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Lustrous Azure Moonstone [REMOVED: 4.0.3]
+	r(31094, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Lustrous Star of Elune [REMOVED 4.0.3]
+	r(31105, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Royal Nightseye [REMOVED 4.0.3]
+	r(28906, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Runed Blood Garnet [REMOVED: 4.0.3]
+	r(31087, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Teardrop Living Ruby [REMOVED 4.0.3]
+	r(31100, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Thick Dawnstone [REMOVED 4.0.3]
+
+
+	r(39463, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Balanced Nightseye [REMOVED 4.0.3]
+	r(39452, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Great Dawnstone [REMOVED 4.0.3]
+	r(39462, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Infused Nightseye  [REMOVED 4.0.3]
+
+	r(39729, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Balanced Shadowsong Amethyst [REMOVED: 4.0.3]
+	r(39712, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Bright Crimson Spinel [REMOVED: 4.0.3]
+	r(39719, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Brilliant Lionseye [REMOVED: 4.0.3]
+
+	r(39722, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Gleaming Lionseye [REMOVED 4.0.3]
+	r(39725, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Great Lionseye [REMOVED: 4.0.3]
+	r(39730, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Infused Shadowsong Amethyst [REMOVED: 4.0.3]
+	r(39735, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Luminous Pyrestone [REMOVED: 4.0.3]
+	r(39717, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Lustrous Empyrean Sapphire [REMOVED 4.0.3]
+	r(39732, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Royal Shadowsong Amethyst [REMOVED: 4.0.3]
+	r(39710, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Teardrop Crimson [REMOVED: 4.0.3]
+	r(39723, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Thick Lionseye [REMOVED: 4.0.3]
+
+	r(39451, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Great Golden Draenite [REMOVED: 4.0.3]
+	r(39455, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Balanced Shadow Draenite [REMOVED: 4.0.3]
+	r(39458, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Infused Shadow Draenite [REMOVED: 4.0.3]
+
+	r(48789, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Purified Shadowsong Amethyst [REMOVED: 4.0.3]
+	r(46404, {["timeline"] = {ADDED_4_0_3, REMOVED_4_0_3}}), -- Reckless Noble Topaz [REMOVED: 4.0.3]
+
+
+
+
+
+
+
+}));
 COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 	i(52409, {	-- Design: Accurate Demonseye
 		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token

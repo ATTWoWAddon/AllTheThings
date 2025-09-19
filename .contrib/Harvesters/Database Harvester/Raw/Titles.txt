@@ -278,6 +278,18 @@
 252@@@%s the Crazy Cat Man
 253@@@Grievous Gladiator %s
 254@@@Prideful Gladiator %s
+5.5.1.62856
+250@@@Grievous Skirmisher %s
+255@@@Prideful Skirmisher %s
+256@@@Marauder %s
+257@@@Malevolent Marauder %s
+258@@@Tyrannical Marauder %s
+259@@@Grievous Marauder %s
+260@@@Prideful Marauder %s
+261@@@Undisputed Gladiator %s
+980@@@Skirmisher %s
+995@@@Malevolent Skirmisher %s
+996@@@Tyrannical Skirmisher %s
 6.0.1.18125
 6.0.1.18156
 255@@@Mistwalker %s

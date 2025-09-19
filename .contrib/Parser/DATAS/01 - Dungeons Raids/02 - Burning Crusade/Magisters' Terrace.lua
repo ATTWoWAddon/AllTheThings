@@ -109,14 +109,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			filter(RECIPES, {
 				["cr"] = 24664,	-- Kael'thas Sunstrider
 				["groups"] = {
-					-- #if AFTER CATA
-					i(35305),	-- Design: Brilliant Living Ruby / [CATA+] / Design: Runed Living Ruby [TBC]
-					-- #endif
-					i(35307),	-- Design: Rigid Dawnstone [TBC] / Design: Rigid Star of Elune [CATA+]
 					-- #if BEFORE CATA
-					i(35305),	-- Design: Runed Living Ruby [TBC] / Design: Brilliant Living Ruby / [CATA+]
+					i(35306, {	-- Design: Bright Living Ruby (RECIPE!) [BoP]
+						["timeline"] = { ADDED_2_4_0, REMOVED_4_0_3 },
+					}),
+					i(35307),	-- Design: Rigid Dawnstone (RECIPE!) [BoP]
+					i(35305),	-- Design: Runed Living Ruby (RECIPE!) [BoP]
+					i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]
+					-- #else
+					i(35305),	-- Design: Brilliant Living Ruby (RECIPE!) [BoP]
+					i(35306, {	-- Design: Delicate Living Ruby (RECIPE!) [BoP]
+						["timeline"] = { ADDED_2_4_0, REMOVED_4_0_3 },
+					}),
+					i(35307),	-- Design: Rigid Star of Elune (RECIPE!) [BoP]
+					i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]
 					-- #endif
-					i(35304),	-- Design: Solid Star of Elune
 					i(35297),	-- Formula: Enchant Boots - Boar's Speed (RECIPE!)
 					i(35299),	-- Formula: Enchant Boots - Cat's Swiftness (RECIPE!)
 					i(35298),	-- Formula: Enchant Boots - Vitality (RECIPE!)

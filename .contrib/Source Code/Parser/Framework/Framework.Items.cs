@@ -1166,7 +1166,12 @@ namespace ATT
                 decimal itemID = 0;
                 if (WagoData.TryGetItemModifiedAppearanceAssociations(sourceID, out List<ItemModifiedAppearance> itemModifiedAppearances))
                 {
-                    itemID = itemModifiedAppearances.First().ItemID;
+                    var appearanceData = itemModifiedAppearances.FirstOrDefault();
+                    itemID = appearanceData.ItemID;
+
+                    // Additonally, as of 11.2 we now have Ensembles which contain multiple Sources for the same ItemID, so we need
+                    // to try and determine the proper modID to generate accurate in-game tooltips for these ensemble-based items
+                    data["modID"] = appearanceData.ExpectedModID;
 
                     if (itemModifiedAppearances.Count == 1)
                     {

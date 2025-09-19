@@ -128,6 +128,7 @@ root(ROOTS.WorldDrops, {
 			i(88567, {	-- Ghost Iron Lockbox
 				["timeline"] = { ADDED_5_0_4 },
 			}),
+			i(4633),	-- Heavy Bronze Lockbox
 			i(16885, {	-- Heavy Junkbox
 				["sym"] = { {
 					"select", "itemID",
@@ -453,8 +454,7 @@ root(ROOTS.WorldDrops, {
 			i(179311, {	-- Synvir Lockbox
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
-			i(5759, {	-- Thorium Lockbox
-			}),
+			i(5759),	-- Thorium Lockbox
 			i(116920, {	-- True Steel Lockbox
 				["timeline"] = { ADDED_6_0_2 },
 				["sym"] = { {
@@ -576,6 +576,7 @@ root(ROOTS.WorldDrops, {
 					i(88149),	-- The Gloaming Blade
 				},
 			}),
+			i(16883),	-- Worn Junkbox
 		},
 	}),
 });

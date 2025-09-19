@@ -28,6 +28,9 @@ root(ROOTS.Zones, {
 				}),
 				q(41447, {	-- Burning Felslate Deposits
 					["requireSkill"] = MINING,
+					["groups"] = {
+						i(141250),	-- Burning Felslate (QI!)
+					},
 				}),
 				petbattle(q(41990)),	-- Chopped
 				q(45307),	-- Claws for Alarm!
@@ -244,53 +247,99 @@ root(ROOTS.Zones, {
 						693,	-- Falanaar Arcway
 					},
 					["groups"] = {
-						n(109556, {	-- Treasure Chest
-							i(136914, {	-- Leyline Broodling (PET!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-						}),
-						o(251753, {	-- Treasure Chest
-							["questID"] = 43148,
-							["groups"] = { i(140448) },	-- Lens of Qin'dera
-						}),
-						n(109564, {	-- Glimmering Treasure Chest
-							i(140495),	-- Torn Invitation [Fox Mount Quest]
-							i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
-								artifact(720),	-- Find Hidden Artifact Skin
-							}),
-							i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
-								artifact(527),	-- Find Hidden Artifact Skin
-							}),
-							i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
-								artifact(921),	-- Find Hidden Artifact Skin
-							}),
-							i(141296),	-- Ancient Mana Basin (TOY!)
-							i(147418),	-- Arcane Remnant of Falanaar
-							i(147416),	-- Arcane Tablet of Falanaar
-							i(141297),	-- Arcano-Shower (TOY!)
-							i(141298),	-- Displacer Meditation Stone (TOY!)
-							i(140780),	-- Fal'dorei Egg (TOY!)
-							i(141299),	-- Kaldorei Light Globe (TOY!)
-							i(140786),	-- Ley Spider Eggs (TOY!)
-							i(141301),	-- Unstable Powder Box (TOY!)
-							i(141306),	-- Wisp in a Bottle (TOY!)
+						o(252452, {	-- Glimmering Treasure Chest
+							["coord"] = { 22.9, 36.2, SURAMAR },
+							["cr"] = 109564,	-- Glimmering Treasure Chest
+							["groups"] = {
+								i(140495),	-- Torn Invitation (QS!)
+								i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
+									artifact(720),	-- Find Hidden Artifact Skin
+								}),
+								i(139563, {	-- The Stormfist [Windwalker Monk Hidden Artifact Appearance]
+									artifact(527),	-- Find Hidden Artifact Skin
+								}),
+								i(139546, {	-- Twisting Anima of Souls [Death Knight Hidden Artifact Appearance]
+									artifact(921),	-- Find Hidden Artifact Skin
+								}),
+								i(147418),	-- Arcane Remnant of Falanaar
+								i(147416),	-- Arcane Tablet of Falanaar
+								i(141297),	-- Arcano-Shower (TOY!)
+								i(141298),	-- Displacer Meditation Stone (TOY!)
+								i(140780),	-- Fal'dorei Egg (TOY!)
+								i(141299),	-- Kaldorei Light Globe (TOY!)
+								i(140786),	-- Ley Spider Eggs (TOY!)
+								i(141301),	-- Unstable Powder Box (TOY!)
+								i(141306),	-- Wisp in a Bottle (TOY!)
+							},
 						}),
 						o(251754, {	-- Glimmering Treasure Chest
 							["questID"] = 43071,
+							["coord"] = { 22.8, 36.2, SURAMAR },
 							["groups"] = { i(139011) },	-- Berserking Helm of Ondry'el
 						}),
 						o(251755, {	-- Glimmering Treasure Chest
 							["questID"] = 43145,
+							["coord"] = { 22.9, 36.2, SURAMAR },
 							["groups"] = { i(140450) },	-- Berserking Helm of Taenna
+						}),
+						o(251756, {	-- Glimmering Treasure Chest
+							["questID"] = 43128,
+							["coord"] = { 23.0, 36.2, SURAMAR },
+							["groups"] = { i(139019) },	-- Spellmask of Alla'onus
+						}),
+						o(251757, {	-- Glimmering Treasure Chest
+							["questID"] = 43146,
+							["coord"] = { 22.6, 36.0, SURAMAR },
+							["groups"] = { i(140451) },	-- Spellmask of Azsylla
+						}),
+						o(251758, {	-- Glimmering Treasure Chest
+							["questID"] = 43134,
+							["coord"] = { 22.7, 36.0, SURAMAR },
+							["groups"] = { i(139027) },	-- Lenses of Spellseer Dellian
 						}),
 						o(251759, {	-- Glimmering Treasure Chest
 							["questID"] = 43135,
+							["coord"] = { 22.8, 36.2, SURAMAR },
 							["groups"] = { i(139028) },	-- Disc of the Starcaller
 						}),
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
 							i(137892),	-- Pattern: Dreadleather Bindings [Rank 3] (RECIPE!)
 							i(137718),	-- Schematic: Ironsight Cranial Cannon [Rank 3] (RECIPE!)
+						}),
+						o(251668, {	-- Treasure Chest
+							["questID"] = 43140,
+							["coord"] = { 22.7, 36.2, SURAMAR },
+							["groups"] = { i(140778) },	-- Traveler's Banking Chest (QS!)
+						}),
+						o(251669, {	-- Treasure Chest
+							["coord"] = { 22.7, 36.2, SURAMAR },
+							["cr"] = 109556,	-- Treasure Chest
+							["groups"] = { i(136914) },	-- Leyline Broodling (PET!)
+						}),
+						o(251747, {	-- Treasure Chest
+							["questID"] = 43144,
+							["coord"] = { 23.0, 36.2, SURAMAR },
+							["groups"] = { i(141296) },	-- Ancient Mana Basin (TOY!)
+						}),
+						o(251748, {	-- Treasure Chest
+							["coord"] = { 22.7, 36.2, SURAMAR },
+							["groups"] = { i(139018) },	-- Box of Calming Whispers
+						}),
+						o(251749, {	-- Treasure Chest
+							["questID"] = 43149,
+							["coord"] = { 22.7, 36.2, SURAMAR },
+							["groups"] = { i(139010) },	-- Petrified Silkweave
+						}),
+						o(251751, {	-- Treasure Chest
+							["questID"] = 43111,
+							["coord"] = { 22.8, 36.2, SURAMAR },
+							["groups"] = { i(139017) },	-- Soothing Leystone Shard
+						}),
+						o(251753, {	-- Treasure Chest
+							["questID"] = 43148,
+							["coord"] = { 22.9, 36.2, SURAMAR },
+							["groups"] = { i(140448) },	-- Lens of Qin'dera
 						}),
 					},
 				}),
@@ -360,25 +409,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 		m(SURAMAR, {
 			n(WORLD_QUESTS, {
 				-- Suramar - Withered Training
-				-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
 				q(43051),	-- 7.0 Suramar Collapse Scenario - Door 01
 				q(43052),	-- 7.0 Suramar Collapse Scenario - Door 02
 				q(43053),	-- 7.0 Suramar Collapse Scenario - Door 03
 				q(44491),	-- 7.0 Suramar Collapse Scenario - Run Once
 				q(43070),	-- 7.0 Suramar Collapse Scenario - Treasure 01 - Army Size Increase 01
-				q(43140),	-- 7.0 Suramar Collapse Scenario - Treasure 02 - Army Size Increase 02: no withered army increase anymore, but did contain Traveler's Banking Chest (itemID 140778) (5 withered, objectID 43140)
 				q(43141),	-- 7.0 Suramar Collapse Scenario - Treasure 03 - Army Size Increase 03
 				q(43142),	-- 7.0 Suramar Collapse Scenario - Treasure 04 - Army Size Increase 04: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 43142)
 				q(43143),	-- 7.0 Suramar Collapse Scenario - Treasure 05 - Army Size Increase 05: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 251746)
-				q(43144),	-- 7.0 Suramar Collapse Scenario - Treasure 06 - Army Size Increase 06: used to be from an increase to max withered army size, but no longer in game. Also dropped the Ancient Mana Basin toy (5 withered, objectID 251747)
 				q(43120),	-- 7.0 Suramar Collapse Scenario - Treasure 07 - Focus Attacks 01
-				q(43149),	-- 7.0 Suramar Collapse Scenario - Treasure 08 - Focus Attacks 02: obtained Petrified Silkweave upgrade from a small chest (5 withered, objectID 251749)
 				q(43150),	-- 7.0 Suramar Collapse Scenario - Treasure 09 - Focus Attacks 03
-				q(43111),	-- 7.0 Suramar Collapse Scenario - Treasure 10 - Reduce Runaways 01: obtained Soothing Leystone Shard from a small chest (5 withered, objectID 251751)
 				q(43147),	-- 7.0 Suramar Collapse Scenario - Treasure 11 - Reduce Runaways 02
-				q(43128),	-- 7.0 Suramar Collapse Scenario - Treasure 15 - Withered Mana-Rager Unlock 01: obtained Spellmask of Alla'onus (10 withered, objectID 251756)
-				q(43146),	-- 7.0 Suramar Collapse Scenario - Treasure 16 - Withered Mana-Rager Unlock 02: obtained Spellmask okf Azsylla from a large chest (10 withered, objectID 251757)
-				q(43134),	-- 7.0 Suramar Collapse Scenario - Treasure 17 - Withered Spellseer Unlock 01: obtained Lenses of Spellseer Dellian (10 withered, objectID 251758)
 				q(45478),	-- Suramar - WQ rare: Achronos
 				q(45504),	-- Suramar - WQ rare: Alteria
 				q(45475),	-- Suramar - WQ rare: Auditor Esiel

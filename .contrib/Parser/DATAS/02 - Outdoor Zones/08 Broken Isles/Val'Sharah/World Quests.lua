@@ -35,6 +35,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			q(41532, {	-- Bushy Dreamleaf
 				["requireSkill"] = HERBALISM,
+				["groups"] = {
+					i(140956),	-- Bushy Dreamleaf (QI!)
+				},
 			}),
 			q(42174, {	-- Champions of Elune
 				["maps"] = { 697 },	-- Azshara (scenario version)

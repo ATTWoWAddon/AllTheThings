@@ -651,7 +651,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_AUGUST_CELESTIALS, {
 		n(QUESTS, {
-			q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01 - Triggered after turning in Ellia Ravenmane. (First quest in the chain)
+			q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01 - Triggered after turning in Ellia Ravenmane. (First quest in the chain and also triggered for the rematch quest)
 			q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 - triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji, triggered on another character after turning in Minh Do-Tan, which is the 2nd
 			q(30721),	-- FLAG - Cradle of Chi-Ji Progress Bit 03
 			q(30722),	-- FLAG - Cradle of Chi-Ji Progress Bit 04

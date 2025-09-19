@@ -54,218 +54,241 @@ end]];
 root(ROOTS.PVP, {
 	run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CATA, {
 		n(RATED_BATTLEGROUNDS, bubbleDown({
-				-- #if ANYCLASSIC
-				["timeline"] = { CREATED_4_3_0 },	-- These were never made available to players in Classic. Instead, the original items have been made available to purchase with honor points.
-				-- #else
-				["timeline"] = { ADDED_4_3_0 },
-				-- #endif
+				["timeline"] = {
+					-- #if ANYCLASSIC
+					CREATED_4_3_0,	-- These were never made available to players in Classic. Instead, the original items have been made available to purchase with honor points.
+					-- #else
+					ADDED_4_3_0
+					-- #endif
+				 },
 			}, {
 				n(FACTION_HEADER_ALLIANCE, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						n(WEAPONS, {
-							i(77549),	-- Replica Grand Marshal's Demolisher
-							i(77550),	-- Replica Grand Marshal's Swiftblade
-							i(77551),	-- Replica Grand Marshal's Dirk
-							i(77552),	-- Replica Grand Marshal's Mageblade
-							i(77553),	-- Replica Grand Marshal's Warhammer
-							i(77554),	-- Replica Grand Marshal's Sunderer
-							i(77555),	-- Replica Grand Marshal's Hand Cannon
-							i(77556),	-- Replica Grand Marshal's Stave
-							i(77557),	-- Replica Grand Marshal's Hand Blade
-							i(77558),	-- Replica Grand Marshal's Punisher
-							i(77560),	-- Replica Grand Marshal's Claymore
-							i(77561),	-- Replica Grand Marshal's Longsword
-							i(77562),	-- Replica Grand Marshal's Handaxe
-							i(77563),	-- Replica Grand Marshal's Battle Hammer
-							i(77564),	-- Replica Grand Marshal's Glaive
-							i(77565),	-- Replica Grand Marshal's Bullseye
-							i(77566),	-- Replica Grand Marshal's Repeater
-							i(77594),	-- Replica Grand Marshal's Tome of Restoration
-							i(77595),	-- Replica Grand Marshal's Tome of Power
 							i(77596),	-- Replica Grand Marshal's Aegis
+							i(77563),	-- Replica Grand Marshal's Battle Hammer
+							i(77565),	-- Replica Grand Marshal's Bullseye
+							i(77560),	-- Replica Grand Marshal's Claymore
+							i(77549),	-- Replica Grand Marshal's Demolisher
+							i(77551),	-- Replica Grand Marshal's Dirk
+							i(77564),	-- Replica Grand Marshal's Glaive
+							i(77555),	-- Replica Grand Marshal's Hand Cannon
+							i(77557),	-- Replica Grand Marshal's Hand Blade
+							i(77562),	-- Replica Grand Marshal's Handaxe
+							i(77561),	-- Replica Grand Marshal's Longsword
+							i(77552),	-- Replica Grand Marshal's Mageblade
+							i(77558),	-- Replica Grand Marshal's Punisher
+							i(77566),	-- Replica Grand Marshal's Repeater
+							i(77556),	-- Replica Grand Marshal's Stave
+							i(77554),	-- Replica Grand Marshal's Sunderer
+							i(77550),	-- Replica Grand Marshal's Swiftblade
+							i(77595),	-- Replica Grand Marshal's Tome of Power
+							i(77594),	-- Replica Grand Marshal's Tome of Restoration
+							i(77553),	-- Replica Grand Marshal's Warhammer
 						}),
-						-- Alliance Cloth & Leather
-						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
-						i(77692),	-- Replica Field Marshal's Satin Mantle
-						i(77710),	-- Replica Field Marshal's Coronal
-						i(77709),	-- Replica Field Marshal's Dreadweave Shoulders
-						i(77701),	-- Replica Field Marshal's Leather Chestpiece
-						i(77700),	-- Replica Field Marshal's Leather Mask
-						i(77697),	-- Replica Field Marshal's Leather Epaulets
-						i(77695),	-- Replica Field Marshal's Headdress
-						i(77694),	-- Replica Field Marshal's Satin Vestments
-						i(77712),	-- Replica Field Marshal's Dreadweave Robe
-						i(77682),	-- Replica Field Marshal's Coronet
-						i(77679),	-- Replica Field Marshal's Silk Spaulders
-						i(77678),	-- Replica Field Marshal's Silk Vestments
-						i(77671),	-- Replica Field Marshal's Dragonhide Helmet
-						i(77667),	-- Replica Field Marshal's Dragonhide Spaulders
-						i(77683),	-- Replica Marshal's Silk Footwraps
-						i(77711),	-- Replica Marshal's Dreadweave Leggings
-						i(77708),	-- Replica Marshal's Dreadweave Boots
-						i(77742),	-- Replica Lieutenant Commander's Dragonhide Headguard
-						i(77713),	-- Replica Marshal's Dreadweave Gloves
-						i(77666),	-- Replica Marshal's Dragonhide Gauntlets
-						i(77784),	-- Replica Lieutenant Commander's Silk Cowl
-						i(77668),	-- Replica Marshal's Dragonhide Legguards
-						i(77669),	-- Replica Marshal's Dragonhide Boots
-						i(77850),	-- Replica Lieutenant Commander's Dreadweave Spaulders
-						i(77844),	-- Replica Lieutenant Commander's Dreadweave Cowl
-						i(77820),	-- Replica Lieutenant Commander's Leather Helm
-						i(77699),	-- Replica Marshal's Leather Footguards
-						i(77680),	-- Replica Marshal's Silk Leggings
-						i(77681),	-- Replica Marshal's Silk Gloves
-						i(77800),	-- Replica Lieutenant Commander's Satin Hood
-						i(77748),	-- Replica Lieutenant Commander's Dragonhide Shoulders
-						i(77690),	-- Replica Marshal's Satin Sandals
-						i(77691),	-- Replica Marshal's Satin Pants
-						i(77801),	-- Replica Lieutenant Commander's Satin Mantle
-						i(77693),	-- Replica Marshal's Satin Gloves
-						i(77698),	-- Replica Marshal's Leather Handgrips
-						i(77813),	-- Replica Lieutenant Commander's Leather Shoulders
-						i(77696),	-- Replica Marshal's Leather Leggings
-						i(77812),	-- Replica Knight-Captain's Leather Legguards
-						i(77811),	-- Replica Knight-Captain's Leather Chestpiece
-						i(77799),	-- Replica Knight-Captain's Satin Tunic
-						i(77797),	-- Replica Knight-Captain's Satin Legguards
-						i(77785),	-- Replica Knight-Captain's Silk Tunic
-						i(77745),	-- Replica Knight-Captain's Dragonhide Leggings
-						i(77847),	-- Replica Knight-Captain's Dreadweave Legguards
-						i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
-						i(77777),	-- Replica Knight-Captain's Silk Legguards
-						i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
-						i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
-						i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
-						i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
-						i(120995),	-- Replica Knight-Lieutenant's Satin Belt
-						i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
-						i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
-						i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
-						i(77731),	-- Replica Knight-Lieutenant's Leather Grips
-						i(77730),	-- Replica Knight-Lieutenant's Leather Walkers
-						i(77729),	-- Replica Knight-Lieutenant's Satin Walkers
-						i(77728),	-- Replica Knight-Lieutenant's Satin Handwraps
-						i(77725),	-- Replica Knight-Lieutenant's Silk Handwraps
-						i(77724),	-- Replica Knight-Lieutenant's Silk Walkers
-						i(77721),	-- Replica Knight-Lieutenant's Dragonhide Treads
-						i(77599),	-- Replica Knight-Lieutenant's Dragonhide Footwraps
-						i(77598),	-- Replica Lieutenant Commander's Dragonhide Epaulets
-						i(77651),	-- Replica Knight-Lieutenant's Dreadweave Boots
-						i(77650),	-- Replica Knight-Lieutenant's Dreadweave Gloves
-						i(77649),	-- Replica Knight-Captain's Dreadweave Leggings
-						i(77648),	-- Replica Knight-Captain's Dreadweave Robe
-						i(77647),	-- Replica Lieutenant Commander's Dreadweave Mantle
-						i(77600),	-- Replica Lieutenant Commander's Dragonhide Shroud
-						i(77639),	-- Replica Sergeant Major's Leather Armsplints
-						i(77638),	-- Replica Knight-Captain's Leather Legguards
-						i(77637),	-- Replica Knight-Lieutenant's Leather Boots
-						i(77636),	-- Replica Lieutenant Commander's Leather Spaulders
-						i(77635),	-- Replica Lieutenant Commander's Leather Veil
-						i(77634),	-- Replica Knight-Lieutenant's Leather Gauntlets
-						i(77633),	-- Replica Knight-Captain's Leather Armor
-						i(77632),	-- Replica Knight-Lieutenant's Satin Boots
-						i(77631),	-- Replica Lieutenant Commander's Satin Amice
-						i(77630),	-- Replica Knight-Captain's Satin Robes
-						i(77652),	-- Replica Lieutenant Commander's Headguard
-						i(77629),	-- Replica Lieutenant Commander's Diadem
-						i(77628),	-- Replica Knight-Captain's Satin Leggings
-						i(77627),	-- Replica Knight-Lieutenant's Satin Gloves
-						i(77620),	-- Replica Sergeant Major's Silk Cuffs
-						i(77619),	-- Replica Lieutenant Commander's Crown
-						i(77618),	-- Replica Knight-Captain's Silk Leggings
-						i(77617),	-- Replica Knight-Lieutenant's Silk Gloves
-						i(77616),	-- Replica Knight-Lieutenant's Silk Boots
-						i(77615),	-- Replica Lieutenant Commander's Silk Spaulders
-						i(77614),	-- Replica Knight-Captain's Silk Raiment
-						i(77601),	-- Replica Knight-Captain's Dragonhide Leggings
-						i(77604),	-- Replica Sergeant Major's Dragonhide Armsplints
-						i(77603),	-- Replica Knight-Lieutenant's Dragonhide Gloves
-						i(77602),	-- Replica Knight-Captain's Dragonhide Tunic
-						i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
-						i(77640),	-- Replica Sergeant Major's Leather Armsplints
-						i(77787),	-- Replica Sergeant Major's Silk Cuffs
-
-						-- Alliance Mail & Plate
-						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
-						i(77673),	-- Replica Field Marshal's Chain Spaulders
-						i(77714),	-- Replica Field Marshal's Plate Armor
-						i(77707),	-- Replica Field Marshal's Mail Armor
-						i(77705),	-- Replica Field Marshal's Mail Spaulders
-						i(77704),	-- Replica Field Marshal's Mail Helm
-						i(77715),	-- Replica Field Marshal's Plate Helm
-						i(77674),	-- Replica Field Marshal's Chain Breastplate
-						i(77676),	-- Replica Field Marshal's Chain Helm
-						i(77687),	-- Replica Field Marshal's Lamellar Chestplate
-						i(77688),	-- Replica Field Marshal's Lamellar Faceguard
-						i(77689),	-- Replica Field Marshal's Lamellar Pauldrons
-						i(77645),	-- Replica Lieutenant Commander's Mail Pauldrons
-						i(77719),	-- Replica Marshal's Plate Boots
-						i(77763),	-- Replica Lieutenant Commander's Chain Helm
-						i(77703),	-- Replica Marshal's Mail Gauntlets
-						i(77702),	-- Replica Marshal's Mail Boots
-						i(77664),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77672),	-- Replica Marshal's Chain Boots
-						i(77867),	-- Replica Lieutenant Commander's Plate Helmet
-						i(77762),	-- Replica Lieutenant Commander's Chain Shoulders
-						i(77675),	-- Replica Marshal's Chain Legguards
-						i(77706),	-- Replica Marshal's Mail Leggings
-						i(77717),	-- Replica Marshal's Plate Legguards
-						i(77684),	-- Replica Marshal's Lamellar Boots
-						i(77685),	-- Replica Marshal's Lamellar Gloves
-						i(77686),	-- Replica Marshal's Lamellar Legplates
-						i(77677),	-- Replica Marshal's Chain Grips
-						i(77642),	-- Replica Lieutenant Commander's Mail Headguard
-						i(77859),	-- Replica Lieutenant Commander's Plate Shoulders
-						i(77716),	-- Replica Marshal's Plate Gauntlets
-						i(77662),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77661),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77643),	-- Replica Knight-Captain's Mail Legguards
-						i(77641),	-- Replica Knight-Captain's Mail Hauberk
-						i(77761),	-- Replica Knight-Captain's Chain Hauberk
-						i(77769),	-- Replica Knight-Captain's Chain Legguards
-						i(77858),	-- Replica Knight-Captain's Plate Hauberk
-						i(77864),	-- Replica Knight-Captain's Plate Leggings
-						i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
-						i(120977),	-- Replica Knight-Lieutenant's Plate Waistguard
-						i(77646),	-- Replica Knight-Lieutenant's Mail Vices
-						i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
-						i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
-						i(77722),	-- Replica Knight-Lieutenant's Chain Vices
-						i(120983),	-- Replica Knight-Lieutenant's Chain Belt
-						i(120982),	-- Replica Knight-Lieutenant's Mail Links
-						i(120981),	-- Replica Knight-Lieutenant's Lamellar Girdle
-						i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
-						i(77659),	-- Replica Sergeant Major's Plate Wristguards
-						i(77658),	-- Replica Knight-Lieutenant's Plate Boots
-						i(77657),	-- Replica Lieutenant Commander's Plate Pauldrons
-						i(77656),	-- Replica Lieutenant Commander's Plate Helm
-						i(77655),	-- Replica Knight-Captain's Plate Leggings
-						i(77654),	-- Replica Knight-Captain's Plate Chestguard
-						i(77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77626),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77608),	-- Replica Knight-Captain's Chain Hauberk
-						i(77624),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77623),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77612),	-- Replica Sergeant Major's Chain Armguards
-						i(77613, {	-- Replica Sergeant Major's Chain Armguards
-							["description"] = "Horde appearance is learned when buying the Alliance version.",
-							["groups"] = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
+						filter(CLOTH, {
+							i(77620),	-- Replica Sergeant Major's Silk Cuffs
+							i(77787),	-- Replica Sergeant Major's Silk Cuffs
 						}),
-						i(77611),	-- Replica Knight-Captain's Chain Leggings
-						i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
-						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
-						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
-						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-							["description"] = "Horde appearance is learned when buying the Alliance version.",
-							["groups"] = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
+						filter(MAIL, {
+							i(77612),	-- Replica Sergeant Major's Chain Armguards
+							i(77613, {	-- Replica Sergeant Major's Chain Armguards
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
+								["groups"] = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
+							}),
+						}),
+						filter(PLATE, {
+							i(77659),	-- Replica Sergeant Major's Plate Wristguards
+							i(77660, {	-- Replica Sergeant Major's Plate Wristguards
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
+								["groups"] = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
+							}),
+						}),
+						cl(DRUID, {
+							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
+							i(77671),	-- Replica Field Marshal's Dragonhide Helmet
+							i(77667),	-- Replica Field Marshal's Dragonhide Spaulders
+							i(77601),	-- Replica Knight-Captain's Dragonhide Leggings
+							i(77745),	-- Replica Knight-Captain's Dragonhide Leggings
+							i(77602),	-- Replica Knight-Captain's Dragonhide Tunic
+							i(77599),	-- Replica Knight-Lieutenant's Dragonhide Footwraps
+							i(77603),	-- Replica Knight-Lieutenant's Dragonhide Gloves
+							i(77720),	-- Replica Knight-Lieutenant's Dragonhide Grips
+							i(77721),	-- Replica Knight-Lieutenant's Dragonhide Treads
+							i(120992),	-- Replica Knight-Lieutenant's Dragonhide Belt
+							i(77598),	-- Replica Lieutenant Commander's Dragonhide Epaulets
+							i(77742),	-- Replica Lieutenant Commander's Dragonhide Headguard
+							i(77748),	-- Replica Lieutenant Commander's Dragonhide Shoulders
+							i(77600),	-- Replica Lieutenant Commander's Dragonhide Shroud
+							i(77669),	-- Replica Marshal's Dragonhide Boots
+							i(77666),	-- Replica Marshal's Dragonhide Gauntlets
+							i(77668),	-- Replica Marshal's Dragonhide Legguards
+							i(77604),	-- Replica Sergeant Major's Dragonhide Armsplints
+							i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
+						}),
+						cl(HUNTER, {
+							i(77674),	-- Replica Field Marshal's Chain Breastplate
+							i(77676),	-- Replica Field Marshal's Chain Helm
+							i(77673),	-- Replica Field Marshal's Chain Spaulders
+							i(77608),	-- Replica Knight-Captain's Chain Hauberk
+							i(77761),	-- Replica Knight-Captain's Chain Hauberk
+							i(77611),	-- Replica Knight-Captain's Chain Leggings
+							i(77769),	-- Replica Knight-Captain's Chain Legguards
+							i(120983),	-- Replica Knight-Lieutenant's Chain Belt
+							i(77606),	-- Replica Knight-Lieutenant's Chain Boots
+							i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
+							i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
+							i(77722),	-- Replica Knight-Lieutenant's Chain Vices
+							i(77763),	-- Replica Lieutenant Commander's Chain Helm
+							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
+							i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
+							i(77762),	-- Replica Lieutenant Commander's Chain Shoulders
+							i(77672),	-- Replica Marshal's Chain Boots
+							i(77677),	-- Replica Marshal's Chain Grips
+							i(77675),	-- Replica Marshal's Chain Legguards
+						}),
+						cl(MAGE, {
+							i(77682),	-- Replica Field Marshal's Coronet
+							i(77679),	-- Replica Field Marshal's Silk Spaulders
+							i(77678),	-- Replica Field Marshal's Silk Vestments
+							i(77618),	-- Replica Knight-Captain's Silk Leggings
+							i(77777),	-- Replica Knight-Captain's Silk Legguards
+							i(77614),	-- Replica Knight-Captain's Silk Raiment
+							i(77785),	-- Replica Knight-Captain's Silk Tunic
+							i(77616),	-- Replica Knight-Lieutenant's Silk Boots
+							i(120994),	-- Replica Knight-Lieutenant's Silk Cinch
+							i(77617),	-- Replica Knight-Lieutenant's Silk Gloves
+							i(77725),	-- Replica Knight-Lieutenant's Silk Handwraps
+							i(77724),	-- Replica Knight-Lieutenant's Silk Walkers
+							i(77619),	-- Replica Lieutenant Commander's Crown
+							i(77784),	-- Replica Lieutenant Commander's Silk Cowl
+							i(77615),	-- Replica Lieutenant Commander's Silk Spaulders
+							i(77681),	-- Replica Marshal's Silk Gloves
+							i(77680),	-- Replica Marshal's Silk Leggings
+							i(77683),	-- Replica Marshal's Silk Footwraps
+						}),
+						cl(PALADIN, {
+							i(77687),	-- Replica Field Marshal's Lamellar Chestplate
+							i(77688),	-- Replica Field Marshal's Lamellar Faceguard
+							i(77689),	-- Replica Field Marshal's Lamellar Pauldrons
+							i(77626),	-- Replica Knight-Captain's Lamellar Breastplate
+							i(77662),	-- Replica Knight-Captain's Lamellar Breastplate
+							i(77623),	-- Replica Knight-Captain's Lamellar Leggings
+							i(77661),	-- Replica Knight-Captain's Lamellar Leggings
+							i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+							i(77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+							i(120981),	-- Replica Knight-Lieutenant's Lamellar Girdle
+							i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+							i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+							i(77624),	-- Replica Lieutenant Commander's Lamellar Headguard
+							i(77664),	-- Replica Lieutenant Commander's Lamellar Headguard
+							i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
+							i(77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
+							i(77684),	-- Replica Marshal's Lamellar Boots
+							i(77685),	-- Replica Marshal's Lamellar Gloves
+							i(77686),	-- Replica Marshal's Lamellar Legplates
+						}),
+						cl(PRIEST, {
+							i(77695),	-- Replica Field Marshal's Headdress
+							i(77692),	-- Replica Field Marshal's Satin Mantle
+							i(77694),	-- Replica Field Marshal's Satin Vestments
+							i(77628),	-- Replica Knight-Captain's Satin Leggings
+							i(77797),	-- Replica Knight-Captain's Satin Legguards
+							i(77630),	-- Replica Knight-Captain's Satin Robes
+							i(77799),	-- Replica Knight-Captain's Satin Tunic
+							i(120995),	-- Replica Knight-Lieutenant's Satin Belt
+							i(77632),	-- Replica Knight-Lieutenant's Satin Boots
+							i(77627),	-- Replica Knight-Lieutenant's Satin Gloves
+							i(77728),	-- Replica Knight-Lieutenant's Satin Handwraps
+							i(77729),	-- Replica Knight-Lieutenant's Satin Walkers
+							i(77629),	-- Replica Lieutenant Commander's Diadem
+							i(77631),	-- Replica Lieutenant Commander's Satin Amice
+							i(77800),	-- Replica Lieutenant Commander's Satin Hood
+							i(77801),	-- Replica Lieutenant Commander's Satin Mantle
+							i(77693),	-- Replica Marshal's Satin Gloves
+							i(77691),	-- Replica Marshal's Satin Pants
+							i(77690),	-- Replica Marshal's Satin Sandals
+						}),
+						cl(ROGUE, {
+							i(77701),	-- Replica Field Marshal's Leather Chestpiece
+							i(77697),	-- Replica Field Marshal's Leather Epaulets
+							i(77700),	-- Replica Field Marshal's Leather Mask
+							i(77633),	-- Replica Knight-Captain's Leather Armor
+							i(77811),	-- Replica Knight-Captain's Leather Chestpiece
+							i(77638),	-- Replica Knight-Captain's Leather Legguards
+							i(77812),	-- Replica Knight-Captain's Leather Legguards
+							i(77637),	-- Replica Knight-Lieutenant's Leather Boots
+							i(120993),	-- Replica Knight-Lieutenant's Leather Clasp
+							i(77634),	-- Replica Knight-Lieutenant's Leather Gauntlets
+							i(77731),	-- Replica Knight-Lieutenant's Leather Grips
+							i(77730),	-- Replica Knight-Lieutenant's Leather Walkers
+							i(77820),	-- Replica Lieutenant Commander's Leather Helm
+							i(77813),	-- Replica Lieutenant Commander's Leather Shoulders
+							i(77636),	-- Replica Lieutenant Commander's Leather Spaulders
+							i(77635),	-- Replica Lieutenant Commander's Leather Veil
+							i(77699),	-- Replica Marshal's Leather Footguards
+							i(77698),	-- Replica Marshal's Leather Handgrips
+							i(77696),	-- Replica Marshal's Leather Leggings
+							i(77639),	-- Replica Sergeant Major's Leather Armsplints
+							i(77640),	-- Replica Sergeant Major's Leather Armsplints
+						}),
+						cl(SHAMAN, {
+							i(77707),	-- Replica Field Marshal's Mail Armor
+							i(77704),	-- Replica Field Marshal's Mail Helm
+							i(77705),	-- Replica Field Marshal's Mail Spaulders
+							i(77641),	-- Replica Knight-Captain's Mail Hauberk
+							i(77643),	-- Replica Knight-Captain's Mail Legguards
+							i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
+							i(120982),	-- Replica Knight-Lieutenant's Mail Links
+							i(77646),	-- Replica Knight-Lieutenant's Mail Vices
+							i(77642),	-- Replica Lieutenant Commander's Mail Headguard
+							i(77645),	-- Replica Lieutenant Commander's Mail Pauldrons
+							i(77702),	-- Replica Marshal's Mail Boots
+							i(77703),	-- Replica Marshal's Mail Gauntlets
+							i(77706),	-- Replica Marshal's Mail Leggings
+						}),
+						cl(WARLOCK, {
+							i(77710),	-- Replica Field Marshal's Coronal
+							i(77712),	-- Replica Field Marshal's Dreadweave Robe
+							i(77709),	-- Replica Field Marshal's Dreadweave Shoulders
+							i(77649),	-- Replica Knight-Captain's Dreadweave Leggings
+							i(77847),	-- Replica Knight-Captain's Dreadweave Legguards
+							i(77648),	-- Replica Knight-Captain's Dreadweave Robe
+							i(77848),	-- Replica Knight-Captain's Dreadweave Tunic
+							i(77651),	-- Replica Knight-Lieutenant's Dreadweave Boots
+							i(77650),	-- Replica Knight-Lieutenant's Dreadweave Gloves
+							i(77733),	-- Replica Knight-Lieutenant's Dreadweave Handwraps
+							i(77732),	-- Replica Knight-Lieutenant's Dreadweave Walkers
+							i(120996),	-- Replica Knight-Lieutenant's Dreadweave Wrap
+							i(77844),	-- Replica Lieutenant Commander's Dreadweave Cowl
+							i(77647),	-- Replica Lieutenant Commander's Dreadweave Mantle
+							i(77850),	-- Replica Lieutenant Commander's Dreadweave Spaulders
+							i(77652),	-- Replica Lieutenant Commander's Headguard
+							i(77708),	-- Replica Marshal's Dreadweave Boots
+							i(77713),	-- Replica Marshal's Dreadweave Gloves
+							i(77711),	-- Replica Marshal's Dreadweave Leggings
+						}),
+						cl(WARRIOR, {
+							i(77714),	-- Replica Field Marshal's Plate Armor
+							i(77715),	-- Replica Field Marshal's Plate Helm
+							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
+							i(77654),	-- Replica Knight-Captain's Plate Chestguard
+							i(77858),	-- Replica Knight-Captain's Plate Hauberk
+							i(77655),	-- Replica Knight-Captain's Plate Leggings
+							i(77864),	-- Replica Knight-Captain's Plate Leggings
+							i(77658),	-- Replica Knight-Lieutenant's Plate Boots
+							i(77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
+							i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
+							i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
+							i(120977),	-- Replica Knight-Lieutenant's Plate Waistguard
+							i(77656),	-- Replica Lieutenant Commander's Plate Helm
+							i(77867),	-- Replica Lieutenant Commander's Plate Helmet
+							i(77657),	-- Replica Lieutenant Commander's Plate Pauldrons
+							i(77859),	-- Replica Lieutenant Commander's Plate Shoulders
+							i(77719),	-- Replica Marshal's Plate Boots
+							i(77716),	-- Replica Marshal's Plate Gauntlets
+							i(77717),	-- Replica Marshal's Plate Legguards
 						}),
 					},
 				}),
@@ -274,202 +297,223 @@ root(ROOTS.PVP, {
 					["groups"] = {
 						n(WEAPONS, {
 							i(77567),	-- Replica High Warlord's Battle Mace
-							i(77568),	-- Replica High Warlord's Spellblade
-							i(77569),	-- Replica High Warlord's Quickblade
-							i(77571),	-- Replica High Warlord's Destroyer
-							i(77572),	-- Replica High Warlord's Pig Sticker
-							i(77573),	-- Replica High Warlord's Pulverizer
 							i(77574),	-- Replica High Warlord's Battle Axe
-							i(77575),	-- Replica High Warlord's Claw
-							i(77576),	-- Replica High Warlord's Razor
-							i(77577),	-- Replica High Warlord's Greatsword
-							i(77578),	-- Replica High Warlord's Recurve
-							i(77579),	-- Replica High Warlord's Street Sweeper
-							i(77580),	-- Replica High Warlord's Cleaver
-							i(77581),	-- Replica High Warlord's War Staff
 							i(77582),	-- Replica High Warlord's Blade
 							i(77584),	-- Replica High Warlord's Bludgeon
+							i(77575),	-- Replica High Warlord's Claw
+							i(77580),	-- Replica High Warlord's Cleaver
 							i(77585),	-- Replica High Warlord's Crossbow
+							i(77571),	-- Replica High Warlord's Destroyer
+							i(77577),	-- Replica High Warlord's Greatsword
+							i(77572),	-- Replica High Warlord's Pig Sticker
+							i(77573),	-- Replica High Warlord's Pulverizer
+							i(77569),	-- Replica High Warlord's Quickblade
+							i(77576),	-- Replica High Warlord's Razor
+							i(77578),	-- Replica High Warlord's Recurve
+							i(77597),	-- Replica High Warlord's Shield Wall
+							i(77568),	-- Replica High Warlord's Spellblade
+							i(77579),	-- Replica High Warlord's Street Sweeper
 							i(77592),	-- Replica High Warlord's Tome of Mending
 							i(77593),	-- Replica High Warlord's Tome of Destruction
-							i(77597),	-- Replica High Warlord's Shield Wall
+							i(77581),	-- Replica High Warlord's War Staff
 						}),
-						-- Horde cloth + leather
-						i(77900),	-- Replica Warlord's Satin Cowl
-						i(77874),	-- Replica Warlord's Dragonhide Helmet
-						i(77919),	-- Replica Warlord's Dreadweave Robe
-						i(77917),	-- Replica Warlord's Dreadweave Hood
-						i(77909),	-- Replica Warlord's Leather Helm
-						i(77908),	-- Replica Warlord's Leather Breastplate
-						i(77907),	-- Replica Warlord's Leather Spaulders
-						i(77901),	-- Replica Warlord's Satin Robes
-						i(77920),	-- Replica Warlord's Dreadweave Mantle
-						i(77899),	-- Replica Warlord's Satin Mantle
-						i(77890),	-- Replica Warlord's Silk Amice
-						i(77889),	-- Replica Warlord's Silk Raiment
-						i(77886),	-- Replica Warlord's Silk Cowl
-						i(77878),	-- Replica Warlord's Dragonhide Epaulets
-						i(77876),	-- Replica Warlord's Dragonhide Hauberk
-						i(77921),	-- Replica General's Dreadweave Pants
-						i(77903),	-- Replica General's Satin Boots
-						i(77902),	-- Replica General's Satin Leggings
-						i(77916),	-- Replica General's Dreadweave Gloves
-						i(77752),	-- Replica Champion's Dragonhide Headguard
-						i(77746),	-- Replica Champion's Dragonhide Shoulders
-						i(77796),	-- Replica Champion's Satin Mantle
-						i(77918),	-- Replica General's Dreadweave Boots
-						i(77898),	-- Replica General's Satin Gloves
-						i(77891),	-- Replica General's Silk Trousers
-						i(77778),	-- Replica Champion's Silk Cowl
-						i(77779),	-- Replica Champion's Silk Mantle
-						i(77888),	-- Replica General's Silk Boots
-						i(77887),	-- Replica General's Silk Handguards
-						i(77815),	-- Replica Champion's Leather Helm
-						i(77795),	-- Replica Champion's Satin Hood
-						i(77819),	-- Replica Champion's Leather Shoulders
-						i(77879),	-- Replica General's Dragonhide Gloves
-						i(77906),	-- Replica General's Leather Legguards
-						i(77877),	-- Replica General's Dragonhide Leggings
-						i(77905),	-- Replica General's Leather Mitts
-						i(77875),	-- Replica General's Dragonhide Boots
-						i(77904),	-- Replica General's Leather Treads
-						i(77845),	-- Replica Champion's Dreadweave Cowl
-						i(77846),	-- Replica Champion's Dreadweave Spaulders
-						i(77781),	-- Replica Legionnaire's Silk Tunic
-						i(77782),	-- Replica Legionnaire's Silk Legguards
-						i(77798),	-- Replica Legionnaire's Satin Legguards
-						i(77802),	-- Replica Legionnaire's Satin Tunic
-						i(77818),	-- Replica Legionnaire's Leather Legguards
-						i(77749),	-- Replica Legionnaire's Dragonhide Chestpiece
-						i(77852),	-- Replica Legionnaire's Dreadweave Legguards
-						i(77744),	-- Replica Legionnaire's Dragonhide Leggings
-						i(77821),	-- Replica Legionnaire's Leather Chestpiece
-						i(77851),	-- Replica Legionnaire's Dreadweave Tunic
-						i(77750),	-- Replica Blood Guard's Dragonhide Grips
-						i(77803),	-- Replica Blood Guard's Satin Handwraps
-						i(77804),	-- Replica Blood Guard's Satin Walkers
-						i(120984),	-- Replica Blood Guard's Dragonhide Belt
-						i(120988),	-- Replica Blood Guard's Satin Waistwrap
-						i(120987),	-- Replica Blood Guard's Silk Cinch
-						i(120986),	-- Replica Blood Guard's Dreadweave Wrap
-						i(77747),	-- Replica Blood Guard's Dragonhide Treads
-						i(77783),	-- Replica Blood Guard's Silk Handwraps
-						i(77773),	-- Replica Blood Guard's Silk Walkers
-						i(77843),	-- Replica Blood Guard's Dreadweave Walkers
-						i(120985),	-- Replica Blood Guard's Leather Clasp
-						i(77816),	-- Replica Blood Guard's Leather Walkers
-						i(77849),	-- Replica Blood Guard's Dreadweave Handwraps
-						i(77817),	-- Replica Blood Guard's Leather Grips
-						i(77791),	-- Replica Blood Guard's Satin Gloves
-						i(77842),	-- Replica Champion's Dreadweave Shoulders
-						i(77840),	-- Replica Blood Guard's Dreadweave Gloves
-						i(77839),	-- Replica Blood Guard's Dreadweave Boots
-						i(77838),	-- Replica Legionnaire's Dreadweave Leggings
-						i(77837),	-- Replica Champion's Dreadweave Hood
-						i(77738),	-- Replica Legionnaire's Dragonhide Breastplate
-						i(77737),	-- Replica Champion's Dragonhide Spaulders
-						i(77814),	-- Replica First Sergeant's Leather Armguards
-						i(77810),	-- Replica Blood Guard's Leather Vices
-						i(77809),	-- Replica Blood Guard's Leather Treads
-						i(77808),	-- Replica Legionnaire's Leather Hauberk
-						i(77807),	-- Replica Legionnaire's Leather Leggings
-						i(77806),	-- Replica Champion's Leather Mantle
-						i(77805),	-- Replica Champion's Leather Headguard
-						i(77794),	-- Replica Legionnaire's Satin Trousers
-						i(77793),	-- Replica Legionnaire's Satin Vestments
-						i(77792),	-- Replica Champion's Satin Cowl
-						i(77841),	-- Replica Legionnaire's Dreadweave Robe
-						i(77790),	-- Replica Blood Guard's Satin Boots
-						i(77789),	-- Replica Champion's Satin Shoulderpads
-						i(77739),	-- Replica Champion's Dragonhide Helm
-						i(77786),	-- Replica First Sergeant's Silk Cuffs
-						i(77776),	-- Replica Champion's Silk Hood
-						i(77775),	-- Replica Blood Guard's Silk Gloves
-						i(77774),	-- Replica Legionnaire's Silk Pants
-						i(77772),	-- Replica Champion's Silk Shoulderpads
-						i(77771),	-- Replica Blood Guard's Silk Footwraps
-						i(77770),	-- Replica Legionnaire's Silk Robes
-						i(77740),	-- Replica Legionnaire's Dragonhide Trousers
-						i(77743),	-- Replica First Sergeant's Dragonhide Armguards
-						i(77741),	-- Replica Blood Guard's Dragonhide Gauntlets
-						i(77736),	-- Replica Blood Guard's Dragonhide Boots
-						i(77753),	-- Replica First Sergeant's Dragonhide Armguards
-						i(77788),	-- Replica First Sergeant's Silk Cuffs
-						i(77822),	-- Replica First Sergeant's Leather Armguards
-
-						-- Horde mail + plate
-						i(77897),	-- Replica Warlord's Lamellar Pauldrons
-						i(77880),	-- Replica Warlord's Chain Shoulders
-						i(77923),	-- Replica Warlord's Plate Shoulders
-						i(77914),	-- Replica Warlord's Mail Armor
-						i(77913),	-- Replica Warlord's Mail Helm
-						i(77910),	-- Replica Warlord's Mail Spaulders
-						i(77924),	-- Replica Warlord's Plate Armor
-						i(77927),	-- Replica Warlord's Plate Headpiece
-						i(77894),	-- Replica Warlord's Lamellar Faceguard
-						i(77892),	-- Replica Warlord's Lamellar Chestplate
-						i(77883),	-- Replica Warlord's Chain Helmet
-						i(77882),	-- Replica Warlord's Chain Chestpiece
-						i(77896),	-- Replica General's Lamellar Legplates
-						i(77911),	-- Replica General's Mail Boots
-						i(77926),	-- Replica General's Plate Leggings
-						i(77922),	-- Replica General's Plate Boots
-						i(77765),	-- Replica Champion's Chain Helm
-						i(77831),	-- Replica Champion's Mail Pauldrons
-						i(77832),	-- Replica Champion's Mail Headguard
-						i(77895),	-- Replica General's Lamellar Gloves
-						i(77766),	-- Replica Champion's Chain Shoulders
-						i(77893),	-- Replica General's Lamellar Boots
-						i(77915),	-- Replica General's Mail Leggings
-						i(77885),	-- Replica General's Chain Gloves
-						i(77884),	-- Replica General's Chain Boots
-						i(77925),	-- Replica General's Plate Gauntlets
-						i(77871),	-- Replica Champion's Lamellar Headguard
-						i(77881),	-- Replica General's Chain Legguards
-						i(77912),	-- Replica General's Mail Gauntlets
-						i(77872),	-- Replica Champion's Lamellar Shoulders
-						i(77868),	-- Replica Champion's Plate Shoulders
-						i(77869),	-- Replica Champion's Plate Helm
-						i(77866),	-- Replica Legionnaire's Plate Leggings
-						i(77829),	-- Replica Legionnaire's Mail Legguards
-						i(77873),	-- Replica Legionnaire's Lamellar Breastplate
-						i(77865),	-- Replica Legionnaire's Plate Hauberk
-						i(77834),	-- Replica Legionnaire's Mail Hauberk
-						i(77663),	-- Replica Legionnaire's Lamellar Leggings
-						i(77760),	-- Replica Legionnaire's Chain Legguards
-						i(77768),	-- Replica Legionnaire's Chain Hauberk
-						i(77764),	-- Replica Blood Guard's Chain Vices
-						i(120991),	-- Replica Blood Guard's Chain Belt
-						i(77833),	-- Replica Blood Guard's Mail Vices
-						i(77830),	-- Replica Blood Guard's Mail Greaves
-						i(77863),	-- Replica Blood Guard's Plate Gauntlets
-						i(77767),	-- Replica Blood Guard's Chain Greaves
-						i(77862),	-- Replica Blood Guard's Plate Greaves
-						i(77928),	-- Replica Blood Guard's Lamellar Sabatons
-						i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
-						i(120976),	-- Replica Blood Guard's Plate Waistguard
-						i(120980),	-- Replica Blood Guard's Lamellar Girdle
-						i(120990),	-- Replica Blood Guard's Mail Links
-						i(77861),	-- Replica First Sergeant's Plate Bracers
-						i(77828),	-- Replica Blood Guard's Mail Walkers
-						i(77827),	-- Replica Champion's Mail Helm
-						i(77826),	-- Replica Champion's Mail Shoulders
-						i(77860),	-- Replica Blood Guard's Plate Gloves
-						i(77824),	-- Replica Legionnaire's Mail Chestpiece
-						i(77823),	-- Replica Blood Guard's Mail Grips
-						i(77857),	-- Replica Legionnaire's Plate Legguards
-						i(77856),	-- Replica Champion's Plate Pauldrons
-						i(77759),	-- Replica Champion's Chain Headguard
-						i(77758),	-- Replica Legionnaire's Chain Leggings
-						i(77757),	-- Replica Legionnaire's Chain Breastplate
-						i(77756),	-- Replica Blood Guard's Chain Gauntlets
-						i(77755),	-- Replica Blood Guard's Chain Boots
-						i(77855),	-- Replica Champion's Plate Headguard
-						i(77854),	-- Replica Legionnaire's Plate Armor
-						i(77853),	-- Replica Blood Guard's Plate Boots
-						i(77835),	-- Replica First Sergeant's Mail Wristguards
-						i(77754),	-- Replica Champion's Chain Pauldrons
-						i(77825),	-- Replica Legionnaire's Mail Leggings
+						filter(CLOTH, {
+							i(77786),	-- Replica First Sergeant's Silk Cuffs
+							i(77788),	-- Replica First Sergeant's Silk Cuffs
+						}),
+						filter(MAIL, {
+							i(77835),	-- Replica First Sergeant's Mail Wristguards
+						}),
+						filter(PLATE, {
+							i(77861),	-- Replica First Sergeant's Plate Bracers
+						}),
+						cl(DRUID, {
+							i(120984),	-- Replica Blood Guard's Dragonhide Belt
+							i(77736),	-- Replica Blood Guard's Dragonhide Boots
+							i(77741),	-- Replica Blood Guard's Dragonhide Gauntlets
+							i(77750),	-- Replica Blood Guard's Dragonhide Grips
+							i(77747),	-- Replica Blood Guard's Dragonhide Treads
+							i(77752),	-- Replica Champion's Dragonhide Headguard
+							i(77739),	-- Replica Champion's Dragonhide Helm
+							i(77737),	-- Replica Champion's Dragonhide Spaulders
+							i(77746),	-- Replica Champion's Dragonhide Shoulders
+							i(77743),	-- Replica First Sergeant's Dragonhide Armguards
+							i(77753),	-- Replica First Sergeant's Dragonhide Armguards
+							i(77875),	-- Replica General's Dragonhide Boots
+							i(77879),	-- Replica General's Dragonhide Gloves
+							i(77877),	-- Replica General's Dragonhide Leggings
+							i(77738),	-- Replica Legionnaire's Dragonhide Breastplate
+							i(77749),	-- Replica Legionnaire's Dragonhide Chestpiece
+							i(77744),	-- Replica Legionnaire's Dragonhide Leggings
+							i(77740),	-- Replica Legionnaire's Dragonhide Trousers
+							i(77878),	-- Replica Warlord's Dragonhide Epaulets
+							i(77876),	-- Replica Warlord's Dragonhide Hauberk
+							i(77874),	-- Replica Warlord's Dragonhide Helmet
+						}),
+						cl(HUNTER, {
+							i(120991),	-- Replica Blood Guard's Chain Belt
+							i(77755),	-- Replica Blood Guard's Chain Boots
+							i(77756),	-- Replica Blood Guard's Chain Gauntlets
+							i(77767),	-- Replica Blood Guard's Chain Greaves
+							i(77764),	-- Replica Blood Guard's Chain Vices
+							i(77759),	-- Replica Champion's Chain Headguard
+							i(77765),	-- Replica Champion's Chain Helm
+							i(77754),	-- Replica Champion's Chain Pauldrons
+							i(77766),	-- Replica Champion's Chain Shoulders
+							i(77884),	-- Replica General's Chain Boots
+							i(77885),	-- Replica General's Chain Gloves
+							i(77881),	-- Replica General's Chain Legguards
+							i(77757),	-- Replica Legionnaire's Chain Breastplate
+							i(77768),	-- Replica Legionnaire's Chain Hauberk
+							i(77758),	-- Replica Legionnaire's Chain Leggings
+							i(77760),	-- Replica Legionnaire's Chain Legguards
+							i(77882),	-- Replica Warlord's Chain Chestpiece
+							i(77883),	-- Replica Warlord's Chain Helmet
+							i(77880),	-- Replica Warlord's Chain Shoulders
+						}),
+						cl(MAGE, {
+							i(120987),	-- Replica Blood Guard's Silk Cinch
+							i(77771),	-- Replica Blood Guard's Silk Footwraps
+							i(77775),	-- Replica Blood Guard's Silk Gloves
+							i(77783),	-- Replica Blood Guard's Silk Handwraps
+							i(77773),	-- Replica Blood Guard's Silk Walkers
+							i(77778),	-- Replica Champion's Silk Cowl
+							i(77776),	-- Replica Champion's Silk Hood
+							i(77779),	-- Replica Champion's Silk Mantle
+							i(77772),	-- Replica Champion's Silk Shoulderpads
+							i(77888),	-- Replica General's Silk Boots
+							i(77887),	-- Replica General's Silk Handguards
+							i(77891),	-- Replica General's Silk Trousers
+							i(77782),	-- Replica Legionnaire's Silk Legguards
+							i(77774),	-- Replica Legionnaire's Silk Pants
+							i(77770),	-- Replica Legionnaire's Silk Robes
+							i(77781),	-- Replica Legionnaire's Silk Tunic
+							i(77890),	-- Replica Warlord's Silk Amice
+							i(77886),	-- Replica Warlord's Silk Cowl
+							i(77889),	-- Replica Warlord's Silk Raiment
+						}),
+						cl(PALADIN, {
+							i(77929),	-- Replica Blood Guard's Lamellar Gauntlets
+							i(120980),	-- Replica Blood Guard's Lamellar Girdle
+							i(77928),	-- Replica Blood Guard's Lamellar Sabatons
+							i(77871),	-- Replica Champion's Lamellar Headguard
+							i(77872),	-- Replica Champion's Lamellar Shoulders
+							i(77893),	-- Replica General's Lamellar Boots
+							i(77895),	-- Replica General's Lamellar Gloves
+							i(77896),	-- Replica General's Lamellar Legplates
+							i(77873),	-- Replica Legionnaire's Lamellar Breastplate
+							i(77663),	-- Replica Legionnaire's Lamellar Leggings
+							i(77892),	-- Replica Warlord's Lamellar Chestplate
+							i(77894),	-- Replica Warlord's Lamellar Faceguard
+							i(77897),	-- Replica Warlord's Lamellar Pauldrons
+						}),
+						cl(PRIEST, {
+							i(77790),	-- Replica Blood Guard's Satin Boots
+							i(77791),	-- Replica Blood Guard's Satin Gloves
+							i(77803),	-- Replica Blood Guard's Satin Handwraps
+							i(120988),	-- Replica Blood Guard's Satin Waistwrap
+							i(77804),	-- Replica Blood Guard's Satin Walkers
+							i(77792),	-- Replica Champion's Satin Cowl
+							i(77795),	-- Replica Champion's Satin Hood
+							i(77796),	-- Replica Champion's Satin Mantle
+							i(77789),	-- Replica Champion's Satin Shoulderpads
+							i(77903),	-- Replica General's Satin Boots
+							i(77898),	-- Replica General's Satin Gloves
+							i(77902),	-- Replica General's Satin Leggings
+							i(77798),	-- Replica Legionnaire's Satin Legguards
+							i(77794),	-- Replica Legionnaire's Satin Trousers
+							i(77802),	-- Replica Legionnaire's Satin Tunic
+							i(77793),	-- Replica Legionnaire's Satin Vestments
+							i(77900),	-- Replica Warlord's Satin Cowl
+							i(77899),	-- Replica Warlord's Satin Mantle
+							i(77901),	-- Replica Warlord's Satin Robes
+						}),
+						cl(ROGUE, {
+							i(120985),	-- Replica Blood Guard's Leather Clasp
+							i(77817),	-- Replica Blood Guard's Leather Grips
+							i(77809),	-- Replica Blood Guard's Leather Treads
+							i(77810),	-- Replica Blood Guard's Leather Vices
+							i(77816),	-- Replica Blood Guard's Leather Walkers
+							i(77805),	-- Replica Champion's Leather Headguard
+							i(77815),	-- Replica Champion's Leather Helm
+							i(77806),	-- Replica Champion's Leather Mantle
+							i(77819),	-- Replica Champion's Leather Shoulders
+							i(77814),	-- Replica First Sergeant's Leather Armguards
+							i(77822),	-- Replica First Sergeant's Leather Armguards
+							i(77906),	-- Replica General's Leather Legguards
+							i(77905),	-- Replica General's Leather Mitts
+							i(77904),	-- Replica General's Leather Treads
+							i(77821),	-- Replica Legionnaire's Leather Chestpiece
+							i(77808),	-- Replica Legionnaire's Leather Hauberk
+							i(77807),	-- Replica Legionnaire's Leather Leggings
+							i(77818),	-- Replica Legionnaire's Leather Legguards
+							i(77908),	-- Replica Warlord's Leather Breastplate
+							i(77909),	-- Replica Warlord's Leather Helm
+							i(77907),	-- Replica Warlord's Leather Spaulders
+						}),
+						cl(SHAMAN, {
+							i(77830),	-- Replica Blood Guard's Mail Greaves
+							i(77823),	-- Replica Blood Guard's Mail Grips
+							i(120990),	-- Replica Blood Guard's Mail Links
+							i(77833),	-- Replica Blood Guard's Mail Vices
+							i(77828),	-- Replica Blood Guard's Mail Walkers
+							i(77832),	-- Replica Champion's Mail Headguard
+							i(77827),	-- Replica Champion's Mail Helm
+							i(77831),	-- Replica Champion's Mail Pauldrons
+							i(77826),	-- Replica Champion's Mail Shoulders
+							i(77911),	-- Replica General's Mail Boots
+							i(77912),	-- Replica General's Mail Gauntlets
+							i(77915),	-- Replica General's Mail Leggings
+							i(77824),	-- Replica Legionnaire's Mail Chestpiece
+							i(77834),	-- Replica Legionnaire's Mail Hauberk
+							i(77825),	-- Replica Legionnaire's Mail Leggings
+							i(77829),	-- Replica Legionnaire's Mail Legguards
+							i(77914),	-- Replica Warlord's Mail Armor
+							i(77913),	-- Replica Warlord's Mail Helm
+							i(77910),	-- Replica Warlord's Mail Spaulders
+						}),
+						cl(WARLOCK, {
+							i(77839),	-- Replica Blood Guard's Dreadweave Boots
+							i(77840),	-- Replica Blood Guard's Dreadweave Gloves
+							i(77849),	-- Replica Blood Guard's Dreadweave Handwraps
+							i(77843),	-- Replica Blood Guard's Dreadweave Walkers
+							i(120986),	-- Replica Blood Guard's Dreadweave Wrap
+							i(77845),	-- Replica Champion's Dreadweave Cowl
+							i(77837),	-- Replica Champion's Dreadweave Hood
+							i(77842),	-- Replica Champion's Dreadweave Shoulders
+							i(77846),	-- Replica Champion's Dreadweave Spaulders
+							i(77918),	-- Replica General's Dreadweave Boots
+							i(77916),	-- Replica General's Dreadweave Gloves
+							i(77921),	-- Replica General's Dreadweave Pants
+							i(77838),	-- Replica Legionnaire's Dreadweave Leggings
+							i(77852),	-- Replica Legionnaire's Dreadweave Legguards
+							i(77841),	-- Replica Legionnaire's Dreadweave Robe
+							i(77851),	-- Replica Legionnaire's Dreadweave Tunic
+							i(77917),	-- Replica Warlord's Dreadweave Hood
+							i(77920),	-- Replica Warlord's Dreadweave Mantle
+							i(77919),	-- Replica Warlord's Dreadweave Robe
+						}),
+						cl(WARRIOR, {
+							i(77853),	-- Replica Blood Guard's Plate Boots
+							i(77863),	-- Replica Blood Guard's Plate Gauntlets
+							i(77860),	-- Replica Blood Guard's Plate Gloves
+							i(77862),	-- Replica Blood Guard's Plate Greaves
+							i(120976),	-- Replica Blood Guard's Plate Waistguard
+							i(77855),	-- Replica Champion's Plate Headguard
+							i(77869),	-- Replica Champion's Plate Helm
+							i(77856),	-- Replica Champion's Plate Pauldrons
+							i(77868),	-- Replica Champion's Plate Shoulders
+							i(77922),	-- Replica General's Plate Boots
+							i(77925),	-- Replica General's Plate Gauntlets
+							i(77926),	-- Replica General's Plate Leggings
+							i(77854),	-- Replica Legionnaire's Plate Armor
+							i(77865),	-- Replica Legionnaire's Plate Hauberk
+							i(77866),	-- Replica Legionnaire's Plate Leggings
+							i(77857),	-- Replica Legionnaire's Plate Legguards
+							i(77924),	-- Replica Warlord's Plate Armor
+							i(77927),	-- Replica Warlord's Plate Headpiece
+							i(77923),	-- Replica Warlord's Plate Shoulders
+						}),
 					},
 				}),
 			})),

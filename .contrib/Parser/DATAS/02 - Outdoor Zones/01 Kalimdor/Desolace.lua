@@ -2753,10 +2753,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.0, 53.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(20973, {	-- Design: Blazing Citrine Ring (RECIPE!)
-							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
+						applyclassicphase(TBC_PHASE_ONE, i(20973, {	-- Design: Blazing Citrine Ring (RECIPE!)
+							["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 							["isLimited"] = true,
-						}),
+						})),
 						i(7114, {	-- Pattern: Azure Silk Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),

@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 			},
 		}),
-		ach(8903, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH } }, {	-- Mistwalker
+		challengemaster(ach(8903, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH } }, {	-- Mistwalker
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				8434,	-- Challenge Master: Gate of the Setting Sun
@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			["groups"] = {
 				title(255),	-- Mistwalker <Name>
 			},
-		})),
+		}))),
 		ach(6433, {	-- Realm First! Challenge Conqueror: Gold
 			["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 		}),

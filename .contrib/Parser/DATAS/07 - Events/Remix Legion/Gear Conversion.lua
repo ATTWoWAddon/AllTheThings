@@ -1,17 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[GEAR_CONVERSION = createHeader({
-	readable = "Gear Conversion",
-	icon = 1391675,
-	text = {
-		en = "Gear Conversion",
-		tw = "裝備轉換",
-	},
-});
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(GEAR_CONVERSION, {
-		["description"] = "These items were obtained by characters created during the MoP Remix Event and were automatically transferred to Retail when the event ended.",
 		["groups"] = {
 			cl(DEATHKNIGHT, {
 				i(218130, {	-- Adventurer's Footlocker
@@ -71,6 +62,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 				}),
 			}),
 			cl(DEMONHUNTER, {
+				-- No Adventurer's Footlocker
 				i(160513),	-- Illidari Warglaive
 				i(154737),	-- Illidari Blindfold
 				i(154747),	-- Illidari Chain
@@ -160,23 +152,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 					i(153779),	-- Springrain Idol of Wisdom
 					i(153782),	-- Springrain Stone of Wisdom
 				}),
-			}),
-			cl(EVOKER, {
-				i(194522),	-- Blue Winglord's Staff
-				i(194523),	-- Blue Winglord's Chain
-				i(194524),	-- Blue Winglord's Boots
-				i(194525),	-- Blue Winglord's Bracers
-				i(194526),	-- Blue Winglord's Hauberk
-				i(194527),	-- Blue Winglord's Grips
-				i(194528),	-- Blue Winglord's Coif
-				i(194529),	-- Blue Winglord's Greaves
-				i(194530),	-- Blue Winglord's Shoulders
-				i(194531),	-- Claw-Carved Figurine
-				i(194532),	-- Blue Winglord's Insignia
-				i(194533),	-- Blue Winglord's Ring
-				i(194534),	-- Blue Winglord's Loop
-				i(194535),	-- Cobalt Winglord's Cloak
-				i(194536),	-- Blue Winglord's Amulet
 			}),
 			cl(HUNTER, {
 				i(218130, {	-- Adventurer's Footlocker
@@ -570,4 +545,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 			i(223953),	-- Timerunner's Parting Pack
 		},
 	}),
-}))));--]]
+})));

@@ -524,6 +524,8 @@
 127274@@@Jade Water Strider
 127278@@@Golden Water Strider
 1238816@@@Envoy of Sa'bak
+5.5.1.62856
+1249659@@@Sha-scarred Drake
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -2012,6 +2014,10 @@
 451489@@@Siesbarg
 11.0.0.55419
 453785@@@Earthen Ordinant's Ramolith
+11.0.0.55939
+454682@@@Startouched Furline
+457485@@@Grizzly Hills Packmaster
+459784@@@Golden Ashes of Al'ar
 11.0.0.55960
 464443@@@Harmonious Salutations Bear
 11.0.2.55522
@@ -2024,7 +2030,6 @@
 11.0.2.56380
 448850@@@Kah, Legend of the Deep
 11.0.2.56625
-457485@@@Grizzly Hills Packmaster
 11.0.5.56487
 428013@@@Incognitro, the Indecipherable Felcycle
 428067@@@Hateforged Blazecycle
@@ -2036,7 +2041,6 @@
 11.0.5.57147
 449132@@@Blackrock Warsaber
 449142@@@Kaldorei War Wolf
-454682@@@Startouched Furline
 11.0.5.57292
 465235@@@Trader's Gilded Brutosaur
 466811@@@Chaos-Forged Gryphon
@@ -2069,7 +2073,6 @@
 11.0.7.57641
 303767@@@Honeyback Hivemother
 11.0.7.58608
-459784@@@Golden Ashes of Al'ar
 468205@@@Timbered Sky Snake
 1216542@@@Blazing Royal Fire Hawk
 11.0.7.59302
@@ -2231,6 +2234,10 @@
 1227192@@@Herald of Sa'bak
 11.2.0.62493
 1243589@@@Void-Forged Overseer
+11.2.0.62706
+1234303@@@Voidwing Dragonhawk
+1234305@@@Lightwing Dragonhawk
+1239138@@@Voidlight Surger
 11.2.5.62554
 428062@@@Jeweled Sapphire Scarab
 1229264@@@Bloodguard Fel Bat
@@ -2296,3 +2303,12 @@
 1255480@@@Felscorned Netherlord's Dreadsteed
 1255482@@@Felscorned War Wyrm
 1256677@@@Cerulean Phase-Hunter
+11.2.5.62687
+1248309@@@Kalu'ak Crest-Horn
+1250287@@@Floestrider Crest-Horn
+1250288@@@Cragstepper Crest-Horn
+1251279@@@Fel-Scarred Mana Ray
+1251680@@@Highlands Gobbler
+1251685@@@Quirky Turkey
+1251689@@@Murky Turkey
+1251690@@@Prized Turkey

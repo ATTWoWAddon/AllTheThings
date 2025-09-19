@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 	n(QUESTS, {
 		q(81930, {	-- The War Within [A]
 			["races"] = ALLIANCE_ONLY,
@@ -40,12 +40,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 			["provider"] = { "n", 214651 },	-- Moira Thaurissan
 			["coord"] = { 40.5, 57.7, AEGWYNNS_GALLERY },
 		}),
-		q(84446, {	-- Renown of Khaz Algar
-			["sourceQuests"] = { 79197 },	-- Surface Bound
-			["provider"] = { "n", 216149 },	-- Moira Thaurissan
-			["coord"] = { 36.1, 80.3, DORNOGAL },
-			["lockCriteria"] = { 1, "renownID", FACTION_COUNCIL_OF_DORNOGAL + 0.05 },	-- Council of Dornogal, Rank 5
-		}),
 		header(HEADERS.Achievement, 20597, {	-- The War Within
 			header(HEADERS.AchCriteria, 20597.01, {	-- Against the Current
 				------ Chapter 1 ------
@@ -56,6 +50,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["groups"] = {
 						hqt(79573, name(HEADERS.AchCriteria, 40725.02)),	-- War Within Delves: Endgame [Complete Campaign]
 					},
+				}),
+				q(84446, {	-- Renown of Khaz Algar
+					["sourceQuests"] = { 79197 },	-- Surface Bound
+					["provider"] = { "n", 216149 },	-- Moira Thaurissan
+					["coord"] = { 36.1, 80.3, DORNOGAL },
+					["lockCriteria"] = { 1, "renownID", FACTION_COUNCIL_OF_DORNOGAL + 0.05 },	-- Council of Dornogal, Rank 5
 				}),
 				q(79333, {	-- The Fleet Arrives
 					["sourceQuests"] = { 79197 },	-- Surface Bound
@@ -663,7 +663,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				}),
 				------ Stay awhile and listen ------
 				hqt(86818, {	-- Stay awhile and listen: Archamge Aethas Sunreaver
-					["name"] = "Stay awhile and listen: Archamge Aethas Sunreaver",
+					["name"] = "Stay awhile and listen: Archmage Aethas Sunreaver",
 					["description"] = "Dialogue becomes available after accepting 'Magic-stealing Kobolds' (83553). Wait for Kalecgos to cast his Mirror Images and fly away.",
 					["sourceQuests"] = { 83539 },	-- Feeling Blue
 					["provider"] = { "n", 226895 },	-- Archmage Aethas Sunreaver
@@ -689,7 +689,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 								{ 64.3, 43.0, ISLE_OF_DORN },
 								{ 63.2, 45.2, ISLE_OF_DORN },
 							},
-							["groups"] = { i(226162), },	-- Arcane Manuscript (QI!)
+							["groups"] = { i(226162) },	-- Arcane Manuscript (QI!)
 						}),
 					},
 				}),
@@ -743,15 +743,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["groups"] = {
 						o(465294, { -- Antonidas' Introduction to Arcane Magic
 							["coord"] = { 35.7, 51.4, AZJ_KAHET },
-							["groups"] = { i(228820), },	-- Antonidas' Introduction to Arcane Magic (QI!)
+							["groups"] = { i(228820) },	-- Antonidas' Introduction to Arcane Magic (QI!)
 						}),
 						o(465295, { -- Medivh's Karazhan Schematics
 							["coord"] = { 35.1, 51.2, AZJ_KAHET },
-							["groups"] = { i(228821), },	-- Medivh's Karazhan Schematics (QI!)
+							["groups"] = { i(228821) },	-- Medivh's Karazhan Schematics (QI!)
 						}),
 						o(465300, { -- Thalen Songweaver's Notes
 							["coord"] = { 36.1, 52.6, AZJ_KAHET },
-							["groups"] = { i(228823), },	-- Thalen Songweaver's Notes (QI!)
+							["groups"] = { i(228823) },	-- Thalen Songweaver's Notes (QI!)
 						}),
 					},
 				}),
@@ -779,10 +779,5 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				--
 			}),
 		})),
-		-- TODO: probably need a better place?
-		q(91624, {	-- Spark of Starlight
-			["provider"] = { "i", 231757 },	-- Fractured Spark of Starlight
-			["timeline"] = { ADDED_11_2_0 },
-		}),
 	}),
 })));

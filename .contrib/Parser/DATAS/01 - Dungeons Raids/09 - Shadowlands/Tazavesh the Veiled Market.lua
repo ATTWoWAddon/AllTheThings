@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
 		["coords"] = {
 			{ 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
@@ -19,13 +19,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
+		["timeline"] = { ADDED_9_1_0 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61093, {	-- Flawless Transaction
-					["timeline"] = { ADDED_11_2_0_SEASONSTART },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_PH_PREPATCH },
 				}),
 				ach(61092, {	-- Hard Mode: Tazavesh, the Veiled Market
-					["timeline"] = { ADDED_11_2_0_SEASONSTART },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_PH_PREPATCH },
 				}),
 				ach(15190, {	-- Mischief!
 					crit(52460, {	-- Pickle
@@ -695,4 +696,16 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			-- #endif
 		},
 	}),
-})));
+}))
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
+	inst(1194, {	-- Tazavesh, the Veiled Market
+		["timeline"] = { ADDED_9_1_0 },
+		["groups"] = {
+			q(92651, {	-- Deathless Attempt Finished
+				["name"] = "Deathless Attempt Finished",
+				["isWeekly"] = true,
+			}),
+		},
+	}),
+}))

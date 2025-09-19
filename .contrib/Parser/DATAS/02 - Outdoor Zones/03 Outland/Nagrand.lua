@@ -1963,8 +1963,9 @@ root(ROOTS.Zones, {
 							30750,	-- Draenic Warblade
 						}},
 						["groups"] = pvp({
-							i(24208, {	-- Design: Mystic Dawnstone
+							i(24208, {	-- Design: Mystic Dawnstone (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_2_1_3 },
 							}),
 							i(30598, {	-- Don Amancio's Heart
 								["isLimited"] = true,
@@ -2026,8 +2027,9 @@ root(ROOTS.Zones, {
 							i(30570, {	-- Arkadian Claymore
 								["isLimited"] = true,
 							}),
-							i(24208, {	-- Design: Mystic Dawnstone
+							i(24208, {	-- Design: Mystic Dawnstone (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_2_1_3 },
 							}),
 							i(30571, {	-- Don Rodrigo's Heart
 								["isLimited"] = true,
@@ -2184,8 +2186,9 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 1 },	-- Halaa Research Token
 								},
 							}),
-							i(33783, {	-- Design: Steady Talasite
+							i(33783, {	-- Design: Steady Talasite (RECIPE!)
 								["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+								["timeline"] = { ADDED_2_2_0 },
 							}),
 							i(27648, {	-- Dreamstalker Leggings
 								["cost"] = {
@@ -2285,8 +2288,9 @@ root(ROOTS.Zones, {
 									{ "i", 26044, 1 },	-- Halaa Research Token
 								},
 							}),
-							i(33783, {	-- Design: Steady Talasite
+							i(33783, {	-- Design: Steady Talasite (RECIPE!)
 								["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+								["timeline"] = { ADDED_2_2_0 },
 							}),
 							i(27648, {	-- Dreamstalker Leggings
 								["cost"] = {

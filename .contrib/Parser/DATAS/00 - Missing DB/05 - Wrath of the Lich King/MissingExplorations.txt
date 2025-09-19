@@ -1,0 +1,328 @@
+3.4.0.43659
+exploration(65),	-- Dragonblight \\ Reuse Me 3 \\ ***On Map Dungeon***
+exploration(66),	-- Zul'Drak \\ Reuse Me 6 \\ ***On Map Dungeon***
+exploration(67),	-- The Storm Peaks \\ Reuse Me 5 \\ ***On Map Dungeon***
+exploration(206),	-- Utgarde Keep \\ UNUSED Westfall \\ Westfall
+exploration(210),	-- Icecrown \\ Reuse Me 2 \\ ***On Map Dungeon***
+exploration(394),	-- Grizzly Hills \\ Darrowmere Lake UNUSED
+exploration(495),	-- Howling Fjord \\ DELETE ME
+exploration(1196),	-- Utgarde Pinnacle \\ UNUSEDAlcaz Island
+exploration(2280),	-- DO NOT USE \\ UNUSED Stratholme
+exploration(2817),	-- Crystalsong Forest \\ Reuse Me 4 \\ ***On Map Dungeon***
+exploration(3477),	-- Azjol-Nerub \\ Karazhan *UNUSED*
+exploration(3537),	-- Borean Tundra \\ REUSE
+exploration(3711),	-- Sholazar Basin \\ Reuse Me
+exploration(3979),	-- The Frozen Sea
+exploration(3986),	-- Echo Reach
+exploration(3993),	-- Westguard Turret
+exploration(3995),	-- The Laughing Stand
+exploration(4004),	-- Vileprey Village
+exploration(4007),	-- Tomb of the Lost Kings
+exploration(4019),	-- Development Land
+exploration(4030),	-- Coast of Idols
+exploration(4036),	-- Fizzcrank Pumping Station
+exploration(4038),	-- Magnamoth Caverns
+exploration(4056),	-- Utgarde Catacombs
+exploration(4064),	-- Shattered Straits
+exploration(4068),	-- West Spear Tower
+exploration(4069),	-- North Spear Tower
+exploration(4072),	-- Sub zone
+exploration(4073),	-- Winter's Terrace
+exploration(4074),	-- The Waking Halls
+exploration(4079),	-- Frostblade Pass
+exploration(4096),	-- Claytön's WoWEdit Land \\ ClaytÃ¶n's WoWEdit Land
+exploration(4100),	-- The Culling of Stratholme
+exploration(4102),	-- Krom's Landing
+exploration(4110),	-- Farshire Fields
+exploration(4117),	-- Steam Springs
+exploration(4143),	-- Warsong Slaughterhouse
+exploration(4147),	-- Mid Point Station
+exploration(4155),	-- The Half Shell
+exploration(4156),	-- Surge Needle
+exploration(4162),	-- Icemist Falls
+exploration(4181),	-- Crusader's Landing
+exploration(4182),	-- Sinner's Folly
+exploration(4184),	-- Path of the Titans
+exploration(4195),	-- Ice Heart Cavern
+exploration(4196),	-- Drak'Tharon Keep
+exploration(4197),	-- Wintergrasp
+exploration(4201),	-- Vordrassil's Tears
+exploration(4213),	-- The Broken Bluffs
+exploration(4224),	-- The Briny Pinnacle
+exploration(4228),	-- The Oculus
+exploration(4233),	-- Dawn's Reach
+exploration(4237),	-- Spruce Point Post
+exploration(4243),	-- Wintergarde Crypt
+exploration(4247),	-- Duskhowl Den
+exploration(4248),	-- The Conquest Pit
+exploration(4252),	-- The Broken Bluffs
+exploration(4256),	-- Drak'Mar Lake
+exploration(4257),	-- Dragonspine Tributary
+exploration(4258),	-- The North Sea
+exploration(4259),	-- Drak'ural
+exploration(4268),	-- Ruuna's Camp
+exploration(4271),	-- Utgarde Pinnacle
+exploration(4273),	-- Ulduar
+exploration(4277),	-- Azjol-Nerub
+exploration(4295),	-- The Sundered Shard
+exploration(4297),	-- Mosswalker Village
+exploration(4298),	-- Plaguelands: The Scarlet Enclave
+exploration(4303),	-- Hardknuckle Clearing
+exploration(4342),	-- Acherus: The Ebon Hold
+exploration(4343),	-- New Avalon
+exploration(4344),	-- New Avalon Fields
+exploration(4345),	-- New Avalon Orchard
+exploration(4346),	-- New Avalon Town Hall
+exploration(4347),	-- Havenshire
+exploration(4348),	-- Havenshire Farms
+exploration(4349),	-- Havenshire Lumber Mill
+exploration(4350),	-- Havenshire Stables
+exploration(4351),	-- Scarlet Hold
+exploration(4352),	-- Chapel of the Crimson Flame
+exploration(4353),	-- Light's Point Tower
+exploration(4354),	-- Light's Point
+exploration(4355),	-- Crypt of Remembrance
+exploration(4356),	-- Death's Breach
+exploration(4357),	-- The Noxious Glade
+exploration(4358),	-- Tyr's Hand
+exploration(4359),	-- King's Harbor
+exploration(4360),	-- Scarlet Overlook
+exploration(4361),	-- Light's Hope Chapel
+exploration(4362),	-- Sinner's Folly
+exploration(4363),	-- Pestilent Scar
+exploration(4364),	-- Browman Mill
+exploration(4365),	-- Havenshire Mine
+exploration(4377),	-- New Avalon Forge
+exploration(4378),	-- Dalaran Arena
+exploration(4379),	-- Valgarde
+exploration(4380),	-- Westguard Inn
+exploration(4381),	-- Waygate
+exploration(4384),	-- Strand of the Ancients
+exploration(4387),	-- Frenzyheart River
+exploration(4388),	-- Wintergrasp River
+exploration(4394),	-- Scarlet Tavern
+exploration(4399),	-- Farshire Mine
+exploration(4401),	-- Saragosa's Landing
+exploration(4404),	-- New Agamand Inn
+exploration(4405),	-- Passage of Lost Fiends
+exploration(4406),	-- The Ring of Valor
+exploration(4407),	-- Hall of the Frostwolf
+exploration(4408),	-- Hall of the Stormpike
+exploration(4411),	-- Stormwind Harbor
+exploration(4416),	-- Gundrak
+exploration(4426),	-- Bor's Breath River
+exploration(4427),	-- Argent Vanguard
+exploration(4443),	-- Gate of Echoes
+exploration(4447),	-- Gate of Lightning
+exploration(4454),	-- The Storm Foundry
+exploration(4462),	-- Crystalweb Cavern
+exploration(4470),	-- The Hidden Hollow
+exploration(4471),	-- Bernau's Happy Fun Land
+exploration(4476),	-- Abandoned Camp
+exploration(4489),	-- Crusader Forward Camp
+exploration(4491),	-- Bonesnap's Camp
+exploration(4493),	-- The Obsidian Sanctum
+exploration(4494),	-- Ahn'kahet: The Old Kingdom
+exploration(4500),	-- The Eye of Eternity
+exploration(4511),	-- The Skybreaker
+exploration(4512),	-- Orgrim's Hammer
+exploration(4525),	-- The Underhalls
+exploration(4532),	-- Vengeance Landing Inn
+exploration(4534),	-- Wildervar Mine
+exploration(4536),	-- Frosthowl Cavern
+exploration(4538),	-- The Sunken Ring
+exploration(4539),	-- The Broken Temple
+exploration(4541),	-- Vanguard Infirmary
+exploration(4544),	-- Death's Breach
+exploration(4545),	-- Abandoned Mine
+exploration(4547),	-- Halls of Stone
+exploration(4548),	-- Halls of Lightning
+exploration(4560),	-- The Underbelly
+exploration(4567),	-- The Violet Hold
+exploration(4568),	-- The Eventide
+exploration(4569),	-- Sewer Exit Pipe
+exploration(4570),	-- Circle of Wills
+exploration(4571),	-- Silverwing Flag Room
+exploration(4572),	-- Warsong Flag Room
+exploration(4575),	-- Wintergrasp Fortress
+exploration(4576),	-- Central Bridge
+exploration(4577),	-- Eastern Bridge
+exploration(4578),	-- Western Bridge
+exploration(4581),	-- Flamewatch Tower
+exploration(4582),	-- Winter's Edge Tower
+exploration(4583),	-- Shadowsight Tower
+exploration(4584),	-- The Cauldron of Flames
+exploration(4585),	-- Glacial Falls
+exploration(4586),	-- Windy Bluffs
+exploration(4587),	-- The Forest of Shadows
+exploration(4589),	-- The Chilled Quagmire
+exploration(4590),	-- The Steppe of Life
+exploration(4595),	-- Hall of Horrors
+exploration(4596),	-- The Circle of Suffering
+exploration(4598),	-- Krasus' Landing
+exploration(4599),	-- Sewer Exit Pipe
+exploration(4601),	-- Dalaran Island
+exploration(4602),	-- Force Interior
+exploration(4603),	-- Vault of Archavon
+exploration(4604),	-- Gate of the Red Sun
+exploration(4605),	-- Gate of the Blue Sapphire
+exploration(4606),	-- Gate of the Green Emerald
+exploration(4607),	-- Gate of the Purple Amethyst
+exploration(4608),	-- Gate of the Yellow Moon
+exploration(4609),	-- Courtyard of the Ancients
+exploration(4610),	-- Landing Beach
+exploration(4611),	-- Westspark Workshop
+exploration(4612),	-- Eastspark Workshop
+exploration(4613),	-- Dalaran City
+exploration(4614),	-- The Violet Citadel Spire
+exploration(4615),	-- Naz'anak: The Forgotten Depths
+exploration(4616),	-- Sunreaver's Sanctuary
+exploration(4617),	-- Elevator
+exploration(4618),	-- Antonidas Memorial
+exploration(4619),	-- The Violet Citadel
+exploration(4621),	-- UNUSED
+exploration(4623),	-- Hall of the Conquered Kings
+exploration(4624),	-- Befouled Terrace
+exploration(4625),	-- The Desecrated Altar
+exploration(4626),	-- Shimmering Bog
+exploration(4627),	-- Fallen Temple of Ahn'kahet
+exploration(4628),	-- Halls of Binding
+exploration(4629),	-- Winter's Heart
+exploration(4630),	-- The North Sea
+exploration(4632),	-- Dalaran Floating Rocks
+exploration(4633),	-- Raptor Pens
+exploration(4635),	-- Drak'Tharon Keep
+exploration(4636),	-- The Noxious Pass
+exploration(4637),	-- Vargoth's Retreat
+exploration(4638),	-- Violet Citadel Balcony
+exploration(4639),	-- Band of Variance
+exploration(4640),	-- Band of Acceleration
+exploration(4641),	-- Band of Transmutation
+exploration(4642),	-- Band of Alignment
+exploration(4646),	-- Ashwood Lake
+exploration(4650),	-- Iron Concourse
+exploration(4652),	-- Formation Grounds
+exploration(4653),	-- Razorscale's Aerie
+exploration(4654),	-- The Colossal Forge
+exploration(4655),	-- The Scrapyard
+exploration(4656),	-- The Conservatory of Life
+exploration(4657),	-- The Archivum
+exploration(4665),	-- Expedition Base Camp
+exploration(4666),	-- Sunreaver Pavilion
+exploration(4667),	-- Silver Covenant Pavilion
+exploration(4668),	-- The Cooper Residence
+exploration(4674),	-- Argent Pavilion
+exploration(4677),	-- Silver Covenant Pavilion
+exploration(4679),	-- The Forlorn Cavern
+exploration(4688),	-- claytonio test area
+exploration(4710),	-- Isle of Conquest
+exploration(4722),	-- Trial of the Crusader
+exploration(4723),	-- Trial of the Champion
+exploration(4739),	-- Runeweaver Square
+exploration(4740),	-- The Silver Enclave
+exploration(4741),	-- Isle of Conquest No Man's Land
+exploration(4742),	-- Hrothgar's Landing
+exploration(4747),	-- Workshop
+exploration(4748),	-- Quarry
+exploration(4749),	-- Docks
+exploration(4750),	-- Hangar
+exploration(4751),	-- Refinery
+exploration(4752),	-- Horde Keep
+exploration(4753),	-- Alliance Keep
+exploration(4760),	-- The Sea Reaver's Run
+exploration(4763),	-- Transport: Alliance Gunship
+exploration(4764),	-- Transport: Horde Gunship
+exploration(4769),	-- Hrothgar's Landing
+exploration(4809),	-- The Forge of Souls
+exploration(4812),	-- Icecrown Citadel
+exploration(4813),	-- Pit of Saron
+exploration(4820),	-- Halls of Reflection
+exploration(4832),	-- Transport: Alliance Gunship (IGB)
+exploration(4833),	-- Transport: Horde Gunship (IGB)
+exploration(4859),	-- The Frozen Throne
+exploration(4889),	-- The Frost Queen's Lair
+exploration(4890),	-- Putricide's Laboratory of Alchemical Horrors and Fun
+exploration(4891),	-- The Sanctum of Blood
+exploration(4892),	-- The Crimson Hall
+exploration(4893),	-- The Frost Queen's Lair
+exploration(4894),	-- Putricide's Laboratory of Alchemical Horrors and Fun
+exploration(4895),	-- The Crimson Hall
+exploration(4896),	-- The Frozen Throne
+exploration(4897),	-- The Sanctum of Blood
+exploration(4898),	-- Frostmourne
+exploration(4904),	-- The Dark Approach
+exploration(4905),	-- Scourgelord's Command
+exploration(4906),	-- The Shadow Throne
+exploration(4908),	-- The Hidden Passage
+exploration(4910),	-- Frostmourne
+exploration(4987),	-- The Ruby Sanctum
+3.4.0.43929
+exploration(14141),	-- Icecrown \\ Icecrown (3.0 phase)
+3.4.0.44184
+exploration(14284),	-- Borean Tundra
+exploration(14285),	-- Icecrown
+exploration(14286),	-- Sholazar Basin
+exploration(14287),	-- Dragonblight
+exploration(14288),	-- Battle for Wintergrasp \\ Wintergrasp Instance \\ Wintergrasp
+exploration(14289),	-- Westspark Workshop
+exploration(14290),	-- The Steppe of Life
+exploration(14291),	-- Eastspark Workshop
+exploration(14292),	-- The Chilled Quagmire
+exploration(14293),	-- The Forest of Shadows
+exploration(14294),	-- Glacial Falls
+exploration(14295),	-- The Cauldron of Flames
+exploration(14296),	-- Winter's Edge Tower
+exploration(14297),	-- Flamewatch Tower
+exploration(14298),	-- Western Bridge
+exploration(14299),	-- Central Bridge
+exploration(14300),	-- Wintergrasp Fortress
+exploration(14301),	-- The Sunken Ring
+exploration(14302),	-- Eastern Bridge
+exploration(14303),	-- The Broken Temple
+exploration(14304),	-- Shadowsight Tower
+exploration(14305),	-- The Lifeblood Pillar
+exploration(14306),	-- The Lost Lands
+exploration(14307),	-- The Skyreach Pillar
+exploration(14308),	-- Hardknuckle Clearing
+exploration(14309),	-- Sapphire Hive
+exploration(14310),	-- Wintergrasp River
+exploration(14311),	-- Frenzyheart River
+exploration(14312),	-- The Sundered Shard
+exploration(14313),	-- Frenzyheart Hill
+exploration(14314),	-- Rainspeaker Rapids
+exploration(14315),	-- Lakeside Landing
+exploration(14316),	-- River's Heart
+exploration(14317),	-- Rainspeaker Canopy
+exploration(14318),	-- The Blight Line
+exploration(14319),	-- Wildgrowth Mangal
+exploration(14320),	-- Mosswalker Village
+exploration(14321),	-- Temple City of En'kilah
+exploration(14322),	-- The Borean Wall
+exploration(14323),	-- North Point Station
+exploration(14324),	-- Spire of Pain
+exploration(14325),	-- Spire of Decay
+exploration(14326),	-- Spire of Blood
+exploration(14327),	-- The Dens of Dying
+exploration(14328),	-- Festering Pools
+exploration(14329),	-- Talramas
+exploration(14330),	-- Steam Springs
+exploration(14331),	-- The Flood Plains
+exploration(14332),	-- The Geyser Fields
+exploration(14333),	-- Fizzcrank Pumping Station
+exploration(14334),	-- Icecrown Citadel
+exploration(14335),	-- The Court of Bones
+exploration(14336),	-- Icemist Village
+exploration(14337),	-- Westwind Refugee Camp
+exploration(14338),	-- Obsidian Dragonshrine
+exploration(14339),	-- Agmar's Hammer
+exploration(14340),	-- Coldwind Pass
+exploration(14341),	-- Angrathar the Wrathgate
+3.4.0.45043
+exploration(14469),	-- Aldur'thar: The Desolation Gate
+exploration(14470),	-- Silent Vigil
+exploration(14471),	-- The Storm Peaks
+exploration(14472),	-- Nidavelir
+exploration(14473),	-- Snowdrift Plains
+exploration(14474),	-- Sindragosa's Fall
+3.4.0.45064
+exploration(14483),	-- Uncharted Territory \\ Wintergrasp Boundary

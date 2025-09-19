@@ -149,6 +149,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
 	n(WORLD_BOSSES, {
 		q(89401),	-- First weekly Gobfather account kill for warbound loot
-		q(87352),	-- First weekly Reshanor account kill for warbound loot
+		q(90783),	-- First weekly Reshanor account kill for warbound loot
 	}),
 })));

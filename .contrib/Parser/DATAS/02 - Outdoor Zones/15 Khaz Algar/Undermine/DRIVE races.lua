@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		skyriding(n(DRIVE_RACING, {
 			n(ACHIEVEMENTS, {
@@ -242,4 +242,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		})),
 	}),
-})));
+}));

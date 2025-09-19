@@ -33,7 +33,7 @@ mount(107842),	-- Blazing Drake
 mount(107845),	-- Life-Binder's Handmaiden
 mount(110039),	-- Experiment 12-B
 mount(121820),	-- Obsidian Nightwing
-mount(1249659),	-- Moppy the Drake (FINAL NAME TBD)
+mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 mount(1250045),	-- Obsidian Worldbreaker Utility (Final Name TBD)
 
 
@@ -49,5 +49,5 @@ mount(1239372),	-- Celestial Steed
 mount(459486),	-- Golden Ashes of Al'ar
 mount(459538),	-- Harmonious Greetings Bear
 3.4.5.61815
-mount(1249659),	-- Moppy the Drake (FINAL NAME TBD)
+mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 mount(1250045),	-- Obsidian Worldbreaker Utility (Final Name TBD)

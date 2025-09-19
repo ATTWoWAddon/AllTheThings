@@ -415,9 +415,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				ach(8433, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Mogu'shan Palace
+				challengemaster(ach(8433, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Mogu'shan Palace
 					title(242),	-- Mogu-Slayer <Name>
-				})),
+				}))),
 				ach(6892),	-- Mogu'shan Palace Challenger
 				ach(6899),	-- Mogu'shan Palace: Bronze
 				ach(6900),	-- Mogu'shan Palace: Silver
@@ -426,7 +426,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			})),
 			-- #if ANYCLASSIC
-			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
@@ -435,6 +435,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						["groups"] = {
 							ach(60894),	-- Celestial: Mogu'shan Palace
 							i(86789),	-- Elegion, the Fanged Crescent
+							i(89952),	-- Pheromone-Coated Choker
+							i(86748),	-- Cape of Three Lanterns
 							i(86790),	-- Vial of Dragon's Blood
 						},
 					}),

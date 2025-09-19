@@ -7,7 +7,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, bubbleDownRep(FACTION_MARUUK_CENTAUR, {
 				{		-- RENOWN 1 --
 					q(72429, {	-- Orientation: Maruukai
-						["provider"] = { "n", 195543 },	-- Sansok Khan
+						["qgs"] = {
+							191283,	-- Sansok Khan
+							195543,	-- Sansok Khan
+						},
 						["coord"] = { 61.4, 39.6, OHNAHRAN_PLAINS },
 					}),
 				}, {	-- RENOWN 2 --

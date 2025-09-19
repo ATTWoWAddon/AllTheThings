@@ -279,6 +279,81 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 };
 
+InstanceHelper.BossObjects = {
+	[SALHADAAR] = { 562348 },	-- Spoils of the Nexus-King
+}
+
+local TokenModID = {
+	[DIFFICULTY.RAID.LFR] = 149,
+	[DIFFICULTY.RAID.NORMAL] = 149,
+	[DIFFICULTY.RAID.HEROIC] = 151,
+	[DIFFICULTY.RAID.MYTHIC] = 152,
+}
+local TokenSymModID = {
+	[DIFFICULTY.RAID.LFR] = 4,
+	[DIFFICULTY.RAID.NORMAL] = 4,
+	[DIFFICULTY.RAID.HEROIC] = 3,
+	[DIFFICULTY.RAID.MYTHIC] = 5,
+}
+
+InstanceHelper.ExtraLoots = {
+	-- Warbound Tier Tokens (has different modIDs because of course)
+	{
+		Add = function(encounter, id, difficulty, data)
+			local g = data[id]
+			if g then
+				g = clone(g)
+				-- use alternate versions of the Tokens with different ModID, but non-filling symlink to the base tokens
+				-- to prevent dupes in Main & Mini
+				local dropModID = TokenModID[difficulty]
+				local symModID = TokenSymModID[difficulty]
+				-- copied from old Castle Nathria implementation
+				for _,item in ipairs(g) do
+					item.modID = dropModID
+					item.skipFill = true
+					item.up = IGNORED_VALUE
+					item.sym = {{"select","itemID",modItemId(item.itemID,symModID)},{"groupfill",true},{"pop"}}	-- Base Version & Fill
+					item.nomerge = true
+				end
+				encounter.groups = appendAllGroups(encounter.groups, g)
+				return encounter
+			end
+		end,
+		Data = {
+			[FRACTILLUS] = {	-- Chest
+				i(237581),	-- Dreadful Voidglass Contaminant
+				i(237582),	-- Mystic Voidglass Contaminant
+				i(237583),	-- Venerated Voidglass Contaminant
+				i(237584),	-- Zenith Voidglass Contaminant
+			},
+			[HUNTERS] = {	-- Shoulder
+				i(237597),	-- Dreadful Yearning Cursemark
+				i(237598),	-- Mystic Yearning Cursemark
+				i(237599),	-- Venerated Yearning Cursemark
+				i(237600),	-- Zenith Yearning Cursemark
+			},
+			[ARAZ] = {	-- Head
+				i(237589),	-- Dreadful Foreboding Beaker
+				i(237590),	-- Mystic Foreboding Beaker
+				i(237591),	-- Venerated Foreboding Beaker
+				i(237592),	-- Zenith Foreboding Beaker
+			},
+			[NAAZINDHRI] = {	-- Hands
+				i(237585),	-- Dreadful Binding Agent
+				i(237586),	-- Mystic Binding Agent
+				i(237587),	-- Venerated Binding Agent
+				i(237588),	-- Zenith Binding Agent
+			},
+			[LOOMITHAR] = {	-- Legs
+				i(237593),	-- Dreadful Silken Offering
+				i(237594),	-- Mystic Silken Offering
+				i(237595),	-- Venerated Silken Offering
+				i(237596),	-- Zenith Silken Offering
+			},
+		}
+	},
+}
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1302, {	-- Manaforge Omega
 		["isRaid"] = true,
@@ -400,14 +475,38 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					["coord"] = { 42.0, 22.1, KARESH },
 				},bubbleDownRep(FACTION_MANAFORGE_VANDALS, {
 					{		-- RENOWN 1 --
-						q(92031, { ["timeline"] = { ADDED_11_2_0 } }),	--Meet the Vandals
+						q(92031, { ["timeline"] = { ADDED_11_2_0 } }),	-- Meet the Vandals
 					}, {	-- RENOWN 2 --
 						q(91525, { ["timeline"] = { ADDED_11_2_0 } }),	-- Head Hunting: Loom'ithar
 					}, {	-- RENOWN 3 --
+						q(91483, { ["timeline"] = { ADDED_11_2_0 } }),	-- Hacking the Mainframe
+						q(91481, { ["timeline"] = { ADDED_11_2_0 } }),	-- Speed Siphoner
 					}, {	-- RENOWN 4 --
+						q(91476, {	-- Behind Enemy Lines
+							["timeline"] = { ADDED_11_2_0 },
+							["groups"] = { i(249699) },	-- Shadowguard Translocator
+						}),
 					}, {	-- RENOWN 5 --
+						q(91459, { ["timeline"] = { ADDED_11_2_0 } }),	-- Manaforge Omega: A Walking Shadow [N]
+						q(91460, { ["timeline"] = { ADDED_11_2_0 } }),	-- Manaforge Omega: A Walking Shadow [H]
+						q(91461, { ["timeline"] = { ADDED_11_2_0 } }),	-- Manaforge Omega: A Walking Shadow [M]
 					}, {	-- RENOWN 6 --
+						q(91486, {	-- Attuned to the Aether
+							["provider"] = { "n", 245348 },	-- Ba'choso
+							["coord"] = { 42.0, 22.4, KARESH },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					}, {	-- RENOWN 7 --
+						q(91477, {	-- Behind Enemy Lines II
+							["provider"] = { "n", 245344 },	-- Zo'turu
+							["coord"] = { 42.0, 22.1, KARESH },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						q(91484, {	-- Hacking the Forgeweaver
+							["provider"] = { "n", 245344 },	-- Zo'turu
+							["coord"] = { 42.0, 22.1, KARESH },
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					}, {	-- RENOWN 8 --
 						i(249709),	-- Formula: Gleeful Glamour - Ethereal (RECIPE!)
 						i(249703),	-- Technique: Deal: Cartel Ba (RECIPE!)
@@ -430,10 +529,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}))),
 				n(VENDORS, {
 				-- NOTE: There are 3 vendors outside the Raid Entrance. Items they sell are not renown locked.
-				n(245349, bubbleDownSelf({	-- Zo'ropo <Eccentric Engineer>
-					["cost"] = { { "i", 246727, 1 }, }, },{	-- Ethereal Essence Sliver
+				n(245349, {	-- Zo'ropo <Eccentric Engineer>
 					["coord"] = { 42.0, 22.0, KARESH },
-					["groups"] = {
+					["groups"] = sharedData({
+						["cost"] = { { "i", 246727, 1 }, }, -- Ethereal Essence Sliver
+					}, {
 						i(249206),	-- Manaforge Raider's Cosmic Baton (COSMETIC!)
 						i(249170),	-- Manaforge Raider's Cosmic Beamglaive (COSMETIC!)
 						i(249212),	-- Manaforge Raider's Cosmic Blade (COSMETIC!)
@@ -507,27 +607,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						i(249216),	-- Manaforge Raider's Umbral Starcrusher (COSMETIC!)
 						i(249186),	-- Manaforge Raider's Umbral Ward (COSMETIC!)
 						i(249180),	-- Manaforge Raider's Umbral Warpblade (COSMETIC!)
-					},
-				})),
-				n(245348, bubbleDownSelf({	-- Ba'choso <Curious Curator>
-					["cost"] = { { "i", 245510, 1 }, }, },{	-- Loombeast Silk
+					}),
+				}),
+				n(245348, {	-- Ba'choso <Curious Curator>
 					["coord"] = { 42.0, 22.4, KARESH },
-					["groups"] = {
+					["groups"] = sharedData({
+						["cost"] = { { "i", 245510, 1 }, }, -- Loombeast Silk
+					}, {
 						iensemble(248977),	-- Ensemble: Augur's Ephemeral Brilliance
 						iensemble(248978),	-- Ensemble: Breeze of Fallen Storms
 						iensemble(248981),	-- Ensemble: Capes of the Sudden Eclipse
 						iensemble(248979),	-- Ensemble: Gilded Cloaks of the Lucent Battalion
 						iensemble(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
 						iensemble(248983),	-- Ensemble: Inquisitor's All-Seeing Madness
-						iensemble(248984),	-- Ensemble: Living Weapon's Capes
+						iensemble(248984, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Living Weapon's Capes
 						iensemble(248980),	-- Ensemble: Memories of a Dying Star
 						iensemble(248976),	-- Ensemble: Midnight Herald's Shrouds
 						iensemble(248972),	-- Ensemble: Plumes of the Mother Eagle
-						iensemble(248982),	-- Ensemble: Shawls of Channeled Fury
+						iensemble(248982, {_IgnoreSharedEnsembleByQuestID=true}),	-- Ensemble: Shawls of Channeled Fury
 						iensemble(248973),	-- Ensemble: Spellweaver's Immaculate Runecloaks
 						iensemble(248971),	-- Ensemble: Vicious Charhound's Felcovers
-					},
-				})),
+					}),
+				}),
 				n(248304, {	-- Acquirer Ba'theom <Exotic Armor>
 					["coord"] = { 42.1, 23.4, KARESH },
 					-- Sells Tier set tokens in exchange for Hungering Void Curios
@@ -560,10 +661,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						["provider"] = { "i", 245743 },	-- A Curious Crystalline Fragment (QS!)
 						["classes"] = { PRIEST },
 					}),
+					q(91138, {	-- I am the Creator and Destroyer
+						["sourceQuest"] = 91140,	-- A Piece of the Past
+						["qg"] = 245915,	-- Om'en
+						["coord"] = { 40.4, 27.4, KARESH_TAZAVESH },
+						["classes"] = { PRIEST },
+						["groups"] = { i(250082) },	-- T'uure, Remnant of the Naaru (COSMETIC!)
+					}),
 					hqt(91064, {	-- Stay awhile and listen: Alleria Windrunnner
 						["name"] = "Stay awhile and listen: Alleria Windrunnner",
-						["description"] = "After defeating Dimensius",
-						["provider"] = { "n", 242456 },	-- Alleria Windrunnner
+						["description"] = "Dialogue becomes available after defeating Dimensius.",
+						["qg"] = 242456,	-- Alleria Windrunnner
 					}),
 				}),
 				BossOnly(PLEXUS),
@@ -589,9 +697,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}),
 				}),
 				BossOnly(DIMENSIUS, {
+					i(234273),	-- A Dimmed Crystal (QS!)
+					i(245743),	-- A Curious Crystalline Fragment (QS!)
 					i(246565),	-- Cosmic Hearthstone (TOY!)
 					i(223144),	-- Formula: Enchant Weapon - Authority of the Depths (RECIPE!)
-					i(245743),	-- A Curious Crystalline Fragment
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
@@ -614,7 +723,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				header(HEADERS.LFGDungeon, 2801, {	-- Heart of Darkness
 					Boss(SALHADAAR),
 					Boss(DIMENSIUS, {
-						i(237602, {	-- Excessively Bejeweled Curio
+						i(237602, {	-- Hungering Void Curio
 							["sym"] = {{"sub","instance_tier",1302,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
@@ -662,7 +771,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				Boss(FRACTILLUS),
 				Boss(SALHADAAR),
 				Boss(DIMENSIUS, {
-					i(234273),	-- A Dimmed Crystal (QS!)
 					i(237602, {	-- Hungering Void Curio
 						["sym"] = {{"sub","instance_tier",1302,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
@@ -781,17 +889,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	inst(1302, bubbleDown({	-- Manaforge Omega
 		["isWeekly"] = true,
 	},{
--- PLEXUS
--- LOOMITHAR
--- NAAZINDHRI
--- ARAZ
--- HUNTERS
--- FRACTILLUS
--- SALHADAAR
--- DIMENSIUS
-
 		-- All
-		q(91011, name(HEADERS.Encounter, PLEXUS)),	-- Sentinel Plexus
+		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed -- also triggered on alt with no loot)
+		q(91010, name(HEADERS.Encounter, PLEXUS)),	-- Sentinel Plexus
 		q(91012, name(HEADERS.Encounter, LOOMITHAR)),	-- Loomithar
 		q(91011, name(HEADERS.Encounter, NAAZINDHRI)),	-- Soulbinder Naazindhr
 		q(91013, name(HEADERS.Encounter, ARAZ)),	-- Forgeweaver Araz
@@ -799,33 +899,35 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		q(91015, name(HEADERS.Encounter, FRACTILLUS)),	-- Fractillus
 		q(91016, name(HEADERS.Encounter, SALHADAAR)),	-- Loomithar
 		q(91017, name(HEADERS.Encounter, DIMENSIUS)),	-- Dimensius
-
-		q(91046, name(HEADERS.Item, 245510)),	-- Loombeast Silk chance per week (assumed -- also triggered on alt with no loot)
+		-- Trash
+		q(91021, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
+		q(91019, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
+		q(91020, name(HEADERS.NPC, 245617)),	-- The Bone Melter
+		q(91018, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
 
 		-- LFR
 		q(90977, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
-		q(91010, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
+		q(90981, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
+		q(90989, name(HEADERS.NPC, 245617)),	-- The Bone Melter
+		q(90985, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
 
 		-- Normal
 		q(90978, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
-		q(91021, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
 		q(90982, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
-		q(91019, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
 		q(90990, name(HEADERS.NPC, 245617)),	-- The Bone Melter
-		q(91020, name(HEADERS.NPC, 245617)),	-- The Bone Melter
 		q(90986, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
-		q(91018, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
 
 		-- Heroic
 		q(90979, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
-
 		q(90983, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
-
 		q(90991, name(HEADERS.NPC, 245617)),	-- The Bone Melter
-
 		q(90987, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
 
 		-- Mythic
+		q(90980, name(HEADERS.NPC, 239454)),	-- Darkmage Zadus
+		q(90984, name(HEADERS.NPC, 239702)),	-- Watcher Gaz'Kreth
+		q(90992, name(HEADERS.NPC, 245617)),	-- The Bone Melter
+		q(90988, name(HEADERS.NPC, 245601)),	-- Enforcer Jak'tull
 
 	})),
 }));

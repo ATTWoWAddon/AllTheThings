@@ -34,6 +34,40 @@ end
 local BonusCatalysts = PossibleCatalystBonusIDLookups.BonusCatalysts
 
 local BonusIDUpgradeTiers = {
+	-- TWW:S1
+	-- Veteran
+	[10281] = 10378,
+	[10280] = 10378,
+	[10279] = 10378,
+	[10278] = 10378,
+	[10277] = 10377,
+	[10276] = 10377,
+	[10275] = 10377,
+	[10274] = 10377,
+	-- Champion
+	[10273] = 10377,
+	[10272] = 10377,
+	[10271] = 10377,
+	[10270] = 10377,
+	[10269] = 10379,
+	[10268] = 10379,
+	[10267] = 10379,
+	[10266] = 10379,
+	-- Hero
+	[10265] = 10379,
+	[10264] = 10379,
+	[10263] = 10379,
+	[10262] = 10379,
+	[10261] = 10380,
+	[10256] = 10380,
+	-- Myth
+	[10260] = 10380,
+	[10259] = 10380,
+	[10258] = 10380,
+	[10257] = 10380,
+	[10298] = 10380,
+	[10299] = 10380,
+
 	-- TWW:S2
 	-- Veteran
 	[11969] = 11965,
@@ -76,24 +110,34 @@ local BonusIDUpgradeTiers = {
 -- apparently Blizzard decided that removing all Upgrade info from old season items was beneficial to someone, so now we have to add all this
 -- extra mapping data to retroactively show properly catalyst outputs from old season items
 local BonusIDReMappers = {
-	-- Bonus 11964 is from TWW:S2 Delve content, but can actually map to any difficulty depending on other bonusID starting in TWW:S3, wtffff
-	[11964] = function(data)
+	-- When an prior-season Item maps as a specific BonusID for Catalyst, it no longer returns Upgrade information, which means
+	-- we have to maintain a mapping of BonusID -> Upgrade Appearance since Blizzard CBA to persist that information themselves anymore
+	PastUpgrade = function(data)
 		-- so for this bonusID, we need to actually determine the proper tier of the item based on old Upgrade bonusIDs
 		-- which Blizzard no longer includes in exportable Wago data
 		local bonuses = data.bonuses
 		if not bonuses or #bonuses < 1 then return end
 
 		local newBonusID = containsAnyKey(BonusIDUpgradeTiers, bonuses)
-		-- if it's not a L/N/H bonusID, it must be M
 		return BonusIDUpgradeTiers[newBonusID]
 	end
 }
--- Bonus 11965 was previously LFR mode, but upgraded variants need to check their Upgrade bonusIDs
-BonusIDReMappers[11965] = BonusIDReMappers[11964]
--- Bonus 11966 was previously Normal mode, but upgraded variants need to check their Upgrade bonusIDs
-BonusIDReMappers[11966] = BonusIDReMappers[11964]
--- Bonus 11967 was previously Heroic mode, but upgraded variants need to check their Upgrade bonusIDs
-BonusIDReMappers[11967] = BonusIDReMappers[11964]
+-- TWW:S1
+-- Veteran
+BonusIDReMappers[10376] = BonusIDReMappers.PastUpgrade
+BonusIDReMappers[10378] = BonusIDReMappers.PastUpgrade
+-- Champion
+BonusIDReMappers[10377] = BonusIDReMappers.PastUpgrade
+-- Hero
+BonusIDReMappers[10379] = BonusIDReMappers.PastUpgrade
+-- TWW:S2
+-- Veteran
+BonusIDReMappers[11964] = BonusIDReMappers.PastUpgrade
+BonusIDReMappers[11965] = BonusIDReMappers.PastUpgrade
+-- Champion
+BonusIDReMappers[11966] = BonusIDReMappers.PastUpgrade
+-- Hero
+BonusIDReMappers[11967] = BonusIDReMappers.PastUpgrade
 
 local CatalystArmorSlots = {
 	["INVTYPE_HEAD"] = true,

@@ -243,6 +243,7 @@ inst(1293, 2690);	-- The Underkeep
 inst(1296, 2769);	-- Liberation of Undermine
 inst(1298, 2773);	-- Operation: Floodgate
 inst(1301, 2792);	-- Blackrock Depths
+inst(1302, 2810);	-- Manaforge Omega
 inst(1310, 0);	-- Zekvir's Lair
 
 -- Reassign the instance function

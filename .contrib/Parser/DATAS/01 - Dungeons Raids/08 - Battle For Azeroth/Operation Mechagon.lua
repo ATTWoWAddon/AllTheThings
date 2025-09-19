@@ -179,10 +179,13 @@ MECHAGON_WORKSHOP = createHeader({
 		en = WOWAPI_GetSpellName(251998),
 	},
 });
-
-local TIMELINE_UNAVAILABLE_MYTHICPLUS = {ADDED_8_2_0,REMOVED_11_1_0_SEASONSTART,ADDED_11_2_0}
 -- Unavailable during:
 -- TWW S2 Mythic Plus (11.1 until 11.2)
+local TIMELINE_UNAVAILABLE_MYTHICPLUS = {
+	ADDED_8_2_0,
+	REMOVED_11_1_0_SEASONSTART,
+	ADDED_11_2_0
+}
 
 ------ Boss Functions ------
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
@@ -307,21 +310,6 @@ if CombineSeasonalLoot then
 				))),
 			}),
 		}),
-		-- Non-upgraded Items
-		Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK, {
-			difficulties = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-		}).AddGroups({
-			n(MECHAGON_WORKSHOP, {
-				BossOnly(KING, sharedData({
-					timeline = {ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
-				},{
-					i(235222),	-- Apogee Inventor's Goggles
-					i(235226),	-- Inventor's Ingenious Trifocals
-					i(235224),	-- Mekgineer's Mindbending Headgear
-					i(235223),	-- Psychogenic Prognosticator's Lenses
-				})),
-			}),
-		}),
 		-- Myth Track Appearances via Upgrade only
 		n(UPGRADE, bubbleDownFiltered({
 			modID = DifficultyDB[DIFFICULTY.DUNGEON.SEASONAL.TWWS2_MYTHTRACK].modID
@@ -436,7 +424,7 @@ else
 					}),
 					Boss(MACHINIST, {
 					}),
-					Boss(KING, clone(AzeriteLoot[KING])),
+					Boss(KING, appendAllGroups(clone(AzeriteLoot[KING]), clone(AzewrongLoot[KING]))),
 				},
 			}),
 		}),
@@ -447,11 +435,12 @@ else
 				Boss(KUJO, {
 					i(199921, {	-- Trashmaster's Mantle
 						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+						ItemAppearanceModifierID = 3,
 					}),
 				}),
 				Boss(MACHINIST, {
 				}),
-				Boss(KING, clone(AzeriteLoot[KING])),
+				Boss(KING, appendAllGroups(clone(AzeriteLoot[KING]), clone(AzewrongLoot[KING]))),
 			}),
 		}),
 	}
@@ -597,6 +586,21 @@ local INSTANCE_GROUPS = {
 				i(169774),	-- Progression Sprocket
 				i(167556),	-- Subroutine: Overclock
 			}),
+		}),
+	}),
+	-- Non-upgraded Items
+	Difficulty(DIFFICULTY.DUNGEON.SEASONAL.TWWS2_HEROTRACK, {
+		difficulties = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
+	}).AddGroups({
+		n(MECHAGON_WORKSHOP, {
+			BossOnly(KING, sharedData({
+				timeline = {ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART},
+			},{
+				i(235222),	-- Apogee Inventor's Goggles
+				i(235226),	-- Inventor's Ingenious Trifocals
+				i(235224),	-- Mekgineer's Mindbending Headgear
+				i(235223),	-- Psychogenic Prognosticator's Lenses
+			})),
 		}),
 	}),
 	Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({

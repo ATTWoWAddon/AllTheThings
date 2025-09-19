@@ -1182,7 +1182,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER TBC
 						i(33792, {	-- Plans: Heavy Copper Longsword (RECIPE!)
+							-- #if BEOFRE MOP
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+							-- #endif
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						-- #else
@@ -1564,14 +1566,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.6, 27.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
+						applyclassicphase(TBC_PHASE_ONE, i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
 							["isLimited"] = true,
-							["timeline"] = { ADDED_2_0_1 },
-						}),
-						i(20975, {	-- Design: The Jade Eye (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
+						})),
+						applyclassicphase(TBC_PHASE_ONE, i(20975, {	-- Design: The Jade Eye (RECIPE!)
 							["isLimited"] = true,
-							["timeline"] = { ADDED_2_0_1 },
-						}),
+							["timeline"] = { ADDED_2_0_5 },
+						})),
 					},
 				}),
 				-- #endif
@@ -1658,16 +1660,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["sym"] = {{"sub", "common_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
-					["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					}),
+					},
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
 					["coord"] = { 67.8, 43.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
-						i(5956),	-- Blacksmith Hammer
+					["groups"] = {
 						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1690,7 +1691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 							-- #endif
 						}),
-					}),
+					},
 				}),
 				n(4256, {	-- Golnir Bouldertoe <Mining Supplies>
 					["coord"] = { 51.5, 26.3, IRONFORGE },
@@ -1739,13 +1740,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5112, {	-- Gwenna Firebrew <Barmaid>
 					["coord"] = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(2594),	-- Flagon of Dwarven Honeymead/Mead
-						i(2593),	-- Flask of Stormwind Tawny
-						i(1179),	-- Ice Cold Milk
-						--i(2595),	-- Jug of Badlands Bourbon
-						i(2596),	-- Skin of Dwarven Stout
-					},
 				}),
 				n(5138, {	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 					["coord"] = { 55.08, 59.51, IRONFORGE },
@@ -2002,18 +1996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 27.0, IRONFORGE },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						-- #if AFTER CATA
-						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
-						-- #endif
-						{ "select","itemID",
-						52188,	-- Jeweler's Setting
-						20815,	-- Jeweler's Toolset/-Kit
-						-- #if BEFORE MOP
-						20824,	-- Simple Grinder
-						-- #endif
-						},
-					},
+					["sym"] = {{ "sub", "common_recipes_vendor", 50480 }},	-- Isabel Jones <Jewelcrafting Supplies>
 				}),
 				n(5129, {	-- Lissyphus Finespindle
 					["coord"] = { 54.6, 88.2, IRONFORGE },
@@ -2133,7 +2116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 43.0, 29.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {
+					["groups"] = {
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2149,16 +2132,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(
-						-- #if AFTER CATA
-						COMMON_CATACLYSM_TAILORING_RECIPES,
-						-- #endif
-						VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {}),
+					-- #if AFTER CATA
+					["groups"] = COMMON_CATACLYSM_TAILORING_RECIPES,
+					-- #endif
 				}),
 				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, IRONFORGE },
@@ -2203,16 +2184,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
 					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-						3371,	-- Empty-/Crystal Vial
-						-- #if BEFORE CATA
-						3372,	-- Leaded Vial
-						8925,	-- Crystal Vial
-						18256,	-- Imbued Vial
-						-- #endif
-						},
-					},
 					["groups"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
@@ -2225,7 +2196,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
 					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
@@ -2265,9 +2235,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
-						i(5956),	-- Blacksmith Hammer
-					}),
 				}),
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 60.8, 44.2, IRONFORGE },
@@ -2275,7 +2242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 					-- #endif
-					["groups"] = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, VANILLA_ENCHANTING_COMMON_RECIPES, {
+					["groups"] = appendGroups(VANILLA_ENCHANTING_COMMON_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),

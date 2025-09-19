@@ -728,9 +728,32 @@ CacheFields = function(group, skipMapCaching)
 	return group;
 end
 
--- This data type requires additional processing.
-fieldConverters.otherQuestData = function(group, value)
-	_CacheFields(value);
+do
+	-- we need special handling since the data in the 'otherQuestData' needs to cache against the 'group' not the other data itself
+	local IgnoredOtherFactionFields = {
+		coords = 1,
+		coord = 1,
+		maps = 1,
+		g = 1,
+	}
+	-- otherwise this leads to raw data tables being cached against costs and providers etc.
+	local function CacheOtherFactionData(group, otherFactionData)
+		-- if the other faction data was actually made into a Type, then cache it against itself
+		if otherFactionData.__type then
+			_CacheFields(otherFactionData)
+		else
+			for key,value in pairs(otherFactionData) do
+				_converter = not IgnoredOtherFactionFields[key] and fieldConverters[key]
+				if _converter then
+					_converter(group, value)
+				end
+			end
+		end
+	end
+	-- This data type requires additional processing.
+	fieldConverters.otherQuestData = function(group, value)
+		CacheOtherFactionData(group, value)
+	end
 end
 
 -- Performance Tracking for Caching

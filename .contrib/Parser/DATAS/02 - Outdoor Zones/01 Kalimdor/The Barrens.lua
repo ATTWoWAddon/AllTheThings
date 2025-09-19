@@ -63,20 +63,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(25, {	-- Crossroads, The Barrens
 					["cr"] = 3615,	-- Devrak <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 58.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.4, 30.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 58.6, NORTHERN_BARRENS },
+						-- #else
+						{ 51.4, 30.2, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(80, {	-- Ratchet, The Barrens
 					["cr"] = 16227,	-- Bragok <Flight Master>
-					-- #if AFTER CATA
-					["coord"] = { 69.0, 70.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 63.0, 37.0, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.0, 70.6, NORTHERN_BARRENS },
+						-- #else
+						{ 63.0, 37.0, THE_BARRENS },
+						-- #endif
+					},
 				}),
 			}),
 			prof(FISHING, {
@@ -164,15 +168,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(880, {	-- Altered Beings
-					-- #if AFTER CATA
-					["qg"] = 34626,	-- Jerrik Highmountain
-					["sourceQuest"] = 13988,	-- A Growing Problem
-					["coord"] = { 60.6, 85.4, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3448,	-- Tonga Runetotem
-					["sourceQuest"] = 877,	-- The Stagnant Oasis
-					["coord"] = { 52.26, 31.92, THE_BARRENS },
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						13988,	-- A Growing Problem
+						-- #else
+						877,	-- The Stagnant Oasis
+						-- #endif
+					},
+					["qgs"] = {
+						-- #if AFTER CATA
+						34626,	-- Jerrik Highmountain
+						-- #else
+						3448,	-- Tonga Runetotem
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 85.4, NORTHERN_BARRENS },
+						-- #else
+						{ 52.26, 31.92, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -627,11 +643,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(855, {	-- Centaur Bracers
 					["qg"] = 3389,	-- Regthar Deathgate
-					-- #if AFTER CATA
-					["coord"] = { 37.9, 55.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.9, 55.2, NORTHERN_BARRENS },
+						-- #else
+						{ 45.34, 28.42, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -857,11 +875,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(899, {	-- Consumed by Hatred
 					["qg"] = 3432,	-- Mankrik
-					-- #if AFTER CATA
-					["coord"] = { 55.1, 41.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.95, 31.58, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.1, 41.0, NORTHERN_BARRENS },
+						-- #else
+						{ 51.95, 31.58, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 5),
 					["groups"] = {
@@ -914,11 +934,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(4021, {	-- Counterattack!
 					["sourceQuest"] = 852,	-- Hezrul Bloodmark
 					["qg"] = 3389,	-- Regthar Deathgate
-					-- #if AFTER CATA
-					["coord"] = { 37.9, 55.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.9, 55.2, NORTHERN_BARRENS },
+						-- #else
+						{ 45.34, 28.42, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
@@ -1022,11 +1044,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1716, {	-- Devourer of Souls [Stormwind City]
 					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
 					["qg"] = 6122,	-- Gakin the Darkbinder
-					-- #if AFTER WRATH
-					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.2, 85.2, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.4, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
@@ -1052,19 +1076,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(871, {	-- Disrupt the Attacks / In Defense of Far Watch [CATA+]
-					-- #if AFTER CATA
-					["qg"] = 3337,	-- Kargal Battlescar
 					["sourceQuests"] = {
+						-- #if AFTER CATA
 						840,	-- Conscript of the Horde
 						26642,	-- Preserving the Barrens
 						28494,	-- Warchief's Command: Northern Barrens!
+						-- #else
+						854,	-- Journey to the Crossroads
+						-- #endif
 					},
-					["coord"] = { 67.6, 39.3, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3429,	-- Thork
-					["sourceQuest"] = 854,	-- Journey to the Crossroads
-					["coord"] = { 51.50, 30.86, THE_BARRENS },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						3337,	-- Kargal Battlescar
+						-- #else
+						3429,	-- Thork
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.6, 39.3, NORTHERN_BARRENS },
+						-- #else
+						{ 51.50, 30.86, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -1111,17 +1145,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(881, {	-- Echeyakee
-					-- #if AFTER CATA
 					["sourceQuests"] = {
+						-- #if AFTER CATA
 						903,	-- Hunting the Huntress
 						845,	-- The Zhevra
+						-- #else
+						903,	-- Prowlers of the Barrens
+						-- #endif
 					},
-					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
-					-- #else
-					["sourceQuest"] = 903,	-- Prowlers of the Barrens
-					["coord"] = { 52.23, 31.01, THE_BARRENS },
-					-- #endif
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 59.7, NORTHERN_BARRENS },
+						-- #else
+						{ 52.23, 31.01, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -1130,14 +1169,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5100 },	-- Echeyakee's Hide
 								{ "i", 10327 },	-- Horn of Echeyakee
 							},
-							-- #if AFTER CATA
 							["coords"] = {
+								-- #if AFTER CATA
 								{ 47.8, 44.0, NORTHERN_BARRENS },
 								{ 44.8, 47.8, NORTHERN_BARRENS },
+								-- #else
+								{ 55.8, 17.2, THE_BARRENS },
+								-- #endif
 							},
-							-- #else
-							["coord"] = { 55.8, 17.2, THE_BARRENS },
-							-- #endif
 							["cr"] = 3475,	-- Echeyakee
 						}),
 					},
@@ -1260,11 +1299,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(848, {	-- Fungal Spores
 					["qg"] = 3390,	-- Apothecary Helbrim
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 58.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.44, 30.15, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 58.2, NORTHERN_BARRENS },
+						-- #else
+						{ 51.44, 30.15, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -1318,11 +1359,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(875, {	-- Harpy Lieutenants
 					["sourceQuest"] = 867,	-- Harpy Raiders
 					["qg"] = 3449,	-- Darsok Swiftdagger
-					-- #if AFTER CATA
-					["coord"] = { 30.6, 45.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.62, 30.90, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 30.6, 45.8, NORTHERN_BARRENS },
+						-- #else
+						{ 51.62, 30.90, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 5),
 					["groups"] = {
@@ -1340,11 +1383,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(867, {	-- Harpy Raiders
 					["qg"] = 3449,	-- Darsok Swiftdagger
-					-- #if AFTER CATA
-					["coord"] = { 30.6, 45.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.62, 30.90, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 30.6, 45.8, NORTHERN_BARRENS },
+						-- #else
+						{ 51.6, 30.9, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 5),
 					["groups"] = {
@@ -1381,28 +1426,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(852, {	-- Hezrul Bloodmark
-					-- #if AFTER CATA
 					["sourceQuests"] = {
-						850,	-- Kolkar Leaders
 						851,	-- Verog the Dervish
+						-- #if AFTER CATA
+						850,	-- Kolkar Leaders
 						14073,	-- Deathgate's Reinforcements
+						-- #endif
 					},
-					["coord"] = { 37.9, 55.2, NORTHERN_BARRENS },
-					-- #else
-					["sourceQuest"] = 851,	-- Verog the Dervish
-					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					-- #endif
 					["qg"] = 3389,	-- Regthar Deathgate
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.9, 55.2, NORTHERN_BARRENS },
+						-- #else
+						{ 45.34, 28.42, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Hezrul's Head
 							["provider"] = { "i", 5025 },	-- Hezrul's Head
-							-- #if AFTER CATA
-							["coord"] = { 42.6, 74.8, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 46.8, 38.6, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 42.6, 74.8, NORTHERN_BARRENS },
+								-- #else
+								{ 46.8, 38.6, THE_BARRENS },
+								-- #endif
+							},
 							["cr"] = 3396,	-- Hezrul Bloodmark
 						}),
 						i(59585, {	-- Lushwater Cloak
@@ -1484,20 +1534,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(858, {	-- Ignition
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
-					-- #if AFTER CATA
-					["coord"] = { 57.5, 18.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 56.52, 7.45, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.5, 18.2, NORTHERN_BARRENS },
+						-- #else
+						{ 56.52, 7.45, THE_BARRENS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ignition Key
 							["provider"] = { "i", 5050 },	-- Ignition Key
-							-- #if AFTER CATA
-							["coord"] = { 57.2, 20.6, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 56.2, 8.6, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 57.2, 20.6, NORTHERN_BARRENS },
+								-- #else
+								{ 56.2, 8.6, THE_BARRENS },
+								-- #endif
+							},
 							["cr"] = 3445,	-- Supervisor Lugwizzle
 						}),
 					},
@@ -1608,23 +1662,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 35,
 				}),
 				q(850, {	-- Kolkar Leaders
-					-- #if AFTER CATA
-					["qg"] = 34841,	-- Telar Highstrider
-					["coord"] = { 38.0, 46.5, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3389,	-- Regthar Deathgate
-					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						34841,	-- Telar Highstrider
+						-- #else
+						3389,	-- Regthar Deathgate
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.0, 46.5, NORTHERN_BARRENS },
+						-- #else
+						{ 45.34, 28.42, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Kodobane's Head
 							["provider"] = { "i", 5022 },	-- Kodobane's Head
-							-- #if AFTER CATA
-							["coord"] = { 33.4, 46.8, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 42.8, 23.6, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 33.4, 46.8, NORTHERN_BARRENS },
+								-- #else
+								{ 42.8, 23.6, THE_BARRENS },
+								-- #endif
+							},
 							["cr"] = 3394,	-- Barak Kodobane
 						}),
 						i(59551, {	-- Tangled Thread Gloves
@@ -1923,14 +1986,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(844, {	-- Plainstrider Menace
-					-- #if AFTER CATA
-					["qg"] = 34258,	-- Halga Bloodeye
-					["coord"] = { 67.4, 38.7, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3338,	-- Sergra Darkthorn
+					-- #if BEFORE CATA
 					["sourceQuest"] = 860,	-- Sergra Darkthorn
-					["coord"] = { 52.23, 31.01, THE_BARRENS },
 					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						34258,	-- Halga Bloodeye
+						-- #else
+						3338,	-- Sergra Darkthorn
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.4, 38.7, NORTHERN_BARRENS },
+						-- #else
+						{ 52.23, 31.01, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -1967,11 +2039,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(903, {	-- Prowlers of the Barrens / Hunting the Huntress [CATA+]
 					["sourceQuest"] = 845,	-- The Zhevra
 					["qg"] = 3338,	-- Sergra Darkthorn
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.23, 31.01, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 59.7, NORTHERN_BARRENS },
+						-- #else
+						{ 52.23, 31.01, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -1983,11 +2057,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(865, {	-- Raptor Horns / It's Gotta be the Horn [CATA+]
 					["qg"] = 3446,	-- Mebok Mizzyrix
-					-- #if AFTER CATA
-					["coord"] = { 67.8, 71.5, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.37, 37.32, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.8, 71.5, NORTHERN_BARRENS },
+						-- #else
+						{ 62.37, 37.32, THE_BARRENS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -2027,11 +2103,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(869, {	-- Raptor Thieves / To Track a Thief [CATA+]
 					-- #if AFTER CATA
 					["sourceQuest"] = 14066,	-- Investigate the Wreckage
-					["coord"] = { 66.8, 72.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.93, 30.32, THE_BARRENS },
 					-- #endif
 					["qg"] = 3464,	-- Gazrog
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 66.8, 72.6, NORTHERN_BARRENS },
+						-- #else
+						{ 51.93, 30.32, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 5),
 					-- #if BEFORE CATA
@@ -2204,11 +2284,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(866,	{	-- Root Samples
 					["description"] = "To access this quest, you must have at least 40 skill in Herbalism.",
 					["qg"] = 3446,	-- Mebok Mizzyrix
-					-- #if AFTER CATA
-					["coord"] = { 67.8, 71.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.4, 37.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.8, 71.6, NORTHERN_BARRENS },
+						-- #else
+						{ 62.4, 37.6, THE_BARRENS },
+						-- #endif
+					},
 					["requireSkill"] = HERBALISM,
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -2354,11 +2436,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1798, {	-- Seeking Strahad (Stormwind)
 					["qg"] = 6122,	-- Gakin the Darkbinder
-					-- #if AFTER WRATH
-					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 39.2, 85.2, STORMWIND_CITY },
+						-- #else
+						{ 25.4, 78.4, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
@@ -2375,27 +2459,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(876, {	-- Serena Bloodfeather
-					-- #if AFTER CATA
 					["sourceQuests"] = {
 						875,	-- Harpy Lieutenants
+						-- #if AFTER CATA
 						867,	-- Harpy Raiders
+						-- #endif
 					},
-					["coord"] = { 30.6, 45.9, NORTHERN_BARRENS },
-					-- #else
-					["sourceQuest"] = 875,	-- Harpy Lieutenants
-					["coord"] = { 51.62, 30.90, THE_BARRENS },
-					-- #endif
 					["qg"] = 3449,	-- Darsok Swiftdagger
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 30.6, 45.9, NORTHERN_BARRENS },
+						-- #else
+						{ 51.62, 30.90, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Serena's Head
 							["provider"] = { "i", 5067 },	-- Serena's Head
-							-- #if AFTER CATA
-							["coord"] = { 26.8, 26.8, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 39.4, 12.4, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 26.8, 26.8, NORTHERN_BARRENS },
+								-- #else
+								{ 39.4, 12.4, THE_BARRENS },
+								-- #endif
+							},
 							["cr"] = 3452,	-- Serena Bloodfeather
 						}),
 						i(59588, {	-- Cutthroat Band
@@ -2510,13 +2599,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(887, {	-- Southsea Freebooters
+					["qgs"] = {
+						-- #if AFTER CATA
+						3453,	-- Wharfmaster Dizzywig
+						-- #else
+						3391,	-- Gazlowe
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.5, 72.9, NORTHERN_BARRENS },
+						-- #else
+						{ 62.68, 36.24, THE_BARRENS },
+						-- #endif
+					},
 					-- #if AFTER CATA
-					["qg"] = 3453,	-- Wharfmaster Dizzywig
-					["coord"] = { 69.5, 72.9, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					-- #else
-					["qg"] = 3391,	-- Gazlowe
-					["coord"] = { 62.68, 36.24, THE_BARRENS },
 					-- #endif
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -2750,13 +2848,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(5041, {	-- Supplies for the Crossroads
 					-- #if AFTER CATA
-					["qg"] = 34258,	-- Halga Bloodeye
 					["sourceQuest"] = 871,	-- In Defense of Far Watch
-					["coord"] = { 67.4, 38.7, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3429,	-- Thork
-					["coord"] = { 51.50, 30.86, THE_BARRENS },
 					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						34258,	-- Halga Bloodeye
+						-- #else
+						3429,	-- Thork
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.4, 38.7, NORTHERN_BARRENS },
+						-- #else
+						{ 51.50, 30.86, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -2796,11 +2903,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(905, {	-- The Angry Scytheclaws / Into the Raptor's Den [CATA+]
 					["sourceQuest"] = 881,	-- Echeyakee
 					["qg"] = 3338,	-- Sergra Darkthorn
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 59.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.23, 31.01, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 59.8, NORTHERN_BARRENS },
+						-- #else
+						{ 52.23, 31.01, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -2968,15 +3077,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(872, {	-- The Disruption Ends / The Far Watch Offensive [CATA+]
-					-- #if AFTER CATA
-					["qg"] = 3337,	-- Kargal Battlescar
-					["sourceQuest"] = 871,	-- In Defense of Far Watch [CATA+]
-					["coord"] = { 67.7, 39.4, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3429,	-- Thork
-					["sourceQuest"] = 871,	-- Disrupt the Attacks
-					["coord"] = { 51.50, 30.86, THE_BARRENS },
-					-- #endif
+					["sourceQuest"] = 871,	-- Disrupt the Attacks / In Defense of Far Watch [CATA+]
+					["qgs"] = {
+						-- #if AFTER CATA
+						3337,	-- Kargal Battlescar
+						-- #else
+						3429,	-- Thork
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.7, 39.4, NORTHERN_BARRENS },
+						-- #else
+						{ 51.50, 30.86, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 5),
 					["groups"] = {
@@ -3028,11 +3143,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(863, {	-- The Escape
 					["sourceQuest"] = 858,	-- Ignition
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.5, 18.2, NORTHERN_BARRENS },
+						-- #else
+						{ 56.52, 7.45, THE_BARRENS },
+						-- #endif
+					},
 					-- #if AFTER CATA
-					["coord"] = { 57.5, 18.2, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
-					-- #else
-					["coord"] = { 56.52, 7.45, THE_BARRENS },
 					-- #endif
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
@@ -3057,23 +3176,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(870, {	-- The Forgotten Pools
-					-- #if AFTER CATA
-					["coord"] = { 49.5, 58.6, NORTHERN_BARRENS },
-					-- #else
+					-- #if BEFORE CATA
 					["sourceQuest"] = 886,	-- The Barrens Oases
-					["coord"] = { 52.26, 31.92, THE_BARRENS },
 					-- #endif
 					["qg"] = 3448,	-- Tonga Runetotem
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.5, 58.6, NORTHERN_BARRENS },
+						-- #else
+						{ 52.26, 31.92, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 				}),
 				q(891, {	-- The Guns of Northwatch / A Captain's Vengeance [CATA+]
 					["qg"] = 3339,	-- Captain Thalo'thas Brightsun
-					-- #if AFTER CATA
-					["coord"] = { 67.7, 74.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.29, 39.03, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.7, 74.0, NORTHERN_BARRENS },
+						-- #else
+						{ 62.29, 39.03, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
@@ -3187,15 +3312,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 				}),
 				q(877, {	-- The Stagnant Oasis
-					-- #if AFTER CATA
-					["qg"] = 34626,	-- Jerrik Highmountain
-					["sourceQuest"] = 13988,	-- A Growing Problem
-					["coord"] = { 60.6, 85.4, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3448,	-- Tonga Runetotem
-					["sourceQuest"] = 870,	-- The Forgotten Pools
-					["coord"] = { 52.26, 31.92, THE_BARRENS },
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						13988,	-- A Growing Problem
+						-- #else
+						870,	-- The Forgotten Pools
+						-- #endif
+					},
+					["qgs"] = {
+						-- #if AFTER CATA
+						34626,	-- Jerrik Highmountain
+						-- #else
+						3448,	-- Tonga Runetotem
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 85.4, NORTHERN_BARRENS },
+						-- #else
+						{ 52.26, 31.92, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -3204,11 +3341,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 5068 },	-- Dried Seeds
 								{ "o", 3737 },	-- Bubbling Fissure
 							},
-							-- #if AFTER CATA
-							["coord"] = { 55.9, 80.5, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 55, 42, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 55.9, 80.5, NORTHERN_BARRENS },
+								-- #else
+								{ 55, 42, THE_BARRENS },
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -3241,11 +3380,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(845, {	-- The Zhevra
 					["sourceQuest"] = 844,	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 59.7, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.23, 31.01, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 59.7, NORTHERN_BARRENS },
+						-- #else
+						{ 52.23, 31.01, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
@@ -3416,25 +3557,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(851, {	-- Verog the Dervish
-					-- #if AFTER CATA
-					["qg"] = 34638,	-- Shoe
-					["sourceQuest"] = 14072,	-- Flushing Out Verog
-					["coord"] = { 55.2, 78.3, NORTHERN_BARRENS },
-					-- #else
-					["qg"] = 3389,	-- Regthar Deathgate
-					["sourceQuest"] = 850,	-- Kolkar Leaders
-					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						14072,	-- Flushing Out Verog
+						-- #else
+						850,	-- Kolkar Leaders
+						-- #endif
+					},
+					["qgs"] = {
+						-- #if AFTER CATA
+						34638,	-- Shoe
+						-- #else
+						3389,	-- Regthar Deathgate
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.2, 78.3, NORTHERN_BARRENS },
+						-- #else
+						{ 45.34, 28.42, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Verog's Head
 							["provider"] = { "i", 5023 },	-- Verog's Head
-							-- #if AFTER CATA
-							["coord"] = { 51.2, 78.8, NORTHERN_BARRENS },
-							-- #else
-							["coord"] = { 53.0, 41.6, THE_BARRENS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 51.2, 78.8, NORTHERN_BARRENS },
+								-- #else
+								{ 53.0, 41.6, THE_BARRENS },
+								-- #endif
+							},
 							["cr"] = 3395,	-- Verog the Dervish
 						}),
 						i(59566, {	-- Robe of Shame
@@ -3467,11 +3622,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(895, {	-- WANTED: Baron Longshore / WANTED: Cap'n Garvey [CATA+]
 					["provider"] = { "o", 3972 },	-- WANTED
-					-- #if AFTER CATA
-					["coord"] = { 68.2, 71.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.59, 37.47, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.2, 71.2, NORTHERN_BARRENS },
+						-- #else
+						{ 62.59, 37.47, THE_BARRENS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(11, 11, 5),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -3640,11 +3797,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3672, {	-- Boahn <Druid of the Fang>
-					-- #if AFTER CATA
-					["coord"] = { 43.6, 65.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 49.1, 33.9, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.6, 65.8, NORTHERN_BARRENS },
+						-- #else
+						{ 49.1, 33.9, THE_BARRENS },
+						-- #endif
+					},
 					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
 						i(5423),	-- Boahn's Fang
@@ -3652,23 +3811,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5838, {	-- Brokespear
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 52.2, 75.8, NORTHERN_BARRENS },
 						{ 51.4, 83.8, NORTHERN_BARRENS },
 						{ 53.6, 87.0, NORTHERN_BARRENS },
 						{ 57.8, 82.2, NORTHERN_BARRENS },
 						{ 58.6, 77.6, NORTHERN_BARRENS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 53.6, 40.0, THE_BARRENS },
 						{ 53.0, 44.6, THE_BARRENS },
 						{ 54.6, 46.2, THE_BARRENS },
 						{ 56.6, 43.6, THE_BARRENS },
 						{ 57.2, 41.6, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(7559, {	-- Runic Cane
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3715,11 +3872,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
-					-- #if AFTER CATA
-					["coord"] = { 49.8, 89.6, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 49.6, 83.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.8, 89.6, SOUTHERN_BARRENS },
+						-- #else
+						{ 49.6, 83.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3753,11 +3912,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
-					-- #if AFTER CATA
-					["coord"] = { 47.8, 88.2, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 47.6, 85.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.8, 88.2, SOUTHERN_BARRENS },
+						-- #else
+						{ 47.6, 85.6, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4785, {	-- Brimstone Belt
@@ -3769,20 +3930,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5865, {	-- Dishu
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 45.4, 32.8, NORTHERN_BARRENS },
 						{ 45.2, 52.8, NORTHERN_BARRENS },
 						{ 48.8, 51.8, NORTHERN_BARRENS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 49.6, 15.8, THE_BARRENS },
 						{ 51.0, 20.6, THE_BARRENS },
 						{ 49.8, 27.6, THE_BARRENS },
 						{ 51.6, 26.8, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(3270, {	-- Elder Mystic Razorsnout
 					["coords"] = {
@@ -3806,18 +3965,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5836, {	-- Engineer Whirleygig
-					-- #if AFTER CATA
-					["coord"] = { 58.0, 20.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 56.2, 8.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 58.0, 20.6, NORTHERN_BARRENS },
+						-- #else
+						{ 56.2, 8.6, THE_BARRENS },
+						-- #endif
+					},
 				}),
 				n(5835, {	-- Foreman Grills
-					-- #if AFTER CATA
-					["coord"] = { 57.2, 20.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 56.6, 8.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.2, 20.6, NORTHERN_BARRENS },
+						-- #else
+						{ 56.6, 8.6, THE_BARRENS },
+						-- #endif
+					},
 				}),
 				n(5863, {	-- Geopriest Gukk'rok
 					["coords"] = {
@@ -3840,11 +4003,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3398, {	-- Gesharahan
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 74.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 46.6, 39.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 74.6, NORTHERN_BARRENS },
+						-- #else
+						{ 46.6, 39.6, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5183, {	-- Pulsating Hydra Heart
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -3870,11 +4035,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5847, {	-- Heggin Stonewhisker <Bael'dun Chief Engineer>
-					-- #if AFTER CATA
-					["coord"] = { 47.0, 88.6, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 47.0, 83.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.0, 88.6, SOUTHERN_BARRENS },
+						-- #else
+						{ 47.0, 83.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(2035, {	-- Sword of the Night Sky
@@ -3888,11 +4055,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5828, {	-- Humar the Pridelord
-					-- #if AFTER CATA
-					["coord"] = { 67.2, 64.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.0, 33.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.2, 64.0, NORTHERN_BARRENS },
+						-- #else
+						{ 62.0, 33.6, THE_BARRENS },
+						-- #endif
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209607, {	-- Lieutenant Stonebrew
@@ -3913,11 +4082,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
-					-- #if AFTER CATA
-					["coord"] = { 47.4, 85.8, SOUTHERN_BARRENS },
-					-- #else
-					["coord"] = { 49.4, 84.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.4, 85.8, SOUTHERN_BARRENS },
+						-- #else
+						{ 49.4, 84.4, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3936,11 +4107,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(3470, {	-- Rathorian
-					-- #if AFTER CATA
-					["coord"] = { 41.6, 39.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 47.6, 19.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.6, 39.6, NORTHERN_BARRENS },
+						-- #else
+						{ 47.6, 19.2, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5111, {  -- Rathorian's Cape
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -3951,10 +4124,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5841, {	-- Rocklance
-					-- #if AFTER CATA
-					["coord"] = { 59.2, 80.2, NORTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.2, 80.2, NORTHERN_BARRENS },
+						-- #else
 						{ 53.4, 37.4, THE_BARRENS },
 						{ 53.8, 41.2, THE_BARRENS },
 						{ 53.0, 44.6, THE_BARRENS },
@@ -3962,20 +4135,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 55.4, 45.6, THE_BARRENS },
 						{ 56.8, 41.8, THE_BARRENS },
 						{ 55.6, 39.0, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(3253, {	-- Silithid Harvester
-					-- #if AFTER CATA
-					["coord"] = { 41.2, 67.0, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.2, 67.0, SOUTHERN_BARRENS },
+						-- #else
 						{ 42.6, 70.6, THE_BARRENS },
 						{ 44.6, 70.0, THE_BARRENS },
 						{ 44.4, 74.0, THE_BARRENS },
 						{ 47.8, 70.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(5138, {	-- Harvester's Head
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3984,36 +4157,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5830, {	-- Sister Rathtalon
-					-- #if AFTER CATA
-					["coord"] = { 25.4, 33.2, NORTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 25.4, 33.2, NORTHERN_BARRENS },
+						-- #else
 						{ 39.6, 12.8, THE_BARRENS },
 						{ 39.0, 16.2, THE_BARRENS },
 						{ 40.6, 17.8, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(3295, {	-- Sludge Anomaly [CATA+] / Sludge Beast
-					-- #if AFTER CATA
-					["coord"] = { 57.6, 19.4, NORTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.6, 19.4, NORTHERN_BARRENS },
+						-- #else
 						{ 56.6, 7.4, THE_BARRENS },
 						{ 56.2, 9.6, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5829, {	-- Snort the Heckler
-					-- #if AFTER CATA
-					["coord"] = { 45.6, 43.6, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.6, 43.6, SOUTHERN_BARRENS },
+						-- #else
 						{ 41.8, 20.4, THE_BARRENS },
 						{ 40.8, 23.4, THE_BARRENS },
 						{ 41.4, 27.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5837, {	-- Stonearm
 					["coords"] = {
@@ -4033,37 +4206,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5831, {	-- Swiftmane
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 60.4, NORTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 60.4, NORTHERN_BARRENS },
+						-- #else
 						{ 60.6, 30.4, THE_BARRENS },
 						{ 59.2, 32.6, THE_BARRENS },
 						{ 61.8, 33.8, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5864, {	-- Swinegart Spearhide
-					-- #if AFTER CATA
-					["coord"] = { 38.6, 33.6, SOUTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.6, 33.6, SOUTHERN_BARRENS },
+						-- #else
 						{ 41.4, 45.6, THE_BARRENS },
 						{ 42.2, 48.0, THE_BARRENS },
 						{ 45.2, 49.0, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5842, {	-- Takk the Leaper
-					-- #if AFTER CATA
-					["coord"] = { 63.4, 36.6, NORTHERN_BARRENS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 63.4, 36.6, NORTHERN_BARRENS },
+						-- #else
 						{ 58.2, 7.6, THE_BARRENS },
 						{ 60.6, 10.0, THE_BARRENS },
 						{ 61.0, 13.6, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				o(202081, {	-- Takk's Nest
 					["coords"] = {
@@ -4104,11 +4277,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3652, {	-- Trigore the Lasher
 					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
-					-- #if AFTER CATA
-					["coord"] = { 42.6, 64.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52, 54, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.6, 64.0, NORTHERN_BARRENS },
+						-- #else
+						{ 52, 54, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5425),	-- RuneChain Girdle [7.0.3+] / Runescale Girdle
 						i(5426),	-- Serpent's Kiss
@@ -4246,11 +4421,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(VENDORS, {
 				n(3495, {	-- Gagsprocket <Engineering Goods>
-					-- #if AFTER CATA
-					["coord"] = { 68.4, 69.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.7, 36.3, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.4, 69.2, NORTHERN_BARRENS },
+						-- #else
+						{ 62.7, 36.3, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
@@ -4263,11 +4440,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
-					-- #if AFTER CATA
-					["coord"] = { 67.6, 72.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.2, 38.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.6, 72.8, NORTHERN_BARRENS },
+						-- #else
+						{ 62.2, 38.4, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(4799, {	-- Antiquated Cloak
 							["isLimited"] = true,
@@ -4372,11 +4551,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if AFTER 3.1.0.9626
 				n(3443, {	-- Grub
-					-- #if AFTER CATA
-					["coord"] = { 55.4, 61.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 55.2, 31.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.4, 61.2, NORTHERN_BARRENS },
+						-- #else
+						{ 55.2, 31.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5051),	-- Dig Rat
@@ -4387,11 +4568,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(3486, {	-- Halija Whitestrider <Clothier>
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 61.4, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.2, 31.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 61.4, NORTHERN_BARRENS },
+						-- #else
+						{ 52.2, 31.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
@@ -4420,11 +4603,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3490, {	-- Hula'mahi <Reagents, Herbs & Poison Supplies> [TBC+] / Hula'mahi <Reagents and Herbs>
-					-- #if AFTER CATA
-					["coord"] = { 48.6, 58.4, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.4, 30.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.6, 58.4, NORTHERN_BARRENS },
+						-- #else
+						{ 51.4, 30.2, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
@@ -4452,11 +4637,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3497, {	-- Kilxx <Fisherman>
-					-- #if AFTER CATA
-					["coord"] = { 68.6, 72.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.8, 38.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.6, 72.6, NORTHERN_BARRENS },
+						-- #else
+						{ 62.8, 38.2, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
@@ -4496,11 +4683,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3479, {	-- Nargal Deatheye <Weaponsmith>
-					-- #if AFTER CATA
-					["coord"] = { 48.2, 56.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.2, 29.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.2, 56.6, NORTHERN_BARRENS },
+						-- #else
+						{ 51.2, 29.2, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4765, {	-- Enamelled Broadsword
@@ -4537,16 +4726,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(3499, {	-- Ranik <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 67.0, 73.4, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 61.9, 38.7, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.0, 73.4, NORTHERN_BARRENS },
+						-- #else
+						{ 61.9, 38.7, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
-						i(20855, {	-- Design: Wicked Moonstone Ring
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(20855, {	-- Design: Wicked Moonstone Ring (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -4559,11 +4750,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(8307, {	-- Tarban Hearthgrain <Baker>
-					-- #if AFTER CATA
-					["coord"] = { 55.0, 61.6, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 55.0, 32.0, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.0, 61.6, NORTHERN_BARRENS },
+						-- #else
+						{ 55.0, 32.0, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -4571,11 +4764,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 49.0, 58.2, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.6, 30.0, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.0, 58.2, NORTHERN_BARRENS },
+						-- #else
+						{ 51.6, 30.0, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5488),	-- Recipe: Crispy Lizard Tail (RECIPE!)
@@ -4583,11 +4778,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
-					-- #if AFTER CATA
-					["coord"] = { 48.0, 56.4, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 51.0, 29.0, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.0, 56.4, NORTHERN_BARRENS },
+						-- #else
+						{ 51.0, 29.0, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
@@ -4596,11 +4793,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 67.4, 72.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 62.2, 38.4, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.4, 72.8, NORTHERN_BARRENS },
+						-- #else
+						{ 62.2, 38.4, THE_BARRENS },
+						-- #endif
+					},
 					["groups"] = {
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
@@ -4614,11 +4813,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
-					-- #if AFTER CATA
-					["coord"] = { 35.0, 26.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 43.8, 12.2, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 35.0, 26.8, NORTHERN_BARRENS },
+						-- #else
+						{ 43.8, 12.2, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4799, {	-- Antiquated Cloak
@@ -4651,11 +4852,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3485, {	-- Wrahk <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 50.0, 61.0, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.2, 31.6, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.0, 61.0, NORTHERN_BARRENS },
+						-- #else
+						{ 52.2, 31.6, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
@@ -4684,11 +4887,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(3489, {	-- Zargh <Butcher>
-					-- #if AFTER CATA
-					["coord"] = { 50.6, 57.8, NORTHERN_BARRENS },
-					-- #else
-					["coord"] = { 52.6, 29.8, THE_BARRENS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.6, 57.8, NORTHERN_BARRENS },
+						-- #else
+						{ 52.6, 29.8, THE_BARRENS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
@@ -4709,21 +4914,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 3458,	-- Razormane Seer
-					["coords"] = {
-						{ 42.6, 79.0, THE_BARRENS },
-						{ 43.0, 83.2, THE_BARRENS },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						37661,	-- Razormane Seer
+						-- #else
+						3458,	-- Razormane Seer
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37661,	-- Razormane Seer
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 41.8, 82.8, SOUTHERN_BARRENS },
 						{ 43.2, 84.4, SOUTHERN_BARRENS },
 						{ 23.4, 35.4, SOUTHERN_BARRENS },
+						-- #else
+						{ 42.6, 79.0, THE_BARRENS },
+						{ 43.0, 83.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5107, {	-- Deckhand's Shirt
 					-- #if AFTER 4.0.3
@@ -4782,41 +4990,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
+						37560,	-- Razormane Pathfinder
+						-- #else
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
+						-- #endif
 					},
 					["coords"] = {
-						{ 41.8, 79.6, THE_BARRENS },
-						{ 43.8, 83.2, THE_BARRENS },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37560,	-- Razormane Pathfinder
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 43.4, 82.0, SOUTHERN_BARRENS },
 						{ 41.6, 81.4, SOUTHERN_BARRENS },
 						{ 43.6, 86.2, SOUTHERN_BARRENS },
+						-- #else
+						{ 41.8, 79.6, THE_BARRENS },
+						{ 43.8, 83.2, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 3459,	-- Razormane Warfrenzy
-					["coords"] = {
-						{ 41.6, 79.0, THE_BARRENS },
-						{ 42.2, 81.6, THE_BARRENS },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						37660,	-- Razormane Warfrenzy
+						-- #else
+						3459,	-- Razormane Warfrenzy
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 37660,	-- Razormane Warfrenzy
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 38.0, 81.8, SOUTHERN_BARRENS },
 						{ 43.6, 82.6, SOUTHERN_BARRENS },
 						{ 44.6, 87.8, SOUTHERN_BARRENS },
+						-- #else
+						{ 41.6, 79.0, THE_BARRENS },
+						{ 42.2, 81.6, THE_BARRENS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if AFTER 4.2.0.10000
 				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)

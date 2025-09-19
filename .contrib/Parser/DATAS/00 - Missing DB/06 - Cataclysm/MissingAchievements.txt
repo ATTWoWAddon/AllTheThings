@@ -47,6 +47,17 @@ ach(5407),	-- Realm First! Guild Level 25
 ach(5492),	-- Guild Reputation: Exalted \\ Guild Level 25
 ach(5823),	-- Veteran of the Alliance II
 ach(5824),	-- Veteran of the Horde II
+ach(6137),	-- Aku'mai kills (Blackfathom Deeps)
+ach(6139),	-- Charlga Razorflank kills (Razorfen Kraul)
+ach(6140),	-- Mekgineer Thermaplugg kills (Gnomeregan)
+ach(6141),	-- Amnennar the Coldbringer kills (Razorfen Downs)
+ach(6142),	-- Archaedas kills (Uldaman)
+ach(6143),	-- Princess Theradras kills (Maraudon)
+ach(6144),	-- Shade of Eranikus kills (Sunken Temple)
+ach(6145),	-- Overlord Wyrmthalak kills (Lower Blackrock Spire)
+ach(6146),	-- King Gordok kills (Dire Maul)
+ach(6147),	-- Omor the Unscarred kills (Hellfire Ramparts)
+ach(6148),	-- Archimonde kills (Battle for Mount Hyjal)
 4.4.1.59069
 ach(41713),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy)
 4.4.2.60895

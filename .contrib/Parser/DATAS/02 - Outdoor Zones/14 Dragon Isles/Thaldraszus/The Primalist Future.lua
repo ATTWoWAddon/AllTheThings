@@ -23,6 +23,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				visit_exploration(14148,{coord={40.9,6.5,THE_PRIMALIST_FUTURE}}),	-- Out of Temporal Bounds
+				visit_exploration(14454,{coord={61.8,51.4,THE_PRIMALIST_FUTURE}}),	-- Temporal Conflux
+			}),
 			n(QUESTS, {
 				q(74376, {	-- Coalesced Storm Remnants
 					["provider"] = { "i", 203469 },	-- Coalesced Storm Remnants

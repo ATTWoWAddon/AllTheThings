@@ -228,33 +228,6 @@ ARTISAN_TAILORING
 	{}
 -- #endif
 );
-VANILLA_TAILORING_SUPPLIES = sharedData({
-	["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
-	["providers"] = {
-		{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
-		{ "n", 3364},	-- Borya <Tailoring Supplies>
-		{ "n", 4168},	-- Elynna <Tailoring Supplies>
-		{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-		{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
-		{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
-		{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
-		-- #if AFTER TBC
-		{ "n", 18749},	-- Dalinna <Tailoring Trainer>
-		{ "n", 16638},	-- Deynna <Tailoring Supplies>
-		{ "n", 19213},	-- Eiin <Specialty Tailoring Supplies>
-		{ "n", 18772},	-- Hama <Tailoring Trainer>
-		{ "n", 16767},	-- Neii <Tailoring Supplies>
-		-- #endif
-		-- #if AFTER WRATH
-		{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
-		-- #endif
-	},
-}, {
-	i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
-	i(6261),	-- Orange Dye (Only used in Tailoring)
-	i(10290),	-- Pink Dye (Only used in Tailoring)
-	i(4341),	-- Yellow Dye (Only used in Tailoring)
-});
 TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(26790, {	-- Tailoring (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

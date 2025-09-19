@@ -1,0 +1,475 @@
+5.5.0.60481
+exploration(5520),	-- Maraudon - The Wicked Grotto Entrance \\ Maruadon - The Wicked Grotto Entrance
+exploration(5734),	-- Sarahland
+exploration(5736),	-- The Wandering Isle
+exploration(5737),	-- Pei-Wu Forest
+exploration(5785),	-- The Jade Forest
+exploration(5805),	-- Valley of the Four Winds
+exploration(5820),	-- Temple of Five Dawns
+exploration(5826),	-- The Singing Pools
+exploration(5827),	-- The Rows
+exploration(5830),	-- Morning Breeze Village
+exploration(5831),	-- Fe-Feng Village
+exploration(5832),	-- The Wood of Staves
+exploration(5833),	-- Wreck of the Skyseeker
+exploration(5834),	-- Shang Xi Training Grounds
+exploration(5835),	-- Wu-Song Village
+exploration(5840),	-- Vale of Eternal Blossoms
+exploration(5841),	-- Kun-Lai Summit
+exploration(5842),	-- Townlong Steppes
+exploration(5846),	-- Fu's Pond
+exploration(5847),	-- The Dawning Stair
+exploration(5850),	-- Silken Shore
+exploration(5852),	-- Wreck of the Vanguard
+exploration(5856),	-- Shrine of Remembrance
+exploration(5859),	-- The Elders' Path
+exploration(5860),	-- Liang's Retreat
+exploration(5873),	-- Sea Mist Ridge
+exploration(5881),	-- The Dai-Lo Farmstead
+exploration(5882),	-- Virmen Grotto
+exploration(5883),	-- Teeming Burrow
+exploration(5884),	-- Ki-Han Brewery
+exploration(5885),	-- Shrine of Dreaming Stones
+exploration(5887),	-- Shadybranch Pocket
+exploration(5896),	-- The Orchid Pond - NOT USED
+exploration(5900),	-- Exclamation Point
+exploration(5906),	-- Spire of Solitude
+exploration(5908),	-- Circle of Scale
+exploration(5909),	-- Circle of Blood
+exploration(5918),	-- Shado-Pan Monastery
+exploration(5921),	-- Tasters' Arena
+exploration(5941),	-- The Great Sea
+exploration(5945),	-- Pool of the Paw
+exploration(5946),	-- Morning Breeze Lake
+exploration(5947),	-- Shrine of Five Dawns
+exploration(5952),	-- Scenic Overlook
+exploration(5954),	-- Den of Sorrow
+exploration(5956),	-- Temple of the Jade Serpent
+exploration(5963),	-- Stormstout Brewery
+exploration(5978),	-- Ancient Courtyard
+exploration(5981),	-- The Halfhill Market
+exploration(5983),	-- Plain of Thieves
+exploration(5996),	-- Springtail Warren
+exploration(6006),	-- The Veiled Stair
+exploration(6014),	-- Krasarang River
+exploration(6021),	-- Huangtze Falls
+exploration(6027),	-- Virmen Nest
+exploration(6038),	-- Lair of the Beast
+exploration(6040),	-- Dustwallow Marsh
+exploration(6041),	-- The Great Sea
+exploration(6042),	-- Theramore Isle
+exploration(6043),	-- Dustwallow Marsh
+exploration(6044),	-- Dustwallow Bay
+exploration(6045),	-- Alcaz Island
+exploration(6046),	-- Foothold Citadel
+exploration(6047),	-- The Sea Wolf
+exploration(6050),	-- Spiritsong River
+exploration(6051),	-- Temple of Kotmogu
+exploration(6052),	-- Scarlet Halls
+exploration(6060),	-- Temple of Kotmogu
+exploration(6061),	-- Temple of Kotmogu
+exploration(6066),	-- Scholomance
+exploration(6067),	-- Terrace of Endless Spring
+exploration(6069),	-- Inkgill Mere
+exploration(6071),	-- The Drunken Hozen
+exploration(6072),	-- Lao & Son's Yakwash
+exploration(6075),	-- The Golden Gateway
+exploration(6083),	-- Camp Broketooth
+exploration(6084),	-- The Deeper
+exploration(6089),	-- Yeti Mountain Basecamp
+exploration(6091),	-- The Burlap Valley
+exploration(6092),	-- Greenstone Masons' Quarter
+exploration(6093),	-- Fire Camp Bataar
+exploration(6101),	-- A Brewing Storm
+exploration(6102),	-- Thunderpaw Refuge
+exploration(6103),	-- Thunderpaw Overlook
+exploration(6105),	-- Thunderpaw Overlook
+exploration(6109),	-- Scarlet Monastery
+exploration(6111),	-- The Burlap Waystation
+exploration(6112),	-- CTF3
+exploration(6117),	-- Fountain of the Everseeing
+exploration(6118),	-- The Scrollkeeper's Sanctum
+exploration(6119),	-- Terrace of the Twin Dragons
+exploration(6120),	-- The Heart of Jade
+exploration(6122),	-- Grove of Falling Blossoms
+exploration(6123),	-- SM Cathedral/GY (TEMP)
+exploration(6125),	-- Mogu'shan Vaults
+exploration(6126),	-- Silvershard Mines
+exploration(6134),	-- Krasarang Wilds
+exploration(6136),	-- Temple of Kotmogu
+exploration(6137),	-- Frostmane Hovel
+exploration(6138),	-- Dread Wastes
+exploration(6140),	-- Mogu Ruins Bural Pit (TEMP)
+exploration(6150),	-- The Ox Gate
+exploration(6151),	-- Mortbreath Grotto
+exploration(6153),	-- Peak of Serenity
+exploration(6159),	-- Sarjun Depths
+exploration(6170),	-- Northshire
+exploration(6172),	-- Tallmug's Camp
+exploration(6175),	-- Seeker's Folly
+exploration(6176),	-- Coldridge Valley
+exploration(6179),	-- Owen's Wishing Well
+exploration(6182),	-- Mogu'shan Palace
+exploration(6184),	-- Seeker's Point
+exploration(6186),	-- Neverest Basecamp
+exploration(6196),	-- Sik'vess Lair
+exploration(6203),	-- Emperor Rikktik's Rest
+exploration(6208),	-- Crypt of Forgotten Kings
+exploration(6209),	-- The Jade Forest
+exploration(6210),	-- Greenstone Village
+exploration(6211),	-- Greenstone Masons' Quarter
+exploration(6214),	-- Siege of Niuzao Temple
+exploration(6215),	-- Valley Of Power - Scenario
+exploration(6216),	-- Valley of Power
+exploration(6218),	-- The Dark Hollow
+exploration(6219),	-- Arena of Annihilation
+exploration(6220),	-- Fields of Niuzao
+exploration(6234),	-- Dread Expanse
+exploration(6292),	-- Stormwind Keep
+exploration(6295),	-- Seat of Knowledge
+exploration(6296),	-- Tol'viron Arena
+exploration(6297),	-- Heart of Fear
+exploration(6298),	-- Brawl'gar Arena
+exploration(6299),	-- The Amber Womb
+exploration(6301),	-- Training Grounds
+exploration(6302),	-- Huntsman's Cloister
+exploration(6303),	-- The Kennel
+exploration(6304),	-- Black Ox Temple
+exploration(6308),	-- Sri-La Inn
+exploration(6309),	-- Unga Ingoo
+exploration(6310),	-- Unga Ingoo
+exploration(6311),	-- Niuzao Catacombs
+exploration(6313),	-- Scenario - Black Ox Temple
+exploration(6316),	-- Ik'vess
+exploration(6317),	-- Klik'vess
+exploration(6318),	-- Set'vess
+exploration(6319),	-- Scenario - Mogu Ruins
+exploration(6328),	-- Assault on Zan'vess
+exploration(6331),	-- Westersea
+exploration(6332),	-- The Overlook Inn
+exploration(6333),	-- Paur's Pub
+exploration(6335),	-- The Horrid March
+exploration(6337),	-- Gokk'lok Shallows
+exploration(6338),	-- The Amber Hibernal
+exploration(6340),	-- Kun-Lai Pass
+exploration(6341),	-- Binan Village
+exploration(6345),	-- Nook of Konk
+exploration(6349),	-- The Dancing Serpent
+exploration(6354),	-- The Lazy Turnip
+exploration(6355),	-- Thunderfoot Inn
+exploration(6356),	-- Stone Mug Tavern
+exploration(6358),	-- Wilds' Edge Inn
+exploration(6359),	-- Binan Brew & Stew
+exploration(6360),	-- The Lucky Traveller
+exploration(6361),	-- The Two Fisted Brew
+exploration(6362),	-- North Wind Tavern
+exploration(6363),	-- The Golden Rose
+exploration(6364),	-- Tavern in the Mists
+exploration(6365),	-- The Chum Bucket
+exploration(6366),	-- Marista's Bait & Brew
+exploration(6367),	-- Greenstone Inn
+exploration(6376),	-- The Ancient Passage
+exploration(6378),	-- Field of Korja
+exploration(6379),	-- Greenstone Dojo
+exploration(6384),	-- Forlorn Cloister
+exploration(6385),	-- Crusader's Chapel
+exploration(6386),	-- Chapel Gardens
+exploration(6393),	-- Serpent's Spine
+exploration(6394),	-- Serpent's Spine
+exploration(6395),	-- Serpent's Spine
+exploration(6396),	-- Gate of the Setting Sun
+exploration(6397),	-- The Clarion Bell
+exploration(6398),	-- Shrine of Twin Serpents
+exploration(6401),	-- Shelf of Mazu
+exploration(6402),	-- Wreck of the Mist-Hopper
+exploration(6403),	-- Muckscale Grotto
+exploration(6407),	-- Thunder's Call
+exploration(6408),	-- Forward Assault Camp
+exploration(6409),	-- Rear Staging Area
+exploration(6410),	-- Hollowed Out Tree
+exploration(6414),	-- Grove of Falling Blossoms
+exploration(6419),	-- Kun-Lai Summit
+exploration(6424),	-- Sra'vess Rootchamber
+exploration(6426),	-- Brewmoon Festival
+exploration(6428),	-- The Ancient Passage
+exploration(6431),	-- Seaspittle Cove
+exploration(6432),	-- Amberglow Hollow
+exploration(6436),	-- Dread Clutch
+exploration(6438),	-- Horror Clutch
+exploration(6445),	-- Whispering Stones
+exploration(6449),	-- Temple of Kotmogu
+exploration(6450),	-- Shadowglen
+exploration(6451),	-- Valley of Trials
+exploration(6452),	-- Camp Narache
+exploration(6454),	-- Deathknell
+exploration(6455),	-- Sunstrider Isle
+exploration(6456),	-- Ammen Vale
+exploration(6457),	-- New Tinkertown
+exploration(6458),	-- Kyparite Quarry
+exploration(6459),	-- Venomsting Pits
+exploration(6460),	-- The Briny Muck
+exploration(6461),	-- Whispering Stones
+exploration(6462),	-- Path of Conquerors
+exploration(6463),	-- Dustwallow Marsh
+exploration(6470),	-- The Gilded Foyer
+exploration(6471),	-- The Crimson Assembly Hall
+exploration(6472),	-- Forgotten Passageway
+exploration(6473),	-- Vault of Kings Past
+exploration(6474),	-- Throne of Ancient Conquerors
+exploration(6475),	-- Bladelord's Retreat
+exploration(6476),	-- Shrine of Nala'shi
+exploration(6477),	-- South Seas
+exploration(6478),	-- South Seas
+exploration(6479),	-- South Seas
+exploration(6480),	-- South Seas
+exploration(6481),	-- South Seas
+exploration(6483),	-- The Emperor's Step
+exploration(6485),	-- Chamber of Enlightenment
+exploration(6486),	-- The Celestial Vault
+exploration(6487),	-- Ethereal Corridor
+exploration(6488),	-- The Star's Bazaar
+exploration(6489),	-- The Imperial Exchange
+exploration(6490),	-- Nightingale Lounge
+exploration(6492),	-- Chamber of Reflection
+exploration(6494),	-- Shrine of Fellowship
+exploration(6495),	-- The Hall of Tiles
+exploration(6496),	-- Guo-Lai Ritual Chamber
+exploration(6497),	-- The Hall of Statues
+exploration(6499),	-- The Hall of the Serpent
+exploration(6500),	-- Dustwallow Marsh
+exploration(6501),	-- The Lady Mehley
+exploration(6502),	-- Theramore Isle
+exploration(6503),	-- Guo-Lai Vault
+exploration(6505),	-- The Riverblade Den
+exploration(6507),	-- Isle of Thunder
+exploration(6508),	-- Springtail Crag
+exploration(6509),	-- Stormstout Brewery Interior
+exploration(6511),	-- Wailing Caverns
+exploration(6512),	-- The Widow's Wail
+exploration(6513),	-- Oona Kagu
+exploration(6514),	-- Maraudon
+exploration(6515),	-- Terrace of Endless Spring
+exploration(6516),	-- Paw'don Village
+exploration(6518),	-- Path of Serenity
+exploration(6519),	-- Summer's Rest
+exploration(6520),	-- Gokk'lok's Grotto
+exploration(6525),	-- Hellscream's Fist
+exploration(6528),	-- Serpent's Spine
+exploration(6529),	-- Hellscream's Fist
+exploration(6533),	-- The Skyfire
+exploration(6534),	-- Twinspire Keep Interior
+exploration(6535),	-- Den of Defiance
+exploration(6540),	-- Spiritsong's Rest
+exploration(6541),	-- Applebloom Tavern
+exploration(6542),	-- Terrace of Gurthan
+exploration(6543),	-- Mistblade Den
+exploration(6544),	-- Coldbite Burrow
+exploration(6545),	-- Greymane Manor
+exploration(6546),	-- Emberstone Mine
+exploration(6547),	-- The Deepwild
+exploration(6548),	-- Venomous Ledge
+exploration(6549),	-- Sra'vess
+exploration(6551),	-- Townlong Steppes
+exploration(6552),	-- Kun-Lai Summit
+exploration(6555),	-- Northern Elwynn Mountains
+exploration(6556),	-- Valiant Rest
+exploration(6557),	-- Zouchin Province
+exploration(6558),	-- The Zandalari Vanguard
+exploration(6561),	-- Kril'Mandar Point
+exploration(6562),	-- The Southern Isles
+exploration(6563),	-- Krasarang Cove
+exploration(6565),	-- Dagger in the Dark
+exploration(6566),	-- Domination Point
+exploration(6567),	-- Battle on the High Seas
+exploration(6572),	-- Snicklefritz Mine
+exploration(6573),	-- Defense of the Alehouse
+exploration(6574),	-- Krasarang Wilds
+exploration(6575),	-- Krasarang Wilds
+exploration(6576),	-- Diremoor
+exploration(6577),	-- The Thunderspire
+exploration(6578),	-- Court of Bones
+exploration(6579),	-- Za'Tual
+exploration(6580),	-- Ihgaluk Crag
+exploration(6581),	-- Zeb'tula
+exploration(6582),	-- Shaol'mara
+exploration(6583),	-- Violet Rise
+exploration(6584),	-- Dawnseeker Promontory
+exploration(6585),	-- The Emperor's Gate
+exploration(6586),	-- The Beast Pens
+exploration(6587),	-- Conqueror's Terrace
+exploration(6588),	-- Bloodied Crossing
+exploration(6589),	-- Lightning Vein Mine
+exploration(6590),	-- The Thunder Forges
+exploration(6591),	-- Stormsea Landing
+exploration(6592),	-- The Swollen Vault
+exploration(6593),	-- The Foot of Lei Shen
+exploration(6594),	-- Hall of the Defamed
+exploration(6595),	-- The Skyfire
+exploration(6596),	-- Lion's Landing
+exploration(6597),	-- Sparkrocket Outpost
+exploration(6600),	-- Blacksand Spillway
+exploration(6601),	-- Bilgewater Beach
+exploration(6602),	-- The Boiling Crustacean
+exploration(6603),	-- Oregrind's Dig
+exploration(6604),	-- Quickchop's Lumber Farm
+exploration(6605),	-- Heart of Zan'vess
+exploration(6606),	-- Class Quest
+exploration(6608),	-- Heyman's Hubris
+exploration(6609),	-- Ruins of Ogudei
+exploration(6610),	-- The Ancient Passage
+exploration(6611),	-- Dalaran
+exploration(6613),	-- Black Temple
+exploration(6614),	-- Illidari Training Grounds
+exploration(6615),	-- Krasarang Wilds
+exploration(6616),	-- A Little Patience
+exploration(6618),	-- Bizmo's Brawlpub
+exploration(6619),	-- Ruins of Korune
+exploration(6620),	-- Lair of Skiggit
+exploration(6621),	-- Temple of the Red Crane
+exploration(6622),	-- Throne of Thunder
+exploration(6623),	-- Antonidas Memorial
+exploration(6624),	-- Circle of Wills
+exploration(6625),	-- Krasus' Landing
+exploration(6626),	-- Krasus' Landing
+exploration(6627),	-- The Silver Enclave
+exploration(6628),	-- Dalaran City
+exploration(6629),	-- The Violet Citadel
+exploration(6630),	-- The Violet Citadel Spire
+exploration(6631),	-- Sewer Exit Pipe
+exploration(6632),	-- Sewer Exit Pipe
+exploration(6633),	-- Dalaran Floating Rocks
+exploration(6634),	-- Sunreaver's Sanctuary
+exploration(6635),	-- Dalaran Island
+exploration(6636),	-- The Violet Hold
+exploration(6637),	-- The Underbelly
+exploration(6638),	-- The Eventide
+exploration(6639),	-- Magus Commerce Exchange
+exploration(6640),	-- Vargoth's Retreat
+exploration(6641),	-- Violet Citadel Balcony
+exploration(6642),	-- Runeweaver Square
+exploration(6643),	-- Lion's Landing
+exploration(6644),	-- Domination Point
+exploration(6645),	-- Crane Wing Refuge
+exploration(6646),	-- Fallsong Village
+exploration(6647),	-- The Jade Forest
+exploration(6648),	-- The Spring Road
+exploration(6649),	-- Valley of the Four Winds
+exploration(6650),	-- Kun-Lai Summit
+exploration(6651),	-- Vale of Eternal Blossoms
+exploration(6652),	-- The Veiled Stair
+exploration(6654),	-- Predator's Perch
+exploration(6661),	-- Isle of Giants
+exploration(6665),	-- Deepwind Gorge
+exploration(6666),	-- Infiltrating the Shipyard
+exploration(6667),	-- Troll War Camp Outskirts
+exploration(6668),	-- Shipyard
+exploration(6669),	-- Warship
+exploration(6670),	-- Sea
+exploration(6671),	-- Hall of the Exalted
+exploration(6672),	-- Bleak Hollow
+exploration(6673),	-- To The Skies!
+exploration(6674),	-- Dawnseeker Promontory
+exploration(6675),	-- Isle of Thunder
+exploration(6676),	-- Bay of Echoes
+exploration(6677),	-- Isle of Thunder
+exploration(6678),	-- Dun Morogh
+exploration(6679),	-- Shimmer Ridge
+exploration(6680),	-- Battlefront Provisions
+exploration(6681),	-- Lightning Vein Mine
+exploration(6683),	-- Misty Shores
+exploration(6686),	-- Diremoor
+exploration(6687),	-- Court of Bones
+exploration(6688),	-- Za'Tual
+exploration(6689),	-- Ihgaluk Crag
+exploration(6690),	-- Violet Rise
+exploration(6691),	-- Dawnseeker Promontory
+exploration(6692),	-- The Emperor's Gate
+exploration(6693),	-- The Beast Pens
+exploration(6694),	-- Conqueror's Terrace
+exploration(6695),	-- Bloodied Crossing
+exploration(6696),	-- The Thunder Forges
+exploration(6697),	-- Stormsea Landing
+exploration(6698),	-- The Foot of Lei Shen
+exploration(6699),	-- Heyman's Hubris
+exploration(6700),	-- Bay of Echoes
+exploration(6701),	-- Beeble's Wreck
+exploration(6702),	-- Bozzle's Wreck
+exploration(6703),	-- Whispering Inlet
+exploration(6704),	-- Whispering Inlet
+exploration(6705),	-- Outdoor Ruins
+exploration(6706),	-- Forgotten Depths
+exploration(6707),	-- Thunder King's Citadel
+exploration(6708),	-- The Crimson Treader
+exploration(6709),	-- Salabria
+exploration(6710),	-- The Starchaser
+exploration(6711),	-- Spellsails
+exploration(6712),	-- The Seabolt
+exploration(6713),	-- Rhonin's Beard
+exploration(6714),	-- Hall of the Grand Imperion
+exploration(6716),	-- Thunder King's Citadel
+exploration(6717),	-- Zeb'tula
+exploration(6718),	-- Shaol'mara
+exploration(6724),	-- Backbreaker Bay
+exploration(6725),	-- Greymist Firth
+exploration(6726),	-- Wildvine Marsh
+exploration(6727),	-- Shadewood Thicket
+exploration(6728),	-- Isle of Giants
+exploration(6729),	-- Isle of Thunder
+exploration(6730),	-- Hidden Cell
+exploration(6731),	-- The Secrets of Ragefire
+exploration(6732),	-- The Tiger's Peak
+exploration(6733),	-- Vale of Eternal Blossoms
+exploration(6734),	-- Big Blossom Excavation
+exploration(6736),	-- Deepwind Gorge
+exploration(6737),	-- Deepwind Gorge
+exploration(6738),	-- Siege of Orgrimmar
+exploration(6739),	-- The Swollen Vault
+exploration(6746),	-- Siege of Orgrimmar (OLD DO NOT USE)
+exploration(6749),	-- Vault of Y'Shaarj
+exploration(6751),	-- Big Blossom Excavation
+exploration(6752),	-- Big Blossom Mine
+exploration(6753),	-- Deepwind Gorge
+exploration(6754),	-- Deepwind Gorge
+exploration(6757),	-- Timeless Isle
+exploration(6760),	-- Stromgarde Keep
+exploration(6763),	-- Theramore's Fall
+exploration(6770),	-- Blackguard's Forgotten Cove
+exploration(6771),	-- Celestial Tournament
+exploration(6773),	-- Old Pi'jiu
+exploration(6780),	-- Cavern of Lost Spirits
+exploration(6798),	-- Scarred Vale
+exploration(6799),	-- Bladefist Bay
+exploration(6800),	-- Dranosh'ar Landing
+exploration(6801),	-- The Darkspear Offensive
+exploration(6802),	-- Before the Gates
+exploration(6803),	-- Valley of Strength
+exploration(6804),	-- The Drag
+exploration(6807),	-- Dark Heart of Pandaria
+exploration(6812),	-- Greenstone Village
+exploration(6813),	-- Lion's Landing
+exploration(6814),	-- Blood in the Snow
+exploration(6815),	-- Domination Point
+exploration(6816),	-- Stormwind
+exploration(6821),	-- South Seas
+exploration(6822),	-- Ruby Lake
+exploration(6823),	-- Ordon Sanctuary
+exploration(6824),	-- Croaking Hollow
+exploration(6825),	-- Firewalker Ruins
+exploration(6830),	-- The Celestial Court
+exploration(6831),	-- Mossgreen Lake
+exploration(6832),	-- The Timeless Shore
+exploration(6833),	-- Tushui Landing
+exploration(6834),	-- Huojin Landing
+exploration(6835),	-- The Misty Strand
+exploration(6836),	-- Three-Breeze Terrace
+exploration(6837),	-- Kukuru's Grotto
+exploration(6838),	-- Tsavo'ka's Den
+exploration(6839),	-- Mysterious Den
+exploration(6840),	-- Whispershade Hollow
+exploration(6841),	-- Red Stone Run
+exploration(6842),	-- Firewalkers' Path
+exploration(6843),	-- Shrine of the Black Flame
+exploration(6844),	-- The Blazing Way
+exploration(6846),	-- Time-Lost Waters
+exploration(6852),	-- Proving Grounds
+exploration(6863),	-- The Secret Ingredient

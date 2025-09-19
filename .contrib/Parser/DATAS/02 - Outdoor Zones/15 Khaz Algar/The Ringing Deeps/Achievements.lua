@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		n(ACHIEVEMENTS, {
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
@@ -156,4 +156,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40724),		-- Treasures of The Ringing Deeps (automated)
 		}),
 	}),
-})));
+}));

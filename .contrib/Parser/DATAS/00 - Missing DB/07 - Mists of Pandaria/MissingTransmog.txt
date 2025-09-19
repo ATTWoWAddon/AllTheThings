@@ -965,144 +965,6 @@ s(271753)/i(86613),	-- Monster - Staff_2h_PanDung_C_01 - Green
 s(271754)/i(86614),	-- Monster - Staff_2h_PanDung_C_01 - Purple
 s(271755)/i(86615),	-- Monster - Staff_2h_PanDung_C_01 - Red
 s(271760)/i(86621),	-- Monster - Vrykul - Mace, 1H Spiked (Lightning)
-s(271877)/i(86740),	-- emaw Armguards \\ Stonemaw Armguards
-s(271878)/i(86741),	-- er of the Seven Stars \\ Dagger of the Seven Stars
-s(271879)/i(86742),	-- er Clawfeet \\ Jasper Clawfeet
-s(271880)/i(86743),	-- eflesh Leggings \\ Stoneflesh Leggings
-s(271881)/i(86744),	-- enly Jade Greatboots \\ Heavenly Jade Greatboots
-s(271882)/i(86745),	-- een-Fanged Crown \\ Sixteen-Fanged Crown
-s(271883)/i(86746),	-- ebound Cinch \\ Stonebound Cinch
-s(271884)/i(86747),	-- Dust Leggings \\ Jade Dust Leggings
-s(271885)/i(86748),	-- of Three Lanterns \\ Cape of Three Lanterns
-s(271886)/i(86749),	-- fire Worldwalkers \\ Wildfire Worldwalkers
-s(271887)/i(86750),	-- Raider's Girdle \\ Tomb Raider's Girdle
-s(271888)/i(86751),	-- ers of Six Oxen \\ Bracers of Six Oxen
-s(271889)/i(86752),	-- ification Greathelm \\ Nullification Greathelm
-s(271890)/i(86753),	-- k of Peacock Feathers \\ Cloak of Peacock Feathers
-s(271891)/i(86755),	-- n of Shadow \\ Chain of Shadow
-s(271892)/i(86756),	-- lates of Sagacious Shadows \\ Legplates of Sagacious Shadows
-s(271893)/i(86757),	-- of Cursed Dreams \\ Hood of Cursed Dreams
-s(271894)/i(86758),	-- rial Ghostbinder's Robes \\ Imperial Ghostbinder's Robes
-s(271895)/i(86760),	-- erets of Spirit Splitting \\ Sollerets of Spirit Splitting
-s(271896)/i(86761),	-- ers of Death \\ Fetters of Death
-s(271897)/i(86762),	-- 'kal, Fist of the Spiritbinder \\ Gara'kal, Fist of the Spiritbinder
-s(271898)/i(86763),	-- errealm Shoulderpads \\ Netherrealm Shoulderpads
-s(271899)/i(86764),	-- of the Ancient Spirit \\ Eye of the Ancient Spirit
-s(271900)/i(86765),	-- als of the Severed Soul \\ Sandals of the Severed Soul
-s(271901)/i(86766),	-- ings of Ancient Spirits \\ Bindings of Ancient Spirits
-s(271902)/i(86768),	-- lders of the Divided Mind \\ Spaulders of the Divided Mind
-s(271903)/i(86769),	-- ings of Imprisoned Will \\ Leggings of Imprisoned Will
-s(271904)/i(86770),	-- owsummoner Spaulders \\ Shadowsummoner Spaulders
-s(271905)/i(86777),	-- aming Tiger, Qiang's Unbreakable Polearm \\ Screaming Tiger, Qiang's Unbreakable Polearm
-s(271906)/i(86778),	-- lskin, Qiang's Impervious Shield \\ Steelskin, Qiang's Impervious Shield
-s(271907)/i(86779),	-- stplate of the Kings' Guard \\ Breastplate of the Kings' Guard
-s(271908)/i(86780),	-- lderguards of the Unflanked \\ Shoulderguards of the Unflanked
-s(271909)/i(86781),	-- tai's Pillaging Leggings \\ Subetai's Pillaging Leggings
-s(271910)/i(86782),	-- w Breaking Windcloak \\ Arrow Breaking Windcloak
-s(271911)/i(86784),	-- 's Treads of Insanity \\ Meng's Treads of Insanity
-s(271912)/i(86785),	-- le of Delirious Visions \\ Girdle of Delirious Visions
-s(271913)/i(86786),	-- ers of Dark Thoughts \\ Bracers of Dark Thoughts
-s(271914)/i(86787),	-- ing Shadow Grips \\ Undying Shadow Grips
-s(271915)/i(86788),	-- of Blind Eyes \\ Hood of Blind Eyes
-s(271916)/i(86789),	-- ion, the Fanged Crescent \\ Elegion, the Fanged Crescent
-s(271917)/i(86793),	-- -Stealer Waistguard \\ Star-Stealer Waistguard
-s(271918)/i(86794),	-- crusher Gauntlets \\ Starcrusher Gauntlets
-s(271919)/i(86795),	-- tguard of Total Annihilation \\ Chestguard of Total Annihilation
-s(271920)/i(86796),	-- h of the Celestial Spark \\ Torch of the Celestial Spark
-s(271921)/i(86797),	-- ewalker Striders \\ Phasewalker Striders
-s(271922)/i(86798),	-- tal Belt \\ Orbital Belt
-s(271923)/i(86799),	-- shatter \\ Starshatter
-s(271924)/i(86800),	-- lders of Empyreal Focus \\ Shoulders of Empyreal Focus
-s(271925)/i(86801),	-- Kung, Spark of Titans \\ Fang Kung, Spark of Titans
-s(271926)/i(86803),	-- -xi's Devastating Legplates \\ Jang-xi's Devastating Legplates
-s(271927)/i(86804),	-- n of Opportunistic Strikes \\ Crown of Opportunistic Strikes
-s(271928)/i(86806),	-- n, Scepter of the Sleeping Emperor \\ Tihan, Scepter of the Sleeping Emperor
-s(271929)/i(86807),	-- lders of the Emperor's Rage \\ Spaulders of the Emperor's Rage
-s(271930)/i(86808),	-- etized Leggings \\ Magnetized Leggings
-s(271931)/i(86809),	-- of Focused Energy \\ Hood of Focused Energy
-s(271932)/i(86811),	-- s of the Still Breath \\ Boots of the Still Breath
-s(271933)/i(86812),	-- k's Chrysanthemum Cape \\ Hisek's Chrysanthemum Cape
-s(271934)/i(86815),	-- nuating Bracers \\ Attenuating Bracers
-s(271935)/i(86816),	-- tplate of the Forbidden Tower \\ Chestplate of the Forbidden Tower
-s(271936)/i(86817),	-- tlets of Undesired Gifts \\ Gauntlets of Undesired Gifts
-s(271937)/i(86818),	-- of Screaming Secrets \\ Mail of Screaming Secrets
-s(271938)/i(86819),	-- es of Grasping Claws \\ Gloves of Grasping Claws
-s(271939)/i(86821),	-- ers of Unseen Strikes \\ Bracers of Unseen Strikes
-s(271940)/i(86822),	-- tplate of Overwhelming Assault \\ Waistplate of Overwhelming Assault
-s(271941)/i(86823),	-- blade Talons \\ Windblade Talons
-s(271942)/i(86825),	-- s of the Blowing Wind \\ Boots of the Blowing Wind
-s(271943)/i(86826),	-- ers of Tempestuous Fury \\ Bracers of Tempestuous Fury
-s(271944)/i(86827),	-- e of Gathering Clouds \\ Drape of Gathering Clouds
-s(271945)/i(86828),	-- ting Wind Bracers \\ Twisting Wind Bracers
-s(271946)/i(86829),	-- ado-Summoning Censer \\ Tornado-Summoning Censer
-s(271947)/i(86831),	-- reaker Greatcloak \\ Legbreaker Greatcloak
-s(271948)/i(86832),	-- lon's Hollow Skull \\ Garalon's Hollow Skull
-s(271949)/i(86833),	-- s of the Leviathan \\ Grips of the Leviathan
-s(271950)/i(86834),	-- breaker Gauntlets \\ Bonebreaker Gauntlets
-s(271951)/i(86836),	-- als of the Unbidden \\ Sandals of the Unbidden
-s(271952)/i(86837),	-- ps of Panic \\ Grasps of Panic
-s(271953)/i(86838),	-- s of Eighty Lights \\ Robes of Eighty Lights
-s(271954)/i(86839),	-- l's Hood of Intoxicating Vapors \\ Xaril's Hood of Intoxicating Vapors
-s(271955)/i(86840),	-- mwake Mistcloak \\ Stormwake Mistcloak
-s(271956)/i(86841),	-- ing Cicada Bracers \\ Shining Cicada Bracers
-s(271957)/i(86842),	-- nescent Firefly Wristguards \\ Luminescent Firefly Wristguards
-s(271958)/i(86843),	-- th Beetle Wristbands \\ Smooth Beetle Wristbands
-s(271959)/i(86844),	-- ming Moth Cuffs \\ Gleaming Moth Cuffs
-s(271960)/i(86845),	-- lescent Butterfly Wristbands \\ Pearlescent Butterfly Wristbands
-s(271961)/i(86846),	-- id Cricket Bracers \\ Inlaid Cricket Bracers
-s(271962)/i(86847),	-- ed Hornet Bracers \\ Jagged Hornet Bracers
-s(271963)/i(86848),	-- ated Wasp Bracers \\ Serrated Wasp Bracers
-s(271964)/i(86849),	-- ed Locust Bracers \\ Plated Locust Bracers
-s(271965)/i(86850),	-- ing Damselfly Cuffs \\ Darting Damselfly Cuffs
-s(271966)/i(86852),	-- ling Treads \\ Impaling Treads
-s(271967)/i(86853),	-- k of Raining Blades \\ Cloak of Raining Blades
-s(271968)/i(86854),	-- culated Legplates \\ Articulated Legplates
-s(271969)/i(86855),	-- slasher Pauldrons \\ Wingslasher Pauldrons
-s(271970)/i(86857),	-- of Malleable Amber \\ Belt of Malleable Amber
-s(271971)/i(86859),	-- ds of Deadly Secretions \\ Treads of Deadly Secretions
-s(271972)/i(86860),	-- lderpads of Misshapen Life \\ Shoulderpads of Misshapen Life
-s(271973)/i(86861),	-- trous Stompers \\ Monstrous Stompers
-s(271974)/i(86862),	-- ok's Amber Scalpel \\ Un'sok's Amber Scalpel
-s(271975)/i(86863),	-- itar of Seven Stars \\ Scimitar of Seven Stars
-s(271976)/i(86864),	-- s of Shek'zeer \\ Claws of Shek'zeer
-s(271977)/i(86865),	-- tak, Imperial Scepter of the Swarm \\ Kri'tak, Imperial Scepter of the Swarm
-s(271978)/i(86866),	-- n of the Doomed Empress \\ Crown of the Doomed Empress
-s(271979)/i(86867),	-- ings of Shadow Infestation \\ Leggings of Shadow Infestation
-s(271980)/i(86868),	-- ers of Defiled Earth \\ Bracers of Defiled Earth
-s(271981)/i(86870),	-- water Greatboots \\ Deepwater Greatboots
-s(271982)/i(86874),	-- k of Overwhelming Corruption \\ Cloak of Overwhelming Corruption
-s(271983)/i(86875),	-- s of the Corrupted Waters \\ Cuffs of the Corrupted Waters
-s(271984)/i(86876),	-- ue of Expelled Corruption \\ Casque of Expelled Corruption
-s(271985)/i(86877),	-- tning Prisoner's Boots \\ Lightning Prisoner's Boots
-s(271986)/i(86878),	-- i's Uncleansed Sandals \\ Asani's Uncleansed Sandals
-s(271987)/i(86879),	-- Rei, Staff of the Legendary Protector \\ Gao-Rei, Staff of the Legendary Protector
-s(271988)/i(86882),	-- rought Mail Hauberk \\ Sunwrought Mail Hauberk
-s(271989)/i(86883),	-- reak Drape \\ Daybreak Drape
-s(271990)/i(86884),	-- of Embodied Terror \\ Belt of Embodied Terror
-s(271991)/i(86886),	-- an, Terror Incarnate \\ Loshan, Terror Incarnate
-s(271992)/i(86887),	-- erets of Instability \\ Sollerets of Instability
-s(271993)/i(86888),	-- als of the Blackest Night \\ Sandals of the Blackest Night
-s(271994)/i(86889),	-- en, the Soul Burner \\ Taoren, the Soul Burner
-s(271995)/i(86891),	-- ass of the Animated Protector \\ Cuirass of the Animated Protector
-s(271996)/i(86892),	-- s of the Unknown Fear \\ Robes of the Unknown Fear
-s(271997)/i(86893),	-- ya, Orb of the Waterspeaker \\ Jin'ya, Orb of the Waterspeaker
-s(271998)/i(86895),	-- er's Belt of Final Winter \\ Healer's Belt of Final Winter
-s(271999)/i(86896),	-- ker's Belt of Final Winter \\ Invoker's Belt of Final Winter
-s(272000)/i(86897),	-- erer's Belt of Final Winter \\ Sorcerer's Belt of Final Winter
-s(272001)/i(86898),	-- er's Cord of Eternal Autumn \\ Weaver's Cord of Eternal Autumn
-s(272002)/i(86899),	-- ker's Cord of Eternal Autumn \\ Stalker's Cord of Eternal Autumn
-s(272003)/i(86900),	-- er's Chain of Unending Summer \\ Binder's Chain of Unending Summer
-s(272004)/i(86901),	-- er's Chain of Unending Summer \\ Ranger's Chain of Unending Summer
-s(272005)/i(86902),	-- er's Girdle of Endless Spring \\ Mender's Girdle of Endless Spring
-s(272006)/i(86903),	-- ector's Girdle of Endless Spring \\ Protector's Girdle of Endless Spring
-s(272007)/i(86904),	-- oller's Girdle of Endless Spring \\ Patroller's Girdle of Endless Spring
-s(272008)/i(86905),	-- 'ka, Execution of Dominion \\ Shin'ka, Execution of Dominion
-s(272009)/i(86906),	-- ak, Jaws of Terror \\ Kilrak, Jaws of Terror
-s(272010)/i(86908),	-- dwoven Leggings of Failure \\ Dreadwoven Leggings of Failure
-s(272011)/i(86909),	-- il's Crackling Dagger \\ Regail's Crackling Dagger
-s(272012)/i(86910),	-- itsever \\ Spiritsever
-s(272013)/i(86911),	-- s of Torn Nightmares \\ Robes of Torn Nightmares
-s(272014)/i(86912),	-- ches of Dying Hope \\ Clutches of Dying Hope
 s(272269)/i(87204),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02
 s(272270)/i(87205),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02 - Orange
 s(272271)/i(87206),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02 - Red
@@ -1125,8 +987,6 @@ s(272478)/i(87523),	-- [PH] Troll Guitar
 s(272479)/i(87525),	-- [PH] Orc Microphone
 s(272553)/i(87770),	-- Monster - Mace_1h_PanStart_A_01 - Red (Crackling Lightning)
 s(272554)/i(87772),	-- Monster - Mace_1h_PanStart_A_01 - Red (Lightning V2)
-s(272556)/i(87823),	-- lok's Fizzing Chestguard \\ Zor'lok's Fizzing Chestguard
-s(272559)/i(87826),	-- s of Terra Cotta \\ Grips of Terra Cotta
 s(272561)/i(87832),	-- Art Template Cloth Cloak - Cape_Pandaria_D_03
 s(272562)/i(87833),	-- Art Template Cloth Cloak - Cape_Pandaria_D_03 - Green
 s(272563)/i(87834),	-- Art Template Cloth Cloak - Cape_Pandaria_D_03 - Red
@@ -1621,7 +1481,6 @@ s(273514)/i(89377),	-- Monster - Offhand_1h_PandariaQuest_B_01 - Blue
 s(273515)/i(89378),	-- Monster - Offhand_1h_PandariaQuest_B_01 - Gold
 s(273516)/i(89379),	-- Monster - Offhand_1h_PandariaQuest_B_01 - Green
 s(273517)/i(89380),	-- Monster - Offhand_1h_PandariaQuest_B_01 - Purple
-s(273560)/i(89426),	-- of Fiery Winds \\ Fan of Fiery Winds
 s(273635)/i(89514),	-- Monster - Shield_PandaRaid_D_02
 s(273636)/i(89515),	-- Monster - Shield_PandaRaid_D_02 - Blue
 s(273637)/i(89516),	-- Monster - Shield_PandaRaid_D_02 - Red
@@ -1716,37 +1575,6 @@ s(273885)/i(89908),	-- Monster - Sword_2h_Mantid_01 (One Hand)
 s(273886)/i(89909),	-- Monster - Sword_2h_Mantid_01 (Fire, One Hand)
 s(273887)/i(89910),	-- Monster - Polearm_2H_Mantid_01 (1-Handed)
 s(273888)/i(89916),	-- Monster - Staff_2h_PanDung_C_03
-s(273920)/i(89953),	-- t-Soaked Sandals \\ Scent-Soaked Sandals
-s(273921)/i(89954),	-- elt of Sealed Pods \\ Warbelt of Sealed Pods
-s(273922)/i(89955),	-- d Dancer's Leggings \\ Sword Dancer's Leggings
-s(273923)/i(89956),	-- drons of the Broken Blade \\ Pauldrons of the Broken Blade
-s(273924)/i(89957),	-- of Stilled Winds \\ Hood of Stilled Winds
-s(273925)/i(89958),	-- lon's Graven Carapace \\ Garalon's Graven Carapace
-s(273926)/i(89959),	-- lders of Foaming Fluids \\ Shoulders of Foaming Fluids
-s(273927)/i(89960),	-- ments of Steaming Ichor \\ Vestments of Steaming Ichor
-s(273928)/i(89961),	-- ow Heart Spaulders \\ Shadow Heart Spaulders
-s(273929)/i(89962),	-- of Dark Dreams \\ Hood of Dark Dreams
-s(273930)/i(89963),	-- lates of Regal Reinforcement \\ Legplates of Regal Reinforcement
-s(273931)/i(89964),	-- efang Chestguard \\ Stonefang Chestguard
-s(273932)/i(89965),	-- -Linked Girdle \\ Ruby-Linked Girdle
-s(273933)/i(89966),	-- s of Amethyst \\ Claws of Amethyst
-s(273934)/i(89969),	-- ed Soul Bracers \\ Bonded Soul Bracers
-s(273935)/i(89970),	-- ers of Violent Meditation \\ Bracers of Violent Meditation
-s(273936)/i(89971),	-- shard Drape \\ Mindshard Drape
-s(273937)/i(89973),	-- xyfire Girdle \\ Galaxyfire Girdle
-s(273938)/i(89974),	-- n of Keening Stars \\ Crown of Keening Stars
-s(273939)/i(89975),	-- deye Gaze \\ Dreadeye Gaze
-s(273940)/i(89976),	-- tguard of Eternal Vigilance \\ Chestguard of Eternal Vigilance
-s(273941)/i(89977),	-- eled Grips of Solemnity \\ Enameled Grips of Solemnity
-s(273942)/i(89978),	-- uards of Failing Purification \\ Legguards of Failing Purification
-s(273943)/i(89979),	-- rborne Shoulderguards \\ Waterborne Shoulderguards
-s(273944)/i(89980),	-- tlets of the Shadow's Caress \\ Gauntlets of the Shadow's Caress
-s(273945)/i(89981),	-- ps of Serpentine Might \\ Grasps of Serpentine Might
-s(273946)/i(89982),	-- lderpads of Twisted Fate \\ Shoulderpads of Twisted Fate
-s(273947)/i(89983),	-- -Blackened Leggings \\ Fear-Blackened Leggings
-s(273948)/i(89984),	-- s of Pinioned Eyes \\ Robes of Pinioned Eyes
-s(273949)/i(89985),	-- of Instant Petrification \\ Wrap of Instant Petrification
-s(273950)/i(89986),	-- owgrip Girdle \\ Shadowgrip Girdle
 s(273951)/i(89987),	-- Monster - Staff_2h_PanDung_C_03 - Blue
 s(273952)/i(89988),	-- Monster - Staff_2h_PanDung_C_03 - Red
 s(273953)/i(89989),	-- Monster - Staff_2h_PanDung_C_03 - Yellow
@@ -1827,7 +1655,6 @@ s(274380)/i(90693),	-- Art Template Leather - Leather_CharCreate_Druid_B_01 Boot
 s(274381)/i(90694),	-- Art Template Leather - Leather_CharCreate_Druid_B_01 Chest
 s(274399)/i(90736),	-- Art Template Mail Boot - Mail_CharCreate_Shaman_B_01
 s(274400)/i(90737),	-- Art Template Mail Hand - Mail_CharCreate_Shaman_B_01
-s(274402)/i(90739),	-- tik's Stormseizer Gauntlets \\ Kaz'tik's Stormseizer Gauntlets
 s(274478)/i(90819),	-- Warlord's Razor \\ High Warlord's Razor
 s(274485)/i(90850),	-- Art Template Mail - CharCreate_Shaman_B_01 - Shoulder
 s(274486)/i(90851),	-- Art Template Plate - CharCreate_Paladin_B_01 - Shoulder
@@ -2118,6 +1945,7 @@ s(275572)/i(92507),	-- Art Template Plate Legs - Plate_RaidPaladin_M_01 - White
 s(275573)/i(92508),	-- Art Template Plate Shoulder - Plate_RaidPaladin_M_01 - White
 s(275574)/i(92509),	-- Art Template Plate Wrist - Plate_RaidPaladin_M_01 - White
 s(275575)/i(92518),	-- Monster - Mace2H, Blood Elf A02 Silver
+s(275597)/i(92738),	-- ri Hat \\ Safari Hat
 s(275598)/i(92762),	-- Monster - Mace 1h, Icecrown Citadel
 s(275599)/i(92777),	-- Art Template Generic Head - Helm_Misc_ConePartyHat_A_01
 s(275600)/i(92795),	-- Weapon - Shield_PVPPandariaS2_C_01
@@ -3842,3 +3670,5 @@ s(287329)/i(238038),	-- Stormstout's Sha-Touched Pants \\ Stormstout's Sha-Warpe
 s(287330)/i(238043),	-- Stormstout's Sha-Touched Belt \\ Stormstout's Sha-Warped Belt
 s(287331)/i(238047),	-- Stormstout's Sha-Touched Shoulders \\ Stormstout's Sha-Warped Shoulders
 s(287332)/i(238048),	-- Stormstout's Sha-Touched Gloves \\ Stormstout's Sha-Warped Gloves
+5.5.0.62655
+s(298467)/i(110427),	-- ri Hat \\ Safari Hat

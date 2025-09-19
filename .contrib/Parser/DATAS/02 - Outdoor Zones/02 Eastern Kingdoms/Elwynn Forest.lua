@@ -401,21 +401,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
 						}),
-						-- #if AFTER MOP
-						q(26914, {	-- Corruption [MoP+] / Immolation [Cata] (Human)
-							["sourceQuest"] = 3105,	-- Tainted Letter
-							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
-							["coord"] = { 39.5, 55.1, NORTHSHIRE_VALLEY },
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["races"] = { HUMAN },
-							["classes"] = { WARLOCK },
-							["groups"] = {
-								objective(2, {	-- 0/5 Practice Corruption
-									["provider"] = { "n", 44548 },	-- Training Dummy
-								}),
-							},
-						}),
-						-- #endif
 						q(5261, {	-- Eagan Peltskinner
 							["sourceQuest"] = 783,	-- A Threat Within
 							["qg"] = 823,	-- Deputy Willem
@@ -857,34 +842,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 						}),
-						-- #if BEFORE MOP
 						q(26919, {	-- Healing the Wounded [Cata] / Learning the Word [MoP+] (Human)
 							["sourceQuest"] = 3103,	-- Hallowed Letter
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
-							["coord"] = { 49.8, 39.5, ELWYNN_FOREST },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.3, 43.8, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.8, 39.5, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- Heal Wounded Trainee
 									["provider"] = { "n", 44564 },	-- Wounded Trainee
 								}),
+								-- #else
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
 						q(26914, {	-- Immolation [Cata] / Corruption [MoP+] (Human)
 							["sourceQuest"] = 3105,	-- Tainted Letter
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
-							["coord"] = { 49.9, 42.7, ELWYNN_FOREST },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.5, 55.1, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.9, 42.7, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
 							["groups"] = {
+								-- #if BEFORE MOP
 								objective(1, {	-- Practice Immolation
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
+								-- #else
+								objective(2, {	-- 0/5 Practice Corruption
+									["provider"] = { "n", 44548 },	-- Training Dummy
+								}),
+								-- #endif
 							},
 						}),
-						-- #endif
 						q(5623, {	-- In Favor of the Light
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
@@ -1044,21 +1051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						-- #if AFTER MOP
-						q(26919, {	-- Learning the Word [MoP+] / Healing the Wounded [Cata] (Human)
-							["sourceQuest"] = 3103,	-- Hallowed Letter
-							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
-							["coord"] = { 39.3, 43.8, NORTHSHIRE_VALLEY },
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["races"] = { HUMAN },
-							["classes"] = { PRIEST },
-							["groups"] = {
-								objective(2, {	-- 0/5 Practice Shadow Word: Pain
-									["provider"] = { "n", 44548 },	-- Training Dummy
-								}),
-							},
-						}),
-						-- #endif
+
 						q(28771, {	-- Lions for Lambs
 							["sourceQuest"] = 28763,	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride

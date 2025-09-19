@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28227),	-- Sparking Arcanite Ring
 						i(28223),	-- Arcanist's Stone
 						-- #endif
-						i(24173),	-- Design: Circlet of Arcane Might
+						i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
 					},
 				}),
 			}),
@@ -343,7 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27904),	-- Resounding Ring of Glory
 							i(28227),	-- Sparking Arcanite Ring
 							i(28223),	-- Arcanist's Stone
-							i(24173),	-- Design: Circlet of Arcane Might
+							i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33847),	-- Epoch Hunter's Head
 						},

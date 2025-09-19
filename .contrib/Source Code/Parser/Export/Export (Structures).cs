@@ -12,44 +12,22 @@ namespace ATT
     partial class Export
     {
         /// <summary>
-        /// The explicit number of times a commonly formatted list was written to the database.
-        /// This helps with the minification process by making the exporter aware of common data
-        /// that can be replaced with a shortened identifier instead.
-        /// </summary>
-        private static IDictionary<string, int> STRUCTURE_COUNTS = new Dictionary<string, int>();
-
-        /// <summary>
-        /// Mark the structure as commonly used.
-        /// </summary>
-        /// <param name="structure">The structure.</param>
-        private static void MarkStructure(string structure)
-        {
-            if (STRUCTURE_COUNTS.TryGetValue(structure, out int count))
-            {
-                STRUCTURE_COUNTS[structure] = count + 1;
-            }
-            else
-            {
-                STRUCTURE_COUNTS[structure] = 1;
-            }
-        }
-
-        /// <summary>
         /// Simplify the structure of the built string and substitute commonly assigned structures with a local variable.
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="action">The action</param>
         /// <param name="maximum">The maximum number of replacements to create</param>
         /// <param name="minimumReplacements">The minimum number of uses for a structure to be marked for replacement.</param>
-        private static void SimplifyStructure(StringBuilder builder, Action<StringBuilder, IEnumerable<KeyValuePair<string, string>>> action, int maximum = 50, int minimumReplacements = 4)
+        private static void SimplifyStructure(Exporter builder, Action<Exporter, IEnumerable<KeyValuePair<string, string>>> action, int maximum = 50, int minimumReplacements = 4)
         {
-            if (STRUCTURE_COUNTS.Any())
+            Dictionary<string, string> replacements = new Dictionary<string, string>();
+            if (builder.STRUCTURE_COUNTS.Any())
             {
                 string CategorySplitter = Environment.NewLine;
 
                 // Prepare the shortcuts for commonly repeated structures.
-                var order = STRUCTURE_COUNTS.ToList();
-                STRUCTURE_COUNTS.Clear();
+                var order = builder.STRUCTURE_COUNTS.ToList();
+                builder.STRUCTURE_COUNTS.Clear();
 
                 // Sort the KeyValues so that the largest memory-cost replacements are exported first for performance reasons
                 order.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
@@ -63,38 +41,33 @@ namespace ATT
                     // reduced duplicate definitions
                     (uses - 1);
 
-                Trace.Write($"Performing up to {maximum} structure replacements (at least {minimumReplacements} replacements for each) from {order.Count} total structures ==> ");
-
                 int count = 0;
                 // Reduce the allowed set of replacements
-                order = order
+                var replacementOrder = order
                     .Where(a => a.Value >= minimumReplacements && ++count <= maximum)
                     .Take(maximum)
                     .ToList();
 
+                Framework.Log($" - {builder.Name}: Up to {maximum} structure replacements (min. {minimumReplacements} uses each) from {order.Count} total ==> {replacementOrder.Count} replacements ({replacementOrder.Sum(x => ReplacmentSavings(x.Key.Count(c => c == ','), x.Value)) / 1024}kB reduction)");
+
                 // Sort the final set of replacements by their actual replacement key, to maintain identical export structure when re-parsing the same content
-                order.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
+                replacementOrder.Sort(delegate (KeyValuePair<string, int> a, KeyValuePair<string, int> b)
                 {
                     return string.Compare(a.Key, b.Key);
                 });
 
-                // Split the StringBuilder into smaller string builders based on something which is not related to replaceable content, i.e. a newline
+                // Split the StringBuilder into smaller string builders based on something which is not related to replaceable content
                 List<StringBuilder> splitBuilders = builder.ToString()
                     .Split(new string[] { CategorySplitter }, StringSplitOptions.RemoveEmptyEntries)
                     .Select(s => new StringBuilder(s))
                     .ToList();
 
-                Trace.WriteLine(
-                    $"{order.Count} actual replacements across {splitBuilders.Count} containers ({order.Sum(x => ReplacmentSavings(x.Key.Count(c => c == ','), x.Value)) / 1024}kB reduction)");
-
                 // Determine all replacement relationships
-                Dictionary<string, string> replacements = new Dictionary<string, string>();
                 count = 0;
-                foreach (var replaceCount in order)
+                foreach (var replaceCount in replacementOrder)
                 {
                     replacements.Add($"a[{++count}]", replaceCount.Key);
-                    if (DebugMode)
-                        Trace.WriteLine($"Added replacement: {replaceCount.Key} : {replaceCount.Value}");
+                    Framework.LogDebugFormatted("Added replacement: $1 : $2", replaceCount.Key, replaceCount.Value);
                 }
 
                 // capture containers in a sorted list for processing, without affecting export order
@@ -102,7 +75,7 @@ namespace ATT
                 // longest containers first for most processing time
                 processingOrder.Sort((a, b) => { return b.Length - a.Length; });
 
-                Trace.WriteLine(string.Concat(Enumerable.Range(1, processingOrder.Count * 2).Select(n => "-")));
+                Framework.LogDebug(string.Concat(Enumerable.Range(1, processingOrder.Count * 2).Select(n => "-")));
 
                 // Perform replacements on all small StringBuilders in parallel tasks
                 Task[] replacementTasks = new Task[splitBuilders.Count];
@@ -114,24 +87,26 @@ namespace ATT
                 }
                 Task.WaitAll(replacementTasks);
 
-                Trace.WriteLine(string.Empty);
+                Framework.Log($" - {builder.Name}: Done");
 
                 // Replace the main string builder with the multiple builder content
                 builder.Clear();
                 builder.Append(string.Join(CategorySplitter, splitBuilders.Select(sb => sb.ToString())));
-
-                action(builder, replacements);
             }
+
+            action(builder, replacements);
         }
 
         private static void ReplaceStringBuilderContent(StringBuilder builder, IEnumerable<KeyValuePair<string, string>> replacements)
         {
-            Trace.Write("<");
+            if (Framework.DebugLogging)
+                Trace.Write("<");
             foreach (var pair in replacements)
             {
                 builder.Replace(pair.Value, pair.Key);
             }
-            Trace.Write(">");
+            if (Framework.DebugLogging)
+                Trace.Write(">");
         }
 
         /// <summary>
@@ -140,7 +115,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="maximum">The maximum number of replacements to create</param>
         /// <param name="minimumReplacements">The minimum number of uses for a structure to be marked for replacement.</param>
-        private static void SimplifyStructureForJSON(StringBuilder builder, int maximum = 50, int minimumReplacements = 4)
+        public static void SimplifyStructureForJSON(Exporter builder, int maximum = 50, int minimumReplacements = 4)
         {
             SimplifyStructure(builder, ExportLocalVariablesForJSON, maximum, minimumReplacements);
         }
@@ -151,7 +126,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="maximum">The maximum number of replacements to create</param>
         /// <param name="minimumReplacements">The minimum number of uses for a structure to be marked for replacement.</param>
-        private static void SimplifyStructureForLua(StringBuilder builder, int maximum = 1000, int minimumReplacements = 2)
+        public static void SimplifyStructureForLua(Exporter builder, int maximum = 1000, int minimumReplacements = 2)
         {
             SimplifyStructure(builder, ExportTableReferenceForLua, maximum, minimumReplacements);
         }

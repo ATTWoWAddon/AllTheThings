@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = {
 					o(311822, {	-- Bot Scrambler
 						["coord"] = { 39.5, 53.7, VOLDUN },
-						["groups"] = { i(165841), },	-- Bot Scrambler (QI!)
+						["groups"] = { i(165841) },	-- Bot Scrambler (QI!)
 					}),
 				},
 			}),

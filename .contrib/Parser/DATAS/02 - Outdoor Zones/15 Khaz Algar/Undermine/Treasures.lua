@@ -1,19 +1,19 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(TREASURES, {
-				o(469858, {	-- Shiny Trash Can
-					-- entire map, basically
-					-- trash items, crystals, valorstones
-					--currency(3226), 	-- Market Research
-				}),
-				o(469857, {	-- Overflowing Dumpster
-					-- entire map
-					--currency(3226), 	-- Market Research
-					i(234741),	-- Miscellaneous Mechanica
-				}),
+			o(469858, {	-- Shiny Trash Can
+				-- entire map, basically
+				-- trash items, crystals, valorstones
+				--currency(3226), 	-- Market Research
+			}),
+			o(469857, {	-- Overflowing Dumpster
+				-- entire map
+				--currency(3226), 	-- Market Research
+				i(234741),	-- Miscellaneous Mechanica
+			}),
 			--
 			o(502908, {	-- A Threatening Letter
 				["coord"] = { 27.3, 70.6, UNDERMINE },
@@ -228,4 +228,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));

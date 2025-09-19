@@ -821,6 +821,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			-- #endif
 			["maps"] = { 325 },	-- The Vortex Pinnacle
 			["providers"] = {
+				{ "i", 67494 },	-- Electrostatic Condenser
 				{ "i", 67495 },	-- Strange Bloated Stomach
 				{ "i", 67539 },	-- Tiny Treasure Chest
 				-- #if AFTER 4.1.0

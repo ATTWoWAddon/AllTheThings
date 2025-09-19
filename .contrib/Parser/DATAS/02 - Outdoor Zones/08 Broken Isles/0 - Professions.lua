@@ -30,6 +30,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 40530 },	-- An Eye for Detail
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
+						["groups"] = {
+							i(132259),	-- Bag of Real Jewels (QI!)
+						},
 					}),
 					q(40532, {	-- Making the Cut (Deadly Deep Amber)
 						["sourceQuest"] = 40531,	-- Swift Vengeance
@@ -146,6 +149,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.3, 36.2, LEGION_DALARAN },
 						["groups"] = {
 							recipe(195881),	-- Jeweled Lockpick
+							i(137624),	-- Black Market Diamond (QI!)
+							i(137625),	-- Diamond Lockpicks (QI!)
+							i(132882),	-- Lockpick Design (QI!)
 						},
 					}),
 					q(40540, {	-- Come at Me, Brul

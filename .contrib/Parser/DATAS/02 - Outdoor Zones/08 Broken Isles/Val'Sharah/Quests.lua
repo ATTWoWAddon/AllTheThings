@@ -445,6 +445,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["provider"] = { "n", 92618 },	-- Granny Marl
 					["coord"] = { 38.9, 61.4, VALSHARAH },
+					["groups"] = {
+						i(127005),	-- Barrel of Corn (QI!)
+					},
 				}),
 				q(39117, {	-- Shriek No More
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
@@ -618,7 +621,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["coord"] = { 66.6, 77.1, VALSHARAH },
 				}),
 				q(42857, {	-- Moist Around the Hedges
-					["coord"] = { 66.7, 75.7, VALSHARAH },
+					["provider"] = { "o", 251425 },	-- Moist Grizzlecomb
+					["coord"] = { 66.8, 75.7, VALSHARAH },
 				}),
 				-- KEK 4
 				q(40221, {	-- Spread Your Lunarwings and Fly
@@ -677,7 +681,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 
 				q(38889, {	-- Adopting the Adorable
 					["description"] = "You have to kill Jinikki the Puncturer to get this quest.",
-					["coord"] = { 53.0, 87.7, VALSHARAH },	-- cave entrance
+					["qg"] = 93677,	-- Shivering Ashmaw Cub
+					["coord"] = { 53.1, 87.9, VALSHARAH },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer
 					["groups"] = {
 						i(128690),	-- Ashmaw Cub (PET!)

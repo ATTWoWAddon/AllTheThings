@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(ZONE_DROPS, {
 			currency(3226, {	-- Market Research
@@ -19,7 +19,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					234901,	-- Underpin's Well-Connected Friend
 				},
 				["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 13 },
-				["timeline"] = { ADDED_11_1_0 },
 			}),
 			i(232984, {	-- Handcrank (MM!)
 				-- Included in ReagentDB
@@ -43,4 +42,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));

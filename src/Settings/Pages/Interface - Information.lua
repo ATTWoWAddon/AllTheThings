@@ -8,6 +8,7 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
+local wipearray = app.wipearray
 local GetRealmName = GetRealmName
 
 -- WoW API Cache
@@ -230,7 +231,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			desc = desc .. (character.text or "???");
 		end
 		tinsert(tooltipInfo, { left = kind:format(desc:gsub("-" .. GetRealmName(), "")), wrap = true, color = app.Colors.TooltipDescription });
-		wipe(knownBy);
+		wipearray(knownBy);
 	end
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
@@ -374,7 +375,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 						right = data[2] .. " / " .. data[3],
 					});
 				end
-				wipe(knownBy);
+				wipearray(knownBy);
 				return;
 			end
 		end
@@ -489,6 +490,7 @@ local function formatNumericWithCommas(amount)
     end
     return amount
 end
+app.formatNumericWithCommas = formatNumericWithCommas
 local function GetMoneyString(amount)
     if amount > 0 then
         local formatted
@@ -531,7 +533,7 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 			for i,entry in ipairs(AppendedInformationTextEntries) do
 				tinsert(tooltipInfo, entry);
 			end
-			wipe(AppendedInformationTextEntries);
+			wipearray(AppendedInformationTextEntries);
 		end
 	end,
 });
@@ -540,6 +542,7 @@ local function AppendInformationTextEntry(entry)
 	tinsert(AppendedInformationTextEntries, entry);
 end
 settings.AppendInformationTextEntry = AppendInformationTextEntry;
+local AccountWideIcon = app.GameBuildVersion >= 110005 and "|T6124644:0:0:0:0:64:64:4:60:4:60|t " or "|T413589:0:0:0:0:64:64:4:60:4:60|t "
 
 -- All of the Default Information Types.
 local InformationTypes = {
@@ -761,13 +764,27 @@ local InformationTypes = {
 	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
 		Process = function(t, reference, tooltipInfo)
 			local description = reference.description
-				or GetRelativeValue(reference, "sharedDescription")
+			local sharedDescription = GetRelativeValue(reference, "sharedDescription")
 				-- duplicated search results loose their parent references in order to prevent issues in filtering/tooltips
 				-- so also check the active row reference for accuracy if the tooltip is in context of a row
 				or GetRelativeValue(app.ActiveRowReference, "sharedDescription")
 			if description then
+				if sharedDescription then
+					tinsert(tooltipInfo, {
+						left = description.."\n"..sharedDescription,
+						color = app.Colors.TooltipDescription,
+						wrap = true,
+					});
+				else
+					tinsert(tooltipInfo, {
+						left = description,
+						color = app.Colors.TooltipDescription,
+						wrap = true,
+					});
+				end
+			elseif sharedDescription then
 				tinsert(tooltipInfo, {
-					left = description,
+					left = sharedDescription,
 					color = app.Colors.TooltipDescription,
 					wrap = true,
 				});
@@ -978,9 +995,11 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local questID = reference.questID
 			if not questID then return end
+
+			local account = app.AccountWideQuestsDB[questID]
 			tinsert(tooltipInfo, {
 				left = L.QUEST_ID,
-				right = reference.questID.." "..app.GetCompletionIcon(app.IsQuestFlaggedCompleted(questID)),
+				right = reference.questID.." "..(account and AccountWideIcon or "")..app.GetCompletionIcon(app.IsQuestFlaggedCompleted(questID)),
 			});
 		end
 	}),
@@ -1310,7 +1329,7 @@ local InformationTypes = {
 				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
 			end
 		end,
-	});
+	}),
 
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {
@@ -1321,7 +1340,7 @@ local InformationTypes = {
 			local OnTooltip = reference.OnTooltip;
 			if OnTooltip then OnTooltip(reference, tooltipInfo); end
 		end,
-	});
+	}),
 };
 settings.InformationTypes = InformationTypes;
 
@@ -1340,8 +1359,8 @@ local function SortInformationTypesByPriority(a,b)
 	end
 end
 local function RefreshActiveInformationTypes()
-	wipe(ActiveInformationTypesForExternalTooltips);
-	wipe(ActiveInformationTypes);
+	wipearray(ActiveInformationTypesForExternalTooltips);
+	wipearray(ActiveInformationTypes);
 
 	for _,informationType in ipairs(SortedInformationTypes) do
 		if settings:GetTooltipSetting(informationType.informationTypeID) or informationType.ForceActive then
@@ -1361,8 +1380,8 @@ end
 -- other settings can control what information is displayed without themselves being an information type
 app.AddEventHandler("OnSettingsRefreshed", RefreshActiveInformationTypes)
 local function SortInformationTypes()
-	wipe(SortedInformationTypes);
-	wipe(SortedInformationTypesByName);
+	wipearray(SortedInformationTypes);
+	wipearray(SortedInformationTypesByName);
 	for i,informationType in ipairs(InformationTypes) do
 		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
 		if not (informationType.ForceActive or informationType.HideCheckBox) then

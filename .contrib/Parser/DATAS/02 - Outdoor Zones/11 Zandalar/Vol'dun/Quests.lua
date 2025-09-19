@@ -1909,6 +1909,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155438),	-- Trapped Soul Warstaff
 					i(155431),	-- Zak'rajan's Hexmace
 					--
+					a(i(161290)),	-- Grimestone Greatmace
 					a(i(161304)),	-- Mad-Butcher's Mace
 					a(i(161301)),	-- Storm's Wake Mace
 				},

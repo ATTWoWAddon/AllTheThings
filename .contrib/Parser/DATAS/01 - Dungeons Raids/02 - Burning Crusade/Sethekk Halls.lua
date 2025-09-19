@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(541, {	-- Darkweaver Syth
 					["creatureID"] = 18472,
 					["groups"] = {
-						i(24160),	-- Design: Khorium Inferno Band
+						i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
 						i(27918),	-- Bands of Syth
 						i(27919),	-- Light-Woven Slippers
 						i(27914),	-- Moonstrider Boots
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(541, {	-- Darkweaver Syth
 						["creatureID"] = 18472,
 						["groups"] = {
-							i(24160),	-- Design: Khorium Inferno Band
+							i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
 							i(27918),	-- Bands of Syth
 							i(27919),	-- Light-Woven Slippers
 							i(27914),	-- Moonstrider Boots

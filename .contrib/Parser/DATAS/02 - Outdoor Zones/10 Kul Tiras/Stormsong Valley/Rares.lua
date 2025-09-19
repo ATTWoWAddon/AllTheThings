@@ -225,6 +225,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 43.4, 44.9, STORMSONG_VALLEY },	-- Nestmother
 					{ 41.2, 44.1, STORMSONG_VALLEY },	-- Path
 				},
+				["providers"] = {
+					{ "o", 291089 },	-- Acada's Nest
+				},
 				["groups"] = {
 					i(160458),	-- Ancient Featherlight Slippers
 					crit(41844, {	-- Nestmother Acada

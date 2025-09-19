@@ -38,21 +38,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9311, {	-- Blood Elf Spy
 							["sourceQuest"] = 10303,	-- The Blood Elves
 							["qg"] = 16546,	-- Tolaan
-							-- #if AFTER MOP
-							["coord"] = { 33.8, 69.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 72.0, 60.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.8, 69.2, AMMEN_VALE },
+								-- #else
+								{ 72.0, 60.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Surveyor Candress slain
 									["provider"] = { "n", 16522 },	-- Surveyor Candress
-									-- #if AFTER MOP
-									["coord"] = { 28.2, 80.0, AMMEN_VALE },
-									-- #else
-									["coord"] = { 69.3, 65.8, AZUREMYST_ISLE },
-									-- #endif
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 28.2, 80.0, AMMEN_VALE },
+										-- #else
+										{ 69.3, 65.8, AZUREMYST_ISLE },
+										-- #endif
+									},
 								}),
 								i(23390),	-- Exodar Bastard Sword
 								i(23391),	-- Exodar Dagger
@@ -65,11 +69,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9799, {	-- Botanical Legwork
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["qg"] = 20233,	-- Apprentice Vishael
-							-- #if AFTER MOP
-							["coord"] = { 49.7, 37.5, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.1, 46.6, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.7, 37.5, AMMEN_VALE },
+								-- #else
+								{ 79.1, 46.6, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Corrupted Flower
@@ -83,21 +89,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9371, {	-- Botanist Taerix
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
 							["qg"] = 16477,	-- Proenitus
-							-- #if AFTER MOP
-							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.7, 35.9, AMMEN_VALE },
+								-- #else
+								{ 80.4, 45.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(9449, {	-- Call of Earth (1/3)
 							["qg"] = 17089,	-- Firmanvaar
-							-- #if AFTER MOP
-							["coord"] = { 50.2, 43.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.2, 43.0, AMMEN_VALE },
+								-- #else
+								{ 79.3, 49.1, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
@@ -106,11 +116,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9450, {	-- Call of Earth (2/3)
 							["sourceQuest"] = 9449,	-- Call of Earth (1/3)
 							["qg"] = 17087,	-- Spirit of the Vale
-							-- #if AFTER MOP
-							["coord"] = { 33.6, 23.8, AMMEN_VALE },
-							-- #else
-							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.6, 23.8, AMMEN_VALE },
+								-- #else
+								{ 71.3, 39.1, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
@@ -127,11 +139,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								{ "n", 17087 },	-- Spirit of the Vale
 								{ "i", 23671 },	-- Earth Crystal
 							},
-							-- #if AFTER MOP
-							["coord"] = { 33.6, 23.8, AMMEN_VALE },
-							-- #else
-							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.6, 23.8, AMMEN_VALE },
+								-- #else
+								{ 71.3, 39.1, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
@@ -148,11 +162,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(26968, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Draenei)
 							["qg"] = 16500,	-- Valaatu <Mage Trainer>
-							-- #if AFTER MOP
-							["coord"] = { 51.0, 43.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.0, 43.0, AMMEN_VALE },
+								-- #else
+								{ 79.6, 48.8, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DRAENEI },
 							["classes"] = { MAGE },
@@ -161,11 +177,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9294, {	-- Healing the Lake
 							["sourceQuest"] = 9293,	-- What Must Be Done...
 							["qg"] = 16514,	-- Botanist Taerix
-							-- #if AFTER MOP
-							["coord"] = { 49.9, 37.3, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.9, 37.3, AMMEN_VALE },
+								-- #else
+								{ 79.1, 46.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
@@ -174,21 +192,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 										{ "i", 22955 },	-- Neutralizing Agent
 										{ "o", 181433 },	-- Irradiated Power Crystal
 									},
-									-- #if AFTER MOP
-									["coord"] = { 45.2, 64.9, AMMEN_VALE },
-									-- #else
-									["coord"] = { 77.2, 59.0, AZUREMYST_ISLE },
-									-- #endif
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 45.2, 64.9, AMMEN_VALE },
+										-- #else
+										{ 77.2, 59.0, AZUREMYST_ISLE },
+										-- #endif
+									},
 								}),
 							},
 						}),
 						q(9288, {	-- Hunter Training
 							["qg"] = 16499,	-- Keilnei
-							-- #if AFTER MOP
-							["coord"] = { 51.6, 44.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.6, 44.2, AMMEN_VALE },
+								-- #else
+								{ 79.9, 49.7, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { DRAENEI },
@@ -200,11 +222,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["altQuests"] = { 37444 },	-- Inoculation [Skipped Breadcrumb]
 							-- #endif
 							["qg"] = 16535,	-- Vindicator Aldar
-							-- #if AFTER MOP
-							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.6, 48.7, AMMEN_VALE },
+								-- #else
+								{ 79.5, 51.6, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
 							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
@@ -233,11 +257,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(26970, {	-- Aiding the Injured [Cata] / Learning the Word [MoP+]
 							["qg"] = 16502,	-- Zalduun
-							-- #if AFTER MOP
-							["coord"] = { 52.1, 42.4, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.1, 42.4, AMMEN_VALE },
+								-- #else
+								{ 80.1, 48.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { DRAENEI },
@@ -245,11 +271,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9290, {	-- Mage Training
 							["qg"] = 16500,	-- Valaatu
-							-- #if AFTER MOP
-							["coord"] = { 51.0, 43.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.0, 43.0, AMMEN_VALE },
+								-- #else
+								{ 79.6, 48.8, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { DRAENEI },
@@ -262,11 +290,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
-							-- #if AFTER MOP
-							["coord"] = { 51.2, 41.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.2, 41.2, AMMEN_VALE },
+								-- #else
+								{ 79.7, 48.2, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { DRAENEI },
@@ -274,11 +304,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9291, {	-- Priest Training
 							["qg"] = 16502,	-- Zalduun
-							-- #if AFTER MOP
-							["coord"] = { 52.1, 42.4, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.1, 42.4, AMMEN_VALE },
+								-- #else
+								{ 80.1, 48.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { DRAENEI },
@@ -286,11 +318,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(26969, {	-- Primal Strike
 							["qg"] = 17089,	-- Firmanvaar
-							-- #if AFTER MOP
-							["coord"] = { 50.2, 43.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.2, 43.0, AMMEN_VALE },
+								-- #else
+								{ 79.3, 49.1, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
@@ -300,11 +334,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["sourceQuest"] = 9279,	-- You Survived!
 							["altQuests"] = { 9369 },	-- Replenishing the Healing Crystals [Non-Draenei Only]
 							["qg"] = 16477,	-- Proenitus
-							-- #if AFTER MOP
-							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.7, 35.9, AMMEN_VALE },
+								-- #else
+								{ 80.4, 45.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = { DRAENEI },
 							["groups"] = {
 								objective(1, {	-- 0/6 Vial of Moth Blood
@@ -322,11 +358,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9369, {	-- Replenishing the Healing Crystals
 							["sourceQuest"] = 9279,	-- You Survived!
 							["qg"] = 16477,	-- Proenitus
-							-- #if AFTER MOP
-							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.7, 35.9, AMMEN_VALE },
+								-- #else
+								{ 80.4, 45.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
 							["groups"] = {
 								objective(1, {	-- 0/6 Vial of Moth Blood
@@ -344,11 +382,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9283, {	-- Rescue the Survivors!
 							["sourceQuest"] = 9409,	-- Urgent Delivery!
 							["qg"] = 16502,	-- Zalduun
-							-- #if AFTER MOP
-							["coord"] = { 52.1, 42.4, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.1, 42.4, AMMEN_VALE },
+								-- #else
+								{ 80.1, 48.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = { DRAENEI },
 							["groups"] = {
 								objective(1, {	-- Draenei Survivors Saved
@@ -360,11 +400,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9421, {	-- Shaman Training
 							["qg"] = 17089,	-- Firmanvaar
-							-- #if AFTER MOP
-							["coord"] = { 50.2, 43.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.2, 43.0, AMMEN_VALE },
+								-- #else
+								{ 79.3, 49.1, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
@@ -376,11 +418,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["altQuests"] = { 37445 },	-- Spare Parts [New one that exists for no reason]
 							-- #endif
 							["qg"] = 17071,	-- Technician Zhanaa
-							-- #if AFTER MOP
-							["coord"] = { 50.5, 47.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.4, 51.2, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.5, 47.9, AMMEN_VALE },
+								-- #else
+								{ 79.4, 51.2, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
@@ -389,11 +433,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 										{ "i",  22978 },	-- Emitter Spare Part
 										{ "o", 181283 },	-- Emitter Spare Part
 									},
-									-- #if AFTER MOP
-									["coord"] = { 64.6, 84.4, AMMEN_VALE },
-									-- #else
-									["coord"] = { 86.0, 66.8, AZUREMYST_ISLE },
-									-- #endif
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 64.6, 84.4, AMMEN_VALE },
+										-- #else
+										{ 86.0, 66.8, AZUREMYST_ISLE },
+										-- #endif
+									},
 								}),
 								i(24423),	-- Beaten Plate Leggings
 								i(24424),	-- Rough Leather Leggings
@@ -427,11 +473,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(26963, {	-- Steadying Your Shot
 							["qg"] = 16499,	-- Keilnei
-							-- #if AFTER MOP
-							["coord"] = { 51.6, 44.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.6, 44.2, AMMEN_VALE },
+								-- #else
+								{ 79.9, 49.7, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { DRAENEI },
@@ -440,21 +488,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(10303, {	-- The Blood Elves
 							["sourceQuest"] = 9309,	-- The Missing Scout
 							["qg"] = 16546,	-- Tolaan
-							-- #if AFTER MOP
-							["coord"] = { 33.8, 69.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 72.0, 60.9, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.8, 69.2, AMMEN_VALE },
+								-- #else
+								{ 72.0, 60.9, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
 							["groups"] = {
 								objective(1, {	-- 0/10 Blood Elf Scout slain
 									["provider"] = { "n", 16521 },	-- Blood Elf Scout
-									-- #if AFTER MOP
-									["coord"] = { 30.2, 78.2, AMMEN_VALE },
-									-- #else
-									["coord"] = { 70.6, 62.8, AZUREMYST_ISLE },
-									-- #endif
+									["coords"] = {
+										-- #if AFTER MOP
+										{ 30.2, 78.2, AMMEN_VALE },
+										-- #else
+										{ 70.6, 62.8, AZUREMYST_ISLE },
+										-- #endif
+									},
 								}),
 								i(24135),	-- Weathered Cloth Armor
 								i(24134),	-- Weathered Leather Vest
@@ -467,21 +519,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9312, {	-- The Emitter
 							["sourceQuest"] = 9311,	-- Blood Elf Spy
 							["qg"] = 16535,	-- Vindicator Aldar
-							-- #if AFTER MOP
-							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.6, 48.7, AMMEN_VALE },
+								-- #else
+								{ 79.5, 51.6, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
 						}),
 						q(26966, {	-- The Light's Power
 							["qg"] = 16501,	-- Aurelon
-							-- #if AFTER MOP
-							["coord"] = { 51.2, 41.2, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.2, 41.2, AMMEN_VALE },
+								-- #else
+								{ 79.7, 48.2, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { DRAENEI },
@@ -490,11 +546,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9309, {	-- The Missing Scout
 							["sourceQuest"] = 9303,	-- Inoculation [Original]
 							["qg"] = 16535,	-- Vindicator Aldar
-							-- #if AFTER MOP
-							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.6, 48.7, AMMEN_VALE },
+								-- #else
+								{ 79.5, 51.6, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
@@ -509,11 +567,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9313, {	-- Travel to Azure Watch
 							["sourceQuest"] = 9312,	-- The Emitter
 							["qg"] = 17071,	-- Technician Zhanaa
-							-- #if AFTER MOP
-							["coord"] = { 50.5, 47.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.4, 51.2, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 50.5, 47.9, AMMEN_VALE },
+								-- #else
+								{ 79.4, 51.2, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(4, 4, 1),
 						}),
@@ -523,24 +583,26 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								9280,	-- Replenishing the Healing Crystal (Draenei)
 							},
 							["qg"] = 16477,	-- Proenitus
-							-- #if AFTER MOP
-							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
-							-- #endif
-							["cost"] = {
-								{ "i", 23568, 1 },	-- Bundle of Vials
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 52.7, 35.9, AMMEN_VALE },
+								-- #else
+								{ 80.4, 45.9, AZUREMYST_ISLE },
+								-- #endif
 							},
+							["cost"] = { { "i", 23568, 1 } },	-- Bundle of Vials
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10304, {	-- Vindicator Aldar
 							["sourceQuest"] = 9294,	-- Healing the Lake
 							["qg"] = 16514,	-- Botanist Taerix
-							-- #if AFTER MOP
-							["coord"] = { 49.9, 37.3, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.9, 37.3, AMMEN_VALE },
+								-- #else
+								{ 79.1, 46.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -555,11 +617,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								9371,	-- Botanist Taerix (breadcrumb)
 							},
 							["qg"] = 16514,	-- Botanist Taerix
-							-- #if AFTER MOP
-							["coord"] = { 49.9, 37.3, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.9, 37.3, AMMEN_VALE },
+								-- #else
+								{ 79.1, 46.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/8 Volatile Mutation slain
@@ -569,11 +633,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9289, {	-- Warrior Training
 							["qg"] = 16503,	-- Kore
-							-- #if AFTER MOP
-							["coord"] = { 51.0, 43.8, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.0, 43.8, AMMEN_VALE },
+								-- #else
+								{ 79.6, 49.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { DRAENEI },
@@ -582,11 +648,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(9293, {	-- What Must Be Done...
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["qg"] = 16514,	-- Botanist Taerix
-							-- #if AFTER MOP
-							["coord"] = { 49.9, 37.3, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.9, 37.3, AMMEN_VALE },
+								-- #else
+								{ 79.1, 46.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/10 Lasher Sample
@@ -597,21 +665,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9279, {	-- You Survived!
 							["qg"] = 16475,	-- Megelon
-							-- #if AFTER MOP
-							["coord"] = { 61.2, 29.5, AMMEN_VALE },
-							-- #else
-							["coord"] = { 84.2, 43.0, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.2, 29.5, AMMEN_VALE },
+								-- #else
+								{ 84.2, 43.0, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = { DRAENEI },
 							["isBreadcrumb"] = true,
 						}),
 						q(26958, {	-- Your First Lesson
 							["qg"] = 16503,	-- Kore
-							-- #if AFTER MOP
-							["coord"] = { 51.0, 43.8, AMMEN_VALE },
-							-- #else
-							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 51.0, 43.8, AMMEN_VALE },
+								-- #else
+								{ 79.6, 49.5, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { DRAENEI },
@@ -621,11 +693,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					n(ZONE_DROPS, {
 						i(24414, {	-- Blood Elf Plans
 							["cr"] = 16522,	-- Surveyor Candress
-							-- #if AFTER MOP
-							["coord"] = { 28.2, 80.0, AMMEN_VALE },
-							-- #else
-							["coord"] = { 69.4, 65.6, AZUREMYST_ISLE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 28.2, 80.0, AMMEN_VALE },
+								-- #else
+								{ 69.4, 65.6, AZUREMYST_ISLE },
+								-- #endif
+							},
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
@@ -809,14 +883,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9560, {	-- Beasts of the Apocalypse!
-					-- #if BEFORE MOP
-					["sourceQuest"] = 9544,	-- The Prophecy of Akida
-					-- #elseif AFTER 9.0.2
-					["sourceQuest"] = 9544,	-- The Prophecy of Akida
-					-- #else
-					-- This needs to be checked for accuracy each expansion.
-					["sourceQuest"] = 9559,	-- Stillpine Hold
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER 9.0.2
+						9544,	-- The Prophecy of Akida
+						-- #elseif BEFORE MOP
+						9544,	-- The Prophecy of Akida
+						-- #else
+						-- This needs to be checked for accuracy each expansion.
+						9559,	-- Stillpine Hold
+						-- #endif
+					},
 					["qg"] = 17442,	-- Moordo
 					["coord"] = { 44.8, 23.8, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
@@ -858,9 +934,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9603, {	-- Beds, Bandages, and Beyond
 					["qg"] = 16553,	-- Caregiver Chellan
 					["coord"] = { 48.3, 49.1, AZUREMYST_ISLE },
-					["cost"] = {
-						{ "i", 23902, 1 },	-- Chellan's List
-					},
+					["cost"] = { { "i", 23902, 1 } },	-- Chellan's List
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
@@ -1144,12 +1218,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9562, {	-- Murlocs... Why Here? Why Now?
-					-- #if AFTER MOP
-					-- TODO: Confirm this is true or not.
-					["sourceQuest"] = 9544,	-- The Prophecy of Akida
-					-- #else
-					["sourceQuest"] = 9559,	-- Stillpine Hold
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER MOP
+						-- TODO: Confirm this is true or not.
+						9544,	-- The Prophecy of Akida
+						-- #else
+						9559,	-- Stillpine Hold
+						-- #endif
+					},
 					["qg"] = 17441,	-- Gurf
 					["coord"] = { 44.6, 23.4, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
@@ -1385,9 +1461,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9454, {	-- The Great Moongraze Hunt (1/2)
 					["qg"] = 17110,	-- Acteon
 					["coord"] = { 49.8, 51.9, AZUREMYST_ISLE },
-					["cost"] = {
-						{ "i", 23676, 6 },	-- Moongraze Stag Tenderloin
-					},
+					["cost"] = { { "i", 23676, 6 } },	-- Moongraze Stag Tenderloin
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {

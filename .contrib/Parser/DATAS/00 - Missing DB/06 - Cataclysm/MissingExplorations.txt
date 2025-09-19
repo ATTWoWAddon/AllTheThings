@@ -1,0 +1,665 @@
+4.4.0.53627
+exploration(17),	-- Northern Barrens \\ The Barrens
+exploration(33),	-- Northern Stranglethorn \\ Stranglethorn Vale
+exploration(359),	-- Bael Modan [UNUSED] \\ Bael Modan
+exploration(378),	-- Camp Taurajo [UNUSED] \\ Camp Taurajo
+exploration(385),	-- Northwatch Hold [UNUSED] \\ Northwatch Hold
+exploration(390),	-- Field of Giants [UNUSED] \\ Field of Giants
+exploration(424),	-- Remains of Iris Lake \\ Iris Lake
+exploration(616),	-- Mount Hyjal \\ Hyjal
+exploration(989),	-- Ruins of Uldum \\ Uldum
+exploration(1156),	-- Southern Barrens [UNUSED] \\ Southern Barrens
+exploration(1276),	-- Talondeep Vale \\ The Talondeep Path
+exploration(1316),	-- Razorfen Downs [UNUSED] \\ Razorfen Downs
+exploration(1457),	-- Nethergarde Mines \\ Garrison Armory
+exploration(1697),	-- Raptor Grounds [UNUSED] \\ Raptor Grounds
+exploration(1700),	-- Agama'gor [UNUSED] \\ Agama'gor
+exploration(1701),	-- Blackthorn Ridge [UNUSED] \\ Blackthorn Ridge
+exploration(1718),	-- The Great Lift [UNUSED] \\ The Great Lift
+exploration(2157),	-- Bael'dun Keep [UNUSED] \\ Bael'dun Keep
+exploration(2265),	-- Death Cultist Base Camp \\ Scarlet Base Camp
+exploration(3378),	-- Mandokir's Domain \\ Altar of Hir'eek
+exploration(3380),	-- Altar of the Blood God \\ Hakkari Grounds
+exploration(3384),	-- The Devil's Terrace \\ Altar of the Blood God
+exploration(3398),	-- The Cache of Madness \\ Edge of Madness
+exploration(4645),	-- Blackfathom Camp
+exploration(4647),	-- Ruuzel's Isle
+exploration(4648),	-- Auberdine Refugee Camp
+exploration(4660),	-- Ruins of Lornesta
+exploration(4661),	-- Cliffspring Hollow
+exploration(4663),	-- Maw of the Void
+exploration(4693),	-- Splintertree Mine
+exploration(4694),	-- Thistlefur Hold
+exploration(4696),	-- Blackwood Camp
+exploration(4697),	-- The Blazing Strand
+exploration(4698),	-- Moontouched Den
+exploration(4702),	-- Shatterspear Pass
+exploration(4705),	-- Raynewood Tower
+exploration(4707),	-- The Lost Isles
+exploration(4708),	-- Earthshatter Cavern
+exploration(4709),	-- Southern Barrens
+exploration(4711),	-- Stardust Spire
+exploration(4712),	-- Moonwell of Cleansing
+exploration(4713),	-- Krolg's Hut
+exploration(4714),	-- Gilneas
+exploration(4715),	-- The Skunkworks
+exploration(4716),	-- Bolyun's Camp
+exploration(4717),	-- House of Edune
+exploration(4718),	-- Wellspring Hovel
+exploration(4719),	-- Familiars
+exploration(4720),	-- The Lost Isles
+exploration(4724),	-- Ban'ethil Barrow Descent
+exploration(4725),	-- The Headlands
+exploration(4726),	-- Keel Harbor
+exploration(4727),	-- Aderic's Repose
+exploration(4728),	-- Northern Headlands
+exploration(4729),	-- Northgate Woods
+exploration(4730),	-- The Blackwald
+exploration(4731),	-- Stormglen Village
+exploration(4732),	-- Emberstone Mine
+exploration(4733),	-- Galewatch Lighthouse
+exploration(4734),	-- Emberstone Village
+exploration(4735),	-- Northgate Breach
+exploration(4736),	-- The Bite
+exploration(4737),	-- Kezan
+exploration(4738),	-- Abyssal Maw
+exploration(4755),	-- Gilneas City
+exploration(4756),	-- Merchant Square
+exploration(4757),	-- Military District
+exploration(4758),	-- Greymane Court
+exploration(4759),	-- Cathedral Quarter
+exploration(4761),	-- Light's Dawn Cathedral
+exploration(4762),	-- Stoneward Prison
+exploration(4772),	-- The Slick
+exploration(4773),	-- Swindle Street
+exploration(4774),	-- Gilneas (Do Not Reuse)
+exploration(4778),	-- Kaja'mite Cavern
+exploration(4780),	-- The Vicious Vale
+exploration(4781),	-- Wild Overlook
+exploration(4784),	-- Vengeance Wake
+exploration(4785),	-- The Great Sea
+exploration(4786),	-- Duskhaven
+exploration(4787),	-- Stagecoach Crash Site
+exploration(4788),	-- Tempest's Reach
+exploration(4789),	-- The Greymane Wall
+exploration(4790),	-- Northgate River
+exploration(4791),	-- Hailwood Marsh
+exploration(4792),	-- Allen Farmstead
+exploration(4793),	-- Hammond Farmstead
+exploration(4794),	-- Koroth's Den
+exploration(4795),	-- Slitherblade Shore
+exploration(4799),	-- Trial of Fire
+exploration(4800),	-- Trial of Shadow
+exploration(4801),	-- Arcane Pinnacle
+exploration(4802),	-- Draka's Fury
+exploration(4805),	-- Karnum's Glade
+exploration(4806),	-- Wahl Cottage
+exploration(4807),	-- Crowley Orchard
+exploration(4808),	-- Hayward Fishery
+exploration(4810),	-- Queen's Gate
+exploration(4811),	-- King's Gate
+exploration(4814),	-- Sable Ridge
+exploration(4815),	-- Kelp'thar Forest
+exploration(4816),	-- Dire Strait
+exploration(4817),	-- Greymane Manor
+exploration(4818),	-- Crowley Stable Grounds
+exploration(4819),	-- The Ancient Grove
+exploration(4823),	-- South Seas
+exploration(4825),	-- Northern Rocketway Exchange
+exploration(4826),	-- Storm Cliffs
+exploration(4828),	-- Southern Rocketway Terminus
+exploration(4830),	-- Orgrimmar Rocketway Exchange
+exploration(4834),	-- Ruins of Nordressa
+exploration(4837),	-- Whitebeard's Encampment
+exploration(4838),	-- Gallywix's Yacht
+exploration(4839),	-- Fargaze Mesa
+exploration(4840),	-- The Pipe
+exploration(4841),	-- Tal'doren
+exploration(4842),	-- Livery Outpost
+exploration(4846),	-- Camp Una'fe
+exploration(4848),	-- Teegan's Expedition
+exploration(4850),	-- Fields of Blood
+exploration(4852),	-- The Great Gate
+exploration(4853),	-- Desolation Hold
+exploration(4854),	-- Fort Triumph
+exploration(4857),	-- Firestone Point
+exploration(4858),	-- Rygna's Lair
+exploration(4860),	-- Overgrown Camp
+exploration(4863),	-- Bloodtalon Shore
+exploration(4866),	-- Darkspear Hold
+exploration(4867),	-- Spitescale Cove
+exploration(4868),	-- The Bradshaw Mill
+exploration(4869),	-- Wood's End Cabin
+exploration(4871),	-- Town-In-A-Box
+exploration(4872),	-- Bael'dun Keep
+exploration(4875),	-- Darkspear Isle
+exploration(4877),	-- Vashj'elan Spawning Pool
+exploration(4878),	-- The Thornsnarl
+exploration(4879),	-- The Battleboar Pen
+exploration(4880),	-- Thornmantle's Hideout
+exploration(4881),	-- Stonetalon Pass
+exploration(4887),	-- Nightmare Scar
+exploration(4888),	-- The Nightmare Scar
+exploration(4899),	-- Lost Peak
+exploration(4900),	-- Oostan Nord
+exploration(4901),	-- Oostan Sor
+exploration(4902),	-- Oostan Ost
+exploration(4913),	-- Spitescale Cavern
+exploration(4914),	-- Tranquil Coast
+exploration(4915),	-- Rotbrain Encampment
+exploration(4917),	-- Scarlet Palisade
+exploration(4918),	-- Scarlet Encampment
+exploration(4919),	-- Death's Watch Waystation
+exploration(4920),	-- Crusader's Run
+exploration(4922),	-- Twilight Highlands
+exploration(4923),	-- Sky Falls
+exploration(4924),	-- Gallywix Labor Mine
+exploration(4925),	-- Thunk's Abode
+exploration(4926),	-- Blackrock Caverns
+exploration(4927),	-- The Fold
+exploration(4928),	-- Talondeep Pass
+exploration(4932),	-- The Deep Reaches
+exploration(4934),	-- The Sludgewerks
+exploration(4935),	-- Mirkfallon Post
+exploration(4939),	-- Farwatcher's Glen
+exploration(4940),	-- Northwatch Expedition Base Camp
+exploration(4942),	-- Windshear Heights
+exploration(4943),	-- Dagger Pass
+exploration(4944),	-- Thal'darah Grove
+exploration(4945),	-- Halls of Origination
+exploration(4946),	-- Bael Modan Excavation
+exploration(4947),	-- Twinbraid's Patrol
+exploration(4949),	-- Spearhead
+exploration(4950),	-- Grim Batol
+exploration(4953),	-- Kelp'thar Forest
+exploration(4955),	-- The Lightless Reaches
+exploration(4958),	-- Verdant Highlands
+exploration(4968),	-- Quel'Dormir Terrace
+exploration(4969),	-- Tranquil Wash
+exploration(4970),	-- Legion's Rest
+exploration(4972),	-- Thermal Vents
+exploration(4973),	-- The Overlook
+exploration(4983),	-- Twilight Crossing
+exploration(4985),	-- The High Road
+exploration(4992),	-- Broken Commons
+exploration(4993),	-- Darkwhisper Pass
+exploration(4995),	-- Seat of the Chosen
+exploration(5000),	-- Verrall River
+exploration(5002),	-- Camp Ataya
+exploration(5003),	-- Stonemaul Hold
+exploration(5004),	-- Throne of the Tides
+exploration(5006),	-- Damplight Cavern
+exploration(5009),	-- Shadebough
+exploration(5010),	-- New Thalanaar
+exploration(5012),	-- The Briny Cutter
+exploration(5015),	-- Leyara's Sorrow
+exploration(5021),	-- The Searing Gateway
+exploration(5023),	-- The Emerald Summit
+exploration(5024),	-- Dreamer's Rest
+exploration(5026),	-- Rustmaul Dive Site
+exploration(5029),	-- The Admiral's Den
+exploration(5031),	-- Twin Peaks
+exploration(5032),	-- Hyjal Barrow Dens
+exploration(5034),	-- Uldum
+exploration(5035),	-- The Vortex Pinnacle
+exploration(5037),	-- Lake Edunel
+exploration(5042),	-- Deepholm
+exploration(5048),	-- Raceway Ruins
+exploration(5049),	-- Speedbarge Bar
+exploration(5050),	-- The Hatchery
+exploration(5056),	-- The Immortal Coil
+exploration(5058),	-- Deepmist Grotto
+exploration(5060),	-- Steelspark Station
+exploration(5061),	-- Steelspark Station
+exploration(5064),	-- The Anvil of Flame
+exploration(5065),	-- Tower of Estulan
+exploration(5066),	-- Trueshot Point
+exploration(5067),	-- The Inner Spire
+exploration(5068),	-- Pattymack Land
+exploration(5070),	-- Budd's Dig
+exploration(5071),	-- Gorrok's Lament
+exploration(5073),	-- Fallowmere Inn
+exploration(5075),	-- Tirth's Haunt
+exploration(5079),	-- Rockpool Village
+exploration(5080),	-- Bloodwash Fighting Pits
+exploration(5081),	-- Bloodwash Shrine
+exploration(5082),	-- Bloodwash Cavern
+exploration(5085),	-- Maldraz
+exploration(5086),	-- Dreadmaul Furnace
+exploration(5088),	-- The Stonecore
+exploration(5089),	-- Quel'Dormir Gardens
+exploration(5090),	-- Nar'shola Terrace
+exploration(5093),	-- Northwatch Expedition Base Camp Inn
+exploration(5094),	-- Blackwing Descent
+exploration(5095),	-- Tol Barad
+exploration(5096),	-- The Forbidding Sea
+exploration(5098),	-- Frostmane Retreat
+exploration(5099),	-- The Crucible
+exploration(5100),	-- Promontory Point
+exploration(5102),	-- Nightmare Depths
+exploration(5104),	-- The Undershell
+exploration(5105),	-- Pincer X2
+exploration(5106),	-- The Verne
+exploration(5107),	-- Sira'kess Front
+exploration(5108),	-- The Battle for Gilneas (Old City Map)
+exploration(5109),	-- Cathedral Quarter
+exploration(5110),	-- Greymane Court
+exploration(5111),	-- Light's Dawn Cathedral
+exploration(5112),	-- Stoneward Prison
+exploration(5113),	-- Merchant Square
+exploration(5114),	-- Bahrum's Post
+exploration(5118),	-- Windshear Valley
+exploration(5124),	-- Quel'Dormir Temple
+exploration(5130),	-- Seat of Life
+exploration(5144),	-- Shimmering Expanse
+exploration(5145),	-- Abyssal Depths
+exploration(5146),	-- Vashj'ir
+exploration(5149),	-- Old Town
+exploration(5151),	-- Cathedral Square
+exploration(5152),	-- The Park
+exploration(5154),	-- Mage Quarter
+exploration(5157),	-- The Park
+exploration(5166),	-- Cleft of Shadow
+exploration(5167),	-- The Drag
+exploration(5168),	-- Valley of Honor
+exploration(5169),	-- Valley of Spirits
+exploration(5171),	-- Valley of Wisdom
+exploration(5173),	-- The Severed Span
+exploration(5177),	-- Crushcog's Arsenal
+exploration(5178),	-- The Toxic Airfield
+exploration(5247),	-- The Tidebreaker
+exploration(5248),	-- Voldrin's Hold
+exploration(5249),	-- Stygian Bounty
+exploration(5250),	-- Galerek's Remorse
+exploration(5251),	-- The Iron Reaper
+exploration(5252),	-- The Intrepid
+exploration(5287),	-- The Cape of Stranglethorn
+exploration(5288),	-- Ahn'Qiraj Terrace
+exploration(5291),	-- Jagged Wastes
+exploration(5293),	-- Crumbling Depths
+exploration(5294),	-- Shuddering Spires
+exploration(5297),	-- Halcyon Egress
+exploration(5298),	-- Twilight Precipice
+exploration(5299),	-- Lorthuna's Gate
+exploration(5300),	-- Verlok Stand
+exploration(5301),	-- Grolluk's Grave
+exploration(5306),	-- Hull of the Foebreaker
+exploration(5311),	-- Transport: Onyxia/Nefarian Elevator
+exploration(5314),	-- Stormwind Lake
+exploration(5315),	-- Llane's Oath
+exploration(5316),	-- Olivia's Pond
+exploration(5321),	-- Yowler's Den
+exploration(5327),	-- Tower Watch
+exploration(5331),	-- Fractured Front
+exploration(5332),	-- Orgrimmar Embassy \\ Goblin Slums
+exploration(5333),	-- Trial of Frost
+exploration(5334),	-- The Bastion of Twilight
+exploration(5335),	-- Quartzite Basin
+exploration(5336),	-- Remains of the Fleet
+exploration(5337),	-- Sanctum of the Prophets
+exploration(5338),	-- Fungal Deep
+exploration(5339),	-- Stranglethorn Vale
+exploration(5340),	-- Hall of Arms
+exploration(5341),	-- Hall of Explorers
+exploration(5342),	-- The Great Forge
+exploration(5343),	-- The Military Ward
+exploration(5344),	-- The Mystic Ward
+exploration(5345),	-- Thunder Bluff
+exploration(5346),	-- Stormwind City Cemetery
+exploration(5347),	-- Render's Crater
+exploration(5348),	-- Alliance Mercenary Ship to Vashj'ir
+exploration(5351),	-- Ruins of Gilneas City
+exploration(5352),	-- Alabaster Shelf
+exploration(5353),	-- Verrall Delta
+exploration(5356),	-- Grommash Hold
+exploration(5368),	-- Avalanchion's Vault
+exploration(5374),	-- Blackrock Caverns Entrance
+exploration(5375),	-- Wreckage of the Silver Dawning
+exploration(5382),	-- The Abyssal Maw
+exploration(5383),	-- Den of the Devourer
+exploration(5388),	-- Dawnrise Expedition
+exploration(5389),	-- Tol Barad Peninsula
+exploration(5391),	-- Ironwing Cavern
+exploration(5392),	-- Charred Outpost
+exploration(5395),	-- Chamber of Respite
+exploration(5396),	-- Lost City of the Tol'vir
+exploration(5397),	-- The Wollerton Stead
+exploration(5398),	-- Stormwind City Outskirts
+exploration(5399),	-- Baradin Hold
+exploration(5400),	-- Slagworks
+exploration(5401),	-- Ironclad Garrison
+exploration(5402),	-- Warden's Vigil
+exploration(5403),	-- East Spire
+exploration(5404),	-- South Spire
+exploration(5405),	-- West Spire
+exploration(5406),	-- Blackstone Span
+exploration(5408),	-- Explorers' League Digsite
+exploration(5409),	-- The Old Barracks
+exploration(5410),	-- Silverlight Cavern
+exploration(5411),	-- Malicia's Outpost
+exploration(5416),	-- The Maelstrom
+exploration(5418),	-- The Blood Trail
+exploration(5422),	-- Taelan's Tower
+exploration(5424),	-- Obsidian Breakers
+exploration(5426),	-- Path of Uther
+exploration(5427),	-- Sorrow Hill Crypt
+exploration(5428),	-- The Eastern Earthshrine
+exploration(5429),	-- The Western Earthshrine
+exploration(5431),	-- Chamber of the Stars
+exploration(5432),	-- Forsaken Forward Command
+exploration(5433),	-- The Greymane Wall
+exploration(5434),	-- Forsaken Forward Command
+exploration(5435),	-- Gilneas City
+exploration(5437),	-- Ring of the Elements
+exploration(5441),	-- Emberstone Village
+exploration(5443),	-- Dreadwatch Outpost
+exploration(5444),	-- Rutsak's Guard
+exploration(5445),	-- Glory
+exploration(5446),	-- Death's Step
+exploration(5447),	-- Scarred Terrace
+exploration(5449),	-- The Battle for Gilneas
+exploration(5450),	-- Lighthouse
+exploration(5451),	-- Waterworks
+exploration(5452),	-- Mines
+exploration(5453),	-- Horde Landing
+exploration(5454),	-- Gilnean Stronghold
+exploration(5457),	-- The Overlook
+exploration(5463),	-- Ix'lar's Domain
+exploration(5464),	-- Darrowshire Hunting Grounds
+exploration(5468),	-- Gilnean Coast
+exploration(5469),	-- Siege Vise
+exploration(5472),	-- The Twilight Gate
+exploration(5474),	-- Elementium Depths
+exploration(5475),	-- Den of the Disciples
+exploration(5477),	-- Pyrewood Inn
+exploration(5480),	-- Gilneas Liberation Front Base Camp
+exploration(5481),	-- 7th Legion Base Camp
+exploration(5484),	-- Dunwald Holdout
+exploration(5485),	-- Dunwald Hovel
+exploration(5486),	-- Dunwald Town Square
+exploration(5487),	-- Dunwald Market Row
+exploration(5493),	-- The Devouring Breach
+exploration(5495),	-- Gnomeregan
+exploration(5497),	-- Fuselight-by-the-Sea
+exploration(5501),	-- Shrine of the Elements
+exploration(5502),	-- Thundermar Ruins
+exploration(5503),	-- Altar of Ascension
+exploration(5504),	-- Lake Dumont
+exploration(5505),	-- The Pit of Scales
+exploration(5506),	-- The Defiled Chapel
+exploration(5507),	-- The Cerebrillum
+exploration(5508),	-- Sunstone Terrace
+exploration(5510),	-- Shadowfang Keep Entrance
+exploration(5512),	-- Scholomance Entrance
+exploration(5513),	-- Stratholme Entrance
+exploration(5514),	-- Stratholme Service Entrance
+exploration(5515),	-- Blackrock Depths Entrance
+exploration(5516),	-- Blackrock Spire Entrance
+exploration(5517),	-- Blackfathom Deeps Entrance
+exploration(5519),	-- Rhea's Camp
+exploration(5520),	-- Maraudon - The Wicked Grotto Entrance \\ Maruadon - The Wicked Grotto Entrance
+exploration(5521),	-- Maraudon - Foulspore Cavern Entrance
+exploration(5522),	-- Maraudon - Earth Song Falls Entrance
+exploration(5523),	-- Uldaman Entrance
+exploration(5526),	-- Tomb of the Watchers
+exploration(5529),	-- Dire Maul - Warpwood Quarter Entrance
+exploration(5530),	-- Dire Maul - Gordok Commons Entrance
+exploration(5531),	-- Dire Maul - Capital Gardens Entrance
+exploration(5532),	-- Razorfen Downs Entrance
+exploration(5533),	-- Zul'Farrak Entrance
+exploration(5534),	-- Cape of Lost Hope
+exploration(5535),	-- Wellson Shipyard
+exploration(5536),	-- Forgotten Hill
+exploration(5537),	-- The Darkwood
+exploration(5538),	-- Rustberg Village
+exploration(5539),	-- Farson Hold
+exploration(5540),	-- Largo's Overlook
+exploration(5541),	-- Hellfire Citadel - Ramparts Entrance
+exploration(5542),	-- The Restless Front
+exploration(5543),	-- Hellfire Citadel - The Shattered Halls Entrance
+exploration(5544),	-- Hellfire Citadel - The Blood Furnace Entrance
+exploration(5545),	-- Baradin Base Camp
+exploration(5546),	-- Hellscream's Grasp
+exploration(5547),	-- Auchindoun - Auchenai Crypts Entrance
+exploration(5548),	-- Auchindoun - Mana-Tombs Entrance
+exploration(5549),	-- Auchindoun - Sethekk Halls Entrance
+exploration(5550),	-- Auchindoun - Shadow Labyrinth Entrance
+exploration(5551),	-- Coilfang - The Steamvault Entrance
+exploration(5552),	-- Coilfang - The Underbog Entrance
+exploration(5553),	-- Coilfang - The Slave Pens Entrance
+exploration(5554),	-- Tempest Keep - The Mechanar Entrance
+exploration(5555),	-- Tempest Keep - The Botanica Entrance
+exploration(5556),	-- Tempest Keep - The Arcatraz Entrance
+exploration(5557),	-- Magisters' Terrace Entrance
+exploration(5558),	-- The Escape from Durnholde Entrance
+exploration(5559),	-- Opening of the Dark Portal Entrance
+exploration(5560),	-- The Culling of Stratholme Entrance
+exploration(5561),	-- The Nexus Entrance
+exploration(5562),	-- The Oculus Entrance
+exploration(5566),	-- Utgarde Keep Entrance
+exploration(5567),	-- Utgarde Pinnacle Entrance
+exploration(5568),	-- Azjol-Nerub Entrance
+exploration(5569),	-- Ahn'kahet: The Old Kingdom Entrance
+exploration(5570),	-- Drak'Tharon Keep Entrance
+exploration(5571),	-- Violet Hold Entrance
+exploration(5572),	-- Gundrak Entrance
+exploration(5573),	-- Halls of Stone Entrance
+exploration(5574),	-- Halls of Lightning Entrance
+exploration(5575),	-- Trial of the Champion Entrance
+exploration(5576),	-- The Forge of Souls Entrance
+exploration(5577),	-- Pit of Saron Entrance
+exploration(5578),	-- Halls of Reflection Entrance
+exploration(5579),	-- Throne of the Tides Entrance
+exploration(5580),	-- Grim Batol Entrance
+exploration(5581),	-- The Stonecore Entrance
+exploration(5585),	-- Gate of Hamatep
+exploration(5588),	-- Twilight Aerie
+exploration(5592),	-- The Hidden Clutch
+exploration(5593),	-- The Nosebleeds
+exploration(5598),	-- Sunken Temple Entrance
+exploration(5600),	-- Baradin Hold
+exploration(5601),	-- Chamber of the Sun
+exploration(5605),	-- Shriveled Oasis
+exploration(5610),	-- Tomb of the Earthrager
+exploration(5611),	-- Firebeard Cemetery
+exploration(5624),	-- The Tranquil Grove
+exploration(5625),	-- Ruins of Lar'donir
+exploration(5626),	-- Shadowlurk Ridge
+exploration(5627),	-- Black Drake Roost
+exploration(5628),	-- Iron Summit
+exploration(5630),	-- The Maelstrom
+exploration(5631),	-- Oasis of the Fallen Prophet
+exploration(5632),	-- The Trapper's Enclave
+exploration(5633),	-- Terrace of the Augurs
+exploration(5634),	-- Sanctum of the South Wind
+exploration(5635),	-- The Warlord's Garrison
+exploration(5638),	-- Throne of the Four Winds
+exploration(5644),	-- Seal of the Sun King
+exploration(5645),	-- Whisperwind Grove
+exploration(5646),	-- Sahket Wastes
+exploration(5649),	-- Wildheart Point
+exploration(5654),	-- Chiselgrip
+exploration(5655),	-- Firegut Furnace
+exploration(5656),	-- The Skull Warren
+exploration(5657),	-- D-Block
+exploration(5658),	-- Cursed Depths
+exploration(5659),	-- The Hole
+exploration(5660),	-- Obsidian Lair
+exploration(5664),	-- Iso'rath
+exploration(5667),	-- Cannon's Inferno
+exploration(5670),	-- Oasis of Vir'sar
+exploration(5672),	-- Chamber of the Moon
+exploration(5673),	-- Sullah's Sideshow
+exploration(5674),	-- Maker's Ascent
+exploration(5675),	-- Arikara's Needle
+exploration(5676),	-- Irontree Clearing
+exploration(5678),	-- Sindweller's Rise
+exploration(5680),	-- Wildhammer Flag Room
+exploration(5681),	-- Dragonmaw Flag Room
+exploration(5682),	-- Thunderstrike Mountain
+exploration(5683),	-- Beneath The Double Rainbow
+exploration(5685),	-- Pilgrim's Precipice
+exploration(5686),	-- Bashal'Aran Collapse
+exploration(5687),	-- The Howling Oak
+exploration(5690),	-- Arsad Trade Post
+exploration(5691),	-- Darkspear Shore
+exploration(5692),	-- The Deathknell Graves
+exploration(5693),	-- Murkdeep Cavern
+exploration(5694),	-- Keset Pass
+exploration(5697),	-- M.A.C. Diver
+exploration(5698),	-- Tomb of the Sun King
+exploration(5699),	-- The Circle of Life
+exploration(5700),	-- Schnottz's Hostel
+exploration(5702),	-- The Vortex Pinnacle Entrance
+exploration(5703),	-- Goodgrub Smoking Pit
+exploration(5704),	-- The Catacombs
+exploration(5705),	-- Snowden Chalet
+exploration(5706),	-- The Steam Pools
+exploration(5707),	-- Beryl Egress
+exploration(5708),	-- Lost City of the Tol'vir Entrance
+exploration(5709),	-- Atulhet's Tomb
+exploration(5710),	-- The Lightless Reaches
+exploration(5711),	-- The Lightless Reaches
+exploration(5712),	-- The Blackwald
+exploration(5713),	-- Hayward Fishery
+exploration(5714),	-- Stormglen Village
+exploration(5715),	-- Vir'naal Oasis
+exploration(5716),	-- Vir'naal Lake
+exploration(5718),	-- Fortune's Fist
+exploration(5719),	-- The Commons
+exploration(5720),	-- Duskmist Shore
+exploration(5721),	-- Brashtide Attack Fleet
+exploration(5723),	-- Firelands
+exploration(5724),	-- Twilight Camp
+exploration(5726),	-- Camp Mojache Longhouse
+exploration(5727),	-- Scott's Spooky Area
+exploration(5728),	-- Falconwing Inn
+exploration(5729),	-- Blackwing Descent
+exploration(5730),	-- Nordrassil Inn
+exploration(5731),	-- Whelgar's Retreat
+exploration(5732),	-- Halls of Origination
+exploration(5733),	-- Molten Front
+exploration(5738),	-- Malfurion's Breach
+exploration(5739),	-- Ashen Fields
+exploration(5740),	-- Magma Springs
+exploration(5741),	-- Igneous Depths
+exploration(5742),	-- Forlorn Spire
+exploration(5743),	-- The Widow's Clutch
+exploration(5744),	-- Wildflame Point
+exploration(5745),	-- The Furnace
+exploration(5746),	-- The Molten Flow
+exploration(5747),	-- Crumbling Stones
+exploration(5748),	-- Fireplume Peak
+exploration(5749),	-- Ragnaros' Reach
+exploration(5758),	-- Dreadmist Camp
+exploration(5763),	-- Rhyolith Plateau
+exploration(5764),	-- Beth'tilac's Lair
+exploration(5765),	-- Flamebreach
+exploration(5766),	-- Shatterstone
+exploration(5767),	-- Mortal's Demise
+exploration(5768),	-- Sulfuron Span
+exploration(5769),	-- Sulfuron Keep Courtyard
+exploration(5770),	-- Sulfuron Keep
+exploration(5771),	-- The Molten Fields
+exploration(5775),	-- Dragonmaw Stronghold
+exploration(5776),	-- Wildhammer Stronghold
+exploration(5779),	-- Thalassian Range
+exploration(5780),	-- Amani Mountains
+exploration(5781),	-- Nordune Ridge
+exploration(5782),	-- Darsok's Outpost
+exploration(5783),	-- A Dark Place \\ Alcaz Island
+exploration(5784),	-- Cloudtop Terrace
+exploration(5786),	-- The Nexus
+exploration(5787),	-- Schnottz's Frigate
+exploration(5788),	-- Well of Eternity
+exploration(5789),	-- End Time
+exploration(5790),	-- Ruby Dragonshrine
+exploration(5791),	-- The Ridge of Ancient Flame
+exploration(5792),	-- Obsidian Dragonshrine
+exploration(5793),	-- Azure Dragonshrine
+exploration(5794),	-- Emerald Dragonshrine
+exploration(5795),	-- Bronze Dragonshrine
+exploration(5796),	-- Entryway of Time
+exploration(5797),	-- The Staidridge
+exploration(5798),	-- The Anvil of Conflagration
+exploration(5799),	-- Eye of the Storm
+exploration(5800),	-- Blood Elf Tower
+exploration(5802),	-- Draenei Ruins
+exploration(5803),	-- Fel Reaver Ruins
+exploration(5804),	-- Mage Tower
+exploration(5806),	-- Spine of the Destroyer UNUSED
+exploration(5807),	-- Beth'tilac's Lair
+exploration(5808),	-- Sulfuron Keep Courtyard
+exploration(5809),	-- Sulfuron Keep
+exploration(5810),	-- Anvil of Conflagration
+exploration(5811),	-- The Molten Fields
+exploration(5812),	-- Mortal's Demise
+exploration(5813),	-- Sulfuron Span
+exploration(5814),	-- Shatterstone
+exploration(5815),	-- Flamebreach
+exploration(5816),	-- The Ridge of Ancient Flame
+exploration(5817),	-- Rhyolith Plateau
+exploration(5818),	-- Firelands
+exploration(5821),	-- The Path of Corruption
+exploration(5823),	-- Circle of Thorns
+exploration(5824),	-- Bluff of the South Wind
+exploration(5838),	-- Whispering Forest
+exploration(5839),	-- The Great Divide
+exploration(5844),	-- Hour of Twilight
+exploration(5845),	-- Wyrmrest Temple
+exploration(5861),	-- Darkmoon Island
+exploration(5869),	-- The Great Sea
+exploration(5870),	-- The Darkmoon Faire
+exploration(5877),	-- Darkmoon Deathmatch
+exploration(5880),	-- Maelstrom Deathwing Fight
+exploration(5892),	-- Dragon Soul
+exploration(5893),	-- The Maelstrom
+exploration(5894),	-- Testing02
+exploration(5895),	-- Testing SubZone A
+exploration(5902),	-- Darkmoon Path
+exploration(5904),	-- Darkmoon Boardwalk
+exploration(5913),	-- Dire Maul - North
+exploration(5914),	-- Dire Maul - East
+exploration(5915),	-- Dire Maul - West
+exploration(5916),	-- Stratholme - Main Gate
+exploration(5917),	-- Stratholme - Service Entrance
+exploration(5920),	-- Eye of Eternity
+exploration(5922),	-- Above the Frozen Sea
+exploration(5923),	-- The Dragon Wastes
+exploration(5924),	-- Azure Dragonshrine
+exploration(5925),	-- Emerald Dragonshrine
+exploration(5926),	-- Path of the Titans
+exploration(5928),	-- Wyrmrest Summit
+exploration(5960),	-- Deathwing
+exploration(5979),	-- The Great Sea
+exploration(5988),	-- The Crystal Vice
+exploration(5989),	-- The Dragon Wastes
+exploration(5990),	-- Galakrond's Rest
+exploration(5991),	-- Path of the Titans
+exploration(5993),	-- Courtyard of Lights
+exploration(5994),	-- Shores of the Well
+exploration(5995),	-- Azshara's Palace
+exploration(15306),	-- Battle for Tol Barad
+exploration(15307),	-- Tol Barad Peninsula
+exploration(15308),	-- Baradin Base Camp
+exploration(15309),	-- Hellscream's Grasp
+exploration(15310),	-- The Restless Front
+exploration(15311),	-- Largo's Overlook
+exploration(15312),	-- Farson Hold
+exploration(15313),	-- Rustberg Village
+exploration(15314),	-- The Darkwood
+exploration(15315),	-- Forgotten Hill
+exploration(15316),	-- Cape of Lost Hope
+exploration(15317),	-- Wellson Shipyard
+exploration(15318),	-- Baradin Hold
+exploration(15319),	-- Blackstone Span
+exploration(15320),	-- West Spire
+exploration(15321),	-- South Spire
+exploration(15322),	-- East Spire
+exploration(15323),	-- Warden's Vigil
+exploration(15324),	-- Ironclad Garrison
+exploration(15325),	-- Slagworks
+4.4.0.53973
+exploration(6510),	-- The Deadmines
+4.4.2.59121
+exploration(10271),	-- Dev Smoketest Area

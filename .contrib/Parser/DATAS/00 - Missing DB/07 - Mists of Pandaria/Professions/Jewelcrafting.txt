@@ -153,18 +153,6 @@ r(122670),	-- Golembreaker Amulet
 r(122671),	-- Widow Chain
 r(122672),	-- Skymage Circle
 r(122673),	-- Tiger Opal Pendant
-r(122674),	-- Delicate Serpent's Eye
-r(122675),	-- Bold Serpent's Eye
-r(122676),	-- Brilliant Serpent's Eye
-r(122677),	-- Sparkling Serpent's Eye
-r(122678),	-- Solid Serpent's Eye
-r(122679),	-- Subtle Serpent's Eye
-r(122680),	-- Smooth Serpent's Eye
-r(122681),	-- Rigid Serpent's Eye
-r(122682),	-- Quick Serpent's Eye
-r(122683),	-- Precise Serpent's Eye
-r(122684),	-- Fractured Serpent's Eye
-r(122685),	-- Flashing Serpent's Eye
 r(130655),	-- Tense Roguestone
 r(130656),	-- Assassin's Roguestone
 r(130657),	-- Assassin's Imperial Amethyst
@@ -177,9 +165,3 @@ r(131690),	-- Vermilion Onyx
 r(131691),	-- Imperial Amethyst
 r(131695),	-- Sun's Radiance
 r(131759),	-- Secrets of the Stone
-r(136269),	-- Resplendent Serpent's Eye
-r(136270),	-- Lucent Serpent's Eye
-r(136272),	-- Willful Serpent's Eye
-r(136273),	-- Tense Serpent's Eye
-r(136274),	-- Assassin's Serpent's Eye
-r(136275),	-- Mysterious Serpent's Eye

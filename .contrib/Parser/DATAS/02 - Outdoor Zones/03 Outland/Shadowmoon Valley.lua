@@ -2585,10 +2585,15 @@ root(ROOTS.Zones, {
 							20684,	-- Lady Shav'rar
 						},
 					}),
-					i(34689, {	-- Design: Chaotic Skyfire Diamond
+					i(34221, {	-- Design: Chaotic Skyfire Diamond (RECIPE!)
 						["crs"] = { 19768 },	-- Coilskar Siren
+						["timeline"] = { ADDED_2_3_0, REMOVED_2_3_2 },
 					}),
-					i(24158, {  -- Design: Khorium Band of Shadows
+					i(34689, {	-- Design: Chaotic Skyfire Diamond (RECIPE!)
+						["crs"] = { 19768 },	-- Coilskar Siren
+						["timeline"] = { ADDED_2_3_2 },
+					}),
+					i(24158, {  -- Design: Khorium Band of Shadows (RECIPE!)
 						["crs"] = { 19826 },	-- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)

@@ -1279,9 +1279,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				ach(8437, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
+				challengemaster(ach(8437, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
 					title(244),	-- Scarlet Commander <Name>
-				})),
+				}))),
 				ach(6896),	-- Scarlet Monastery Challenger
 				ach(6911),	-- Scarlet Monastery: Bronze
 				ach(6912),	-- Scarlet Monastery: Silver
@@ -1290,7 +1290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			})),
 			-- #if ANYCLASSIC
-			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
@@ -1298,7 +1298,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 3977,	-- High Inquisitor Whitemane
 						["groups"] = {
 							ach(60898),	-- Celestial: Scarlet Monastery
+							i(86796),	-- Torch of the Celestial Spark
 							i(86754),	-- Amulet of Seven Curses
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86820)),	-- Ring of the Bladed Tempest
+							i(86792),	-- Light of the Cosmos
 						},
 					}),
 				},

@@ -39,10 +39,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					--
 					h(i(161237)),	-- Jambani Bands
 					h(i(161239)),	-- Rastari Armbands
+					h(i(161238)),	-- Torcalin Bands
 					h(i(161236)),	-- Zanchuli Bracers
-					--i(161238, {	-- Torcalin Bands
-					--	["races"] = HORDE_ONLY,	-- horde appearance with no other source, granted by learning Alliance appearance
-					--}),
 				},
 			}),
 			q(49869, {	-- A Desperate Defense
@@ -102,14 +100,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158255),	-- Sea Raider's Crushers
 					i(158250),	-- Sea Raider's Legguards
 					--
+					h(i(161249)), 	-- Jambani Britches
 					h(i(161253)),	-- Rastari Greaves
+					h(i(161251)),	-- Torcalin Leggings
 					h(i(161246)),	-- Zanchuli Woolies
-					--i(161249, {	-- Jambani Britches
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
-					--i(161251, {	-- Torcalin Leggings
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
 				},
 			}),
 			q(55647, {	-- A Quick Ear Hustle
@@ -311,6 +305,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					h(i(158673)),	-- Torcalin Armguards
+				},
 			}),
 			q(49439, {	-- Boss' Revenge
 				["sourceQuests"] = { 49435 },	-- Where'd They Go?
@@ -453,19 +450,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(160086),	-- Sea Raider's Boots
 					i(160096),	-- Sea Raider's Cinch
 					--
+					h(i(158655)),	-- Jambani Boots
+					h(i(161243)),	-- Jambani Cincture
 					h(i(161245)),	-- Rastari Cincture
+					h(i(161244)),	-- Torcalin Cincture
 					h(i(161242)),	-- Zanchuli Belt
 					h(i(158657)),	-- Zanchuli Shoes
-					--i(161243, {	-- Jambani Cincture
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
-					--i(161244, {	-- Torcalin Cincture
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
-					-- I am not sure with Torcalin Striders
-					--i(158656, {	-- Torcalin Striders
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
 				},
 			}),
 			q(48087, {	-- Equine Retrieval
@@ -1110,12 +1100,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158238),	-- Sea Raider's Footguards
 					--
 					h(i(158658)),	-- Rastari Greatboots
-					--i(158655, {	-- Jambani Boots
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
-					--i(158656, {	-- Torcalin Striders
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
+					h(i(158656)),	-- Torcalin Striders
 				},
 			}),
 			q(48670, {	-- Runaway Rider
@@ -1482,9 +1467,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					h(i(158672)),	-- Jambani Bracers
 					h(i(158674)),	-- Rastari Wristwraps
 					h(i(158675)),	-- Zanchuli Bracelets
-					--i(158673, {	-- Torcalin Armguards
-					--	["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
-					--}),
 				},
 			}),
 			q(50058, {	-- The Witch's Pet

@@ -1754,7 +1754,8 @@ root(ROOTS.Zones, {
 				["crs"] = { 1420 },	-- Toad
 			}),
 			crit(21291, {	-- Toad (Orgrimmar, Teldrassil, Darnassus, Gilneas, Hillsbrad Foothills, Howling Fjord)
-				["maps"] = { ORGRIMMAR, TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
+				["maps"] = { TELDRASSIL, DARNASSUS, HILLSBRAD_FOOTHILLS, HOWLING_FJORD },
+				["coord"] = { 45.3, 48.3, ORGRIMMAR },
 				["timeline"] = { ADDED_7_3_5 },	-- maybe earlier idk
 			}),
 		})),

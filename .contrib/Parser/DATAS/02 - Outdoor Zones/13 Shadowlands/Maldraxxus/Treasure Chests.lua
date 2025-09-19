@@ -349,6 +349,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ 34.8, 55.0, MALDRAXXUS },
 						{ 36.5, 49.9, MALDRAXXUS },
 						{ 38.6, 47.0, MALDRAXXUS },
+						{ 39.7, 51.9, MALDRAXXUS },
 						{ 40.0, 43.9, MALDRAXXUS },
 						{ 40.9, 47.1, MALDRAXXUS },
 						{ 36.7, 42.5, MALDRAXXUS },

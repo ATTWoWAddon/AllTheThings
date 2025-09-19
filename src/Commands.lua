@@ -379,3 +379,16 @@ function(cmd)
 		app.ToggleMainList();
 	end
 end)
+
+-- Add a simple way for other addons to pull a standalone ATT group derived from a link
+app.GetLinkReference = function(link)
+	-- don't try searching for an invalid link
+	if app.Modules.RetrievingData.IsRetrieving(link) then
+		return
+	end
+	-- Search for the Link in the database
+	app.SetSkipLevel(2)
+	local group = app.GetCachedSearchResults(app.SearchForLink, link, nil, {IgnoreCache=true})
+	app.SetSkipLevel(0)
+	return group
+end

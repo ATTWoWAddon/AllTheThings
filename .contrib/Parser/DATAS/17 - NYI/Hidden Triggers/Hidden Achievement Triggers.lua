@@ -8,44 +8,32 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
 		--1.14.1.40666
-		-- #if ANYCLASSIC
-		-- #if AFTER 3.0.1
+		-- #if CLASSIC
 		ach(15329),	-- Has Died
 		-- #endif
-		-- #endif
 		--1.14.1.40688
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15330)),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
 		-- #endif
-		-- #endif
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15332)),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
 		-- #endif
-		-- #endif
 		--1.14.1.40800
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15333)),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
 		applyclassicphase(SOM_PHASE_ONE, ach(15334)),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
 		applyclassicphase(SOM_PHASE_ONE, ach(15335)),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 		-- #endif
-		-- #endif
 		--1.14.2.42597
-		-- #if ANYCLASSIC
-		-- #if AFTER 3.0.1
+		-- #if CLASSIC
 		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
 		-- #endif
-		-- #endif
 		--1.14.3.42770
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15637)),	-- The Immortal (Season of Mastery) \\ The Immortal
 		-- #endif
-		-- #endif
 		--1.15.1.53009
-		-- #if ANYCLASSIC
+		-- #if SEASON_OF_DISCOVERY
 		ach(19563),	-- Unbroken Self-Found Soul
 		ach(20129),	-- [DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
 		ach(20130),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
@@ -61,7 +49,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(20193),	-- [DNT] Self-Found Soul (Removed Self-Found)
 		-- #endif
 		--1.15.2.53941
-		-- #if ANYCLASSIC
+		-- #if SEASON_OF_DISCOVERY
 		ach(40131),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
 		ach(40132),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
 		ach(40133),	-- [DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
@@ -69,18 +57,15 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 		-- #endif
 		--1.15.4.56573
-		-- #if ANYCLASSIC
+		-- #if SEASON_OF_DISCOVERY
 		ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
 		ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
 		ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
 		ach(41011),	-- Rune Learned - Shared Acquisition - Wild Gods (50)
 		-- #endif
 	}),
-	-- #endif
-	-- #if ANYCLASSIC
 	expansion(EXPANSION.TBC, {
 		--2.5.1.39399
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15019),	-- Gladiator: Season 1
 		ach(15020),	-- Duelist: Season 1
@@ -89,9 +74,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(15018),	-- Infernal Gladiator
 		ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
 		-- #endif
-		-- #endif
 		--2.5.2.39570
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15199),	-- Gladiator: Season 2
 		ach(15200),	-- Gladiator: Season 4
@@ -106,12 +89,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(15209),	-- Rival: Season 2
 		ach(15210),	-- Challenger: Season 2
 		-- #endif
-		-- #endif
 		--2.5.4.44833
-		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
-		-- #endif
 		-- #endif
 	}),
 	-- #endif
@@ -595,11 +575,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		-- #endif
 		--3.4.3.55417
-		-- #if ANYCLASSIC
-		-- #if AFTER 3.0.1
+		-- #if WRATH
 		ach(40821),	-- Successfully Stress Test CN Realms
 		ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
-		-- #endif
 		-- #endif
 	}),
 	expansion(EXPANSION.CATA, {
@@ -691,8 +669,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(5981),	-- Occu'thar kills (Baradin Hold)
 		ach(6135),	-- Lava Guard Gordoth kills (Ragefire Chasm) \\ Taragaman the Hungerer kills (Ragefire Chasm)
 		ach(6136),	-- Mutanus the Devourer kills (Wailing Caverns)
+		-- #if NOT ANYCLASSIC
 		ach(6137),	-- Aku'mai kills (Blackfathom Deeps)
+		-- #endif
 		ach(6138),	-- Hogger kills (Stormwind Stockade)
+		-- #if NOT ANYCLASSIC
 		ach(6139),	-- Charlga Razorflank kills (Razorfen Kraul)
 		ach(6140),	-- Mekgineer Thermaplugg kills (Gnomeregan)
 		ach(6141),	-- Amnennar the Coldbringer kills (Razorfen Downs)
@@ -703,6 +684,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(6146),	-- King Gordok kills (Dire Maul)
 		ach(6147),	-- Omor the Unscarred kills (Hellfire Ramparts)
 		ach(6148),	-- Archimonde kills (Battle for Mount Hyjal)
+		-- #endif
 		ach(6150),	-- Murozond kills (End Time)
 		ach(6151),	-- Mannoroth defeats (Well of Eternity)
 		ach(6152),	-- Archbishop Benedictus kills (Hour of Twilight)
@@ -750,7 +732,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 	}),
 	expansion(EXPANSION.MOP, {
+		-- #if NOT ANYCLASSIC
 		ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
+		-- #endif
 		ach(6737),	-- Silvershard Mines Honorable Kills
 		ach(6738),	-- Temple of Kotmogu Honorable Kills
 		ach(6775),	-- Sha of Doubt kills (Temple of the Jade Serpent)
@@ -764,7 +748,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(6783),	-- Raigonn kills (Heroic Gate of the Setting Sun)
 		ach(6784),	-- Flameweaver Koegler kills (Heroic Scarlet Halls)
 		ach(6785),	-- High Inquisitor Whitemane kills (Heroic Scarlet Monastery)
+		-- #if NOT ANYCLASSIC
 		ach(6786),	-- Flameweaver Koegler kills (Scarlet Halls)
+		-- #endif
 		ach(6787),	-- Darkmaster Gandling kills (Heroic Scholomance)
 		ach(6788),	-- Wing Leader Ner'onok kills (Heroic Siege of Niuzao Temple)
 		ach(6789),	-- Stone Guard kills (10-player Normal Mogu'shan Vaults) \\ Stone Guard kills (Normal Mogu'shan Vaults)
@@ -3967,6 +3953,33 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(61014),	-- <DNT> Fractillus defeated on Raid Finder
 			ach(61015),	-- <DNT> Nexus-King Salhadaar defeated on Raid Finder
 			ach(61016),	-- <DNT> Dimensius, the All-Devouring defeated on Raid Finder
+
+			-- 11.2.0.62610
+			ach(61343),	-- Hotfix 99733 Tracking
+
+			-- 11.2.0.62706
+			ach(61347),	-- <Hidden> Base 12.0 Tender [DNT]
+			ach(61348),	-- <Hidden> Heroic 12.0 Tender [DNT]
+			ach(61349),	-- <Hidden> Epic 12.0 Tender [DNT]
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
+			-- 11.2.5.62554
+			ach(60936),	-- Empowered enemies killed in Heroic World Tier
+			ach(60937),	-- Deaths in Heroic World Tier
+			ach(60938),	-- Demons slain
+			ach(61062),	-- <DNT> Season 3 Midseason - Eco-Dome - Timed +12
+			ach(61063),	-- <DNT> Season 3 Midseason - Ara-Kara - Timed +12
+			ach(61064),	-- <DNT> Season 3 Midseason - Dawnbreaker - Timed +12
+			ach(61065),	-- <DNT> Season 3 Midseason - Priory - Timed +12
+			ach(61066),	-- <DNT> Season 3 Midseason - Floodgate - Timed +12
+			ach(61067),	-- <DNT> Season 3 Midseason - Tazavesh: Streets - Timed +12
+			ach(61068),	-- <DNT> Season 3 Midseason - Tazavesh: Gambit - Timed +12
+			ach(61069),	-- <DNT> Season 3 Midseason - Halls of Atonement - Timed +12
+			ach(61324),	-- <Hidden>[DNT] Jewelry Unlocked
+			ach(61325),	-- <Hidden>[DNT] Jewelry Equipped
+			ach(61338),	-- Bronze gained across Warband
 		})),
 	}),
 });

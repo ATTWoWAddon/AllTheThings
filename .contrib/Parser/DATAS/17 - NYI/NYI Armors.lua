@@ -5826,5 +5826,275 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(246767),	-- Miniature Roulette Wheel
 			i(246768),	-- Miniature Roulette Wheel
 		})),
+
+		-- 11.2.0
+		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_0 } }, {
+			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(237549),	-- Bloodwrath's Gnarled Claws
+						i(237558),	-- Conjoined Glass Bracers
+						i(237538),	-- Forgeweaver's Journal Holster
+						i(237527),	-- Frock of Spirit's Reunion
+						i(243305),	-- Interloper's Silken Striders
+						i(237524),	-- Laced Lair-Steppers
+						i(237547),	-- Mounted Manacannons
+						i(237556),	-- Sandals of Scarred Servitude
+						i(237534),	-- Singed Sievecuffs
+						i(237559),	-- Singularity Cincture
+						i(237542),	-- Stellar Navigation Slacks
+						i(243048),	-- Technomancer's Service Sandals
+						i(237548),	-- Twilight Tyrant's Veil
+						i(238033),	-- Zadus's Liturgical Hat
+					}),
+					filter(LEATHER, {
+						i(237533),	-- Atomic Phasebelt
+						i(237546),	-- Bindings of Lost Essence
+						i(237541),	-- Darksorrow's Corrupted Carapace
+						i(237552),	-- Deathbound Shoulderpads
+						i(237531),	-- Elite Shadowguard Legwraps
+						i(238027),	-- Harvested Creephide Cord
+						i(243306),	-- Interloper's Reinforced Sandals
+						i(237525),	-- Irradiated Impurity Filter
+						i(237565),	-- Kinetic Dunerunners
+						i(237553),	-- Laboratory Test Slippers
+						i(237557),	-- Reaper's Dreadbelt
+						i(237562),	-- Time-Compressed Wristguards
+						i(238031),	-- Veiled Manta Vest
+						i(237540),	-- Winged Gamma Handlers
+					}),
+					filter(MAIL, {
+						i(238032),	-- Acolyte's Infused Leggings
+						i(237523),	-- Arcanotech Wrist-Matrix
+						i(237536),	-- Bite of the Astral Wastes
+						i(237543),	-- Chambersieve Waistcoat
+						i(237554),	-- Clasp of Furious Freedom
+						i(237537),	-- Claws of Failed Resistance
+						i(237522),	-- Colossal Lifetether
+						i(237539),	-- Deathspindle Talons
+						i(237560),	-- Greaves of Shattered Space
+						i(237529),	-- Harvested Attendant's Uniform
+						i(243308),	-- Interloper's Chain Boots
+						i(237555),	-- Pactbound Vambraces
+						i(237544),	-- Royal Voidscale Gauntlets
+						i(238030),	-- Voidhound Trainer's Boots
+					}),
+					filter(PLATE, {
+						i(237535),	-- Artoshion's Abyssal Stare
+						i(237532),	-- Beacons of False Righteousness
+						i(238028),	-- Bone-Melted Faceplate
+						i(237526),	-- Breached Containment Guards
+						i(237564),	-- Darkrider Sabatons
+						i(237545),	-- Discarded Nutrient Shackles
+						i(237550),	-- Fresh Ethereal Fetters
+						i(243307),	-- Interloper's Plated Sabatons
+						i(238034),	-- Jak'tull's Intruder Stompers
+						i(237528),	-- Manaforged Displacement Chassis
+						i(237530),	-- Shrapnel-Fused Legguards
+						i(237551),	-- Sterilized Expulsion Boots
+						i(237563),	-- Ultradense Fission Girdle
+						i(237561),	-- Yoke of Enveloping Hatred
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(237549),	-- Bloodwrath's Gnarled Claws
+						i(237558),	-- Conjoined Glass Bracers
+						i(237538),	-- Forgeweaver's Journal Holster
+						i(237527),	-- Frock of Spirit's Reunion
+						i(243305),	-- Interloper's Silken Striders
+						i(237524),	-- Laced Lair-Steppers
+						i(237547),	-- Mounted Manacannons
+						i(237556),	-- Sandals of Scarred Servitude
+						i(237534),	-- Singed Sievecuffs
+						i(237559),	-- Singularity Cincture
+						i(237542),	-- Stellar Navigation Slacks
+						i(243048),	-- Technomancer's Service Sandals
+						i(237548),	-- Twilight Tyrant's Veil
+						i(238033),	-- Zadus's Liturgical Hat
+					}),
+					filter(LEATHER, {
+						i(237533),	-- Atomic Phasebelt
+						i(237546),	-- Bindings of Lost Essence
+						i(237541),	-- Darksorrow's Corrupted Carapace
+						i(237552),	-- Deathbound Shoulderpads
+						i(237531),	-- Elite Shadowguard Legwraps
+						i(238027),	-- Harvested Creephide Cord
+						i(243306),	-- Interloper's Reinforced Sandals
+						i(237525),	-- Irradiated Impurity Filter
+						i(237565),	-- Kinetic Dunerunners
+						i(237553),	-- Laboratory Test Slippers
+						i(237557),	-- Reaper's Dreadbelt
+						i(237562),	-- Time-Compressed Wristguards
+						i(238031),	-- Veiled Manta Vest
+						i(237540),	-- Winged Gamma Handlers
+					}),
+					filter(MAIL, {
+						i(238032),	-- Acolyte's Infused Leggings
+						i(237523),	-- Arcanotech Wrist-Matrix
+						i(237536),	-- Bite of the Astral Wastes
+						i(237543),	-- Chambersieve Waistcoat
+						i(237554),	-- Clasp of Furious Freedom
+						i(237537),	-- Claws of Failed Resistance
+						i(237522),	-- Colossal Lifetether
+						i(237539),	-- Deathspindle Talons
+						i(237560),	-- Greaves of Shattered Space
+						i(237529),	-- Harvested Attendant's Uniform
+						i(243308),	-- Interloper's Chain Boots
+						i(237555),	-- Pactbound Vambraces
+						i(237544),	-- Royal Voidscale Gauntlets
+						i(238030),	-- Voidhound Trainer's Boots
+					}),
+					filter(PLATE, {
+						i(237535),	-- Artoshion's Abyssal Stare
+						i(237532),	-- Beacons of False Righteousness
+						i(238028),	-- Bone-Melted Faceplate
+						i(237526),	-- Breached Containment Guards
+						i(237564),	-- Darkrider Sabatons
+						i(237545),	-- Discarded Nutrient Shackles
+						i(237550),	-- Fresh Ethereal Fetters
+						i(243307),	-- Interloper's Plated Sabatons
+						i(238034),	-- Jak'tull's Intruder Stompers
+						i(237528),	-- Manaforged Displacement Chassis
+						i(237530),	-- Shrapnel-Fused Legguards
+						i(237551),	-- Sterilized Expulsion Boots
+						i(237563),	-- Ultradense Fission Girdle
+						i(237561),	-- Yoke of Enveloping Hatred
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(237549),	-- Bloodwrath's Gnarled Claws
+						i(237558),	-- Conjoined Glass Bracers
+						i(237538),	-- Forgeweaver's Journal Holster
+						i(237527),	-- Frock of Spirit's Reunion
+						i(243305),	-- Interloper's Silken Striders
+						i(237524),	-- Laced Lair-Steppers
+						i(237547),	-- Mounted Manacannons
+						i(237556),	-- Sandals of Scarred Servitude
+						i(237534),	-- Singed Sievecuffs
+						i(237559),	-- Singularity Cincture
+						i(237542),	-- Stellar Navigation Slacks
+						i(243048),	-- Technomancer's Service Sandals
+						i(237548),	-- Twilight Tyrant's Veil
+						i(238033),	-- Zadus's Liturgical Hat
+					}),
+					filter(LEATHER, {
+						i(237533),	-- Atomic Phasebelt
+						i(237546),	-- Bindings of Lost Essence
+						i(237541),	-- Darksorrow's Corrupted Carapace
+						i(237552),	-- Deathbound Shoulderpads
+						i(237531),	-- Elite Shadowguard Legwraps
+						i(238027),	-- Harvested Creephide Cord
+						i(243306),	-- Interloper's Reinforced Sandals
+						i(237525),	-- Irradiated Impurity Filter
+						i(237565),	-- Kinetic Dunerunners
+						i(237553),	-- Laboratory Test Slippers
+						i(237557),	-- Reaper's Dreadbelt
+						i(237562),	-- Time-Compressed Wristguards
+						i(238031),	-- Veiled Manta Vest
+						i(237540),	-- Winged Gamma Handlers
+					}),
+					filter(MAIL, {
+						i(238032),	-- Acolyte's Infused Leggings
+						i(237523),	-- Arcanotech Wrist-Matrix
+						i(237536),	-- Bite of the Astral Wastes
+						i(237543),	-- Chambersieve Waistcoat
+						i(237554),	-- Clasp of Furious Freedom
+						i(237537),	-- Claws of Failed Resistance
+						i(237522),	-- Colossal Lifetether
+						i(237539),	-- Deathspindle Talons
+						i(237560),	-- Greaves of Shattered Space
+						i(237529),	-- Harvested Attendant's Uniform
+						i(243308),	-- Interloper's Chain Boots
+						i(237555),	-- Pactbound Vambraces
+						i(237544),	-- Royal Voidscale Gauntlets
+						i(238030),	-- Voidhound Trainer's Boots
+					}),
+					filter(PLATE, {
+						i(237535),	-- Artoshion's Abyssal Stare
+						i(237532),	-- Beacons of False Righteousness
+						i(238028),	-- Bone-Melted Faceplate
+						i(237526),	-- Breached Containment Guards
+						i(237564),	-- Darkrider Sabatons
+						i(237545),	-- Discarded Nutrient Shackles
+						i(237550),	-- Fresh Ethereal Fetters
+						i(243307),	-- Interloper's Plated Sabatons
+						i(238034),	-- Jak'tull's Intruder Stompers
+						i(237528),	-- Manaforged Displacement Chassis
+						i(237530),	-- Shrapnel-Fused Legguards
+						i(237551),	-- Sterilized Expulsion Boots
+						i(237563),	-- Ultradense Fission Girdle
+						i(237561),	-- Yoke of Enveloping Hatred
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					filter(CLOTH, {
+						i(237549),	-- Bloodwrath's Gnarled Claws
+						i(237558),	-- Conjoined Glass Bracers
+						i(237538),	-- Forgeweaver's Journal Holster
+						i(237527),	-- Frock of Spirit's Reunion
+						i(243305),	-- Interloper's Silken Striders
+						i(237524),	-- Laced Lair-Steppers
+						i(237547),	-- Mounted Manacannons
+						i(237556),	-- Sandals of Scarred Servitude
+						i(237534),	-- Singed Sievecuffs
+						i(237559),	-- Singularity Cincture
+						i(237542),	-- Stellar Navigation Slacks
+						i(243048),	-- Technomancer's Service Sandals
+						i(237548),	-- Twilight Tyrant's Veil
+						i(238033),	-- Zadus's Liturgical Hat
+					}),
+					filter(LEATHER, {
+						i(237533),	-- Atomic Phasebelt
+						i(237546),	-- Bindings of Lost Essence
+						i(237541),	-- Darksorrow's Corrupted Carapace
+						i(237552),	-- Deathbound Shoulderpads
+						i(237531),	-- Elite Shadowguard Legwraps
+						i(238027),	-- Harvested Creephide Cord
+						i(243306),	-- Interloper's Reinforced Sandals
+						i(237525),	-- Irradiated Impurity Filter
+						i(237565),	-- Kinetic Dunerunners
+						i(237553),	-- Laboratory Test Slippers
+						i(237557),	-- Reaper's Dreadbelt
+						i(237562),	-- Time-Compressed Wristguards
+						i(238031),	-- Veiled Manta Vest
+						i(237540),	-- Winged Gamma Handlers
+					}),
+					filter(MAIL, {
+						i(238032),	-- Acolyte's Infused Leggings
+						i(237523),	-- Arcanotech Wrist-Matrix
+						i(237536),	-- Bite of the Astral Wastes
+						i(237543),	-- Chambersieve Waistcoat
+						i(237554),	-- Clasp of Furious Freedom
+						i(237537),	-- Claws of Failed Resistance
+						i(237522),	-- Colossal Lifetether
+						i(237539),	-- Deathspindle Talons
+						i(237560),	-- Greaves of Shattered Space
+						i(237529),	-- Harvested Attendant's Uniform
+						i(243308),	-- Interloper's Chain Boots
+						i(237555),	-- Pactbound Vambraces
+						i(237544),	-- Royal Voidscale Gauntlets
+						i(238030),	-- Voidhound Trainer's Boots
+					}),
+					filter(PLATE, {
+						i(237535),	-- Artoshion's Abyssal Stare
+						i(237532),	-- Beacons of False Righteousness
+						i(238028),	-- Bone-Melted Faceplate
+						i(237526),	-- Breached Containment Guards
+						i(237564),	-- Darkrider Sabatons
+						i(237545),	-- Discarded Nutrient Shackles
+						i(237550),	-- Fresh Ethereal Fetters
+						i(243307),	-- Interloper's Plated Sabatons
+						i(238034),	-- Jak'tull's Intruder Stompers
+						i(237528),	-- Manaforged Displacement Chassis
+						i(237530),	-- Shrapnel-Fused Legguards
+						i(237551),	-- Sterilized Expulsion Boots
+						i(237563),	-- Ultradense Fission Girdle
+						i(237561),	-- Yoke of Enveloping Hatred
+					}),
+				})),
+			}),
+		})),
 	}),
 }));

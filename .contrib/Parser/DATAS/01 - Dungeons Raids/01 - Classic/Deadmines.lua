@@ -895,8 +895,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	},
 });
 
--- #if AFTER 6.0.1
--- With how we sort instances, this is actually "The Deadmines" before 6.0.1 and for Retail this puts it in the right spot.
+-- #if AFTER 5.0.1
+-- With how we sort instances, this is actually "The Deadmines" before 5.0.1 and for Retail this puts it in the right spot.
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	DEADMINES_INSTANCE,
 }));

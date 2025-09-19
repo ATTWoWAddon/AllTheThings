@@ -14,6 +14,98 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180059, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past IV
 	i(180060, {["timeline"] = { ADDED_9_0_1 }}),	-- Relic of the Past V
 	prof(ALCHEMY, {
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				{
+					i(3371, {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
+						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
+						--[[["coords"] = {
+							{ 66.6, 54.6, IRONFORGE },
+							{ 47.4, 33.73, THUNDER_BLUFF },
+							{ 51.8, 74.6, UNDERCITY },
+							-- #if AFTER TBC
+							{ 67.0, 19.2, SILVERMOON_CITY },
+							{ 28.1, 61.9, THE_EXODAR },
+							-- #endif
+							-- #if AFTER WRATH
+							{ 55.6, 85.6, STORMWIND_CITY },
+							-- #else
+							{ 46.6, 78.8, STORMWIND_CITY },
+							-- #endif
+							-- #if AFTER CATA
+							{ 57.7, 72.32, BOREAN_TUNDRA },
+							{ 41.34, 34.61, BOREAN_TUNDRA },
+							{ 54.6, 39.6, DARNASSUS },
+							{ 52.2, 36.4, HELLFIRE_PENINSULA },
+							{ 53.8, 65.8, HELLFIRE_PENINSULA },
+							{ 79.5, 30.47, HOWLING_FJORD },
+							{ 58.4, 62.75, HOWLING_FJORD },
+							{ 41.54, 33.32, NORTHREND_DALARAN },
+							{ 55.6, 45.4, ORGRIMMAR },
+							{ 45.8, 20.8, SHATTRATH_CITY },
+							-- #else
+							{ 55.8, 24.5, DARNASSUS },
+							{ 56.2, 34.2, ORGRIMMAR },
+							-- #endif
+						},]]
+					}),
+				},
+				sharedData({	-- Leaded-/Crystal Vials for Vanilla
+					["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+					["coords"] = {
+						{ 55.8, 24.5, DARNASSUS },
+						{ 66.6, 54.6, IRONFORGE },
+						{ 56.2, 34.2, ORGRIMMAR },
+						{ 47.4, 33.73, THUNDER_BLUFF },
+						{ 51.8, 74.6, UNDERCITY },
+						-- #if AFTER TBC
+						{ 67.0, 19.2, SILVERMOON_CITY },
+						{ 28.1, 61.9, THE_EXODAR },
+						-- #endif
+						-- #if AFTER WRATH
+						{ 55.6, 85.6, STORMWIND_CITY },
+						-- #else
+						{ 46.6, 78.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { REMOVED_4_0_1 },
+				}, {
+					i(3372),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
+					i(8925),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
+				}),
+				{
+					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
+						["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+						["coords"] = {
+							{ 55.8, 24.5, DARNASSUS },
+							{ 66.6, 54.6, IRONFORGE },
+							{ 56.2, 34.2, ORGRIMMAR },
+							{ 47.4, 33.73, THUNDER_BLUFF },
+							{ 51.8, 74.6, UNDERCITY },
+							-- #if AFTER TBC
+							{ 52.2, 36.4, HELLFIRE_PENINSULA },
+							{ 53.8, 65.8, HELLFIRE_PENINSULA },
+							{ 45.8, 20.8, SHATTRATH_CITY },
+							{ 67.0, 19.2, SILVERMOON_CITY },
+							{ 28.1, 61.9, THE_EXODAR },
+							-- #endif
+							-- #if AFTER WRATH
+							{ 57.7, 72.32, BOREAN_TUNDRA },
+							{ 41.34, 34.61, BOREAN_TUNDRA },
+							{ 79.5, 30.47, HOWLING_FJORD },
+							{ 58.4, 62.75, HOWLING_FJORD },
+							{ 41.54, 33.32, NORTHREND_DALARAN },
+							{ 55.6, 85.6, STORMWIND_CITY },
+							-- #else
+							{ 46.6, 78.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["timeline"] = { REMOVED_4_0_1 },
+					}),
+				}
+			)
+		}),
 		filter(CONSUMABLES, {
 			i(6452, {["timeline"] = {ADDED_8_0_1}}),	-- Anti-Venom
 			i(9155),	-- Arcane Elixir
@@ -176,7 +268,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(ARCHAEOLOGY, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		i(52843),	-- Dwarf Rune Stone
 		i(63127),	-- Highborne Scroll
-		i(87399, {["timeline"] = { ADDED_5_0_4 }}),	-- Restored Artifact
 		i(63128),	-- Troll Tablet
 		header(HEADERS.Currency, ARCH_CURRENCY_DWARF, {
 			["provider"] = { "o", 204282 },	-- Dwarf Archaeology Find
@@ -350,6 +441,62 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	})),
 	prof(BLACKSMITHING, {
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				{
+					i(5956, {	-- Blacksmithing Hammer
+						["collectible"] = false,
+						["description"] = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
+					}),
+				},
+				sharedData({
+					["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+					--[[["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+					["coords"] = {
+						{ 51.8, 41.2, IRONFORGE },
+						{ 39.8, 55.6, THUNDER_BLUFF },
+						{ 61.4, 30.1, UNDERCITY },
+						-- #if AFTER TBC
+						{ 80.6, 37.0, SILVERMOON_CITY },
+						{ 61.3, 89.3, THE_EXODAR },
+						-- #endif
+						-- #if AFTER 3.0.2
+						{ 63.2, 37.6, STORMWIND_CITY },
+						-- #else
+						{ 56.3, 17.2, STORMWIND_CITY },
+						-- #endif
+						-- #if AFTER CATA
+						{ 75.8, 35.2, ORGRIMMAR },
+						-- #else
+						{ 82.4, 23.8, ORGRIMMAR },
+						-- #endif
+						-- #if AFTER 4.1.0
+						{ 56.6, 52.6, DARNASSUS },
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5512},	-- Kaita Deepforge <Blacksmithing Supplies>
+						{ "n", 4597},	-- Samuel Van Brunt <Blacksmithing Supplies>
+						{ "n", 3356},	-- Sumi <Blacksmithing Supplies>
+						{ "n", 2999},	-- Taur Stonehoof <Blacksmithing Supplies>
+						{ "n", 4259},	-- Thurgrum Deepforge <Blacksmithing Supplies>
+						-- #if AFTER TBC
+						{ "n", 16713},	-- Arras <Blacksmithing Supplies>
+						{ "n", 16670},	-- Eriden <Blacksmithing Supplies>
+						-- #endif
+						-- #if AFTER 4.1.0
+						{ "n", 52641},	-- Layna Karner <Blacksmithing Supplies>
+						-- #endif
+					},]]
+				}, {
+					i(2880),	-- Weak Flux
+					i(3466),	-- Strong Flux
+					i(18567),	-- Elemental Flux
+					i(3857),	-- Coal
+				})
+			)
+		}),
 		-- #if BEFORE TBC
 		prof(9788, {	-- Armorsmith
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
@@ -903,12 +1050,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15871),	-- Truesilver Skeleton Key
 			i(206648, {["timeline"] = { ADDED_10_1_5 }}),	-- Undeath Metal
 		}),
-		filter(PROFESSION_EQUIPMENT, {	-- Blacksmithing Hammer
-			i(5956, {
-				["collectible"] = false,
-				["description"] = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world",
-			}),
-		}),
 		n(WEAPONS, {
 			i(206493, {["timeline"] = { ADDED_10_1_5 }}),	-- Axe of Sundered Bone
 			i(7945),	-- Big Black Mace
@@ -1085,27 +1226,88 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(COOKING, {
-		-- #if AFTER CATA
-		n(COMMON_VENDOR_ITEMS, {	-- Experimental
-			i(2595, {	-- Jug of Badlands Bourbon (Cataclysm cooking)
-				["coords"] = {
-					{ 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
-					{ 79.5, 58.5, SILVERMOON_CITY },
-					-- #if AFTER WRATH
-					{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
-					-- #else
-					{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
-					-- #endif
-				},
-				["description"] = "Coordinates are for select vendors.",
-				["providers"] = {
-					{ "n", 1328 },	-- Elly Langston <Barmaid>
-					{ "n", 5112 },	-- Gwenna Firebrew <Barmaid>
-					{ "n", 16442 },	-- Vinemaster Suntouched <Wine & Spirits Merchant>
-				},
-			}),
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				sharedData({	-- Vanilla cooking reagents
+					["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+					--[[["coords"] = {
+						{ 60.6, 38.2, IRONFORGE },
+						{ 51.0, 52.5, THUNDER_BLUFF },
+						{ 62.3, 43.1, UNDERCITY },
+						-- #if AFTER TBC
+						{ 69.6, 71.2, SILVERMOON_CITY },
+						{ 54.4, 26.3, THE_EXODAR },
+						-- #endif
+						-- #if AFTER WRATH
+						{ 77.6, 53.2, STORMWIND_CITY },
+						-- #else
+						{ 76.0, 36.8, STORMWIND_CITY },
+						-- #endif
+						-- #if AFTER CATA
+						{ 49.6, 36.6, DARNASSUS },
+						{ 32.6, 68.6, ORGRIMMAR },
+						-- #else
+						{ 48.5, 21.6, DARNASSUS },
+						{ 57.6, 53.2, ORGRIMMAR },
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>
+						{ "n", 5483},	-- Erika Tate <Cooking Supplies> [TBC+] / <Cooking Supplier>
+						{ "n", 4223},	-- Fyldan <Cooking Supplies> [TBC+] / <Cooking Supplier>
+						{ "n", 3027},	-- Naal Mistrunner <Cooking Supplies>
+						{ "n", 4553},	-- Ronald Burch <Cooking Supplies> [TBC+] / <Cooking Supplier>
+						{ "n", 3400},	-- Xen'to <Cooking Supplies>
+						-- #if AFTER TBC
+						{ "n", 16718},	-- Phea <Cooking Supplies>
+						{ "n", 16677},	-- Quelis <Cooking Supplies>
+						-- #endif
+					},]]
+				}, {
+					i(159),	-- Refreshing Spring Water
+					i(30817, {["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
+					i(2678),	-- Mild Spices
+					i(2692, {["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
+					i(3713, {["timeline"] = { REMOVED_3_0_2 }}),	-- Soothing Spices
+				}),
+				sharedData({
+					["description"] = "Coordinates are for select vendors.",
+					["providers"] = {
+						{ "n", 1328 },	-- Elly Langston <Barmaid>
+						{ "n", 5112 },	-- Gwenna Firebrew <Barmaid>
+						-- #if AFTER TBC
+						{ "n", 16442 },	-- Vinemaster Suntouched <Wine & Spirits Merchant>
+						-- #endif
+						-- #if BEFORE CATA
+						{ "n", 5611 },	-- Barkeep Morag
+						-- #endif
+					},
+				}, {
+					i(2594),	-- Flagon of Dwarven Honeymead/Mead
+					i(2593),	-- Flask of Stormwind Tawny
+					i(2595),	-- Jug of Badlands Bourbon
+					i(2596),	-- Skin of Dwarven Stout
+				}),
+				{
+					i(1179, {	-- Ice Cold Milk
+						["description"] = "Coordinates are for select vendors.",
+						["providers"] = {
+							{ "n", 5611},	-- Barkeep Morag
+							{ "n", 4555},	-- Eleanor Rusk <General Goods>
+							{ "n", 1328},	-- Elly Langston <Barmaid>
+							{ "n", 5112},	-- Gwenna Firebrew <Barmaid>
+							{ "n", 6735},	-- Innkeeper Saelienne <Innkeeper>
+							{ "n", 8362},	-- Kuruk <General Goods>
+							-- #if AFTER TBC
+							{ "n", 16739},	-- Caregiver Breel <Innkeeper>
+							{ "n", 17630},	-- Innkeeper Jovia <Innkeeper>
+							-- #endif
+						},
+					})
+				}
+			),
 		}),
-		-- #endif
 		i(13935),	-- Baked Salmon
 		i(4457),	-- Barbecued Buzzard Wing
 		applyclassicphase(TBC_PHASE_ONE, i(27636, {["timeline"] = { ADDED_2_0_5 }})),	-- Bat Bites
@@ -1218,6 +1420,125 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 	}),
 	prof(ENCHANTING, {
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				sharedData({ -- Enchanting supplies
+					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+					--[[["coords"] = {
+						{ 60.8, 44.2, IRONFORGE },
+						{ 39.9, 40.2, THE_EXODAR },
+						{ 44.9, 37.7, THUNDER_BLUFF },
+						{ 62.0, 60.8, UNDERCITY },
+						-- #if AFTER TBC
+						{ 52.2, 36.0, HELLFIRE_PENINSULA },
+						{ 53.6, 66.0, HELLFIRE_PENINSULA },
+						{ 44.6, 96.8, SHATTRATH_CITY },
+						{ 70.0, 24.6, SILVERMOON_CITY },
+						-- #endif
+						-- #if AFTER WRATH
+						{ 53.0, 74.2, STORMWIND_CITY },
+						-- #else
+						{ 43.0, 64.2, STORMWIND_CITY },
+						-- #endif
+						-- #if AFTER 3.1.0
+						{ 36.4, 44.6, SHATTRATH_CITY },
+						-- #endif
+						-- #if AFTER CATA
+						{ 56.5, 32.2, DARNASSUS },
+						{ 53.2, 48.8, ORGRIMMAR },
+						-- #else
+						{ 58.6, 14.7, DARNASSUS },
+						{ 53.6, 38.0, ORGRIMMAR },
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
+						{ "n", 3346},	-- Kithas <Enchanting Supplies>
+						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
+						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
+						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
+						{ "n", 4228},	-- Vaean <Enchanting Supplies>
+						-- #if AFTER TBC
+						{ "n", 16722},	-- Egomis <Enchanting Supplies>
+						{ "n", 18753},	-- Felannia <Enchanting Trainer>
+						{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
+						{ "n", 16635},	-- Lyna <Enchanting Supplies>
+						{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
+						-- #endif
+						-- #if AFTER 3.1.0
+						{ "n", 33676},	-- Zurii <Enchanting Supplies>
+						-- #endif
+					},]]
+				},{
+					i(4470),	-- Simple Wood
+					i(11291),	-- Star Wood
+					-- #if AFTER CATA
+					i(38682),	-- Enchanting Vellum
+					-- #endif
+				}),
+				sharedData({	-- Runed Copper Rod reagents
+					-- Danny Donkey:	This structure is used for Vanilla content as well as BFA and onwards when professions
+					--					are split on an expansion-basis, but one still need to craft and use this basic rod.
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+					--[[["coords"] = {
+						{ 60.8, 44.2, IRONFORGE },
+						{ 39.9, 40.2, THE_EXODAR },
+						{ 44.9, 37.7, THUNDER_BLUFF },
+						{ 62.0, 60.8, UNDERCITY },
+						-- #if AFTER TBC
+						{ 70.0, 24.6, SILVERMOON_CITY },
+						-- #endif
+						-- #if AFTER WRATH
+						{ 53.0, 74.2, STORMWIND_CITY },
+						-- #else
+						{ 43.0, 64.2, STORMWIND_CITY },
+						-- #endif
+						-- #if AFTER CATA
+						{ 56.5, 32.2, DARNASSUS },
+						{ 53.2, 48.8, ORGRIMMAR },
+						-- #else
+						{ 58.6, 14.7, DARNASSUS },
+						{ 53.6, 38.0, ORGRIMMAR },
+						-- #endif
+						-- #if AFTER BFA
+						{ 46.7, 32.5, BOREAN_TUNDRA },
+						{ 52.2, 36.0, HELLFIRE_PENINSULA },
+						{ 53.6, 66.0, HELLFIRE_PENINSULA },
+						{ 38.78, 41.56, NORTHREND_DALARAN },
+						{ 44.6, 96.8, SHATTRATH_CITY },
+						{ 36.4, 44.6, SHATTRATH_CITY },
+						-- #endif
+					},
+					["providers"] = {
+						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
+						{ "n", 3346},	-- Kithas <Enchanting Supplies>
+						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
+						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
+						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
+						{ "n", 4228},	-- Vaean <Enchanting Supplies>
+						-- #if AFTER TBC
+						{ "n", 16722},	-- Egomis <Enchanting Supplies>
+						{ "n", 16635},	-- Lyna <Enchanting Supplies>
+						-- #endif
+						-- #if AFTER BFA
+						{ "n", 18753},	-- Felannia <Enchanting Trainer>
+						{ "n", 28714},	-- Ildine Sorrowspear <Enchanting Supplies>
+						{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
+						{ "n", 27147},	-- Librarian Erickson <Enchanting Supplies>
+						{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
+						{ "n", 33676},	-- Zurii <Enchanting Supplies>
+						-- #endif
+					},]]
+				},{
+					i(6217, {	-- Copper Rod
+						["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
+					}),
+					i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
+					i(10940, { ["isLimited"] = true, }),	-- Strange Dust
+				})
+			)
+		}),
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
 			-- Dust:
@@ -1623,6 +1944,56 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(ENGINEERING, {
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
+			--[[["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			["coords"] = {
+				{ 67.8, 43.0, IRONFORGE },
+				{ 75.5, 74.3, UNDERCITY },
+				-- #if AFTER TBC
+				{ 44.6, 96.8, SHATTRATH_CITY },
+				{ 27.93, 47.6, SHATTRATH_CITY },
+				{ 75.8, 40.6, SILVERMOON_CITY },
+				{ 53.6, 90.8, THE_EXODAR },
+				-- #endif
+				-- #if AFTER 3.0.2
+				{ 63.07, 31.97, STORMWIND_CITY },
+				-- #else
+				{ 55.0, 7.0, STORMWIND_CITY },
+				-- #endif
+				-- #if AFTER CATA
+				{ 50.0, 32.8, DARNASSUS },
+				{ 56.0, 56.0, ORGRIMMAR },
+				-- #else
+				{ 75.6, 25.2, ORGRIMMAR },
+				-- #endif
+				-- #if AFTER 4.1.0
+				{ 36.22, 60.21, THUNDER_BLUFF },
+				-- #endif
+			},
+			["providers"] = {
+				{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
+				{ "n", 4587},	-- Elizabeth Van Talen <Engineering Supplies>
+				{ "n", 5175},	-- Gearcutter Cogspinner <Engineering Supplies>
+				{ "n", 3413},	-- Sovik <Engineering Supplies>
+				-- #if AFTER TBC
+				{ "n", 16657},	-- Feera <Engineering Supplies>
+				{ "n", 27711},	-- Technician Halmaha <Engineering Supplies>
+				{ "n", 19244},	-- Trader Endernor <Trade Goods>
+				{ "n", 16782},	-- Yatheon <Engineering Supplies>
+				-- #endif
+				-- #if AFTER CATA
+				{ "n", 52637},	-- Hugo Letner <Engineering Supplies>
+				-- #endif
+				-- #if AFTER 4.1.0
+				{ "n", 52655},	-- Palehoof's Big Bag of Parts <Engineering Supplies>
+				-- #endif
+			},]]
+		}, {
+			i(4400),	-- Heavy Stock
+			i(4399),	-- Wooden Stock
+		})),
 		prof(GNOMISH_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
@@ -1975,6 +2346,62 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(FISHING, {
 		["description"] = "If you struggle to catch an open water fish in a given zone, try a different spot or a different body of water. There might be local variations of which fish you can reliably catch from a given spot.",
 		["groups"] = {
+			n(COMMON_VENDOR_ITEMS, sharedData({
+				["description"] = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
+				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
+				--[[["coords"] = {
+					{ 47.8, 6.6, IRONFORGE },
+					{ 55.8, 47.0, THUNDER_BLUFF },
+					{ 81.0, 30.8, UNDERCITY },
+					-- #if AFTER TBC
+					{ 77.04, 68.2, SILVERMOON_CITY },
+					{ 29.5, 20.1, THE_EXODAR },
+					-- #endif
+					-- #if AFTER WRATH
+					{ 55.0, 69.6, STORMWIND_CITY },
+					-- #else
+					{ 45.8, 58.5, STORMWIND_CITY },
+					-- #endif
+					-- #if AFTER CATA
+					{ 48.44, 61.2, DARNASSUS },
+					{ 70.0, 29.4, ORGRIMMAR },
+					-- #else
+					{ 46.9, 56.9, DARNASSUS },
+					{ 66.6, 41.6, ORGRIMMAR },
+					-- #endif
+				},
+				["providers"] = {
+					{ "n", 5494 }, 	-- Catherine Leland <Fishing Supplier>
+					{ "n", 4574 },	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
+					{ "n", 3029 },	-- Sewa Mistrunner <Fishing Supplies>
+					{ "n", 3333 }, 	-- Shankys <Fishing Supplies>
+					{ "n", 5162 }, 	-- Tansy Puddlefizz <Fishing Supplier>
+					{ "n", 4222 }, 	-- Voloren <Fishing Supplies>
+					-- #if AFTER TBC
+					{ "n", 20121 }, 	-- Dekin <Fishing Supplies>
+					{ "n", 18347 }, 	-- Olirea <Fishing Supplies>
+					-- #endif
+				},]]
+			}, {
+				i(6533, {["isLimited"] = true, }),	-- Aquadynamic Fish Attractor
+				i(6532),	-- Bright Baubles
+				i(6256, {	-- Fishing Pole
+					-- #if AFTER 10.0.0
+					["collectible"] = false,
+					-- #endif
+				}),
+				i(6530),	-- Nightcrawlers
+				-- #if AFTER LEGION
+				i(136377, {["timeline"] = { ADDED_7_0_3 }}),	-- Oversized Bobber
+				-- #endif
+				i(6529),	-- Shiny Bauble
+				i(6365, {	-- Strong Fishing Pole
+					-- #if AFTER 10.0.0
+					["collectible"] = false,
+					-- #endif
+					["isLimited"] = true,
+				}),
+			})),
 			filter(ONE_HANDED_MACES, {
 				i(6360, {	-- Steelscale Crushfish
 					["description"] = "Can be caught in open water in the given zones.",
@@ -2243,17 +2670,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #if AFTER 10.0.0
 					["collectible"] = false,
 					-- #endif
-				}),
-				i(6256, {	-- Fishing Pole
-					-- #if AFTER 10.0.0
-					["collectible"] = false,
-					-- #endif
-				}),
-				i(6365, {	-- Strong Fishing Pole
-					-- #if AFTER 10.0.0
-					["collectible"] = false,
-					-- #endif
-					["isLimited"] = true,
 				}),
 			}),
 			filter(RECIPES, {
@@ -4253,7 +4669,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				})),
 			}),
 			-- #if AFTER MOP
-			filter(PROFESSION_EQUIPMENT, {
+			n(COMMON_VENDOR_ITEMS, {
 				i(85663, {	-- Herbalist's Spade
 					-- Danny Donkey: For some Blizzard reason Herbalism Suppliers does not sell this equipment.
 					["collectible"] = false,
@@ -4268,7 +4684,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
+			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
+			--[[["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
 			["coords"] = {
 				{ 57.6, 71.64, BOREAN_TUNDRA },
 				{ 57.6, 71.64, BOREAN_TUNDRA },
@@ -4294,7 +4712,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				{ 56.0, 46.2, ORGRIMMAR },
 				-- #endif
-			},
+			},]]
 		}, {
 			i(10648, {	-- Common Parchment
 				["timeline"] = { REMOVED_5_0_4 },
@@ -4440,241 +4858,344 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(43654),	-- Tome of the Dawn
 		}),
 		filter(GLYPHS, {
-			i(87891, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Afterlife
-			i(44955, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Arcane Blast / Glyph of Arcane Power [MOP+]
-			i(85683, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Aspect of the Beast
-			i(42901, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Aspect of the Viper / Glyph of Concussive Shot [CATA] / Glyph of Distracting Shot [MOP+]
-			i(41107, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),				-- Glyph of Avenging Wrath / Glyph of the Ascetic Crusader [CATA] / Glyph of Harsh Words [MOP+]
-			i(85684, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Black Ice
-			i(90715, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Blackout Kick
-			i(80586, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Bladed Judgment
-			i(44920, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Blast Wave / Glyph of Remove Curse [MOP+]
-			i(43425, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Blocking / Glyph of Shield Slam [CATA+]
-			i(85685, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Breath of Fire
-			i(80588, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Burning Anger
-			i(41517, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Chain Heal / Glyph of Unstable Earth [MOP+]
-			i(45781, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),				-- Glyph of Chaos Bolt / Glyph of Ember Tap [5.2.0+]
-			i(45625, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),				-- Glyph of Chimera Shot / Glyph of Chimaera Shot [WoD]
-			i(85687, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Clash
-			i(86541, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Confession
-			i(80587, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+]
-			i(87880, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Crackling Jade Lightning / Glyph of Nimble Brew [5.4.0+]
-			i(87278, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Direction
-			i(85689, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Enduring Healing Sphere
-			i(87892, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Fists of Fury
-			i(87896, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Fortuitous Spheres
-			i(87393, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Fetch
-			i(80581, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Focused Wrath
-			i(87893, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Fortifying Brew
-			i(93202, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Gateway Attunement
-			i(85691, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Guard
-			i(41097, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),				-- Glyph of Hammer of Wrath / Glyph of Templar's Verdict [MOP]
-			i(87276, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Holy Resurrection
-			i(87883, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of Honor
-			i(87884, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Jab
-			i(42909, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Improved Aspect of the Hawk / Glyph of the Hawk [3.1.0] / Glyph of the Dazzled Prey [CATA] / Glyph of Animal Bond [MOP+]
-			i(83096, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Incite
-			i(87894, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Leer of the Ox
-			i(87895, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Life Cocoon
-			i(45732, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),				-- Glyph of Kill Shot / Glyph of Aspect of the Cheetah [MOP+]
-			i(85692, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Mana Tea
-			i(87279, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Marking
-			i(83107, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Mass Exorcism
-			i(79513, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Mind Flay
-			i(87897, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Path of Blossoms / Glyph of Glyph of Paralysis [5.2.0+]
-			i(82345, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Rapid Rolling
-			i(85696, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Renewing Mists / Glyph of Renewing Mist [WOD]
-			i(80585, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Righteous Retreat
-			i(87885, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of Rising Tiger Kick
-			i(87392, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of Shadowy Friends
-			i(87898, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Sparring
-			i(85698, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Spinning Fire Blossom
-			i(85697, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Spinning Crane Kick
-			i(87887, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Spirit Roll
-			i(87899, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Stoneskin / Glyph of Detox [5.4.0+]
-			i(85699, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Surging Mist
-			i(81956, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of the Battle Healer
-			i(43362, {["timeline"]={ CREATED_3_0_2, ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of the Bear Cub
-			i(85221, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of the Blazing Trail
-			i(80584, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of the Falling Avenger
-			i(79538, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of the Heavens
-			i(87277, {["timeline"]={ ADDED_5_0_4 }}),								-- Glyph of The Val'kyr
-			i(43332, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Thorns / Glyph of Grace [MOP+]
-			i(87900, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Touch of Karma
-			i(84652, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Transcendence
-			i(87901, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Uplift / Glyph of Targeted Expulsion [5.4.0+]
-			i(79515, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Vampiric Embrace
-			i(87889, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Water Roll
-			i(87890, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Zen Flight
-			i(85695, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Zen Meditation
-			-- #if BEFORE WOD
-			i(43335, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
+			-- #if BEFORE LEGION
+			i(87891, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Afterlife
+			i(42897, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Aimed Shot / Glyph of Aspects [MOP+]
+			i(43316, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Aquatic Form
+			i(104109,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Angels
 			-- #endif
-			i(40906, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Scare Beast / Glyph of Stampede [MOP+]
-			i(43338, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Revive Pet
-			-- #if BEFORE WOD
-			i(43350, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Mend Pet / Glyph of Lesser Proportion [4.1.0+]
-			-- #endif
-			i(43354, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_1 }}),	-- Glyph of Possessed Strength
+			i(149755,{["timeline"]={ ADDED_7_2_5 }}),					-- Glyph of Angels (again)
+			-- #if BEFORE LEGION
+			i(44955, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Arcane Blast / Glyph of Arcane Power [MOP+]
 			i(43339, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Arcane Intellect / Glyph of the Porcupine [MOP+]
-			i(43364, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Slow Fall / Glyph of Arcane Language [MOP+]
-			i(43361, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of the Penguin
-			-- #if BEFORE WOD
-			i(43359, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Frost Armor / Glyph of Conjuring [CATA] / Glyph of Conjure Familiar [MOP+]
-			-- #endif
+			i(42735, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana [MOP]
+			i(42736, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Arcane Power / Glyph of Arcane Explosion [MOP+]
+			i(42898, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Arcane Shot / Glyph of Camouflage [MOP+]
+			i(85683, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Aspect of the Beast
+			i(42900, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Aspect of the Monkey / Glyph of Mending [3.1.0+]
+			i(42901, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Aspect of the Viper / Glyph of Concussive Shot [CATA] / Glyph of Distracting Shot [MOP+]
+			i(104133,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Astral Fixation
+			i(43381, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Astral Recall
+			i(41107, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Avenging Wrath / Glyph of the Ascetic Crusader [CATA] / Glyph of Harsh Words [MOP+]
+			i(42956, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Backstab / Glyph of Decoy [MOP+]
+			i(43420, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Barbaric Insults
+			i(43395, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Battle / Glyph of Mystic Shout [MOP+]
+			i(85684, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Black Ice
+			i(90715, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Blackout Kick
+			i(80586, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Bladed Judgment
+			i(44920, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blast Wave / Glyph of Remove Curse [MOP+]
+			i(43365, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blessing of Kings / Glyph of Contemplation [MOP+]
 			i(43340, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blessing of Might / Glyph of the Mounted King [MOP+]
-			i(43367, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Lay on Hands / Glyph of Flash of Light [MOP+]
+			-- #endif
 			i(43366, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Blessing of Wisdom / Glyph of Insight [CATA] /Glyph of Winged Vengeance [MOP+]
-			i(43342, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
-			i(43371, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Fortitude / Glyph of Borrowed Time [MOP+]
+			-- #if BEFORE LEGION
+			i(42737, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Blink
+			i(43425, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blocking / Glyph of Shield Slam [CATA+]
+			i(43396, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA] / Glyph of Bloodcurdling Shout [MOP+]
 			i(43379, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blurred Speed
-			i(43343, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Pick Pocket
-			-- #if BEFORE WOD
+			i(43536, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude [MOP+]
+			i(85685, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Breath of Fire
+			i(80588, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Burning Anger
+			i(41517, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Chain Heal / Glyph of Unstable Earth [MOP+]
+			-- #endif
+			i(43334, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon [MOP+]
+			-- #if BEFORE LEGION
+			i(45781, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Chaos Bolt / Glyph of Ember Tap [5.2.0+]
+			i(43397, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Charge / Glyph of Long Charge [CATA+]
+			i(45625, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Chimera Shot / Glyph of Chimaera Shot [WoD]
+			i(85687, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Clash
+			i(48720, {["timeline"]={ ADDED_3_2_0, REMOVED_6_0_2 }}),	-- Glyph of Claw / Glyph of Ferocious Bite
+			i(41104, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Cleansing / Glyph of Final Wrath [MOP+]
+			i(43414, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Cleaving / Glyph of Hindering Strikes [MOP+]
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104106,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of Condensation
+			i(86541, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Confession
+			i(41099, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Consecration
+			i(42455, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Corruption / Glyph of Siphon Life [MOP+]
+			-- #endif
+			i(80587, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+]
+			-- #if BEFORE LEGION
+			i(87880, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Crackling Jade Lightning / Glyph of Nimble Brew [5.4.0+]
+			i(41098, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath [MOP+]
+			i(43392, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Curse of Exhaustion
+			i(45804, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Dark Death / Glyph of Death Coil [CATA+]
+			i(43674, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Dash
+			i(43541, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Death Grip
+			i(42903, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Deterrence
+			i(87278, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Direction
+			i(45805, {["timeline"]={ ADDED_3_1_0, REMOVED_4_0_3 }}),	-- Glyph of Disease
+			i(42904, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Disengage
+			i(42397, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Dispel Magic / Glyph of Purify [MOP+]
+			i(43376, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Distract
+			i(104050,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Divine Shield
+			i(104276,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Enduring Deceit
+			i(104053,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }}),	-- Glyph of Eternal Earth
+			i(41108, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Divinity
 			i(43390, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Drain Soul / Glyph of Soul Consumption [MOP+]
 			-- #endif
-			i(43399, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Thunder Clap / Glyph of Unending Rage [MOP+]
-			i(43395, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Battle / Glyph of Mystic Shout [MOP+]
-			i(43397, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Charge / Glyph of Long Charge [CATA+]
-			i(43396, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA] / Glyph of Bloodcurdling Shout [MOP+]
-			i(41096, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Spiritual Attunement / Glyph of Divine Protection [CATA+]
-			i(42912, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Serpent Sting / Glyph of Tame Beast [MOP+]
-			i(41095, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath [MOP+]
-			i(40924, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Entangling Roots
-			-- #if BEFORE WOD
-			i(42736, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Arcane Power / Glyph of Arcane Explosion [MOP+]
-			i(43316, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Aquatic Form
-			-- #endif
-			i(43365, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Blessing of Kings / Glyph of Contemplation [MOP+]
-			i(43373, {["timeline"]={ ADDED_3_1_0 }}),					-- Glyph of Shackle Undead
-			i(43377, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Pick Lock
-			i(43389, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Unending Breath
-			i(43725, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ghost Wolf
-			-- #if BEFORE WOD
-			i(42898, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Arcane Shot / Glyph of Camouflage [MOP+]
-			i(43331, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming [MOP+]
-			i(43368, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sense Undead / Glyph of Truth [CATA] / Glyph of Seal of Blood [MOP+]
-			-- #endif
-			i(43357, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Fire Ward
-			i(43398, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Mocking Blow / Glyph of Demoralizing Shout [CATA] / Glyph of Gushing Wound [MOP+]
-			i(43386, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Water Shield / Glyph of the Arctic Wolf [CATA] / Glyph of the Spectral Wolf [MOP+]
-			i(48720, {["timeline"]={ ADDED_3_2_0, REMOVED_6_0_2 }}),	-- Glyph of Claw / Glyph of Ferocious Bite
-			i(42960, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Evasion
-			i(43418, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
-			i(42410, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Psychic Scream
-			i(41537, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider [MOP+]
-			i(42462, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Healthstone
-			i(41106, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Holy Light / Glyph of Divine Favor [CATA] / Glyph of Illumination [MOP]
-			i(42961, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Eviscerate / Glyph of Debilitation [MOP] / Glyph of Recovery [5.4.0+]
-			i(42398, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Fade
-			i(43423, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
-			i(41530, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova [3.3.0+]
-			i(40914, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Healing Touch
-			i(42735, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Arcane Missiles / Glyph of Loose Mana [MOP]
-			i(42900, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Aspect of the Monkey / Glyph of Mending [3.1.0+]
-			i(41092, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Judgement / Glyph of Double Jeopardy [MOP+]
-			i(42962, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Expose Armor
-			i(42400, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum [MOP+]
-			i(43417, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
-			i(41532, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear [MOP+]
-			i(42458, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Fear
-			i(43360, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Ward / Glyph of the Monkey [CATA+]
-			i(43376, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Distract
-			i(43380, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Vanish / Glyph of Poisons [CATA+]
-			i(43344, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Water Breathing / Glyph of Healing Storm [MOP+]
-			i(43391, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Kilrogg
-			i(40923, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Moonfire / Glyph of Savagery [MOP+]
-			i(42737, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Blink
-			i(41108, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Divinity
-			i(42964, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Garrote
-			i(42402, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Inner Fire
-			i(43427, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice [MOP+]
-			i(41536, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents [MOP+]
-			i(42465, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Imp / Glyph of Imp Swarm [MOP+]
-			i(42910, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot [CATA] / Glyph of No Escape [MOP+]
-			i(43351, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Feign Death / Glyph of Fireworks [MOP+]
-			i(43369, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of the Wise / Glyph of Justice [CATA] / Glyph of Fire From the Heavens [MOP+]
-			i(43381, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Astral Recall
-			i(43385, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Renewed Life / Glyph of Far Sight [MOP+]
-			i(43388, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Water Walking / Glyph of Totemic Encirclement [MOP+]
-			i(43392, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Curse of Exhaustion
-			i(43674, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Dash
-			i(42738, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Evocation
-			i(41100, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Righteous Defense / Glyph of Righteousness [CATA] / Glyph of the Luminous Charger [MOP+]
-			i(42966, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Gouge
-			i(42411, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Renew
-			i(40909, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rebirth
-			i(43422, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Overpower / Glyph of Die by the Sword [5.2.0+]
-			i(42746, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Icy Veins
-			i(42897, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Aimed Shot / Glyph of Aspects [MOP+]
-			i(43370, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Levitate
-			i(41104, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Cleansing / Glyph of Final Wrath [MOP+]
-			i(42415, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Mind Flay / Glyph of Dispel Magic [MOP+]
-			i(42970, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins [5.4.0+]
-			i(41547, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Shock
-			i(43424, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Revenge / Glyph of Hold the Line [MOP+]
-			i(42473, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Voidwalker / Glyph of Falling Meteor [MOP+]
-			i(40902, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rip / Glyph of Prowl [MOP+]
-			i(42903, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Deterrence
-			i(43355, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Pack / Glyph of Aspect of the Pack [CATA+]
-			i(42747, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Scorch
-			i(41099, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Consecration
-			i(42972, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush [MOP] / Glyph of Redirect [5.4.0+]
-			i(42416, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Smite
-			i(41533, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Healing Stream Totem
-			i(42466, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
-			i(43420, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Barbaric Insults
-			i(42904, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Disengage
-			i(41098, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Crusader Strike / Glyph of Avenging Wrath [MOP+]
-			i(42397, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Dispel Magic / Glyph of Purify [MOP+]
-			i(42973, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Slice and Dice / Glyph of Shiv [MOP+]
-			i(41535, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall [CATA+]
-			i(43414, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Cleaving / Glyph of Hindering Strikes [MOP+]
-			i(42470, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Soulstone
-			i(45760, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Pain Suppression / Glyph of Desperation [CATA+] / Glyph of Binding Heal [5.2.0+]
+			-- #if BEFORE BFA
 			i(45775, {["timeline"]={ ADDED_3_1_0, REMOVED_8_1_0 }}),	-- Glyph of Earth Shield / Glyph of Deluge [MOP+]
-			i(42905, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Freezing Trap
+			-- #endif
+			-- #if BEFORE LEGION
+			i(104131,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Elemental Familiars
+			i(85689, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Enduring Healing Sphere
+			i(40924, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Entangling Roots
+			i(42960, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Evasion
+			i(42961, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Eviscerate / Glyph of Debilitation [MOP] / Glyph of Recovery [5.4.0+]
+			i(42738, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Evocation
+			i(43416, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
 			i(41103, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Exorcism / Glyph of Blinding Light [MOP+]
-			i(43536, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Bone Shield / Glyph of Icebound Fortitude [MOP+]
+			i(42962, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Expose Armor
+			i(42398, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Fade
+			i(43342, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
+			i(42458, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Fear
 			i(42399, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Fear Ward
+			i(43351, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Feign Death / Glyph of Fireworks [MOP+]
+			i(104049,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }}),	-- Glyph of Festering Blood
+			i(87393, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Fetch
+			i(41530, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Fire Nova Totem / Glyph of Fire Nova [3.3.0+]
+			i(87892, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Fists of Fury
+			i(41531, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Flame Shock
+			i(41532, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Flametongue Weapon / Glyph of Wind Shear [MOP+]
+			i(104129,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Flaming Serpent
+			i(42400, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Flash Heal / Glyph of Inner Sanctum [MOP+]
+			i(87896, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Fortuitous Spheres
+			i(43357, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Fire Ward
+			i(80581, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Focused Wrath
+			i(87893, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Fortifying Brew
+			i(43371, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Fortitude / Glyph of Borrowed Time [MOP+]
+			i(42905, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Freezing Trap
+			i(43359, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Frost Armor / Glyph of Conjuring [CATA] / Glyph of Conjure Familiar [MOP+]
+			i(42741, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Nova
+			i(41547, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Shock
 			i(43543, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Strike / Glyph of Shifting Presences [MOP+]
-			i(41541, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Water Mastery / Glyph of Water Shield [CATA+]
-			i(42468, {["timeline"]={ ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Glyph of Shadowburn
-			i(45804, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Dark Death / Glyph of Death Coil [CATA+]
+			i(43360, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Ward / Glyph of the Monkey [CATA+]
+			i(42964, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Garrote
+			i(93202, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Gateway Attunement
+			i(43725, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ghost Wolf
+			i(42966, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Gouge
+			i(85691, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Guard
+			i(41095, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Hammer of Justice / Glyph of Holy Wrath [MOP+]
+			i(41097, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Hammer of Wrath / Glyph of Templar's Verdict [MOP]
+			i(43417, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
+			i(104051,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Hand of Sacrifice
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104123,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of Headhunting
+			i(41533, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Healing Stream Totem
+			i(40914, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Healing Touch
+			i(42461, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Health Funnel
+			i(42462, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Healthstone
+			i(43418, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
+			i(41106, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Holy Light / Glyph of Divine Favor [CATA] / Glyph of Illumination [MOP]
+			i(87276, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Holy Resurrection
+			-- #endif
+			i(87883, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Honor
+			-- #if BEFORE LEGION
+			i(42907, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Hunter's Mark / Glyph of Misdirection [CATA+]
+			i(42743, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Armor / Glyph of Pyroblast [CATA] / Glyph of Momentum [MOP+]
+			i(42744, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Block
+			i(43546, {["timeline"]={ ADDED_3_0_8, REMOVED_7_0_3 }}),	-- Glyph of Icy Touch
+			i(42746, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Icy Veins
+			i(42908, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap [MOP+]
+			i(42465, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Imp / Glyph of Imp Swarm [MOP+]
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104055,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }})),	-- Glyph of Impaling Throws
+			i(42909, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Improved Aspect of the Hawk / Glyph of the Hawk [3.1.0] / Glyph of the Dazzled Prey [CATA] / Glyph of Animal Bond [MOP+]
+			i(104124,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Improved Distraction
+			i(83096, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Incite
+			i(42402, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Inner Fire
+			-- #endif
+			i(40919, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Insect Swarm / Glyph of the Orca [MOP+] / Mark of the Orca [SL+]
+			i(104122,{["timeline"]={ ADDED_5_4_0 }}),					-- Glyph of Inspired Hymns
+			-- #if BEFORE LEGION
+			i(87884, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Jab
+			i(41092, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Judgement / Glyph of Double Jeopardy [MOP+]
+			i(43391, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Kilrogg
+			i(43367, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Lay on Hands / Glyph of Flash of Light [MOP+]
+			i(87894, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Leer of the Ox
+			i(41535, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall [CATA+]
+			i(43370, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Levitate
+			i(87895, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Life Cocoon
+			i(41536, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Lightning Bolt / Glyph of Telluric Currents [MOP+]
+			i(41537, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Lightning Shield / Glyph of the Lakestrider [MOP+]
+			-- #endif
+			i(104127,{["timeline"]={ ADDED_5_4_0 }}),					-- Glyph of Lingering Ancestors
+			-- #if BEFORE LEGION
+			i(45732, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Kill Shot / Glyph of Aspect of the Cheetah [MOP+]
+			i(104047,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }}),	-- Glyph of Loud Horn
 			i(42749, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Mage Armor / Glyph of Mana Gem [MOP+]
 			i(42750, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Mana Gem (Deleted with Cata - re-added in MoP using Glyph of Mage Armor spell ID)
-			i(43546, {["timeline"]={ ADDED_3_0_8, REMOVED_7_0_3 }}),	-- Glyph of Icy Touch
-			i(45805, {["timeline"]={ ADDED_3_1_0, REMOVED_4_0_3 }}),	-- Glyph of Disease
-			i(42974, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Sprint
-			i(43416, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
-			i(43541, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Death Grip
-
-			i(89868, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Cheetah (CI!)
-
-			i(40913, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rejuvenation
-			i(42741, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Frost Nova
-			i(42907, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Hunter's Mark / Glyph of Misdirection [CATA+]
-			i(42956, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Backstab / Glyph of Decoy [MOP+]
-			i(42408, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Power Word: Shield
-			i(40922, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Wrath / Glyph of Nature's Grasp [MOP+]
-			i(43413, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed [MOP+]
-			i(41531, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Flame Shock
-			i(42455, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Corruption / Glyph of Siphon Life [MOP+]
+			i(85692, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Mana Tea
+			i(87279, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Marking
+			i(83107, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Mass Exorcism
 			i(40897, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Maul
-
-			-- #if BEFORE WOD
-			i(42743, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Armor / Glyph of Pyroblast [CATA] / Glyph of Momentum [MOP+]
-			i(42461, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Health Funnel
-			i(42908, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap [MOP+]
-			i(40919, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Insect Swarm / Glyph of the Orca [MOP+] / Mark of the Orca [SL+] (CI!)
-			i(43334, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon [MOP+]
-			i(41540, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash [WRATH+]
-			i(43378, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Safe Fall
-			i(40916, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Starfire / Glyph of the Moonbeast [MOP] / Glyph of Guided Stars [5.4.0+] / Glyph of Untamed Stars [6.1.0+]
-			i(42744, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Block
-			i(45622, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Monsoon / Glyph of Cyclone [MOP+]
-			i(45768, {["timeline"]={ ADDED_3_1_0 }}),					-- Glyph of Mutilate / Glyph of Disguise [MOP+]
-			i(45776, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
 			-- #endif
+			i(43350, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Mend Pet / Glyph of Lesser Proportion [4.1.0+]
+			-- #if BEFORE LEGION
+			i(42415, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Mind Flay / Glyph of Dispel Magic [MOP+]
+			i(79513, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Mind Flay
+			-- #endif
+			i(43398, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Mocking Blow / Glyph of Demoralizing Shout [CATA] / Glyph of Gushing Wound [MOP+]
+			-- #if BEFORE LEGION
+			i(45622, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Monsoon / Glyph of Cyclone [MOP+]
+			i(40923, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Moonfire / Glyph of Savagery [MOP+]
+			i(42910, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Multi-Shot / Glyph of Silencing Shot [CATA] / Glyph of No Escape [MOP+]
+			-- #endif
+			i(45768, {["timeline"]={ ADDED_3_1_0 }}),					-- Glyph of Mutilate / Glyph of Disguise [MOP+]
+			-- #if BEFORE LEGION
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104103,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of One with Nature
+			i(43422, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Overpower / Glyph of Die by the Sword [5.2.0+]
+			i(45760, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Pain Suppression / Glyph of Desperation [CATA+] / Glyph of Binding Heal [5.2.0+]
+			i(87897, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Path of Blossoms / Glyph of Glyph of Paralysis [5.2.0+]
+			i(43377, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Pick Lock
+			i(43343, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Pick Pocket
+			-- #endif
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104108,{["timeline"]={ ADDED_5_4_0 }})),	-- Glyph of Pillar of Light
+			-- #if BEFORE LEGION
+			i(43354, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_1 }}),	-- Glyph of Possessed Strength
+			i(42408, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Power Word: Shield
+			i(42410, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Psychic Scream
+			i(104052,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Purging
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104134,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of Rain of Frogs
+			i(43413, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rapid Charge / Glyph of Enraged Speed [MOP+]
+			i(82345, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Rapid Rolling
+			i(40909, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rebirth
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104048,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of Regenerative Magic
+			i(40913, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rejuvenation
+			i(43423, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
+			i(42411, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Renew
+			i(43385, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Renewed Life / Glyph of Far Sight [MOP+]
+			i(85696, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Renewing Mists / Glyph of Renewing Mist [WOD]
+			i(43424, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Revenge / Glyph of Hold the Line [MOP+]
+			i(43338, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Revive Pet
+			-- #endif
+			i(41100, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Righteous Defense / Glyph of Righteousness [CATA] / Glyph of the Luminous Charger [MOP+]
+			-- #if BEFORE LEGION
+			i(80585, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Righteous Retreat
+			i(40902, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Rip / Glyph of Prowl [MOP+]
+			-- #endif
+			i(87885, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Rising Tiger Kick
+			-- #if BEFORE LEGION
+			i(43378, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Safe Fall
+			i(42970, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sap / Glyph of Hemorrhaging Veins [5.4.0+]
+			i(40906, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Scare Beast / Glyph of Stampede [MOP+]
+			i(42747, {["timeline"]={ ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Glyph of Scorch
+			i(42466, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
+			i(43368, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sense Undead / Glyph of Truth [CATA] / Glyph of Seal of Blood [MOP+]
+			i(42912, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Serpent Sting / Glyph of Tame Beast [MOP+]
+			-- #endif
+			i(43373, {["timeline"]={ ADDED_3_1_0 }}),					-- Glyph of Shackle Undead
+			-- #if BEFORE MOP
+			i(42468, {["timeline"]={ ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Glyph of Shadowburn
+			-- #endif
+			i(87392, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of Shadowy Friends
+			-- #if BEFORE LEGION
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104121,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }})),	-- Glyph of Shifted Appearances
+			i(42972, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Sinister Strike / Glyph of Adrenaline Rush [MOP] / Glyph of Redirect [5.4.0+]
+			i(42973, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Slice and Dice / Glyph of Shiv [MOP+]
+			i(43364, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Slow Fall / Glyph of Arcane Language [MOP+]
+			i(42416, {["timeline"]={ ADDED_3_1_0, REMOVED_6_0_2 }}),	-- Glyph of Smite
+			i(42470, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Soulstone
+			i(87898, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Sparring
+			i(85698, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Spinning Fire Blossom
+			i(85697, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Spinning Crane Kick
+			-- #endif
+			i(104126,{["timeline"]={ ADDED_5_4_0 }}),					-- Glyph of Spirit Raptors
+			-- #if BEFORE LEGION
+			i(87887, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Spirit Roll
+			i(104128,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Spirit Wolf
+			i(41096, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Spiritual Attunement / Glyph of Divine Protection [CATA+]
+			i(42974, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Sprint
+			i(40916, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Starfire / Glyph of the Moonbeast [MOP] / Glyph of Guided Stars [5.4.0+] / Glyph of Untamed Stars [6.1.0+]
+			i(87899, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Stoneskin / Glyph of Detox [5.4.0+]
+			i(41540, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash [WRATH+]
+			i(43427, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Sunder Armor / Glyph of Hoarse Voice [MOP+]
+			i(85699, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Surging Mist
+			i(104046,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of Swift Death
+			i(81956, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of the Battle Healer
+			i(43362, {["timeline"]={ CREATED_3_0_2, ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of the Bear Cub
+			-- #endif
+			i(85221, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Blazing Trail
+			i(89868, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Cheetah
+			-- #if BEFORE LEGION
+			i(104130,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of the Compy
+			i(104056,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }}),	-- Glyph of the Executor
+			i(104107,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of the Exorcist
+			i(80584, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of the Falling Avenger
+			-- #endif
+			i(79538, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Heavens
+			-- #if BEFORE LEGION
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104270,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of the Lean Pack
+			i(104101,{["timeline"]={ ADDED_5_4_0, REMOVED_6_0_2 }}),	-- Glyph of the Long Winter
+			i(43355, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Pack / Glyph of Aspect of the Pack [CATA+]
+			i(43361, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of the Penguin
+			i(104135,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of the Raging Whirlwind
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104137,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }})),	-- Glyph of the Watchful Eye
+			-- #endif
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104120,{["timeline"]={ ADDED_5_4_0 }})),	-- Glyph of the Sha
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104099,{["timeline"]={ ADDED_5_4_0 }})),	-- Glyph of the Skeleton
+			-- #if BEFORE LEGION
+			i(104102,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of the Sprouting Mushroom
+			i(104136,{["timeline"]={ ADDED_5_4_0, REMOVED_7_0_3 }}),	-- Glyph of the Subtle Defender
+			-- #endif
+			i(104104,{["timeline"]={ ADDED_5_4_0 }}),					-- Glyph of the Unbound Elemental
+			i(87277, {["timeline"]={ ADDED_5_0_4 }}),					-- Glyph of the Val'kyr
+			i(104138,{["timeline"]={ ADDED_5_4_0 }}),					-- Glyph of the Weaponmaster
+			-- #if BEFORE LEGION
+			i(43335, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature [MOP+]
+			-- #endif
+			i(43369, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of the Wise / Glyph of Justice [CATA] / Glyph of Fire From the Heavens [MOP+]
+			-- #if BEFORE LEGION
+			i(43332, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Thorns / Glyph of Grace [MOP+]
+			i(43399, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Thunder Clap / Glyph of Unending Rage [MOP+]
+			i(87900, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Touch of Karma
+			i(45776, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
+			i(84652, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Transcendence
+			i(43331, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Unburdened Rebirth / Glyph of Blooming [MOP+]
+			i(43389, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Unending Breath
+			i(87901, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),	-- Glyph of Uplift / Glyph of Targeted Expulsion [5.4.0+]
+			i(79515, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Vampiric Embrace
+			i(43380, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Vanish / Glyph of Poisons [CATA+]
+			i(42473, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Voidwalker / Glyph of Falling Meteor [MOP+]
+			i(43344, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Water Breathing / Glyph of Healing Storm [MOP+]
+			i(41541, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Water Mastery / Glyph of Water Shield [CATA+]
+			i(87889, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Water Roll
+			-- #endif
+			i(43386, {["timeline"]={ ADDED_3_0_2 }}),					-- Glyph of Water Shield / Glyph of the Arctic Wolf [CATA] / Glyph of the Spectral Wolf [MOP+]
+			-- #if BEFORE LEGION
+			i(43388, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Water Walking / Glyph of Totemic Encirclement [MOP+]
+			i(40922, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),	-- Glyph of Wrath / Glyph of Nature's Grasp [MOP+]
+			i(87890, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Zen Flight
+			i(85695, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),	-- Glyph of Zen Meditation
+			-- #endif
+		}),
+		filter(MISC, {
+			i(3012),	-- Scroll of Agility
+			i(1477),	-- Scroll of Agility II
+			i(4425),	-- Scroll of Agility III
+			i(10309),	-- Scroll of Agility IV
+			i(27498),	-- Scroll of Agility V
+			i(955),	-- Scroll of Intellect
+			i(2290),	-- Scroll of Intellect II
+			i(4419),	-- Scroll of Intellect III
+			i(10308),	-- Scroll of Intellect IV
+			i(27499),	-- Scroll of Intellect V
+			i(37118),	-- Scroll of Recall
+			i(44314),	-- Scroll of Recall II
+			i(1180),	-- Scroll of Stamina
+			i(1711),	-- Scroll of Stamina II
+			i(4422),	-- Scroll of Stamina III
+			i(10307),	-- Scroll of Stamina IV
+			i(27502),	-- Scroll of Stamina V
+			i(33461),	-- Scroll of Stamina VI
+			i(954),	-- Scroll of Strength
+			i(2289),	-- Scroll of Strength II
+			i(4426),	-- Scroll of Strength III
+			i(10310),	-- Scroll of Strength IV
+			i(27503),	-- Scroll of Strength V
+			i(1181),	-- Scroll of Versatility
+			i(1712),	-- Scroll of Versatility II
+			i(4424),	-- Scroll of Versatility III
+			i(10306),	-- Scroll of Versatility IV
+			i(27501),	-- Scroll of Versatility V
+			i(33460),	-- Scroll of Versatility VI
 		}),
 		-- #if AFTER 10.0.7
 		filter(STAVES, {
@@ -4750,10 +5271,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	-- #endif
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
-		filter(COSMETIC, {
-			i(204404, {["timeline"] = { ADDED_10_0_7 }}),	-- Square Holders
-		}),
-		category(167, {	-- Crowns
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["description"] = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
+			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
+			--[[["providers"] = {
+				{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
+				{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
+				{ "n", 19065},	-- Inessera <Jewelcrafting Supplies>
+				{ "n", 18751},	-- Kalaen <Jewelcrafting Trainer>
+				{ "n", 18774},	-- Tatiana <Jewelcrafting Trainer>
+				-- #if AFTER WRATH
+				{ "n", 28721},	-- Tiffany Cartier <Jewelcrafting Supplies>
+				-- #endif
+				-- #if AFTER 3.1.0
+				{ "n", 33637},	-- Kirembri Silvermane <Jewelcrafting Trainer>
+				-- #endif
+				-- #if AFTER CATA
+				{ "n", 52584},	-- Laida Gembold <Jewelcrafting Supplies>
+				{ "n", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
+				{ "n", 52658},	-- Paku Cloudchaser <Jewelcrafting Supplies>
+				{ "n", 52588},	-- Sara Lanner <Jewelcrafting Supplies>
+				{ "n", 52644},	-- Tarien Silverdew <Jewelcrafting Supplies>
+				{ "n", 44583},	-- Terrance Denman <Jewelcrafting Supplies>
+				-- #endif
+			},]]
+		}, {
+			-- #if AFTER CATA
+			i(52188, { ["timeline"] = { ADDED_4_0_3 } }),	-- Jeweler's Setting
+			-- #endif
+			i(20815, {["collectible"] = false}),	-- Jeweler's Toolset/-Kit
+			i(20824, {["timeline"] = { REMOVED_5_0_4 }}),	-- Simple Grinder
+		})),
+		n(ARMOR, {
 			i(21774),	-- Emerald Crown of Destruction
 			i(20832),	-- Moonsoul Crown
 			i(20969),	-- Ruby Crown of Restoration
@@ -4794,15 +5343,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(20833),	-- Wicked Moonstone Ring
 			i(21931),	-- Woven Copper Ring
 		}),
-		filter(FIST_WEAPONS, {
-			i(20954),	-- Heavy Iron Knuckles
-		}),
-		category(168, {	-- Materials
-			i(20817),	-- Bronze Setting
-			i(20816),	-- Delicate Copper Wire
-			i(20963),	-- Mithril Filigree
-			i(21752),	-- Thorium Setting
-		}),
 		filter(MISC, {
 			i(25880),	-- Coarse Stone Statue
 			i(25883),	-- Dense Stone Statue
@@ -4812,9 +5352,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		filter(NECK_F, {
 			i(20830),	-- Amulet of the Moon
-			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
-				["timeline"] = { ADDED_3_1_0 },
-			})),
 			i(21755),	-- Aquamarine Pendant of the Warrior
 			i(20909),	-- Barbaric Iron Collar
 			i(30419),	-- Brilliant Necklace
@@ -4824,7 +5361,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(20966),	-- Jade Pendant of Blasting
 			i(21791),	-- Living Emerald Pendant
 			i(25438),	-- Malachite Pendant
-			i(21792),	-- Necklace of the Diamond Tower
 			i(21766),	-- Opal Necklace of Impact
 			i(21934),	-- Ornate Tigerseye Necklace
 			i(20950),	-- Pendant of the Agate Shield
@@ -4832,8 +5368,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(21790),	-- Sapphire Pendant of Winter Night
 			i(21933),	-- Thick Bronze Necklace
 		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(20815, {["collectible"] = false}),	-- Jeweler's Toolset/-Kit
+		filter(REAGENTS, {
+			i(20817),	-- Bronze Setting
+			i(20816),	-- Delicate Copper Wire
+			i(20963),	-- Mithril Filigree
+			i(21752),	-- Thorium Setting
+		}),
+		filter(TRINKET_F, {
+			i(21784),	-- Figurine - Black Diamond Crab
+			i(21758),	-- Figurine - Black Pearl Panther
+			i(21789),	-- Figurine - Dark Iron Scorpid
+			i(21777),	-- Figurine - Emerald Owl
+			i(21756),	-- Figurine - Golden Hare
+			i(21748),	-- Figurine - Jade Owl
+			i(21769),	-- Figurine - Ruby Serpent
+			i(21763),	-- Figurine - Truesilver Boar
+			i(21760),	-- Figurine - Truesilver Crab
+		}),
+		n(WEAPONS, {
+			i(20954),	-- Heavy Iron Knuckles
+		}),
+		filter(COSMETIC, {
+			i(204404, {["timeline"] = { ADDED_10_0_7 }}),	-- Square Holders
+		}),
+		filter(NECK_F, {
+			applyclassicphase(WRATH_PHASE_ONE, i(45627, {	-- Amulet of Truesight
+				["timeline"] = { ADDED_3_1_0 },
+			})),
 		}),
 		header(HEADERS.Spell, 31212, {	-- Prospecting
 			-- Note: Neither Gold, Silver nor Truesilver can be prospected.
@@ -4883,17 +5444,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["provider"] = { "i", 2770 },	-- Copper Ore
 			}),
 		}),
-		filter(TRINKET_F, {
-			i(21784),	-- Figurine - Black Diamond Crab
-			i(21758),	-- Figurine - Black Pearl Panther
-			i(21789),	-- Figurine - Dark Iron Scorpid
-			i(21777),	-- Figurine - Emerald Owl
-			i(21756),	-- Figurine - Golden Hare
-			i(21748),	-- Figurine - Jade Owl
-			i(21769),	-- Figurine - Ruby Serpent
-			i(21763),	-- Figurine - Truesilver Boar
-			i(21760),	-- Figurine - Truesilver Crab
-		}),
 		n(WEAPONS, {
 			i(206505, {["timeline"] = { ADDED_10_1_5 }}),	-- Frostwyrm's Frigid Stare
 			i(206504, {["timeline"] = { ADDED_10_1_5 }}),	-- Frostwyrm's Icy Gaze
@@ -4902,6 +5452,80 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	-- #endif
 	prof(LEATHERWORKING, {
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				{
+					i(4289, {	-- Salt
+						["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
+						--[[["providers"] = {
+							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
+							{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
+							{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
+							{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
+							{ "n", 3366},	-- Tamar <Leatherworking Supplies>
+							-- #if AFTER TBC
+							{ "n", 16748},	-- Haferet <Leatherworking Supplies>
+							{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
+							-- #endif
+							-- #if AFTER CATA
+							{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
+							-- #else
+							{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+							-- #endif
+						},]]
+					}),
+				},
+				sharedData({
+					["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
+					--[[["providers"] = {
+						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
+						{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
+						{ "n", 3364},	-- Borya <Tailoring Supplies>
+						{ "n", 4168},	-- Elynna <Tailoring Supplies>
+						{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
+						{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
+						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
+						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
+						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
+						{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
+						{ "n", 3366},	-- Tamar <Leatherworking Supplies>
+						-- #if AFTER TBC
+						{ "n", 18754},	-- Barim Spilthoof <Leatherworking Trainer>
+						{ "n", 18771},	-- Brumman <Leatherworking Trainer>
+						{ "n", 19196},	-- Cro Threadstrong <Leatherworking Supplies>
+						{ "n", 18749},	-- Dalinna <Tailoring Trainer>
+						{ "n", 16638},	-- Deynna <Tailoring Supplies>
+						{ "n", 19213},	-- Eiin <Specialty Tailoring Supplies>
+						{ "n", 16748},	-- Haferet <Leatherworking Supplies>
+						{ "n", 18772},	-- Hama <Tailoring Trainer>
+						{ "n", 16767},	-- Neii <Tailoring Supplies>
+						{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
+						-- #endif
+						-- #if AFTER WRATH
+						{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
+						-- #endif
+						-- #if AFTER CATA
+						{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
+						-- #endif
+					},]]
+				}, {
+					i(2325),	-- Black Dye
+					i(6260),	-- Blue Dye
+					i(2605),	-- Green Dye
+					i(4340),	-- Grey Dye
+					i(4342),	-- Purple Dye
+					i(2604),	-- Red Dye
+					i(2320),	-- Coarse Thread
+					i(2321),	-- Fine Thread
+					i(4291),	-- Silken Thread
+					i(8343),	-- Heavy Silken Thread
+					i(14341),	-- Rune Thread
+				})
+			)
+		}),
 		-- #if BEFORE TBC
 		prof(10656, {	-- Dragonscale Leatherworking
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
@@ -5645,7 +6269,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(MINING, {
 		["description"] = "Mining veins are usually found on uneven terrain and mountainsides as well as inside caves. It is beneficial to mine all veins in the area even if you only need specific ore because the node spawns are often connected.",
 		["groups"] = {
-			header(HEADERS.Spell, 2575, {	-- Mining
+			spell(2575, {	-- Mining
 				["groups"] = appendAllGroups(
 					{
 						-- Nodes:
@@ -6976,7 +7600,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		-- #endif
 		["groups"] = {
-			filter(PROFESSION_EQUIPMENT, {
+			n(COMMON_VENDOR_ITEMS, {
 				i(7005, {	-- Skinning Knife
 					["collectible"] = false,
 					["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
@@ -7717,6 +8341,51 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22251)), -- Cenarion Herb Bag
 			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)), -- Enchanted Runecloth Bag
 			applyclassicphase(PHASE_FIVE, i(22252)), -- Satchel of Cenarius
+		}),
+		n(COMMON_VENDOR_ITEMS, {
+			["groups"] = appendAllGroups(
+				{	-- Danny Donkey: These are shared with Leatherworking.
+					i(2325),	-- Black Dye
+					i(6260),	-- Blue Dye
+					i(2605),	-- Green Dye
+					i(4340),	-- Grey Dye
+					i(4342),	-- Purple Dye
+					i(2604),	-- Red Dye
+					i(2320),	-- Coarse Thread
+					i(2321),	-- Fine Thread
+					i(4291),	-- Silken Thread
+					i(8343),	-- Heavy Silken Thread
+					i(14341),	-- Rune Thread
+				},
+				sharedData({
+					["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
+					--[[["providers"] = {
+						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
+						{ "n", 3364},	-- Borya <Tailoring Supplies>
+						{ "n", 4168},	-- Elynna <Tailoring Supplies>
+						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
+						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
+						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
+						-- #if AFTER TBC
+						{ "n", 18749},	-- Dalinna <Tailoring Trainer>
+						{ "n", 16638},	-- Deynna <Tailoring Supplies>
+						{ "n", 19213},	-- Eiin <Specialty Tailoring Supplies>
+						{ "n", 18772},	-- Hama <Tailoring Trainer>
+						{ "n", 16767},	-- Neii <Tailoring Supplies>
+						-- #endif
+						-- #if AFTER WRATH
+						{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
+						-- #endif
+					},]]
+				}, {
+					i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
+					i(6261),	-- Orange Dye (Only used in Tailoring)
+					i(10290),	-- Pink Dye (Only used in Tailoring)
+					i(4341),	-- Yellow Dye (Only used in Tailoring)
+				})
+			)
 		}),
 		filter(MISC, {
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18258, {["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 }})),	-- Gordok Ogre Suit

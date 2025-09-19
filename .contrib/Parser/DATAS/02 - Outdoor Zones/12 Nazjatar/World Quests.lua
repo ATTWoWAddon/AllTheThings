@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			q(55884),	-- Infestation of Madness
 			q(56121),	-- Jumping Jellies
 			q(55900),	-- Kassar, Wielder of Dark Blades
-			q(56389),	-- Kelpstone
+			petbattle(q(56389)),	-- Kelpstone
 			q(56023),	-- Leylocked Chest
 			q(56024),	-- Leylocked Chest
 			q(56025),	-- Leylocked Chest

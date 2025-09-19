@@ -11,5 +11,6 @@ PROFESSIONS = createHeader({
 		es = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Depuración.",
 		mx = "Esta sección solo mostrará las profesiones de tu personaje actual fuera del modo Cuenta y Debug.",
 		cn = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
+		ru = "Этот раздел будет отображать только профессии вашего текущего персонажа, если не включен Режим Аккаунта или Отладки.",
 	},
 });

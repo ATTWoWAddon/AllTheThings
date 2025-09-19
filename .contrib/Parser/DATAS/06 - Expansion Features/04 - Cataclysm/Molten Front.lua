@@ -298,6 +298,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
+			n(EXPLORATION, {
+				visit_exploration(5738,{coord={46.6,85.3,THE_MOLTEN_FRONT}}),	-- Malfurion's Breach
+				visit_exploration(5739,{coord={51.8,62.6,THE_MOLTEN_FRONT}}),	-- Ashen Fields
+				visit_exploration(5740,{coord={52.3,59.0,THE_MOLTEN_FRONT}}),	-- Magma Springs
+				visit_exploration(5741,{coord={57.1,49.4,THE_MOLTEN_FRONT}}),	-- Igneous Depths
+				visit_exploration(5742,{coord={59.1,64.3,THE_MOLTEN_FRONT}}),	-- Forlorn Spire
+				visit_exploration(5743,{coord={68.3,59.0,THE_MOLTEN_FRONT}}),	-- The Widow's Clutch
+				visit_exploration(5744,{coord={72.3,42.2,THE_MOLTEN_FRONT}}),	-- Wildflame Point
+				visit_exploration(5745,{coord={42.6,80.0,THE_MOLTEN_FRONT}}),	-- The Furnace
+				visit_exploration(5746,{coord={33.9,67.4,THE_MOLTEN_FRONT}}),	-- The Molten Flow
+				visit_exploration(5748,{coord={34.6,50.6,THE_MOLTEN_FRONT}}),	-- Fireplume Peak
+				visit_exploration(5749,{coord={50.2,33.7,THE_MOLTEN_FRONT}}),	-- Ragnaros' Reach
+			}),
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill
 					["sourceQuest"] = 29281,	-- Additional Armaments

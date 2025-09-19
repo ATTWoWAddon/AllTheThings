@@ -2329,8 +2329,8 @@ root(ROOTS.Zones, {
 								}),
 							}, {	-- Revered
 								i(29115),	-- Consortium Blaster
-								i(33156),	-- Design: Crimson Sun (RECIPE!)
-								i(33305),	-- Design: Don Julio's Heart (RECIPE!)
+								i(33156, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Crimson Sun (RECIPE!)
+								i(33305, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Don Julio's Heart (RECIPE!)
 								i(24178),	-- Design: Pendant of the Null Rune (RECIPE!)
 								i(138796, {	-- Illusion: Executioner (ILLUSION!)
 									["timeline"] = { ADDED_7_0_3 },
@@ -2341,7 +2341,8 @@ root(ROOTS.Zones, {
 								i(29117),	-- Stormspire Vest
 							}, {	-- Exalted
 								i(31776),	-- Consortium Tabard
-								i(33622),	-- Design: Relentless Earthstorm Diamond (RECIPE!)
+								i(32412, {["timeline"] = {ADDED_2_1_0, REMOVED_2_2_0}}),	-- Design: Relentless Earthstorm Diamond (RECIPE!)
+								i(33622, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Relentless Earthstorm Diamond (RECIPE!)
 								i(29121),	-- Guile of Khoraazi
 								i(29119),	-- Haramad's Bargain
 								i(29122),	-- Nether Runner's Cowl
@@ -2771,7 +2772,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(24162, {	-- Design: Arcane Khorium Band
+					i(24162, {	-- Design: Arcane Khorium Band (RECIPE!)
 						["cr"] = 18866,	-- Mageslayer
 					}),
 					n(20520, {	-- Ethereum Prisoner (multiple named mobs with the same ID once spawned)

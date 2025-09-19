@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ZONE_DROPS, {
 		i(228963, {	-- Unfamiliar Emblem (QS!)
 			["timeline"] = { ADDED_11_1_7 },
@@ -11,10 +11,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				230021,	-- Defias Lookout
 				230020,	-- Defias Ringleader
 			},
-		}),
-		i(231757, {	-- Fractured Spark of Starlight
-			-- TODO: need more data for more sources. During ptr was looted from one of delve run.
-			["timeline"] = { ADDED_11_2_0 },
 		}),
 	}),
 	n(ZONE_REWARDS, {
@@ -86,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				i(225638),	-- Spelunker's Waning Candle
 			}),
 		}),
-		filter(MISC, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 			i(237014),	-- Severed Threads Commendation [1500 Rep]
 			i(244848, { ["timeline"] = { ADDED_11_1_7 } }),	-- Severed Threads Commendation [100 Rep]
 		})),
@@ -175,4 +171,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
 	}),
-})));
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	n(WORLD_QUESTS, {
+		m(KHAZ_ALGAR, {
+			q(83280, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #1
+			q(83281, name(HEADERS.Item,228361,{["isWeekly"]=true,})),	-- Granted additional reward from weekly caches #2
+		}),
+	}),
+}));

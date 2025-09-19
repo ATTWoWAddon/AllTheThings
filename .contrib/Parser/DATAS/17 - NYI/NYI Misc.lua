@@ -895,7 +895,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(186394),	-- Item Ehancement Matrix
 			i(186443),	-- Item Enhancement Kit
 			i(186389),	-- Jailer's Stygian Badge
-			i(184823),	-- Junk Mail
 			i(184824),	-- Junk Mail
 			i(184825),	-- Junk Mail
 			i(187434),	-- Lightseed Sapling
@@ -1063,7 +1062,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(191053),	-- 10.0 Food/Drink Template - Drink Only - Level 70 - Required Level 65
 			i(191050),	-- 10.0 Food/Drink Template - Food Only - Level 65 - Required Level 60
 			i(191051),	-- 10.0 Food/Drink Template - Food Only - Level 70 - Required Level 65
-			i(200282),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 			i(194442),	-- Activity Map: Apex Canopy
 			i(201834),	-- Add Keystone Affix: Thundering
 			i(191667),	-- Aged Key
@@ -1348,7 +1346,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(204885),	-- Boulder Breakdown Mixture
 			i(205220),	-- Corroded Key
 			i(204890),	-- Dampening Emitter
-			i(205198),	-- Detailed Titan Key
+			i(205198, {_wipe={"spellID"}}),	-- Detailed Titan Key
 			i(206026),	-- Ensemble: Enmity Hood and Cloak
 			i(205691),	-- Hypnotic Murloc Lure
 			i(204886),	-- Insulating Embershard
@@ -1886,7 +1884,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(235627),	-- Scribbles' Favorite Candies
 			i(230990),	-- Set Keystone Map: Operation: Floodgate
 			i(231787),	-- Vigilante's Disposable Falling Shadow Grapple Gun
-			i(236651),	-- Vince's Old Left Shoe
 			i(229810),	-- Vintage Kaja'Cola Can
 			i(236956),	-- Void-Touched Valorstone
 			i(235713),	-- Weird Sand

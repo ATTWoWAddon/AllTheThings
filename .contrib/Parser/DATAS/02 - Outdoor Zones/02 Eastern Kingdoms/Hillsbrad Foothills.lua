@@ -3291,10 +3291,10 @@ Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
+						applyclassicphase(TBC_PHASE_ONE, i(20971, {	-- Design: Heavy Iron Knuckles (RECIPE!)
+							["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
-						}),
+						})),
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -3451,14 +3451,14 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
+						applyclassicphase(TBC_PHASE_ONE, i(20973, {	-- Design: Blazing Citrine Ring (RECIPE!)
+							["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
-						}),
-						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
+						})),
+						applyclassicphase(TBC_PHASE_ONE, i(20971, {	-- Design: Heavy Iron Knuckles (RECIPE!)
+							["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
-						}),
+						})),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
 							["isLimited"] = true,

@@ -44,8 +44,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			explorationHeader({
+				visit_exploration(5150,{coord={64.5,28.4,STORMWIND_CITY}}),	-- Dwarven District
+				visit_exploration(6292,{coord={82.2,36.0,STORMWIND_CITY}}),	-- Stormwind Keep
 				visit_exploration(5390,{coord={50.2,72.7,STORMWIND_CITY}}),	-- The Canals
 				visit_exploration(5148,{coord={61.4,74.8,STORMWIND_CITY}}),	-- Trade District
+				visit_exploration(10523,{coord={47.2,92.1,STORMWIND_CITY}}),	-- Wizard's Sanctum
 			}),
 			n(FACTIONS, {
 				faction(FACTION_STORMWIND, {	-- Stormwind
@@ -620,7 +623,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = appendGroups(CLASSIC_INSCRIPTION, {
+						["groups"] = appendGroups(
+							WRATH_INSCRIPTION,
+							-- #if AFTER CATA
+							CATA_INSCRIPTION,
+							-- #endif
+							{
 							i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
@@ -632,13 +640,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
-						["timeline"] = { ADDED_4_0_1 },
+						["timeline"] = { ADDED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(CLASSIC_JEWELCRAFTING, {
 							r(404740, {	-- Cataclysm Crushing
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-						},
+						}),
 					}),
 				}),
 				-- #endif
@@ -4720,25 +4728,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
-					n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
-						["coords"] = {
-							-- #if AFTER WRATH
-							{ 53.2, 81.6, STORMWIND_CITY },
-							-- #else
-							{ 43.4, 74.0, STORMWIND_CITY },
-							-- #endif
-						},
-						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
-						["groups"] = {
-							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
-								["isLimited"] = true,
-							}),
-							i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-								["isLimited"] = true,
-							}),
-						},
-					}),
+				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 53.2, 81.6, STORMWIND_CITY },
+						-- #else
+						{ 43.4, 74.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER CATA
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					-- #endif
+					["groups"] = {
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
+							["isLimited"] = true,
+						}),
+					},
+				}),
 				n(1315, {	-- Allan Hafgan <Staves Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4929,27 +4939,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3423),	-- Bouquet Of White Roses
 						i(3419),	-- Red Rose
 						i(3421),	-- Simple Wildflowers
-					},
-				}),
-				n(5519, {	-- Billibub Cogspinner <Engineering Supplies>
-					["coords"] = {
-						-- #if AFTER 3.0.2
-						{ 63.07, 31.97, STORMWIND_CITY },
-						-- #else
-						{ 55.0, 7.0, STORMWIND_CITY },
-						-- #endif
-					},
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							5956,	-- Blacksmith Hammer
-							4400,	-- Heavy Stock
-							4399,	-- Wooden Stock
-							-- #if AFTER CATA
-							39684,	-- Hair Trigger
-							40533,	-- Walnut Stock
-							-- #endif
-						},
 					},
 				}),
 				n(5514, {	-- Brooke Stonebraid <Mining Supplies>
@@ -5292,12 +5281,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
-					["groups"] = appendGroups(SHINY_BAUBLE, {
+					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					}),
+					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
 					["coords"] = {
@@ -5517,10 +5505,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
+						applyclassicphase(TBC_PHASE_ONE, i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
 							["isLimited"] = true,
-							["timeline"] = { ADDED_2_0_1 },
-						}),
+							["timeline"] = { ADDED_2_0_5 },
+						})),
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -5562,13 +5550,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["description"] = "Elly is walking around in the Tavern.",
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(2594),	-- Flagon of Dwarven Honeymead/Mead
-						i(2593),	-- Flask of Stormwind Tawny
-						i(1179),	-- Ice Cold Milk
-						--i(2595),	-- Jug of Badlands Bourbon
-						i(2596),	-- Skin of Dwarven Stout
-					},
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
 					["coords"] = {
@@ -5579,19 +5560,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							159,	-- Refreshing Spring Water
-							-- #if AFTER TBC
-							30817,	-- Simple Flour
-							-- #endif
-							2678,	-- Mild Spices
-							-- #if BEFORE WRATH
-							2692,	-- Hot Spices
-							3713,	-- Soothing Spices
-							-- #endif
-						},
-					},
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -6051,6 +6019,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"pop"},										-- Discard Header and aquire their children
 					},
 				}),
+				n(113404, {	-- Illidari Darkdealer
+					["coord"] = { 40.2, 78.6, STORMWIND_CITY },
+					["timeline"] = { ADDED_7_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(129096),	-- Battle-Mender's Dressing
+						i(124069),	-- Felstone
+						i(128805),	-- Potion of Fel Protection
+					},
+				}),
 				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
@@ -6085,18 +6063,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{ "select","itemID",
-							6217,	-- Copper Rod
-							4470,	-- Simple Wood
-							11291,	-- Star Wood
-							10938,	-- Lesser Magic Essence
-							10940,	-- Strange Dust
 							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 							20752,	-- Formula: Minor Mana Oil (RECIPE!)
 							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 							-- #if BEFORE CATA
 							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							-- #else
-							38682,	-- Enchanting Vellum
 							-- #endif
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
@@ -6112,8 +6083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{ "select","itemID", 7005 }},	-- Skinning Knife
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {}),
+					["groups"] = COMMON_CATACLYSM_LEATHERWORKING_RECIPES,
 				}),
 				n(49701, {	-- Jon Casper <Sous Chef>
 					["coords"] = {
@@ -6142,18 +6112,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						-- #if AFTER 4.3.0
-						{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-						-- #endif
-						{ "select","itemID",
-							2880,	-- Weak Flux
-							3466,	-- Strong Flux
-							18567,	-- Elemental Flux
-							3857,	-- Coal
-							5956,	-- Blacksmith Hammer
-						},
-					},
+					-- #if AFTER 4.3.0
+					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+					-- #endif
 					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
@@ -6209,16 +6170,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-						3371,	-- Empty-/Crystal Vial
-						-- #if BEFORE CATA
-						3372,	-- Leaded Vial
-						8925,	-- Crystal Vial
-						18256,	-- Imbued Vial
-						-- #endif
-						},
-					},
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
 					["coords"] = {
@@ -6405,19 +6356,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Reagent Vendor.
 					["sym"] = {
-						-- #IF ANYCLASSIC
-						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS }, {"pop"}, { "finalize" },	-- Grand Marshal Weapons
+						-- #if ANYCLASSIC
+						{ "sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },	-- Grand Marshal Weapons
 						-- #if AFTER CATA
-						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, {"pop"}, { "where", "headerID", WEAPONS }, { "pop" }, { "finalize" },
-						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR }, {"pop"}, { "where", "headerID", WEAPONS }, { "pop" }, { "finalize" },
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },
+						{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },
 						-- #endif
-						{ "merge" },
-						-- #ELSE
-						{"select","expansionID",EXPANSION.CLASSIC},
-						{"find","headerID",FACTION_HEADER_ALLIANCE},
-						{"find","headerID",WEAPONS},	-- Grand Marshal Weapons
-						{"pop"},
-						-- #ENDIF
+						{ "merge" }, { "pop" }, { "where", "headerID", WEAPONS }, { "pop" },
+						-- #else
+						{ "select", "expansionID", EXPANSION.CLASSIC },
+						{ "find", "headerID", FACTION_HEADER_ALLIANCE },
+						{ "find", "headerID", WEAPONS },	-- Grand Marshal Weapons
+						{ "pop" },
+						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -6483,15 +6434,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},	-- Vicious Gladiator: Season 9 Gladiator Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
+						{ "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },	-- Vicious Gladiator: Season 9 Gladiator Gear
+						{ "merge" }, { "pop" },	-- Discard the Set header and acquire the children.
+						{ "exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				-- #else
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54660, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Elite Season 11 Gladiator Gear
 					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_ELITE },{ "pop" }},	-- Elite Cataclysmic Gladiator's Set
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_ELITE }, { "merge" }, { "pop" } },	-- Elite Cataclysmic Gladiator's Set
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				})),
@@ -6499,7 +6450,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52545, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Elite Season 10 Gladiator Gear
 					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					-- #if BEFORE MOP
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_ELITE },{ "pop" }},	-- Elite Ruthless Gladiator's Set
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_ELITE }, { "merge" } ,{ "pop" } },	-- Elite Ruthless Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -6507,40 +6458,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(CATA_PHASE_ONE, n(51255, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Elite Season 9 Gladiator Gear
 					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					-- #if BEFORE MOP
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_ELITE },{ "pop" }},	-- Elite Vicious Gladiator's Set
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_ELITE }, { "merge" },{ "pop" } },	-- Elite Vicious Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34078, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
-					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+					-- #if BEFORE CATA
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Wrathful Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34077, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
-					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+					-- #if BEFORE CATA
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Relentless Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34076, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
-					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+					-- #if BEFORE CATA
+					["sym"] = { { "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR }, { "merge" }, { "pop" } },	-- Furious Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32380, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
-					-- #if BEFORE 4.0.3.13277
+					-- #if BEFORE CATA
 					["sym"] = {
-						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" },		-- Deadly Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "merge" }, { "pop" },		-- Deadly Gladiator's Set
 						-- #if ANYCLASSIC
 						{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 						-- #endif
@@ -6889,29 +6840,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-						3371,	-- Empty-/Crystal Vial
-						-- #if BEFORE CATA
-						3372,	-- Leaded Vial
-						8925,	-- Crystal Vial
-						18256,	-- Imbued Vial
-						-- #endif
-						},
+					["groups"] = {
+						i(9301, {["isLimited"] = true}),	-- Recipe: Elixir of Shadow Power (RECIPE!)
 					},
-					["groups"] = sharedData({
-						["isLimited"] = true,
-					}, {
-						i(2453),	-- Bruiseweed
-						i(2449),	-- Earthroot
-						i(3356),	-- Kingsblood
-						i(3357),	-- Liferoot
-						i(785),	-- Mageroyal
-						i(2447),	-- Peacebloom
-						i(765),	-- Silverleaf
-						i(3355),	-- Wild Steelbloom
-						i(9301),	-- Recipe: Elixir of Shadow Power (RECIPE!)
-					}),
 				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
@@ -7548,16 +7479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
-						{ "select","itemID",
-						52188,	-- Jeweler's Setting
-						20815,	-- Jeweler's Toolset/-Kit
-						-- #if BEFORE MOP
-						20824,	-- Simple Grinder
-						-- #endif
-						},
-					},
+					["sym"] = {{ "sub", "common_recipes_vendor", 50480 }},	-- Isabel Jones <Jewelcrafting Supplies>
 				}),
 				n(1350, {	-- Theresa Moulaine <Robe Vendor>
 					["coords"] = {

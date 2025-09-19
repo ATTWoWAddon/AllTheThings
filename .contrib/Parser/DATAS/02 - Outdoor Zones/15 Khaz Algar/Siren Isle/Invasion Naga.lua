@@ -1,10 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_NAGA, {
 			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
@@ -113,4 +110,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			},
 		}),
 	}),
-})));
+}));

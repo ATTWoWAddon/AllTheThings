@@ -1,35 +1,6 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
--- Simple function for First Craft HQTs
--- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
-local function FirstCraft(questID, recipeID, added, removed)
-	local t = hqt(questID, name(HEADERS.Spell, recipeID))
-	t.provider = { "s", recipeID };
-	if added then
-		t.timeline = { added };
-	end
-	if removed then
-		if not added then
-			error("Cannot have removed FirstCraft without added")
-		end
-		t.timeline[#t.timeline + 1] = removed
-	end
-	return t;
-end
-local function FirstSkin(questID, creatureID, added, group)
-	local t = hqt(questID, name(HEADERS.NPC, creatureID))
-	t.provider = { "n", creatureID };
-	t.isWeekly = true;
-	if added then
-		t.timeline = { added };
-	end
-	if group then
-		t.group = { group };
-	end
-	return t;
-end
-
 root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
@@ -768,7 +739,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(197770),	-- Zesty Water
 	}),
 	prof(ENCHANTING, {
-		n(DISCOVERY, {
+		n(DISCOVERY, sharedData({
+			["requireSkill"] = ENCHANTING,
+		},{
 			r(391185, {	-- Primal Invocation Extract
 				["description"] = "Discovered only after obtaining all 5 Glimmers and then disenchanting a Sophic Amalgamation. Turn on +HQT Tracking to see which Glimmers you have already disenchanted",
 				["cost"] = {{"i",200479,1}},	-- 1x Sophic Amalgamation
@@ -816,7 +789,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			itemDropHQT(201356, 71941),	-- Glimmer of Fire Drop
 			itemDropHQT(201357, 71942),	-- Glimmer of Frost Drop
 			itemDropHQT(201360, 71943),	-- Glimmer of Order Drop
-		}),
+		})),
 		spell(392888, {	-- Disenchant
 			i(194123),	-- Chromatic Dust
 			i(200113),	-- Resonant Crystal
@@ -3155,7 +3128,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			FirstSkin(74233, 202441, ADDED_10_0_7),	-- Skinning Elusive Auric Argali
 			FirstSkin(78394, 212090, ADDED_10_2_0),	-- Skinning Elusive Blooming Brierhide
 			FirstSkin(74231, 195518),	-- Skinning Elusive Cliffdweller Vorquin
-			FirstSkin(74234, 204821, ADDED_10_1_0, i(205451)),	-- Skinning Elusive Crystalscale Stonecleaver / Flawless Crystal Scale (CI!)
+			FirstSkin(74234, 204821, ADDED_10_1_0, { i(205451) }),	-- Skinning Elusive Crystalscale Stonecleaver / Flawless Crystal Scale (CI!)
 			FirstSkin(74191, 195492),	-- Skinning Elusive Deepwater Salamanther
 			FirstSkin(74185, 194489),	-- Skinning Elusive Elder Drake
 			FirstSkin(74186, 194491),	-- Skinning Elusive Elder Frigidpelt (Elusive Creature Bait)

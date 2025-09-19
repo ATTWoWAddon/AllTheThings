@@ -145,7 +145,7 @@ applyData = function(data, t)
 		for key, value in pairs(data) do
 			if t[key] == nil and key ~= "IgnoreWarnings" then	-- don't replace existing data
 				if SharedKeyWarnings[key] and not data.IgnoreWarnings then
-					print(SharedKeyWarnings[key],"[",value,"]")
+					print(SharedKeyWarnings[key],key,"[",value,"]")
 				end
 				t[key] = clone(value)
 			-- else
@@ -888,6 +888,9 @@ cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
 	end;
 	return struct("classID", id, t);
 end
+challengemaster = function(t)							-- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD)
+	return bubbleDown({ ["cm"] = true }, t);
+end
 clWithoutLock = function(id, t)							-- Create a CHARACTER CLASS Object without a Class Lock
 	t = struct("headerID", id, t);
 	t.type = HEADERS.Class;
@@ -1044,6 +1047,8 @@ visit_exploration = function(id, t)						-- Create an EXPLORATION Object (which 
 	-- #ENDIF
 	return t
 end
+instance_exploration = visit_exploration;
+map_exploration = visit_exploration;
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
@@ -1131,7 +1136,8 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 100000);
 	return i;
 end
-iensemble = function(itemID, t)
+iensemble = function(itemID, t)							-- Create an ITEM which imports Wago Ensemble data during Parse
+	-- Include '_IgnoreSharedEnsembleByQuestID' in the RARE situation that two distinct ensembles are given the same QuestID by Blizz
 	local i = i(itemID, t);
 	i.type = "ensembleID"
 	return i
@@ -1450,6 +1456,11 @@ root = function(category, g)							-- Create a ROOT CATEGORY Object
 	end
 	return o;
 end
+sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellID
+	local i = sp(spellID, t);
+	i.type = "ensembleSpellID"
+	return i
+end
 skyriding = function(t)									-- Skyriding (bubbleDown sr filter)
 	return bubbleDown({ ["sr"] = true }, t);
 end
@@ -1461,11 +1472,6 @@ itemsource = function(id, t)							-- Create an Item Source Object
 	return struct("sourceID", id, t)
 end
 title = function(id, t)									-- Create a TITLE Object
-sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellID
-	local i = sp(spellID, t);
-	i.type = "ensembleSpellID"
-	return i
-end
 	return struct("titleID", id, t);
 end
 title_female = function(id, t)							-- Create a TITLE Object for Female Characters
@@ -1513,6 +1519,31 @@ driverace = function(id, t)						-- Creates a QUEST which is for a D.R.I.V.E. Ra
 	-- 	68795,	-- Dragonriding
 	-- 	DF_ACCOUNT_CAMPAIGN_QUEST,
 	-- };
+	return t;
+end
+-- Simple function for First Craft HQTs
+FirstCraft = function(questID, recipeID, added, removed)
+	local t = hqt(questID, name(HEADERS.Spell, recipeID))
+	t.provider = { "s", recipeID };
+	if added then
+		t.timeline = { added };
+	end
+	if removed then
+		if not added then
+			error("Cannot have removed FirstCraft without added")
+		end
+		t.timeline[#t.timeline + 1] = removed
+	end
+	return t;
+end
+-- Simple function for First Skin HQTs
+FirstSkin = function(questID, creatureID, added, t)
+	local t = hqt(questID, name(HEADERS.NPC, creatureID, t))
+	t.provider = { "n", creatureID };
+	t.isWeekly = true;
+	if added then
+		t.timeline = { added };
+	end
 	return t;
 end
 

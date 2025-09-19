@@ -316,9 +316,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
 					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(90, 90, 35),
+					-- Wouter NOTE: can't find a way to trigger this in MoP Classic,
+					-- and if it does somehow end up being in the game I'm going to be very upsetti
+					-- #if ANYCLASSIC
+					["timeline"] = { CREATED_5_5_0 },
+					-- #else
+					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					-- #endif
 				}),
 			}),
 			n(VENDORS, {

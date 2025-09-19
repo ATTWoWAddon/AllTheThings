@@ -2474,9 +2474,9 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 }));
 -- #if AFTER 5.0.4
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-	ach(8438, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
+	challengemaster(ach(8438, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
 		title(245),	-- Darkmaster <Name>
-	})),
+	}))),
 	ach(6897),	-- Scholomance Challenger
 	ach(6914),	-- Scholomance: Bronze
 	ach(6915),	-- Scholomance: Silver
@@ -2489,7 +2489,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDown
 
 -- #if ANYCLASSIC
 -- #if AFTER MOP
-table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 		["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 		["timeline"] = { ADDED_5_5_0 },
 		["groups"] = {
@@ -2497,7 +2497,9 @@ table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DU
 				["creatureID"] = 59080,	-- Darkmaster Gandling
 				["groups"] = {
 					ach(60899),	-- Celestial: Scholomance
+					applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86863)),	-- Scimitar of Seven Stars (HoF)
 					i(86782),	-- Arrow Breaking Windcloak
+					i(89968),	-- Feng's Ring of Dreams
 					i(86802),	-- Lei Shen's Final Orders
 				},
 			}),

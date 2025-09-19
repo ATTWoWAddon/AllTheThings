@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local SCRAP = createHeader({
+SCRAP = createHeader({
 	readable = "S.C.R.A.P.",
 	constant = "SCRAP",
 	icon = 5768266,
@@ -21,7 +21,7 @@ local function FromSCRAP(t)
 	}
 	return t
 end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SCRAP, {
 			["description"] = "Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",
@@ -257,9 +257,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			},
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(UNDERMINE, {
 		n(SCRAP, {
 			n(EVENT_COMPLETION, {
@@ -285,4 +285,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			-- q(87313),	-- Venturewood
 		}),
 	}),
-})));
+}));

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		pvp(n(PVP, {
 			n(QUESTS, {
@@ -17,10 +17,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
 					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 				}),
-				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_0_2 } }, {	-- Weapons of Conquest
+				q(83711, {	-- Weapons of Conquest
 					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
 					["coord"] = { 55.0, 76.1, DORNOGAL },
-				})),
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_0_2 }
+				}),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 219260 },	-- Ruffious
@@ -228,4 +229,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		})),
 	}),
-})));
+}));

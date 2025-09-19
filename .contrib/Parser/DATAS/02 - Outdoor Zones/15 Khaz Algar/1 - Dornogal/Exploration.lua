@@ -1,10 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(DORNOGAL, {
 		explorationHeader({
 			visit_exploration(15110,{coord={55.7,70.6,DORNOGAL}}),	-- Contender's Gate
+			visit_exploration(15172,{coord={57.4,14.2,DORNOGAL}}),	-- Councilward's Rise
 			visit_exploration(15044,{coord={36.7,24.1,DORNOGAL}}),	-- Foundation Hall
 			visit_exploration(15042,{coord={48.1,35.6,DORNOGAL}}),	-- Keepers Terrace
 			visit_exploration(15183,{coord={65.4,29.3,DORNOGAL}}),	-- Oath Gate
@@ -17,4 +18,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(15185,{coord={42.6,35.7,DORNOGAL}}),	-- Thraegar Rest
 		}),
 	}),
-})));
+}));

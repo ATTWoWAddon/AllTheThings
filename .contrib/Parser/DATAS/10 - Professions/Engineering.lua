@@ -618,6 +618,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 43.0, 62.8, AZSUNA },
 				["groups"] = {
 					r(198975),	-- Gunpack [Rank 1] (RECIPE!)
+					i(133798),	-- Barrel of Gunpowder (QI!)
 				},
 			}),
 			q(40874, {	-- I'd Do It Myself, But...
@@ -1229,7 +1230,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			o(410458,		-- Insomniotron
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["description"] = "In cavern.",
-				["coord"] = { 49.4, 69.2, 2254 },
+				["coord"] = { 49.0, 70.9, 2254 },
 				["questID"] = 78279,
 				["groups"] = {
 					i(210194),	-- Insomniotron

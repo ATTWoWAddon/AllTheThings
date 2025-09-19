@@ -91,7 +91,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
 					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
 					["maps"] = { 456 },	-- Terrace of Endless Spring
+					["groups"] = {
+						objective(1, {	-- Chimera of Fear
+							["provider"] = { "i", 87210 },	-- Chimera of Fear
+						}),
+					},
 				}),
+				-- #if ANYCLASSIC
+				q(91786, {	-- When in Doubt
+					["sourceQuests"] = {
+						31468,	-- Trial of the Black Prince
+						31473,	-- The Strength of One's Foes
+					},
+					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>
+					["coord"] = { 54.6, 72.6, THE_VEILED_STAIR },
+					["maps"] = { TEMPLE_OF_THE_JADE_SERPENT },
+					["groups"] = {
+						objective(1, {	-- Chimera of Doubt
+							["provider"] = { "i", 248204 },	-- Chimera of Doubt
+						}),
+					},
+				}),
+				-- #endif
 				q(31482, {	-- Breath of the Black Prince
 					["sourceQuests"] = { 31481 },	-- Fear Itself
 					["provider"] = { "n", 64616 },	-- Wrathion <The Black Prince>

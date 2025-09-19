@@ -17,6 +17,7 @@ from ThingTypes import (
     FLAVOR_RANGES,
     FLAVOR_FOLDERS,
     Achievements,
+    Explorations,
     Factions,
     FlightPaths,
     Followers,
@@ -132,6 +133,7 @@ def pre_process(thing: type[Thing], current_patch: str, id: str, flavor: str) ->
     # Fallback: handle old IDs that still belong to Retail
     if flavor == "Retail" and (
         (thing == Achievements and id_int < 15000) or
+        (thing == Explorations and id_int < 13649) or
         (thing == Factions and id_int < 2400) or
         (thing == FlightPaths and id_int < 2900) or
         (thing == Items and id_int < 172000) or
@@ -499,6 +501,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
     missing_lines = extract_nth_column(missing_path, 0)
     if thing in (
         Achievements,
+        Explorations,
         Factions,
         FlightPaths,
         Mounts,

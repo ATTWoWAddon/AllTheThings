@@ -2497,3 +2497,692 @@
 92298@@@--
 92347@@@--
 86371@@@--
+84763@@@--
+84764@@@--
+85038@@@[DNT] Post Raid
+85044@@@DEPRECATED
+85153@@@--
+85154@@@--
+85194@@@--
+85199@@@--
+85209@@@--
+85211@@@--
+85215@@@--
+85216@@@--
+85217@@@--
+85232@@@--
+85233@@@--
+85234@@@--
+85236@@@--
+85237@@@--
+85478@@@--
+85482@@@--
+85483@@@--
+85484@@@--
+85835@@@--
+85836@@@--
+85873@@@Another Shadowy Invitation
+86118@@@--
+86119@@@--
+86120@@@--
+86121@@@--
+86122@@@--
+86123@@@--
+86124@@@--
+86125@@@--
+86126@@@--
+86127@@@--
+86128@@@--
+86129@@@--
+86130@@@--
+86131@@@--
+86132@@@--
+86133@@@--
+86134@@@--
+86135@@@--
+86136@@@--
+86137@@@--
+86138@@@--
+86139@@@--
+86140@@@--
+86141@@@--
+86142@@@--
+86143@@@--
+86144@@@--
+86145@@@--
+86146@@@--
+86147@@@--
+86148@@@--
+86149@@@--
+86150@@@--
+86411@@@--
+86502@@@--
+86527@@@--
+86550@@@--
+86551@@@--
+86552@@@--
+86785@@@--
+87289@@@--
+87320@@@--
+87341@@@--
+87347@@@--
+87349@@@--
+87390@@@--
+88712@@@--
+88810@@@--
+88828@@@--
+88972@@@--
+88976@@@--
+89033@@@--
+89036@@@--
+89042@@@--
+89043@@@--
+89246@@@--
+90087@@@Distance Tracker (DNT)
+90118@@@--
+90119@@@test
+90577@@@--
+90578@@@--
+90579@@@--
+90580@@@--
+90581@@@--
+90582@@@--
+90668@@@--
+90670@@@--
+90696@@@--
+90697@@@--
+90815@@@--
+90816@@@--
+90863@@@--
+90870@@@Gathering the Grub
+90879@@@--
+90880@@@--
+90985@@@--
+90988@@@--
+90992@@@--
+90999@@@--
+91066@@@--
+91067@@@Gathering the Grub
+91068@@@--
+91144@@@--
+91181@@@--
+91194@@@--
+91195@@@--
+91353@@@--
+91423@@@--
+91442@@@--
+91459@@@--
+91460@@@--
+91461@@@--
+91477@@@--
+91478@@@--
+91479@@@--
+91480@@@--
+91482@@@--
+91484@@@--
+91485@@@--
+91486@@@--
+91487@@@--
+91489@@@--
+91526@@@--
+91527@@@--
+91528@@@--
+91529@@@--
+91530@@@--
+91626@@@--
+91635@@@--
+91636@@@--
+91637@@@--
+91638@@@--
+91720@@@--
+91761@@@--
+91768@@@Sweating Mana
+91771@@@--
+91773@@@--
+91774@@@--
+91815@@@--
+91816@@@--
+91817@@@--
+91818@@@--
+91894@@@--
+91895@@@--
+91896@@@--
+91897@@@--
+91898@@@--
+91949@@@--
+91954@@@--
+91959@@@--
+91960@@@--
+92018@@@x.x Testing (YGR)
+92078@@@--
+92079@@@--
+92080@@@--
+92081@@@--
+92082@@@--
+90930@@@--
+92487@@@--
+92488@@@--
+91625@@@--
+86459@@@--
+92813@@@--
+92877@@@--
+86497@@@--
+86906@@@--
+86908@@@--
+87014@@@--
+87015@@@--
+87016@@@--
+87017@@@--
+87018@@@--
+87019@@@--
+87020@@@--
+87021@@@--
+87022@@@--
+87023@@@--
+87024@@@--
+87025@@@--
+87026@@@--
+87027@@@--
+87028@@@--
+87029@@@--
+87030@@@--
+87031@@@--
+87032@@@--
+87033@@@--
+87034@@@--
+87035@@@--
+87036@@@--
+87037@@@--
+87038@@@--
+87039@@@--
+87040@@@--
+87041@@@--
+87042@@@--
+87043@@@--
+87044@@@--
+87045@@@--
+87046@@@--
+87047@@@--
+87048@@@--
+87049@@@--
+87050@@@--
+87051@@@--
+87052@@@--
+87053@@@--
+87054@@@--
+87055@@@--
+87056@@@--
+87057@@@--
+87058@@@--
+87059@@@--
+87060@@@--
+87061@@@--
+87062@@@--
+87063@@@--
+87064@@@--
+87065@@@--
+87066@@@--
+87067@@@--
+87068@@@--
+87069@@@--
+87070@@@--
+87071@@@--
+87072@@@--
+87073@@@--
+87074@@@--
+87075@@@--
+87076@@@--
+87077@@@--
+87078@@@--
+87079@@@--
+87080@@@--
+87081@@@--
+87082@@@--
+87083@@@--
+87084@@@--
+87085@@@--
+87086@@@--
+87087@@@--
+87088@@@--
+87089@@@--
+87090@@@--
+87091@@@--
+87092@@@--
+87093@@@--
+87094@@@--
+87095@@@--
+87096@@@--
+87097@@@--
+87098@@@--
+87099@@@--
+87100@@@--
+87101@@@--
+87102@@@--
+87103@@@--
+87104@@@--
+87105@@@--
+87106@@@--
+87107@@@--
+87108@@@--
+87109@@@--
+87110@@@--
+87111@@@--
+87112@@@--
+87113@@@--
+87114@@@--
+87115@@@--
+87116@@@--
+87117@@@--
+87118@@@--
+87119@@@--
+87120@@@--
+87121@@@--
+87122@@@--
+87123@@@--
+87124@@@--
+87125@@@--
+87126@@@--
+87127@@@--
+87128@@@--
+87129@@@--
+87130@@@--
+87131@@@--
+87132@@@--
+87133@@@--
+87134@@@--
+87135@@@--
+87136@@@--
+87137@@@--
+87138@@@--
+87139@@@--
+87140@@@--
+87141@@@--
+87142@@@--
+87143@@@--
+87144@@@--
+87145@@@--
+87146@@@--
+87147@@@--
+87148@@@--
+87149@@@--
+87150@@@--
+87151@@@--
+87152@@@--
+87153@@@--
+87154@@@--
+87155@@@--
+87156@@@--
+87157@@@--
+87158@@@--
+87159@@@--
+87160@@@--
+87161@@@--
+87162@@@--
+87163@@@--
+87164@@@--
+87165@@@--
+87166@@@--
+87167@@@--
+87168@@@--
+87169@@@--
+87170@@@--
+87171@@@--
+87172@@@--
+87173@@@--
+87174@@@--
+87175@@@--
+87176@@@--
+87177@@@--
+87178@@@--
+87179@@@--
+87180@@@--
+87181@@@--
+87182@@@--
+87183@@@--
+87184@@@--
+87185@@@--
+87186@@@--
+87187@@@--
+87188@@@--
+87189@@@--
+87190@@@--
+87191@@@--
+87192@@@--
+87193@@@--
+87194@@@--
+87195@@@--
+87196@@@--
+87197@@@--
+87198@@@--
+87199@@@--
+87200@@@--
+87201@@@--
+87202@@@--
+87203@@@--
+87204@@@--
+87205@@@--
+87206@@@--
+87207@@@--
+87208@@@--
+87209@@@--
+87210@@@--
+87211@@@--
+87212@@@--
+87213@@@--
+87214@@@--
+87215@@@--
+87216@@@--
+87217@@@--
+87218@@@--
+87219@@@--
+87220@@@--
+87221@@@--
+87222@@@--
+87223@@@--
+87224@@@--
+87225@@@--
+87226@@@--
+87227@@@--
+87228@@@--
+87229@@@--
+87230@@@--
+87231@@@--
+87232@@@--
+87233@@@--
+87234@@@--
+87235@@@--
+87236@@@--
+87237@@@--
+87238@@@--
+87239@@@--
+87240@@@--
+87241@@@--
+87242@@@--
+87243@@@--
+87244@@@--
+87245@@@--
+87246@@@--
+87247@@@--
+87248@@@--
+87249@@@--
+87250@@@--
+87251@@@--
+87252@@@--
+87253@@@--
+87540@@@Begin the Sky Assaults
+87541@@@--
+87542@@@--
+87545@@@--
+87549@@@--
+88750@@@Tracking Quest
+88752@@@--
+88753@@@--
+89403@@@--
+89404@@@Time Crisis
+89405@@@Mean Streets of Dalaran
+89406@@@Seal and Protect
+89407@@@Thrift
+89408@@@Threadbare
+89409@@@Infinite Bronze
+89410@@@--
+89411@@@Scavenger Hunting
+89412@@@Get Plenty of Exorcise
+89413@@@Obliterate, Then Iterate
+89414@@@Not A Memento Too Soon
+89415@@@Storm the Citadel
+89416@@@Eternal Gratitude
+89417@@@Infinite Meetings
+89418@@@A Fixed Point in Time
+89419@@@--
+89466@@@Infinite Research: Time to Raid, Light's Breach
+89467@@@Infinite Research: Time to Raid, Forbidden Descent
+89516@@@Infinite Research: Assault on Violet Hold, Normal
+89517@@@Infinite Research: Assault on Violet Hold, Heroic
+89518@@@Infinite Research: Cathedral of Eternal Night, Heroic
+89519@@@Infinite Research: Black Rook Hold, Heroic
+89520@@@Infinite Research: Darkheart Thicket, Mythic
+89521@@@Infinite Research: Court of Stars, Heroic
+89522@@@Infinite Research: Cathedral of Eternal Night, Mythic
+89523@@@Infinite Research: Black Rook Hold, Normal
+89524@@@Infinite Research: Maw of Souls, Normal
+89525@@@Infinite Research: Eye of Azshara, Mythic
+89526@@@Infinite Research: Eye of Azshara, Normal
+89527@@@Infinite Research: Eye of Azshara, Heroic
+89528@@@Infinite Research: Black Rook Hold, Mythic
+89529@@@Infinite Research: Court of Stars, Normal
+89530@@@Infinite Research: Cathedral of Eternal Night, Normal
+89531@@@Infinite Research: Assault on Violet Hold, Mythic
+89532@@@Infinite Research: Neltharion's Lair, Mythic
+89533@@@Infinite Research: Seat of the Triumvirate, Heroic
+89534@@@Infinite Research: The Arcway, Normal
+89535@@@Infinite Research: The Arcway, Mythic
+89536@@@Infinite Research: Upper Return to Karazhan, Heroic
+89537@@@Infinite Research: Vault of the Wardens, Heroic
+89538@@@Infinite Research: Vault of the Wardens, Normal
+89539@@@Infinite Research: Vault of the Wardens, Mythic
+89541@@@Infinite Research: Upper Return to Karazhan, Mythic
+89542@@@Infinite Research: Upper Return to Karazhan, Normal
+89543@@@Infinite Research: The Arcway, Heroic
+89544@@@Infinite Research: Seat of the Triumvirate, Mythic
+89545@@@Infinite Research: Seat of the Triumvirate, Normal
+89546@@@Infinite Research: Maw of Souls, Heroic
+89547@@@Infinite Research: Maw of Souls, Mythic
+89548@@@Infinite Research: Neltharion's Lair, Normal
+89549@@@Infinite Research: Neltharion's Lair, Heroic
+89550@@@Infinite Research: Halls of Valor, Normal
+89551@@@Infinite Research: Halls of Valor, Heroic
+89552@@@Infinite Research: Halls of Valor, Mythic
+89553@@@Infinite Research: Lower Return to Karazhan, Normal
+89554@@@Infinite Research: Lower Return to Karazhan, Heroic
+89555@@@Infinite Research: Lower Return to Karazhan, Mythic
+89556@@@Infinite Research: Court of Stars, Mythic
+89557@@@Infinite Research: Darkheart Thicket, Normal
+89558@@@Infinite Research: Darkheart Thicket, Heroic
+89590@@@Infinite Research: Time to Raid, Hope's End
+89591@@@Infinite Research: Time to Raid, Seat of the Pantheon
+89592@@@Infinite Research: Antorus, the Burning Throne, Normal
+89593@@@Infinite Research: Time to Raid, Nightspire
+89594@@@Infinite Research: Time to Raid, Betrayer's Rise
+89595@@@Infinite Research: Antorus, the Burning Throne, Heroic
+89596@@@Infinite Research: Trial of Valor, Heroic
+89597@@@Infinite Research: Trial of Valor, Mythic
+89598@@@Infinite Research: Nighthold, Normal
+89599@@@Infinite Research: Nighthold, Heroic
+89600@@@Infinite Research: The Nighthold, Mythic
+89601@@@Infinite Research: Antorus, the Burning Throne, Mythic
+89602@@@Infinite Research: Tomb of Sargeras, Heroic
+89603@@@Infinite Research: Tomb of Sargeras, Mythic
+89604@@@Infinite Research: Time to Raid, The Gates of Hell
+89605@@@Infinite Research: Time to Raid, Wailing Halls
+89606@@@Infinite Research: Time to Raid, Chamber of the Avatar
+89607@@@Infinite Research: Time to Raid, Deceiver's Fall
+89622@@@Infinite Research: Tomb of Sargeras, Normal
+89644@@@Infinite Research: Time to Raid, Darkbough
+89665@@@Infinite Research: Time to Raid, Tormented Guardians
+89676@@@Infinite Research: Time to Raid, Rift of Aln
+89677@@@Infinite Research: The Emerald Nightmare, Normal
+89678@@@Infinite Research: Time to Raid, Arcing Aqueducts
+89679@@@Infinite Research: The Emerald Nightmare, Heroic
+89680@@@Infinite Research: The Emerald Nightmare, Mythic
+89681@@@Infinite Research: Time to Raid, Trial of Valor
+89682@@@Infinite Research: Trial of Valor, Normal
+89683@@@Infinite Research: Time to Raid, Royal Athenaeum
+90096@@@Infinite Research: Worldly Deeds
+90097@@@Infinite Research: Invasion Points
+90098@@@Infinite Research: Greater Invasion Points
+90099@@@Infinite Research: Combat Studies, Rare
+90100@@@Infinite Research: Combat Studies, Rare Elites
+90101@@@Infinite Research: Terrors of the Broken Isles
+90102@@@Infinite Research: Champion of the Broken Isles
+90103@@@Infinite Research: Champion of the Order Hall
+90108@@@Infinite Research: Artifact Collector
+90109@@@Infinite Research: Clear the Skies
+90110@@@Infinite Research: Gather Timewarped Samples
+90111@@@Infinite Research: Combat Studies, Demonology
+90112@@@Infinite Research: Combat Studies, Elite
+90115@@@Infinite Research: Combat Studies, Groverunner
+90628@@@--
+90659@@@Something Borrowed
+90686@@@--
+90703@@@--
+90704@@@--
+90716@@@--
+90754@@@Skyriding
+90755@@@Time Flies
+90787@@@--
+90808@@@--
+90809@@@--
+90810@@@--
+90811@@@--
+90864@@@--
+90891@@@--
+90892@@@Clearing the Skies: A Fel of a Time
+90901@@@As A Matter of Artifact
+90995@@@The Future of The Fel Hammer
+91061@@@Infinite Chaos
+91076@@@--
+91094@@@--
+91438@@@Infinite Research: Heroic Worldly Deeds
+91439@@@Infinite Research: Heroic Invasion Points
+91440@@@Infinite Research: Hero of the Broken Isles
+91441@@@Infinite Research: Heroic Greater Invasion Points
+91443@@@Infinite Research: Advanced Combat Studies, Rare
+91444@@@Infinite Research: Advanced Combat Studies, Elite
+91446@@@Infinite Research: Advanced Combat Studies, Rare Elites
+91447@@@Infinite Research: Advanced Combat Studies, Demonology
+91448@@@Infinite Research: Heroic Terrors of the Broken Isles
+91449@@@Infinite Research: Advanced Combat Studies, Empowerment
+91522@@@Order from Chaos
+91613@@@Infinite Research Promotion: Timely Assistant
+91614@@@Focusing the Energies
+91615@@@--
+91616@@@Required Reagents
+91618@@@--
+91619@@@Blood of Sargeras
+91620@@@Noggenfogger's Reasonable Request
+91621@@@--
+91631@@@Epoch Progress
+91632@@@The End of an Epoch Journey
+91639@@@Embrace Your Own Legend
+91641@@@--
+91650@@@--
+91651@@@--
+91652@@@--
+91653@@@--
+91654@@@--
+91655@@@--
+91656@@@--
+91657@@@--
+91658@@@--
+91659@@@--
+91660@@@--
+91661@@@--
+91662@@@--
+91663@@@--
+91664@@@--
+91665@@@--
+91666@@@--
+91667@@@--
+91668@@@--
+91669@@@--
+91670@@@--
+91671@@@--
+91672@@@--
+91673@@@--
+91674@@@--
+91675@@@--
+91676@@@--
+91677@@@--
+91678@@@--
+91679@@@--
+91680@@@--
+91681@@@--
+91682@@@--
+91683@@@--
+91684@@@--
+91721@@@Surpass Your Own Legend
+91722@@@Shape a New Legend
+91727@@@--
+91728@@@Suramar Liberated
+91729@@@Armies Gathered
+91730@@@Azeroth Saved
+91757@@@--
+91763@@@--
+91766@@@--
+91789@@@--
+91790@@@--
+91791@@@--
+91792@@@--
+91821@@@--
+91844@@@Infinite Research Promotion: Honorary Chronographer
+91845@@@Infinite Research Promotion: Senior Executive Chronographer
+91846@@@--
+91851@@@--
+91924@@@--
+91925@@@--
+91926@@@--
+91934@@@--
+91955@@@Just Between Us
+91957@@@--
+91961@@@--
+91962@@@--
+92095@@@--
+92096@@@--
+92097@@@--
+92098@@@--
+92107@@@--
+92112@@@--
+92115@@@--
+92116@@@--
+92117@@@--
+92192@@@--
+92331@@@Turbo-Boost: Trade Must Flow
+92367@@@--
+92368@@@--
+92369@@@--
+92370@@@--
+92394@@@--
+92400@@@--
+92425@@@--
+92428@@@--
+92430@@@Embracing the Infinite Chaos
+92439@@@Infinite Research: Combat Studies, Felrunner
+92440@@@Infinite Research: Combat Studies, Stormrunner
+92441@@@Infinite Research: Combat Studies, Magerunner
+92442@@@Infinite Research: Combat Studies, Lightrunner
+92523@@@Tracking Quest
+92538@@@--
+92540@@@--
+92541@@@--
+92563@@@Awoken by Accessory
+92586@@@--
+92587@@@--
+92588@@@--
+92599@@@--
+92602@@@--
+92610@@@--
+92611@@@--
+92613@@@--
+92614@@@--
+92615@@@--
+92619@@@--
+92638@@@--
+92655@@@--
+92656@@@--
+92663@@@--
+92664@@@--
+92665@@@--
+92680@@@--
+92681@@@--
+92686@@@--
+92688@@@Bronze Simulacrum
+92835@@@--
+92843@@@--
+92855@@@Make Haste, Not Waste
+92861@@@--
+92862@@@--
+92863@@@--
+92886@@@--
+92889@@@--
+93154@@@--
+93155@@@--

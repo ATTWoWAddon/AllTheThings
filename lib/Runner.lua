@@ -201,6 +201,7 @@ local function CreateRunner(name)
 		QueueIndex = 1
 		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
 		wipearray(FunctionQueue)
+		FunctionQueue[0] = nil
 		wipearray(ParameterBucketQueue)
 		wipearray(ParameterSingleQueue)
 	end

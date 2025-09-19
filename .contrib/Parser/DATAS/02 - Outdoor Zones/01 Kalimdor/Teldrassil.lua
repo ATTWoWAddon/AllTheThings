@@ -1491,6 +1491,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coord"] = { 41.0, 45.6, TELDRASSIL },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(938, {	-- Mist
@@ -1528,6 +1529,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.0, 44.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Mossy Tumor
+							["provider"] = { "i", 5170 },	-- Mossy Tumor
+							["crs"] = {
+								2030,	-- Elder Timberling
+								2029,	-- Timberling Mire Beast
+								2027,	-- Timberling Trampler
+							},
+						}),
 						i(5605),	-- Pruning Knife
 						i(157016, {	-- Gnarled Gavel
 							["timeline"] = { ADDED_7_3_5 },
@@ -1778,12 +1787,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coord"] = { 55.8, 53.9, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Amethyst Phial
+							["providers"] = {
+								{ "i", 18151 },	-- Filled Amethyst Phial
+								{ "i", 18152 },	-- Amethyst Phial
+							},
+							["coord"] = { 40, 29, TELDRASSIL },
+						}),
+					},
 				}),
 				q(933, {	-- Teldrassil: The Coming Dawn [CATA+] / Crown of the Earth (4/6)
 					["sourceQuest"] = 7383,	-- Teldrassil: The Burden of the Kaldorei [CATA+] / Crown of the Earth (5/6)
 					["qg"] = 3515,	-- Corithras Moonrage
 					["coord"] = { 41.0, 45.6, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Tourmaline Phial
+							["providers"] = {
+								{ "i", 5645 },	-- Filled Tourmaline Phial
+								{ "i", 5621 },	-- Tourmaline Phial
+							},
+							["coord"] = { 43.9, 58.54, TELDRASSIL },
+						}),
+					},
 				}),
 				q(929, {	-- Teldrassil: The Refusal of the Aspects [CATA+] / Crown of the Earth (3/6)
 					["description"] = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
@@ -1794,6 +1821,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.0, 45.6, TELDRASSIL },	-- Darnassus Crossroads
 					},
 					["races"] = PRIESTESS_OF_THE_MOON_RACES,
+					["groups"] = {
+						objective(1, {	-- 0/1 Filled Jade Phial
+							["providers"] = {
+								{ "i", 5639 },	-- Filled Jade Phial
+								{ "i", 5619 },	-- Jade Phial
+							},
+							["coord"] = { 60, 50, TELDRASSIL },
+						}),
+					},
 				}),
 				-- #endif
 				q(2241, {	-- The Apple Falls
@@ -2136,6 +2172,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Bough of Corruption slain
+							["provider"] = { "n", 34521 },	-- Bough of Corruption <Remnant of Xavius>
+							["coord"] = { 40.8, 69.8, TELDRASSIL },
+						}),
 						i(131821, {	-- Uncorrupted Gloves
 							["timeline"] = { ADDED_7_0_3 },
 						}),

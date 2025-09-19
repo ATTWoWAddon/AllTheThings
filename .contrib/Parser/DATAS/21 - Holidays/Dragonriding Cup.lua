@@ -7,7 +7,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 	icon = [[~_.asset("Holiday_RaceCup")]],
 	eventID = EVENTS.DRAGONRIDING_CUP,
 	text = {
-		-- #if BEFORE TWW 
+		-- #if BEFORE TWW
 		en = "Dragonriding Cup",
 		es = "Copa de Jinete de dragones",
 		mx = "Copa de Dracoequitación",
@@ -21,7 +21,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 		ru = "Кубок полётов на Высший пилотаж",
 		--cn = TODO,
 		--tw = TODO,
-		
+
 	},
 });
 BROKEN_ISLES_CUP_HEADER = createHeader({
@@ -332,15 +332,39 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(78880, {	-- The Eastern Kingdoms Cup Begins
-					["provider"] = { "n", 214031 },	-- Holiday Enthusiast
-					["coord"] = { 62.3, 74.4, STORMWIND_CITY },
+					["qgs"] = {
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						220870,	-- Holiday Enthusiast
+						-- #endif
+						214031,	-- Holiday Enthusiast
+					},
+					["coords"] = {
+						-- #if AFTER TWW
+						{ 46.1, 54.9, DORNOGAL },
+						{ 55.6, 61.2, DORNOGAL },
+						-- #endif
+						{ 62.3, 74.4, STORMWIND_CITY },
+					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 				}),
 				q(78881, {	-- The Eastern Kingdoms Cup Begins
-					["provider"] = { "n", 213769 },	-- Holiday Enthusiast
-					["coord"] = { 52.7, 79.4, ORGRIMMAR },
+					["qgs"] = {
+						-- #if AFTER TWW
+						220307,	-- Holiday Enthusiast
+						220870,	-- Holiday Enthusiast
+						-- #endif
+						213769,	-- Holiday Enthusiast
+					 },
+					["coords"] = {
+						-- #if AFTER TWW
+						{ 46.1, 54.9, DORNOGAL },
+						{ 55.6, 61.2, DORNOGAL },
+						-- #endif
+						{ 52.7, 79.4, ORGRIMMAR },
+					},
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
@@ -352,8 +376,16 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						78881,	-- The Eastern Kingdoms Cup Begins
 					},
 					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
-					["coord"] = { 27.1, 47.1, VALDRAKKEN },
+					["qgs"] = {
+						206737,	-- Lord Andestrasz
+						214111,	-- Lord Andestrasz [A]
+						214112,	-- Lord Andestrasz [H]
+					},
+					["coords"] = {
+						{ 52.2, 59.8, ORGRIMMAR },
+						{ 60.0, 66.0, STORMWIND_CITY },
+						{ 27.1, 47.1, VALDRAKKEN },
+					},
 					["repeatable"] = true,
 					["groups"] = {
 						currency(RIDERS_OF_AZEROTH_BADGE),
@@ -799,6 +831,31 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						}),
 						i(206589, {	-- Drake Racer's Shoulderpads
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+						}),
+						-- 2025 edition new cosmetics
+						i(249560, {	-- Skymaster's Silver Mantle
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249561, {	-- Skymaster's Silver Cloak
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249562, {	-- Skymaster's Silver Tabard
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
+						}),
+						i(249563, {	-- Skymaster's Sapphire Crown
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249564, {	-- Skymaster's Sapphire Shoulderguards
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
+						}),
+						i(249565, {	-- Skymaster's Sapphire Epaulets
+							["timeline"] = { ADDED_11_2_0 },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 					},
 				}),

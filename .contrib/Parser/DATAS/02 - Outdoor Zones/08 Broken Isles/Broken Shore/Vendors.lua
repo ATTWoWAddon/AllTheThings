@@ -240,7 +240,62 @@ root(ROOTS.Zones, {
 									{ 66.0, 32.5, BROKEN_SHORE },
 									{ 74.0, 30.6, BROKEN_SHORE },
 								},
-								["groups"] = {
+								["groups"] = sharedData({
+									["sharedDescription"] = "Requires the Nether Disruptor to be active, and is required to progress with the achievement 'Naxt Victim'.\n\nEach different Sentinax Beacon summons mobs that drop additional Sentinax Beacons for that specific Beacon and ultimately the Portal Stone (boss).\n\nYou get the Uncommon (green quality) Sentinax Beacons from the standard mobs in the area, you then need to farm the mobs that come out of the Sentinax Portal until they drop a Rare (blue quality) Sentinax Beacon and use it to empower the portal, it is only after this that the Portal Stone can drop. Keep using all the Rare Sentinax Beacons you get to extend the duration of the Sentinax Beacon.",
+									["groups"] = sharedData({
+										["groups"] = {
+											i(146919, {	-- Portal-Stone: An'thyna
+												["crs"] = {
+													120669,	-- Dark Felshrieker
+													120674,	-- Rotwing Ripper
+												},
+											}),
+											i(146920, {	-- Portal-Stone: Fel Obliterator
+												["crs"] = {
+													120679,	-- Mo'arg Bonecrusher
+													120680,	-- Mo'arg Brute
+												},
+											}),
+											i(146918, {	-- Portal-Stone: Force-Commander Xillious
+												["crs"] = {
+													120662,	-- Doombringer
+													120663,	-- Doomguard Firecaller
+												},
+											}),
+											i(146921, {	-- Portal-Stone: Force-Commander Xillious
+												["cr"] = 120685,	-- Sentinax Warden
+											}),
+											i(146917, {	-- Portal-Stone: Skulguloth
+												["crs"] = {
+													120631,	-- Helfire Infernal
+													120640,	-- Vile Mother
+												},
+											}),
+											i(146916, {	-- Portal-Stone: Than'otalion
+												["crs"] = {
+													120582,	-- Debilitating Eye
+													120581,	-- Draining Eye
+												},
+											}),
+										},
+									}, {
+										i(146906),	-- Sentinax Beacon of Carnage
+										i(146912),	-- Sentinax Beacon of Greater Carnage
+										i(146903),	-- Sentinax Beacon of Domination
+										i(146908),	-- Sentinax Beacon of Engineering
+										i(146922),	-- Sentinax Beacon of Fel Growth
+										i(146914),	-- Sentinax Beacon of Greater Engineering
+										i(146910),	-- Sentinax Beacon of Greater Domination
+										i(146915),	-- Sentinax Beacon of Greater Torment
+										i(146913),	-- Sentinax Beacon of Greater Warbeasts
+										i(146923),	-- Sentinax Beacon of Petrification
+										i(146909),	-- Sentinax Beacon of Torment
+										i(146907),	-- Sentinax Beacon of Warbeasts
+										i(147355),	-- Sentinax Beacon of the Bloodstrike
+										i(146905),	-- Sentinax Beacon of the Firestorm
+										i(146911),	-- Sentinax Beacon of the Greater Firestorm
+									}),
+								}, {
 									n(121092),	-- Anomalous Observer
 									n(121049),	-- Baleful Knight-Captain
 									n(121090),	-- Demented Shivarra
@@ -248,7 +303,7 @@ root(ROOTS.Zones, {
 									n(121077),	-- Lambent Felhunter
 									n(121056),	-- Malformed Terrorguard
 									n(121108),	-- Ruinous Overfiend
-								},
+								}),
 							}),
 							i(146659, {	-- Nethershard Essence
 								["cost"] = { { "c", 1226, 8000 }, },	-- 8,000x Nethershard

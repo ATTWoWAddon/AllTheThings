@@ -98,7 +98,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
 					["groups"] = {
-						i(204699),	-- Suffused Ingots (QI!)
+						o(386649, {
+							["coords"] = {
+								{ 73.3, 70.1, OHNAHRAN_PLAINS },
+								{ 73.3, 71.0, OHNAHRAN_PLAINS },
+								{ 73.8, 72.6, OHNAHRAN_PLAINS },
+								{ 74.4, 70.2, OHNAHRAN_PLAINS },
+								{ 74.4, 72.3, OHNAHRAN_PLAINS },
+								{ 74.5, 71.5, OHNAHRAN_PLAINS },
+							},
+							["groups"] = { i(204699) },	-- Suffused Ingots (QI!)
+						}),
 					},
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(VENDORS, {
 			n(235079, {	-- Ba'orr
@@ -85,16 +85,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["cost"] = { { "c", 3303, 5 }, },	-- Untethered Coin
 					}),
 					iensemble(248996, {	-- Ensemble: Untethered Blade's Garb
-						["cost"] = { { "c", 3303, 8 }, },	-- Untethered Coin
+						["cost"] = { { "c", 3303, 5 }, },	-- Untethered Coin
 					}),
 					iensemble(248998, {	-- Ensemble: Untethered Captain's Full-Plate
-						["cost"] = { { "c", 3303, 8 }, },	-- Untethered Coin
+						["cost"] = { { "c", 3303, 5 }, },	-- Untethered Coin
 					}),
 					iensemble(248995, {	-- Ensemble: Untethered Seer's Vestiture
-						["cost"] = { { "c", 3303, 8 }, },	-- Untethered Coin
+						["cost"] = { { "c", 3303, 5 }, },	-- Untethered Coin
 					}),
 					iensemble(248997, {	-- Ensemble: Untethered Striker's Gear
-						["cost"] = { { "c", 3303, 8 }, },	-- Untethered Coin
+						["cost"] = { { "c", 3303, 5 }, },	-- Untethered Coin
 					}),
 				},
 			}),
@@ -128,4 +128,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));

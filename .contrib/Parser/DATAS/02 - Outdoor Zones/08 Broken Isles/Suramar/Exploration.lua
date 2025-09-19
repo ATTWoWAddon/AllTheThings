@@ -20,6 +20,7 @@ root(ROOTS.Zones, {
 				visit_exploration(10812,{coord={65.0,54.3,SURAMAR}}),	-- Felborne Outpost
 				exploration(7768),	-- Felsoul Hold
 				exploration(7844),	-- Felsoul Hold
+				visit_exploration(8230,{coord={25.1,32.3,SURAMAR}}),	-- Irongrove Retreat
 				exploration(7940),	-- Jandvik
 				exploration(7991),	-- Koralune Manor
 				exploration(8221),	-- Lower Gardens
@@ -30,6 +31,7 @@ root(ROOTS.Zones, {
 				exploration(8233),	-- Moonwhisper Gulch
 				exploration(8173),	-- Ruins of Elune'eth
 				exploration(7916),	-- Sashj'tar Ruins
+				visit_exploration(7928,{coord={35.1,47.4,SURAMAR}}),	-- Shal'Aran
 				exploration(8148),	-- Suramar City
 				exploration(7841),	-- Tel'anor
 				exploration(8163),	-- Temple of Fal'adora

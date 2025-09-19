@@ -2,102 +2,41 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	m(LEGION_DALARAN, {
-	--	["icon"] = 618798,
+		["icon"] = 1535374,
 		["groups"] = {
+			explorationHeader({
+				visit_exploration(15177,{coord={47.2,87.7,LEGION_DALARAN}}),	-- Dalaran
+			}),
 			n(ACHIEVEMENTS, {
 			}),
 			n(QUESTS, {
-				q(89404, {	-- Time Crisis
-					["qg"] = 241140,	-- Moratari
-					["coord"] = { 72.4, 46.0, LEGION_DALARAN },
-				}),
-				q(89405, {	-- Mean Streets of Dalaran
-					["sourceQuest"] =  89404,	-- Time Crisis
-					["qg"] = 241740,	-- Archmage Khadgar <Mirror Image>
-					["coord"] = { 76.7, 42.5, LEGION_DALARAN },
-				}),
-				q(89406, {	-- Seal and Protect
-					["sourceQuest"] = 89405,	-- Mean Streets of Dalaran
-					["qg"] = 241743,	-- Archmage Khadgar
-					["coord"] = { 79.2, 47.7, LEGION_DALARAN },
-				}),
-				q(89407, {	-- Thrift
-					["sourceQuest"] = 89406,	-- Seal and Protect
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-					["groups"] = {
-						o(527833, {	-- Archeology Chest
-							["coord"] = { 40.9, 24.0, LEGION_DALARAN },
-							["groups"] = { i(243607) },	-- Dusty Stone Tablet (QI!)
-						}),
-						o(529397, {	-- Curio Lockbox
-							["coord"] = { 38.8, 39.9, LEGION_DALARAN },
-							["groups"] = { i(243601) },	-- Curious Curio (QI!)
-						}),
-						o(529397, {	-- Curio Lockbox
-							["coord"] = { 46.1, 25.4, LEGION_DALARAN },
-							["groups"] = { i(243604) },	-- Bent and Battered Blade (QI!)
-						}),
-					},
-				}),
-				q(89408, {	-- Threadbare
-					["sourceQuest"] = 89406,	-- Seal and Protect
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-				}),
-				q(89409, {	-- Infinite Bronze
-					["sourceQuests"] = {
-						89407,	-- Thrift
-						89408,	-- Threadbare
-					},
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-				}),
-				q(90659, {	-- Something Borrowed
-					["sourceQuest"] = 89409,	-- Infinite Bronze
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-					["groups"] = {
-						-- currency(3268),	-- Infinite Power
-						-- TODO: Put all artifact weapons here
-						i(242556),	-- Twinblades of the Deceiver (DH)
-						i(242557),	-- Twinblades of the Deceiver (DH)
-					},
-				}),
-				q(90901, {	-- As A Matter of Artifact
-					["sourceQuest"] = 90659,	-- Something Borrowed
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-				}),
-				q(89412, {	-- Get Plenty of Exorcise
-					["sourceQuest"] = 90659,	-- Something Borrowed
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-				}),
-				q(89411, {	-- Scavenger Hunting
-					["sourceQuest"] = 90659,	-- Something Borrowed
-					["qg"] = 241745,	-- Erus
-					["coord"] = { 42.3, 27.2, LEGION_DALARAN },
-					["groups"] = { i(241211) },	-- Legion Armor Scraps (QI!)
-				}),
-				q(89413, {	-- Obliterate, Then Iterate
-					["sourceQuests"] = {
-						90901,	-- As A Matter of Artifact
-						89412,	-- Get Plenty of Exorcise
-						89411,	-- Scavenger Hunting
-					},
-					["qg"] = 241744,	-- Momentus
-					["coord"] = { 42.8, 27.8, LEGION_DALARAN },
-					["groups"] = { i(251901) },	-- Legion Armor Scraps (PQI!)
-				}),
 			}),
 			n(VENDORS, {
 			}),
 			n(ZONE_REWARDS, {
 				n(ARMOR, {
+					filter(CLOAKS, {
+						i(240260),	-- Cape of Devouring Night
+						i(241223),	-- Cloak of Devouring Night
+						i(241758),	-- Draping Shawl of Devouring Night
+						i(240604),	-- Lunarblight Leather Cloak
+						i(240602),	-- Lunarblight Leather Shroud
+						i(240603),	-- Lunarblight Leather Wrap
+						i(240259),	-- Shawl of Devouring Night
+						i(240255),	-- Shroud of Devouring Night
+					}),
 					filter(CLOTH, {
+						i(240354),	-- Amice of Night Eternal
+						i(240351),	-- Belt of Night Eternal
+						i(240349),	-- Boots of Night Eternal
+						i(240348),	-- Cuffs of Night Eternal
+						i(240347),	-- Gloves of Night Eternal
+						i(240355),	-- Guise of Night Eternal
+						i(240350),	-- Legwraps of Night Eternal
+						i(240352),	-- Robe of Night Eternal
+						i(240353),	-- Vestments of Night Eternal
 					}),
 					filter(LEATHER, {
 						i(240775),	-- Lunarblight Leather Cowl
@@ -110,12 +49,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 						i(240777),	-- Lunarblight Leather Tunic
 					}),
 					filter(MAIL, {
+						i(240306),	-- Faceguard of Devouring Night
+						i(240299),	-- Handguards of Devouring Night
+						i(240304),	-- Haubergeon of Devouring Night
+						i(240302),	-- Leggings of Devouring Night
+						i(240305),	-- Spaulders of Devouring Night
+						i(240301),	-- Stompers of Devouring Night
+						i(240303),	-- Waistband of Devouring Night
+						i(240300),	-- Wristguards of Devouring Night
 					}),
 					filter(PLATE, {
+						i(240544),	-- Xorothian Battleplate
+						i(240539),	-- Xorothian Gauntlets
+						i(240543),	-- Xorothian Greatbelt
+						i(240546),	-- Xorothian Helmet
+						i(240541),	-- Xorothian Jackboots
+						i(240542),	-- Xorothian Legguards
+						i(240545),	-- Xorothian Shoulderguards
+						i(240540),	-- Xorothian Wristguards
 					}),
 				}),
 			}),
 		},
 	}),
-}))));
-
+})));

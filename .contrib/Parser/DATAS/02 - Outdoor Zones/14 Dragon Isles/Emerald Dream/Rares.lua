@@ -74,7 +74,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208365, {	-- Winter's Stand
 						i(209948),	-- Spring's Keeper
 					}),
-					i(208881),	-- Shiversnap Blossom (QI!)
+					o(408054, {	-- Shiversnap Blossom
+						i(208881),	-- Shiversnap Blossom (QI!)
+					}),
 					bo(77878, true),	-- Envoy of Winter bonus objective
 				},
 			}),

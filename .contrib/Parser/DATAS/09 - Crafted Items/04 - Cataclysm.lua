@@ -112,7 +112,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ARCHAEOLOGY, {
-		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
 		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, {
 			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
@@ -124,6 +123,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(64652, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Castle of Sand
 				i(64653, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Cat Statue with Emerald Eyes
 				i(60847, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Crawling Claw (PET!)
+				applyclassicphase(MOP_PHASE_ESCALATION, i(97986, {	-- Digmaster's Earthblade (QI!)
+					["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+				})),
 				i(64656, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
 				i(64881, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Pendant of the Scarab Storm (TOY!)
 				i(64904, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ring of the Boy Emperor
@@ -288,7 +290,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62670),	-- Beer-Basted Crocolisk
 		i(62668),	-- Blackbelly Sushi
 		i(62676),	-- Blackened Surprise
-		i(62289),	-- Broiled Dragon Feast
+		i(62289, {["description"] = "This recipe is rewarded from the Guild Cooking achievement 'Set the Oven to Cataclysmic'."}),	-- Broiled Dragon Feast
 		i(62655),	-- Broiled Mountain Trout
 		i(62680),	-- Chocolate Cookie
 		i(62664),	-- Crocolisk Au Gratin
@@ -308,7 +310,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62660),	-- Pickled Guppy
 		i(62653),	-- Salted Eye
 		i(68687, {["timeline"] = {ADDED_4_0_6}}),	-- Scalding Murglesnout
-		i(62290),	-- Seafood Magnifique Feast
+		i(62290, {["description"] = "This recipe is rewarded from the Guild Fishing achievement 'That's a Lot of Bait'."}),	-- Seafood Magnifique Feast
 		i(62652),	-- Seasoned Crab
 		i(62671),	-- Severed Sagefish Head
 		i(62669),	-- Skewered Eel
@@ -439,6 +441,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
+		-- #if AFTER MOP
+		n(COMMON_VENDOR_ITEMS, {
+			i(90146),	-- Tinker's Kit
+		}),
+		-- #endif
 		prof(GNOMISH_ENGINEERING, {
 			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			["groups"] = {
@@ -689,6 +696,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 			["description"] = "Can be caught by fishing in lava using a special lure.",
 			["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
+			-- #if AFTER TWW
+			["collectible"] = false,	-- remove when Blizzard fix fish collection
+			-- #endif
 		}),
 		-- #endif
 		i(53067, {	-- Striped Lurker
@@ -1024,6 +1034,15 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(62235),	-- Divine Companion
 			i(62234),	-- Dungeoneering Guide
 			i(62233),	-- Lord Rottington's Pressed Wisp Book
+		}),
+		filter(MISC, {
+			i(62251),	-- Runescroll of Fortitude II
+			i(63303),	-- Scroll of Agility IX
+			i(63305),	-- Scroll of Intellect IX
+			i(63308),	-- Scroll of Protection IX
+			i(63306),	-- Scroll of Stamina IX
+			i(63304),	-- Scroll of Strength IX
+			i(63307),	-- Scroll of Versatility IX
 		}),
 		-- #if BEFORE 5.0.4
 		n(RELICS, {

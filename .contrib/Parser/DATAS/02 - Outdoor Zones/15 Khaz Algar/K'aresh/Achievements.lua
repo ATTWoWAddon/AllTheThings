@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(ACHIEVEMENTS, {
 			ach(42731),	-- Become a Hero. Become a Phasediver!
@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					["coord"] = { 47.9, 62.6, KARESH },
 				}),
 				crit(106225, {	-- Empurror
+					["description"] = "Must fly up to reach him.",
 					["coord"] = { 73.2, 23.7, KARESH },
 				}),
 				crit(106226, {	-- K'aresh'ire
@@ -85,9 +86,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			ach(42738),	-- We've All Got Swords! (automated)
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(KARESH, {
 			n(ACHIEVEMENTS, {
@@ -96,4 +97,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

@@ -91,7 +91,7 @@ src\Modules\Contributor.lua
 
 # Expansion specific localization files
 db\Classic\LocalizationDB.lua
-db\Classic\Season of Discovery\LocalizationDB.lua
+db\Classic SOD\LocalizationDB.lua
 
 # Load object class templates
 src\Classes\base.lua
@@ -164,8 +164,8 @@ src\UI\Shared Window Logic.lua
 src\UI\Classic Window Logic.lua
 
 # Load expansion specific category database.
-db\Classic\Categories.lua
-db\Classic\Season of Discovery\Categories.lua
+db\Classic\Categories.xml
+db\Classic SOD\Categories.xml
 
 # Window Definitions
 src\UI\Windows\Windows.xml

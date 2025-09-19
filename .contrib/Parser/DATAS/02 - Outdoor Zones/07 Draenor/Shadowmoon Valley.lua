@@ -189,6 +189,7 @@ root(ROOTS.Zones, {
 					exploration(6797),	-- Gul'var
 					visit_exploration(7473,{coord={61.4,34.5,DRAENOR_SHADOWMOON_VALLEY}}),	-- Hills of Valuun
 					exploration(7221),	-- Isle of Shadows
+					visit_exploration(6785,{coord={66.6,43.8,DRAENOR_SHADOWMOON_VALLEY}}),	-- K'arani Terrace
 					exploration(6930),	-- Karabor
 					visit_exploration(6946,{coord={80.6,42.5,DRAENOR_SHADOWMOON_VALLEY}}),	-- Karabor Harbor
 					exploration(6793),	-- Light's Fall
@@ -206,7 +207,7 @@ root(ROOTS.Zones, {
 					visit_exploration(7189,{coord={50.4,82.0,DRAENOR_SHADOWMOON_VALLEY}}),	-- Shrine of Othaar
 					exploration(6909),	-- Socrethar's Rise
 					exploration(7231),	-- Swamplight Trail
-					visit_exploration(7265,{coord={41.8,10.7,DRAENOR_SHADOWMOON_VALLEY}}),	-- Tanaan Channel
+					visit_exploration(7262,{coord={41.8,10.7,DRAENOR_SHADOWMOON_VALLEY}}),	-- Tanaan Channel
 					visit_exploration(6794,{coord={48.3,36.2,DRAENOR_SHADOWMOON_VALLEY}}),	-- Teluuna Observatory
 					visit_exploration(6872,{coord={30.7,42.6,DRAENOR_SHADOWMOON_VALLEY}}),	-- Terrace of the Stars
 					exploration(6791),	-- The Burial Fields
@@ -1877,6 +1878,21 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					i(97979, {	-- The Bear and the Lady Fair (QI!)
+						["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+						["crs"] = {
+							85168,	-- Sargerei Acolyte
+							81542,	-- Sargerei Binder
+							84945,	-- Sargerei Darkblade
+							81543,	-- Sargerei Demonlord
+							86024,	-- Sargerei Demonspeaker
+							81541,	-- Sargerei Initiate
+							81605,	-- Sargerei Initiate
+							79681,	-- Sargerei Netherbinder
+							84888,	-- Sargerei Worker
+							81858,	-- Soulbinder Zamaya
+						},
+					}),
 					i(113554, {	-- Zomstrok (PET!)
 						["description"] = "Can be found on the islands southwest of Socrethar's Rise.",
 						["crs"] = {

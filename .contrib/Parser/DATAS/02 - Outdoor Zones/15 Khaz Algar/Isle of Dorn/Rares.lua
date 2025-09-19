@@ -1,10 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(221128, {	-- Clawbreaker K'zithix
@@ -65,6 +62,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 73.1, 40.0, ISLE_OF_DORN },
 				["questID"] = 81921,
 				["groups"] = {
+					i(221247),	-- Cavernous Critter Shooter
 					i(223948),	-- Stubborn Wolf's Greathelm
 				},
 			}),
@@ -231,9 +229,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(ISLE_OF_DORN, {
 			n(RARES, {
@@ -285,4 +283,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

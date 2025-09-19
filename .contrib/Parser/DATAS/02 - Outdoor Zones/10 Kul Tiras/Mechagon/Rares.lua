@@ -370,7 +370,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 82.3, 77.8, MECHAGON },
 				["isDaily"] = true,
 				["groups"] = {
-					i(168490),	-- Blueprint: Protocol Transference Device
 					i(170470),	-- Reinforced Grease Deflector
 				},
 			}),

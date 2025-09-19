@@ -1,5 +1,5 @@
 2.5.1.39399
-ach(15018),	-- Infernal Gladiator
+ach(15018),	-- Infernal Gladiator: Season 1 \\ Infernal Gladiator
 ach(15019),	-- Gladiator: Season 1
 ach(15020),	-- Duelist: Season 1
 ach(15021),	-- Rival: Season 1

@@ -120,6 +120,12 @@ function(item)
 	return not item.pvp or false
 end);
 
+-- Challenge Master
+DefineToggleFilter("ChallengeMaster", AccountFilters,
+function(item)
+	return not item.cm or false
+end);
+
 -- PetBattles
 DefineToggleFilter("PetBattles", AccountFilters,
 function(item)
@@ -608,9 +614,7 @@ app.AddEventHandler("OnStartup", function()
 	CacheSettingsData();
 end)
 -- Cache filter-related content from Settings here instead of checking in every function call
-app.AddEventHandler("OnRecalculate_NewSettings", function()
-	CacheSettingsData();
-end)
+app.AddEventHandler("OnRecalculate_NewSettings", CacheSettingsData)
 
 -- Maybe need something like this eventually? This hasn't been tested or utilized much
 -- local PreviousFilters = {}

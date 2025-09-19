@@ -48,10 +48,6 @@ i(20804),	-- a's Package \\ Erona's Package
 i(20812),	-- ered Pelt \\ Tattered Pelt
 i(20813),	-- Tooth \\ Lynx Tooth
 i(20814),	-- Broken Master's Throwing Dagger \\ Master's Throwing Dagger
-i(20819),	-- Malachite \\ Cut Malachite
-i(20822),	-- Tigerseye \\ Cut Tigerseye
-i(20825),	-- Cut Shadowgem
-i(20829),	-- Cut Moonstone
 i(20842),	-- ed Tender Vine \\ Frayed Tender Vine
 i(20843),	-- hed Petal \\ Smashed Petal
 i(20845),	-- Wyrm Scale \\ Torn Wyrm Scale
@@ -62,11 +58,6 @@ i(20857),	-- y Bread \\ Honey Bread
 i(20934),	-- th Essence \\ Wraith Essence
 i(20935),	-- ted Wraith Essence \\ Tainted Wraith Essence
 i(20938),	-- onwing Square Gift Voucher \\ Falconwing Square Gift Voucher
-i(20952),	-- Cut Agate
-i(20953),	-- Jade \\ Cut Jade
-i(20957),	-- Citrine \\ Cut Citrine
-i(20962),	-- Cut Aquamarine
-i(20965),	-- Cut Ruby
 i(20983),	-- yte's Dagger \\ Acolyte's Dagger
 i(21026),	-- Oracle Sphere
 i(21044),	-- Reindeer Reins (TEST)
@@ -113,12 +104,8 @@ i(21098),	-- 66 Epic Shadow Wand
 i(21757),	-- scale Murloc Head \\ Grimscale Murloc Head
 i(21770),	-- of Mmmrrrggglll \\ Ring of Mmmrrrggglll
 i(21771),	-- ain Kelisendra's Cargo \\ Captain Kelisendra's Cargo
-i(21772),	-- Cut Sapphire
-i(21773),	-- Cut Opal
 i(21781),	-- lis' Head \\ Thaelis' Head \\ Thaelis's Head
 i(21783),	-- ster Duskwither's Journal \\ Magister Duskwither's Journal
-i(21785),	-- Cut Emerald
-i(21786),	-- Cut Azerothian Diamond
 i(21807),	-- rked Letter \\ Unmarked Letter
 i(21808),	-- ne Core \\ Arcane Core
 i(21878),	-- zzDEPRECATED Spellthread \\ zzOLDSpellthread
@@ -201,30 +188,6 @@ i(23026),	-- Supply Request Crystal
 i(23051),	-- Monster - Bow, Raid Snake ZG
 i(23074),	-- [PH] Goblin Tooth
 i(23076),	-- liant Citrine \\ Brilliant Citrine
-i(23094),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Teardrop Blood Garnet
-i(23095),	-- Blood Garnet \\ Bold Blood Garnet
-i(23096),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Runed Blood Garnet
-i(23097),	-- cate Blood Garnet \\ Delicate Blood Garnet
-i(23098),	-- ribed Flame Spessarite \\ Inscribed Flame Spessarite
-i(23099),	-- less Flame Spessarite \\ Reckless Flame Spessarite \\ Luminous Flame Spessarite
-i(23100),	-- ting Shadow Draenite \\ Glinting Shadow Draenite \\ Glinting Flame Spessarite
-i(23101),	-- nt Flame Spessarite \\ Potent Flame Spessarite
-i(23103),	-- ant Deep Peridot \\ Radiant Deep Peridot
-i(23104),	-- ed Deep Peridot \\ Jagged Deep Peridot
-i(23105),	-- l Deep Peridot \\ Regal Deep Peridot \\ Enduring Deep Peridot
-i(23106),	-- fied Shadow Draenite \\ Purified Shadow Draenite \\ Dazzling Deep Peridot
-i(23108),	-- less Shadow Draenite \\ Timeless Shadow Draenite \\ Glowing Shadow Draenite
-i(23109),	-- fied Shadow Draenite \\ Purified Shadow Draenite \\ Royal Shadow Draenite
-i(23110),	-- ting Shadow Draenite \\ Shifting Shadow Draenite
-i(23111),	-- reign Shadow Draenite \\ Sovereign Shadow Draenite
-i(23113),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Brilliant Golden Draenite
-i(23114),	-- th Golden Draenite \\ Smooth Golden Draenite \\ Gleaming Golden Draenite
-i(23115),	-- le Golden Draenite \\ Subtle Golden Draenite \\ Thick Golden Draenite
-i(23116),	-- d Azure Moonstone \\ Rigid Azure Moonstone \\ Rigid Golden Draenite
-i(23118),	-- d Azure Moonstone \\ Solid Azure Moonstone
-i(23119),	-- kling Azure Moonstone \\ Sparkling Azure Moonstone
-i(23120),	-- my Azure Moonstone \\ Stormy Azure Moonstone
-i(23121),	-- kling Azure Moonstone \\ Sparkling Azure Moonstone \\ Lustrous Azure Moonstone
 i(23157),	-- k Citrine \\ Thick Citrine
 i(23158),	-- Solid Aquamarine
 i(23159),	-- Sparkling Aquamarine
@@ -389,7 +352,6 @@ i(23833),	-- e Murloc Knife \\ Crude Murloc Knife
 i(23834),	-- e Murloc Idol \\ Crude Murloc Idol
 i(23843),	-- l of Air \\ Whorl of Air
 i(23845),	-- ger Hide \\ Ravager Hide
-i(23847),	-- ai's Band \\ Nolkai's Band
 i(23849),	-- lpine Grain \\ Stillpine Grain
 i(23851),	-- ered Journal \\ Battered Journal
 i(23853),	-- Letter to <Name>
@@ -492,40 +454,11 @@ i(24005),	-- Murloc Tag Stub
 i(24010),	-- Hellfire Prison Key
 i(24025),	-- hclaw's Paw \\ Deathclaw's Paw
 i(24026),	-- r Brown Bear Flank \\ Elder Brown Bear Flank
-i(24027),	-- Living Ruby \\ Bold Living Ruby
-i(24028),	-- cate Living Ruby \\ Delicate Living Ruby
-i(24029),	-- liant Living Ruby \\ Brilliant Living Ruby \\ Teardrop Living Ruby
-i(24030),	-- liant Living Ruby \\ Brilliant Living Ruby \\ Runed Living Ruby
-i(24031),	-- cate Living Ruby \\ Delicate Living Ruby \\ Bright Living Ruby
-i(24032),	-- le Dawnstone \\ Subtle Dawnstone \\ Subtle Living Ruby
-i(24033),	-- d Star of Elune \\ Solid Star of Elune
-i(24035),	-- kling Star of Elune \\ Sparkling Star of Elune
-i(24036),	-- hing Living Ruby \\ Flashing Living Ruby
-i(24037),	-- kling Star of Elune \\ Sparkling Star of Elune \\ Lustrous Star of Elune
-i(24039),	-- my Star of Elune \\ Stormy Star of Elune
 i(24040),	-- d Mushroom \\ Blood Mushroom
 i(24041),	-- tic Stinkhorn \\ Aquatic Stinkhorn
 i(24042),	-- ous Polyspore \\ Ruinous Polyspore
 i(24043),	-- Cone Fungus \\ Fel Cone Fungus
-i(24047),	-- liant Living Ruby \\ Brilliant Living Ruby \\ Brilliant Dawnstone
-i(24048),	-- th Dawnstone \\ Smooth Dawnstone
 i(24049),	-- a's Tear \\ Ysera's Tear
-i(24050),	-- th Dawnstone \\ Smooth Dawnstone \\ Gleaming Dawnstone
-i(24051),	-- d Star of Elune \\ Rigid Star of Elune \\ Rigid Dawnstone
-i(24052),	-- le Dawnstone \\ Subtle Dawnstone \\ Thick Dawnstone
-i(24053),	-- ic Dawnstone \\ Mystic Dawnstone
-i(24054),	-- reign Nightseye \\ Sovereign Nightseye
-i(24055),	-- ting Nightseye \\ Shifting Nightseye
-i(24056),	-- less Nightseye \\ Timeless Nightseye \\ Glowing Nightseye
-i(24057),	-- fied Nightseye \\ Purified Nightseye \\ Royal Nightseye
-i(24058),	-- ribed Noble Topaz \\ Inscribed Noble Topaz
-i(24059),	-- nt Noble Topaz \\ Potent Noble Topaz
-i(24060),	-- less Noble Topaz \\ Reckless Noble Topaz \\ Luminous Noble Topaz
-i(24061),	-- ting Nightseye \\ Glinting Nightseye \\ Glinting Noble Topaz
-i(24062),	-- l Talasite \\ Regal Talasite \\ Enduring Talasite
-i(24065),	-- fied Nightseye \\ Purified Nightseye \\ Dazzling Talasite
-i(24066),	-- ant Talasite \\ Radiant Talasite
-i(24067),	-- ed Talasite \\ Jagged Talasite
 i(24068),	-- ne Residue \\ Arcane Residue
 i(24081),	-- rnaar Fel Wood \\ Satyrnaar Fel Wood
 i(24084),	-- nei Banner \\ Draenei Banner
@@ -801,18 +734,8 @@ i(25873),	-- Throwing Knife \\ Keen Throwing Knife
 i(25875),	-- ly Throwing Axe \\ Deadly Throwing Axe
 i(25876),	-- ming Throwing Axe \\ Gleaming Throwing Axe
 i(25877),	-- er's Throwing Dagger \\ Master's Throwing Dagger
-i(25884),	-- al Stone Statue \\ Primal Stone Statue
 i(25889),	-- nei Holy Water \\ Draenei Holy Water
-i(25890),	-- ructive Skyfire Diamond \\ Destructive Skyfire Diamond
 i(25891),	-- tine Shimmerscale Eel \\ Pristine Shimmerscale Eel
-i(25893),	-- ical Skyfire Diamond \\ Mystical Skyfire Diamond
-i(25894),	-- t Skyfire Diamond \\ Swift Skyfire Diamond
-i(25895),	-- matic Skyfire Diamond \\ Enigmatic Skyfire Diamond
-i(25896),	-- rful Earthstorm Diamond \\ Powerful Earthstorm Diamond
-i(25897),	-- ing Earthstorm Diamond \\ Bracing Earthstorm Diamond
-i(25898),	-- cious Earthstorm Diamond \\ Tenacious Earthstorm Diamond
-i(25899),	-- al Earthstorm Diamond \\ Brutal Earthstorm Diamond
-i(25901),	-- ghtful Earthstorm Diamond \\ Insightful Earthstorm Diamond
 i(25911),	-- aged Wood \\ Salvaged Wood
 i(25912),	-- aged Metal \\ Salvaged Metal
 i(25938),	-- eries of the Light \\ Mysteries of the Light
@@ -1017,7 +940,6 @@ i(27854),	-- ed Talbuk Venison \\ Smoked Talbuk Venison
 i(27855),	-- har Grainbread \\ Mag'har Grainbread
 i(27856),	-- hyl Berries \\ Skethyl Berries
 i(27857),	-- dar Sharp \\ Garadar Sharp
-i(27858),	-- pring Carp \\ Sunspring Carp
 i(27859),	-- ar Caps \\ Zangar Caps
 i(27860),	-- fied Draenic Water \\ Purified Draenic Water
 i(27861),	-- rai's Stolen Goods \\ Lathrai's Stolen Goods
@@ -1088,7 +1010,6 @@ i(28283),	-- Mirror \\ Soul Mirror
 i(28284),	-- Carlos Tequila \\ Don Carlos Tequila
 i(28287),	-- of Sedative Serum \\ Vial of Sedative Serum
 i(28289),	-- Dargonhawk Whistle
-i(28290),	-- th Golden Draenite \\ Smooth Golden Draenite
 i(28292),	-- mage Vargoth's Staff \\ Archmage Vargoth's Staff
 i(28336),	-- ara's Tome \\ Belmara's Tome
 i(28351),	-- ric's Blade \\ Dathric's Blade
@@ -1107,7 +1028,6 @@ i(28399),	-- ered Draenic Water \\ Filtered Draenic Water
 i(28408),	-- en Silver Star \\ Broken Silver Star
 i(28417),	-- er Ray Stinger \\ Nether Ray Stinger
 i(28452),	-- dgem Shard \\ Bloodgem Shard
-i(28455),	-- mage Vargoth's Staff \\ Archmage Vargoth's Staff
 i(28457),	-- real Technology \\ Ethereal Technology
 i(28471),	-- Krasus' Compendium \\ Krasus's Compendium
 i(28472),	-- us' Compendium - Chapter 1 \\ Krasus' Compendium - Chapter 1 \\ Krasus's Compendium - Chapter 1
@@ -1134,7 +1054,6 @@ i(28563),	-- claw's Hand \\ Doomclaw's Hand
 i(28564),	-- gy Isolation Cube \\ Energy Isolation Cube
 i(28571),	-- k Scroll \\ Blank Scroll
 i(28580),	-- ar Console Transcription \\ B'naar Console Transcription
-i(28595),	-- cate Blood Garnet \\ Delicate Blood Garnet \\ Bright Blood Garnet
 i(28598),	-- Fel Reaver Construction Manual
 i(28607),	-- ury Disguise \\ Sunfury Disguise
 i(28634),	-- p Reaver X6000 Controller \\ Scrap Reaver X6000 Controller
@@ -1226,7 +1145,6 @@ i(29448),	-- har Mild Cheese \\ Mag'har Mild Cheese
 i(29449),	-- espire Bagel \\ Bladespire Bagel
 i(29450),	-- ari Grapes \\ Telaari Grapes
 i(29451),	-- thoof Ribs \\ Clefthoof Ribs
-i(29452),	-- ar Trout \\ Zangar Trout
 i(29453),	-- eggar Mushroom \\ Sporeggar Mushroom
 i(29454),	-- erwine \\ Silverwine
 i(29459),	-- reum Relay Data \\ Ethereum Relay Data
@@ -1627,7 +1545,6 @@ i(31389),	-- Captured Eye of Grillok
 i(31403),	-- emane's Sleeping Powder \\ Sablemane's Sleeping Powder
 i(31449),	-- illed Stalker Sight \\ Distilled Stalker Sight
 i(31450),	-- lth of the Stalker \\ Stealth of the Stalker
-i(31451),	-- Energy \\ Pure Energy
 i(31463),	-- ak's Shard \\ Zezzak's Shard
 i(31469),	-- k Dragon Corpse \\ Black Dragon Corpse
 i(31489),	-- of the Grishna \\ Orb of the Grishna
@@ -1707,16 +1624,6 @@ i(31850),	-- QATest +500 Dodge Ring \\ QATest +500 Defense Ring
 i(31851),	-- QATest +150 Dodge Ring \\ QATest +150 Defense Ring
 i(31852),	-- r Combat Healing Potion \\ Major Combat Healing Potion
 i(31854),	-- r Combat Mana Potion \\ Major Combat Mana Potion
-i(31860),	-- d Azure Moonstone \\ Rigid Azure Moonstone \\ Great Golden Draenite
-i(31861),	-- d Star of Elune \\ Rigid Star of Elune \\ Great Dawnstone
-i(31862),	-- ting Shadow Draenite \\ Shifting Shadow Draenite \\ Balanced Shadow Draenite
-i(31863),	-- ting Nightseye \\ Shifting Nightseye \\ Balanced Nightseye
-i(31864),	-- ting Shadow Draenite \\ Shifting Shadow Draenite \\ Infused Shadow Draenite
-i(31865),	-- ting Nightseye \\ Glinting Nightseye \\ Infused Nightseye
-i(31866),	-- ed Shadow Draenite \\ Veiled Shadow Draenite \\ Veiled Flame Spessarite
-i(31867),	-- ed Nightseye \\ Veiled Nightseye \\ Veiled Noble Topaz
-i(31868),	-- ly Noble Topaz \\ Deadly Noble Topaz \\ Wicked Noble Topaz
-i(31869),	-- ly Flame Spessarite \\ Deadly Flame Spessarite \\ Wicked Flame Spessarite
 i(31881),	-- nei Orphan Whistle \\ Draenei Orphan Whistle
 i(31944),	-- nic Capacitor \\ Demonic Capacitor
 i(31945),	-- ow Circuit \\ Shadow Circuit
@@ -1735,42 +1642,7 @@ i(32069),	-- -Tombs Stasis Chamber Key \\ Mana-Tombs Stasis Chamber Key
 i(32074),	-- cs of Aviana \\ Relics of Aviana
 i(32075),	-- Book of the Raven
 i(32091),	-- Alex's Test Beatdown Mace
-i(32193),	-- Crimson Spinel \\ Bold Crimson Spinel
-i(32194),	-- cate Crimson Spinel \\ Delicate Crimson Spinel
-i(32195),	-- liant Crimson Spinel \\ Brilliant Crimson Spinel \\ Teardrop Crimson Spinel
-i(32196),	-- liant Crimson Spinel \\ Brilliant Crimson Spinel \\ Runed Crimson Spinel
-i(32197),	-- cate Crimson Spinel \\ Delicate Crimson Spinel \\ Bright Crimson Spinel
-i(32198),	-- le Lionseye \\ Subtle Lionseye \\ Subtle Crimson Spinel
-i(32199),	-- hing Crimson Spinel \\ Flashing Crimson Spinel
-i(32200),	-- d Empyrean Sapphire \\ Solid Empyrean Sapphire
-i(32201),	-- kling Empyrean Sapphire \\ Sparkling Empyrean Sapphire
-i(32202),	-- kling Empyrean Sapphire \\ Sparkling Empyrean Sapphire \\ Lustrous Empyrean Sapphire
-i(32203),	-- my Empyrean Sapphire \\ Stormy Empyrean Sapphire
-i(32204),	-- liant Crimson Spinel \\ Brilliant Crimson Spinel \\ Brilliant Lionseye
-i(32205),	-- th Lionseye \\ Smooth Lionseye
-i(32206),	-- d Empyrean Sapphire \\ Rigid Empyrean Sapphire \\ Rigid Lionseye
-i(32207),	-- th Lionseye \\ Smooth Lionseye \\ Gleaming Lionseye
-i(32208),	-- le Lionseye \\ Subtle Lionseye \\ Thick Lionseye
-i(32209),	-- ic Lionseye \\ Mystic Lionseye
-i(32210),	-- d Empyrean Sapphire \\ Rigid Empyrean Sapphire \\ Great Lionseye
-i(32211),	-- reign Shadowsong Amethyst \\ Sovereign Shadowsong Amethyst
-i(32212),	-- ting Shadowsong Amethyst \\ Shifting Shadowsong Amethyst
-i(32213),	-- ting Shadowsong Amethyst \\ Shifting Shadowsong Amethyst \\ Balanced Shadowsong Amethyst
-i(32214),	-- ting Shadowsong Amethyst \\ Glinting Shadowsong Amethyst \\ Infused Shadowsong Amethyst
-i(32215),	-- less Shadowsong Amethyst \\ Timeless Shadowsong Amethyst \\ Glowing Shadowsong Amethyst
-i(32216),	-- fied Shadowsong Amethyst \\ Purified Shadowsong Amethyst \\ Royal Shadowsong Amethyst
-i(32217),	-- ribed Pyrestone \\ Inscribed Pyrestone
-i(32218),	-- nt Pyrestone \\ Potent Pyrestone
-i(32219),	-- less Pyrestone \\ Reckless Pyrestone \\ Luminous Pyrestone
-i(32220),	-- ting Shadowsong Amethyst \\ Glinting Shadowsong Amethyst \\ Glinting Pyrestone
-i(32221),	-- ed Shadowsong Amethyst \\ Veiled Shadowsong Amethyst \\ Veiled Pyrestone
-i(32222),	-- ly Pyrestone \\ Deadly Pyrestone \\ Wicked Pyrestone
-i(32223),	-- l Seaspray Emerald \\ Regal Seaspray Emerald \\ Enduring Seaspray Emerald
-i(32224),	-- ant Seaspray Emerald \\ Radiant Seaspray Emerald
-i(32225),	-- fied Shadowsong Amethyst \\ Purified Shadowsong Amethyst \\ Dazzling Seaspray Emerald
-i(32226),	-- ed Seaspray Emerald \\ Jagged Seaspray Emerald
 i(32244),	-- 's Stone \\ Seer's Stone
-i(32290),	-- gn: Brilliant Crimson Spinel \\ Design: Brilliant Crimson Spinel \\ Design: Brilliant Lionseye
 i(32313),	-- n Stone \\ Raven Stone
 i(32315),	-- rion Sparrowhawk Whistle \\ Cenarion Sparrowhawk Whistle
 i(32320),	-- ive Sparrowhawk \\ Captive Sparrowhawk
@@ -1789,8 +1661,6 @@ i(32383),	-- loc's Soul \\ Skulloc's Soul
 i(32384),	-- Monster - Sword, 1H - Blackwing A02
 i(32406),	-- uard Blasting Charges \\ Skyguard Blasting Charges
 i(32408),	-- entus Spine \\ Naj'entus Spine
-i(32409),	-- ntless Earthstorm Diamond \\ Relentless Earthstorm Diamond
-i(32410),	-- dering Skyfire Diamond \\ Thundering Skyfire Diamond
 i(32414),	-- Tom's Legs A
 i(32415),	-- Tom's Legs B
 i(32416),	-- Tom's Legs C
@@ -1906,10 +1776,8 @@ i(32822),	-- less Arcane Essence \\ Flawless Arcane Essence
 i(32823),	-- dari Lord Balthas' Instructions \\ Illidari Lord Balthas' Instructions
 i(32824),	-- Tigole's Trashbringer \\ Trashbringer
 i(32825),	-- Cannon \\ Soul Cannon
-i(32833),	-- fied Jaggal Pearl \\ Purified Jaggal Pearl
 i(32834),	-- er Ray Cage \\ Nether Ray Cage
 i(32835),	-- 'la Care Package \\ Ogri'la Care Package
-i(32836),	-- fied Shadow Pearl \\ Purified Shadow Pearl
 i(32840),	-- r Arcane Protection Potion \\ Major Arcane Protection Potion
 i(32842),	-- onmaw Flare Gun \\ Dragonmaw Flare Gun
 i(32843),	-- er Medals \\ Scryer Medals
@@ -2003,19 +1871,12 @@ i(33115),	-- ed Letter \\ Sealed Letter
 i(33118),	-- Socket Test Shoulders [PH] \\ Socket Testing Item
 i(33126),	-- sher Oil \\ Thresher Oil
 i(33127),	-- ardly Denizens of the Deep \\ Dastardly Denizens of the Deep
-i(33131),	-- son Sun \\ Crimson Sun
 i(33132),	-- cate Fire Ruby \\ Delicate Fire Ruby
-i(33133),	-- Julio's Heart \\ Don Julio's Heart
-i(33134),	-- ee's Rose \\ Kailee's Rose
-i(33135),	-- ing Star \\ Falling Star
 i(33137),	-- kling Falling Star \\ Sparkling Falling Star
 i(33138),	-- ic Bladestone \\ Mystic Bladestone
 i(33139),	-- liant Bladestone \\ Brilliant Bladestone
-i(33140),	-- d of Amber \\ Blood of Amber
 i(33141),	-- d Bladestone \\ Rigid Bladestone \\ Great Bladestone
 i(33142),	-- d Bladestone \\ Rigid Bladestone
-i(33143),	-- e of Blades \\ Stone of Blades
-i(33144),	-- t of Eternity \\ Facet of Eternity
 i(33163),	-- elin Cargo \\ Zeppelin Cargo
 i(33166),	-- e's Fish Paste, Extra Strength \\ Pagle's Fish Paste, Extra Strength
 i(33175),	-- tail \\ Wyrmtail
@@ -2050,7 +1911,6 @@ i(33772),	-- Testing Gladiator's Lamellar Shoulders
 i(33775),	-- [PH] Creepy Rag Doll
 i(33776),	-- [PH] Tiny Creepy Rag Doll
 i(33777),	-- [PH] Huge Creepy Rag Doll
-i(33782),	-- dy Talasite \\ Steady Talasite
 i(33785),	-- TEMP - Gnome Loot 1
 i(33786),	-- TEMP - Gnome Loot 2
 i(33787),	-- TEMP - Gnome Loot 3
@@ -2109,7 +1969,6 @@ i(34158),	-- A Tabard \\ Team A Tabard
 i(34159),	-- Team B Tabard
 i(34161),	-- Kael's Standard
 i(34171),	-- er Stationery \\ Winter Stationery
-i(34220),	-- tic Skyfire Diamond \\ Chaotic Skyfire Diamond
 i(34246),	-- gled Mana Cell \\ Smuggled Mana Cell
 i(34248),	-- 'ir Phasing Device \\ Bash'ir Phasing Device
 i(34250),	-- Skill: Throw Bullet
@@ -2178,9 +2037,6 @@ i(35237),	-- of the Crawler \\ Orb of the Crawler
 i(35277),	-- ight Correspondence \\ Twilight Correspondence
 i(35287),	-- nous Bluetail \\ Luminous Bluetail
 i(35314),	-- ially Digested Weeds \\ Partially Digested Weeds
-i(35315),	-- k Dawnstone \\ Quick Dawnstone
-i(35316),	-- less Noble Topaz \\ Reckless Noble Topaz
-i(35318),	-- eful Talasite \\ Forceful Talasite
 i(35396),	-- ant 2H Weapon - Major Agility \\ Enchant 2H Weapon - Major Agility
 i(35397),	-- ant 2H Weapon - Savagery \\ Enchant 2H Weapon - Savagery
 i(35398),	-- ant Boots - Boar's Speed \\ Enchant Boots - Boar's Speed
@@ -2234,8 +2090,6 @@ i(35461),	-- ant Weapon - Spellsurge \\ Enchant Weapon - Spellsurge
 i(35462),	-- ant Weapon - Sunfire \\ Enchant Weapon - Sunfire
 i(35489),	-- liant Crimson Spinel \\ Brilliant Crimson Spinel \\ Teardrop Crimson Spinel
 i(35499),	-- Ninja Grenade [PH]
-i(35501),	-- nal Earthstorm Diamond \\ Eternal Earthstorm Diamond
-i(35503),	-- r Skyfire Diamond \\ Ember Skyfire Diamond
 i(35512),	-- et Full of Snow \\ Pocket Full of Snow
 i(35517),	-- Pattern: Bindings of Lightning Reflexes
 i(35518),	-- Pattern: Bracers of Nimble Thought
@@ -2264,17 +2118,12 @@ i(35568),	-- e of Silvermoon \\ Flame of Silvermoon
 i(35569),	-- e of the Exodar \\ Flame of the Exodar
 i(35674),	-- Test Druid  Weapon
 i(35691),	-- ed Metal Parts \\ Ruined Metal Parts
-i(35707),	-- l Talasite \\ Regal Talasite \\ Regal Nightseye
 i(35710),	-- Delicious Baked Ham
 i(35713),	-- Ninja Hook [PH]
 i(35720),	-- of Frost's Private Label \\ Lord of Frost's Private Label
 i(35721),	-- Flaskataur's Lamp
 i(35722),	-- r's Wipe Neutralizer \\ Wipe Neutralizer \\ Foror's Wipe Neutralizer
 i(35732),	-- TEST HELM
-i(35758),	-- dy Seaspray Emerald \\ Steady Seaspray Emerald
-i(35759),	-- eful Seaspray Emerald \\ Forceful Seaspray Emerald
-i(35760),	-- less Pyrestone \\ Reckless Pyrestone
-i(35761),	-- k Lionseye \\ Quick Lionseye
 i(35828),	-- mic Beacon \\ Totemic Beacon
 i(36748),	-- Brewmaiden's Brew \\ Dark Brewmaiden's Brew
 i(36876),	-- ched Holy Symbol \\ Scorched Holy Symbol
@@ -2294,7 +2143,6 @@ i(37496),	-- ry Brew \\ Binary Brew
 i(37497),	-- mnal Acorn Ale \\ Autumnal Acorn Ale
 i(37498),	-- lett's Bitter Brew \\ Bartlett's Bitter Brew
 i(37499),	-- of Frost's Private Label \\ Lord of Frost's Private Label
-i(37503),	-- fied Shadowsong Amethyst \\ Purified Shadowsong Amethyst
 i(37567),	-- ing Injector Kit \\ Healing Injector Kit \\ Injector Kit: Super Healing Potions
 i(37588),	-- ly Digested Fish \\ Mostly Digested Fish
 i(37605),	-- Pouch of Pennies
@@ -2310,9 +2158,7 @@ i(37906),	-- ry Brew \\ Binary Brew
 i(37907),	-- mnal Acorn Ale \\ Autumnal Acorn Ale
 i(37908),	-- lett's Bitter Brew \\ Bartlett's Bitter Brew
 i(37909),	-- of Frost's Private Label \\ Lord of Frost's Private Label
-i(38291),	-- real Mutagen \\ Ethereal Mutagen
 i(38294),	-- real Liqueur \\ Ethereal Liqueur
-i(38300),	-- ted Ethereum Essence \\ Diluted Ethereum Essence
 i(38308),	-- real Essence Sphere \\ Ethereal Essence Sphere
 i(38427),	-- led Egg \\ Pickled Egg
 i(38428),	-- -Salted Pretzel \\ Rock-Salted Pretzel

@@ -6,52 +6,10 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
 			i(133804),	-- Faded Bag of Loot
-			i(133956),	-- Volatile Spell Focus
-			i(190067),	-- Fel-Marked Grips
-			i(190072),	-- Fel-Marked Hauberk
-			i(190221),	-- Waistwrap of the Archdruid's Nightmare
-			i(190222),	-- Sandals of the Archdruid's Nightmare
-			i(190223),	-- Jerkin of the Archdruid's Nightmare
-			i(190224),	-- Grips of the Archdruid's Nightmare
-			i(190225),	-- Mask of the Archdruid's Nightmare
-			i(190226),	-- Leggings of the Archdruid's Nightmare
-			i(190227),	-- Raiment of the Archdruid's Nightmare
-			i(190228),	-- Mantle of the Archdruid's Nightmare
-			i(190229),	-- Bindings of the Archdruid's Nightmare
-			i(190432),	-- Fel-Marked Bracers
-			i(190435),	-- Verdant Dreamscribed Belt
-			i(190437),	-- Verdant Dreamscribed Collar
-			i(190440),	-- Fel-Marked Crown
 			i(190547),	-- Val'sharah Protector's Bracers
-			i(190555),	-- Verdant Dreamscribed Robe
-			i(190556),	-- Fel-Marked Legguards
 			i(190676),	-- Val'sharah Protector's Gauntlets
-			i(190700),	-- Fel-Marked Boots
-			i(190709),	-- Fel-Marked Pauldrons
-			i(190787),	-- Verdant Dreamscribed Cuffs
-			i(190806),	-- Fel-Marked Cinch
-			i(190809),	-- Verdant Dreamscribed Slippers
-			i(190815),	-- Verdant Dreamscribed Leggings
 			i(190868),	-- Verdant Dreamscribed Scrollmantle
-			i(232303),	-- Unbound Banner of the Algari
-			i(232307),	-- Astral Champion's Prestigious Banner
-			i(234273),	-- A Dimmed Crystal
-			i(235630),	-- Ensemble: Runespeaker Wraps
-			i(235900),	-- Holy Goldforged Chestguard
-			i(235901),	-- Holy Goldforged Gorget
-			i(235902),	-- Holy Goldforged Pauldrons
 			i(235903),	-- Gold Lightforged Chestguard
-			i(235904),	-- Holy Goldforged Gloves
-			i(235905),	-- Holy Goldforged Girdle
-			i(235906),	-- Holy Goldforged Legplates
-			i(235907),	-- Holy Goldforged Hoofguards
-			i(235908),	-- Holy Goldforged Bracers
-			i(235915),	-- Highmountain Hide Cap
-			i(236772),	-- Strom'kar, the Warbreaker
-			i(237746),	-- Warswords of the Valarjar
-			i(237747),	-- Warswords of the Valarjar
-			i(237748),	-- Scaleshard
-			i(237749),	-- Scale of the Earth-Warder
 			i(237750),	-- Warbreaker's Revenge
 			i(237751),	-- Val'kyrian Rebirth
 			i(237752),	-- Flame-scarred Scales of the Earth-Warder
@@ -74,37 +32,13 @@ root(ROOTS.Unsorted, {
 			i(238459),	-- [DNT] Roaming Boss Token
 			i(238460),	-- [DNT] World Boss Token
 			i(238461),	-- [DNT] Minus Mob Token
-			i(238726),	-- Drake Treat
-			i(238727),	-- Nostwin's Voucher
 			i(239205),	-- [DNT] Raid Boss Token, Consolation
-			i(239224),	-- Cache of Infinite Treasure
 			i(239247),	-- Bonus Experience
 			i(239303),	-- Cache of Infinite Treasure
-			i(239647),	-- Reins of the Bloodguard Fel Bat
-			i(239665),	-- Reins of the Bloodhunter Fel Bat
-			i(239666),	-- Reins of the Risen Fel Bat
-			i(239667),	-- Reins of the Ashplague Fel Bat
-			i(239686),	-- Reins of the Forgotten Fel Bat
-			i(239687),	-- Reins of the Wretched Fel Bat
+			i(239647),	-- Reins of the Bloodguard Fel Bat (MOUNT!)
+			i(239666),	-- Reins of the Risen Fel Bat (MOUNT!)
+			i(239686),	-- Reins of the Forgotten Fel Bat (MOUNT!)
 			i(239697),	-- Timeless Keystone
-			i(239699),	-- Tidbit
-			i(239705),	-- Morsel
-			i(239717),	-- Doomsinger's Robe
-			i(239720),	-- Highmountain Riverscale Hauberk
-			i(239723),	-- Stormborn Laminar Hauberk
-			i(239724),	-- Hauberk of Remembered Eternity
-			i(239725),	-- Dreadthorn Hauberk
-			i(239727),	-- Leyline Scholar's Robe
-			i(239728),	-- Wine-dark Royal Robe
-			i(239732),	-- Crescent Vale Robe
-			i(239733),	-- Hrydshal Runespeaker Robe
-			i(239734),	-- Antoran Guard's Golden Shawl
-			i(239735),	-- Antoran Guard's Golden Drape
-			i(239736),	-- Antoran Guard's Golden Cloak
-			i(239737),	-- Searaider's Drape
-			i(239738),	-- Searaider's Shroud
-			i(239739),	-- Searaider's Wrap
-			i(239740),	-- Searaider's Cloak
 			i(239741),	-- Blood Knight's Plate Shawl
 			i(239742),	-- Blood Knight's Plate Drape
 			i(239743),	-- Blood Knight's Plate Cloak
@@ -116,22 +50,6 @@ root(ROOTS.Unsorted, {
 			i(239749),	-- Blood Knight's Plate Breastplate
 			i(239750),	-- Blood Knight's Plate Sabatons
 			i(239751),	-- Blood Knight's Plate Girdle
-			i(239752),	-- Armplates of the Valhalas Champion
-			i(239753),	-- Spaulders of the Valhalas Champion
-			i(239754),	-- Wargreaves of the Valhalas Champion
-			i(239755),	-- Helmet of the Valhalas Champion
-			i(239765),	-- Handguards of the Valhalas Champion
-			i(239766),	-- Breastplate of the Valhalas Champion
-			i(239767),	-- Warboots of the Valhalas Champion
-			i(239768),	-- Waistguard of the Valhalas Champion
-			i(239769),	-- Jarl's Battlehorned Armguards
-			i(239770),	-- Jarl's Battlehorned Epaulets
-			i(239771),	-- Jarl's Battlehorned Legguards
-			i(239772),	-- Jarl's Battlehorned Faceguard
-			i(239773),	-- Jarl's Battlehorned Gauntlets
-			i(239774),	-- Jarl's Battlehorned Battleplate
-			i(239775),	-- Jarl's Battlehorned Sabatons
-			i(239776),	-- Jarl's Battlehorned Waistguard
 			i(239777),	-- Valorborne Dragonscale Vambraces
 			i(239778),	-- Valorborne Dragonscale Epaulets
 			i(239779),	-- Valorborne Dragonscale Breeches
@@ -140,27 +58,11 @@ root(ROOTS.Unsorted, {
 			i(239782),	-- Valorborne Dragonscale Haubergeon
 			i(239783),	-- Valorborne Dragonscale Greaves
 			i(239784),	-- Valorborne Dragonscale Waistband
-			i(239785),	-- Emerald Drake Hunter's Shoulderpads
 			i(239786),	-- [DNT]
 			i(239787),	-- [DNT]
 			i(239788),	-- [DNT]
-			i(239789),	-- Sunborne Runemail Hauberk
-			i(239790),	-- Sunborne Runemail Vambraces
-			i(239791),	-- Sunborne Runemail Shoulderguards
-			i(239792),	-- Sunborne Runemail Legguards
-			i(239793),	-- Sunborne Runemail Mask
-			i(239794),	-- Sunborne Runemail Grips
-			i(239795),	-- Sunborne Runemail Chestguard
-			i(239796),	-- Sunborne Runemail Greaves
-			i(239797),	-- Sunborne Runemail Girdle
-			i(239798),	-- Jarl's Scalemail Wristguards
-			i(239799),	-- Jarl's Scalemail Pinions
-			i(239800),	-- Jarl's Scalemail Leggings
-			i(239801),	-- Jarl's Scalemail Helmet
-			i(239802),	-- Jarl's Scalemail Handguards
-			i(239803),	-- Jarl's Scalemail Mail
-			i(239804),	-- Jarl's Scalemail Sabatons
-			i(239805),	-- Jarl's Scalemail Belt
+			i(239791),	-- Sunborne Runemail Shoulderguards (missing from iensemble 241401)
+			i(239793),	-- Sunborne Runemail Mask (missing from iensemble 241401)
 			i(239806),	-- Mountainborne Bindings
 			i(239807),	-- Mountainborne Trousers
 			i(239808),	-- Mountainborne Shoulders
@@ -177,1255 +79,54 @@ root(ROOTS.Unsorted, {
 			i(239819),	-- Vest of the Hunting Dream
 			i(239820),	-- Boots of the Hunting Dream
 			i(239821),	-- Waistband of the Hunting Dream
-			i(239822),	-- Fel-bloodied Shawl
-			i(239823),	-- Fel-bloodied Drape
-			i(239824),	-- Fel-bloodied Overcloak
-			i(239825),	-- Fel-bloodied Cloak
-			i(239826),	-- Fel-bloodied Cuffs
-			i(239827),	-- Fel-bloodied Shoulderguard
-			i(239828),	-- Fel-bloodied Pants
-			i(239829),	-- Fel-bloodied Headgear
-			i(239830),	-- Fel-bloodied Gloves
-			i(239831),	-- Fel-bloodied Chestguard
-			i(239832),	-- Fel-bloodied Striders
-			i(239833),	-- Fel-bloodied Cinch
-			i(239834),	-- Blazing Dreamscribed Gloves
-			i(239835),	-- Blazing Dreamscribed Bindings
-			i(239836),	-- Blazing Dreamscribed Treads
-			i(239837),	-- Blazing Dreamscribed Pantaloons
-			i(239838),	-- Blazing Dreamscribed Sash
-			i(239839),	-- Blazing Dreamscribed Robe
-			i(239840),	-- Blazing Dreamscribed Chestwrap
-			i(239841),	-- Blazing Dreamscribed Cowl
-			i(239842),	-- Earthrune Skirt
-			i(239843),	-- Skyrune Skirt
-			i(239844),	-- Nightrune Skirt
-			i(239845),	-- Argussian Demonsbane Shawl
-			i(239846),	-- Argussian Demonsbane Drape
-			i(239847),	-- Argussian Demonsbane Cloak
-			i(239848),	-- Argussian Demonsbane Wraps
-			i(239849),	-- Argussian Demonsbane Mantle
-			i(239850),	-- Argussian Demonsbane Legguards
-			i(239851),	-- Argussian Demonsbane Cap
-			i(239852),	-- Argussian Demonsbane Grips
-			i(239853),	-- Argussian Demonsbane Tunic
-			i(239854),	-- Argussian Demonsbane Striders
-			i(239855),	-- Argussian Demonsbane Girdle
-			i(239856),	-- Antoran Guard's Golden Vambraces
-			i(239857),	-- Antoran Guard's Golden Epaulets
-			i(239858),	-- Antoran Guard's Golden Legguards
-			i(239859),	-- Antoran Guard's Golden Faceguard
-			i(239860),	-- Antoran Guard's Golden Handguards
-			i(239861),	-- Antoran Guard's Golden Waistguard
-			i(239862),	-- Antoran Guard's Golden Breastplate
-			i(239863),	-- Antoran Guard's Golden Jackboots
-			i(239864),	-- Hauberk of Eredathian Sacrifice
-			i(239865),	-- Wristguards of Eredathian Sacrifice
-			i(239866),	-- Spaulders of Eredathian Sacrifice
-			i(239867),	-- Wargreaves of Eredathian Sacrifice
-			i(239868),	-- Helm of Eredathian Sacrifice
-			i(239869),	-- Grips of Eredathian Sacrifice
-			i(239870),	-- Chainmail of Eredathian Sacrifice
-			i(239871),	-- Stompers of Eredathian Sacrifice
-			i(239872),	-- Girdle of Eredathian Sacrifice
-			i(239873),	-- Stygian Hide Shawl
-			i(239874),	-- Stygian Hide Drape
-			i(239875),	-- Stygian Hide Cape
-			i(239876),	-- Stygian Hide Wristguards
-			i(239877),	-- Stygian Hide Shoulderpads
-			i(239878),	-- Stygian Hide Trousers
-			i(239879),	-- Stygian Hide Headgear
-			i(239880),	-- Stygian Hide Gloves
-			i(239881),	-- Stygian Hide Tunic
-			i(239882),	-- Stygian Hide Waders
-			i(239883),	-- Stygian Hide Girdle
-			i(239884),	-- Gladeraider's Shroud
-			i(239885),	-- Gladeraider's Cloak
-			i(239886),	-- Gladeraider's Drape
-			i(239887),	-- Gladeraider's Wrap
-			i(239888),	-- Wristguards of the Archdruid's Nightmare
-			i(239889),	-- Gambeson of the Archdruid's Nightmare
-			i(239890),	-- Dreamseeker's Bindings
-			i(239891),	-- Dreamseeker's Epaulets
-			i(239892),	-- Dreamseeker's Pants
-			i(239893),	-- Dreamseeker's Cowl
-			i(239894),	-- Dreamseeker's Gloves
-			i(239895),	-- Dreamseeker's Doublet
-			i(239896),	-- Dreamseeker's Slippers
-			i(239897),	-- Dreamseeker's Cinch
-			i(239898),	-- Dreamwatcher's Wraps
-			i(239899),	-- Dreamwatcher's Shoulders
-			i(239900),	-- Dreamwatcher's Leggings
-			i(239901),	-- Dreamwatcher's Hood
-			i(239902),	-- Dreamwatcher's Gloves
-			i(239903),	-- Dreamwatcher's Chestwrap
-			i(239904),	-- Dreamwatcher's Treads
-			i(239905),	-- Dreamwatcher's Cinch
-			i(239906),	-- Seaborne Wraps
-			i(239907),	-- Seaborne Pants
-			i(239908),	-- Seaborne Spaulders
-			i(239909),	-- Seaborne Cowl
-			i(239910),	-- Seaborne Gloves
-			i(239911),	-- Seaborne Vest
-			i(239912),	-- Seaborne Striders
-			i(239913),	-- Seaborne Waistband
-			i(239914),	-- Slayer's Silver Bindings
-			i(239915),	-- Slayer's Silver Shoulders
-			i(239916),	-- Slayer's Silver Legwraps
-			i(239917),	-- Slayer's Silver Headgear
-			i(239918),	-- Slayer's Silver Gloves
-			i(239919),	-- Slayer's Silver Vest
-			i(239920),	-- Slayer's Silver Striders
-			i(239921),	-- Slayer's Silver Girdle
-			i(239922),	-- Slayer's Golden Cuffs
-			i(239923),	-- Slayer's Golden Shoulderguard
-			i(239924),	-- Slayer's Golden Legwraps
-			i(239925),	-- Slayer's Golden Headgear
-			i(239926),	-- Slayer's Golden Gloves
-			i(239927),	-- Slayer's Golden Harness
-			i(239928),	-- Val'kyr's Armguards
-			i(239929),	-- Val'kyr's Shoulderguards
-			i(239930),	-- Val'kyr's Wargreaves
-			i(239931),	-- Val'kyr's Faceguard
-			i(239932),	-- Val'kyr's Gauntlets
-			i(239933),	-- Val'kyr's Chestpiece
-			i(239934),	-- Val'kyr's Jackboots
-			i(239935),	-- Val'kyr's Waistguard
-			i(239936),	-- Slayer's Golden Waders
-			i(239937),	-- Slayer's Golden Cinch
-			i(239938),	-- Ruby Drake Hunter's Vambraces
-			i(239939),	-- Ruby Drake Hunter's Breeches
-			i(239940),	-- Ruby Drake Hunter's Epaulets
-			i(239941),	-- Ruby Drake Hunter's Helmet
-			i(239942),	-- Ruby Drake Hunter's Gauntlets
-			i(239943),	-- Ruby Drake Hunter's Chainmail
-			i(239944),	-- Ruby Drake Hunter's Sollerets
-			i(239945),	-- Ruby Drake Hunter's Belt
-			i(239946),	-- Storm Champion's Wristguards
-			i(239947),	-- Storm Champion's Legguards
-			i(239948),	-- Storm Champion's Shoulderguards
-			i(239949),	-- Storm Champion's Faceguard
-			i(239950),	-- Storm Champion's Handguards
-			i(239951),	-- Storm Champion's Chestpiece
-			i(239952),	-- Storm Champion's Stompers
-			i(239953),	-- Storm Champion's Greatbelt
-			i(239954),	-- Dream Defender's Emerald Armguards
-			i(239955),	-- Dream Defender's Emerald Pauldrons
-			i(239956),	-- Dream Defender's Emerald Wargreaves
-			i(239957),	-- Dream Defender's Emerald Helmet
-			i(239958),	-- Dream Defender's Emerald Handguards
 			i(239959),	-- Fel-marked Hauberk
 			i(239960),	-- Fel-marked Vambraces
 			i(239961),	-- Fel-marked Pinions
 			i(239962),	-- Fel-marked Wargreaves
-			i(239963),	-- Dream Defender's Emerald Battleplate
-			i(239964),	-- Dream Defender's Emerald Jackboots
-			i(239965),	-- Dream Defender's Emerald Greatbelt
 			i(239966),	-- Fel-marked Faceguard
 			i(239967),	-- Fel-marked Handguards
 			i(239968),	-- Fel-marked Chestguard
 			i(239969),	-- Fel-marked Greaves
 			i(239970),	-- Fel-marked Cinch
-			i(239971),	-- Firewurm Dragonscale Bracers
-			i(239972),	-- Skyborne Wraps
-			i(239973),	-- Skyborne Breeches
-			i(239974),	-- Skyborne Spaulders
-			i(239975),	-- Skyborne Helm
-			i(239976),	-- Skyborne Gloves
-			i(239977),	-- Skyborne Harness
-			i(239978),	-- Skyborne Boots
-			i(239979),	-- Skyborne Belt
-			i(239980),	-- Earthweald Dragonscale Epaulets
-			i(239981),	-- Earthweald Dragonscale Breeches
-			i(239982),	-- Earthweald Dragonscale Coif
-			i(239983),	-- Earthweald Dragonscale Gauntlets
-			i(239984),	-- Earthweald Dragonscale Haubergeon
-			i(239985),	-- Skyrune Robe
-			i(239986),	-- Skyrune Cuffs
-			i(239987),	-- Skyrune Epaulets
-			i(239988),	-- Skyrune Pantaloons
-			i(239989),	-- Earthweald Dragonscale Stompers
-			i(239990),	-- Earthweald Dragonscale Cinch
-			i(239991),	-- Dreamweald Dragonscale Bracers
-			i(239992),	-- Dreamweald Dragonscale Shoulderguards
-			i(239993),	-- Skyrune Cover
-			i(239994),	-- Skyrune Handwraps
-			i(239995),	-- Skyrune Doublet
-			i(239996),	-- Skyrune Slippers
-			i(239997),	-- Skyrune Cinch
-			i(239998),	-- Earthrune Robe
-			i(239999),	-- Earthrune Wristwraps
-			i(240000),	-- Earthrune Shoulders
-			i(240001),	-- Earthrune Pants
-			i(240002),	-- Earthrune Hood
-			i(240003),	-- Earthrune Handwraps
-			i(240004),	-- Dreamweald Dragonscale Legguards
-			i(240005),	-- Dreamweald Dragonscale Mask
-			i(240006),	-- Earthrune Raiment
-			i(240007),	-- Earthrune Boots
-			i(240008),	-- Earthrune Cord
-			i(240009),	-- Nightrune Robe
-			i(240010),	-- Nightrune Wristwraps
-			i(240011),	-- Nightrune Mantle
-			i(240012),	-- Nightrune Pantaloons
-			i(240013),	-- Nightrune Cover
-			i(240014),	-- Nightrune Gloves
-			i(240015),	-- Nightrune Doublet
-			i(240016),	-- Nightrune Footwraps
-			i(240017),	-- Dreamweald Dragonscale Gauntlets
-			i(240219),	-- Dreamweald Dragonscale Chestguard
-			i(240220),	-- Dreamweald Dragonscale Sabatons
-			i(240221),	-- Dreamweald Dragonscale Waistband
-			i(240222),	-- Gladeraider's Wristguards
-			i(240223),	-- Gladeraider's Shoulderguard
-			i(240225),	-- Gladeraider's Cap
-			i(240226),	-- Gladeraider's Grips
-			i(240227),	-- Nightrune Cinch
-			i(240228),	-- Highpeak Dragonscale Wristguards
-			i(240229),	-- Highpeak Dragonscale Epaulets
-			i(240230),	-- Highpeak Dragonscale Wargreaves
-			i(240231),	-- Highpeak Dragonscale Faceguard
-			i(240234),	-- Gladeraider's Girdle
-			i(240235),	-- Highpeak Dragonscale Grips
-			i(240236),	-- Highpeak Dragonscale Chainmail
-			i(240237),	-- Highpeak Dragonscale Stompers
-			i(240238),	-- Highpeak Dragonscale Clasp
-			i(240239),	-- Searaider's Spaulders
-			i(240240),	-- Searaider's Bindings
-			i(240241),	-- Searaider's Trousers
-			i(240242),	-- Searaider's Cap
-			i(240243),	-- Searaider's Gloves
-			i(240244),	-- Searaider's Harness
-			i(240245),	-- Searaider's Striders
-			i(240246),	-- Searaider's Waistband
-			i(240247),	-- Firewurm Dragonscale Shoulderguard
-			i(240248),	-- Firewurm Dragonscale Wargreaves
-			i(240249),	-- Firewurm Dragonscale Helmet
-			i(240250),	-- Firewurm Dragonscale Handguards
-			i(240251),	-- Firewurm Dragonscale Haubergeon
-			i(240252),	-- Firewurm Dragonscale Greaves
-			i(240253),	-- Firewurm Dragonscale Waistband
-			i(240254),	-- Earthweald Dragonscale Vambraces
-			i(240255),	-- Shroud of Devouring Night
-			i(240256),	-- Thirsting Wrap
-			i(240257),	-- Nightstalker's Wrap
-			i(240258),	-- Drape of Hungering Flesh
-			i(240259),	-- Shawl of Devouring Night
-			i(240260),	-- Cape of Devouring Night
-			i(240261),	-- Wrap of Hungering Flesh
-			i(240262),	-- Thirsting Cloak
-			i(240263),	-- Ered'ruin Shawl
-			i(240264),	-- Nightstalker's Cloak
 			i(240265),	-- [DNT]
-			i(240266),	-- Shroud of Hungering Flesh
-			i(240267),	-- Nightstalker's Shroud
-			i(240269),	-- Ered'ruin Cloak
-			i(240270),	-- Cape of Hungering Flesh
-			i(240271),	-- Thirsting Shroud
-			i(240272),	-- Stygian Silk Cape
-			i(240273),	-- Ered'ruin Shroud
-			i(240274),	-- Thirsting Drape
-			i(240275),	-- Nightforged Handguards
-			i(240276),	-- Nightforged Armplates
-			i(240277),	-- Nightforged Greatboots
-			i(240278),	-- Nightforged Wargreaves
-			i(240279),	-- Nightforged Waistguard
-			i(240280),	-- Nightforged Chestpiece
-			i(240281),	-- Nightforged Shoulderguards
-			i(240282),	-- Nightforged Warhelm
-			i(240283),	-- Bloodforged Handguards
-			i(240284),	-- Bloodforged Vambraces
-			i(240285),	-- Bloodforged Sabatons
-			i(240286),	-- Bloodforged Wargreaves
-			i(240287),	-- Bloodforged Girdle
-			i(240288),	-- Bloodforged Chestplate
-			i(240289),	-- Bloodforged Shoulderguards
-			i(240290),	-- Bloodforged Warhelm
-			i(240291),	-- Honorforged Gauntlets
-			i(240292),	-- Honorforged Vambraces
-			i(240293),	-- Honorforged Stompers
-			i(240294),	-- Honorforged Wargreaves
-			i(240295),	-- Honorforged Greatbelt
-			i(240296),	-- Honorforged Chestpiece
-			i(240297),	-- Honorforged Mantle
-			i(240298),	-- Honorforged Greathelm
-			i(240299),	-- Handguards of Devouring Night
-			i(240300),	-- Wristguards of Devouring Night
-			i(240301),	-- Stompers of Devouring Night
-			i(240302),	-- Leggings of Devouring Night
-			i(240303),	-- Waistband of Devouring Night
-			i(240304),	-- Haubergeon of Devouring Night
-			i(240305),	-- Spaulders of Devouring Night
-			i(240306),	-- Faceguard of Devouring Night
-			i(240307),	-- Ravensteel Handguards
-			i(240308),	-- Ravensteel Wristguards
-			i(240309),	-- Ravensteel Stompers
-			i(240310),	-- Ravensteel Wargreaves
-			i(240311),	-- Ravensteel Belt
-			i(240312),	-- Ravensteel Chestguard
-			i(240313),	-- Ravensteel Pinions
-			i(240314),	-- Ravensteel Helmet
-			i(240315),	-- Grips of Skyfather's Chosen
-			i(240316),	-- Bracers of Skyfather's Chosen
-			i(240317),	-- Boots of Skyfather's Chosen
-			i(240318),	-- Leggings of Skyfather's Chosen
-			i(240319),	-- Cinch of Skyfather's Chosen
-			i(240320),	-- Chestguard of Skyfather's Chosen
-			i(240321),	-- Pinions of Skyfather's Chosen
-			i(240322),	-- Faceguard of Skyfather's Chosen
-			i(240323),	-- Nightstalker's Grips
-			i(240324),	-- Nightstalker's Wraps
-			i(240325),	-- Nightstalker's Boots
-			i(240326),	-- Nightstalker's Trousers
-			i(240327),	-- Nightstalker's Cinch
-			i(240328),	-- Nightstalker's Chestguard
-			i(240329),	-- Nightstalker's Mantle
-			i(240330),	-- Nightstalker's Cap
-			i(240331),	-- Thirsting Grips
-			i(240332),	-- Thirsting Bindings
-			i(240333),	-- Thirsting Boots
-			i(240334),	-- Thirsting Legguards
-			i(240335),	-- Thirsting Cinch
-			i(240336),	-- Thirsting Harness
-			i(240337),	-- Thirsting Mantle
-			i(240338),	-- Thirsting Helm
-			i(240339),	-- Gloves of Hungering Flesh
-			i(240340),	-- Cuffs of Hungering Flesh
-			i(240341),	-- Striders of Hungering Flesh
-			i(240342),	-- Legwraps of Hungering Flesh
-			i(240343),	-- Cinch of Hungering Flesh
-			i(240344),	-- Jerkin of Hungering Flesh
-			i(240345),	-- Shoulderguard of Hungering Flesh
-			i(240346),	-- Cap of Hungering Flesh
-			i(240347),	-- Gloves of Night Eternal
-			i(240348),	-- Cuffs of Night Eternal
-			i(240349),	-- Boots of Night Eternal
-			i(240350),	-- Legwraps of Night Eternal
-			i(240351),	-- Belt of Night Eternal
-			i(240352),	-- Robe of Night Eternal
-			i(240353),	-- Vestments of Night Eternal
-			i(240354),	-- Amice of Night Eternal
-			i(240355),	-- Guise of Night Eternal
-			i(240356),	-- Sanguine Oath Handwraps
-			i(240357),	-- Sanguine Oath Wristwraps
-			i(240358),	-- Sanguine Oath Treads
-			i(240359),	-- Sanguine Oath Legwraps
-			i(240360),	-- Sanguine Oath Cinch
-			i(240361),	-- Sanguine Oath Robe
-			i(240362),	-- Sanguine Oath Vestments
-			i(240363),	-- Sanguine Oath Shoulders
-			i(240364),	-- Sanguine Oath Cowl
-			i(240365),	-- Gloves of Borrowed Souls
-			i(240366),	-- Armbands of Borrowed Souls
-			i(240367),	-- Slippers of Borrowed Souls
-			i(240368),	-- Pants of Borrowed Souls
-			i(240369),	-- Cinch of Borrowed Souls
-			i(240370),	-- Robe of Borrowed Souls
-			i(240371),	-- Raiment of Borrowed Souls
 			i(240372),	-- Shawl of Borrowed Souls
-			i(240373),	-- Cover of Borrowed Souls
-			i(240374),	-- Leyline Defender's Handguards
-			i(240375),	-- Leyline Defender's Wristguards
-			i(240376),	-- Leyline Defender's Jackboots
-			i(240377),	-- Leyline Defender's Wargreaves
-			i(240378),	-- Leyline Defender's Greatbelt
-			i(240379),	-- Leyline Defender's Chestpiece
-			i(240380),	-- Leyline Defender's Epaulets
-			i(240381),	-- Leyline Defender's Faceguard
-			i(240382),	-- Jandvik Diver's Gauntlets
-			i(240383),	-- Jandvik Diver's Wristguards
-			i(240384),	-- Jandvik Diver's Warboots
-			i(240385),	-- Jandvik Diver's Legguards
-			i(240386),	-- Jandvik Diver's Girdle
-			i(240387),	-- Jandvik Diver's Breastplate
-			i(240388),	-- Jandvik Diver's Epaulets
-			i(240389),	-- Jandvik Diver's Helmet
-			i(240390),	-- Suramar Silver Handguards
-			i(240391),	-- Suramar Silver Wristguards
-			i(240392),	-- Suramar Silver Jackboots
-			i(240393),	-- Suramar Silver Legguards
-			i(240394),	-- Suramar Silver Girdle
-			i(240395),	-- Suramar Silver Breastplate
 			i(240396),	-- Suramar Silver Mantle
-			i(240397),	-- Suramar Silver Greathelm
-			i(240398),	-- Darkwatcher Grips
-			i(240399),	-- Darkwatcher Bracers
-			i(240400),	-- Darkwatcher Sabatons
-			i(240401),	-- Darkwatcher Legguards
-			i(240402),	-- Darkwatcher Cinch
-			i(240403),	-- Darkwatcher Chestguard
-			i(240404),	-- Darkwatcher Pauldrons
-			i(240405),	-- Darkwatcher Faceguard
-			i(240406),	-- Helheim Handguards
-			i(240407),	-- Helheim Vambraces
-			i(240408),	-- Helheim Boots
-			i(240409),	-- Helheim Leggings
-			i(240410),	-- Helheim Waistband
-			i(240411),	-- Helheim Haubergeon
-			i(240412),	-- Helheim Spaulders
-			i(240413),	-- Helheim Mask
-			i(240414),	-- Gauntlets of the Nightmare's Embrace
-			i(240415),	-- Bracers of the Nightmare's Embrace
-			i(240416),	-- Boots of the Nightmare's Embrace
-			i(240417),	-- Breeches of the Nightmare's Embrace
-			i(240418),	-- Cinch of the Nightmare's Embrace
-			i(240419),	-- Chestguard of the Nightmare's Embrace
-			i(240420),	-- Pinions of the Nightmare's Embrace
-			i(240421),	-- Helmet of the Nightmare's Embrace
-			i(240422),	-- Ambervale Bone Grips
-			i(240423),	-- Ambervale Bone Wraps
-			i(240424),	-- Ambervale Bone Boots
-			i(240425),	-- Ambervale Bone Breeches
-			i(240426),	-- Ambervale Bone Belt
-			i(240427),	-- Ambervale Bone Gambeson
-			i(240428),	-- Ambervale Bone Harness
-			i(240429),	-- Ambervale Bone Shoulderguard
-			i(240430),	-- Ambervale Bone Cowl
-			i(240431),	-- Nighthide Grips
-			i(240432),	-- Nighthide Cuffs
-			i(240433),	-- Nighthide Waders
-			i(240434),	-- Nighthide Trousers
-			i(240435),	-- Nighthide Girdle
-			i(240436),	-- Nighthide Gambeson
-			i(240438),	-- Nighthide Spaulders
-			i(240439),	-- Nighthide Hat
-			i(240440),	-- Dreadhide Stalker's Gloves
-			i(240441),	-- Dreadhide Stalker's Bindings
-			i(240442),	-- Dreadhide Stalker's Waders
-			i(240443),	-- Dreadhide Stalker's Trousers
-			i(240444),	-- Dreadhide Stalker's Girdle
-			i(240445),	-- Dreadhide Stalker's Gambeson
-			i(240446),	-- Dreadhide Stalker's Harness
-			i(240447),	-- Dreadhide Stalker's Shoulders
-			i(240448),	-- Dreadhide Stalker's Helm
-			i(240449),	-- Moonfall Handwraps
-			i(240450),	-- Moonfall Bindings
-			i(240451),	-- Moonfall Treads
-			i(240452),	-- Moonfall Pants
-			i(240453),	-- Moonfall Cinch
-			i(240454),	-- Moonfall Robe
-			i(240455),	-- Moonfall Raiment
-			i(240456),	-- Moonfall Shoulders
-			i(240457),	-- Moonfall Cover
-			i(240458),	-- Terrorcloth Handwraps
-			i(240459),	-- Terrorcloth Cuffs
-			i(240460),	-- Terrorcloth Footwraps
-			i(240461),	-- Terrorcloth Leggings
-			i(240462),	-- Terrorcloth Cinch
-			i(240463),	-- Terrorcloth Robe
-			i(240464),	-- Terrorcloth Raiment
-			i(240465),	-- Terrorcloth Amice
-			i(240466),	-- Terrorcloth Cowl
-			i(240467),	-- Manasinged Handwraps
-			i(240468),	-- Manasinged Wraps
-			i(240469),	-- Manasinged Slippers
-			i(240470),	-- Manasinged Leggings
-			i(240534),	-- Manasinged Cinch
-			i(240535),	-- Manasinged Robe
-			i(240536),	-- Manasinged Doublet
-			i(240537),	-- Manasinged Amice
-			i(240538),	-- Manasinged Hood
-			i(240539),	-- Xorothian Gauntlets
-			i(240540),	-- Xorothian Wristguards
-			i(240541),	-- Xorothian Jackboots
-			i(240542),	-- Xorothian Legguards
-			i(240543),	-- Xorothian Greatbelt
-			i(240544),	-- Xorothian Battleplate
-			i(240545),	-- Xorothian Shoulderguards
-			i(240546),	-- Xorothian Helmet
-			i(240547),	-- Ered'ruin Gauntlets
-			i(240548),	-- Ered'ruin Vambraces
-			i(240551),	-- Ered'ruin Girdle
-			i(240553),	-- Ered'ruin Pauldrons
-			i(240554),	-- Ered'ruin Helm
-			i(240555),	-- Netherfiend Gloves
-			i(240556),	-- Netherfiend Wristguards
-			i(240557),	-- Netherfiend Boots
-			i(240558),	-- Netherfiend Breeches
-			i(240559),	-- Netherfiend Waistband
-			i(240560),	-- Netherfiend Tunic
-			i(240561),	-- Netherfiend Epaulets
-			i(240562),	-- Netherfiend Helm
 			i(240563),	-- Vileweave Gloves
 			i(240564),	-- Vileweave Bindings
 			i(240567),	-- Vileweave Cord
 			i(240569),	-- Vileweave Vestments
 			i(240570),	-- Vileweave Shawl
 			i(240571),	-- Vileweave Guise
-			i(240572),	-- Garothi Gauntlets
-			i(240573),	-- Garothi Armplates
-			i(240574),	-- Garothi Warboots
-			i(240575),	-- Garothi Wargreaves
-			i(240576),	-- Garothi Greatbelt
-			i(240577),	-- Garothi Battleplate
-			i(240578),	-- Garothi Pauldrons
-			i(240579),	-- Garothi Warhelm
-			i(240580),	-- Garothi Drape
-			i(240581),	-- Garothi Shroud
-			i(240582),	-- Garothi Shawl
-			i(240583),	-- Garothi Cloak
-			i(240584),	-- Stygian Silk Drape
-			i(240585),	-- Stygian Silk Shroud
-			i(240586),	-- Stygian Silk Gloves
-			i(240587),	-- Stygian Silk Armbands
-			i(240588),	-- Stygian Silk Slippers
-			i(240589),	-- Stygian Silk Trousers
-			i(240590),	-- Stygian Silk Sash
-			i(240591),	-- Stygian Silk Robe
-			i(240592),	-- Stygian Silk Raiment
-			i(240593),	-- Stygian Silk Shoulderpads
-			i(240594),	-- Stygian Silk Hood
-			i(240595),	-- Praetorium Guard's Shawl
-			i(240596),	-- Praetorium Guard's Shroud
-			i(240597),	-- Praetorium Guard's Drape
-			i(240598),	-- Praetorium Guard's Cape
-			i(240599),	-- Oronaar Disciple's Shroud
-			i(240601),	-- Oronaar Disciple's Drape
-			i(240602),	-- Lunarblight Leather Shroud
-			i(240603),	-- Lunarblight Leather Wrap
-			i(240604),	-- Lunarblight Leather Cloak
-			i(240605),	-- Doomsinger's Shroud
-			i(240606),	-- Shrinebreaker's Shroud
-			i(240609),	-- Arinor Keeper's Shawl
-			i(240610),	-- Doomsinger's Drape
-			i(240612),	-- Shroud of Remembered Eternity
-			i(240614),	-- Arinor Keeper's Cloak
-			i(240615),	-- Highmountain Riverscale Shroud
-			i(240619),	-- Dreadthorn Shroud
-			i(240622),	-- Highmountain Riverscale Cape
-			i(240625),	-- Arinor Keeper's Drape
-			i(240626),	-- Stormborn Laminar Cape
-			i(240627),	-- Cape of Remembered Eternity
-			i(240629),	-- Doomsinger's Cape
-			i(240630),	-- Shrinebreaker's Shawl
-			i(240631),	-- Shrinebreaker's Cape
-			i(240636),	-- Dreadthorn Cape
-			i(240638),	-- Highmountain Hide Cap
-			i(240639),	-- Highmountain Hide Shoulders
-			i(240640),	-- Highmountain Hide Vest
-			i(240641),	-- Highmountain Hide Strap
-			i(240642),	-- Highmountain Hide Legwraps
-			i(240643),	-- Highmountain Hide Boots
-			i(240644),	-- Highmountain Hide Wristguards
-			i(240645),	-- Highmountain Hide Gloves
-			i(240646),	-- Riven Priesthood Cowl
-			i(240647),	-- Riven Priesthood Amice
-			i(240648),	-- Riven Priesthood Vestments
-			i(240649),	-- Riven Priesthood Cinch
-			i(240650),	-- Riven Priesthood Pants
-			i(240651),	-- Riven Priesthood Slippers
-			i(240652),	-- Riven Priesthood Wraps
-			i(240653),	-- Riven Priesthood Handwraps
-			i(240654),	-- Moonshatter Warhelm
-			i(240655),	-- Moonshatter Mantle
-			i(240656),	-- Moonshatter Chestpiece
-			i(240657),	-- Moonshatter Waistguard
-			i(240658),	-- Moonshatter Wargreaves
-			i(240659),	-- Moonshatter Warboots
-			i(240660),	-- Moonshatter Wristguards
-			i(240661),	-- Moonshatter Handguards
-			i(240662),	-- Praetorium Guard's Helmet
-			i(240663),	-- Praetorium Guard's Spaulders
-			i(240664),	-- Praetorium Guard's Breastplate
-			i(240665),	-- Praetorium Guard's Greatbelt
-			i(240666),	-- Praetorium Guard's Legguards
-			i(240667),	-- Praetorium Guard's Sabatons
-			i(240668),	-- Praetorium Guard's Wristguards
-			i(240669),	-- Praetorium Guard's Gauntlets
-			i(240670),	-- Vrykul Funereal Warhelm
-			i(240671),	-- Vrykul Funereal Pauldrons
-			i(240672),	-- Vrykul Funereal Battleplate
-			i(240673),	-- Vrykul Funereal Greatbelt
-			i(240674),	-- Vrykul Funereal Legguards
-			i(240675),	-- Vrykul Funereal Jackboots
-			i(240676),	-- Vrykul Funereal Armplates
-			i(240677),	-- Vrykul Funereal Handguards
-			i(240678),	-- Kal'delar Faceguard
-			i(240679),	-- Kal'delar Shoulderguards
-			i(240680),	-- Kal'delar Chestplate
-			i(240681),	-- Kal'delar Waistguard
-			i(240682),	-- Kal'delar Wargreaves
-			i(240683),	-- Kal'delar Warboots
-			i(240684),	-- Kal'delar Armplates
-			i(240685),	-- Kal'delar Handguards
-			i(240686),	-- Nar'thalas Graduate's Faceguard
-			i(240687),	-- Nar'thalas Graduate's Shoulderguards
-			i(240689),	-- Nar'thalas Graduate's Greatbelt
-			i(240692),	-- Nar'thalas Graduate's Vambraces
-			i(240693),	-- Nar'thalas Graduate's Handguards
-			i(240694),	-- Thunderpeak Bone Faceguard
-			i(240695),	-- Thunderpeak Bone Spaulders
-			i(240696),	-- Thunderpeak Bone Battleplate
-			i(240697),	-- Thunderpeak Bone Girdle
-			i(240698),	-- Thunderpeak Bone Wargreaves
-			i(240699),	-- Thunderpeak Bone Stompers
-			i(240700),	-- Thunderpeak Bone Vambraces
-			i(240701),	-- Thunderpeak Bone Gauntlets
-			i(240702),	-- Doomsinger's Guise
-			i(240703),	-- Doomsinger's Amice
-			i(240704),	-- Doomsinger's Doublet
-			i(240705),	-- Doomsinger's Belt
-			i(240706),	-- Doomsinger's Pants
-			i(240707),	-- Doomsinger's Boots
-			i(240708),	-- Doomsinger's Bindings
-			i(240709),	-- Doomsinger's Handwraps
-			i(240710),	-- Leyline Scholar's Cowl
-			i(240711),	-- Leyline Scholar's Shawl
-			i(240712),	-- Leyline Scholar's Vestments
-			i(240713),	-- Leyline Scholar's Sash
-			i(240714),	-- Leyline Scholar's Leggings
-			i(240715),	-- Leyline Scholar's Slippers
-			i(240716),	-- Leyline Scholar's Bindings
-			i(240717),	-- Leyline Scholar's Gloves
-			i(240718),	-- Wine-dark Royal Cowl
-			i(240719),	-- Wine-dark Royal Epaulets
-			i(240720),	-- Wine-dark Royal Doublet
-			i(240721),	-- Wine-dark Royal Belt
-			i(240722),	-- Wine-dark Royal Trousers
-			i(240723),	-- Wine-dark Royal Boots
-			i(240724),	-- Wine-dark Royal Armbands
-			i(240725),	-- Wine-dark Royal Handwraps
-			i(240726),	-- Crescent Vale Cowl
-			i(240727),	-- Crescent Vale Shawl
-			i(240728),	-- Crescent Vale Vestments
-			i(240729),	-- Crescent Vale Belt
-			i(240730),	-- Crescent Vale Legwraps
-			i(240731),	-- Crescent Vale Boots
-			i(240732),	-- Crescent Vale Wristwraps
-			i(240733),	-- Crescent Vale Gloves
-			i(240734),	-- Hrydshal Runespeaker Cowl
-			i(240735),	-- Hrydshal Runespeaker Mantle
-			i(240736),	-- Hrydshal Runespeaker Chestwrap
-			i(240737),	-- Hrydshal Runespeaker Cord
-			i(240738),	-- Hrydshal Runespeaker Pants
-			i(240739),	-- Hrydshal Runespeaker Slippers
-			i(240740),	-- Hrydshal Runespeaker Bindings
-			i(240741),	-- Hrydshal Runespeaker Gloves
-			i(240743),	-- Haustvelt Leather Headgear
-			i(240744),	-- Haustvelt Leather Mantle
-			i(240745),	-- Haustvelt Leather Chestguard
-			i(240746),	-- Haustvelt Leather Belt
-			i(240747),	-- Haustvelt Leather Breeches
-			i(240748),	-- Haustvelt Leather Boots
-			i(240749),	-- Haustvelt Leather Wraps
-			i(240750),	-- Haustvelt Leather Gloves
-			i(240751),	-- Sablehide Headgear
-			i(240752),	-- Sablehide Mantle
-			i(240753),	-- Sablehide Tunic
-			i(240754),	-- Sablehide Strap
-			i(240755),	-- Sablehide Breeches
-			i(240756),	-- Sablehide Boots
-			i(240757),	-- Sablehide Bindings
-			i(240758),	-- Sablehide Grips
-			i(240759),	-- Llothien Prowler's Hat
-			i(240760),	-- Llothien Prowler's Shoulderguard
-			i(240761),	-- Llothien Prowler's Harness
-			i(240762),	-- Llothien Prowler's Belt
-			i(240763),	-- Llothien Prowler's Legguards
-			i(240764),	-- Llothien Prowler's Waders
-			i(240765),	-- Llothien Prowler's Cuffs
-			i(240766),	-- Llothien Prowler's Gloves
-			i(240767),	-- Arinor Keeper's Cap
-			i(240768),	-- Arinor Keeper's Mantle
-			i(240769),	-- Arinor Keeper's Vest
-			i(240770),	-- Arinor Keeper's Cinch
-			i(240771),	-- Arinor Keeper's Breeches
-			i(240772),	-- Arinor Keeper's Waders
-			i(240773),	-- Arinor Keeper's Cuffs
-			i(240774),	-- Arinor Keeper's Grips
-			i(240783),	-- Dreadthorn Helmet
-			i(240784),	-- Dreadthorn Spaulders
-			i(240785),	-- Dreadthorn Chestguard
-			i(240786),	-- Dreadthorn Waistband
-			i(240787),	-- Dreadthorn Legguards
-			i(240788),	-- Dreadthorn Greaves
-			i(240789),	-- Dreadthorn Wristguards
-			i(240790),	-- Dreadthorn Handguards
-			i(240791),	-- Coif of Remembered Eternity
-			i(240792),	-- Pinions of Remembered Eternity
-			i(240793),	-- Chainmail of Remembered Eternity
-			i(240794),	-- Cinch of Remembered Eternity
-			i(240795),	-- Breeches of Remembered Eternity
-			i(240796),	-- Sollerets of Remembered Eternity
-			i(240797),	-- Vambraces of Remembered Eternity
-			i(240798),	-- Grips of Remembered Eternity
-			i(240799),	-- Stormborn Laminar Helmet
-			i(240800),	-- Stormborn Laminar Shoulderguards
-			i(240801),	-- Stormborn Laminar Chainmail
-			i(240802),	-- Stormborn Laminar Waistband
-			i(240803),	-- Stormborn Laminar Leggings
-			i(240804),	-- Stormborn Laminar Greaves
-			i(240805),	-- Stormborn Laminar Vambraces
-			i(240806),	-- Stormborn Laminar Handguards
-			i(240807),	-- Highmountain Riverscale Helm
-			i(240808),	-- Highmountain Riverscale Pauldrons
-			i(240809),	-- Highmountain Riverscale Chainmail
-			i(240810),	-- Highmountain Riverscale Clasp
-			i(240811),	-- Highmountain Riverscale Wargreaves
-			i(240812),	-- Highmountain Riverscale Boots
-			i(240813),	-- Highmountain Riverscale Wristguards
-			i(240814),	-- Highmountain Riverscale Grips
-			i(240815),	-- Oronaar Disciple's Coif
-			i(240816),	-- Oronaar Disciple's Pauldrons
-			i(240817),	-- Oronaar Disciple's Haubergeon
-			i(240818),	-- Oronaar Disciple's Waistband
-			i(240819),	-- Oronaar Disciple's Wargreaves
-			i(240820),	-- Oronaar Disciple's Greaves
-			i(240821),	-- Oronaar Disciple's Wristguards
-			i(240822),	-- Oronaar Disciple's Grips
-			i(240823),	-- Shrinebreaker's Faceguard
-			i(240824),	-- Shrinebreaker's Pinions
-			i(240825),	-- Shrinebreaker's Haubergeon
-			i(240826),	-- Shrinebreaker's Cinch
-			i(240827),	-- Shrinebreaker's Wargreaves
-			i(240828),	-- Shrinebreaker's Greaves
-			i(240829),	-- Shrinebreaker's Wristguards
-			i(240830),	-- Shrinebreaker's Grips
 			i(241146),	-- Epoch Memento
-			i(241221),	-- Riven Priesthood Robe
-			i(241222),	-- Oronaar Disciple's Hauberk
-			i(241223),	-- Cloak of Devouring Night
-			i(241224),	-- Emerald Drake Hunter's Tunic
-			i(241225),	-- Emerald Drake Hunter's Pants
-			i(241226),	-- Emerald Drake Hunter's Boots
-			i(241227),	-- Emerald Drake Hunter's Coif
-			i(241228),	-- Emerald Drake Hunter's Gloves
-			i(241229),	-- Emerald Drake Hunter's Bracers
-			i(241230),	-- Emerald Drake Hunter's Belt
-			i(241242),	-- Hologemmed Bracers
-			i(241243),	-- Hologemmed Hoofguards
-			i(241244),	-- Hologemmed Legplates
-			i(241245),	-- Hologemmed Girdle
-			i(241246),	-- Hologemmed Gloves
-			i(241247),	-- Hologemmed Pauldrons
-			i(241248),	-- Hologemmed Gorget
-			i(241249),	-- Hologemmed Chestguard
-			i(241250),	-- Crimson Vengeance Bracers
-			i(241251),	-- Crimson Vengeance Hoofguards
-			i(241252),	-- Crimson Vengeance Legplates
-			i(241253),	-- Crimson Vengeance Girdle
-			i(241254),	-- Crimson Vengeance Gloves
-			i(241255),	-- Crimson Vengeance Pauldrons
-			i(241256),	-- Crimson Vengeance Gorget
-			i(241257),	-- Crimson Vengeance Chestguard
-			i(241258),	-- Vineyard Red Shal'dorei Crown
-			i(241259),	-- Vineyard Red Shal'dorei Mantle
-			i(241260),	-- Vineyard Red Shal'dorei Finery
-			i(241261),	-- Vineyard Red Shal'dorei Gloves
-			i(241262),	-- Vineyard Red Shal'dorei Belt
-			i(241263),	-- Vineyard Red Shal'dorei Leggings
-			i(241264),	-- Vineyard Red Shal'dorei Slippers
-			i(241265),	-- Vineyard Red Shal'dorei Bracers
-			i(241354),	-- Ensemble: Emerald Drake Hunter's Kit
-			i(241355),	-- Ensemble: Verdant Dreamscribed Robes
-			i(241356),	-- Ensemble: Fel-marked Scales
+			i(241258),	-- Vineyard Red Shal'dorei Crown (missing from iensemble 241385)
 			i(241357),	-- Ensemble: Barkbinds of the Archdruid's Nightmare
-			i(241358),	-- Ensemble: Dream Defender's Emerald Guardplate
-			i(241359),	-- Ensemble: Garothi Battleplate
-			i(241360),	-- Ensemble: Stygian Silks
-			i(241361),	-- Ensemble: Moonshatter Warplate
-			i(241362),	-- Ensemble: Shrinebreaker's Battlegear
-			i(241363),	-- Ensemble: Lunarblight Leathers
-			i(241364),	-- Ensemble: Riven Priesthood Regalia
-			i(241365),	-- Ensemble: Praetorium Guard's Plate Armor
-			i(241366),	-- Ensemble: Oronaar Disciple's Mail Armor
-			i(241367),	-- Ensemble: Arinor Keeper's Leather Armor
-			i(241368),	-- Ensemble: Doomsinger's Cloth Armor
-			i(241369),	-- Ensemble: Vrykul Funereal Regalia
-			i(241370),	-- Ensemble: Kal'delar Battleplate
-			i(241371),	-- Ensemble: Nar'thalas Graduate's Trim
-			i(241372),	-- Ensemble: Thunderpeak Boneguards
-			i(241373),	-- Ensemble: Highmountain Riverscales
-			i(241374),	-- Ensemble: Stormborn Laminar Armor
-			i(241375),	-- Ensemble: Scales of Remembered Eternity
-			i(241376),	-- Ensemble: Dreadthorn Battlegear
-			i(241377),	-- Ensemble: Llothien Prowler's Kit
-			i(241378),	-- Ensemble: Sablehide Vestments
-			i(241379),	-- Ensemble: Haustvelt Leathers
-			i(241380),	-- Ensemble: Highmountain Hides
-			i(241381),	-- Ensemble: Leyline Scholar's Regalia
-			i(241382),	-- Ensemble: Wine-dark Royal Robes
-			i(241383),	-- Ensemble: Crescent Vale Raiment
-			i(241384),	-- Ensemble: Regalia of the Hrydshal Runespeaker
-			i(241385),	-- Ensemble: Heritage of the Shal'dorei - Vineyard Red
-			i(241386),	-- Ensemble: Heritage of the Lightforged - Crimson Vengeance
-			i(241387),	-- Ensemble: Heritage of the Lightforged - Hologemmed
-			i(241388),	-- Ensemble: Heritage of the Lightforged - Holy Gold
-			i(241389),	-- Ensemble: Antoran Guard's Golden Battleplate
-			i(241390),	-- Ensemble: Vestments of Eredathian Sacrifice
-			i(241391),	-- Ensemble: Stygian Hides
-			i(241392),	-- Ensemble: Argussian Demonsbane Armor
-			i(241393),	-- Ensemble: Winged Plate of the Valhalas Champion
-			i(241394),	-- Ensemble: Val'kyr's Warharness
-			i(241395),	-- Ensemble: Storm Champion's Warharness
-			i(241396),	-- Ensemble: Jarl's Battlehorns
-			i(241397),	-- Ensemble: Firewurm Dragonscale
-			i(241398),	-- Ensemble: Earthbreaker Dragonscale
-			i(241399),	-- Ensemble: Dreamweald Dragonscale
-			i(241400),	-- Ensemble: Highpeak Dragonscale
-			i(241401),	-- Ensemble: Sunborne Runemail
-			i(241402),	-- Ensemble: Ruby Drake Hunter's Kit
-			i(241403),	-- Ensemble: Jarl's Battlescales
-			i(241404),	-- Ensemble: Seaborne Brigandine
-			i(241405),	-- Ensemble: Skyborne Brigandine
-			i(241406),	-- Ensemble: Gladeraider's Battlegarb
-			i(241407),	-- Ensemble: Searaider's Battlegarb
-			i(241408),	-- Ensemble: Fel-bloodied Battlegear
-			i(241409),	-- Ensemble: Slayer's Silver Scarguards
-			i(241410),	-- Ensemble: Slayer's Golden Scarguards
-			i(241411),	-- Ensemble: Skyrune Robes
-			i(241412),	-- Ensemble: Earthrune Robes
-			i(241413),	-- Ensemble: Nightrune Robes
-			i(241414),	-- Ensemble: Dreamseeker Vestments
-			i(241415),	-- Ensemble: Dreamwatcher Vestments
-			i(241416),	-- Ensemble: Blazing Dreamscribed Robes
-			i(241417),	-- Ensemble: Nightforged Felplate
-			i(241418),	-- Ensemble: Bloodforged Battleplate
-			i(241419),	-- Ensemble: Honorforged Valorplate
-			i(241420),	-- Ensemble: Scalemail of Devouring Night
-			i(241421),	-- Ensemble: Ravensteel Mail
-			i(241422),	-- Ensemble: Armor of the Skyfather's Chosen
-			i(241423),	-- Ensemble: Guise of the Nightstalker
-			i(241424),	-- Ensemble: Thirsting Hides
-			i(241425),	-- Ensemble: Bindings of Hungering Flesh
-			i(241426),	-- Ensemble: Raiment of Night Eternal
-			i(241427),	-- Ensemble: Sanguine Oath Vestments
-			i(241428),	-- Ensemble: Vesture of Borrowed Souls
-			i(241429),	-- Ensemble: Leyline Defender's Sunplate Armor
-			i(241430),	-- Ensemble: Jandvik Diver's Metal
-			i(241431),	-- Ensemble: Suramar Silver Plating
-			i(241432),	-- Ensemble: Darkwatcher Bindings
-			i(241433),	-- Ensemble: Chains of Helheim
-			i(241434),	-- Ensemble: Chains of Nightmare's Embrace
-			i(241435),	-- Ensemble: Ambervale Bonehide
-			i(241436),	-- Ensemble: Nighthide Coat
-			i(241437),	-- Ensemble: Battlegear of the Dreadhide Stalker
-			i(241438),	-- Ensemble: Moonfall Robes
-			i(241439),	-- Ensemble: Seawitch's Terrorcloth
-			i(241440),	-- Ensemble: Vestments of the Manasinged
-			i(241441),	-- Ensemble: Xorothian Plate Armor
-			i(241442),	-- Ensemble: Ered'ruin Scalemail
-			i(241443),	-- Ensemble: Netherfiend Battlegear
-			i(241444),	-- Ensemble: Vileweave Vestments
-			i(241445),	-- Ensemble: Juggernaut Battlegear
-			i(241446),	-- Ensemble: Juggernaut Battlegear
-			i(241447),	-- Ensemble: Juggernaut Battlegear
-			i(241448),	-- Ensemble: Juggernaut Battlegear
-			i(241449),	-- Ensemble: Light's Vanguard Battleplate
-			i(241450),	-- Ensemble: Light's Vanguard Battleplate
-			i(241451),	-- Ensemble: Light's Vanguard Battleplate
-			i(241452),	-- Ensemble: Light's Vanguard Battleplate
-			i(241453),	-- Ensemble: Dreadwake Armor
-			i(241454),	-- Ensemble: Dreadwake Armor
-			i(241455),	-- Ensemble: Dreadwake Armor
-			i(241456),	-- Ensemble: Dreadwake Armor
-			i(241457),	-- Ensemble: Garb of Venerated Spirits
-			i(241458),	-- Ensemble: Garb of Venerated Spirits
-			i(241459),	-- Ensemble: Garb of Venerated Spirits
-			i(241460),	-- Ensemble: Garb of Venerated Spirits
-			i(241461),	-- Ensemble: Serpentstalker Guise
-			i(241462),	-- Ensemble: Serpentstalker Guise
-			i(241463),	-- Ensemble: Serpentstalker Guise
-			i(241464),	-- Ensemble: Serpentstalker Guise
-			i(241465),	-- Ensemble: Regalia of the Dashing Scoundrel
-			i(241466),	-- Ensemble: Regalia of the Dashing Scoundrel
-			i(241467),	-- Ensemble: Regalia of the Dashing Scoundrel
-			i(241468),	-- Ensemble: Regalia of the Dashing Scoundrel
-			i(241469),	-- Ensemble: Chi-Ji's Battlegear
-			i(241470),	-- Ensemble: Chi-Ji's Battlegear
-			i(241471),	-- Ensemble: Chi-Ji's Battlegear
-			i(241472),	-- Ensemble: Chi-Ji's Battlegear
-			i(241473),	-- Ensemble: Bearmantle Battlegear
-			i(241474),	-- Ensemble: Bearmantle Battlegear
-			i(241475),	-- Ensemble: Bearmantle Battlegear
-			i(241476),	-- Ensemble: Bearmantle Battlegear
-			i(241477),	-- Ensemble: Felreaper Vestments
-			i(241478),	-- Ensemble: Felreaper Vestments
-			i(241479),	-- Ensemble: Felreaper Vestments
-			i(241480),	-- Ensemble: Felreaper Vestments
-			i(241481),	-- Ensemble: Grim Inquisitor's Regalia
-			i(241482),	-- Ensemble: Grim Inquisitor's Regalia
-			i(241483),	-- Ensemble: Grim Inquisitor's Regalia
-			i(241484),	-- Ensemble: Grim Inquisitor's Regalia
-			i(241485),	-- Ensemble: Gilded Seraph's Raiment
-			i(241486),	-- Ensemble: Gilded Seraph's Raiment
-			i(241487),	-- Ensemble: Gilded Seraph's Raiment
-			i(241488),	-- Ensemble: Gilded Seraph's Raiment
-			i(241489),	-- Ensemble: Runebound Regalia
-			i(241490),	-- Ensemble: Runebound Regalia
-			i(241491),	-- Ensemble: Runebound Regalia
-			i(241492),	-- Ensemble: Runebound Regalia
-			i(241493),	-- Ensemble: Titanic Onslaught Armor
-			i(241494),	-- Ensemble: Titanic Onslaught Armor
-			i(241495),	-- Ensemble: Titanic Onslaught Armor
-			i(241496),	-- Ensemble: Titanic Onslaught Armor
-			i(241497),	-- Ensemble: Radiant Lightbringer Armor
-			i(241498),	-- Ensemble: Radiant Lightbringer Armor
-			i(241499),	-- Ensemble: Radiant Lightbringer Armor
-			i(241500),	-- Ensemble: Radiant Lightbringer Armor
-			i(241501),	-- Ensemble: Gravewarden Armaments
-			i(241502),	-- Ensemble: Gravewarden Armaments
-			i(241503),	-- Ensemble: Gravewarden Armaments
-			i(241504),	-- Ensemble: Gravewarden Armaments
-			i(241505),	-- Ensemble: Regalia of the Skybreaker
-			i(241506),	-- Ensemble: Regalia of the Skybreaker
-			i(241507),	-- Ensemble: Regalia of the Skybreaker
-			i(241508),	-- Ensemble: Regalia of the Skybreaker
-			i(241509),	-- Ensemble: Wildstalker Armor
-			i(241510),	-- Ensemble: Wildstalker Armor
-			i(241511),	-- Ensemble: Wildstalker Armor
-			i(241512),	-- Ensemble: Wildstalker Armor
-			i(241513),	-- Ensemble: Fanged Slayer's Armor
-			i(241514),	-- Ensemble: Fanged Slayer's Armor
-			i(241515),	-- Ensemble: Fanged Slayer's Armor
-			i(241516),	-- Ensemble: Fanged Slayer's Armor
-			i(241517),	-- Ensemble: Xuen's Battlegear
-			i(241518),	-- Ensemble: Xuen's Battlegear
-			i(241519),	-- Ensemble: Xuen's Battlegear
-			i(241520),	-- Ensemble: Xuen's Battlegear
-			i(241521),	-- Ensemble: Stormheart Raiment
-			i(241522),	-- Ensemble: Stormheart Raiment
-			i(241523),	-- Ensemble: Stormheart Raiment
-			i(241524),	-- Ensemble: Stormheart Raiment
-			i(241525),	-- Ensemble: Demonbane Armor
-			i(241526),	-- Ensemble: Demonbane Armor
-			i(241527),	-- Ensemble: Demonbane Armor
-			i(241528),	-- Ensemble: Demonbane Armor
-			i(241529),	-- Ensemble: Diabolic Raiment
-			i(241530),	-- Ensemble: Diabolic Raiment
-			i(241531),	-- Ensemble: Diabolic Raiment
-			i(241532),	-- Ensemble: Diabolic Raiment
-			i(241533),	-- Ensemble: Vestments of Blind Absolution
-			i(241534),	-- Ensemble: Vestments of Blind Absolution
-			i(241535),	-- Ensemble: Vestments of Blind Absolution
-			i(241536),	-- Ensemble: Vestments of Blind Absolution
-			i(241537),	-- Ensemble: Regalia of the Arcane Tempest
-			i(241538),	-- Ensemble: Regalia of the Arcane Tempest
-			i(241539),	-- Ensemble: Regalia of the Arcane Tempest
-			i(241540),	-- Ensemble: Regalia of the Arcane Tempest
-			i(241541),	-- Ensemble: Warplate of the Obsidian Aspect
-			i(241542),	-- Ensemble: Warplate of the Obsidian Aspect
-			i(241543),	-- Ensemble: Warplate of the Obsidian Aspect
-			i(241544),	-- Ensemble: Warplate of the Obsidian Aspect
-			i(241545),	-- Ensemble: Battleplate of the Highlord
-			i(241546),	-- Ensemble: Battleplate of the Highlord
-			i(241547),	-- Ensemble: Battleplate of the Highlord
-			i(241548),	-- Ensemble: Battleplate of the Highlord
-			i(241549),	-- Ensemble: Dreadwyrm Battleplate
-			i(241550),	-- Ensemble: Dreadwyrm Battleplate
-			i(241551),	-- Ensemble: Dreadwyrm Battleplate
-			i(241552),	-- Ensemble: Dreadwyrm Battleplate
-			i(241553),	-- Ensemble: Regalia of Shackled Elements
-			i(241554),	-- Ensemble: Regalia of Shackled Elements
-			i(241555),	-- Ensemble: Regalia of Shackled Elements (Felfire)
-			i(241556),	-- Ensemble: Regalia of Shackled Elements
-			i(241557),	-- Ensemble: Regalia of Shackled Elements (Ice)
-			i(241558),	-- Ensemble: Eagletalon Battlegear
-			i(241559),	-- Ensemble: Eagletalon Battlegear
-			i(241560),	-- Ensemble: Eagletalon Battlegear
-			i(241561),	-- Ensemble: Eagletalon Battlegear
-			i(241562),	-- Ensemble: Doomblade Battlegear
-			i(241563),	-- Ensemble: Doomblade Battlegear
-			i(241564),	-- Ensemble: Doomblade Battlegear
-			i(241565),	-- Ensemble: Doomblade Battlegear
-			i(241566),	-- Ensemble: Vestments of Enveloped Dissonance
-			i(241567),	-- Ensemble: Vestments of Enveloped Dissonance
-			i(241568),	-- Ensemble: Vestments of Enveloped Dissonance
-			i(241569),	-- Ensemble: Vestments of Enveloped Dissonance
-			i(241570),	-- Ensemble: Garb of the Astral Warden
-			i(241571),	-- Ensemble: Garb of the Astral Warden
-			i(241572),	-- Ensemble: Garb of the Astral Warden
-			i(241573),	-- Ensemble: Garb of the Astral Warden
-			i(241574),	-- Ensemble: Vestment of Second Sight
-			i(241575),	-- Ensemble: Vestment of Second Sight
-			i(241576),	-- Ensemble: Vestment of Second Sight
-			i(241577),	-- Ensemble: Vestment of Second Sight
-			i(241578),	-- Ensemble: Legacy of Azj'aqir
-			i(241579),	-- Ensemble: Legacy of Azj'aqir
-			i(241580),	-- Ensemble: Legacy of Azj'aqir
-			i(241581),	-- Ensemble: Legacy of Azj'aqir
-			i(241582),	-- Ensemble: Vestments of the Purifier
-			i(241583),	-- Ensemble: Vestments of the Purifier
-			i(241584),	-- Ensemble: Vestments of the Purifier
-			i(241585),	-- Ensemble: Vestments of the Purifier
-			i(241586),	-- Ensemble: Regalia of Everburning Knowledge
-			i(241587),	-- Ensemble: Regalia of Everburning Knowledge
-			i(241588),	-- Ensemble: Regalia of Everburning Knowledge
-			i(241589),	-- Ensemble: Regalia of Everburning Knowledge
-			i(241590),	-- Ensemble: Stormborne Wraps
-			i(241591),	-- Ensemble: Legion Hunter's Capes
-			i(241592),	-- Ensemble: Cloaks of the Lost Combatant
-			i(241593),	-- Ensemble: Cloaks of the Lost Gladiator
-			i(241594),	-- Ensemble: Scavenged Chains of Karazhan
 			i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
-			i(241596),	-- Ensemble: Funerary Plate of the Chosen Dead
-			i(241597),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
-			i(241599),	-- Ensemble: Chains of the Chosen Dead
 			i(241600),	-- Ensemble: Chains of the Chosen Dead
-			i(241601),	-- Ensemble: Chains of the Chosen Dead
 			i(241602),	-- Ensemble: Chains of the Chosen Dead
-			i(241603),	-- Ensemble: Garb of the Chosen Dead
-			i(241604),	-- Ensemble: Garb of the Chosen Dead
 			i(241605),	-- Ensemble: Garb of the Chosen Dead
 			i(241606),	-- Ensemble: Garb of the Chosen Dead
-			i(241607),	-- Ensemble: Regalia of the Chosen Dead
-			i(241608),	-- Ensemble: Regalia of the Chosen Dead
 			i(241609),	-- Ensemble: Regalia of the Chosen Dead
 			i(241610),	-- Ensemble: Regalia of the Chosen Dead
-			i(241637),	-- Earthrune Band
-			i(241638),	-- Nightrune Band
-			i(241639),	-- Sunborne Runemail Kilt
-			i(241640),	-- Dreadthorn Kilt
-			i(241641),	-- Kilt of Remembered Eternity
-			i(241642),	-- Stormborn Laminar Kilt
-			i(241643),	-- Highmountain Riverscale Kilt
 			i(241644),	-- Corrupted Runelord's Band
 			i(241645),	-- Imbued Silkweave Doublet
 			i(241647),	-- Battlebound Mailcoat
 			i(241648),	-- Template
-			i(241661),	-- Druidic Fur Shroud
-			i(241665),	-- Druidic Fur Trim Cape
-			i(241667),	-- Druidic Fur Cloak
-			i(241671),	-- Shawl of Demonic Dominance
-			i(241672),	-- Drape of Demonic Dominance
-			i(241674),	-- Praetorium Noble's Shroud
-			i(241675),	-- Praetorium Noble's Shawl
 			i(241678),	-- [PH] Template
 			i(241679),	-- [PH] Template
 			i(241680),	-- [PH] Template
 			i(241681),	-- [PH] Template
-			i(241684),	-- Oronaar Disciple's Cloak
-			i(241689),	-- Shroud of the Rosy Combatant
-			i(241690),	-- Cloak of the Rosy Combatant
-			i(241694),	-- Excellent Eredar Shroud
-			i(241695),	-- Excellent Eredar Cape
-			i(241701),	-- Eredar Battle Shroud
-			i(241702),	-- Eredar Battle Cloak
-			i(241707),	-- Conservatory Ward's Shroud
-			i(241710),	-- Conservatory Ward's Cloak
 			i(241712),	-- [PH] Template
 			i(241713),	-- [PH] Template
 			i(241714),	-- [PH] Template
 			i(241715),	-- [PH] Template
-			i(241716),	-- Shroud of Dragon's Dominance
-			i(241717),	-- Shawl of Dragon's Dominance
-			i(241722),	-- Shroud of the Master at Arms
-			i(241723),	-- Shawl of the Master at Arms
-			i(241724),	-- Lost Dragonhide Shawl
-			i(241725),	-- Lost Dragonhide Drape
-			i(241727),	-- Stygian Silk Shroud
-			i(241730),	-- Gladiator's Pious Shroud
-			i(241731),	-- Gladiator's Pious Cape
-			i(241735),	-- Shroud of Eredar Nobility
-			i(241738),	-- Combatant's Pious Shroud
-			i(241739),	-- Combatant's Pious Cloak
-			i(241741),	-- Doomsinger's Shroud
-			i(241742),	-- Doomsinger's Cape
-			i(241749),	-- Cloak of Eredar Nobility
-			i(241751),	-- Shrinebreaker's Draping Shawl
-			i(241752),	-- Shrinebreaker's Draping Shroud
-			i(241755),	-- Gladiator's Scaled Draping Shawl
-			i(241756),	-- Gladiator's Scaled Draping Shroud
-			i(241758),	-- Draping Shawl of Devouring Night
-			i(241759),	-- Draping Shroud of Devouring Night
-			i(241761),	-- Ered'ruin Draping Shawl
-			i(241762),	-- Ered'ruin Draping Shroud
-			i(241764),	-- Combatant's Scaled Draping Shroud
-			i(241767),	-- Combatant's Scaled Draping Shawl
-			i(241773),	-- Dalaran's Finest Cape
-			i(241777),	-- Dalaran's Finest Draping Shroud
-			i(241779),	-- Lost Dreadwyrm Trim Drape
-			i(241780),	-- Lost Dreadwyrm Wrap
-			i(241785),	-- Trim Drape of Enveloped Clarity
-			i(241790),	-- Draping Shroud of Enveloped Clarity
-			i(241796),	-- Shroud of Azj'Aqir's Royalty
-			i(241802),	-- Overdrape of Azj'Aqir's Royalty
-			i(241803),	-- Legion's Grim Shortcloak
-			i(241804),	-- Legion's Grim Full Wrap
 			i(241805),	-- [PH] Template
 			i(241806),	-- [PH] Template
 			i(241807),	-- [PH] Template
 			i(241808),	-- [PH] Template
-			i(241809),	-- Legion's Grim Oversized Shroud
-			i(241812),	-- Legion's Grim Cape
-			i(241820),	-- Cape of Everdeepening Knowledge
-			i(241830),	-- Cloak of Evergrowing Knowledge
-			i(241832),	-- Draping Shroud of Evergrowing Knowledge
-			i(241839),	-- Soldier's Silken Cape
-			i(241842),	-- Soldier's Silken Draping Shroud
-			i(241850),	-- Combatant's Silken Cloak
-			i(241851),	-- Combatant's Silken Draping Shroud
-			i(241858),	-- Gladiator's Silken Drape
-			i(241859),	-- Gladiator's Silken Shroud
-			i(241863),	-- Gladiator's Silken Draping Cloak
-			i(241868),	-- Twisted Arcanum Drape
-			i(241869),	-- Twisted Arcanum Shroud
-			i(241873),	-- Twisted Arcanum Draping Cloak
-			i(241879),	-- Drape of Everburning Knowledge
-			i(241880),	-- Shroud of Everburning Knowledge
-			i(241882),	-- Draping Cloak of Everburning Knowledge
-			i(241885),	-- Trim Drape of Enveloped Dissonance
-			i(241891),	-- Draping Shroud of Enveloped Dissonance
-			i(241894),	-- Trim Drape of the Cruel Gladiator
-			i(241900),	-- Draping Shroud of the Cruel Gladiator
-			i(241903),	-- Trim Drape of the Ironskin Gladiator
-			i(241909),	-- Draping Shroud of the Ironskin Gladiator
-			i(241912),	-- Evergreen Vinewrap Trim Drape
-			i(241918),	-- Evergreen Vinewrap Draping Shroud
-			i(241921),	-- Trim Drape of Lavish Meditations
-			i(241927),	-- Draping Shroud of Lavish Meditations
-			i(241930),	-- Lost Ironskin Trim Drape
-			i(241935),	-- Lost Ironskin Draping Overcloak
-			i(241944),	-- Battlebound Drape
-			i(241949),	-- Battlebound Draping Cloak
-			i(241953),	-- Fel-marked Drape
-			i(241955),	-- Fel-marked Draping Cloak
-			i(241958),	-- Trim Drape of Lost Cruelty
-			i(241965),	-- Wrap of Lost Cruelty
-			i(241969),	-- Trim Drape of Fearless Vindication
-			i(241976),	-- Wrap of Fearless Vindication
-			i(241980),	-- Trim Drape of Withering Twilight
-			i(241987),	-- Wrap of Withering Twilight
-			i(241991),	-- Plaguewyrm Trim Drape
-			i(241998),	-- Plaguewyrm Wrap
-			i(242002),	-- Lost Combatant's Icy Trim Drape
-			i(242011),	-- Lost Combatant's Icy Wrap
-			i(242012),	-- Lost Dreamwyrm Trim Drape
-			i(242022),	-- Lost Dreamwyrm Wrap
-			i(242027),	-- Lost Combatant's Fiery Shroud
-			i(242029),	-- Lost Combatant's Fiery Cape
-			i(242037),	-- Lost Crimson Felweave Trim Shroud
-			i(242043),	-- Lost Crimson Felweave Draping Shroud
-			i(242046),	-- Trim Shroud of Azj'Aqir's Grief
-			i(242052),	-- Draping Shroud of Azj'Aqir's Grief
-			i(242056),	-- Draping Shroud of Azj'Aqir's Hatred
-			i(242057),	-- Trim Shroud of Azj'Aqir's Hatred
-			i(242064),	-- Trim Shroud of Azj'Aqir's Envy
-			i(242070),	-- Draping Shroud of Azj'Aqir's Envy
-			i(242073),	-- Lost Azure Felweave Trim Shroud
-			i(242078),	-- Lost Azure Felweave Draping Shroud
-			i(242082),	-- Trim Shroud of Lost Ferocity
-			i(242090),	-- Draping Shroud of Lost Ferocity
-			i(242091),	-- Leystone Shawl
-			i(242093),	-- Leystone Shroud
-			i(242098),	-- Lost Gladiator's Crimson Shawl
-			i(242100),	-- Lost Gladiator's Crimson Shroud
-			i(242105),	-- Dream Defender's Emerald Shawl
-			i(242107),	-- Dream Defender's Emerald Shroud
-			i(242117),	-- Broken Shore Battlemender's Trim Cape
-			i(242121),	-- Broken Shore Battlemender's Draping Shroud
-			i(242127),	-- Dreamseeker's Trim Cape
-			i(242128),	-- Dreamseeker's Draping Shroud
-			i(242131),	-- Silkweave Trim Cape
-			i(242135),	-- Silkweave Draping Shroud
-			i(242138),	-- Dreamwatcher's Trim Cape
-			i(242142),	-- Dreamwatcher's Draping Shroud
-			i(242144),	-- Lost Gladiator's Azure Shawl
-			i(242146),	-- Lost Gladiator's Azure Shroud
-			i(242156),	-- Lost Combatant's Crimson Draping Shroud
-			i(242157),	-- Lost Combatant's Crimson Trim Cape
-			i(242160),	-- Lost Combatant's Azure Trim Cape
-			i(242163),	-- Lost Combatant's Azure Cape
-			i(242170),	-- Warhide Draping Shroud
-			i(242171),	-- Warhide Draping Cloak
-			i(242176),	-- Shroud of the Hunting Dream
-			i(242177),	-- Draping Cloak of the Hunting Dream
-			i(242180),	-- Invasion Stalker's Draping Shroud
-			i(242181),	-- Invasion Stalker's Draping Cloak
-			i(242186),	-- Seaborne Shroud
-			i(242192),	-- Seaborne Cape
-			i(242193),	-- Mountainborne Shroud
-			i(242195),	-- Mountainborne Cape
-			i(242198),	-- Skyborne Shroud
-			i(242200),	-- Skyborne Cloak
-			i(242202),	-- Skyrune Oversized Shroud
-			i(242207),	-- Skyrune Cape
-			i(242208),	-- Earthrune Oversized Shroud
-			i(242213),	-- Earthrune Cape
-			i(242214),	-- Nightrune Oversized Shroud
-			i(242219),	-- Nightrune Cloak
-			i(242221),	-- Tattered Highmountain Draping Cloak
-			i(242222),	-- Draping Cloak of the Forest's Nightmare
-			i(242223),	-- Pondskipper's Draping Cloak
-			i(242228),	-- Ensemble: Shrouds of Azj'Aqir
-			i(242229),	-- Ensemble: Druidic Fur Drapes
-			i(242230),	-- Ensemble: Shrouds of the Lost Deathwyrms
-			i(242231),	-- Ensemble: Cloaks of the Fel Battler
-			i(242232),	-- Ensemble: Cloaks of the Ironskin Gladiator
-			i(242233),	-- Ensemble: Cloaks of Silken Knowledge
-			i(242234),	-- Ensemble: Dalaran's Finest Silken Cloaks
-			i(242235),	-- Ensemble: Drapes of Devouring Night
-			i(242236),	-- Ensemble: Drapes of Eredar Finery
-			i(242237),	-- Ensemble: Argussian Demonsbane Cloaks
-			i(242238),	-- Ensemble: Cloaks of the Antoran Guard
-			i(242239),	-- Ensemble: Eredar Battle Capes
-			i(242240),	-- Ensemble: Cloaks of the Green Mountains
-			i(242368),	-- The First Satyr's Spaulders
 			i(242369),	-- The First Satyr's Spaulders
-			i(242370),	-- Horns of the First Satyr
-			i(242476),	-- Taah'bat's Desert Carbine
-			i(242502),	-- Memento of Epoch History
-			i(242503),	-- Memento of Epoch Stories
-			i(242504),	-- Memento of Epoch Truth
-			i(242505),	-- Memento of Epoch Hope
-			i(242506),	-- Memento of Epoch Rituals
-			i(242507),	-- Memento of Epoch Power
-			i(242508),	-- Memento of Epoch Potential
-			i(242509),	-- Memento of Epoch Curiosity
-			i(242510),	-- Memento of Epoch Kindness
-			i(242513),	-- Memento of Epoch Collections
-			i(242516),	-- Memento of Epoch Legends
-			i(242555),	-- Ashbringer
-			i(242558),	-- Aluneth
-			i(242559),	-- Blades of the Fallen Prince
-			i(242560),	-- Blades of the Fallen Prince
-			i(242561),	-- G'Hanir, the Mother Tree
-			i(242562),	-- Maw of the Damned
-			i(242563),	-- Apocalypse
-			i(242564),	-- Fangs of the Devourer
-			i(242565),	-- Fangs of the Devourer
-			i(242566),	-- Talonclaw
-			i(242567),	-- Doomhammer
-			i(242568),	-- Felo'melorn
-			i(242569),	-- Claws of Ursoc
-			i(242570),	-- Claws of Ursoc
-			i(242571),	-- The Silver Hand
 			i(242572),	-- Tome of the Silver Hand
-			i(242573),	-- T'uure, Beacon of the Naaru
-			i(242574),	-- Thas'dorah, Legacy of the Windrunners
-			i(242575),	-- Xal'atath, Blade of the Black Empire
-			i(242576),	-- Aldrachi Warblades
-			i(242577),	-- Aldrachi Warblades
-			i(242578),	-- Scythe of Elune
-			i(242579),	-- Fangs of Ashamane
-			i(242580),	-- Fangs of Ashamane
-			i(242581),	-- Titanstrike
-			i(242582),	-- Ebonchill
-			i(242583),	-- Truthguard
-			i(242584),	-- Oathseeker
-			i(242585),	-- Light's Wrath
-			i(242586),	-- The Kingslayers
-			i(242587),	-- The Kingslayers
-			i(242588),	-- The Dreadblades
-			i(242589),	-- Fury of the Stonemother
 			i(242590),	-- Strom'kar, the Warbreaker
-			i(242591),	-- Sharas'dal, Scepter of Tides
-			i(242592),	-- Shield of the Sea Queen
-			i(242593),	-- The Fist of Ra-den
-			i(242594),	-- The Highkeeper's Ward
-			i(242595),	-- Sheilun, Staff of the Mists
-			i(242596),	-- Fu Zan, the Wanderer's Companion
-			i(242597),	-- Fists of the Heavens
-			i(242598),	-- Scepter of Sargeras
-			i(242599),	-- Ulthalesh, the Deadwind Harvester
-			i(242600),	-- Skull of the Man'ari
-			i(242601),	-- Fists of the Heavens
-			i(242602),	-- Secrets of the Void
-			i(242603),	-- Heart of the Phoenix
-			i(242604),	-- The Dreadblades
-			i(242605),	-- Spine of Thal'kiel
-			i(242617),	-- Curious Simulacrum
 			i(242706),	-- Curious Curio
 			i(243013),	-- Doomfire Dynamo
 			i(243023),	-- Badge of the Fallen Vindicator
@@ -1443,14 +144,12 @@ root(ROOTS.Unsorted, {
 			i(243035),	-- Flawed Ettin Bone Fragment
 			i(243036),	-- Flawed Gleaming Iron Spike
 			i(243037),	-- Flawed Xakal's Determination
-			i(243194),	-- Grandiose Grrloc
-			i(244295),	-- Untethered Captain's Greaves
+			i(243194),	-- Grandiose Grrloc (MOUNT!)	/ New 12-month sub mount https://www.mmo-champion.com/content/13616-New-Promotions-12-Month-Subscription-Burning-Crusade-Classic-and-China-Exclusives
 			i(244449),	-- Set Keystone Map: Black Rook Hold
 			i(244458),	-- Add Keystone Affix: Sands of Time
 			i(244862),	-- [DNT] Small Bronze Token
 			i(244863),	-- [DNT] Large Bronze Token
 			i(244864),	-- [DNT] Gathering Token
-			i(245553),	-- Heroic Cache of Infinite Treasure
 			i(245554),	-- Heroic Cache of Infinite Treasure
 			i(245663),	-- Holy Golden Greatsword
 			i(245664),	-- Holy Hologem Greatsword
@@ -1487,360 +186,17 @@ root(ROOTS.Unsorted, {
 			i(246238),	-- [DNT] Affix Token
 			i(246789),	-- Cache of Infinite Power
 			i(246796),	-- Epic Cache of Infinite Power
-			i(246808),	-- Experiment Instructions
-			i(246813),	-- Greater Bronze Cache
-			i(246814),	-- Bronze Cache
-			i(246815),	-- Lesser Bronze Cache
 			i(246889),	-- Orb of Synchronized Power
-			i(246936),	-- Resonant Epoch Memento
-			i(246937),	-- Perfected Epoch Memento
 			i(246990),	-- Infernal's Azure Staff
-			i(246991),	-- Sinister Felstaff
 			i(246994),	-- Infernal's Hellfire Staff
-			i(246997),	-- Sinister Felwand
-			i(247002),	-- Gloves of Everburning Knowledge
-			i(247003),	-- Purifier's Gloves
-			i(247004),	-- Clutch of Azj'Aqir
-			i(247005),	-- Hood of Everburning Knowledge
-			i(247006),	-- Purifier's Gorget
-			i(247007),	-- Eyes of Azj'Aqir
-			i(247008),	-- Leggings of Everburning Knowledge
-			i(247009),	-- Purifier's Leggings
-			i(247010),	-- Leggings of Azj'Aqir
-			i(247011),	-- Robe of Everburning Knowledge
-			i(247012),	-- Purifier's Cassock
-			i(247013),	-- Finery of Azj'Aqir
-			i(247014),	-- Mantle of Everburning Knowledge
-			i(247015),	-- Purifier's Mantle
-			i(247016),	-- Pauldrons of Azj'Aqir
-			i(247017),	-- Robe of the Astral Warden
-			i(247018),	-- Tunic of Enveloped Dissonance
-			i(247019),	-- Doomblade Tunic
-			i(247020),	-- Gloves of the Astral Warden
-			i(247021),	-- Gloves of Enveloped Dissonance
-			i(247022),	-- Doomblade Gauntlets
-			i(247023),	-- Hood of the Astral Warden
-			i(247024),	-- Hood of Enveloped Dissonance
-			i(247025),	-- Doomblade Cowl
-			i(247026),	-- Leggings of the Astral Warden
-			i(247027),	-- Leggings of Enveloped Dissonance
-			i(247028),	-- Doomblade Pants
-			i(247029),	-- Mantle of the Astral Warden
-			i(247030),	-- Pauldrons of Enveloped Dissonance
-			i(247031),	-- Doomblade Spaulders
-			i(247032),	-- Eagletalon Tunic
-			i(247033),	-- Eagletalon Gauntlets
-			i(247034),	-- Gauntlets of Shackled Elements
-			i(247035),	-- Eagletalon Cowl
-			i(247036),	-- Helm of Shackled Elements
-			i(247037),	-- Eagletalon Legchains
-			i(247038),	-- Leggings of Shackled Elements
-			i(247039),	-- Raiment of Shackled Elements
-			i(247040),	-- Eagletalon Spaulders
-			i(247041),	-- Pauldrons of Shackled Elements
-			i(247042),	-- Dreadwyrm Breastplate
-			i(247043),	-- Breastplate of the Highlord
-			i(247044),	-- Chestplate of the Obsidian Aspect
-			i(247045),	-- Dreadwyrm Gauntlets
-			i(247046),	-- Gauntlets of the Highlord
-			i(247047),	-- Gauntlets of the Obsidian Aspect
-			i(247048),	-- Dreadwyrm Crown
-			i(247049),	-- Helmet of the Highlord
-			i(247050),	-- Warhelm of the Obsidian Aspect
-			i(247051),	-- Dreadwyrm Legplates
-			i(247052),	-- Legplates of the Highlord
-			i(247053),	-- Legplates of the Obsidian Aspect
-			i(247054),	-- Dreadwyrm Shoulderguards
-			i(247055),	-- Pauldrons of the Highlord
-			i(247056),	-- Shoulderplates of the Obsidian Aspect
-			i(247057),	-- Dreadwyrm Greatcloak
-			i(247058),	-- Cloak of Everburning Knowledge
-			i(247059),	-- Cloak of the Astral Warden
-			i(247060),	-- Cloak of Enveloped Dissonance
-			i(247061),	-- Eagletalon Cloak
-			i(247062),	-- Greatmantle of the Highlord
-			i(247063),	-- Purifier's Drape
-			i(247064),	-- Doomblade Shadowwrap
-			i(247065),	-- Cloak of Shackled Elements
-			i(247066),	-- Cloak of Azj'Aqir
-			i(247067),	-- Greatcloak of the Obsidian Aspect
-			i(247068),	-- Cape of Second Sight
-			i(247069),	-- Tunic of Second Sight
-			i(247070),	-- Gloves of Second Sight
-			i(247071),	-- Mask of Second Sight
-			i(247072),	-- Legwraps of Second Sight
-			i(247073),	-- Shoulderguards of Second Sight
-			i(247074),	-- Gravewarden Chestplate
-			i(247075),	-- Gravewarden Cloak
-			i(247076),	-- Gravewarden Handguards
-			i(247077),	-- Gravewarden Visage
-			i(247078),	-- Gravewarden Legplates
-			i(247079),	-- Gravewarden Pauldrons
-			i(247080),	-- Demonbane Harness
-			i(247081),	-- Demonbane Shroud
-			i(247082),	-- Demonbane Gauntlets
-			i(247083),	-- Demonbane Faceguard
-			i(247084),	-- Demonbane Leggings
-			i(247085),	-- Demonbane Shoulderpads
-			i(247086),	-- Stormheart Tunic
-			i(247087),	-- Stormheart Drape
-			i(247088),	-- Stormheart Gloves
-			i(247089),	-- Stormheart Headdress
-			i(247090),	-- Stormheart Legguards
-			i(247091),	-- Stormheart Mantle
-			i(247092),	-- Wildstalker Chestguard
-			i(247093),	-- Wildstalker Cape
-			i(247094),	-- Wildstalker Gauntlets
-			i(247095),	-- Wildstalker Helmet
-			i(247096),	-- Wildstalker Leggings
-			i(247097),	-- Wildstalker Spaulders
-			i(247098),	-- Drape of the Arcane Tempest
-			i(247099),	-- Gloves of the Arcane Tempest
-			i(247100),	-- Crown of the Arcane Tempest
-			i(247101),	-- Leggings of the Arcane Tempest
-			i(247102),	-- Robes of the Arcane Tempest
-			i(247103),	-- Mantle of the Arcane Tempest
-			i(247104),	-- Xuen's Tunic
-			i(247105),	-- Xuen's Cloak
-			i(247106),	-- Xuen's Gauntlets
-			i(247107),	-- Xuen's Helm
-			i(247108),	-- Xuen's Legguards
-			i(247109),	-- Xuen's Shoulderguards
-			i(247110),	-- Radiant Lightbringer Breastplate
-			i(247111),	-- Radiant Lightbringer Cape
-			i(247112),	-- Radiant Lightbringer Gauntlets
-			i(247113),	-- Radiant Lightbringer Crown
-			i(247114),	-- Radiant Lightbringer Greaves
-			i(247115),	-- Radiant Lightbringer Shoulderguards
-			i(247116),	-- Shawl of Blind Absolution
-			i(247117),	-- Gloves of Blind Absolution
-			i(247118),	-- Hood of Blind Absolution
-			i(247119),	-- Leggings of Blind Absolution
-			i(247120),	-- Robes of Blind Absolution
-			i(247121),	-- Mantle of Blind Absolution
-			i(247122),	-- Fanged Slayer's Chestguard
-			i(247123),	-- Fanged Slayer's Shroud
-			i(247124),	-- Fanged Slayer's Handguards
-			i(247125),	-- Fanged Slayer's Helm
-			i(247126),	-- Fanged Slayer's Legguards
-			i(247127),	-- Fanged Slayer's Shoulderpads
-			i(247128),	-- Harness of the Skybreaker
-			i(247129),	-- Drape of the Skybreaker
-			i(247130),	-- Grips of the Skybreaker
-			i(247131),	-- Helmet of the Skybreaker
-			i(247132),	-- Legguards of the Skybreaker
-			i(247133),	-- Pauldrons of the Skybreaker
-			i(247134),	-- Diabolic Shroud
-			i(247135),	-- Diabolic Gloves
-			i(247136),	-- Diabolic Helm
-			i(247137),	-- Diabolic Leggings
-			i(247138),	-- Diabolic Robe
-			i(247139),	-- Diabolic Mantle
-			i(247140),	-- Titanic Onslaught Breastplate
-			i(247141),	-- Titanic Onslaught Cloak
-			i(247142),	-- Titanic Onslaught Handguards
-			i(247143),	-- Titanic Onslaught Greathelm
-			i(247144),	-- Titanic Onslaught Greaves
-			i(247145),	-- Titanic Onslaught Pauldrons
-			i(247146),	-- Dreadwake Bonecage
-			i(247147),	-- Dreadwake Greatcloak
-			i(247148),	-- Dreadwake Gauntlets
-			i(247149),	-- Dreadwake Helm
-			i(247150),	-- Dreadwake Legplates
-			i(247151),	-- Dreadwake Pauldrons
-			i(247152),	-- Felreaper Vest
-			i(247153),	-- Felreaper Drape
-			i(247154),	-- Felreaper Gloves
-			i(247155),	-- Felreaper Hood
-			i(247156),	-- Felreaper Leggings
-			i(247157),	-- Felreaper Spaulders
-			i(247158),	-- Bearmantle Harness
-			i(247159),	-- Bearmantle Cloak
-			i(247160),	-- Bearmantle Paws
-			i(247161),	-- Bearmantle Headdress
-			i(247162),	-- Bearmantle Legguards
-			i(247163),	-- Bearmantle Shoulders
-			i(247164),	-- Serpentstalker Tunic
-			i(247165),	-- Serpentstalker Drape
-			i(247166),	-- Serpentstalker Grips
-			i(247167),	-- Serpentstalker Helmet
-			i(247168),	-- Serpentstalker Legguards
-			i(247169),	-- Serpentstalker Mantle
-			i(247170),	-- Runebound Cape
-			i(247171),	-- Runebound Gloves
-			i(247172),	-- Runebound Collar
-			i(247173),	-- Runebound Leggings
-			i(247174),	-- Runebound Tunic
-			i(247175),	-- Runebound Mantle
-			i(247176),	-- Tunic of Chi-Ji
-			i(247177),	-- Cloak of Chi-Ji
-			i(247178),	-- Grips of Chi-Ji
-			i(247179),	-- Douli of Chi-Ji
-			i(247180),	-- Leggings of Chi-Ji
-			i(247181),	-- Meditation Spheres of Chi-Ji
-			i(247182),	-- Light's Vanguard Breastplate
-			i(247183),	-- Light's Vanguard Greatcloak
-			i(247184),	-- Light's Vanguard Gauntlets
-			i(247185),	-- Light's Vanguard Helm
-			i(247186),	-- Light's Vanguard Legplates
-			i(247187),	-- Light's Vanguard Shoulderplates
-			i(247188),	-- Gilded Seraph's Drape
-			i(247189),	-- Gilded Seraph's Handwraps
-			i(247190),	-- Gilded Seraph's Crown
-			i(247191),	-- Gilded Seraph's Leggings
-			i(247192),	-- Gilded Seraph's Robes
-			i(247193),	-- Gilded Seraph's Amice
-			i(247194),	-- Vest of the Dashing Scoundrel
-			i(247195),	-- Cloak of the Dashing Scoundrel
-			i(247196),	-- Gloves of the Dashing Scoundrel
-			i(247197),	-- Cavalier Hat of the Dashing Scoundrel
-			i(247198),	-- Pants of the Dashing Scoundrel
-			i(247199),	-- Shoulderpads of the Dashing Scoundrel
-			i(247200),	-- Robes of Venerated Spirits
-			i(247201),	-- Drape of Venerated Spirits
-			i(247202),	-- Gloves of Venerated Spirits
-			i(247203),	-- Headdress of Venerated Spirits
-			i(247204),	-- Leggings of Venerated Spirits
-			i(247205),	-- Pauldrons of Venerated Spirits
-			i(247206),	-- Grim Inquisitor's Cloak
-			i(247207),	-- Grim Inquisitor's Gloves
-			i(247208),	-- Grim Inquisitor's Death Mask
-			i(247209),	-- Grim Inquisitor's Leggings
-			i(247210),	-- Grim Inquisitor's Robes
-			i(247211),	-- Grim Inquisitor's Shoulderguards
-			i(247212),	-- Juggernaut Breastplate
-			i(247213),	-- Juggernaut Cloak
-			i(247214),	-- Juggernaut Gauntlets
-			i(247215),	-- Juggernaut Helm
-			i(247216),	-- Juggernaut Legplates
-			i(247217),	-- Juggernaut Pauldrons
-			i(247429),	-- Robes of Fluctuating Energy
-			i(247430),	-- Antiquated Highborne Cinch
-			i(247431),	-- Bracers of Harnessed Flame
-			i(247432),	-- Nighthold Custodian's Hood
-			i(247433),	-- Master Warmage's Leggings
-			i(247434),	-- Chaos-Scarred Mantle
-			i(247435),	-- Perpetually Muddy Sandals
-			i(247436),	-- Dreadlord's Tattered Wingcover
-			i(247437),	-- Well-Flattened Wristguards
-			i(247438),	-- Cake Carrier's Girdle
-			i(247439),	-- Girdle of Nefarious Strategy
-			i(247440),	-- Stutterstep Treads
-			i(247441),	-- Grove-Tender's Moccasins
-			i(247442),	-- Gnawed Nightfallen Britches
-			i(247443),	-- Temporally Displaced Gloves
-			i(247444),	-- Mantle of the Torn Sky
-			i(247445),	-- Tunic of Unwavering Devotion
-			i(247446),	-- Nightborne Battle-Magus Hood
-			i(247447),	-- Sabatons of Burning Steps
-			i(247448),	-- Emblazoned Duskwatch Belt
-			i(247449),	-- Sterilizer's Insulated Gauntlets
-			i(247450),	-- Architect's Coif of Despair
-			i(247451),	-- Pertinacious Legplates
-			i(247452),	-- Pauldrons of Warped Memory
-			i(247453),	-- Shal'dorei Weedstompers
-			i(247454),	-- Thistle-Proof Thorngrabbers
-			i(247455),	-- Arcanochitin Hauberk
-			i(247456),	-- Stinger Resistant Bracers
-			i(247457),	-- Captain's Parade Breastplate
-			i(247458),	-- Duskwatch Plate Bracers
-			i(247459),	-- Gauntlets of Fractured Eons
-			i(247460),	-- Gilded Nightborne Waistplate
-			i(247461),	-- Eventide Casque
-			i(247462),	-- Chrono-Tempered Legplates
-			i(247463),	-- Shoulderguard of the Eclipse
-			i(247464),	-- Leystone-Toe Kickers
-			i(247465),	-- Treads of Galactic Odyssey
-			i(247466),	-- Woven Lasher Tendril Bracers
-			i(247467),	-- Man'ari Skullbuckled Cinch
-			i(247468),	-- Scorpid Handler's Gloves
-			i(247469),	-- Bracers of Impossible Choices
-			i(247470),	-- Belt of Celestial Alignment
-			i(247471),	-- Sabatons of Unchanging Fate
-			i(247472),	-- Goresmeared Abyssal Waistplate
-			i(247473),	-- Eternally Recurring Bracers
-			i(247474),	-- Vintage Suramar Nobility Hat
-			i(247475),	-- Jagged Carapace Wristclamps
-			i(247476),	-- Hood of Fading Opportunity
-			i(247477),	-- Immaculately Polished Boots
-			i(247478),	-- Gloves of Synchronous Elements
-			i(247479),	-- Bridgebreaker Gauntlets
-			i(247480),	-- Trousers of Cultivation
-			i(247481),	-- Astromancer's Greatcloak
-			i(247482),	-- Cloak of Temporal Recalibration
-			i(247483),	-- Mantle of Prestidigitation
-			i(247484),	-- Waistplate of Fractured Realities
-			i(247485),	-- Breastplate of the Remembered King
-			i(247486),	-- Outcast Wanderer's Footrags
-			i(247487),	-- Netherbranded Shoulderpads
-			i(247488),	-- High Shadow Councilor's Wrap
 			i(247489),	-- Aristocrat's Winter Drape
 			i(247490),	-- Feathermane Feather Cloak
 			i(247491),	-- Cloak of Multitudinous Sheaths
-			i(247492),	-- Fashionable Autumn Cloak
 			i(247493),	-- Mana-Cord of Deception
 			i(247494),	-- Waistclasp of Unethical Power
 			i(247495),	-- Vintage Duskwatch Cinch
 			i(247496),	-- Gleaming Celestial Waistguard
-			i(247504),	-- Malignant Sabatons
-			i(247505),	-- Handwraps of Delusional Power
-			i(247506),	-- Gauntlets of the Demented Mind
-			i(247507),	-- Dreamscale Inlaid Vestments
-			i(247508),	-- Horror Inscribed Chestguard
-			i(247509),	-- Pliable Spider Silk Cinch
-			i(247510),	-- Dragonbone Wristclamps
-			i(247511),	-- Dragonspur Wristguards
-			i(247512),	-- Gossamer-Spun Greatcloak
-			i(247513),	-- Clasp of Cosmic Insignificance
-			i(247514),	-- Celestially Aligned Hood
-			i(247515),	-- Hood of Darkened Visions
-			i(247516),	-- Ragged Horrorweave Leggings
-			i(247517),	-- Ancient Dreamwoven Mantle
-			i(247518),	-- Mantle of Perpetual Bloom
-			i(247519),	-- Maddening Robe of Secrets
-			i(247520),	-- Cozy Dryad Hoof-Socks
-			i(247521),	-- Crimson Wool-Lined Slippers
-			i(247522),	-- Ragged Fur Wristwraps
-			i(247523),	-- Lifeless Buckled Girdle
-			i(247524),	-- Forest-Lord's Waistwrap
-			i(247525),	-- Boots of Endless Betrayal
-			i(247526),	-- Stained Maggot Squishers
-			i(247527),	-- Splotched Bloodfur Leggings
-			i(247528),	-- Dreamsculptor's Gloves
-			i(247529),	-- Repulsive Leathery Pants
-			i(247530),	-- Mask of Multitudinous Eyes
-			i(247531),	-- Cowl of Fright
-			i(247532),	-- Otherworldy Leather Mantle
-			i(247533),	-- Grove Keeper's Robe
-			i(247534),	-- Scarred Ragefang Chestpiece
-			i(247535),	-- Wristwraps of Broken Trust
-			i(247536),	-- Laughing Sister's Pouch-Chain
-			i(247537),	-- Creeping String of Larva
-			i(247538),	-- Gauntlets of Malevolent Intent
-			i(247539),	-- Greyed Dragonscale Coif
-			i(247540),	-- Singular Chain Leggings
-			i(247541),	-- Disjointed Linkage Leggings
-			i(247542),	-- Matted Fur Pauldrons
-			i(247543),	-- Thorny Bramblemail Pauldrons
-			i(247544),	-- Black Venom Sabatons
-			i(247545),	-- Scored Ironclaw Sabatons
-			i(247546),	-- Patient Ambusher's Hauberk
-			i(247547),	-- Manacles of the Nightmare Colossus
-			i(247548),	-- Insect-Etched Chestplate
-			i(247549),	-- Fitted Ironbark Gauntlets
-			i(247550),	-- Primal Gauntlets of Rage
-			i(247551),	-- Waistplate of Nameless Horror
-			i(247552),	-- Eon-Tempered Waistplate
-			i(247553),	-- Venom-Fanged Barbute
-			i(247554),	-- Storm-Battered Legplates
-			i(247555),	-- Crown of Steely Brambles
-			i(247556),	-- Midnight Herald's Pauldrons
-			i(247557),	-- Pauldrons of Shifting Runes
-			i(247558),	-- Trampling Warboots
-			i(247559),	-- Wristclamps of Mad Dreams
-			i(247560),	-- Evergreen Vinewrap Drape
 			i(247561),	-- Gloves of Murmured Promises
-			i(247562),	-- Grips of Silent Screams
 			i(247564),	-- Gauntlets of Fractured Dreams
 			i(247565),	-- Tarnished Dreamkeeper's Gauntlets
 			i(247566),	-- Robes of Celestial Adornment
@@ -1870,29 +226,6 @@ root(ROOTS.Unsorted, {
 			i(247590),	-- Reinforced Hound-Handler's Gauntlets
 			i(247591),	-- Drape of the Unworthy
 			i(247592),	-- Mantle of the Victorious Dead
-			i(247594),	-- Emberscatter Treads
-			i(247595),	-- Slippers of Enduring Vigilance
-			i(247596),	-- Braided Torture Lash
-			i(247597),	-- Strife-Riddled Cinch
-			i(247598),	-- Ravenous Devotee's Bracelets
-			i(247599),	-- Oathbreaker's Cuffs
-			i(247600),	-- Glacier Walkers
-			i(247601),	-- Felscape Pathfinders
-			i(247602),	-- Cinch of Sizzling Flesh
-			i(247603),	-- Etched Bone Waistband
-			i(247604),	-- Sinew-Stitched Wristguards
-			i(247605),	-- Bracers of Rippling Darkness
-			i(247606),	-- Insulated Finpads
-			i(247607),	-- Star-Stalker Treads
-			i(247608),	-- Belt of Screaming Slag
-			i(247609),	-- Waistguard of Interminable Unity
-			i(247610),	-- Pain-Singed Armguards
-			i(247611),	-- Iron Ballast Sabatons
-			i(247612),	-- Steadfast Purifier's Warboots
-			i(247613),	-- Shiversleet Waistguard
-			i(247614),	-- Soul-Render's Greatbelt
-			i(247615),	-- Bonemeal-Crusted Armplates
-			i(247616),	-- Waistguard of Profane Duplicity
 			i(247617),	-- Acolyte's Abandoned Footwraps
 			i(247618),	-- Sash of the Unredeemed
 			i(247619),	-- Treads of Violent Intrusion
@@ -1901,45 +234,12 @@ root(ROOTS.Unsorted, {
 			i(247622),	-- Pristine Moon-Wrought Clasp
 			i(247623),	-- Spiked Terrorwake Greatboots
 			i(247624),	-- Girdle of the Crumbling Sanctum
-			i(247625),	-- Whisperstep Runners
-			i(247626),	-- Sandals of the Reborn Colossus
-			i(247627),	-- Cord of Surging Hysteria
-			i(247628),	-- Lady Dacidion's Silk Slippers
-			i(247629),	-- Enhanced Worldscorcher Cinch
-			i(247630),	-- Cord of Blossoming Petals
-			i(247631),	-- Man'ari Pyromancer Cuffs
-			i(247632),	-- Blood-Drenched Bindings
-			i(247633),	-- Life-Bearing Footpads
-			i(247634),	-- Vicious Flamepaws
-			i(247635),	-- Death-Enveloping Cincture
-			i(247636),	-- Portal Keeper's Cincture
-			i(247637),	-- Belt of Fractured Sanity
-			i(247638),	-- Fiendish Logistician's Wristwraps
-			i(247639),	-- Deft Soulhunter's Sabatons
-			i(247640),	-- Nathrezim Shade-Walkers
-			i(247641),	-- Depraved Tactician's Waistguard
-			i(247642),	-- Sash of the Gilded Rose
-			i(247643),	-- Reality-Splitting Wristguards
-			i(247644),	-- Doomwalker Warboots
-			i(247645),	-- Burning Coven Sabatons
-			i(247646),	-- Eredar Warcouncil Sabatons
-			i(247647),	-- Nathrezim Battle Girdle
-			i(247648),	-- Flamelicked Girdle
-			i(247649),	-- Grond-Father Girdle
-			i(247650),	-- Vambraces of Life's Assurance
-			i(247651),	-- Scalding Shatterguards
-			i(247652),	-- Varimathras' Shattered Manacles
-			i(247653),	-- Depraved Machinist's Footpads
-			i(247654),	-- Bracers of Wanton Morality
-			i(247655),	-- World-Ravager Waistguard
-			i(247656),	-- Greatboots of the Searing Tempest
-			i(247808),	-- Bronze Simulacrum
 			i(247894),	-- Dalaran Hearthstone
-			i(248088),	-- Jade, Bright Foreseer
-			i(248089),	-- Tangled Dreamweaver
-			i(248090),	-- Viridian Phase-Hunter
-			i(248091),	-- Anima Wyrmling
-			i(248092),	-- Blinky
+			i(248088),	-- Jade, Bright Foreseer (MOUNT!)
+			i(248089),	-- Tangled Dreamweaver (MOUNT!)
+			i(248090),	-- Viridian Phase-Hunter (MOUNT!)
+			i(248091),	-- Anima Wyrmling (PET!)	/ Shadowlands Epic Edition, Pet added in 8.2.5
+			i(248092),	-- Blinky (PET!)
 			i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
 			i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
 			i(248140),	-- Bronze Simulacrum
@@ -1951,7 +251,6 @@ root(ROOTS.Unsorted, {
 			i(248223),	-- [DNT] Heroic Roaming Boss Token
 			i(248224),	-- [DNT] Heroic World Boss Token
 			i(248225),	-- [DNT] Heroic Minus Mob Token
-			i(248247),	-- Cache of Infinite Power
 			i(248393),	-- Blank Doomsayer's Pamphlet
 			i(248716),	-- Green Bountiful Backpack
 			i(248717),	-- Orange Bountiful Backpack
@@ -1994,7 +293,7 @@ root(ROOTS.Unsorted, {
 			i(248924),	-- Stale Mulgore Spice Bread
 			i(248925),	-- Months Old Sourdough Bread
 			i(248926),	-- Ancient Thirteen Grain Loaf
-			i(248994),	-- Kalu'ak Crest-horn
+			i(248994),	-- Kalu'ak Crest-horn (MOUNT!)
 			i(249229),	-- Black Temple Scroll
 			i(249230),	-- Temple of Zin-Malor Scroll
 			i(249242),	-- Bronze Celebration Titles: Khaz Algar Enthusiast
@@ -2004,7 +303,6 @@ root(ROOTS.Unsorted, {
 			i(249680),	-- Ordained Hunter's Crown
 			i(249681),	-- Shoulders of the Dragonslayer
 			i(249682),	-- Supreme Runecaster's Crown
-			i(249683),	-- Shoulderguards of Divine Arts
 			i(249684),	-- Horns of Unwavering Faith
 			i(249685),	-- Mantle of Unforgotten Souls
 			i(249716),	-- Steel Food Fanatic Backpack
@@ -2051,20 +349,10 @@ root(ROOTS.Unsorted, {
 			i(249761),	-- [PH] Purple Winter Hands
 			i(249762),	-- [PH] Purple Winter Cloak
 			i(249763),	-- [PH] Ensemble: The Purple Winter Collection
-			i(249780),	-- Army of the Light Champion's Insignia
-			i(249781),	-- Wardens Champion's Insignia
-			i(249782),	-- Valarjar Champion's Insignia
-			i(249783),	-- Nightfallen Champion's Insignia
-			i(249784),	-- Legionfall Champion's Insignia
-			i(249785),	-- Highmountain Tribe Champion's Insignia
-			i(249786),	-- Dreamweaver Champion's Insignia
-			i(249787),	-- Court of Farondis Champion's Insignia
-			i(249788),	-- Argussian Reach Champion's Insignia
 			i(249861),	-- [PH] Blue Winter Padded Shoulder
 			i(249862),	-- [PH] Teal Winter Padded Shoulder
 			i(249863),	-- [PH] Orange Winter Padded Shoulder
 			i(249864),	-- [PH] Purple Winter Padded Shoulder
-			i(249891),	-- Mound of Artifactium Sand
 			i(249906),	-- Villager's Forest Cap
 			i(249908),	-- Villager's Forest Handwraps
 			i(249909),	-- Villager's Forest Tunic
@@ -2101,54 +389,25 @@ root(ROOTS.Unsorted, {
 			i(250106),	-- Floestrider Crest-horn
 			i(250108),	-- Cragstepper Crest-horn
 			i(250191),	-- Reins of the Bilebound Ur'zul
-			i(250192),	-- Reins of the Ghastly Ur'zul
 			i(250290),	-- Blistering Hot Portable Bakery
 			i(250291),	-- Hot and Fresh Portable Bakery
 			i(250292),	-- Piping Hot Portable Bakery
 			i(250293),	-- Red Hot Portable Bakery
-			i(250316),	-- Everlasting Nosh
-			i(250321),	-- Reins of the Thorignir Drake
+			i(250321),	-- Reins of the Thorignir Drake (MOUNT!)
 			i(250408),	-- Add Keystone Affix: Dusk of the Infinite
 			i(250409),	-- Add Keystone Affix: Timeways Manifested
 			i(250410),	-- Add Keystone Affix: Twilight Reflections
-			i(250423),	-- Reins of the Slag Basilisk
-			i(250424),	-- Reins of the Leystone Basilisk
-			i(250425),	-- Reins of the Felslate Basilisk
-			i(250426),	-- Reins of the Aquamarine Basilisk
-			i(250427),	-- Reins of the Illidari Blightstalker
-			i(250428),	-- Reins of the Illidari Dreadstalker
-			i(250429),	-- Reins of the Highland Elderhorn
 			i(250464),	-- [DNT] Quest Token
-			i(250721),	-- Reins of the Snowy Highmountain Eagle
-			i(250723),	-- Reins of the Treetop Highmountain Eagle
 			i(250724),	-- Add Keystone Affix: Tyrannically Fortified
-			i(250726),	-- Reins of the Leyfrost Manasaber
-			i(250727),	-- Reins of the Nightwell Manasaber
-			i(250728),	-- Reins of the Arcberry Manasaber
+			i(250726),	-- Reins of the Leyfrost Manasaber (MOUNT!)
+			i(250727),	-- Reins of the Nightwell Manasaber (MOUNT!)
 			i(250741),	-- Puzzling Cartel Chip
-			i(250745),	-- Reins of the Fel-scarred Mana Ray
-			i(250746),	-- Reins of the Bloodtooth Mana Ray
-			i(250747),	-- Reins of the Albino Mana Ray
-			i(250748),	-- Reins of the Luminous Mana Ray
-			i(250751),	-- Reins of the Twilight Courser
-			i(250752),	-- Reins of the Golden Sunrunner
-			i(250756),	-- Reins of the Turquoise Courser
-			i(250757),	-- Reins of the Gloomdark Nightmare
-			i(250758),	-- Reins of the Bonesteed of Oblivion
-			i(250759),	-- Reins of the Bonesteed of Plague
-			i(250760),	-- Reins of the Bonesteed of Bloodshed
-			i(250761),	-- Reins of the Bonesteed of Triumph
 			i(250762),	-- Felfueled Memento of the Abyss
 			i(250777),	-- Time-Lost Bite of the Frostwolves
 			i(250778),	-- Steel Food Fanatic Shield
 			i(250779),	-- Golden Food Fanatic Shield
 			i(250780),	-- Bronze Food Fanatic Shield
 			i(250781),	-- Silver Food Fanatic Shield
-			i(250802),	-- Reins of the Longhorned Sable Talbuk
-			i(250803),	-- Garnet Ruinstrider
-			i(250804),	-- Longhorned Bleakhoof Talbuk
-			i(250805),	-- Reins of the Longhorned Argussian Talbuk
-			i(250806),	-- Reins of the Longhorned Beryl Talbuk
 			i(250883),	-- Villager's Forest Bonnet
 			i(250884),	-- Villager's Forest Blouse
 			i(250885),	-- Villager's Forest Belt
@@ -2177,10 +436,10 @@ root(ROOTS.Unsorted, {
 			i(250909),	-- Villager's City Skirt
 			i(250910),	-- Villager's City Sabatons
 			i(250911),	-- Ensemble: Villager's City Collection
-			i(250926),	-- [PH] Turkey Mount - Black
-			i(250927),	-- [PH] Turkey Mount - Brown
-			i(250928),	-- [PH] Turkey Mount - Purple
-			i(250929),	-- [PH] Turkey Mount - White
+			i(250926),	-- Highlands Gobbler (MOUNT!)
+			i(250927),	-- Quirky Turkey (MOUNT!)
+			i(250928),	-- Murky Turkey (MOUNT!)
+			i(250929),	-- Prized Turkey (MOUNT!)
 			i(251016),	-- Ensemble: Forged Warmonger's Cloth Armor
 			i(251017),	-- Ensemble: Forged Warmonger's Leather Armor
 			i(251018),	-- Ensemble: Forged Warmonger's Mail Armor
@@ -2200,21 +459,6 @@ root(ROOTS.Unsorted, {
 			i(251248),	-- [DNT] Keystone Dungeon - Any Completion
 			i(251249),	-- [DNT] Keystone Dungeon - Timed Only
 			i(251261),	-- [DNT] Keystone Level
-			i(251262),	-- Tidesoaked Champion's Vambraces
-			i(251263),	-- Tidesoaked Champion's Epaulets
-			i(251264),	-- Tidesoaked Champion's Legguards
-			i(251265),	-- Tidesoaked Champion's Faceguard
-			i(251266),	-- Tidesoaked Champion's Handguards
-			i(251267),	-- Tidesoaked Champion's Waistguard
-			i(251268),	-- Tidesoaked Champion's Breastplate
-			i(251269),	-- Tidesoaked Champion's Jackboots
-			i(251271),	-- Ensemble: Tidesoaked Battlegear
-			i(251536),	-- Highmountain's Finest Draping Cloak
-			i(251538),	-- Pondskipper's Cloak
-			i(251539),	-- Tattered Highmountain Cloak
-			i(251540),	-- Cloak of the Forest's Nightmare
-			i(251541),	-- Highmountain's Finest Cloak
-			i(251562),	-- Tome of Combat Training
 			i(251631),	-- Bottled Time
 			i(251656),	-- Bunch of Orange Carrots
 			i(251657),	-- Bunch of Pink Carrots
@@ -2229,9 +473,6 @@ root(ROOTS.Unsorted, {
 			i(251671),	-- Wearable Copper Pot Lid
 			i(251672),	-- Used Wearable Pot Lid
 			i(251674),	-- Sssurine's Luxurious Sssandals
-			i(251690),	-- Stormborn Laminar Overdrape
-			i(251795),	-- Reins of the Brimstone Courser
-			i(251796),	-- Reins of the Chestnut Courser
 			i(251797),	-- Ears of Orange Corn
 			i(251798),	-- Ears of Purple Corn
 			i(251799),	-- Ears of White Corn
@@ -2240,8 +481,6 @@ root(ROOTS.Unsorted, {
 			i(251802),	-- Offhand Ears of Purple Corn
 			i(251803),	-- Offhand Ears of White Corn
 			i(251804),	-- Offhand Ears of Yellow Corn
-			i(251821),	-- Cache of Infinite Power
-			i(251827),	-- Stygian Silk Cloak
 			i(251854),	-- Bunch of Green Chile
 			i(251855),	-- Bunch of Orange Chile
 			i(251856),	-- Bunch of Red Chile
@@ -2250,11 +489,6 @@ root(ROOTS.Unsorted, {
 			i(251870),	-- Offhand Bunch of Orange Chile
 			i(251872),	-- Offhand Bunch of Red Chile
 			i(251873),	-- Offhand Bunch of Yellow Chile
-			i(251874),	-- Antoran Guard's Golden Cape
-			i(251876),	-- Cloak of the Hunting Dream
-			i(251877),	-- Ruthless Marauder's Cape
-			i(251878),	-- Ruthless Marauder's Shroud
-			i(251879),	-- Draping Shroud of the Hunting Dream
 			i(251964),	-- Frost Marshal's Carbine
 			i(251966),	-- Libram of Azure Light
 			i(251971),	-- Tome of Cerulean Ciphers
@@ -2277,14 +511,13 @@ root(ROOTS.Unsorted, {
 			i(252018),	-- Pristine Lightbound Crystal
 			i(252020),	-- Intricate Lightbound Crystal
 			i(252021),	-- Flawed Lightbound Crystal
-			i(252137),	-- Lil' Chompers
-			i(252193),	-- Slippery Saul
-			i(252194),	-- Fishmonger May
-			i(252195),	-- Fishstick Keith
-			i(252199),	-- Festive Eve
-			i(252200),	-- Bundled-up Bob
+			i(252137),	-- Lil' Chompers (PET!)
+			i(252193),	-- Slippery Saul (PET!)
+			i(252194),	-- Fishmonger May (PET!)
+			i(252195),	-- Fishstick Keith (PET!)
+			i(252199),	-- Festive Eve (PET!)
+			i(252200),	-- Bundled-up Bob (PET!)
 			i(252300),	-- Bronze Cluster
-			i(252301),	-- Warden's Companion
 			i(252364),	-- Gem of Gul'dan
 			i(252656),	-- K'areshi Scientific Expedition Supply
 			i(252710),	-- Midnight Winter Hat
@@ -2305,18 +538,6 @@ root(ROOTS.Unsorted, {
 			i(252750),	-- Aquatic Winter Hat
 			i(252751),	-- Snowy Winter Hat
 			i(252752),	-- Sunny Winter Hat
-			i(252954),	-- Felscorned Reins of the Vilebrood Vanquisher
-			i(253013),	-- Slayer's Reins of the Felscorned Shrieker
-			i(253024),	-- Feldruid's Scornwing Idol
-			i(253025),	-- Reins of the Felscorned Wolfhawk
-			i(253026),	-- Archmage's Felscorned Disc
-			i(253027),	-- Felscorned Grandmaster's Bell
-			i(253028),	-- Reins of the Highlord's Felscorned Charger
-			i(253029),	-- Felscorned Seeker's Whistle
-			i(253030),	-- Shadowblade's Reins of Felscorned Portent
-			i(253031),	-- Felscorned Tempest Totem
-			i(253032),	-- Felscorned Reins of the Netherlord's Dreadsteed
-			i(253033),	-- Iron Reins of the Felscorned War Wrym
 			i(253154),	-- Loyal Watchman's Gauntlets
 			i(253155),	-- Loyal Watchman's Belt
 			i(253156),	-- Loyal Watchman's Boots
@@ -2324,154 +545,25 @@ root(ROOTS.Unsorted, {
 			i(253158),	-- Loyal Watchman's Cuirass
 			i(253159),	-- Loyal Watchman's Spaulders
 			i(253160),	-- Loyal Watchman's Helm
-			i(253200),	-- Felscorned Scythe of the Unmaker
-			i(253201),	-- Felscorned Scythe of the Unmaker
-			i(253219),	-- Bulwark of Mannoroth
-			i(253220),	-- Bulwark of Mannoroth
-			i(253221),	-- Bulwark of Mannoroth
 			i(253222),	-- Corrupted Thorn of the Dream
 			i(253223),	-- Fractal Felshard
-			i(253224),	-- Mote of the Unmaker's Heart
-			i(253227),	-- Flawless Thread of Time
-			i(253228),	-- Felscorned Shalla'tor
-			i(253229),	-- Felscorned Ellemayne
-			i(253230),	-- Felscorned Shallamayne
-			i(253231),	-- Fallen King's Corrupted Blades
-			i(253273),	-- Scythe of the Unmaker
-			i(253283),	-- Scythe of the Unmaker
-			i(253284),	-- Scythe of the Unmaker
-			i(253285),	-- Felscorned Scythe of the Unmaker
 			i(253286),	-- Scythe of the Unmaker
-			i(253304),	-- Cosmic Soulsliver
-			i(253305),	-- Felwarped Slab
-			i(253306),	-- Everflame of Hatred
-			i(253308),	-- Sargerei Commander's Felscorned Spaulders
-			i(253309),	-- Sargerei Commander's Felscorned Crown
-			i(253310),	-- Sargerei Commander's Felscorned Hauberk
-			i(253311),	-- Sargerei Commander's Felscorned Buckle
-			i(253312),	-- Sargerei Commander's Felscorned Chausses
-			i(253313),	-- Sargerei Commander's Felscorned Sabatons
-			i(253314),	-- Sargerei Commander's Felscorned Gauntlets
-			i(253315),	-- Sargerei Commander's Felscorned Mantle
-			i(253317),	-- Sargerei Commander's Lightbound Spaulders
-			i(253318),	-- Sargerei Commander's Lightbound Crown
-			i(253319),	-- Sargerei Commander's Lightbound Hauberk
-			i(253320),	-- Sargerei Commander's Lightbound Buckle
-			i(253321),	-- Sargerei Commander's Lightbound Chausses
-			i(253322),	-- Sargerei Commander's Lightbound Sabatons
-			i(253323),	-- Sargerei Commander's Lightbound Gauntlets
-			i(253324),	-- Sargerei Commander's Lightbound Mantle
-			i(253325),	-- Sargerei Commander's Voidscarred Spaulders
-			i(253326),	-- Sargerei Commander's Voidscarred Crown
-			i(253327),	-- Sargerei Commander's Voidscarred Hauberk
-			i(253328),	-- Sargerei Commander's Voidscarred Buckle
-			i(253329),	-- Sargerei Commander's Voidscarred Chausses
-			i(253330),	-- Sargerei Commander's Voidscarred Sabatons
-			i(253331),	-- Sargerei Commander's Voidscarred Gauntlets
-			i(253332),	-- Sargerei Commander's Voidscarred Mantle
-			i(253333),	-- Sargerei Commander's Hellforged Spaulders
-			i(253334),	-- Sargerei Commander's Hellforged Crown
-			i(253335),	-- Sargerei Commander's Hellforged Hauberk
-			i(253336),	-- Sargerei Commander's Hellforged Buckle
-			i(253337),	-- Sargerei Commander's Hellforged Chausses
-			i(253338),	-- Sargerei Commander's Hellforged Sabatons
-			i(253339),	-- Sargerei Commander's Hellforged Gauntlets
-			i(253340),	-- Sargerei Commander's Hellforged Mantle
-			i(253343),	-- Ensemble: Sargerei Commander's Felscorned Regalia
-			i(253344),	-- Kaldorei Queen's Sarong
-			i(253345),	-- Kaldorei Queen's Crown
-			i(253346),	-- Kaldorei Queen's Robe
-			i(253347),	-- Kaldorei Queen's Sash
-			i(253348),	-- Kaldorei Queen's Anklets
-			i(253349),	-- Kaldorei Queen's Bangles
-			i(253353),	-- Illusion: Felshatter
-			i(253354),	-- Tideskorn Hunter's Forest Quiver
-			i(253355),	-- Tideskorn Hunter's Wine-Dark Quiver
-			i(253356),	-- Tideskorn Hunter's Brightsea Quiver
-			i(253357),	-- Felscorned Arsenal
-			i(253358),	-- Ensemble: Tideskorn Hunter's Munitions
-			i(253359),	-- Shadow's Rage Windrunner Quiver
-			i(253360),	-- Sunwell's Legacy Windrunner Quiver
-			i(253361),	-- Legendary Windrunner Quiver
-			i(253362),	-- Fabled Windrunner Quiver
-			i(253363),	-- Forest's Rage Windrunner Quiver
-			i(253364),	-- Vindictive Windrunner Quiver
-			i(253365),	-- Vengeful Windrunner Quiver
-			i(253366),	-- Royal Blue Windrunner Quiver
-			i(253367),	-- North Sea Blue Windrunner Quiver
-			i(253368),	-- Sunset Windrunner Quiver
-			i(253369),	-- Eversong Classic Windrunner Quiver
-			i(253370),	-- Bright Blue Windrunner Quiver
-			i(253371),	-- Shadowy Windrunner Quiver
-			i(253372),	-- Sunrise Windrunner Quiver
-			i(253373),	-- Royal Windrunner Quiver
-			i(253374),	-- Valorous Red Windrunner Quiver
-			i(253375),	-- Valorous Purple Windrunner Quiver
-			i(253376),	-- Valorous Green Windrunner Quiver
-			i(253377),	-- Valorous Blue Windrunner Quiver
-			i(253379),	-- Ensemble: Windrunner Quivers
-			i(253380),	-- Felforged Bulwark
-			i(253381),	-- Felforged Spitblade
-			i(253382),	-- Arsenal: Arms of the Felforged Knight
-			i(253383),	-- Suramar Arcanist's Mantle
-			i(253384),	-- Duskwatch Manablade's Mantle
-			i(253385),	-- Ensemble: Mantles of the Nightwell
 			i(253520),	-- Enclave Aspirant's Hatchet
-			i(253548),	-- Legionforged Mo'arg Sword
-			i(253549),	-- Ebonsteel Mo'arg Sword
-			i(253550),	-- Brightsteel Mo'arg Sword
-			i(253551),	-- Arsenal: Mo'arg Swords
-			i(253552),	-- Bloodculling Bone Scythe
-			i(253553),	-- Bloodculling Bone Scythe
-			i(253554),	-- Plagueculling Bone Scythe
-			i(253555),	-- Plagueculling Bone Scythe
-			i(253556),	-- Arsenal: Bone Scythes
-			i(253557),	-- Immortal Soul Mace
-			i(253558),	-- Immortal Legion Mace
-			i(253559),	-- Immortal Iron Mace
-			i(253560),	-- Immortal Bronze Mace
-			i(253561),	-- Arsenal: Immortal Maces
-			i(253562),	-- Ebonsteel Mo'arg Hornmace
-			i(253563),	-- Bronze Mo'arg Hornmace
-			i(253564),	-- Fel Iron Mo'arg Hornmace
-			i(253565),	-- Arsenal: Mo'arg Hornmaces
-			i(253566),	-- Lightforged Starmace
-			i(253567),	-- Lightforged Gemsword
-			i(253568),	-- Lightforged Gem Mace
-			i(253569),	-- Arsenal: Gems of the Lightforged Draenei
-			i(253573),	-- Cerulean Phase-Hunter
-			i(253574),	-- Everlasting Rock
-			i(253588),	-- Ensemble: World-Defiler's Battle Armor
-			i(253594),	-- Ensemble: Zealous Felslingers Battle Armor
-			i(253621),	-- Champion's Insignia
-			i(253756),	-- Insignia of the Broken Isles
+			i(253573),	-- Cerulean Phase-Hunter (MOUNT!)
 			i(253867),	-- Cache of Infinite Treasure
 		})),
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(ARMOR, {
 				-- Unknown (PvP Appearance?)
-				i(237997),	-- Ethereal Handchopper
-				i(237998),	-- Void Assassin's Ritual Blade
-				i(237999),	-- Battered Matter Destabilizer
-				i(238000),	-- Mana Manipulator
-				i(238001),	-- Rod of the Unwoven
-				i(238002),	-- Wanderer's Projectile Accelerator
-				i(238003),	-- Wyrmhunter's Skewer
-				i(238004),	-- Exile's Beacon
-				i(238006),	-- Soulbearer's Censer
 				i(238008),	-- Wastelander's Folly
 
-				-- Delve Armor?
-				i(246947),	-- Twisted Mana Sprite
 				-- Mechagon Junkyard?
 				i(241239),	-- Epaulets of Arcing Power
 				i(241240),	-- Type II Bomber Jacket
 			}),
 			filter(BATTLE_PETS, {
 				i(246337),	-- Rustyroot Fel Snooter
-				i(246339),	-- Duskytooth Fel Snooter
 				i(246342),	-- Mustyfur Fel Snooter
-				i(246343),	-- Scruffyhorn Fel Snooter
 				i(246723),	-- Unfazed Diver
 			}),
 			filter(COSMETIC, {
@@ -2490,10 +582,6 @@ root(ROOTS.Unsorted, {
 				i(241351),	-- Brewer's Green Kilt
 
 				-- Reputation Cosmetic
-				i(248780),	-- Consortium Brute's Cape
-				i(248781),	-- Consortium Skirmisher's Cloak
-				i(248782),	-- Consortium Scout's Serape
-				i(248783),	-- Consortium Magi's Shawl
 				i(248784),	-- Ensemble: Void-Scarred Captain's Plate
 				i(248785),	-- Ensemble: Void-Scarred Striker's Battlegear
 				i(248786),	-- Ensemble: Void-Scarred Blade's Attire
@@ -2506,32 +594,20 @@ root(ROOTS.Unsorted, {
 
 				-- Trading Post?
 				i(245947),	-- Barrel Helm
-				i(245948),	-- Bronzebeard's Portable Forge
-				i(245949),	-- The Speaker's Portable Forge
 				i(245950),	-- Dark Iron Portable Forge
 				i(245951),	-- Wildhammer's Portable Forge
-				i(245952),	-- Bronzbeard's Ceremonial Mace
-				i(245953),	-- The Speaker's Ceremonial Mace
 				i(245954),	-- Wildhammer's Ceremonial Mace
 				i(245955),	-- Dark Iron's Ceremonial Mace
-				i(245956),	-- Bronzebeard's Crystal Ward
-				i(245957),	-- The Speaker's Crystal Ward
 				i(245958),	-- Wildhammer's Crystal Ward
 				i(245959),	-- Dark Iron's Crystal Ward
-				i(246781),	-- Bronzbeard's Ancient Crusher
-				i(246782),	-- The Speaker's Ancient Crusher
 				i(246783),	-- Wildhammer's Ancient Crusher
 				i(246784),	-- Dark Iron's Ancient Crusher
 				i(246785),	-- Coldsnap Felblade
-				i(246786),	-- Sinister Felblade
 				i(246787),	-- Hellfire Felblade
 				i(246788),	-- Netherstorm Felblade
 				i(246790),	-- Coldsnap Feldirk
 				i(246791),	-- Hellfire Feldirk
 				i(246792),	-- Netherstorm Feldirk
-				i(246793),	-- Sinister Feldirk
-				i(246798),	-- Bronzebeard's Mighty Crossbow
-				i(246799),	-- The Speaker's Mighty Crossbow
 				i(246800),	-- Wildhammer's Mighty Crossbow
 				i(246801),	-- Dark Iron's Mighty Crossbow
 				i(246949),	-- Felreaver's Azure Treads
@@ -2567,11 +643,9 @@ root(ROOTS.Unsorted, {
 				i(246988),	-- Felreaver's Arcane Treads
 				i(246989),	-- Ensemble: Felreaver's Arcane Attire
 				i(246990),	-- Felreaver's Azure Staff
-				i(246991),	-- Felreaver's Legion Staff
 				i(246992),	-- Felreaver's Arcane Staff
 				i(246994),	-- Felreaver's Hellfire Staff
 				i(246996),	-- Felreaver's Azure Wand
-				i(246997),	-- Felreaver's Legion Wand
 				i(246998),	-- Felreaver's Hellfire Wand
 				i(246999),	-- Felreaver's Arcane Wand
 				i(247705),	-- The Horseman's Chilling Blade
@@ -2622,24 +696,6 @@ root(ROOTS.Unsorted, {
 				i(247989),	-- The Horseman's Ghostly Grips
 				i(247990),	-- The Horseman's Ghostly Cloak
 				i(247991),	-- Ensemble: The Horseman's Ghostly Collection
-				i(248291),	-- Bronzbeard's Ceremonial Crown
-				i(248292),	-- Bronzbeard's Ceremonial Mantle
-				i(248293),	-- Bronzbeard's Ceremonial Chestplate
-				i(248294),	-- Bronzbeard's Ceremonial Belt
-				i(248295),	-- Bronzbeard's Ceremonial Boots
-				i(248296),	-- Bronzbeard's Ceremonial Legguards
-				i(248297),	-- Bronzbeard's Ceremonial Gauntlets
-				i(248298),	-- Bronzbeard's Ceremonial Cloak
-				i(248299),	-- Ensemble: Bronzebeard's Ceremonial Collection
-				i(248301),	-- The Speaker's Ceremonial Crown
-				i(248302),	-- The Speaker's Ceremonial Mantle
-				i(248303),	-- The Speaker's Ceremonial Chestplate
-				i(248304),	-- The Speaker's Ceremonial Belt
-				i(248305),	-- The Speaker's Ceremonial Boots
-				i(248306),	-- The Speaker's Ceremonial Legguards
-				i(248307),	-- The Speaker's Ceremonial Gauntlets
-				i(248308),	-- The Speaker's Ceremonial Cloak
-				i(248309),	-- Ensemble: The Speaker's Ceremonial Collection
 				i(248310),	-- Wildhammer's Ceremonial Crown
 				i(248311),	-- Wildhammer's Ceremonial Mantle
 				i(248312),	-- Wildhammer's Ceremonial Chestplate
@@ -2665,171 +721,10 @@ root(ROOTS.Unsorted, {
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
 				i(238029),	-- 11.2 Raid - Cloth - Waist
-				--[[
-				n(CLASSES, {
-					-- Save Tier Sets if Darkal Needs them
-					-- Cloak
-					-- Wrist
-					-- Belt
-					-- Shoulder
-					-- Legs
-					-- Head
-					-- Hands
-					-- Feet
-					-- Chest
-					cl(DEATHKNIGHT, {
-						i(237623),	-- Hollow Sentinel's Wingdrape (Contained inside an Ensemble sold by Ba'choso)
-						i(237624),	-- Hollow Sentinel's Stonecuffs
-						i(237625),	-- Hollow Sentinel's Greatbelt
-						i(237626),	-- Hollow Senintel's Perches
-						i(237627),	-- Hollow Sentinel's Stonekilt
-						i(237628),	-- Hollow Sentinel's Stonemask
-						i(237629),	-- Hollow Sentinel's Gauntlets
-						i(237630),	-- Hollow Sentinel's Greatboots
-						i(237631),	-- Hollow Sentinel's Breastplate
-					}),
-					cl(DEMONHUNTER, {
-						i(237686),	-- Charhound's Vicious Felcover (Contained inside an Ensemble sold by Ba'choso)
-						i(237687),	-- Charhound's Vicious Restraints
-						i(237688),	-- Charhound's Vicious Huntbelt
-						i(237689),	-- Charhound's Vicious Hornguards
-						i(237690),	-- Charhound's Vicious Hidecoat
-						i(237691),	-- Charhound's Vicious Scalp
-						i(237692),	-- Charhound's Vicious Felclaws
-						i(237693),	-- Charhound's Vicious Flametabi
-						i(237694),	-- Charhound's Vicious Bindings
-					}),
-					cl(DRUID, {
-						i(237677),	-- Plumage of the Mother Eagle (Contained inside an Ensemble sold by Ba'choso)
-						i(237678),	-- Bands of the Mother Eagle
-						i(237679),	-- Dreamsash of the Mother Eagle
-						i(237680),	-- Ritual Pauldrons of the Mother Eagle
-						i(237681),	-- Breeches of the Mother Eagle
-						i(237682),	-- Skymane of the Mother Eagle
-						i(237683),	-- Wings of the Mother Eagle
-						i(237684),	-- Feathered Boots of the Mother Eagle
-						i(237685),	-- Vest of the Mother Eagle
-					}),
-					cl(EVOKER, {
-						i(237650),	-- Spellweaver's Immaculate Runecloak (Contained inside an Ensemble sold by Ba'choso)
-						i(237651),	-- Spellweaver's Immaculate Cuffs
-						i(237652),	-- Spellweaver's Immaculate Crystal Cord
-						i(237653),	-- Spellweaver's Immaculate Pauldrons
-						i(237654),	-- Spellweaver's Immaculate Runeslacks
-						i(237655),	-- Spellweaver's Immaculate Focus
-						i(237656),	-- Spellweaver's Immaculate Scaleguards
-						i(237657),	-- Spellweaver's Immaculate Talons
-						i(237658),	-- Spellweaver's Immaculate Crestward
-					}),
-					cl(HUNTER, {
-						i(237641),	-- Midnight Herald's Shroud (Contained inside an Ensemble sold by Ba'choso)
-						i(237642),	-- Midnight Herald's Wristguards
-						i(237643),	-- Midnight Herald's Clasp
-						i(237644),	-- Midnight Herald's Shadowguards
-						i(237645),	-- Midnight Herald's Petticoat
-						i(237646),	-- Midnight Herald's Cowl
-						i(237647),	-- Midnight Herald's Gloves
-						i(237648),	-- Midnight Herald's Jackboots
-						i(237649),	-- Midnight Herald's Hauberk
-					}),
-					cl(MAGE, {
-						i(237713),	-- Augur's Ephemeral Brilliance (Contained inside an Ensemble sold by Ba'choso)
-						i(237714),	-- Augur's Ephemeral Bindings
-						i(237715),	-- Augur's Ephemeral Quillsash
-						i(237716),	-- Augur's Ephemeral Orbs of Power
-						i(237717),	-- Augur's Ephemeral Trousers
-						i(237718),	-- Augur's Ephemeral Wide-Brim
-						i(237719),	-- Augur's Ephemeral Mitts
-						i(237720),	-- Augur's Ephemeral Slippers
-						i(237721),	-- Augur's Ephemeral Habiliments
-					}),
-					cl(MONK, {
-						i(237668),	-- Breeze of Fallen Storms (Contained inside an Ensemble sold by Ba'choso)
-						i(237669),	-- Demigaunts of Fallen Storms
-						i(237670),	-- Thunderbund of Fallen Storms
-						i(237671),	-- Glyphs of Fallen Storms
-						i(237672),	-- Legwraps of Fallen Storms
-						i(237673),	-- Half-Mask of Fallen Storms
-						i(237674),	-- Grasp of Fallen Storms
-						i(237675),	-- Footpads of Fallen Storms
-						i(237676),	-- Gi of Fallen Storms
-					}),
-					cl(PALADIN, {
-						i(237614),	-- Gilded Cloak of the Lucent Battalion (Contained inside an Ensemble sold by Ba'choso)
-						i(237615),	-- Vambraces of the Lucent Battalion
-						i(237616),	-- Seal of the Lucent Battalion
-						i(237617),	-- Chargers of the Lucent Battalion
-						i(237618),	-- Cuisses of the Lucent Battalion
-						i(237619),	-- Lightmane of the Lucent Battalion
-						i(237620),	-- Protectors of the Lucent Battalion
-						i(237621),	-- Stompers of the Lucent Battalion
-						i(237622),	-- Cuirass of the Lucent Battalion
-					}),
-					cl(PRIEST, {
-						i(237704),	-- Dying Star's Memory (Contained inside an Ensemble sold by Ba'choso)
-						i(237705),	-- Dying Star's Bangles
-						i(237706),	-- Dying Star's Waistlight
-						i(237707),	-- Dying Star's Pyrelights
-						i(237708),	-- Dying Star's Leggings
-						i(237709),	-- Dying Star's Veil
-						i(237710),	-- Dying Star's Caress
-						i(237711),	-- Dying Star's Soles
-						i(237712),	-- Dying Star's Cassock
-					}),
-					cl(ROGUE, {
-						i(237659),	-- Cape of the Sudden Eclipse (Contained inside an Ensemble sold by Ba'choso)
-						i(237660),	-- Armbands of the Sudden Eclipse
-						i(237661),	-- Strap of the Sudden Eclipse
-						i(237662),	-- Smokemantle of the Sudden Eclipse
-						i(237663),	-- Pants of the Sudden Eclipse
-						i(237664),	-- Hood of the Sudden Eclipse
-						i(237665),	-- Deathgrips of the Sudden Eclipse
-						i(237666),	-- Bladed Boots of the Sudden Eclipse
-						i(237667),	-- Tactical Vest of the Sudden Eclipse
-					}),
-					cl(SHAMAN, {
-						i(237632),	-- Shawl of Channeled Fury (Contained inside an Ensemble sold by Ba'choso)
-						i(237633),	-- Bracers of Channeled Fury
-						i(237634),	-- Fauld of Channeled Fury
-						i(237635),	-- Fangs of Channeled Fury
-						i(237636),	-- Tassets of Channeled Fury
-						i(237637),	-- Aspect of Channeled Fury
-						i(237638),	-- Claws of Channeled Fury
-						i(237639),	-- Boots of Channeled Fury
-						i(237640),	-- Furs of Channeled Fury
-					}),
-					cl(WARLOCK, {
-						i(237695),	-- Inquisitor's All-Seeing Madness (Contained inside an Ensemble sold by Ba'choso)
-						i(237696),	-- Inquisitor's Bracelets of Madness
-						i(237697),	-- Inquisitor's Tome of Madness
-						i(237698),	-- Inquisitor's Gaze of Madness
-						i(237699),	-- Inquisitor's Leggings of Madness
-						i(237700),	-- Inquisitor's Portal to Madness
-						i(237701),	-- Inquisitor's Clutches of Madness
-						i(237702),	-- Inquisitor's Treads of Madness
-						i(237703),	-- Inquisitor's Robes of Madness
-					}),
-					cl(WARRIOR, {
-						i(237605),	-- Living Weapon's Cape (Contained inside an Ensemble sold by Ba'choso)
-						i(237606),	-- Living Weapon's Manacles
-						i(237607),	-- Living Weapon's Chain
-						i(237608),	-- Living Weapon's Ramparts
-						i(237609),	-- Living Weapon's Legguards
-						i(237610),	-- Living Weapon's Faceshield
-						i(237611),	-- Living Weapon's Crushers
-						i(237612),	-- Living Weapon's Sabatons
-						i(237613),	-- Living Weapon's Bulwark
-					}),
-				}),
-				--]]
 			}),
 			filter(MISC, {
 				i(238853),	-- Netherbound Heart
-				i(238856),	-- Nightpiercer Feather
-				i(238879),	-- Cracked Void Carapace
 				i(239109),	-- [NYI] Outdoor Voidforged Container - Ruins of Yaathron
-				i(241220),	-- Loose Parts
-				i(242380),	-- Black Blood Blower
 				i(243152),	-- NEW ITem
 				i(243235),	-- Adventurer's Footlocker
 				i(243246),	-- Funny Candle
@@ -2850,26 +745,20 @@ root(ROOTS.Unsorted, {
 				i(247926),	-- Muted Mana-Stone
 				i(247927),	-- Humming Mana-Stone
 				-- Box/Weekly Box
-				i(230032),	-- Overflowing K'aresh Trust Trove
 				i(238921),	-- Containment Canister
 				i(239204),	-- (DNT NEEDS CRESTS) Overflowing K'aresh Trove
 				i(244300),	-- Phase-Sealed Box
 				i(244354),	-- Ethereal Equipment Chest
-				-- Delve
-				i(248142),	-- Delver's Bounty
 
 				-- Valorstone
 				i(239594),	-- Crimson Valorstone
-				i(240175),	-- Crystallized Ethereal Voidsplinter
 				i(240207),	-- Golden Valorstone
 				i(240208),	-- Void-Touched Valorstone
 				i(240209),	-- Golden Valorstone
 				i(240210),	-- Crimson Valorstone
 				i(240211),	-- Void-Touched Valorstone
 
-
 				-- Crests
-				i(240929),	-- Glorious Cluster of Gilded Ethereal Crests
 				i(240932),	-- Pack of Runed Undermine Crests
 				i(240934),	-- Pouch of Weathered Undermine Crests
 				i(240935),	-- Glorious Cluster of Gilded Undermine Crests
@@ -2886,27 +775,8 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(186639),	-- Xy Trustee's Gearglider
-				i(242713),	-- Resplendent K'arroc
-				i(246159),	-- Translocated Gorger
 				i(246698),	-- Sunwarmed Furline
-				i(246917),	-- Thunder-ridged Elekk
-				i(246919),	-- Cinder-seared Elekk
 				i(246920),	-- Void-Razed Elekk
-				i(246921),	-- Legion Forged Elekk
-				i(247720),	-- The Headless Horseman's Chilling Charger
-				i(247721),	-- The Headless Horseman's Ghoulish Charger
-				i(247722),	-- The Headless Horseman's Burning Charger
-				i(247723),	-- The Headless Horseman's Ghostly Charger
-				i(247791),	-- Windmaster's Battlesworn
-				i(247792),	-- Akil'darah Windscarred
-				i(247793),	-- Ohn'ahran Windborne
-				i(247794),	-- Darkfeather Eclipse
-				i(247795),	-- Ornery Breezestrider
-				i(248761),	-- Brewfest Barrel Bomber
-
-
-				-- Mount Mods
-				i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive
 			}),
 			n(PROFESSIONS, {
 				i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
@@ -2922,10 +792,8 @@ root(ROOTS.Unsorted, {
 				i(246821),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(246822),	-- A Steamy Romance Novel: Devouring Love
 				i(246823),	-- A Steamy Romance Novel: Got Milk?
-
 			}),
 			n(PVP, {
-				i(232600),	-- Astral Gladiator's Weapon Token
 				i(232616),	-- Astral Gladiator's Coin Pouch
 				i(230722),	-- Astral Equipment Chest
 				i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
@@ -3020,17 +888,11 @@ root(ROOTS.Unsorted, {
 				i(233287),	-- Barrel of Swirling Energy
 				i(235983),	-- Warrant: Shatterpulse
 				i(238296),	-- Phase Disruptor
-				i(238903),	-- Appropriated Azerothian Camera
-				i(238906),	-- Appropriated Azerothian Camera
-				i(238907),	-- Anima Orb
-				i(238910),	-- Lasso
 				i(238914),	-- Hemet's Soothin' Flute
 				i(239566),	-- Arcane Runed Signet
-				i(241353),	-- Hydrobite
 				i(242547),	-- Cracked Keystone
 				i(242654),	-- Shadowtrade Overstock
 				i(244064),	-- Pretzel
-				i(245743),	-- A Curious Crystalline Fragment
 				i(246041),	-- Brew Keg
 				i(246042),	-- Pretzel
 				i(246044),	-- Bag of Brewfest Ingredients
@@ -3039,22 +901,11 @@ root(ROOTS.Unsorted, {
 				i(246593),	-- Shadowguard Credentials
 			}),
 			filter(TOYS, {
-				-- PvP
-				i(242636),	-- Astral Legend's Pennant
 				-- Brewfest
 				i(245946),	-- Brewer's Balloon
 			}),
-			i(248916),	-- Untethered Seer's Capelet
 			i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-			i(249030),	-- Omega Oyster Outbreak
 			i(249235),	-- Bottomless Bag of Entropy
-			i(249560),	-- Skymaster's Silver Mantle
-			i(249561),	-- Skymaster's Silver Cloak
-			i(249562),	-- Skymaster's Silver Tabard
-			i(249563),	-- Skymaster's Sapphire Crown
-			i(249564),	-- Skymaster's Sapphire Shoulderguards
-			i(249565),	-- Skymaster's Sapphire Epaulets
-			i(249699),	-- Shadowguard Translocator
 
 
 			i(249710),	-- Cartel Zo Cypher
@@ -3065,7 +916,6 @@ root(ROOTS.Unsorted, {
 			i(249858),	-- Brewer's Basic Belt
 			i(249859),	-- Brewer's Green Belt
 			i(249860),	-- Brewer's Black Belt
-			i(250082),	-- T'uure, Remnant of the Naaru
 			i(250706),	-- The Horseman's Hallowed Cowl
 			i(250707),	-- The Horseman's Burning Cowl
 			i(250708),	-- The Horseman's Ghoulish Cowl
@@ -3077,23 +927,9 @@ root(ROOTS.Unsorted, {
 			i(244230),	-- Strawhat of Frosted Currents
 			i(244231),	-- Ensemble: Stillwater Fisher Attire
 			i(244352),	-- Cloak of the Veiled Paws
-			i(251543),	-- Cracked Keystone
 
 			i(231821),	-- Makeshift Explosives
 			i(232517),	-- Biome Eco-Stabilizer
-			i(233222),	-- Nullbomb
-			i(237009),	-- Zo'kita Safety Gear
-			i(240111),	-- Reshii Skirmisher's Axe
-			i(240112),	-- Reshii Scout's Blade
-			i(240113),	-- Reshii Magi's Dagger
-			i(240114),	-- Reshii Skirmisher's Morningstar
-			i(240115),	-- Reshii Brute's Warmace
-			i(240116),	-- Reshii Brute's Longsword
-			i(240117),	-- Reshii Magi's Wand
-			i(240118),	-- Reshii Brute's Spear
-			i(240119),	-- Reshii Skirmisher's Staff
-			i(240120),	-- Reshii Magi's Lantern
-			i(240121),	-- Reshii Brute's Barrier
 			i(246732),	-- Void-Forged Overseer
 			i(246892),	-- Void's Binding Wraps
 			i(246893),	-- Void's Binding Briefs
@@ -3130,160 +966,11 @@ root(ROOTS.Unsorted, {
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			-- Left Remaining To Darkal --
-			explorationHeader({
-				exploration(15667),	-- Delves
-				exploration(15552),	-- The Undersea
-			}),
 			-- Have QuestID attached
 			i(228947),	-- Weaver's Lair Profession Table
 		})),
 		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			-- Left Remaining To Darkal --
-			explorationHeader({
-				exploration(14484),	-- 10.2 Devland
-				exploration(14523),	-- 11 Zone3
-				exploration(14517),	-- 11Test1
-				exploration(14615),	-- 11Test2
-				exploration(14658),	-- 11Test3
-				exploration(14661),	-- 11Test4
-				exploration(14662),	-- 11Test5
-				exploration(14723),	-- 11Test6
-				exploration(14855),	-- 11Test7
-				exploration(14908),	-- 11.0 - Underground Test
-				exploration(15180),	-- 11.0 warband camp
-				exploration(15027),	-- 2510 Coreway
-				exploration(14730),	-- Abandoned Creche
-				exploration(15377),	-- Analysis Interface
-				exploration(15144),	-- Annihilation Interface
-				exploration(15093),	-- Ara-Kara, City of Echoes
-				exploration(15133),	-- Awakening The Machine
-				exploration(15141),	-- Awakening Machine
-				exploration(15380),	-- Awakening Machine
-				exploration(14752),	-- Azj-Kahet
-				exploration(15547),	-- Beledar's Bounty
-				exploration(15372),	-- Brood Pens
-				exploration(15378),	-- Bulwark of Authorization
-				exploration(15051),	-- Chamber of Heart
-				exploration(15103),	-- Cinderbrew Meadery
-				exploration(14753),	-- City of Threads
-				exploration(14979),	-- City of Threads
-				exploration(15172),	-- Councilward's Rise
-				exploration(15376),	-- Crown of Shadows
-				exploration(15177),	-- Dalaran
-				exploration(14818),	-- Darkflame Cleft Exterior
-				exploration(14882),	-- Darkflame Cleft
-				exploration(15052),	-- Darkflame Cleft
-				exploration(14616),	-- Darkglow Hollows
-				exploration(15549),	-- Dayspring Fields
-				exploration(15171),	-- Deepforge Manufacturing Bay
-				exploration(14990),	-- Deephaul Ravine
-				exploration(14903),	-- Deepstrike Point
-				exploration(15329),	-- Delver's Headquarters
-				exploration(15108),	-- Dev Map - Exile's Reach - Tower
-				exploration(14999),	-- Earthcrawl Mines
-				exploration(15155),	-- Echoing Overlook
-				exploration(15047),	-- Fallside Outpost
-				exploration(15142),	-- Firewall of Negation
-				exploration(14957),	-- Fungal Folly
-				exploration(15361),	-- Gemvein Tunnels
-				exploration(15140),	-- Gloomcrag Bower
-				exploration(15373),	-- Gossamer Gallery
-				exploration(15363),	-- Grand Rampart
-				exploration(15022),	-- Hall of the Candle King
-				exploration(15048),	-- Hall of Awakening
-				exploration(15342),	-- Hall of Awakening
-				exploration(15374),	-- Hall of Whispers
-				exploration(14838),	-- Hallowfall
-				exploration(14971),	-- Hallowfall
-				exploration(15145),	-- Hallowfall
-				exploration(15019),	-- Hewn Passage
-				exploration(14717),	-- Isle of Dorn
-				exploration(15101),	-- Junction
-				exploration(14665),	-- Khaz Algar
-				exploration(14748),	-- Khaz Algar
-				exploration(15368),	-- Kili-zar Arena
-				exploration(15000),	-- Kriegval's Rest
-				exploration(15343),	-- KVigue Test
-				exploration(15470),	-- Laboratory of the Grand Splicer
-				exploration(15023),	-- Lightless Depths
-				exploration(15149),	-- Mereldar
-				exploration(15545),	-- Mereldar
-				exploration(14998),	-- Mycomancer Cavern
-				exploration(15362),	-- Nerub-ar Gatehouse
-				exploration(15005),	-- Nightfall Sanctum
-				exploration(15513),	-- Pocket Dimension
-				exploration(14954),	-- Priory of the Sacred Flame
-				exploration(15150),	-- Priory of the Sacred Flame
-				exploration(15379),	-- Procedural Forum
-				exploration(15143),	-- Processing Unit
-				exploration(14512),	-- RebornTree
-				exploration(15169),	-- Shadowvein Power Station
-				exploration(15170),	-- Shadowvein Mine
-				exploration(15375),	-- Silken Court
-				exploration(15004),	-- Skittering Breach
-				exploration(15371),	-- Skittering Cavern
-				exploration(15020),	-- Sprawling Trackyard
-				exploration(15550),	-- Stagnant Mire
-				exploration(15359),	-- Sundered's Crucible
-				exploration(15008),	-- Tak-Rethan Abyss
-				exploration(15327),	-- Tak-Rethan Abyss
-				exploration(15544),	-- Tenir's Ascent
-				exploration(15367),	-- Terrace of Majesty
-				exploration(14853),	-- Test Dungeon
-				exploration(14795),	-- The Ringing Deeps
-				exploration(14798),	-- The Waterworks
-				exploration(14807),	-- The Glittering Shelf
-				exploration(14850),	-- The Whirring Field
-				exploration(14883),	-- The Stonevault
-				exploration(14920),	-- The Basin
-				exploration(14938),	-- The Rookery
-				exploration(15002),	-- The Waterworks
-				exploration(15003),	-- The Dread Pit
-				exploration(15006),	-- The Sinkhole
-				exploration(15007),	-- The Spiral Weave
-				exploration(15009),	-- The Underkeep
-				exploration(15021),	-- The Waxatory
-				exploration(15100),	-- The Earthenworks
-				exploration(15146),	-- The Undersea
-				exploration(15154),	-- The Shredded Strands
-				exploration(15156),	-- The Undercache
-				exploration(15157),	-- The Meadyard
-				exploration(15175),	-- The Sinkhole
-				exploration(15328),	-- The Rookery Landing
-				exploration(15338),	-- The Flaming Taps
-				exploration(15339),	-- The Stills
-				exploration(15340),	-- The Buzz Barns
-				exploration(15341),	-- The BEE.E.O. Suite
-				exploration(15364),	-- The Pulsing Pit
-				exploration(15365),	-- The Congealing Pool
-				exploration(15366),	-- The Ascending Reach
-				exploration(15369),	-- The Swaying Span
-				exploration(15370),	-- The Narthex
-				exploration(15525),	-- The Great Sea
-				exploration(15548),	-- The Hungering Pool
-				exploration(15551),	-- The Fangs
-				exploration(15148),	-- Velhan's Claim
-				exploration(15147),	-- Veneration Grounds
-				exploration(15546),	-- Veneration Grounds
-				exploration(15387),	-- Warband Camp
-				exploration(15001),	-- Zekvir's Lair
-				exploration(14747),	-- Zone 4 Dev Land
-				exploration(15055),	-- zzoldPriory of the Sacred Flame
-				exploration(14823),	-- <Unnamed POI 007>
-				exploration(14824),	-- <Unnamed POI 008>
-				exploration(14825),	-- <Unnamed POI 009>
-				exploration(14826),	-- <Unnamed POI 010>
-				exploration(14827),	-- <Unnamed POI 011>
-				exploration(14828),	-- <Unnamed POI 012>
-				exploration(14829),	-- <Unnamed POI 013>
-				exploration(14830),	-- <Unnamed POI 014>
-				exploration(14831),	-- <Unnamed POI 015>
-				exploration(14832),	-- <Unnamed POI 016>
-				exploration(14833),	-- <Unnamed POI 017>
-				exploration(14834),	-- <Unnamed POI 018>
-				exploration(14835),	-- <Unnamed POI 019>
-				exploration(14836),	-- <Unnamed POI 020>
-			}),
 			i(220445),	-- Illusionary Charm
 		})),
 	}),
@@ -3981,7 +1668,6 @@ root(ROOTS.Unsorted, {
 				i(159900),	-- Caraway Rye Loaf
 				i(159919),	-- Salted Tideway Cod
 				i(159920),	-- Fermented Greatshark
-				i(160092),	-- Pineapple Pizza
 				i(160483),	-- Steamed Clams
 				i(160518),	-- Great Turtle Soup
 				i(160554),	-- Stormsong Sourdough
@@ -4233,13 +1919,11 @@ root(ROOTS.Unsorted, {
 				i(163090),	-- Cured Billow-Weed
 				i(163093),	-- Witch's Ritual Chalk
 				i(163095),	-- Golden Troll Berserker \\ Finely Crafted Tin Soldier
-				i(163096),	-- Lead-Glass Hand Mirror
 				i(163097),	-- Carved Rabbit Effigy
 				i(163111),	-- Blackstone Cat Statue
 				i(163112),	-- Imp's Tongue Charm
 				i(163113),	-- Corroded Copper Kettle \\ Copper Tea Kettle
 				i(163171),	-- De Gral Kantik
-				i(163172),	-- Green Glowing Puffer
 				i(163322),	-- Ian's Empty Bottle
 				i(163324),	-- Brian's Broken Compass
 				i(163325),	-- Ofer's Bound Journal
@@ -4250,11 +1934,6 @@ root(ROOTS.Unsorted, {
 				i(163372),	-- Damarcus' Backpack
 				i(163373),	-- Rachel's Flute \\ Rachel's Tambourine
 				i(163374),	-- Josh's Fang Necklace \\ Josh's Lucky Ferret's Foot
-				i(163516),	-- Blue Glowing Puffer
-				i(163517),	-- Red Glowing Puffer
-				i(163518),	-- Purple Glowing Puffer
-				i(163520),	-- Orange Glowing Puffer
-				i(163521),	-- Yellow Glowing Puffer
 				i(163535),	-- Outpost Upgrade
 				i(163544),	-- Scroll of Agile Swimming
 				i(163545),	-- Scroll of Ocean Ferocity
@@ -4436,18 +2115,12 @@ root(ROOTS.Unsorted, {
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
-				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 				i(158727),	-- Decayed Equipment
-				i(161198),	-- Old Sailor's Almanac
 				i(161202),	-- Polished Brass Sextant
-				i(161204),	-- Oily Glass Eyeball \\ Glass Eyeball
 				i(161205),	-- Wooden Horse Carving
-				i(161207),	-- Admiral's Black Rum \\ Admiral's Spiced Black Rum
 				i(161209),	-- Coven Dream Catcher
 				i(161210),	-- Homemade Child's Doll
-				i(161211),	-- Ship-in-a-Bottle
 				i(161212),	-- Wavespeaker's Star Chart
-				i(161213),	-- Sagehold Hymnal
 				i(158736),	-- Trophy Antlers
 				i(158797),	-- Jar of Truffles
 				i(158858),	-- Adder's Fork
@@ -4486,8 +2159,6 @@ root(ROOTS.Unsorted, {
 				i(160581),	-- Vulture Egg Shell
 				i(160582),	-- Broken Lizard Bones
 				i(160583),	-- Broken Sethrak Blade
-				i(162664),	-- Dented Cuirass
-				i(162666),	-- Ripped Satchel
 				i(162667),	-- Farraki Funeral Urn
 				i(162683),	-- Archaic Dinomancy Carvings
 			}),
@@ -4926,21 +2597,7 @@ root(ROOTS.Unsorted, {
 			i(159970),	-- Hull-Plate Half Helm
 			i(159971),	-- Token of Ironside Blessing
 			-- Somehow has sourceID attached
-			i(162651),	-- Rusted Chains
 			i(162654),	-- REUSE ME (DNT)
-			i(162659),	-- Worn Mace
-			i(162660),	-- Burnished Shield
-			i(162661),	-- Battered Skull
-			i(162662),	-- Etched Mask
-			i(162663),	-- Broken Spearhead
-			i(162671),	-- Broken Crossbow
-			i(162674),	-- Cracked Helmet
-			i(162676),	-- Ragged Furs
-			i(162677),	-- Dull Throwing Knives
-			i(162678),	-- Crimson Flail
-			i(162679),	-- Misfired Pistol
-			i(162680),	-- Ruined Collar
-			i(162682),	-- Tarnished Longsword
 		})),
 		-- 8.1.0
 		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
@@ -5249,8 +2906,6 @@ root(ROOTS.Unsorted, {
 			i(168792),	-- Kobold's Candle
 			i(168793),	-- Bottle of Homemade Wine
 			i(168794),	-- Last Year's Brewfest Flyer
-			i(168795),	-- Old Boot
-			i(168796),	-- Recycled Scroll
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
 			i(168815),	-- Kelpberry Cask
@@ -5269,7 +2924,6 @@ root(ROOTS.Unsorted, {
 			i(169122),	-- Gibraltian Monkey Wrench
 			i(169125),	-- Sonic Drive Screw
 			i(169126),	-- Supercharged Graphics Cog
-			i(169143),	-- Seized Sparksaw
 			i(169146),	-- Brittle Thrust Booster
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
 			i(169193),	-- Nazjatar Ring A
@@ -5375,7 +3029,6 @@ root(ROOTS.Unsorted, {
 			i(169986),	-- Cracked Dragonscale
 			i(169987),	-- Inert Dragonscale
 			i(170000),	-- Battered Bastion
-			i(170001),	-- Seized Engine
 			i(170002),	-- Split Differential
 			i(170003),	-- Grinding Gearbox
 			i(170004),	-- Cracked Turbo

@@ -421,9 +421,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				ach(8432, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Shado-Pan Monastery
+				challengemaster(ach(8432, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Shado-Pan Monastery
 					title(246),	-- Purified Defender <Name>
-				})),
+				}))),
 				ach(6893),	-- Shado-Pan Monastery Challenger
 				ach(6902),	-- Shado-Pan Monastery: Bronze
 				ach(6903),	-- Shado-Pan Monastery: Silver
@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			})),
 			-- #if ANYCLASSIC
-			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
@@ -442,6 +442,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 							ach(60895),	-- Celestial: Shado-Pan Monastery
 							i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 							i(86739),	-- Beads of the Mogu'shi
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86813)),	-- Vizier's Ruby Signet (HoF)
+							i(86805),	-- Qin-xi's Polarizing Seal
 						},
 					}),
 				},

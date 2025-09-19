@@ -384,7 +384,8 @@ do
 		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 			= GetAchievementCriteriaInfoByID(achievementID, critUID)
 		-- criteriaType will exist even when criteriaString is empty, so don't need to check retrieving and stuff
-		if criteriaType and field ~= "name" then
+		if (criteriaString and criteriaString ~= "")
+			or (criteriaType and field ~= "name") then
 			return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		end
 		if critID <= GetAchievementNumCriteria(achievementID) then

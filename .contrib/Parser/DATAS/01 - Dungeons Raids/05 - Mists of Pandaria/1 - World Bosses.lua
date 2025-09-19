@@ -590,7 +590,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}))),
-			applyclassicphase(MOP_PHASE_ONE, e(725, {	-- Saylis's Warband [Galleon]
+			applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, e(725, {	-- Saylis's Warband [Galleon]
 				["questID"] = 32098,
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },	-- CRIEVE NOTE: TODO: I don't think this is necessary anymore?
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, e(691, {	-- Sha of Anger
+			applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, e(691, {	-- Sha of Anger
 				["questID"] = 32099,
 				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
@@ -703,12 +703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					434,	-- The Ancient Passage
 				},
 				["crs"] = { 60491 },	-- Sha of Anger
-				["groups"] = {
-					ach(6480),	-- Settle Down, Bro
-					ach(6709),	-- Sha of Anger Guild Run
-					-- Mounts and Quest Items!
-					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
-					i(89317),	-- Claw of Anger
+				["groups"] = appendGroups(applyclassicphase(MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14, {	-- Tier 14 Gear
 					-- Tier Gear
 					cl(WARRIOR, {
 						-- DPS
@@ -718,9 +713,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Tank
 						i(85327),	-- Handguards of Resounding Rings
 						i(85325),	-- Legguards of Resounding Rings
-
-						-- PvP Gloves
-						i(84840),	-- Malevolent Gladiator's Plate Gauntlets
 					}),
 					cl(PALADIN, {
 						-- DPS
@@ -734,10 +726,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Tank
 						i(85322),	-- White Tiger Handguards
 						i(85320),	-- White Tiger Legguards
-
-						-- PvP Gloves
-						i(84831),	-- Malevolent Gladiator's Ornamented Gloves
-						i(84834),	-- Malevolent Gladiator's Scaled Gauntlets
 					}),
 					cl(DEATHKNIGHT, {
 						-- DPS
@@ -747,23 +735,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Tank
 						i(85317),	-- Handguards of the Lost Catacomb
 						i(85315),	-- Legguards of the Lost Catacomb
-
-						-- PvP Gloves
-						i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
 					}),
 					cl(HUNTER, {
 						i(85297),	-- Yaungol Slayer's Gloves
 						i(85295),	-- Yaungol Slayer's Legguards
-
-						-- PvP Gloves
-						i(84841),	-- Malevolent Gladiator's Chain Gauntlets
 					}),
 					cl(ROGUE, {
 						i(85302),	-- Gloves of the Thousandfold Blades
 						i(85300),	-- Legguards of the Thousandfold Blades
-
-						-- PvP Gloves
-						i(84830),	-- Malevolent Gladiator's Leather Gloves
 					}),
 					cl(PRIEST, {
 						-- DPS
@@ -773,10 +752,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Healer
 						i(85363),	-- Guardian Serpent Handwraps
 						i(85361),	-- Guardian Serpent Legwraps
-
-						-- PvP Gloves
-						i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
-						i(84838),	-- Malevolent Gladiator's Satin Gloves
 					}),
 					cl(SHAMAN, {
 						-- DPS (Enhance)
@@ -790,18 +765,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Healer
 						i(85352),	-- Firebird's Handwraps
 						i(85350),	-- Firebird's Legwraps
-
-						-- PvP Gloves
-						i(84844),	-- Malevolent Gladiator's Linked Gauntlets
-						i(84845),	-- Malevolent Gladiator's Mail Gauntlets
-						i(84847),	-- Malevolent Gladiator's Ringmail Gauntlets
 					}),
 					cl(MAGE, {
 						i(85378),	-- Gloves of the Burning Scroll
 						i(85376),	-- Leggings of the Burning Scroll
-
-						-- PvP Gloves
-						i(84837),	-- Malevolent Gladiator's Silk Handguards
 					}),
 					cl(MONK, {
 						-- DPS
@@ -815,17 +782,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Tank
 						i(85387),	-- Red Crane Gauntlets
 						i(85385),	-- Red Crane Legguards
-
-						-- PvP Gloves
-						i(84836),	-- Malevolent Gladiator's Copperskin Gloves
-						i(84839),	-- Malevolent Gladiator's Ironskin Gloves
 					}),
 					cl(WARLOCK, {
 						i(85369),	-- Sha-Skin Gloves
 						i(85371),	-- Sha-Skin Leggings
-
-						-- PvP Gloves
-						i(84842),	-- Malevolent Gladiator's Felweave Handguards
 					}),
 					cl(DRUID, {
 						-- DPS (Boomkin)
@@ -843,8 +803,45 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						-- Tank
 						i(85380),	-- Eternal Blossom Handguards
 						i(85382),	-- Eternal Blossom Breeches
-
-						-- PvP Gloves
+					}),
+				}), {
+					-- PvP Gloves
+					cl(WARRIOR, {
+						i(84840),	-- Malevolent Gladiator's Plate Gauntlets
+					}),
+					cl(PALADIN, {
+						i(84831),	-- Malevolent Gladiator's Ornamented Gloves
+						i(84834),	-- Malevolent Gladiator's Scaled Gauntlets
+					}),
+					cl(DEATHKNIGHT, {
+						i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
+					}),
+					cl(HUNTER, {
+						i(84841),	-- Malevolent Gladiator's Chain Gauntlets
+					}),
+					cl(ROGUE, {
+						i(84830),	-- Malevolent Gladiator's Leather Gloves
+					}),
+					cl(PRIEST, {
+						i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
+						i(84838),	-- Malevolent Gladiator's Satin Gloves
+					}),
+					cl(SHAMAN, {
+						i(84844),	-- Malevolent Gladiator's Linked Gauntlets
+						i(84845),	-- Malevolent Gladiator's Mail Gauntlets
+						i(84847),	-- Malevolent Gladiator's Ringmail Gauntlets
+					}),
+					cl(MAGE, {
+						i(84837),	-- Malevolent Gladiator's Silk Handguards
+					}),
+					cl(MONK, {
+						i(84836),	-- Malevolent Gladiator's Copperskin Gloves
+						i(84839),	-- Malevolent Gladiator's Ironskin Gloves
+					}),
+					cl(WARLOCK, {
+						i(84842),	-- Malevolent Gladiator's Felweave Handguards
+					}),
+					cl(DRUID, {
 						i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
 						i(84833),	-- Malevolent Gladiator's Kodohide Gloves
 						i(84843),	-- Malevolent Gladiator's Wyrmhide Gloves
@@ -927,6 +924,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 					}),
+				}, {
 					-- Consolation Prize
 					i(90839, {	-- Cache of Sha-Touched Gold
 						["description"] = "This is awarded as a consolation prize to players who do not win actual loot. Can rarely contains flasks, potions, elixirs, battle stones, companions, and Raid Finder level trash drops.",
@@ -961,7 +959,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							-- #endif
 						},
 					}),
-				},
+				}, {
+					ach(6480),	-- Settle Down, Bro
+					ach(6709),	-- Sha of Anger Guild Run
+					-- Mounts and Quest Items!
+					i(87771),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
+					i(89317),	-- Claw of Anger
+				}),
 			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
 				["questID"] = 33117,

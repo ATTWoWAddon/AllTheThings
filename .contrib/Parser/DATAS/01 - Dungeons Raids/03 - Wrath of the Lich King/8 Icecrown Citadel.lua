@@ -537,83 +537,83 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 				q(24819, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24820, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24821, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24822, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24836, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24837, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24838, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24839, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24840, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24841, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24842, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24843, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24844, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24845, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24846, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(24847, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(25246, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(25247, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(25248, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				q(25249, {	-- A Change of Heart
-					["qg"] = 38316,	-- Ormus the Penitent
+					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
 				--  Weekly Raid Quests

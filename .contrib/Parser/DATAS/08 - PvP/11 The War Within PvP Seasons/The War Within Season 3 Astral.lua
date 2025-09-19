@@ -4,7 +4,9 @@
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	n(SEASON_ASTRAL, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
-			ach(41048),	-- Astral Weapons of Conquest
+			ach(41048, {	-- Astral Weapons of Conquest
+				i(232600),	-- Astral Gladiator's Weapon Token
+			}),
 			ach(42042, {	-- Astral Combatant
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
@@ -24,7 +26,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(41026, {	-- Duelist: The War Within Season 3
 				i(244234),	-- Astral Gladiator's Prestigious Cloak
 			}),
-			ach(41027),	-- Elite: The War Within Season 3
+			ach(41027, {	-- Elite: The War Within Season 3
+				i(232908),	-- Astral Gladiator's Tabard
+			}),
 			ach(41049, {	-- Gladiator: The War Within Season 3
 				i(232617),	-- Astral Gladiator's Fel Bat (MOUNT!)
 			}),
@@ -49,9 +53,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(42037, {	-- Hero of the Horde: Astral
 				["races"]= HORDE_ONLY,
 			}),
-			ach(42024),	-- Strategist: The War Within Season 3
+			ach(42024, {	-- Strategist: The War Within Season 3
+				i(242636),	-- Astral Legend's Pennant (TOY!)
+			}),
 			-- Solo
-			ach(42023),	-- Legend: The War Within Season 3
+			ach(42023, {	-- Legend: The War Within Season 3
+				i(242636),	-- Astral Legend's Pennant (TOY!)
+			}),
 			ach(42044),	-- Battle Mender: The War Within Season 3
 			ach(42033, {	-- Astral Legend: The War Within Season 3
 				title(634),	-- Astral Legend <Name>
@@ -591,155 +599,436 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					--}),
 				},
 			}),
-		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, ["bonusID"] = 7532 }, {
-			--[[
-			n(CLASSES, {
-				cl(DEATHKNIGHT, {
-					i(229731),	-- Prized Gladiator's Cloak
-					i(229713),	-- Prized Gladiator's Chestguard
-					i(229718),	-- Prized Gladiator's Plate Gauntlets
-					i(229727),	-- Prized Gladiator's Plate Girdle
-					i(229721),	-- Prized Gladiator's Plate Helm
-					i(229723),	-- Prized Gladiator's Plate Legguards
-					i(229725),	-- Prized Gladiator's Plate Shoulders
-					i(229716),	-- Prized Gladiator's Plate Warboots
-					i(229729),	-- Prized Gladiator's Plate Wristguards
-				}),
-				cl(DEMONHUNTER, {
-					i(229615),	-- Prized Gladiator's Cloak
-					i(229611),	-- Prized Gladiator's Leather Belt
-					i(229601),	-- Prized Gladiator's Leather Boots
-					i(229607),	-- Prized Gladiator's Leather Breeches
-					i(229603),	-- Prized Gladiator's Leather Gloves
-					i(229605),	-- Prized Gladiator's Leather Helm
-					i(229609),	-- Prized Gladiator's Leather Spaulders
-					i(229599),	-- Prized Gladiator's Leather Vest
-					i(229613),	-- Prized Gladiator's Leather Wristwraps
-				}),
-				cl(DRUID, {
-					i(229596),	-- Prized Gladiator's Cloak
-					i(229591),	-- Prized Gladiator's Leather Belt
-					i(229581),	-- Prized Gladiator's Leather Boots
-					i(229587),	-- Prized Gladiator's Leather Breeches
-					i(229583),	-- Prized Gladiator's Leather Gloves
-					i(229585),	-- Prized Gladiator's Leather Helm
-					i(229589),	-- Prized Gladiator's Leather Spaulders
-					i(229579),	-- Prized Gladiator's Leather Vest
-					i(229594),	-- Prized Gladiator's Leather Wristwraps
-				}),
-				cl(EVOKER, {
-					i(229672),	-- Prized Gladiator's Cloak
-					i(229656),	-- Prized Gladiator's Armored Scales
-					i(229668),	-- Prized Gladiator's Chain Belt
-					i(229660),	-- Prized Gladiator's Chain Gauntlets
-					i(229662),	-- Prized Gladiator's Chain Helm
-					i(229664),	-- Prized Gladiator's Chain Leggings
-					i(229666),	-- Prized Gladiator's Chain Monnion
-					i(229658),	-- Prized Gladiator's Chain Sabatons
-					i(229670),	-- Prized Gladiator's Chain Wristguards
-				}),
-				cl(HUNTER, {
-					i(229691),	-- Prized Gladiator's Cloak
-					i(229687),	-- Prized Gladiator's Chain Belt
-					i(229679),	-- Prized Gladiator's Chain Gauntlets
-					i(229681),	-- Prized Gladiator's Chain Helm
-					i(229683),	-- Prized Gladiator's Chain Leggings
-					i(229685),	-- Prized Gladiator's Chain Monnion
-					i(229677),	-- Prized Gladiator's Chain Sabatons
-					i(229675),	-- Prized Gladiator's Chain Vest
-					i(229689),	-- Prized Gladiator's Chain Wristguards
-				}),
-				cl(MAGE, {
-					i(229538),	-- Prized Gladiator's Cloak
-					i(229534),	-- Prized Gladiator's Silk Cord
-					i(229526),	-- Prized Gladiator's Silk Gloves
-					i(229528),	-- Prized Gladiator's Silk Hat
-					i(229530),	-- Prized Gladiator's Silk Leggings
-					i(229532),	-- Prized Gladiator's Silk Mantle
-					i(229522),	-- Prized Gladiator's Silk Robe
-					i(229524),	-- Prized Gladiator's Silk Slippers
-					i(229536),	-- Prized Gladiator's Silk Wristwraps
-				}),
-				cl(MONK, {
-					i(229634),	-- Prized Gladiator's Cloak
-					i(229630),	-- Prized Gladiator's Leather Belt
-					i(229620),	-- Prized Gladiator's Leather Boots
-					i(229626),	-- Prized Gladiator's Leather Breeches
-					i(229622),	-- Prized Gladiator's Leather Gloves
-					i(229624),	-- Prized Gladiator's Leather Helm
-					i(229628),	-- Prized Gladiator's Leather Spaulders
-					i(229618),	-- Prized Gladiator's Leather Vest
-					i(229632),	-- Prized Gladiator's Leather Wristwraps
-				}),
-				cl(PALADIN, {
-					i(229751),	-- Prized Gladiator's Cloak
-					i(229734),	-- Prized Gladiator's Chestguard
-					i(229738),	-- Prized Gladiator's Plate Gauntlets
-					i(229746),	-- Prized Gladiator's Plate Girdle
-					i(229740),	-- Prized Gladiator's Plate Helm
-					i(229742),	-- Prized Gladiator's Plate Legguards
-					i(229744),	-- Prized Gladiator's Plate Shoulders
-					i(229736),	-- Prized Gladiator's Plate Warboots
-					i(229748),	-- Prized Gladiator's Plate Wristguards
-				}),
-				cl(PRIEST, {
-					i(229557),	-- Prized Gladiator's Cloak
-					i(229541),	-- Prized Gladiator's Silk Chestwrap
-					i(229553),	-- Prized Gladiator's Silk Cord
-					i(229545),	-- Prized Gladiator's Silk Gloves
-					i(229547),	-- Prized Gladiator's Silk Hood
-					i(229549),	-- Prized Gladiator's Silk Leggings
-					i(229551),	-- Prized Gladiator's Silk Mantle
-					i(229543),	-- Prized Gladiator's Silk Slippers
-					i(229555),	-- Prized Gladiator's Silk Wristwraps
-				}),
-				cl(ROGUE, {
-					i(229653),	-- Prized Gladiator's Cloak
-					i(229649),	-- Prized Gladiator's Leather Belt
-					i(229639),	-- Prized Gladiator's Leather Boots
-					i(229645),	-- Prized Gladiator's Leather Breeches
-					i(229641),	-- Prized Gladiator's Leather Gloves
-					i(229643),	-- Prized Gladiator's Leather Helm
-					i(229647),	-- Prized Gladiator's Leather Spaulders
-					i(229637),	-- Prized Gladiator's Leather Vest
-					i(229651),	-- Prized Gladiator's Leather Wristwraps
-				}),
-				cl(SHAMAN, {
-					i(229710),	-- Prized Gladiator's Cloak
-					i(229706),	-- Prized Gladiator's Chain Belt
-					i(229698),	-- Prized Gladiator's Chain Gauntlets
-					i(229700),	-- Prized Gladiator's Chain Helm
-					i(229702),	-- Prized Gladiator's Chain Leggings
-					i(229704),	-- Prized Gladiator's Chain Monnion
-					i(229696),	-- Prized Gladiator's Chain Sabatons
-					i(229694),	-- Prized Gladiator's Chain Vest
-					i(229708),	-- Prized Gladiator's Chain Wristguards
-				}),
-				cl(WARLOCK, {
-					i(229576),	-- Prized Gladiator's Cloak
-					i(229572),	-- Prized Gladiator's Silk Cord
-					i(229564),	-- Prized Gladiator's Silk Gloves
-					i(229566),	-- Prized Gladiator's Silk Hood
-					i(229568),	-- Prized Gladiator's Silk Leggings
-					i(229570),	-- Prized Gladiator's Silk Mantle
-					i(229560),	-- Prized Gladiator's Silk Raiment
-					i(229562),	-- Prized Gladiator's Silk Slippers
-					i(229574),	-- Prized Gladiator's Silk Wristwraps
-				}),
-				cl(WARRIOR, {
-					i(229771),	-- Prized Gladiator's Cloak
-					i(229754),	-- Prized Gladiator's Chestguard
-					i(229758),	-- Prized Gladiator's Plate Gauntlets
-					i(229767),	-- Prized Gladiator's Plate Girdle
-					i(229760),	-- Prized Gladiator's Plate Helm
-					i(229762),	-- Prized Gladiator's Plate Legguards
-					i(229765),	-- Prized Gladiator's Plate Shoulders
-					i(229756),	-- Prized Gladiator's Plate Warboots
-					i(229769),	-- Prized Gladiator's Plate Wristguards
+			o(456208, {	-- The Catalyst
+				["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
+				["coord"] = { 50.0, 54.2, DORNOGAL },
+				["modelScale"] = 4,
+				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
+				["groups"] = bubbleDown({ ["modID"] = 14 }, {
+					cl(DEATHKNIGHT, {
+						i(237623),	-- Hollow Sentinel's Wingdrape
+						i(237624),	-- Hollow Sentinel's Stonecuffs
+						i(237625),	-- Hollow Sentinel's Greatbelt
+						i(237626),	-- Hollow Senintel's Perches
+						i(237627),	-- Hollow Sentinel's Stonekilt
+						i(237628),	-- Hollow Sentinel's Stonemask
+						i(237629),	-- Hollow Sentinel's Gauntlets
+						i(237630),	-- Hollow Sentinel's Greatboots
+						i(237631),	-- Hollow Sentinel's Breastplate
+					}),
+					cl(DEMONHUNTER, {
+						i(237686),	-- Charhound's Vicious Felcover
+						i(237687),	-- Charhound's Vicious Restraints
+						i(237688),	-- Charhound's Vicious Huntbelt
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237690),	-- Charhound's Vicious Hidecoat
+						i(237691),	-- Charhound's Vicious Scalp
+						i(237692),	-- Charhound's Vicious Felclaws
+						i(237693),	-- Charhound's Vicious Flametabi
+						i(237694),	-- Charhound's Vicious Bindings
+					}),
+					cl(DRUID, {
+						i(237677),	-- Plumage of the Mother Eagle
+						i(237678),	-- Bands of the Mother Eagle
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237681),	-- Breeches of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237683),	-- Wings of the Mother Eagle
+						i(237684),	-- Feathered Boots of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237650),	-- Spellweaver's Immaculate Runecloak
+						i(237651),	-- Spellweaver's Immaculate Cuffs
+						i(237652),	-- Spellweaver's Immaculate Crystal Cord
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237654),	-- Spellweaver's Immaculate Runeslacks
+						i(237655),	-- Spellweaver's Immaculate Focus
+						i(237656),	-- Spellweaver's Immaculate Scaleguards
+						i(237657),	-- Spellweaver's Immaculate Talons
+						i(237658),	-- Spellweaver's Immaculate Crestward
+					}),
+					cl(HUNTER, {
+						i(237641),	-- Midnight Herald's Shroud
+						i(237642),	-- Midnight Herald's Wristguards
+						i(237643),	-- Midnight Herald's Clasp
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237645),	-- Midnight Herald's Petticoat
+						i(237646),	-- Midnight Herald's Cowl
+						i(237647),	-- Midnight Herald's Gloves
+						i(237648),	-- Midnight Herald's Jackboots
+						i(237649),	-- Midnight Herald's Hauberk
+					}),
+					cl(MAGE, {
+						i(237713),	-- Augur's Ephemeral Brilliance
+						i(237714),	-- Augur's Ephemeral Bindings
+						i(237715),	-- Augur's Ephemeral Quillsash
+						i(237716),	-- Augur's Ephemeral Orbs of Power
+						i(237717),	-- Augur's Ephemeral Trousers
+						i(237718),	-- Augur's Ephemeral Wide-Brim
+						i(237719),	-- Augur's Ephemeral Mitts
+						i(237720),	-- Augur's Ephemeral Slippers
+						i(237721),	-- Augur's Ephemeral Habiliments
+					}),
+					cl(MONK, {
+						i(237668),	-- Breeze of Fallen Storms
+						i(237669),	-- Demigaunts of Fallen Storms
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237672),	-- Legwraps of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237614),	-- Gilded Cloak of the Lucent Battalion
+						i(237615),	-- Vambraces of the Lucent Battalion
+						i(237616),	-- Seal of the Lucent Battalion
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237618),	-- Cuisses of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+						i(237620),	-- Protectors of the Lucent Battalion
+						i(237621),	-- Stompers of the Lucent Battalion
+						i(237622),	-- Cuirass of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237704),	-- Dying Star's Memory
+						i(237705),	-- Dying Star's Bangles
+						i(237706),	-- Dying Star's Waistlight
+						i(237707),	-- Dying Star's Pyrelights
+						i(237708),	-- Dying Star's Leggings
+						i(237709),	-- Dying Star's Veil
+						i(237710),	-- Dying Star's Caress
+						i(237711),	-- Dying Star's Soles
+						i(237712),	-- Dying Star's Cassock
+					}),
+					cl(ROGUE, {
+						i(237659),	-- Cape of the Sudden Eclipse
+						i(237660),	-- Armbands of the Sudden Eclipse
+						i(237661),	-- Strap of the Sudden Eclipse
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+						i(237663),	-- Pants of the Sudden Eclipse
+						i(237664),	-- Hood of the Sudden Eclipse
+						i(237665),	-- Deathgrips of the Sudden Eclipse
+						i(237666),	-- Bladed Boots of the Sudden Eclipse
+						i(237667),	-- Tactical Vest of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237632),	-- Shawl of Channeled Fury
+						i(237633),	-- Bracers of Channeled Fury
+						i(237634),	-- Fauld of Channeled Fury
+						i(237635),	-- Fangs of Channeled Fury
+						i(237636),	-- Tassets of Channeled Fury
+						i(237637),	-- Aspect of Channeled Fury
+						i(237638),	-- Claws of Channeled Fury
+						i(237639),	-- Boots of Channeled Fury
+						i(237640),	-- Furs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237695),	-- Inquisitor's All-Seeing Madness
+						i(237696),	-- Inquisitor's Bracelets of Madness
+						i(237697),	-- Inquisitor's Tome of Madness
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237699),	-- Inquisitor's Leggings of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+						i(237701),	-- Inquisitor's Clutches of Madness
+						i(237702),	-- Inquisitor's Treads of Madness
+						i(237703),	-- Inquisitor's Robes of Madness
+					}),
+					cl(WARRIOR, {
+						i(237605),	-- Living Weapon's Cape
+						i(237606),	-- Living Weapon's Manacles
+						i(237607),	-- Living Weapon's Chain
+						i(237608),	-- Living Weapon's Ramparts
+						i(237609),	-- Living Weapon's Legguards
+						i(237610),	-- Living Weapon's Faceshield
+						i(237611),	-- Living Weapon's Crushers
+						i(237612),	-- Living Weapon's Sabatons
+						i(237613),	-- Living Weapon's Bulwark
+					}),
+					-- Elite catalyst gear is not obtainable this season
 				}),
 			}),
-			]]--
+		})),
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, ["bonusID"] = 7532 }, {
+			n(CLASSES, {
+				-- TODO: Only 9 pieces will be obtainable, move rest to NYI Sets when confirmed
+				cl(DEATHKNIGHT, {
+					i(230591),	-- Astral Gladiator's Cloak
+					i(230592),	-- Astral Gladiator's Drape
+					i(230593),	-- Astral Gladiator's Shawl
+					i(230575),	-- Astral Gladiator's Chestguard
+					i(230576),	-- Astral Gladiator's Chestplate
+					i(230579),	-- Astral Gladiator's Plate Gauntlets
+					i(230587),	-- Astral Gladiator's Plate Girdle
+					i(230588),	-- Astral Gladiator's Plate Greatbelt
+					i(230580),	-- Astral Gladiator's Plate Handguards
+					i(230581),	-- Astral Gladiator's Plate Helm
+					i(230582),	-- Astral Gladiator's Plate Helmet
+					i(230583),	-- Astral Gladiator's Plate Legguards
+					i(230586),	-- Astral Gladiator's Plate Pauldrons
+					i(230585),	-- Astral Gladiator's Plate Shoulders
+					i(230578),	-- Astral Gladiator's Plate Stompers
+					i(230590),	-- Astral Gladiator's Plate Vambraces
+					i(230577),	-- Astral Gladiator's Plate Warboots
+					i(230584),	-- Astral Gladiator's Plate Wargreaves
+					i(230589),	-- Astral Gladiator's Plate Wristguards
+				}),
+				cl(DEMONHUNTER, {
+					i(230476),	-- Astral Gladiator's Cloak
+					i(230477),	-- Astral Gladiator's Drape
+					i(230478),	-- Astral Gladiator's Shawl
+					i(230472),	-- Astral Gladiator's Leather Belt
+					i(230468),	-- Astral Gladiator's Leather Breeches
+					i(230462),	-- Astral Gladiator's Leather Boots
+					i(230464),	-- Astral Gladiator's Leather Gloves
+					i(230465),	-- Astral Gladiator's Leather Grips
+					i(230466),	-- Astral Gladiator's Leather Helm
+					i(230461),	-- Astral Gladiator's Leather Jerkin
+					i(230469),	-- Astral Gladiator's Leather Legwraps
+					i(230467),	-- Astral Gladiator's Leather Mask
+					i(230471),	-- Astral Gladiator's Leather Shoulderpads
+					i(230470),	-- Astral Gladiator's Leather Spaulders
+					i(230473),	-- Astral Gladiator's Leather Strap
+					i(230463),	-- Astral Gladiator's Leather Treads
+					i(230460),	-- Astral Gladiator's Leather Vest
+					i(230475),	-- Astral Gladiator's Leather Wristguards
+					i(230474),	-- Astral Gladiator's Leather Wristwraps
+				}),
+				cl(DRUID, {
+					i(230457),	-- Astral Gladiator's Cloak
+					i(230458),	-- Astral Gladiator's Drape
+					i(230459),	-- Astral Gladiator's Shawl
+					i(230453),	-- Astral Gladiator's Leather Belt
+					i(230443),	-- Astral Gladiator's Leather Boots
+					i(230449),	-- Astral Gladiator's Leather Breeches
+					i(230445),	-- Astral Gladiator's Leather Gloves
+					i(230446),	-- Astral Gladiator's Leather Grips
+					i(230447),	-- Astral Gladiator's Leather Helm
+					i(230450),	-- Astral Gladiator's Leather Legwraps
+					i(230448),	-- Astral Gladiator's Leather Mask
+					i(230452),	-- Astral Gladiator's Leather Shoulderpads
+					i(230451),	-- Astral Gladiator's Leather Spaulders
+					i(230454),	-- Astral Gladiator's Leather Strap
+					i(230444),	-- Astral Gladiator's Leather Treads
+					i(230441),	-- Astral Gladiator's Leather Vest
+					i(230442),	-- Astral Gladiator's Leather Vestments
+					i(230455),	-- Astral Gladiator's Leather Wristwraps
+					i(230456),	-- Astral Gladiator's Leather Wristguards
+				}),
+				cl(EVOKER, {
+					i(230533),	-- Astral Gladiator's Cloak
+					i(230534),	-- Astral Gladiator's Drape
+					i(230535),	-- Astral Gladiator's Shawl
+					i(230517),	-- Astral Gladiator's Armored Scales
+					i(230518),	-- Astral Gladiator's Scaleguard
+					i(230529),	-- Astral Gladiator's Chain Belt
+					i(230520),	-- Astral Gladiator's Chain Boots
+					i(230532),	-- Astral Gladiator's Chain Bracers
+					i(230526),	-- Astral Gladiator's Chain Breeches
+					i(230524),	-- Astral Gladiator's Chain Faceguard
+					i(230521),	-- Astral Gladiator's Chain Gauntlets
+					i(230530),	-- Astral Gladiator's Chain Girdle
+					i(230522),	-- Astral Gladiator's Chain Handguards
+					i(230523),	-- Astral Gladiator's Chain Helm
+					i(230525),	-- Astral Gladiator's Chain Leggings
+					i(230527),	-- Astral Gladiator's Chain Monnion
+					i(230519),	-- Astral Gladiator's Chain Sabatons
+					i(230528),	-- Astral Gladiator's Chain Shoulderguard
+					i(230531),	-- Astral Gladiator's Chain Wristguards
+				}),
+				cl(HUNTER, {
+					i(230553),	-- Astral Gladiator's Cloak
+					i(230554),	-- Astral Gladiator's Drape
+					i(230555),	-- Astral Gladiator's Shawl
+					i(230548),	-- Astral Gladiator's Chain Belt
+					i(230539),	-- Astral Gladiator's Chain Boots
+					i(230552),	-- Astral Gladiator's Chain Bracers
+					i(230545),	-- Astral Gladiator's Chain Breeches
+					i(230543),	-- Astral Gladiator's Chain Faceguard
+					i(230540),	-- Astral Gladiator's Chain Gauntlets
+					i(230550),	-- Astral Gladiator's Chain Girdle
+					i(230541),	-- Astral Gladiator's Chain Handguards
+					i(230542),	-- Astral Gladiator's Chain Helm
+					i(230544),	-- Astral Gladiator's Chain Leggings
+					i(230546),	-- Astral Gladiator's Chain Monnion
+					i(230538),	-- Astral Gladiator's Chain Sabatons
+					i(230547),	-- Astral Gladiator's Chain Shoulderguard
+					i(230537),	-- Astral Gladiator's Chain Tunic
+					i(230536),	-- Astral Gladiator's Chain Vest
+					i(230551),	-- Astral Gladiator's Chain Wristguards
+				}),
+				cl(MAGE, {
+					i(230399),	-- Astral Gladiator's Cloak
+					i(230400),	-- Astral Gladiator's Drape
+					i(230401),	-- Astral Gladiator's Shawl
+					i(230394),	-- Astral Gladiator's Silk Amice
+					i(230398),	-- Astral Gladiator's Silk Armbands
+					i(230396),	-- Astral Gladiator's Silk Belt
+					i(230390),	-- Astral Gladiator's Silk Cap
+					i(230395),	-- Astral Gladiator's Silk Cord
+					i(230387),	-- Astral Gladiator's Silk Gloves
+					i(230384),	-- Astral Gladiator's Silk Gown
+					i(230388),	-- Astral Gladiator's Silk Handwraps
+					i(230389),	-- Astral Gladiator's Silk Hat
+					i(230391),	-- Astral Gladiator's Silk Leggings
+					i(230393),	-- Astral Gladiator's Silk Mantle
+					i(230383),	-- Astral Gladiator's Silk Robe
+					i(230385),	-- Astral Gladiator's Silk Slippers
+					i(230386),	-- Astral Gladiator's Silk Treads
+					i(230392),	-- Astral Gladiator's Silk Trousers
+					i(230397),	-- Astral Gladiator's Silk Wristwraps
+				}),
+				cl(MONK, {
+					i(230495),	-- Astral Gladiator's Cloak
+					i(230496),	-- Astral Gladiator's Drape
+					i(230497),	-- Astral Gladiator's Shawl
+					i(230491),	-- Astral Gladiator's Leather Belt
+					i(230481),	-- Astral Gladiator's Leather Boots
+					i(230487),	-- Astral Gladiator's Leather Breeches
+					i(230483),	-- Astral Gladiator's Leather Gloves
+					i(230484),	-- Astral Gladiator's Leather Grips
+					i(230485),	-- Astral Gladiator's Leather Helm
+					i(230480),	-- Astral Gladiator's Leather Jerkin
+					i(230488),	-- Astral Gladiator's Leather Legwraps
+					i(230486),	-- Astral Gladiator's Leather Mask
+					i(230490),	-- Astral Gladiator's Leather Shoulderpads
+					i(230489),	-- Astral Gladiator's Leather Spaulders
+					i(230492),	-- Astral Gladiator's Leather Strap
+					i(230482),	-- Astral Gladiator's Leather Treads
+					i(230479),	-- Astral Gladiator's Leather Vest
+					i(230494),	-- Astral Gladiator's Leather Wristguards
+					i(230493),	-- Astral Gladiator's Leather Wristwraps
+				}),
+				cl(PALADIN, {
+					i(230610),	-- Astral Gladiator's Cloak
+					i(230611),	-- Astral Gladiator's Drape
+					i(230612),	-- Astral Gladiator's Shawl
+					i(230594),	-- Astral Gladiator's Chestguard
+					i(230595),	-- Astral Gladiator's Chestplate
+					i(230598),	-- Astral Gladiator's Plate Gauntlets
+					i(230606),	-- Astral Gladiator's Plate Girdle
+					i(230607),	-- Astral Gladiator's Plate Greatbelt
+					i(230599),	-- Astral Gladiator's Plate Handguards
+					i(230600),	-- Astral Gladiator's Plate Helm
+					i(230601),	-- Astral Gladiator's Plate Helmet
+					i(230602),	-- Astral Gladiator's Plate Legguards
+					i(230604),	-- Astral Gladiator's Plate Shoulders
+					i(230605),	-- Astral Gladiator's Plate Pauldrons
+					i(230597),	-- Astral Gladiator's Plate Stompers
+					i(230603),	-- Astral Gladiator's Plate Tasses
+					i(230609),	-- Astral Gladiator's Plate Vambraces
+					i(230596),	-- Astral Gladiator's Plate Warboots
+					i(230608),	-- Astral Gladiator's Plate Wristguards
+				}),
+				cl(PRIEST, {
+					i(230418),	-- Astral Gladiator's Cloak
+					i(230419),	-- Astral Gladiator's Drape
+					i(230420),	-- Astral Gladiator's Shawl
+					i(230413),	-- Astral Gladiator's Silk Amice
+					i(230417),	-- Astral Gladiator's Silk Armbands
+					i(230415),	-- Astral Gladiator's Silk Belt
+					i(230414),	-- Astral Gladiator's Silk Cord
+					i(230406),	-- Astral Gladiator's Silk Gloves
+					i(230409),	-- Astral Gladiator's Silk Guise
+					i(230407),	-- Astral Gladiator's Silk Handwraps
+					i(230408),	-- Astral Gladiator's Silk Hood
+					i(230410),	-- Astral Gladiator's Silk Leggings
+					i(230412),	-- Astral Gladiator's Silk Mantle
+					i(230402),	-- Astral Gladiator's Silk Robes
+					i(230404),	-- Astral Gladiator's Silk Slippers
+					i(230405),	-- Astral Gladiator's Silk Treads
+					i(230411),	-- Astral Gladiator's Silk Trousers
+					i(230403),	-- Astral Gladiator's Silk Vestments
+					i(230416),	-- Astral Gladiator's Silk Wristwraps
+				}),
+				cl(ROGUE, {
+					i(230514),	-- Astral Gladiator's Cloak
+					i(230515),	-- Astral Gladiator's Drape
+					i(230516),	-- Astral Gladiator's Shawl
+					i(230510),	-- Astral Gladiator's Leather Belt
+					i(230500),	-- Astral Gladiator's Leather Boots
+					i(230506),	-- Astral Gladiator's Leather Breeches
+					i(230502),	-- Astral Gladiator's Leather Gloves
+					i(230503),	-- Astral Gladiator's Leather Grips
+					i(230504),	-- Astral Gladiator's Leather Helm
+					i(230499),	-- Astral Gladiator's Leather Jerkin
+					i(230507),	-- Astral Gladiator's Leather Legwraps
+					i(230505),	-- Astral Gladiator's Leather Mask
+					i(230509),	-- Astral Gladiator's Leather Shoulderpads
+					i(230508),	-- Astral Gladiator's Leather Spaulders
+					i(230511),	-- Astral Gladiator's Leather Strap
+					i(230501),	-- Astral Gladiator's Leather Treads
+					i(230498),	-- Astral Gladiator's Leather Vest
+					i(230513),	-- Astral Gladiator's Leather Wristguards
+					i(230512),	-- Astral Gladiator's Leather Wristwraps
+				}),
+				cl(SHAMAN, {
+					i(230572),	-- Astral Gladiator's Cloak
+					i(230573),	-- Astral Gladiator's Drape
+					i(230574),	-- Astral Gladiator's Shawl
+					i(230568),	-- Astral Gladiator's Chain Belt
+					i(230559),	-- Astral Gladiator's Chain Boots
+					i(230571),	-- Astral Gladiator's Chain Bracers
+					i(230565),	-- Astral Gladiator's Chain Breeches
+					i(230563),	-- Astral Gladiator's Chain Faceguard
+					i(230560),	-- Astral Gladiator's Chain Gauntlets
+					i(230569),	-- Astral Gladiator's Chain Girdle
+					i(230561),	-- Astral Gladiator's Chain Handguards
+					i(230562),	-- Astral Gladiator's Chain Helm
+					i(230564),	-- Astral Gladiator's Chain Leggings
+					i(230566),	-- Astral Gladiator's Chain Monnion
+					i(230558),	-- Astral Gladiator's Chain Sabatons
+					i(230567),	-- Astral Gladiator's Chain Shoulderguard
+					i(230557),	-- Astral Gladiator's Chain Tunic
+					i(230556),	-- Astral Gladiator's Chain Vest
+					i(230570),	-- Astral Gladiator's Chain Wristguards
+				}),
+				cl(WARLOCK, {
+					i(230438),	-- Astral Gladiator's Cloak
+					i(230439),	-- Astral Gladiator's Drape
+					i(230440),	-- Astral Gladiator's Shawl
+					i(230433),	-- Astral Gladiator's Silk Amice
+					i(230437),	-- Astral Gladiator's Silk Armbands
+					i(230435),	-- Astral Gladiator's Silk Belt
+					i(230434),	-- Astral Gladiator's Silk Cord
+					i(230426),	-- Astral Gladiator's Silk Gloves
+					i(230429),	-- Astral Gladiator's Silk Guise
+					i(230427),	-- Astral Gladiator's Silk Handwraps
+					i(230428),	-- Astral Gladiator's Silk Hood
+					i(230430),	-- Astral Gladiator's Silk Leggings
+					i(230432),	-- Astral Gladiator's Silk Mantle
+					i(230421),	-- Astral Gladiator's Silk Raiment
+					i(230423),	-- Astral Gladiator's Silk Slippers
+					i(230424),	-- Astral Gladiator's Silk Treads
+					i(230431),	-- Astral Gladiator's Silk Trousers
+					i(230422),	-- Astral Gladiator's Silk Vestments
+					i(230436),	-- Astral Gladiator's Silk Wristwraps
+				}),
+				cl(WARRIOR, {
+					i(230629),	-- Astral Gladiator's Cloak
+					i(230630),	-- Astral Gladiator's Drape
+					i(230631),	-- Astral Gladiator's Shawl
+					i(230613),	-- Astral Gladiator's Chestguard
+					i(230614),	-- Astral Gladiator's Chestplate
+					i(230617),	-- Astral Gladiator's Plate Gauntlets
+					i(230625),	-- Astral Gladiator's Plate Girdle
+					i(230626),	-- Astral Gladiator's Plate Greatbelt
+					i(230618),	-- Astral Gladiator's Plate Handguards
+					i(230619),	-- Astral Gladiator's Plate Helm
+					i(230620),	-- Astral Gladiator's Plate Helmet
+					i(230621),	-- Astral Gladiator's Plate Legguards
+					i(230624),	-- Astral Gladiator's Plate Pauldrons
+					i(230623),	-- Astral Gladiator's Plate Shoulders
+					i(230616),	-- Astral Gladiator's Plate Stompers
+					i(230628),	-- Astral Gladiator's Plate Vambraces
+					i(230615),	-- Astral Gladiator's Plate Warboots
+					i(230622),	-- Astral Gladiator's Plate Wargreaves
+					i(230627),	-- Astral Gladiator's Plate Wristguards
+				}),
+			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["groups"] = {

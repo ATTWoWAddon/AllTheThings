@@ -1213,6 +1213,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158387),	-- Rastari Footguards
 					i(158389),	-- Torcalin Sabatons
 					i(158388),	-- Zanchuli Sandals
+					--
+					a(i(158233)),	-- Freebooter Treads
+					a(i(158231)),	-- Navigator's Slippers
+					a(i(158232)),	-- Outrigger Footguards
+					a(i(158230)),	-- Sea Raider's Warboots
 				},
 			}),
 			q(47201, {	-- Rokhan

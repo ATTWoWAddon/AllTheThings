@@ -181,7 +181,6 @@ root(ROOTS.Zones, {
 					exploration(3683),	-- Stonebreaker Hold
 					visit_exploration(3975,{coord={66.1,76.4,TEROKKAR_FOREST}}),	-- Terokk's Rest
 					exploration(3696),	-- The Barrier Hills
-					exploration(3760),	-- The Barrier Hills (Nagrand)
 					visit_exploration(3697,{coord={49.2,53.1,TEROKKAR_FOREST}}),	-- The Bone Wastes
 					visit_exploration(3956,{coord={41.5,58.1,TEROKKAR_FOREST}}),	-- The Shadow Stair
 					visit_exploration(3890,{coord={47.7,55.2,TEROKKAR_FOREST}}),	-- Tomb of Lights

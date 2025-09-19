@@ -72,6 +72,9 @@ root(ROOTS.Zones, {
 			i(134334, {	-- Disgraced Court Cloak
 				["bonusID"] = 1812,
 			}),
+			filter(MISC, {
+				i(147869),	-- Fel Meteorite
+			}),
 			filter(REAGENTS, {
 				i(124124),	-- Blood of Sargeras
 			}),

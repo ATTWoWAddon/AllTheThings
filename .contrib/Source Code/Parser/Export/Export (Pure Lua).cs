@@ -26,7 +26,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The undetermined object data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportPureLua(StringBuilder builder, object data, string indent = "")
+        private static void ExportPureLua(Exporter builder, object data, string indent = "")
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) ExportBooleanValue(builder, b);
@@ -64,7 +64,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="data">The data dictionary.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportPureLua<KEY, VALUE>(StringBuilder builder, IDictionary<KEY, VALUE> data, string indent = "")
+        private static void ExportPureLua<KEY, VALUE>(Exporter builder, IDictionary<KEY, VALUE> data, string indent = "")
         {
             // If the dictionary doesn't have any content, then return immediately.
             if (data.Count == 0)
@@ -115,7 +115,7 @@ namespace ATT
         /// <param name="builder"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
-        private static void ExportPureLuaKeyValue(StringBuilder builder, object key, object value, string subindent = "")
+        private static void ExportPureLuaKeyValue(Exporter builder, object key, object value, string subindent = "")
         {
             // Append the Sub-Indent and the Field Name
             builder.Append(subindent).Append("[");
@@ -140,7 +140,7 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportPureLua<VALUE>(StringBuilder builder, IEnumerable<VALUE> list, string indent = "")
+        private static void ExportPureLua<VALUE>(Exporter builder, IEnumerable<VALUE> list, string indent = "")
         {
             // If the list doesn't have any content, then return immediately.
             if (!list.Any())
@@ -193,9 +193,9 @@ namespace ATT
         /// </summary>
         /// <param name="data">The undetermined object data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportPureLua(object data)
+        public static Exporter ExportPureLua(object data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportPureLua(builder, data);
             return builder;
         }
@@ -208,9 +208,9 @@ namespace ATT
         /// <typeparam name="VALUE">The value type of the dictionary.</typeparam>
         /// <param name="data">The data dictionary.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportPureLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
+        public static Exporter ExportPureLua<KEY, VALUE>(IDictionary<KEY, VALUE> data)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportPureLua(builder, data);
             return builder;
         }
@@ -221,14 +221,14 @@ namespace ATT
         /// </summary>
         /// <param name="list">The list of data.</param>
         /// <returns>A built string containing the information.</returns>
-        public static StringBuilder ExportPureLua<T>(IList<T> list)
+        public static Exporter ExportPureLua<T>(IList<T> list)
         {
-            var builder = new StringBuilder();
+            var builder = new Exporter();
             ExportPureLua(builder, list);
             return builder;
         }
 
-        public static StringBuilder ExportPureStringValue(StringBuilder builder, string value)
+        public static Exporter ExportPureStringValue(Exporter builder, string value)
         {
             // even in 'pure Lua' situations we want to be able to output a verbatim string
             if (value.StartsWith("~"))

@@ -17,7 +17,7 @@ local ZIRIAK = {
 	["crs"] = { 223443 },
 	["coord"] = { 61.4, 36.8, NERUBAR_LOWER },
 };
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	n(ACHIEVEMENTS, {
 		ach(41555, {	-- All That Khaz
 			["timeline"] = { ADDED_11_1_0 },
@@ -364,4 +364,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}},
 		}),
 	}),
-})));
+}));

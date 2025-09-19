@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Иконки портретов",
 		-- TODO: ko = "",
 		cn = "图标头像",
 		tw = "圖標頭像",

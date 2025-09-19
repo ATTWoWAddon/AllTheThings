@@ -696,7 +696,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(MISC, {
 			sp(167950, {	-- Research: Warbinder's Ink
-				-- TODO: use this ItemID as 'provider' on Glyph recipes which can ONLY be learned from using it
+				-- Wouter TODO: use this ItemID as 'provider' on Glyph recipes which can ONLY be learned from using it
 				i(113992),	-- Scribe's Research Notes
 				-- learned:
 				-- glyph of the geist

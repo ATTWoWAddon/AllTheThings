@@ -45,13 +45,23 @@ local api = {}
 app.Modules.Fill = api
 
 -- OnLoad locals
-local CreateObject, ResolveSymbolicLink, PriorityNestObjects, NPCExpandHeaders, ForceFillDB
+local CreateObject, ResolveSymbolicLink, PriorityNestObjects, NPCExpandHeaders, ForceFillDB, IsQuestAvailable, DirectGroupUpdate
 app.AddEventHandler("OnLoad", function()
 	CreateObject = app.__CreateObject
 	ResolveSymbolicLink = app.ResolveSymbolicLink
 	PriorityNestObjects = app.PriorityNestObjects
 	NPCExpandHeaders = app.HeaderData.FILLNPCS or app.EmptyTable
 	ForceFillDB = app.ForceFillDB
+	IsQuestAvailable = app.IsQuestAvailable
+	if not IsQuestAvailable then
+		IsQuestAvailable = app.EmptyFunction
+		app.print("Fill Module requires: IsQuestAvailable!")
+	end
+	DirectGroupUpdate = app.DirectGroupUpdate
+	if not DirectGroupUpdate then
+		DirectGroupUpdate = app.EmptyFunction
+		app.print("Fill Module requires: DirectGroupUpdate!")
+	end
 end)
 
 -- TODO: TBD helper functions move to modules which need them for their Fillers
@@ -372,7 +382,7 @@ app.AddEventHandler("OnStartup", function()
 	-- add a refresh fillers event
 	app.AddEventHandler("Fill.RefreshFillers", RefreshActiveFillFunctions, true)
 	-- if settings changes are detected during recalculate, then re-sync those settings to the Fill priority
-	app.AddEventHandler("OnRecalculate_NewSettings", SyncFillPriorityFromSettings)
+	app.AddEventHandler("OnRecalculate_NewSettings", SyncFillPriorityFromSettings, true)
 	-- new fillers added after startup (maybe other addons idk) need to sync from settings
 	app.AddEventHandler("Fill.OnAddFiller", SyncFillPriorityFromSettings)
 	-- add event sequences for filler changes later (this ensures that the refresh event is performed via callback)
@@ -507,8 +517,14 @@ api.DeactivateFiller = function(name, scope)
 	end
 end
 
+-- Allows retrieval of a named, existing Filler for situations where a single Filler might be needed specifically
+api.GetFiller = function(name)
+	if not name then return end
+
+	return FillFunctions[name]
+end
+
 local function FillGroupDirect(group, FillData, doDGU)
-	local ignoreSkip = group.sym or group.headerID or group.classID
 	local groups, temp = {}, {}
 	-- only use Fillers from within the respective FillData.Fillers
 	local fillers = FillData.Fillers
@@ -518,27 +534,28 @@ local function FillGroupDirect(group, FillData, doDGU)
 	end
 	ArrayAppend(groups, unpack(temp))
 
+	if #groups == 0 then return end
+
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
 
-	if groups and #groups > 0 then
-		-- if FillData.Debug then
-		-- 	app.PrintDebug("FG-MergeResults",app:SearchLink(group),#groups,"=>",#group.g)
-		-- end
-		AssignChildren(group);
-		if doDGU then app.DirectGroupUpdate(group); end
-		-- check if this group is actually force-filled
-		local forceFillType = not ignoreSkip and ForceFillDB[group.__type]
-		if forceFillType and forceFillType[group.keyval] then
-			ignoreSkip = true
-		end
-		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
-		if not ignoreSkip then
-			local groupHash = group.hash;
-			if groupHash then
-				-- app.PrintDebug("FGA-Included",groupHash,#groups)
-				FillData.Included[groupHash] = true;
-			end
+	-- if FillData.Debug then
+	-- 	app.PrintDebug("FG-MergeResults",app:SearchLink(group),#groups,"=>",#group.g)
+	-- end
+	AssignChildren(group);
+	if doDGU then DirectGroupUpdate(group) end
+	-- check if this group is actually force-filled
+	local ignoreSkip = group.sym or group.headerID or group.classID
+	local forceFillType = not ignoreSkip and ForceFillDB[group.__type]
+	if forceFillType and forceFillType[group.keyval] then
+		ignoreSkip = true
+	end
+	-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
+	if not ignoreSkip then
+		local groupHash = group.hash;
+		if groupHash then
+			-- app.PrintDebug("FGA-Included",groupHash,#groups)
+			FillData.Included[groupHash] = true;
 		end
 	end
 end
@@ -556,20 +573,25 @@ local function SkipFillingGroup(group, FillData)
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Debug mode
 	if not app.MODE_DEBUG then
-		-- only ignore filling non-repeatable saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
+		-- only ignore filling non-repeatable saved 'quest' groups
 		if group.questID then
-			if not (group.itemID or group.repeatable) and group.saved then
-				return true
-			end
-			-- don't fill under locked quests
-			if group.locked then
+			--  (unless it's an Item/repeatable, which we ignore the ignore... :D)
+			if group.itemID or group.repeatable then return end
+
+			-- don't fill under unavailable quests
+			if not IsQuestAvailable(group) then
+				-- app.PrintDebug("Unavailable Quest not Filled",app:SearchLink(group))
 				return true
 			end
 		end
+
 		-- root fills of a thing from a saved parent should still show their contains, so don't use .parent
 		local parent = rawget(group, "parent");
 		-- direct parent is a non-repeatable saved quest, then do not fill with stuff
-		if parent and parent.questID and not parent.repeatable and (parent.saved or parent.locked) then return true; end
+		if parent and parent.questID and not parent.itemID and not parent.repeatable and not IsQuestAvailable(parent) then
+			-- app.PrintDebug("Unavailable Parent Quest not Filled",app:SearchLink(parent))
+			return true
+		end
 	end
 end
 -- Fills the group and returns an array of the next layer of groups to fill
@@ -639,14 +661,19 @@ local function HandleOnWindowFillComplete(window)
 	app.HandleEvent("OnWindowFillComplete", window)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
-local FillGroups = function(group)
+local FillGroups = function(group, options)
 	group.__FillGroups = true
 	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
 	local skipFull = app.GetRelativeRawWithField(group, "skipFull");
 	if skipFull then return end
+
 	-- Check if this group is inside a Window or not
 	local groupWindow = app.GetRelativeRawWithField(group, "window");
-	local fillScope = groupWindow and (groupWindow.Suffix == "CurrentInstance" and "LIST" or "POPOUT") or "TOOLTIP"
+	local fillers = options and options.Fillers
+	if not fillers then
+		local fillScope = groupWindow and (groupWindow.Suffix == "CurrentInstance" and "LIST" or "POPOUT") or "TOOLTIP"
+		fillers = ActiveFillFunctions[fillScope]
+	end
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
@@ -657,7 +684,7 @@ local FillGroups = function(group)
 		-- TODO: Fillers can provide context requirements for themselves to be utilized for a given
 		-- fill operation.
 		-- i.e. provided the Root/Window/Instance/Combat -- the Filler may return that it should not be included
-		Fillers = ActiveFillFunctions[fillScope],
+		Fillers = fillers,
 		SkipLevel = app.GetSkipLevel(),
 		Root = group,
 		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0],
@@ -684,8 +711,6 @@ local FillGroups = function(group)
 		end
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
-		-- Recursive Fill
-		-- Runner.Run(FillGroupsRecursiveAsync, group, FillData);
 
 		-- Layered Fill
 		Runner.Run(FillGroupsLayeredAsync, group, FillData)
@@ -693,21 +718,20 @@ local FillGroups = function(group)
 
 	else
 		-- app.PrintDebug("FG",group.hash)
-		-- this performs depth-first filling which leads to usually one group having tons of nesting
-		-- and other top-level groups being skipped as they had some other means of being
-		-- filled in a deeper group
-		-- FillGroupsRecursive(group, FillData);
-
 		-- this logic performs fills across an entire logical layer of data via a breadth-first approach
 		-- which should ideally have less nesting in total
 		local FillLayer = {group}
-		local NextLayer = {}
+		local NextLayer
 		while #FillLayer > 0 do
-			for i=1,#FillLayer do
-				app.ArrayAppend(NextLayer, FillGroupsLayered(FillLayer[i], FillData))
-			end
-			FillLayer = NextLayer
 			NextLayer = {}
+			-- for i=1,#FillLayer do
+			-- 	app.ArrayAppend(NextLayer, FillGroupsLayered(FillLayer[i], FillData))
+			-- end
+			for i=1,#FillLayer do
+				NextLayer[#NextLayer + 1] = FillGroupsLayered(FillLayer[i], FillData)
+			end
+			wipearray(FillLayer)
+			FillLayer = app.ArrayAppend(FillLayer, unpack(NextLayer))
 		end
 
 		AssignGroupFilledTag(group)

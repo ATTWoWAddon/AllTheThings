@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 67.3, 43.6, BASTION },
 							{ 67.4, 42.8, BASTION },
 						},
-						["groups"] = { i(180569), },	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
+						["groups"] = { i(180569) },	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
 					}),
 					i(183613),	-- Glinting Daybreak Dagger
 					i(183612),	-- Loyal Champion's Hammer

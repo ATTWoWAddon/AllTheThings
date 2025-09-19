@@ -8,7 +8,10 @@ root(ROOTS.Zones, {
 			n(QUESTS, {
 				q(40002, {	-- A Familiar Fate
 					["sourceQuests"] = { 40001 },	-- Knocking on Valor's Door
-					["provider"] = { "n", 91743 },	-- Circle of Binding
+					["qgs"] = {
+						91743,	-- Circle of Binding
+						97979,	-- Vethir
+					},
 					["coord"] = { 65.8, 59.4, STORMHEIM },
 				}),
 				q(39385, {	-- A Gift for Greymane
@@ -103,6 +106,9 @@ root(ROOTS.Zones, {
 				q(42639, {	-- A Stone of Blood
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 					["coord"] = { 74.8, 55.5, STORMHEIM },
+					["groups"] = {
+						i(138150),	-- Broketooth's Ruby Amulet (QI!)
+					},
 				}),
 				q(44771, {	-- A Threat Rises
 					["sourceQuest"] = 44720,	-- A Call to Action
@@ -120,11 +126,13 @@ root(ROOTS.Zones, {
 				}),
 				q(39591, {	-- A Trial of Valor
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
-					["coord"] = { 46.6, 44.4, STORMHEIM },
+					["provider"] = { "o", 243836 },	-- Yotnar's Head
+					["coord"] = { 46.7, 44.4, STORMHEIM },
 				}),
 				q(39592, {	-- A Trial of Will
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
-					["coord"] = { 46.6, 44.4, STORMHEIM },
+					["provider"] = { "o", 243836 },	-- Yotnar's Head
+					["coord"] = { 46.7, 44.4, STORMHEIM },
 				}),
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
@@ -145,7 +153,11 @@ root(ROOTS.Zones, {
 				q(39590, {	-- Ahead of the Game
 					["sourceQuests"] = { 38331 },	-- Havi's Test
 					["provider"] = { "n", 96254 },	-- Havi
-					["coord"] = { 41.8, 42.9, STORMHEIM },
+					["coord"] = { 43.2, 49.2, STORMHEIM },
+					["groups"] = {
+						i(128508),	-- Gutspill's Head (QI!)
+						i(128509),	-- Rumblehoof's Head (QI!)
+					},
 				}),
 				q(38342, {	-- Another Way (Alliance)
 					["sourceQuests"] = { 38410 },	-- Impalement Insurance (A)
@@ -165,6 +177,8 @@ root(ROOTS.Zones, {
 					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(122295),	-- Transponder Battery (QI!)
+						--
 						i(134554),	-- Runespeaker's Gloves
 						i(134555),	-- Runesworn Grips
 						i(134556),	-- Stormborn Gloves
@@ -215,8 +229,7 @@ root(ROOTS.Zones, {
 						96236,	-- Mightstone Savage
 						108283,	-- Mightstone Savage
 					},
-					-- Wowhead information on this quest is inaccurate.
-					-- No prereqs required; quest item was looted from the first mob I killed.
+					["groups"] = { i(128511) },	-- Challenger's Tribute (QI!)
 				}),
 				q(38052, {	-- Boarded!
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
@@ -281,6 +294,9 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 94318 },	-- Genn Greymane
 					["coord"] = { 71.5, 59.9, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(127295),	-- Blazing Torch (QI!)
+					},
 				}),
 				q(54147, {	-- Confront the Val'kyr
 					["sourceQuests"] = { 53781 },	-- Eyir
@@ -297,6 +313,7 @@ root(ROOTS.Zones, {
 				q(39472, {	-- Cut Out the Heart
 					["icon"] = 134269,
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
+					["provider"] = { "o", 243700 },	-- Forsaken Battle Plans
 					["coord"] = { 72.3, 61.0, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -382,7 +399,7 @@ root(ROOTS.Zones, {
 						38459,	-- The Ancient Trials (Horde)
 					},
 					["provider"] = { "n", 96254 },	-- Havi
-					["coord"] = { 41.8, 42.9, STORMHEIM },
+					["coord"] = { 43.2, 49.2, STORMHEIM },
 				}),
 				q(38414, {	-- Heart of a Dragon
 					["sourceQuests"] = {
@@ -486,6 +503,7 @@ root(ROOTS.Zones, {
 				}),
 				q(42445, {	-- Nithogg's Tribute
 					["sourceQuests"] = { 42444 },	-- Plight of the Blackfeather
+					["provider"] = { "o", 250536 },	-- Intact Greatstag Antler
 					["coord"] = { 49.8, 32.5, STORMHEIM },
 				}),
 				q(38318, {	-- No Wings Required (Alliance)
@@ -508,7 +526,7 @@ root(ROOTS.Zones, {
 				q(38059, {	-- Pins and Needles
 					["sourceQuests"] = { 38057 },	-- The Lost Legion
 					["provider"] = { "n", 92414 },	-- Knight-Captain Rhodes
-					["coord"] = { 77.6, 49.5, 636 },	-- Stormscale Cavern
+					["coord"] = { 77.1, 48.3, 636 },	-- Stormscale Cavern
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42444, {	-- Plight of the Blackfeather
@@ -537,6 +555,7 @@ root(ROOTS.Zones, {
 						39786,	-- A Stone Cold Gamble
 					},
 					["provider"] = { "n", 107674 },	-- Snaggle Sixtrigger
+					["coord"] = { 51.4, 57.3, STORMHEIM },
 					["groups"] = {
 						title(343),	-- <Name> the Gullible
 					},
@@ -561,6 +580,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(39984, {	-- Remnants of the Past
+					["provider"] = { "o", 244708 },	-- Watcher's Journal
 					["coord"] = { 62.9, 48.4, STORMHEIM },
 				}),
 				q(39787, {	-- Rigging the Wager
@@ -578,6 +598,14 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						o(240286, {	-- Crystal Oscillator
+							["coord"] = { 33.6, 57.3, STORMHEIM },
+							["groups"] = {
+								i(123887),	-- Crystal Oscillator (QI!)
+							},
+						}),
+					},
 				}),
 				q(40044, {	-- Shadows in the Mists
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
@@ -647,6 +675,7 @@ root(ROOTS.Zones, {
 				}),
 				q(39405, {	-- Stories of Battle
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
+					["provider"] = { "o", 251571 },	-- Ashilvara, Verse 1
 					["coord"] = { 58.5, 64.2, STORMHEIM },
 				}),
 				q(44700, {	-- Stormheim (A)
@@ -688,6 +717,11 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 90783 },	-- Mishka
 					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						o(241275, {	-- Skyfire Medical Supplies
+							i(123876),	-- Skyfire First Aid Kit (QI!)
+						}),
+					},
 				}),
 				q(38210, {	-- The Ancient Trials (Alliance)
 					["sourceQuests"] = { 38060 },	-- Signal Boost
@@ -704,6 +738,7 @@ root(ROOTS.Zones, {
 				q(39597, {	-- The Blessing of the Watchers
 					["sourceQuests"] = { 39594 },	-- A Trial of Might
 					["provider"] = { "n", 96258 },	-- Yotnar
+					["coord"] = { 46.3, 44.8, STORMHEIM },
 					["groups"] = {
 						i(200666, {	-- Storm-Imbued Pole
 							["classes"] = { EVOKER },
@@ -806,6 +841,7 @@ root(ROOTS.Zones, {
 						38811,	-- Judgment Day
 						39791,	-- Lay Them to Rest
 					},
+					["provider"] = { "o", 241840 },	-- Rune-Carved Tablet
 					["coord"] = { 69.8, 45.6, STORMHEIM },
 				}),
 				q(39788, {	-- The Runewood's Revenge
@@ -815,8 +851,34 @@ root(ROOTS.Zones, {
 				}),
 				q(39593, {	-- The Shattered Watcher
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
-					["coord"] = { 46.6, 44.4, STORMHEIM },
+					["provider"] = { "o", 243836 },	-- Yotnar's Head
+					["coord"] = { 46.7, 44.4, STORMHEIM },
 					["groups"] = {
+						o(243819, {	-- Yotnar's Left Arm
+							["coord"] = { 48.1, 47.5, STORMHEIM },
+							["groups"] = {
+								i(128493),	-- Yotnar's Left Arm (QI!)
+							},
+						}),
+						o(243823, {	-- Yotnar's Left Foot
+							["coord"] = { 48.8, 46.1, STORMHEIM },
+							["groups"] = {
+								i(128497),	-- Yotnar's Left Foot (QI!)
+							},
+						}),
+						o(243820, {	-- Yotnar's Right Arm
+							["coord"] = { 49.2, 45.6, STORMHEIM },
+							["groups"] = {
+								i(128495),	-- Yotnar's Right Arm (QI!)
+							},
+						}),
+						o(243822, {	-- Yotnar's Right Foot
+							["coord"] = { 49.2, 45.6, STORMHEIM },
+							["groups"] = {
+								i(128496),	-- Yotnar's Right Foot (QI!)
+							},
+						}),
+						--
 						i(129316),	-- Watcher's Pendant of Courage
 						i(121560),	-- Signet of the Watcher's Guile
 					},
@@ -827,7 +889,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 47.9, 54.6, STORMHEIM },
 				}),
 				q(42640, {	-- The Value of Knowledge
+					["provider"] = { "o", 250990 },	-- Crate of Ancient Relics
 					["coord"] = { 75.5, 50.8, STORMHEIM },
+					["groups"] = { i(138151) },	-- Crate of Ancient Relics (QI!)
 				}),
 				q(38360, {	-- The Windrunner's Fate
 					["sourceQuests"] = { 38332 },	-- The Ranger Lord

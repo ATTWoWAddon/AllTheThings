@@ -126,9 +126,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
 					["groups"] = {
-						i(239440, {	-- Dastardly Prize Purse
-							i(238989),	-- Steam-Hinge Chain of Valor (TODO: ph since lack of data)
-						}),
+						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 			}),
@@ -161,6 +159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						27794,	-- Recoiless Rocket Ripper X-54 (Steamvault)
 						238930,	-- Scintillating Coral Band (Steamvault)
 						63467,	-- Shadow of the Past (Deadmines)
+						238989,	-- Steam-Hinge Chain of Valor (Steamvault)
 						37105,	-- Treads of Altered History (Culling of Stratholme)
 						238938,	-- Vest of the Curious Visitor (Deadmines)
 						27450,	-- Wild Stalker Boots (Hellfire Ramparts)
@@ -168,7 +167,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["groups"] = {
 						--Unconfirmed to drop from dungeon bosses, move to symlink once proven
 						i(239008),	-- Moonchild Leggings (Blood Furnace)
-						i(238989),	-- Steam-Hinge Chain of Valor (Steamvault)
 						--also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
 						--i(24023),	-- Bracers of Finesse
 						--i(63454),	-- Double Dealing Bracers

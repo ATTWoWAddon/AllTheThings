@@ -90,7 +90,6 @@ i(848),	-- nmail Pants \\ Chainmail Pants
 i(849),	-- nmail Boots \\ Chainmail Boots
 i(850),	-- nmail Gloves \\ Chainmail Gloves
 i(855),	-- Deprecated White Leather Satchel
-i(857),	-- e Red Sack \\ Large Red Sack
 i(877),	-- Deprecated Old Skull
 i(878),	-- -Sized Spinneret \\ Fist-Sized Spinneret \\ Fist-sized Spinneret
 i(883),	-- Deprecated Fire Eyed Skull
@@ -356,7 +355,6 @@ i(1663),	-- Deprecated Stranglethorn Mine Map
 i(1672),	-- Deprecated Ogre Head
 i(1676),	-- Codex of Sleep II
 i(1681),	-- Grimoire of Cripple
-i(1685),	-- l-Hide Bag \\ Troll-Hide Bag \\ Troll-hide Bag
 i(1686),	-- tly Whisker \\ Bristly Whisker
 i(1687),	-- actable Claw \\ Retractable Claw
 i(1688),	-- Soft Tail \\ Long Soft Tail
@@ -502,7 +500,6 @@ i(2586),	-- master's Robe \\ Gamemaster's Robe
 i(2588),	-- Deprecated Red Leather Mask
 i(2590),	-- st Spider Webbing \\ Forest Spider Webbing
 i(2591),	-- y Trogg Cloth \\ Dirty Trogg Cloth
-i(2595),	-- of Badlands Bourbon \\ Jug of Badlands Bourbon \\ Jug of Bourbon
 i(2599),	-- Deprecated Pattern: Forest Silk Gloves
 i(2600),	-- Deprecated Pattern: Trogg Vest
 i(2602),	-- Deprecated Pattern: Feathered Robe
@@ -1242,7 +1239,6 @@ i(4628),	-- ers of Rock Binding \\ Bracers of Rock Binding
 i(4629),	-- ly Crate \\ Supply Crate
 i(4630),	-- p Metal \\ Scrap Metal
 i(4631),	-- et of Ryun'eh \\ Tablet of Ryun'eh
-i(4633),	-- y Bronze Lockbox \\ Heavy Bronze Lockbox
 i(4635),	-- ertoe's Amulet \\ Hammertoe's Amulet
 i(4640),	-- of the Earth \\ Sign of the Earth
 i(4641),	-- of Dagun \\ Hand of Dagun
@@ -1652,9 +1648,6 @@ i(5566),	-- en Antler \\ Broken Antler
 i(5567),	-- er Hook \\ Silver Hook
 i(5569),	-- eed \\ Seaweed
 i(5570),	-- moss Egg \\ Deepmoss Egg
-i(5574),	-- e Leather Bag \\ White Leather Bag
-i(5575),	-- e Green Sack \\ Large Green Sack
-i(5576),	-- e Brown Sack \\ Large Brown Sack
 i(5582),	-- etalon Sap \\ Stonetalon Sap
 i(5583),	-- Dragon Scale \\ Fey Dragon Scale
 i(5584),	-- ight Whisker \\ Twilight Whisker
@@ -3577,7 +3570,6 @@ i(16869),	-- Skull of Scryer \\ The Skull of Scryer
 i(16870),	-- Skull of Somnus \\ The Skull of Somnus
 i(16871),	-- Skull of Chronalis \\ The Skull of Chronalis
 i(16872),	-- Skull of Axtroz \\ The Skull of Axtroz
-i(16883),	-- Junkbox \\ Worn Junkbox
 i(16888),	-- Drakefire Amulet \\ Dull Drakefire Amulet
 i(16892),	-- er Soulstone \\ Lesser Soulstone
 i(16893),	-- stone \\ Soulstone

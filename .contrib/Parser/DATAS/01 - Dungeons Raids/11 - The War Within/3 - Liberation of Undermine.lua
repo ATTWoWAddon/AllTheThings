@@ -417,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
 						q(89018, {	-- Loyal Customer: Silver
-							["groups"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
+							i(234389),	-- Gallagio Loyalty Rewards Card: Silver
 						}),
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
@@ -431,7 +431,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						q(89020),	-- Loyal Customer: Platinum
 					}, {	-- RENOWN 11 --
 						q(89028, {	-- Chip Service
-							["groups"] = { i(237578) },	-- Counterfeit Dealer's Chip
+							i(237578),	-- Counterfeit Dealer's Chip
 						}),
 						q(89025),	-- Time is Money!!
 					}, {	-- RENOWN 12 --
@@ -443,7 +443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
 						q(89029, {	-- Chip Service
-							["groups"] = { i(237578) },	-- Counterfeit Dealer's Chip
+							i(237578),	-- Counterfeit Dealer's Chip
 						}),
 						q(89022),	-- Loyal Customer: Diamond
 					}, {	-- RENOWN 16 --

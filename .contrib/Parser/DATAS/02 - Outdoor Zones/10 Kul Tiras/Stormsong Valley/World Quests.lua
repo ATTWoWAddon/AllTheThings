@@ -128,12 +128,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["filterID"] = BATTLE_PETS,
 			})),
 			q(53106, {	-- Censership
-				["races"] = ALLIANCE_ONLY,
-				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
+				i(163212),	-- Cleansing Thurible (QI!)
 			}),
 			q(53343, {	-- Censership
-				["races"] = HORDE_ONLY,
-				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
+				i(163212),	-- Cleansing Thurible (QI!)
 			}),
 			q(52882, {	-- Controlled Burn
 				["races"] = HORDE_ONLY,
@@ -477,7 +475,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52432, {	-- Squall
 			}),
 			q(53040, {	-- Squall Squelching
-				["races"] = ALLIANCE_ONLY,
+				-- ["races"] = ALLIANCE_ONLY, -- popped on Horde 2025-09-16
 				["groups"] = {
 					i(163033),	-- Surging Mote (QI!)
 				},

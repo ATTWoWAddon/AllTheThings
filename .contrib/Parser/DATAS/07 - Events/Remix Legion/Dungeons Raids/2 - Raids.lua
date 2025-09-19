@@ -1,38 +1,56 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(RAIDS, {
 		n(ACHIEVEMENTS, {
-			ach(20006, {	-- Pandaria Raids
+			ach(42321, {	-- Legion Remix Raids
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
-					19959,	-- Siege of Orgrimmar
-					19956,	-- Throne of Thunder
-					19953,	-- Terrace of Endless Spring
-					19950,	-- Heart of Fear
-					19947,	-- Mogu'shan Vaults
+					60875,	-- Antorus, the Burning Throne
+					60859,	-- The Emerald Nightmare
+					60865,	-- The Nighthold
+					60870,	-- Tomb of Sargeras
+					60860,	-- Trial of Valor
 				}},
-				["groups"] = {
-					i(210523),	-- Timerunner's Amulet
-				},
 			}),
-			ach(20007, {	-- Heroic: Pandaria Raids
+			ach(61075, {	-- Heroic Legion Remix Raider
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
-					19960,	-- Heroic: Siege of Orgrimmar
-					19957,	-- Heroic: Throne of Thunder
-					19954,	-- Heroic: Terrace of Endless Spring
-					19951,	-- Heroic: Heart of Fear
-					19948,	-- Heroic: Mogu'shan Vaults
+					42664,	-- Heroic: Antorus the Burning Throne
+					42531,	-- Heroic: Emerald Nightmare
+					42543,	-- Heroic: The Nighthold
+					42661,	-- Heroic: Tomb of Sargeras
+					42639,	-- Heroic: Trial of Valor
+				}},
+			}),
+			ach(61079, {	-- Heroic Legion Remix Raids
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42664,	-- Heroic: Antorus the Burning Throne
+					42531,	-- Heroic: Emerald Nightmare
+					42543,	-- Heroic: The Nighthold
+					42661,	-- Heroic: Tomb of Sargeras
+					42639,	-- Heroic: Trial of Valor
 				}},
 				["groups"] = {
-					title(553),	-- <Name>, Claw of Eternus
+					title(659),	-- %s of the Infinite Chaos (TITLE!)
 				},
 			}),
+			ach(61078, {	-- Mythic Legion Remix Raids
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					42583,	-- Mythic: Antorus the Burning Throne
+					42651,	-- Mythic: Emerald Nightmare
+					42544,	-- Mythic: The Nighthold
+					42576,	-- Mythic: Tomb of Sargeras
+					42636,	-- Mythic: Trial of Valor
+				}},
+				["groups"] = { iensemble(257106) },	-- Ensemble: Sargerei Commander's Lightbound Regalia
+			}),
 		}),
-		n(REWARDS, {
-			i(220763),	-- Bonus Experience
-		}),
+		--n(REWARDS, {
+		--	i(220763),	-- Bonus Experience
+		--}),
 	}),
-}))));--]]
+})));

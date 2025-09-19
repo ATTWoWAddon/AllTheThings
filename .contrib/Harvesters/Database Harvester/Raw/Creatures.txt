@@ -2035,6 +2035,9 @@
 247730@@@Xuen
 247731@@@Niuzao
 247732@@@Yu'lon
+5.5.0.62959
+185317@@@Incubus
+253198@@@Archincubus
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -21931,6 +21934,88 @@
 229449@@@Faerin Lothar
 229451@@@Nightfall Darkcaster
 229453@@@Aelric Leid
+11.0.0.55939
+185425@@@Survey Bot
+214277@@@High Exarch Turalyon
+216552@@@Horde Wolfaxe
+216601@@@Stormwind Knight
+216613@@@Corpse Marker
+216635@@@Dwarven Sharpshooter
+216636@@@Druid of the Claw
+216637@@@Gilnean Scrapper
+216639@@@Master Tidesage
+216832@@@Lightforged Vindicator
+216835@@@Rift Voidsinger
+216840@@@Suramar Chronomancer
+217229@@@Zandalari Prelate
+217231@@@Arachno-Pummeler Mk. I
+217234@@@Tauren Plainswalker
+217236@@@Forsaken Warlock
+217347@@@Veteran Blood Knight
+217486@@@Auric Sunchaser
+217492@@@Shining Warframe
+217493@@@Exodar Vigilant
+217529@@@Stormwind Knight
+217552@@@Machine Speaker Mech
+217554@@@Hallowfall Lightblade
+217569@@@Danath Trollbane
+218017@@@G.E.A.R Bomber
+219879@@@Veteran Blood Knight
+219919@@@Night Elf Starcaller
+219942@@@Kirin Tor Defender
+220254@@@Rescued Citizen
+220571@@@Hallowfall Lightblade
+220832@@@Imperial Artillerist
+222848@@@Warborn Crusher
+222851@@@Hallowfall Lightblade
+222853@@@Arathi Warlynx
+223101@@@War Wolf
+223722@@@Thrall
+226259@@@Adelgonn
+226261@@@Moira Thaurissan
+226264@@@Ebona
+226266@@@Baelgrim
+227111@@@Hallowfall Airman
+228371@@@Faerin Lothar
+228383@@@Zarein
+228404@@@Dead Abductor
+228407@@@Moss-Draped Ramolith
+228408@@@Injured Earthen
+228410@@@Unbound Protector
+228454@@@Anduin Wrynn
+228455@@@Lady Jaina Proudmoore
+228456@@@Thrall
+228457@@@Alleria Windrunner
+228740@@@Provoked Burrowfiend
+228807@@@Swarming Threadling
+228809@@@Invading Depthlurker
+228812@@@Armored Subjugator
+228815@@@Oathsworn Peacekeeper
+228824@@@Coreway Worker
+228825@@@Baelgrim
+228826@@@Zarein
+228828@@@Stormrider Meirand
+228830@@@Meirand's Stormrook
+228958@@@Magni Bronzebeard
+228959@@@Moira Thaurissan
+228960@@@Dagran Thaurissan II
+229039@@@Rooktender Lufsela
+229040@@@Olbarig
+229041@@@Thrall
+229042@@@Shraubendre
+229043@@@Rampant Thunder Elemental
+229044@@@Stormrook
+229045@@@Pilgrim
+229318@@@Queensguard Zirix
+229321@@@Thrall
+229323@@@Moira Thaurissan
+229324@@@Magni Bronzebeard
+229325@@@Lady Jaina Proudmoore
+229326@@@Dagran Thaurissan II
+229327@@@Anduin Wrynn
+229391@@@Baelgrim
+229392@@@Baelgrim
+229393@@@Rotatey Bug
 11.0.2.55399
 229512@@@Nerubian Swarmite
 229696@@@Targeting Bunny
@@ -21992,47 +22077,9 @@
 11.0.2.56110
 231546@@@Xal'atath
 11.0.2.56162
-220254@@@Rescued Citizen
 11.0.2.56196
 231755@@@Faerin Lothar
 11.0.2.56311
-226259@@@Adelgonn
-226261@@@Moira Thaurissan
-226264@@@Ebona
-226266@@@Baelgrim
-228371@@@Faerin Lothar
-228383@@@Zarein
-228404@@@Dead Abductor
-228407@@@Moss-Draped Ramolith
-228408@@@Injured Earthen
-228410@@@Unbound Protector
-228454@@@Anduin Wrynn
-228455@@@Lady Jaina Proudmoore
-228456@@@Thrall
-228457@@@Alleria Windrunner
-228740@@@Provoked Burrowfiend
-228807@@@Swarming Threadling
-228809@@@Invading Depthlurker
-228812@@@Armored Subjugator
-228815@@@Oathsworn Peacekeeper
-228824@@@Coreway Worker
-228825@@@Baelgrim
-228826@@@Zarein
-228828@@@Stormrider Meirand
-228830@@@Meirand's Stormrook
-228958@@@Magni Bronzebeard
-228959@@@Moira Thaurissan
-228960@@@Dagran Thaurissan II
-229318@@@Queensguard Zirix
-229321@@@Thrall
-229323@@@Moira Thaurissan
-229324@@@Magni Bronzebeard
-229325@@@Lady Jaina Proudmoore
-229326@@@Dagran Thaurissan II
-229327@@@Anduin Wrynn
-229391@@@Baelgrim
-229392@@@Baelgrim
-229393@@@Rotatey Bug
 230055@@@Anduin Wrynn
 230057@@@Faerin Lothar
 230060@@@Aelric Leid
@@ -22055,51 +22102,9 @@
 230928@@@General Steelstrike
 231102@@@Faerin Lothar
 11.0.2.56380
-229039@@@Rooktender Lufsela
-229040@@@Olbarig
-229041@@@Thrall
-229042@@@Shraubendre
-229043@@@Rampant Thunder Elemental
-229044@@@Stormrook
-229045@@@Pilgrim
 11.0.2.56421
 230215@@@Burrowing Worm
 11.0.2.56461
-214277@@@High Exarch Turalyon
-216552@@@Horde Wolfaxe
-216601@@@Stormwind Knight
-216613@@@Corpse Marker
-216635@@@Dwarven Sharpshooter
-216636@@@Druid of the Claw
-216637@@@Gilnean Scrapper
-216639@@@Master Tidesage
-216832@@@Lightforged Vindicator
-216835@@@Rift Voidsinger
-216840@@@Suramar Chronomancer
-217229@@@Zandalari Prelate
-217231@@@Arachno-Pummeler Mk. I
-217234@@@Tauren Plainswalker
-217236@@@Forsaken Warlock
-217347@@@Veteran Blood Knight
-217486@@@Auric Sunchaser
-217492@@@Shining Warframe
-217493@@@Exodar Vigilant
-217529@@@Stormwind Knight
-217552@@@Machine Speaker Mech
-217554@@@Hallowfall Lightblade
-217569@@@Danath Trollbane
-218017@@@G.E.A.R Bomber
-219879@@@Veteran Blood Knight
-219919@@@Night Elf Starcaller
-219942@@@Kirin Tor Defender
-220571@@@Hallowfall Lightblade
-220832@@@Imperial Artillerist
-222848@@@Warborn Crusher
-222851@@@Hallowfall Lightblade
-222853@@@Arathi Warlynx
-223101@@@War Wolf
-223722@@@Thrall
-227111@@@Hallowfall Airman
 227436@@@Archmage Khadgar
 227437@@@Archmage Khadgar
 230201@@@Lightforged Vindicator
@@ -22616,7 +22621,6 @@
 198989@@@Thrrrdgl
 239419@@@Monte Gazlowe
 11.1.0.60037
-185425@@@Survey Bot
 11.1.5.59571
 223691@@@Whoopy
 236382@@@Soridormi
@@ -22958,19 +22962,10 @@
 250848@@@Tracker Skyriding Glyph
 11.2.0.62049
 241416@@@Sa'bak's Blessed
-11.2.5.62554
-241740@@@Archmage Khadgar
-241743@@@Archmage Khadgar
-242176@@@Tidbit
-242180@@@Morsel
-242277@@@Archmage Kalec
-242281@@@Archmage Vargoth
-242299@@@Archmage Khadgar
-244262@@@Kirin Tor Guardian
+11.2.0.62610
 245826@@@Nexus-King Salhadaar
 245882@@@The Royal Voidwing
 245884@@@Naia
-246308@@@Valarjar Thundercaller
 249501@@@Alleria Windrunner
 249502@@@Nexus-Prince Azir
 249504@@@Xal'atath
@@ -22983,6 +22978,19 @@
 249514@@@Karesh Fox Kit
 249515@@@Conserved K'arroc
 249516@@@Slateback Roamer
+11.2.0.62706
+244145@@@Hopeflutter
+244146@@@Doomfeathers
+11.2.5.62554
+241740@@@Archmage Khadgar
+241743@@@Archmage Khadgar
+242176@@@Tidbit
+242180@@@Morsel
+242277@@@Archmage Kalec
+242281@@@Archmage Vargoth
+242299@@@Archmage Khadgar
+244262@@@Kirin Tor Guardian
+246308@@@Valarjar Thundercaller
 249869@@@Glutonia
 249929@@@The Amazing Zanzo
 249947@@@Crimson Pilgrim
@@ -22993,3 +23001,7 @@
 251821@@@Festive Eve
 251822@@@Bundled-up Bob
 251889@@@Fledgeling Warden's Companion
+11.2.5.62687
+253016@@@Lil' Exodar
+11.2.5.62785
+251822@@@Bundled-Up Bob

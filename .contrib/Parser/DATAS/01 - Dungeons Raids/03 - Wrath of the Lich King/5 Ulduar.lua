@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 		["mapID"] = ULDUAR,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, THE_STORM_PEAKS },
-		-- #if AFTER CATA
+		-- #if NOT ANYCLASSIC
 		["sharedLockout"] = 1,
 		-- #endif
 		["isRaid"] = true,

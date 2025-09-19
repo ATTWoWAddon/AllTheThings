@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local CHETT = createHeader({
+CHETT = createHeader({
 	readable = "C.H.E.T.T.",
 	constant = "CHETT",
 	icon = 134391,
@@ -20,7 +20,7 @@ local CHETT = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(CHETT, bubbleDownSelf({ ["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 13 } }, {
 			["description"] = "Once per week you can interact with the C.H.E.T.T. machine to receive a weekly set of tasks with rewards for completing each one. You can turn in a completed list to C.H.E.T.T. for some valorstones or to your cartel's quartermaster for 500 rep.",
@@ -36,8 +36,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}),
 					ach(41630, {	-- "Employee" of the Month
 						["groups"] = {
-							-- Temporary? Its a hidden FoS
-							title(617),	-- <Name>, "Employee" of the Month
+							title(617, {	-- <Name>, "Employee" of the Month
+								["collectible"] = false,	-- You only keep it for a few days
+							}),
 						},
 					}),
 				}),
@@ -79,12 +80,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			},
 		})),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-	n(CARTELS_OF_UNDERMINE, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	header(HEADERS.Faction, FACTION_CARTELS_OF_UNDERMINE, {
 		n(CHETT, {
-			q(87296, { ["isWeekly"] = true }),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
+			q(87296, name(HEADERS.Item, 235053, { ["isWeekly"] = true })),	-- Free C.H.E.T.T. List acquired (spellID 1219077)
 		}),
 	}),
-})));
+}));

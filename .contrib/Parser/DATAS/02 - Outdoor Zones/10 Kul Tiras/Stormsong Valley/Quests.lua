@@ -875,6 +875,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					--
 					h(i(161276)),	-- Lastwind Legguards
 					h(i(161278)),	-- Resilient Outcast's Leggings
+					h(i(161277)),	-- Scorching Sands Britches
 				},
 			}),
 			q(52068, {	-- Helping Out, Somewhere Else

@@ -23,12 +23,14 @@ root(ROOTS.Craftables, {
 							21277,	-- Tranquil Mechanical Yeti (PET!)
 						}},
 						["groups"] = {
+							applyclassicphase(MOP_PHASE_ESCALATION, i(97985, {	-- Dusty Old Robot (QI!)
+								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+							})),
 							i(103670),	-- Lil' Bling (PET!)
 							i(90561, {	-- Eternium Rose
+								-- #if AFTER 6.2.0
 								["description"] = "Can be turned in in Booty Bay for a bag of gold!",
-							}),
-							i(97985, {	-- Dusty Old Robot (QI!)
-								["description"] = "Trash Item - The quest provided by this item was removed in 7.1.5.",
+								-- #endif
 							}),
 						},
 					}),
@@ -48,6 +50,9 @@ root(ROOTS.Craftables, {
 					i(113258, {	-- Blingtron 5000 Gift Package
 						["sym"] = {{"select","itemID",86623},{"pop"}},	-- Blingtron 4000 Gift Package
 						["groups"] = {
+							i(97985, {	-- Dusty Old Robot (QI!)
+								["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+							}),
 							i(115483),	-- Sky-Bo (PET!)
 							i(123851),	-- Photo B.O.M.B. (TOY!)
 							i(114002, {	-- Encoded Message

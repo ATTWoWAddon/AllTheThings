@@ -166,7 +166,7 @@ root(ROOTS.Secrets, {
 				["groups"] = {
 					o(272434, {	-- Water Stone
 						["coord"] = { 47.9, 1.5, WINTERSPRING },
-						["groups"] = { i(147455), },	-- Water Stone
+						["groups"] = { i(147455) },	-- Water Stone
 					}),
 				},
 			}),

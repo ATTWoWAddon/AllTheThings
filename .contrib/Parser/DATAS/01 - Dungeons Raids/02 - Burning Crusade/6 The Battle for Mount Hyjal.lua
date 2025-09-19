@@ -467,169 +467,133 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["groups"] = bubbleDownClassicRep(FACTION_THE_SCALE_OF_THE_SANDS, {
 						{		-- Neutral
 						}, {	-- Friendly
-							i(32274),	-- Design: Bold Crimson Spinel
 							-- #if BEFORE CATA
-							i(32283, {	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32274),	-- Design: Bold Crimson Spinel (RECIPE!)
+							i(32283, {	-- Design: Bright Crimson Spinel (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32290, {	-- Design: Brilliant Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32277),	-- Design: Delicate Crimson Spinel (RECIPE!)
+							i(32293, {	-- Design: Gleaming Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32288, {	-- Design: Lustrous Empyrean Sapphire (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32282),	-- Design: Runed Crimson Spinel (RECIPE!)
+							i(32291),	-- Design: Smooth Lionseye (RECIPE!)
+							i(32286),	-- Design: Solid Empyrean Sapphire (RECIPE!)
+							i(32287),	-- Design: Sparkling Empyrean Sapphire (RECIPE!)
+							i(32284),	-- Design: Subtle Crimson Spinel (RECIPE!)
+							i(32281, {	-- Design: Teardrop Crimson Spinel (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32294, {	-- Design: Thick Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
 							-- #else
-							i(32282),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
-							i(32281, {	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32274),	-- Design: Bold Crimson Spinel (RECIPE!)
+							i(32281, {	-- Design: Brilliant Crimson Spinel (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32290, {	-- Design: Brilliant Lionseye
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_9_0_1, -- Unsure exactly when this was removed but not in SL at least.566
-								},
+							i(32290, {	-- Design: Brilliant Crimson Spinel (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32283, {	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32282),	-- Design: Brilliant Crimson Spinel (RECIPE!)
+							i(32283, {	-- Design: Delicate Crimson Spinel (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							-- #endif
-							i(32277),	-- Design: Delicate Crimson Spinel
-							-- #if BEFORE CATA
-							i(32293, {	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32277),	-- Design: Delicate Crimson Spinel (RECIPE!)
+							i(32293, {	-- Design: Smooth Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32288, {	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32291),	-- Design: Smooth Lionseye (RECIPE!)
+							i(32286),	-- Design: Solid Empyrean Sapphire (RECIPE!)
+							i(32288, {	-- Design: Sparkling Empyrean Sapphire (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32282),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-							-- #else
-							i(32293, {	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32287),	-- Design: Sparkling Empyrean Sapphire (RECIPE!)
+							i(32294, {	-- Design: Subtle Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							-- #endif
-							i(32291),	-- Design: Smooth Lionseye
-							i(32286),	-- Design: Solid Empyrean Sapphire
-							i(32287),	-- Design: Sparkling Empyrean Sapphire
-							-- #if BEFORE CATA
-							i(32288, {	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
-							}),
-							i(32294, {	-- Design: Subtle Lionseye [CATA+] / Design: Thick Lionseye [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
-							}),
-							-- #endif
-							i(32284),	-- Design: Subtle Lionseye
-							-- #if BEFORE CATA
-							i(32281, {	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
-							}),
-							i(32294, {	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
-							}),
+							i(32284),	-- Design: Subtle Lionseye (RECIPE!)
 							-- #endif
 						}, {	-- Honored
 							-- #if BEFORE CATA
-							i(32299),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-							i(32311),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-							-- #endif
-							applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
-							-- #if BEFORE CATA
-							i(32306),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-							i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
-							i(32300, {	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32299, {	-- Design: Balanced Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
+							i(32311),	-- Design: Dazzling Seaspray Emerald (RECIPE!)
+
+							applyclassicphase(TBC_PHASE_FIVE, i(35765, {	-- Design: Forceful Seaspray Emerald (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32306),	-- Design: Glinting Pyrestone (RECIPE!)
+							i(32301),	-- Design: Glowing Shadowsong Amethyst (RECIPE!)
+							i(32300, {	-- Design: Infused Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32312),	-- Design: Jagged Seaspray Emerald (RECIPE!)
+							i(32305, {	-- Design: Luminous Pyrestone (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
+							}),
+							i(32304),	-- Design: Potent Pyrestone (RECIPE!)
+							applyclassicphase(TBC_PHASE_FIVE, i(35763, {	-- Design: Quick Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32310),	-- Design: Radiant Seaspray Emerald (RECIPE!)
+							applyclassicphase(TBC_PHASE_FIVE, i(35762, {	-- Design: Reckless Pyrestone (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							applyclassicphase(TBC_PHASE_FIVE, i(35764, {	-- Design: Steady Seaspray Emerald (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32308),	-- Design: Wicked Pyrestone (RECIPE!)
 							-- #else
-							i(32306),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
-							i(32300, {	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32308),	-- Design: Deadly Pyrestone (RECIPE!)
+							applyclassicphase(TBC_PHASE_FIVE, i(35765, {	-- Design: Forceful Seaspray Emerald (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32300, {	-- Design: Glinting Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							-- #endif
-							i(32312),	-- Design: Jagged Seaspray Emerald
-							-- #if BEFORE CATA
-							i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32306),	-- Design: Glinting Shadowsong Amethyst (RECIPE!)
+							i(32312),	-- Design: Jagged Seaspray Emerald (RECIPE!)
+							applyclassicphase(TBC_PHASE_FIVE, i(35763, {	-- Design: Quick Lionseye (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32304),	-- Design: Potent Pyrestone (RECIPE!)
+							i(32311),	-- Design: Purified Shadowsong Amethyst (RECIPE!)
+							i(32310),	-- Design: Radiant Seaspray Emerald (RECIPE!)
+							i(32305, {	-- Design: Reckless Pyrestone (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							-- #endif
-							i(32304),	-- Design: Potent Pyrestone
-							-- #if AFTER CATA
-							i(32311),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
-							-- #endif
-							applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
-							i(32310),	-- Design: Radiant Seaspray Emerald
-							applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
-							-- #if AFTER CATA
-							i(32305, {	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							applyclassicphase(TBC_PHASE_FIVE, i(35762, {	-- Design: Reckless Pyrestone (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32299, {	-- Design: Shifting Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32299, {	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and available after Cata
-								},
-							}),
-							-- #endif
-							applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
-							-- #if AFTER CATA
-							i(32301),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
+							applyclassicphase(TBC_PHASE_FIVE, i(35764, {	-- Design: Steady Seaspray Emerald (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							})),
+							i(32301),	-- Design: Timeless Shadowsong Amethyst (RECIPE!)
 							-- #endif
 						}, {	-- Revered
 							-- #if BEFORE CATA
-							i(32309),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
-							i(32292),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-							i(32302, {	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32309),	-- Design: Enduring Seaspray Emerald (RECIPE!)
+							i(32292),	-- Design: Rigid Lionseye (RECIPE!)
+							i(32302, {	-- Design: Royal Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32308),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
 							-- #else
-							i(32308),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC]
-							i(32302, {	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
-								["timeline"] = {
-									ADDED_2_1_0,
-									REMOVED_4_0_1, -- Renamed and not available after Cata
-								},
+							i(32302, {	-- Design: Purified Shadowsong Amethyst (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
 							}),
-							i(32309),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
-							i(32292),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Rigid Lionseye [TBC]
+							i(32309),	-- Design: Regal Seaspray Emerald (RECIPE!)
+							i(32292),	-- Design: Rigid Empyrean Sapphire (RECIPE!)
 							-- #endif
 							}, {	-- Exalted
 						},
@@ -941,20 +905,25 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					17968,	-- Archimonde
 				},
 				["groups"] = {
-					i(32285),	-- Design: Flashing Crimson Spinel
 					-- #if BEFORE CATA
-					i(32296),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
+					i(32285),	-- Design: Flashing Crimson Spinel (RECIPE!)
+					i(32296, {["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 }}),	-- Design: Great Lionseye (RECIPE!)
+					i(32303),	-- Design: Inscribed Pyrestone (RECIPE!)
+					i(32295),	-- Design: Mystic Lionseye (RECIPE!)
+					i(32298),	-- Design: Shifting Shadowsong Amethyst (RECIPE!)
+					i(32297),	-- Design: Sovereign Shadowsong Amethyst (RECIPE!)
+					i(32289),	-- Design: Stormy Empyrean Sapphire (RECIPE!)
+					i(32307),	-- Design: Veiled Pyrestone (RECIPE!)
+					-- #else
+					i(32285),	-- Design: Flashing Crimson Spinel (RECIPE!)
+					i(32303),	-- Design: Inscribed Pyrestone (RECIPE!)
+					i(32295),	-- Design: Mystic Lionseye (RECIPE!)
+					i(32296, {["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 }}),	-- Design: Rigid Empyrean Sapphire (RECIPE!)
+					i(32298),	-- Design: Shifting Shadowsong Amethyst (RECIPE!)
+					i(32297),	-- Design: Sovereign Shadowsong Amethyst (RECIPE!)
+					i(32289),	-- Design: Stormy Empyrean Sapphire (RECIPE!)
+					i(32307),	-- Design: Veiled Shadowsong Amethyst (RECIPE!)
 					-- #endif
-					i(32303),	-- Design: Inscribed Pyrestone
-					i(32295),	-- Design: Mystic Lionseye
-					-- #if AFTER CATA
-					-- not sure when removed but this ItemID doesn't exist in Retail
-					i(32296, {["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 }}),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC]
-					-- #endif
-					i(32298),	-- Design: Shifting Shadowsong Amethyst
-					i(32297),	-- Design: Sovereign Shadowsong Amethyst
-					i(32289),	-- Design: Stormy Empyrean Sapphire
-					i(32307),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
 				},
 			}),
 			n(ZONE_DROPS, {

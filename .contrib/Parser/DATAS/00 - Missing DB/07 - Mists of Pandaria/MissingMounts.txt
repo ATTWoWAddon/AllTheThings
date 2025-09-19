@@ -1,11 +1,6 @@
 5.5.0.60481
-mount(123182),	-- Kafa Yak \\ White Riding Yak
 mount(127165),	-- Yu'lei, Daughter of Jade \\ Heavenly Jade Cloud Serpent
 mount(127169),	-- Heavenly Azure Cloud Serpent
-mount(127178),	-- Jungle Riding Crane
-mount(127209),	-- Black Riding Yak
-mount(127213),	-- Modest Expedition Yak \\ Brown Riding Yak
-mount(127271),	-- Crimson Water Strider
 mount(142910),	-- Ironbound Wraithcharger \\ Iron Warhorse
 mount(146615),	-- Vicious Kaldorei Warsaber \\ Vicious Warsaber
 mount(146622),	-- Vicious Skeletal Warhorse
@@ -23,6 +18,8 @@ mount(1247591),	-- Celestial Riding Crane
 mount(1247596),	-- Celestial Riding Serpent
 mount(1247597),	-- Celestial Riding Ox
 mount(1247598),	-- Celestial Riding Tiger
+5.5.1.62856
+mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)
 
 
 
@@ -36,3 +33,5 @@ mount(1247597),	-- Celestial Riding Ox
 mount(1247598),	-- Celestial Riding Tiger
 5.5.0.62044
 mount(1238816),	-- Envoy of Sa'bak
+5.5.1.62856
+mount(1249659),	-- Sha-scarred Drake \\ Moppy the Drake (FINAL NAME TBD)

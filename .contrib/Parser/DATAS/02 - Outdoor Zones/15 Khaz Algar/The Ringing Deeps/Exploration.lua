@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(THE_RINGING_DEEPS, {
 		explorationHeader({
 			exploration(14819),	-- Abyssal Excavation
@@ -11,6 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(15357),	-- Candleslag Quarry
 			exploration(14804),	-- Chittering Den
 			exploration(15030),	-- Deepforge Golemworks
+			visit_exploration(15171,{coord={53.0,77.6,THE_RINGING_DEEPS}}),	-- Deepforge Manufacturing Bay
 			visit_exploration(14821,{coord={65.0,41.2,THE_RINGING_DEEPS}}),	-- Fetid Grotto
 			exploration(14796),	-- Gundargaz
 			visit_exploration(15523,{coord={72.5,75.3,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- Gutterside Rocket Station
@@ -24,7 +25,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(14822,{coord={53.7,44.1,THE_RINGING_DEEPS}}),	-- Pillarstone Spire
 			visit_exploration(15526,{coord={72.1,96.6,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- Sanity's Rest
 			exploration(15031),	-- Shadowvein Extraction Site
+			visit_exploration(15170,{coord={54.3,35.8,THE_RINGING_DEEPS}}),	-- Shadowvein Mine
 			visit_exploration(14820,{coord={60.5,45.6,THE_RINGING_DEEPS}}),	-- Shadowvein Point
+			visit_exploration(15169,{coord={52.2,38.7,THE_RINGING_DEEPS}}),	-- Shadowvein Power Station
 			exploration(15345),	-- Shimmermist Falls
 			exploration(15104),	-- Taelloch
 			exploration(14815),	-- Taelloch Mine
@@ -37,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			visit_exploration(15519,{coord={75.8,75.3,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- The Verdant Gutters
 			visit_exploration(15520,{coord={74.3,86.5,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- The Writhing Fields
 			exploration(14803),	-- The Warrens
-			visit_exploration(15099,{coord={48.2,40.8,THE_RINGING_DEEPS}}),	-- The Waterworks
+			visit_exploration(14798,{coord={48.2,40.8,THE_RINGING_DEEPS}}),	-- The Waterworks
 		}),
 	}),
-})));
+}));

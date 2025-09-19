@@ -5,5 +5,6 @@ WEAPON_ENCHANTMENTS = createHeader({
 		en = "Weapon Enchantments",	-- ~select(1,C_TradeSkillUI.GetCategoryInfo(658)),
 		es = "Encantamientos de armas",
 		mx = "Encantamientos de armas",
+		ru = "Наложение чар на оружие",
 	},
 });

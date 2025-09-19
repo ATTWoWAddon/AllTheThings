@@ -360,7 +360,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			n(THERAMORES_FALL, {
 				["maps"] = { 483 },	-- Theramore's Fall
 				["groups"] = {
-					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35), }, {
+					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35) }, {
 						a(ach(7526)),	-- Kite Flight (A)
 						h(ach(7529)),	-- Kite Fight (H)
 						a(ach(7527)),	-- No Tank You (A)
@@ -832,6 +832,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["timeline"] = { ADDED_5_3_0 },
 						-- no longer available to queue random scenarios post 9.0 squish
 						["groups"] = {
+							n(QUESTS, {
+								i(97979, {	-- The Bear and the Lady Fair (QI!)
+									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+								}),
+								i(97982, {	-- Vial of Reddish Ooze (QI!)
+									["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+								}),
+							}),
 							n(BACK, {
 								i(92881),	-- Bladesnap Drape
 								i(89503),	-- Greenstone Drape
@@ -1302,7 +1310,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				})),
 				applyclassicphase(MOP_PHASE_ESCALATION, i(98134, {	-- Heroic Cache of Treasures
 					["timeline"] = { ADDED_5_3_0, REMOVED_9_0_1 },
-					["sym"] = {{"select","itemID",98546},{"pop"}},
+					["sym"] = {{"select","itemID",98546},{"groupfill"}},
 					-- no longer available to queue random scenarios post 9.0 squish
 				})),
 			}),

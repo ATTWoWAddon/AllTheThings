@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local SHIPPING_AND_HANDLING = createHeader({
+SHIPPING_AND_HANDLING = createHeader({
 	readable = "Shipping & Handling",
 	constant = "SHIPPING_AND_HANDLING",
 	icon = 6383558,
@@ -11,19 +11,18 @@ local SHIPPING_AND_HANDLING = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(SHIPPING_AND_HANDLING, {
 			["description"] = "Complete 10 jobs in a row without canceling your streak to earn a reward. Additionally, every hour at the half-hour mark (or xx:30), a Surge Pricing event will start.\nFor 10 minutes, completing Shipping and Handling tasks will count towards an objective bar that will show up on top of your screen.\nThis will count Shipping and Handling tasks completed by everyone in Undermine.\nDuring Surge Pricing, Shipping and Handling completions give you double rewards.",
 			["groups"] = {
 				filter(MISC, {
 					i(225415, {	-- Caddy Caller
-						["provider"] = { "n", 227210 },		-- Nanny Talullah <Shipping and Handling>
+						["provider"] = { "n", 227210 },	-- Nanny Talullah <Shipping and Handling>
 					}),
 				}),
 				n(QUESTS, {
 					q(86775, {	-- Urge to Surge
-						--["sourceQuests"] = { xx },	-- ??
 						["provider"] = { "n", 231409 },	-- Smaks Topskimmer
 						["coord"] = { 43.8, 50.8, UNDERMINE },
 						["isWeekly"] = true,
@@ -126,9 +125,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			},
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(UNDERMINE, {
 		n(SHIPPING_AND_HANDLING, {
 			n(EVENT_COMPLETION, {
@@ -139,4 +138,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

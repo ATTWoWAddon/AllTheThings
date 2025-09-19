@@ -195,7 +195,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Build(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
+            public virtual void Build(Exporter builder, IDictionary<string, object> data, IList<string> fields)
             {
                 WriteShortcut(builder, ConstructorShortcut, Function);
                 Constructor(builder, data, fields);
@@ -207,7 +207,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Clean(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
+            public virtual void Clean(Exporter builder, IDictionary<string, object> data, IList<string> fields)
             {
                 // Remove globally blacklisted fields.
                 bool ignoreBonus = fields.Remove("ignoreBonus");
@@ -286,7 +286,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public virtual void Constructor(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
+            public virtual void Constructor(Exporter builder, IDictionary<string, object> data, IList<string> fields)
             {
                 // Write the default data field to the builder.
                 ExportField(builder, data, fields, ObjectType);
@@ -299,7 +299,7 @@ namespace ATT
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
             /// <param name="field">The field.</param>
-            public void ExportField(StringBuilder builder, IDictionary<string, object> data, IList<string> fields, string field)
+            public void ExportField(Exporter builder, IDictionary<string, object> data, IList<string> fields, string field)
             {
                 ExportCompressedLua(builder, data[field]);
                 fields.Remove(field);
@@ -311,9 +311,9 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="shortcut">The shortcut.</param>
             /// <param name="function">The function.</param>
-            public void WriteShortcut(StringBuilder builder, string shortcut, string function)
+            public void WriteShortcut(Exporter builder, string shortcut, string function)
             {
-                MarkShortcut(shortcut, function);
+                builder.MarkShortcut(shortcut, function);
                 builder.Append(shortcut).Append('(');
             }
             #endregion

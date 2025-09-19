@@ -1450,7 +1450,11 @@ i(90897, 278);		-- Fox Kit [A]
 i(90898, 278);		-- Fox Kit [H]
 i(86564, 834);		-- Grinder
 i(86562, 835);		-- Hopling
+-- #if ANYCLASSIC
+i(88148, 792);		-- Jade Crane Chick
+-- #else
 i(0, 792);			-- Jade Crane Chick
+-- #endif
 i(82774, 845);		-- Jade Owl
 i(89686, 856);		-- Jade Tentacle
 i(85871, 671);		-- Lucky Quilen Cub
@@ -2574,7 +2578,6 @@ i(0, 1772);			-- Wumpas
 --- NYI ---
 i(136907, 1758);	-- Black Piglet
 i(136906, 1757);	-- Brown Piglet
-i(129108, 1751);	-- Son of Goredome
 i(136897, 0);		-- Northern Hawk Owl
 i(136913, 0);		-- Red Broodling
 i(136902, 0);		-- Toxic Whelpling
@@ -4410,10 +4413,12 @@ i(239082, 4796);	-- Sa'bak's Blessed
 i(245274, 4848);	-- Cerulean Lapbug
 i(245273, 4847);	-- Copper Lapbug
 i(244916, 4835);	-- Cyan Siphonmite
+i(243063, 4812);	-- Doomfeathers
 i(244907, 4827);	-- Dread Horrorling
 i(245254, 4842);	-- Duskthief
 i(245252, 4840);	-- Graceful Cosmic Ray Pup
 i(245272, 4846);	-- Heka'Tarnos, Bringer of Discord
+i(243062, 4811);	-- Hopeflutter
 i(244909, 4828);	-- Impartial Watcher
 i(245253, 4844);	-- Inquisitive Cosmic Ray Pup
 i(243158, 4813);	-- Ixthal the Observling
@@ -4424,6 +4429,7 @@ i(245214, 4838);	-- Palek'ti, the Mouth of Nothingness
 i(244910, 4829);	-- Penumbral Terror
 i(245256, 4843);	-- Sao'rhon
 i(244468, 4826);	-- Scrappy Thorntail
+i(246343, 4856);	-- Scruffyhorn Fel Snooter
 i(246451, 4858);	-- Shadefur Brewthief
 i(245215, 4839);	-- Shimmering Inchshifter
 i(245255, 4841);	-- Starlight
@@ -4433,24 +4439,24 @@ i(244914, 4833);	-- Xanthous Siphonmite
 i(246694, 4859);	-- Zo'ya
 --- UNSORTED ---
 i(0, 4824);	-- Baby Karesh Fox - Orange
-i(246339, 4854);	-- Duskytooth Fel Snooter
 i(246342, 4855);	-- Mustyfur Fel Snooter
 i(0, 4830);	-- Observer, Baby (Green) - no icon
 i(246337, 4853);	-- Rustyroot Fel Snooter
-i(246343, 4856);	-- Scruffyhorn Fel Snooter
 i(246723, 4860);	-- Unfazed Diver
 i(0, 4837);	-- Worm, Cosmic - Critter (Red)
 
 ------------------
 -- PATCH 11.2.5 --
 ------------------
+i(246339, 4854);	-- Duskytooth Fel Snooter
+i(252301, 4901);	-- Fledgeling Warden's Companion
+i(239705, 4802);	-- Morsel
+i(129108, 1751);	-- Son of Goredome
+i(239699, 4801);	-- Tidbit
 --- UNSORTED ---
 i(252200, 4900);	-- Bundled-up Bob
 i(252199, 4899);	-- Festive Eve
 i(252194, 4897);	-- Fishmonger May
 i(252195, 4898);	-- Fishstick Keith
-i(252301, 4901);	-- Fledgeling Warden's Companion
 i(252137, 4895);	-- Lil' Chompers
-i(239705, 4802);	-- Morsel
 i(252193, 4896);	-- Slippery Saul
-i(239699, 4801);	-- Tidbit

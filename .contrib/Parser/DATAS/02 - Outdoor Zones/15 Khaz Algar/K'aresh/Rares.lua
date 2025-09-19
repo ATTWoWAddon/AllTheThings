@@ -1,35 +1,11 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(RARES, sharedData({
 			["isDaily"] = true,
 		},{
-			n(COMMON_BOSS_DROPS, {	-- Using this header as temp. Can These drop from all rares or is each one specific? //Braghe
-				i(239448),	-- Reshii Magi's Vestments
-				i(239449),	-- Reshii Magi's Slippers
-				i(239452),	-- Reshii Magi's Leggings
-				i(239454),	-- Reshii Magi's Cord
-				i(239456),	-- Reshii Scout's Jerkin
-				i(239457),	-- Reshii Scout's Soles
-				i(239458),	-- Reshii Scout's Grips
-				i(239459),	-- Reshii Scout's Hood
-				i(239461),	-- Reshii Scout's Shoulderpads
-				i(239462),	-- Reshii Scout's Belt
-				i(239465),	-- Reshii Skirmisher's Boots
-				i(239466),	-- Reshii Skirmisher's Gauntlets
-				i(239468),	-- Reshii Skirmisher's Legguards
-				i(239470),	-- Reshii Skirmisher's Sash
-				i(239471),	-- Reshii Skirmisher's Armguards
-				i(239472),	-- Reshii Brute's Breastplate
-				i(239473),	-- Reshii Brute's Sollerets
-				i(239474),	-- Reshii Brute's Handguards
-				i(239475),	-- Reshii Brute's Helmet
-				i(239476),	-- Reshii Brute's Greaves
-				i(246064),	-- Reshii Magi's Pendant
-				i(246065),	-- Reshii Magi's Band
-			}),
 			n(232098, {	-- "Chowdar" <Escaped Auction Parcel #8675308>
 				["coords"] = {	-- Runs between the coordinates
 					{ 81.9, 75.6, KARESH_TAZAVESH },
@@ -46,8 +22,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			n(241956, {	-- Arcana-Monger So'zer
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["coord"] = { 33.6, 36.9, KARESH_TAZAVESH },
+				["questID"] = 90696,
+				["groups"] = {
+					i(239474),	-- Reshii Brute's Handguards
+					i(239456),	-- Reshii Scout's Jerkin
+					i(239467),	-- Reshii Skirmisher's Cowl
+				},
 			}),
 			n(238540, {	-- Grubber
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
@@ -58,6 +39,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["provider"] = { "o", 517436 },	-- Vignette
 				["groups"] = {
 					i(239478),	-- Reshii Brute's Greatbelt
+					i(239454),	-- Reshii Magi's Cord
+					i(246064),	-- Reshii Magi's Pendant
+					i(239465),	-- Reshii Skirmisher's Boots
 					i(239469),	-- Reshii Skirmisher's Pauldrons
 				},
 			}),
@@ -72,12 +56,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["questID"] = 91276,
 				["groups"] = {
 					i(245272),	-- Heka'Tarnos, Bringer of Discord (PET!)
+					i(246065),	-- Reshii Magi's Band
+					i(246064),	-- Reshii Magi's Pendant
 				},
 			}),
 			n(238536, {	-- Hollowbane
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 48.4, 16.9, KARESH },
 				["questID"] = 90689,
+				["groups"] = {
+					i(239477),	-- Reshii Brute's Epaulettes
+					i(239462),	-- Reshii Scout's Belt
+					i(239471),	-- Reshii Skirmisher's Armguards
+				},
 			}),
 			n(231229, {	-- Korgoth the Hungerer
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Oasis'.",
@@ -89,9 +80,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(232467, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					i(246240),	-- Devoured Energy-Pod
+					q(91286, { -- -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
+						["name"] = "Devoured Energy-Pod Devourer Attack: The Oasis",
+						["isWeekly"] = true,
+						["groups"] = {
+							i(246240),	-- Devoured Energy-Pod
+						},
+					}),
+					i(239475),	-- Reshii Brute's Helmet
 					i(240116),	-- Reshii Brute's Longsword
 					i(240115),	-- Reshii Brute's Warmace
+					i(240117),	-- Reshii Magi's Wand
+					i(240111),	-- Reshii Skirmisher's Axe
+					i(240114),	-- Reshii Skirmisher's Morningstar
 				},
 			}),
 			n(245997, {	-- Malek'ta <The Jaws of Oblivion>
@@ -114,10 +115,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(238663, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					i(246240),	-- Devoured Energy-Pod
+					q(91287, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
+						["name"] = "Devoured Energy-Pod Devourer Attack: Eco-dome Primus",
+						["isWeekly"] = true,
+						["groups"] = {
+							i(246240),	-- Devoured Energy-Pod
+						},
+					}),
+					i(240121),	-- Reshii Brute's Barrier
 					i(240118),	-- Reshii Brute's Spear
+					i(240113),	-- Reshii Magi's Dagger
 					i(240117),	-- Reshii Magi's Wand
 					i(240112),	-- Reshii Scout's Blade
+					i(240111),	-- Reshii Skirmisher's Axe
+					i(240119),	-- Reshii Skirmisher's Staff
 				},
 			}),
 			n(235422, {	-- Phase-Thief Tezra
@@ -131,13 +142,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["isDaily"] = IGNORED_VALUE,
 				["isWeekly"] = true,
 				["groups"] = {
+					i(239472),	-- Reshii Brute's Breastplate
+					i(240168),	-- Reshii Magi's Seal
+					i(239448),	-- Reshii Magi's Vestments
 					i(239460),	-- Reshii Scout's Breeches
+					i(239459),	-- Reshii Scout's Hood
+					i(239466),	-- Reshii Skirmisher's Gauntlets
 				},
 			}),
 			n(238135, {	-- Shatterpulse
 				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 49.2, 28.2, KARESH },
 				["questID"] = 90687,
+				["groups"] = {
+					i(239452),	-- Reshii Magi's Leggings
+				},
 			}),
 			n(235087, {	-- The Harvester
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: The Atrium'.",
@@ -149,13 +168,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(238664, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					i(246240),	-- Devoured Energy-Pod
+					q(91289, { -- -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
+						["name"] = "Devoured Energy-Pod Devourer Attack: The Atrium",
+						["isWeekly"] = true,
+						["groups"] = {
+							i(246240),	-- Devoured Energy-Pod
+						},
+					}),
 					i(240121),	-- Reshii Brute's Barrier
 					i(240118),	-- Reshii Brute's Spear
+					i(240115),	-- Reshii Brute's Warmace
 					i(240113),	-- Reshii Magi's Dagger
 					i(240120),	-- Reshii Magi's Lantern
+					i(240117),	-- Reshii Magi's Wand
 					i(240112),	-- Reshii Scout's Blade
 					i(240111),	-- Reshii Skirmisher's Axe
+					i(240114),	-- Reshii Skirmisher's Morningstar
 					i(240119),	-- Reshii Skirmisher's Staff
 				},
 			}),
@@ -169,12 +197,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(238665, {	-- Crystallized Anima (QS!)
 						["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in quest obtained from this item unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
 					}),
-					i(246240),	-- Devoured Energy-Pod
+					q(91290, { -- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
+						["name"] = "Devoured Energy-Pod Devourer Attack: Tazavesh",
+						["isWeekly"] = true,
+						["groups"] = {
+							i(246240),	-- Devoured Energy-Pod
+						},
+					}),
 					i(240121),	-- Reshii Brute's Barrier
+					i(240116),	-- Reshii Brute's Longsword
+					i(240118),	-- Reshii Brute's Spear
+					i(240115),	-- Reshii Brute's Warmace
+					i(240113),	-- Reshii Magi's Dagger
 					i(240120),	-- Reshii Magi's Lantern
 					i(240112),	-- Reshii Scout's Blade
 					i(240111),	-- Reshii Skirmisher's Axe
 					i(240114),	-- Reshii Skirmisher's Morningstar
+					i(240119),	-- Reshii Skirmisher's Staff
 				},
 			}),
 			n(238384, {	-- Xy'vox the Twisted
@@ -184,13 +223,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["isWeekly"] = true,
 				["groups"] = {
 					i(239479),	-- Reshii Brute's Vambraces
+					i(246065),	-- Reshii Magi's Band
+					i(239461),	-- Reshii Scout's Shoulderpads
+					i(239457),	-- Reshii Scout's Soles
+					i(239470),	-- Reshii Skirmisher's Sash
 				},
 			}),
 		})),
+		n(REWARDS, {
+			i(246159, {	-- Translocated Gorger (MOUNT!)
+				["description"] = "|cff1eff00Devoured Energy-Pods|r can be obtained by killing Rare Elite Bosses of the 'Devourer Attacks'\n1 Energy-Pod can be obtained per Rare, Warband, and Week.",
+				["cost"] = {{ "i", 246240, 20 }},	-- Devoured Energy-Pod
+			}),
+		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(KARESH, {
 			n(RARES, {
@@ -233,4 +282,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

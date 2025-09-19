@@ -394,6 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(39260),	-- Helm of the Corrupted Mind
 							i(39247),	-- Cuffs of Dark Shadows
 							i(39251),	-- Necrogenic Belt
+							i(39254),	-- Saltarello Shoes
 						},
 					}),
 					e(583, {	-- Amanitar

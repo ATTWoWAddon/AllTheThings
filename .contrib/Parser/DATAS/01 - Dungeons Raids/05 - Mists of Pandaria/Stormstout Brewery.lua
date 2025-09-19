@@ -368,9 +368,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				ach(8431, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Stormstout Brewery
+				challengemaster(ach(8431, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Stormstout Brewery
 					title(248),	-- Stormbrewer <Name>
-				})),
+				}))),
 				ach(6888),	-- Stormstout Brewery Challenger
 				ach(6889),	-- Stormstout Brewery: Bronze
 				ach(6890),	-- Stormstout Brewery: Silver
@@ -379,7 +379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			})),
 			-- #if ANYCLASSIC
-			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
@@ -388,6 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						["groups"] = {
 							ach(60893),	-- Celestial: Stormstout Brewery
 							i(86741),	-- Dagger of the Seven Stars
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86865)),	-- Kri'tak, Imperial Scepter of the Swarm (HoF)
 							i(86776),	-- Amulet of the Hidden Kings
 							i(86767),	-- Circuit of the Frail Soul
 						},

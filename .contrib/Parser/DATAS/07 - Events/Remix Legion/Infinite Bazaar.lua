@@ -1,1157 +1,1210 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
---local BRONZE = 2778;
---local BONES_OF_MANNOROTH = 224461;
---INFINITE_BAZARR = createHeader({
---	readable = "Infinite Bazaar",
---	icon = 298656,
---	text = {
---		en = "Infinite Bazaar",
---		tw = "無限市集",
---	},
---	description = {
---		en = "The Infinite Bazaar has multiple locations.",
---	},
---});
---[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_5, REMOVED_LEGION_REMIX_END } }, {
-	n(INFINITE_BAZARR, {
-		["coords"] = {
-			-- Accurate, but its 100 Ensembles per Zone in the Minilist
-			{ 42.8, 27.5, THE_JADE_FOREST },
-			{ 69.6, 53.1, KUN_LAI_SUMMIT },
-			{ 37.8, 64.0, TOWNLONG_STEPPES },
-			{ 52.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-			{ 26.0, 49.0, SHRINE_OF_TWO_MOONS },
-			{ 72.0, 47.2, SHRINE_OF_SEVEN_STARS },
-		},
+local BRONZE = 3252;
+
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
+	n(INFINITE_BAZAAR, {
+		["coord"] = { 45.7, 68.1, BROKEN_ISLES },
 		["groups"] = {
-			n(219031, {	-- Aeonicus <Raid Finder Apparel>
-				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215320, { -- Ensemble: Plate of the Lost Catacomb (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+			n(241145, {	-- Aeonicus <Raid Finder Apparel>
+				["coord"] = { 45.4, 68.0, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 20000 }},
+				},FILTERFUNC_itemID,{
+					clWithoutLock(DEATHKNIGHT, {
+						iensemble(241551),	-- Ensemble: Dreadwyrm Battleplate
+						------ Locked behind: Legionfall ------
+						iensemble(241503),	-- Ensemble: Gravewarden Armaments
+						------ Locked behind: Argus Eternal ------
+						iensemble(241456),	-- Ensemble: Dreadwake Armor
 					}),
-					iensemble(215324, { -- Ensemble: Battleplate of the All-Consuming Maw (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(DEMONHUNTER, {
+						iensemble(241575),	-- Ensemble: Vestment of Second Sight
+						------ Locked behind: Legionfall ------
+						iensemble(241527),	-- Ensemble: Demonbane Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241480),	-- Ensemble: Felreaper Vestments
 					}),
-					iensemble(215327, { -- Ensemble: Battleplate of Cyclopean Dread (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(DRUID, {
+						iensemble(241571),	-- Ensemble: Garb of the Astral Warden
+						------ Locked behind: Legionfall ------
+						iensemble(241523),	-- Ensemble: Stormheart Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241476),	-- Ensemble: Bearmantle Battlegear
 					}),
-				}),
-				clWithoutLock(DRUID, {
-					iensemble(215241, { -- Ensemble: Vestments of the Eternal Blossom (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(HUNTER, {
+						iensemble(241559),	-- Ensemble: Eagletalon Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241510),	-- Ensemble: Wildstalker Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241463),	-- Ensemble: Serpentstalker Guise
 					}),
-					iensemble(215245, { -- Ensemble: Vestments of the Haunted Forest (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(MAGE, {
+						iensemble(241587),	-- Ensemble: Regalia of Everburning Knowledge
+						------ Locked behind: Legionfall ------
+						iensemble(241539),	-- Ensemble: Regalia of the Arcane Tempest
+						------ Locked behind: Argus Eternal ------
+						iensemble(241490),	-- Ensemble: Runebound Regalia
 					}),
-					iensemble(215247, { -- Ensemble: Vestments of the Shattered Vale (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(MONK, {
+						iensemble(241568),	-- Ensemble: Vestments of Enveloped Dissonance
+						------ Locked behind: Legionfall ------
+						iensemble(241518),	-- Ensemble: Xuen's Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241472),	-- Ensemble: Chi-Ji's Battlegear
 					}),
-				}),
-				clWithoutLock(HUNTER, {
-					iensemble(215289, { -- Ensemble: Yaungol Slayer Battlegear (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(PALADIN, {
+						iensemble(241548),	-- Ensemble: Battleplate of the Highlord
+						------ Locked behind: Legionfall ------
+						iensemble(241499),	-- Ensemble: Radiant Lightbringer Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241452),	-- Ensemble: Light's Vanguard Battleplate
 					}),
-					iensemble(215293, { -- Ensemble: Battlegear of the Saurok Stalker (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(PRIEST, {
+						iensemble(241583),	-- Ensemble: Vestments of the Purifier
+						------ Locked behind: Legionfall ------
+						iensemble(241535),	-- Ensemble: Vestments of Blind Absolution
+						------ Locked behind: Argus Eternal ------
+						iensemble(241486),	-- Ensemble: Gilded Seraph's Raiment
 					}),
-					iensemble(215295, { -- Ensemble: Battlegear of the Unblinking Vigil (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(ROGUE, {
+						iensemble(241563),	-- Ensemble: Doomblade Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241515),	-- Ensemble: Fanged Slayer's Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241466),	-- Ensemble: Regalia of the Dashing Scoundrel
 					}),
-				}),
-				clWithoutLock(MAGE, {
-					iensemble(215189, { -- Ensemble: Regalia of the Burning Scroll (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(SHAMAN, {
+						iensemble(241556),	-- Ensemble: Regalia of Shackled Elements
+						------ Locked behind: Legionfall ------
+						iensemble(241507),	-- Ensemble: Regalia of the Skybreaker
+						------ Locked behind: Argus Eternal ------
+						iensemble(241458),	-- Ensemble: Garb of Venerated Spirits
 					}),
-					iensemble(215193, { -- Ensemble: Regalia of the Chromatic Hydra (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(WARLOCK, {
+						iensemble(241579),	-- Ensemble: Legacy of Azj'aqir
+						------ Locked behind: Legionfall ------
+						iensemble(241531),	-- Ensemble: Diabolic Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241482),	-- Ensemble: Grim Inquisitor's Regalia
 					}),
-					iensemble(215196, { -- Ensemble: Chronomancer Regalia (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					clWithoutLock(WARRIOR, {
+						iensemble(241544),	-- Ensemble: Warplate of the Obsidian Aspect
+						------ Locked behind: Legionfall ------
+						iensemble(241494),	-- Ensemble: Titanic Onslaught Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241447),	-- Ensemble: Juggernaut Battlegear
 					}),
-				}),
-				clWithoutLock(MONK, {
-					iensemble(215252, { -- Ensemble: Vestments of the Red Crane (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					------ Trial of Valor: Ensambles of the Chosen Dead ------
+					------ Locked behind: Rise of the Nightfallen ------
+					filter(CLOTH, {
+						iensemble(241607),	-- Ensemble: Regalia of the Chosen Dead
 					}),
-					iensemble(215255, { -- Ensemble: Fire-Charm Vestments (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(LEATHER, {
+						iensemble(241604),	-- Ensemble: Garb of the Chosen Dead
 					}),
-					iensemble(215256, { -- Ensemble: Vestments of the Seven Sacred Seals (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(MAIL, {
+						iensemble(241601),	-- Ensemble: Chains of the Chosen Dead
 					}),
-				}),
-				clWithoutLock(PALADIN, {
-					iensemble(215330, { -- Ensemble: White Tiger Battlegear (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215334, { -- Ensemble: Battlegear of the Lightning Emperor (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215335, { -- Ensemble: Vestments of Winged Triumph (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(PRIEST, {
-					iensemble(215199, { -- Ensemble: Guardian Serpent Regalia (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215201, { -- Ensemble: Regalia of the Exorcist (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215204, { -- Ensemble: Regalia of Ternion Glory (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(ROGUE, {
-					iensemble(215261, { -- Ensemble: Battlegear of the Thousandfold Blades (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215264, { -- Ensemble: Nine-Tail Battlegear (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215267, { -- Ensemble: Barbed Assassin Battlegear (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(SHAMAN, {
-					iensemble(215298, { -- Ensemble: Regalia of the Firebird (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215302, { -- Ensemble: Regalia of the Witch Doctor (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215304, { -- Ensemble: Regalia of Celestial Harmony (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARLOCK, {
-					iensemble(215208, { -- Ensemble: Sha Skin Regalia (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215210, { -- Ensemble: Regalia of the Thousandfold Hells (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215214, { -- Ensemble: Regalia of the Horned Nightmare (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARRIOR, {
-					iensemble(215339, { -- Ensemble: Battleplate of Resounding Rings (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215343, { -- Ensemble: Battleplate of the Last Mogu (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215346, { -- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(PLATE, {
+						iensemble(241597),	-- Ensemble: Funerary Plate of the Chosen Dead
 					}),
 				}),
 			}),
-			n(219030, {	-- Arturos <Dungeon Apparel>
-				filter(CLOTH, {
-					iensemble(215176, { -- Ensemble: Breezebinder's Vestments (Original)
-						["cost"] = {{"c", BRONZE, 2500}},
+			n(241184, {	-- Agos the Silent <Lost and Found Apparel>
+				["coord"] = { 45.5, 67.7, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 15000 }},
+				},FILTERFUNC_itemID,{
+					filter(LEATHER, {
+						iensemble(241354),	-- Ensemble: Emerald Drake Hunter's Kit
+						iensemble(241404),	-- Ensemble: Seaborne Brigandine
+						iensemble(241405),	-- Ensemble: Skyborne Brigandine
 					}),
-					iensemble(215181, { -- Ensemble: Breezebinder's Vestments (Purple)
-						["cost"] = {{"c", BRONZE, 2500}},
+					filter(MAIL, {
+						iensemble(241398),	-- Ensemble: Earthbreaker Dragonscale
+						iensemble(241401),	-- Ensemble: Sunborne Runemail
 					}),
-					iensemble(215182, { -- Ensemble: Breezebinder's Vestments (Red)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-				}),
-				filter(LEATHER, {
-					iensemble(215221, { -- Ensemble: Mogubreaker Battlegear (Black)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215222, { -- Ensemble: Mogubreaker Battlegear (Original)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215223, { -- Ensemble: Mogubreaker Battlegear (Red)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215224, { -- Ensemble: Mogubreaker Battlegear (Yellow)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-				}),
-				filter(MAIL, {
-					iensemble(215272, { -- Ensemble: Mogu Lord's Regalia (Black)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215273, { -- Ensemble: Mogu Lord's Regalia (Gold)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215274, { -- Ensemble: Mogu Lord's Regalia (Jade)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-				}),
-				filter(PLATE, {
-					iensemble(215310, { -- Ensemble: Swarmbreaker's Battleplate (Dark)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215311, { -- Ensemble: Swarmbreaker's Battleplate (Light)
-						["cost"] = {{"c", BRONZE, 2500}},
-					}),
-					iensemble(215312, { -- Ensemble: Swarmbreaker's Battleplate (Original)
-						["cost"] = {{"c", BRONZE, 2500}},
+					filter(PLATE, {
+						iensemble(241394),	-- Ensemble: Val'kyr's Warharness
+						iensemble(241393),	-- Ensemble: Winged Plate of the Valhalas Champion
 					}),
 				}),
 			}),
-			n(219028, {	-- Durus <Normal Raid Apparel>
-				["crs"] = { 225269 }	-- Durus <Normal Raid Apparel>
-			}),
-			n(219028, {	-- Durus <Normal Raid Apparel>
-				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215321, { -- Ensemble: Plate of the Lost Catacomb (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
+			n(241147, {	-- Arturos <Dungeon Apparel>
+				["coord"] = { 45.4, 68.0, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 15000 }},
+				},FILTERFUNC_itemID,{
+					filter(CLOTH, {
+						iensemble(241427),	-- Ensemble: Sanguine Oath Vestments
+						iensemble(241439),	-- Ensemble: Seawitch's Terrorcloth
+						iensemble(241428),	-- Ensemble: Vesture of Borrowed Souls
+						------ Locked behind: Legionfall ------
+						iensemble(241426),	-- Ensemble: Raiment of Night Eternal
 					}),
-					iensemble(215325, { -- Ensemble: Battleplate of the All-Consuming Maw (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(LEATHER, {
+						iensemble(241425),	-- Ensemble: Bindings of Hungering Flesh
+						iensemble(241436),	-- Ensemble: Nighthide Coat
+						iensemble(241424),	-- Ensemble: Thirsting Hides
+						------ Locked behind: Legionfall ------
+						iensemble(241423),	-- Ensemble: Guise of the Nightstalker
 					}),
-					iensemble(215326, { -- Ensemble: Battleplate of Cyclopean Dread (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(MAIL, {
+						iensemble(241422),	-- Ensemble: Armor of the Skyfather's Chosen
+						iensemble(241421),	-- Ensemble: Ravensteel Mail
+						------ Locked behind: Legionfall ------
+						iensemble(241420),	-- Ensemble: Scalemail of Devouring Night
 					}),
-				}),
-				clWithoutLock(DRUID, {
-					iensemble(215243, { -- Ensemble: Vestments of the Eternal Blossom (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215246, { -- Ensemble: Vestments of the Haunted Forest (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215249, { -- Ensemble: Vestments of the Shattered Vale (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(HUNTER, {
-					iensemble(215288, { -- Ensemble: Yaungol Slayer Battlegear (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215292, { -- Ensemble: Battlegear of the Saurok Stalker (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215294, { -- Ensemble: Battlegear of the Unblinking Vigil (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(MAGE, {
-					iensemble(215191, { -- Ensemble: Regalia of the Burning Scroll (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215194, { -- Ensemble: Regalia of the Chromatic Hydra (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215197, { -- Ensemble: Chronomancer Regalia (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(MONK, {
-					iensemble(215251, { -- Ensemble: Vestments of the Red Crane (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215253, { -- Ensemble: Fire-Charm Vestments (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215258, { -- Ensemble: Vestments of the Seven Sacred Seals (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(PALADIN, {
-					iensemble(215329, { -- Ensemble: White Tiger Battlegear (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215332, { -- Ensemble: Battlegear of the Lightning Emperor (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215337, { -- Ensemble: Vestments of Winged Triumph (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(PRIEST, {
-					iensemble(215198, { -- Ensemble: Timeworn Malevolent Mooncloth Regalia (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215202, { -- Ensemble: Regalia of the Exorcist (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215206, { -- Ensemble: Regalia of Ternion Glory (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(ROGUE, {
-					iensemble(215260, { -- Ensemble: Battlegear of the Thousandfold Blades (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215263, { -- Ensemble: Nine-Tail Battlegear (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215266, { -- Ensemble: Barbed Assassin Battlegear (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(SHAMAN, {
-					iensemble(215297, { -- Ensemble: Regalia of the Firebird (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215300, { -- Ensemble: Regalia of the Witch Doctor (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215303, { -- Ensemble: Regalia of Celestial Harmony (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARLOCK, {
-					iensemble(215209, { -- Ensemble: Sha Skin Regalia (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215212, { -- Ensemble: Regalia of the Thousandfold Hells (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215215, { -- Ensemble: Regalia of the Horned Nightmare (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARRIOR, {
-					iensemble(215338, { -- Ensemble: Battleplate of Resounding Rings (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215341, { -- Ensemble: Battleplate of Resounding Rings (New Appearances)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215344, { -- Ensemble: Battleplate of the Last Mogu (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215347, { -- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
-						["cost"] = {{"c", BRONZE, 5000}},
+					filter(PLATE, {
+						iensemble(241418),	-- Ensemble: Bloodforged Battleplate
+						iensemble(241434),	-- Ensemble: Chains of Nightmare's Embrace
+						iensemble(241419),	-- Ensemble: Honorforged Valorplate
+						iensemble(241431),	-- Ensemble: Suramar Silver Plating
+						------ Locked behind: Legionfall ------
+						iensemble(241417),	-- Ensemble: Nightforged Felplate
 					}),
 				}),
 			}),
-			n(213661, {	-- Erus <Scrapper>
-				["crs"] = { 217663 }	-- Durus <Normal Raid Apparel>
-			}),
-			n(213661, {	-- Erus <Scrapper>
-				i(224076),	-- Timerunner's Bow
-				i(224077),	-- Timerunner's Dagger
-				i(224075),	-- Timerunner's Greatsword
-				i(224079),	-- Timerunner's Mace
-				i(224078),	-- Timerunner's Shield
-				i(224081),	-- Timerunner's Staff
-				i(224080),	-- Timerunner's Sword
-			}),
-			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
-				["crs"] = { 220618 },	-- Grandmaster Jakkus <Class Apparel>
-			}),
-			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
-				clWithoutLock(DEATHKNIGHT, {
-					iensemble(217824, { -- Arsenal: Webbed Soulforged Weaponry
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217837, { -- Ensemble: Webbed Soulforged Exoskeleton
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(DEMONHUNTER, {
-					iensemble(217828, { -- Arsenal: Aldrachi Blasphemer's Glaives
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217842, { -- Ensemble: Aldrachi Blasphemer's Flames
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(DRUID, {
-					iensemble(217829, { -- Arsenal: Ela'lothen's Blessings of Rebirth
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217843, { -- Ensemble: Ela'lothen's Vestment of Rebirth
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(EVOKER, {
-					iensemble(217821, { -- Arsenal: Treasure of the Gold Hoarder
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217835, { -- Ensemble: Scales of the Gold Hoarder
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(HUNTER, {
-					iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(MAGE, {
-					iensemble(217823, { -- Arsenal: Sin'dorei Magister's Enchantment
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217836, { -- Ensemble: Sin'dorei Magister's Regalia
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(MONK, {
-					iensemble(217827, { -- Arsenal: Shado-Pan Watcher Arsenal
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217841, { -- Ensemble: Shado-Pan Watcher Guise
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(PALADIN, {
-					iensemble(217832, { -- Arsenal: Armaments of the Holy Avenger
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217846, { -- Ensemble: Plate of the Holy Avenger
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(PRIEST, {
-					iensemble(217831, { -- Arsenal: Secrets of the Abyssal Cult
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217845, { -- Ensemble: Silks of the Abyssal Cult
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(ROGUE, {
-					iensemble(217830, { -- Arsenal: Igneous Onyx Blades
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217844, { -- Ensemble: Igneous Onyx Uniform
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(SHAMAN, {
-					iensemble(217819, { -- Arsenal: Tools of Krag'wa's Disciple
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217833, { -- Ensemble: Imminence of Krag'wa's Disciple
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(WARLOCK, {
-					iensemble(217826, { -- Arsenal: Instruments of Temptation's Call
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217839, { -- Ensemble: Jewels of Temptation's Call
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-				clWithoutLock(WARRIOR, {
-					iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
-						["cost"] = {{"c", BRONZE, 3000}},
-					}),
-					iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
-						["cost"] = {{"c", BRONZE, 4000}},
-					}),
-				}),
-			}),
-			n(219032, {	-- Hemet Nesingwary XVII <Beastmaster>
-				["crs"] = { 219331 },	-- Hemet Nesingwary XVII <Beastmaster>
-			}),
-			n(219032, {	-- Hemet Nesingwary XVII <Beastmaster>
-				i(218111, {	-- Amber Pterrordax (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(87786, {	-- Black Riding Yak (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213623, {	-- Bloody Skyscreamer (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(213624, {	-- Cobalt Juggernaut (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(213598, {	-- Dashing Windsteed (MOUNT!)
-					["cost"] = {{"c", BRONZE, 6600}},
-				}),
-				i(213596, {	-- Daystorm Windsteed (MOUNT!)
-					["cost"] = {{"c", BRONZE, 6600}},
-				}),
-				i(213595, {	-- Feathered Windsurfer (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213625, {	-- Fel Iron Juggernaut (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(213597, {	-- Forest Windsteed (MOUNT!)
-					["cost"] = {{"c", BRONZE, 6600}},
-				}),
-				i(213602, {	-- Gilded Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213576, {	-- Golden Discus (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213601, {	-- Guardian Quilen (MOUNT!)
-					["cost"] = {{"c", BRONZE, 6600}},
-				}),
-				i(213621, {	-- Jade Pterrordax (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(87784, {	-- Jungle Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(84753, {	-- Kafa Yak (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213609, {	-- Little Red Riding Goat (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213607, {	-- Luxurious Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213600, {	-- Marble Quilen (MOUNT!)
-					["cost"] = {{"c", BRONZE, 6600}},
-				}),
-				i(87787, {	-- Modest Expedition Yak (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213584, {	-- Mogu Hazeblazer (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213622, {	-- Night Pterrorwing (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(213603, {	-- Pale Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213627, {	-- Palehide Mushan Beast (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213626, {	-- Purple Shado-Pan Riding Tiger (MOUNT!)
-					["cost"] = {{"c", BRONZE, 4400}},
-				}),
-				i(213628, {	-- Riverwalker Mushan (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213605, {	-- Rose Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213606, {	-- Silver Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213582, {	-- Sky Surfer (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213608, {	-- Snowy Riding Goat (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(213604, {	-- Tropical Riding Crane (MOUNT!)
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-
-				------ Old Mounts ------
-				i(94230, {	-- Amber Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 18700}},
-				}),
-				i(87777, {	-- Astral Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 18700}},
-				}),
-				i(95059, {	-- Clutch of Ji-Kun (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(94228, {	-- Cobalt Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(87771, {	-- Heavenly Onyx Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(94231, {	-- Jade Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 18700}},
-				}),
-				i(104253, {	-- Kor'kron Juggernaut (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(224374, {	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(94229, {	-- Slate Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 18700}},
-				}),
-				i(89783, {	-- Son of Galleon (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(93666, {	-- Spawn of Horridon (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(95057, {	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(104269, {	-- Thundering Onyx Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-			}),
-			n(219013, {	-- Horos <Rare Collections>
-				["crs"] = { 217051 },	-- Horos <Rare Collections>
-			}),
-			n(219013, {	-- Horos <Rare Collections>
-				------ Unobtainables ------
-				i(89205, {	-- Mini Mana Bomb Toy (TOY!)
-					["cost"] = {{"c", BRONZE, 500}},
-					["races"] = HORDE_ONLY,
-				}),
-				i(89196, {	-- Theramore Tabard
-					["cost"] = {{"c", BRONZE, 500}},
-					["races"] = ALLIANCE_ONLY,
-				}),
-
-				------ Still Obtainable ------
-				i(86589, {	-- Ai-Li's Skymirror
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(86582, {	-- Aqua Jewel
-					["cost"] = {{"c", BRONZE, 7700}},
-				}),
-				i(86565, {	-- Battle Horn
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(104302, {	-- Blackflame Daggers
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-				i(134023, {	-- Bottled Tornado
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(86575, {	-- Chalice of Secrets
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(86590, {	-- Essence of the Breeze
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(104309, {	-- Eternal Kiln
-					["cost"] = {{"c", BRONZE, 50000}},
-				}),
-				i(86578, {	-- Eternal Warrior's Sigil
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(86581, {	-- Farwater Conch
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(98136, {	-- Gastropod Shell
-					["cost"] = {{"c", BRONZE, 50000}},
-				}),
-				i(86594, {	-- Helpful Wikky's Whistle
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(86593, {	-- Hozen Beach Ball
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(86571, {	-- Kang's Bindstone
-					["cost"] = {{"c", BRONZE, 3850}},
-				}),
-				i(86568, {	-- Mr. Smite's Brass Compass
-					["cost"] = {{"c", BRONZE, 7700}},
-				}),
-				i(104262, {	-- Odd Polished Stone
-					["cost"] = {{"c", BRONZE, 2200}},
-				}),
-				i(86588, {	-- Pandaren Firework Launcher
-					["cost"] = {{"c", BRONZE, 7700}},
-				}),
-				i(86586, {	-- Panflute of Pandaria
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(86583, {	-- Salyin Battle Banner
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(86573, {	-- Shard of Archstone
-					["cost"] = {{"c", BRONZE, 4950}},
-				}),
-				i(104331, {	-- Warning Sign
-					["cost"] = {{"c", BRONZE, 38500}},
-				}),
-			}),
-			n(219025, {	-- Larah Treebender <World Apparel>
-				iensemble(215219, { -- Ensemble: Guise of the Shado-Pan (Dark)
-					["cost"] = {{"c", BRONZE, 2500}},
-					["description"] = "All appearances are MoP: Remix exclusive.",
-				}),
-				iensemble(215220, { -- Ensemble: Guise of the Shado-Pan (Original)
-					["cost"] = {{"c", BRONZE, 2500}},
-				}),
-				iensemble(215275, { -- Ensemble: Kor'kron Shaman Vestments (Cool)
-					["cost"] = {{"c", BRONZE, 2500}},
-					["description"] = "All appearances are MoP: Remix exclusive.",
-				}),
-				iensemble(215276, { -- Ensemble: Kor'kron Shaman Vestments (Warm)
-					["cost"] = {{"c", BRONZE, 2500}},
-					["description"] = "All appearances are MoP: Remix exclusive.",
-				}),
-				iensemble(215277, { -- Ensemble: Kor'kron Shaman Vestments (Yellow)
-					["cost"] = {{"c", BRONZE, 2500}},
-				}),
-				iensemble(215352, { -- Ensemble: Robes of Quiet Reflection (Brown)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215353, { -- Ensemble: Robes of Quiet Reflection (Green)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215354, { -- Ensemble: Robes of Quiet Reflection (Red)
-					["cost"] = {{"c", BRONZE, 1250}},
-					["description"] = "All appearances are MoP: Remix exclusive.",
-				}),
-				iensemble(215355, { -- Ensemble: Robes of Quiet Reflection (Yellow)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215238, { -- Ensemble: Tian Monastery Clothing (Blue)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215239, { -- Ensemble: Tian Monastery Clothing (Red)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215240, { -- Ensemble: Tian Monastery Clothing (White)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215285, { -- Ensemble: Sun Pearl Clothing (Green)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215286, { -- Ensemble: Sun Pearl Clothing (Red)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215287, { -- Ensemble: Sun Pearl Clothing (Yellow)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215356, { -- Ensemble: Vestments of Serenity (Blue)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215357, { -- Ensemble: Vestments of Serenity (Green)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				iensemble(215358, { -- Ensemble: Vestments of Serenity (White)
-					["cost"] = {{"c", BRONZE, 1250}},
-				}),
-				i(226127, {	-- Recruit's Shirt (White)
-					["cost"] = {{"c", BRONZE, 5}},
-				}),
-				filter(CLOTH, {
-					iensemble(215183, { -- Ensemble: Spirit-Waker's Vestments (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215184, { -- Ensemble: Spirit-Waker's Vestments (Green)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215185, { -- Ensemble: Spirit-Waker's Vestments (Red)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215186, { -- Ensemble: Mistwalker's Vestments (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215187, { -- Ensemble: Mistwalker's Vestments (Original)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215188, { -- Ensemble: Mistwalker's Vestments (White)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215216, { -- Ensemble: Vestments of the Eternal Dynasty (Black)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215217, { -- Ensemble: Vestments of the Eternal Dynasty (Blue)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215218, { -- Ensemble: Vestments of the Eternal Dynasty (Yellow)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-				}),
-				filter(LEATHER, {
-					iensemble(215225, { -- Ensemble: Thunderpaw Battlegear (Dark)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215226, { -- Ensemble: Thunderpaw Battlegear (Light)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215227, { -- Ensemble: Thunderpaw Battlegear (Original)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215228, { -- Ensemble: Thunderpaw Battlegear (Red)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215229, { -- Ensemble: Mistveil Leathers (Black)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215230, { -- Ensemble: Mistveil Leathers (Brown)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215231, { -- Ensemble: Mistveil Leathers (Crimson)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215232, { -- Ensemble: Mistveil Leathers (Indigo)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215269, { -- Ensemble: Snowdrift Battlegear (Blue)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215270, { -- Ensemble: Snowdrift Battlegear (Brown)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215271, { -- Ensemble: Snowdrift Battlegear (Red)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-				}),
-				filter(MAIL, {
-					iensemble(215282, { -- Ensemble: Dawnwatcher's Scale Armor (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215283, { -- Ensemble: Dawnwatcher's Scale Armor (Purple)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215284, { -- Ensemble: Dawnwatcher's Scale Armor (Red)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215306, { -- Ensemble: Jade Guardian's Regalia (Blue)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215307, { -- Ensemble: Jade Guardian's Regalia (Brown)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215308, { -- Ensemble: Jade Guardian's Regalia (Red)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215309, { -- Ensemble: Jade Guardian's Regalia (Yellow)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215278, { -- Ensemble: Trailseeker's Laminar Armor (Black)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215279, { -- Ensemble: Trailseeker's Laminar Armor (Gold)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215280, { -- Ensemble: Trailseeker's Laminar Armor (Green)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215281, { -- Ensemble: Trailseeker's Laminar Armor (White)
-						["cost"] = {{"c", BRONZE, 750}},
-						-- currently inaccurate in Wago, but hotfixed from Blizzard
-						-- learning either 215279 or this ensemble seems to grant both 3407 & 3409
-						["tmogSetID"] = 3409,
-					}),
-				}),
-				filter(PLATE, {
-					iensemble(215348, { -- Ensemble: Gatecrasher's Battleplate (Black)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215349, { -- Ensemble: Gatecrasher's Battleplate (Blue)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215350, { -- Ensemble: Gatecrasher's Battleplate (Green)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215351, { -- Ensemble: Gatecrasher's Battleplate (Red)
-						["cost"] = {{"c", BRONZE, 2000}},
-					}),
-					iensemble(215316, { -- Ensemble: Shan'ze Warplate (Green)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215317, { -- Ensemble: Shan'ze Warplate (Purple)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215318, { -- Ensemble: Shan'ze Warplate (Red)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215319, { -- Ensemble: Shan'ze Warplate (Yellow)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215313, { -- Ensemble: Spiritguard's Warplate (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215314, { -- Ensemble: Spiritguard's Warplate (Gold)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-					iensemble(215315, { -- Ensemble: Spiritguard's Warplate (Silver)
-						["cost"] = {{"c", BRONZE, 750}},
-					}),
-				}),
-			}),
-			n(219024, {	-- Lidamorrutu <Gem Procurement>
-				i(223904, {	-- Asynchronized Cogwheel Gem
-					["cost"] = {{"c", BRONZE, 400}},
-				}),
-				i(223905, {	-- Asynchronized Meta Gem
-					["cost"] = {{"c", BRONZE, 500}},
-				}),
-				i(223907, {	-- Asynchronized Prismatic Gem
-					["cost"] = {{"c", BRONZE, 200}},
-				}),
-				i(223906, {	-- Asynchronized Tinker Gem
-					["cost"] = {{"c", BRONZE, 300}},
-				}),
-			}),
-			n(219033, {	-- Nostwin <Snacks and Scrolls>
-				i(217925, {	-- Bottle of Bees
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(44922, {	-- Glyph of Stars
-					["cost"] = {{"c", BRONZE, 5}},
-				}),
-				i(217930, {	-- Nostwin's Voucher
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217901, {	-- Timeless Drums
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217608, {	-- Timeless Scroll of Battle Shout
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(217730, {	-- Timeless Scroll of Chaos
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(217929, {	-- Timeless Scroll of Cleansing
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217606, {	-- Timeless Scroll of Fortitude
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(217605, {	-- Timeless Scroll of Intellect
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(217731, {	-- Timeless Scroll of Mystic Power
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(217928, {	-- Timeless Scroll of Resurrection
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217956, {	-- Timeless Scroll of Summoning
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217607, {	-- Timeless Scroll of the Wild
-					["cost"] = {{"c", BRONZE, 10}},
-				}),
-				i(211254, {	-- Timerunner's Bandage
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217905, {	-- Timerunner's Draught of Health
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217904, {	-- Timerunner's Draught of Power
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-				i(217902, {	-- Timerunner's Vial
-					["cost"] = {{"c", BRONZE, 20}},
-				}),
-			}),
-			n(219027, {	-- Pythagorus <Heroic and Mythic Raid Apparel>
-				-- Heirlooms
-				i(104409, {	-- Hellscream's Barrier
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104404, {	-- Hellscream's Cleaver
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104405, {	-- Hellscream's Decapitator
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104401, {	-- Hellscream's Doomblade
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104403, {	-- Hellscream's Pig Sticker
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104400, {	-- Hellscream's Razor
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104407, {	-- Hellscream's Shield Wall
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104408, {	-- Hellscream's Tome of Destruction
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104406, {	-- Hellscream's War Staff
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104399, {	-- Hellscream's Warbow
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				i(104402, {	-- Hellscream's Warmace
-					["cost"] = {
-						{ "c", BRONZE, 8000 },
-						{ "i", BONES_OF_MANNOROTH, 2 }
-					},
-				}),
-				-- Cosmetics
-				i(224459, {	-- Tusks of Mannoroth
-					["cost"] = {
-						{ "c", BRONZE, 38500 },
-						{ "i", BONES_OF_MANNOROTH, 20 }
-					},
-					["timeline"] = { "removed 10.2.7.55142" },
-				}),
-				iensemble(227550, {	-- Tusks of Mannoroth
-					["cost"] = {
-						{ "c", BRONZE, 38500 },
-						{ "i", BONES_OF_MANNOROTH, 20 }
-					},
-					["timeline"] = { "added 10.2.7.55142", REMOVED_LEGION_REMIX_END },
-				}),
-				-- Classes
-				clWithoutLock(DEATHKNIGHT, {
-					iensemble(215322, { -- Ensemble: Plate of the Lost Catacomb (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215323, { -- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215328, { -- Ensemble: Battleplate of Cyclopean Dread (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(DRUID, {
-					iensemble(215242, { -- Ensemble: Vestments of the Eternal Blossom (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215244, { -- Ensemble: Vestments of the Haunted Forest (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215248, { -- Ensemble: Vestments of the Shattered Vale (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(HUNTER, {
-					iensemble(215290, { -- Ensemble: Yaungol Slayer Battlegear (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215291, { -- Ensemble: Battlegear of the Saurok Stalker (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215296, { -- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(MAGE, {
-					iensemble(215190, { -- Ensemble: Regalia of the Burning Scroll (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215192, { -- Ensemble: Regalia of the Chromatic Hydra (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215195, { -- Ensemble: Chronomancer Regalia (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(MONK, {
-					iensemble(215250, { -- Ensemble: Vestments of the Red Crane (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215254, { -- Ensemble: Fire-Charm Vestments (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215259, { -- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(PALADIN, {
-					iensemble(215331, { -- Ensemble: White Tiger Battlegear (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215333, { -- Ensemble: Battlegear of the Lightning Emperor (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215336, { -- Ensemble: Vestments of Winged Triumph (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(PRIEST, {
-					iensemble(215200, { -- Ensemble: Timeworn Dreadful Mooncloth Regalia (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215203, { -- Ensemble: Regalia of the Exorcist (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215205, { -- Ensemble: Regalia of Ternion Glory (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(ROGUE, {
-					iensemble(215262, { -- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215265, { -- Ensemble: Nine-Tail Battlegear (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215268, { -- Ensemble: Barbed Assassin Battlegear (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(SHAMAN, {
-					iensemble(215299, { -- Ensemble: Regalia of the Firebird (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215301, { -- Ensemble: Regalia of the Witch Doctor (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215305, { -- Ensemble: Regalia of Celestial Harmony (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARLOCK, {
-					iensemble(215207, { -- Ensemble: Sha Skin Regalia (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215211, { -- Ensemble: Regalia of the Thousandfold Hells (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215213, { -- Ensemble: Regalia of the Horned Nightmare (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-				clWithoutLock(WARRIOR, {
-					iensemble(215340, { -- Ensemble: Battleplate of Resounding Rings (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215342, { -- Ensemble: Battleplate of the Last Mogu (Heroic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-					iensemble(215345, { -- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
-						["cost"] = {{"c", BRONZE, 5000}},
-					}),
-				}),
-			}),
-			n(QUESTS, sharedData({
-				["isDaily"] = true,
+			--[[
+			n(251042, {	-- Domelius <Housing Vendor> (Stripped of his title and no vendor 'option' as of build 62687 but is still present.)
+				["coord"] = { 45.9, 67.8, BROKEN_ISLES },
 				["groups"] = {
-					i(223908),	-- Minor Bronze Cache
 				},
-			}, {
-				q(80448, {	-- A Fresh Scene
-					["provider"] = { "n", 219025 },	-- Larah Treebender <World Apparel>
+			}),
+			--]]
+			n(241143, {	-- Durus <Normal Raid Apparel>
+				["coord"] = { 45.4, 67.9, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 20000 }},
+				},FILTERFUNC_itemID,{
+					clWithoutLock(DEATHKNIGHT, {
+						iensemble(241550),	-- Ensemble: Dreadwyrm Battleplate
+						------ Locked behind: Legionfall ------
+						iensemble(241504),	-- Ensemble: Gravewarden Armaments
+						------ Locked behind: Argus Eternal ------
+						iensemble(241455),	-- Ensemble: Dreadwake Armor
+					}),
+					clWithoutLock(DEMONHUNTER, {
+						iensemble(241577),	-- Ensemble: Vestment of Second Sight
+						------ Locked behind: Legionfall ------
+						iensemble(241528),	-- Ensemble: Demonbane Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241478),	-- Ensemble: Felreaper Vestments
+					}),
+					clWithoutLock(DRUID, {
+						iensemble(241572),	-- Ensemble: Garb of the Astral Warden
+						------ Locked behind: Legionfall ------
+						iensemble(241522),	-- Ensemble: Stormheart Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241474),	-- Ensemble: Bearmantle Battlegear
+					}),
+					clWithoutLock(HUNTER, {
+						iensemble(241561),	-- Ensemble: Eagletalon Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241511),	-- Ensemble: Wildstalker Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241462),	-- Ensemble: Serpentstalker Guise
+					}),
+					clWithoutLock(MAGE, {
+						iensemble(241588),	-- Ensemble: Regalia of Everburning Knowledge
+						------ Locked behind: Legionfall ------
+						iensemble(241538),	-- Ensemble: Regalia of the Arcane Tempest
+						------ Locked behind: Argus Eternal ------
+						iensemble(241492),	-- Ensemble: Runebound Regalia
+					}),
+					clWithoutLock(MONK, {
+						iensemble(241567),	-- Ensemble: Vestments of Enveloped Dissonance
+						------ Locked behind: Legionfall ------
+						iensemble(241520),	-- Ensemble: Xuen's Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241471),	-- Ensemble: Chi-Ji's Battlegear
+					}),
+					clWithoutLock(PALADIN, {
+						iensemble(241546),	-- Ensemble: Battleplate of the Highlord
+						------ Locked behind: Legionfall ------
+						iensemble(241498),	-- Ensemble: Radiant Lightbringer Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241450),	-- Ensemble: Light's Vanguard Battleplate
+					}),
+					clWithoutLock(PRIEST, {
+						iensemble(241584),	-- Ensemble: Vestments of the Purifier
+						------ Locked behind: Legionfall ------
+						iensemble(241536),	-- Ensemble: Vestments of Blind Absolution
+						------ Locked behind: Argus Eternal ------
+						iensemble(241488),	-- Ensemble: Gilded Seraph's Raiment
+					}),
+					clWithoutLock(ROGUE, {
+						iensemble(241564),	-- Ensemble: Doomblade Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241514),	-- Ensemble: Fanged Slayer's Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241467),	-- Ensemble: Regalia of the Dashing Scoundrel
+					}),
+					clWithoutLock(SHAMAN, {
+						iensemble(241554),	-- Ensemble: Regalia of Shackled Elements
+						------ Locked behind: Legionfall ------
+						iensemble(241508),	-- Ensemble: Regalia of the Skybreaker
+						------ Locked behind: Argus Eternal ------
+						iensemble(241460),	-- Ensemble: Garb of Venerated Spirits
+					}),
+					clWithoutLock(WARLOCK, {
+						iensemble(241580),	-- Ensemble: Legacy of Azj'aqir
+						------ Locked behind: Legionfall ------
+						iensemble(241530),	-- Ensemble: Diabolic Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241483),	-- Ensemble: Grim Inquisitor's Regalia
+					}),
+					clWithoutLock(WARRIOR, {
+						iensemble(241542),	-- Ensemble: Warplate of the Obsidian Aspect
+						------ Locked behind: Legionfall ------
+						iensemble(241496),	-- Ensemble: Titanic Onslaught Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241448),	-- Ensemble: Juggernaut Battlegear
+					}),
 				}),
-				q(80446, {	-- Looking for Group
-					["provider"] = { "n", 219030 },	-- Arturos <Dungeon Apparel>
+			}),
+			n(246030, {	-- Freddie Threads <Discount Cloak Dealer>
+				["coord"] = { 45.4, 67.8, BROKEN_ISLES },
+				["groups"] = {
+					filter(CLOAKS, {
+						iensemble(242231, {	-- Ensemble: Cloaks of the Fel Battler
+							["cost"] = {{ "c", BRONZE, 2000 }},
+						}),
+						iensemble(242240, {	-- Ensemble: Cloaks of the Green Mountains
+							["cost"] = {{ "c", BRONZE, 4000 }},
+						}),
+						iensemble(242232, {	-- Ensemble: Cloaks of the Ironskin Gladiator
+							["cost"] = {{ "c", BRONZE, 8000 }},
+						}),
+						iensemble(241592, {	-- Ensemble: Cloaks of the Lost Combatant
+							["cost"] = {{ "c", BRONZE, 8000 }},
+						}),
+						iensemble(241593, {	-- Ensemble: Cloaks of the Lost Gladiator
+							["cost"] = {{ "c", BRONZE, 4000 }},
+						}),
+						iensemble(242233, {	-- Ensemble: Cloaks of Silken Knowledge
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						iensemble(242234, {	-- Ensemble: Dalaran's Finest Silken Cloaks
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						iensemble(242229, {	-- Ensemble: Druidic Fur Drapes
+							["cost"] = {{ "c", BRONZE, 2000 }},
+						}),
+						iensemble(241591, {	-- Ensemble: Legion Hunter's Capes
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						iensemble(235630, {	-- Ensemble: Runespeaker Wraps
+							["cost"] = {{ "c", BRONZE, 4000 }},
+						}),
+						iensemble(242228, {	-- Ensemble: Shrouds of Azj'Aqir
+							["cost"] = {{ "c", BRONZE, 8000 }},
+						}),
+						iensemble(242230, {	-- Ensemble: Shrouds of the Lost Deathwyrms
+							["cost"] = {{ "c", BRONZE, 8000 }},
+						}),
+						iensemble(241590, {	-- Ensemble: Stormborne Wraps
+							["cost"] = {{ "c", BRONZE, 4000 }},
+						}),
+						------ Locked behind: Legionfall ------
+						iensemble(242235, {	-- Ensemble: Drapes of Devouring Night
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						------ Locked behind: Argus Eternal ------
+						iensemble(242237, {	-- Ensemble: Argussian Demonsbane Cloaks
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						iensemble(242238, {	-- Ensemble: Cloaks of the Antoran Guard
+							["cost"] = {{ "c", BRONZE, 8000 }},
+						}),
+						iensemble(242236, {	-- Ensemble: Drapes of Eredar Finery
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+						iensemble(242239, {	-- Ensemble: Eredar Battle Capes
+							["cost"] = {{ "c", BRONZE, 6000 }},
+						}),
+					}),
+				},
+			}),
+			n(241186, {	-- Grandmaster Jakkus <Class Mounts>
+				["coord"] = { 45.8, 68.2, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 20000 }},
+				},FILTERFUNC_itemID,{
+					clWithoutLock(DEATHKNIGHT, {
+						i(252954),	-- Felscorned Reins of the Vilebrood Vanquisher (MOUNT!)
+					}),
+					clWithoutLock(DEMONHUNTER, {
+						i(253013),	-- Slayer's Reins of the Felscorned Shrieker (MOUNT!)
+					}),
+					clWithoutLock(DRUID, {
+						i(253024),	-- Feldruid's Scornwing Idol (MOUNT!)
+					}),
+					clWithoutLock(HUNTER, {
+						i(253025),	-- Reins of the Felscorned Wolfhawk (MOUNT!)
+					}),
+					clWithoutLock(MAGE, {
+						i(253026),	-- Archmage's Felscorned Disc (MOUNT!)
+					}),
+					clWithoutLock(MONK, {
+						i(253027),	-- Felscorned Grandmaster's Bell (MOUNT!)
+					}),
+					clWithoutLock(PALADIN, {
+						i(253028),	-- Reins of the Highlord's Felscorned Charger (MOUNT!)
+					}),
+					clWithoutLock(PRIEST, {
+						i(253029),	-- Felscorned Seeker's Whistle (MOUNT!)
+					}),
+					clWithoutLock(ROGUE, {
+						i(253030),	-- Shadowblade's Reins of Felscorned Portent (MOUNT!)
+					}),
+					clWithoutLock(SHAMAN, {
+						i(253031),	-- Felscorned Tempest Totem (MOUNT!)
+					}),
+					clWithoutLock(WARLOCK, {
+						i(253032),	-- Felscorned Reins of the Netherlord's Dreadsteed (MOUNT!)
+					}),
+					clWithoutLock(WARRIOR, {
+						i(253033),	-- Iron Reins of the Felscorned War Wrym (MOUNT!)
+					}),
 				}),
-				q(80447, {	-- Looking for More
-					["provider"] = { "n", 219027 },	-- Pythagorus <Heroic and Mythic Raid Apparel>
+			}),
+			n(241182, {	-- Hemet Nesingwary XVII <Beastmaster>
+				["coord"] = { 45.8, 68.3, BROKEN_ISLES },
+				["groups"] = {
+					------ NEW MOUNTS ------
+					i(239667, {	-- Reins of the Ashplague Fel Bat (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250426, {	-- Reins of the Aquamarine Basilisk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(239665, {	-- Reins of the Bloodhunter Fel Bat (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(251795, {	-- Reins of the Brimstone Courser (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(251796, {	-- Reins of the Chestnut Courser (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250425, {	-- Reins of the Felslate Basilisk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250757, {	-- Reins of the Gloomdark Nightmare (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250752, {	-- Reins of the Golden Sunrunner (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250429, {	-- Reins of the Highland Elderhorn (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250427, {	-- Reins of the Illidari Blightstalker (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250428, {	-- Reins of the Illidari Dreadstalker (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250424, {	-- Reins of the Leystone Basilisk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250423, {	-- Reins of the Slag Basilisk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250721, {	-- Reins of the Snowy Highmountain Eagle (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250723, {	-- Reins of the Treetop Highmountain Eagle (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250756, {	-- Reins of the Turquoise Courser (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250751, {	-- Reins of the Twilight Courser (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(239687, {	-- Reins of the Wretched Fel Bat (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					------ Locked behind: Rise of the Nightfallen ------
+					i(250728, {	-- Reins of the Arcberry Manasaber (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250760, {	-- Reins of the Bonesteed of Bloodshed (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250758, {	-- Reins of the Bonesteed of Oblivion (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250759, {	-- Reins of the Bonesteed of Plague (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250761, {	-- Reins of the Bonesteed of Triumph (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					------ Locked behind: Argus Eternal ------
+					i(250803, {	-- Garnet Ruinstrider (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250804, {	-- Longhorned Bleakhoof Talbuk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250192, {	-- Reins of the Ghastly Ur'zul (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250747, {	-- Reins of the Albino Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250746, {	-- Reins of the Bloodtooth Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250745, {	-- Reins of the Fel-scarred Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250805, {	-- Reins of the Longhorned Argussian Talbuk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250806, {	-- Reins of the Longhorned Beryl Talbuk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250802, {	-- Reins of the Longhorned Sable Talbuk (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+					i(250748, {	-- Reins of the Luminous Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 10000 }},
+					}),
+
+					------ OLD MOUNTS ------
+					i(141713, {	-- Arcadian War Turtle (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(138201, {	-- Fathom Dweller (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(138258, {	-- Reins of the Long-Forgotten Hippogryph (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(131734, {	-- Spirit of Eche'ro (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(140495, {	-- Torn Invitation (QS!) / Reins of the Llothien Prowler (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					------ Locked behind: Rise of the Nightfallen ------
+					i(137575, {	-- Fiendish Hellfire Core (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(137574, {	-- Living Infernal Core (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(142236, {	-- Midnight's Eternal Reins (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					------ Locked behind: Legionfall ------
+					i(143643, {	-- Abyss Worm (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(147806, {	-- Cloudwing Hippogryph (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(147807, {	-- Highmountain Elderhorn (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(143764, {	-- Leywoven Flying Carpet (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(147805, {	-- Valajar Stormwing (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(147804, {	-- Wild Dreamrunner (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					------ Locked behind: Argus Eternal ------
+					i(152904, {	-- Acid Belcher (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(153044, {	-- Avenging Felcrusher (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(153043, {	-- Blessed Felcrusher (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(153042, {	-- Glorious Felcrusher (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 20000 }},
+					}),
+					i(152816, {	-- Antoran Charhound (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(152903, {	-- Biletooth Gnasher (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152905, {	-- Crimson Slavermaw (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152843, {	-- Darkspore Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152841, {	-- Felglow Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152844, {	-- Lambent Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152814, {	-- Maddened Chaosrunner (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152840, {	-- Scintillating Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152789, {	-- Shackled Ur'zul (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 100000 }},
+					}),
+					i(152842, {	-- Vibrant Mana Ray (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+					i(152790, {	-- Vile Fiend (MOUNT!)
+						["cost"] = {{ "c", BRONZE, 40000 }},
+					}),
+				},
+			}),
+			n(241167, {	-- Horos <Rare Collections>
+				["coord"] = { 45.8, 68.2, BROKEN_ISLES },
+				["groups"] = {
+					filter(BATTLE_PETS, {
+						------ NEW PETS ------
+						i(239705, {	-- Morsel (PET!)
+							["cost"] = {{ "c", BRONZE, 5000 }},
+						}),
+						i(239699, {	-- Tidbit (PET!)
+							["cost"] = {{ "c", BRONZE, 5000 }},
+						}),
+						i(129108, {	-- Son of Goredome (PET!)
+							["cost"] = {{ "c", BRONZE, 5000 }},
+						}),
+						------ OLD PETS ------
+						i(140320, {	-- Corgnelius (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(136901, {	-- Eye of Inquisition (PET!)
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(140316, {	-- Firebat Pup (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(136900, {	-- Hateful Eye (PET!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						i(140261, {	-- Hungering Claw (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(136903, {	-- Nightmare Whelpling (PET!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(153252, {	-- Rebellious Imp (PET!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						i(141349, {	-- Strange Humming Crystal (QS!) / Wondrous Wisdomball (PET!)
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(130167, {	-- Thistleleaf Adventurer (PET!)
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(136922, {	-- Wyrmy Tunkins (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						------ Locked behind: Rise of the Nightfallen ------
+						i(144394, {	-- Tylarr Gronnden (PET!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						------ Locked behind: Legionfall ------
+						i(151828, {	-- Ageless Bronze Drake (PET!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(151829, {	-- Bronze Proto-Whelp (PET!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(146953, {	-- Scraps (PET!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(147841, {	-- Orphaned Felbat (PET!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						------ Locked behind: Argus Eternal ------
+						i(153026, {	-- Cross Gazer (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(153054, {	-- Docile Skyfin (PET!)
+							["cost"] = {{ "c", BRONZE, 20000 }},
+						}),
+						i(153055, {	-- Fel-Afflicted Skyfin (PET!)
+							["cost"] = {{ "c", BRONZE, 20000 }},
+						}),
+						i(153056, {	-- Grasping Manifestation (PET!)
+							["cost"] = {{ "c", BRONZE, 20000 }},
+						}),
+						i(153195, {	-- Uuna's Doll (PET!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+					}),
+					filter(TOYS, {
+						i(129165, {	-- Barnacle-Encrusted Gem (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(131724, {	-- Crystalline Eye of Undravius (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(141862, {	-- Mote of Light (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(140363, {	-- Pocket Fel Spreader (TOY!)
+							["cost"] = {{ "c", BRONZE, 20000 }},
+						}),
+						i(131717, {	-- Starlight Beacon (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(140160, {	-- Stormforged Vrykul Horn
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(130169, {	-- Tournament Favor (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						------ Locked behind: Rise of the Nightfallen ------
+						i(142265, {	-- Big Red Raygun (TOY!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						i(142528, {	-- Crate of Bobbers: Can of Worms (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(142529, {	-- Crate of Bobbers: Cat Head (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(142530, {	-- Crate of Bobbers: Tugboat (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(143662, {	-- Crate of Bobbers: Wooden Pepe (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(119211, {	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(143544, {	-- Skull of Corruption (TOY!)
+							["classes"] = { DEMONHUNTER },
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						------ Locked behind: Legionfall ------
+						i(147867, {	-- Pilfered Sweeper (TOY!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						i(147843, {	-- Sira's Extra Cloak (TOY!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						------ Locked behind: Argus Eternal ------
+						i(153204, {	-- All-Seer's Eye (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(153193, {	-- Baarut the Brisk (TOY!)
+							["cost"] = {{ "c", BRONZE, 10000 }},
+						}),
+						i(153183, {	-- Barrier Generator (TOY!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(153179, {	-- Blue Conservatory Scroll (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153182, {	-- Holy Lightsphere (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153194, {	-- Legion Communication Orb (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153126, {	-- Micro-Artillery Controller (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153181, {	-- Red Conservatory Scroll (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153253, {	-- S.F.E. Interceptor (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153293, {	-- Sightless Eye (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+						i(153124, {	-- Spire of Spite (TOY!)
+							["cost"] = {{ "c", BRONZE, 35000 }},
+						}),
+						i(153004, {	-- Unstable Portal Emitter (TOY!)
+							["cost"] = {{ "c", BRONZE, 100000 }},
+						}),
+						i(152982, {	-- Vixx's Chest of Tricks (TOY!)
+							["cost"] = {{ "c", BRONZE, 80000 }},
+						}),
+						i(153180, {	-- Yellow Conservatory Scroll (TOY!)
+							["cost"] = {{ "c", BRONZE, 25000 }},
+						}),
+					}),
+				},
+			}),
+			n(241191, {	-- Larah Treebender <World Apparel>
+				["coord"] = { 45.5, 68.4, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 15000 }},
+				},FILTERFUNC_itemID,{
+					filter(CLOTH, {
+						iensemble(241383),	-- Ensemble: Crescent Vale Raiment
+						iensemble(139170),	-- Ensemble: Fel-Infused Cloth Armor
+						iensemble(241381),	-- Ensemble: Leyline Scholar's Regalia
+						iensemble(241438),	-- Ensemble: Moonfall Robes
+						iensemble(241384),	-- Ensemble: Regalia of the Hrydshal Runespeaker
+						iensemble(241594),	-- Ensemble: Scavenged Chains of Karazhan
+						iensemble(241440),	-- Ensemble: Vestments of the Manasinged
+						iensemble(241382),	-- Ensemble: Wine-dark Royal Robes
+						------ Locked behind: Legionfall ------
+						iensemble(241364),	-- Ensemble: Riven Priesthood Regalia
+						iensemble(241444),	-- Ensemble: Vileweave Vestments
+						------ Locked behind: Argus Eternal ------
+						iensemble(241368),	-- Ensemble: Doomsinger's Cloth Armor
+						iensemble(254753),	-- Ensemble: Forgotten Conservatory Clothes
+						iensemble(253594),	-- Ensemble: Zealous Felslingers Battle Armor
+					}),
+					filter(LEATHER, {
+						iensemble(241435),	-- Ensemble: Ambervale Bonehide
+						iensemble(241437),	-- Ensemble: Battlegear of the Dreadhide Stalker
+						iensemble(139169),	-- Ensemble: Felshroud Leather Armor
+						iensemble(241379),	-- Ensemble: Haustvelt Leathers
+						iensemble(241380),	-- Ensemble: Highmountain Hides
+						iensemble(241377),	-- Ensemble: Llothien Prowler's Kit
+						iensemble(241378),	-- Ensemble: Sablehide Vestments
+						------ Locked behind: Legionfall ------
+						iensemble(241363),	-- Ensemble: Lunarblight Leathers
+						iensemble(241443),	-- Ensemble: Netherfiend Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241367),	-- Ensemble: Arinor Keeper's Leather Armor
+						iensemble(241391),	-- Ensemble: Stygian Hides
+					}),
+					filter(MAIL, {
+						iensemble(241433),	-- Ensemble: Chains of Helheim
+						iensemble(241432),	-- Ensemble: Darkwatcher Bindings
+						iensemble(241376),	-- Ensemble: Dreadthorn Battlegear
+						iensemble(139168),	-- Ensemble: Fel-Chain Mail Armor
+						iensemble(241373),	-- Ensemble: Highmountain Riverscales
+						iensemble(241375),	-- Ensemble: Scales of Remembered Eternity
+						iensemble(241374),	-- Ensemble: Stormborn Laminar Armor
+						------ Locked behind: Legionfall ------
+						iensemble(241442),	-- Ensemble: Ered'ruin Scalemail
+						iensemble(241362),	-- Ensemble: Shrinebreaker's Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241366),	-- Ensemble: Oronaar Disciple's Mail Armor
+					}),
+					filter(PLATE, {
+						iensemble(139167),	-- Ensemble: Felforged Plate Armor
+						iensemble(241430),	-- Ensemble: Jandvik Diver's Metal
+						iensemble(241370),	-- Ensemble: Kal'delar Battleplate
+						iensemble(241429),	-- Ensemble: Leyline Defender's Sunplate Armor
+						iensemble(241371),	-- Ensemble: Nar'thalas Graduate's Trim
+						iensemble(241372),	-- Ensemble: Thunderpeak Boneguards
+						iensemble(241369),	-- Ensemble: Vrykul Funereal Regalia
+						------ Locked behind: Legionfall ------
+						iensemble(241361),	-- Ensemble: Moonshatter Warplate
+						iensemble(241441),	-- Ensemble: Xorothian Plate Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(254754),	-- Ensemble: Eredath Lightseeker's Regalia
+						iensemble(241359),	-- Ensemble: Garothi Battleplate
+						iensemble(241365),	-- Ensemble: Praetorium Guard's Plate Armor
+						iensemble(254752),	-- Ensemble: Triumvirate High Guard's Battlegear
+						iensemble(253588),	-- Ensemble: World-Defiler's Battle Armor
+					}),
+					filter(SHIRTS, {
+						i(226127, {	-- Recruit's Shirt (White)
+							["cost"] = {{ "c", BRONZE, 5 }},
+						}),
+					}),
+					filter(TABARDS, {
+						i(5976, {	-- Guild Tabard
+							["cost"] = {{ "c", BRONZE, 5 }},
+						}),
+					}),
 				}),
-			})),
+			}),
+			--[[
+			n(244792, {	-- Lindormi <Mythic Keystones>
+				["coord"] = { 45.5, 68.4, BROKEN_ISLES },
+				["groups"] = {
+				},
+			}),
+			--]]
+			n(241142, {	-- Momentus <Weaponmaster>
+				["coord"] = { 45.8, 68.0, BROKEN_ISLES },
+				["groups"] = sharedData({
+					["cost"] = {{ "c", BRONZE, 5 }},
+				}, {
+					i(243369),	-- Timerunner's Bow
+					i(243368),	-- Timerunner's Dagger
+					i(243370),	-- Timerunner's Greatsword
+					i(243372),	-- Timerunner's Mace
+					i(243367),	-- Timerunner's Shield
+					i(243366),	-- Timerunner's Staff
+					i(243371),	-- Timerunner's Sword
+				}),
+			}),
+			n(241179, {	-- Nostwin <Snacks and Stuff>
+				["coord"] = { 45.9, 67.9, BROKEN_ISLES },
+				["groups"] = sharedData({
+					["cost"] = {{ "c", BRONZE, 5 }},
+				}, {
+					i(254320, {	-- Elixir of Remembered Sight
+						["description"] = "|cFFE50D12NOT CONSUMED ON USE:|r If you, by any chance, destroyed the one you received from the quest, buy only 1.",
+					}),
+					i(250316, {	-- Everlasting Nosh
+						["races"] = exclude({ EARTHEN_ALLIANCE, EARTHEN_HORDE }, ALL_RACES),
+					}),
+					i(253574, {	-- Everlasting Rock
+						["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
+					}),
+					i(188152),	-- Gateway Control Shard
+					i(226037),	-- Timeless Neural Silencer
+				}),
+			}),
+			n(241168, {	-- Pythagorus <Mythic Raid Apparel>
+				["coord"] = { 45.5, 67.8, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 30000 }},
+				},FILTERFUNC_itemID,{
+					clWithoutLock(DEATHKNIGHT, {
+						iensemble(241549),	-- Ensemble: Dreadwyrm Battleplate
+						------ Locked behind: Legionfall ------
+						iensemble(241501),	-- Ensemble: Gravewarden Armaments
+						------ Locked behind: Argus Eternal ------
+						iensemble(241453),	-- Ensemble: Dreadwake Armor
+					}),
+					clWithoutLock(DEMONHUNTER, {
+						iensemble(241574),	-- Ensemble: Vestment of Second Sight
+						------ Locked behind: Legionfall ------
+						iensemble(241525),	-- Ensemble: Demonbane Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241477),	-- Ensemble: Felreaper Vestments
+					}),
+					clWithoutLock(DRUID, {
+						iensemble(241570),	-- Ensemble: Garb of the Astral Warden
+						------ Locked behind: Legionfall ------
+						iensemble(241521),	-- Ensemble: Stormheart Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241473),	-- Ensemble: Bearmantle Battlegear
+					}),
+					clWithoutLock(HUNTER, {
+						iensemble(241558),	-- Ensemble: Eagletalon Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241509),	-- Ensemble: Wildstalker Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241461),	-- Ensemble: Serpentstalker Guise
+					}),
+					clWithoutLock(MAGE, {
+						iensemble(241586),	-- Ensemble: Regalia of Everburning Knowledge
+						------ Locked behind: Legionfall ------
+						iensemble(241537),	-- Ensemble: Regalia of the Arcane Tempest
+						------ Locked behind: Argus Eternal ------
+						iensemble(241489),	-- Ensemble: Runebound Regalia
+					}),
+					clWithoutLock(MONK, {
+						iensemble(241566),	-- Ensemble: Vestments of Enveloped Dissonance
+						------ Locked behind: Legionfall ------
+						iensemble(241517),	-- Ensemble: Xuen's Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241469),	-- Ensemble: Chi-Ji's Battlegear
+					}),
+					clWithoutLock(PALADIN, {
+						iensemble(241545),	-- Ensemble: Battleplate of the Highlord
+						------ Locked behind: Legionfall ------
+						iensemble(241497),	-- Ensemble: Radiant Lightbringer Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241449),	-- Ensemble: Light's Vanguard Battleplate
+					}),
+					clWithoutLock(PRIEST, {
+						iensemble(241582),	-- Ensemble: Vestments of the Purifier
+						------ Locked behind: Legionfall ------
+						iensemble(241533),	-- Ensemble: Vestments of Blind Absolution
+						------ Locked behind: Argus Eternal ------
+						iensemble(241485),	-- Ensemble: Gilded Seraph's Raiment
+					}),
+					clWithoutLock(ROGUE, {
+						iensemble(241562),	-- Ensemble: Doomblade Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241513),	-- Ensemble: Fanged Slayer's Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241465),	-- Ensemble: Regalia of the Dashing Scoundrel
+					}),
+					clWithoutLock(SHAMAN, {
+						iensemble(241553),	-- Ensemble: Regalia of Shackled Elements
+						------ Locked behind: Legionfall ------
+						iensemble(241505),	-- Ensemble: Regalia of the Skybreaker
+						------ Locked behind: Argus Eternal ------
+						iensemble(241459),	-- Ensemble: Garb of Venerated Spirits
+					}),
+					clWithoutLock(WARLOCK, {
+						iensemble(241578),	-- Ensemble: Legacy of Azj'aqir
+						------ Locked behind: Legionfall ------
+						iensemble(241529),	-- Ensemble: Diabolic Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241481),	-- Ensemble: Grim Inquisitor's Regalia
+					}),
+					clWithoutLock(WARRIOR, {
+						iensemble(241541),	-- Ensemble: Warplate of the Obsidian Aspect
+						------ Locked behind: Legionfall ------
+						iensemble(241493),	-- Ensemble: Titanic Onslaught Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241445),	-- Ensemble: Juggernaut Battlegear
+					}),
+					filter(COSMETIC, {
+						iensemble(253273, {	-- Scythe of the Unmaker (ENSEMBLE!)
+							["cost"] = {
+								{ "i", 253304, 20 },	-- Cosmic Soulsliver
+								{ "c", BRONZE, 30000 },
+							},
+						}),
+						i(151524, {	-- Hammer of Vigilance (COSMETIC!)
+							["cost"] = {
+								{ "i", 253305, 20 },	-- Felwarped Slab
+								{ "c", BRONZE, 30000 },
+							},
+						}),
+						iensemble(255006, {	-- Taeshalach (COSMETIC!)
+							["cost"] = {
+								{ "i", 253306, 20 },	-- Everflame of Hatred
+								{ "c", BRONZE, 30000 },
+							},
+						}),
+						i(242368, {	-- The First Satyr's Spaulders (COSMETIC!)
+							["ItemAppearanceModifierID"] = 1,
+							["cost"] = {
+								{ "i", 242370, 20 },	-- Horns of the First Satyr
+								{ "c", BRONZE, 30000 },
+							},
+						}),
+					}),
+				}),
+			}),
+			n(246028, {	-- Sacerdormu <Heroic Raid Apparel>
+				["coord"] = { 45.5, 67.9, BROKEN_ISLES },
+				["groups"] = bubbleDownFiltered({
+					["cost"] = {{ "c", BRONZE, 20000 }},
+				},FILTERFUNC_itemID,{
+					clWithoutLock(DEATHKNIGHT, {
+						iensemble(241552),	-- Ensemble: Dreadwyrm Battleplate
+						------ Locked behind: Legionfall ------
+						iensemble(241502),	-- Ensemble: Gravewarden Armaments
+						------ Locked behind: Argus Eternal ------
+						iensemble(241454),	-- Ensemble: Dreadwake Armor
+					}),
+					clWithoutLock(DEMONHUNTER, {
+						iensemble(241576),	-- Ensemble: Vestment of Second Sight
+						------ Locked behind: Legionfall ------
+						iensemble(241526),	-- Ensemble: Demonbane Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241479),	-- Ensemble: Felreaper Vestments
+					}),
+					clWithoutLock(DRUID, {
+						iensemble(241573),	-- Ensemble: Garb of the Astral Warden
+						------ Locked behind: Legionfall ------
+						iensemble(241524),	-- Ensemble: Stormheart Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241475),	-- Ensemble: Bearmantle Battlegear
+					}),
+					clWithoutLock(HUNTER, {
+						iensemble(241560),	-- Ensemble: Eagletalon Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241512),	-- Ensemble: Wildstalker Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241464),	-- Ensemble: Serpentstalker Guise
+					}),
+					clWithoutLock(MAGE, {
+						iensemble(241589),	-- Ensemble: Regalia of Everburning Knowledge
+						------ Locked behind: Legionfall ------
+						iensemble(241540),	-- Ensemble: Regalia of the Arcane Tempest
+						------ Locked behind: Argus Eternal ------
+						iensemble(241491),	-- Ensemble: Runebound Regalia
+					}),
+					clWithoutLock(MONK, {
+						iensemble(241569),	-- Ensemble: Vestments of Enveloped Dissonance
+						------ Locked behind: Legionfall ------
+						iensemble(241519),	-- Ensemble: Xuen's Battlegear
+						------ Locked behind: Argus Eternal ------
+						iensemble(241470),	-- Ensemble: Chi-Ji's Battlegear
+					}),
+					clWithoutLock(PALADIN, {
+						iensemble(241547),	-- Ensemble: Battleplate of the Highlord
+						------ Locked behind: Legionfall ------
+						iensemble(241500),	-- Ensemble: Radiant Lightbringer Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241451),	-- Ensemble: Light's Vanguard Battleplate
+					}),
+					clWithoutLock(PRIEST, {
+						iensemble(241585),	-- Ensemble: Vestments of the Purifier
+						------ Locked behind: Legionfall ------
+						iensemble(241534),	-- Ensemble: Vestments of Blind Absolution
+						------ Locked behind: Argus Eternal ------
+						iensemble(241487),	-- Ensemble: Gilded Seraph's Raiment
+					}),
+					clWithoutLock(ROGUE, {
+						iensemble(241565),	-- Ensemble: Doomblade Battlegear
+						------ Locked behind: Legionfall ------
+						iensemble(241516),	-- Ensemble: Fanged Slayer's Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241468),	-- Ensemble: Regalia of the Dashing Scoundrel
+					}),
+					clWithoutLock(SHAMAN, {
+						iensemble(241555),	-- Ensemble: Regalia of Shackled Elements (Felfire)
+						iensemble(241557),	-- Ensemble: Regalia of Shackled Elements (Ice)
+						------ Locked behind: Legionfall ------
+						iensemble(241506),	-- Ensemble: Regalia of the Skybreaker
+						------ Locked behind: Argus Eternal ------
+						iensemble(241457),	-- Ensemble: Garb of Venerated Spirits
+					}),
+					clWithoutLock(WARLOCK, {
+						iensemble(241581),	-- Ensemble: Legacy of Azj'aqir
+						------ Locked behind: Legionfall ------
+						iensemble(241532),	-- Ensemble: Diabolic Raiment
+						------ Locked behind: Argus Eternal ------
+						iensemble(241484),	-- Ensemble: Grim Inquisitor's Regalia
+					}),
+					clWithoutLock(WARRIOR, {
+						iensemble(241543),	-- Ensemble: Warplate of the Obsidian Aspect
+						------ Locked behind: Legionfall ------
+						iensemble(241495),	-- Ensemble: Titanic Onslaught Armor
+						------ Locked behind: Argus Eternal ------
+						iensemble(241446),	-- Ensemble: Juggernaut Battlegear
+					}),
+				}),
+			}),
+			n(246026, {	-- Unicus <Exclusive Ensembles>
+				["coord"] = { 45.5, 68.4, BROKEN_ISLES },
+				["groups"] = {
+					iensemble(253382, {	-- Arsenal: Arms of the Felforged Knight
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(253556, {	-- Arsenal: Bone Scythes
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(253569, {	-- Arsenal: Gems of the Lightforged Draenei
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(253561, {	-- Arsenal: Immortal Maces
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(253565, {	-- Arsenal: Mo'arg Hornmaces
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(253551, {	-- Arsenal: Mo'arg Swords
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(255156, {	-- Arsenal: Odyn's Spears
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241389, {	-- Ensemble: Antoran Guard's Golden Battleplate
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241392, {	-- Ensemble: Argussian Demonsbane Armor
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(190772, {	-- Ensemble: Barkbinds of the Archdruid's Nightmare
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241416, {	-- Ensemble: Blazing Dreamscribed Robes
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241358, {	-- Ensemble: Dream Defender's Emerald Guardplate
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241414, {	-- Ensemble: Dreamseeker Vestments
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241415, {	-- Ensemble: Dreamwatcher Vestments
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241399, {	-- Ensemble: Dreamweald Dragonscale
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241412, {	-- Ensemble: Earthrune Robes
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241408, {	-- Ensemble: Fel-Bloodied Battlegear
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241356, {	-- Ensemble: Ensemble: Fel-Marked Scales
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241397, {	-- Ensemble: Firewurm Dragonscale
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241406, {	-- Ensemble: Gladeraider's Battlegarb
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241387, {	-- Ensemble: Heritage of the Lightforged - Hologemmed
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241388, {	-- Ensemble: Heritage of the Lightforged - Holy Gold
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241386, {	-- Ensemble: Heritage of the Lightforged - Crimson Vengeance
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241385, {	-- Ensemble: Heritage of the Shal'dorei - Vineyard Red
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241400, {	-- Ensemble: Highpeak Dragonscale
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241396, {	-- Ensemble: Jarl's Battlehorns
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241403, {	-- Ensemble: Jarl's Battlescales
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(253385, {	-- Ensemble: Mantles of the Nightwell
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(241413, {	-- Ensemble: Nightrune Robes
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241402, {	-- Ensemble: Ruby Drake Hunter's Kit
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241407, {	-- Ensemble: Searaider's Battlegarb
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241411, {	-- Ensemble: Skyrune Robes
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241410, {	-- Ensemble: Slayer's Golden Scarguards
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241409, {	-- Ensemble: Slayer's Silver Scarguards
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241395, {	-- Ensemble: Storm Champion's Warharness
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241360, {	-- Ensemble: Stygian Silks
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(253358, {	-- Ensemble: Tideskorn Hunter's Munitions
+						["cost"] = {{ "c", BRONZE, 2500 }},
+					}),
+					iensemble(251271, {	-- Ensemble: Tidesoaked Battlegear
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241355, {	-- Ensemble: Verdant Dreamscribed Robes
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(241390, {	-- Ensemble: Vestments of Eredathian Sacrifice
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+					iensemble(253379, {	-- Ensemble: Windrunner Quivers
+						["cost"] = {{ "c", BRONZE, 7500 }},
+					}),
+				},
+			}),
 		},
 	}),
-}))));--]]
+})))

@@ -255,6 +255,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				r(183279, {["u"]=TRAINING}),	-- Leystone Bar
 				r(183281, {["u"]=TRAINING}),	-- Leystone Cuffplate
 				r(183283, {["u"]=TRAINING}),	-- Leystone Fingerguard
+				i(124051),	-- Burnt, Exploded Mess (QI!)
+				i(124007),	-- Leystone Bar (QI!)
+				i(124008),	-- Red-Hot Leystone Bar (QI!)
+				i(124005),	-- Shopkeeper's Leystone Ore (QI!)
 			},
 		}),
 		q(38563, {	-- Flower-Pickers and Potion-Quaffers
@@ -418,6 +422,11 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				r(184403, {["u"]=TRAINING}),	-- Engraved Leystone Armguards
 				r(184408, {["u"]=TRAINING}),	-- Masterwork Leystone Armguards
 				r(184404, {["u"]=TRAINING}),	-- Molten Brimstone
+				i(124454),	-- Brimstone-Crusted Armguards (QI!)
+				i(124450),	-- Engraved Leystone Armguards (QI!)
+				i(124451),	-- Felsmith's Infernal Brimstone (QI!)
+				i(124449),	-- Felsmith's Leystone Armguards (QI!)
+				i(124455),	-- Masterwork Leystone Armguards (QI!)
 			},
 		}),
 		q(38530, {	-- The Firmament Stone

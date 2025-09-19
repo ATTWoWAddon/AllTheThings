@@ -496,20 +496,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				i(124669, {	-- Darkmoon Daggermaw
 					["timeline"] = { ADDED_6_2_0 },
 				}),
-				i(93732, {	-- Darkmoon Fishing Cap
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(93732, {	-- Darkmoon Fishing Cap
 					["timeline"] = { ADDED_5_2_0 },
-				}),
+				})),
 				i(73953, {	-- Sea Pony (PET!)
 					["timeline"] = { ADDED_4_3_0 },
 				}),
 				i(124670, {	-- Sealed Darkmoon Crate
 					["timeline"] = { ADDED_6_2_0 },
+					["groups"] = {
+						i(160092, {["timeline"] = { ADDED_8_0_1 },}),	-- Pineapple Pizza
+					},
 				}),
 				i(164973, {	-- Severed Azurefin Head
 					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(164972, {	-- Severed Crimsonscale Head
 					["timeline"] = { ADDED_8_1_5 },
+				}),
+				i(133688, {	-- Tugboat Bobber
+					["timeline"] = { ADDED_6_2_0 },
 				}),
 			}),
 		}),
@@ -1694,7 +1700,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 				},
 			})),
-			q(33354, {	-- Den Mother's Demise
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, q(33354, {	-- Den Mother's Demise
 				["providers"] = {
 					{ "i", 105891 },	-- Moonfang's Pelt
 					{ "n", 14829 },	-- Yebb Neblegear
@@ -1706,7 +1712,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["groups"] = {
 					DARKMOON_PRIZE_TICKET,
 				},
-			}),
+			})),
 			q(7903, {	-- Evil Bat Eyes [Tier 5]
 				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
@@ -3132,7 +3138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(151397),	-- Sweaty Wristbands
 				},
 			})),
-			n(71992, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 }, }, {	-- Moonfang <Darkmoon Den Mother>
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, n(71992, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 }, }, {	-- Moonfang <Darkmoon Den Mother>
 				["coord"] = { 39.65, 44.07, DARKMOON_ISLAND },
 				["groups"] = {
 					i(101570),	-- Moon Moon (PET!)
@@ -3141,7 +3147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(105891),	-- Moonfang's Pelt
 					i(101675),	-- Shimmering Moonstone
 				},
-			})),
+			}))),
 			n(204964, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Twinkle <Madam Shadow's Minion>
 				["questID"] = 77158,
 				["isDaily"] = true,	-- maybe weekly/monthly?
@@ -3273,9 +3279,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(73905, {	-- Darkmoon Zeppelin  (PET!)
 						["timeline"] = { ADDED_4_3_0 },
 					}),
-					i(97987, {	-- Well-Worn Blindfold
-						["timeline"] = { ADDED_5_3_0, DELETED_7_0_3 },
-					}),
+					-- Wouter TODO: check if this is added early with MoP Classic's Landfall phase
+					applyclassicphase(MOP_PHASE_ESCALATION, i(97987, {	-- Well-Worn Blindfold (QI!)
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+					})),
 				},
 			}),
 		}),

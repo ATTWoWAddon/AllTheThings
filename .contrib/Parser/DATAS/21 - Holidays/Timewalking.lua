@@ -3923,6 +3923,18 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						}),
 					}),
 					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+						i(244540, {	-- Charred Flamewake Sprout
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244542, {	-- Chronosmith's Temporal Safeguard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244647, {	-- Crook of the White Flame
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1800 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 						iensemble(234859, {	-- Ensemble: Twilight Acolyte's Regalia
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 2500 }},
 						}),
@@ -3939,9 +3951,73 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
 						}),
+						i(244651, {	-- Forest Ranger's Buckler
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244544, {	-- Forest Watcher's Rune-Axe
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244546, {	-- Forgotten Bow of the Banshee
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244650, {	-- Fort Triumph Longbow
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244549, {	-- Light's Dawn Cryptblade
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244680, {	-- Morchie's Desynchronized Chime
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244652, {	-- Prayer Beacon of the Goddess
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244681, {	-- Pyrewood Silver Blade
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 						i(234861, {	-- Reliquary Tabard
 							["races"] = HORDE_ONLY,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
+						}),
+						i(244543, {	-- Scimitar of the Crocolisk God
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244648, {	-- Scipture of the Scarlet High Priest
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244646, {	-- Seared Root of Regrowth
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244649, {	-- Shadowforge Senator's Ledger
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244548, {	-- Shattered Highvale Staff
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244550, {	-- Sunwalker's Ashen Warmaul
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1500 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244551, {	-- Time-Lost Worldbreaker
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 3000 }},
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(244541, {	-- Zin-Azshari Court Scepter
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_11_2_0 },
 						}),
 					})),
 					filter(MISC, {

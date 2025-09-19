@@ -1136,6 +1136,10 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		i(31896),	-- Seven of Storms
 		i(31893),	-- Eight of Storms
 	})),
+	filter(CONSUMABLES, {
+		i(27858),	-- Sunspring Carp
+		i(29452),	-- Zangar Trout
+	}),
 	filter(REAGENTS, {
 		["groups"] = appendAllGroups(
 			-- Table of Content:
@@ -1666,115 +1670,103 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		}),
 		prof(JEWELCRAFTING, {
 			-- #if BEFORE CATA
-			i(31876),	-- Design: Balanced Nightseye [TBC] / Design: Shifting Nightseye [CATA+]
-			-- #endif
-			i(24165),	-- Design: Blazing Eternium Band
-			i(24193),	-- Design: Bold Living Ruby
-			i(24168),	-- Design: Braided Eternium Chain
-			-- #if BEFORE CATA
-			i(24192),	-- Design: Bright Living Ruby [TBC] / Design: Delicate Living Ruby [CATA+]
-			i(35306),	-- Design: Bright Living Ruby [TBC] / Design: Delicate Living Ruby [CATA+]
-			i(24203),	-- Design: Brilliant Dawnstone [TBC] / Design: Brilliant Living Ruby [CATA+]
-			-- #endif
-			-- #if AFTER CATA
-			i(24196),	-- Design: Brilliant Living Ruby [CATA+] / Design: Runed Living Ruby [TBC]
-			i(24195),	-- Design: Brilliant Living Ruby [CATA+] / Design: Teardrop Living Ruby [TBC]
-			i(24203),	-- Design: Brilliant Living Ruby [CATA+] / Design: Brilliant Dawnstone [TBC]
-			-- #endif
-			i(25906),	-- Design: Brutal Earthstorm Diamond
-			i(24171),	-- Design: Chain of the Twilight Owl
-			-- #if BEFORE CATA
-			i(24219),	-- Design: Dazzling Talasite [TBC] / Design: Purified Nightseye [CATA+]
-			-- #endif
-			-- #if AFTER CATA
-			i(31879),	-- Design: Deadly Noble Topaz [CATA+] / Design: Wicked Noble Topaz [TBC]
-			-- #endif
-			i(24164),	-- Design: Delicate Eternium Ring
-			i(24194),	-- Design: Delicate Living Ruby
-			-- #if AFTER CATA
-			i(24192),	-- Design: Delicate Living Ruby [CATA+] / Design: Bright Living Ruby [TBC]
-			i(35306),	-- Design: Delicate Living Ruby [CATA+] / Design: Bright Living Ruby [TBC]
-			-- #endif
-			i(25907),	-- Design: Destructive Skyfire Diamond
-			i(24170),	-- Design: Embrace of the Dawn
-			i(24169),	-- Design: Eye of the Night
-			i(24198),	-- Design: Flashing Living Ruby
-			-- #if BEFORE CATA
-			i(24206),	-- Design: Gleaming Dawnstone [TBC] / Design: Smooth Dawnstone [CATA+]
-			-- #endif
-			-- #if AFTER CATA
-			i(31877),	-- Design: Glinting Nightseye [CATA+] / Design: Infused Nightseye [TBC]
-			-- #endif
-			i(24216),	-- Design: Glinting Noble Topaz [TBC] / Design: Glinting Nightseye [CATA+]
-			-- #if BEFORE CATA
-			i(24211),	-- Design: Glowing Nightseye [TBC] / Design: Timeless Nightseye [CATA+]
-			i(31875),	-- Design: Great Dawnstone [TBC] / Design: Rigid Star of Elune [CATA+]
-			-- #endif
-			i(24163),	-- Design: Heavy Felsteel Ring
-			-- #if BEFORE CATA
-			i(31877),	-- Design: Infused Nightseye [TBC] / Design: Glinting Nightseye [CATA+]
-			-- #endif
-			i(24213),	-- Design: Inscribed Noble Topaz
-			i(24220),	-- Design: Jagged Talasite
-			i(24167),	-- Design: Living Ruby Pendant
-			-- #if BEFORE CATA
-			i(24215),	-- Design: Luminous Noble Topaz [TBC] / Design: Reckless Noble Topaz [CATA+]
-			i(24201),	-- Design: Lustrous Star of Elune [TBC] / Design: Sparkling Star of Elune [CATA+]
-			-- #endif
-			i(25909),	-- Design: Mystical Skyfire Diamond
-			i(24214),	-- Design: Potent Noble Topaz
-			-- #if AFTER CATA
-			i(24219),	-- Design: Purified Nightseye [CATA+] / Design: Dazzling Talasite [TBC]
-			i(24212),	-- Design: Purified Nightseye [CATA+] / Design: Royal Nightseye [TBC]
-			-- #endif
-			i(24218),	-- Design: Radiant Talasite
-			-- #if AFTER CATA
-			i(24215),	-- Design: Reckless Noble Topaz [CATA+] / Design: Luminous Noble Topaz [TBC]
-			-- #endif
-			i(24217),	-- Design: Regal Talasite
-			i(24205),	-- Design: Rigid Dawnstone [TBC] / Design: Rigid Star of Elune [CATA+]
-			-- #if AFTER CATA
-			i(31875),	-- Design: Rigid Star of Elune [CATA+] / Design: Great Dawnstone [TBC]
-			-- #endif
-			-- #if BEFORE CATA
-			i(24212),	-- Design: Royal Nightseye [TBC] / Design: Purified Nightseye [CATA+]
-			i(24196),	-- Design: Runed Living Ruby [TBC] / Design: Brilliant Living Ruby [CATA+]
-			-- #endif
-			i(24210),	-- Design: Shifting Nightseye
-			-- #if AFTER CATA
-			i(31876),	-- Design: Shifting Nightseye [CATA+] / Design: Balanced Nightseye [TBC]
-			-- #endif
-			i(24204),	-- Design: Smooth Dawnstone
-			-- #if AFTER CATA
-			i(24206),	-- Design: Smooth Dawnstone [CATA+] / Design: Gleaming Dawnstone [TBC]
-			-- #endif
-			i(24199),	-- Design: Solid Star of Elune (BoE version)
-			i(24209),	-- Design: Sovereign Nightseye
-			i(24200),	-- Design: Sparkling Star of Elune
-			-- #if AFTER CATA
-			i(24201),	-- Design: Sparkling Star of Elune [CATA+] / Design: Lustrous Star of Elune [TBC]
-			-- #endif
-			i(24202),	-- Design: Stormy Star of Elune
-			i(23154),	-- Design: Stormy Azure Moonstone
-			i(24197),	-- Design: Subtle Living Ruby [TBC] / Design: Subtle Dawnstone [CATA+]
-			-- #if AFTER CATA
-			i(24207),	-- Design: Subtle Dawnstone [CATA+] / Design: Thick Dawnstone [TBC]
-			-- #endif
-			-- #if BEFORE CATA
-			i(24195),	-- Design: Teardrop Living Ruby [TBC] / Design: Brilliant Living Ruby [CATA+]
-			-- #endif
-			i(25905),	-- Design: Tenacious Earthstorm Diamond
-			-- #if BEFORE CATA
-			i(24207),	-- Design: Thick Dawnstone [TBC] / Design: Subtle Dawnstone [CATA+]
-			-- #endif
-			i(24166),	-- Design: Thick Felsteel Necklace
-			i(32411),	-- Design: Thundering Skyfire Diamond
-			-- #if AFTER CATA
-			i(24211),	-- Design: Timeless Nightseye [CATA+] / Design: Glowing Nightseye [TBC]
-			-- #endif
-			i(31878),	-- Design: Veiled Noble Topaz [TBC] / Design: Veiled Nightseye [CATA+]
-			-- #if BEFORE CATA
-			i(31879),	-- Design: Wicked Noble Topaz [TBC] / Design: Deadly Noble Topaz [CATA+]
+			i(31876, {["timeline"]={ADDED_2_1_0}}),	-- Design: Balanced Nightseye (RECIPE!)
+			i(24165),	-- Design: Blazing Eternium Band (RECIPE!)
+			i(24193),	-- Design: Bold Living Ruby (RECIPE!)
+			i(24168),	-- Design: Braided Eternium Chain (RECIPE!)
+			i(24192),	-- Design: Bright Living Ruby (RECIPE!) [BoE]
+			i(24203),	-- Design: Brilliant Dawnstone (RECIPE!)
+			i(25906),	-- Design: Brutal Earthstorm Diamond (RECIPE!)
+			i(24171),	-- Design: Chain of the Twilight Owl (RECIPE!)
+			i(24219),	-- Design: Dazzling Talasite (RECIPE!)
+			i(24164),	-- Design: Delicate Eternium Ring (RECIPE!)
+			i(24194),	-- Design: Delicate Living Ruby (RECIPE!)
+			i(25907),	-- Design: Destructive Skyfire Diamond (RECIPE!)
+			i(24170),	-- Design: Embrace of the Dawn (RECIPE!)
+			i(24217),	-- Design: Enduring Talasite (RECIPE!)
+			i(24169),	-- Design: Eye of the Night (RECIPE!)
+			i(24198),	-- Design: Flashing Living Ruby (RECIPE!)
+			i(24206),	-- Design: Gleaming Dawnstone (RECIPE!)
+			i(24216),	-- Design: Glinting Noble Topaz (RECIPE!)
+			i(24211),	-- Design: Glowing Nightseye (RECIPE!)
+			i(31875, {["timeline"]={ADDED_2_1_0}}),	-- Design: Great Dawnstone (RECIPE!)
+			i(24163),	-- Design: Heavy Felsteel Ring (RECIPE!)
+			i(31877, {["timeline"]={ADDED_2_1_0}}),	-- Design: Infused Nightseye (RECIPE!)
+			i(24213),	-- Design: Inscribed Noble Topaz (RECIPE!)
+			i(24220),	-- Design: Jagged Talasite (RECIPE!)
+			i(24167),	-- Design: Living Ruby Pendant (RECIPE!)
+			i(24215),	-- Design: Luminous Noble Topaz (RECIPE!)
+			i(24201),	-- Design: Lustrous Star of Elune (RECIPE!)
+			i(25909),	-- Design: Mystical Skyfire Diamond (RECIPE!)
+			i(24214),	-- Design: Potent Noble Topaz (RECIPE!)
+			i(24218),	-- Design: Radiant Talasite (RECIPE!)
+			i(24205),	-- Design: Rigid Dawnstone (RECIPE!) [BoE]
+			i(24212),	-- Design: Royal Nightseye (RECIPE!)
+			i(24196),	-- Design: Runed Living Ruby (RECIPE!) [BoE]
+			i(24210),	-- Design: Shifting Nightseye (RECIPE!)
+			i(24204),	-- Design: Smooth Dawnstone (RECIPE!)
+			i(24199),	-- Design: Solid Star of Elune (RECIPE!) [BoE]
+			i(24209),	-- Design: Sovereign Nightseye (RECIPE!)
+			i(24200),	-- Design: Sparkling Star of Elune (RECIPE!)
+			i(23154),	-- Design: Stormy Azure Moonstone (RECIPE!)
+			i(24202),	-- Design: Stormy Star of Elune (RECIPE!)
+			i(24197),	-- Design: Subtle Living Ruby (RECIPE!)
+			i(24195, {["timeline"]={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Teardrop Living Ruby (RECIPE!)
+			i(25905),	-- Design: Tenacious Earthstorm Diamond (RECIPE!)
+			i(24207),	-- Design: Thick Dawnstone (RECIPE!)
+			i(24166),	-- Design: Thick Felsteel Necklace (RECIPE!)
+			i(32411, {["timeline"]={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
+			i(31878, {["timeline"]={ADDED_2_1_0}}),	-- Design: Veiled Noble Topaz (RECIPE!)
+			i(31879, {["timeline"]={ADDED_2_1_0}}),	-- Design: Wicked Noble Topaz (RECIPE!)
+			-- #else
+			i(24165),	-- Design: Blazing Eternium Band (RECIPE!)
+			i(24193),	-- Design: Bold Living Ruby (RECIPE!)
+			i(24168),	-- Design: Braided Eternium Chain (RECIPE!)
+			i(24203),	-- Design: Brilliant Living Ruby (RECIPE!)
+			i(24196),	-- Design: Brilliant Living Ruby (RECIPE!) [BoE]
+			i(24195, {["timeline"]={ADDED_2_0_5, REMOVED_4_0_3}}),	-- Design: Brilliant Living Ruby (RECIPE!)
+			i(25906),	-- Design: Brutal Earthstorm Diamond (RECIPE!)
+			i(24171),	-- Design: Chain of the Twilight Owl (RECIPE!)
+			i(31879, {["timeline"]={ADDED_2_1_0}}),	-- Design: Deadly Noble Topaz (RECIPE!)
+			i(24164),	-- Design: Delicate Eternium Ring (RECIPE!)
+			i(24192),	-- Design: Delicate Living Ruby (RECIPE!) [BoE]
+			i(24194),	-- Design: Delicate Living Ruby (RECIPE!)
+			i(25907),	-- Design: Destructive Skyfire Diamond (RECIPE!)
+			i(24170),	-- Design: Embrace of the Dawn (RECIPE!)
+			i(24169),	-- Design: Eye of the Night (RECIPE!)
+			i(24198),	-- Design: Flashing Living (RECIPE!)
+			i(24216),	-- Design: Glinting Nightseye (RECIPE!)
+			i(31877, {["timeline"]={ADDED_2_1_0}}),	-- Design: Glinting Nightseye (RECIPE!)
+			i(24163),	-- Design: Heavy Felsteel Ring (RECIPE!)
+			i(24213),	-- Design: Inscribed Noble Topaz (RECIPE!)
+			i(24220),	-- Design: Jagged Talasite (RECIPE!)
+			i(24167),	-- Design: Living Ruby Pendant (RECIPE!)
+			i(25909),	-- Design: Mystical Skyfire Diamond (RECIPE!)
+			i(24214),	-- Design: Potent Noble Topaz (RECIPE!)
+			i(24212),	-- Design: Purified Nightseye (RECIPE!)
+			i(24219),	-- Design: Purified Nightseye (RECIPE!)
+			i(24218),	-- Design: Radiant Talasite (RECIPE!)
+			i(24215),	-- Design: Reckless Noble Topaz (RECIPE!)
+			i(24217),	-- Design: Regal Talasite (RECIPE!)
+			i(31875, {["timeline"]={ADDED_2_1_0}}),	-- Design: Rigid Star of Elune (RECIPE!)
+			i(24205),	-- Design: Rigid Star of Elune (RECIPE!) [BoE]
+			i(31876, {["timeline"]={ADDED_2_1_0}}),	-- Design: Shifting Nightseye (RECIPE!)
+			i(24210),	-- Design: Shifting Nightseye (RECIPE!)
+			i(24206),	-- Design: Smooth Dawnstone (RECIPE!)
+			i(24204),	-- Design: Smooth Dawnstone (RECIPE!)
+			i(24199),	-- Design: Solid Star of Elune (RECIPE!) [BoE]
+			i(24209),	-- Design: Sovereign Nightseye (RECIPE!)
+			i(24201),	-- Design: Sparkling Star of Elune (RECIPE!)
+			i(24200),	-- Design: Sparkling Star of Elune (RECIPE!)
+			i(23154),	-- Design: Stormy Azure Moonstone (RECIPE!)
+			i(24202),	-- Design: Stormy Star of Elune (RECIPE!)
+			i(24207),	-- Design: Subtle Dawnstone (RECIPE!)
+			i(24197),	-- Design: Subtle Dawnstone (RECIPE!)
+			i(25905),	-- Design: Tenacious Earthstorm Diamond (RECIPE!)
+			i(24166),	-- Design: Thick Felsteel Necklace (RECIPE!)
+			i(32411, {["timeline"]={ADDED_2_1_0}}),	-- Design: Thundering Skyfire Diamond (RECIPE!)
+			i(24211),	-- Design: Timeless Nightseye (RECIPE!)
+			i(31878, {["timeline"]={ADDED_2_1_0}}),	-- Design: Veiled Nightseye (RECIPE!)
 			-- #endif
 		}),
 		prof(LEATHERWORKING, {

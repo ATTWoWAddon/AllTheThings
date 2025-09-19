@@ -283,6 +283,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["sourceQuests"] = { 39325 },	-- Get Your Mix On
 			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["groups"] = {
+				i(128356),	-- Barrel of Fish Oil (QI!)
+				i(128357),	-- Basket of Dried Herbs (QI!)
+				i(128355),	-- Crate of Khadgar's Whiskers (QI!)
+			},
 		}),
 		q(39566, {	-- The Search for Knowledge
 			["sourceQuests"] = { 39326 },	-- Missing Shipments
@@ -333,6 +338,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["sourceQuests"] = { 39332 },	-- Furbolg Firewater
 			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
+			["groups"] = {
+				i(136675),	-- Barm's Mortar and Pestle (QI!)
+				i(128515),	-- Cracked Dual-Chambered Mixing Flask (QI!)
+				i(136674),	-- Ripe Pumpkin Juice (QI!)
+				i(136673),	-- Rivermane Remedy (QI!)
+			},
 		}),
 		q(39334, {	-- Thanks for Flasking
 			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
@@ -496,6 +507,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
+			["groups"] = { i(136820) },	-- Nythendra's Heart (QI!)
 		}),
 		q(42081, {	-- In With the New
 			["sourceQuests"] = { 39351 },	-- The Emerald Nightmare: Rage Fire
@@ -981,7 +993,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			o(410434,	-- Splash Potion of Narcolepsy
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["description"] = "In cavern.",
-				["coord"] = { 50.9, 49.7, 2254 },
+				["coord"] = { 51.6, 48.5, 2254 },
 				["questID"] = 78269,
 				["groups"] = {
 					i(210185),	-- Splash Potion of Narcolepsy

@@ -713,9 +713,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(136906, {	-- Brown Piglet (PET!)
 				["displayID"] = 65669,
 			}),
-			i(129108, {	-- Son of Goredome (PET!)
-				["displayID"] = 65527,
-			}),
 			-- Without SpeciesID Attached
 			i(136897),	-- Northern Hawk Owl (PET!) [Northern Hawk Owl, item was never used]
 			i(136913),	-- Red Broodling (PET!) [Squirky, item was never used]

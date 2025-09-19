@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local TEMPORARY_SOURCEQUEST = 78658;
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20598, {	-- Hallowfall
@@ -324,7 +323,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.01, {	-- Light to Velhan's Claim
 				q(78686, {	-- Lights Out
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 214019 },	-- Aegor Irynbawnd
 					["coord"] = { 49.2, 41.1, HALLOWFALL },
 				}),
@@ -410,7 +409,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.02, {	-- The Priory
 				q(82628, {	-- The Brothers Braunpyke
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 215335 },	-- General Steelstrike
 					["coord"] = { 40.5, 50.8, HALLOWFALL },
 				}),
@@ -486,7 +485,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.03, {	-- Striking Steel
 				q(82216, {	-- Economical Request
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78658,	-- The Hallowed Path
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -589,7 +588,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.04, {	-- Lost in the Darkness
 				q(80382, {	-- Eggs In One Basket
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78658,	-- The Hallowed Path
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -604,7 +603,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(76247, {	-- Keep The Home Fires Burning
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78658,	-- The Hallowed Path
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -616,7 +615,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79108, {	-- Seeds of Evil
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78658,	-- The Hallowed Path
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -690,7 +689,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
 				q(81797, {	-- Targeted Recon
 					["description"] = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 218508 },	-- Joseph Brayvemarc
 					["coord"] = { 42.6, 55.3, HALLOWFALL },
 					["isBreadcrumb"] = true,
@@ -736,7 +735,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.07, {	-- The Last Mage of Hallowfall
 				q(80175, {	-- The Last Mage
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 215335 },	-- General Steelstrike
 					["coord"] = { 40.5, 50.8, HALLOWFALL },
 					["isBreadcrumb"] = true,
@@ -838,7 +837,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.10, {	-- Rest at Last
 				q(83497, {	-- A Concerned Friend
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 226708 },	-- Val Thalvassa
 					["coord"] = { 51.1, 46.0, DORNOGAL },
 					["isBreadcrumb"] = true,
@@ -875,7 +873,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.11, {	-- An Orphan's Dilemma
 				q(79151, {	-- An Orphan Request
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 215237 },	-- Alyza Bowblaze
 					["coord"] = { 41.8, 55.6, HALLOWFALL },
 					["groups"] = {
@@ -896,7 +894,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(216525),	-- Dented Boots (QI!)
 						}),
 						o(423979, {	-- Kobyss Chest
-							i(216526),	-- Resplendant Shield (QI!)
+							i(216526),	-- Resplendent Shield (QI!)
 						}),
 						o(423978, {	-- Kobyss Chest
 							i(216524),	-- Salt-pitted Sword (QI!)
@@ -971,7 +969,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.13, {	-- What Grows in the Dark
 				q(79309, {	-- Status Report
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 216061 },	-- Captain Trueflame
 					["coord"] = { 70.5, 44.9, HALLOWFALL },
 				}),
@@ -1009,7 +1007,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.14, {	-- Suspicious Minds
 				q(83283, {	-- For Morale
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 225857 },	-- Lerrenal Fayn
 					["coord"] = { 68.0, 44.2, HALLOWFALL },
 					["groups"] = {
@@ -1017,7 +1015,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(83247, {	-- Suspicious Minds
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },	-- For Morale is not the source quest, you can do 83247 before 83283
+					["sourceQuests"] = { 78658 },	-- 	-- The Hallowed Path,  For Morale is not the source quest, you can do 83247 before 83283
 					["provider"] = { "n", 225879 },	-- Derill Fayn
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
 					["groups"] = {
@@ -1040,12 +1038,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.15, {	-- Memories of the Sky
 				q(80673, {	-- Runway Scare-a-way
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 				}),
 				q(80677, {	-- Torching Lights
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78658 },	-- The Hallowed Path
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 					["groups"] = {
@@ -1127,7 +1125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["maps"] = { ISLE_OF_DORN },
 			}),
 			q(82894, {	-- The Price of Hope
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78658 },	-- The Hallowed Path
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 				["groups"] = {
@@ -1253,9 +1251,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(QUESTS, {
@@ -1295,4 +1293,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

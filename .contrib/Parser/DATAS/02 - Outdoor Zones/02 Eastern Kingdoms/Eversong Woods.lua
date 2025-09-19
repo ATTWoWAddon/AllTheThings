@@ -952,7 +952,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				exploration(3534),	-- Feth's Way
 				exploration(3460),	-- Golden Strand
 				exploration(3912),	-- Goldenbough Pass
-				exploration(3513),	-- Lake Elrendar (Ghostlands)
 				exploration(3473),	-- Lake Elrendar
 				exploration(3465),	-- North Sanctum
 				exploration(3533),	-- Ruins of Silvermoon

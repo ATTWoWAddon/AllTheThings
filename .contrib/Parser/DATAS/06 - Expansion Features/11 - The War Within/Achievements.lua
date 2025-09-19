@@ -423,10 +423,352 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			i(236877),	-- Crystallized Essence of Kaja'mite
 		})),
 		ach(41937, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }, }, {	-- The War Within Season 3: Voidborne Victor
+			i(240175),	-- Crystallized Ethereal Voidsplinter
 		})),
 		ach(42325, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 }, }, {	-- Void Wear Prohibited (automated)
 			i(246737, {	-- K'areshi Voidstone (CI!)
-
+				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
+				d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
+				d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
+				d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+					cl(DEATHKNIGHT, {
+						i(237626),	-- Hollow Senintel's Perches
+						i(237628),	-- Hollow Sentinel's Stonemask
+					}),
+					cl(DEMONHUNTER, {
+						i(237689),	-- Charhound's Vicious Hornguards
+						i(237691),	-- Charhound's Vicious Scalp
+					}),
+					cl(DRUID, {
+						i(237679),	-- Dreamsash of the Mother Eagle
+						i(237680),	-- Ritual Pauldrons of the Mother Eagle
+						i(237682),	-- Skymane of the Mother Eagle
+						i(237685),	-- Vest of the Mother Eagle
+					}),
+					cl(EVOKER, {
+						i(237653),	-- Spellweaver's Immaculate Pauldrons
+						i(237655),	-- Spellweaver's Immaculate Focus
+					}),
+					cl(HUNTER, {
+						i(237644),	-- Midnight Herald's Shadowguards
+						i(237646),	-- Midnight Herald's Cowl
+					}),
+					cl(MAGE, {
+						-- Mage has no items
+					}),
+					cl(MONK, {
+						i(237670),	-- Thunderbund of Fallen Storms
+						i(237671),	-- Glyphs of Fallen Storms
+						i(237673),	-- Half-Mask of Fallen Storms
+						i(237674),	-- Grasp of Fallen Storms
+						i(237675),	-- Footpads of Fallen Storms
+						i(237676),	-- Gi of Fallen Storms
+					}),
+					cl(PALADIN, {
+						i(237617),	-- Chargers of the Lucent Battalion
+						i(237619),	-- Lightmane of the Lucent Battalion
+					}),
+					cl(PRIEST, {
+						i(237707),	-- Dying Star's Pyrelights
+						i(237709),	-- Dying Star's Veil
+					}),
+					cl(ROGUE, {
+						i(237662),	-- Smokemantle of the Sudden Eclipse
+					}),
+					cl(SHAMAN, {
+						i(237635),	-- Fangs of Channeled Fury
+					}),
+					cl(WARLOCK, {
+						i(237698),	-- Inquisitor's Gaze of Madness
+						i(237700),	-- Inquisitor's Portal to Madness
+					}),
+					cl(WARRIOR, {
+						i(237608),	-- Living Weapon's Ramparts
+						i(237610),	-- Living Weapon's Faceshield
+					}),
+				})),
 			}),
 		})),
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)

@@ -153,7 +153,7 @@ root(ROOTS.Promotions, {
 			}),
 			mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
-				["timeline"] = { ADDED_10_2_0 },
+				["timeline"] = { ADDED_10_2_0, REMOVED_11_2_0 },	-- Removed from Promotions with the next Promotion. Still purchaseable in the Shop
 			}),
 			i(67097, {	-- Grim Campfire (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between January 23, 10:00 a.m. & January 30, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
@@ -178,7 +178,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(219450, {	-- Charming Courier (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
-				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_2_0 },	-- Removed from Promotions with the next Promotion. Still purchaseable in the Shop
 			}),
 		},
 	}),

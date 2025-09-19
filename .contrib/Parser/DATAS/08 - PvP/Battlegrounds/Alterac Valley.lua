@@ -793,6 +793,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(8375, {	-- Remember Alterac Valley!
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -800,6 +801,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8383, {	-- Remember Alterac Valley!
 					["sourceQuest"] = 8375,	-- Remember Alterac Valley!
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor

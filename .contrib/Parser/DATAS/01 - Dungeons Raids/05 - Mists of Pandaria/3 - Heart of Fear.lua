@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
--- SPLIT UP VERSION
+
 local TOKENS = {
 	RAIDFINDER = {
 		CONQUEROR = {	-- Paladin, Priest, Warlock
@@ -56,20 +55,20 @@ local TOKENS = {
 		},
 	},
 };
-]]--
+
 -- #if MOP
 local CUTTING_EDGE_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_ONE .. [[;
+		t.u = ]] .. MOP_PHASE_ONE_HEART_OF_FEAR .. [[;
 		t.rwp = 50200;
 	end
 end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	applyclassicphase(MOP_PHASE_ONE, inst(330, {	-- Heart of Fear
+	applyclassicphase(MOP_PHASE_ONE_HEART_OF_FEAR, inst(330, {	-- Heart of Fear
 		["isRaid"] = true,
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["maps"] = {
@@ -103,9 +102,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				ach(6669),	-- Heart of Fear Guild Run
 			}),
-			--[[
-			-- SPLIT UP VERSION
 			n(VENDORS, {
+				-- #if NOT ANYCLASSIC
 				n(RAID_FINDER_VENDOR, {
 					["provider"] = { "n", 64606 },	-- Commander Oxheart <Valor Quartermaster>
 					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
@@ -234,6 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 					},
 				}),
+				-- #endif
 				n(RAID_NORMAL_VENDOR, {
 					["provider"] = { "n", 64606 },	-- Commander Oxheart <Valor Quartermaster>
 					["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
@@ -491,7 +490,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			]]--
 			d(DIFFICULTY.LEGACY_RAID.MULTI.ALL, {
 				["groups"] = {
 					n(ZONE_DROPS, {
@@ -562,6 +560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 				},
 			}),
+			-- #if NOT ANYCLASSIC
 			d(DIFFICULTY.LEGACY_RAID.FINDER, {
 				["description"] = "Loot from this LFR is NOT tradeable to others in group.",
 				-- #if AFTER 6.0.1
@@ -569,11 +568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
 				["ignoreBonus"] = true,
-				["groups"] =
-				-- #if ANYCLASSIC
-				bubbleDown({ ["timeline"] = { CREATED_5_5_0 }, },
-				-- #endif
-				{
+				["groups"] = {
 					i(89807, {	-- Amber Encased Treasure Pouch (Original)
 						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
@@ -708,12 +703,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							},
 						}),
 					}),
-				}
-				-- #if ANYCLASSIC
-				)
-				-- #endif
-				,
+				},
 			}),
+			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				n(ZONE_DROPS, {
 					i(86192),	-- Darting Damselfly Cuffs

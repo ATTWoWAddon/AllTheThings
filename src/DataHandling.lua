@@ -58,7 +58,7 @@ local function Visibility_Total_Thing(group)
 	end
 end
 local function Visibility_Cost(group)
-	if (group.costTotal or 0) > 0 then
+	if group.costTotal > 0 then
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 		return true
 	end
@@ -152,7 +152,7 @@ BaseSetGroupVisibility = function(parent, group)
 			-- source ignored group which is determined to be visible should ensure the parent is also visible
 			if visible == 2 or group.sourceIgnored then
 				parent.forceShow = true
-				-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+				-- app.PrintDebug("SGV:ForceParent",parent.text,group.sourceIgnored and "via Source Ignored" or "via Hierarchy",group.text)
 			end
 			return
 		end
@@ -257,10 +257,10 @@ local function UpdateGroup(group, parent)
 
 		-- Increment the parent group's totals if the group is not ignored for sources
 		if parent and not group.sourceIgnored then
-			parent.total = (parent.total or 0) + group.total
-			parent.progress = (parent.progress or 0) + group.progress
-			parent.costTotal = (parent.costTotal or 0) + (group.costTotal or 0)
-			parent.upgradeTotal = (parent.upgradeTotal or 0) + (group.upgradeTotal or 0)
+			parent.total = parent.total + group.total
+			parent.progress = parent.progress + group.progress
+			parent.costTotal = parent.costTotal + group.costTotal
+			parent.upgradeTotal = parent.upgradeTotal + group.upgradeTotal
 		-- else
 			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
 		end
@@ -297,10 +297,10 @@ local function AdjustParentProgress(group, progChange, totalChange, costChange, 
 	if not parent then return end
 
 	-- app.PrintDebug("APP:",parent.progress,progChange,parent.total,totalChange,costChange,upgradeChange,app:SearchLink(parent))
-	parent.total = (parent.total or 0) + totalChange
-	parent.progress = (parent.progress or 0) + progChange
-	parent.costTotal = (parent.costTotal or 0) + costChange
-	parent.upgradeTotal = (parent.upgradeTotal or 0) + upgradeChange
+	parent.total = parent.total + totalChange
+	parent.progress = parent.progress + progChange
+	parent.costTotal = parent.costTotal + costChange
+	parent.upgradeTotal = parent.upgradeTotal + upgradeChange
 	-- Assign cost cache
 	-- app.PrintDebug("END:",parent.progress,parent.total)
 	-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
@@ -314,11 +314,13 @@ local function AdjustParentVisibility(group)
 	local parent = group and rawget(group, "parent")
 	if not parent then return end
 
-	-- app.PrintDebug("APV:",app:SearchLink(group),"->",app:SearchLink(parent))
 	if not parent.window then
 		group.visible = nil
+	end
+	if not group.window then
 		SetGroupVisibility(parent, group)
 	end
+	-- app.PrintDebug("APV:",app:SearchLink(group),group.visible,"->",app:SearchLink(parent))
 	AdjustParentVisibility(parent)
 end
 
@@ -373,7 +375,7 @@ local function DirectGroupUpdate(group, got)
 		return
 	end
 	local prevTotal, prevProg, prevCost, prevUpgrade
-		= group.total or 0, group.progress or 0, group.costTotal or 0, group.upgradeTotal or 0
+		= group.total, group.progress, group.costTotal, group.upgradeTotal
 	TopLevelUpdateGroup(group)
 	local progChange, totalChange, costChange, upgradeChange
 		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
@@ -584,12 +586,11 @@ local SourceSpecificFields = {
 	end,
 -- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
 	["u"] = function(...)
-		-- app.PrintDebug("GetMostObtainableValue:")
+		-- app.PrintDebug("GetMostObtainableValue:",...)
 		local max, check, new = -1, nil, nil
 		local phases = L.PHASES
 		local phase, u
 		local vals = select("#", ...)
-		-- app.PrintDebug(...)
 		for i=1,vals do
 			u = select(i, ...)
 			-- missing u value means NOT unobtainable
@@ -918,7 +919,7 @@ app.__CreateObject = CreateObject;
 
 local function GetHash(t)
 	local hash = app.CreateHash(t);
-	app.PrintDebug(Colorize("No base .hash for t:",app.Colors.ChatLinkError),hash,t.text);
+	app.PrintDebug(Colorize("No base .hash for t:",app.Colors.ChatLinkError),hash,t.text,t.__type);
 	app.PrintTable(t)
 	return hash;
 end

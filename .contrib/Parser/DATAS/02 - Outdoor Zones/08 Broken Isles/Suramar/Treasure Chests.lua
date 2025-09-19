@@ -77,6 +77,15 @@ root(ROOTS.Zones, {
 					["questID"] = 43747,
 					["coord"] = { 35.5, 32.4, 685 },
 				}),
+				o(251954, {	-- Small Treasure Chest
+					["groups"] = {
+						i(141016),	-- Scroll of Town Portal: Faronaar
+						i(141015),	-- Scroll of Town Portal: Kal'delar
+						i(141017),	-- Scroll of Town Portal: Lian'tril
+						i(141014),	-- Scroll of Town Portal: Sashj'tar
+						i(141013),	-- Scroll of Town Portal: Shala'nir
+					},
+				}),
 				o(252810, {	-- Small Treasure Chest
 					["questID"] = 43842,
 					["coord"] = { 23.4, 48.8, SURAMAR },

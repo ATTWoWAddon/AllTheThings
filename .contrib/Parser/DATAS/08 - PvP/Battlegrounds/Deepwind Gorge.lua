@@ -2,9 +2,9 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	applyclassicphase(MOP_PHASE_ESCALATION, m(519, {	-- Deepwind Gorge
+	m(519, {	-- Deepwind Gorge
 		["icon"] = 879931,
-		["timeline"] = { ADDED_5_2_0 },
+		["timeline"] = { ADDED_5_3_0 },
 		["maps"] = {
 			1576,	-- Deepwind Gorge (revamped)
 		},
@@ -31,6 +31,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				ach(14175, {	-- Master of Deepwind Gorge
+					["timeline"] = { ADDED_8_3_0 },
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						8331,	-- Deepwind Gorge Victory
@@ -47,9 +48,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(8359, {		-- Capping Spree
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 				}),
-				ach(14187),		-- Cruisin' for a Brewsin'
-				ach(8358,	-- Deepwind Gorge All-Star
-				bubbleDownSelf({["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 }}, {
+				ach(14187, {	-- Cruisin' for a Brewsin'
+					["timeline"] = { ADDED_8_3_0 },
+				}),
+				ach(8358, bubbleDownSelf({["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 }}, {	-- Deepwind Gorge All-Star
 					crit(23425),	-- Assault 1 mine
 					crit(23426),	-- Defend 1 mine
 					crit(23427),	-- Capture 1 mine cart
@@ -58,7 +60,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(8333),		-- Deepwind Gorge Perfection
 				ach(8332),		-- Deepwind Gorge Veteran
 				ach(8331),		-- Deepwind Gorge Victory
-				ach(14186),		-- Market Dominance
+				ach(14186, {	-- Market Dominance
+					["timeline"] = { ADDED_8_3_0 },
+				}),
 				ach(8350, {		-- Mine! Mine! Mine!
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 				}),
@@ -71,8 +75,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(8355, {		-- Weighed Down
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 				}),
-				ach(14188),		-- Well Gorged
+				ach(14188, {	-- Well Gorged
+					["timeline"] = { ADDED_8_3_0 },
+				}),
 			}),
 		},
-	})),
+	}),
 })));

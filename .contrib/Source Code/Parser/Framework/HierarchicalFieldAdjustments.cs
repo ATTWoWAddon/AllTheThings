@@ -370,6 +370,13 @@ namespace ATT
 
             IDictionary<string, object>[] groups = rawgroups.AsTypedEnumerable<IDictionary<string, object>>().ToArray();
 
+            Apply(parent, groups);
+        }
+
+        public static void Apply(IDictionary<string, object> parent, params IDictionary<string, object>[] groups)
+        {
+            if ((groups?.Length ?? 0) == 0) return;
+
             foreach (var fieldAdjustment in _heirarchicalFieldAdjustments)
             {
                 _fieldValues.Clear();

@@ -1,0 +1,149 @@
+2.5.1.38043
+exploration(65),	-- Dragonblight \\ Reuse Me 3 \\ ***On Map Dungeon***
+exploration(66),	-- Zul'Drak \\ Reuse Me 6 \\ ***On Map Dungeon***
+exploration(67),	-- The Storm Peaks \\ Reuse Me 5 \\ ***On Map Dungeon***
+exploration(206),	-- Utgarde Keep \\ UNUSED Westfall \\ Westfall
+exploration(210),	-- Icecrown \\ Reuse Me 2 \\ ***On Map Dungeon***
+exploration(2037),	-- Quel'thalas \\ UNUSEDShadowfang Keep 003
+exploration(2817),	-- Crystalsong Forest \\ Reuse Me 4 \\ ***On Map Dungeon***
+exploration(3430),	-- Eversong Woods
+exploration(3433),	-- Ghostlands
+exploration(3434),	-- Scarab Terrace
+exploration(3435),	-- General's Terrace
+exploration(3436),	-- The Reservoir
+exploration(3437),	-- The Hatchery
+exploration(3438),	-- The Comb
+exploration(3439),	-- Watchers' Terrace
+exploration(3440),	-- Scarab Terrace
+exploration(3441),	-- General's Terrace
+exploration(3442),	-- The Reservoir
+exploration(3443),	-- The Hatchery
+exploration(3444),	-- The Comb
+exploration(3445),	-- Watchers' Terrace
+exploration(3455),	-- The North Sea
+exploration(3457),	-- Karazhan
+exploration(3463),	-- Magisters Gate
+exploration(3477),	-- Azjol-Nerub \\ Karazhan *UNUSED*
+exploration(3479),	-- The Veiled Sea
+exploration(3483),	-- Hellfire Peninsula
+exploration(3484),	-- The Sunspire
+exploration(3504),	-- Toryl Estate
+exploration(3511),	-- Tower of the Damned
+exploration(3514),	-- The Dead Scar
+exploration(3518),	-- Nagrand
+exploration(3519),	-- Terokkar Forest
+exploration(3520),	-- Shadowmoon Valley
+exploration(3521),	-- Zangarmarsh
+exploration(3522),	-- Blade's Edge Mountains
+exploration(3523),	-- Netherstorm
+exploration(3524),	-- Azuremyst Isle
+exploration(3525),	-- Bloodmyst Isle
+exploration(3527),	-- Crash Site
+exploration(3528),	-- Silverline Lake
+exploration(3529),	-- Nestlewood Thicket
+exploration(3535),	-- Hellfire Citadel
+exploration(3537),	-- Borean Tundra \\ REUSE
+exploration(3540),	-- Twisting Nether
+exploration(3544),	-- Plain of Shards
+exploration(3550),	-- Borune Ruins
+exploration(3561),	-- The Sacred Grove
+exploration(3562),	-- Hellfire Ramparts
+exploration(3563),	-- Hellfire Citadel
+exploration(3569),	-- Tides' Hollow
+exploration(3580),	-- Wildwind Peak
+exploration(3581),	-- Wildwind Path
+exploration(3605),	-- Hyjal Past
+exploration(3606),	-- Hyjal Summit
+exploration(3607),	-- Serpentshrine Cavern
+exploration(3609),	-- Unused3
+exploration(3618),	-- Gruul's Lair
+exploration(3619),	-- Auren Ridge
+exploration(3620),	-- Auren Falls
+exploration(3632),	-- Shamanar
+exploration(3635),	-- Unused2
+exploration(3652),	-- Funggor Cavern
+exploration(3654),	-- The Drain
+exploration(3661),	-- Blade Tooth Canyon
+exploration(3662),	-- Commons Hall
+exploration(3663),	-- Derelict Manor
+exploration(3664),	-- Huntress of the Sun
+exploration(3665),	-- Falconwing Square
+exploration(3687),	-- Olembas
+exploration(3694),	-- Misty Ridge
+exploration(3695),	-- The Broken Hills
+exploration(3698),	-- Nagrand Arena
+exploration(3701),	-- Arena Floor
+exploration(3702),	-- Blade's Edge Arena
+exploration(3704),	-- The Shepherd's Gate
+exploration(3706),	-- The Dark Portal
+exploration(3707),	-- Alliance Base
+exploration(3708),	-- Horde Encampment
+exploration(3709),	-- Night Elf Village
+exploration(3710),	-- Nordrassil
+exploration(3711),	-- Sholazar Basin \\ Reuse Me
+exploration(3713),	-- The Blood Furnace
+exploration(3714),	-- The Shattered Halls
+exploration(3715),	-- The Steamvault
+exploration(3716),	-- The Underbog
+exploration(3717),	-- The Slave Pens
+exploration(3733),	-- The Violet Tower
+exploration(3751),	-- Sunfire Point
+exploration(3755),	-- The Stair of Doom
+exploration(3767),	-- Blades' Run
+exploration(3770),	-- Blade Tooth Canyon
+exploration(3792),	-- Mana-Tombs
+exploration(3805),	-- Zul'Aman
+exploration(3806),	-- Supply Caravan
+exploration(3817),	-- Testing \\ Test Dungeon
+exploration(3820),	-- Eye of the Storm
+exploration(3834),	-- Ridge of Madness
+exploration(3836),	-- Magtheridon's Lair
+exploration(3845),	-- Tempest Keep
+exploration(3846),	-- The Arcatraz
+exploration(3847),	-- The Botanica
+exploration(3848),	-- The Arcatraz
+exploration(3849),	-- The Mechanar
+exploration(3851),	-- Midrealm Post
+exploration(3852),	-- Tuluman's Landing
+exploration(3855),	-- Circle of Blood Arena
+exploration(3869),	-- Mage Tower
+exploration(3870),	-- Blood Elf Tower
+exploration(3871),	-- Draenei Ruins
+exploration(3872),	-- Fel Reaver Ruins
+exploration(3880),	-- Access Shaft Zeon
+exploration(3883),	-- Camp of Boom
+exploration(3884),	-- Spinebreaker Pass
+exploration(3896),	-- Aldor Rise
+exploration(3897),	-- Terrace of Light
+exploration(3898),	-- Scryer's Tier
+exploration(3899),	-- Lower City
+exploration(3900),	-- Invasion Point: Overlord
+exploration(3922),	-- Bladespire Outpost
+exploration(3923),	-- Gruul's Lair
+exploration(3924),	-- Northmaul Tower
+exploration(3925),	-- Southmaul Tower
+exploration(3936),	-- Deathforge Tower
+exploration(3937),	-- Slag Watch
+exploration(3941),	-- Test
+exploration(3942),	-- Razaan's Landing
+exploration(3946),	-- Wayne's Refuge
+exploration(3947),	-- The Scalding Pools
+exploration(3948),	-- Brian and Pat Test
+exploration(3949),	-- Magma Fields
+exploration(3959),	-- Black Temple
+exploration(3968),	-- Ruins of Lordaeron
+exploration(4009),	-- Illidari Training Grounds
+exploration(4047),	-- Nat's Landing
+exploration(4049),	-- Tabetha's Farm
+exploration(4075),	-- Sunwell Plateau
+exploration(4076),	-- Reuse Me 7
+exploration(4080),	-- Isle of Quel'Danas
+exploration(4081),	-- The Dawnchaser
+exploration(4082),	-- The Sin'loren
+exploration(4084),	-- The Bloodoath
+exploration(4085),	-- Shattered Sun Staging Area
+exploration(4090),	-- The Dawning Square
+exploration(4093),	-- The Sun Forge
+exploration(4131),	-- Magisters' Terrace
+exploration(4139),	-- Parhelion Plaza
+exploration(4140),	-- The Dead Scar

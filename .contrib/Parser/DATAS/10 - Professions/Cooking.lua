@@ -231,56 +231,108 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	}))),
 	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6365),	-- Zen Master Cook / Pandaria Cook [8.0.1+]
-		ach(7306, {	-- Master of Pandaren Cooking
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				7305,	-- Master of the Brew
-				7300,	-- Master of the Grill
-				7304,	-- Master of the Oven
-				7302,	-- Master of the Pot
-				7303,	-- Master of the Steamer
-				7301,	-- Master of the Wok
-			}},
-			["groups"] = {
-				title(202),	-- <Name>, Master of the Ways
-			},
+		ach(7306, {	-- Master of Pandaren Cooking (automated)
+			title(202),	-- <Name>, Master of the Ways
 		}),
-		ach(7305),		-- Master of the Brew
-		ach(7300),		-- Master of the Grill
-		ach(7304),		-- Master of the Oven
-		ach(7302),		-- Master of the Pot
-		ach(7303),		-- Master of the Steamer
-		ach(7301),		-- Master of the Wok
-		ach(7325, {	-- Now I Am the Master
-			crit(20537, {	-- Obtain the Cooking School Bell
-				["provider"] = { "i", 86425 },	-- Cooking School Bell
-			}),
-			crit(20538, {	-- Train your student to become an Expert in Cooking (Exalted)
-				["_factions"] = { 1357 },	-- Nomi
-			}),
-		}),
+		ach(7305),	-- Master of the Brew
+		ach(7300),	-- Master of the Grill
+		ach(7304),	-- Master of the Oven
+		ach(7302),	-- Master of the Pot
+		ach(7303),	-- Master of the Steamer
+		ach(7301),	-- Master of the Wok
 		ach(7329),	-- Pandaren Cuisine
 		ach(7330),	-- Pandaren Delicacies
 		ach(7326, {	-- The Pandaren Gourmet (15)
 			["sym"] = {{ "partial_achievement", 7327 }},	-- The Pandaren Gourmet (30)
 		}),
 		ach(7327),	-- The Pandaren Gourmet (30)
-		header(HEADERS.Faction, 1357, {	-- Nomi (Faction)
-			faction(1357, {
-				["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-				["cr"] = 64337,	-- Nomi (Child)
-			}),
-			q(31820, {	-- A Present for Teacher
-				["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
-				["providers"] = {
-					{ "n", 64337 },	-- Nomi
-					{ "i", 86425 },	-- Cooking School Bell
-				},
-				["minReputation"] = { 1357, 6 },	-- Level 6, Best Friend
-				["groups"] = {
-					i(86468),	-- Apron
-				},
-			}),
+		header(HEADERS.Faction, 1357, {	-- Nomi
+			["description"] = "Summon Nomi once per day using your Cooking School Bell, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
+			["provider"] = { "i", 86425 },	-- Cooking School Bell
+			["sourceQuest"] = 31521,	-- To Be a Master
+			["groups"] = {
+				n(ACHIEVEMENTS, {
+					ach(7325),	-- Now I Am the Master (automated)
+				}),
+				n(FACTIONS, {
+					faction(1357, {	-- Nomi (Faction)
+						["provider"] = { "n", 64337 },	-- Nomi (Child)
+					}),
+				}),
+				n(QUESTS, {
+					q(31820, {	-- A Present for Teacher
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 6 },	-- Nomi, Expert (Best Friend).
+						["groups"] = {
+							i(86468),	-- Apron
+						},
+					}),
+					q(31337, {	-- A Token of Appreciation
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 6 },	-- Nomi, Expert (Best Friend).
+						["isDaily"] = true,
+						["groups"] = {
+							currency(402),	-- Ironpaw Token
+							i(90735),	-- Goodies from Nomi
+						},
+					}),
+					q(31332, {	-- Lesson 1: Sliced Peaches
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 1 },	-- Nomi, Apprentice (Stranger).
+						["maxReputation"] = { 1357, 2 },	-- Nomi, Apprentice (Pal).
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/5 Pandaren Peach
+								["provider"] = { "i", 74660 },	-- Pandaren Peach
+							}),
+						},
+					}),
+					q(31333, {	-- Lesson 2: Instant Noodles
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 2 },	-- Nomi, Apprentice (Pal).
+						["maxReputation"] = { 1357, 3 },	-- Nomi, Journeyman (Buddy).
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/5 Instant Noodles
+								["provider"] = { "i", 74854 },	-- Instant Noodles
+							}),
+						},
+					}),
+					q(31334, {	-- Lesson 3: Toasted Fish Jerky
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 3 },	-- Nomi, Journeyman (Buddy).
+						["maxReputation"] = { 1357, 4 },	-- Nomi, Journeyman (Friend).
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/5 Golden Carp
+								["provider"] = { "i", 74866 },	-- Golden Carp
+							}),
+						},
+					}),
+					q(31335, {	-- Lesson 4: Dried Needle Mushrooms
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 4 },	-- Nomi, Journeyman (Friend).
+						["maxReputation"] = { 1357, 5 },	-- Nomi, Journeyman (Good Friend).
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/5 Needle Mushrooms
+								["provider"] = { "i", 85583 },	-- Needle Mushrooms
+							}),
+						},
+					}),
+					q(31336, {	-- Lesson 5: Pounded Rice Cake
+						["qg"] = 64337,	-- Nomi (Child)
+						["minReputation"] = { 1357, 5 },	-- Nomi, Journeyman (Good Friend).
+						["maxReputation"] = { 1357, 6 },	-- Nomi, Expert (Best Friend).
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/5 Rice
+								["provider"] = { "i", 74851 },	-- Rice
+							}),
+						},
+					}),
+				}),
+			},
 		}),
 		n(QUESTS, {
 			q(31281, {	-- So You Want to Be a Chef...

@@ -915,7 +915,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(167549),	-- Unwaning Bones (QI!)
+					o(325392, {	-- Box of Harvested Bones
+						["coords"] = {
+							{ 56.9, 32.7, TIRAGARDE_SOUND },
+							{ 58.1, 32.6, TIRAGARDE_SOUND },
+						},
+						["groups"] = { i(165231) },	-- Unwaning Bones (QI!)
+					}),
 				},
 			}),
 			q(55221, {	-- Picking Bones [H]
@@ -924,9 +930,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(165231),	-- Unwaning Bones (QI!)
-				},
+				["groups"] = { i(165231) },	-- Unwaning Bones (QI!)
 			}),
 			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [A]
 				["sourceQuests"] = {

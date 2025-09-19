@@ -156,19 +156,19 @@ else
 			Boss(PUMMELER),
 			Boss(AZEROKK),
 			Boss(RIXXA),
-			Boss(MOGUL, clone(AzeriteLoot[MOGUL])),
+			Boss(MOGUL, appendAllGroups(clone(AzeriteLoot[MOGUL]), clone(AzewrongLoot[MOGUL]))),
 		}),
 		Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 			Boss(PUMMELER),
 			Boss(AZEROKK),
 			Boss(RIXXA),
-			Boss(MOGUL, clone(AzeriteLoot[MOGUL])),
+			Boss(MOGUL, appendAllGroups(clone(AzeriteLoot[MOGUL]), clone(AzewrongLoot[MOGUL]))),
 		}),
 		Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 			Boss(PUMMELER),
 			Boss(AZEROKK),
 			Boss(RIXXA),
-			Boss(MOGUL, clone(AzeriteLoot[MOGUL])),
+			Boss(MOGUL, appendAllGroups(clone(AzeriteLoot[MOGUL]), clone(AzewrongLoot[MOGUL]))),
 		}),
 	}
 end

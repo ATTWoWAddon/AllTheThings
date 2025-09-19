@@ -349,11 +349,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(27027, {	-- Primal Strike (Tauren)
 							["sourceQuest"] = 3093,	-- Rune-Inscribed Note
 							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
-							-- #if AFTER MOP
-							["coord"] = { 45, 75, CAMP_NARACHE },
-							-- #else
-							["coord"] = { 45, 76, MULGORE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 45, 75, CAMP_NARACHE },
+								-- #else
+								{ 45, 76, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { SHAMAN },
@@ -510,11 +512,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(24215, {	-- Rite of the Winds
 							["sourceQuest"] = 23733,	-- Rites of the Earthmother
 							["qg"] = 36803,	-- Dyami Windsoar
-							-- #if AFTER MOP
-							["coord"] = { 15.4, 30.4, CAMP_NARACHE },
-							-- #else
-							["coord"] = { 41.2, 76, MULGORE },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 15.4, 30.4, CAMP_NARACHE },
+								-- #else
+								{ 41.2, 76, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(49652) },	-- Water of Vision (QI!)
@@ -799,11 +803,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 2953,	-- Bristleback Shaman
 						}),
 						i(1384, {	-- Dull Blade
-							-- #if AFTER CATA
-							["cr"] = 36708,	-- Bristleback Gun Thief
-							-- #else
-							["cr"] = 2952,	-- Bristleback Quilboar
-							-- #endif
+							["crs"] = {
+								-- #if AFTER CATA
+								36708,	-- Bristleback Gun Thief
+								-- #else
+								2952,	-- Bristleback Quilboar
+								-- #endif
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
@@ -907,11 +913,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(833, {	-- A Sacred Burial
 					["qg"] = 3233,	-- Lorekeeper Raintotem
-					-- #if AFTER CATA
-					["coord"] = { 49.4, 17.2, MULGORE },
-					-- #else
-					["coord"] = { 59.8, 25.6, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.4, 17.2, MULGORE },
+						-- #else
+						{ 59.8, 25.6, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -943,11 +951,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(743, {	-- Dangers of the Windfury
 					["qg"] = 2985,	-- Ruul Eagletalon
-					-- #if AFTER CATA
-					["coord"] = { 47.4, 61.2, MULGORE },
-					-- #else
-					["coord"] = { 47.4, 62.0, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.4, 61.2, MULGORE },
+						-- #else
+						{ 47.4, 62.0, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
@@ -1039,11 +1049,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(11129, {	-- Kyle's Gone Missing!
 					["qg"] = 23618,	-- Ahab Wheathoof <The Old Rancher>
-					-- #if AFTER CATA
-					["coord"] = { 48.3, 53.1, MULGORE },
-					-- #else
-					["coord"] = { 48.2, 53.4, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.3, 53.1, MULGORE },
+						-- #else
+						{ 48.2, 53.4, MULGORE },
+						-- #endif
+					},
 					["timeline"] = { ADDED_2_1_2 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -1168,11 +1180,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7663, {	-- New Kodo - Green
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3685,	-- Harb Clawhoof
-					-- #if AFTER CATA
-					["coord"] = { 47.6, 58.0, MULGORE },
-					-- #else
-					["coord"] = { 47.6, 58.4, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.6, 58.0, MULGORE },
+						-- #else
+						{ 47.6, 58.4, MULGORE },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15292, 1 } },	-- Green Kodo (MOUNT!)
 					["races"] = HORDE_ONLY,
@@ -1183,11 +1197,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7662, {	-- New Kodo - Teal
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3685,	-- Harb Clawhoof
-					-- #if AFTER CATA
-					["coord"] = { 47.6, 58.0, MULGORE },
-					-- #else
-					["coord"] = { 47.6, 58.4, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.6, 58.0, MULGORE },
+						-- #else
+						{ 47.6, 58.4, MULGORE },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15293, 1 } },	-- Teal Kodo (MOUNT!)
 					["races"] = HORDE_ONLY,
@@ -1246,11 +1262,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(744, {	-- Preparation for Ceremony
 					["qg"] = 2987,	-- Eyahn Eagletalon
-					-- #if AFTER CATA
-					["coord"] = { 49.6, 17.4, MULGORE },
-					-- #else
-					["coord"] = { 37.6, 59.8, THUNDER_BLUFF },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.6, 17.4, MULGORE },
+						-- #else
+						{ 37.6, 59.8, THUNDER_BLUFF },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -1361,15 +1379,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(773, {	-- Rite of Wisdom
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						20441,	-- Rite of Vision (2/2)
+						-- #else
+						772,	-- Rite of Vision (3/3)
+						-- #endif
+					},
+					["qgs"] = {
+						-- #if AFTER CATA
+						3233,	-- Lorekeeper Raintotem
+						-- #else
+						2984,	-- Seer Wiserunner
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.4, 17.2, MULGORE },
+						-- #else
+						{ 32.8, 36.0, MULGORE },
+						-- #endif
+					},
 					-- #if AFTER CATA
-					["qg"] = 3233,	-- Lorekeeper Raintotem
-					["sourceQuest"] = 20441,	-- Rite of Vision (2/2)
-					["coord"] = { 49.4, 17.2, MULGORE },
 					["races"] = { TAUREN },
 					-- #else
-					["qg"] = 2984,	-- Seer Wiserunner
-					["sourceQuest"] = 772,	-- Rite of Vision (3/3)
-					["coord"] = { 32.8, 36.0, MULGORE },
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = lvlsquish(3, 3, 1),
@@ -1510,11 +1543,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(761, {	-- Swoop Hunting
 					["qg"] = 2947,	-- Harken Windtotem
-					-- #if AFTER CATA
-					["coord"] = { 48.7, 58.7, MULGORE },
-					-- #else
-					["coord"] = { 48.7, 59.3, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.7, 58.7, MULGORE },
+						-- #else
+						{ 48.7, 59.3, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
@@ -1643,22 +1678,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(749, {	-- The Ravaged Caravan (1/2)
 					-- #if AFTER CATA
 					["sourceQuest"] = 24459,	-- Morin Cloudstalker
-					["coord"] = { 57.0, 60.4, MULGORE },
-					-- #else
-					["coord"] = { 54.4, 60.4, MULGORE },
 					-- #endif
 					["qg"] = 2988,	-- Morin Cloudstalker
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.0, 60.4, MULGORE },
+						-- #else
+						{ 54.4, 60.4, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(751, {	-- The Ravaged Caravan (2/2)
 					["sourceQuest"] = 749,	-- The Ravaged Caravan (1/2)
 					["provider"] = { "o", 2908 },	-- Sealed Supply Crate
-					-- #if AFTER CATA
-					["coord"] = { 53.6, 48.4, MULGORE },
-					-- #else
-					["coord"] = { 53.8, 48.3, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.6, 48.4, MULGORE },
+						-- #else
+						{ 53.8, 48.3, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = { i(4834) },	-- Venture Co. Documents (QI!)
@@ -1931,22 +1972,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(5787, {	-- Enforcer Emilgund
-					-- #if AFTER CATA
-					["coord"] = { 60.6, 47.6, MULGORE },
-					-- #else
-					["coord"] = { 40.6, 15.8, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.6, 47.6, MULGORE },
+						-- #else
+						{ 40.6, 15.8, MULGORE },
+						-- #endif
+					},
 				}),
 				n(3056, {	-- Ghost Howl
-					-- #if AFTER CATA
 					["coords"] = {
-                        { 42.21, 15.41, MULGORE },
-                        { 44.41, 15.01, MULGORE },
-                        { 44.81, 16.41, MULGORE },
-                        { 44.01, 17.61, MULGORE },
-                    },
-					-- #else
-					["coords"] = {
+						-- #if AFTER CATA
+                        { 42.2, 15.4, MULGORE },
+                        { 44.4, 15.0, MULGORE },
+                        { 44.8, 16.4, MULGORE },
+                        { 44.0, 17.6, MULGORE },
+						-- #else
 						{ 50.6, 15.0, MULGORE },
 						{ 39.6, 13.8, MULGORE },
 						{ 37.4, 17.8, MULGORE },
@@ -1955,8 +1996,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 34.0, 29.2, MULGORE },
 						{ 37.0, 42.6, MULGORE },
 						{ 44.2, 41.2, MULGORE },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(4854, {	-- Demon Scarred Cloak
 							["races"] = HORDE_ONLY,
@@ -1964,20 +2005,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(3068, {	-- Mazzranache
-					-- #if AFTER CATA
-					["coord"] = { 50.4, 42.6, MULGORE },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.4, 42.6, MULGORE },
+						-- #else
 						{ 34.8, 42.2, MULGORE },
 						{ 39.4, 44.2, MULGORE },
 						{ 44.4, 42.9, MULGORE },
 						{ 51.2, 43.6, MULGORE },
 						{ 56.6, 44.0, MULGORE },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(4861, {	-- Sleek Feathered Tunic
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1997,37 +2038,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(5785, {	-- Sister Hatelash
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 53.4, 12.6, MULGORE },
 						{ 32.6, 24.0, MULGORE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 30.6, 21.6, MULGORE },
 						{ 36.6, 11.6, MULGORE },
 						{ 55.6, 12.0, MULGORE },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(4772, {	-- Warm Cloak
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(5786, {	-- Snagglespear
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 53.4, 71.6, MULGORE },
 						{ 48.8, 70.0, MULGORE },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 48.2, 68.0, MULGORE },
 						{ 50.6, 71.4, MULGORE },
 						{ 55.2, 72.2, MULGORE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(5807, {	-- The Rake
 					["coords"] = {
@@ -2038,7 +2075,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(17922, {	-- Lionfur Armor
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2098,7 +2135,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3690, {	-- Kar Stormsinger <Kodo Riding Instructor>
 					["coord"] = { 47.6, 58.4, MULGORE },
 					["races"] = HORDE_ONLY,
-
 					-- Available to Tauren without faction requirements.
 					["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["OnInit"] = [[function(t)
@@ -2193,11 +2229,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(VENDORS, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
-					-- #if AFTER CATA
-					["coord"] = { 47.6, 58.0, MULGORE },
-					-- #else
-					["coord"] = { 47.6, 58.4, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.6, 58.0, MULGORE },
+						-- #else
+						{ 47.6, 58.4, MULGORE },
+						-- #endif
+					},
 					-- Available to Tauren without faction requirements.
 					["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["OnInit"] = [[function(t)
@@ -2225,11 +2263,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5940, {	-- Harn Longcast <Fishing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 47.6, 54.8, MULGORE },
-					-- #else
-					["coord"] = { 47.6, 55.0, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.6, 54.8, MULGORE },
+						-- #else
+						{ 47.6, 55.0, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
@@ -2254,11 +2294,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
-					-- #if AFTER CATA
-					["coord"] = { 46.4, 57.8, MULGORE },
-					-- #else
-					["coord"] = { 46.2, 58.2, MULGORE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.4, 57.8, MULGORE },
+						-- #else
+						{ 46.2, 58.2, MULGORE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
@@ -2322,7 +2364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "These are scattered throughout the zone.",
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
@@ -2331,7 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["description"] = "This can drop from any of the Rare Creatures in the zone.",
 					["coord"] = { 30.8, 61.6, MULGORE },
 					["classes"] = { WARRIOR },
 					["cr"] = 207515,	-- Lurkmane

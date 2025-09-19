@@ -55,6 +55,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["timeline"] = { ADDED_7_0_3 },
 				["isYearly"] = true,
 				["groups"] = {
+					i(138411),	-- Razor-Sharp Shark Tooth (QI!)
+					--
 					i(138414, {	-- Emergency Pirate Outfit
 						["timeline"] = { ADDED_7_0_3 },
 					}),
@@ -85,6 +87,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 					i(116392, {	-- Big Bag of Booty
 						["timeline"] = { ADDED_6_0_2 },
 						["filterID"] = CONSUMABLES,	-- Changed from "Toy"
+					}),
+					i(217373, {	-- Frenzied Hat of the Dark Depths
+						["timeline"] = { CREATED_10_2_6, ADDED_11_2_0 },
+						["cost"] = 10000000,	-- 1k
 					}),
 					i(208858, {	-- Highland Drake: Pirates' Day Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },

@@ -1769,6 +1769,132 @@ MOP_PHASE_ONE = createClassicPhase({
 		mx = "Incluido la gesta de la Caída de Theramore de nivel 85 y el sistema de talentos actualizado.",
 	},
 });
+MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
+	readable = "Mogu'shan Vaults",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5001,
+	release = os.time({
+		year=2025,
+		month=7,
+		day=31,
+	}),
+	text = {
+		en = "Mogu'shan Vaults",
+	},
+	lore = {
+		en = "Included Mogu'shan Vaults.",
+	},
+});
+MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
+	readable = "Celestial Dungeons (MSV)",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5002,
+	release = os.time({
+		year=2025,
+		month=8,
+		day=12,
+	}),
+	text = {
+		en = "Celestial Dungeons (MSV)",
+	},
+	lore = {
+		en = "Included Celestial Dungeons with MSV loot.",
+	},
+});
+MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
+	readable = "Heart of Fear",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5003,
+	release = os.time({
+		year=2025,
+		month=8,
+		day=21,
+	}),
+	text = {
+		en = "Heart of Fear",
+	},
+	lore = {
+		en = "Included Heart of Fear.",
+	},
+});
+MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
+	readable = "Sha of Anger (Tier Available)",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5004,
+	release = os.time({
+		year=2025,
+		month=8,
+		day=26,
+	}),
+	text = {
+		en = "Sha of Anger (Tier Available)",
+	},
+	lore = {
+		en = "Included Tier 14 Gear from Sha of Anger.",
+	},
+});
+MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
+	readable = "Celestial Dungeons (HOF)",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5005,
+	release = os.time({
+		year=2025,
+		month=9,
+		day=2,
+	}),
+	text = {
+		en = "Celestial Dungeons (HOF)",
+	},
+	lore = {
+		en = "Included Heart of Fear LFR gear for Celestial Dungeons.",
+	},
+});
+MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
+	readable = "Terrace of Endless Springs",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5006,
+	release = os.time({
+		year=2025,
+		month=9,
+		day=4,
+	}),
+	text = {
+		en = "Terrace of Endless Springs",
+	},
+	lore = {
+		en = "Included Terrace of Endless Springs.",
+	},
+});
+MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
+	readable = "Celestial Dungeons (ToES)",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 5007,
+	release = os.time({
+		year=2025,
+		month=9,
+		day=16,
+	}),
+	text = {
+		en = "Celestial Dungeons (ToES)",
+	},
+	lore = {
+		en = "Included Terrace of Endless Springs LFR gear for Celestial Dungeons.",
+	},
+});
 MOP_PHASE_LANDFALL = createClassicPhase({
 	readable = "Mists Classic - Landfall",
 	originalTimelines = { "5.1.0" },
@@ -1781,9 +1907,7 @@ MOP_PHASE_LANDFALL = createClassicPhase({
 		mx = "Desembarco",
 	},
 	lore = {
-		en = "Included Mogu'shan Vaults, Heart of Fear, and Terrace of the Endless Spring.",
-		es = "Incluye las Bóvedas Mogu'shan, El Corazón del Miedo y la Veranda de la primavera eterna.",
-		mx = "Incluye las Bóvedas Mogu'shan, El Corazón del Miedo y la Veranda de la primavera eterna.",
+		en = "Includes the Pandaria Campaign quest line in Krasarang Wilds and the Brawler's Guild.",
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({

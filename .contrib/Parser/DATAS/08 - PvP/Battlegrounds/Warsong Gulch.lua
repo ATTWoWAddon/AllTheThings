@@ -316,6 +316,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8372, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -324,6 +325,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8399, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -332,6 +334,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8400, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -340,6 +343,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8401, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -348,6 +352,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8402, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -356,6 +361,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8403, {	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -365,6 +371,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -375,6 +382,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -385,6 +393,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -395,6 +404,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -405,6 +415,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,
@@ -415,6 +426,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["qg"] = 15351,	-- Alliance Brigadier General
+					["coord"] = { 79.4, 18.2, STORMWIND_CITY },
 					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
 					["races"] = ALLIANCE_ONLY,

@@ -26,7 +26,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				q(42243, {	-- Halls of Valor: Deeds of the Past
 					["isWorldQuest"] = true,
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["groups"] = {
+						i(137110),	-- Book of Exalted Deeds (QI!)
+					},
 				}),
 				q(42240, {	-- Halls of Valor: Ponderous Poaching
 					["isWorldQuest"] = true,

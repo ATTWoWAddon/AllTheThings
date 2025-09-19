@@ -590,11 +590,6 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 };
--- #if AFTER BFA
-local ZURII_YURIAL_GROUPS = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, {});
--- #else
-local ZURII_YURIAL_GROUPS = ENCHANTING_SUPPLIES;
--- #endif
 -- #if AFTER CATA
 local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
 -- #elseif AFTER WRATH
@@ -1671,7 +1666,7 @@ root(ROOTS.Zones, {
 							}, {	-- Honored
 								applyclassicphase(TBC_PHASE_TWO, i(35404)),	-- Crusader's Ornamented Headguard
 								applyclassicphase(TBC_PHASE_TWO, i(35416)),	-- Crusader's Scaled Shoulders
-								i(33155),	-- Design: Kailee's Rose (RECIPE!)
+								i(33155, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Kailee's Rose (RECIPE!)
 								i(30826),	-- Design: Ring of Arcane Shielding (RECIPE!)
 								i(29195, {	-- Glyph of Arcane Warding
 									["timeline"] = { REMOVED_5_0_4 },
@@ -1692,7 +1687,7 @@ root(ROOTS.Zones, {
 								applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
 							}, {	-- Revered
 								i(29180),	-- Blessed Scale Girdle
-								i(33159),	-- Design: Blood of Amber (RECIPE!)
+								i(33159, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Blood of Amber (RECIPE!)
 								i(24182),	-- Design: Talasite Owl (RECIPE!)
 								applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
 								applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
@@ -1865,24 +1860,24 @@ root(ROOTS.Zones, {
 					n(19196, {	-- Cro Threadstrong <Leatherworking Supplies>
 						["coord"] = { 67.2, 67.6, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
-						["groups"] = appendGroups(VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {
+						["groups"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
 								["timeline"] = { REMOVED_3_2_0},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
 								["f"] = RECIPES,
 							}),
-						}),
+						},
 					}),
 					n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 						["coord"] = { 66.2, 68.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
-						["groups"] = appendGroups(VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {
+						["groups"] = {
 							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
 							i(21893),	-- Pattern: Imbued Netherweave Bag (RECIPE!)
 							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
 							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-						}),
+						},
 					}),
 					n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
 						["coord"] = { 56.2, 74.4, SHATTRATH_CITY },
@@ -2169,7 +2164,6 @@ root(ROOTS.Zones, {
 							{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
 						},
 						-- #endif
-						["groups"] = JEWELCRAFTING_SUPPLIES,
 					}),
 					n(19195, {	-- Jim Saltit <Cooking Supplies>
 						["coord"] = { 63.4, 68.6, SHATTRATH_CITY },
@@ -2205,7 +2199,6 @@ root(ROOTS.Zones, {
 						["sym"] = {
 							{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
 						},
-						["groups"] = JEWELCRAFTING_SUPPLIES,
 					}),
 					n(19186, {	-- Kylene <Barmaid>
 						["description"] = "Speak to her and tell her she's quite the cook to learn these recipes.",
@@ -2343,7 +2336,7 @@ root(ROOTS.Zones, {
 									["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateCompareOtherKey(185691),
 									-- #endif
 								}),
-								i(33157),	-- Design: Falling Star (RECIPE!)
+								i(33157, {["timeline"] = {ADDED_2_2_0}}),	-- Design: Falling Star (RECIPE!)
 								i(24179),	-- Design: Felsteel Boar (RECIPE!)
 								i(24175),	-- Design: Pendant of Thawing (RECIPE!)
 								i(30846, {	-- Glyph of the Outcast
@@ -2462,7 +2455,7 @@ root(ROOTS.Zones, {
 								i(24292),	-- Pattern: Mystic Spellthread (RECIPE!)
 								i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
 							}, {	-- Revered
-								i(24176),	-- Design: Pendant of Withering
+								i(24176),	-- Design: Pendant of Withering (RECIPE!)
 								i(29134),	-- Gauntlets of the Chosen
 								i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
 								i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
@@ -2591,11 +2584,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.8, 20.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							-- #if AFTER CATA
-							i(3371),	-- Crystal Vial
-							-- #else
-							i(18256),	-- Imbued Vial
-							-- #endif
 							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -2663,13 +2651,11 @@ root(ROOTS.Zones, {
 					n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
 						["coord"] = { 44.6, 96.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 					n(33676, {	-- Zurii <Enchanting Trainer>
 						["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
 						["timeline"] = { ADDED_3_1_0 },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-						["groups"] = ZURII_YURIAL_GROUPS,
 					}),
 				}),
 			},

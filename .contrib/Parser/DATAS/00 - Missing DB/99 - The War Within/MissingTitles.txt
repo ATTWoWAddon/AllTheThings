@@ -1,10 +1,19 @@
+5.5.1.62856
+title(250),	-- Grievous Skirmisher %s
+title(980),	-- Skirmisher %s
+title(995),	-- Malevolent Skirmisher %s
+title(996),	-- Tyrannical Skirmisher %s
+11.1.7.60520
+title(629),	-- %s of Hammerfall
+title(630),	-- %s of Stromgarde
 11.2.0.61476
 title(638),	-- %s the Delver Within
 title(641),	-- %s Bronzebeard
-title(644),	-- %s of the Twilight Star
 11.2.0.61624
 title(647),	-- Ba'%s
 title(648),	-- Zo'%s
 title(649),	-- Om'%s
 11.2.0.62049
 title(650),	-- Delver %s
+11.2.5.62554
+title(645),	-- Khaz Algar Enthusiast %s

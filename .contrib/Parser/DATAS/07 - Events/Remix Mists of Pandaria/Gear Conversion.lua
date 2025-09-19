@@ -1,17 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-GEAR_CONVERSION = createHeader({
-	readable = "Gear Conversion",
-	icon = 1391675,
-	text = {
-		en = "Gear Conversion",
-		tw = "裝備轉換",
-	},
-});
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(GEAR_CONVERSION, {
-		["description"] = "These items were obtained by characters created during the MoP Remix Event and were automatically transferred to Retail when the event ended.",
 		["groups"] = {
 			cl(DEATHKNIGHT, {
 				i(218130, {	-- Adventurer's Footlocker

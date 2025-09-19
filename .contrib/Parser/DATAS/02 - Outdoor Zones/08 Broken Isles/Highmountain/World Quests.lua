@@ -11,7 +11,11 @@ root(ROOTS.Zones, {
 				q(46191),	-- Balinar (Invasion wq)
 				q(45071),	-- Barrels o' Fun
 				q(40978),	-- Bears Behaving Badly
-				q(40951),	-- Bitestone Bazaar
+				q(40951, {	-- Bitestone Bazaar
+					["groups"] = {
+						i(133972),	-- Basilisk Meat (QI!)
+					},
+				}),
 				q(40925),	-- Bitestone Burglary
 				q(40980),	-- Boilback Plague
 				q(41308),	-- Border Reinforcements
@@ -19,6 +23,9 @@ root(ROOTS.Zones, {
 				q(46193),	-- Borne of Fel (Invasion WQ)
 				q(41203, {	-- Bright Leystone Deposits
 					["requireSkill"] = MINING,
+					["groups"] = {
+						i(141231),	-- Bright Leystone Ore (QI!)
+					},
 				}),
 				q(41208, {	-- Brimstone Destroyer
 					["requireSkill"] = MINING,

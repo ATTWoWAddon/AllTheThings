@@ -1,2 +1,14 @@
 5.5.0.60481
 title(209),	-- Brawler %s
+5.5.1.62856
+title(250),	-- Grievous Skirmisher %s
+title(255),	-- Mistwalker %s \\ Prideful Skirmisher %s
+title(256),	-- %s of the Black Harvest \\ Marauder %s
+title(257),	-- Lumberjack %s \\ Malevolent Marauder %s
+title(258),	-- Echochaser %s \\ Timber Lord %s \\ Timer Lord %s \\ Tyrannical Marauder %s
+title(259),	-- %s the Commandojack \\ %s The Commandojack \\ Grievous Marauder %s
+title(260),	-- Architect %s \\ Prideful Marauder %s
+title(261),	-- Blood Champion %s \\ Undisputed Gladiator %s
+title(980),	-- Skirmisher %s
+title(995),	-- Malevolent Skirmisher %s
+title(996),	-- Tyrannical Skirmisher %s

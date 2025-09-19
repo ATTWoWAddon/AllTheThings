@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			visit_exploration(8032,{coord={66.7,32.2,VALSHARAH}}),	-- Sylvan Vale
 			visit_exploration(8067,{coord={72.4,50.4,VALSHARAH}}),	-- Sundersong Glade
 			exploration(8333),	-- Tangled Cleft
-			exploration(7677),	-- Temple of Elune
+			visit_exploration(7677,{coord={52.4,58.0,VALSHARAH}}),	-- Temple of Elune
 			exploration(7572, {	-- Thas'talah
 				-- CRIEVE NOTE: I was initially able to collect this, but if you collect Bradensbrook, it gets masked behind it.
 				["collectible"] = false,
@@ -66,6 +66,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			visit_exploration(7668,{coord={42.6,70.2,VALSHARAH}}),	-- Thas'talah Basin
 			exploration(7913),	-- The Crescent Vale
 			exploration(7846),	-- The Dreamgrove
+			visit_exploration(8387,{coord={50.7,66.8,VALSHARAH}}),	-- The Hidden Pools
 			visit_exploration(8066,{coord={70.7,48.6,VALSHARAH}}),	-- The High Road
 			exploration(8363),	-- The Wildwood
 			visit_exploration(8494,{coord={44.7,8.9,VALSHARAH}}),	-- Verdant Cliffs

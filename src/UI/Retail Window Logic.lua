@@ -130,7 +130,7 @@ local function UpdateWindow(self, force, got)
 		self.HasPendingUpdate = true;
 		force = nil;
 	end
-	-- app.PrintDebug(Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
+	-- app.PrintDebug(app.Modules.Color.Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
 	-- 	force and "FORCE" or "SOFT",
 	-- 	visible and "VISIBLE" or "HIDDEN",
 	-- 	got and "COLLECTED" or "PASSIVE",
@@ -314,7 +314,7 @@ end
 end
 app.GetIndicatorIcon = GetIndicatorIcon
 local function SetIndicatorIcon(self, data)
-	local texture = app.GetIndicatorIcon(data);
+	local texture = GetIndicatorIcon(data);
 	if texture then
 		self:SetTexture(texture);
 		return true;
@@ -1168,19 +1168,21 @@ local function ToggleMiniListForCurrentZone()
 end
 app.ToggleMiniListForCurrentZone = ToggleMiniListForCurrentZone;
 
-local function LocationTrigger(forceNewMap)
-	if not app.InWorld or not app.IsReady then return end
-	local window = app:GetWindow("CurrentInstance");
-	if not window:IsVisible() then return end
-	-- app.PrintDebug("LocationTrigger-Callback",forceNewMap)
-	if forceNewMap then
-		-- this allows minilist to rebuild itself
-		wipe(window.CurrentMaps)
+app.LocationTrigger = app.EmptyFunction
+app.AddEventHandler("OnReady", function()
+	local function LocationTrigger(forceNewMap)
+		local window = app:GetWindow("CurrentInstance")
+		if not window:IsVisible() then return end
+		-- app.PrintDebug("LocationTrigger-Callback",forceNewMap)
+		if forceNewMap then
+			-- this allows minilist to rebuild itself
+			wipe(window.CurrentMaps)
+		end
+		AfterCombatOrDelayedCallback(window.RefreshLocation, 0.1)
 	end
-	AfterCombatOrDelayedCallback(window.RefreshLocation, 0.25);
-end
-app.LocationTrigger = LocationTrigger;
-app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
+	app.LocationTrigger = LocationTrigger
+	app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger)
+end)
 
 app.ToggleMainList = function()
 	app:GetWindow("Prime"):Toggle();
@@ -2173,8 +2175,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 	end
 	-- Add info in tooltip for the header of a Window for whether it is locked or not
 	if self.index == 0 then
-		local window = self:GetParent():GetParent();
-		if window and window.isLocked then
+		if window.isLocked then
 			tooltipInfo[#tooltipInfo + 1] = {
 				left = L.TOP_ROW_TO_UNLOCK,
 			}
@@ -2272,3 +2273,54 @@ app.AddEventHandler("RowOnEnter", function(self)
 	-- Tooltip for something which was not attached via search, so mark it as complete here
 	tooltip.ATT_AttachComplete = not reference.working;
 end)
+
+-- TODO: move to Minilist window UI file once split
+do
+	local MinilistSuffix = "CurrentInstance"
+	local containsValue = app.containsValue;
+	local function TryGeneralExpand(window)
+		-- check to expand groups after they have been built and updated
+		-- dont re-expand if the user has previously full-collapsed the minilist
+		-- need to force expand if so since the groups haven't been updated yet
+		if not window.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
+			window.ExpandInfo = { Expand = true };
+			Callback(window.Update, window)
+		end
+	end
+	local function TryExpandMinilist(window)
+		if window.Suffix ~= MinilistSuffix then return end
+
+		local header = window.data
+		local g = header and header.g
+		if not g then return end
+
+		-- app.PrintDebug("Try expand minilist",app.Settings:GetTooltipSetting("Expand:Difficulty"),app.GetCurrentDifficultyID())
+		if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+			local difficultyID = app.GetCurrentDifficultyID()
+			if difficultyID and difficultyID ~= 0 then
+				local expanded, row
+				for i=1,#g do
+					row = g[i]
+					if row.difficultyID or row.difficulties then
+						if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+							ExpandGroupsRecursively(row, true, true)
+							expanded = true
+						elseif row.expanded then
+							ExpandGroupsRecursively(row, false, true)
+						end
+					-- Zone Drops/Common Boss Drops should also be expanded within instances
+					-- elseif row.headerID == app.HeaderConstants.ZONE_DROPS or row.headerID == app.HeaderConstants.COMMON_BOSS_DROPS then
+					-- 	if not row.expanded then ExpandGroupsRecursively(row, true); expanded = true; end
+					end
+				end
+
+				if expanded then
+					Callback(window.Update, window)
+					return
+				end
+			end
+		end
+		TryGeneralExpand(window)
+	end
+	app.AddEventHandler("OnWindowFillComplete", TryExpandMinilist)
+end

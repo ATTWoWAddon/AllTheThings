@@ -1849,11 +1849,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 3143 },	-- Gornek
 								{ "i", 9579 },	-- Tainted Parchment
 							},
-							-- #if AFTER CATA
-							["coord"] = { 43.2, 68.2, DUROTAR },
-							-- #else
-							["coord"] = { 42, 68.4, DUROTAR },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 43.2, 68.2, DUROTAR },
+								-- #else
+								{ 42, 68.4, DUROTAR },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { ORC, TROLL },
 							["classes"] = { WARLOCK },

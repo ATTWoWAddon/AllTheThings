@@ -122,6 +122,7 @@
     <Compile Include="Export\Export %28Shortcuts%29.cs" />
     <Compile Include="Export\Export %28Structures%29.cs" />
     <Compile Include="Export\Export.cs" />
+    <Compile Include="Export\Exporter.cs" />
     <Compile Include="Export\Object Data\HeaderData.cs" />
     <Compile Include="Export\Object Data\QuestData.cs" />
     <Compile Include="Export\Object Data\MapData.cs" />

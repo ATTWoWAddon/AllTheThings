@@ -1,10 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		header(HEADERS.Spell, 458069, {	-- Seafury Tempest (Storm)
 			petbattle(filter(BATTLE_PETS, {
@@ -184,9 +181,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(SIREN_ISLE, {
 			n(QUESTS, {
@@ -203,4 +200,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

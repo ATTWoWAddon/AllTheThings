@@ -688,8 +688,14 @@ namespace ATT
             if (ProcessingFunction(data, parentData))
             {
                 // If this container has an aqd or hqd, then process those objects as well.
-                if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
-                if (data.TryGetValue("hqd", out qd)) Process(qd, data);
+                if (data.TryGetValue("aqd", out IDictionary<string, object> aqd)) Process(aqd, data);
+                if (data.TryGetValue("hqd", out IDictionary<string, object> hqd)) Process(hqd, data);
+                if (aqd != null || hqd != null)
+                {
+                    // Include Parent field consolidation on the aqd/hqd data also
+                    if (CurrentParseStage >= ParseStage.Consolidation)
+                        HierarchicalFieldAdjustments.Apply(data, aqd ?? new Dictionary<string, object>(), hqd ?? new Dictionary<string, object>());
+                }
 
                 // If this container has groups, then process those groups as well.
                 if (data.TryGetValue("g", out List<object> groups))
@@ -759,6 +765,23 @@ namespace ATT
             return success;
         }
 
+        private static void CloneAndMergeForDebugData(IDictionary<string, object> data, IDictionary<string, object> keyValueValues)
+        {
+            Dictionary<string, object> clone = new Dictionary<string, object>(data);
+            clone.Remove("g");
+            // cost can be variable so don't merge into Debug DBs
+            clone.Remove("cost");
+            // special case for criteria, to list under their achievement instead of into it since they contain the same achID
+            if (data.ContainsKey("criteriaID"))
+            {
+                Objects.Merge(keyValueValues, "g", clone);
+            }
+            else
+            {
+                Objects.Merge(keyValueValues, clone);
+            }
+        }
+
         private static void CaptureDebugDBData(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, ConcurrentDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
@@ -769,18 +792,44 @@ namespace ATT
                     if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
                         dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
 
-                    Dictionary<string, object> clone = new Dictionary<string, object>(data);
-                    clone.Remove("g");
-                    // cost can be variable so don't merge into Debug DBs
-                    clone.Remove("cost");
-                    // special case for criteria, to list under their achievement instead of into it since they contain the same achID
-                    if (data.ContainsKey("criteriaID"))
+                    CloneAndMergeForDebugData(data, keyValueValues);
+                }
+            }
+
+            // Special Source cases -- we don't want these data to be considered 'missing' even though they aren't 'sourced' as a direct group
+            // so we need to hook them into the DebugDBs in a slightly different manner
+            if (data.TryGetValue("qis", out List<object> qis))
+            {
+                if (DebugDBs.TryGetValue("itemID", out var itemDebugDB))
+                {
+                    foreach (decimal qi in qis.AsTypedEnumerable<decimal>())
                     {
-                        Objects.Merge(keyValueValues, "g", clone);
+                        if (!itemDebugDB.TryGetValue(qi, out IDictionary<string, object> keyValueValues))
+                            itemDebugDB[qi] = keyValueValues = new Dictionary<string, object>();
+
+                        CloneAndMergeForDebugData(data, keyValueValues);
                     }
-                    else
+                }
+            }
+
+            if (data.TryGetValue("providers", out List<object> providers) && data.TryGetValue("headerID", out object headerID))
+            {
+                foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
+                {
+                    switch (provider[0])
                     {
-                        Objects.Merge(keyValueValues, clone);
+                        case "i":
+                            if (DebugDBs.TryGetValue("itemID", out var itemDebugDB))
+                            {
+                                if (provider[1].TryConvert(out decimal id))
+                                {
+                                    if (!itemDebugDB.TryGetValue(id, out IDictionary<string, object> keyValueValues))
+                                        itemDebugDB[id] = keyValueValues = new Dictionary<string, object>();
+
+                                    CloneAndMergeForDebugData(data, keyValueValues);
+                                }
+                            }
+                            break;
                     }
                 }
             }
@@ -1980,8 +2029,9 @@ namespace ATT
                 }
             }
 
+            data.TryGetValue("type", out string type);
             // Convert any 'n' providers into 'qgs' for data simplicity, if not an item listed first
-            if (data.TryGetValue("providers", out List<object> providers)
+            if (type != "hqt" && data.TryGetValue("providers", out List<object> providers)
                 // if not an item listed first
                 && !(providers.Count > 0
                     && providers[0] is List<object> firstProvider
@@ -2014,7 +2064,7 @@ namespace ATT
             if (!data.ContainsKey("objectID") && !data.ContainsKey("itemID") && !data.ContainsKey("npcID"))
             {
                 // don't warn this for HQTs
-                if (!data.TryGetValue("type", out string type) || type != "hqt")
+                if (type != "hqt")
                 {
                     if (CurrentParentGroup.HasValue &&
                         (CurrentParentGroup.Value.Key == "itemID" ||
@@ -2328,19 +2378,24 @@ namespace ATT
             long providerItem = criteriaData.GetProviderItem();
             if (providerItem > 0)
             {
-                // if parent criteriaTree specifies a larger amount, then need to assign as a Cost instead of Provider
-                data.TryGetValue("_parentAmount", out long parentAmount);
-                if (parentAmount <= 1)
+                // sometimes we mark the Criteria as the item itself to reduce duplication when the only purpose of obtaining the Item is granting the Criteria
+                // so don't add the provider for itself in this case
+                if (!data.TryGetValue("itemID", out long itemID) || itemID != providerItem)
                 {
-                    LogDebug($"INFO: Added Item Provider to Criteria {achID}:{criteriaID} => {providerItem}");
-                    Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
+                    // if parent criteriaTree specifies a larger amount, then need to assign as a Cost instead of Provider
+                    data.TryGetValue("_parentAmount", out long parentAmount);
+                    if (parentAmount <= 1)
+                    {
+                        LogDebug($"INFO: Added Item Provider to Criteria {achID}:{criteriaID} => {providerItem}");
+                        Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
+                    }
+                    else
+                    {
+                        LogDebug($"INFO: Added Item Cost to Criteria {achID}:{criteriaID} => {providerItem}x{parentAmount}");
+                        Cost.Merge(data, "i", providerItem, parentAmount);
+                    }
+                    incorporated = true;
                 }
-                else
-                {
-                    LogDebug($"INFO: Added Item Cost to Criteria {achID}:{criteriaID} => {providerItem}x{parentAmount}");
-                    Cost.Merge(data, "i", providerItem, parentAmount);
-                }
-                incorporated = true;
             }
 
             // Provider Object for the Criteria
@@ -3055,10 +3110,15 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
             if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
-            if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet) && tmogSet.TrackingQuestID > 0)
+            if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet))
             {
-                Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
-                TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
+                if (tmogSet.TrackingQuestID > 0)
+                {
+                    Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+                    TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
+                }
+
+                Incorporate_Item_TransmogSetItems(data, tmogSetID);
 
                 // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
                 // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
@@ -3112,21 +3172,18 @@ namespace ATT
                 List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
 
                 // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
-                if (data.TryGetValue("questID", out long questID))
+                if (data.TryGetValue("questID", out long questID) && !data.ContainsKey("_IgnoreSharedEnsembleByQuestID"))
                 {
-                    foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values)
+                    foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values.Where(s => s.TrackingQuestID == questID && s.ID != tmogSetID))
                     {
-                        if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
+                        if (!WagoData.TryGetTransmogSetAssociations(sameQuestTransmogSet.ID, out List<TransmogSetItem> additionalTmogSetItems) || additionalTmogSetItems.Count < 1)
                         {
-                            if (!WagoData.TryGetTransmogSetAssociations(tmogSetID, out List<TransmogSetItem> associations) || associations.Count < 1)
-                            {
-                                LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
-                            }
-                            else
-                            {
-                                allSourceIDs.AddRange(transmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                                LogDebug($"INFO: Ensemble {tmogSetID} has addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
-                            }
+                            LogDebug($"INFO: Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
+                        }
+                        else
+                        {
+                            allSourceIDs.AddRange(additionalTmogSetItems.Select(i => i.ItemModifiedAppearanceID));
+                            LogDebug($"INFO: Ensemble {tmogSetID} has {additionalTmogSetItems.Count} addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
                         }
                     }
                 }
@@ -3298,7 +3355,6 @@ namespace ATT
                 }
                 // this is repeated later for the same data, yes, but we need to ensure some things happen in the correct order
                 Incorporate_Ensemble(data);
-                Incorporate_Item_TransmogSetItems(data, tmogSetID);
             }
         }
 
@@ -4272,6 +4328,9 @@ namespace ATT
                 Objects.Merge(parentData, "cost", cost);
                 LogDebug($"Merged 'cost' to parent from Objective {cost}", parentData);
             }
+
+            // After the merging of objective data into the parent, make sure to re-capture it properly
+            CaptureDebugDBData(parentData);
         }
 
         private static bool IsObtainableData(IDictionary<string, object> data)

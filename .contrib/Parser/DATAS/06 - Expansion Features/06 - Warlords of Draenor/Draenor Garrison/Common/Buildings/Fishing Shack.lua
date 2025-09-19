@@ -8,11 +8,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 				["requireSkill"] = FISHING,
 				["groups"] = {
-					n(ACHIEVEMENTS, {
-						ach(7274, {  -- Learning From The Best
-							i(86596),	-- Nat's Fishing Chair (TOY!)
-						}),
-					}),
 					n(QUESTS, {
 						i(112623, {	-- Pack of Fishing Supplies
 							["description"] = "Rewarded by the current Fishing Daily Quest from the Fishing Shack.",
@@ -336,7 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},
 							}),
 							i(86596, {	-- Nat's Fishing Chair (TOY!)
-								["description"] = "Requires Best Friend to see.",
+								["minReputation"] = { FACTION_NAT_PAGLE, 6 },	-- Nat Pagle, Best Friend.
 							}),
 							i(87791, {	-- Crimson Water Strider (MOUNT!)
 								["cost"] = {{ "i", NATS_LUCKY_COIN, 100 }},

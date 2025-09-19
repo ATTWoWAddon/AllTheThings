@@ -144,7 +144,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(67, 67, 10),
 					["groups"] = {
 						objective(1, {	-- 0/5 Vrykul Weapon
-							["provider"] = { "i", 43513 },	-- Vrykul Weapon
+							["providers"] = {
+								{ "i",  43513 },	-- Vrykul Weapon
+								{ "o", 193059 },	-- Vrykul Weapons
+							},
 						}),
 						i(44374),	-- Amulet of the Tranquil Mind
 						i(44375),	-- Razor-Blade Pendant
@@ -158,7 +161,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["lvl"] = lvlsquish(67, 67, 10),
 					["groups"] = {
 						objective(1, {	-- 0/5 Vrykul Weapon
-							["provider"] = { "i", 43513 },	-- Vrykul Weapon
+							["providers"] = {
+								{ "i",  43513 },	-- Vrykul Weapon
+								{ "o", 193059 },	-- Vrykul Weapons
+							},
 						}),
 						i(44400),	-- Necklace of Calm Skies
 						i(44401),	-- Hundred Tooth Necklace

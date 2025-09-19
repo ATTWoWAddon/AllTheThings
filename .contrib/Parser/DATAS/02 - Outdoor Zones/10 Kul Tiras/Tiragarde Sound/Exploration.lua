@@ -10,7 +10,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			exploration(9405),	-- Anglepoint Packing District
 			exploration(9124),	-- Anglepoint Wharf
 			exploration(8902),	-- Ashvane Foundry
-			exploration(9231),	-- Barbthorn Ridge
 			visit_exploration(9601,{coord={64.1,19.3,TIRAGARDE_SOUND}}),	-- Blushwater Brook
 			exploration(8568),	-- Boralus
 			exploration(8717),	-- Boralus Harbor

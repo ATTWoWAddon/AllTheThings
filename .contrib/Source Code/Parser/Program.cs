@@ -682,6 +682,10 @@ namespace ATT
             {
                 case "debug":
                     Framework.DebugMode = true;
+                    Framework.DebugLogging = true;
+                    break;
+                case "debug-nolog":
+                    Framework.DebugMode = true;
                     break;
                 case "auto":
                     Framework.Automated = true;

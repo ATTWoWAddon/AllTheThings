@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(VENDORS, {
 			n(236045, {	-- Ailenda Hedgemyr
@@ -287,4 +287,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 		}),
 	}),
-})));
+}));

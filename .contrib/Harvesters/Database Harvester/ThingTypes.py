@@ -98,6 +98,32 @@ class Achievements(Thing):
     def id_schema() -> list[str]:
         return ["id", "name"]
 
+class Explorations(Thing):
+    @staticmethod
+    def table() -> str:
+        return "areatable"
+
+    @staticmethod
+    def debugDB_prefix() -> str:
+        return "exploration"
+
+    @staticmethod
+    def existing_prefixes() -> tuple[str, ...]:
+        return ("exp(",)
+
+    @staticmethod
+    def new_prefix() -> str:
+        return "exploration("
+
+    @staticmethod
+    def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
+        # Explorations have names in the same db
+        title = "AreaName_lang" if "AreaName_lang" in row else "AreaName_lang[0]"
+        return f"{row['ID']}{DELIMITER}{row[title]}"
+
+    @staticmethod
+    def id_schema() -> list[str]:
+        return ["id", "name"]
 
 class Factions(Thing):
     @staticmethod
@@ -254,7 +280,10 @@ class Items(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Toys and Transmog
-        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
+        if build == "11.2.5.62554":
+            return f"{row['ID']}{DELIMITER}{row['Field_11_2_5_62554_005_lang'].strip()}"
+        else:
+            return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
 
     @staticmethod
     def id_schema() -> list[str]:

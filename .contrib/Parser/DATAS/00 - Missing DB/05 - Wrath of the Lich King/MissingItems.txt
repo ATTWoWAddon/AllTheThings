@@ -84,12 +84,7 @@ i(33451),	-- et of Icefin \\ Fillet of Icefin
 i(33452),	-- y-Spiced Lichen \\ Honey-Spiced Lichen
 i(33454),	-- ed Venison \\ Salted Venison
 i(33456),	-- Oluf's Cage Key
-i(33457),	-- ll of Agility VI \\ Scroll of Agility VI
-i(33458),	-- ll of Intellect VI \\ Scroll of Intellect VI
 i(33459),	-- ll of Protection VI \\ Scroll of Protection VI
-i(33460),	-- Scroll of Versatility VI \\ ll of Versatility VI \\ Scroll of Spirit VI
-i(33461),	-- ll of Stamina VI \\ Scroll of Stamina VI
-i(33462),	-- ll of Strength VI \\ Scroll of Strength VI
 i(33477),	-- t Yeti Meal \\ Giant Yeti Meal
 i(33485),	-- ed Artifact \\ Sacred Artifact
 i(33486),	-- uehound Leash \\ Plaguehound Leash
@@ -162,7 +157,6 @@ i(34051),	-- ance Banner \\ Alliance Banner
 i(34069),	-- i Vase \\ Amani Vase
 i(34070),	-- e Figurine \\ Eagle Figurine
 i(34076),	-- Bladder \\ Fish Bladder
-i(34078),	-- ammer's Harpoon Controller \\ Icehammer's Harpoon Controller
 i(34081),	-- arde Supply Crate \\ Valgarde Supply Crate
 i(34082),	-- ng Helm \\ Diving Helm
 i(34083),	-- ening Rod \\ Awakening Rod
@@ -490,7 +484,6 @@ i(36753),	-- x's Key Fragment \\ Tivax's Key Fragment
 i(36754),	-- k's Key Fragment \\ Sinok's Key Fragment
 i(36756),	-- ain Malin's Letter \\ Captain Malin's Letter
 i(36757),	-- kari Tablets \\ Drakkari Tablets
-i(36758),	-- ed Mojo \\ Sacred Mojo
 i(36759),	-- ment of Anub'et'kan's Husk \\ Fragment of Anub'et'kan's Husk
 i(36760),	-- 'ar Prison Key \\ Anub'ar Prison Key
 i(36763),	-- Anub'ar Prison Key (NEW)
@@ -621,18 +614,11 @@ i(37085),	-- Leaf \\ Haze Leaf
 i(37087),	-- troot \\ Sweetroot
 i(37089),	-- Honeycone
 i(37090),	-- Quickpoppy
-i(37091),	-- ll of Intellect VII \\ Scroll of Intellect VII
-i(37092),	-- ll of Intellect VIII \\ Scroll of Intellect VIII
-i(37093),	-- ll of Stamina VII \\ Scroll of Stamina VII
-i(37094),	-- ll of Stamina VIII \\ Scroll of Stamina VIII
-i(37097),	-- Scroll of Versatility VII \\ ll of Versatility VII \\ Scroll of Spirit VII
-i(37098),	-- Scroll of Versatility VIII \\ ll of Versatility VIII \\ Scroll of Spirit VIII
 i(37100),	-- Silver Ink
 i(37101),	-- y Ink \\ Ivory Ink
 i(37102),	-- Deprecated Emerald Ink
 i(37103),	-- Deprecated Alabaster Ink
 i(37104),	-- re Stag Horn \\ Mature Stag Horn
-i(37118),	-- ll of Recall \\ Scroll of Recall
 i(37121),	-- plasmic Residue \\ Ectoplasmic Residue
 i(37124),	-- ald Dragon Tear \\ Emerald Dragon Tear
 i(37125),	-- r's Camera \\ Rokar's Camera
@@ -1053,9 +1039,6 @@ i(38610),	-- h Spider Ichor \\ Fresh Spider Ichor
 i(38619),	-- gek's Shackles \\ Goregek's Shackles
 i(38620),	-- emished Bat Wing \\ Unblemished Bat Wing
 i(38621),	-- k's Worn Chalk \\ Dajik's Worn Chalk
-i(38622),	-- o's Bug Bag \\ Lafoo's Bug Bag
-i(38623),	-- ot's Favorite Crystal \\ Jaloot's Favorite Crystal
-i(38624),	-- le's Stress Ball \\ Moodle's Stress Ball
 i(38625),	-- hern Icelip \\ Northern Icelip
 i(38627),	-- oth Harness \\ Mammoth Harness
 i(38629),	-- rs from the Lich King \\ Orders from the Lich King
@@ -2167,10 +2150,6 @@ i(43097),	-- Lining - Attack Power \\ Fur Lining - Attack Power
 i(43098),	-- Ochre Pigment [PH]
 i(43099),	-- sed Mushroom Meatloaf \\ Infused Mushroom Meatloaf
 i(43101),	-- loaf Pan \\ Meatloaf Pan
-i(43124),	-- real Ink \\ Ethereal Ink
-i(43125),	-- flame Ink \\ Darkflame Ink
-i(43126),	-- of the Sea \\ Ink of the Sea
-i(43127),	-- fall Ink \\ Snowfall Ink
 i(43128),	-- of Wine \\ Jug of Wine
 i(43136),	-- and Cheese Platter \\ Wine and Cheese Platter
 i(43139),	-- y Cheese Serving Platter \\ Empty Cheese Serving Platter
@@ -2262,10 +2241,6 @@ i(43431),	-- Charred Glyph \\ red Glyph \\ Glyph of Victory Rush
 i(43432),	-- Charred Glyph \\ red Glyph \\ Glyph of Raging Wind \\ Glyph of Raging Blow \\ Glyph of Whirlwind
 i(43440),	-- To King Anduin Wrynn of the Alliance \\ ing Anduin Wrynn of the Alliance \\ To King Varian Wrynn of the Alliance
 i(43441),	-- To Saurfang of the Horde \\ aurfang of the Horde \\ To the Warchief of the Horde \\ To Thrall, Warchief of the Horde
-i(43463),	-- ll of Agility VII \\ Scroll of Agility VII
-i(43464),	-- ll of Agility VIII \\ Scroll of Agility VIII
-i(43465),	-- ll of Strength VII \\ Scroll of Strength VII
-i(43466),	-- ll of Strength VIII \\ Scroll of Strength VIII
 i(43467),	-- ll of Protection VII \\ Scroll of Protection VII
 i(43468),	-- ll of Protection VIII \\ Scroll of Protection VIII
 i(43471),	-- Red Ribbon \\ Rork Red Ribbon
@@ -2551,8 +2526,6 @@ i(44300),	-- hed Basket \\ Smashed Basket
 i(44301),	-- Tainted Essence
 i(44304),	-- Writhing Mass
 i(44307),	-- Diluted Cult Tonic
-i(44314),	-- ll of Recall II \\ Scroll of Recall II
-i(44315),	-- ll of Recall III \\ Scroll of Recall III
 i(44318),	-- moon Card of the North \\ Darkmoon Card of the North
 i(44319),	-- en Shard of Horror \\ Broken Shard of Horror
 i(44320),	-- en Shard of Despair \\ Broken Shard of Despair
@@ -2577,7 +2550,6 @@ i(44476),	-- eth's Skull \\ Alumeth's Skull
 i(44477),	-- eth's Heart \\ Alumeth's Heart
 i(44478),	-- eth's Scepter \\ Alumeth's Scepter
 i(44479),	-- eth's Robes \\ Alumeth's Robes
-i(44480),	-- eth's Remains \\ Alumeth's Remains
 i(44481),	-- dgear Toy Gorilla \\ Grindgear Toy Gorilla
 i(44482),	-- ty Copper Racer \\ Trusty Copper Racer
 i(44506),	-- nite Arrow Maker \\ Saronite Arrow Maker
@@ -2983,7 +2955,6 @@ i(49374),	-- Permission Slip
 i(49377),	-- Garrosh's Autograph
 i(49536),	-- eaver Orders \\ Sunreaver Orders
 i(49631),	-- dard Apothecary Serving Kit \\ Standard Apothecary Serving Kit
-i(49632),	-- scroll of Fortitude \\ Runescroll of Fortitude
 i(49634),	-- s of the Wild \\ Drums of the Wild
 i(49635),	-- t Subpoena \\ Court Subpoena
 i(49640),	-- Essence or Dust
@@ -3431,3 +3402,12 @@ i(248950),	-- Icebound Cloak
 i(249819),	-- The Black Heart
 i(249820),	-- Banner of Victory
 i(249821),	-- Abyssal Rune
+3.4.5.62916
+i(256035),	-- Direbrew's Bloody Shanker
+i(256052),	-- Bitter Balebrew Charm
+i(256054),	-- Ancient Pickled Egg
+i(256056),	-- Bubbling Brightbrew Charm
+i(256068),	-- Mithril Pocketwatch
+i(256069),	-- Coren's Chromium Coaster
+i(256070),	-- Brawler's Souvenir
+i(256396),	-- Tankard O' Terror

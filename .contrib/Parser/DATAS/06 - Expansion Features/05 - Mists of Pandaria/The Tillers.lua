@@ -222,7 +222,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(85220),	-- Terrible Turnip (PET!)
 						},
 					}),
-					n(67482, {	-- Portal Shard
+					applyclassicphase(MOP_PHASE_ESCALATION, i(97988, {	-- Paper-Covered Rock (QI!)
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+						-- #if BEFORE LEGION
+						["description"] = "Can only be harvested along with normal crops or Portal Shard crops.",
+						-- #endif
+					})),
+					applyclassicphase(MOP_PHASE_LANDFALL, n(67482, {	-- Portal Shard
 						["cost"] = {{ "i", 91806, 1 }},	-- Unstable Portal Shard
 						["crs"] = { 67446 },	-- Unstable Portal Shard
 						["groups"] = {
@@ -251,7 +257,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								["races"] = HORDE_ONLY,
 							}),
 						},
-					}),
+					})),
 					n(66016, {	-- Raptorleaf
 						["cost"] = {{ "i", 89202, 1 }},	-- Raptorleaf Seed
 						["cr"] = 66013,	-- Growing Raptorleaf
@@ -977,7 +983,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/1 Sheepie
 							["providers"] = {
 								{ "i", 86446 },	-- Sheepie (QI!)
-								{ "n", 64386 },	-- Sheepie
+								{ "n", 64385 },	-- Sheepie
 							},
 							["coord"] = { 34.91, 38.34, VALLEY_OF_THE_FOUR_WINDS },
 						}),
@@ -992,7 +998,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/1 Sheepie
 							["providers"] = {
 								{ "i", 86446 },	-- Sheepie (QI!)
-								{ "n", 64385 },	-- Sheepie
+								{ "n", 64386 },	-- Sheepie
 							},
 							["coord"] = { 35.0, 38.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
@@ -1106,23 +1112,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						objective(1, {	-- 0/3 Plant Juicycrunch Carrot Seeds
+						objective(1, {	-- 0/3 Plant Witchberry Seeds
 							["providers"] = {
-								{ "i", 80590 },	-- Juicycrunch Carrot Seeds
+								{ "i", 89326 },	-- Witchberry Seeds
 								{ "n", 59990 },	-- Tilled Soil
 							},
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
-						objective(2, {	-- 0/3 Harvest Juicycrunch Carrots
+						objective(2, {	-- 0/3 Harvest Witchberries
 							["providers"] = {
-								{ "n", 63154 },	-- Ripe Juicycrunch Carrot
-								{ "n", 63158 },	-- Bursting Juicycrunch Carrot
-								{ "n", 63156 },	-- Plump Juicycrunch Carrot
+								{ "n", 66085 },	-- Ripe Witchberry
+								{ "n", 66080 },	-- Bursting Witchberry
+								{ "n", 66084 },	-- Plump Witchberry
 							},
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 						}),
-						objective(3, {	-- 0/15 Juicycrunch Carrot
-							["provider"] = { "i", 74841 },	-- Juicycrunch Carrot
+						objective(3, {	-- 0/15 Witchberries
+							["provider"] = { "i", 74846 },	-- Witchberries
 						}),
 					},
 				}),
@@ -2497,7 +2503,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
 					["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-					["groups"] = bubbleDownClassicRep(FACTION_THE_TILLERS, {
+					["groups"] = appendGroups(bubbleDown({
+						["minReputation"] = { FACTION_OLD_HILLPAW, 6 },	-- Old Hillpaw, Best Friend.
+					}, {
+						i(90893),	-- Straw Hat - Cloth
+						i(90894),	-- Straw Hat - Leather
+						i(90895),	-- Straw Hat - Mail
+						i(90896),	-- Straw Hat - Plate
+					}), bubbleDownClassicRep(FACTION_THE_TILLERS, {
 						{		-- Neutral
 							i(89814, {	-- "Earth-Slasher" Master Plow
 								["cost"] = 800000,	-- 80g
@@ -2508,10 +2521,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(89813, {	-- "Thunder King" Pest Repellers
 								["cost"] = 800000,	-- 80g
 							}),
-							i(90893),	-- Straw Hat - Cloth
-							i(90894),	-- Straw Hat - Leather
-							i(90895),	-- Straw Hat - Mail
-							i(90896),	-- Straw Hat - Plate
 						}, {	-- Friendly
 						}, {	-- Honored
 						}, {	-- Revered
@@ -2545,7 +2554,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								["cost"] = 85000,	-- 8g 50s
 							}),
 						},
-					}),
+					})),
 				}),
 				n(58718, {	-- Merchant Greenfield
 					["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },

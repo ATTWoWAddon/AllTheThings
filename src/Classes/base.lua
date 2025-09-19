@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
-	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
+local type,pairs,setmetatable,rawget,unpack,rawset,select
+	= type,pairs,setmetatable,rawget,unpack,rawset,select
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -393,11 +393,11 @@ local function CreateClassInstance(key, id, t)
 	return t;
 end
 local function CloneClassInstance(object, ignoreChildren)
-	local clone = {};
+	local clone = {}
 	if object[1] then
 		-- Create an Array of Clones
-		for i,o in ipairs(object) do
-			tinsert(clone, CloneClassInstance(o, ignoreChildren));
+		for i=1,#object do
+			clone[#clone + 1] = CloneClassInstance(object[i], ignoreChildren)
 		end
 		return clone;
 	else
@@ -405,15 +405,18 @@ local function CloneClassInstance(object, ignoreChildren)
 		for key,value in pairs(object) do
 			clone[key] = value;
 		end
-		if object.g then
+		local g = object.g
+		if g then
 			if ignoreChildren then
 				clone.g = nil;
 			else
-				clone.g = {};
-				for i,o in ipairs(object.g) do
-					o = CloneClassInstance(o);
+				local cg = {}
+				clone.g = cg;
+				local o
+				for i=1,#g do
+					o = CloneClassInstance(g[i]);
 					o.parent = clone;
-					tinsert(clone.g, o);
+					cg[#cg + 1] = o
 				end
 			end
 		end
@@ -435,12 +438,13 @@ local function CloneObject(object, ignoreChildren)
 	for key,value in pairs(object) do
 		clone[key] = value;
 	end
-	if object.g and not ignoreChildren then
+	local og = object.g
+	if og and not ignoreChildren then
 		local g = {};
-		for i,object in ipairs(object.g) do
-			local child = CloneObject(object);
+		for i=1,#og do
+			local child = CloneObject(og[i]);
 			child.parent = clone;
-			tinsert(g, child);
+			g[#g + 1] = child
 		end
 		clone.g = g;
 	end
@@ -497,7 +501,10 @@ GlobalVariants.Combine = function(...)
 	local combine, conditions, name = {}, {}, ""
 	local condition, variantName
 	-- combine tables, check unique fields
-	for _,variant in ipairs({...}) do
+	local variantParams = {...}
+	local variant
+	for i=1,#variantParams do
+		variant = variantParams[i]
 		variantName = variant.__name
 		if not variantName or type(variantName) ~= "string" then
 			ClassError("Cannot combine variants due to variant",variantName or _,"missing valid '__name' string!")
@@ -525,8 +532,8 @@ GlobalVariants.Combine = function(...)
 	combine.__name = name
 	-- create a new __condition based on the running of all other conditions
 	combine.__condition = function(t)
-		for _,condition in ipairs(conditions) do
-			if not condition(t) then return end
+		for i=1,#conditions do
+			if not conditions[i](t) then return end
 		end
 		return true
 	end
@@ -540,8 +547,9 @@ local function GenerateVariantClasses(class)
 	if not variants or #variants == 0 then return end
 	local subbase = function(t, key) return class.__index; end
 	local classname = fields.__type()
-	local variantClone, variantName
-	for i,variant in ipairs(variants) do
+	local variantClone, variantName, variant
+	for i=1,#variants do
+		variant = variants[i]
 		if not variant.__name then
 			ClassError("Missing Class Variant __name!",i,classname)
 		end
@@ -563,7 +571,9 @@ local function AppendVariantConditionals(conditionals, class)
 			conditionals[#conditionals + 1] = function(t)
 				if subcassCondition(t) then
 					-- check any variants for this subclass
-					for i,variant in ipairs(variants) do
+					local variant
+					for i=1,#variants do
+						variant = variants[i]
 						if variant.__class.__condition(t) then
 							setmetatable(t, variant);
 							-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variant.__name)
@@ -585,7 +595,9 @@ local function AppendVariantConditionals(conditionals, class)
 	elseif variants then
 		conditionals[#conditionals + 1] = function(t)
 			-- check any variants for this class
-			for i,variant in ipairs(variants) do
+			local variant
+			for i=1,#variants do
+				variant = variants[i]
 				if variant.__class.__condition(t) then
 					setmetatable(t, variant);
 					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variant.__name)

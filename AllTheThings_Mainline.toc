@@ -88,6 +88,7 @@ src\Modules\Model.lua
 #src\Modules\Reagent.lua
 src\Modules\Search.lua
 src\Modules\Social.lua
+src\Modules\Symlink.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 src\Modules\Vignette.lua
@@ -167,7 +168,7 @@ src\UI\Shared Window Logic.lua
 src\UI\Retail Window Logic.lua
 
 # Load expansion specific category database.
-db\Retail\Categories.lua
+db\Retail\Categories.xml
 
 # Window Definitions
 # src\UI\Windows\Windows.xml

@@ -188,6 +188,7 @@ local QUANTUM_GROUP = sharedData({
 			hqt(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
 				["name"] = "Quantum Chestpiece (Plate) completed.",
 			}),
+			ig(180535),	-- Breatplate of the Highlord			(NYI)
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
 			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108178),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -620,9 +621,17 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
 		}),
-		ig(161926, {	-- Talanji's Salutary Scepter 		(NYI)
-			["description"] = "Likely possible to also get from completing Quests in Tirisgarde as Alliance and relogging. We dont know which quest",
+		ig(152871, {	-- Seapriest's Wand 				(NYI)
 			["races"] = HORDE_ONLY,
+		}),
+		ig(161924, {	-- Seapriest's Wand 				(NYI)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ig(152873, {	-- Talanji's Salutary Scepter 		(NYI)
+			["races"] = HORDE_ONLY,
+		}),
+		ig(161926, {	-- Talanji's Salutary Scepter 		(NYI)
+			["races"] = ALLIANCE_ONLY,
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	-- Vanguard Baton of Light				(Removed)

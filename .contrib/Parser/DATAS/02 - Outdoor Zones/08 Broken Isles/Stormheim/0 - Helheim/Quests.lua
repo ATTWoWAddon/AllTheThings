@@ -45,6 +45,7 @@ root(ROOTS.Zones, {
 					q(39857, {	-- The Eternal Nemesis
 						["icon"] = 537227,
 						["sourceQuests"] = { 39848 },	-- A Desperate Bargain
+						["provider"] = { "o", 244559 },	-- Helya's Altar
 						["coord"] = { 34.2, 28.1, HELHEIM },
 					}),
 					q(39849, {	-- To Light the Way

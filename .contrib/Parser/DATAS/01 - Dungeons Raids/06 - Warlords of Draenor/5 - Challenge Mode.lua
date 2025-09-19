@@ -84,73 +84,73 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		ach(8882, {	-- Auchindoun: Gold
 			spell(159897),	-- Path of the Vigilant
 		}),
-		ach(9622, {		-- Challenge Master: Auchindoun
+		challengemaster(ach(9622, {		-- Challenge Master: Auchindoun
 			title(293),	-- <Name> the Soul Preserver
-		}),
+		})),
 		ach(8875),	-- Bloodmaul Slag Mines Challenger
 		ach(8876),	-- Bloodmaul Slag Mines: Bronze
 		ach(8877),	-- Bloodmaul Slag Mines: Silver
 		ach(8878, {	-- Bloodmaul Slag Mines: Gold
 			spell(159895),	-- Path of the Bloodmaul
 		}),
-		ach(9620, {		-- Challenge Master: Bloodmaul Slag Mines
+		challengemaster(ach(9620, {		-- Challenge Master: Bloodmaul Slag Mines
 			title(291),	-- <Name> the Mine Master
-		}),
+		})),
 		ach(8887),	-- Grimrail Depot Challenger
 		ach(8888),	-- Grimrail Depot: Bronze
 		ach(8889),	-- Grimrail Depot: Silver
 		ach(8890, {	-- Grimrail Depot: Gold
 			spell(159900),	-- Path of the Dark Rail
 		}),
-		ach(9625, {		-- Challenge Master: Grimrail Depot
+		challengemaster(ach(9625, {		-- Challenge Master: Grimrail Depot
 			title(299),	-- <Name> the Grimrail Suplexer
-		}),
+		})),
 		ach(8997),	-- Iron Docks Challenger
 		ach(8998),	-- Iron Docks: Bronze
 		ach(8999),	-- Iron Docks: Silver
 		ach(9000, {	-- Iron Docks: Gold
 			spell(159896),	-- Path of the Iron Prow
 		}),
-		ach(9621, {		-- Challenge Master: Iron Docks
+		challengemaster(ach(9621, {		-- Challenge Master: Iron Docks
 			title(292),	-- Dockmaster <Name>
-		}),
+		})),
 		ach(8883),	-- Shadowmoon Burial Grounds Challenger
 		ach(8884),	-- Shadowmoon Burial Grounds: Bronze
 		ach(8885),	-- Shadowmoon Burial Grounds: Silver
 		ach(8886, {	-- Shadowmoon Burial Grounds: Gold
 			spell(159899),	-- Path of the Crescent Moon
 		}),
-		ach(9626, {		-- Challenge Master: Shadowmoon Burial Grounds
+		challengemaster(ach(9626, {		-- Challenge Master: Shadowmoon Burial Grounds
 			title(295),	-- Spiritwalker <Name>
-		}),
+		})),
 		ach(8871),	-- Skyreach Challenger
 		ach(8872),	-- Skyreach: Bronze
 		ach(8873),	-- Skyreach: Silver
 		ach(8874, {	-- Skyreach: Gold
 			spell(159898),	-- Path of the Skies
 		}),
-		ach(9623, {		-- Challenge Master: Skyreach
+		challengemaster(ach(9623, {		-- Challenge Master: Skyreach
 			title(294),	-- <Name>, Scion of Rukhmar
-		}),
+		})),
 		ach(9001),	-- The Everbloom Challenger
 		ach(9002),	-- The Everbloom: Bronze
 		ach(9003),	-- The Everbloom: Silver
 		ach(9004, {	-- The Everbloom: Gold
 			spell(159901),	-- Path of the Verdant
 		}),
-		ach(9624, {		-- Challenge Master: The Everbloom
+		challengemaster(ach(9624, {		-- Challenge Master: The Everbloom
 			title(298),	-- <Name> the Violet Guardian
-		}),
+		})),
 		ach(8891),	-- Upper Blackrock Spire Challenger
 		ach(8892),	-- Upper Blackrock Spire: Bronze
 		ach(8893),	-- Upper Blackrock Spire: Silver
 		ach(8894, {	-- Upper Blackrock Spire: Gold
 			spell(159902),	-- Path of the Burning Mountain
 		}),
-		ach(9627, {		-- Challenge Master: Upper Blackrock Spire
+		challengemaster(ach(9627, {		-- Challenge Master: Upper Blackrock Spire
 			--title_gendered(296, 297),	-- <Name>, Lord of Blackrock / <Name>, Lady of Blackrock
 			title_male(296),	-- <Name>, Lord of Blackrock
 			title_female(297),	-- <Name>, Lady of Blackrock
-		}),
+		})),
 	}),
 })));

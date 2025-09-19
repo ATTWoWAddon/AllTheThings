@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(UNDERMINE, {
 		n(RARES, {
 			n(COMMON_BOSS_DROPS, {
@@ -152,8 +152,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					i(235316),	-- Whirly-Giggle Windwhir Wrap
 				},
 			}),
-			--n(234621, {	-- Gallagio Garbage <Luxury Trash>
-			-- Under Expansion Features => Scrap
 			n(234499, {	-- Giovante
 				["description"] = "Can be summoned by anyone who has a contract with the Steamwheedle Cartel.",
 				["coord"] = { 32.0, 76.5, UNDERMINE },
@@ -350,9 +348,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(UNDERMINE, {
 			n(RARES, { -- Orphaned Cartel Rare HQTs, used to trigger on each kill, no longer trigger at all?
@@ -364,4 +362,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

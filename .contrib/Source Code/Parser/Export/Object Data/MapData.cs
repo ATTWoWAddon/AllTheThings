@@ -40,7 +40,7 @@ namespace ATT
             /// <param name="builder">The builder.</param>
             /// <param name="data">The data.</param>
             /// <param name="fields">The fields.</param>
-            public override void Build(StringBuilder builder, IDictionary<string, object> data, IList<string> fields)
+            public override void Build(Exporter builder, IDictionary<string, object> data, IList<string> fields)
             {
                 if (data.TryGetValue("mapID", out long mapID))
                 {

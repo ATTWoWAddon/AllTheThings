@@ -180,63 +180,6 @@ VANILLA_ENCHANTING_COMMON_RECIPES = {
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 };
-ENCHANTING_SUPPLIES = sharedData({
-	["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-	["providers"] = {
-		{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-		{ "n", 3346},	-- Kithas <Enchanting Supplies>
-		{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-		{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-		{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-		{ "n", 4228},	-- Vaean <Enchanting Supplies>
-		-- #if AFTER TBC
-		{ "n", 16722},	-- Egomis <Enchanting Supplies>
-		{ "n", 18753},	-- Felannia <Enchanting Trainer>
-		{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
-		{ "n", 16635},	-- Lyna <Enchanting Supplies>
-		{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
-		-- #endif
-		-- #if AFTER 3.1.0
-		{ "n", 33676},	-- Zurii <Enchanting Supplies>
-		-- #endif
-	},
-},{
-	i(4470),	-- Simple Wood
-	i(11291),	-- Star Wood
-	-- #if AFTER CATA
-	i(38682),	-- Enchanting Vellum
-	-- #endif
-});
-RUNED_COPPER_ROD_REAGENTS = sharedData({
-	-- Danny Donkey:	This structure is used in Vanilla content as well as BFA and onwards when professions
-	--					are split on an expansion-basis, but one still need to craft and use this basic rod.
-	["providers"] = {
-		{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-		{ "n", 3346},	-- Kithas <Enchanting Supplies>
-		{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-		{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-		{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-		{ "n", 4228},	-- Vaean <Enchanting Supplies>
-		-- #if AFTER TBC
-		{ "n", 16722},	-- Egomis <Enchanting Supplies>
-		{ "n", 16635},	-- Lyna <Enchanting Supplies>
-		-- #endif
-		-- #if AFTER BFA
-		{ "n", 18753},	-- Felannia <Enchanting Trainer>
-		{ "n", 28714},	-- Ildine Sorrowspear <Enchanting Supplies>
-		{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
-		{ "n", 27147},	-- Librarian Erickson <Enchanting Supplies>
-		{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
-		{ "n", 33676},	-- Zurii <Enchanting Supplies>
-		-- #endif
-	},
-},{
-	i(6217, {	-- Copper Rod
-		["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-	}),
-	i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
-	i(10940, { ["isLimited"] = true, }),	-- Strange Dust
-});
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

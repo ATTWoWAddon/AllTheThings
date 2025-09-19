@@ -2430,10 +2430,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(RARES, {
 				n(6648, {	-- Antilos
-					-- #if AFTER CATA
-					["coord"] = { 45.2, 27.2, AZSHARA },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.2, 27.2, AZSHARA },
+						-- #else
 						{ 16.8, 51.8, AZSHARA },
 						{ 18.0, 56.6, AZSHARA },
 						{ 17.0, 64.0, AZSHARA },
@@ -2443,8 +2443,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 52.2, 36.8, AZSHARA },
 						{ 54.0, 25.8, AZSHARA },
 						{ 56.6, 19.4, AZSHARA },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14464, {	-- Avalanchion
 					-- TODO: Move this to an Elemental Invasion World Event file.
@@ -2499,17 +2499,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(6649, {	-- Lady Sesspira
-					-- #if AFTER CATA
-					["coord"] = { 44.0, 59.8, AZSHARA },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.0, 59.8, AZSHARA },
+						-- #else
 						{ 40.6, 45.6, AZSHARA },
 						{ 37.2, 49.0, AZSHARA },
 						{ 37.6, 51.8, AZSHARA },
 						{ 34.0, 58.6, AZSHARA },
 						{ 39.6, 55.6, AZSHARA },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(6647, {	-- Magister Hawkhelm
 					["coords"] = {
@@ -2545,52 +2545,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(13896, {	-- Scalebeard
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 43.6, 52.6, AZSHARA },
 						{ 42.8, 50.6, AZSHARA },
 						{ 42.8, 47.2, AZSHARA },
 						{ 42.6, 46.4, AZSHARA },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 55.0, 49.8, AZSHARA },
 						{ 52.0, 45.6, AZSHARA },
 						{ 52.2, 49.6, AZSHARA },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8660, {	-- The Evalcharr
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 14.2, 50.6, AZSHARA },
 						{ 15.0, 58.2, AZSHARA },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 17.6, 54.0, AZSHARA },
 						{ 18.8, 66.0, AZSHARA },
 						{ 23.4, 55.0, AZSHARA },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(6118, {	-- Varo'then's Ghost
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 34.4, 76.8, AZSHARA },
 						{ 33.0, 75.0, AZSHARA },
 						{ 34.6, 71.6, AZSHARA },
 						{ 36.4, 71.6, AZSHARA },
 						{ 37.4, 74.6, AZSHARA },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 13.4, 74.8, AZSHARA },
 						{ 16.6, 72.8, AZSHARA },
 						{ 17.2, 66.2, AZSHARA },
 						{ 19.0, 68.0, AZSHARA },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

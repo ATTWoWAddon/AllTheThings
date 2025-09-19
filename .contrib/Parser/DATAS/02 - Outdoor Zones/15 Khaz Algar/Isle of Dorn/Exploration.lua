@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
 		explorationHeader({
 			visit_exploration(14777,{coord={52.0,65.7,ISLE_OF_DORN}}),	-- Boskroot Basin
@@ -15,7 +15,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14789),	-- Dhar Oztan
 			exploration(14771),	-- Dornogal
 			visit_exploration(14837,{coord={67.2,43.3,ISLE_OF_DORN}}),	-- Durgaz Cabin
+			visit_exploration(15047,{coord={57.4,43.9,ISLE_OF_DORN}}),	-- Fallside Outpost
 			exploration(14772),	-- Freywold Village
+			visit_exploration(15361,{coord={35.0,75.3,ISLE_OF_DORN}}),	-- Gemvein Tunnels
 			exploration(14778),	-- Glimmering Shore
 			exploration(14779),	-- Golgrin's Reach
 			exploration(14782),	-- Ironwold
@@ -29,6 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14775),	-- Storm's Watch
 			exploration(15386),	-- Sunken Shield
 			visit_exploration(15385,{coord={74.6,35.6,ISLE_OF_DORN}}),	-- Sunrise Shadow
+			visit_exploration(15157,{coord={75.5,41.1,ISLE_OF_DORN}}),	-- The Meadyard
 			visit_exploration(14788,{coord={45.8,59.2,ISLE_OF_DORN}}),	-- The Opalcreg
 			exploration(14773),	-- The Orecreg
 			exploration(14776),	-- The Proscenium
@@ -39,4 +42,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(15360),	-- Wanderer's Landing
 		}),
 	}),
-})));
+}));

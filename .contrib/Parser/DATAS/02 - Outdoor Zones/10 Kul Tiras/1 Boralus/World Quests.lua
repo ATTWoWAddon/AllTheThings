@@ -284,7 +284,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isWorldQuest"] = true,
 				["lvl"] = 50,
 				["groups"] = {
-					i(160667),	-- Unstable Azerite Bomb (QI!)
+					o(307683,	{ -- Azerite Bombs
+						["groups"] = {
+							i(160667),	-- Unstable Azerite Bomb (QI!)
+						},
+					}),
 				},
 			}),
 			q(50992, {	-- Work Order: Calcified Bone

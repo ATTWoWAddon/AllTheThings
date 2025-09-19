@@ -1451,7 +1451,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					{ "o", 527488 },	-- Phantom Bloom
 				},
 				["timeline"] = { ADDED_11_2_0 },
-				["groups"] = { i(246582), },	-- Inscrutable Flora (QS!)
+				["groups"] = { i(246582) },	-- Inscrutable Flora (QS!)
 			}),
 		}),
 		n(TREASURES, {

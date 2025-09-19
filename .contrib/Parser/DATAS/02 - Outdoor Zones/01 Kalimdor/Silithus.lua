@@ -3144,10 +3144,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
-							i(21952, {	-- Design: Emerald Crown of Destruction (RECIPE!)
-								["timeline"] = { ADDED_2_0_1 },
+							applyclassicphase(TBC_PHASE_ONE, i(21952, {	-- Design: Emerald Crown of Destruction (RECIPE!)
+								["timeline"] = { ADDED_2_0_5 },
 								["isLimited"] = true,
-							}),
+							})),
 						}, {	-- Friendly
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_SIX, i(234445, {		-- Pattern: Bolt of Qiraji Silk (RECIPE!)

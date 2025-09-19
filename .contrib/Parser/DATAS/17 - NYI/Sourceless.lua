@@ -118,8 +118,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				}),
 				-- Tiragarde Sound items = Zuldazar quest rewards
 				filter(CLOTH, {
-					i(155048),	-- Navigator's Cuffs
-					i(158231),	-- Navigator's Slippers
 					i(160066),	-- Navigator's Wrap
 					i(160067),	-- Navigator's Headpiece
 					i(160068),	-- Navigator's Shoulderpads
@@ -128,8 +126,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160854),	-- Navigator's Amice
 				}),
 				filter(LEATHER, {
-					i(155051),	-- Freebooter Bracers
-					i(158233),	-- Freebooter Treads
 					i(160069),	-- Freebooter Chestpiece
 					i(160070),	-- Freebooter Headcover
 					i(160071),	-- Freebooter Mantle
@@ -139,8 +135,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160892),	-- Freebooter Jerkin
 				}),
 				filter(MAIL, {
-					i(155050),	-- Outrigger Bracers
-					i(158232),	-- Outrigger Footguards
 					i(160072),	-- Outrigger Chestguard
 					i(160073),	-- Outrigger Skullguard
 					i(160074),	-- Outrigger Shoulderguards
@@ -149,8 +143,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(160893),	-- Outrigger Breastplate
 				}),
 				filter(PLATE, {
-					i(155049),	-- Sea Raider's Bracers
-					i(158230),	-- Sea Raider's Warboots
 					i(160075),	-- Sea Raider's Warplate
 					i(160076),	-- Sea Raider's Headgear
 					i(160077),	-- Sea Raider's Shoulderplates
@@ -211,7 +203,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(161256),	-- Scorching Sands Helm
 					i(161260),	-- Scorching Sands Mantle
 					i(161265),	-- Scorching Sands Tunic
-					i(161277),	-- Scorching Sands Britches
 				}),
 				filter(MAIL, {
 					i(161155),	-- Resilient Outcast's Helmet
@@ -239,28 +230,21 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(161248),	-- Zanchuli Pantaloons
 				}),
 				filter(LEATHER, {
-					i(158655),	-- Jambani Boots
 					i(158665),	-- Jambani Grasps
 					i(161145),	-- Jambani Tunic
 					i(161151),	-- Jambani Mantle
 					i(161225),	-- Jambani Guise
 					i(161229),	-- Jambani Shoulderguards
 					i(161233),	-- Jambani Chestpiece
-					i(161243),	-- Jambani Cincture
-					i(161249),	-- Jambani Britches
 					i(161250),	-- Jambani Leggings
 				}),
 				filter(MAIL, {
-					i(158656),	-- Torcalin Striders
-					i(158673),	-- Torcalin Armguards
+					i(161238),	-- Torcalin Bands
 					i(161146),	-- Torcalin Harness
 					i(161148),	-- Torcalin Shoulderguards
 					i(161226),	-- Torcalin Helm
 					i(161230),	-- Torcalin Mantle
 					i(161234),	-- Torcalin Chestguard
-					i(161238),	-- Torcalin Bands
-					i(161244),	-- Torcalin Cincture
-					i(161251),	-- Torcalin Leggings
 					i(161252),	-- Torcalin Pants
 				}),
 				filter(PLATE, {
@@ -342,7 +326,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158510),	-- Repurposed Dinghy Anchor
 				i(158518),	-- Harbormaster's Lantern
 				i(159079),	-- Captivating Glowfly Lantern
-				i(161290),	-- Grimestone Greatmace
+
 				-- i(161292),	-- Grimestone Spellmaul
 				i(158579),	-- Scalawag's Warglaive
 				i(153400),	-- Scalawag's Bolt-Thrower
@@ -356,7 +340,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(153401),	-- Whaler's Pike
 				i(158509),	-- Tideshaper Staff
 				i(158506),	-- Scalawags Claymore
-				i(161924),	-- Seapriest's Wand (A) (never addedd)
 
 				-- Nazmir items = Drustvar quest rewards
 
@@ -391,7 +374,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(154972),	-- Tomb-Rustler's Polearm
 				i(166887),	-- Pakura Priest Staff
 				i(158568),	-- Mojo-Drainer Staff
-				i(152871),	-- Seapriest's Wand
 				i(158580),	-- Loa-Claimer's Wariglaives
 			})),
 		}),
@@ -585,7 +567,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62578),	--
 				q(62687),	--
 				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
-				q(60693),	--
+				q(60693),	-- After q(59781)
 			})),
 
 			-- 9.0.2

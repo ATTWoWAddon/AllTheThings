@@ -3734,7 +3734,6 @@ s(213696)/i(71769),	-- Art Template Cloth Shoulder - Robe_RaidWarlock_J - Green
 s(213697)/i(71770),	-- Art Template Cloth Wrist - Robe_RaidWarlock_J - Green
 s(213714)/i(71963),	-- Monster - Mace, 2H Baine's (Lavaburst Enchant)
 s(213734)/i(72069),	-- Ninja Test Item
-s(213736)/i(72101),	-- Black Silk Vest
 s(213738)/i(72156),	-- Monster - Wand, PVPCataclysmS3_C_02 Red
 s(213739)/i(72158),	-- Monster - Axe, 1H PVPCataclysmS3 C 01 - Default
 s(213772)/i(72242),	-- Monster - Polearm, DeathwingRaidDW D 01 - Default

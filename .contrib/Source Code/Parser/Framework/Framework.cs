@@ -9,6 +9,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -1462,6 +1463,7 @@ namespace ATT
                 case "buildingID":
                 case "class":
                 case "classID":
+                case "cm": // mop/wod challenge master flag
                 case "collectible":
                 case "cost":
                 case "cr":
@@ -2454,6 +2456,10 @@ namespace ATT
                                         builder.Append("\t\tbuildVersion = ").Append(buildVersion).AppendLine(",");
                                     }
                                     if (key >= 11) builder.Append("\t\tphaseID = ").Append(key).AppendLine(",");
+                                    if (phaseData.TryGetValue("release", out var release))
+                                    {
+                                        builder.Append("\t\trelease = ").Append(release).AppendLine(",");
+                                    }
 
                                     // Export the "icon" field.
                                     if (phaseData.TryGetValue("icon", out string icon))
@@ -3383,7 +3389,6 @@ namespace ATT
                     // Now export it based on what we know.
                     var builder = new StringBuilder("-- Phase Database Module").AppendLine();
                     var keys = new List<long>();
-                    var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<string, long>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
                     var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
@@ -3396,13 +3401,9 @@ namespace ATT
                             if (Phases.TryGetValue(key, out object o) && o is IDictionary<string, object> phase)
                             {
                                 keys.Add(key);
-                                if (phase.TryGetValue("icon", out object value))
+                                if (phase.TryGetValue("constant", out var constant))
                                 {
-                                    icons[key] = value.ToString().Replace("\\", "/");
-                                }
-                                if (phase.TryGetValue("constant", out value))
-                                {
-                                    constants[value.ToString()] = key;
+                                    constants[constant.ToString()] = key;
                                 }
                                 CleanLocalizedField(key, "text", phase, localizationForText);
                                 CleanLocalizedField(key, "description", phase, localizationForDescriptions);
@@ -3460,7 +3461,11 @@ namespace ATT
                                 builder.Append("\t\tlore = ");
                                 ExportStringValue(builder, name).AppendLine(",");
                             }
-
+                            if (phase.TryGetValue("icon", out string icon))
+                            {
+                                builder.Append("\t\ticon = ");
+                                ExportIconValue(builder, icon).AppendLine(",");
+                            }
                             if (phase.TryGetValue("minimumBuildVersion", out var minimumBuildVersion))
                             {
                                 builder.Append("\t\tminimumBuildVersion = ").Append(minimumBuildVersion).AppendLine(",");
@@ -3468,6 +3473,10 @@ namespace ATT
                             if (phase.TryGetValue("buildVersion", out var buildVersion))
                             {
                                 builder.Append("\t\tbuildVersion = ").Append(buildVersion).AppendLine(",");
+                            }
+                            if (phase.TryGetValue("release", out var release))
+                            {
+                                builder.Append("\t\trelease = ").Append(release).AppendLine(",");
                             }
 
                             // Write the state last. [NOTE: This is an ID number from 1-4]

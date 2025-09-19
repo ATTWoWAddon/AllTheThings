@@ -1,10 +1,10 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		explorationHeader({
-			exploration(14758),	-- Arathi's End (Alex: visit_exploration(14758,{coord={49.4,57.4,2274}}),	-- Arathi's End (Khaz Algar)?)
+			exploration(14758),	-- Arathi's End
 			exploration(14763),	-- Breathing Pit
 			visit_exploration(14952,{coord={62.1,24.3,AZJ_KAHET}}),	-- Crawling Chasm
 			visit_exploration(15474,{coord={68.8,80.7,AZJ_KAHET}}),	-- Deepwalker Pass
@@ -39,7 +39,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14759),	-- Trickling Abyss
 			exploration(14765),	-- Twitching Gorge
 			exploration(15451),	-- Untamed Valley
-			--visit_exploration(15111,{coord={49.5,67.3,AZJ_KAHET}}),	-- Umbral Bazaar
 			exploration(14958),	-- Wildcamp Or'lay
 			visit_exploration(14766,{coord={43.7,67.1,AZJ_KAHET}}),	-- Wildcamp Ul'ar
 			--
@@ -56,9 +55,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--visit_exploration(15358,{coord={82.6,45.3,NERUBAR}}),	-- Discordant Sieve
 					--visit_exploration(14764,{coord={78.0,30.1,NERUBAR}}),	-- Eastern Span
 					--visit_exploration(15346,{coord={55.0,8.4,NERUBAR}}),	-- The Hanging Gateway
-					visit_exploration(15112,{coord={70.1,51.9,NERUBAR}}),	-- High Hollows
 					visit_exploration(14809,{coord={69.8,26.3,NERUBAR}}),	-- High Hollows
-					visit_exploration(14980,{coord={28.9,60.7,NERUBAR}}),	-- Nerub-ar Palace
 					visit_exploration(15330,{coord={24.1,21.9,NERUBAR}}),	-- Old Sacrificial Pit
 					visit_exploration(14948,{coord={70.7,64.6,NERUBAR}}),	-- Pillar-nest Xesh
 					--visit_exploration(15153,{coord={66.0,17.4,NERUBAR}}),	-- Salien Gutters
@@ -66,9 +63,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					visit_exploration(14794,{coord={69.2,26.6,NERUBAR}}),	-- The Burrows
 					visit_exploration(15134,{coord={49.4,41.7,NERUBAR}}),	-- The Burrows
 					--visit_exploration(14793,{coord={38.7,18.8,NERUBAR}}),	-- The Skeins
-					visit_exploration(15113,{coord={44.7,71.0,NERUBAR}}),	-- The Transformatory
 					visit_exploration(15517,{coord={55.1,43.8,NERUBAR}}),	-- The Royal Apothecary
-					visit_exploration(15111,{coord={47.4,20.1,NERUBAR}}),	-- Umbral Bazaar
 					visit_exploration(14791,{coord={64.8,32.5,NERUBAR}}),	-- Umbral Bazaar
 					--visit_exploration(14765,{coord={48.0,8.2,NERUBAR}}),	-- Twitching Gorge
 				}),
@@ -80,4 +75,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 	}),
-})));
+}));

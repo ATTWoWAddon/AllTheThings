@@ -805,6 +805,16 @@ i(107951, 153489);	-- Iron Skyreaver
 -----------------
 i(109013, 155741);	-- Dread Raven
 
+-- #if ANYCLASSIC
+-----------------
+-- PATCH 5.5.0 --
+-----------------
+i(248741, 1247591);	-- Celestial Riding Crane
+i(248744, 1247597);	-- Celestial Riding Ox
+i(248743, 1247596);	-- Celestial Riding Serpent
+i(248742, 1247598);	-- Celestial Riding Tiger
+-- #endif
+
 -----------------
 -- PATCH 6.0.2 --
 -----------------
@@ -2083,58 +2093,55 @@ i(242730, 1233547);	-- Acidic Void Creeper
 i(232617, 472157);	-- Astral Gladiator's Fel Bat
 i(248248, 1246781);	-- Azure Void Flyer
 i(242733, 1233559);	-- Blue Barry
+i(248761, 1247662);	-- Brewfest Barrel Bomber
+i(247793, 1245359);	-- Cinder-Plumed Highland Gryphon
+i(242734, 1233561);	-- Curious Slateback
 i(238051, 1224048);	-- Delver's Mana-Skimmer
+i(247792, 1245358);	-- High Shaman's Aerie Gryphon
 i(242717, 1233518);	-- Lavender K'arroc
+i(243020, 1234305);	-- Lightwing Dragonhawk
+i(247795, 1245370);	-- Ornery Breezestrider
 i(246067, 1240632);	-- Pearlescent Krolusk
 i(250240, 1250578);	-- Phase-Lost Slateback
+i(242713, 1221132);	-- Resplendent K'arroc
+i(246445, 1242272);	-- Royal Voidwing
 i(242729, 1233546);	-- Ruby Void Creeper
 i(247822, 1245517);	-- Scarlet Void Flyer
 i(246160, 1241076);	-- Sthaarbs's Last Lunch
 i(237485, 1223191);	-- Terror of the Night
 i(237484, 1223187);	-- Terror of the Wastes
 i(242728, 1233542);	-- The Bone Freezer
+i(246159, 1241070);	-- Translocated Gorger
 i(242714, 1233511);	-- Umbral K'arroc
 i(243061, 1234573);	-- Unbound Star-Eater
 i(186640, 353265);	-- Vandal's Gearglider
 i(243157, 1234820);	-- Vicious Void Creeper [A]
 i(243159, 1234821);	-- Vicious Void Creeper [H]
---- UNSORTED ---
+i(246732, 1243589);	-- Void-Forged Overseer (CN ONLY)
+i(245610, 1239138);	-- Voidlight Surger
+i(243019, 1234303);	-- Voidwing Dragonhawk
+--- NYI ---
 i(247791, 1245357);	-- Adorned Northeron Gryphon
-i(248761, 1247662);	-- Brewfest Barrel Bomber
-i(247793, 1245359);	-- Cinder-Plumed Highland Gryphon
 i(246919, 1244259);	-- Cinder-seared Elekk
-i(242734, 1233561);	-- Curious Slateback
 i(247794, 1245361);	-- Emberwing Sky Guide
-i(247792, 1245358);	-- High Shaman's Aerie Gryphon
 i(246921, 1244261);	-- Legion Forged Elekk
-i(247795, 1245370);	-- Ornery Breezestrider
-i(242713, 1221132);	-- Resplendent K'arroc
-i(246445, 1242272);	-- Royal Voidwing
 i(247722, 1245202);	-- The Headless Horseman's Burning Charger
 i(247720, 1245197);	-- The Headless Horseman's Chilling Charger
 i(247723, 1245205);	-- The Headless Horseman's Hallowed Charger
 i(247721, 1245198);	-- The Headless Horseman's Ghoulish Charger
 i(246917, 1244247);	-- Thunder-ridged Elekk
-i(246159, 1241070);	-- Translocated Gorger
+--- UNSORTED ---
 i(246920, 1244260);	-- Void-Razed Elekk
 i(186639, 353264);	-- Xy Trustee's Gearglider
 
 ------------------
 -- PATCH 11.2.5 --
 ------------------
---- UNSORTED ---
-i(0, 1254363);	--(PH LEGION REMIX MOUNT)`
-i(250926, 1251680);	-- [PH] Turkey Mount - Black
-i(250927, 1251685);	-- [PH] Turkey Mount - Brown
-i(250928, 1251689);	-- [PH] Turkey Mount - Purple
-i(250929, 1251690);	-- [PH] Turkey Mount - White
 i(250747, 1251283);	-- Albino Mana Ray
+i(253026, 1255463);	-- Archmage's Felscorned Disc
 i(250426, 1250881);	-- Aquamarine Basilisk
 i(250728, 1251265);	-- Arcberry Manasaber
-i(253026, 1255463);	-- Archmage's Felscorned Disc
 i(239667, 1229283);	-- Ashplague Fel Bat
-i(250191, 1250481);	-- Bilebound Ur'zul
-i(239647, 1229264);	-- Bloodguard Fel Bat
 i(239665, 1229276);	-- Bloodhunter Fel Bat
 i(250746, 1251281);	-- Bloodtooth Mana Ray
 i(250760, 1251307);	-- Bonesteed of Bloodshed
@@ -2142,9 +2149,7 @@ i(250758, 1251311);	-- Bonesteed of Oblivion
 i(250759, 1251309);	-- Bonesteed of Plague
 i(250761, 1251305);	-- Bonesteed of Triumph
 i(251795, 1253130);	-- Brimstone Courser
-i(253573, 1256677);	-- Cerulean Phase-Hunter
 i(251796, 1253129);	-- Chestnut Courser
-i(250108, 1250288);	-- Cragstepper Crest-horn
 i(253031, 1255478);	-- Farseer's Felscorned Tempest
 i(250745, 1251279);	-- Fel-scarred Mana Ray
 i(253024, 1255451);	-- Feldruid's Scornwing Form
@@ -2155,35 +2160,45 @@ i(252954, 1255264);	-- Felscorned Vilebrood Vanquisher
 i(253033, 1255482);	-- Felscorned War Wyrm
 i(253025, 1255456);	-- Felscorned Wolfhawk
 i(250425, 1250880);	-- Felslate Basilisk
-i(250106, 1250287);	-- Floestrider Crest-horn
-i(239686, 1229286);	-- Forgotten Fel Bat
 i(250803, 1251397);	-- Garnet Ruinstrider
 i(250192, 1250482);	-- Ghastly Ur'zu
 i(250757, 1251300);	-- Gloomdark Nightmare
 i(250752, 1251297);	-- Golden Sunrunner
-i(243194, 1234971);	-- Grandiose Grrloc
 i(253029, 1255475);	-- High Priest's Felscorned Seeker
 i(250429, 1250886);	-- Highland Elderhorn
 i(250427, 1250884);	-- Illidari Blightstalker
 i(250428, 1250882);	-- Illidari Dreadstalker
-i(211085, 428062);	-- Jeweled Sapphire Scarab
-i(248994, 1248309);	-- Kalu'ak Crest-horn
-i(250726, 1251257);	-- Leyfrost Manasaber
 i(250424, 1250879);	-- Leystone Basilisk
 i(250805, 1251399);	-- Longhorned Argussian Talbuk
 i(250806, 1251400);	-- Longhorned Beryl Talbuk
 i(250804, 1251398);	-- Longhorned Bleakhoof Talbuk
 i(250802, 1251396);	-- Longhorned Sable Talbuk
 i(250748, 1251284);	-- Luminous Mana Ray
-i(250727, 1251264);	-- Nightwell Manasaber
-i(239666, 1229278);	-- Risen Fel Bat
 i(253030, 1255477);	-- Shadowblade's Felscorned Omen
-i(250105, 1250285);	-- Sharktested Crest-Horn
 i(250423, 1238729);	-- Slag Basilisk
 i(253013, 1255431);	-- Slayer's Felscorned Shrieker
 i(250721, 1235513);	-- Snowy Highmountain Eagle
-i(250321, 1250740);	-- Thorignir Drake
 i(250723, 1251255);	-- Treetop Highmountain Eagle
 i(250756, 1251298);	-- Turquoise Courser
 i(250751, 1251295);	-- Twilight Courser
 i(239687, 1229288);	-- Wretched Fel Bat
+--- UNSORTED ---
+i(0, 1254363);	--(PH LEGION REMIX MOUNT)`
+i(250926, 1251680);	-- Highlands Gobbler
+i(250927, 1251685);	-- Quirky Turkey
+i(250928, 1251689);	-- Murky Turkey
+i(250929, 1251690);	-- Prized Turkey
+i(250191, 1250481);	-- Bilebound Ur'zul
+i(239647, 1229264);	-- Bloodguard Fel Bat
+i(253573, 1256677);	-- Cerulean Phase-Hunter
+i(250108, 1250288);	-- Cragstepper Crest-horn
+i(250106, 1250287);	-- Floestrider Crest-horn
+i(239686, 1229286);	-- Forgotten Fel Bat
+i(243194, 1234971);	-- Grandiose Grrloc
+i(211085, 428062);	-- Jeweled Sapphire Scarab
+i(248994, 1248309);	-- Kalu'ak Crest-horn
+i(250726, 1251257);	-- Leyfrost Manasaber
+i(250727, 1251264);	-- Nightwell Manasaber
+i(239666, 1229278);	-- Risen Fel Bat
+i(250105, 1250285);	-- Sharktested Crest-Horn
+i(250321, 1250740);	-- Thorignir Drake

@@ -382,6 +382,7 @@ root(ROOTS.Zones, {
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
 									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["provider"] = { "n", 110695 },	-- Farseer Nobundo
+									["coord"] = { 44.9, 9.3, 775 },	-- The Exodar
 									["groups"] = {
 										i(140608),	-- Boots of the Broken
 										i(140604),	-- Britches of Elemental Protection

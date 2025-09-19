@@ -4063,10 +4063,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.1, 52.1, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(20855, {	-- Design: Wicked Moonstone Ring (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(20855, {	-- Design: Wicked Moonstone Ring (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
 							["isLimited"] = true,
 						}),

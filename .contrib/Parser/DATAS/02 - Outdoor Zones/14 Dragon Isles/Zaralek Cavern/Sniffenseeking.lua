@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
 					q(76015, {	-- Heart of Iron
 						["groups"] = {
-							i(205939),	-- Iron Titan Key
+							i(205939, {_wipe={"spellID"}}),	-- Iron Titan Key
 						},
 					}),
 					q(76084, {	-- Frostfire Finesse

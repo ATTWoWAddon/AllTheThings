@@ -401,41 +401,36 @@ settings.SetProfile = function(self, key)
 end
 -- Applies the profile for the current character as the base settings table
 settings.ApplyProfile = function()
-	if AllTheThingsProfiles then
-		local key = settings:GetProfile()
-		RawSettings = AllTheThingsProfiles.Profiles[key] or settings:NewProfile(key)
-		if RawSettings then
-			SetupRawSettings()
+	if not AllTheThingsProfiles then return end
 
-			-- apply window positions when applying a Profile
-			if RawSettings.Windows then
-				for suffix,_ in pairs(RawSettings.Windows) do
-					settings.SetWindowFromProfile(suffix)
-				end
+	local key = settings:GetProfile()
+	RawSettings = AllTheThingsProfiles.Profiles[key] or settings:NewProfile(key)
+	if RawSettings then
+		SetupRawSettings()
+
+		-- apply window positions when applying a Profile
+		if RawSettings.Windows then
+			for suffix,_ in pairs(RawSettings.Windows) do
+				settings.SetWindowFromProfile(suffix)
 			end
-
-			-- when applying a profile, clean out any 'false' Unobtainable keys for cleaner settings storage
-			-- for non-defaulted fields
-			local unobCopy = app.CloneDictionary(RawSettings.Unobtainable)
-			-- this key is no longer used
-			unobCopy.DoFiltering = false
-			for unobID,set in pairs(unobCopy) do
-				if not set and not UnobtainableSettingsBase.__index[unobID] then
-					RawSettings.Unobtainable[unobID] = nil
-				end
-			end
-
-			-- 'Seasonal' set of filters is no longer used
-			RawSettings.Seasonal = nil
-
-			if app.IsReady and settings:Get("Profile:ShowProfileLoadedMessage") then
-				app.print(L.PROFILE..":",settings:GetProfile(true))
-			end
-			return true
-		else
-			return false
 		end
+
+		-- when applying a profile, clean out any 'false' Unobtainable keys for cleaner settings storage
+		-- for non-defaulted fields
+		local unobCopy = app.CloneDictionary(RawSettings.Unobtainable)
+		-- this key is no longer used
+		unobCopy.DoFiltering = false
+		for unobID,set in pairs(unobCopy) do
+			if not set and not UnobtainableSettingsBase.__index[unobID] then
+				RawSettings.Unobtainable[unobID] = nil
+			end
+		end
+
+		-- 'Seasonal' set of filters is no longer used
+		RawSettings.Seasonal = nil
 	end
+	app.HandleEvent("Settings.OnApplyProfile", key)
+	return RawSettings and true or nil
 end
 -- Allows moving an ATT window based on the position stored in the current Profile
 -- This would be used when creating a Window initially during a game session
@@ -1581,4 +1576,11 @@ app.AddEventHandler("OnRecalculateDone", function()
 		LastSettingsChangeUpdate = app._SettingsRefresh
 		app.HandleEvent("OnRecalculate_NewSettings")
 	end
+end)
+app.AddEventHandler("OnReady", function()
+	app.AddEventHandler("Settings.OnApplyProfile", function()
+		if settings:Get("Profile:ShowProfileLoadedMessage") then
+			app.print(L.PROFILE..":",settings:GetProfile(true))
+		end
+	end)
 end)

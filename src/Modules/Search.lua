@@ -533,13 +533,14 @@ app.ChatCommands.Add({"search","?"}, function(args)
 	-- expand the hierarchy to each search result
 	local DGR = app.DirectGroupRefresh
 	local GetRelative = app.GetRelativeRawWithField
-	local window
-	local o
+	local windows = {}
+	local window, o
 	for i = 1,#results do
 		o = results[i]
-		if not window then
-			-- find the containing window
-			window = GetRelative(o, "window")
+		-- find the containing window
+		window = GetRelative(o, "window")
+		if window and not windows[window] then
+			windows[window] = true
 
 			-- open the containing Window
 			window:SetVisible(true)
@@ -560,10 +561,12 @@ app.ChatCommands.Add({"search","?"}, function(args)
 
 	-- report results
 	local firstResult = results[1]
-	app.print("Found",#results,"results for",app:SearchLink(firstResult),"within",window.Suffix)
+	app.print("Found",#results,"results for",app:SearchLink(firstResult))
 
-	-- mark the window to scroll to the first result
-	window:ScrollTo(firstResult.key, firstResult[firstResult.key])
+	-- mark the window(s) to scroll to the first result
+	for window,_ in pairs(windows) do
+		window:ScrollTo(firstResult.key, firstResult[firstResult.key])
+	end
 
 	return true
 end, {

@@ -83,13 +83,19 @@ MIDNIGHT_TEMPORARY = createHeader({
 	icon = [[~_.asset("Expansion_MD")]],
 	text = {
 		en = "Midnight",
-		es = "Midnight",
-		mx = "Midnight",
+		-- es = "Midnight",
+		-- mx = "Midnight",
+		-- de = "Midnight",
+		-- fr = "Midnight",
+		-- it = "Midnight",
+		-- pt = "Midnight",
+		-- ru = "Midnight",
+		ko = "한밤",
 		cn = "至暗之夜",
 		-- tw = "至暗之夜",
 	},
 	description = {
-		en = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+		en = "Midnight is the eleventh expansion for World of Warcraft and the second chapter of the Worldsoul Saga.",
 	};
 });
 WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
@@ -200,6 +206,7 @@ WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 		en = "These rewards are available to anyone who purchased the Spoils of War Edition of Warcraft III: Reforged.",
 	},
 });
+
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY }, {
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
@@ -650,14 +657,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_11_2_0 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
 			["groups"] = {
 				mount(417888),	-- Algarian Stormrider (MOUNT!)
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
-				iensemble(209336, {	-- Ensemble: Stormrider's Attire
-				}),
+				iensemble(209336),	-- Ensemble: Stormrider's Attire
 				skyriding(n(DRAGONRIDING_RACING, {
 					n(ACHIEVEMENTS, {
 						ach(18928, {	-- Storm Rider: Bronze
@@ -862,6 +868,27 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			},
 		}),
 	})),
+	n(MIDNIGHT_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
+		n(HEROIC_EDITION, {
+			["description"] = "These rewards were made available to anyone who purchased Midnight Heroic Edition.",
+			["groups"] = {
+				ach(61401),	-- Heroic Edition: Lightwing Dragonhawk
+				iensemble(248249),	-- Lightstider Raiment
+				i(243020),	-- Lightwing Dragonhawk (MOUNT!)
+			},
+		}),
+		n(EPIC_EDITION, {
+			["description"] = "These rewards were made available to anyone who purchased Midnight Epic Edition.",
+			["groups"] = {
+				i(243063),	-- Doomfeathers (PET!)
+				ach(61402),	-- Epic Edition: Voidlight Surger
+				i(243062),	-- Hopeflutter (PET!)
+				i(245610),	-- Voidlight Surger
+				iensemble(248974),	-- Voidstrider Raiment
+				i(243019),	-- Voidwing Dragonhawk (MOUNT!)
+			},
+		}),
+	})),
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
@@ -926,8 +953,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(OVERWATCH_ORIGINS, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
 		["groups"] = {
-			ach(11064),	-- Collector's Edition: Baby Winston
 			i(134047),	-- Baby Winston (PET!)
+			ach(11064),	-- Collector's Edition: Baby Winston
 		},
 	})),
 	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({
@@ -956,8 +983,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
-			ach(7842),	-- Collector's Edition: Baneling
 			i(90177),	-- Baneling (PET!)
+			ach(7842),	-- Collector's Edition: Baneling
 		},
 	})),
 	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {

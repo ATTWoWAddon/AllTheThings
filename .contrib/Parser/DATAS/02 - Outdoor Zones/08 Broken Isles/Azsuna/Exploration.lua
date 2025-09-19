@@ -15,6 +15,7 @@ root(ROOTS.Zones, {
 				exploration(8001),	-- Dead Man's Bay
 				exploration(8166),	-- Dead Man's Bay
 				exploration(7357),	-- Drowned Gardens
+				visit_exploration(8458,{coord={51.9,52.3,AZSUNA}}),	-- El'dranil Peak
 				exploration(7352),	-- El'dranil Shallows
 				exploration(7349),	-- Faronaar
 				visit_exploration(7362,{coord={41.1,42.7,AZSUNA}}),	-- Faronaar Front

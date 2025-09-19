@@ -278,6 +278,10 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 				i(87539, {	-- Crate of Tol'vir Archaeology Fragments
 					currency(ARCH_CURRENCY_TOLVIR),
+					-- Wouter TODO: check if this is added early with MoP Classic's Landfall phase
+					applyclassicphase(MOP_PHASE_ESCALATION, i(97986, {	-- Digmaster's Earthblade (QI!)
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+					})),
 				}),
 				i(87540, {	-- Crate of Troll Archaeology Fragments
 					currency(ARCH_CURRENCY_TROLL),
@@ -1764,6 +1768,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["coord"] = { 45.8, 44.6, HIGHMOUNTAIN },
 						["groups"] = {
 							i(131734),	-- Spirit of Eche'ro (MOUNT!)
+							i(134095),	-- Bone Fragment of Eche'ro (QI!)
 						},
 					}),
 				})),

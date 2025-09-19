@@ -1,10 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local function bo(questID, isDaily)
-    return { ["questID"] = questID, ["isDaily"] = isDaily };
-end
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(INVASION_VRYKUL, {
 			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
@@ -82,6 +79,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["questID"] = 86171,
 						["isWeekly"] = true,
 					}),
+					o(493373, {	-- Unsolved Amethyst Runelock
+						["coord"] = { 67.8, 73.5, SIREN_ISLE },
+						["questID"] = 85714,
+						["isWeekly"] = true,
+					}),
 				}),
 				n(WORLD_QUESTS, {
 					["sourceQuests"] = {
@@ -105,4 +107,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			},
 		}),
 	}),
-})));
+}));

@@ -15,12 +15,12 @@
 -- #IMPORT: 02 - Outdoor Zones\\02 Eastern Kingdoms\\
 -- #IMPORT: 02 - Outdoor Zones\\03 Outland\\
 -- #IMPORT: 02 - Outdoor Zones\\04 Northrend\\
--- #IMPORT: 02 - Outdoor Zones\\05 Pandaria\\
--- #IMPORT: 02 - Outdoor Zones\\06 The Maelstrom\\
+-- #IMPORT: 02 - Outdoor Zones\\05 The Maelstrom\\
+-- #IMPORT: 02 - Outdoor Zones\\06 Pandaria\\
 
 -- World Drops
 -- #IMPORT: 03 - World Drops\\01 Rooted\\
--- #IMPORT: 03 - World Drops\\05 Mists of Pandaria\\
+-- #IMPORT: 03 - World Drops\\05 - Mists of Pandaria.lua
 -- #IMPORT: 03 - World Drops\\Lockpicking.lua
 -- #IMPORT: 03 - World Drops\\Pick Pocket.lua
 

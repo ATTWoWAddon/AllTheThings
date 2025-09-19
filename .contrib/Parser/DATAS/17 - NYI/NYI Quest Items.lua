@@ -708,7 +708,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 11.0.5
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
-			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
 			i(231773),	-- Lost & Found Chest
 		})),

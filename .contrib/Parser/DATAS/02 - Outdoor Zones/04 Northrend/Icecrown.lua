@@ -138,6 +138,15 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				petbattles({
+					n(71438, {	-- Doopy
+						["coord"] = { 47.8, 14.3, ICECROWN },
+						["timeline"] = { ADDED_5_3_0 },
+						["groups"] = {
+							applyclassicphase(MOP_PHASE_ESCALATION, i(97984, {	-- Frost-Tipped Eggshell (QI!)
+								["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+							})),
+						},
+					}),
 					n(66675, {	-- Major Payne <Grand Master Pet Tamer>
 						["coord"] = { 77.4, 19.6, ICECROWN },
 						["description"] = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",

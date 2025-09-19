@@ -781,7 +781,7 @@ root(ROOTS.Zones, {
 				q(38911, {	-- The Rivermane Tribe
 					["sourceQuests"] = { 38907 },	-- Keepers of the Hammer
 					["provider"] = { "n", 93826 },	-- Mayla Highmountain
-					["coord"] = { 55.0, 64.3, 652 },	-- Thunder Totem
+					["coord"] = { 54.8, 63.2, 652 },	-- Thunder Totem
 				}),
 				q(39862, {	-- The Siegebrul
 					["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa

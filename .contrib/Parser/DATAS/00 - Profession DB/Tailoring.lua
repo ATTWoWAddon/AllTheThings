@@ -430,7 +430,7 @@ i(24301, 31441);	-- White Remedy Cape
 i(24311, 31454);	-- Whitemend Hood
 i(24308, 31451);	-- Whitemend Pants
 --- MOONCLOTH ---
-i(0, MOONCLOTH_TAILORING, nil, MOONCLOTH_TAILORING);		-- Mooncloth Tailoring [REMOVED 4.0.3]
+i(0, 26798, nil, MOONCLOTH_TAILORING);		-- Mooncloth Tailoring [REMOVED 4.0.3]
 -- #if BEFORE CATA
 i(21916, 26760, nil, MOONCLOTH_TAILORING);	-- Primal Mooncloth Belt
 i(21917, 26762, nil, MOONCLOTH_TAILORING);	-- Primal Mooncloth Robe
@@ -441,7 +441,7 @@ i(21917, 26762);	-- Primal Mooncloth Robe
 i(21918, 26761);	-- Primal Mooncloth Shoulders
 -- #endif
 --- SHADOWEAVE ---
-i(0, SHADOWEAVE_TAILORING, nil, SHADOWEAVE_TAILORING);	-- Shadoweave Tailoring [REMOVED 4.0.3]
+i(0, 26801, nil, SHADOWEAVE_TAILORING);	-- Shadoweave Tailoring [REMOVED 4.0.3]
 -- #if BEFORE CATA
 i(21914, 26757, nil, SHADOWEAVE_TAILORING);	-- Frozen Shadoweave Boots
 i(21913, 26758, nil, SHADOWEAVE_TAILORING);	-- Frozen Shadoweave Robe
@@ -452,7 +452,7 @@ i(21913, 26758);	-- Frozen Shadoweave Robe
 i(21912, 26756);	-- Frozen Shadoweave Shoulders
 -- #endif
 --- SPELLFIRE ---
-i(0, SPELLFIRE_TAILORING, nil, SPELLFIRE_TAILORING);	-- Spellfire Tailoring [REMOVED 4.0.3]
+i(0, 26797, nil, SPELLFIRE_TAILORING);	-- Spellfire Tailoring [REMOVED 4.0.3]
 -- #if BEFORE CATA
 i(21908, 26752, nil, SPELLFIRE_TAILORING);	-- Spellfire Belt
 i(21909, 26753, nil, SPELLFIRE_TAILORING);	-- Spellfire Gloves

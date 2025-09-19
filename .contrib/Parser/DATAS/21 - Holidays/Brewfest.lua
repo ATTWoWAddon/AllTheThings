@@ -640,6 +640,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (MM!)
 							["timeline"] = { ADDED_10_1_7 },
 						}),
+						i(248761, {	-- Brewfest Barrel Bomber (MOUNT!)
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					}),
 				}),
 				i(149752, {	-- Keg-Shaped Treasure Box		(Uncommon Quality)
@@ -780,7 +783,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
 				})),
 
-				-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
+				-- Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
 				applyclassicphase(CATA_PHASE_ONE, i(232017, {	-- Bitterer Balebrew Charm [Level 85, ilvl 353]
 					["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					["OnUpdate"] = BREWFEST_2024_OnUpdate,

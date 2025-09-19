@@ -2378,9 +2378,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.0, 83.6, WINTERSPRING },
 					["timeline"] = { ADDED_5_1_0 },
 					["groups"] = {
-						i(4191, {	-- Owlbeast Leggings
-							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
-						}),
 					},
 				}),
 				n(10200, {	-- Rak'shiri
@@ -2506,10 +2503,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						i(21957, {	-- Design: Necklace of the Diamond Tower
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(21957, {	-- Design: Necklace of the Diamond Tower (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
 							["isLimited"] = true,
 						}),

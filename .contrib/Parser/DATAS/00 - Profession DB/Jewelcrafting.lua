@@ -1,10 +1,6 @@
 local i = GetRecipeHelperForProfession(JEWELCRAFTING);
 
--- Everything in the file currently is representative of live Retail data, so let's avoid contaminating
--- Classic pre-CATA where the Great JC Recipe Replacement took place
--- #if BEFORE CATA
-if true then return end
--- #endif
+
 
 -- #if ANYCLASSIC
 -----------------
@@ -20,272 +16,579 @@ i(0,1216331);	-- Bloodthirsty Ruby Choker
 -- #endif
 
 -----------------
--- PATCH 2.0.1 --
+-- PATCH 2.0.5 --
 -----------------
 --- TRAINER ---
 i(0, 25229);	-- Jewelcrafting (Apprentice)
 i(0, 25230);	-- Jewelcrafting (Journeyman)
 i(0, 28894);	-- Jewelcrafting (Expert)
 i(0, 28895);	-- Jewelcrafting (Artisan)
-i(0, 28895);	-- Jewelcrafting (Master)
+i(0, 28897);	-- Jewelcrafting (Master)
+i(0, 31252);	-- Prospecting
+i(0, 26876);	-- Aquamarine Pendant of the Warrior
+i(0, 26874);	-- Aquamarine Signet
+i(0, 31050);	-- Azure Moonstone Ring
+i(0, 26916);	-- Band of Natural Fire
+i(0, 25498);	-- Barbaric Iron Collar
+i(0, 25493);	-- Braided Copper Ring
+i(0, 36523);	-- Brilliant Necklace
+i(0, 37818);	-- Bronze Band of Force
+i(0, 25278);	-- Bronze Setting
+i(0, 38175);	-- Bronze Torc
+i(0, 25621);	-- Citrine Ring of Rapid Healing
+i(0, 32801);	-- Coarse Stone Statue
+i(0, 25255);	-- Delicate Copper Wire
+i(0, 32809);	-- Dense Stone Statue
+i(0, 36526);	-- Diamond Focus Ring
+i(0, 25280);	-- Elegant Silver Ring
+i(0, 34961);	-- Emerald Lion Ring
+i(0, 25620);	-- Engraved Truesilver Ring
+i(0, 31048);	-- Fel Iron Blood Ring
+i(0, 26872);	-- Figurine - Jade Owl
+i(0, 25287);	-- Gloom Band
+i(0, 34960);	-- Glowing Thorium Band
+i(0, 31049);	-- Golden Draenite Ring
+i(0, 25613);	-- Golden Dragon Ring
+i(0, 34955);	-- Golden Ring of Power
+i(0, 31052);	-- Heavy Adamantite Ring
+i(0, 26926);	-- Heavy Copper Ring
+i(0, 36524);	-- Heavy Jade Ring
+i(0, 25305);	-- Heavy Silver Ring
+i(0, 32807);	-- Heavy Stone Statue
+i(0, 25283);	-- Inlaid Malachite Ring
+i(0, 26911);	-- Living Emerald Pendant
+i(0, 32178);	-- Malachite Pendant
+i(0, 38068);	-- Mercurial Adamantite
+i(0, 25615);	-- Mithril Filigree
+i(0, 25321);	-- Moonsoul Crown
+i(0, 26907);	-- Onslaught Ring
+i(0, 26928);	-- Ornate Tigerseye Necklace
+i(0, 36525);	-- Red Ring of Destruction
+i(0, 25317);	-- Ring of Silver Might
+i(0, 25318);	-- Ring of Twilight Shadows
+i(0, 32259);	-- Rough Stone Statue
+i(0, 26883);	-- Ruby Pendant of Fire
+i(0, 26908);	-- Sapphire Pendant of Winter Night
+i(0, 26903);	-- Sapphire Signet
+i(0, 26902);	-- Simple Opal Ring
+i(0, 25284);	-- Simple Pearl Ring
+i(0, 25490);	-- Solid Bronze Ring
+i(0, 32808);	-- Solid Stone Statue
+i(0, 31051);	-- Thick Adamantite Necklace
+i(0, 26927);	-- Thick Bronze Necklace
+i(0, 26880);	-- Thorium Setting
+i(0, 32179);	-- Tigerseye Band
+i(0, 34959);	-- Truesilver Commander's Ring
+i(0, 26885);	-- Truesilver Healing Ring
+i(0, 26925);	-- Woven Copper Ring
 --- ITEM ---
-i(20854, 25339);	-- Design: Amulet of the Moon (Guessed via Filter Recipe with SpellID)
-i(20855, 25323);	-- Design: Wicked Moonstone Ring (Guessed via Filter Recipe with SpellID)
-i(20856, 25320);	-- Design: Heavy Golden Necklace of Battle (Guessed via Filter Recipe with SpellID)
-i(20970, 25610);	-- Design: Pendant of the Agate Shield (Guessed via Filter Recipe with SpellID)
-i(20971, 25612);	-- Design: Heavy Iron Knuckles (Guessed via Filter Recipe with SpellID)
-i(20973, 25617);	-- Design: Blazing Citrine Ring (Guessed via Filter Recipe with SpellID)
-i(20974, 25618);	-- Design: Jade Pendant of Blasting (Guessed via Filter Recipe with SpellID)
-i(20975, 25619);	-- Design: The Jade Eye (Guessed via Filter Recipe with SpellID)
-i(20976, 25622);	-- Design: Citrine Pendant of Golden Healing (Guessed via Filter Recipe with SpellID)
-i(21940, 26873);	-- Design: Golden Hare (Guessed via Filter Recipe with SpellID)
-i(21941, 26875);	-- Design: Black Pearl Panther (Guessed via Filter Recipe with SpellID)
-i(21942, 26878);	-- Design: Ruby Crown of Restoration (Guessed via Filter Recipe with SpellID)
-i(21943, 26881);	-- Design: Truesilver Crab (Guessed via Filter Recipe with SpellID)
-i(21944, 26882);	-- Design: Truesilver Boar (Guessed via Filter Recipe with SpellID)
-i(21945, 26887);	-- Design: The Aquamarine Ward (Guessed via Filter Recipe with SpellID)
-i(21947, 26896);	-- Design: Gem Studded Band (Guessed via Filter Recipe with SpellID)
-i(21948, 26897);	-- Design: Opal Necklace of Impact (Guessed via Filter Recipe with SpellID)
-i(21949, 26900);	-- Design: Ruby Serpent (Guessed via Filter Recipe with SpellID)
-i(21952, 26906);	-- Design: Emerald Crown of Destruction (Guessed via Filter Recipe with SpellID)
-i(21953, 26909);	-- Design: Emerald Owl (Guessed via Filter Recipe with SpellID)
-i(21954, 26910);	-- Design: Ring of Bitter Shadows (Guessed via Filter Recipe with SpellID)
-i(21955, 26912);	-- Design: Black Diamond Crab (Guessed via Filter Recipe with SpellID)
-i(21956, 26914);	-- Design: Dark Iron Scorpid (Guessed via Filter Recipe with SpellID)
-i(21957, 26915);	-- Design: Necklace of the Diamond Tower (Guessed via Filter Recipe with SpellID)
-i(23130, 28903);	-- Design: Brilliant Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(23131, 28905);	-- Design: Bold Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(23133, 28903);	-- Design: Brilliant Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(23134, 34590);	-- Design: Delicate Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(23135, 28910);	-- Design: Inscribed Flame Spessarite (Guessed via Filter Recipe with SpellID)
-i(23136, 28912);	-- Design: Reckless Flame Spessarite (Guessed via Filter Recipe with SpellID)
-i(23137, 28914);	-- Design: Glinting Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23138, 28915);	-- Design: Potent Flame Spessarite (Guessed via Filter Recipe with SpellID)
-i(23140, 28916);	-- Design: Radiant Deep Peridot (Guessed via Filter Recipe with SpellID)
-i(23141, 28917);	-- Design: Jagged Deep Peridot (Guessed via Filter Recipe with SpellID)
-i(23142, 28918);	-- Design: Regal Deep Peridot (Guessed via Filter Recipe with SpellID)
-i(23143, 28927);	-- Design: Purified Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23144, 28925);	-- Design: Timeless Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23145, 28927);	-- Design: Purified Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23146, 28933);	-- Design: Shifting Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23147, 28936);	-- Design: Sovereign Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(23148, 28903);	-- Design: Brilliant Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(23149, 28944);	-- Design: Smooth Golden Draenite (Guessed via Filter Recipe with SpellID)
-i(23150, 28947);	-- Design: Subtle Golden Draenite (Guessed via Filter Recipe with SpellID)
-i(23151, 28948);	-- Design: Rigid Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(23152, 28950);	-- Design: Solid Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(23153, 28953);	-- Design: Sparkling Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(23154, 28955);	-- Design: Stormy Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(23155, 28953);	-- Design: Sparkling Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(24158, 31053);	-- Design: Khorium Band of Shadows (Guessed via Filter Recipe with SpellID)
-i(24159, 31054);	-- Design: Khorium Band of Frost (Guessed via Filter Recipe with SpellID)
-i(24160, 31055);	-- Design: Khorium Inferno Band (Guessed via Filter Recipe with SpellID)
-i(24161, 31056);	-- Design: Khorium Band of Leaves (Guessed via Filter Recipe with SpellID)
-i(24162, 31057);	-- Design: Arcane Khorium Band (Guessed via Filter Recipe with SpellID)
-i(24163, 31058);	-- Design: Heavy Felsteel Ring (Guessed via Filter Recipe with SpellID)
-i(24164, 31060);	-- Design: Delicate Eternium Ring (Guessed via Filter Recipe with SpellID)
-i(24165, 31061);	-- Design: Blazing Eternium Band (Guessed via Filter Recipe with SpellID)
-i(24166, 31067);	-- Design: Thick Felsteel Necklace (Guessed via Filter Recipe with SpellID)
-i(24167, 31068);	-- Design: Living Ruby Pendant (Guessed via Filter Recipe with SpellID)
-i(24168, 31070);	-- Design: Braided Eternium Chain (Guessed via Filter Recipe with SpellID)
-i(24169, 31071);	-- Design: Eye of the Night (Guessed via Filter Recipe with SpellID)
-i(24170, 31072);	-- Design: Embrace of the Dawn (Guessed via Filter Recipe with SpellID)
-i(24171, 31076);	-- Design: Chain of the Twilight Owl (Guessed via Filter Recipe with SpellID)
-i(24172, 31077);	-- Design: Coronet of Verdant Flame (Guessed via Filter Recipe with SpellID)
-i(24173, 31078);	-- Design: Circlet of Arcane Might (Guessed via Filter Recipe with SpellID)
-i(24174, 31062);	-- Design: Pendant of Frozen Flame (Guessed via Filter Recipe with SpellID)
-i(24175, 31063);	-- Design: Pendant of Thawing (Guessed via Filter Recipe with SpellID)
-i(24176, 31064);	-- Design: Pendant of Withering (Guessed via Filter Recipe with SpellID)
-i(24177, 31065);	-- Design: Pendant of Shadow's End (Guessed via Filter Recipe with SpellID)
-i(24178, 31066);	-- Design: Pendant of the Null Rune (Guessed via Filter Recipe with SpellID)
-i(24179, 31079);	-- Design: Felsteel Boar (Guessed via Filter Recipe with SpellID)
-i(24180, 31080);	-- Design: Dawnstone Crab (Guessed via Filter Recipe with SpellID)
-i(24181, 31081);	-- Design: Living Ruby Serpent (Guessed via Filter Recipe with SpellID)
-i(24182, 31082);	-- Design: Talasite Owl (Guessed via Filter Recipe with SpellID)
-i(24183, 31083);	-- Design: Nightseye Panther (Guessed via Filter Recipe with SpellID)
-i(24192, 31085);	-- Design: Delicate Living Ruby (Guessed via Filter Recipe with SpellID)
-i(24193, 31084);	-- Design: Bold Living Ruby (Guessed via Filter Recipe with SpellID)
-i(24194, 31085);	-- Design: Delicate Living Ruby (Guessed via Filter Recipe with SpellID)
-i(24195, 31088);	-- Design: Brilliant Living Ruby (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24196, 31088);	-- Design: Brilliant Living Ruby (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24197, 31090);	-- Design: Subtle Dawnstone (Guessed via Filter Recipe with SpellID)
-i(24198, 31091);	-- Design: Flashing Living Ruby (Guessed via Filter Recipe with SpellID)
-i(24199, 31092);	-- Design: Solid Star of Elune (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24200, 31149);	-- Design: Sparkling Star of Elune (Guessed via Filter Recipe with SpellID)
-i(24201, 31149);	-- Design: Sparkling Star of Elune (Guessed via Filter Recipe with SpellID)
-i(24202, 31095);	-- Design: Stormy Star of Elune (Guessed via Filter Recipe with SpellID)
-i(24203, 31088);	-- Design: Brilliant Living Ruby (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24204, 31097);	-- Design: Smooth Dawnstone (Guessed via Filter Recipe with SpellID)
-i(24205, 31098);	-- Design: Rigid Star of Elune (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24206, 31097);	-- Design: Smooth Dawnstone (Guessed via Filter Recipe with SpellID)
-i(24207, 31090);	-- Design: Subtle Dawnstone (Guessed via Filter Recipe with SpellID)
-i(24209, 31102);	-- Design: Sovereign Nightseye (Guessed via Filter Recipe with SpellID)
-i(24210, 31103);	-- Design: Shifting Nightseye (Guessed via Filter Recipe with SpellID)
-i(24211, 31104);	-- Design: Timeless Nightseye (Guessed via Filter Recipe with SpellID)
-i(24212, 31112);	-- Design: Purified Nightseye (Guessed via Filter Recipe with SpellID)
-i(24213, 31106);	-- Design: Inscribed Noble Topaz (Guessed via Filter Recipe with SpellID)
-i(24214, 31107);	-- Design: Potent Noble Topaz (Guessed via Filter Recipe with SpellID)
-i(24215, 31108);	-- Design: Reckless Noble Topaz (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24216, 31109);	-- Design: Glinting Nightseye (Guessed via Filter Recipe with SpellID)
-i(24217, 46803);	-- Design: Regal Talasite (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(24218, 31111);	-- Design: Radiant Talasite (Guessed via Filter Recipe with SpellID)
-i(24219, 31112);	-- Design: Purified Nightseye (Guessed via Filter Recipe with SpellID)
-i(24220, 31113);	-- Design: Jagged Talasite (Guessed via Filter Recipe with SpellID)
-i(25902, 32866);	-- Design: Powerful Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(25903, 32867);	-- Design: Bracing Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(25904, 32870);	-- Design: Insightful Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(25905, 32868);	-- Design: Tenacious Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(25906, 32869);	-- Design: Brutal Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(25907, 32871);	-- Design: Destructive Skyfire Diamond (Guessed via Filter Recipe with SpellID)
-i(25908, 32873);	-- Design: Swift Skyfire Diamond (Guessed via Filter Recipe with SpellID)
-i(25909, 32872);	-- Design: Mystical Skyfire Diamond (Guessed via Filter Recipe with SpellID)
-i(25910, 32874);	-- Design: Enigmatic Skyfire Diamond (Guessed via Filter Recipe with SpellID)
-i(28291, 28944);	-- Design: Smooth Golden Draenite (Guessed via Filter Recipe with SpellID)
-i(28596, 34590);	-- Design: Delicate Blood Garnet (Guessed via Filter Recipe with SpellID)
-i(30826, 37855);	-- Design: Ring of Arcane Shielding (Guessed via Filter Recipe with SpellID)
-i(31358, 31080);	-- Design: Dawnstone Crab (Guessed via Filter Recipe with SpellID)
-i(31359, 28918);	-- Design: Regal Deep Peridot (Guessed via Filter Recipe with SpellID)
-i(31401, 38503);	-- Design: The Frozen Eye (Guessed via Filter Recipe with SpellID)
-i(31402, 38504);	-- Design: The Natural Ward (Guessed via Filter Recipe with SpellID)
-
+i(20854, 25339);	-- Amulet of the Moon
+i(24162, 31057);	-- Arcane Khorium Band
+i(21955, 26912);	-- Black Diamond Crab
+i(21941, 26875);	-- Black Pearl Panther
+i(20973, 25617);	-- Blazing Citrine Ring
+i(24165, 31061);	-- Blazing Eternium Band
+i(25903, 32867);	-- Bracing Earthstorm Diamond
+i(24168, 31070);	-- Braided Eternium Chain
+i(25906, 32869);	-- Brutal Earthstorm Diamond
+i(24171, 31076);	-- Chain of the Twilight Owl
+i(24173, 31078);	-- Circlet of Arcane Might
+i(20976, 25622);	-- Citrine Pendant of Golden Healing
+i(24172, 31077);	-- Coronet of Verdant Flame
+i(21956, 26914);	-- Dark Iron Scorpid
+i(24180, 31080);	-- Dawnstone Crab [A]
+i(31358, 31080);	-- Dawnstone Crab [H]
+i(24164, 31060);	-- Delicate Eternium Ring
+i(25907, 32871);	-- Destructive Skyfire Diamond
+i(24170, 31072);	-- Embrace of the Dawn
+i(21952, 26906);	-- Emerald Crown of Destruction
+i(21953, 26909);	-- Emerald Owl
+i(25910, 32874);	-- Enigmatic Skyfire Diamond
+i(24169, 31071);	-- Eye of the Night
+i(24179, 31079);	-- Felsteel Boar
+i(21947, 26896);	-- Gem Studded Band
+i(21940, 26873);	-- Golden Hare
+i(24163, 31058);	-- Heavy Felsteel Ring
+i(20856, 25320);	-- Heavy Golden Necklace of Battle
+i(20971, 25612);	-- Heavy Iron Knuckles [TRAINER: 4.0.3]
+i(25904, 32870);	-- Insightful Earthstorm Diamond
+i(20974, 25618);	-- Jade Pendant of Blasting
+i(24159, 31054);	-- Khorium Band of Frost
+i(24161, 31056);	-- Khorium Band of Leaves
+i(24158, 31053);	-- Khorium Band of Shadows
+i(24160, 31055);	-- Khorium Inferno Band
+i(24167, 31068);	-- Living Ruby Pendant
+i(24181, 31081);	-- Living Ruby Serpent
+i(25909, 32872);	-- Mystical Skyfire Diamond
+i(21957, 26915);	-- Necklace of the Diamond Tower
+i(24183, 31083);	-- Nightseye Panther
+i(21948, 26897);	-- Opal Necklace of Impact
+i(24174, 31062);	-- Pendant of Frozen Flame
+i(24177, 31065);	-- Pendant of Shadow's End
+i(24175, 31063);	-- Pendant of Thawing
+i(20970, 25610);	-- Pendant of the Agate Shield [TRAINER: 4.1.0]
+i(24178, 31066);	-- Pendant of the Null Rune
+i(24176, 31064);	-- Pendant of Withering
+i(25902, 32866);	-- Powerful Earthstorm Diamond
+i(30826, 37855);	-- Ring of Arcane Shielding
+i(21954, 26910);	-- Ring of Bitter Shadows
+i(21942, 26878);	-- Ruby Crown of Restoration
+i(21949, 26900);	-- Ruby Serpent
+i(25908, 32873);	-- Swift Skyfire Diamond
+i(24182, 31082);	-- Talasite Owl
+i(25905, 32868);	-- Tenacious Earthstorm Diamond
+i(21945, 26887);	-- The Aquamarine Ward
+i(31401, 38503);	-- The Frozen Eye
+i(20975, 25619);	-- The Jade Eye [TRAINER: 4.0.3]
+i(31402, 38504);	-- The Natural Ward
+i(24166, 31067);	-- Thick Felsteel Necklace
+i(21944, 26882);	-- Truesilver Boar
+i(21943, 26881);	-- Truesilver Crab
+i(20855, 25323);	-- Wicked Moonstone Ring
+-- #if BEFORE CATA
+i(23131, 28905);	-- Bold Blood Garnet [TRAINER: 3.0.2]
+i(24193, 31084);	-- Bold Living Ruby
+i(28596, 34590);	-- Bright Blood Garnet [TRAINER: 3.0.2]
+i(24192, 31089);	-- Bright Living Ruby [REMOVED 4.0.3]
+i(24203, 31096);	-- Brilliant Dawnstone [REMOVED 4.0.3]
+i(23148, 28938);	-- Brilliant Golden Draenite [TRAINER: 3.0.2, REMOVED: 4.0.3]
+i(23143, 28924);	-- Dazzling Deep Peridot [REMOVED: 4.0.3]
+i(24219, 31112);	-- Dazzling Talasite
+i(23134, 28907);	-- Delicate Blood Garnet [REMOVED: 4.0.3]
+i(24194, 31085);	-- Delicate Living Ruby
+i(23142, 28918);	-- Enduring Deep Peridot [A]
+i(31359, 28918);	-- Enduring Deep Peridot [H]
+i(24198, 31091);	-- Flashing Living Ruby
+i(24206, 31099);	-- Gleaming Dawnstone [REMOVED 4.0.3]
+i(23149, 28944);	-- Gleaming Golden Draenite
+i(23137, 28914);	-- Glinting Flame Spessarite [TRAINER: 3.0.2]
+i(24216, 31109);	-- Glinting Noble Topaz
+i(24211, 31104);	-- Glowing Nightseye
+i(23144, 28925);	-- Glowing Shadow Draenite [TRAINER: 3.0.2]
+i(23135, 28910);	-- Inscribed Flame Spessarite [TRAINER: 3.0.2]
+i(24213, 31106);	-- Inscribed Noble Topaz
+i(23141, 28917);	-- Jagged Deep Peridot [TRAINER: 3.0.2]
+i(24220, 31113);	-- Jagged Talasite
+i(23136, 28912);	-- Luminous Flame Spessarite
+i(24215, 31108);	-- Luminous Noble Topaz
+i(23155, 28957);	-- Lustrous Azure Moonstone [REMOVED: 4.0.3]
+i(24201, 31094);	-- Lustrous Star of Elune [REMOVED 4.0.3]
+i(23138, 28915);	-- Potent Flame Spessarite
+i(24214, 31107);	-- Potent Noble Topaz
+i(23140, 28916);	-- Radiant Deep Peridot [TRAINER: 3.0.2]
+i(24218, 31111);	-- Radiant Talasite
+i(24217, 31110);	-- Regal Talasite [REMOVED 4.0.3]
+i(24205, 31098);	-- Rigid Dawnstone
+i(23151, 28948);	-- Rigid Golden Draenite [TRAINER: 3.0.2]
+i(24212, 31105);	-- Royal Nightseye [REMOVED 4.0.3]
+i(23145, 28927);	-- Royal Shadow Draenite
+i(23133, 28906);	-- Runed Blood Garnet [REMOVED: 4.0.3]
+i(24196, 31088);	-- Runed Living Ruby
+i(24210, 31103);	-- Shifting Nightseye
+i(23146, 28933);	-- Shifting Shadow Draenite
+i(24204, 31097);	-- Smooth Dawnstone
+i(28291, 34069);	-- Smooth Golden Draenite [TRAINER: 3.0.2, REMOVED: 4.0.3]
+i(23152, 28950);	-- Solid Azure Moonstone [TRAINER: 3.0.2]
+i(24199, 31092);	-- Solid Star of Elune
+i(24209, 31102);	-- Sovereign Nightseye
+i(23147, 28936);	-- Sovereign Shadow Draenite [TRAINER: 3.0.2]
+i(23153, 28953);	-- Sparkling Azure Moonstone [TRAINER: 3.0.2]
+i(24200, 31149);	-- Sparkling Star of Elune
+i(23154, 28955);	-- Stormy Azure Moonstone
+i(24202, 31095);	-- Stormy Star of Elune
+i(24197, 31090);	-- Subtle Living Ruby
+i(23130, 28903);	-- Teardrop Blood Garnet [TRAINER: 3.0.2]
+i(24195, 31087);	-- Teardrop Living Ruby [REMOVED 4.0.3]
+i(24207, 31100);	-- Thick Dawnstone [REMOVED 4.0.3]
+i(23150, 28947);	-- Thick Golden Draenite
+-- #else
+i(23131, 28905);	-- Bold Blood Garnet [TRAINER: 3.0.2]
+i(24193, 31084);	-- Bold Living Ruby
+i(23130, 28903);	-- Brilliant Blood Garnet [TRAINER: 3.0.2]
+i(23133, 28903);	-- Brilliant Blood Garnet [TRAINER: 3.0.2]
+i(23148, 28903);	-- Brilliant Blood Garnet [TRAINER: 3.0.2]
+i(24195, 31088);	-- Brilliant Living Ruby
+i(24196, 31088);	-- Brilliant Living Ruby
+i(24203, 31088);	-- Brilliant Living Ruby
+i(23134, 34590);	-- Delicate Blood Garnet [TRAINER: 3.0.2]
+i(28596, 34590);	-- Delicate Blood Garnet [TRAINER: 3.0.2]
+i(24192, 31085);	-- Delicate Living Ruby
+i(24194, 31085);	-- Delicate Living Ruby
+i(24198, 31091);	-- Flashing Living Ruby
+i(24216, 31109);	-- Glinting Nightseye
+i(23137, 28914);	-- Glinting Shadow Draenite [TRAINER: 3.0.2]
+i(23135, 28910);	-- Inscribed Flame Spessarite [TRAINER: 3.0.2]
+i(24213, 31106);	-- Inscribed Noble Topaz
+i(23141, 28917);	-- Jagged Deep Peridot [TRAINER: 3.0.2]
+i(24220, 31113);	-- Jagged Talasite
+i(23138, 28915);	-- Potent Flame Spessarite
+i(24214, 31107);	-- Potent Noble Topaz
+i(24212, 31112);	-- Purified Nightseye
+i(24219, 31112);	-- Purified Nightseye
+i(23145, 28927);	-- Purified Shadow Draenite
+i(23143, 28927);	-- Purified Shadow Draenite [REMOVED: 4.0.3]
+i(23140, 28916);	-- Radiant Deep Peridot [TRAINER: 3.0.2]
+i(24218, 31111);	-- Radiant Talasite
+i(23136, 28912);	-- Reckless Flame Spessarite
+i(24215, 31108);	-- Reckless Noble Topaz
+i(23142, 28918);	-- Regal Deep Peridot [A]
+i(31359, 28918);	-- Regal Deep Peridot [H]
+i(24217, 46803);	-- Regal Talasite
+i(23151, 28948);	-- Rigid Azure Moonstone [TRAINER: 3.0.2]
+i(24205, 31098);	-- Rigid Star of Elune
+i(24210, 31103);	-- Shifting Nightseye
+i(23146, 28933);	-- Shifting Shadow Draenite
+i(24204, 31097);	-- Smooth Dawnstone
+i(24206, 31097);	-- Smooth Dawnstone
+i(23149, 28944);	-- Smooth Golden Draenite
+i(28291, 28944);	-- Smooth Golden Draenite
+i(23152, 28950);	-- Solid Azure Moonstone [TRAINER: 3.0.2]
+i(24199, 31092);	-- Solid Star of Elune
+i(24209, 31102);	-- Sovereign Nightseye
+i(23147, 28936);	-- Sovereign Shadow Draenite [TRAINER: 3.0.2]
+i(23153, 28953);	-- Sparkling Azure Moonstone [TRAINER: 3.0.2]
+i(23155, 28953);	-- Sparkling Azure Moonstone [TRAINER: 3.0.2]
+i(24200, 31149);	-- Sparkling Star of Elune
+i(24201, 31149);	-- Sparkling Star of Elune
+i(23154, 28955);	-- Stormy Azure Moonstone
+i(24202, 31095);	-- Stormy Star of Elune
+i(24197, 31090);	-- Subtle Dawnstone
+i(24207, 31090);	-- Subtle Dawnstone
+i(23150, 28947);	-- Subtle Golden Draenite
+i(24211, 31104);	-- Timeless Nightseye
+i(23144, 28925);	-- Timeless Shadow Draenite [TRAINER: 3.0.2]
+-- #endif
+--- REMOVED WITH CATA ---
+i(0, 31089);	-- Bright Living Ruby [REMOVED 4.0.3]
+i(0, 31096);	-- Brilliant Dawnstone [REMOVED 4.0.3]
+i(0, 28924);	-- Dazzling Deep Peridot [REMOVED: 4.0.3]
+i(0, 28907);	-- Delicate Blood Garnet [REMOVED: 4.0.3]
+i(0, 31110);	-- Regal Talasite [REMOVED 4.0.3]
+i(0, 31099);	-- Gleaming Dawnstone [REMOVED 4.0.3]
+i(0, 28957);	-- Lustrous Azure Moonstone [REMOVED: 4.0.3]
+i(0, 31094);	-- Lustrous Star of Elune [REMOVED 4.0.3]
+i(0, 31105);	-- Royal Nightseye [REMOVED 4.0.3]
+i(0, 28906);	-- Runed Blood Garnet [REMOVED: 4.0.3]
+i(0, 31087);	-- Teardrop Living Ruby [REMOVED 4.0.3]
+i(0, 31100);	-- Thick Dawnstone [REMOVED 4.0.3]
+--- NYI ---
+i(21958, 26918);	-- Arcanite Sword Pendant
+i(21959, 26920);	-- Blood Crown
+i(21951, 26905);	-- Cut Azerothian Diamond
+i(21950, 26904);	-- Cut Emerald
+i(20972, 25614);	-- Silver Rose Pendant
 -----------------
 -- PATCH 2.1.0 --
 -----------------
-i(31875, 31098);	-- Design: Rigid Star of Elune (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(31876, 31103);	-- Design: Shifting Nightseye (Guessed via Filter Recipe with SpellID)
-i(31877, 31109);	-- Design: Glinting Nightseye (Guessed via Filter Recipe with SpellID)
-i(31878, 39470);	-- Design: Veiled Nightseye (Guessed via Filter Recipe with SpellID)
-i(31879, 39471);	-- Design: Deadly Noble Topaz (Guessed via Filter Recipe with SpellID)
-i(32274, 39705);	-- Design: Bold Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32277, 39706);	-- Design: Delicate Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32281, 39711);	-- Design: Brilliant Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32282, 39711);	-- Design: Brilliant Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32283, 39706);	-- Design: Delicate Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32284, 39713);	-- Design: Subtle Lionseye (Guessed via Filter Recipe with SpellID)
-i(32285, 39714);	-- Design: Flashing Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32286, 39715);	-- Design: Solid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
-i(32287, 39716);	-- Design: Sparkling Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
-i(32289, 39718);	-- Design: Stormy Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
-i(32290, 39711);	-- Design: Brilliant Crimson Spinel (Guessed via Filter Recipe with SpellID)
-i(32291, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with SpellID)
-i(32292, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
-i(32293, 39720);	-- Design: Smooth Lionseye (Guessed via Filter Recipe with SpellID)
-i(32295, 39724);	-- Design: Mystic Lionseye (Guessed via Filter Recipe with SpellID)
--- #if BEFORE MOP
-i(32296, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Filter Recipe with SpellID)
+--- TRAINER ---
+i(0, 41414);	-- Brilliant Pearl Band
+i(0, 41418);	-- Crown of the Sea Witch
+i(0, 40514);	-- Necklace of the Deep
+i(0, 41420);	-- Purified Jaggal Pearl
+i(0, 41429);	-- Purified Shadow Pearl
+i(0, 41415);	-- The Black Pearl
+--- ITEM ---
+i(32412, 39961);	-- Relentless Earthstorm Diamond
+i(32411, 39963);	-- Thundering Skyfire Diamond
+-- #if BEFORE CATA
+i(31876, 39463);	-- Balanced Nightseye [REMOVED 4.0.3]
+i(32299, 39729);	-- Balanced Shadowsong Amethyst [REMOVED: 4.0.3]
+i(32274, 39705);	-- Bold Crimson Spinel
+i(32283, 39712);	-- Bright Crimson Spinel [REMOVED: 4.0.3]
+i(32290, 39719);	-- Brilliant Lionseye [REMOVED: 4.0.3]
+i(32311, 39741);	-- Dazzling Seaspray Emerald
+i(32277, 39706);	-- Delicate Crimson Spinel
+i(32309, 39739);	-- Enduring Seaspray Emerald
+i(32285, 39714);	-- Flashing Crimson Spinel
+i(32293, 39722);	-- Gleaming Lionseye [REMOVED: 4.0.3]
+i(32306, 39736);	-- Glinting Pyrestone
+i(32301, 39731);	-- Glowing Shadowsong Amethyst
+i(31875, 39452);	-- Great Dawnstone [REMOVED: 4.0.3]
+i(32296, 39725);	-- Great Lionseye [REMOVED: 4.0.3]
+i(32303, 39733);	-- Inscribed Pyrestone
+i(31877, 39462);	-- Infused Nightseye  [REMOVED: 4.0.3]
+i(32300, 39730);	-- Infused Shadowsong Amethyst [REMOVED: 4.0.3]
+i(32312, 39742);	-- Jagged Seaspray Emerald
+i(32305, 39735);	-- Luminous Pyrestone [REMOVED: 4.0.3]
+i(32288, 39717);	-- Lustrous Empyrean Sapphire [REMOVED: 4.0.3]
+i(32295, 39724);	-- Mystic Lionseye
+i(32304, 39734);	-- Potent Pyrestone
+i(32310, 39740);	-- Radiant Seaspray Emerald
+i(32292, 39721);	-- Rigid Lionseye
+i(32302, 39732);	-- Royal Shadowsong Amethyst [REMOVED: 4.0.3]
+i(32282, 39711);	-- Runed Crimson Spinel
+i(32298, 39728);	-- Shifting Shadowsong Amethyst
+i(32291, 39720);	-- Smooth Lionseye
+i(32286, 39715);	-- Solid Empyrean Sapphire
+i(32297, 39727);	-- Sovereign Shadowsong Amethyst
+i(32287, 39716);	-- Sparkling Empyrean Sapphire
+i(32289, 39718);	-- Stormy Empyrean Sapphire
+i(32284, 39713);	-- Subtle Crimson Spinel
+i(32281, 39710);	-- Teardrop Crimson [REMOVED: 4.0.3]
+i(32294, 39723);	-- Thick Lionseye [REMOVED: 4.0.3]
+i(31878, 39470);	-- Veiled Noble Topaz
+i(32307, 39737);	-- Veiled Pyrestone
+i(31879, 39471);	-- Wicked Noble Topaz
+i(32308, 39738);	-- Wicked Pyrestone
+-- #else
+i(32274, 39705);	-- Bold Crimson Spinel
+i(32281, 39711);	-- Brilliant Crimson Spinel
+i(32282, 39711);	-- Brilliant Crimson Spinel
+i(32290, 39711);	-- Brilliant Crimson Spinel
+i(31879, 39471);	-- Deadly Noble Topaz
+i(32308, 39738);	-- Deadly Pyrestone
+i(32283, 39706);	-- Delicate Crimson Spinel
+i(32277, 39706);	-- Delicate Crimson Spinel
+i(32285, 39714);	-- Flashing Crimson Spinel
+i(31877, 31109);	-- Glinting Nightseye
+i(32306, 39736);	-- Glinting Shadowsong Amethyst
+i(32300, 39736);	-- Glinting Shadowsong Amethyst
+i(32303, 39733);	-- Inscribed Pyrestone
+i(32312, 39742);	-- Jagged Seaspray Emerald
+i(32295, 39724);	-- Mystic Lionseye
+i(32304, 39734);	-- Potent Pyrestone
+i(32311, 39741);	-- Purified Shadowsong Amethyst
+i(32302, 39741);	-- Purified Shadowsong Amethyst
+i(32310, 39740);	-- Radiant Seaspray Emerald
+i(32305, 47055);	-- Reckless Pyrestone
+i(32309, 39739);	-- Regal Seaspray Emerald
+i(32296, 39721);	-- Rigid Empyrean Sapphire
+i(32292, 39721);	-- Rigid Empyrean Sapphire
+i(31875, 31098);	-- Rigid Star of Elune
+i(31876, 31103);	-- Shifting Nightseye
+i(32299, 39728);	-- Shifting Shadowsong Amethyst
+i(32298, 39728);	-- Shifting Shadowsong Amethyst
+i(32293, 39720);	-- Smooth Lionseye
+i(32291, 39720);	-- Smooth Lionseye
+i(32286, 39715);	-- Solid Empyrean Sapphire
+i(32297, 39727);	-- Sovereign Shadowsong Amethyst
+i(32288, 39716);	-- Sparkling Empyrean Sapphire
+i(32287, 39716);	-- Sparkling Empyrean Sapphire
+i(32289, 39718);	-- Stormy Empyrean Sapphire
+i(32284, 39713);	-- Subtle Lionseye
+i(32294, 39713);	-- Subtle Lionseye
+i(31878, 39470);	-- Veiled Nightseye
+i(32301, 39731);	-- Timeless Shadowsong Amethyst
+i(32307, 39737);	-- Veiled Shadowsong Amethyst
 -- #endif
-i(32297, 39727);	-- Design: Sovereign Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32298, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32299, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32300, 39736);	-- Design: Glinting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32301, 39731);	-- Design: Timeless Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32302, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32303, 39733);	-- Design: Inscribed Pyrestone (Guessed via Filter Recipe with SpellID)
-i(32304, 39734);	-- Design: Potent Pyrestone (Guessed via Filter Recipe with SpellID)
-i(32305, 47055);	-- Design: Reckless Pyrestone (Guessed via Filter Recipe with SpellID)
-i(32306, 39736);	-- Design: Glinting Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32307, 39737);	-- Design: Veiled Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32308, 39738);	-- Design: Deadly Pyrestone (Guessed via Filter Recipe with SpellID)
-i(32309, 39739);	-- Design: Regal Seaspray Emerald (Guessed via Filter Recipe with SpellID)
-i(32310, 39740);	-- Design: Radiant Seaspray Emerald (Guessed via Filter Recipe with SpellID)
-i(32311, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Filter Recipe with SpellID)
-i(32312, 39742);	-- Design: Jagged Seaspray Emerald (Guessed via Filter Recipe with SpellID)
-i(32411, 39963);	-- Design: Thundering Skyfire Diamond (Guessed via Filter Recipe with SpellID)
+--- REMOVED WITH CATA ---
+i(0, 39463);	-- Balanced Nightseye [REMOVED 4.0.3]
+i(0, 39452);	-- Great Dawnstone [REMOVED 4.0.3]
+i(0, 39462);	-- Infused Nightseye  [REMOVED 4.0.3]
+i(0, 39729);	-- Balanced Shadowsong Amethyst [REMOVED: 4.0.3]
+i(0, 39712);	-- Bright Crimson Spinel [REMOVED: 4.0.3]
+i(0, 39719);	-- Brilliant Lionseye [REMOVED: 4.0.3]
+i(0, 39722);	-- Gleaming Lionseye [REMOVED 4.0.3]
+i(0, 39725);	-- Great Lionseye [REMOVED: 4.0.3]
+i(0, 39730);	-- Infused Shadowsong Amethyst [REMOVED: 4.0.3]
+i(0, 39735);	-- Luminous Pyrestone [REMOVED: 4.0.3]
+i(0, 39717);	-- Lustrous Empyrean Sapphire [REMOVED 4.0.3]
+i(0, 39732);	-- Royal Shadowsong Amethyst [REMOVED: 4.0.3]
+i(0, 39710);	-- Teardrop Crimson [REMOVED: 4.0.3]
+i(0, 39723);	-- Thick Lionseye [REMOVED: 4.0.3]
 
 -----------------
 -- PATCH 2.1.3 --
 -----------------
-i(24208, 31101);	-- Design: Mystic Dawnstone (Guessed via Filter Recipe with SpellID)
+--- ITEM ---
+i(24208, 31101);	-- Mystic Dawnstone
+--- NYI ---
+i(25888, 32810);	-- Primal Stone Statue
 
 -----------------
 -- PATCH 2.2.0 --
 -----------------
-i(31870, 28948);	-- Design: Rigid Azure Moonstone (Guessed via Filter Recipe with SpellID)
-i(31871, 28933);	-- Design: Shifting Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(31872, 28933);	-- Design: Shifting Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(31873, 39466);	-- Design: Veiled Shadow Draenite (Guessed via Filter Recipe with SpellID)
-i(31874, 39467);	-- Design: Deadly Flame Spessarite (Guessed via Filter Recipe with SpellID)
-i(33155, 42588);	-- Design: Kailee's Rose (Guessed via Filter Recipe with SpellID)
-i(33156, 42589);	-- Design: Crimson Sun (Guessed via Filter Recipe with SpellID)
-i(33157, 42590);	-- Design: Falling Star (Guessed via Filter Recipe with SpellID)
-i(33158, 42591);	-- Design: Stone of Blades (Guessed via Filter Recipe with SpellID)
-i(33159, 42592);	-- Design: Blood of Amber (Guessed via Filter Recipe with SpellID)
-i(33160, 42593);	-- Design: Facet of Eternity (Guessed via Filter Recipe with SpellID)
-i(33305, 42558);	-- Design: Don Julio's Heart (Guessed via Filter Recipe with SpellID)
-i(33622, 39961);	-- Design: Relentless Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(33783, 43493);	-- Design: Steady Talasite (Guessed via Filter Recipe with SpellID)
+--- ITEM ---
+i(33159, 42592);	-- Blood of Amber
+i(33156, 42589);	-- Crimson Sun
+i(33305, 42558);	-- Don Julio's Heart
+i(33160, 42593);	-- Facet of Eternity
+i(33157, 42590);	-- Falling Star
+i(33155, 42588);	-- Kailee's Rose
+i(33622, 39961);	-- Relentless Earthstorm Diamond
+i(33158, 42591);	-- Stone of Blades
+-- #if BEFORE CATA
+i(31870, 39451);	-- Great Golden Draenite [REMOVED: 4.0.3]
+i(31871, 39455);	-- Balanced Shadow Draenite [REMOVED: 4.0.3]
+i(31872, 39458);	-- Infused Shadow Draenite [REMOVED: 4.0.3]
+i(33783, 43493);	-- Steady Talasite
+i(31873, 39466);	-- Veiled Flame Spessarite
+i(31874, 39467);	-- Wicked Flame Spessarite
+-- #else
+i(31874, 39467);	-- Deadly Flame Spessarite
+i(31870, 28948);	-- Rigid Azure Moonstone
+i(31871, 28933);	-- Shifting Shadow Draenite
+i(31872, 28933);	-- Shifting Shadow Draenite
+i(33783, 43493);	-- Steady Talasite
+i(31873, 39466);	-- Veiled Shadow Draenite
+-- #endif
+--- REMOVED WITH CATA -----
+i(0, 39451);	-- Great Golden Draenite [REMOVED: 4.0.3]
+i(0, 39455);	-- Balanced Shadow Draenite [REMOVED: 4.0.3]
+i(0, 39458);	-- Infused Shadow Draenite [REMOVED: 4.0.3]
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+--- ITEM ---
+i(34221, 44794);	-- Chaotic Skyfire Diamond
 
 -----------------
 -- PATCH 2.3.2 --
 -----------------
-i(34689, 44794);	-- Design: Chaotic Skyfire Diamond (Guessed via Filter Recipe with SpellID)
+--- ITEM ---
+i(34689, 44794);	-- Chaotic Skyfire Diamond
 
 -----------------
 -- PATCH 2.4.0 --
 -----------------
-i(35198, 46122);	-- Design: Loop of Forged Power (Guessed via Filter Recipe with SpellID)
-i(35199, 46123);	-- Design: Ring of Flowing Life (Guessed via Filter Recipe with SpellID)
-i(35200, 46124);	-- Design: Hard Khorium Band (Guessed via Filter Recipe with SpellID)
-i(35201, 46125);	-- Design: Pendant of Sunfire (Guessed via Filter Recipe with SpellID)
-i(35202, 46126);	-- Design: Amulet of Flowing Life (Guessed via Filter Recipe with SpellID)
-i(35203, 46127);	-- Design: Hard Khorium Choker (Guessed via Filter Recipe with SpellID)
-i(35238, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35239, 39731);	-- Design: Timeless Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35240, 39736);	-- Design: Glinting Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35241, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35242, 39728);	-- Design: Shifting Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35243, 39727);	-- Design: Sovereign Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35244, 39705);	-- Design: Bold Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35245, 39706);	-- Design: Delicate Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35246, 39706);	-- Design: Delicate Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35247, 39714);	-- Design: Flashing Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35248, 39711);	-- Design: Brilliant Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35250, 39711);	-- Design: Brilliant Crimson Spinel (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35251, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35252, 39739);	-- Design: Regal Seaspray Emerald (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35253, 39742);	-- Design: Jagged Seaspray Emerald (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35254, 39740);	-- Design: Radiant Seaspray Emerald (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35256, 39720);	-- Design: Smooth Lionseye (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35257, 39721);	-- Design: Rigid Empyrean Sapphire (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35258, 39724);	-- Design: Mystic Lionseye (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35260, 39720);	-- Design: Smooth Lionseye (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35262, 39716);	-- Design: Sparkling Empyrean Sapphire (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35263, 39715);	-- Design: Solid Empyrean Sapphire (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35264, 39716);	-- Design: Sparkling Empyrean Sapphire (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35265, 39718);	-- Design: Stormy Empyrean Sapphire (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35266, 39736);	-- Design: Glinting Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35267, 39733);	-- Design: Inscribed Pyrestone (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35268, 47055);	-- Design: Reckless Pyrestone (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35269, 39734);	-- Design: Potent Pyrestone (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35271, 39738);	-- Design: Deadly Pyrestone (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35304, 31092);	-- Design: Solid Star of Elune (Guessed via Filter Recipe with SpellID)
-i(35305, 31088);	-- Design: Brilliant Living Ruby (Guessed via Filter Recipe with SpellID)
-i(35306, 31085);	-- Design: Delicate Living Ruby (Guessed via Filter Recipe with SpellID)
-i(35307, 31098);	-- Design: Rigid Star of Elune (Guessed via Filter Recipe with SpellID)
-i(35322, 46403);	-- Design: Quick Dawnstone (Guessed via Filter Recipe with SpellID)
-i(35323, 31108);	-- Design: Reckless Noble Topaz (Guessed via Filter Recipe with SpellID)
-i(35325, 46405);	-- Design: Forceful Talasite (Guessed via Filter Recipe with SpellID)
-i(35502, 46597);	-- Design: Eternal Earthstorm Diamond (Guessed via Filter Recipe with SpellID)
-i(35505, 46601);	-- Design: Ember Skyfire Diamond (Guessed via Filter Recipe with SpellID)
-i(35695, 46775);	-- Design: Figurine - Empyrean Tortoise (Guessed via Filter Recipe with SpellID)
-i(35696, 46776);	-- Design: Figurine - Khorium Boar (Guessed via Filter Recipe with SpellID)
-i(35697, 46777);	-- Design: Figurine - Crimson Serpent (Guessed via Filter Recipe with SpellID)
-i(35698, 46778);	-- Design: Figurine - Shadowsong Panther (Guessed via Filter Recipe with SpellID)
-i(35699, 46779);	-- Design: Figurine - Seaspray Albatross (Guessed via Filter Recipe with SpellID)
-i(35708, 46803);	-- Design: Regal Talasite (Guessed via Filter Recipe with SpellID)
-i(35762, 47055);	-- Design: Reckless Pyrestone (Guessed via Filter Recipe with SpellID)
-i(35763, 47056);	-- Design: Quick Lionseye (Guessed via Filter Recipe with SpellID)
-i(35764, 47054);	-- Design: Steady Seaspray Emerald (Guessed via Filter Recipe with SpellID)
-i(35765, 47053);	-- Design: Forceful Seaspray Emerald (Guessed via Filter Recipe with SpellID)
-i(35766, 47054);	-- Design: Steady Seaspray Emerald (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35767, 47055);	-- Design: Reckless Pyrestone (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35768, 47056);	-- Design: Quick Lionseye (Guessed via Duplicate SpellID Match with Sourced RecipeID)
-i(35769, 47053);	-- Design: Forceful Seaspray Emerald (Guessed via Duplicate SpellID Match with Sourced RecipeID)
+--- TRAINER ---
+i(0, 47280);	-- Brilliant Glass
+--- ITEM ---
+i(35202, 46126);	-- Amulet of Flowing Life
+i(35697, 46777);	-- Figurine - Crimson Serpent
+i(35695, 46775);	-- Figurine - Empyrean Tortoise
+i(35696, 46776);	-- Figurine - Khorium Boar
+i(35699, 46779);	-- Figurine - Seaspray Albatross
+i(35698, 46778);	-- Figurine - Shadowsong Panther
+i(35505, 46601);	-- Ember Skyfire Diamond
+i(35502, 46597);	-- Eternal Earthstorm Diamond
+i(35200, 46124);	-- Hard Khorium Band
+i(35203, 46127);	-- Hard Khorium Choker
+i(35198, 46122);	-- Loop of Forged Power
+i(35201, 46125);	-- Pendant of Sunfire
+i(35199, 46123);	-- Ring of Flowing Life
+-- #if BEFORE CATA
+i(35238, 39729);	-- Balanced Shadowsong Amethyst [REMOVED: 4.0.3]
+i(35244, 39705);	-- Bold Crimson Spinel
+i(35245, 39712);	-- Bright Crimson Spinel [REMOVED: 4.0.3]
+i(35306, 31089);	-- Bright Living Ruby [REMOVED 4.0.3]
+i(35255, 39719);	-- Brilliant Lionseye [REMOVED: 4.0.3]
+i(35251, 39741);	-- Dazzling Seaspray Emerald
+i(35246, 39706);	-- Delicate Crimson Spinel
+i(35252, 39739);	-- Enduring Seaspray Emerald
+i(35247, 39714);	-- Flashing Crimson Spinel
+i(35765, 47053);	-- Forceful Seaspray Emerald
+i(35769, 47053);	-- Forceful Seaspray Emerald
+i(35256, 39722);	-- Gleaming Lionseye [REMOVED: 4.0.3]
+i(35266, 39736);	-- Glinting Pyrestone
+i(35239, 39731);	-- Glowing Shadowsong Amethyst
+i(35257, 39725);	-- Great Lionseye [REMOVED: 4.0.3]
+i(35240, 39730);	-- Infused Shadowsong Amethyst [REMOVED: 4.0.3]
+i(35267, 39733);	-- Inscribed Pyrestone
+i(35253, 39742);	-- Jagged Seaspray Emerald
+i(35268, 39735);	-- Luminous Pyrestone [REMOVED: 4.0.3]
+i(35262, 39717);	-- Lustrous Empyrean Sapphire [REMOVED: 4.0.3]
+i(35258, 39724);	-- Mystic Lionseye
+i(35269, 39734);	-- Potent Pyrestone
+i(35763, 47056);	-- Quick Lionseye
+i(35768, 47056);	-- Quick Lionseye
+i(35254, 39740);	-- Radiant Seaspray Emerald
+i(35762, 47055);	-- Reckless Pyrestone
+i(35767, 47055);	-- Reckless Pyrestone
+i(35708, 46803);	-- Regal Nightseye
+i(35307, 31098);	-- Rigid Dawnstone
+i(35259, 39721);	-- Rigid Lionseye
+i(35241, 39732);	-- Royal Shadowsong Amethyst [REMOVED: 4.0.3]
+i(35248, 39711);	-- Runed Crimson Spinel
+i(35305, 31088);	-- Runed Living Ruby
+i(35242, 39728);	-- Shifting Shadowsong Amethyst
+i(35260, 39720);	-- Smooth Lionseye
+i(35263, 39715);	-- Solid Empyrean Sapphire
+i(35304, 31092);	-- Solid Star of Elune
+i(35243, 39727);	-- Sovereign Shadowsong Amethyst
+i(35264, 39716);	-- Sparkling Empyrean Sapphire
+i(35764, 47054);	-- Steady Seaspray Emerald
+i(35766, 47054);	-- Steady Seaspray Emerald
+i(35265, 39718);	-- Stormy Empyrean Sapphire
+i(35249, 39713);	-- Subtle Crimson Spinel
+i(35250, 39710);	-- Teardrop Crimson Spinel [REMOVED: 4.0.3]
+i(35261, 39723);	-- Thick Lionseye [REMOVED: 4.0.3]
+i(35270, 39737);	-- Veiled Pyrestone
+i(35271, 39738);	-- Wicked Pyrestone
+-- #else
+i(35244, 39705);	-- Bold Crimson Spinel
+i(35250, 39711);	-- Brilliant Crimson Spinel
+i(35248, 39711);	-- Brilliant Crimson Spinel
+i(35255, 39711);	-- Brilliant Crimson
+i(35305, 31088);	-- Brilliant Living Ruby
+i(35271, 39738);	-- Deadly Pyrestone
+i(35245, 39706);	-- Delicate Crimson Spinel
+i(35246, 39706);	-- Delicate Crimson Spinel
+i(35306, 31085);	-- Delicate Living Ruby
+i(35247, 39714);	-- Flashing Crimson Spinel
+i(35765, 47053);	-- Forceful Seaspray Emerald
+i(35769, 47053);	-- Forceful Seaspray Emerald
+i(35266, 39736);	-- Glinting Shadowsong Amethyst
+i(35240, 39736);	-- Glinting Shadowsong Amethyst
+i(35267, 39733);	-- Inscribed Pyrestone
+i(35253, 39742);	-- Jagged Seaspray Emerald
+i(35258, 39724);	-- Mystic Lionseye
+i(35269, 39734);	-- Potent Pyrestone
+i(35251, 39741);	-- Purified Shadowsong Amethyst
+i(35241, 39741);	-- Purified Shadowsong Amethyst
+i(35763, 47056);	-- Quick Lionseye
+i(35768, 47056);	-- Quick Lionseye
+i(35254, 39740);	-- Radiant Seaspray Emerald
+i(35268, 47055);	-- Reckless Pyrestone
+i(35762, 47055);	-- Reckless Pyrestone
+i(35767, 47055);	-- Reckless Pyrestone
+i(35252, 39739);	-- Regal Seaspray Emerald
+i(35708, 46803);	-- Regal Talasite
+i(35257, 39721);	-- Rigid Empyrean Sapphire
+i(35259, 39721);	-- Rigid Empyrean Sapphire
+i(35307, 31098);	-- Rigid Star of Elune
+i(35238, 39728);	-- Shifting Shadowsong Amethyst
+i(35242, 39728);	-- Shifting Shadowsong Amethyst
+i(35256, 39720);	-- Smooth Lionseye
+i(35260, 39720);	-- Smooth Lionseye
+i(35263, 39715);	-- Solid Empyrean Sapphire
+i(35304, 31092);	-- Solid Star of Elune
+i(35243, 39727);	-- Sovereign Shadowsong Amethyst
+i(35262, 39716);	-- Sparkling Empyrean Sapphire
+i(35264, 39716);	-- Sparkling Empyrean Sapphire
+i(35764, 47054);	-- Steady Seaspray Emerald
+i(35766, 47054);	-- Steady Seaspray Emerald
+i(35265, 39718);	-- Stormy Empyrean Sapphire
+i(35249, 39713);	-- Subtle Lionseye
+i(35261, 39713);	-- Subtle Lionseye
+i(35239, 39731);	-- Timeless Shadowsong Amethyst
+i(35270, 39737);	-- Veiled Shadowsong Amethyst
+-- #endif
+--- NYI ---
+i(35533, 0);	-- Amulet of Flowing Life
+i(35534, 0);	-- Hard Khorium Band
+i(35535, 0);	-- Hard Khorium Choker
+i(35536, 0);	-- Loop of Forged Power
+i(35537, 0);	-- Pendant of Sunfire
+i(35538, 0);	-- Ring of Flowing Life
 
 -----------------
 -- PATCH 2.4.2 --
 -----------------
-i(37504, 39741);	-- Design: Purified Shadowsong Amethyst (Guessed via Duplicate SpellID Match with Sourced RecipeID)
+--- ITEM ---
+-- #if BEFORE CATA
+i(35325, 46405);	-- Forceful Talasite
+i(35322, 46403);	-- Quick Dawnstone
+i(37504, 48789);	-- Purified Shadowsong Amethyst [REMOVED: 4.0.3]
+i(35323, 46404);	-- Reckless Noble Topaz [REMOVED: 4.0.3]
+-- #else
+i(35325, 46405);	-- Forceful Talasite
+i(35322, 46403);	-- Quick Dawnstone
+i(37504, 39741);	-- Purified Shadowsong Amethyst
+i(35323, 31108);	-- Reckless Noble Topaz
+-- #endif
+--- REMOVED WITH CATA ---
+i(0, 48789);	-- Purified Shadowsong Amethyst [REMOVED: 4.0.3]
+i(0, 46404);	-- Reckless Noble Topaz [REMOVED: 4.0.3]
+
+
+
+-- Everything in the file currently is representative of live Retail data, so let's avoid contaminating
+-- Classic pre-CATA where the Great JC Recipe Replacement took place
+-- #if BEFORE CATA
+if true then return end
+-- #endif
 
 -----------------
 -- PATCH 3.0.2 --

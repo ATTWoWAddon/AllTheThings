@@ -1,8 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local TEMPORARY_SOURCEQUEST = 78384;
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 19559, {	-- Azj-Kahet
@@ -322,7 +321,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.01, {	-- Rak-Ush Swarmery
 				q(83325, {	-- Bountiful Beetles
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78384,	-- Chasing The Light
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -393,12 +392,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.02, {	-- Pillar-nest Vosh
 				q(79174, {	-- Infested Infestation
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
 					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 				}),
 				q(79355, {	-- Prisoner Preservation
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
 					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 				}),
@@ -428,7 +427,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.03, {	-- Gutter Work
 				q(79710, {	-- A Fin of Every Kind
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78384,	-- Chasing The Light
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -443,7 +442,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79711, {	-- That's Pretty Gross
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78384,	-- Chasing The Light
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -496,7 +495,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.04, {	-- Melody of Madness
 				q(83306, {	-- Where the Wild Things Camp
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
 					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 					["isBreadcrumb"] = true,
@@ -582,7 +581,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.05, {	-- Pawns and Puppetry
 				q(80203, {	-- Social Clues
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 219357 },	-- Orator Tx'itk <The Second Strand>
 					["coord"] = { 71.4, 44.4, NERUBAR },
 				}),
@@ -719,7 +718,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.09, {	-- Mr. Sunflower's Therapy
 				q(82340, {	-- Loss of Limb
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 223723 },	-- Mr. Sunflower
 					["coord"] = { 63.3, 37.4, NERUBAR_LOWER },
 				}),
@@ -731,7 +730,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.10, {	-- The Wild Camp
 				q(83716, {	-- Beneath the Roots
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
 					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 					["isBreadcrumb"] = true,
@@ -762,7 +761,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.11, {	-- Pillar-nest of Horrors
 				q(79954, {	-- Spiders!
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 217255 },	-- Ag'thax
 					["coord"] = { 77.4, 68.5, NERUBAR },
 					["groups"] = {
@@ -864,7 +863,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81890, {	-- Unfulfilled Requests
 					["sourceQuests"] = {
-						TEMPORARY_SOURCEQUEST,
+						78384,	-- Chasing The Light
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
@@ -906,7 +905,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.14, {	-- Grieve & Weave
 				q(79630, {	-- Searching the Web
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78384 },	-- Chasing The Light
 					["provider"] = { "n", 217356 },	-- Arax'ne
 					["coord"] = { 64.1, 15.9, NERUBAR },
 				}),
@@ -1052,12 +1051,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Legendary Legerdemain ------
 			q(79717, {	-- Means of Ingress
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78384 },	-- Chasing The Light
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
 				["coord"] = { 32.0, 22.5, NERUBAR },
 			}),
 			q(79718, {	-- Skeins Street Irregulars
-				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["sourceQuests"] = { 78384 },	-- Chasing The Light
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
 				["coord"] = { 32.0, 22.5, NERUBAR },
 			}),
@@ -1154,9 +1153,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			})),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {
 			n(QUESTS, {
@@ -1180,4 +1179,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

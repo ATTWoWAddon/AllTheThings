@@ -52,6 +52,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					418,	-- Water Snake (PET!)
 				}},
 			}),
+			explorationHeader({
+				visit_exploration(5170,{coord={48.8,83.3,ORGRIMMAR}}),	-- Valley of Strength
+			}),
 			n(FACTIONS, {
 				faction(FACTION_BILGEWATER_CARTEL, {	-- Bilgewater Cartel
 					["provider"] = { "i", 64884 },	-- Bilgewater Cartel Tabard
@@ -630,21 +633,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["groups"] = CLASSIC_INSCRIPTION,
+						["groups"] = appendGroups(
+							WRATH_INSCRIPTION,
+							-- #if AFTER CATA
+							CATA_INSCRIPTION,
+							-- #endif
+							{}
+						),
 					}),
 				}),
 				-- #endif
-				-- #if AFTER TBC
+				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
 						["coord"] = { 72.5, 34.3, ORGRIMMAR },
-						["timeline"] = { ADDED_4_0_1 },
+						["timeline"] = { ADDED_4_0_3 },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["groups"] = appendGroups(CLASSIC_JEWELCRAFTING, {
 							r(404740, {	-- Cataclysm Crushing
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-						},
+						}),
 					}),
 				}),
 				-- #endif
@@ -2074,6 +2083,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["timeline"] = { ADDED_10_1_7 },
 					["races"] = HORDE_ONLY,
+					["lockCriteria"] = { 1, "questID", 54107 },	-- Grim Tidings (non-loyalist split quest)
 				}),
 				q(2756, {	-- The Old Ways
 					["qg"] = 7792,	-- Aturk the Anvil
@@ -2567,21 +2577,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(5611, {	-- Barkeep Morag
-					-- #if BEFORE 4.0.3
-					["coord"] = { 54.0, 67.0, ORGRIMMAR },	-- The Broken Tusk
-					-- #else
-					["coord"] = { 55.1, 77.9, ORGRIMMAR },	-- The Broken Tusk
-					-- #endif
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(1179),	-- Ice Cold Milk
-						-- Danny Donkey: All these items get removed from this vendor with Cataclysm.
-						-- #if BEFORE 4.0.3
-						i(2594),	-- Flagon of Dwarven Honeymead/Mead
-						i(2593),	-- Flask of Stormwind Tawny
-						i(2596),	-- Skin of Dwarven Stout
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 55.1, 77.9, ORGRIMMAR },	-- The Broken Tusk
+						-- #else
+						{ 54.0, 67.0, ORGRIMMAR },	-- The Broken Tusk
 						-- #endif
 					},
+					["races"] = HORDE_ONLY,
 				}),
 				n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
@@ -2663,7 +2666,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					-- #if AFTER CATA
 					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					-- #endif
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 							["isLimited"] = true,
@@ -2711,13 +2716,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
-						["description"] = "Found within the Hall of Legends.",
-					-- #elseif BEFORE CATA
-						["coord"] = { 40.6, 69.5, ORGRIMMAR },
-					-- #else
-						["coord"] = { 37.8, 72.1, ORGRIMMAR },
-					-- #endif
+					["description"] = "Found within the Hall of Legends.",
 					["maps"] = { ORGRIMMAR },
+					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.8, 72.1, ORGRIMMAR },
+						-- #else
+						{ 40.6, 69.5, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18607),	-- Horde Battle Standard
@@ -2861,23 +2869,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 					},
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
 					["coord"] = { 41.0, 79.4, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							159,	-- Refreshing Spring Water
-							30817,	-- Simple Flour
-							2678,	-- Mild Spices
-						},
-					},
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -3259,6 +3260,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_1_0 },
 					["races"] = HORDE_ONLY,
 				})),
+				n(95057, {	-- Illidari Darkdealer
+					["coord"] = { 53.0, 56.5, ORGRIMMAR },
+					["timeline"] = { ADDED_7_0_3 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(129096),	-- Battle-Mender's Dressing
+						i(124069),	-- Felstone
+						i(128805),	-- Potion of Fel Protection
+					},
+				}),
 				n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 					["coord"] = { 48.6, 71.4, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
@@ -3423,18 +3434,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{ "select","itemID",
-							6217,	-- Copper Rod
-							4470,	-- Simple Wood
-							11291,	-- Star Wood
-							10938,	-- Lesser Magic Essence
-							10940,	-- Strange Dust
 							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 							20752,	-- Formula: Minor Mana Oil (RECIPE!)
 							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 							-- #if BEFORE CATA
 							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							-- #else
-							38682,	-- Enchanting Vellum
 							-- #endif
 							22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
@@ -3476,7 +3480,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					["groups"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
@@ -4503,11 +4506,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
-					-- #if BEFORE WRATH
+						-- #if BEFORE WRATH
 						["description"] = "Found within the Hall of Legends.",
-					-- #else
+						-- #else
 						["coord"] = { 41.8, 72.6, ORGRIMMAR },
-					-- #endif
+						-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
 						i(29466, {	-- Black War Kodo (MOUNT!)
@@ -4863,11 +4866,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(FISHING_SUPPLIES, {
+					["groups"] = {
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					}),
+					},
 				}),
 				n(49737, {	-- Shazdar <Sous Chef>
 					["coord"] = { 56.8, 62.6, ORGRIMMAR },
@@ -4932,19 +4935,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							5956,	-- Blacksmith Hammer
-							4400,	-- Heavy Stock
-							4399,	-- Wooden Stock
-							-- #if AFTER CATA
-							39684,	-- Hair Trigger
-							40533,	-- Walnut Stock
-							-- #endif
-						},
-					},
 					["groups"] = {
-						i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
 						i(18647, {	-- Schematic: Red Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -4964,7 +4955,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
 							["isLimited"] = true,
 						}),
-						i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
 					},
 				}),
 				n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
@@ -5009,13 +4999,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.6, 61.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{ "select","itemID",
-							159,	-- Refreshing Spring Water
-							30817,	-- Simple Flour
-							2678,	-- Mild Spices
-						},
-					},
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -5030,18 +5013,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						-- #if AFTER CATA
-						{"sub", "common_recipes_vendor", 46359},	-- Punra <Blacksmithing Supplies>
-						-- #endif
-						{ "select","itemID",
-							2880,	-- Weak Flux
-							3466,	-- Strong Flux
-							18567,	-- Elemental Flux
-							3857,	-- Coal
-							5956,	-- Blacksmith Hammer
-						},
-					},
+					-- #if AFTER CATA
+					["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
+					-- #endif
 					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
@@ -5057,11 +5031,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {
+					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(7005),	-- Skinning Knife
 					}),
 				}),
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
@@ -5580,10 +5553,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					}),
+					},
 				}),
 				n(3405, {	-- Zeal'aya <Herbalism Supplies>
 					["coord"] = { 55.0, 39.6, ORGRIMMAR },

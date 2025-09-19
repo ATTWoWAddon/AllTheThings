@@ -5139,6 +5139,69 @@
 60908@@@Realm First! Grand Empress Shek'zeer (10 player)
 60909@@@Realm First! Sha of Fear (10 player)
 60910@@@Realm First! Ra-den (10 player)
+5.5.1.62856
+418@@@Merciless Gladiator: Season 2
+419@@@Vengeful Gladiator: Season 3
+420@@@Brutal Gladiator: Season 4
+3336@@@Deadly Gladiator: Season 5
+3436@@@Furious Gladiator: Season 6
+3758@@@Relentless Gladiator: Season 7
+4599@@@Wrathful Gladiator: Season 8
+6002@@@Vicious Gladiator: Season 9
+6124@@@Ruthless Gladiator: Season 10
+6938@@@Cataclysmic Gladiator: Season 11
+8214@@@Malevolent Gladiator: Season 12
+8791@@@Tyrannical Gladiator: Season 13
+15018@@@Infernal Gladiator: Season 1
+61096@@@Gladiator: Season 13
+61097@@@Duelist: Season 13
+61098@@@Challenger: Season 13
+61099@@@Rival: Season 13
+61350@@@Skirmisher: Season 12
+61351@@@Skirmisher: Season 13
+61352@@@Skirmisher: Season 14
+61353@@@Skirmisher: Season 15
+61354@@@Malevolent Skirmisher: Season 12
+61355@@@Tyrannical Skirmisher: Season 13
+61356@@@Grievous Skirmisher: Season 14
+61357@@@Prideful Skirmisher: Season 15
+61358@@@Marauder: Season 12
+61359@@@Marauder: Season 13
+61360@@@Marauder: Season 14
+61361@@@Marauder: Season 15
+61362@@@Malevolent Marauder: Season 12
+61363@@@Tyrannical Marauder: Season 13
+61364@@@Grievous Marauder: Season 14
+61365@@@Prideful Marauder: Season 15
+5.5.1.63014
+8214@@@Malevolent Gladiator: Season 12 (3v3)
+8643@@@Grievous Gladiator: Season 14 (3v3)
+8644@@@Gladiator: Season 14 (3v3)
+8666@@@Prideful Gladiator: Season 15 (3v3)
+8667@@@Gladiator: Season 15 (3v3)
+8791@@@Tyrannical Gladiator: Season 13 (3v3)
+42765@@@Gladiator: Season 12 (3v3)
+61096@@@Gladiator: Season 13 (3v3)
+61350@@@Gladiator: Season 12 (2v2)
+61351@@@Gladiator: Season 13 (2v2)
+61352@@@Gladiator: Season 14 (2v2)
+61353@@@Gladiator: Season 15 (2v2)
+61354@@@Malevolent Gladiator: Season 12 (2v2)
+61355@@@Tyrannical Gladiator: Season 13 (2v2)
+61356@@@Grievous Gladiator: Season 14 (2v2)
+61357@@@Prideful Gladiator: Season 15 (2v2)
+61358@@@Gladiator: Season 12 (5v5)
+61359@@@Gladiator: Season 13 (5v5)
+61360@@@Gladiator: Season 14 (5v5)
+61361@@@Gladiator: Season 15 (5v5)
+61362@@@Malevolent Gladiator: Season 12 (5v5)
+61363@@@Tyrannical Gladiator: Season 13 (5v5)
+61364@@@Grievous Gladiator: Season 14 (5v5)
+61365@@@Prideful Gladiator: Season 15 (5v5)
+61415@@@Undisputed Gladiator: Season 12
+61416@@@Undisputed Gladiator: Season 13
+61417@@@Undisputed Gladiator: Season 14
+61418@@@Undisputed Gladiator: Season 15
 6.0.1.18179
 8394@@@The Frostwind Slayer
 8463@@@Mythic: Immerseus
@@ -15390,6 +15453,8 @@
 40888@@@Heroic: Awakened Storms (DNT) (Character specific hidden copy)
 40892@@@Heroic: Awakened Shadows (DNT) (Character specific copy)
 40893@@@Heroic: Awakened Flames (DNT) (Character specific hidden copy)
+11.0.0.55939
+15558@@@Survey Bot
 11.0.2.55399
 40764@@@Powers from Strange Disturbances obtained
 40836@@@Assembly of the Deeps
@@ -15908,7 +15973,6 @@
 11.1.0.59888
 42116@@@Let Me Solo Him: The Underpin (copy)
 11.1.0.60037
-15558@@@Survey Bot
 11.1.5.59571
 41237@@@Visions - Trait Power 1
 41238@@@Visions - Trait Power 2
@@ -16353,6 +16417,17 @@
 11.2.0.62049
 61092@@@Hard Mode: Tazavesh, the Veiled Market
 61093@@@Flawless Transaction
+11.2.0.62610
+42676@@@Buddy System X
+61342@@@Buddy System IX
+61343@@@Hotfix 99733 Tracking
+11.2.0.62706
+61347@@@<Hidden> Base 12.0 Tender [DNT]
+61348@@@<Hidden> Heroic 12.0 Tender [DNT]
+61349@@@<Hidden> Epic 12.0 Tender [DNT]
+11.2.0.62801
+61401@@@Heroic Edition: Lightwing Dragonhawk
+61402@@@Epic Edition: Voidlight Surger
 11.2.5.62554
 42301@@@Timerunner
 42312@@@Artifact, Remixed
@@ -16459,7 +16534,6 @@
 42673@@@Defending the Broken Isles I
 42674@@@Broken Isles World Quests V
 42675@@@Defending the Broken Isles III
-42676@@@Buddy System X
 42684@@@Timerunner: Warrior
 42685@@@Timerunner: Death Knight
 42686@@@Timerunner: Shaman
@@ -16640,5 +16714,7 @@
 61325@@@<Hidden>[DNT] Jewelry Equipped
 61337@@@To Fel and Back
 61338@@@Bronze gained across Warband
-61342@@@Buddy System IX
-61343@@@Hotfix 99733 Tracking
+11.2.5.62785
+61406@@@WoW's 21st Anniversary
+11.2.5.62940
+61339@@@Putting the Finite in Infinite

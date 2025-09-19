@@ -5,5 +5,6 @@ ARMOR_ENCHANTMENTS = createHeader({
 		en = "Armor Enchantments",	-- select(1,C_TradeSkillUI.GetCategoryInfo(657))
 		es = "Encantamientos de armadura",
 		mx = "Encantamientos de armadura",
+		ru = "Наложение чар на броню",
 	},
 });

@@ -3,19 +3,9 @@
 -----------------------------------------------------
 local BRONZE = 2778;
 local BONES_OF_MANNOROTH = 224461;
-INFINITE_BAZARR = createHeader({
-	readable = "Infinite Bazaar",
-	icon = 298656,
-	text = {
-		en = "Infinite Bazaar",
-		tw = "無限市集",
-	},
-	description = {
-		en = "The Infinite Bazaar has multiple locations.",
-	},
-});
+
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-	n(INFINITE_BAZARR, {
+	n(INFINITE_BAZAAR, {
 		["coords"] = {
 		--[[	-- Accurate, but its 100 Ensembles per Zone in the Minilist
 			{ 42.8, 27.5, THE_JADE_FOREST },
@@ -823,9 +813,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					iensemble(215281, { -- Ensemble: Trailseeker's Laminar Armor (White)
 						["cost"] = {{"c", BRONZE, 750}},
-						-- currently inaccurate in Wago, but hotfixed from Blizzard
-						-- learning either 215279 or this ensemble seems to grant both 3407 & 3409
-						["tmogSetID"] = 3409,
 					}),
 				}),
 				filter(PLATE, {

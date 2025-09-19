@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(SIREN_ISLE, {
 		n(QUESTS, {
 			n(BONUS_OBJECTIVES, {
@@ -433,9 +433,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(SIREN_ISLE, {
 			n(QUESTS, {
@@ -456,8 +456,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(85070),	-- when Special Assigment npc unlocked for storm phase (pop talking head)
 				-- Snapdragon timer after quest
 				q(86566),	-- [DNT] Snapdragon Progress Update (spellID 1214684)
-				-- Treasure
-				q(85714, {["isWeekly"]=true,}),	-- Solving puzzle to unlock Rune-Sealed Coffer
 				-- Another unlock for vendor (snapdragon treats)
 				-- ^ moved into CharacterItemDB instead
 				-- color changes questID (otherwise it will block 100% for zone)
@@ -494,4 +492,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}));

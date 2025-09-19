@@ -2985,7 +2985,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(32357, {	-- Old Crystalbark
-						["coord"] = { 33.8, 30.8, BOREAN_TUNDRA },
+						["coords"] = {
+							{ 21.0, 30.0, BOREAN_TUNDRA },
+							{ 23.0, 27.0, BOREAN_TUNDRA },
+							{ 33.8, 30.8, BOREAN_TUNDRA },
+						},
 						["groups"] = {
 							i(44649),	-- Crystalbark's Toenail
 						},
@@ -3027,39 +3031,19 @@ root(ROOTS.Zones, {
 					}),
 					n(27012, {	-- Beem Goldsprocket <Trade Goods>
 						["coord"] = { 57.7, 72.32, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY,
 						["sym"] = {
 							{ "select","itemID",
 								38426,	-- Eternium Thread
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								40411,	-- Enchanted Vial
-								18256,	-- Imbued Vial
-								-- #endif
-								-- Danny Donkey: The following got added at an unknown point between MoP and TWW.
-								-- #if NOT ANYCLASSIC
-								52188,	-- Jeweler's Setting
-								20815,	-- Jeweler's Toolset/-Kit
-								-- #endif
 							},
 						},
 					}),
 					n(26941, {	-- Brokkan Bear-Arms <Trade Goods>
 						["coord"] = { 41.34, 34.61, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY,
 						["sym"] = {
 							{ "select","itemID",
 								38426,	-- Eternium Thread
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								40411,	-- Enchanted Vial
-								18256,	-- Imbued Vial
-								-- #endif
-								-- Danny Donkey: The following got added at an unknown point between MoP and TWW.
-								-- #if NOT ANYCLASSIC
-								52188,	-- Jeweler's Setting
-								20815,	-- Jeweler's Toolset/-Kit
-								-- #endif
 							},
 						},
 					}),
@@ -3106,31 +3090,10 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
-						["sym"] = {
-							{ "select","itemID",
-								38682,	-- Enchanting Vellum
-								-- #if AFTER BFA
-								6217,	-- Copper Rod
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								-- #endif
-							},
-						},
 					}),
 					-- #endif
 					n(27142, {	-- Librarian Jeffers <Jewelcrafting Supplies>
 						["coord"] = { 46.26, 32.84, BOREAN_TUNDRA },
-						["sym"] = {
-							{ "select","itemID",
-							-- #if AFTER CATA
-							52188,	-- Jeweler's Setting
-							-- #endif
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
 					}),
 					n(27139, {	-- Librarian Whitley <Wands>
 						["coord"] = { 46.4, 32.6, BOREAN_TUNDRA },

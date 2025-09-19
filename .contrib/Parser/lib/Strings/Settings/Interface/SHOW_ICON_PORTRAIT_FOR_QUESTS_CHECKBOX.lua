@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Для заданий",
 		-- TODO: ko = "",
 		cn = "对任务",
 		tw = "對任務",

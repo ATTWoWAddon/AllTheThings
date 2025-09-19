@@ -62,34 +62,6 @@ CLASSIC_COOKING = {
 	r(3399, {["timeline"] = {ADDED_4_0_3}}),	-- Tasty Lion Steak
 	r(93741, {["timeline"] = {ADDED_4_0_3}}),	-- Venison Jerky
 };
-VANILLA_COOKING_SUPPLIES = sharedData({
-	["description"] = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
-	["providers"] = {
-		{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>
-		{ "n", 5483},	-- Erika Tate <Cooking Supplies> [TBC+] / <Cooking Supplier>
-		{ "n", 4223},	-- Fyldan <Cooking Supplies> [TBC+] / <Cooking Supplier>
-		{ "n", 3027},	-- Naal Mistrunner <Cooking Supplies>
-		{ "n", 4553},	-- Ronald Burch <Cooking Supplies> [TBC+] / <Cooking Supplier>
-		{ "n", 3400},	-- Xen'to <Cooking Supplies>
-		-- #if AFTER TBC
-		{ "n", 16718},	-- Phea <Cooking Supplies>
-		{ "n", 16677},	-- Quelis <Cooking Supplies>
-		-- #endif
-		-- #if AFTER CATA
-		{ "n", 46708},	-- Suja <Cooking Supplies>
-		-- #endif
-		-- #if AFTER 7.3.5
-		{ "n", 133411},	-- Dalia Skyblossom <Cooking Trainer>
-		{ "n", 133261},	-- Feng Su <Cooking Trainer>
-		-- #endif
-	},
-},{
-	i(159),	-- Refreshing Spring Water
-	i(30817, {["timeline"] = { ADDED_2_0_1 }}),	-- Simple Flour
-	i(2678),	-- Mild Spices
-	i(2692, {["timeline"] = { REMOVED_3_0_2 }}),	-- Hot Spices
-	i(3713, {["timeline"] = { REMOVED_3_0_2 }}),	-- Soothing Spices
-});
 TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_1_0 } }, {
 	r(33359, {	-- Cooking (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

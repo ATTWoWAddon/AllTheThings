@@ -6,42 +6,45 @@ local BLOOD_FOR_BLOOD_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 	i(30810),	-- Sunfury Signet
 });
 -- The following recipes and gems go through a lot of changes between TBC and Cata.
-local JEWELCRAFTING_PATTERNS = {
-	i(23131),	-- Design: Bold Blood Garnet (Both)
-	-- #if BEFORE CATA
-	i(28596),	-- Design: Bright Blood Garnet [TBC] / Design: Delicate Blood Garnet [Cata+]
-	-- #endif
-	-- #if BEFORE CATA
-	i(23130),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Teardrop Blood Garnet (TBC)
-	-- #endif
-	-- #if AFTER CATA
-	i(23148),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Brilliant Golden Draenite [TBC]
-	-- #endif
-	-- #if BEFORE CATA
-	i(23148),	-- Design: Brilliant Golden Draenite [TBC] / Design: Brilliant Blood Garnet [Cata+]
-	-- #endif
-	-- #if AFTER CATA
-	i(28596),	-- Design: Delicate Blood Garnet [Cata+] / Design: Bright Blood Garnet [TBC]
-	-- #endif
-	i(23137),	-- Design: Glinting Flame Spessarite [TBC] / Design: Glinting Shadow Draenite [CATA+]
-	-- #if BEFORE CATA
-	i(23144),	-- Design: Glowing Shadow Draenite [TBC] / Design: Timeless Shadow Draenite [Cata+]
-	-- #endif
-	i(23135),	-- Design: Inscribed Flame Spessarite (Both)
-	i(23141),	-- Design: Jagged Deep Peridot (Both)
-	i(23140),	-- Design: Radiant Deep Peridot (Both)
-	i(23151),	-- Design: Rigid Azure Moonstone [Cata+] / Design: Rigid Golden Draenite [TBC]
-	i(28291),	-- Design: Smooth Golden Draenite (Both)
-	i(23152),	-- Design: Solid Azure Moonstone (Both)
-	i(23147),	-- Design: Sovereign Shadow Draenite (Both)
-	i(23153),	-- Design: Sparkling Azure Moonstone (Both)
-	-- #if AFTER CATA
-	i(23130),	-- Design: Teardrop Blood Garnet [TBC] / Design: Brilliant Blood Garnet [Cata+]
-	-- #endif
-	-- #if AFTER CATA
-	i(23144),	-- Design: Timeless Shadow Draenite [Cata+] / Design: Glowing Shadow Draenite [TBC]
-	-- #endif
-};
+-- #if BEFORE CATA
+local JEWELCRAFTING_PATTERNS = sharedData({
+		["timeline"] = { ADDED_2_0_5, REMOVED_3_0_2 },	-- Moved to Trainer
+	}, {
+	i(23131),	-- Design: Bold Blood Garnet (RECIPE!)
+	i(28596),	-- Design: Bright Blood Garnet (RECIPE!)
+	i(23148),	-- Design: Brilliant Golden Draenite (RECIPE!)
+	i(23137),	-- Design: Glinting Flame Spessarite (RECIPE!)
+	i(23144),	-- Design: Glowing Shadow Draenite (RECIPE!)
+	i(23135),	-- Design: Inscribed Flame Spessarite (RECIPE!)
+	i(23141),	-- Design: Jagged Deep Peridot (RECIPE!)
+	i(23140),	-- Design: Radiant Deep Peridot (RECIPE!)
+	i(23151),	-- Design: Rigid Golden Draenite (RECIPE!)
+	i(28291),	-- Design: Smooth Golden Draenite (RECIPE!)
+	i(23152),	-- Design: Solid Azure Moonstone (RECIPE!)
+	i(23147),	-- Design: Sovereign Shadow Draenite (RECIPE!)
+	i(23153),	-- Design: Sparkling Azure Moonstone (RECIPE!)
+	i(23130),	-- Design: Teardrop Blood Garnet (RECIPE!)
+});
+-- #else
+local JEWELCRAFTING_PATTERNS = sharedData({
+		["timeline"] = { ADDED_2_0_5, REMOVED_3_0_2 },	-- Moved to Trainer
+	}, {
+	i(23131),	-- Design: Bold Blood Garnet (RECIPE!)
+	i(23130),	-- Design: Brilliant Blood Garnet (RECIPE!)
+	i(23148),	-- Design: Brilliant Blood Garnet (RECIPE!)
+	i(28596),	-- Design: Delicate Blood Garnet (RECIPE!)
+	i(23137),	-- Design: Glinting Shadow Draenite (RECIPE!)
+	i(23135),	-- Design: Inscribed Flame Spessarite (RECIPE!)
+	i(23141),	-- Design: Jagged Deep Peridot (RECIPE!)
+	i(23140),	-- Design: Radiant Deep Peridot (RECIPE!)
+	i(23151),	-- Design: Rigid Azure Moonstone (RECIPE!)
+	i(28291),	-- Design: Smooth Golden Draenite (RECIPE!)
+	i(23152),	-- Design: Solid Azure Moonstone (RECIPE!)
+	i(23147),	-- Design: Sovereign Shadow Draenite (RECIPE!)
+	i(23153),	-- Design: Sparkling Azure Moonstone (RECIPE!)
+	i(23144),	-- Design: Timeless Shadow Draenite (RECIPE!)
+});
+-- #endif
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
 	i(28462, {	-- Bright Tourmaline (TBC) / Delicate Tourmaline (Cata+)
@@ -67,13 +70,6 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
--- #if BEFORE 3.1.0
-local FELANNIA_JOHAN_GROUPS = ENCHANTING_SUPPLIES;
--- #endif
--- #if AFTER WRATH
--- All of these were removed and the associated recipes are now available through trainers now.
-bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
--- #endif
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
@@ -360,6 +356,17 @@ root(ROOTS.Zones, {
 							{ 52.2, 36.2, HELLFIRE_PENINSULA },
 						},
 						["groups"] = TBC_HERBALISM,
+					}),
+					prof(JEWELCRAFTING, {
+						["crs"] = {
+							18774,	-- Tatiana <Jewelcrafting Trainer> (A)
+							18751,	-- Kalaen <Jewelcrafting Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.6, 63.6, HELLFIRE_PENINSULA },
+							{ 56.8, 37.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_JEWELCRAFTING,
 					}),
 					prof(LEATHERWORKING, {
 						["crs"] = {
@@ -3061,15 +3068,6 @@ root(ROOTS.Zones, {
 					n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
 						["coord"] = { 53.8, 65.8, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								18256,	-- Imbued Vial
-								-- #endif
-							},
-						},
 						["groups"] = {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
@@ -3079,15 +3077,6 @@ root(ROOTS.Zones, {
 					n(16588, {	-- Apothecary Antonivich <Alchemy Trainer>
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								18256,	-- Imbued Vial
-								-- #endif
-							},
-						},
 						["groups"] = {
 							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
 								["isLimited"] = true,
@@ -3150,21 +3139,6 @@ root(ROOTS.Zones, {
 					n(18754, {	-- Barim Spilthoof <Leatherworking Trainer>
 						["coord"] = { 56.2, 38.6, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								2325,	-- Black Dye
-								6260,	-- Blue Dye
-								2605,	-- Green Dye
-								4340,	-- Grey Dye
-								4342,	-- Purple Dye
-								2604,	-- Red Dye
-								2320,	-- Coarse Thread
-								2321,	-- Fine Thread
-								4291,	-- Silken Thread
-								8343,	-- Heavy Silken Thread
-								14341,	-- Rune Thread
-							},
-						},
 					}),
 					n(18988, {	-- Baxter <Chef>
 						["coord"] = { 56.8, 37.4, HELLFIRE_PENINSULA },
@@ -3179,21 +3153,6 @@ root(ROOTS.Zones, {
 					n(18771, {	-- Brumman <Leatherworking Trainer>
 						["coord"] = { 54.0, 64.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								2325,	-- Black Dye
-								6260,	-- Blue Dye
-								2605,	-- Green Dye
-								4340,	-- Grey Dye
-								4342,	-- Purple Dye
-								2604,	-- Red Dye
-								2320,	-- Coarse Thread
-								2321,	-- Fine Thread
-								4291,	-- Silken Thread
-								8343,	-- Heavy Silken Thread
-								14341,	-- Rune Thread
-							},
-						},
 					}),
 					n(18990, {	-- Burko <Medic>
 						["coord"] = { 22.4, 39.4, HELLFIRE_PENINSULA },
@@ -3214,25 +3173,6 @@ root(ROOTS.Zones, {
 					n(18749, {	-- Dalinna <Tailoring Trainer>
 						["coord"] = { 56.6, 37.2, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								2324,	-- Bleach
-								6261,	-- Orange Dye
-								10290,	-- Pink Dye
-								4341,	-- Yellow Dye
-								2325,	-- Black Dye
-								6260,	-- Blue Dye
-								2605,	-- Green Dye
-								4340,	-- Grey Dye
-								4342,	-- Purple Dye
-								2604,	-- Red Dye
-								2320,	-- Coarse Thread
-								2321,	-- Fine Thread
-								4291,	-- Silken Thread
-								8343,	-- Heavy Silken Thread
-								14341,	-- Rune Thread
-							},
-						},
 					}),
 					n(18997, {	-- Fallesh Sunfallow <Weapon Merchant>
 						["coord"] = { 26.4, 60.2, HELLFIRE_PENINSULA },
@@ -3254,24 +3194,6 @@ root(ROOTS.Zones, {
 					n(18753, {	-- Felannia <Enchanting Trainer>
 						["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						-- #if AFTER 3.1.0
-						["sym"] = {
-							{ "select","itemID",
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								-- #if AFTER CATA
-								38682,	-- Enchanting Vellum
-								-- #endif
-								-- #if AFTER BFA
-								6217,	-- Copper Rod
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								-- #endif
-							},
-						},
-						-- #else
-						["groups"] = FELANNIA_JOHAN_GROUPS,
-						-- #endif
 					}),
 					n(16602, {	-- Floyd Pinkus <Innkeeper>
 						["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
@@ -3323,25 +3245,6 @@ root(ROOTS.Zones, {
 					n(18772, {	-- Hama <Tailoring Trainer>
 						["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {
-							{ "select","itemID",
-								2324,	-- Bleach
-								6261,	-- Orange Dye
-								10290,	-- Pink Dye
-								4341,	-- Yellow Dye
-								2325,	-- Black Dye
-								6260,	-- Blue Dye
-								2605,	-- Green Dye
-								4340,	-- Grey Dye
-								4342,	-- Purple Dye
-								2604,	-- Red Dye
-								2320,	-- Coarse Thread
-								2321,	-- Fine Thread
-								4291,	-- Silken Thread
-								8343,	-- Heavy Silken Thread
-								14341,	-- Rune Thread
-							},
-						},
 					}),
 					-- #if AFTER WRATH
 					n(30734, {	-- Jezebel Bican <Inscription Supplies>
@@ -3360,48 +3263,11 @@ root(ROOTS.Zones, {
 					n(18773, {	-- Johan Barnes <Enchanting Trainer>
 						["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER 3.1.0
-						["sym"] = {
-							{ "select","itemID",
-								4470,	-- Simple Wood
-								11291,	-- Star Wood
-								-- #if AFTER CATA
-								38682,	-- Enchanting Vellum
-								-- #endif
-								-- #if AFTER BFA
-								6217,	-- Copper Rod
-								10938,	-- Lesser Magic Essence
-								10940,	-- Strange Dust
-								-- #endif
-							},
-						},
-						-- #else
-						["groups"] = FELANNIA_JOHAN_GROUPS,
-						-- #endif
 					}),
 					n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 						["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						-- #if AFTER 3.1.0
-						["sym"] = {
-							{ "select","itemID",
-							-- #if AFTER CATA
-							52188,	-- Jeweler's Setting
-							-- #endif
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
-						-- #endif
-						["groups"] = appendGroups(
-							JEWELCRAFTING_PATTERNS,
-							-- #if BEFORE 3.1.0
-							JEWELCRAFTING_SUPPLIES,
-							-- #endif
-							{}
-						),
+						["groups"] = JEWELCRAFTING_PATTERNS,
 					}),
 					-- #if AFTER WRATH
 					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
@@ -3630,26 +3496,7 @@ root(ROOTS.Zones, {
 					n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 						["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER 3.1.0
-						["sym"] = {
-							{ "select","itemID",
-							-- #if AFTER CATA
-							52188,	-- Jeweler's Setting
-							-- #endif
-							20815,	-- Jeweler's Toolset/-Kit
-							-- #if BEFORE MOP
-							20824,	-- Simple Grinder
-							-- #endif
-							},
-						},
-						-- #endif
-						["groups"] = appendGroups(
-							JEWELCRAFTING_PATTERNS,
-							-- #if BEFORE 3.1.0
-							JEWELCRAFTING_SUPPLIES,
-							-- #endif
-							{}
-						),
+						["groups"] = JEWELCRAFTING_PATTERNS
 					}),
 					n(19004, {	-- Vodesiin <Reagents>
 						["coord"] = { 24.4, 38.8, HELLFIRE_PENINSULA },

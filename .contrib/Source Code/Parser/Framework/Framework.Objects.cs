@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace ATT
 {
@@ -1052,12 +1053,72 @@ namespace ATT
             /// <param name="directory">The directory to file the debug files to.</param>
             public static void Export(string directory)
             {
-                var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
+                var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers, StringComparer.InvariantCulture);
+                var builder = new StringBuilder("<Ui xmlns=\"http://www.blizzard.com/wow/ui/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.blizzard.com/wow/ui/..\\FrameXML\\UI.xsd\">");
+                var categoryFolder = Path.Combine(directory, "Categories");
+                if (Directory.Exists(categoryFolder)) Directory.Delete(categoryFolder, true);
+                Directory.CreateDirectory(categoryFolder);
 
-                var filename = Path.Combine(directory, "Categories.lua");
-                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString();
-                if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                WriteIfDifferent(filename, content);
+                // Add the XML tags
+                foreach (var containerPair in AllContainerClones)
+                {
+                    if (containerPair.Value.Count > 0)
+                    {
+                        builder.AppendLine().Append("\t<Script file=\"Categories/").Append(containerPair.Key).Append(".lua\"/>");
+                    }
+                }
+
+                // Now write the Categories xml document.
+                builder.AppendLine().AppendLine("</Ui>");
+                WriteIfDifferent(Path.Combine(directory, "Categories.xml"), builder.ToString());
+
+                // Build all categories
+                Dictionary<string, Exporter> categoryBuilders = new Dictionary<string, Exporter>(AllContainerClones.Count);
+                AllContainerClones.AsParallel().ForAll((containerPair) =>
+                {
+                    if (containerPair.Value.Count > 0)
+                    {
+                        // Build the category file.
+                        categoryBuilders[containerPair.Key] = ATT.Export.ExportCompressedLuaCategory(containerPair.Key, containerPair.Value);
+                    }
+                });
+
+                // Simplify the structure of each Category builder
+                if (!((string[])Config["PreProcessorTags"]).Contains("NOSIMPLIFY"))
+                {
+                    var categoriesByLength = categoryBuilders.OrderByDescending(b => b.Value.Length).ToList();
+                    var simplifyConfig = Config["SimplifyStructures"];
+                    Action<Exporter> simplifyFunc;
+                    if (simplifyConfig.Defined)
+                    {
+                        int[] simplify = simplifyConfig;
+                        simplifyFunc = (s) => { ATT.Export.SimplifyStructureForLua(s, simplify[0], simplify[1]); };
+                    }
+                    else
+                    {
+                        simplifyFunc = (s) => { ATT.Export.SimplifyStructureForLua(s); };
+                    }
+
+                    // Perform replacements on all small StringBuilders in parallel tasks
+                    // Doing as Tasks instead of AsParallel to ensure we start execution from the longest to the shortest Exporters
+                    Task[] replacementTasks = new Task[categoriesByLength.Count];
+                    for (int i = 0; i < categoriesByLength.Count; i++)
+                    {
+                        var s = categoriesByLength[i];
+                        //Trace.WriteLine(s.ToString(0, 10) + ":" + s.Length);
+                        replacementTasks[i] = Task.Run(() => simplifyFunc(s.Value));
+                    }
+                    Task.WaitAll(replacementTasks);
+                }
+
+                // Write the Category file for each builder
+                categoryBuilders.AsParallel().ForAll((containerPair) =>
+                {
+                    var filename = Path.Combine(categoryFolder, $"{containerPair.Key}.lua");
+                    var content = containerPair.Value.ToString();
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
+                    WriteIfDifferent(filename, content);
+                });
             }
 
             public static void ExportAutoLocale(string filename)
@@ -1309,6 +1370,7 @@ end");
                         case "isYearly":
                         case "isWorldQuest":
                         case "repeatable":
+                        case "cm":
                         case "pvp":
                         case "pb":
                         case "sr":
@@ -1474,7 +1536,7 @@ end");
 
                 if (oldList.Count == 0)
                 {
-                    Log($"int-array field: '{field}' contained no data after merge.{Environment.NewLine}{ToJSON(item)}");
+                    LogError($"int-array field: '{field}' contained no data after merge.{Environment.NewLine}{ToJSON(item)}");
                 }
             }
 
@@ -1584,6 +1646,7 @@ end");
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "cm":
                     case "pvp":
                     case "pb":
                     case "sr":
@@ -1769,6 +1832,7 @@ end");
                     case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
+                    case "nextQuests":
                     case "races":
                     case "races_disp":
                     case "maps":

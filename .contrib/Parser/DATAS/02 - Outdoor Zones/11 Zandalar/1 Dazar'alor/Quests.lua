@@ -441,6 +441,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155268),	-- Rastari Vambraces
 					i(155269),	-- Torcalin Bracers
 					i(155270),	-- Jambani Armbands
+					--
+					a(i(155051)),	-- Freebooter Bracers
+					a(i(155048)),	-- Navigator's Cuffs
+					a(i(155050)),	-- Outrigger Bracers
+					a(i(155049)),	-- Sea Raider's Bracers
 				},
 			}),
 			q(47422, {	-- Dire Situation

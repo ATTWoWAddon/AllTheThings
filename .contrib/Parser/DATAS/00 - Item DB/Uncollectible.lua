@@ -115,12 +115,8 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
-i(43352);	-- Pet Grooming Kit
 i(33448);	-- Runic Mana Potion
 i(165699);	-- Scarlet Herring Lure
-i(141016);	-- Scroll of Town Portal: Faronaar
-i(141015);	-- Scroll of Town Portal: Kal'delar
-i(141013);	-- Scroll of Town Portal: Shala'nir
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
 i(118905);	-- Sinister Spores
@@ -142,21 +138,6 @@ i(169325);	-- Petrified Ebony Scale
 i(160983);	-- Recruitment Orders
 i(17224);	-- Scrying Scope
 i(17364);	-- Scrying Scope
-i(146906);	-- Sentinax Beacon of Carnage
-i(146912);	-- Sentinax Beacon of Greater Carnage
-i(146903);	-- Sentinax Beacon of Domination
-i(146908);	-- Sentinax Beacon of Engineering
-i(146922);	-- Sentinax Beacon of Fel Growth
-i(146914);	-- Sentinax Beacon of Greater Engineering
-i(146910);	-- Sentinax Beacon of Greater Domination
-i(146915);	-- Sentinax Beacon of Greater Torment
-i(146913);	-- Sentinax Beacon of Greater Warbeasts
-i(146923);	-- Sentinax Beacon of Petrification
-i(146909);	-- Sentinax Beacon of Torment
-i(146907);	-- Sentinax Beacon of Warbeasts
-i(147355);	-- Sentinax Beacon of the Bloodstrike
-i(146905);	-- Sentinax Beacon of the Firestorm
-i(146911);	-- Sentinax Beacon of the Greater Firestorm
 i(118377);	-- Universal Language Module
 i(139400);	-- [Ancient Magic and How to Wield It Without Destroying the World]
 i(139401);	-- [The Fate of Aegwynn]
@@ -185,6 +166,7 @@ i(163826);	-- Raider's Supply Cache
 -- Bfa Quest Items
 i(169473);	-- Dormant Scale of the Blue Aspect
 -- Grey
+i(158873);	-- Crystalline Honeymead
 i(158931);	-- Shiny Object
 i(159621);	-- Personal Anchor
 i(162126);	-- River Clam Meat
@@ -269,9 +251,14 @@ i(4361);	-- Copper Tube
 -----------------
 -- PATCH 7.0.3 --
 -----------------
+i(130268);	-- Bone Toothpick
+i(130261);	-- Brutarg's Sword
+i(130267);	-- Extinguished Demon Stone
+i(130264);	-- Fel-Stained Claw
 i(132184);	-- Intact Shimmering Scale
 i(132183);	-- Razor Tooth
 i(123865);	-- Relic of Ursol
+i(130265);	-- Sharpened Canine
 
 -----------------
 -- PATCH 7.3.5 --
@@ -304,6 +291,7 @@ i(156624);	-- Blemished Pearl
 i(158820);	-- Blind-Worm Sting
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
+i(163516);	-- Blue Glowing Puffer
 i(158750);	-- Bonebreaker Beak
 i(158853);	-- Bony Skullplate
 i(158851);	-- Bottled Squall
@@ -321,12 +309,12 @@ i(155607);	-- D.E.H.T.A. Membership Card
 i(155841);	-- Defaced Statuette
 i(155608);	-- Defiled Bone
 i(163580);	-- Delicate Cathedral of Light Replica
+i(162664);	-- Dented Cuirass
 i(159756);	-- Depleted Azerite
 i(158792);	-- Digestive Acid
 i(155618);	-- Discarded Molting
 i(163587);	-- Discarded Zandalari Brooch
 i(158757);	-- Disquiet Earth
-i(163092);	-- Embroidered Falconry Hood
 i(168787);	-- Empty Birdcage
 i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
@@ -347,6 +335,7 @@ i(158795);	-- Glittering Chill
 i(163078);	-- Glittering Earring
 i(158868);	-- Golden Ornament
 i(162979);	-- Gral-Adorned Astrolabe
+i(163172);	-- Green Glowing Puffer
 i(158855);	-- Grim Skull Fetish
 i(152698);	-- Grimestone Stew
 i(158860);	-- Grindstone Molar
@@ -364,7 +353,6 @@ i(158794);	-- Ivory Tusk
 i(158830);	-- Jade Sigilstone
 i(158859);	-- Jagged Fang
 i(163321);	-- Jason's Rusty Blade
-i(163091);	-- Jeweled Spyglass
 i(163323);	-- Julie's Cracked Dish
 i(155593);	-- Keeled Breastbone
 i(162673);	-- Knotted Bowline
@@ -376,9 +364,9 @@ i(158823);	-- Malfunctioning Rocket Boots
 i(163593);	-- Map of Zandalar Trade Winds
 i(163028);	-- Masterwork Statue of the First Trolls
 i(158751);	-- Matted Pelt
-i(161201);	-- Mermaid's Looking Glass
 i(158778);	-- Mucose Tendril
 i(158866);	-- Oily Blubber
+i(163520);	-- Orange Glowing Puffer
 i(162685);	-- Overflowing Loa Tribute
 i(163848);	-- Overused Voodoo Doll
 i(158831);	-- Parched Honeycomb
@@ -389,7 +377,10 @@ i(158781);	-- Pilfered Curio
 i(155601);	-- Pointy Leg Segment
 i(163375);	-- Portrait of Commander Martens
 i(158840);	-- Prehensile Tongue
+i(163518);	-- Purple Glowing Puffer
 i(162545);	-- Razordog
+i(163517);	-- Red Glowing Puffer
+i(162666);	-- Ripped Satchel
 i(158779);	-- Robust Horn
 i(162554);	-- Rootway Papaya
 i(158756);	-- Rotary Gasket
@@ -404,14 +395,12 @@ i(162025);	-- Sermon of the High Exarch
 i(158752);	-- Severed Foot
 i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
-i(161203);	-- Shanty Sheet Music
 i(163844);	-- Shredded Alliance Emblem
 i(163843);	-- Shredded Horde Emblem
 i(152099);	-- Shriveled Onion
 i(158783);	-- Silken White Feather
 i(163846);	-- Silver Monkey Head
 i(163845);	-- Silver Statue Base
-i(161199);	-- Silver-Plated Tankard
 i(155635);	-- Sinewy Wing
 i(155620);	-- Singed Sprig of Teldrassil
 i(158788);	-- Sleek Quill
@@ -445,6 +434,7 @@ i(158834);	-- Winch Coil
 i(162672);	-- Witch Doctor's Juju Beads
 i(158870);	-- Wooly Hair
 i(158773);	-- Wriggling Goop
+i(163521);	-- Yellow Glowing Puffer
 
 -----------------
 -- PATCH 8.1.0 --
@@ -510,9 +500,13 @@ i(169988);	-- Inert Mineral Dust
 i(169129);	-- Lovingly Worn Wrench
 i(238810);	-- Mana-Blessed Fin
 i(170031);	-- Moldy Tome
-i(170096);	-- Sodden Highborne Painting
+i(168795);	-- Old Boot
+i(168796);	-- Recycled Scroll
 i(170098);	-- Rusted Girandole Earring
 i(169145);	-- Rusted Precision Gripper
+i(170001);	-- Seized Engine
+i(169143);	-- Seized Sparksaw
+i(170096);	-- Sodden Highborne Painting
 i(169135);	-- Warped Shock Absorber
 i(169998);	-- Weathered Bulwark
 i(170027);	-- Withering Seed
@@ -1368,6 +1362,7 @@ i(187500);	-- Intricately Etched Letter Opener
 i(187555);	-- Irredeemable Trash
 i(185477);	-- Irridescent Eye
 i(187213);	-- Jo's Intergalactic Cache
+i(184823);	-- Junk Mail
 i(187471);	-- Large Shardhide Tooth
 i(185481);	-- Long Fibrous Tongue
 i(185946);	-- Long Tail Dynarats
@@ -2524,6 +2519,7 @@ i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash
 i(236921);	-- Triumphant Satchel of Carved Harbinger Crests
 i(236635);	-- Uncut Semi-Smoky Quartz
+i(236651);	-- Vince's Old Left Shoe
 i(229809);	-- Weighted Metal Ball
 
 ------------------
@@ -2541,12 +2537,14 @@ i(241633);	-- Tiny Decorative Rocket
 ------------------
 i(244358);	-- "Prophecies of the Void"
 i(246584);	-- A Steamy Romance Novel: Devouring Love
+i(200282);	-- A Steamy Romance Novel: The Lusty Draconian Mage
 i(238881);	-- Barbed Predator Tusk
 i(245672);	-- Blade of the Void Swamp
 i(238834);	-- Burnished Void Claw
 i(238808);	-- Celeste-Touched Fin
 i(238874);	-- Congealed Mana
 i(246298);	-- Cracked Staff of the Desperate Defender
+i(238879);	-- Cracked Void Carapace
 i(247686);	-- Crystallized Nightshade
 i(238882);	-- Cursed Eyeball Cluster
 i(238883);	-- Dimly Glowing Scrap
@@ -2576,6 +2574,7 @@ i(238869);	-- Matted Pelt
 i(238801);	-- Mite-Kissed Silver Tooth
 i(238855);	-- Netherclaw
 i(248970);	-- Nexus-Princess Ky'veza
+i(238856);	-- Nightpiercer Feather
 i(246296);	-- Off-Balance Mace of the Tazavesh Lookout
 i(238880);	-- Oily Blubber
 i(238849);	-- Ominous Unblinking Eye

@@ -125,7 +125,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = {
 								n(DAILY_EVENT_ROLL, {
 									["questID"] = 44384,	-- "Daily Portal Event Roll" on WoWHead
-									["isBreadcrumb"] = true,
 									["isDaily"] = true,
 								}),
 								n(113513, {	-- Asher <Fury of Frostfire>

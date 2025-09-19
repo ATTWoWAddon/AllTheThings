@@ -22,11 +22,11 @@ local function GetEventTimeString(d)
 			return ("%s, %s %02d, %d at %02d:%02d"):format(
 				CALENDAR_WEEKDAY_NAMES[d.weekday],
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
-				d.monthDay, d.year, d.hour, d.minute );
+				d.monthDay or d.day, d.year, d.hour, d.minute );
 		else
 			return ("%s %02d, %d at %02d:%02d"):format(
 				CALENDAR_FULLDATE_MONTH_NAMES[d.month],
-				d.monthDay, d.year, d.hour, d.minute );
+				d.monthDay or d.day, d.year, d.hour, d.minute );
 		end
 	end
 	return "??";
@@ -465,6 +465,7 @@ end;
 events.SetEventNextSchedule = function(eventID, nextEvent)
 	NextEventSchedule[eventID] = nextEvent;
 end;
+events.GetEventTimeString = GetEventTimeString;
 events.GetTimerunningSeason = GetTimerunningSeason;
 events.GetUpcomingEventLeeway = function()
 	return UpcomingEventLeeway;

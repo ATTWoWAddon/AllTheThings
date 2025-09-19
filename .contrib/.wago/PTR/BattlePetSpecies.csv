@@ -1134,7 +1134,7 @@ Unburdened now, forever free to play.","|cFFFFD200Profession:|r Archaeology",153
 ,,1748,97826,0,132196,7,48,-1,6,7,0
 "The last thing you'll see is a streak of red.","|cFFFFD200Pet Battle: |rStormheim",1749,97840,0,133262,7,26,4,6,7,0
 "It's more cute than spooky.","|cFFFFD200Pet Battle: |rStormheim",1750,97952,0,236548,3,26,4,6,7,0
-"Like father, like son.","|cFFFFD200Drop: |rSon of Goredome|n|cFFFFD200Zone: |rStormheim",1751,98004,193279,134060,7,34,0,6,7,0
+"Like father, like son.","|cFFFFD200World Event:|r WoW Remix: Legion",1751,98004,193279,135705,7,16450,6,6,7,0
 "Oddly, he was named Crispin even before the incident.","|cFFFFD200Drop: |rTenpak Flametotem|n|cFFFFD200Zone: |rHighmountain",1752,98077,193368,133944,4,2,0,6,7,0
 "When a helsquid has devoured most of the food in any area, it can return to its polyp form and begin life anew.","|cFFFFD200Drop: |rSoulthirster|n|cFFFFD200Zone: |rHelheim",1753,98116,193434,970806,8,2,0,6,7,0
 "Dalaran's drainage is not as good as you think.","|cFFFFD200Vendor:|r Laura Malley|n|cFFFFD200Zone:|r Dalaran Sewers|n|cFFFFD200Cost:|r 250|TINTERFACE\ICONS\ACHIEVEMENT_KIRINTOR_OFFENSIVE.BLP:0|t|n",1754,98128,210677,970806,8,2,2,6,7,0
@@ -2529,7 +2529,7 @@ That price is lots and lots of cheese.","|cFFFFD200Achievement: |rThe Gift of Ch
 "A war-obsessed world turned her into a weapon... but they couldn't break her spirit.","|cFFFFD200Drop: |rTime Rifts|n|cFFFFD200Vendor: |rWarden Krizzik|n|cFFFFD200Zone: |rTyrhold Reservoir|n|cFFFFD200Cost: |r2750|Hcurrency:2594|h|TInterface\ICONS\TimelessCoin_yellow.BLP:0|t|h",4261,208637,418045,5194264,1,2,6,6,7,0
 "A lifetime of servitude to Anub'arak, then the Lich King, and now... you!","|cFFFFD200Drop: |rTime Rifts|n|cFFFFD200Vendor: |rBaron Silver|n|cFFFFD200Zone: |rTyrhold Reservoir|n|cFFFFD200Cost: |r2750|Hcurrency:2594|h|TInterface\ICONS\TimelessCoin_yellow.BLP:0|t|h",4262,208639,418050,237410,5,2,6,6,7,0
 "With a nose for secrets, Tobias is ready to be by the side of super sleuths.","|cFFFFD200Achievement:|r Community Rumor Mill|n|cFFFFD200Event:|r Secrets of Azeroth",4263,208643,418079,5279605,7,82,0,6,7,0
-"Fyrn will be the first one to show up at your birthday party and the last to leaf.",,4264,209163,419467,5003505,1,16466,-1,6,7,0
+"Fyrn will be the first one to show up at your birthday party and the last to leaf.","|cFFFFD200In-Game Shop|r",4264,209163,419467,5003505,1,16466,9,6,7,0
 "Feel the chill nipping at your toes! A menace of Azeroth, now in festive blue and travel-size!","|cFFFFD200Achievement:|r WoW's 19th Anniversary|n|cFFFFD200Category:|r Events",4265,209259,419773,5260512,1,16466,5,6,7,0
 "Though this little one's flight training has yet to be completed, their playfulness and enthusiasm are already fully grown.","|cFFFFD200Promotion:|r The War Within Epic Edition|n",4266,209681,420759,5333904,2,82,7,6,7,0
 "As heir to the Lord of Outland, Maggz has always shared his family's love of violence and power. He just happens to be even more in love with pet treats.",,4267,210058,421516,4891625,5,16466,-1,6,7,0
@@ -2794,6 +2794,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Reaching for what you thought was a pile of plunder turned out to be Sparklesnap's treasure-laden shell. After mistakenly petting his back, he now eagerly follows you.","|cFFFFD200Special Event: |rPlunderstorm",4692,233797,471479,5559622,8,16466,0,6,7,0
 "Lab leaks are sometimes dangerous. Sometimes, they're cute. Sometimes, both!","|cFFFFD200Pet Battle: |rUndermine",4693,231728,471898,3459799,5,26,4,6,7,0
 "Previous owners of the crate have reported the disappearance of other pets from their collection.","|cFFFFD200World Event:|r Winter Veil",4694,233965,471751,133202,5,16466,6,33,7,0
+"Still not quite old enough to leave the nest.","|cFFFFD200Drop: |rMalek'ta|n|cFFFFD200Zone: |rK'aresh",4838,245496,1238330,7119299,7,18,0,6,7,0
 "Parley is a rather serious and grumpy bird. If you value your eyeballs, it's best not to ask if Parley wants a cracker.","|cFFFFD200Special Event: |rPlunderstorm",4695,233967,471798,4395379,2,16466,0,6,7,0
 "People get turned into rats sometimes. It's not that weird.","|cFFFFD200Quest:|r Unsolicited Feedback|n|cFFFFD200Zone: |rUndermine",4701,234071,472194,6351952,4,2,1,6,7,0
 "Once protected by the thick forests of the isle, these smaller and less aggressive krolusks have had to rapidly adapt to their recently deforested home.","|cFFFFD200Pet Battle: |rSiren Isle",4702,234097,0,1573607,7,26,4,6,7,0
@@ -2828,6 +2829,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 ,"|cFFFFD200Pet Battle: |rUndermine",4746,237719,0,5847065,4,32802,4,6,7,0
 "For so many years Mathias Shaw had his eyes and ears gathering intelligence around Azeroth. Now at least some eyes have come home.","|cFFFFD200Treasure:|r Valeera's Corrupted Chest|n|cFFFFD200Zone:|r Vision of Stormwind (Revisited)",4747,237850,1218378,3004126,5,2,0,41,7,0
 "Stormwind's Trade District sees many goods and animals pass through its auction house. Once the parrots of Stranglethorn were an expensive luxury. Now those present when N'zoth took over are a scourge.","|cFFFFD200Treasure:|r Wyrmbane's Corrupted Chest|n|cFFFFD200Zone:|r Vision of Stormwind (Revisited)",4748,237852,1218379,2103815,2,2,0,6,7,0
+"Wherever it goes, it leaves behind a soft glow that stirs hope in even the darkest places","|cFFFFD200Promotion|r |n",4811,244145,1234588,6792419,1,2,7,6,7,0
 "A creature prized by rogues for its venom. Many lived in the many holes and warrens of the Drag, but after the fall these new horrors emerged to menace the survivors.","|cFFFFD200Treasure:|r Garona's Corrupted Chest|n|cFFFFD200Zone:|r Vision of Orgrimmar (Revisited)|n",4749,237855,1218381,132195,7,2,2,6,7,0
 "Rarely raised in captivity Tallstrider's are extremely territorial. A small clutch of eggs though was found during a hunt and the tauren trainer was coming to Orgrimmar to show them off. After the fall though they have become deadly once more and so far no one has been able to direct their corrupted forms.","|cFFFFD200Treasure:|r Geya'rah's Corrupted Chest|n|cFFFFD200Zone:|r Vision of Orgrimmar (Revisited)|n",4750,237856,1218383,132198,2,2,0,6,7,0
 "The Gallagio is well-known in Undermine for unexpectedly animating piles of valuables in unexpected places.","|cFFFFD200Drop: |rGallagio Garbage|n|cFFFFD200Zone: |rUndermine",4755,237976,1219016,237281,6,16416,0,6,7,0
@@ -2840,24 +2842,25 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "PH - Tech was made to allow customizations.","|cFFFFD200Trading Post|r",4792,240994,1226412,6642732,7,16466,11,6,7,0
 "Weechi adores attention and what better way to get attention than wearing a costume? Simply seek out a Pet Grooming Station to customize this sweet, wonderous little buddy.","|cFFFFD200Trading Post|r",4793,241150,1226743,6642732,7,82,11,6,7,0
 "Given his boisterous behavior, we can only assume that he became imbued with the void from starting a fight. The question remains; who won?","|cFFFFD200Vendor: |rLars Bronsmaelt|n|cFFFFD200Zone: |rHallowfall|n|cFFFFD200Cost: |r6500|Hcurrency:2815|h|TInterface\ICONS\SPELL_AZERITE_ESSENCE14.BLP:0|t|h",4794,241297,1226942,5648283,7,18,2,6,7,0
+"Most felstalkers are fiercesome and ravenous. This one, however, seems to be feeling a bit lonely.","|cFFFFD200World Event:|r WoW Remix: Legion",4801,242176,1229381,6918291,4,16466,6,6,7,0
+"Known to take a bite out of his owner. Pet cautiously.","|cFFFFD200World Event:|r WoW Remix: Legion",4802,242180,1229382,6918290,4,16466,6,6,7,0
 "Cub of Blazeclaw and valiant courier of Flame's Radiance. Swiftpaw serves the Sacred Flame more ferociously than some Arathi do.","|cFFFFD200Vendor: |rLars Bronsmaelt|n|cFFFFD200Zone: |rHallowfall|n|cFFFFD200Cost: |r6500|Hcurrency:2815|h|TInterface\ICONS\SPELL_AZERITE_ESSENCE14.BLP:0|t|h",4804,242652,1231110,5648285,7,18,2,6,7,0
 "Now this is one, spicy, mean, ball.","|cFFFFD200Promotion:|r Dastardly Duos",4806,241346,1227066,6851837,9,16466,7,6,7,0
-"Ix'Thal enjoys hide-and-seek when not contemplating the slow devouring of entire worlds by the Void.","|cFFFFD200Zone:|r K'aresh",4813,244263,1234822,7119297,5,18,0,6,7,0
-,,4824,245204,1237372,6159152,4,2,-1,6,7,0
+"Ixthal enjoys hide-and-seek when not contemplating the slow devouring of entire worlds by the Void.","|cFFFFD200Zone:|r K'aresh",4813,244263,1234822,7119297,5,18,0,6,7,0
+,,4824,245204,1237372,6159152,4,16418,-1,6,7,0
 "This baby thorntail's favorite activity is splashing in small puddles.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4825,245215,1237377,6159151,4,2,0,6,7,0
 "This little thorntail just loves to get into scraps and scrapes with its greatest foe: lapbugs.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4826,245217,1237379,6159150,4,2,0,6,7,0
 "Early attempts to integrate with the ecosystem resulted in multiple specimens being eyeblasted.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4827,245474,1238270,7119296,5,2,0,6,7,0
 "This watcher's ennui is as eternal as the struggle between the Light and the Void.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4828,245475,1238271,7119296,5,2,0,6,7,0
 "It waits and watches from the shadows. Softly. Softly.","|cFFFFD200Vendor: |rShad'anis|n|cFFFFD200Zone: |rK'aresh|n|cFFFFD200Cost: |r4|Hcurrency:3303|h|TInterface\ICONS\INV_Misc_Coin_08.blp:0|t|h",4829,245476,1238272,7119389,5,18,2,6,7,0
-,,4830,245477,1238273,7119297,5,2,-1,6,7,0
+,,4830,245477,1238273,7119297,5,16418,-1,6,7,0
 "While not viewed as insightful enough to be a Watcher just yet, he's on the lookout for others to share his vision with.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r13|n|cFFFFD200Location: |rShadow Point",4832,245479,1238275,7119298,5,2,1,6,7,0
 "Siphonmites generally feed on the energies of dying worlds, but this one is perfectly content with getting some scritches from researchers instead.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4833,245480,1238282,6841595,7,2,0,6,7,0
 "Jimmy's actual name is Morgilito, Spawn of Morgil, Chosen Enemy of Tazavesh, Devourer of K'aresh...but everyone just calls him Jimmy.","|cFFFFD200Drop: |rMorgil the Netherspawn|n|cFFFFD200Zone: |rK'aresh",4834,245481,1238283,6841594,7,18,0,6,7,0
 "How this siphonmite snuck its way into a stasis container is anyone's guess.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4835,245482,1238284,6841593,7,2,0,6,7,0
 "Who knew these things could eat so much?","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4836,245494,1238328,7119390,7,2,0,6,7,0
 ,"
-",4837,245495,1238329,7119302,7,2,9,6,7,0
-"Still not quite old enough to leave the nest.","|cFFFFD200Drop: |rMalek'ta|n|cFFFFD200Zone: |rK'aresh",4838,245496,1238330,7119299,7,18,0,6,7,0
+",4837,245495,1238329,7119302,7,16418,9,6,7,0
 "Projections showed a less than one percent chance of successful integration, but this one is too cute to eliminate.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4839,245497,1238331,7119300,7,2,0,6,7,0
 "Efforts to rewire the more desctructive tendencies of the species left this specimen more docile than most, but it was still not a successful endeavor.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4840,245498,1238332,6328733,2,2,0,6,7,0
 "Seeks out the light of the stars. Even in the daytime.","|cFFFFD200Achievement: |rBounty Seeker
@@ -2879,6 +2882,16 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Zo'ya is cunning and beautiful, both highly desirable traits among purrkins. Despite being the culprit behind many mishaps, her warm glow ensures she is forgiven for any transgression.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r8|n|cFFFFD200Location: |rShadow Point",4859,247463,1243337,3742946,7,2,1,6,7,0
 "While purrkin have a knack for getting lost, none have ever been so talented as this one. Purrfectly unbothered however, this curious creature can thrive in any situation.","|cFFFFD200Source: |r???
 |cFFFFD200Zone: |rTazavesh, the Veiled Market",4860,247465,1243343,3742947,7,2,-1,6,7,0
+"If you have a fish odds are Lil' Chompers will be nearby.","|cFFFFD200Trading Post|r",4895,251804,1254162,7277076,8,16466,11,6,7,0
+"Slippery Saul loves to slide around the ground or the sea looking for fish.","|cFFFFD200Trading Post|r",4896,251817,1254201,7277076,8,16466,11,6,7,0
+"You can never have too many fish according to May.","|cFFFFD200Trading Post|r",4897,251819,1254207,7277052,8,16466,11,6,7,0
+"Frozen fish are Keiths favorite treat. If you've got frozen fish, you've got a new best friend.","|cFFFFD200Trading Post|r",4898,251820,1254208,7277052,8,16466,11,6,7,0
+"Winter festivities seem to follow Eve wherever she goes.","|cFFFFD200Trading Post|r",4899,251821,1254212,7277045,8,16466,11,6,7,0
+"Once native to the northern regions of the Eastern Kingdoms, this species of seal is now only common in Northrend after being hunted for food and leather during the Second War.","|cFFFFD200Trading Post|r",4900,251822,1254213,7277045,8,16466,11,6,7,0
+"This young fledgeling is ready and eager to begin training.","|cFFFFD200World Event:|r WoW Remix: Legion",4901,251889,1254381,7197225,2,16466,6,6,7,0
+"No one knows how Lil' Coalee got his name. Was it his black heart? Was it his love for a warm fire? Was it simply that one of his parents were Big Coalee. Asking him yields no answers, only rage.","|cFFFFD200Promotion|r ",4907,254356,1261676,4891621,5,16466,9,6,7,0
+"Lil' Ashlee quietly bides her time waiting for a power vacuum. Once in power Lil' Ashlee will bring fun, merriment and fire to all!","|cFFFFD200Promotion|r ",4908,254359,1261687,4891622,5,16466,9,6,7,0
 "According to Tol'vir beliefs, a crocolisk nest that hatches during the Festival of the Sun is said to be blessed by the river guardian, Sa'bak.",|cFFFFD200Promotion|r,4796,241416,1227251,6694821,8,16466,7,6,7,0
+"It glides through the air with shadowy wings and a trail of eerie whispers.","|cFFFFD200Promotion|r ",4812,244146,1234591,6792054,1,2,7,6,7,0
 "Like most young meeksi, Liu has a penchant for finding both trouble and adventure. Unlike other meeksi, Liu can teleport across great distances in search of both.","|cFFFFD200In-Game Shop|r",4717,234439,473300,6310496,0,16466,7,6,7,0
 "The name 'Beepbop' followed by the words 'Made by Threadis' are roughly but lovingly scratched into the bottom plate on this tiny nerubian-crafted bot.","|cFFFFD200World Event:|r Children's Week",3245,185425,367189,4235634,9,2,6,6,7,0

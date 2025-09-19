@@ -4852,7 +4852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 92.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["groups"] = { i(12886), },	-- Pamela's Doll's Head (QI!)
+					["groups"] = { i(12886) },	-- Pamela's Doll's Head (QI!)
 				}),
 				o(176142, {	-- Pamela's Doll's Left Side
 					["sourceQuests"] = {
@@ -4873,7 +4873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 92.7, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["groups"] = { i(12887), },	-- Pamela's Doll's Left Side (QI!)
+					["groups"] = { i(12887) },	-- Pamela's Doll's Left Side (QI!)
 				}),
 				o(176143, {	-- Pamela's Doll's Right Side
 					["sourceQuests"] = {
@@ -4894,7 +4894,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 90.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["groups"] = { i(12888), },	-- Pamela's Doll's Right Side (QI!)
+					["groups"] = { i(12888) },	-- Pamela's Doll's Right Side (QI!)
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226418, {	-- Rune of Holy Specialization
@@ -5010,10 +5010,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["groups"] = {
-						i(21954, {	-- Design: Ring of Bitter Shadows (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
+						applyclassicphase(TBC_PHASE_ONE, i(21954, {	-- Design: Ring of Bitter Shadows (RECIPE!)
+							["timeline"] = { ADDED_2_0_5 },
 							["isLimited"] = true,
-						}),
+						})),
 						i(15756, {	-- Pattern: Runic Leather Headband (RECIPE!)
 							["timeline"] = { REMOVED_2_3_0 },	-- Now taught by trainer, recipe removed from the game.
 							["isLimited"] = true,

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Remoting.Channels;
 
 namespace ATT.DB.Types
 {
@@ -18,6 +19,32 @@ namespace ATT.DB.Types
         public long TransmogSourceTypeEnum { get; set; }
         public long Flags { get; set; }
         public long ItemModifiedAppearanceID => ID;
+        [ExportableData("modID")]
+        public long ExpectedModID
+        {
+            get
+            {
+                switch (ID)
+                {
+                    // L
+                    case 4:
+                        return 4;
+                    // N
+                    case 0:
+                        return 0;
+                    // H
+                    case 1:
+                        return 5;
+                    // M
+                    case 3:
+                        return 6;
+
+                    default:
+                        Framework.LogDebugWarn($"Failed to determine expected ModID for ItemID {ItemID} from ItemAppearanceModifierID {ItemAppearanceModifierID}");
+                        return 0;
+                };
+            }
+        }
 
         private TransmogSourceTypeFlags _flags => (TransmogSourceTypeFlags)Flags;
 

@@ -241,96 +241,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			-- #elseif BEFORE 11.0.2
-			-- CRIEVE PROTIP: When merging, solve for the oldest content first so that the if-statements are simpler to fall through.
+			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, MixedNormalAndHeroicLootTable),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(131, {	-- General Umbriss
-					["crs"] = { 39625 },	-- General Umbriss
-					["groups"] = {
-						ach(5297),	-- Umbrage for Umbriss
-					},
-				}),
-				e(134, {	-- Erudax
-					["crs"] = { 40484 },	-- Erudax
-					["groups"] = {
-						ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
-						ach(5062),	-- Heroic: Grim Batol
-						ach(5138),	-- Heroic: Grim Batol Guild Run
-					},
-				}),
-			}),
-			-- #elseif AFTER 11.0.2
-			-- This is the header for after 11.0.2 where they re-added the timewalking list of items in TWW Season 1 for Heroic and temporary Mythic difficulty.
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["nomerge"] = true,
-				["groups"] = MixedNormalAndHeroicLootTable,
-			}),
-			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["groups"] = bubbleDownFiltered({
-					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-				},FILTERFUNC_itemID,{
-					e(131, {	-- General Umbriss
-						["crs"] = { 39625 },	-- General Umbriss
-						["groups"] = {
-							ach(5297),	-- Umbrage for Umbriss
-							i(133283),	-- Modgud's Blade
-							i(157612),	-- Dragonkin Ward
-							i(133285),	-- Wildhammer Riding Helm
-							i(133284),	-- Cursed Skardyn Vest
-							i(133354),	-- Glimmerthread Pantalons
-							i(133286),	-- Umbriss Band
-							i(133282),	-- Skardyn's Grace
-						},
-					}),
-					e(132, {	-- Forgemaster Throngus
-						["crs"] = { 40177 },	-- Forgemaster Throngus
-						["groups"] = {
-							i(157613),	-- Geomancy Slicer
-							i(133288),	-- Wand of Untainted Power
-							i(133363),	-- Troggstitched Drape
-							i(133289),	-- Belt of the Forgemaster
-							i(133290),	-- Dark Iron Chain Boots
-							i(133287),	-- Ring of Dun Algaz
-							i(133291),	-- Throngus's Finger
-						},
-					}),
-					e(133, {	-- Drahga Shadowburner
-						["crs"] = { 40319 },	-- Drahga Shadowburner
-						["groups"] = {
-							i(133296),	-- Windwalker Blade
-							i(133374),	-- Courier's Dragonriding Spaulders
-							i(133294),	-- Earthshape Pauldrons
-							i(133292),	-- Azureborne Cloak
-							i(133295),	-- Crimsonborne Bracers
-							i(157614),	-- Flame Invoker's Treads
-							i(133293),	-- Red Scale Boots
-						},
-					}),
-					e(134, {	-- Erudax
-						["crs"] = { 40484 },	-- Erudax
-						["groups"] = {
-							ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
-							ach(5062),	-- Heroic: Grim Batol
-							ach(5138),	-- Heroic: Grim Batol Guild Run
-							i(133303),	-- Staff of Siphoned Essences
-							i(133298),	-- Wild Hammer
-							i(133301),	-- Mace of Transformed Bone
-							i(133302),	-- Crown of Enfeebled Bodies
-							i(133297),	-- Vest of Misshapen Hides
-							i(133306),	-- Bracers of Umbral Mending
-							i(157615),	-- Flamescale Chain Leggings
-							i(133299),	-- Circle of Bone
-							i(133305),	-- Corrupted Egg Shell
-							i(133304),	-- Gale of Shadows
-							i(133300),	-- Mark of Khardros
-						},
-					}),
-				}),
-			}),
-			-- #elseif AFTER 11.1.0
-			-- Return to the old version again when TWW Season 1 ends.
-			d(DIFFICULTY.DUNGEON.NORMAL, MixedNormalAndHeroicLootTable),	-- Heroic Grim Batol drops no loot whatsoever anymore
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(131, {	-- General Umbriss
 					["crs"] = { 39625 },	-- General Umbriss
@@ -361,6 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				},
 			})),
 			-- #endif
+			-- History: Grim Batol was rolled in as a m+ dungeon in TWW S1, and the Heroic difficulty did not return to it's pre-TWW state until Septembre 2025.
 		},
 	})),
 })));

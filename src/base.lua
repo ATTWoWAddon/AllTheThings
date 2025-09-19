@@ -3,12 +3,13 @@
 --------------------------------------------------------------------------------
 --            Copyright 2017-2025 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
-local rawget, ipairs, pairs, tinsert, setmetatable, print,math_sqrt,math_floor,getmetatable
-	= rawget, ipairs, pairs, tinsert, setmetatable, print,math.sqrt,math.floor,getmetatable
+local rawget, pairs, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
+	= rawget, pairs, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
 app.EmptyFunction = function() end;
 app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
+app.Categories = {};
 
 
 -- Generate the version identifier.
@@ -37,13 +38,6 @@ app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 
 -- Faction Specific Data
-local IgnoredOtherQuestFields = {
-	otherQuestData = 1,
-	coords = 1,
-	coord = 1,
-	maps = 1,
-	g = 1,
-}
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 app.ResolveQuestData = function(t)
 	local aqd, hqd = t.aqd, t.hqd;
@@ -58,40 +52,44 @@ app.ResolveQuestData = function(t)
 			otherQuestData = hqd;
 		end
 
-		-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
-		for key,value in pairs(t) do
-			if not IgnoredOtherQuestFields[key] and not otherQuestData[key] then
-				otherQuestData[key] = value;
-			end
-		end
-		app.AssignChildren(otherQuestData)
-		t.otherQuestData = otherQuestData;
-		otherQuestData.parent = t.parent
-		otherQuestData.nmr = 1;
-		if not getmetatable(otherQuestData) then
-			otherQuestData.coords = nil;
-			otherQuestData.coord = nil;
-			otherQuestData.maps = nil;
-		end
-
-		-- Move over the quest data's groups.
+		-- Move over the quest data's groups. (This is never used...)
 		if questData.g then
+			-- app.PrintDebug("move quest groups",t.hash,questData.hash)
 			local g = t.g;
 			if g then
-				for _,o in ipairs(questData.g) do
-					tinsert(g, 1, o);
+				local qdg = questData.g
+				for i=1,#qdg do
+					tinsert(g, 1, qdg[i]);
 				end
 				questData.g = g;
 				t.g = nil;
 			end
 		end
 
-		-- Apply the faction specific quest data to this object.
+		-- Apply the common data to the faction group
 		for key,value in pairs(t) do
 			if not questData[key] then
 				questData[key] = value;
 			end
 		end
+
+		-- we know nmr based on matching faction
+		questData.nmr = false
+
+		-- Link some other data if the other data is a real Type that someone might search/tooltip directly in-game
+		if otherQuestData.__type then
+			otherQuestData.nmr = true
+			otherQuestData.g = questData.g
+			-- force faction associations
+			aqd.r = 2
+			hqd.r = 1
+			-- this is a bit weird, but we otherwise have no 'nice' way to hook our Typed-group into the
+			-- actual Main list via parent hierarchy since it is being created and just orphaned within the context
+			-- of the current faction data Type
+			otherQuestData.parent = questData
+		end
+		questData.otherQuestData = otherQuestData
+
 		return questData;
 	else
 		error("Missing AQD / HQD: " .. (aqd and 1 or 0) .. " " .. (hqd and 1 or 0));
@@ -125,9 +123,10 @@ end
 local function AssignFieldValue(group, field, value)
 	if group then
 		group[field] = value;
-		if group.g then
-			for i,o in ipairs(group.g) do
-				AssignFieldValue(o, field, value)
+		local g = group.g
+		if g then
+			for i=1,#g do
+				AssignFieldValue(g[i], field, value)
 			end
 		end
 	end
@@ -159,12 +158,13 @@ local function CloneDictionary(data, clone)
 end
 local function CloneReference(group)
 	local clone = {};
-	if group.g then
+	local gg = group.g
+	if gg then
 		local g = {};
-		for i,group in ipairs(group.g) do
-			local child = CloneReference(group);
+		for i=1,#gg do
+			local child = CloneReference(gg[i]);
 			child.parent = clone;
-			tinsert(g, child);
+			g[#g + 1] = child
 		end
 		clone.g = g;
 	end
@@ -188,8 +188,8 @@ local function GetBestMapForGroup(group, currentMapID)
 
 		local coords = group.coords;
 		if coords then
-			for i,coord in ipairs(coords) do
-				mapID = coord[3];
+			for i=1,#coords do
+				mapID = coords[i][3];
 				if mapID == currentMapID then
 					return mapID;
 				end
@@ -197,8 +197,8 @@ local function GetBestMapForGroup(group, currentMapID)
 		end
 		local maps = group.maps;
 		if maps then
-			for i,otherMapID in ipairs(maps) do
-				mapID = otherMapID;
+			for i=1,#maps do
+				mapID = maps[i];
 				if mapID == currentMapID then
 					return mapID;
 				end
@@ -283,17 +283,19 @@ app.DirectGroupUpdate = app.EmptyFunction
 
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 app.GetIconFromProviders = function(group)
-	if group.providers then
-		local icon;
-		for k,v in ipairs(group.providers) do
-			if v[2] > 0 then
-				if v[1] == "o" then
-					icon = app.ObjectIcons[v[2]];
-				elseif v[1] == "i" then
-					icon = GetItemIcon(v[2]);
-				end
-				if icon then return icon; end
+	local providers = group.providers
+	if not providers or #providers == 0 then return end
+
+	local icon, v
+	for i=1,#providers do
+		v = providers[i]
+		if v[2] > 0 then
+			if v[1] == "o" then
+				icon = app.ObjectIcons[v[2]];
+			elseif v[1] == "i" then
+				icon = GetItemIcon(v[2]);
 			end
+			if icon then return icon; end
 		end
 	end
 end;
@@ -301,8 +303,10 @@ local GetItemInfo = app.WOWAPI.GetItemInfo;
 app.GetNameFromProviders = function(group)
 	local providers = group.providers
 	if not providers or #providers == 0 then return end
-	local pt, id, name
-	for k,v in ipairs(providers) do
+
+	local pt, id, name, v
+	for i=1,#providers do
+		v = providers[i]
 		id = v[2]
 		if id > 0 then
 			pt = v[1]
@@ -322,6 +326,20 @@ app.GetNameFromProviders = function(group)
 		end
 	end
 	return name
+end
+-- Returns the 'name' of a provider based on a given 'providerType' and 'providerID'
+app.GetNameFromProvider = function(pt, id)
+	if not pt or not id or id < 1 then return end
+
+	if pt == "o" then
+		return app.ObjectNames[id];
+	elseif pt == "i" then
+		return GetItemInfo(id);
+	elseif pt == "n" then
+		return app.NPCNameFromID[id];
+	elseif pt == "s" then
+		return app.GetSpellName(id)
+	end
 end
 
 -- Common Metatable Functions
@@ -418,10 +436,9 @@ end
 
 if not app.Presets.ALL then app.Presets.ALL = setmetatable({}, {__index = app.ReturnTrue}) end
 
-(function()
+do
 -- Extend the Frame Class and give them ATT-Style Coroutines and Tooltips!
 local coroutineStack = {};
-local tinsert, tremove = tinsert, tremove;
 local frame, errorID = app.frame, 0;
 local function OnCoroutineUpdate()
 	for i=#coroutineStack,1,-1 do
@@ -442,7 +459,7 @@ local function Push(self, name, method)
 	end
 	local owner = self.Suffix or (self.GetName and self:GetName()) or self.text;
 	--print(owner, "Push ->", name);
-	tinsert(coroutineStack, { owner, name, method });
+	coroutineStack[#coroutineStack + 1] = { owner, name, method }
 end
 local function StartATTCoroutine(self, name, method)
 	if method then
@@ -528,7 +545,7 @@ local editbox = CreateFrame("EditBox", nil, frame);
 local editBoxClass = getmetatable(editbox).__index;
 editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
-end)();
+end
 
 function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS;

@@ -643,8 +643,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				n(17518, {	-- Ythyar
 					["description"] = "This vendor is located in the Guardian's Library.",
 					["groups"] = {
-						i(25903),	-- Design: Bracing Earthstorm Diamond
-						i(25902),	-- Design: Powerful Earthstorm Diamond
+						i(25903),	-- Design: Bracing Earthstorm Diamond (RECIPE!)
+						i(25902),	-- Design: Powerful Earthstorm Diamond (RECIPE!)
 						i(22535, {	-- Formula: Enchant Ring - Striking (RECIPE!)
 							-- #if AFTER 6.0.2
 							["description"] = "This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",

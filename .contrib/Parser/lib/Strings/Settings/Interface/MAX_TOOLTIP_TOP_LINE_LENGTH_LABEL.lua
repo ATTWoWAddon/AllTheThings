@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Максимальная длина верхней строки",
 		-- TODO: ko = "",
 		cn = "最大顶线长度",
 		tw = "最大頂線長度",

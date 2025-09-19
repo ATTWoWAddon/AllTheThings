@@ -709,6 +709,9 @@ profession(SKINNING, {
 				["sourceQuest"] = 40133,	-- Scrap of Pants
 				["qg"] = 94409,	-- Hemet Nesingwary <Hemet's Hunting Party>
 				["groups"] = {
+					i(129900),	-- Bear Hide (QI!)
+					i(129901),	-- Elderhorn Hide (QI!)
+					i(129903),	-- Saber Hide (QI!)
 					i(130064),	-- Deadeye Monocle
 				},
 			}),

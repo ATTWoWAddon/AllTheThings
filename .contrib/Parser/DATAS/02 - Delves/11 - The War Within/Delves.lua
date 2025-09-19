@@ -46,13 +46,13 @@ DELVES_TWW_S3 = createHeader({
 	},
 });
 local UNDERCOIN = 2803;
-local NERUBIAN_DELVES = { EARTHCRAWL_MINES, SKITTERING_BREACH, THE_DREAD_PIT, THE_SPIRAL_WEAVE, THE_UNDERKEEP };
-local FUNGARIAN_DELVES = { FUNGAL_FOLLY, MYCOMANCER_CAVERN };
-local KOBOLD_DELVES = { KRIEGVALS_REST, THE_WATERWORKS };
-local SHADOW_DELVES = { NIGHTFALL_SANCTUM };
-local KOBYSS_DELVES = { TAK_RETHAN_ABYSS, THE_SINKHOLE };
-local OVERCHARGED_DELVES = { FUNGAL_FOLLY, KRIEGVALS_REST, NIGHTFALL_SANCTUM, SIDESTREET_SLUICE, SKITTERING_BREACH, THE_SPIRAL_WEAVE };
-local ALL_REGULAR_DELVES = {
+local NERUBIAN_DELVES_TWW = { EARTHCRAWL_MINES, SKITTERING_BREACH, THE_DREAD_PIT, THE_SPIRAL_WEAVE, THE_UNDERKEEP };
+local FUNGARIAN_DELVES_TWW = { FUNGAL_FOLLY, MYCOMANCER_CAVERN };
+local KOBOLD_DELVES_TWW = { KRIEGVALS_REST, THE_WATERWORKS };
+local SHADOW_DELVES_TWW = { NIGHTFALL_SANCTUM };
+local KOBYSS_DELVES_TWW = { TAK_RETHAN_ABYSS, THE_SINKHOLE };
+local OVERCHARGED_DELVES_TWW = { FUNGAL_FOLLY, KRIEGVALS_REST, NIGHTFALL_SANCTUM, SIDESTREET_SLUICE, SKITTERING_BREACH, THE_SPIRAL_WEAVE };
+local ALL_REGULAR_DELVES_TWW = {
 	EARTHCRAWL_MINES,
 	FUNGAL_FOLLY,
 	KRIEGVALS_REST,
@@ -73,7 +73,7 @@ local ALL_REGULAR_DELVES = {
 	ARCHIVAL_ASSAULT,
 	-- #endif
 };
-local ALL_THE_DELVES = {
+local ALL_THE_DELVES_TWW = {
 	EARTHCRAWL_MINES,
 	FUNGAL_FOLLY,
 	KRIEGVALS_REST,
@@ -99,7 +99,7 @@ local ALL_THE_DELVES = {
 };
 local mapped = function(t)
 	if not t.maps then
-		t.maps = ALL_REGULAR_DELVES
+		t.maps = ALL_REGULAR_DELVES_TWW
 	end
 	return t
 end
@@ -107,7 +107,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 	n(DELVES_TWW_S1, {	-- Includes Zekvir's Lair
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			ach(40446, {	-- I TAKE Candle!
-				["maps"] = KOBOLD_DELVES,
+				["maps"] = KOBOLD_DELVES_TWW,
 			}),
 			mapped(ach(40515)),	-- War Within Delves: Tier 4 (Season 1)
 			mapped(ach(40516)),	-- War Within Delves: Tier 5 (Season 1)
@@ -268,11 +268,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 	})),
 	n(ACHIEVEMENTS, {
 		ach(40817, {	-- A Delver's Bounty
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(41115, {	-- Algari Delver
 			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				41106,	-- Algari Delver Damage Dealer
@@ -282,7 +282,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(41116, {	-- Algari Delver II
 			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				41109,	-- Algari Delver Damage Dealer II
@@ -714,43 +714,47 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		ach(40538, {	-- Brann Development
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40635, {	-- Branntastic
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
-		ach(42676, {	-- Buddy System IX
+		ach(42676, {	-- Buddy System X
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
+		}),
+		ach(61342, {	-- Buddy System IX
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(41723, {	-- Buddy System VIII
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(41537, {	-- Buddy System VII
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40461, {	-- Buddy System VI
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40457, {	-- Buddy System V
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40456, {	-- Buddy System IV
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40451, {	-- Buddy System III
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40450, {	-- Buddy System II
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40455, {	-- Buddy System
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40882, {	-- Copious Coffers
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				title(575),	-- <Name> the Bountiful
 				i(237358, {	-- Silver Coffer Key
@@ -760,47 +764,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(41097, {	-- Curiosity Never Killed the Looter
 			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40437, {	-- Delver of the Depths (automated)
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40447, {	-- Delver of the Depths II (automated)
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40448, {	-- Delver of the Depths III (automated)
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40449, {	-- Delver of the Depths IV (automated)
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40454, {	-- Daystormer
-			["maps"] = SHADOW_DELVES,
-		}),
-		ach(40460, {	-- Delve Deep
-			["maps"] = ALL_THE_DELVES,
-		}),
-		ach(40462, {	-- Delve Deeper
-			["maps"] = ALL_THE_DELVES,
-		}),
-		ach(40463, {	-- Delve Deepest
-			["maps"] = ALL_THE_DELVES,
-		}),
-		ach(41095, {	-- Delve Beyond (500)
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_THE_DELVES,
-			["groups"] = {
-				-- #if AFTER 11.2.0
-				--title(650),	-- Delver %s // doesn't load ingame
-				-- #else
-				title(598),	-- Delver %s
-				-- #endif
-			},
-		}),
-		ach(41096, {	-- Delve Infinite (1000)
-			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_THE_DELVES,
-			["groups"] = { title(599) },	-- Infinite Delver %s
+			["maps"] = SHADOW_DELVES_TWW,
 		}),
 		ach(40537, {	-- Delve Loremaster: War Within
 			-- Meta Achievement
@@ -818,7 +797,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				40535,	-- Tak-Rethan Abyss Stories
 				40534,	-- The Underkeep Stories
 			}},
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(41714, {	-- From Trash to Treasure (automated)
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
@@ -848,34 +827,33 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				-- #endif
 				40538,	-- Brann Development
 			}},
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 			["groups"] = {
 				i(224415),	-- Ivory Goliathus (MOUNT!)
 			},
 		}),
 		ach(40524, {	-- Good Deed Delver
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40732, {	-- Heavy-Handed
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40098, {	-- Immortal Spelunker
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				title(549),	-- Immortal Spelunker <Name>
 			},
 		}),
 		ach(40763, {	-- I'm not a Thief, I'm a Treasure Hunter
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40459),		-- I've Got a Flying Machine!
 		ach(40789),		-- I've Got More Flying Machine?! (automated)
 		ach(40788, {	-- I Got the Keys
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40452, {	-- Just Keep Swimming
-			["maps"] = KOBYSS_DELVES,
-			["timeline"] = { REMOVED_11_2_0_SEASONSTART },
+			["maps"] = KOBYSS_DELVES_TWW,
 		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
@@ -893,13 +871,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				40811,	-- Tak-Rethan Abyss Discoveries
 				40815,	-- The Underkeep Discoveries
 			}},
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				title(570),	-- <Name>, Seeker of Loot
 			},
 		}),
 		ach(40523, {	-- On Brand
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(42241, {	-- Overcharged Delver
 			["timeline"] = { ADDED_11_1_7 },
@@ -926,41 +904,41 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		ach(40863, {	-- Perplexing Puzzle
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40864, {	-- Plentiful Perplexing Puzzles
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["crs"] = {
 				225401,	-- Wrapped Spool
 			},
 		}),
 		ach(41105, {	-- Prodigious Plentiful Perplexing Puzzles
 			["timeline"] = { ADDED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["crs"] = {
 				225401,	-- Wrapped Spool
 			},
 		}),
 		ach(40820, {	-- Raisin' Brann
-			["maps"] = ALL_THE_DELVES,
+			["maps"] = ALL_THE_DELVES_TWW,
 		}),
 		ach(40819, {	-- Ready to Turn
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(42678, {	-- So That's Where My Manaflux Capacitor Was!
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
 		ach(40453, {	-- Spider Senses
-			["maps"] = NERUBIAN_DELVES,
+			["maps"] = NERUBIAN_DELVES_TWW,
 		}),
 		ach(40445, {	-- Sporesweeper
-			["maps"] = FUNGARIAN_DELVES,
+			["maps"] = FUNGARIAN_DELVES_TWW,
 		}),
 		ach(40458, {	-- Stranger Delves
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40885, {	-- The Key to Madness
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				i(237355, {	-- Golden Coffer Key
 					["timeline"] = { ADDED_11_1_0 },
@@ -971,28 +949,28 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
 		ach(42212, {	-- Titan Console Overcharged
-			["maps"] = OVERCHARGED_DELVES,
+			["maps"] = OVERCHARGED_DELVES_TWW,
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
 		}),
 		ach(40100, {	-- Undying Caver
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40725, {	-- War Within Delves: Endgame (automated)
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40631, {	-- War Within Delves: Tier 1
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40512, {	-- War Within Delves: Tier 2
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(40514, {	-- War Within Delves: Tier 3
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		ach(60933, {	-- With Flying Colors (H)
 			["timeline"] = { ADDED_11_2_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(235697),	-- Delver's Dirigible Schematic: Alliance Decal (MM!)
@@ -1003,7 +981,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(60934, {	-- With Flying Colors (A)
 			["timeline"] = { ADDED_11_2_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(235697),	-- Delver's Dirigible Schematic: Alliance Decal (MM!)
@@ -1013,7 +991,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		ach(40436, {	-- You're Getting a Delve!
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 	}),
 	mapped(n(DELVE_COMPLETION, {
@@ -1063,6 +1041,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(242919, {	-- Cracked Keystone (QS!/QI!/CI!)
 					["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
 				}),
+				i(251543, {	-- Cracked Keystone (QS!/QI!/CI!)
+					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
+				}),
 			}),
 			filter(NECK_F, {
 				i(211063),	-- Long-Lost Choker
@@ -1093,6 +1074,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(246945, { ["timeline"] = { ADDED_11_2_0 } }),	-- Incorporeal Essence-Gorger
 				i(246940, { ["timeline"] = { ADDED_11_2_0 } }),	-- Manaforged Aethercell
 				i(246944, { ["timeline"] = { ADDED_11_2_0 } }),	-- Mind-Fracturing Odium
+				i(246947, { ["timeline"] = { ADDED_11_2_0 } }),	-- Twisted Mana Sprite
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(246824, { ["timeline"] = { ADDED_11_2_0 } }),	-- Shadowguard's Twisted Harvester
@@ -1107,17 +1089,18 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		filter(BATTLE_PETS, {
 			i(222971),	-- Bouncer (PET!)
 			i(221820),	-- Chester (PET!)
-			i(232848, {	-- Mr. DELVER (PET!)
-				["timeline"] = { ADDED_11_1_0 },
-			}),
+			i(232848, { ["timeline"] = { ADDED_11_1_0 } }),	-- Mr. DELVER (PET!)
+			i(245256, { ["timeline"] = { ADDED_11_2_0 } }),	-- Sao'rhon (PET!)
 			i(223624),	-- Sneef (PET!)
 			i(225337),	-- Violet Sporbit (PET!)
 			i(221496),	-- Wriggle (PET!)
 		}),
 		filter(TOYS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
 			i(230924), 	-- Spotlight Materializer 1000 (TOY!)
+			i(228413, { ["timeline"] = { ADDED_11_2_0 } }),	-- Lampyridae Lure (TOY!)
 		})),
 		filter(COSMETIC, {
+			i(212162),	-- Bitter Shroom Cap
 			i(245527, { ["timeline"] = { ADDED_11_2_0 } }),	-- Consortium's Phasebound Visor
 			i(235617, { ["timeline"] = { ADDED_11_1_0 } }),	-- Lucky Goblin's Strapped Rockets
 			i(235615, { ["timeline"] = { ADDED_11_1_0 } }),	-- Rusty Gobjets
@@ -1368,7 +1351,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(235422),	-- Venture Co Seal
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+						i(237999),	-- Battered Matter Destabilizer
 						i(238007),	-- Bulwark of the Great Dark
+						i(237997),	-- Ethereal Handchopper
+						i(238004),	-- Exile's Beacon
 						i(246086, {	-- Fate Weaver
 							["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
 							["groups"] = {
@@ -1376,8 +1362,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 								i(219382),	-- Fateweaved Needle
 							},
 						}),
+						i(238000),	-- Mana Manipulator
 						i(218125),	-- Reactive Webbed Escutcheon
+						i(238006),	-- Soulbearer's Censer
+						i(237998),	-- Void Assassin's Ritual Blade
 						i(238005),	-- Void-Steeped Falchion
+						i(238002),	-- Wanderer's Projectile Accelerator
+						i(238003),	-- Wyrmhunter's Skewer
 					})),
 				}),
 			},
@@ -1660,28 +1651,32 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		filter(MISC, {
+			i(227794),	-- Archaic Cipher Key (QI!/QS!)
+			i(248764, { ["timeline"]={ ADDED_11_2_0 } }),	-- Artisanal Blink Trap
+			i(223287),	-- Atomized Salien Slime
 			i(228942),	-- Bountiful Coffer
+			i(218121),	-- Candle Light
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
 			i(224412),	-- Companion Experience (every tier)
-			i(239502, {["timeline"]={ ADDED_11_1_5 }}),	-- Big Wheel of Cheese (Hidden Cache)
-			i(227784, {["timeline"]={ REMOVED_11_1_0_SEASONSTART }}),	-- Delver's Bounty
-			i(233071, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },["isWeekly"]=true}),	-- Delver's Bounty (actual item, looted from Jettisoned Pile of Goblin-Bucks)
-			i(235628, {["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 }}),	-- Delver's Bounty (Delve reward UI)
+			i(239502, { ["timeline"]={ ADDED_11_1_5 } }),	-- Big Wheel of Cheese (Hidden Cache)
+			i(227784, { ["timeline"]={ REMOVED_11_1_0_SEASONSTART } }),	-- Delver's Bounty
+			i(233071, { ["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
+			i(235628, { ["timeline"]={ ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }),	-- Delver's Bounty (Delve reward UI)
+			i(248142, { ["timeline"]={ ADDED_11_2_0_SEASONSTART },["isWeekly"]=true }),	-- Delver's Bounty (actual item)
+			i(226132),	-- Deployable Recovery Keg
+			i(226110),	-- Elemental Fusion Bomb
 			i(222922),	-- Expeditionary Spoils (Tier 1)
 			i(222923),	-- Expeditionary Spoils (Tier 2)
 			i(225178),	-- Expeditionary Spoils (Tier 3)
+			i(226107),	-- Homebrewed Blink Vial
+			i(248954, { ["timeline"]={ ADDED_11_2_0 } }),	-- Nether-warped Seedlings
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
-			i(222927),	-- Weathered Coin Coffer
-			i(223287),	-- Atomized Salien Slime
-			i(227794),	-- Archaic Cipher Key (QI!/QS!)
-			i(218121),	-- Candle Light
-			i(226132),	-- Deployable Recovery Keg
-			i(226110),	-- Elemental Fusion Bomb
-			i(226107),	-- Homebrewed Blink Vial
 			i(225249),	-- Rattling Bag'o'gold
+			i(248755, { ["timeline"]={ ADDED_11_2_0 } }),	-- Star-in-a-jar
 			i(226109),	-- Squirming Swarm Sac
+			i(222927),	-- Weathered Coin Coffer
 			--
 			i(226002),	-- Expensive-Looking Find (was looted from Sturdy Chest (objectID) 454091)
 			i(226003),	-- Snake Oil (was looted from Sturdy Chest (objectID) 454091, 455496)
@@ -1834,7 +1829,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		hqt(88964, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 97
 		hqt(88965, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 98
 		hqt(88966, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 99
-		hqt(88967, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 100 TODO: probably attached to achievement
+		-- hqt(88967, {["timeline"] = { ADDED_11_2_0_SEASONSTART }}),	-- Level 100 Attached on achievement
 	}),
 	n(QUESTS, {
 		q(84370, {	-- The Key to Success
@@ -1845,7 +1840,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
 			["timeline"] = { REMOVED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				-- I don't think this is the curio everyone gets from this quest... is it RNG or only this one
 				-- that wowhead claims?
@@ -1859,7 +1854,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		q(84520, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
 			["timeline"] = { REMOVED_11_1_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 			["groups"] = {
 				i(228582),	-- Streamlined Relic
 				-- i(225901, {	-- Streamlined Relic [Rank 1] (only tracking Rank 4 curios)
@@ -1919,12 +1914,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		q(86461, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 234330 },	-- Ancient Curio
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
+			["maps"] = ALL_REGULAR_DELVES_TWW,	-- s2 delves or all delves?
 		}),
 		q(86462, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 234329 },	-- Ancient Curio
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
+			["maps"] = ALL_REGULAR_DELVES_TWW,	-- s2 delves or all delves?
 		}),
 		q(88947, {	-- Undermined Delves
 			--["sourceQuests"] = { xx },	-- ??
@@ -1971,8 +1966,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			},
 		}),
 		q(90779, {	-- Cracked Keystone
-			["provider"] = { "i", 242919 },	-- Cracked Keystone
+			["description"] = "Can be completed once per TWW Season.\n\nNOTE: This will allow over-capping crests if you are already capped, otherwise the rewarded crests will be considered part of the current cap.",
+			["providers"] = {
+				-- #if AFTER 11.2.0
+				{ "i", 251543 },	-- Cracked Keystone (S3)
+				-- #else
+				{ "i", 242919 },	-- Cracked Keystone (S2)
+				-- #endif
+			},
 			["timeline"] = { ADDED_11_1_5 },
+			["isMonthly"] = true,	-- closest we have to 'seasonal' right now
 		}),
 		-- Season 2 - Overload stuff
 		q(90968, {	-- Titanic Rumblings
@@ -1989,7 +1992,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["sourceQuests"] = { 90969 },	-- Titan Consoles
 			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
-			["maps"] = OVERCHARGED_DELVES,
+			["maps"] = OVERCHARGED_DELVES_TWW,
 			["groups"] = {
 				i(244466),	-- Dagran's Pouch of Fragments
 			},
@@ -1998,7 +2001,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
 			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
-			["maps"] = OVERCHARGED_DELVES,
+			["maps"] = OVERCHARGED_DELVES_TWW,
 		}),
 		q(91009, {	-- Durable Information Storage Container
 			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: with 11.2 ptr this quest exist but I will test out chain next time)
@@ -2093,16 +2096,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		q(90776, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 242849 },	-- Ancient Curio
 			["timeline"] = { ADDED_11_2_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
 		q(90778, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 242850 },	-- Ancient Curio
 			["timeline"] = { ADDED_11_2_0 },
-			["maps"] = ALL_REGULAR_DELVES,
+			["maps"] = ALL_REGULAR_DELVES_TWW,
 		}),
-		q(91780, {	-- Ethereal Delves
+		q(91780, {	-- Ethereal Delves [auto pop on login]
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-			-- auto pop on login
 		}),
 		q(91781, {	-- Seasonal Reminder
 			["sourceQuests"] = { 91780 },	-- Ethereal Delves
@@ -2199,15 +2201,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		n(245938, {	-- Flickergate
 			["timeline"] = { ADDED_11_2_0 },
 			["groups"] = {
-				i(248764),	-- Artisanal Blink Trap
 				i(245885),	-- Lil Wheel of Cheese
-				i(248954),	-- Nether-warped Seedlings (also from Nemesis Strongbox s3)
 				i(245524),	-- Shadowguard's Phasebound Visor (COSMETIC!)
 				n(248481),	-- Ky'veza's Shadow Clone (TODO: remove if nothing will be with it)
 			},
 		}),
 		o(506498, {	-- Gilded Stash
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			["timeline"] = { ADDED_11_1_0 },
 			["groups"] = {
 				-- gilded undermine crest x7
 			},
@@ -2236,19 +2236,21 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				--i(233071), -- Delver's Bounty
 			},
 		}),
-		o(547332, {	-- Ky'veza's Etheric Cache
+		o(547532, {	-- Ky'veza's Etheric Cache
 			["description"] = "Left behind by Ky'veza when she is defeated in a delve.",
 			["timeline"] = { ADDED_11_2_0 },
-			--["cr"] = ,
+			["cr"] = 244755,	-- Nexus-Princess Ky'veza
 			["groups"] = {
 				i(218126),	-- Befouler's Syringe
 				i(246071),	-- Mana-Seamster's Arcane-Needle
+				i(238001),	-- Rod of the Unwoven
 			},
 		}),
 		o(567732, {	-- Kaja'6-Pack (Curio Spawned)
 			["timeline"] = { ADDED_11_2_0 },
 			["groups"] = {
 				i(249032),	-- Dulux Bluesberry Blast
+				i(249030),	-- Omega Oyster Outbreak
 				i(249031),	-- Supreme Mangoro Madness
 				i(249029),	-- Ultimate Orange O-pocalypse
 			},
@@ -2286,16 +2288,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 				}),
 				-- No new objectID atm
-				i(248764, {	-- Artisanal Blink Trap
-					["timeline"] = { ADDED_11_2_0 },
-				}),
 				i(244193, {	-- L00T RAID-R Mini
 					["timeline"] = { ADDED_11_2_0 },
 				}),
 				i(248017, {	-- Shrieking Quartz
-					["timeline"] = { ADDED_11_2_0 },
-				}),
-				i(248755, {	-- Star-in-a-jar
 					["timeline"] = { ADDED_11_2_0 },
 				}),
 			},
@@ -2721,11 +2717,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						-- #if BEFORE 11.1.0
 						["description"] = "Contains 250 Resonance Crystals.",
 						-- #endif
-						-- Listening 500+ Items is excessive bloat, especially since you get around 150 Undercoins per Delve
-						-- Even if you have all items, which takes ages, its probably better to keep them for future Delve Seasons -Goldenshacal 24th Sep 2024
-						--["groups"] = {
-						--	currency(RESONANCE_CRYSTALS),
-						--},
 					}),
 					i(224172, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 1000}},
@@ -3040,9 +3031,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					crit(106404),	-- Waygate Wiles
 				}),
 			}),
-			filter(BATTLE_PETS, {
-				i(245256),	-- Sao'rhon (PET!)
-			}),
 			filter(MISC, {
 				-- Story Variant: Relic Retrieval
 				i(244859),	-- Armoire of Invincibility
@@ -3054,9 +3042,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(244854),	-- Purloined Artifact
 				i(244857),	-- The 1 Ring
 				-- Story Variant: Waygate Wiles
-				i(245746),	-- Energy Barrel
-				i(245884),	-- Energy Pyramid
-				i(245747),	-- Energy Urn
+				o(549986, {	-- Energy Barrel
+					i(245746),	-- Energy Barrel
+				}),
+				o(550001, {	-- Energy Pyramid
+					i(245884),	-- Energy Pyramid
+				}),
+				o(549999, {	-- Energy Urn
+					i(245747),	-- Energy Urn
+				}),
 				i(246053),	-- Waygate Piece
 			}),
 			n(TREASURES, {
@@ -3078,7 +3072,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					["questID"] = 92573,
 				}),
 				o(539785, { -- Sturdy Chest
-					["coord"] = { 43.9, 64.7, 2455 },	-- Lower Chamber
+					["coords"] = {
+						{ 43.9, 64.7, 2455 },	-- Lower Chamber
+						{ 43.3, 65.7, 2476 },	-- Archival Assault
+					},
 					["questID"] = 90839,
 				}),
 			}),
@@ -3233,7 +3230,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				n(TREASURES, {
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
-						i(212162),	-- Bitter Shroom Cap
 						i(212168),	-- Cinderbee Wax Candle Hat
 						i(211801),	-- Poisonous Shroom Cap
 						i(212163),	-- Soporific Shroom Cap
@@ -3248,6 +3244,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					},
 				}),
 				i(210017),	-- Fungal Fish (QI!)
+				o(531965, {	-- Loose Parts
+					["timeline"] = { ADDED_11_2_0 },
+					["groups"] = {
+						i(241220),	-- Loose Parts (QI!)
+					},
+				}),
 				i(244900, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Spark Burst (CI!)
 				o(536065, {	-- Nuts and Bolts
 					["timeline"] = { ADDED_11_2_0 },
@@ -3256,6 +3258,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					},
 				}),
 				i(238254, {["timeline"] = { ADDED_11_2_0 }}),	-- Nuts and Bolts (QI!)
+				o(531965, {	-- Work Table
+					["timeline"] = { ADDED_11_2_0 },
+					["groups"] = {
+						i(242380),	-- Black Blood Blower (QI!)
+					},
+				}),
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
@@ -3381,7 +3389,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
 					filter(COSMETIC, {
-						i(212162),	-- Bitter Shroom Cap
 						i(212165),	-- Deep Nautic Helm
 						i(211801),	-- Poisonous Shroom Cap
 						i(212163),	-- Soporific Shroom Cap
@@ -3538,7 +3545,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
 					filter(COSMETIC, {
-						i(212162),	-- Bitter Shroom Cap
 						i(212167),	-- Taken Candle
 					}),
 				}),
@@ -3591,7 +3597,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				n(TREASURES, {
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
-						i(212162),	-- Bitter Shroom Cap
 						i(212173),	-- Rulk'Nerub Raptorial Spine
 					}),
 				}),
@@ -3996,14 +4001,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(DELVES, applyDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(BOUNTIFUL, {	-- Bountiful Delve runs
+		n(BOUNTIFUL, sharedData({
+			["isDaily"] = true,
+		},{	-- Bountiful Delve runs
+			q(89246, { ["timeline"]={ ADDED_11_2_0 }  }),	-- Archival Assault
 			q(82944),	-- Earthcrawl Mines
-			q(85187, {["timeline"]={ADDED_11_1_0}}),	-- Excavation Site 9
+			q(85187, { ["timeline"]={ ADDED_11_1_0 }  }),	-- Excavation Site 9
 			q(82939),	-- Fungal Folly
 			q(82941),	-- Kriegval's Rest
 			q(82940),	-- Mycomancer Cavern
 			q(82777),	-- Nightfall Sanctum
-			q(85668, {["timeline"]={ADDED_11_1_0}}),	-- Sidestreet Sluice
+			q(85668, { ["timeline"]={ ADDED_11_1_0 } }),	-- Sidestreet Sluice
 			q(78508),	-- Skittering Breach
 			q(82776),	-- Tak-Rethan Abyss
 			q(82938),	-- The Dread Pit
@@ -4016,8 +4024,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(83318),	-- Assembly of the Deeps
 			q(83319),	-- Severed Threads
 			q(83320),	-- Hallowfall Arathi
-			q(87407, {["timeline"]={ADDED_11_1_0}}),	-- Undermine Cartel
-		}),
+			q(87407, { ["timeline"]={ ADDED_11_1_0 } }),	-- Undermine Cartel
+			q(91453, { ["timeline"]={ ADDED_11_2_0_SEASONSTART } }),	-- K'aresh Trust
+		})),
 		n(DELVES_TWW_S1, {
 			--Delver's Journey Rewards
 			q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
@@ -4054,16 +4063,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(85210),	-- Delve-O-Bot 7001 (spellID 467097)
 			q(85206),	-- Warbound Equipment Set (spellID 467089)
 			q(85205),	-- Discounted Restored Coffer Key (spellID 467087)
-
-			-- q(86371),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
+			--q(86371, { ["timeline"] = { ADDED_11_1_7 } } ),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
 			-- Underpin Invasion
-			q(87287, {["isWeekly"] = true}),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
+			q(87287, { ["isWeekly"] = true} ),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
 			--- Overcharged Delves
 			-- Belt unlocks
-			q(90945, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
-			q(90946, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
-			q(90952, {["timeline"]={ADDED_11_1_7}}),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
+			q(90945, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+			q(90946, { ["timeline"]= { ADDED_11_1_7 } }),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
+			q(90952, { ["timeline"]= { ADDED_11_1_7 } }),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
 		})),
 		n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 			-- Delver's Journey Rewards
@@ -4085,8 +4093,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			--q(89041),	-- Purchaseable Rare Delve Key - 2 (spellID 1225597) (itemID 238527)
 			--q(91783),	-- Delver's Cosmetic Surprise Bag (spellID 1246295) (itemID 248127)
 			--q(91784),	-- Delver's Starter Kit (spellID 1246296) (itemID 248126)
-			-- ??
-			--q(91453),	-- after completion 4th bountiful delve per day / new bonus rep hqt / reset on weekly
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve

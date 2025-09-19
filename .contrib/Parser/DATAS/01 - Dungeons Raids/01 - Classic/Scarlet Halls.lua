@@ -269,9 +269,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				ach(8436, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Halls
+				challengemaster(ach(8436, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Halls
 					title(243),	-- Flameweaver <Name>
-				})),
+				}))),
 				ach(6895),	-- Scarlet Halls Challenger
 				ach(6908),	-- Scarlet Halls: Bronze
 				ach(6909),	-- Scarlet Halls: Silver
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			})),
 			-- #if ANYCLASSIC
-			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL_DUNGEON_DIFFICULTY, {
+			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(1243929),	-- Dominion of the Empress
 				["timeline"] = { ADDED_5_5_0 },
 				["groups"] = {
@@ -290,6 +290,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							ach(60897),	-- Celestial: Scarlet Halls
 							i(86778),	-- Steelskin, Qiang's Impervious Shield
 							i(86753),	-- Cloak of Peacock Feathers
+							i(89967),	-- Feng's Seal of Binding
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86858)),	-- Seal of the Profane (HoF)
 						},
 					}),
 				},

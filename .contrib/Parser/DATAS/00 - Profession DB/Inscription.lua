@@ -244,17 +244,13 @@ i(0, 67600);	-- Glyph of Claw / Glyph of Ferocious Bite
 -----------------
 -- PATCH 3.3.0 --
 -----------------
-i(50166, 71101);	-- Glyph of Eternal Water / Glyph of Mana Shield[CATA-MOP] / Glyph of Counterspell[MOP+] (not sourced yet) https://www.wowhead.com/wotlk/spell=71101/glyph-of-eternal-water
-
-
-
+i(50166, 71101);	-- Glyph of Eternal Water / Glyph of Mana Shield [CATA] / Glyph of Counterspell [MOP+]
+i(50168, 71102);	-- Glyph of Quick Decay / Glyph of Lash of Pain [CATA] / Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
+i(50167, 71015);	-- Glyph of Rapid Rejuvenation
 
 --weird?
 i(0, 58321);	-- Glyph of Shadow Protection / Glyph of Reflective Shield[MOP+]
 i(0, 56957);	-- Glyph of Shred
-
-
-
 
 -----------------
 --   TBC   --
@@ -269,7 +265,6 @@ i(0, 57026);	-- Glyph of Flash of Light[Wrath-Cata] / Glyph of Word of Glory[Cat
 i(0, 57221);	-- Glyph of Plague Strike [Removed Cata?]
 i(0, 50602);	-- Scroll of Intellect VI
 i(0, 57122);	-- Glyph of Feint[Legion removed]
-
 
 -- 3.1.0?
 i(0, 58489);	-- Scroll of Strength VI
@@ -477,7 +472,7 @@ i(0, 64287);	--
 i(0, 58481);	-- Scroll of Agility VI
 i(0, 56999);	--
 i(0, 57716);	-- Snowfall Ink
-i(46108, 64051);	-- Rituals of the Moon
+i(46108, 64051);	-- Rituals of the New Moon
 i(0, 57247);	--
 i(0, 57264);	--
 i(0, 61119);	-- Master's Inscription of the Pinnacle
@@ -503,11 +498,8 @@ i(0, 56960);	-- Swiftmend??
 i(0, 64282);	--
 i(0, 57014);	--
 --3.3.5.12340
-i(0, 71015);	--
-i(0, 71102);	--
 i(0, 68166);	-- Glyph of Thunder Strike
 i(0, 69385);	-- Runescroll of Fortitude
-
 
 -----------------
 -- PATCH 4.0.3 --
@@ -544,12 +536,10 @@ i(65651, 86646);	-- Origami Beetle
 i(65650, 86645);	-- Origami Rock
 i(65649, 86644);	-- Origami Slime
 
-
 -----------------
 -- PATCH 4.3.0 --
 -----------------
 i(0, 107907);	-- Glyph of Shadow (Minor Inscription Research??) (4.3.0
-
 
 -- Taken from Twinstar
 -- 4.0.1
@@ -577,8 +567,6 @@ i(0, 94401);	-- Glyph of Tiger's Fury
 i(0, 101057);	-- Glyph of Unleashed Lightning
 i(0, 99548);	-- Vicious Eyeball of Dominance
 i(0, 95215);	-- Glyph of the Treant
-
-
 
 -----------------
 -- PATCH 5.0.3 --
@@ -669,17 +657,50 @@ i(0, 128922);	-- Portrait of Madam Goya (Quest?)
 -----------------
 -- PATCH 5.4.0 --
 -----------------
-i(104234, 148281);	-- Glyph of Spirit Raptors
-i(104219, 148266);	-- Glyph of the Skeleton
-i(104245, 148292);	-- Glyph of the Weaponmaster
-i(104223, 148270);	-- Glyph of the Unbound Elemental
 i(102534, 146638);	-- Crafted Malevolent Gladiator's Medallion of Tenacity
+i(104228, 148275);	-- Glyph of Angels
+i(104240, 148287);	-- Glyph of Astral Fixation
+i(104225, 148272);	-- Glyph of Condensation
+i(104212, 148259);	-- Glyph of Divine Shield
+i(104239, 148286);	-- Glyph of Elemental Familiars
+i(104281, 148489);	-- Glyph of Enduring Deceit
+i(104215, 148262);	-- Glyph of Eternal Earth
 i(104224, 148271);	-- Glyph of Evaporation
+i(104211, 148258);	-- Glyph of Festering Blood
+i(104237, 148284);	-- Glyph of Flaming Serpent
+i(104213, 148260);	-- Glyph of Hand of Sacrifice
+i(104232, 148279);	-- Glyph of Headhunting
+i(104217, 148264);	-- Glyph of Impaling Throws
+i(104233, 148280);	-- Glyph of Improved Distraction
 i(104231, 148278);	-- Glyph of Inspired Hymns
 i(104235, 148282);	-- Glyph of Lingering Ancestors
-i(104229, 148276);	-- Glyph of the Sha
-i(104228, 148275);	-- Glyph of Angels
+i(104209, 148256);	-- Glyph of Loud Horn
+i(104222, 148269);	-- Glyph of One with Nature
 i(104227, 148274);	-- Glyph of Pillar of Light
+i(104214, 148261);	-- Glyph of Purging
+i(104241, 148288);	-- Glyph of Rain of Frogs
+i(104210, 148257);	-- Glyph of Regenerative Magic
+i(104230, 148277);	-- Glyph of Shifted Appearances
+i(104234, 148281);	-- Glyph of Spirit Raptors
+i(104236, 148283);	-- Glyph of Spirit Wolf
+i(104197, 148255);	-- Glyph of Swift Death
+i(104238, 148285);	-- Glyph of the Compy
+i(104218, 148265);	-- Glyph of the Executor
+i(104226, 148273);	-- Glyph of the Exorcist
+i(104279, 148487);	-- Glyph of the Lean Pack
+i(104220, 148267);	-- Glyph of the Long Winter
+i(104242, 148289);	-- Glyph of the Raging Whirlwind
+i(104229, 148276);	-- Glyph of the Sha
+i(104219, 148266);	-- Glyph of the Skeleton
+i(104221, 148268);	-- Glyph of the Sprouting Mushroom
+i(104243, 148290);	-- Glyph of the Subtle Defender
+i(104244, 148291);	-- Glyph of the Watchful Eye
+i(104245, 148292);	-- Glyph of the Weaponmaster
+i(104223, 148270);	-- Glyph of the Unbound Elemental
+--- NYI ---
+i(104282, 148490);	-- Glyph of Chameleon
+i(104280, 148488);	-- Glyph of Focused Fire
+i(0, 135535);		-- Glyph of Supernova
 
 -- 5.0.3.15890
 i(0, 112437);	--
@@ -705,34 +726,6 @@ i(0, 124442);	--
 i(0, 124455);	--
 i(0, 112457);	--
 i(0, 112452);	--
---6.0.1.18179
--- if not all are 5.4.0 material?
-i(0, 148287);	--
-i(0, 148260);	--
-i(0, 148488);	--
-i(0, 148269);	--
-i(0, 148268);	--
-i(0, 148490);	--
-i(0, 135535);	--
-i(0, 148255);	--
-i(0, 148290);	--
-i(0, 148289);	--
-i(0, 148291);	--
-i(0, 148261);	--
-i(0, 148285);	--
-i(0, 148280);	--
-i(0, 148487);	--
-i(0, 148259);	--
-i(0, 148279);	--
-i(0, 148283);	--
-i(0, 148284);	--
-i(0, 148257);	--
-i(0, 148273);	--
-i(0, 148288);	--
-i(0, 148286);	--
-i(0, 148489);	--
-i(0, 148272);	--
-
 
 -----------------
 -- PATCH 6.0.1 --

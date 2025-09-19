@@ -2022,7 +2022,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
 			["groups"] = {
 				o(467064, {	-- Quest Journal
-					i(229165),	-- Quest Journal (QI!)
+					["coord"] = { 44.2, 82.5, THE_WAR_CRECHE },
+					["groups"] = { i(229165) },	-- Quest Journal (QI!)
 				}),
 			},
 		}),

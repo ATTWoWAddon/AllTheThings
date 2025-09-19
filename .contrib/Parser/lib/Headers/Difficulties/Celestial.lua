@@ -11,7 +11,7 @@ CELESTIAL_DUNGEON_DIFFICULTY = createHeader({
 		pt = "Masmorras Celestiais",
 		--ru = "[Celestial]",
 		--ko = "[Celestial]",
-		--cn = "[Celestial]",
-		--tw = "[Celestial]",
+		cn = "天神地下城",
+		tw = "天尊地城",
 	},
 });

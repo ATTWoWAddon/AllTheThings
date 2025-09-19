@@ -759,8 +759,10 @@ root(ROOTS.Zones, {
 				q(38907, {	-- Keepers of the Hammer
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
-					["coord"] = { 69.9, 43.8, LEGION_DALARAN },
-					["maps"] = { HIGHMOUNTAIN },
+					["coords"] = {
+						{ 69.9, 43.8, LEGION_DALARAN },
+						{ 36.0, 65.7, HIGHMOUNTAIN },
+					},
 				}),
 				q(39985, {	-- Khadgar's Discovery
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -1251,7 +1253,7 @@ root(ROOTS.Zones, {
 				q(43341, {	-- Uniting the Isles
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["groups"] = {
-						i(141605, {	-- Flight Master Whistle
+						i(141605, {	-- Flight Master Whistle	// (TOY!) as of 11.2.5
 							["modID"] = 11,
 						}),
 					},
@@ -1260,7 +1262,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
 					["groups"] = {
-						i(141605, {	-- Flight Master Whistle
+						i(141605, {	-- Flight Master Whistle	// (TOY!) as of 11.2.5
 							["modID"] = 11,
 						}),
 					},

@@ -343,6 +343,8 @@ for i,guid in ipairs({
 	"Player-1096-0A7FDD25",	-- Atröpos-DefiasBrotherhood EU
 	-- Eremeir
 	"Player-3675-06DC8D18",	-- Eremeir-MoonGuard US
+	-- Wouter
+	"Player-4467-0298B249",	-- Woutertje-Firemaw EU (Classic)
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
@@ -489,6 +491,7 @@ for i,guid in ipairs({
 	"Player-4372-03E59A78",	-- Xisis-Atiesh
 	"Player-4372-03E6CD1C",	-- Quickibanki-Atiesh
 	"Player-4372-03FDCBF9",	-- Muttstuff-Atiesh
+	"Player-4372-0404C87F",	-- Grandmasark-Atiesh
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end

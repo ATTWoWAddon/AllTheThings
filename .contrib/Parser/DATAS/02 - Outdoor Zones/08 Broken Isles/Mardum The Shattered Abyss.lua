@@ -14,53 +14,63 @@ root(ROOTS.Zones, {
 				675,	-- Soul Engine
 			},
 			["groups"] = {
+				explorationHeader({
+					visit_exploration(7754,{coord={63.1,51.3,672}}),	-- Cryptic Hollow
+					visit_exploration(7741,{coord={22.1,57.8,672}}),	-- Despair Ridge
+					visit_exploration(7820,{coord={77.6,48.5,672}}),	-- Forge of Corruption
+					visit_exploration(7912,{coord={74.5,35.7,672}}),	-- Foul Creche
+					visit_exploration(7712,{coord={56.0,43.3,672}}),	-- Illidari Foothold
+					visit_exploration(7713,{coord={51.8,46.1,672}}),	-- Inferno Peak
+					visit_exploration(7740,{coord={35.3,73.0,672}}),	-- Molten Shore
+					visit_exploration(7742,{coord={39.2,54.7,672}}),	-- Seat of Command
+					visit_exploration(7747,{coord={69.1,31.4,672}}),	-- Soul Engine
+					visit_exploration(7821,{coord={66.2,51.7,672}}),	-- The Doom Fortress
+					visit_exploration(7749,{coord={69.9,44.3,672}}),	-- The Fel Hammer
+					visit_exploration(7576,{coord={39.3,57.4,672}}),	-- Twisting Nether
+				}),
+				n(BONUS_OBJECTIVES, {
+					q(39279, {	-- Assault on Mardum
+						["sourceQuests"] = { 40077 },	-- The Invasion Begins
+					}),
+				}),
 				n(QUESTS, {
 					q(40077, {	-- The Invasion Begins
-						["provider"] = { "n", 93011 },	-- Kayn Sunfury
-						["coord"] = { 22.0, 55.8, 672 },
+						["qg"] = 93011,	-- Kayn Sunfury
+						["coord"] = { 22.1, 55.8, 672 },
 						["groups"] = {
-							i(128953),	-- Treads of Illidari Supremacy
-							i(133317),	-- Treads of Illidari Supremacy
+							i(128953, { ["races"] = ALLIANCE_ONLY }),	-- Treads of Illidari Supremacy
+							i(133317, { ["races"] = HORDE_ONLY }),	-- Treads of Illidari Supremacy
 						},
 					}),
 					q(40378, {	-- Enter the Illidar: Ashtongue
-						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
-						["provider"] = { "n", 98229 },	-- Kayn Sunfury
-						["coord"] = { 28.5, 63.0, 672 },
+						["sourceQuests"] = { 40077 },	-- The Invasion Begins
+						["qg"] = 98229,	-- Kayn Sunfury
+						["coord"] = { 28.6, 63.1, 672 },
 						["groups"] = {
 							mount(200175, {	-- Felsaber (MOUNT!)
 								["classes"] = { DEMONHUNTER },
 							}),
 						},
 					}),
-					q(39279, {	-- Assault on Mardum
-						["description"] = "This is a bonus objective.",
-						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
-						["collectible"] = false, -- TODO: check this
-					}),
-					q(40379, {	-- Enter the Illidari: Coilskar
+					q(38759, {	-- Set Them Free
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
-						["provider"] = { "n", 100982 },	-- Sevis Brightflame
-						["coord"] = { 33.9, 69.9, 672 },
+						["qg"] = 94410,	-- Allari the Souleater
+						["coord"] = { 33.9, 70.0, 672 },
+						["groups"] = {
+							i(128227),	-- Soulwrought Key (QI!)
+							i(128952, { ["races"] = ALLIANCE_ONLY }),	-- Torment Ender's Chestguard
+							i(133312, { ["races"] = HORDE_ONLY }),	-- Torment Ender's Chestguard
+						},
 					}),
 					q(39049, {	-- Eye On the Prize
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
-						["provider"] = { "n", 94410 },	-- Allari the Souleater
+						["qg"] = 94410,	-- Allari the Souleater
 						["coord"] = { 33.9, 70.0, 672 },
-						["groups"] = {
-							i(201989, {	-- Twisted Heart
-								["timeline"] = { ADDED_10_0_2_LAUNCH },
-							}),
-						},
 					}),
-					q(38759, {	-- Set Them Free
+					q(40379, {	-- Enter the Illidari: Coilskar
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
-						["provider"] = { "n", 94410 },	-- Allari the Souleater
-						["coord"] = { 33.9, 70.0, 672 },
-						["groups"] = {
-							i(128952),	-- Torment Ender's Chestguard
-							i(133312),	-- Torment Ender's Chestguard
-						},
+						["qg"] = 100982,	-- Sevis Brightflame
+						["coord"] = { 33.9, 69.9, 672 },
 					}),
 					q(39050, {	-- Meeting With the Queen
 						["sourceQuests"] = {
@@ -68,96 +78,87 @@ root(ROOTS.Zones, {
 							39049,	-- Eye on the Prize
 							38759,	-- Set Them Free
 						},
-						["provider"] = { "n", 93759 },	-- Jace Darkweaver
+						["qg"] = 93759,	-- Jace Darkweaver
 						["coord"] = { 38.8, 60.6, 672 },
-					}),
-					q(38766, {	-- Before We're Overrun
-						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
-						["provider"] = { "n", 93759 },	-- Jace Darkweaver
-						["coord"] = { 38.8, 60.6, 672 },
-						["groups"] = {
-							i(201989, {	-- Twisted Heart
-								["timeline"] = { ADDED_10_0_2_LAUNCH },
-							}),
-						},
 					}),
 					q(38765, {	-- Enter the Illidari: Shivarra
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
-						["provider"] = { "n", 93759 },	-- Jace Darkweaver
+						["qg"] = 93759,	-- Jace Darkweaver
 						["coord"] = { 38.8, 60.6, 672 },
 						["groups"] = {
-							i(128951),	-- Leggings of Sacrifice
-							i(133316),	-- Leggings of Sacrifice
+							i(128951, { ["races"] = ALLIANCE_ONLY }),	-- Leggings of Sacrifice
+							i(133316, { ["races"] = HORDE_ONLY }),	-- Leggings of Sacrifice
 						},
+					}),
+					q(38766, {	-- Before We're Overrun
+						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
+						["qg"] = 93759,	-- Jace Darkweaver
+						["coord"] = { 38.8, 60.6, 672 },
 					}),
 					q(38813, {	-- Orders for Your Captains
 						["sourceQuests"] = {
 							38766,	-- Before We're Overrun
 							38765,	-- Enter the Illidari: Shivarra
 						},
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(39262, {	-- Give Me Sight Beyond Sight
 						["sourceQuests"] = { 38813 },	-- Orders For Your Captains
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(39495, {	-- Hidden No More
 						["sourceQuests"] = { 39262 },	-- Give Me Sight Beyond Sight
-						["provider"] = { "n", 96436 },	-- Jace Darkweaver
-						["coord"] = { 64.0, 52.2, 672 },
-						["groups"] = {
-							i(201989, {	-- Twisted Heart
-								["timeline"] = { ADDED_10_0_2_LAUNCH },
-							}),
-						},
-					}),
-					q(38819, {	-- Their Numbers Are Legion
-						["sourceQuests"] = { 39495 },	-- Hidden No More
-						["provider"] = { "n", 96420 },	-- Cyana Nightglaive
-						["coord"] = { 60.5, 44.8, 672 },
-						["groups"] = {
-							i(128950),	-- Demon-Rend Shoulderblades
-							i(133311),	-- Demon-Rend Shoulderblades
-						},
+						["qg"] = 96436,	-- Jace Darkweaver
+						["coord"] = { 64.0, 52.3, 672 },
 					}),
 					q(38727, {	-- Stop the Bombardment
 						["sourceQuests"] = { 39495 },	-- Hidden No More
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(38725, {	-- Into the Foul Creche
 						["sourceQuests"] = { 39495 },	-- Hidden No More
-						["provider"] = { "n", 96655 },	-- Allari the Souleater
+						["qg"] = 96655,	-- Allari the Souleater
 						["coord"] = { 60.5, 44.6, 672 },
 						["isBreadcrumb"] = true,
+					}),
+					q(38819, {	-- Their Numbers Are Legion
+						["sourceQuests"] = { 39495 },	-- Hidden No More
+						["qg"] = 96420,	-- Cyana Nightglaive
+						["coord"] = { 60.5, 44.8, 672 },
+						["groups"] = {
+							i(128950, { ["races"] = ALLIANCE_ONLY }),	-- Demon-Rend Shoulderblades
+							i(133311, { ["races"] = HORDE_ONLY }),	-- Demon-Rend Shoulderblades
+						},
 					}),
 					q(40222, {	-- The Imp Mother's Tome
 						["sourceQuests"] = {
 							39495,	-- Hidden No More
 							38725,	-- Into the Foul Creche
 						},
-						["provider"] = { "n", 98711 },	-- Kor'vas Bloodthorn
+						["qg"] = 98711,	-- Kor'vas Bloodthorn
 						["coord"] = { 73.1, 33.8, 672 },
 						["groups"] = {
-							i(128954),	-- Power Handler's Gloves
-							i(133314),	-- Power Handler's Gloves
+							i(129957),	-- Tome of Fel Secrets (QI!)
+							i(128954, { ["races"] = ALLIANCE_ONLY }),	-- Power Handler's Gloves
+							i(133314, { ["races"] = HORDE_ONLY }),	-- Power Handler's Gloves
 						},
 					}),
 					q(40051, {	-- Fel Secrets
 						["sourceQuests"] = { 40222 },	-- The Imp Mother's Tome
-						["provider"] = { "n", 99045 },	-- Kor'vas Bloodthorn
+						["qg"] = 99045,	-- Kor'vas Bloodthorn
 						["coord"] = { 60.5, 44.8, 672 },
 					}),
 					q(39515, {	-- Vengeance Will Be Mine! [Only if you choose Vengeance Spec]
 						["sourceQuests"] = { 40051 },	-- Fel Secrets
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(39516, {	-- Cry Havoc and Let Slip the Illidari! [Only if you choose Havoc Spec]
 						["sourceQuests"] = { 40051 },	-- Fel Secrets
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(39663, {	-- On Felbat Wings
@@ -165,29 +166,38 @@ root(ROOTS.Zones, {
 							39516,	-- Cry Havoc and Let Slip the Illidari!
 							39515,	-- Vengeance Will Be Mine!
 						},
-						["provider"] = { "n", 93127 },	-- Kayn Sunfury
+						["qg"] = 93127,	-- Kayn Sunfury
 						["coord"] = { 60.5, 44.7, 672 },
 					}),
 					q(38728, {	-- The Keystone
 						["sourceQuests"] = { 39663 },	-- On Felbat Wings
-						["provider"] = { "n", 97297 },	-- Cyana Nightglaive
+						["qg"] = 97297,	-- Cyana Nightglaive
 						["coord"] = { 69.9, 44.2, 672 },
 						["groups"] = {
-							i(128955),	-- The Brood Queen's Veil
-							i(133310),	-- The Brood Queen's Veil
+							i(124672),	-- Sargerite Keystone (QI!)
+							i(128955, { ["races"] = ALLIANCE_ONLY }),	-- The Brood Queen's Veil
+							i(133310, { ["races"] = HORDE_ONLY }),	-- The Brood Queen's Veil
 						},
 					}),
 					q(38729, {	-- Return to the Black Temple
+						["description"] = "Maiev upgrades your uncommon Illidari Glaives to Fel-Etched Glaives after this quest is completed.",
 						["sourceQuests"] = { 38728 },	-- The Keystone
-						["provider"] = { "n", 97303 },	-- Kayn Sunfury
+						["qg"] = 97303,	-- Kayn Sunfury
 						["coord"] = { 69.8, 37.9, 672 },
 						["groups"] = {
 							i(132243),	-- Fel-Etched Glaive
+							i(128956),	-- Fel-Etched Glaive
 						},
 					}),
+					n(REWARDS, sharedData({
+						["timeline"] = { ADDED_10_0_2_LAUNCH },
+						["filterID"] = CONSUMABLES,
+					}, {
+						i(201989),	-- Twisted Heart
+					})),
 				}),
 				n(RARES, {
-					n(97058, { -- Count Nefarious
+					n(97058, {	-- Count Nefarious
 						["questID"] = 40231,	-- Nefarious Ring
 						["coord"] = { 63.7, 23.2, 672 },
 						["groups"] = {
@@ -196,10 +206,10 @@ root(ROOTS.Zones, {
 					}),
 					n(97370, {	-- General Volroth
 						["questID"] = 40234,
-						["coord"] = { 68.6, 27.6, 672 },
+						["coord"] = { 68.6, 27.5, 672 },
 						["groups"] = {
-							i(128947),	-- Pit Lord's Cuffs
-							i(133313),	-- Pit Lord's Cuffs
+							i(128947, { ["races"] = ALLIANCE_ONLY }),	-- Pit Lord's Cuffs
+							i(133313, { ["races"] = HORDE_ONLY }),	-- Pit Lord's Cuffs
 						},
 					}),
 					n(97059, {	-- King Voras
@@ -209,7 +219,7 @@ root(ROOTS.Zones, {
 							i(128944),	-- Voras' Silk Drape
 						},
 					}),
-					n(97057, { -- Overseer Brutarg
+					n(97057, {	-- Overseer Brutarg
 						["questID"] = 40233,	-- Brutarg's Sword Tip
 						["coord"] = { 81.1, 41.4, 672 },
 						["groups"] = {
@@ -265,7 +275,7 @@ root(ROOTS.Zones, {
 					o(244692, {	-- Small Treasure Chest
 						["questID"] = 39972,	-- Legion Healthstone
 						["coords"] = {
-							{ 48.8, 15.6, 673 },
+							{ 48.7, 15.6, 673 },
 							{ 63.7, 54.3, 672 },
 						},
 						["icon"] = 308482,	-- Grey Treasure Chest
@@ -290,8 +300,10 @@ root(ROOTS.Zones, {
 					}),
 					o(244701, {	-- Small Treasure Chest
 						["questID"] = 39977,
-						["description"] = "Cave entrance is located at 71.0 54.2.",
-						["coord"] = { 74.3, 54.5, 672 },
+						["coords"] = {
+							{ 70.7, 54.0, 672 },	-- Cave entrance
+							{ 74.3, 54.5, 672 },	-- Small Treasure Chest
+						},
 						["icon"] = 308482,
 					}),
 					o(244699, {	-- Small Treasure Chest
@@ -318,6 +330,11 @@ root(ROOTS.Zones, {
 						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 				}),
+				n(ZONE_REWARDS, {
+					i(129210),	-- Fel Crystal Fragments
+					i(129196),	-- Legion Healthstone
+					i(132753),	-- Legion Rations
+				}),
 				m(677, {	-- Vault of the Wardens: Vault of Silence
 					["icon"] = 1387709,	-- Wardens Owl
 					["maps"] = {
@@ -325,29 +342,38 @@ root(ROOTS.Zones, {
 						679,	-- Third Floor
 					},
 					["groups"] = {
+						explorationHeader({
+							visit_exploration(7864,{coord={24.4,74.5,679}}),	-- Chamber of Night
+							visit_exploration(7870,{coord={34.8,48.5,678}}),	-- Fallen Passage
+							visit_exploration(7872,{coord={75.1,36.5,677}}),	-- Illidari Ward
+							visit_exploration(7866,{coord={39.1,48.2,678}}),	-- The Demon Ward
+							visit_exploration(7865,{coord={24.4,27.8,679}}),	-- The Warden's Court
+							visit_exploration(7871,{coord={60.1,36.5,677}}),	-- Tomb of the Penitent
+							visit_exploration(7867,{coord={46.8,63.5,678}}),	-- Vault of Ice
+							visit_exploration(7869,{coord={46.7,33.8,678}}),	-- Vault of Law
+							visit_exploration(7868,{coord={57.0,48.2,678}}),	-- Vault of Mirrors
+							visit_exploration(7819,{coord={49.9,72.2,677}}),	-- Vault of the Betrayer
+							visit_exploration(7814,{coord={69.6,77.6,679}}),	-- Vault of the Wardens
+						}),
+						n(BONUS_OBJECTIVES, {
+							q(39742, {	-- Vault of the Wardens
+								["sourceQuests"] = { 38672 },	-- Breaking Out
+							}),
+						}),
 						n(QUESTS, {
 							q(38672, {	-- Breaking Out
-								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
 								["sourceQuests"] = { 38729 },	-- Return to the Black Temple
-								["provider"] = { "n", 92718 },	-- Maiev Shadowsong
+								["qg"] = 92718,	-- Maiev Shadowsong
 								["coord"] = { 80.1, 36.6, 677 },
-								["groups"] = {
-									i(132243),	-- Fel-Etched Glaive
-									i(128956),	-- Fel-Etched Glaive
-								},
-							}),
-							q(39742, {	-- Vault of the Wardens
-								["description"] = "This is a bonus objective.",
-								["sourceQuests"] = { 38672 },	-- Breaking Out
 							}),
 							q(38689, {	-- Fel Infusion
 								["sourceQuests"] = { 38672 },	-- Breaking Out
-								["provider"] = { "n", 92986 },	-- Altruis the Sufferer
-								["coord"] = { 74.4, 37.1, 677 },
+								["qg"] = 92986,	-- Altruis the Sufferer
+								["coord"] = { 74.4, 37.2, 677 },
 							}),
 							q(38690, {	-- Rise of the Illidari
 								["sourceQuests"] = { 38672 },	-- Breaking Out
-								["provider"] = { "n", 92980 },	-- Kayn Sunfury
+								["qg"] = 92980,	-- Kayn Sunfury
 								["coord"] = { 74.4, 35.9, 677 },
 							}),
 							q(38723, {	-- Stop Gul'dan! [Havoc Version]
@@ -355,7 +381,7 @@ root(ROOTS.Zones, {
 									38689,	-- Fel Infusion
 									38690,	-- Rise of the Illidari
 								},
-								["provider"] = { "n", 92718 },	-- Maiev Shadowsong
+								["qg"] = 92718,	-- Maiev Shadowsong
 								["coord"] = { 49.4, 49.7, 677 },
 							}),
 							q(40253, {	-- Stop Gul'dan! [Vengeance Version]
@@ -363,47 +389,37 @@ root(ROOTS.Zones, {
 									38689,	-- Fel Infusion
 									38690,	-- Rise of the Illidari
 								},
-								["provider"] = { "n", 92718 },	-- Maiev Shadowsong
+								["qg"] = 92718,	-- Maiev Shadowsong
 								["coord"] = { 49.4, 49.7, 677 },
 							}),
 							q(39682, {	-- Grand Theft Felbat
 								["sourceQuests"] = { 38723, 40253 },	-- Stop Gul'dan!
-								["provider"] = { "n", 96665 },	-- Kayn Sunfury
+								["qg"] = 96665,	-- Kayn Sunfury
 								["coord"] = { 50.8, 72.8, 677 },
 							}),
 							q(39683, {	-- Forged in Fire [Havoc Only]
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["provider"] = { "n", 96675 },	-- Allari the Souleater
+								["qg"] = 96675,	-- Allari the Souleater
 								["coord"] = { 41.0, 47.1, 678 },
-								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
-								},
 							}),
 							q(40254, {	-- Forged in Fire [Vengeance Only]
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["provider"] = { "n", 96675 },	-- Allari the Souleater
+								["qg"] = 96675,	-- Allari the Souleater
 								["coord"] = { 41.0, 47.1, 678 },
+							}),
+							q(39685, {	-- Frozen in Time
+								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
+								["qg"] = 97643,	-- Kor'vas Bloodthorn
+								["coord"] = { 41.3, 47.4, 678 },
 								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
+									i(128949, { ["races"] = ALLIANCE_ONLY }),	-- Infernal Firecord Sash
+									i(133315, { ["races"] = HORDE_ONLY }),	-- Infernal Firecord Sash
 								},
 							}),
 							q(39684, {	-- Beam Me Up
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["provider"] = { "n", 97643 },	-- Kor'vas Bloodthorn
-								["coord"] = { 41.3, 47.3, 678 },
-							}),
-							q(39685, {	-- Frozen in Time
-								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["provider"] = { "n", 97643 },	-- Kor'vas Bloodthorn
-								["coord"] = { 41.3, 47.3, 678 },
-								["groups"] = {
-									i(128949),	-- Infernal Firecord Sash
-									i(133315),	-- Infernal Firecord Sash
-								},
+								["qg"] = 97643,	-- Kor'vas Bloodthorn
+								["coord"] = { 41.3, 47.4, 678 },
 							}),
 							q(39686, {	-- All The Way Up
 								["sourceQuests"] = {
@@ -412,70 +428,50 @@ root(ROOTS.Zones, {
 									39684,	-- Beam Me Up
 									39685,	-- Frozen in Time
 								},
-								["provider"] = { "n", 96675 },	-- Allari the Souleater
+								["qg"] = 96675,	-- Allari the Souleater
 								["coord"] = { 41.1, 47.1, 678 },
 							}),
 							q(40373, {	-- A New Direction
 								["sourceQuests"] = { 39686 },	-- All The Way Up
-								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
-								["coord"] = { 24.4, 55.7, 679 },
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
+								["coord"] = { 24.4, 55.8, 679 },
 								["groups"] = {
-									i(138970),	-- Helm of Reaffirmed Purpose
-									i(141650),	-- Helm of Reaffirmed Purpose
+									i(138970, { ["races"] = ALLIANCE_ONLY }),	-- Helm of Reaffirmed Purpose
+									i(141650, { ["races"] = HORDE_ONLY }),	-- Helm of Reaffirmed Purpose
 								},
 							}),
 							q(39688, {	-- Between Us and Freedom / Nightelf [Havoc]
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
-								--["coord"] = { 24.4, 55.7, 679 },	-- Vault of the Wardens
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
+								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["races"] = { NIGHTELF },
-								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
-								},
 							}),
 							q(40255, {	-- Between Us and Freedom / Night Elf [Vengeance]
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
-								--["coord"] = { 24.4, 55.7, 679 },	-- Vault of the Wardens
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
+								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["races"] = { NIGHTELF },
-								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
-								},
 							}),
 							q(39694, {	-- Between Us and Freedom / Blood Elf [Havoc]
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
 								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["races"] = { BLOODELF },
-								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
-								},
 							}),
 							q(40256, {	-- Between Us and Freedom / Blood Elf [Vengeance]
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
+								["qg"] = 97644,	-- Kor'vas Bloodthorn
 								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["races"] = { BLOODELF },
-								["groups"] = {
-									i(201989, {	-- Twisted Heart
-										["timeline"] = { ADDED_10_0_2_LAUNCH },
-									}),
-								},
 							}),
 							q(39690, {	-- Illidari, We Are Leaving / Horde
 								["sourceQuests"] = { 39694, 40256 },	-- Between Us and Freedom
-								["provider"] = { "n", 97978 },	-- Archmage Khadgar
+								["qg"] = 97978,	-- Archmage Khadgar
 								["races"] = { BLOODELF },
 							}),
 							q(39689, {	-- Illidari, We Are Leaving / Alliance
 								["sourceQuests"] = { 39688, 40255 },	-- Between Us and Freedom
-								["provider"] = { "n", 97978 },	-- Archmage Khadgar
+								["qg"] = 97978,	-- Archmage Khadgar
 								["races"] = { NIGHTELF },
 							}),
 						}),
@@ -489,7 +485,7 @@ root(ROOTS.Zones, {
 							}),
 							n(97069, {	-- Wrath-Lord Lekos
 								["questID"] = 40301,	-- Lekos' Leash
-								["coord"] = { 69.1, 27.6, 677 },
+								["coord"] = { 69.1, 27.3, 677 },
 								["groups"] = {
 									i(128958),	-- Lekos' Leash
 								},

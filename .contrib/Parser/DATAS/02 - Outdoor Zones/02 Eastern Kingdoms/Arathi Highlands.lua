@@ -2476,11 +2476,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						-- #if AFTER TBC
-						i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
+						applyclassicphase(TBC_PHASE_ONE, i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
 							["isLimited"] = true,
-						}),
-						-- #endif
+							["timeline"] = { ADDED_2_0_5 },
+						})),
 						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2535,11 +2534,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						-- #if AFTER TBC
-						i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
+						applyclassicphase(TBC_PHASE_ONE, i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
 							["isLimited"] = true,
-						}),
-						-- #endif
+							["timeline"] = { ADDED_2_0_5 },
+						})),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { REMOVED_4_1_0 },	-- Now taught by trainer, recipe removed from the game.
 						}),

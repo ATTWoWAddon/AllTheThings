@@ -194,6 +194,9 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				header(HEADERS.Spell, 1810,	 {	-- Lockpicking
+					o(184740),	-- Wicker Chest
+				}),
 				petbattles({
 					n(66551, {	-- Ras'an <Master Pet Tamer>
 						["coord"] = { 17.2, 50.6, ZANGARMARSH },

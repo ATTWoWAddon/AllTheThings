@@ -67,23 +67,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 52870,	-- Scrimshaw Cache
 				["coord"] = { 72.6, 21.5, TIRAGARDE_SOUND },
 			}),
-			o_repeated(sharedData({	-- Treasure Chest
-				["isDaily"] = true,
-			},{
-				-- Objects
-				o(273900, {	-- Treasure Chest
-					["questID"] = 48593,
-					["coords"] = {
-						{ 83.3, 74.6, TIRAGARDE_SOUND },
-					},
-				}),
-				o(275071, {	-- Treasure Chest
-					["questID"] = 48618,
-					["coords"] = {
-						{ 88.0, 79.6, TIRAGARDE_SOUND },
-					},
-				}),
-			})),
 		}),
 	}),
 })));
@@ -95,15 +78,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(48595),	-- Tiragarde Sound repeatable random chest
 				q(48596),	-- Tiragarde Sound repeatable random chest
 				q(48598),	-- Tiragarde Sound repeatable random chest
-				q(48599),	-- Tiragarde Sound repeatable random chest
 				q(48607),	-- Tiragarde Sound repeatable random chest
 				q(48608),	-- Tiragarde Sound repeatable random chest
 				q(48609),	-- Tiragarde Sound repeatable random chest
 				q(48611),	-- Tiragarde Sound repeatable random chest
-				q(48612),	-- Tiragarde Sound repeatable random chest
-				q(48617),	-- Tiragarde Sound repeatable random chest
 				q(48619),	-- Tiragarde Sound repeatable random chest
-				q(48621),	-- Tiragarde Sound repeatable random chest
 				q(50166),	-- Tiragarde Sound repeatable random chest
 				q(50952),	-- Tiragarde Sound repeatable random chest
 				q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)

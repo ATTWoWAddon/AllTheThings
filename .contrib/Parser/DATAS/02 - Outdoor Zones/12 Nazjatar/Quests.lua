@@ -2621,19 +2621,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 56.3, 15.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
-			["groups"] = {
-				i(168260),	-- Void Cache Key (QI!)
-			},
+			["groups"] = { i(168260) },	-- Void Cache Key (QI!)
 		}),
 		q(56232, {	-- Void Cache (H)
 			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 			["sourceQuest"] = 55500,	-- Save a Friend
+			["provider"] = { "o", 326026 },	-- Void Cache
 			["coord"] = { 56.3, 15.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["groups"] = {
-				i(168260),	-- Void Cache Key (QI!)
-			},
+			["groups"] = { i(168260) },	-- Void Cache Key (QI!)
 		}),
 		q(55777, {	-- Wanted: Braxicus
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",

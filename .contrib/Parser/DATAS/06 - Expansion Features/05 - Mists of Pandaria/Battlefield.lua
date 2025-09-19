@@ -1,23 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-BATTLEFIELD_BARRENS = createHeader({
-	readable = "Battlefield: Barrens",
-	icon = 252178,
-	text = {
-		en = "Battlefield: Barrens",
-		de = "Schlachtfeld: Brachland",
-		es = "Campo de batalla: Los Baldíos",
-		mx = "Campo de batalla: Los Baldíos",
-		fr = "Champ de bataille : les Tarides",
-		it = "Campo di battaglia: le Savane",
-		ko = "전쟁터: 불모의 땅",
-		pt = "Campo de Batalha: Sertões",
-		ru = "Поле битвы: Степи",
-		cn = "战线：贫瘠之地",
-		tw = "戰爭前線：貧瘠之地",
-	},
-});
+
 local RADICAL_MOJO = 97849;
 local LATENT_KORKRON_HELM = 97829;
 local LATENT_KORKRON_SPAULDERS = 97831;
@@ -26,13 +10,30 @@ local LATENT_KORKRON_GLOVES = 97828;
 local LATENT_KORKRON_BELT = 97832;
 local LATENT_KORKRON_LEGGINGS = 97830;
 local LATENT_KORKRON_BOOTS = 97827;
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 } }, {
+
+-- #if MOP
+local BATTLEFIELD_ONUPDATE = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+	else
+		t.u = ]] .. MOP_PHASE_ESCALATION .. [[;
+		t.description = "This will be removed when the Siege of Orgrimmar phase begins."
+	end
+end]];
+-- #endif
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
+	["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+	-- #if MOP
+	["OnUpdate"] = BATTLEFIELD_ONUPDATE,
+	-- #endif
+}, {
 	n(BATTLEFIELD_BARRENS, {
 		["description"] = "During 5.3 a big battle occured in Barrens.",
 		["maps"] = {
-			VALE_OF_ETERNAL_BLOSSOMS,
 			DUROTAR,
 			NORTHERN_BARRENS,
+			VALE_OF_ETERNAL_BLOSSOMS,
 		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -311,7 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			n(VENDORS, {
 				n(71226, {	-- Ravika <Darkspear Quartermaster> 5.3 Version
-					["description"] = "Rebellion Quatermaster during Barrens Battlefield.",
+					["description"] = "Rebellion Quartermaster during Barrens Battlefield.",
 					["groups"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
 						i(97919),	-- Whole-Body Shinka' (TOY!)
@@ -326,7 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						i(LATENT_KORKRON_BELT),
 						i(LATENT_KORKRON_LEGGINGS),
 						i(LATENT_KORKRON_BOOTS),
-						i(97990),	-- Raptorhide Boxing Gloves (QUEST!)
+						i(97990),	-- Raptorhide Boxing Gloves (QI!)
 						i(98561),	-- Darkspear Battle Standard
 						i(98563),	-- Rainstick
 					},
@@ -345,7 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ESCALATION, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
 	m(KALIMDOR, {
 		m(DUROTAR, {
 			n(BATTLEFIELD_BARRENS, {
@@ -360,4 +361,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 		}),
 	}),
-})));
+}))));

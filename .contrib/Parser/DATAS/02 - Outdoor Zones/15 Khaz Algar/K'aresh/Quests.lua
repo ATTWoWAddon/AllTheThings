@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	m(KARESH, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 41970, {	-- The Knife's Edge
@@ -528,7 +528,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["qg"] = 230786,	-- Soul-Scribe
 						["coord"] = { 74.4, 30.4, KARESH },
 					}),
-					q(84897, {	-- The Calm Before we Storm
+					q(84897, {	-- The Calm Before We Storm
 						["sourceQuests"] = { 84896 },	-- The Next Dimension
 						["qg"] = 230818,	-- Soul-Scribe
 						["coord"] = { 60.2, 29.2, KARESH },
@@ -536,20 +536,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					------ Stay awhile and listen ------
 					--hqt(???, {	-- Stay awhile and listen: Alleria Windrunner - no questID
 					--	["name"] = "Stay awhile and listen: Alleria Windrunner",
-					--	["description"] = "Dialogue becomes available after you accept 'The Calm Before we Storm' (84897).",
+					--	["description"] = "Dialogue becomes available after you accept 'The Calm Before We Storm' (84897).",
 					--	["sourceQuests"] = { 84896 },	-- The Next Dimension
 					--	["qg"] = 230817,	-- Alleria Windrunner
 					--	["coord"] = { 60.7, 27.9, KARESH },
 					--}),
 					--
 					q(84899, {	-- Shadowguard Diffusion
-						["sourceQuests"] = { 84897 },	-- The Calm Before we Storm
+						["sourceQuests"] = { 84897 },	-- The Calm Before We Storm
 						["qg"] = 230817,	-- Alleria Windrunner
 						["coord"] = { 60.7, 27.9, KARESH },
 						["groups"] = { i(238390) },	-- Soulbreaker's Sigil
 					}),
 					q(84898, {	-- The Sands of K'aresh
-						["sourceQuests"] = { 84896 },	-- The Next Dimension
+						["sourceQuests"] = { 84897 },	-- The Calm Before We Storm
 						["qg"] = 231443,	-- Soul-Scribe
 						["coord"] = { 60.7, 28.0, KARESH },
 						["groups"] = {
@@ -643,18 +643,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						},
 					}),
 					q(86456, {	-- An Elegy for a Silent World
+						["sourceQuests"] = { 85037 },	-- That's a Wrap
 						["provider"] = { "i", 234273 },	-- A Dimmed Crystal
+					}),
+					------ Stay awhile and listen ------
+					hqt(90753, {	-- Stay awhile and listen: Alleria Windrunner
+						["name"] = "Stay awhile and listen: Alleria Windrunner",
+						["description"] = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
+						["sourceQuest"] = 86456,	-- An Elegy for a Silent World
+						["qg"] = 243653,	-- Alleria Windrunner
+						["coord"] = { 75.4, 33.7, KARESH },
 					}),
 					q(86457, {	-- A Lullaby of Hope
 						["sourceQuest"] = 86456,	-- An Elegy for a Silent World
-						--["qg"] = ,
-						--["coord"] = ,
+						["qg"] = 231820,	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
 					}),
 					q(86458, {	-- A Song for Our Future
 						["sourceQuest"] = 86457,	-- A Lullaby of Hope
 						["qg"] = 231820,	-- Ve'nari
 						["coord"] = { 75.9, 34.2, KARESH },
 						["groups"] = { campsite(119) },	-- The Fate of the Devoured (CS!)
+					}),
+					------ Stay awhile and listen ------
+					hqt(90708, {	-- Stay awhile and listen: Ve'nari
+						["name"] = "Stay awhile and listen: Ve'nari",
+						["sourceQuest"] = 86458,	-- A Song for Our Future
+						["qg"] = 235155,	-- Ve'nari
+						["maps"] = { 2449 },	-- Eco-Dome Al'dani
 					}),
 				})),
 				n(REWARDS, {
@@ -1138,7 +1154,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["coord"] = { 75.8, 33.9, KARESH },
 					}),
 					q(87291, {	-- Salad Bar
-						["sourceQuests"] = { 87292 },	-- Rooting for Trouble
+						["sourceQuests"] = {
+							87292,	-- Rooting for Trouble
+							86351,	-- Strike a Pose
+						},
 						["qg"] = 232385,	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["groups"] = {
@@ -1455,6 +1474,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 							o(523827, {	-- Comfy Snake Bed
 								["coord"] = { 74.5, 31.2, KARESH },
 							}),
+							o(523828, {	-- Extra Cushiony Moss
+								["coord"] = { 74.5, 31.2, KARESH },
+							}),
 						},
 					}),
 					q(88670, {	-- Soothing Serpents
@@ -1497,6 +1519,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				q(85520),	-- Lil' Lapbugs
 				q(89306),	-- Rays of Sunshine
 				q(84992),	-- Slatebacks
+				q(88976, {	-- The Hope of K'aresh
+					["sourceAchievement"] = 41811,	-- Ecological Stability
+					["qg"] = 231820,	-- Ve'nari
+					["coord"] = { 75.9, 34.2, KARESH },
+					["groups"] = { i(242713) },	-- Resplendent K'arroc (MOUNT!)
+				}),
 			})),
 			header(HEADERS.Achievement, 41809, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Ecological Variety (Daily Quests) Exo note: These are probably weekly quests, not daily.
 				header(HEADERS.AchCriteria, 41809.01, {	-- Honey Bees
@@ -1536,7 +1564,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 					}),
 					q(89210, {	-- Photography is the Bee's Knees
+						["qg"] = 232385,	-- Botanist Alaenra
+						["coord"] = { 75.8, 33.9, KARESH },
 						["isDaily"] = true,
+						["groups"] = { i(238903) },	-- Appropriated Azerothian Camera (PQI!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.02, {	-- Slatebacks
@@ -1577,12 +1608,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["groups"] = { i(238911) },	-- Pheromone Disperser (PQI!)
 					}),
 					q(89212, {	-- Royal Photographer
+						["qg"] = 230736,	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
 						["isDaily"] = true,
+						["groups"] = { i(238906) },	-- Appropriated Azerothian Camera (PQI!)
 					}),
-					q(85465, {	--
+					q(85465, {	-- Play Ball
+						["qg"] = 230736,	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
 						["isDaily"] = true,
+						["groups"] = { i(238907) },	-- Anima Orb (QI!)
 					}),
-					q(85721, {	--
+					q(85721, {	-- Killer Instinct
+						["qg"] = 235353,	-- Hemet Nesingwary
+						["coord"] = { 75.8, 34.0, KARESH },
 						["isDaily"] = true,
 					}),
 				}),
@@ -1608,6 +1647,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["groups"] = { i(229393) },	-- Lapbug Essence (QI!)
 					}),
 					q(85470, {	-- Root Redux
+						["qg"] = 232385,	-- Botanist Alaenra
+						["coord"] = { 75.8, 33.9, KARESH },
 						["isDaily"] = true,
 					}),
 					q(89254, {	-- Shutterbug
@@ -1635,8 +1676,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["groups"] = { i(238915) },	-- Anima Orb (PQI!)
 					}),
-					q(89197, {	--
+					q(89197, {	-- Ray Ranching
+						["qg"] =  230736,	-- Om'talad
+						["coord"] = { 75.9, 34.2, KARESH },
 						["isDaily"] = true,
+						["groups"] = { i(238910) },	-- Lasso (QI!)
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.06, {	-- Hard K'arroc
@@ -1658,15 +1702,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["groups"] = { i(238913) },	-- Condenser Disc (PQI!)
 					}),
-					q(86342, {	--
+					q(86342, {	-- Soaring over K'aresh
+						["qg"] = 230736,	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
 						["isDaily"] = true,
 					}),
-					q(89192, {	--
+					q(89192, {	-- A Hard Day's Work
+						["qg"] = 231820,	-- Ve'nari
+						["coord"] = { 75.8, 34.2, KARESH },
 						["isDaily"] = true,
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.07, {	-- A Slither of Snakes
 					q(88659, {	-- More Cozy Beds
+						["qg"] = 235353,	-- Hemet Nesingwary
+						["coord"] = { 75.8, 34.0, KARESH },
 						["isDaily"] = true,
 					}),
 					q(88981, {	-- Nesting Upkeep
@@ -1731,6 +1781,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					["groups"] = {
 						-- The only observed source of this currency is this repeatable quest
 						currency(3303),	-- Untethered Coin
+						i(255676),	-- Phase Diver's Cache
 					},
 				}),
 			}),
@@ -2211,20 +2262,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 				}),
 			}),
-			header(HEADERS.Achievement, 42737, {	-- Capstoned
-				q(89294, {	-- Special Assignment: Aligned Views
-					["coord"] = { 77.2, 48.9, KARESH },
-					["groups"] = {
-						i(244842),	-- Fabled Veteran's Cache
-					},
-				}),
-				q(89293, {	-- Special Assignment: Overshadowed
-					["coord"] = { 56.3, 27.3, KARESH },
-					["groups"] = {
-						i(244842),	-- Fabled Veteran's Cache
-					},
-				}),
-			}),
 			header(HEADERS.Achievement, 41980, {	-- Vigiliante
 				q(87344, {	-- A Key Threat
 					["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
@@ -2235,12 +2272,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(89490, {	-- Warrant: Arcana-Monger So'zer
 						["qg"] = 241951,	-- Warrant: Arcana-Monger So'zer
 						["coord"] = { 48.4, 59.0, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(239314) },	-- Arcane Lure (QS!)
 					}),
 					q(90081, {	-- Arcane Runed Sigil
 						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
-						--["provider"] = { "n", ?? },
-						--["coord"] = { x, y, z },
+						["qg"] = 238181,	-- Acquisitioner Xy'gui
+						["coords"] = {
+							{ 51.2, 48.2, KARESH },
+							{ 53.8, 26.8, KARESH },
+						},
 						["repeatable"] = true,
 						["groups"] = {
 							i(245740),	-- Etched Fragment (QI!)
@@ -2250,19 +2291,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 					q(89501, {	-- Charged Crystal
 						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
-						--["provider"] = { "n", ?? },
-						--["coord"] = { x, y, z },
+						["qg"] = 238057,	-- Engineer Om'loof
+						["coord"] = { 48.0, 57.4, KARESH },
 						["repeatable"] = true,
 						["groups"] = {
-							i(239446),	-- Uncharged Cyrstal (QI!)
+							o(528358, {	-- Uncharged Cyrstal
+								i(239446),	-- Uncharged Cyrstal (QI!)
+							}),
 							--
 							i(239607),	-- Charged Cyrstal (QI!) (Reward, required for the Warrant)
 						},
 					}),
 					q(89505, {	-- Smuggler's Mark
 						["description"] = "This quest is available during 'Warrant: Arcana-Monger So'zer'.",
-						--["provider"] = { "n", ?? },
-						--["coord"] = { x, y, z },
+						["qg"] = 238486,	-- Citizen Om'sto
+						["coord"] = { 46.6, 50.2, KARESH_TAZAVESH },
 						["repeatable"] = true,
 						["groups"] = {
 							i(239497),	-- Hidden Tokens (QI!)
@@ -2283,6 +2326,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(87405, {	-- Warrant: Grubber
 						["qg"] = 238548,	-- Warrant: Grubber
 						["coord"] = { 48.5, 58.8, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(236967) },	-- Grubber Lure (QS!)
 					}),
 					q(87548, {	-- A Dozen Veilshards
@@ -2338,6 +2382,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(87343, {	-- Warrant: Hollowbane
 						["qg"] = 238269,	-- Warrant: Hollowbane
 						["coord"] = { 48.5, 58.1, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(236957) },	-- Hollowbane Portal Key (QS!)
 					}),
 					q(87597, {	-- A Bag of Veilshards
@@ -2392,6 +2437,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(87546, {	-- Warrant: Purple Peat
 						["qg"] = 238919,	-- Warrant: Purple Peat
 						["coord"] = { 48.5, 58.3, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(239276) },	-- Purple Peat Cell Key (QS!)
 					}),
 					q(87404, {	-- Energy Encapsulation
@@ -2434,6 +2480,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(87001, {	-- Warrant: Shatterpulse
 						["qg"] = 238265,	-- Warrant: Shatterpulse
 						["coord"] = { 48.5, 58.6, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(236353) },	-- Shatterpulse Cell Key (QS!)
 					}),
 					q(87010, {	-- Calculation Container
@@ -2476,6 +2523,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(87345, {	-- Warrant: Xy'vox the Twisted
 						["qg"] = 238271,	-- Warrant: Xy'Vox the Twisted
 						["coord"] = { 48.5, 58.4, KARESH_TAZAVESH },
+						["isMonthly"] = true,	-- unflagged after completing 4 warrants
 						["groups"] = { i(236753) },	-- Xy'vox Refuge Dampener (QS!)
 					}),
 					q(87376, {	-- Ethereal Seal
@@ -2487,6 +2535,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 							o_repeated({	-- Tazavesh Trash
 								i(236781),	-- Discarded Shadow Writ (QI!)
 								o(516994),	-- Tazavesh Trash
+								o(516995),	-- Tazavesh Trash
 								o(517000),	-- Tazavesh Trash
 							}),
 							--
@@ -2540,27 +2589,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 			}),
 			-- Quest (item) obtained during Devourer Attack
+			-- These source quests aren't 'really' required since the item can be looted and quest started at a later time
+			-- Maybe somehow they should link to the respective rares? probably not important enough
 			q(85722, {	-- Making a Deposit
 				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-				["sourceQuests"] = { 84993 },	-- Devourer Attack: The Oasis
+				-- ["sourceQuests"] = { 84993 },	-- Devourer Attack: The Oasis
 				["provider"] = { "i", 232467 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89061, {	-- Making a Deposit
 				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-				["sourceQuests"] = { 86447 },	-- Devourer Attack: Eco-dome: Primus
+				-- ["sourceQuests"] = { 86447 },	-- Devourer Attack: Eco-dome: Primus
 				["provider"] = { "i", 238663 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89062, {	-- Making a Deposit
 				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-				["sourceQuests"] = { 86464 },	-- Devourer Attack: The Atrium
+				-- ["sourceQuests"] = { 86464 },	-- Devourer Attack: The Atrium
 				["provider"] = { "i", 238664 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 			q(89063, {	-- Making a Deposit
 				["description"] = "|cFFE50D12SUGGESTION:|r Do not turn in this quest unless you have 'Ecological Succession' world quest active. Contributes 20% towards World Quest completion.",
-				["sourceQuests"] = { 86465 },	-- Devourer Attack: Tazavesh
+				-- ["sourceQuests"] = { 86465 },	-- Devourer Attack: Tazavesh
 				["provider"] = { "i", 238665 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
@@ -2569,32 +2620,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			--q(90954),	-- TODO: Alex - ach(42742) Power of the Reshii / Regalia of the Reshii upgrade, should probably be automated in future?
 		}),
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {
 		m(KARESH, {
 			n(QUESTS, {
 				-- During main story
 				q(84901),	-- [DNT] CH04Q05p - Triggered after completing 'Like a Knife Through Aether' (84900)
 				q(85111),	-- [DNT] K'aresh Trust Renown Unlock (spellID 466720)
-				q(91812),	-- Triggered after unlocking Renown 2 of The K'aresh Trust right after completing 'The Tabiqa' (84910)
-				q(92627, {	-- Triggered after unlocking Renown 3 of The K'aresh Trust, unlocks Warrants
+				q(91812),	-- Triggered after unlocking Renown 2 of The K'aresh Trust right after completing 'The Tabiqa' (84910) / WQ unlocked? (spellID 1246760)
+				q(92626),	-- pop after 84967 (renown 3?) (spellID - 1256253 / Mark 11.2 Chapter 1 pre rep buff completion), phase into 'normal' Tazavesh area?
+				q(92627, {	-- Triggered after unlocking Renown 3 of The K'aresh Trust, unlocks Warrants (spellID 1256199 / Mark 11.2 Chapter 2 pre rep buff completion)
 					["name"] = "An Arrested Development",
 				}),
-				q(92629),	-- Triggered after completing 'That's a Wrap' (85037)
+				q(92628),	-- Mark 11.2 Chapter 3 pre rep buff completion (spellID 1256254 / 1246760?)
+				q(92629),	-- Triggered after completing 'That's a Wrap' (85037) / Skip for 86820 questID being up for alts? (spellID 1256200 / Mark 11.2 Chapter 4 pre rep buff completion)
 				-- ??
 				q(90812),	-- pop randomly at start/intro quest chain (spellID - 1234922 / Warrant)
+				q(90814),	-- pop after 84958 with 90812
 				q(90807, { ["repeatable"] = true, } ),	-- Triggered at the completion of a main Warrant quest and obtaining the (QS!) item that starts "Eliminate" quest
-				q(91286, { ["repeatable"] = true, } ),	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Oasis' (84993)
-				q(91287, { ["repeatable"] = true, } ),	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Eco-dome: Primus' (86447)
-				q(91289, { ["repeatable"] = true, } ),	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: The Atrium' (86464)
-				q(91290, { ["repeatable"] = true, } ),	-- Devoured Energy-Pod (QS!) loot lockout after the completion of 'Devourer Attack: Tazavesh' (86465)
-
 				q(87348, name(HEADERS.Item,236632)),	-- Triggered when 'Puch of Voidbane Gems' is bought from the vendor
 
 				q(90955, name(HEADERS.Spell,1249651)),	-- Boon of the Reshii (Reshii Wraps 1st upgrade)
 			}),
 		}),
 	}),
-})));
+}));
