@@ -394,6 +394,101 @@ api.Set.Trackable = function(active)
 	app.ShowTrackableThings = active and api.Filters.Trackable or Filter;
 end
 
+-- Expansion Filters (Retail Only)
+if app.IsRetail then
+	-- Cache for expansion filter settings
+	local ExpansionFilters = {}
+
+	-- Map patch values to expansion IDs
+	local function GetExpansionFromPatch(patch)
+		if not patch then return nil end
+		-- awp field uses patch format like 10205 for patch 1.2.5
+		-- Extract expansion ID from patch value
+		return math.floor(patch / 10000)
+	end
+
+	DefineToggleFilter("ExpansionContent", AccountFilters,
+	function(item)
+		-- Check if item has awp (added with patch) field
+		local awp = GetRelativeValue(item, "awp")
+		if awp then
+			local expansionID = GetExpansionFromPatch(awp)
+			if expansionID then
+				-- Check if this expansion is enabled
+				local key = "ExpansionFilter:" .. (expansionID == 1 and "Classic" or
+					expansionID == 2 and "TBC" or
+					expansionID == 3 and "Wrath" or
+					expansionID == 4 and "Cata" or
+					expansionID == 5 and "MoP" or
+					expansionID == 6 and "WoD" or
+					expansionID == 7 and "Legion" or
+					expansionID == 8 and "BfA" or
+					expansionID == 9 and "SL" or
+					expansionID == 10 and "DF" or
+					expansionID == 11 and "TWW" or nil)
+
+				if key and ExpansionFilters[key] == false then
+					return false
+				end
+			end
+		end
+
+		-- Check timeline field as fallback
+		local timeline = GetRelativeValue(item, "timeline")
+		if timeline then
+			-- Timeline can be a single value or table
+			local firstTimeline = type(timeline) == "table" and timeline[1] or timeline
+			if firstTimeline then
+				local expansionID = GetExpansionFromPatch(firstTimeline)
+				if expansionID then
+					local key = "ExpansionFilter:" .. (expansionID == 1 and "Classic" or
+						expansionID == 2 and "TBC" or
+						expansionID == 3 and "Wrath" or
+						expansionID == 4 and "Cata" or
+						expansionID == 5 and "MoP" or
+						expansionID == 6 and "WoD" or
+						expansionID == 7 and "Legion" or
+						expansionID == 8 and "BfA" or
+						expansionID == 9 and "SL" or
+						expansionID == 10 and "DF" or
+						expansionID == 11 and "TWW" or nil)
+
+					if key and ExpansionFilters[key] == false then
+						return false
+					end
+				end
+			end
+		end
+
+		return true
+	end)
+
+	-- Update expansion filter cache when settings change
+	app.AddEventHandler("OnRecalculate_NewSettings", function()
+		ExpansionFilters["ExpansionFilter:Classic"] = app.Settings:Get("ExpansionFilter:Classic")
+		ExpansionFilters["ExpansionFilter:TBC"] = app.Settings:Get("ExpansionFilter:TBC")
+		ExpansionFilters["ExpansionFilter:Wrath"] = app.Settings:Get("ExpansionFilter:Wrath")
+		ExpansionFilters["ExpansionFilter:Cata"] = app.Settings:Get("ExpansionFilter:Cata")
+		ExpansionFilters["ExpansionFilter:MoP"] = app.Settings:Get("ExpansionFilter:MoP")
+		ExpansionFilters["ExpansionFilter:WoD"] = app.Settings:Get("ExpansionFilter:WoD")
+		ExpansionFilters["ExpansionFilter:Legion"] = app.Settings:Get("ExpansionFilter:Legion")
+		ExpansionFilters["ExpansionFilter:BfA"] = app.Settings:Get("ExpansionFilter:BfA")
+		ExpansionFilters["ExpansionFilter:SL"] = app.Settings:Get("ExpansionFilter:SL")
+		ExpansionFilters["ExpansionFilter:DF"] = app.Settings:Get("ExpansionFilter:DF")
+		ExpansionFilters["ExpansionFilter:TWW"] = app.Settings:Get("ExpansionFilter:TWW")
+
+		-- Enable the filter if any expansion is disabled
+		local anyDisabled = false
+		for _, enabled in pairs(ExpansionFilters) do
+			if enabled == false then
+				anyDisabled = true
+				break
+			end
+		end
+		api.Set.ExpansionContent(anyDisabled)
+	end)
+end
+
 -- Visible
 local function FilterVisible(group)
 	return group.visible;
