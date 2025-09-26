@@ -18,6 +18,60 @@ end
 local textExpansionsExplain = child:CreateTextLabel(L.EXPANSION_EXPLAIN_LABEL or "Select which expansions' content you want to see in your collection windows.")
 textExpansionsExplain:SetPoint("TOPLEFT", headerExpansions, "BOTTOMLEFT", 0, -4)
 
+-- Enable/Disable Feature Toggle
+local checkboxEnableFeature = child:CreateCheckBox(
+	L.EXPANSION_FILTER_ENABLE or "Enable Expansion Filtering",
+	function(self)
+		-- OnRefresh
+		local enabled = settings:Get("ExpansionFilter:Enabled")
+		self:SetChecked(enabled)
+		if app.MODE_DEBUG_OR_ACCOUNT then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+		-- Update state of other controls based on enabled state
+		for _, checkbox in pairs(self.expansionCheckboxes or {}) do
+			if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
+				checkbox:Disable()
+				checkbox:SetAlpha(0.4)
+			else
+				checkbox:Enable()
+				checkbox:SetAlpha(1)
+			end
+		end
+		for _, button in pairs(self.controlButtons or {}) do
+			if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
+				button:Disable()
+			else
+				button:Enable()
+			end
+		end
+	end,
+	function(self)
+		-- OnClick
+		local enabled = self:GetChecked()
+		settings:Set("ExpansionFilter:Enabled", enabled)
+		-- Refresh all expansion checkboxes and buttons
+		for _, checkbox in pairs(self.expansionCheckboxes or {}) do
+			if checkbox.OnRefresh then checkbox:OnRefresh() end
+		end
+		for _, button in pairs(self.controlButtons or {}) do
+			if button.OnRefresh then button:OnRefresh() end
+		end
+		settings:UpdateMode(1)
+	end
+)
+checkboxEnableFeature:SetATTTooltip(L.EXPANSION_FILTER_ENABLE_TOOLTIP or "Enable or disable the expansion content filtering feature.")
+checkboxEnableFeature:SetPoint("TOPLEFT", textExpansionsExplain, "BOTTOMLEFT", -2, -10)
+checkboxEnableFeature.expansionCheckboxes = {}
+checkboxEnableFeature.controlButtons = {}
+
+-- Mark as Work In Progress
+checkboxEnableFeature:MarkAsWIP()
+
 -- Expansion data structure
 local expansions = {
 	{ id = 1, name = L.EXPANSION_DATA[1].name or "Classic", key = "ExpansionFilter:Classic" },
@@ -34,14 +88,15 @@ local expansions = {
 }
 
 -- Create checkboxes for each expansion
-local lastCheckbox = textExpansionsExplain
+local lastCheckbox = checkboxEnableFeature
 for i, expansion in ipairs(expansions) do
 	local checkbox = child:CreateCheckBox(
 		expansion.name,
 		function(self)
 			-- OnRefresh
 			self:SetChecked(settings:Get(self.expansionKey))
-			if app.MODE_DEBUG_OR_ACCOUNT then
+			local enabled = settings:Get("ExpansionFilter:Enabled")
+			if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
 				self:Disable()
 				self:SetAlpha(0.4)
 			else
@@ -59,7 +114,7 @@ for i, expansion in ipairs(expansions) do
 	checkbox.expansionID = expansion.id
 
 	if i == 1 then
-		checkbox:SetPoint("TOPLEFT", lastCheckbox, "BOTTOMLEFT", -2, -10)
+		checkbox:SetPoint("TOPLEFT", lastCheckbox, "BOTTOMLEFT", 18, -10)  -- Indented 20px to the right
 	else
 		checkbox:SetPoint("TOPLEFT", lastCheckbox, "BOTTOMLEFT", 0, -4)
 	end
@@ -68,6 +123,8 @@ for i, expansion in ipairs(expansions) do
 	checkbox:SetATTTooltip(string.format(L.EXPANSION_FILTER_TOOLTIP or "Toggle visibility of %s content", expansion.name))
 
 	lastCheckbox = checkbox
+	-- Store reference in the enable feature checkbox
+	table.insert(checkboxEnableFeature.expansionCheckboxes, checkbox)
 end
 
 -- Control buttons
@@ -85,12 +142,14 @@ local buttonEnableAll = child:CreateButton(
 buttonEnableAll:SetPoint("LEFT", headerExpansions, 0, 0)
 buttonEnableAll:SetPoint("BOTTOM", child, "BOTTOM", 0, 10)
 buttonEnableAll.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	local enabled = settings:Get("ExpansionFilter:Enabled")
+	if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
+table.insert(checkboxEnableFeature.controlButtons, buttonEnableAll)
 
 local buttonDisableAll = child:CreateButton(
 	{ text = L.EXPANSION_DISABLE_ALL or "Disable All", tooltip = L.EXPANSION_DISABLE_ALL_TOOLTIP or "Hide content from all expansions" },
@@ -105,12 +164,14 @@ local buttonDisableAll = child:CreateButton(
 )
 buttonDisableAll:AlignAfter(buttonEnableAll, 8)
 buttonDisableAll.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	local enabled = settings:Get("ExpansionFilter:Enabled")
+	if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
+table.insert(checkboxEnableFeature.controlButtons, buttonDisableAll)
 
 local buttonCurrentOnly = child:CreateButton(
 	{ text = L.EXPANSION_CURRENT_ONLY or "Current Only", tooltip = L.EXPANSION_CURRENT_ONLY_TOOLTIP or "Show only current expansion content" },
@@ -126,12 +187,14 @@ local buttonCurrentOnly = child:CreateButton(
 )
 buttonCurrentOnly:AlignAfter(buttonDisableAll, 8)
 buttonCurrentOnly.OnRefresh = function(self)
-	if app.MODE_DEBUG_OR_ACCOUNT then
+	local enabled = settings:Get("ExpansionFilter:Enabled")
+	if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
 		self:Disable()
 	else
 		self:Enable()
 	end
 end
+table.insert(checkboxEnableFeature.controlButtons, buttonCurrentOnly)
 
 -- Store in profile checkbox
 if app.IsRetail then

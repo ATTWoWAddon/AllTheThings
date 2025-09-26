@@ -101,7 +101,8 @@ local GeneralSettingsBase = {
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
 		["PresetRestore"] = {},
-		-- Expansion Filters (default to all enabled)
+		-- Expansion Filters (disabled by default)
+		["ExpansionFilter:Enabled"] = false,
 		["ExpansionFilter:Classic"] = true,
 		["ExpansionFilter:TBC"] = true,
 		["ExpansionFilter:Wrath"] = true,

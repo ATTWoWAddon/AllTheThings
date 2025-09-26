@@ -465,27 +465,35 @@ if app.IsRetail then
 
 	-- Update expansion filter cache when settings change
 	app.AddEventHandler("OnRecalculate_NewSettings", function()
-		ExpansionFilters["ExpansionFilter:Classic"] = app.Settings:Get("ExpansionFilter:Classic")
-		ExpansionFilters["ExpansionFilter:TBC"] = app.Settings:Get("ExpansionFilter:TBC")
-		ExpansionFilters["ExpansionFilter:Wrath"] = app.Settings:Get("ExpansionFilter:Wrath")
-		ExpansionFilters["ExpansionFilter:Cata"] = app.Settings:Get("ExpansionFilter:Cata")
-		ExpansionFilters["ExpansionFilter:MoP"] = app.Settings:Get("ExpansionFilter:MoP")
-		ExpansionFilters["ExpansionFilter:WoD"] = app.Settings:Get("ExpansionFilter:WoD")
-		ExpansionFilters["ExpansionFilter:Legion"] = app.Settings:Get("ExpansionFilter:Legion")
-		ExpansionFilters["ExpansionFilter:BfA"] = app.Settings:Get("ExpansionFilter:BfA")
-		ExpansionFilters["ExpansionFilter:SL"] = app.Settings:Get("ExpansionFilter:SL")
-		ExpansionFilters["ExpansionFilter:DF"] = app.Settings:Get("ExpansionFilter:DF")
-		ExpansionFilters["ExpansionFilter:TWW"] = app.Settings:Get("ExpansionFilter:TWW")
+		-- Check if the feature is enabled
+		local featureEnabled = app.Settings:Get("ExpansionFilter:Enabled")
 
-		-- Enable the filter if any expansion is disabled
-		local anyDisabled = false
-		for _, enabled in pairs(ExpansionFilters) do
-			if enabled == false then
-				anyDisabled = true
-				break
+		if featureEnabled then
+			ExpansionFilters["ExpansionFilter:Classic"] = app.Settings:Get("ExpansionFilter:Classic")
+			ExpansionFilters["ExpansionFilter:TBC"] = app.Settings:Get("ExpansionFilter:TBC")
+			ExpansionFilters["ExpansionFilter:Wrath"] = app.Settings:Get("ExpansionFilter:Wrath")
+			ExpansionFilters["ExpansionFilter:Cata"] = app.Settings:Get("ExpansionFilter:Cata")
+			ExpansionFilters["ExpansionFilter:MoP"] = app.Settings:Get("ExpansionFilter:MoP")
+			ExpansionFilters["ExpansionFilter:WoD"] = app.Settings:Get("ExpansionFilter:WoD")
+			ExpansionFilters["ExpansionFilter:Legion"] = app.Settings:Get("ExpansionFilter:Legion")
+			ExpansionFilters["ExpansionFilter:BfA"] = app.Settings:Get("ExpansionFilter:BfA")
+			ExpansionFilters["ExpansionFilter:SL"] = app.Settings:Get("ExpansionFilter:SL")
+			ExpansionFilters["ExpansionFilter:DF"] = app.Settings:Get("ExpansionFilter:DF")
+			ExpansionFilters["ExpansionFilter:TWW"] = app.Settings:Get("ExpansionFilter:TWW")
+
+			-- Enable the filter if any expansion is disabled
+			local anyDisabled = false
+			for _, enabled in pairs(ExpansionFilters) do
+				if enabled == false then
+					anyDisabled = true
+					break
+				end
 			end
+			api.Set.ExpansionContent(anyDisabled)
+		else
+			-- Feature is disabled, disable the filter entirely
+			api.Set.ExpansionContent(false)
 		end
-		api.Set.ExpansionContent(anyDisabled)
 	end)
 end
 
