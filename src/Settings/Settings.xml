@@ -6,6 +6,7 @@
 	<Script file="Pages/About.lua"/>
 	<Script file="Pages/General.lua"/>
 	<Script file="Pages/General - Filters.lua"/>
+	<Script file="Pages/General - Expansion Filters.lua"/>
 	<Script file="Pages/General - Unobtainables.lua"/>
 	<Script file="Pages/Interface.lua"/>
 	<Script file="Pages/Interface - Accessibility.lua"/>
