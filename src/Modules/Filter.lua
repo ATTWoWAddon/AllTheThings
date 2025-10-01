@@ -433,33 +433,6 @@ if app.IsRetail then
 			end
 		end
 
-		-- Check timeline field as fallback
-		local timeline = GetRelativeValue(item, "timeline")
-		if timeline then
-			-- Timeline can be a single value or table
-			local firstTimeline = type(timeline) == "table" and timeline[1] or timeline
-			if firstTimeline then
-				local expansionID = GetExpansionFromPatch(firstTimeline)
-				if expansionID then
-					local key = "ExpansionFilter:" .. (expansionID == 1 and "Classic" or
-						expansionID == 2 and "TBC" or
-						expansionID == 3 and "Wrath" or
-						expansionID == 4 and "Cata" or
-						expansionID == 5 and "MoP" or
-						expansionID == 6 and "WoD" or
-						expansionID == 7 and "Legion" or
-						expansionID == 8 and "BfA" or
-						expansionID == 9 and "SL" or
-						expansionID == 10 and "DF" or
-						expansionID == 11 and "TWW" or nil)
-
-					if key and ExpansionFilters[key] == false then
-						return false
-					end
-				end
-			end
-		end
-
 		return true
 	end)
 
