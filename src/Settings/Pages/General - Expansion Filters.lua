@@ -23,8 +23,7 @@ local checkboxEnableFeature = child:CreateCheckBox(
 	L.EXPANSION_FILTER_ENABLE,
 	function(self)
 		-- OnRefresh
-		local enabled = settings:Get("ExpansionFilter:Enabled")
-		self:SetChecked(enabled)
+		self:SetChecked(settings:Get("ExpansionFilter:Enabled"))
 		if app.MODE_DEBUG_OR_ACCOUNT then
 			self:Disable()
 			self:SetAlpha(0.4)
@@ -32,44 +31,15 @@ local checkboxEnableFeature = child:CreateCheckBox(
 			self:Enable()
 			self:SetAlpha(1)
 		end
-		-- Update state of other controls based on enabled state
-		for _, checkbox in pairs(self.expansionCheckboxes or {}) do
-			if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
-				checkbox:Disable()
-				checkbox:SetAlpha(0.4)
-			else
-				checkbox:Enable()
-				checkbox:SetAlpha(1)
-			end
-		end
-		for _, button in pairs(self.controlButtons or {}) do
-			if app.MODE_DEBUG_OR_ACCOUNT or not enabled then
-				button:Disable()
-			else
-				button:Enable()
-			end
-		end
 	end,
 	function(self)
 		-- OnClick
-		local enabled = self:GetChecked()
-		settings:Set("ExpansionFilter:Enabled", enabled)
-		-- Refresh all expansion checkboxes and buttons
-		for _, checkbox in pairs(self.expansionCheckboxes or {}) do
-			if checkbox.OnRefresh then checkbox:OnRefresh() end
-		end
-		for _, button in pairs(self.controlButtons or {}) do
-			if button.OnRefresh then button:OnRefresh() end
-		end
+		settings:Set("ExpansionFilter:Enabled", self:GetChecked())
 		settings:UpdateMode(1)
 	end
 )
 checkboxEnableFeature:SetATTTooltip(L.EXPANSION_FILTER_ENABLE_TOOLTIP)
 checkboxEnableFeature:SetPoint("TOPLEFT", textExpansionsExplain, "BOTTOMLEFT", -2, -10)
-checkboxEnableFeature.expansionCheckboxes = {}
-checkboxEnableFeature.controlButtons = {}
-
--- Mark as Work In Progress
 checkboxEnableFeature:MarkAsWIP()
 
 -- Expansion data structure
@@ -123,8 +93,6 @@ for i, expansion in ipairs(expansions) do
 	checkbox:SetATTTooltip(string.format(L.EXPANSION_FILTER_TOOLTIP, expansion.name))
 
 	lastCheckbox = checkbox
-	-- Store reference in the enable feature checkbox
-	table.insert(checkboxEnableFeature.expansionCheckboxes, checkbox)
 end
 
 -- Control buttons
@@ -149,7 +117,6 @@ buttonEnableAll.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(checkboxEnableFeature.controlButtons, buttonEnableAll)
 
 local buttonDisableAll = child:CreateButton(
 	{ text = L.EXPANSION_DISABLE_ALL, tooltip = L.EXPANSION_DISABLE_ALL_TOOLTIP },
@@ -171,7 +138,6 @@ buttonDisableAll.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(checkboxEnableFeature.controlButtons, buttonDisableAll)
 
 local buttonCurrentOnly = child:CreateButton(
 	{ text = L.EXPANSION_CURRENT_ONLY, tooltip = L.EXPANSION_CURRENT_ONLY_TOOLTIP },
@@ -194,7 +160,6 @@ buttonCurrentOnly.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-table.insert(checkboxEnableFeature.controlButtons, buttonCurrentOnly)
 
 -- Store in profile checkbox
 if app.IsRetail then
