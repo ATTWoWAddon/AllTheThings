@@ -160,17 +160,3 @@ buttonCurrentOnly.OnRefresh = function(self)
 		self:Enable()
 	end
 end
-
--- Store in profile checkbox
-if app.IsRetail then
-	local checkboxStoreInProfile = child:CreateCheckBox(L.STORE_IN_PROFILE_BUTTON,
-	function(self)
-		self:SetChecked(settings:Get("Profile:StoreExpansionFilters"))
-	end,
-	function(self)
-		settings:Set("Profile:StoreExpansionFilters", self:GetChecked())
-		app.HandleEvent("OnSettingChanged", "Profile:StoreExpansionFilters");
-	end)
-	checkboxStoreInProfile:SetATTTooltip(L.STORE_EXPANSION_FILTERS_TOOLTIP)
-	checkboxStoreInProfile:AlignAfter(buttonCurrentOnly, 8)
-end
