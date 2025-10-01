@@ -5,22 +5,22 @@ local L, settings = app.L, app.Settings;
 if not app.IsRetail then return end
 
 -- Settings: Expansion Filters Page
-local child = settings:CreateOptionsPage(L.EXPANSION_FILTERS_PAGE or "Expansion Filters", L.GENERAL_PAGE)
+local child = settings:CreateOptionsPage(L.EXPANSION_FILTERS_PAGE, L.GENERAL_PAGE)
 
 -- Header
-local headerExpansions = child:CreateHeaderLabel(L.EXPANSION_FILTER_LABEL or "Filter by Expansion")
+local headerExpansions = child:CreateHeaderLabel(L.EXPANSION_FILTER_LABEL)
 if child.separator then
 	headerExpansions:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else
 	headerExpansions:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
 end
 
-local textExpansionsExplain = child:CreateTextLabel(L.EXPANSION_EXPLAIN_LABEL or "Select which expansions' content you want to see in your collection windows.")
+local textExpansionsExplain = child:CreateTextLabel(L.EXPANSION_EXPLAIN_LABEL)
 textExpansionsExplain:SetPoint("TOPLEFT", headerExpansions, "BOTTOMLEFT", 0, -4)
 
 -- Enable/Disable Feature Toggle
 local checkboxEnableFeature = child:CreateCheckBox(
-	L.EXPANSION_FILTER_ENABLE or "Enable Expansion Filtering",
+	L.EXPANSION_FILTER_ENABLE,
 	function(self)
 		-- OnRefresh
 		local enabled = settings:Get("ExpansionFilter:Enabled")
@@ -64,7 +64,7 @@ local checkboxEnableFeature = child:CreateCheckBox(
 		settings:UpdateMode(1)
 	end
 )
-checkboxEnableFeature:SetATTTooltip(L.EXPANSION_FILTER_ENABLE_TOOLTIP or "Enable or disable the expansion content filtering feature.")
+checkboxEnableFeature:SetATTTooltip(L.EXPANSION_FILTER_ENABLE_TOOLTIP)
 checkboxEnableFeature:SetPoint("TOPLEFT", textExpansionsExplain, "BOTTOMLEFT", -2, -10)
 checkboxEnableFeature.expansionCheckboxes = {}
 checkboxEnableFeature.controlButtons = {}
@@ -74,17 +74,17 @@ checkboxEnableFeature:MarkAsWIP()
 
 -- Expansion data structure
 local expansions = {
-	{ id = 1, name = L.EXPANSION_DATA[1].name or "Classic", key = "ExpansionFilter:Classic" },
-	{ id = 2, name = L.EXPANSION_DATA[2].name or "The Burning Crusade", key = "ExpansionFilter:TBC" },
-	{ id = 3, name = L.EXPANSION_DATA[3].name or "Wrath of the Lich King", key = "ExpansionFilter:Wrath" },
-	{ id = 4, name = L.EXPANSION_DATA[4].name or "Cataclysm", key = "ExpansionFilter:Cata" },
-	{ id = 5, name = L.EXPANSION_DATA[5].name or "Mists of Pandaria", key = "ExpansionFilter:MoP" },
-	{ id = 6, name = L.EXPANSION_DATA[6].name or "Warlords of Draenor", key = "ExpansionFilter:WoD" },
-	{ id = 7, name = L.EXPANSION_DATA[7].name or "Legion", key = "ExpansionFilter:Legion" },
-	{ id = 8, name = L.EXPANSION_DATA[8].name or "Battle for Azeroth", key = "ExpansionFilter:BfA" },
-	{ id = 9, name = L.EXPANSION_DATA[9].name or "Shadowlands", key = "ExpansionFilter:SL" },
-	{ id = 10, name = L.EXPANSION_DATA[10].name or "Dragonflight", key = "ExpansionFilter:DF" },
-	{ id = 11, name = L.EXPANSION_DATA[11].name or "The War Within", key = "ExpansionFilter:TWW" },
+	{ id = 1, name = _G.EXPANSION_NAME0, key = "ExpansionFilter:Classic" },
+	{ id = 2, name = _G.EXPANSION_NAME1, key = "ExpansionFilter:TBC" },
+	{ id = 3, name = _G.EXPANSION_NAME2, key = "ExpansionFilter:Wrath" },
+	{ id = 4, name = _G.EXPANSION_NAME3, key = "ExpansionFilter:Cata" },
+	{ id = 5, name = _G.EXPANSION_NAME4, key = "ExpansionFilter:MoP" },
+	{ id = 6, name = _G.EXPANSION_NAME5, key = "ExpansionFilter:WoD" },
+	{ id = 7, name = _G.EXPANSION_NAME6, key = "ExpansionFilter:Legion" },
+	{ id = 8, name = _G.EXPANSION_NAME7, key = "ExpansionFilter:BfA" },
+	{ id = 9, name = _G.EXPANSION_NAME8, key = "ExpansionFilter:SL" },
+	{ id = 10, name = _G.EXPANSION_NAME9, key = "ExpansionFilter:DF" },
+	{ id = 11, name = _G.EXPANSION_NAME10, key = "ExpansionFilter:TWW" },
 }
 
 -- Create checkboxes for each expansion
@@ -120,7 +120,7 @@ for i, expansion in ipairs(expansions) do
 	end
 
 	-- Set tooltip
-	checkbox:SetATTTooltip(string.format(L.EXPANSION_FILTER_TOOLTIP or "Toggle visibility of %s content", expansion.name))
+	checkbox:SetATTTooltip(string.format(L.EXPANSION_FILTER_TOOLTIP, expansion.name))
 
 	lastCheckbox = checkbox
 	-- Store reference in the enable feature checkbox
@@ -129,7 +129,7 @@ end
 
 -- Control buttons
 local buttonEnableAll = child:CreateButton(
-	{ text = L.EXPANSION_ENABLE_ALL or "Enable All", tooltip = L.EXPANSION_ENABLE_ALL_TOOLTIP or "Show content from all expansions" },
+	{ text = L.EXPANSION_ENABLE_ALL, tooltip = L.EXPANSION_ENABLE_ALL_TOOLTIP },
 	{
 		OnClick = function(self)
 			for _, expansion in ipairs(expansions) do
@@ -152,7 +152,7 @@ end
 table.insert(checkboxEnableFeature.controlButtons, buttonEnableAll)
 
 local buttonDisableAll = child:CreateButton(
-	{ text = L.EXPANSION_DISABLE_ALL or "Disable All", tooltip = L.EXPANSION_DISABLE_ALL_TOOLTIP or "Hide content from all expansions" },
+	{ text = L.EXPANSION_DISABLE_ALL, tooltip = L.EXPANSION_DISABLE_ALL_TOOLTIP },
 	{
 		OnClick = function(self)
 			for _, expansion in ipairs(expansions) do
@@ -174,7 +174,7 @@ end
 table.insert(checkboxEnableFeature.controlButtons, buttonDisableAll)
 
 local buttonCurrentOnly = child:CreateButton(
-	{ text = L.EXPANSION_CURRENT_ONLY or "Current Only", tooltip = L.EXPANSION_CURRENT_ONLY_TOOLTIP or "Show only current expansion content" },
+	{ text = L.EXPANSION_CURRENT_ONLY, tooltip = L.EXPANSION_CURRENT_ONLY_TOOLTIP },
 	{
 		OnClick = function(self)
 			local currentExpansion = app.CURRENT_EXPANSION or 11
@@ -198,7 +198,7 @@ table.insert(checkboxEnableFeature.controlButtons, buttonCurrentOnly)
 
 -- Store in profile checkbox
 if app.IsRetail then
-	local checkboxStoreInProfile = child:CreateCheckBox(L.STORE_IN_PROFILE_BUTTON or "Store in Profile",
+	local checkboxStoreInProfile = child:CreateCheckBox(L.STORE_IN_PROFILE_BUTTON,
 	function(self)
 		self:SetChecked(settings:Get("Profile:StoreExpansionFilters"))
 	end,
@@ -206,6 +206,6 @@ if app.IsRetail then
 		settings:Set("Profile:StoreExpansionFilters", self:GetChecked())
 		app.HandleEvent("OnSettingChanged", "Profile:StoreExpansionFilters");
 	end)
-	checkboxStoreInProfile:SetATTTooltip(L.STORE_EXPANSION_FILTERS_TOOLTIP or "Store these expansion filter settings in the current profile.")
+	checkboxStoreInProfile:SetATTTooltip(L.STORE_EXPANSION_FILTERS_TOOLTIP)
 	checkboxStoreInProfile:AlignAfter(buttonCurrentOnly, 8)
 end
