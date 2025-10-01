@@ -396,40 +396,20 @@ end
 
 -- Expansion Filters (Retail Only)
 if app.IsRetail then
-	-- Cache for expansion filter settings
+	-- Cache for expansion filter settings (indexed by expansion ID for fast lookup)
 	local ExpansionFilters = {}
-
-	-- Map patch values to expansion IDs
-	local function GetExpansionFromPatch(patch)
-		if not patch then return nil end
-		-- awp field uses patch format like 10205 for patch 1.2.5
-		-- Extract expansion ID from patch value
-		return math.floor(patch / 10000)
-	end
 
 	DefineToggleFilter("ExpansionContent", AccountFilters,
 	function(item)
 		-- Check if item has awp (added with patch) field
 		local awp = GetRelativeValue(item, "awp")
 		if awp then
-			local expansionID = GetExpansionFromPatch(awp)
-			if expansionID then
-				-- Check if this expansion is enabled
-				local key = "ExpansionFilter:" .. (expansionID == 1 and "Classic" or
-					expansionID == 2 and "TBC" or
-					expansionID == 3 and "Wrath" or
-					expansionID == 4 and "Cata" or
-					expansionID == 5 and "MoP" or
-					expansionID == 6 and "WoD" or
-					expansionID == 7 and "Legion" or
-					expansionID == 8 and "BfA" or
-					expansionID == 9 and "SL" or
-					expansionID == 10 and "DF" or
-					expansionID == 11 and "TWW" or nil)
-
-				if key and ExpansionFilters[key] == false then
-					return false
-				end
+			-- awp field uses patch format like 10205 for patch 1.2.5
+			-- Extract expansion ID from patch value (e.g., 10205 -> 1)
+			local expansionID = math.floor(awp / 10000)
+			-- Direct lookup: if ExpansionFilters[expansionID] is false, filter it out
+			if ExpansionFilters[expansionID] == false then
+				return false
 			end
 		end
 
@@ -442,22 +422,23 @@ if app.IsRetail then
 		local featureEnabled = app.Settings:Get("ExpansionFilter:Enabled")
 
 		if featureEnabled then
-			ExpansionFilters["ExpansionFilter:Classic"] = app.Settings:Get("ExpansionFilter:Classic")
-			ExpansionFilters["ExpansionFilter:TBC"] = app.Settings:Get("ExpansionFilter:TBC")
-			ExpansionFilters["ExpansionFilter:Wrath"] = app.Settings:Get("ExpansionFilter:Wrath")
-			ExpansionFilters["ExpansionFilter:Cata"] = app.Settings:Get("ExpansionFilter:Cata")
-			ExpansionFilters["ExpansionFilter:MoP"] = app.Settings:Get("ExpansionFilter:MoP")
-			ExpansionFilters["ExpansionFilter:WoD"] = app.Settings:Get("ExpansionFilter:WoD")
-			ExpansionFilters["ExpansionFilter:Legion"] = app.Settings:Get("ExpansionFilter:Legion")
-			ExpansionFilters["ExpansionFilter:BfA"] = app.Settings:Get("ExpansionFilter:BfA")
-			ExpansionFilters["ExpansionFilter:SL"] = app.Settings:Get("ExpansionFilter:SL")
-			ExpansionFilters["ExpansionFilter:DF"] = app.Settings:Get("ExpansionFilter:DF")
-			ExpansionFilters["ExpansionFilter:TWW"] = app.Settings:Get("ExpansionFilter:TWW")
+			-- Build cache indexed by expansion ID (1-11) for O(1) lookup
+			ExpansionFilters[1] = app.Settings:Get("ExpansionFilter:Classic")
+			ExpansionFilters[2] = app.Settings:Get("ExpansionFilter:TBC")
+			ExpansionFilters[3] = app.Settings:Get("ExpansionFilter:Wrath")
+			ExpansionFilters[4] = app.Settings:Get("ExpansionFilter:Cata")
+			ExpansionFilters[5] = app.Settings:Get("ExpansionFilter:MoP")
+			ExpansionFilters[6] = app.Settings:Get("ExpansionFilter:WoD")
+			ExpansionFilters[7] = app.Settings:Get("ExpansionFilter:Legion")
+			ExpansionFilters[8] = app.Settings:Get("ExpansionFilter:BfA")
+			ExpansionFilters[9] = app.Settings:Get("ExpansionFilter:SL")
+			ExpansionFilters[10] = app.Settings:Get("ExpansionFilter:DF")
+			ExpansionFilters[11] = app.Settings:Get("ExpansionFilter:TWW")
 
 			-- Enable the filter if any expansion is disabled
 			local anyDisabled = false
-			for _, enabled in pairs(ExpansionFilters) do
-				if enabled == false then
+			for i = 1, 11 do
+				if ExpansionFilters[i] == false then
 					anyDisabled = true
 					break
 				end
