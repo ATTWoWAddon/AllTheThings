@@ -78,7 +78,8 @@ namespace ATT
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
-            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> SharedDataByPrimaryKey { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
+            public static ConcurrentDictionary<string, ConcurrentDictionary<object, ConcurrentDictionary<string, object>>> SharedDataByPrimaryKey { get; }
+                = new ConcurrentDictionary<string, ConcurrentDictionary<object, ConcurrentDictionary<string, object>>>();
 
             /// <summary>
             /// The keys which should be merged based on a given merge object key
@@ -461,22 +462,18 @@ namespace ATT
                 if (databaseObject.TryGetValue(primaryKey, out object keyValue))
                 {
                     // get the container for objects of this key
-                    if (!SharedDataByPrimaryKey.TryGetValue(primaryKey, out Dictionary<object, IDictionary<string, object>> typeObjects))
-                    {
-                        typeObjects = new Dictionary<object, IDictionary<string, object>>();
-                        SharedDataByPrimaryKey.Add(primaryKey, typeObjects);
-                    }
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(primaryKey,
+                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
 
                     // get the specific merged object
-                    if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
-                    {
-                        merged = new Dictionary<string, object>();
-                        typeObjects.Add(keyValue, merged);
-                    }
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
+                        _ => new ConcurrentDictionary<string, object>());
 
                     foreach (var pair in databaseObject)
                     {
-                        if (pair.Key == primaryKey) continue;
+                        if (pair.Key == primaryKey)
+                            continue;
+
                         merged[pair.Key] = pair.Value;
                     }
                 }
@@ -495,37 +492,31 @@ namespace ATT
                 foreach (var mergeObjectFieldPair in MERGE_OBJECT_FIELDS)
                 {
                     // does this data contain the key?
-                    if (objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
+                    if (!objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
+                        continue;
+
+                    // only bother creating a merge container if the data contains a merging key
+                    if (!objectData.ContainsAnyKey(mergeObjectFieldPair.Value))
+                        continue;
+
+                    // get the container for objects of this key
+                    ConcurrentDictionary<object, ConcurrentDictionary<string, object>> typeObjects = SharedDataByPrimaryKey.GetOrAdd(mergeObjectFieldPair.Key,
+                        _ => new ConcurrentDictionary<object, ConcurrentDictionary<string, object>>());
+
+                    // get the specific merged object
+                    ConcurrentDictionary<string, object> merged = typeObjects.GetOrAdd(keyValue,
+                        _ => new ConcurrentDictionary<string, object>());
+
+                    //if (DebugMode)
+                    //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
+
+                    // merge the allowed fields by the key into the merged object
+                    foreach (string field in mergeObjectFieldPair.Value)
                     {
-                        // only bother creating a merge container if the data contains a merging key
-                        if (objectData.ContainsAnyKey(mergeObjectFieldPair.Value))
-                        {
-                            // get the container for objects of this key
-                            if (!SharedDataByPrimaryKey.TryGetValue(mergeObjectFieldPair.Key, out Dictionary<object, IDictionary<string, object>> typeObjects))
-                            {
-                                typeObjects = new Dictionary<object, IDictionary<string, object>>();
-                                SharedDataByPrimaryKey.Add(mergeObjectFieldPair.Key, typeObjects);
-                            }
+                        if (!objectData.TryGetValue(field, out object val))
+                            continue;
 
-                            // get the specific merged object
-                            if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
-                            {
-                                merged = new Dictionary<string, object>();
-                                typeObjects.Add(keyValue, merged);
-                            }
-
-                            //if (DebugMode)
-                            //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
-
-                            // merge the allowed fields by the key into the merged object
-                            foreach (string field in mergeObjectFieldPair.Value)
-                            {
-                                if (objectData.TryGetValue(field, out object val))
-                                {
-                                    merged[field] = val;
-                                }
-                            }
-                        }
+                        Merge(merged, field, val);
                     }
                 }
             }
@@ -534,20 +525,34 @@ namespace ATT
             /// Merges shared data from the database into the object.
             /// </summary>
             /// <param name="objectData">The object data to merge shared data into.</param>
-            internal static void MergeSharedDataIntoObject(IDictionary<string, object> objectData)
+            internal static void MergeSharedDataIntoObject(IDictionary<string, object> data)
             {
                 foreach (var container in SharedDataByPrimaryKey)
                 {
                     // does this data contain the key?
-                    if (objectData.TryGetValue(container.Key, out object keyValue))
+                    if (!data.TryGetValue(container.Key, out object keyValue))
+                        continue;
+
+                    // get the specific merged object
+                    if (!container.Value.TryGetValue(keyValue, out ConcurrentDictionary<string, object> commonData))
+                        continue;
+
+                    // merge the allowed fields by key into the data object
+                    if (!MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields))
+                        continue;
+
+                    foreach (var field in mergeFields)
                     {
-                        // get the specific merged object
-                        if (container.Value.TryGetValue(keyValue, out IDictionary<string, object> commonData))
+                        if (commonData.TryGetValue(field, out object val))
                         {
-                            // merge the allowed fields by the key into the data object
-                            foreach (var commonFieldPair in commonData)
-                                if (!objectData.ContainsKey(commonFieldPair.Key))
-                                    objectData[commonFieldPair.Key] = commonFieldPair.Value;
+                            if (!data.TryGetValue(field, out object existingVal))
+                            {
+                                data[field] = val;
+                            }
+                            else if (!Equals(existingVal, val))
+                            {
+                                LogDebugWarn($"Ignored different value for '{field}' in Object='{existingVal}' compared to DB='{val}'", data);
+                            }
                         }
                     }
                 }
