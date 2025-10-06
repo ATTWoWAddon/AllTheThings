@@ -107,7 +107,7 @@ namespace ATT
         /// </summary>
         public static Dictionary<string, int[]> FIRST_EXPANSION_PATCH { get; set; }
 
-        public static Dictionary<long,long> MAPID_MERGE_REPLACEMENTS { get; set; }
+        public static Dictionary<long, long> MAPID_MERGE_REPLACEMENTS { get; set; }
 
         /// <summary>
         /// Represents the function to use when performing a processing pass against the data
@@ -211,7 +211,7 @@ namespace ATT
         /// <summary>
         /// All of thePhase Constants listed by their constant name and id value.
         /// </summary>
-        private static IDictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
+        private static IDictionary<string, long> PHASE_CONSTANTS = new ConcurrentDictionary<string, long>();
 
         /// <summary>
         /// All of the Phase IDs that have been referenced somewhere in the database.
@@ -227,11 +227,6 @@ namespace ATT
         /// All of the Export Data Keys that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new ConcurrentDictionary<string, List<string>>();
-
-        /// <summary>
-        /// All of the quests that have been parsed sorted by Quest ID.
-        /// </summary>
-        private static IDictionary<long, IDictionary<string, object>> QUESTS = new Dictionary<long, IDictionary<string, object>>();
 
         /// <summary>
         /// All of the achievements that have been parsed sorted by Achievement ID.
@@ -604,7 +599,7 @@ namespace ATT
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
         /// </summary>
-        public static Dictionary<string, Dictionary<decimal, int>> TypeUseCounts { get; } = new Dictionary<string, Dictionary<decimal, int>>();
+        public static ConcurrentDictionary<string, ConcurrentDictionary<decimal, int>> TypeUseCounts { get; } = new ConcurrentDictionary<string, ConcurrentDictionary<decimal, int>>();
 
         /// <summary>
         /// A Dictionary of key-ID types and how many times each value of key-type has been referenced in the final DB
@@ -827,7 +822,7 @@ namespace ATT
             {
                 foreach (string type in configUseCounts)
                 {
-                    TypeUseCounts[type] = new Dictionary<decimal, int>();
+                    TypeUseCounts[type] = new ConcurrentDictionary<decimal, int>();
                 }
             }
             string[] configDebugDBs = Config["DebugDB"];
