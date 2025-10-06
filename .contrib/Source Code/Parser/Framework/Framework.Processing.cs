@@ -3982,6 +3982,12 @@ namespace ATT
                     }
                 }
             }
+
+            // Don't include 'nextQuests' on regular quests, only on breadcrumbs
+            if (!data.TryGetValue("isBreadcrumb", out bool isBreadcrumb) || !isBreadcrumb)
+            {
+                data.Remove("nextQuests");
+            }
         }
 
         private static void Consolidate_awprwp(IDictionary<string, object> data)
