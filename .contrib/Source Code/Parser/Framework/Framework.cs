@@ -153,6 +153,7 @@ namespace ATT
         {
             { "achID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "creatureID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "currencyID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "explorationID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "factionID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "flightpathID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
