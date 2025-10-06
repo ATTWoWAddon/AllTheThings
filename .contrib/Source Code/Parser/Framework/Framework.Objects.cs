@@ -2068,6 +2068,12 @@ end");
                                 return;
                             }
 
+                            // __parent is never merged into DB containers
+                            if (field == "__parent")
+                            {
+                                break;
+                            }
+
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
