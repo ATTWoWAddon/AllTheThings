@@ -1533,10 +1533,10 @@ namespace ATT
             data["_remove"] = false;
         }
 
-        private static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
+        internal static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                && idObj is long id
+                && idObj.TryConvert(out long id)
                 && id > 0
                 && fieldSources.TryGetValue(id, out sources))
             {
@@ -1552,7 +1552,7 @@ namespace ATT
             foreach (KeyValuePair<string, object> field in data)
             {
                 if (SOURCED.TryGetValue(field.Key, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                    && field.Value is long id && id > 0
+                    && field.Value.TryConvert(out long id) && id > 0
                     && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
                 {
                     yield return objectSources;
@@ -1563,7 +1563,7 @@ namespace ATT
         private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                && idObj is long id && id > 0
+                && idObj.TryConvert(out long id) && id > 0
                 && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
             {
                 yield return objectSources;
