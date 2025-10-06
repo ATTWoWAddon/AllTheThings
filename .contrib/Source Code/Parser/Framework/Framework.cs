@@ -1642,27 +1642,13 @@ namespace ATT
         }
 
         /// <summary>
-        /// Convert the Dictionary to JSON using Mini JSON.
-        /// </summary>
-        public static string ToJSON(IDictionary<string, object> data)
-        {
-            // typically we don't want to serialize the 'g' content of a given 'data' object
-            // bit clunky but minijson doesn't seem to have much functionality... hence 'mini'
-            return MiniJSON.Json.Serialize(data.AsEnumerable().Where(kvp => kvp.Key != "g").ToDictionary(kvp => kvp.Key, kvp => kvp.Value));
-        }
-
-        /// <summary>
         /// Convert the object to JSON using Mini JSON.
         /// </summary>
         /// <param name="obj">The object.</param>
         /// <returns>The JSON string.</returns>
         public static string ToJSON(object obj)
         {
-            if (obj is IDictionary<string, object> dict)
-            {
-                return ToJSON(dict);
-            }
-            else if (obj is IEnumerable<object> objs)
+            if (obj is IEnumerable<object> objs)
             {
                 return "[" + string.Join(",", objs.Select(o => ToJSON(o))) + "]";
             }

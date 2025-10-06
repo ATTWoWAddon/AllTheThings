@@ -77,6 +77,14 @@ namespace MiniJSON
     public static class Json
     {
         /// <summary>
+        /// A set of Dictionary keys that should be ignored when serializing to JSON
+        /// </summary>
+        public static HashSet<object> IGNORED_KEYS = new HashSet<object>()
+        {
+            "g", "__parent"
+        };
+
+        /// <summary>
         /// Parses the string json into a value
         /// </summary>
         /// <param name="json">A JSON string.</param>
@@ -518,7 +526,14 @@ namespace MiniJSON
                     SerializeString(e.ToString());
                     builder.Append(':');
 
-                    SerializeValue(obj[e]);
+                    if (IGNORED_KEYS.Contains(e))
+                    {
+                        SerializeString("<ignored>");
+                    }
+                    else
+                    {
+                        SerializeValue(obj[e]);
+                    }
 
                     first = false;
                 }
