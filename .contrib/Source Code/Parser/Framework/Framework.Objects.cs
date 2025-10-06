@@ -1074,14 +1074,28 @@ namespace ATT
 
                 // Build all categories
                 ConcurrentDictionary<string, Exporter> categoryBuilders = new ConcurrentDictionary<string, Exporter>();
-                AllContainerClones.AsParallel().ForAll((containerPair) =>
+                if (Debugger.IsAttached)
                 {
-                    if (containerPair.Value.Count > 0)
+                    foreach(var containerPair in AllContainerClones)
                     {
-                        // Build the category file.
-                        categoryBuilders[containerPair.Key] = ATT.Export.ExportCompressedLuaCategory(containerPair.Key, containerPair.Value);
+                        if (containerPair.Value.Count > 0)
+                        {
+                            // Build the category file.
+                            categoryBuilders[containerPair.Key] = ATT.Export.ExportCompressedLuaCategory(containerPair.Key, containerPair.Value);
+                        }
                     }
-                });
+                }
+                else
+                {
+                    AllContainerClones.AsParallel().ForAll((containerPair) =>
+                    {
+                        if (containerPair.Value.Count > 0)
+                        {
+                            // Build the category file.
+                            categoryBuilders[containerPair.Key] = ATT.Export.ExportCompressedLuaCategory(containerPair.Key, containerPair.Value);
+                        }
+                    });
+                }
 
                 // Simplify the structure of each Category builder
                 if (!PreProcessorTags.Contains("NOSIMPLIFY"))
