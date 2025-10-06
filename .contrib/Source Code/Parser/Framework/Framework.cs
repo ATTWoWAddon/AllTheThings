@@ -403,6 +403,14 @@ namespace ATT
             }
         }
 
+        public static void Valdiate_headerID(IDictionary<string, object> data)
+        {
+            if (data.TryGetValue("headerID", out long headerID) && headerID < 1)
+            {
+                CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
+            }
+        }
+
         /// <summary>
         /// Mark the Custom Header as Required.
         /// This will force it to be included in the export if it exists as a constant.
@@ -578,6 +586,14 @@ namespace ATT
 
                 _stage = value;
                 Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
+                if (Handlers.TryGetValue(_stage, out var handler))
+                {
+                    CurrentParseStageHandler = handler;
+                }
+                else
+                {
+                    CurrentParseStageHandler = null;
+                }
             }
         }
 

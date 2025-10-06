@@ -146,6 +146,7 @@
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
     <Compile Include="Framework\Framework.Processing.cs" />
+    <Compile Include="Framework\Handler.cs" />
     <Compile Include="Framework\HierarchicalFieldAdjustments.cs" />
     <Compile Include="Framework\Structs.cs" />
     <Compile Include="Harvesters\ObjectHarvester.cs" />

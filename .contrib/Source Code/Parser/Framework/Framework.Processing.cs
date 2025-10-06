@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using static ATT.Export;
 using static ATT.FieldTypes.TimelineEntry;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -27,40 +26,44 @@ namespace ATT
             (long)Objects.Filters.Cloak
         };
 
-        /// <summary>
-        /// Contains function mappings against Sourced Groups to be executed in parallel following sequential Processing sequence
-        /// </summary>
-        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> PostProcessFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+        private static readonly Dictionary<ParseStage, Handler> Handlers = new Dictionary<ParseStage, Handler>();
 
         /// <summary>
-        /// Contains function mappings against Sourced Groups to be executed in parallel following PostProcessing since these remove data which may be needed
+        /// This is assigned when <see cref="CurrentParseStage"/> is changed
         /// </summary>
-        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> CleanupFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+        private static Handler CurrentParseStageHandler { get; set; }
 
         /// <summary>
-        /// Adds a post processing function for a given object
+        /// Allows adding a Handler for a conditional piece of logic to be acted upon at the end of the specified Parse Stage
         /// </summary>
-        private static void AddPostProcessing(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
+        /// <param name="stage"></param>
+        /// <param name="condition"></param>
+        /// <param name="act"></param>
+        public static void AddHandlerAction(ParseStage stage, Func<IDictionary<string, object>, bool> condition, Action<IDictionary<string, object>> act)
         {
-            if (!PostProcessFunctions.TryGetValue(act, out var objs))
+            if (!Handlers.TryGetValue(stage, out var handler))
             {
-                PostProcessFunctions[act] = objs = new List<IDictionary<string, object>>();
+                Handlers[stage] = handler = new Handler(stage);
             }
 
-            objs.Add(obj);
+            handler.AddConditionAction(condition, act);
         }
 
-        /// <summary>
-        /// Adds a post processing function for a given object
-        /// </summary>
-        private static void AddCleanup(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
+        private static void AddDataForHandlers(IDictionary<string, object> data)
         {
-            if (!CleanupFunctions.TryGetValue(act, out var objs))
+            if (CurrentParseStageHandler != null)
             {
-                CleanupFunctions[act] = objs = new List<IDictionary<string, object>>();
+                CurrentParseStageHandler.AddData(data);
             }
+        }
 
-            objs.Add(obj);
+        private static void RunCurrentParseStageHandlers()
+        {
+            if (CurrentParseStageHandler != null)
+            {
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
+                CurrentParseStageHandler.RunActions();
+            }
         }
 
         /// <summary>
@@ -163,6 +166,25 @@ namespace ATT
                 }
             }
 
+            // Define some common Handler Actions which can be performed in parallel for each Parse Stage
+            if (!PreProcessorTags.Contains("OBJECTIVES"))
+            {
+                // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
+                // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
+                AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("objectiveID"), Validate_objectiveID);
+            }
+
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("headerID"), Valdiate_headerID);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("questID"), Validate_Quest);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("sym"), Validate_sym);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("providers"), Validate_providers);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("factionID"), Validate_Faction);
+            AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
+
+            AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("_Incorporate_Ensemble"), Consolidate_EnsembleCleanup);
+            AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("sourceQuests"), Consolidate_sourceQuests);
+            AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_CleanupGroup);
+
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
             Validator.OnlyClean = (bool)Config["Validation"]["clean"];
@@ -171,6 +193,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Capture Conditional DB data into the global DBs, and then merge that data into the respective Objects
             CurrentParseStage = ParseStage.ConditionalData;
@@ -181,6 +204,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Merge Wago Battle Pet data into the containers
             // TODO: move this to the Incorporate pass instead of manually outside the flow
@@ -210,6 +234,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Pass to clean up and consolidate final information within Objects
             CurrentParseStage = ParseStage.Consolidation;
@@ -219,36 +244,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
-
-            // Post-processing of individual groups in parallel (logic which does not require cross-modification or follow up processing)
-            CurrentParseStage = ParseStage.PostProcessing;
-            foreach (var actionSequence in PostProcessFunctions)
-            {
-                var act = actionSequence.Key;
-                if (Debugger.IsAttached)
-                {
-                    actionSequence.Value.ForEach(act);
-                }
-                else
-                {
-                    actionSequence.Value.AsParallel().ForAll(act);
-                }
-            }
-
-            // Cleanup of individual groups in parallel (logic which cleans and removes unnecessary data for Export)
-            CurrentParseStage = ParseStage.Cleanup;
-            foreach (var actionSequence in CleanupFunctions)
-            {
-                var act = actionSequence.Key;
-                if (Debugger.IsAttached)
-                {
-                    actionSequence.Value.ForEach(act);
-                }
-                else
-                {
-                    actionSequence.Value.AsParallel().ForAll(act);
-                }
-            }
+            RunCurrentParseStageHandlers();
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -719,6 +715,13 @@ namespace ATT
 
             // handle the current processing against the data
             bool success = true;
+
+            // Store the parent relationship
+            data["__parent"] = parentData;
+
+            // Add this data to the necessary Handlers for the current Parse Stage even if it is not actually included in export (Retail Objectives, etc.)
+            AddDataForHandlers(data);
+
             if (ProcessingFunction(data, parentData))
             {
                 // If this container has an aqd or hqd, then process those objects as well.
@@ -877,16 +880,6 @@ namespace ATT
         /// <param name="data"></param>
         private static bool DataValidation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
-            // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
-            if (data.ContainsKey("objectiveID") && !PreProcessorTags.Contains("OBJECTIVES"))
-            {
-                // capture the parent relationship here since we are removing the objective data
-                data["_parent"] = parentData;
-                AddPostProcessing(ConvertObjectiveData, data);
-                return false;
-            }
-
             Validate_InheritedFields(data, parentData);
 
             if (!data.ContainsKey("timeline"))
@@ -904,26 +897,10 @@ namespace ATT
             if (!CheckTimeline(data, parentData))
                 return false;
 
+            // These validate functions require current heirarchy
             Validate_General(data);
-
-            Validate_npc(data);
             Validate_Encounter(data);
-            Validate_sym(data);
-            Validate_providers(data);
-
-            // Validate Headers
-            if (data.TryGetValue("headerID", out long headerID))
-            {
-                MarkCustomHeaderAsRequired(headerID);
-            }
-
-            Validate_Achievement(data);
             Validate_Criteria(data);
-            Validate_Faction(data);
-            Validate_LocationData(data);
-            Validate_Quest(data);
-
-            Validate_LocalizableData(data);
             Validate_ReferencedIDs(data);
 
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
@@ -963,23 +940,6 @@ namespace ATT
                     data["modID"] = NestedModID;
                 }
             }
-
-            foreach (KeyValuePair<string, object> value in data.ToList())
-            {
-                // validate any IProcessedField
-                if (value.Value is IProcessedField validatedField)
-                {
-                    validatedField.Validate();
-                }
-            }
-
-            // Mark this item as having a reference since it exists in a processed container
-            Items.MarkItemAsReferenced(data);
-
-            // Merge all relevant Data into the global dictionaries after being validated
-            // TODO: This will be removed eventually. Global content needs to have a Global DB source
-            Items.MergeFromObject(data);
-            Objects.MergeFromObject(data);
 
             return true;
         }
@@ -1061,19 +1021,13 @@ namespace ATT
             if (!CheckTimeline(data, parentData))
                 return false;
 
-            Consolidate_General(data);
-
             Consolidate_lvl(data);
-            Consolidate_c(data);
-            Consolidate_providers(data);
-            Consolidate_altQuests(data);
             Consolidate_item(data, parentData);
-            Consolidate_awprwp(data);
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
-            TryFindRecipeID(data);
-            CheckRequireSkill(data);
+            //TryFindRecipeID(data);
+
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
@@ -1083,7 +1037,6 @@ namespace ATT
 
             //}
             Items.DetermineSourceID(data);
-            Objects.AssignFactionID(data);
 
             CheckObjectConversion(data);
 
@@ -1106,29 +1059,11 @@ namespace ATT
                 //}
             }
 
-            Consolidate_ConflictingFields(data);
-
             //VerifyListContentOrdering(data);
 
             // during consolidation we may realize that data is not useful, and can mark it to be removed before further steps take place
             if (data.TryGetValue("_remove", out remove) && remove)
                 return false;
-
-            // when consolidating data, check for duplicate objects (instead of when merging)
-            foreach (string key in TypeUseCounts.Keys)
-            {
-                if (data.TryGetValue(key, out decimal id))
-                {
-                    IncrementTypeUseCount(key, id);
-                }
-                else if (key == "questID")
-                {
-                    if (data.TryGetValue("questIDA", out id))
-                        IncrementTypeUseCount(key, id);
-                    if (data.TryGetValue("questIDH", out id))
-                        IncrementTypeUseCount(key, id);
-                }
-            }
 
             // only clean the name after other processing is complete
             if (data.TryGetValue("name", out string name))
@@ -1186,46 +1121,30 @@ namespace ATT
                         }
                         break;
                 }
-
-                /*
-                if (data.TryGetValue("requireSkill", out long  requiredSkill))
-                {
-                    // if this data has a recipeID, cache the information
-                    if (!(data.TryGetValue("recipeID", out long recipeID) || f == 200))
-                    {
-                        if (data.TryGetValue("itemID", out long itemID))
-                        {
-                            long b = 0;
-                            if (!data.TryGetValue("b", out b) || b != 1)
-                            {
-                                Console.Write("BoE/Unbound Item (");
-                                Console.Write(b);
-                                Console.Write(") marked as requiring a profession, but not being a recipe: ");
-                                Console.Write(itemID);
-                                Console.Write(" (");
-                                Console.Write(requiredSkill);
-                                Console.WriteLine(")");
-                                Console.WriteLine("This is going to cause an issue with folks seeing it in the list when they should.");
-                            }
-                        }
-                    }
-                }
-                */
             }
 
             CaptureForSOURCED(data);
             CaptureDebugDBData(data);
 
-            // PostProcessing is anything that
-            // - Has no change to any other data
-            // - May require checks against other Sourced data
-            // - Does not change 'Sourced' data
-            if (data.ContainsKey("sourceQuests"))
-                AddPostProcessing(PostProcess_sourceQuests, data);
-
-            AddCleanup(CleanupGroup, data);
-
             return true;
+        }
+
+        private static void Consolidate_TrackUsage(IDictionary<string, object> data)
+        {
+            foreach (string key in TypeUseCounts.Keys)
+            {
+                if (data.TryGetValue(key, out decimal id))
+                {
+                    IncrementTypeUseCount(key, id);
+                }
+                else if (key == "questID")
+                {
+                    if (data.TryGetValue("questIDA", out id))
+                        IncrementTypeUseCount(key, id);
+                    if (data.TryGetValue("questIDH", out id))
+                        IncrementTypeUseCount(key, id);
+                }
+            }
         }
 
         private static void Consolidate_c(IDictionary<string, object> data)
@@ -1239,8 +1158,23 @@ namespace ATT
             }
         }
 
-        private static void CleanupGroup(IDictionary<string, object> data)
+        private static void Consolidate_CleanupGroup(IDictionary<string, object> data)
         {
+            // if this group was flagged to remove, just ignore cleaning it since it won't show up in export
+            if (data.TryGetValue("_remove", out bool remove) && remove)
+                return;
+
+            Consolidate_General(data);
+            Consolidate_c(data);
+            Consolidate_providers(data);
+            Consolidate_altQuests(data);
+            Consolidate_awprwp(data);
+            CheckRequireSkill(data);
+
+            Consolidate_ConflictingFields(data);
+
+            Objects.AssignFactionID(data);
+
             List<string> removeKeys = new List<string>();
 
             // clean out any temporary 'type' fields which do not yet have a corresponding conversion in parser.config
@@ -1293,6 +1227,8 @@ namespace ATT
             {
                 data.Remove(key);
             }
+
+            Consolidate_TrackUsage(data);
         }
 
         private static void DoShiftCoords(IDictionary<string, object> data)
@@ -1340,7 +1276,7 @@ namespace ATT
             }
         }
 
-        private static void EnsembleCleanup(IDictionary<string, object> data)
+        private static void Consolidate_EnsembleCleanup(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("spellID", out long spellID) && !data.TryGetValue("ensembleSpellID", out spellID))
             {
@@ -1503,14 +1439,33 @@ namespace ATT
         }
 
         /// <summary>
+        /// Contains Validate methods which can be run in parallel
+        /// </summary>
+        /// <param name="data"></param>
+        private static void Validate_Parallel(IDictionary<string, object> data)
+        {
+            Validate_npc(data);
+            Validate_LocationData(data);
+            Validate_LocalizableData(data);
+            Validate_IProcessedFields(data);
+
+            // dynamic config-driven validaton
+            Validator.Validate(data);
+
+            // Mark this item as having a reference since it exists in a processed container
+            Items.MarkItemAsReferenced(data);
+            // Merge all relevant Data into the global dictionaries after being validated
+            // TODO: This will be removed eventually. Global content needs to have a Global DB source
+            Items.MergeFromObject(data);
+            Objects.MergeFromObject(data);
+        }
+
+        /// <summary>
         /// General validation on contrib-defined data
         /// </summary>
         /// <param name="data"></param>
         private static void Validate_General(IDictionary<string, object> data)
         {
-            // dynamic config-driven validaton
-            Validator.Validate(data);
-
             // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type (ignored if it is a quest)
             if (data.TryGetValue("collectible", out bool collectible) && !collectible && !data.ContainsKey("questID") && data.ContainsKey("g"))
             {
@@ -1625,6 +1580,18 @@ namespace ATT
                 FLIGHTPATHS_WITH_REFERENCES[flightpathID] = true;
             if (data.TryGetValue("objectID", out tempId))
                 OBJECTS_WITH_REFERENCES[tempId] = true;
+        }
+
+        private static void Validate_IProcessedFields(IDictionary<string, object> data)
+        {
+            foreach (KeyValuePair<string, object> value in data.ToList())
+            {
+                // validate any IProcessedField
+                if (value.Value is IProcessedField validatedField)
+                {
+                    validatedField.Validate();
+                }
+            }
         }
 
         private static void Validate_LocalizableData(IDictionary<string, object> data)
@@ -3219,7 +3186,6 @@ namespace ATT
                 }
             }
 
-            AddPostProcessing(EnsembleCleanup, data);
             // don't incorporate ensemble again
             data["_Incorporate_Ensemble"] = true;
         }
@@ -4221,10 +4187,8 @@ namespace ATT
 
         private static void IncrementTypeUseCount(string key, decimal id)
         {
-            Dictionary<decimal, int> idCounts = TypeUseCounts[key];
-            idCounts.TryGetValue(id, out int count);
-            count += 1;
-            idCounts[id] = count;
+            ConcurrentDictionary<decimal, int> idCounts = TypeUseCounts[key];
+            idCounts.AddOrUpdate(id, 1, (k, count) => count + 1);
         }
 
         /// <summary>
@@ -4339,12 +4303,12 @@ namespace ATT
             return true;
         }
 
-        private static void ConvertObjectiveData(IDictionary<string, object> data)
+        private static void Validate_objectiveID(IDictionary<string, object> data)
         {
             // Grab any coords for this objective if existing
             data.TryGetValue("coords", out List<object> coords);
 
-            if (!data.TryGetValue("_parent", out IDictionary<string, object> parentData))
+            if (!data.TryGetValue("__parent", out IDictionary<string, object> parentData))
                 return;
 
             // Convert various 'providers' data into sub-groups on the parent data
@@ -4394,7 +4358,7 @@ namespace ATT
                             break;
                     }
                     Validate_ReferencedIDs(providerData);
-                    LogDebug($"Nested 'provider' {pType}:{pID} to parent from Objective", parentData);
+                    LogDebug($"Nested 'provider' {pType}:{pID} from Objective to parent Quest", parentData);
                 }
             }
 
@@ -4407,6 +4371,8 @@ namespace ATT
 
             // After the merging of objective data into the parent, make sure to re-capture it properly
             CaptureDebugDBData(parentData);
+
+            data["_remove"] = true;
         }
 
         private static bool IsObtainableData(IDictionary<string, object> data)
