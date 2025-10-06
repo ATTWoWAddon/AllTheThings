@@ -703,6 +703,13 @@ namespace ATT
                     //    break;
 
                     default:
+
+                        // __parent is never merged into DB containers
+                        if (field == "__parent")
+                        {
+                            break;
+                        }
+
                         // for undefined parser-only fields, just use the base Object merge implementation for the Item
                         if (field.StartsWith("_"))
                         {
@@ -812,7 +819,7 @@ namespace ATT
             /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
             /// </summary>
             /// <param name="data">The data to merge into the item database.</param>
-            public static void MergeFromObject(IDictionary<string, object> data, bool conditionalMerge = false)
+            public static void MergeFromObject(IDictionary<string, object> data)
             {
                 //if (DebugMode)
                 //{
@@ -835,7 +842,7 @@ namespace ATT
                 //}
                 // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
                 // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
-                Merge(data, conditionalMerge);
+                Merge(data, false);
             }
             #endregion
 
