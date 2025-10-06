@@ -106,22 +106,26 @@ namespace ATT.FieldTypes
 
             if (_costTypes == null) return;
 
-            //foreach (var costType in _costTypes)
-            //{
-            //    switch (costType.Key)
-            //    {
-            //        //case "i":
-            //        //    foreach (var costRecord in costType.Value)
-            //        //    {
-            //        //    }
-            //        //    break;
-            //        //case "c":
-            //        //    foreach (var costRecord in costType.Value)
-            //        //    {
-            //        //    }
-            //        //    break;
-            //    }
-            //}
+            foreach (var costType in _costTypes)
+            {
+                switch (costType.Key)
+                {
+                    case "i":
+                        foreach (var costRec in costType.Value)
+                        {
+                            decimal costID = costRec.Key;
+                            Validator.Validate("itemID", costID, _data);
+                        }
+                        break;
+                    case "c":
+                        foreach (var costRec in costType.Value)
+                        {
+                            decimal costID = costRec.Key;
+                            Validator.Validate("currencyID", costID, _data);
+                        }
+                        break;
+                }
+            }
         }
 
         public void Incorporate() { }
@@ -196,6 +200,12 @@ namespace ATT.FieldTypes
                             {
                                 _data["pvp"] = true;
                             }
+
+                            // Ensure the Currency has been Sourced since it will need to show as a Cost in-game
+                            if (!TryGetSOURCED("currencyID", costID, out var _))
+                            {
+                                LogWarn($"Non-Sourced 'cost-currency' {costID}", _data);
+                            }
                             break;
                         }
                         break;
@@ -207,7 +217,7 @@ namespace ATT.FieldTypes
                 _costTypes["i"].Remove(id);
             }
 
-            foreach(var costType in _costTypes)
+            foreach (var costType in _costTypes)
             {
                 if (costType.Value.Count == 0)
                 {
@@ -215,7 +225,7 @@ namespace ATT.FieldTypes
                 }
             }
 
-            foreach(var costType in cleanTypes)
+            foreach (var costType in cleanTypes)
             {
                 _costTypes.Remove(costType);
             }
