@@ -454,28 +454,28 @@ namespace ATT
             HashSet<decimal> orphanedBreadcrumbs = new HashSet<decimal>();
             OutputSets.Add("Orphaned Breadcrumbs", orphanedBreadcrumbs);
 
-            // check for orphaned breadcrumbs
-            foreach (var pair in Objects.AllQuests)
+            if (Objects.SharedDataByPrimaryKey.TryGetValue("questID", out var questDB) && questDB.Any())
             {
-                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
-                    && isBreadcrumb
-                    && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
+                // check for orphaned breadcrumbs
+                foreach (var pair in questDB)
                 {
-                    // Breadcrumb quest without next quests information
-                    orphanedBreadcrumbs.Add(pair.Key);
+                    if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
+                        && isBreadcrumb
+                        && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
+                    {
+                        // Breadcrumb quest without next quests information
+                        orphanedBreadcrumbs.Add(pair.Key is long key ? key : 0);
+                    }
                 }
-            }
 
-            if (QUESTS.Any())
-            {
                 var unsortedQuests = new List<object>();
-                long maxQuestID = QUESTS.Max(x => x.Key);
+                long maxQuestID = questDB.Max(x => x.Key is long key ? key : 0);
                 for (long i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not sourced/referenced but includes more than just a questID into the Unsorted category
                     if (!TryGetSOURCED("questID", i, out var sourcedQuests)
                         && !QUESTS_WITH_REFERENCES.ContainsKey(i)
-                        && QUESTS.TryGetValue(i, out IDictionary<string, object> questRef))
+                        && questDB.TryGetValue(i, out ConcurrentDictionary<string, object> questRef))
                     {
                         var entry = new Dictionary<string, object>() { { "questID", i } };
 
@@ -2049,22 +2049,17 @@ namespace ATT
             if (!data.TryGetValue("questID", out long questID))
                 return;
 
-            //if (questID == 69332)
-            //{
-
-            //}
-
             // Merge quest entry to AllQuest collection
-            Objects.MergeQuestData(data);
+            Objects.ReferenceQuestIDs(data);
 
             // Classic-only AQD/HQD quest datas
             if (data.TryGetValue("aqd", out IDictionary<string, object> aqd))
             {
-                Objects.MergeQuestData(aqd);
+                Objects.ReferenceQuestIDs(aqd);
             }
             if (data.TryGetValue("hqd", out IDictionary<string, object> hqd))
             {
-                Objects.MergeQuestData(hqd);
+                Objects.ReferenceQuestIDs(hqd);
             }
 
             // Remove itself from the list of altQuests
@@ -2130,11 +2125,15 @@ namespace ATT
                     }
                 }
             }
-        }
 
-        private static void Validate_Achievement(IDictionary<string, object> data)
-        {
-            if (!data.TryGetValue("achID", out long achID) || data.ContainsKey("criteriaID")) return;
+            // The sourceQuests of this Quest should have this Quest assigned as a 'nextQuests'
+            if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+            {
+                foreach (long sourceQuestID in sourceQuests.AsTypedEnumerable<long>())
+                {
+                    Objects.MergeFromObject(new Dictionary<string, object> { { "questID", sourceQuestID }, { "nextQuests", questID } });
+                }
+            }
         }
 
         private static void Validate_InheritedFields(IDictionary<string, object> data, IDictionary<string, object> parentData)
@@ -2268,7 +2267,7 @@ namespace ATT
             }
 
             // Achievements can end up with QuestID so make sure to capture them
-            Objects.MergeQuestData(data);
+            Objects.ReferenceQuestIDs(data);
         }
 
         private static void Incorporate_Criteria(IDictionary<string, object> data)
@@ -3410,7 +3409,7 @@ namespace ATT
                             {
                                 Objects.Merge(data, "questID", questID);
                                 LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
-                                Objects.MergeQuestData(data);
+                                Objects.ReferenceQuestIDs(data);
                                 TrackIncorporationData(data, "questID", questID);
                             }
                         }
@@ -3885,7 +3884,7 @@ namespace ATT
             }
         }
 
-        private static void PostProcess_sourceQuests(IDictionary<string, object> data)
+        private static void Consolidate_sourceQuests(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 return;
@@ -3905,22 +3904,6 @@ namespace ATT
                     LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
                     continue;
                 }
-
-                var sourceQuest = sourceQuestObjs.FirstOrDefault(q => !q.ContainsKey("_unsorted"));
-                // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
-                if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
-                {
-                    // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
-                    if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
-                    {
-                        sourceQuest.Add("nextQuests", nextQuests = new List<object>());
-                    }
-
-                    if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
-                    {
-                        nextQuests.Add(questID);
-                    }
-                }
             }
         }
 
@@ -3937,7 +3920,7 @@ namespace ATT
                     continue;
                 }
 
-                if (!Objects.AllQuests.ContainsKey(altQuestID))
+                if (!TryGetSOURCED("questID", altQuestID, out var _))
                 {
                     // Source Quest not in database
                     LogDebugWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");

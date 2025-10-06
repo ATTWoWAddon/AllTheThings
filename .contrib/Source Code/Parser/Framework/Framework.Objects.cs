@@ -70,11 +70,6 @@ namespace ATT
             }
 
             /// <summary>
-            /// All of the Quests that are in the database. This is solely used to add information to breadcrumb quests.
-            /// </summary>
-            public static IDictionary<long, IDictionary<string, object>> AllQuests { get; } = new Dictionary<long, IDictionary<string, object>>();
-
-            /// <summary>
             /// All of the Recipes (Name,RecipeID) that are in the database, keyed by required skill
             /// </summary>
             public static IDictionary<long, Dictionary<long, string>> AllRecipes { get; } = new Dictionary<long, Dictionary<long, string>>();
@@ -2396,47 +2391,23 @@ end");
             /// <summary>
             /// Handles merging the individual Quest data with the global set of Quest data references for later processing
             /// </summary>
-            public static void MergeQuestData(IDictionary<string, object> data)
+            public static void ReferenceQuestIDs(IDictionary<string, object> data)
             {
-                if (!data.TryGetValue("questID", out long questID)) return;
-
-                QUESTS_WITH_REFERENCES[questID] = true;
+                if (data.TryGetValue("questID", out long questID))
+                {
+                    QUESTS_WITH_REFERENCES[questID] = true;
+                }
 
                 // Alliance-Only QuestID
                 if (data.TryGetValue("questIDA", out long questIDA))
                 {
                     QUESTS_WITH_REFERENCES[questIDA] = true;
                 }
+
                 // Horde-Only QuestID
                 if (data.TryGetValue("questIDH", out long questIDH))
                 {
                     QUESTS_WITH_REFERENCES[questIDH] = true;
-                }
-
-                // merge any quest information from the quest DB into the data
-                if (QUESTS.TryGetValue(questID, out IDictionary<string, object> dbQuest))
-                {
-                    PreMerge(data, dbQuest);
-                    Merge(data, dbQuest);
-                }
-
-                // add this quest data to the set of AllQuests in case it is referenced by a breadcrumb or another sourceQuest
-                if (!AllQuests.ContainsKey(questID))
-                {
-                    AllQuests.Add(questID, data);
-                }
-                else
-                {
-                    IDictionary<string, object> quest = AllQuests[questID];
-                    // Copy in any additional pertinent data due to the quest information being listed in another location as well
-                    if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
-                    {
-                        Merge(quest, "sourceQuests", sourceQuests);
-                    }
-                    if (data.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
-                    {
-                        Merge(quest, "isBreadcrumb", isBreadcrumb);
-                    }
                 }
             }
 
