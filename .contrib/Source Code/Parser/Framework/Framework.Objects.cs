@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static ATT.Export;
 
 namespace ATT
 {
@@ -100,6 +101,14 @@ namespace ATT
             /// Used to track what actual key/keyValues were used to merge data
             /// </summary>
             private static IDictionary<string, HashSet<decimal>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<decimal>>();
+
+            /// <summary>
+            /// Set of fields which when present in a group will prevent the merging in/out of that group to the associated DB containers
+            /// </summary>
+            private static HashSet<string> MergeRestrictedFields { get; } = new HashSet<string>
+            {
+                "objectiveID", "criteriaID"
+            };
             #endregion
 
             #region Filters
@@ -489,6 +498,9 @@ namespace ATT
             /// <param name="objectData">The data to merge into shared storage.</param>
             internal static void MergeFromObject(IDictionary<string, object> objectData)
             {
+                if (objectData.ContainsAnyKey(MergeRestrictedFields))
+                    return;
+
                 foreach (var mergeObjectFieldPair in MERGE_OBJECT_FIELDS)
                 {
                     // does this data contain the key?
@@ -527,6 +539,9 @@ namespace ATT
             /// <param name="objectData">The object data to merge shared data into.</param>
             internal static void MergeSharedDataIntoObject(IDictionary<string, object> data)
             {
+                if (data.ContainsAnyKey(MergeRestrictedFields))
+                    return;
+
                 foreach (var container in SharedDataByPrimaryKey)
                 {
                     // does this data contain the key?
@@ -541,6 +556,8 @@ namespace ATT
                     if (!MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields))
                         continue;
 
+                    PreMerge(data, commonData);
+
                     foreach (var field in mergeFields)
                     {
                         if (commonData.TryGetValue(field, out object val))
@@ -551,7 +568,8 @@ namespace ATT
                             }
                             else if (!Equals(existingVal, val))
                             {
-                                LogDebugWarn($"Ignored different value for '{field}' in Object='{existingVal}' compared to DB='{val}'", data);
+                                LogDebugWarn($"Merging different value into Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
+                                Merge(data, field, val);
                             }
                         }
                     }
@@ -1076,7 +1094,7 @@ namespace ATT
                 ConcurrentDictionary<string, Exporter> categoryBuilders = new ConcurrentDictionary<string, Exporter>();
                 if (Debugger.IsAttached)
                 {
-                    foreach(var containerPair in AllContainerClones)
+                    foreach (var containerPair in AllContainerClones)
                     {
                         if (containerPair.Value.Count > 0)
                         {
