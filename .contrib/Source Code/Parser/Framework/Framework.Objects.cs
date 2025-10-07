@@ -483,7 +483,7 @@ namespace ATT
                         if (pair.Key == primaryKey)
                             continue;
 
-                        merged[pair.Key] = pair.Value;
+                        Merge(merged, pair.Key, pair.Value);
                     }
                 }
                 else
