@@ -204,7 +204,8 @@ namespace ATT.FieldTypes
                             // Ensure the Currency has been Sourced since it will need to show as a Cost in-game
                             if (!TryGetSOURCED("currencyID", costID, out var _))
                             {
-                                LogWarn($"Non-Sourced 'cost-currency' {costID}", _data);
+                                // TODO: remove debug once all warnings are fixed
+                                LogDebugWarn($"Non-Sourced 'cost-currency' {costID}", _data);
                             }
                             break;
                         }
