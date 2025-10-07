@@ -941,6 +941,8 @@ namespace ATT
                 }
             }
 
+            CaptureForSOURCED(data);
+
             return true;
         }
 
