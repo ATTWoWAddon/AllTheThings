@@ -5,7 +5,6 @@ using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using static ATT.Export;
@@ -632,7 +631,6 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
-
             if (DebugMode && MergeItemData)
             {
                 // Capture references to specified Debug DB keys for Debug output
@@ -722,6 +720,7 @@ namespace ATT
             // Add this data to the necessary Handlers for the current Parse Stage even if it is not actually included in export (Retail Objectives, etc.)
             AddDataForHandlers(data);
 
+            // data.DataBreakPoint("_DEBUG", true);
             if (ProcessingFunction(data, parentData))
             {
                 // If this container has an aqd or hqd, then process those objects as well.
@@ -4313,15 +4312,20 @@ namespace ATT
 
         private static void Validate_objectiveID(IDictionary<string, object> data)
         {
-            // Grab any coords for this objective if existing
-            data.TryGetValue("coords", out List<object> coords);
-
             if (!data.TryGetValue("__parent", out IDictionary<string, object> parentData))
                 return;
 
-            // Convert various 'providers' data into sub-groups on the parent data
+            // Grab any coords for this objective if existing
+            data.TryGetValue("coords", out List<object> coords);
+
+            // Convert various 'providers' data into data on the parent data
             if (data.TryGetValue("providers", out List<object> providers))
             {
+                List<object> parentg = new List<object>();
+                List<object> parentProviders = new List<object>();
+                List<long> parentCrs = new List<long>();
+                List<long> parentQis = new List<long>();
+
                 foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
                 {
                     if (!provider[1].TryConvert(out long pID))
@@ -4331,42 +4335,74 @@ namespace ATT
                     string pType = provider[0] as string;
                     switch (pType)
                     {
-                        // Items can simply be referenced to the parent
+                        // Items can simply be referenced to the parent if they aren't sourced elsewhere, or assigned as a provider on the parent otherwise
                         case "i":
                             if (!TryGetSOURCED("itemID", pID, out _))
                             {
                                 Items.MarkItemAsReferenced(pID);
                                 // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                Objects.Merge(parentData, "qis", pID);
+                                parentQis.Add(pID);
+                            }
+                            else
+                            {
+                                parentProviders.Add(new List<object> { "i", pID });
                             }
                             break;
-                        // Objects can be Sourced under the parent with attached coords if any
+                        // Objects can be Sourced under the parent with attached coords if any if not Sourced, otherwise moved to a provider on the parent
                         case "o":
-                            if (!TryGetSOURCED("objectID", pID, out _) && IsObtainableData(parentData))
+                            if (!TryGetSOURCED("objectID", pID, out _))
                             {
                                 providerData = new Dictionary<string, object> { { "objectID", pID } };
                                 if (coords != null)
                                 {
                                     providerData["coords"] = coords;
                                 }
-                                Objects.Merge(parentData, "g", providerData);
+                                Validate_ReferencedIDs(providerData);
+                                Objects.Merge(parentg, providerData);
+                            }
+                            else
+                            {
+                                parentProviders.Add(new List<object> { "o", pID });
                             }
                             break;
-                        // NPCs can be Sourced under the parent with attached coords if any
+                        // NPCs can be Sourced under the parent with attached coords if any when not Sourced, otherwise simply included as 'crs' on the parent data
                         case "n":
-                            if (!TryGetSOURCED("npcID", pID, out _) && IsObtainableData(parentData))
+                            if (!TryGetSOURCED("npcID", pID, out _) && coords != null)
                             {
-                                providerData = new Dictionary<string, object> { { "npcID", pID } };
-                                if (coords != null)
-                                {
-                                    providerData["coords"] = coords;
-                                }
-                                Objects.Merge(parentData, "g", providerData);
+                                providerData = new Dictionary<string, object> { { "npcID", pID }, { "coords", coords } };
+                                Validate_ReferencedIDs(providerData);
+                                Objects.Merge(parentg, providerData);
+                            }
+                            else
+                            {
+                                parentCrs.Add(pID);
                             }
                             break;
                     }
-                    Validate_ReferencedIDs(providerData);
-                    LogDebug($"Nested 'provider' {pType}:{pID} from Objective to parent Quest", parentData);
+                }
+
+                if (parentCrs.Count > 0)
+                {
+                    Objects.Merge(parentData, "crs", parentCrs);
+                    LogDebug($"Merged 'crs' to parent from Objective: {ToJSON(parentCrs)}", parentData);
+                }
+
+                if (parentProviders.Count > 0)
+                {
+                    Objects.Merge(parentData, "providers", parentProviders);
+                    LogDebug($"Merged 'providers' to parent from Objective: {ToJSON(parentProviders)}", parentData);
+                }
+
+                if (parentQis.Count > 0)
+                {
+                    Objects.Merge(parentData, "qis", parentQis);
+                    LogDebug($"Merged 'qis' to parent from Objective: {ToJSON(parentQis)}", parentData);
+                }
+
+                if (parentg.Count > 0)
+                {
+                    Objects.Merge(parentData, "g", parentg);
+                    LogDebug($"Merged 'g' to parent from Objective: {ToJSON(parentg)}", parentData);
                 }
             }
 
@@ -4375,6 +4411,13 @@ namespace ATT
             {
                 Objects.Merge(parentData, "cost", cost);
                 LogDebug($"Merged 'cost' to parent from Objective {cost}", parentData);
+            }
+
+            // crs for objectives merges into 'crs' on the parent data
+            if (data.TryGetValue("crs", out object objCrs))
+            {
+                Objects.Merge(parentData, "crs", objCrs);
+                LogDebug($"Merged 'crs' to parent from Objective {ToJSON(objCrs)}", parentData);
             }
 
             // After the merging of objective data into the parent, make sure to re-capture it properly
