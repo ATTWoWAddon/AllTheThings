@@ -4264,7 +4264,8 @@ namespace ATT
                     // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
                     // as long as the Thing itself isn't specifically also marked with 'u' directly
                     // as long as the Thing itself isn't an 'objective'
-                    if (data.ContainsAnyKey("u", "objectiveID"))
+                    // as long as the Thing itself isn't a 'criteria'
+                    if (data.ContainsAnyKey("u", "objectiveID", "criteriaID"))
                         break;
 
                     // or inherited a 'timeline' to itself
