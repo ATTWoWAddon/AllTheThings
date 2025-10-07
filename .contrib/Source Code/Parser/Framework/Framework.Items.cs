@@ -698,9 +698,9 @@ namespace ATT
                     //case "OnInit":
                     //case "OnClick":
                     //case "OnUpdate":
-                    //case "OnTooltip":
-                    //    item[field] = value;
-                    //    break;
+                    case "OnTooltip":
+                        item[field] = value;
+                        break;
 
                     default:
 
