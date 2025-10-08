@@ -714,15 +714,15 @@ namespace ATT
             // handle the current processing against the data
             bool success = true;
 
-            // Store the parent relationship
-            data["__parent"] = parentData;
-
-            // Add this data to the necessary Handlers for the current Parse Stage even if it is not actually included in export (Retail Objectives, etc.)
-            AddDataForHandlers(data);
-
-            // data.DataBreakPoint("_DEBUG", true);
+            //data.DataBreakPoint("_DEBUG", true);
             if (ProcessingFunction(data, parentData))
             {
+                // Store the parent relationship
+                data["__parent"] = parentData;
+
+                // Add this data to the necessary Handlers for the current Parse Stage even if it is not actually included in export (Retail Objectives, etc.)
+                AddDataForHandlers(data);
+
                 // If this container has an aqd or hqd, then process those objects as well.
                 if (data.TryGetValue("aqd", out IDictionary<string, object> aqd)) Process(aqd, data);
                 if (data.TryGetValue("hqd", out IDictionary<string, object> hqd)) Process(hqd, data);
