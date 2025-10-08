@@ -526,7 +526,7 @@ namespace ATT
                     // merge the allowed fields by the key into the merged object
                     foreach (string field in mergeObjectFieldPair.Value)
                     {
-                        // 'g' is never allowed to merge from an object, even is allowed in MERGE_OBJECT_FIELDS to merge into an object from the DB
+                        // 'g' is never allowed to merge from an object, even if allowed in MERGE_OBJECT_FIELDS to merge into an object from the DB
                         if (field == "g")
                             continue;
 

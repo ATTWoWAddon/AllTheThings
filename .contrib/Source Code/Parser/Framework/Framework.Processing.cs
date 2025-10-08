@@ -1024,21 +1024,10 @@ namespace ATT
 
             Consolidate_lvl(data);
             Consolidate_item(data, parentData);
-
-            // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
-            // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
-            //TryFindRecipeID(data);
-
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
-
-            //if (data.TryGetValue("itemID", out long testitemid) && testitemid == 50169)
-            //{
-
-            //}
             Items.DetermineSourceID(data);
-
             CheckObjectConversion(data);
 
             data.TryGetValue("g", out List<object> g);
@@ -1585,7 +1574,7 @@ namespace ATT
 
         private static void Validate_IProcessedFields(IDictionary<string, object> data)
         {
-            foreach (KeyValuePair<string, object> value in data.ToList())
+            foreach (KeyValuePair<string, object> value in data)
             {
                 // validate any IProcessedField
                 if (value.Value is IProcessedField validatedField)
