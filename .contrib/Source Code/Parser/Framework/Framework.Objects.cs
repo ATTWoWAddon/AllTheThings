@@ -1,5 +1,6 @@
 ﻿using ATT.FieldTypes;
 using System;
+using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -572,8 +573,16 @@ namespace ATT
                             }
                             else if (!Equals(existingVal, val))
                             {
-                                LogDebugWarn($"Merging different value into Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
-                                Merge(data, field, val);
+                                // Don't replace existing values with merge DB values
+                                if (existingVal != null && !(existingVal is IEnumerable enumerableVal))
+                                {
+                                    LogDebugWarn($"Ignoring different value on merge of Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
+                                }
+                                else
+                                {
+                                    LogDebugWarn($"Merging different value into Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
+                                    Merge(data, field, val);
+                                }
                             }
 
                             // In some cases, the DB merge may include nested groups, so we need to apply inherited fields if this was the case
