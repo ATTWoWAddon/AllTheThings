@@ -571,6 +571,15 @@ namespace ATT
                                 LogDebugWarn($"Merging different value into Object.{field}='{ToJSON(existingVal)}' from DB='{ToJSON(val)}'", data);
                                 Merge(data, field, val);
                             }
+
+                            // In some cases, the DB merge may include nested groups, so we need to apply inherited fields if this was the case
+                            if (field == "g" && data.TryGetValue("g", out List<object> groups))
+                            {
+                                foreach (var group in groups.AsTypedEnumerable<IDictionary<string, object>>())
+                                {
+                                    Validate_InheritedFields(group, data);
+                                }
+                            }
                         }
                     }
                 }
