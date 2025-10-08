@@ -25,7 +25,7 @@ namespace ATT
             (long)Objects.Filters.Cloak
         };
 
-        private static readonly Dictionary<ParseStage, Handler> Handlers = new Dictionary<ParseStage, Handler>();
+        private static readonly ConcurrentDictionary<ParseStage, Handler> Handlers = new ConcurrentDictionary<ParseStage, Handler>();
 
         /// <summary>
         /// This is assigned when <see cref="CurrentParseStage"/> is changed
@@ -40,11 +40,7 @@ namespace ATT
         /// <param name="act"></param>
         public static void AddHandlerAction(ParseStage stage, Func<IDictionary<string, object>, bool> condition, Action<IDictionary<string, object>> act)
         {
-            if (!Handlers.TryGetValue(stage, out var handler))
-            {
-                Handlers[stage] = handler = new Handler(stage);
-            }
-
+            var handler = Handlers.GetOrAdd(stage, _ => new Handler(stage));
             handler.AddConditionAction(condition, act);
         }
 
