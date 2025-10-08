@@ -173,7 +173,7 @@ namespace ATT
                 AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("objectiveID"), Validate_objectiveID);
             }
 
-            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("headerID"), Valdiate_headerID);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("headerID"), Validate_headerID);
             AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("questID"), Validate_Quest);
             AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("sym"), Validate_sym);
             AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("providers"), Validate_providers);
@@ -2008,6 +2008,14 @@ namespace ATT
             {
                 // TODO: normal warn once eventually cleaned up
                 LogDebugWarn($"Faction {factionID} should not contain nested content. Use an auto-header to nest content related to a Faction", data);
+            }
+        }
+
+        public static void Validate_headerID(IDictionary<string, object> data)
+        {
+            if (data.TryGetValue("headerID", out long headerID) && headerID < 1)
+            {
+                CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
             }
         }
 
