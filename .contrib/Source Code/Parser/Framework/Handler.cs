@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using DataCondition = System.Func<System.Collections.Generic.IDictionary<string, object>, bool>;
@@ -17,14 +18,14 @@ namespace ATT
 
         public ParseStage Stage { get; set; }
 
-        public Dictionary<DataCondition, List<DataAction>> ConditionActions { get; set; }
-            = new Dictionary<DataCondition, List<DataAction>>();
+        public ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>> ConditionActions { get; set; }
+            = new ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>>();
 
-        public Dictionary<DataAction, List<Data>> ActionDatas { get; set; }
-            = new Dictionary<DataAction, List<Data>>();
+        public ConcurrentDictionary<DataAction, ConcurrentQueue<Data>> ActionDatas { get; set; }
+            = new ConcurrentDictionary<DataAction, ConcurrentQueue<Data>>();
 
-        public List<DataAction> ActionSequence { get; set; }
-            = new List<DataAction>();
+        public ConcurrentQueue<DataAction> ActionSequence { get; set; }
+            = new ConcurrentQueue<DataAction>();
 
         public Handler(ParseStage stage)
         {
@@ -33,29 +34,25 @@ namespace ATT
 
         public void AddConditionAction(DataCondition condition, DataAction action)
         {
-            if (!ConditionActions.TryGetValue(condition, out var actions))
-            {
-                ConditionActions[condition] = actions = new List<DataAction>();
-            }
+            var actions = ConditionActions.GetOrAdd(condition, _ => new ConcurrentQueue<DataAction>());
 
-            actions.Add(action);
+            actions.Enqueue(action);
 
-            if (!ActionDatas.ContainsKey(action))
+            if (!ActionDatas.ContainsKey(action) && ActionDatas.TryAdd(action, new ConcurrentQueue<Data>()))
             {
-                ActionDatas[action] = new List<Data>();
-                ActionSequence.Add(action);
+                ActionSequence.Enqueue(action);
             }
         }
 
         internal void AddData(Data data)
         {
-            foreach (KeyValuePair<DataCondition, List<DataAction>> conditionActions in ConditionActions)
+            foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
             {
                 if (conditionActions.Key(data))
                 {
                     foreach (var action in conditionActions.Value)
                     {
-                        ActionDatas[action].Add(data);
+                        ActionDatas[action].Enqueue(data);
                     }
                 }
             }
@@ -68,11 +65,16 @@ namespace ATT
                 Framework.Log($".. Running '{act.Method.Name}' on {ActionDatas[act].Count} groups");
                 if (Debugger.IsAttached)
                 {
-                    ActionDatas[act].ForEach(act);
+                    foreach (var data in ActionDatas[act])
+                    {
+                        act(data);
+                    }
                 }
                 else
                 {
-                    ActionDatas[act].AsParallel().ForAll(act);
+                    // copy the set of concurrent actions into a new container for the parallel access to be allowed
+                    var actionDatas = ActionDatas[act].ToArray();
+                    actionDatas.AsParallel().ForAll(act);
                 }
             }
         }
