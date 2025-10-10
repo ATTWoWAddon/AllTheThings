@@ -1320,7 +1320,7 @@ namespace ATT
                 // since we may determine an itemID for these Sourced Items after the ConditionalMerge phase
                 // we need to apply that logic to this data specifically as well
                 // but don't capture that this item is actually sourced within the ensemble
-                DoConditionalDataMerging(data);
+                DoConditionalDataMerging(source);
                 Objects.AssignFilterID(source);
                 // skip consolidation step since all the data is generated for this object and doesn't need further cleanup
                 CaptureDebugDBData(source);
