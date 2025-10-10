@@ -588,6 +588,7 @@ namespace ATT
             foreach (var data in ConditionalItemData)
             {
                 Items.Merge(data, true);
+                Objects.MergeFromDB("itemID", data);
             }
 
             // Go through and merge all of the item species data into the item containers.
