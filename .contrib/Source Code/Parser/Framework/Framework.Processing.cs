@@ -1529,6 +1529,11 @@ namespace ATT
 
         private static void CaptureForSOURCED(IDictionary<string, object> data)
         {
+            // some data we want to explicitly ignore as being Sourced in a certain location since it may cause inaccurate data distribution
+            // for other data
+            if (data.ContainsKey("_ignoreSourced"))
+                return;
+
             foreach (var kvp in SOURCED)
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
@@ -4423,7 +4428,8 @@ namespace ATT
                         case "n":
                             if (!TryGetSOURCED("npcID", pID, out _) && coords != null)
                             {
-                                providerData = new Dictionary<string, object> { { "npcID", pID }, { "coords", coords } };
+                                // When adding an NPC under the Quest, we will ignore it as being Sourced there for further Parser logic
+                                providerData = new Dictionary<string, object> { { "npcID", pID }, { "coords", coords }, { "_ignoreSourced", true } };
                                 Validate_ReferencedIDs(providerData);
                                 Objects.Merge(parentg, providerData);
                             }

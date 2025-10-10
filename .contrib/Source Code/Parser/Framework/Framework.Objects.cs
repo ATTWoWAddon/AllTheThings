@@ -630,6 +630,11 @@ namespace ATT
             /// <param name="data"></param>
             internal static void PostProcessMergeInto(IDictionary<string, object> data)
             {
+                // some data we want to explicitly ignore as being Sourced in a certain location since it may cause inaccurate data distribution
+                // for other data
+                if (data.ContainsKey("_ignoreSourced"))
+                    return;
+
                 // questID : { 123, [ obj1, obj2, obj3 ] }
                 // questID:123
                 // get the appropriate merge objects for this data based on the matching keys
