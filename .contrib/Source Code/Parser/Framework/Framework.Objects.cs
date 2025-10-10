@@ -616,6 +616,12 @@ namespace ATT
                 // Processing on groups happens IN REVERSE so if we are adding content to be post-merged during that pass
                 // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
                 mergeObjects.Insert(0, data);
+
+                // If the merge key/value matches a Sourced data already, then we know it will merge into that data correctly
+                if (TryGetSOURCED(key, keyValue, out var sourced))
+                {
+                    data["_postMergeSourced"] = sourced;
+                }
             }
 
             /// <summary>

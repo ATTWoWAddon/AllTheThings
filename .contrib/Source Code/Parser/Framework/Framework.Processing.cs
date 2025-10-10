@@ -3551,8 +3551,18 @@ namespace ATT
                 cloned = true;
             }
 
+            bool confirmedClone = false;
+            // Check if we 'know' the cloned data is assigned to a matching visible Sourced data
+            if (data.TryGetValue("_postMergeSourced", out object postMergeSourcedObj)
+                && postMergeSourcedObj is HashSet<IDictionary<string, object>> postMergeSourced
+                && !postMergeSourced.Any(d => d.ContainsKey("_unsorted")))
+            {
+                confirmedClone = true;
+            }
+
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
-            if (cloned && data.TryGetValue("criteriaID", out criteriaID))
+            // if it isn't known to be a confirmed clone
+            if (!confirmedClone && cloned && data.TryGetValue("criteriaID", out criteriaID))
             {
                 // if the Criteria attempts to clone into an NPC which isn't Sourced, then don't remove it and add to 'providers'
                 if (data.TryGetValue("_npcs", out List<object> npcObjs))
@@ -4656,9 +4666,6 @@ namespace ATT
 
         private static void DuplicateDataIntoGroups(IDictionary<string, object> data, object groups, string type)
         {
-            // only need to setup the merge data on the first pass
-            if (!MergeItemData) return;
-
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
             if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {
