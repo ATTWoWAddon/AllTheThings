@@ -148,8 +148,6 @@ namespace ATT
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)
             {
-                Objects.AssignFilterID(data);
-
                 // verify that no source is included for items which should explicitly ignoreSource
                 if (data.TryGetValue("ignoreSource", out bool ig) && ig)
                 {
@@ -176,6 +174,8 @@ namespace ATT
             AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("factionID"), Validate_Faction);
             AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
 
+            AddHandlerAction(ParseStage.ConditionalData, Handler.AlwaysHandle, Objects.AssignFilterID);
+
             AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("_Incorporate_Ensemble"), Consolidate_EnsembleCleanup);
             AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("sourceQuests"), Consolidate_sourceQuests);
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_CleanupGroup);
@@ -193,7 +193,6 @@ namespace ATT
             // Capture Conditional DB data into the global DBs, and then merge that data into the respective Objects
             CurrentParseStage = ParseStage.ConditionalData;
             AdditionalProcessing();
-
             ProcessingFunction = DataConditionalMerge;
             foreach (var container in Objects.AllContainers)
             {
@@ -588,7 +587,6 @@ namespace ATT
             // Merge conditional data
             foreach (var data in ConditionalItemData)
             {
-                Objects.AssignFilterID(data);
                 Items.Merge(data, true);
             }
 
@@ -946,8 +944,6 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeSharedDataIntoObject(data);
 
-            // ensure the FilterID for this data is double-checked after merging in the shared data
-            Objects.AssignFilterID(data);
             Objects.AssignFactionID(data);
 
             // Currently, this merges in data from actual Recipes to other non-Recipe Items which are linked to the same SpellID
