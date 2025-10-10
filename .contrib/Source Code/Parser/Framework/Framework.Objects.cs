@@ -489,7 +489,7 @@ namespace ATT
                 }
                 else
                 {
-                    Console.WriteLine($"ERROR: Primary Key missing from {primaryKey}: {MiniJSON.Json.Serialize(databaseObject)}");
+                    LogError($"Primary Key missing from DB data {primaryKey}", databaseObject);
                 }
             }
 
@@ -547,7 +547,7 @@ namespace ATT
                 if (data.ContainsAnyKey(MergeRestrictedFields))
                     return;
 
-                foreach (var container in SharedDataByPrimaryKey)
+                foreach (var container in SharedDataByPrimaryKey.Where(c => MERGE_OBJECT_FIELDS.ContainsKey(c.Key)))
                 {
                     // does this data contain the key?
                     if (!data.TryGetValue(container.Key, out object keyValue))
@@ -558,8 +558,7 @@ namespace ATT
                         continue;
 
                     // merge the allowed fields by key into the data object
-                    if (!MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields))
-                        continue;
+                    MERGE_OBJECT_FIELDS.TryGetValue(container.Key, out string[] mergeFields);
 
                     PreMerge(data, commonData);
 
