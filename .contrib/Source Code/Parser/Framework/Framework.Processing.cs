@@ -916,26 +916,6 @@ namespace ATT
                 else MarkPhaseAsRequired(phase);
             }
 
-            if (data.ContainsKey("ignoreBonus"))
-            {
-                // will be removed later
-                data.Remove("modID");
-                data.Remove("bonusID");
-                NestedBonusID = 0L;
-                NestedModID = 0L;
-                NestedItemAppearanceModifierID = 0L;
-                //Log("Removed ignoreBonus modID", data.GetString("itemID"));
-            }
-            else
-            {
-                // Apply the inherited modID for items which do not specify their own modID
-                if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
-                {
-                    //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
-                    data["modID"] = NestedModID;
-                }
-            }
-
             CaptureForSOURCED(data);
 
             return true;
@@ -956,7 +936,7 @@ namespace ATT
         /// <summary>
         /// Logic which incoporates conditional DB data into Objects and captures the extent of SOURCED fields for each Object
         /// </summary>
-        private static bool DataConditionalMerge(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        private static bool DataConditionalMerge(IDictionary<string, object> data, IDictionary<string, object> parentData = null)
         {
             // Merge all relevant dictionary info into the data
             DoConditionalDataMerging(data);
@@ -1021,7 +1001,6 @@ namespace ATT
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
-            Items.DetermineSourceID(data);
             CheckObjectConversion(data);
 
             data.TryGetValue("g", out List<object> g);
@@ -1069,6 +1048,31 @@ namespace ATT
                     }
                 }
             }
+
+            // Remove mod/bonus from ignoreBonus items
+            if (data.ContainsKey("ignoreBonus"))
+            {
+                // will be removed later
+                data.Remove("modID");
+                data.Remove("bonusID");
+                NestedBonusID = 0L;
+                NestedModID = 0L;
+                NestedItemAppearanceModifierID = 0L;
+                //Log("Removed ignoreBonus modID", data.GetString("itemID"));
+            }
+            else
+            {
+                // Apply the inherited modID for items which do not specify their own modID
+                if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
+                {
+                    //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
+                    data["modID"] = NestedModID;
+                    // remove the modItemID field since the modID change might change it
+                    data.Remove("_modItemID");
+                }
+            }
+
+            Items.DetermineSourceID(data);
 
             // Get the filter for this Item
             Objects.Filters filter = Objects.Filters.Ignored;
@@ -1299,11 +1303,6 @@ namespace ATT
                             source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.GetExportableData();
                         }
                         source["_generated"] = true;
-                        Items.DetermineItemID(source);
-                        // since we may determine an itemID for this data after the ConditionalMerge phase
-                        // we need to apply that logic to this data specifically as well
-                        // but don't capture that this item is actually sourced within the ensemble
-                        DoConditionalDataMerging(source);
                         rawSources.Add(source);
                     }
                 }
@@ -1315,10 +1314,17 @@ namespace ATT
             // add the raw sources to the ensemble
             foreach (IDictionary<string, object> source in rawSources)
             {
-                Objects.Merge(data, "g", source);
+                Items.DetermineItemID(source);
                 Items.MarkItemAsReferenced(source);
-                // Capture references to specified Debug DB keys for Debug output
+
+                // since we may determine an itemID for these Sourced Items after the ConditionalMerge phase
+                // we need to apply that logic to this data specifically as well
+                // but don't capture that this item is actually sourced within the ensemble
+                DoConditionalDataMerging(data);
+                Objects.AssignFilterID(source);
+                // skip consolidation step since all the data is generated for this object and doesn't need further cleanup
                 CaptureDebugDBData(source);
+                Objects.Merge(data, "g", source);
             }
 
             // when Blizzard references a questID and tmogSetID which conflict from the same SpellID on an Item, we end up with one Item potentially granting 2 TransmogSets
