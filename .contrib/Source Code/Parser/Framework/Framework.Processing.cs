@@ -178,6 +178,7 @@ namespace ATT
 
             AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("_Incorporate_Ensemble"), Consolidate_EnsembleCleanup);
             AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("sourceQuests"), Consolidate_sourceQuests);
+            AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("_objectiveItems"), Consolidate__objectiveItems);
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_CleanupGroup);
 
             // Merge the Item Data into the Containers.
@@ -3768,6 +3769,50 @@ namespace ATT
             }
         }
 
+        private static void Consolidate__objectiveItems(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("_objectiveItems", out object objectiveItems))
+                return;
+
+            // These are Items referenced as 'provider' on an Objective for a Quest which are also Sourced elsewhere in ATT,
+            // meaning we don't really know if it's just a Quest Item or
+            // an un-related Item which is required to complete the Quest.
+            // So check what data we have in order to try and figure it out...
+
+            List<long> parentQis = new List<long>();
+
+            foreach (long itemID in objectiveItems.AsTypedEnumerable<long>())
+            {
+                if (!TryGetSOURCED("itemID", itemID, out HashSet<IDictionary<string, object>> sourcedItems))
+                {
+                    // this shouldn't happen since we only add to this field if it IS Sourced after Validate stage
+                    continue;
+                }
+
+                // If this Sourced Item is Filtered as a 'Quest Item' then it should be a 'qis' on the parent instead of a provider
+                var sourcedQuestItem = sourcedItems.FirstOrDefault(d => d.TryGetValue("f", out long f) && f == (long)Objects.Filters.Quest);
+                if (sourcedQuestItem != null)
+                {
+                    parentQis.Add(itemID);
+                    LogDebug($"INFO: Converted 'objective-item' {itemID} into 'qis' of parent due to Quest Item filter", data);
+                }
+                else
+                {
+                    // TODO: maybe handle provider items for objectives differently in the Retail 'cost' calculations...
+                    // we don't want them to show as a 'cost' if not actively on the quest
+
+                    parentQis.Add(itemID);
+                    LogDebug($"INFO: Converted 'objective-item' {itemID} into 'qis' of parent as fallback option", data);
+                }
+            }
+
+            if (parentQis.Count > 0)
+            {
+                Objects.Merge(data, "qis", parentQis);
+                LogDebug($"Merged 'qis' to parent from Objective: {ToJSON(parentQis)}", data);
+            }
+        }
+
         private static void Consolidate_providers(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("providers", out object providers))
@@ -4326,6 +4371,7 @@ namespace ATT
                 List<object> parentProviders = new List<object>();
                 List<long> parentCrs = new List<long>();
                 List<long> parentQis = new List<long>();
+                List<long> parentItems = new List<long>();
 
                 foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
                 {
@@ -4338,7 +4384,7 @@ namespace ATT
                     {
                         // Items can simply be referenced to the parent if they aren't sourced elsewhere, or assigned as a provider on the parent otherwise
                         case "i":
-                            if (!TryGetSOURCED("itemID", pID, out _))
+                            if (!TryGetSOURCED("itemID", pID, out var sourcedQuestProviderItems))
                             {
                                 Items.MarkItemAsReferenced(pID);
                                 // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
@@ -4346,7 +4392,8 @@ namespace ATT
                             }
                             else
                             {
-                                parentProviders.Add(new List<object> { "i", pID });
+                                parentItems.Add(pID);
+                                LogDebug($"INFO: Assigned 'objective-item' {pID} to parent due to being Sourced elsewhere", parentData);
                             }
                             break;
                         // Objects can be Sourced under the parent with attached coords if any if not Sourced, otherwise moved to a provider on the parent
@@ -4398,6 +4445,12 @@ namespace ATT
                 {
                     Objects.Merge(parentData, "qis", parentQis);
                     LogDebug($"Merged 'qis' to parent from Objective: {ToJSON(parentQis)}", parentData);
+                }
+
+                if (parentItems.Count > 0)
+                {
+                    Objects.Merge(parentData, "_objectiveItems", parentItems);
+                    LogDebug($"Merged '_objectiveItems' to parent from Objective: {ToJSON(parentItems)}", parentData);
                 }
 
                 if (parentg.Count > 0)

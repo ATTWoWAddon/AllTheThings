@@ -1911,6 +1911,7 @@ end");
                     case "_sourceIDs":
                     case "_species":
                     case "_extraSpells":
+                    case "_objectiveItems":
                     case "qis":
                         {
                             MergeIntegerArrayData(item, field, value);
