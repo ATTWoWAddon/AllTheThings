@@ -1534,6 +1534,8 @@ namespace ATT
             if (data.ContainsKey("_ignoreSourced"))
                 return;
 
+            // data.DataBreakPoint("_DEBUG", true);
+
             foreach (var kvp in SOURCED)
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
@@ -1544,6 +1546,23 @@ namespace ATT
                     }
                     sources.Add(data);
                 }
+                // TODO: not treating encounters as sources for NPCs currently due to overzealous merging without respect to difficulty
+                // special cases where the id field is not in the data, but we will treat that data as Sourced for that key/id anyway
+                //else if (kvp.Key == "npcID")
+                //{
+                //    // Multi-NPC Encounters should be treated as being Sourced for each NPCID in 'crs'
+                //    if (data.TryGetValue("encounterID", out long encounterID) && data.TryGetValue("crs", out List<object> crs))
+                //    {
+                //        foreach (long npcID in crs.AsTypedEnumerable<long>())
+                //        {
+                //            if (!kvp.Value.TryGetValue(npcID, out HashSet<IDictionary<string, object>> sources))
+                //            {
+                //                kvp.Value[npcID] = sources = new HashSet<IDictionary<string, object>>();
+                //            }
+                //            sources.Add(data);
+                //        }
+                //    }
+                //}
             }
         }
 
@@ -3560,14 +3579,17 @@ namespace ATT
                 cloned = true;
             }
 
+            // data.DataBreakPoint("criteriaID", 19626);
+
             bool confirmedClone = false;
+            // TODO: revise with adjustments on post-process merging
             // Check if we 'know' the cloned data is assigned to a matching visible Sourced data
-            if (data.TryGetValue("_postMergeSourced", out object postMergeSourcedObj)
-                && postMergeSourcedObj is HashSet<IDictionary<string, object>> postMergeSourced
-                && !postMergeSourced.Any(d => d.ContainsKey("_unsorted")))
-            {
-                confirmedClone = true;
-            }
+            //if (data.TryGetValue("_postMergeSourced", out object postMergeSourcedObj)
+            //    && postMergeSourcedObj is HashSet<IDictionary<string, object>> postMergeSourced
+            //    && !postMergeSourced.Any(d => d.ContainsKey("_unsorted")))
+            //{
+            //    confirmedClone = true;
+            //}
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
             // if it isn't known to be a confirmed clone

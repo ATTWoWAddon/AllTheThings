@@ -104,11 +104,12 @@ namespace ATT
             private static IDictionary<string, HashSet<decimal>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<decimal>>();
 
             /// <summary>
-            /// Set of fields which when present in a group will prevent the merging in/out of that group to the associated DB containers
+            /// Set of fields which when present in a group will prevent the merging in/out of that group to the associated DB containers,
+            /// or into such a group from post-processed merges
             /// </summary>
             private static HashSet<string> MergeRestrictedFields { get; } = new HashSet<string>
             {
-                "objectiveID", "criteriaID"
+                "_ignoreSourced", "objectiveID", "criteriaID"
             };
             #endregion
 
@@ -605,6 +606,21 @@ namespace ATT
             /// <param name="data"></param>
             internal static void PostProcessMerge(string key, decimal keyValue, IDictionary<string, object> data)
             {
+                // TODO: need to revise the merge process more, having it performed in the same stage as Incorporation means we could try to merge into
+                // something that hasn't been assigned the necessary data yet, like a questID on Criteria or SpellID on an Item
+                // If the merge key/value matches a valid Sourced data already, then we can just directly merge it into those Sourced objects
+                //if (TryGetSOURCED(key, keyValue, out var sourced))
+                //{
+                //    data["_postMergeSourced"] = sourced;
+                //    foreach(var source in sourced)
+                //    {
+                //        Merge(source, "g", data);
+                //    }
+                //    return;
+                //}
+
+                // data.DataBreakPoint("criteriaID", 32891);
+
                 if (!PostProcessMergeIntos.TryGetValue(key, out Dictionary<decimal, List<IDictionary<string, object>>> typeObjects))
                     PostProcessMergeIntos[key] = typeObjects = new Dictionary<decimal, List<IDictionary<string, object>>>();
 
@@ -615,12 +631,6 @@ namespace ATT
                 // Processing on groups happens IN REVERSE so if we are adding content to be post-merged during that pass
                 // we will order them backwards as well so that when they are merged into the respective groups they are ordered as originally Sourced
                 mergeObjects.Insert(0, data);
-
-                // If the merge key/value matches a Sourced data already, then we know it will merge into that data correctly
-                if (TryGetSOURCED(key, keyValue, out var sourced))
-                {
-                    data["_postMergeSourced"] = sourced;
-                }
             }
 
             /// <summary>
@@ -632,9 +642,10 @@ namespace ATT
             {
                 // some data we want to explicitly ignore as being Sourced in a certain location since it may cause inaccurate data distribution
                 // for other data
-                if (data.ContainsKey("_ignoreSourced"))
+                if (data.ContainsAnyKey(MergeRestrictedFields))
                     return;
 
+                // data.DataBreakPoint("_DEBUG", true);
                 // questID : { 123, [ obj1, obj2, obj3 ] }
                 // questID:123
                 // get the appropriate merge objects for this data based on the matching keys
@@ -645,19 +656,39 @@ namespace ATT
                     if (ProcessingAchievementCategory && key == "achID")
                         continue;
 
-                    // does this data contain the key? and never merge into a Criteria directly
-                    if (!data.TryGetValue(key, out decimal keyValue) || data.ContainsKey("criteriaID"))
-                        continue;
-
                     // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
                     if (key == "factionID" && data.ContainsKey("itemID"))
                         continue;
 
-                    var typeObjects = mergeKvp.Value;
-                    //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
-                    // get the container for objects of this key
-                    if (!typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
-                        continue;
+                    // Determine the set of mergeObjects to merge into this data
+                    List<IDictionary<string, object>> mergeObjects = null;
+
+                    // does this data contain the matching field
+                    if (!(data.TryGetValue(key, out decimal keyValue)
+                        // get the container for objects of this key
+                        && mergeKvp.Value.TryGetValue(keyValue, out mergeObjects)))
+                    {
+                        // TODO: too lenient on merging without respect to difficulty... for now will maintain only _encounterHash merging into encounters
+                        // special cases where a non-key-based data may still need to merge assigned data based on fields
+                        //if (key == "npcID")
+                        //{
+                        //    // Multi-NPC Encounters should be treated as being Sourced for each NPCID in 'crs'
+                        //    if (data.TryGetValue("encounterID", out long encounterID) && data.TryGetValue("crs", out List<object> crs))
+                        //    {
+                        //        mergeObjects = new List<IDictionary<string, object>>();
+                        //        foreach (long npcID in crs.AsTypedEnumerable<long>())
+                        //        {
+                        //            if (mergeKvp.Value.TryGetValue(npcID, out var subMergeObjects))
+                        //            {
+                        //                mergeObjects.AddRange(subMergeObjects);
+                        //            }
+                        //        }
+                        //    }
+                        //}
+
+                        if (mergeObjects == null)
+                            continue;
+                    }
 
                     // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
 
