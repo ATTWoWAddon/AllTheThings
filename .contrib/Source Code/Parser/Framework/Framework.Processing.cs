@@ -5,12 +5,10 @@ using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using static ATT.Export;
 using static ATT.FieldTypes.TimelineEntry;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -27,40 +25,40 @@ namespace ATT
             (long)Objects.Filters.Cloak
         };
 
-        /// <summary>
-        /// Contains function mappings against Sourced Groups to be executed in parallel following sequential Processing sequence
-        /// </summary>
-        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> PostProcessFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+        private static readonly ConcurrentDictionary<ParseStage, Handler> Handlers = new ConcurrentDictionary<ParseStage, Handler>();
 
         /// <summary>
-        /// Contains function mappings against Sourced Groups to be executed in parallel following PostProcessing since these remove data which may be needed
+        /// This is assigned when <see cref="CurrentParseStage"/> is changed
         /// </summary>
-        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> CleanupFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+        private static Handler CurrentParseStageHandler { get; set; }
 
         /// <summary>
-        /// Adds a post processing function for a given object
+        /// Allows adding a Handler for a conditional piece of logic to be acted upon at the end of the specified Parse Stage
         /// </summary>
-        private static void AddPostProcessing(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
+        /// <param name="stage"></param>
+        /// <param name="condition"></param>
+        /// <param name="act"></param>
+        public static void AddHandlerAction(ParseStage stage, Func<IDictionary<string, object>, bool> condition, Action<IDictionary<string, object>> act)
         {
-            if (!PostProcessFunctions.TryGetValue(act, out var objs))
-            {
-                PostProcessFunctions[act] = objs = new List<IDictionary<string, object>>();
-            }
-
-            objs.Add(obj);
+            var handler = Handlers.GetOrAdd(stage, _ => new Handler(stage));
+            handler.AddConditionAction(condition, act);
         }
 
-        /// <summary>
-        /// Adds a post processing function for a given object
-        /// </summary>
-        private static void AddCleanup(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
+        private static void AddDataForHandlers(IDictionary<string, object> data)
         {
-            if (!CleanupFunctions.TryGetValue(act, out var objs))
+            if (CurrentParseStageHandler != null)
             {
-                CleanupFunctions[act] = objs = new List<IDictionary<string, object>>();
+                CurrentParseStageHandler.AddData(data);
             }
+        }
 
-            objs.Add(obj);
+        private static void RunCurrentParseStageHandlers()
+        {
+            if (CurrentParseStageHandler != null)
+            {
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + $" ...with {CurrentParseStageHandler.ActionSequence.Count} Actions...");
+                CurrentParseStageHandler.RunActions();
+            }
         }
 
         /// <summary>
@@ -163,6 +161,25 @@ namespace ATT
                 }
             }
 
+            // Define some common Handler Actions which can be performed in parallel for each Parse Stage
+            if (!PreProcessorTags.Contains("OBJECTIVES"))
+            {
+                // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
+                // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
+                AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("objectiveID"), Validate_objectiveID);
+            }
+
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("headerID"), Validate_headerID);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("questID"), Validate_Quest);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("sym"), Validate_sym);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("providers"), Validate_providers);
+            AddHandlerAction(ParseStage.Validation, (data) => data.ContainsKey("factionID"), Validate_Faction);
+            AddHandlerAction(ParseStage.Validation, Handler.AlwaysHandle, Validate_Parallel);
+
+            AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("_Incorporate_Ensemble"), Consolidate_EnsembleCleanup);
+            AddHandlerAction(ParseStage.Consolidation, (data) => data.ContainsKey("sourceQuests"), Consolidate_sourceQuests);
+            AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_CleanupGroup);
+
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
             Validator.OnlyClean = (bool)Config["Validation"]["clean"];
@@ -171,6 +188,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Capture Conditional DB data into the global DBs, and then merge that data into the respective Objects
             CurrentParseStage = ParseStage.ConditionalData;
@@ -181,6 +199,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Merge Wago Battle Pet data into the containers
             // TODO: move this to the Incorporate pass instead of manually outside the flow
@@ -210,6 +229,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
+            RunCurrentParseStageHandlers();
 
             // Pass to clean up and consolidate final information within Objects
             CurrentParseStage = ParseStage.Consolidation;
@@ -219,36 +239,7 @@ namespace ATT
             {
                 ProcessContainer(container);
             }
-
-            // Post-processing of individual groups in parallel (logic which does not require cross-modification or follow up processing)
-            CurrentParseStage = ParseStage.PostProcessing;
-            foreach (var actionSequence in PostProcessFunctions)
-            {
-                var act = actionSequence.Key;
-                if (Debugger.IsAttached)
-                {
-                    actionSequence.Value.ForEach(act);
-                }
-                else
-                {
-                    actionSequence.Value.AsParallel().ForAll(act);
-                }
-            }
-
-            // Cleanup of individual groups in parallel (logic which cleans and removes unnecessary data for Export)
-            CurrentParseStage = ParseStage.Cleanup;
-            foreach (var actionSequence in CleanupFunctions)
-            {
-                var act = actionSequence.Key;
-                if (Debugger.IsAttached)
-                {
-                    actionSequence.Value.ForEach(act);
-                }
-                else
-                {
-                    actionSequence.Value.AsParallel().ForAll(act);
-                }
-            }
+            RunCurrentParseStageHandlers();
 
             // Sort World Drops by Name
             var worldDrops = Objects.GetNull("WorldDrops");
@@ -454,28 +445,28 @@ namespace ATT
             HashSet<decimal> orphanedBreadcrumbs = new HashSet<decimal>();
             OutputSets.Add("Orphaned Breadcrumbs", orphanedBreadcrumbs);
 
-            // check for orphaned breadcrumbs
-            foreach (var pair in Objects.AllQuests)
+            if (Objects.SharedDataByPrimaryKey.TryGetValue("questID", out var questDB) && questDB.Any())
             {
-                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
-                    && isBreadcrumb
-                    && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
+                // check for orphaned breadcrumbs
+                foreach (var pair in questDB)
                 {
-                    // Breadcrumb quest without next quests information
-                    orphanedBreadcrumbs.Add(pair.Key);
+                    if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb)
+                        && isBreadcrumb
+                        && !pair.Value.TryGetValue("nextQuests", out object nextQuests))
+                    {
+                        // Breadcrumb quest without next quests information
+                        orphanedBreadcrumbs.Add(pair.Key is long key ? key : 0);
+                    }
                 }
-            }
 
-            if (QUESTS.Any())
-            {
                 var unsortedQuests = new List<object>();
-                long maxQuestID = QUESTS.Max(x => x.Key);
+                long maxQuestID = questDB.Max(x => x.Key is long key ? key : 0);
                 for (long i = 1; i <= maxQuestID; i++)
                 {
                     // add any quest information which is not sourced/referenced but includes more than just a questID into the Unsorted category
                     if (!TryGetSOURCED("questID", i, out var sourcedQuests)
                         && !QUESTS_WITH_REFERENCES.ContainsKey(i)
-                        && QUESTS.TryGetValue(i, out IDictionary<string, object> questRef))
+                        && questDB.TryGetValue(i, out ConcurrentDictionary<string, object> questRef))
                     {
                         var entry = new Dictionary<string, object>() { { "questID", i } };
 
@@ -636,7 +627,6 @@ namespace ATT
             // Check to make sure the data is valid.
             if (data == null) return false;
 
-
             if (DebugMode && MergeItemData)
             {
                 // Capture references to specified Debug DB keys for Debug output
@@ -719,8 +709,16 @@ namespace ATT
 
             // handle the current processing against the data
             bool success = true;
+
+            //data.DataBreakPoint("_DEBUG", true);
             if (ProcessingFunction(data, parentData))
             {
+                // Store the parent relationship
+                data["__parent"] = parentData;
+
+                // Add this data to the necessary Handlers for the current Parse Stage even if it is not actually included in export (Retail Objectives, etc.)
+                AddDataForHandlers(data);
+
                 // If this container has an aqd or hqd, then process those objects as well.
                 if (data.TryGetValue("aqd", out IDictionary<string, object> aqd)) Process(aqd, data);
                 if (data.TryGetValue("hqd", out IDictionary<string, object> hqd)) Process(hqd, data);
@@ -877,16 +875,6 @@ namespace ATT
         /// <param name="data"></param>
         private static bool DataValidation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
-            // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
-            if (data.ContainsKey("objectiveID") && !PreProcessorTags.Contains("OBJECTIVES"))
-            {
-                // capture the parent relationship here since we are removing the objective data
-                data["_parent"] = parentData;
-                AddPostProcessing(ConvertObjectiveData, data);
-                return false;
-            }
-
             Validate_InheritedFields(data, parentData);
 
             if (!data.ContainsKey("timeline"))
@@ -904,26 +892,10 @@ namespace ATT
             if (!CheckTimeline(data, parentData))
                 return false;
 
+            // These validate functions require current heirarchy
             Validate_General(data);
-
-            Validate_npc(data);
             Validate_Encounter(data);
-            Validate_sym(data);
-            Validate_providers(data);
-
-            // Validate Headers
-            if (data.TryGetValue("headerID", out long headerID))
-            {
-                MarkCustomHeaderAsRequired(headerID);
-            }
-
-            Validate_Achievement(data);
             Validate_Criteria(data);
-            Validate_Faction(data);
-            Validate_LocationData(data);
-            Validate_Quest(data);
-
-            Validate_LocalizableData(data);
             Validate_ReferencedIDs(data);
 
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
@@ -964,22 +936,7 @@ namespace ATT
                 }
             }
 
-            foreach (KeyValuePair<string, object> value in data.ToList())
-            {
-                // validate any IProcessedField
-                if (value.Value is IProcessedField validatedField)
-                {
-                    validatedField.Validate();
-                }
-            }
-
-            // Mark this item as having a reference since it exists in a processed container
-            Items.MarkItemAsReferenced(data);
-
-            // Merge all relevant Data into the global dictionaries after being validated
-            // TODO: This will be removed eventually. Global content needs to have a Global DB source
-            Items.MergeFromObject(data);
-            Objects.MergeFromObject(data);
+            CaptureForSOURCED(data);
 
             return true;
         }
@@ -1061,30 +1018,12 @@ namespace ATT
             if (!CheckTimeline(data, parentData))
                 return false;
 
-            Consolidate_General(data);
-
             Consolidate_lvl(data);
-            Consolidate_c(data);
-            Consolidate_providers(data);
-            Consolidate_altQuests(data);
             Consolidate_item(data, parentData);
-            Consolidate_awprwp(data);
-
-            // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
-            // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
-            TryFindRecipeID(data);
-            CheckRequireSkill(data);
             CheckHeirloom(data);
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
-
-            //if (data.TryGetValue("itemID", out long testitemid) && testitemid == 50169)
-            //{
-
-            //}
             Items.DetermineSourceID(data);
-            Objects.AssignFactionID(data);
-
             CheckObjectConversion(data);
 
             data.TryGetValue("g", out List<object> g);
@@ -1106,29 +1045,11 @@ namespace ATT
                 //}
             }
 
-            Consolidate_ConflictingFields(data);
-
             //VerifyListContentOrdering(data);
 
             // during consolidation we may realize that data is not useful, and can mark it to be removed before further steps take place
             if (data.TryGetValue("_remove", out remove) && remove)
                 return false;
-
-            // when consolidating data, check for duplicate objects (instead of when merging)
-            foreach (string key in TypeUseCounts.Keys)
-            {
-                if (data.TryGetValue(key, out decimal id))
-                {
-                    IncrementTypeUseCount(key, id);
-                }
-                else if (key == "questID")
-                {
-                    if (data.TryGetValue("questIDA", out id))
-                        IncrementTypeUseCount(key, id);
-                    if (data.TryGetValue("questIDH", out id))
-                        IncrementTypeUseCount(key, id);
-                }
-            }
 
             // only clean the name after other processing is complete
             if (data.TryGetValue("name", out string name))
@@ -1186,46 +1107,30 @@ namespace ATT
                         }
                         break;
                 }
-
-                /*
-                if (data.TryGetValue("requireSkill", out long  requiredSkill))
-                {
-                    // if this data has a recipeID, cache the information
-                    if (!(data.TryGetValue("recipeID", out long recipeID) || f == 200))
-                    {
-                        if (data.TryGetValue("itemID", out long itemID))
-                        {
-                            long b = 0;
-                            if (!data.TryGetValue("b", out b) || b != 1)
-                            {
-                                Console.Write("BoE/Unbound Item (");
-                                Console.Write(b);
-                                Console.Write(") marked as requiring a profession, but not being a recipe: ");
-                                Console.Write(itemID);
-                                Console.Write(" (");
-                                Console.Write(requiredSkill);
-                                Console.WriteLine(")");
-                                Console.WriteLine("This is going to cause an issue with folks seeing it in the list when they should.");
-                            }
-                        }
-                    }
-                }
-                */
             }
 
             CaptureForSOURCED(data);
             CaptureDebugDBData(data);
 
-            // PostProcessing is anything that
-            // - Has no change to any other data
-            // - May require checks against other Sourced data
-            // - Does not change 'Sourced' data
-            if (data.ContainsKey("sourceQuests"))
-                AddPostProcessing(PostProcess_sourceQuests, data);
-
-            AddCleanup(CleanupGroup, data);
-
             return true;
+        }
+
+        private static void Consolidate_TrackUsage(IDictionary<string, object> data)
+        {
+            foreach (string key in TypeUseCounts.Keys)
+            {
+                if (data.TryGetValue(key, out decimal id))
+                {
+                    IncrementTypeUseCount(key, id);
+                }
+                else if (key == "questID")
+                {
+                    if (data.TryGetValue("questIDA", out id))
+                        IncrementTypeUseCount(key, id);
+                    if (data.TryGetValue("questIDH", out id))
+                        IncrementTypeUseCount(key, id);
+                }
+            }
         }
 
         private static void Consolidate_c(IDictionary<string, object> data)
@@ -1239,8 +1144,23 @@ namespace ATT
             }
         }
 
-        private static void CleanupGroup(IDictionary<string, object> data)
+        private static void Consolidate_CleanupGroup(IDictionary<string, object> data)
         {
+            // if this group was flagged to remove, just ignore cleaning it since it won't show up in export
+            if (data.TryGetValue("_remove", out bool remove) && remove)
+                return;
+
+            Consolidate_General(data);
+            Consolidate_c(data);
+            Consolidate_providers(data);
+            Consolidate_altQuests(data);
+            Consolidate_awprwp(data);
+            CheckRequireSkill(data);
+
+            Consolidate_ConflictingFields(data);
+
+            Objects.AssignFactionID(data);
+
             List<string> removeKeys = new List<string>();
 
             // clean out any temporary 'type' fields which do not yet have a corresponding conversion in parser.config
@@ -1293,6 +1213,8 @@ namespace ATT
             {
                 data.Remove(key);
             }
+
+            Consolidate_TrackUsage(data);
         }
 
         private static void DoShiftCoords(IDictionary<string, object> data)
@@ -1340,7 +1262,7 @@ namespace ATT
             }
         }
 
-        private static void EnsembleCleanup(IDictionary<string, object> data)
+        private static void Consolidate_EnsembleCleanup(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("spellID", out long spellID) && !data.TryGetValue("ensembleSpellID", out spellID))
             {
@@ -1503,14 +1425,33 @@ namespace ATT
         }
 
         /// <summary>
+        /// Contains Validate methods which can be run in parallel
+        /// </summary>
+        /// <param name="data"></param>
+        private static void Validate_Parallel(IDictionary<string, object> data)
+        {
+            Validate_npc(data);
+            Validate_LocationData(data);
+            Validate_LocalizableData(data);
+            Validate_IProcessedFields(data);
+
+            // dynamic config-driven validaton
+            Validator.Validate(data);
+
+            // Mark this item as having a reference since it exists in a processed container
+            Items.MarkItemAsReferenced(data);
+            // Merge all relevant Data into the global dictionaries after being validated
+            // TODO: This will be removed eventually. Global content needs to have a Global DB source
+            Items.MergeFromObject(data);
+            Objects.MergeFromObject(data);
+        }
+
+        /// <summary>
         /// General validation on contrib-defined data
         /// </summary>
         /// <param name="data"></param>
         private static void Validate_General(IDictionary<string, object> data)
         {
-            // dynamic config-driven validaton
-            Validator.Validate(data);
-
             // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type (ignored if it is a quest)
             if (data.TryGetValue("collectible", out bool collectible) && !collectible && !data.ContainsKey("questID") && data.ContainsKey("g"))
             {
@@ -1533,10 +1474,10 @@ namespace ATT
             data["_remove"] = false;
         }
 
-        private static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
+        internal static bool TryGetSOURCED(string field, object idObj, out HashSet<IDictionary<string, object>> sources)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                && idObj is long id
+                && idObj.TryConvert(out long id)
                 && id > 0
                 && fieldSources.TryGetValue(id, out sources))
             {
@@ -1552,7 +1493,7 @@ namespace ATT
             foreach (KeyValuePair<string, object> field in data)
             {
                 if (SOURCED.TryGetValue(field.Key, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                    && field.Value is long id && id > 0
+                    && field.Value.TryConvert(out long id) && id > 0
                     && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
                 {
                     yield return objectSources;
@@ -1563,7 +1504,7 @@ namespace ATT
         private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
-                && idObj is long id && id > 0
+                && idObj.TryConvert(out long id) && id > 0
                 && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
             {
                 yield return objectSources;
@@ -1625,6 +1566,18 @@ namespace ATT
                 FLIGHTPATHS_WITH_REFERENCES[flightpathID] = true;
             if (data.TryGetValue("objectID", out tempId))
                 OBJECTS_WITH_REFERENCES[tempId] = true;
+        }
+
+        private static void Validate_IProcessedFields(IDictionary<string, object> data)
+        {
+            foreach (KeyValuePair<string, object> value in data)
+            {
+                // validate any IProcessedField
+                if (value.Value is IProcessedField validatedField)
+                {
+                    validatedField.Validate();
+                }
+            }
         }
 
         private static void Validate_LocalizableData(IDictionary<string, object> data)
@@ -2043,28 +1996,31 @@ namespace ATT
             }
         }
 
+        public static void Validate_headerID(IDictionary<string, object> data)
+        {
+            if (data.TryGetValue("headerID", out long headerID) && headerID < 1)
+            {
+                CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
+            }
+        }
+
         private static void Validate_Quest(IDictionary<string, object> data)
         {
             // Mark the quest as referenced
             if (!data.TryGetValue("questID", out long questID))
                 return;
 
-            //if (questID == 69332)
-            //{
-
-            //}
-
             // Merge quest entry to AllQuest collection
-            Objects.MergeQuestData(data);
+            Objects.ReferenceQuestIDs(data);
 
             // Classic-only AQD/HQD quest datas
             if (data.TryGetValue("aqd", out IDictionary<string, object> aqd))
             {
-                Objects.MergeQuestData(aqd);
+                Objects.ReferenceQuestIDs(aqd);
             }
             if (data.TryGetValue("hqd", out IDictionary<string, object> hqd))
             {
-                Objects.MergeQuestData(hqd);
+                Objects.ReferenceQuestIDs(hqd);
             }
 
             // Remove itself from the list of altQuests
@@ -2130,11 +2086,15 @@ namespace ATT
                     }
                 }
             }
-        }
 
-        private static void Validate_Achievement(IDictionary<string, object> data)
-        {
-            if (!data.TryGetValue("achID", out long achID) || data.ContainsKey("criteriaID")) return;
+            // The sourceQuests of this Quest should have this Quest assigned as a 'nextQuests'
+            if (data.TryGetValue("sourceQuests", out List<object> sourceQuests))
+            {
+                foreach (long sourceQuestID in sourceQuests.AsTypedEnumerable<long>())
+                {
+                    Objects.MergeFromObject(new Dictionary<string, object> { { "questID", sourceQuestID }, { "nextQuests", questID } });
+                }
+            }
         }
 
         private static void Validate_InheritedFields(IDictionary<string, object> data, IDictionary<string, object> parentData)
@@ -2268,7 +2228,7 @@ namespace ATT
             }
 
             // Achievements can end up with QuestID so make sure to capture them
-            Objects.MergeQuestData(data);
+            Objects.ReferenceQuestIDs(data);
         }
 
         private static void Incorporate_Criteria(IDictionary<string, object> data)
@@ -3220,7 +3180,6 @@ namespace ATT
                 }
             }
 
-            AddPostProcessing(EnsembleCleanup, data);
             // don't incorporate ensemble again
             data["_Incorporate_Ensemble"] = true;
         }
@@ -3410,7 +3369,7 @@ namespace ATT
                             {
                                 Objects.Merge(data, "questID", questID);
                                 LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
-                                Objects.MergeQuestData(data);
+                                Objects.ReferenceQuestIDs(data);
                                 TrackIncorporationData(data, "questID", questID);
                             }
                         }
@@ -3592,8 +3551,18 @@ namespace ATT
                 cloned = true;
             }
 
+            bool confirmedClone = false;
+            // Check if we 'know' the cloned data is assigned to a matching visible Sourced data
+            if (data.TryGetValue("_postMergeSourced", out object postMergeSourcedObj)
+                && postMergeSourcedObj is HashSet<IDictionary<string, object>> postMergeSourced
+                && !postMergeSourced.Any(d => d.ContainsKey("_unsorted")))
+            {
+                confirmedClone = true;
+            }
+
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
-            if (cloned && data.TryGetValue("criteriaID", out criteriaID))
+            // if it isn't known to be a confirmed clone
+            if (!confirmedClone && cloned && data.TryGetValue("criteriaID", out criteriaID))
             {
                 // if the Criteria attempts to clone into an NPC which isn't Sourced, then don't remove it and add to 'providers'
                 if (data.TryGetValue("_npcs", out List<object> npcObjs))
@@ -3885,7 +3854,7 @@ namespace ATT
             }
         }
 
-        private static void PostProcess_sourceQuests(IDictionary<string, object> data)
+        private static void Consolidate_sourceQuests(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 return;
@@ -3905,22 +3874,6 @@ namespace ATT
                     LogError($"Referenced Source Quest {sourceQuestID} has not been Sourced");
                     continue;
                 }
-
-                var sourceQuest = sourceQuestObjs.FirstOrDefault(q => !q.ContainsKey("_unsorted"));
-                // source quest of this data is considered a breadcrumb, so note in the source quest it has a specific follow up
-                if (sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
-                {
-                    // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
-                    if (!sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
-                    {
-                        sourceQuest.Add("nextQuests", nextQuests = new List<object>());
-                    }
-
-                    if (data.TryGetValue("questID", out long questID) && !nextQuests.Contains(questID))
-                    {
-                        nextQuests.Add(questID);
-                    }
-                }
             }
         }
 
@@ -3937,7 +3890,7 @@ namespace ATT
                     continue;
                 }
 
-                if (!Objects.AllQuests.ContainsKey(altQuestID))
+                if (!TryGetSOURCED("questID", altQuestID, out var _))
                 {
                     // Source Quest not in database
                     LogDebugWarn($"Referenced Alternate Quest {altQuestID} has not been Sourced");
@@ -4032,6 +3985,12 @@ namespace ATT
                         break;
                     }
                 }
+            }
+
+            // Don't include 'nextQuests' on regular quests, only on breadcrumbs
+            if (!data.TryGetValue("isBreadcrumb", out bool isBreadcrumb) || !isBreadcrumb)
+            {
+                data.Remove("nextQuests");
             }
         }
 
@@ -4238,10 +4197,8 @@ namespace ATT
 
         private static void IncrementTypeUseCount(string key, decimal id)
         {
-            Dictionary<decimal, int> idCounts = TypeUseCounts[key];
-            idCounts.TryGetValue(id, out int count);
-            count += 1;
-            idCounts[id] = count;
+            ConcurrentDictionary<decimal, int> idCounts = TypeUseCounts[key];
+            idCounts.AddOrUpdate(id, 1, (k, count) => count + 1);
         }
 
         /// <summary>
@@ -4310,7 +4267,8 @@ namespace ATT
                     // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
                     // as long as the Thing itself isn't specifically also marked with 'u' directly
                     // as long as the Thing itself isn't an 'objective'
-                    if (data.ContainsAnyKey("u", "objectiveID"))
+                    // as long as the Thing itself isn't a 'criteria'
+                    if (data.ContainsAnyKey("u", "objectiveID", "criteriaID"))
                         break;
 
                     // or inherited a 'timeline' to itself
@@ -4356,17 +4314,22 @@ namespace ATT
             return true;
         }
 
-        private static void ConvertObjectiveData(IDictionary<string, object> data)
+        private static void Validate_objectiveID(IDictionary<string, object> data)
         {
+            if (!data.TryGetValue("__parent", out IDictionary<string, object> parentData))
+                return;
+
             // Grab any coords for this objective if existing
             data.TryGetValue("coords", out List<object> coords);
 
-            if (!data.TryGetValue("_parent", out IDictionary<string, object> parentData))
-                return;
-
-            // Convert various 'providers' data into sub-groups on the parent data
+            // Convert various 'providers' data into data on the parent data
             if (data.TryGetValue("providers", out List<object> providers))
             {
+                List<object> parentg = new List<object>();
+                List<object> parentProviders = new List<object>();
+                List<long> parentCrs = new List<long>();
+                List<long> parentQis = new List<long>();
+
                 foreach (List<object> provider in providers.AsTypedEnumerable<List<object>>())
                 {
                     if (!provider[1].TryConvert(out long pID))
@@ -4376,42 +4339,74 @@ namespace ATT
                     string pType = provider[0] as string;
                     switch (pType)
                     {
-                        // Items can simply be referenced to the parent
+                        // Items can simply be referenced to the parent if they aren't sourced elsewhere, or assigned as a provider on the parent otherwise
                         case "i":
                             if (!TryGetSOURCED("itemID", pID, out _))
                             {
                                 Items.MarkItemAsReferenced(pID);
                                 // we will use 'qis' as a way to know that the itemID can be cached directly to that quest instead of as an item cost
-                                Objects.Merge(parentData, "qis", pID);
+                                parentQis.Add(pID);
+                            }
+                            else
+                            {
+                                parentProviders.Add(new List<object> { "i", pID });
                             }
                             break;
-                        // Objects can be Sourced under the parent with attached coords if any
+                        // Objects can be Sourced under the parent with attached coords if any if not Sourced, otherwise moved to a provider on the parent
                         case "o":
-                            if (!TryGetSOURCED("objectID", pID, out _) && IsObtainableData(parentData))
+                            if (!TryGetSOURCED("objectID", pID, out _))
                             {
                                 providerData = new Dictionary<string, object> { { "objectID", pID } };
                                 if (coords != null)
                                 {
                                     providerData["coords"] = coords;
                                 }
-                                Objects.Merge(parentData, "g", providerData);
+                                Validate_ReferencedIDs(providerData);
+                                Objects.Merge(parentg, providerData);
+                            }
+                            else
+                            {
+                                parentProviders.Add(new List<object> { "o", pID });
                             }
                             break;
-                        // NPCs can be Sourced under the parent with attached coords if any
+                        // NPCs can be Sourced under the parent with attached coords if any when not Sourced, otherwise simply included as 'crs' on the parent data
                         case "n":
-                            if (!TryGetSOURCED("npcID", pID, out _) && IsObtainableData(parentData))
+                            if (!TryGetSOURCED("npcID", pID, out _) && coords != null)
                             {
-                                providerData = new Dictionary<string, object> { { "npcID", pID } };
-                                if (coords != null)
-                                {
-                                    providerData["coords"] = coords;
-                                }
-                                Objects.Merge(parentData, "g", providerData);
+                                providerData = new Dictionary<string, object> { { "npcID", pID }, { "coords", coords } };
+                                Validate_ReferencedIDs(providerData);
+                                Objects.Merge(parentg, providerData);
+                            }
+                            else
+                            {
+                                parentCrs.Add(pID);
                             }
                             break;
                     }
-                    Validate_ReferencedIDs(providerData);
-                    LogDebug($"Nested 'provider' {pType}:{pID} to parent from Objective", parentData);
+                }
+
+                if (parentCrs.Count > 0)
+                {
+                    Objects.Merge(parentData, "crs", parentCrs);
+                    LogDebug($"Merged 'crs' to parent from Objective: {ToJSON(parentCrs)}", parentData);
+                }
+
+                if (parentProviders.Count > 0)
+                {
+                    Objects.Merge(parentData, "providers", parentProviders);
+                    LogDebug($"Merged 'providers' to parent from Objective: {ToJSON(parentProviders)}", parentData);
+                }
+
+                if (parentQis.Count > 0)
+                {
+                    Objects.Merge(parentData, "qis", parentQis);
+                    LogDebug($"Merged 'qis' to parent from Objective: {ToJSON(parentQis)}", parentData);
+                }
+
+                if (parentg.Count > 0)
+                {
+                    Objects.Merge(parentData, "g", parentg);
+                    LogDebug($"Merged 'g' to parent from Objective: {ToJSON(parentg)}", parentData);
                 }
             }
 
@@ -4422,8 +4417,17 @@ namespace ATT
                 LogDebug($"Merged 'cost' to parent from Objective {cost}", parentData);
             }
 
+            // crs for objectives merges into 'crs' on the parent data
+            if (data.TryGetValue("crs", out object objCrs))
+            {
+                Objects.Merge(parentData, "crs", objCrs);
+                LogDebug($"Merged 'crs' to parent from Objective {ToJSON(objCrs)}", parentData);
+            }
+
             // After the merging of objective data into the parent, make sure to re-capture it properly
             CaptureDebugDBData(parentData);
+
+            data["_remove"] = true;
         }
 
         private static bool IsObtainableData(IDictionary<string, object> data)
@@ -4662,9 +4666,6 @@ namespace ATT
 
         private static void DuplicateDataIntoGroups(IDictionary<string, object> data, object groups, string type)
         {
-            // only need to setup the merge data on the first pass
-            if (!MergeItemData) return;
-
             var groupIDs = Objects.CompressToList(groups) ?? new List<object> { groups };
             if (groupIDs != null && ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object _))
             {

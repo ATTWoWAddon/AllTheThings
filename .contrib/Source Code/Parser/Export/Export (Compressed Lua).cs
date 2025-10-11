@@ -14,7 +14,7 @@ namespace ATT
     {
         /// <summary>
         /// Allows to define whether LUA tables exported will include newlines or not<para/>
-        /// Default: false
+        /// Default: Config.UseExportNewlines
         /// </summary>
         public static bool AddTableNewLines { get; set; } = false;
 
@@ -193,6 +193,9 @@ namespace ATT
                 }
                 builder.Append('(').Append(onInitBody).Append(")(");
             }
+
+            if (AddTableNewLines)
+                builder.Append(Environment.NewLine);
 
             // If this is a constructed object type, then we need to write a parenthesis afterward.
             var constructed = ExportShortcut(builder, data, fields, out ObjectData objectType);
@@ -381,8 +384,8 @@ namespace ATT
         public static Exporter ExportCompressedLua(object data)
         {
             var builder = new Exporter();
+            AddTableNewLines = Framework.Config["UseExportNewlines"];
             ExportCompressedLua(builder, data);
-            AddTableNewLines = false;
             return builder;
         }
 
@@ -398,7 +401,7 @@ namespace ATT
         {
             var builder = new Exporter();
             ExportCompressedLua(builder, data);
-            AddTableNewLines = false;
+            AddTableNewLines = Framework.Config["UseExportNewlines"];
             return builder;
         }
 
@@ -412,7 +415,7 @@ namespace ATT
         {
             var builder = new Exporter();
             ExportCompressedLua(builder, list);
-            AddTableNewLines = false;
+            AddTableNewLines = Framework.Config["UseExportNewlines"];
             return builder;
         }
 
@@ -438,7 +441,7 @@ namespace ATT
             builder.Insert(0, new StringBuilder()
                 .AppendLine("---@diagnostic disable: deprecated")
                 .AppendLine("local appName, _ = ...;"));
-            AddTableNewLines = false;
+            AddTableNewLines = Framework.Config["UseExportNewlines"];
             return builder;
         }
 
@@ -483,7 +486,7 @@ namespace ATT
             }
             ExportLocalVariablesForLua(builder);
             ExportCategoriesHeaderForLua(builder);
-            AddTableNewLines = false;
+            AddTableNewLines = Framework.Config["UseExportNewlines"];
             return builder;
         }
 

@@ -2,6 +2,7 @@
 using ATT.DB.Types;
 using NLua;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -992,47 +993,21 @@ namespace ATT
                 {
                     if (pair.Value is IDictionary<string, object> dict)
                     {
-                        long questID = Convert.ToInt64(pair.Key);
-                        if (!QUESTS.TryGetValue(questID, out IDictionary<string, object> quest))
+                        // Convert the 'text' field to '_text'
+                        if (dict.TryGetValue("text", out object text))
                         {
-                            QUESTS[questID] = quest = new Dictionary<string, object>();
-                        }
-                        foreach (var key in dict)
-                        {
-                            if (key.Key == "text")
-                            {
-                                quest["_text"] = key.Value;
-                            }
-                            else
-                            {
-                                quest[key.Key] = key.Value;
-                            }
+                            dict["_text"] = text;
                         }
                     }
                 }
+
+                DBMerge(questDB.Values, "questID");
             }
 
             // Are we dealing with an API Quests Database section?
             if (data.TryGetValue("quests", out List<object> quests))
             {
-                foreach (var quest in quests)
-                {
-                    if (quest is IDictionary<string, object> dict)
-                    {
-                        if (dict.TryGetValue("questID", out long questID))
-                        {
-                            if (!QUESTS.TryGetValue(questID, out IDictionary<string, object> cachedQuest))
-                            {
-                                QUESTS[questID] = cachedQuest = new Dictionary<string, object>();
-                            }
-
-                            foreach (var key in dict)
-                            {
-                                cachedQuest[key.Key] = key.Value;
-                            }
-                        }
-                    }
-                }
+                DBMerge(quests, "questID");
             }
         }
 
@@ -1120,6 +1095,7 @@ namespace ATT
                 {
                     data[keyID] = dbEntry.Key;
                     Objects.MergeFromDB(keyID, data);
+                    Items.MergeFromDB(data);
                 }
                 else
                 {

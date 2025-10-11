@@ -616,14 +616,14 @@ namespace ATT
                     }
 
                     if (output.Length > 0)
-                        Framework.Log($"{idSet.Key}: " + output.ToString());
+                        Framework.Log($"{idSet.Key} ({idSet.Value.Count}): " + output.ToString());
                 }
 
                 // Notify of duplicate object listings
                 foreach (string key in Framework.TypeUseCounts.Keys)
                 {
                     StringBuilder dupeIDs = new StringBuilder();
-                    Dictionary<decimal, int> idCounts = Framework.TypeUseCounts[key];
+                    var idCounts = Framework.TypeUseCounts[key];
                     int count = 0;
                     foreach (var id in idCounts
                         .Where(kvp => kvp.Value > 1)

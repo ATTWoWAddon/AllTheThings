@@ -61,6 +61,18 @@ namespace ATT
             }
         }
 
+        public void Validate(string field, object value, IDictionary<string, object> referenceData)
+        {
+            if (OnlyClean)
+            {
+                DoAllCleans(field, value, referenceData);
+            }
+            else
+            {
+                DoAllValidations(field, value, referenceData);
+            }
+        }
+
         private void DoAllCleans(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, List<IValidation>> validationKvp in _allValidations)
@@ -69,6 +81,17 @@ namespace ATT
                 {
                     validation.Clean(data);
                 }
+            }
+        }
+
+        private void DoAllCleans(string field, object value, IDictionary<string, object> referenceData)
+        {
+            if (!_allValidations.TryGetValue(field, out List<IValidation> validations))
+                return;
+
+            foreach (IValidation validation in validations)
+            {
+                validation.CleanValue(value, referenceData);
             }
         }
 
@@ -85,6 +108,20 @@ namespace ATT
                             Framework.LogError($"Validation Failure for field '{validation.Key}' ({validation.Reason}):", data);
                         }
                     }
+                }
+            }
+        }
+
+        private void DoAllValidations(string field, object value, IDictionary<string, object> referenceData)
+        {
+            if (!_allValidations.TryGetValue(field, out List<IValidation> validations))
+                return;
+
+            foreach (IValidation validation in validations)
+            {
+                if (!validation.IsValid(value))
+                {
+                    Framework.LogError($"Validation Failure for field '{validation.Key}' ({validation.Reason}):", referenceData);
                 }
             }
         }
@@ -190,6 +227,7 @@ namespace ATT
         string Reason { get; }
         bool IsValid(object value);
         void Clean(IDictionary<string, object> data);
+        void CleanValue(object value, IDictionary<string, object> referenceData);
     }
 
     internal class Validation_match<T> : IValidation
@@ -257,6 +295,11 @@ namespace ATT
                 return;
             }
 
+            CleanValue(dataVal, data);
+        }
+
+        public void CleanValue(object dataVal, IDictionary<string, object> data)
+        {
             if (dataVal is List<T> list)
             {
                 for (int i = list.Count - 1; i >= 0; i--)
@@ -358,6 +401,11 @@ namespace ATT
                 return;
             }
 
+            CleanValue(dataVal, data);
+        }
+
+        public void CleanValue(object dataVal, IDictionary<string, object> data)
+        {
             if (dataVal is List<long> list)
             {
                 for (int i = list.Count - 1; i >= 0; i--)
