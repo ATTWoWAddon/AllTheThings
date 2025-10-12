@@ -17,6 +17,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 91531 },	-- Colborn the Unworthy
 						["coord"] = { 64.6, 43.8, HELHEIM },
 						["groups"] = {
+							o(240586, {	-- Cursed Bones
+								i(122611),	-- Cursed Bones (QI!)
+							}),
 							i(129331),	-- Soulflayer Cord
 							i(129332),	-- Belt of the Eternally Tortured
 							i(129333),	-- Mistcaller Mail Belt

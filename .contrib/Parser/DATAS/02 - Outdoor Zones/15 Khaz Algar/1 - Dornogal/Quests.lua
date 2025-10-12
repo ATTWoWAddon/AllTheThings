@@ -214,6 +214,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				["provider"] = { "n", 226623 },	-- Biergoth
 				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
+			q(91442, {	-- Eco-Dome Al'dani
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 48.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_5 },
+			}),
 			q(86203, {	-- Operation: Floodgate
 				["provider"] = { "n", 226623 },	-- Biergoth
 				["coord"] = { 46.6, 48.2, DORNOGAL },

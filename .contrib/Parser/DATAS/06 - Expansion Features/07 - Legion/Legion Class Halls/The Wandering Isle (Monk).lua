@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42292, {	-- Hidden Potential of the Grandmaster
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Forge of the Roaring Mountain (DECOR!)
 					}),
 					ach(60967, {	-- Legendary Research of Five Dawns
 						["timeline"] = { ADDED_12_0_0 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Chronicle of Ages (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Chronicle of Ages (DECOR!)
 					}),
 					ach(60986, {	-- So Many Missions for the Temple of Five Dawns
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Five Dawns Planning Table (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Five Dawns Planning Table (DECOR!)
 					}),
 					ach(42275, {	-- The Grandmaster's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Monastery Gong (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Monastery Gong (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {

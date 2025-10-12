@@ -126,6 +126,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						},
 					}),
 					i(240121),	-- Reshii Brute's Barrier
+					i(240116),	-- Reshii Brute's Longsword
 					i(240118),	-- Reshii Brute's Spear
 					i(240113),	-- Reshii Magi's Dagger
 					i(240117),	-- Reshii Magi's Wand

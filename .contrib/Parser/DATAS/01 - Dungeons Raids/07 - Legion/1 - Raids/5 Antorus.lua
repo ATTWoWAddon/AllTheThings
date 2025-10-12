@@ -42,7 +42,6 @@ local EncounterToCRS = {
 	},
 	[AGGRAMAR] = { 121975 },	-- Aggramar
 	[ARGUS] = { 124828 },	-- Argus the Unmaker
-
 };
 
 ------ EncounterToLoot ------
@@ -350,43 +349,43 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
                     crit(37232, {	-- Garothi Worldbreaker
-                        ["_encounter"] = { 1992, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37233, {	-- Felhounds of Sargeras
-                        ["_encounter"] = { 1987, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { FELHOUNDS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37234, {	-- Antoran High Command
-                        ["_encounter"] = { 1997, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { HIGH_COMMAND, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11989, {	-- Hope's End
                     crit(37236, {	-- Eonar the Life-Bender
-                        ["_encounter"] = { 2025, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { EONAR, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37235, {	-- Portal Keeper Hasabel
-                        ["_encounter"] = { 1985, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { HASABEL, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37237, {	-- Imonar the Soulhunter
-                        ["_encounter"] = { 2009, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { IMONAR, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11990, {	-- Forbidden Descent
                     crit(37238, {	-- Kin'garoth
-                        ["_encounter"] = { 2004, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { KINGAROTH, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37239, {	-- Varimathras
-                        ["_encounter"] = { 1983, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { VARIMATHRAS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37240, {	-- The Coven of Shivarra
-                        ["_encounter"] = { 1986, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { COVEN, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11991, {	-- Seat of the Pantheon
                     crit(37241, {	-- Aggramar
-                        ["_encounter"] = { 1984, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { AGGRAMAR, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(37242, {	-- Argus the Unmaker
-                        ["_encounter"] = { 2031, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11987, {	-- Glory of the Argus Raider (NORMAL+ ONLY)

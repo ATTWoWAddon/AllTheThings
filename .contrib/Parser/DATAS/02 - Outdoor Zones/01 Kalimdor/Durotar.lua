@@ -3693,6 +3693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(39801, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["coord"] = { 61.5, 8.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 98,
 					["groups"] = {

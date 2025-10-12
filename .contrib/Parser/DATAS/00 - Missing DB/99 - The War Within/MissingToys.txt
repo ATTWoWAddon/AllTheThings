@@ -9,7 +9,6 @@ i(249468),	-- Twilight's Blade Top Secret Strategy Training Guide
 i(250319),	-- Shadowgraft
 i(250320),	-- Lightgraft
 i(250974),	-- Akil'zon's Updraft
-i(251491),	-- Magical Pet Clicker
 i(251633),	-- Bursting Bounty Bundle
 i(251903),	-- Potatoad Egg
 i(252265),	-- Hexed Potatoad Mucus
@@ -35,7 +34,6 @@ i(249468),	-- Twilight's Blade Top Secret Strategy Training Guide
 i(250319),	-- Shadowgraft
 i(250320),	-- Lightgraft
 i(250974),	-- Akil'zon's Updraft
-i(251491),	-- Magical Pet Clicker
 i(251633),	-- Bursting Bounty Bundle
 i(251903),	-- Potatoad Egg
 i(252265),	-- Hexed Potatoad Mucus

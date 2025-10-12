@@ -64,189 +64,221 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		------ Max Level Item Tokens ------
 		i(253224, {	-- Mote of a Broken Time
 			-- Mote of a Broken Time drops at max level during the first four phases of Legion Remix and will reward raid gear from any of the currently-accessible raids.
-			filter(CLOAKS, {
-				i(247481),	-- Astromancer's Greatcloak
-				i(247482),	-- Cloak of Temporal Recalibration
-				i(247436),	-- Dreadlord's Tattered Wingcover
-				i(247560),	-- Evergreen Vinewrap Drape
-				i(247512),	-- Gossamer-Spun Greatcloak
-			}),
-			filter(CLOTH, {
-				i(247517),	-- Ancient Dreamwoven Mantle
-				i(247430),	-- Antiquated Highborne Cinch
-				i(247632),	-- Blood-Drenched Bindings
-				i(247431),	-- Bracers of Harnessed Flame
-				i(247596),	-- Braided Torture Lash
-				i(247514),	-- Celestially Aligned Hood
-				i(247434),	-- Chaos-Scarred Mantle
-				i(247513),	-- Clasp of Cosmic Insignificance
-				i(247630),	-- Cord of Blossoming Petals
-				i(247627),	-- Cord of Surging Hysteria
-				i(247520),	-- Cozy Dryad Hoof-Socks
-				i(247521),	-- Crimson Wool-Lined Slippers
-				i(247507),	-- Dreamscale Inlaid Vestments
-				i(247594),	-- Emberscatter Treads
-				i(247629),	-- Enhanced Worldscorcher Cinch
-				i(247505),	-- Handwraps of Delusional Power
-				i(247515),	-- Hood of Darkened Visions
-				i(247628),	-- Lady Dacidion's Silk Slippers
-				i(247519),	-- Maddening Robe of Secrets
-				i(247631),	-- Man'ari Pyromancer Cuffs
-				i(247467),	-- Man'ari Skullbuckled Cinch
-				i(247518),	-- Mantle of Perpetual Bloom
-				i(247483),	-- Mantle of Prestidigitation
-				i(247433),	-- Master Warmage's Leggings
-				i(247432),	-- Nighthold Custodian's Hood
-				i(247599),	-- Oathbreaker's Cuffs
-				i(247486),	-- Outcast Wanderer's Footrags
-				i(247435),	-- Perpetually Muddy Sandals
-				i(247509),	-- Pliable Spider Silk Cinch
-				i(247522),	-- Ragged Fur Wristwraps
-				i(247516),	-- Ragged Horrorweave Leggings
-				i(247598),	-- Ravenous Devotee's Bracelets
-				i(247429),	-- Robes of Fluctuating Energy
-				i(247626),	-- Sandals of the Reborn Colossus
-				i(247468),	-- Scorpid Handler's Gloves
-				i(247595),	-- Slippers of Enduring Vigilance
-				i(247597),	-- Strife-Riddled Cinch
-				i(247465),	-- Treads of Galactic Odyssey
-				i(247625),	-- Whisperstep Runners
-				i(247466),	-- Woven Lasher Tendril Bracers
-			}),
-			filter(LEATHER, {
-				i(247637),	-- Belt of Fractured Sanity
-				i(247525),	-- Boots of Endless Betrayal
-				i(247469),	-- Bracers of Impossible Choices
-				i(247605),	-- Bracers of Rippling Darkness
-				i(247654),	-- Bracers of Wanton Morality
-				i(247438),	-- Cake Carrier's Girdle
-				i(247602),	-- Cinch of Sizzling Flesh
-				i(247531),	-- Cowl of Fright
-				i(247635),	-- Death-Enveloping Cincture
-				i(247653),	-- Depraved Machinist's Footpads
-				i(247511),	-- Dragonspur Wristguards
-				i(247528),	-- Dreamsculptor's Gloves
-				i(247603),	-- Etched Bone Waistband
-				i(247601),	-- Felscape Pathfinders
-				i(247638),	-- Fiendish Logistician's Wristwraps
-				i(247524),	-- Forest-Lord's Waistwrap
-				i(247439),	-- Girdle of Nefarious Strategy
-				i(247600),	-- Glacier Walkers
-				i(247478),	-- Gloves of Synchronous Elements
-				i(247442),	-- Gnawed Nightfallen Britches
-				i(247562),	-- Grips of Silent Screams
-				i(247441),	-- Grove-Tender's Moccasins
-				i(247533),	-- Grove Keeper's Robe
-				i(247488),	-- High Shadow Councilor's Wrap
-				i(247633),	-- Life-Bearing Footpads
-				i(247523),	-- Lifeless Buckled Girdle
-				i(247444),	-- Mantle of the Torn Sky
-				i(247530),	-- Mask of Multitudinous Eyes
-				i(247446),	-- Nightborne Battle-Magus Hood
-				i(247532),	-- Otherworldy Leather Mantle
-				i(247636),	-- Portal Keeper's Cincture
-				i(247529),	-- Repulsive Leathery Pants
-				i(247534),	-- Scarred Ragefang Chestpiece
-				i(247604),	-- Sinew-Stitched Wristguards
-				i(247527),	-- Splotched Bloodfur Leggings
-				i(247526),	-- Stained Maggot Squishers
-				i(247440),	-- Stutterstep Treads
-				i(247443),	-- Temporally Displaced Gloves
-				i(247480),	-- Trousers of Cultivation
-				i(247445),	-- Tunic of Unwavering Devotion
-				i(247634),	-- Vicious Flamepaws
-				i(247474),	-- Vintage Suramar Nobility Hat
-				i(247616),	-- Waistguard of Profane Duplicity
-				i(247437),	-- Well-Flattened Wristguards
-				i(247535),	-- Wristwraps of Broken Trust
-			}),
-			filter(MAIL, {
-				i(247455),	-- Arcanochitin Hauberk
-				i(247450),	-- Architect's Coif of Despair
-				i(247470),	-- Belt of Celestial Alignment
-				i(247608),	-- Belt of Screaming Slag
-				i(247544),	-- Black Venom Sabatons
-				i(247537),	-- Creeping String of Larva
-				i(247639),	-- Deft Soulhunter's Sabatons
-				i(247641),	-- Depraved Tactician's Waistguard
-				i(247541),	-- Disjointed Linkage Leggings
-				i(247448),	-- Emblazoned Duskwatch Belt
-				i(247538),	-- Gauntlets of Malevolent Intent
-				i(247506),	-- Gauntlets of the Demented Mind
-				i(247656),	-- Greatboots of the Searing Tempest
-				i(247539),	-- Greyed Dragonscale Coif
-				i(247476),	-- Hood of Fading Opportunity
-				i(247606),	-- Insulated Finpads
-				i(247536),	-- Laughing Sister's Pouch-Chain
-				i(247504),	-- Malignant Sabatons
-				i(247547),	-- Manacles of the Nightmare Colossus
-				i(247542),	-- Matted Fur Pauldrons
-				i(247640),	-- Nathrezim Shade-Walkers
-				i(247487),	-- Netherbranded Shoulderpads
-				i(247610),	-- Pain-Singed Armguards
-				i(247546),	-- Patient Ambusher's Hauberk
-				i(247452),	-- Pauldrons of Warped Memory
-				i(247451),	-- Pertinacious Legplates
-				i(247643),	-- Reality-Splitting Wristguards
-				i(247447),	-- Sabatons of Burning Steps
-				i(247642),	-- Sash of the Gilded Rose
-				i(247651),	-- Scalding Shatterguards
-				i(247545),	-- Scored Ironclaw Sabatons
-				i(247453),	-- Shal'dorei Weedstompers
-				i(247540),	-- Singular Chain Leggings
-				i(247607),	-- Star-Stalker Treads
-				i(247449),	-- Sterilizer's Insulated Gauntlets
-				i(247456),	-- Stinger Resistant Bracers
-				i(247454),	-- Thistle-Proof Thorngrabbers
-				i(247543),	-- Thorny Bramblemail Pauldrons
-				i(247609),	-- Waistguard of Interminable Unity
-				i(247655),	-- World-Ravager Waistguard
-			}),
-			filter(PLATE, {
-				i(247615),	-- Bonemeal-Crusted Armplates
-				i(247485),	-- Breastplate of the Remembered King
-				i(247479),	-- Bridgebreaker Gauntlets
-				i(247645),	-- Burning Coven Sabatons
-				i(247457),	-- Captain's Parade Breastplate
-				i(247462),	-- Chrono-Tempered Legplates
-				i(247555),	-- Crown of Steely Brambles
-				i(247644),	-- Doomwalker Warboots
-				i(247510),	-- Dragonbone Wristclamps
-				i(247458),	-- Duskwatch Plate Bracers
-				i(247552),	-- Eon-Tempered Waistplate
-				i(247646),	-- Eredar Warcouncil Sabatons
-				i(247473),	-- Eternally Recurring Bracers
-				i(247461),	-- Eventide Casque
-				i(247549),	-- Fitted Ironbark Gauntlets
-				i(247648),	-- Flamelicked Girdle
-				i(247459),	-- Gauntlets of Fractured Eons
-				i(247460),	-- Gilded Nightborne Waistplate
-				i(247472),	-- Goresmeared Abyssal Waistplate
-				i(247649),	-- Grond-Father Girdle
-				i(247508),	-- Horror Inscribed Chestguard
-				i(247477),	-- Immaculately Polished Boots
-				i(247548),	-- Insect-Etched Chestplate
-				i(247611),	-- Iron Ballast Sabatons
-				i(247475),	-- Jagged Carapace Wristclamps
-				i(247464),	-- Leystone-Toe Kickers
-				i(247556),	-- Midnight Herald's Pauldrons
-				i(247647),	-- Nathrezim Battle Girdle
-				i(247557),	-- Pauldrons of Shifting Runes
-				i(247550),	-- Primal Gauntlets of Rage
-				i(247471),	-- Sabatons of Unchanging Fate
-				i(247613),	-- Shiversleet Waistguard
-				i(247463),	-- Shoulderguard of the Eclipse
-				i(247614),	-- Soul-Render's Greatbelt
-				i(247612),	-- Steadfast Purifier's Warboots
-				i(247554),	-- Storm-Battered Legplates
-				i(247558),	-- Trampling Warboots
-				i(247650),	-- Vambraces of Life's Assurance
-				i(247652),	-- Varimathras' Shattered Manacles
-				i(247553),	-- Venom-Fanged Barbute
-				i(247484),	-- Waistplate of Fractured Realities
-				i(247551),	-- Waistplate of Nameless Horror
-				i(247559),	-- Wristclamps of Mad Dreams
-			}),
+			-- TODO: Simplify this symlink with selection of headers in the raids
+			["sym"] = {{"select","modItemID",
+				-- Emerald Nightmare
+				modItemId(247517,3),	-- Ancient Dreamwoven Mantle
+				modItemId(247430,3),	-- Antiquated Highborne Cinch
+				modItemId(247455,3),	-- Arcanochitin Hauberk
+				modItemId(247450,3),	-- Architect's Coif of Despair
+				modItemId(247481,3),	-- Astromancer's Greatcloak
+				modItemId(247470,3),	-- Belt of Celestial Alignment
+				modItemId(247637,3),	-- Belt of Fractured Sanity
+				modItemId(247608,3),	-- Belt of Screaming Slag
+				modItemId(247544,3),	-- Black Venom Sabatons
+				modItemId(247632,3),	-- Blood-Drenched Bindings
+				modItemId(247615,3),	-- Bonemeal-Crusted Armplates
+				modItemId(247525,3),	-- Boots of Endless Betrayal
+				modItemId(247431,3),	-- Bracers of Harnessed Flame
+				modItemId(247469,3),	-- Bracers of Impossible Choices
+				modItemId(247605,3),	-- Bracers of Rippling Darkness
+				modItemId(247654,3),	-- Bracers of Wanton Morality
+				modItemId(247596,3),	-- Braided Torture Lash
+				modItemId(247485,3),	-- Breastplate of the Remembered King
+				modItemId(247479,3),	-- Bridgebreaker Gauntlets
+				modItemId(247645,3),	-- Burning Coven Sabatons
+				modItemId(247438,3),	-- Cake Carrier's Girdle
+				modItemId(247457,3),	-- Captain's Parade Breastplate
+				modItemId(247514,3),	-- Celestially Aligned Hood
+				modItemId(247434,3),	-- Chaos-Scarred Mantle
+				modItemId(247462,3),	-- Chrono-Tempered Legplates
+				modItemId(247602,3),	-- Cinch of Sizzling Flesh
+				modItemId(247513,3),	-- Clasp of Cosmic Insignificance
+				modItemId(247482,3),	-- Cloak of Temporal Recalibration
+				modItemId(247630,3),	-- Cord of Blossoming Petals
+				modItemId(247627,3),	-- Cord of Surging Hysteria
+				modItemId(247531,3),	-- Cowl of Fright
+				modItemId(247520,3),	-- Cozy Dryad Hoof-Socks
+				modItemId(247537,3),	-- Creeping String of Larva
+				modItemId(247521,3),	-- Crimson Wool-Lined Slippers
+				modItemId(247555,3),	-- Crown of Steely Brambles
+				modItemId(247635,3),	-- Death-Enveloping Cincture
+				modItemId(247639,3),	-- Deft Soulhunter's Sabatons
+				modItemId(247653,3),	-- Depraved Machinist's Footpads
+				modItemId(247641,3),	-- Depraved Tactician's Waistguard
+				modItemId(247541,3),	-- Disjointed Linkage Leggings
+				modItemId(247644,3),	-- Doomwalker Warboots
+				modItemId(247510,3),	-- Dragonbone Wristclamps
+				modItemId(247511,3),	-- Dragonspur Wristguards
+				modItemId(247436,3),	-- Dreadlord's Tattered Wingcover
+				modItemId(247507,3),	-- Dreamscale Inlaid Vestments
+				modItemId(247528,3),	-- Dreamsculptor's Gloves
+				modItemId(247458,3),	-- Duskwatch Plate Bracers
+				modItemId(247035,3),	-- Eagletalon Cowl
+				modItemId(247594,3),	-- Emberscatter Treads
+				modItemId(247448,3),	-- Emblazoned Duskwatch Belt
+				modItemId(247629,3),	-- Enhanced Worldscorcher Cinch
+				modItemId(247552,3),	-- Eon-Tempered Waistplate
+				modItemId(247646,3),	-- Eredar Warcouncil Sabatons
+				modItemId(247603,3),	-- Etched Bone Waistband
+				modItemId(247473,3),	-- Eternally Recurring Bracers
+				modItemId(247461,3),	-- Eventide Casque
+				modItemId(247560,3),	-- Evergreen Vinewrap Drape
+				modItemId(247601,3),	-- Felscape Pathfinders
+				modItemId(247638,3),	-- Fiendish Logistician's Wristwraps
+				modItemId(247549,3),	-- Fitted Ironbark Gauntlets
+				modItemId(247648,3),	-- Flamelicked Girdle
+				modItemId(247524,3),	-- Forest-Lord's Waistwrap
+				modItemId(247564,3),	-- Gauntlets of Fractured Dreams
+				modItemId(247459,3),	-- Gauntlets of Fractured Eons
+				modItemId(247538,3),	-- Gauntlets of Malevolent Intent
+				modItemId(247506,3),	-- Gauntlets of the Demented Mind
+				modItemId(247460,3),	-- Gilded Nightborne Waistplate
+				modItemId(247439,3),	-- Girdle of Nefarious Strategy
+				modItemId(247600,3),	-- Glacier Walkers
+				modItemId(247561,3),	-- Gloves of Murmured Promises
+				modItemId(247478,3),	-- Gloves of Synchronous Elements
+				modItemId(247442,3),	-- Gnawed Nightfallen Britches
+				modItemId(247472,3),	-- Goresmeared Abyssal Waistplate
+				modItemId(247512,3),	-- Gossamer-Spun Greatcloak
+				modItemId(247656,3),	-- Greatboots of the Searing Tempest
+				modItemId(247539,3),	-- Greyed Dragonscale Coif
+				modItemId(247562,3),	-- Grips of Silent Screams
+				modItemId(247649,3),	-- Grond-Father Girdle
+				modItemId(247533,3),	-- Grove Keeper's Robe
+				modItemId(247441,3),	-- Grove-Tender's Moccasins
+				modItemId(247505,3),	-- Handwraps of Delusional Power
+				modItemId(247036,3),	-- Helm of Shackled Elements
+				modItemId(247488,3),	-- High Shadow Councilor's Wrap
+				modItemId(247515,3),	-- Hood of Darkened Visions
+				modItemId(247476,3),	-- Hood of Fading Opportunity
+				modItemId(247508,3),	-- Horror Inscribed Chestguard
+				modItemId(247477,3),	-- Immaculately Polished Boots
+				modItemId(247548,3),	-- Insect-Etched Chestplate
+				modItemId(247606,3),	-- Insulated Finpads
+				modItemId(247611,3),	-- Iron Ballast Sabatons
+				modItemId(247475,3),	-- Jagged Carapace Wristclamps
+				modItemId(247628,3),	-- Lady Dacidion's Silk Slippers
+				modItemId(247536,3),	-- Laughing Sister's Pouch-Chain
+				modItemId(247464,3),	-- Leystone-Toe Kickers
+				modItemId(247523,3),	-- Lifeless Buckled Girdle
+				modItemId(247633,3),	-- Life-Bearing Footpads
+				modItemId(247519,3),	-- Maddening Robe of Secrets
+				modItemId(247504,3),	-- Malignant Sabatons
+				modItemId(247547,3),	-- Manacles of the Nightmare Colossus
+				modItemId(247518,3),	-- Mantle of Perpetual Bloom
+				modItemId(247483,3),	-- Mantle of Prestidigitation
+				modItemId(247444,3),	-- Mantle of the Torn Sky
+				modItemId(247631,3),	-- Man'ari Pyromancer Cuffs
+				modItemId(247467,3),	-- Man'ari Skullbuckled Cinch
+				modItemId(247530,3),	-- Mask of Multitudinous Eyes
+				modItemId(247433,3),	-- Master Warmage's Leggings
+				modItemId(247542,3),	-- Matted Fur Pauldrons
+				modItemId(247556,3),	-- Midnight Herald's Pauldrons
+				modItemId(247647,3),	-- Nathrezim Battle Girdle
+				modItemId(247640,3),	-- Nathrezim Shade-Walkers
+				modItemId(247487,3),	-- Netherbranded Shoulderpads
+				modItemId(247446,3),	-- Nightborne Battle-Magus Hood
+				modItemId(247432,3),	-- Nighthold Custodian's Hood
+				modItemId(247599,3),	-- Oathbreaker's Cuffs
+				modItemId(247532,3),	-- Otherworldy Leather Mantle
+				modItemId(247486,3),	-- Outcast Wanderer's Footrags
+				modItemId(247610,3),	-- Pain-Singed Armguards
+				modItemId(247546,3),	-- Patient Ambusher's Hauberk
+				modItemId(247557,3),	-- Pauldrons of Shifting Runes
+				modItemId(247452,3),	-- Pauldrons of Warped Memory
+				modItemId(247435,3),	-- Perpetually Muddy Sandals
+				modItemId(247451,3),	-- Pertinacious Legplates
+				modItemId(247509,3),	-- Pliable Spider Silk Cinch
+				modItemId(247636,3),	-- Portal Keeper's Cincture
+				modItemId(247550,3),	-- Primal Gauntlets of Rage
+				modItemId(247516,3),	-- Ragged Horrorweave Leggings
+				modItemId(247522,3),	-- Ragged Fur Wristwraps
+				modItemId(247598,3),	-- Ravenous Devotee's Bracelets
+				modItemId(247643,3),	-- Reality-Splitting Wristguards
+				modItemId(247529,3),	-- Repulsive Leathery Pants
+				modItemId(247429,3),	-- Robes of Fluctuating Energy
+				modItemId(247447,3),	-- Sabatons of Burning Steps
+				modItemId(247471,3),	-- Sabatons of Unchanging Fate
+				modItemId(247626,3),	-- Sandals of the Reborn Colossus
+				modItemId(247642,3),	-- Sash of the Gilded Rose
+				modItemId(247651,3),	-- Scalding Shatterguards
+				modItemId(247534,3),	-- Scarred Ragefang Chestpiece
+				modItemId(247545,3),	-- Scored Ironclaw Sabatons
+				modItemId(247468,3),	-- Scorpid Handler's Gloves
+				modItemId(247453,3),	-- Shal'dorei Weedstompers
+				modItemId(247613,3),	-- Shiversleet Waistguard
+				modItemId(247463,3),	-- Shoulderguard of the Eclipse
+				modItemId(249683,3),	-- Shoulderguards of Divine Arts
+				modItemId(247604,3),	-- Sinew-Stitched Wristguards
+				modItemId(247540,3),	-- Singular Chain Leggings
+				modItemId(247595,3),	-- Slippers of Enduring Vigilance
+				modItemId(247614,3),	-- Soul-Render's Greatbelt
+				modItemId(247527,3),	-- Splotched Bloodfur Leggings
+				modItemId(247526,3),	-- Stained Maggot Squishers
+				modItemId(247607,3),	-- Star-Stalker Treads
+				modItemId(247612,3),	-- Steadfast Purifier's Warboots
+				modItemId(247449,3),	-- Sterilizer's Insulated Gauntlets
+				modItemId(247456,3),	-- Stinger Resistant Bracers
+				modItemId(247554,3),	-- Storm-Battered Legplates
+				modItemId(247597,3),	-- Strife-Riddled Cinch
+				modItemId(247440,3),	-- Stutterstep Treads
+				modItemId(247565,3),	-- Tarnished Dreamkeeper's Gauntlets
+				modItemId(247443,3),	-- Temporally Displaced Gloves
+				modItemId(247454,3),	-- Thistle-Proof Thorngrabbers
+				modItemId(247543,3),	-- Thorny Bramblemail Pauldrons
+				modItemId(247558,3),	-- Trampling Warboots
+				modItemId(247465,3),	-- Treads of Galactic Odyssey
+				modItemId(247480,3),	-- Trousers of Cultivation
+				modItemId(247445,3),	-- Tunic of Unwavering Devotion
+				modItemId(247650,3),	-- Vambraces of Life's Assurance
+				modItemId(247652,3),	-- Varimathras' Shattered Manacles
+				modItemId(247553,3),	-- Venom-Fanged Barbute
+				modItemId(247634,3),	-- Vicious Flamepaws
+				modItemId(247474,3),	-- Vintage Suramar Nobility Hat
+				modItemId(247609,3),	-- Waistguard of Interminable Unity
+				modItemId(247616,3),	-- Waistguard of Profane Duplicity
+				modItemId(247484,3),	-- Waistplate of Fractured Realities
+				modItemId(247551,3),	-- Waistplate of Nameless Horror
+				modItemId(247437,3),	-- Well-Flattened Wristguards
+				modItemId(247625,3),	-- Whisperstep Runners
+				modItemId(247655,3),	-- World-Ravager Waistguard
+				modItemId(247466,3),	-- Woven Lasher Tendril Bracers
+				modItemId(247559,3),	-- Wristclamps of Mad Dreams
+				modItemId(247535,3),	-- Wristwraps of Broken Trust
+
+				-- Trial of Valor
+				modItemId(247591,3),	-- Drape of the Unworthy
+				modItemId(247592,3),	-- Mantle of the Victorious Dead
+				modItemId(247568,3),	-- Windwhipped Sailcloth
+				modItemId(247567,3),	-- Cinch of Light
+				modItemId(247571,3),	-- Helhound Hair Bracers
+				modItemId(247569,3),	-- Leggings of the Lower Planes
+				modItemId(247584,3),	-- Oiled Rigger's Handwraps
+				modItemId(247566,3),	-- Robes of Celestial Adornment
+				modItemId(247570,3),	-- Treads of the Drowned
+				modItemId(247585,3),	-- Gloves of Issued Challenge
+				modItemId(247587,3),	-- Helbeast Skin Tunic
+				modItemId(249678,3),	-- Helheim Hound's Visor
+				modItemId(247573,3),	-- Moccasins of Silent Passage
+				modItemId(247575,3),	-- Sky-Valiant's Wristguards
+				modItemId(249679,3),	-- Sovereign Valarjar Mantle
+				modItemId(249682,3),	-- Supreme Runecaster's Crown
+				modItemId(247572,3),	-- Strand of Whelk Shells
+				modItemId(247574,3),	-- Sucker-Scarred Leggings
+				modItemId(247576,3),	-- Anchor Chain Waistguard
+				modItemId(247579,3),	-- Bite-Resistant Wristclamps
+				modItemId(247588,3),	-- Corroded Val'kyr Chainmail
+				modItemId(247589,3),	-- Kvaldir Exult's Grips
+				modItemId(247577,3),	-- Leggings of the Undaunted
+				modItemId(247578,3),	-- Radiant Soul Sabatons
+				modItemId(247583,3),	-- Calcareous Wristclamps
+				modItemId(247586,3),	-- Gleaming Val'kyr Cuirass
+				modItemId(247581,3),	-- Goldrune Legplates
+				modItemId(247580,3),	-- Krakenbone Waistplate
+				modItemId(247582,3),	-- Lead-Soled Seabed Striders
+				modItemId(247590,3),	-- Reinforced Hound-Handler's Gauntlets
+			}},
 		}),
 		i(253227, {	-- Flawless Thread of Time (Phase 5)
 			-- Flawless Thread of Time drops at max level during the final phase of Legion Remix and will reward max-level equipment.

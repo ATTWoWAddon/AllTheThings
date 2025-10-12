@@ -120,27 +120,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42289, {	-- Hidden Potential of the Archdruid
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Seed of Ages Cutting (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Seed of Ages Cutting (DECOR!)
 					}),
 					ach(60964, {	-- Legendary Research of the Dreamgrove
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Tome of the Ancients (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Tome of the Ancients (DECOR!)
 					}),
 					ach(60983, {	-- So Many Missions for the Dreamgrove
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Cenarion Arch (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Cenarion Arch (DECOR!)
 					}),
 					ach(42272, {	-- The Archdruid's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Brazier of Elune (DECOR!)
 					}),
 				}),
 				n(FLIGHT_PATHS, {

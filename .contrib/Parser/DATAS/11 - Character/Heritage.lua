@@ -290,6 +290,21 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuest"] = 53839,	-- Aegrim's Study
 				["provider"] = { "o", 309498 },	-- Armor Stand
 				["coord"] = { 19.8, 51.9, IRONFORGE },
+				["groups"] = {
+					o(309497, {	-- Pile of Disenchanted Metal
+						["coords"] = {
+							{ 19.8, 51.8, IRONFORGE },
+							{ 20.6, 49.4, IRONFORGE },
+							{ 20.6, 52.8, IRONFORGE },
+							{ 20.8, 50.0, IRONFORGE },
+							{ 20.8, 53.5, IRONFORGE },
+							{ 21.1, 51.0, IRONFORGE },
+							{ 21.7, 51.5, IRONFORGE },
+							{ 22.5, 51.4, IRONFORGE },
+						},
+						["groups"] = { i(164946) },	-- Fragments of Shattered Armor (QI!)
+					}),
+				},
 			}),
 			q(53840, {	-- Interest Yah In A Pint?
 				["sourceQuest"] = 53841,	-- Shards of the Past

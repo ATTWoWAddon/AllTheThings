@@ -26,7 +26,9 @@ root(ROOTS.Zones, {
 					},
 				}),
 				ach(12292),	-- Highmountain Tribe
-				ach(11257),	-- Treasures of Highmountain
+				ach(11257, {	-- Treasures of Highmountain
+					--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Skyhorn Storage Chest (DECOR!)
+				}),
 			}),
 		}),
 	}),

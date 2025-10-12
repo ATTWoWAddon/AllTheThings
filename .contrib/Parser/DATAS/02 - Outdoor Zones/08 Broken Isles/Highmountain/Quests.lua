@@ -79,6 +79,11 @@ root(ROOTS.Zones, {
 						96038,	-- Jale Rivermane
 					},
 					["coord"] = { 38.4, 61.3, HIGHMOUNTAIN },
+					["groups"] = {
+						o(243639, {	-- Siphoning Crystal
+							i(128393),	-- Empowered Crystal (QI!)
+						}),
+					},
 				}),
 				q(38915, {	-- Battle of Snowblind Mesa
 					["sourceQuests"] = {
@@ -137,12 +142,19 @@ root(ROOTS.Zones, {
 				q(42630, {	-- Bolas Bastion
 					["sourceQuests"] = { 39387 },	-- The Skies of Highmountain
 					["provider"] = { "n", 107660 },	-- Bolas Skyfeather
-					["coord"] = { 43.0, 39.3, HIGHMOUNTAIN },
+					["coord"] = { 43.0, 39.3, 750 },	-- Thunder Totem
 				}),
 				q(40345, {	-- Burn the Candle at Both Ends
 					["sourceQuests"] = { 40339 },	-- Candle of Command
 					["provider"] = { "n", 97130 },	-- Bluewax Gatekeeper
 					["coord"] = { 55.2, 41.8, HIGHMOUNTAIN },
+					["groups"] = {
+						o(245357, {	-- Candleking's Special Candle
+							["coord"] = { 53.6, 42.1, HIGHMOUNTAIN },
+							["groups"] = { i(130901) },	-- Candleking's Special Candle (QI!)
+						}),
+						i(129981),	-- Dusty Boot (QI!)
+					},
 				}),
 				q(39777, {	-- Buy Us Time
 					["sourceQuests"] = { 38915 },	-- Battle of Snowblind Mesa
@@ -179,6 +191,21 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
 					["provider"] = { "n", 108017 },	-- Torv Dubstomp
 					["coord"] = { 53.4, 78.0, 652 },	-- Thunder Totem
+					["groups"] = {
+						o(250905, {	-- Small Ceremonial Drum
+							i(138197),	-- Small Ceremonial Drum (QI!)
+						}),
+						o_repeated({	-- Medium Ceremonial Drum
+							i(138198),	-- Medium Ceremonial Drum (QI!)
+							o(250904),	-- Medium Ceremonial Drum
+							o(266689),	-- Medium Ceremonial Drum
+						}),
+						o_repeated({	-- Large Ceremonial Drum
+							i(138199),	-- Large Ceremonial Drum (QI!)
+							o(250903),	-- Large Ceremonial Drum
+							o(266655),	-- Large Ceremonial Drum
+						}),
+					},
 				}),
 				q(39670, {	-- Critter Scatter Shot
 					["sourceQuests"] = { 39386 },	-- Procuring a Prototype
@@ -263,6 +290,20 @@ root(ROOTS.Zones, {
 				q(40070, {	-- Eagle Egg Recovery
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 50.9, 36.6, HIGHMOUNTAIN },
+					["groups"] = {
+						o(244841, {	-- Eagle Egg
+							["coords"] = {
+								{ 48.3, 41.0, HIGHMOUNTAIN },
+								{ 49.3, 37.1, HIGHMOUNTAIN },
+								{ 49.3, 38.0, HIGHMOUNTAIN },
+								{ 49.8, 36.2, HIGHMOUNTAIN },
+								{ 50.3, 34.9, HIGHMOUNTAIN },
+								{ 50.8, 35.3, HIGHMOUNTAIN },
+								{ 50.8, 37.1, HIGHMOUNTAIN },
+							},
+							["groups"] = { i(128760) },	-- Eagle Egg (QI!)
+						}),
+					},
 				}),
 				q(39305, {	-- Empty Nest
 					["sourceQuests"] = {
@@ -304,6 +345,12 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
 				--	didn't require "Eagle Egg Recovery" or "Tamer Takedown."
+					["groups"] = {
+						o(250413, {	-- Oren's Prized Possessions
+							["coord"] = { 49.4, 39.3, HIGHMOUNTAIN },
+							["groups"] = { i(137566) },	-- Oren's Prized Possessions (QI!)
+						}),
+					},
 				}),
 				q(39025, {	-- Grasp of the Underking
 					["sourceQuests"] = { 42104 },	-- The Underking Comes
@@ -674,6 +721,20 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39440 },	-- You Lift, Brul?
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 					["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
+					["groups"] = {
+						o(243971, {	-- Chains of Resistance
+							["coord"] = { 76.4, 53, 659 },	-- Stonedark Grotto
+							["groups"] = { i(128697) },	-- Chains of Resistance (QI!)
+						}),
+						o(243973, {	-- Rod of Bearing
+							["coord"] = { 54.7, 73.6, 659 },	-- Stonedark Grotto
+							["groups"] = { i(128704) },	-- Rod of Bearing (QI!)
+						}),
+						o(243972, {	-- Wheel of Fortitude
+							["coord"] = { 73.3, 75.2, 659 },	-- Stonedark Grotto
+							["groups"] = { i(128703) },	-- Wheel of Fortitude (QI!)
+						}),
+					},
 				}),
 				q(40071, {	-- Tamer Takedown
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
@@ -922,6 +983,12 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40167 },	-- The Story of Huln
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
 					["coord"] = { 74.8, 75.0, 652 },	-- Thunder Totem
+					["groups"] = {
+						o(245620, {	-- Mu'sha's Tears
+							["coord"] = { 57.6, 10.6, 750 },	-- Thunder Totem
+							["groups"] = { i(132248) },	-- Mu'sha's Tears (QI!)
+						}),
+					},
 				}),
 				q(39316, {	-- Trapped Tauren
 					["sourceQuests"] = { 39496 },	-- The Flow of the River

@@ -9,8 +9,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42596),	-- Campaign: Stormheim
 					ach(60807),	-- Elusive Foes: Stormheim
+					ach(42640, {	-- Elusive Foes: Stormheim
+						-- Did 60807 get removed/replaced?
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 					ach(60806),	-- Explore Stormheim
+					ach(42608, {	-- Explore Stormheim
+						-- Did 60806 get removed/replaced?
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 					ach(60808),	-- Hidden Treasures: Stormheim
+					ach(42606, {	-- Hidden Treasures: Stormheim
+						-- Did 60808 get removed/replaced?
+						["timeline"] = { ADDED_12_0_0 },
+					}),
 					ach(42578, {	-- Looking for Group: Stormheim
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
@@ -56,14 +68,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				n(FACTIONS, {
 					faction(FACTION_VALAJAR, {
 						n(ACHIEVEMENTS, {
-							ach(42658),	-- Valarjar
+							ach(42658, {	-- Valarjar
+								--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Vrykul Lord’s Throne (DECOR!)
+							}),
 						}),
 					}),
 				}),
 				n(ZONE_REWARDS, {
 					filter(CLOAKS, {
-						i(242177),	-- Draping Cloak of the Hunting Dream
 						i(251876),	-- Cloak of the Hunting Dream
+						i(242177),	-- Draping Cloak of the Hunting Dream
+						i(247078),	-- Stormheart Drape
 					}),
 					filter(CLOTH, {
 						i(240740),	-- Hrydshal Runespeaker Bindings

@@ -1497,6 +1497,7 @@ root(ROOTS.Zones, {
 			},
 		}),
 		ach(1206, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- To All The Squirrels I've Loved Before
+			["description"] = "|cFFE50D12The Pets in this Achievement cannot be tracked correctly by ATT due to Blizzard. Once all the Pets received /love, the Achievement will be tracked correctly once again.|r",
 			-- TODO: really would prefer an actual coords for each criteria instead of maps
 			crit(3741, {	-- Borean Frog (Borean Tundra)
 				["crs"] = { 25677 },	-- Borean Frog

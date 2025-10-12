@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Повторный бросок",
 		-- TODO: ko = "",
 		cn = "重新刷新",
-		-- TODO: tw = "",
+		-- tw = "重新刷新",
 	},
 })

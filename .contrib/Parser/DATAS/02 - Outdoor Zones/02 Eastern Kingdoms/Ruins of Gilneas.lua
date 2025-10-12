@@ -209,6 +209,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						78190,	-- What We Left Behind (A)
 						79137,	-- The Wall between Us (H)
 					},
+					["groups"] = { i(245520, {["timeline"] = { ADDED_12_0_0 }}),},	-- Gilnean Celebration Keg (DECOR!)
 				}),
 				q(78596, {	-- Summons to Lord Greymane
 					["qg"] = 212899,	-- Greyguard Elite

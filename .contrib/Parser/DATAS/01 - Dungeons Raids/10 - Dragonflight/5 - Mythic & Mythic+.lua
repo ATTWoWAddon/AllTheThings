@@ -77,10 +77,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(393273),	-- Path of the Draconic Diploma
 			}),
 			ach(16658, {	-- Keystone Hero: Court of Stars
-				spell(393766),	-- Path of the Grand Magistrix
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["groups"] = { spell(393766) },	-- Path of the Grand Magistrix
 			}),
 			ach(16659, {	-- Keystone Hero: Halls of Valor
-				spell(393764),	-- Path of Proven Worth
+				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["groups"] = { spell(393764) },	-- Path of Proven Worth
 			}),
 			ach(16640, {	-- Keystone Hero: Ruby Life Pools
 				spell(393256),	-- Path of the Clutch Defender
@@ -123,7 +125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(393283),	-- Path of the Titanic Reservoir
 			}),
 			ach(17850, {	-- Keystone Hero: Neltharion's Lair
-				spell(410078),	-- Path of the Earth-Warder
+				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["groups"] = { spell(410078) },	-- Path of the Earth-Warder
 			}),
 			ach(16644, {	-- Keystone Hero: Neltharus
 				spell(393276),	-- Path of the Obsidian Hoard
@@ -156,10 +159,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				spell(424187),	-- Path of the Golden Tomb
 			}),
 			ach(19084, {	-- Keystone Hero: Black Rook Hold
-				spell(424153),	-- Path of Ancient Horrors
+				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["groups"] = { spell(424153) },	-- Path of Ancient Horrors
 			}),
 			ach(19085, {	-- Keystone Hero: Darkheart Thicket
-				spell(424163),	-- Path of the Nightmare Lord
+				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["groups"] = { spell(424163) },	-- Path of the Nightmare Lord
 			}),
 			ach(19088, {	-- Keystone Hero: Dawn of the Infinite
 				spell(424197),	-- Path of Twisted Time

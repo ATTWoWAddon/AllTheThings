@@ -138,6 +138,7 @@ root(ROOTS.Zones, {
 				}),
 				n(97793, {	-- Flamescale
 					["description"] = "Click on the Abandoned Fishing Pole to summon Flamescale.",
+					["provider"] = { "o", 244667 },	-- Abandoned Fishing Pole
 					["questID"] = 39963,
 					["coord"] = { 40.9, 57.7, HIGHMOUNTAIN },
 					["groups"] = {

@@ -3169,39 +3169,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		filter(CLOTH, {
 			expansion(EXPANSION.BFA, patch(0,1), {
 				i(156753),	-- Turnabout Gloves
-				i(153389),	-- Galetorn Crown
-				i(153390),	-- Galetorn Gloves
-				i(153391),	-- Galetorn Sash
-				i(153392),	-- Galetorn Cuffs
-				i(153393),	-- Galetorn Slippers
-				i(153394),	-- Galetorn Robes
-				i(153395),	-- Galetorn Leggings
-				i(153396),	-- Galetorn Mantle
-				i(154960),	-- Loa-Shaper's Crown
-				i(154961),	-- Loa-Shaper's Gloves
-				i(154962),	-- Loa-Shaper's Cinch
-				i(154963),	-- Loa-Shaper's Cuffs
-				i(154964),	-- Loa-Shaper's Sandals
-				i(154965),	-- Loa-Shaper's Robe
-				i(154966),	-- Loa-Shaper's Kilt
-				i(154967),	-- Loa-Shaper's Mantle
-				i(158467),	-- Loa-Shaper's Cinch
-				i(158492),	-- Galetorn Crown
-				i(158493),	-- Galetorn Gloves
-				i(158494),	-- Galetorn Sash
-				i(158495),	-- Galetorn Cuffs
-				i(158496),	-- Galetorn Slippers
-				i(158497),	-- Galetorn Robes
-				i(158498),	-- Galetorn Leggings
-				i(158499),	-- Galetorn Mantle
-				i(158544),	-- Loa-Shaper's Crown
-				i(158545),	-- Loa-Shaper's Gloves
-				i(158546),	-- Loa-Shaper's Cinch
-				i(158547),	-- Loa-Shaper's Cuffs
-				i(158548),	-- Loa-Shaper's Sandals
-				i(158549),	-- Loa-Shaper's Robe
-				i(158550),	-- Loa-Shaper's Kilt
-				i(158551),	-- Loa-Shaper's Mantle
 				--
 				i(159170),	-- Freehold Handwraps
 				i(159183),	-- Foxhollow Cord
@@ -3240,38 +3207,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		filter(LEATHER, {
 			expansion(EXPANSION.BFA, patch(0,1), {
 				i(156751),	-- Nightbinder Grips
-				i(153373),	-- Sea-Treated Armbands
-				i(153374),	-- Sea-Treated Grips
-				i(153375),	-- Sea-Treated Belt
-				i(153376),	-- Sea-Treated Boots
-				i(153377),	-- Sea-Treated Vest
-				i(153378),	-- Sea-Treated Mask
-				i(153379),	-- Sea-Treated Shoulderguards
-				i(153380),	-- Sea-Treated Trousers
-				i(154944),	-- Dinohide Armbands
-				i(154945),	-- Dinohide Grips
-				i(154946),	-- Dinohide Belt
-				i(154947),	-- Dinohide Boots
-				i(154948),	-- Dinohide Vest
-				i(154949),	-- Dinohide Mask
-				i(154950),	-- Dinohide Shoulderguards
-				i(154951),	-- Dinohide Trousers
-				i(158476),	-- Sea-Treated Armbands
-				i(158477),	-- Sea-Treated Grips
-				i(158478),	-- Sea-Treated Belt
-				i(158479),	-- Sea-Treated Boots
-				i(158480),	-- Sea-Treated Vest
-				i(158481),	-- Sea-Treated Mask
-				i(158482),	-- Sea-Treated Shoulderguards
-				i(158483),	-- Sea-Treated Trousers
-				i(158528),	-- Dinohide Armbands
-				i(158529),	-- Dinohide Grips
-				i(158530),	-- Dinohide Belt
-				i(158531),	-- Dinohide Boots
-				i(158532),	-- Dinohide Vest
-				i(158533),	-- Dinohide Mask
-				i(158534),	-- Dinohide Shoulderguards
-				i(158535),	-- Dinohide Trousers
 				--
 				i(154849),	-- Crimsonwood Bracers
 				i(154852),	-- Crimsonwood Gloves
@@ -3288,7 +3223,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.BFA, patch(1,0), {
 				i(166786),	-- Disenchant Test Item
-				i(166239),	-- Testus Maximus Breastplate
 			}),
 			n(P8xx, {
 				-- They are leather even tho name is cloth
@@ -3313,38 +3247,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		filter(MAIL, {
 			expansion(EXPANSION.BFA, patch(0,1), {
 				i(156754),	-- Throatcrusher Grips
-				i(153381),	-- Aiguille-Scaler's Wristguards
-				i(153382),	-- Aiguille-Scaler's Gloves
-				i(153383),	-- Aiguille-Scaler's Leggings
-				i(153384),	-- Aiguille-Scaler's Coif
-				i(153385),	-- Aiguille-Scaler's Boots
-				i(153386),	-- Aiguille-Scaler's Girdle
-				i(153387),	-- Aiguille-Scaler's Chestguard
-				i(153388),	-- Aiguille-Scaler's Spaulders
-				i(154952),	-- Saurscale Wristguards
-				i(154953),	-- Saurscale Gloves
-				i(154954),	-- Saurscale Leggings
-				i(154955),	-- Saurscale Coif
-				i(154956),	-- Saurscale Boots
-				i(154957),	-- Saurscale Girdle
-				i(154958),	-- Saurscale Chestguard
-				i(154959),	-- Saurscale Spaulders
-				i(158484),	-- Aiguille-Scaler's Wristguards
-				i(158485),	-- Aiguille-Scaler's Gloves
-				i(158486),	-- Aiguille-Scaler's Leggings
-				i(158487),	-- Aiguille-Scaler's Coif
-				i(158488),	-- Aiguille-Scaler's Boots
-				i(158489),	-- Aiguille-Scaler's Girdle
-				i(158490),	-- Aiguille-Scaler's Chestguard
-				i(158491),	-- Aiguille-Scaler's Spaulders
-				i(158536),	-- Saurscale Wristguards
-				i(158537),	-- Saurscale Gloves
-				i(158538),	-- Saurscale Leggings
-				i(158539),	-- Saurscale Coif
-				i(158540),	-- Saurscale Boots
-				i(158541),	-- Saurscale Girdle
-				i(158542),	-- Saurscale Chestguard
-				i(158543),	-- Saurscale Spaulders
 				i(154861),	-- Barrowknoll Boots
 				i(159208),	-- Eventide Cinch
 				i(159210),	-- Eventide Gloves
@@ -3363,45 +3265,8 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 		filter(PLATE, {
 			expansion(EXPANSION.BFA, patch(0,1), {
-				i(160673),	-- Primus Breastplate
-				i(160674),	-- Secondus Breastplate
-				i(160675),	-- Tertius Breastplate
-				i(160676),	-- Quartius Breastplate
-				i(160677),	-- Pentius Breastplate
 				i(164525),	-- Rattling Bone Greatbelt
 				i(156752),	-- Skullbreaker Gauntlets
-				i(153365),	-- Dead-Watcher Greaves
-				i(153366),	-- Dead-Watcher Helmet
-				i(153367),	-- Dead-Watcher Breastplate
-				i(153368),	-- Dead-Watcher Waistplate
-				i(153369),	-- Dead-Watcher Pauldrons
-				i(153370),	-- Dead-Watcher Gauntlets
-				i(153371),	-- Dead-Watcher Vambraces
-				i(153372),	-- Dead-Watcher Sabatons
-				i(154936),	-- Dead-Watcher Greaves
-				i(154937),	-- Dead-Watcher Helmet
-				i(154938),	-- Dead-Watcher Breastplate
-				i(154939),	-- Dead-Watcher Waistplate
-				i(154940),	-- Dead-Watcher Pauldrons
-				i(154941),	-- Dead-Watcher Gauntlets
-				i(154942),	-- Dead-Watcher Vambraces
-				i(154943),	-- Dead-Watcher Sabatons
-				i(158468),	-- Dead-Watcher Greaves
-				i(158469),	-- Dead-Watcher Helmet
-				i(158470),	-- Dead-Watcher Breastplate
-				i(158471),	-- Dead-Watcher Waistplate
-				i(158472),	-- Dead-Watcher Pauldrons
-				i(158473),	-- Dead-Watcher Gauntlets
-				i(158474),	-- Dead-Watcher Vambraces
-				i(158475),	-- Dead-Watcher Sabatons
-				i(158520),	-- Dead-Watcher Greaves
-				i(158521),	-- Dead-Watcher Helmet
-				i(158522),	-- Dead-Watcher Breastplate
-				i(158523),	-- Dead-Watcher Waistplate
-				i(158524),	-- Dead-Watcher Pauldrons
-				i(158525),	-- Dead-Watcher Gauntlets
-				i(158526),	-- Dead-Watcher Vambraces
-				i(158527),	-- Dead-Watcher Sabatons
 				--
 				i(159159),	-- Ashvane Company Gauntlets
 				i(159160),	-- Ashvane Company Girdle
@@ -6094,6 +5959,131 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(237561),	-- Yoke of Enveloping Hatred
 					}),
 				})),
+			}),
+		})),
+
+		-- 11.2.5
+		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_2_5 } }, {
+			header(HEADERS.LFGDungeon, 2831, {	-- The Emerald Nightmare
+				d(DIFFICULTY.RAID.LFR, {
+					filter(CLOAKS, {
+						i(247560),	-- Evergreen Vinewrap Drape
+						i(247512),	-- Gossamer-Spun Greatcloak
+					}),
+					filter(CLOTH, {
+						i(247517),	-- Ancient Dreamwoven Mantle
+						i(247514),	-- Celestially Aligned Hood
+						i(247513),	-- Clasp of Cosmic Insignificance
+						i(247520),	-- Cozy Dryad Hoof-Socks
+						i(247521),	-- Crimson Wool-Lined Slippers
+						i(247507),	-- Dreamscale Inlaid Vestments
+						i(247561),	-- Gloves of Murmured Promises
+						i(247505),	-- Handwraps of Delusional Power
+						i(247515),	-- Hood of Darkened Visions
+						i(247519),	-- Maddening Robe of Secrets
+						i(247518),	-- Mantle of Perpetual Bloom
+						i(247509),	-- Pliable Spider Silk Cinch
+						i(247516),	-- Ragged Horrorweave Leggings
+						i(247522),	-- Ragged Fur Wristwraps
+					}),
+					filter(LEATHER, {
+						i(247525),	-- Boots of Endless Betrayal
+						i(247531),	-- Cowl of Fright
+						i(247511),	-- Dragonspur Wristguards
+						i(247528),	-- Dreamsculptor's Gloves
+						i(247524),	-- Forest-Lord's Waistwrap
+						i(247533),	-- Grove Keeper's Robe
+						i(247523),	-- Lifeless Buckled Girdle
+						i(247530),	-- Mask of Multitudinous Eyes
+						i(247532),	-- Otherworldly Leather Mantle
+						i(247529),	-- Repulsive Leathery Pants
+						i(247534),	-- Scarred Ragefang Chestpiece
+						i(247527),	-- Splotched Bloodfur Leggings
+						i(247526),	-- Stained Maggot Squishers
+						i(247535),	-- Wristwraps of Broken Trust
+					}),
+					filter(MAIL, {
+						i(247544),	-- Black Venom Sabatons
+						i(247537),	-- Creeping String of Larva
+						i(247541),	-- Disjointed Linkage Leggings
+						i(247506),	-- Gauntlets of the Demented Mind
+						i(247538),	-- Gauntlets of Malevolent Intent
+						i(247539),	-- Greyed Dragonscale Coif
+						i(247036),	-- Helm of Shackled Elements
+						i(247536),	-- Laughing Sister's Pouch-Chain
+						i(247504),	-- Malignant Sabatons
+						i(247547),	-- Manacles of the Nightmare Colossus
+						i(247542),	-- Matted Fur Pauldrons
+						i(247546),	-- Patient Ambusher's Hauberk
+						i(247545),	-- Scored Ironclaw Sabatons
+						i(247540),	-- Singular Chain Leggings
+						i(247543),	-- Thorny Bramblemail Pauldrons
+					}),
+					filter(PLATE, {
+						i(247555),	-- Crown of Steely Brambles
+						i(247510),	-- Dragonbone Wristclamps
+						i(247552),	-- Eon-Tempered Waistplate
+						i(247549),	-- Fitted Ironbark Gauntlets
+						i(247508),	-- Horror Inscribed Chestguard
+						i(247548),	-- Insect-Etched Chestplate
+						i(247556),	-- Midnight Herald's Pauldrons
+						i(247557),	-- Pauldrons of Shifting Runes
+						i(247550),	-- Primal Gauntlets of Rage
+						i(247554),	-- Storm-Battered Legplates
+						i(247558),	-- Trampling Warboots
+						i(247553),	-- Venom-Fanged Barbute
+						i(247551),	-- Waistplate of Nameless Horror
+						i(247559),	-- Wristclamps of Mad Dreams
+					}),
+				}),
+			}),
+			header(HEADERS.LFGDungeon, 2834, {	-- Trial of Valor
+				d(DIFFICULTY.RAID.LFR, {
+					filter(CLOAKS, {
+						i(247591),	-- Drape of the Unworthy
+						i(247592),	-- Mantle of the Victorious Dead
+						i(247568),	-- Windwhipped Sailcloth
+					}),
+					filter(CLOTH, {
+						i(247567),	-- Cinch of Light
+						i(247571),	-- Helhound Hair Bracers
+						i(247569),	-- Leggings of the Lower Planes
+						i(249685),	-- Mantle of Unforgotten Souls
+						i(247584),	-- Oiled Rigger's Handwraps
+						i(247566),	-- Robes of Celestial Adornment
+						i(247570),	-- Treads of the Drowned
+					}),
+					filter(LEATHER, {
+						i(247585),	-- Gloves of Issued Challenge
+						i(247587),	-- Helbeast Skin Tunic
+						i(247573),	-- Moccasins of Silent Passage
+						i(249683),	-- Shoulderguards of Divine Arts
+						i(247575),	-- Sky-Valiant's Wristguards
+						i(249682),	-- Supreme Runecaster's Crown
+						i(247572),	-- Strand of Whelk Shells
+						i(247574),	-- Sucker-Scarred Leggings
+					}),
+					filter(MAIL, {
+						i(247576),	-- Anchor Chain Waistguard
+						i(247579),	-- Bite-Resistant Wristclamps
+						i(247588),	-- Corroded Val'kyr Chainmail
+						i(247589),	-- Kvaldir Exult's Grips
+						i(247577),	-- Leggings of the Undaunted
+						i(247578),	-- Radiant Soul Sabatons
+						i(249681),	-- Shoulders of the Dragonslayer
+					}),
+					filter(PLATE, {
+						i(247583),	-- Calcareous Wristclamps
+						i(247586),	-- Gleaming Val'kyr Cuirass
+						i(247581),	-- Goldrune Legplates
+						i(249678),	-- Helheim Hound's Visor
+						i(247580),	-- Krakenbone Waistplate
+						i(247582),	-- Lead-Soled Seabed Striders
+						i(247565),	-- Tarnished Dreamkeeper's Gauntlets
+						i(247590),	-- Reinforced Hound-Handler's Gauntlets
+						i(249679),	-- Sovereign Valarjar Mantle
+					}),
+				}),
 			}),
 		})),
 	}),

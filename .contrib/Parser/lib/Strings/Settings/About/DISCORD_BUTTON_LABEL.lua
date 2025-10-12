@@ -4,15 +4,5 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Discord",
-		-- TODO: de = "",
-		es = "Discord",
-		mx = "Discord",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: ko = "",
-		cn = "Discord",
-		-- TODO: tw = "",
 	},
 })

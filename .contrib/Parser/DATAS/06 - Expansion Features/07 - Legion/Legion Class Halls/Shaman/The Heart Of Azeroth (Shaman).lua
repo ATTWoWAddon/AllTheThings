@@ -10,26 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42296, {	-- Hidden Potential of the Farseer
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							-- i(xxxxxx),	-- Elemental Altar of the Maelstrom
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Elemental Altar of the Maelstrom (DECOR!)
 					}),
 					ach(60971, {	-- Legendary Research of the Maelstrom
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							-- i(xxxxxx),	-- Replica Words of Wind and Earth
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Words of Wind and Earth (DECOR!)
 					}),
 					ach(60990, {	-- So Many Missions for the Maelstrom
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- (no decor reward) (DECOR!)
 					}),
 					ach(42280, {	-- The Farseer's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Maelstrom Lava Lamp (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Maelstrom Lava Lamp (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {

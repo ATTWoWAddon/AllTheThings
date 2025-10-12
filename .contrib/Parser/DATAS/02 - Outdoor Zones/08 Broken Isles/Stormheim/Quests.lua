@@ -568,7 +568,27 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
 					["coord"] = { 68.0, 48.6, STORMHEIM },
 					["groups"] = {
-						i(124512),	-- Ashildir's Bones (QI!)
+						o_repeated({	-- Ashildir's Bones
+							["coords"] = {
+								{ 69.4, 44.3, STORMHEIM },
+								{ 69.2, 42.3, STORMHEIM },
+								{ 69.6, 41.7, STORMHEIM },
+								{ 69.8, 45.7, STORMHEIM },
+								{ 70.7, 42.0, STORMHEIM },
+								{ 71.2, 45.6, STORMHEIM },
+								{ 71.4, 44.5, STORMHEIM },
+								{ 72.9, 43.9, STORMHEIM },
+							},
+							["groups"] = {
+								i(124512),	-- Ashildir's Bones (QI!)
+								o(241870),	-- Ashildir's Bones
+								o(241871),	-- Ashildir's Bones
+								o(241872),	-- Ashildir's Bones
+								o(241873),	-- Ashildir's Bones
+								o(241874),	-- Ashildir's Bones
+							},
+						}),
+						--
 						i(129229),	-- Runespeaker's Sandals
 						i(129231),	-- Stormborn Treads
 						i(129230),	-- Runesworn Boots
@@ -676,7 +696,10 @@ root(ROOTS.Zones, {
 				q(39405, {	-- Stories of Battle
 					["sourceQuests"] = { 39154 },	-- To Skold-Ashil
 					["provider"] = { "o", 251571 },	-- Ashilvara, Verse 1
-					["coord"] = { 58.5, 64.2, STORMHEIM },
+					["coords"] = {
+						{ 58.5, 64.2, STORMHEIM },
+						{ 63.5, 64.6, STORMHEIM },
+					},
 				}),
 				q(44700, {	-- Stormheim (A)
 					["altQuests"] = { 39735 },	-- Stormheim (A) from Scouting Map
@@ -780,6 +803,11 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 93231 },	-- Vydhar
 					["coord"] = { 68.4, 54.2, STORMHEIM },
+					["groups"] = {
+						o(241866, {	-- Soulthorn
+							i(124504),	 -- Soulcap (QI!)
+						}),
+					},
 				}),
 				q(38818, {	-- The Final Judgment
 					["sourceQuests"] = { 38815 },	-- Waking the Shieldmaiden
@@ -825,7 +853,21 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["groups"] = {
-						i(138149),	-- Ancient Dreyrgrot Tablet (QI!)
+						o_repeated({	-- Ancient Dreyrgrot Tablet
+							["coords"] = {
+								{ 75.3, 52.1, STORMHEIM },
+								{ 75.5, 49.0, STORMHEIM },
+								{ 75.9, 51.9, STORMHEIM },
+								{ 76.2, 49.8, STORMHEIM },
+							},
+							["groups"] = {
+								i(138149),	-- Ancient Dreyrgrot Tablet (QI!)
+								o(251008),	-- Ancient Dreyrgrot Tablet
+								o(258849),	-- Ancient Dreyrgrot Tablet
+								o(258850),	-- Ancient Dreyrgrot Tablet
+								o(258851),	-- Ancient Dreyrgrot Tablet
+							},
+						}),
 					},
 				}),
 				q(38332, {	-- The Ranger Lord
@@ -856,27 +898,19 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						o(243819, {	-- Yotnar's Left Arm
 							["coord"] = { 48.1, 47.5, STORMHEIM },
-							["groups"] = {
-								i(128493),	-- Yotnar's Left Arm (QI!)
-							},
+							["groups"] = { i(128493) },	-- Yotnar's Left Arm (QI!)
 						}),
 						o(243823, {	-- Yotnar's Left Foot
 							["coord"] = { 48.8, 46.1, STORMHEIM },
-							["groups"] = {
-								i(128497),	-- Yotnar's Left Foot (QI!)
-							},
+							["groups"] = { i(128497) },	-- Yotnar's Left Foot (QI!)
 						}),
 						o(243820, {	-- Yotnar's Right Arm
 							["coord"] = { 49.2, 45.6, STORMHEIM },
-							["groups"] = {
-								i(128495),	-- Yotnar's Right Arm (QI!)
-							},
+							["groups"] = { i(128495) },	-- Yotnar's Right Arm (QI!)
 						}),
 						o(243822, {	-- Yotnar's Right Foot
-							["coord"] = { 49.2, 45.6, STORMHEIM },
-							["groups"] = {
-								i(128496),	-- Yotnar's Right Foot (QI!)
-							},
+							["coord"] = { 48.7, 41.7, STORMHEIM },
+							["groups"] = { i(128496) },	-- Yotnar's Right Foot (QI!)
 						}),
 						--
 						i(129316),	-- Watcher's Pendant of Courage
@@ -891,7 +925,22 @@ root(ROOTS.Zones, {
 				q(42640, {	-- The Value of Knowledge
 					["provider"] = { "o", 250990 },	-- Crate of Ancient Relics
 					["coord"] = { 75.5, 50.8, STORMHEIM },
-					["groups"] = { i(138151) },	-- Crate of Ancient Relics (QI!)
+					["groups"] = {
+						o(251007, {	-- Crate of Ancient Relics
+							["coords"] = {
+								{ 74.4, 50.3, STORMHEIM },
+								{ 75.0, 50.4, STORMHEIM },
+								{ 75.2, 51.8, STORMHEIM },
+								{ 75.4, 48.7, STORMHEIM },
+								{ 75.6, 49.4, STORMHEIM },
+								{ 75.8, 48.4, STORMHEIM },
+								{ 76.1, 51.3, STORMHEIM },
+								{ 76.5, 49.4, STORMHEIM },
+								{ 76.5, 50.4, STORMHEIM },
+							},
+							["groups"] = { i(138151) },	-- Crate of Ancient Relics (QI!)
+						}),
+					},
 				}),
 				q(38360, {	-- The Windrunner's Fate
 					["sourceQuests"] = { 38332 },	-- The Ranger Lord
@@ -969,6 +1018,15 @@ root(ROOTS.Zones, {
 					["coord"] = { 42.0, 64.4, STORMHEIM },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						o_repeated({	-- Oiled Cloak
+							["coord"] = { 45.6, 66.6, STORMHEIM },
+							["groups"] = {
+								i(122686),	-- Oiled Cloak (QI!)
+								o(240681),	-- Oiled Cloak
+								o(241462),	-- Oiled Cloak
+							},
+						}),
+						--
 						i(121567),	-- Galeborn's Oiled Cloak
 						i(129318),	-- Lodestone of the Galeborn
 						i(129317),	-- Lodestone of the Mystic

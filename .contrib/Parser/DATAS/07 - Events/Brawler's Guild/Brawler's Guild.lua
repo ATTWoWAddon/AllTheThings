@@ -33,35 +33,43 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
 				["groups"] = {
-					title(209, {	-- Brawler <Name>
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-					}),
-				}
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(13192, {	-- Brawler for Azeroth (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
 				["groups"] = {
-					title(209, {	-- Brawler <Name>
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-					}),
-				}
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(7941, {		-- Brawlin' and Shot Callin' (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+				["groups"] = {
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(7942, {		-- Brawlin' and Shot Callin' (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+				["groups"] = {
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(9170, {		-- Brawlin' and Shot Callin' (Season 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["groups"] = {
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(9174, {		-- Brawlin' and Shot Callin' (Season 2) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["groups"] = {
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			applyclassicphase(MOP_PHASE_ESCALATION, ach(8339, {		-- Collect Your Deck (Season 1 & 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -113,10 +121,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			ach(7945, {		-- Haters Gonna Hate (Season 2)
 				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 			}),
-			ach(8335, {		-- Having a Brawl (Season 1) (Alliance)
+			applyclassicphase(MOP_PHASE_ESCALATION, ach(8335, {		-- Having a Brawl (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
-			}),
+			})),
 			applyclassicphase(MOP_PHASE_ESCALATION, ach(8337, {		-- Having a Brawl (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
@@ -141,19 +149,24 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			ach(11565, {	-- King of the Guild (Season 3) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
+				["groups"] = {
+					title(209),	-- Brawler <Name>
+				},
 			}),
 			ach(11566, {	-- King of the Guild (Season 3) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
 			}),
-			ach(7946, {		-- Now You're Just Showing Off (Season 1) (Alliance)
+			-- Wouter NOTE: idk wth Blizzard is doing but they locked people out of queuing 1 after obtaining Rank 8 (like 1 day after patch) so this isn't available yet,
+			-- 				probably because Disruptron was bugged or whatever
+			applyclassicphase(MOP_PHASE_ESCALATION, ach(7946, {		-- Now You're Just Showing Off (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
-			}),
-			ach(8022, {		-- Now You're Just Showing Off (Season 1) (Horde)
+			})),
+			applyclassicphase(MOP_PHASE_ESCALATION, ach(8022, {		-- Now You're Just Showing Off (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
-			}),
+			})),
 			ach(9171, {		-- Now You're Just Showing Off (Season 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
@@ -350,6 +363,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			faction(FACTION_BRAWLPUB_SEASON_1, {	-- Bizmo's Brawlpub (Season 1) (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+				-- #if BEFORE 5.5.3
+				["description"] = "Before Phase 4, you can only reach Rank 8.",
+				["minReputation"] = { FACTION_BRAWLPUB_SEASON_1, 8 },	-- Rank 8
+				-- #endif
 			}),
 			faction(FACTION_BRAWLPUB_SEASON_2, {	-- Bizmo's Brawlpub (Season 2) (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -366,6 +383,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 			faction(FACTION_BRAWLGAR_SEASON_1, {	-- Brawl'gar Arena (Season 1) (Horde)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+				-- #if BEFORE 5.5.3
+				["description"] = "Before Phase 4, you can only reach Rank 8.",
+				["maxReputation"] = { FACTION_BRAWLGAR_SEASON_1, 8 },	-- Rank 8
+				-- #endif
 			}),
 			faction(FACTION_BRAWLGAR_SEASON_2, {	-- Brawl'gar Arena (Season 2) (Horde)
 				["races"] = HORDE_ONLY,
@@ -1176,9 +1197,11 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_1_0 },
 				-- #if AFTER SL
+				-- #if BEFORE 11.2.7
 				["description"] = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
 				-- #else
 				["description"] = "Shirts are available to those who have already earned them through the quests.",
+				-- #endif
 				-- #endif
 				["groups"] = {
 					-- #if BEFORE WOD
@@ -1205,7 +1228,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #endif
 					})),
 					i(167812, {	-- Brawlers Guild Tabard
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
@@ -1216,10 +1239,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
-						["timeline"] = { ADDED_6_1_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98085, {	-- Brucehide Jersey
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(253011, {	-- Brawler's Healing Brute Punch
 						["timeline"] = { ADDED_11_2_7 },
@@ -1234,37 +1257,37 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 					i(93025, {	-- Clock'em (PET!)
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 						-- #if MOP
 						["description"] = "Available after reaching Rank 4.",
 						-- #endif
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98092, {	-- Digmaster's Bodysleeve
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					iensemble(167892, {	-- Ensemble: Brawler's Garb
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98079, {	-- Floot-Tooter's Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
-						["timeline"] = { ADDED_6_2_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98091, {	-- Last Season's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98084, {	-- Ooze-Soaked Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98087, {	-- Paper Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(118908, {	-- Pit Fighter's Punching Ring
 						["races"] = HORDE_ONLY,
@@ -1272,32 +1295,32 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(144392, {	-- Pugilist's Powerful Punching Ring
 						["races"] = HORDE_ONLY,
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98083, {	-- Sharkskin Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98093, {	-- Sightless Mantle
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98081, {	-- The Boomshirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(95050, {	-- The Brassiest Knuckle
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98086, {	-- Tuxedo-Like Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(144394, {	-- Tylarr Gronnden (PET!)
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98082, {	-- Undisputed Champion's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98543, {	-- Wraps of the Blood-Soaked Brawler
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 				},
 			}),
@@ -1306,9 +1329,11 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_5_1_0 },
 				-- #if AFTER SL
+				-- #if BEFORE 11.2.7
 				["description"] = "Even though the Brawler's Guild has closed, this vendor remains available to players.\nShirts are only available to those who have already earned them.",
 				-- #else
 				["description"] = "Shirts are available to those who have already earned them through the quests.",
+				-- #endif
 				-- #endif
 				["groups"] = {
 					-- #if BEFORE WOD
@@ -1335,7 +1360,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						-- #endif
 					})),
 					i(167811, {	-- Brawlers Guild Tabard
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					-- #if BEFORE WOD
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
@@ -1346,10 +1371,10 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					-- #endif
 					i(122396, {	-- Brawler's Razor Claws
-						["timeline"] = { ADDED_6_1_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98085, {	-- Brucehide Jersey
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(253011, {	-- Brawler's Healing Brute Punch
 						["timeline"] = { ADDED_11_2_7 },
@@ -1364,37 +1389,37 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["timeline"] = { ADDED_11_2_7 },
 					}),
 					i(93025, {	-- Clock'em (PET!)
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 						-- #if MOP
 						["description"] = "Only available after reaching Rank 4.",
 						-- #endif
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98092, {	-- Digmaster's Bodysleeve
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					iensemble(167891, {	-- Ensemble: Brawler's Garb
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98079, {	-- Floot-Tooter's Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					TempForceMisc(i(127773, {	-- Gemcutter Module: Mastery
-						["timeline"] = { ADDED_6_2_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn. If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98080, {	-- Gorgeous Blouse
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98091, {	-- Last Season's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98084, {	-- Ooze-Soaked Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98087, {	-- Paper Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(118907, {	-- Pit Fighter's Punching Ring
 						["races"] = ALLIANCE_ONLY,
@@ -1402,35 +1427,36 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 					i(144391, {	-- Pugilist's Powerful Punching Ring
 						["races"] = ALLIANCE_ONLY,
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98083, {	-- Sharkskin Tunic
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98093, {	-- Sightless Mantle
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98081, {	-- The Boomshirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(95051, {	-- The Brassiest Knuckle
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98086, {	-- Tuxedo-Like Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					i(144394, {	-- Tylarr Gronnden (PET!)
-						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98082, {	-- Undisputed Champion's Shirt
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 					applyclassicphase(MOP_PHASE_ESCALATION, i(98543, {	-- Wraps of the Blood-Soaked Brawler
-						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH },
+						["timeline"] = { ADDED_5_3_0, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					})),
 				},
 			}),
+			-- Season 1 through 4
 			n(115797, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH } }, {	-- Tiana Nevermorn <Gold Exchange>
 				["maps"] = { BRAWLGAR_ARENA },
 				["races"] = HORDE_ONLY,
@@ -1641,18 +1667,6 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					}),
 				},
 			})),
-			n(115797, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Tiana Nevermorn <Gold Exchange>
-				["maps"] = { BRAWLGAR_ARENA },
-				["races"] = HORDE_ONLY,
-				["groups"] = {
-					i(259227, {	-- Brawlin' Bruno
-						["cost"] = { { "c", 1299, 100 }, },	-- 250x Brawler's Gold
-					}),
-					i(259238, {	-- Ballistic Bronco
-						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
-					}),
-				},
-			})),
 			n(118898, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH } }, {	-- Ulaani <Gold Exchange>
 				["maps"] = { DEEPRUN_TRAM_BIZMOS_BRAWLPUB },
 				["races"] = ALLIANCE_ONLY,
@@ -1860,6 +1874,19 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						["description"] = "Use this while on the 'Undercover Agent: Silent Jussho' quest if you do not have Rank 6 by this point.",
 						-- #endif
 						["cost"] = { { "c", 1299, 1000 }, },	-- 1,000x Brawler's Gold
+					}),
+				},
+			})),
+			-- Season 5 through 8
+			n(115797, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Tiana Nevermorn <Gold Exchange>
+				["maps"] = { BRAWLGAR_ARENA },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(259227, {	-- Brawlin' Bruno
+						["cost"] = { { "c", 1299, 100 }, },	-- 250x Brawler's Gold
+					}),
+					i(259238, {	-- Ballistic Bronco
+						["cost"] = { { "c", 1299, 500 }, },	-- 500x Brawler's Gold
 					}),
 				},
 			})),

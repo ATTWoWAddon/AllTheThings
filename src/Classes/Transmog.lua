@@ -838,6 +838,7 @@ do
 
 	local AndAppearance = {
 		__name = "AndAppearance",
+		CACHE = function() return CACHE end,
 		collectible = function(t) return app.Settings.Collectibles.Transmog end,
 		collected = collected_Completionist,
 		visualID = function(t)

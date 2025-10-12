@@ -38,6 +38,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					}),
 				}),
 				filter(MISC, {
+					i(219243),	-- Recruit's Reagent Bag
 					i(250411),	-- Timerunner's Hearthstone
 					i(216653),	-- Timerunner's Satchel
 				}),

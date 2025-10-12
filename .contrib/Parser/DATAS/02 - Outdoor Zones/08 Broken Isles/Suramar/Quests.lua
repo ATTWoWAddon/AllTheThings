@@ -195,6 +195,10 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["coord"] = { 35.3, 47.3, SURAMAR },
 					["groups"] = {
+						o(245126, {	-- Crystallized Ancient Mana
+							["coord"] = { 37.0, 46.5, SURAMAR },
+							["groups"] = { i(129979) },	-- Crystallized Ancient Mana (QI!)
+						}),
 						i(121804),	-- Cloak of the Everliving Keeper
 					},
 				}),
@@ -1690,6 +1694,12 @@ root(ROOTS.Zones, {
 					["sourceQuest"] = 41762,	-- Sympathizers Among the Shal'dorei
 					["provider"] = { "n", 105071 },	-- Silgryn
 					["coord"] = { 40.1, 70.7, SURAMAR },
+					["groups"] = {
+						o(249021, {	-- Enchanted Party Mask
+							["coord"] = { 40.3, 72.5, SURAMAR },
+							["groups"] = { i(136600) },	-- Enchanted Party Mask (QI!)
+						}),
+					},
 				}),
 				q(41915, {	-- The Master's Legacy
 					["sourceQuest"] = 41146,	-- Elegant Design

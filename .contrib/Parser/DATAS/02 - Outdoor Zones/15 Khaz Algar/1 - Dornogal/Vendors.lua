@@ -671,8 +671,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
+					i(251993, {	-- Gilded Starlight Matrix
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
+					}),
 					i(231768, {	-- Enchanted Gilded Ethereal Crest
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+					}),
+					i(251994, {	-- Runed Starlight Matrix
+						["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },
 					}),
 					i(231769, {	-- Enchanted Runed Ethereal Crest
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },

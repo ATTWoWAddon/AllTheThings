@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = " предмет(ов).",
 		-- TODO: ko = "",
 		cn = " 物品。",
-		-- TODO: tw = "",
+		-- tw = "物品。",
 	},
 })

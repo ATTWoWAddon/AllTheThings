@@ -161,24 +161,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190575),	-- Ensemble: Chains of the Honored Valarjar
 				i(190165),	-- Ensemble: Twisted Arcanum Regalia
 
-				------ Highborne Scholar Set ------
-				i(190435),	-- Highborne Scholar's Belt
-				i(190437),	-- Highborne Scholar's Collar
-				i(190787),	-- Highborne Scholar's Cuffs
-				i(190815),	-- Highborne Scholar's Leggings
-				i(190555),	-- Highborne Scholar's Robe
-				i(190868),	-- Highborne Scholar's Scrollmantle
-				i(190809),	-- Highborne Scholar's Slippers
-
-				------ Tidecaller's Set ------
-				i(190700),	-- Tidecaller's Boots
-				i(190432),	-- Tidecaller's Bracers
-				i(190440),	-- Tidecaller's Crown
-				i(190067),	-- Tidecaller's Grips
-				i(190072),	-- Tidecaller's Hauberk
-				i(190556),	-- Tidecaller's Legguards
-				i(190709),	-- Tidecaller's Pauldrons
-
 				------ Val'Sharah Protector Set ------
 				i(190547),	-- Val'Sharah Protector's Bracers
 				i(190897),	-- Val'Sharah Protector's Crown

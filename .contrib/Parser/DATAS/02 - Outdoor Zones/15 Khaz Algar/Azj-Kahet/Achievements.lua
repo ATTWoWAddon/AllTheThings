@@ -164,7 +164,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			skyriding(ach(40701, {	-- Skyriding Glyphs: Untamed Valley
 				["coord"] = { 65.4, 51.7, AZJ_KAHET },
 			})),
-			ach(40542),		-- Smelling History (automated)
+			ach(40542, {	-- Smelling History (automated)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Kaheti Scribe's Records (DECOR!)
+			}),
 			ach(40636),		-- Sojourner of Azj-Kahet (automated)
 			ach(40633, {	-- The Unseeming
 				["description"] = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",

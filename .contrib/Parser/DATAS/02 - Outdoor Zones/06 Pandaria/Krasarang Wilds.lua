@@ -1065,19 +1065,6 @@ root(ROOTS.Zones, {
 							i(88580),	-- Ken-Ken's Mask (TOY!)
 						},
 					}),
-					q(32134, {	-- Hard Counter
-						["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(32139, {	-- Stacked!
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(32221, {	-- Storming the Beach
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
 					q(36882, {	-- The Great Angler Returns
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 						["qg"] = 63721,	-- Nat Pagle
@@ -1094,24 +1081,6 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 						["races"] = HORDE_ONLY,
 					}),
-					q(32238, {	-- Universal Remote-Explode
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					q(32138, {	-- Work Order: Lumber
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-					}),
-					--[[
-					The following quests have all been removed from the game
-					q(30677, {	-- Shuttle Service
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					]]--
 				}),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {

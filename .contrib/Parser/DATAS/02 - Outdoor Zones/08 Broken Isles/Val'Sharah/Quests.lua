@@ -233,6 +233,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune
 					["provider"] = { "n", 92697 },	-- Isoraen Nightstar
 					["coord"] = { 51.4, 56.9, VALSHARAH },
+					["groups"] = {
+						o_repeated({	-- Twisted Root
+							i(128680),	-- Corrupted Root Sample (QI!)
+							o(243952),	-- Twisted Root
+							o(243953),	-- Twisted Root
+							o(243954),	-- Twisted Root
+						}),
+					},
 				}),
 				q(38662, {	-- Tears for Fears
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune
@@ -430,7 +438,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["coord"] = { 54.7, 52.8, VALSHARAH },
 					-- unsure why there are two versions of this quest. i picked this version up on my horde priest.
 				}),
-				q(39149),	-- A Village in Peril
+				q(39149, {	-- A Village in Peril
+					["provider"] = { "n", 94594 },	-- Theo the Huntsman
+					["coord"] = { 51.3, 51.2, VALSHARAH },
+				}),
 				q(38646, {	-- A Sight For Sore Eyes
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["provider"] = { "n", 92618 },	-- Granny Marl
@@ -446,7 +457,17 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "n", 92618 },	-- Granny Marl
 					["coord"] = { 38.9, 61.4, VALSHARAH },
 					["groups"] = {
-						i(127005),	-- Barrel of Corn (QI!)
+						o(242449, {	-- Barrel of Corn
+							["coords"] = {
+								{ 37.4, 61.8, VALSHARAH },
+								{ 38.2, 60.1, VALSHARAH },
+								{ 38.3, 61.1, VALSHARAH },
+								{ 38.6, 62.5, VALSHARAH },
+								{ 38.7, 61.7, VALSHARAH },
+								{ 39.5, 62.4, VALSHARAH },
+							},
+							["groups"] = { i(127005) },	-- Barrel of Corn (QI!)
+						}),
 					},
 				}),
 				q(39117, {	-- Shriek No More
@@ -494,9 +515,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				}),
 				q(38714, {	-- Maiev's Trail
 					["sourceQuests"] = { 38718 },	-- Kur'talos Ravencrest
-					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						92850,	-- Commander Jarod Shadowsong
+						94977,	-- Commander Jarod Shadowsong
+					},
 					["coord"] = { 40.7, 53.0, VALSHARAH },
 					["groups"] = {
+						o(241639, {	-- Warden's Glaive
+							["coord"] = { 42.1, 51.5, VALSHARAH },
+							["groups"] = { i(124412) },	-- Warden's Glaive (QI!)
+						}),
 						i(129983),	-- Farseeker Drape
 						i(121602),	-- Nightvale Wristwraps
 						i(121603),	-- Rooksguard Vambraces
@@ -506,7 +534,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				}),
 				q(38715, {	-- The Rook's Guard
 					["sourceQuests"] = { 38718 },	-- Kur'talos Ravencrest
-					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
+					["qgs"] = {
+						92850,	-- Commander Jarod Shadowsong
+						94977,	-- Commander Jarod Shadowsong
+					},
 					["coord"] = { 40.7, 53.0, VALSHARAH },
 				}),
 				q(38717, {	-- Black Rook Prison
@@ -545,7 +576,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				q(38721, {	-- Lieutenant of the Tower
 					["sourceQuests"] = { 38724 },	-- Brotherly Love
 					["provider"] = { "n", 93027 },	-- Maiev Shadowsong
-					["coord"] = { 24.5, 42.3, 642 },
+					["coord"] = { 23.3, 42.1, 642 },	-- Darkpens
 					["groups"] = {
 						i(200668, {	-- Ravencourt Field Sickle
 							["timeline"] = ADDED_10_0_2,
@@ -623,6 +654,23 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				q(42857, {	-- Moist Around the Hedges
 					["provider"] = { "o", 251425 },	-- Moist Grizzlecomb
 					["coord"] = { 66.8, 75.7, VALSHARAH },
+					["groups"] = {
+						o(251419, {	-- Moist Grizzlecomb
+							["coords"] = {
+								{ 66.0, 71.2, VALSHARAH },
+								{ 66.4, 73.4, VALSHARAH },
+								{ 67.1, 72.9, VALSHARAH },
+								{ 67.2, 75.1, VALSHARAH },
+								{ 67.3, 74.1, VALSHARAH },
+								{ 67.8, 71.4, VALSHARAH },
+								{ 68.4, 71.6, VALSHARAH },
+								{ 68.4, 73.3, VALSHARAH },
+								{ 68.5, 72.3, VALSHARAH },
+								{ 68.5, 74.3, VALSHARAH },
+							},
+							["groups"] = { i(138788) },	-- Moist Grizzlecomb (QI!)
+						}),
+					},
 				}),
 				-- KEK 4
 				q(40221, {	-- Spread Your Lunarwings and Fly
@@ -672,13 +720,27 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["provider"] = { "n", 94863 },	-- Mender Onelle
 					["coord"] = { 69.5, 49.4, VALSHARAH },
+					["groups"] = {
+						o(248416, {	-- Shadowfen Heirlooms
+							["coords"] = {
+								{ 65.1, 51.2, VALSHARAH },
+								{ 65.5, 50.3, VALSHARAH },
+								{ 65.8, 53.8, VALSHARAH },
+								{ 65.9, 51.0, VALSHARAH },
+								{ 66.6, 50.0, VALSHARAH },
+								{ 66.8, 53.5, VALSHARAH },
+								{ 67.3, 51.5, VALSHARAH },
+								{ 67.5, 53.4, VALSHARAH },
+							},
+							["groups"] = { i(136272) },	-- Shadowfen Heirlooms (QI!)
+						}),
+					},
 				}),
 				q(41707, {	-- Wormtalon Wreckage
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["provider"] = { "n", 95117 },	-- Aldos Duskwing
 					["coord"] = { 69.5, 49.4, VALSHARAH },
 				}),
-
 				q(38889, {	-- Adopting the Adorable
 					["description"] = "You have to kill Jinikki the Puncturer to get this quest.",
 					["qg"] = 93677,	-- Shivering Ashmaw Cub
@@ -688,7 +750,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(128690),	-- Ashmaw Cub (PET!)
 					},
 				}),
-
 				-- APPEARANCE --
 				q(46079, {	-- Aid on the Front Lines
 					["sourceQuests"] = {
@@ -755,7 +816,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(127860),	-- Warden's Signet (QI!)
 					},
 				}),
-
 				q(39015, {	-- Grumpy
 					["coord"] = { 38.6, 65.6, VALSHARAH },
 					-- not sure if there are prereqs for this.
@@ -763,7 +823,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 						i(128354),	-- Grumpy (PET!)
 					},
 				}),
-
 				n(BONUS_OBJECTIVES, sharedData({
 					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 					-- #if BEFORE DF

@@ -141,6 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				crit(41670),	-- Carentan's Payment
 				crit(41671),	-- A Bad Deal
 				crit(41666),	-- The Long Con
+				i(252653, {["timeline"] = { ADDED_12_0_0 }}),	-- Tiragarde Treasure Chest (DECOR!)
 			})),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound

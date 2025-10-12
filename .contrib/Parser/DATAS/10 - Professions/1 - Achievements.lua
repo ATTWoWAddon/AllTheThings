@@ -210,7 +210,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 		applyclassicphase(BFA_PHASE_ONE, ach(12733, {	-- Professional Zandalari Master (H)
 			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_8_0_1_LAUNCH },
-			--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Dazar'alor Forge (DECOR!)
+			["groups"] = { i(245490, {["timeline"] = { ADDED_12_0_0 }}),},	-- Dazar'alor Forge (DECOR!)
 		})),
 		ach(12734, {	-- Working in Kul Tiras (A)			-- Some Primary Professions at Max
 			["timeline"] = { ADDED_8_0_1_LAUNCH },

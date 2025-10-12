@@ -213,6 +213,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 32.2, 38.4, 750 },
 					["description"] = "In an underwater cave. Entrance is below the boat with another treasure on it.",
 				}),
+				o(253994, {	-- Seemingly Unguarded Treasure
+					["coord"] = { 52.7, 58.3, HIGHMOUNTAIN },
+				}),
 			}),
 		}),
 	}),

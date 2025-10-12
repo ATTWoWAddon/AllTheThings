@@ -77,16 +77,16 @@ app.AddEventHandler("OnLoad", function()
 	remapping[1667] = 1669; -- EU
 	remapping[1668] = 1669; -- KO
 	remapping[1666] = 1669; -- TW
-	
+
 	-- Remap SL Timewalking => US
 	-- Maybe mapping is to 1704
-	remapping[1704] = 1703; -- 
-	remapping[1705] = 1703; -- 
-	remapping[1706] = 1703; -- 
-	remapping[1707] = 1703; -- 
-	remapping[1708] = 1703; -- 
-	remapping[1709] = 1703; -- 
-	remapping[1710] = 1703; -- 
+	remapping[1704] = 1703; --
+	remapping[1705] = 1703; --
+	remapping[1706] = 1703; --
+	remapping[1707] = 1703; --
+	remapping[1708] = 1703; --
+	remapping[1709] = 1703; --
+	remapping[1710] = 1703; --
 end);
 
 -- Event Cache
@@ -404,13 +404,17 @@ end
 local GetTimerunningSeason;
 local PlayerGetTimerunningSeasonID = PlayerGetTimerunningSeasonID;
 -- Don't add the Timerunning Filter if there's no Season active!
-local IsTimerunningActive = false
+local IsTimerunningActive = true
 if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 	-- Timerunning API is available.
 	local timerunningSeasons = L.EVENT_TIMERUNNING_SEASONS;
 	GetTimerunningSeason = function()
 		local seasonID = PlayerGetTimerunningSeasonID();
 		if seasonID then return timerunningSeasons[seasonID]; end
+	end
+	local TimerunningEventIDs = {}
+	for i=1,#timerunningSeasons do
+		TimerunningEventIDs[timerunningSeasons[i]] = true
 	end
 	local TimerunningSeasonEventID
 	local GetRelativeRawWithField = app.GetRelativeRawWithField
@@ -424,8 +428,7 @@ if PlayerGetTimerunningSeasonID and IsTimerunningActive then
 		-- app.PrintDebug("F:~TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],not group.e or group.e ~= 437)
 		if not ThingKeys[group.key] then return true end
 		local e = GetRelativeRawWithField(group, "e")
-		-- TODO: revise with Legion Remix since we will need new eventID excluded
-		return not e or e ~= 437
+		return not e or not TimerunningEventIDs[e]
 	end
 
 	-- Add a Timerunning Filter that can be used for Live/Timerunning characters

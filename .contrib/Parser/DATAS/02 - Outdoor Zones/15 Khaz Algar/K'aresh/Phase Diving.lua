@@ -213,6 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["questID"] = 90595,
 					["groups"] = {
 						i(240172),	-- Depleted K'areshi Battery
+						i(240214),	-- Miniature Reshii Sandgarden
 					},
 				}),
 				n(232182, {	-- Prototype Mk-V

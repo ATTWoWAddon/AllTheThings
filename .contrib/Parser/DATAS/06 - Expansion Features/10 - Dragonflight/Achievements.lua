@@ -22,7 +22,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17543,	-- You Know How to Reach Me
 			}},
 			["groups"] = {
-				i(210142),	-- Taivan (MOUNT!)
+				i(210142),	-- Good Boy's Leash (MOUNT!)
+				i(248124, {["timeline"] = { ADDED_12_0_0 }}),	-- The Great Hoard (DECOR!)
 			},
 		})),
 		ach(19486, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Across the Isles

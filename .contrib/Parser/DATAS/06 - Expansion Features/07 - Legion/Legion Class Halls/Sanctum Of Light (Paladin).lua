@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42293, {	-- Hidden Potential of the Highlord
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Altar of Ancient Kings (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Altar of Ancient Kings (DECOR!)
 					}),
 					ach(60968, {	-- Legendary Research of the Silver Hand
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Libram of Ancient Kings (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Libram of Ancient Kings (DECOR!)
 					}),				
 					ach(60987, {	-- So Many Missions for the Sanctum of Light
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Silver Hand Weapon Rack (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Silver Hand Weapon Rack (DECOR!)
 					}),
 					ach(42276, {	-- The Highlord's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Sanctum of Light Candelabra (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Sanctum of Light Candelabra (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {

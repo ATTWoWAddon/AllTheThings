@@ -883,6 +883,14 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(243063),	-- Doomfeathers (PET!)
 				ach(61402),	-- Epic Edition: Voidlight Surger
 				i(243062),	-- Hopeflutter (PET!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Light-Infused Fountain (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Light-Infused Rotunda (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Painting of Alleria (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Painting of Arator (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Painting of Turalyon (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Painting of Xal'atath (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Void-Corrupted Fountain (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Void-Corrupted Rotunda (DECOR!)
 				i(245610),	-- Voidlight Surger
 				iensemble(248974),	-- Voidstrider Raiment
 				i(243019),	-- Voidwing Dragonhawk (MOUNT!)

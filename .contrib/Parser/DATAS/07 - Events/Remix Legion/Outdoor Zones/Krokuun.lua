@@ -7,6 +7,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			m(KROKUUN, {
 				["icon"] = 1719207,
 				["groups"] = {
+					n(ACHIEVEMENTS, sharedData({ ["timeline"] = { ADDED_12_0_0 } }, {
+						ach(42591),	-- Elusive Foes: Krokuun
+						ach(42620),	-- Explore Krokuun
+						ach(42588),	-- Hidden Treasures: Krokuun
+					})),
 					n(ZONE_REWARDS, {
 						filter(CLOTH, {
 						}),

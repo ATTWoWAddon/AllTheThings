@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				ach(7324),	-- One Step at a Time
 				ach(7319),	-- Ready for Raiding III
 				ach(7322, {	-- Roll Club
-					--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Kun-Lai Lacquered Rickshaw (DECOR!)
+					i(247739, {["timeline"] = { ADDED_12_0_0 }}),	-- Kun-Lai Lacquered Rickshaw (DECOR!)
 				}),
 				ach(6546),	-- The Golden Lotus
 			}),

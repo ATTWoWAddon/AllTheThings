@@ -13,6 +13,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					60870,	-- Tomb of Sargeras
 					60860,	-- Trial of Valor
 				}},
+				--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Corruption Pit (DECOR!)
 			}),
 			ach(61075, {	-- Heroic Legion Remix Raider
 				-- Meta Achievement
@@ -49,8 +50,5 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				["groups"] = { iensemble(257106) },	-- Ensemble: Sargerei Commander's Lightbound Regalia
 			}),
 		}),
-		--n(REWARDS, {
-		--	i(220763),	-- Bonus Experience
-		--}),
 	}),
 })));

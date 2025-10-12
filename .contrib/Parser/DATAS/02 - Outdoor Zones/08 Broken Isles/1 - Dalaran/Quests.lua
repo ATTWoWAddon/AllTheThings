@@ -1237,6 +1237,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39986 },	-- Magic Message
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.4, 48.3, LEGION_DALARAN },
+					["groups"] = { i(131931) },	-- Khadgar's Wand (QI!)
 				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {

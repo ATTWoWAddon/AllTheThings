@@ -475,10 +475,7 @@ i(166859);	-- Zinj'alor Blue Diamond
 -- PATCH 8.2.0 --
 -----------------
 i(165668);	-- Azsharan Medallion
-i(168006);	-- Wilted Direbloom Petal
-i(168007);	-- Torn Direbloom Petal
-i(168008);	-- Young Direbloom Petal
-i(168009);	-- Rotten Direbloom Petal
+i(169146);	-- Brittle Thrust Booster
 i(169130);	-- Bent Cogwheel
 i(170030);	-- Burned Codex
 i(169128);	-- Chilled Heating Block
@@ -509,15 +506,19 @@ i(238810);	-- Mana-Blessed Fin
 i(170031);	-- Moldy Tome
 i(168795);	-- Old Boot
 i(168796);	-- Recycled Scroll
+i(168009);	-- Rotten Direbloom Petal
 i(170098);	-- Rusted Girandole Earring
 i(169145);	-- Rusted Precision Gripper
 i(170001);	-- Seized Engine
 i(169143);	-- Seized Sparksaw
 i(168791);	-- Shiny Rocks
 i(170096);	-- Sodden Highborne Painting
+i(168007);	-- Torn Direbloom Petal
 i(169135);	-- Warped Shock Absorber
 i(169998);	-- Weathered Bulwark
+i(168006);	-- Wilted Direbloom Petal
 i(170027);	-- Withering Seed
+i(168008);	-- Young Direbloom Petal
 
 -----------------
 -- PATCH 8.2.5 --
@@ -2623,3 +2624,7 @@ i(238841);	-- Void-Seeping Eyeball
 i(238865);	-- Void-Warped Hoof
 i(245668);	-- Warglaive of the Subdued Tracker
 i(243145);	-- Well-Preserved Wrappings
+
+------------------
+-- PATCH 12.0.0 --
+------------------

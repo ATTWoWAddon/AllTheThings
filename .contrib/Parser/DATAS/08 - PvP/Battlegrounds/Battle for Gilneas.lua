@@ -27,6 +27,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(5245, {	-- Battle for Gilneas Victory
 					["rank"] = 1,
+					["groups"] = { i(256896, {["timeline"] = { ADDED_12_0_0 }}),},	-- Smoke Lamppost (DECOR!)
 				}),
 				ach(5246, {	-- Battle for Gilneas Veteran
 					["rank"] = 100,

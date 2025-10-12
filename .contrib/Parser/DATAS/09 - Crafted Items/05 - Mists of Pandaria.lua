@@ -589,7 +589,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			})),
 			i(74250),	-- Mysterious Essence
 			i(74248),	-- Sha Crystal
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(105718, {["timeline"] = {ADDED_5_4_0}})),	-- Sha Crystal Fragment
+			applyclassicphase(MOP_PHASE_LANDFALL, i(105718, {["timeline"] = {ADDED_5_4_0}})),	-- Sha Crystal Fragment
 			i(74252),	-- Small Ethereal Shard
 			i(74249),	-- Spirit Dust
 		}),

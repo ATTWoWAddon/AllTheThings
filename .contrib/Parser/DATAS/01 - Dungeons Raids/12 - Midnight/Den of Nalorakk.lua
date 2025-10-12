@@ -1,10 +1,11 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local DEN_OF_NALORAKK = 16368;
 --[[
 ------ Encounter Constants ------
-local bossConstant = XXXX;
+local HOARDMONGER = 2776;
+local SENTINEL = 2777;
+local NALORAKK = 2778;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
@@ -17,18 +18,32 @@ local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
-	inst(XXXX, {	-- NAME
+	inst(1311, {	-- Den of Nalorakk
 		["coord"] = { X, Y, MAP },
-		["timeline"] = { },
-		["maps"] = {},
+		["timeline"] = { ADDED_12_0_0_LAUNCH },
+		["maps"] = {
+			2514,	-- 
+			2513,	-- 
+		},
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
-				BossOnly(bossConstant, {
+				BossOnly(HOARDMONGER, {
+				}),
+				BossOnly(SENTINEL, {
+				}),
+				BossOnly(NALORAKK, {
+					ach(),	-- 
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(NALORAKK, {
+					ach(),	-- 
+				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
+				BossOnly(NALORAKK, {
+					ach(),	-- 
+				}),
 			}),
 		},
 	})

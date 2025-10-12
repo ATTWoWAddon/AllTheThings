@@ -154,27 +154,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42298, {	-- Hidden Potential of the Battlelord
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Forge of Odyn (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Forge of Odyn (DECOR!)
 					}),
 					ach(60973, {	-- Legendary Research of the Valarjar
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Saga of the Valarjar (DECOR!)
 					}),
 					ach(60992, {	-- So Many Missions for Skyhold
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Skyhold War Table (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Skyhold War Table (DECOR!)
 					}),
 					ach(42282, {	-- The Battlelord's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Valarjar Shield Wall (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Valarjar Shield Wall (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {
@@ -330,10 +322,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 96469 },	-- Odyn
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["groups"] = {
-								i(128908, {	-- Warswords of the Valarjar [Main Hand]
-									["ItemAppearanceModifierID"] = 9,
+								o(248832, {	-- Warswords of Valor
+									["coord"] = { 43.1, 53.6, 694 },	-- Helmouth Shallows
 									["groups"] = {
-										artifact(296),	-- Warswords of the Valarjar
+										i(128908, {	-- Warswords of the Valarjar [Main Hand]
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = {
+												artifact(296),	-- Warswords of the Valarjar
+											},
+										}),
 									},
 								}),
 								i(134553, {	-- Warswords of the Valarjar [Off Hand]

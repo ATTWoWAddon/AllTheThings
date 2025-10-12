@@ -36,6 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							crit(40868, {	-- The Strike on Boralus
 								["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
 							}),
+							i(241062, {["timeline"] = { ADDED_12_0_0 }}),	-- Lordaeron Rectangular Rug (DECOR!)
 						},
 					}),
 					ach(13466, {	-- Tides of Vengeance

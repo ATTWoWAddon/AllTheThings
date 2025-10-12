@@ -7,7 +7,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(INFINITE_BAZAAR, {
 		["coord"] = { 45.7, 68.1, BROKEN_ISLES },
 		["groups"] = {
-			n(241145, {	-- Aeonicus <Raid Finder Apparel>
+			--[[n(241145, {	-- Aeonicus <Raid Finder Apparel>
 				["coord"] = { 45.4, 68.0, BROKEN_ISLES },
 				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "c", BRONZE, 20000 }},
@@ -96,22 +96,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						------ Locked behind: Argus Eternal ------
 						iensemble(241447),	-- Ensemble: Juggernaut Battlegear
 					}),
-					------ Trial of Valor: Ensambles of the Chosen Dead ------
-					------ Locked behind: Rise of the Nightfallen ------
-					filter(CLOTH, {
-						iensemble(241607),	-- Ensemble: Regalia of the Chosen Dead
-					}),
-					filter(LEATHER, {
-						iensemble(241604),	-- Ensemble: Garb of the Chosen Dead
-					}),
-					filter(MAIL, {
-						iensemble(241601),	-- Ensemble: Chains of the Chosen Dead
-					}),
-					filter(PLATE, {
-						iensemble(241597),	-- Ensemble: Funerary Plate of the Chosen Dead
-					}),
 				}),
-			}),
+			}),--]]
 			n(241184, {	-- Agos the Silent <Lost and Found Apparel>
 				["coord"] = { 45.5, 67.7, BROKEN_ISLES },
 				["groups"] = bubbleDownFiltered({
@@ -172,81 +158,85 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				["description"] = "You can buy additional copies of Housing Decor after receiving the first copy from the respective Achievement.",
 				["coord"] = { 45.9, 67.8, BROKEN_ISLES },
 				["groups"] = sharedData({
-					["timeline"] = { ADDED_11_2_7 },
+					["timeline"] = { ADDED_12_0_0 },	-- EXO NOTE: If wrong, change back to 11_2_7. All Decor so far has been datamined for 12.0.0. Same for the items added under respective Achievements.
 				}, {
-					-- EXO NOTE: Add These to respective Achievements as rewards when item numbers are datamined/released to the public.
 					i(XXXXXX, {	-- Altar of the Corrupted Flames (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Broken Isles World Quests|r.",
+						--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+						["sourceAchievement"] = 42624,	-- Broken Isles World Quests I
 						["cost"] = {{ "c", BRONZE, 30000 }},
 					}),
 					i(XXXXXX, {	-- Corruption Pit (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Legion Remix Raids|r.",
+						["sourceAchievement"] = 42321,	-- Legion Remix Raids
 						["cost"] = {{ "c", BRONZE, 30000 }},
 					}),
 					i(XXXXXX, {	-- Demonic Storage Chest (DECOR!)
-						["description"] = "Achievement: |cFFFFD700The Armies of Legionfall|r.",
+						["sourceAchievement"] = 42655,	-- The Armies of Legionfall
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Eredar Lord’s Fel Torch (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Argussian Reach|r.",
+						["sourceAchievement"] = 42627,	-- Argussian Reach
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Fel Fountain (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Keystone Master|r.",
+						["sourceAchievement"] = 42689,	-- Timeworn Keystone Master
 						["cost"] = {{ "c", BRONZE, 30000 }},
 					}),
 					i(XXXXXX, {	-- Hanging Felsteel Cage (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Highmountain Tribe|r.",
+						["sourceAchievement"] = 42547,	-- Highmountain Tribe
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Hanging Felsteel Chain (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Defending the Broken Isles|r.",
+						--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+						["sourceAchievement"] = 42673,	-- Defending the Broken Isles I
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Large Legion Candle (DECOR!)
-						["description"] = "Achievement: |cFFFFD700The Nightfallen|r.",
+						["sourceAchievement"] = 42628,	-- The Nightfallen
 						["cost"] = {{ "c", BRONZE, 2500 }},
 					}),
 					i(XXXXXX, {	-- Legion’s Fel Brazier (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Dreamweavers|r.",
+						["sourceAchievement"] = 42619,	-- Dreamweavers
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Legion’s Fel Torch (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Power of the Obelisks|r.",
+						--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+						["sourceAchievement"] = 61061,	-- Power of the Obelisks I
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Legion’s Holo-Communicator (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Broken Isles Dungeoneer|r.",
+						["sourceAchievement"] = 42692,	-- Broken Isles Dungeoneer
 						["cost"] = {{ "c", BRONZE, 30000 }},
 					}),
 					i(XXXXXX, {	-- Legion Torture Rack (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Heroic Broken Isles World Quests|r.",
+						--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+						["sourceAchievement"] = 61057,	-- Heroic Broken Isles World Quests I
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
 					i(XXXXXX, {	-- Sentinel’s Moonwing Gaze (DECOR!)
-						["description"] = "Achievement: |cFFFFD700The Wardens|r.",
+						["sourceAchievement"] = 61218,	-- The Wardens
 						["cost"] = {{ "c", BRONZE, 30000 }},
 					}),
 					i(XXXXXX, {	-- Small Legion Candle (DECOR!)
-						["description"] = "Achievement: |cFFFFD700The Nightfallen|r.",
+						["sourceAchievement"] = 42628,	-- The Nightfallen
 						["cost"] = {{ "c", BRONZE, 2500 }},
 					}),
 					i(XXXXXX, {	-- Tome of the Corrupt (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Court of Farondis|r.",
+						["sourceAchievement"] = 42318,	-- Court of Farondis
 						["cost"] = {{ "c", BRONZE, 10000 }},
 					}),
 					i(XXXXXX, {	-- Vertical Felsteel Chain (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Defending the Broken Isles|r.",
+						--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+						["sourceAchievement"] = 42673,	-- Defending the Broken Isles I
 						["cost"] = {{ "c", BRONZE, 5000 }},
 					}),
 					i(XXXXXX, {	-- Vrykul Lord’s Throne (DECOR!)
-						["description"] = "Achievement: |cFFFFD700Valajar|r.",
+						["sourceAchievement"] = 42658,	-- Valarjar
 						["cost"] = {{ "c", BRONZE, 20000 }},
 					}),
 				}),
 			}),
 			--]]
-			n(241143, {	-- Durus <Normal Raid Apparel>
+			--[[n(241143, {	-- Durus <Normal Raid Apparel>
 				["coord"] = { 45.4, 67.9, BROKEN_ISLES },
 				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "c", BRONZE, 20000 }},
@@ -336,7 +326,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						iensemble(241448),	-- Ensemble: Juggernaut Battlegear
 					}),
 				}),
-			}),
+			}),--]]
 			n(246030, {	-- Freddie Threads <Discount Cloak Dealer>
 				["coord"] = { 45.4, 67.8, BROKEN_ISLES },
 				["groups"] = {
@@ -1055,9 +1045,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							},
 						}),
 					}),
+					------ Trial of Valor: Ensambles of the Chosen Dead ------
+					filter(CLOTH, {
+						iensemble(241607),	-- Ensemble: Regalia of the Chosen Dead
+					}),
+					filter(LEATHER, {
+						iensemble(241604),	-- Ensemble: Garb of the Chosen Dead
+					}),
+					filter(MAIL, {
+						iensemble(241601),	-- Ensemble: Chains of the Chosen Dead
+					}),
+					filter(PLATE, {
+						iensemble(241597),	-- Ensemble: Funerary Plate of the Chosen Dead
+					}),
 				}),
 			}),
-			n(246028, {	-- Sacerdormu <Heroic Raid Apparel>
+			--[[n(246028, {	-- Sacerdormu <Heroic Raid Apparel>
 				["coord"] = { 45.5, 67.9, BROKEN_ISLES },
 				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "c", BRONZE, 20000 }},
@@ -1148,7 +1151,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						iensemble(241446),	-- Ensemble: Juggernaut Battlegear
 					}),
 				}),
-			}),
+			}),--]]
 			n(246026, {	-- Unicus <Exclusive Ensembles>
 				["coord"] = { 45.5, 68.4, BROKEN_ISLES },
 				["groups"] = {

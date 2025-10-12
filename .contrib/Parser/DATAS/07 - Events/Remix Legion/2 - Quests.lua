@@ -14,11 +14,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			},
 			["isDaily"] = true,
 		}, {
-			n(REWARDS, {
-				i(251821),	-- Cache of Infinite Power
-				i(239224),	-- Cache of Infinite Treasure
-				i(254579),	-- Epoch Resonance
-			}),
 			q(91445),	-- Infinite Research: Advanced Combat Studies, Comprehensive
 			q(91447),	-- Infinite Research: Advanced Combat Studies, Demonology
 			q(91444),	-- Infinite Research: Advanced Combat Studies, Elite
@@ -129,6 +124,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			q(89538),	-- Infinite Research: Vault of the Wardens, Normal
 			q(90096),	-- Infinite Research: Worldly Deeds
 		})),
+		n(REWARDS, {
+			-- Exo note: Moved out of the quests so that the items do not show "... and 100 other sources"
+			i(251821),	-- Cache of Infinite Power
+			i(239224),	-- Cache of Infinite Treasure
+			i(254579),	-- Epoch Resonance
+		}),
 	}),
 	n(QUESTS, {
 		n(REWARDS, {
@@ -308,9 +309,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				{ 51.2, 48.2, LEGION_DALARAN },
 				{ 72.4, 46.0, LEGION_DALARAN },
 			},
-			["groups"] = {
-				-- Spell: 1248972 - Clean Streets of Dalaran
-			},
 		}),
 		------ Stay awhile and listen ------
 		--hqt(???, {	-- Stay awhile and listen: Eternus
@@ -332,14 +330,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["qg"] = 241142,	-- Momentus
 			["coord"] = { 45.8, 68.0, BROKEN_ISLES },
 			["groups"] = {
-				-- Spell: 1251776 - Heap of Bronze
-				i(242617, {	-- Curious Simulacrum
+				i(242617, {	-- Curious Simulacrum (QI!)
 					i(247808),	-- Bronze Simulacrum (QS!)
 				}),
 				-- Exo Note: Simulacrum is obtained during the regular Order Hall quest chain for the Artifact Weapon that you have already selected and obtained during the quest 'Something Borrowed'.
-				-- eg. If, as a Paladin, you took Ashbringer, instead of Ashbringer you will receive Simulacrum during the quest chain for the weapon.
-				-- Instead of editing (and disturbing) over 30 Order Hall quests, I placed it here. If you think there is a better place for it, please move it.
-				-- Upon inspecting, Curious turns into Bronze Simulacrum and gives you a quest. This is observed on a first playthrough with a DH. Maybe something is different on other Classes.
+				-- eg. If a Paladin, takes Ashbringer from 'Something Borrowed', instead of Ashbringer he will receive a Curious Simulacrum during the regular Class Quest for the weapon.
 			},
 		}),
 		q(92688, {	-- Bronze Simulacrum
@@ -349,9 +344,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["sourceQuest"] = 89417,	-- Infinite Meetings
 			["qg"] = 241748,	-- Eternus
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
-			["groups"] = {
-				-- Spell: 1252745 - Infinite Knowledge
-			},
 		}),
 		q(90995, {	-- The Future of The Fel Hammer
 			["sourceQuest"] = 89418,	-- A Fixed Point in Time
@@ -403,7 +395,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			["sourceQuest"] = 90755,	-- Time Flies
 		}),
 		q(91639, {	-- Embrace Your Own Legend
-			["sourceQuest"] = 90755,	-- Time Flies
 			["qg"] = 241748,	-- Eternus
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
 		}),
@@ -436,7 +427,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			--["sourceQuest"] = ??,
 		}),
 		q(92855, {	-- Make Haste, Not Waste
-			["description"] = "Grants a random ring, necklace, or trinket.",
+			["description"] = "Grants a random piece of jewelry.",
 			["qg"] = 241189,	-- Lidamorrutu
 			["coord"] = { 45.9, 68.0, BROKEN_ISLES },
 			["isDaily"] = true,
@@ -512,6 +503,30 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		q(91722, {	-- Shape a New Legend
 			["qg"] = 241748,	-- Eternus
 			["coord"] = { 45.7, 68.5, BROKEN_ISLES },
+			["lvl"] = 80,
+		}),
+		-- Infinite Epilogues
+		q(91522, {	-- Order from Chaos
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+		}),
+		q(91728, {	-- Suramar Liberated
+			["sourceQuest"] = 91522,	-- Order from Chaos
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+		}),
+		q(91729, {	-- Armies Gathered
+			["sourceQuest"] = 91728,	-- Suramar Liberated
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
+			["lvl"] = 80,
+		}),
+		q(91730, {	-- Azeroth Saved
+			["sourceQuest"] = 91729,	-- Armies Gathered
+			["qg"] = 243853,	-- Moratari
+			["coord"] = { 45.6, 67.7, BROKEN_ISLES },
 			["lvl"] = 80,
 		}),
 	}),

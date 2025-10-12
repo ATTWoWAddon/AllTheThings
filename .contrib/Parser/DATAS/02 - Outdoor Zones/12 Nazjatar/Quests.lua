@@ -812,8 +812,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["groups"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
-				o(326727, {	-- Shipwrecked Keg
+				o_repeated({	-- Shipwrecked Keg
 					i(168629),	-- Ocean "Infused" Lager (QI!)
+					o(326727), 	-- Shipwrecked Keg
+					o(329896),	-- Shipwrecked Keg
 				}),
 			},
 		}),
@@ -826,8 +828,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["groups"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
-				o(326727, {	-- Shipwrecked Keg
+				o_repeated({	-- Shipwrecked Keg
 					i(168629),	-- Ocean "Infused" Lager (QI!)
+					o(326727), 	-- Shipwrecked Keg
+					o(329896),	-- Shipwrecked Keg
 				}),
 			},
 		}),
@@ -920,14 +924,17 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		}),
 		q(57247,{	-- Fathom Ray Wing [A]
 			["providers"] = {
-				{ "i", 170176 },	-- Fathom Ray Wing
 				{ "n", 150202 },	-- Hunter Akana
+				{ "i", 170176 },	-- Fathom Ray Wing
 			},
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
 		}),
 		q(56972,{	-- Fathom Ray Wing [H]
-			["provider"] = { "i", 170176 },	-- Fathom Ray Wing
+			["providers"] = {
+				{ "n", 149904 },	-- Neri Sharpfin
+				{ "i", 170176 },	-- Fathom Ray Wing
+			},
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
 		}),
@@ -1301,7 +1308,17 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
-				i(168300),	-- Dani's Treasure (QI!)
+				o(326096, {	-- Mysterious Mollusc
+					["coords"] = {
+						{ 25.9, 31.4, NAZJATAR },
+						{ 26.3, 33.5, NAZJATAR },
+						{ 27.8, 33.5, NAZJATAR },
+						{ 28.7, 29.3, NAZJATAR },
+						{ 28.7, 33.2, NAZJATAR },
+						{ 29.5, 31.8, NAZJATAR },
+					},
+					["groups"] = { i(168300) },	-- Dani's Treasure (QI!)
+				}),
 			},
 		}),
 		q(54949, {	-- More Mouths To Feed
@@ -2093,7 +2110,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
-				i(167538),	-- Unmarked Seashell (QI!)
+				o_repeated({	-- Shiny Seashell
+					i(167538),	-- Unmarked Seashell (QI!)
+					o(326066),	-- Shiny Seashell
+					o(326070),	-- Shiny Seashell
+					o(326071),	-- Shiny Seashell
+				}),
 			},
 		}),
 		q(55565, {	-- Shoring Up Mana Reserves
@@ -2507,7 +2529,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
-				i(168421),	-- Fathom Ray Egg (QI!)
+				o(326239, {	-- Fathom Egg
+					i(168421),	-- Fathom Ray Egg (QI!)
+				}),
 				i(168425),	-- Swim Jet (QI!)
 			},
 		}),

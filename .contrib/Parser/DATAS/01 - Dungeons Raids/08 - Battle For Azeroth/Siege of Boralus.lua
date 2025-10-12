@@ -127,24 +127,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			-- Only during TWW Season 1
 			-- #if AFTER 11.0.2
 			-- #if BEFORE 11.1.0
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["groups"] = {
-					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
-						["groups"] = {
-							i(159310),	-- Circlet of the Enveloping Leviathan
-							i(159252),	-- Grasping Crown of the Deep
-							i(159376),	-- Hook-Barbed Spaulders
-							i(159431),	-- Kraken Shell Pauldrons
-							i(159314),	-- Cephalohide Jacket
-							i(159416),	-- Harpooner's Plate Cuirass
-							i(159362),	-- Tri-Heart Chestguard
-						},
-					}),
-				},
-			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["groups"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
@@ -208,16 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(159651),	-- Coral-Edged Crescent
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
-						},
-					}),
-				},
-			}),
-			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["groups"] = {
-					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
-						["groups"] = {
+							
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders
@@ -250,8 +225,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			-- Outside of TWW Season 1
 			-- #else
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["groups"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is was Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
@@ -325,16 +300,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(159362),	-- Tri-Heart Chestguard
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
-						},
-					}),
-				},
-			}),
-			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
-				["groups"] = {
-					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
-						["crs"] = { 128652 },-- Viq'Goth
-						["groups"] = {
 							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Circlet of the Enveloping Leviathan
 							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Grasping Crown of the Deep
 							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART}}),	-- Hook-Barbed Spaulders

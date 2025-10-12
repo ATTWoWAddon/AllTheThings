@@ -4,20 +4,6 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(WORLD_BOSSES, {
 		n(ACHIEVEMENTS, {
-			ach(61080, {	-- Broken Shore World Bosses
-				crit(108447, {	-- Apocron
-					["_npcs"] = { 121124 },
-				}),
-				crit(108446, {	-- Brutallus
-					["_npcs"] = { 117239 },
-				}),
-				crit(108445, {	-- Malificus
-					["_npcs"] = { 117303 },
-				}),
-				crit(108448, {	-- Si'vash
-					["_npcs"] = { 117470 },
-				}),
-			}),
 			ach(61076, {	-- Broken Isles World Bosses
 				crit(108442, {	-- Ana-Mouz
 					["_npcs"] = { 109943 },
@@ -48,6 +34,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				}),
 				crit(108435, {	-- Withered J'im
 					["_npcs"] = { 112350 },
+				}),
+			}),
+			ach(61080, {	-- Broken Shore World Bosses
+				crit(108447, {	-- Apocron
+					["_npcs"] = { 121124 },
+				}),
+				crit(108446, {	-- Brutallus
+					["_npcs"] = { 117239 },
+				}),
+				crit(108445, {	-- Malificus
+					["_npcs"] = { 117303 },
+				}),
+				crit(108448, {	-- Si'vash
+					["_npcs"] = { 117470 },
 				}),
 			}),
 		}),
@@ -144,7 +144,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		e(1783, {	-- Na'zak the Fiend
 			["coord"] = { 36.0, 66.4, 685 },	-- Shattered Locus (Floor #2)
 			["creatureID"] = 110321,	-- Na'zak the Fiend
-			["questID"] = 43513,	-- Na'zak the Fiend(WQ)
+			["questID"] = 43513,	-- Na'zak the Fiend (WQ)
 			["maps"] = { SURAMAR },
 			["isWeekly"] = true,
 			["isRaid"] = true,

@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42295, {	-- Hidden Potential of the Shadowblade
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Crucible of the Uncrowned (DECOR!)
 					}),
 					ach(60970, {	-- Legendary Research of the Uncrowned
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Stolen Copy of the Blood Ledger (DECOR!)
 					}),
 					ach(60989, {	-- So Many Missions for the Hall of Shadows
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Uncrowned Planning Table (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Uncrowned Planning Table (DECOR!)
 					}),
 					ach(42279, {	-- The Shadowblade's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Uncrowned Market Stall (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {
@@ -421,9 +413,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43829,	-- Spy vs. Spy
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
-						["groups"] = {
-							i(140395),	-- Stylish Spy Glasses (QI!)
-						},
+						["groups"] = { i(140395) },	-- Stylish Spy Glasses (QI!)
 					}),
 					q(44116, {	-- Mystery at Citrine Bay
 						["sourceQuest"] = 44041,	-- The Bloody Truth

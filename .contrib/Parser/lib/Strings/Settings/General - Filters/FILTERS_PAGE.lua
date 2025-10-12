@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Фильтры",
 		-- TODO: ko = "",
 		cn = "过滤器",
-		-- TODO: tw = "",
+		tw = "篩選器",
 	},
 })

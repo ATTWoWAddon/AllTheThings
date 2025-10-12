@@ -12,6 +12,7 @@ root(ROOTS.Zones, {
 				ach(10669),	-- Explore Suramar
 				ach(11124, {	-- Good Suramaritan
 					["sym"] = {{ "achievement_criteria" }},
+					--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- "Night on the Jeweled Estate" Painting (DECOR!)
 				}),
 				ach(11340, {	-- Insurrection
 					["sym"] = {{ "achievement_criteria" }},

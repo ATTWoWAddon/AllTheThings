@@ -69,6 +69,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				-- #if BEFORE 6.0.2
+				n(RARES, {
+					applyclassicphase(MOP_PHASE_LANDFALL, n(70126, {	-- Willy Wilder
+						["coord"] = { 63.8, 75.6, THE_VEILED_STAIR },
+						["timeline"] = { ADDED_5_2_0 },	-- CRIEVE NOTE: Added in 5.2, but available in 5.5.1 (Landfall) for MOP Classic
+						["groups"] = {
+							i(93227, {	-- Blood-Soaked Invitation
+								["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+							}),
+						},
+					})),
+				}),
+				-- #endif
 				n(TREASURES, {
 					o(214325, {	-- Forgotten Lockbox
 						["questID"] = 31867, -- Forgotten Lockbox

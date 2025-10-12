@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = ": Успешно сканировано ",
 		-- TODO: ko = "",
 		cn = "：成功扫描 ",
-		tw = "：成功掃描 ",
+		tw = "：掃描成功 ",
 	},
 })

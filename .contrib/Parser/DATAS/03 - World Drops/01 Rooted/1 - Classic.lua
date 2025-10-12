@@ -4164,11 +4164,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				3820,	-- Wildthorn Venomspitter
 			},
 			-- #if AFTER BFA
-			["description"] = "Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			-- #elseif AFTER 4.0.3
-			["description"] = "Drops from spiders in lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Drops from spiders in lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			-- #else
-			["description"] = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			-- #endif
 			["maps"] = { ASHENVALE, },
 		}),
@@ -5718,7 +5718,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(7191),	-- Fused Wiring
 		i(19441, {	-- Huge Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other bests, so kill the hound or whatever if you cannot find scorpids and spiders.",
+			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other beasts, so kill the hound or whatever if you cannot find scorpids and spiders.",
 			["maps"] = {
 				BURNING_STEPPES,
 				SILITHUS,
@@ -5776,13 +5776,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(1288, {	-- Large Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
 				ASHENVALE,
 				DUSKWOOD,
 			},
 			-- #elseif AFTER BFA
-			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
 				ASHENVALE,
 				DUSKWOOD,
@@ -5961,7 +5961,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		i(1475, {	-- Small Venom Sac
 			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
 			["maps"] = {
 				LOCH_MODAN,
 				STONETALON_MOUNTAINS,

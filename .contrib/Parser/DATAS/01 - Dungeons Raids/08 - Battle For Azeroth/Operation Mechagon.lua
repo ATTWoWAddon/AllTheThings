@@ -657,7 +657,9 @@ local INSTANCE_GROUPS = {
 		}),
 		n(MECHAGON_WORKSHOP, {
 			BossOnly(TUSSLETONKS, {
-				ach(13723),	-- M.C., Hammered
+				ach(13723, {	-- M.C., Hammered
+					i(246479, {["timeline"] = { ADDED_12_0_0 }}),	-- Gnomish T.O.O.L.B.O.X. (DECOR!)
+				}),
 			}),
 			BossOnly(KUJO, {
 			}),

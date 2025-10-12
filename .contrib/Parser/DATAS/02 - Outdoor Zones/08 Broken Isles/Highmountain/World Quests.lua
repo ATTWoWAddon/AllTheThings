@@ -258,8 +258,30 @@ root(ROOTS.Zones, {
 					["requireSkill"] = MINING,
 				}),
 				q(41145),	-- Water of Life
-				q(41321),	-- Weapons of Deathwing
-				q(41414),	-- Weapons of Deathwing
+				q(41321, {	-- Weapons of Deathwing
+					o(247695, {	-- Elementium Slats
+						["coords"] = {
+							{ 49.8, 78.3, HIGHMOUNTAIN },
+							{ 50.9, 74.4, HIGHMOUNTAIN },
+							{ 51.9, 76.1, HIGHMOUNTAIN },
+							{ 52.3, 74.1, HIGHMOUNTAIN },
+							{ 52.4, 75.3, HIGHMOUNTAIN },
+						},
+						["groups"] = { i(134837) },	-- Impure Elementium Ore (QI!)
+					}),
+				}),
+				q(41414, {	-- Weapons of Deathwing
+						o(247695, {	-- Elementium Slats
+						["coords"] = {
+							{ 49.8, 78.3, HIGHMOUNTAIN },
+							{ 50.9, 74.4, HIGHMOUNTAIN },
+							{ 51.9, 76.1, HIGHMOUNTAIN },
+							{ 52.3, 74.1, HIGHMOUNTAIN },
+							{ 52.4, 75.3, HIGHMOUNTAIN },
+						},
+						["groups"] = { i(134837) },	-- Impure Elementium Ore (QI!)
+					}),
+				}),
 				q(41252, {	-- Wild Northern Barracuda
 					["requireSkill"] = FISHING,
 				}),

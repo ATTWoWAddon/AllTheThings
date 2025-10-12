@@ -528,6 +528,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 							["groups"] = { i(246492) },	-- Soulgorged Augment Rune
 						}),
 					}, {	-- RENOWN 10 --
+						q(91482, { ["timeline"] = { ADDED_11_2_0 } }),	-- Speed Siphoner II
+						q(91478, { ["timeline"] = { ADDED_11_2_0 } }),	-- Behind Enemy Lines III
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --

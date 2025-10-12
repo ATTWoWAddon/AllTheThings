@@ -4,7 +4,10 @@
 local MAGISTERS_TERRACE = 15829;
 --[[
 ------ Encounter Constants ------
-local bossConstant = XXXX;
+local CUSTOS = 2659;
+local GEMELIUS = 2660;
+local SERANEL = 2661;
+local DEGENTRIUS = 2662;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
@@ -17,18 +20,31 @@ local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
-	inst(XXXX, {	-- NAME
-		["coord"] = { X, Y, MAP },
-		["timeline"] = { },
+	inst(1300, {	-- Magister's Terrace
+		["coord"] = { 63.0, 15.1, ISLE_OF_QUELDANAS_MID },
+		["timeline"] = { ADDED_12_0_0_LAUNCH },
 		["maps"] = {},
 		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
-				BossOnly(bossConstant, {
+				BossOnly(CUSTOS, {
+				}),
+				BossOnly(GEMELIUS, {
+				}),
+				BossOnly(SERANEL, {
+				}),
+				BossOnly(DEGENTRIUS, {
+					ach(61212),	-- Magisters' Terrace
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
+				BossOnly(DEGENTRIUS, {
+					ach(61213),	-- Heroic: Magisters' Terrace
+				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
+				BossOnly(DEGENTRIUS, {
+					ach(61214),	-- Mythic: Magisters' Terrace
+				}),
 			}),
 		},
 	})

@@ -12,6 +12,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				["timeline"] = {
 					ADDED_7_0_3,
 					REMOVED_8_0_1,
+					ADDED_11_2_5,
+					REMOVED_LEGION_REMIX_END,
 				},
 				["groups"] = {
 					crit(32353),	-- Eye of Azshara

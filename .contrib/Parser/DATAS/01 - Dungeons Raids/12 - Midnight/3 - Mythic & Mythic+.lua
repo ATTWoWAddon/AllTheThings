@@ -11,10 +11,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeline"] = {
 				title(655),	-- %s the Umbral
 			}),
 			ach(61256, {	-- Midnight Keystone Master: Season One
-			--	i(226357),	-- Diamond Mechsuit (MOUNT!)
+				i(262620),	-- Calamitous Carrion (MOUNT!)
 			}),
 			ach(61257),	-- Midnight Keystone Hero: Season One
 			ach(61258, {	-- Midnight Keystone Legend: Season One
+				i(262621),	-- Convalescent Carrion (MOUNT!)
 			}),
 			ach(61259, {	-- Umbral Hero: Midnight Season One
 				["timeline"] = { ADDED_12_0_0_SEASONSTART, REMOVED_12_1_0 },

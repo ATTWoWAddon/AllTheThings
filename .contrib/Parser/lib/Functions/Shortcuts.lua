@@ -1017,7 +1017,11 @@ expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	-- TEMP until timeline use within bubbleDown is removed
 	if t.timeline then
 		-- print("WARN: Removing timeline from expansion header",id,unpack(t.timeline))
-		t.timeline = nil
+		t.timeline = nil;
+	end
+	if t.forcetimeline then
+		t.timeline = t.forcetimeline;
+		t.forcetimeline = nil;
 	end
 	if t and not t.timeline then
 		t._defaulttimeline = { "added " .. math.floor(id) .. ".0" };

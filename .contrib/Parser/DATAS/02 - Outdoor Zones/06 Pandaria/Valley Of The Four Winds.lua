@@ -1310,6 +1310,11 @@ root(ROOTS.Zones, {
 					o(214340, {	-- Boat-Building Instructions
 						["questID"] = 31869,
 						["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
+						-- #if ANYCLASSIC
+						["description"] = "While it exists in the game, it currently cannot be looted as of the Landfall patch (5.5.1). Please fix! :(",
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_5_1 },
+						["isBounty"] = true,
+						-- #endif
 						["groups"] = {
 							i(87524),	-- Boat-Building Instructions
 						},

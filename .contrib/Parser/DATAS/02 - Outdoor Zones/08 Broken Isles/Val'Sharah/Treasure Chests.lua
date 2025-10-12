@@ -7,9 +7,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			o(243323, {	-- Balance Stone
 				i(123869),	-- Relic of Elune
 			}),
-			o(256790, {	-- Elven Treasure Chest
-					["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah."
-				}),
+			o_repeated({	-- Elven Treasure Chest
+				["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah.",
+				["groups"] = {
+					o(256789),	-- Elven Treasure Chest
+					o(256790),	-- Elven Treasure Chest
+				},
+			}),
 			o(243321, {	-- Feral Stone
 				i(123868),	-- Relic of Shakama
 			}),
@@ -19,15 +23,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			o(242668, {	-- Glimmering Treasure Chest
 				["questID"] = 39086,
-				["coord"] = { 41.1, 42.7, VALSHARAH },
+				["coord"] = { 51.9, 51.6, 642 },	-- Darkpens
 			}),
 			o(240655, {	-- Glimmering Treasure Chest
 				["questID"] = 38390,
-				["coord"] = { 54.0, 34.9, VALSHARAH },
+				["coord"] = { 52.4, 51.5, 642 },	-- Darkpens
 			}),
 			o(240519, {	-- Small Treasure Chest
 				["questID"] = 38893,
-				["coord"] = { 60.5, 82.1, VALSHARAH },
+				["coord"] = { 46.6, 86.3, VALSHARAH },
 				["description"] = "In |cFFFFD700The Undergorge|r cave.",
 			}),
 			o(254127, {	-- Small Treasure Chest
@@ -61,6 +65,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			o(242328, {	-- Small Treasure Chest
 				["questID"] = 38886,
 				["coord"] = { 49.0, 86.1, VALSHARAH },
+			}),
+			o(242346, {	-- Small Treasure Chest
+				["coord"] = { 60.5, 82.2, VALSHARAH },
 			}),
 			o(240653, {	-- Small Treasure Chest
 				["questID"] = 38388,

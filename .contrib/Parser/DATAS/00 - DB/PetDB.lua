@@ -4435,7 +4435,7 @@ i(246694, 4859);	-- Zo'ya
 --- UNSORTED ---
 i(0, 4824);	-- Baby Karesh Fox - Orange
 i(257518, 4908);	-- Lil' Ashlee
-i(246342, 4855);	-- Mustyfur Fel Snooter
+
 i(246723, 4860);	-- Unfazed Diver
 i(0, 4837);	-- Worm, Cosmic - Critter (Red)
 
@@ -4445,8 +4445,10 @@ i(0, 4837);	-- Worm, Cosmic - Critter (Red)
 i(246339, 4854);	-- Duskytooth Fel Snooter
 i(252301, 4901);	-- Fledgeling Warden's Companion
 i(239705, 4802);	-- Morsel
+i(246342, 4855);	-- Mustyfur Fel Snooter
 i(129108, 1751);	-- Son of Goredome
 i(239699, 4801);	-- Tidbit
+
 --- UNSORTED ---
 i(252200, 4900);	-- Bundled-up Bob
 i(252199, 4899);	-- Festive Eve

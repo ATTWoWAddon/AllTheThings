@@ -2992,7 +2992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ELWYNN_FOREST },
-					["races"] = { HUMAN, KULTIRAN, VOIDELF },
+					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(6285, {	-- Return to Lewis
 					-- #if AFTER 4.0.3

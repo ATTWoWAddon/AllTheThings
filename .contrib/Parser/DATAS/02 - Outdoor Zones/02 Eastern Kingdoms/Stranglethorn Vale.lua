@@ -136,7 +136,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				})),
 				ach(781),	-- Explore Stranglethorn Vale
-				ach(940),	-- The Green Hills of Stranglethorn
+				ach(940, {	-- The Green Hills of Stranglethorn
+					i(248808, {["timeline"] = { ADDED_12_0_0 }}),	-- Nesingwary Elk Trophy (DECOR!)
+				}),
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",

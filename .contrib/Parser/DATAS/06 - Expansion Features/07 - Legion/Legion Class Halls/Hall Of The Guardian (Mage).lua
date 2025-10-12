@@ -28,27 +28,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42291, {	-- Hidden Potential of the Archmage
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Conjured Altar of the Guardian (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Conjured Altar of the Guardian (DECOR!)
 					}),
 					ach(60966, {	-- Legendary Research of the Tirisgarde
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Conjured Archive of the Tirisgarde (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Conjured Archive of the Tirisgarde (DECOR!)
 					}),
 					ach(60985, {	-- So Many Missions for the Hall of the Guardian
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							i(250131, {["timeline"] = { ADDED_12_0_0 }}),	-- Tirisgarde War Map (DECOR!)
-						},
+						["groups"] = { i(250131, {["timeline"] = { ADDED_12_0_0 }}),},	-- Tirisgarde War Map (DECOR!)
 					}),
 					ach(42274, {	-- The Archmage's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Tirisgarde Book Tempest (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Tirisgarde Book Tempest (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {

@@ -421,6 +421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						["groups"] = {
 							ach(60896),	-- Celestial: Gate of the Setting Sun
 							i(86799),	-- Starshatter
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86889)),	-- Taoren, the Soul Burner (Terrace)
 							i(86764),	-- Eye of the Ancient Spirit
 							i(89971),	-- Mindshard Drape
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86851)),	-- Painful Thorned Ring (HoF)

@@ -54,7 +54,7 @@ root(ROOTS.Zones, {
 					["questID"] = 42297,
 					["coord"] = { 43.4, 22.4, AZSUNA },
 				}),
-				o(253994, {	-- Seemingly Unguarded Treasure
+				o(240353, {	-- Seemingly Unguarded Treasure
 					["coord"] = { 65.1, 69.8, AZSUNA },
 					["groups"] = {
 						o(240354, {	-- Genuinely Unguarded Treasure

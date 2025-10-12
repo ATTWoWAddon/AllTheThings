@@ -10,6 +10,9 @@ root(ROOTS.Zones, {
 					["questID"] = 38763,
 					["coord"] = { 49.7, 47.3, STORMHEIM },
 				}),
+				o(241721, {	-- Glimmering Treasure Chest
+					["coord"] = { 49.7, 47.3, STORMHEIM },
+				}),
 				o(244928, {	-- Glimmering Treasure Chest
 					["questID"] = 40108,
 					["coord"] = { 68.5, 29.6, STORMHEIM },
@@ -224,7 +227,7 @@ root(ROOTS.Zones, {
 				}),
 				o(241280, {	-- Treasure Chest
 					["questID"] = 38529,
-					["coord"] = { 20.6, 41.9, 636 },
+					["coord"] = { 19.7, 39.0, 636 },	-- Stormscale Cavern
 				}),
 				o(241558, {	-- Treasure Chest
 					["questID"] = 38677,

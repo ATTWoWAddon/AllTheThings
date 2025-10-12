@@ -796,7 +796,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.3, 28.7, SHOLAZAR_BASIN },
 						["groups"] = {
 							ach(938, {	-- The Snows of Northrend
-								--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Nesingwary Shoveltusk Trophy (DECOR!)
+								i(248807, {["timeline"] = { ADDED_12_0_0 }}),	-- Nesingwary Shoveltusk Trophy (DECOR!)
 							}),
 							i(39487),	-- Dragon Slayer's Shortbow
 							i(39486),	-- Hemet's Trophy Gun

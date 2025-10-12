@@ -30,6 +30,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}},
 			["groups"] = {
 				i(235515),	-- Jani's Trashpile (MOUNT!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- MOTHER's Titanic Brazier (DECOR!)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- N'Zoth's Captured Eye (DECOR!)
 			},
 		})),
 		ach(13036),		-- A Loa of a Tale (automated)
@@ -220,7 +222,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			}),
 		})),
 		a(ach(13283)),	-- Frontline Warrior (A)
-		h(ach(13284)),	-- Frontline Warrior (H)
+		h(ach(13284, {	-- Frontline Warrior (H)
+			--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Large Forsaken War Tent (DECOR!)
+		})),
 		ach(12740, {	-- Full of Scrap!
 			["maps"] = {
 				BORALUS,

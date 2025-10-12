@@ -7,7 +7,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(42502),	-- Artifact, Remixed II
 		ach(42503),	-- Artifact, Remixed III
 		ach(42565),	-- Bringing Order to the Isles
-		ach(42624),	-- Broken Isles World Quests I
+		ach(42624, {	-- Broken Isles World Quests I
+			--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+			--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Altar of the Corrupted Flames (DECOR!)
+		}),
 		ach(42539),	-- Broken Isles World Quests II
 		ach(42570),	-- Broken Isles World Quests III
 		ach(42555),	-- Broken Isles World Quests IV
@@ -81,7 +84,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 
 		------ Heroic World Tier ------
 		ach(61174),	-- Building a Heroic Army
-		ach(61057),	-- Heroic Broken Isles World Quests I
+		ach(61057, {	-- Heroic Broken Isles World Quests I
+			--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+			--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Legion Torture Rack (DECOR!)
+		}),
 		ach(61056),	-- Heroic Broken Isles World Quests II
 		ach(61054),	-- Heroic Broken Isles World Quests III
 		ach(61070, {	-- Heroic Broken Isles World Quests IV
@@ -92,10 +98,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		ach(61053),	-- Legionslayer III
 		ach(61071),	-- Legionslayer IV
 		ach(61323),	-- Legionslayer V
-		ach(61061),	-- Power of the Obelisks I
-		ach(61060),	-- Power of the Obelisks II
-		ach(61055),	-- Power of the Obelisks III
-		ach(61072),	-- Power of the Obelisks IV
+		ach(61061, {	-- Power of the Obelisks I
+			["cr"] = 246685,	-- Timewarped Obelisk
+			--TODO: VERIFY IF THIS IS CORRECT ACHIEVEMENT
+			--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Legion’s Fel Torch (DECOR!)
+		}),
+		ach(61060, {	-- Power of the Obelisks II
+			["cr"] = 246685,	-- Timewarped Obelisk
+		}),
+		ach(61055, {	-- Power of the Obelisks III
+			["cr"] = 246685,	-- Timewarped Obelisk
+		}),
+		ach(61072, {	-- Power of the Obelisks IV
+			["cr"] = 246685,	-- Timewarped Obelisk
+		}),
 		ach(42699),	-- You Were Not Prepared!
 	}),
 })))

@@ -190,29 +190,29 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			n(ACHIEVEMENTS, {
 				ach(10818, {	-- Darkbough
 					crit(31428, {	-- Nythendra
-						["_encounter"] = { 1703, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { NYTHENDRA, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31429, {	-- Elerethe Renferal
-						["_encounter"] = { 1744, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { ELERETHE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31430, {	-- Il'gynoth, Heart of Corruption
-						["_encounter"] = { 1738, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { ILGYNOTH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10819, {	-- Tormented Guardians
 					crit(31431, {	-- Ursoc
-						["_encounter"] = { 1667, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { URSOC, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31433, {	-- Dragons of Nightmare
-						["_encounter"] = { 1704, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { DRAGONS_NIGHTMARE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(31432, {	-- Cenarius
-						["_encounter"] = { 1750, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { CENARIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(10820, {	-- Rift of Aln
 					crit(31434, {	-- Xavius
-						["_encounter"] = { 1726, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { XAVIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(42029, {	-- The Emerald Nightmare (automated)

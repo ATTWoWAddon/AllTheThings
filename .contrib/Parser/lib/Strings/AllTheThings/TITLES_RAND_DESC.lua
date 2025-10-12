@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "点击此按钮可根据你未获得的头衔随机选择一个头衔。",
-		-- TODO: tw = "",
+		tw = "點擊此按鈕即可依據你尚未取得的頭銜隨機挑選一個。",
 	},
 })

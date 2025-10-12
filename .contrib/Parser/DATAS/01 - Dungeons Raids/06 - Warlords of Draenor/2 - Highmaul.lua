@@ -160,31 +160,31 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(8986, {	-- The Walled City
 					crit(25010, {	-- Kargath Bladefist
-						["_encounter"] = { 1128, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { KARGATH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25012, {	-- The Butcher
-						["_encounter"] = { 971, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { BUTCHER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25016, {	-- Brackenspore
-						["_encounter"] = { 1196, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { BRACKENSPORE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(8987, {	-- Arcane Sanctum
 					crit(25011, {	-- Tectus
-						["_encounter"] = { 1195, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { TECTUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25014, {	-- Twin Ogron
-						["_encounter"] = { 1148, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { OGRON, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(25015, {	-- Ko'ragh
-						["_encounter"] = { 1153, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { KORAGH, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(8988, {	-- Imperator's Fall
 					crit(25018, {	-- Imperator Mar'gok
 						-- CRIEVE NOTE: If we want to keep this criteria, keep the provider so it has a proper name.
 						["provider"] = { "n", 77428 },	-- Imperator Mar'gok <Sorcerer King>
-						["_encounter"] = { 1197, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { MARGOK, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
 				ach(9416),	-- Highmaul Guild Run

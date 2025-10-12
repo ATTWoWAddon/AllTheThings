@@ -40,6 +40,8 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 		-- #elseif BEFORE MID
 		DORNOGAL,
 		LEGION_THE_UNDERBELLY,
+		-- #elseif BEFORE TLT
+		SILVERMOON_CITY_MID,
 		-- #endif
 	},
 	-- #endif

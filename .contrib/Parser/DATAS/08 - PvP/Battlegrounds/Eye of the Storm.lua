@@ -50,12 +50,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(212, {	-- Storm Capper
 					["timeline"] = { ADDED_3_0_2 },
+					--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Uncontested Battlefield Banner (DECOR!)
 				}),
 				ach(211, {	-- Storm Glory
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				ach(213, {	-- Stormtrooper
 					["timeline"] = { ADDED_3_0_2 },
+					--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Netherstorm Battlefield Flag (DECOR!)
 				}),
 				ach(587, {	-- Stormy Assassin
 					["timeline"] = { ADDED_3_0_2 },

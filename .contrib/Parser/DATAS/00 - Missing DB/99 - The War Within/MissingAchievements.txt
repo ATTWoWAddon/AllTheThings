@@ -1,13 +1,10 @@
 12.0.0.63534
-ach(41287),	-- Windrunner Spire
-ach(41288),	-- Heroic: Windrunner Spire
-ach(41291),	-- Mythic: Windrunner Spire
 ach(41293),	-- [PH] Restless Heart kills (Normal Windrunner Spire)
 ach(41294),	-- [PH] Restless Heart kills (Heroic Windrunner Spire)
 ach(41295),	-- [PH] Restless Heart kills (Mythic Windrunner Spire)
 ach(41802),	-- Eversong Woods
 ach(41803),	-- Living Amani Legend
-ach(41804),	-- Harandar
+ach(41804),	-- One Does Not Simply Walk Into Harandar
 ach(41805),	-- Arator's Journey
 ach(41806),	-- Voidstorm
 ach(41960),	-- Murder Row
@@ -48,16 +45,12 @@ ach(61212),	-- Magisters' Terrace
 ach(61213),	-- Heroic: Magisters' Terrace
 ach(61214),	-- Mythic: Magisters' Terrace
 ach(61219),	-- No Time to Paws
-ach(61221),	-- Tour of Duty: Eversong Woods
-ach(61222),	-- Tour of Duty: Zul'Aman
-ach(61223),	-- Tour of Duty: Harandar
-ach(61224),	-- Tour of Duty: Voidstorm
 ach(61346),	-- We Will, In Fact, See It Again
-ach(61366),	-- Voidspire
+ach(61366),	-- The Voidspire
 ach(61367),	-- March on Quel'Danas
-ach(61368),	-- Heroic: Voidspire
+ach(61368),	-- Heroic: The Voidspire
 ach(61369),	-- Heroic: March on Quel'Danas
-ach(61370),	-- Mythic: Voidspire
+ach(61370),	-- Mythic: The Voidspire
 ach(61371),	-- Mythic: March on Quel'Danas
 ach(61372),	-- Mythic: Imperator Averzian
 ach(61373),	-- Mythic: Vorasius
@@ -68,7 +61,7 @@ ach(61377),	-- Mythic: Crown of the Cosmos
 ach(61378),	-- Mythic: Belo'ren
 ach(61379),	-- Mythic: Midnight Falls
 ach(61380),	-- Glory of the Midnight Raider
-ach(61381),	-- Belo'ren Achievement
+ach(61381),	-- Eggsistential Crisis
 ach(61444),	-- Vicious Saddle (43)
 ach(61445),	-- Vicious Saddle (43)
 ach(61452),	-- Sojourner of Zul'Aman

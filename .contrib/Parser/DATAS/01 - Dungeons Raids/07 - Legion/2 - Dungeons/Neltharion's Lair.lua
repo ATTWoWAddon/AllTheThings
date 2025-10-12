@@ -47,9 +47,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			n(QUESTS, {
 				q(42454, {	-- The Hammer of Khaz'goroth
-					["icon"] = 1487017,
-					["sourceQuests"] = { 39781 },	-- Neltharion's Lair: Death to the Underking
+					["sourceQuest"] = 39781,	-- Neltharion's Lair: Death to the Underking
+					["provider"] = { "o", 250548 },	-- Hammer of Khaz'goroth
 					["groups"] = {
+						i(137649),	-- The Hammer of Khaz'goroth (QI!)
 						i(141007),	-- Earthguard Handwraps
 						i(141008),	-- Earthguard Grips
 						i(141009),	-- Earthguard Gloves

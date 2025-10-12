@@ -480,11 +480,13 @@ root(ROOTS.Zones, {
 						q(44480, {	-- In My Father's House
 							["sourceQuest"] = 44479,	-- Ravencrest's Legacy
 							["provider"] = { "n", 113857 },	-- Light's Heart
+							["groups"] = { i(249230, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}) },	-- Temple of Zin-Malor Scroll (QI!)
 						}),
 						q(44496, {	-- Destiny Unfulfilled
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["groups"] = {
+								i(249229, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}),	-- Black Temple Scroll (QI!)
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -497,6 +499,7 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["classes"] = { HUNTER, DEMONHUNTER },
 							["groups"] = {
+								i(249229, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}),	-- Black Temple Scroll (QI!)
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -508,6 +511,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["groups"] = {
+								i(249229, { ["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END }}),	-- Black Temple Scroll (QI!)
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate

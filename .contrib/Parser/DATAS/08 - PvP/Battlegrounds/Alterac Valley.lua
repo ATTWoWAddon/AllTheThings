@@ -148,9 +148,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(221, {	-- Alterac Grave Robber
 					["timeline"] = { ADDED_3_0_2 },
+					--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Fortified Alliance Banner (DECOR!)
 				}),
 				ach(222, {	-- Tower Defense
 					["timeline"] = { ADDED_3_0_2 },
+					--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Fortified Horde Banner (DECOR!)
 				}),
 				ach(1151, {	-- Loyal Defender (A)
 					["timeline"] = { ADDED_3_0_2 },

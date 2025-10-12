@@ -8,7 +8,6 @@ root(ROOTS.Unsorted, {
 			i(133804),	-- Faded Bag of Loot
 			i(190547),	-- Val'sharah Protector's Bracers
 			i(190676),	-- Val'sharah Protector's Gauntlets
-			i(190868),	-- Verdant Dreamscribed Scrollmantle
 			i(235903),	-- Gold Lightforged Chestguard
 			i(237750),	-- Warbreaker's Revenge
 			i(237751),	-- Val'kyrian Rebirth
@@ -19,7 +18,6 @@ root(ROOTS.Unsorted, {
 			i(237769),	-- Xenedar Gem Fragment
 			i(237770),	-- Rusting Chain of Ancient Hunger
 			i(237771),	-- Skrog Tooth
-			i(237993),	-- Void-Scarred Captain's Greaves
 			i(238199),	-- TEST ITEM
 			i(238200),	-- TEST ITEM
 			i(238452),	-- [DNT] Normal Token
@@ -33,7 +31,6 @@ root(ROOTS.Unsorted, {
 			i(238460),	-- [DNT] World Boss Token
 			i(238461),	-- [DNT] Minus Mob Token
 			i(239205),	-- [DNT] Raid Boss Token, Consolation
-			i(239247),	-- Bonus Experience
 			i(239303),	-- Cache of Infinite Treasure
 			i(239647),	-- Reins of the Bloodguard Fel Bat (MOUNT!)
 			i(239666),	-- Reins of the Risen Fel Bat (MOUNT!)
@@ -61,8 +58,6 @@ root(ROOTS.Unsorted, {
 			i(239786),	-- [DNT]
 			i(239787),	-- [DNT]
 			i(239788),	-- [DNT]
-			i(239791),	-- Sunborne Runemail Shoulderguards (missing from iensemble 241401)
-			i(239793),	-- Sunborne Runemail Mask (missing from iensemble 241401)
 			i(239806),	-- Mountainborne Bindings
 			i(239807),	-- Mountainborne Trousers
 			i(239808),	-- Mountainborne Shoulders
@@ -89,7 +84,6 @@ root(ROOTS.Unsorted, {
 			i(239969),	-- Fel-marked Greaves
 			i(239970),	-- Fel-marked Cinch
 			i(240265),	-- [DNT]
-			i(240372),	-- Shawl of Borrowed Souls
 			i(240396),	-- Suramar Silver Mantle
 			i(240563),	-- Vileweave Gloves
 			i(240564),	-- Vileweave Bindings
@@ -98,7 +92,6 @@ root(ROOTS.Unsorted, {
 			i(240570),	-- Vileweave Shawl
 			i(240571),	-- Vileweave Guise
 			i(241146),	-- Epoch Memento
-			i(241258),	-- Vineyard Red Shal'dorei Crown (missing from iensemble 241385)
 			i(241357),	-- Ensemble: Barkbinds of the Archdruid's Nightmare
 			i(241595),	-- Ensemble: Funerary Plate of the Chosen Dead
 			i(241598),	-- Ensemble: Funerary Plate of the Chosen Dead
@@ -195,36 +188,17 @@ root(ROOTS.Unsorted, {
 			i(247494),	-- Waistclasp of Unethical Power
 			i(247495),	-- Vintage Duskwatch Cinch
 			i(247496),	-- Gleaming Celestial Waistguard
-			i(247561),	-- Gloves of Murmured Promises
-			i(247564),	-- Gauntlets of Fractured Dreams
-			i(247565),	-- Tarnished Dreamkeeper's Gauntlets
 			i(247566),	-- Robes of Celestial Adornment
 			i(247567),	-- Cinch of Light
 			i(247568),	-- Windwhipped Sailcloth
 			i(247569),	-- Leggings of the Lower Planes
 			i(247570),	-- Treads of the Drowned
 			i(247571),	-- Helhound Hair Bracers
-			i(247572),	-- Strand of Whelk Shells
-			i(247573),	-- Moccasins of Silent Passage
-			i(247574),	-- Sucker-Scarred Leggings
-			i(247575),	-- Sky-Valiant's Wristguards
 			i(247576),	-- Anchor Chain Waistguard
-			i(247577),	-- Leggings of the Undaunted
 			i(247578),	-- Radiant Soul Sabatons
 			i(247579),	-- Bite-Resistant Wristclamps
-			i(247580),	-- Krakenbone Waistplate
-			i(247581),	-- Goldrune Legplates
-			i(247582),	-- Lead-Soled Seabed Striders
 			i(247583),	-- Calcareous Wristclamps
-			i(247584),	-- Oiled Rigger's Handwraps
-			i(247585),	-- Gloves of Issued Challenge
-			i(247586),	-- Gleaming Val'kyr Cuirass
 			i(247587),	-- Helbeast Skin Tunic
-			i(247588),	-- Corroded Val'kyr Chainmail
-			i(247589),	-- Kvaldir Exult's Grips
-			i(247590),	-- Reinforced Hound-Handler's Gauntlets
-			i(247591),	-- Drape of the Unworthy
-			i(247592),	-- Mantle of the Victorious Dead
 			i(247617),	-- Acolyte's Abandoned Footwraps
 			i(247618),	-- Sash of the Unredeemed
 			i(247619),	-- Treads of Violent Intrusion
@@ -293,17 +267,10 @@ root(ROOTS.Unsorted, {
 			i(248925),	-- Months Old Sourdough Bread
 			i(248926),	-- Ancient Thirteen Grain Loaf
 			i(248994),	-- Kalu'ak Crest-horn (MOUNT!)
-			i(249229),	-- Black Temple Scroll
-			i(249230),	-- Temple of Zin-Malor Scroll
 			i(249242),	-- Bronze Celebration Titles: Khaz Algar Enthusiast
 			i(249400),	-- Stack of Chronoqueries
-			i(249678),	-- Helheim Hound's Visor
-			i(249679),	-- Sovereign Valarjar Mantle
 			i(249680),	-- Ordained Hunter's Crown
-			i(249681),	-- Shoulders of the Dragonslayer
-			i(249682),	-- Supreme Runecaster's Crown
 			i(249684),	-- Horns of Unwavering Faith
-			i(249685),	-- Mantle of Unforgotten Souls
 			i(249716),	-- Steel Food Fanatic Backpack
 			i(249717),	-- Golden Food Fanatic Backpack
 			i(249718),	-- Bronze Food Fanatic Backpack
@@ -500,8 +467,6 @@ root(ROOTS.Unsorted, {
 			i(251990),	-- Trapper's Light Brown Quiver
 			i(251991),	-- Trapper's Red Quiver
 			i(251992),	-- Trapper's Purple Quiver
-			i(251993),	-- Gilded Starlight Matrix
-			i(251994),	-- Runed Starlight Matrix
 			i(251995),	-- Trapper's Blue Slippers
 			i(251996),	-- Gold-Plated Sabatons
 			i(251999),	-- Flawed Felfire Crystal
@@ -561,7 +526,6 @@ root(ROOTS.Unsorted, {
 				i(241240),	-- Type II Bomber Jacket
 			}),
 			filter(BATTLE_PETS, {
-				i(246342),	-- Mustyfur Fel Snooter
 				i(246723),	-- Unfazed Diver
 			}),
 			filter(COSMETIC, {
@@ -603,14 +567,6 @@ root(ROOTS.Unsorted, {
 				i(246979),	-- Felreaver's Hellfire Helm
 				i(246980),	-- Felreaver's Hellfire Treads
 				i(246981),	-- Ensemble: Felreaver's Hellfire Attire
-				i(246982),	-- Felreaver's Arcane Gauntlets
-				i(246983),	-- Felreaver's Arcane Legguards
-				i(246984),	-- Felreaver's Arcane Belt
-				i(246985),	-- Felreaver's Arcane Jacket
-				i(246986),	-- Felreaver's Arcane Shoulderguards
-				i(246987),	-- Felreaver's Arcane Helm
-				i(246988),	-- Felreaver's Arcane Treads
-				i(246989),	-- Ensemble: Felreaver's Arcane Attire
 				i(246990),	-- Felreaver's Azure Staff
 				i(246994),	-- Felreaver's Hellfire Staff
 				i(246996),	-- Felreaver's Azure Wand
@@ -714,7 +670,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(186639),	-- Xy Trustee's Gearglider
 				i(246698),	-- Sunwarmed Furline
-				i(246920),	-- Void-Razed Elekk
 			}),
 			n(PROFESSIONS, {
 				i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
@@ -2524,7 +2479,6 @@ root(ROOTS.Unsorted, {
 			i(164745),	-- Pile of Weapons
 			i(164912),	-- Azerite Ordnance
 			i(164930),	-- Ranger's Arrow
-			i(164946),	-- Fragments of Shattered Armor
 			i(164991),	-- Evenshade's Note
 			i(165229),	-- Dwarven Stout
 			i(165351),	-- 8.1 Warfronts - Darkshore - Kaldorei Archer Arrow
@@ -2839,7 +2793,6 @@ root(ROOTS.Unsorted, {
 			i(169122),	-- Gibraltian Monkey Wrench
 			i(169125),	-- Sonic Drive Screw
 			i(169126),	-- Supercharged Graphics Cog
-			i(169146),	-- Brittle Thrust Booster
 			i(169190),	-- Blueprint: Mega-Sized Spare Parts \\ Blueprint: TK45
 			i(169193),	-- Nazjatar Ring A
 			i(169291),	-- Petrified Ebony Scale
@@ -2857,7 +2810,6 @@ root(ROOTS.Unsorted, {
 			i(169386),	-- Elune's Favor
 			i(169446),	-- Water Filled Bladder
 			i(169447),	-- Air Filled Bladder \\ Air Filled Bladder - NYI
-
 			i(169590),	-- Burgeoning Battlefield Furor \\ Azeroth's Undying Gift
 			i(169615),	-- Small Skull
 			i(169616),	-- Rusty Tube

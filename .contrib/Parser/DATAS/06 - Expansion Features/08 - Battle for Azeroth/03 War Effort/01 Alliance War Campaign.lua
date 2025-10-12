@@ -140,6 +140,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						["groups"] = {
 							ach(12582, {	-- Come Sail Away
 								["races"] = ALLIANCE_ONLY,
+								["groups"] = { i(245271, {["timeline"] = { ADDED_12_0_0 }}),},	-- Old Salt's Fireplace (DECOR!)
 							}),
 						},
 					}),

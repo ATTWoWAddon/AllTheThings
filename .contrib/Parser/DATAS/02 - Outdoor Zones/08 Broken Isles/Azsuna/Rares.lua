@@ -154,6 +154,7 @@ root(ROOTS.Zones, {
 				}),
 				n(90803, {	-- Infernal Lord
 					["description"] = "Click Cache of Infernals in Faronaar to start the event. Infernal Lord will spawn after a few waves of small infernals.",
+					["provider"] = { "o", 240222 },	-- Cache of Infernals
 					["questID"] = 38037,
 					["coord"] = { 35.2, 50.4, AZSUNA },
 					["groups"] = {

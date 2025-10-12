@@ -24,10 +24,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					crit(13539, {
 						["_encounter"] = { 173, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Maloriak
 					}),
-					crit(13540, {
+					crit(13541, {
 						["_encounter"] = { 171, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Atramedes
 					}),
-					crit(13541, {
+					crit(13540, {
 						["_encounter"] = { 172, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },	-- Chimaeron
 					}),
 					crit(13542, {

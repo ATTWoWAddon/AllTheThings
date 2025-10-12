@@ -3,10 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		ach(61451, {	-- Worldsoul-Searching
-			["timeline"] = { ADDED_11_2_7 },
-		}),
-		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {	-- Worldsoul-Searching
+		ach(61451, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_0 } }, {	-- Worldsoul-Searching
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				40244,	-- Nerub-ar Palace
@@ -21,6 +18,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				60889,	-- Unraveled and Persevering
 			}},
 			["groups"] = {
+				--i(XXXXXX),	-- Drained Dark Heart of Galakrond (DECOR!)
 				i(258188),	-- Geargrinder Mk. 11 (MOUNT!)
 			},
 		})),

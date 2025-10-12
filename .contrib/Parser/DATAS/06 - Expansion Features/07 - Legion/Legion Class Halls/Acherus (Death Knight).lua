@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42287, {	-- Hidden Potential of the Deathlord
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Acherus Soul Forge (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Acherus Soul Forge (DECOR!)
 					}),
 					ach(60962, {	-- Legendary Research of the Ebon Blade
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- (no decor reward) (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Libram of the Dead (DECOR!)
 					}),
 					ach(60981, {	-- So Many Missions for Acherus
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Ebon Blade Planning Map (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Ebon Blade Planning Map (DECOR!)
 					}),
 					ach(42270, {	-- The Deathlord's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Ebon Blade Weapon Rack (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Ebon Blade Weapon Rack (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {
@@ -165,7 +157,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 										artifact(111),	-- Blades of the Fallen Prince [Off Hand]
 									},
 								}),
-								i(127009),	-- Fragment of Frostmourne
+								o_repeated({	-- Fragment of Frostmourne
+									["coords"] = {
+										{ 51.5, 41.5, 701 },	-- Icecrown Citadel (Scenario Map)
+										{ 51.6, 49.6, 701 },	-- Icecrown Citadel (Scenario Map)
+										{ 52.5, 66.5, 701 },	-- Icecrown Citadel (Scenario Map)
+										{ 60.1, 54.7, 701 },	-- Icecrown Citadel (Scenario Map)
+									},
+									["groups"] = {
+										i(127009),	-- Fragment of Frostmourne (QI!)
+										o(251882),	-- Fragment of Frostmourne
+										o(251884),	-- Fragment of Frostmourne
+										o(251885),	-- Fragment of Frostmourne
+										o(251886),	-- Fragment of Frostmourne
+									},
+								}),
 							},
 						}),
 					}),
@@ -212,11 +218,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["groups"] = {
-								i(128403, {	-- Apocalypse
-									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(110),	-- Standard
-									},
+								o(246699, {	-- Apocalypse
+									i(128403, {	-- Apocalypse
+										["ItemAppearanceModifierID"] = 9,
+										["groups"] = {
+											artifact(110),	-- Standard
+										},
+									}),
 								}),
 							},
 						}),
@@ -226,11 +234,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["groups"] = {
-								i(128403, {	-- Apocalypse
-									["ItemAppearanceModifierID"] = 9,
-									["groups"] = {
-										artifact(110),	-- Standard
-									},
+								o(246699, {	-- Apocalypse
+									i(128403, {	-- Apocalypse
+										["ItemAppearanceModifierID"] = 9,
+										["groups"] = {
+											artifact(110),	-- Standard
+										},
+									}),
 								}),
 							},
 						}),
@@ -245,7 +255,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["description"] = "Obtainable if you attack Revil Kost",
 							["sourceQuest"] = 40986, -- The Dark Riders (Bad)
 							["provider"] = { "n", 101282 },	-- Revil Kost
-							["coord"] = { 68.4, 27.0, DEADWIND_PASS },
+							["coord"] = { 68.4, 27.0, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 					}),
@@ -283,8 +293,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(39799, {	-- Our Next Move
 						["sourceQuest"] = 39832, -- Plans and Preparations
-						["provider"] = { "n", 93437 },	-- Siouxsie the Banshee
-						["coord"] = { 50.6, 51.6, 647 },
+						["provider"] = { "n", 93568 },	-- Siouxsie the Banshee
+						["coord"] = { 50.6, 51.6, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
 					q(42449, {	-- Return of the Four Horsemen
 						["sourceQuest"] = 39799, -- Our Next Move
@@ -367,6 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 42533, -- The Ruined Kingdom
 						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
 						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
+						["groups"] = { i(138142) },	-- Head of Ojin'ba (QI!)
 					}),
 					q(42536, {	-- Regicide
 						["sourceQuests"] = {
@@ -375,6 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["provider"] = { "n", 108042 },	-- Thassarian
 						["coord"] = { 19.6, 67.0, ARATHI_HIGHLANDS },
+						["groups"] = { i(138148) },	-- Trol'Kalar (QI!)
 					}),
 					q(42537, {	-- The King Rises
 						["sourceQuest"] = 42536, -- Regicide
@@ -425,15 +437,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 111480 },	-- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						["maps"] = { 731 },	-- Neltharion's Lair
-						["groups"] = {
-							i(139537),	-- Braid of the Underking (QI!)
-						},
+						["groups"] = { i(139537) },	-- Braid of the Underking (QI!)
 					}),
 					q(43572, {	-- Darkheart Thicket: The Nightmare Lash
 						["sourceQuest"] = 43571, -- Neltharion's Lair: Braid of the Underking
 						["provider"] = { "n", 111480 },	-- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						["maps"] = { 733 },	-- Darkheart Thicket
+						["groups"] = { i(139538) },	-- Nightmare Lash (QI!)
 					}),
 					q(42818, {	-- The Scarlet Assault
 						["sourceQuest"] = 43899, -- Steeds of the Damned
@@ -507,7 +518,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuest"] = 43573, -- Advancing the War Effort
 						["provider"] = { "n", 93491 },	-- Lord Thorval
 						["coord"] = { 63.1, 69.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
-						["cost"] = {{ "i", 124124, 3 }},	-- 3xBlood of Sargeras
+						["cost"] = {{ "i", 124124, 3 }},	-- 3x Blood of Sargeras
+					}),
+					q(91615, {	-- A Thirst For Blood (Remix)
+						["sourceQuest"] = 43573, -- Advancing the War Effort
+						["provider"] = { "n", 93491 },	-- Lord Thorval
+						["coord"] = { 63.1, 69.4, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
+						["timeline"] = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
 					}),
 					q(43574, {	-- Maw of Souls: Maul of the Dead
 						["sourceQuests"] = {
@@ -537,7 +554,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							43573,	-- Advancing the War Effort
 							43928,	-- Aggregates of Anguish
 							44690,	-- A Thirst For Blood
+							91615,	-- A Thirst For Blood (Remix)
 						},
+						["sourceQuestNumRequired"] = 3,
 						["provider"] = { "n", 93437 },	-- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						["groups"] = {

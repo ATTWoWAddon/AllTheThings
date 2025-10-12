@@ -2128,7 +2128,6 @@ i(247720, 1245197);	-- The Headless Horseman's Chilling Charger
 i(247721, 1245198);	-- The Headless Horseman's Ghoulish Charger
 i(246917, 1244247);	-- Thunder-ridged Elekk
 --- UNSORTED ---
-i(246920, 1244260);	-- Void-Razed Elekk
 i(186639, 353264);	-- Xy Trustee's Gearglider
 
 ------------------
@@ -2165,6 +2164,7 @@ i(253029, 1255475);	-- High Priest's Felscorned Seeker
 i(250429, 1250886);	-- Highland Elderhorn
 i(250427, 1250884);	-- Illidari Blightstalker
 i(250428, 1250882);	-- Illidari Dreadstalker
+i(242795, 1233925);	-- Lana'Thel's Crimson Cascade
 i(250424, 1250879);	-- Leystone Basilisk
 i(250805, 1251399);	-- Longhorned Argussian Talbuk
 i(250806, 1251400);	-- Longhorned Beryl Talbuk
@@ -2178,6 +2178,7 @@ i(250721, 1235513);	-- Snowy Highmountain Eagle
 i(250723, 1251255);	-- Treetop Highmountain Eagle
 i(250756, 1251298);	-- Turquoise Courser
 i(250751, 1251295);	-- Twilight Courser
+i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
 --- UNSORTED ---
 i(0, 1254363);	--(PH LEGION REMIX MOUNT)`
@@ -2218,14 +2219,14 @@ i(259463, 1264988);	-- Snowpaw Glimmerfur Prowler
 ------------------
 -- PATCH 12.0.0 --
 ------------------
+i(262620, 1257058);	-- Calamitous Carrion
+i(262621, 1257081);	-- Convalescent Carrion
 i(260228, 1262840);	-- Galactic Gladiator's Goredrake
 i(246594, 1243003);	-- Light-Forged Mechsuit
 --- UNSORTED ---
 i(257157, 1261325);	-- [DNT] 12.0 Black Hawkstrider
 i(260231, 1265784);	-- [DNT] 12.0 White Hawkstrider
 i(250782, 1251433);	-- [DNT] Amani Eagle Orange
-i(0, 1257081);	-- [DNT] Cleansed Hex Eagle
-i(0, 1257058);	-- [DNT] Cursed Hex Eagle
 i(0, 1252141);	-- [DNT] Jellyfish
 i(222988, 447173);	-- [PH] Firefly2Mount (Green)
 i(224148, 451487);	-- [PH] NerubianWarbeastMount (Cyan)

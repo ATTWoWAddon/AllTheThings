@@ -21,6 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["modelScale"] = 3,
 					["groups"] = {
+						i(137206),	-- Tidestone of Golganneth (QI!)
 						i(140622),	-- Hardshell Greatbelt
 						i(140623),	-- Brightscale Waistguard
 						i(140624),	-- Bitterbrine Binding

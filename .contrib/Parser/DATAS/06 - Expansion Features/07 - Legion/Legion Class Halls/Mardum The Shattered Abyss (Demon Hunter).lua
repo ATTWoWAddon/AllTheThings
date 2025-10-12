@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(ACHIEVEMENTS, {
 					ach(42288, {	-- Hidden Potential of the Slayer
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Cursed Forge of the Nathrezim (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Cursed Forge of the Nathrezim (DECOR!)
 					}),
 					ach(60963, {	-- Legendary Research of the Illidari
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Tome of Fel Secrets (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Tome of Fel Secrets (DECOR!)
 					}),
 					ach(60982, {	-- So Many Missions for the Fel Hammer
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Fel Hammer Scouting Map (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Fel Hammer Scouting Map (DECOR!)
 					}),
 					ach(42271, {	-- The Slayer's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Illidari Glaiverest (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Illidari Glaiverest (DECOR!)
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({
@@ -140,10 +132,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 103156 },	-- Altruis the Sufferer
 							["maps"] = { 723 },	-- Violet Hold
 							["groups"] = {
-								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									["ItemAppearanceModifierID"] = 9,
+								o(251878, {	-- Twinblades of the Deceiver
+									["coord"] = { 33.0, 67.0, SURAMAR },
 									["groups"] = {
-										artifact(26),	-- Standard
+										i(127829, {	-- Twinblades of the Deceiver [Main Hand]
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = {
+												artifact(26),	-- Standard
+											},
+										}),
 									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
@@ -157,7 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(39247, {	-- The Hunt (Kayn)
 							["sourceQuest"] = 39051,	-- By Any Means (Kayn)
 							["provider"] = { "n", 94902 },	-- Kayn Sunfury
-							["maps"] = { 723 },	-- Violet Hold
+							["coord"] = { 50.3, 71.1, 723 },	-- The Violet Hold
 							["groups"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
 									["ItemAppearanceModifierID"] = 9,
@@ -200,10 +197,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["qgs"] = {
 								99247,	-- Kayn Sunfury
 								95240,	-- Kayn Sunfury
+								108572,	-- Kayn Sunfury
 							},
 							["coords"] = {
 								{ 74.9, 48.9, LEGION_DALARAN },
-								{ 58.6, 57.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
+								{ 58.4, 58.4, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
 							},
 						}),
 						q(41804, {	-- Ask and You Shall Receive
@@ -213,6 +211,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["coord"] = { 28.5, 48.3, LEGION_DALARAN },
+							["groups"] = {
+								o(248521, {	-- Crystallized Soul
+									["coord"] = { 26.5, 45.1, LEGION_DALARAN },
+									["groups"] = { i(136385) },	-- Crystallized Soul (QI!)
+								}),
+							},
 						}),
 						q(41806, {	-- Return to Jace
 							["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
@@ -229,10 +233,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["groups"] = {
-								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									["ItemAppearanceModifierID"] = 9,
+								o(248785, {	-- Aldrachi Warblades
+									["coord"] = { 26.8, 61.5, 676 },	-- Broken Score Scenario Map
 									["groups"] = {
-										artifact(554),	-- Aldrachi Warblades [Main Hand]
+										i(128832, {	-- Aldrachi Warblades [Main Hand]
+											["ItemAppearanceModifierID"] = 9,
+											["groups"] = {
+												artifact(554),	-- Aldrachi Warblades [Main Hand]
+											},
+										}),
 									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]

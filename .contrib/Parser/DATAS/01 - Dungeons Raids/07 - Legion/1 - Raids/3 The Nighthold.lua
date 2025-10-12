@@ -210,40 +210,40 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(ACHIEVEMENTS, {
 				ach(10829, {	-- Arcing Aqueducts
                     crit(31445, {	-- Skorpyron
-                        ["_encounter"] = { 1706, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { SKORPYRON, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31444, {	-- Chronomatic Anomaly
-                        ["_encounter"] = { 1725, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { CHRONOMATIC, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31443, {	-- Trilliax
-                        ["_encounter"] = { 1731, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { TRILLIAX, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(10837, {	-- Royal Athenaeum
                     crit(31447, {	-- Spellblade Aluriel
-                        ["_encounter"] = { 1751, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { ALURIEL, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31448, {	-- Star Augur Etraeus
-                        ["_encounter"] = { 1732, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { ETRAEUS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31449, {	-- High Botanist Tel'arn
-                        ["_encounter"] = { 1761, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { TELARN, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(10838, {	-- Nightspire
                     crit(31452, {	-- Tichondrius
-                        ["_encounter"] = { 1762, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { TICHONDRIUS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31451, {	-- Krosus
-                        ["_encounter"] = { 1713, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { KROSUS, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(31450, {	-- Elisande
-                        ["_encounter"] = { 1743, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { ELISANDE, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(10839, {	-- Betrayer's Rise
                     crit(31453, {	-- Gul'dan
-                        ["_encounter"] = { 1737, DIFFICULTY.RAID.MULTI.ALL },
+                        ["_encounter"] = { GULDAN, DIFFICULTY.RAID.MULTI.ALL },
 						["provider"] = { "n", 104154 },	-- Gul'dan
                     }),
                 }),

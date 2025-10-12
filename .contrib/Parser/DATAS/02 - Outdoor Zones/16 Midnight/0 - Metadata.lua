@@ -6,6 +6,12 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 --	["lore"] = "Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",
 	["timeline"] = { ADDED_12_0_0_LAUNCH },
 	["groups"] = {
+		m(ISLE_OF_QUELDANAS_MID, {
+		--	["icon"] = 5901551,
+		--	["lore"] = "The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",
+		--	["isRaid"] = true,
+			["timeline"] = { ADDED_12_0_0_LAUNCH },
+		}),
 		m(SILVERMOON_CITY_MID, {
 		--	["icon"] = 5901551,
 		--	["lore"] = "The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",

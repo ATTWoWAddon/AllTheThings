@@ -146,6 +146,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		pet(3175, {	-- Murkastrasza (PET!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(246342, {	-- Mustyfur Fel Snooter (PET!)
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+		}),
 		-- #if ANYCLASSIC
 		i(198665, {	-- Pebble's Pebble
 			["timeline"] = { ADDED_5_5_0 },
@@ -281,20 +284,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	-- #endif
 	-- #if AFTER 5.4.0.17227
 	filter(COSMETIC, {	-- AVAILABLE --
-		-- Black Tropical
-		iensemble(221540, {	-- Ensemble: Black Tropical Beachwear
-			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.99999" }, -- Removed September 15, 2025
-		}),
-		iensemble(221847, {	-- Ensemble: Black Tropical Swimwear
-			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.99999" }, -- Removed September 15, 2025
-		}),
-
 		------ Cosmic Weapons Set ------
 		iensemble(208943, {	-- Arsenal: Cosmic Weapons Cache
 			["timeline"] = { ADDED_11_0_0 },
 		}),
 
 		------ Celestial Observer Set ------
+		-- #if AFTER 11.2.5
+		iensemble(255824, {	-- Ensemble: Celestial Observer
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(184832, {	-- Celestial Observer's Astral Walkers
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -322,6 +322,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(184834, {	-- Celestial Observer's Wristwrap
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		-- #endif
 
 		------ Dreadlord's Shadowsbane Set ------
 		iensemble(212218, {	-- Ensemble: Dreadlord's Shadowsbane Regalia
@@ -348,7 +349,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_11_1_5 },
 		}),
 
+		iensemble(246989, {	-- Ensemble: Felreaver's Arcane Attire
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
+		}),
+
 		------ Fireplume Set ------
+		-- #if AFTER 11.2.5
+		iensemble(255815, {	-- Ensemble: Fireplume Regalia
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(191616, {	-- Fireplume Crest
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
@@ -388,10 +398,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(191779, {	-- Fireplume Halter
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
+		-- #endif
 
 		------ Green Snugglefin Murloc Romper Set ------
 		iensemble(223485, {	-- Ensemble: Green Snugglefin Murloc Romper
 			["timeline"] = { ADDED_10_2_7 },
+		}),
+
+		iensemble(246291, {	-- Ensemble: Lana'thel's Crimson Couture
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
 		}),
 
 		------ Murloc Shells Set ------
@@ -414,6 +429,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		iensemble(239443, { ["timeline"] = { ADDED_11_2_0 } }),	-- Ensemble: Spiritrune Attire
 
 		------ Sprite Darter Set ------
+		-- #if AFTER 11.2.5
+		iensemble(255817, {	-- Ensemble: Sprite Darter's Wings
+			["timeline"] = { ADDED_11_2_5 },
+		}),
+		-- #else
 		i(172378, {	-- Sprite Darter's Bangle
 			["timeline"] = { ADDED_8_3_0 },
 		}),
@@ -438,6 +458,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(172380, {	-- Sprite Darter's Trousers
 			["timeline"] = { ADDED_8_3_0 },
 		}),
+		-- #endif
 
 		------ Vestments of the Heavens Sets ------
 		iensemble(233052, {	-- Ensemble: Radiant Vestments of the Heavens
@@ -478,7 +499,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #endif
 	}),
-	filter(COSMETIC, {	-- REMOVED --
+	filter(COSMETIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
+		-- Black Tropical
+		iensemble(221540, {	-- Ensemble: Black Tropical Beachwear
+			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" }, -- Removed September 15, 2025
+		}),
+		iensemble(221847, {	-- Ensemble: Black Tropical Swimwear
+			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" }, -- Removed September 15, 2025
+		}),
 		------ Gladiator's Ragged Armor Set ------
 		iensemble(217029, {	-- Ensemble: Gladiator's Ragged Armor
 			["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 },
@@ -556,7 +584,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(231290, {	-- Reven's Comfy Carrier
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 7, 2025
 		}),
-	}),
+	})),
 	-- #endif
 	filter(MOUNTS, {	-- AVAILABLE --
 		-- #if ANYCLASSIC
@@ -633,8 +661,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_2_5_4_A },
 		}),
 		-- #endif
-		i(221270, {	-- Kickin' Kezan Waveshredder (MOUNT!)
-			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.99999" }, -- Removed September 15, 2025
+		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
 		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { ADDED_9_0_2 },
@@ -691,6 +719,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
+		}),
+		i(246920, {	-- Void-Razed Elekk (MOUNT!)
+			["timeline"] = { ADDED_11_2_5, "removed 11.2.7.99999" },	-- Removed January 12, 2026
 		}),
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },
@@ -770,6 +801,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(128425, {	-- Illidari Felstalker (MOUNT!)
 			["timeline"] = { ADDED_6_2_2, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
+		}),
+		i(221270, {	-- Kickin' Kezan Waveshredder (MOUNT!)
+			["timeline"] = { ADDED_11_1_7, "removed 11.2.0.63305" }, -- Removed September 15, 2025
 		}),
 		i(233286, {	-- Meeksi Brewthief (MOUNT!)
 			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025

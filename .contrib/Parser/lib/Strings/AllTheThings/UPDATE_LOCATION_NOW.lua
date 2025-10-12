@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Обновить Зону Сейчас",
 		-- TODO: ko = "",
 		cn = "现在更新位置",
-		tw = "現在更新位置",
+		tw = "立即更新位置",
 	},
 })

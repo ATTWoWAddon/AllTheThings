@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				ach(42188, {	-- Lorewalking: Blade's Bane
 					i(257355, {["timeline"] = { ADDED_12_0_0 }}),	-- Tome of the Survivor (DECOR!)
 				}),
-				ach(61467, {	-- Lorewalking: Elves / TODO: MIDNIGHT ACHIEVEMENT! Temp placement!
+				ach(61467, {	-- Lorewalking: The Elves of Quel'thalas / TODO: MIDNIGHT ACHIEVEMENT! Temp placement!
 					["timeline"] = { ADDED_12_0_0 },
 					["groups"] = { i(245332) },	-- Tome of Silvermoon Intrigue (DECOR!)
 				}),

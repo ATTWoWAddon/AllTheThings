@@ -10,27 +10,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				n(ACHIEVEMENTS, {
 					ach(42290, {	-- Hidden Potential of the Huntmaster
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Altar of the Eternal Hunt (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Altar of the Eternal Hunt (DECOR!)
 					}),
 					ach(60965, {	-- Legendary Research of the Unseen Path
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Replica Tales of the Hunt (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Replica Tales of the Hunt (DECOR!)
 					}),
 					ach(60984, {	-- So Many Missions for the Trueshot Lodge
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Unseen Path Archer's Gallery (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Unseen Path Archer's Gallery (DECOR!)
 					}),
 					ach(42273, {	-- The Huntmaster's Campaign
 						["timeline"] = { ADDED_11_2_7 },
-						["groups"] = {
-							--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Trueshot Skeletal Dragon Trophy (DECOR!)
-						},
+						--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Trueshot Skeletal Dragon Trophy (DECOR!)
 					}),
 				}),
 				n(ARTIFACTS, {
@@ -155,7 +147,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["sourceQuests"] = { 42185 },	-- Never Hunt Alone
 							["altQuests"] = { 40952 },	-- Hunter to Hunter
 							["provider"] = { "n", 106879 },	-- Grif Wildheart
-							["maps"] = { LEGION_DALARAN },
+							["coord"] = { 69.9, 43.2, LEGION_DALARAN },
 						}),
 					}),
 					cl(HUNTER, MARKSMANSHIP, {
@@ -291,18 +283,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							40385,	-- The Spear in the Shadow
 						},
 						["sourceQuestNumRequired"] = 1,
-						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
+						["qgs"] = {
+							102574,	-- Emmarel Shadewarden
+							102478,	-- Emmarel Shadewarden
+						},
 						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
+						["maps"] = { LEGION_DALARAN },
 					}),
 					q(40954, {	-- The Unseen Path
 						["sourceQuests"] = { 40953 },	-- On Eagle's Wings
-						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
+						["qgs"] = {
+							102574,	-- Emmarel Shadewarden
+							102578,	-- Emmarel Shadewarden
+						},
+						["coord"] = { 36.9, 29.1, TRUESHOT_LODGE },
 					}),
 					q(40955, {	-- Oath of Service
 						["sourceQuests"] = { 40954 },	-- The Unseen Path
 						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
-						["coord"] = { 43.4, 26.4, TRUESHOT_LODGE },
+						["coord"] = { 44.4, 26.4, TRUESHOT_LODGE },
 					}),
 					q(41053, {	-- Altar of the Eternal Hunt
 						["sourceQuests"] = { 40955 },	-- Oath of Service
@@ -325,8 +324,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							40955,	-- Oath of Service
 							-- #ENDIF
 						},
-						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
-						["coord"] = { 42.9, 46.9, TRUESHOT_LODGE },
+						["provider"] = { "n", 102574 },	-- Emmarel Shadewarden
+						["coord"] = { 43.6, 26.2, TRUESHOT_LODGE },
 					}),
 					q(40959, {	-- The Campaign Begins
 						["sourceQuests"] = { 40958 },	-- Tactical Matters
@@ -536,7 +535,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 107981 },	-- Huntsman Blake
 						["coord"] = { 80.1, 66.2, STORMHEIM },
 						["groups"] = {
-							i(138299),	-- Ancient Bones (QI!)
+							o(251191, {	-- Ancient Bones
+								["coords"] = {
+									{ 78.8, 65.9, STORMHEIM },
+									{ 79.6, 66.4, STORMHEIM },
+									{ 79.6, 68.5, STORMHEIM },
+									{ 79.9, 67.0, STORMHEIM },
+									{ 80.6, 66.9, STORMHEIM },
+									{ 80.9, 65.6, STORMHEIM },
+									{ 81.2, 65.3, STORMHEIM },
+								},
+								["groups"] = { i(138299) },	-- Ancient Bones (QI!)
+							}),
 						},
 					}),
 					q(42412, {	-- Champion: Huntsman Blake

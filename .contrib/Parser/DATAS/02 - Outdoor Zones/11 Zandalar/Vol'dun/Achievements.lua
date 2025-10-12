@@ -27,6 +27,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			h(ach(13017)),	-- Champion of the Vulpera
 			ach(13018, {	-- Dune Rider
+				--[[ Each plank has a unique "kill credit" NPC id but no quest tracking ID. These are the IDs I found: [Pr3vention]
+				["providers"] = {
+					{ "n", 143668 },
+					{ "n", 143258 },
+					{ "n", 143257 },
+					{ "n", 143256 },
+					{ "n", 143255 },
+				},
+				]]--
 				["coords"] = {
 					{ 47.9, 62.5, VOLDUN },
 					{ 45.8, 63.6, VOLDUN },
@@ -34,13 +43,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 32.2, 69.0, VOLDUN },
 					{ 54.9, 21.4, VOLDUN },
 				},
-				--[[ Each plank has a unique "kill credit" NPC id but no quest tracking ID. These are the IDs I found: [Pr3vention]
-				["npcID"] = 143668
-				["npcID"] = 143258
-				["npcID"] = 143257
-				["npcID"] = 143256
-				["npcID"] = 143255
-				]]--
+				["groups"] = { i(244326, {["timeline"] = { ADDED_12_0_0 }}),},	-- Zandalari Wall Shelf (DECOR!)
 			}),
 			ach(41204, {	-- Dune Squad
 				["timeline"] = { ADDED_11_0_7 },

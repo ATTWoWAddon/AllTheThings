@@ -1965,6 +1965,9 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(255682),	-- Huge Bag of Midnight Skins
 			i(255683),	-- Huge Bag of Midnight Jewelcrafting Goods
 			i(255684),	-- Huge Bag of Midnight Leatherworking Goods
+			i(255666),	-- Huge Bag of Midnight General Goods
+			i(255678),	-- Huge Bag of Midnight Herbs
+			i(255679),	-- Huge Bag of Midnight Minerals
 		})),
 	}),
 }));

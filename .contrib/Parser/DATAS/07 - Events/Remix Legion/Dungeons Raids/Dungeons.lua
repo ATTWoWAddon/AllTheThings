@@ -67,7 +67,22 @@ end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 	n(DUNGEONS, {
 		mapped(ACHIEVEMENTS, {
-			-- Exo Note: Most of these are meta achievements but they do not have criteria shown on them yet
+			ach(42692, {	-- Broken Isles Dungeoneer
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					60846,	-- Assault on Violet Hold
+					60834,	-- Black Rook Hold
+					60843,	-- Court of Stars
+					60837,	-- Darkheart Thicket
+					60819,	-- Eye of Azshara
+					60831,	-- Halls of Valor
+					60828,	-- Maw of Souls
+					60825,	-- Neltharion's Lair
+					60840,	-- The Arcway
+					60822,	-- Vault of the Wardens
+				}},
+				--["groups"] = { i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),},	-- Legion’s Holo-Communicator (DECOR!)
+			}),
 			ach(61115, {	-- Legion Dungeons: Might of the Legion
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -91,21 +106,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					60831,	-- Halls of Valor
 					60828,	-- Maw of Souls
 					60825,	-- Neltharion's Lair
-				}},
-			}),
-			ach(42692, {	-- Broken Isles Dungeoneer
-				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
-					60846,	-- Assault on Violet Hold
-					60834,	-- Black Rook Hold
-					60843,	-- Court of Stars
-					60837,	-- Darkheart Thicket
-					60819,	-- Eye of Azshara
-					60831,	-- Halls of Valor
-					60828,	-- Maw of Souls
-					60825,	-- Neltharion's Lair
-					60840,	-- The Arcway
-					60822,	-- Vault of the Wardens
 				}},
 			}),
 			ach(42320, {	-- Legion Remix Dungeoneer
@@ -164,7 +164,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 			ach(42615),	-- Timeworn Keystone Apprentice (L2)
 			ach(42688),	-- Timeworn Keystone Adept (L7)
-			ach(42689),	-- Timeworn Keystone Master (L15)
+			ach(42689, {	-- Timeworn Keystone Master (L15)
+				--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Fel Fountain (DECOR!)
+			}),
 			ach(42690, {	-- Timeworn Keystone Hero (L25)
 				iensemble(257105),	-- Ensemble: Sargerei Commander's Hellforged Regalia
 			}),
@@ -229,6 +231,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			}),
 		}),
 		mapped(REWARDS, {
+			i(239247),	-- Bonus Experience
 		}),
 		inst(777, {	-- Assault of Violet Hold (Legion)
 			["coord"] = { 66.2, 68.3, LEGION_DALARAN },

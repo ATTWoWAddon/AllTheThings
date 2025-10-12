@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "隐藏货币触发器",
-		-- TODO: tw = "",
+		tw = "隱藏貨幣觸發器",
 	},
 })

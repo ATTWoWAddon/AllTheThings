@@ -1855,6 +1855,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["groups"] = {
 							ach(17773, {	-- A Blue Dawn
 								["timeline"] = { ADDED_10_1_7 },
+								["groups"] = { i(248104, {["timeline"] = { ADDED_12_0_0 }}),},	-- Pentagonal Stone Table (DECOR!)
 							}),
 							iensemble(205958),	-- Ensemble: Azure Renewal Finery
 							i(205908, {	-- Inherited Wisdom of Senegos (TOY!)

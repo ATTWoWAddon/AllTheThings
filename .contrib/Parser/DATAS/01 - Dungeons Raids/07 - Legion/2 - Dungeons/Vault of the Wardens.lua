@@ -10,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(44486, {	-- Fel-Ravaged Tome
 					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
 					["groups"] = {
+						i(141360),	-- Fel-Ravaged Tome (QI!)
 						crit(33146, {	-- Fel-Ravaged Tome
 							["achievementID"] = 11240,	-- Harbinger
 						}),

@@ -24,11 +24,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(40216),	-- Deephaul Ravine Expedience
 				ach(40215),	-- Deepwind Ravine Shutout
 				ach(40211),	-- Deephaul Ravine Veteran
-				ach(40210),	-- Deephaul Ravine Victory
+				ach(40210, {	-- Deephaul Ravine Victory
+					i(253170, {["timeline"] = { ADDED_12_0_0 }}),	-- Earthen Contender's Target (DECOR!)
+				}),
 				-- INFO: Verified 2024-10-04, shows a criteria without achraw
 				achraw(40613),	-- Resilient Runner
 				ach(40608),	-- Running in the Ravine
-				ach(40612),	-- Sprinting in the Ravine
+				ach(40612, {	-- Sprinting in the Ravine
+					--i(XXXXXX, {["timeline"] = { ADDED_12_0_0 }}),	-- Deephaul Crystal (DECOR!)
+				}),
 				ach(40615),	-- Unexpected Arrival
 				ach(40616),	-- Unexpected Arrivals
 				ach(40607),	-- Wandering in the Ravine

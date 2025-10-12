@@ -943,7 +943,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(32311, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
 			q(32312, { ["name"] = "Enlistment Orders", }),	-- Enlistment Orders
 			q(32313, { ["name"] = "Hunt Helheim", }),	-- Hunt Helheim
-			q(32306, { ["name"] = "Lumber Collection Tracking", }),	-- Lumber Collection Tracking
 			q(32155, { ["name"] = "Necessary Breaks", }),	-- Necessary Breaks
 			q(32369, { ["name"] = "Secrets of the Past", }),	-- Secrets of the Past
 			q(32314, { ["name"] = "Slaughter Selenora", }),	-- Slaughter Selenora
