@@ -3716,9 +3716,9 @@ namespace ATT
                     foreach (long id in spellObjs.AsTypedEnumerable<long>())
                     {
                         // Items with Spells can set 'provider' on the Criteria instead of nesting
-                        if (TryGetSOURCED("spellID", id, out var spellSources)
+                        if (TryGetSOURCED("recipeID", id, out var spellSources)
                             || TryGetSOURCED("mountID", id, out spellSources)
-                            || TryGetSOURCED("recipeID", id, out spellSources))
+                            || TryGetSOURCED("spellID", id, out spellSources))
                         {
                             foreach (var spell in spellSources)
                             {
