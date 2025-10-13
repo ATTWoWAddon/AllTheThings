@@ -1,24 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if BEFORE 2.0.0
-local test = THIS_BREAKS_CLASSIC_PARSE
--- #endif
--- #if BEFORE 3.0.0
-local test = THIS_BREAKS_TBC_PARSE
--- #endif
--- #if BEFORE 4.0.0
-local test = THIS_BREAKS_WOTLK_PARSE
--- #endif
--- #if BEFORE 5.0.0
-local test = THIS_BREAKS_CATA_PARSE
--- #endif
--- #if BEFORE 6.0.0
-local test = THIS_BREAKS_MOP_PARSE
--- #endif
--- #if BEFORE 12.0.0
-local test = THIS_BREAKS_RETAIL_PARSE
--- #endif
 -- #if AFTER 3.0.2
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	n(ACHIEVEMENTS, {
