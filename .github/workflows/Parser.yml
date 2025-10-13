@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Database Parser for Retail
+        id: Parse-Retail
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -29,6 +30,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for Classic Era
+        id: Parse-ClassicEra
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -37,6 +39,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for Season of Discovery
+        id: Parse-ClassicSoD
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -45,6 +48,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for The Burning Crusade
+        id: Parse-TBC
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -53,6 +57,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for Wrath of the Lich King
+        id: Parse-WOTLK
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -61,6 +66,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for Cataclysm
+        id: Parse-CATA
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -69,6 +75,7 @@ jobs:
         shell: cmd
 
       - name: Database Parser for Mists of Pandaria
+        id: Parse-MOP
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -77,9 +84,22 @@ jobs:
         shell: cmd
 
       - name: Full Success Check
-        if: success()
         run: |
-          echo "All Versions Parsed successfully!"
+          echo "Verify all Versions Parsed Successfully..."
+          echo "Parse-Retail: ${{ steps.Parse-Retail.outcome }}"
+          echo "Parse-ClassicEra: ${{ steps.Parse-ClassicEra.outcome }}"
+          echo "Parse-ClassicSoD: ${{ steps.Parse-ClassicSoD.outcome }}"
+          echo "Parse-TBC: ${{ steps.Parse-TBC.outcome }}"
+          echo "Parse-WOTLK: ${{ steps.Parse-WOTLK.outcome }}"
+          echo "Parse-CATA: ${{ steps.Parse-CATA.outcome }}"
+          echo "Parse-MOP: ${{ steps.Parse-MOP.outcome }}"
+
+          if [[ "${{ steps.Parse-Retail.outcome }}"=="success" && "${{ steps.Parse-ClassicEra.outcome }}"=="success" && "${{ steps.Parse-ClassicSoD.outcome }}"=="success" && "${{ steps.Parse-TBC.outcome }}"=="success" && "${{ steps.Parse-WOTLK.outcome }}"=="success" && "${{ steps.Parse-CATA.outcome }}"=="success" && "${{ steps.Parse-MOP.outcome }}"=="success" ]]; then
+            echo "✅ All Versions Parsed Successfully"
+          else
+            echo "❌ One or more Parser Versions errored"
+            exit 1
+          fi
 
       - uses: actions/upload-artifact@v4
         with:
