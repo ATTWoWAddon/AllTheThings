@@ -78,7 +78,8 @@ jobs:
 
       - name: Full Success Check
         if: success()
-        echo: "All Versions Parsed successfully!"
+        run: |
+          echo "All Versions Parsed successfully!"
 
       - uses: actions/upload-artifact@v4
         with:
