@@ -96,13 +96,13 @@ jobs:
           $mop = '${{ steps.Parse-MOP.outcome }}'
 
           Write-Host "Verify all Versions Parsed Successfully..."
-          Write-Host "Parse-Retail: $retail"
-          Write-Host "Parse-ClassicEra: $classicEra"
-          Write-Host "Parse-ClassicSoD: $classicSoD"
-          Write-Host "Parse-TBC: $tbc"
-          Write-Host "Parse-WOTLK: $wotlk"
-          Write-Host "Parse-CATA: $cata"
-          Write-Host "Parse-MOP: $mop"
+          Write-Host "Retail: $retail"
+          Write-Host "ClassicEra: $classicEra"
+          Write-Host "ClassicSoD: $classicSoD"
+          Write-Host "TBC: $tbc"
+          Write-Host "WOTLK: $wotlk"
+          Write-Host "CATA: $cata"
+          Write-Host "MOP: $mop"
 
           if (
             $retail -eq 'success' -and
@@ -115,13 +115,12 @@ jobs:
           ) {
             Write-Host "✅ All Versions Parsed Successfully"
           } else {
-            Write-Host "❌ One or more Parser Versions errored"
+            Write-Host "❌ One or more Parsed Versions Errored"
             exit 1
           }
 
-
       - uses: actions/upload-artifact@v4
         with:
-            name: db  # Artifact name
-            path: db/  # File path to upload
-            retention-days: 7
+          name: db  # Artifact name
+          path: db/  # File path to upload
+          retention-days: 7
