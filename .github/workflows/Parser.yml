@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - '.contrib/Parser/**'
+      - '.github/workflows/Parser.yml'
   # Triggers the workflow on each pull request event
   pull_request:
     paths:
