@@ -157,10 +157,7 @@ namespace ATT
         private static void ExportTableReferenceForLua(Exporter builder, IEnumerable<KeyValuePair<string, string>> keyValues)
         {
             if (!keyValues.Any())
-            {
-                builder.Replace("--STRUCTURE_REPLACEMENTS" + Environment.NewLine, string.Empty);
                 return;
-            }
 
             int count = 0;
             // alternate compression
@@ -171,7 +168,6 @@ namespace ATT
                 builder2.Append(table.Value);
             }
             builder2.Append("};").AppendLine();
-            builder.Replace("--STRUCTURE_REPLACEMENTS" + Environment.NewLine, builder2.ToString());
         }
 
         /// <summary>
