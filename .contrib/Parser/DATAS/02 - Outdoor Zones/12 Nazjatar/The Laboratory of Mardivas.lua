@@ -172,8 +172,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					155031,	-- Greater Lithic Arcanocrystal
 				},
 				["cost"] = {
-					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
+					{ "i", 169332, 1 },	-- Strange Mineralized Water
 				},
 				["groups"] = {
 					i(170137),	-- Azerite-Infused Crystal Flayer
