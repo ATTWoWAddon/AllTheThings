@@ -14,7 +14,7 @@ REMIX_LEGION = createHeader({
 		en = "Remix: Legion",
 		ko = "군단 리믹스",
 		cn = "军团再临：幻境新生",
-		tw = "軍​​臨​​天下：​​混​搭​再​​造​",
+		tw = "軍臨天下：混搭再造",
 	},
 	--description = {
 	--	en = "",
