@@ -13,8 +13,8 @@ WARCRAFT_MOVIE = createHeader({
 	},
 	description = {
 		en = "These were rewarded for logging in at least once per faction while the Warcraft movie was still in theaters.",
-		es = "Estos fueron recompensados ​​por iniciar sesión al menos una vez por facción mientras la película de Warcraft aún estaba en los cines.",
-		mx = "Estos fueron recompensados ​​por iniciar sesión al menos una vez por facción mientras la película de Warcraft aún estaba en los cines.",
+		es = "Estos fueron recompensados por iniciar sesión al menos una vez por facción mientras la película de Warcraft aún estaba en los cines.",
+		mx = "Estos fueron recompensados por iniciar sesión al menos una vez por facción mientras la película de Warcraft aún estaba en los cines.",
 		tw = "這些是在《魔獸：崛起》電影仍在上映期間，每個陣營至少登入一次所獲得的獎勵。",
 	},
 });
