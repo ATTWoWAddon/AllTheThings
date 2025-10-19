@@ -15,7 +15,7 @@ NIGHTFALL = createHeader({
 		ru = "Сумерки",
 		ko = "일몰",
 		cn = "夜幕激斗",
-		tw = "夜暮激戰​事件",
+		tw = "夜暮激戰事件",
 	},
 });
 
