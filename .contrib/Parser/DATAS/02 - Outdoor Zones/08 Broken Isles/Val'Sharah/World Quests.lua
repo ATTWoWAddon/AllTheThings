@@ -54,7 +54,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(41700),	-- DANGER: Shalas'aman (rare wq)
 			q(43101),	-- DANGER: Witchdoctor Grgl-Brgl (rare wq)
 			q(41995),	-- Dark Corruption
-			petbattle(q(41860)),	-- Dealing with Satyrs
+			petbattle(q(41860, {	-- Dealing with Satyrs
+				["coord"] = { 63.6, 60.6, VALSHARAH }
+			})),
 			q(44884),	-- Defense of Emerald Bay (Invasion WQ)
 			q(41291, {	-- Dreamleaf Cluster
 				["requireSkill"] = HERBALISM,
