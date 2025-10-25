@@ -5,6 +5,7 @@
 root(ROOTS.PVP, pvp(n(RATED, {
 	n(ACHIEVEMENTS, {
 		ach(5351, {	-- Blood Guard
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(174, {	-- Blood Guard
@@ -13,6 +14,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5338, {	-- Centurion
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(176, {	-- Centurion
@@ -21,6 +23,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5353, {	-- Champion
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(177, {	-- Champion
@@ -29,6 +32,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5340, {	-- Commander
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(164, {	-- Commander
@@ -37,6 +41,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5331, {	-- Corporal
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(155, {	-- Corporal
@@ -45,6 +50,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5357, {	-- Field Marshal
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(166, {	-- Field Marshal
@@ -53,6 +59,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5349, {	-- First Sergeant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(172, {	-- First Sergeant
@@ -61,6 +68,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5355, {	-- General
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(179, {	-- General
@@ -69,6 +77,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5343, {	-- Grand Marshal
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(167, {	-- Grand Marshal
@@ -77,6 +86,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5346, {	-- Grunt
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(169, {	-- Grunt
@@ -85,6 +95,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(6942, {	-- Hero of the Alliance
+			["timeline"] = { ADDED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(182, {	-- Hero of the Alliance
@@ -93,6 +104,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(6941, {	-- Hero of the Horde
+			["timeline"] = { ADDED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(183, {	-- Hero of the Horde
@@ -101,6 +113,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5356, {	-- High Warlord
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(181, {	-- High Warlord
@@ -109,28 +122,35 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5327, {	-- In Service of the Alliance (25)
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				ach(5322, {	-- In Service of the Alliance (10)
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5268, {	-- In Service of the Alliance (1)
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			},
 		}),
 		ach(5324, {	-- In Service of the Horde (25)
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				ach(5323, {	-- In Service of the Horde (10)
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5269, {	-- In Service of the Horde (1)
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			},
 		}),
 		ach(5335, {	-- Knight
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(159, {	-- Knight
@@ -139,6 +159,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5337, {	-- Knight-Captain
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(161, {	-- Knight-Captain
@@ -147,6 +168,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5359, {	-- Knight-Champion
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(162, {	-- Knight-Champion
@@ -155,6 +177,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5336, {	-- Knight-Lieutenant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(160, {	-- Knight-Lieutenant
@@ -163,6 +186,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5352, {	-- Legionnaire
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(175, {	-- Legionnaire
@@ -171,6 +195,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5339, {	-- Lieutenant Commander
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(163, {	-- Lieutenant Commander
@@ -179,6 +204,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5354, {	-- Lieutenant General
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(178, {	-- Lieutenant General
@@ -187,6 +213,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5341, {	-- Marshal
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(165, {	-- Marshal
@@ -195,6 +222,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5333, {	-- Master Sergeant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(157, {	-- Master Sergeant
@@ -203,6 +231,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5330, {	-- Private
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(154, {	-- Private
@@ -211,6 +240,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5345, {	-- Scout
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(168, {	-- Scout
@@ -219,6 +249,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5348, {	-- Senior Sergeant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(171, {	-- Senior Sergeant
@@ -227,6 +258,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5332, {	-- Sergeant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(156, {	-- Sergeant
@@ -235,6 +267,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5347, {	-- Sergeant
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(170, {	-- Sergeant
@@ -243,12 +276,14 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5334, {	-- Sergeant Major
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				a(title(158)),	-- Sergeant Major
 			},
 		}),
 		ach(5350, {	-- Stone Guard
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(173, {	-- Stone Guard
@@ -257,12 +292,14 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5329, {	-- Warbound Veteran of the Alliance
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(145, {	-- Warbound
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5823, {	-- Veteran of the Alliance II
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(70909, {	-- Vicious War Steed (MOUNT!)
@@ -271,6 +308,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 					},
 				}),
 				ach(5328, {	-- Veteran of the Alliance
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(70909, {	-- Vicious War Steed (MOUNT!)
@@ -284,6 +322,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5326, {	-- Warbringer of the Horde
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				-- #if NOT ANYCLASSIC
@@ -296,6 +335,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 				}),
 				-- #endif
 				ach(5824, {	-- Veteran of the Horde II
+					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(70910, {	-- Vicious War Wolf (MOUNT!)
@@ -304,6 +344,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 					},
 				}),
 				ach(5325, {	-- Veteran of the Horde
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(70910, {	-- Vicious War Wolf (MOUNT!)
@@ -317,6 +358,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			},
 		}),
 		ach(5342, {	-- Warlord
+			["timeline"] = { ADDED_4_0_3 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(180, {	-- Warlord
