@@ -202,6 +202,27 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			ach(20585, {	-- Keystone Hero: The Dawnbreaker
 				spell(445414),	-- Path of the Arathi Flagship
 			}),
+			ach(61876, {	-- The Unbound Damage Dealer (automated)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+			}),
+			ach(61877, {	-- The Unbound Dungeon Master
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+				-- Meta achievement
+				["sym"] = {{"meta_achievement",
+					61876,	-- The Unbound Damage Dealer
+					61875,	-- The Unbound Healer
+					61874,	-- The Unbound Tank
+				}},
+				["groups"] = {
+					title(636),	-- <Name> the Triple Threat
+				},
+			}),
+			ach(61875, {	-- The Unbound Healer (automated)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+			}),
+			ach(61874, {	-- The Unbound Tank (automated)
+				["timeline"] = { ADDED_11_2_5, REMOVED_12_0_0 },	-- Added October 24th (hotfixed)
+			}),
 			-- Using ["_noautomation"] for all to reduce numbers a bit.
 			-- Have to see what Blizzard does with those kind of achievements -- Goldenshacal 20th August 2025
 			ach(42149, {	-- The War Within Season 3: Resilient Keystone 12
