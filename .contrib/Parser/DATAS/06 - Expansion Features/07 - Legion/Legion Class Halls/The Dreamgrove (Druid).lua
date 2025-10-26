@@ -7,7 +7,8 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	icon = 1128042,
 	text = {
 		en = "Event Roll",
-		es = "Rollo de eventos",
+		es = "Rotación de evento",
+		mx = "Rotación de evento",
 		de = "Ereignisliste",
 		fr = "Rouleau d'événement",
 		it = "Rotolo di eventi",
@@ -18,6 +19,8 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
+		es = "Si esta misión tiene una marca de verificación, comprueba debajo qué piedra está activa. Si ninguna está marcada, significa que no se puede interactuar con ninguna de las piedras buhogato hoy y que debes volver mañana.",
+		mx = "Si esta misión tiene un check, revisa debajo qué piedra está activa. Si ninguna está marcada, significa que no se puede interactuar con ninguna de las piedras buhogato hoy y que debes volver mañana.",
 	},
 });
 DUSKWOOD_ACTIVE = createHeader({
@@ -30,6 +33,8 @@ DUSKWOOD_ACTIVE = createHeader({
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+		es = "Si esta misión tiene una marca de verificación al lado, significa que la piedra está activa.",
+		mx = "Si esta misión tiene un check al lado, significa que la piedra está activa.",
 	},
 });
 FERALAS_ACTIVE = createHeader({
@@ -42,6 +47,8 @@ FERALAS_ACTIVE = createHeader({
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+		es = "Si esta misión tiene una marca de verificación al lado, significa que la piedra está activa.",
+		mx = "Si esta misión tiene un check al lado, significa que la piedra está activa.",
 	},
 });
 THE_HINTERLANDS_ACTIVE = createHeader({
@@ -54,6 +61,8 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then that means the stone is active.",
+		es = "Si esta misión tiene una marca de verificación al lado, significa que la piedra está activa.",
+		mx = "Si esta misión tiene una check al lado, significa que la piedra está activa.",
 	},
 });
 DUSKWOOD_ACTIVATED = createHeader({
@@ -66,6 +75,8 @@ DUSKWOOD_ACTIVATED = createHeader({
 	},
 	description = {
 		en = "This quest indicates if you have activated the Duskwood Owlcat Stone.",
+		es = "Esta misión indica si has activado la Piedra buhogato de Bosque del Ocaso.",
+		mx = "Esta misión muestra si has activado la Piedra buhogato de Bosque del Ocaso.",
 	},
 });
 FERALAS_ACTIVATED = createHeader({
@@ -78,6 +89,8 @@ FERALAS_ACTIVATED = createHeader({
 	},
 	description = {
 		en = "This quest indicates if you have activated the Feralas Owlcat Stone.",
+		es = "Esta misión indica si has activado la Piedra buhogato de Feralas.",
+		mx = "Esta misión muestra si has activado la Piedra buhogato de Feralas.",
 	},
 });
 THE_HINTERLANDS_ACTIVATED = createHeader({
@@ -90,6 +103,8 @@ THE_HINTERLANDS_ACTIVATED = createHeader({
 	},
 	description = {
 		en = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
+		es = "Esta misión indica si has activado la Piedra buhogato de las Tierras del Interior.",
+		mx = "Esta misión muestra si has activado la Piedra buhogato de las Tierras del Interior.",
 	},
 });
 
