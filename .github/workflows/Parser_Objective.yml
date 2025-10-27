@@ -58,7 +58,7 @@ jobs:
           "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
         shell: cmd
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
             name: db  # Artifact name
             path: db/  # File path to upload
