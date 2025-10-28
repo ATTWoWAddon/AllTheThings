@@ -4466,8 +4466,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										it = "",
 										pt = "",
 										ru = "",
-										ko = "",
-										cn = "",]]--
+										ko = "",]]--
+										cn = "考古学家的车",
 									},
 								}) },
 							},

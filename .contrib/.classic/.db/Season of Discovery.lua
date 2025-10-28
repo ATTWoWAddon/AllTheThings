@@ -3642,8 +3642,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					pt = "",
 					ru = "",
 					ko = "",
-					cn = "",
 					]]--
+					cn = "制造",
 					tw = "製作",
 				},
 			}), {
@@ -4033,8 +4033,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					pt = "",
 					ru = "",
 					ko = "",
-					cn = "",
 					]]--
+					cn = "采集",
 					tw = "採集",
 				},
 			}), {

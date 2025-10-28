@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此设置可显示需要达成挑战模式服务器最佳成绩的内容。",
 		-- TODO: tw = "",
 	},
 })

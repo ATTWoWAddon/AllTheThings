@@ -2639,8 +2639,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pt = "",
 					ru = "",
 					ko = "",
-					cn = "",
 					]]--
+					cn = "鲜血之月",
 				},
 				description = {
 					en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",

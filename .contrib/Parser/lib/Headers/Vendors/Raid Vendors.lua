@@ -30,9 +30,9 @@ RAID_FLEXIBLE_VENDOR = createHeader({
 		pt = "",
 		ru = "",
 		ko = "",
-		cn = "",
 		tw = "",
 		]]--
+		cn = "灵活供应商",
 	},
 });
 RAID_NORMAL_VENDOR = createHeader({
