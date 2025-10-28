@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, bubbleDownSelf({
+root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 	["icon"] = 236712,
 	["maps"] = {
 		2451,	-- Arathi Highlands (Catch Up Experience)
@@ -135,4 +135,4 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, bubbleDownSelf({
 			}),
 		}),
 	},
-})));
+}));
