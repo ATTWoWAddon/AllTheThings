@@ -104,8 +104,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					155025,	-- Greater Pyroclasmic Arcanocrystal
 				},
 				["cost"] = {
-					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
+					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 				},
 				["groups"] = {
 					i(170129),	-- Salgos' Volatile Basher
@@ -118,8 +118,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					154979,	-- Greater Benthic Arcanocrystal
 				},
 				["cost"] = {
-					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
+					{ "i", 169332, 1 },	-- Strange Mineralized Water
 				},
 				["groups"] = {
 					i(170124),	-- Coral-Sharpened Greatsword
@@ -157,8 +157,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					154979,	-- Greater Benthic Arcanocrystal
 				},
 				["cost"] = {
-					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
+					{ "i", 169332, 1 },	-- Strange Mineralized Water
 				},
 				["groups"] = {
 					i(170127),	-- Pyroclastic Halberd
