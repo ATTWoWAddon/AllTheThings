@@ -4168,7 +4168,6 @@ root(ROOTS.Unsorted, {
 			i(243304),	-- Jubilant Snowman Costume
 			i(243327),	-- Zhevra-Stripe Rug
 			i(243336),	-- Elder Rise Rug
-			i(243573),	-- Poorly Written Plans
 			i(244314),	-- Frostwall Architect's Table
 			i(244317),	-- Orcish Banded Barrel
 			i(244318),	-- Wine Barrel
@@ -4273,9 +4272,6 @@ root(ROOTS.Unsorted, {
 			i(248657),	-- Valdrakken Market Tent
 			i(249143),	-- Smoke Sconce
 			i(249386),	-- Ghost Gear
-			i(249771),	-- Large Blue Bag
-			i(249772),	-- Large Red Bag
-			i(249773),	-- Large Black Bag
 			i(250309),	-- Simple Dagger \\ [PH] Simple Dagger
 			i(250310),	-- Simple Knife \\ [PH] Simple Knife
 			i(250311),	-- Standard Warrior's Sword \\ [PH] Standard Warrior's Sword
