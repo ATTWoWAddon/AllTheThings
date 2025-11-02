@@ -5,14 +5,9 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 	["icon"] = 236712,
 	["maps"] = {
 		2451,	-- Arathi Highlands (Catch Up Experience)
-		-- Exo note: Add a "Lore" or "Description"? WARNING: If you try to leave the area, the whole "experience" resets back to the first quest.
-		-- The only place you can escape through, is flying away behind Stromgarde Keep. The rest of the area is covered with invisible walls.
-		-- 1st Playthrough completed on an Alliance (Human) Paladin. Needs to be checked on Horde for possible quest differences.
-		-- Exo rant. Can be removed, don't care.
-		-- Personally? This thing sucks. Story is... Dumb? Has nothing to do with ANY current Storyline/Lore. Gnolls and Ogres joined forces to attack Stromgarde? HA!
-		-- "Catch Up" is recommended on characters that are WAY past iLVL of gear rewarded here.
-		-- The only value of this is obtaining missing Gear Update/Conversion gear that you don't have and you are lazy to wait for Gear Update to kick in for your alts you don't play.
 	},
+	["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character".
+	["description"] = "|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
 		n(QUESTS, {
@@ -190,10 +185,6 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["races"] = HORDE_ONLY,
 				["coord"] = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
 			}),
-			-- Exo Note: While flying back to Stromgarde to turn in 90897, following was triggered
-			-- ATT [Quest completed Pardon the Interruption (93382) (Not in ATT [Git])]
-			-- lq:90896<90893<90895<92028<90888
-			-- Delayed Alt-Quest completion for 92028?
 			q(90911, {	-- Your Next Adventure
 				["sourceQuests"] = {
 					90897,	-- Back to Stromgarde
@@ -201,14 +192,20 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 				},
 				["sourceQuestNumRequired"] = 1,
 				["qgs"] = {
-					244714, -- Lady Jaina Proudmoore
-					244715, -- Thrall
+					244714, -- Lady Jaina Proudmoore [A]
+					244715, -- Thrall [H]
 				},
 				["coords"] = {
-					{ 19.5, 61.6, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina
-					{ 69.2, 34.6, ARATHI_HIGHLANDS_CATCHUP },	-- Thrall
+					{ 19.5, 61.6, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina [A]
+					{ 69.2, 34.6, ARATHI_HIGHLANDS_CATCHUP },	-- Thrall [H]
 				},
 			}),
 		}),
 	},
 }));
+
+expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+	m(ARATHI_HIGHLANDS_CATCHUP
+		q(93382),	-- Pardon the Interruption
+	}),
+})),
