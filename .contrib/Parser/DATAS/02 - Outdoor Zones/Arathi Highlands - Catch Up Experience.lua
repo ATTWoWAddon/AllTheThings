@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			q(90882, {	-- Gnoll Way
 				["qgs"] = {
 					244643,	-- Lady Jaina Proudmoore [A]
-					244642, -- Thrall [H]
+					244642,	-- Thrall [H]
 				},
 				["coords"] = {
 					{ 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 				["sourceQuest"] = 90882,	-- Gnoll Way
 				["qgs"] = {
 					244643,	-- Lady Jaina Proudmoore [A]
-					244642, -- Thrall [H]
+					244642,	-- Thrall [H]
 				},
 				["coords"] = {
 					{ 70.0, 40.7, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90885, {	-- My Beautiful Pumpkins
 				["sourceQuest"] = 90883,	-- To Go'shek Farm
-				["qg"] = 244729, -- Farmer Bruvk
+				["qg"] = 244729,	-- Farmer Bruvk
 				["coord"] = { 56.4, 59.6, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Rings
 					-- Paladin
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90886, {	-- Best Laid Plans of Kobolds and Ogres
 				["sourceQuest"] = 90883,	-- To Go'shek Farm
-				["qg"] = 244656, -- Thrall
+				["qg"] = 244656,	-- Thrall
 				["coord"] = { 56.3, 59.6, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Boots and Gloves
 					-- Paladin
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90887, {	-- Farmer's Nemesis
 				["sourceQuest"] = 90883,	-- To Go'shek Farm
-				["qg"] = 244655, -- Lady Jaina Proudmoore
+				["qg"] = 244655,	-- Lady Jaina Proudmoore
 				["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Cloak and Chest
 					-- Paladin
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 					90886,	-- Best Laid Plans of Kobolds and Ogres
 					90887,	-- Farmer's Nemesis
 				},
-				["qg"] = 244655, -- Lady Jaina Proudmoore
+				["qg"] = 244655,	-- Lady Jaina Proudmoore
 				["coord"] = { 56.5, 59.7, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Trinkets
 					-- Paladin
@@ -112,13 +112,13 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 					90886,	-- Best Laid Plans of Kobolds and Ogres
 					90887,	-- Farmer's Nemesis
 				},
-				["qg"] = 249423, -- Sergeant Colvin
+				["qg"] = 249423,	-- Sergeant Colvin
 				["coord"] = { 19.6, 57.5, ARATHI_HIGHLANDS_CATCHUP },
 				-- Activate Fightbot 11.2.7, then interrupt its abilities... Creative much?
 			}),
 			q(90888, {	-- Catapult Bombardment [A]
 				["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-				["qg"] = 244658, -- Lady Jaina Proudmoore
+				["qg"] = 244658,	-- Lady Jaina Proudmoore
 				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {	-- Pants and Necklace
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90895, {	-- Catapult Bombardment [H]
 				["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-				["qg"] = 244658, -- Lady Jaina Proudmoore
+				["qg"] = 244658,	-- Lady Jaina Proudmoore
 				["coord"] = { 19.5, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["races"] = HORDE_ONLY,
 				["groups"] = {	-- Pants and Necklace
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90893, {	-- Repelling the Siege
 				["sourceQuest"] = 90888,	-- Saving Stromgarde Keep
-				["qg"] = 244657, -- Thrall
+				["qg"] = 244657,	-- Thrall
 				["coord"] = { 19.4, 57.4, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Waist and Wrist
 					-- Paladin
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 					90888,	-- Catapult Bombardment
 					90893,	-- Repelling the Siege
 				},
-				["qg"] = 244666, -- Thrall
+				["qg"] = 244666,	-- Thrall
 				["coord"] = { 24.6, 37.1, ARATHI_HIGHLANDS_CATCHUP },
 				["groups"] = {	-- Head & Shoulders... TM
 					-- Paladin
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 			q(90897, {	-- Back to Stromgarde
 				["sourceQuest"] = 90896,	-- One Last Ogre
-				["qg"] = 244667, -- Lady Jaina Proudmoore
+				["qg"] = 244667,	-- Lady Jaina Proudmoore
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 24.7, 37.1, ARATHI_HIGHLANDS_CATCHUP },
 			}),
@@ -192,8 +192,8 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 				},
 				["sourceQuestNumRequired"] = 1,
 				["qgs"] = {
-					244714, -- Lady Jaina Proudmoore [A]
-					244715, -- Thrall [H]
+					244714,	-- Lady Jaina Proudmoore [A]
+					244715,	-- Thrall [H]
 				},
 				["coords"] = {
 					{ 19.5, 61.6, ARATHI_HIGHLANDS_CATCHUP },	-- Jaina [A]
