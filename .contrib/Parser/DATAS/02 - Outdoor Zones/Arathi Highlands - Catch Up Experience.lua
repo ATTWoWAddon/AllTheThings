@@ -204,8 +204,10 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 	},
 }));
 
-expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-	m(ARATHI_HIGHLANDS_CATCHUP, {
-		q(93382),	-- Pardon the Interruption
-	}),
-}));
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
+		m(ARATHI_HIGHLANDS_CATCHUP, {
+			q(93382),	-- Pardon the Interruption
+		}),
+	}));
+});
