@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 	["maps"] = {
 		2451,	-- Arathi Highlands (Catch Up Experience)
 	},
-	["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character".
+	["lore"] = "Journey through the Arathi Highlands to help refamiliarize yourself with World of Warcraft and receive upgraded gear for your character.",
 	["description"] = "|cFFE50D12WARNING:|r Trying to fly out of the area will reset the whole experience.",
 	["timeline"] = { ADDED_11_2_7 },
 	["groups"] = {
