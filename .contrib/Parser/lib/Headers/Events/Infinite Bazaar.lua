@@ -11,7 +11,7 @@ INFINITE_BAZAAR = createHeader({
 		-- ko = "",
 		-- pt = "",
 		-- ru = "",
-		-- cn = "",
+		cn = "永恒集市",
 		tw = "無限市集",
 	},
 	-- #if BEFORE 11.2.5

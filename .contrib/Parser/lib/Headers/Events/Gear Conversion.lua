@@ -11,7 +11,7 @@ GEAR_CONVERSION = createHeader({
 		-- ko = "",
 		-- pt = "",
 		-- ru = "",
-		-- cn = "",
+		cn = "装备转换",
 		tw = "裝備轉換",
 	},
 	description = {
