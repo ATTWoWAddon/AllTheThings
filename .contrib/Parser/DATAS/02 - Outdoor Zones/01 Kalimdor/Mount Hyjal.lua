@@ -6,9 +6,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
 		["icon"] = 409547,
 		["timeline"] = { ADDED_4_0_3 },
-		["maps"] = {
-			760,	-- Malorne's Nightmare
-		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(5483, {	-- Bounce

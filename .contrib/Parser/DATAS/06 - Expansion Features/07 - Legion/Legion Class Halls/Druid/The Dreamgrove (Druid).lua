@@ -245,7 +245,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							107214,	-- Guardian of the Dream
 							107215,	-- Guardian of the Dream
 						},
-						["coord"] = { 61.6, 65.6, 760 },
+						["coord"] = { 61.6, 65.6, MARLONE_NIGHTMARE },
 					}),
 					q(41332, {	-- Ascending The Circle
 						["sourceQuests"] = { 41255 },	-- Sowing The Seed
@@ -409,7 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42050, {	-- Defenders of the Dream
 						["sourceQuests"] = { 42051 },	-- Enter Nightmare
 						["provider"] = { "n", 107163 },	-- Archdruid Hamuul Runetotem
-						["coord"] = { 61.2, 65.2, 760 },
+						["coord"] = { 61.2, 65.2, MARLONE_NIGHTMARE },
 					}),
 					q(43403, {	-- Defending the Isles
 						["sourceQuests"] = { 42046 },	-- A New Beginning
@@ -742,7 +742,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42055, {	-- The Demi-God's Return
 						["sourceQuests"] = { 42054 },	-- Call of the Wilds
 						["provider"] = { "n", 106905 },	-- Malorne
-						["coord"] = { 66.1, 66.8, 760 },
+						["coord"] = { 66.1, 66.8, MARLONE_NIGHTMARE },
 						["groups"] = {
 							i(139723),	-- Robes of the Dreamgrove
 							title(327),	-- Archdruid <Name>
@@ -860,7 +860,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42053, {	-- The War of Ancients
 						["sourceQuests"] = { 42050 },	-- Defenders of the Dream
 						["provider"] = { "n", 107132 },	-- Keeper Remulos
-						["coord"] = { 61.4, 65.6, 760 },
+						["coord"] = { 61.4, 65.6, MARLONE_NIGHTMARE },
 					}),
 					q(42040, {	-- The Way to Nordrassil
 						["sourceQuests"] = { 42037 },	-- Gathering the Dreamweavers
