@@ -3,6 +3,8 @@ VH_WAVE_6_BOSS = createHeader({
 	icon = 135442,
 	text = {
 		en = "Wave 6 Boss",
+		es = "Jefe de la oleada 6",
+		mx = "Jefe de la oleada 6",
 	},
 });
 VH_WAVE_12_BOSS = createHeader({
@@ -10,6 +12,8 @@ VH_WAVE_12_BOSS = createHeader({
 	icon = 236271,
 	text = {
 		en = "Wave 12 Boss",
+		es = "Jefe de la oleada 12",
+		mx = "Jefe de la oleada 12",
 	},
 });
 VH_FINAL_WAVE_BOSS = createHeader({
@@ -17,5 +21,7 @@ VH_FINAL_WAVE_BOSS = createHeader({
 	icon = 135771,
 	text = {
 		en = "Final Wave Boss",
+		es = "Jefe de la oleada final",
+		mx = "Jefe de la oleada final",
 	},
 });
