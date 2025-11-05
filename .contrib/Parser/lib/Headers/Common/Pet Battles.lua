@@ -8,5 +8,7 @@ PET_BATTLES = createHeader({
 	},
 	description = {
 		en = "This section contains Pet Battle related quests and tamers.",
+		es = "Esta sección contiene misiones y domadores relacionados con los Duelos de Mascotas.",
+		mx = "Esta sección contiene misiones y domadores relacionados con los Duelos de Mascotas.",
 	},
 });
