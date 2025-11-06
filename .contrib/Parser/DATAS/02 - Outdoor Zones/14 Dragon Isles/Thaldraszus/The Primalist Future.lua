@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						-- Cache?
 						i(203681, {	-- Stormed Primalist Cache
 							["cost"] = {
-								{ "i", ESSENCE_OF_THE_STORM, 45 },
+								{ "i", ESSENCE_OF_THE_STORM, 30 },
 							},
 						}),
 						-- Collect?
