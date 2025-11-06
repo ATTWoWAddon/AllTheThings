@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				})),
 				n(199425, {	-- Brendormi <Field Primal Researcher>
-					["coord"] = { 59.9, 48.4, THE_PRIMALIST_FUTURE },
+					["coord"] = { 61.2 46.8, THE_PRIMALIST_FUTURE },
 					["groups"] = {
 						-- Gear?
 						i(201961, {	-- Bronze Band of Destinies
