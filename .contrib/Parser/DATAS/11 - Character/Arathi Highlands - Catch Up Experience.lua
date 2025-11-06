@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
+root(ROOTS.Character, n(CATCH_UP, m(ARATHI_HIGHLANDS_CATCHUP, {
 	["icon"] = 236712,
 	["maps"] = {
 		2451,	-- Arathi Highlands (Catch Up Experience)
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(ARATHI_HIGHLANDS_CATCHUP, {
 			}),
 		}),
 	},
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
