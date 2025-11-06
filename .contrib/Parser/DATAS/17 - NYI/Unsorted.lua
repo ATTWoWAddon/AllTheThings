@@ -3985,7 +3985,6 @@ root(ROOTS.Unsorted, {
 			i(264164),	-- Galactic Gladiator's Tabard
 			i(264165),	-- Tiff
 			i(264166),	-- Void Artifact Shard
-			i(264168),	-- Cenarion Round Rug
 			i(264182),	-- Kelum'ko's Generous Aromatic Gift
 			i(264183),	-- Kelum'ko's Generous Aromatic Gift
 			i(264184),	-- Arsenal: Heirlooms of Atal'Aman
@@ -4112,1360 +4111,1013 @@ root(ROOTS.Unsorted, {
 	}),
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_7 } }, {
-			i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean
-			i(228960),	-- [DNT]Small Bag of Coffee Beans \\ Small Bag of Coffee Beans
-			i(228961),	-- [DNT]Medium Bag of Coffee Beans \\ Medium Bag of Coffee Beans
-			i(228962),	-- [DNT]Large Bag of Coffee Beans \\ Large Bag of Coffee Beans
-			i(228968),	-- [DNT]Phoenix Cold Brew \\ Phoenix Cold Brew
-			i(228969),	-- [DNT]Enchanted Espresso \\ Enchanted Espresso
-			i(228970),	-- [DNT]Highmountain Mocha \\ Highmountain Mocha
-			i(228971),	-- [DNT]Captain's Cappuccino \\ Captain's Cappuccino
-			i(228972),	-- [DNT]Darkshore Decaf \\ Darkshore Decaf
-			i(228973),	-- [DNT]Royal Tea \\ Royal Tea
-			i(228974),	-- [DNT]Kalimdoricano \\ Kalimdoricano
-			i(229004),	-- Vegetable Medley
-			i(229197),	-- [DNT]Sack of Coffee Beans \\ Sack of Coffee Beans
-			i(229913),	-- Letter from Aysa
-			i(229995),	-- Gorgoa Reed
-			i(230012),	-- [DNT]Black Coffee \\ Black Coffee
-			i(233203),	-- Schematic: Housing Crafting Test Recipe
-			i(234621),	-- Used Fireworks
-			i(234622),	-- Short Grain Rice
-			i(234623),	-- Barley Grains
-			i(234625),	-- Freshwater Crabs
-			i(235715),	-- Blue Floristar
-			i(235818),	-- Celestial Firework
-			i(239098),	-- Neighborhood Charter
-			i(242520),	-- Festival Hot Air Balloon
-			i(242691),	-- Olemba Lumber
-			i(242948),	-- Loch Modan Bearskin Rug
-			i(243101),	-- Red Dazar'alor Rug
-			i(243197),	-- Matured Hoof Piece
-			i(243199),	-- Majestic Whisker
-			i(243200),	-- Slightly Smooth Scales
-			i(243201),	-- Massive Serpent Fang
-			i(243202),	-- Tiny Pangolin Fang
-			i(243204),	-- Stiff Bristles
-			i(243206),	-- Cracked Predator's Claw
-			i(243207),	-- Matted Cat Hair
-			i(243208),	-- Mangled Leg Meat
-			i(243209),	-- Split Bird Beak
-			i(243210),	-- Shredded Ray Fin
-			i(243211),	-- Shattered Aquatic Jaw
-			i(243212),	-- Toxic Barbed Stinger
-			i(243213),	-- Gnawed Rabbit's Foot
-			i(243214),	-- Shed Vulpine Fur
-			i(243215),	-- Enlarged Insect Organs
-			i(243216),	-- Snapped Antennae
-			i(243218),	-- Pristine Blushleaf Shell
-			i(243222),	-- Pillaged Rake
-			i(243223),	-- Shredded Linen Cloth
-			i(243224),	-- Pilfered Spade
-			i(243225),	-- Mashed Carrot
-			i(243226),	-- Glimmering Elemental Core
-			i(243227),	-- Handful of Water Droplets
-			i(243228),	-- Dim Elemental Essence
-			i(243304),	-- Jubilant Snowman Costume
-			i(243327),	-- Zhevra-Stripe Rug
-			i(243336),	-- Elder Rise Rug
-			i(244314),	-- Frostwall Architect's Table
-			i(244317),	-- Orcish Banded Barrel
-			i(244318),	-- Wine Barrel
-			i(244319),	-- Wooden Shipping Crate
-			i(244323),	-- Orcish Sleeping Cot
-			i(244906),	-- Gently Shaken Gift
-			i(244908),	-- Winter Veil Gift
-			i(245305),	-- Undermine Bean Bag Chair
-			i(245312),	-- Rusting Bolted Bench
-			i(245323),	-- Shredderwheel Storage Chest
-			i(245326),	-- Kaheti Predator's Assortment
-			i(245396),	-- Suramar Dresser
-			i(245406),	-- Tauren Leather Fence
-			i(245407),	-- Tauren Fencepost
-			i(245408),	-- Tauren Soup Pot
-			i(245412),	-- Zandalari Ritual Drum
-			i(245414),	-- Zandalari Skullfire Lamp
-			i(245415),	-- Zuldazar Fence
-			i(245416),	-- Zuldazar Fencepost
-			i(245418),	-- Zanchuli Tapestry
-			i(245421),	-- Karabor Bed
-			i(245428),	-- Hungry Human's Platter
-			i(245432),	-- Blackrock Bunkbed
-			i(245436),	-- Blackrock Weapon Rack
-			i(245459),	-- Tauren Storage Chest
-			i(245484),	-- Boralus-Style Lobster Platter
-			i(245496),	-- Small Mask of Bwonsamdi, Loa of Graves
-			i(245499),	-- Gilded Zandalari Table
-			i(245502),	-- Brill Coffin
-			i(245503),	-- Brill Coffin Lid
-			i(245509),	-- Pandaren Stone Wall
-			i(245513),	-- Square Pandaren Table
-			i(245514),	-- Pandaren Wooden Table
-			i(245517),	-- Gilnean Cauldron
-			i(245534),	-- Frostwall Elevated Brazier
-			i(245544),	-- Tiny Snow Buddy
-			i(245557),	-- Shaded Suramar Window
-			i(245559),	-- Octagonal Ochre Window
-			i(245580),	-- Rolling Snowball
-			i(245586),	-- Ironwood Lumber
-			i(245600),	-- Frostwall Forge
-			i(245601),	-- Ancestral Signal Brazier
-			i(245602),	-- Gilnean Problem Solver
-			i(245618),	-- Surwich Expedition Tent
-			i(245621),	-- Gilnean Wooden Table
-			i(245622),	-- Gilnean Wall Shelf
-			i(245623),	-- Gilnean Rocking Chair
-			i(246066),	-- Schmancy Goblin String Lights
-			i(246111),	-- Shadowforge Sconce
-			i(246410),	-- Dark Iron Table Saw
-			i(246413),	-- Blackrock Lamppost
-			i(246420),	-- Kharanos Bookcase
-			i(246423),	-- Wooden Ironforge Table
-			i(246462),	-- Draconic Polearm
-			i(246486),	-- Gnomish Tesla Mega-Coil
-			i(246488),	-- Ironforge Chandelier
-			i(246489),	-- Steel Ironforge Emblem
-			i(246500),	-- Mechagon Miniature Artificial Sun
-			i(246604),	-- Deactivated Atomic Recalibrator
-			i(246685),	-- Dwarven District Banner
-			i(246697),	-- Self-Assembling Homeware Kit
-			i(246700),	-- Gnomish Steam-Powered Bed
-			i(246705),	-- Caramel Mint Noodle Dish
-			i(247220),	-- Mushan Dumpling Stack
-			i(247222),	-- Drake Kebab Platter
-			i(247224),	-- Valdrakken Blossomfruit Platter
-			i(247225),	-- Bruffalon Rib Platter
-			i(247661),	-- Pandaren Signal Brazier
-			i(247669),	-- Lorewalker's Bookcase
-			i(247728),	-- Pandaren Stone Post
-			i(247733),	-- Halfhill Cookpot
-			i(247735),	-- Lucky Traveler's Bench
-			i(247736),	-- Jade Temple Dragon Fountain
-			i(247738),	-- Pandaren Meander Rug
-			i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
-			i(247752),	-- Pandaren Fireplace
-			i(247767),	-- Wise Pandaren's Bed
-			i(247856),	-- Serenity Peak Tent
-			i(247909),	-- Suramar Fencepost
-			i(247916),	-- Covered Square Suramar Table
-			i(247918),	-- Nightborne Jeweler's Table
-			i(247920),	-- Circular Shal'dorei Rug
-			i(247922),	-- Suramar Fence
-			i(247923),	-- Suramar Containment Cell
-			i(247925),	-- Suramar Storage Crate
-			i(248010),	-- Shal'dorei Open-Air Tent
-			i(248012),	-- Dornic Fir Lumber
-			i(248013),	-- Model Plate: Dornic Mine and Cheese Platter
-			i(248106),	-- Valdrakken Banded Barrel
-			i(248107),	-- Valdrakken Storage Crate
-			i(248108),	-- Long Valdrakken Storage Crate
-			i(248109),	-- Valdrakken Fence
-			i(248110),	-- Valdrakken Fencepost
-			i(248111),	-- Verdant Valdrakken Vase
-			i(248113),	-- Thaldraszus Telescope
-			i(248114),	-- Draconic Nesting Bed
-			i(248118),	-- Literature of the Blue Dragonflight
-			i(248119),	-- Literature of the Green Dragonflight
-			i(248120),	-- Literature of the Red Dragonflight
-			i(248121),	-- Draconic Circular Rug
-			i(248654),	-- Valdrakken Gilded Throne
-			i(248657),	-- Valdrakken Market Tent
-			i(249143),	-- Smoke Sconce
-			i(249386),	-- Ghost Gear
-			i(250309),	-- Simple Dagger \\ [PH] Simple Dagger
-			i(250310),	-- Simple Knife \\ [PH] Simple Knife
-			i(250311),	-- Standard Warrior's Sword \\ [PH] Standard Warrior's Sword
-			i(250312),	-- Warrior's Katana \\ [PH] Warrior's Katana
-			i(250313),	-- Vicious Warrior's Blade \\ [PH] Viscious Warrior's Blade
-			i(250314),	-- Standard Hunter's Glaive \\ [PH] Standard Hunter's Glaive
-			i(250315),	-- Hunter's Etched Glaive \\ [PH] Hunter's Etched Glaive
-			i(251482),	-- Draenei Stargazer's Telescope
-			i(251495),	-- Draenic Basin
-			i(251514),	-- Shield of Unending Sorrow
-			i(251515),	-- Shield of Unending Grief
-			i(251516),	-- Shield of Unending Pain
-			i(251517),	-- Shield of Unending Woe
-			i(251546),	-- Argussian Circular Rug
-			i(251550),	-- Draenethyst Sconce
-			i(251655),	-- Draenethyst String Lights
-			i(251762),	-- Coldwind Lumber
-			i(251763),	-- Bamboo Lumber
-			i(251764),	-- Ashwood Lumber
-			i(251766),	-- Shadowmoon Lumber
-			i(251767),	-- Fel-Touched Lumber
-			i(251768),	-- Darkpine Lumber
-			i(251772),	-- Arden Lumber
-			i(251773),	-- Dragonpine Lumber
-			i(252035),	-- Boralus Barrel
-			i(252389),	-- Proudmoore Shipping Crate
-			i(252397),	-- Brennadam Grinder
-			i(252401),	-- Boralus Bookshelf
-			i(252423),	-- Truffles
-			i(252755),	-- Dornogal Framed Rug
-			i(252758),	-- Boulder Springs Hot Tub
-			i(252947),	-- Honeycomb
-			i(252952),	-- Bewitched Berries
-			i(252990),	-- Drustvar Candies
-			i(253022),	-- Dornogal Bookcase
-			i(253036),	-- Freywold Table
-			i(253039),	-- Dornogal Hanging Sconce
-			i(253042),	-- Felwood Candies
-			i(253043),	-- Duskwood Candies
-			i(253044),	-- Crusader's Emerald Blade
-			i(253045),	-- Crusader's Amethyst Blade
-			i(253046),	-- Crusader's Ruby Blade
-			i(253047),	-- Crusader's Citrine Blade
-			i(253048),	-- Crusader's Emerald Greatblade
-			i(253049),	-- Crusader's Amethyst Greatblade
-			i(253050),	-- Crusader's Ruby Greatblade
-			i(253051),	-- Crusader's Citrine Greatblade
-			i(253164),	-- Algari Fence
-			i(253165),	-- Algari Fencepost
-			i(253167),	-- Forgeground Market Bins
-			i(253169),	-- Meadery Storage Chest
-			i(253171),	-- Replica Awakening Machine Stasis Pod
-			i(253250),	-- Tirisfal Hollow Campfire
-			i(253252),	-- Replica Rumbling Wastes Drill Pod
-			i(253253),	-- Gundargaz Candelabra
-			i(253274),	-- Crusader's Emerald Greatmace
-			i(253275),	-- Crusader's Amethyst Greatmace
-			i(253276),	-- Crusader's Citrine Greatmace
-			i(253277),	-- Crusader's Ruby Greatmace
-			i(253278),	-- Crusader's Emerald Mace
-			i(253279),	-- Crusader's Amethyst Mace
-			i(253280),	-- Crusader's Ruby Mace
-			i(253281),	-- Crusader's Citrine Mace
-			i(253515),	-- Challenge Card: Glorp
-			i(253517),	-- The Flickering Anima
-			i(253575),	-- Challenge Card: Renegade Swabbie
-			i(253580),	-- Harvesting Hatchet \\ [DNT] [PH] Magic Hatchet
-			i(253581),	-- Challenge Card: Sunny
-			i(253868),	-- Challenge Card: The Quacken
-			i(254323),	-- Worldsoul Satchel
-			i(254324),	-- Worldsoul Satchel
-			i(254325),	-- Worldsoul Satchel
-			i(254332),	-- Garden Tender's Shawl
-			i(254335),	-- Springleaf Swatch
-			i(254504),	-- Adventuring Letter
-			i(254690),	-- Blood-Soaked Invitation
-			i(254693),	-- Distilled Knowledge of Timeways
-			i(254746),	-- Commendation of the Court of Harvesters
-			i(254844),	-- Hammer of the Righteous Lightbringer
-			i(254845),	-- Hammer of the Fallen Lightbringer
-			i(254851),	-- Maw Stalker's Quiver
-			i(254852),	-- Spirit Marksman's Quiver
-			i(254853),	-- Lance of the Architects
-			i(254854),	-- Putrid Necromancer Mantle
-			i(254855),	-- Amice of the Dark Necromancer
-			i(254856),	-- Soul Harvester's Scythe
-			i(254857),	-- Maw Executioner's Guillotine
-			i(254858),	-- Crossbow of the First Ones
-			i(254860),	-- Longsword of the First Ones
-			i(254861),	-- Sinstone Cleaver
-			i(254862),	-- Runeblade of the Maldraxxus Paragon
-			i(254863),	-- Staff of the Penitent
-			i(254864),	-- Oozeframe of the Mad Alchemist
-			i(254865),	-- Shell of the Forbidden Land
-			i(254866),	-- Progenitor's Fractured Smasher
-			i(254867),	-- Progenitor's Fix-It-Up
-			i(254868),	-- Sacred Bell of the Ascended
-			i(254872),	-- Creator's Rod of Origin
-			i(254873),	-- Zerith Vibroblade
-			i(256170),	-- Draconic Scribe's Basin
-			i(256171),	-- Five Flights' Grimoire
-			i(256336),	-- Kyrian Sky Splitter
-			i(256337),	-- The Price Adjuster
-			i(256338),	-- Dagger of Forgotten Vows
-			i(256339),	-- Anima Drinker's Rapier
-			i(256340),	-- Skyguard's Longbow
-			i(256341),	-- Faithspire Redeemer
-			i(256348),	-- Fallen Ascendant's Bulwark
-			i(256349),	-- Warglaives of Devotion
-			i(256350),	-- Animaforged Sentinel's Plate
-			i(256351),	-- Robe of the Forsworn Seer
-			i(256352),	-- Mantle of Harmonized Spirit
-			i(256353),	-- Elysian Pathfinder's Mail
-			i(256355),	-- Animaforged Sentinel's Helm
-			i(256358),	-- Elysian Pathfinder's Visor
-			i(256359),	-- Cowl of the Forsworn Seer
-			i(256360),	-- Mask of Harmonized Spirit
-			i(256427),	-- Wingrest Signal Brazier
-			i(256430),	-- Valdrakken Hanging Cauldron
-			i(256680),	-- Arcan'dor Cutting Fountain
-			i(256681),	-- Nightspire Fountain
-			i(256722),	-- Demoncaller's Azure Crest
-			i(256723),	-- Demoncaller's Emerald Crest
-			i(256724),	-- Demoncaller's Amethyst Crest
-			i(256725),	-- Crest of Unending Woe \\ Demoncaller's Citrine Crest
-			i(256963),	-- Thalassian Lumber
-			i(257035),	-- Bronze Banner of the Exiled
-			i(257036),	-- Draenei Smith's Anvil
-			i(257037),	-- Draenei Holo-Dais
-			i(257038),	-- Draenei Holo-Path
-			i(257039),	-- Draenei Crystal Forge
-			i(257040),	-- Dalaran Runic Anvil
-			i(257041),	-- Stoppered Black Potion
-			i(257042),	-- Gilnean Pitchfork
-			i(257043),	-- Pandaren Alchemist's Retort
-			i(257044),	-- Orcish Felblood Cauldron
-			i(257045),	-- Starry Scrying Pool
-			i(257046),	-- Boralus Bottle Lamp
-			i(257047),	-- Zandalari Bottle Shipment
-			i(257048),	-- Aspirant's Meditation Pool
-			i(257049),	-- Bejeweled Venthyr Chalice
-			i(257050),	-- Veil-Secured Animacone
-			i(257051),	-- Sintallow Candles
-			i(257052),	-- Dragon's Elixir Bottle
-			i(257053),	-- Tapestry of the Five Flights
-			i(257093),	-- Aldor Stellar Console
-			i(257094),	-- Mark of the Mages' Eye
-			i(257095),	-- Twilight Fire Canister
-			i(257096),	-- Pandaren Table Lamp
-			i(257097),	-- Intense Mogu Brazier
-			i(257098),	-- Venthyr Anima Bottle
-			i(257100),	-- Apothecary's Worktable \\ Apothecary's Work Table
-			i(257101),	-- Stampwhistle's Postal Portal
-			i(257102),	-- Nerubian Alchemist's Retort
-			i(257244),	-- Dreamfriend's Waistguard
-			i(257245),	-- Dreamfriend's Girdle
-			i(257246),	-- Dreamfriend's Belt
-			i(257247),	-- Dreamfriend's Sash
-			i(257265),	-- Dreamfriend's Hood
-			i(257266),	-- Dreamfriend's Helm
-			i(257267),	-- Dreamfriend's Cap
-			i(257268),	-- Dreamfriend's Greathelm
-			i(257286),	-- Dream-Touched Choker
-			i(257287),	-- Wistful Signet
-			i(257288),	-- Loop of Dreams
-			i(257290),	-- Dreamfriend's Grips
-			i(257291),	-- Dreamfriend's Gauntlets
-			i(257292),	-- Dreamfriend's Gloves
-			i(257293),	-- Dreamfriend's Handguards
-			i(257294),	-- Dreamfriend's Legguards
-			i(257295),	-- Dreamfriend's Leggings
-			i(257296),	-- Dreamfriend's Scales
-			i(257297),	-- Dreamfriend's Breeches
-			i(257299),	-- Relic of the Somnambulant
-			i(257300),	-- Seed from the Dream
-			i(257301),	-- Dreamfriend's Wraps
-			i(257302),	-- Dreamfriend's Vambraces
-			i(257303),	-- Dreamfriend's Bracers
-			i(257304),	-- Dreamfriend's Bindings
-			i(257305),	-- Dreamfriend's Spaulders
-			i(257306),	-- Dreamfriend's Pauldrons
-			i(257307),	-- Dreamfriend's Mantle
-			i(257308),	-- Dreamfriend's Monnion
-			i(257309),	-- Dreamfriend's Sabatons
-			i(257310),	-- Dreamfriend's Slippers
-			i(257311),	-- Dreamfriend's Cover
-			i(257312),	-- Dreamfriend's Boots
-			i(257313),	-- Dreamfriend's Vestments
-			i(257314),	-- Dreamfriend's Chestplate
-			i(257315),	-- Dreamfriend's Hauberk
-			i(257316),	-- Dreamfriend's Vest
-			i(257317),	-- Verdant Defender's Bulwark
-			i(257318),	-- Lucid Dreamer's Guide
-			i(257319),	-- Viridian Shortsword
-			i(257320),	-- Thornwood Sticker
-			i(257321),	-- Dreamdaughter's Walking Stick
-			i(257322),	-- Dreamwood Crossbow
-			i(257323),	-- Drusahl's Hatchet
-			i(257324),	-- Dreamforged Bludgeon
-			i(257325),	-- Greatsword of the Somnambulant
-			i(257327),	-- Drusahl's Polearm
-			i(257400),	-- Highmountain Tanner's Frame
-			i(257402),	-- "Unity of Thorns" Tapestry
-			i(257404),	-- Pyrewood Glass Bottle
-			i(257406),	-- Smoke Lamp
-			i(257409),	-- Standing Smoke Lamp
-			i(257425),	-- Anubisath's Green Greatblade
-			i(257426),	-- Anubisath's Red Greatblade
-			i(257427),	-- Anubisath's Golden Greatblade \\ Anubisath's Gold Greatblade
-			i(257428),	-- Anubisath's Ethereal Greatblade
-			i(257689),	-- Small Gilnean Windmill
-			i(257710),	-- Anubisath's Green Blade
-			i(257711),	-- Anubisath's Red Blade
-			i(257712),	-- Anubisath's Golden Blade \\ Anubisath's Gold Blade
-			i(257713),	-- Anubisath's Ethereal Blade
-			i(257725),	-- Camp Narache Rug
-			i(257759),	-- Sorcerer's Midnight Cowl
-			i(257760),	-- Sorcerer's Azure Cowl
-			i(257761),	-- Sorcerer's Sepia Cowl
-			i(257762),	-- Sorcerer's Grassy Cowl
-			i(257763),	-- Sorcerer's Cloudy Cowl
-			i(257764),	-- Sorcerer's Deep Cowl
-			i(257765),	-- Sorcerer's Camo Cowl
-			i(257766),	-- Sorcerer's Brick Cowl
-			i(257767),	-- Sorcerer's Lively Cowl
-			i(257769),	-- Sorcerer's Faded Cowl
-			i(257770),	-- Sorcerer's Carrot Cowl
-			i(257771),	-- Sorcerer's Rosy Cowl
-			i(257772),	-- Sorcerer's Plum Cowl
-			i(257773),	-- Sorcerer's Crimson Cowl
-			i(257774),	-- Sorcerer's Violet Cowl
-			i(257775),	-- Sorcerer's Aquatic Cowl
-			i(257776),	-- Sorcerer's Snowy Cowl
-			i(257778),	-- Sorcerer's Sunny Cowl
-			i(257779),	-- Sorcerer's Midnight Cape
-			i(257780),	-- Sorcerer's Azure Cape
-			i(257781),	-- Sorcerer's Sepia Cape
-			i(257782),	-- Sorcerer's Grassy Cape
-			i(257783),	-- Sorcerer's Cloudy Cape
-			i(257784),	-- Sorcerer's Deep Cape
-			i(257785),	-- Sorcerer's Camo Cape
-			i(257786),	-- Sorcerer's Brick Cape
-			i(257787),	-- Sorcerer's Lively Cape
-			i(257788),	-- Sorcerer's Faded Cape
-			i(257789),	-- Sorcerer's Carrot Cape
-			i(257790),	-- Sorcerer's Rosy Cape
-			i(257791),	-- Sorcerer's Plum Cape
-			i(257792),	-- Sorcerer's Crimson Cape
-			i(257793),	-- Sorcerer's Violet Cape
-			i(257794),	-- Sorcerer's Aquatic Cape
-			i(257795),	-- Sorcerer's Snowy Cape
-			i(257796),	-- Sorcerer's Sunny Cape
-			i(257891),	-- Dog Whistle
-			i(257970),	-- Ensemble: Sorcerer's Midnight Garb \\ Ensemble: Sorcerer's Midnight Raiment
-			i(257971),	-- Ensemble: Sorcerer's Azure Garb \\ Ensemble: Sorcerer's Azure Raiment
-			i(257972),	-- Ensemble: Sorcerer's Sepia Garb \\ Ensemble: Sorcerer's Sepia Raiment
-			i(257974),	-- Ensemble: Sorcerer's Grassy Garb \\ Ensemble: Sorcerer's Grassy Raiment
-			i(257975),	-- Ensemble: Sorcerer's Cloudy Garb \\ Ensemble: Sorcerer's Cloudy Raiment
-			i(257976),	-- Ensemble: Sorcerer's Deep Garb \\ Ensemble: Sorcerer's Deep Raiment
-			i(257978),	-- Ensemble: Sorcerer's Camo Garb \\ Ensemble: Sorcerer's Camo Raiment
-			i(257979),	-- Ensemble: Sorcerer's Brick Garb \\ Ensemble: Sorcerer's Brick Raiment
-			i(257987),	-- Ensemble: Sorcerer's Lively Garb \\ Ensemble: Sorcerer's Lively Raiment
-			i(257989),	-- Ensemble: Sorcerer's Faded Garb \\ Ensemble: Sorcerer's Faded Raiment
-			i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
-			i(257997),	-- Ensemble: Sorcerer's Rosy Garb \\ Ensemble: Sorcerer's Rosy Raiment
-			i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
-			i(258017),	-- Ensemble: Sorcerer's Crimson Garb \\ Ensemble: Sorcerer's Crimson Raiment
-			i(258018),	-- Ensemble: Sorcerer's Violet Garb \\ Ensemble: Sorcerer's Violet Raiment
-			i(258019),	-- Ensemble: Sorcerer's Aquatic Garb \\ Ensemble: Sorcerer's Aquatic Raiment
-			i(258020),	-- Ensemble: Sorcerer's Snowy Garb \\ Ensemble: Sorcerer's Snowy Raiment
-			i(258021),	-- Ensemble: Sorcerer's Sunny Garb \\ Ensemble: Sorcerer's Sunny Raiment
-			i(258174),	-- Corrupted Cowl of the Crusader
-			i(258176),	-- Corrupted Mantle of the Crusader
-			i(258177),	-- Corrupted Robe of the Crusader
-			i(258178),	-- Corrupted Belt of the Crusader
-			i(258179),	-- Corrupted Legguards of the Crusader
-			i(258180),	-- Corrupted Boots of the Crusader
-			i(258181),	-- Corrupted Gloves of the Crusader
-			i(258182),	-- Corrupted Cloak of the Crusader
-			i(258183),	-- Corrupted Chestplate of the Crusader
-			i(258186),	-- Ensemble: Corrupted Regalia of the Crusader
-			i(258190),	-- Outland Mag'har Banner
-			i(258191),	-- Arakkoa Decoy Scarecrow
-			i(258192),	-- Talon King's Totem
-			i(258193),	-- Draenei Holo-Projector Pedestal
-			i(258194),	-- Tempest Keep Cryo-Pod
-			i(258195),	-- Draenei Weaver's Loom
-			i(258196),	-- Draenei Transmitter
-			i(258197),	-- Crystal Signpost
-			i(258198),	-- Gilded Draenei Round Table
-			i(258199),	-- Aldor Bookcase
-			i(258200),	-- Shattrath Sconce
-			i(258201),	-- Shattrath Lamppost
-			i(258202),	-- Grand Drape of the Exiles
-			i(258203),	-- Silver Dalaran Bench
-			i(258204),	-- Dalaran Post
-			i(258205),	-- Wolvar Postbag
-			i(258206),	-- Gilded Dalaran Banner
-			i(258207),	-- Dalaran Scholar's Bookcase
-			i(258208),	-- Kirin Tor Sun Chandelier
-			i(258209),	-- Kirin Tor Crate
-			i(258210),	-- Dalaran Street Sign
-			i(258211),	-- Kirin Tor Glass Table
-			i(258212),	-- San'layn Blood Orb
-			i(258213),	-- Icecrown Plague Canister
-			i(258214),	-- Pandaren Alchemist's Kit
-			i(258215),	-- Halaa Bench
-			i(258216),	-- Reconstructed Mogu Lightning Drill
-			i(258217),	-- Honey Drops
-			i(258224),	-- Dalaran Display Shelves
-			i(258225),	-- Failed Failure Detection Pylon
-			i(258226),	-- Dalaran Auto-Hammer
-			i(258227),	-- Suramar Jeweler's Assortment
-			i(258228),	-- Twilight Cowl of the Crusader
-			i(258229),	-- Twilight Mantle of the Crusader
-			i(258231),	-- Twilight Robe of the Crusader
-			i(258233),	-- Twilight Belt of the Crusader
-			i(258235),	-- Aspiring Soul's Chair
-			i(258236),	-- Twilight Legguards of the Crusader
-			i(258237),	-- Ardenweald Lamppost
-			i(258238),	-- Maldraxxian Crate
-			i(258239),	-- Tome of Maldraxxian Rituals
-			i(258240),	-- Kyrian Anima Barrel
-			i(258241),	-- Twilight Boots of the Crusader
-			i(258242),	-- Hollow Night Fae Shrine
-			i(258243),	-- Twilight Gloves of the Crusader
-			i(258244),	-- Broker's Hex Table
-			i(258245),	-- Ardenweald Hanging Baskets
-			i(258246),	-- Twilight Cloak of the Crusader
-			i(258247),	-- Large Revendreth Storage Crate
-			i(258248),	-- Margrave's Stitched Leather Rug
-			i(258249),	-- Twilight Chestplate of the Crusader
-			i(258250),	-- Cartel Ta Bookcase
-			i(258251),	-- Ensemble: Twilight Regalia of the Crusader
-			i(258252),	-- Cartel Xy Capture Crate
-			i(258253),	-- Titanic Tyrhold Fountain
-			i(258254),	-- Vengeful Cowl of the Crusader
-			i(258255),	-- Vengeful Mantle of the Crusader
-			i(258256),	-- Vengeful Robe of the Crusader
-			i(258257),	-- Vengeful Belt of the Crusader
-			i(258258),	-- Vengeful Legguards of the Crusader
-			i(258259),	-- Vengeful Boots of the Crusader
-			i(258260),	-- Vengeful Gloves of the Crusader
-			i(258261),	-- Vengeful Cloak of the Crusader
-			i(258263),	-- Vengeful Chestplate of the Crusader
-			i(258266),	-- Ensemble: Vengeful Regalia of the Crusader
-			i(258298),	-- Kirin Tor Skyline Banner
-			i(258302),	-- Pandaren Fishing Net
-			i(258303),	-- Beloved Elekk Plushie
-			i(258308),	-- Pious Cowl of the Crusader
-			i(258309),	-- Pious Mantle of the Crusader
-			i(258310),	-- Pious Robe of the Crusader
-			i(258311),	-- Pious Belt of the Crusader
-			i(258312),	-- Pious Legguards of the Crusader
-			i(258313),	-- Pious Boots of the Crusader
-			i(258314),	-- Pious Gloves of the Crusader
-			i(258315),	-- Pious Cloak of the Crusader
-			i(258316),	-- Pious Chestplate of the Crusader
-			i(258317),	-- Ensemble: Pious Regalia of the Crusader
-			i(258527),	-- Greathammer of the Fallen Lightbringer
-			i(258528),	-- Greathammer of the Righteous Lightbringer
-			i(258557),	-- Beloved Raptor Plushie
-			i(258558),	-- Sandfury Diplomat's Banner
-			i(258559),	-- Tidesage's Totem
-			i(258560),	-- Drust Enchanter's Rod
-			i(258561),	-- Kyrian Aspirant's Rolled Cushion
-			i(258625),	-- Tushui Legwraps
-			i(258626),	-- Tushui Wooden Capsa
-			i(258628),	-- Tushui Bamboo Cover
-			i(258629),	-- Tushui Charm Band
-			i(258630),	-- Tushui Sandals
-			i(258631),	-- Tushui Tunic
-			i(258632),	-- Tushui Wraps
-			i(258633),	-- Tushui Travel Belt
-			i(258634),	-- Tushui Shoulderguards
-			i(258635),	-- Ensemble: Heritage of the Wandering Isle
-			i(258636),	-- Honored Guest's Party Favor
-			i(258639),	-- Huojin Legwraps
-			i(258640),	-- Huojin Wooden Capsa
-			i(258641),	-- Huojin Bamboo Cover
-			i(258642),	-- Huojin Charm Band
-			i(258643),	-- Huojin Sandals
-			i(258644),	-- Huojin Tunic
-			i(258645),	-- Huojin Wraps
-			i(258646),	-- Huojin Travel Belt
-			i(258647),	-- Huojin Shoulderguards
-			i(258648),	-- Wandering Isle Legwraps
-			i(258649),	-- Wandering Isle Capsa
-			i(258650),	-- Wandering Isle Cover
-			i(258651),	-- Wandering Isle Charm
-			i(258652),	-- Wandering Isle Sandals
-			i(258653),	-- Wandering Isle Tunic
-			i(258654),	-- Wandering Isle Wraps
-			i(258655),	-- Wandering Isle Travel Belt
-			i(258656),	-- Wandering Isle Shoulderguards
-			i(258657),	-- Ensemble: Heritage of the Wandering Isle
-			i(258662),	-- Progenitor's Custodial Sentry
-			i(258776),	-- South Guard's Silver Facemask
-			i(258777),	-- South Guard's Silver Mantle
-			i(258778),	-- South Guard's Silver Cinch
-			i(258779),	-- South Guard's Silver Greaves
-			i(258780),	-- South Guard's Silver Boots
-			i(258781),	-- South Guard's Silver Gauntlets
-			i(258782),	-- South Guard's Silver Cloak
-			i(258783),	-- South Guard's Silver Cuirass
-			i(258784),	-- Ensemble: South Guard's Silver Raiment \\ Ensemble: Silver Raiment of the South Guardian
-			i(258785),	-- South Guard's Golden Facemask
-			i(258786),	-- South Guard's Golden Mantle
-			i(258787),	-- South Guard's Golden Cinch
-			i(258788),	-- South Guard's Golden Greaves
-			i(258789),	-- South Guard's Golden Boots
-			i(258790),	-- South Guard's Golden Gauntlets
-			i(258791),	-- South Guard's Golden Cloak
-			i(258792),	-- South Guard's Golden Cuirass
-			i(258793),	-- Ensemble: South Guard's Golden Raiment \\ Ensemble: Golden Raiment of the South Guardian
-			i(258794),	-- South Guard's Copper Facemask
-			i(258795),	-- South Guard's Copper Mantle
-			i(258796),	-- South Guard's Copper Cinch
-			i(258797),	-- South Guard's Copper Greaves
-			i(258798),	-- South Guard's Copper Boots
-			i(258799),	-- South Guard's Copper Gauntlets
-			i(258800),	-- South Guard's Copper Cloak
-			i(258801),	-- South Guard's Copper Cuirass
-			i(258802),	-- Ensemble: South Guard's Copper Raiment \\ Ensemble: Copper Raiment of the South Guardian
-			i(258803),	-- South Guard's Iron Facemask
-			i(258804),	-- South Guard's Iron Mantle
-			i(258805),	-- South Guard's Iron Cinch
-			i(258806),	-- South Guard's Iron Greaves
-			i(258807),	-- South Guard's Iron Boots
-			i(258808),	-- South Guard's Iron Gauntlets
-			i(258809),	-- South Guard's Iron Cloak
-			i(258810),	-- South Guard's Iron Cuirass
-			i(258811),	-- Ensemble: South Guard's Iron Raiment \\ Ensemble: Iron Raiment of the South Guardian
-			i(258838),	-- Housing Dye: Gold
-			i(258979),	-- Azure Guardian's Cloak \\ RENAME Cloak
-			i(258980),	-- Azure Guardian's Waistguard
-			i(258981),	-- Azure Guardian's Girdle
-			i(258982),	-- Azure Guardian's Belt
-			i(258983),	-- Azure Guardian's Sash
-			i(258984),	-- Azure Guardian's Hood
-			i(258985),	-- Azure Guardian's Helm
-			i(258986),	-- Azure Guardian's Cap
-			i(258987),	-- Azure Guardian's Greathelm
-			i(258988),	-- Azure Guardian's Choker \\ RENAME Choker
-			i(258989),	-- Azure Guardian's Signet \\ RENAME Signet
-			i(258990),	-- Azure Guardian's Band \\ RENAME Loop
-			i(258991),	-- Azure Guardian's Grips
-			i(258992),	-- Azure Guardian's Gauntlets
-			i(258993),	-- Azure Guardian's Gloves
-			i(258994),	-- Azure Guardian's Handguards
-			i(258995),	-- Azure Guardian's Legguards
-			i(258996),	-- Azure Guardian's Leggings
-			i(258997),	-- Azure Guardian's Scales
-			i(258998),	-- Azure Guardian's Breeches
-			i(258999),	-- Arcane Stone \\ RENAME Trinket
-			i(259000),	-- Azure Runes \\ RENAME Trinket
-			i(259001),	-- Azure Guardian's Wraps
-			i(259002),	-- Azure Guardian's Vambraces
-			i(259003),	-- Azure Guardian's Bracers
-			i(259004),	-- Azure Guardian's Bindings
-			i(259005),	-- Azure Guardian's Spaulders
-			i(259006),	-- Azure Guardian's Pauldrons
-			i(259007),	-- Azure Guardian's Mantle
-			i(259008),	-- Azure Guardian's Monnion
-			i(259009),	-- Azure Guardian's Sabatons
-			i(259010),	-- Azure Guardian's Slippers
-			i(259011),	-- Azure Guardian's Cover
-			i(259012),	-- Azure Guardian's Boots
-			i(259013),	-- Azure Guardian's Vestments
-			i(259014),	-- Azure Guardian's Chestplate
-			i(259015),	-- Azure Guardian's Hauberk
-			i(259016),	-- Azure Guardian's Vest
-			i(259017),	-- Azure Guardian's Defender \\ RENAME Shield
-			i(259018),	-- Azure Guardian's Treat \\ RENAME Offhand
-			i(259019),	-- Azure Guardian's Blade \\ RENAME 1H Sword
-			i(259020),	-- Azure Guardian's Stabber \\ RENAME 1H Dagger
-			i(259021),	-- Azure Guardian's Staff \\ RENAME Staff
-			i(259022),	-- Azure Guardian's Bolter \\ RENAME Crossbow
-			i(259023),	-- Azure Guardian's Chopper \\ RENAME 1H Axe
-			i(259024),	-- Azure Guardian's Mace \\ RENAME 1H Mace
-			i(259025),	-- Azure Guardian's Claymore \\ RENAME 2H Sword
-			i(259026),	-- Azure Guardian's Polearm \\ RENAME Polearm
-			i(259053),	-- Housing Dye: Warm Teak
-			i(259078),	-- Housing Dye: Basic Birch
-			i(259096),	-- Housing Dye: Mesquite Brown
-			i(259097),	-- Housing Dye: Pinewood
-			i(259098),	-- Housing Dye: Darkwood
-			i(259099),	-- Housing Dye: Highland Birch
-			i(259100),	-- Housing Dye: Holy Oak Tan
-			i(259101),	-- Housing Dye: Pale Umber
-			i(259102),	-- Housing Dye: Mahogany
-			i(259103),	-- Housing Dye: Heartwood
-			i(259104),	-- Housing Dye: Stormsteel
-			i(259105),	-- Housing Dye: Copper
-			i(259106),	-- Housing Dye: Zandalari Gold
-			i(259107),	-- Housing Dye: Brass
-			i(259108),	-- Housing Dye: Bronze
-			i(259109),	-- Housing Dye: Dark Iron
-			i(259110),	-- Housing Dye: Kul Tiran Steel
-			i(259111),	-- Housing Dye: Ironclaw
-			i(259113),	-- Housing Dye: Horde Red
-			i(259114),	-- Housing Dye: Lush Green
-			i(259115),	-- Housing Dye: Alliance Blue
-			i(259116),	-- Housing Dye: Kirin Tor Violet
-			i(259117),	-- Housing Dye: Sandfury Yellow
-			i(259118),	-- Housing Dye: Elwynn Pumpkin
-			i(259119),	-- Housing Dye: Netherstorm Fuchsia
-			i(259120),	-- Housing Dye: Bone-White \\ Housing Dye: Bone White
-			i(259121),	-- Housing Dye: Obsidium Black
-			i(259122),	-- Housing Dye: Earthen Brown
-			i(259123),	-- Housing Dye: Stormheim Grey
-			i(259124),	-- Housing Dye: Silversage Green
-			i(259125),	-- Housing Dye: Un'Goro Green
-			i(259126),	-- Housing Dye: Void Violet
-			i(259127),	-- Housing Dye: Firebloom Red
-			i(259128),	-- Housing Dye: Kalimdor Sand
-			i(259129),	-- Housing Dye: Zephras Blue
-			i(259130),	-- Housing Dye: Nightsong Lilac
-			i(259131),	-- Housing Dye: Arcwine
-			i(259132),	-- Housing Dye: Kodohide Brown
-			i(259133),	-- Housing Dye: Dustwallow Green
-			i(259134),	-- Housing Dye: Emerald Dreaming
-			i(259135),	-- Housing Dye: Midnight Blue
-			i(259136),	-- Housing Dye: Vortex Teal
-			i(259137),	-- Housing Dye: Sungrass Yellow
-			i(259138),	-- Housing Dye: Savannah Gold
-			i(259139),	-- Housing Dye: Gilnean Rose
-			i(259140),	-- Housing Dye: Moonberry Amethyst
-			i(259141),	-- Housing Dye: Vol'dun Taupe
-			i(259142),	-- Housing Dye: Ratchet Rust
-			i(259143),	-- Housing Dye: Gravemoss Green
-			i(259144),	-- Housing Dye: Forsaken Plum
-			i(259145),	-- Housing Dye: Timbermaw Brown
-			i(259146),	-- Housing Dye: Nazjatar Navy
-			i(259147),	-- Housing Dye: Grizzly Hills Green
-			i(259148),	-- Housing Dye: Tidesage Teal
-			i(259149),	-- Housing Dye: Highborne Marble
-			i(259150),	-- Housing Dye: Earthroot
-			i(259151),	-- Housing Dye: Deep Mageroyal Red
-			i(259152),	-- Housing Dye: Hinterlands Hickory
-			i(259153),	-- Housing Dye: Dusk Lily Grey
-			i(259154),	-- Housing Dye: Rain Poppy Red
-			i(259894),	-- Perfect Preservatives
-			i(259898),	-- Greyed Dragonscale Coif
-			i(260378),	-- Wooden Shortbow
-			i(260379),	-- Black Wooden Shortbow
-			i(260380),	-- Blue Wooden Shortbow
-			i(260381),	-- Bronze Wooden Shortbow
-			i(260382),	-- Dark Wooden Shortbow
-			i(260383),	-- Dark Blue Wooden Shortbow
-			i(260384),	-- Dark Red Wooden Shortbow
-			i(260385),	-- Frost Wooden Shortbow
-			i(260386),	-- Green Wooden Shortbow
-			i(260387),	-- Icey Wooden Shortbow
-			i(260388),	-- Light Wooden Shortbow
-			i(260389),	-- Light Blue Wooden Shortbow
-			i(260390),	-- Light Brown Wooden Shortbow
-			i(260391),	-- Pale Wooden Shortbow
-			i(260392),	-- Pink Wooden Shortbow
-			i(260393),	-- Purple Wooden Shortbow
-			i(260394),	-- Thalassian Recruit's Bow \\ Red Wooden Shortbow
-			i(260395),	-- Rugged Wooden Shortbow
-			i(260396),	-- Tranquillien Archer's Bow \\ White Wooden Shortbow
-			i(260397),	-- Sea Green Wooden Shortbow
-			i(260398),	-- South Guard's Iron Handwraps
-			i(260399),	-- South Guard's Copper Handwraps
-			i(260400),	-- South Guard's Golden Handwraps
-			i(260401),	-- South Guard's Silver Handwraps
-			i(260402),	-- South Guard's Iron Chausses
-			i(260403),	-- South Guard's Copper Chausses
-			i(260404),	-- South Guard's Golden Chausses
-			i(260405),	-- South Guard's Silver Chausses
-			i(260409),	-- Savage Crimson Battle Turtle
-			i(260411),	-- Iron Chainkini
-			i(260412),	-- Rusty Chainkini
-			i(260413),	-- Copper Chainkini
-			i(260415),	-- Silver Chainkini
-			i(260416),	-- Gold Chainkini
-			i(260418),	-- Basic Crimson Sabatons
-			i(260422),	-- Axe of the Crimson Crescent \\ Red Flame Axe
-			i(260428),	-- Raw Mussel
-			i(260429),	-- Crescent Cove Crab
-			i(260519),	-- Farm Carrots
-			i(260522),	-- Duck Egg
-			i(260532),	-- Tuskarr Dinner Bell
-			i(260533),	-- Oddsight Focus
-			i(260580),	-- Cloudborn Razorwing
-			i(260588),	-- Jendry's Donut
-			i(260589),	-- Flame-Blessed Beach Towel
-			i(260933),	-- Basic Pink Quiver
-			i(260934),	-- Thalassian Archer's Quiver \\ Basic Red Quiver
-			i(260935),	-- Tranquillien Archer's Quiver \\ Basic White Quiver
-			i(260936),	-- Basic Brown Quiver
-			i(260947),	-- White Dye Pigment
-			i(262358),	-- Sindorei Captain's Mantle \\ Crimson Plate Shoulders
-			i(262369),	-- Sindorei Handglaive \\ Crimson Wrist Blade
-			i(262370),	-- Longbow of the Shattered Sun \\ Crimson Golden Bow
-			i(262371),	-- Bronze Magister's Courtstaff \\ Crimson Magister's Staff
-			i(262372),	-- Quel'dorei Bladestaff \\ Golden Magister's Staff
-			i(262373),	-- Quel'dorei Poleblade \\ Golden Ranseur
-			i(262374),	-- Sunfury Apprentice's Wand \\ Magister's Golden Wand
-			i(262377),	-- Sunfury Battlemage's Stave \\ Sindorei Magister's Staff
-			i(262562),	-- Bolt of Pressed Linen
-			i(262563),	-- Bolt of Elegant Silk
-			i(262564),	-- Bolt of Soft Wool
-			i(262565),	-- Spool of Thread
-			i(262625),	-- Purple Dye Pigment
-			i(262628),	-- Teal Dye Pigment
-			i(262639),	-- Black Dye Pigment
-			i(262642),	-- Brown Dye Pigment
-			i(262643),	-- Blue Dye Pigment
-			i(262647),	-- Green Dye Pigment
-			i(262648),	-- Yellow Dye Pigment
-			i(262655),	-- Red Dye Pigment
-			i(262656),	-- Orange Dye Pigment
-			i(236653),	-- Orgrimmar Interior Narrow Wall
-			i(236654),	-- Orgrimmar Interior Doorway
-			i(236655),	-- Orgrimmar Interior Wall
-			i(236666),	-- Orgrimmar Round Interior Pillar
-			i(236667),	-- Orgrimmar Square Interior Pillar
-			i(238857),	-- Moon-Blessed Storage Crate
-			i(238859),	-- Cenarion Privacy Screen
-			i(238860),	-- Deluxe Val'sharah Bed
-			i(238861),	-- Cenarion Rectangular Rug
-			i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
-			i(238863),	-- Kaldorei Desk
-			i(238975),	-- Reliquary Telescope
-			i(239162),	-- Wooden Mug
-			i(239170),	-- Dornic Mine and Cheese Platter
-			i(239177),	-- Open Tome of Twilight Nihilism
-			i(239179),	-- Tome of Twilight Nihilism
-			i(239213),	-- Well-Lit Incontinental Loveseat
-			i(239214),	-- Well-Lit Incontinental Couch
-			i(239606),	-- Forsaken Round Rug
-			i(241043),	-- Elodor Barrel
-			i(241044),	-- Argussian Crate
-			i(241066),	-- Forsaken Spiked Brazier
-			i(241067),	-- Large Forsaken Spiked Brazier
-			i(241625),	-- Open Elven Wood Crate
-			i(243088),	-- Standing Ornate Weapon Rack
-			i(243113),	-- Blue Dazar'alor Rug
-			i(243130),	-- Zandalari Weapon Rack
-			i(243290),	-- Tauren Waterwheel
-			i(243312),	-- Undermine Rectangular Table
-			i(243321),	-- Cartel Head's Schmancy Desk
-			i(243335),	-- Tauren Bluff Rug
-			i(243359),	-- Tauren Windmill
-			i(244118),	-- Rectangular Elegant Table
-			i(244169),	-- Elegant Almond Table
-			i(244313),	-- Orcish Fence
-			i(244315),	-- Orcish Warlord's Planning Table
-			i(244316),	-- Warsong Workbench
-			i(244320),	-- Youngling's Courser Toys
-			i(244321),	-- Orcish Lumberjack's Stool
-			i(244322),	-- Frostwolf Banded Stool
-			i(244532),	-- Rugged Stool
-			i(244533),	-- Iron Chain Chandelier
-			i(244534),	-- Iron-Reinforced Door
-			i(244535),	-- Tusked Gazebo
-			i(244536),	-- Nightborne Fireplace
-			i(244653),	-- Orcish Scribe's Drafting Table
-			i(244654),	-- Small Purple Suramar Seat Cushion
-			i(244655),	-- Gilnean Circular Rug
-			i(244661),	-- Tied-Open Leather Curtains
-			i(244662),	-- Closed Leather Curtains
-			i(244663),	-- Leather Valance
-			i(244676),	-- Teal Suramar Seat Cushion
-			i(244677),	-- Purple Suramar Seat Cushion
-			i(244678),	-- Small Red Suramar Seat Cushion
-			i(244777),	-- Surwich Peddler's Wagon
-			i(244778),	-- Sethraliss Priest's Pillow
-			i(244780),	-- Circular Elven Table
-			i(244782),	-- Elven Floral Window
-			i(245258),	-- Val'sharah Bookcase
-			i(245259),	-- Small Val'sharah Bookcase
-			i(245260),	-- Kaldorei Chef's Table
-			i(245261),	-- Kaldorei Washbasin
-			i(245263),	-- Zocalo Drinks
-			i(245264),	-- Round Stitched Cushion
-			i(245265),	-- Stitched Pillow Roll
-			i(245266),	-- Iron-Studded Wooden Window
-			i(245270),	-- Thunder Totem Kiln
-			i(245275),	-- Rolled Scroll
-			i(245283),	-- Blood Elven Candelabra
-			i(245285),	-- Reliquary Storage Crate
-			i(245286),	-- Rectangular Sin'dorei Rug
-			i(245287),	-- Long Sin'dorei Rug
-			i(245288),	-- Circular Sin'dorei Rug
-			i(245291),	-- Replica Dark Iron Mole Machine
-			i(245293),	-- Collection of Arathi Scripture
-			i(245294),	-- Councilward's Jeweled Goblet
-			i(245295),	-- Literature of Dornogal
-			i(245296),	-- Literature of Taelloch
-			i(245297),	-- Literature of Gundargaz
-			i(245303),	-- Rocket-Unpowered Rocket
-			i(245306),	-- Cozy Four-Pipe Bed
-			i(245307),	-- Undermine Bookcase
-			i(245308),	-- "Elegant" Lawn Flamingo
-			i(245309),	-- Rusty Patchwork Tub
-			i(245310),	-- Reinforced Goblin Umbrella
-			i(245311),	-- Undermine Wall Shelf
-			i(245313),	-- Spring-Powered Undermine Chair
-			i(245314),	-- Undermine Round Table
-			i(245315),	-- Trashfire Barrel
-			i(245318),	-- Undermine Fence
-			i(245319),	-- Undermine Fencepost
-			i(245320),	-- Very Reliable Undermine Lamppost
-			i(245321),	-- Rust-Plated Storage Barrel
-			i(245325),	-- Undermine Market Stall
-			i(245327),	-- Creeping Corner Ivy
-			i(245328),	-- Small Boxwood Bush
-			i(245329),	-- Small Poppy Cluster
-			i(245333),	-- Shadowforge Wooden Box
-			i(245369),	-- Gift of Gilneas
-			i(245371),	-- Charming Laurel Tree
-			i(245392),	-- Sturdy Wooden Interior Pillar
-			i(245393),	-- Plain Interior Wall
-			i(245394),	-- Plain Interior Doorway
-			i(245395),	-- Plain Interior Narrow Wall
-			i(245398),	-- Tusked Fireplace
-			i(245413),	-- Zandalari Sconce
-			i(245417),	-- Akunda the Tapestry
-			i(245422),	-- Draenic Bookcase
-			i(245424),	-- Draenic Storage Chest
-			i(245425),	-- Hanging Draenethyst Light
-			i(245427),	-- Dark Iron Expedition Tent
-			i(245431),	-- Draenor Cookpot
-			i(245433),	-- Blackrock Strongbox
-			i(245434),	-- Orgrimmar Sconce
-			i(245435),	-- Horde Battle Emblem
-			i(245437),	-- Orc-Forged Weaponry
-			i(245438),	-- Frostwolf Bookcase
-			i(245441),	-- Orcish Fencepost
-			i(245442),	-- Warsong Footrest
-			i(245443),	-- Frostwolf Round Table
-			i(245444),	-- Orcish Communal Stove
-			i(245445),	-- Frostwolf Axe-Dart Board
-			i(245449),	-- Ancient Elven Highback Chair
-			i(245450),	-- Highmountain Totem
-			i(245451),	-- Thunder Totem Brazier
-			i(245452),	-- Stonebull Canoe
-			i(245454),	-- Small Highmountain Drum
-			i(245458),	-- Riverbend Jar
-			i(245462),	-- Banshee Queen's Banner
-			i(245464),	-- Inert Blight Canister
-			i(245465),	-- Tirisfal Wooden Chair
-			i(245466),	-- Forsaken Spiked Chair
-			i(245469),	-- Lordaeron Lantern
-			i(245470),	-- Lordaeron Hanging Lantern
-			i(245471),	-- Blightfire Lantern
-			i(245472),	-- Blightfire Hanging Lantern
-			i(245473),	-- Forsaken Studded Table
-			i(245474),	-- Forsaken War Planning Table
-			i(245475),	-- Forsaken Long Table
-			i(245477),	-- Small Forsaken War Tent
-			i(245478),	-- Lordaeron Sconce
-			i(245479),	-- Blightfire Sconce
-			i(245480),	-- Lordaeron Torch
-			i(245481),	-- Blightfire Torch
-			i(245482),	-- Undercity Spiked Chest
-			i(245485),	-- Golden Zandalari Bed
-			i(245486),	-- Tired Troll's Bench
-			i(245488),	-- Zandalari Rickshaw
-			i(245489),	-- Zuldazar Stool
-			i(245491),	-- Bwonsamdi's Golden Gong
-			i(245493),	-- Idol of Rezan, Loa of Kings
-			i(245495),	-- Dazar'alor Market Tent
-			i(245500),	-- Red Dazar'alor Tent
-			i(245501),	-- Venthyr Tome of Unforgiven Sins
-			i(245504),	-- Lordaeron Fence
-			i(245505),	-- Lordaeron Fencepost
-			i(245508),	-- Pandaren Cooking Table
-			i(245512),	-- Pandaren Cradle Stool
-			i(245515),	-- Gilnean Wooden Bed
-			i(245516),	-- Gilnean Bench
-			i(245518),	-- Worgen's Chicken Coop
-			i(245521),	-- Stone Zandalari Lamp
-			i(245532),	-- Orgrimmar Chair
-			i(245533),	-- Rugged Brazier
-			i(245545),	-- Orgrimmar Nightstand
-			i(245546),	-- Durable Wooden Chest
-			i(245549),	-- Trueshot Lodge Fireplace
-			i(245550),	-- Runed Dreamweaver Moonstone
-			i(245555),	-- Orgrimmar Tusked Bed
-			i(245558),	-- Elaborate Suramar Window
-			i(245560),	-- Meadery Ochre Window
-			i(245561),	-- Ornate Ochre Window
-			i(245603),	-- Gilnean Noble's Trellis
-			i(245604),	-- Arched Rose Trellis
-			i(245605),	-- Gilnean Stone Wall
-			i(245615),	-- Bradensbrook Smoke Lantern
-			i(245616),	-- Bradensbrook Thorned Well
-			i(245617),	-- Gilnean Stocks
-			i(245620),	-- Little Wolf's Loo
-			i(245624),	-- Waning Wood Fence
-			i(245625),	-- Bel'ameth Bench
-			i(245627),	-- Elven Temple Brazier
-			i(245655),	-- Filigree Moon Lamp
-			i(245658),	-- Elwynn Cobblestone Round
-			i(245659),	-- Elwynn Cobblestone
-			i(245660),	-- Elwynn Cobblestone Pair
-			i(245661),	-- Elwynn Cobblestone Cluster
-			i(245680),	-- Orgrimmar Bureaucrat's Desk
-			i(245681),	-- Tidesage's Fireplace
-			i(245698),	-- Kaldorei Stone Fence
-			i(245699),	-- Kaldorei Stone Fencepost
-			i(245700),	-- Kaldorei Cushioned Seat
-			i(245701),	-- Elven Round Table
-			i(245702),	-- Kaldorei Wall Shelf
-			i(245704),	-- Bel'ameth Barrel
-			i(245739),	-- Crescent Moon Lamppost
-			i(245938),	-- Overgrown Arathi Trellis
-			i(245984),	-- Sagehold Window
-			i(246001),	-- Orange Suramar Seat Cushion
-			i(246002),	-- Red Suramar Seat Cushion
-			i(246036),	-- High-Backed Orgrimmar Chair
-			i(246037),	-- Iron-Reinforced Wooden Rack
-			i(246038),	-- Stitched Leather Rug
-			i(246089),	-- Bel'ameth Wooden Table
-			i(246091),	-- Bel'ameth Crafter's Tent
-			i(246100),	-- Small Bel'ameth Tent
-			i(246108),	-- Embellished Dwarven Tome
-			i(246110),	-- Filigree Moon Sconce
-			i(246216),	-- Sprouting Lamppost
-			i(246217),	-- Short Orgrimmar Bench
-			i(246218),	-- Iron-Reinforced Crate
-			i(246220),	-- Leather-Banded Wooden Bench
-			i(246222),	-- Boralus String Lights
-			i(246223),	-- Cozy Hide-Covered Bench
-			i(246224),	-- Large Orgrimmar Bookcase
-			i(246225),	-- Small Leather Rug
-			i(246241),	-- Spiky Banded Barrel
-			i(246243),	-- Stormwind Beam Platform
-			i(246245),	-- Stormwind Round Platform
-			i(246246),	-- Stormwind Large Platform
-			i(246247),	-- Stormwind Small Platform
-			i(246248),	-- Stormwind Angled Platform
-			i(246259),	-- Orgrimmar Beam Platform
-			i(246260),	-- Orgrimmar Round Platform
-			i(246261),	-- Orgrimmar Large Platform
-			i(246262),	-- Orgrimmar Small Platform
-			i(246263),	-- Orgrimmar Angled Platform
-			i(246409),	-- Shadowforge Grinding Wheel
-			i(246411),	-- Ironforge Bookcase
-			i(246412),	-- Small Ironforge Bookcase
-			i(246421),	-- Stolen Ironforge Seat
-			i(246422),	-- Thelsamar Hanging Lantern
-			i(246424),	-- Square Stormpike Table
-			i(246425),	-- Round Dwarven Table
-			i(246426),	-- Ornate Ironforge Table
-			i(246427),	-- Dilapidated Wildhammer Well
-			i(246428),	-- Overgrown Wildhammer Fountain
-			i(246429),	-- Dark Iron Chandelier
-			i(246480),	-- Automated Gnomeregan Guardian
-			i(246481),	-- Retired Industrial Gnomegrabber
-			i(246482),	-- Mechanical Gnomish Lamppost
-			i(246484),	-- Mechagon Hanging Floodlight
-			i(246485),	-- Mechagnome Sustenance Distribution Station
-			i(246487),	-- Gnomish Tesla Coil
-			i(246490),	-- Ironforge Fencepost
-			i(246491),	-- Ironforge Fence
-			i(246497),	-- Small Emergency Warning Lamp
-			i(246498),	-- Emergency Warning Lamp
-			i(246499),	-- Mechagon Eyelight Lamp
-			i(246501),	-- Gnomish Safety Flamethrower
-			i(246503),	-- Large H.O.M.E. Cog
-			i(246587),	-- Short Orgrimmar Bookcase
-			i(246595),	-- Gnomish Fencepost
-			i(246596),	-- Gnomish Fence
-			i(246597),	-- Perpetual Motion Crate
-			i(246599),	-- Self-Sealing Stembarrel
-			i(246600),	-- Small Mechanical Crate
-			i(246601),	-- Bolt Chair
-			i(246602),	-- Small H.O.M.E. Cog
-			i(246603),	-- Gnomish Cog Stack
-			i(246605),	-- Mecha-Storage Mecha-Chest
-			i(246606),	-- Mechagon Armory Rack
-			i(246607),	-- Durable Hex Table
-			i(246608),	-- Long Leather-Clad Table
-			i(246609),	-- Orgrimmar Open Dresser
-			i(246610),	-- Razorwind Standing Mirror
-			i(246611),	-- Razorwind Fountain
-			i(246612),	-- Logger's Picnic Table
-			i(246613),	-- Long Durable Table
-			i(246614),	-- Razorwind Bar Table
-			i(246615),	-- Open Spiky Banded Barrel
-			i(246616),	-- Open Iron-Reinforced Crate
-			i(246687),	-- Tusked Candleholder
-			i(246701),	-- Gnomish Sprocket Table
-			i(246703),	-- Double-Sprocket Table
-			i(246707),	-- Decorative Cinder Honeypot
-			i(246708),	-- Dornic Sliced Mineloaf
-			i(246709),	-- Earthen Hospitality Cheese-Like Brick
-			i(246845),	-- Tome of Shadowforge Cunning
-			i(246846),	-- Tome of Pandaren Wisdom
-			i(246847),	-- Tome of Draenei Faith
-			i(246848),	-- Scribe's Working Notes
-			i(246850),	-- "Fruit of the Arcan'dor" Painting
-			i(246851),	-- "Raising Your Eyes" Painting
-			i(246860),	-- Tome of Forsaken Resilience
-			i(246863),	-- Open Tome of the Dragon's Dedication
-			i(246864),	-- Tome of the Lost Dragon
-			i(246865),	-- Tome of Reliquary Insights
-			i(246868),	-- Wide Hide-Covered Bench
-			i(246869),	-- Razorwind Wall Mirror
-			i(246879),	-- Tusked Hanging Sconce
-			i(246880),	-- Horned Banded Barrel
-			i(246881),	-- Open Horned Banded Barrel
-			i(246882),	-- Long Orgrimmar Bench
-			i(246883),	-- Crude Banded Crate
-			i(246884),	-- Open Crude Banded Crate
-			i(247221),	-- Small Orgrimmar Chair
-			i(247502),	-- Elven Woodvine Trellis
-			i(247662),	-- Pandaren Scholar's Lectern
-			i(247663),	-- Pandaren Scholar's Bookcase
-			i(247670),	-- Pandaren Pantry
-			i(247729),	-- Pandaren Stone Lamppost
-			i(247730),	-- Red Crane Kite
-			i(247731),	-- Hanging Paper Lanterns
-			i(247732),	-- Lucky Hanging Lantern
-			i(247734),	-- Paw'don Well
-			i(247737),	-- Stormstout Brew Keg
-			i(247740),	-- Kotmogu Pedestal
-			i(247741),	-- Kotmogu Orb of Power
-			i(247842),	-- Nightborne Merchant's Stall
-			i(247843),	-- Deluxe Suramar Sleeper
-			i(247844),	-- Suramar Library
-			i(247845),	-- Nightborne Bench
-			i(247847),	-- Arcwine Counter
-			i(247855),	-- Pandaren Lacquered Crate
-			i(247858),	-- Shaohao Ceremonial Bell
-			i(247908),	-- Nightborne Lantern
-			i(247910),	-- Suramar Sconce
-			i(247911),	-- Shal'dorei Seat
-			i(247912),	-- Large Traditional Shal'dorei Rug
-			i(247913),	-- Ornate Suramar Table
-			i(247914),	-- Covered Ornate Suramar Table
-			i(247915),	-- Square Suramar Table
-			i(247917),	-- Covered Small Suramar Table
-			i(247919),	-- Traditional Shal'dorei Rug
-			i(247921),	-- Nightborne Wall Shelf
-			i(247924),	-- Suramar Street Light
-			i(248009),	-- Suramar Window
-			i(248116),	-- Valdrakken Chandelier
-			i(248246),	-- Razorwind Storage Table
-			i(248332),	-- Stormwind Footlocker
-			i(248333),	-- Stormwind Large Wooden Table
-			i(248334),	-- Stormwind Wooden Bench
-			i(248335),	-- Stormwind Wooden Stool
-			i(248336),	-- Stormwind Wooden Table
-			i(248401),	-- Ornamental Kaldorei Glaive
-			i(248617),	-- Stormwind Keg Stand
-			i(248618),	-- Westfall Woven Basket
-			i(248619),	-- Stormwind Gazebo
-			i(248620),	-- Stormwind Trellis and Basin
-			i(248621),	-- Stormwind Arched Trellis
-			i(248622),	-- Wooden Outhouse
-			i(248625),	-- Razorwind Succulent Palm
-			i(248626),	-- Razorwind Fighting Cactus
-			i(248627),	-- Razorwind Tumbleweed
-			i(248628),	-- Razorwind Palm Tree
-			i(248629),	-- Nagrand Blueberry Bush
-			i(248630),	-- Barrens Hosta Bush
-			i(248631),	-- Azsharan Firespear Tree
-			i(248632),	-- Hardy Razorwind Grass Patch
-			i(248633),	-- Flowering Durotar Cactus
-			i(248634),	-- Razorwind Acacia Tree
-			i(248635),	-- Elwynn Whitebrush
-			i(248636),	-- Razorwind Gobtree
-			i(248637),	-- Sunset Aster Flowers
-			i(248638),	-- Pink Razorwind Paintbrush
-			i(248639),	-- Gloomrose
-			i(248640),	-- Duskberry Bush
-			i(248641),	-- Duskwood Shadebrush
-			i(248642),	-- Creeping Lattice Ivy
-			i(248643),	-- Duskwood Sycamore Shrub
-			i(248644),	-- Spiritbloom Flower
-			i(248645),	-- Pink Gilnean Rose
-			i(248646),	-- Silvermoon Sunrise Bush
-			i(248647),	-- Founder's Point Blooming Grass Patch
-			i(248648),	-- Autumn Leaf Pile
-			i(248649),	-- Young Chestnut Tree
-			i(248650),	-- Razorwind Flamebrush
-			i(248658),	-- Elven Wood Crate
-			i(248660),	-- Stormwind Workbench
-			i(248661),	-- Northshire Scribe's Desk
-			i(248662),	-- Jewelcrafter's Tent
-			i(248663),	-- Wooden Doghouse
-			i(248665),	-- Stormwind Peddler's Cart
-			i(248758),	-- Relaxing Goblin Beach Chair with Cup Gripper
-			i(248759),	-- Amirdrassil Stool
-			i(248794),	-- Elwynn Fence
-			i(248795),	-- Elwynn Fencepost
-			i(248797),	-- City Wanderer's Candleholder
-			i(248798),	-- Northshire Barrel
-			i(248799),	-- Wooden Storage Crate
-			i(248800),	-- Architect's Drafting Table
-			i(248801),	-- Stormwind Weapon Rack
-			i(248802),	-- Elwynn Grass Patch
-			i(248803),	-- Elwynn Grass Spread
-			i(248808),	-- Nesingwary Elk Trophy
-			i(248810),	-- Rough Wooden Chair
-			i(248811),	-- Elwynn Small Grass Patch
-			i(248934),	-- Golden Cloud Serpent Treasure Chest
-			i(248935),	-- Five Dawns Weapon Rack
-			i(248936),	-- Five Dawns Shrine of the Smoking Fish
-			i(248938),	-- Hooded Iron Lantern
-			i(248939),	-- Stormwind Lamppost
-			i(248943),	-- Black Harvest Banner
-			i(248959),	-- Dreadscar Bookcase
-			i(248985),	-- Tauren Hanging Brazier
-			i(249004),	-- Black Harvest Orrery
-			i(249460),	-- Skyhold Brazier
-			i(249462),	-- Illidari Banner
-			i(249463),	-- Illidari Skull Sentinel
-			i(249464),	-- Valarjar Banner
-			i(249545),	-- Preserver's Censer
-			i(249547),	-- Evoker's Elegant Rug
-			i(249549),	-- Draconic Crafter's Table
-			i(249550),	-- Wind Rider Roost
-			i(249551),	-- Skyhold Spear Rack
-			i(250093),	-- Tusked Weapon Rack
-			i(250094),	-- Empty Orgrimmar Bathtub
-			i(250110),	-- Trueshot Lodge Weapon Rack
-			i(250113),	-- Ebon Blade Tome
-			i(250114),	-- Acherus Worktable
-			i(250124),	-- Ebon Blade Banner
-			i(250128),	-- Banner of the Unseen Path
-			i(250130),	-- Tirisgarde Candle
-			i(250132),	-- Tirisgarde Brazier
-			i(250133),	-- Dreamweaver Banner
-			i(250231),	-- Silver Hand Banner
-			i(250232),	-- Sanctum of Light Hallway Rug
-			i(250235),	-- Silver Hand Tribute to the Fallen
-			i(250239),	-- Tirisgarde Banner
-			i(250302),	-- Netherlight Conclave Voidwell
-			i(250303),	-- Conclave Pedestal
-			i(250304),	-- Netherlight Lightwell
-			i(250783),	-- Uncrowned Apothecary's Cabinet
-			i(250784),	-- Uncrowned Apothecary's Supplies
-			i(250785),	-- Uncrowned Banner
-			i(250789),	-- Netherlight Conclave Banner
-			i(250913),	-- Small Razorwind Bar Table
-			i(250916),	-- Pedestal of the Maelstrom's Wisdom
-			i(250918),	-- Maelstrom Banner
-			i(250920),	-- Horned Hanging Sconce
-			i(251015),	-- Maelstrom Chimes
-			i(251022),	-- Bel'ameth Traveler's Pack
-			i(251329),	-- Shadowmoon Open-Air Shed
-			i(251330),	-- Draenic Fencepost
-			i(251331),	-- Draenic Ottoman
-			i(251477),	-- Draenic Wooden Table
-			i(251478),	-- Square Draenic Table
-			i(251480),	-- Draenic Wooden Wall Shelf
-			i(251494),	-- Moon-Blessed Barrel
-			i(251544),	-- Telredor Recliner
-			i(251545),	-- Razorwind Cooking Grill
-			i(251547),	-- Draenei Farmer's Trellis
-			i(251548),	-- Draenic Fence
-			i(251549),	-- Emblem of the Naaru's Blessing
-			i(251637),	-- Tusked Weapon Stand
-			i(251638),	-- Jagged Orgrimmar Trellis
-			i(251639),	-- Hide-Covered Bench
-			i(251640),	-- Draenic Forge
-			i(251653),	-- Draenethyst Lamppost
-			i(251654),	-- Large Karabor Fountain
-			i(251973),	-- Hide-Covered Wall Shelf
-			i(251974),	-- Tusked Chandelier
-			i(251975),	-- Tusked Sconce
-			i(251976),	-- Wolf Pelt Rug
-			i(252010),	-- Ornate Ironforge Bench
-			i(252036),	-- Tidesage's Bookcase
-			i(252386),	-- Admiralty's Upholstered Chair
-			i(252387),	-- Boralus Fence
-			i(252388),	-- Boralus Fencepost
-			i(252390),	-- Small Hull'n'Home Table
-			i(252391),	-- Large Hull'n'Home Table
-			i(252392),	-- Admiral's Chandelier
-			i(252393),	-- Hull'n'Home Dresser
-			i(252394),	-- Bowhull Bookcase
-			i(252395),	-- Brennadam Coop
-			i(252396),	-- Admiralty's Copper Lantern
-			i(252398),	-- Stormsong Water Pump
-			i(252399),	-- Stormsong Stove
-			i(252400),	-- Tiragarde Emblem
-			i(252402),	-- Tidesage's Double Bookshelves
-			i(252403),	-- Admiral's Bed
-			i(252404),	-- Hull'n'Home Chair
-			i(252405),	-- Admiral's Low-Hanging Chandelier
-			i(252406),	-- Green Boralus Market Tent
-			i(252652),	-- Copper Stormsong Well
-			i(252655),	-- Copper Tidesage's Sconce
-			i(252657),	-- Tied-Right Leather Curtains
-			i(252754),	-- Seaworthy Boralus Bell
-			i(252756),	-- Stonelight Countertop
-			i(253020),	-- Earthen Etched Throne
-			i(253021),	-- Freywold Bench
-			i(253034),	-- Fallside Lantern
-			i(253035),	-- Freywold Seat
-			i(253038),	-- Dornogal Hanging Lantern
-			i(253040),	-- Coreway Sentinel Lamppost
-			i(253162),	-- Earthen Chain Wall Shelf
-			i(253166),	-- Freywold Fountain
-			i(253168),	-- Earthen Storage Crate
-			i(253172),	-- Gundargaz Grand Keg
-			i(253173),	-- Meadery Storage Barrel
-			i(253437),	-- Elegant Covered Bench
-			i(253439),	-- Elegant Carved Bench
-			i(253495),	-- Grand Elven Bench
-			i(253527),	-- Goldshire Wardrobe
-			i(254316),	-- Small Orgrimmar Tusked Bed
-			i(254560),	-- Small Razorwind Square Table
-			i(254893),	-- Large Razorwind Gazebo
-			i(255641),	-- Undermine Mechanic's Hanging Lamp
-			i(255642),	-- Undermine Alleyway Sconce
-			i(255644),	-- Elwynn Apple Tree
-			i(255646),	-- Founder's Point Apple Tree
-			i(255647),	-- Spring-Powered Pointer
-			i(255672),	-- Gnomish Tesla Tower
-			i(255673),	-- Moonclasp Satchel
-			i(255674),	-- Incontinental Table Lamp
-			i(255708),	-- Small Jagged Orgrimmar Trellis
-			i(255840),	-- Champion Brawler's Gloves
-			i(256049),	-- Sin'dorei Sleeper
-			i(256050),	-- Razorwind Shores Front Door
-			i(256168),	-- Draconic Sconce
-			i(256327),	-- Open Rust-Plated Storage Crate
-			i(256328),	-- Leftover Undermine Takeout
-			i(256330),	-- Kharanos Stone Bed
-			i(256331),	-- Shadowforge Lamppost
-			i(256333),	-- Ornate Dwarven Wardrobe
-			i(256354),	-- Qalashi Goulash
-			i(256357),	-- Razorwind Porch Chair
-			i(256554),	-- Definitely Real, Not At All Fake Head of the Broodmother
-			i(256673),	-- Stormwind Forge
-			i(256675),	-- Illidari Tent
-			i(256682),	-- Magistrix's Garden Fountain
-			i(256903),	-- Gilnean Banded Crate
-			i(256905),	-- Small Gilnean Table
-			i(256919),	-- Zandalari War Chandelier
-			i(257099),	-- Razorwind Covered Well
-			i(257349),	-- Naaru Crystal Icon
-			i(257352),	-- Large Brazier of Elune
-			i(257359),	-- Slate Cobblestone Pair
-			i(257388),	-- Slate Cobblestone
-			i(257389),	-- Iron-Reinforced Wooden Window
-			i(257390),	-- Slate Cobblestone Path
-			i(257392),	-- Slate Cobblestone Trio
-			i(257394),	-- Zandalari War Torch
-			i(257399),	-- Zandalari War Brazier
-			i(257405),	-- Baradin Bay Fishing Rack
-			i(257412),	-- Stoppered Gilnean Barrel
-			i(257419),	-- Sin'dorei Crafter's Forge
-			i(257598),	-- Suramar Stepping Stone Set
-			i(257691),	-- Open Elegant Elven Barrel
-			i(257692),	-- Elegant Curved Table
-			i(257693),	-- Snowfall Tribe Scare-Totem
-			i(257694),	-- Gilnean Green Potion
-			i(257695),	-- Gilnean Postbox
-			i(257696),	-- Gilnean Map
-			i(257724),	-- Bloodtotem Banner
-			i(257806),	-- Scaled Twilight Mosaic
-			i(258145),	-- Eversong Party Platter
-			i(258147),	-- Empty Lorewalker's Bookcase
-			i(258148),	-- Orgrimmar Bathtub
-			i(258289),	-- Thunder Bluff Totem
-			i(258301),	-- Gilnean Washing Line
-			i(258658),	-- Elwynn Autumn Apple Tree
-			i(258659),	-- Founder's Point Autumn Apple Tree
-			i(258765),	-- Hull'n'Home Window
-			i(259071),	-- Brawler's Guild Punching Bag
-			i(260359),	-- Valdrakken Bookcase
-			i(260582),	-- Cartel Collector's Cage
-			i(260583),	-- Arathi Bartender's Shelves
-			i(260699),	-- Maldraxxian Runic Tablet
-			i(260700),	-- Gob-chanical Trash Heap
-			i(260701),	-- Red Razorwind Paintbrush
-			i(260702),	-- Dry Razorwind Grass Patch
-			i(262347),	-- Draenei Crystal Chandelier
-			i(262663),	-- Kyrian Floating Lamp
-			i(263021),	-- Brumewood Hollow Grassy Patch
-			i(263022),	-- Brumewood Hollow Grassy Spread
-			i(263023),	-- Founder's Point Grassy Patch
-			i(263024),	-- Founder's Point Grassy Spread
-			i(263025),	-- Sturdy Wine Press
-			i(263026),	-- Brawler's Barricade
-			i(263027),	-- Darkmaster's Mystical Brazier
-			i(263489),	-- Naaru's Enfold
-			i(263500),	-- Skymaster's Blood Mantle
-			i(263501),	-- Skymaster's Blood Cloak
-			i(263502),	-- Skymaster's Blood Tabard
-			i(263503),	-- Skymaster's Blood Circlet
-			i(263504),	-- Skymaster's Blood Pauldrons
-			i(263508),	-- Human Brain
+			n(ARMOR, {	-- Is this gear for catch up or gear update for dracthyr or the fast pace quest thingy??
+				i(246462),	-- Draconic Polearm
+				i(254332),	-- Garden Tender's Shawl
+				i(254335),	-- Springleaf Swatch
+				i(257244),	-- Dreamfriend's Waistguard
+				i(257245),	-- Dreamfriend's Girdle
+				i(257246),	-- Dreamfriend's Belt
+				i(257247),	-- Dreamfriend's Sash
+				i(257265),	-- Dreamfriend's Hood
+				i(257266),	-- Dreamfriend's Helm
+				i(257267),	-- Dreamfriend's Cap
+				i(257268),	-- Dreamfriend's Greathelm
+				i(257286),	-- Dream-Touched Choker
+				i(257287),	-- Wistful Signet
+				i(257288),	-- Loop of Dreams
+				i(257290),	-- Dreamfriend's Grips
+				i(257291),	-- Dreamfriend's Gauntlets
+				i(257292),	-- Dreamfriend's Gloves
+				i(257293),	-- Dreamfriend's Handguards
+				i(257294),	-- Dreamfriend's Legguards
+				i(257295),	-- Dreamfriend's Leggings
+				i(257296),	-- Dreamfriend's Scales
+				i(257297),	-- Dreamfriend's Breeches
+				i(257299),	-- Relic of the Somnambulant
+				i(257300),	-- Seed from the Dream
+				i(257301),	-- Dreamfriend's Wraps
+				i(257302),	-- Dreamfriend's Vambraces
+				i(257303),	-- Dreamfriend's Bracers
+				i(257304),	-- Dreamfriend's Bindings
+				i(257305),	-- Dreamfriend's Spaulders
+				i(257306),	-- Dreamfriend's Pauldrons
+				i(257307),	-- Dreamfriend's Mantle
+				i(257308),	-- Dreamfriend's Monnion
+				i(257309),	-- Dreamfriend's Sabatons
+				i(257310),	-- Dreamfriend's Slippers
+				i(257311),	-- Dreamfriend's Cover
+				i(257312),	-- Dreamfriend's Boots
+				i(257313),	-- Dreamfriend's Vestments
+				i(257314),	-- Dreamfriend's Chestplate
+				i(257315),	-- Dreamfriend's Hauberk
+				i(257316),	-- Dreamfriend's Vest
+				i(257317),	-- Verdant Defender's Bulwark
+				i(257318),	-- Lucid Dreamer's Guide
+				i(257319),	-- Viridian Shortsword
+				i(257320),	-- Thornwood Sticker
+				i(257321),	-- Dreamdaughter's Walking Stick
+				i(257322),	-- Dreamwood Crossbow
+				i(257323),	-- Drusahl's Hatchet
+				i(257324),	-- Dreamforged Bludgeon
+				i(257325),	-- Greatsword of the Somnambulant
+				i(257327),	-- Drusahl's Polearm
+				i(258979),	-- Azure Guardian's Cloak \\ RENAME Cloak
+				i(258980),	-- Azure Guardian's Waistguard
+				i(258981),	-- Azure Guardian's Girdle
+				i(258982),	-- Azure Guardian's Belt
+				i(258983),	-- Azure Guardian's Sash
+				i(258984),	-- Azure Guardian's Hood
+				i(258985),	-- Azure Guardian's Helm
+				i(258986),	-- Azure Guardian's Cap
+				i(258987),	-- Azure Guardian's Greathelm
+				i(258988),	-- Azure Guardian's Choker \\ RENAME Choker
+				i(258989),	-- Azure Guardian's Signet \\ RENAME Signet
+				i(258990),	-- Azure Guardian's Band \\ RENAME Loop
+				i(258991),	-- Azure Guardian's Grips
+				i(258992),	-- Azure Guardian's Gauntlets
+				i(258993),	-- Azure Guardian's Gloves
+				i(258994),	-- Azure Guardian's Handguards
+				i(258995),	-- Azure Guardian's Legguards
+				i(258996),	-- Azure Guardian's Leggings
+				i(258997),	-- Azure Guardian's Scales
+				i(258998),	-- Azure Guardian's Breeches
+				i(258999),	-- Arcane Stone \\ RENAME Trinket
+				i(259000),	-- Azure Runes \\ RENAME Trinket
+				i(259001),	-- Azure Guardian's Wraps
+				i(259002),	-- Azure Guardian's Vambraces
+				i(259003),	-- Azure Guardian's Bracers
+				i(259004),	-- Azure Guardian's Bindings
+				i(259005),	-- Azure Guardian's Spaulders
+				i(259006),	-- Azure Guardian's Pauldrons
+				i(259007),	-- Azure Guardian's Mantle
+				i(259008),	-- Azure Guardian's Monnion
+				i(259009),	-- Azure Guardian's Sabatons
+				i(259010),	-- Azure Guardian's Slippers
+				i(259011),	-- Azure Guardian's Cover
+				i(259012),	-- Azure Guardian's Boots
+				i(259013),	-- Azure Guardian's Vestments
+				i(259014),	-- Azure Guardian's Chestplate
+				i(259015),	-- Azure Guardian's Hauberk
+				i(259016),	-- Azure Guardian's Vest
+				i(259017),	-- Azure Guardian's Defender \\ RENAME Shield
+				i(259018),	-- Azure Guardian's Treat \\ RENAME Offhand
+				i(259019),	-- Azure Guardian's Blade \\ RENAME 1H Sword
+				i(259020),	-- Azure Guardian's Stabber \\ RENAME 1H Dagger
+				i(259021),	-- Azure Guardian's Staff \\ RENAME Staff
+				i(259022),	-- Azure Guardian's Bolter \\ RENAME Crossbow
+				i(259023),	-- Azure Guardian's Chopper \\ RENAME 1H Axe
+				i(259024),	-- Azure Guardian's Mace \\ RENAME 1H Mace
+				i(259025),	-- Azure Guardian's Claymore \\ RENAME 2H Sword
+				i(259026),	-- Azure Guardian's Polearm \\ RENAME Polearm
+			}),
+			n(ARMOR, {	-- Lemix?
+				i(259898),	-- Greyed Dragonscale Coif
+			}),
+			filter(BATTLE_PETS, {
+				i(245544),	-- Tiny Snow Buddy
+			}),
+			filter(COSMETIC, {
+				i(250309),	-- Simple Dagger \\ [PH] Simple Dagger
+				i(250310),	-- Simple Knife \\ [PH] Simple Knife
+				i(250311),	-- Standard Warrior's Sword \\ [PH] Standard Warrior's Sword
+				i(250312),	-- Warrior's Katana \\ [PH] Warrior's Katana
+				i(250313),	-- Vicious Warrior's Blade \\ [PH] Viscious Warrior's Blade
+				i(250314),	-- Standard Hunter's Glaive \\ [PH] Standard Hunter's Glaive
+				i(250315),	-- Hunter's Etched Glaive \\ [PH] Hunter's Etched Glaive
+				i(251514),	-- Shield of Unending Sorrow
+				i(251515),	-- Shield of Unending Grief
+				i(251516),	-- Shield of Unending Pain
+				i(251517),	-- Shield of Unending Woe
+				i(253044),	-- Crusader's Emerald Blade
+				i(253045),	-- Crusader's Amethyst Blade
+				i(253046),	-- Crusader's Ruby Blade
+				i(253047),	-- Crusader's Citrine Blade
+				i(253048),	-- Crusader's Emerald Greatblade
+				i(253049),	-- Crusader's Amethyst Greatblade
+				i(253050),	-- Crusader's Ruby Greatblade
+				i(253051),	-- Crusader's Citrine Greatblade
+				i(253274),	-- Crusader's Emerald Greatmace
+				i(253275),	-- Crusader's Amethyst Greatmace
+				i(253276),	-- Crusader's Citrine Greatmace
+				i(253277),	-- Crusader's Ruby Greatmace
+				i(253278),	-- Crusader's Emerald Mace
+				i(253279),	-- Crusader's Amethyst Mace
+				i(253280),	-- Crusader's Ruby Mace
+				i(253281),	-- Crusader's Citrine Mace
+				i(254844),	-- Hammer of the Righteous Lightbringer
+				i(254845),	-- Hammer of the Fallen Lightbringer
+				i(256722),	-- Demoncaller's Azure Crest
+				i(256723),	-- Demoncaller's Emerald Crest
+				i(256724),	-- Demoncaller's Amethyst Crest
+				i(256725),	-- Crest of Unending Woe \\ Demoncaller's Citrine Crest
+				i(257425),	-- Anubisath's Green Greatblade
+				i(257426),	-- Anubisath's Red Greatblade
+				i(257427),	-- Anubisath's Golden Greatblade \\ Anubisath's Gold Greatblade
+				i(257428),	-- Anubisath's Ethereal Greatblade
+				i(257710),	-- Anubisath's Green Blade
+				i(257711),	-- Anubisath's Red Blade
+				i(257712),	-- Anubisath's Golden Blade \\ Anubisath's Gold Blade
+				i(257713),	-- Anubisath's Ethereal Blade
+				i(257759),	-- Sorcerer's Midnight Cowl
+				i(257760),	-- Sorcerer's Azure Cowl
+				i(257761),	-- Sorcerer's Sepia Cowl
+				i(257762),	-- Sorcerer's Grassy Cowl
+				i(257763),	-- Sorcerer's Cloudy Cowl
+				i(257764),	-- Sorcerer's Deep Cowl
+				i(257765),	-- Sorcerer's Camo Cowl
+				i(257766),	-- Sorcerer's Brick Cowl
+				i(257767),	-- Sorcerer's Lively Cowl
+				i(257769),	-- Sorcerer's Faded Cowl
+				i(257770),	-- Sorcerer's Carrot Cowl
+				i(257771),	-- Sorcerer's Rosy Cowl
+				i(257772),	-- Sorcerer's Plum Cowl
+				i(257773),	-- Sorcerer's Crimson Cowl
+				i(257774),	-- Sorcerer's Violet Cowl
+				i(257775),	-- Sorcerer's Aquatic Cowl
+				i(257776),	-- Sorcerer's Snowy Cowl
+				i(257778),	-- Sorcerer's Sunny Cowl
+				i(257779),	-- Sorcerer's Midnight Cape
+				i(257780),	-- Sorcerer's Azure Cape
+				i(257781),	-- Sorcerer's Sepia Cape
+				i(257782),	-- Sorcerer's Grassy Cape
+				i(257783),	-- Sorcerer's Cloudy Cape
+				i(257784),	-- Sorcerer's Deep Cape
+				i(257785),	-- Sorcerer's Camo Cape
+				i(257786),	-- Sorcerer's Brick Cape
+				i(257787),	-- Sorcerer's Lively Cape
+				i(257788),	-- Sorcerer's Faded Cape
+				i(257789),	-- Sorcerer's Carrot Cape
+				i(257790),	-- Sorcerer's Rosy Cape
+				i(257791),	-- Sorcerer's Plum Cape
+				i(257792),	-- Sorcerer's Crimson Cape
+				i(257793),	-- Sorcerer's Violet Cape
+				i(257794),	-- Sorcerer's Aquatic Cape
+				i(257795),	-- Sorcerer's Snowy Cape
+				i(257796),	-- Sorcerer's Sunny Cape
+				i(257970),	-- Ensemble: Sorcerer's Midnight Garb \\ Ensemble: Sorcerer's Midnight Raiment
+				i(257971),	-- Ensemble: Sorcerer's Azure Garb \\ Ensemble: Sorcerer's Azure Raiment
+				i(257972),	-- Ensemble: Sorcerer's Sepia Garb \\ Ensemble: Sorcerer's Sepia Raiment
+				i(257974),	-- Ensemble: Sorcerer's Grassy Garb \\ Ensemble: Sorcerer's Grassy Raiment
+				i(257975),	-- Ensemble: Sorcerer's Cloudy Garb \\ Ensemble: Sorcerer's Cloudy Raiment
+				i(257976),	-- Ensemble: Sorcerer's Deep Garb \\ Ensemble: Sorcerer's Deep Raiment
+				i(257978),	-- Ensemble: Sorcerer's Camo Garb \\ Ensemble: Sorcerer's Camo Raiment
+				i(257979),	-- Ensemble: Sorcerer's Brick Garb \\ Ensemble: Sorcerer's Brick Raiment
+				i(257987),	-- Ensemble: Sorcerer's Lively Garb \\ Ensemble: Sorcerer's Lively Raiment
+				i(257989),	-- Ensemble: Sorcerer's Faded Garb \\ Ensemble: Sorcerer's Faded Raiment
+				i(257994),	-- Ensemble: Sorcerer's Carrot Garb \\ Ensemble: Sorcerer's Carrot Raiment
+				i(257997),	-- Ensemble: Sorcerer's Rosy Garb \\ Ensemble: Sorcerer's Rosy Raiment
+				i(258003),	-- Ensemble: Sorcerer's Plum Garb \\ Ensemble: Sorcerer's Plum Raiment
+				i(258017),	-- Ensemble: Sorcerer's Crimson Garb \\ Ensemble: Sorcerer's Crimson Raiment
+				i(258018),	-- Ensemble: Sorcerer's Violet Garb \\ Ensemble: Sorcerer's Violet Raiment
+				i(258019),	-- Ensemble: Sorcerer's Aquatic Garb \\ Ensemble: Sorcerer's Aquatic Raiment
+				i(258020),	-- Ensemble: Sorcerer's Snowy Garb \\ Ensemble: Sorcerer's Snowy Raiment
+				i(258021),	-- Ensemble: Sorcerer's Sunny Garb \\ Ensemble: Sorcerer's Sunny Raiment
+				i(258174),	-- Corrupted Cowl of the Crusader
+				i(258176),	-- Corrupted Mantle of the Crusader
+				i(258177),	-- Corrupted Robe of the Crusader
+				i(258178),	-- Corrupted Belt of the Crusader
+				i(258179),	-- Corrupted Legguards of the Crusader
+				i(258180),	-- Corrupted Boots of the Crusader
+				i(258181),	-- Corrupted Gloves of the Crusader
+				i(258182),	-- Corrupted Cloak of the Crusader
+				i(258183),	-- Corrupted Chestplate of the Crusader
+				i(258186),	-- Ensemble: Corrupted Regalia of the Crusader
+				i(258228),	-- Twilight Cowl of the Crusader
+				i(258229),	-- Twilight Mantle of the Crusader
+				i(258231),	-- Twilight Robe of the Crusader
+				i(258233),	-- Twilight Belt of the Crusader
+				i(258236),	-- Twilight Legguards of the Crusader
+				i(258241),	-- Twilight Boots of the Crusader
+				i(258243),	-- Twilight Gloves of the Crusader
+				i(258246),	-- Twilight Cloak of the Crusader
+				i(258249),	-- Twilight Chestplate of the Crusader
+				i(258251),	-- Ensemble: Twilight Regalia of the Crusader
+				i(258254),	-- Vengeful Cowl of the Crusader
+				i(258255),	-- Vengeful Mantle of the Crusader
+				i(258256),	-- Vengeful Robe of the Crusader
+				i(258257),	-- Vengeful Belt of the Crusader
+				i(258258),	-- Vengeful Legguards of the Crusader
+				i(258259),	-- Vengeful Boots of the Crusader
+				i(258260),	-- Vengeful Gloves of the Crusader
+				i(258261),	-- Vengeful Cloak of the Crusader
+				i(258263),	-- Vengeful Chestplate of the Crusader
+				i(258266),	-- Ensemble: Vengeful Regalia of the Crusader
+				i(258308),	-- Pious Cowl of the Crusader
+				i(258309),	-- Pious Mantle of the Crusader
+				i(258310),	-- Pious Robe of the Crusader
+				i(258311),	-- Pious Belt of the Crusader
+				i(258312),	-- Pious Legguards of the Crusader
+				i(258313),	-- Pious Boots of the Crusader
+				i(258314),	-- Pious Gloves of the Crusader
+				i(258315),	-- Pious Cloak of the Crusader
+				i(258316),	-- Pious Chestplate of the Crusader
+				i(258317),	-- Ensemble: Pious Regalia of the Crusader
+				i(258527),	-- Greathammer of the Fallen Lightbringer
+				i(258528),	-- Greathammer of the Righteous Lightbringer
+				i(258776),	-- South Guard's Silver Facemask
+				i(258777),	-- South Guard's Silver Mantle
+				i(258778),	-- South Guard's Silver Cinch
+				i(258779),	-- South Guard's Silver Greaves
+				i(258780),	-- South Guard's Silver Boots
+				i(258781),	-- South Guard's Silver Gauntlets
+				i(258782),	-- South Guard's Silver Cloak
+				i(258783),	-- South Guard's Silver Cuirass
+				i(258784),	-- Ensemble: South Guard's Silver Raiment \\ Ensemble: Silver Raiment of the South Guardian
+				i(258785),	-- South Guard's Golden Facemask
+				i(258786),	-- South Guard's Golden Mantle
+				i(258787),	-- South Guard's Golden Cinch
+				i(258788),	-- South Guard's Golden Greaves
+				i(258789),	-- South Guard's Golden Boots
+				i(258790),	-- South Guard's Golden Gauntlets
+				i(258791),	-- South Guard's Golden Cloak
+				i(258792),	-- South Guard's Golden Cuirass
+				i(258793),	-- Ensemble: South Guard's Golden Raiment \\ Ensemble: Golden Raiment of the South Guardian
+				i(258794),	-- South Guard's Copper Facemask
+				i(258795),	-- South Guard's Copper Mantle
+				i(258796),	-- South Guard's Copper Cinch
+				i(258797),	-- South Guard's Copper Greaves
+				i(258798),	-- South Guard's Copper Boots
+				i(258799),	-- South Guard's Copper Gauntlets
+				i(258800),	-- South Guard's Copper Cloak
+				i(258801),	-- South Guard's Copper Cuirass
+				i(258802),	-- Ensemble: South Guard's Copper Raiment \\ Ensemble: Copper Raiment of the South Guardian
+				i(258803),	-- South Guard's Iron Facemask
+				i(258804),	-- South Guard's Iron Mantle
+				i(258805),	-- South Guard's Iron Cinch
+				i(258806),	-- South Guard's Iron Greaves
+				i(258807),	-- South Guard's Iron Boots
+				i(258808),	-- South Guard's Iron Gauntlets
+				i(258809),	-- South Guard's Iron Cloak
+				i(258810),	-- South Guard's Iron Cuirass
+				i(258811),	-- Ensemble: South Guard's Iron Raiment \\ Ensemble: Iron Raiment of the South Guardian
+				i(260378),	-- Wooden Shortbow
+				i(260379),	-- Black Wooden Shortbow
+				i(260380),	-- Blue Wooden Shortbow
+				i(260381),	-- Bronze Wooden Shortbow
+				i(260382),	-- Dark Wooden Shortbow
+				i(260383),	-- Dark Blue Wooden Shortbow
+				i(260384),	-- Dark Red Wooden Shortbow
+				i(260385),	-- Frost Wooden Shortbow
+				i(260386),	-- Green Wooden Shortbow
+				i(260387),	-- Icey Wooden Shortbow
+				i(260388),	-- Light Wooden Shortbow
+				i(260389),	-- Light Blue Wooden Shortbow
+				i(260390),	-- Light Brown Wooden Shortbow
+				i(260391),	-- Pale Wooden Shortbow
+				i(260392),	-- Pink Wooden Shortbow
+				i(260393),	-- Purple Wooden Shortbow
+				i(260394),	-- Thalassian Recruit's Bow \\ Red Wooden Shortbow
+				i(260395),	-- Rugged Wooden Shortbow
+				i(260396),	-- Tranquillien Archer's Bow \\ White Wooden Shortbow
+				i(260397),	-- Sea Green Wooden Shortbow
+				i(260398),	-- South Guard's Iron Handwraps
+				i(260399),	-- South Guard's Copper Handwraps
+				i(260400),	-- South Guard's Golden Handwraps
+				i(260401),	-- South Guard's Silver Handwraps
+				i(260402),	-- South Guard's Iron Chausses
+				i(260403),	-- South Guard's Copper Chausses
+				i(260404),	-- South Guard's Golden Chausses
+				i(260405),	-- South Guard's Silver Chausses
+				i(260411),	-- Iron Chainkini
+				i(260412),	-- Rusty Chainkini
+				i(260413),	-- Copper Chainkini
+				i(260415),	-- Silver Chainkini
+				i(260416),	-- Gold Chainkini
+				i(260418),	-- Basic Crimson Sabatons
+				i(260422),	-- Axe of the Crimson Crescent \\ Red Flame Axe
+				i(260933),	-- Basic Pink Quiver
+				i(260934),	-- Thalassian Archer's Quiver \\ Basic Red Quiver
+				i(260935),	-- Tranquillien Archer's Quiver \\ Basic White Quiver
+				i(260936),	-- Basic Brown Quiver
+				i(262358),	-- Sindorei Captain's Mantle \\ Crimson Plate Shoulders
+				i(262369),	-- Sindorei Handglaive \\ Crimson Wrist Blade
+				i(262370),	-- Longbow of the Shattered Sun \\ Crimson Golden Bow
+				i(262371),	-- Bronze Magister's Courtstaff \\ Crimson Magister's Staff
+				i(262372),	-- Quel'dorei Bladestaff \\ Golden Magister's Staff
+				i(262373),	-- Quel'dorei Poleblade \\ Golden Ranseur
+				i(262374),	-- Sunfury Apprentice's Wand \\ Magister's Golden Wand
+				i(262377),	-- Sunfury Battlemage's Stave \\ Sindorei Magister's Staff
+				i(263500),	-- Skymaster's Blood Mantle
+				i(263501),	-- Skymaster's Blood Cloak
+				i(263502),	-- Skymaster's Blood Tabard
+				i(263503),	-- Skymaster's Blood Circlet
+				i(263504),	-- Skymaster's Blood Pauldrons
+			}),
+			n(DECOR, {
+				i(245586),	-- Ironwood Lumber
+				i(242691),	-- Olemba Lumber
+				i(251762),	-- Coldwind Lumber
+				i(251764),	-- Ashwood Lumber
+				i(251763),	-- Bamboo Lumber
+				i(251766),	-- Shadowmoon Lumber
+				i(251767),	-- Fel-Touched Lumber
+				i(251768),	-- Darkpine Lumber
+				i(251772),	-- Arden Lumber
+				i(251773),	-- Dragonpine Lumber
+				i(248012),	-- Dornic Fir Lumber
+				i(256963),	-- Thalassian Lumber
+
+				i(242948),	-- Loch Modan Bearskin Rug
+				i(243101),	-- Red Dazar'alor Rug
+				i(243327),	-- Zhevra-Stripe Rug
+				i(243336),	-- Elder Rise Rug
+				i(244314),	-- Frostwall Architect's Table
+				i(244317),	-- Orcish Banded Barrel
+				i(244319),	-- Wooden Shipping Crate
+				i(244323),	-- Orcish Sleeping Cot
+				i(245305),	-- Undermine Bean Bag Chair
+				i(245396),	-- Suramar Dresser
+				i(245406),	-- Tauren Leather Fence
+				i(245407),	-- Tauren Fencepost
+				i(245412),	-- Zandalari Ritual Drum
+				i(245414),	-- Zandalari Skullfire Lamp
+				i(245415),	-- Zuldazar Fence
+				i(245416),	-- Zuldazar Fencepost
+				i(245418),	-- Zanchuli Tapestry
+				i(245421),	-- Karabor Bed
+				i(245432),	-- Blackrock Bunkbed
+				i(245459),	-- Tauren Storage Chest
+				i(245496),	-- Small Mask of Bwonsamdi, Loa of Graves
+				i(245499),	-- Gilded Zandalari Table
+				i(245502),	-- Brill Coffin
+				i(245503),	-- Brill Coffin Lid
+				i(245509),	-- Pandaren Stone Wall
+				i(245513),	-- Square Pandaren Table
+				i(245514),	-- Pandaren Wooden Table
+				i(245534),	-- Frostwall Elevated Brazier
+				i(245557),	-- Shaded Suramar Window
+				i(245559),	-- Octagonal Ochre Window
+				i(245602),	-- Gilnean Problem Solver
+				i(245618),	-- Surwich Expedition Tent
+				i(245621),	-- Gilnean Wooden Table
+				i(245622),	-- Gilnean Wall Shelf
+				i(245623),	-- Gilnean Rocking Chair
+				i(246066),	-- Schmancy Goblin String Lights
+				i(246413),	-- Blackrock Lamppost
+				i(246420),	-- Kharanos Bookcase
+				i(246423),	-- Wooden Ironforge Table
+				i(246486),	-- Gnomish Tesla Mega-Coil
+				i(246488),	-- Ironforge Chandelier
+				i(246500),	-- Mechagon Miniature Artificial Sun
+				i(246604),	-- Deactivated Atomic Recalibrator
+				i(246685),	-- Dwarven District Banner
+				i(247669),	-- Lorewalker's Bookcase
+				i(247728),	-- Pandaren Stone Post
+				i(247733),	-- Halfhill Cookpot
+				i(247735),	-- Lucky Traveler's Bench
+				i(247736),	-- Jade Temple Dragon Fountain
+				i(247738),	-- Pandaren Meander Rug
+				i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate \\ Hanging Paper Lanterns
+				i(247767),	-- Wise Pandaren's Bed
+				i(247856),	-- Serenity Peak Tent
+				i(247916),	-- Covered Square Suramar Table
+				i(247918),	-- Nightborne Jeweler's Table
+				i(247920),	-- Circular Shal'dorei Rug
+				i(247925),	-- Suramar Storage Crate
+				i(248010),	-- Shal'dorei Open-Air Tent
+				i(248106),	-- Valdrakken Banded Barrel
+				i(248107),	-- Valdrakken Storage Crate
+				i(248108),	-- Long Valdrakken Storage Crate
+				i(248109),	-- Valdrakken Fence
+				i(248110),	-- Valdrakken Fencepost
+				i(248113),	-- Thaldraszus Telescope
+				i(248114),	-- Draconic Nesting Bed
+				i(248118),	-- Literature of the Blue Dragonflight
+				i(248119),	-- Literature of the Green Dragonflight
+				i(248120),	-- Literature of the Red Dragonflight
+				i(248121),	-- Draconic Circular Rug
+				i(248654),	-- Valdrakken Gilded Throne
+				i(248657),	-- Valdrakken Market Tent
+				i(249143),	-- Smoke Sconce
+				i(251482),	-- Draenei Stargazer's Telescope
+				i(251495),	-- Draenic Basin
+				i(251546),	-- Argussian Circular Rug
+				i(251550),	-- Draenethyst Sconce
+				i(252035),	-- Boralus Barrel
+				i(252389),	-- Proudmoore Shipping Crate
+				i(252401),	-- Boralus Bookshelf
+				i(252755),	-- Dornogal Framed Rug
+				i(253022),	-- Dornogal Bookcase
+				i(253036),	-- Freywold Table
+				i(253164),	-- Algari Fence
+				i(253165),	-- Algari Fencepost
+				i(253167),	-- Forgeground Market Bins
+				i(253169),	-- Meadery Storage Chest
+				i(253252),	-- Replica Rumbling Wastes Drill Pod
+				i(253253),	-- Gundargaz Candelabra
+				i(257053),	-- Tapestry of the Five Flights
+				i(257400),	-- Highmountain Tanner's Frame
+				i(257402),	-- "Unity of Thorns" Tapestry
+				i(257406),	-- Smoke Lamp
+				i(257689),	-- Small Gilnean Windmill
+				i(257725),	-- Camp Narache Rug
+				i(258190),	-- Outland Mag'har Banner
+				i(258191),	-- Arakkoa Decoy Scarecrow
+				i(258192),	-- Talon King's Totem
+				i(258193),	-- Draenei Holo-Projector Pedestal
+				i(258194),	-- Tempest Keep Cryo-Pod
+				i(258195),	-- Draenei Weaver's Loom
+				i(258196),	-- Draenei Transmitter
+				i(258197),	-- Crystal Signpost
+				i(258198),	-- Gilded Draenei Round Table
+				i(258199),	-- Aldor Bookcase
+				i(258200),	-- Shattrath Sconce
+				i(258201),	-- Shattrath Lamppost
+				i(258202),	-- Grand Drape of the Exiles
+				i(258203),	-- Silver Dalaran Bench
+				i(258204),	-- Dalaran Post
+				i(258205),	-- Wolvar Postbag
+				i(258206),	-- Gilded Dalaran Banner
+				i(258207),	-- Dalaran Scholar's Bookcase
+				i(258208),	-- Kirin Tor Sun Chandelier
+				i(258209),	-- Kirin Tor Crate
+				i(258210),	-- Dalaran Street Sign
+				i(258211),	-- Kirin Tor Glass Table
+				i(258215),	-- Halaa Bench
+				i(258216),	-- Reconstructed Mogu Lightning Drill
+				i(258224),	-- Dalaran Display Shelves
+				i(258225),	-- Failed Failure Detection Pylon
+				i(258226),	-- Dalaran Auto-Hammer
+				i(258227),	-- Suramar Jeweler's Assortment
+				i(258235),	-- Aspiring Soul's Chair
+				i(258238),	-- Maldraxxian Crate
+				i(258239),	-- Tome of Maldraxxian Rituals
+				i(258240),	-- Kyrian Anima Barrel
+				i(258242),	-- Hollow Night Fae Shrine
+				i(258244),	-- Broker's Hex Table
+				i(258245),	-- Ardenweald Hanging Baskets
+				i(258247),	-- Large Revendreth Storage Crate
+				i(258248),	-- Margrave's Stitched Leather Rug
+				i(258250),	-- Cartel Ta Bookcase
+				i(258252),	-- Cartel Xy Capture Crate
+				i(258253),	-- Titanic Tyrhold Fountain
+				i(258298),	-- Kirin Tor Skyline Banner
+				i(258302),	-- Pandaren Fishing Net
+				i(258303),	-- Beloved Elekk Plushie
+				i(258557),	-- Beloved Raptor Plushie
+				i(258558),	-- Sandfury Diplomat's Banner
+				i(258561),	-- Kyrian Aspirant's Rolled Cushion
+				i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset
+				i(238863),	-- Kaldorei Desk
+				i(238975),	-- Reliquary Telescope
+				i(239162),	-- Wooden Mug
+				i(239177),	-- Open Tome of Twilight Nihilism
+				i(239179),	-- Tome of Twilight Nihilism
+				i(239213),	-- Well-Lit Incontinental Loveseat
+				i(239214),	-- Well-Lit Incontinental Couch
+				i(239606),	-- Forsaken Round Rug
+				i(241043),	-- Elodor Barrel
+				i(241066),	-- Forsaken Spiked Brazier
+				i(241067),	-- Large Forsaken Spiked Brazier
+				i(243113),	-- Blue Dazar'alor Rug
+				i(243130),	-- Zandalari Weapon Rack
+				i(243290),	-- Tauren Waterwheel
+				i(243312),	-- Undermine Rectangular Table
+				i(243321),	-- Cartel Head's Schmancy Desk
+				i(243335),	-- Tauren Bluff Rug
+				i(243359),	-- Tauren Windmill
+				i(244313),	-- Orcish Fence
+				i(244315),	-- Orcish Warlord's Planning Table
+				i(244316),	-- Warsong Workbench
+				i(244320),	-- Youngling's Courser Toys
+				i(244321),	-- Orcish Lumberjack's Stool
+				i(244322),	-- Frostwolf Banded Stool
+				i(244653),	-- Orcish Scribe's Drafting Table
+				i(244654),	-- Small Purple Suramar Seat Cushion
+				i(244676),	-- Teal Suramar Seat Cushion
+				i(244677),	-- Purple Suramar Seat Cushion
+				i(244678),	-- Small Red Suramar Seat Cushion
+				i(244777),	-- Surwich Peddler's Wagon
+				i(245258),	-- Val'sharah Bookcase
+				i(245259),	-- Small Val'sharah Bookcase
+				i(245260),	-- Kaldorei Chef's Table
+				i(245263),	-- Zocalo Drinks
+				i(245270),	-- Thunder Totem Kiln
+				i(245275),	-- Rolled Scroll
+				i(245283),	-- Blood Elven Candelabra
+				i(245285),	-- Reliquary Storage Crate
+				i(245286),	-- Rectangular Sin'dorei Rug
+				i(245287),	-- Long Sin'dorei Rug
+				i(245288),	-- Circular Sin'dorei Rug
+				i(245291),	-- Replica Dark Iron Mole Machine
+				i(245293),	-- Collection of Arathi Scripture
+				i(245294),	-- Councilward's Jeweled Goblet
+				i(245303),	-- Rocket-Unpowered Rocket
+				i(245306),	-- Cozy Four-Pipe Bed
+				i(245307),	-- Undermine Bookcase
+				i(245308),	-- "Elegant" Lawn Flamingo
+				i(245309),	-- Rusty Patchwork Tub
+				i(245310),	-- Reinforced Goblin Umbrella
+				i(245311),	-- Undermine Wall Shelf
+				i(245313),	-- Spring-Powered Undermine Chair
+				i(245314),	-- Undermine Round Table
+				i(245315),	-- Trashfire Barrel
+				i(245318),	-- Undermine Fence
+				i(245319),	-- Undermine Fencepost
+				i(245320),	-- Very Reliable Undermine Lamppost
+				i(245321),	-- Rust-Plated Storage Barrel
+				i(245325),	-- Undermine Market Stall
+				i(245333),	-- Shadowforge Wooden Box
+				i(245413),	-- Zandalari Sconce
+				i(245417),	-- Akunda the Tapestry
+				i(245422),	-- Draenic Bookcase
+				i(245424),	-- Draenic Storage Chest
+				i(245425),	-- Hanging Draenethyst Light
+				i(245427),	-- Dark Iron Expedition Tent
+				i(245431),	-- Draenor Cookpot
+				i(245433),	-- Blackrock Strongbox
+				i(245437),	-- Orc-Forged Weaponry
+				i(245438),	-- Frostwolf Bookcase
+				i(245441),	-- Orcish Fencepost
+				i(245442),	-- Warsong Footrest
+				i(245443),	-- Frostwolf Round Table
+				i(245444),	-- Orcish Communal Stove
+				i(245445),	-- Frostwolf Axe-Dart Board
+				i(245449),	-- Ancient Elven Highback Chair
+				i(245450),	-- Highmountain Totem
+				i(245452),	-- Stonebull Canoe
+				i(245454),	-- Small Highmountain Drum
+				i(245458),	-- Riverbend Jar
+				i(245462),	-- Banshee Queen's Banner
+				i(245464),	-- Inert Blight Canister
+				i(245465),	-- Tirisfal Wooden Chair
+				i(245466),	-- Forsaken Spiked Chair
+				i(245469),	-- Lordaeron Lantern
+				i(245470),	-- Lordaeron Hanging Lantern
+				i(245471),	-- Blightfire Lantern
+				i(245472),	-- Blightfire Hanging Lantern
+				i(245473),	-- Forsaken Studded Table
+				i(245474),	-- Forsaken War Planning Table
+				i(245475),	-- Forsaken Long Table
+				i(245477),	-- Small Forsaken War Tent
+				i(245478),	-- Lordaeron Sconce
+				i(245479),	-- Blightfire Sconce
+				i(245480),	-- Lordaeron Torch
+				i(245481),	-- Blightfire Torch
+				i(245482),	-- Undercity Spiked Chest
+				i(245485),	-- Golden Zandalari Bed
+				i(245486),	-- Tired Troll's Bench
+				i(245488),	-- Zandalari Rickshaw
+				i(245489),	-- Zuldazar Stool
+				i(245491),	-- Bwonsamdi's Golden Gong
+				i(245493),	-- Idol of Rezan, Loa of Kings
+				i(245495),	-- Dazar'alor Market Tent
+				i(245500),	-- Red Dazar'alor Tent
+				i(245501),	-- Venthyr Tome of Unforgiven Sins
+				i(245504),	-- Lordaeron Fence
+				i(245505),	-- Lordaeron Fencepost
+				i(245508),	-- Pandaren Cooking Table
+				i(245512),	-- Pandaren Cradle Stool
+				i(245515),	-- Gilnean Wooden Bed
+				i(245516),	-- Gilnean Bench
+				i(245518),	-- Worgen's Chicken Coop
+				i(245521),	-- Stone Zandalari Lamp
+				i(245558),	-- Elaborate Suramar Window
+				i(245603),	-- Gilnean Noble's Trellis
+				i(245604),	-- Arched Rose Trellis
+				i(245605),	-- Gilnean Stone Wall
+				i(245615),	-- Bradensbrook Smoke Lantern
+				i(245616),	-- Bradensbrook Thorned Well
+				i(245617),	-- Gilnean Stocks
+				i(245620),	-- Little Wolf's Loo
+				i(245624),	-- Waning Wood Fence
+				i(245625),	-- Bel'ameth Bench
+				i(245627),	-- Elven Temple Brazier
+				i(245655),	-- Filigree Moon Lamp
+				i(245698),	-- Kaldorei Stone Fence
+				i(245699),	-- Kaldorei Stone Fencepost
+				i(245701),	-- Elven Round Table
+				i(245704),	-- Bel'ameth Barrel
+				i(245984),	-- Sagehold Window
+				i(246001),	-- Orange Suramar Seat Cushion
+				i(246002),	-- Red Suramar Seat Cushion
+				i(246089),	-- Bel'ameth Wooden Table
+				i(246091),	-- Bel'ameth Crafter's Tent
+				i(246100),	-- Small Bel'ameth Tent
+				i(246108),	-- Embellished Dwarven Tome
+				i(246110),	-- Filigree Moon Sconce
+				i(246222),	-- Boralus String Lights
+				i(246409),	-- Shadowforge Grinding Wheel
+				i(246411),	-- Ironforge Bookcase
+				i(246412),	-- Small Ironforge Bookcase
+				i(246422),	-- Thelsamar Hanging Lantern
+				i(246424),	-- Square Stormpike Table
+				i(246425),	-- Round Dwarven Table
+				i(246427),	-- Dilapidated Wildhammer Well
+				i(246428),	-- Overgrown Wildhammer Fountain
+				i(246480),	-- Automated Gnomeregan Guardian
+				i(246481),	-- Retired Industrial Gnomegrabber
+				i(246482),	-- Mechanical Gnomish Lamppost
+				i(246484),	-- Mechagon Hanging Floodlight
+				i(246485),	-- Mechagnome Sustenance Distribution Station
+				i(246487),	-- Gnomish Tesla Coil
+				i(246497),	-- Small Emergency Warning Lamp
+				i(246498),	-- Emergency Warning Lamp
+				i(246499),	-- Mechagon Eyelight Lamp
+				i(246501),	-- Gnomish Safety Flamethrower
+				i(246503),	-- Large H.O.M.E. Cog
+				i(246595),	-- Gnomish Fencepost
+				i(246596),	-- Gnomish Fence
+				i(246597),	-- Perpetual Motion Crate
+				i(246599),	-- Self-Sealing Stembarrel
+				i(246600),	-- Small Mechanical Crate
+				i(246601),	-- Bolt Chair
+				i(246602),	-- Small H.O.M.E. Cog
+				i(246603),	-- Gnomish Cog Stack
+				i(246605),	-- Mecha-Storage Mecha-Chest
+				i(246606),	-- Mechagon Armory Rack
+				i(246701),	-- Gnomish Sprocket Table
+				i(246703),	-- Double-Sprocket Table
+				i(246707),	-- Decorative Cinder Honeypot
+				i(246708),	-- Dornic Sliced Mineloaf
+				i(246709),	-- Earthen Hospitality Cheese-Like Brick
+				i(246845),	-- Tome of Shadowforge Cunning
+				i(246847),	-- Tome of Draenei Faith
+				i(246848),	-- Scribe's Working Notes
+				i(246860),	-- Tome of Forsaken Resilience
+				i(246863),	-- Open Tome of the Dragon's Dedication
+				i(246864),	-- Tome of the Lost Dragon
+				i(247662),	-- Pandaren Scholar's Lectern
+				i(247663),	-- Pandaren Scholar's Bookcase
+				i(247670),	-- Pandaren Pantry
+				i(247729),	-- Pandaren Stone Lamppost
+				i(247730),	-- Red Crane Kite
+				i(247731),	-- Hanging Paper Lanterns
+				i(247732),	-- Lucky Hanging Lantern
+				i(247734),	-- Paw'don Well
+				i(247737),	-- Stormstout Brew Keg
+				i(247740),	-- Kotmogu Pedestal
+				i(247741),	-- Kotmogu Orb of Power
+				i(247842),	-- Nightborne Merchant's Stall
+				i(247843),	-- Deluxe Suramar Sleeper
+				i(247855),	-- Pandaren Lacquered Crate
+				i(247858),	-- Shaohao Ceremonial Bell
+				i(247908),	-- Nightborne Lantern
+				i(247911),	-- Shal'dorei Seat
+				i(247912),	-- Large Traditional Shal'dorei Rug
+				i(247914),	-- Covered Ornate Suramar Table
+				i(247915),	-- Square Suramar Table
+				i(247917),	-- Covered Small Suramar Table
+				i(247919),	-- Traditional Shal'dorei Rug
+				i(248009),	-- Suramar Window
+				i(248116),	-- Valdrakken Chandelier
+				i(248334),	-- Stormwind Wooden Bench
+				i(248335),	-- Stormwind Wooden Stool
+				i(248401),	-- Ornamental Kaldorei Glaive
+				i(248622),	-- Wooden Outhouse
+				i(248660),	-- Stormwind Workbench
+				i(248661),	-- Northshire Scribe's Desk
+				i(248663),	-- Wooden Doghouse
+				i(248758),	-- Relaxing Goblin Beach Chair with Cup Gripper
+				i(248759),	-- Amirdrassil Stool
+				i(248799),	-- Wooden Storage Crate
+				i(248800),	-- Architect's Drafting Table
+				i(248808),	-- Nesingwary Elk Trophy
+				i(248810),	-- Rough Wooden Chair
+				i(248934),	-- Golden Cloud Serpent Treasure Chest
+				i(248985),	-- Tauren Hanging Brazier
+				i(249545),	-- Preserver's Censer
+				i(249547),	-- Evoker's Elegant Rug
+				i(249549),	-- Draconic Crafter's Table
+				i(251022),	-- Bel'ameth Traveler's Pack
+				i(251329),	-- Shadowmoon Open-Air Shed
+				i(251330),	-- Draenic Fencepost
+				i(251477),	-- Draenic Wooden Table
+				i(251478),	-- Square Draenic Table
+				i(251480),	-- Draenic Wooden Wall Shelf
+				i(251544),	-- Telredor Recliner
+				i(251547),	-- Draenei Farmer's Trellis
+				i(251548),	-- Draenic Fence
+				i(251549),	-- Emblem of the Naaru's Blessing
+				i(251640),	-- Draenic Forge
+				i(251653),	-- Draenethyst Lamppost
+				i(251654),	-- Large Karabor Fountain
+				i(252036),	-- Tidesage's Bookcase
+				i(252386),	-- Admiralty's Upholstered Chair
+				i(252387),	-- Boralus Fence
+				i(252388),	-- Boralus Fencepost
+				i(252390),	-- Small Hull'n'Home Table
+				i(252391),	-- Large Hull'n'Home Table
+				i(252392),	-- Admiral's Chandelier
+				i(252393),	-- Hull'n'Home Dresser
+				i(252394),	-- Bowhull Bookcase
+				i(252395),	-- Brennadam Coop
+				i(252396),	-- Admiralty's Copper Lantern
+				i(252398),	-- Stormsong Water Pump
+				i(252400),	-- Tiragarde Emblem
+				i(252402),	-- Tidesage's Double Bookshelves
+				i(252403),	-- Admiral's Bed
+				i(252404),	-- Hull'n'Home Chair
+				i(252405),	-- Admiral's Low-Hanging Chandelier
+				i(252406),	-- Green Boralus Market Tent
+				i(252652),	-- Copper Stormsong Well
+				i(252655),	-- Copper Tidesage's Sconce
+				i(252754),	-- Seaworthy Boralus Bell
+				i(252756),	-- Stonelight Countertop
+				i(253020),	-- Earthen Etched Throne
+				i(253021),	-- Freywold Bench
+				i(253034),	-- Fallside Lantern
+				i(253035),	-- Freywold Seat
+				i(253038),	-- Dornogal Hanging Lantern
+				i(253040),	-- Coreway Sentinel Lamppost
+				i(253162),	-- Earthen Chain Wall Shelf
+				i(253166),	-- Freywold Fountain
+				i(253172),	-- Gundargaz Grand Keg
+				i(253527),	-- Goldshire Wardrobe
+				i(255641),	-- Undermine Mechanic's Hanging Lamp
+				i(255642),	-- Undermine Alleyway Sconce
+				i(255647),	-- Spring-Powered Pointer
+				i(255673),	-- Moonclasp Satchel
+				i(255674),	-- Incontinental Table Lamp
+				i(255840),	-- Champion Brawler's Gloves
+				i(256049),	-- Sin'dorei Sleeper
+				i(256168),	-- Draconic Sconce
+				i(256327),	-- Open Rust-Plated Storage Crate
+				i(256328),	-- Leftover Undermine Takeout
+				i(256330),	-- Kharanos Stone Bed
+				i(256331),	-- Shadowforge Lamppost
+				i(256554),	-- Definitely Real, Not At All Fake Head of the Broodmother
+				i(256903),	-- Gilnean Banded Crate
+				i(256905),	-- Small Gilnean Table
+				i(256919),	-- Zandalari War Chandelier
+				i(257349),	-- Naaru Crystal Icon
+				i(257352),	-- Large Brazier of Elune
+				i(257394),	-- Zandalari War Torch
+				i(257399),	-- Zandalari War Brazier
+				i(257405),	-- Baradin Bay Fishing Rack
+				i(257412),	-- Stoppered Gilnean Barrel
+				i(257419),	-- Sin'dorei Crafter's Forge
+				i(257598),	-- Suramar Stepping Stone Set
+				i(257693),	-- Snowfall Tribe Scare-Totem
+				i(257694),	-- Gilnean Green Potion
+				i(257695),	-- Gilnean Postbox
+				i(257696),	-- Gilnean Map
+				i(257724),	-- Bloodtotem Banner
+				i(257806),	-- Scaled Twilight Mosaic
+				i(258145),	-- Eversong Party Platter
+				i(258147),	-- Empty Lorewalker's Bookcase
+				i(258289),	-- Thunder Bluff Totem
+				i(258301),	-- Gilnean Washing Line
+				i(258765),	-- Hull'n'Home Window
+				i(259071),	-- Brawler's Guild Punching Bag
+				i(260582),	-- Cartel Collector's Cage
+				i(260583),	-- Arathi Bartender's Shelves
+				i(260699),	-- Maldraxxian Runic Tablet
+				i(260700),	-- Gob-chanical Trash Heap
+				i(262347),	-- Draenei Crystal Chandelier
+				i(262663),	-- Kyrian Floating Lamp
+				i(263021),	-- Brumewood Hollow Grassy Patch
+				i(263022),	-- Brumewood Hollow Grassy Spread
+				i(263023),	-- Founder's Point Grassy Patch
+				i(263024),	-- Founder's Point Grassy Spread
+				i(263026),	-- Brawler's Barricade
+			}),
+			filter(MISC, {
+				i(228939),	-- [DNT]Coffee Bean \\ Coffee Bean
+				i(228960),	-- [DNT]Small Bag of Coffee Beans \\ Small Bag of Coffee Beans
+				i(228961),	-- [DNT]Medium Bag of Coffee Beans \\ Medium Bag of Coffee Beans
+				i(228962),	-- [DNT]Large Bag of Coffee Beans \\ Large Bag of Coffee Beans
+				i(228968),	-- [DNT]Phoenix Cold Brew \\ Phoenix Cold Brew
+				i(228969),	-- [DNT]Enchanted Espresso \\ Enchanted Espresso
+				i(228970),	-- [DNT]Highmountain Mocha \\ Highmountain Mocha
+				i(228971),	-- [DNT]Captain's Cappuccino \\ Captain's Cappuccino
+				i(228972),	-- [DNT]Darkshore Decaf \\ Darkshore Decaf
+				i(228973),	-- [DNT]Royal Tea \\ Royal Tea
+				i(228974),	-- [DNT]Kalimdoricano \\ Kalimdoricano
+				i(229197),	-- [DNT]Sack of Coffee Beans \\ Sack of Coffee Beans
+				i(230012),	-- [DNT]Black Coffee \\ Black Coffee
+				i(243197),	-- Matured Hoof Piece
+				i(243201),	-- Massive Serpent Fang
+				i(243202),	-- Tiny Pangolin Fang
+				i(243204),	-- Stiff Bristles
+				i(243206),	-- Cracked Predator's Claw
+				i(243208),	-- Mangled Leg Meat
+				i(243209),	-- Split Bird Beak
+				i(243210),	-- Shredded Ray Fin
+				i(243211),	-- Shattered Aquatic Jaw
+				i(243212),	-- Toxic Barbed Stinger
+				i(243213),	-- Gnawed Rabbit's Foot
+				i(243214),	-- Shed Vulpine Fur
+				i(243215),	-- Enlarged Insect Organs
+				i(243218),	-- Pristine Blushleaf Shell
+				i(243226),	-- Glimmering Elemental Core
+				i(243228),	-- Dim Elemental Essence
+				i(244906),	-- Gently Shaken Gift
+				i(244908),	-- Winter Veil Gift
+				i(252990),	-- Drustvar Candies
+				i(263508),	-- Human Brain
+				i(254323),	-- Worldsoul Satchel
+				i(254324),	-- Worldsoul Satchel
+				i(254325),	-- Worldsoul Satchel
+				i(260428),	-- Raw Mussel
+				i(260429),	-- Crescent Cove Crab
+				i(260519),	-- Farm Carrots
+				i(260522),	-- Duck Egg
+				i(260532),	-- Tuskarr Dinner Bell
+				i(260533),	-- Oddsight Focus
+				i(260588),	-- Jendry's Donut
+				i(260589),	-- Flame-Blessed Beach Towel
+				-- Misc What happened??!
+				i(262562),	-- Bolt of Pressed Linen
+				i(262563),	-- Bolt of Elegant Silk
+				i(262564),	-- Bolt of Soft Wool
+				i(262565),	-- Spool of Thread
+				-- house?
+				i(246697),	-- Self-Assembling Homeware Kit
+				i(249386),	-- Ghost Gear
+
+				-- Brawlers Guild
+				i(253515),	-- Challenge Card: Glorp
+				i(253575),	-- Challenge Card: Renegade Swabbie
+				i(253581),	-- Challenge Card: Sunny
+				i(253868),	-- Challenge Card: The Quacken
+				i(254690),	-- Blood-Soaked Invitation
+				-- Catch up?
+				i(249771),	-- Large Blue Bag
+				i(249772),	-- Large Red Bag
+				i(249773),	-- Large Black Bag
+			}),
+			filter(MOUNTS, {
+				i(260409),	-- Savage Crimson Battle Turtle
+				i(260580),	-- Cloudborn Razorwing
+			}),
+			n(PROFESSIONS, {
+				i(233203),	-- Schematic: Housing Crafting Test Recipe
+				i(248013),	-- Model Plate: Dornic Mine and Cheese Platter
+				i(260947),	-- White Dye Pigment
+				i(262625),	-- Purple Dye Pigment
+				i(262628),	-- Teal Dye Pigment
+				i(262639),	-- Black Dye Pigment
+				i(262642),	-- Brown Dye Pigment
+				i(262643),	-- Blue Dye Pigment
+				i(262647),	-- Green Dye Pigment
+				i(262648),	-- Yellow Dye Pigment
+				i(262655),	-- Red Dye Pigment
+				i(262656),	-- Orange Dye Pigment
+				i(259894),	-- Perfect Preservatives
+				-- Dye
+				i(258838),	-- Housing Dye: Gold
+				i(259053),	-- Housing Dye: Warm Teak
+				i(259078),	-- Housing Dye: Basic Birch
+				i(259096),	-- Housing Dye: Mesquite Brown
+				i(259097),	-- Housing Dye: Pinewood
+				i(259098),	-- Housing Dye: Darkwood
+				i(259099),	-- Housing Dye: Highland Birch
+				i(259100),	-- Housing Dye: Holy Oak Tan
+				i(259101),	-- Housing Dye: Pale Umber
+				i(259102),	-- Housing Dye: Mahogany
+				i(259103),	-- Housing Dye: Heartwood
+				i(259104),	-- Housing Dye: Stormsteel
+				i(259105),	-- Housing Dye: Copper
+				i(259106),	-- Housing Dye: Zandalari Gold
+				i(259107),	-- Housing Dye: Brass
+				i(259108),	-- Housing Dye: Bronze
+				i(259109),	-- Housing Dye: Dark Iron
+				i(259110),	-- Housing Dye: Kul Tiran Steel
+				i(259111),	-- Housing Dye: Ironclaw
+				i(259113),	-- Housing Dye: Horde Red
+				i(259114),	-- Housing Dye: Lush Green
+				i(259115),	-- Housing Dye: Alliance Blue
+				i(259116),	-- Housing Dye: Kirin Tor Violet
+				i(259117),	-- Housing Dye: Sandfury Yellow
+				i(259118),	-- Housing Dye: Elwynn Pumpkin
+				i(259119),	-- Housing Dye: Netherstorm Fuchsia
+				i(259120),	-- Housing Dye: Bone-White \\ Housing Dye: Bone White
+				i(259121),	-- Housing Dye: Obsidium Black
+				i(259122),	-- Housing Dye: Earthen Brown
+				i(259123),	-- Housing Dye: Stormheim Grey
+				i(259124),	-- Housing Dye: Silversage Green
+				i(259125),	-- Housing Dye: Un'Goro Green
+				i(259126),	-- Housing Dye: Void Violet
+				i(259127),	-- Housing Dye: Firebloom Red
+				i(259128),	-- Housing Dye: Kalimdor Sand
+				i(259129),	-- Housing Dye: Zephras Blue
+				i(259130),	-- Housing Dye: Nightsong Lilac
+				i(259131),	-- Housing Dye: Arcwine
+				i(259132),	-- Housing Dye: Kodohide Brown
+				i(259133),	-- Housing Dye: Dustwallow Green
+				i(259134),	-- Housing Dye: Emerald Dreaming
+				i(259135),	-- Housing Dye: Midnight Blue
+				i(259136),	-- Housing Dye: Vortex Teal
+				i(259137),	-- Housing Dye: Sungrass Yellow
+				i(259138),	-- Housing Dye: Savannah Gold
+				i(259139),	-- Housing Dye: Gilnean Rose
+				i(259140),	-- Housing Dye: Moonberry Amethyst
+				i(259141),	-- Housing Dye: Vol'dun Taupe
+				i(259142),	-- Housing Dye: Ratchet Rust
+				i(259143),	-- Housing Dye: Gravemoss Green
+				i(259144),	-- Housing Dye: Forsaken Plum
+				i(259145),	-- Housing Dye: Timbermaw Brown
+				i(259146),	-- Housing Dye: Nazjatar Navy
+				i(259147),	-- Housing Dye: Grizzly Hills Green
+				i(259148),	-- Housing Dye: Tidesage Teal
+				i(259149),	-- Housing Dye: Highborne Marble
+				i(259150),	-- Housing Dye: Earthroot
+				i(259151),	-- Housing Dye: Deep Mageroyal Red
+				i(259152),	-- Housing Dye: Hinterlands Hickory
+				i(259153),	-- Housing Dye: Dusk Lily Grey
+				i(259154),	-- Housing Dye: Rain Poppy Red
+			}),
+			filter(QUEST_ITEMS, {
+				i(229913),	-- Letter from Aysa
+				i(229995),	-- Gorgoa Reed
+				i(243573),	-- Poorly Written Plans
+				i(252423),	-- Truffles
+				i(252947),	-- Honeycomb
+				i(252952),	-- Bewitched Berries
+				i(253042),	-- Felwood Candies
+				i(253043),	-- Duskwood Candies
+				i(253517),	-- The Flickering Anima
+				i(254504),	-- Adventuring Letter
+				i(257891),	-- Dog Whistle
+				i(258217),	-- Honey Drops
+			}),
+			n(TIMEWALKING_HEADER, {	-- Timewalking Shadowlands
+				i(254693),	-- Distilled Knowledge of Timeways
+				i(254746),	-- Commendation of the Court of Harvesters
+				i(254851),	-- Maw Stalker's Quiver
+				i(254852),	-- Spirit Marksman's Quiver
+				i(254853),	-- Lance of the Architects
+				i(254854),	-- Putrid Necromancer Mantle
+				i(254855),	-- Amice of the Dark Necromancer
+				i(254856),	-- Soul Harvester's Scythe
+				i(254857),	-- Maw Executioner's Guillotine
+				i(254858),	-- Crossbow of the First Ones
+				i(254860),	-- Longsword of the First Ones
+				i(254861),	-- Sinstone Cleaver
+				i(254862),	-- Runeblade of the Maldraxxus Paragon
+				i(254863),	-- Staff of the Penitent
+				i(254864),	-- Oozeframe of the Mad Alchemist
+				i(254865),	-- Shell of the Forbidden Land
+				i(254866),	-- Progenitor's Fractured Smasher
+				i(254867),	-- Progenitor's Fix-It-Up
+				i(254868),	-- Sacred Bell of the Ascended
+				i(254872),	-- Creator's Rod of Origin
+				i(254873),	-- Zerith Vibroblade
+				i(256336),	-- Kyrian Sky Splitter
+				i(256337),	-- The Price Adjuster
+				i(256338),	-- Dagger of Forgotten Vows
+				i(256339),	-- Anima Drinker's Rapier
+				i(256340),	-- Skyguard's Longbow
+				i(256341),	-- Faithspire Redeemer
+				i(256348),	-- Fallen Ascendant's Bulwark
+				i(256349),	-- Warglaives of Devotion
+				i(256350),	-- Animaforged Sentinel's Plate
+				i(256351),	-- Robe of the Forsworn Seer
+				i(256352),	-- Mantle of Harmonized Spirit
+				i(256353),	-- Elysian Pathfinder's Mail
+				i(256355),	-- Animaforged Sentinel's Helm
+				i(256358),	-- Elysian Pathfinder's Visor
+				i(256359),	-- Cowl of the Forsworn Seer
+				i(256360),	-- Mask of Harmonized Spirit
+				i(258662),	-- Progenitor's Custodial Sentry
+			}),
+			filter(TOYS, {
+				i(243304),	-- Jubilant Snowman Costume
+				i(245580),	-- Rolling Snowball
+				i(263489),	-- Naaru's Enfold
+			}),
 		})),
 		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_5 } }, {
 			i(235903),	-- Gold Lightforged Chestguard
@@ -5490,7 +5142,6 @@ root(ROOTS.Unsorted, {
 			i(238460),	-- [DNT] World Boss Token
 			i(238461),	-- [DNT] Minus Mob Token
 			i(239205),	-- [DNT] Raid Boss Token, Consolation
-			i(239303),	-- Cache of Infinite Treasure
 			i(239647),	-- Reins of the Bloodguard Fel Bat
 			i(239666),	-- Reins of the Risen Fel Bat
 			i(239686),	-- Reins of the Forgotten Fel Bat
@@ -5560,9 +5211,6 @@ root(ROOTS.Unsorted, {
 			i(241606),	-- Ensemble: Garb of the Chosen Dead
 			i(241609),	-- Ensemble: Regalia of the Chosen Dead
 			i(241610),	-- Ensemble: Regalia of the Chosen Dead
-			i(241644),	-- Corrupted Runelord's Band
-			i(241645),	-- Corrupted Silkweave Doublet \\ Imbued Silkweave Doublet
-			i(241647),	-- Dreadleather Vestments \\ Battlebound Mailcoat
 			i(241648),	-- Template
 			i(241678),	-- [PH] Template
 			i(241679),	-- [PH] Template
@@ -5577,7 +5225,6 @@ root(ROOTS.Unsorted, {
 			i(241807),	-- [PH] Template
 			i(241808),	-- [PH] Template
 			i(242369),	-- The First Satyr's Spaulders
-			i(242572),	-- Tome of the Silver Hand
 			i(242706),	-- Curious Curio
 			i(243013),	-- Doomfire Dynamo
 			i(243023),	-- Badge of the Fallen Vindicator
@@ -5617,21 +5264,6 @@ root(ROOTS.Unsorted, {
 			i(246083),	-- Pristine Ettin Bone Fragment
 			i(246084),	-- Pristine Gleaming Iron Spike
 			i(246085),	-- Pristine Xakal's Determination
-			i(246154),	-- Marigold Remembrance Veil
-			i(246155),	-- Starflower Remembrance Veil
-			i(246156),	-- Lotus Remembrance Veil
-			i(246157),	-- Orchid Remembrance Veil
-			i(246158),	-- Heartblossom Remembrance Veil
-			i(246179),	-- Lotus Deathmask
-			i(246180),	-- Marigold Deathmask
-			i(246181),	-- Starflower Deathmask
-			i(246182),	-- Orchid Deathmask
-			i(246183),	-- Heartblossom Deathmask
-			i(246184),	-- Heartblossom Crown of the Dead
-			i(246185),	-- Orchid Crown of the Dead
-			i(246186),	-- Lotus Crown of the Dead
-			i(246187),	-- Starflower Crown of the Dead
-			i(246188),	-- Marigold Crown of the Dead
 			i(246238),	-- [DNT] Affix Token
 			i(246789),	-- Cache of Infinite Power
 			i(246796),	-- Epic Cache of Infinite Power
@@ -5644,8 +5276,6 @@ root(ROOTS.Unsorted, {
 			i(248092),	-- Blinky
 			i(248093),	-- Ensemble: Dreadlord's Shadowsbane Regalia
 			i(248094),	-- Ensemble: Waveborne Diplomat's Regalia
-			i(248140),	-- Bronze Simulacrum
-			i(248141),	-- Curious Simulacrum
 			i(248219),	-- [DNT] Heroic Normal Token
 			i(248220),	-- [DNT] Heroic Rare Token
 			i(248221),	-- [DNT] Heroic Rare Elite Token
@@ -5658,14 +5288,11 @@ root(ROOTS.Unsorted, {
 			i(248717),	-- Orange Bountiful Backpack
 			i(248718),	-- Purple Bountiful Backpack
 			i(248719),	-- White Bountiful Backpack
-			i(248721),	-- Chef's Apron
 			i(248725),	-- Smoked Rib Surprise
-			i(248726),	-- Smoked Rib Rack
 			i(248727),	-- Smoked Rib Leftovers
 			i(248728),	-- Bacon-Wrapped Smoked Ribs
 			i(248729),	-- Steaming Pot of Stew
 			i(248730),	-- Weathered Pot of Stew
-			i(248731),	-- Copper Pot of Stew
 			i(248732),	-- Stolen Pot of Stew
 			i(248733),	-- Frozen Dirk of the Ice Queen
 			i(248734),	-- Fiery Dirk of the Ice Queen
@@ -5674,7 +5301,6 @@ root(ROOTS.Unsorted, {
 			i(248737),	-- Well-Used Great Steak Knife
 			i(248738),	-- Used Great Steak Knife
 			i(248739),	-- Dull Great Steak Knife
-			i(248740),	-- Pristine Great Steak Knife
 			i(248812),	-- Frozen Wand of the Ice Queen
 			i(248816),	-- Fiery Wand of the Ice Queen
 			i(248817),	-- Arcane Wand of the Ice Queen
@@ -5684,7 +5310,6 @@ root(ROOTS.Unsorted, {
 			i(248829),	-- Arcane Great Axe of the Frostwolf
 			i(248830),	-- Glowing Great Axe of the Frostwolf
 			i(248832),	-- Big Bronze Fork
-			i(248837),	-- Big Gold Fork
 			i(248839),	-- Big Iron Fork
 			i(248841),	-- Big Silver Fork
 			i(248912),	-- Frozen Warglaives of the North
@@ -5694,14 +5319,11 @@ root(ROOTS.Unsorted, {
 			i(248923),	-- Unfathomably Stale Bread
 			i(248924),	-- Stale Mulgore Spice Bread
 			i(248925),	-- Months Old Rye Bread \\ Months Old Sourdough Bread
-			i(248926),	-- Stale Thirteen Grain Loaf \\ Ancient Thirteen Grain Loaf
 			i(248994),	-- Kalu'ak Crest-Horn \\ Kalu'ak Crest-horn
 			i(249242),	-- Bronze Celebration Titles: Khaz Algar Enthusiast
-			i(249716),	-- Cutlery Fanatic Backpack \\ Steel Food Fanatic Backpack
 			i(249717),	-- Golden Food Fanatic Backpack
 			i(249718),	-- Bronze Food Fanatic Backpack
 			i(249719),	-- Fine Food Fanatic Backpack \\ Silver Food Fanatic Backpack
-			i(249720),	-- Big Gold Spoon
 			i(249721),	-- Big Steel Spoon
 			i(249722),	-- Big Blue Spoon
 			i(249723),	-- Big Fancy Spoon
@@ -5759,13 +5381,6 @@ root(ROOTS.Unsorted, {
 			i(249930),	-- Villager's Seaside Pants
 			i(249931),	-- Villager's Seaside Boots
 			i(249932),	-- Ensemble: Villager's Seaside Attire
-			i(249933),	-- Villager's Country Cap
-			i(249934),	-- Villager's Country Handwraps
-			i(249935),	-- Villager's Country Tunic
-			i(249936),	-- Villager's Country Buckle
-			i(249937),	-- Villager's Country Pants
-			i(249938),	-- Villager's Country Boots
-			i(249939),	-- Ensemble: Villager's Country Attire
 			i(249940),	-- Villager's City Cap
 			i(249941),	-- Villager's City Handwraps
 			i(249942),	-- Villager's City Tunic
@@ -5775,13 +5390,11 @@ root(ROOTS.Unsorted, {
 			i(249946),	-- Ensemble: Villager's City Attire
 			i(250084),	-- Sturdy Pot Lid
 			i(250085),	-- Battered Pot Lid
-			i(250086),	-- Copper Pot Lid
 			i(250087),	-- Used Pot Lid
 			i(250105),	-- Sharktested Crest-Horn
 			i(250106),	-- Floestrider Crest-Horn \\ Floestrider Crest-horn
 			i(250108),	-- Cragstepper Crest-Horn \\ Cragstepper Crest-horn
 			i(250191),	-- Reins of the Bilebound Ur'zul
-			i(250290),	-- Ready-Warm Portable Bakery \\ Ready-warm Portable Bakery \\ Blistering Hot Portable Bakery
 			i(250291),	-- Hot and Fresh Portable Bakery
 			i(250292),	-- Piping Hot Portable Bakery
 			i(250293),	-- Red Hot Portable Bakery
@@ -5794,7 +5407,6 @@ root(ROOTS.Unsorted, {
 			i(250726),	-- Reins of the Leyfrost Manasaber
 			i(250727),	-- Reins of the Nightwell Manasaber
 			i(250762),	-- Felfueled Memento of the Abyss
-			i(250778),	-- Cutlery Fanatic Shield \\ Steel Food Fanatic Shield
 			i(250779),	-- Golden Food Fanatic Shield
 			i(250780),	-- Bronze Food Fanatic Shield
 			i(250781),	-- Fine Food Fanatic Shield \\ Silver Food Fanatic Shield
@@ -5812,13 +5424,6 @@ root(ROOTS.Unsorted, {
 			i(250895),	-- Villager's Seaside Skirt
 			i(250896),	-- Villager's Seaside Sabatons
 			i(250897),	-- Ensemble: Villager's Seaside Collection
-			i(250898),	-- Villager's Country Bonnet
-			i(250899),	-- Villager's Country Gloves
-			i(250900),	-- Villager's Country Blouse
-			i(250901),	-- Villager's Country Belt
-			i(250902),	-- Villager's Country Skirt
-			i(250903),	-- Villager's Country Sabatons
-			i(250904),	-- Ensemble: Villager's Country Collection
 			i(250905),	-- Villager's City Bonnet
 			i(250906),	-- Villager's City Gloves
 			i(250907),	-- Villager's City Blouse
@@ -5826,10 +5431,8 @@ root(ROOTS.Unsorted, {
 			i(250909),	-- Villager's City Skirt
 			i(250910),	-- Villager's City Sabatons
 			i(250911),	-- Ensemble: Villager's City Collection
-			i(250926),	-- Highlands Gobbler \\ [PH] Turkey Mount - Black
 			i(250927),	-- Quirky Turkey \\ [PH] Turkey Mount - Brown
-			i(250928),	-- Murky Turkey \\ [PH] Turkey Mount - Purple
-			i(250929),	-- Prized Turkey \\ [PH] Turkey Mount - White
+			i(250928),	-- Murky Turkey \\ [PH] Turkey Mount - Purple\
 			i(251016),	-- Ensemble: Forged Warmonger's Cloth Armor
 			i(251017),	-- Ensemble: Forged Warmonger's Leather Armor
 			i(251018),	-- Ensemble: Forged Warmonger's Mail Armor
@@ -5850,32 +5453,25 @@ root(ROOTS.Unsorted, {
 			i(251249),	-- [DNT] Keystone Dungeon - Timed Only
 			i(251261),	-- [DNT] Keystone Level
 			i(251631),	-- Bottled Time
-			i(251656),	-- Bunch of Orange Carrots
 			i(251657),	-- Bunch of Pink Carrots
 			i(251658),	-- Bunch of Purple Carrots
 			i(251659),	-- Bunch of Yellow Carrots
 			i(251660),	-- Offhand Bunch of Yellow Carrots
 			i(251661),	-- Offhand Bunch of Purple Carrots
 			i(251662),	-- Offhand Bunch of Pink Carrots
-			i(251663),	-- Offhand Bunch of Orange Carrots
 			i(251669),	-- Sturdy Wearable Pot Lid
 			i(251670),	-- Battered Wearable Pot Lid
-			i(251671),	-- Wearable Copper Pot Lid
 			i(251672),	-- Used Wearable Pot Lid
 			i(251674),	-- Sssurine's Luxurious Sssandals
 			i(251797),	-- Ears of Orange Corn
 			i(251798),	-- Ears of Purple Corn
 			i(251799),	-- Ears of White Corn
-			i(251800),	-- Ears of Yellow Corn
 			i(251801),	-- Offhand Ears of Orange Corn
 			i(251802),	-- Offhand Ears of Purple Corn
 			i(251803),	-- Offhand Ears of White Corn
-			i(251804),	-- Offhand Ears of Yellow Corn
-			i(251854),	-- Bunch of Green Chiles \\ Bunch of Green Chile
 			i(251855),	-- Bunch of Orange Chile
 			i(251856),	-- Bunch of Red Chile
 			i(251857),	-- Bunch of Yellow Chile
-			i(251869),	-- Offhand Bunch of Green Chiles \\ Offhand Bunch of Green Chile
 			i(251870),	-- Offhand Bunch of Orange Chile
 			i(251872),	-- Offhand Bunch of Red Chile
 			i(251873),	-- Offhand Bunch of Yellow Chile
@@ -5892,7 +5488,6 @@ root(ROOTS.Unsorted, {
 			i(251991),	-- Trapper's Red Quiver
 			i(251992),	-- Trapper's Purple Quiver
 			i(251995),	-- Trapper's Blue Slippers
-			i(251996),	-- Gold-Plated Sabatons
 			i(251999),	-- Flawed Felfire Crystal
 			i(252000),	-- Intricate Felfire Crystal
 			i(252002),	-- Pristine Felfire Crystal
@@ -5918,7 +5513,6 @@ root(ROOTS.Unsorted, {
 			i(252742),	-- Brick Winter Toque \\ Brick Winter Hat
 			i(252743),	-- Lively Winter Toque \\ Lively Winter Hat
 			i(252744),	-- Faded Winter Toque \\ Faded Winter Hat
-			i(252745),	-- Carrot Winter Toque \\ Carrot Winter Hat
 			i(252746),	-- Rosy Winter Toque \\ Rosy Winter Hat
 			i(252747),	-- Plum Winter Toque \\ Plum Winter Hat
 			i(252748),	-- Crimson Winter Toque \\ Crimson Winter Hat
@@ -5949,7 +5543,6 @@ root(ROOTS.Unsorted, {
 			i(244457),	-- Keystone Container
 			i(255881),	-- Severed Threads Commendation
 			i(257518),	-- Lil' Ashlee
-			i(241646),	-- Deathwhisperer's Robe
 			i(258414),	-- Dottie
 			i(258418),	-- Gillvanas
 			i(258419),	-- Finduin
@@ -5970,22 +5563,12 @@ root(ROOTS.Unsorted, {
 			i(258482),	-- Ysergle
 			i(258483),	-- Fathom
 			i(259454),	-- Ensemble: Regalia of Shackled Elements
-			i(263226),	-- Infinite Knowledge
 		})),
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
-			n(ARMOR, {
-				-- Unknown (PvP Appearance?)
-				i(238008),	-- Wastelander's Folly
-
-				-- Mechagon Junkyard?
-				i(241239),	-- Epaulets of Arcing Power
-				i(241240),	-- Type II Bomber Jacket
-			}),
 			filter(BATTLE_PETS, {
 				i(246723),	-- Unfazed Diver
 			}),
 			filter(COSMETIC, {
-
 				-- Reputation Cosmetic
 				i(248784),	-- Ensemble: Void-Scarred Captain's Plate
 				i(248785),	-- Ensemble: Void-Scarred Striker's Battlegear
@@ -6066,9 +5649,6 @@ root(ROOTS.Unsorted, {
 				i(248396),	-- The Speaker's Ritualistic Mantle
 				i(248397),	-- Bronzbeard's Ritualistic Mantle
 			}),
-			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
-				i(238029),	-- 11.2 Raid - Cloth - Waist
-			}),
 			filter(MISC, {
 				i(238853),	-- Netherbound Heart
 				i(239109),	-- [NYI] Outdoor Voidforged Container - Ruins of Yaathron
@@ -6113,7 +5693,6 @@ root(ROOTS.Unsorted, {
 				i(243347),	-- Keg of Curiosities
 			}),
 			filter(MOUNTS, {
-				i(186639),	-- Xy Trustee's Gearglider
 				i(246698),	-- Sunwarmed Furline
 			}),
 			n(PROFESSIONS, {
@@ -6234,10 +5813,6 @@ root(ROOTS.Unsorted, {
 			}),
 			i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
 			i(249235),	-- Bottomless Bag of Entropy
-			i(249710),	-- Cartel Zo Cypher
-			i(249711),	-- Cartel Ba Cypher
-			i(249712),	-- Cartel Om Cypher
-			i(249713),	-- Cartel Transmorpher
 			i(250706),	-- The Horseman's Hallowed Cowl
 			i(250707),	-- The Horseman's Burning Cowl
 			i(250709),	-- The Horseman's Chilling Cowl
@@ -8225,7 +7800,6 @@ root(ROOTS.Unsorted, {
 			i(168789),	-- Perpetual Motion Device
 			i(168790),	-- Sack of Fish Bones
 			i(168792),	-- Kobold's Candle
-			i(168793),	-- Bottle of Homemade Wine
 			i(168794),	-- Last Year's Brewfest Flyer
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
@@ -8391,10 +7965,6 @@ root(ROOTS.Unsorted, {
 			i(170257),	-- Mirror of Spell Turning
 			i(170258),	-- Rod of Magical Fervor
 			i(170259),	-- Tome of Last Rites
-			i(170507),	-- Omnipurpose Logic Board
-			i(170508),	-- Optimized Logic Board
-			i(170509),	-- Performant Logic Board
-			i(170510),	-- Forceful Logic Board
 			i(164732),	-- Ub3r-Construct: Short-Fused Boom Bots
 			i(164734),	-- Ub3r-Construct: Ub3r-Improved Target Dummy
 			i(164738),	-- Ub3r-Construct:  Ub3r S3ntry Mk. X8.0
