@@ -4,8 +4,8 @@ GEAR_CONVERSION = createHeader({
 	text = {
 		en = "Gear Conversion",
 		-- de = "",
-		-- es = "",
-		-- mx = "",
+		es = "Conversión de equipo",
+		mx = "Conversión de equipo",
 		-- fr = "",
 		-- it = "",
 		-- ko = "",
@@ -16,5 +16,7 @@ GEAR_CONVERSION = createHeader({
 	},
 	description = {
 		en = "These items were obtained by characters created during the Remix Event and were automatically transferred to Retail when the event ended.",
+		es = "Estos objetos fueron obtenidos por personajes creados durante el evento Remix y se transfirieron automáticamente a Retail cuando finalizó el evento.",
+		mx = "Estos objetos fueron obtenidos por personajes creados durante el evento Remix y se transfirieron automáticamente a Retail cuando finalizó el evento.",
 	},
 });
