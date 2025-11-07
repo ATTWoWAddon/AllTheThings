@@ -1012,11 +1012,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242492),	-- Ensemble: Sunny Sweatsuit
 				i(242453),	-- Sunny Sweatpants
 				i(242424),	-- Sunny Sweatshirt
-
-				------ Violet Sweatsuit Set ------
-				i(242480),	-- Ensemble: Violet Sweatsuit
-				i(242450),	-- Violet Sweatpants
-				i(242421),	-- Violet Sweatshirt
 			}),
 			n(WEAPONS, {
 				i(242521),	-- Chiling Forsaken Cauldron
