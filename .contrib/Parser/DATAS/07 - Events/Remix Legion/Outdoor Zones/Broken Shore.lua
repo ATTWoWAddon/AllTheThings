@@ -21,6 +21,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 							866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 							696,	-- Stormheim (scenario)
+							1642,	-- Val'sharah (Scenario)
 						},
 					}),
 					ach(42672, {	-- Defending the Broken Isles II
@@ -33,6 +34,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 							866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 							696,	-- Stormheim (scenario)
+							1642,	-- Val'sharah (Scenario)
 						},
 					}),
 					ach(42675, {	-- Defending the Broken Isles III
@@ -45,6 +47,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 							866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 							696,	-- Stormheim (scenario)
+							1642,	-- Val'sharah (Scenario)
 						},
 					}),
 					ach(60815),	-- Explore Broken Shore
