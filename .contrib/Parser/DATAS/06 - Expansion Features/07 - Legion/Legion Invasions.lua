@@ -15,6 +15,7 @@ root(ROOTS.ExpansionFeatures,
 				865,	-- Stormheim Invasion Scenario: Upper Ship Floor
 				866,	-- Stormheim Invasion Scenario: Lower Ship Floor
 				696,	-- Stormheim (scenario)
+				1642,	-- Val'sharah (Scenario)
 			},
 			["questID"] = 47063,	-- Tracking Quest
 			["isWorldQuest"] = true,
