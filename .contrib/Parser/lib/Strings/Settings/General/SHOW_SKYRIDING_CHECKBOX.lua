@@ -16,7 +16,7 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "驭空术",
-		-- TODO: tw = "",
+		tw = "天空騎術",
 		-- #endif
 	},
 })
