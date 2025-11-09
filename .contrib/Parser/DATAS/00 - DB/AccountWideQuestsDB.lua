@@ -2100,7 +2100,7 @@ local AccountWideQuestsDB = {
 	91951,	-- Ensemble: Shawls of Channeled Fury / Ensemble: Living Weapon's Capes
 	92031,	-- Meet the Vandals
 	92078,	-- A New Recipe!
-	92487,	-- ??
+	92487,	-- Open the first Wriggling Pinnacle Cache
 	92488,	-- Weekly lockout: 600 bonus crystals from The Flame Burns Eternal
 	92573,	-- Sturdy Chest
 	92626,	-- ??

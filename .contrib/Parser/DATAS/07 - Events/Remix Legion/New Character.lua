@@ -91,6 +91,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(91924),	-- Triggered after turning in 'The Dark Riders' (40986) (on a DK on Apocalypse quest chain)
 			q(90787),	-- Triggered after killing the first Rare?
 			q(91934),	-- Triggered after completing 1st Infinite Research quest
+			q(91763),	-- Triggered after completing the original legion intro quest chain
 			q(91094),	-- Triggered after completing 'Infinite Chaos' (91061)
 			q(92298),	-- Triggered when you take the portal to The Skyfire, in quest 'A Royal Summons' (38035) (Alliance)
 			q(92428),	-- Triggered after completing 'Uniting the Isles' (43341), Unlocking World Quests?
