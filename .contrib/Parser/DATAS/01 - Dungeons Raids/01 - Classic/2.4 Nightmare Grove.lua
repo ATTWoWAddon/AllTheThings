@@ -21,8 +21,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			},
 			description = {
 				en = "Nightmare Grove can be found near the portals to the Emerald Dream.",
+				es = "Arboleda de la Pesadilla se encuentra cerca de los portales al Sueño Esmeralda.",
+				mx = "Arboleda de las Pesadillas se encuentra cerca de los portales al Sueño Esmeralda.",
 				--[[
-				es = "",
 				de = "",
 				fr = "",
 				it = "",
