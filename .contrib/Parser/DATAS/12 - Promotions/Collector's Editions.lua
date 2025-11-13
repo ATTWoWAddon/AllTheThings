@@ -82,6 +82,7 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 		en = "MoP Classic Sha-Infused Heroic Pack",
 		es = "Pack Heroic imbuido de sha",
 		mx = "Paquete heroico infundido por los sha",
+		cn = '"熊猫人之谜"升级礼包 - 宿煞英雄礼包'
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
 });
