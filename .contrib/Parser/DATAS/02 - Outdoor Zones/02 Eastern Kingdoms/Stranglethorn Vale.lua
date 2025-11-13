@@ -2624,7 +2624,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	--Blood Moon
+			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- Blood Moon
 				readable = "Blood Moon",
 				icon = 237513,
 				text = {
