@@ -3206,6 +3206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					text = {
 						en = "Speak to Brother Romulus",
 						es = "Habla con el Hermano Romulus",
+						mx = "Habla con el Hermano Romulus",
 						de = "Sprich mit Bruder Romulus",
 						fr = "Parlez à Frère Romulus",
 						it = "Parla con Fratello Romulus",
