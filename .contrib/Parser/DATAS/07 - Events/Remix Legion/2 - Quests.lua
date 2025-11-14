@@ -464,6 +464,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		q(92430, {	-- Embracing the Infinite Chaos
 			["description"] = "Quest pops-up when you hit Level 25.",
+			["isBreadcrumb"] = true,
 			["lockCriteria"] = { 1, "questID", 91061 },	-- Infinite Chaos
 			["lvl"] = 25,
 		}),
