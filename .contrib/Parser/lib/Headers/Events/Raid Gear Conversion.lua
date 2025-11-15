@@ -11,7 +11,7 @@ RAID_GEAR_CONVERSION = createHeader({
 		-- ko = "",
 		-- pt = "",
 		-- ru = "",
-		-- cn = "",
+		cn = "团队装备转换",
 		-- tw = "",
 	},
 	description = {
