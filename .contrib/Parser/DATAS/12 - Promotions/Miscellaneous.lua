@@ -5,7 +5,7 @@ MISCELLANEOUS_PROMOTIONS = createHeader({
 	readable = "Miscellaneous",
 	icon = 135999,
 	text = {
-		en = [[~ AUCTION_CATEGORY_MISCELLANEOUS]],
+		en = [[~AUCTION_CATEGORY_MISCELLANEOUS]],
 	},
 	description = {
 		en = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
