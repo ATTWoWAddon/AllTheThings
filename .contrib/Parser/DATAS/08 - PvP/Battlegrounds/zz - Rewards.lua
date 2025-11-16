@@ -16,7 +16,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			},
 		}),
 		i(135539, {	-- Crate of Battlefield Goods 10-59	-- 9.0+
-			["description"] = "Rewarded for winning a random battleground below max level.",
+			["description"] = {
+				-- #if BEFORE 11.2.5
+				"Rewarded for winning a random battleground below max level.",
+				-- #else
+				"Rewarded for winning a random battleground granted or randomly in a lost below max level.",
+				-- #endif
+			},
 		--	["lvl"] = { 10, 59 },
 			["groups"] = {
 				i(134643),	-- Auxiliary's Cuffs*
