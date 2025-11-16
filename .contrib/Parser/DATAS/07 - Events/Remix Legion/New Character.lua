@@ -102,7 +102,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(93243),	-- Triggered after completing 'Flow of the Nightmare' (q:43241) bonus objective in Val'sharah
 			q(93195),	-- Triggered after Flamescale rare 1st kill of the day
 			-- HQTs triggered in M+
-			q(94420),	-- Triggered after First M+ 2 completed
+			q(94420),	-- Triggered after First M+ of each day
 			q(94421),	-- Triggered after First M+ 10 completed
 		},
 	})),
