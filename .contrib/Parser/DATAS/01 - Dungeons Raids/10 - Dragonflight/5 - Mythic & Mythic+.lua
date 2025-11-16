@@ -78,10 +78,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(16658, {	-- Keystone Hero: Court of Stars
 				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["maps"] = { 761 },
 				["groups"] = { spell(393766) },	-- Path of the Grand Magistrix
 			}),
 			ach(16659, {	-- Keystone Hero: Halls of Valor
 				["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["maps"] = { 703 },
 				["groups"] = { spell(393764) },	-- Path of Proven Worth
 			}),
 			ach(16640, {	-- Keystone Hero: Ruby Life Pools
@@ -126,6 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(17850, {	-- Keystone Hero: Neltharion's Lair
 				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["maps"] = { 731 },
 				["groups"] = { spell(410078) },	-- Path of the Earth-Warder
 			}),
 			ach(16644, {	-- Keystone Hero: Neltharus
@@ -160,10 +163,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(19084, {	-- Keystone Hero: Black Rook Hold
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["maps"] = { 751 },
 				["groups"] = { spell(424153) },	-- Path of Ancient Horrors
 			}),
 			ach(19085, {	-- Keystone Hero: Darkheart Thicket
 				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+				["maps"] = { 733 },
 				["groups"] = { spell(424163) },	-- Path of the Nightmare Lord
 			}),
 			ach(19088, {	-- Keystone Hero: Dawn of the Infinite
