@@ -111,13 +111,13 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["groups"] = {
 					o_repeated({
 						i(210167),	-- Empyrium Filament (QI!)
-						o(420019),	--	Artificing Tools
-						o(408934),	--	Artificing Tools
+						o(420019),	-- Artificing Tools
+						o(408934),	-- Artificing Tools
 					}),
 					o_repeated({
 						i(210168),	-- Hyperthermal Soldering Tool (QI!)
-						o(420039),	--	Artificing Tools
-						o(420040),	--	Artificing Tools
+						o(420039),	-- Artificing Tools
+						o(420040),	-- Artificing Tools
 					}),
 				},
 			}),
@@ -152,7 +152,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 210581 },	-- Exarch Maladaar
 				["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
 				["groups"] = {
-					o(408954, {	--	Artificer's Lockbox
+					o(408954, {	-- Artificer's Lockbox
 						i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
 					}),
 				},

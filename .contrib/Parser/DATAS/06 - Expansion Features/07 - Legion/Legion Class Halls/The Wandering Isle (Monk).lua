@@ -471,19 +471,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43058, {	-- Spiced Rib Roast
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					q(43060, {	-- Highmountain Salmon
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
 						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
-						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
+						["repeatable"] = true,	-- repeatable quest during "An Ample Stockpile"
 					}),
 					--- Chap 3
 					q(41849, {	-- The Iron Fist

@@ -54,7 +54,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 					["provider"] = { "n", 186883 },	-- Scalecommander Cindrethresh
 					["coord"] = { 62.3, 36.5, 2109 },
 					["groups"] = {
-						i(193914),	--	Crystalline Lapis
+						i(193914),	-- Crystalline Lapis
 					},
 				}),
 				------ Chapter 2 ------

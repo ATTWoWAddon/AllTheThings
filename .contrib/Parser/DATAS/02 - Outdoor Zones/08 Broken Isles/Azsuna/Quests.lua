@@ -704,22 +704,22 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "n", 89009 },	-- Prince Farondis
 				["coord"] = { 57.8, 43.4, AZSUNA },
 				["groups"] = {
-					i(133028),	--	Gale of Azshara
-					i(133026),	--	Cursed Dissection Blade
-					i(133025),	--	Enchanted El'dranil Frond
-					i(133024),	--	Oracle's Sharpening Stone
-					i(133023),	--	Depths Shard Ice Crystal
-					i(133022),	--	Eternal Mage Flame
-					i(133020),	--	Blood of the Snake
-					i(133019),	--	Jewel of Nar'thalas
-					i(133061),	--	Heron's Grace
-					i(133059),	--	Corrupted Farondis House Insignia
-					i(133058),	--	Life-Giving Pearl
-					i(133057),	--	Etched Talisman of Nar'thalas
-					i(133056),	--	Azshara's Tempest
-					i(133055),	--	Azshara's Ire
-					i(133053),	--	Resilient Skrog Blood
-					i(133052),	--	Instructor's Crystal Head
+					i(133028),	-- Gale of Azshara
+					i(133026),	-- Cursed Dissection Blade
+					i(133025),	-- Enchanted El'dranil Frond
+					i(133024),	-- Oracle's Sharpening Stone
+					i(133023),	-- Depths Shard Ice Crystal
+					i(133022),	-- Eternal Mage Flame
+					i(133020),	-- Blood of the Snake
+					i(133019),	-- Jewel of Nar'thalas
+					i(133061),	-- Heron's Grace
+					i(133059),	-- Corrupted Farondis House Insignia
+					i(133058),	-- Life-Giving Pearl
+					i(133057),	-- Etched Talisman of Nar'thalas
+					i(133056),	-- Azshara's Tempest
+					i(133055),	-- Azshara's Ire
+					i(133053),	-- Resilient Skrog Blood
+					i(133052),	-- Instructor's Crystal Head
 				},
 			}),
 			q(37959, {	-- The Hunger Returns

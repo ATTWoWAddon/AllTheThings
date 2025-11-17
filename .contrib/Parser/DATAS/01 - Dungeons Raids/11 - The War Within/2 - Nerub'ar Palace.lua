@@ -702,10 +702,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(227003, {	-- Kir'xal
 					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
 					["sym"] = {{"select","itemID",
-						modItemId(225634,4),	--	Web-Wrapped Curio [L]
-						modItemId(225634,3),	--	Web-Wrapped Curio [N]
-						modItemId(225634,5),	--	Web-Wrapped Curio [H]
-						modItemId(225634,6),	--	Web-Wrapped Curio [M]
+						modItemId(225634,4),	-- Web-Wrapped Curio [L]
+						modItemId(225634,3),	-- Web-Wrapped Curio [N]
+						modItemId(225634,5),	-- Web-Wrapped Curio [H]
+						modItemId(225634,6),	-- Web-Wrapped Curio [M]
 					},{"pop"}},	-- Pop all Curios (this fills their symlinks)
 				}),
 			}),

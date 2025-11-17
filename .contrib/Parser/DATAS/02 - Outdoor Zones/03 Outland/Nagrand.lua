@@ -1764,7 +1764,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9936, {	-- WANTED: Giselda the Crone (A)
-						["provider"] = { "o", 182393 },	--	Telaar Bulletin Board
+						["provider"] = { "o", 182393 },	-- Telaar Bulletin Board
 						["coord"] = { 54.7, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1784,7 +1784,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(9935, {	-- WANTED: Giselda the Crone (H)
-						["provider"] = { "o", 182392 },	--	Garadar Bulletin Board
+						["provider"] = { "o", 182392 },	-- Garadar Bulletin Board
 						["coord"] = { 55.7, 38.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {

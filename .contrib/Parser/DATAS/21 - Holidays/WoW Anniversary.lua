@@ -2406,7 +2406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						-- #ENDIF
 					},
 					["maps"] = {
-						74,	--	Caverns of Time Entrance
+						74,	-- Caverns of Time Entrance
 						CAVERNS_OF_TIME,
 					},
 					["groups"] = {
@@ -3173,7 +3173,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["isDaily"] = true,
 					["coord"] = { 33.7, 55.6 , TANARIS },
 					["maps"] = {
-						74,	--	Caverns of Time Entrance
+						74,	-- Caverns of Time Entrance
 						CAVERNS_OF_TIME,
 					},
 					["groups"] = {
@@ -3278,7 +3278,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					["isDaily"] = true,
 					["coord"] = { 46.0, 28.9, TANARIS },
 					["maps"] = {
-						74,	--	Caverns of Time Entrance
+						74,	-- Caverns of Time Entrance
 						CAVERNS_OF_TIME,
 					},
 					["groups"] = {

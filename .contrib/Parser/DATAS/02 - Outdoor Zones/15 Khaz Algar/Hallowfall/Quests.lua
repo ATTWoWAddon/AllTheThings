@@ -50,8 +50,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(78668, {	-- Rally on the Dawnbreaker
 					["sourceQuests"] = {
-						78667,	--	Rekindled Memories
-						78666,	--	The Only Good Spider
+						78667,	-- Rekindled Memories
+						78666,	-- The Only Good Spider
 					},
 					["provider"] = { "n", 213116 },	-- Faerin
 					["coord"] = { 70.1, 61.0, HALLOWFALL },
@@ -79,8 +79,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				}),
 				q(82836, {	-- Zero out Xerosh
 					["sourceQuests"] = {
-						78669,	--	For Their Eyes Only
-						78670,	--	Siege Weapon Sabotage
+						78669,	-- For Their Eyes Only
+						78670,	-- Siege Weapon Sabotage
 					},
 					["provider"] = { "n", 213120 },	-- Anduin Wrynn
 					["coord"] = { 57.5, 64.3, HALLOWFALL },

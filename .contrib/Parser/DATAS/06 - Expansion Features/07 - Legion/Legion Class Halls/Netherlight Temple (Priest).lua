@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								["provider"] = { "n", 58633 },	-- Instructor Chillheart
 								["coords"] = {
 									{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
-									{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
+									{ 58.8, 84.0, SCHOLOMANCE },	-- Actual volume inside the dungeon
 								},
 							}),
 							q(44342, {	-- Volume VI

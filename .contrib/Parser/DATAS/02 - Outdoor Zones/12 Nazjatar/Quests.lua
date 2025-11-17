@@ -2367,7 +2367,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 79.7, 44.9, NAZJATAR },
 			["races"] = HORDE_ONLY,
 		}),
-		q(56219, {	--	Tome of Tears
+		q(56219, {	-- Tome of Tears
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
 			["provider"] = { "n", 151309 },	-- Vim Brineheart
 			["races"] = HORDE_ONLY,
