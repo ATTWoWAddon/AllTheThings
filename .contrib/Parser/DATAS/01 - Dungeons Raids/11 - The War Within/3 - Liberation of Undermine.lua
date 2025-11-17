@@ -900,10 +900,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				n(227003, {	-- Kir'xal
 					["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
 					["sym"] = {{"select","itemID",
-						modItemId(228819,4),	--	Excessively Bejeweled Curio [L]
-						modItemId(228819,3),	--	Excessively Bejeweled Curio [N]
-						modItemId(228819,5),	--	Excessively Bejeweled Curio [H]
-						modItemId(228819,6),	--	Excessively Bejeweled Curio [M]
+						modItemId(228819,4),	-- Excessively Bejeweled Curio [L]
+						modItemId(228819,3),	-- Excessively Bejeweled Curio [N]
+						modItemId(228819,5),	-- Excessively Bejeweled Curio [H]
+						modItemId(228819,6),	-- Excessively Bejeweled Curio [M]
 					},{"pop"}},	-- Pop all Curios (this fills their symlinks)
 				}),
 				--]]

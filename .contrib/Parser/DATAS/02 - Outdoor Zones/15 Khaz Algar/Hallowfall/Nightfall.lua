@@ -490,9 +490,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
 					["coord"] = { 25.2, 55.6, HALLOWFALL },
 					["crs"] = {
-						240968, 	--	Ahn'tak
-						240969, 	--	Anub'Ranax
-						234440, 	--	Azj-Tak the Behemoth
+						240968, 	-- Ahn'tak
+						240969, 	-- Anub'Ranax
+						234440, 	-- Azj-Tak the Behemoth
 					},
 					["sym"] = {{"select","itemID",
 						237471,	-- Band of the Voidmancer

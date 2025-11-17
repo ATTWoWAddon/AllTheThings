@@ -1104,7 +1104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				},
 			}),
-			q(77711, {	--	And a Pinch of Magic
+			q(77711, {	-- And a Pinch of Magic
 				["sourceQuests"] = { 77697 },	-- The Right Food...
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
@@ -1112,7 +1112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208705),	-- Druidic Totem (QI!)
 				},
 			}),
-			q(77762, {	--	A Little Hope is Never without Worth
+			q(77762, {	-- A Little Hope is Never without Worth
 				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },

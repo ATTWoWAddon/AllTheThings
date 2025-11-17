@@ -3161,7 +3161,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							})),
 							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234314, {	--	Pattern: Sylvan Shoulders (RECIPE!)
+							applyclassicphase(SOD_PHASE_SIX, i(234314, {	-- Pattern: Sylvan Shoulders (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
 							applyclassicphase(SOD_PHASE_SIX, i(234263, {		-- Schematic: Obsidian Bomb (RECIPE!)
@@ -3175,7 +3175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							})),
 							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234316, {	--	Pattern: Sylvan Crown (RECIPE!)
+							applyclassicphase(SOD_PHASE_SIX, i(234316, {	-- Pattern: Sylvan Crown (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
 							applyclassicphase(SOD_PHASE_SIX, i(234262, {		-- Schematic: The Fumigator (RECIPE!)
@@ -3191,7 +3191,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 							})),
 							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_SIX, i(234318, {	--	Pattern: Sylvan Vest (RECIPE!)
+							applyclassicphase(SOD_PHASE_SIX, i(234318, {	-- Pattern: Sylvan Vest (RECIPE!)
 								["timeline"] = { ADDED_1_15_5 },
 							})),
 							applyclassicphase(SOD_PHASE_SIX, i(234261, {	-- Schematic: Arcane Megabomb (RECIPE!)

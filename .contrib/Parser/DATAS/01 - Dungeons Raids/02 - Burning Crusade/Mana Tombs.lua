@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
-						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
+						objective(1, {	-- Mana-Tombs Stasis Chamber Investigated
 							["providers"] = {
 								{ "i",  32069 },	-- Mana-Tombs Stasis Chamber Key
 								{ "o", 185519 },	-- Mana-Tombs Stasis Chamber

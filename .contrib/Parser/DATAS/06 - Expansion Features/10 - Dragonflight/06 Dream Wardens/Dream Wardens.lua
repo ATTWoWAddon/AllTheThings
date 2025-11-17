@@ -377,7 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					title(532),	-- <Name>, Dream Defender
 						-- RENOWN 20+++ --
-					q(76425, {	--	Renowned with the Dream Wardens
+					q(76425, {	-- Renowned with the Dream Wardens
 						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 						["repeatable"] = true,

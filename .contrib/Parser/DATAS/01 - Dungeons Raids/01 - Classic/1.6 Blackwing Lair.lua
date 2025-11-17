@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						["qg"] = 232802,	-- Doan Karhan
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 						["groups"] = {
-							objective(1, {	--	Use Glowing Scroll of Spatial Mending on Fel Portal
+							objective(1, {	-- Use Glowing Scroll of Spatial Mending on Fel Portal
 								["provider"] = { "i", 231836 },	-- Glowing Scroll of Spatial Mending
 								["coord"] = { 32.6, 30.9, EASTERN_PLAGUELANDS },
 								["cr"] = 232900,	-- Cursed Mage

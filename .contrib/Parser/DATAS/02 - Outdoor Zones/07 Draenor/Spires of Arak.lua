@@ -404,8 +404,8 @@ root(ROOTS.Zones, {
 								["coord"] = { 53.5, 27.5, SPIRES_OF_ARAK },
 							}),
 							q(36047, {	-- We Have Him Now
-								["sourceQuest"] = 36028,	--	Gardul Venomshiv
-								["qg"] = 83899,	--	Dark Ranger Velonara
+								["sourceQuest"] = 36028,	-- Gardul Venomshiv
+								["qg"] = 83899,	-- Dark Ranger Velonara
 								["coord"] = { 57.1, 34.4, SPIRES_OF_ARAK },
 							}),
 						},

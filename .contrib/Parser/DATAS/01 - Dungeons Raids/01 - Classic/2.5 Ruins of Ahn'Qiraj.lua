@@ -1125,7 +1125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(22220, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
 							["timeline"] = { REMOVED_1_15_5 },
 						}),
-						applyclassicphase(SOD_PHASE_SIX, i(234085, {	--	Plans: Black Grasp of the Destroyer (RECIPE!)
+						applyclassicphase(SOD_PHASE_SIX, i(234085, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
 							["timeline"] = { ADDED_1_15_5 },
 						})),
 					},

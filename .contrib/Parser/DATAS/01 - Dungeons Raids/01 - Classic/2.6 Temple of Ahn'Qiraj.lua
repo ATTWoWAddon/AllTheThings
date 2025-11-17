@@ -2377,7 +2377,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(233353),	-- Light Blue Qiraji Resonating Crystal
 						i(233356),	-- Orange Qiraji Resonating Crystal
 						i(233357),	-- Twilight Qiraji Resonating Crystal
-						i(234614, {	--	Void-Touched Emblem
+						i(234614, {	-- Void-Touched Emblem
 							i(234650),	-- Ancient Qiraji Ripper
 							i(234974),	-- Staff of the Qiraji Prophets
 							i(234975),	-- Hammer of Jizhi

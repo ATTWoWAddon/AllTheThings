@@ -7666,7 +7666,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2410, {	-- Mueh'zala
-				["crs"] = { 166608 },	--	Mueh'zala
+				["crs"] = { 166608 },	-- Mueh'zala
 				["sym"] = {{"select", "modItemID",
 					modItemId(182178,1),	-- Raptor Soul (SS!)
 					modItemId(186998,1),	-- Pattern: Pallid Oracle Bones (RECIPE!)
@@ -7713,7 +7713,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2413, {	-- Lord Chamberlain
-				["crs"] = { 164218 },	--	Lord Chamberlain
+				["crs"] = { 164218 },	-- Lord Chamberlain
 				["sym"] = {{"select", "modItemID",
 					modItemId(178816,1),	-- Nathrian Usurper's Mask
 					modItemId(178829,1),	-- Nathrian Ferula
@@ -7864,7 +7864,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				}},
 			}),
 			e(2412, {	-- Devos, Paragon of Doubt
-				["crs"] = { 162061 },	--	Devos, Paragon of Doubt
+				["crs"] = { 162061 },	-- Devos, Paragon of Doubt
 				["sym"] = {{"select", "modItemID",
 					modItemId(180108,1),	-- Abyssal Disharmony Breeches
 					modItemId(180119,1),	-- Boon of the Archon

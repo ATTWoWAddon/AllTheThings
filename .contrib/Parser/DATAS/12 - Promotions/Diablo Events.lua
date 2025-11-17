@@ -93,7 +93,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	applyevent(EVENTS.A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0 } }, {
 		-- Event durations: May 25 - June 13, 2023. July 1 - July 29, 2025
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0, } }, {
-			ach(18258, {	--	Little Lord of Lies
+			ach(18258, {	-- Little Lord of Lies
 				["provider"] = { "i", 206018 },	-- Baa'lial Soulstone
 			}),
 		})),
@@ -189,7 +189,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 						i(206275),	-- Wirt's Haunted Leg (BOE)
 						i(206276),	-- Wirt's Last Leg (BOE)
 						i(206005),	-- Wirt's Fightin' Leg (BOE)
-						i(245589, {	--	Hellcaller Chest
+						i(245589, {	-- Hellcaller Chest
 							currency(3309),	-- Hellstone Shard
 							-- Buff Gobo Items
 							i(245639),	-- Arcane Elixir

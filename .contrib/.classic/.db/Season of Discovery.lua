@@ -3894,31 +3894,31 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				})),
 
 				-- iLvl 40 - Crafted Supplies (Tier 4)
-				applyclassicphase(SOD_PHASE_TWO, i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
+				applyclassicphase(SOD_PHASE_TWO, i(215396, {	-- Waylaid Supplies: Elixirs of Greater Defense
 					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
-				applyclassicphase(SOD_PHASE_TWO, i(215397, { -- Waylaid Supplies: Massive Iron Axes
+				applyclassicphase(SOD_PHASE_TWO, i(215397, {	-- Waylaid Supplies: Massive Iron Axes
 					["cost"] = { { "i", 3855, 2 } },	-- Massive Iron Axe
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
-				applyclassicphase(SOD_PHASE_TWO, i(215404, { -- Waylaid Supplies: Mithril Blunderbuss
+				applyclassicphase(SOD_PHASE_TWO, i(215404, {	-- Waylaid Supplies: Mithril Blunderbuss
 					["cost"] = { { "i", 10508, 2 } },	-- Mithril Blunderbuss
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
-				applyclassicphase(SOD_PHASE_TWO, i(215416, { -- Waylaid Supplies: White Bandit Masks
+				applyclassicphase(SOD_PHASE_TWO, i(215416, {	-- Waylaid Supplies: White Bandit Masks
 					["cost"] = { { "i", 10008, 4 } },	-- White Bandit Mask
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
 				})),
-				applyclassicphase(SOD_PHASE_TWO, i(215409, { -- Waylaid Supplies: Turtle Scale Bracers
+				applyclassicphase(SOD_PHASE_TWO, i(215409, {	-- Waylaid Supplies: Turtle Scale Bracers
 					["cost"] = { { "i", 8198, 3 } },	-- Turtle Scale Bracers
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
