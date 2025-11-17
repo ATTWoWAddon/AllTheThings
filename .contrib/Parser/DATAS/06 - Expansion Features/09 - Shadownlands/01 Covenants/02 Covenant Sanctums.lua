@@ -37,16 +37,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["sourceQuestNumRequired"] = 1,
 				}),
 				ach(15647, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Dead Men Tell Some Tales
-					crit(48005, {	--  Kyrian Campaign
+					crit(48005, {	-- Kyrian Campaign
 						["sourceQuests"] = { 62557 },	-- Our Realm Reclaimed
 					}),
-					crit(48146, {	--  Necrolords Campaign
+					crit(48146, {	-- Necrolords Campaign
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
 					}),
-					crit(48530, {	--  Night Fae Campaign
+					crit(48530, {	-- Night Fae Campaign
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 					}),
-					crit(46963, {	--  Venthyr Campaign
+					crit(46963, {	-- Venthyr Campaign
 						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
 					}),
 				})),

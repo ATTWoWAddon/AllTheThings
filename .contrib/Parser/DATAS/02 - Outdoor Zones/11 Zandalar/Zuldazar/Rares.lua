@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50159,
 				["coord"] = { 75.62, 36.25, ZULDAZAR },
 				["groups"] = {
-					i(161112),	--  Hillshaker Armplates
+					i(161112),	-- Hillshaker Armplates
 					crit(41866, {	-- Kiboku
 						["achievementID"] = 12944,	-- Adventurer of Zuldazar
 					}),

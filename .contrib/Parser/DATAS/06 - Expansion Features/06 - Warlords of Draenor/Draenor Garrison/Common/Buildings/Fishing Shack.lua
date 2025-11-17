@@ -279,7 +279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 					}),
 					n(VENDORS, {
-						n(85984, {	--  Nat Pagle <Master Fisherman>
+						n(85984, {	-- Nat Pagle <Master Fisherman>
 							i(168416),	-- Angler's Water Striders
 							i(116825, {	-- Savage Fishing Pole
 								["cost"] = {{ "i", NATS_LUCKY_COIN, 25 }},

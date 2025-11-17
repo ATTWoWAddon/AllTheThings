@@ -176,12 +176,12 @@ root(ROOTS.Zones, {
 								["groups"] = { i(127751) },	-- Fel-Touched Pet Supplies
 							}),
 						}),
-						pet(1468),	--  Bloodbeak (PET!)
-						pet(1586),	--  Cerulean Moth (PET!)
-						pet(1581, {	--  Fen Crab (PET!)
+						pet(1468),	-- Bloodbeak (PET!)
+						pet(1586),	-- Cerulean Moth (PET!)
+						pet(1581, {	-- Fen Crab (PET!)
 							["description"] = "Found along the southern coast below Fang'rila.",
 						}),
-						pet(1591),	--  Violet Firefly (PET!)
+						pet(1591),	-- Violet Firefly (PET!)
 					},
 				}),
 				explorationHeader({
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38628,
 						["isDaily"] = true,
 						["coord"] = { 41.0, 78.7, TANAAN_JUNGLE },
-						["groups"] = { i(127311) },	--  Serpentine Gloves
+						["groups"] = { i(127311) },	-- Serpentine Gloves
 					}),
 					n(93001, {	-- Szirek the Twisted
 						["description"] = "Capture Strongpoint (East) to make him spawn.",

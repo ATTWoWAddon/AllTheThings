@@ -2149,7 +2149,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 			["groups"] = {
-				i(244470),	--  Etheric Victory (TOY!)
+				i(244470),	-- Etheric Victory (TOY!)
 			},
 		}),
 	}),

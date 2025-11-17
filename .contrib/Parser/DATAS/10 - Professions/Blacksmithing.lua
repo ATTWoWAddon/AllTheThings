@@ -353,7 +353,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		q(39729, {	-- The Knowledge of Black Rook
 			["sourceQuests"] = {
 				39680,	-- Between the Hammer...
-				39726,	--  ...And the Anvil
+				39726,	-- ...And the Anvil
 			},
 			["provider"] = { "n", 96763 },	-- Saris Swifthammer
 			["coord"] = { 40.0, 54.8, VALSHARAH },

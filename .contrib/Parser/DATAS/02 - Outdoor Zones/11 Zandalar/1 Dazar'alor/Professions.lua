@@ -199,7 +199,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		m(THE_GREAT_SEAL, {
 			n(PROFESSIONS, {
 				n(QUESTS, {
-					q(55240),	--  triggered after destroying all portals during Seam Stress quest (55214)
+					q(55240),	-- triggered after destroying all portals during Seam Stress quest (55214)
 				}),
 			}),
 		}),

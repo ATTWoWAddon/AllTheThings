@@ -1276,7 +1276,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171551, {	-- Legguards of the Lurking Threat
 										["races"] = ALLIANCE_ONLY,
 									}),
-									i(171607, {	--  Legplates of Redeemed Blood
+									i(171607, {	-- Legplates of Redeemed Blood
 										["races"] = HORDE_ONLY,
 									}),
 									i(171596, {	-- Legplates of the Immortal Spider
@@ -2927,7 +2927,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 			}),
 			n(VENDORS, {
-				n(223884, {	--  Bobadormu
+				n(223884, {	-- Bobadormu
 					["coord"] = { 62.7, 50.3, TANARIS },
 					["timeline"] = { ADDED_11_0_5, REMOVED_11_0_7 },
 					["groups"] = {

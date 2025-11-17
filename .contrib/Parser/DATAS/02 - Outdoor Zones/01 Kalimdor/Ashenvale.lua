@@ -881,7 +881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
 							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
 							["coord"] = { 37.6, 35.4, ASHENVALE },
-							["cr"] = 3987,	--  Dal Bloodclaw
+							["cr"] = 3987,	-- Dal Bloodclaw
 						}),
 						i(1970, {	-- Restoring Balm
 							["timeline"] = { REMOVED_4_0_3 },

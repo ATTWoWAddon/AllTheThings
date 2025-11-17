@@ -2282,7 +2282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27591, {	-- The Dark Iron Pact [Horde]
 					["sourceQuest"] = 27589,	-- The Grim Guzzler [Horde]
-					["qg"] = 45824,	--  Thunderheart
+					["qg"] = 45824,	-- Thunderheart
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),

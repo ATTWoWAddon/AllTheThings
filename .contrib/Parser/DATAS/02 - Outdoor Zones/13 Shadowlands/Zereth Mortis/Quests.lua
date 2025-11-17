@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				------ The End ------
 			}),
-			header(HEADERS.AchCriteria, 15515.01, {	--  Small Pet Problems
+			header(HEADERS.AchCriteria, 15515.01, {	-- Small Pet Problems
 				q(65064, {	-- Look Who I Found!
 					["sourceQuests"] = { 65305 },	-- The Way Forward
 					["provider"] = { "n", 184486 },	-- Tamra
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 15515.02, {	--  Not Al Are Lost
+			header(HEADERS.AchCriteria, 15515.02, {	-- Not Al Are Lost
 				q(64771, {	-- Enlightened Exodus
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 181003 },	-- Al'dalil
@@ -962,7 +962,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 15515.03, {	--  A Return to Grace
+			header(HEADERS.AchCriteria, 15515.03, {	-- A Return to Grace
 				q(65463, {	-- The Wellspring of the First Ones
 					["sourceQuests"] = { 64958 },	-- The Forces Gather
 					["provider"] = { "n", 181084 },	-- Drim
@@ -987,7 +987,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["provider"] = { "n", 184537 },	-- Nadir
 					["coord"] = { 55, 50.3, ZERETH_MORTIS },
 				}),
-				q(65448, {	--  A Return to Grace
+				q(65448, {	-- A Return to Grace
 					["sourceQuests"] = { 65350 },	-- Restore the Flow
 					["provider"] = { "o", 375283 },	-- Percolation Array
 					["coord"] = { 74.1, 69, 2028 },

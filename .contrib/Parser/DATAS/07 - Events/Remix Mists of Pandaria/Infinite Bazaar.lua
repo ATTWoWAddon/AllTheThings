@@ -370,7 +370,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
-					iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
+					iensemble(217834, {	-- Ensemble: Dreadsquall Hunter's Camouflage
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),

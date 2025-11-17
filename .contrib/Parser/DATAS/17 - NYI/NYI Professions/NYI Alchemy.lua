@@ -155,15 +155,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(156574),	-- Greater Draenor Spirit Flask
 					r(156583),	-- Draenor Treasure Finding Potion
 					-- With SpellID attched
-					i(112049),	--  Recipe: Alchemical Catalyst - Fireweed
-					i(112050),	--  Recipe: Alchemical Catalyst - Flytrap
-					i(112054),	--  Recipe: Alchemical Catalyst - Lotus
-					i(112053),	--  Recipe: Alchemical Catalyst - Orchid
-					i(112051),	--  Recipe: Alchemical Catalyst - Starflower
-					i(112025),	--  Recipe: Draenor Haste Flask
-					i(113625),	--  Recipe: Draenor Versatility Flask
-					i(112032),	--  Recipe: Greater Draenor Haste Flask
-					i(113626),	--  Recipe: Greater Draenor Versatility Flask
+					i(112049),	-- Recipe: Alchemical Catalyst - Fireweed
+					i(112050),	-- Recipe: Alchemical Catalyst - Flytrap
+					i(112054),	-- Recipe: Alchemical Catalyst - Lotus
+					i(112053),	-- Recipe: Alchemical Catalyst - Orchid
+					i(112051),	-- Recipe: Alchemical Catalyst - Starflower
+					i(112025),	-- Recipe: Draenor Haste Flask
+					i(113625),	-- Recipe: Draenor Versatility Flask
+					i(112032),	-- Recipe: Greater Draenor Haste Flask
+					i(113626),	-- Recipe: Greater Draenor Versatility Flask
 					-- Without SpellID attched
 					i(112052),	-- Recipe: Alchemical Catalyst - Arrowbloom
 					i(112043),	-- Recipe: Draenic Mana Potion

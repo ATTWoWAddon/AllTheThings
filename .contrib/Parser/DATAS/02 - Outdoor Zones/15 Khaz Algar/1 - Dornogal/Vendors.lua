@@ -774,12 +774,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["cost"] = {{"c", CARVED_UNDERMINE_CREST, 15}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
-					i(231269, {	--  Satchel of Carved Undermine Crests
+					i(231269, {	-- Satchel of Carved Undermine Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = {{"c", RUNED_UNDERMINE_CREST, 15}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
-					i(231270, {	--  Pack of Runed Undermine Crests
+					i(231270, {	-- Pack of Runed Undermine Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = {{"c", GILDED_UNDERMINE_CREST, 15}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
@@ -807,12 +807,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["cost"] = {{"c", CARVED_ETHEREAL_CREST, 15}},
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 					}),
-					i(240927, {	--  Satchel of Carved Ethereal Crests
+					i(240927, {	-- Satchel of Carved Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Heroic Crest\nReceive: Normal Crest",
 						["cost"] = {{"c", WEATHERED_ETHEREAL_CREST, 15}},
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 					}),
-					i(240926, {	--  Pack of Runed Ethereal Crests
+					i(240926, {	-- Pack of Runed Ethereal Crests
 						["description"] = "\n|cffff0000 -- DOWNGRADE --|r\n\nCost: Mythic Crest\nReceive: Heroic Crest",
 						["cost"] = {{"c", GILDED_ETHEREAL_CREST, 15}},
 						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },

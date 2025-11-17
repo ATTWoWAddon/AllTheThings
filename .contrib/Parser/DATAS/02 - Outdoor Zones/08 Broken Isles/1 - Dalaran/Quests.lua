@@ -1085,47 +1085,47 @@ root(ROOTS.Zones, {
 					["isBreadcrumb"] = true,
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43895, {	-- Sealing Fate: Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
-					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
+					["provider"] = { "n", 111243 },	-- Archmage Lan'Dalock
 					["coord"] = { 57.2, 67.5, LEGION_DALARAN },
 					["isWeekly"] = true,
 				}),

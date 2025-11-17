@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130350, {	-- Guardian of the Spring
 				["description"] = "Mount the horse located at 62.1, 51.8 and ride it to Roan Berthold at 67.3, 51.6.",
 				["questID"] = 49983,	-- Ride Horse Back
-				["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	--  Guardian of the Spring
+				["coord"] = { 62.1, 51.8, TIRAGARDE_SOUND },	-- Guardian of the Spring
 			}),
 			n(139233, {	-- Gulliver
 				["questID"] = 53373,

@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53338, {	-- Prove Your Worth
-					["provider"] = { "n", 143551 },	--  Centurion Firescream
+					["provider"] = { "n", 143551 },	-- Centurion Firescream
 					["coord"] = { 51.56, 58.06, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -902,7 +902,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 79.2, 42.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(56205, {	--  Just Ptrust Me On This
+			q(56205, {	-- Just Ptrust Me On This
 				["sourceQuests"] = { 50944 },	-- Down, But Not Out
 				["provider"] = { "n", 127377 },	-- Pa'Ku
 				["coord"] = { 71.5, 49.4, ZULDAZAR },

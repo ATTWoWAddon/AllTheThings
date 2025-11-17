@@ -173,7 +173,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 					}),
 					q(43935, {	-- A Second Legend
-						["sourceQuests"] = { 40706 },	--  A Legend You Can Hold
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 51.1, 48.2, NETHERLIGHT_TEMPLE },
 					}),

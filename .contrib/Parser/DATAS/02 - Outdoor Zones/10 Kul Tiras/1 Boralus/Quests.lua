@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53295, {	-- Do Your Part
-					["provider"] = { "n", 141698 },	--  Kort Ceefer
+					["provider"] = { "n", 141698 },	-- Kort Ceefer
 					["coord"] = { 56.4, 25.8, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

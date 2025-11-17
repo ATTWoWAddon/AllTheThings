@@ -539,7 +539,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Highmountain Tauren Starter Quests
 			q(49773, {	-- For the Horde
-				["provider"] = { "n", 93826 },	--  Mayla Highmountain
+				["provider"] = { "n", 93826 },	-- Mayla Highmountain
 				["coord"] = { 54.9, 63.2, 652 },	-- Thunder Totem
 				["races"] = { HIGHMOUNTAIN_TAUREN },
 				["lvl"] = 20,
@@ -877,7 +877,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Mag'har Orc Starter Quests
 			q(51485, {	-- For the Horde
-				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
+				["provider"] = { "n", 143845 },	-- Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["races"] = { MAGHAR },
 				["lvl"] = 20,
@@ -1063,7 +1063,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Nightborne Starter Quests
 			q(49933, {	-- For the Horde
-				["provider"] = { "n", 143845 },	--  First Arcanist Thalyssra
+				["provider"] = { "n", 143845 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["races"] = { NIGHTBORNE },
 				["lvl"] = 20,
@@ -1484,7 +1484,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 			-- Zandalari Troll Starter Quests
 			q(55137, {	-- For the Horde
-				["provider"] = { "n", 146335 },	--  Queen Talanji
+				["provider"] = { "n", 146335 },	-- Queen Talanji
 				["coords"] = {
 					{ 42.2, 9.4, DAZARALOR },
 					{ 49.9, 46.6, DAZARALOR },

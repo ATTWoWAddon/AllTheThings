@@ -568,7 +568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4386, {	-- Crystal Spire
 					["sourceQuest"] = 4321,	-- Making Sense of It
-					["provider"] = { "o", 164957 },	--  Eastern Crystal Pylon
+					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {

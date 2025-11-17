@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.03, {	-- Fox-strut
-					q(89240, {	--  Dream-Dream-Dream-Dream-Dreameringeding!
+					q(89240, {	-- Dream-Dream-Dream-Dream-Dreameringeding!
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1631,7 +1631,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.04, {	-- Lil' Lapbugs
-					q(89221, {	--  Leafing Things on the Ground
+					q(89221, {	-- Leafing Things on the Ground
 						["qg"] = 232385,	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["isWeekly"] = true,
@@ -1664,18 +1664,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.05, {	-- Rays of Sunshine
-					q(89242, {	--  I Want a Golden Ooze!
+					q(89242, {	-- I Want a Golden Ooze!
 						["qg"] = 231820,	-- Ve'nari
 						["coord"] = { 75.9, 34.2, KARESH },
 						["isWeekly"] = true,
 						["groups"] = { i(238916) },	-- Anima Vacuum (PQI!)
 					}),
-					q(89065, {	--  Ray-cing for the Future
+					q(89065, {	-- Ray-cing for the Future
 						["qg"] = 235353,	-- Hemet Nesingwary
 						["coord"] = { 75.8, 34.0, KARESH },
 						["isWeekly"] = true,
 					}),
-					q(89056, {	--  Ray-ket Ball, Redux
+					q(89056, {	-- Ray-ket Ball, Redux
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 						["isWeekly"] = true,
 						["groups"] = { i(238909) },	-- Anima Vacuum (PQI!)
 					}),
-					q(89213, {	--  Flights of Fancy
+					q(89213, {	-- Flights of Fancy
 						["qg"] = 230736,	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isWeekly"] = true,

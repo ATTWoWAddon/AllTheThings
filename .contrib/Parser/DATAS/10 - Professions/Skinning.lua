@@ -153,7 +153,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["crs"] = { 194489 },	-- Elusive Elder Drake
 				["coord"] = { 23.2, 33.8, THE_AZURE_SPAN },
 			}),
-			crit(61474, {	--  Elusive Elder Frigidpelt
+			crit(61474, {	-- Elusive Elder Frigidpelt
 				["crs"] = { 194491 },	-- Elusive Elder Frigidpelt
 				["coord"] = { 64.7, 30.7, THE_AZURE_SPAN },
 			}),
@@ -901,7 +901,7 @@ profession(SKINNING, {
 		}),
 	}),
 	filter(TOYS, {
-		i(130102),	--  Mother's Skinning Knife (TOY!)
+		i(130102),	-- Mother's Skinning Knife (TOY!)
 	}),
 	filter(RECIPES, {
 		expansion(EXPANSION.LEGION, {
