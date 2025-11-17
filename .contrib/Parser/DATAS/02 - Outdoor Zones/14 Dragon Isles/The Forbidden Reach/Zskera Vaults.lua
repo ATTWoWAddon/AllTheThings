@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
-						73157,	--  Wings of Mercy
+						73157,	-- Wings of Mercy
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },

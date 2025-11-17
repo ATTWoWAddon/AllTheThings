@@ -254,8 +254,8 @@ root(ROOTS.Zones, {
 					}),
 					q(26411, {	-- Apply and Flash Dry
 						["sourceQuests"] = {
-							26410,	--  Explosive Bonding Compound
-							27135,	--  Something that Burns
+							26410,	-- Explosive Bonding Compound
+							27135,	-- Something that Burns
 						},
 						["qg"] = 42574,	-- Initiate Goldmine
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
@@ -296,8 +296,8 @@ root(ROOTS.Zones, {
 					}),
 					q(26591, {	-- Battlefront Triage
 						["sourceQuests"] = {
-							26501,	--  Sealing the Way
-							26502,	--  Thunder Stones
+							26501,	-- Sealing the Way
+							26502,	-- Thunder Stones
 						},
 						["qg"] = 43319,	-- Earthmender Deepvein
 						["coord"] = { 24.6, 62.1, DEEPHOLM },
@@ -530,8 +530,8 @@ root(ROOTS.Zones, {
 					}),
 					q(27040, {	-- Decryption Made Easy [Alliance]
 						["sourceQuests"] = {
-							27006,	--  Fly Over
-							27004,	--  The Twilight Plot
+							27006,	-- Fly Over
+							27004,	-- The Twilight Plot
 						},
 						["qg"] = 44799,	-- Explorer Mowi
 						["coord"] = { 47.3, 51.4, DEEPHOLM },
@@ -548,8 +548,8 @@ root(ROOTS.Zones, {
 					}),
 					q(27041, {	-- Decryption Made Easy [Horde]
 						["sourceQuests"] = {
-							27008,	--  Fly Over
-							27005,	--  The Twilight Plot
+							27008,	-- Fly Over
+							27005,	-- The Twilight Plot
 						},
 						["qg"] = 44823,	-- Examiner Rowe
 						["coord"] = { 51.2, 50.0, DEEPHOLM },
@@ -604,8 +604,8 @@ root(ROOTS.Zones, {
 					}),
 					q(26834, {	-- Down Into the Chasm
 						["sourceQuests"] = {
-							26770,	--  Mystic Masters
-							26762,	--  Reactivate the Constructs
+							26770,	-- Mystic Masters
+							26762,	-- Reactivate the Constructs
 						},
 						["qg"] = 43897,	-- Pyrium Lodestone
 						["coord"] = { 22.7, 52.0, DEEPHOLM },
@@ -689,8 +689,8 @@ root(ROOTS.Zones, {
 					}),
 					q(27042, {	-- Fight Fire and Water and Air with... [Alliance]
 						["sourceQuests"] = {
-							27006,	--  Fly Over
-							27004,	--  The Twilight Plot
+							27006,	-- Fly Over
+							27004,	-- The Twilight Plot
 						},
 						["qg"] = 44802,	-- Prospector Brewer
 						["coord"] = { 47.3, 51.4, DEEPHOLM },
@@ -704,8 +704,8 @@ root(ROOTS.Zones, {
 					}),
 					q(27043, {	-- Fight Fire and Water and Air with... [Horde]
 						["sourceQuests"] = {
-							27008,	--  Fly Over
-							27005,	--  The Twilight Plot
+							27008,	-- Fly Over
+							27005,	-- The Twilight Plot
 						},
 						["qg"] = 44818,	-- Reliquary Jes'ca Darksun
 						["races"] = HORDE_ONLY,
@@ -1035,8 +1035,8 @@ root(ROOTS.Zones, {
 					}),
 					q(27934, {	-- One With the Ground
 						["sourceQuests"] = {
-							27932,	--  The Axe of Earthly Sundering
-							27933,	--  Elemental Ore
+							27932,	-- The Axe of Earthly Sundering
+							27933,	-- Elemental Ore
 						},
 						["qg"] = 47195,	-- Slate Quicksand
 						["coord"] = { 30.6, 77.8, DEEPHOLM },
@@ -1336,8 +1336,8 @@ root(ROOTS.Zones, {
 					}),
 					q(26499, {	-- Stonefather's Boon
 						["sourceQuests"] = {
-							27935,	--  Bring Down the Avalanche
-							27936,	--  Bring Down the Avalanche
+							27935,	-- Bring Down the Avalanche
+							27936,	-- Bring Down the Avalanche
 						},
 						["qg"] = 43071,	-- Crag Rockcrusher
 						["coord"] = { 27.9, 68.8, DEEPHOLM },
@@ -1761,9 +1761,9 @@ root(ROOTS.Zones, {
 					}),
 					q(26625, {	-- Troggzor the Earthinator
 						["sourceQuests"] = {
-							26591,	--  Battlefront Triage
-							26564,	--  Fixer Upper
-							26537,	--  Shatter Them!
+							26591,	-- Battlefront Triage
+							26564,	-- Fixer Upper
+							26537,	-- Shatter Them!
 						},
 						["qg"] = 43168,	-- Gravel Longslab
 						["coord"] = { 24.5, 62.4, DEEPHOLM },
@@ -1884,8 +1884,8 @@ root(ROOTS.Zones, {
 					})),
 					q(26500, {	-- We're Surrounded
 						["sourceQuests"] = {
-							27935,	--  Bring Down the Avalanche
-							27936,	--  Bring Down the Avalanche
+							27935,	-- Bring Down the Avalanche
+							27936,	-- Bring Down the Avalanche
 						},
 						["qg"] = 43160,	-- Earthbreaker Dolomite
 						["coord"] = { 28.2, 69.7, DEEPHOLM },

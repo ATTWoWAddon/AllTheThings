@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							objective(2, {	-- 0/1 Encoded Captain's Log
-								["provider"] = { "i", 89603 },	--  (QI!)
+								["provider"] = { "i", 89603 },	-- (QI!)
 								["coord"] = { 50.2, 90.8, THE_JADE_FOREST },
 								["cr"] = 66148,	-- Hozen Diver
 							}),

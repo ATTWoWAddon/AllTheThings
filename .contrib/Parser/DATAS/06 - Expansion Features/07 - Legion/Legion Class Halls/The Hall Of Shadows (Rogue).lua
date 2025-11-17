@@ -705,7 +705,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["isBreadcrumb"] = true,
 					}),
 					q(45992, {	-- Investigate the Broken Shore
-						["sourceQuest"] = 45991,	--  An Urgent Warning
+						["sourceQuest"] = 45991,	-- An Urgent Warning
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },

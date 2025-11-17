@@ -559,7 +559,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
-			q(85503, {	--  A Surprising Investigation
+			q(85503, {	-- A Surprising Investigation
 				["description"] = "Speak to the time-displaced visitors, toss letters to eventgoers, speak to Bonenose at the north camp again, then head a bit northeast up the beach to celebrate with Alyx.",
 				["sourceQuest"] = 85502,	-- Festive Reflections
 				["provider"] = { "n", 226796 },	-- Athelton Jones
@@ -573,7 +573,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["description"] = "By the Story Time seating.",
 						["coord"] = { 63.8, 51.8, TANARIS },
 					}),
-					n(233002, {	--  Lorewalker Cho
+					n(233002, {	-- Lorewalker Cho
 						["description"] = "By the ice rink.",
 						["coord"] = { 61.6, 51.0, TANARIS },
 					}),
@@ -882,7 +882,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			-- The Case of Missing Mementos
-			q(85477, {	--  Lost and... Found?
+			q(85477, {	-- Lost and... Found?
 				["description"] = "Open the Lost & Found box nest to Alyx then return the items to visitors around the anniversary grounds.",
 				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {

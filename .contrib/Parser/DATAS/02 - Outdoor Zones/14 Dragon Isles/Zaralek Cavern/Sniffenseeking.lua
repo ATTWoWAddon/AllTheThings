@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					ach(17832, {	-- Sniffen Around
 						-- not using partial_achievement since there are not actual Criteria generated for Sniffen Sage
-						["sym"] = {{"select","achievementID",17833},{"pop"}},	--  Sniffen Sage
+						["sym"] = {{"select","achievementID",17833},{"pop"}},	-- Sniffen Sage
 					}),
 					ach(17833, {	-- Sniffen Sage
 						["sym"] = {{"select","questID",

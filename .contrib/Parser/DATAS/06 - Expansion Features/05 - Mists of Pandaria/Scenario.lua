@@ -646,7 +646,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92848),	-- Hozen-Speed Jerkin
 								i(92847),	-- Hozen-Speed Shoulders
 								i(92846),	-- Hozen-Speed Waistband
-								------  Hozen-Stitched ------
+								------ Hozen-Stitched ------
 								i(93085),	-- Hozen-Stitched Bindings			— 2019-10-25
 								i(93079),	-- Hozen-Stitched Boots
 								i(93082),	-- Hozen-Stitched Britches
@@ -969,7 +969,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(92848),	-- Hozen-Speed Jerkin
 								i(92847),	-- Hozen-Speed Shoulders
 								i(92846),	-- Hozen-Speed Waistband
-								------  Hozen-Stitched ------
+								------ Hozen-Stitched ------
 								i(93085),	-- Hozen-Stitched Bindings			— 2019-10-25
 								i(93079),	-- Hozen-Stitched Boots
 								i(93082),	-- Hozen-Stitched Britches

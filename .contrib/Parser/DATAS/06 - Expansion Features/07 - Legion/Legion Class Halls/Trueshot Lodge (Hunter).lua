@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									["groups"] = {
 										i(128861, {	-- Titanstrike
 											["ItemAppearanceModifierID"] = 9,
-											["groups"] = { artifact(288) },	--  Titanstrike
+											["groups"] = { artifact(288) },	-- Titanstrike
 										}),
 									},
 								}),
@@ -1076,7 +1076,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							}),
 						},
 					}),
-					n(100661, {	--  Pan the Kind Hand <Stable Master>
+					n(100661, {	-- Pan the Kind Hand <Stable Master>
 						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["coord"] = { 58.8, 31.8, TRUESHOT_LODGE },
 						["groups"] = {

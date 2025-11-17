@@ -18,7 +18,7 @@ root(ROOTS.Zones, {
 				n(96778, {	-- Aemara <Bowyer>
 					["coord"] = { 60.0, 52.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28989},	--  Aemara <Bowyer> (Dalaran Northrend)
+						{"sub", "common_vendor", 28989},	-- Aemara <Bowyer> (Dalaran Northrend)
 					},
 				}),
 				n(96780, {	-- Aerith Primrose
@@ -465,7 +465,7 @@ root(ROOTS.Zones, {
 				n(96785, {	-- Christi Stockton <Wine Vendor>
 					["coord"] = { 53.8, 32.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 32337},	--  Christi Stockton <Wine Vendor> (Dalaran Northrend)
+						{"sub", "common_vendor", 32337},	-- Christi Stockton <Wine Vendor> (Dalaran Northrend)
 					},
 				}),
 				n(96484, {	-- Clockwork Assistant <Jepetto's Companion>
@@ -489,7 +489,7 @@ root(ROOTS.Zones, {
 				n(96779, {	-- Dagna Flintlock <Gunsmith>
 					["coord"] = { 59.8, 52.2, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29476},	--  Dagna Flintlock <Gunsmith> (Dalaran Northrend)
+						{"sub", "common_vendor", 29476},	-- Dagna Flintlock <Gunsmith> (Dalaran Northrend)
 					},
 				}),
 				n(107326, {	-- Draemus <Exotic Pet Supplier>
@@ -723,7 +723,7 @@ root(ROOTS.Zones, {
 				n(97331, {	-- Icks <Staves>
 					["coord"] = { 49.0, 73.0, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29494},	--  Shen Kang Cheng <Staves> (Dalaran Northrend)
+						{"sub", "common_vendor", 29494},	-- Shen Kang Cheng <Staves> (Dalaran Northrend)
 					},
 				}),
 				n(93530, {	-- Ildine Sorrowspear <Enchanting Supplies>
@@ -841,7 +841,7 @@ root(ROOTS.Zones, {
 				n(97007, {	-- Kerta the Bold <Mace & Polearm Merchant>
 					["coord"] = { 54.4, 63.0, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29496},	--  Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 29496},	-- Kerta the Bold <Axe & Polearm Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93524, {	-- Lalla Brightweave <Tailoring Supplies>
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, {
 				n(96980, {	-- Matilda Brightlink <Mail Armor Merchant>
 					["coord"] = { 51.3, 73.4, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 35500},	--  Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 35500},	-- Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92489, {	-- Mei Francis <Exotic Mounts>
@@ -1137,7 +1137,7 @@ root(ROOTS.Zones, {
 				n(96975, {	-- Paldesse <Cloth Armor Merchant>
 					["coord"] = { 37.5, 56.1, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28995},	--  Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28995},	-- Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92457, {	-- Patricia Egan <Alchemy Supplier>
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, {
 				n(97332, {	-- Richard Hatstock <Haberdasher>
 					["coord"] = { 37.2, 55.6, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 29702},	--  Chameli Banaphash <Haberdasher> (Dalaran Northrend)
+						{"sub", "common_vendor", 29702},	-- Chameli Banaphash <Haberdasher> (Dalaran Northrend)
 					},
 				}),
 				n(97342, {	-- Salan Sunthread <Clothier>
@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, {
 				n(97011, {	-- Valaden Silverblade <Sword Merchant>
 					["coord"] = { 54.1, 63.2, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28991},	--  Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28991},	-- Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96977, {	-- Valerie Langrom <Leather Armor Merchant>
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, {
 				n(97012, {	-- Wanda Chanter <Wands>
 					["coord"] = { 48.6, 73.8, LEGION_DALARAN },
 					["sym"] = {
-						{"sub", "common_vendor", 28994},	--  Wanda Chanter (Dalaran Northrend)
+						{"sub", "common_vendor", 28994},	-- Wanda Chanter (Dalaran Northrend)
 					},
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>

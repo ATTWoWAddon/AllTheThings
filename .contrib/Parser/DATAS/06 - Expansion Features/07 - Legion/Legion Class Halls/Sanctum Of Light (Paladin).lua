@@ -904,7 +904,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 				}),
 				n(VENDORS, {
-					n(99976, {	--  Crusader Lord Dalfors
+					n(99976, {	-- Crusader Lord Dalfors
 						["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 						["sourceQuest"] = 45770,	-- Stirring in the Shadows
 						["groups"] = {

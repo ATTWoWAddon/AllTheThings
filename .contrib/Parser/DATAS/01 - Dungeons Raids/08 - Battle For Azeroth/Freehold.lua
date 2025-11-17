@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {
 						126832,	-- Skycap'n Kragg
-						--  Shark Bait
+						-- Shark Bait
 					},
 					["groups"] = {
 						i(159633),	-- Sharkbait's Fishhook
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
-							--  Shark Bait
+							-- Shark Bait
 						},
 						["groups"] = {
 							i(159633),	-- Sharkbait's Fishhook
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
-							--  Shark Bait
+							-- Shark Bait
 						},
 						["groups"] = {
 							ach(12548),	-- I'm in Charge Now!

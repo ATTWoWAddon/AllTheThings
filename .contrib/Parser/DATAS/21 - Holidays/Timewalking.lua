@@ -335,7 +335,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 		}),
 		n(VENDORS, {
-			n(234555, {	--  Bobadormu
+			n(234555, {	-- Bobadormu
 				["coords"] = {
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
@@ -2336,7 +2336,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171551, {	-- Legguards of the Lurking Threat
 								["races"] = ALLIANCE_ONLY,
 							}),
-							i(171607, {	--  Legplates of Redeemed Blood
+							i(171607, {	-- Legplates of Redeemed Blood
 								["races"] = HORDE_ONLY,
 							}),
 							i(171596, {	-- Legplates of the Immortal Spider

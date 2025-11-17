@@ -2562,7 +2562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78909, {	-- Shifting Scale Talisman
-					["sourceQuest"] = 78908,	--  Speak to N'ora
+					["sourceQuest"] = 78908,	-- Speak to N'ora
 					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },

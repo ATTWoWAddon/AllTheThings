@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 39509,	-- Aronen <Apprentice to Ormus>
 					["isRepeatable"] = true,
 				}),
-				--  Weekly Raid Quests
+				-- Weekly Raid Quests
 				q(24874, {	-- Blood Quickening [10]
 					["qg"] = 38551,	-- Alrin the Agile
 					["timeline"] = { REMOVED_4_0_1 },

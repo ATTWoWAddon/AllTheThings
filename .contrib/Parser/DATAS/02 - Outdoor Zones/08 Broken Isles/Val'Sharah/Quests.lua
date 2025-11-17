@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			header(HEADERS.Achievement, 10698, {	-- That's Val'sharah Folks!
 				------ Prolouge ------
 				q(39731, {	-- The Tranquil Forest
-					["provider"] = { "n", 93787 },	--  Scouting Map
+					["provider"] = { "n", 93787 },	-- Scouting Map
 					["maps"] = CLASS_HALL_MAPS,
 					["isBreadcrumb"] = true,
 					["crs"] = CLASS_HALL_MISSION_TABLES,

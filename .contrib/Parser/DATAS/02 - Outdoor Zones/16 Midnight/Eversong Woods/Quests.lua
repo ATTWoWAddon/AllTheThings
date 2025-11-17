@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(MIDNIGHT, {
 						["coord"] = { 39.4, 17.5, EVERSONG_WOODS_MID },
 						["groups"] = {
 							o(516363, {	--
-								i(235808),	--  Torn Spellbook Page (QI!)
+								i(235808),	-- Torn Spellbook Page (QI!)
 							}),
 						},
 					}),

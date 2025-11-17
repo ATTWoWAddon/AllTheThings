@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["cr"] = 65090,	-- Fabious
 		}),
-		o(373439, {	--  Flipper Fish School
+		o(373439, {	-- Flipper Fish School
 			["coord"] = { 72.8, 24.3, NAZJATAR },
 			["cost"] = {{"i",187662,1}},	-- Strange Goop
 			["timeline"] = { ADDED_9_2_5 },

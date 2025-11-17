@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103304, {	-- Nexus-King Salhadaar
 						["_encounter"] = { SALHADAAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103305, {	-- 	Dimensius, the All-Devouring
+					crit(103305, {	-- Dimensius, the All-Devouring
 						["_encounter"] = { DIMENSIUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				}),
@@ -412,7 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103299, {	-- Loom'ithar
 						["_encounter"] = { LOOMITHAR, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103300, {	-- 	Soulbinder Naazindhri
+					crit(103300, {	-- Soulbinder Naazindhri
 						["_encounter"] = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103301, {	-- Forgeweaver Araz
@@ -421,7 +421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					crit(103302, {	-- The Soul Hunters
 						["_encounter"] = { HUNTERS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
-					crit(103303, {	-- 	Fractillus
+					crit(103303, {	-- Fractillus
 						["_encounter"] = { FRACTILLUS, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 					crit(103304, {	-- Nexus-King Salhadaar

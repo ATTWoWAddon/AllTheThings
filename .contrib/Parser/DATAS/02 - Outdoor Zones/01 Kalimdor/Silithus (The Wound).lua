@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55737, {	-- At the Azerite Time
-							["sourceQuest"] = 55735,	--	Defending the Maelstrom
+							["sourceQuest"] = 55735,	-- Defending the Maelstrom
 							["qg"] = 152815,	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 							["timeline"] = { ADDED_8_2_0 },

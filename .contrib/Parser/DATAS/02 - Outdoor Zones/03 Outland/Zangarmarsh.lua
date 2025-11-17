@@ -318,7 +318,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- Summon Serpent Spirit
 								["provider"] = { "i", 24498 },	-- Feralfen Totem
 								["coord"] = { 44.2, 66.6, ZANGARMARSH },
-								["cr"] = 18185,	--  Feralfen Serpent Spirit
+								["cr"] = 18185,	-- Feralfen Serpent Spirit
 							}),
 							i(25620),	-- Ancient Crystal Talisman
 							i(31770),	-- Marsh Bracers

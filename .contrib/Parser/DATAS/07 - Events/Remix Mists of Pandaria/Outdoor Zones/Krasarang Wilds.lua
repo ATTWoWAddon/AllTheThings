@@ -61,7 +61,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 						cl(HUNTER, {
-							iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
+							iensemble(217834, {	-- Ensemble: Dreadsquall Hunter's Camouflage
 								["classes"] = HUNTER,
 							}),
 						}),
