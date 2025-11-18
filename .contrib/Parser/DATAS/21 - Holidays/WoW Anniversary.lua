@@ -3392,25 +3392,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				n(223902, {	-- Traeya <Armor Vendor>
 					["coord"] = { 63.1, 50.9, TANARIS },
 					["groups"] = {
-						i(253154, {    -- Loyal Watchman's Gauntlets
+						i(253154, {	-- Loyal Watchman's Gauntlets
 							["cost"] = {{"c", TIMEWARPED_BADGE, 20}},
 						}),
-						i(253155, {    -- Loyal Watchman's Belt
+						i(253155, {	-- Loyal Watchman's Belt
 							["cost"] = {{"c", TIMEWARPED_BADGE, 20}},
 						}),
-						i(253156, {    -- Loyal Watchman's Boots
+						i(253156, {	-- Loyal Watchman's Boots
 							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
 						}),
-						i(253157, {    -- Loyal Watchman's Trousers
+						i(253157, {	-- Loyal Watchman's Trousers
 							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
 						}),
-						i(253158, {    -- Loyal Watchman's Cuirass
+						i(253158, {	-- Loyal Watchman's Cuirass
 							["cost"] = {{"c", TIMEWARPED_BADGE, 30}},
 						}),
-						i(253159, {    -- Loyal Watchman's Spaulders
+						i(253159, {	-- Loyal Watchman's Spaulders
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
-						i(253160, {    -- Loyal Watchman's Helm
+						i(253160, {	-- Loyal Watchman's Helm
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 						}),
 					},

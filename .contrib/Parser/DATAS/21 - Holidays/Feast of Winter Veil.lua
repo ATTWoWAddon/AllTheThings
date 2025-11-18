@@ -2128,16 +2128,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		{	-- Treats for Greatfather Winter
 			["allianceQuestData"] = q(7025, {	-- Treats for Greatfather Winter (Alliance)
-				-- ["sourceQuests"] = { -- Reported Not Required Discord 2022/2023
-				-- 	7022,	-- Greatfather Winter is Here! (Alliance)
-				-- 	7023,	-- Greatfather Winter is Here! (Alliance)
-				-- },
 				["qg"] = 13444,	-- Greatfather Winter
 				["coord"] = { 33.2, 65.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
+				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
+				-- 	7022,	-- Greatfather Winter is Here! (Alliance)
+				-- 	7023,	-- Greatfather Winter is Here! (Alliance)
+				-- },
 			}),
 			["hordeQuestData"] = q(6962, {	-- Treats for Great-father Winter (Horde)
-				-- ["sourceQuests"] = { -- Reported Not Required Discord 2022/2023
+				["qg"] = 13445,	-- Great-father Winter
+				["coord"] = { 52.4, 68.8, ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				-- ["sourceQuests"] = {	-- Reported Not Required Discord 2022/2023
 				-- 	6961,	-- Great-father Winter is Here! (Horde)
 				-- 	7021,	-- Great-father Winter is Here! (Horde)
 				-- 	7024,	-- Great-father Winter is Here! (Horde)

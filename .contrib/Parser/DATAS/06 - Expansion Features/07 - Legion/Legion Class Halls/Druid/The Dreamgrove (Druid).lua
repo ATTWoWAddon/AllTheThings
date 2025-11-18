@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, THE_DREAMGROVE },
 						["groups"] = {
-							spell(219663) -- Heroic Weapons [No item associated]
+							spell(219663),	-- Heroic Weapons [No item associated]
 						},
 					}),
 					q(42046, {	-- A New Beginning

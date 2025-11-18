@@ -136,13 +136,13 @@ root(ROOTS.PetBattles, petbattle({
 			crit(23591),	-- Siamese Cat
 			crit(23592),	-- Silver Tabby Cat
 			crit(23593),	-- Snow Cub
-			un(REMOVED_FROM_GAME,crit(23599)),-- Spectral Cub
+			un(REMOVED_FROM_GAME,crit(23599)),	-- Spectral Cub
 			crit(23598),	-- Spectral Tiger Cub
 			crit(23594),	-- White Kitten
 			crit(23595),	-- Winterspring Cub
 			crit(23600),	-- Xu-Fu, Cub of Xuen
 		})),
-		ach(8080, {-- Fabled Pandaren Tamer
+		ach(8080, {	-- Fabled Pandaren Tamer
 			["timeline"] = { ADDED_5_2_0 },
 		}),
 		ach(6608, {	-- Family Reunion

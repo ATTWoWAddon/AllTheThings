@@ -722,7 +722,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		filter(MOUNTS, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(95416, {["timeline"] = {ADDED_5_4_0}})),	-- Sky Golem (MOUNT!)
 		}),
-		i(89991, {  -- Pandaria Fireworks
+		i(89991, {	-- Pandaria Fireworks
 			i(89996),	-- Schematic: Autumn Flower Firework (RECIPE!)
 			i(89994),	-- Schematic: Celestial Firework (RECIPE!)
 			i(89993),	-- Schematic: Grand Celebration Firework (RECIPE!)

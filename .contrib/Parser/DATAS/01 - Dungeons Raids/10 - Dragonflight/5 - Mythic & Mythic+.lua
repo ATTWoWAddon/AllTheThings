@@ -192,7 +192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(213438),	-- Infinite Armoredon (MOUNT!)
 			}),
 			ach(19783),		-- Dragonflight Keystone Hero: Season Four
-			ach(19785, bubbleDownSelf({ ["timeline"] = { REMOVED_11_0_0 } }, {-- Draconic Hero: Dragonflight Season 4
+			ach(19785, bubbleDownSelf({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Draconic Hero: Dragonflight Season 4
 				title(538),	-- <Name> the Draconic Hero
 			})),
 			ach(16643, {	-- Keystone Hero: Algeth'ar Academy

@@ -1164,17 +1164,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					n(99863, {	-- Jenri <Spymaster>
 						["coord"] = { 54.3, 41.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
-							i(130329, { -- Gloves of Artful Dodging
-								["cost"] = 746 -- 7s 46c
+							i(130329, {	-- Gloves of Artful Dodging
+								["cost"] = 746,		-- 7s 46c
 							}),
-							i(130325, { -- Shoulder of Artful Dodging
-								["cost"] = 1093 -- 10s 93c
+							i(130325, {	-- Shoulder of Artful Dodging
+								["cost"] = 1093,	-- 10s 93c
 							}),
-							i(130323, { -- Vest of Artful Dodging
-								["cost"] = 1450 -- 14s 50c
+							i(130323, {	-- Vest of Artful Dodging
+								["cost"] = 1450,	-- 14s 50c
 							}),
-							i(7676, { -- Thistle Tea
-								["cost"] = 120 -- 1s 20c
+							i(7676, {	-- Thistle Tea
+								["cost"] = 120,		-- 1s 20c
 							}),
 						},
 					}),

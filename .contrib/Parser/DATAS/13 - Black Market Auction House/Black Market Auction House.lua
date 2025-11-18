@@ -47,7 +47,7 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 	-- #endif
 	["groups"] = {
 		n(ARMOR, {
-			header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, { -- Ordos
+			header(HEADERS.NPC, 72057, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }, }, {	-- Ordos
 				-- Head
 				i(105804),	-- Aladya's Spiritfire Greathelm
 				i(105810),	-- Buc-Zakai Burning Hood

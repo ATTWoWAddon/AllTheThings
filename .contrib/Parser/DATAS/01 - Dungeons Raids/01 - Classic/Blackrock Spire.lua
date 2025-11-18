@@ -1120,7 +1120,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
-					i(66000, {  -- Band of the Spire
+					i(66000, { 	-- Band of the Spire
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(65933, {	-- Highlord's Chestpiece

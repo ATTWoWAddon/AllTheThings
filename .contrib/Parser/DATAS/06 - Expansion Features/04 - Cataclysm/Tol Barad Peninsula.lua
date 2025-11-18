@@ -718,7 +718,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(64403, {  -- Fox Kit (PET!)
+				i(64403, {	-- Fox Kit (PET!)
 					["crs"] = { 47676 },	-- Baradin Fox
 				}),
 			}),

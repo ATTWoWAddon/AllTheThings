@@ -799,7 +799,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				nil,
 				-- #endif
 				-- #if AFTER TWW
-				["collectible"] = false,  -- remove when Blizzard fix fish collection
+				["collectible"] = false,	-- remove when Blizzard fix fish collection
 				-- #endif
 		}),
 		i(44505, {	-- Dustbringer

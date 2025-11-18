@@ -14,7 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			i(199065),	-- Sorrowful Letter (CI!)
 			i(199068),	-- Time-Lost Memo (CI!)
 			n(WEEKLY_PROFESSION_KNOWLEDGE, {
-				i(193891, {  -- Experimental Substance
+				i(193891, {	-- Experimental Substance
 					["requireSkill"] = ALCHEMY,
 				}),
 				i(193897, {	-- Reawakened Catalyst

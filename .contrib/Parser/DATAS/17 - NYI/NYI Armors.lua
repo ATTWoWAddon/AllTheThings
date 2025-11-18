@@ -5412,10 +5412,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(241239),	-- Epaulets of Arcing Power
 			}),
 			filter(CLOAKS, {
-				i(237521),    -- Hemet's Cloak
+				i(237521),	-- Hemet's Cloak
 			}),
 			n(HEAD, {
-				i(237520),    -- Hemet's Hood
+				i(237520),	-- Hemet's Hood
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {

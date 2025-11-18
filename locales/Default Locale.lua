@@ -39,12 +39,12 @@ local L = {
 		["草藥學"] = 2366,
 
 		-- French (Classic Era)
-		["Ingénierie"] = 4036,    -- Engineering
-		["Secourisme"] = 3273,    -- First Aid
+		["Ingénierie"] = 4036,	-- Engineering
+		["Secourisme"] = 3273,	-- First Aid
 
 		-- Spanish (Classic Era)
-		["Costura"] = 3908,    -- Tailoring
-		["Marroquinería"] = 2108,    -- Leatherworking
+		["Costura"] = 3908,	-- Tailoring
+		["Marroquinería"] = 2108,	-- Leatherworking
 
 		["Ganzúa"] = 1809,        -- Lock Pick    -- Required for ES (EU)
 		["Desollar"] = 8613,    -- Skinning        -- Required for ES (EU)

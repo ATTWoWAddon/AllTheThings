@@ -78,7 +78,7 @@ root(ROOTS.Secrets, {
 				["name"] = "Step 11: Spirit Healer",
 				["description"] = "Die and ask a Spirit Healer if they have seen Uuna. The Spirit Healer will give you permission to enter the spirit realm to try to find her. Resurrect (no need to do it through the Spirit Healer, just return to your corpse) and continue to the next step.",
 				["icon"] = 134506,
-				["sourceQuests"] = { 50107 },-- Step 10: Uuna Gets Kidnapped
+				["sourceQuests"] = { 50107 },	-- Step 10: Uuna Gets Kidnapped
 			}),
 			q(50109, {	-- Step 12: A Dark Place
 				["name"] = "Step 12: A Dark Place",

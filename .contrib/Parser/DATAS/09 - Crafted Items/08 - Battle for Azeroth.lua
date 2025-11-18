@@ -146,7 +146,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(154990),	-- Etched Drust Bone
 		i(87399),	-- Restored Artifact
 		i(154989),	-- Zandalari Idol
-		header(HEADERS.Currency, ARCH_CURRENCY_DRUST, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRUST,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRUST, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRUST,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 278477 },	-- Drust Archaeology Find
 			["maps"] = {
 				DRUSTVAR,
@@ -171,7 +171,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				i(160741),	-- Soul Coffer
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_ZANDALARI, sharedData({["cost"]={{"c",ARCH_CURRENCY_ZANDALARI,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_ZANDALARI, sharedData({["cost"]={{"c",ARCH_CURRENCY_ZANDALARI,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 278476 },	-- Zandalari Archaeology Find
 			["maps"] = {
 				NAZMIR,
@@ -702,7 +702,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(153490),	-- F.R.I.E.D.
 			i(153510),	-- Interdimensional Companion Repository
 			i(158380),	-- Magical Intrusion Dampener
-			i(162107, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),-- Makeshift Azerite Detector
+			i(162107, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Makeshift Azerite Detector
 			i(165738, {["timeline"] = {ADDED_8_1_0}}),	-- Makeshift Azerite Detector
 			i(162111, {["timeline"] = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Monelite Fish Finder
 			i(165742, {["timeline"] = {ADDED_8_1_0}}),	-- Monelite Fish Finder

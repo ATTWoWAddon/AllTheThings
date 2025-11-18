@@ -1488,7 +1488,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(24029, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Teardrop Living Ruby
 				i(25898),	-- Tenacious Earthstorm Diamond
 				i(24052, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thick Dawnstone
-				i(32410, {["timeline"] = {ADDED_2_1_0}}),-- Thundering Skyfire Diamond
+				i(32410, {["timeline"] = {ADDED_2_1_0}}),	-- Thundering Skyfire Diamond
 				i(31867, {["timeline"] = {ADDED_2_1_0}}),	-- Veiled Noble Topaz
 				i(31868, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Noble Topaz
 			}),
@@ -1623,7 +1623,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(24032),	-- Subtle Dawnstone
 				i(25894),	-- Swift Skyfire Diamond
 				i(25898),	-- Tenacious Earthstorm Diamond
-				i(32410, {["timeline"] = {ADDED_2_1_0}}),-- Thundering Skyfire Diamond
+				i(32410, {["timeline"] = {ADDED_2_1_0}}),	-- Thundering Skyfire Diamond
 				i(24056),	-- Timeless Nightseye
 				i(31867, {["timeline"] = {ADDED_2_1_0}}),	-- Veiled Nightseye
 			}),

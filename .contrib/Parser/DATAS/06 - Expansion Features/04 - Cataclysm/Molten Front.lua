@@ -351,7 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 					["maps"] = { MOONGLADE },
 					["groups"] = {
-						i(69854, { -- Smoke-Stained Locket
+						i(69854, {	-- Smoke-Stained Locket
 							["description"] = "This item will be mailed to you after completing the achievement Legacy of Leyara.",
 						}),
 					},

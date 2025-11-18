@@ -818,7 +818,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
-				q(27112, { -- The Cursed Remains
+				q(27112, {	-- The Cursed Remains
 					["qg"] = 44991,	-- Estulan
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,

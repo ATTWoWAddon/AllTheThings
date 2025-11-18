@@ -679,7 +679,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				traderstender(300, i(190873)),	-- Warhammer of Hubris
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, { -- 10.2.7.54904
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, {	-- 10.2.7.54904
 			n(FILLED_TRAVELERS_LOG, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),

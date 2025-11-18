@@ -179,7 +179,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(BOSSES, {
 			m(EASTERN_KINGDOMS, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -191,7 +191,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(223646),	-- Memory of the Eastern Kingdoms
 			}),
 			m(KALIMDOR, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
@@ -203,7 +203,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(223644),	-- Memory of Kalimdor
 			}),
 			m(NORTHREND, {
-				i(226256, { -- Token of the Remembrancers
+				i(226256, {	-- Token of the Remembrancers
 					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul

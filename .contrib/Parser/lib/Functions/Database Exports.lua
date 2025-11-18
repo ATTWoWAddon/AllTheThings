@@ -50,12 +50,12 @@ local RaceDB = {
 	["Blood Elf"] = BLOODELF,
 	["Draenei"] = DRAENEI,
 	["Worgen"] = WORGEN,
-	["Pandaren"] = { -- NOTE: Faction Group dictates this.
+	["Pandaren"] = {	-- NOTE: Faction Group dictates this.
 		["Neutral"] = PANDAREN_NEUTRAL,
 		["Alliance"] = PANDAREN_ALLIANCE,
 		["Horde"] = PANDAREN_HORDE,
 	},
-	["Dracthyr"] = { -- NOTE: Faction Group dictates this.
+	["Dracthyr"] = {	-- NOTE: Faction Group dictates this.
 		["Alliance"] = DRACTHYR_ALLIANCE,
 		["Horde"] = DRACTHYR_HORDE,
 	},

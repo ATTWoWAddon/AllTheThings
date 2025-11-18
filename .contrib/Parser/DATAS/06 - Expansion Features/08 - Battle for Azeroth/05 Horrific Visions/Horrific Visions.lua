@@ -388,8 +388,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		q(58971),	-- killing Mail Muncher
 		--[[
 		q(57845)	-- probably triggers after clearing two corrupted areas + boss
-		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
-		58581 -- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+		58840	-- looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
+		58581	-- triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 		Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 	}),

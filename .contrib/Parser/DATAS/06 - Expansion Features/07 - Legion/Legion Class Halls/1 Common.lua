@@ -1370,7 +1370,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, q(44261, {	-- Vault of the Wardens: Into the Vault of the Wardens (Mythic)
 						un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 					})),
-					q(44058, {  -- Volpin the Elusive
+					q(44058, {	-- Volpin the Elusive
 						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["qgs"] = {
 							96746,	-- Advisor Sevel <The Earthen Ring>

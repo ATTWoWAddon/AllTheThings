@@ -362,7 +362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10777),	-- Arachnid Gloves
 				},
 			}),
-			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, { -- Henry's Handbag (object)
+			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Henry's Handbag (object)
 				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
 				["groups"] = {
 					i(202691),	-- Henry's Handbag (Reagent Bag)

@@ -35,7 +35,7 @@ GLYPH_OF_ADRENALINE_RUSH_AND_SHADOW_WALK = r(57112, {	-- Glyph of Adrenaline Rus
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_AERIAL_CHAMELEON = r(344341, {  -- Glyph of the Aerial Chameleon
+GLYPH_OF_AERIAL_CHAMELEON = r(344341, {	-- Glyph of the Aerial Chameleon
 	["name"] = "Glyph of the Aerial Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });
@@ -63,7 +63,7 @@ GLYPH_OF_ANTIMAGIC_SHELL = r(57207, {	-- Glyph of Anti-Magic Shell
 	["name"] = "Glyph of Anti-Magic Shell",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {  -- Glyph of the Aquatic Chameleon
+GLYPH_OF_AQUATIC_CHAMELEON = r(344340, {	-- Glyph of the Aquatic Chameleon
 	["name"] = "Glyph of the Aquatic Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });
@@ -661,7 +661,7 @@ GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS = r(57155, {	-- Glyph of Devastate / 
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
-GLYPH_OF_DIRE_BEES = r(304042, {  -- Glyph of Dire Bees
+GLYPH_OF_DIRE_BEES = r(304042, {	-- Glyph of Dire Bees
 	["name"] = "Glyph of Dire Bees",
 	["timeline"] = { ADDED_8_2_5 },
 });
@@ -1537,7 +1537,7 @@ GLYPH_OF_LAVA_LASH = r(57249, {	-- Glyph of Strength of Earth Totem / Glyph of L
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_LAVISH_SERVINGS = r(309443, {  -- Glyph of Lavish Servings
+GLYPH_OF_LAVISH_SERVINGS = r(309443, {	-- Glyph of Lavish Servings
 	["name"] = "Glyph of Lavish Servings",
 	["timeline"] = { ADDED_8_2_5 },
 });
@@ -2549,7 +2549,7 @@ GLYPH_OF_STONESKIN_AND_DETOX = r(112454, {	-- Glyph of Stoneskin / Glyph of Deto
 	-- #endif
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
-GLYPH_OF_STORMS_WAKE = r(289356, {  -- Glyph of Storm's Wake
+GLYPH_OF_STORMS_WAKE = r(289356, {	-- Glyph of Storm's Wake
 	["name"] = "Glyph of Storm's Wake",
 	["timeline"] = { ADDED_8_1_0 },
 	["races"] = ALLIANCE_ONLY,
@@ -2796,7 +2796,7 @@ GLYPH_OF_THE_SUN = r(182158, {	-- Glyph of the Sun
 	["name"] = "Glyph of the Sun",
 	["timeline"] = { ADDED_6_1_0 },
 });
-GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {  -- Glyph of the Swift Chameleon
+GLYPH_OF_THE_SWIFT_CHAMELEON = r(344335, {	-- Glyph of the Swift Chameleon
 	["name"] = "Glyph of the Swift Chameleon",
 	["timeline"] = {ADDED_9_0_2_LAUNCH},
 });

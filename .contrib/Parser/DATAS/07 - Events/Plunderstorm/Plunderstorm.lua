@@ -263,7 +263,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			}),
 		}),
 		filter(MISC, {
-			i(234422, { -- Storm-Singed Plunder
+			i(234422, {	-- Storm-Singed Plunder
 				["description"] = "Contains 1 Silver and 2 Bronze Spoils.",
 				["groups"] = {
 					i(234423),	-- Keg-Leg's Silver Spoils

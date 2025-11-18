@@ -2,61 +2,61 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local MAPS = {
-	732,  -- Assault of Violet Hold (Legion)
+	732,	-- Assault of Violet Hold (Legion)
 
-	751,  -- Black Rook Hold
-	752,  -- Black Rook Hold
-	753,  -- Black Rook Hold
-	754,  -- Black Rook Hold
-	755,  -- Black Rook Hold
-	756,  -- Black Rook Hold
+	751,	-- Black Rook Hold
+	752,	-- Black Rook Hold
+	753,	-- Black Rook Hold
+	754,	-- Black Rook Hold
+	755,	-- Black Rook Hold
+	756,	-- Black Rook Hold
 
-	845,  -- Cathedral of Eternal Night
-	846,  -- Cathedral of Eternal Night
-	847,  -- Cathedral of Eternal Night
-	848,  -- Cathedral of Eternal Night
-	849,  -- Cathedral of Eternal Night
+	845,	-- Cathedral of Eternal Night
+	846,	-- Cathedral of Eternal Night
+	847,	-- Cathedral of Eternal Night
+	848,	-- Cathedral of Eternal Night
+	849,	-- Cathedral of Eternal Night
 
-	761,  -- Court of Stars
-	762,  -- Court of Stars
-	763,  -- Court of Stars
+	761,	-- Court of Stars
+	762,	-- Court of Stars
+	763,	-- Court of Stars
 
-	733,  -- Darkheart Thicket
+	733,	-- Darkheart Thicket
 
-	713,  -- Eye of Azshara
+	713,	-- Eye of Azshara
 
-	703,  -- Halls of Valor
-	704,  -- Halls of Valor
-	705,  -- Halls of Valor
+	703,	-- Halls of Valor
+	704,	-- Halls of Valor
+	705,	-- Halls of Valor
 
-	706,  -- Maw of Souls
-	707,  -- Maw of Souls
-	708,  -- Maw of Souls
+	706,	-- Maw of Souls
+	707,	-- Maw of Souls
+	708,	-- Maw of Souls
 
-	731,  -- Neltharion's Lair
+	731,	-- Neltharion's Lair
 
-	809,  -- Return to Karazhan
-	810,  -- Return to Karazhan
-	811,  -- Return to Karazhan
-	812,  -- Return to Karazhan
-	813,  -- Return to Karazhan
-	814,  -- Return to Karazhan
-	815,  -- Return to Karazhan
-	816,  -- Return to Karazhan
-	817,  -- Return to Karazhan
-	818,  -- Return to Karazhan
-	819,  -- Return to Karazhan
-	820,  -- Return to Karazhan
-	821,  -- Return to Karazhan
-	822,  -- Return to Karazhan
+	809,	-- Return to Karazhan
+	810,	-- Return to Karazhan
+	811,	-- Return to Karazhan
+	812,	-- Return to Karazhan
+	813,	-- Return to Karazhan
+	814,	-- Return to Karazhan
+	815,	-- Return to Karazhan
+	816,	-- Return to Karazhan
+	817,	-- Return to Karazhan
+	818,	-- Return to Karazhan
+	819,	-- Return to Karazhan
+	820,	-- Return to Karazhan
+	821,	-- Return to Karazhan
+	822,	-- Return to Karazhan
 
-	903,  -- Seat of the Triumvirate
+	903,	-- Seat of the Triumvirate
 
-	749,  -- The Arcway
+	749,	-- The Arcway
 
-	710,  -- Vault of the Wardens
-	711,  -- Vault of the Wardens
-	712,  -- Vault of the Wardens
+	710,	-- Vault of the Wardens
+	711,	-- Vault of the Wardens
+	712,	-- Vault of the Wardens
 }
 local mapped = function(t)
 	t.maps = MAPS

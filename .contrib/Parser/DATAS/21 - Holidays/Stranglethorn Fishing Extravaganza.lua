@@ -253,7 +253,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 							nil,
 							-- #endif
 						-- #if AFTER TWW
-						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						["collectible"] = false,	-- remove when Blizzard fix fish collection
 						-- #endif
 					}),
 					i(19807),	-- Speckled Tastyfish

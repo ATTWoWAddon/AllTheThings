@@ -168,7 +168,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(108439),	-- Draenor Clan Orator Cane
 		i(109584),	-- Ogre Missive
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 234105 },	-- Arakkoa Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -190,7 +190,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114202),	-- Talonpriest Mask
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 226521 },	-- Draenor Clans Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -222,7 +222,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114145),	-- Wolfskin Snowshoes
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["provider"] = { "o", 234106 },	-- Ogre Archaeology Find
 			["maps"] = {
 				DRAENOR_SHADOWMOON_VALLEY,

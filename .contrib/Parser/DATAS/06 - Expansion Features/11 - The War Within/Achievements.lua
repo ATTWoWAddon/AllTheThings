@@ -369,7 +369,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}),
 		})),
 		ach(40107, {	-- Harbinger of the Weatherd
-            -- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
+			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40115, {	-- Harbinger of the Carved
@@ -406,12 +406,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 		}),
 		ach(40591, {	-- Khaz Algar Diplomat
-            -- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
-            -- Unfun fact the second: They never fixed the achievement, they just remade it.
-            -- crit(68907),    -- Council of Dornogal
-            -- crit(68908),    -- The Assembly of the Deeps
-            -- crit(68909),    -- Hallowfall Arathi
-            -- crit(68910),    -- The Severed Threads
+			-- Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
+			-- Unfun fact the second: They never fixed the achievement, they just remade it.
+			-- crit(68907),		-- Council of Dornogal
+			-- crit(68908),		-- The Assembly of the Deeps
+			-- crit(68909),		-- Hallowfall Arathi
+			-- crit(68910),		-- The Severed Threads
             ["timeline"] = { REMOVED_11_0_7 },
             ["groups"] = {
                 iensemble(219110),	-- Vermillion Patron's Elegance

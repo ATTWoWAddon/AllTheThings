@@ -2723,7 +2723,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						}),
 					})),
 					filter(MISC, {
-						i(46007, {  -- Bag of Fishing Treasure
+						i(46007, {	-- Bag of Fishing Treasure
 							["cost"] = {{"c", TIMEWARPED_BADGE, 150}},
 						}),
 						i(129955, {	-- Commendation of the Alliance Vanguard

@@ -1455,7 +1455,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 									hqt(26741, {	-- Empower your owl with the green statue aura
 										["name"] = "Empower your owl with the green statue aura",
 										["description"] = "Unlocks an orb at the 7 O'clock basin.",	-- Orb
-										["_drop"] = { "r" } -- drop Alliance tag from API
+										["_drop"] = { "r" },	-- drop Alliance tag from API
 									}),
 									hqt(40721, {	-- Empower your owl with the blue statue aura
 										["name"] = "Empower your owl with the blue statue aura",

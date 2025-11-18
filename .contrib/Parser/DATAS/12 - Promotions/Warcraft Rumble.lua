@@ -173,7 +173,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
             ["cost"] = {{"i",202162,1}},	-- Rumble Coin
             ["repeatable"] = true,
             ["groups"] = {
-                i(202163) -- Rumble Prize Box
+                i(202163),	-- Rumble Prize Box
             },
         }),
         q(75223, {	-- Warcraft Rumble Minis: New Look!

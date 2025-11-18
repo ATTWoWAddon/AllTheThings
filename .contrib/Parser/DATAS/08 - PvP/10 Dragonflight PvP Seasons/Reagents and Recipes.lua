@@ -12,7 +12,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		i(201258, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Bloodstained Pattern: Infurious Wildercloth Bolt (RECIPE!)
 		i(201256),	-- Bloodstained Plans: Infurious Alloy (RECIPE!)
 		-- #if AFTER TWW
-		n(221421, { -- Eraneth <Draconic Combatant Recipes>
+		n(221421, {	-- Eraneth <Draconic Combatant Recipes>
 			["timeline"] = { ADDED_11_0_0 },
 			["coord"] = { 43.6, 42.4, VALDRAKKEN },
 			["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {

@@ -390,7 +390,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
 					moh(80, iensemble(146651, {	-- Arsenal: Gladiator's Weapons
-						["timeline"] = { -- combined with Season 2
+						["timeline"] = {	-- combined with Season 2
 							ADDED_7_2_0,
 							REMOVED_7_2_5,
 						},

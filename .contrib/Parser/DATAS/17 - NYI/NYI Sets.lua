@@ -2667,11 +2667,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127106),	-- Gladiator's Chain Leggings
 				}),
 				cl(MAGE, {
-					i(127064),-- Gladiator's Silk Robe
-					i(127074),-- Gladiator's Silk Cowl
-					i(127085),-- Gladiator's Silk Handguards
-					i(127096),-- Gladiator's Silk Amice
-					i(127107),-- Gladiator's Silk Trousers
+					i(127064),	-- Gladiator's Silk Robe
+					i(127074),	-- Gladiator's Silk Cowl
+					i(127085),	-- Gladiator's Silk Handguards
+					i(127096),	-- Gladiator's Silk Amice
+					i(127107),	-- Gladiator's Silk Trousers
 				}),
 				cl(MONK, {
 					i(127051),	-- Gladiator's Ironskin Tunic
@@ -2681,11 +2681,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127108),	-- Gladiator's Ironskin Legguards
 				}),
 				cl(PRIEST, {
-					i(127065),-- Gladiator's Satin Robe
-					i(127077),-- Gladiator's Satin Hood
-					i(127088),-- Gladiator's Satin Gloves
-					i(127099),-- Gladiator's Satin Mantle
-					i(127110),-- Gladiator's Satin Leggings
+					i(127065),	-- Gladiator's Satin Robe
+					i(127077),	-- Gladiator's Satin Hood
+					i(127088),	-- Gladiator's Satin Gloves
+					i(127099),	-- Gladiator's Satin Mantle
+					i(127110),	-- Gladiator's Satin Leggings
 				}),
 				cl(PALADIN, {
 					i(127052),	-- Gladiator's Scaled Chestpiece
@@ -2709,11 +2709,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127112),	-- Gladiator's Ringmail Leggings
 				}),
 				cl(WARLOCK, {
-					i(127066),-- Gladiator's Felweave Raiment
-					i(127080),-- Gladiator's Felweave Cowl
-					i(127091),-- Gladiator's Felweave Handguards
-					i(127102),-- Gladiator's Felweave Amice
-					i(127113),-- Gladiator's Felweave Trousers
+					i(127066),	-- Gladiator's Felweave Raiment
+					i(127080),	-- Gladiator's Felweave Cowl
+					i(127091),	-- Gladiator's Felweave Handguards
+					i(127102),	-- Gladiator's Felweave Amice
+					i(127113),	-- Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
 					i(127055),	-- Gladiator's Plate Chestpiece

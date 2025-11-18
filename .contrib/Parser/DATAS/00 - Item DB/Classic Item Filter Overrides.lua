@@ -11,7 +11,7 @@ local function i(itemID, filterID)
 end
 
 
-i(69638, FIST_WEAPONS); -- Arlokk's Claws
+i(69638, FIST_WEAPONS);	-- Arlokk's Claws
 i(69620, DAGGERS);	-- Twinblade of the Hakkari
 i(57928, ONE_HANDED_AXES);	-- Windslicer
 

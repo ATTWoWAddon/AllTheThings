@@ -238,13 +238,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(FACTIONS, {
-				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, { -- Vol'jin's Spear
+				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, {	-- Vol'jin's Spear
 					faction(FACTION_VOLJINS_SPEAR),
 					ach(9473, {	-- Vol'jin's Spear
 						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
 					}),
 				})),
-				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, { -- Wyrnn's Vanguard
+				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, {	-- Wyrnn's Vanguard
 					faction(FACTION_WRYNNS_VANGUARD),
 					ach(9474, {	-- Wrynn's Vanguard
 						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn

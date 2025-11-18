@@ -323,11 +323,11 @@ root(ROOTS.Promotions, {
 				["description"] = "Break the Meta: TWW Season 2\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 2's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-2/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +10|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on June 24th for US, June 25th for EU & June 26th for CN/KR/TW & lasts for 1 week.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.1.7.61609" },
 			}),
-			i(235987, { -- Adorned Half Shell (COSMETIC!)
+			i(235987, {	-- Adorned Half Shell (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between July 14th, 10:00 a.m. & August 11th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_1_7, "removed 11.2.0.62493" },	-- Removed August 11, 2025
 			}),
-			i(246451, { -- Shadefur Brewthief (PET!)
+			i(246451, {	-- Shadefur Brewthief (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 5th, 10:00 a.m. & September 16th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63163" },	-- Removed September 16, 2025
 			}),
@@ -352,7 +352,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.0.63305" },	-- Removed September 30, 2025
 				["u"] = REAL_MONEY,
 			}),
-			i(257515, { -- Lil' Coalee (PET!)
+			i(257515, {	-- Lil' Coalee (PET!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 1st, 10:00 a.m. & October 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_0, "removed 11.2.5.64154" },	-- Removed October 29th, 2025
 			}),
@@ -366,7 +366,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_2_5 },
 				["u"] = REAL_MONEY,
 			}),
-			iensemble(242480, { -- Ensemble: Violet Sweatsuit
+			iensemble(242480, {	-- Ensemble: Violet Sweatsuit
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between November 11th, 10:00 a.m. & December 2nd, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_2_5, REMOVED_11_2_7 },	-- Removed December 2nd, 2025
 			}),

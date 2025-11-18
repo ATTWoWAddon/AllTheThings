@@ -169,7 +169,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(130904),	-- Highmountain Ritual-Stone
 		i(130905),	-- Mark of the Deceiver
 		i(87399),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246812 },	-- Demonic Archaeology Find
 				-- #if AFTER 7.2.5
@@ -196,7 +196,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130934),	-- Pristine Orb of Inner Chaos
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246811 },	-- Highborne Archaeology Find
 				-- #if AFTER 7.2.0
@@ -223,7 +223,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 				i(130906),	-- Violetglass Vessel
 			},
 		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{	-- TODO: someone can add different fragment costs within as needed
 			["providers"] = {
 				{ "o", 246804 },	-- Highmountain Tauren Archaeology Find
 				-- #if AFTER 7.2.0

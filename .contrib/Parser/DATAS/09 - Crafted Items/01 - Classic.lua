@@ -1313,7 +1313,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(ENCHANTING, {
 		n(COMMON_VENDOR_ITEMS, {
 			["groups"] = appendAllGroups(
-				sharedData({ -- Enchanting supplies
+				sharedData({	-- Enchanting supplies
 					["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[["coords"] = {
