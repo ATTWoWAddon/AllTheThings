@@ -376,10 +376,10 @@ app.MaximumSkillLevel = 99999;
 DefineToggleFilter("SkillLevel", CharacterFilters,
 function(group)
 	if group.learnedAt then
-        return app.MaximumSkillLevel >= group.learnedAt;
-    end
-    -- no skill level requirement on the group, have to include it
-    return true;
+		return app.MaximumSkillLevel >= group.learnedAt;
+	end
+	-- no skill level requirement on the group, have to include it
+	return true;
 end);
 -- SkillLevel doesn't really exclude a character from seeing a given Thing
 RawCharacterFilters.SkillLevel = nil;

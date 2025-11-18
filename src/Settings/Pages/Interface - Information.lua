@@ -481,33 +481,33 @@ app.GetSpecsString = GetSpecsString
 
 -- Cost Helper Functions
 local function formatNumericWithCommas(amount)
-    local k
-    while true do
-        amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
-        if k == 0 then
-            break
-        end
-    end
-    return amount
+	local k
+	while true do
+		amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
+		if k == 0 then
+			break
+		end
+	end
+	return amount
 end
 app.formatNumericWithCommas = formatNumericWithCommas
 local function GetMoneyString(amount)
-    if amount > 0 then
-        local formatted
-        local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
-            math_floor(amount % 100)
-        if gold > 0 then
-            formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
-        end
-        if silver > 0 then
-            formatted = (formatted or "") .. silver .. "|T237620:0|t"
-        end
-        if copper > 0 then
-            formatted = (formatted or "") .. copper .. "|T237617:0|t"
-        end
-        return formatted
-    end
-    return amount
+	if amount > 0 then
+		local formatted
+		local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
+			math_floor(amount % 100)
+		if gold > 0 then
+			formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
+		end
+		if silver > 0 then
+			formatted = (formatted or "") .. silver .. "|T237620:0|t"
+		end
+		if copper > 0 then
+			formatted = (formatted or "") .. copper .. "|T237617:0|t"
+		end
+		return formatted
+	end
+	return amount
 end
 local CostCurrencyCache = setmetatable({}, {
 	__index = function(t, id)

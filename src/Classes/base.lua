@@ -169,10 +169,10 @@ local DefaultFields = {
 	["repeatable"] = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
-    ["costTotal"] = returnZero,
-    ["upgradeTotal"] = returnZero,
+	["costTotal"] = returnZero,
+	["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
-    ["total"] = returnZero,
+	["total"] = returnZero,
 	["isContainer"] = function(t)
 		local total = t.total
 		return total and (total > 1 or (total > 0 and not t.collectible))

@@ -1303,7 +1303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(120209, {	-- Essence of the Iron Conqueror
 						["races"] = HORDE_ONLY,
 					}),
-                    i(120284, {	-- Essence of the Iron Protector
+					i(120284, {	-- Essence of the Iron Protector
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(120210, {	-- Essence of the Iron Protector

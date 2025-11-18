@@ -220,9 +220,9 @@ local function SendBattleNetMessage(target, detail, msg)
 	SendMessageChunks(_SendBattleNetMessage, target, detail, msg, 4086);
 end
 local function SplitString(separator, text)
-    local sep, res = separator or '%s', {}
-    text:gsub('[^'..sep..']+', function(x) res[#res+1] = x end);
-    return res;
+	local sep, res = separator or '%s', {}
+	text:gsub('[^'..sep..']+', function(x) res[#res+1] = x end);
+	return res;
 end
 local function UpdateBattleTags()
 	-- Attempt to cache each character's battleTag if it is missing.

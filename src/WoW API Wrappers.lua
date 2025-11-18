@@ -31,17 +31,17 @@ app.WOWAPI = lib;
 ---@param name string
 ---@param ... function|nil
 local function AssignAPIWrapper(name, ...)
-    for i = 1, select("#", ...) do
-        local api = select(i, ...)  -- Get API Function
-        if api then
-            if rawget(lib, name) then
-                print("Warning: existing ATT.WOWAPI replaced!", name)
-            end
-            lib[name] = api
-            return  -- Return immediately after successful assignment.
-        end
-    end
-    print("No valid function for", name)  -- If no valid function is found, print an error message.
+	for i = 1, select("#", ...) do
+		local api = select(i, ...)  -- Get API Function
+		if api then
+			if rawget(lib, name) then
+				print("Warning: existing ATT.WOWAPI replaced!", name)
+			end
+			lib[name] = api
+			return  -- Return immediately after successful assignment.
+		end
+	end
+	print("No valid function for", name)  -- If no valid function is found, print an error message.
 end
 
 -- ChatInfo APIs

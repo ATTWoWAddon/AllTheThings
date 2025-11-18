@@ -236,28 +236,28 @@ function(cmd)
 end)
 
 local function ParseCommand(msg)
-    local itemLinks = {}
-    local function StoreLinks(link)
-        itemLinks[#itemLinks + 1] = link
-        return "\x1F" .. #itemLinks
-    end
+	local itemLinks = {}
+	local function StoreLinks(link)
+		itemLinks[#itemLinks + 1] = link
+		return "\x1F" .. #itemLinks
+	end
 
-    -- Step 1: Replace links with tokens
-    msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
+	-- Step 1: Replace links with tokens
+	msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
 	-- app.PrintDebug("tokenized",msg)
-    -- Step 2: Split by spaces
-    local args = { (" "):split(msg) }
+	-- Step 2: Split by spaces
+	local args = { (" "):split(msg) }
 
-    -- Step 3: Replace tokens with original item links
+	-- Step 3: Replace tokens with original item links
 	local index
-    for i, v in ipairs(args) do
+	for i, v in ipairs(args) do
 		index = tonumber(v:match("\x1F(%d+)"))
-        if index then
-            args[i] = itemLinks[index]
-        end
-    end
+		if index then
+			args[i] = itemLinks[index]
+		end
+	end
 
-    return args
+	return args
 end
 
 -- Default /att support

@@ -115,7 +115,7 @@ end
 
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
-        local parent = rawget(t, "parent")
+		local parent = rawget(t, "parent")
 		if parent and parent.instanceID then return t.name; end
 		local instanceParent = t.sourceParent or t.symParent
 		return instanceParent and ("%s [%s]"):format(t.name, instanceParent.text or UNKNOWN) or t.name;

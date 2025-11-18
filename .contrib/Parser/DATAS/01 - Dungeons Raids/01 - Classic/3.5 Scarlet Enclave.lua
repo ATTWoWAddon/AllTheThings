@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 16236,	-- Scarlet Enclave
 		-- ["sourceQuest"] = 86970,
 		-- ["coord"] = { 39.8, 73.6, DEADWIND_PASS },
-        ["isRaid"] = true,
+		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
 			n(QUESTS),

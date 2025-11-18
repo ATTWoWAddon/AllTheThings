@@ -297,40 +297,40 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11787, {	-- The Gates of Hell
-                    crit(36469, {	-- Goroth
-                        ["_encounter"] = { GOROTH, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(36470, {	-- Harjatan
-                        ["_encounter"] = { HARJATAN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(36471, {	-- Mistress Sassz'ine
-                        ["_encounter"] = { SASSZINE, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(36469, {	-- Goroth
+						["_encounter"] = { GOROTH, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(36470, {	-- Harjatan
+						["_encounter"] = { HARJATAN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(36471, {	-- Mistress Sassz'ine
+						["_encounter"] = { SASSZINE, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11788, {	-- Wailing Halls
-                    crit(36472, {	-- Demonic Inquisition
-                        ["_encounter"] = { INQUISITION, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(36473, {	-- Sisters of the Moon
-                        ["_encounter"] = { SISTERS, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(36474, {	-- The Desolate Host
-                        ["_encounter"] = { DESOLATE_HOST, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(36472, {	-- Demonic Inquisition
+						["_encounter"] = { INQUISITION, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(36473, {	-- Sisters of the Moon
+						["_encounter"] = { SISTERS, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(36474, {	-- The Desolate Host
+						["_encounter"] = { DESOLATE_HOST, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11789, {	-- Chamber of the Avatar
-                    crit(36475, {	-- Maiden of Vigilance
-                        ["_encounter"] = { MAIDEN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                    crit(36476, {	-- Fallen Avatar
-                        ["_encounter"] = { AVATAR, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(36475, {	-- Maiden of Vigilance
+						["_encounter"] = { MAIDEN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+					crit(36476, {	-- Fallen Avatar
+						["_encounter"] = { AVATAR, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11790, {	-- Deceiver's Fall
-                    crit(36477, {	-- Kil'jaeden
-                        ["_encounter"] = { KILJAEDEN, DIFFICULTY.RAID.MULTI.ALL },
-                    }),
-                }),
+					crit(36477, {	-- Kil'jaeden
+						["_encounter"] = { KILJAEDEN, DIFFICULTY.RAID.MULTI.ALL },
+					}),
+				}),
 				ach(11763, {	-- Glory of the Tomb Raider
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

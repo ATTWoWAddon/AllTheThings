@@ -18,35 +18,35 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13718, {	-- The Grand Reception
-                    crit(45786, {	-- Abyssal Commander Sivara
-                        ["_encounter"] = { 2352, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(45787, {	-- Blackwater Behemoth
-                        ["_encounter"] = { 2347, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(45788, {	-- Radiance of Azshara
-                        ["_encounter"] = { 2353, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(45786, {	-- Abyssal Commander Sivara
+						["_encounter"] = { 2352, DIFFICULTY.RAID.LFR },
+					}),
+					crit(45787, {	-- Blackwater Behemoth
+						["_encounter"] = { 2347, DIFFICULTY.RAID.LFR },
+					}),
+					crit(45788, {	-- Radiance of Azshara
+						["_encounter"] = { 2353, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(13719, {	-- Depths of the Devoted
-                    crit(45794, {	-- Lady Ashvane
-                        ["_encounter"] = { 2354, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(45795, {	-- Orgozoa
-                        ["_encounter"] = { 2351, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(45796, {	-- The Queen's Court
-                        ["_encounter"] = { 2359, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(45794, {	-- Lady Ashvane
+						["_encounter"] = { 2354, DIFFICULTY.RAID.LFR },
+					}),
+					crit(45795, {	-- Orgozoa
+						["_encounter"] = { 2351, DIFFICULTY.RAID.LFR },
+					}),
+					crit(45796, {	-- The Queen's Court
+						["_encounter"] = { 2359, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(13725, {	-- The Circle of Stars
-                    crit(45797, {	-- Za'qul, Harbinger of Ny'alotha
-                        ["_encounter"] = { 2349, DIFFICULTY.RAID.LFR },
-                    }),
-                    crit(45798, {	-- Queen Azshara
-                        ["_encounter"] = { 2361, DIFFICULTY.RAID.LFR },
-                    }),
-                }),
+					crit(45797, {	-- Za'qul, Harbinger of Ny'alotha
+						["_encounter"] = { 2349, DIFFICULTY.RAID.LFR },
+					}),
+					crit(45798, {	-- Queen Azshara
+						["_encounter"] = { 2361, DIFFICULTY.RAID.LFR },
+					}),
+				}),
 				ach(40962, {	-- The Eternal Palace
 					["timeline"] = { ADDED_11_0_7 },
 					-- Meta Achievement

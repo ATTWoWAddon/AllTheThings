@@ -562,8 +562,8 @@ ResolveSymbolicLink = function(o)
 					end
 				end
 			elseif cmd == "meta_achievement" then
-                -- Instruction to search the full database for multiple achievementID's
-                local cache;
+				-- Instruction to search the full database for multiple achievementID's
+				local cache;
 				for i=2,#sym do
 					local cache = SearchForField("achievementID", sym[i]);
 					if #cache > 0 then
@@ -584,14 +584,14 @@ ResolveSymbolicLink = function(o)
 						print("Failed to select achievementID", sym[i]);
 					end
 				end
-                -- Remove any Criteria groups associated with those achievements
-                for k=#searchResults,1,-1 do
-                    local result = searchResults[k];
-                    if result.criteriaID then tremove(searchResults, k); end
-                end
+				-- Remove any Criteria groups associated with those achievements
+				for k=#searchResults,1,-1 do
+					local result = searchResults[k];
+					if result.criteriaID then tremove(searchResults, k); end
+				end
 			elseif cmd == "partial_achievement" then
-                -- Instruction to search the full database for an achievementID and persist the associated Criteria
-                -- Do nothing, this is done in the mini list instead. We don't want to build a useless list of criteria.
+				-- Instruction to search the full database for an achievementID and persist the associated Criteria
+				-- Do nothing, this is done in the mini list instead. We don't want to build a useless list of criteria.
 			end
 		end
 
