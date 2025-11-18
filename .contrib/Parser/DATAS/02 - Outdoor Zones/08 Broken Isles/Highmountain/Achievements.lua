@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(HIGHMOUNTAIN, {
 			n(ACHIEVEMENTS, {
-				ach(11264),	-- Adventurer of Highmountain (automated)
+				ach(11264),	-- Adventurer of Highmountain (mostly-automated)
 					crit(33517, {	-- Amateur Hunters
 						["_quests"] = { 40413 },	-- Amateur Hunters rare
 					}),
@@ -31,6 +31,9 @@ root(ROOTS.Zones, {
 				}),
 				ach(12292),	-- Highmountain Tribe
 				ach(11257, {	-- Treasures of Highmountain (mostly-automated)
+					crit(33537, {	-- 40 Treasures
+						["_quests"] = { 40612 },	-- 40 Treasures
+					}),
 					i(245460, {	-- Skyhorn Storage Chest (DECOR!)
 						["timeline"] = { ADDED_11_2_7 },
 					}),

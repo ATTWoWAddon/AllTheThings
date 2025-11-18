@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 					cr(95886, e(1468, {	-- Ash'golm
 						ach(10679, {	-- I Ain't Even Cold
-						["timeline"] = { ADDED_7_0_3, REMOVED_11_2_5 },
+							["timeline"] = { ADDED_7_0_3, REMOVED_11_2_5 },
 						}),
 						i(137510),	-- Charskin Mantle
 						i(137526),	-- Crown of Ash

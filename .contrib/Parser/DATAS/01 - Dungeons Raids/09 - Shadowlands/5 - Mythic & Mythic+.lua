@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(15692, {	-- Keystone Hero: Return to Karazhan
 				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				["maps"] = { 809 },
+				["maps"] = { 809 },	-- Return to Karazhan
 				["groups"] = {
 					spell(373262),	-- Path of the Fallen Guardian
 					crit(53622),	-- Return to Karazhan: Lower

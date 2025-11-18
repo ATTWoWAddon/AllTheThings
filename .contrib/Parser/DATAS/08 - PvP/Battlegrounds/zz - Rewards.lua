@@ -20,7 +20,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				-- #if BEFORE 11.2.5
 				"Rewarded for winning a random battleground below max level.",
 				-- #else
-				"Rewarded for winning a random battleground granted or randomly in a lost below max level.",
+				"Rewarded for winning a random battleground or randomly granted in a loss below max level.",
 				-- #endif
 			},
 		--	["lvl"] = { 10, 59 },
