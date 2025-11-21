@@ -20,7 +20,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Database Parser for Retail
         timeout-minutes: 5
@@ -82,7 +82,7 @@ jobs:
     needs: build-windows
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
            fetch-depth: 300
            fetch-tags: true
