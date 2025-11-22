@@ -29,7 +29,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				10543,	-- Surge Protector
 				10554,	-- I Made a Food!
 				10553,	-- You're Just Making It WORSE!
+				-- #if BEFORE 11.2.5
 				10679,	-- I Ain't Even Cold
+				-- #endif
 				10680,	-- Who's Afraid of the Dark?
 				10707,	-- A Specter, Illuminated
 				10709,	-- You Used to Scrawl Me In Your Fel Tome

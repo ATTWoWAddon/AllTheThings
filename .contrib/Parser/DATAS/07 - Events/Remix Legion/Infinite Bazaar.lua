@@ -14,11 +14,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					["cost"] = {{ "c", BRONZE, 15000 }},
 				},FILTERFUNC_itemID,{
 					filter(LEATHER, {
-						iensemble(241354),	-- Ensemble: Emerald Drake Hunter's Kit
 						iensemble(241404),	-- Ensemble: Seaborne Brigandine
 						iensemble(241405),	-- Ensemble: Skyborne Brigandine
 					}),
 					filter(MAIL, {
+						iensemble(241354),	-- Ensemble: Emerald Drake Hunter's Kit
 						iensemble(241398),	-- Ensemble: Earthbreaker Dragonscale
 						iensemble(241401),	-- Ensemble: Sunborne Runemail
 					}),
